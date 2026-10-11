@@ -80,7 +80,7 @@ async function boot(): Promise<void> {
   bindInput();
   let camYaw = Math.atan2(centre.x - spawn[0], -(centre.z - spawn[1]));
   let pitch = 0.45;
-  let distance = 8;
+  let distance = 6;
   let lookHold = 0;
   const target = new THREE.Vector3();
   const clock = new THREE.Clock();
@@ -132,17 +132,39 @@ function nearRing(x: number, z: number, ring: Vec2[], margin: number): boolean {
 async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }): Promise<void> {
   const cover = skeleton.cover;
   const image = await new THREE.ImageLoader().loadAsync(asset(cover.image));
-  const texture = new THREE.Texture(image);
-  texture.colorSpace = THREE.SRGBColorSpace;
-  texture.anisotropy = 8;
-  texture.needsUpdate = true;
   const w = cover.maxX - cover.minX;
   const h = cover.maxZ - cover.minZ;
+
+  // Redraw the part of the cover around this area larger and softened, so the
+  // edges between grass, path and deck are soft lines instead of squares.
+  const span = RADIUS + 40;
+  const size = 2048;
+  const paint = document.createElement("canvas");
+  paint.width = paint.height = size;
+  const pctx = paint.getContext("2d")!;
+  pctx.fillStyle = "#c9a07a";
+  pctx.fillRect(0, 0, size, size);
+  pctx.filter = "blur(2.5px)";
+  const perMetre = image.width / w;
+  pctx.drawImage(
+    image,
+    (centre.x - span - cover.minX) * perMetre,
+    (centre.z - span - cover.minZ) * perMetre,
+    span * 2 * perMetre,
+    span * 2 * perMetre,
+    0,
+    0,
+    size,
+    size,
+  );
+  const texture = new THREE.CanvasTexture(paint);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.anisotropy = 8;
   const ground = new THREE.Mesh(
-    new THREE.PlaneGeometry(w, h).rotateX(-Math.PI / 2),
+    new THREE.PlaneGeometry(span * 2, span * 2).rotateX(-Math.PI / 2),
     new THREE.MeshStandardMaterial({ map: texture, roughness: 0.95 }),
   );
-  ground.position.set(cover.minX + w / 2, 0, cover.minZ + h / 2);
+  ground.position.set(centre.x, 0, centre.z);
   ground.receiveShadow = true;
   scene.add(ground);
 
