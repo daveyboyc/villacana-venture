@@ -73,3 +73,28 @@ export type InputState = {
   zoom: number;
   interact: boolean;
 };
+
+export type SkeletonBuilding = {
+  id: string;
+  /** Floors above ground. 0 is a yard or terrace, not a house. */
+  floors: number;
+  ring: Vec2[];
+  holes?: Vec2[][];
+};
+
+export type SkeletonPool = {
+  id: string;
+  kind: "small" | "main" | "toddler";
+  ring: Vec2[];
+};
+
+export type Skeleton = {
+  origin: { lat: number; lon: number };
+  /** Degrees that turn the block square on screen, sea at the bottom. */
+  viewRotation: number;
+  floorHeight: number;
+  area: Vec2[];
+  buildings: SkeletonBuilding[];
+  pools: SkeletonPool[];
+  cover: { image: string; minX: number; maxX: number; minZ: number; maxZ: number };
+};

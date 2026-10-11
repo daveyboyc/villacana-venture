@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Villacana blueprint</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <style>
+      html, body { margin: 0; height: 100%; background: #f3efe6; font-family: system-ui, sans-serif; overflow: hidden; }
+      #map { width: 100vw; height: 100dvh; touch-action: none; display: block; }
+      #bar { position: fixed; left: 12px; right: 12px; bottom: 12px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+      #bar button, #bar a, #legend { background: #fffdf8; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; }
+      #bar button[aria-pressed="true"] { background: #222; color: #fff; }
+      #legend { position: fixed; top: 12px; left: 12px; border-radius: 12px; line-height: 1.6; }
+      #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
+    </style>
+  </head>
+  <body>
+    <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div id="legend"></div>
+    <div id="bar">
+      <button id="photo" aria-pressed="false">Aerial photo</button>
+      <button id="cover" aria-pressed="true">Ground</button>
+      <button id="reset">Whole block</button>
+      <a href="./slice.html">Walk the north pool</a>
+    </div>
+    <script type="module" src="/src/blueprint.ts"></script>
+  </body>
+</html>

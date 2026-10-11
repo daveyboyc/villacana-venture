@@ -10,6 +10,16 @@ pool where they really are, the lawns and lanes between them. Then a hand-painte
 Studio Ghibli-like look on top: white houses, brown wooden Persian-blind shutters,
 pools, grass.
 
+## Progress (2026-10-11)
+
+- Built: `scripts/build_skeleton.py`, `skeleton.json`, the blueprint page, and a first
+  walkable area around the north pool (`slice.html`).
+- Changed from the plan below, at Dave's suggestion: instead of finishing the whole
+  skeleton before any graphics, one area (the north pool courtyard) is taken all the
+  way to "right" first, then the same treatment is scaled to the rest.
+- Changed from Part 1: open ground is stored as a classified picture (`cover.png`:
+  lawn, planting, deck, paving) rather than as outlines. Lanes are not yet named.
+
 ## Order of work
 
 Skeleton first, graphics second. The current 3D view is set aside until the flat

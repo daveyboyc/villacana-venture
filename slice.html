@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Villacana: north pool</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; background: #bfe3f2; font-family: system-ui, sans-serif; }
+      canvas { display: block; width: 100vw; height: 100dvh; touch-action: none; }
+      .chip { position: fixed; background: #fffdf8e6; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; }
+      #title { top: 12px; left: 12px; }
+      #back { top: 12px; right: 12px; }
+      #help { bottom: 12px; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+      #jump { bottom: 64px; right: 16px; padding: 18px 22px; display: none; }
+      @media (pointer: coarse) { #jump { display: block; } }
+    </style>
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div class="chip" id="title">North pool · first area</div>
+    <a class="chip" id="back" href="./blueprint.html">Blueprint</a>
+    <button class="chip" id="jump">Jump</button>
+    <div class="chip" id="help">WASD or left thumb to walk · drag to look</div>
+    <script type="module" src="/src/slice.ts"></script>
+  </body>
+</html>
