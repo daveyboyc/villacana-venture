@@ -29,7 +29,7 @@ pass showed, and the houses have front porches.
 | File | Shows |
 | --- | --- |
 | photos/01 | Ground level on the north pool lawn, April 2021. The key style reference so far. |
-| photos/02 | A pool seen from an upper floor, December 2020. Which pool is not yet confirmed by Dave. |
+| photos/02 | The middle pool seen from an upper floor, December 2020 (confirmed by Dave 2026-10-11). |
 
 What photos/02 shows: a frosted-band glass safety fence right round the pool deck; a
 steel pool ladder; pale cream stone deck; a grey-brown crazy-paving stone path; lawn
