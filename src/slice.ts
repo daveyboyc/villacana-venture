@@ -268,32 +268,32 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         for (let f = 0; f < b.floors; f++) {
           const door = f === 0 && hash(x, z) < 0.3;
-          const y = f * floorHeight + (door ? 1.05 : 1.55);
+          const y = f * floorHeight + (door ? 1.05 : 1.3);
           (door ? doors : windows).push(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), turn, new THREE.Vector3(1, 1, 1)));
         }
       }
     }
   }
-  const material = new THREE.MeshStandardMaterial({ map: slatTexture(), roughness: 0.8, side: THREE.DoubleSide });
+  const material = new THREE.MeshStandardMaterial({ map: slatTexture(), roughness: 0.8, side: THREE.DoubleSide, alphaTest: 0.5 });
   const place = (geometry: THREE.PlaneGeometry, list: THREE.Matrix4[]) => {
     const mesh = new THREE.InstancedMesh(geometry, material, list.length);
     list.forEach((matrix, i) => mesh.setMatrixAt(i, matrix));
     scene.add(mesh);
   };
-  place(new THREE.PlaneGeometry(1.1, 1.3), windows);
-  place(new THREE.PlaneGeometry(1.0, 2.1), doors);
+  place(new THREE.PlaneGeometry(1.15, 1.8), windows);
+  place(new THREE.PlaneGeometry(1.15, 2.1), doors);
 }
 
 /**
  * Front porches on walls that face open ground: white piers, a clay-tiled
- * lean-to roof, and on two-storey houses a balcony with a wooden rail.
+ * lean-to roof, and on two-storey houses a balcony with a wrought-iron rail.
  */
 function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
   const houses = buildings.filter((b) => b.floors > 0);
   const blocked = (x: number, z: number) => houses.some((o) => pointInRing(x, z, o.ring));
   const up = new THREE.Vector3(0, 1, 0);
   const side = new THREE.Vector3(1, 0, 0);
-  const parts: Record<"white" | "tile" | "wood", THREE.Matrix4[]> = { white: [], tile: [], wood: [] };
+  const parts: Record<"white" | "tile" | "wood" | "iron", THREE.Matrix4[]> = { white: [], tile: [], wood: [], iron: [] };
   const WIDTH = 3.4;
   const DEPTH = 1.5;
 
@@ -333,8 +333,8 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
         if (b.floors >= 2) {
           box(parts.white, 0, floorHeight - 0.08, DEPTH / 2, WIDTH, 0.16, DEPTH);
-          box(parts.wood, 0, floorHeight + 0.95, DEPTH - 0.05, WIDTH, 0.08, 0.08);
-          for (let r = -4; r <= 4; r++) box(parts.wood, (r * WIDTH) / 9, floorHeight + 0.5, DEPTH - 0.05, 0.06, 0.9, 0.06);
+          box(parts.iron, 0, floorHeight + 0.95, DEPTH - 0.05, WIDTH, 0.05, 0.05);
+          for (let r = -6; r <= 6; r++) box(parts.iron, (r * WIDTH) / 13, floorHeight + 0.5, DEPTH - 0.05, 0.03, 0.9, 0.03);
           for (const edge of [-WIDTH / 2 + 0.1, WIDTH / 2 - 0.1]) {
             box(parts.wood, edge, floorHeight + (top - floorHeight - 0.5) / 2, DEPTH - 0.1, 0.12, top - floorHeight - 0.5, 0.12);
           }
@@ -342,31 +342,40 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
       }
     }
   }
-  const colours = { white: WALL, tile: "#b9663f", wood: SHUTTER };
+  const colours = { white: WALL, tile: "#b9663f", wood: SHUTTER, iron: "#1d1b1a" };
   const unit = new THREE.BoxGeometry(1, 1, 1);
-  for (const key of ["white", "tile", "wood"] as const) {
+  for (const key of ["white", "tile", "wood", "iron"] as const) {
     const mesh = new THREE.InstancedMesh(unit, new THREE.MeshStandardMaterial({ color: colours[key], roughness: 0.9 }), parts[key].length);
     parts[key].forEach((matrix, i) => mesh.setMatrixAt(i, matrix));
-    mesh.castShadow = key !== "wood";
+    mesh.castShadow = key !== "iron";
     mesh.receiveShadow = true;
     scene.add(mesh);
   }
 }
 
-/** Brown wooden Persian-blind slats. */
+/** Brown wooden Persian-blind slats in an arched frame. */
 function slatTexture(): THREE.CanvasTexture {
   const c = document.createElement("canvas");
   c.width = 64;
-  c.height = 96;
+  c.height = 112;
   const g = c.getContext("2d")!;
+  // An arched opening: everything outside the arch stays see-through.
+  g.beginPath();
+  g.moveTo(2, 110);
+  g.lineTo(2, 30);
+  g.quadraticCurveTo(2, 2, 32, 2);
+  g.quadraticCurveTo(62, 2, 62, 30);
+  g.lineTo(62, 110);
+  g.closePath();
+  g.fillStyle = "#4a2a14";
+  g.fill();
+  g.clip();
   g.fillStyle = SHUTTER;
-  g.fillRect(0, 0, 64, 96);
+  g.fillRect(5, 5, 54, 104);
   g.fillStyle = "#5b3519";
-  for (let y = 6; y < 92; y += 6) g.fillRect(5, y, 54, 2);
-  g.strokeStyle = "#4a2a14";
-  g.lineWidth = 4;
-  g.strokeRect(2, 2, 60, 92);
-  g.fillRect(31, 2, 2, 92);
+  for (let y = 8; y < 108; y += 6) g.fillRect(5, y, 54, 2);
+  g.fillStyle = "#4a2a14";
+  g.fillRect(31, 2, 2, 108);
   const texture = new THREE.CanvasTexture(c);
   texture.colorSpace = THREE.SRGBColorSpace;
   return texture;
