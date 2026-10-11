@@ -61,6 +61,7 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre);
   addBuildings(scene, buildings, skeleton.floorHeight);
   addShutters(scene, buildings, skeleton.floorHeight);
+  addPorches(scene, buildings, skeleton.floorHeight);
   for (const p of skeleton.pools) if (near(p.ring)) addPool(scene, p.ring);
 
   const player = new Player();
@@ -112,7 +113,7 @@ async function boot(): Promise<void> {
 
 function findSpawn(centre: { x: number; z: number }, pool: Vec2[], buildings: SkeletonBuilding[]): Vec2 {
   for (let r = 7; r < 30; r += 1.5) {
-    for (let a = 0; a < Math.PI * 2; a += Math.PI / 8) {
+    for (let a = Math.PI; a < Math.PI * 3; a += Math.PI / 8) {
       const x = centre.x + Math.sin(a) * r;
       const z = centre.z + Math.cos(a) * r;
       if (pointInRing(x, z, pool)) continue;
@@ -259,6 +260,75 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
   };
   place(new THREE.PlaneGeometry(1.1, 1.3), windows);
   place(new THREE.PlaneGeometry(1.0, 2.1), doors);
+}
+
+/**
+ * Front porches on walls that face open ground: white piers, a clay-tiled
+ * lean-to roof, and on two-storey houses a balcony with a wooden rail.
+ */
+function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
+  const houses = buildings.filter((b) => b.floors > 0);
+  const blocked = (x: number, z: number) => houses.some((o) => pointInRing(x, z, o.ring));
+  const up = new THREE.Vector3(0, 1, 0);
+  const side = new THREE.Vector3(1, 0, 0);
+  const parts: Record<"white" | "tile" | "wood", THREE.Matrix4[]> = { white: [], tile: [], wood: [] };
+  const WIDTH = 3.4;
+  const DEPTH = 1.5;
+
+  for (const b of houses) {
+    const ring = b.ring;
+    for (let i = 0; i < ring.length; i++) {
+      const [ax, az] = ring[i];
+      const [bx, bz] = ring[(i + 1) % ring.length];
+      const length = Math.hypot(bx - ax, bz - az);
+      if (length < WIDTH + 0.6) continue;
+      const tx = (bx - ax) / length;
+      const tz = (bz - az) / length;
+      let nx = tz;
+      let nz = -tx;
+      if (pointInRing((ax + bx) / 2 + nx * 0.3, (az + bz) / 2 + nz * 0.3, ring)) {
+        nx = -nx;
+        nz = -nz;
+      }
+      const turn = new THREE.Quaternion().setFromAxisAngle(up, Math.atan2(nx, nz));
+      const count = Math.floor(length / (WIDTH + 1.6)) || 1;
+      for (let k = 0; k < count; k++) {
+        const t = (k + 0.5) / count;
+        const x = ax + (bx - ax) * t;
+        const z = az + (bz - az) * t;
+        // Only where the house looks out over a lane or garden.
+        if ([1, 2.5, 4.5].some((d) => blocked(x + nx * d, z + nz * d))) continue;
+        // A box given in porch space: across the wall, up, and out from it.
+        const box = (list: THREE.Matrix4[], across: number, y: number, out: number, sx: number, sy: number, sz: number, tilt = 0) => {
+          const q = tilt ? turn.clone().multiply(new THREE.Quaternion().setFromAxisAngle(side, tilt)) : turn;
+          const p = new THREE.Vector3(x + tx * across + nx * out, y, z + tz * across + nz * out);
+          list.push(new THREE.Matrix4().compose(p, q, new THREE.Vector3(sx, sy, sz)));
+        };
+        const top = Math.min(b.floors, 2) * floorHeight - 0.35;
+        for (const edge of [-WIDTH / 2 + 0.15, WIDTH / 2 - 0.15]) {
+          box(parts.white, edge, floorHeight / 2, DEPTH - 0.15, 0.3, floorHeight, 0.3);
+        }
+        box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
+        if (b.floors >= 2) {
+          box(parts.white, 0, floorHeight - 0.08, DEPTH / 2, WIDTH, 0.16, DEPTH);
+          box(parts.wood, 0, floorHeight + 0.95, DEPTH - 0.05, WIDTH, 0.08, 0.08);
+          for (let r = -4; r <= 4; r++) box(parts.wood, (r * WIDTH) / 9, floorHeight + 0.5, DEPTH - 0.05, 0.06, 0.9, 0.06);
+          for (const edge of [-WIDTH / 2 + 0.1, WIDTH / 2 - 0.1]) {
+            box(parts.wood, edge, floorHeight + (top - floorHeight - 0.5) / 2, DEPTH - 0.1, 0.12, top - floorHeight - 0.5, 0.12);
+          }
+        }
+      }
+    }
+  }
+  const colours = { white: WALL, tile: "#b9663f", wood: SHUTTER };
+  const unit = new THREE.BoxGeometry(1, 1, 1);
+  for (const key of ["white", "tile", "wood"] as const) {
+    const mesh = new THREE.InstancedMesh(unit, new THREE.MeshStandardMaterial({ color: colours[key], roughness: 0.9 }), parts[key].length);
+    parts[key].forEach((matrix, i) => mesh.setMatrixAt(i, matrix));
+    mesh.castShadow = key !== "wood";
+    mesh.receiveShadow = true;
+    scene.add(mesh);
+  }
 }
 
 /** Brown wooden Persian-blind slats. */

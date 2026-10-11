@@ -41,6 +41,19 @@ BLOCK = (-196.0, -78.0, -18.0, 158.0)
 
 FLOOR_HEIGHT = 3.0
 COVER_CELL = 0.25
+# Pools whose courtyard has been laid out. The south pool opens onto the beach
+# lawn and needs its own treatment.
+COURTYARD_POOLS = ("north", "middle")
+# Courtyard rings, in metres out from the pool's rounded outline.
+DECK_WIDTH = 1.6
+PATH_INNER = 5.2
+PATH_OUTER = 6.5
+COURTYARD_REACH = 30.0
+# Paved strip left in front of the houses for their porches.
+PORCH_DEPTH = 1.5
+# Gaps between houses narrower than twice this are lanes, not courtyard.
+LANE_HALF_WIDTH = 3.75
+
 COVER_COLOURS = {
     "paving": (201, 160, 122),
     "lawn": (110, 168, 84),
@@ -112,6 +125,38 @@ def area(ring: list[tuple[float, float]]) -> float:
 def inside(box: tuple[float, float, float, float], p: tuple[float, float]) -> bool:
     x, z = turned(p)
     return box[0] <= x <= box[2] and box[1] <= z <= box[3]
+
+
+def convex_hull(points: list[tuple[float, float]]) -> list[tuple[float, float]]:
+    pts = sorted(set(points))
+
+    def half(seq: list[tuple[float, float]]) -> list[tuple[float, float]]:
+        out: list[tuple[float, float]] = []
+        for p in seq:
+            while len(out) >= 2 and (out[-1][0] - out[-2][0]) * (p[1] - out[-2][1]) - (out[-1][1] - out[-2][1]) * (p[0] - out[-2][0]) <= 0:
+                out.pop()
+            out.append(p)
+        return out[:-1]
+
+    return half(pts) + half(pts[::-1])
+
+
+def distance_to_ring(wx: np.ndarray, wz: np.ndarray, ring: list[tuple[float, float]]) -> np.ndarray:
+    """Metres from each cell to a convex ring; zero inside it."""
+    best = np.full(wx.shape, np.inf, dtype=np.float32)
+    within = np.ones(wx.shape, dtype=bool)
+    turn = 0.0
+    n = len(ring)
+    for i in range(n):
+        (ax, az), (bx, bz) = ring[i], ring[(i + 1) % n]
+        dx, dz = bx - ax, bz - az
+        t = np.clip(((wx - ax) * dx + (wz - az) * dz) / (dx * dx + dz * dz), 0, 1)
+        best = np.minimum(best, np.hypot(wx - (ax + t * dx), wz - (az + t * dz)))
+        cross = dx * (wz - az) - dz * (wx - ax)
+        turn = turn or float(np.sign(dx * (ring[(i + 2) % n][1] - az) - dz * (ring[(i + 2) % n][0] - ax)))
+        within &= cross * turn >= 0
+    best[within] = 0
+    return best
 
 
 def read_features(name: str, tag: str) -> list[dict]:
@@ -227,8 +272,46 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         layer = Image.fromarray(((cls == k) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(6))
         votes.append(np.asarray(layer).astype(np.float32))
     cls = np.argmax(np.stack(votes), axis=0).astype(np.uint8)
-    # Every pool has a deck right round it, whatever the photo shows.
-    cls[mask([p["ring"] for p in pools], grow=2.25)] = 3
+    # Pools without a laid-out courtyard keep a plain deck right round them for now.
+    cls[mask([p["ring"] for p in pools if p["id"] not in COURTYARD_POOLS], grow=2.25)] = 3
+
+    # These pools sit in a courtyard laid out the same way: an oval deck,
+    # a ring of lawn, a sandy path looping round, then lawn out to the porches.
+    built = mask([b["ring"] for b in buildings])
+    wide = ~mask([b["ring"] for b in buildings], grow=LANE_HALF_WIDTH)
+    open_ground = ~mask([b["ring"] for b in buildings], grow=PORCH_DEPTH)
+    yy, xx = np.mgrid[0:height, 0:width]
+    wx = min_x + (xx + 0.5) * COVER_CELL
+    wz = min_z + (yy + 0.5) * COVER_CELL
+    for pool in pools:
+        if pool["id"] not in COURTYARD_POOLS:
+            continue
+        hull = convex_hull([tuple(p) for p in pool["ring"]])
+        dist = distance_to_ring(wx, wz, hull)
+        # Spread out from the pool through open ground, stopping at the houses.
+        reach = wide & (dist < COURTYARD_REACH)
+        yard = (dist == 0) & reach
+        while True:
+            grown = yard.copy()
+            grown[1:, :] |= yard[:-1, :]
+            grown[:-1, :] |= yard[1:, :]
+            grown[:, 1:] |= yard[:, :-1]
+            grown[:, :-1] |= yard[:, 1:]
+            grown &= reach
+            if grown.sum() == yard.sum():
+                break
+            yard = grown
+        # Bring the lawn back out towards the houses, leaving the porch strip paved.
+        spread = Image.fromarray((yard * 255).astype(np.uint8)).filter(
+            ImageFilter.MaxFilter(int((LANE_HALF_WIDTH - PORCH_DEPTH) / COVER_CELL) * 2 + 1)
+        )
+        yard = (np.asarray(spread) > 0) & open_ground & (dist < COURTYARD_REACH)
+        cls[(cls == 3) & (dist < COURTYARD_REACH)] = 0
+        planted = yard & (cls == 2)
+        cls[yard] = 1
+        cls[yard & (dist >= PATH_INNER) & (dist < PATH_OUTER)] = 0
+        cls[planted & (dist >= DECK_WIDTH + 1.0)] = 2
+        cls[(dist < DECK_WIDTH) & ~built] = 3
 
     names = list(COVER_COLOURS)
     out = np.zeros((height, width, 3), dtype=np.uint8)
