@@ -30,6 +30,33 @@ pass showed, and the houses have front porches.
 | --- | --- |
 | photos/01 | Ground level on the north pool lawn, April 2021. The key style reference so far. |
 | photos/02 | The middle pool seen from an upper floor, December 2020 (confirmed by Dave 2026-10-11). |
+| photos/03 | North pool, looking down over barrel roof tiles: hedges, garden gates, crazy paving |
+| photos/04 | North pool, roof tiles, a yucca, a patio behind a hedge |
+| photos/05 | North pool, west side: curved white garden walls, raised patios, tiled steps |
+| photos/06 | North pool looking north-east: terraces, mountains behind |
+| photos/07 | North pool, the whole courtyard looking north. The best single reference for it. |
+
+Decisions from Dave (2026-10-11):
+- Skip the glass safety fence round the pools.
+- Eventually all plants and small details should be textures and sprites, not 3D shapes.
+- The player should be able to get into the pools.
+
+What photos/03 to 07 show of the north pool:
+- Pool: a cream stone deck two to three metres wide following the pool's curves, steps
+  into the water at one lobe, steel ladders, life rings on posts.
+- Ground: lawn runs right up to the deck. The path is grey-brown crazy-paving stone and
+  runs round the outside edge, along the foot of the garden walls.
+- Garden walls: white, about a metre high, curving, some holding back raised patios
+  with tiled steps up. Hedges grow behind and over them. Small arched garden gates with
+  brown wooden doors.
+- Houses: flat roofs with parapets, water tanks, solar panels. White moulded surrounds
+  above windows. Two kinds of balcony: wooden ones with posts and a little clay-tile
+  roof, and plain black iron ones. Awnings over ground-floor patios. Patio furniture.
+- One building on the south side has an old barrel clay-tile roof, mottled with lichen.
+- Planting: bird-of-paradise by the pool, a yucca, small feathery trees, a pollarded
+  tree, magenta bougainvillea on walls, hibiscus hedges with pink and red flowers.
+- Backdrop looking north: tall dark pines and a monkey-puzzle tree, palms, then blue
+  mountains with cloud on the peaks.
 
 What photos/02 shows: a frosted-band glass safety fence right round the pool deck; a
 steel pool ladder; pale cream stone deck; a grey-brown crazy-paving stone path; lawn
