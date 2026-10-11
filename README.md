@@ -23,3 +23,16 @@ Facts confirmed by Dave (2026-10-11):
 
 Dave's notes on the north pool (2026-10-11): the grass area is bigger than the first
 pass showed, and the houses have front porches.
+
+## Dave's own photos
+
+| File | Shows |
+| --- | --- |
+| photos/01 | Ground level on the north pool lawn, April 2021. The key style reference so far. |
+
+What photos/01 shows: thick white rendered walls with soft rounded edges; brown louvred
+shutters with arched tops, door height on both floors; black wrought-iron balcony rails
+and window grilles; low white garden walls with curved ends edging the lawn; a
+terracotta-tiled path; clipped round hedges; a tall candelabra cactus; climbers on the
+walls; a short green bollard light; chimneys and water tanks on the flat roofs; deep
+green lawn; blue sky with big white cumulus.
