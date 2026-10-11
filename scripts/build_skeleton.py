@@ -59,6 +59,27 @@ WALL_GATE_WIDTH = 1.6
 # Gaps between houses narrower than twice this are lanes, not courtyard.
 LANE_HALF_WIDTH = 3.75
 
+# Things that stand in a courtyard, placed by hand. Positions are read off the
+# aerial photo; Dave's ground photos say what each thing is. Offsets are metres
+# east and south of the pool outline's centre. These are positions and kinds
+# only: how each is drawn (a painted sprite, a simple shape) is up to the game.
+PROPS = {
+    "north": [
+        ("pool_steps", -2.6, -2.5),
+        ("pool_ladder", -0.95, 3.4),
+        ("pool_ladder", 2.7, 0.1),
+        ("pump_box", 4.0, 0.1),
+        ("life_ring", 0.6, -6.9),
+        ("life_ring", 6.0, 1.6),
+        ("bird_of_paradise", -8.9, 2.4),
+        ("bird_of_paradise", -8.4, 3.9),
+        ("yucca", 9.5, 8.0),
+        ("feathery_tree", 6.5, -9.5),
+        ("feathery_tree", 12.0, 1.0),
+        ("pollarded_tree", -0.5, -13.0),
+    ],
+}
+
 COVER_COLOURS = {
     "paving": (201, 160, 122),
     "lawn": (110, 168, 84),
@@ -223,7 +244,33 @@ def build_pools() -> list[dict]:
         raise SystemExit(f"Expected 3 small pools in the block, found {len(small)}.")
     for name, ring in zip(names, small):
         pools.append({"id": name, "kind": "small", "ring": rounded(ring)})
+    # The registry draws curves as short straight runs; round them off.
+    for pool in pools:
+        ring = [tuple(p) for p in pool["ring"]]
+        pool["centre"] = [round(v, 2) for v in centroid(ring)]
+        pool["ring"] = rounded(smooth_ring(ring))
     return pools
+
+
+def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[float, float]]:
+    """Round a ring's corners by cutting each one off; the outline keeps its shape."""
+    for _ in range(passes):
+        out = []
+        for i in range(len(ring)):
+            (ax, az), (bx, bz) = ring[i], ring[(i + 1) % len(ring)]
+            out.append((ax * 0.75 + bx * 0.25, az * 0.75 + bz * 0.25))
+            out.append((ax * 0.25 + bx * 0.75, az * 0.25 + bz * 0.75))
+        ring = out
+    return ring
+
+
+def build_props(pools: list[dict]) -> list[dict]:
+    props = []
+    for pool in pools:
+        cx, cz = pool["centre"]
+        for kind, east, south in PROPS.get(pool["id"], []):
+            props.append({"kind": kind, "x": round(cx + east, 2), "z": round(cz + south, 2), "pool": pool["id"]})
+    return props
 
 
 def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
@@ -285,6 +332,8 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
     # right up to it, and a stone path round the outside by the garden walls.
     built = mask([b["ring"] for b in buildings])
     walls: list[list[float]] = []
+    gates: list[list[float]] = []
+    gate_cells: set[tuple[int, int]] = set()
     wide = ~mask([b["ring"] for b in buildings], grow=LANE_HALF_WIDTH)
     open_ground = ~mask([b["ring"] for b in buildings], grow=PORCH_DEPTH)
     yy, xx = np.mgrid[0:height, 0:width]
@@ -336,6 +385,10 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
                 continue
             taken.add(key)
             if ((x + z) % WALL_GATE_EVERY) < WALL_GATE_WIDTH:
+                gate = (round(x / 4), round(z / 4))
+                if gate not in gate_cells and abs(((x + z) % WALL_GATE_EVERY) - WALL_GATE_WIDTH / 2) < 0.3:
+                    gate_cells.add(gate)
+                    gates.append([round(x, 2), round(z, 2)])
                 continue
             walls.append([round(x, 2), round(z, 2)])
         cls[planted & (dist >= DECK_WIDTH + 1.0)] = 2
@@ -354,6 +407,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         "maxZ": round(min_z + height * COVER_CELL, 2),
         "cell": COVER_CELL,
         "gardenWalls": walls,
+        "gardenGates": gates,
         "classes": {name: "#%02x%02x%02x" % COVER_COLOURS[name] for name in names},
     }
 
@@ -369,7 +423,9 @@ def main() -> None:
         "area": rounded([unturned(c) for c in ((AREA[0], AREA[1]), (AREA[2], AREA[1]), (AREA[2], AREA[3]), (AREA[0], AREA[3]))]),
         "buildings": buildings,
         "pools": pools,
+        "props": build_props(pools),
         "gardenWalls": cover.pop("gardenWalls"),
+        "gardenGates": cover.pop("gardenGates"),
         "cover": cover,
         "sources": {
             "buildings": "Dirección General del Catastro, INSPIRE building parts, 2026-10-11",

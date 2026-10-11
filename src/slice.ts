@@ -2,7 +2,9 @@ import * as THREE from "three";
 import { asset } from "./asset";
 import { centroid, clamp, CoastField, dampAngle, pointInRing, Solids } from "./geom";
 import { Player, type MoveWorld } from "./player";
+import { addSprites, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
+import { addPools, POOL_STAND } from "./water";
 
 /** The one area being built out first: the courtyard around this pool. */
 const POOL_ID = "north";
@@ -12,7 +14,6 @@ const WALL = "#ffffff";
 const ROOF_GREY = "#d9d5cc";
 const ROOF_TERRACE = "#c98f6e";
 const SHUTTER = "#7a4a2a";
-const PLANTING: [number, number, number] = [58, 110, 62];
 
 const canvas = document.querySelector<HTMLCanvasElement>("#scene")!;
 const input: InputState = { moveX: 0, moveZ: 0, run: false, jump: false, lookDx: 0, lookDy: 0, zoom: 0, interact: false };
@@ -58,16 +59,20 @@ async function boot(): Promise<void> {
   sun.shadow.bias = -0.0004;
   scene.add(sun, sun.target);
 
-  await addGround(scene, skeleton, centre);
+  const poolRings = skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring);
+  await addGround(scene, skeleton, centre, poolRings);
+  addBackdrop(scene, centre);
   addBuildings(scene, buildings, skeleton.floorHeight);
   addShutters(scene, buildings, skeleton.floorHeight);
   addPorches(scene, buildings, skeleton.floorHeight);
-  for (const p of skeleton.pools) if (near(p.ring)) addPool(scene, p.ring);
+  const pools = addPools(scene, poolRings);
+  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS));
 
   const player = new Player();
   scene.add(player.group);
   const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS);
   addGardenWalls(scene, walls);
+  addGardenGates(scene, skeleton.gardenGates, walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings]);
   const spawn = findSpawn(centre, pool.ring, buildings);
@@ -76,9 +81,8 @@ async function boot(): Promise<void> {
     solids,
     // The sea is outside this area; a far-off coast keeps the player on dry land.
     coast: new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]),
-    pools: skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring),
-    // Chest-deep, so only head and shoulders show above the water.
-    poolFloor: -1.05,
+    pools: poolRings,
+    poolFloor: POOL_STAND,
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
@@ -107,6 +111,7 @@ async function boot(): Promise<void> {
     const hd = Math.cos(pitch) * distance;
     camera.position.set(target.x - Math.sin(camYaw) * hd, target.y + Math.sin(pitch) * distance, target.z + Math.cos(camYaw) * hd);
     camera.lookAt(target);
+    pools.update(clock.elapsedTime);
     renderer.render(scene, camera);
 
     input.jump = false;
@@ -134,7 +139,7 @@ function nearRing(x: number, z: number, ring: Vec2[], margin: number): boolean {
   return ring.some((p) => Math.hypot(p[0] - x, p[1] - z) < margin);
 }
 
-async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }): Promise<void> {
+async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }, pools: Vec2[][]): Promise<void> {
   const cover = skeleton.cover;
   const image = await new THREE.ImageLoader().loadAsync(asset(cover.image));
   const w = cover.maxX - cover.minX;
@@ -165,58 +170,61 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const texture = new THREE.CanvasTexture(paint);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
-  const ground = new THREE.Mesh(
-    new THREE.PlaneGeometry(span * 2, span * 2).rotateX(-Math.PI / 2),
-    new THREE.MeshStandardMaterial({ map: texture, roughness: 0.95 }),
+  // The ground is one sheet with the pools cut out of it.
+  const sheet = shapeOf(
+    [[centre.x - span, centre.z - span], [centre.x + span, centre.z - span], [centre.x + span, centre.z + span], [centre.x - span, centre.z + span]],
+    pools,
   );
-  ground.position.set(centre.x, 0, centre.z);
+  const geometry = new THREE.ShapeGeometry(sheet).rotateX(-Math.PI / 2);
+  const at = geometry.getAttribute("position");
+  const uv = geometry.getAttribute("uv");
+  for (let i = 0; i < at.count; i++) {
+    uv.setXY(i, (at.getX(i) - (centre.x - span)) / (span * 2), 1 - (at.getZ(i) - (centre.z - span)) / (span * 2));
+  }
+  const ground = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ map: texture, roughness: 0.95 }));
   ground.receiveShadow = true;
   scene.add(ground);
 
-  // Trees and hedges stand wherever the ground cover is planting.
+  // Plants grow according to the ground cover: trees on planting, tufts on lawn.
   const probe = document.createElement("canvas");
   probe.width = image.width;
   probe.height = image.height;
   const ctx = probe.getContext("2d", { willReadFrequently: true })!;
   ctx.drawImage(image, 0, 0);
   const data = ctx.getImageData(0, 0, image.width, image.height).data;
-  const isPlanting = (x: number, z: number) => {
+  const classes = Object.entries(skeleton.cover.classes).map(([name, hex]) => ({
+    name,
+    rgb: [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)],
+  }));
+  const coverAt = (x: number, z: number): string => {
     const px = Math.floor(((x - cover.minX) / w) * image.width);
     const pz = Math.floor(((z - cover.minZ) / h) * image.height);
-    if (px < 0 || pz < 0 || px >= image.width || pz >= image.height) return false;
+    if (px < 0 || pz < 0 || px >= image.width || pz >= image.height) return "";
     const i = (pz * image.width + px) * 4;
-    return Math.abs(data[i] - PLANTING[0]) + Math.abs(data[i + 1] - PLANTING[1]) + Math.abs(data[i + 2] - PLANTING[2]) < 40;
-  };
-  const spots: { x: number; z: number; s: number }[] = [];
-  const step = 3.4;
-  for (let x = centre.x - RADIUS; x <= centre.x + RADIUS; x += step) {
-    for (let z = centre.z - RADIUS; z <= centre.z + RADIUS; z += step) {
-      const jx = x + (hash(x, z) - 0.5) * 1.6;
-      const jz = z + (hash(z, x) - 0.5) * 1.6;
-      if (isPlanting(jx, jz)) spots.push({ x: jx, z: jz, s: 0.8 + hash(x + 7, z) * 0.6 });
+    let best = "";
+    let bestD = 60;
+    for (const c of classes) {
+      const d = Math.abs(data[i] - c.rgb[0]) + Math.abs(data[i + 1] - c.rgb[1]) + Math.abs(data[i + 2] - c.rgb[2]);
+      if (d < bestD) {
+        bestD = d;
+        best = c.name;
+      }
     }
-  }
-  const trunks = new THREE.InstancedMesh(
-    new THREE.CylinderGeometry(0.14, 0.2, 1, 6),
-    new THREE.MeshStandardMaterial({ color: "#6b4a33", roughness: 0.9 }),
-    spots.length,
-  );
-  const crowns = new THREE.InstancedMesh(
-    new THREE.IcosahedronGeometry(1, 1),
-    new THREE.MeshStandardMaterial({ color: "#3f7d45", roughness: 0.85, flatShading: true }),
-    spots.length,
-  );
-  const m = new THREE.Matrix4();
-  spots.forEach((spot, i) => {
-    const trunk = 1.6 * spot.s;
-    m.compose(new THREE.Vector3(spot.x, trunk / 2, spot.z), new THREE.Quaternion(), new THREE.Vector3(1, trunk, 1));
-    trunks.setMatrixAt(i, m);
-    const r = 1.7 * spot.s;
-    m.compose(new THREE.Vector3(spot.x, trunk + r * 0.6, spot.z), new THREE.Quaternion(), new THREE.Vector3(r, r * 0.85, r));
-    crowns.setMatrixAt(i, m);
-  });
-  trunks.castShadow = crowns.castShadow = true;
-  scene.add(trunks, crowns);
+    return best;
+  };
+  const scatter = (step: number, wanted: string, reach: number): SpritePlacement[] => {
+    const out: SpritePlacement[] = [];
+    for (let x = centre.x - reach; x <= centre.x + reach; x += step) {
+      for (let z = centre.z - reach; z <= centre.z + reach; z += step) {
+        const jx = x + (hash(x, z) - 0.5) * step * 0.9;
+        const jz = z + (hash(z, x) - 0.5) * step * 0.9;
+        if (coverAt(jx, jz) === wanted) out.push({ x: jx, z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
+      }
+    }
+    return out;
+  };
+  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS));
+  addSprites(scene, "grass", scatter(0.6, "lawn", 34));
 }
 
 function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {
@@ -247,6 +255,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
   const houses = buildings.filter((b) => b.floors > 0);
   const windows: THREE.Matrix4[] = [];
   const doors: THREE.Matrix4[] = [];
+  const surrounds: THREE.Matrix4[] = [];
   const up = new THREE.Vector3(0, 1, 0);
   for (const b of houses) {
     const ring = b.ring;
@@ -275,6 +284,10 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
           const door = f === 0 && hash(x, z) < 0.3;
           const y = f * floorHeight + (door ? 1.05 : 1.3);
           (door ? doors : windows).push(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), turn, new THREE.Vector3(1, 1, 1)));
+          // A white moulding over each opening, and a sill under the windows.
+          const head = y + (door ? 1.05 : 0.9) + 0.14;
+          surrounds.push(new THREE.Matrix4().compose(new THREE.Vector3(x + nx * 0.05, head, z + nz * 0.05), turn, new THREE.Vector3(1.5, 0.16, 0.16)));
+          if (!door) surrounds.push(new THREE.Matrix4().compose(new THREE.Vector3(x + nx * 0.05, y - 0.95, z + nz * 0.05), turn, new THREE.Vector3(1.35, 0.1, 0.2)));
         }
       }
     }
@@ -287,9 +300,13 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
   };
   place(new THREE.PlaneGeometry(1.15, 1.8), windows);
   place(new THREE.PlaneGeometry(1.15, 2.1), doors);
+  const mouldings = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.9 }), surrounds.length);
+  surrounds.forEach((matrix, i) => mouldings.setMatrixAt(i, matrix));
+  mouldings.castShadow = true;
+  scene.add(mouldings);
 }
 
-/** Low white garden walls round the lawn, with clipped hedges growing over them in places. */
+/** Low white garden walls round the lawn, with hedges growing over them in places. */
 function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
   const m = new THREE.Matrix4();
   const still = new THREE.Quaternion();
@@ -304,20 +321,14 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
   });
   blocks.castShadow = blocks.receiveShadow = true;
 
+  scene.add(blocks);
+
   // Hedges come in runs: a few metres of hedge, then bare wall.
-  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.45);
-  const hedges = new THREE.InstancedMesh(
-    new THREE.IcosahedronGeometry(1, 1),
-    new THREE.MeshStandardMaterial({ color: "#2f6b3a", roughness: 0.9, flatShading: true }),
-    hedged.length,
-  );
-  hedged.forEach(([x, z], i) => {
-    const r = 0.62 + hash(x, z) * 0.18;
-    m.compose(new THREE.Vector3(x, 1.05, z), still, new THREE.Vector3(r, r * 0.9, r));
-    hedges.setMatrixAt(i, m);
-  });
-  hedges.castShadow = true;
-  scene.add(blocks, hedges);
+  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5);
+  const place = ([x, z]: Vec2): SpritePlacement => ({ x, y: 0.55, z, scale: 0.9 + hash(x, z) * 0.3 });
+  const flowering = (p: Vec2) => hash(Math.floor(p[0] / 8), Math.floor(p[1] / 8)) < 0.5;
+  addSprites(scene, "hibiscus_hedge", hedged.filter(flowering).map(place));
+  addSprites(scene, "hedge", hedged.filter((p) => !flowering(p)).map(place));
 }
 
 /**
@@ -330,7 +341,8 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
   const blocked = (x: number, z: number) => houses.some((o) => pointInRing(x, z, o.ring));
   const up = new THREE.Vector3(0, 1, 0);
   const side = new THREE.Vector3(1, 0, 0);
-  const parts: Record<"white" | "tile" | "wood" | "iron", THREE.Matrix4[]> = { white: [], tile: [], wood: [], iron: [] };
+  const parts: Record<"white" | "tile" | "wood" | "iron" | "canvas", THREE.Matrix4[]> = { white: [], tile: [], wood: [], iron: [], canvas: [] };
+  const climbers: SpritePlacement[] = [];
   const WIDTH = 3.4;
   const DEPTH = 1.5;
 
@@ -372,6 +384,20 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
           }
           box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
         }
+        if (!wooden) {
+          // Plain fronts get a patio: sometimes an awning, a table and chairs, a climber.
+          const pick = hash(x * 0.7, z * 2.3);
+          if (pick < 0.45) box(parts.canvas, 0, 2.55, 1.0, WIDTH, 0.05, 2.1, 0.32);
+          if (pick > 0.25) {
+            box(parts.white, 0, 0.72, 1.5, 0.9, 0.05, 0.9);
+            box(parts.white, 0, 0.36, 1.5, 0.08, 0.72, 0.08);
+            for (const across of [-0.8, 0.8]) {
+              box(parts.white, across, 0.45, 1.5, 0.42, 0.05, 0.42);
+              box(parts.white, across * 1.25, 0.7, 1.5, 0.05, 0.55, 0.42);
+            }
+          }
+          if (pick > 0.6) climbers.push({ x: x + tx * (WIDTH / 2) + nx * 0.25, y: 1.2, z: z + tz * (WIDTH / 2) + nz * 0.25 });
+        }
         if (b.floors >= 2) {
           const rail = wooden ? parts.wood : parts.iron;
           const bar = wooden ? 0.07 : 0.03;
@@ -388,12 +414,13 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
       }
     }
   }
-  const colours = { white: WALL, tile: "#b9663f", wood: SHUTTER, iron: "#1d1b1a" };
+  addSprites(scene, "bougainvillea", climbers);
+  const colours = { white: WALL, tile: "#b9663f", wood: SHUTTER, iron: "#1d1b1a", canvas: "#efe6d2" };
   const unit = new THREE.BoxGeometry(1, 1, 1);
-  for (const key of ["white", "tile", "wood", "iron"] as const) {
+  for (const key of ["white", "tile", "wood", "iron", "canvas"] as const) {
     const mesh = new THREE.InstancedMesh(unit, new THREE.MeshStandardMaterial({ color: colours[key], roughness: 0.9 }), parts[key].length);
     parts[key].forEach((matrix, i) => mesh.setMatrixAt(i, matrix));
-    mesh.castShadow = key === "white" || key === "tile";
+    mesh.castShadow = key === "white" || key === "tile" || key === "canvas";
     mesh.receiveShadow = true;
     scene.add(mesh);
   }
@@ -427,20 +454,109 @@ function slatTexture(): THREE.CanvasTexture {
   return texture;
 }
 
-function addPool(scene: THREE.Scene, ring: Vec2[]): void {
-  const c = centroid(ring);
-  const rimRing = ring.map(([x, z]): Vec2 => {
-    const d = Math.hypot(x - c.x, z - c.z) || 1;
-    return [x + ((x - c.x) / d) * 0.7, z + ((z - c.z) / d) * 0.7];
-  });
-  const flat = (shape: THREE.Shape, y: number, material: THREE.Material) => {
-    const mesh = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), material);
-    mesh.position.y = y;
-    mesh.receiveShadow = true;
+/** Hand-placed things from the skeleton, each drawn according to its kind. */
+function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
+  const white = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.9 });
+  const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
+  const ring = new THREE.MeshStandardMaterial({ color: "#e8532b", roughness: 0.6 });
+  const sprites: Partial<Record<SpriteKind, SpritePlacement[]>> = {};
+  const add = (mesh: THREE.Mesh, x: number, y: number, z: number) => {
+    mesh.position.set(x, y, z);
+    mesh.castShadow = true;
     scene.add(mesh);
+    return mesh;
   };
-  flat(shapeOf(rimRing, [ring]), 0.12, new THREE.MeshStandardMaterial({ color: "#f4eede", roughness: 0.8 }));
-  flat(shapeOf(ring), 0.04, new THREE.MeshStandardMaterial({ color: "#3fb6e0", roughness: 0.15, emissive: "#0f6f96", emissiveIntensity: 0.35 }));
+  for (const p of props) {
+    switch (p.kind) {
+      case "pool_steps":
+        // Three wide steps going down into the water.
+        for (let i = 0; i < 3; i++) add(new THREE.Mesh(new THREE.CylinderGeometry(1.5 - i * 0.4, 1.5 - i * 0.4, 0.3, 20), white), p.x, -0.95 + i * 0.3, p.z);
+        break;
+      case "pool_ladder":
+        for (const side of [-0.25, 0.25]) {
+          const rail = add(new THREE.Mesh(new THREE.TorusGeometry(0.42, 0.03, 8, 16, Math.PI), steel), p.x + side, 0.45, p.z);
+          rail.rotation.y = Math.PI / 2;
+          add(new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 1.3, 8), steel), p.x + side, -0.2, p.z - 0.42);
+          add(new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.5, 8), steel), p.x + side, 0.2, p.z + 0.42);
+        }
+        break;
+      case "pump_box":
+        add(new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.5, 0.9), white), p.x, 0.32, p.z);
+        break;
+      case "life_ring": {
+        add(new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 1.5, 8), steel), p.x, 0.75, p.z);
+        add(new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.09, 10, 20), ring), p.x, 1.35, p.z + 0.1);
+        break;
+      }
+      default:
+        (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
+    }
+  }
+  for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places);
+}
+
+/** An arched white gateway at each gap in the garden walls. */
+function addGardenGates(scene: THREE.Scene, gates: Vec2[], walls: Vec2[]): void {
+  const white = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.92 });
+  for (const [gx, gz] of gates) {
+    // The gate posts stand on the wall ends either side of the gap.
+    const nearby = walls
+      .map(([x, z]) => ({ x, z, d: Math.hypot(x - gx, z - gz) }))
+      .filter((w) => w.d < 2.2)
+      .sort((a, b) => a.d - b.d);
+    const first = nearby[0];
+    const second = nearby.find((w) => first && (w.x - gx) * (first.x - gx) + (w.z - gz) * (first.z - gz) < 0);
+    if (!first || !second) continue;
+    for (const post of [first, second]) {
+      const pier = new THREE.Mesh(new THREE.BoxGeometry(0.45, 2.1, 0.45), white);
+      pier.position.set(post.x, 1.05, post.z);
+      pier.castShadow = true;
+      scene.add(pier);
+    }
+    const span = Math.hypot(second.x - first.x, second.z - first.z);
+    const arch = new THREE.Mesh(new THREE.TorusGeometry(span / 2, 0.2, 8, 16, Math.PI), white);
+    arch.position.set((first.x + second.x) / 2, 2.0, (first.z + second.z) / 2);
+    arch.rotation.y = -Math.atan2(second.z - first.z, second.x - first.x);
+    arch.castShadow = true;
+    scene.add(arch);
+  }
+}
+
+/** What you see over the rooftops looking inland: tall pines, palms, blue mountains. */
+function addBackdrop(scene: THREE.Scene, centre: { x: number; z: number }): void {
+  const pines: SpritePlacement[] = [];
+  const palms: SpritePlacement[] = [];
+  for (let i = 0; i < 46; i++) {
+    const a = -1.5 + (i / 45) * 3 + (hash(i, 3) - 0.5) * 0.05;
+    const d = RADIUS + 22 + hash(i, 9) * 30;
+    const spot = { x: centre.x + Math.sin(a) * d, z: centre.z - Math.cos(a) * d, scale: 0.8 + hash(i, 5) * 0.6 };
+    (hash(i, 1) < 0.22 ? palms : pines).push(spot);
+  }
+  addSprites(scene, "pine", pines);
+  addSprites(scene, "palm", palms);
+
+  // Two ridgelines to the north, the far one paler.
+  for (const [distance, height, colour, seed] of [[330, 62, "#8fa9c4", 1], [270, 40, "#6f8fae", 2]] as const) {
+    const positions: number[] = [];
+    const steps = 80;
+    const ridge = (i: number) => {
+      const t = i / steps;
+      const peak = Math.sin(t * 9 + seed * 2) * 0.25 + Math.sin(t * 23 + seed) * 0.12 + Math.sin(t * 4.3 + seed * 5) * 0.35;
+      return height * (0.55 + peak * 0.6);
+    };
+    for (let i = 0; i < steps; i++) {
+      const a0 = -1.9 + (i / steps) * 3.8;
+      const a1 = -1.9 + ((i + 1) / steps) * 3.8;
+      const x0 = centre.x + Math.sin(a0) * distance;
+      const z0 = centre.z - Math.cos(a0) * distance;
+      const x1 = centre.x + Math.sin(a1) * distance;
+      const z1 = centre.z - Math.cos(a1) * distance;
+      positions.push(x0, -2, z0, x1, -2, z1, x1, ridge(i + 1), z1, x0, -2, z0, x1, ridge(i + 1), z1, x0, ridge(i), z0);
+    }
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    scene.add(new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: colour, fog: false, side: THREE.DoubleSide })));
+  }
 }
 
 function hash(x: number, z: number): number {

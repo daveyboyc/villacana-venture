@@ -36,6 +36,27 @@ pools, grass.
   are about a metre high; balconies are a mix of wooden with a tiled roof and plain
   iron.
 
+## How plants, details and water are built (2026-10-11)
+
+- **Sprites.** `src/sprites.ts` holds one painter per plant kind (tree, feathery
+  tree, pollarded tree, pine, palm, bird-of-paradise, yucca, hedge, hibiscus hedge,
+  bougainvillea, grass). Each paints a small picture once and the game stands it up
+  as two crossed flat cards. The pictures are painted by code as stand-ins; replacing
+  a painter with a hand-painted image of the same proportions changes the look
+  without touching placement.
+- **Placement is data.** Hand-placed things are `props` in `skeleton.json` (a kind
+  and a position), written by the `PROPS` table in `scripts/build_skeleton.py`.
+  Trees and grass tufts are scattered from the ground cover: trees on planting,
+  tufts on lawn. Hedges follow the garden walls.
+- **Pool outlines come from the registry and the aerial photo**, with corners
+  rounded. Ground-level photos are taken at an angle and are not used for shape or
+  position, only for what things look like.
+- **Water.** `src/water.ts` builds each pool as a basin 1.15 m deep cut out of the
+  ground, with tiled walls and floor, a see-through surface and a drifting net of
+  light on the tiles. The player stands chest-deep. Still to do: ripples round the
+  player, a splash on entry, a swimming stroke, painted highlights at the look
+  stage, and the sea (waves and foam at the shoreline) as a separate job.
+
 ## Order of work
 
 Skeleton first, graphics second. The current 3D view is set aside until the flat

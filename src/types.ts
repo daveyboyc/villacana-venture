@@ -96,7 +96,11 @@ export type Skeleton = {
   area: Vec2[];
   buildings: SkeletonBuilding[];
   pools: SkeletonPool[];
+  /** Things placed by hand: a kind and a position, drawn however the game chooses. */
+  props: { kind: string; x: number; z: number; pool: string }[];
   /** Centres of low garden-wall blocks, about half a metre apart. */
   gardenWalls: Vec2[];
+  /** Middles of the gateways through those walls. */
+  gardenGates: Vec2[];
   cover: { image: string; minX: number; maxX: number; minZ: number; maxZ: number; classes: Record<string, string> };
 };
