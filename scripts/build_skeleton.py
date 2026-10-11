@@ -50,7 +50,12 @@ PATH_INNER = 5.2
 PATH_OUTER = 6.5
 COURTYARD_REACH = 30.0
 # Paved strip left in front of the houses for their porches.
-PORCH_DEPTH = 1.5
+PORCH_DEPTH = 2.5
+# Low garden walls edge the lawn; one block every WALL_STEP metres, with a
+# gateway every WALL_GATE_EVERY metres or so.
+WALL_STEP = 0.5
+WALL_GATE_EVERY = 9.0
+WALL_GATE_WIDTH = 1.6
 # Gaps between houses narrower than twice this are lanes, not courtyard.
 LANE_HALF_WIDTH = 3.75
 
@@ -59,6 +64,7 @@ COVER_COLOURS = {
     "lawn": (110, 168, 84),
     "planting": (58, 110, 62),
     "deck": (236, 226, 204),
+    "path": (200, 128, 92),
 }
 
 
@@ -268,7 +274,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
 
     # Smooth away speckle: each cell takes the commonest class around it.
     votes = []
-    for k in range(4):
+    for k in range(4):  # the path class is laid out below, not read from the photo
         layer = Image.fromarray(((cls == k) * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(6))
         votes.append(np.asarray(layer).astype(np.float32))
     cls = np.argmax(np.stack(votes), axis=0).astype(np.uint8)
@@ -278,6 +284,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
     # These pools sit in a courtyard laid out the same way: an oval deck,
     # a ring of lawn, a sandy path looping round, then lawn out to the porches.
     built = mask([b["ring"] for b in buildings])
+    walls: list[list[float]] = []
     wide = ~mask([b["ring"] for b in buildings], grow=LANE_HALF_WIDTH)
     open_ground = ~mask([b["ring"] for b in buildings], grow=PORCH_DEPTH)
     yy, xx = np.mgrid[0:height, 0:width]
@@ -309,7 +316,25 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         cls[(cls == 3) & (dist < COURTYARD_REACH)] = 0
         planted = yard & (cls == 2)
         cls[yard] = 1
-        cls[yard & (dist >= PATH_INNER) & (dist < PATH_OUTER)] = 0
+        cls[yard & (dist >= PATH_INNER) & (dist < PATH_OUTER)] = 4
+
+        # A low white wall runs where the lawn meets the paved strip by the houses.
+        edge = np.zeros_like(yard)
+        edge[1:, :] |= ~open_ground[:-1, :]
+        edge[:-1, :] |= ~open_ground[1:, :]
+        edge[:, 1:] |= ~open_ground[:, :-1]
+        edge[:, :-1] |= ~open_ground[:, 1:]
+        edge &= yard
+        taken: set[tuple[int, int]] = set()
+        for iy, ix in zip(*np.nonzero(edge)):
+            x, z = float(wx[iy, ix]), float(wz[iy, ix])
+            key = (round(x / WALL_STEP), round(z / WALL_STEP))
+            if key in taken:
+                continue
+            taken.add(key)
+            if ((x + z) % WALL_GATE_EVERY) < WALL_GATE_WIDTH:
+                continue
+            walls.append([round(x, 2), round(z, 2)])
         cls[planted & (dist >= DECK_WIDTH + 1.0)] = 2
         cls[(dist < DECK_WIDTH) & ~built] = 3
 
@@ -325,6 +350,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         "minZ": round(min_z, 2),
         "maxZ": round(min_z + height * COVER_CELL, 2),
         "cell": COVER_CELL,
+        "gardenWalls": walls,
         "classes": {name: "#%02x%02x%02x" % COVER_COLOURS[name] for name in names},
     }
 
@@ -340,6 +366,7 @@ def main() -> None:
         "area": rounded([unturned(c) for c in ((AREA[0], AREA[1]), (AREA[2], AREA[1]), (AREA[2], AREA[3]), (AREA[0], AREA[3]))]),
         "buildings": buildings,
         "pools": pools,
+        "gardenWalls": cover.pop("gardenWalls"),
         "cover": cover,
         "sources": {
             "buildings": "Dirección General del Catastro, INSPIRE building parts, 2026-10-11",

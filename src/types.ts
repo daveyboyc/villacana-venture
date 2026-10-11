@@ -96,5 +96,7 @@ export type Skeleton = {
   area: Vec2[];
   buildings: SkeletonBuilding[];
   pools: SkeletonPool[];
-  cover: { image: string; minX: number; maxX: number; minZ: number; maxZ: number };
+  /** Centres of low garden-wall blocks, about half a metre apart. */
+  gardenWalls: Vec2[];
+  cover: { image: string; minX: number; maxX: number; minZ: number; maxZ: number; classes: Record<string, string> };
 };

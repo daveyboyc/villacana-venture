@@ -66,7 +66,10 @@ async function boot(): Promise<void> {
 
   const player = new Player();
   scene.add(player.group);
-  const solids = new Solids(buildings.map((b) => b.ring));
+  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS);
+  addGardenWalls(scene, walls);
+  const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
+  const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings]);
   const spawn = findSpawn(centre, pool.ring, buildings);
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
@@ -142,7 +145,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const paint = document.createElement("canvas");
   paint.width = paint.height = size;
   const pctx = paint.getContext("2d")!;
-  pctx.fillStyle = "#c9a07a";
+  pctx.fillStyle = skeleton.cover.classes.paving;
   pctx.fillRect(0, 0, size, size);
   pctx.filter = "blur(2.5px)";
   const perMetre = image.width / w;
@@ -282,6 +285,37 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
   };
   place(new THREE.PlaneGeometry(1.15, 1.8), windows);
   place(new THREE.PlaneGeometry(1.15, 2.1), doors);
+}
+
+/** Low white garden walls round the lawn, with clipped hedges growing over them in places. */
+function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
+  const m = new THREE.Matrix4();
+  const still = new THREE.Quaternion();
+  const blocks = new THREE.InstancedMesh(
+    new THREE.CylinderGeometry(0.34, 0.36, 0.65, 10),
+    new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.95 }),
+    walls.length,
+  );
+  walls.forEach(([x, z], i) => {
+    m.compose(new THREE.Vector3(x, 0.325, z), still, new THREE.Vector3(1, 1, 1));
+    blocks.setMatrixAt(i, m);
+  });
+  blocks.castShadow = blocks.receiveShadow = true;
+
+  // Hedges come in runs: a few metres of hedge, then bare wall.
+  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.45);
+  const hedges = new THREE.InstancedMesh(
+    new THREE.IcosahedronGeometry(1, 1),
+    new THREE.MeshStandardMaterial({ color: "#2f6b3a", roughness: 0.9, flatShading: true }),
+    hedged.length,
+  );
+  hedged.forEach(([x, z], i) => {
+    const r = 0.62 + hash(x, z) * 0.18;
+    m.compose(new THREE.Vector3(x, 0.75, z), still, new THREE.Vector3(r, r * 0.9, r));
+    hedges.setMatrixAt(i, m);
+  });
+  hedges.castShadow = true;
+  scene.add(blocks, hedges);
 }
 
 /**
