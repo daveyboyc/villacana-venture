@@ -20,6 +20,22 @@ pools, grass.
 - Changed from Part 1: open ground is stored as a classified picture (`cover.png`:
   lawn, planting, deck, paving) rather than as outlines. Lanes are not yet named.
 
+## Decisions from Dave (2026-10-11)
+
+- **No glass safety fence** round the pools, even though the real ones have it.
+- **Plants and small details will be textures and sprites.** The trees, hedges,
+  flowers, pots, furniture and similar details are simple 3D shapes for now, as
+  placeholders. The end state is painted images: flat sprites that turn to face the
+  camera for plants and props, and painted textures on walls, roofs and ground. Parts
+  4, 5, 6 and 8 should place these things as data (a kind and a position) so the
+  shapes can be swapped for sprites without touching the layout.
+- **The player can get into the pools.** Wading and swimming are written for this
+  game; no code is taken from other games.
+- **North pool specifics**, from Dave's photos: lawn runs right up to a cream stone
+  deck; the grey crazy-paving path runs round the outside by the garden walls; walls
+  are about a metre high; balconies are a mix of wooden with a tiled roof and plain
+  iron.
+
 ## Order of work
 
 Skeleton first, graphics second. The current 3D view is set aside until the flat

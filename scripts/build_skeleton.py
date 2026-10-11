@@ -45,9 +45,9 @@ COVER_CELL = 0.25
 # lawn and needs its own treatment.
 COURTYARD_POOLS = ("north", "middle")
 # Courtyard rings, in metres out from the pool's rounded outline.
-DECK_WIDTH = 1.6
-PATH_INNER = 5.2
-PATH_OUTER = 6.5
+DECK_WIDTH = 2.4
+# The crazy-paving path runs round the outside of the lawn, at the foot of the garden walls.
+PATH_WIDTH = 1.5
 COURTYARD_REACH = 30.0
 # Paved strip left in front of the houses for their porches.
 PORCH_DEPTH = 2.5
@@ -64,7 +64,7 @@ COVER_COLOURS = {
     "lawn": (110, 168, 84),
     "planting": (58, 110, 62),
     "deck": (236, 226, 204),
-    "path": (200, 128, 92),
+    "path": (178, 160, 136),
 }
 
 
@@ -281,8 +281,8 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
     # Pools without a laid-out courtyard keep a plain deck right round them for now.
     cls[mask([p["ring"] for p in pools if p["id"] not in COURTYARD_POOLS], grow=2.25)] = 3
 
-    # These pools sit in a courtyard laid out the same way: an oval deck,
-    # a ring of lawn, a sandy path looping round, then lawn out to the porches.
+    # These pools sit in a courtyard laid out the same way: a stone deck, lawn
+    # right up to it, and a stone path round the outside by the garden walls.
     built = mask([b["ring"] for b in buildings])
     walls: list[list[float]] = []
     wide = ~mask([b["ring"] for b in buildings], grow=LANE_HALF_WIDTH)
@@ -316,7 +316,10 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         cls[(cls == 3) & (dist < COURTYARD_REACH)] = 0
         planted = yard & (cls == 2)
         cls[yard] = 1
-        cls[yard & (dist >= PATH_INNER) & (dist < PATH_OUTER)] = 4
+        inner = Image.fromarray((yard * 255).astype(np.uint8)).filter(
+            ImageFilter.MinFilter(int(PATH_WIDTH / COVER_CELL) * 2 + 1)
+        )
+        cls[yard & ~(np.asarray(inner) > 0) & (dist < COURTYARD_REACH - PATH_WIDTH - 0.5)] = 4
 
         # A low white wall runs where the lawn meets the paved strip by the houses.
         edge = np.zeros_like(yard)

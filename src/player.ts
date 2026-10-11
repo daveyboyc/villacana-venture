@@ -7,6 +7,8 @@ export type MoveWorld = {
   coast: CoastField;
   pools: [number, number][][];
   bounds: MapData["bounds"];
+  /** How far below the ground the player stands in a pool. Defaults to ankle-deep. */
+  poolFloor?: number;
 };
 
 const RADIUS = 0.42;
@@ -182,7 +184,7 @@ export class Player {
       const t = clamp((2.2 - water.signed) / 8, 0, 1);
       floor = -0.12 - t * 0.8;
     }
-    if (inAnyPool(this.x, this.z, world.pools)) floor = Math.min(floor, -0.4);
+    if (inAnyPool(this.x, this.z, world.pools)) floor = Math.min(floor, world.poolFloor ?? -0.4);
 
     let jumped = false;
     let landed = false;

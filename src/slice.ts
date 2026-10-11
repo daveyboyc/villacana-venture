@@ -76,7 +76,9 @@ async function boot(): Promise<void> {
     solids,
     // The sea is outside this area; a far-off coast keeps the player on dry land.
     coast: new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]),
-    pools: [],
+    pools: skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring),
+    // Chest-deep, so only head and shoulders show above the water.
+    poolFloor: -1.05,
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
@@ -292,12 +294,12 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
   const m = new THREE.Matrix4();
   const still = new THREE.Quaternion();
   const blocks = new THREE.InstancedMesh(
-    new THREE.CylinderGeometry(0.34, 0.36, 0.65, 10),
+    new THREE.CylinderGeometry(0.34, 0.36, 1.0, 10),
     new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.95 }),
     walls.length,
   );
   walls.forEach(([x, z], i) => {
-    m.compose(new THREE.Vector3(x, 0.325, z), still, new THREE.Vector3(1, 1, 1));
+    m.compose(new THREE.Vector3(x, 0.5, z), still, new THREE.Vector3(1, 1, 1));
     blocks.setMatrixAt(i, m);
   });
   blocks.castShadow = blocks.receiveShadow = true;
@@ -311,7 +313,7 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
   );
   hedged.forEach(([x, z], i) => {
     const r = 0.62 + hash(x, z) * 0.18;
-    m.compose(new THREE.Vector3(x, 0.75, z), still, new THREE.Vector3(r, r * 0.9, r));
+    m.compose(new THREE.Vector3(x, 1.05, z), still, new THREE.Vector3(r, r * 0.9, r));
     hedges.setMatrixAt(i, m);
   });
   hedges.castShadow = true;
@@ -320,7 +322,8 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
 
 /**
  * Front porches on walls that face open ground: white piers, a clay-tiled
- * lean-to roof, and on two-storey houses a balcony with a wrought-iron rail.
+ * lean-to roof, and on two-storey houses a balcony: wooden under that roof,
+ * or a plain wrought-iron one.
  */
 function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
   const houses = buildings.filter((b) => b.floors > 0);
@@ -361,16 +364,25 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
           list.push(new THREE.Matrix4().compose(p, q, new THREE.Vector3(sx, sy, sz)));
         };
         const top = Math.min(b.floors, 2) * floorHeight - 0.35;
-        for (const edge of [-WIDTH / 2 + 0.15, WIDTH / 2 - 0.15]) {
-          box(parts.white, edge, floorHeight / 2, DEPTH - 0.15, 0.3, floorHeight, 0.3);
+        // Half the balconies are wooden with a little tiled roof; the rest are plain iron.
+        const wooden = b.floors < 2 || hash(x * 3.1, z * 1.7) < 0.5;
+        if (wooden) {
+          for (const edge of [-WIDTH / 2 + 0.15, WIDTH / 2 - 0.15]) {
+            box(parts.white, edge, floorHeight / 2, DEPTH - 0.15, 0.3, floorHeight, 0.3);
+          }
+          box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
         }
-        box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
         if (b.floors >= 2) {
-          box(parts.white, 0, floorHeight - 0.08, DEPTH / 2, WIDTH, 0.16, DEPTH);
-          box(parts.iron, 0, floorHeight + 0.95, DEPTH - 0.05, WIDTH, 0.05, 0.05);
-          for (let r = -6; r <= 6; r++) box(parts.iron, (r * WIDTH) / 13, floorHeight + 0.5, DEPTH - 0.05, 0.03, 0.9, 0.03);
-          for (const edge of [-WIDTH / 2 + 0.1, WIDTH / 2 - 0.1]) {
-            box(parts.wood, edge, floorHeight + (top - floorHeight - 0.5) / 2, DEPTH - 0.1, 0.12, top - floorHeight - 0.5, 0.12);
+          const rail = wooden ? parts.wood : parts.iron;
+          const bar = wooden ? 0.07 : 0.03;
+          const depth = wooden ? DEPTH : 0.7;
+          box(parts.white, 0, floorHeight - 0.08, depth / 2, WIDTH, 0.16, depth);
+          box(rail, 0, floorHeight + 0.95, depth - 0.05, WIDTH, bar + 0.02, bar + 0.02);
+          for (let r = -6; r <= 6; r++) box(rail, (r * WIDTH) / 13, floorHeight + 0.5, depth - 0.05, bar, 0.9, bar);
+          if (wooden) {
+            for (const edge of [-WIDTH / 2 + 0.1, WIDTH / 2 - 0.1]) {
+              box(parts.wood, edge, floorHeight + (top - floorHeight - 0.5) / 2, DEPTH - 0.1, 0.12, top - floorHeight - 0.5, 0.12);
+            }
           }
         }
       }
@@ -381,7 +393,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
   for (const key of ["white", "tile", "wood", "iron"] as const) {
     const mesh = new THREE.InstancedMesh(unit, new THREE.MeshStandardMaterial({ color: colours[key], roughness: 0.9 }), parts[key].length);
     parts[key].forEach((matrix, i) => mesh.setMatrixAt(i, matrix));
-    mesh.castShadow = key !== "iron";
+    mesh.castShadow = key === "white" || key === "tile";
     mesh.receiveShadow = true;
     scene.add(mesh);
   }
