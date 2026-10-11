@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { asset } from "./asset";
 import { createFrames, type Frame } from "./frames";
 import { clamp, dampAngle, nearestStreet, streetLabel } from "./geom";
 import { Minimap } from "./minimap";
@@ -49,7 +50,7 @@ void boot();
 
 async function boot(): Promise<void> {
   try {
-    const response = await fetch("/map/villacana.json");
+    const response = await fetch(asset("/map/villacana.json"));
     if (!response.ok) throw new Error("The map file did not load.");
     const map = (await response.json()) as MapData;
     start(map);
@@ -270,7 +271,7 @@ function start(map: MapData): void {
       cardSource.hidden = true;
     }
     if (frame.entry.image) {
-      cardImg.src = frame.entry.image;
+      cardImg.src = asset(frame.entry.image);
       cardImg.alt = frame.entry.title;
       cardImg.hidden = false;
       cardEmpty.hidden = true;

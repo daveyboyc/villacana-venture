@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
+import { asset } from "./asset";
 import { centroid, CoastField, Solids } from "./geom";
 import type { Building, MapData, Vec2 } from "./types";
 
@@ -242,7 +243,7 @@ export function buildWorld(scene: THREE.Scene, map: MapData): BuiltWorld {
 function placeAerialGround(scene: THREE.Scene, map: MapData): void {
   const ground = map.ground;
   if (!ground) return;
-  const texture = new THREE.TextureLoader().load(ground.image);
+  const texture = new THREE.TextureLoader().load(asset(ground.image));
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
   const width = ground.maxX - ground.minX;

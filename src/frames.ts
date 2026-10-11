@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { nearestStreet, project, rotationYFromYaw, yawFromDirection, type CoastField } from "./geom";
 import type { AlbumEntry, MapData } from "./types";
+import { asset } from "./asset";
 
 export type Frame = {
   entry: AlbumEntry;
@@ -12,7 +13,7 @@ export type Frame = {
 };
 
 export async function createFrames(scene: THREE.Scene, map: MapData, coast: CoastField): Promise<Frame[]> {
-  const response = await fetch("/photos/album.json");
+  const response = await fetch(asset("/photos/album.json"));
   if (!response.ok) throw new Error("The photo album did not load.");
   const album = (await response.json()) as AlbumEntry[];
   const frames: Frame[] = [];
@@ -202,7 +203,7 @@ function roundRect(
 function loadTexture(url: string): Promise<THREE.Texture | null> {
   return new Promise((resolve) => {
     new THREE.TextureLoader().load(
-      url,
+      asset(url),
       (texture) => resolve(texture),
       undefined,
       () => resolve(null),
