@@ -17,3 +17,9 @@ Facts confirmed by Dave (2026-10-11):
 | apple-maps/06 | Top-down, whole block with surrounding street names |
 | google-maps/01 | Street map with inner lane names |
 | google-maps/02 | Satellite with inner lane names |
+| apple-maps/07 | 3D, north pool looking east towards the Picasso car park |
+| apple-maps/08 | 3D, north pool looking west: front porches, tiled canopies, balconies |
+| apple-maps/09 | 3D, north pool looking south: lawn ring, curved path, deck |
+
+Dave's notes on the north pool (2026-10-11): the grass area is bigger than the first
+pass showed, and the houses have front porches.
