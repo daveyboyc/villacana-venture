@@ -29,6 +29,14 @@ pass showed, and the houses have front porches.
 | File | Shows |
 | --- | --- |
 | photos/01 | Ground level on the north pool lawn, April 2021. The key style reference so far. |
+| photos/02 | A pool seen from an upper floor, December 2020. Which pool is not yet confirmed by Dave. |
+
+What photos/02 shows: a frosted-band glass safety fence right round the pool deck; a
+steel pool ladder; pale cream stone deck; a grey-brown crazy-paving stone path; lawn
+patches and clipped hedges; a large bird-of-paradise plant and a feathery-leaved tree; a
+two-storey terrace with a pitched clay-tile roof and white chimneys with small tiled
+caps; arched brown shutters; a wooden-posted balcony; a low white wall along the path;
+the sea visible beyond the roofs.
 
 What photos/01 shows: thick white rendered walls with soft rounded edges; brown louvred
 shutters with arched tops, door height on both floors; black wrought-iron balcony rails
