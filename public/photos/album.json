@@ -1,0 +1,52 @@
+[
+  {
+    "id": "playa-del-sol",
+    "title": "Playa del Sol",
+    "lat": 36.455179,
+    "lon": -5.047414,
+    "image": "/photos/estepona-beach.jpg",
+    "caption": "The shore Villacana faces. This picture is the Estepona coast in May, the same Mediterranean water as Playa del Sol.",
+    "credit": "Photo by Jay Cross, CC BY 2.0, via Wikimedia Commons.",
+    "source": "https://commons.wikimedia.org/wiki/File:Estepona_beach.jpg"
+  },
+  {
+    "id": "barraca",
+    "title": "Barraca Beach",
+    "lat": 36.453906,
+    "lon": -5.049778,
+    "image": "/photos/playa-del-cristo.jpg",
+    "caption": "Barraca sits on the sand at the south of the urbanization. This winter picture is Playa del Cristo, further along the Estepona shore. Swap in your own photo of Barraca when you have one.",
+    "credit": "Photo by Turista Inglesa, CC BY-SA 4.0, via Wikimedia Commons.",
+    "source": "https://commons.wikimedia.org/wiki/File:Playa_del_cristo_winter_-_Estepona_beach_(cropped).jpg"
+  },
+  {
+    "id": "picasso",
+    "title": "Calle de Picasso",
+    "lat": 36.455095,
+    "lon": -5.050851,
+    "image": null,
+    "suggest": "picasso.jpg",
+    "caption": "One of the lanes through the white houses. Add your photo as public/photos/picasso.jpg and set \"image\" to \"/photos/picasso.jpg\" in album.json.",
+    "credit": ""
+  },
+  {
+    "id": "gregorio",
+    "title": "Gregorio",
+    "lat": 36.455968,
+    "lon": -5.051548,
+    "image": null,
+    "suggest": "gregorio.jpg",
+    "caption": "Gregorio, a restaurant on the lanes just inland from the beach. This frame is waiting for a picture from the terrace.",
+    "credit": ""
+  },
+  {
+    "id": "villacana",
+    "title": "Villacana",
+    "lat": 36.454624,
+    "lon": -5.051389,
+    "image": null,
+    "suggest": "villacana.jpg",
+    "caption": "The middle of the urbanization: low white houses, gardens, and pools. A photo from this lane belongs in this frame.",
+    "credit": ""
+  }
+]

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Villacana Roam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Nunito:wght@560;750;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <div id="vignette"></div>
+
+    <div id="loading">
+      <p class="eyebrow">Estepona · Costa del Sol</p>
+      <h1>Villacana Roam</h1>
+      <p id="loadingText">Unfolding the lanes, the pools, and Playa del Sol…</p>
+    </div>
+
+    <header id="title">
+      <p class="eyebrow">Estepona · Costa del Sol</p>
+      <h1>Villacana Roam</h1>
+      <p id="street">Villacana</p>
+      <p id="osm">Map data © OpenStreetMap contributors</p>
+    </header>
+
+    <div id="topRight">
+      <button id="aboutBtn" type="button">About the map</button>
+      <p id="stops">Stops 0/5</p>
+      <canvas id="minimap" width="180" height="180" aria-label="Map of Villacana"></canvas>
+    </div>
+
+    <p id="hint">WASD walk · Shift run · Space jump · drag to look · Q and R turn · E at a frame</p>
+    <p id="nearby"></p>
+    <button id="prompt" type="button" hidden>Look</button>
+
+    <div id="card" hidden>
+      <article>
+        <button id="cardClose" type="button">Close</button>
+        <img id="cardImg" alt="" />
+        <div id="cardEmpty" hidden>
+          <p>This frame is waiting for a photograph from the lane.</p>
+        </div>
+        <h2 id="cardTitle"></h2>
+        <p id="cardCaption"></p>
+        <p id="cardCredit"></p>
+        <a id="cardSource" target="_blank" rel="noreferrer"></a>
+      </article>
+    </div>
+
+    <div id="about" hidden>
+      <article>
+        <button id="aboutClose" type="button">Close</button>
+        <p class="eyebrow">How this prototype is made</p>
+        <h2>A walk built from the real map</h2>
+        <p>
+          The coastline, Playa del Sol, the named lanes, the swimming pools, and the houses volunteers
+          have traced all come from OpenStreetMap. Streets that do not have a house drawn yet get a row
+          of ordinary white terraces, which is what this urbanization actually looks like, so the walk
+          is a neighbourhood rather than an empty plan.
+        </p>
+        <p>
+          The two beach pictures are Creative Commons photographs of the Estepona coast, the same shore
+          Villacana faces. The empty frames are yours. Put a picture in <code>public/photos</code> and
+          point <code>album.json</code> at it.
+        </p>
+        <p>
+          You move the way you would in a small 3D platformer: walk, run, jump, and a camera over your
+          shoulder. It is an original stroll, not a Nintendo game.
+        </p>
+        <p id="aboutStats"></p>
+        <button id="respawn" type="button">Back to the lane</button>
+      </article>
+    </div>
+
+    <div id="touch">
+      <div id="stick" aria-hidden="true"><div id="knob"></div></div>
+      <button id="runBtn" type="button">Run</button>
+      <button id="jumpBtn" type="button">Jump</button>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
