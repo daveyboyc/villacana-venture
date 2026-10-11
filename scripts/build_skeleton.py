@@ -71,12 +71,19 @@ PROPS = {
         ("pump_box", 4.0, 0.1),
         ("life_ring", 0.6, -6.9),
         ("life_ring", 6.0, 1.6),
-        ("bird_of_paradise", -8.9, 2.4),
-        ("bird_of_paradise", -8.4, 3.9),
-        ("yucca", 9.5, 8.0),
-        ("feathery_tree", 6.5, -9.5),
-        ("feathery_tree", 12.0, 1.0),
-        ("pollarded_tree", -0.5, -13.0),
+        # By the pool's west lobe, in a bite out of the deck.
+        ("bird_of_paradise", -8.6, 2.4),
+        ("bird_of_paradise", -8.1, 3.8),
+        # The slim tree on the lawn north-east of the pool, and the big one further east.
+        ("feathery_tree", 6.0, -7.0),
+        ("feathery_tree", 13.0, -3.0),
+        # In the patios behind the north wall.
+        ("feathery_tree", -12.0, -9.0),
+        ("pollarded_tree", -1.0, -13.0),
+        # South-east corner, beside the hedge.
+        ("yucca", 10.0, 8.0),
+        # The hibiscus hedge row along the south side, with a gap for the path.
+        *[("hibiscus_hedge", -7.0 + i * 1.2, 10.6 - i * 0.3) for i in range(14) if i not in (6, 7)],
     ],
 }
 
@@ -363,7 +370,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         )
         yard = (np.asarray(spread) > 0) & open_ground & (dist < COURTYARD_REACH)
         cls[(cls == 3) & (dist < COURTYARD_REACH)] = 0
-        planted = yard & (cls == 2)
+        # Lawn everywhere; the courtyard's own trees are placed by hand in PROPS.
         cls[yard] = 1
         inner = Image.fromarray((yard * 255).astype(np.uint8)).filter(
             ImageFilter.MinFilter(int(PATH_WIDTH / COVER_CELL) * 2 + 1)
@@ -391,7 +398,6 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
                     gates.append([round(x, 2), round(z, 2)])
                 continue
             walls.append([round(x, 2), round(z, 2)])
-        cls[planted & (dist >= DECK_WIDTH + 1.0)] = 2
         cls[(dist < DECK_WIDTH) & ~built] = 3
 
     names = list(COVER_COLOURS)

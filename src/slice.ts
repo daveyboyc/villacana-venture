@@ -9,6 +9,8 @@ import { addPools, POOL_STAND } from "./water";
 /** The one area being built out first: the courtyard around this pool. */
 const POOL_ID = "north";
 const RADIUS = 60;
+/** How far out from the pool the hand-placed planting reaches. */
+const COURTYARD = 30;
 
 const WALL = "#ffffff";
 const ROOF_GREY = "#d9d5cc";
@@ -167,6 +169,24 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     size,
     size,
   );
+  // Paint short blades all over the lawn so it reads as grass right to its edges.
+  pctx.filter = "none";
+  const painted = pctx.getImageData(0, 0, size, size).data;
+  const lawn = skeleton.cover.classes.lawn;
+  const lawnRgb = [parseInt(lawn.slice(1, 3), 16), parseInt(lawn.slice(3, 5), 16), parseInt(lawn.slice(5, 7), 16)];
+  pctx.lineCap = "round";
+  pctx.lineWidth = 1.6;
+  for (let i = 0; i < 90000; i++) {
+    const x = Math.floor(hash(i, 1.7) * size);
+    const y = Math.floor(hash(i, 9.1) * size);
+    const k = (y * size + x) * 4;
+    if (Math.abs(painted[k] - lawnRgb[0]) + Math.abs(painted[k + 1] - lawnRgb[1]) + Math.abs(painted[k + 2] - lawnRgb[2]) > 30) continue;
+    pctx.strokeStyle = ["#5c9a4f", "#86b85a", "#4f8a45", "#9cc468"][i % 4];
+    pctx.beginPath();
+    pctx.moveTo(x, y);
+    pctx.lineTo(x + (hash(i, 3.3) - 0.5) * 5, y - 4 - hash(i, 5.9) * 5);
+    pctx.stroke();
+  }
   const texture = new THREE.CanvasTexture(paint);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
@@ -223,8 +243,11 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     }
     return out;
   };
-  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS));
-  addSprites(scene, "grass", scatter(0.6, "lawn", 34));
+  // Inside the courtyard every tree is placed by hand from the photos, so the
+  // scattered ones only fill in beyond it.
+  const outside = (p: SpritePlacement) => Math.hypot(p.x - centre.x, p.z - centre.z) > COURTYARD;
+  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter(outside));
+  addSprites(scene, "grass", scatter(0.42, "lawn", RADIUS).map((p) => ({ ...p, scale: 0.45 + hash(p.x, p.z) * 0.5 })));
 }
 
 function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {
