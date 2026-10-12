@@ -71,3 +71,16 @@ and window grilles; low white garden walls with curved ends edging the lawn; a
 terracotta-tiled path; clipped round hedges; a tall candelabra cactus; climbers on the
 walls; a short green bollard light; chimneys and water tanks on the flat roofs; deep
 green lawn; blue sky with big white cumulus.
+
+## Middle pool photos (sent by Dave 2026-10-12)
+
+| File | Shows |
+| --- | --- |
+| photos/08 | Middle pool deck close up: big bird-of-paradise clump, ladder, wooden balcony house, palm trunk |
+| photos/09 | Middle pool seen through an iron gate from a tiled lane: hedges, pollarded tree, tall palm |
+| photos/10, 11 | A patio beside the middle pool: oleander bed, pollarded tree, two feathery trees |
+| photos/12 | Terracotta-tiled lane leading to an arched white gateway into the middle pool courtyard |
+
+What they show: lanes are paved in square terracotta tiles with a pebble border; the
+courtyard is entered through arched white gateways with black iron gates; clipped
+hedges about 1.2 m high run along low white walls; a tall palm stands by the pool.
