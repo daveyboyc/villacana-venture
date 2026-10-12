@@ -52,6 +52,21 @@ async function boot(): Promise<void> {
   photo.style.display = "none";
   world.append(cover, photo);
 
+  const seafront = el("g", { id: "seafront-outlines" });
+  const seafrontNames = el("g", {});
+  if (skeleton.seafront) {
+    const sf = skeleton.seafront;
+    for (const [area, fill, stroke] of [[sf.sea, "#62b6d1", "#247c9b"], [sf.beach, "#e4cc9b", "#b59868"]] as const) {
+      seafront.append(el("path", { d: path(area.ring), fill, stroke, "stroke-width": 0.5 }));
+    }
+    const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
+    seafront.append(el("path", { d: line(sf.coast), fill: "none", stroke: "#f5ffff", "stroke-width": 1.1 }));
+    seafront.append(el("path", { d: line(sf.paseo.points), fill: "none", stroke: "#9c644d", "stroke-width": sf.paseo.width + 0.8, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    seafront.append(el("path", { d: line(sf.paseo.points), fill: "none", stroke: "#dfaa86", "stroke-width": sf.paseo.width, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+    seafront.append(el("path", { d: path(sf.restaurant.terrace), fill: "#d7bca2", stroke: "#864b40", "stroke-width": 0.5, "stroke-dasharray": "1.5 1" }));
+  }
+  world.append(seafront);
+
   // Traced open ground: the car park, its bays and planters.
   const areaFill: Record<string, string> = { car_park: "#b9b4ab", planter: "#6ea854" };
   const traced = el("g", {});
@@ -306,6 +321,26 @@ async function boot(): Promise<void> {
     // No photo index published: the map works without it.
   }
   world.append(photos);
+  if (skeleton.seafront) {
+    const sf = skeleton.seafront;
+    const centreOf = (ring: Vec2[]) => ring.reduce(([x, z], p) => [x + p[0] / ring.length, z + p[1] / ring.length], [0, 0] as Vec2);
+    const [rx, rz] = centreOf(sf.restaurant.ring);
+    seafrontNames.append(el("path", { d: path(sf.restaurant.ring), fill: "#a68a60", "fill-opacity": 0.55, stroke: "#763e32", "stroke-width": 0.7 }));
+    seafrontNames.append(label(sf.restaurant.name, rx, rz, 0, "#763e32"));
+    const [vx, vz] = centreOf(sf.viewBounds);
+    // Labels stay within the local planning window even though natural outlines
+    // continue beyond it. The lower third is the sea, the middle is the beach.
+    const toMap = (dx: number, dz: number): Vec2 => [vx + dx * Math.cos(turn) + dz * Math.sin(turn), vz - dx * Math.sin(turn) + dz * Math.cos(turn)];
+    const [sx, sz] = toMap(0, 55);
+    const [bx, bz] = toMap(-10, -2);
+    seafrontNames.append(label(sf.sea.name, sx, sz, 0, "#235d72"));
+    seafrontNames.append(label(sf.beach.name, bx, bz, 0, "#235d72"));
+    const mid = Math.floor(sf.paseo.points.length / 2);
+    const [px, pz] = sf.paseo.points[mid];
+    seafrontNames.append(label(sf.paseo.name, px, pz - 5, 0, "#864b40"));
+    world.append(seafrontNames);
+  }
+
 
   $("#legend").innerHTML =
     `<div><i style="background:#f7f3ea"></i>House</div><div><i style="background:#d9a887"></i>Yard or patio</div>` +
@@ -314,11 +349,14 @@ async function boot(): Promise<void> {
     `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
     `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
     `<div><i style="background:#d6336c;border-radius:50%"></i>Photo</div>` +
-    `<div><i style="background:#2f9e44;border-radius:50%"></i>Photo you have labelled</div>`;
+    `<div><i style="background:#2f9e44;border-radius:50%"></i>Photo you have labelled</div>` +
+    `<div><i style="background:#dfaa86"></i>Paseo</div><div><i style="background:#e4cc9b"></i>Beach</div>` +
+    `<div><i style="background:#62b6d1"></i>Sea</div><div><i style="background:#a68a60"></i>Barraka Beach</div>`;
 
   // The turned bounding box of the area is the default view.
   const a = (rot * Math.PI) / 180;
-  const pts = skeleton.area.map(([x, z]) => [x * Math.cos(a) - z * Math.sin(a), x * Math.sin(a) + z * Math.cos(a)]);
+  const extent = [...skeleton.area, ...(skeleton.seafront?.viewBounds ?? [])];
+  const pts = extent.map(([x, z]) => [x * Math.cos(a) - z * Math.sin(a), x * Math.sin(a) + z * Math.cos(a)]);
   const home = {
     x: Math.min(...pts.map((p) => p[0])),
     y: Math.min(...pts.map((p) => p[1])),
@@ -398,6 +436,7 @@ async function boot(): Promise<void> {
   toggle("#photo", (on) => {
     show(photo)(on);
     traced.setAttribute("opacity", on ? "0.35" : "1");
+    seafront.setAttribute("opacity", on ? "0.4" : "1");
   });
   toggle("#streets", (on) => {
     show(streets)(on);
@@ -408,6 +447,7 @@ async function boot(): Promise<void> {
     show(walls)(on);
   });
   toggle("#photos", show(photos));
+  toggle("#seafront", (on) => { show(seafront)(on); show(seafrontNames)(on); });
   toggle("#heights", paintRoofs);
   toggle("#key", (on) => ($("#legend").hidden = !on));
   toggle("#edit", (on) => {

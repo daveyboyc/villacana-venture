@@ -6,6 +6,7 @@ import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "
 import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addSeafront } from "./main-pool";
+import { addSeafrontOutlines } from "./seafront";
 import mainPoolLayout from "../data/main_pool.json";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
@@ -34,9 +35,10 @@ async function boot(): Promise<void> {
   // Start at the first pool named.
   const pool = shown.find((p) => p.id === POOL_IDS[0]) ?? shown[0];
   const mainPool = shown.some((p) => p.id === "main");
+  const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
   document.querySelector("#title")!.textContent = names.length > 1 ? `${names.join(" and ")} pools` : `${names[0]} pool`;
-  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}`;
+  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : ""}`;
   for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
   COURTS = shown.map((p) => centroid(p.ring));
   const centre = {
@@ -84,14 +86,15 @@ async function boot(): Promise<void> {
   addBackdrop(scene, centre);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
-  const houses = buildings.filter((b) => !terraceIds.has(b.id));
+  const houses = buildings.filter((b) => !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   addShutters(scene, houses, skeleton.floorHeight);
   addPorches(scene, houses, skeleton.floorHeight);
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
     const map = await (await fetch(asset("/map/villacana.json"))).json();
-    addSeafront(scene, map.coast);
+    if (skeleton.seafront) addSeafrontOutlines(scene, skeleton.seafront);
+    else addSeafront(scene, map.coast);
     coast = new CoastField(map.coast, map.landRef);
   }
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
@@ -107,6 +110,15 @@ async function boot(): Promise<void> {
   const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings]);
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
+  if (seafrontFocus && skeleton.seafront) {
+    const restaurant = centroid(skeleton.seafront.restaurant.ring);
+    const safe = skeleton.seafront.paseo.points.filter(([x, z]) => !buildings.some((b) => nearRing(x, z, b.ring, 1.5)));
+    safe.sort((a, b) => Math.hypot(a[0] - restaurant.x, a[1] - restaurant.z) - Math.hypot(b[0] - restaurant.x, b[1] - restaurant.z));
+    if (safe.length) { spawn[0] = safe[0][0]; spawn[1] = safe[0][1]; }
+    const beach = centroid(skeleton.seafront.restaurant.terrace);
+    start.x = beach.x; start.z = beach.z;
+    document.querySelector("#title")!.textContent = "Paseo · Barraka Beach";
+  }
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
     solids,
@@ -118,8 +130,8 @@ async function boot(): Promise<void> {
 
   bindInput();
   let camYaw = Math.atan2(start.x - spawn[0], -(start.z - spawn[1]));
-  let pitch = 0.45;
-  let distance = 6;
+  let pitch = seafrontFocus ? 0.75 : 0.45;
+  let distance = seafrontFocus ? 90 : 6;
   let lookHold = 0;
   // Far enough back to take in every courtyard on show.
   const farthest = RADIUS * 2.6;
