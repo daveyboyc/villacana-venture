@@ -9,6 +9,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import mainPoolLayout from "../data/main_pool.json";
+import { addSeaWall, seaWallRings } from "./south-pool";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
@@ -102,7 +103,13 @@ async function boot(): Promise<void> {
     if (skeleton.seafront) addSeafrontOutlines(scene, skeleton.seafront);
     else addSeafront(scene, map.coast);
     coast = new CoastField(map.coast, map.landRef);
+  } else if (shown.some((p) => p.id === "south") && skeleton.seafront) {
+    // The south lawn looks out over its wall to the paseo, the beach and the sea.
+    const map = await (await fetch(asset("/map/villacana.json"))).json();
+    addSeafrontOutlines(scene, skeleton.seafront, false);
+    coast = new CoastField(map.coast, map.landRef);
   }
+  if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf" } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef" } : {}));
   addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !skeleton.boundaryReference?.roads.some((road) => road.heights && roadHeight(road,p.x,p.z).distance < road.width/2 + 1.0)));
@@ -115,7 +122,7 @@ async function boot(): Promise<void> {
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
-  const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings, ...fenceRings]);
+  const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings, ...fenceRings, ...seaWallRings(skeleton.seaWall?.points ?? [])]);
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {

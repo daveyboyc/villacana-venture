@@ -117,6 +117,8 @@ export type Skeleton = {
   streetReference?: { checkedAt: string; imageryCaptureDate: string | null; sources: string[]; precision: string; referenceLinks: { satellite: string; roadmap: string } };
   boundaryReference?: BoundaryReference;
   seafront?: Seafront;
+  /** The low wall and fence between the south lawn and the paseo. Unbroken: the player cannot pass. */
+  seaWall?: { points: Vec2[]; trust: string };
   origin: { lat: number; lon: number };
   /** Degrees that turn the block square on screen, sea at the bottom. */
   viewRotation: number;
