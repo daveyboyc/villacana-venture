@@ -14,7 +14,7 @@ function outline(scene: THREE.Scene, points: Vec2[], color: string, height: numb
 }
 
 /** Shared seaside geometry: the blueprint and walk use the same outlines. */
-export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront): void {
+export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant = true): void {
   flat(scene, [...sf.coast, [1500, 1500], [-1500, 1500]], "#147ba8", 0.12);
   flat(scene, sf.beach.ring, "#e1c99c", 0.14);
   outline(scene, sf.coast, "#e2f9f5", 0.17);
@@ -28,6 +28,7 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront): void {
   const path = [...side(1), ...side(-1).reverse()];
   flat(scene,path,"#ce9878",0.18);
   outline(scene,path,"#f2debb",0.2,true);
+  if (!restaurant) return;
   flat(scene,sf.restaurant.terrace,"#b89c7b",0.22);
   outline(scene,sf.restaurant.terrace,"#784f3b",0.24,true);
   addBarrakaRoof(scene,sf.restaurant.ring,sf.restaurant.name);

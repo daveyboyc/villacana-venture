@@ -213,6 +213,12 @@ async function boot(): Promise<void> {
   const walls = el("g", {});
   for (const [x, z] of skeleton.gardenWalls) walls.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: "#8a8172", "stroke-width": 0.1 }));
   for (const [x, z] of skeleton.gardenGates) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
+  // The south lawn's seaward wall and fence: one unbroken line, no gate.
+  if (skeleton.seaWall) {
+    const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
+    walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#26352c", "stroke-width": 0.9, "stroke-linejoin": "round" }));
+    walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#fff", "stroke-width": 0.45, "stroke-linejoin": "round" }));
+  }
   world.append(walls);
 
   // Hand-placed objects, with any edits made on this device applied on top.
