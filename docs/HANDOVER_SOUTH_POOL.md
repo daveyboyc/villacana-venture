@@ -67,7 +67,8 @@ Spain. Vite, TypeScript, Three.js. Deployed by GitHub Pages on every push to `ma
 
 ## Reference photos
 
-Evidence is thin here. That is the main risk in this task.
+Dave sent three web photos of the south pool on 2026-10-12, which are now the main
+evidence. They carry no position data, so place what they show from the aerial.
 
 **Public, pinned on the map** (`public/photos-ref/`, positions in `manifest.json`):
 
@@ -82,6 +83,20 @@ reliable.
 
 **Private** (`daveyboyc/villacana-reference`, needs access to that repo):
 
+- `web/south-pool-01-looking-north-palm.jpg`: the pool from the south lawn looking
+  north. Shows the pool's shape, a cream stone deck, a tall date palm just north of
+  the deck, three life rings, two ladders, a stepped entry with handrails on the east
+  side, a white pump box on the west deck, and low white curved walls with clipped
+  hedges in front of the patios. Depth mark "150".
+- `web/south-pool-02-looking-south-east-sea.jpg`: the pool looking south-east. Shows
+  the sea, a low white wall and a dark fence along the seaward edge of the lawn, a
+  single tall palm near that edge, a crazy-paving path leaving the deck, and the
+  east terrace with wooden and iron balconies, a tiled chimney and parasols.
+- `web/south-pool-03-lawn-from-north-west.jpg`: the lawn from further back. Shows a
+  curved low white wall crossing the lawn, short green bollard lights, loungers and
+  parasols on the grass, and palms round the pool. Has people in it; do not publish.
+- `web/easyjet-pool-probably-middle.jpg`: probably the middle pool, not the south.
+  Do not use it for this task.
 - `apple-maps/03-3d-south-pool-and-promenade.png`: 3D close-up of the south pool,
   its lawn and the paseo. The best single reference for layout.
 - `apple-maps/04-top-down-south-half.png`: top-down, middle and south pools.
@@ -93,9 +108,7 @@ it and do not publish it.
 **Dave's labels:** `public/photos-ref/labels.json` is empty. Dave has typed labels on
 his phone but has not sent them. If they arrive, they outrank your own reading.
 
-**Ask Dave early** for three or four more photos of the south pool: one from each
-side, and one from an upper floor if possible. Four photos, one of them direct, is
-not enough to place plants with confidence.
+These web photos are not to be copied into the public site.
 
 ## How to do it
 
@@ -117,7 +130,9 @@ python3 -m venv .venv && .venv/bin/pip install pillow numpy pillow-heif
    `.venv/bin/python scripts/make_patch.py south-pool -163 130 30`
    writes `patches/south-pool/` with a gridded plan, the gridded aerial, the photos
    taken there and a brief (`BRIEF.md`) stating the rules and the output format.
-3. **Propose objects.** Give a subagent only that pack and have it write
+3. **Propose objects.** Copy the three `web/south-pool-*.jpg` files from the private
+   reference repo into `patches/south-pool/photos/` (that folder is not committed) and
+   list them in the pack's `BRIEF.md` as having no position. Give a subagent only that pack and have it write
    `proposals/south-pool.json`. `proposals/calle-elena.json` is a worked example.
 4. **Review.** Give a second, separate subagent the pack and the proposal. It sets
    `verdict` and `reason` on every change. It should reject anything a photo does not
@@ -176,7 +191,13 @@ python3 -m venv .venv && .venv/bin/pip install pillow numpy pillow-heif
 
 ## Open questions for Dave
 
-1. Can he send three or four more photos of the south pool?
-2. Does the south lawn run unbroken to the paseo, or is there a wall or hedge and a
-   gate between them?
-3. Is the south pool the same shape as the other two small pools?
+Dave has answered two of the earlier questions:
+
+- **Shape:** take it from the map. The registry outline stands; check it against the
+  aerial as for any pool.
+- **Seaward edge:** the web photos show a low white wall and a fence between the
+  lawn and the paseo, so the lawn is not open to it.
+
+Still open:
+
+1. Where is the gate from the south lawn through to the paseo?
