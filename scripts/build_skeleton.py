@@ -240,7 +240,8 @@ STREET_TYPES = {"CL": "Calle", "AV": "Avenida", "PS": "Paseo", "PZ": "Plaza", "C
 LANES = [
     ("Calle Loira", 6.0, [(-215, -100), (-60, -100)]),
     ("Calle Pintor Dalí", 6.0, [(-212, -100), (-212, 160)]),
-    ("Calle Pintor Picasso", 6.0, [(-70, -100), (-70, 15)]),
+    # The access lane down the west side of the car park.
+    ("Calle Pintor Picasso", 4.0, [(-70.8, -100), (-70.8, 6)]),
     ("Calle Elena", 2.2, [(-155, -70), (-155, -22)]),
     ("Calle Alberto", 2.2, [(-122, -95), (-122, -18)]),
     # Eva is in two parts, either side of the middle pool's courtyard.
@@ -252,6 +253,35 @@ LANES = [
     ("Calle Teodoro Rojo", 2.2, [(-115, 66), (-115, 112)]),
     ("Calle Guillermo", 2.2, [(-80, 62), (-80, 112)]),
 ]
+
+
+# Open ground that is neither building, pool nor garden, traced by hand from the
+# aerial photo. Turned frame, metres, like LANES.
+AREAS = [
+    # The car park east of the houses. Calle Pintor Picasso is its western aisle.
+    ("car_park", "Car park", [(-73, -98), (-41.5, -98), (-41.5, -12), (-40, -5), (-40, 6), (-73, 6)]),
+    # The round planter at its southern end.
+    ("planter", "", [(-56 + 4.5 * math.cos(i * math.pi / 8), -13 + 4.5 * math.sin(i * math.pi / 8)) for i in range(16)]),
+    # The formal garden south of the car park.
+    ("planter", "", [(-55, 9), (-45, 9), (-45, 26), (-55, 26)]),
+]
+# Rows of parking bays: where the row runs, and which way the cars nose in.
+PARKING_ROWS = [
+    ((-68.7, -96), (-68.7, -3), "east"),
+    ((-57, -90), (-57, -17), "west"),
+    ((-57, -90), (-57, -17), "east"),
+    ((-61, 3), (-50, 3), "north"),
+]
+# The kerb down the middle of the car park.
+KERBS = [[(-47.8, -98), (-47.8, -20)]]
+
+
+def build_areas() -> dict:
+    return {
+        "areas": [{"kind": kind, "name": name, "ring": rounded([unturned(p) for p in ring]), "trust": "traced"} for kind, name, ring in AREAS],
+        "parkingRows": [{"points": rounded([unturned(a), unturned(b)]), "nose": nose} for a, b, nose in PARKING_ROWS],
+        "kerbs": [rounded([unturned(p) for p in line]) for line in KERBS],
+    }
 
 
 def registry_street_plots() -> dict[str, list[tuple[float, float]]]:
@@ -466,6 +496,7 @@ def main() -> None:
         "buildings": buildings,
         "pools": pools,
         "streets": build_streets(),
+        **build_areas(),
         "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),
         "gardenGates": cover.pop("gardenGates"),

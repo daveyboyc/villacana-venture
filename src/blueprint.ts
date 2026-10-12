@@ -69,6 +69,35 @@ async function boot(): Promise<void> {
   photo.style.display = "none";
   world.append(cover, photo);
 
+  // Traced open ground: the car park, its bays and planters.
+  const areaFill: Record<string, string> = { car_park: "#b9b4ab", planter: "#6ea854" };
+  const traced = el("g", {});
+  world.append(traced);
+  for (const area of skeleton.areas) {
+    traced.append(el("path", { d: path(area.ring), fill: areaFill[area.kind] ?? "#ccc", stroke: "#8a8172", "stroke-width": 0.2 }));
+  }
+  for (const kerb of skeleton.kerbs) {
+    traced.append(el("path", { d: "M" + kerb.map((p) => `${p[0]} ${p[1]}`).join("L"), fill: "none", stroke: "#e9e4da", "stroke-width": 0.6 }));
+  }
+  // Bays are 2.5 m wide and 5 m deep, marked with white lines.
+  const turn = (rot * Math.PI) / 180;
+  const noseTurned: Record<string, Vec2> = { east: [1, 0], west: [-1, 0], north: [0, -1], south: [0, 1] };
+  for (const row of skeleton.parkingRows) {
+    const [a, b] = row.points;
+    const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const [tx, tz] = noseTurned[row.nose];
+    // The nose direction is given in the turned view; turn it back into map metres.
+    const nx = tx * Math.cos(-turn) - tz * Math.sin(-turn);
+    const nz = tx * Math.sin(-turn) + tz * Math.cos(-turn);
+    let d = "";
+    for (let s = 0; s <= length + 0.01; s += 2.5) {
+      const x = a[0] + ((b[0] - a[0]) * s) / length;
+      const z = a[1] + ((b[1] - a[1]) * s) / length;
+      d += `M${x} ${z}L${x + nx * 5} ${z + nz * 5}`;
+    }
+    traced.append(el("path", { d, fill: "none", stroke: "#f4f1ea", "stroke-width": 0.18 }));
+  }
+
   // Streets: a pale band with its name along it.
   const streets = el("g", {});
   const label = (text: string, x: number, z: number, angle: number, fill: string) => {
@@ -106,6 +135,12 @@ async function boot(): Promise<void> {
     }
   }
   world.append(streets);
+  for (const area of skeleton.areas) {
+    if (!area.name) continue;
+    const cx = area.ring.reduce((sum, p) => sum + p[0], 0) / area.ring.length;
+    const cz = area.ring.reduce((sum, p) => sum + p[1], 0) / area.ring.length;
+    names.append(label(area.name, cx + 9, cz, 0, "#5d584f"));
+  }
 
   // Buildings: drawn as white roofs, or coloured by height.
   const roofs: { node: SVGPathElement; floors: number }[] = [];
@@ -253,7 +288,7 @@ async function boot(): Promise<void> {
 
   $("#legend").innerHTML =
     `<div><i style="background:#f7f3ea"></i>House</div><div><i style="background:#d9a887"></i>Yard or patio</div>` +
-    `<div><i style="background:#4fc3e8"></i>Pool</div><div><i style="background:#6ea854"></i>Lawn</div>` +
+    `<div><i style="background:#b9b4ab"></i>Car park</div><div><i style="background:#4fc3e8"></i>Pool</div><div><i style="background:#6ea854"></i>Lawn</div>` +
     `<div><i style="background:#3a6e3e"></i>Planting (from the aerial)</div><div><i style="background:#b2a088"></i>Stone path</div>` +
     `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
     `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
@@ -337,7 +372,11 @@ async function boot(): Promise<void> {
     });
   };
   const show = (node: SVGElement | HTMLElement) => (on: boolean) => (node.style.display = on ? "" : "none");
-  toggle("#photo", show(photo));
+  // Over the aerial photo, traced ground goes see-through so the two can be compared.
+  toggle("#photo", (on) => {
+    show(photo)(on);
+    traced.setAttribute("opacity", on ? "0.35" : "1");
+  });
   toggle("#streets", (on) => {
     show(streets)(on);
     show(names)(on);

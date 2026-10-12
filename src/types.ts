@@ -98,6 +98,11 @@ export type Skeleton = {
   pools: SkeletonPool[];
   /** Lanes and roads. Those the registry names but nobody has placed have no points. */
   streets: { name: string; width?: number; points?: Vec2[]; registryPlots?: Vec2[]; trust: string }[];
+  /** Traced open ground such as the car park. */
+  areas: { kind: string; name: string; ring: Vec2[]; trust: string }[];
+  /** Rows of parking bays; `nose` is the compass side the cars point to, in the turned view. */
+  parkingRows: { points: Vec2[]; nose: string }[];
+  kerbs: Vec2[][];
   /** Things placed by hand: a kind and a position, drawn however the game chooses. */
   props: MapObject[];
   /** Centres of low garden-wall blocks, about half a metre apart. */
