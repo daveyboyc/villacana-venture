@@ -103,7 +103,7 @@ async function boot(): Promise<void> {
   }
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf" } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef" } : {}));
-  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS));
+  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !skeleton.boundaryReference?.roads.some((road) => road.heights && roadHeight(road,p.x,p.z).distance < road.width/2 + 1.0)));
 
   const player = new Player();
   scene.add(player.group);
