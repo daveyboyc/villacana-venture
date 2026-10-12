@@ -1,3 +1,4 @@
+import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
 import { asset } from "./asset";
 import { centroid, clamp, closestOnSegment, CoastField, dampAngle, pointInRing, Solids } from "./geom";
@@ -69,6 +70,7 @@ async function boot(): Promise<void> {
   const resize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     camera.aspect = window.innerWidth / window.innerHeight;
+    camera.far=Math.max(1500,RADIUS*4*innerHeight/innerWidth);
     camera.updateProjectionMatrix();
   };
   window.addEventListener("resize", resize);
@@ -87,7 +89,7 @@ async function boot(): Promise<void> {
 
   const poolRings = skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring);
   await addGround(scene, skeleton, centre, poolRings);
-  addBackdrop(scene, centre);
+  const backdrop=new THREE.Scene();addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
@@ -170,8 +172,23 @@ async function boot(): Promise<void> {
   let distance = seafrontFocus ? 90 : 6;
   let lookHold = 0;
   // Far enough back to take in every courtyard on show.
-  const farthest = RADIUS * 2.6;
+  let farthest = RADIUS * 2.6 * Math.max(1,innerHeight/innerWidth);
+  window.addEventListener("resize",()=>{const previous=farthest;farthest=RADIUS*2.6*Math.max(1,innerHeight/innerWidth);if(overview)distance*=farthest/previous;});
   let wasOverview = false;
+  const overviewCentre=new THREE.Vector3(centre.x,0.5,centre.z);
+  const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
+  const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
+    project:(x,z)=>{const p=new THREE.Vector3(x,1,z).project(camera);return {x:(p.x+1)*innerWidth/2,y:(1-p.y)*innerHeight/2,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&p.y<0.65&&p.y>-0.55};},
+    unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const p=raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
+  });
+  const controls=document.querySelector<HTMLElement>("#overview-controls")!;
+  const action=(id:string,callback:()=>void)=>document.querySelector(id)!.addEventListener("click",callback);
+  action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest,distance*1.3);});
+  action("#overview-left",()=>{camYaw-=Math.PI/12;});action("#overview-right",()=>{camYaw+=Math.PI/12;});
+  action("#overview-top",()=>{pitch=1.45;});action("#overview-north",()=>{camYaw=0;});
+  action("#overview-fit",()=>{overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=1.25;camYaw=0;});
+  action("#overview-pan",()=>{overviewPan=!overviewPan;document.querySelector("#overview-pan")!.textContent=overviewPan?"Drag: pan":"Drag: rotate";document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(overviewPan));});
+  document.querySelector("#overview")!.textContent=overview?"Walk":"Overview";
   const fog = scene.fog as THREE.Fog;
   const target = new THREE.Vector3();
   const clock = new THREE.Clock();
@@ -179,7 +196,7 @@ async function boot(): Promise<void> {
   renderer.setAnimationLoop(() => {
     const dt = Math.min(clock.getDelta(), 0.05);
     readKeys();
-    player.update(dt, input, world, camYaw);
+    if(!overview && !references.active()) player.update(dt, input, world, camYaw);
 
     const moving = input.moveX * input.moveX + input.moveZ * input.moveZ > 0.04;
     if (input.lookDx || input.lookDy) lookHold = 0.9;
@@ -188,21 +205,35 @@ async function boot(): Promise<void> {
     if (overview !== wasOverview) {
       // The overview button jumps between walking height and looking down on the whole area.
       wasOverview = overview;
-      distance = overview ? (mainPool ? 85 : farthest) : 6;
-      pitch = overview ? (mainPool ? 0.95 : 1.25) : 0.45;
+      controls.hidden=!overview;backdrop.visible=!overview;
+      document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
+      if(overview)camYaw=0;
+      distance = overview ? farthest : 6;
+      pitch = overview ? 1.25 : 0.45;
     }
     pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, 1.45);
-    distance = clamp(distance * (1 + input.zoom * 0.08), 3.5, farthest);
+    distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, farthest);
     // Push the haze back as the camera rises, so the layout stays clear from above.
     fog.near = 90 + distance * 1.5;
     fog.far = 260 + distance * 3;
-    if (lookHold === 0 && moving) camYaw = dampAngle(camYaw, player.yaw, dt * 2.2);
+    if (!overview && lookHold === 0 && moving) camYaw = dampAngle(camYaw, player.yaw, dt * 2.2);
 
-    target.set(player.x, player.y + 1.3, player.z);
+    if(overview) {
+      const scale=distance/innerHeight;
+      const dx=panDx*scale-input.moveX*dt*distance*0.4, dz=panDy*scale+input.moveZ*dt*distance*0.4;
+      overviewCentre.x-=Math.cos(camYaw)*dx+Math.sin(camYaw)*dz;
+      overviewCentre.z-=Math.sin(camYaw)*dx-Math.cos(camYaw)*dz;
+      overviewCentre.x=clamp(overviewCentre.x,centre.x-RADIUS,centre.x+RADIUS);overviewCentre.z=clamp(overviewCentre.z,centre.z-RADIUS,centre.z+RADIUS);
+      target.copy(overviewCentre);
+    } else target.set(player.x, player.y + 1.3, player.z);
+    panDx=panDy=0;
     const hd = Math.cos(pitch) * distance;
     camera.position.set(target.x - Math.sin(camYaw) * hd, target.y + Math.sin(pitch) * distance, target.z + Math.cos(camYaw) * hd);
     camera.lookAt(target);
     pools.update(clock.elapsedTime);
+    camera.updateMatrixWorld();
+    document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`${controls.offsetHeight+72}px`;
+    references.update();
     renderer.render(scene, camera);
 
     input.jump = false;
@@ -773,7 +804,8 @@ function hash(x: number, z: number): number {
 }
 
 const keys = new Set<string>();
-let overview = false;
+let overview = new URLSearchParams(location.search).get("view") === "overview";
+let overviewPan=true, panDx=0, panDy=0;
 let stick: { id: number; x: number; y: number } | null = null;
 
 function readKeys(): void {
@@ -785,6 +817,7 @@ function readKeys(): void {
 
 function bindInput(): void {
   window.addEventListener("keydown", (e) => {
+    if((e.target as HTMLElement).matches("input,textarea,select")||document.querySelector("dialog[open]"))return;
     keys.add(e.code);
     if (e.code === "Space") input.jump = true;
   });
@@ -800,7 +833,7 @@ function bindInput(): void {
   const looks = new Map<number, { x: number; y: number }>();
   canvas.addEventListener("pointerdown", (e) => {
     canvas.setPointerCapture(e.pointerId);
-    if (e.pointerType === "touch" && e.clientX < window.innerWidth / 2 && !stick) {
+    if (!overview && e.pointerType === "touch" && e.clientX < window.innerWidth / 2 && !stick) {
       stick = { id: e.pointerId, x: e.clientX, y: e.clientY };
     } else {
       looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -823,8 +856,8 @@ function bindInput(): void {
       looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
       return;
     }
-    input.lookDx += e.clientX - prev.x;
-    input.lookDy += e.clientY - prev.y;
+    if(overview && overviewPan) {panDx+=e.clientX-prev.x;panDy+=e.clientY-prev.y;}
+    else {input.lookDx += e.clientX - prev.x;input.lookDy += e.clientY - prev.y;}
     looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
   });
   const release = (e: PointerEvent) => {

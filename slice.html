@@ -19,14 +19,23 @@
       @media (min-width: 700px) { #help { display: block; } }
       #jump { bottom: 64px; right: 16px; padding: 18px 22px; display: none; }
       @media (pointer: coarse) { #jump { display: block; } }
+      #overview-controls { position:fixed; bottom:60px; left:12px; right:12px; display:flex; gap:6px; flex-wrap:wrap; z-index:3; }
+      #overview-controls[hidden] { display:none; }
+      #overview-controls button { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
+      #overview-controls button[aria-pressed="true"] { background:#235f94; color:white; }
     </style>
   </head>
   <body>
     <canvas id="scene"></canvas>
     <div class="chip" id="title">Pool</div>
     <div id="areas"><a class="chip" href="?pool=main">Main pool</a><a class="chip" href="?pool=main&amp;view=seafront">Seafront</a><a class="chip" href="?pool=north">North pool</a><a class="chip" href="?pool=middle">Middle pool</a><a class="chip" href="?pool=north,middle">Both, joined</a><a class="chip" href="?pool=north,middle&amp;view=dali">Pintor Dalí</a><a class="chip" href="?pool=north,middle&amp;view=cervantes">Cervantes · two car parks</a></div>
-    <a class="chip" id="back" href="./blueprint.html">Blueprint</a>
+    <a class="chip" id="back" href="./blueprint.html">Reference map</a>
     <button class="chip" id="jump">Jump</button>
+    <div id="overview-controls" role="toolbar" aria-label="Overview camera controls" hidden>
+      <button id="overview-in" aria-label="Zoom in">+</button><button id="overview-out" aria-label="Zoom out">−</button>
+      <button id="overview-left" aria-label="Rotate left">↶</button><button id="overview-right" aria-label="Rotate right">↷</button>
+      <button id="overview-pan" aria-pressed="true">Drag: pan</button><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-fit">Fit area</button>
+    </div>
     <button class="chip" id="overview">Overview</button>
     <div class="chip" id="help">WASD or left thumb to walk · drag to look</div>
     <script type="module" src="/src/slice.ts"></script>

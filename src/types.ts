@@ -76,6 +76,9 @@ export type InputState = {
 
 export type SkeletonBuilding = {
   id: string;
+  registryRing?: Vec2[];
+  layoutCorrection?: string;
+  layoutEvidence?: string;
   /** Floors above ground. 0 is a yard or terrace, not a house. */
   floors: number;
   ring: Vec2[];

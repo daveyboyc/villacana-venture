@@ -57,3 +57,14 @@ for ramp in ref.get('ramps',[]):
   i=road['points'].index(p);assert abs(road['heights'][i]-h)<0.001
  assert set(ramp['evidence'])=={'photo:IMG_2262.jpg','photo:IMG_2265.jpg'}
 print('Photo-backed ramp endpoints, shared heights and walkable slope PASS')
+
+road=next(r for r in ref['roads'] if r['name']=='Calle Cervantes')
+a,b=road['points'][0],road['points'][-1]
+for p in road['points']:
+ distance=abs((b[0]-a[0])*(p[1]-a[1])-(b[1]-a[1])*(p[0]-a[0]))/math.dist(a,b)
+ assert distance < 0.015, 'Cervantes must be straight between the two car parks'
+correction=json.loads((ROOT/'data/cervantes_frontages.json').read_text())
+corrected=[b for b in s['buildings'] if b.get('layoutCorrection')]
+assert {b['id'] for b in corrected}==set(correction['buildingIds'])
+assert all(b.get('registryRing') and b.get('layoutEvidence') and b['ring']!=b['registryRing'] for b in corrected)
+print('Straight Cervantes axis and explicit frontage corrections with original registry shapes retained PASS')

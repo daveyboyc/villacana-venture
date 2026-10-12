@@ -199,6 +199,30 @@ def build_buildings() -> list[dict]:
         if len(part["rings"]) > 1:
             entry["holes"] = [rounded(r) for r in part["rings"][1:]]
         buildings.append(entry)
+    # Reference-layout corrections are explicit; retain the surveyed source ring.
+    correction = json.loads((ROOT / "data" / "cervantes_frontages.json").read_text())
+    threshold = correction["minTurnedZ"]
+    for entry in buildings:
+        if entry["id"] not in correction["buildingIds"]:
+            continue
+        original = entry["ring"]
+        ring = [turned(p) for p in original]
+        clipped = []
+        for a, b in zip(ring, ring[1:] + ring[:1]):
+            if a[1] >= threshold:
+                clipped.append(a)
+            if (a[1] >= threshold) != (b[1] >= threshold):
+                t = (threshold - a[1]) / (b[1] - a[1])
+                clipped.append((a[0] + t * (b[0] - a[0]), threshold))
+        if len(clipped) < 3:
+            # A narrow frontage-only part needs a setback rather than removal.
+            offset = threshold - min(p[1] for p in ring)
+            clipped = [(x, z + offset) for x, z in ring]
+        assert len(clipped) >= 3, f"Frontage correction removed {entry['id']}"
+        entry["registryRing"] = original
+        entry["ring"] = rounded([unturned(p) for p in clipped])
+        entry["layoutCorrection"] = correction["trust"]
+        entry["layoutEvidence"] = correction["evidence"]
     return buildings
 
 

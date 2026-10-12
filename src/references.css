@@ -1,0 +1,25 @@
+.reference-layer { position:fixed; inset:0; pointer-events:none; z-index:2; }
+.reference-layer[hidden], .reference-tools[hidden], .reference-dialog [hidden] { display:none; }
+.reference-pin { position:absolute; transform:translate(-50%,-50%); pointer-events:auto; background:#fffdf8ec; border:1px solid #b9ad98; border-radius:6px; padding:4px 7px; color:#34392e; font:600 12px system-ui; max-width:240px; cursor:pointer; box-shadow:0 1px 3px #0002; }
+.reference-pin.user-reference { background:#e4f1ff; border:2px solid #2671b7; }
+.reference-tools { position:fixed; left:12px; right:12px; bottom:110px; display:flex; gap:6px; flex-wrap:wrap; align-items:center; z-index:3; }
+.reference-tools button { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px 12px; font:14px system-ui; cursor:pointer; }
+.reference-tools button[aria-pressed="true"] { border-color:#2671b7; }
+#ref-add { background:#235f94; color:white; }
+#ref-status { background:#fffdf8e8; border-radius:6px; font:12px system-ui; padding:4px 8px; max-width:400px; }
+#ref-status:empty { display:none; }
+.reference-dialog { border:1px solid #c9bfae; border-radius:16px; background:#fffdf8; color:#222; max-width:440px; width:calc(100vw - 48px); max-height:85dvh; padding:20px; font:14px system-ui; }
+.reference-dialog::backdrop { background:#18232f99; }
+.reference-dialog h2 { margin:0 0 8px; font-size:20px; }
+.reference-dialog label { display:flex; flex-direction:column; gap:5px; margin:12px 0; }
+.reference-dialog input,.reference-dialog textarea,.reference-dialog select { box-sizing:border-box; width:100%; padding:10px; border:1px solid #b8b5af; border-radius:7px; font:16px system-ui; background:white; }
+.reference-dialog textarea { min-height:75px; }
+.reference-dialog img { max-width:100%; max-height:220px; object-fit:contain; }
+.reference-actions { display:flex; flex-wrap:wrap; gap:8px; }
+.reference-actions button { padding:10px 16px; border:1px solid #c9bfae; border-radius:7px; background:white; font:14px system-ui; }
+.reference-actions button[type="submit"] { background:#235f94; color:white; }
+.reference-hint,#ref-location { color:#656158; font-size:12px; }
+#ref-save-status { line-height:1.4; }
+@media(max-width:600px) { .reference-tools { bottom:116px; } .reference-tools button { padding:8px; font-size:12px; } .reference-pin { font-size:11px; max-width:170px; } }
+
+.reference-layer.placing .reference-pin { pointer-events:none; }
