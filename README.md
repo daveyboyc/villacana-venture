@@ -84,3 +84,16 @@ green lawn; blue sky with big white cumulus.
 What they show: lanes are paved in square terracotta tiles with a pebble border; the
 courtyard is entered through arched white gateways with black iron gates; clipped
 hedges about 1.2 m high run along low white walls; a tall palm stands by the pool.
+
+## Drive photos (2026-10-12)
+
+`photos/drive/` holds web-sized copies of the 67 photos Dave uploaded to his Google
+Drive folder "Villacana" (IMG_2182 to IMG_2256, taken 11 and 12 October 2026), with
+embedded data removed. `photos/drive/manifest.json` gives each one's position in map
+metres and compass heading, read from the phone's location data. Phone positions are
+good to roughly 5 to 10 m and worse under archways. The full-size originals stay in
+Drive. Rebuild with `scripts/index_photos.py` in the villacana-venture repo.
+
+Useful facts in them: IMG_2254 shows the sign "CALLE ELENA 18"; IMG_2187 and 2191 show
+house-number signs in the arched passages; lanes are terracotta tile throughout; arched
+covered passages run through the terraces; white tiled benches stand on the lawns.
