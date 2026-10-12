@@ -519,6 +519,13 @@ def main() -> None:
     buildings = build_buildings()
     pools = build_pools()
     cover = build_cover(buildings, pools)
+    reference = json.loads((ROOT / "data" / "dali_cervantes.json").read_text())
+    mapped_areas = build_areas()
+    reference["mainParking"] = {
+        "ring": next(a["ring"] for a in mapped_areas["areas"] if a["kind"] == "car_park"),
+        "rows": mapped_areas["parkingRows"],
+        "rotation": VIEW_ROTATION,
+    }
     skeleton = {
         "origin": {"lat": LAT0, "lon": LON0},
         "viewRotation": VIEW_ROTATION,
@@ -528,8 +535,8 @@ def main() -> None:
         "pools": pools,
         "streets": build_streets(),
         "seafront": build_seafront(buildings, VIEW_ROTATION),
-        "boundaryReference": json.loads((ROOT / "data" / "dali_cervantes.json").read_text()),
-        **build_areas(),
+        "boundaryReference": reference,
+        **mapped_areas,
         "poolNames": [{"name": f"{p['id'].title()} pool", "at": p["centre"]} for p in pools if p["kind"] != "toddler"],
         "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),

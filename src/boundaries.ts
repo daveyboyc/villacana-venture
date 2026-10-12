@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { closestOnSegment } from "./geom";
 import { addSprites, type SpritePlacement } from "./sprites";
 import type { Boundary, BoundaryReference, Vec2 } from "./types";
 
@@ -32,13 +33,35 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   }
   flat(reference.parking.ring,"#888b8b",0.26);
   const white=new THREE.MeshBasicMaterial({color:"#f6f3e8"});
+  if (reference.mainParking) {
+    const park = reference.mainParking;
+    flat(park.ring, "#969995", 0.26);
+    const angle = -park.rotation * Math.PI / 180;
+    const noses: Record<string, Vec2> = { east: [1, 0], west: [-1, 0], north: [0, -1], south: [0, 1] };
+    for (const row of park.rows) {
+      const [a, b] = row.points;
+      const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
+      const [tx, tz] = noses[row.nose];
+      const nx = tx * Math.cos(angle) - tz * Math.sin(angle), nz = tx * Math.sin(angle) + tz * Math.cos(angle);
+      for (let at = 0; at <= length; at += 2.5) {
+        const stripe = new THREE.Mesh(new THREE.BoxGeometry(5, 0.025, 0.08), white);
+        stripe.position.set(a[0] + (b[0] - a[0]) * at / length + nx * 2.5, 0.29, a[1] + (b[1] - a[1]) * at / length + nz * 2.5);
+        stripe.rotation.y = Math.atan2(-nz, nx); scene.add(stripe);
+      }
+    }
+  }
   const bays=reference.parking;
   for(let i=0;i<bays.bayLine.length-1;i++) {
     const a=bays.bayLine[i],b=bays.bayLine[i+1];const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     for(let at=0;at<length;at+=bays.spacing) {
       const mesh=new THREE.Mesh(new THREE.BoxGeometry(bays.depth,0.025,0.08),white);
       mesh.position.set(a[0]+dx/length*at+dz/length*bays.depth/2,0.29,a[1]+dz/length*at-dx/length*bays.depth/2);
-      mesh.rotation.y=Math.atan2(dx,dz);scene.add(mesh);
+      mesh.rotation.y=Math.atan2(dx,dz);
+      const crossesWalk = reference.roads.filter((r) => r.surface === "terracotta").some((r) => r.points.slice(1).some((b, j) => {
+        const a = r.points[j];
+        return closestOnSegment(mesh.position.x, mesh.position.z, a[0], a[1], b[0], b[1]).d < r.width / 2 + 0.25;
+      }));
+      if (!crossesWalk) scene.add(mesh);
     }
   }
   const canvas=document.createElement("canvas");canvas.width=canvas.height=64;const ctx=canvas.getContext("2d")!;
