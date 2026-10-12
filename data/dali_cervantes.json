@@ -82,7 +82,7 @@
     }
   ],
   "parking": {
-    "name": "Pintor Dal\u00ed parking",
+    "name": "Dal\u00ed car park",
     "ring": [
       [
         -237.75,
@@ -149,7 +149,49 @@
     ],
     "depth": 4.8,
     "spacing": 2.5,
-    "trust": "IMG_2267\u20132270: house-side bays; alignment/spacing approximate"
+    "trust": "IMG_2267\u20132270: house-side bays; alignment/spacing approximate",
+    "accessRing": [
+      [
+        -243.07,
+        -4.58
+      ],
+      [
+        -197.74,
+        81.9
+      ],
+      [
+        -174.46,
+        126.3
+      ],
+      [
+        -156.87,
+        159.86
+      ],
+      [
+        -119.59,
+        230.98
+      ],
+      [
+        -109.84,
+        225.88
+      ],
+      [
+        -147.12,
+        154.76
+      ],
+      [
+        -164.71,
+        121.2
+      ],
+      [
+        -187.99,
+        76.8
+      ],
+      [
+        -233.32,
+        -9.68
+      ]
+    ]
   },
   "barriers": [
     {
@@ -188,7 +230,7 @@
     81.0
   ],
   "connection": {
-    "name": "Dal\u00ed to main car park via Cervantes",
+    "name": "Cervantes between Dal\u00ed and Picasso car parks",
     "from": [
       -196.27,
       78.24
@@ -198,6 +240,10 @@
       10.36
     ],
     "destination": "Calle Pintor Picasso / main car park",
-    "trust": "Requested by Dave; eastern alignment approximate"
+    "trust": "Requested by Dave; eastern alignment approximate",
+    "destinations": [
+      "dali",
+      "picasso"
+    ]
   }
 }

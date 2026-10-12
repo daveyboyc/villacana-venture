@@ -526,6 +526,19 @@ def main() -> None:
         "rows": mapped_areas["parkingRows"],
         "rotation": VIEW_ROTATION,
     }
+    reference["carParks"] = [
+        {"id": "dali", "name": "Dalí car park", "ring": reference["parking"]["accessRing"],
+         "at": reference["walkAnchor"], "entrance": reference["connection"]["from"],
+         "trust": "IMG_2267–2270 and mapped road; includes aisle and house-side bays, width approximate"},
+        {"id": "picasso", "name": "Picasso car park", "ring": reference["mainParking"]["ring"],
+         "at": rounded([unturned((-55, -47))])[0], "entrance": reference["connection"]["to"],
+         "trust": "Existing mapped car-park outline, checked against aerial"},
+    ]
+    for mapped_area in mapped_areas["areas"]:
+        if mapped_area["kind"] == "car_park":
+            mapped_area["name"] = "Picasso car park"
+    mapped_areas["areas"].append({"kind": "car_park", "name": "Dalí car park",
+                                  "ring": reference["parking"]["accessRing"], "trust": "photo and approximate road footprint"})
     skeleton = {
         "origin": {"lat": LAT0, "lon": LON0},
         "viewRotation": VIEW_ROTATION,

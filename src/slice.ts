@@ -144,7 +144,7 @@ async function boot(): Promise<void> {
     const road = skeleton.boundaryReference.roads.find((r) => r.name === "Calle Cervantes")!;
     [spawn[0], spawn[1]] = road.points[0];
     [start.x, start.z] = road.points[1];
-    document.querySelector("#title")!.textContent = "Dalí → Cervantes → Main car park";
+    document.querySelector("#title")!.textContent = "Dalí car park → Cervantes → Picasso car park";
   }
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
