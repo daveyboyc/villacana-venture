@@ -1,0 +1,409 @@
+{
+  "checkedAt": "2026-10-12",
+  "sources": [
+    "Google Maps Static API: satellite and roadmap, zoom 18/19",
+    "Google Routes API: walking-route cross-check",
+    "Dave’s IMG_2260–2270 and Apple Maps screenshot",
+    "Original Catastro building and pool footprints"
+  ],
+  "imageryCaptureDate": null,
+  "precision": "Approximate: metre-level routing points, satellite visual cross-check and sub-metre refinements for original-registry clearances; widths and ramp heights unmeasured",
+  "referenceLinks": {
+    "satellite": "https://www.google.com/maps/@?api=1&map_action=map&center=36.4544655,-5.0511079&zoom=18&basemap=satellite",
+    "roadmap": "https://www.google.com/maps/@?api=1&map_action=map&center=36.4544655,-5.0511079&zoom=18&basemap=roadmap"
+  },
+  "mainParkingRing": [
+    [
+      -117.56,
+      -51.7
+    ],
+    [
+      -80.26,
+      -69.89
+    ],
+    [
+      -42.56,
+      7.41
+    ],
+    [
+      -38.14,
+      13.04
+    ],
+    [
+      -33.32,
+      22.93
+    ],
+    [
+      -63.88,
+      37.83
+    ],
+    [
+      -75.32,
+      18.94
+    ]
+  ],
+  "streets": [
+    {
+      "id": "loira",
+      "name": "Calle Loira",
+      "width": 6,
+      "points": [
+        [
+          -234.59,
+          -3.34
+        ],
+        [
+          -228.32,
+          -11.13
+        ],
+        [
+          -171.91,
+          -35.62
+        ],
+        [
+          -108.34,
+          -73.47
+        ]
+      ],
+      "surface": "asphalt",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Loira"
+    },
+    {
+      "id": "bolivia",
+      "name": "Calle Bolivia",
+      "width": 5,
+      "points": [
+        [
+          -108.34,
+          -73.47
+        ],
+        [
+          -87.74,
+          -82.37
+        ]
+      ],
+      "surface": "asphalt",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)"
+    },
+    {
+      "id": "picasso",
+      "name": "Calle Pintor Picasso",
+      "width": 6,
+      "points": [
+        [
+          -87.74,
+          -82.37
+        ],
+        [
+          -82.37,
+          -64.57
+        ],
+        [
+          -47.68,
+          -4.34
+        ],
+        [
+          -13.66,
+          45.75
+        ]
+      ],
+      "surface": "asphalt",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Pintor Picasso",
+      "aliases": [
+        "Calle Picasso",
+        "Calle de Picasso"
+      ]
+    },
+    {
+      "id": "picasso-access",
+      "name": "Picasso car-park access",
+      "width": 4,
+      "points": [
+        [
+          -112.82,
+          -50.09
+        ],
+        [
+          -61.78,
+          36.73
+        ],
+        [
+          -55.38,
+          48.14
+        ]
+      ],
+      "surface": "asphalt",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)"
+    },
+    {
+      "id": "elena-north",
+      "name": "Calle Elena",
+      "width": 1.2,
+      "points": [
+        [
+          -164.75,
+          18.93
+        ],
+        [
+          -145.08,
+          52.69
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Elena"
+    },
+    {
+      "id": "elena-south",
+      "name": "Calle Elena",
+      "width": 1.2,
+      "points": [
+        [
+          -153.67,
+          57.81
+        ],
+        [
+          -136.86,
+          84.98
+        ],
+        [
+          -137.76,
+          89.43
+        ],
+        [
+          -133.41,
+          99.07
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)"
+    },
+    {
+      "id": "isabel",
+      "name": "Calle Isabel de Oyarzábal",
+      "width": 1.2,
+      "points": [
+        [
+          -164.75,
+          18.93
+        ],
+        [
+          -165.64,
+          11.13
+        ],
+        [
+          -162.96,
+          7.79
+        ],
+        [
+          -137.54,
+          -8.01
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Isabel",
+      "aliases": [
+        "Calle Isabel"
+      ]
+    },
+    {
+      "id": "alberto",
+      "name": "Calle Alberto",
+      "width": 1.2,
+      "points": [
+        [
+          -159.14,
+          -43.23
+        ],
+        [
+          -112.29,
+          33.15
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Alberto"
+    },
+    {
+      "id": "eva",
+      "name": "Calle Eva",
+      "width": 1.2,
+      "points": [
+        [
+          -171.18,
+          126.83
+        ],
+        [
+          -166.54,
+          119.11
+        ],
+        [
+          -133.41,
+          99.07
+        ],
+        [
+          -128.04,
+          101.3
+        ],
+        [
+          -116.27,
+          93.78
+        ],
+        [
+          -118.05,
+          84.87
+        ],
+        [
+          -55.38,
+          48.14
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Eva"
+    },
+    {
+      "id": "patricia",
+      "name": "Calle Patricia",
+      "width": 1.2,
+      "points": [
+        [
+          -151.61,
+          154.91
+        ],
+        [
+          -78.79,
+          110.2
+        ],
+        [
+          -42.85,
+          88.97
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Patricia"
+    },
+    {
+      "id": "silvia-north",
+      "name": "Calle Silvia",
+      "width": 1.2,
+      "points": [
+        [
+          -128.04,
+          101.3
+        ],
+        [
+          -110.64,
+          129.76
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Silvia"
+    },
+    {
+      "id": "silvia-south",
+      "name": "Calle Silvia",
+      "width": 1.2,
+      "points": [
+        [
+          -114.93,
+          132.39
+        ],
+        [
+          -94.33,
+          168.48
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)"
+    },
+    {
+      "id": "jorge",
+      "name": "Calle Jorge",
+      "width": 1.2,
+      "points": [
+        [
+          -137.88,
+          193.7
+        ],
+        [
+          -20.47,
+          125.72
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Jorge"
+    },
+    {
+      "id": "teodoro-rojo",
+      "name": "Calle Teodoro Rojo",
+      "width": 1.2,
+      "points": [
+        [
+          -100.46,
+          74.56
+        ],
+        [
+          -57.57,
+          147.2
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Teodoro Rojo",
+      "aliases": [
+        "Calle Teodoro"
+      ]
+    },
+    {
+      "id": "guillermo",
+      "name": "Calle Guillermo",
+      "width": 1.2,
+      "points": [
+        [
+          -64.47,
+          53.47
+        ],
+        [
+          -14.33,
+          135.8
+        ],
+        [
+          -5.37,
+          142.49
+        ],
+        [
+          -4.48,
+          148.06
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Guillermo"
+    },
+    {
+      "id": "eva-west-footpath",
+      "name": "Calle Eva",
+      "width": 1.2,
+      "points": [
+        [
+          -169.43,
+          123.91
+        ],
+        [
+          -151.61,
+          154.91
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-eva-west-footpath"
+    }
+  ]
+}

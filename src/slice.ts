@@ -144,7 +144,7 @@ async function boot(): Promise<void> {
     document.querySelector("#title")!.textContent = "Pintor Dalí · Calle Cervantes";
   }
   if (connectionFocus && skeleton.boundaryReference?.connection) {
-    const road = skeleton.boundaryReference.roads.find((r) => r.name === "Calle Cervantes")!;
+    const road = skeleton.boundaryReference.roads.find((r) => r.id === "cervantes" || r.name === "Calle Cervantes" || r.name === "Calle Miguel de Cervantes")!;
     [spawn[0], spawn[1]] = road.points[0];
     [start.x, start.z] = road.points[1];
     document.querySelector("#title")!.textContent = "Dalí car park → Cervantes → Picasso car park";
@@ -178,7 +178,10 @@ async function boot(): Promise<void> {
   const overviewCentre=new THREE.Vector3(centre.x,0.5,centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
-    project:(x,z)=>{const p=new THREE.Vector3(x,1,z).project(camera);return {x:(p.x+1)*innerWidth/2,y:(1-p.y)*innerHeight/2,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&p.y<0.65&&p.y>-0.55};},
+    project:(x,z)=>{const p=new THREE.Vector3(x,1,z).project(camera),y=(1-p.y)*innerHeight/2;
+      const top=document.querySelector("#areas")!.getBoundingClientRect().bottom+8;
+      const bottom=document.querySelector(".reference-tools")?.getBoundingClientRect().top??innerHeight-180;
+      return {x:(p.x+1)*innerWidth/2,y,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&y>top&&y<bottom-12};},
     unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const p=raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
   });
   const controls=document.querySelector<HTMLElement>("#overview-controls")!;
@@ -496,7 +499,7 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryR
   scene.add(blocks);
 
   // Hedges come in runs: a few metres of hedge, then bare wall.
-  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5 && !reference?.roads.some((road) => road.heights && roadHeight(road,x,z).distance < road.width/2 + 1.5));
+  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5 && !reference?.roads.some((road) => road.surface === "terracotta" && roadHeight(road,x,z).distance < road.width/2 + 1.5));
   const place = ([x, z]: Vec2): SpritePlacement => ({ x, y: 0.55, z, scale: 0.9 + hash(x, z) * 0.3 });
   const flowering = (p: Vec2) => hash(Math.floor(p[0] / 8), Math.floor(p[1] / 8)) < 0.5;
   addSprites(scene, "hibiscus_hedge", hedged.filter(flowering).map(place));
