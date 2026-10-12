@@ -28,7 +28,7 @@ const ICONS: Record<string, { r: number; fill: string; edge: string; label: stri
 const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
 type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; taken?: string };
-type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[] };
+type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[]; labels: Record<string, string> };
 
 const svg = document.querySelector<SVGSVGElement>("#map")!;
 const $ = <T extends HTMLElement>(id: string) => document.querySelector<T>(id)!;
@@ -46,11 +46,11 @@ function path(ring: Vec2[], holes: Vec2[][] = []): string {
 function loadEdits(): Edits {
   try {
     const saved = JSON.parse(localStorage.getItem(EDITS_KEY) ?? "null") as Edits | null;
-    if (saved) return saved;
+    if (saved) return { ...saved, labels: saved.labels ?? {} };
   } catch {
     // Unreadable or unavailable storage: start with no edits.
   }
-  return { added: [], moved: {}, removed: [] };
+  return { added: [], moved: {}, removed: [], labels: {} };
 }
 
 async function boot(): Promise<void> {
@@ -186,7 +186,7 @@ async function boot(): Promise<void> {
   let editing = false;
   let selected: string | null = null;
 
-  const changeCount = () => edits.added.length + Object.keys(edits.moved).length + edits.removed.length;
+  const changeCount = () => edits.added.length + Object.keys(edits.moved).length + edits.removed.length + Object.keys(edits.labels).length;
   const save = () => {
     try {
       localStorage.setItem(EDITS_KEY, JSON.stringify(edits));
@@ -194,7 +194,7 @@ async function boot(): Promise<void> {
       // Edits stay for this visit only.
     }
     $("#send").textContent = `Send ${changeCount()} change${changeCount() === 1 ? "" : "s"}`;
-    $<HTMLButtonElement>("#send").disabled = changeCount() === 0;
+    $("#send").hidden = changeCount() === 0;
     $<HTMLButtonElement>("#undo").disabled = changeCount() === 0;
   };
   const select = (id: string | null) => {
@@ -258,10 +258,29 @@ async function boot(): Promise<void> {
   // Photos: a pin where each was taken and a wedge showing where it looks.
   const photos = el("g", {});
   const viewer = $<HTMLDivElement>("#viewer");
-  viewer.addEventListener("click", () => (viewer.hidden = true));
+  const labelBox = $<HTMLInputElement>("#label");
+  let open: { pin: PhotoPin; dot: SVGCircleElement } | null = null;
+  viewer.addEventListener("click", (e) => {
+    if (e.target === viewer || e.target instanceof HTMLImageElement) viewer.hidden = true;
+  });
+  $("#closeviewer").addEventListener("click", () => (viewer.hidden = true));
   try {
     const response = await fetch(asset("/photos-ref/manifest.json"));
     const manifest = response.ok ? ((await response.json()) as PhotoPin[]) : [];
+    const labelsFile = await fetch(asset("/photos-ref/labels.json"));
+    const published = labelsFile.ok ? ((await labelsFile.json()) as Record<string, string>) : {};
+    const labelOf = (pin: PhotoPin) => edits.labels[pin.file] ?? published[pin.file] ?? "";
+    // Labelled photos turn green, so it is easy to see which are still to do.
+    const tint = (pin: PhotoPin, dot: SVGCircleElement) => dot.setAttribute("fill", labelOf(pin) ? "#2f9e44" : "#d6336c");
+    $("#savelabel").addEventListener("click", () => {
+      if (!open) return;
+      const text = labelBox.value.trim();
+      if (text === (published[open.pin.file] ?? "")) delete edits.labels[open.pin.file];
+      else edits.labels[open.pin.file] = text;
+      tint(open.pin, open.dot);
+      save();
+      viewer.hidden = true;
+    });
     for (const pin of manifest) {
       if (pin.x === undefined || pin.z === undefined) continue;
       const g = el("g", { style: "cursor:pointer" });
@@ -272,11 +291,17 @@ async function boot(): Promise<void> {
         };
         g.append(el("path", { d: `M${pin.x} ${pin.z}L${wedge(pin.heading - 28, 14)}L${wedge(pin.heading + 28, 14)}Z`, fill: "#d6336c", "fill-opacity": 0.18 }));
       }
-      g.append(el("circle", { cx: pin.x, cy: pin.z, r: 1.4, fill: "#d6336c", stroke: "#fff", "stroke-width": 0.35 }));
+      const dot = el("circle", { cx: pin.x, cy: pin.z, r: 1.4, fill: "#d6336c", stroke: "#fff", "stroke-width": 0.35 });
+      tint(pin, dot);
+      g.append(dot);
+      // Keep the tap from panning the map or, in edit mode, adding an object.
+      g.addEventListener("pointerdown", (e) => e.stopPropagation());
       g.addEventListener("click", (e) => {
         e.stopPropagation();
+        open = { pin, dot };
         viewer.querySelector("img")!.src = asset(`/photos-ref/${pin.file}`);
-        viewer.querySelector("p")!.textContent = `${pin.title} · position: ${pin.trust}${pin.taken ? " · " + pin.taken : ""}`;
+        viewer.querySelector("p")!.textContent = `${pin.title}${pin.taken ? " · " + pin.taken : ""}`;
+        labelBox.value = labelOf(pin);
         viewer.hidden = false;
       });
       photos.append(g);
@@ -292,7 +317,8 @@ async function boot(): Promise<void> {
     `<div><i style="background:#3a6e3e"></i>Planting (from the aerial)</div><div><i style="background:#b2a088"></i>Stone path</div>` +
     `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
     `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
-    `<div><i style="background:#d6336c;border-radius:50%"></i>Photo</div>`;
+    `<div><i style="background:#d6336c;border-radius:50%"></i>Photo</div>` +
+    `<div><i style="background:#2f9e44;border-radius:50%"></i>Photo you have labelled</div>`;
 
   // The turned bounding box of the area is the default view.
   const a = (rot * Math.PI) / 180;

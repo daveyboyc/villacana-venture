@@ -22,22 +22,35 @@
       #legend { position: fixed; top: 12px; left: 12px; border-radius: 12px; line-height: 1.6; font-size: 13px; white-space: normal; }
       #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
       #viewer { position: fixed; inset: 0; background: #000d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; z-index: 5; }
-      #viewer img { max-width: 96vw; max-height: 84dvh; border-radius: 8px; }
+      #viewer img { max-width: 96vw; max-height: 70dvh; border-radius: 8px; }
+      #labelrow { display: flex; gap: 8px; width: min(96vw, 640px); }
+      #labelrow input { flex: 1; min-width: 0; font-size: 16px; padding: 10px 12px; border-radius: 10px; border: 0; }
+      #labelrow button { font-size: 15px; padding: 10px 14px; border-radius: 10px; border: 0; background: #fffdf8; }
+      #savelabel { background: #1c6fd1 !important; color: #fff; }
+      #send[hidden] { display: none; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
     </style>
   </head>
   <body>
     <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
     <div id="legend" hidden></div>
-    <div id="viewer" hidden><img alt="" /><p></p></div>
+    <div id="viewer" hidden>
+      <img alt="" />
+      <p></p>
+      <div id="labelrow">
+        <input id="label" type="text" placeholder="What is this? e.g. gate into the middle pool" />
+        <button id="savelabel">Save</button>
+        <button id="closeviewer">Close</button>
+      </div>
+    </div>
     <div class="bar" id="editbar" hidden>
       <select id="kind" aria-label="Kind of object to add"></select>
       <button id="delete" disabled>Delete</button>
-      <button id="send" disabled>Send changes</button>
       <button id="undo" disabled>Discard all</button>
     </div>
     <div id="picked"></div>
     <div class="bar" id="bar">
+      <button id="send" hidden>Send changes</button>
       <button id="edit" aria-pressed="false">Edit</button>
       <button id="photo" aria-pressed="false">Aerial photo</button>
       <button id="streets" aria-pressed="true">Streets</button>

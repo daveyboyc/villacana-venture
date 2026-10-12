@@ -2,7 +2,8 @@
 """Apply edits made on the master map to data/objects.json.
 
 The map's edit mode produces a small JSON document of changes:
-  {"added": [{id, kind, x, z}], "moved": {id: [x, z]}, "removed": [id]}
+  {"added": [{id, kind, x, z}], "moved": {id: [x, z]}, "removed": [id],
+   "labels": {photo file: text}}
 
   python3 scripts/apply_map_edits.py edits.json     (or pipe it on stdin)
 """
@@ -14,6 +15,7 @@ import sys
 from pathlib import Path
 
 OBJECTS = Path(__file__).resolve().parents[1] / "data" / "objects.json"
+LABELS = Path(__file__).resolve().parents[1] / "public" / "photos-ref" / "labels.json"
 
 
 def main() -> None:
@@ -32,6 +34,14 @@ def main() -> None:
     for a in added:
         objects.append({"id": a["id"], "kind": a["kind"], "x": round(a["x"], 2), "z": round(a["z"], 2), "trust": "map"})
     OBJECTS.write_text("[\n" + ",\n".join(" " + json.dumps(o) for o in objects) + "\n]\n")
+    labels = json.loads(LABELS.read_text())
+    for name, text in edits.get("labels", {}).items():
+        if text:
+            labels[name] = text
+        else:
+            labels.pop(name, None)
+    LABELS.write_text(json.dumps(labels, indent=1, ensure_ascii=False, sort_keys=True) + "\n")
+    print(f"{len(edits.get('labels', {}))} photo labels changed; {len(labels)} labelled now")
     print(f"added {len(added)}, moved {moved}, removed {len(removed & known)}; {len(objects)} objects now")
 
 
