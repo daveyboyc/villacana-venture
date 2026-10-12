@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Villacana master map</title>
+    <title>Villacana overview & references</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
       html, body { margin: 0; height: 100%; background: #c9a07a; font-family: system-ui, sans-serif; overflow: hidden; }
@@ -23,6 +23,8 @@
       #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
       #viewer { position: fixed; inset: 0; background: #000d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; z-index: 5; }
       #viewer img { max-width: 96vw; max-height: 70dvh; border-radius: 8px; }
+      #photonavigation { display: flex; gap: 8px; }
+      #photonavigation button { padding: 8px 14px; border: 0; border-radius: 8px; }
       #labelrow { display: flex; gap: 8px; width: min(96vw, 640px); }
       #labelrow input { flex: 1; min-width: 0; font-size: 16px; padding: 10px 12px; border-radius: 10px; border: 0; }
       #labelrow button { font-size: 15px; padding: 10px 14px; border-radius: 10px; border: 0; background: #fffdf8; }
@@ -30,10 +32,20 @@
       #send[hidden] { display: none; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
       #labelstatus { max-width: 600px; }
+      #map-controls { position:fixed; top:12px; right:12px; display:flex; gap:5px; flex-wrap:wrap; max-width:94vw; z-index:3; }
+      #map-controls button,#map-bearing { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
+      #map-title { position:fixed; top:60px; left:12px; background:#fffdf8e8; border-radius:8px; padding:8px 12px; font-size:14px; }
+      #picked { top:96px; }
     </style>
   </head>
   <body>
     <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div id="map-controls" role="toolbar" aria-label="Map camera controls">
+      <button id="map-zoom-in" aria-label="Zoom in">+</button><button id="map-zoom-out" aria-label="Zoom out">−</button>
+      <button id="map-left" aria-label="Rotate left">↶</button><button id="map-right" aria-label="Rotate right">↷</button>
+      <button id="map-north">North ↑</button><span id="map-bearing" aria-label="Map rotation"></span>
+    </div>
+    <div id="map-title">Villacana · overview & references</div>
     <div id="legend" hidden></div>
     <div id="viewer" hidden>
       <img alt="" />
@@ -43,6 +55,7 @@
         <button id="savelabel" type="submit">Save</button>
         <button id="closeviewer" type="button">Close</button>
       </form>
+      <div id="photonavigation"><button id="previousphoto" type="button">Previous photo</button><button id="nextphoto" type="button">Next photo</button></div>
       <p id="labelstatus" role="status" aria-live="polite"></p>
     </div>
     <div class="bar" id="editbar" hidden>
@@ -57,12 +70,16 @@
       <button id="photo" aria-pressed="false">Aerial photo</button>
       <button id="streets" aria-pressed="true">Streets</button>
       <button id="objects" aria-pressed="true">Objects</button>
+      <button id="boundary" aria-pressed="true">Parking & fence</button>
       <button id="photos" aria-pressed="true">Photos</button>
       <button id="seafront" aria-pressed="true">Seafront</button>
       <button id="heights" aria-pressed="false">Heights</button>
       <button id="key" aria-pressed="false">Key</button>
-      <button id="reset">Whole block</button>
+      <button id="reset">Fit whole resort</button>
+      <a href="./slice.html?pool=north,middle,south,main&amp;view=overview">3D overview</a>
       <a href="./slice.html?pool=north,middle">Walk it</a>
+      <a href="./slice.html?pool=north,middle&amp;view=dali">Walk Dalí</a>
+      <a href="./slice.html?pool=north,middle&amp;view=cervantes">Walk Cervantes</a>
       <a href="./slice.html?pool=main&amp;view=seafront">Walk seafront</a>
     </div>
     <script type="module" src="/src/blueprint.ts"></script>

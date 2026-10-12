@@ -200,6 +200,30 @@ def build_buildings() -> list[dict]:
         if len(part["rings"]) > 1:
             entry["holes"] = [rounded(r) for r in part["rings"][1:]]
         buildings.append(entry)
+    # Reference-layout corrections are explicit; retain the surveyed source ring.
+    correction = json.loads((ROOT / "data" / "cervantes_frontages.json").read_text())
+    threshold = correction["minTurnedZ"]
+    for entry in buildings:
+        if entry["id"] not in correction["buildingIds"]:
+            continue
+        original = entry["ring"]
+        ring = [turned(p) for p in original]
+        clipped = []
+        for a, b in zip(ring, ring[1:] + ring[:1]):
+            if a[1] >= threshold:
+                clipped.append(a)
+            if (a[1] >= threshold) != (b[1] >= threshold):
+                t = (threshold - a[1]) / (b[1] - a[1])
+                clipped.append((a[0] + t * (b[0] - a[0]), threshold))
+        if len(clipped) < 3:
+            # A narrow frontage-only part needs a setback rather than removal.
+            offset = threshold - min(p[1] for p in ring)
+            clipped = [(x, z + offset) for x, z in ring]
+        assert len(clipped) >= 3, f"Frontage correction removed {entry['id']}"
+        entry["registryRing"] = original
+        entry["ring"] = rounded([unturned(p) for p in clipped])
+        entry["layoutCorrection"] = correction["trust"]
+        entry["layoutEvidence"] = correction["evidence"]
     return buildings
 
 
@@ -333,7 +357,10 @@ def build_streets() -> list[dict]:
         if name not in used:
             # Named in the registry but not yet matched to a lane on the ground.
             streets.append({"name": name, "registryPlots": rounded(pts), "trust": "unplaced"})
-    return streets
+    reference = json.loads((ROOT / "data" / "dali_cervantes.json").read_text())
+    roads = reference["roads"]
+    streets = [s for s in streets if s["name"] not in {r["name"] for r in roads}]
+    return streets + roads
 
 
 def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[float, float]]:
@@ -535,6 +562,26 @@ def main() -> None:
     buildings = build_buildings()
     pools = build_pools()
     cover = build_cover(buildings, pools)
+    reference = json.loads((ROOT / "data" / "dali_cervantes.json").read_text())
+    mapped_areas = build_areas()
+    reference["mainParking"] = {
+        "ring": next(a["ring"] for a in mapped_areas["areas"] if a["kind"] == "car_park"),
+        "rows": mapped_areas["parkingRows"],
+        "rotation": VIEW_ROTATION,
+    }
+    reference["carParks"] = [
+        {"id": "dali", "name": "Dalí car park", "ring": reference["parking"]["accessRing"],
+         "at": reference["walkAnchor"], "entrance": reference["connection"]["from"],
+         "trust": "IMG_2267–2270 and mapped road; includes aisle and house-side bays, width approximate"},
+        {"id": "picasso", "name": "Picasso car park", "ring": reference["mainParking"]["ring"],
+         "at": rounded([unturned((-55, -47))])[0], "entrance": reference["connection"]["to"],
+         "trust": "Existing mapped car-park outline, checked against aerial"},
+    ]
+    for mapped_area in mapped_areas["areas"]:
+        if mapped_area["kind"] == "car_park":
+            mapped_area["name"] = "Picasso car park"
+    mapped_areas["areas"].append({"kind": "car_park", "name": "Dalí car park",
+                                  "ring": reference["parking"]["accessRing"], "trust": "photo and approximate road footprint"})
     skeleton = {
         "origin": {"lat": LAT0, "lon": LON0},
         "viewRotation": VIEW_ROTATION,
@@ -544,7 +591,8 @@ def main() -> None:
         "pools": pools,
         "streets": build_streets(),
         "seafront": build_seafront(buildings, VIEW_ROTATION),
-        **build_areas(),
+        "boundaryReference": reference,
+        **mapped_areas,
         # The low white wall and fence between the south lawn and the paseo. Unbroken: no gate.
         "seaWall": {"points": rounded([unturned(tuple(p)) for p in json.loads((ROOT / "data" / "south_pool.json").read_text())["seaWall"]]),
                     "trust": "traced from the aerial; the short returns at each end are guessed"},

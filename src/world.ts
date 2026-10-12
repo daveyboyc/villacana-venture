@@ -2,18 +2,20 @@ import * as THREE from "three";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import { asset } from "./asset";
 import { centroid, CoastField, Solids } from "./geom";
-import type { Building, MapData, Vec2 } from "./types";
+import { addBoundaryReference, barrierRings, referenceGroundHeight } from "./boundaries";
+import type { BoundaryReference, Building, MapData, Vec2 } from "./types";
 
 export type BuiltWorld = {
   solids: Solids;
   coast: CoastField;
   pools: Vec2[][];
   bounds: MapData["bounds"];
+  groundHeight?: (x:number,z:number) => number;
   occluders: THREE.Object3D;
   update: (time: number, cameraPosition: THREE.Vector3) => void;
 };
 
-export function buildWorld(scene: THREE.Scene, map: MapData): BuiltWorld {
+export function buildWorld(scene: THREE.Scene, map: MapData, reference?: BoundaryReference): BuiltWorld {
   const coast = new CoastField(map.coast, map.landRef);
   const bounds = map.bounds;
 
@@ -210,11 +212,13 @@ export function buildWorld(scene: THREE.Scene, map: MapData): BuiltWorld {
 
   const coastLengths = cumulative(map.coast);
 
+  if (reference) addBoundaryReference(scene, reference);
   return {
-    solids: new Solids(map.buildings.map((b) => b.ring)),
+    solids: new Solids([...map.buildings.map((b) => b.ring), ...barrierRings(reference?.barriers ?? [])]),
     coast,
     pools,
     bounds: map.bounds,
+    groundHeight: reference ? (x,z) => referenceGroundHeight(reference,x,z) : undefined,
     occluders,
     update(time, cameraPosition) {
       seaUniforms.uTime.value = time;

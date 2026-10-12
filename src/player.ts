@@ -9,6 +9,7 @@ export type MoveWorld = {
   bounds: MapData["bounds"];
   /** How far below the ground the player stands in a pool. Defaults to ankle-deep. */
   poolFloor?: number;
+  groundHeight?: (x: number, z: number) => number;
 };
 
 const RADIUS = 0.42;
@@ -179,7 +180,7 @@ export class Player {
       this.z += water.normal[1] * step * 6;
     }
 
-    let floor = 0.06;
+    let floor = world.groundHeight?.(this.x, this.z) ?? 0.06;
     if (water.signed < 2.2) {
       const t = clamp((2.2 - water.signed) / 8, 0, 1);
       floor = -0.12 - t * 0.8;

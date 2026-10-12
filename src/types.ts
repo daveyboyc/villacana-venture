@@ -76,6 +76,9 @@ export type InputState = {
 
 export type SkeletonBuilding = {
   id: string;
+  registryRing?: Vec2[];
+  layoutCorrection?: string;
+  layoutEvidence?: string;
   /** Floors above ground. 0 is a yard or terrace, not a house. */
   floors: number;
   ring: Vec2[];
@@ -98,7 +101,20 @@ export type Seafront = {
   sources: { title: string; url: string }[];
 };
 
+export type Boundary = { id: string; name: string; points: Vec2[]; height: number; thickness: number; solid: boolean; trust: string };
+export type BoundaryReference = {
+  walkAnchor: Vec2;
+  ramps?: { id: string; name: string; points: Vec2[]; heights: number[]; width: number; evidence: string[]; trust: string }[];
+  connection?: { name: string; from: Vec2; to: Vec2; destination: string; trust: string };
+  carParks?: { id: string; name: string; ring: Vec2[]; at: Vec2; entrance: Vec2; trust: string }[];
+  mainParking?: { ring: Vec2[]; rows: { points: Vec2[]; nose: string }[]; rotation: number };
+  roads: { name: string; width: number; points: Vec2[]; surface: string; trust: string; heights?: number[] }[];
+  parking: { name: string; ring: Vec2[]; bayLine: Vec2[]; depth: number; spacing: number; trust: string };
+  barriers: Boundary[];
+};
+
 export type Skeleton = {
+  boundaryReference?: BoundaryReference;
   seafront?: Seafront;
   origin: { lat: number; lon: number };
   /** Degrees that turn the block square on screen, sea at the bottom. */
