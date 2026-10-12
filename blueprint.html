@@ -29,6 +29,7 @@
       #savelabel { background: #1c6fd1 !important; color: #fff; }
       #send[hidden] { display: none; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
+      #labelstatus { max-width: 600px; }
     </style>
   </head>
   <body>
@@ -37,11 +38,12 @@
     <div id="viewer" hidden>
       <img alt="" />
       <p></p>
-      <div id="labelrow">
-        <input id="label" type="text" placeholder="What is this? e.g. gate into the middle pool" />
-        <button id="savelabel">Save</button>
-        <button id="closeviewer">Close</button>
-      </div>
+      <form id="labelrow">
+        <input id="label" type="text" aria-label="Photo label" enterkeyhint="done" placeholder="What is this? e.g. gate into the middle pool" />
+        <button id="savelabel" type="submit">Save</button>
+        <button id="closeviewer" type="button">Close</button>
+      </form>
+      <p id="labelstatus" role="status" aria-live="polite"></p>
     </div>
     <div class="bar" id="editbar" hidden>
       <select id="kind" aria-label="Kind of object to add"></select>
