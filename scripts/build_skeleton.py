@@ -42,8 +42,9 @@ BLOCK = (-196.0, -78.0, -18.0, 158.0)
 
 FLOOR_HEIGHT = 3.0
 COVER_CELL = 0.25
-# Pools whose courtyard has been laid out. The south pool opens onto the beach
-# lawn and needs its own treatment.
+# Pools whose courtyard is laid out by rule: lawn out to a ring of house fronts.
+# The south pool's lawn runs down to a wall above the paseo instead, so its
+# ground is traced by hand in data/south_pool.json.
 COURTYARD_POOLS = ("north", "middle")
 # Courtyard rings, in metres out from the pool's rounded outline.
 DECK_WIDTH = 2.4
@@ -410,7 +411,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         votes.append(np.asarray(layer).astype(np.float32))
     cls = np.argmax(np.stack(votes), axis=0).astype(np.uint8)
     # Pools without a laid-out courtyard keep a plain deck right round them for now.
-    cls[mask([p["ring"] for p in pools if p["id"] not in COURTYARD_POOLS], grow=2.25)] = 3
+    cls[mask([p["ring"] for p in pools if p["id"] not in COURTYARD_POOLS + ("south",)], grow=2.25)] = 3
 
     # These pools sit in a courtyard laid out the same way: a stone deck, lawn
     # right up to it, and a stone path round the outside by the garden walls.
@@ -477,6 +478,24 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
             walls.append([round(x, 2), round(z, 2)])
         cls[(dist < DECK_WIDTH) & ~built] = 3
 
+    # The south pool: stone deck, lawn between the two terraces down to the wall
+    # above the paseo, a cross path at the top and low curved walls on the lawn.
+    south = json.loads((ROOT / "data" / "south_pool.json").read_text())
+    dist = distance_to_ring(wx, wz, convex_hull([tuple(p) for p in next(p["ring"] for p in pools if p["id"] == "south")]))
+    cls[(cls == 3) & (dist < COURTYARD_REACH)] = 0
+    cls[mask([rounded([unturned(tuple(p)) for p in ring]) for ring in south["lawns"]]) & open_ground] = 1
+    south_paths = Image.new("L", (width, height), 0)
+    for line in south["paths"]:
+        ImageDraw.Draw(south_paths).line([cell(unturned(tuple(p))) for p in line], fill=255,
+                                         width=round(south["pathWidth"] / COVER_CELL), joint="curve")
+    cls[(np.asarray(south_paths) > 0) & ~built] = 4
+    cls[(dist < DECK_WIDTH) & ~built] = 3
+    for line in south["walls"]:
+        for a, b in zip(line, line[1:]):
+            for i in range(int(math.dist(a, b) / WALL_STEP) + 1):
+                t = i * WALL_STEP / math.dist(a, b)
+                walls.append(rounded([unturned((a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t))])[0])
+
     # Main-pool lawn and curving terracotta walks, placed approximately from
     # Dave's web references. Keep registry buildings and their porch strips clear.
     main_layout = json.loads((ROOT / "data" / "main_pool.json").read_text())
@@ -526,6 +545,9 @@ def main() -> None:
         "streets": build_streets(),
         "seafront": build_seafront(buildings, VIEW_ROTATION),
         **build_areas(),
+        # The low white wall and fence between the south lawn and the paseo. Unbroken: no gate.
+        "seaWall": {"points": rounded([unturned(tuple(p)) for p in json.loads((ROOT / "data" / "south_pool.json").read_text())["seaWall"]]),
+                    "trust": "traced from the aerial; the short returns at each end are guessed"},
         "poolNames": [{"name": f"{p['id'].title()} pool", "at": p["centre"]} for p in pools if p["kind"] != "toddler"],
         "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),
