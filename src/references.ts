@@ -6,14 +6,24 @@ export type ReferencePoint = { id: string; x: number; z: number; label: string; 
 export type ScreenPoint = { x: number; y: number; visible: boolean };
 const KEY = "villacana-reference-points-v1";
 const centre = (ring: Vec2[]): Vec2 => ring.reduce(([x,z],p)=>[x+p[0]/ring.length,z+p[1]/ring.length],[0,0] as Vec2);
+/** Place names along the lane, rather than clustering two-point streets at junctions. */
+const lineCentre = (points: Vec2[]): Vec2 => {
+  const lengths=points.slice(1).map((p,i)=>Math.hypot(p[0]-points[i][0],p[1]-points[i][1]));
+  let left=lengths.reduce((sum,length)=>sum+length,0)/2;
+  for(let i=0;i<lengths.length;i++) {
+    if(left<=lengths[i]) {const t=left/lengths[i];return [points[i][0]+(points[i+1][0]-points[i][0])*t,points[i][1]+(points[i+1][1]-points[i][1])*t];}
+    left-=lengths[i];
+  }
+  return points[0];
+};
 export function mapLabels(s: Skeleton): ReferencePoint[] {
   const labels: ReferencePoint[] = [];
   const add = (id:string,label:string,p:Vec2,note="",photo="") => labels.push({id,x:p[0],z:p[1],label,note,url:"",photo});
   const streetNames=new Set<string>();
   for (const street of s.streets) {
-    if(streetNames.has(street.name))continue;streetNames.add(street.name);
+    const key=street.id ?? street.name;if(streetNames.has(key))continue;streetNames.add(key);
     const points=street.points ?? street.registryPlots;
-    if(points?.length) add(`street-${street.name}`,street.name+(street.points?"":" ?"),points[Math.floor(points.length/2)],street.trust ?? "Mapped street");
+    if(points?.length) add(street.referenceId ?? `street-${key}`,street.name+(street.points?"":" ?"),street.points ? lineCentre(points) : centre(points),street.trust ?? "Mapped street");
   }
   for (const p of s.pools) add(`pool-${p.id}`,`${p.id === "toddler" ? "Children’s" : p.id[0].toUpperCase()+p.id.slice(1)} pool`,centre(p.ring));
   for (const p of s.boundaryReference?.carParks ?? []) add(`park-${p.id}`,p.name,p.at,p.trust,p.id==="dali"?"IMG_2269.jpg":"");
@@ -78,7 +88,8 @@ export function referenceEditor(options: {
   const render=()=>{
     layer.replaceChildren();buttons=new Map();
     for(const p of all()) {
-      const b=document.createElement("button");b.className="reference-pin"+(points.some(q=>q.id===p.id)?" user-reference":"");b.textContent=(p.photo?"▣ ":"")+p.label;b.title=p.note || "Tap to label or add a reference";b.dataset.referenceId=p.id;
+      const b=document.createElement("button");b.className="reference-pin"+(points.some(q=>q.id===p.id)?" user-reference":"");const display=p.id.startsWith("street-") && !points.some(q=>q.id===p.id) && p.label.length>22 ? p.label.replace(/^Calle /,"C. ") : p.label;
+      b.textContent=(p.photo?"▣ ":"")+display;b.title=`${p.label} · ${p.note || "Tap to label or add a reference"}`;b.dataset.referenceId=p.id;
       b.addEventListener("click",()=>open(p));b.addEventListener("pointerdown",e=>e.stopPropagation());layer.append(b);buttons.set(p.id,b);
     }
   };
@@ -130,7 +141,7 @@ export function referenceEditor(options: {
     if(!enabled||hidden)return;
     // Give user annotations priority when labels would overlap.
     const occupied:{x:number;y:number;w:number;h:number}[]=[];
-    const priority=(p:ReferencePoint)=>points.some(q=>q.id===p.id)?10:p.id.startsWith("pool-")&&p.id!=="pool-toddler"?6:p.id.startsWith("park-")?5:/Cervantes|Pintor/.test(p.label)?4:p.id==="barraka"?3:p.label.endsWith("?")?0:1;
+    const priority=(p:ReferencePoint)=>points.some(q=>q.id===p.id)?10:p.id.startsWith("street-")&&/Cervantes/.test(p.label)?8:p.id.startsWith("pool-")&&p.id!=="pool-toddler"?6:p.id.startsWith("park-")?5:/Cervantes|Pintor/.test(p.label)?4:p.id==="barraka"?3:p.label.endsWith("?")?0:1;
     for(const p of all().sort((a,b)=>priority(b)-priority(a))) {
       const b=buttons.get(p.id)!;const pos=options.project(p.x,p.z);b.style.left=`${pos.x}px`;b.style.top=`${pos.y}px`;
       const w=b.offsetWidth||120,h=b.offsetHeight||28,box={x:pos.x-w/2,y:pos.y-h/2,w,h};

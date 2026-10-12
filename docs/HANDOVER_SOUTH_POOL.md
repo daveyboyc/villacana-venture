@@ -44,8 +44,9 @@ Spain. Vite, TypeScript, Three.js. Deployed by GitHub Pages on every push to `ma
 - Map metres: `x` east, `z` south, origin at lat 36.4552, lon −5.05. This is what
   `objects.json` and `skeleton.json` use.
 - "Turned frame": the map rotated 26° so the block is square with the sea at the
-  bottom. Hand-traced tables in `build_skeleton.py` (`LANES`, `AREAS`) and the
-  arguments to `make_patch.py` use this frame.
+  bottom. The `AREAS` table in `build_skeleton.py` and arguments to
+  `make_patch.py` use this frame. Street data in `data/street_layout.json` uses
+  map metres and includes its source precision.
 - South pool centre: map (−89.74, 188.06), turned (−163, 130).
 
 ## State of the South pool today
