@@ -43,7 +43,7 @@ async function boot(): Promise<void> {
   const connectionFocus = new URLSearchParams(location.search).get("view") === "cervantes";
   const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
-  document.querySelector("#title")!.textContent = names.length > 1 ? `${names.join(" and ")} pools` : `${names[0]} pool`;
+  document.querySelector("#title")!.textContent = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]} pools` : `${names[0]} pool`;
   const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : daliFocus ? "&view=dali" : connectionFocus ? "&view=cervantes" : ""}`;
   for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
   COURTS = shown.map((p) => centroid(p.ring));
