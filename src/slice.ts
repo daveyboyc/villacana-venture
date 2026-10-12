@@ -174,6 +174,34 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   // Paint short blades all over the lawn so it reads as grass right to its edges.
   pctx.filter = "none";
   const painted = pctx.getImageData(0, 0, size, size).data;
+  // Lanes and patios are paved in square terracotta tiles, laid square to the houses.
+  const rgbOf = (hex: string) => [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)];
+  const paving = rgbOf(skeleton.cover.classes.paving);
+  const tiled = document.createElement("canvas");
+  tiled.width = tiled.height = size;
+  const tctx = tiled.getContext("2d")!;
+  const mask = tctx.createImageData(size, size);
+  for (let k = 0; k < painted.length; k += 4) {
+    if (Math.abs(painted[k] - paving[0]) + Math.abs(painted[k + 1] - paving[1]) + Math.abs(painted[k + 2] - paving[2]) < 36) mask.data[k + 3] = 255;
+  }
+  tctx.putImageData(mask, 0, 0);
+  const tilePx = Math.round((size / (span * 2)) * 0.8);
+  const swatch = document.createElement("canvas");
+  swatch.width = swatch.height = tilePx * 2;
+  const sctx = swatch.getContext("2d")!;
+  sctx.fillStyle = "#b8a58c";
+  sctx.fillRect(0, 0, tilePx * 2, tilePx * 2);
+  ["#c98463", "#c27a5a", "#d08e6c", "#c6805e"].forEach((colour, n) => {
+    sctx.fillStyle = colour;
+    sctx.fillRect((n % 2) * tilePx + 1, Math.floor(n / 2) * tilePx + 1, tilePx - 1, tilePx - 1);
+  });
+  const pattern = tctx.createPattern(swatch, "repeat")!;
+  pattern.setTransform(new DOMMatrix().rotate(-skeleton.viewRotation));
+  tctx.globalCompositeOperation = "source-in";
+  tctx.fillStyle = pattern;
+  tctx.fillRect(0, 0, size, size);
+  pctx.drawImage(tiled, 0, 0);
+
   const lawn = skeleton.cover.classes.lawn;
   const lawnRgb = [parseInt(lawn.slice(1, 3), 16), parseInt(lawn.slice(3, 5), 16), parseInt(lawn.slice(5, 7), 16)];
   pctx.lineCap = "round";
@@ -484,6 +512,8 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
   const white = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.9 });
   const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
   const ring = new THREE.MeshStandardMaterial({ color: "#e8532b", roughness: 0.6 });
+  const canvas = new THREE.MeshStandardMaterial({ color: "#efe6d2", roughness: 0.9 });
+  const mesh = new THREE.MeshStandardMaterial({ color: "#6f6a64", roughness: 0.8 });
   const sprites: Partial<Record<SpriteKind, SpritePlacement[]>> = {};
   const add = (mesh: THREE.Mesh, x: number, y: number, z: number) => {
     mesh.position.set(x, y, z);
@@ -513,6 +543,17 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
         add(new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.09, 10, 20), ring), p.x, 1.35, p.z + 0.1);
         break;
       }
+      case "parasol": {
+        add(new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 2.3, 8), steel), p.x, 1.15, p.z);
+        add(new THREE.Mesh(new THREE.ConeGeometry(1.5, 0.5, 8), canvas), p.x, 2.45, p.z);
+        break;
+      }
+      case "sun_lounger": {
+        add(new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.06, 1.3), mesh), p.x, 0.32, p.z);
+        const back = add(new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.06, 0.75), mesh), p.x, 0.58, p.z - 0.9);
+        back.rotation.x = 0.85;
+        break;
+      }
       default:
         (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
     }
@@ -520,9 +561,30 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
   for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places);
 }
 
-/** An arched white gateway at each gap in the garden walls. */
+/** Upright black bars in a frame, see-through between them. */
+function ironTexture(): THREE.CanvasTexture {
+  const c = document.createElement("canvas");
+  c.width = 64;
+  c.height = 128;
+  const g = c.getContext("2d")!;
+  g.strokeStyle = "#1d1b1a";
+  g.lineWidth = 5;
+  g.strokeRect(3, 3, 58, 122);
+  g.lineWidth = 3;
+  for (let x = 13; x < 60; x += 9.5) {
+    g.beginPath();
+    g.moveTo(x, 3);
+    g.lineTo(x, 125);
+    g.stroke();
+  }
+  g.strokeRect(3, 60, 58, 1);
+  return new THREE.CanvasTexture(c);
+}
+
+/** An arched white gateway with an iron gate at each gap in the garden walls. */
 function addGardenGates(scene: THREE.Scene, gates: Vec2[], walls: Vec2[]): void {
   const white = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.92 });
+  const iron = new THREE.MeshBasicMaterial({ map: ironTexture(), alphaTest: 0.5, side: THREE.DoubleSide });
   for (const [gx, gz] of gates) {
     // The gate posts stand on the wall ends either side of the gap.
     const nearby = walls
@@ -538,6 +600,12 @@ function addGardenGates(scene: THREE.Scene, gates: Vec2[], walls: Vec2[]): void 
       pier.castShadow = true;
       scene.add(pier);
     }
+    // A black iron gate, standing open.
+    const leaf = new THREE.Mesh(new THREE.PlaneGeometry(0.95, 1.9), iron);
+    const along = Math.atan2(second.z - first.z, second.x - first.x);
+    leaf.position.set(first.x - Math.sin(along) * 0.5, 0.97, first.z + Math.cos(along) * 0.5);
+    leaf.rotation.y = -along + Math.PI / 2;
+    scene.add(leaf);
     const span = Math.hypot(second.x - first.x, second.z - first.z);
     const arch = new THREE.Mesh(new THREE.TorusGeometry(span / 2, 0.2, 8, 16, Math.PI), white);
     arch.position.set((first.x + second.x) / 2, 2.0, (first.z + second.z) / 2);

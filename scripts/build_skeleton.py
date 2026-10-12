@@ -85,24 +85,33 @@ PROPS = {
         # The hibiscus hedge row along the south side, with a gap for the path.
         *[("hibiscus_hedge", -7.0 + i * 1.2, 10.6 - i * 0.3) for i in range(14) if i not in (6, 7)],
     ],
-    # Kinds are from Dave's ground photos; positions are a first reading of the
-    # aerial photo and are rougher than the north pool's.
+    # Kinds are from Dave's ground photos. Sides of the courtyard are worked out
+    # from those photos (tall trees across Pintor Dalí are west, the sea is
+    # south); exact spots are a reading of the aerial and are rougher than the
+    # north pool's.
     "middle": [
-        ("pool_steps", -1.5, 3.2),
+        ("pool_steps", 3.0, -2.6),
         ("pool_ladder", 3.4, -4.2),
         ("pool_ladder", -5.6, 0.6),
         ("life_ring", 7.2, -2.8),
-        ("life_ring", -7.6, 2.2),
-        # The big clump in a bite out of the deck, beside a ladder.
-        ("bird_of_paradise", 7.6, -0.6),
-        ("bird_of_paradise", 8.4, 0.9),
-        ("bird_of_paradise", 7.0, 1.6),
-        # The tall palm by the wooden-balcony house.
-        ("palm", 11.5, -7.5),
+        ("life_ring", -7.2, 3.4),
+        # The big clump on the lawn at the pool's west end, beside a ladder.
+        ("bird_of_paradise", -8.2, -1.2),
+        ("bird_of_paradise", -9.0, 0.4),
+        ("bird_of_paradise", -7.8, 1.4),
+        # The tall palm to the north, by the wooden-balcony house.
+        ("palm", 6.0, -10.0),
+        # In front of the house with arched shutters, north-west.
         ("pollarded_tree", -9.5, -9.5),
         ("feathery_tree", -13.5, -5.5),
-        ("feathery_tree", -10.5, 4.5),
+        ("feathery_tree", -10.5, 6.5),
         ("feathery_tree", 2.5, 12.0),
+        # A patio with an oleander bed, loungers and a parasol.
+        *[("oleander", -13.0 + i * 0.8, 3.0 + i * 0.45) for i in range(5)],
+        ("sun_lounger", -14.5, 5.6),
+        ("sun_lounger", -13.2, 6.3),
+        ("parasol", -6.5, -11.0),
+        ("parasol", 10.5, -6.0),
     ],
 }
 

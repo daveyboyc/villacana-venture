@@ -19,6 +19,7 @@ export type SpriteKind =
   | "hedge"
   | "hibiscus_hedge"
   | "bougainvillea"
+  | "oleander"
   | "grass";
 
 /** Width and height in metres, and whether the sprite throws a shadow. */
@@ -33,6 +34,7 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
   hedge: { w: 1.7, h: 1.3, shadow: false },
   hibiscus_hedge: { w: 1.7, h: 1.3, shadow: false },
   bougainvillea: { w: 2.6, h: 2.6, shadow: false },
+  oleander: { w: 1.6, h: 1.5, shadow: false },
   grass: { w: 0.55, h: 0.34, shadow: false },
 };
 
@@ -226,6 +228,18 @@ const PAINTERS: Record<SpriteKind, (b: Brush) => void> = {
   bougainvillea(b) {
     b.foliage(0.5, 0.45, 0.42, 0.4, "#2f5f37", "#3f7d45", "#5c9a4f", 40);
     b.dots(0.5, 0.5, 0.42, 0.4, 150, 0.04, ["#c81f7a", "#e23c93", "#a8186a", "#ee6cb0"]);
+  },
+  oleander(b) {
+    // Upright stems, each a spray of narrow pointed leaves.
+    for (let i = 0; i < 9; i++) {
+      const x = 0.15 + b.next() * 0.7;
+      const top = 0.55 + b.next() * 0.35;
+      b.stem(x, 0, x + (b.next() - 0.5) * 0.1, top, 0.02, "#6f8a45");
+      for (let k = 0; k < 14; k++) {
+        const y = top * (0.25 + b.next() * 0.75);
+        b.leaf(x, y, (b.next() - 0.5) * 2.4, 0.2, 0.03, k % 3 ? "#4f8a4a" : "#7fae5c");
+      }
+    }
   },
   grass(b) {
     for (let i = 0; i < 9; i++) {
