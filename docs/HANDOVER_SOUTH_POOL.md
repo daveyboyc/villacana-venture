@@ -198,6 +198,8 @@ Dave has answered two of the earlier questions:
 - **Seaward edge:** the web photos show a low white wall and a fence between the
   lawn and the paseo, so the lawn is not open to it.
 
-Still open:
+- **Gate to the paseo:** there is no longer one. The wall and fence run unbroken, so
+  the south lawn has no direct way through to the paseo. Do not add a gate or path
+  there, and do not let the player walk through.
 
-1. Where is the gate from the south lawn through to the paseo?
+No questions are open.
