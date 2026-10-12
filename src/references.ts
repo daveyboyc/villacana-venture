@@ -1,6 +1,8 @@
 import { asset } from "./asset";
 import type { Skeleton, Vec2 } from "./types";
 import "./references.css";
+import layout from "../data/main_pool.json";
+import {poolAccess,poolLevelPoint} from "./pool-levels";
 
 export type ReferencePoint = { id: string; x: number; z: number; label: string; note: string; url: string; photo: string };
 export type ScreenPoint = { x: number; y: number; visible: boolean };
@@ -36,6 +38,8 @@ export function mapLabels(s: Skeleton): ReferencePoint[] {
     add("beach",sf.beach.name,[x-10*Math.cos(r)-2*Math.sin(r),z+10*Math.sin(r)-2*Math.cos(r)]);
     add("sea",sf.sea.name,[x+55*Math.sin(r),z+55*Math.cos(r)]);
   }
+  add("main-pool-platform","Enrique’s · 90 Miles platform",poolLevelPoint([-53,56]),layout.levels.trust);
+  for(const access of poolAccess) add(access.id,access.name,centre(access.points),layout.levels.trust);
   return labels;
 }
 
@@ -141,7 +145,7 @@ export function referenceEditor(options: {
     if(!enabled||hidden)return;
     // Give user annotations priority when labels would overlap.
     const occupied:{x:number;y:number;w:number;h:number}[]=[];
-    const priority=(p:ReferencePoint)=>points.some(q=>q.id===p.id)?10:p.id.startsWith("street-")&&/Cervantes/.test(p.label)?8:p.id.startsWith("pool-")&&p.id!=="pool-toddler"?6:p.id.startsWith("park-")?5:/Cervantes|Pintor/.test(p.label)?4:p.id==="barraka"?3:p.label.endsWith("?")?0:1;
+    const priority=(p:ReferencePoint)=>points.some(q=>q.id===p.id)?10:p.id.startsWith("street-")&&/Cervantes/.test(p.label)?8:p.id.startsWith("pool-")&&p.id!=="pool-toddler"?6:p.id.startsWith("main-pool-")?5:p.id.startsWith("park-")?5:/Cervantes|Pintor/.test(p.label)?4:p.id==="barraka"?3:p.label.endsWith("?")?0:1;
     for(const p of all().sort((a,b)=>priority(b)-priority(a))) {
       const b=buttons.get(p.id)!;const pos=options.project(p.x,p.z);b.style.left=`${pos.x}px`;b.style.top=`${pos.y}px`;
       const w=b.offsetWidth||120,h=b.offsetHeight||28,box={x:pos.x-w/2,y:pos.y-h/2,w,h};

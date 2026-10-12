@@ -76,7 +76,7 @@ type RingBox = { ring: Vec2[]; minX: number; maxX: number; minZ: number; maxZ: n
 export class Solids {
   private readonly boxes: RingBox[];
 
-  constructor(rings: Vec2[][]) {
+  constructor(rings: Vec2[][], private readonly ceiling: Record<number,number> = {}) {
     this.boxes = rings.map((ring) => {
       let minX = Infinity;
       let maxX = -Infinity;
@@ -92,11 +92,12 @@ export class Solids {
     });
   }
 
-  resolve(x: number, z: number, radius: number): { x: number; z: number } {
+  resolve(x: number, z: number, radius: number, y = -Infinity): { x: number; z: number } {
     let px = x;
     let pz = z;
     for (let pass = 0; pass < 3; pass++) {
-      for (const box of this.boxes) {
+      for (const [i,box] of this.boxes.entries()) {
+        if(y > (this.ceiling[i] ?? Infinity)) continue;
         if (
           px < box.minX - radius ||
           px > box.maxX + radius ||
