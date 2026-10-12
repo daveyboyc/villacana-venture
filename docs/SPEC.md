@@ -94,6 +94,31 @@ only what is in `skeleton.json`, and the master map shows all of it:
 - Not yet editable on the map: garden walls, gates, paths, lawns, lane lines, pool
   outlines.
 
+## Adding detail without drift (2026-10-12)
+
+Detail is added one small patch at a time, by a proposer and a separate reviewer.
+
+1. **One source of truth.** `data/objects.json` is the list of placed things. The
+   master map and the 3D game only draw it.
+2. **Fixed vocabulary.** `data/kinds.json` lists every allowed kind, what it means,
+   and how the map draws it. A new kind is added there first.
+3. **Evidence on everything.** Each object names what it is based on:
+   `photo:IMG_xxxx.jpg`, `aerial`, or `dave:map`.
+4. **Patch packs.** `scripts/make_patch.py <name> <x> <z> <radius>` writes
+   `patches/<name>/`: a gridded plan, the gridded aerial, the photos taken there, and
+   a brief with the rules. An agent works from the pack alone.
+5. **Propose, then review.** The proposer writes `proposals/<name>.json`. A second
+   agent checks every change against the photos and sets a verdict and a reason.
+   `scripts/apply_proposal.py` applies only accepted changes and refuses a proposal
+   that has not been reviewed.
+6. **Automatic checks.** `scripts/check_map.py` fails on unknown kinds, missing
+   evidence, objects inside houses or pool water, duplicate ids, and any change to the
+   pool count or the registry building count. Run it before every commit.
+
+First run: Calle Elena, 14 changes proposed, 12 accepted, 2 rejected. The proposer's
+free-text notes (lane surfaces, walls, corrected photo positions) are kept in the
+proposal file; they are observations, not yet map data.
+
 ## Order of work
 
 Skeleton first, graphics second. The current 3D view is set aside until the flat

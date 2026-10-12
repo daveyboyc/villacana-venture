@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { asset } from "./asset";
 import { centroid, clamp, CoastField, dampAngle, pointInRing, Solids } from "./geom";
 import { Player, type MoveWorld } from "./player";
-import { addSprites, type SpriteKind, type SpritePlacement } from "./sprites";
+import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
 
@@ -56,7 +56,7 @@ async function boot(): Promise<void> {
   scene.background = new THREE.Color("#bfe3f2");
   scene.fog = new THREE.Fog("#cfe9f3", 90, 260);
 
-  const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 600);
+  const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1500);
   const resize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     camera.aspect = window.innerWidth / window.innerHeight;
@@ -109,6 +109,10 @@ async function boot(): Promise<void> {
   let pitch = 0.45;
   let distance = 6;
   let lookHold = 0;
+  // Far enough back to take in every courtyard on show.
+  const farthest = RADIUS * 2.6;
+  let wasOverview = false;
+  const fog = scene.fog as THREE.Fog;
   const target = new THREE.Vector3();
   const clock = new THREE.Clock();
 
@@ -121,8 +125,17 @@ async function boot(): Promise<void> {
     if (input.lookDx || input.lookDy) lookHold = 0.9;
     lookHold = Math.max(0, lookHold - dt);
     camYaw += input.lookDx * 0.0045;
-    pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, 1.2);
-    distance = clamp(distance * (1 + input.zoom * 0.08), 3.5, 40);
+    if (overview !== wasOverview) {
+      // The overview button jumps between walking height and looking down on the whole area.
+      wasOverview = overview;
+      distance = overview ? farthest : 6;
+      pitch = overview ? 1.25 : 0.45;
+    }
+    pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, 1.45);
+    distance = clamp(distance * (1 + input.zoom * 0.08), 3.5, farthest);
+    // Push the haze back as the camera rises, so the layout stays clear from above.
+    fog.near = 90 + distance * 1.5;
+    fog.far = 260 + distance * 3;
     if (lookHold === 0 && moving) camYaw = dampAngle(camYaw, player.yaw, dt * 2.2);
 
     target.set(player.x, player.y + 1.3, player.z);
@@ -527,6 +540,7 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
   const white = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.9 });
   const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
   const ring = new THREE.MeshStandardMaterial({ color: "#e8532b", roughness: 0.6 });
+  const dark = new THREE.MeshStandardMaterial({ color: "#1d1b1a", roughness: 0.6 });
   const canvas = new THREE.MeshStandardMaterial({ color: "#efe6d2", roughness: 0.9 });
   const mesh = new THREE.MeshStandardMaterial({ color: "#6f6a64", roughness: 0.8 });
   const sprites: Partial<Record<SpriteKind, SpritePlacement[]>> = {};
@@ -569,8 +583,31 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
         back.rotation.x = 0.85;
         break;
       }
+      case "bench": {
+        add(new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.45, 0.6), white), p.x, 0.22, p.z);
+        add(new THREE.Mesh(new THREE.BoxGeometry(1.6, 1.0, 0.18), white), p.x, 0.75, p.z - 0.3);
+        break;
+      }
+      case "lamp_post": {
+        add(new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.07, 2.8, 8), dark), p.x, 1.4, p.z);
+        add(new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.4, 0.3), new THREE.MeshBasicMaterial({ color: "#ffe9b0" })), p.x, 3.0, p.z);
+        break;
+      }
+      case "plant_pot": {
+        add(new THREE.Mesh(new THREE.CylinderGeometry(0.32, 0.22, 0.5, 12), new THREE.MeshStandardMaterial({ color: "#c27a5a", roughness: 0.9 })), p.x, 0.25, p.z);
+        (sprites.oleander ??= []).push({ x: p.x, y: 0.45, z: p.z, scale: 0.6 });
+        break;
+      }
+      case "monkey_puzzle":
+        (sprites.pine ??= []).push({ x: p.x, z: p.z });
+        break;
+      case "passage":
+      case "gate":
+      case "sign":
+        // Shown on the master map; not yet built in 3D.
+        break;
       default:
-        (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
+        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
     }
   }
   for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places);
@@ -673,6 +710,7 @@ function hash(x: number, z: number): number {
 }
 
 const keys = new Set<string>();
+let overview = false;
 let stick: { id: number; x: number; y: number } | null = null;
 
 function readKeys(): void {
@@ -689,6 +727,11 @@ function bindInput(): void {
   });
   window.addEventListener("keyup", (e) => keys.delete(e.code));
   document.querySelector("#jump")!.addEventListener("pointerdown", () => (input.jump = true));
+  const overviewButton = document.querySelector<HTMLButtonElement>("#overview")!;
+  overviewButton.addEventListener("click", () => {
+    overview = !overview;
+    overviewButton.textContent = overview ? "Walk" : "Overview";
+  });
 
   // Left half of a touch screen walks, anything else looks around.
   const looks = new Map<number, { x: number; y: number }>();
@@ -708,6 +751,15 @@ function bindInput(): void {
     }
     const prev = looks.get(e.pointerId);
     if (!prev) return;
+    if (looks.size === 2) {
+      // Two fingers: pinch to zoom.
+      const other = [...looks.entries()].find(([id]) => id !== e.pointerId)![1];
+      const before = Math.hypot(prev.x - other.x, prev.y - other.y);
+      const after = Math.hypot(e.clientX - other.x, e.clientY - other.y);
+      input.zoom += (before - after) * 0.12;
+      looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      return;
+    }
     input.lookDx += e.clientX - prev.x;
     input.lookDy += e.clientY - prev.y;
     looks.set(e.pointerId, { x: e.clientX, y: e.clientY });

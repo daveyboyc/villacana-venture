@@ -1,30 +1,13 @@
 import { asset } from "./asset";
+import kinds from "../data/kinds.json";
 import type { MapObject, Skeleton, Vec2 } from "./types";
 
 const NS = "http://www.w3.org/2000/svg";
 const FLOOR_FILL = ["#d9d2c3", "#fff6d8", "#f4c98a", "#e8946a", "#d0604f"];
 const EDITS_KEY = "villacana-map-edits";
 
-/** How each kind of object is drawn from above: radius in metres and colours. */
-const ICONS: Record<string, { r: number; fill: string; edge: string; label: string }> = {
-  tree: { r: 2.4, fill: "#3f7d45", edge: "#2c5f37", label: "Tree" },
-  feathery_tree: { r: 2.6, fill: "#7aa648", edge: "#4d7d3a", label: "Feathery tree" },
-  pollarded_tree: { r: 1.2, fill: "#5c8f47", edge: "#5a4636", label: "Pollarded tree" },
-  palm: { r: 2.2, fill: "#3f7d45", edge: "#7b6248", label: "Palm" },
-  pine: { r: 2.6, fill: "#234a2c", edge: "#16321f", label: "Pine" },
-  bird_of_paradise: { r: 1.5, fill: "#3c8a48", edge: "#2f7340", label: "Bird-of-paradise" },
-  yucca: { r: 1.8, fill: "#6b9a4f", edge: "#3f6f3d", label: "Yucca" },
-  hedge: { r: 0.8, fill: "#2f6b3a", edge: "#234f2c", label: "Hedge" },
-  hibiscus_hedge: { r: 0.8, fill: "#357a3d", edge: "#e8508c", label: "Hibiscus hedge" },
-  bougainvillea: { r: 1.1, fill: "#c81f7a", edge: "#a8186a", label: "Bougainvillea" },
-  oleander: { r: 0.7, fill: "#7fae5c", edge: "#4f8a4a", label: "Oleander" },
-  parasol: { r: 1.5, fill: "#efe6d2", edge: "#b8a58c", label: "Parasol" },
-  sun_lounger: { r: 0.6, fill: "#6f6a64", edge: "#3b352c", label: "Sun lounger" },
-  pool_steps: { r: 1.0, fill: "#ffffff", edge: "#8fd6ea", label: "Pool steps" },
-  pool_ladder: { r: 0.4, fill: "#c9d1d6", edge: "#6f7a80", label: "Pool ladder" },
-  life_ring: { r: 0.4, fill: "#ffffff", edge: "#e8532b", label: "Life ring" },
-  pump_box: { r: 0.55, fill: "#ffffff", edge: "#8a8172", label: "Pump box" },
-};
+/** The fixed vocabulary of object kinds, shared with the checks and the agents. */
+const ICONS: Record<string, { r: number; fill: string; edge: string; label: string }> = kinds;
 const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
 type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; taken?: string };
@@ -202,7 +185,7 @@ async function boot(): Promise<void> {
     for (const [key, node] of nodes) node.querySelector(".ring")!.setAttribute("stroke-opacity", key === id ? "1" : "0");
     $<HTMLButtonElement>("#delete").disabled = !id;
     const o = id ? live.get(id) : null;
-    $("#picked").textContent = o ? `${(ICONS[o.kind] ?? UNKNOWN).label} · ${o.trust === "photo" ? "placed from a photo" : "placed on the map"}` : "Tap the map to add, or drag an object to move it";
+    $("#picked").textContent = o ? `${(ICONS[o.kind] ?? UNKNOWN).label} · ${o.note ? o.note + " · " : ""}${o.evidence ?? "no evidence recorded"}` : "Tap the map to add, or drag an object to move it";
   };
   const toWorld = (e: PointerEvent): Vec2 => {
     const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(world.getScreenCTM()!.inverse());
@@ -376,7 +359,7 @@ async function boot(): Promise<void> {
     if (!touches.delete(e.pointerId) || !editing || travelled > 8) return;
     // A tap on open map adds the chosen kind of object there.
     const [x, z] = toWorld(e);
-    const o: MapObject = { id: `u${Date.now().toString(36)}`, kind: $<HTMLSelectElement>("#kind").value, x, z, trust: "map" };
+    const o: MapObject = { id: `u${Date.now().toString(36)}`, kind: $<HTMLSelectElement>("#kind").value, x, z, evidence: "dave:map" };
     live.set(o.id, o);
     edits.added.push(o);
     draw(o);

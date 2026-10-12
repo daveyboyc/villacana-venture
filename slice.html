@@ -14,6 +14,9 @@
       #areas { position: fixed; top: 56px; left: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
       #areas .chip { position: static; }
       #help { bottom: 12px; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+      #overview { bottom: 12px; right: 12px; }
+      #help { display: none; }
+      @media (min-width: 700px) { #help { display: block; } }
       #jump { bottom: 64px; right: 16px; padding: 18px 22px; display: none; }
       @media (pointer: coarse) { #jump { display: block; } }
     </style>
@@ -24,6 +27,7 @@
     <div id="areas"><a class="chip" href="?pool=north">North pool</a><a class="chip" href="?pool=middle">Middle pool</a><a class="chip" href="?pool=north,middle">Both, joined</a></div>
     <a class="chip" id="back" href="./blueprint.html">Blueprint</a>
     <button class="chip" id="jump">Jump</button>
+    <button class="chip" id="overview">Overview</button>
     <div class="chip" id="help">WASD or left thumb to walk · drag to look</div>
     <script type="module" src="/src/slice.ts"></script>
   </body>

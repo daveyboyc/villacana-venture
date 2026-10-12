@@ -20,6 +20,7 @@ export type SpriteKind =
   | "hibiscus_hedge"
   | "bougainvillea"
   | "oleander"
+  | "cactus"
   | "grass";
 
 /** Width and height in metres, and whether the sprite throws a shadow. */
@@ -35,6 +36,7 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
   hibiscus_hedge: { w: 1.7, h: 1.3, shadow: false },
   bougainvillea: { w: 2.6, h: 2.6, shadow: false },
   oleander: { w: 1.6, h: 1.5, shadow: false },
+  cactus: { w: 3.2, h: 4.6, shadow: true },
   grass: { w: 0.55, h: 0.34, shadow: false },
 };
 
@@ -239,6 +241,14 @@ const PAINTERS: Record<SpriteKind, (b: Brush) => void> = {
         const y = top * (0.25 + b.next() * 0.75);
         b.leaf(x, y, (b.next() - 0.5) * 2.4, 0.2, 0.03, k % 3 ? "#4f8a4a" : "#7fae5c");
       }
+    }
+  },
+  cactus(b) {
+    // Many upright arms rising from one base.
+    for (let i = 0; i < 11; i++) {
+      const x = 0.5 + (i - 5) * 0.075;
+      const top = 0.95 - Math.abs(i - 5) * 0.07 - b.next() * 0.08;
+      b.stem(0.5 + (i - 5) * 0.03, 0.05, x, top, 0.075, i % 2 ? "#5d8f5a" : "#4a7a4c");
     }
   },
   grass(b) {

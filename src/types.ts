@@ -112,5 +112,5 @@ export type Skeleton = {
   cover: { image: string; minX: number; maxX: number; minZ: number; maxZ: number; classes: Record<string, string> };
 };
 
-/** A hand-placed thing on the map. `trust` says how its position is known. */
-export type MapObject = { id: string; kind: string; x: number; z: number; trust?: string };
+/** A hand-placed thing on the map. `evidence` says what it is based on: a photo, the aerial, or Dave. */
+export type MapObject = { id: string; kind: string; x: number; z: number; evidence?: string; note?: string };

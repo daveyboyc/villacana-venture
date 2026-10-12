@@ -28,11 +28,11 @@ def main() -> None:
     for o in objects:
         if o["id"] in edits.get("moved", {}):
             o["x"], o["z"] = (round(v, 2) for v in edits["moved"][o["id"]])
-            o["trust"] = "map"
+            o["evidence"] = "dave:map"
             moved += 1
     added = [a for a in edits.get("added", []) if a["id"] not in known and a["id"] not in removed]
     for a in added:
-        objects.append({"id": a["id"], "kind": a["kind"], "x": round(a["x"], 2), "z": round(a["z"], 2), "trust": "map"})
+        objects.append({"id": a["id"], "kind": a["kind"], "x": round(a["x"], 2), "z": round(a["z"], 2), "evidence": "dave:map"})
     OBJECTS.write_text("[\n" + ",\n".join(" " + json.dumps(o) for o in objects) + "\n]\n")
     labels = json.loads(LABELS.read_text())
     for name, text in edits.get("labels", {}).items():
