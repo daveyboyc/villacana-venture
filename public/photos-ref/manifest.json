@@ -660,7 +660,8 @@
   "z": 56.9,
   "heading": 226,
   "taken": "2026-10-12",
-  "accuracy": 4.8
+  "accuracy": 4.8,
+  "observation": "Cervantes / Elena junction: tiled ramp, white edges, side steps and drain at the foot"
  },
  {
   "file": "IMG_2265.jpg",
@@ -670,7 +671,8 @@
   "z": 60.0,
   "heading": 61,
   "taken": "2026-10-12",
-  "accuracy": 4.7
+  "accuracy": 4.7,
+  "observation": "Cervantes / Elena ramp from the upper landing: terracotta slope, white edges and bottom drain"
  },
  {
   "file": "IMG_2260.jpg",
