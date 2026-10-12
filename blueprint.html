@@ -23,6 +23,8 @@
       #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
       #viewer { position: fixed; inset: 0; background: #000d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; z-index: 5; }
       #viewer img { max-width: 96vw; max-height: 70dvh; border-radius: 8px; }
+      #photonavigation { display: flex; gap: 8px; }
+      #photonavigation button { padding: 8px 14px; border: 0; border-radius: 8px; }
       #labelrow { display: flex; gap: 8px; width: min(96vw, 640px); }
       #labelrow input { flex: 1; min-width: 0; font-size: 16px; padding: 10px 12px; border-radius: 10px; border: 0; }
       #labelrow button { font-size: 15px; padding: 10px 14px; border-radius: 10px; border: 0; background: #fffdf8; }
@@ -43,6 +45,7 @@
         <button id="savelabel" type="submit">Save</button>
         <button id="closeviewer" type="button">Close</button>
       </form>
+      <div id="photonavigation"><button id="previousphoto" type="button">Previous photo</button><button id="nextphoto" type="button">Next photo</button></div>
       <p id="labelstatus" role="status" aria-live="polite"></p>
     </div>
     <div class="bar" id="editbar" hidden>
@@ -57,12 +60,14 @@
       <button id="photo" aria-pressed="false">Aerial photo</button>
       <button id="streets" aria-pressed="true">Streets</button>
       <button id="objects" aria-pressed="true">Objects</button>
+      <button id="boundary" aria-pressed="true">Parking & fence</button>
       <button id="photos" aria-pressed="true">Photos</button>
       <button id="seafront" aria-pressed="true">Seafront</button>
       <button id="heights" aria-pressed="false">Heights</button>
       <button id="key" aria-pressed="false">Key</button>
       <button id="reset">Whole block</button>
       <a href="./slice.html?pool=north,middle">Walk it</a>
+      <a href="./slice.html?pool=north,middle&amp;view=dali">Walk Dalí</a>
       <a href="./slice.html?pool=main&amp;view=seafront">Walk seafront</a>
     </div>
     <script type="module" src="/src/blueprint.ts"></script>

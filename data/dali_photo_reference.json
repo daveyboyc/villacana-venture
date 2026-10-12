@@ -1,0 +1,123 @@
+[
+  {
+    "file": "IMG_2266.jpg",
+    "title": "IMG_2266",
+    "trust": "phone location",
+    "x": -184.8,
+    "z": 76.4,
+    "heading": 243,
+    "taken": "2026-10-12",
+    "accuracy": 14.0,
+    "observation": "Pintor Dal\u00ed: path exit, planter and opposite hedge"
+  },
+  {
+    "file": "IMG_2263.jpg",
+    "title": "IMG_2263",
+    "trust": "phone location",
+    "x": -151.5,
+    "z": 57.2,
+    "heading": 155,
+    "taken": "2026-10-12",
+    "accuracy": 4.1,
+    "observation": "Cervantes: lane and clipped planting toward the junction"
+  },
+  {
+    "file": "IMG_2261.jpg",
+    "title": "IMG_2261",
+    "trust": "phone location",
+    "x": -150.2,
+    "z": 56.9,
+    "heading": 167,
+    "taken": "2026-10-12",
+    "accuracy": 10.2,
+    "observation": "Cervantes junction: another view of the same terraces"
+  },
+  {
+    "file": "IMG_2267.jpg",
+    "title": "IMG_2267",
+    "trust": "phone location",
+    "x": -186.3,
+    "z": 76.1,
+    "heading": 328,
+    "taken": "2026-10-12",
+    "accuracy": 2.8,
+    "observation": "Pintor Dal\u00ed: house-side footpath and parking looking north"
+  },
+  {
+    "file": "IMG_2268.jpg",
+    "title": "IMG_2268",
+    "trust": "phone location",
+    "x": -185.3,
+    "z": 77.3,
+    "heading": 148,
+    "taken": "2026-10-12",
+    "accuracy": 3.4,
+    "observation": "Pintor Dal\u00ed: house-side footpath and parking looking south"
+  },
+  {
+    "file": "IMG_2262.jpg",
+    "title": "IMG_2262",
+    "trust": "phone location",
+    "x": -150.5,
+    "z": 56.9,
+    "heading": 226,
+    "taken": "2026-10-12",
+    "accuracy": 4.8,
+    "observation": "Cervantes junction: terracotta path, white curbs and drainage grate"
+  },
+  {
+    "file": "IMG_2265.jpg",
+    "title": "IMG_2265",
+    "trust": "phone location",
+    "x": -158.4,
+    "z": 60.0,
+    "heading": 61,
+    "taken": "2026-10-12",
+    "accuracy": 4.7,
+    "observation": "Cervantes: lane facing into the resort"
+  },
+  {
+    "file": "IMG_2260.jpg",
+    "title": "IMG_2260",
+    "trust": "phone location",
+    "x": -149.7,
+    "z": 56.9,
+    "heading": 158,
+    "taken": "2026-10-12",
+    "accuracy": 11.8,
+    "observation": "Cervantes junction: white terraces and small lawns"
+  },
+  {
+    "file": "IMG_2269.jpg",
+    "title": "IMG_2269",
+    "trust": "phone location",
+    "x": -190.5,
+    "z": 81.0,
+    "heading": 156,
+    "taken": "2026-10-12",
+    "accuracy": 4.7,
+    "observation": "Pintor Dal\u00ed: parking and chain-link fence looking south"
+  },
+  {
+    "file": "IMG_2264.jpg",
+    "title": "IMG_2264",
+    "trust": "phone location",
+    "x": -153.7,
+    "z": 58.1,
+    "heading": 239,
+    "taken": "2026-10-12",
+    "accuracy": 3.9,
+    "observation": "Cervantes: lane facing toward Pintor Dal\u00ed"
+  },
+  {
+    "file": "IMG_2270.jpg",
+    "title": "IMG_2270",
+    "trust": "phone location",
+    "x": -189.8,
+    "z": 81.9,
+    "heading": 325,
+    "taken": "2026-10-12",
+    "accuracy": 4.7,
+    "observation": "Pintor Dal\u00ed: parking and fence looking north"
+  }
+]

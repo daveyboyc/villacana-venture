@@ -98,7 +98,16 @@ export type Seafront = {
   sources: { title: string; url: string }[];
 };
 
+export type Boundary = { id: string; name: string; points: Vec2[]; height: number; thickness: number; solid: boolean; trust: string };
+export type BoundaryReference = {
+  walkAnchor: Vec2;
+  roads: { name: string; width: number; points: Vec2[]; surface: string; trust: string }[];
+  parking: { name: string; ring: Vec2[]; bayLine: Vec2[]; depth: number; spacing: number; trust: string };
+  barriers: Boundary[];
+};
+
 export type Skeleton = {
+  boundaryReference?: BoundaryReference;
   seafront?: Seafront;
   origin: { lat: number; lon: number };
   /** Degrees that turn the block square on screen, sea at the bottom. */

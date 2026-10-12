@@ -601,5 +601,115 @@
   "z": 40.8,
   "heading": 237,
   "taken": "2026-10-12"
+ },
+ {
+  "file": "IMG_2266.jpg",
+  "title": "IMG_2266",
+  "trust": "phone location",
+  "x": -184.8,
+  "z": 76.4,
+  "heading": 243,
+  "taken": "2026-10-12",
+  "accuracy": 14.0
+ },
+ {
+  "file": "IMG_2263.jpg",
+  "title": "IMG_2263",
+  "trust": "phone location",
+  "x": -151.5,
+  "z": 57.2,
+  "heading": 155,
+  "taken": "2026-10-12",
+  "accuracy": 4.1
+ },
+ {
+  "file": "IMG_2261.jpg",
+  "title": "IMG_2261",
+  "trust": "phone location",
+  "x": -150.2,
+  "z": 56.9,
+  "heading": 167,
+  "taken": "2026-10-12",
+  "accuracy": 10.2
+ },
+ {
+  "file": "IMG_2267.jpg",
+  "title": "IMG_2267",
+  "trust": "phone location",
+  "x": -186.3,
+  "z": 76.1,
+  "heading": 328,
+  "taken": "2026-10-12",
+  "accuracy": 2.8
+ },
+ {
+  "file": "IMG_2268.jpg",
+  "title": "IMG_2268",
+  "trust": "phone location",
+  "x": -185.3,
+  "z": 77.3,
+  "heading": 148,
+  "taken": "2026-10-12",
+  "accuracy": 3.4
+ },
+ {
+  "file": "IMG_2262.jpg",
+  "title": "IMG_2262",
+  "trust": "phone location",
+  "x": -150.5,
+  "z": 56.9,
+  "heading": 226,
+  "taken": "2026-10-12",
+  "accuracy": 4.8
+ },
+ {
+  "file": "IMG_2265.jpg",
+  "title": "IMG_2265",
+  "trust": "phone location",
+  "x": -158.4,
+  "z": 60.0,
+  "heading": 61,
+  "taken": "2026-10-12",
+  "accuracy": 4.7
+ },
+ {
+  "file": "IMG_2260.jpg",
+  "title": "IMG_2260",
+  "trust": "phone location",
+  "x": -149.7,
+  "z": 56.9,
+  "heading": 158,
+  "taken": "2026-10-12",
+  "accuracy": 11.8
+ },
+ {
+  "file": "IMG_2269.jpg",
+  "title": "IMG_2269",
+  "trust": "phone location",
+  "x": -190.5,
+  "z": 81.0,
+  "heading": 156,
+  "taken": "2026-10-12",
+  "accuracy": 4.7
+ },
+ {
+  "file": "IMG_2264.jpg",
+  "title": "IMG_2264",
+  "trust": "phone location",
+  "x": -153.7,
+  "z": 58.1,
+  "heading": 239,
+  "taken": "2026-10-12",
+  "accuracy": 3.9
+ },
+ {
+  "file": "IMG_2270.jpg",
+  "title": "IMG_2270",
+  "trust": "phone location",
+  "x": -189.8,
+  "z": 81.9,
+  "heading": 325,
+  "taken": "2026-10-12",
+  "accuracy": 4.7
  }
 ]

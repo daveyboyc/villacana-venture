@@ -10,7 +10,7 @@ const EDITS_KEY = "villacana-map-edits";
 const ICONS: Record<string, { r: number; fill: string; edge: string; label: string }> = kinds;
 const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
-type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; taken?: string };
+type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; accuracy?: number; taken?: string };
 type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[]; labels: Record<string, string> };
 
 const svg = document.querySelector<SVGSVGElement>("#map")!;
@@ -96,6 +96,27 @@ async function boot(): Promise<void> {
     traced.append(el("path", { d, fill: "none", stroke: "#f4f1ea", "stroke-width": 0.18 }));
   }
 
+  const boundary = el("g", { id: "boundary-reference" });
+  if (skeleton.boundaryReference) {
+    const ref = skeleton.boundaryReference;
+    boundary.append(el("path", { d: path(ref.parking.ring), fill: "#969a99", stroke: "#f4f0e5", "stroke-width": 0.3 }));
+    const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
+    for (const fence of ref.barriers) {
+      const node = el("path", { d: line(fence.points), fill: "none", stroke: "#743e36", "stroke-width": 0.9, "stroke-dasharray": "1.5 0.5" });
+      const title = el("title", {}); title.textContent = `${fence.name}: solid game boundary`; node.append(title); boundary.append(node);
+    }
+    const bays = ref.parking;
+    for (let i = 0; i < bays.bayLine.length - 1; i++) {
+      const a = bays.bayLine[i], b = bays.bayLine[i + 1];
+      const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
+      for (let at = 0; at < length; at += bays.spacing) {
+        const x = a[0] + dx / length * at, z = a[1] + dz / length * at;
+        boundary.append(el("path", { d: `M${x} ${z}L${x + dz / length * bays.depth} ${z - dx / length * bays.depth}`, fill: "none", stroke: "#fff", "stroke-width": 0.15 }));
+      }
+    }
+  }
+  world.append(boundary);
+
   // Streets: a pale band with its name along it.
   const streets = el("g", {});
   const label = (text: string, x: number, z: number, angle: number, fill: string) => {
@@ -120,7 +141,7 @@ async function boot(): Promise<void> {
   for (const street of skeleton.streets) {
     if (street.points) {
       const d = "M" + street.points.map((p) => `${p[0]} ${p[1]}`).join("L");
-      streets.append(el("path", { d, fill: "none", stroke: "#fffdf8", "stroke-opacity": 0.55, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+      streets.append(el("path", { d, fill: "none", stroke: skeleton.boundaryReference?.roads.find((r) => r.name === street.name)?.surface === "asphalt" ? "#7f8384" : "#fffdf8", "stroke-opacity": 0.75, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
       const mid = Math.floor((street.points.length - 1) / 2);
       const [a, b] = [street.points[mid], street.points[mid + 1]];
       // Read along the lane, never upside down.
@@ -143,6 +164,14 @@ async function boot(): Promise<void> {
     // A question mark means the position was placed by eye and is unconfirmed.
     const sure = place.trust !== "approximate";
     names.append(label(sure ? place.name : `${place.name} ?`, place.at[0], place.at[1], 0, sure ? "#5d584f" : "#b3261e"));
+  }
+  if (skeleton.boundaryReference) {
+    const ref = skeleton.boundaryReference;
+    const p = ref.walkAnchor;
+    names.append(label("Parking", p[0] + 7, p[1] - 3, 0, "#4b5351"));
+    const fence = ref.barriers[0];
+    const mid = fence.points[Math.floor(fence.points.length / 2)];
+    names.append(label("Fence · game limit", mid[0] - 8, mid[1], 90, "#743e36"));
   }
   for (const pool of skeleton.poolNames) names.append(label(pool.name, pool.at[0], pool.at[1] + 9, 0, "#0b5d86"));
 
@@ -280,7 +309,27 @@ async function boot(): Promise<void> {
     const manifest = response.ok ? ((await response.json()) as PhotoPin[]) : [];
     const labelsFile = await fetch(asset("/photos-ref/labels.json"));
     const published = labelsFile.ok ? ((await labelsFile.json()) as Record<string, string>) : {};
+    const photoViews: { pin: PhotoPin; dot: SVGCircleElement }[] = [];
     const labelOf = (pin: PhotoPin) => edits.labels[pin.file] ?? published[pin.file] ?? "";
+    const showPhoto = (photo: { pin: PhotoPin; dot: SVGCircleElement }) => {
+      open = photo;
+      const pin = photo.pin;
+      viewer.querySelector("img")!.src = asset(`/photos-ref/${pin.file}`);
+      viewer.querySelector("p")!.textContent = `${pin.title}${pin.taken ? " · " + pin.taken : ""}${pin.accuracy ? " · GPS ±" + pin.accuracy + " m" : ""}`;
+      labelBox.value = labelOf(pin);
+      labelStatus.textContent = "Tap Save to keep this label on this browser. Use Send changes to share it.";
+      const index = photoViews.indexOf(photo);
+      $<HTMLButtonElement>("#previousphoto").disabled = index <= 0;
+      $<HTMLButtonElement>("#nextphoto").disabled = index >= photoViews.length - 1;
+      viewer.hidden = false;
+    };
+    for (const [id, step] of [["#previousphoto", -1], ["#nextphoto", 1]] as const) {
+      $(id).addEventListener("click", () => {
+        if (!open) return;
+        const next = photoViews[photoViews.indexOf(open) + step];
+        if (next) showPhoto(next);
+      });
+    }
     // Labelled photos turn green, so it is easy to see which are still to do.
     const tint = (pin: PhotoPin, dot: SVGCircleElement) => dot.setAttribute("fill", labelOf(pin) ? "#2f9e44" : "#d6336c");
     $("#labelrow").addEventListener("submit", (e) => {
@@ -297,7 +346,7 @@ async function boot(): Promise<void> {
         ? "Saved on this browser. Close the photo and use Send changes to share your labels."
         : "This browser could not save your label. It is kept for this visit only. Close the photo and use Send changes before leaving.";
     });
-    for (const pin of manifest) {
+    for (const pin of manifest.sort((a, b) => a.file.localeCompare(b.file))) {
       if (pin.x === undefined || pin.z === undefined) continue;
       const g = el("g", { style: "cursor:pointer" });
       if (pin.heading !== undefined) {
@@ -312,14 +361,11 @@ async function boot(): Promise<void> {
       g.append(dot);
       // Keep the tap from panning the map or, in edit mode, adding an object.
       g.addEventListener("pointerdown", (e) => e.stopPropagation());
+      const photoView = { pin, dot };
+      photoViews.push(photoView);
       g.addEventListener("click", (e) => {
         e.stopPropagation();
-        open = { pin, dot };
-        viewer.querySelector("img")!.src = asset(`/photos-ref/${pin.file}`);
-        viewer.querySelector("p")!.textContent = `${pin.title}${pin.taken ? " · " + pin.taken : ""}`;
-        labelBox.value = labelOf(pin);
-        labelStatus.textContent = "Tap Save to keep this label on this browser. Use Send changes to share it.";
-        viewer.hidden = false;
+        showPhoto(photoView);
       });
       photos.append(g);
     }
@@ -357,7 +403,8 @@ async function boot(): Promise<void> {
     `<div><i style="background:#d6336c;border-radius:50%"></i>Photo</div>` +
     `<div><i style="background:#2f9e44;border-radius:50%"></i>Photo you have labelled</div>` +
     `<div><i style="background:#dfaa86"></i>Paseo</div><div><i style="background:#e4cc9b"></i>Beach</div>` +
-    `<div><i style="background:#62b6d1"></i>Sea</div><div><i style="background:#a68a60"></i>Barraka Beach</div>`;
+    `<div><i style="background:#62b6d1"></i>Sea</div><div><i style="background:#a68a60"></i>Barraka Beach</div>` +
+    `<div><i style="background:#969a99"></i>Dalí parking</div><div><i style="background:#743e36"></i>Fence · solid game limit</div>`;
 
   // The turned bounding box of the area is the default view.
   const a = (rot * Math.PI) / 180;
@@ -453,6 +500,7 @@ async function boot(): Promise<void> {
     show(walls)(on);
   });
   toggle("#photos", show(photos));
+  toggle("#boundary", show(boundary));
   toggle("#seafront", (on) => { show(seafront)(on); show(seafrontNames)(on); });
   toggle("#heights", paintRoofs);
   toggle("#key", (on) => ($("#legend").hidden = !on));
