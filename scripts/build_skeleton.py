@@ -277,8 +277,18 @@ PARKING_ROWS = [
 KERBS = [[(-47.8, -98), (-47.8, -20)]]
 
 
+# Named places not covered by a street, area or seafront outline. Turned frame.
+# "approximate" positions were read off a map screenshot by eye and need Dave to
+# confirm them.
+PLACES = [
+    ("Bistro Enrique's", -72, 52, "approximate"),
+    ("90 Miles", -52, 46, "approximate"),
+]
+
+
 def build_areas() -> dict:
     return {
+        "places": [{"name": name, "at": rounded([unturned((x, z))])[0], "trust": trust} for name, x, z, trust in PLACES],
         "areas": [{"kind": kind, "name": name, "ring": rounded([unturned(p) for p in ring]), "trust": "traced"} for kind, name, ring in AREAS],
         "parkingRows": [{"points": rounded([unturned(a), unturned(b)]), "nose": nose} for a, b, nose in PARKING_ROWS],
         "kerbs": [rounded([unturned(p) for p in line]) for line in KERBS],
@@ -516,6 +526,7 @@ def main() -> None:
         "streets": build_streets(),
         "seafront": build_seafront(buildings, VIEW_ROTATION),
         **build_areas(),
+        "poolNames": [{"name": f"{p['id'].title()} pool", "at": p["centre"]} for p in pools if p["kind"] != "toddler"],
         "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),
         "gardenGates": cover.pop("gardenGates"),

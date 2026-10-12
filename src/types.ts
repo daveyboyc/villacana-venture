@@ -114,6 +114,9 @@ export type Skeleton = {
   /** Rows of parking bays; `nose` is the compass side the cars point to, in the turned view. */
   parkingRows: { points: Vec2[]; nose: string }[];
   kerbs: Vec2[][];
+  /** Named places; `approximate` ones were placed by eye and are unconfirmed. */
+  places: { name: string; at: Vec2; trust: string }[];
+  poolNames: { name: string; at: Vec2 }[];
   /** Things placed by hand: a kind and a position, drawn however the game chooses. */
   props: MapObject[];
   /** Centres of low garden-wall blocks, about half a metre apart. */

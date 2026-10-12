@@ -139,6 +139,12 @@ async function boot(): Promise<void> {
     const cz = area.ring.reduce((sum, p) => sum + p[1], 0) / area.ring.length;
     names.append(label(area.name, cx + 9, cz, 0, "#5d584f"));
   }
+  for (const place of skeleton.places) {
+    // A question mark means the position was placed by eye and is unconfirmed.
+    const sure = place.trust !== "approximate";
+    names.append(label(sure ? place.name : `${place.name} ?`, place.at[0], place.at[1], 0, sure ? "#5d584f" : "#b3261e"));
+  }
+  for (const pool of skeleton.poolNames) names.append(label(pool.name, pool.at[0], pool.at[1] + 9, 0, "#0b5d86"));
 
   // Buildings: drawn as white roofs, or coloured by height.
   const roofs: { node: SVGPathElement; floors: number }[] = [];
