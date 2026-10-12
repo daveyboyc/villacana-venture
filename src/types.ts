@@ -88,7 +88,18 @@ export type SkeletonPool = {
   ring: Vec2[];
 };
 
+export type Seafront = {
+  viewBounds: Vec2[];
+  paseo: { name: string; width: number; points: Vec2[]; trust: string };
+  beach: { name: string; ring: Vec2[]; trust: string };
+  sea: { name: string; ring: Vec2[]; trust: string };
+  coast: Vec2[];
+  restaurant: { name: string; buildingId: string; ring: Vec2[]; terrace: Vec2[]; trust: string };
+  sources: { title: string; url: string }[];
+};
+
 export type Skeleton = {
+  seafront?: Seafront;
   origin: { lat: number; lon: number };
   /** Degrees that turn the block square on screen, sea at the bottom. */
   viewRotation: number;

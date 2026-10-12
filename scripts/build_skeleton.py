@@ -23,6 +23,7 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
+from build_seafront import build_seafront
 
 ROOT = Path(__file__).resolve().parents[1]
 CATASTRO = ROOT / "data" / "catastro"
@@ -513,6 +514,7 @@ def main() -> None:
         "buildings": buildings,
         "pools": pools,
         "streets": build_streets(),
+        "seafront": build_seafront(buildings, VIEW_ROTATION),
         **build_areas(),
         "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),
