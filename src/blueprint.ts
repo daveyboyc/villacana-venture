@@ -1,3 +1,4 @@
+import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
 import kinds from "../data/kinds.json";
 import type { MapObject, Skeleton, Vec2 } from "./types";
@@ -421,7 +422,7 @@ async function boot(): Promise<void> {
 
   // The turned bounding box of the area is the default view.
   const a = (rot * Math.PI) / 180;
-  const extent = [...skeleton.area, ...(skeleton.seafront?.viewBounds ?? [])];
+  const extent = [...skeleton.area, ...(skeleton.seafront?.viewBounds ?? []), ...(skeleton.boundaryReference?.carParks?.flatMap(p=>p.ring) ?? []), ...(skeleton.boundaryReference?.roads.flatMap(r=>r.points) ?? [])];
   const pts = extent.map(([x, z]) => [x * Math.cos(a) - z * Math.sin(a), x * Math.sin(a) + z * Math.cos(a)]);
   const home = {
     x: Math.min(...pts.map((p) => p[0])),
@@ -430,14 +431,18 @@ async function boot(): Promise<void> {
     h: Math.max(...pts.map((p) => p[1])) - Math.min(...pts.map((p) => p[1])),
   };
   const view = { ...home };
-  const apply = () => svg.setAttribute("viewBox", `${view.x} ${view.y} ${view.w} ${view.h}`);
+  let rotation=rot;
+  const apply = () => {
+    svg.setAttribute("viewBox", `${view.x} ${view.y} ${view.w} ${view.h}`);
+    world.setAttribute("transform",`rotate(${rotation})`);
+    $("#map-bearing").textContent=`${Math.round(rotation)}°`;
+  };
   apply();
 
   const scale = () => Math.max(view.w / svg.clientWidth, view.h / svg.clientHeight);
   const zoomAt = (cx: number, cy: number, factor: number) => {
-    const box = svg.getBoundingClientRect();
-    const fx = (cx - box.left) / box.width;
-    const fy = (cy - box.top) / box.height;
+    const anchor=new DOMPoint(cx,cy).matrixTransform(svg.getScreenCTM()!.inverse());
+    const fx=(anchor.x-view.x)/view.w, fy=(anchor.y-view.y)/view.h;
     const w = Math.min(Math.max(view.w * factor, 12), home.w * 2);
     const h = (w * view.h) / view.w;
     view.x += (view.w - w) * fx;
@@ -446,6 +451,33 @@ async function boot(): Promise<void> {
     view.h = h;
     apply();
   };
+
+  const rotateBy=(degrees:number)=>{
+    const delta=degrees*Math.PI/180,cx=view.x+view.w/2,cy=view.y+view.h/2;
+    view.x=cx*Math.cos(delta)-cy*Math.sin(delta)-view.w/2;
+    view.y=cx*Math.sin(delta)+cy*Math.cos(delta)-view.h/2;
+    rotation=((rotation+degrees)%360+360)%360;apply();
+  };
+  $("#map-zoom-in").addEventListener("click",()=>zoomAt(innerWidth/2,innerHeight/2,1/1.3));
+  $("#map-zoom-out").addEventListener("click",()=>zoomAt(innerWidth/2,innerHeight/2,1.3));
+  $("#map-left").addEventListener("click",()=>rotateBy(-15));
+  $("#map-right").addEventListener("click",()=>rotateBy(15));
+  $("#map-north").addEventListener("click",()=>rotateBy(-rotation));
+  // Screen-sized labels remain readable at every zoom and rotation.
+  names.querySelectorAll("text").forEach(t=>t.style.display="none");
+  seafrontNames.querySelectorAll("text").forEach(t=>t.style.display="none");
+  const references=referenceEditor({surface:svg,labels:mapLabels(skeleton),
+    project:(x,z)=>{const p=new DOMPoint(x,z).matrixTransform(world.getScreenCTM()!);return {x:p.x,y:p.y,visible:p.x>0&&p.x<innerWidth&&p.y>90&&p.y<innerHeight-175};},
+    unproject:(x,y)=>{const p=new DOMPoint(x,y).matrixTransform(world.getScreenCTM()!.inverse());return [p.x,p.y];},
+    onArm:()=>{editing=false;$("#editbar").hidden=true;$("#edit").setAttribute("aria-pressed","false");}
+  });
+  const updateReferences=()=>{references.update();requestAnimationFrame(updateReferences);};updateReferences();
+  window.addEventListener("keydown",e=>{
+    if((e.target as HTMLElement).matches("input,textarea,select")||references.active())return;
+    if(e.key==="+"||e.key==="=")zoomAt(innerWidth/2,innerHeight/2,1/1.3);
+    if(e.key==="-")zoomAt(innerWidth/2,innerHeight/2,1.3);
+    if(e.key.toLowerCase()==="q")rotateBy(-15);if(e.key.toLowerCase()==="e")rotateBy(15);
+  });
 
   // One finger pans, two pinch. A touch that barely moves is a tap.
   const touches = new Map<number, { x: number; y: number }>();
@@ -468,7 +500,11 @@ async function boot(): Promise<void> {
       const other = [...touches.entries()].find(([id]) => id !== e.pointerId)![1];
       const before = Math.hypot(prev.x - other.x, prev.y - other.y);
       const after = Math.hypot(e.clientX - other.x, e.clientY - other.y);
-      if (before > 0 && after > 0) zoomAt((e.clientX + other.x) / 2, (e.clientY + other.y) / 2, before / after);
+      if (before > 0 && after > 0) {
+        zoomAt((e.clientX + other.x) / 2, (e.clientY + other.y) / 2, before / after);
+        const delta=Math.atan2(e.clientY-other.y,e.clientX-other.x)-Math.atan2(prev.y-other.y,prev.x-other.x);
+        rotateBy(Math.atan2(Math.sin(delta),Math.cos(delta))*180/Math.PI);
+      }
     }
     touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
   });
@@ -523,7 +559,7 @@ async function boot(): Promise<void> {
     select(null);
   });
   $("#reset").addEventListener("click", () => {
-    Object.assign(view, home);
+    rotation=rot;Object.assign(view, home);
     apply();
   });
 
