@@ -79,6 +79,21 @@ only what is in `skeleton.json`, and the master map shows all of it:
 - **Still to build:** dragging pins and objects to correct them, and the checking
   agent (measured checks against registry and aerial; side-by-side photo checks).
 
+## Adding detail to the master map (2026-10-12)
+
+- Every hand-placed object (trees, plants, pool fittings, furniture) is one line in
+  `data/objects.json`: an id, a kind, a position in map metres, and how the position
+  is known (`photo` or `map`). Nothing is placed in code any more.
+- The master map draws them as top-down icons and has an **Edit** mode: pick a kind,
+  tap to add, drag to move, delete. Edits are kept on the device and sent as a small
+  JSON document of changes, which `scripts/apply_map_edits.py` applies to
+  `data/objects.json`. Rebuild with `scripts/build_skeleton.py` afterwards.
+- An agent adding detail edits `data/objects.json` directly. A new kind needs an icon
+  in `src/blueprint.ts` and either a sprite in `src/sprites.ts` or a case in
+  `addProps` in `src/slice.ts`.
+- Not yet editable on the map: garden walls, gates, paths, lawns, lane lines, pool
+  outlines.
+
 ## Order of work
 
 Skeleton first, graphics second. The current 3D view is set aside until the flat

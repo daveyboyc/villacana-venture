@@ -1,14 +1,37 @@
 import { asset } from "./asset";
-import type { Skeleton, Vec2 } from "./types";
+import type { MapObject, Skeleton, Vec2 } from "./types";
 
 const NS = "http://www.w3.org/2000/svg";
 const FLOOR_FILL = ["#d9d2c3", "#fff6d8", "#f4c98a", "#e8946a", "#d0604f"];
-/** Outline colour says how far to trust a thing's position. */
-const TRUST = { surveyed: "#3b352c", photo: "#1c6fd1", traced: "#7b3fb5", guessed: "#e07b1a", unplaced: "#b3261e" };
+const EDITS_KEY = "villacana-map-edits";
+
+/** How each kind of object is drawn from above: radius in metres and colours. */
+const ICONS: Record<string, { r: number; fill: string; edge: string; label: string }> = {
+  tree: { r: 2.4, fill: "#3f7d45", edge: "#2c5f37", label: "Tree" },
+  feathery_tree: { r: 2.6, fill: "#7aa648", edge: "#4d7d3a", label: "Feathery tree" },
+  pollarded_tree: { r: 1.2, fill: "#5c8f47", edge: "#5a4636", label: "Pollarded tree" },
+  palm: { r: 2.2, fill: "#3f7d45", edge: "#7b6248", label: "Palm" },
+  pine: { r: 2.6, fill: "#234a2c", edge: "#16321f", label: "Pine" },
+  bird_of_paradise: { r: 1.5, fill: "#3c8a48", edge: "#2f7340", label: "Bird-of-paradise" },
+  yucca: { r: 1.8, fill: "#6b9a4f", edge: "#3f6f3d", label: "Yucca" },
+  hedge: { r: 0.8, fill: "#2f6b3a", edge: "#234f2c", label: "Hedge" },
+  hibiscus_hedge: { r: 0.8, fill: "#357a3d", edge: "#e8508c", label: "Hibiscus hedge" },
+  bougainvillea: { r: 1.1, fill: "#c81f7a", edge: "#a8186a", label: "Bougainvillea" },
+  oleander: { r: 0.7, fill: "#7fae5c", edge: "#4f8a4a", label: "Oleander" },
+  parasol: { r: 1.5, fill: "#efe6d2", edge: "#b8a58c", label: "Parasol" },
+  sun_lounger: { r: 0.6, fill: "#6f6a64", edge: "#3b352c", label: "Sun lounger" },
+  pool_steps: { r: 1.0, fill: "#ffffff", edge: "#8fd6ea", label: "Pool steps" },
+  pool_ladder: { r: 0.4, fill: "#c9d1d6", edge: "#6f7a80", label: "Pool ladder" },
+  life_ring: { r: 0.4, fill: "#ffffff", edge: "#e8532b", label: "Life ring" },
+  pump_box: { r: 0.55, fill: "#ffffff", edge: "#8a8172", label: "Pump box" },
+};
+const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
 type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; taken?: string };
+type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[] };
 
 const svg = document.querySelector<SVGSVGElement>("#map")!;
+const $ = <T extends HTMLElement>(id: string) => document.querySelector<T>(id)!;
 
 function el<K extends keyof SVGElementTagNameMap>(tag: K, attrs: Record<string, string | number>): SVGElementTagNameMap[K] {
   const node = document.createElementNS(NS, tag);
@@ -20,40 +43,34 @@ function path(ring: Vec2[], holes: Vec2[][] = []): string {
   return [ring, ...holes].map((r) => "M" + r.map((p) => `${p[0]} ${p[1]}`).join("L") + "Z").join("");
 }
 
+function loadEdits(): Edits {
+  try {
+    const saved = JSON.parse(localStorage.getItem(EDITS_KEY) ?? "null") as Edits | null;
+    if (saved) return saved;
+  } catch {
+    // Unreadable or unavailable storage: start with no edits.
+  }
+  return { added: [], moved: {}, removed: [] };
+}
+
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
+  const rot = skeleton.viewRotation;
 
-  const world = el("g", { transform: `rotate(${skeleton.viewRotation})` });
+  const world = el("g", { transform: `rotate(${rot})` });
   svg.append(world);
 
+  // Ground: the classified cover, or the aerial photo it was read from.
   const image = (src: string, b: { minX: number; maxX: number; minZ: number; maxZ: number }) =>
     el("image", { href: asset(src), x: b.minX, y: b.minZ, width: b.maxX - b.minX, height: b.maxZ - b.minZ, preserveAspectRatio: "none" });
   const cover = image(skeleton.cover.image, skeleton.cover);
-  cover.style.imageRendering = "pixelated";
   const photo = image(ground.image, ground);
   photo.style.display = "none";
   world.append(cover, photo);
 
-  for (const b of skeleton.buildings) {
-    world.append(
-      el("path", {
-        d: path(b.ring, b.holes),
-        "fill-rule": "evenodd",
-        fill: FLOOR_FILL[Math.min(b.floors, FLOOR_FILL.length - 1)],
-        "fill-opacity": 0.92,
-        stroke: "#3b352c",
-        "stroke-width": 0.25,
-      }),
-    );
-  }
-  for (const p of skeleton.pools) {
-    world.append(el("path", { d: path(p.ring), fill: "#4fc3e8", stroke: "#0b5d86", "stroke-width": 0.4 }));
-  }
-
   // Streets: a pale band with its name along it.
   const streets = el("g", {});
-  const rot = skeleton.viewRotation;
   const label = (text: string, x: number, z: number, angle: number, fill: string) => {
     const t = el("text", {
       x,
@@ -67,43 +84,145 @@ async function boot(): Promise<void> {
       stroke: "#fffdf8",
       "stroke-width": 1.1,
       "paint-order": "stroke",
+      "pointer-events": "none",
     });
     t.textContent = text;
     return t;
   };
+  const names = el("g", {});
   for (const street of skeleton.streets) {
     if (street.points) {
       const d = "M" + street.points.map((p) => `${p[0]} ${p[1]}`).join("L");
-      streets.append(el("path", { d, fill: "none", stroke: "#fffdf8", "stroke-opacity": 0.75, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
-      streets.append(el("path", { d, fill: "none", stroke: TRUST.traced, "stroke-width": 0.35, "stroke-dasharray": "1.5 1.2" }));
+      streets.append(el("path", { d, fill: "none", stroke: "#fffdf8", "stroke-opacity": 0.55, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
       const mid = Math.floor((street.points.length - 1) / 2);
       const [a, b] = [street.points[mid], street.points[mid + 1]];
       // Read along the lane, never upside down.
       let angle = (Math.atan2(b[1] - a[1], b[0] - a[0]) * 180) / Math.PI + rot;
       if (angle > 90 || angle < -90) angle += 180;
-      streets.append(label(street.name.replace("Calle ", "C. "), (a[0] + b[0]) / 2, (a[1] + b[1]) / 2, angle, "#3b352c"));
+      names.append(label(street.name.replace("Calle ", "C. "), (a[0] + b[0]) / 2, (a[1] + b[1]) / 2, angle, "#3b352c"));
     } else if (street.registryPlots?.length) {
       const [x, z] = street.registryPlots[0];
-      streets.append(label(street.name.replace("Calle ", "C. ") + " ?", x, z, 0, TRUST.unplaced));
+      names.append(label(street.name.replace("Calle ", "C. ") + " ?", x, z, 0, "#b3261e"));
     }
   }
+  world.append(streets);
 
-  // Objects: garden walls and gates are generated, props are placed from photos.
-  const objects = el("g", {});
-  for (const [x, z] of skeleton.gardenWalls) objects.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: TRUST.guessed, "stroke-width": 0.12 }));
-  for (const [x, z] of skeleton.gardenGates) objects.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: TRUST.guessed, "stroke-width": 0.25 }));
-  for (const prop of skeleton.props) {
-    const plant = !/pool_|life_|pump_/.test(prop.kind);
-    const dot = el("circle", { cx: prop.x, cy: prop.z, r: plant ? 1.1 : 0.5, fill: plant ? "#2f7340" : "#c9d1d6", stroke: TRUST.photo, "stroke-width": 0.25 });
-    const title = el("title", {});
-    title.textContent = `${prop.kind.replace(/_/g, " ")} · placed from a photo`;
-    dot.append(title);
-    objects.append(dot);
+  // Buildings: drawn as white roofs, or coloured by height.
+  const roofs: { node: SVGPathElement; floors: number }[] = [];
+  for (const b of skeleton.buildings) {
+    const node = el("path", { d: path(b.ring, b.holes), "fill-rule": "evenodd", stroke: "#8a8172", "stroke-width": 0.25 });
+    roofs.push({ node, floors: b.floors });
+    world.append(node);
   }
+  const paintRoofs = (byHeight: boolean) => {
+    for (const { node, floors } of roofs) {
+      const yard = floors === 0;
+      node.setAttribute("fill", byHeight ? FLOOR_FILL[Math.min(floors, FLOOR_FILL.length - 1)] : yard ? "#d9a887" : "#f7f3ea");
+      node.setAttribute("fill-opacity", String(!byHeight && yard ? 0.55 : 0.95));
+    }
+  };
+  paintRoofs(false);
+
+  for (const p of skeleton.pools) {
+    world.append(el("path", { d: path(p.ring), fill: "#4fc3e8", stroke: "#f4eede", "stroke-width": 1, "stroke-linejoin": "round" }));
+  }
+
+  // Garden walls and gates are generated by rule, not surveyed.
+  const walls = el("g", {});
+  for (const [x, z] of skeleton.gardenWalls) walls.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: "#8a8172", "stroke-width": 0.1 }));
+  for (const [x, z] of skeleton.gardenGates) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
+  world.append(walls);
+
+  // Hand-placed objects, with any edits made on this device applied on top.
+  const edits = loadEdits();
+  const published = new Set(skeleton.props.map((o) => o.id));
+  edits.added = edits.added.filter((o) => !published.has(o.id));
+  const live = new Map<string, MapObject>();
+  for (const o of skeleton.props) if (!edits.removed.includes(o.id)) live.set(o.id, { ...o });
+  for (const o of edits.added) live.set(o.id, { ...o });
+  for (const [id, [x, z]] of Object.entries(edits.moved)) {
+    const o = live.get(id);
+    if (o) Object.assign(o, { x, z });
+  }
+
+  const objects = el("g", {});
+  world.append(objects);
+  const nodes = new Map<string, SVGGElement>();
+  let editing = false;
+  let selected: string | null = null;
+
+  const changeCount = () => edits.added.length + Object.keys(edits.moved).length + edits.removed.length;
+  const save = () => {
+    try {
+      localStorage.setItem(EDITS_KEY, JSON.stringify(edits));
+    } catch {
+      // Edits stay for this visit only.
+    }
+    $("#send").textContent = `Send ${changeCount()} change${changeCount() === 1 ? "" : "s"}`;
+    $<HTMLButtonElement>("#send").disabled = changeCount() === 0;
+    $<HTMLButtonElement>("#undo").disabled = changeCount() === 0;
+  };
+  const select = (id: string | null) => {
+    selected = id;
+    for (const [key, node] of nodes) node.querySelector(".ring")!.setAttribute("stroke-opacity", key === id ? "1" : "0");
+    $<HTMLButtonElement>("#delete").disabled = !id;
+    const o = id ? live.get(id) : null;
+    $("#picked").textContent = o ? `${(ICONS[o.kind] ?? UNKNOWN).label} · ${o.trust === "photo" ? "placed from a photo" : "placed on the map"}` : "Tap the map to add, or drag an object to move it";
+  };
+  const toWorld = (e: PointerEvent): Vec2 => {
+    const p = new DOMPoint(e.clientX, e.clientY).matrixTransform(world.getScreenCTM()!.inverse());
+    return [Math.round(p.x * 100) / 100, Math.round(p.y * 100) / 100];
+  };
+
+  const draw = (o: MapObject) => {
+    const icon = ICONS[o.kind] ?? UNKNOWN;
+    const g = el("g", { transform: `translate(${o.x} ${o.z})` });
+    if (o.kind === "palm" || o.kind === "yucca" || o.kind === "bird_of_paradise") {
+      // Fronds: a star of leaves.
+      for (let i = 0; i < 8; i++) g.append(el("ellipse", { rx: icon.r * 0.22, ry: icon.r * 0.55, cy: -icon.r * 0.5, transform: `rotate(${i * 45})`, fill: icon.fill, stroke: icon.edge, "stroke-width": 0.08 }));
+    } else if (o.kind === "sun_lounger") {
+      g.append(el("rect", { x: -0.3, y: -0.95, width: 0.6, height: 1.9, rx: 0.1, fill: icon.fill, stroke: icon.edge, "stroke-width": 0.08, transform: `rotate(${-rot})` }));
+    } else {
+      g.append(el("circle", { r: icon.r, fill: icon.fill, stroke: icon.edge, "stroke-width": Math.max(0.12, icon.r * 0.12) }));
+      if (icon.r > 2) g.append(el("circle", { r: icon.r * 0.45, cx: -icon.r * 0.2, cy: -icon.r * 0.2, fill: "#ffffff", "fill-opacity": 0.18 }));
+    }
+    g.append(el("circle", { class: "ring", r: icon.r + 0.6, fill: "none", stroke: "#1c6fd1", "stroke-width": 0.35, "stroke-opacity": 0 }));
+    const title = el("title", {});
+    title.textContent = icon.label;
+    g.append(title);
+
+    let dragging = false;
+    g.addEventListener("pointerdown", (e) => {
+      if (!editing) return;
+      e.stopPropagation();
+      g.setPointerCapture(e.pointerId);
+      dragging = true;
+      select(o.id);
+    });
+    g.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      [o.x, o.z] = toWorld(e);
+      g.setAttribute("transform", `translate(${o.x} ${o.z})`);
+    });
+    g.addEventListener("pointerup", (e) => {
+      if (!dragging) return;
+      e.stopPropagation();
+      dragging = false;
+      const added = edits.added.find((a) => a.id === o.id);
+      if (added) Object.assign(added, { x: o.x, z: o.z });
+      else edits.moved[o.id] = [o.x, o.z];
+      save();
+    });
+    nodes.set(o.id, g);
+    objects.append(g);
+  };
+  // Big canopies underneath, small things on top.
+  [...live.values()].sort((a, b) => (ICONS[b.kind] ?? UNKNOWN).r - (ICONS[a.kind] ?? UNKNOWN).r).forEach(draw);
+  world.append(names);
 
   // Photos: a pin where each was taken and a wedge showing where it looks.
   const photos = el("g", {});
-  const viewer = document.querySelector<HTMLDivElement>("#viewer")!;
+  const viewer = $<HTMLDivElement>("#viewer");
   viewer.addEventListener("click", () => (viewer.hidden = true));
   try {
     const response = await fetch(asset("/photos-ref/manifest.json"));
@@ -130,22 +249,18 @@ async function boot(): Promise<void> {
   } catch {
     // No photo index published: the map works without it.
   }
-  world.append(streets, objects, photos);
+  world.append(photos);
 
-  document.querySelector("#legend")!.innerHTML =
-    ["Yard / terrace", "1 floor", "2 floors", "3 floors", "4+ floors"]
-      .map((label, i) => `<div><i style="background:${FLOOR_FILL[i]}"></i>${label}</div>`)
-      .join("") +
-    `<div><i style="background:#4fc3e8"></i>Pool</div>` +
-    `<div style="margin-top:6px"><b>How sure</b></div>` +
-    `<div><i style="background:#fff;border-color:${TRUST.surveyed}"></i>Surveyed (registry)</div>` +
-    `<div><i style="background:#fff;border-color:${TRUST.photo}"></i>Placed from a photo</div>` +
-    `<div><i style="background:#fff;border-color:${TRUST.traced}"></i>Traced by hand</div>` +
-    `<div><i style="background:#fff;border-color:${TRUST.guessed}"></i>Generated by rule</div>` +
-    `<div><i style="background:#d6336c"></i>Photo</div>`;
+  $("#legend").innerHTML =
+    `<div><i style="background:#f7f3ea"></i>House</div><div><i style="background:#d9a887"></i>Yard or patio</div>` +
+    `<div><i style="background:#4fc3e8"></i>Pool</div><div><i style="background:#6ea854"></i>Lawn</div>` +
+    `<div><i style="background:#3a6e3e"></i>Planting (from the aerial)</div><div><i style="background:#b2a088"></i>Stone path</div>` +
+    `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
+    `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
+    `<div><i style="background:#d6336c;border-radius:50%"></i>Photo</div>`;
 
   // The turned bounding box of the area is the default view.
-  const a = (skeleton.viewRotation * Math.PI) / 180;
+  const a = (rot * Math.PI) / 180;
   const pts = skeleton.area.map(([x, z]) => [x * Math.cos(a) - z * Math.sin(a), x * Math.sin(a) + z * Math.cos(a)]);
   const home = {
     x: Math.min(...pts.map((p) => p[0])),
@@ -162,7 +277,7 @@ async function boot(): Promise<void> {
     const box = svg.getBoundingClientRect();
     const fx = (cx - box.left) / box.width;
     const fy = (cy - box.top) / box.height;
-    const w = Math.min(Math.max(view.w * factor, 20), home.w * 2);
+    const w = Math.min(Math.max(view.w * factor, 12), home.w * 2);
     const h = (w * view.h) / view.w;
     view.x += (view.w - w) * fx;
     view.y += (view.h - h) * fy;
@@ -171,14 +286,18 @@ async function boot(): Promise<void> {
     apply();
   };
 
+  // One finger pans, two pinch. A touch that barely moves is a tap.
   const touches = new Map<number, { x: number; y: number }>();
+  let travelled = 0;
   svg.addEventListener("pointerdown", (e) => {
     svg.setPointerCapture(e.pointerId);
     touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    travelled = touches.size === 1 ? 0 : Infinity;
   });
   svg.addEventListener("pointermove", (e) => {
     const prev = touches.get(e.pointerId);
     if (!prev) return;
+    travelled += Math.hypot(e.clientX - prev.x, e.clientY - prev.y);
     if (touches.size === 1) {
       const s = scale();
       view.x -= (e.clientX - prev.x) * s;
@@ -192,31 +311,93 @@ async function boot(): Promise<void> {
     }
     touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
   });
-  const release = (e: PointerEvent) => touches.delete(e.pointerId);
-  svg.addEventListener("pointerup", release);
-  svg.addEventListener("pointercancel", release);
+  svg.addEventListener("pointerup", (e) => {
+    if (!touches.delete(e.pointerId) || !editing || travelled > 8) return;
+    // A tap on open map adds the chosen kind of object there.
+    const [x, z] = toWorld(e);
+    const o: MapObject = { id: `u${Date.now().toString(36)}`, kind: $<HTMLSelectElement>("#kind").value, x, z, trust: "map" };
+    live.set(o.id, o);
+    edits.added.push(o);
+    draw(o);
+    select(o.id);
+    save();
+  });
+  svg.addEventListener("pointercancel", (e) => touches.delete(e.pointerId));
   svg.addEventListener("wheel", (e) => {
     e.preventDefault();
     zoomAt(e.clientX, e.clientY, e.deltaY > 0 ? 1.15 : 1 / 1.15);
   }, { passive: false });
 
-  const toggle = (id: string, node: SVGElement) => {
-    const button = document.querySelector<HTMLButtonElement>(id)!;
+  const toggle = (id: string, onChange: (on: boolean) => void) => {
+    const button = $<HTMLButtonElement>(id);
     button.addEventListener("click", () => {
       const on = button.getAttribute("aria-pressed") !== "true";
       button.setAttribute("aria-pressed", String(on));
-      node.style.display = on ? "" : "none";
+      onChange(on);
     });
   };
-  toggle("#photo", photo);
-  toggle("#cover", cover);
-  toggle("#streets", streets);
-  toggle("#objects", objects);
-  toggle("#photos", photos);
-  document.querySelector("#reset")!.addEventListener("click", () => {
+  const show = (node: SVGElement | HTMLElement) => (on: boolean) => (node.style.display = on ? "" : "none");
+  toggle("#photo", show(photo));
+  toggle("#streets", (on) => {
+    show(streets)(on);
+    show(names)(on);
+  });
+  toggle("#objects", (on) => {
+    show(objects)(on);
+    show(walls)(on);
+  });
+  toggle("#photos", show(photos));
+  toggle("#heights", paintRoofs);
+  toggle("#key", (on) => ($("#legend").hidden = !on));
+  toggle("#edit", (on) => {
+    editing = on;
+    $("#editbar").hidden = !on;
+    select(null);
+  });
+  $("#reset").addEventListener("click", () => {
     Object.assign(view, home);
     apply();
   });
+
+  // Editing.
+  const kind = $<HTMLSelectElement>("#kind");
+  for (const [value, icon] of Object.entries(ICONS)) kind.add(new Option(icon.label, value));
+  $("#delete").addEventListener("click", () => {
+    if (!selected) return;
+    const id = selected;
+    nodes.get(id)?.remove();
+    nodes.delete(id);
+    live.delete(id);
+    const wasAdded = edits.added.some((o) => o.id === id);
+    edits.added = edits.added.filter((o) => o.id !== id);
+    delete edits.moved[id];
+    if (!wasAdded) edits.removed.push(id);
+    select(null);
+    save();
+  });
+  $("#undo").addEventListener("click", () => {
+    if (!confirm("Discard every change you have made on this device?")) return;
+    try {
+      localStorage.removeItem(EDITS_KEY);
+    } catch {
+      // Nothing stored.
+    }
+    location.reload();
+  });
+  $("#send").addEventListener("click", async () => {
+    const text = "Villacana map changes:\n" + JSON.stringify(edits);
+    try {
+      if (navigator.share) await navigator.share({ text });
+      else {
+        await navigator.clipboard.writeText(text);
+        $("#picked").textContent = "Copied. Paste it into the chat with Claude.";
+      }
+    } catch {
+      prompt("Copy this and paste it into the chat with Claude:", text);
+    }
+  });
+  save();
+  select(null);
 }
 
 void boot();

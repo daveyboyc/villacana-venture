@@ -59,62 +59,6 @@ WALL_GATE_WIDTH = 1.6
 # Gaps between houses narrower than twice this are lanes, not courtyard.
 LANE_HALF_WIDTH = 3.75
 
-# Things that stand in a courtyard, placed by hand. Positions are read off the
-# aerial photo; Dave's ground photos say what each thing is. Offsets are metres
-# east and south of the pool outline's centre. These are positions and kinds
-# only: how each is drawn (a painted sprite, a simple shape) is up to the game.
-PROPS = {
-    "north": [
-        ("pool_steps", -2.6, -2.5),
-        ("pool_ladder", -0.95, 3.4),
-        ("pool_ladder", 2.7, 0.1),
-        ("pump_box", 4.0, 0.1),
-        ("life_ring", 0.6, -6.9),
-        ("life_ring", 6.0, 1.6),
-        # By the pool's west lobe, in a bite out of the deck.
-        ("bird_of_paradise", -8.6, 2.4),
-        ("bird_of_paradise", -8.1, 3.8),
-        # The slim tree on the lawn north-east of the pool, and the big one further east.
-        ("feathery_tree", 6.0, -7.0),
-        ("feathery_tree", 13.0, -3.0),
-        # In the patios behind the north wall.
-        ("feathery_tree", -12.0, -9.0),
-        ("pollarded_tree", -1.0, -13.0),
-        # South-east corner, beside the hedge.
-        ("yucca", 10.0, 8.0),
-        # The hibiscus hedge row along the south side, with a gap for the path.
-        *[("hibiscus_hedge", -7.0 + i * 1.2, 10.6 - i * 0.3) for i in range(14) if i not in (6, 7)],
-    ],
-    # Kinds are from Dave's ground photos. Sides of the courtyard are worked out
-    # from those photos (tall trees across Pintor Dalí are west, the sea is
-    # south); exact spots are a reading of the aerial and are rougher than the
-    # north pool's.
-    "middle": [
-        ("pool_steps", 3.0, -2.6),
-        ("pool_ladder", 3.4, -4.2),
-        ("pool_ladder", -5.6, 0.6),
-        ("life_ring", 7.2, -2.8),
-        ("life_ring", -7.2, 3.4),
-        # The big clump on the lawn at the pool's west end, beside a ladder.
-        ("bird_of_paradise", -8.2, -1.2),
-        ("bird_of_paradise", -9.0, 0.4),
-        ("bird_of_paradise", -7.8, 1.4),
-        # The tall palm to the north, by the wooden-balcony house.
-        ("palm", 6.0, -10.0),
-        # In front of the house with arched shutters, north-west.
-        ("pollarded_tree", -9.5, -9.5),
-        ("feathery_tree", -13.5, -5.5),
-        ("feathery_tree", -10.5, 6.5),
-        ("feathery_tree", 2.5, 12.0),
-        # A patio with an oleander bed, loungers and a parasol.
-        *[("oleander", -13.0 + i * 0.8, 3.0 + i * 0.45) for i in range(5)],
-        ("sun_lounger", -14.5, 5.6),
-        ("sun_lounger", -13.2, 6.3),
-        ("parasol", -6.5, -11.0),
-        ("parasol", 10.5, -6.0),
-    ],
-}
-
 COVER_COLOURS = {
     "paving": (201, 160, 122),
     "lawn": (110, 168, 84),
@@ -362,13 +306,14 @@ def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[
     return ring
 
 
-def build_props(pools: list[dict]) -> list[dict]:
-    props = []
-    for pool in pools:
-        cx, cz = pool["centre"]
-        for kind, east, south in PROPS.get(pool["id"], []):
-            props.append({"kind": kind, "x": round(cx + east, 2), "z": round(cz + south, 2), "pool": pool["id"]})
-    return props
+def build_props() -> list[dict]:
+    """Every hand-placed object: trees, plants, pool fittings, furniture.
+
+    They live in data/objects.json, one per line: an id, a kind, a position in
+    map metres, and how the position is known. The master map's edit mode and
+    scripts/apply_map_edits.py change that file; nothing is placed in code.
+    """
+    return json.loads((ROOT / "data" / "objects.json").read_text())
 
 
 def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
@@ -521,7 +466,7 @@ def main() -> None:
         "buildings": buildings,
         "pools": pools,
         "streets": build_streets(),
-        "props": build_props(pools),
+        "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),
         "gardenGates": cover.pop("gardenGates"),
         "cover": cover,

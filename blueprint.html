@@ -6,34 +6,47 @@
     <title>Villacana master map</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
-      html, body { margin: 0; height: 100%; background: #f3efe6; font-family: system-ui, sans-serif; overflow: hidden; }
+      html, body { margin: 0; height: 100%; background: #c9a07a; font-family: system-ui, sans-serif; overflow: hidden; }
       #map { width: 100vw; height: 100dvh; touch-action: none; display: block; }
-      #bar { position: fixed; left: 12px; right: 12px; bottom: 12px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-      #bar button, #bar a, #legend { background: #fffdf8; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; }
-      #bar button[aria-pressed="true"] { background: #222; color: #fff; }
-      #legend { position: fixed; top: 12px; left: 12px; border-radius: 12px; line-height: 1.6; }
-      #legend { font-size: 13px; max-width: 46vw; }
+      .bar { position: fixed; left: 0; right: 0; display: flex; gap: 8px; align-items: center; padding: 0 12px; overflow-x: auto; scrollbar-width: none; }
+      .bar::-webkit-scrollbar { display: none; }
+      #bar { bottom: 12px; }
+      #editbar { bottom: 62px; }
+      #editbar[hidden], #legend[hidden], #viewer[hidden] { display: none; }
+      .bar button, .bar a, .bar select, #legend, #picked { flex: none; background: #fffdf8; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; white-space: nowrap; }
+      .bar button[aria-pressed="true"] { background: #222; color: #fff; }
+      .bar button:disabled { opacity: 0.45; }
+      #send { background: #1c6fd1; color: #fff; border-color: #1c6fd1; }
+      #picked { position: fixed; top: 12px; left: 50%; transform: translateX(-50%); max-width: 92vw; overflow: hidden; text-overflow: ellipsis; }
+      #editbar[hidden] ~ #picked { display: none; }
+      #legend { position: fixed; top: 12px; left: 12px; border-radius: 12px; line-height: 1.6; font-size: 13px; white-space: normal; }
+      #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
       #viewer { position: fixed; inset: 0; background: #000d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; z-index: 5; }
-      #viewer[hidden] { display: none; }
       #viewer img { max-width: 96vw; max-height: 84dvh; border-radius: 8px; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
-      #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
     </style>
   </head>
   <body>
     <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
-    <div id="legend"></div>
+    <div id="legend" hidden></div>
     <div id="viewer" hidden><img alt="" /><p></p></div>
-    <div id="bar">
+    <div class="bar" id="editbar" hidden>
+      <select id="kind" aria-label="Kind of object to add"></select>
+      <button id="delete" disabled>Delete</button>
+      <button id="send" disabled>Send changes</button>
+      <button id="undo" disabled>Discard all</button>
+    </div>
+    <div id="picked"></div>
+    <div class="bar" id="bar">
+      <button id="edit" aria-pressed="false">Edit</button>
       <button id="photo" aria-pressed="false">Aerial photo</button>
-      <button id="cover" aria-pressed="true">Ground</button>
       <button id="streets" aria-pressed="true">Streets</button>
       <button id="objects" aria-pressed="true">Objects</button>
       <button id="photos" aria-pressed="true">Photos</button>
+      <button id="heights" aria-pressed="false">Heights</button>
+      <button id="key" aria-pressed="false">Key</button>
       <button id="reset">Whole block</button>
-      <a href="./slice.html?pool=north">Walk the north pool</a>
-      <a href="./slice.html?pool=middle">Walk the middle pool</a>
-      <a href="./slice.html?pool=north,middle">Walk both, joined</a>
+      <a href="./slice.html?pool=north,middle">Walk it</a>
     </div>
     <script type="module" src="/src/blueprint.ts"></script>
   </body>
