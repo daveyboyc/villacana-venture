@@ -27,6 +27,14 @@ if ref.get('connection'):
  assert inside(*route[-1],ref['mainParking']['ring']), 'Cervantes does not enter the main car park'
  picasso=next(r['points'] for r in s['streets'] if r['name']=='Calle Pintor Picasso')
  assert line_distance(route[-1],picasso)<0.05, 'Cervantes misses the car-park aisle'
+ if ref.get('carParks'):
+  parks={p['id']:p for p in ref['carParks']}
+  assert set(parks)=={'dali','picasso'}, 'Both car parks must be represented'
+  for park,endpoint in [(parks['dali'],route[0]),(parks['picasso'],route[-1])]:
+   assert inside(*endpoint,park['ring']), f"Cervantes misses {park['name']}"
+   assert math.dist(park['entrance'],endpoint)<0.05, f"Wrong entrance for {park['name']}"
+   assert any(a['kind']=='car_park' and a['name']==park['name'] and a['ring']==park['ring'] for a in s['areas']), f"{park['name']} is missing from mapped areas"
+  print('Both mapped car parks include their matching Cervantes entrances PASS')
  print('Cervantes endpoint connectivity: Dali centreline and main car-park/Picasso aisle PASS')
 manifest=json.loads((ROOT/'public/photos-ref/manifest.json').read_text())
 photos=[p for p in manifest if 2260<=int(p['file'][4:8])<=2270]

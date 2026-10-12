@@ -155,7 +155,7 @@ async function boot(): Promise<void> {
   }
   world.append(streets);
   for (const area of skeleton.areas) {
-    if (!area.name) continue;
+    if (!area.name || (area.kind === "car_park" && skeleton.boundaryReference?.carParks?.length)) continue;
     const cx = area.ring.reduce((sum, p) => sum + p[0], 0) / area.ring.length;
     const cz = area.ring.reduce((sum, p) => sum + p[1], 0) / area.ring.length;
     names.append(label(area.name, cx + 9, cz, 0, "#5d584f"));
@@ -168,7 +168,14 @@ async function boot(): Promise<void> {
   if (skeleton.boundaryReference) {
     const ref = skeleton.boundaryReference;
     const p = ref.walkAnchor;
-    names.append(label("Parking", p[0] + 7, p[1] - 3, 0, "#4b5351"));
+    if (ref.carParks?.length) {
+      for (const park of ref.carParks) {
+        const [x, z] = park.at;
+        names.append(label(park.name, park.id === "dali" ? x - 13 : x + 8, z - 7, park.id === "dali" ? 90 : 0, "#4b5351"));
+        const [ex, ez] = park.entrance;
+        names.append(el("circle", { cx: ex, cy: ez, r: 1.4, fill: "#1c6fd1", stroke: "#fff", "stroke-width": 0.4, "pointer-events": "none" }));
+      }
+    } else names.append(label("Parking", p[0] + 7, p[1] - 3, 0, "#4b5351"));
     const fence = ref.barriers[0];
     const mid = fence.points[Math.floor(fence.points.length / 2)];
     names.append(label("Fence · game limit", mid[0] - 8, mid[1], 90, "#743e36"));

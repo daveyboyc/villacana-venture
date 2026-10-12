@@ -102,6 +102,7 @@ export type Boundary = { id: string; name: string; points: Vec2[]; height: numbe
 export type BoundaryReference = {
   walkAnchor: Vec2;
   connection?: { name: string; from: Vec2; to: Vec2; destination: string; trust: string };
+  carParks?: { id: string; name: string; ring: Vec2[]; at: Vec2; entrance: Vec2; trust: string }[];
   mainParking?: { ring: Vec2[]; rows: { points: Vec2[]; nose: string }[]; rotation: number };
   roads: { name: string; width: number; points: Vec2[]; surface: string; trust: string }[];
   parking: { name: string; ring: Vec2[]; bayLine: Vec2[]; depth: number; spacing: number; trust: string };
