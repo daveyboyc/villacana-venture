@@ -6,9 +6,12 @@ import { addSprites, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
 
-/** The one area being built out first: the courtyard around this pool. */
-const POOL_ID = new URLSearchParams(location.search).get("pool") ?? "north";
-const RADIUS = 60;
+/** The pools whose courtyards this page shows, joined by the lanes between them. */
+const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
+/** How far the walkable area reaches from its centre. Grows to take in every pool asked for. */
+let RADIUS = 60;
+/** Centres of the pool courtyards on show. */
+let COURTS: { x: number; z: number }[] = [];
 /** How far out from the pool the hand-placed planting reaches. */
 const COURTYARD = 30;
 
@@ -24,10 +27,20 @@ void boot();
 
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
-  const pool = skeleton.pools.find((p) => p.id === POOL_ID) ?? skeleton.pools.find((p) => p.id === "north")!;
-  document.querySelector("#title")!.textContent = `${pool.id[0].toUpperCase()}${pool.id.slice(1)} pool`;
-  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === `?pool=${pool.id}`;
-  const centre = centroid(pool.ring);
+  const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id));
+  const shown = chosen.length ? chosen : [skeleton.pools.find((p) => p.id === "north")!];
+  // Start at the first pool named.
+  const pool = shown.find((p) => p.id === POOL_IDS[0]) ?? shown[0];
+  const names = shown.map((p) => p.id[0].toUpperCase() + p.id.slice(1));
+  document.querySelector("#title")!.textContent = names.length > 1 ? `${names.join(" and ")} pools` : `${names[0]} pool`;
+  const here = `?pool=${shown.map((p) => p.id).join(",")}`;
+  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
+  COURTS = shown.map((p) => centroid(p.ring));
+  const centre = {
+    x: COURTS.reduce((sum, c) => sum + c.x, 0) / COURTS.length,
+    z: COURTS.reduce((sum, c) => sum + c.z, 0) / COURTS.length,
+  };
+  RADIUS = 60 + Math.max(...COURTS.map((c) => Math.hypot(c.x - centre.x, c.z - centre.z)));
   const near = (ring: Vec2[]) => {
     const c = centroid(ring);
     return Math.hypot(c.x - centre.x, c.z - centre.z) < RADIUS + 25;
@@ -59,7 +72,7 @@ async function boot(): Promise<void> {
   sun.castShadow = true;
   sun.shadow.mapSize.set(2048, 2048);
   const reach = RADIUS + 30;
-  Object.assign(sun.shadow.camera, { left: -reach, right: reach, top: reach, bottom: -reach, near: 1, far: 260 });
+  Object.assign(sun.shadow.camera, { left: -reach, right: reach, top: reach, bottom: -reach, near: 1, far: 420 });
   sun.shadow.bias = -0.0004;
   scene.add(sun, sun.target);
 
@@ -79,7 +92,8 @@ async function boot(): Promise<void> {
   addGardenGates(scene, skeleton.gardenGates, walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings]);
-  const spawn = findSpawn(centre, pool.ring, buildings);
+  const start = centroid(pool.ring);
+  const spawn = findSpawn(start, pool.ring, buildings);
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
     solids,
@@ -91,7 +105,7 @@ async function boot(): Promise<void> {
   };
 
   bindInput();
-  let camYaw = Math.atan2(centre.x - spawn[0], -(centre.z - spawn[1]));
+  let camYaw = Math.atan2(start.x - spawn[0], -(start.z - spawn[1]));
   let pitch = 0.45;
   let distance = 6;
   let lookHold = 0;
@@ -151,7 +165,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
 
   // Redraw the part of the cover around this area larger and softened, so the
   // edges between grass, path and deck are soft lines instead of squares.
-  const span = RADIUS + 40;
+  const span = RADIUS + 25;
   const size = 2048;
   const paint = document.createElement("canvas");
   paint.width = paint.height = size;
@@ -275,9 +289,10 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   };
   // Inside the courtyard every tree is placed by hand from the photos, so the
   // scattered ones only fill in beyond it.
-  const outside = (p: SpritePlacement) => Math.hypot(p.x - centre.x, p.z - centre.z) > COURTYARD;
-  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter(outside));
-  addSprites(scene, "grass", scatter(0.42, "lawn", RADIUS).map((p) => ({ ...p, scale: 0.45 + hash(p.x, p.z) * 0.5 })));
+  const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
+  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD));
+  // Tufts only near the courtyards; the painted blades cover lawns further off.
+  addSprites(scene, "grass", scatter(0.42, "lawn", RADIUS).filter((p) => fromCourt(p) < 45).map((p) => ({ ...p, scale: 0.45 + hash(p.x, p.z) * 0.5 })));
 }
 
 function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {
