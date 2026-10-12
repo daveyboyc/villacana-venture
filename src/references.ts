@@ -88,7 +88,8 @@ export function referenceEditor(options: {
   const render=()=>{
     layer.replaceChildren();buttons=new Map();
     for(const p of all()) {
-      const b=document.createElement("button");b.className="reference-pin"+(points.some(q=>q.id===p.id)?" user-reference":"");b.textContent=(p.photo?"▣ ":"")+p.label;b.title=p.note || "Tap to label or add a reference";b.dataset.referenceId=p.id;
+      const b=document.createElement("button");b.className="reference-pin"+(points.some(q=>q.id===p.id)?" user-reference":"");const display=p.id.startsWith("street-") && !points.some(q=>q.id===p.id) && p.label.length>22 ? p.label.replace(/^Calle /,"C. ") : p.label;
+      b.textContent=(p.photo?"▣ ":"")+display;b.title=`${p.label} · ${p.note || "Tap to label or add a reference"}`;b.dataset.referenceId=p.id;
       b.addEventListener("click",()=>open(p));b.addEventListener("pointerdown",e=>e.stopPropagation());layer.append(b);buttons.set(p.id,b);
     }
   };
@@ -140,7 +141,7 @@ export function referenceEditor(options: {
     if(!enabled||hidden)return;
     // Give user annotations priority when labels would overlap.
     const occupied:{x:number;y:number;w:number;h:number}[]=[];
-    const priority=(p:ReferencePoint)=>points.some(q=>q.id===p.id)?10:p.id.startsWith("pool-")&&p.id!=="pool-toddler"?6:p.id.startsWith("park-")?5:/Cervantes|Pintor/.test(p.label)?4:p.id==="barraka"?3:p.label.endsWith("?")?0:1;
+    const priority=(p:ReferencePoint)=>points.some(q=>q.id===p.id)?10:p.id.startsWith("street-")&&/Cervantes/.test(p.label)?8:p.id.startsWith("pool-")&&p.id!=="pool-toddler"?6:p.id.startsWith("park-")?5:/Cervantes|Pintor/.test(p.label)?4:p.id==="barraka"?3:p.label.endsWith("?")?0:1;
     for(const p of all().sort((a,b)=>priority(b)-priority(a))) {
       const b=buttons.get(p.id)!;const pos=options.project(p.x,p.z);b.style.left=`${pos.x}px`;b.style.top=`${pos.y}px`;
       const w=b.offsetWidth||120,h=b.offsetHeight||28,box={x:pos.x-w/2,y:pos.y-h/2,w,h};
