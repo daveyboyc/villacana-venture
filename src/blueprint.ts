@@ -53,11 +53,28 @@ async function boot(): Promise<void> {
   world.append(cover, photo);
 
   // Traced open ground: the car park, its bays and planters.
-  const areaFill: Record<string, string> = { car_park: "#b9b4ab", planter: "#6ea854" };
+  const areaFill: Record<string, string> = { car_park: "#b9b4ab", planter: "#6ea854", sea: "#3b8fc4", beach: "#e6d3a8", beach_club: "#dcc592" };
   const traced = el("g", {});
   world.append(traced);
   for (const area of skeleton.areas) {
     traced.append(el("path", { d: path(area.ring), fill: areaFill[area.kind] ?? "#ccc", stroke: "#8a8172", "stroke-width": 0.2 }));
+  }
+  // Surf along the waterline, the pink paseo, and Barraka's thatched parasols.
+  const sea = skeleton.areas.find((area) => area.kind === "sea");
+  if (sea) {
+    const shore = sea.ring.slice(0, -2);
+    traced.append(el("path", { d: "M" + shore.map((p) => `${p[0]} ${p[1]}`).join("L"), fill: "none", stroke: "#f4fbff", "stroke-width": 2.2, "stroke-linejoin": "round" }));
+  }
+  traced.append(el("path", { d: "M" + skeleton.paseo.points.map((p) => `${p[0]} ${p[1]}`).join("L"), fill: "none", stroke: "#e3a08c", "stroke-width": skeleton.paseo.width, "stroke-linejoin": "round" }));
+  for (const club of skeleton.areas.filter((area) => area.kind === "beach_club")) {
+    const [a, b, , d] = club.ring;
+    for (let u = 0.06; u < 1; u += 0.11) {
+      for (let v = 0.12; v < 1; v += 0.25) {
+        const x = a[0] + (b[0] - a[0]) * u + (d[0] - a[0]) * v;
+        const z = a[1] + (b[1] - a[1]) * u + (d[1] - a[1]) * v;
+        traced.append(el("circle", { cx: x, cy: z, r: 1.5, fill: "#a8845a", stroke: "#7b6248", "stroke-width": 0.15 }));
+      }
+    }
   }
   for (const kerb of skeleton.kerbs) {
     traced.append(el("path", { d: "M" + kerb.map((p) => `${p[0]} ${p[1]}`).join("L"), fill: "none", stroke: "#e9e4da", "stroke-width": 0.6 }));
@@ -118,12 +135,12 @@ async function boot(): Promise<void> {
     }
   }
   world.append(streets);
-  for (const area of skeleton.areas) {
-    if (!area.name) continue;
-    const cx = area.ring.reduce((sum, p) => sum + p[0], 0) / area.ring.length;
-    const cz = area.ring.reduce((sum, p) => sum + p[1], 0) / area.ring.length;
-    names.append(label(area.name, cx + 9, cz, 0, "#5d584f"));
+  for (const place of skeleton.places) {
+    // A question mark means the position was placed by eye and is unconfirmed.
+    const sure = place.trust !== "approximate";
+    names.append(label(sure ? place.name : `${place.name} ?`, place.at[0], place.at[1], 0, sure ? "#5d584f" : "#b3261e"));
   }
+  for (const pool of skeleton.poolNames) names.append(label(pool.name, pool.at[0], pool.at[1] + 9, 0, "#0b5d86"));
 
   // Buildings: drawn as white roofs, or coloured by height.
   const roofs: { node: SVGPathElement; floors: number }[] = [];
@@ -296,7 +313,7 @@ async function boot(): Promise<void> {
 
   $("#legend").innerHTML =
     `<div><i style="background:#f7f3ea"></i>House</div><div><i style="background:#d9a887"></i>Yard or patio</div>` +
-    `<div><i style="background:#b9b4ab"></i>Car park</div><div><i style="background:#4fc3e8"></i>Pool</div><div><i style="background:#6ea854"></i>Lawn</div>` +
+    `<div><i style="background:#e3a08c"></i>Paseo</div><div><i style="background:#e6d3a8"></i>Beach</div><div><i style="background:#3b8fc4"></i>Sea</div><div><i style="background:#b9b4ab"></i>Car park</div><div><i style="background:#4fc3e8"></i>Pool</div><div><i style="background:#6ea854"></i>Lawn</div>` +
     `<div><i style="background:#3a6e3e"></i>Planting (from the aerial)</div><div><i style="background:#b2a088"></i>Stone path</div>` +
     `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
     `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
@@ -305,7 +322,7 @@ async function boot(): Promise<void> {
 
   // The turned bounding box of the area is the default view.
   const a = (rot * Math.PI) / 180;
-  const pts = skeleton.area.map(([x, z]) => [x * Math.cos(a) - z * Math.sin(a), x * Math.sin(a) + z * Math.cos(a)]);
+  const pts = [...skeleton.area, ...skeleton.areas.flatMap((area) => area.ring)].map(([x, z]) => [x * Math.cos(a) - z * Math.sin(a), x * Math.sin(a) + z * Math.cos(a)]);
   const home = {
     x: Math.min(...pts.map((p) => p[0])),
     y: Math.min(...pts.map((p) => p[1])),

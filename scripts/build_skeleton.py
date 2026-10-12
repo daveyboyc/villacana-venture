@@ -257,9 +257,18 @@ LANES = [
 
 # Open ground that is neither building, pool nor garden, traced by hand from the
 # aerial photo. Turned frame, metres, like LANES.
+# The seafront, traced from the aerial photo. The paseo is the pink promenade
+# between the gardens and the sand; the waterline is where the waves break.
+PASEO = [(-225, 160), (-200, 158), (-185, 153), (-165, 151), (-150, 147), (-130, 142), (-110, 135), (-100, 131), (-80, 120), (-60, 115), (-40, 108), (-30, 104), (-20, 102), (0, 98), (10, 94), (30, 87), (60, 76), (80, 68), (95, 62)]
+WATERLINE = [(-225, 233), (-190, 225), (-150, 222), (-120, 215), (-90, 210), (-60, 205), (-30, 198), (0, 193), (15, 190), (95, 176)]
+
 AREAS = [
+    ("sea", "", WATERLINE + [(95, 270), (-225, 270)]),
+    ("beach", "", PASEO + WATERLINE[::-1]),
+    # Barraka Beach's sunbeds and thatched parasols on the sand.
+    ("beach_club", "", [(-40, 120), (20, 120), (20, 149), (-40, 149)]),
     # The car park east of the houses. Calle Pintor Picasso is its western aisle.
-    ("car_park", "Car park", [(-73, -98), (-41.5, -98), (-41.5, -12), (-40, -5), (-40, 6), (-73, 6)]),
+    ("car_park", "", [(-73, -98), (-41.5, -98), (-41.5, -12), (-40, -5), (-40, 6), (-73, 6)]),
     # The round planter at its southern end.
     ("planter", "", [(-56 + 4.5 * math.cos(i * math.pi / 8), -13 + 4.5 * math.sin(i * math.pi / 8)) for i in range(16)]),
     # The formal garden south of the car park.
@@ -276,8 +285,23 @@ PARKING_ROWS = [
 KERBS = [[(-47.8, -98), (-47.8, -20)]]
 
 
+# Named places. Positions marked "approximate" were read off a map screenshot by
+# eye and need Dave to confirm them.
+PLACES = [
+    ("Car park", -57, -50, "traced"),
+    ("Beach", -90, 180, "traced"),
+    ("Sea", -90, 245, "traced"),
+    ("Paseo", -140, 151, "traced"),
+    ("Barraka Beach", -22, 111, "approximate"),
+    ("Bistro Enrique's", -72, 52, "approximate"),
+    ("90 Miles", -52, 46, "approximate"),
+]
+
+
 def build_areas() -> dict:
     return {
+        "paseo": {"width": 4.0, "points": rounded([unturned(p) for p in PASEO])},
+        "places": [{"name": name, "at": rounded([unturned((x, z))])[0], "trust": trust} for name, x, z, trust in PLACES],
         "areas": [{"kind": kind, "name": name, "ring": rounded([unturned(p) for p in ring]), "trust": "traced"} for kind, name, ring in AREAS],
         "parkingRows": [{"points": rounded([unturned(a), unturned(b)]), "nose": nose} for a, b, nose in PARKING_ROWS],
         "kerbs": [rounded([unturned(p) for p in line]) for line in KERBS],
@@ -497,6 +521,7 @@ def main() -> None:
         "pools": pools,
         "streets": build_streets(),
         **build_areas(),
+        "poolNames": [{"name": f"{p['id'].title()} pool", "at": p["centre"]} for p in pools if p["kind"] != "toddler"],
         "props": build_props(),
         "gardenWalls": cover.pop("gardenWalls"),
         "gardenGates": cover.pop("gardenGates"),
