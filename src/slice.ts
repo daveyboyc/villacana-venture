@@ -7,7 +7,7 @@ import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
 
 /** The one area being built out first: the courtyard around this pool. */
-const POOL_ID = "north";
+const POOL_ID = new URLSearchParams(location.search).get("pool") ?? "north";
 const RADIUS = 60;
 /** How far out from the pool the hand-placed planting reaches. */
 const COURTYARD = 30;
@@ -24,7 +24,9 @@ void boot();
 
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
-  const pool = skeleton.pools.find((p) => p.id === POOL_ID)!;
+  const pool = skeleton.pools.find((p) => p.id === POOL_ID) ?? skeleton.pools.find((p) => p.id === "north")!;
+  document.querySelector("#title")!.textContent = `${pool.id[0].toUpperCase()}${pool.id.slice(1)} pool`;
+  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === `?pool=${pool.id}`;
   const centre = centroid(pool.ring);
   const near = (ring: Vec2[]) => {
     const c = centroid(ring);

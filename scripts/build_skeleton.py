@@ -85,6 +85,25 @@ PROPS = {
         # The hibiscus hedge row along the south side, with a gap for the path.
         *[("hibiscus_hedge", -7.0 + i * 1.2, 10.6 - i * 0.3) for i in range(14) if i not in (6, 7)],
     ],
+    # Kinds are from Dave's ground photos; positions are a first reading of the
+    # aerial photo and are rougher than the north pool's.
+    "middle": [
+        ("pool_steps", -1.5, 3.2),
+        ("pool_ladder", 3.4, -4.2),
+        ("pool_ladder", -5.6, 0.6),
+        ("life_ring", 7.2, -2.8),
+        ("life_ring", -7.6, 2.2),
+        # The big clump in a bite out of the deck, beside a ladder.
+        ("bird_of_paradise", 7.6, -0.6),
+        ("bird_of_paradise", 8.4, 0.9),
+        ("bird_of_paradise", 7.0, 1.6),
+        # The tall palm by the wooden-balcony house.
+        ("palm", 11.5, -7.5),
+        ("pollarded_tree", -9.5, -9.5),
+        ("feathery_tree", -13.5, -5.5),
+        ("feathery_tree", -10.5, 4.5),
+        ("feathery_tree", 2.5, 12.0),
+    ],
 }
 
 COVER_COLOURS = {
