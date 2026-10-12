@@ -5,3 +5,8 @@ dist
 .venv
 patches
 __pycache__
+
+# Private credentials must never enter Git or the public site.
+.env
+.env.*
+!.env.example
