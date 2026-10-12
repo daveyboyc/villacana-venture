@@ -1,0 +1,166 @@
+{
+  "roads": [
+    {
+      "name": "Calle Pintor Dal\u00ed",
+      "width": 6,
+      "points": [
+        [
+          -240.41,
+          -5.97
+        ],
+        [
+          -195.08,
+          80.51
+        ],
+        [
+          -171.8,
+          124.91
+        ],
+        [
+          -154.21,
+          158.47
+        ],
+        [
+          -116.93,
+          229.59
+        ]
+      ],
+      "surface": "asphalt",
+      "trust": "OSM centreline, width approximate; surface and parking confirmed in IMG_2269/2270"
+    },
+    {
+      "name": "Calle Cervantes",
+      "width": 1.8,
+      "points": [
+        [
+          -187.67,
+          73.73
+        ],
+        [
+          -155.31,
+          57.95
+        ],
+        [
+          -142.05,
+          50.93
+        ],
+        [
+          -128.79,
+          43.9
+        ],
+        [
+          -117.11,
+          38.2
+        ]
+      ],
+      "surface": "terracotta",
+      "trust": "Named by Dave; approximate trace from aerial and IMG_2262\u20132265 junctions"
+    }
+  ],
+  "parking": {
+    "name": "Pintor Dal\u00ed parking",
+    "ring": [
+      [
+        -237.75,
+        -7.36
+      ],
+      [
+        -192.42,
+        79.12
+      ],
+      [
+        -169.14,
+        123.52
+      ],
+      [
+        -151.55,
+        157.08
+      ],
+      [
+        -114.27,
+        228.2
+      ],
+      [
+        -109.84,
+        225.88
+      ],
+      [
+        -147.12,
+        154.76
+      ],
+      [
+        -164.71,
+        121.2
+      ],
+      [
+        -187.99,
+        76.8
+      ],
+      [
+        -233.32,
+        -9.68
+      ]
+    ],
+    "bayLine": [
+      [
+        -237.58,
+        -7.46
+      ],
+      [
+        -192.25,
+        79.02
+      ],
+      [
+        -168.97,
+        123.42
+      ],
+      [
+        -151.38,
+        156.98
+      ],
+      [
+        -114.1,
+        228.1
+      ]
+    ],
+    "depth": 4.8,
+    "spacing": 2.5,
+    "trust": "IMG_2267\u20132270: house-side bays; alignment/spacing approximate"
+  },
+  "barriers": [
+    {
+      "id": "dali-west-fence",
+      "name": "Pintor Dal\u00ed fence boundary",
+      "points": [
+        [
+          -243.51,
+          -4.35
+        ],
+        [
+          -198.18,
+          82.14
+        ],
+        [
+          -174.9,
+          126.54
+        ],
+        [
+          -157.31,
+          160.09
+        ],
+        [
+          -120.03,
+          231.21
+        ]
+      ],
+      "height": 1.6,
+      "thickness": 0.2,
+      "solid": true,
+      "trust": "Hedge-backed chain-link fence in IMG_2269/2270; continuous extent approximate"
+    }
+  ],
+  "walkAnchor": [
+    -190.5,
+    81.0
+  ]
+}

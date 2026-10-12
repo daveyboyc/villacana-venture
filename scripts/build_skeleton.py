@@ -332,7 +332,10 @@ def build_streets() -> list[dict]:
         if name not in used:
             # Named in the registry but not yet matched to a lane on the ground.
             streets.append({"name": name, "registryPlots": rounded(pts), "trust": "unplaced"})
-    return streets
+    reference = json.loads((ROOT / "data" / "dali_cervantes.json").read_text())
+    roads = reference["roads"]
+    streets = [s for s in streets if s["name"] not in {r["name"] for r in roads}]
+    return streets + roads
 
 
 def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[float, float]]:
@@ -525,6 +528,7 @@ def main() -> None:
         "pools": pools,
         "streets": build_streets(),
         "seafront": build_seafront(buildings, VIEW_ROTATION),
+        "boundaryReference": json.loads((ROOT / "data" / "dali_cervantes.json").read_text()),
         **build_areas(),
         "poolNames": [{"name": f"{p['id'].title()} pool", "at": p["centre"]} for p in pools if p["kind"] != "toddler"],
         "props": build_props(),

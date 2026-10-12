@@ -4,7 +4,7 @@ import { createFrames, type Frame } from "./frames";
 import { clamp, dampAngle, nearestStreet, streetLabel } from "./geom";
 import { Minimap } from "./minimap";
 import { Player } from "./player";
-import type { InputState, MapData } from "./types";
+import type { InputState, MapData, Skeleton } from "./types";
 import { buildWorld } from "./world";
 
 const view = document.querySelector<HTMLCanvasElement>("#view")!;
@@ -53,14 +53,17 @@ async function boot(): Promise<void> {
     const response = await fetch(asset("/map/villacana.json"));
     if (!response.ok) throw new Error("The map file did not load.");
     const map = (await response.json()) as MapData;
-    start(map);
+    const skeletonResponse = await fetch(asset("/map/skeleton.json"));
+    if (!skeletonResponse.ok) throw new Error("The reference map did not load.");
+    const skeleton = (await skeletonResponse.json()) as Skeleton;
+    start(map, skeleton);
   } catch (error) {
     loadingText.textContent =
       error instanceof Error ? error.message : "The neighbourhood could not be opened.";
   }
 }
 
-function start(map: MapData): void {
+function start(map: MapData, skeleton: Skeleton): void {
   const renderer = new THREE.WebGLRenderer({ canvas: view, antialias: true, powerPreference: "high-performance" });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -75,7 +78,7 @@ function start(map: MapData): void {
   scene.background = new THREE.Color("#9fd0ea");
   const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.15, 2400);
 
-  const world = buildWorld(scene, map);
+  const world = buildWorld(scene, map, skeleton.boundaryReference);
   const player = new Player();
   scene.add(player.group);
   player.place(map.spawn.x, map.spawn.z, map.spawn.yaw);

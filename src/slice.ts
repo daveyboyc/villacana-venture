@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { asset } from "./asset";
-import { centroid, clamp, CoastField, dampAngle, pointInRing, Solids } from "./geom";
+import { centroid, clamp, closestOnSegment, CoastField, dampAngle, pointInRing, Solids } from "./geom";
 import { Player, type MoveWorld } from "./player";
 import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
@@ -8,6 +8,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import mainPoolLayout from "../data/main_pool.json";
+import { addBoundaryReference, barrierRings } from "./boundaries";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
@@ -35,10 +36,11 @@ async function boot(): Promise<void> {
   // Start at the first pool named.
   const pool = shown.find((p) => p.id === POOL_IDS[0]) ?? shown[0];
   const mainPool = shown.some((p) => p.id === "main");
+  const daliFocus = new URLSearchParams(location.search).get("view") === "dali";
   const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
   document.querySelector("#title")!.textContent = names.length > 1 ? `${names.join(" and ")} pools` : `${names[0]} pool`;
-  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : ""}`;
+  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : daliFocus ? "&view=dali" : ""}`;
   for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
   COURTS = shown.map((p) => centroid(p.ring));
   const centre = {
@@ -107,7 +109,9 @@ async function boot(): Promise<void> {
   addGardenWalls(scene, walls);
   addGardenGates(scene, skeleton.gardenGates, walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
-  const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings]);
+  if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
+  const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
+  const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings, ...fenceRings]);
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -118,6 +122,22 @@ async function boot(): Promise<void> {
     const beach = centroid(skeleton.seafront.restaurant.terrace);
     start.x = beach.x; start.z = beach.z;
     document.querySelector("#title")!.textContent = "Paseo · Barraka Beach";
+  }
+  if (daliFocus && skeleton.boundaryReference) {
+    const ref = skeleton.boundaryReference;
+    const anchor = { x: ref.walkAnchor[0], z: ref.walkAnchor[1] };
+    const road = ref.roads.find((r) => r.name === "Calle Pintor Dalí")!;
+    const nearest = road.points.map((p) => ({ p, d: Math.hypot(p[0] - anchor.x, p[1] - anchor.z) })).sort((a, b) => a.d - b.d)[0].p;
+    // Project onto the road rather than spawning in a parked bay or hedge.
+    let best = { x: nearest[0], z: nearest[1], d: Infinity };
+    for (let i = 0; i < road.points.length - 1; i++) {
+      const a = road.points[i], b = road.points[i + 1];
+      const hit = closestOnSegment(anchor.x, anchor.z, a[0], a[1], b[0], b[1]);
+      if (hit.d < best.d) best = hit;
+    }
+    spawn[0] = best.x; spawn[1] = best.z;
+    start.x = best.x + 5; start.z = best.z + 12;
+    document.querySelector("#title")!.textContent = "Pintor Dalí · Calle Cervantes";
   }
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
