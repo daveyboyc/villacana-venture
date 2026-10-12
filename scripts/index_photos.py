@@ -22,6 +22,13 @@ from pathlib import Path
 
 from PIL import Image, ImageOps
 
+try:  # iPhone originals are HEIC.
+    from pillow_heif import register_heif_opener
+
+    register_heif_opener()
+except ImportError:
+    pass
+
 ROOT = Path(__file__).resolve().parents[1]
 MANUAL = ROOT / "data" / "photo_positions.json"
 
