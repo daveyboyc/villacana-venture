@@ -1,0 +1,11 @@
+{
+  "evidence": "Five web photographs supplied by Dave, 2026-10-12",
+  "coordinates": "Turned map metres, sea downward; approximate ground layout from photos",
+  "lawn": [[-83, 89], [-39, 87], [-29, 119], [-33, 150], [-83, 150], [-91, 126]],
+  "paths": [
+    [[-84, 91], [-88, 109], [-78, 124], [-75, 150]],
+    [[-38, 88], [-32, 107], [-36, 124], [-48, 150]]
+  ],
+  "pathWidth": 1.8,
+  "terraceBuildingIds": ["6364501UF1366S_part3", "6364501UF1366S_part4", "6364501UF1366S_part6", "6364501UF1366S_part7"]
+}

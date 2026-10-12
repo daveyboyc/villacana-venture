@@ -23,5 +23,6 @@
  "pump_box": {"label": "Pump box", "means": "White box on a pool deck", "r": 0.55, "fill": "#ffffff", "edge": "#8a8172"},
  "passage": {"label": "Arched passage", "means": "Covered walkway through a terrace; mark its middle", "r": 1.2, "fill": "#d9a887", "edge": "#7a4a2a", "indoors": true},
  "gate": {"label": "Gate", "means": "Gateway or iron gate across a path", "r": 0.6, "fill": "#1d1b1a", "edge": "#ffffff"},
- "sign": {"label": "Sign", "means": "Street-name or house-number sign; put the wording in the note", "r": 0.3, "fill": "#1c3f8f", "edge": "#ffffff", "indoors": true}
+ "sign": {"label": "Sign", "means": "Street-name or house-number sign; put the wording in the note", "r": 0.3, "fill": "#1c3f8f", "edge": "#ffffff", "indoors": true},
+ "blue_sun_lounger": {"label": "Blue sun lounger", "means": "Blue reclining chair on the main-pool lawn", "r": 0.6, "fill": "#4096d2", "edge": "#3b352c"}
 }

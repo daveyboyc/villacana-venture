@@ -466,6 +466,23 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
             walls.append([round(x, 2), round(z, 2)])
         cls[(dist < DECK_WIDTH) & ~built] = 3
 
+    # Main-pool lawn and curving terracotta walks, placed approximately from
+    # Dave's web references. Keep registry buildings and their porch strips clear.
+    main_layout = json.loads((ROOT / "data" / "main_pool.json").read_text())
+    lawn_ring = rounded([unturned(tuple(p)) for p in main_layout["lawn"]])
+    cls[mask([lawn_ring]) & open_ground] = 1
+    path_image = Image.new("L", (width, height), 0)
+    path_draw = ImageDraw.Draw(path_image)
+    for line in main_layout["paths"]:
+        path_draw.line([cell(unturned(tuple(p))) for p in line], fill=255,
+                       width=round(main_layout["pathWidth"] / COVER_CELL), joint="curve")
+    cls[(np.asarray(path_image) > 0) & ~built] = 0
+
+    # The web references show a continuous cream apron joining the main and
+    # toddler pools, with terracotta paths beyond it. Registry outlines stay fixed.
+    main_deck = mask([p["ring"] for p in pools if p["kind"] in ("main", "toddler")], grow=3.0)
+    cls[main_deck & ~built] = 3
+
     names = list(COVER_COLOURS)
     out = np.zeros((height, width, 3), dtype=np.uint8)
     for k, name in enumerate(names):

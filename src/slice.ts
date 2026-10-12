@@ -5,6 +5,8 @@ import { Player, type MoveWorld } from "./player";
 import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
+import { addMainPoolTerraces, addSeafront } from "./main-pool";
+import mainPoolLayout from "../data/main_pool.json";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
@@ -27,20 +29,21 @@ void boot();
 
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
-  const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id));
+  const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
   const shown = chosen.length ? chosen : [skeleton.pools.find((p) => p.id === "north")!];
   // Start at the first pool named.
   const pool = shown.find((p) => p.id === POOL_IDS[0]) ?? shown[0];
-  const names = shown.map((p) => p.id[0].toUpperCase() + p.id.slice(1));
+  const mainPool = shown.some((p) => p.id === "main");
+  const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
   document.querySelector("#title")!.textContent = names.length > 1 ? `${names.join(" and ")} pools` : `${names[0]} pool`;
-  const here = `?pool=${shown.map((p) => p.id).join(",")}`;
+  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}`;
   for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
   COURTS = shown.map((p) => centroid(p.ring));
   const centre = {
     x: COURTS.reduce((sum, c) => sum + c.x, 0) / COURTS.length,
     z: COURTS.reduce((sum, c) => sum + c.z, 0) / COURTS.length,
   };
-  RADIUS = 60 + Math.max(...COURTS.map((c) => Math.hypot(c.x - centre.x, c.z - centre.z)));
+  RADIUS = (mainPool ? 95 : 60) + Math.max(...COURTS.map((c) => Math.hypot(c.x - centre.x, c.z - centre.z)));
   const near = (ring: Vec2[]) => {
     const c = centroid(ring);
     return Math.hypot(c.x - centre.x, c.z - centre.z) < RADIUS + 25;
@@ -80,9 +83,19 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre, poolRings);
   addBackdrop(scene, centre);
   addBuildings(scene, buildings, skeleton.floorHeight);
-  addShutters(scene, buildings, skeleton.floorHeight);
-  addPorches(scene, buildings, skeleton.floorHeight);
-  const pools = addPools(scene, poolRings);
+  const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
+  const houses = buildings.filter((b) => !terraceIds.has(b.id));
+  addShutters(scene, houses, skeleton.floorHeight);
+  addPorches(scene, houses, skeleton.floorHeight);
+  let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
+  if (mainPool) {
+    addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
+    const map = await (await fetch(asset("/map/villacana.json"))).json();
+    addSeafront(scene, map.coast);
+    coast = new CoastField(map.coast, map.landRef);
+  }
+  const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
+  const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf" } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef" } : {}));
   addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS));
 
   const player = new Player();
@@ -93,12 +106,11 @@ async function boot(): Promise<void> {
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings]);
   const start = centroid(pool.ring);
-  const spawn = findSpawn(start, pool.ring, buildings);
+  const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
     solids,
-    // The sea is outside this area; a far-off coast keeps the player on dry land.
-    coast: new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]),
+    coast,
     pools: poolRings,
     poolFloor: POOL_STAND,
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
@@ -128,8 +140,8 @@ async function boot(): Promise<void> {
     if (overview !== wasOverview) {
       // The overview button jumps between walking height and looking down on the whole area.
       wasOverview = overview;
-      distance = overview ? farthest : 6;
-      pitch = overview ? 1.25 : 0.45;
+      distance = overview ? (mainPool ? 85 : farthest) : 6;
+      pitch = overview ? (mainPool ? 0.95 : 1.25) : 0.45;
     }
     pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, 1.45);
     distance = clamp(distance * (1 + input.zoom * 0.08), 3.5, farthest);
@@ -152,12 +164,12 @@ async function boot(): Promise<void> {
   });
 }
 
-function findSpawn(centre: { x: number; z: number }, pool: Vec2[], buildings: SkeletonBuilding[]): Vec2 {
+function findSpawn(centre: { x: number; z: number }, pool: Vec2[], buildings: SkeletonBuilding[], pools: Vec2[][]): Vec2 {
   for (let r = 7; r < 30; r += 1.5) {
     for (let a = Math.PI; a < Math.PI * 3; a += Math.PI / 8) {
       const x = centre.x + Math.sin(a) * r;
       const z = centre.z + Math.cos(a) * r;
-      if (pointInRing(x, z, pool)) continue;
+      if (pointInRing(x, z, pool) || pools.some((ring) => pointInRing(x, z, ring))) continue;
       if (buildings.some((b) => nearRing(x, z, b.ring, 1.5))) continue;
       return [x, z];
     }
@@ -543,6 +555,7 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
   const dark = new THREE.MeshStandardMaterial({ color: "#1d1b1a", roughness: 0.6 });
   const canvas = new THREE.MeshStandardMaterial({ color: "#efe6d2", roughness: 0.9 });
   const mesh = new THREE.MeshStandardMaterial({ color: "#6f6a64", roughness: 0.8 });
+  const blueLounger = new THREE.MeshStandardMaterial({ color: "#4096d2", roughness: 0.8 });
   const sprites: Partial<Record<SpriteKind, SpritePlacement[]>> = {};
   const add = (mesh: THREE.Mesh, x: number, y: number, z: number) => {
     mesh.position.set(x, y, z);
@@ -577,9 +590,11 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
         add(new THREE.Mesh(new THREE.ConeGeometry(1.5, 0.5, 8), canvas), p.x, 2.45, p.z);
         break;
       }
+      case "blue_sun_lounger":
       case "sun_lounger": {
-        add(new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.06, 1.3), mesh), p.x, 0.32, p.z);
-        const back = add(new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.06, 0.75), mesh), p.x, 0.58, p.z - 0.9);
+        const fabric = p.kind === "blue_sun_lounger" ? blueLounger : mesh;
+        add(new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.06, 1.3), fabric), p.x, 0.32, p.z);
+        const back = add(new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.06, 0.75), fabric), p.x, 0.58, p.z - 0.9);
         back.rotation.x = 0.85;
         break;
       }

@@ -13,7 +13,7 @@ export type Pools = { update(time: number): void };
  * Build each pool as a real basin: tiled walls and floor below ground level,
  * a see-through surface, and a pattern of light that drifts over the tiles.
  */
-export function addPools(scene: THREE.Scene, rings: Vec2[][]): Pools {
+export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: string; tileColor?: string }[] = []): Pools {
   const light = lightPattern();
   const tiles = new THREE.MeshBasicMaterial({ map: light, color: "#bfeaf5" });
   const surface = new THREE.MeshStandardMaterial({
@@ -26,10 +26,15 @@ export function addPools(scene: THREE.Scene, rings: Vec2[][]): Pools {
   });
   const rim = new THREE.MeshStandardMaterial({ color: "#f4eede", roughness: 0.8 });
 
-  for (const ring of rings) {
+  for (const [index, ring] of rings.entries()) {
+    const style = styles[index];
+    const poolTiles = style?.tileColor ? tiles.clone() : tiles;
+    if (style?.tileColor) poolTiles.color.set(style.tileColor);
+    const poolSurface = style?.color ? surface.clone() : surface;
+    if (style?.color) poolSurface.color.set(style.color);
     const shape = new THREE.Shape(ring.map(([x, z]) => new THREE.Vector2(x, -z)));
 
-    const floor = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), tiles);
+    const floor = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), poolTiles);
     floor.position.y = -POOL_DEPTH;
     scene.add(floor);
 
@@ -48,11 +53,11 @@ export function addPools(scene: THREE.Scene, rings: Vec2[][]): Pools {
     const walls = new THREE.BufferGeometry();
     walls.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
     walls.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
-    const wallMaterial = tiles.clone();
+    const wallMaterial = poolTiles.clone();
     wallMaterial.side = THREE.DoubleSide;
     scene.add(new THREE.Mesh(walls, wallMaterial));
 
-    const top = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), surface);
+    const top = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), poolSurface);
     top.position.y = SURFACE;
     top.renderOrder = 2;
     scene.add(top);

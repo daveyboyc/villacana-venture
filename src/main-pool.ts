@@ -1,0 +1,70 @@
+import * as THREE from "three";
+import { pointInRing } from "./geom";
+import type { SkeletonBuilding, Vec2 } from "./types";
+
+/** Dress the surveyed restaurant footprints, without moving their walls. */
+export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuilding[], pool: { x: number; z: number }): void {
+  const white = new THREE.MeshStandardMaterial({ color: "#fffdf5", roughness: 0.85 });
+  const glass = new THREE.MeshStandardMaterial({ color: "#284b58", roughness: 0.2, metalness: 0.25 });
+  const blue = new THREE.MeshStandardMaterial({ color: "#254a92", roughness: 0.9, side: THREE.DoubleSide });
+  const dark = new THREE.MeshStandardMaterial({ color: "#333a36", roughness: 0.85 });
+  for (const building of buildings) {
+    const ring = building.ring;
+    for (let i = 0; i < ring.length; i++) {
+      const [ax, az] = ring[i];
+      const [bx, bz] = ring[(i + 1) % ring.length];
+      const length = Math.hypot(bx - ax, bz - az);
+      if (length < 4) continue;
+      let nx = (bz - az) / length, nz = -(bx - ax) / length;
+      const mx = (ax + bx) / 2, mz = (az + bz) / 2;
+      if (pointInRing(mx + nx * 0.2, mz + nz * 0.2, ring)) { nx = -nx; nz = -nz; }
+      const toward = Math.hypot(pool.x - mx, pool.z - mz);
+      if (((pool.x - mx) * nx + (pool.z - mz) * nz) / toward < 0.45) continue;
+      if (buildings.some((other) => other !== building && pointInRing(mx + nx * 0.4, mz + nz * 0.4, other.ring))) continue;
+      const face = new THREE.Group();
+      face.position.set(mx, 0, mz);
+      face.rotation.y = Math.atan2(nx, nz);
+      scene.add(face);
+      const box = (material: THREE.Material, x: number, y: number, z: number, w: number, h: number, d: number) => {
+        const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
+        mesh.position.set(x, y, z); mesh.castShadow = mesh.receiveShadow = true; face.add(mesh);
+      };
+      // Dark restaurant glazing with white mullions and a continuous balcony fascia.
+      box(glass, 0, 1.4, 0.035, length - 0.4, 2.0, 0.06);
+      for (let x = -length / 2 + 0.2; x < length / 2; x += 1.6) box(white, x, 1.4, 0.09, 0.08, 2.15, 0.1);
+      box(white, 0, 2.75, 0.32, length, 0.5, 0.7);
+      box(white, 0, 3.35, 0.35, length, 0.75, 0.16);
+      // Blue fabric awnings and simple cafe tables, as visible in the web references.
+      const canopy = new THREE.Mesh(new THREE.PlaneGeometry(length * 0.85, 1.7), blue);
+      canopy.rotation.x = -Math.PI / 2 + 0.12; canopy.position.set(0, 2.55, 1.0); canopy.castShadow = true; face.add(canopy);
+      for (let x = -length / 2 + 1.8; x < length / 2 - 1; x += 3.2) {
+        box(dark, x, 0.8, 1.5, 0.85, 0.06, 0.85);
+        box(dark, x, 0.4, 1.5, 0.07, 0.8, 0.07);
+        for (const offset of [-0.7, 0.7]) {
+          box(dark, x + offset, 0.45, 1.5, 0.45, 0.06, 0.45);
+          box(dark, x + offset, 0.72, 1.73, 0.45, 0.55, 0.05);
+        }
+      }
+    }
+  }
+}
+
+/** The sea follows the existing OSM coastline; the web photos set its colour. */
+export function addSeafront(scene: THREE.Scene, coast: Vec2[]): void {
+  const ring: Vec2[] = [...coast, [1500, 1500], [-1500, 1500]];
+  const shape = new THREE.Shape(ring.map(([x, z]) => new THREE.Vector2(x, -z)));
+  const sea = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: "#147ba8", roughness: 0.3, metalness: 0.15 }));
+  sea.position.y = 0.12; scene.add(sea);
+  const sand = new THREE.MeshStandardMaterial({ color: "#e1c99c", roughness: 1 });
+  const foam = new THREE.MeshBasicMaterial({ color: "#d7f1ec", transparent: true, opacity: 0.65 });
+  for (let i = 0; i < coast.length - 1; i++) {
+    const [ax, az] = coast[i], [bx, bz] = coast[i + 1];
+    const length = Math.hypot(bx - ax, bz - az);
+    const nx = (bz - az) / length, nz = -(bx - ax) / length;
+    const beach = new THREE.Mesh(new THREE.PlaneGeometry(length + 1, 10).rotateX(-Math.PI / 2), sand);
+    beach.rotation.y = -Math.atan2(bz - az, bx - ax);
+    beach.position.set((ax + bx) / 2 + nx * 5, 0.14, (az + bz) / 2 + nz * 5); scene.add(beach);
+    const edge = new THREE.Mesh(new THREE.PlaneGeometry(length + 1, 0.7).rotateX(-Math.PI / 2), foam);
+    edge.rotation.y = beach.rotation.y; edge.position.set((ax + bx) / 2, 0.16, (az + bz) / 2); scene.add(edge);
+  }
+}
