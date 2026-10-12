@@ -97,3 +97,14 @@ Drive. Rebuild with `scripts/index_photos.py` in the villacana-venture repo.
 Useful facts in them: IMG_2254 shows the sign "CALLE ELENA 18"; IMG_2187 and 2191 show
 house-number signs in the arched passages; lanes are terracotta tile throughout; arched
 covered passages run through the terraces; white tiled benches stand on the lawns.
+
+## Web photos (sent by Dave 2026-10-12)
+
+Found on the web by Dave. Reference only, not for publishing. Photo 03 has people in it.
+
+| File | Shows |
+| --- | --- |
+| web/south-pool-01 | South pool looking north: date palm behind the deck, two-storey terraces, hedged patios |
+| web/south-pool-02 | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge, single palm |
+| web/south-pool-03 | South lawn from the north-west: curved low white wall, bollard lights, loungers, pool in the distance |
+| web/easyjet-pool-probably-middle | A small pool with bird-of-paradise, palm and pollarded tree. Probably the middle pool; not confirmed. A wall sign at the right may read "CALLE DE ISABEL". |
