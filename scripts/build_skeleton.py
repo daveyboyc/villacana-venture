@@ -19,6 +19,7 @@ import gzip
 import json
 import math
 import re
+import unicodedata
 from pathlib import Path
 
 import numpy as np
@@ -200,30 +201,6 @@ def build_buildings() -> list[dict]:
         if len(part["rings"]) > 1:
             entry["holes"] = [rounded(r) for r in part["rings"][1:]]
         buildings.append(entry)
-    # Reference-layout corrections are explicit; retain the surveyed source ring.
-    correction = json.loads((ROOT / "data" / "cervantes_frontages.json").read_text())
-    threshold = correction["minTurnedZ"]
-    for entry in buildings:
-        if entry["id"] not in correction["buildingIds"]:
-            continue
-        original = entry["ring"]
-        ring = [turned(p) for p in original]
-        clipped = []
-        for a, b in zip(ring, ring[1:] + ring[:1]):
-            if a[1] >= threshold:
-                clipped.append(a)
-            if (a[1] >= threshold) != (b[1] >= threshold):
-                t = (threshold - a[1]) / (b[1] - a[1])
-                clipped.append((a[0] + t * (b[0] - a[0]), threshold))
-        if len(clipped) < 3:
-            # A narrow frontage-only part needs a setback rather than removal.
-            offset = threshold - min(p[1] for p in ring)
-            clipped = [(x, z + offset) for x, z in ring]
-        assert len(clipped) >= 3, f"Frontage correction removed {entry['id']}"
-        entry["registryRing"] = original
-        entry["ring"] = rounded([unturned(p) for p in clipped])
-        entry["layoutCorrection"] = correction["trust"]
-        entry["layoutEvidence"] = correction["evidence"]
     return buildings
 
 
@@ -259,30 +236,12 @@ def build_pools() -> list[dict]:
 
 STREET_TYPES = {"CL": "Calle", "AV": "Avenida", "PS": "Paseo", "PZ": "Plaza", "CM": "Camino"}
 
-# Lanes and roads, traced by hand along the gaps between the registry's
-# buildings. Coordinates are in the turned frame (block square, sea at the
-# bottom), in metres. Names are as Dave's map screenshots show them. Each is a
-# first tracing, good to a few metres, to be corrected on the master map.
-LANES = [
-    ("Calle Loira", 6.0, [(-215, -100), (-60, -100)]),
-    ("Calle Pintor Dalí", 6.0, [(-212, -100), (-212, 160)]),
-    # The access lane down the west side of the car park.
-    ("Calle Pintor Picasso", 4.0, [(-70.8, -100), (-70.8, 6)]),
-    ("Calle Elena", 2.2, [(-155, -70), (-155, -22)]),
-    ("Calle Alberto", 2.2, [(-122, -95), (-122, -18)]),
-    # Eva is in two parts, either side of the middle pool's courtyard.
-    ("Calle Eva", 2.2, [(-205, 37), (-172, 37)]),
-    ("Calle Eva", 2.2, [(-142, 23), (-82, 22)]),
-    ("Calle Patricia", 2.2, [(-205, 67), (-103, 67)]),
-    ("Calle Silvia", 2.2, [(-160, 68), (-160, 106)]),
-    ("Calle Jorge", 2.2, [(-205, 107), (-112, 107)]),
-    ("Calle Teodoro Rojo", 2.2, [(-115, 66), (-115, 112)]),
-    ("Calle Guillermo", 2.2, [(-80, 62), (-80, 112)]),
-]
+# Street geometry is kept in reviewable data files, checked against satellite,
+# standard maps and Dave's ground photos. Registry names provide corroboration.
 
 
 # Open ground that is neither building, pool nor garden, traced by hand from the
-# aerial photo. Turned frame, metres, like LANES.
+# aerial photo. Turned block frame, metres.
 AREAS = [
     # The car park east of the houses. Calle Pintor Picasso is its western aisle.
     ("car_park", "Car park", [(-73, -98), (-41.5, -98), (-41.5, -12), (-40, -5), (-40, 6), (-73, 6)]),
@@ -312,12 +271,15 @@ PLACES = [
 
 
 def build_areas() -> dict:
-    return {
+    layout = json.loads((ROOT / "data" / "street_layout.json").read_text())
+    result = {
         "places": [{"name": name, "at": rounded([unturned((x, z))])[0], "trust": trust} for name, x, z, trust in PLACES],
         "areas": [{"kind": kind, "name": name, "ring": rounded([unturned(p) for p in ring]), "trust": "traced"} for kind, name, ring in AREAS],
         "parkingRows": [{"points": rounded([unturned(a), unturned(b)]), "nose": nose} for a, b, nose in PARKING_ROWS],
         "kerbs": [rounded([unturned(p) for p in line]) for line in KERBS],
     }
+    next(a for a in result["areas"] if a["kind"] == "car_park")["ring"] = layout["mainParkingRing"]
+    return result
 
 
 def registry_street_plots() -> dict[str, list[tuple[float, float]]]:
@@ -342,25 +304,22 @@ def registry_street_plots() -> dict[str, list[tuple[float, float]]]:
 
 
 def build_streets() -> list[dict]:
-    plots = registry_street_plots()
-    streets = []
-    used = set()
-    for name, width, line in LANES:
-        entry = {"name": name, "width": width, "points": rounded([unturned(p) for p in line]), "trust": "traced"}
-        # The registry's plots for a street should lie close to its lane.
-        match = next((k for k in plots if k.split()[-1] in name.split()), None)
-        if match:
-            used.add(match)
-            entry["registryPlots"] = rounded(plots[match])
-        streets.append(entry)
-    for name, pts in sorted(plots.items()):
-        if name not in used:
-            # Named in the registry but not yet matched to a lane on the ground.
-            streets.append({"name": name, "registryPlots": rounded(pts), "trust": "unplaced"})
+    layout = json.loads((ROOT / "data" / "street_layout.json").read_text())
     reference = json.loads((ROOT / "data" / "dali_cervantes.json").read_text())
-    roads = reference["roads"]
-    streets = [s for s in streets if s["name"] not in {r["name"] for r in roads}]
-    return streets + roads
+    streets = layout["streets"] + reference["roads"]
+    plots = registry_street_plots()
+    normalize = lambda name: "".join(c for c in unicodedata.normalize("NFKD", name.casefold()) if not unicodedata.combining(c))
+    used = set()
+    for entry in streets:
+        aliases = {normalize(name) for name in [entry["name"], *entry.get("aliases", [])]}
+        matches = [name for name in plots if normalize(name) in aliases]
+        if matches:
+            entry["registryPlots"] = rounded([p for name in matches for p in plots[name]])
+            used.update(matches)
+    for name, points in sorted(plots.items()):
+        if name not in used:
+            streets.append({"name": name, "registryPlots": rounded(points), "trust": "unplaced"})
+    return streets
 
 
 def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[float, float]]:
@@ -540,6 +499,25 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
     main_deck = mask([p["ring"] for p in pools if p["kind"] in ("main", "toddler")], grow=3.0)
     cls[main_deck & ~built] = 3
 
+    streets = [r for r in build_streets() if r.get("points")]
+    def on_street(x: float, z: float) -> bool:
+        for road in streets:
+            for a, b in zip(road["points"], road["points"][1:]):
+                dx, dz = b[0] - a[0], b[1] - a[1]
+                t = max(0, min(1, ((x-a[0])*dx+(z-a[1])*dz)/(dx*dx+dz*dz)))
+                if math.hypot(x-a[0]-t*dx, z-a[1]-t*dz) < road["width"]/2+0.75:
+                    return True
+        return False
+    walls = [p for p in walls if not on_street(*p)]
+    gates = [p for p in gates if not on_street(*p)]
+    # The same referenced lanes are painted on the classified ground and in 3D.
+    street_image = Image.new("L", (width, height), 0)
+    draw = ImageDraw.Draw(street_image)
+    for road in streets:
+        if road["surface"] == "terracotta":
+            draw.line([cell(p) for p in road["points"]], fill=255, width=max(1, round(road["width"]/COVER_CELL)), joint="curve")
+    cls[(np.asarray(street_image)>0) & ~built] = 0
+
     names = list(COVER_COLOURS)
     out = np.zeros((height, width, 3), dtype=np.uint8)
     for k, name in enumerate(names):
@@ -563,6 +541,8 @@ def main() -> None:
     pools = build_pools()
     cover = build_cover(buildings, pools)
     reference = json.loads((ROOT / "data" / "dali_cervantes.json").read_text())
+    layout = json.loads((ROOT / "data" / "street_layout.json").read_text())
+    reference["roads"] += layout["streets"]
     mapped_areas = build_areas()
     reference["mainParking"] = {
         "ring": next(a["ring"] for a in mapped_areas["areas"] if a["kind"] == "car_park"),
@@ -575,7 +555,7 @@ def main() -> None:
          "trust": "IMG_2267–2270 and mapped road; includes aisle and house-side bays, width approximate"},
         {"id": "picasso", "name": "Picasso car park", "ring": reference["mainParking"]["ring"],
          "at": rounded([unturned((-55, -47))])[0], "entrance": reference["connection"]["to"],
-         "trust": "Existing mapped car-park outline, checked against aerial"},
+         "trust": "Google satellite/standard-map checked inner aisle and west frontage; parking dimensions approximate"},
     ]
     for mapped_area in mapped_areas["areas"]:
         if mapped_area["kind"] == "car_park":
@@ -590,6 +570,7 @@ def main() -> None:
         "buildings": buildings,
         "pools": pools,
         "streets": build_streets(),
+        "streetReference": {k: layout[k] for k in ["checkedAt", "sources", "imageryCaptureDate", "precision", "referenceLinks"]},
         "seafront": build_seafront(buildings, VIEW_ROTATION),
         "boundaryReference": reference,
         **mapped_areas,
@@ -605,6 +586,7 @@ def main() -> None:
             "buildings": "Dirección General del Catastro, INSPIRE building parts, 2026-10-11",
             "pools": "Dirección General del Catastro, INSPIRE other constructions, 2026-10-11",
             "cover": "Classified from Esri World Imagery, zoom 19",
+            "streets": "Google satellite/standard map and walking-route cross-check, 2026-10-12; Dave’s ground photos; approximate",
         },
     }
     (MAP / "skeleton.json").write_text(json.dumps(skeleton, separators=(",", ":")))

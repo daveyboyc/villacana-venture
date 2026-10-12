@@ -108,12 +108,13 @@ export type BoundaryReference = {
   connection?: { name: string; from: Vec2; to: Vec2; destination: string; trust: string };
   carParks?: { id: string; name: string; ring: Vec2[]; at: Vec2; entrance: Vec2; trust: string }[];
   mainParking?: { ring: Vec2[]; rows: { points: Vec2[]; nose: string }[]; rotation: number };
-  roads: { name: string; width: number; points: Vec2[]; surface: string; trust: string; heights?: number[] }[];
+  roads: { id?: string; referenceId?: string; name: string; width: number; points: Vec2[]; surface: string; trust: string; heights?: number[] }[];
   parking: { name: string; ring: Vec2[]; bayLine: Vec2[]; depth: number; spacing: number; trust: string };
   barriers: Boundary[];
 };
 
 export type Skeleton = {
+  streetReference?: { checkedAt: string; imageryCaptureDate: string | null; sources: string[]; precision: string; referenceLinks: { satellite: string; roadmap: string } };
   boundaryReference?: BoundaryReference;
   seafront?: Seafront;
   /** The low wall and fence between the south lawn and the paseo. Unbroken: the player cannot pass. */
@@ -126,7 +127,7 @@ export type Skeleton = {
   buildings: SkeletonBuilding[];
   pools: SkeletonPool[];
   /** Lanes and roads. Those the registry names but nobody has placed have no points. */
-  streets: { name: string; width?: number; points?: Vec2[]; registryPlots?: Vec2[]; trust: string }[];
+  streets: { id?: string; referenceId?: string; name: string; surface?: string; width?: number; points?: Vec2[]; registryPlots?: Vec2[]; trust: string }[];
   /** Traced open ground such as the car park. */
   areas: { kind: string; name: string; ring: Vec2[]; trust: string }[];
   /** Rows of parking bays; `nose` is the compass side the cars point to, in the turned view. */

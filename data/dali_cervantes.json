@@ -1,96 +1,100 @@
 {
   "roads": [
     {
-      "name": "Calle Pintor Dal\u00ed",
+      "id": "dali",
+      "name": "Calle Pintor Dalí",
       "width": 6,
       "points": [
         [
-          -240.41,
-          -5.97
+          -234.59,
+          -3.34
         ],
         [
-          -195.08,
-          80.51
+          -231.0,
+          6.68
         ],
         [
-          -171.8,
-          124.91
+          -137.88,
+          193.7
         ],
         [
-          -154.21,
-          158.47
-        ],
-        [
-          -116.93,
-          229.59
+          -117.29,
+          232.65
         ]
       ],
       "surface": "asphalt",
-      "trust": "OSM centreline, width approximate; surface and parking confirmed in IMG_2269/2270"
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Pintor Dalí"
     },
     {
-      "name": "Calle Cervantes",
-      "width": 1.8,
+      "id": "cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "width": 1.2,
       "points": [
         [
-          -196.4,
-          77.99
+          -193.67,
+          81.65
         ],
         [
-          -187.67,
-          73.73
+          -186.03,
+          77.1
         ],
         [
-          -163.4,
-          61.9
+          -162.75,
+          63.22
         ],
         [
-          -158.91,
-          59.7
+          -158.44,
+          60.66
         ],
         [
-          -155.31,
-          57.95
+          -154.99,
+          58.6
         ],
         [
-          -152.62,
-          56.64
+          -152.41,
+          57.06
         ],
         [
-          -141.83,
-          51.37
+          -142.06,
+          50.89
         ],
         [
-          -128.35,
-          44.8
+          -129.14,
+          43.19
         ],
         [
-          -116.67,
-          39.1
+          -117.93,
+          36.51
         ],
         [
-          -115.32,
-          38.44
+          -116.64,
+          35.74
         ],
         [
-          -100.49,
-          31.21
+          -102.41,
+          27.26
         ],
         [
-          -87.9,
-          25.07
+          -90.34,
+          20.07
         ],
         [
-          -72.62,
-          17.62
+          -75.69,
+          11.33
         ],
         [
-          -70.65,
-          16.66
+          -76.44,
+          11.79
         ]
       ],
       "surface": "terracotta",
-      "trust": "Straight Dali\u2013Picasso pedestrian axis confirmed by Dave\u2019s Apple Maps screenshot, 12 October 2026; georeferenced alignment and frontage setbacks approximate",
+      "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
+      "referenceId": "street-Calle Cervantes",
+      "aliases": [
+        "Calle Cervantes",
+        "Calle Miguel"
+      ],
       "heights": [
         0.27,
         0.27,
@@ -110,141 +114,141 @@
     }
   ],
   "parking": {
-    "name": "Dal\u00ed car park",
+    "name": "Dalí car park",
     "ring": [
       [
-        -237.75,
-        -7.36
+        -233.58,
+        -9.39
       ],
       [
-        -192.42,
-        79.12
+        -191.74,
+        78.79
       ],
       [
-        -169.14,
-        123.52
+        -169.41,
+        123.65
       ],
       [
-        -151.55,
-        157.08
+        -152.52,
+        157.56
       ],
       [
-        -114.27,
-        228.2
+        -115.85,
+        228.97
       ],
       [
-        -109.84,
-        225.88
+        -111.42,
+        226.65
       ],
       [
-        -147.12,
-        154.76
+        -148.09,
+        155.23
       ],
       [
-        -164.71,
-        121.2
+        -164.97,
+        121.33
       ],
       [
-        -187.99,
-        76.8
+        -187.31,
+        76.47
       ],
       [
-        -233.32,
-        -9.68
+        -229.13,
+        -11.72
       ]
     ],
     "bayLine": [
       [
-        -237.58,
-        -7.46
+        -233.41,
+        -9.49
       ],
       [
-        -192.25,
-        79.02
+        -191.57,
+        78.69
       ],
       [
-        -168.97,
-        123.42
+        -169.24,
+        123.55
       ],
       [
-        -151.38,
-        156.98
+        -152.35,
+        157.46
       ],
       [
-        -114.1,
-        228.1
+        -115.68,
+        228.87
       ]
     ],
     "depth": 4.8,
     "spacing": 2.5,
-    "trust": "IMG_2267\u20132270: house-side bays; alignment/spacing approximate",
+    "trust": "IMG_2267–2270: house-side bays; alignment/spacing approximate; offsets re-aligned to Google-checked Dalí centreline",
     "accessRing": [
       [
-        -243.07,
-        -4.58
+        -238.92,
+        -6.6
       ],
       [
-        -197.74,
-        81.9
+        -197.07,
+        81.57
       ],
       [
-        -174.46,
-        126.3
+        -174.73,
+        126.43
       ],
       [
-        -156.87,
-        159.86
+        -157.85,
+        160.34
       ],
       [
-        -119.59,
-        230.98
+        -121.16,
+        231.75
       ],
       [
-        -109.84,
-        225.88
+        -111.42,
+        226.65
       ],
       [
-        -147.12,
-        154.76
+        -148.09,
+        155.23
       ],
       [
-        -164.71,
-        121.2
+        -164.97,
+        121.33
       ],
       [
-        -187.99,
-        76.8
+        -187.31,
+        76.47
       ],
       [
-        -233.32,
-        -9.68
+        -229.13,
+        -11.72
       ]
     ]
   },
   "barriers": [
     {
       "id": "dali-west-fence",
-      "name": "Pintor Dal\u00ed fence boundary",
+      "name": "Pintor Dalí fence boundary",
       "points": [
         [
-          -243.51,
-          -4.35
+          -239.36,
+          -6.37
         ],
         [
-          -198.18,
-          82.14
+          -197.51,
+          81.81
         ],
         [
-          -174.9,
-          126.54
+          -175.17,
+          126.67
         ],
         [
-          -157.31,
-          160.09
+          -158.29,
+          160.57
         ],
         [
-          -120.03,
-          231.21
+          -121.6,
+          231.98
         ]
       ],
       "height": 1.6,
@@ -258,17 +262,17 @@
     81.0
   ],
   "connection": {
-    "name": "Cervantes between Dal\u00ed and Picasso car parks",
+    "name": "Calle Miguel de Cervantes → Picasso car park",
     "from": [
-      -196.4,
-      77.99
+      -193.67,
+      81.65
     ],
     "to": [
-      -70.65,
-      16.66
+      -76.44,
+      11.79
     ],
     "destination": "Calle Pintor Picasso / main car park",
-    "trust": "Straight pedestrian connection confirmed by Dave\u2019s Apple Maps screenshot; mapped location approximate",
+    "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
     "destinations": [
       "dali",
       "picasso"
@@ -280,19 +284,19 @@
       "name": "Cervantes / Elena ramp",
       "points": [
         [
-          -158.91,
-          59.7
+          -158.44,
+          60.66
         ],
         [
-          -152.62,
-          56.64
+          -152.41,
+          57.06
         ]
       ],
       "heights": [
         0.67,
         0.27
       ],
-      "width": 1.8,
+      "width": 1.2,
       "evidence": [
         "photo:IMG_2262.jpg",
         "photo:IMG_2265.jpg"

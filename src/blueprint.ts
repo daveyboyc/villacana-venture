@@ -436,6 +436,8 @@ async function boot(): Promise<void> {
     w: Math.max(...pts.map((p) => p[0])) - Math.min(...pts.map((p) => p[0])),
     h: Math.max(...pts.map((p) => p[1])) - Math.min(...pts.map((p) => p[1])),
   };
+  // Leave room for the controls and names at the northern/southern edges.
+  const padding=home.h*0.15;home.x-=padding;home.y-=padding;home.w+=padding*2;home.h+=padding*2;
   const view = { ...home };
   let rotation=rot;
   const apply = () => {

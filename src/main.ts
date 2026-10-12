@@ -78,6 +78,7 @@ function start(map: MapData, skeleton: Skeleton): void {
   scene.background = new THREE.Color("#9fd0ea");
   const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.15, 2400);
 
+  const referenceStreets = (skeleton.boundaryReference?.roads ?? []).map((road) => ({ ...road, kind: road.surface === "asphalt" ? "residential" : "footway" }));
   const world = buildWorld(scene, map, skeleton.boundaryReference);
   const player = new Player();
   scene.add(player.group);
@@ -197,7 +198,9 @@ function start(map: MapData, skeleton: Skeleton): void {
       seaGain.gain.value = closeness * 0.045;
     }
 
-    const street = nearestStreet(player.x, player.z, map.roads);
+    const checkedStreet = nearestStreet(player.x, player.z, referenceStreets);
+    const street = checkedStreet && checkedStreet.distance <= checkedStreet.width / 2 + 2
+      ? checkedStreet : nearestStreet(player.x, player.z, map.roads);
     streetEl.textContent = streetLabel(street);
     updatePrompt(player.x, player.z);
     minimap.draw(

@@ -53,7 +53,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   };
   for(const road of reference.roads) {
     if (!road.heights) {
-      flat(ribbon(road.points,road.width+0.35),"#f4f0e5",0.25);
+      flat(ribbon(road.points,road.width+(road.surface==="terracotta"?0.12:0.35)),"#f4f0e5",0.25);
       flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?tiles:undefined);
       continue;
     }
@@ -76,7 +76,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
       mesh.receiveShadow = true; scene.add(mesh);
       return ring;
     };
-    const edge = strip(road.width+0.35,"#f4f0e5",-0.015);
+    const edge = strip(road.width+(road.surface==="terracotta"?0.12:0.35),"#f4f0e5",-0.015);
     strip(road.width,"#ffffff",0,tiles);
     // White retaining faces under the raised tiled approach, down to the ground.
     const wallPositions: number[] = [];
