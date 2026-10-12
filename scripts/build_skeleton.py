@@ -259,6 +259,69 @@ def build_pools() -> list[dict]:
     return pools
 
 
+STREET_TYPES = {"CL": "Calle", "AV": "Avenida", "PS": "Paseo", "PZ": "Plaza", "CM": "Camino"}
+
+# Lanes and roads, traced by hand along the gaps between the registry's
+# buildings. Coordinates are in the turned frame (block square, sea at the
+# bottom), in metres. Names are as Dave's map screenshots show them. Each is a
+# first tracing, good to a few metres, to be corrected on the master map.
+LANES = [
+    ("Calle Loira", 6.0, [(-215, -100), (-60, -100)]),
+    ("Calle Pintor Dalí", 6.0, [(-212, -100), (-212, 160)]),
+    ("Calle Pintor Picasso", 6.0, [(-70, -100), (-70, 15)]),
+    ("Calle Elena", 2.2, [(-155, -70), (-155, -22)]),
+    ("Calle Alberto", 2.2, [(-122, -95), (-122, -18)]),
+    # Eva is in two parts, either side of the middle pool's courtyard.
+    ("Calle Eva", 2.2, [(-205, 37), (-172, 37)]),
+    ("Calle Eva", 2.2, [(-142, 23), (-82, 22)]),
+    ("Calle Patricia", 2.2, [(-205, 67), (-103, 67)]),
+    ("Calle Silvia", 2.2, [(-160, 68), (-160, 106)]),
+    ("Calle Jorge", 2.2, [(-205, 107), (-112, 107)]),
+    ("Calle Teodoro Rojo", 2.2, [(-115, 66), (-115, 112)]),
+    ("Calle Guillermo", 2.2, [(-80, 62), (-80, 112)]),
+]
+
+
+def registry_street_plots() -> dict[str, list[tuple[float, float]]]:
+    """Where the registry puts each street's plots. It has no lane shapes."""
+    text = gzip.open(CATASTRO / "address.gml.gz", "rt", encoding="utf-8", errors="replace").read()
+    names = {}
+    for ident, block in re.findall(r'<ad:ThoroughfareName gml:id="([^"]+)">(.*?)</ad:ThoroughfareName>', text, re.S):
+        raw = re.search(r"<gn:text>([^<]+)", block).group(1).strip()
+        kind, _, rest = raw.partition(" ")
+        if kind in STREET_TYPES:
+            names[ident] = f"{STREET_TYPES[kind]} {rest.title()}"
+    plots: dict[str, list[tuple[float, float]]] = {}
+    for block in re.findall(r"<ad:Address gml:id.*?</ad:Address>", text, re.S):
+        pos = re.search(r"<gml:pos>([\d.]+) ([\d.]+)", block)
+        street = next((names[i] for i in re.findall(r'xlink:href="#([^"]+)"', block) if i in names), None)
+        if not pos or not street:
+            continue
+        p = project(*utm_to_latlon(float(pos.group(1)), float(pos.group(2))))
+        if inside(AREA, p):
+            plots.setdefault(street, []).append(p)
+    return plots
+
+
+def build_streets() -> list[dict]:
+    plots = registry_street_plots()
+    streets = []
+    used = set()
+    for name, width, line in LANES:
+        entry = {"name": name, "width": width, "points": rounded([unturned(p) for p in line]), "trust": "traced"}
+        # The registry's plots for a street should lie close to its lane.
+        match = next((k for k in plots if k.split()[-1] in name.split()), None)
+        if match:
+            used.add(match)
+            entry["registryPlots"] = rounded(plots[match])
+        streets.append(entry)
+    for name, pts in sorted(plots.items()):
+        if name not in used:
+            # Named in the registry but not yet matched to a lane on the ground.
+            streets.append({"name": name, "registryPlots": rounded(pts), "trust": "unplaced"})
+    return streets
+
+
 def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[float, float]]:
     """Round a ring's corners by cutting each one off; the outline keeps its shape."""
     for _ in range(passes):
@@ -429,6 +492,7 @@ def main() -> None:
         "area": rounded([unturned(c) for c in ((AREA[0], AREA[1]), (AREA[2], AREA[1]), (AREA[2], AREA[3]), (AREA[0], AREA[3]))]),
         "buildings": buildings,
         "pools": pools,
+        "streets": build_streets(),
         "props": build_props(pools),
         "gardenWalls": cover.pop("gardenWalls"),
         "gardenGates": cover.pop("gardenGates"),

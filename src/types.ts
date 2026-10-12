@@ -96,6 +96,8 @@ export type Skeleton = {
   area: Vec2[];
   buildings: SkeletonBuilding[];
   pools: SkeletonPool[];
+  /** Lanes and roads. Those the registry names but nobody has placed have no points. */
+  streets: { name: string; width?: number; points?: Vec2[]; registryPlots?: Vec2[]; trust: string }[];
   /** Things placed by hand: a kind and a position, drawn however the game chooses. */
   props: { kind: string; x: number; z: number; pool: string }[];
   /** Centres of low garden-wall blocks, about half a metre apart. */

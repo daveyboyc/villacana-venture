@@ -1,0 +1,32 @@
+{
+ "03-north-pool-down-over-roof-tiles-hedges.jpg": {
+  "x": -178.7,
+  "z": 33.1,
+  "heading": 320,
+  "trust": "placed by eye"
+ },
+ "04-north-pool-roof-tiles-yucca-patio.jpg": {
+  "x": -172.7,
+  "z": 33.1,
+  "heading": 30,
+  "trust": "placed by eye"
+ },
+ "05-north-pool-west-side-garden-walls.jpg": {
+  "x": -179.7,
+  "z": 33.1,
+  "heading": 325,
+  "trust": "placed by eye"
+ },
+ "06-north-pool-looking-north-east-mountains.jpg": {
+  "x": -171.7,
+  "z": 33.1,
+  "heading": 25,
+  "trust": "placed by eye"
+ },
+ "07-north-pool-whole-courtyard-looking-north.jpg": {
+  "x": -175.7,
+  "z": 34.1,
+  "heading": 0,
+  "trust": "placed by eye"
+ }
+}
