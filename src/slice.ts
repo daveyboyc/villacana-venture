@@ -37,10 +37,11 @@ async function boot(): Promise<void> {
   const pool = shown.find((p) => p.id === POOL_IDS[0]) ?? shown[0];
   const mainPool = shown.some((p) => p.id === "main");
   const daliFocus = new URLSearchParams(location.search).get("view") === "dali";
+  const connectionFocus = new URLSearchParams(location.search).get("view") === "cervantes";
   const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
   document.querySelector("#title")!.textContent = names.length > 1 ? `${names.join(" and ")} pools` : `${names[0]} pool`;
-  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : daliFocus ? "&view=dali" : ""}`;
+  const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : daliFocus ? "&view=dali" : connectionFocus ? "&view=cervantes" : ""}`;
   for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
   COURTS = shown.map((p) => centroid(p.ring));
   const centre = {
@@ -138,6 +139,12 @@ async function boot(): Promise<void> {
     spawn[0] = best.x; spawn[1] = best.z;
     start.x = best.x + 5; start.z = best.z + 12;
     document.querySelector("#title")!.textContent = "Pintor Dalí · Calle Cervantes";
+  }
+  if (connectionFocus && skeleton.boundaryReference?.connection) {
+    const road = skeleton.boundaryReference.roads.find((r) => r.name === "Calle Cervantes")!;
+    [spawn[0], spawn[1]] = road.points[0];
+    [start.x, start.z] = road.points[1];
+    document.querySelector("#title")!.textContent = "Dalí → Cervantes → Main car park";
   }
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {

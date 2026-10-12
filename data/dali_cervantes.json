@@ -33,6 +33,10 @@
       "width": 1.8,
       "points": [
         [
+          -196.27,
+          78.24
+        ],
+        [
           -187.67,
           73.73
         ],
@@ -51,10 +55,30 @@
         [
           -117.11,
           38.2
+        ],
+        [
+          -118.39,
+          32.15
+        ],
+        [
+          -103.56,
+          24.92
+        ],
+        [
+          -90.97,
+          18.78
+        ],
+        [
+          -75.69,
+          11.33
+        ],
+        [
+          -73.72,
+          10.36
         ]
       ],
       "surface": "terracotta",
-      "trust": "Named by Dave; approximate trace from aerial and IMG_2262\u20132265 junctions"
+      "trust": "Named and connection requested by Dave; west section from IMG_2262\u20132265, eastern continuation traced through registry/aerial corridor to the Picasso car-park aisle; approximate"
     }
   ],
   "parking": {
@@ -162,5 +186,18 @@
   "walkAnchor": [
     -190.5,
     81.0
-  ]
+  ],
+  "connection": {
+    "name": "Dal\u00ed to main car park via Cervantes",
+    "from": [
+      -196.27,
+      78.24
+    ],
+    "to": [
+      -73.72,
+      10.36
+    ],
+    "destination": "Calle Pintor Picasso / main car park",
+    "trust": "Requested by Dave; eastern alignment approximate"
+  }
 }
