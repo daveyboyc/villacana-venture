@@ -171,14 +171,17 @@ async function boot(): Promise<void> {
 
   const changeCount = () => edits.added.length + Object.keys(edits.moved).length + edits.removed.length + Object.keys(edits.labels).length;
   const save = () => {
+    let persisted = false;
     try {
       localStorage.setItem(EDITS_KEY, JSON.stringify(edits));
+      persisted = true;
     } catch {
       // Edits stay for this visit only.
     }
     $("#send").textContent = `Send ${changeCount()} change${changeCount() === 1 ? "" : "s"}`;
     $("#send").hidden = changeCount() === 0;
     $<HTMLButtonElement>("#undo").disabled = changeCount() === 0;
+    return persisted;
   };
   const select = (id: string | null) => {
     selected = id;
@@ -242,6 +245,10 @@ async function boot(): Promise<void> {
   const photos = el("g", {});
   const viewer = $<HTMLDivElement>("#viewer");
   const labelBox = $<HTMLInputElement>("#label");
+  const labelStatus = $("#labelstatus");
+  labelBox.addEventListener("input", () => {
+    labelStatus.textContent = "Unsaved label. Tap Save or press Done to keep it.";
+  });
   let open: { pin: PhotoPin; dot: SVGCircleElement } | null = null;
   viewer.addEventListener("click", (e) => {
     if (e.target === viewer || e.target instanceof HTMLImageElement) viewer.hidden = true;
@@ -255,14 +262,19 @@ async function boot(): Promise<void> {
     const labelOf = (pin: PhotoPin) => edits.labels[pin.file] ?? published[pin.file] ?? "";
     // Labelled photos turn green, so it is easy to see which are still to do.
     const tint = (pin: PhotoPin, dot: SVGCircleElement) => dot.setAttribute("fill", labelOf(pin) ? "#2f9e44" : "#d6336c");
-    $("#savelabel").addEventListener("click", () => {
+    $("#labelrow").addEventListener("submit", (e) => {
+      e.preventDefault();
       if (!open) return;
       const text = labelBox.value.trim();
       if (text === (published[open.pin.file] ?? "")) delete edits.labels[open.pin.file];
       else edits.labels[open.pin.file] = text;
       tint(open.pin, open.dot);
-      save();
-      viewer.hidden = true;
+      const persisted = save();
+      labelBox.value = text;
+      labelBox.blur();
+      labelStatus.textContent = persisted
+        ? "Saved on this browser. Close the photo and use Send changes to share your labels."
+        : "This browser could not save your label. It is kept for this visit only. Close the photo and use Send changes before leaving.";
     });
     for (const pin of manifest) {
       if (pin.x === undefined || pin.z === undefined) continue;
@@ -285,6 +297,7 @@ async function boot(): Promise<void> {
         viewer.querySelector("img")!.src = asset(`/photos-ref/${pin.file}`);
         viewer.querySelector("p")!.textContent = `${pin.title}${pin.taken ? " · " + pin.taken : ""}`;
         labelBox.value = labelOf(pin);
+        labelStatus.textContent = "Tap Save to keep this label on this browser. Use Send changes to share it.";
         viewer.hidden = false;
       });
       photos.append(g);

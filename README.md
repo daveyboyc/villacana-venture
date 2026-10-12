@@ -54,6 +54,16 @@ Edit `public/photos/album.json`. A frame needs a title, a latitude, a longitude,
 
 Leave `"image": null` for an empty frame. Refresh the page. You do not need to rebuild the map.
 
+On `blueprint.html`, tap a photo pin, enter a label, then tap **Save** or press
+**Enter/Done**. The photo stays open and confirms whether the label was saved on
+this browser. Reopening the photo or refreshing restores saved labels. If browser
+storage is unavailable, the message explains that the label only lasts for this
+visit; use **Send changes** before leaving.
+
+Labels do not automatically update GitHub or sync between devices. **Send changes**
+shares or copies the edits so they can be applied with `scripts/apply_map_edits.py`
+and published in `public/photos-ref/labels.json`.
+
 The two pictures already in the game:
 
 - Playa del Sol uses [Estepona beach](https://commons.wikimedia.org/wiki/File:Estepona_beach.jpg) by Jay Cross, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
