@@ -1,3 +1,4 @@
+import { asset } from "./asset";
 import * as THREE from "three";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
@@ -5,8 +6,8 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
  * Painted sprites for plants. Each kind is a small picture drawn once onto a
  * canvas, then stood up in the world as two crossed flat cards.
  *
- * The pictures here are painted by code as stand-ins. To use hand-painted
- * artwork instead, replace a painter with an image of the same proportions.
+ * Palms, hedges, bougainvillea and Strelitzia use an original photo-referenced
+ * atlas; the procedural painters remain immediate fallbacks and fill other kinds.
  */
 export type SpriteKind =
   | "tree"
@@ -48,7 +49,13 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
   const { w, h, shadow } = SPRITE_SIZE[kind];
   const card = new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);
   const geometry = mergeGeometries([card, card.clone().rotateY(Math.PI / 2)])!;
-  const material = new THREE.MeshBasicMaterial({ map: paint(kind), alphaTest: 0.5, side: THREE.DoubleSide });
+  const material = new THREE.MeshStandardMaterial({ map: paint(kind), alphaTest: 0.4, side: THREE.DoubleSide, roughness:0.9 });
+  if(kind==="palm") {
+    // Discard isolated red matte fringe from the generated alpha atlas.
+    material.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace("#include <map_fragment>","#include <map_fragment>\nif(diffuseColor.r>.7 && diffuseColor.g<.3 && diffuseColor.b<.3) discard;");};
+    material.customProgramCacheKey=()=>"palm-alpha-fringe-v1";
+  }
+  if(kind in ATLAS_CELLS) atlasFor(kind).then(texture=>{if(texture){material.map=texture;material.needsUpdate=true;}});
   const mesh = new THREE.InstancedMesh(geometry, material, places.length);
   const m = new THREE.Matrix4();
   const q = new THREE.Quaternion();
@@ -66,6 +73,19 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
 function rand(x: number, z: number): number {
   const s = Math.sin(x * 127.1 + z * 311.7) * 43758.5453;
   return s - Math.floor(s);
+}
+
+/** One small shared atlas request; fallbacks remain visible until it arrives. */
+const ATLAS_CELLS:Partial<Record<SpriteKind,[number,number,number,number]>>={
+  palm:[0,.5,.5,.5],hedge:[.5,.5,.5,.3],bougainvillea:[0,0,.5,.5],bird_of_paradise:[.5,0,.5,.5],
+};
+let atlas:Promise<THREE.Texture|null>|undefined;
+const atlasTextures=new Map<SpriteKind,THREE.Texture>();
+async function atlasFor(kind:SpriteKind):Promise<THREE.Texture|null> {
+  const existing=atlasTextures.get(kind);if(existing)return existing;
+  atlas??=new THREE.TextureLoader().loadAsync(asset("/art/villacana-vegetation.png")).catch(()=>null);
+  const source=await atlas,cell=ATLAS_CELLS[kind];if(!source||!cell)return null;
+  const texture=source.clone();texture.colorSpace=THREE.SRGBColorSpace;texture.offset.set(cell[0],cell[1]);texture.repeat.set(cell[2],cell[3]);texture.anisotropy=4;texture.needsUpdate=true;atlasTextures.set(kind,texture);return texture;
 }
 
 const cache = new Map<SpriteKind, THREE.CanvasTexture>();
@@ -112,12 +132,12 @@ class Brush {
     const g = this.g;
     for (const [colour, lift, share] of [[dark, -0.12, 1], [mid, 0.04, 0.8], [light, 0.2, 0.45]] as const) {
       g.fillStyle = colour;
-      for (let i = 0; i < dabs * share; i++) {
+      for (let i = 0; i < dabs * share * 6; i++) {
         const a = this.next() * Math.PI * 2;
         const d = Math.sqrt(this.next()) * (share === 1 ? 1 : 0.82);
-        const r = (0.16 + this.next() * 0.16) * (share === 1 ? 1 : 0.8);
+        const r = (0.045 + this.next() * 0.075) * (share === 1 ? 1 : 0.8);
         g.beginPath();
-        g.ellipse(cx + Math.cos(a) * d * rx, cy + Math.sin(a) * d * ry + lift * ry, r * rx, r * rx * this.aspect, 0, 0, Math.PI * 2);
+        g.ellipse(cx + Math.cos(a) * d * rx, cy + Math.sin(a) * d * ry + lift * ry, r * rx, r * rx * this.aspect * 0.55, this.next()*Math.PI, 0, Math.PI * 2);
         g.fill();
       }
     }

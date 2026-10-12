@@ -1,3 +1,4 @@
+import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
 import { asset } from "./asset";
@@ -305,6 +306,13 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   // Paint short blades all over the lawn so it reads as grass right to its edges.
   pctx.filter = "none";
   const painted = pctx.getImageData(0, 0, size, size).data;
+  // Keep classification pixels intact, but make the rendered turf less saturated.
+  const turf=new ImageData(new Uint8ClampedArray(painted),size,size);
+  const lawnColour=skeleton.cover.classes.lawn,lr=parseInt(lawnColour.slice(1,3),16),lg=parseInt(lawnColour.slice(3,5),16),lb=parseInt(lawnColour.slice(5,7),16);
+  for(let k=0;k<painted.length;k+=4) if(Math.abs(painted[k]-lr)+Math.abs(painted[k+1]-lg)+Math.abs(painted[k+2]-lb)<30) {
+    const v=(hash(k,2.1)-.5)*14;turf.data[k]=105+v;turf.data[k+1]=124+v;turf.data[k+2]=78+v;
+  }
+  pctx.putImageData(turf,0,0);
   // Lanes and patios are paved in square terracotta tiles, laid square to the houses.
   const rgbOf = (hex: string) => [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)];
   const paving = rgbOf(skeleton.cover.classes.paving);
@@ -316,16 +324,9 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     if (Math.abs(painted[k] - paving[0]) + Math.abs(painted[k + 1] - paving[1]) + Math.abs(painted[k + 2] - paving[2]) < 36) mask.data[k + 3] = 255;
   }
   tctx.putImageData(mask, 0, 0);
-  const tilePx = Math.round((size / (span * 2)) * 0.8);
-  const swatch = document.createElement("canvas");
-  swatch.width = swatch.height = tilePx * 2;
-  const sctx = swatch.getContext("2d")!;
-  sctx.fillStyle = "#b8a58c";
-  sctx.fillRect(0, 0, tilePx * 2, tilePx * 2);
-  ["#c98463", "#c27a5a", "#d08e6c", "#c6805e"].forEach((colour, n) => {
-    sctx.fillStyle = colour;
-    sctx.fillRect((n % 2) * tilePx + 1, Math.floor(n / 2) * tilePx + 1, tilePx - 1, tilePx - 1);
-  });
+  const tilePx = Math.max(4,Math.round((size / (span * 2)) * 0.4));
+  const swatch = document.createElement("canvas");swatch.width=swatch.height=tilePx*4;
+  swatch.getContext("2d")!.drawImage(pavingCanvas(),0,0,swatch.width,swatch.height);
   const pattern = tctx.createPattern(swatch, "repeat")!;
   pattern.setTransform(new DOMMatrix().rotate(-skeleton.viewRotation));
   tctx.globalCompositeOperation = "source-in";
@@ -336,16 +337,16 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const lawn = skeleton.cover.classes.lawn;
   const lawnRgb = [parseInt(lawn.slice(1, 3), 16), parseInt(lawn.slice(3, 5), 16), parseInt(lawn.slice(5, 7), 16)];
   pctx.lineCap = "round";
-  pctx.lineWidth = 1.6;
+  pctx.lineWidth = 0.6;
   for (let i = 0; i < 90000; i++) {
     const x = Math.floor(hash(i, 1.7) * size);
     const y = Math.floor(hash(i, 9.1) * size);
     const k = (y * size + x) * 4;
     if (Math.abs(painted[k] - lawnRgb[0]) + Math.abs(painted[k + 1] - lawnRgb[1]) + Math.abs(painted[k + 2] - lawnRgb[2]) > 30) continue;
-    pctx.strokeStyle = ["#5c9a4f", "#86b85a", "#4f8a45", "#9cc468"][i % 4];
+    pctx.strokeStyle = ["#62744c", "#7c895f", "#526644", "#9d9b75"][i % 4];
     pctx.beginPath();
     pctx.moveTo(x, y);
-    pctx.lineTo(x + (hash(i, 3.3) - 0.5) * 5, y - 4 - hash(i, 5.9) * 5);
+    pctx.lineTo(x + (hash(i, 3.3) - 0.5) * 2, y - 1 - hash(i, 5.9) * 2);
     pctx.stroke();
   }
   const texture = new THREE.CanvasTexture(paint);
@@ -419,7 +420,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
   addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD));
   // Tufts only near the courtyards; the painted blades cover lawns further off.
-  addSprites(scene, "grass", scatter(0.42, "lawn", RADIUS).filter((p) => fromCourt(p) < 45).map((p) => ({ ...p, scale: 0.45 + hash(p.x, p.z) * 0.5 })));
+  addSprites(scene, "grass", scatter(0.8, "lawn", RADIUS).filter((p) => fromCourt(p) < 45).map((p) => ({ ...p, scale: 0.16 + hash(p.x, p.z) * 0.14 })));
 }
 
 function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {
@@ -430,7 +431,7 @@ function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {
 }
 
 function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
-  const wall = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.92 });
+  const wall = plasterMaterial(WALL);
   const grey = new THREE.MeshStandardMaterial({ color: ROOF_GREY, roughness: 0.95 });
   const terrace = new THREE.MeshStandardMaterial({ color: ROOF_TERRACE, roughness: 0.9 });
   for (const b of buildings) {
@@ -652,7 +653,7 @@ function slatTexture(): THREE.CanvasTexture {
 
 /** Hand-placed things from the skeleton, each drawn according to its kind. */
 function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
-  const white = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.9 });
+  const white = plasterMaterial(WALL);
   const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
   const ring = new THREE.MeshStandardMaterial({ color: "#e8532b", roughness: 0.6 });
   const dark = new THREE.MeshStandardMaterial({ color: "#1d1b1a", roughness: 0.6 });
