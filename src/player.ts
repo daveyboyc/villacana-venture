@@ -8,8 +8,9 @@ export type MoveWorld = {
   pools: [number, number][][];
   bounds: MapData["bounds"];
   /** How far below the ground the player stands in a pool. Defaults to ankle-deep. */
-  poolFloor?: number;
+  poolFloor?: number | ((x:number,z:number)=>number);
   groundHeight?: (x: number, z: number) => number;
+  maxGroundStep?: number;
 };
 
 const RADIUS = 0.42;
@@ -160,18 +161,21 @@ export class Player {
       this.yaw = dampAngle(this.yaw, yawFromDirection(wishX, wishZ), step * 12);
     }
 
+    const previousX=this.x,previousZ=this.z;
     this.x += (moving ? wishX : 0) * step;
     this.z += (moving ? wishZ : 0) * step;
 
-    const resolved = world.solids.resolve(this.x, this.z, RADIUS);
+    const resolved = world.solids.resolve(this.x, this.z, RADIUS, this.y);
     this.x = resolved.x;
     this.z = resolved.z;
     const margin = 3;
     this.x = clamp(this.x, world.bounds.minX + margin, world.bounds.maxX - margin);
     this.z = clamp(this.z, world.bounds.minZ + margin, world.bounds.maxZ - margin);
-    const again = world.solids.resolve(this.x, this.z, RADIUS);
+    const again = world.solids.resolve(this.x, this.z, RADIUS, this.y);
     this.x = again.x;
     this.z = again.z;
+
+    if(world.maxGroundStep!==undefined && world.groundHeight && Math.abs(world.groundHeight(this.x,this.z)-world.groundHeight(previousX,previousZ))>world.maxGroundStep) {this.x=previousX;this.z=previousZ;}
 
     // Far offshore, a gentle push back toward the beach.
     const water = world.coast.query(this.x, this.z);
@@ -185,7 +189,7 @@ export class Player {
       const t = clamp((2.2 - water.signed) / 8, 0, 1);
       floor = -0.12 - t * 0.8;
     }
-    if (inAnyPool(this.x, this.z, world.pools)) floor = Math.min(floor, world.poolFloor ?? -0.4);
+    if (inAnyPool(this.x, this.z, world.pools)) floor = Math.min(floor, typeof world.poolFloor === "function" ? world.poolFloor(this.x,this.z) : world.poolFloor ?? -0.4);
 
     let jumped = false;
     let landed = false;

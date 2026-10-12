@@ -9,6 +9,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import mainPoolLayout from "../data/main_pool.json";
+import { addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
@@ -92,6 +93,7 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre, poolRings);
   const backdrop=new THREE.Scene();addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
+  if(mainPool) addPoolAccess(scene);
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   addShutters(scene, houses, skeleton.floorHeight);
@@ -111,7 +113,7 @@ async function boot(): Promise<void> {
   }
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
-  const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf" } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef" } : {}));
+  const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
   addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !skeleton.boundaryReference?.roads.some((road) => road.heights && roadHeight(road,p.x,p.z).distance < road.width/2 + 1.0)));
 
   const player = new Player();
@@ -122,7 +124,7 @@ async function boot(): Promise<void> {
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
-  const solids = new Solids([...buildings.map((b) => b.ring), ...wallRings, ...fenceRings, ...seaWallRings(skeleton.seaWall?.points ?? [])]);
+  const solids = new Solids([...buildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(buildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -168,8 +170,9 @@ async function boot(): Promise<void> {
     solids,
     coast,
     pools: poolRings,
-    poolFloor: POOL_STAND,
-    groundHeight: skeleton.boundaryReference ? (x,z) => referenceGroundHeight(skeleton.boundaryReference!,x,z) : undefined,
+    maxGroundStep:0.45,
+    poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
+    groundHeight: (x,z) => poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
@@ -185,11 +188,11 @@ async function boot(): Promise<void> {
   const overviewCentre=new THREE.Vector3(centre.x,0.5,centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
-    project:(x,z)=>{const p=new THREE.Vector3(x,1,z).project(camera),y=(1-p.y)*innerHeight/2;
+    project:(x,z)=>{const p=new THREE.Vector3(x,poolGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
       const top=document.querySelector("#areas")!.getBoundingClientRect().bottom+8;
       const bottom=document.querySelector(".reference-tools")?.getBoundingClientRect().top??innerHeight-180;
       return {x:(p.x+1)*innerWidth/2,y,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&y>top&&y<bottom-12};},
-    unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const p=raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
+    unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const hit=raycaster.intersectObjects(scene.children,true).find(h=>h.object.userData.referenceSurface);const p=hit?.point??raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
   });
   const controls=document.querySelector<HTMLElement>("#overview-controls")!;
   const action=(id:string,callback:()=>void)=>document.querySelector(id)!.addEventListener("click",callback);
@@ -349,18 +352,28 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
   // The ground is one sheet with the pools cut out of it.
+  const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
   const sheet = shapeOf(
     [[centre.x - span, centre.z - span], [centre.x + span, centre.z - span], [centre.x + span, centre.z + span], [centre.x - span, centre.z + span]],
-    pools,
+    showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),lowerPoolRing]:pools,
   );
   const geometry = new THREE.ShapeGeometry(sheet).rotateX(-Math.PI / 2);
+  if(showLowerDeck) for(const ring of lowerPoolHoles) {const island=new THREE.Mesh(new THREE.ShapeGeometry(shapeOf(ring)).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:"#c78667",roughness:0.95}));island.userData.referenceSurface=true;scene.add(island);}
   const at = geometry.getAttribute("position");
   const uv = geometry.getAttribute("uv");
   for (let i = 0; i < at.count; i++) {
     uv.setXY(i, (at.getX(i) - (centre.x - span)) / (span * 2), 1 - (at.getZ(i) - (centre.z - span)) / (span * 2));
   }
+  if(showLowerDeck) {
+  const lowerGeometry=lowerPoolSurface(pools.filter(r=>pointInRing(...r[0],lowerPoolRing)));
+  const lowerUv:number[]=[];const lowerAt=lowerGeometry.getAttribute("position");
+  for(let i=0;i<lowerAt.count;i++) lowerUv.push((lowerAt.getX(i)-(centre.x-span))/(span*2),1-(lowerAt.getZ(i)-(centre.z-span))/(span*2));
+  lowerGeometry.setAttribute("uv",new THREE.Float32BufferAttribute(lowerUv,2));
+  const lowerGround=new THREE.Mesh(lowerGeometry,new THREE.MeshStandardMaterial({map:texture,roughness:0.95}));lowerGround.receiveShadow=true;lowerGround.userData.referenceSurface=true;scene.add(lowerGround);
+  }
   const ground = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ map: texture, roughness: 0.95 }));
   ground.receiveShadow = true;
+  ground.userData.referenceSurface=true;
   scene.add(ground);
 
   // Plants grow according to the ground cover: trees on planting, tufts on lawn.
@@ -396,7 +409,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
       for (let z = centre.z - reach; z <= centre.z + reach; z += step) {
         const jx = x + (hash(x, z) - 0.5) * step * 0.9;
         const jz = z + (hash(z, x) - 0.5) * step * 0.9;
-        if (coverAt(jx, jz) === wanted) out.push({ x: jx, z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
+        if (coverAt(jx, jz) === wanted) out.push({ x: jx, y:poolGroundY(jx,jz), z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
       }
     }
     return out;
@@ -425,9 +438,10 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     // Yards and terraces are low walled enclosures, not houses.
     const height = b.floors > 0 ? b.floors * floorHeight : 1.1;
     const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
-    const geometry = new THREE.ExtrudeGeometry(shapeOf(b.ring, b.holes), { depth: height, bevelEnabled: false });
+    const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height, bevelEnabled: false });
     geometry.rotateX(-Math.PI / 2);
     const mesh = new THREE.Mesh(geometry, [cap, wall]);
+    if(b.id===POOL_TERRACE_ID) {mesh.position.y=LOWER_POOL_Y;mesh.userData.referenceSurface=true;}
     mesh.castShadow = mesh.receiveShadow = true;
     scene.add(mesh);
   }
@@ -647,7 +661,7 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
   const blueLounger = new THREE.MeshStandardMaterial({ color: "#4096d2", roughness: 0.8 });
   const sprites: Partial<Record<SpriteKind, SpritePlacement[]>> = {};
   const add = (mesh: THREE.Mesh, x: number, y: number, z: number) => {
-    mesh.position.set(x, y, z);
+    mesh.position.set(x, y+poolGroundY(x,z), z);
     mesh.castShadow = true;
     scene.add(mesh);
     return mesh;
@@ -714,7 +728,7 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
         if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
     }
   }
-  for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places);
+  for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places.map(p=>({...p,y:(p.y??0)+poolGroundY(p.x,p.z)})));
 }
 
 /** Upright black bars in a frame, see-through between them. */

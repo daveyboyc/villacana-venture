@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { pointInRing } from "./geom";
 import type { SkeletonBuilding, Vec2 } from "./types";
+import { LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 
 /** Dress the surveyed restaurant footprints, without moving their walls. */
 export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuilding[], pool: { x: number; z: number }): void {
@@ -9,6 +10,7 @@ export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuild
   const blue = new THREE.MeshStandardMaterial({ color: "#254a92", roughness: 0.9, side: THREE.DoubleSide });
   const dark = new THREE.MeshStandardMaterial({ color: "#333a36", roughness: 0.85 });
   for (const building of buildings) {
+    if(building.id!==POOL_TERRACE_ID) continue;
     const ring = building.ring;
     for (let i = 0; i < ring.length; i++) {
       const [ax, az] = ring[i];
@@ -30,19 +32,19 @@ export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuild
         mesh.position.set(x, y, z); mesh.castShadow = mesh.receiveShadow = true; face.add(mesh);
       };
       // Dark restaurant glazing with white mullions and a continuous balcony fascia.
-      box(glass, 0, 1.4, 0.035, length - 0.4, 2.0, 0.06);
-      for (let x = -length / 2 + 0.2; x < length / 2; x += 1.6) box(white, x, 1.4, 0.09, 0.08, 2.15, 0.1);
-      box(white, 0, 2.75, 0.32, length, 0.5, 0.7);
-      box(white, 0, 3.35, 0.35, length, 0.75, 0.16);
+      box(glass, 0, LOWER_POOL_Y+1.4, 0.035, length - 0.4, 2.0, 0.06);
+      for (let x = -length / 2 + 0.2; x < length / 2; x += 1.6) box(white, x, LOWER_POOL_Y+1.4, 0.09, 0.08, 2.15, 0.1);
+      box(white, 0, -0.25, 0.32, length, 0.5, 0.7);
+      box(white, 0, 0.55, 0.35, length, 0.75, 0.16);
       // Blue fabric awnings and simple cafe tables, as visible in the web references.
       const canopy = new THREE.Mesh(new THREE.PlaneGeometry(length * 0.85, 1.7), blue);
-      canopy.rotation.x = -Math.PI / 2 + 0.12; canopy.position.set(0, 2.55, 1.0); canopy.castShadow = true; face.add(canopy);
+      canopy.rotation.x = -Math.PI / 2 + 0.12; canopy.position.set(0, 2.55, -0.8); canopy.castShadow = true; face.add(canopy);
       for (let x = -length / 2 + 1.8; x < length / 2 - 1; x += 3.2) {
-        box(dark, x, 0.8, 1.5, 0.85, 0.06, 0.85);
-        box(dark, x, 0.4, 1.5, 0.07, 0.8, 0.07);
+        box(dark, x, 0.8, -0.8, 0.85, 0.06, 0.85);
+        box(dark, x, 0.4, -0.8, 0.07, 0.8, 0.07);
         for (const offset of [-0.7, 0.7]) {
-          box(dark, x + offset, 0.45, 1.5, 0.45, 0.06, 0.45);
-          box(dark, x + offset, 0.72, 1.73, 0.45, 0.55, 0.05);
+          box(dark, x + offset, 0.45, -0.8, 0.45, 0.06, 0.45);
+          box(dark, x + offset, 0.72, -0.57, 0.45, 0.55, 0.05);
         }
       }
     }

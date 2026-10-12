@@ -13,7 +13,7 @@ export type Pools = { update(time: number): void };
  * Build each pool as a real basin: tiled walls and floor below ground level,
  * a see-through surface, and a pattern of light that drifts over the tiles.
  */
-export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: string; tileColor?: string }[] = []): Pools {
+export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: string; tileColor?: string; deckY?: number }[] = []): Pools {
   const light = lightPattern();
   const tiles = new THREE.MeshBasicMaterial({ map: light, color: "#bfeaf5" });
   const surface = new THREE.MeshStandardMaterial({
@@ -28,6 +28,7 @@ export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: 
 
   for (const [index, ring] of rings.entries()) {
     const style = styles[index];
+    const basin=new THREE.Group();basin.position.y=style?.deckY??0;scene.add(basin);
     const poolTiles = style?.tileColor ? tiles.clone() : tiles;
     if (style?.tileColor) poolTiles.color.set(style.tileColor);
     const poolSurface = style?.color ? surface.clone() : surface;
@@ -36,7 +37,7 @@ export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: 
 
     const floor = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), poolTiles);
     floor.position.y = -POOL_DEPTH;
-    scene.add(floor);
+    basin.add(floor);
 
     // Walls, facing inwards.
     const positions: number[] = [];
@@ -55,19 +56,19 @@ export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: 
     walls.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
     const wallMaterial = poolTiles.clone();
     wallMaterial.side = THREE.DoubleSide;
-    scene.add(new THREE.Mesh(walls, wallMaterial));
+    basin.add(new THREE.Mesh(walls, wallMaterial));
 
     const top = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), poolSurface);
     top.position.y = SURFACE;
     top.renderOrder = 2;
-    scene.add(top);
+    basin.add(top);
 
     // A raised stone edge round the pool.
     const edge = new THREE.Shape(outset(ring, 0.5).map(([x, z]) => new THREE.Vector2(x, -z)));
     edge.holes.push(new THREE.Path(ring.map(([x, z]) => new THREE.Vector2(x, -z))));
     const lip = new THREE.Mesh(new THREE.ExtrudeGeometry(edge, { depth: 0.07, bevelEnabled: false }).rotateX(-Math.PI / 2), rim);
     lip.receiveShadow = true;
-    scene.add(lip);
+    basin.add(lip);
   }
 
   return {
