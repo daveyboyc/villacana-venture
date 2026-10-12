@@ -3,12 +3,12 @@ import { asset } from "./asset";
 import { centroid, clamp, closestOnSegment, CoastField, dampAngle, pointInRing, Solids } from "./geom";
 import { Player, type MoveWorld } from "./player";
 import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
-import type { InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
+import type { BoundaryReference, InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import mainPoolLayout from "../data/main_pool.json";
-import { addBoundaryReference, barrierRings } from "./boundaries";
+import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
@@ -37,6 +37,7 @@ async function boot(): Promise<void> {
   const pool = shown.find((p) => p.id === POOL_IDS[0]) ?? shown[0];
   const mainPool = shown.some((p) => p.id === "main");
   const daliFocus = new URLSearchParams(location.search).get("view") === "dali";
+  const rampFocus = new URLSearchParams(location.search).get("view") === "ramp";
   const connectionFocus = new URLSearchParams(location.search).get("view") === "cervantes";
   const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
@@ -107,7 +108,7 @@ async function boot(): Promise<void> {
   const player = new Player();
   scene.add(player.group);
   const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS);
-  addGardenWalls(scene, walls);
+  addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, skeleton.gardenGates, walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
@@ -146,12 +147,20 @@ async function boot(): Promise<void> {
     [start.x, start.z] = road.points[1];
     document.querySelector("#title")!.textContent = "Dalí car park → Cervantes → Picasso car park";
   }
+  if (rampFocus && skeleton.boundaryReference?.ramps?.length) {
+    const [top,foot] = skeleton.boundaryReference.ramps[0].points;
+    const dx=top[0]-foot[0], dz=top[1]-foot[1], length=Math.hypot(dx,dz);
+    spawn[0]=foot[0]-dx/length*2; spawn[1]=foot[1]-dz/length*2;
+    start.x=top[0]; start.z=top[1];
+    document.querySelector("#title")!.textContent = "Calle Cervantes · Elena ramp";
+  }
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
     solids,
     coast,
     pools: poolRings,
     poolFloor: POOL_STAND,
+    groundHeight: skeleton.boundaryReference ? (x,z) => referenceGroundHeight(skeleton.boundaryReference!,x,z) : undefined,
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
@@ -439,7 +448,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
 }
 
 /** Low white garden walls round the lawn, with hedges growing over them in places. */
-function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
+function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryReference): void {
   const m = new THREE.Matrix4();
   const still = new THREE.Quaternion();
   const blocks = new THREE.InstancedMesh(
@@ -456,7 +465,7 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[]): void {
   scene.add(blocks);
 
   // Hedges come in runs: a few metres of hedge, then bare wall.
-  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5);
+  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5 && !reference?.roads.some((road) => road.heights && roadHeight(road,x,z).distance < road.width/2 + 1.5));
   const place = ([x, z]: Vec2): SpritePlacement => ({ x, y: 0.55, z, scale: 0.9 + hash(x, z) * 0.3 });
   const flowering = (p: Vec2) => hash(Math.floor(p[0] / 8), Math.floor(p[1] / 8)) < 0.5;
   addSprites(scene, "hibiscus_hedge", hedged.filter(flowering).map(place));

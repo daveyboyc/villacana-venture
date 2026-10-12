@@ -1,715 +1,726 @@
 [
- {
-  "file": "IMG_2182.jpg",
-  "title": "IMG_2182",
-  "trust": "phone location",
-  "x": -39.0,
-  "z": 133.0,
-  "heading": 240,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2183.jpg",
-  "title": "IMG_2183",
-  "trust": "phone location",
-  "x": -47.3,
-  "z": 142.2,
-  "heading": 294,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2184.jpg",
-  "title": "IMG_2184",
-  "trust": "phone location",
-  "x": -56.7,
-  "z": 147.2,
-  "heading": 148,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2185.jpg",
-  "title": "IMG_2185",
-  "trust": "phone location",
-  "x": -80.1,
-  "z": 159.2,
-  "heading": 146,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2186.jpg",
-  "title": "IMG_2186",
-  "trust": "phone location",
-  "x": -80.1,
-  "z": 158.9,
-  "heading": 149,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2187.jpg",
-  "title": "IMG_2187",
-  "trust": "phone location",
-  "x": -79.6,
-  "z": 158.3,
-  "heading": 177,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2188.jpg",
-  "title": "IMG_2188",
-  "trust": "phone location",
-  "x": -89.3,
-  "z": 167.3,
-  "heading": 171,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2189.jpg",
-  "title": "IMG_2189",
-  "trust": "phone location",
-  "x": -114.9,
-  "z": 126.2,
-  "heading": 322,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2190.jpg",
-  "title": "IMG_2190",
-  "trust": "phone location",
-  "x": -121.1,
-  "z": 116.3,
-  "heading": 56,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2191.jpg",
-  "title": "IMG_2191",
-  "trust": "phone location",
-  "x": -121.1,
-  "z": 116.0,
-  "heading": 88,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2192.jpg",
-  "title": "IMG_2192",
-  "trust": "phone location",
-  "x": -123.9,
-  "z": 105.8,
-  "heading": 333,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2193.jpg",
-  "title": "IMG_2193",
-  "trust": "phone location",
-  "x": -126.3,
-  "z": 102.4,
-  "heading": 17,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2194.jpg",
-  "title": "IMG_2194",
-  "trust": "phone location",
-  "x": -126.6,
-  "z": 102.0,
-  "heading": 13,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2195.jpg",
-  "title": "IMG_2195",
-  "trust": "phone location",
-  "x": -135.5,
-  "z": 92.1,
-  "heading": 51,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2196.jpg",
-  "title": "IMG_2196",
-  "trust": "phone location",
-  "x": -151.0,
-  "z": 60.0,
-  "heading": 342,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2197.jpg",
-  "title": "IMG_2197",
-  "trust": "phone location",
-  "x": -149.2,
-  "z": 52.3,
-  "heading": 58,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2198.jpg",
-  "title": "IMG_2198",
-  "trust": "phone location",
-  "x": -145.5,
-  "z": 49.8,
-  "heading": 328,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2199.jpg",
-  "title": "IMG_2199",
-  "trust": "phone location",
-  "x": -147.0,
-  "z": 48.2,
-  "heading": 359,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2200.jpg",
-  "title": "IMG_2200",
-  "trust": "phone location",
-  "x": -147.2,
-  "z": 47.6,
-  "heading": 346,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2201.jpg",
-  "title": "IMG_2201",
-  "trust": "phone location",
-  "x": -148.5,
-  "z": 46.4,
-  "heading": 328,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2202.jpg",
-  "title": "IMG_2202",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 35.3,
-  "heading": 245,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2203.jpg",
-  "title": "IMG_2203",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 35.3,
-  "heading": 59,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2204.jpg",
-  "title": "IMG_2204",
-  "trust": "phone location",
-  "x": -169.9,
-  "z": 32.2,
-  "heading": 329,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2205.jpg",
-  "title": "IMG_2205",
-  "trust": "phone location",
-  "x": -170.1,
-  "z": 31.8,
-  "heading": 360,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2206.jpg",
-  "title": "IMG_2206",
-  "trust": "phone location",
-  "x": -169.9,
-  "z": 31.8,
-  "heading": 301,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2207.jpg",
-  "title": "IMG_2207",
-  "trust": "phone location",
-  "x": -169.1,
-  "z": 31.5,
-  "heading": 37,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2208.jpg",
-  "title": "IMG_2208",
-  "trust": "phone location",
-  "x": -168.9,
-  "z": 32.2,
-  "heading": 306,
-  "taken": "2026-10-11"
- },
- {
-  "file": "IMG_2214.jpg",
-  "title": "IMG_2214",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 44.8,
-  "heading": 2,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2215.jpg",
-  "title": "IMG_2215",
-  "trust": "phone location",
-  "x": -154.7,
-  "z": 44.8,
-  "heading": 45,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2216.jpg",
-  "title": "IMG_2216",
-  "trust": "phone location",
-  "x": -154.5,
-  "z": 44.8,
-  "heading": 112,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2217.jpg",
-  "title": "IMG_2217",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 45.8,
-  "heading": 157,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2218.jpg",
-  "title": "IMG_2218",
-  "trust": "phone location",
-  "x": -155.2,
-  "z": 46.4,
-  "heading": 199,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2219.jpg",
-  "title": "IMG_2219",
-  "trust": "phone location",
-  "x": -155.4,
-  "z": 50.4,
-  "heading": 347,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2220.jpg",
-  "title": "IMG_2220",
-  "trust": "phone location",
-  "x": -155.7,
-  "z": 51.0,
-  "heading": 149,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2223.jpg",
-  "title": "IMG_2223",
-  "trust": "phone location",
-  "x": 39.3,
-  "z": 102.0,
-  "heading": 109,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2224.jpg",
-  "title": "IMG_2224",
-  "trust": "phone location",
-  "x": 63.2,
-  "z": 130.5,
-  "heading": 52,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2225.jpg",
-  "title": "IMG_2225",
-  "trust": "phone location",
-  "x": 61.7,
-  "z": 134.2,
-  "heading": 266,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2226.jpg",
-  "title": "IMG_2226",
-  "trust": "phone location",
-  "x": 39.5,
-  "z": 155.5,
-  "heading": 315,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2227.jpg",
-  "title": "IMG_2227",
-  "trust": "phone location",
-  "x": 39.3,
-  "z": 154.9,
-  "heading": 272,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2229.jpg",
-  "title": "IMG_2229",
-  "trust": "phone location",
-  "x": -37.8,
-  "z": 135.1,
-  "heading": 222,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2230.jpg",
-  "title": "IMG_2230",
-  "trust": "phone location",
-  "x": -39.8,
-  "z": 137.3,
-  "heading": 251,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2231.jpg",
-  "title": "IMG_2231",
-  "trust": "phone location",
-  "x": -41.5,
-  "z": 137.9,
-  "heading": 220,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2232.jpg",
-  "title": "IMG_2232",
-  "trust": "phone location",
-  "x": -43.0,
-  "z": 139.1,
-  "heading": 176,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2233.jpg",
-  "title": "IMG_2233",
-  "trust": "phone location",
-  "x": -46.5,
-  "z": 141.0,
-  "heading": 291,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2234.jpg",
-  "title": "IMG_2234",
-  "trust": "phone location",
-  "x": -50.5,
-  "z": 143.2,
-  "heading": 240,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2235.jpg",
-  "title": "IMG_2235",
-  "trust": "phone location",
-  "x": -56.2,
-  "z": 145.3,
-  "heading": 333,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2236.jpg",
-  "title": "IMG_2236",
-  "trust": "phone location",
-  "x": -60.4,
-  "z": 137.3,
-  "heading": 345,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2237.jpg",
-  "title": "IMG_2237",
-  "trust": "phone location",
-  "x": -62.4,
-  "z": 134.2,
-  "heading": 333,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2238.jpg",
-  "title": "IMG_2238",
-  "trust": "phone location",
-  "x": -66.9,
-  "z": 128.6,
-  "heading": 249,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2239.jpg",
-  "title": "IMG_2239",
-  "trust": "phone location",
-  "x": -70.9,
-  "z": 120.6,
-  "heading": 353,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2240.jpg",
-  "title": "IMG_2240",
-  "trust": "phone location",
-  "x": -77.1,
-  "z": 111.3,
-  "heading": 244,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2241.jpg",
-  "title": "IMG_2241",
-  "trust": "phone location",
-  "x": -78.8,
-  "z": 106.7,
-  "heading": 333,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2242.jpg",
-  "title": "IMG_2242",
-  "trust": "phone location",
-  "x": -83.3,
-  "z": 96.5,
-  "heading": 249,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2243.jpg",
-  "title": "IMG_2243",
-  "trust": "phone location",
-  "x": -102.5,
-  "z": 75.4,
-  "heading": 243,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2244.jpg",
-  "title": "IMG_2244",
-  "trust": "phone location",
-  "x": -113.7,
-  "z": 81.6,
-  "heading": 232,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2245.jpg",
-  "title": "IMG_2245",
-  "trust": "phone location",
-  "x": -119.4,
-  "z": 94.3,
-  "heading": 268,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2246.jpg",
-  "title": "IMG_2246",
-  "trust": "phone location",
-  "x": -137.5,
-  "z": 103.3,
-  "heading": 35,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2247.jpg",
-  "title": "IMG_2247",
-  "trust": "phone location",
-  "x": -137.0,
-  "z": 103.3,
-  "heading": 28,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2248.jpg",
-  "title": "IMG_2248",
-  "trust": "phone location",
-  "x": -138.0,
-  "z": 103.3,
-  "heading": 237,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2249.jpg",
-  "title": "IMG_2249",
-  "trust": "phone location",
-  "x": -145.7,
-  "z": 108.2,
-  "heading": 330,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2250.jpg",
-  "title": "IMG_2250",
-  "trust": "phone location",
-  "x": -146.5,
-  "z": 107.0,
-  "heading": 333,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2251.jpg",
-  "title": "IMG_2251",
-  "trust": "phone location",
-  "x": -149.5,
-  "z": 107.0,
-  "heading": 331,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2252.jpg",
-  "title": "IMG_2252",
-  "trust": "phone location",
-  "x": -161.2,
-  "z": 58.4,
-  "heading": 61,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2253.jpg",
-  "title": "IMG_2253",
-  "trust": "phone location",
-  "x": -153.2,
-  "z": 55.7,
-  "heading": 141,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2254.jpg",
-  "title": "IMG_2254",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 34.3,
-  "heading": 284,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2255.jpg",
-  "title": "IMG_2255",
-  "trust": "phone location",
-  "x": -152.2,
-  "z": 39.9,
-  "heading": 250,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2256.jpg",
-  "title": "IMG_2256",
-  "trust": "phone location",
-  "x": -153.0,
-  "z": 40.8,
-  "heading": 237,
-  "taken": "2026-10-12"
- },
- {
-  "file": "IMG_2266.jpg",
-  "title": "IMG_2266",
-  "trust": "phone location",
-  "x": -184.8,
-  "z": 76.4,
-  "heading": 243,
-  "taken": "2026-10-12",
-  "accuracy": 14.0
- },
- {
-  "file": "IMG_2263.jpg",
-  "title": "IMG_2263",
-  "trust": "phone location",
-  "x": -151.5,
-  "z": 57.2,
-  "heading": 155,
-  "taken": "2026-10-12",
-  "accuracy": 4.1
- },
- {
-  "file": "IMG_2261.jpg",
-  "title": "IMG_2261",
-  "trust": "phone location",
-  "x": -150.2,
-  "z": 56.9,
-  "heading": 167,
-  "taken": "2026-10-12",
-  "accuracy": 10.2
- },
- {
-  "file": "IMG_2267.jpg",
-  "title": "IMG_2267",
-  "trust": "phone location",
-  "x": -186.3,
-  "z": 76.1,
-  "heading": 328,
-  "taken": "2026-10-12",
-  "accuracy": 2.8
- },
- {
-  "file": "IMG_2268.jpg",
-  "title": "IMG_2268",
-  "trust": "phone location",
-  "x": -185.3,
-  "z": 77.3,
-  "heading": 148,
-  "taken": "2026-10-12",
-  "accuracy": 3.4
- },
- {
-  "file": "IMG_2262.jpg",
-  "title": "IMG_2262",
-  "trust": "phone location",
-  "x": -150.5,
-  "z": 56.9,
-  "heading": 226,
-  "taken": "2026-10-12",
-  "accuracy": 4.8
- },
- {
-  "file": "IMG_2265.jpg",
-  "title": "IMG_2265",
-  "trust": "phone location",
-  "x": -158.4,
-  "z": 60.0,
-  "heading": 61,
-  "taken": "2026-10-12",
-  "accuracy": 4.7
- },
- {
-  "file": "IMG_2260.jpg",
-  "title": "IMG_2260",
-  "trust": "phone location",
-  "x": -149.7,
-  "z": 56.9,
-  "heading": 158,
-  "taken": "2026-10-12",
-  "accuracy": 11.8
- },
- {
-  "file": "IMG_2269.jpg",
-  "title": "IMG_2269",
-  "trust": "phone location",
-  "x": -190.5,
-  "z": 81.0,
-  "heading": 156,
-  "taken": "2026-10-12",
-  "accuracy": 4.7
- },
- {
-  "file": "IMG_2264.jpg",
-  "title": "IMG_2264",
-  "trust": "phone location",
-  "x": -153.7,
-  "z": 58.1,
-  "heading": 239,
-  "taken": "2026-10-12",
-  "accuracy": 3.9
- },
- {
-  "file": "IMG_2270.jpg",
-  "title": "IMG_2270",
-  "trust": "phone location",
-  "x": -189.8,
-  "z": 81.9,
-  "heading": 325,
-  "taken": "2026-10-12",
-  "accuracy": 4.7
- }
+  {
+    "file": "IMG_2182.jpg",
+    "title": "IMG_2182",
+    "trust": "phone location",
+    "x": -39.0,
+    "z": 133.0,
+    "heading": 240,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2183.jpg",
+    "title": "IMG_2183",
+    "trust": "phone location",
+    "x": -47.3,
+    "z": 142.2,
+    "heading": 294,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2184.jpg",
+    "title": "IMG_2184",
+    "trust": "phone location",
+    "x": -56.7,
+    "z": 147.2,
+    "heading": 148,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2185.jpg",
+    "title": "IMG_2185",
+    "trust": "phone location",
+    "x": -80.1,
+    "z": 159.2,
+    "heading": 146,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2186.jpg",
+    "title": "IMG_2186",
+    "trust": "phone location",
+    "x": -80.1,
+    "z": 158.9,
+    "heading": 149,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2187.jpg",
+    "title": "IMG_2187",
+    "trust": "phone location",
+    "x": -79.6,
+    "z": 158.3,
+    "heading": 177,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2188.jpg",
+    "title": "IMG_2188",
+    "trust": "phone location",
+    "x": -89.3,
+    "z": 167.3,
+    "heading": 171,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2189.jpg",
+    "title": "IMG_2189",
+    "trust": "phone location",
+    "x": -114.9,
+    "z": 126.2,
+    "heading": 322,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2190.jpg",
+    "title": "IMG_2190",
+    "trust": "phone location",
+    "x": -121.1,
+    "z": 116.3,
+    "heading": 56,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2191.jpg",
+    "title": "IMG_2191",
+    "trust": "phone location",
+    "x": -121.1,
+    "z": 116.0,
+    "heading": 88,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2192.jpg",
+    "title": "IMG_2192",
+    "trust": "phone location",
+    "x": -123.9,
+    "z": 105.8,
+    "heading": 333,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2193.jpg",
+    "title": "IMG_2193",
+    "trust": "phone location",
+    "x": -126.3,
+    "z": 102.4,
+    "heading": 17,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2194.jpg",
+    "title": "IMG_2194",
+    "trust": "phone location",
+    "x": -126.6,
+    "z": 102.0,
+    "heading": 13,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2195.jpg",
+    "title": "IMG_2195",
+    "trust": "phone location",
+    "x": -135.5,
+    "z": 92.1,
+    "heading": 51,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2196.jpg",
+    "title": "IMG_2196",
+    "trust": "phone location",
+    "x": -151.0,
+    "z": 60.0,
+    "heading": 342,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2197.jpg",
+    "title": "IMG_2197",
+    "trust": "phone location",
+    "x": -149.2,
+    "z": 52.3,
+    "heading": 58,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2198.jpg",
+    "title": "IMG_2198",
+    "trust": "phone location",
+    "x": -145.5,
+    "z": 49.8,
+    "heading": 328,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2199.jpg",
+    "title": "IMG_2199",
+    "trust": "phone location",
+    "x": -147.0,
+    "z": 48.2,
+    "heading": 359,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2200.jpg",
+    "title": "IMG_2200",
+    "trust": "phone location",
+    "x": -147.2,
+    "z": 47.6,
+    "heading": 346,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2201.jpg",
+    "title": "IMG_2201",
+    "trust": "phone location",
+    "x": -148.5,
+    "z": 46.4,
+    "heading": 328,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2202.jpg",
+    "title": "IMG_2202",
+    "trust": "phone location",
+    "x": -154.9,
+    "z": 35.3,
+    "heading": 245,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2203.jpg",
+    "title": "IMG_2203",
+    "trust": "phone location",
+    "x": -154.9,
+    "z": 35.3,
+    "heading": 59,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2204.jpg",
+    "title": "IMG_2204",
+    "trust": "phone location",
+    "x": -169.9,
+    "z": 32.2,
+    "heading": 329,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2205.jpg",
+    "title": "IMG_2205",
+    "trust": "phone location",
+    "x": -170.1,
+    "z": 31.8,
+    "heading": 360,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2206.jpg",
+    "title": "IMG_2206",
+    "trust": "phone location",
+    "x": -169.9,
+    "z": 31.8,
+    "heading": 301,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2207.jpg",
+    "title": "IMG_2207",
+    "trust": "phone location",
+    "x": -169.1,
+    "z": 31.5,
+    "heading": 37,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2208.jpg",
+    "title": "IMG_2208",
+    "trust": "phone location",
+    "x": -168.9,
+    "z": 32.2,
+    "heading": 306,
+    "taken": "2026-10-11"
+  },
+  {
+    "file": "IMG_2214.jpg",
+    "title": "IMG_2214",
+    "trust": "phone location",
+    "x": -154.9,
+    "z": 44.8,
+    "heading": 2,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2215.jpg",
+    "title": "IMG_2215",
+    "trust": "phone location",
+    "x": -154.7,
+    "z": 44.8,
+    "heading": 45,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2216.jpg",
+    "title": "IMG_2216",
+    "trust": "phone location",
+    "x": -154.5,
+    "z": 44.8,
+    "heading": 112,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2217.jpg",
+    "title": "IMG_2217",
+    "trust": "phone location",
+    "x": -154.9,
+    "z": 45.8,
+    "heading": 157,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2218.jpg",
+    "title": "IMG_2218",
+    "trust": "phone location",
+    "x": -155.2,
+    "z": 46.4,
+    "heading": 199,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2219.jpg",
+    "title": "IMG_2219",
+    "trust": "phone location",
+    "x": -155.4,
+    "z": 50.4,
+    "heading": 347,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2220.jpg",
+    "title": "IMG_2220",
+    "trust": "phone location",
+    "x": -155.7,
+    "z": 51.0,
+    "heading": 149,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2223.jpg",
+    "title": "IMG_2223",
+    "trust": "phone location",
+    "x": 39.3,
+    "z": 102.0,
+    "heading": 109,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2224.jpg",
+    "title": "IMG_2224",
+    "trust": "phone location",
+    "x": 63.2,
+    "z": 130.5,
+    "heading": 52,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2225.jpg",
+    "title": "IMG_2225",
+    "trust": "phone location",
+    "x": 61.7,
+    "z": 134.2,
+    "heading": 266,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2226.jpg",
+    "title": "IMG_2226",
+    "trust": "phone location",
+    "x": 39.5,
+    "z": 155.5,
+    "heading": 315,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2227.jpg",
+    "title": "IMG_2227",
+    "trust": "phone location",
+    "x": 39.3,
+    "z": 154.9,
+    "heading": 272,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2229.jpg",
+    "title": "IMG_2229",
+    "trust": "phone location",
+    "x": -37.8,
+    "z": 135.1,
+    "heading": 222,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2230.jpg",
+    "title": "IMG_2230",
+    "trust": "phone location",
+    "x": -39.8,
+    "z": 137.3,
+    "heading": 251,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2231.jpg",
+    "title": "IMG_2231",
+    "trust": "phone location",
+    "x": -41.5,
+    "z": 137.9,
+    "heading": 220,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2232.jpg",
+    "title": "IMG_2232",
+    "trust": "phone location",
+    "x": -43.0,
+    "z": 139.1,
+    "heading": 176,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2233.jpg",
+    "title": "IMG_2233",
+    "trust": "phone location",
+    "x": -46.5,
+    "z": 141.0,
+    "heading": 291,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2234.jpg",
+    "title": "IMG_2234",
+    "trust": "phone location",
+    "x": -50.5,
+    "z": 143.2,
+    "heading": 240,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2235.jpg",
+    "title": "IMG_2235",
+    "trust": "phone location",
+    "x": -56.2,
+    "z": 145.3,
+    "heading": 333,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2236.jpg",
+    "title": "IMG_2236",
+    "trust": "phone location",
+    "x": -60.4,
+    "z": 137.3,
+    "heading": 345,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2237.jpg",
+    "title": "IMG_2237",
+    "trust": "phone location",
+    "x": -62.4,
+    "z": 134.2,
+    "heading": 333,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2238.jpg",
+    "title": "IMG_2238",
+    "trust": "phone location",
+    "x": -66.9,
+    "z": 128.6,
+    "heading": 249,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2239.jpg",
+    "title": "IMG_2239",
+    "trust": "phone location",
+    "x": -70.9,
+    "z": 120.6,
+    "heading": 353,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2240.jpg",
+    "title": "IMG_2240",
+    "trust": "phone location",
+    "x": -77.1,
+    "z": 111.3,
+    "heading": 244,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2241.jpg",
+    "title": "IMG_2241",
+    "trust": "phone location",
+    "x": -78.8,
+    "z": 106.7,
+    "heading": 333,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2242.jpg",
+    "title": "IMG_2242",
+    "trust": "phone location",
+    "x": -83.3,
+    "z": 96.5,
+    "heading": 249,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2243.jpg",
+    "title": "IMG_2243",
+    "trust": "phone location",
+    "x": -102.5,
+    "z": 75.4,
+    "heading": 243,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2244.jpg",
+    "title": "IMG_2244",
+    "trust": "phone location",
+    "x": -113.7,
+    "z": 81.6,
+    "heading": 232,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2245.jpg",
+    "title": "IMG_2245",
+    "trust": "phone location",
+    "x": -119.4,
+    "z": 94.3,
+    "heading": 268,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2246.jpg",
+    "title": "IMG_2246",
+    "trust": "phone location",
+    "x": -137.5,
+    "z": 103.3,
+    "heading": 35,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2247.jpg",
+    "title": "IMG_2247",
+    "trust": "phone location",
+    "x": -137.0,
+    "z": 103.3,
+    "heading": 28,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2248.jpg",
+    "title": "IMG_2248",
+    "trust": "phone location",
+    "x": -138.0,
+    "z": 103.3,
+    "heading": 237,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2249.jpg",
+    "title": "IMG_2249",
+    "trust": "phone location",
+    "x": -145.7,
+    "z": 108.2,
+    "heading": 330,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2250.jpg",
+    "title": "IMG_2250",
+    "trust": "phone location",
+    "x": -146.5,
+    "z": 107.0,
+    "heading": 333,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2251.jpg",
+    "title": "IMG_2251",
+    "trust": "phone location",
+    "x": -149.5,
+    "z": 107.0,
+    "heading": 331,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2252.jpg",
+    "title": "IMG_2252",
+    "trust": "phone location",
+    "x": -161.2,
+    "z": 58.4,
+    "heading": 61,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2253.jpg",
+    "title": "IMG_2253",
+    "trust": "phone location",
+    "x": -153.2,
+    "z": 55.7,
+    "heading": 141,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2254.jpg",
+    "title": "IMG_2254",
+    "trust": "phone location",
+    "x": -154.9,
+    "z": 34.3,
+    "heading": 284,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2255.jpg",
+    "title": "IMG_2255",
+    "trust": "phone location",
+    "x": -152.2,
+    "z": 39.9,
+    "heading": 250,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2256.jpg",
+    "title": "IMG_2256",
+    "trust": "phone location",
+    "x": -153.0,
+    "z": 40.8,
+    "heading": 237,
+    "taken": "2026-10-12"
+  },
+  {
+    "file": "IMG_2266.jpg",
+    "title": "IMG_2266",
+    "trust": "phone location",
+    "x": -184.8,
+    "z": 76.4,
+    "heading": 243,
+    "taken": "2026-10-12",
+    "accuracy": 14.0,
+    "observation": "Calle Cervantes exit onto Pintor Dal\u00ed: planter and opposite hedge"
+  },
+  {
+    "file": "IMG_2263.jpg",
+    "title": "IMG_2263",
+    "trust": "phone location",
+    "x": -151.5,
+    "z": 57.2,
+    "heading": 155,
+    "taken": "2026-10-12",
+    "accuracy": 4.1,
+    "observation": "Cervantes: lane and clipped planting toward the junction"
+  },
+  {
+    "file": "IMG_2261.jpg",
+    "title": "IMG_2261",
+    "trust": "phone location",
+    "x": -150.2,
+    "z": 56.9,
+    "heading": 167,
+    "taken": "2026-10-12",
+    "accuracy": 10.2,
+    "observation": "Cervantes junction: another view of the same terraces"
+  },
+  {
+    "file": "IMG_2267.jpg",
+    "title": "IMG_2267",
+    "trust": "phone location",
+    "x": -186.3,
+    "z": 76.1,
+    "heading": 328,
+    "taken": "2026-10-12",
+    "accuracy": 2.8,
+    "observation": "Pintor Dal\u00ed: house-side footpath and parking looking north"
+  },
+  {
+    "file": "IMG_2268.jpg",
+    "title": "IMG_2268",
+    "trust": "phone location",
+    "x": -185.3,
+    "z": 77.3,
+    "heading": 148,
+    "taken": "2026-10-12",
+    "accuracy": 3.4,
+    "observation": "Pintor Dal\u00ed: house-side footpath and parking looking south"
+  },
+  {
+    "file": "IMG_2262.jpg",
+    "title": "IMG_2262",
+    "trust": "phone location",
+    "x": -150.5,
+    "z": 56.9,
+    "heading": 226,
+    "taken": "2026-10-12",
+    "accuracy": 4.8,
+    "observation": "Cervantes / Elena junction: tiled ramp, white edges, side steps and drain at the foot"
+  },
+  {
+    "file": "IMG_2265.jpg",
+    "title": "IMG_2265",
+    "trust": "phone location",
+    "x": -158.4,
+    "z": 60.0,
+    "heading": 61,
+    "taken": "2026-10-12",
+    "accuracy": 4.7,
+    "observation": "Cervantes / Elena ramp from the upper landing: terracotta slope, white edges and bottom drain"
+  },
+  {
+    "file": "IMG_2260.jpg",
+    "title": "IMG_2260",
+    "trust": "phone location",
+    "x": -149.7,
+    "z": 56.9,
+    "heading": 158,
+    "taken": "2026-10-12",
+    "accuracy": 11.8,
+    "observation": "Cervantes junction: white terraces and small lawns"
+  },
+  {
+    "file": "IMG_2269.jpg",
+    "title": "IMG_2269",
+    "trust": "phone location",
+    "x": -190.5,
+    "z": 81.0,
+    "heading": 156,
+    "taken": "2026-10-12",
+    "accuracy": 4.7,
+    "observation": "Pintor Dal\u00ed: parking and chain-link fence looking south"
+  },
+  {
+    "file": "IMG_2264.jpg",
+    "title": "IMG_2264",
+    "trust": "phone location",
+    "x": -153.7,
+    "z": 58.1,
+    "heading": 239,
+    "taken": "2026-10-12",
+    "accuracy": 3.9,
+    "observation": "Cervantes: lane facing toward Pintor Dal\u00ed"
+  },
+  {
+    "file": "IMG_2270.jpg",
+    "title": "IMG_2270",
+    "trust": "phone location",
+    "x": -189.8,
+    "z": 81.9,
+    "heading": 325,
+    "taken": "2026-10-12",
+    "accuracy": 4.7,
+    "observation": "Pintor Dal\u00ed: parking and fence looking north"
+  }
 ]

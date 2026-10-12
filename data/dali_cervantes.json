@@ -41,8 +41,20 @@
           73.73
         ],
         [
+          -163.4,
+          61.9
+        ],
+        [
+          -158.91,
+          59.7
+        ],
+        [
           -155.31,
           57.95
+        ],
+        [
+          -152.66,
+          56.55
         ],
         [
           -142.05,
@@ -78,7 +90,23 @@
         ]
       ],
       "surface": "terracotta",
-      "trust": "Named and connection requested by Dave; west section from IMG_2262\u20132265, eastern continuation traced through registry/aerial corridor to the Picasso car-park aisle; approximate"
+      "trust": "Named and connection requested by Dave; west section from IMG_2262\u20132265, eastern continuation traced through registry/aerial corridor to the Picasso car-park aisle; approximate",
+      "heights": [
+        0.27,
+        0.27,
+        0.67,
+        0.67,
+        0.441,
+        0.27,
+        0.27,
+        0.27,
+        0.27,
+        0.27,
+        0.27,
+        0.27,
+        0.27,
+        0.27
+      ]
     }
   ],
   "parking": {
@@ -245,5 +273,31 @@
       "dali",
       "picasso"
     ]
-  }
+  },
+  "ramps": [
+    {
+      "id": "cervantes-elena-ramp",
+      "name": "Cervantes / Elena ramp",
+      "points": [
+        [
+          -158.91,
+          59.7
+        ],
+        [
+          -152.66,
+          56.55
+        ]
+      ],
+      "heights": [
+        0.67,
+        0.27
+      ],
+      "width": 1.8,
+      "evidence": [
+        "photo:IMG_2262.jpg",
+        "photo:IMG_2265.jpg"
+      ],
+      "trust": "Slope, white edges and foot drain confirmed by reference photos; 0.4 m rise and 7 m run approximate"
+    }
+  ]
 }

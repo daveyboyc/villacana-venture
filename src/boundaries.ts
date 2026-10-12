@@ -12,6 +12,30 @@ export function barrierRings(barriers: Boundary[]): Vec2[][] {
   }));
 }
 
+/** Shared surface sampler: the walk mesh and player use the same vertex elevations. */
+export function roadHeight(road: BoundaryReference["roads"][number], x: number, z: number): { height: number; distance: number } {
+  let distance = Infinity, height = 0.27;
+  for (let i = 0; i < road.points.length - 1; i++) {
+    const a = road.points[i], b = road.points[i + 1];
+    const hit = closestOnSegment(x, z, a[0], a[1], b[0], b[1]);
+    if (hit.d < distance) {
+      distance = hit.d;
+      const t = Math.hypot(hit.x - a[0], hit.z - a[1]) / Math.hypot(b[0] - a[0], b[1] - a[1]);
+      height = (road.heights?.[i] ?? 0.27) * (1 - t) + (road.heights?.[i + 1] ?? 0.27) * t;
+    }
+  }
+  return { height, distance };
+}
+
+export function referenceGroundHeight(reference: BoundaryReference, x: number, z: number): number {
+  for (const road of reference.roads) {
+    if (!road.heights) continue;
+    const hit = roadHeight(road, x, z);
+    if (hit.distance <= road.width / 2 + 0.18) return 0.06 + hit.height - 0.27;
+  }
+  return 0.06;
+}
+
 export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryReference): void {
   const tileCanvas=document.createElement("canvas");tileCanvas.width=tileCanvas.height=64;
   const tileCtx=tileCanvas.getContext("2d")!;tileCtx.fillStyle="#bba48d";tileCtx.fillRect(0,0,64,64);tileCtx.fillStyle="#c48061";tileCtx.fillRect(2,2,60,60);
@@ -28,8 +52,52 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
     });return [...edge(1),...edge(-1).reverse()];
   };
   for(const road of reference.roads) {
-    flat(ribbon(road.points,road.width+0.35),"#f4f0e5",0.25);
-    flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?tiles:undefined);
+    if (!road.heights) {
+      flat(ribbon(road.points,road.width+0.35),"#f4f0e5",0.25);
+      flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?tiles:undefined);
+      continue;
+    }
+    // One quad per centreline segment preserves every change of slope.
+    const strip = (width: number, color: string, lift: number, map?: THREE.Texture) => {
+      const ring = ribbon(road.points, width), n = road.points.length;
+      const positions: number[] = [], uvs: number[] = [], indices: number[] = [];
+      let along = 0;
+      for (let i = 0; i < n; i++) {
+        if (i) along += Math.hypot(road.points[i][0] - road.points[i-1][0], road.points[i][1] - road.points[i-1][1]);
+        for (const [side, p] of [ring[i], ring[2*n-1-i]].entries()) {
+          positions.push(p[0], road.heights![i] + lift, p[1]); uvs.push(side * width, along);
+        }
+        if (i < n - 1) { const k = i*2; indices.push(k,k+2,k+1,k+1,k+2,k+3); }
+      }
+      const geometry = new THREE.BufferGeometry();
+      geometry.setAttribute("position",new THREE.Float32BufferAttribute(positions,3));
+      geometry.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2)); geometry.setIndex(indices); geometry.computeVertexNormals();
+      const mesh = new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({color,map,roughness:1,side:THREE.DoubleSide}));
+      mesh.receiveShadow = true; scene.add(mesh);
+      return ring;
+    };
+    const edge = strip(road.width+0.35,"#f4f0e5",-0.015);
+    strip(road.width,"#ffffff",0,tiles);
+    // White retaining faces under the raised tiled approach, down to the ground.
+    const wallPositions: number[] = [];
+    for (let i=0;i<edge.length;i++) {
+      const a=edge[i], b=edge[(i+1)%edge.length];
+      const ay=roadHeight(road,...a).height-0.015, by=roadHeight(road,...b).height-0.015;
+      wallPositions.push(a[0],0.05,a[1],b[0],by,b[1],a[0],ay,a[1],a[0],0.05,a[1],b[0],0.05,b[1],b[0],by,b[1]);
+    }
+    const wallGeometry=new THREE.BufferGeometry();wallGeometry.setAttribute("position",new THREE.Float32BufferAttribute(wallPositions,3));wallGeometry.computeVertexNormals();
+    scene.add(new THREE.Mesh(wallGeometry,new THREE.MeshStandardMaterial({color:"#f4f0e5",roughness:1,side:THREE.DoubleSide})));
+  }
+  for (const ramp of reference.ramps ?? []) {
+    const [a,b] = ramp.points, dx=b[0]-a[0], dz=b[1]-a[1], length=Math.hypot(dx,dz);
+    const foot = ramp.heights[0] < ramp.heights[1] ? a : b;
+    const y = Math.min(...ramp.heights) + 0.01;
+    const drain = new THREE.Mesh(new THREE.BoxGeometry(ramp.width,0.018,0.22),new THREE.MeshStandardMaterial({color:"#41494a",roughness:0.8}));
+    drain.position.set(foot[0],y,foot[1]);drain.rotation.y=Math.atan2(dx,dz);scene.add(drain);
+    for (let across=-ramp.width/2+0.06;across<ramp.width/2;across+=0.10) {
+      const slat=new THREE.Mesh(new THREE.BoxGeometry(0.035,0.012,0.20),new THREE.MeshStandardMaterial({color:"#9ca3a1"}));
+      slat.position.set(foot[0]+dz/length*across,y+0.013,foot[1]-dx/length*across);slat.rotation.y=drain.rotation.y;scene.add(slat);
+    }
   }
   flat(reference.parking.ring,"#888b8b",0.26);
   const white=new THREE.MeshBasicMaterial({color:"#f6f3e8"});

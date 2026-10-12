@@ -153,6 +153,12 @@ async function boot(): Promise<void> {
       names.append(label(street.name.replace("Calle ", "C. ") + " ?", x, z, 0, "#b3261e"));
     }
   }
+  for (const ramp of skeleton.boundaryReference?.ramps ?? []) {
+    const [a,b]=ramp.points;
+    const node=el("path",{d:`M${a[0]} ${a[1]}L${b[0]} ${b[1]}`,fill:"none",stroke:"#c48061","stroke-width":ramp.width});
+    const title=el("title",{});title.textContent=`${ramp.name}: ${ramp.trust}`;node.append(title);streets.append(node);
+    names.append(label("Ramp",(a[0]+b[0])/2,(a[1]+b[1])/2-4,0,"#985339"));
+  }
   world.append(streets);
   for (const area of skeleton.areas) {
     if (!area.name || (area.kind === "car_park" && skeleton.boundaryReference?.carParks?.length)) continue;

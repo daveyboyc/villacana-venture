@@ -101,10 +101,11 @@ export type Seafront = {
 export type Boundary = { id: string; name: string; points: Vec2[]; height: number; thickness: number; solid: boolean; trust: string };
 export type BoundaryReference = {
   walkAnchor: Vec2;
+  ramps?: { id: string; name: string; points: Vec2[]; heights: number[]; width: number; evidence: string[]; trust: string }[];
   connection?: { name: string; from: Vec2; to: Vec2; destination: string; trust: string };
   carParks?: { id: string; name: string; ring: Vec2[]; at: Vec2; entrance: Vec2; trust: string }[];
   mainParking?: { ring: Vec2[]; rows: { points: Vec2[]; nose: string }[]; rotation: number };
-  roads: { name: string; width: number; points: Vec2[]; surface: string; trust: string }[];
+  roads: { name: string; width: number; points: Vec2[]; surface: string; trust: string; heights?: number[] }[];
   parking: { name: string; ring: Vec2[]; bayLine: Vec2[]; depth: number; spacing: number; trust: string };
   barriers: Boundary[];
 };

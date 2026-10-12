@@ -43,3 +43,17 @@ for photo in photos:
  assert all(k in photo for k in ['x','z','heading','accuracy']), 'Incomplete photo reference'
  assert not Image.open(ROOT/'public/photos-ref'/photo['file']).getexif(), 'Embedded photo metadata was not stripped'
 print('Boundary references: clear street routes, solid fence, 11 positioned/heading/accuracy references, stripped embedded metadata PASS')
+
+for road in ref['roads']:
+ if road.get('heights'):
+  assert len(road['heights']) == len(road['points'])
+  assert all(math.isfinite(h) for h in road['heights'])
+  for a,b,ha,hb in zip(road['points'],road['points'][1:],road['heights'],road['heights'][1:]):
+   assert abs(ha-hb)/math.dist(a,b)<0.1, 'Implausibly steep pedestrian slope'
+for ramp in ref.get('ramps',[]):
+ road=next(r for r in ref['roads'] if r['name']=='Calle Cervantes')
+ assert len(ramp['points'])==len(ramp['heights'])==2
+ for p,h in zip(ramp['points'],ramp['heights']):
+  i=road['points'].index(p);assert abs(road['heights'][i]-h)<0.001
+ assert set(ramp['evidence'])=={'photo:IMG_2262.jpg','photo:IMG_2265.jpg'}
+print('Photo-backed ramp endpoints, shared heights and walkable slope PASS')
