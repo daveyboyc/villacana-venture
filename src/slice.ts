@@ -12,6 +12,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
+import { addRaisedGround, drapeScene, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
 import { addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addSeaWall, seaWallRings } from "./south-pool";
@@ -37,6 +38,8 @@ const PASSAGE_HEADROOM = 2.6;
 let seaside: Seaside | undefined;
 /** Ground height for anything standing on the ground. */
 const groundY = (x: number, z: number): number => seaside?.inZone(x, z) ? seaside.y(x, z) : poolGroundY(x, z);
+/** The same, with the lie of the land added: for things placed after the scene is built. */
+const liveGroundY = (x: number, z: number): number => groundY(x, z) + (seaside?.inZone(x, z) ? 0 : siteY(x, z));
 
 const canvas = document.querySelector<HTMLCanvasElement>("#scene")!;
 const input: InputState = { moveX: 0, moveZ: 0, run: false, jump: false, lookDx: 0, lookDy: 0, zoom: 0, interact: false };
@@ -106,7 +109,7 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre, poolRings);
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, poolGroundY);
-  const backdrop=new THREE.Scene();addBackdrop(backdrop,centre);scene.add(backdrop);
+  const backdrop=new THREE.Scene();backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
@@ -132,6 +135,7 @@ async function boot(): Promise<void> {
   addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !skeleton.boundaryReference?.roads.some((road) => road.heights && roadHeight(road,p.x,p.z).distance < road.width/2 + 1.0)));
 
   const player = new Player();
+  player.group.userData.noDrape = true;
   scene.add(player.group);
   const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
@@ -190,7 +194,7 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
@@ -206,7 +210,7 @@ async function boot(): Promise<void> {
   const overviewCentre=new THREE.Vector3(centre.x,0.5,centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
-    project:(x,z)=>{const p=new THREE.Vector3(x,groundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
+    project:(x,z)=>{const p=new THREE.Vector3(x,liveGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
       const top=document.querySelector("#areas")!.getBoundingClientRect().bottom+8;
       const bottom=document.querySelector(".reference-tools")?.getBoundingClientRect().top??innerHeight-180;
       return {x:(p.x+1)*innerWidth/2,y,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&y>top&&y<bottom-12};},
@@ -223,6 +227,9 @@ async function boot(): Promise<void> {
   const fog = scene.fog as THREE.Fog;
   const target = new THREE.Vector3();
   const clock = new THREE.Clock();
+
+  // Everything is built on the flat; now lift it onto the ground heights.
+  drapeScene(scene, buildings);
 
   renderer.setAnimationLoop(() => {
     const dt = Math.min(clock.getDelta(), 0.05);
@@ -404,6 +411,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   }
   const ground = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ map: texture, roughness: 0.95, alphaTest: 0.5 }));
   ground.receiveShadow = true;
+  ground.userData.noDrape = true;
+  addRaisedGround(scene, ground.material, centre, span);
   ground.userData.referenceSurface=true;
   scene.add(ground);
 
@@ -481,6 +490,8 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     // A building out on the sand stands at the beach's height.
     else if(seaside?.inZone(c.x,c.z)) mesh.position.y=seaside.y(c.x,c.z);
     mesh.castShadow = mesh.receiveShadow = true;
+    // A house keeps one floor level: the ground height at its middle.
+    mesh.userData.base = [c.x, c.z];
     scene.add(mesh);
   }
 }

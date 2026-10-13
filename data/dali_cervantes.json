@@ -118,9 +118,9 @@
       "heights": [
         0.27,
         0.27,
-        0.67,
-        0.67,
-        0.441,
+        0.27,
+        0.27,
+        0.27,
         0.27,
         0.27,
         0.27,
@@ -431,7 +431,7 @@
         ]
       ],
       "heights": [
-        0.67,
+        0.27,
         0.27
       ],
       "width": 1.2,
@@ -439,7 +439,7 @@
         "photo:IMG_2262.jpg",
         "photo:IMG_2265.jpg"
       ],
-      "trust": "Slope, white edges and foot drain confirmed by reference photos; 0.4 m rise and 7 m run approximate"
+      "trust": "Slope, white edges and foot drain confirmed by reference photos. The rise is now part of the ground (data/terrain.json): 0.5 m per Dave, 7 m run approximate"
     }
   ]
 }

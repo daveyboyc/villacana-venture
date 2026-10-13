@@ -1,0 +1,14 @@
+{
+  "note": "Ground heights across the resort, in metres above the level of the middle pool. From Dave (2026-10-13): the Pintor Dalí side is about half a metre higher, and the change is mostly at short ramps on the lanes. Coordinates are turned-frame metres (sea downward).",
+  "west": {
+    "rise": 0.5,
+    "run": 7,
+    "foot": [[-180, -120], [-180, -27], [-162, -17], [-162, -12], [-176, 28], [-176, 36], [-190, 46], [-190, 170]],
+    "fade": [150, 158],
+    "evidence": {
+      "cervantes": "photo:IMG_2262.jpg, IMG_2265.jpg: tiled ramp at Elena, foot at x -162",
+      "eva": "photo:IMG_2248.jpg: Calle Eva rising towards the Dalí car park, drain across the lane at the foot; foot placed about 7 m west of the camera, approximate",
+      "elsewhere": "guessed: the line joining those two ramps, kept west of the north pool lawn, and 20 m in from Dalí south of Eva"
+    }
+  }
+}
