@@ -193,6 +193,8 @@ def rounded(ring: list[tuple[float, float]]) -> list[list[float]]:
 
 def build_buildings() -> list[dict]:
     buildings = []
+    # Parts that bridge a lane at first-floor level; the ground under them is open.
+    passages = {p["id"]: p for p in json.loads((ROOT / "data" / "passages.json").read_text())["passages"]}
     for part in read_features("buildingpart.gml.gz", "BuildingPart"):
         ring = part["rings"][0]
         if not inside(AREA, centroid(ring)):
@@ -200,6 +202,8 @@ def build_buildings() -> list[dict]:
         entry = {"id": part["id"], "floors": part["floors"], "ring": rounded(ring)}
         if len(part["rings"]) > 1:
             entry["holes"] = [rounded(r) for r in part["rings"][1:]]
+        if part["id"] in passages:
+            entry["passage"] = {k: passages[part["id"]][k] for k in ("name", "trust", "evidence")}
         buildings.append(entry)
     return buildings
 
