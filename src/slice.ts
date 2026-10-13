@@ -228,13 +228,41 @@ async function boot(): Promise<void> {
       return {x:(p.x+1)*innerWidth/2,y,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&y>top&&y<bottom-12};},
     unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const hit=raycaster.intersectObjects(scene.children,true).find(h=>h.object.userData.referenceSurface);const p=hit?.point??raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
   });
+  // Map targets stay in the same world coordinates at every zoom and bearing.
+  const checks = new THREE.Group();
+  checks.name="map-alignment-checks"; checks.userData.noDrape=true;
+  const checkLine=(points:Vec2[],closed=false,dashed=false)=>{
+    const material=dashed?new THREE.LineDashedMaterial({color:0xe22222,depthTest:false,dashSize:2,gapSize:1}):new THREE.LineBasicMaterial({color:0xe22222,depthTest:false});
+    const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints((closed?[...points,points[0]]:points).map(([x,z])=>new THREE.Vector3(x,liveGroundY(x,z)+.2,z))),material);
+    line.computeLineDistances();line.renderOrder=100;checks.add(line);
+  };
+  const platform=skeleton.buildings.find(b=>b.id===POOL_TERRACE_ID);
+  if(mainPool&&platform)checkLine(platform.ring,true);
+  if(seaside&&skeleton.seafront)checkLine(skeleton.seafront.coast,false,true);
+  scene.add(checks);
+  let showChecks=true;
+  const notes=document.querySelector<HTMLElement>("#alignment-notes")!;
+  if(matchMedia("(max-width:700px)").matches)document.querySelector<HTMLDetailsElement>("#alignment-details")!.open=false;
+  document.querySelector<HTMLButtonElement>("#alignment-platform")!.hidden=!mainPool;
+  document.querySelector<HTMLButtonElement>("#alignment-coast")!.hidden=!seaside;
   const controls=document.querySelector<HTMLElement>("#overview-controls")!;
   const action=(id:string,callback:()=>void)=>document.querySelector(id)!.addEventListener("click",callback);
   action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest,distance*1.3);});
   action("#overview-left",()=>{camYaw-=Math.PI/12;});action("#overview-right",()=>{camYaw+=Math.PI/12;});
-  action("#overview-top",()=>{pitch=1.45;});action("#overview-north",()=>{camYaw=0;});
-  action("#overview-fit",()=>{overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=1.25;camYaw=0;});
-  action("#overview-pan",()=>{overviewPan=!overviewPan;document.querySelector("#overview-pan")!.textContent=overviewPan?"Drag: pan":"Drag: rotate";document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(overviewPan));});
+  action("#overview-top",()=>{pitch=Math.PI/2;});action("#overview-north",()=>{camYaw=0;});
+  action("#overview-fit",()=>{overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=Math.PI/2;camYaw=0;});
+  const panMode=(pan:boolean)=>{
+    overviewPan=pan;
+    document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
+    document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
+  };
+  action("#overview-pan",()=>panMode(true));action("#overview-rotate",()=>panMode(false));
+  const rotation=document.querySelector<HTMLInputElement>("#overview-rotation")!;
+  rotation.addEventListener("input",()=>{camYaw=-Number(rotation.value)*Math.PI/180;});
+  action("#overview-check",()=>{showChecks=!showChecks;document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));});
+  const focus=(points:Vec2[])=>{const at=centroid(points);overviewCentre.set(at.x,.5,at.z);distance=Math.min(farthest,85);pitch=Math.PI/2;};
+  action("#alignment-platform",()=>{if(platform)focus(platform.ring);});
+  action("#alignment-coast",()=>{if(skeleton.seafront)focus(skeleton.seafront.coast);});
   document.querySelector("#overview")!.textContent=overview?"Walk":"Overview";
   const fog = scene.fog as THREE.Fog;
   const target = new THREE.Vector3();
@@ -265,9 +293,9 @@ async function boot(): Promise<void> {
       document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
       if(overview)camYaw=0;
       distance = overview ? farthest : 6;
-      pitch = overview ? 1.25 : 0.45;
+      pitch = overview ? Math.PI/2 : 0.45;
     }
-    pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, 1.45);
+    pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, overview ? Math.PI/2 : 1.45);
     distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, farthest);
     // Push the haze back as the camera rises, so the layout stays clear from above.
     fog.near = 90 + distance * 1.5;
@@ -289,6 +317,13 @@ async function boot(): Promise<void> {
     pools.update(clock.elapsedTime);
     camera.updateMatrixWorld();
     document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`${controls.offsetHeight+72}px`;
+    checks.visible=overview&&showChecks;
+    notes.hidden=!overview||!showChecks;
+    const bearing=((Math.round(-camYaw*180/Math.PI)%360)+360)%360;
+    rotation.value=String(bearing);
+    document.querySelector("#overview-bearing")!.textContent=`${bearing}°`;
+    controls.dataset.distance=distance.toFixed(2);controls.dataset.bearing=String(bearing);
+    controls.dataset.centre=`${overviewCentre.x.toFixed(2)},${overviewCentre.z.toFixed(2)}`;
     references.update();
     renderer.render(scene, camera);
 
@@ -950,11 +985,14 @@ function bindInput(): void {
       const other = [...looks.entries()].find(([id]) => id !== e.pointerId)![1];
       const before = Math.hypot(prev.x - other.x, prev.y - other.y);
       const after = Math.hypot(e.clientX - other.x, e.clientY - other.y);
-      input.zoom += (before - after) * 0.12;
+      if(before>5&&after>5) {
+        input.zoom += Math.log(before/after)/.08;
+        if(overview){const turn=Math.atan2(e.clientY-other.y,e.clientX-other.x)-Math.atan2(prev.y-other.y,prev.x-other.x);input.lookDx+=Math.atan2(Math.sin(turn),Math.cos(turn))/.0045;}
+      }
       looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
       return;
     }
-    if(overview && overviewPan) {panDx+=e.clientX-prev.x;panDy+=e.clientY-prev.y;}
+    if(overview && overviewPan && !e.shiftKey && !(e.buttons&2)) {panDx+=e.clientX-prev.x;panDy+=e.clientY-prev.y;}
     else {input.lookDx += e.clientX - prev.x;input.lookDy += e.clientY - prev.y;}
     looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
   });
@@ -968,8 +1006,10 @@ function bindInput(): void {
   };
   canvas.addEventListener("pointerup", release);
   canvas.addEventListener("pointercancel", release);
+  canvas.addEventListener("contextmenu",e=>e.preventDefault());
+  window.addEventListener("blur",()=>{keys.clear();looks.clear();stick=null;input.moveX=input.moveZ=0;});
   canvas.addEventListener("wheel", (e) => {
     e.preventDefault();
-    input.zoom += Math.sign(e.deltaY);
+    input.zoom += clamp(e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1)/100,-4,4);
   }, { passive: false });
 }

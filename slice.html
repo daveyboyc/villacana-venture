@@ -11,7 +11,7 @@
       .chip { position: fixed; background: #fffdf8e6; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; }
       #title { top: 12px; left: 12px; }
       #back { top: 12px; right: 12px; }
-      #areas { position: fixed; top: 56px; left: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+      #areas { right:12px; max-height:100px; overflow:auto; position: fixed; top: 56px; left: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
       #areas .chip { position: static; }
       #help { bottom: 12px; left: 50%; transform: translateX(-50%); white-space: nowrap; }
       #overview { bottom: 12px; right: 12px; }
@@ -21,8 +21,16 @@
       @media (pointer: coarse) { #jump { display: block; } }
       #overview-controls { position:fixed; bottom:60px; left:12px; right:12px; display:flex; gap:6px; flex-wrap:wrap; z-index:3; }
       #overview-controls[hidden] { display:none; }
-      #overview-controls button { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
+      #overview-controls button { min-height:44px; min-width:44px; background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
       #overview-controls button[aria-pressed="true"] { background:#235f94; color:white; }
+      #alignment-notes { position:fixed; top:172px; right:12px; width:min(300px, calc(100vw - 24px)); max-height:35vh; overflow:auto; padding:12px; box-sizing:border-box; background:#fffdf8f2; border:1px solid #c9bfae; border-radius:12px; font-size:13px; z-index:3; }
+      #alignment-notes[hidden] { display:none; }
+      #alignment-notes summary { font-weight:700; cursor:pointer; }
+      #alignment-notes p { margin:8px 0; line-height:1.4; }
+      #alignment-notes button { background:none; border:0; color:#af1717; text-decoration:underline; cursor:pointer; font:inherit; text-align:left; padding:4px 0; }
+      #overview-bearing { min-width:55px; align-self:center; font-variant-numeric:tabular-nums; }
+      #overview-rotation { width:120px; }
+      @media(max-width:700px) { #areas { flex-wrap:nowrap; overflow-x:auto; max-height:none; padding-bottom:4px; } #areas .chip { white-space:nowrap; } #alignment-notes { top:170px; max-height:23vh; font-size:12px; } #overview-controls { gap:4px; } #overview-controls button { padding:8px; } }
     </style>
   </head>
   <body>
@@ -37,8 +45,18 @@
     <div id="overview-controls" role="toolbar" aria-label="Overview camera controls" hidden>
       <button id="overview-in" aria-label="Zoom in">+</button><button id="overview-out" aria-label="Zoom out">−</button>
       <button id="overview-left" aria-label="Rotate left">↶</button><button id="overview-right" aria-label="Rotate right">↷</button>
-      <button id="overview-pan" aria-pressed="true">Drag: pan</button><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-fit">Fit area</button>
+      <button id="overview-pan" aria-pressed="true">Pan</button><button id="overview-rotate" aria-pressed="false">Rotate</button><input id="overview-rotation" type="range" min="0" max="360" value="0" aria-label="Overview rotation in degrees"><output id="overview-bearing" aria-live="off">0°</output><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-fit">Fit area</button><button id="overview-check" aria-pressed="true">Red map checks</button>
     </div>
+    <aside id="alignment-notes" aria-label="Map alignment notes" hidden>
+      <details id="alignment-details" open><summary>Map alignment checks</summary>
+      <p>Buildings, pools and street axes share the reference map coordinates.</p>
+      <button id="alignment-platform">1 · Main-pool platform — map outline</button>
+      <p>Solid red shows the registry outline used by the reference map. The overview uses a different photo-based platform outline; compare before changing either.</p>
+      <button id="alignment-coast">2 · Shoreline — needs review</button>
+      <p>Dashed red shows the shared map shoreline, not a verified correction. IMG_2285 is on the beach but its GPS falls in mapped sea. Check aerial alignment before moving it.</p>
+      <p>Drag to pan; select Rotate to turn. Scroll or pinch to zoom; twist two fingers to rotate. North ↑ resets the bearing.</p>
+      </details>
+    </aside>
     <button class="chip" id="overview">Overview</button>
     <div class="chip" id="help">WASD or left thumb to walk · drag to look</div>
     <script type="module" src="/src/slice.ts"></script>
