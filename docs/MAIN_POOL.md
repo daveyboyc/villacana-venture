@@ -69,11 +69,14 @@ the water.
 
 From Dave, with two web photos:
 
-- The way up to Enrique's at the west end of the platform is a flight of steps,
-  not a ramp. Eighteen steps with a white wall down each side now run from the
-  tip of the platform down to the pool deck (`levels.enriqueSteps`). Position,
-  width (1.2 m) and length are approximate. The old ramp along Calle Guillermo
-  is gone.
+- The way up to Enrique's at the west end of the platform is a flight of
+  steepish steps that curves at the top, not a ramp. The satellite photo shows
+  the treads fanning round the curve and a straight lower flight below it.
+  Eighteen terracotta steps between white walls now follow that line from the
+  platform down to the pool deck (`levels.enriqueSteps`): 3 m down over 8.3 m.
+  The platform's narrow west tip is cut back to where the steps begin. Width
+  (1.4 m) and the number of steps are approximate. The old ramp along Calle
+  Guillermo is gone. Flights of steps can now bend (`accessSection`).
 - Two tall white triangular walls stand above the west restaurant block
   (`roofFins`). As read from the photos, the front one peaks at the west end,
   where the weathervane is, and the one behind peaks towards the middle. Heights
