@@ -25,11 +25,12 @@
   ],
   "pathWidth": 1.8,
   "roofFins": {
-    "note": "Two tall white triangular walls on the west restaurant block, from Dave's web photos (2026-10-13). Turned-frame metres; heights are metres above the platform at each end of the line. Read by eye: the front wall peaks at the west end (where the weathervane is), the wall behind it peaks towards the middle.",
+    "note": "The two tall white swooping walls above the restaurant, and the block at the east end, from Dave's photos (2026-10-13), chiefly the square-on view from the lawn. Turned-frame metres. 'heights' are metres above the platform at each end of the line, 'sag' how far the top edge dips between them, 'base' where the wall starts above the glazing. Sizes are read off the photo against a 3 m storey; positions follow the registry fronts.",
     "fins": [
-      {"line": [[-75.4, 66.9], [-69.4, 60.5], [-62.2, 55.6]], "heights": [7.2, 3.2]},
-      {"line": [[-76.3, 64.7], [-73.8, 61.5], [-68.4, 56.8], [-63.0, 53.5]], "heights": [3.2, 6.6]}
-    ]
+      {"name": "west wall, over Enrique's: highest at the west end, swooping down to the middle", "line": [[-75.4, 66.9], [-69.4, 60.5], [-62.2, 55.6]], "heights": [7.3, 3.3], "sag": 1.0, "base": 3.0},
+      {"name": "east wall: highest where it meets the west wall, falling gently to the east end", "line": [[-62.0, 57.6], [-56.4, 56.8], [-48.6, 55.6], [-42.3, 55.2], [-35.0, 54.5]], "heights": [8.5, 7.3], "sag": 0.4, "base": 3.2}
+    ],
+    "tower": {"at": [-36.6, 55.0], "size": 1.8, "height": 10.5}
   },
   "terraceBuildingIds": [
     "6364501UF1366S_part3",

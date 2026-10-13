@@ -77,10 +77,13 @@ From Dave, with two web photos:
   The platform's narrow west tip is cut back to where the steps begin. Width
   (1.4 m) and the number of steps are approximate. The old ramp along Calle
   Guillermo is gone. Flights of steps can now bend (`accessSection`).
-- Two tall white triangular walls stand above the west restaurant block
-  (`roofFins`). As read from the photos, the front one peaks at the west end,
-  where the weathervane is, and the one behind peaks towards the middle. Heights
-  are estimates; the weathervane and awnings are not modelled.
+- Two tall white swooping walls stand above the restaurant (`roofFins`), taken
+  from the square-on photo from the lawn. The west one, over Enrique's, is
+  highest at its west end and swoops down to the middle. The east one is highest
+  where it meets the first and falls gently along the rest of the building. A
+  tall white block stands at the east end, where the weathervane is. Sizes are
+  read off the photo against a 3 m storey; the weathervane, awnings and the
+  "Bistro Enrique's" sign are not modelled.
 
 A link can now start the walk anywhere: add `&at=x,z` and optionally
 `&look=x,z`, in the master map's turned-frame metres. For example
