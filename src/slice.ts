@@ -1,4 +1,5 @@
 import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
+import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
@@ -137,7 +138,7 @@ async function boot(): Promise<void> {
   addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z)), walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage);
@@ -598,7 +599,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
       const [bx, bz] = ring[(i + 1) % ring.length];
       const length = Math.hypot(bx - ax, bz - az);
       if (length < WIDTH + 0.6) continue;
-      if(inCervantesWallReview((ax+bx)/2,(az+bz)/2))continue;
+      if(inCervantesWallReview((ax+bx)/2,(az+bz)/2)||inDaliThreshold((ax+bx)/2,(az+bz)/2))continue;
       const tx = (bx - ax) / length;
       const tz = (bz - az) / length;
       let nx = tz;

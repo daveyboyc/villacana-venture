@@ -1,3 +1,4 @@
+import {daliThresholdZones,daliPrivateEdge} from "./dali-threshold";
 import {cervantesPatioWalls} from "./cervantes-walls";
 import {frontageRegions} from "./frontages";
 import { asset } from "./asset";
@@ -45,6 +46,11 @@ export function mapLabels(s: Skeleton): ReferencePoint[] {
   add("main-pool-platform","Enrique’s · 90 Miles platform",poolLevelPoint([-53,56]),layout.levels.trust);
   for(const access of poolAccess) add(access.id,access.name,centre(access.points),layout.levels.trust);
   for(const r of frontageRegions)add(`frontage-${r.id}`,r.name,centre(r.ring),r.trust,r.evidence[0]);
+  for(const kind of ["bays","lawn","footpath","crossing"]) {
+    const r=daliThresholdZones.filter(q=>q.kind===kind).sort((a,b)=>b.ring.length-a.ring.length)[0];
+    if(r)add(`threshold-${kind}`,r.name,centre(r.ring),r.trust,r.evidence[0]);
+  }
+  add("dali-private-frontage","Dalí · buildings / private walls start",lineCentre(daliPrivateEdge),"Photo/satellite estimate, about 1–2 m; shared path remains outside the private edge.","IMG_2267.jpg");
   for(const w of cervantesPatioWalls)add(w.id,w.name,lineCentre(w.points),w.trust,w.evidence[0]);
   return labels;
 }
