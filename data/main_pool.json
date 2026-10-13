@@ -110,7 +110,12 @@
       ],
       "width": 2.4
     },
-    "seawardBlend": [130, 150],
+    "seawardSlope": {
+      "note": "The lawn rises evenly from pool level to the paseo. 'paseo' is a copy of skeleton.seafront.paseo in turned metres; 'flat' is the level strip beside it and 'run' the length of the slope, in metres.",
+      "paseo": [[-144.9, 147.1], [-92.3, 130.6], [-56.0, 117.1], [-37.6, 107.8], [-26.2, 101.1], [-16.3, 99.2]],
+      "flat": 2,
+      "run": 22
+    },
     "terraceRing": [
       [-37.039, 60.908],
       [-35.467, 57.502],

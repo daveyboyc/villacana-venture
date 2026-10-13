@@ -38,6 +38,22 @@ for road in skeleton['boundaryReference']['roads']:
             point = turned([a[0] + (b[0] - a[0]) * i / 100, a[1] + (b[1] - a[1]) * i / 100])
             assert not lowered(point), f"Street cut by lower deck: {road['id']}"
 assert 0 < layout['drop'] / layout['steps']['count'] <= .2
+# The seaward lawn is an even, gentle slope to the paseo, measured from the mapped paseo itself.
+slope = layout['seawardSlope']
+mapped = [turned(p) for p in skeleton['seafront']['paseo']['points']]
+assert all(min(math.dist(p, q) for q in mapped) < 0.2 for p in slope['paseo']), 'Slope no longer follows the mapped paseo'
+assert layout['drop'] / slope['run'] <= 0.15, 'Seaward lawn too steep'
+def to_paseo(p):
+    best = math.inf
+    for a, b in zip(mapped, mapped[1:]):
+        dx, dz = b[0] - a[0], b[1] - a[1]
+        t = max(0, min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dz) / (dx * dx + dz * dz)))
+        best = min(best, math.hypot(p[0] - a[0] - t * dx, p[1] - a[1] - t * dz))
+    return best
+for pool in skeleton['pools']:
+    if pool['id'] in ('main', 'toddler'):
+        assert all(to_paseo(turned(p)) >= slope['flat'] + slope['run'] + 2 for p in pool['ring']), 'Slope reaches the pool deck'
+
 assert layout['ramp']['width'] > 2 * .42
 assert layout['terraceId'] in {b['id'] for b in skeleton['buildings']}
 assert 'not API measurements' in layout['trust']

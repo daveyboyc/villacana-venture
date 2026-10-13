@@ -42,3 +42,13 @@ Validation: production build, all 18 mapped streets in both directions, steps an
 ramp in both directions with jump landings, and separate main/children's/south
 pool floor checks. The Google key remains only in the existing ignored private
 environment file; this change contains no API key or Google imagery.
+
+## Seaward slope (2026-10-13)
+
+The lawn now rises evenly from pool level to the paseo: 3 m over 22 m, about
+1 in 7, with no wall or step at the beach. The slope is measured from the mapped
+paseo line (`levels.seawardSlope` in `data/main_pool.json`). It is uphill to the
+beach only because the model keeps the beach and paseo at street level; a
+gentler, truer slope needs the whole seafront lowered, which has not been done.
+Pool names in the 3D overview sit just north of each pool so they do not cover
+the water.

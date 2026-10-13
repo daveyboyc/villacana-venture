@@ -20,8 +20,14 @@ export const poolAccess = [
 
 /** The access meshes and movement share one source of elevations. */
 export function lowerTerrainY(x:number,z:number):number {
-  const [,tz]=turned(x,z),[start,end]=levels.seawardBlend;
-  return LOWER_POOL_Y*(1-clamp((tz-start)/(end-start),0,1));
+  // An even slope from pool level up to the paseo: no step at the beach.
+  const [tx,tz]=turned(x,z),{paseo,flat,run}=levels.seawardSlope;
+  let nearest=Infinity,seaward=false;
+  for(let i=0;i<paseo.length-1;i++) {
+    const [ax,az]=paseo[i],[bx,bz]=paseo[i+1],hit=closestOnSegment(tx,tz,ax,az,bx,bz);
+    if(hit.d<nearest) {nearest=hit.d;seaward=(bx-ax)*(tz-az)-(bz-az)*(tx-ax)>=0;}
+  }
+  return seaward?0:LOWER_POOL_Y*clamp((nearest-flat)/run,0,1);
 }
 
 export function poolGroundY(x:number,z:number):number {

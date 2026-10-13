@@ -404,12 +404,15 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     }
     return best;
   };
+  const beach = skeleton.seafront?.beach.ring;
   const scatter = (step: number, wanted: string, reach: number): SpritePlacement[] => {
     const out: SpritePlacement[] = [];
     for (let x = centre.x - reach; x <= centre.x + reach; x += step) {
       for (let z = centre.z - reach; z <= centre.z + reach; z += step) {
         const jx = x + (hash(x, z) - 0.5) * step * 0.9;
         const jz = z + (hash(z, x) - 0.5) * step * 0.9;
+        // Nothing grows on the sand.
+        if (beach && pointInRing(jx, jz, beach)) continue;
         if (coverAt(jx, jz) === wanted) out.push({ x: jx, y:poolGroundY(jx,jz), z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
       }
     }

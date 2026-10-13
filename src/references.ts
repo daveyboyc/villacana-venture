@@ -8,6 +8,8 @@ export type ReferencePoint = { id: string; x: number; z: number; label: string; 
 export type ScreenPoint = { x: number; y: number; visible: boolean };
 const KEY = "villacana-reference-points-v1";
 const centre = (ring: Vec2[]): Vec2 => ring.reduce(([x,z],p)=>[x+p[0]/ring.length,z+p[1]/ring.length],[0,0] as Vec2);
+/** Just north of a pool, so its name does not cover the water in the overview. */
+const besidePool = (ring: Vec2[]): Vec2 => [centre(ring)[0],Math.min(...ring.map(p=>p[1]))-4];
 /** Place names along the lane, rather than clustering two-point streets at junctions. */
 const lineCentre = (points: Vec2[]): Vec2 => {
   const lengths=points.slice(1).map((p,i)=>Math.hypot(p[0]-points[i][0],p[1]-points[i][1]));
@@ -27,7 +29,7 @@ export function mapLabels(s: Skeleton): ReferencePoint[] {
     const points=street.points ?? street.registryPlots;
     if(points?.length) add(street.referenceId ?? `street-${key}`,street.name+(street.points?"":" ?"),street.points ? lineCentre(points) : centre(points),street.trust ?? "Mapped street");
   }
-  for (const p of s.pools) add(`pool-${p.id}`,`${p.id === "toddler" ? "Children’s" : p.id[0].toUpperCase()+p.id.slice(1)} pool`,centre(p.ring));
+  for (const p of s.pools) add(`pool-${p.id}`,`${p.id === "toddler" ? "Children’s" : p.id[0].toUpperCase()+p.id.slice(1)} pool`,besidePool(p.ring));
   for (const p of s.boundaryReference?.carParks ?? []) add(`park-${p.id}`,p.name,p.at,p.trust,p.id==="dali"?"IMG_2269.jpg":"");
   for (const p of s.boundaryReference?.ramps ?? []) add(p.id,p.name,centre(p.points),p.trust,p.evidence.find(e=>e.startsWith("photo:"))?.slice(6)??"");
   if(s.seafront) {
