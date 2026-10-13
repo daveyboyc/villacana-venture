@@ -1,6 +1,6 @@
 import { pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
-import {daliThresholdZones,daliThresholdKerbs,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
+import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
@@ -188,6 +188,7 @@ async function boot(): Promise<void> {
   }
   world.append(streets);
   const threshold=el("g",{id:"dali-cervantes-threshold"});
+  threshold.append(el("path",{d:path(daliParkingApron),fill:DALI_THRESHOLD_COLORS.bays,"fill-opacity":.35}));
   for(const zone of daliThresholdZones) {
     const node=el("path",{d:path(zone.ring),fill:DALI_THRESHOLD_COLORS[zone.kind],"fill-opacity":zone.kind==="bays"?.55:.95,"data-threshold-id":zone.id});
     const title=el("title",{});title.textContent=`${zone.name} · ${zone.trust} · ${zone.evidence.join(", ")}`;node.append(title);threshold.append(node);

@@ -6,6 +6,7 @@ import type {Vec2} from "./types";
 
 export const daliThresholdZones=threshold.zones.map(z=>({...z,ring:z.ring as Vec2[]}));
 export const daliThresholdKerbs=threshold.kerbs.map(k=>({...k,points:k.points as Vec2[]}));
+export const daliParkingApron=threshold.parkingApronRing as Vec2[];
 export const daliPrivateEdge=threshold.privateFrontageEdge as Vec2[];
 export const DALI_THRESHOLD_COLORS:Record<string,string>={bays:"#858a88",lawn:"#718658",footpath:"#c7977c",crossing:"#d8ad91"};
 export const inDaliThreshold=(x:number,z:number)=>daliThresholdZones.some(q=>pointInRing(x,z,q.ring));
@@ -27,6 +28,10 @@ export function daliBayStripeParts(a:Vec2,b:Vec2):[Vec2,Vec2][] {
 }
 
 export function addDaliThreshold(scene:THREE.Scene):void {
+  // Fill unmarked asphalt gaps between the bay runs, beneath the grass/crossing.
+  const apronShape=new THREE.Shape(daliParkingApron.map(([x,z])=>new THREE.Vector2(x,-z)));
+  const apron=new THREE.Mesh(new THREE.ShapeGeometry(apronShape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:DALI_THRESHOLD_COLORS.bays,roughness:1}));
+  apron.position.y=.276;apron.receiveShadow=true;scene.add(apron);
   for(const zone of daliThresholdZones) {
     const shape=new THREE.Shape(zone.ring.map(([x,z])=>new THREE.Vector2(x,-z)));
     const geometry=new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2);
