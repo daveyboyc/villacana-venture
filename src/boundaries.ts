@@ -1,6 +1,6 @@
 import {surfaceTexture} from "./materials";
 import * as THREE from "three";
-import { closestOnSegment } from "./geom";
+import { closestOnSegment, pointInRing } from "./geom";
 import { addSprites, type SpritePlacement } from "./sprites";
 import type { Boundary, BoundaryReference, Vec2 } from "./types";
 
@@ -121,6 +121,8 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   for(let i=0;i<bays.bayLine.length-1;i++) {
     const a=bays.bayLine[i],b=bays.bayLine[i+1];const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     for(let at=0;at<length;at+=bays.spacing) {
+      // Bays are marked only where the car park outline steps out to make room for them.
+      if(!pointInRing(a[0]+dx/length*at+dz/length*bays.depth/2,a[1]+dz/length*at-dx/length*bays.depth/2,bays.ring)) continue;
       const mesh=new THREE.Mesh(new THREE.BoxGeometry(bays.depth,0.025,0.08),white);
       mesh.position.set(a[0]+dx/length*at+dz/length*bays.depth/2,0.29,a[1]+dz/length*at-dx/length*bays.depth/2);
       mesh.rotation.y=Math.atan2(dx,dz);

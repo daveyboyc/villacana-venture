@@ -1,3 +1,4 @@
+import { pointInRing } from "./geom";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
 import kinds from "../data/kinds.json";
@@ -120,6 +121,7 @@ async function boot(): Promise<void> {
       const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
       for (let at = 0; at < length; at += bays.spacing) {
         const x = a[0] + dx / length * at, z = a[1] + dz / length * at;
+        if (!pointInRing(x + dz / length * bays.depth / 2, z - dx / length * bays.depth / 2, bays.ring)) continue;
         boundary.append(el("path", { d: `M${x} ${z}L${x + dz / length * bays.depth} ${z - dx / length * bays.depth}`, fill: "none", stroke: "#fff", "stroke-width": 0.15 }));
       }
     }

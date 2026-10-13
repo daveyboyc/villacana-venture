@@ -21,3 +21,23 @@ On the blueprint, use Parking & fence, Photos, Walk Dalí, and Walk Cervantes. W
 Validation: registry/map checks, street-route checks against houses and pools, stripped EXIF checks for all eleven web photos, and actual Player sprint/jump collision tests against every fence segment. The latter stopped the player's centre about 0.52 m from the fence centreline, matching player radius plus fence thickness.
 
 The ramp visible in IMG_2262 and IMG_2265 is now represented at the Cervantes/Elena junction with a terracotta slope, upper landing, white edging/retaining faces and a transverse drain at its foot. Road vertex heights drive both rendering and player ground height in both game views. The estimated rise is 0.4 m over about 7 m; placement, height, length and the gradual western approach remain approximate rather than a measured elevation survey. Original house and pool footprints are preserved. Open `slice.html?pool=north,middle&view=ramp` to inspect the ramp from its lower end. The blueprint marks its location.
+
+## Dalí refitted to the house boundaries (2026-10-13)
+
+Dave reported that Pintor Dalí sat too close to the houses. Measured against the
+registry outlines, the bay outline ran inside house footprints in places and the
+carriageway edge came within 0.8 m of a house. The road has been refitted
+between the photographed fence and the registry house fronts, and checked by eye
+against the aerial:
+
+- One 4 m lane running 0.4 m inside the fence (was a 6 m carriageway).
+- Nose-in bays 4.4 m deep on the house side, drawn only where a full bay stands
+  at least 0.8 m clear of a house front. `parking.runs` lists those stretches.
+  Elsewhere, where the aerial shows cars parked along the lane, no bays are drawn.
+- Cervantes, Eva and Jorge are carried on to meet the new centre line.
+- `check_street_layout.py` now fails if the bays come within 0.6 m of a house or
+  the carriageway within 1.5 m.
+
+Still approximate: the fence itself was not moved, and at the north end (by
+Loira) the aerial suggests the real road is 1 to 2 m further west than the fence
+is drawn. Bay spacing and which stretches are nose-in or parallel are estimates.
