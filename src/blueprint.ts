@@ -1,4 +1,4 @@
-import { pointInRing } from "./geom";
+import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
@@ -17,6 +17,7 @@ const ICONS: Record<string, { r: number; fill: string; edge: string; label: stri
 const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
 type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; accuracy?: number; taken?: string; observation?: string };
+type PhotoAssignment={file:string;status:string;reasons:string[];nearby:{id:string;name:string;kind:string;gap:number}[];citedBy:string[];geometryReview:string};
 type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[]; labels: Record<string, string> };
 
 const svg = document.querySelector<SVGSVGElement>("#map")!;
@@ -349,11 +350,15 @@ async function boot(): Promise<void> {
   world.append(names);
 
   // Photos: a pin where each was taken and a wedge showing where it looks.
+  const photoEvidence=el("g",{id:"photo-evidence-layer",style:"display:none;pointer-events:none"});
+  const selectedEvidence=el("g",{id:"selected-photo-context"});
+  photoEvidence.append(selectedEvidence);world.append(photoEvidence);
   const photos = el("g", {});
   const viewer = $<HTMLDivElement>("#viewer");
   const labelBox = $<HTMLInputElement>("#label");
   const labelStatus = $("#labelstatus");
   const observation=document.createElement("p");observation.id="photo-observation";viewer.querySelector("p")!.after(observation);
+  const evidenceDescription=document.createElement("p");evidenceDescription.id="photo-association";observation.after(evidenceDescription);
   labelBox.addEventListener("input", () => {
     labelStatus.textContent = "Unsaved label. Tap Save or press Done to keep it.";
   });
@@ -367,6 +372,8 @@ async function boot(): Promise<void> {
     const manifest = response.ok ? ((await response.json()) as PhotoPin[]) : [];
     const labelsFile = await fetch(asset("/photos-ref/labels.json"));
     const published = labelsFile.ok ? ((await labelsFile.json()) as Record<string, string>) : {};
+    const assignmentData=await fetch(asset("/photos-ref/assignments.json")).then(r=>r.ok?r.json():{photos:[]}).catch(()=>({photos:[]}));
+    const assignments=new Map<string,PhotoAssignment>((assignmentData.photos as PhotoAssignment[]).map(a=>[a.file,a]));
     const photoViews: { pin: PhotoPin; dot: SVGCircleElement }[] = [];
     const labelOf = (pin: PhotoPin) => edits.labels[pin.file] ?? published[pin.file] ?? "";
     const showPhoto = (photo: { pin: PhotoPin; dot: SVGCircleElement }) => {
@@ -376,6 +383,19 @@ async function boot(): Promise<void> {
       viewer.querySelector("img")!.alt = pin.title;
       viewer.querySelector("p")!.textContent = `${pin.title} · ${pin.file}${pin.taken ? " · " + pin.taken : ""}${pin.accuracy ? " · GPS ±" + pin.accuracy + " m" : ""}`;
       observation.textContent=pin.observation??"";observation.hidden=!pin.observation;
+      const association=assignments.get(pin.file);
+      evidenceDescription.textContent=association?`${association.status==="suggested"?"Suggested map context":"Map association needs checking"}: ${[...new Set(association.nearby.map(q=>q.name))].join(" · ")||"No nearby mapped area"}. ${association.status==="needs-review"?association.reasons.join("; ")+". ":""}${association.citedBy.length?`Cited by ${association.citedBy.length} model features; citation does not establish visual accuracy. `:""}Camera pin stays at its recorded position. ${association.geometryReview}.`:"";
+      evidenceDescription.hidden=!association;
+      for(const circle of photoEvidence.querySelectorAll("[data-uncertainty-photo]"))circle.setAttribute("display",circle.getAttribute("data-uncertainty-photo")===pin.file?"":"none");
+      for(const group of photos.querySelectorAll("[data-photo-file]"))group.classList.toggle("selected-photo",group.getAttribute("data-photo-file")===pin.file);
+      selectedEvidence.replaceChildren();
+      if(association&&pin.x!==undefined&&pin.z!==undefined)for(const context of association.nearby) {
+        if(context.kind!=="street")continue;
+        const road=skeleton.boundaryReference?.roads.find(r=>`street:${r.id}`===context.id);if(!road)continue;
+        selectedEvidence.append(el("path",{d:"M"+road.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#db9c24","stroke-width":road.width+.4,"stroke-opacity":.5}));
+        const hit=road.points.slice(1).map((p,i)=>closestOnSegment(pin.x!,pin.z!,...road.points[i],...p)).sort((a,b)=>a.d-b.d)[0];
+        selectedEvidence.append(el("path",{d:`M${pin.x} ${pin.z}L${hit.x} ${hit.z}`,fill:"none",stroke:"#805614","stroke-width":.3,"stroke-dasharray":".7 .5"}));
+      }
       labelBox.value = labelOf(pin);
       labelStatus.textContent = "Tap Save to keep this label on this browser. Use Send changes to share it.";
       const index = photoViews.indexOf(photo);
@@ -408,6 +428,11 @@ async function boot(): Promise<void> {
     });
     for (const pin of manifest.sort((a, b) => a.file.localeCompare(b.file))) {
       if (pin.x === undefined || pin.z === undefined) continue;
+      const association=assignments.get(pin.file);
+      const radius=pin.accuracy??10;
+      const circle=el("circle",{cx:pin.x,cy:pin.z,r:radius,fill:association?.status==="suggested"?"#4389ae":"#d99b2b","fill-opacity":.08,stroke:association?.status==="suggested"?"#4389ae":"#b27c19","stroke-width":.18,"stroke-dasharray":pin.accuracy?"1 .4":".3 .6","data-uncertainty-photo":pin.file,display:"none"});
+      const uncertaintyTitle=el("title",{});uncertaintyTitle.textContent=pin.accuracy?`${pin.file}: reported GPS ±${pin.accuracy} m`: `${pin.file}: uncertainty unknown; 10 m review search radius`;
+      circle.append(uncertaintyTitle);photoEvidence.prepend(circle);
       const g = el("g", { style: "cursor:pointer", "data-photo-file":pin.file });
       const photoTitle=el("title",{});photoTitle.textContent=labelOf(pin)||pin.title;g.append(photoTitle);
       if (pin.heading !== undefined) {
@@ -461,7 +486,7 @@ async function boot(): Promise<void> {
     `<div><i style="background:#3a6e3e"></i>Planting (from the aerial)</div><div><i style="background:#b2a088"></i>Stone path</div>` +
     `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
     `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
-    `<div><i style="background:#d6336c;border-radius:50%"></i>Photo</div>` +
+    `<div><i style="background:#d6336c;border-radius:50%"></i>Photo camera pin</div><div><i style="background:#4389ae;border-radius:50%"></i>Suggested context · GPS range</div><div><i style="background:#d99b2b;border-radius:50%"></i>Association needs review · unknown range is dashed</div>` +
     `<div><i style="background:#2f9e44;border-radius:50%"></i>Photo you have labelled</div>` +
     `<div><i style="background:#dfaa86"></i>Paseo</div><div><i style="background:#e4cc9b"></i>Beach</div>` +
     `<div><i style="background:#62b6d1"></i>Sea</div><div><i style="background:#a68a60"></i>Barraka Beach</div>` +
@@ -489,7 +514,7 @@ async function boot(): Promise<void> {
   };
   apply();
   $("#map-frontages").addEventListener("click",()=>{
-    rotation=rot;photos.style.display="none";$("#photos").setAttribute("aria-pressed","false");
+    rotation=rot;photos.style.display="none";photoEvidence.style.display="none";$("#photo-evidence").setAttribute("aria-pressed","false");photos.classList.remove("evidence-mode");$("#photos").setAttribute("aria-pressed","false");
     const points=[...frontageRegions,...daliThresholdZones].flatMap(r=>r.ring).map(([x,z])=>[x*Math.cos(a)-z*Math.sin(a),x*Math.sin(a)+z*Math.cos(a)]);
     const minX=Math.min(...points.map(p=>p[0])),maxX=Math.max(...points.map(p=>p[0])),minY=Math.min(...points.map(p=>p[1])),maxY=Math.max(...points.map(p=>p[1]));
     const width=Math.max(maxX-minX+10,(maxY-minY+20)*innerWidth/innerHeight),height=width*innerHeight/innerWidth;
@@ -607,7 +632,8 @@ async function boot(): Promise<void> {
     show(objects)(on);
     show(walls)(on);
   });
-  toggle("#photos", show(photos));
+  toggle("#photos", (on)=>{show(photos)(on);show(photoEvidence)(on&&$("#photo-evidence").getAttribute("aria-pressed")==="true");});
+  toggle("#photo-evidence", (on)=>{show(photoEvidence)(on);photos.classList.toggle("evidence-mode",on);if(on){show(photos)(true);$("#photos").setAttribute("aria-pressed","true");}});
   toggle("#boundary", show(boundary));
   toggle("#seafront", (on) => { show(seafront)(on); show(seafrontNames)(on); });
   toggle("#heights", paintRoofs);
