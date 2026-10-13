@@ -527,6 +527,11 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
             draw.line([cell(p) for p in road["points"]], fill=255, width=max(1, round(road["width"]/COVER_CELL)), joint="curve")
     cls[(np.asarray(street_image)>0) & ~built] = 0
 
+    # Photo/map-traced Dalí threshold remains distinct from broad courtyard lawns.
+    threshold = json.loads((ROOT / "data" / "dali_cervantes_threshold.json").read_text())
+    for zone in threshold["zones"]:
+        cls[mask([zone["ring"]]) & ~built] = 1 if zone["kind"] == "lawn" else 0
+
     names = list(COVER_COLOURS)
     out = np.zeros((height, width, 3), dtype=np.uint8)
     for k, name in enumerate(names):

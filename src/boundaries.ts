@@ -1,3 +1,4 @@
+import {daliBayStripeParts} from "./dali-threshold";
 import {surfaceTexture} from "./materials";
 import * as THREE from "three";
 import { closestOnSegment, pointInRing } from "./geom";
@@ -121,16 +122,20 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   for(let i=0;i<bays.bayLine.length-1;i++) {
     const a=bays.bayLine[i],b=bays.bayLine[i+1];const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     for(let at=0;at<length;at+=bays.spacing) {
-      // Bays are marked only where the car park outline steps out to make room for them.
       if(!pointInRing(a[0]+dx/length*at+dz/length*bays.depth/2,a[1]+dz/length*at-dx/length*bays.depth/2,bays.ring)) continue;
-      const mesh=new THREE.Mesh(new THREE.BoxGeometry(bays.depth,0.025,0.08),white);
-      mesh.position.set(a[0]+dx/length*at+dz/length*bays.depth/2,0.29,a[1]+dz/length*at-dx/length*bays.depth/2);
-      mesh.rotation.y=Math.atan2(dx,dz);
+      const start:Vec2=[a[0]+dx/length*at,a[1]+dz/length*at];
+      const end:Vec2=[start[0]+dz/length*bays.depth,start[1]-dx/length*bays.depth];
+      for(const [p,q] of daliBayStripeParts(start,end)) {
+      const mesh=new THREE.Mesh(new THREE.BoxGeometry(Math.hypot(q[0]-p[0],q[1]-p[1]),0.025,0.08),white);
+      mesh.position.set((p[0]+q[0])/2,0.29,(p[1]+q[1])/2);
+      mesh.rotation.y=-Math.atan2(q[1]-p[1],q[0]-p[0]);
+
       const crossesWalk = reference.roads.filter((r) => r.surface === "terracotta").some((r) => r.points.slice(1).some((b, j) => {
         const a = r.points[j];
         return closestOnSegment(mesh.position.x, mesh.position.z, a[0], a[1], b[0], b[1]).d < r.width / 2 + 0.25;
       }));
       if (!crossesWalk) scene.add(mesh);
+      }
     }
   }
   const canvas=document.createElement("canvas");canvas.width=canvas.height=64;const ctx=canvas.getContext("2d")!;

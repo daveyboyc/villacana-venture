@@ -1,4 +1,5 @@
 import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
+import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
@@ -137,9 +138,9 @@ async function boot(): Promise<void> {
   addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z)), walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
-  // Covered walk-throughs stand above head height, so they do not stop the player.
+  // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage);
   const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...cervantesPatioWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
@@ -598,7 +599,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
       const [bx, bz] = ring[(i + 1) % ring.length];
       const length = Math.hypot(bx - ax, bz - az);
       if (length < WIDTH + 0.6) continue;
-      if(inCervantesWallReview((ax+bx)/2,(az+bz)/2))continue;
+      if(inCervantesWallReview((ax+bx)/2,(az+bz)/2)||inDaliThreshold((ax+bx)/2,(az+bz)/2))continue;
       const tx = (bx - ax) / length;
       const tz = (bz - az) / length;
       let nx = tz;
@@ -628,17 +629,9 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
           box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
         }
         if (!wooden) {
-          // Plain fronts get a patio: sometimes an awning, a table and chairs, a climber.
+          // Plain fronts get a patio: sometimes an awning and a climber.
           const pick = hash(x * 0.7, z * 2.3);
           if (pick < 0.45) box(parts.canvas, 0, 2.55, 1.0, WIDTH, 0.05, 2.1, 0.32);
-          if (pick > 0.25) {
-            box(parts.white, 0, 0.72, 1.5, 0.9, 0.05, 0.9);
-            box(parts.white, 0, 0.36, 1.5, 0.08, 0.72, 0.08);
-            for (const across of [-0.8, 0.8]) {
-              box(parts.white, across, 0.45, 1.5, 0.42, 0.05, 0.42);
-              box(parts.white, across * 1.25, 0.7, 1.5, 0.05, 0.55, 0.42);
-            }
-          }
           if (pick > 0.6) climbers.push({ x: x + tx * (WIDTH / 2) + nx * 0.25, y: 1.2, z: z + tz * (WIDTH / 2) + nz * 0.25 });
         }
         if (b.floors >= 2) {

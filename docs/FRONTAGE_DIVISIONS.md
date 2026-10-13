@@ -49,3 +49,30 @@ this reviewed lane band. Unphotographed eastern frontage walls remain unasserted
 Validation: wall/photo/route/opening checks, all 18 streets walked both directions
 with the real Player and new collision rings, sprint/jump blocked at the wall,
 map/editor and pool-scene rendering without runtime errors, and production build.
+
+## Dalí parking / Cervantes entrance separation
+
+Fresh focused Google satellite and standard map views were checked on 13 October
+2026 against IMG_2267, IMG_2268 and IMG_2275. The ground photos establish the
+surface order: asphalt parking bays, a narrow grass band, a shared tiled footpath,
+then building/private frontage. The satellite view also shows a tiled Cervantes
+crossing through the parking bays to the aisle; it is not an asphalt lane.
+
+`data/dali_cervantes_threshold.json` records separate polygons for those surfaces
+in the entrance test area, about 18 m either side of Cervantes. The shared footpath
+bends/narrows around the unchanged registry facade corners; the grass strip narrows
+or disappears there. White kerbs stop at the crossing. Bay paint is clipped to the
+reviewed asphalt in both the map and 3D scene, and Cervantes patio walls start
+beyond the shared footpath. The classified cover uses the same surface distinctions.
+
+The overview's dashed private-front edge and editable labels identify where the
+shared path ends and the buildings/private walls begin. That dashed line is a
+reference boundary, not an extra physical wall or a surveyed ownership boundary.
+Approximate widths/edge placement remain at roughly 1–2 m source precision. The
+remaining Dalí frontage still needs tracing rather than extrapolating this test.
+
+Procedurally generated white patio tables and chairs have been removed from the
+pool/reference scene. The latest main-branch covered passages and removal of
+invented veranda columns are preserved. Validation includes source/photo and
+facade/wall/kerb clearances, walking the shared footpath both ways, all 18 streets
+both ways, wall collision, map/3D rendering and a production build.

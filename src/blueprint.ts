@@ -1,5 +1,6 @@
 import { pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
+import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
@@ -135,7 +136,9 @@ async function boot(): Promise<void> {
       for (let at = 0; at < length; at += bays.spacing) {
         const x = a[0] + dx / length * at, z = a[1] + dz / length * at;
         if (!pointInRing(x + dz / length * bays.depth / 2, z - dx / length * bays.depth / 2, bays.ring)) continue;
-        boundary.append(el("path", { d: `M${x} ${z}L${x + dz / length * bays.depth} ${z - dx / length * bays.depth}`, fill: "none", stroke: "#fff", "stroke-width": 0.15 }));
+        for(const [p,q] of daliBayStripeParts([x,z],[x+dz/length*bays.depth,z-dx/length*bays.depth]))
+          boundary.append(el("path", { d: `M${p.join(" ")}L${q.join(" ")}`, fill: "none", stroke: "#fff", "stroke-width": 0.15 }));
+
       }
     }
   }
@@ -184,6 +187,15 @@ async function boot(): Promise<void> {
     names.append(label("Ramp",(a[0]+b[0])/2,(a[1]+b[1])/2-4,0,"#985339"));
   }
   world.append(streets);
+  const threshold=el("g",{id:"dali-cervantes-threshold"});
+  threshold.append(el("path",{d:path(daliParkingApron),fill:DALI_THRESHOLD_COLORS.bays,"fill-opacity":.35}));
+  for(const zone of daliThresholdZones) {
+    const node=el("path",{d:path(zone.ring),fill:DALI_THRESHOLD_COLORS[zone.kind],"fill-opacity":zone.kind==="bays"?.55:.95,"data-threshold-id":zone.id});
+    const title=el("title",{});title.textContent=`${zone.name} · ${zone.trust} · ${zone.evidence.join(", ")}`;node.append(title);threshold.append(node);
+  }
+  for(const k of daliThresholdKerbs)threshold.append(el("path",{d:"M"+k.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf3","stroke-width":k.width}));
+  threshold.append(el("path",{d:"M"+daliPrivateEdge.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#8b5742","stroke-width":.18,"stroke-dasharray":".5 .3"}));
+  world.append(threshold);
   for (const area of skeleton.areas) {
     if (!area.name || (area.kind === "car_park" && skeleton.boundaryReference?.carParks?.length)) continue;
     const cx = area.ring.reduce((sum, p) => sum + p[0], 0) / area.ring.length;
@@ -454,7 +466,7 @@ async function boot(): Promise<void> {
     `<div><i style="background:#dfaa86"></i>Paseo</div><div><i style="background:#e4cc9b"></i>Beach</div>` +
     `<div><i style="background:#62b6d1"></i>Sea</div><div><i style="background:#a68a60"></i>Barraka Beach</div>` +
     `<div><i style="background:#d9b393"></i>Photo-backed front patio</div><div><i style="background:#bba58b"></i>Door approach</div><div><i style="background:#fffdf3"></i>White lawn edging</div><div><i style="background:#fffdf5"></i>White patio walls · Cervantes test</div>` +
-    `<div><i style="background:#969a99"></i>Dalí parking</div><div><i style="background:#743e36"></i>Fence · solid game limit</div>`;
+    `<div><i style="background:#858a88"></i>Dalí parking bays</div><div><i style="background:#718658"></i>Dalí grass strip</div><div><i style="background:#c7977c"></i>Shared house-side footpath</div><div><i style="background:#d8ad91"></i>Tiled Cervantes crossing</div><div><i style="background:#8b5742"></i>Private frontage starts · dashed edge</div><div><i style="background:#743e36"></i>Fence · solid game limit</div>`;
 
   // The turned bounding box of the area is the default view.
   const a = (rot * Math.PI) / 180;
@@ -478,7 +490,7 @@ async function boot(): Promise<void> {
   apply();
   $("#map-frontages").addEventListener("click",()=>{
     rotation=rot;photos.style.display="none";$("#photos").setAttribute("aria-pressed","false");
-    const points=frontageRegions.flatMap(r=>r.ring).map(([x,z])=>[x*Math.cos(a)-z*Math.sin(a),x*Math.sin(a)+z*Math.cos(a)]);
+    const points=[...frontageRegions,...daliThresholdZones].flatMap(r=>r.ring).map(([x,z])=>[x*Math.cos(a)-z*Math.sin(a),x*Math.sin(a)+z*Math.cos(a)]);
     const minX=Math.min(...points.map(p=>p[0])),maxX=Math.max(...points.map(p=>p[0])),minY=Math.min(...points.map(p=>p[1])),maxY=Math.max(...points.map(p=>p[1]));
     const width=Math.max(maxX-minX+10,(maxY-minY+20)*innerWidth/innerHeight),height=width*innerHeight/innerWidth;
     view.x=(minX+maxX-width)/2;view.y=(minY+maxY-height)/2;view.w=width;view.h=height;apply();
@@ -584,6 +596,7 @@ async function boot(): Promise<void> {
     show(photo)(on);
     traced.setAttribute("opacity", on ? "0.35" : "1");
     frontages.setAttribute("opacity",on?"0.35":"1");
+    threshold.setAttribute("opacity",on?"0.35":"1");
     seafront.setAttribute("opacity", on ? "0.4" : "1");
   });
   toggle("#streets", (on) => {
