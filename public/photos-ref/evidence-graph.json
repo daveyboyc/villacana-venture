@@ -1,0 +1,5648 @@
+{
+ "version": 1,
+ "inputDigest": "832d46a94f64dd6e6a85e05ad4dc08b655d9f68ef2f7c471f9a0cc2ef47c5cf5",
+ "summary": {
+  "needs-review": 84,
+  "suggested": 22,
+  "photos": 106,
+  "features": 276,
+  "photosCitedByModel": 15,
+  "modelFeaturesWithPhotoCitations": 18
+ },
+ "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
+ "nodes": [
+  {
+   "id": "street:dali",
+   "name": "Calle Pintor Dalí",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:cervantes",
+   "name": "Calle Miguel de Cervantes",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:loira",
+   "name": "Calle Loira",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:bolivia",
+   "name": "Calle Bolivia",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:picasso",
+   "name": "Calle Pintor Picasso",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:picasso-access",
+   "name": "Picasso car-park access",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:elena-north",
+   "name": "Calle Elena",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:elena-south",
+   "name": "Calle Elena",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:isabel",
+   "name": "Calle Isabel de Oyarzábal",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:alberto",
+   "name": "Calle Alberto",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:eva",
+   "name": "Calle Eva",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:patricia",
+   "name": "Calle Patricia",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:silvia-north",
+   "name": "Calle Silvia",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:silvia-south",
+   "name": "Calle Silvia",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:jorge",
+   "name": "Calle Jorge",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:teodoro-rojo",
+   "name": "Calle Teodoro Rojo",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:guillermo",
+   "name": "Calle Guillermo",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "street:eva-west-footpath",
+   "name": "Calle Eva",
+   "kind": "street",
+   "source": "map layout"
+  },
+  {
+   "id": "building:6165501UF1366N_part1",
+   "name": "6165501UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6165501UF1366N_part2",
+   "name": "6165501UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6165501UF1366N_part3",
+   "name": "North row alley, Dalí end",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6165501UF1366N_part4",
+   "name": "6165501UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6165501UF1366N_part5",
+   "name": "6165501UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6165501UF1366N_part6",
+   "name": "North row alley",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6263501UF1366S_part1",
+   "name": "6263501UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264401UF1366S_part1",
+   "name": "6264401UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264401UF1366S_part2",
+   "name": "6264401UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264401UF1366S_part3",
+   "name": "6264401UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264501UF1366S_part1",
+   "name": "6264501UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264501UF1366S_part2",
+   "name": "6264501UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264601UF1366S_part1",
+   "name": "6264601UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264601UF1366S_part2",
+   "name": "6264601UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264601UF1366S_part3",
+   "name": "6264601UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264601UF1366S_part4",
+   "name": "6264601UF1366S_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264601UF1366S_part5",
+   "name": "6264601UF1366S_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6264601UF1366S_part6",
+   "name": "6264601UF1366S_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265201UF1366N_part1",
+   "name": "6265201UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265201UF1366N_part2",
+   "name": "Calle Elena, Dalí end",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6265201UF1366N_part3",
+   "name": "6265201UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265201UF1366N_part4",
+   "name": "6265201UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265201UF1366N_part5",
+   "name": "Calle Elena covered walkway",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": [
+    "IMG_2255.jpg",
+    "IMG_2202.jpg",
+    "IMG_2203.jpg",
+    "IMG_2254.jpg"
+   ]
+  },
+  {
+   "id": "building:6265201UF1366N_part6",
+   "name": "6265201UF1366N_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265401UF1366N_part1",
+   "name": "Walk-through from Isabel de Oyarzábal",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6265401UF1366N_part2",
+   "name": "Walk-through from Cervantes",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6265401UF1366N_part3",
+   "name": "6265401UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265401UF1366N_part4",
+   "name": "6265401UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part2",
+   "name": "6265501UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part3",
+   "name": "6265501UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part6",
+   "name": "6265501UF1366N_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part7",
+   "name": "6265501UF1366N_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part8",
+   "name": "6265501UF1366N_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part9",
+   "name": "6265501UF1366N_part9",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part10",
+   "name": "6265501UF1366N_part10",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part11",
+   "name": "6265501UF1366N_part11",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part12",
+   "name": "6265501UF1366N_part12",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part13",
+   "name": "6265501UF1366N_part13",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265501UF1366N_part14",
+   "name": "6265501UF1366N_part14",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265601UF1366N_part1",
+   "name": "6265601UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265801UF1366N_part1",
+   "name": "6265801UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265801UF1366N_part2",
+   "name": "6265801UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265801UF1366N_part3",
+   "name": "6265801UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265801UF1366N_part4",
+   "name": "6265801UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6265801UF1366N_part5",
+   "name": "6265801UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266601UF1366N_part1",
+   "name": "North row alley, Alberto end",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6266601UF1366N_part2",
+   "name": "6266601UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266601UF1366N_part3",
+   "name": "North row alley",
+   "kind": "building",
+   "source": "registry",
+   "passage": true,
+   "evidence": []
+  },
+  {
+   "id": "building:6266601UF1366N_part4",
+   "name": "6266601UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part1",
+   "name": "6266801UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part2",
+   "name": "6266801UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part3",
+   "name": "6266801UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part4",
+   "name": "6266801UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part5",
+   "name": "6266801UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part6",
+   "name": "6266801UF1366N_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part7",
+   "name": "6266801UF1366N_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6266801UF1366N_part8",
+   "name": "6266801UF1366N_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part1",
+   "name": "6364201UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part2",
+   "name": "6364201UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part3",
+   "name": "6364201UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part4",
+   "name": "6364201UF1366S_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part5",
+   "name": "6364201UF1366S_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part6",
+   "name": "6364201UF1366S_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part7",
+   "name": "6364201UF1366S_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part8",
+   "name": "6364201UF1366S_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part9",
+   "name": "6364201UF1366S_part9",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364201UF1366S_part10",
+   "name": "6364201UF1366S_part10",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part1",
+   "name": "6364401UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part2",
+   "name": "6364401UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part3",
+   "name": "6364401UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part4",
+   "name": "6364401UF1366S_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part5",
+   "name": "6364401UF1366S_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part6",
+   "name": "6364401UF1366S_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part7",
+   "name": "6364401UF1366S_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part8",
+   "name": "6364401UF1366S_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part9",
+   "name": "6364401UF1366S_part9",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part10",
+   "name": "6364401UF1366S_part10",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364401UF1366S_part11",
+   "name": "6364401UF1366S_part11",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part1",
+   "name": "6364501UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part2",
+   "name": "6364501UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part3",
+   "name": "6364501UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part4",
+   "name": "6364501UF1366S_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part5",
+   "name": "6364501UF1366S_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part6",
+   "name": "6364501UF1366S_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part7",
+   "name": "6364501UF1366S_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364501UF1366S_part8",
+   "name": "6364501UF1366S_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364601UF1366S_part1",
+   "name": "6364601UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364601UF1366S_part2",
+   "name": "6364601UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364601UF1366S_part3",
+   "name": "6364601UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364601UF1366S_part4",
+   "name": "6364601UF1366S_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364601UF1366S_part5",
+   "name": "6364601UF1366S_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364801UF1366S_part1",
+   "name": "6364801UF1366S_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364801UF1366S_part2",
+   "name": "6364801UF1366S_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6364801UF1366S_part3",
+   "name": "6364801UF1366S_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part1",
+   "name": "6365101UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part2",
+   "name": "6365101UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part3",
+   "name": "6365101UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part4",
+   "name": "6365101UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part5",
+   "name": "6365101UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part6",
+   "name": "6365101UF1366N_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part7",
+   "name": "6365101UF1366N_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part8",
+   "name": "6365101UF1366N_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part9",
+   "name": "6365101UF1366N_part9",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365101UF1366N_part10",
+   "name": "6365101UF1366N_part10",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part1",
+   "name": "6365201UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part2",
+   "name": "6365201UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part3",
+   "name": "6365201UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part4",
+   "name": "6365201UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part5",
+   "name": "6365201UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part6",
+   "name": "6365201UF1366N_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part7",
+   "name": "6365201UF1366N_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part8",
+   "name": "6365201UF1366N_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part9",
+   "name": "6365201UF1366N_part9",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part10",
+   "name": "6365201UF1366N_part10",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part11",
+   "name": "6365201UF1366N_part11",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part12",
+   "name": "6365201UF1366N_part12",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part13",
+   "name": "6365201UF1366N_part13",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part14",
+   "name": "6365201UF1366N_part14",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part15",
+   "name": "6365201UF1366N_part15",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part16",
+   "name": "6365201UF1366N_part16",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part17",
+   "name": "6365201UF1366N_part17",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6365201UF1366N_part18",
+   "name": "6365201UF1366N_part18",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6366901UF1366N_part1",
+   "name": "6366901UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465301UF1366N_part1",
+   "name": "6465301UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465301UF1366N_part2",
+   "name": "6465301UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465301UF1366N_part3",
+   "name": "6465301UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465301UF1366N_part4",
+   "name": "6465301UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465301UF1366N_part5",
+   "name": "6465301UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465501UF1366N_part1",
+   "name": "6465501UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465501UF1366N_part2",
+   "name": "6465501UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465502UF1366N_part1",
+   "name": "6465502UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465502UF1366N_part2",
+   "name": "6465502UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465503UF1366N_part1",
+   "name": "6465503UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465503UF1366N_part2",
+   "name": "6465503UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465504UF1366N_part1",
+   "name": "6465504UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465504UF1366N_part2",
+   "name": "6465504UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465505UF1366N_part1",
+   "name": "6465505UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465505UF1366N_part2",
+   "name": "6465505UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465506UF1366N_part1",
+   "name": "6465506UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465506UF1366N_part2",
+   "name": "6465506UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465507UF1366N_part1",
+   "name": "6465507UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465507UF1366N_part2",
+   "name": "6465507UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465508UF1366N_part1",
+   "name": "6465508UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465508UF1366N_part2",
+   "name": "6465508UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465509UF1366N_part1",
+   "name": "6465509UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465509UF1366N_part2",
+   "name": "6465509UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465510UF1366N_part1",
+   "name": "6465510UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465510UF1366N_part2",
+   "name": "6465510UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465511UF1366N_part1",
+   "name": "6465511UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465511UF1366N_part2",
+   "name": "6465511UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465512UF1366N_part1",
+   "name": "6465512UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465512UF1366N_part2",
+   "name": "6465512UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465513UF1366N_part1",
+   "name": "6465513UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465513UF1366N_part2",
+   "name": "6465513UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465514UF1366N_part1",
+   "name": "6465514UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465514UF1366N_part2",
+   "name": "6465514UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465541UF1366N_part1",
+   "name": "6465541UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465541UF1366N_part2",
+   "name": "6465541UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465542UF1366N_part1",
+   "name": "6465542UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465542UF1366N_part2",
+   "name": "6465542UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465543UF1366N_part1",
+   "name": "6465543UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465543UF1366N_part2",
+   "name": "6465543UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465544UF1366N_part1",
+   "name": "6465544UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465544UF1366N_part2",
+   "name": "6465544UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465545UF1366N_part1",
+   "name": "6465545UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465545UF1366N_part2",
+   "name": "6465545UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465546UF1366N_part1",
+   "name": "6465546UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465546UF1366N_part2",
+   "name": "6465546UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465547UF1366N_part1",
+   "name": "6465547UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465547UF1366N_part2",
+   "name": "6465547UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465548UF1366N_part1",
+   "name": "6465548UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465548UF1366N_part2",
+   "name": "6465548UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465549UF1366N_part1",
+   "name": "6465549UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465549UF1366N_part2",
+   "name": "6465549UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465550UF1366N_part1",
+   "name": "6465550UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465550UF1366N_part2",
+   "name": "6465550UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465551UF1366N_part1",
+   "name": "6465551UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465551UF1366N_part2",
+   "name": "6465551UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part1",
+   "name": "6465801UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part2",
+   "name": "6465801UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part3",
+   "name": "6465801UF1366N_part3",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part4",
+   "name": "6465801UF1366N_part4",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part5",
+   "name": "6465801UF1366N_part5",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part6",
+   "name": "6465801UF1366N_part6",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part7",
+   "name": "6465801UF1366N_part7",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6465801UF1366N_part8",
+   "name": "6465801UF1366N_part8",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466326UF1366N_part2",
+   "name": "6466326UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466327UF1366N_part2",
+   "name": "6466327UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466328UF1366N_part2",
+   "name": "6466328UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466329UF1366N_part1",
+   "name": "6466329UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466329UF1366N_part2",
+   "name": "6466329UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466330UF1366N_part1",
+   "name": "6466330UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466330UF1366N_part2",
+   "name": "6466330UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466331UF1366N_part1",
+   "name": "6466331UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466331UF1366N_part2",
+   "name": "6466331UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466332UF1366N_part1",
+   "name": "6466332UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466332UF1366N_part2",
+   "name": "6466332UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466333UF1366N_part1",
+   "name": "6466333UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466333UF1366N_part2",
+   "name": "6466333UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466334UF1366N_part1",
+   "name": "6466334UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466334UF1366N_part2",
+   "name": "6466334UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466335UF1366N_part1",
+   "name": "6466335UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466335UF1366N_part2",
+   "name": "6466335UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466336UF1366N_part1",
+   "name": "6466336UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466336UF1366N_part2",
+   "name": "6466336UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466337UF1366N_part1",
+   "name": "6466337UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466337UF1366N_part2",
+   "name": "6466337UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466338UF1366N_part1",
+   "name": "6466338UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466338UF1366N_part2",
+   "name": "6466338UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466339UF1366N_part1",
+   "name": "6466339UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466339UF1366N_part2",
+   "name": "6466339UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466340UF1366N_part1",
+   "name": "6466340UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466340UF1366N_part2",
+   "name": "6466340UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466341UF1366N_part1",
+   "name": "6466341UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466341UF1366N_part2",
+   "name": "6466341UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466342UF1366N_part1",
+   "name": "6466342UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466342UF1366N_part2",
+   "name": "6466342UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466343UF1366N_part1",
+   "name": "6466343UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466343UF1366N_part2",
+   "name": "6466343UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466344UF1366N_part1",
+   "name": "6466344UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466344UF1366N_part2",
+   "name": "6466344UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466345UF1366N_part1",
+   "name": "6466345UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466346UF1366N_part1",
+   "name": "6466346UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466347UF1366N_part1",
+   "name": "6466347UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466348UF1366N_part1",
+   "name": "6466348UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466348UF1366N_part2",
+   "name": "6466348UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466349UF1366N_part1",
+   "name": "6466349UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466349UF1366N_part2",
+   "name": "6466349UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466350UF1366N_part1",
+   "name": "6466350UF1366N_part1",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "building:6466350UF1366N_part2",
+   "name": "6466350UF1366N_part2",
+   "kind": "building",
+   "source": "registry",
+   "passage": false
+  },
+  {
+   "id": "pool:toddler",
+   "name": "toddler pool",
+   "kind": "pool",
+   "source": "registry"
+  },
+  {
+   "id": "pool:main",
+   "name": "main pool",
+   "kind": "pool",
+   "source": "registry"
+  },
+  {
+   "id": "pool:north",
+   "name": "north pool",
+   "kind": "pool",
+   "source": "registry"
+  },
+  {
+   "id": "pool:middle",
+   "name": "middle pool",
+   "kind": "pool",
+   "source": "registry"
+  },
+  {
+   "id": "pool:south",
+   "name": "south pool",
+   "kind": "pool",
+   "source": "registry"
+  },
+  {
+   "id": "parking:Picasso car park",
+   "name": "Picasso car park",
+   "kind": "parking",
+   "source": "map layout"
+  },
+  {
+   "id": "parking:Dalí car park",
+   "name": "Dalí car park",
+   "kind": "parking",
+   "source": "map layout"
+  },
+  {
+   "id": "area:beach",
+   "name": "Villacana beach",
+   "kind": "area",
+   "source": "OSM/map"
+  },
+  {
+   "id": "area:sea",
+   "name": "Mediterranean Sea",
+   "kind": "area",
+   "source": "OSM/map"
+  },
+  {
+   "id": "area:paseo",
+   "name": "Paseo · Senda Litoral",
+   "kind": "area",
+   "source": "OSM/map"
+  },
+  {
+   "id": "area:barraka",
+   "name": "Barraka Beach",
+   "kind": "area",
+   "source": "map/photo interpretation"
+  },
+  {
+   "id": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "name": "Cervantes / Elena · front lawn 1",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2263.jpg"
+   ]
+  },
+  {
+   "id": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "name": "Cervantes / Elena · front lawn 2",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg"
+   ]
+  },
+  {
+   "id": "frontage_divisions.json:cervantes-west-planting",
+   "name": "Cervantes · planting along low wall",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2273.jpg",
+    "IMG_2274.jpg"
+   ]
+  },
+  {
+   "id": "frontage_divisions.json:cervantes-front-patio",
+   "name": "Cervantes / Elena · paved front enclosure",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg"
+   ]
+  },
+  {
+   "id": "frontage_divisions.json:cervantes-lawn-door-path",
+   "name": "Front-door approach between lawns",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "name": "Cervantes · north patio wall 1",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "name": "Cervantes · south patio wall 1",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "name": "Cervantes · south patio wall 2",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "name": "Cervantes · south patio wall 3",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:dali-bays-1",
+   "name": "Dalí · parking bays",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:dali-bays-2",
+   "name": "Dalí · parking bays",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "name": "Dalí · grass strip",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "name": "Dalí · grass strip",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "name": "Dalí · house-side footpath",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "name": "Dalí · house-side footpath",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "dali_cervantes_threshold.json:cervantes-parking-crossing",
+   "name": "Cervantes · tiled parking crossing",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2267.jpg",
+    "IMG_2268.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "ramp:cervantes-elena-ramp",
+   "name": "Cervantes / Elena ramp",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2262.jpg",
+    "IMG_2265.jpg"
+   ]
+  },
+  {
+   "id": "photo:IMG_2182.jpg",
+   "kind": "photo",
+   "name": "IMG_2182",
+   "file": "IMG_2182.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2183.jpg",
+   "kind": "photo",
+   "name": "IMG_2183",
+   "file": "IMG_2183.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2184.jpg",
+   "kind": "photo",
+   "name": "IMG_2184",
+   "file": "IMG_2184.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2185.jpg",
+   "kind": "photo",
+   "name": "IMG_2185",
+   "file": "IMG_2185.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2186.jpg",
+   "kind": "photo",
+   "name": "IMG_2186",
+   "file": "IMG_2186.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2187.jpg",
+   "kind": "photo",
+   "name": "IMG_2187",
+   "file": "IMG_2187.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2188.jpg",
+   "kind": "photo",
+   "name": "IMG_2188",
+   "file": "IMG_2188.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2189.jpg",
+   "kind": "photo",
+   "name": "IMG_2189",
+   "file": "IMG_2189.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2190.jpg",
+   "kind": "photo",
+   "name": "IMG_2190",
+   "file": "IMG_2190.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2191.jpg",
+   "kind": "photo",
+   "name": "IMG_2191",
+   "file": "IMG_2191.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2192.jpg",
+   "kind": "photo",
+   "name": "IMG_2192",
+   "file": "IMG_2192.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2193.jpg",
+   "kind": "photo",
+   "name": "IMG_2193",
+   "file": "IMG_2193.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2194.jpg",
+   "kind": "photo",
+   "name": "IMG_2194",
+   "file": "IMG_2194.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2195.jpg",
+   "kind": "photo",
+   "name": "IMG_2195",
+   "file": "IMG_2195.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2196.jpg",
+   "kind": "photo",
+   "name": "IMG_2196",
+   "file": "IMG_2196.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2197.jpg",
+   "kind": "photo",
+   "name": "IMG_2197",
+   "file": "IMG_2197.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2198.jpg",
+   "kind": "photo",
+   "name": "IMG_2198",
+   "file": "IMG_2198.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2199.jpg",
+   "kind": "photo",
+   "name": "IMG_2199",
+   "file": "IMG_2199.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2200.jpg",
+   "kind": "photo",
+   "name": "IMG_2200",
+   "file": "IMG_2200.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2201.jpg",
+   "kind": "photo",
+   "name": "IMG_2201",
+   "file": "IMG_2201.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2202.jpg",
+   "kind": "photo",
+   "name": "IMG_2202",
+   "file": "IMG_2202.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2203.jpg",
+   "kind": "photo",
+   "name": "IMG_2203",
+   "file": "IMG_2203.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2204.jpg",
+   "kind": "photo",
+   "name": "IMG_2204",
+   "file": "IMG_2204.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2205.jpg",
+   "kind": "photo",
+   "name": "IMG_2205",
+   "file": "IMG_2205.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2206.jpg",
+   "kind": "photo",
+   "name": "IMG_2206",
+   "file": "IMG_2206.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2207.jpg",
+   "kind": "photo",
+   "name": "IMG_2207",
+   "file": "IMG_2207.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2208.jpg",
+   "kind": "photo",
+   "name": "IMG_2208",
+   "file": "IMG_2208.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2214.jpg",
+   "kind": "photo",
+   "name": "IMG_2214",
+   "file": "IMG_2214.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2215.jpg",
+   "kind": "photo",
+   "name": "IMG_2215",
+   "file": "IMG_2215.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2216.jpg",
+   "kind": "photo",
+   "name": "IMG_2216",
+   "file": "IMG_2216.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2217.jpg",
+   "kind": "photo",
+   "name": "IMG_2217",
+   "file": "IMG_2217.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2218.jpg",
+   "kind": "photo",
+   "name": "IMG_2218",
+   "file": "IMG_2218.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2219.jpg",
+   "kind": "photo",
+   "name": "IMG_2219",
+   "file": "IMG_2219.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2220.jpg",
+   "kind": "photo",
+   "name": "IMG_2220",
+   "file": "IMG_2220.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2223.jpg",
+   "kind": "photo",
+   "name": "IMG_2223",
+   "file": "IMG_2223.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2224.jpg",
+   "kind": "photo",
+   "name": "IMG_2224",
+   "file": "IMG_2224.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2225.jpg",
+   "kind": "photo",
+   "name": "IMG_2225",
+   "file": "IMG_2225.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2226.jpg",
+   "kind": "photo",
+   "name": "IMG_2226",
+   "file": "IMG_2226.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2227.jpg",
+   "kind": "photo",
+   "name": "IMG_2227",
+   "file": "IMG_2227.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2229.jpg",
+   "kind": "photo",
+   "name": "IMG_2229",
+   "file": "IMG_2229.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2230.jpg",
+   "kind": "photo",
+   "name": "IMG_2230",
+   "file": "IMG_2230.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2231.jpg",
+   "kind": "photo",
+   "name": "IMG_2231",
+   "file": "IMG_2231.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2232.jpg",
+   "kind": "photo",
+   "name": "IMG_2232",
+   "file": "IMG_2232.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2233.jpg",
+   "kind": "photo",
+   "name": "IMG_2233",
+   "file": "IMG_2233.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2234.jpg",
+   "kind": "photo",
+   "name": "IMG_2234",
+   "file": "IMG_2234.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2235.jpg",
+   "kind": "photo",
+   "name": "IMG_2235",
+   "file": "IMG_2235.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2236.jpg",
+   "kind": "photo",
+   "name": "IMG_2236",
+   "file": "IMG_2236.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2237.jpg",
+   "kind": "photo",
+   "name": "IMG_2237",
+   "file": "IMG_2237.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2238.jpg",
+   "kind": "photo",
+   "name": "IMG_2238",
+   "file": "IMG_2238.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2239.jpg",
+   "kind": "photo",
+   "name": "IMG_2239",
+   "file": "IMG_2239.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2240.jpg",
+   "kind": "photo",
+   "name": "IMG_2240",
+   "file": "IMG_2240.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2241.jpg",
+   "kind": "photo",
+   "name": "IMG_2241",
+   "file": "IMG_2241.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2242.jpg",
+   "kind": "photo",
+   "name": "IMG_2242",
+   "file": "IMG_2242.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2243.jpg",
+   "kind": "photo",
+   "name": "IMG_2243",
+   "file": "IMG_2243.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2244.jpg",
+   "kind": "photo",
+   "name": "IMG_2244",
+   "file": "IMG_2244.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2245.jpg",
+   "kind": "photo",
+   "name": "IMG_2245",
+   "file": "IMG_2245.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2246.jpg",
+   "kind": "photo",
+   "name": "IMG_2246",
+   "file": "IMG_2246.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2247.jpg",
+   "kind": "photo",
+   "name": "IMG_2247",
+   "file": "IMG_2247.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2248.jpg",
+   "kind": "photo",
+   "name": "IMG_2248",
+   "file": "IMG_2248.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2249.jpg",
+   "kind": "photo",
+   "name": "IMG_2249",
+   "file": "IMG_2249.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2250.jpg",
+   "kind": "photo",
+   "name": "IMG_2250",
+   "file": "IMG_2250.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2251.jpg",
+   "kind": "photo",
+   "name": "IMG_2251",
+   "file": "IMG_2251.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2252.jpg",
+   "kind": "photo",
+   "name": "IMG_2252",
+   "file": "IMG_2252.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2253.jpg",
+   "kind": "photo",
+   "name": "IMG_2253",
+   "file": "IMG_2253.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2254.jpg",
+   "kind": "photo",
+   "name": "IMG_2254",
+   "file": "IMG_2254.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2255.jpg",
+   "kind": "photo",
+   "name": "IMG_2255",
+   "file": "IMG_2255.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2256.jpg",
+   "kind": "photo",
+   "name": "IMG_2256",
+   "file": "IMG_2256.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2260.jpg",
+   "kind": "photo",
+   "name": "IMG_2260",
+   "file": "IMG_2260.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2261.jpg",
+   "kind": "photo",
+   "name": "IMG_2261",
+   "file": "IMG_2261.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2262.jpg",
+   "kind": "photo",
+   "name": "IMG_2262",
+   "file": "IMG_2262.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2263.jpg",
+   "kind": "photo",
+   "name": "IMG_2263",
+   "file": "IMG_2263.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2264.jpg",
+   "kind": "photo",
+   "name": "IMG_2264",
+   "file": "IMG_2264.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2265.jpg",
+   "kind": "photo",
+   "name": "IMG_2265",
+   "file": "IMG_2265.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2266.jpg",
+   "kind": "photo",
+   "name": "IMG_2266",
+   "file": "IMG_2266.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2267.jpg",
+   "kind": "photo",
+   "name": "IMG_2267",
+   "file": "IMG_2267.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2268.jpg",
+   "kind": "photo",
+   "name": "IMG_2268",
+   "file": "IMG_2268.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2269.jpg",
+   "kind": "photo",
+   "name": "IMG_2269",
+   "file": "IMG_2269.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2270.jpg",
+   "kind": "photo",
+   "name": "IMG_2270",
+   "file": "IMG_2270.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2273.jpg",
+   "kind": "photo",
+   "name": "Cervantes: straight lane and barred windows",
+   "file": "IMG_2273.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2274.jpg",
+   "kind": "photo",
+   "name": "Cervantes: planting and paving detail",
+   "file": "IMG_2274.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2275.jpg",
+   "kind": "photo",
+   "name": "Cervantes exit onto Pintor Dalí: slope and drain",
+   "file": "IMG_2275.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2276.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: parking junction toward the sea",
+   "file": "IMG_2276.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2277.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: aisle, outer fence and white curb",
+   "file": "IMG_2277.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2278.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: seaward parking row and chain-link fence",
+   "file": "IMG_2278.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2279.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: houses, lamps and parking bays",
+   "file": "IMG_2279.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2280.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: flagstone pedestrian entrance",
+   "file": "IMG_2280.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2281.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí seaward end: turning area and fence",
+   "file": "IMG_2281.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2282.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí seaward end: wall and paseo boundary",
+   "file": "IMG_2282.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2283.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: raised stone approach and archway",
+   "file": "IMG_2283.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2284.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: pedestrian gate to the paseo",
+   "file": "IMG_2284.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2285.jpg",
+   "kind": "photo",
+   "name": "Beach: resort and restaurant frontage",
+   "file": "IMG_2285.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2286.jpg",
+   "kind": "photo",
+   "name": "Elena junction: side-by-side ramp and steps",
+   "file": "IMG_2286.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2287.jpg",
+   "kind": "photo",
+   "name": "Elena junction: private doorway and planting",
+   "file": "IMG_2287.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2288.jpg",
+   "kind": "photo",
+   "name": "Cervantes area: passage signed Calle Miguel",
+   "file": "IMG_2288.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2289.jpg",
+   "kind": "photo",
+   "name": "Cervantes exit: white-edged tiled approach",
+   "file": "IMG_2289.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2290.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: grass between bays and shared footpath",
+   "file": "IMG_2290.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2291.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: arched entrance and white facade",
+   "file": "IMG_2291.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2292.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: continuous tiled footpath and lawns",
+   "file": "IMG_2292.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2293.jpg",
+   "kind": "photo",
+   "name": "Pintor Dalí: lane entrance, ramp and drain",
+   "file": "IMG_2293.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2294.jpg",
+   "kind": "photo",
+   "name": "Dalí seaward end: flagstone approach to arch",
+   "file": "IMG_2294.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2295.jpg",
+   "kind": "photo",
+   "name": "Dalí seaward end: covered access and shutters",
+   "file": "IMG_2295.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2296.jpg",
+   "kind": "photo",
+   "name": "Dalí seaward end: parking turn and coast boundary",
+   "file": "IMG_2296.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2297.jpg",
+   "kind": "photo",
+   "name": "Dalí seaward end: narrow pedestrian gate",
+   "file": "IMG_2297.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2298.jpg",
+   "kind": "photo",
+   "name": "Beach: white seaward houses and palm",
+   "file": "IMG_2298.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2299.jpg",
+   "kind": "photo",
+   "name": "Beach: houses along the shore",
+   "file": "IMG_2299.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2300.jpg",
+   "kind": "photo",
+   "name": "Beach: pebbles, sand and distant coastline",
+   "file": "IMG_2300.jpg",
+   "status": "suggested"
+  }
+ ],
+ "edges": [
+  {
+   "from": "photo:IMG_2182.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2182.jpg",
+   "to": "building:6364401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 15.6,
+   "angleOffset": 31.8
+  },
+  {
+   "from": "photo:IMG_2182.jpg",
+   "to": "building:6364601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 21.6,
+   "angleOffset": 30.7
+  },
+  {
+   "from": "photo:IMG_2182.jpg",
+   "to": "building:6364201UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 28.5,
+   "angleOffset": 7.7
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 10.8
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "building:6364401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 12.1,
+   "angleOffset": 29.1
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "building:6364201UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 18.1,
+   "angleOffset": 29.0
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "building:6364401UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 21.3,
+   "angleOffset": 33.9
+  },
+  {
+   "from": "photo:IMG_2184.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2184.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_2184.jpg",
+   "to": "building:6364601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 8.5,
+   "angleOffset": 24.7
+  },
+  {
+   "from": "photo:IMG_2185.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_2185.jpg",
+   "to": "building:6364801UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 8.9,
+   "angleOffset": 25.7
+  },
+  {
+   "from": "photo:IMG_2185.jpg",
+   "to": "building:6364801UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 18.8,
+   "angleOffset": 14.0
+  },
+  {
+   "from": "photo:IMG_2186.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2186.jpg",
+   "to": "building:6364801UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 9.1,
+   "angleOffset": 27.1
+  },
+  {
+   "from": "photo:IMG_2186.jpg",
+   "to": "building:6364801UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 19.1,
+   "angleOffset": 16.3
+  },
+  {
+   "from": "photo:IMG_2187.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0.8
+  },
+  {
+   "from": "photo:IMG_2188.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_2188.jpg",
+   "to": "street:silvia-south",
+   "relation": "camera-nearby",
+   "gap": 4.6
+  },
+  {
+   "from": "photo:IMG_2189.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 1.2
+  },
+  {
+   "from": "photo:IMG_2189.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 4.7
+  },
+  {
+   "from": "photo:IMG_2189.jpg",
+   "to": "street:silvia-south",
+   "relation": "camera-nearby",
+   "gap": 5.6
+  },
+  {
+   "from": "photo:IMG_2189.jpg",
+   "to": "building:6264401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 10.5,
+   "angleOffset": 0.6
+  },
+  {
+   "from": "photo:IMG_2190.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_2190.jpg",
+   "to": "building:6264501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 22.3,
+   "angleOffset": 11.3
+  },
+  {
+   "from": "photo:IMG_2190.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 34.6,
+   "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2191.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 1.1
+  },
+  {
+   "from": "photo:IMG_2191.jpg",
+   "to": "building:6264501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 22.1,
+   "angleOffset": 20.0
+  },
+  {
+   "from": "photo:IMG_2191.jpg",
+   "to": "building:6364201UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 32.9,
+   "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2191.jpg",
+   "to": "building:6364201UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 41.6,
+   "angleOffset": 20.5
+  },
+  {
+   "from": "photo:IMG_2192.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2192.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 5.4
+  },
+  {
+   "from": "photo:IMG_2192.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 11.1
+  },
+  {
+   "from": "photo:IMG_2193.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_2193.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_2193.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 7.3
+  },
+  {
+   "from": "photo:IMG_2193.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 26.8,
+   "angleOffset": 33.8
+  },
+  {
+   "from": "photo:IMG_2193.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 43.4,
+   "angleOffset": 11.0
+  },
+  {
+   "from": "photo:IMG_2194.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_2194.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.8
+  },
+  {
+   "from": "photo:IMG_2194.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 6.8
+  },
+  {
+   "from": "photo:IMG_2194.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 43.0,
+   "angleOffset": 6.5
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0.4
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 6.7
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 11.2
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 30.7,
+   "angleOffset": 26.5
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 35.6,
+   "angleOffset": 28.3
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0.5
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 8.8
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 20.9,
+   "angleOffset": 0.1
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 31.6,
+   "angleOffset": 20.5
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 35.0,
+   "angleOffset": 27.0
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.8
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 6.5
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 23.8,
+   "angleOffset": 1.8
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "building:6265401UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 38.3,
+   "angleOffset": 32.8
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.5
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.1
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 10.8
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 15.4,
+   "angleOffset": 18.8
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 24.4,
+   "angleOffset": 32.0
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 29.1,
+   "angleOffset": 28.0
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.0
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 4.2
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 11.1
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 22.8,
+   "angleOffset": 4.7
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "building:6265401UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 33.6,
+   "angleOffset": 25.8
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "building:6265401UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 42.8,
+   "angleOffset": 2.6
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.1
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 4.9
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 11.5
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 22.2,
+   "angleOffset": 18.3
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "building:6265401UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 42.2,
+   "angleOffset": 10.6
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 6.6
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 11.9
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 11.0,
+   "angleOffset": 22.7
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 24.8,
+   "angleOffset": 31.3
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "building:6265401UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 40.9,
+   "angleOffset": 30.3
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 15.8,
+   "angleOffset": 25.3
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 25.2,
+   "angleOffset": 4.8
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 26.4,
+   "angleOffset": 28.5
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 13.6,
+   "angleOffset": 15.4
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "building:6265401UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.2,
+   "angleOffset": 7.7
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 10.5
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "building:6165501UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 29.0,
+   "angleOffset": 23.1
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "building:6165501UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 36.0,
+   "angleOffset": 31.2
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "building:6266601UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 37.9,
+   "angleOffset": 4.7
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 10.5
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "building:6266601UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 37.4,
+   "angleOffset": 26.3
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "building:6266601UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 39.7,
+   "angleOffset": 8.2
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 10.3
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "building:6165501UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 28.8,
+   "angleOffset": 4.3
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "building:6165501UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 29.7,
+   "angleOffset": 29.7
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "building:6165501UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 35.8,
+   "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2207.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 9.5
+  },
+  {
+   "from": "photo:IMG_2207.jpg",
+   "to": "building:6265401UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 32.4,
+   "angleOffset": 0.3
+  },
+  {
+   "from": "photo:IMG_2207.jpg",
+   "to": "building:6265401UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 38.7,
+   "angleOffset": 32.1
+  },
+  {
+   "from": "photo:IMG_2207.jpg",
+   "to": "building:6266601UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 39.3,
+   "angleOffset": 30.2
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 9.7
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "building:6165501UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 29.8,
+   "angleOffset": 1.2
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "building:6165501UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 30.7,
+   "angleOffset": 34.0
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "building:6165501UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 36.9,
+   "angleOffset": 8.9
+  },
+  {
+   "from": "photo:IMG_2214.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.9
+  },
+  {
+   "from": "photo:IMG_2214.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 11.2
+  },
+  {
+   "from": "photo:IMG_2214.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 5.4,
+   "angleOffset": 30.3
+  },
+  {
+   "from": "photo:IMG_2214.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 21.5,
+   "angleOffset": 23.9
+  },
+  {
+   "from": "photo:IMG_2214.jpg",
+   "to": "building:6265401UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 39.6,
+   "angleOffset": 5.5
+  },
+  {
+   "from": "photo:IMG_2215.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.7
+  },
+  {
+   "from": "photo:IMG_2215.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 11.1
+  },
+  {
+   "from": "photo:IMG_2215.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 21.4,
+   "angleOffset": 19.6
+  },
+  {
+   "from": "photo:IMG_2215.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 25.9,
+   "angleOffset": 32.2
+  },
+  {
+   "from": "photo:IMG_2215.jpg",
+   "to": "building:6265401UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 34.8,
+   "angleOffset": 6.2
+  },
+  {
+   "from": "photo:IMG_2216.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.6
+  },
+  {
+   "from": "photo:IMG_2216.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 11.0
+  },
+  {
+   "from": "photo:IMG_2216.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 25.7,
+   "angleOffset": 34.9
+  },
+  {
+   "from": "photo:IMG_2216.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 35.8,
+   "angleOffset": 1.8
+  },
+  {
+   "from": "photo:IMG_2217.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 4.4
+  },
+  {
+   "from": "photo:IMG_2217.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 10.3
+  },
+  {
+   "from": "photo:IMG_2217.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 11.5
+  },
+  {
+   "from": "photo:IMG_2217.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 27.5,
+   "angleOffset": 25.9
+  },
+  {
+   "from": "photo:IMG_2217.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 42.4,
+   "angleOffset": 30.5
+  },
+  {
+   "from": "photo:IMG_2218.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 5.0
+  },
+  {
+   "from": "photo:IMG_2218.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 10.0
+  },
+  {
+   "from": "photo:IMG_2218.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 10.9
+  },
+  {
+   "from": "photo:IMG_2218.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 26.9,
+   "angleOffset": 16.7
+  },
+  {
+   "from": "photo:IMG_2218.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.4,
+   "angleOffset": 15.6
+  },
+  {
+   "from": "photo:IMG_2218.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 41.8,
+   "angleOffset": 11.8
+  },
+  {
+   "from": "photo:IMG_2219.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 6.7
+  },
+  {
+   "from": "photo:IMG_2219.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 7.0
+  },
+  {
+   "from": "photo:IMG_2219.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 7.2
+  },
+  {
+   "from": "photo:IMG_2219.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 10.5,
+   "angleOffset": 1.8
+  },
+  {
+   "from": "photo:IMG_2219.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 21.5,
+   "angleOffset": 32.2
+  },
+  {
+   "from": "photo:IMG_2219.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 26.8,
+   "angleOffset": 34.6
+  },
+  {
+   "from": "photo:IMG_2220.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 6.3
+  },
+  {
+   "from": "photo:IMG_2220.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 6.5
+  },
+  {
+   "from": "photo:IMG_2220.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 7.7
+  },
+  {
+   "from": "photo:IMG_2220.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 22.3,
+   "angleOffset": 32.5
+  },
+  {
+   "from": "photo:IMG_2223.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2223.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 6.5
+  },
+  {
+   "from": "photo:IMG_2223.jpg",
+   "to": "area:barraka",
+   "relation": "camera-nearby",
+   "gap": 7.2
+  },
+  {
+   "from": "photo:IMG_2224.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2225.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2226.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2227.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2229.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2229.jpg",
+   "to": "building:6364601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 18.4,
+   "angleOffset": 31.7
+  },
+  {
+   "from": "photo:IMG_2229.jpg",
+   "to": "building:6364601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 20.5,
+   "angleOffset": 6.9
+  },
+  {
+   "from": "photo:IMG_2229.jpg",
+   "to": "building:6364201UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 28.9,
+   "angleOffset": 30.5
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "building:6364201UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 26.3,
+   "angleOffset": 4.7
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "building:6364801UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 31.6,
+   "angleOffset": 21.0
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "building:6364201UF1366S_part10",
+   "relation": "possibly-in-view",
+   "distance": 33.3,
+   "angleOffset": 11.4
+  },
+  {
+   "from": "photo:IMG_2231.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2231.jpg",
+   "to": "building:6364601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 16.1,
+   "angleOffset": 9.9
+  },
+  {
+   "from": "photo:IMG_2231.jpg",
+   "to": "building:6364801UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 29.9,
+   "angleOffset": 8.7
+  },
+  {
+   "from": "photo:IMG_2231.jpg",
+   "to": "building:6364801UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 40.3,
+   "angleOffset": 10.2
+  },
+  {
+   "from": "photo:IMG_2232.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2232.jpg",
+   "to": "building:6364601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 14.2,
+   "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2232.jpg",
+   "to": "building:6364601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 14.4,
+   "angleOffset": 31.3
+  },
+  {
+   "from": "photo:IMG_2233.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2233.jpg",
+   "to": "building:6364401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 11.7,
+   "angleOffset": 25.5
+  },
+  {
+   "from": "photo:IMG_2233.jpg",
+   "to": "building:6364201UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 19.0,
+   "angleOffset": 29.4
+  },
+  {
+   "from": "photo:IMG_2233.jpg",
+   "to": "building:6364401UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 20.8,
+   "angleOffset": 33.2
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 7.5
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "building:6364201UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 14.8,
+   "angleOffset": 27.7
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "building:6364801UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.8,
+   "angleOffset": 16.9
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "building:6364201UF1366S_part10",
+   "relation": "possibly-in-view",
+   "distance": 22.3,
+   "angleOffset": 33.8
+  },
+  {
+   "from": "photo:IMG_2235.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0.4
+  },
+  {
+   "from": "photo:IMG_2235.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.5
+  },
+  {
+   "from": "photo:IMG_2235.jpg",
+   "to": "building:6364401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 12.9,
+   "angleOffset": 34.3
+  },
+  {
+   "from": "photo:IMG_2235.jpg",
+   "to": "building:6364401UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 21.3,
+   "angleOffset": 20.4
+  },
+  {
+   "from": "photo:IMG_2235.jpg",
+   "to": "building:6364201UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 30.2,
+   "angleOffset": 30.6
+  },
+  {
+   "from": "photo:IMG_2236.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 2.0
+  },
+  {
+   "from": "photo:IMG_2236.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 9.4
+  },
+  {
+   "from": "photo:IMG_2236.jpg",
+   "to": "building:6364401UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 13.3,
+   "angleOffset": 22.6
+  },
+  {
+   "from": "photo:IMG_2236.jpg",
+   "to": "building:6364401UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 22.8,
+   "angleOffset": 6.8
+  },
+  {
+   "from": "photo:IMG_2236.jpg",
+   "to": "building:6364201UF1366S_part7",
+   "relation": "possibly-in-view",
+   "distance": 25.1,
+   "angleOffset": 33.3
+  },
+  {
+   "from": "photo:IMG_2237.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.9
+  },
+  {
+   "from": "photo:IMG_2237.jpg",
+   "to": "building:6364401UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.5,
+   "angleOffset": 23.4
+  },
+  {
+   "from": "photo:IMG_2237.jpg",
+   "to": "building:6364201UF1366S_part7",
+   "relation": "possibly-in-view",
+   "distance": 21.6,
+   "angleOffset": 23.9
+  },
+  {
+   "from": "photo:IMG_2237.jpg",
+   "to": "building:6365101UF1366N_part10",
+   "relation": "possibly-in-view",
+   "distance": 40.3,
+   "angleOffset": 19.5
+  },
+  {
+   "from": "photo:IMG_2238.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 0.8
+  },
+  {
+   "from": "photo:IMG_2238.jpg",
+   "to": "building:6364201UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 14.8,
+   "angleOffset": 18.8
+  },
+  {
+   "from": "photo:IMG_2238.jpg",
+   "to": "building:6364201UF1366S_part6",
+   "relation": "possibly-in-view",
+   "distance": 24.9,
+   "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2238.jpg",
+   "to": "building:6364201UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 25.1,
+   "angleOffset": 15.4
+  },
+  {
+   "from": "photo:IMG_2239.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.4
+  },
+  {
+   "from": "photo:IMG_2239.jpg",
+   "to": "building:6365101UF1366N_part10",
+   "relation": "possibly-in-view",
+   "distance": 26.6,
+   "angleOffset": 13.9
+  },
+  {
+   "from": "photo:IMG_2239.jpg",
+   "to": "building:6365101UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 29.8,
+   "angleOffset": 15.3
+  },
+  {
+   "from": "photo:IMG_2239.jpg",
+   "to": "building:6365101UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 31.3,
+   "angleOffset": 1.0
+  },
+  {
+   "from": "photo:IMG_2240.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 0.8
+  },
+  {
+   "from": "photo:IMG_2240.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 1.2
+  },
+  {
+   "from": "photo:IMG_2240.jpg",
+   "to": "building:6264501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 23.7,
+   "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2240.jpg",
+   "to": "building:6364201UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 24.6,
+   "angleOffset": 27.2
+  },
+  {
+   "from": "photo:IMG_2240.jpg",
+   "to": "building:6364201UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 35.4,
+   "angleOffset": 25.5
+  },
+  {
+   "from": "photo:IMG_2241.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.7
+  },
+  {
+   "from": "photo:IMG_2241.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2241.jpg",
+   "to": "building:6365101UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 24.7,
+   "angleOffset": 24.5
+  },
+  {
+   "from": "photo:IMG_2241.jpg",
+   "to": "building:6365101UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 25.5,
+   "angleOffset": 7.6
+  },
+  {
+   "from": "photo:IMG_2241.jpg",
+   "to": "building:6365101UF1366N_part9",
+   "relation": "possibly-in-view",
+   "distance": 33.4,
+   "angleOffset": 28.1
+  },
+  {
+   "from": "photo:IMG_2242.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 3.0
+  },
+  {
+   "from": "photo:IMG_2242.jpg",
+   "to": "building:6264501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 20.6,
+   "angleOffset": 12.0
+  },
+  {
+   "from": "photo:IMG_2242.jpg",
+   "to": "building:6264401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 43.6,
+   "angleOffset": 8.3
+  },
+  {
+   "from": "photo:IMG_2243.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2243.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_2244.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.0
+  },
+  {
+   "from": "photo:IMG_2245.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2245.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 10.5
+  },
+  {
+   "from": "photo:IMG_2245.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 41.6,
+   "angleOffset": 10.9
+  },
+  {
+   "from": "photo:IMG_2245.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 42.4,
+   "angleOffset": 31.6
+  },
+  {
+   "from": "photo:IMG_2246.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_2246.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 5.3
+  },
+  {
+   "from": "photo:IMG_2246.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 9.1
+  },
+  {
+   "from": "photo:IMG_2246.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 36.6,
+   "angleOffset": 25.8
+  },
+  {
+   "from": "photo:IMG_2247.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 1.2
+  },
+  {
+   "from": "photo:IMG_2247.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 4.9
+  },
+  {
+   "from": "photo:IMG_2247.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 8.6
+  },
+  {
+   "from": "photo:IMG_2247.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 36.2,
+   "angleOffset": 32.4
+  },
+  {
+   "from": "photo:IMG_2248.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2248.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 5.6
+  },
+  {
+   "from": "photo:IMG_2248.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 9.6
+  },
+  {
+   "from": "photo:IMG_2248.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 26.1,
+   "angleOffset": 31.9
+  },
+  {
+   "from": "photo:IMG_2248.jpg",
+   "to": "building:6264401UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 42.2,
+   "angleOffset": 27.8
+  },
+  {
+   "from": "photo:IMG_2249.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_2249.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 25.1,
+   "angleOffset": 5.9
+  },
+  {
+   "from": "photo:IMG_2249.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 36.5,
+   "angleOffset": 13.1
+  },
+  {
+   "from": "photo:IMG_2249.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.9,
+   "angleOffset": 21.6
+  },
+  {
+   "from": "photo:IMG_2250.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2250.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 23.7,
+   "angleOffset": 9.1
+  },
+  {
+   "from": "photo:IMG_2250.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 35.1,
+   "angleOffset": 10.8
+  },
+  {
+   "from": "photo:IMG_2250.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 36.6,
+   "angleOffset": 25.3
+  },
+  {
+   "from": "photo:IMG_2251.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_2251.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 22.1,
+   "angleOffset": 0.8
+  },
+  {
+   "from": "photo:IMG_2251.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 34.2,
+   "angleOffset": 20.3
+  },
+  {
+   "from": "photo:IMG_2251.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 34.4,
+   "angleOffset": 17.6
+  },
+  {
+   "from": "photo:IMG_2252.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2252.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 7.0
+  },
+  {
+   "from": "photo:IMG_2252.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.2,
+   "angleOffset": 2.3
+  },
+  {
+   "from": "photo:IMG_2252.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 39.5,
+   "angleOffset": 30.2
+  },
+  {
+   "from": "photo:IMG_2253.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.0
+  },
+  {
+   "from": "photo:IMG_2253.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_2253.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 7.9
+  },
+  {
+   "from": "photo:IMG_2254.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_2254.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 15.8,
+   "angleOffset": 17.4
+  },
+  {
+   "from": "photo:IMG_2254.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 41.6,
+   "angleOffset": 24.2
+  },
+  {
+   "from": "photo:IMG_2254.jpg",
+   "to": "building:6165501UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 43.0,
+   "angleOffset": 12.4
+  },
+  {
+   "from": "photo:IMG_2254.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2255.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2255.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 5.2,
+   "angleOffset": 18.2
+  },
+  {
+   "from": "photo:IMG_2255.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.1,
+   "angleOffset": 34.2
+  },
+  {
+   "from": "photo:IMG_2255.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 24.8,
+   "angleOffset": 22.1
+  },
+  {
+   "from": "photo:IMG_2255.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2256.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_2256.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 23.6,
+   "angleOffset": 8.8
+  },
+  {
+   "from": "photo:IMG_2256.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 25.8,
+   "angleOffset": 25.9
+  },
+  {
+   "from": "photo:IMG_2256.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 34.3,
+   "angleOffset": 24.6
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 3.3
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 5.7
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "frontage_divisions.json:cervantes-front-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.4
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 6.0
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 17.5,
+   "angleOffset": 33.3
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 32.6,
+   "angleOffset": 31.3
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "frontage_divisions.json:cervantes-front-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 6.3
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 17.4,
+   "angleOffset": 26.6
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 24.5,
+   "angleOffset": 12.3
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 32.5,
+   "angleOffset": 28.2
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
+   "to": "ramp:cervantes-elena-ramp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 21.2,
+   "angleOffset": 2.5
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 34.3,
+   "angleOffset": 19.7
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.3,
+   "angleOffset": 27.9
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 4.6
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 35.7,
+   "angleOffset": 6.9
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 36.7,
+   "angleOffset": 27.8
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "ramp:cervantes-elena-ramp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2266.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2266.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 5.0
+  },
+  {
+   "from": "photo:IMG_2266.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 9.4
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.4
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 3.7
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 16.6,
+   "angleOffset": 15.6
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 35.7,
+   "angleOffset": 16.5
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:dali-bays-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:dali-bays-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2267.jpg",
+   "to": "dali_cervantes_threshold.json:cervantes-parking-crossing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 4.4
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 12.3,
+   "angleOffset": 21.3
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 27.0,
+   "angleOffset": 35.0
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 33.9,
+   "angleOffset": 6.7
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:dali-bays-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:dali-bays-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2268.jpg",
+   "to": "dali_cervantes_threshold.json:cervantes-parking-crossing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2269.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.5
+  },
+  {
+   "from": "photo:IMG_2269.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 1.2
+  },
+  {
+   "from": "photo:IMG_2269.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.2
+  },
+  {
+   "from": "photo:IMG_2269.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 34.9,
+   "angleOffset": 25.2
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0.1
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.5
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 21.8,
+   "angleOffset": 31.9
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 40.7,
+   "angleOffset": 26.5
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 6.0,
+   "angleOffset": 2.1
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 21.2,
+   "angleOffset": 16.6
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "frontage_divisions.json:cervantes-west-planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 15.2,
+   "angleOffset": 20.9
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 36.1,
+   "angleOffset": 13.6
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "frontage_divisions.json:cervantes-west-planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.3
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:dali-bays-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:dali-bays-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "dali_cervantes_threshold.json:cervantes-parking-crossing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2276.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2276.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 1.1
+  },
+  {
+   "from": "photo:IMG_2277.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2277.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2278.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2278.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0.5
+  },
+  {
+   "from": "photo:IMG_2278.jpg",
+   "to": "street:eva-west-footpath",
+   "relation": "camera-nearby",
+   "gap": 2.7
+  },
+  {
+   "from": "photo:IMG_2278.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2279.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2279.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2280.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2280.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2280.jpg",
+   "to": "street:jorge",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2281.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2281.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2282.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2282.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2283.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2283.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0.1
+  },
+  {
+   "from": "photo:IMG_2283.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 23.0,
+   "angleOffset": 22.4
+  },
+  {
+   "from": "photo:IMG_2284.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2284.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0.1
+  },
+  {
+   "from": "photo:IMG_2285.jpg",
+   "to": "area:sea",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 2.9
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 8.1
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 16.5,
+   "angleOffset": 17.5
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 23.0,
+   "angleOffset": 16.9
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.0,
+   "angleOffset": 29.9
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 19.7,
+   "angleOffset": 1.6
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 30.2,
+   "angleOffset": 20.8
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 34.3,
+   "angleOffset": 28.2
+  },
+  {
+   "from": "photo:IMG_2288.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.1
+  },
+  {
+   "from": "photo:IMG_2288.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 4.1,
+   "angleOffset": 2.3
+  },
+  {
+   "from": "photo:IMG_2288.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 19.0,
+   "angleOffset": 28.6
+  },
+  {
+   "from": "photo:IMG_2288.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 25.1,
+   "angleOffset": 9.0
+  },
+  {
+   "from": "photo:IMG_2289.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2290.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0.5
+  },
+  {
+   "from": "photo:IMG_2290.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 1.5
+  },
+  {
+   "from": "photo:IMG_2290.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 16.1,
+   "angleOffset": 18.5
+  },
+  {
+   "from": "photo:IMG_2290.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 31.1,
+   "angleOffset": 27.0
+  },
+  {
+   "from": "photo:IMG_2290.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 37.1,
+   "angleOffset": 1.2
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "street:eva-west-footpath",
+   "relation": "camera-nearby",
+   "gap": 2.9
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 6.0
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 6.0
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "building:6264401UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 20.7,
+   "angleOffset": 4.2
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "building:6264401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 42.1,
+   "angleOffset": 14.9
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "building:6264601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 44.9,
+   "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "street:eva-west-footpath",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 2.9
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.9
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "building:6264401UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 5.9,
+   "angleOffset": 23.3
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "building:6264601UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 33.9,
+   "angleOffset": 19.5
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "building:6264601UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 38.9,
+   "angleOffset": 4.1
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "street:eva-west-footpath",
+   "relation": "camera-nearby",
+   "gap": 3.4
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 4.2
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "building:6264601UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 27.6,
+   "angleOffset": 28.3
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "building:6264401UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 30.7,
+   "angleOffset": 32.5
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "building:6264601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 35.5,
+   "angleOffset": 20.5
+  },
+  {
+   "from": "photo:IMG_2294.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2294.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2294.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.2,
+   "angleOffset": 12.5
+  },
+  {
+   "from": "photo:IMG_2295.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2295.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.7
+  },
+  {
+   "from": "photo:IMG_2295.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 19.5,
+   "angleOffset": 15.1
+  },
+  {
+   "from": "photo:IMG_2296.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2296.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.7
+  },
+  {
+   "from": "photo:IMG_2297.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2297.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 2.2
+  },
+  {
+   "from": "photo:IMG_2298.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2299.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2300.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 0
+  }
+ ]
+}

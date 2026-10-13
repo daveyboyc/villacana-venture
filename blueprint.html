@@ -30,7 +30,7 @@
       #labelrow button { font-size: 15px; padding: 10px 14px; border-radius: 10px; border: 0; background: #fffdf8; }
       #savelabel { background: #1c6fd1 !important; color: #fff; }
       #send[hidden] { display: none; }
-      #viewer { overflow-y:auto; padding:12px 0; box-sizing:border-box; }
+      #viewer { overflow-y:auto; padding:12px 0; box-sizing:border-box; justify-content:flex-start; }
       #photo-observation { max-width:850px; line-height:1.4; flex-shrink:0; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
       #labelstatus { max-width: 600px; }
@@ -38,6 +38,7 @@
       #map-controls button,#map-bearing { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
       #map-title { position:fixed; top:60px; left:12px; background:#fffdf8e8; border-radius:8px; padding:8px 12px; font-size:14px; }
       #picked { top:96px; }
+      #map .evidence-mode [data-photo-file]:not(.selected-photo) path { display:none; }
     </style>
   </head>
   <body>
@@ -75,6 +76,7 @@
       <button id="objects" aria-pressed="true">Objects</button>
       <button id="boundary" aria-pressed="true">Parking & fence</button>
       <button id="photos" aria-pressed="true">Photos</button>
+      <button id="photo-evidence" aria-pressed="false" title="Select a photo to inspect its GPS uncertainty and suggested street links">Photo evidence</button>
       <button id="seafront" aria-pressed="true">Seafront</button>
       <button id="heights" aria-pressed="false">Heights</button>
       <button id="key" aria-pressed="false">Key</button>

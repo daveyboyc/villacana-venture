@@ -83,3 +83,7 @@ npm run map
 ## What this slice leaves out
 
 Interiors, cars, a true height map, and your own photographs of each street. The next useful step is to drop those photographs into the frames, and, if you want the houses to match a specific block, to trace any missing footprints in OpenStreetMap and rebuild the map.
+
+Production builds require Python 3.10+ to regenerate photo associations (standard library only). Importing original photos additionally uses Pillow and pillow-heif.
+
+Photo placement and the evidence graph: see [PHOTO_MAP_WORKFLOW.md](docs/PHOTO_MAP_WORKFLOW.md). Use **Photo evidence** on the reference map to inspect camera uncertainty and proposed street associations.
