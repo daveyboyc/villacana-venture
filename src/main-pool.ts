@@ -1,3 +1,4 @@
+import {plasterMaterial} from "./materials";
 import * as THREE from "three";
 import { pointInRing } from "./geom";
 import type { SkeletonBuilding, Vec2 } from "./types";
@@ -5,7 +6,7 @@ import { LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 
 /** Dress the surveyed restaurant footprints, without moving their walls. */
 export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuilding[], pool: { x: number; z: number }): void {
-  const white = new THREE.MeshStandardMaterial({ color: "#fffdf5", roughness: 0.85 });
+  const white = plasterMaterial("#fffdf5");
   const glass = new THREE.MeshStandardMaterial({ color: "#284b58", roughness: 0.2, metalness: 0.25 });
   const blue = new THREE.MeshStandardMaterial({ color: "#254a92", roughness: 0.9, side: THREE.DoubleSide });
   const dark = new THREE.MeshStandardMaterial({ color: "#333a36", roughness: 0.85 });

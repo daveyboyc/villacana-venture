@@ -1,3 +1,4 @@
+import {surfaceTexture} from "./materials";
 import * as THREE from "three";
 import type { Vec2 } from "./types";
 
@@ -15,7 +16,7 @@ export type Pools = { update(time: number): void };
  */
 export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: string; tileColor?: string; deckY?: number }[] = []): Pools {
   const light = lightPattern();
-  const tiles = new THREE.MeshBasicMaterial({ map: light, color: "#bfeaf5" });
+  const tiles = new THREE.MeshBasicMaterial({ map: surfaceTexture("mosaic"), color: "#bfeaf5" });
   const surface = new THREE.MeshStandardMaterial({
     color: "#39b5e2",
     transparent: true,
@@ -38,6 +39,8 @@ export function addPools(scene: THREE.Scene, rings: Vec2[][], styles: { color?: 
     const floor = new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), poolTiles);
     floor.position.y = -POOL_DEPTH;
     basin.add(floor);
+    const caustics=new THREE.Mesh(floor.geometry,new THREE.MeshBasicMaterial({map:light,color:poolTiles.color,transparent:true,opacity:.22,depthWrite:false}));
+    caustics.position.y=-POOL_DEPTH+.015;basin.add(caustics);
 
     // Walls, facing inwards.
     const positions: number[] = [];
@@ -102,7 +105,7 @@ function lightPattern(): THREE.CanvasTexture {
   const g = c.getContext("2d")!;
   g.fillStyle = "#8fd6ea";
   g.fillRect(0, 0, size, size);
-  g.strokeStyle = "rgba(255,255,255,0.75)";
+  g.strokeStyle = "rgba(255,255,255,0.3)";
   g.lineWidth = 3;
   g.lineCap = "round";
   const cells = 5;
