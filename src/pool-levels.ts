@@ -57,6 +57,24 @@ export function accessSection(access:{points:Vec2[];width:number},t:number):{c:V
   return {c,l:[c[0]+nx,c[1]+nz],r:[c[0]-nx,c[1]-nz]};
 }
 
+/** Solid footprints of the walls down each side of every flight, so the player cannot step off the side. */
+export function accessWallRings():Vec2[][] {
+  const rings:Vec2[][]=[];
+  for(const access of poolAccess) {
+    const pieces=Math.max(access.count,8);
+    for(let i=0;i<pieces;i++) {
+      const A=accessSection(access,i/pieces),B=accessSection(access,(i+1)/pieces);
+      for(const side of ["l","r"] as const) {
+        // From the edge of the treads outward, a little longer than the piece so bends leave no gap.
+        const a=A[side],b=B[side],ox=(a[0]-A.c[0])*0.3,oz=(a[1]-A.c[1])*0.3,px=(b[0]-B.c[0])*0.3,pz=(b[1]-B.c[1])*0.3;
+        const ex=(b[0]-a[0])*0.15,ez=(b[1]-a[1])*0.15;
+        rings.push([[a[0]-ex,a[1]-ez],[b[0]+ex,b[1]+ez],[b[0]+px+ex,b[1]+pz+ez],[a[0]+ox-ex,a[1]+oz-ez]]);
+      }
+    }
+  }
+  return rings;
+}
+
 export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolean=()=>false):void {
   const stone=plasterMaterial("#fff7e7");stone.side=THREE.DoubleSide;
   const tile=new THREE.MeshStandardMaterial({color:"#ffffff",map:surfaceTexture("paving"),roughness:0.9,side:THREE.DoubleSide});
