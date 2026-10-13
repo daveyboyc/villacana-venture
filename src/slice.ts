@@ -51,9 +51,9 @@ async function boot(): Promise<void> {
   const connectionFocus = new URLSearchParams(location.search).get("view") === "cervantes";
   const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
-  document.querySelector("#title")!.textContent = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]} pools` : `${names[0]} pool`;
+  document.querySelector("#title")!.textContent = names.length > 3 ? "Whole resort" : names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]} pools` : `${names[0]} pool`;
   const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : daliFocus ? "&view=dali" : connectionFocus ? "&view=cervantes" : ""}`;
-  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
+  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here || (names.length > 3 && new URLSearchParams(link.search).get("pool")?.split(",").length === 4 && !link.search.includes("view="));
   COURTS = shown.map((p) => centroid(p.ring));
   const centre = {
     x: COURTS.reduce((sum, c) => sum + c.x, 0) / COURTS.length,
