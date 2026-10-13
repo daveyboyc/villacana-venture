@@ -83,6 +83,8 @@ export type SkeletonBuilding = {
   floors: number;
   ring: Vec2[];
   holes?: Vec2[][];
+  /** A covered walk-through: built only above head height, open to walk under. */
+  passage?: { name: string; trust: "photo" | "likely"; evidence: string };
 };
 
 export type SkeletonPool = {

@@ -1,0 +1,53 @@
+{
+  "about": "Covered walk-throughs: registry building parts that bridge a lane at first-floor level. The game leaves the ground open under them. 'photo' ones are confirmed; 'likely' ones are read from the registry (a thin two-storey strip joining two blocks) and the aerial (an alley leading to each end) and need Dave to confirm.",
+  "passages": [
+    {
+      "id": "6265201UF1366N_part5",
+      "name": "Calle Elena covered walkway",
+      "trust": "photo",
+      "evidence": "photo:IMG_2255.jpg, IMG_2202.jpg, IMG_2203.jpg, IMG_2254.jpg"
+    },
+    {
+      "id": "6265201UF1366N_part2",
+      "name": "Calle Elena, Dalí end",
+      "trust": "likely",
+      "evidence": "registry strip in line with the photographed walkway; aerial"
+    },
+    {
+      "id": "6165501UF1366N_part3",
+      "name": "North row alley, Dalí end",
+      "trust": "likely",
+      "evidence": "registry strip; aerial shows an alley between the two north rows"
+    },
+    {
+      "id": "6165501UF1366N_part6",
+      "name": "North row alley",
+      "trust": "likely",
+      "evidence": "registry strip; aerial"
+    },
+    {
+      "id": "6266601UF1366N_part3",
+      "name": "North row alley",
+      "trust": "likely",
+      "evidence": "registry strip; aerial"
+    },
+    {
+      "id": "6266601UF1366N_part1",
+      "name": "North row alley, Alberto end",
+      "trust": "likely",
+      "evidence": "registry strip; aerial"
+    },
+    {
+      "id": "6265401UF1366N_part1",
+      "name": "Walk-through from Isabel de Oyarzábal",
+      "trust": "likely",
+      "evidence": "registry strip; aerial"
+    },
+    {
+      "id": "6265401UF1366N_part2",
+      "name": "Walk-through from Cervantes",
+      "trust": "likely",
+      "evidence": "registry strip; aerial"
+    }
+  ]
+}
