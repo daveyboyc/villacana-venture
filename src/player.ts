@@ -177,7 +177,13 @@ export class Player {
     this.x = again.x;
     this.z = again.z;
 
-    if(world.maxGroundStep!==undefined && world.groundHeight && Math.abs(world.groundHeight(this.x,this.z)-world.groundHeight(previousX,previousZ))>world.maxGroundStep) {this.x=previousX;this.z=previousZ;}
+    if(world.maxGroundStep!==undefined && world.groundHeight && Math.abs(world.groundHeight(this.x,this.z)-world.groundHeight(previousX,previousZ))>world.maxGroundStep) {
+      // Too big a drop or rise ahead: slide along it instead of stopping dead.
+      const ground=world.groundHeight,limit=world.maxGroundStep,from=ground(previousX,previousZ),nx=this.x,nz=this.z;
+      if(Math.abs(ground(nx,previousZ)-from)<=limit) this.z=previousZ;
+      else if(Math.abs(ground(previousX,nz)-from)<=limit) this.x=previousX;
+      else {this.x=previousX;this.z=previousZ;}
+    }
 
     // Far offshore, a gentle push back toward the beach.
     const water = world.coast.query(this.x, this.z);

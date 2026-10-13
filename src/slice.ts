@@ -18,7 +18,7 @@ import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
 import { addRaisedGround, drapeScene, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
-import { addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
+import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
@@ -157,7 +157,7 @@ async function boot(): Promise<void> {
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...coastalWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
