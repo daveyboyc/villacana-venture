@@ -34,6 +34,26 @@ for road in roads.values():
 joins=[('cervantes',0,'dali'),('cervantes',-1,'picasso-access'),('elena-north',0,'isabel'),('elena-north',-1,'cervantes'),('elena-south',0,'cervantes'),('elena-south',-1,'eva'),('isabel',-1,'alberto'),('alberto',0,'loira'),('alberto',-1,'cervantes'),('eva',0,'dali'),('eva',-1,'picasso-access'),('eva-west-footpath',0,'eva'),('eva-west-footpath',-1,'patricia'),('silvia-north',0,'eva'),('silvia-north',-1,'patricia'),('silvia-south',0,'patricia'),('silvia-south',-1,'jorge'),('teodoro-rojo',0,'eva'),('teodoro-rojo',-1,'jorge'),('guillermo',0,'eva'),('patricia',-1,'guillermo'),('jorge',0,'dali'),('jorge',-1,'guillermo'),('bolivia',0,'loira'),('bolivia',-1,'picasso')]
 for child,index,parent in joins:
  assert to_line(roads[child]['points'][index],roads[parent]['points'])<.03, f'{child} misses {parent}'
+# Streets and house boundaries must agree: no carriageway or parking bay may touch a house.
+def ring_gap(ring, building):
+ pts=[]
+ for c,d in zip(ring,ring[1:]+ring[:1]):
+  n=max(1,math.ceil(math.dist(c,d)/.5));pts+=[[c[0]+(d[0]-c[0])*i/n,c[1]+(d[1]-c[1])*i/n] for i in range(n)]
+ edges=list(zip(building['ring'],building['ring'][1:]+building['ring'][:1]))
+ return min((0 if inside(*p,building['ring']) else min(distance(p,c,d) for c,d in edges)) for p in pts)
+park=s['boundaryReference']['parking']
+for building,min_x,max_x,min_z,max_z in buildings:
+ if not any(min_x-6<=p[0]<=max_x+6 and min_z-6<=p[1]<=max_z+6 for p in park['ring']):continue
+ assert ring_gap(park['ring'],building)>=.6, f"Dalí parking is against house {building['id']}"
+dali=roads['dali']
+for a,b in zip(dali['points'],dali['points'][1:]):
+ length=math.dist(a,b)
+ for i in range(math.ceil(length/.5)+1):
+  t=min(1,i*.5/length);p=[a[j]+(b[j]-a[j])*t for j in range(2)]
+  for building,min_x,max_x,min_z,max_z in buildings:
+   if not (min_x-8<=p[0]<=max_x+8 and min_z-8<=p[1]<=max_z+8):continue
+   gap=min(distance(p,c,d) for c,d in zip(building['ring'],building['ring'][1:]+building['ring'][:1]))
+   assert gap-dali['width']/2>=1.5, f"Dalí carriageway within 1.5 m of house {building['id']}"
 reference=s['streetReference']
 assert reference['checkedAt']=='2026-10-12' and reference['imageryCaptureDate'] is None
 assert all('key=' not in url for url in reference['referenceLinks'].values())
