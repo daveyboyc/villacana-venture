@@ -1,4 +1,5 @@
 import {plasterMaterial,surfaceTexture} from "./materials";
+import { addSprites } from "./sprites";
 import * as THREE from "three";
 import layout from "../data/main_pool.json";
 import { closestOnSegment, pointInRing } from "./geom";
@@ -75,16 +76,39 @@ export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolea
   for(const access of poolAccess) {
     const count=access.kind==="steps"?access.count:1;
     // A flight of steps is closed in by a white wall down each side.
+    const tall=(access as {tallWall?:{side:string;top:number;hedge?:boolean}}).tallWall,tallSide=tall?.side==="west"?-1:1;
+    const hedge:{x:number;y:number;z:number;scale:number}[]=[];
     if(access.kind==="steps") for(const side of [1,-1]) {
       const cheek:number[]=[];
       for(let i=0;i<count;i++) {
         const t=i/count,u=(i+1)/count,y=LOWER_POOL_Y*t;
         const A=accessSection(access,t),B=accessSection(access,u),[ax,az]=side>0?A.l:A.r,[bx,bz]=side>0?B.l:B.r;
-        cheek.push(ax,y+0.5,az,bx,y+0.5,bz,ax,LOWER_POOL_Y,az,ax,LOWER_POOL_Y,az,bx,y+0.5,bz,bx,LOWER_POOL_Y,bz);
+        // One side may be a tall wall with a level top; the other follows the steps down.
+        const top=tall&&side===tallSide?tall.top:y+0.5;
+        cheek.push(ax,top,az,bx,top,bz,ax,LOWER_POOL_Y,az,ax,LOWER_POOL_Y,az,bx,top,bz,bx,LOWER_POOL_Y,bz);
+        if(tall?.hedge&&side===tallSide&&i%2===0) hedge.push({x:(ax+bx)/2,y:tall.top-0.1,z:(az+bz)/2,scale:0.8});
       }
       const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute(cheek,3));
       const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));
       g.computeVertexNormals();const wall=new THREE.Mesh(g,stone);wall.castShadow=wall.receiveShadow=true;scene.add(wall);
+    }
+    if(hedge.length) addSprites(scene,"hedge",hedge);
+    // A planting bed beside the steps, held by a low curved white wall.
+    const bed=(access as {bed?:{wall:number[][];height:number}}).bed;
+    if(bed) {
+      const line=bed.wall.map(poolLevelPoint),wall:number[]=[];
+      for(let i=0;i<line.length-1;i++) {
+        const [ax,az]=line[i],[bx,bz]=line[i+1],top=LOWER_POOL_Y+bed.height;
+        wall.push(ax,top,az,bx,top,bz,ax,LOWER_POOL_Y,az,ax,LOWER_POOL_Y,az,bx,top,bz,bx,LOWER_POOL_Y,bz);
+      }
+      const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute(wall,3));
+      const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));
+      g.computeVertexNormals();const kerb=new THREE.Mesh(g,stone);kerb.castShadow=kerb.receiveShadow=true;scene.add(kerb);
+      // Soil inside the wall, up against the side of the steps.
+      const edge=[accessSection(access,0.25).l,accessSection(access,0.6).l,accessSection(access,1).l];
+      const shape=new THREE.Shape([...line,...edge].map(([x,z])=>new THREE.Vector2(x,-z)));
+      const soil=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:"#3f5a34",roughness:1}));
+      soil.position.y=LOWER_POOL_Y+bed.height-0.15;soil.receiveShadow=true;scene.add(soil);
     }
     for(let i=0;i<count;i++) {
       const t=i/count,u=(i+1)/count,y=LOWER_POOL_Y*t,by=access.kind==="steps"?y:LOWER_POOL_Y*u;
