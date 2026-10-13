@@ -14,7 +14,7 @@ export const lowerPoolHoles = (levels.lowerHoles as number[][][]).map(r=>r.map(p
 export const lowerPoolRing = levels.lowerArea.map(poolLevelPoint);
 export const poolAccess = [
   { id:"main-pool-steps",name:"Steps to big pool",...levels.steps,kind:"steps" },
-  { id:"main-pool-ramp",name:"Pool ramp · paseo end",...levels.ramp,kind:"ramp",count:0 },
+  { id:"main-pool-ramp",name:"Steps to Enrique’s",...levels.enriqueSteps,kind:"steps" },
 ].map(a=>({...a,points:a.points.map(poolLevelPoint)}));
 
 /** The access meshes and movement share one source of elevations. */
@@ -25,15 +25,35 @@ export function lowerTerrainY(_x:number,_z:number):number {
 
 export function poolGroundY(x:number,z:number):number {
   for(const access of poolAccess) {
-    const [a,b]=access.points,hit=closestOnSegment(x,z,...a,...b);
-    if(hit.d<=access.width/2) {
-      let t=Math.hypot(hit.x-a[0],hit.z-a[1])/Math.hypot(b[0]-a[0],b[1]-a[1]);
+    // A flight may bend: find the nearest stretch of its centre line and how far down it that is.
+    let nearest=Infinity,walked=0,before=0;
+    for(let i=0;i<access.points.length-1;i++) {
+      const a=access.points[i],b=access.points[i+1],hit=closestOnSegment(x,z,...a,...b);
+      if(hit.d<nearest) {nearest=hit.d;walked=before+Math.hypot(hit.x-a[0],hit.z-a[1]);}
+      before+=Math.hypot(b[0]-a[0],b[1]-a[1]);
+    }
+    if(nearest<=access.width/2) {
+      let t=walked/before;
       if(access.kind==="steps") t=Math.floor(t*access.count)/access.count;
       return LOWER_POOL_Y*t;
     }
   }
   if(!pointInRing(x,z,lowerPoolRing)||lowerPoolHoles.some(r=>pointInRing(x,z,r))) return 0;
   return lowerTerrainY(x,z);
+}
+
+/** The centre and both edges of a flight, a fraction `t` of the way down its centre line. */
+export function accessSection(access:{points:Vec2[];width:number},t:number):{c:Vec2;l:Vec2;r:Vec2} {
+  const pts=access.points,lengths=pts.slice(1).map((p,i)=>Math.hypot(p[0]-pts[i][0],p[1]-pts[i][1])),total=lengths.reduce((a,b)=>a+b,0);
+  let left=Math.min(Math.max(t,0),1)*total,i=0;
+  while(i<lengths.length-1&&left>lengths[i]) left-=lengths[i++];
+  const a=pts[i],b=pts[i+1],f=left/lengths[i],c:Vec2=[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f];
+  // At a bend the edge turns half-way between the two stretches, so treads fan round it.
+  const dirAt=(k:number):Vec2=>{const p=pts[Math.max(0,Math.min(pts.length-2,k))],q=pts[Math.max(1,Math.min(pts.length-1,k+1))],n=Math.hypot(q[0]-p[0],q[1]-p[1])||1;return [(q[0]-p[0])/n,(q[1]-p[1])/n];};
+  const here=dirAt(i),blend=f<0.5?dirAt(i-1):dirAt(i+1),w=Math.abs(f-0.5);
+  let dx=here[0]*(0.5+w)+blend[0]*(0.5-w),dz=here[1]*(0.5+w)+blend[1]*(0.5-w);const n=Math.hypot(dx,dz)||1;dx/=n;dz/=n;
+  const nx=dz*access.width/2,nz=-dx*access.width/2;
+  return {c,l:[c[0]+nx,c[1]+nz],r:[c[0]-nx,c[1]-nz]};
 }
 
 export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolean=()=>false):void {
@@ -53,16 +73,26 @@ export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolea
     }
   }
   for(const access of poolAccess) {
-    const [a,b]=access.points,dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     const count=access.kind==="steps"?access.count:1;
-    const nx=dz/length*access.width/2,nz=-dx/length*access.width/2;
+    // A flight of steps is closed in by a white wall down each side.
+    if(access.kind==="steps") for(const side of [1,-1]) {
+      const cheek:number[]=[];
+      for(let i=0;i<count;i++) {
+        const t=i/count,u=(i+1)/count,y=LOWER_POOL_Y*t;
+        const A=accessSection(access,t),B=accessSection(access,u),[ax,az]=side>0?A.l:A.r,[bx,bz]=side>0?B.l:B.r;
+        cheek.push(ax,y+0.5,az,bx,y+0.5,bz,ax,LOWER_POOL_Y,az,ax,LOWER_POOL_Y,az,bx,y+0.5,bz,bx,LOWER_POOL_Y,bz);
+      }
+      const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute(cheek,3));
+      const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));
+      g.computeVertexNormals();const wall=new THREE.Mesh(g,stone);wall.castShadow=wall.receiveShadow=true;scene.add(wall);
+    }
     for(let i=0;i<count;i++) {
       const t=i/count,u=(i+1)/count,y=LOWER_POOL_Y*t,by=access.kind==="steps"?y:LOWER_POOL_Y*u;
-      const ax=a[0]+dx*t,az=a[1]+dz*t,bx=a[0]+dx*u,bz=a[1]+dz*u;
+      const A=accessSection(access,t),B=accessSection(access,u);
       const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute([
-        ax+nx,y,az+nz,bx+nx,by,bz+nz,ax-nx,y,az-nz,ax-nx,y,az-nz,bx+nx,by,bz+nz,bx-nx,by,bz-nz,
-        bx+nx,by,bz+nz,bx+nx,LOWER_POOL_Y*u,bz+nz,bx-nx,by,bz-nz,bx-nx,by,bz-nz,bx+nx,LOWER_POOL_Y*u,bz+nz,bx-nx,LOWER_POOL_Y*u,bz-nz
-      ],3));const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));g.computeVertexNormals();const mesh=new THREE.Mesh(g,access.kind==="steps"?stone:tile);mesh.receiveShadow=true;mesh.userData.referenceSurface=true;scene.add(mesh);
+        A.l[0],y,A.l[1],B.l[0],by,B.l[1],A.r[0],y,A.r[1],A.r[0],y,A.r[1],B.l[0],by,B.l[1],B.r[0],by,B.r[1],
+        B.l[0],by,B.l[1],B.l[0],LOWER_POOL_Y*u,B.l[1],B.r[0],by,B.r[1],B.r[0],by,B.r[1],B.l[0],LOWER_POOL_Y*u,B.l[1],B.r[0],LOWER_POOL_Y*u,B.r[1]
+      ],3));const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));g.computeVertexNormals();const mesh=new THREE.Mesh(g,tile);mesh.receiveShadow=true;mesh.userData.referenceSurface=true;scene.add(mesh);
     }
   }
 }

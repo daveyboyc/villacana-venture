@@ -6,7 +6,7 @@ import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
 import kinds from "../data/kinds.json";
-import {lowerPoolRing,poolAccess} from "./pool-levels";
+import {accessSection,lowerPoolRing,poolAccess} from "./pool-levels";
 import type { MapObject, Skeleton, Vec2 } from "./types";
 
 const NS = "http://www.w3.org/2000/svg";
@@ -74,7 +74,7 @@ async function boot(): Promise<void> {
   levels.append(el("path",{d:path(lowerPoolRing),fill:"#7dcbd1","fill-opacity":0.12,stroke:"#596d78","stroke-width":0.4,"stroke-dasharray":"1 1"}));
   for(const access of poolAccess) {
     levels.append(el("path",{d:"M"+access.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:access.kind==="steps"?"#fff7e7":"#c78667","stroke-width":access.width}));
-    if(access.kind==="steps") {const [a,b]=access.points,dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);for(let i=0;i<=access.count;i++){const x=a[0]+dx*i/access.count,z=a[1]+dz*i/access.count,nx=dz/length*access.width/2,nz=-dx/length*access.width/2;levels.append(el("path",{d:`M${x+nx} ${z+nz}L${x-nx} ${z-nz}`,stroke:"#84766c","stroke-width":0.1}));}}
+    if(access.kind==="steps") for(let i=0;i<=access.count;i++){const {l,r}=accessSection(access,i/access.count);levels.append(el("path",{d:`M${l[0]} ${l[1]}L${r[0]} ${r[1]}`,stroke:"#84766c","stroke-width":0.1}));}
   }
   world.append(levels);
 

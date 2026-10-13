@@ -3,6 +3,49 @@ import * as THREE from "three";
 import { pointInRing } from "./geom";
 import type { SkeletonBuilding, Vec2 } from "./types";
 import { LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
+import layout from "../data/main_pool.json";
+
+/** The two tall white triangular walls that stand above the restaurant roof. */
+export function addRoofFins(scene: THREE.Scene): void {
+  const angle = 26 * Math.PI / 180, white = plasterMaterial("#fffdf5");
+  white.side = THREE.DoubleSide;
+  const turn = ([x, z]: number[]): Vec2 => [x * Math.cos(angle) + z * Math.sin(angle), -x * Math.sin(angle) + z * Math.cos(angle)];
+  for (const fin of layout.roofFins.fins) {
+    const line = fin.line.map(turn);
+    const lengths = line.map((p, i) => i ? Math.hypot(p[0] - line[i - 1][0], p[1] - line[i - 1][1]) : 0), total = lengths.reduce((a, b) => a + b, 0);
+    // Walk the line in short steps so the top edge can swoop.
+    const steps = 28, cut: { x: number; z: number; y: number }[] = [];
+    for (let k = 0; k <= steps; k++) {
+      const s = k / steps;
+      let left = s * total, i = 1;
+      while (i < line.length - 1 && left > lengths[i]) left -= lengths[i++];
+      const f = left / lengths[i];
+      cut.push({ x: line[i - 1][0] + (line[i][0] - line[i - 1][0]) * f, z: line[i - 1][1] + (line[i][1] - line[i - 1][1]) * f,
+        y: Math.max(fin.base, fin.heights[0] + (fin.heights[1] - fin.heights[0]) * s - fin.sag * 4 * s * (1 - s)) });
+    }
+    const positions: number[] = [];
+    for (let k = 0; k < steps; k++) {
+      const a = cut[k], b = cut[k + 1];
+      positions.push(a.x, fin.base, a.z, b.x, fin.base, b.z, a.x, a.y, a.z, a.x, a.y, a.z, b.x, fin.base, b.z, b.x, b.y, b.z);
+    }
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    const at = geometry.getAttribute("position"), uvs: number[] = [];
+    for (let v = 0; v < at.count; v++) uvs.push(at.getX(v) + at.getZ(v), at.getY(v));
+    geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
+    geometry.computeVertexNormals();
+    const mesh = new THREE.Mesh(geometry, white);
+    mesh.castShadow = mesh.receiveShadow = true;
+    scene.add(mesh);
+  }
+  // The tall white block at the east end, where the weathervane stands.
+  const tower = layout.roofFins.tower, [tx, tz] = turn(tower.at);
+  const block = new THREE.Mesh(new THREE.BoxGeometry(tower.size, tower.height, tower.size), white);
+  block.position.set(tx, tower.height / 2, tz);
+  block.rotation.y = -angle;
+  block.castShadow = block.receiveShadow = true;
+  scene.add(block);
+}
 
 /** Dress the surveyed restaurant footprints, without moving their walls. */
 export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuilding[], pool: { x: number; z: number }): void {

@@ -24,6 +24,14 @@
     ]
   ],
   "pathWidth": 1.8,
+  "roofFins": {
+    "note": "The two tall white swooping walls above the restaurant, and the block at the east end, from Dave's photos (2026-10-13), chiefly the square-on view from the lawn. Turned-frame metres. 'heights' are metres above the platform at each end of the line, 'sag' how far the top edge dips between them, 'base' where the wall starts above the glazing. Sizes are read off the photo against a 3 m storey; positions follow the registry fronts.",
+    "fins": [
+      {"name": "west wall, over Enrique's: highest at the west end, swooping down to the middle", "line": [[-75.4, 66.9], [-69.4, 60.5], [-62.2, 55.6]], "heights": [7.3, 3.3], "sag": 1.0, "base": 3.0},
+      {"name": "east wall: highest where it meets the west wall, falling gently to the east end", "line": [[-62.0, 57.6], [-56.4, 56.8], [-48.6, 55.6], [-42.3, 55.2], [-35.0, 54.5]], "heights": [8.5, 7.3], "sag": 0.4, "base": 3.2}
+    ],
+    "tower": {"at": [-36.6, 55.0], "size": 1.8, "height": 10.5}
+  },
   "terraceBuildingIds": [
     "6364501UF1366S_part3",
     "6364501UF1366S_part4",
@@ -85,10 +93,7 @@
       [-62.48, 60.51],
       [-66.75, 63.96],
       [-72.17, 69.56],
-      [-73.65, 73.99],
-      [-73.39, 76.82],
-      [-73.365, 78.921],
-      [-74.735729, 79.091966],
+      [-73.08, 72.3], [-75.73, 72.3], [-75.35, 76.245], [-74.85, 77.0], [-74.85, 80.7], [-74.585, 80.7],
       [-73.363, 93.77],
       [-73.173, 95.292],
       [-73.166, 95.878],
@@ -103,13 +108,7 @@
       "width": 2.6,
       "count": 18
     },
-    "ramp": {
-      "points": [
-        [-74, 79],
-        [-71, 103]
-      ],
-      "width": 2.4
-    },
+    "enriqueSteps": {"points": [[-73.5, 72.3], [-73.55, 73.8], [-73.8, 75.3], [-74.0, 76.6], [-74.0, 80.6]], "width": 1.4, "count": 18, "evidence": "Dave, 2026-10-13, with a web photo and the satellite view: steepish terracotta steps between white walls climb from the pool deck to Enrique's, curving at the top. The aerial shows the treads fanning round the curve (turned x -74.8 to -72.8, z 72.3 to 76) and the straight lower flight below it (z 76 to 80.6). Width and step count approximate"},
     "seafront": {
       "note": "Heights seaward of the paseo, from Dave (2026-10-13): the big pool is level with the beach, the beach falls gently to the sea, and the sea is lower. 'profile' is the paseo's height against turned-frame x: street level by the south pool, pool level in front of the big pool and Barraka. 'shore' and 'sea' are the heights at the waterline. All approximate.",
       "profile": [[-110, 0], [-76, -3], [-10, -3], [30, 0]],
@@ -143,10 +142,7 @@
       [-74.671, 66.118],
       [-76.099, 67.813],
       [-75.754, 72.01],
-      [-75.35, 76.245],
-      [-75.28, 76.992],
-      [-73.394, 76.821],
-      [-73.65, 73.992],
+      [-75.73, 72.3], [-73.08, 72.3],
       [-72.169, 69.564],
       [-66.754, 63.96],
       [-62.481, 60.514],
@@ -209,13 +205,7 @@
       [-62.48, 60.51],
       [-66.75, 63.96],
       [-72.17, 69.56],
-      [-73.65, 73.99],
-      [-73.39, 76.82],
-      [-73.365004, 78.920626],
-      [-72.809267, 78.851158],
-      [-69.809267, 102.851158],
-      [-72.190733, 103.148842],
-      [-73.295617, 94.309776],
+      [-73.08, 72.3], [-75.73, 72.3], [-75.35, 76.245], [-74.85, 77.0], [-74.85, 80.7], [-74.585, 80.7], [-73.363, 93.77],
       [-73.173, 95.292],
       [-73.166, 95.878],
       [-71.769004, 110.817956],
