@@ -216,6 +216,8 @@ async function boot(): Promise<void> {
     const node = el("path", { d: path(b.ring, b.holes), "fill-rule": "evenodd", stroke: "#8a8172", "stroke-width": 0.25 });
     roofs.push({ node, floors: b.floors });
     world.append(node);
+    // Covered walk-throughs: dashed brown if confirmed by a photo, dashed orange if only likely.
+    if (b.passage) world.append(el("path", { d: path(b.ring), fill: "#c98463", "fill-opacity": 0.45, stroke: b.passage.trust === "photo" ? "#7a4a2a" : "#e8842b", "stroke-width": 0.5, "stroke-dasharray": "1 0.6" }));
   }
   const paintRoofs = (byHeight: boolean) => {
     for (const { node, floors } of roofs) {

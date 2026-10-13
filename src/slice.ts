@@ -30,6 +30,8 @@ const WALL = "#ffffff";
 const ROOF_GREY = "#d9d5cc";
 const ROOF_TERRACE = "#c98f6e";
 const SHUTTER = "#7a4a2a";
+/** Clear height under a covered walk-through. */
+const PASSAGE_HEADROOM = 2.6;
 
 /** Heights seaward of the paseo, when this view shows the sea. */
 let seaside: Seaside | undefined;
@@ -108,7 +110,7 @@ async function boot(): Promise<void> {
   addBuildings(scene, buildings, skeleton.floorHeight);
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
-  const houses = buildings.filter((b) => !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
+  const houses = buildings.filter((b) => !b.passage && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   addShutters(scene, houses, skeleton.floorHeight);
   addPorches(scene, houses, skeleton.floorHeight);
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
@@ -137,7 +139,9 @@ async function boot(): Promise<void> {
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
-  const solids = new Solids([...buildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...cervantesPatioWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(buildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  // Covered walk-throughs remain open; traced patio walls use their own rings.
+  const solidBuildings = buildings.filter((b) => !b.passage);
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...cervantesPatioWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -466,10 +470,13 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     const c = centroid(b.ring);
     // Yards and terraces are low walled enclosures, not houses.
     const height = b.floors > 0 ? b.floors * floorHeight : 1.1;
+    // A covered walk-through is only the storey above; the lane runs under it.
+    const lift = b.passage ? PASSAGE_HEADROOM : 0;
     const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
-    const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height, bevelEnabled: false });
+    const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height - lift, bevelEnabled: false });
     geometry.rotateX(-Math.PI / 2);
     const mesh = new THREE.Mesh(geometry, [cap, wall]);
+    mesh.position.y = lift;
     if(b.id===POOL_TERRACE_ID) {mesh.position.y=LOWER_POOL_Y;mesh.userData.referenceSurface=true;}
     // A building out on the sand stands at the beach's height.
     else if(seaside?.inZone(c.x,c.z)) mesh.position.y=seaside.y(c.x,c.z);
@@ -535,20 +542,31 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
 
 /** Low white garden walls round the lawn, with hedges growing over them in places. */
 function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryReference): void {
+  // A continuous wall: a straight run between each pair of neighbouring points,
+  // with a slim round joint at each point so curves stay smooth.
   const m = new THREE.Matrix4();
   const still = new THREE.Quaternion();
-  const blocks = new THREE.InstancedMesh(
-    new THREE.CylinderGeometry(0.34, 0.36, 1.0, 10),
-    new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.95 }),
-    walls.length,
-  );
+  const up = new THREE.Vector3(0, 1, 0);
+  const material = new THREE.MeshStandardMaterial({ color: WALL, roughness: 0.95 });
+  const runs: THREE.Matrix4[] = [];
+  for (let i = 0; i < walls.length; i++) {
+    for (let j = i + 1; j < walls.length; j++) {
+      const dx = walls[j][0] - walls[i][0], dz = walls[j][1] - walls[i][1];
+      const length = Math.hypot(dx, dz);
+      if (length > 0.8) continue;
+      const turn = new THREE.Quaternion().setFromAxisAngle(up, -Math.atan2(dz, dx));
+      runs.push(new THREE.Matrix4().compose(new THREE.Vector3(walls[i][0] + dx / 2, 0.5, walls[i][1] + dz / 2), turn, new THREE.Vector3(length, 1, 0.34)));
+    }
+  }
+  const lengths = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), material, runs.length);
+  runs.forEach((matrix, i) => lengths.setMatrixAt(i, matrix));
+  const blocks = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.17, 0.17, 1.0, 10), material, walls.length);
   walls.forEach(([x, z], i) => {
     m.compose(new THREE.Vector3(x, 0.5, z), still, new THREE.Vector3(1, 1, 1));
     blocks.setMatrixAt(i, m);
   });
-  blocks.castShadow = blocks.receiveShadow = true;
-
-  scene.add(blocks);
+  blocks.castShadow = blocks.receiveShadow = lengths.castShadow = lengths.receiveShadow = true;
+  scene.add(blocks, lengths);
 
   // Hedges come in runs: a few metres of hedge, then bare wall.
   const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5 && !reference?.roads.some((road) => road.surface === "terracotta" && roadHeight(road,x,z).distance < road.width/2 + 1.5));
@@ -559,7 +577,7 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryR
 }
 
 /**
- * Front porches on walls that face open ground: white piers, a clay-tiled
+ * Front porches on walls that face open ground: a clay-tiled
  * lean-to roof, and on two-storey houses a balcony: wooden under that roof,
  * or a plain wrought-iron one.
  */
@@ -607,23 +625,12 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         // Half the balconies are wooden with a little tiled roof; the rest are plain iron.
         const wooden = b.floors < 2 || hash(x * 3.1, z * 1.7) < 0.5;
         if (wooden) {
-          for (const edge of [-WIDTH / 2 + 0.15, WIDTH / 2 - 0.15]) {
-            box(parts.white, edge, floorHeight / 2, DEPTH - 0.15, 0.3, floorHeight, 0.3);
-          }
           box(parts.tile, 0, top - 0.22, DEPTH / 2 + 0.1, WIDTH + 0.3, 0.12, DEPTH + 0.5, 0.3);
         }
         if (!wooden) {
-          // Plain fronts get a patio: sometimes an awning, a table and chairs, a climber.
+          // Plain fronts get a patio: sometimes an awning and a climber.
           const pick = hash(x * 0.7, z * 2.3);
           if (pick < 0.45) box(parts.canvas, 0, 2.55, 1.0, WIDTH, 0.05, 2.1, 0.32);
-          if (pick > 0.25) {
-            box(parts.white, 0, 0.72, 1.5, 0.9, 0.05, 0.9);
-            box(parts.white, 0, 0.36, 1.5, 0.08, 0.72, 0.08);
-            for (const across of [-0.8, 0.8]) {
-              box(parts.white, across, 0.45, 1.5, 0.42, 0.05, 0.42);
-              box(parts.white, across * 1.25, 0.7, 1.5, 0.05, 0.55, 0.42);
-            }
-          }
           if (pick > 0.6) climbers.push({ x: x + tx * (WIDTH / 2) + nx * 0.25, y: 1.2, z: z + tz * (WIDTH / 2) + nz * 0.25 });
         }
         if (b.floors >= 2) {
