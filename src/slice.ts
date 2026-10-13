@@ -1,3 +1,4 @@
+import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
@@ -92,6 +93,7 @@ async function boot(): Promise<void> {
 
   const poolRings = skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring);
   await addGround(scene, skeleton, centre, poolRings);
+  addFrontageDivisions(scene);
   const backdrop=new THREE.Scene();addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   if(mainPool) addPoolAccess(scene);
@@ -119,9 +121,9 @@ async function boot(): Promise<void> {
 
   const player = new Player();
   scene.add(player.group);
-  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS);
+  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, skeleton.gardenGates, walls);
+  addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z)), walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
   if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);

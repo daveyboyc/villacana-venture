@@ -1,0 +1,385 @@
+{
+  "checkedAt": "2026-10-13",
+  "scope": "First photo-backed frontage divisions at Cervantes / Elena and the western Cervantes lane. Other frontages remain inferred and unreviewed. These are physical surface zones, not legal ownership boundaries.",
+  "paths": [
+    "cervantes",
+    "elena-north",
+    "elena-south"
+  ],
+  "regions": [
+    {
+      "id": "cervantes-elena-lawn-1",
+      "kind": "lawn",
+      "name": "Cervantes / Elena · front lawn 1",
+      "ring": [
+        [
+          -149.2,
+          67.4
+        ],
+        [
+          -153.4,
+          60.1
+        ],
+        [
+          -157.0,
+          64.3
+        ],
+        [
+          -154.8,
+          65.6
+        ],
+        [
+          -152.7,
+          69.3
+        ]
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg",
+        "IMG_2263.jpg"
+      ],
+      "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey",
+      "status": "photo-backed type; approximate extent"
+    },
+    {
+      "id": "cervantes-elena-lawn-2",
+      "kind": "lawn",
+      "name": "Cervantes / Elena · front lawn 2",
+      "ring": [
+        [
+          -149.1,
+          75.3
+        ],
+        [
+          -145.3,
+          73.4
+        ],
+        [
+          -148.3129,
+          68.6525
+        ],
+        [
+          -150.5586,
+          69.847
+        ],
+        [
+          -153.0,
+          71.9
+        ]
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg"
+      ],
+      "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey",
+      "status": "photo-backed type; approximate extent"
+    },
+    {
+      "id": "cervantes-west-planting",
+      "kind": "planting",
+      "name": "Cervantes · planting along low wall",
+      "ring": [
+        [
+          -172.0,
+          63.9
+        ],
+        [
+          -182.8,
+          70.4
+        ],
+        [
+          -182.0,
+          71.8
+        ],
+        [
+          -171.2,
+          65.3
+        ]
+      ],
+      "evidence": [
+        "IMG_2273.jpg",
+        "IMG_2274.jpg"
+      ],
+      "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey",
+      "status": "photo-backed type; approximate extent"
+    },
+    {
+      "id": "cervantes-front-patio",
+      "kind": "patio",
+      "name": "Cervantes / Elena · paved front enclosure",
+      "ring": [
+        [
+          -155.3654,
+          75.0115
+        ],
+        [
+          -155.3601,
+          75.017
+        ],
+        [
+          -155.3553,
+          75.023
+        ],
+        [
+          -155.3514,
+          75.0289
+        ],
+        [
+          -154.62,
+          74.59
+        ],
+        [
+          -156.57,
+          71.21
+        ],
+        [
+          -157.2709,
+          71.6196
+        ],
+        [
+          -157.2674,
+          71.6263
+        ],
+        [
+          -157.2645,
+          71.6335
+        ],
+        [
+          -157.2623,
+          71.641
+        ],
+        [
+          -157.2608,
+          71.6486
+        ],
+        [
+          -157.2601,
+          71.6564
+        ],
+        [
+          -157.2601,
+          71.6642
+        ],
+        [
+          -157.2609,
+          71.6719
+        ],
+        [
+          -157.2624,
+          71.6795
+        ],
+        [
+          -157.2647,
+          71.687
+        ],
+        [
+          -157.2677,
+          71.6942
+        ],
+        [
+          -157.2713,
+          71.701
+        ],
+        [
+          -157.2756,
+          71.7075
+        ],
+        [
+          -157.2806,
+          71.7135
+        ],
+        [
+          -157.286,
+          71.7191
+        ],
+        [
+          -157.292,
+          71.724
+        ],
+        [
+          -157.2985,
+          71.7284
+        ],
+        [
+          -157.79,
+          72.0268
+        ],
+        [
+          -155.8253,
+          75.2469
+        ],
+        [
+          -155.4647,
+          75.0037
+        ],
+        [
+          -155.4582,
+          74.9997
+        ],
+        [
+          -155.4512,
+          74.9964
+        ],
+        [
+          -155.444,
+          74.9937
+        ],
+        [
+          -155.4366,
+          74.9917
+        ],
+        [
+          -155.429,
+          74.9905
+        ],
+        [
+          -155.4214,
+          74.99
+        ],
+        [
+          -155.4137,
+          74.9902
+        ],
+        [
+          -155.4061,
+          74.9912
+        ],
+        [
+          -155.3986,
+          74.9929
+        ],
+        [
+          -155.3913,
+          74.9953
+        ],
+        [
+          -155.3843,
+          74.9984
+        ],
+        [
+          -155.3776,
+          75.0022
+        ],
+        [
+          -155.3713,
+          75.0066
+        ]
+      ],
+      "buildingId": "6265801UF1366N_part1",
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg"
+      ],
+      "trust": "Provisional paved enclosure from registry and satellite context; photos show the adjacent frontage but do not confirm its exact use or boundary",
+      "status": "provisional"
+    },
+    {
+      "id": "cervantes-lawn-door-path",
+      "kind": "entrance",
+      "name": "Front-door approach between lawns",
+      "ring": [
+        [
+          -148.0887,
+          68.3973
+        ],
+        [
+          -148.1178,
+          68.3426
+        ],
+        [
+          -148.5596,
+          67.6284
+        ],
+        [
+          -153.2113,
+          70.1027
+        ],
+        [
+          -152.7887,
+          70.8973
+        ]
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg"
+      ],
+      "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey",
+      "status": "photo-backed type; approximate extent"
+    }
+  ],
+  "borders": [
+    {
+      "id": "cervantes-elena-lawn-1-curb",
+      "points": [
+        [
+          -149.2,
+          67.4
+        ],
+        [
+          -153.4,
+          60.1
+        ],
+        [
+          -157.0,
+          64.3
+        ],
+        [
+          -154.8,
+          65.6
+        ],
+        [
+          -152.7,
+          69.3
+        ],
+        [
+          -149.2,
+          67.4
+        ]
+      ],
+      "height": 0.12,
+      "width": 0.16,
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg",
+        "IMG_2263.jpg"
+      ],
+      "trust": "Low white lawn edging visible in photos; exact alignment and dimensions approximate"
+    },
+    {
+      "id": "cervantes-elena-lawn-2-curb",
+      "points": [
+        [
+          -149.1,
+          75.3
+        ],
+        [
+          -145.3,
+          73.4
+        ],
+        [
+          -148.3129,
+          68.6525
+        ],
+        [
+          -150.5586,
+          69.847
+        ],
+        [
+          -153.0,
+          71.9
+        ],
+        [
+          -149.1,
+          75.3
+        ]
+      ],
+      "height": 0.12,
+      "width": 0.16,
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg"
+      ],
+      "trust": "Low white lawn edging visible in photos; exact alignment and dimensions approximate"
+    }
+  ]
+}

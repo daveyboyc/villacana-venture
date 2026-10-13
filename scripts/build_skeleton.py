@@ -510,6 +510,11 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         return False
     walls = [p for p in walls if not on_street(*p)]
     gates = [p for p in gates if not on_street(*p)]
+    # Photo-backed frontage divisions override the broad aerial smoothing.
+    frontage = json.loads((ROOT / "data" / "frontage_divisions.json").read_text())
+    for region in frontage["regions"]:
+        cls[mask([region["ring"]])] = {"lawn": 1, "planting": 2, "patio": 0, "entrance": 0}[region["kind"]]
+
     # The same referenced lanes are painted on the classified ground and in 3D.
     street_image = Image.new("L", (width, height), 0)
     draw = ImageDraw.Draw(street_image)
