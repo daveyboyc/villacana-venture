@@ -45,6 +45,9 @@ export type SpritePlacement = { x: number; y?: number; z: number; scale?: number
 
 /** Stand a set of sprites of one kind in the scene. */
 export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpritePlacement[]): void {
+  if(scene.userData.layoutOnly)return;
+  const guard=scene.userData.decorationClearance as ((x:number,z:number,radius:number)=>boolean)|undefined;
+  if(guard)places=places.filter(p=>guard(p.x,p.z,SPRITE_SIZE[kind].w*(p.scale??1)/2));
   if (!places.length) return;
   const { w, h, shadow } = SPRITE_SIZE[kind];
   const card = new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);
@@ -66,6 +69,7 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
     m.compose(new THREE.Vector3(p.x, p.y ?? 0, p.z), q, new THREE.Vector3(s, s, s));
     mesh.setMatrixAt(i, m);
   });
+  mesh.userData.spriteKind=kind;mesh.userData.spriteWidth=w;
   mesh.castShadow = shadow;
   scene.add(mesh);
 }

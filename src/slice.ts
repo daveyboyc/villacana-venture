@@ -1,3 +1,6 @@
+import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
+import {addLayoutRoutes} from "./layout-routes";
+import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
 import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
 import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
@@ -20,6 +23,7 @@ import { addSeaWall, seaWallRings } from "./south-pool";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
+const layoutOnly=new URLSearchParams(location.search).get("details")!=="1";
 const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
 /** How far the walkable area reaches from its centre. Grows to take in every pool asked for. */
 let RADIUS = 60;
@@ -48,6 +52,8 @@ const input: InputState = { moveX: 0, moveZ: 0, run: false, jump: false, lookDx:
 void boot();
 
 async function boot(): Promise<void> {
+  const detailLink=document.querySelector<HTMLAnchorElement>("#layout-details")!;
+  const detailUrl=new URL(location.href);if(layoutOnly)detailUrl.searchParams.set("details","1");else detailUrl.searchParams.delete("details");detailLink.href=detailUrl.pathname+detailUrl.search;detailLink.textContent=layoutOnly?"Layout · show details":"Details · show layout";
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
   const shown = chosen.length ? chosen : [skeleton.pools.find((p) => p.id === "north")!];
@@ -80,6 +86,9 @@ async function boot(): Promise<void> {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
+  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess]):[];
+  const canPlaceDecoration=(x:number,z:number,radius:number)=>routeClearance(routes,x,z,radius);
+  scene.userData.decorationClearance=canPlaceDecoration;scene.userData.protectedRoutes=routes;scene.userData.layoutOnly=layoutOnly;
   scene.background = new THREE.Color("#bfe3f2");
   scene.fog = new THREE.Fog("#cfe9f3", 90, 260);
 
@@ -110,13 +119,12 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre, poolRings);
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, poolGroundY);
-  const backdrop=new THREE.Scene();backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
+  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !b.passage && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
-  addShutters(scene, houses, skeleton.floorHeight);
-  addPorches(scene, houses, skeleton.floorHeight);
+  if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight);addPorches(scene, houses, skeleton.floorHeight);}
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
@@ -133,20 +141,22 @@ async function boot(): Promise<void> {
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
-  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !skeleton.boundaryReference?.roads.some((road) => road.heights && roadHeight(road,p.x,p.z).distance < road.width/2 + 1.0)));
+  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
 
   const player = new Player();
   player.group.userData.noDrape = true;
   scene.add(player.group);
-  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z));
+  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && canPlaceDecoration(x,z,.6));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z)), walls);
-  const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
+  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
+  // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
+  const gate=addCoastalGate(scene,liveGroundY);
+  if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   // Covered walk-throughs remain open; traced patio walls use their own rings.
-  const solidBuildings = buildings.filter((b) => !b.passage);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...cervantesPatioWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...coastalWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -187,9 +197,10 @@ async function boot(): Promise<void> {
     start.x=top[0]; start.z=top[1];
     document.querySelector("#title")!.textContent = "Calle Cervantes · Elena ramp";
   }
+  if(new URLSearchParams(location.search).get("view")==="coastal-gate"){spawn[0]=coastalAccess.points[0][0];spawn[1]=coastalAccess.points[0][1];start.x=gate.at[0];start.z=gate.at[1];}
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
-    solids,
+    solids:new GatedSolids(solids,()=>gate.open),
     coast,
     pools: poolRings,
     maxGroundStep:0.45,
@@ -232,9 +243,15 @@ async function boot(): Promise<void> {
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
 
+  const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
+  gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
   renderer.setAnimationLoop(() => {
     const dt = Math.min(clock.getDelta(), 0.05);
     readKeys();
+    const currentRoute=document.querySelector<HTMLElement>("#current-route")!;
+    const nearbyNames=routes.map(r=>({name:r.name,d:Math.min(...r.points.slice(1).map((b,i)=>closestOnSegment(player.x,player.z,...r.points[i],...b).d)),width:r.width})).filter(r=>r.d<r.width/2+.7).sort((a,b)=>a.d-b.d);
+    const routeNames=[...new Set(nearbyNames.map(r=>r.name))].slice(0,2);currentRoute.hidden=overview||!routeNames.length;currentRoute.textContent=routeNames.join(" · ");
+    gateButton.hidden=overview||Math.hypot(player.x-gate.at[0],player.z-gate.at[1])>6;
     if(!overview && !references.active()) player.update(dt, input, world, camYaw);
 
     const moving = input.moveX * input.moveX + input.moveZ * input.moveZ > 0.04;
@@ -244,7 +261,7 @@ async function boot(): Promise<void> {
     if (overview !== wasOverview) {
       // The overview button jumps between walking height and looking down on the whole area.
       wasOverview = overview;
-      controls.hidden=!overview;backdrop.visible=!overview;
+      controls.hidden=!overview;backdrop.visible=!overview&&!layoutOnly;
       document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
       if(overview)camYaw=0;
       distance = overview ? farthest : 6;
@@ -315,7 +332,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const pctx = paint.getContext("2d")!;
   pctx.fillStyle = skeleton.cover.classes.paving;
   pctx.fillRect(0, 0, size, size);
-  pctx.filter = "blur(2.5px)";
+  pctx.filter = layoutOnly?"none":"blur(2.5px)";
   const perMetre = image.width / w;
   pctx.drawImage(
     image,
@@ -457,6 +474,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     }
     return out;
   };
+  if(layoutOnly)return;
   // Inside the courtyard every tree is placed by hand from the photos, so the
   // scattered ones only fill in beyond it.
   const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
@@ -478,8 +496,8 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
   const terrace = new THREE.MeshStandardMaterial({ color: ROOF_TERRACE, roughness: 0.9 });
   for (const b of buildings) {
     const c = centroid(b.ring);
-    // Yards and terraces are low walled enclosures, not houses.
-    const height = b.floors > 0 ? b.floors * floorHeight : 1.1;
+    // A zero-storey enclosure is not evidence of a solid house or measured walls.
+    const height = b.floors > 0 ? b.floors * floorHeight : .035;
     // A covered walk-through is only the storey above; the lane runs under it.
     const lift = b.passage ? PASSAGE_HEADROOM : 0;
     const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
@@ -493,7 +511,10 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     mesh.castShadow = mesh.receiveShadow = true;
     // A house keeps one floor level: the ground height at its middle.
     mesh.userData.base = [c.x, c.z];
+    mesh.name=`building:${b.id}`;mesh.userData.structural=true;
     scene.add(mesh);
+    const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height+lift+.012,z))),new THREE.LineBasicMaterial({color:b.floors>0?"#59564e":"#936347"}));
+    outline.position.y=mesh.position.y-lift;outline.userData.base=[c.x,c.z];scene.add(outline);
   }
 }
 
@@ -594,6 +615,7 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryR
  * or a plain wrought-iron one.
  */
 function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
+  const protectedRoutesForPorches=(scene.userData.protectedRoutes??[]) as import("./route-clearance").ProtectedRoute[];
   const houses = buildings.filter((b) => b.floors > 0);
   const blocked = (x: number, z: number) => houses.some((o) => pointInRing(x, z, o.ring));
   const up = new THREE.Vector3(0, 1, 0);
@@ -625,6 +647,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const t = (k + 0.5) / count;
         const x = ax + (bx - ax) * t;
         const z = az + (bz - az) * t;
+        if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         // Only where the house looks out over a lane or garden.
         if ([1, 2.5, 4.5].some((d) => blocked(x + nx * d, z + nz * d))) continue;
         // A box given in porch space: across the wall, up, and out from it.

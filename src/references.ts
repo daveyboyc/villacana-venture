@@ -1,3 +1,4 @@
+import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import {daliThresholdZones,daliPrivateEdge} from "./dali-threshold";
 import {cervantesPatioWalls} from "./cervantes-walls";
 import {frontageRegions} from "./frontages";
@@ -51,6 +52,9 @@ export function mapLabels(s: Skeleton): ReferencePoint[] {
     if(r)add(`threshold-${kind}`,r.name,centre(r.ring),r.trust,r.evidence[0]);
   }
   add("dali-private-frontage","Dalí · buildings / private walls start",lineCentre(daliPrivateEdge),"Photo/satellite estimate, about 1–2 m; shared path remains outside the private edge.","IMG_2267.jpg");
+  add(coastalGate.id,coastalGate.name,lineCentre(coastalGate.points),"IMG_2297: gate between white wall and rigid mesh; plan/dimensions estimated.","IMG_2297.jpg");
+  for(const wall of coastalWalls)add(wall.id,wall.name,lineCentre(wall.points),wall.trust,wall.evidence[0]);
+  add(coastalAccess.id,coastalAccess.name,lineCentre(coastalAccess.points),coastalAccess.trust,"IMG_2297.jpg");
   for(const w of cervantesPatioWalls)add(w.id,w.name,lineCentre(w.points),w.trust,w.evidence[0]);
   return labels;
 }

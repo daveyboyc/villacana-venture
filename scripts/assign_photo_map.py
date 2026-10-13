@@ -44,7 +44,7 @@ def features(s):
         add('area:sea',sf['sea']['name'],'area','OSM/map',ring=sf['sea']['ring'])
         add('area:paseo',sf['paseo']['name'],'area','OSM/map',points=sf['paseo']['points'],width=sf['paseo']['width'])
         add('area:barraka',sf['restaurant']['name'],'area','map/photo interpretation',ring=sf['restaurant']['ring'])
-    for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages')]:
+    for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
         data=json.loads((ROOT/'data'/filename).read_text())
         for f in data[key]:
             # Passages refer to an existing registry part rather than a second footprint.
@@ -54,6 +54,8 @@ def features(s):
             if existing:existing.update(name=f['name'],evidence=evidence)
             else:add(id,f['name'],'reference feature','authored photo/map interpretation',evidence=evidence,**{k:f[k] for k in ('ring','points') if k in f})
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
+    coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
+    add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

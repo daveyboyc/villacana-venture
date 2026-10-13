@@ -37,6 +37,7 @@ export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuild
       for (let x = -length / 2 + 0.2; x < length / 2; x += 1.6) box(white, x, LOWER_POOL_Y+1.4, 0.09, 0.08, 2.15, 0.1);
       box(white, 0, -0.25, 0.32, length, 0.5, 0.7);
       box(white, 0, 0.55, 0.35, length, 0.75, 0.16);
+      if(scene.userData.layoutOnly)continue;
       // Blue fabric awnings and simple cafe tables, as visible in the web references.
       const canopy = new THREE.Mesh(new THREE.PlaneGeometry(length * 0.85, 1.7), blue);
       canopy.rotation.x = -Math.PI / 2 + 0.12; canopy.position.set(0, 2.55, -0.8); canopy.castShadow = true; face.add(canopy);

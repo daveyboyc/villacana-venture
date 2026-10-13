@@ -99,7 +99,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
       slat.position.set(foot[0]+dz/length*across,y+0.013,foot[1]-dx/length*across);slat.rotation.y=drain.rotation.y;scene.add(slat);
     }
   }
-  flat(reference.parking.ring,"#888b8b",0.26);
+  for(const ring of reference.parking.bayRings??[reference.parking.ring])flat(ring,"#888b8b",0.26);
   const white=new THREE.MeshBasicMaterial({color:"#f6f3e8"});
   if (reference.mainParking) {
     const park = reference.mainParking;
@@ -122,7 +122,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   for(let i=0;i<bays.bayLine.length-1;i++) {
     const a=bays.bayLine[i],b=bays.bayLine[i+1];const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     for(let at=0;at<length;at+=bays.spacing) {
-      if(!pointInRing(a[0]+dx/length*at+dz/length*bays.depth/2,a[1]+dz/length*at-dx/length*bays.depth/2,bays.ring)) continue;
+      if(!(bays.bayRings??[bays.ring]).some(ring=>pointInRing(a[0]+dx/length*at+dz/length*bays.depth/2,a[1]+dz/length*at-dx/length*bays.depth/2,ring))) continue;
       const start:Vec2=[a[0]+dx/length*at,a[1]+dz/length*at];
       const end:Vec2=[start[0]+dz/length*bays.depth,start[1]-dx/length*bays.depth];
       for(const [p,q] of daliBayStripeParts(start,end)) {
