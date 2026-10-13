@@ -88,3 +88,13 @@ From Dave, with two web photos:
 A link can now start the walk anywhere: add `&at=x,z` and optionally
 `&look=x,z`, in the master map's turned-frame metres. For example
 `slice.html?pool=main&at=-66,92&look=-72,64` stands on the lawn facing the steps.
+
+## Steps to Enrique's: walls and planting (2026-10-13)
+
+From Dave's web photos: the steps are now 2 m wide; the west side is a tall
+white wall with a clipped hedge on top (`enriqueSteps.tallWall`); the pool side
+has a planting bed held by a low curved white wall (`enriqueSteps.bed`) with
+two yuccas and a bird-of-paradise, and a tall palm stands on the lawn at the
+foot (`data/objects.json`, ids `enrique-steps-1` to `-4`). Shapes and positions
+are approximate. The bed wall does not block the player. Plants and the hedge
+show only with "Show details" on.

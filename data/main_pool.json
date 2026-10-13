@@ -108,7 +108,10 @@
       "width": 2.6,
       "count": 18
     },
-    "enriqueSteps": {"points": [[-73.5, 72.3], [-73.55, 73.8], [-73.8, 75.3], [-74.0, 76.6], [-74.0, 80.6]], "width": 1.4, "count": 18, "evidence": "Dave, 2026-10-13, with a web photo and the satellite view: steepish terracotta steps between white walls climb from the pool deck to Enrique's, curving at the top. The aerial shows the treads fanning round the curve (turned x -74.8 to -72.8, z 72.3 to 76) and the straight lower flight below it (z 76 to 80.6). Width and step count approximate"},
+    "enriqueSteps": {"points": [[-74.2, 72.3], [-74.2, 73.8], [-74.0, 75.3], [-73.85, 76.6], [-73.85, 80.6]], "width": 2.0, "count": 18,
+      "tallWall": {"side": "west", "top": 1.0, "hedge": true, "note": "The real steps run against a tall white wall with a clipped hedge on top (web photos)"},
+      "bed": {"note": "Planting bed on the pool side of the steps, held by a low curved white wall (web photos). Shape approximate", "height": 0.55,
+              "wall": [[-72.85, 80.6], [-72.7, 81.4], [-72.0, 81.9], [-71.1, 81.6], [-70.5, 80.6], [-70.3, 79.0], [-70.6, 77.2], [-71.4, 75.6], [-72.6, 74.6]]}, "evidence": "Dave, 2026-10-13, with a web photo and the satellite view: steepish terracotta steps between white walls climb from the pool deck to Enrique's, curving at the top. The aerial shows the treads fanning round the curve (turned x -74.8 to -72.8, z 72.3 to 76) and the straight lower flight below it (z 76 to 80.6). Width and step count approximate"},
     "seafront": {
       "note": "Heights seaward of the paseo, from Dave (2026-10-13): the big pool is level with the beach, the beach falls gently to the sea, and the sea is lower. 'profile' is the paseo's height against turned-frame x: street level by the south pool, pool level in front of the big pool and Barraka. 'shore' and 'sea' are the heights at the waterline. All approximate.",
       "profile": [[-110, 0], [-76, -3], [-10, -3], [30, 0]],
