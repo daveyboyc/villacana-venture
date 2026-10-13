@@ -1,3 +1,4 @@
+import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
@@ -124,7 +125,7 @@ async function boot(): Promise<void> {
   const boundary = el("g", { id: "boundary-reference" });
   if (skeleton.boundaryReference) {
     const ref = skeleton.boundaryReference;
-    boundary.append(el("path", { d: path(ref.parking.ring), fill: "#969a99", stroke: "#f4f0e5", "stroke-width": 0.3 }));
+    for(const ring of ref.parking.bayRings??[ref.parking.ring])boundary.append(el("path", { d: path(ring), fill: "#969a99", stroke: "#f4f0e5", "stroke-width": 0.3 }));
     const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
     for (const fence of ref.barriers) {
       const node = el("path", { d: line(fence.points), fill: "none", stroke: "#743e36", "stroke-width": 0.9, "stroke-dasharray": "1.5 0.5" });
@@ -136,13 +137,18 @@ async function boot(): Promise<void> {
       const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz);
       for (let at = 0; at < length; at += bays.spacing) {
         const x = a[0] + dx / length * at, z = a[1] + dz / length * at;
-        if (!pointInRing(x + dz / length * bays.depth / 2, z - dx / length * bays.depth / 2, bays.ring)) continue;
+        if (!(bays.bayRings??[bays.ring]).some(ring=>pointInRing(x + dz / length * bays.depth / 2, z - dx / length * bays.depth / 2, ring))) continue;
         for(const [p,q] of daliBayStripeParts([x,z],[x+dz/length*bays.depth,z-dx/length*bays.depth]))
           boundary.append(el("path", { d: `M${p.join(" ")}L${q.join(" ")}`, fill: "none", stroke: "#fff", "stroke-width": 0.15 }));
 
       }
     }
   }
+  const coastal=el("g",{id:"coastal-gate-boundary"});
+  for(const wall of coastalWalls)coastal.append(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf3","stroke-width":wall.thickness+.12}));
+  coastal.append(el("path",{d:"M"+coastalGate.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#34423b","stroke-width":.35,"stroke-dasharray":".18 .12"}));
+  coastal.append(el("path",{d:"M"+coastalAccess.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#286b88","stroke-width":.18,"stroke-dasharray":".5 .4"}));
+  boundary.append(coastal);
   world.append(boundary);
 
   // Streets: a pale band with its name along it.
@@ -169,13 +175,17 @@ async function boot(): Promise<void> {
   for (const street of skeleton.streets) {
     if (street.points) {
       const d = "M" + street.points.map((p) => `${p[0]} ${p[1]}`).join("L");
-      streets.append(el("path", { d, fill: "none", stroke: skeleton.boundaryReference?.roads.find((r) => r.name === street.name)?.surface === "asphalt" ? "#7f8384" : "#fffdf8", "stroke-opacity": 0.75, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
-      const mid = Math.floor((street.points.length - 1) / 2);
-      const [a, b] = [street.points[mid], street.points[mid + 1]];
-      // Read along the lane, never upside down.
-      let angle = (Math.atan2(b[1] - a[1], b[0] - a[0]) * 180) / Math.PI + rot;
-      if (angle > 90 || angle < -90) angle += 180;
-      names.append(label(street.name.replace("Calle ", "C. "), (a[0] + b[0]) / 2, (a[1] + b[1]) / 2, angle, "#3b352c"));
+      streets.append(el("path", { d, fill: "none", stroke: skeleton.boundaryReference?.roads.find((r) => r.name === street.name)?.surface === "asphalt" ? "#7f8384" : "#fffdf8", "stroke-opacity": 1, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+      const segmentLengths=street.points.slice(1).map((p,i)=>Math.hypot(p[0]-street.points![i][0],p[1]-street.points![i][1]));
+      const total=segmentLengths.reduce((a,b)=>a+b,0);
+      const stations=total>50?Array.from({length:Math.ceil(total/45)},(_,i)=>Math.min(total-5,20+i*45)):[total/2];
+      for(const station of stations){let along=station;
+        for(let i=0;i<segmentLengths.length;i++){if(along>segmentLengths[i]){along-=segmentLengths[i];continue;}
+          const a=street.points[i],b=street.points[i+1],t=along/segmentLengths[i];let bearing=Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI+rot;if(bearing>90||bearing< -90)bearing+=180;
+          const text=label(street.id==="cervantes"?"Calle Cervantes":street.name,a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,bearing,"#233f4b");text.setAttribute("font-size","1.7");text.setAttribute("stroke-width",".55");text.setAttribute("data-street-label",street.id??street.name);names.append(text);break;
+        }
+      }
+      // Full names also remain in the editable reference labels.
     } else if (street.registryPlots?.length) {
       const [x, z] = street.registryPlots[0];
       names.append(label(street.name.replace("Calle ", "C. ") + " ?", x, z, 0, "#b3261e"));
@@ -228,7 +238,8 @@ async function boot(): Promise<void> {
   // Buildings: drawn as white roofs, or coloured by height.
   const roofs: { node: SVGPathElement; floors: number }[] = [];
   for (const b of skeleton.buildings) {
-    const node = el("path", { d: path(b.ring, b.holes), "fill-rule": "evenodd", stroke: "#8a8172", "stroke-width": 0.25 });
+    const node = el("path", { d: path(b.ring, b.holes), "fill-rule": "evenodd", stroke: b.floors===0?"#94654b":"#5b564e", "stroke-width": b.floors===0?.25:.4 });
+    node.setAttribute("data-building-id",b.id);if(b.floors===0)node.setAttribute("stroke-dasharray",".8 .4");
     roofs.push({ node, floors: b.floors });
     world.append(node);
     // Covered walk-throughs: dashed brown if confirmed by a photo, dashed orange if only likely.
@@ -238,7 +249,7 @@ async function boot(): Promise<void> {
     for (const { node, floors } of roofs) {
       const yard = floors === 0;
       node.setAttribute("fill", byHeight ? FLOOR_FILL[Math.min(floors, FLOOR_FILL.length - 1)] : yard ? "#d9a887" : "#f7f3ea");
-      node.setAttribute("fill-opacity", String(!byHeight && yard ? 0.55 : 0.95));
+      node.setAttribute("fill-opacity", "1");
     }
   };
   paintRoofs(false);
@@ -350,10 +361,12 @@ async function boot(): Promise<void> {
   world.append(names);
 
   // Photos: a pin where each was taken and a wedge showing where it looks.
+  objects.style.display="none";$("#objects").setAttribute("aria-pressed","false");
+  for(const node of walls.querySelectorAll("circle"))node.setAttribute("display","none");
   const photoEvidence=el("g",{id:"photo-evidence-layer",style:"display:none;pointer-events:none"});
   const selectedEvidence=el("g",{id:"selected-photo-context"});
   photoEvidence.append(selectedEvidence);world.append(photoEvidence);
-  const photos = el("g", {});
+  const photos = el("g", {style:"display:none"});$("#photos").setAttribute("aria-pressed","false");
   const viewer = $<HTMLDivElement>("#viewer");
   const labelBox = $<HTMLInputElement>("#label");
   const labelStatus = $("#labelstatus");
@@ -481,11 +494,11 @@ async function boot(): Promise<void> {
 
 
   $("#legend").innerHTML =
-    `<div><i style="background:#f7f3ea"></i>House</div><div><i style="background:#d9a887"></i>Yard or patio</div>` +
+    `<div><i style="background:#f7f3ea"></i>House · registry footprint</div><div><i style="background:#d9a887"></i>Enclosure / patio · walls unverified</div>` +
     `<div><i style="background:#b9b4ab"></i>Car park</div><div><i style="background:#4fc3e8"></i>Pool</div><div><i style="background:#6ea854"></i>Lawn</div>` +
     `<div><i style="background:#3a6e3e"></i>Planting (from the aerial)</div><div><i style="background:#b2a088"></i>Stone path</div>` +
     `<div><i style="background:#3f7d45;border-radius:50%"></i>Placed tree or plant</div>` +
-    `<div><i style="background:#fff;border-radius:50%"></i>Garden wall (generated)</div>` +
+    `<div><i style="background:#fff;border-radius:50%"></i>Generated wall · details only</div>` +
     `<div><i style="background:#d6336c;border-radius:50%"></i>Photo camera pin</div><div><i style="background:#4389ae;border-radius:50%"></i>Suggested context · GPS range</div><div><i style="background:#d99b2b;border-radius:50%"></i>Association needs review · unknown range is dashed</div>` +
     `<div><i style="background:#2f9e44;border-radius:50%"></i>Photo you have labelled</div>` +
     `<div><i style="background:#dfaa86"></i>Paseo</div><div><i style="background:#e4cc9b"></i>Beach</div>` +
@@ -627,6 +640,13 @@ async function boot(): Promise<void> {
   toggle("#streets", (on) => {
     show(streets)(on);
     show(names)(on);
+  });
+  toggle("#layout-mode",(on)=>{
+    show(objects)(!on);$("#objects").setAttribute("aria-pressed",String(!on));
+    for(const node of walls.querySelectorAll("circle"))node.setAttribute("display",on?"none":"");
+    for(const {node,floors}of roofs){node.setAttribute("stroke",floors===0?"#94654b":"#5b564e");node.setAttribute("stroke-width",String(floors===0?.25:.4));node.setAttribute("stroke-dasharray",floors===0?".8 .4":"");}
+    show(photos)(!on);$("#photos").setAttribute("aria-pressed",String(!on));
+    if(on){show(photoEvidence)(false);$("#photo-evidence").setAttribute("aria-pressed","false");photos.classList.remove("evidence-mode");}
   });
   toggle("#objects", (on) => {
     show(objects)(on);

@@ -39,7 +39,7 @@ export function addRaisedGround(scene: THREE.Scene, material: THREE.Material, ce
 }
 
 /** Split triangles that cross a change of height, so a draped surface follows the ground. */
-function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: number) => number, world: THREE.Matrix4): THREE.BufferGeometry {
+export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: number) => number, world: THREE.Matrix4): THREE.BufferGeometry {
   const flat = geometry.index ? geometry.toNonIndexed() : geometry, pos = flat.getAttribute("position"), uv = flat.getAttribute("uv");
   const outP: number[] = [], outU: number[] = [], v = new THREE.Vector3();
   let lifted = false;
@@ -53,15 +53,20 @@ function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: number)
     if (depth && uneven && longest > 1.5) { emit(a, ab, ca, depth - 1); emit(ab, b, bc, depth - 1); emit(ca, bc, c, depth - 1); emit(ab, bc, ca, depth - 1); return; }
     for (const q of [a, b, c]) { if (q.h) lifted = true; outP.push(q.p[0], q.p[1] + q.h, q.p[2]); outU.push(...q.u); }
   };
+  const groups:{start:number;count:number;materialIndex:number}[]=[];
   for (let i = 0; i < pos.count; i += 3) {
     const corner = (k: number) => make([pos.getX(k), pos.getY(k), pos.getZ(k)], uv ? [uv.getX(k), uv.getY(k)] : []);
+    const start=outP.length/3;
     emit(corner(i), corner(i + 1), corner(i + 2), 8);
+    const source=flat.groups.find(g=>i>=g.start&&i<g.start+g.count);
+    if(source){const count=outP.length/3-start,last=groups[groups.length-1];if(last&&last.materialIndex===source.materialIndex&&last.start+last.count===start)last.count+=count;else groups.push({start,count,materialIndex:source.materialIndex??0});}
   }
   // Nothing here stands on raised ground: leave it exactly as it was.
   if (!lifted) return geometry;
   const result = new THREE.BufferGeometry();
   result.setAttribute("position", new THREE.Float32BufferAttribute(outP, 3));
   if (uv) result.setAttribute("uv", new THREE.Float32BufferAttribute(outU, 2));
+  for(const g of groups)result.addGroup(g.start,g.count,g.materialIndex);
   result.computeVertexNormals();
   return result;
 }
@@ -100,6 +105,9 @@ export function drapeScene(scene: THREE.Scene, buildings: { ring: Vec2[] }[]): v
       if (changed) { mesh.instanceMatrix.needsUpdate = true; mesh.computeBoundingSphere(); }
       continue;
     }
+    // Buildings stay level and keep their extrusion material groups, even over 45 m.
+    const base=object.userData.base as Vec2|undefined;
+    if(base){object.position.y+=siteY(...base);continue;}
     box.setFromObject(object);
     if (box.isEmpty()) continue;
     box.getSize(size); box.getCenter(mid);

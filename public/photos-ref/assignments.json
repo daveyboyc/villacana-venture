@@ -1,13 +1,13 @@
 {
  "version": 1,
- "inputDigest": "832d46a94f64dd6e6a85e05ad4dc08b655d9f68ef2f7c471f9a0cc2ef47c5cf5",
+ "inputDigest": "323877d9c602a758af770f90e25edc9166e6ef140f9ef44f1499709ecde2a716",
  "summary": {
   "needs-review": 84,
   "suggested": 22,
   "photos": 106,
-  "features": 276,
-  "photosCitedByModel": 15,
-  "modelFeaturesWithPhotoCitations": 18
+  "features": 280,
+  "photosCitedByModel": 18,
+  "modelFeaturesWithPhotoCitations": 22
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3727,7 +3727,7 @@
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 0
+     "gap": 0.0
     }
    ],
    "inViewCandidates": [],
@@ -3759,7 +3759,7 @@
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 0
+     "gap": 2.3
     }
    ],
    "inViewCandidates": [],
@@ -3785,13 +3785,13 @@
      "id": "parking:Dalí car park",
      "name": "Dalí car park",
      "kind": "parking",
-     "gap": 0
+     "gap": 0.2
     },
     {
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 0.1
+     "gap": 3.2
     }
    ],
    "inViewCandidates": [
@@ -3829,11 +3829,16 @@
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 0.1
+     "gap": 3.5
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "coastal_gate.json:dali-coastal-mesh-base",
+    "coastal_gate.json:dali-coastal-gate-pier",
+    "coastal_gate.json:dali-coastal-solid-wall",
+    "gate:dali-coastal-gate"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -121.9,
@@ -4275,7 +4280,7 @@
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 2.8
+     "gap": 5.6
     }
    ],
    "inViewCandidates": [
@@ -4313,7 +4318,7 @@
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 2.7
+     "gap": 5.5
     }
    ],
    "inViewCandidates": [
@@ -4346,16 +4351,15 @@
      "name": "Dalí car park",
      "kind": "parking",
      "gap": 0
-    },
-    {
-     "id": "street:dali",
-     "name": "Calle Pintor Dalí",
-     "kind": "street",
-     "gap": 2.7
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "coastal_gate.json:dali-coastal-mesh-base",
+    "coastal_gate.json:dali-coastal-gate-pier",
+    "coastal_gate.json:dali-coastal-solid-wall",
+    "gate:dali-coastal-gate"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -122.4,
@@ -4377,18 +4381,23 @@
      "id": "parking:Dalí car park",
      "name": "Dalí car park",
      "kind": "parking",
-     "gap": 0
+     "gap": 1.7
     },
     {
      "id": "street:dali",
      "name": "Calle Pintor Dalí",
      "kind": "street",
-     "gap": 2.2
+     "gap": 5.5
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
-   "geometryReview": "observed; geometry comparison pending",
+   "citedBy": [
+    "coastal_gate.json:dali-coastal-mesh-base",
+    "coastal_gate.json:dali-coastal-gate-pier",
+    "coastal_gate.json:dali-coastal-solid-wall",
+    "gate:dali-coastal-gate"
+   ],
+   "geometryReview": "Compared with structural wall/mesh/gate model; arrangement represented, plan position and dimensions remain estimates",
    "camera": {
     "x": -121.1,
     "z": 218.6,

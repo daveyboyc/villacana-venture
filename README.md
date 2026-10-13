@@ -87,3 +87,5 @@ Interiors, cars, a true height map, and your own photographs of each street. The
 Production builds require Python 3.10+ to regenerate photo associations (standard library only). Importing original photos additionally uses Pillow and pillow-heif.
 
 Photo placement and the evidence graph: see [PHOTO_MAP_WORKFLOW.md](docs/PHOTO_MAP_WORKFLOW.md). Use **Photo evidence** on the reference map to inspect camera uncertainty and proposed street associations.
+
+Structural accuracy comes first: [LAYOUT_ACCURACY.md](docs/LAYOUT_ACCURACY.md). The reference map and 3D scene open in a clear Layout view; decorative detail is optional.

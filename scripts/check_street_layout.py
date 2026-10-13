@@ -42,9 +42,10 @@ def ring_gap(ring, building):
  edges=list(zip(building['ring'],building['ring'][1:]+building['ring'][:1]))
  return min((0 if inside(*p,building['ring']) else min(distance(p,c,d) for c,d in edges)) for p in pts)
 park=s['boundaryReference']['parking']
-for building,min_x,max_x,min_z,max_z in buildings:
- if not any(min_x-6<=p[0]<=max_x+6 and min_z-6<=p[1]<=max_z+6 for p in park['ring']):continue
- assert ring_gap(park['ring'],building)>=.6, f"Dalí parking is against house {building['id']}"
+for bay_ring in park.get('bayRings',[park['ring']]):
+ for building,min_x,max_x,min_z,max_z in buildings:
+  if not any(min_x-6<=p[0]<=max_x+6 and min_z-6<=p[1]<=max_z+6 for p in bay_ring):continue
+  assert ring_gap(bay_ring,building)>=.6, f"Dalí parking is against house {building['id']}"
 dali=roads['dali']
 for a,b in zip(dali['points'],dali['points'][1:]):
  length=math.dist(a,b)

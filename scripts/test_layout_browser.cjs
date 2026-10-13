@@ -1,0 +1,234 @@
+const { chromium } = require("playwright");
+const fs = require("node:fs");
+const path = require("node:path");
+(async () => {
+  const { createServer } = await import("vite");
+  const server = await createServer({
+    server: { host: "127.0.0.1", port: 0 },
+    logLevel: "error",
+  });
+  await server.listen();
+  const site = "http://127.0.0.1:" + server.httpServer.address().port;
+  const artifacts = path.join(process.cwd(), "layout-checks.local");
+  fs.mkdirSync(artifacts, { recursive: true });
+  const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE;
+  const b = await chromium.launch({
+    ...(executablePath ? { executablePath } : {}),
+    args: [
+      "--no-sandbox",
+      "--use-gl=angle",
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader",
+    ],
+  });
+  const p = await b.newPage({ viewport: { width: 1400, height: 950 } }),
+    errors = [];
+  p.on("pageerror", (e) => errors.push(e.message));
+  await p.goto(site + "/blueprint.html");
+  await p.waitForSelector("#coastal-gate-boundary");
+  const r = await p.evaluate(async () => {
+    const THREE = await import("/node_modules/.vite/deps/three.js");
+    const [
+      { Player },
+      { Solids, CoastField },
+      { barrierRings, referenceGroundHeight },
+      { cervantesPatioWallRings },
+      { poolGroundY, poolTerraceRing, POOL_TERRACE_ID },
+      { siteY, drapeScene, refine },
+      { coastalWallRings, coastalAccess, coastalGate, GatedSolids },
+      { protectedRoutes, routeClearance },
+      { makeSeaside },
+    ] = await Promise.all([
+      import("/src/player.ts"),
+      import("/src/geom.ts"),
+      import("/src/boundaries.ts"),
+      import("/src/cervantes-walls.ts"),
+      import("/src/pool-levels.ts"),
+      import("/src/terrain.ts"),
+      import("/src/coastal-gate.ts"),
+      import("/src/route-clearance.ts"),
+      import("/src/seaside.ts"),
+    ]);
+    const s = await (await fetch("/map/skeleton.json")).json(),
+      map = await (await fetch("/map/villacana.json")).json();
+    const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
+    const base = new Solids(
+      [
+        ...buildings.map((b) =>
+          b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring,
+        ),
+        ...barrierRings(s.boundaryReference.barriers),
+        ...cervantesPatioWallRings(),
+        ...coastalWallRings(),
+      ],
+      Object.fromEntries(
+        buildings.flatMap((b, i) =>
+          b.id === POOL_TERRACE_ID ? [[i, -0.5]] : [],
+        ),
+      ),
+    );
+    let open = true;
+    const sd = makeSeaside(s.seafront, s.viewRotation);
+    const world = {
+      solids: new GatedSolids(base, () => open),
+      coast: new CoastField(map.coast, map.landRef),
+      pools: s.pools.map((p) => p.ring),
+      bounds: map.bounds,
+      groundHeight: (x, z) =>
+        sd.inZone(x, z)
+          ? sd.y(x, z) + 0.06
+          : siteY(x, z) +
+            poolGroundY(x, z) +
+            referenceGroundHeight(s.boundaryReference, x, z),
+      maxGroundStep: 0.45,
+      seaLevel: sd.seaY,
+    };
+    const player = new Player(),
+      input = {
+        moveX: 0,
+        moveZ: 0,
+        run: false,
+        jump: false,
+        lookDx: 0,
+        lookDy: 0,
+        zoom: 0,
+        interact: false,
+      };
+    let segments = 0;
+    const walk = (points) => {
+      player.place(...points[0], 0);
+      for (let i = 1; i < points.length; i++) {
+        const end = points[i];
+        let frames = 0;
+        while (
+          Math.hypot(player.x - end[0], player.z - end[1]) > 0.12 &&
+          frames++ < 10000
+        )
+          player.update(
+            1 / 120,
+            { ...input, moveZ: 1 },
+            world,
+            Math.atan2(end[0] - player.x, -(end[1] - player.z)),
+          );
+        if (frames >= 10000)
+          throw Error(
+            "Blocked " +
+              i +
+              " at " +
+              player.x +
+              "," +
+              player.z +
+              " goal " +
+              end,
+          );
+        segments++;
+      }
+    };
+    const routes = protectedRoutes(s.boundaryReference, undefined, [
+      coastalAccess,
+    ]);
+    for (const route of routes)
+      for (const points of [route.points, [...route.points].reverse()])
+        walk(points);
+    open = false;
+    const at = [
+      (coastalGate.points[0][0] + coastalGate.points[1][0]) / 2,
+      coastalGate.points[0][1],
+    ];
+    const closed = world.solids.resolve(at[0], at[1], 0.42);
+    if (Math.hypot(closed.x - at[0], closed.z - at[1]) < 0.4)
+      throw Error("Closed gate not solid");
+    open = true;
+    const cleared = world.solids.resolve(at[0], at[1], 0.42);
+    if (Math.hypot(cleared.x - at[0], cleared.z - at[1]) > 0.01)
+      throw Error("Open gate still solid");
+    const shape = new THREE.Shape([
+      new THREE.Vector2(-40, -3),
+      new THREE.Vector2(-40, 3),
+      new THREE.Vector2(40, 3),
+      new THREE.Vector2(40, -3),
+    ]);
+    const geometry = new THREE.ExtrudeGeometry(shape, {
+      depth: 6,
+      bevelEnabled: false,
+    }).rotateX(-Math.PI / 2);
+    const material = [
+      new THREE.MeshBasicMaterial(),
+      new THREE.MeshBasicMaterial(),
+    ];
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(-180, 0, 40);
+    mesh.userData.base = [-180, 40];
+    const scene = new THREE.Scene();
+    scene.add(mesh);
+    const original = mesh.geometry;
+    drapeScene(scene, []);
+    if (mesh.geometry !== original || mesh.geometry.groups.length !== 2)
+      throw Error("Level building lost groups");
+    scene.updateMatrixWorld(true);
+    const ray = new THREE.Raycaster(
+      new THREE.Vector3(-230, 3, 40),
+      new THREE.Vector3(1, 0, 0),
+    );
+    if (!ray.intersectObject(mesh).length)
+      throw Error("Opaque wall is not ray-visible");
+    const plane = refine(
+      new THREE.BoxGeometry(80, 0.1, 6),
+      (x, z) => 0.5 * (1 + Math.sin(x / 20)),
+      new THREE.Matrix4(),
+    );
+    if (
+      plane.groups.length !== 6 ||
+      plane.groups.reduce((n, g) => n + g.count, 0) !==
+        plane.getAttribute("position").count
+    )
+      throw Error("Refined material groups incomplete");
+    const { addSprites } = await import("/src/sprites.ts");
+    const guardScene = new THREE.Scene();
+    guardScene.userData.decorationClearance = (x, z, r) =>
+      routeClearance(routes, x, z, r);
+    addSprites(guardScene, "tree", [
+      { x: routes[0].points[1][0], z: routes[0].points[1][1] },
+      { x: -400, z: -200 },
+    ]);
+    if (guardScene.children.length !== 1 || guardScene.children[0].count !== 1)
+      throw Error("Sprite guard failed to remove route obstruction");
+    if (routeClearance(routes, 0, 0, 1) === undefined)
+      throw Error("Missing guard");
+    const point = routes[0].points[1];
+    if (routeClearance(routes, ...point, 1))
+      throw Error("Route allows decoration");
+    return {
+      routes: routes.length,
+      bothDirections: true,
+      segments,
+      closedGateBlocks: true,
+      openGatePasses: true,
+      levelBuildingKeepsGroups: true,
+      refinedMaterialGroups: plane.groups.length,
+    };
+  });
+  await p.click("#map-frontages");
+  await p.screenshot({ path: path.join(artifacts, "layout-map.png") });
+  await p.goto(
+    site + "/slice.html?pool=north,middle,south,main&view=coastal-gate",
+  );
+  await p.waitForSelector(".reference-pin", { state: "attached" });
+  await p.waitForTimeout(2500);
+  await p.screenshot({ path: path.join(artifacts, "coastal-gate-closed.png") });
+  await p.click("#gate-control");
+  if ((await p.locator("#gate-control").innerText()) !== "Close coastal gate")
+    throw Error("Gate control failed");
+  await p.screenshot({ path: path.join(artifacts, "coastal-gate-open.png") });
+  await p.goto(site + "/slice.html?pool=north,middle&view=cervantes");
+  await p.waitForSelector(".reference-pin", { state: "attached" });
+  await p.waitForTimeout(2000);
+  await p.screenshot({ path: path.join(artifacts, "cervantes-layout.png") });
+  console.log(JSON.stringify({ result: r, errors }));
+  await b.close();
+  await server.close();
+  if (errors.length) process.exit(1);
+})().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

@@ -1,0 +1,162 @@
+{
+  "checkedAt": "2026-10-13",
+  "name": "Dalí coastal wall and pedestrian gate",
+  "trust": "Wall/mesh/gate arrangement visible in ground photos; plan cross-checked against focused Google satellite on 13 October. Position and dimensions estimated, roughly 1–2 m map precision; not a property survey.",
+  "evidence": [
+    "IMG_2284.jpg",
+    "IMG_2296.jpg",
+    "IMG_2297.jpg"
+  ],
+  "gate": {
+    "id": "dali-coastal-gate",
+    "name": "Dalí · coastal pedestrian gate",
+    "points": [
+      [
+        -124.9,
+        232.5
+      ],
+      [
+        -123.8,
+        232.5
+      ]
+    ],
+    "height": 1.9,
+    "thickness": 0.08,
+    "defaultState": "closed as photographed",
+    "evidence": [
+      "IMG_2284.jpg",
+      "IMG_2296.jpg",
+      "IMG_2297.jpg"
+    ]
+  },
+  "walls": [
+    {
+      "id": "dali-coastal-mesh-base",
+      "name": "Dalí · white plinth and rigid metal mesh",
+      "points": [
+        [
+          -128.8,
+          232.1
+        ],
+        [
+          -125.25,
+          232.5
+        ]
+      ],
+      "height": 0.45,
+      "meshHeight": 1.45,
+      "thickness": 0.22,
+      "solid": true,
+      "trust": "Wall/mesh/gate arrangement visible in ground photos; plan cross-checked against focused Google satellite on 13 October. Position and dimensions estimated, roughly 1–2 m map precision; not a property survey.",
+      "evidence": [
+        "IMG_2284.jpg",
+        "IMG_2296.jpg",
+        "IMG_2297.jpg"
+      ]
+    },
+    {
+      "id": "dali-coastal-gate-pier",
+      "name": "Dalí · gate pier",
+      "points": [
+        [
+          -125.25,
+          232.5
+        ],
+        [
+          -124.9,
+          232.5
+        ]
+      ],
+      "height": 1.9,
+      "thickness": 0.22,
+      "solid": true,
+      "trust": "Wall/mesh/gate arrangement visible in ground photos; plan cross-checked against focused Google satellite on 13 October. Position and dimensions estimated, roughly 1–2 m map precision; not a property survey.",
+      "evidence": [
+        "IMG_2284.jpg",
+        "IMG_2296.jpg",
+        "IMG_2297.jpg"
+      ]
+    },
+    {
+      "id": "dali-coastal-solid-wall",
+      "name": "Dalí · tall white coastal wall",
+      "points": [
+        [
+          -123.8,
+          232.5
+        ],
+        [
+          -116.8,
+          224.4
+        ]
+      ],
+      "height": 1.9,
+      "thickness": 0.22,
+      "solid": true,
+      "trust": "Wall/mesh/gate arrangement visible in ground photos; plan cross-checked against focused Google satellite on 13 October. Position and dimensions estimated, roughly 1–2 m map precision; not a property survey.",
+      "evidence": [
+        "IMG_2284.jpg",
+        "IMG_2296.jpg",
+        "IMG_2297.jpg"
+      ]
+    }
+  ],
+  "route": {
+    "id": "dali-coastal-access",
+    "name": "Dalí gate → paseo",
+    "points": [
+      [
+        -126.4,
+        230.0
+      ],
+      [
+        -124.35,
+        230.9
+      ],
+      [
+        -124.35,
+        232.5
+      ],
+      [
+        -122.1,
+        236.0
+      ],
+      [
+        -117.9,
+        239.9
+      ]
+    ],
+    "width": 1.1,
+    "trust": "Gate connection visible in ground photos; short connector and meeting point on mapped paseo approximate"
+  },
+  "parkingEndRing": [
+    [
+      -133.3,
+      217.4
+    ],
+    [
+      -125.5,
+      216.1
+    ],
+    [
+      -121.5,
+      220.8
+    ],
+    [
+      -116.8,
+      224.4
+    ],
+    [
+      -123.8,
+      232.5
+    ],
+    [
+      -128.8,
+      232.1
+    ],
+    [
+      -130.5,
+      224.8
+    ]
+  ]
+}
