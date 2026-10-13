@@ -43,12 +43,24 @@ ramp in both directions with jump landings, and separate main/children's/south
 pool floor checks. The Google key remains only in the existing ignored private
 environment file; this change contains no API key or Google imagery.
 
-## Seaward slope (2026-10-13)
+## Beach and sea levels (2026-10-13)
 
-The lawn now rises evenly from pool level to the paseo: 3 m over 22 m, about
-1 in 7, with no wall or step at the beach. The slope is measured from the mapped
-paseo line (`levels.seawardSlope` in `data/main_pool.json`). It is uphill to the
-beach only because the model keeps the beach and paseo at street level; a
-gentler, truer slope needs the whole seafront lowered, which has not been done.
+From Dave: the big pool is level with the beach, the beach falls gently to the
+sea, and the sea is lower. So:
+
+- The pool lawn runs out level onto the paseo and the sand. No wall, no step.
+- The beach falls from the paseo to the waterline (about 0.7 m in front of the
+  big pool), and the sea surface lies 0.6 m below pool level.
+- Barraka stands on the sand at beach level.
+- The paseo is at pool level in front of the big pool and Barraka, and climbs
+  back to street level towards the south pool (3 m over 34 m) and to the east.
+  Beside the south pool it is level with the lawn, as the photos show.
+- Where the land behind the paseo is higher, a plain bank holds it back.
+- Calle Guillermo now ends at the top of that bank; the way down to the beach is
+  the pool ramp or steps, then across the lawn.
+
+The heights are in `levels.seafront` in `data/main_pool.json` and are estimates,
+not measurements. `src/seaside.ts` turns them into the ground seaward of the
+paseo; the flat ground sheet is cut away there. The master map is unchanged.
 Pool names in the 3D overview sit just north of each pool so they do not cover
 the water.

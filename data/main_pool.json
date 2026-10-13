@@ -110,11 +110,11 @@
       ],
       "width": 2.4
     },
-    "seawardSlope": {
-      "note": "The lawn rises evenly from pool level to the paseo. 'paseo' is a copy of skeleton.seafront.paseo in turned metres; 'flat' is the level strip beside it and 'run' the length of the slope, in metres.",
-      "paseo": [[-144.9, 147.1], [-92.3, 130.6], [-56.0, 117.1], [-37.6, 107.8], [-26.2, 101.1], [-16.3, 99.2]],
-      "flat": 2,
-      "run": 22
+    "seafront": {
+      "note": "Heights seaward of the paseo, from Dave (2026-10-13): the big pool is level with the beach, the beach falls gently to the sea, and the sea is lower. 'profile' is the paseo's height against turned-frame x: street level by the south pool, pool level in front of the big pool and Barraka. 'shore' and 'sea' are the heights at the waterline. All approximate.",
+      "profile": [[-110, 0], [-76, -3], [-10, -3], [30, 0]],
+      "shore": -3.7,
+      "sea": -3.6
     },
     "terraceRing": [
       [-37.039, 60.908],
