@@ -12,7 +12,7 @@ const EDITS_KEY = "villacana-map-edits";
 const ICONS: Record<string, { r: number; fill: string; edge: string; label: string }> = kinds;
 const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
-type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; accuracy?: number; taken?: string };
+type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; accuracy?: number; taken?: string; observation?: string };
 type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[]; labels: Record<string, string> };
 
 const svg = document.querySelector<SVGSVGElement>("#map")!;
@@ -324,6 +324,7 @@ async function boot(): Promise<void> {
   const viewer = $<HTMLDivElement>("#viewer");
   const labelBox = $<HTMLInputElement>("#label");
   const labelStatus = $("#labelstatus");
+  const observation=document.createElement("p");observation.id="photo-observation";viewer.querySelector("p")!.after(observation);
   labelBox.addEventListener("input", () => {
     labelStatus.textContent = "Unsaved label. Tap Save or press Done to keep it.";
   });
@@ -343,7 +344,9 @@ async function boot(): Promise<void> {
       open = photo;
       const pin = photo.pin;
       viewer.querySelector("img")!.src = asset(`/photos-ref/${pin.file}`);
-      viewer.querySelector("p")!.textContent = `${pin.title}${pin.taken ? " · " + pin.taken : ""}${pin.accuracy ? " · GPS ±" + pin.accuracy + " m" : ""}`;
+      viewer.querySelector("img")!.alt = pin.title;
+      viewer.querySelector("p")!.textContent = `${pin.title} · ${pin.file}${pin.taken ? " · " + pin.taken : ""}${pin.accuracy ? " · GPS ±" + pin.accuracy + " m" : ""}`;
+      observation.textContent=pin.observation??"";observation.hidden=!pin.observation;
       labelBox.value = labelOf(pin);
       labelStatus.textContent = "Tap Save to keep this label on this browser. Use Send changes to share it.";
       const index = photoViews.indexOf(photo);
@@ -376,7 +379,8 @@ async function boot(): Promise<void> {
     });
     for (const pin of manifest.sort((a, b) => a.file.localeCompare(b.file))) {
       if (pin.x === undefined || pin.z === undefined) continue;
-      const g = el("g", { style: "cursor:pointer" });
+      const g = el("g", { style: "cursor:pointer", "data-photo-file":pin.file });
+      const photoTitle=el("title",{});photoTitle.textContent=labelOf(pin)||pin.title;g.append(photoTitle);
       if (pin.heading !== undefined) {
         const wedge = (deg: number, r: number) => {
           const a = ((deg - 90) * Math.PI) / 180;
