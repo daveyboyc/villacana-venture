@@ -1,3 +1,5 @@
+import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
+import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
@@ -53,9 +55,9 @@ async function boot(): Promise<void> {
   const connectionFocus = new URLSearchParams(location.search).get("view") === "cervantes";
   const seafrontFocus = mainPool && new URLSearchParams(location.search).get("view") === "seafront";
   const names = shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id[0].toUpperCase() + p.id.slice(1));
-  document.querySelector("#title")!.textContent = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]} pools` : `${names[0]} pool`;
+  document.querySelector("#title")!.textContent = names.length > 3 ? "Whole resort" : names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]} pools` : `${names[0]} pool`;
   const here = `?pool=${shown.filter((p) => !mainPool || p.id !== "toddler").map((p) => p.id).join(",")}${seafrontFocus ? "&view=seafront" : daliFocus ? "&view=dali" : connectionFocus ? "&view=cervantes" : ""}`;
-  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here;
+  for (const link of document.querySelectorAll<HTMLAnchorElement>("#areas a")) link.hidden = link.search === here || (names.length > 3 && new URLSearchParams(link.search).get("pool")?.split(",").length === 4 && !link.search.includes("view="));
   COURTS = shown.map((p) => centroid(p.ring));
   const centre = {
     x: COURTS.reduce((sum, c) => sum + c.x, 0) / COURTS.length,
@@ -102,6 +104,7 @@ async function boot(): Promise<void> {
   // Where the sea is on show, the ground seaward of the paseo follows the seaside heights.
   if ((mainPool || shown.some((p) => p.id === "south")) && skeleton.seafront) seaside = makeSeaside(skeleton.seafront, skeleton.viewRotation);
   await addGround(scene, skeleton, centre, poolRings);
+  addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, poolGroundY);
   const backdrop=new THREE.Scene();addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
@@ -130,15 +133,15 @@ async function boot(): Promise<void> {
 
   const player = new Player();
   scene.add(player.group);
-  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS);
+  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, skeleton.gardenGates, walls);
+  addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z)), walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
-  if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   // Covered walk-throughs stand above head height, so they do not stop the player.
   const solidBuildings = buildings.filter((b) => !b.passage);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...cervantesPatioWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -595,6 +598,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
       const [bx, bz] = ring[(i + 1) % ring.length];
       const length = Math.hypot(bx - ax, bz - az);
       if (length < WIDTH + 0.6) continue;
+      if(inCervantesWallReview((ax+bx)/2,(az+bz)/2))continue;
       const tx = (bx - ax) / length;
       const tz = (bz - az) / length;
       let nx = tz;

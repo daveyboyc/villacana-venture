@@ -18,12 +18,12 @@ export function pavingCanvas(size=512):HTMLCanvasElement {
   return c;
 }
 const cache=new Map<string,THREE.CanvasTexture>();
-export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"):THREE.CanvasTexture {
+export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"|"turf"):THREE.CanvasTexture {
   const saved=cache.get(kind);if(saved)return saved;
   const c=kind==="paving"?pavingCanvas():document.createElement("canvas");
   if(kind!=="paving") {
     c.width=c.height=256;const g=c.getContext("2d")!,pixels=g.createImageData(256,256);
-    for(let i=0;i<pixels.data.length;i+=4){const v=kind==="plaster"?235+noise(i)*17:202+noise(Math.floor(i/4/16))*18;pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=v;pixels.data[i+3]=255;}
+    for(let i=0;i<pixels.data.length;i+=4){const v=kind==="plaster"?235+noise(i)*17:kind==="turf"?225+noise(i)*27:202+noise(Math.floor(i/4/16))*18;pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=v;pixels.data[i+3]=255;}
     g.putImageData(pixels,0,0);
     if(kind==="mosaic"){g.strokeStyle="#a2a7a2";g.lineWidth=1;for(let at=0;at<256;at+=16){g.beginPath();g.moveTo(at,0);g.lineTo(at,256);g.moveTo(0,at);g.lineTo(256,at);g.stroke();}}
   }
