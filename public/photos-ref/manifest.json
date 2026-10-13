@@ -603,14 +603,35 @@
   "taken": "2026-10-12"
  },
  {
-  "file": "IMG_2266.jpg",
-  "title": "IMG_2266",
+  "file": "IMG_2260.jpg",
+  "title": "IMG_2260",
   "trust": "phone location",
-  "x": -184.8,
-  "z": 76.4,
-  "heading": 243,
+  "x": -149.7,
+  "z": 56.9,
+  "heading": 158,
   "taken": "2026-10-12",
-  "accuracy": 14.0
+  "accuracy": 11.8
+ },
+ {
+  "file": "IMG_2261.jpg",
+  "title": "IMG_2261",
+  "trust": "phone location",
+  "x": -150.2,
+  "z": 56.9,
+  "heading": 167,
+  "taken": "2026-10-12",
+  "accuracy": 10.2
+ },
+ {
+  "file": "IMG_2262.jpg",
+  "title": "IMG_2262",
+  "trust": "phone location",
+  "x": -150.5,
+  "z": 56.9,
+  "heading": 226,
+  "taken": "2026-10-12",
+  "accuracy": 4.8,
+  "observation": "Cervantes / Elena junction: tiled ramp, white edges, side steps and drain at the foot"
  },
  {
   "file": "IMG_2263.jpg",
@@ -623,14 +644,35 @@
   "accuracy": 4.1
  },
  {
-  "file": "IMG_2261.jpg",
-  "title": "IMG_2261",
+  "file": "IMG_2264.jpg",
+  "title": "IMG_2264",
   "trust": "phone location",
-  "x": -150.2,
-  "z": 56.9,
-  "heading": 167,
+  "x": -153.7,
+  "z": 58.1,
+  "heading": 239,
   "taken": "2026-10-12",
-  "accuracy": 10.2
+  "accuracy": 3.9
+ },
+ {
+  "file": "IMG_2265.jpg",
+  "title": "IMG_2265",
+  "trust": "phone location",
+  "x": -158.4,
+  "z": 60.0,
+  "heading": 61,
+  "taken": "2026-10-12",
+  "accuracy": 4.7,
+  "observation": "Cervantes / Elena ramp from the upper landing: terracotta slope, white edges and bottom drain"
+ },
+ {
+  "file": "IMG_2266.jpg",
+  "title": "IMG_2266",
+  "trust": "phone location",
+  "x": -184.8,
+  "z": 76.4,
+  "heading": 243,
+  "taken": "2026-10-12",
+  "accuracy": 14.0
  },
  {
   "file": "IMG_2267.jpg",
@@ -653,38 +695,6 @@
   "accuracy": 3.4
  },
  {
-  "file": "IMG_2262.jpg",
-  "title": "IMG_2262",
-  "trust": "phone location",
-  "x": -150.5,
-  "z": 56.9,
-  "heading": 226,
-  "taken": "2026-10-12",
-  "accuracy": 4.8,
-  "observation": "Cervantes / Elena junction: tiled ramp, white edges, side steps and drain at the foot"
- },
- {
-  "file": "IMG_2265.jpg",
-  "title": "IMG_2265",
-  "trust": "phone location",
-  "x": -158.4,
-  "z": 60.0,
-  "heading": 61,
-  "taken": "2026-10-12",
-  "accuracy": 4.7,
-  "observation": "Cervantes / Elena ramp from the upper landing: terracotta slope, white edges and bottom drain"
- },
- {
-  "file": "IMG_2260.jpg",
-  "title": "IMG_2260",
-  "trust": "phone location",
-  "x": -149.7,
-  "z": 56.9,
-  "heading": 158,
-  "taken": "2026-10-12",
-  "accuracy": 11.8
- },
- {
   "file": "IMG_2269.jpg",
   "title": "IMG_2269",
   "trust": "phone location",
@@ -695,16 +705,6 @@
   "accuracy": 4.7
  },
  {
-  "file": "IMG_2264.jpg",
-  "title": "IMG_2264",
-  "trust": "phone location",
-  "x": -153.7,
-  "z": 58.1,
-  "heading": 239,
-  "taken": "2026-10-12",
-  "accuracy": 3.9
- },
- {
   "file": "IMG_2270.jpg",
   "title": "IMG_2270",
   "trust": "phone location",
@@ -713,5 +713,149 @@
   "heading": 325,
   "taken": "2026-10-12",
   "accuracy": 4.7
+ },
+ {
+  "file": "IMG_2273.jpg",
+  "title": "Cervantes: straight lane and barred windows",
+  "trust": "phone location",
+  "x": -177.3,
+  "z": 70.5,
+  "heading": 81,
+  "taken": "2026-10-13",
+  "accuracy": 4.0,
+  "observation": "Looking along the narrow terracotta pedestrian lane beside a white plaster house. Black iron window grilles, projecting red sills, stepped window surrounds and a traditional wall lantern are clear; clipped hedges and flowering climbers line the opposite side.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2274.jpg",
+  "title": "Cervantes: planting and paving detail",
+  "trust": "phone location",
+  "x": -177.3,
+  "z": 70.2,
+  "heading": 47,
+  "taken": "2026-10-13",
+  "accuracy": 4.1,
+  "observation": "Another view along the same straight tiled lane near its Dalí end. Broad-leaved plants, variegated narrow leaves, clipped shrubs and magenta bougainvillea sit in a narrow planting bed above a low white wall. Pale tile joints and flush service covers are visible.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2275.jpg",
+  "title": "Cervantes exit onto Pintor Dalí: slope and drain",
+  "trust": "phone location",
+  "x": -180.1,
+  "z": 70.2,
+  "heading": 244,
+  "taken": "2026-10-13",
+  "accuracy": 4.7,
+  "observation": "Looking back toward the asphalt road and the hedge opposite the lane entrance. The tiled approach has white edges, flush utility covers and a transverse drainage grate near the foot. A slight sloping transition is visible; its rise is not measured from this image.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2276.jpg",
+  "title": "Pintor Dalí: parking junction toward the sea",
+  "trust": "phone location",
+  "x": -183.3,
+  "z": 98.0,
+  "heading": 142,
+  "taken": "2026-10-13",
+  "accuracy": 3.1,
+  "observation": "Asphalt parking area opening into the narrower seaward aisle. White perpendicular bay markings and parked cars sit beside the houses, with a separate house-side footpath and traditional black lanterns. Fence and tall tree screening line the opposite side, with the sea visible at the far end.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2277.jpg",
+  "title": "Pintor Dalí: aisle, outer fence and white curb",
+  "trust": "phone location",
+  "x": -183.1,
+  "z": 99.3,
+  "heading": 151,
+  "taken": "2026-10-13",
+  "accuracy": 2.0,
+  "observation": "A second view of the parking junction and the straight aisle toward the sea. Perpendicular bays meet the junction; the right edge has a low white curb, chain-link screening and mature trees. House-side planting and lanterns help identify the opposite footpath.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2278.jpg",
+  "title": "Pintor Dalí: seaward parking row and chain-link fence",
+  "trust": "phone location",
+  "x": -154.9,
+  "z": 155.8,
+  "heading": 156,
+  "taken": "2026-10-13",
+  "accuracy": 5.2,
+  "observation": "Farther down the asphalt aisle, white bay corner markings and parked cars line the house side. The opposite edge shows brown chain-link mesh above a low retaining base, a white-painted curb and dense trees and hedge screening. The boundary continues toward the seaward end.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2279.jpg",
+  "title": "Pintor Dalí: houses, lamps and parking bays",
+  "trust": "phone location",
+  "x": -149.2,
+  "z": 170.4,
+  "heading": 129,
+  "taken": "2026-10-13",
+  "accuracy": 3.4,
+  "observation": "Closer view of the house-side parking row toward the sea. A tall black lantern, white plaster frontages, projecting entrance surrounds, clipped shrubs, flowering climbers and a palm sit behind the marked bays. This photo is useful for facade and planting materials.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2280.jpg",
+  "title": "Pintor Dalí: flagstone pedestrian entrance",
+  "trust": "phone location",
+  "x": -136.8,
+  "z": 193.3,
+  "heading": 65,
+  "taken": "2026-10-13",
+  "accuracy": 2.0,
+  "observation": "Looking into a pedestrian lane between the houses from the roadside parking. Irregular pale stone paving contrasts with Cervantes’ square terracotta tiles. White curbs separate the entrance from the asphalt and narrow lawns; a tall black lantern, brown shutters, window grilles and flowering climbers frame the route.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2281.jpg",
+  "title": "Pintor Dalí seaward end: turning area and fence",
+  "trust": "phone location",
+  "x": -132.1,
+  "z": 205.0,
+  "heading": 144,
+  "taken": "2026-10-13",
+  "accuracy": 2.0,
+  "observation": "The asphalt aisle reaches a wider end area beside the sea. Parked cars remain on the left and clipped screening on the right. A low white wall with dark metal mesh, no-parking signs and a modern flat-headed lamp separates the vehicle area from the paseo/shore beyond.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2282.jpg",
+  "title": "Pintor Dalí seaward end: wall and paseo boundary",
+  "trust": "phone location",
+  "x": -126.6,
+  "z": 213.1,
+  "heading": 154,
+  "taken": "2026-10-13",
+  "accuracy": 2.1,
+  "observation": "A closer view of the widened asphalt end area, facing the sea. The low white wall and metal mesh form the frontage boundary; a modern slim lamp and no-parking signs are visible. A pedestrian opening is at the right-hand end; this is not an uninterrupted solid perimeter.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2283.jpg",
+  "title": "Pintor Dalí: raised stone approach and archway",
+  "trust": "phone location",
+  "x": -123.9,
+  "z": 217.7,
+  "heading": 60,
+  "taken": "2026-10-13",
+  "accuracy": 2.1,
+  "observation": "A raised flagstone approach leads through an arched passage in the white building. Several shallow steps are visible at the foot between flared white curbs; the passage has patterned paving, lanterns and a gate visible beyond. Dark louvred shutters and a barrel-tile canopy sit above the arch. This is a separate access from the Cervantes ramp and the big-pool steps.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
+ },
+ {
+  "file": "IMG_2284.jpg",
+  "title": "Pintor Dalí: pedestrian gate to the paseo",
+  "trust": "phone location",
+  "x": -121.9,
+  "z": 221.7,
+  "heading": 173,
+  "taken": "2026-10-13",
+  "accuracy": 2.1,
+  "observation": "Detail of the seaward boundary’s narrow metal pedestrian gate between white walls. Adjacent rigid metal mesh allows a view of the beach and sea; a modern lamp stands beyond. The road edge has a yellow-painted curb, terracotta edging tiles, clipped shrubs and a no-parking sign. The gate provides a specific reference for the pedestrian connection.",
+  "locationBasis": "Phone GPS, user street identification and checked street layout; camera position retained without snapping"
  }
 ]
