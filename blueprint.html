@@ -22,7 +22,7 @@
       #legend { position: fixed; top: 12px; left: 12px; border-radius: 12px; line-height: 1.6; font-size: 13px; white-space: normal; }
       #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
       #viewer { position: fixed; inset: 0; background: #000d; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; z-index: 5; }
-      #viewer img { max-width: 96vw; max-height: 70dvh; border-radius: 8px; }
+      #viewer img { max-width: 96vw; max-height: 55dvh; border-radius: 8px; }
       #photonavigation { display: flex; gap: 8px; }
       #photonavigation button { padding: 8px 14px; border: 0; border-radius: 8px; }
       #labelrow { display: flex; gap: 8px; width: min(96vw, 640px); }
@@ -30,6 +30,8 @@
       #labelrow button { font-size: 15px; padding: 10px 14px; border-radius: 10px; border: 0; background: #fffdf8; }
       #savelabel { background: #1c6fd1 !important; color: #fff; }
       #send[hidden] { display: none; }
+      #viewer { overflow-y:auto; padding:12px 0; box-sizing:border-box; }
+      #photo-observation { max-width:850px; line-height:1.4; flex-shrink:0; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
       #labelstatus { max-width: 600px; }
       #map-controls { position:fixed; top:12px; right:12px; display:flex; gap:5px; flex-wrap:wrap; max-width:94vw; z-index:3; }
