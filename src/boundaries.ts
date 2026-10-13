@@ -1,3 +1,4 @@
+import {surfaceTexture} from "./materials";
 import * as THREE from "three";
 import { closestOnSegment } from "./geom";
 import { addSprites, type SpritePlacement } from "./sprites";
@@ -37,9 +38,7 @@ export function referenceGroundHeight(reference: BoundaryReference, x: number, z
 }
 
 export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryReference): void {
-  const tileCanvas=document.createElement("canvas");tileCanvas.width=tileCanvas.height=64;
-  const tileCtx=tileCanvas.getContext("2d")!;tileCtx.fillStyle="#bba48d";tileCtx.fillRect(0,0,64,64);tileCtx.fillStyle="#c48061";tileCtx.fillRect(2,2,60,60);
-  const tiles=new THREE.CanvasTexture(tileCanvas);tiles.colorSpace=THREE.SRGBColorSpace;tiles.wrapS=tiles.wrapT=THREE.RepeatWrapping;tiles.repeat.set(1/0.6,1/0.6);
+  const tiles=surfaceTexture("paving");
   const flat=(ring:Vec2[],color:string,y:number,map?:THREE.Texture) => {
     const shape=new THREE.Shape(ring.map(([x,z])=>new THREE.Vector2(x,-z)));
     const mesh=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color,map,roughness:1}));

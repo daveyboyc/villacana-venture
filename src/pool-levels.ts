@@ -1,3 +1,4 @@
+import {plasterMaterial,surfaceTexture} from "./materials";
 import * as THREE from "three";
 import layout from "../data/main_pool.json";
 import { clamp, closestOnSegment, pointInRing } from "./geom";
@@ -37,8 +38,8 @@ export function poolGroundY(x:number,z:number):number {
 }
 
 export function addPoolAccess(scene:THREE.Scene):void {
-  const stone=new THREE.MeshStandardMaterial({color:"#fff7e7",roughness:0.9,side:THREE.DoubleSide});
-  const tile=new THREE.MeshStandardMaterial({color:"#c78667",roughness:0.9,side:THREE.DoubleSide});
+  const stone=plasterMaterial("#fff7e7");stone.side=THREE.DoubleSide;
+  const tile=new THREE.MeshStandardMaterial({color:"#ffffff",map:surfaceTexture("paving"),roughness:0.9,side:THREE.DoubleSide});
   // Retain the elevated streets beside the lowered pool and lawn.
   for(const ring of [lowerPoolRing,...lowerPoolHoles]) for(let i=0;i<ring.length;i++) {
     const a=ring[i],b=ring[(i+1)%ring.length];
@@ -46,7 +47,7 @@ export function addPoolAccess(scene:THREE.Scene):void {
     const by=lowerTerrainY(a[0]*0.001+b[0]*0.999,a[1]*0.001+b[1]*0.999);
     const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute([
       a[0],0,a[1],b[0],by,b[1],a[0],ay,a[1],a[0],0,a[1],b[0],0,b[1],b[0],by,b[1]
-    ],3));g.computeVertexNormals();scene.add(new THREE.Mesh(g,stone));
+    ],3));const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));g.computeVertexNormals();scene.add(new THREE.Mesh(g,stone));
   }
   for(const access of poolAccess) {
     const [a,b]=access.points,dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
@@ -58,7 +59,7 @@ export function addPoolAccess(scene:THREE.Scene):void {
       const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute([
         ax+nx,y,az+nz,bx+nx,by,bz+nz,ax-nx,y,az-nz,ax-nx,y,az-nz,bx+nx,by,bz+nz,bx-nx,by,bz-nz,
         bx+nx,by,bz+nz,bx+nx,LOWER_POOL_Y*u,bz+nz,bx-nx,by,bz-nz,bx-nx,by,bz-nz,bx+nx,LOWER_POOL_Y*u,bz+nz,bx-nx,LOWER_POOL_Y*u,bz-nz
-      ],3));g.computeVertexNormals();const mesh=new THREE.Mesh(g,access.kind==="steps"?stone:tile);mesh.receiveShadow=true;mesh.userData.referenceSurface=true;scene.add(mesh);
+      ],3));const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));g.computeVertexNormals();const mesh=new THREE.Mesh(g,access.kind==="steps"?stone:tile);mesh.receiveShadow=true;mesh.userData.referenceSurface=true;scene.add(mesh);
     }
   }
 }
