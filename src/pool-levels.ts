@@ -14,7 +14,7 @@ export const lowerPoolHoles = (levels.lowerHoles as number[][][]).map(r=>r.map(p
 export const lowerPoolRing = levels.lowerArea.map(poolLevelPoint);
 export const poolAccess = [
   { id:"main-pool-steps",name:"Steps to big pool",...levels.steps,kind:"steps" },
-  { id:"main-pool-ramp",name:"Pool ramp · paseo end",...levels.ramp,kind:"ramp",count:0 },
+  { id:"main-pool-ramp",name:"Steps to Enrique’s",...levels.enriqueSteps,kind:"steps" },
 ].map(a=>({...a,points:a.points.map(poolLevelPoint)}));
 
 /** The access meshes and movement share one source of elevations. */
@@ -56,6 +56,18 @@ export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolea
     const [a,b]=access.points,dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
     const count=access.kind==="steps"?access.count:1;
     const nx=dz/length*access.width/2,nz=-dx/length*access.width/2;
+    // A flight of steps is closed in by a white wall down each side.
+    if(access.kind==="steps") for(const side of [1,-1]) {
+      const cheek:number[]=[];
+      for(let i=0;i<count;i++) {
+        const t=i/count,u=(i+1)/count,y=LOWER_POOL_Y*t;
+        const ax=a[0]+dx*t+nx*side,az=a[1]+dz*t+nz*side,bx=a[0]+dx*u+nx*side,bz=a[1]+dz*u+nz*side;
+        cheek.push(ax,y+0.5,az,bx,y+0.5,bz,ax,LOWER_POOL_Y,az,ax,LOWER_POOL_Y,az,bx,y+0.5,bz,bx,LOWER_POOL_Y,bz);
+      }
+      const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute(cheek,3));
+      const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));
+      g.computeVertexNormals();const wall=new THREE.Mesh(g,stone);wall.castShadow=wall.receiveShadow=true;scene.add(wall);
+    }
     for(let i=0;i<count;i++) {
       const t=i/count,u=(i+1)/count,y=LOWER_POOL_Y*t,by=access.kind==="steps"?y:LOWER_POOL_Y*u;
       const ax=a[0]+dx*t,az=a[1]+dz*t,bx=a[0]+dx*u,bz=a[1]+dz*u;

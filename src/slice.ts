@@ -13,7 +13,7 @@ import { Player, type MoveWorld } from "./player";
 import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { BoundaryReference, InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
 import { addPools, POOL_STAND } from "./water";
-import { addMainPoolTerraces, addSeafront } from "./main-pool";
+import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
 import { addRaisedGround, drapeScene, siteY } from "./terrain";
@@ -128,6 +128,7 @@ async function boot(): Promise<void> {
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
+    addRoofFins(scene);
     const map = await (await fetch(asset("/map/villacana.json"))).json();
     if (skeleton.seafront) addSeafrontOutlines(scene, skeleton.seafront, true, seaside);
     else addSeafront(scene, map.coast);
@@ -198,6 +199,17 @@ async function boot(): Promise<void> {
     document.querySelector("#title")!.textContent = "Calle Cervantes · Elena ramp";
   }
   if(new URLSearchParams(location.search).get("view")==="coastal-gate"){spawn[0]=coastalAccess.points[0][0];spawn[1]=coastalAccess.points[0][1];start.x=gate.at[0];start.z=gate.at[1];}
+  // A link can start the walk anywhere: ?at=x,z stands the player there and &look=x,z faces them
+  // that way. Both are in the master map's turned frame (sea downward), in metres.
+  const spot = (name: string): Vec2 | undefined => {
+    const v = new URLSearchParams(location.search).get(name)?.split(",").map(Number);
+    if (!v || v.length !== 2 || !v.every(Number.isFinite)) return undefined;
+    const turn = skeleton.viewRotation * Math.PI / 180;
+    return [v[0] * Math.cos(turn) + v[1] * Math.sin(turn), -v[0] * Math.sin(turn) + v[1] * Math.cos(turn)];
+  };
+  const at = spot("at"), look = spot("look");
+  if (at) { spawn[0] = at[0]; spawn[1] = at[1]; }
+  if (look) { start.x = look[0]; start.z = look[1]; }
   player.place(spawn[0], spawn[1], 0);
   const world: MoveWorld = {
     solids:new GatedSolids(solids,()=>gate.open),

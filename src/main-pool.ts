@@ -3,6 +3,35 @@ import * as THREE from "three";
 import { pointInRing } from "./geom";
 import type { SkeletonBuilding, Vec2 } from "./types";
 import { LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
+import layout from "../data/main_pool.json";
+
+/** The two tall white triangular walls that stand above the restaurant roof. */
+export function addRoofFins(scene: THREE.Scene): void {
+  const angle = 26 * Math.PI / 180, white = plasterMaterial("#fffdf5");
+  white.side = THREE.DoubleSide;
+  for (const fin of layout.roofFins.fins) {
+    const line = fin.line.map(([x, z]): Vec2 => [x * Math.cos(angle) + z * Math.sin(angle), -x * Math.sin(angle) + z * Math.cos(angle)]);
+    const lengths = line.map((p, i) => i ? Math.hypot(p[0] - line[i - 1][0], p[1] - line[i - 1][1]) : 0), total = lengths.reduce((a, b) => a + b, 0);
+    const positions: number[] = [];
+    let along = 0;
+    for (let i = 1; i < line.length; i++) {
+      const a = line[i - 1], b = line[i];
+      const ay = fin.heights[0] + (fin.heights[1] - fin.heights[0]) * along / total;
+      along += lengths[i];
+      const by = fin.heights[0] + (fin.heights[1] - fin.heights[0]) * along / total;
+      positions.push(a[0], 0, a[1], b[0], 0, b[1], a[0], ay, a[1], a[0], ay, a[1], b[0], 0, b[1], b[0], by, b[1]);
+    }
+    const geometry = new THREE.BufferGeometry();
+    geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    const at = geometry.getAttribute("position"), uvs: number[] = [];
+    for (let v = 0; v < at.count; v++) uvs.push(at.getX(v) + at.getZ(v), at.getY(v));
+    geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
+    geometry.computeVertexNormals();
+    const mesh = new THREE.Mesh(geometry, white);
+    mesh.castShadow = mesh.receiveShadow = true;
+    scene.add(mesh);
+  }
+}
 
 /** Dress the surveyed restaurant footprints, without moving their walls. */
 export function addMainPoolTerraces(scene: THREE.Scene, buildings: SkeletonBuilding[], pool: { x: number; z: number }): void {

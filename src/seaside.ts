@@ -74,7 +74,8 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   for (let j = 0; j <= n; j++) for (let i = 0; i <= n; i++) {
     const x = x0 + i * cell, z = z0 + j * cell;
     inside[j * (n + 1) + i] = seaside.inZone(x, z) ? 1 : 0;
-    heights[j * (n + 1) + i] = seaside.y(x, z) - 0.03;
+    // Corners just inland of the zone dip well below the ground there, so the two never flicker.
+    heights[j * (n + 1) + i] = seaside.y(x, z) - (inside[j * (n + 1) + i] ? 0.03 : 0.6);
   }
   const sand: number[] = [];
   for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {

@@ -59,7 +59,11 @@ for pool in skeleton['pools']:
 # Beside the south pool the paseo stays at street level.
 south = next(p for p in skeleton['pools'] if p['id'] == 'south')
 assert all(paseo_height(turned(p)[0]) == 0 for p in south['ring']), 'South lawn no longer level with the paseo'
-assert layout['ramp']['width'] > 2 * .42
+assert layout['enriqueSteps']['width'] > 2 * .42
+assert 0 < layout['drop'] / layout['enriqueSteps']['count'] <= .2
+# Both flights start on the platform and end on the lower deck.
+for flight in (layout['steps'], layout['enriqueSteps']):
+    assert lowered(flight['points'][1]), 'Steps do not reach the lower deck'
 assert layout['terraceId'] in {b['id'] for b in skeleton['buildings']}
 assert 'not API measurements' in layout['trust']
 print('Lower main/children’s pools, unchanged other pools and street centre lines, stair rise and ramp width PASS')

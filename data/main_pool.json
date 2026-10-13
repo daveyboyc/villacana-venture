@@ -24,6 +24,13 @@
     ]
   ],
   "pathWidth": 1.8,
+  "roofFins": {
+    "note": "Two tall white triangular walls on the west restaurant block, from Dave's web photos (2026-10-13). Turned-frame metres; heights are metres above the platform at each end of the line. Read by eye: the front wall peaks at the west end (where the weathervane is), the wall behind it peaks towards the middle.",
+    "fins": [
+      {"line": [[-75.4, 66.9], [-69.4, 60.5], [-62.2, 55.6]], "heights": [7.2, 3.2]},
+      {"line": [[-76.3, 64.7], [-73.8, 61.5], [-68.4, 56.8], [-63.0, 53.5]], "heights": [3.2, 6.6]}
+    ]
+  },
   "terraceBuildingIds": [
     "6364501UF1366S_part3",
     "6364501UF1366S_part4",
@@ -87,8 +94,7 @@
       [-72.17, 69.56],
       [-73.65, 73.99],
       [-73.39, 76.82],
-      [-73.365, 78.921],
-      [-74.735729, 79.091966],
+      [-74.65, 76.93], [-74.65, 83.0], [-74.37, 83.0],
       [-73.363, 93.77],
       [-73.173, 95.292],
       [-73.166, 95.878],
@@ -103,13 +109,7 @@
       "width": 2.6,
       "count": 18
     },
-    "ramp": {
-      "points": [
-        [-74, 79],
-        [-71, 103]
-      ],
-      "width": 2.4
-    },
+    "enriqueSteps": {"points": [[-74.0, 76.9], [-74.0, 82.9]], "width": 1.2, "count": 18, "evidence": "Dave, 2026-10-13, with a web photo: a terracotta staircase beside a curved white wall climbs from the pool lawn to Enrique's at the west end of the restaurant platform. Position and size approximate"},
     "seafront": {
       "note": "Heights seaward of the paseo, from Dave (2026-10-13): the big pool is level with the beach, the beach falls gently to the sea, and the sea is lower. 'profile' is the paseo's height against turned-frame x: street level by the south pool, pool level in front of the big pool and Barraka. 'shore' and 'sea' are the heights at the waterline. All approximate.",
       "profile": [[-110, 0], [-76, -3], [-10, -3], [30, 0]],
@@ -211,11 +211,7 @@
       [-72.17, 69.56],
       [-73.65, 73.99],
       [-73.39, 76.82],
-      [-73.365004, 78.920626],
-      [-72.809267, 78.851158],
-      [-69.809267, 102.851158],
-      [-72.190733, 103.148842],
-      [-73.295617, 94.309776],
+      [-74.65, 76.93], [-74.65, 83.0], [-74.37, 83.0], [-73.363, 93.77],
       [-73.173, 95.292],
       [-73.166, 95.878],
       [-71.769004, 110.817956],

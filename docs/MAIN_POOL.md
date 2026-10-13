@@ -64,3 +64,21 @@ not measurements. `src/seaside.ts` turns them into the ground seaward of the
 paseo; the flat ground sheet is cut away there. The master map is unchanged.
 Pool names in the 3D overview sit just north of each pool so they do not cover
 the water.
+
+## Steps to Enrique's and the roof walls (2026-10-13)
+
+From Dave, with two web photos:
+
+- The way up to Enrique's at the west end of the platform is a flight of steps,
+  not a ramp. Eighteen steps with a white wall down each side now run from the
+  tip of the platform down to the pool deck (`levels.enriqueSteps`). Position,
+  width (1.2 m) and length are approximate. The old ramp along Calle Guillermo
+  is gone.
+- Two tall white triangular walls stand above the west restaurant block
+  (`roofFins`). As read from the photos, the front one peaks at the west end,
+  where the weathervane is, and the one behind peaks towards the middle. Heights
+  are estimates; the weathervane and awnings are not modelled.
+
+A link can now start the walk anywhere: add `&at=x,z` and optionally
+`&look=x,z`, in the master map's turned-frame metres. For example
+`slice.html?pool=main&at=-66,92&look=-72,64` stands on the lawn facing the steps.
