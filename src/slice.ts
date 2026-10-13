@@ -1,3 +1,4 @@
+import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
@@ -121,13 +122,13 @@ async function boot(): Promise<void> {
 
   const player = new Player();
   scene.add(player.group);
-  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z));
+  const walls = skeleton.gardenWalls.filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z)), walls);
+  addGardenGates(scene, skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z)), walls);
   const wallRings = walls.map(([x, z]): Vec2[] => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
-  if (skeleton.boundaryReference) addBoundaryReference(scene, skeleton.boundaryReference);
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addCervantesPatioWalls(scene,skeleton.boundaryReference);}
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
-  const solids = new Solids([...buildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(buildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solids = new Solids([...buildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...wallRings, ...fenceRings, ...cervantesPatioWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(buildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -552,6 +553,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
       const [bx, bz] = ring[(i + 1) % ring.length];
       const length = Math.hypot(bx - ax, bz - az);
       if (length < WIDTH + 0.6) continue;
+      if(inCervantesWallReview((ax+bx)/2,(az+bz)/2))continue;
       const tx = (bx - ax) / length;
       const tz = (bz - az) / length;
       let nx = tz;

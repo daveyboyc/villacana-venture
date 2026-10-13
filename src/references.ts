@@ -1,3 +1,4 @@
+import {cervantesPatioWalls} from "./cervantes-walls";
 import {frontageRegions} from "./frontages";
 import { asset } from "./asset";
 import type { Skeleton, Vec2 } from "./types";
@@ -42,6 +43,7 @@ export function mapLabels(s: Skeleton): ReferencePoint[] {
   add("main-pool-platform","Enrique’s · 90 Miles platform",poolLevelPoint([-53,56]),layout.levels.trust);
   for(const access of poolAccess) add(access.id,access.name,centre(access.points),layout.levels.trust);
   for(const r of frontageRegions)add(`frontage-${r.id}`,r.name,centre(r.ring),r.trust,r.evidence[0]);
+  for(const w of cervantesPatioWalls)add(w.id,w.name,lineCentre(w.points),w.trust,w.evidence[0]);
   return labels;
 }
 

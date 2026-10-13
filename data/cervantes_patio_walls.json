@@ -1,0 +1,297 @@
+{
+  "checkedAt": "2026-10-13",
+  "scope": "Cervantes west test section from the Dalí entrance through the photographed Elena junction. Unphotographed eastern frontage walls are not asserted.",
+  "review": {
+    "points": [
+      [
+        -186.03,
+        77.1
+      ],
+      [
+        -142.06,
+        50.89
+      ]
+    ],
+    "width": 8,
+    "trust": "Cervantes test section; ground photos IMG_2260–2265 and IMG_2273–2275 plus satellite/registry context"
+  },
+  "walls": [
+    {
+      "id": "cervantes-patio-north-1",
+      "name": "Cervantes · north patio wall 1",
+      "points": [
+        [
+          -185.1921,
+          75.5761
+        ],
+        [
+          -146.6998,
+          52.6313
+        ]
+      ],
+      "height": 0.65,
+      "thickness": 0.2,
+      "solid": true,
+      "side": "north",
+      "streetId": "cervantes",
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+    },
+    {
+      "id": "cervantes-patio-south-1",
+      "name": "Cervantes · south patio wall 1",
+      "points": [
+        [
+          -184.291,
+          77.0879
+        ],
+        [
+          -177.4542,
+          73.0126
+        ]
+      ],
+      "height": 0.65,
+      "thickness": 0.2,
+      "solid": true,
+      "side": "south",
+      "streetId": "cervantes",
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+    },
+    {
+      "id": "cervantes-patio-south-2",
+      "name": "Cervantes · south patio wall 2",
+      "points": [
+        [
+          -165.6815,
+          65.995
+        ],
+        [
+          -154.3836,
+          59.2604
+        ]
+      ],
+      "height": 0.65,
+      "thickness": 0.2,
+      "solid": true,
+      "side": "south",
+      "streetId": "cervantes",
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+    },
+    {
+      "id": "cervantes-patio-south-3",
+      "name": "Cervantes · south patio wall 3",
+      "points": [
+        [
+          -152.0297,
+          57.8573
+        ],
+        [
+          -142.8979,
+          52.4139
+        ]
+      ],
+      "height": 0.65,
+      "thickness": 0.2,
+      "solid": true,
+      "side": "south",
+      "streetId": "cervantes",
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+    }
+  ],
+  "openings": [
+    {
+      "name": "Calle Elena junction",
+      "ring": [
+        [
+          -146.1600483748589,
+          53.31928173973561
+        ],
+        [
+          -143.99995162514114,
+          52.06071826026439
+        ],
+        [
+          -163.66995162514112,
+          18.300718260264386
+        ],
+        [
+          -165.83004837485888,
+          19.559281739735614
+        ]
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2262.jpg",
+        "IMG_2265.jpg"
+      ]
+    },
+    {
+      "name": "Calle Elena junction",
+      "ring": [
+        [
+          -138.1832478615131,
+          85.21703231823045
+        ],
+        [
+          -138.9851935157356,
+          89.1822080529973
+        ],
+        [
+          -139.00428651467584,
+          89.31062215701456
+        ],
+        [
+          -139.00995736534307,
+          89.44032399266771
+        ],
+        [
+          -139.0021448961361,
+          89.56991446316603
+        ],
+        [
+          -138.98093338034633,
+          89.6979956730174
+        ],
+        [
+          -138.9465516270999,
+          89.8231860071602
+        ],
+        [
+          -138.899370513188,
+          89.944135034478
+        ],
+        [
+          -134.549370513188,
+          99.58413503447798
+        ],
+        [
+          -132.270629486812,
+          98.555864965522
+        ],
+        [
+          -136.45496116482892,
+          89.28300120090519
+        ],
+        [
+          -135.6348064842644,
+          85.22779194700271
+        ],
+        [
+          -135.61693077862367,
+          85.11144927107738
+        ],
+        [
+          -135.61007774295192,
+          84.99394099479139
+        ],
+        [
+          -135.61430814518485,
+          84.87630909949691
+        ],
+        [
+          -135.62958447306903,
+          84.75959666271318
+        ],
+        [
+          -135.65577126679443,
+          84.64483860884327
+        ],
+        [
+          -135.6926363201574,
+          84.53305253218716
+        ],
+        [
+          -135.73985273960312,
+          84.42522967362578
+        ],
+        [
+          -135.79700184288956,
+          84.32232613098908
+        ],
+        [
+          -152.60700184288953,
+          57.15232613098909
+        ],
+        [
+          -154.73299815711044,
+          58.467673869010916
+        ]
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2262.jpg",
+        "IMG_2265.jpg"
+      ]
+    },
+    {
+      "name": "Front-door approach between lawns",
+      "ring": [
+        [
+          -148.0887,
+          68.3973
+        ],
+        [
+          -148.1178,
+          68.3426
+        ],
+        [
+          -148.5596,
+          67.6284
+        ],
+        [
+          -153.2113,
+          70.1027
+        ],
+        [
+          -152.7887,
+          70.8973
+        ]
+      ],
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg"
+      ]
+    }
+  ],
+  "sources": [
+    "IMG_2260.jpg",
+    "IMG_2262.jpg",
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+  ]
+}

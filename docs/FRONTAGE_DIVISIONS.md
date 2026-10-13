@@ -28,3 +28,24 @@ new reference label can be edited and attached to a photo in the usual editor.
 Other frontages, including much of Dalí’s house-side lawns and the remaining pool
 courtyards, still need individual tracing. Do not interpret these five reviewed
 regions as verification of the entire resort or proof of legal parcel boundaries.
+
+## Cervantes patio wall test
+
+`data/cervantes_patio_walls.json` adds continuous white patio/planting walls along
+the photographed western Cervantes section, from the Dalí entrance through the
+Elena junction. Photos IMG_2263–2265 and IMG_2273–2275 distinguish those taller
+walls beneath planting from the low curbs around lawns. The wall traces follow
+this checked lane and are trimmed against registry facades, the Elena paths and
+the recorded lawn door approach. Where the house itself bounds the path, another
+wall is not placed through the facade. The map marks entrance openings and the
+same wall lines provide visible meshes and collision rings in the pool scene.
+
+The wall top is approximately 0.65 m above the path, with estimated 0.20 m
+thickness. Vegetation obscures some edges, so these are a reference-based test,
+not surveyed dimensions. The meshes follow the existing Cervantes ramp elevation.
+Generated wall blocks, gateways and broad veranda columns are suppressed inside
+this reviewed lane band. Unphotographed eastern frontage walls remain unasserted.
+
+Validation: wall/photo/route/opening checks, all 18 streets walked both directions
+with the real Player and new collision rings, sprint/jump blocked at the wall,
+map/editor and pool-scene rendering without runtime errors, and production build.
