@@ -11,6 +11,8 @@ export type MoveWorld = {
   poolFloor?: number | ((x:number,z:number)=>number);
   groundHeight?: (x: number, z: number) => number;
   maxGroundStep?: number;
+  /** Height of the sea surface. Defaults to 0. */
+  seaLevel?: number;
 };
 
 const RADIUS = 0.42;
@@ -187,7 +189,7 @@ export class Player {
     let floor = world.groundHeight?.(this.x, this.z) ?? 0.06;
     if (water.signed < 2.2) {
       const t = clamp((2.2 - water.signed) / 8, 0, 1);
-      floor = -0.12 - t * 0.8;
+      floor = (world.seaLevel ?? 0) - 0.12 - t * 0.8;
     }
     if (inAnyPool(this.x, this.z, world.pools)) floor = Math.min(floor, typeof world.poolFloor === "function" ? world.poolFloor(this.x,this.z) : world.poolFloor ?? -0.4);
 
