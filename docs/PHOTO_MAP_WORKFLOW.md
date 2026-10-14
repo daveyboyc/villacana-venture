@@ -1,5 +1,27 @@
 # Photo placement, evidence and validation
 
+## Intake for a new Drive batch
+
+Every batch goes through the same steps, so any agent can pick up any area.
+
+1. Find new files in the Drive folder "Villacana" (newer than the last indexed
+   IMG number in `public/photos-ref/manifest.json`). Download the originals to a
+   private folder outside both repos.
+2. `python3 scripts/index_photos.py <folder> public/photos-ref --annotations data/photo_annotations.json`
+   (needs `Pillow` and `pillow-heif`). It now also records GPS altitude, which
+   separates roof shots from lane shots.
+3. Look at every image. In `data/photo_annotations.json` give it a title,
+   observation and Drive link. In `data/reference_tags.json` give it `shows`
+   (every area visible, not where the camera stood), `viewpoint` (ground,
+   upper-floor, roof, aerial, map) and `useFor` (layout, levels, facades,
+   materials, planting, signage, view).
+4. `python3 scripts/assign_photo_map.py`, then
+   `python3 scripts/build_references.py --sheets --check`.
+5. Commit the web copies, tags and `refs/` here, and the contact sheets in
+   `villacana-reference`. Write a short dated note (`docs/PHOTOS_<date>.md`)
+   only for findings that change what we know about an area; also add those
+   findings to the area's `notes` in `data/areas.json`.
+
 ## What is automatic now
 
 `index_photos.py` takes downloaded originals from a private folder, reads phone

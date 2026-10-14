@@ -1,0 +1,3258 @@
+[
+ {
+  "id": "IMG_2182.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2182.jpg",
+  "title": "Tiled lane between lawns, white tiled bench",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -39.0,
+   "z": 133.0,
+   "heading": 240
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2183.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2183.jpg",
+  "title": "Lawn with a tall candelabra cactus and clipped shrubs",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -47.3,
+   "z": 142.2,
+   "heading": 294
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2184.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2184.jpg",
+  "title": "Narrow tiled lane between white walls and planting beds",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -56.7,
+   "z": 147.2,
+   "heading": 148
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2185.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2185.jpg",
+  "title": "Covered arched passage, patterned terracotta tiles, sea at the far end",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -80.1,
+   "z": 159.2,
+   "heading": 146
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2186.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2186.jpg",
+  "title": "Covered passage through the terrace with a view to the sea",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -80.1,
+   "z": 158.9,
+   "heading": 149
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2187.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2187.jpg",
+  "title": "Arched passage with a street and house-number plaque",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -79.6,
+   "z": 158.3,
+   "heading": 177
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2188.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2188.jpg",
+  "title": "South pool from a patio: lawn, tall palm, sea beyond",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view",
+   "planting"
+  ],
+  "note": "Shows the glass pool fence, which Dave decided to skip.",
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -89.3,
+   "z": 167.3,
+   "heading": 171
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2189.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2189.jpg",
+  "title": "Narrow tiled lane with window grilles, lanterns and planting",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -114.9,
+   "z": 126.2,
+   "heading": 322
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2190.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2190.jpg",
+  "title": "Covered arched passage with potted plants, patterned tiles",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -121.1,
+   "z": 116.3,
+   "heading": 56
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2191.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2191.jpg",
+  "title": "Passage plaque reading CALLE SILVIA 1-15",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -121.1,
+   "z": 116.0,
+   "heading": 88
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2192.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2192.jpg",
+  "title": "Crazy-paving path between hedges into the middle pool lawn",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -123.9,
+   "z": 105.8,
+   "heading": 333
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2193.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2193.jpg",
+  "title": "Middle pool, lawn and terraces behind",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -126.3,
+   "z": 102.4,
+   "heading": 17
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2194.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2194.jpg",
+  "title": "Middle pool, lawn and terraces behind (second shot)",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -126.6,
+   "z": 102.0,
+   "heading": 13
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2195.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2195.jpg",
+  "title": "Middle pool close up: cream deck, ladders, life rings",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -135.5,
+   "z": 92.1,
+   "heading": 51
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2196.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2196.jpg",
+  "title": "Elena junction: private brown door up tiled steps, bougainvillea",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -151.0,
+   "z": 60.0,
+   "heading": 342
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2197.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2197.jpg",
+  "title": "Calle Elena north: tiled lane between planted beds",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -149.2,
+   "z": 52.3,
+   "heading": 58
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2198.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2198.jpg",
+  "title": "Calle Elena north: lane with low white bed walls and pollarded trees",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -145.5,
+   "z": 49.8,
+   "heading": 328
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2199.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2199.jpg",
+  "title": "Calle Elena north: planting bed with pollarded tree and a garden door",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -147.0,
+   "z": 48.2,
+   "heading": 359
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2200.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2200.jpg",
+  "title": "Calle Elena north: lane beside hedged beds and pollarded trees",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -147.2,
+   "z": 47.6,
+   "heading": 346
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2201.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2201.jpg",
+  "title": "Calle Elena north: lane with window grilles and beds",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -148.5,
+   "z": 46.4,
+   "heading": 328
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2202.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2202.jpg",
+  "title": "Covered arched passage at the north end of Elena, gate beyond",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.9,
+   "z": 35.3,
+   "heading": 245
+  },
+  "citedBy": [
+   "building:6265201UF1366N_part5"
+  ]
+ },
+ {
+  "id": "IMG_2203.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2203.jpg",
+  "title": "Covered passage with a doorway, arched opening to a garden",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.9,
+   "z": 35.3,
+   "heading": 59
+  },
+  "citedBy": [
+   "building:6265201UF1366N_part5"
+  ]
+ },
+ {
+  "id": "IMG_2204.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2204.jpg",
+  "title": "North pool from above: whole courtyard, terraces, mountains behind",
+  "shows": [
+   "north-pool",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Taken from an upper floor; the camera pin is inside a building.",
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -169.9,
+   "z": 32.2,
+   "heading": 329
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2205.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2205.jpg",
+  "title": "North pool from above, looking north to the mountains",
+  "shows": [
+   "north-pool",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Taken from an upper floor; the camera pin is inside a building.",
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -170.1,
+   "z": 31.8,
+   "heading": 360
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2206.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2206.jpg",
+  "title": "North pool from above, west side terraces",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -169.9,
+   "z": 31.8,
+   "heading": 301
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2207.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2207.jpg",
+  "title": "Looking down over lichen-mottled barrel roof tiles to the north pool garden",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -169.1,
+   "z": 31.5,
+   "heading": 37
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2208.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2208.jpg",
+  "title": "Barrel roof tiles, curved hedges and path below, pool edge",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-11",
+  "originalUrl": null,
+  "camera": {
+   "x": -168.9,
+   "z": 32.2,
+   "heading": 306
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2214.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2214.jpg",
+  "title": "Roof terrace: flat roofs, solar panels, water tanks, mountains north",
+  "shows": [
+   "whole-resort",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "note": "On a roof by Calle Elena. The pin is inside a building.",
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.9,
+   "z": 44.8,
+   "heading": 2
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2215.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2215.jpg",
+  "title": "Roof terrace looking north-east: roofs, a tall tower block beyond",
+  "shows": [
+   "whole-resort",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.7,
+   "z": 44.8,
+   "heading": 45
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2216.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2216.jpg",
+  "title": "Roof terrace looking east-south-east to the sea",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.5,
+   "z": 44.8,
+   "heading": 112
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2217.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2217.jpg",
+  "title": "Roof terrace looking south-south-east over roofs to the sea",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.9,
+   "z": 45.8,
+   "heading": 157
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2218.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2218.jpg",
+  "title": "Roof terrace looking south-west: roofs and tall pines along Pintor Dalí",
+  "shows": [
+   "whole-resort",
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -155.2,
+   "z": 46.4,
+   "heading": 199
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2219.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2219.jpg",
+  "title": "Tiled roof terrace looking north, mountains behind",
+  "shows": [
+   "elena",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -155.4,
+   "z": 50.4,
+   "heading": 347
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2220.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2220.jpg",
+  "title": "From a roof looking down into the lane and lawns of Calle Elena south",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Overhead view of the lane layout. The pin is the roof, not the lane.",
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -155.7,
+   "z": 51.0,
+   "heading": 149
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2223.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2223.jpg",
+  "title": "Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": 39.3,
+   "z": 102.0,
+   "heading": 109
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2224.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2224.jpg",
+  "title": "Open sand looking north-east along the coast to the mountains",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": 63.2,
+   "z": 130.5,
+   "heading": 52
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2225.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2225.jpg",
+  "title": "Thatched parasols and wooden loungers on the beach",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": 61.7,
+   "z": 134.2,
+   "heading": 266
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2226.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2226.jpg",
+  "title": "From the beach looking back at the resort frontage",
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": 39.5,
+   "z": 155.5,
+   "heading": 315
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2227.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2227.jpg",
+  "title": "From the beach looking west along the white seafront houses",
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": 39.3,
+   "z": 154.9,
+   "heading": 272
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2229.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2229.jpg",
+  "title": "Tiled lane between lawns with a white tiled bench",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -37.8,
+   "z": 135.1,
+   "heading": 222
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2230.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2230.jpg",
+  "title": "Tiled lane beside hedges and a patio wall",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -39.8,
+   "z": 137.3,
+   "heading": 251
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2231.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2231.jpg",
+  "title": "White tiled bench beside the lane",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -41.5,
+   "z": 137.9,
+   "heading": 220
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2232.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2232.jpg",
+  "title": "Bench close up: decorative tile in the white bench back",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -43.0,
+   "z": 139.1,
+   "heading": 176
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2233.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2233.jpg",
+  "title": "Lawn with candelabra cactus and shrubs",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -46.5,
+   "z": 141.0,
+   "heading": 291
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2234.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2234.jpg",
+  "title": "Tiled lane with a wall plaque, lamp post and lawn",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -50.5,
+   "z": 143.2,
+   "heading": 240
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2235.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2235.jpg",
+  "title": "Lane paved in octagonal tiles between a white wall and lawn",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "note": "Octagonal paving here, not square tiles.",
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -56.2,
+   "z": 145.3,
+   "heading": 333
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2236.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2236.jpg",
+  "title": "Tall Norfolk pine over the terraces",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -60.4,
+   "z": 137.3,
+   "heading": 345
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2237.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2237.jpg",
+  "title": "Octagonal-tiled lane with lantern and hedges",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -62.4,
+   "z": 134.2,
+   "heading": 333
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2238.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2238.jpg",
+  "title": "Tall hedges along a lane edge",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -66.9,
+   "z": 128.6,
+   "heading": 249
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2239.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2239.jpg",
+  "title": "Yuccas and palms beside an octagonal-tiled lane",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -70.9,
+   "z": 120.6,
+   "heading": 353
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2240.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2240.jpg",
+  "title": "Square-tiled lane between a hedge and a white wall",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -77.1,
+   "z": 111.3,
+   "heading": 244
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2241.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2241.jpg",
+  "title": "Narrow lane with window grilles and a drain",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -78.8,
+   "z": 106.7,
+   "heading": 333
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2242.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2242.jpg",
+  "title": "Covered entrance with tiled step and patterned floor",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -83.3,
+   "z": 96.5,
+   "heading": 249
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2243.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2243.jpg",
+  "title": "Tiled lane beside a lawn to an arched gateway",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -102.5,
+   "z": 75.4,
+   "heading": 243
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2244.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2244.jpg",
+  "title": "Iron gate opening into the middle pool courtyard",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -113.7,
+   "z": 81.6,
+   "heading": 232
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2245.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2245.jpg",
+  "title": "Middle pool lobe, deck and glass fence close up",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -119.4,
+   "z": 94.3,
+   "heading": 268
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2246.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2246.jpg",
+  "title": "Oleander bed and pollarded tree by the middle pool",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -137.5,
+   "z": 103.3,
+   "heading": 35
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2247.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2247.jpg",
+  "title": "Oleander bed and pollarded tree by the middle pool (second shot)",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -137.0,
+   "z": 103.3,
+   "heading": 28
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2248.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2248.jpg",
+  "title": "Narrow lane with bougainvillea off Calle Eva",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -138.0,
+   "z": 103.3,
+   "heading": 237
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2249.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2249.jpg",
+  "title": "Covered passage with patterned tiles off Calle Eva",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -145.7,
+   "z": 108.2,
+   "heading": 330
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2250.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2250.jpg",
+  "title": "Covered arched passage, lantern, patterned tiles",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -146.5,
+   "z": 107.0,
+   "heading": 333
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2251.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2251.jpg",
+  "title": "Narrow lane through an arch, planting both sides",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -149.5,
+   "z": 107.0,
+   "heading": 331
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2252.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2252.jpg",
+  "title": "Cervantes near Elena: tiled lane with a central sloping strip",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": "Shows a ramp strip in the lane.",
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -161.2,
+   "z": 58.4,
+   "heading": 61
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2253.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2253.jpg",
+  "title": "Calle Elena south: tiled lane beside a lawn",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -153.2,
+   "z": 55.7,
+   "heading": 141
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2254.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2254.jpg",
+  "title": "Plaque reading CALLE ELENA 18-30",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.9,
+   "z": 34.3,
+   "heading": 284
+  },
+  "citedBy": [
+   "building:6265201UF1366N_part5"
+  ]
+ },
+ {
+  "id": "IMG_2255.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2255.jpg",
+  "title": "Covered arched passage on Elena north, patterned tiles",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -152.2,
+   "z": 39.9,
+   "heading": 250
+  },
+  "citedBy": [
+   "building:6265201UF1366N_part5"
+  ]
+ },
+ {
+  "id": "IMG_2256.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2256.jpg",
+  "title": "Covered passage opening through an arch to a garden gate",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -153.0,
+   "z": 40.8,
+   "heading": 237
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2260.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2260.jpg",
+  "title": "Cervantes junction: white terraces and small lawns",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -149.7,
+   "z": 56.9,
+   "heading": 158,
+   "accuracy": 11.8
+  },
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "frontage_divisions.json:cervantes-front-patio",
+   "frontage_divisions.json:cervantes-lawn-door-path"
+  ]
+ },
+ {
+  "id": "IMG_2261.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2261.jpg",
+  "title": "Cervantes junction: another view of the same terraces",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -150.2,
+   "z": 56.9,
+   "heading": 167,
+   "accuracy": 10.2
+  },
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "frontage_divisions.json:cervantes-front-patio",
+   "frontage_divisions.json:cervantes-lawn-door-path"
+  ]
+ },
+ {
+  "id": "IMG_2262.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2262.jpg",
+  "title": "Cervantes junction: terracotta path, white curbs and drainage grate",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": "Shows steps beside a sloping strip, with a drain at the foot.",
+  "observation": "Cervantes / Elena junction: tiled ramp, white edges, side steps and drain at the foot",
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -150.5,
+   "z": 56.9,
+   "heading": 226,
+   "accuracy": 4.8
+  },
+  "citedBy": [
+   "ramp:cervantes-elena-ramp"
+  ]
+ },
+ {
+  "id": "IMG_2263.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2263.jpg",
+  "title": "Cervantes: lane and clipped planting toward the junction",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -151.5,
+   "z": 57.2,
+   "heading": 155,
+   "accuracy": 4.1
+  },
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "cervantes_patio_walls.json:cervantes-patio-south-3"
+  ]
+ },
+ {
+  "id": "IMG_2264.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2264.jpg",
+  "title": "Cervantes: lane facing toward Pintor Dalí",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -153.7,
+   "z": 58.1,
+   "heading": 239,
+   "accuracy": 3.9
+  },
+  "citedBy": [
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "cervantes_patio_walls.json:cervantes-patio-south-3"
+  ]
+ },
+ {
+  "id": "IMG_2265.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2265.jpg",
+  "title": "Cervantes: lane facing into the resort",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "note": null,
+  "observation": "Cervantes / Elena ramp from the upper landing: terracotta slope, white edges and bottom drain",
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -158.4,
+   "z": 60.0,
+   "heading": 61,
+   "accuracy": 4.7
+  },
+  "citedBy": [
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "ramp:cervantes-elena-ramp"
+  ]
+ },
+ {
+  "id": "IMG_2266.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2266.jpg",
+  "title": "Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -184.8,
+   "z": 76.4,
+   "heading": 243,
+   "accuracy": 14.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2267.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2267.jpg",
+  "title": "Pintor Dalí: house-side footpath and parking looking north",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -186.3,
+   "z": 76.1,
+   "heading": 328,
+   "accuracy": 2.8
+  },
+  "citedBy": [
+   "dali_cervantes_threshold.json:dali-bays-1",
+   "dali_cervantes_threshold.json:dali-bays-2",
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "dali_cervantes_threshold.json:cervantes-parking-crossing"
+  ]
+ },
+ {
+  "id": "IMG_2268.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2268.jpg",
+  "title": "Pintor Dalí: house-side footpath and parking looking south",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -185.3,
+   "z": 77.3,
+   "heading": 148,
+   "accuracy": 3.4
+  },
+  "citedBy": [
+   "dali_cervantes_threshold.json:dali-bays-1",
+   "dali_cervantes_threshold.json:dali-bays-2",
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "dali_cervantes_threshold.json:cervantes-parking-crossing"
+  ]
+ },
+ {
+  "id": "IMG_2269.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2269.jpg",
+  "title": "Pintor Dalí: parking and chain-link fence looking south",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -190.5,
+   "z": 81.0,
+   "heading": 156,
+   "accuracy": 4.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2270.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2270.jpg",
+  "title": "Pintor Dalí: parking and fence looking north",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-12",
+  "originalUrl": null,
+  "camera": {
+   "x": -189.8,
+   "z": 81.9,
+   "heading": 325,
+   "accuracy": 4.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2273.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2273.jpg",
+  "title": "Cervantes: straight lane and barred windows",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking along the narrow terracotta pedestrian lane beside a white plaster house. Black iron window grilles, projecting red sills, stepped window surrounds and a traditional wall lantern are clear; clipped hedges and flowering climbers line the opposite side.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -177.3,
+   "z": 70.5,
+   "heading": 81,
+   "accuracy": 4.0
+  },
+  "citedBy": [
+   "frontage_divisions.json:cervantes-west-planting",
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "cervantes_patio_walls.json:cervantes-patio-south-3"
+  ]
+ },
+ {
+  "id": "IMG_2274.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2274.jpg",
+  "title": "Cervantes: planting and paving detail",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Another view along the same straight tiled lane near its Dalí end. Broad-leaved plants, variegated narrow leaves, clipped shrubs and magenta bougainvillea sit in a narrow planting bed above a low white wall. Pale tile joints and flush service covers are visible.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -177.3,
+   "z": 70.2,
+   "heading": 47,
+   "accuracy": 4.1
+  },
+  "citedBy": [
+   "frontage_divisions.json:cervantes-west-planting",
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "cervantes_patio_walls.json:cervantes-patio-south-3"
+  ]
+ },
+ {
+  "id": "IMG_2275.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2275.jpg",
+  "title": "Cervantes exit onto Pintor Dalí: slope and drain",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking back toward the asphalt road and the hedge opposite the lane entrance. The tiled approach has white edges, flush utility covers and a transverse drainage grate near the foot. A slight sloping transition is visible; its rise is not measured from this image.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -180.1,
+   "z": 70.2,
+   "heading": 244,
+   "accuracy": 4.7
+  },
+  "citedBy": [
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "dali_cervantes_threshold.json:dali-bays-1",
+   "dali_cervantes_threshold.json:dali-bays-2",
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "dali_cervantes_threshold.json:cervantes-parking-crossing"
+  ]
+ },
+ {
+  "id": "IMG_2276.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2276.jpg",
+  "title": "Pintor Dalí: parking junction toward the sea",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "Asphalt parking area opening into the narrower seaward aisle. White perpendicular bay markings and parked cars sit beside the houses, with a separate house-side footpath and traditional black lanterns. Fence and tall tree screening line the opposite side, with the sea visible at the far end.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -183.3,
+   "z": 98.0,
+   "heading": 142,
+   "accuracy": 3.1
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2277.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2277.jpg",
+  "title": "Pintor Dalí: aisle, outer fence and white curb",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": "A second view of the parking junction and the straight aisle toward the sea. Perpendicular bays meet the junction; the right edge has a low white curb, chain-link screening and mature trees. House-side planting and lanterns help identify the opposite footpath.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -183.1,
+   "z": 99.3,
+   "heading": 151,
+   "accuracy": 2.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2278.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2278.jpg",
+  "title": "Pintor Dalí: seaward parking row and chain-link fence",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Farther down the asphalt aisle, white bay corner markings and parked cars line the house side. The opposite edge shows brown chain-link mesh above a low retaining base, a white-painted curb and dense trees and hedge screening. The boundary continues toward the seaward end.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.9,
+   "z": 155.8,
+   "heading": 156,
+   "accuracy": 5.2
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2279.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2279.jpg",
+  "title": "Pintor Dalí: houses, lamps and parking bays",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": "Closer view of the house-side parking row toward the sea. A tall black lantern, white plaster frontages, projecting entrance surrounds, clipped shrubs, flowering climbers and a palm sit behind the marked bays. This photo is useful for facade and planting materials.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -149.2,
+   "z": 170.4,
+   "heading": 129,
+   "accuracy": 3.4
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2280.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2280.jpg",
+  "title": "Pintor Dalí: flagstone pedestrian entrance",
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Looking into a pedestrian lane between the houses from the roadside parking. Irregular pale stone paving contrasts with Cervantes’ square terracotta tiles. White curbs separate the entrance from the asphalt and narrow lawns; a tall black lantern, brown shutters, window grilles and flowering climbers frame the route.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -136.8,
+   "z": 193.3,
+   "heading": 65,
+   "accuracy": 2.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2281.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2281.jpg",
+  "title": "Pintor Dalí seaward end: turning area and fence",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "The asphalt aisle reaches a wider end area beside the sea. Parked cars remain on the left and clipped screening on the right. A low white wall with dark metal mesh, no-parking signs and a modern flat-headed lamp separates the vehicle area from the paseo/shore beyond.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -132.1,
+   "z": 205.0,
+   "heading": 144,
+   "accuracy": 2.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2282.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2282.jpg",
+  "title": "Pintor Dalí seaward end: wall and paseo boundary",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "A closer view of the widened asphalt end area, facing the sea. The low white wall and metal mesh form the frontage boundary; a modern slim lamp and no-parking signs are visible. A pedestrian opening is at the right-hand end; this is not an uninterrupted solid perimeter.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -126.6,
+   "z": 213.1,
+   "heading": 154,
+   "accuracy": 2.1
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2283.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2283.jpg",
+  "title": "Pintor Dalí: raised stone approach and archway",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": "A raised flagstone approach leads through an arched passage in the white building. Several shallow steps are visible at the foot between flared white curbs; the passage has patterned paving, lanterns and a gate visible beyond. Dark louvred shutters and a barrel-tile canopy sit above the arch. This is a separate access from the Cervantes ramp and the big-pool steps.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -123.9,
+   "z": 217.7,
+   "heading": 60,
+   "accuracy": 2.1
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2284.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2284.jpg",
+  "title": "Pintor Dalí: pedestrian gate to the paseo",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "Detail of the seaward boundary’s narrow metal pedestrian gate between white walls. Adjacent rigid metal mesh allows a view of the beach and sea; a modern lamp stands beyond. The road edge has a yellow-painted curb, terracotta edging tiles, clipped shrubs and a no-parking sign. The gate provides a specific reference for the pedestrian connection.",
+  "taken": "2026-10-13",
+  "originalUrl": null,
+  "camera": {
+   "x": -121.9,
+   "z": 221.7,
+   "heading": 173,
+   "accuracy": 2.1
+  },
+  "citedBy": [
+   "coastal_gate.json:dali-coastal-mesh-base",
+   "coastal_gate.json:dali-coastal-gate-pier",
+   "coastal_gate.json:dali-coastal-solid-wall",
+   "gate:dali-coastal-gate"
+  ]
+ },
+ {
+  "id": "IMG_2285.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2285.jpg",
+  "title": "Beach: resort and restaurant frontage",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": "View from the pebble-strewn beach toward the white resort and beach restaurant frontage, with palms and seaward terraces. Useful for broad building silhouettes and the sand/stone mix; no restaurant footprint or beach elevation is measured here.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1WAH-Kwyyc96zSw_MYeSPQ1tUWhsBPFVc/view?usp=drivesdk",
+  "camera": {
+   "x": 71.1,
+   "z": 162.7,
+   "heading": 318,
+   "accuracy": 2.9
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2286.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2286.jpg",
+  "title": "Elena junction: side-by-side ramp and steps",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "signage"
+  ],
+  "note": null,
+  "observation": "Close view of a terracotta approach with a smooth sloping strip beside a flight of shallow steps, low white edging, and a transverse drain at the foot. Clipped hedge, blue flowers and a partially visible Elena plaque identify the junction. The separate steps are visible evidence not yet matched to detailed game geometry.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1ktD9QhybOfgC_l0TDhiww-k5IIM0ueKg/view?usp=drivesdk",
+  "camera": {
+   "x": -154.2,
+   "z": 54.4,
+   "heading": 245,
+   "accuracy": 14.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2287.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2287.jpg",
+  "title": "Elena junction: private doorway and planting",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": "A private brown timber door sits above small tiled entrance steps behind a low white planting wall. Blue flowers and bougainvillea screen white plaster fronts; a tall black lantern and flush utility cover are visible. Private door steps are distinct from the shared junction ramp.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1CcAqqBZGKYO7Ekg9-Kn3_IRtp1Ft10pP/view?usp=drivesdk",
+  "camera": {
+   "x": -152.2,
+   "z": 59.1,
+   "heading": 343,
+   "accuracy": 3.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2288.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2288.jpg",
+  "title": "Cervantes area: passage signed Calle Miguel",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Inside a covered walk-through with a visible CALLE MIGUEL plaque. Red square tiles with small decorative inserts, black hanging lanterns, barred windows, potted plants and an arch opening onto a narrow planted lane are visible. The plaque is observed; association with the full mapped Miguel de Cervantes name needs review.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1pbfYbGsLTseax2TwqbjZ19j_GL-a1JGt/view?usp=drivesdk",
+  "camera": {
+   "x": -172.6,
+   "z": 65.9,
+   "heading": 160,
+   "accuracy": 3.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2289.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2289.jpg",
+  "title": "Cervantes exit: white-edged tiled approach",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "note": null,
+  "observation": "Looking toward the roadside hedge over a terracotta approach bounded by low white walls and planting. A drain crosses the lower end and a black lantern stands at the corner. The shape and planting support the entrance reference; the image alone does not measure its rise.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1YaOJ3k_7qPO8oMRvM-dHtto3F71Vt4V8/view?usp=drivesdk",
+  "camera": {
+   "x": -181.3,
+   "z": 70.8,
+   "heading": 243,
+   "accuracy": 3.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2290.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2290.jpg",
+  "title": "Pintor Dalí: grass between bays and shared footpath",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "A parked car and white bay markings sit beside a grass strip with broad-leaved planting. A separate terracotta house-side footpath and white plaster frontages are behind the grass. Confirms the surface order; widths remain estimated.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1OLdTrTxsmn3k4DnrrVw6ZdLuMBwLZ1vz/view?usp=drivesdk",
+  "camera": {
+   "x": -189.5,
+   "z": 76.7,
+   "heading": 138,
+   "accuracy": 2.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2291.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2291.jpg",
+  "title": "Pintor Dalí: arched entrance and white facade",
+  "shows": [
+   "dali",
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Frontal view of a two-storey white building with an arched ground-level opening, rounded plaster balcony edge, timber shutters, barred window and lantern. The terracotta house-side footpath runs between the facade and a narrow lawn/parking edge.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1Jy8MnjcscClhkUnPWyUaFM2MBT6u4Whk/view?usp=drivesdk",
+  "camera": {
+   "x": -161.4,
+   "z": 130.8,
+   "heading": 87,
+   "accuracy": 5.6
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2292.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2292.jpg",
+  "title": "Pintor Dalí: continuous tiled footpath and lawns",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Oblique view along white two-storey frontages, the shared terracotta path, narrow grass strip and asphalt bays. Arched openings, black window grilles, small balconies and planting divide the frontage. Useful for proportions and surface continuity.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1JOnRP_GsfyVqH_diMyQiiOxLKu1w2rfY/view?usp=drivesdk",
+  "camera": {
+   "x": -162.4,
+   "z": 135.7,
+   "heading": 116,
+   "accuracy": 2.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2293.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2293.jpg",
+  "title": "Pintor Dalí: lane entrance, ramp and drain",
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": null,
+  "observation": "A terracotta entrance slopes from the parking area into a narrow lane between white patio walls and dense planting. A green drain/service grate is at the foot and a tall traditional black lantern stands at the corner. Lane name is not visible; do not assume this is Cervantes.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1NyQnPr8-8QxHaPyBQLW445FDRHEAwsnQ/view?usp=drivesdk",
+  "camera": {
+   "x": -156.4,
+   "z": 154.6,
+   "heading": 63,
+   "accuracy": 5.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2294.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2294.jpg",
+  "title": "Dalí seaward end: flagstone approach to arch",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Pale irregular flagstone paving leads through an arched covered passage. Flared low white curbs, clipped hedges, blue flowers and climbing plants frame the approach. Stone paving is distinct from the square-tiled entrances elsewhere.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1EXvSfkIBq-Wnyx_Ci2mNCRmibMVBihVM/view?usp=drivesdk",
+  "camera": {
+   "x": -122.9,
+   "z": 213.7,
+   "heading": 55,
+   "accuracy": 3.9
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2295.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2295.jpg",
+  "title": "Dalí seaward end: covered access and shutters",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": "Second view of the flagstone approach and arched passage, showing the tiled canopy, dark louvred shutters, side balcony and planting. Corroborates IMG_2294; it is not independent measurement of the passage dimensions.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/150hY-GLwLDrhZQq1G7JaNBajmWw3kMcu/view?usp=drivesdk",
+  "camera": {
+   "x": -122.9,
+   "z": 214.0,
+   "heading": 57,
+   "accuracy": 3.9
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2296.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2296.jpg",
+  "title": "Dalí seaward end: parking turn and coast boundary",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "View around the widened asphalt end area toward a low white wall and metal fence by the sea. Yellow curb paint, white bay lines, red-and-white post, a no-parking sign, palms and flowering planting identify the coastal turn.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1Z5o235fBZ6ANhFeFZZLHiklf-ldlrXyg/view?usp=drivesdk",
+  "camera": {
+   "x": -122.4,
+   "z": 214.9,
+   "heading": 115,
+   "accuracy": 3.3
+  },
+  "citedBy": [
+   "coastal_gate.json:dali-coastal-mesh-base",
+   "coastal_gate.json:dali-coastal-gate-pier",
+   "coastal_gate.json:dali-coastal-solid-wall",
+   "gate:dali-coastal-gate"
+  ]
+ },
+ {
+  "id": "IMG_2297.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2297.jpg",
+  "title": "Dalí seaward end: narrow pedestrian gate",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "A narrow dark metal pedestrian gate sits beside a white pier, rigid metal mesh on a low white plinth to the left, and a taller solid white wall to the right. A modern slim lamp, yellow curb paint and a no-parking sign identify the asphalt parking end. The wall/mesh/gate arrangement is now represented in the structural model; plan position, gate width and wall heights remain estimates.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1kZ-ZVxR2SAR7hZWjMlD1-pyZ6Znk2bmT/view?usp=drivesdk",
+  "camera": {
+   "x": -121.1,
+   "z": 218.6,
+   "heading": 191,
+   "accuracy": 4.7
+  },
+  "citedBy": [
+   "coastal_gate.json:dali-coastal-mesh-base",
+   "coastal_gate.json:dali-coastal-gate-pier",
+   "coastal_gate.json:dali-coastal-solid-wall",
+   "gate:dali-coastal-gate"
+  ]
+ },
+ {
+  "id": "IMG_2298.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2298.jpg",
+  "title": "Beach: white seaward houses and palm",
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "view",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Beach-level view back toward two-storey white homes, dark shutters, a palm and the low coast boundary. Sand and scattered pebbles fill the foreground. This camera position is shared with the next two differently directed views.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1JIXtZbHdKwLngqhn_rsc6iu62f87yp7g/view?usp=drivesdk",
+  "camera": {
+   "x": -78.8,
+   "z": 260.4,
+   "heading": 330,
+   "accuracy": 2.5
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2299.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2299.jpg",
+  "title": "Beach: houses along the shore",
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "view",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Oblique beach view along the row of white seaward houses and palms, with a pebbled sandy foreground and distant coastline. Useful for the coastline-side silhouette and texture; individual house positions are not determined from this view.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1rZZdSicVyxq9ykfg1IyjvVWsIvYvNU7y/view?usp=drivesdk",
+  "camera": {
+   "x": -78.8,
+   "z": 260.4,
+   "heading": 1,
+   "accuracy": 3.2
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2300.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2300.jpg",
+  "title": "Beach: pebbles, sand and distant coastline",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": "Wide view along the beach with mixed sand, stones and rounded pebbles, the sea to the right and low buildings beyond. Provides a stronger ground-material reference than a uniform pale-sand texture.",
+  "taken": "2026-10-13",
+  "originalUrl": "https://drive.google.com/file/d/1R76UK5F9UUkmC-pmJIdzi2scUz94dVyQ/view?usp=drivesdk",
+  "camera": {
+   "x": -78.8,
+   "z": 260.4,
+   "heading": 45,
+   "accuracy": 3.6
+  },
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/01-3d-overview-from-north.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/01-3d-overview-from-north.png",
+  "title": "Apple Maps 3D: the whole block looking south to the sea",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/02-3d-north-pool.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/02-3d-north-pool.png",
+  "title": "Apple Maps 3D: north pool and surrounding terraces",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png",
+  "title": "Apple Maps 3D: south pool, its lawn and the beach promenade",
+  "shows": [
+   "south-pool",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/04-top-down-south-half.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/04-top-down-south-half.png",
+  "title": "Apple Maps top-down: southern half, middle and south pools, tiled-roof block",
+  "shows": [
+   "middle-pool",
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png",
+  "title": "Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach",
+  "shows": [
+   "main-pool",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/06-top-down-whole-block.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/06-top-down-whole-block.png",
+  "title": "Apple Maps top-down: whole block with surrounding street names",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "map",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+  "title": "Apple Maps 3D: north pool looking east towards the Picasso car park",
+  "shows": [
+   "north-pool",
+   "picasso"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png",
+  "title": "Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "facades"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/09-3d-north-pool-looking-south.png",
+  "title": "Apple Maps 3D: north pool looking south, lawn ring, curved path, deck",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:google-maps/01-street-map-lane-names.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/google-maps/01-street-map-lane-names.png",
+  "title": "Google street map with inner lane names",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "map",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:google-maps/02-satellite-lane-names.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/google-maps/02-satellite-lane-names.png",
+  "title": "Google satellite with inner lane names",
+  "shows": [
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png",
+  "title": "North pool lawn at ground level, April 2021. The key style reference.",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/02-pool-from-upper-floor-2020-12.png",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/02-pool-from-upper-floor-2020-12.png",
+  "title": "Middle pool from an upper floor, December 2020",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "view"
+  ],
+  "note": "Shows a glass safety fence; Dave decided to skip it.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+  "title": "North pool looking down over barrel roof tiles: hedges, gates, crazy paving",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+  "title": "North pool: roof tiles, a yucca, a patio behind a hedge",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/05-north-pool-west-side-garden-walls.jpg",
+  "title": "North pool west side: curved garden walls, raised patios, tiled steps",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg",
+  "title": "North pool looking north-east: terraces, mountains behind",
+  "shows": [
+   "north-pool",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg",
+  "title": "North pool: the whole courtyard looking north. The best single reference for it.",
+  "shows": [
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting",
+   "view"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg",
+  "title": "Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/09-middle-pool-through-iron-gate.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/09-middle-pool-through-iron-gate.jpg",
+  "title": "Middle pool through an iron gate from a tiled lane",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+  "title": "Patio beside the middle pool: oleander bed, pollarded tree",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+  "title": "Patio beside the middle pool: oleander bed, two feathery trees",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+  "kind": "own-photo",
+  "path": "villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+  "title": "Terracotta-tiled lane to an arched white gateway into the middle pool courtyard",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": null,
+  "citedBy": []
+ },
+ {
+  "id": "ref:web/south-pool-01-looking-north-palm.jpg",
+  "kind": "web-photo",
+  "path": "villacana-reference/web/south-pool-01-looking-north-palm.jpg",
+  "title": "South pool looking north: date palm, two-storey terraces, hedged patios",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": "Found on the web. Reference only, never publish.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
+  "kind": "web-photo",
+  "path": "villacana-reference/web/south-pool-02-looking-south-east-sea.jpg",
+  "title": "South pool looking south-east: sea beyond, low white wall and fence at the seaward edge",
+  "shows": [
+   "south-pool",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": "Found on the web. Reference only, never publish.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:web/south-pool-03-lawn-from-north-west.jpg",
+  "kind": "web-photo",
+  "path": "villacana-reference/web/south-pool-03-lawn-from-north-west.jpg",
+  "title": "South lawn from the north-west: curved low white wall, bollard lights, loungers",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Found on the web; has people in it. Reference only, never publish.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:web/easyjet-pool-probably-middle.jpg",
+  "kind": "web-photo",
+  "path": "villacana-reference/web/easyjet-pool-probably-middle.jpg",
+  "title": "A small pool with bird-of-paradise, palm and pollarded tree",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": "Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish.",
+  "citedBy": []
+ }
+]

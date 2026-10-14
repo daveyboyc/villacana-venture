@@ -1,0 +1,1483 @@
+{
+ "about": "Hand-reviewed tags for every reference. Keys are a phone photo's file in public/photos-ref, or 'ref:<path>' for a file in the private villacana-reference repo. shows: area ids from data/areas.json (what the picture shows, not where the camera stood). viewpoint: ground, upper-floor, roof, aerial or map. useFor: topic ids from data/areas.json. note: anything an agent must know before using it. Do not put API keys, signed URLs or photo metadata here: this repo is public.",
+ "IMG_2182.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Tiled lane between lawns, white tiled bench"
+ },
+ "IMG_2183.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "title": "Lawn with a tall candelabra cactus and clipped shrubs"
+ },
+ "IMG_2184.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Narrow tiled lane between white walls and planting beds"
+ },
+ "IMG_2185.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered arched passage, patterned terracotta tiles, sea at the far end"
+ },
+ "IMG_2186.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "title": "Covered passage through the terrace with a view to the sea"
+ },
+ "IMG_2187.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "layout"
+  ],
+  "title": "Arched passage with a street and house-number plaque"
+ },
+ "IMG_2188.jpg": {
+  "shows": [
+   "south-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view",
+   "planting"
+  ],
+  "title": "South pool from a patio: lawn, tall palm, sea beyond",
+  "note": "Shows the glass pool fence, which Dave decided to skip."
+ },
+ "IMG_2189.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Narrow tiled lane with window grilles, lanterns and planting"
+ },
+ "IMG_2190.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered arched passage with potted plants, patterned tiles"
+ },
+ "IMG_2191.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage"
+  ],
+  "title": "Passage plaque reading CALLE SILVIA 1-15"
+ },
+ "IMG_2192.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Crazy-paving path between hedges into the middle pool lawn"
+ },
+ "IMG_2193.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "title": "Middle pool, lawn and terraces behind"
+ },
+ "IMG_2194.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "title": "Middle pool, lawn and terraces behind (second shot)"
+ },
+ "IMG_2195.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "title": "Middle pool close up: cream deck, ladders, life rings"
+ },
+ "IMG_2196.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "title": "Elena junction: private brown door up tiled steps, bougainvillea"
+ },
+ "IMG_2197.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Calle Elena north: tiled lane between planted beds"
+ },
+ "IMG_2198.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "title": "Calle Elena north: lane with low white bed walls and pollarded trees"
+ },
+ "IMG_2199.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "layout"
+  ],
+  "title": "Calle Elena north: planting bed with pollarded tree and a garden door"
+ },
+ "IMG_2200.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "title": "Calle Elena north: lane beside hedged beds and pollarded trees"
+ },
+ "IMG_2201.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Calle Elena north: lane with window grilles and beds"
+ },
+ "IMG_2202.jpg": {
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered arched passage at the north end of Elena, gate beyond"
+ },
+ "IMG_2203.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered passage with a doorway, arched opening to a garden"
+ },
+ "IMG_2204.jpg": {
+  "shows": [
+   "north-pool",
+   "whole-resort"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "title": "North pool from above: whole courtyard, terraces, mountains behind",
+  "note": "Taken from an upper floor; the camera pin is inside a building."
+ },
+ "IMG_2205.jpg": {
+  "shows": [
+   "north-pool",
+   "whole-resort"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "title": "North pool from above, looking north to the mountains",
+  "note": "Taken from an upper floor; the camera pin is inside a building."
+ },
+ "IMG_2206.jpg": {
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "title": "North pool from above, west side terraces"
+ },
+ "IMG_2207.jpg": {
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "materials",
+   "planting"
+  ],
+  "title": "Looking down over lichen-mottled barrel roof tiles to the north pool garden"
+ },
+ "IMG_2208.jpg": {
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "title": "Barrel roof tiles, curved hedges and path below, pool edge"
+ },
+ "IMG_2214.jpg": {
+  "shows": [
+   "whole-resort",
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "title": "Roof terrace: flat roofs, solar panels, water tanks, mountains north",
+  "note": "On a roof by Calle Elena. The pin is inside a building."
+ },
+ "IMG_2215.jpg": {
+  "shows": [
+   "whole-resort",
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "title": "Roof terrace looking north-east: roofs, a tall tower block beyond"
+ },
+ "IMG_2216.jpg": {
+  "shows": [
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "title": "Roof terrace looking east-south-east to the sea"
+ },
+ "IMG_2217.jpg": {
+  "shows": [
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view",
+   "planting"
+  ],
+  "title": "Roof terrace looking south-south-east over roofs to the sea"
+ },
+ "IMG_2218.jpg": {
+  "shows": [
+   "whole-resort",
+   "dali"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view"
+  ],
+  "title": "Roof terrace looking south-west: roofs and tall pines along Pintor Dalí"
+ },
+ "IMG_2219.jpg": {
+  "shows": [
+   "elena",
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "materials",
+   "view"
+  ],
+  "title": "Tiled roof terrace looking north, mountains behind"
+ },
+ "IMG_2220.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "title": "From a roof looking down into the lane and lawns of Calle Elena south",
+  "note": "Overhead view of the lane layout. The pin is the roof, not the lane."
+ },
+ "IMG_2223.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "title": "Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk"
+ },
+ "IMG_2224.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ],
+  "title": "Open sand looking north-east along the coast to the mountains"
+ },
+ "IMG_2225.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "title": "Thatched parasols and wooden loungers on the beach"
+ },
+ "IMG_2226.jpg": {
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "facades"
+  ],
+  "title": "From the beach looking back at the resort frontage"
+ },
+ "IMG_2227.jpg": {
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "facades"
+  ],
+  "title": "From the beach looking west along the white seafront houses"
+ },
+ "IMG_2229.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Tiled lane between lawns with a white tiled bench"
+ },
+ "IMG_2230.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Tiled lane beside hedges and a patio wall"
+ },
+ "IMG_2231.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "title": "White tiled bench beside the lane"
+ },
+ "IMG_2232.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "title": "Bench close up: decorative tile in the white bench back"
+ },
+ "IMG_2233.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "title": "Lawn with candelabra cactus and shrubs"
+ },
+ "IMG_2234.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage"
+  ],
+  "title": "Tiled lane with a wall plaque, lamp post and lawn"
+ },
+ "IMG_2235.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "title": "Lane paved in octagonal tiles between a white wall and lawn",
+  "note": "Octagonal paving here, not square tiles."
+ },
+ "IMG_2236.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "title": "Tall Norfolk pine over the terraces"
+ },
+ "IMG_2237.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "title": "Octagonal-tiled lane with lantern and hedges"
+ },
+ "IMG_2238.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "title": "Tall hedges along a lane edge"
+ },
+ "IMG_2239.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "title": "Yuccas and palms beside an octagonal-tiled lane"
+ },
+ "IMG_2240.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Square-tiled lane between a hedge and a white wall"
+ },
+ "IMG_2241.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "title": "Narrow lane with window grilles and a drain"
+ },
+ "IMG_2242.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered entrance with tiled step and patterned floor"
+ },
+ "IMG_2243.jpg": {
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "title": "Tiled lane beside a lawn to an arched gateway"
+ },
+ "IMG_2244.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "title": "Iron gate opening into the middle pool courtyard"
+ },
+ "IMG_2245.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout"
+  ],
+  "title": "Middle pool lobe, deck and glass fence close up"
+ },
+ "IMG_2246.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "title": "Oleander bed and pollarded tree by the middle pool"
+ },
+ "IMG_2247.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "title": "Oleander bed and pollarded tree by the middle pool (second shot)"
+ },
+ "IMG_2248.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "title": "Narrow lane with bougainvillea off Calle Eva"
+ },
+ "IMG_2249.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered passage with patterned tiles off Calle Eva"
+ },
+ "IMG_2250.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered arched passage, lantern, patterned tiles"
+ },
+ "IMG_2251.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "title": "Narrow lane through an arch, planting both sides"
+ },
+ "IMG_2252.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "title": "Cervantes near Elena: tiled lane with a central sloping strip",
+  "note": "Shows a ramp strip in the lane."
+ },
+ "IMG_2253.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "title": "Calle Elena south: tiled lane beside a lawn"
+ },
+ "IMG_2254.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage"
+  ],
+  "title": "Plaque reading CALLE ELENA 18-30"
+ },
+ "IMG_2255.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered arched passage on Elena north, patterned tiles"
+ },
+ "IMG_2256.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "title": "Covered passage opening through an arch to a garden gate"
+ },
+ "IMG_2260.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2261.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2262.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": "Shows steps beside a sloping strip, with a drain at the foot."
+ },
+ "IMG_2263.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2264.jpg": {
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2265.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ]
+ },
+ "IMG_2266.jpg": {
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2267.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2268.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2269.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2270.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2273.jpg": {
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout"
+  ]
+ },
+ "IMG_2274.jpg": {
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ]
+ },
+ "IMG_2275.jpg": {
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ]
+ },
+ "IMG_2276.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2277.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2278.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2279.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ]
+ },
+ "IMG_2280.jpg": {
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2281.jpg": {
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2282.jpg": {
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2283.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "facades"
+  ]
+ },
+ "IMG_2284.jpg": {
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2285.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "view"
+  ]
+ },
+ "IMG_2286.jpg": {
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "signage"
+  ]
+ },
+ "IMG_2287.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ]
+ },
+ "IMG_2288.jpg": {
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "layout"
+  ]
+ },
+ "IMG_2289.jpg": {
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ]
+ },
+ "IMG_2290.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2291.jpg": {
+  "shows": [
+   "dali",
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout"
+  ]
+ },
+ "IMG_2292.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2293.jpg": {
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ]
+ },
+ "IMG_2294.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ]
+ },
+ "IMG_2295.jpg": {
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ]
+ },
+ "IMG_2296.jpg": {
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2297.jpg": {
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2298.jpg": {
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "view",
+   "materials"
+  ]
+ },
+ "IMG_2299.jpg": {
+  "shows": [
+   "barraka-beach",
+   "whole-resort"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "view",
+   "materials"
+  ]
+ },
+ "IMG_2300.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ]
+ },
+ "ref:apple-maps/01-3d-overview-from-north.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps 3D: the whole block looking south to the sea",
+  "shows": [
+   "whole-resort"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "view"
+  ]
+ },
+ "ref:apple-maps/02-3d-north-pool.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps 3D: north pool and surrounding terraces",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "facades"
+  ]
+ },
+ "ref:apple-maps/03-3d-south-pool-and-promenade.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps 3D: south pool, its lawn and the beach promenade",
+  "shows": [
+   "south-pool",
+   "paseo"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "ref:apple-maps/04-top-down-south-half.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps top-down: southern half, middle and south pools, tiled-roof block",
+  "shows": [
+   "middle-pool",
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "ref:apple-maps/05-top-down-main-pool-and-lawn.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach",
+  "shows": [
+   "main-pool",
+   "barraka-beach"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "ref:apple-maps/06-top-down-whole-block.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps top-down: whole block with surrounding street names",
+  "shows": [
+   "whole-resort"
+  ],
+  "viewpoint": "map",
+  "useFor": [
+   "layout",
+   "signage"
+  ]
+ },
+ "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps 3D: north pool looking east towards the Picasso car park",
+  "shows": [
+   "north-pool",
+   "picasso"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "view"
+  ]
+ },
+ "ref:apple-maps/08-3d-north-pool-looking-west-porches.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "facades"
+  ]
+ },
+ "ref:apple-maps/09-3d-north-pool-looking-south.png": {
+  "kind": "map-screenshot",
+  "title": "Apple Maps 3D: north pool looking south, lawn ring, curved path, deck",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "ref:google-maps/01-street-map-lane-names.png": {
+  "kind": "map-screenshot",
+  "title": "Google street map with inner lane names",
+  "shows": [
+   "whole-resort"
+  ],
+  "viewpoint": "map",
+  "useFor": [
+   "layout",
+   "signage"
+  ]
+ },
+ "ref:google-maps/02-satellite-lane-names.png": {
+  "kind": "map-screenshot",
+  "title": "Google satellite with inner lane names",
+  "shows": [
+   "whole-resort"
+  ],
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "signage"
+  ]
+ },
+ "ref:photos/01-north-pool-lawn-ground-level-2021-04.png": {
+  "kind": "own-photo",
+  "title": "North pool lawn at ground level, April 2021. The key style reference.",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting"
+  ]
+ },
+ "ref:photos/02-pool-from-upper-floor-2020-12.png": {
+  "kind": "own-photo",
+  "title": "Middle pool from an upper floor, December 2020",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "view"
+  ],
+  "note": "Shows a glass safety fence; Dave decided to skip it."
+ },
+ "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg": {
+  "kind": "own-photo",
+  "title": "North pool looking down over barrel roof tiles: hedges, gates, crazy paving",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg": {
+  "kind": "own-photo",
+  "title": "North pool: roof tiles, a yucca, a patio behind a hedge",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "ref:photos/05-north-pool-west-side-garden-walls.jpg": {
+  "kind": "own-photo",
+  "title": "North pool west side: curved garden walls, raised patios, tiled steps",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "levels"
+  ]
+ },
+ "ref:photos/06-north-pool-looking-north-east-mountains.jpg": {
+  "kind": "own-photo",
+  "title": "North pool looking north-east: terraces, mountains behind",
+  "shows": [
+   "north-pool",
+   "whole-resort"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "facades",
+   "view"
+  ]
+ },
+ "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg": {
+  "kind": "own-photo",
+  "title": "North pool: the whole courtyard looking north. The best single reference for it.",
+  "shows": [
+   "north-pool"
+  ],
+  "viewpoint": "upper-floor",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting",
+   "view"
+  ]
+ },
+ "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg": {
+  "kind": "own-photo",
+  "title": "Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "ref:photos/09-middle-pool-through-iron-gate.jpg": {
+  "kind": "own-photo",
+  "title": "Middle pool through an iron gate from a tiled lane",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg": {
+  "kind": "own-photo",
+  "title": "Patio beside the middle pool: oleander bed, pollarded tree",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ]
+ },
+ "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg": {
+  "kind": "own-photo",
+  "title": "Patio beside the middle pool: oleander bed, two feathery trees",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ]
+ },
+ "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg": {
+  "kind": "own-photo",
+  "title": "Terracotta-tiled lane to an arched white gateway into the middle pool courtyard",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "ref:web/south-pool-01-looking-north-palm.jpg": {
+  "kind": "web-photo",
+  "title": "South pool looking north: date palm, two-storey terraces, hedged patios",
+  "shows": [
+   "south-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": "Found on the web. Reference only, never publish."
+ },
+ "ref:web/south-pool-02-looking-south-east-sea.jpg": {
+  "kind": "web-photo",
+  "title": "South pool looking south-east: sea beyond, low white wall and fence at the seaward edge",
+  "shows": [
+   "south-pool",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": "Found on the web. Reference only, never publish."
+ },
+ "ref:web/south-pool-03-lawn-from-north-west.jpg": {
+  "kind": "web-photo",
+  "title": "South lawn from the north-west: curved low white wall, bollard lights, loungers",
+  "shows": [
+   "south-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "Found on the web; has people in it. Reference only, never publish."
+ },
+ "ref:web/easyjet-pool-probably-middle.jpg": {
+  "kind": "web-photo",
+  "title": "A small pool with bird-of-paradise, palm and pollarded tree",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ],
+  "note": "Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish."
+ }
+}
