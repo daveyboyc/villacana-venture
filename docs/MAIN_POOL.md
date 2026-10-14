@@ -55,6 +55,8 @@ sea, and the sea is lower. So:
 - The paseo is at pool level in front of the big pool and Barraka, and climbs
   back to street level towards the south pool (3 m over 34 m) and to the east.
   Beside the south pool it is level with the lawn, as the photos show.
+  (Corrected 2026-10-14: IMG_2349 and IMG_2350 show it about 1 m below the
+  lawn, behind a sandstone retaining wall; see docs/SEAFRONT.md.)
 - Where the land behind the paseo is higher, a plain bank holds it back.
 - Calle Guillermo now ends at the top of that bank; the way down to the beach is
   the pool ramp or steps, then across the lawn.

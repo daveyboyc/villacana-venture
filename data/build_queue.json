@@ -242,7 +242,8 @@
     "check script for the wall"
    ],
    "dependsOn": [],
-   "status": "in-progress"
+   "status": "done",
+   "owner": "claude (subagent)"
   },
   {
    "id": "south-pool-seaward-level",
@@ -361,6 +362,88 @@
    "avoid": "Outside the walkable resort core: keep it simple and evidence-backed.",
    "accept": [
     "render from IMG_2345"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "paseo-retrace-line",
+   "area": "paseo",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Paseo: re-trace the promenade line from the retaining wall",
+   "photos": [
+    "IMG_2350.jpg",
+    "IMG_2352.jpg",
+    "IMG_2354.jpg",
+    "IMG_2349.jpg"
+   ],
+   "build": "The mapped (OSM) paseo is 1-3 m off the real one: in places a sand strip shows between the paseo and the wall that the photos do not have, elsewhere the wall had to be held 1.8 m in. Re-trace the paseo centreline about 1.5 m seaward of data/paseo_wall.json, regenerate skeleton.json and remove the 1.8 m hold-in.",
+   "avoid": "Keep the coastal gate connector and the Barraka boardwalk joins; regenerate skeleton.json with scripts/build_skeleton.py, never by hand.",
+   "accept": [
+    "check_seafront.py and check_paseo_wall.py pass",
+    "paseo still walks end to end"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "paseo-east-end-height",
+   "area": "paseo",
+   "priority": 2,
+   "kind": "levels",
+   "title": "Paseo east end: wall height towards the big pool",
+   "photos": [
+    "IMG_2227.jpg",
+    "IMG_2350.jpg",
+    "IMG_2226.jpg"
+   ],
+   "build": "The model makes the wall rise to 3 m over its last 40 m because the paseo falls to big-pool level; IMG_2227 from the beach suggests it stays about 1 m. Settle it (a new photo from the paseo near Calle Guillermo would decide) and adjust the paseo or big-pool levels in data/main_pool.json.",
+   "avoid": "Do not change the big-pool level without evidence; Dave set it. Ask for a photo if the existing ones do not decide it.",
+   "accept": [
+    "check_pool_levels.py and check_paseo_wall.py pass"
+   ],
+   "dependsOn": [
+    "paseo-retrace-line"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "paseo-house-clearance",
+   "area": "paseo",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Paseo east: registry house 6465801UF1366N_part5 blocks the walk",
+   "photos": [
+    "IMG_2226.jpg",
+    "IMG_2227.jpg"
+   ],
+   "build": "Further east than the boardwalk the mapped paseo passes 0.64 m from registry house 6465801UF1366N_part5, so the player is blocked. Find whether the paseo line or the footprint is wrong (aerial, photos) and fix the one that is.",
+   "avoid": "Registry footprints stay unless a photo-backed correction is the point; prefer re-tracing the paseo.",
+   "accept": [
+    "layout browser test walks the whole paseo end to end"
+   ],
+   "dependsOn": [
+    "paseo-retrace-line"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "paseo-details",
+   "area": "paseo",
+   "priority": 3,
+   "kind": "planting",
+   "title": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
+   "photos": [
+    "IMG_2350.jpg",
+    "IMG_2352.jpg",
+    "IMG_2354.jpg",
+    "IMG_2349.jpg"
+   ],
+   "build": "Clipped hedges behind the mesh fence, the green windbreak cloth on parts of it, the slim white lamp posts and the service cover, all Details only.",
+   "avoid": "Details must keep the paseo route clearance.",
+   "accept": [
+    "render from IMG_2352"
    ],
    "dependsOn": [],
    "status": "open"

@@ -345,13 +345,17 @@
     "docs/SEAFRONT.md"
    ],
    "data": [
-    "data/coastal_gate.json"
+    "data/coastal_gate.json",
+    "data/paseo_wall.json"
    ],
    "src": [
-    "src/seafront.ts"
+    "src/seafront.ts",
+    "src/seaside.ts",
+    "src/paseo-wall.ts"
    ],
    "notes": [
-    "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall about 1.2 m high, with a green mesh fence on top, holds the seafront houses above it. Not modelled yet.",
+    "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall with a green mesh fence on top holds the seafront houses above it. Built 14 October (data/paseo_wall.json, docs/SEAFRONT.md): about 134 m from the Dalí apron to the end of Calle Guillermo, about 1 m high by the south lawn (the paseo there was lowered from street level to match), lower towards Dalí.",
+    "Open: towards its east end the model makes the wall up to 3 m (the paseo falls to big-pool level there), but IMG_2227 from the beach suggests it stays about 1 m. A photo from the paseo near Calle Guillermo would settle it. The mapped (OSM) paseo line also sits up to 3 m seaward of the wall in places, leaving a sand strip the photos do not show.",
     "IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349)."
    ]
   },

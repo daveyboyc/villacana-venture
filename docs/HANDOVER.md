@@ -67,7 +67,7 @@ Run from the repo root; all must pass:
 python3 scripts/assign_photo_map.py && python3 scripts/test_photo_assignment.py
 python3 scripts/build_references.py --check
 cd scripts && for c in check_map check_street_layout check_boundary_reference check_terrain \
-  check_dali_threshold check_cervantes_patio_walls check_elena_north check_middle_pool \
+  check_dali_threshold check_cervantes_patio_walls check_elena_north check_middle_pool check_paseo_wall \
   check_seafront check_pool_levels; do python3 $c.py | tail -1; done; cd ..
 npx tsc --noEmit && npm run build
 node scripts/test_layout_browser.cjs

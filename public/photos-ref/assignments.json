@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 291,
-  "photosCitedByModel": 34,
-  "modelFeaturesWithPhotoCitations": 33
+  "features": 293,
+  "photosCitedByModel": 42,
+  "modelFeaturesWithPhotoCitations": 35
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1492,7 +1492,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 39.3,
@@ -4149,7 +4151,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -78.8,
@@ -4175,7 +4179,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -78.8,
@@ -5052,7 +5058,9 @@
      "angleOffset": 8.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -77.6,
@@ -5084,7 +5092,10 @@
      "angleOffset": 27.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall",
+    "paseo_wall.json:paseo-timber-edge"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -77.3,
@@ -5110,7 +5121,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-timber-edge"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -87.3,
@@ -5136,7 +5149,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall",
+    "paseo_wall.json:paseo-timber-edge"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -91.0,
@@ -5162,7 +5178,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_wall.json:paseo-retaining-wall",
+    "paseo_wall.json:paseo-timber-edge"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -110.4,

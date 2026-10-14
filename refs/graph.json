@@ -1466,6 +1466,16 @@
    "name": "Middle pool · raised planter wall with hedge, west path"
   },
   {
+   "id": "paseo_wall.json:paseo-retaining-wall",
+   "kind": "model-feature",
+   "name": "Paseo · sandstone retaining wall and mesh fence"
+  },
+  {
+   "id": "paseo_wall.json:paseo-timber-edge",
+   "kind": "model-feature",
+   "name": "Paseo · timber edge onto the beach"
+  },
+  {
    "id": "ramp:cervantes-elena-ramp",
    "kind": "model-feature",
    "name": "Cervantes / Elena ramp"
@@ -1557,7 +1567,7 @@
    "kind": "build-task",
    "name": "Paseo: sandstone retaining wall, mesh fence and level drop",
    "priority": 1,
-   "status": "in-progress"
+   "status": "done"
   },
   {
    "id": "task:south-pool-seaward-level",
@@ -1598,6 +1608,34 @@
    "id": "task:picasso-service-road",
    "kind": "build-task",
    "name": "Pintor Picasso: service road, utility sheds and bins",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:paseo-retrace-line",
+   "kind": "build-task",
+   "name": "Paseo: re-trace the promenade line from the retaining wall",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:paseo-east-end-height",
+   "kind": "build-task",
+   "name": "Paseo east end: wall height towards the big pool",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:paseo-house-clearance",
+   "kind": "build-task",
+   "name": "Paseo east: registry house 6465801UF1366N_part5 blocks the walk",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:paseo-details",
+   "kind": "build-task",
+   "name": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
    "priority": 3,
    "status": "open"
   }
@@ -4919,6 +4957,61 @@
    "relation": "cites"
   },
   {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2227.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2298.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2299.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2351.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "ramp:cervantes-elena-ramp",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -5101,6 +5194,16 @@
   {
    "from": "middle_pool.json:middle-pool-west-planter",
    "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "area:paseo",
    "relation": "in-area"
   },
   {
@@ -6134,13 +6237,37 @@
   },
   {
    "from": "ref:IMG_2350.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
    "to": "area:paseo",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
   {
    "from": "ref:IMG_2352.jpg",
    "to": "area:paseo",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "paseo_wall.json:paseo-timber-edge",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6388,6 +6515,26 @@
   {
    "from": "task:picasso-service-road",
    "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:paseo-retrace-line",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:paseo-east-end-height",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:paseo-house-clearance",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:paseo-details",
+   "to": "area:paseo",
    "relation": "in-area"
   },
   {
@@ -6676,6 +6823,71 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:paseo-retrace-line",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retrace-line",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retrace-line",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retrace-line",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-east-end-height",
+   "to": "ref:IMG_2227.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-east-end-height",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-east-end-height",
+   "to": "ref:IMG_2226.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-house-clearance",
+   "to": "ref:IMG_2226.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-house-clearance",
+   "to": "ref:IMG_2227.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-details",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-details",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-details",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-details",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -6688,6 +6900,16 @@
   {
    "from": "task:south-pool-seaward-level",
    "to": "task:paseo-retaining-wall",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:paseo-east-end-height",
+   "to": "task:paseo-retrace-line",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:paseo-house-clearance",
+   "to": "task:paseo-retrace-line",
    "relation": "depends-on"
   }
  ]

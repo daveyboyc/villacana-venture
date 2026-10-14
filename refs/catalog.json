@@ -1446,7 +1446,9 @@
    "altitude": 4.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ],
   "looksAt": [
    33.3,
    154.7
@@ -3863,7 +3865,9 @@
    "accuracy": 2.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ],
   "looksAt": [
    -81.8,
    255.2
@@ -3900,7 +3904,9 @@
    "accuracy": 3.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ],
   "looksAt": [
    -78.7,
    254.4
@@ -4678,7 +4684,9 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ],
   "looksAt": [
    -80.5,
    196.4
@@ -4715,14 +4723,19 @@
    "altitude": 6.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "paseo_wall.json:paseo-timber-edge"
+  ],
   "looksAt": [
    -72.8,
    197.6
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "paseo_wall.json:paseo-retaining-wall",
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge"
   ]
  },
  {
@@ -4752,7 +4765,9 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-timber-edge"
+  ],
   "looksAt": [
    -86.5,
    220.2
@@ -4787,14 +4802,19 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "paseo_wall.json:paseo-timber-edge"
+  ],
   "looksAt": [
    -96.7,
    219.3
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "paseo_wall.json:paseo-retaining-wall",
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge"
   ]
  },
  {
@@ -4823,7 +4843,10 @@
    "altitude": 7.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "paseo_wall.json:paseo-timber-edge"
+  ],
   "looksAt": [
    -105.5,
    222.6
