@@ -161,6 +161,27 @@ const path = require("node:path");
         if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.4) throw Error("Raised bed " + bed.id + " is not solid");
       }
     }
+    // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
+    {
+      const { paseoWallRings, paseoWallFace } = await import("/src/paseo-wall.ts");
+      const rings = paseoWallRings(), wallOnly = new Solids(rings);
+      for (const ring of rings) {
+        const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
+        const out = wallOnly.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.15) throw Error("Paseo wall is not solid at " + c);
+      }
+      const k = Math.floor(paseoWallFace.length / 4), [fx, fz] = paseoWallFace[k], [gx, gz] = paseoWallFace[k + 1], len = Math.hypot(gx - fx, gz - fz);
+      const across = (d) => world.groundHeight(fx + (gz - fz) / len * d, fz - (gx - fx) / len * d);
+      const step = across(1.2) - across(-0.3);
+      if (step < 0.8 || step > 1.3) throw Error("Paseo wall does not stand at the 1 m level change: " + step);
+      const keep = world.solids;
+      world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...rings]);
+      // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
+      const stretch = s.seafront.paseo.points.slice(0, 8);
+      walk(stretch);
+      walk([...stretch].reverse());
+      world.solids = keep;
+    }
     open = false;
     const at = [
       (coastalGate.points[0][0] + coastalGate.points[1][0]) / 2,

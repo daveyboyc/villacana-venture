@@ -1456,6 +1456,16 @@
    "name": "Dalí · coastal pedestrian gate"
   },
   {
+   "id": "paseo_wall.json:paseo-retaining-wall",
+   "kind": "model-feature",
+   "name": "Paseo · sandstone retaining wall and mesh fence"
+  },
+  {
+   "id": "paseo_wall.json:paseo-timber-edge",
+   "kind": "model-feature",
+   "name": "Paseo · timber edge onto the beach"
+  },
+  {
    "id": "ramp:cervantes-elena-ramp",
    "kind": "model-feature",
    "name": "Cervantes / Elena ramp"
@@ -4753,6 +4763,61 @@
    "relation": "cites"
   },
   {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2227.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2298.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2299.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2351.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "ramp:cervantes-elena-ramp",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -4920,6 +4985,16 @@
   {
    "from": "gate:dali-coastal-gate",
    "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_wall.json:paseo-retaining-wall",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_wall.json:paseo-timber-edge",
+   "to": "area:paseo",
    "relation": "in-area"
   },
   {

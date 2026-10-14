@@ -6,9 +6,9 @@
   "needs-review": 107,
   "suggested": 37,
   "photos": 145,
-  "features": 289,
-  "photosCitedByModel": 28,
-  "modelFeaturesWithPhotoCitations": 31
+  "features": 291,
+  "photosCitedByModel": 36,
+  "modelFeaturesWithPhotoCitations": 33
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1808,6 +1808,33 @@
    "name": "Barraka Beach",
    "kind": "area",
    "source": "map/photo interpretation"
+  },
+  {
+   "id": "paseo_wall.json:paseo-retaining-wall",
+   "name": "Paseo · sandstone retaining wall and mesh fence",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2350.jpg",
+    "IMG_2349.jpg",
+    "IMG_2352.jpg",
+    "IMG_2354.jpg",
+    "IMG_2227.jpg",
+    "IMG_2298.jpg",
+    "IMG_2299.jpg"
+   ]
+  },
+  {
+   "id": "paseo_wall.json:paseo-timber-edge",
+   "name": "Paseo · timber edge onto the beach",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2350.jpg",
+    "IMG_2351.jpg",
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
   },
   {
    "id": "frontage_divisions.json:cervantes-elena-lawn-1",
@@ -4223,6 +4250,12 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2227.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2229.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -6201,10 +6234,22 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2298.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2299.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2299.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2300.jpg",
@@ -6708,6 +6753,12 @@
    "angleOffset": 8.6
   },
   {
+   "from": "photo:IMG_2349.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2350.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -6721,10 +6772,28 @@
    "angleOffset": 27.4
   },
   {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2351.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2351.jpg",
+   "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2352.jpg",
@@ -6733,10 +6802,34 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2354.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 5.3
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2355.jpg",

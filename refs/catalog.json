@@ -1020,7 +1020,9 @@
    "z": 154.9,
    "heading": 272
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
  },
  {
   "id": "IMG_2229.jpg",
@@ -2774,7 +2776,9 @@
    "heading": 330,
    "accuracy": 2.5
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
  },
  {
   "id": "IMG_2299.jpg",
@@ -2802,7 +2806,9 @@
    "heading": 1,
    "accuracy": 3.2
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
  },
  {
   "id": "IMG_2300.jpg",
@@ -3382,7 +3388,9 @@
    "accuracy": 3.3,
    "altitude": 6.7
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
  },
  {
   "id": "IMG_2350.jpg",
@@ -3412,7 +3420,10 @@
    "accuracy": 3.5,
    "altitude": 6.4
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "paseo_wall.json:paseo-timber-edge"
+  ]
  },
  {
   "id": "IMG_2351.jpg",
@@ -3440,7 +3451,9 @@
    "accuracy": 4.7,
    "altitude": 6.1
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-timber-edge"
+  ]
  },
  {
   "id": "IMG_2352.jpg",
@@ -3468,7 +3481,10 @@
    "accuracy": 4.7,
    "altitude": 6.5
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "paseo_wall.json:paseo-timber-edge"
+  ]
  },
  {
   "id": "IMG_2354.jpg",
@@ -3495,7 +3511,10 @@
    "accuracy": 3.4,
    "altitude": 7.7
   },
-  "citedBy": []
+  "citedBy": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "paseo_wall.json:paseo-timber-edge"
+  ]
  },
  {
   "id": "IMG_2355.jpg",

@@ -4,6 +4,8 @@ import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from ".
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
+import {paseoWallOutline} from "./paseo-wall";
+import paseoWall from "../data/paseo_wall.json";
 import elenaNorth from "../data/elena_north.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
@@ -101,6 +103,10 @@ async function boot(): Promise<void> {
     seafront.append(el("path", { d: line(sf.paseo.points), fill: "none", stroke: "#9c644d", "stroke-width": sf.paseo.width + 0.8, "stroke-linejoin": "round", "stroke-linecap": "round" }));
     seafront.append(el("path", { d: line(sf.paseo.points), fill: "none", stroke: "#dfaa86", "stroke-width": sf.paseo.width, "stroke-linejoin": "round", "stroke-linecap": "round" }));
     seafront.append(el("path", { d: path(sf.restaurant.terrace), fill: "#d7bca2", stroke: "#864b40", "stroke-width": 0.5, "stroke-dasharray": "1.5 1" }));
+    // The sandstone retaining wall on the paseo's landward side (data/paseo_wall.json).
+    const wall = el("path", { id: "paseo-wall", d: path(paseoWallOutline()), fill: "#d2ae72", stroke: "#5e4a2c", "stroke-width": 0.12, "stroke-linejoin": "round" });
+    const title = el("title", {}); title.textContent = `${paseoWall.wall.name}: ${paseoWall.wall.trust} · ${paseoWall.wall.evidence.join(", ")}`; wall.append(title);
+    seafront.append(wall);
   }
   world.append(seafront);
 

@@ -44,6 +44,10 @@ def features(s):
         add('area:sea',sf['sea']['name'],'area','OSM/map',ring=sf['sea']['ring'])
         add('area:paseo',sf['paseo']['name'],'area','OSM/map',points=sf['paseo']['points'],width=sf['paseo']['width'])
         add('area:barraka',sf['restaurant']['name'],'area','map/photo interpretation',ring=sf['restaurant']['ring'])
+        # The paseo's sandstone retaining wall and timber edge (data/paseo_wall.json).
+        pw=json.loads((ROOT/'data/paseo_wall.json').read_text())
+        add('paseo_wall.json:'+pw['wall']['id'],pw['wall']['name'],'reference feature','authored photo/map interpretation',evidence=pw['wall']['evidence'],points=pw['wall']['face'])
+        add('paseo_wall.json:'+pw['edge']['id'],pw['edge']['name'],'reference feature','authored photo/map interpretation',evidence=pw['edge']['evidence'])
     for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
         data=json.loads((ROOT/'data'/filename).read_text())
         for f in data[key]:
