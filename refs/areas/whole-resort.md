@@ -19,8 +19,8 @@ Overviews, maps and wide views covering several areas at once, and the mountain 
 
 ## Coverage
 
-Layout: 7, Facades and roofs: 15, Materials: 4, Planting: 2, Signs: 3, Views: 16
-19 reviewed, 0 suggested only by camera position.
+Layout: 9, Facades and roofs: 17, Materials: 4, Planting: 2, Signs: 3, Views: 18
+21 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -42,6 +42,8 @@ Layout: 7, Facades and roofs: 15, Materials: 4, Planting: 2, Signs: 3, Views: 16
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore |
+| [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Note:** Roof shot: the pin is the roof. |
+| [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Note:** Roof shot: the pin is the roof. |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades | From the beach looking back at the resort frontage |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |

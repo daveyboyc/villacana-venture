@@ -2831,6 +2831,144 @@
   "citedBy": []
  },
  {
+  "id": "IMG_2327.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2327.jpg",
+  "title": "Cervantes at Elena: steps up to a door beside the lane",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": "Looking west up Cervantes from the Elena junction. On the right two red-tread steps with white sides climb to a brown timber door between a plumbago hedge and bougainvillea; the lane beyond shows the ramp strip and the steps beside it, a drain across the foot and service covers in the tiles.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1aaT74LlpLoCuTv5iEZZaVZQFV0JbFjVP/view?usp=drivesdk",
+  "camera": {
+   "x": -150.5,
+   "z": 56.0,
+   "heading": 264,
+   "accuracy": 4.2,
+   "altitude": 6.8
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2328.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2328.jpg",
+  "title": "Cervantes at Elena: ramp and steps side by side, drain at the foot",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking west-south-west up Cervantes: the smooth ramp strip on the left, the white-edged steps on the right, one drain grate right across the lane at the foot, white kerbs and clipped hedges both sides, a door step on the far right. Confirms the split ramp/steps built from IMG_2286.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1PgdYRu3cBjdTC7IRKLMH9cNckHF-Y4OA/view?usp=drivesdk",
+  "camera": {
+   "x": -150.5,
+   "z": 56.0,
+   "heading": 252,
+   "accuracy": 4.0,
+   "altitude": 6.8
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2329.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2329.jpg",
+  "title": "Cervantes/Elena junction: lawn with a pollarded tree and white kerb",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": "Looking south-south-west across the junction: a small lawn edged by a low rounded white kerb, a pollarded tree with a round head, a manhole cover in the grass, terracotta paving round it, and two-storey houses with bougainvillea and balconies behind.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1eH-EBQBGaSzMGDbcfPUc-DupR-1N2EVO/view?usp=drivesdk",
+  "camera": {
+   "x": -152.5,
+   "z": 56.9,
+   "heading": 199,
+   "accuracy": 3.6,
+   "altitude": 6.3
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2330.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2330.jpg",
+  "title": "Calle Elena south from the junction, towards the middle pool",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking south along Elena south: a straight square-tiled lane between a hedge and planting on the left and a lawn on the right, white low kerb, pollarded trees, a palm and white terraces at the far end.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1JzEI1BeVCRQI0sxbsWJDt8TOckUmLqIY/view?usp=drivesdk",
+  "camera": {
+   "x": -152.2,
+   "z": 56.6,
+   "heading": 169,
+   "accuracy": 3.4,
+   "altitude": 6.3
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2331.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2331.jpg",
+  "title": "Middle pool north: crazy-paving path opening onto the lawn and pool",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "GPS ±17 m.",
+  "observation": "Crazy-paving path between a hedge and a white wall, widening into a lawn wedge, with the pool and its glass fence beyond; a black iron gate at the right edge. GPS ±17 m, so the pin is only a rough guide.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1RobV_d5Hdf5y0TKrgj442ku3i5C7aX1y/view?usp=drivesdk",
+  "camera": {
+   "x": -134.6,
+   "z": 76.7,
+   "heading": 135,
+   "accuracy": 17.3,
+   "altitude": 6.6
+  },
+  "citedBy": []
+ },
+ {
   "id": "IMG_2332.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2332.jpg",
@@ -2856,6 +2994,170 @@
    "heading": 347,
    "accuracy": 14.0,
    "altitude": 6.8
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2333.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2333.jpg",
+  "title": "Middle pool south-west: stone steps up a tiled path to a gate",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ],
+  "note": null,
+  "observation": "A terracotta-tiled path with three rough stone steps climbing between a tall hedge and a raised white wall, to a white gateway with bougainvillea at the top. A change of level leaving the middle pool courtyard.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/10r6n37AuNf2eqJPkx2ssURMPJ5apo3zy/view?usp=drivesdk",
+  "camera": {
+   "x": -133.8,
+   "z": 99.3,
+   "heading": 215,
+   "accuracy": 3.0,
+   "altitude": 6.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2334.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2334.jpg",
+  "title": "Middle pool south: iron gate in a pergola frame onto a lane",
+  "shows": [
+   "middle-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Looking south through a black iron double gate under a curved metal pergola frame: crazy paving with a drain grate, a raised white planter with shrubs on the right with a white step, a tiled lane beyond between white walls and planting.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1aMUPv4G01OMZqkfEOyJio7IB-crl0irZ/view?usp=drivesdk",
+  "camera": {
+   "x": -126.1,
+   "z": 102.0,
+   "heading": 162,
+   "accuracy": 4.7,
+   "altitude": 6.5
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2335.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2335.jpg",
+  "title": "Middle pool south: raised white planter with a blue tile panel",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "facades"
+  ],
+  "note": null,
+  "observation": "Close view of a raised white rendered planter and wall with a framed panel of blue-and-white tiles, a white step in front and climbers above. Detail for the courtyard walls.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1mj-khvMz4GfDmiiVUayMH1ygwcnkR3UQ/view?usp=drivesdk",
+  "camera": {
+   "x": -125.6,
+   "z": 103.3,
+   "heading": 189,
+   "accuracy": 4.7,
+   "altitude": 6.3
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2336.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2336.jpg",
+  "title": "Calle Eva east of the middle pool: tiled path between lawns",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": "Looking north-east along a square-tiled path between two lawns, with round-headed trees, black lamp posts, low hedges and white terraces beyond.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1y3H8hY8Yybk2NYjRhDFz5GtzrZEf2qxl/view?usp=drivesdk",
+  "camera": {
+   "x": -110.4,
+   "z": 79.8,
+   "heading": 57,
+   "accuracy": 3.3,
+   "altitude": 6.1
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2337.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2337.jpg",
+  "title": "Calle Eva east of the middle pool: lawn, round trees, lamp",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": "Similar view looking north-north-east: a lawn with a round-headed tree, bougainvillea on a white garden wall with brown doors, a black lamp post and the tiled path at the right edge.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1jquMZ7GN-EjjOz56fS0xskh5qU1Uva7V/view?usp=drivesdk",
+  "camera": {
+   "x": -110.2,
+   "z": 78.9,
+   "heading": 38,
+   "accuracy": 3.2,
+   "altitude": 6.0
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2338.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2338.jpg",
+  "title": "Calle Eva: brown door, yellow-flowered shrub, lawn",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "observation": "A brown timber door with a house-number plaque, a yellow-flowered shrub (St John's wort-like) beside it, a lawn and a pink-tiled path edge.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1l1ZY8s66AZ1TilPdSh5rEe_tSmDiuZaK/view?usp=drivesdk",
+  "camera": {
+   "x": -111.2,
+   "z": 76.7,
+   "heading": 333,
+   "accuracy": 3.6,
+   "altitude": 6.1
   },
   "citedBy": []
  },
@@ -2916,6 +3218,61 @@
   "citedBy": []
  },
  {
+  "id": "IMG_2341.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2341.jpg",
+  "title": "Curved low white wall with hedge, crazy paving and trees",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "GPS ±47 m: location uncertain, probably the middle pool courtyard.",
+  "observation": "A curving low white wall topped by a clipped hedge beside crazy paving, with trees, garden tables and white terraces behind. GPS ±47 m: the place is not established from the pin; probably the middle pool courtyard.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1miiQz8L10Xx5t54Or6zPcpDfucYnTzWI/view?usp=drivesdk",
+  "camera": {
+   "x": -117.6,
+   "z": 84.4,
+   "heading": 286,
+   "accuracy": 47.5,
+   "altitude": 5.8
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2342.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2342.jpg",
+  "title": "Cervantes/Elena junction: lawn corner with pollarded tree and drain",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "GPS ±14 m.",
+  "observation": "The junction lawn from another angle: white rounded kerb, pollarded tree, manhole, terracotta paving with a drain grate in the foreground, bougainvillea on the houses. GPS ±14 m.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1cVYH19h4y5RApfeK5OZnMFOg4JZH2xUe/view?usp=drivesdk",
+  "camera": {
+   "x": -150.7,
+   "z": 56.9,
+   "heading": 200,
+   "accuracy": 14.0,
+   "altitude": 7.3
+  },
+  "citedBy": []
+ },
+ {
   "id": "IMG_2345.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2345.jpg",
@@ -2940,6 +3297,90 @@
    "heading": 318,
    "accuracy": 5.5,
    "altitude": 8.1
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2346.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2346.jpg",
+  "title": "Barraka Beach sign, thatched parasols and boardwalk",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "materials"
+  ],
+  "note": null,
+  "observation": "On the sand by the restaurant: a white planter painted BARRAKA BEACH with shrubs, thatched parasols and loungers, a timber boardwalk across the sand, the sea behind.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1uZX4ixz0rYBGp-qL1nFeh77ItS_bTBhh/view?usp=drivesdk",
+  "camera": {
+   "x": 35.6,
+   "z": 95.2,
+   "heading": 108,
+   "accuracy": 14.0,
+   "altitude": 5.6
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2347.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2347.jpg",
+  "title": "Barraka Beach sign and boardwalk to the beach",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": "A second view along the timber boardwalk past the BARRAKA BEACH planter towards the parasols and sea, with potted plants on the right.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1ltk9Ij2tLsPTQS6Klg5SYfqVSLBDOGyc/view?usp=drivesdk",
+  "camera": {
+   "x": 35.3,
+   "z": 96.5,
+   "heading": 125,
+   "accuracy": 4.2,
+   "altitude": 5.5
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2349.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2349.jpg",
+  "title": "From the paseo: sandstone retaining wall and fence below the south pool",
+  "shows": [
+   "paseo",
+   "south-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "materials"
+  ],
+  "note": "Shows the retaining wall right below the south pool.",
+  "observation": "Looking north-north-west from the paseo at the yellow sandstone retaining wall with a green mesh fence on top and a clipped hedge behind; the south pool area (pool, glass fence, white terraces) stands above it.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1TaSdYCiNW5AeeWFJMytK_TW-2kHQxNJh/view?usp=drivesdk",
+  "camera": {
+   "x": -77.6,
+   "z": 201.6,
+   "heading": 331,
+   "accuracy": 3.3,
+   "altitude": 6.7
   },
   "citedBy": []
  },
@@ -2970,6 +3411,198 @@
    "heading": 48,
    "accuracy": 3.5,
    "altitude": 6.4
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2351.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2351.jpg",
+  "title": "Paseo looking south: stamped walk, timber edge, beach and sea",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": "Looking south from the paseo over its pink stamped concrete and timber edge to the sandy, stony beach and the sea, a kite-surfer offshore.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1Iyt_MH5Ft5LimWBXU8ia8-Y7ORZ1m-8D/view?usp=drivesdk",
+  "camera": {
+   "x": -87.3,
+   "z": 214.3,
+   "heading": 172,
+   "accuracy": 4.7,
+   "altitude": 6.1
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2352.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2352.jpg",
+  "title": "Paseo looking west: sandstone wall, mesh fence, lamp posts",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Looking west-south-west along the paseo: the sandstone retaining wall and green mesh fence on the right, slim white lamp posts, palms, beach scrub on the left.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1yWEFOMwfCz4M1Zvhlfz7sjlzLKZonQMP/view?usp=drivesdk",
+  "camera": {
+   "x": -91.0,
+   "z": 217.4,
+   "heading": 252,
+   "accuracy": 4.7,
+   "altitude": 6.5
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2354.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2354.jpg",
+  "title": "Paseo curving north-east beside the sandstone wall",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "note": null,
+  "observation": "The paseo curving north-east with the sandstone retaining wall and green mesh fence on the left, a service cover in the stamped surface, the timber edge on the right.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1Yb9cht0iNnuG0QxSUhKq1PJFFYDXFepH/view?usp=drivesdk",
+  "camera": {
+   "x": -110.4,
+   "z": 226.0,
+   "heading": 55,
+   "accuracy": 3.4,
+   "altitude": 7.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2355.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2355.jpg",
+  "title": "Cervantes/Elena steps from the junction",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels"
+  ],
+  "note": null,
+  "observation": "Close view of the three steps beside the ramp: white riser faces, terracotta treads with grey edges, the white wall and hedge on the right, the drain grate across the foot. Confirms the step arrangement built from IMG_2286.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1U1sKV7R28j0VPrrfwlRvrzp6uTjik7Fr/view?usp=drivesdk",
+  "camera": {
+   "x": -154.5,
+   "z": 53.5,
+   "heading": 264,
+   "accuracy": 4.4,
+   "altitude": 8.6
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2356.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2356.jpg",
+  "title": "Cervantes east of Elena: lane beside a plumbago hedge",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": "Looking north-east along Cervantes east of the Elena junction: a square-tiled lane with a low white kerb wall, a tall plumbago and shrub hedge on the left, patches of sun through trees.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1LXG5DLGjL6Mt4AXG10HTYHp7-YQZnALg/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 52.6,
+   "heading": 39,
+   "accuracy": 4.5,
+   "altitude": 8.7
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2358.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2358.jpg",
+  "title": "Roof by Elena: looking down on Elena south and the junction lawns",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Roof shot: the pin is the roof.",
+  "observation": "From a roof terrace looking south-south-east: the Elena south lane, small lawns with round clipped shrubs, private patios with walls, a brown door and a lamp post. Overhead layout of the junction's south side.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/18NPgixt9HrJeDQLdc8EOTgjhCk21GGBT/view?usp=drivesdk",
+  "camera": {
+   "x": -155.7,
+   "z": 50.1,
+   "heading": 150,
+   "accuracy": 2.0,
+   "altitude": 10.2
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2359.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2359.jpg",
+  "title": "Roof by Elena: over barrel tiles to the Cervantes patios",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Roof shot: the pin is the roof.",
+  "observation": "From the roof looking south-west over a barrel-tile roof: white walls, private patios with bougainvillea and shrubs, a parasol, and the lawns along Cervantes.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1EQjWW2KEsYDoxzy6rLYYlJh9Z-yQubyT/view?usp=drivesdk",
+  "camera": {
+   "x": -155.7,
+   "z": 50.1,
+   "heading": 218,
+   "accuracy": 2.4,
+   "altitude": 10.6
   },
   "citedBy": []
  },
@@ -3155,6 +3788,119 @@
    "elena_north.json:elena-north-magnolia-bed",
    "elena_north.json:elena-north-tree-bed-1"
   ]
+ },
+ {
+  "id": "IMG_2366.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2366.jpg",
+  "title": "Roof by Elena: patios east of the Elena beds",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Roof shot: the pin is the roof.",
+  "observation": "Looking down east-north-east from a roof: private patios behind white walls with bougainvillea, a timber pergola, outdoor furniture, and the tops of the magnolia shrubs. The east-side patios beyond the Elena beds.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1bzdX_yWG-FOO-qUD4D33PGqoEM8-jHE-/view?usp=drivesdk",
+  "camera": {
+   "x": -152.2,
+   "z": 47.6,
+   "heading": 75,
+   "accuracy": 3.9,
+   "altitude": 11.9
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2367.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2367.jpg",
+  "title": "Roof by Elena: looking south over the Cervantes/Elena junction",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Roof shot: the pin is the roof.",
+  "observation": "From the roof looking south: the junction lawns with round shrubs and the Elena south lane, patio walls with bougainvillea and parasols in the foreground.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/13dhNZCHe8qH_x5SeWsDVvjkVNhffSAs0/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 47.9,
+   "heading": 170,
+   "accuracy": 3.9,
+   "altitude": 11.6
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2368.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2368.jpg",
+  "title": "Roof by Elena: patios and terraces south-west, along Cervantes",
+  "shows": [
+   "cervantes",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Roof shot: the pin is the roof.",
+  "observation": "Looking south-west from the roof over walled patios with trees, parasols and bougainvillea to the two-storey terraces along Cervantes and the tall trees on Dalí.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1SEDbWVc87IY_LOXjO11RA_CqrCfBXijF/view?usp=drivesdk",
+  "camera": {
+   "x": -153.0,
+   "z": 47.6,
+   "heading": 228,
+   "accuracy": 4.1,
+   "altitude": 12.6
+  },
+  "citedBy": []
+ },
+ {
+  "id": "IMG_2369.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2369.jpg",
+  "title": "Roof by Elena: patios and terraces south-west (second shot)",
+  "shows": [
+   "cervantes",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Roof shot: the pin is the roof.",
+  "observation": "Same view as IMG_2368, slightly to the left.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1SllhEM6x1HxfDJYIj3NUVBjcaClQ9NuB/view?usp=drivesdk",
+  "camera": {
+   "x": -153.0,
+   "z": 47.6,
+   "heading": 224,
+   "accuracy": 4.1,
+   "altitude": 12.6
+  },
+  "citedBy": []
  },
  {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",

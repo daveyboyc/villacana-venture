@@ -13,8 +13,8 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 ## Coverage
 
-Layout: 5, Facades and roofs: 1, Materials: 1, Planting: 2, Views: 2
-6 reviewed, 0 suggested only by camera position.
+Layout: 6, Levels and slopes: 1, Facades and roofs: 1, Materials: 2, Planting: 2, Views: 2
+7 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -25,4 +25,5 @@ Layout: 5, Facades and roofs: 1, Materials: 1, Planting: 2, Views: 2
 | `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. |
 | `villacana-reference/web/south-pool-03-lawn-from-north-west.jpg` | ground | layout, materials | South lawn from the north-west: curved low white wall, bollard lights, loungers **Note:** Found on the web; has people in it. Reference only, never publish. |
 | `villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
+| [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |

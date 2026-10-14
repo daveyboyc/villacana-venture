@@ -8,6 +8,7 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 
 - The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).
 - IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed.
+- IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand.
 
 ## Read first
 
@@ -17,8 +18,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 
 ## Coverage
 
-Layout: 2, Levels and slopes: 1, Facades and roofs: 5, Materials: 9, Views: 8
-12 reviewed, 0 suggested only by camera position.
+Layout: 3, Levels and slopes: 1, Facades and roofs: 5, Materials: 12, Signs: 2, Views: 9
+15 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -27,12 +28,15 @@ Layout: 2, Levels and slopes: 1, Facades and roofs: 5, Materials: 9, Views: 8
 | [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore |
+| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach |
 | [IMG_2224.jpg](../../public/photos-ref/IMG_2224.jpg) | ground | materials, view | Open sand looking north-east along the coast to the mountains |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades | From the beach looking back at the resort frontage |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses |
 | [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline |
+| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk |
 | [6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg](../../public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg) | ground | materials | Beach: pebbles on sand at the water line **Note:** No GPS in the file: exact stretch of beach not confirmed. |
 | [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk |
 | [IMG_2225.jpg](../../public/photos-ref/IMG_2225.jpg) | ground | materials | Thatched parasols and wooden loungers on the beach |
 | [IMG_2350.jpg](../../public/photos-ref/IMG_2350.jpg) | ground | layout, levels, materials, view | Paseo looking north-east: stamped walk, sandstone retaining wall **Note:** The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here. |
+| [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach |

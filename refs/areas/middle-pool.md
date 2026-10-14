@@ -9,6 +9,7 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 - Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.
 - Skip the glass safety fence round the pools (Dave, 2026-10-11).
 - IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.
+- IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.
 
 ## Read first
 
@@ -18,8 +19,8 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 
 ## Coverage
 
-Layout: 11, Levels and slopes: 1, Facades and roofs: 5, Materials: 7, Planting: 8, Signs: 1, Views: 1
-18 reviewed, 0 suggested only by camera position.
+Layout: 15, Levels and slopes: 3, Facades and roofs: 6, Materials: 10, Planting: 9, Signs: 1, Views: 1
+23 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -27,11 +28,16 @@ Layout: 11, Levels and slopes: 1, Facades and roofs: 5, Materials: 7, Planting: 
 | --- | --- | --- | --- |
 | [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. |
 | `villacana-reference/photos/02-pool-from-upper-floor-2020-12.png` | upper-floor | layout, facades, materials, view | Middle pool from an upper floor, December 2020 **Note:** Shows a glass safety fence; Dave decided to skip it. |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane |
 | `villacana-reference/photos/09-middle-pool-through-iron-gate.jpg` | ground | layout, materials, planting | Middle pool through an iron gate from a tiled lane |
 | [IMG_2192.jpg](../../public/photos-ref/IMG_2192.jpg) | ground | layout, materials | Crazy-paving path between hedges into the middle pool lawn |
 | [IMG_2193.jpg](../../public/photos-ref/IMG_2193.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind |
 | [IMG_2194.jpg](../../public/photos-ref/IMG_2194.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind (second shot) |
 | [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up |
+| [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. |
+| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate |
+| [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | materials, facades | Middle pool south: raised white planter with a blue tile panel |
+| [IMG_2341.jpg](../../public/photos-ref/IMG_2341.jpg) | ground | layout, planting | Curved low white wall with hedge, crazy paving and trees **Note:** GPS ±47 m: location uncertain, probably the middle pool courtyard. |
 | `villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg` | ground | planting, facades | Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk |
 | `villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg` | ground | layout, materials | Terracotta-tiled lane to an arched white gateway into the middle pool courtyard |
 | [IMG_2195.jpg](../../public/photos-ref/IMG_2195.jpg) | ground | materials | Middle pool close up: cream deck, ladders, life rings |

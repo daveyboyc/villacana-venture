@@ -1624,5 +1624,302 @@
    "view"
   ],
   "note": "The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here."
+ },
+ "IMG_2327.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "facades"
+  ]
+ },
+ "IMG_2328.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ]
+ },
+ "IMG_2329.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2330.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout"
+  ]
+ },
+ "IMG_2331.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ],
+  "note": "GPS ±17 m."
+ },
+ "IMG_2333.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout"
+  ]
+ },
+ "IMG_2334.jpg": {
+  "shows": [
+   "middle-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ]
+ },
+ "IMG_2335.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "facades"
+  ]
+ },
+ "IMG_2336.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2337.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2338.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2341.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "GPS ±47 m: location uncertain, probably the middle pool courtyard."
+ },
+ "IMG_2342.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "GPS ±14 m."
+ },
+ "IMG_2346.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "materials"
+  ]
+ },
+ "IMG_2347.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "materials",
+   "layout"
+  ]
+ },
+ "IMG_2349.jpg": {
+  "shows": [
+   "paseo",
+   "south-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "layout",
+   "materials"
+  ],
+  "note": "Shows the retaining wall right below the south pool."
+ },
+ "IMG_2351.jpg": {
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ]
+ },
+ "IMG_2352.jpg": {
+  "shows": [
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ]
+ },
+ "IMG_2354.jpg": {
+  "shows": [
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ]
+ },
+ "IMG_2355.jpg": {
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels"
+  ]
+ },
+ "IMG_2356.jpg": {
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2358.jpg": {
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Roof shot: the pin is the roof."
+ },
+ "IMG_2359.jpg": {
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades"
+  ],
+  "note": "Roof shot: the pin is the roof."
+ },
+ "IMG_2366.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Roof shot: the pin is the roof."
+ },
+ "IMG_2367.jpg": {
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Roof shot: the pin is the roof."
+ },
+ "IMG_2368.jpg": {
+  "shows": [
+   "cervantes",
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Roof shot: the pin is the roof."
+ },
+ "IMG_2369.jpg": {
+  "shows": [
+   "cervantes",
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ],
+  "note": "Roof shot: the pin is the roof."
  }
 }

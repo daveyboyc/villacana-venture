@@ -856,10 +856,87 @@
    "viewpoint": "ground"
   },
   {
+   "id": "ref:IMG_2327.jpg",
+   "kind": "phone-photo",
+   "name": "Cervantes at Elena: steps up to a door beside the lane",
+   "path": "public/photos-ref/IMG_2327.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2328.jpg",
+   "kind": "phone-photo",
+   "name": "Cervantes at Elena: ramp and steps side by side, drain at the foot",
+   "path": "public/photos-ref/IMG_2328.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2329.jpg",
+   "kind": "phone-photo",
+   "name": "Cervantes/Elena junction: lawn with a pollarded tree and white kerb",
+   "path": "public/photos-ref/IMG_2329.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2330.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Elena south from the junction, towards the middle pool",
+   "path": "public/photos-ref/IMG_2330.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2331.jpg",
+   "kind": "phone-photo",
+   "name": "Middle pool north: crazy-paving path opening onto the lawn and pool",
+   "path": "public/photos-ref/IMG_2331.jpg",
+   "viewpoint": "ground"
+  },
+  {
    "id": "ref:IMG_2332.jpg",
    "kind": "phone-photo",
    "name": "Middle pool west side: path between the deck and a raised planter wall",
    "path": "public/photos-ref/IMG_2332.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2333.jpg",
+   "kind": "phone-photo",
+   "name": "Middle pool south-west: stone steps up a tiled path to a gate",
+   "path": "public/photos-ref/IMG_2333.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2334.jpg",
+   "kind": "phone-photo",
+   "name": "Middle pool south: iron gate in a pergola frame onto a lane",
+   "path": "public/photos-ref/IMG_2334.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2335.jpg",
+   "kind": "phone-photo",
+   "name": "Middle pool south: raised white planter with a blue tile panel",
+   "path": "public/photos-ref/IMG_2335.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2336.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Eva east of the middle pool: tiled path between lawns",
+   "path": "public/photos-ref/IMG_2336.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2337.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Eva east of the middle pool: lawn, round trees, lamp",
+   "path": "public/photos-ref/IMG_2337.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2338.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Eva: brown door, yellow-flowered shrub, lawn",
+   "path": "public/photos-ref/IMG_2338.jpg",
    "viewpoint": "ground"
   },
   {
@@ -877,10 +954,45 @@
    "viewpoint": "ground"
   },
   {
+   "id": "ref:IMG_2341.jpg",
+   "kind": "phone-photo",
+   "name": "Curved low white wall with hedge, crazy paving and trees",
+   "path": "public/photos-ref/IMG_2341.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2342.jpg",
+   "kind": "phone-photo",
+   "name": "Cervantes/Elena junction: lawn corner with pollarded tree and drain",
+   "path": "public/photos-ref/IMG_2342.jpg",
+   "viewpoint": "ground"
+  },
+  {
    "id": "ref:IMG_2345.jpg",
    "kind": "phone-photo",
    "name": "Pintor Picasso: service road, utility sheds and bins",
    "path": "public/photos-ref/IMG_2345.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2346.jpg",
+   "kind": "phone-photo",
+   "name": "Barraka Beach sign, thatched parasols and boardwalk",
+   "path": "public/photos-ref/IMG_2346.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2347.jpg",
+   "kind": "phone-photo",
+   "name": "Barraka Beach sign and boardwalk to the beach",
+   "path": "public/photos-ref/IMG_2347.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2349.jpg",
+   "kind": "phone-photo",
+   "name": "From the paseo: sandstone retaining wall and fence below the south pool",
+   "path": "public/photos-ref/IMG_2349.jpg",
    "viewpoint": "ground"
   },
   {
@@ -889,6 +1001,55 @@
    "name": "Paseo looking north-east: stamped walk, sandstone retaining wall",
    "path": "public/photos-ref/IMG_2350.jpg",
    "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2351.jpg",
+   "kind": "phone-photo",
+   "name": "Paseo looking south: stamped walk, timber edge, beach and sea",
+   "path": "public/photos-ref/IMG_2351.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2352.jpg",
+   "kind": "phone-photo",
+   "name": "Paseo looking west: sandstone wall, mesh fence, lamp posts",
+   "path": "public/photos-ref/IMG_2352.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2354.jpg",
+   "kind": "phone-photo",
+   "name": "Paseo curving north-east beside the sandstone wall",
+   "path": "public/photos-ref/IMG_2354.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2355.jpg",
+   "kind": "phone-photo",
+   "name": "Cervantes/Elena steps from the junction",
+   "path": "public/photos-ref/IMG_2355.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2356.jpg",
+   "kind": "phone-photo",
+   "name": "Cervantes east of Elena: lane beside a plumbago hedge",
+   "path": "public/photos-ref/IMG_2356.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2358.jpg",
+   "kind": "phone-photo",
+   "name": "Roof by Elena: looking down on Elena south and the junction lawns",
+   "path": "public/photos-ref/IMG_2358.jpg",
+   "viewpoint": "roof"
+  },
+  {
+   "id": "ref:IMG_2359.jpg",
+   "kind": "phone-photo",
+   "name": "Roof by Elena: over barrel tiles to the Cervantes patios",
+   "path": "public/photos-ref/IMG_2359.jpg",
+   "viewpoint": "roof"
   },
   {
    "id": "ref:IMG_2360.jpg",
@@ -930,6 +1091,34 @@
    "kind": "phone-photo",
    "name": "Roof by Elena: looking down on the Elena north lane and its planted bed",
    "path": "public/photos-ref/IMG_2365.jpg",
+   "viewpoint": "roof"
+  },
+  {
+   "id": "ref:IMG_2366.jpg",
+   "kind": "phone-photo",
+   "name": "Roof by Elena: patios east of the Elena beds",
+   "path": "public/photos-ref/IMG_2366.jpg",
+   "viewpoint": "roof"
+  },
+  {
+   "id": "ref:IMG_2367.jpg",
+   "kind": "phone-photo",
+   "name": "Roof by Elena: looking south over the Cervantes/Elena junction",
+   "path": "public/photos-ref/IMG_2367.jpg",
+   "viewpoint": "roof"
+  },
+  {
+   "id": "ref:IMG_2368.jpg",
+   "kind": "phone-photo",
+   "name": "Roof by Elena: patios and terraces south-west, along Cervantes",
+   "path": "public/photos-ref/IMG_2368.jpg",
+   "viewpoint": "roof"
+  },
+  {
+   "id": "ref:IMG_2369.jpg",
+   "kind": "phone-photo",
+   "name": "Roof by Elena: patios and terraces south-west (second shot)",
+   "path": "public/photos-ref/IMG_2369.jpg",
    "viewpoint": "roof"
   },
   {
@@ -1964,8 +2153,83 @@
    "relation": "shows"
   },
   {
+   "from": "ref:IMG_2327.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2328.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2328.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2329.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2329.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2330.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2331.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
    "from": "ref:IMG_2332.jpg",
    "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2333.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2334.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2334.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2335.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2336.jpg",
+   "to": "area:eva",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2337.jpg",
+   "to": "area:eva",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2338.jpg",
+   "to": "area:eva",
    "relation": "shows"
   },
   {
@@ -1984,8 +2248,43 @@
    "relation": "shows"
   },
   {
+   "from": "ref:IMG_2341.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2342.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2342.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
    "from": "ref:IMG_2345.jpg",
    "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2346.jpg",
+   "to": "area:barraka-beach",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2347.jpg",
+   "to": "area:barraka-beach",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2349.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2349.jpg",
+   "to": "area:south-pool",
    "relation": "shows"
   },
   {
@@ -1996,6 +2295,56 @@
   {
    "from": "ref:IMG_2350.jpg",
    "to": "area:barraka-beach",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2351.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2351.jpg",
+   "to": "area:barraka-beach",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2354.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2355.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2355.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2356.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2358.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2358.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2359.jpg",
+   "to": "area:cervantes",
    "relation": "shows"
   },
   {
@@ -2046,6 +2395,41 @@
   {
    "from": "ref:IMG_2365.jpg",
    "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2367.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2367.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2368.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2368.jpg",
+   "to": "area:whole-resort",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2369.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2369.jpg",
+   "to": "area:whole-resort",
    "relation": "shows"
   },
   {
@@ -3184,6 +3568,56 @@
    "relation": "useful-for"
   },
   {
+   "from": "ref:IMG_2327.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2328.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2328.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2329.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2329.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2330.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2331.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2331.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
    "from": "ref:IMG_2332.jpg",
    "to": "topic:layout",
    "relation": "useful-for"
@@ -3201,6 +3635,71 @@
   {
    "from": "ref:IMG_2332.jpg",
    "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2333.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2333.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2334.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2334.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2334.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2335.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2335.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2336.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2336.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2337.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2337.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2338.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2338.jpg",
+   "to": "topic:facades",
    "relation": "useful-for"
   },
   {
@@ -3229,6 +3728,26 @@
    "relation": "useful-for"
   },
   {
+   "from": "ref:IMG_2341.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2341.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2342.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2342.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
    "from": "ref:IMG_2345.jpg",
    "to": "topic:layout",
    "relation": "useful-for"
@@ -3241,6 +3760,46 @@
   {
    "from": "ref:IMG_2345.jpg",
    "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2346.jpg",
+   "to": "topic:signage",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2346.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2347.jpg",
+   "to": "topic:signage",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2347.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2347.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2349.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2349.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2349.jpg",
+   "to": "topic:materials",
    "relation": "useful-for"
   },
   {
@@ -3261,6 +3820,76 @@
   {
    "from": "ref:IMG_2350.jpg",
    "to": "topic:view",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2351.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2351.jpg",
+   "to": "topic:view",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2354.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2354.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2355.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2356.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2356.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2358.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2358.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2359.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2359.jpg",
+   "to": "topic:facades",
    "relation": "useful-for"
   },
   {
@@ -3351,6 +3980,56 @@
   {
    "from": "ref:IMG_2365.jpg",
    "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2367.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2367.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2368.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2368.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2368.jpg",
+   "to": "topic:view",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2369.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2369.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2369.jpg",
+   "to": "topic:view",
    "relation": "useful-for"
   },
   {

@@ -16,8 +16,8 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 
 ## Coverage
 
-Layout: 7, Facades and roofs: 2, Materials: 3, Planting: 2, Signs: 1
-8 reviewed, 0 suggested only by camera position.
+Layout: 9, Facades and roofs: 3, Materials: 3, Planting: 5, Signs: 1
+11 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -27,6 +27,9 @@ Layout: 7, Facades and roofs: 2, Materials: 3, Planting: 2, Signs: 1
 | [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
+| [IMG_2336.jpg](../../public/photos-ref/IMG_2336.jpg) | ground | layout, planting | Calle Eva east of the middle pool: tiled path between lawns |
+| [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp |
+| [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | [IMG_2251.jpg](../../public/photos-ref/IMG_2251.jpg) | ground | layout | Narrow lane through an arch, planting both sides |

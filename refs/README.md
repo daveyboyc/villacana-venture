@@ -7,28 +7,28 @@ Start here. Pick the area you are working on and read its brief: it lists every 
 | Area | References | Reviewed | Brief |
 | --- | --- | --- | --- |
 | North pool | 17 | 17 | [areas/north-pool.md](areas/north-pool.md) |
-| Middle pool | 18 | 18 | [areas/middle-pool.md](areas/middle-pool.md) |
-| South pool | 6 | 6 | [areas/south-pool.md](areas/south-pool.md) |
+| Middle pool | 23 | 23 | [areas/middle-pool.md](areas/middle-pool.md) |
+| South pool | 7 | 7 | [areas/south-pool.md](areas/south-pool.md) |
 | Main pool | 1 | 1 | [areas/main-pool.md](areas/main-pool.md) |
-| Calle Elena | 30 | 30 | [areas/elena.md](areas/elena.md) |
-| Calle Miguel de Cervantes | 15 | 15 | [areas/cervantes.md](areas/cervantes.md) |
+| Calle Elena | 39 | 39 | [areas/elena.md](areas/elena.md) |
+| Calle Miguel de Cervantes | 26 | 26 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 25 | 25 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 2 | 2 | [areas/picasso.md](areas/picasso.md) |
 | Loira, Bolivia, Alberto and Isabel | 0 | 0 | [areas/north-lanes.md](areas/north-lanes.md) |
-| Calle Eva | 8 | 8 | [areas/eva.md](areas/eva.md) |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 27 | 27 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
-| Barraka and the beach | 12 | 12 | [areas/barraka-beach.md](areas/barraka-beach.md) |
-| The paseo | 8 | 8 | [areas/paseo.md](areas/paseo.md) |
-| The whole resort | 19 | 19 | [areas/whole-resort.md](areas/whole-resort.md) |
+| Calle Eva | 11 | 11 | [areas/eva.md](areas/eva.md) |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 28 | 28 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
+| Barraka and the beach | 15 | 15 | [areas/barraka-beach.md](areas/barraka-beach.md) |
+| The paseo | 12 | 12 | [areas/paseo.md](areas/paseo.md) |
+| The whole resort | 21 | 21 | [areas/whole-resort.md](areas/whole-resort.md) |
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 101 | [topics/layout.md](topics/layout.md) |
-| Levels and slopes | 13 | [topics/levels.md](topics/levels.md) |
-| Facades and roofs | 39 | [topics/facades.md](topics/facades.md) |
-| Materials | 54 | [topics/materials.md](topics/materials.md) |
-| Planting | 38 | [topics/planting.md](topics/planting.md) |
-| Signs | 10 | [topics/signage.md](topics/signage.md) |
-| Views | 25 | [topics/view.md](topics/view.md) |
+| Layout | 123 | [topics/layout.md](topics/layout.md) |
+| Levels and slopes | 21 | [topics/levels.md](topics/levels.md) |
+| Facades and roofs | 45 | [topics/facades.md](topics/facades.md) |
+| Materials | 62 | [topics/materials.md](topics/materials.md) |
+| Planting | 48 | [topics/planting.md](topics/planting.md) |
+| Signs | 12 | [topics/signage.md](topics/signage.md) |
+| Views | 28 | [topics/view.md](topics/view.md) |
 
-145 references: 145 reviewed, 0 with areas suggested only from the camera position.
+172 references: 172 reviewed, 0 with areas suggested only from the camera position.

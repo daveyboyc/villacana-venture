@@ -12,8 +12,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 20, Levels and slopes: 1, Facades and roofs: 1, Materials: 14, Planting: 5, Signs: 3
-27 reviewed, 0 suggested only by camera position.
+Layout: 21, Levels and slopes: 2, Facades and roofs: 1, Materials: 15, Planting: 5, Signs: 3
+28 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -42,6 +42,7 @@ Layout: 20, Levels and slopes: 1, Facades and roofs: 1, Materials: 14, Planting:
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |

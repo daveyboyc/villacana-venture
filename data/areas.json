@@ -46,7 +46,8 @@
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
     "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
-    "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path."
+    "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
+    "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS."
    ]
   },
   {
@@ -141,7 +142,8 @@
     "Built 2026-10-14 (docs/ELENA_NORTH.md): arched gateway to the north pool lawn, east patio wall, west planting strip, magnolia bed, two hedged beds with pollarded trees, two planter boxes, and the three steps beside the Cervantes ramp.",
     "The Cervantes/Elena rise is 0.5 m over about 3 m (steps beside a ramp, IMG_2286), not 7 m.",
     "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds, the gated entry west of the covered walkway (IMG_2361).",
-    "IMG_2286 GPS is ±14 m: do not place geometry from its pin alone."
+    "IMG_2286 GPS is ±14 m: do not place geometry from its pin alone.",
+    "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios."
    ]
   },
   {
@@ -176,7 +178,8 @@
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
     "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
-    "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation."
+    "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.",
+    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena."
    ]
   },
   {
@@ -314,7 +317,8 @@
    ],
    "notes": [
     "The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).",
-    "IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed."
+    "IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed.",
+    "IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand."
    ]
   },
   {
@@ -336,7 +340,8 @@
     "src/seafront.ts"
    ],
    "notes": [
-    "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall about 1.2 m high, with a green mesh fence on top, holds the seafront houses above it. Not modelled yet."
+    "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall about 1.2 m high, with a green mesh fence on top, holds the seafront houses above it. Not modelled yet.",
+    "IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349)."
    ]
   },
   {

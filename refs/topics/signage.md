@@ -38,6 +38,13 @@ Street-name plaques, house numbers and other readable signs.
 | [IMG_2234.jpg](../../public/photos-ref/IMG_2234.jpg) | ground | layout, signage | Tiled lane with a wall plaque, lamp post and lawn |
 | [IMG_2191.jpg](../../public/photos-ref/IMG_2191.jpg) | ground | signage | Passage plaque reading CALLE SILVIA 1-15 |
 
+## Barraka and the beach
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach |
+| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk |
+
 ## The whole resort
 
 | Reference | Viewpoint | Use for | What it shows |

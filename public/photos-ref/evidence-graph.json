@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "a06f40928436ec74bfe06f2001cef6452b9c65989384a427cf3fdc04c77712c3",
+ "inputDigest": "f8e1afd3d9138b092ca1c52b57ee4f9225ea2102bc9350ce4443687d54dc0d5f",
  "summary": {
   "unplaced": 1,
-  "needs-review": 87,
-  "suggested": 30,
-  "photos": 118,
+  "needs-review": 107,
+  "suggested": 37,
+  "photos": 145,
   "features": 289,
   "photosCitedByModel": 28,
   "modelFeaturesWithPhotoCitations": 31
@@ -2891,11 +2891,88 @@
    "status": "suggested"
   },
   {
+   "id": "photo:IMG_2327.jpg",
+   "kind": "photo",
+   "name": "Cervantes at Elena: steps up to a door beside the lane",
+   "file": "IMG_2327.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2328.jpg",
+   "kind": "photo",
+   "name": "Cervantes at Elena: ramp and steps side by side, drain at the foot",
+   "file": "IMG_2328.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2329.jpg",
+   "kind": "photo",
+   "name": "Cervantes/Elena junction: lawn with a pollarded tree and white kerb",
+   "file": "IMG_2329.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2330.jpg",
+   "kind": "photo",
+   "name": "Calle Elena south from the junction, towards the middle pool",
+   "file": "IMG_2330.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2331.jpg",
+   "kind": "photo",
+   "name": "Middle pool north: crazy-paving path opening onto the lawn and pool",
+   "file": "IMG_2331.jpg",
+   "status": "needs-review"
+  },
+  {
    "id": "photo:IMG_2332.jpg",
    "kind": "photo",
    "name": "Middle pool west side: path between the deck and a raised planter wall",
    "file": "IMG_2332.jpg",
    "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2333.jpg",
+   "kind": "photo",
+   "name": "Middle pool south-west: stone steps up a tiled path to a gate",
+   "file": "IMG_2333.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2334.jpg",
+   "kind": "photo",
+   "name": "Middle pool south: iron gate in a pergola frame onto a lane",
+   "file": "IMG_2334.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2335.jpg",
+   "kind": "photo",
+   "name": "Middle pool south: raised white planter with a blue tile panel",
+   "file": "IMG_2335.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2336.jpg",
+   "kind": "photo",
+   "name": "Calle Eva east of the middle pool: tiled path between lawns",
+   "file": "IMG_2336.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2337.jpg",
+   "kind": "photo",
+   "name": "Calle Eva east of the middle pool: lawn, round trees, lamp",
+   "file": "IMG_2337.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2338.jpg",
+   "kind": "photo",
+   "name": "Calle Eva: brown door, yellow-flowered shrub, lawn",
+   "file": "IMG_2338.jpg",
+   "status": "suggested"
   },
   {
    "id": "photo:IMG_2339.jpg",
@@ -2912,10 +2989,45 @@
    "status": "suggested"
   },
   {
+   "id": "photo:IMG_2341.jpg",
+   "kind": "photo",
+   "name": "Curved low white wall with hedge, crazy paving and trees",
+   "file": "IMG_2341.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2342.jpg",
+   "kind": "photo",
+   "name": "Cervantes/Elena junction: lawn corner with pollarded tree and drain",
+   "file": "IMG_2342.jpg",
+   "status": "needs-review"
+  },
+  {
    "id": "photo:IMG_2345.jpg",
    "kind": "photo",
    "name": "Pintor Picasso: service road, utility sheds and bins",
    "file": "IMG_2345.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2346.jpg",
+   "kind": "photo",
+   "name": "Barraka Beach sign, thatched parasols and boardwalk",
+   "file": "IMG_2346.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2347.jpg",
+   "kind": "photo",
+   "name": "Barraka Beach sign and boardwalk to the beach",
+   "file": "IMG_2347.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2349.jpg",
+   "kind": "photo",
+   "name": "From the paseo: sandstone retaining wall and fence below the south pool",
+   "file": "IMG_2349.jpg",
    "status": "suggested"
   },
   {
@@ -2924,6 +3036,55 @@
    "name": "Paseo looking north-east: stamped walk, sandstone retaining wall",
    "file": "IMG_2350.jpg",
    "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2351.jpg",
+   "kind": "photo",
+   "name": "Paseo looking south: stamped walk, timber edge, beach and sea",
+   "file": "IMG_2351.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2352.jpg",
+   "kind": "photo",
+   "name": "Paseo looking west: sandstone wall, mesh fence, lamp posts",
+   "file": "IMG_2352.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2354.jpg",
+   "kind": "photo",
+   "name": "Paseo curving north-east beside the sandstone wall",
+   "file": "IMG_2354.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2355.jpg",
+   "kind": "photo",
+   "name": "Cervantes/Elena steps from the junction",
+   "file": "IMG_2355.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2356.jpg",
+   "kind": "photo",
+   "name": "Cervantes east of Elena: lane beside a plumbago hedge",
+   "file": "IMG_2356.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2358.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking down on Elena south and the junction lawns",
+   "file": "IMG_2358.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2359.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: over barrel tiles to the Cervantes patios",
+   "file": "IMG_2359.jpg",
+   "status": "needs-review"
   },
   {
    "id": "photo:IMG_2360.jpg",
@@ -2966,6 +3127,34 @@
    "name": "Roof by Elena: looking down on the Elena north lane and its planted bed",
    "file": "IMG_2365.jpg",
    "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2366.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: patios east of the Elena beds",
+   "file": "IMG_2366.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2367.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking south over the Cervantes/Elena junction",
+   "file": "IMG_2367.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2368.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: patios and terraces south-west, along Cervantes",
+   "file": "IMG_2368.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2369.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: patios and terraces south-west (second shot)",
+   "file": "IMG_2369.jpg",
+   "status": "needs-review"
   }
  ],
  "edges": [
@@ -6024,6 +6213,169 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2327.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 3.0
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 5.8
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 20.1,
+   "angleOffset": 4.4
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 25.0,
+   "angleOffset": 27.5
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 30.5,
+   "angleOffset": 29.1
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 3.0
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 5.8
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 20.1,
+   "angleOffset": 16.4
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 25.0,
+   "angleOffset": 15.5
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 38.0,
+   "angleOffset": 31.0
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0.9
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 16.8,
+   "angleOffset": 6.0
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 32.0,
+   "angleOffset": 4.6
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 36.0,
+   "angleOffset": 20.6
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 17.2,
+   "angleOffset": 24.7
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 32.3,
+   "angleOffset": 25.8
+  },
+  {
+   "from": "photo:IMG_2331.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 5.7
+  },
+  {
+   "from": "photo:IMG_2331.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 17.9
+  },
+  {
+   "from": "photo:IMG_2331.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 30.4,
+   "angleOffset": 28.3
+  },
+  {
+   "from": "photo:IMG_2331.jpg",
+   "to": "building:6264401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 43.2,
+   "angleOffset": 27.1
+  },
+  {
    "from": "photo:IMG_2332.jpg",
    "to": "street:elena-south",
    "relation": "camera-nearby",
@@ -6042,6 +6394,158 @@
    "gap": 12.0
   },
   {
+   "from": "photo:IMG_2333.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2333.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2333.jpg",
+   "to": "building:6264401UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 29.7,
+   "angleOffset": 21.3
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 1.0
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "building:6264401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 16.5,
+   "angleOffset": 1.1
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "building:6364201UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 40.0,
+   "angleOffset": 10.7
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "building:6364201UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 44.9,
+   "angleOffset": 31.7
+  },
+  {
+   "from": "photo:IMG_2335.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 0.4
+  },
+  {
+   "from": "photo:IMG_2335.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2335.jpg",
+   "to": "building:6264401UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 15.1,
+   "angleOffset": 25.5
+  },
+  {
+   "from": "photo:IMG_2335.jpg",
+   "to": "building:6264401UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 29.2,
+   "angleOffset": 22.5
+  },
+  {
+   "from": "photo:IMG_2336.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2336.jpg",
+   "to": "building:6365201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 28.6,
+   "angleOffset": 4.6
+  },
+  {
+   "from": "photo:IMG_2336.jpg",
+   "to": "building:6365101UF1366N_part9",
+   "relation": "possibly-in-view",
+   "distance": 32.9,
+   "angleOffset": 21.6
+  },
+  {
+   "from": "photo:IMG_2336.jpg",
+   "to": "building:6365201UF1366N_part14",
+   "relation": "possibly-in-view",
+   "distance": 34.2,
+   "angleOffset": 14.9
+  },
+  {
+   "from": "photo:IMG_2337.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2337.jpg",
+   "to": "building:6365201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 27.9,
+   "angleOffset": 15.6
+  },
+  {
+   "from": "photo:IMG_2337.jpg",
+   "to": "building:6365201UF1366N_part14",
+   "relation": "possibly-in-view",
+   "distance": 33.4,
+   "angleOffset": 4.9
+  },
+  {
+   "from": "photo:IMG_2337.jpg",
+   "to": "building:6365201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 34.7,
+   "angleOffset": 11.1
+  },
+  {
+   "from": "photo:IMG_2338.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 3.0
+  },
+  {
+   "from": "photo:IMG_2338.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 20.4,
+   "angleOffset": 4.2
+  },
+  {
+   "from": "photo:IMG_2338.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 41.8,
+   "angleOffset": 1.2
+  },
+  {
    "from": "photo:IMG_2339.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -6054,10 +6558,154 @@
    "gap": 2.4
   },
   {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 18.7
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 19.2
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 19.3
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 40.7
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 41.4
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 41.7
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "street:silvia-south",
+   "relation": "camera-nearby",
+   "gap": 47.5
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 40.2,
+   "angleOffset": 0.0
+  },
+  {
+   "from": "photo:IMG_2341.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 43.0,
+   "angleOffset": 20.6
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.1
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 6.4
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 17.3,
+   "angleOffset": 1.2
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 32.5,
+   "angleOffset": 2.5
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "building:6265801UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.2,
+   "angleOffset": 21.7
+  },
+  {
    "from": "photo:IMG_2345.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 3.3
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
+   "to": "area:barraka",
+   "relation": "camera-nearby",
+   "gap": 8.9
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2349.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 2.2
+  },
+  {
+   "from": "photo:IMG_2349.jpg",
+   "to": "building:6364201UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 44.0,
+   "angleOffset": 8.6
   },
   {
    "from": "photo:IMG_2350.jpg",
@@ -6071,6 +6719,124 @@
    "relation": "possibly-in-view",
    "distance": 31.8,
    "angleOffset": 27.4
+  },
+  {
+   "from": "photo:IMG_2351.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 5.3
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 3.5
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 3.8
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 16.4,
+   "angleOffset": 4.7
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 25.9,
+   "angleOffset": 27.5
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.1,
+   "angleOffset": 4.3
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 3.4
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 4.7
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 5.9
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 26.9,
+   "angleOffset": 20.8
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 28.1,
+   "angleOffset": 24.2
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "building:6265401UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 40.1,
+   "angleOffset": 9.5
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 23.2,
+   "angleOffset": 31.4
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 16.2,
+   "angleOffset": 28.6
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 25.2,
+   "angleOffset": 0.5
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 38.1,
+   "angleOffset": 30.8
   },
   {
    "from": "photo:IMG_2360.jpg",
@@ -6214,6 +6980,93 @@
    "to": "elena_north.json:elena-north-tree-bed-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.0
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 24.3,
+   "angleOffset": 5.6
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.6
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 25.7,
+   "angleOffset": 18.0
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "building:6265801UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 40.7,
+   "angleOffset": 21.0
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.7
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 19.7,
+   "angleOffset": 15.0
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.8,
+   "angleOffset": 8.4
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 40.0,
+   "angleOffset": 23.7
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.7
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 19.7,
+   "angleOffset": 19.0
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.8,
+   "angleOffset": 4.4
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 40.0,
+   "angleOffset": 27.7
   }
  ]
 }
