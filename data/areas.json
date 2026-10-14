@@ -35,11 +35,15 @@
     ],
     "radius": 28
    },
-   "docs": [],
+   "docs": [
+    "docs/MIDDLE_POOL.md"
+   ],
    "data": [
+    "data/middle_pool.json",
     "data/objects.json"
    ],
    "src": [
+    "src/middle-pool.ts",
     "src/world.ts",
     "src/water.ts"
    ],
@@ -47,7 +51,9 @@
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
     "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
     "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
-    "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS."
+    "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.",
+    "Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.",
+    "Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south-west steps and gateway (IMG_2333), the south pergola gate (IMG_2334)."
    ]
   },
   {
@@ -264,14 +270,19 @@
     ]
    },
    "docs": [
-    "docs/STREET_LAYOUT.md"
+    "docs/STREET_LAYOUT.md",
+    "docs/MIDDLE_POOL.md"
    ],
    "data": [
-    "data/street_layout.json"
+    "data/street_layout.json",
+    "data/middle_pool.json"
    ],
-   "src": [],
+   "src": [
+    "src/middle-pool.ts"
+   ],
    "notes": [
-    "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights."
+    "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.",
+    "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m."
    ]
   },
   {

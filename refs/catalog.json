@@ -1414,7 +1414,9 @@
    "z": 81.6,
    "heading": 232
   },
-  "citedBy": []
+  "citedBy": [
+   "middle_pool.json:middle-pool-east-gateway"
+  ]
  },
  {
   "id": "IMG_2245.jpg",
@@ -1439,7 +1441,9 @@
    "z": 94.3,
    "heading": 268
   },
-  "citedBy": []
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ]
  },
  {
   "id": "IMG_2246.jpg",
@@ -2966,7 +2970,9 @@
    "accuracy": 17.3,
    "altitude": 6.6
   },
-  "citedBy": []
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ]
  },
  {
   "id": "IMG_2332.jpg",
@@ -2995,7 +3001,9 @@
    "accuracy": 14.0,
    "altitude": 6.8
   },
-  "citedBy": []
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ]
  },
  {
   "id": "IMG_2333.jpg",
@@ -3022,7 +3030,9 @@
    "accuracy": 3.0,
    "altitude": 6.7
   },
-  "citedBy": []
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ]
  },
  {
   "id": "IMG_2334.jpg",
@@ -3215,7 +3225,9 @@
    "accuracy": 4.7,
    "altitude": 5.9
   },
-  "citedBy": []
+  "citedBy": [
+   "middle_pool.json:middle-pool-east-gateway"
+  ]
  },
  {
   "id": "IMG_2341.jpg",

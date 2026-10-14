@@ -14,9 +14,9 @@ How the ground rises and falls: slopes, ramps, steps, raised patios, retaining w
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. |
+| [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool.json:middle-pool-west-planter._ |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane |
-| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate |
 
 ## South pool
 

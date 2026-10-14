@@ -6,6 +6,7 @@ import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
+import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview} from "./middle-pool";
 import {pavingCanvas,plasterMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
@@ -57,6 +58,7 @@ async function boot(): Promise<void> {
   const detailLink=document.querySelector<HTMLAnchorElement>("#layout-details")!;
   const detailUrl=new URL(location.href);if(layoutOnly)detailUrl.searchParams.set("details","1");else detailUrl.searchParams.delete("details");detailLink.href=detailUrl.pathname+detailUrl.search;detailLink.textContent=layoutOnly?"Layout · show details":"Details · show layout";
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
+  suppressInMiddlePoolReview(skeleton); // the traced middle pool gateway and planter replace generated walls there
   const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
   const shown = chosen.length ? chosen : [skeleton.pools.find((p) => p.id === "north")!];
   // Start at the first pool named.
@@ -154,9 +156,11 @@ async function boot(): Promise<void> {
   addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);}
+  addMiddlePool(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
+  fenceRings.push(...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
   const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
@@ -518,6 +522,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
         const jz = z + (hash(z, x) - 0.5) * step * 0.9;
         // Nothing grows on the sand.
         if (seaside?.inZone(jx, jz)) continue;
+        if (inMiddlePoolReview(jx, jz)) continue;
         if (coverAt(jx, jz) === wanted) out.push({ x: jx, y:poolGroundY(jx,jz), z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
       }
     }
