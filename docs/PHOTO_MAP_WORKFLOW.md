@@ -99,7 +99,9 @@ have been compared with the rendered model.
    and unchanged registry fronts. Flag incompatible interpretations rather than
    silently move a pin or assert a subject position.
 3. Record which feature cites which photos and which assumptions remain estimated.
-   Compare rendered views from similar camera positions where possible. There is
+   Compare rendered views from similar camera positions where possible:
+   `node scripts/shoot_views.cjs IMG_xxxx --details` renders the game from a
+   photo's pin and heading into `layout-checks.local/views/`. There is
    currently no calibrated pixel comparison, measured dimensional reconstruction,
    photogrammetry or systematic rendered comparison for every image.
 4. Geometry checks catch paths through houses/water, wall/kerb clearance and closed

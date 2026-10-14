@@ -6,20 +6,81 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 
 ## Known facts and open questions
 
-- Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275). The 0.4 m ramp rise is an estimate, not measured.
+- Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).
+- At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.
 - IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.
 
 ## Read first
 
-- docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`
-- data: `data/dali_cervantes.json`, `data/dali_cervantes_threshold.json`, `data/cervantes_patio_walls.json`, `data/passages.json`, `data/frontage_divisions.json`
-- src: `src/cervantes-walls.ts`, `src/dali-threshold.ts`, `src/frontages.ts`
+- docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`, `docs/ELENA_NORTH.md`
+- data: `data/dali_cervantes.json`, `data/dali_cervantes_threshold.json`, `data/cervantes_patio_walls.json`, `data/passages.json`, `data/frontage_divisions.json`, `data/cervantes_elena_steps.json`
+- src: `src/cervantes-walls.ts`, `src/dali-threshold.ts`, `src/frontages.ts`, `src/ramp-steps.ts`
 - contact sheet: `villacana-reference/contact-sheets/cervantes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
 Layout: 14, Levels and slopes: 6, Facades and roofs: 3, Materials: 1, Planting: 4, Signs: 2, Views: 1
 15 reviewed, 0 suggested only by camera position.
+
+## Built from these photos
+
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+
+```mermaid
+graph LR
+  A["Calle Miguel de Cervantes"]
+  A --> F0["Cervantes · north patio wall 1"]
+  F0 --> PIMG_2263_jpg(["IMG_2263"])
+  F0 --> PIMG_2264_jpg(["IMG_2264"])
+  F0 --> PIMG_2265_jpg(["IMG_2265"])
+  F0 --> PIMG_2273_jpg(["IMG_2273"])
+  F0 --> PIMG_2274_jpg(["IMG_2274"])
+  F0 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F1["Cervantes · south patio wall 1"]
+  F1 --> PIMG_2263_jpg(["IMG_2263"])
+  F1 --> PIMG_2264_jpg(["IMG_2264"])
+  F1 --> PIMG_2265_jpg(["IMG_2265"])
+  F1 --> PIMG_2273_jpg(["IMG_2273"])
+  F1 --> PIMG_2274_jpg(["IMG_2274"])
+  F1 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F2["Cervantes · south patio wall 2"]
+  F2 --> PIMG_2263_jpg(["IMG_2263"])
+  F2 --> PIMG_2264_jpg(["IMG_2264"])
+  F2 --> PIMG_2265_jpg(["IMG_2265"])
+  F2 --> PIMG_2273_jpg(["IMG_2273"])
+  F2 --> PIMG_2274_jpg(["IMG_2274"])
+  F2 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F3["Cervantes · south patio wall 3"]
+  F3 --> PIMG_2263_jpg(["IMG_2263"])
+  F3 --> PIMG_2264_jpg(["IMG_2264"])
+  F3 --> PIMG_2265_jpg(["IMG_2265"])
+  F3 --> PIMG_2273_jpg(["IMG_2273"])
+  F3 --> PIMG_2274_jpg(["IMG_2274"])
+  F3 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F4["Cervantes / Elena · front lawn 1"]
+  F4 --> PIMG_2260_jpg(["IMG_2260"])
+  F4 --> PIMG_2261_jpg(["IMG_2261"])
+  F4 --> PIMG_2263_jpg(["IMG_2263"])
+  A --> F5["Cervantes / Elena · front lawn 2"]
+  F5 --> PIMG_2260_jpg(["IMG_2260"])
+  F5 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F6["Cervantes / Elena · paved front enclosure"]
+  F6 --> PIMG_2260_jpg(["IMG_2260"])
+  F6 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F7["Front-door approach between lawns"]
+  F7 --> PIMG_2260_jpg(["IMG_2260"])
+  F7 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F8["Cervantes · planting along low wall"]
+  F8 --> PIMG_2273_jpg(["IMG_2273"])
+  F8 --> PIMG_2274_jpg(["IMG_2274"])
+  A --> F9["Cervantes / Elena ramp"]
+  F9 --> PIMG_2262_jpg(["IMG_2262"])
+  F9 --> PIMG_2265_jpg(["IMG_2265"])
+  F9 --> PIMG_2286_jpg(["IMG_2286"])
+  A --> F10["Cervantes / Elena · steps beside the ramp"]
+  F10 --> PIMG_2262_jpg(["IMG_2262"])
+  F10 --> PIMG_2286_jpg(["IMG_2286"])
+```
 
 ## Reviewed references
 
@@ -33,10 +94,10 @@ Layout: 14, Levels and slopes: 6, Facades and roofs: 3, Materials: 1, Planting: 
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades | Cervantes junction: another view of the same terraces _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path._ |
 | [IMG_2260.jpg](../../public/photos-ref/IMG_2260.jpg) | ground | layout, planting | Cervantes junction: white terraces and small lawns _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path._ |
 | [IMG_2264.jpg](../../public/photos-ref/IMG_2264.jpg) | ground | layout | Cervantes: lane facing toward Pintor Dalí _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
-| [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: ramp:cervantes-elena-ramp._ |
+| [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
-| [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps |
+| [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |

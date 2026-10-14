@@ -21,6 +21,59 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 4, Planting: 2, Views: 1
 25 reviewed, 0 suggested only by camera position.
 
+## Built from these photos
+
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+
+```mermaid
+graph LR
+  A["Calle Pintor Dalí"]
+  A --> F0["Dalí · gate pier"]
+  F0 --> PIMG_2284_jpg(["IMG_2284"])
+  F0 --> PIMG_2296_jpg(["IMG_2296"])
+  F0 --> PIMG_2297_jpg(["IMG_2297"])
+  A --> F1["Dalí · white plinth and rigid metal mesh"]
+  F1 --> PIMG_2284_jpg(["IMG_2284"])
+  F1 --> PIMG_2296_jpg(["IMG_2296"])
+  F1 --> PIMG_2297_jpg(["IMG_2297"])
+  A --> F2["Dalí · tall white coastal wall"]
+  F2 --> PIMG_2284_jpg(["IMG_2284"])
+  F2 --> PIMG_2296_jpg(["IMG_2296"])
+  F2 --> PIMG_2297_jpg(["IMG_2297"])
+  A --> F3["Cervantes · tiled parking crossing"]
+  F3 --> PIMG_2267_jpg(["IMG_2267"])
+  F3 --> PIMG_2268_jpg(["IMG_2268"])
+  F3 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F4["Dalí · parking bays"]
+  F4 --> PIMG_2267_jpg(["IMG_2267"])
+  F4 --> PIMG_2268_jpg(["IMG_2268"])
+  F4 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F5["Dalí · parking bays"]
+  F5 --> PIMG_2267_jpg(["IMG_2267"])
+  F5 --> PIMG_2268_jpg(["IMG_2268"])
+  F5 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F6["Dalí · house-side footpath"]
+  F6 --> PIMG_2267_jpg(["IMG_2267"])
+  F6 --> PIMG_2268_jpg(["IMG_2268"])
+  F6 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F7["Dalí · house-side footpath"]
+  F7 --> PIMG_2267_jpg(["IMG_2267"])
+  F7 --> PIMG_2268_jpg(["IMG_2268"])
+  F7 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F8["Dalí · grass strip"]
+  F8 --> PIMG_2267_jpg(["IMG_2267"])
+  F8 --> PIMG_2268_jpg(["IMG_2268"])
+  F8 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F9["Dalí · grass strip"]
+  F9 --> PIMG_2267_jpg(["IMG_2267"])
+  F9 --> PIMG_2268_jpg(["IMG_2268"])
+  F9 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F10["Dalí · coastal pedestrian gate"]
+  F10 --> PIMG_2284_jpg(["IMG_2284"])
+  F10 --> PIMG_2296_jpg(["IMG_2296"])
+  F10 --> PIMG_2297_jpg(["IMG_2297"])
+```
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

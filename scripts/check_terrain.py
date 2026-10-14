@@ -26,11 +26,25 @@ def site_y(p):
                 edge = a[0] + (b[0] - a[0]) * (tz - a[1]) / (b[1] - a[1])
                 break
     seaward = 1 - max(0, min(1, (tz - west['fade'][0]) / (west['fade'][1] - west['fade'][0])))
-    return west['rise'] * max(0, min(1, (edge - tx) / west['run'])) * seaward
+    return west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
+
+
+def run_at(tz):
+    """The same rule as runAt in src/terrain.ts."""
+    run = west['run']
+    for local in west.get('localRuns', []):
+        a, b = local['tz']
+        inside = (tz - (a - local['blend'])) / local['blend'] if tz < a else ((b + local['blend']) - tz) / local['blend'] if tz > b else 1
+        if inside > 0:
+            run = min(run, west['run'] + (local['run'] - west['run']) * max(0, min(1, inside)))
+    return run
 
 
 assert west['rise'] == 0.5, 'Dave: the Dalí side is about half a metre higher'
 assert west['rise'] / west['run'] <= 0.1, 'Ramp too steep to walk'
+# A shorter run only where a steep ramp is photographed, and still walkable.
+for local in west.get('localRuns', []):
+    assert local['evidence'].startswith('photo:') and west['rise'] / local['run'] <= 0.22, f"{local['id']}: local ramp unphotographed or too steep"
 assert all(a[1] < b[1] for a, b in zip(west['foot'], west['foot'][1:]))
 # Every pool stays on level ground.
 for pool in skeleton['pools']:

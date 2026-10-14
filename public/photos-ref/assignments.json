@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "7cba1fbaef01a6fb96152acfe14ab7fb13e054cb547f7c7fc4cacc2a576e741c",
+ "inputDigest": "346bdb18f59e8622161ff141610a2c07112c94f12c534e5c8d133a51ac323dac",
  "summary": {
   "unplaced": 1,
   "needs-review": 86,
-  "suggested": 24,
-  "photos": 111,
-  "features": 280,
-  "photosCitedByModel": 18,
-  "modelFeaturesWithPhotoCitations": 22
+  "suggested": 27,
+  "photos": 114,
+  "features": 289,
+  "photosCitedByModel": 28,
+  "modelFeaturesWithPhotoCitations": 31
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -688,7 +688,9 @@
      "angleOffset": 32.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-tree-bed-2"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -149.2,
@@ -743,7 +745,11 @@
      "angleOffset": 28.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-tree-bed-2",
+    "elena_north.json:elena-north-planter-box-1",
+    "elena_north.json:elena-north-planter-box-2"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -145.5,
@@ -798,7 +804,9 @@
      "angleOffset": 2.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-tree-bed-1"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -147.0,
@@ -848,7 +856,10 @@
      "angleOffset": 10.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-tree-bed-1",
+    "elena_north.json:elena-north-tree-bed-2"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -147.2,
@@ -903,7 +914,11 @@
      "angleOffset": 30.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-tree-bed-1",
+    "elena_north.json:elena-north-planter-box-1",
+    "elena_north.json:elena-north-planter-box-2"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -148.5,
@@ -946,7 +961,9 @@
     }
    ],
    "citedBy": [
-    "building:6265201UF1366N_part5"
+    "building:6265201UF1366N_part5",
+    "elena_north.json:elena-north-gateway",
+    "elena_north.json:elena-north-planter-west"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -3029,6 +3046,7 @@
     }
    ],
    "citedBy": [
+    "steps:cervantes-elena-steps",
     "ramp:cervantes-elena-ramp"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -3931,7 +3949,10 @@
      "angleOffset": 29.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "steps:cervantes-elena-steps",
+    "ramp:cervantes-elena-ramp"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -154.2,
@@ -4498,6 +4519,32 @@
    }
   },
   {
+   "file": "IMG_2345.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:picasso",
+     "name": "Calle Pintor Picasso",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -14.4,
+    "z": 48.2,
+    "basis": "phone location",
+    "reportedAccuracy": 5.5,
+    "heading": 318,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2360.jpg",
    "status": "needs-review",
    "reasons": [
@@ -4591,7 +4638,9 @@
      "angleOffset": 17.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-magnolia-bed"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.2,
@@ -4628,7 +4677,11 @@
      "angleOffset": 5.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_north.json:elena-north-gateway",
+    "elena_north.json:elena-north-patio-east",
+    "elena_north.json:elena-north-planter-west"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.9,
@@ -4636,6 +4689,75 @@
     "basis": "phone location",
     "reportedAccuracy": 4.7,
     "heading": 343,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2364.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 43.1,
+     "angleOffset": 10.1
+    }
+   ],
+   "citedBy": [
+    "elena_north.json:elena-north-magnolia-bed"
+   ],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -156.2,
+    "z": 33.4,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 137,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2365.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 37.2,
+     "angleOffset": 23.7
+    }
+   ],
+   "citedBy": [
+    "elena_north.json:elena-north-magnolia-bed",
+    "elena_north.json:elena-north-tree-bed-1"
+   ],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.5,
+    "z": 38.3,
+    "basis": "phone location",
+    "reportedAccuracy": 4.3,
+    "heading": 148,
     "headingBasis": "EXIF true north"
    }
   }

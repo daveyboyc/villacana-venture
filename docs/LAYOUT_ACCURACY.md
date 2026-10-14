@@ -86,8 +86,8 @@ real-world dimensions or photographic fidelity of every frontage.
 ## What still needs verification
 
 Many enclosure walls have not yet been traced individually. Some covered passages
-remain marked likely from registry/aerial context. Elena's separately photographed
-steps beside its ramp need their own detailed geometry comparison. Site and big-pool
+remain marked likely from registry/aerial context. Elena's steps beside its ramp
+are now built (docs/ELENA_NORTH.md); their tread sizes are estimated. Site and big-pool
 levels retain their existing estimated dimensions; this pass preserves their
 recent corrections. The beach/sea outline disagreement flagged for IMG_2285 is
 still a review item. Keep those limits visible; do not fill them with repeating

@@ -1540,5 +1540,39 @@
    "materials"
   ],
   "note": "No GPS in the file: exact stretch of beach not confirmed."
+ },
+ "IMG_2345.jpg": {
+  "shows": [
+   "picasso"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "levels"
+  ]
+ },
+ "IMG_2364.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2365.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting",
+   "materials"
+  ],
+  "note": "Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it."
  }
 }

@@ -1,0 +1,27 @@
+{
+ "id": "cervantes-elena-steps",
+ "name": "Cervantes / Elena · steps beside the ramp",
+ "foot": [
+  -152.41,
+  57.06
+ ],
+ "toward": [
+  -154.99,
+  58.6
+ ],
+ "across": [
+  0.02,
+  0.8
+ ],
+ "risers": [
+  0.4,
+  1.0,
+  1.6
+ ],
+ "end": 3.0,
+ "evidence": [
+  "IMG_2286.jpg",
+  "IMG_2262.jpg"
+ ],
+ "trust": "Three shallow steps on the north half of the lane, beside the smooth ramp, starting about one tile up from the foot drain (IMG_2286, IMG_2262). White-painted risers, terracotta treads with grey stone edges. Tread lengths from the 0.4 m tiles; together they climb the same 0.5 m as the ramp, which reaches the top tread's level 3.0 m up. Positions approximate (about 0.2 m)."
+}

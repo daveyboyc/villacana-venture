@@ -13,6 +13,7 @@ export type SpriteKind =
   | "tree"
   | "feathery_tree"
   | "pollarded_tree"
+  | "magnolia"
   | "pine"
   | "palm"
   | "bird_of_paradise"
@@ -29,6 +30,7 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
   tree: { w: 5.2, h: 6.2, shadow: true },
   feathery_tree: { w: 5.6, h: 5.4, shadow: true },
   pollarded_tree: { w: 2.6, h: 4.2, shadow: true },
+  magnolia: { w: 2.4, h: 3.2, shadow: true },
   pine: { w: 6, h: 16, shadow: false },
   palm: { w: 5, h: 10, shadow: false },
   bird_of_paradise: { w: 3.4, h: 4.6, shadow: true },
@@ -206,6 +208,14 @@ const PAINTERS: Record<SpriteKind, (b: Brush) => void> = {
     b.stem(0.48, 0.55, 0.3, 0.74, 0.08, "#5a4636");
     b.stem(0.48, 0.55, 0.68, 0.76, 0.08, "#5a4636");
     for (const [x, y] of [[0.28, 0.8], [0.5, 0.72], [0.7, 0.82]]) b.foliage(x, y, 0.16, 0.1, "#3c6b3a", "#5c8f47", "#86b35a", 26);
+  },
+  magnolia(b) {
+    // Dense glossy shrub with rusty leaf backs, as in the Elena beds (IMG_2364, IMG_2365).
+    b.stem(0.5, 0, 0.47, 0.35, 0.05, "#4f3a2a");
+    b.stem(0.47, 0.25, 0.32, 0.45, 0.03, "#4f3a2a");
+    b.stem(0.47, 0.25, 0.66, 0.48, 0.03, "#4f3a2a");
+    b.foliage(0.5, 0.58, 0.46, 0.4, "#1d3a24", "#2c5531", "#4d7b45", 95);
+    b.dots(0.5, 0.6, 0.4, 0.34, 26, 0.03, ["#8a5a2b", "#a0703a", "#6f4a26"]);
   },
   pine(b) {
     b.stem(0.5, 0, 0.5, 0.9, 0.05, "#4a382c");

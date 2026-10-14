@@ -1,0 +1,297 @@
+{
+ "checkedAt": "2026-10-14",
+ "scope": "Calle Elena north, from the arched gateway onto the north pool lawn to the Cervantes junction. Traced from the 14 October roof photos and the ground photos of 11 October against the registry fronts and the aerial. Positions are approximate (about 0.5-1 m); heights are estimated from the photos, not measured.",
+ "lane": {
+  "street": "elena-north",
+  "from": [
+   -164.75,
+   18.93
+  ],
+  "to": [
+   -145.08,
+   52.69
+  ],
+  "width": 1.45,
+  "evidence": [
+   "IMG_2363.jpg",
+   "IMG_2365.jpg"
+  ],
+  "trust": "Square terracotta lane about 1.4-1.5 m wide between walls and beds (roof photos)."
+ },
+ "review": {
+  "ring": [
+   [
+    -162.15,
+    28.76
+   ],
+   [
+    -147.85,
+    53.3
+   ],
+   [
+    -142.15,
+    49.97
+   ],
+   [
+    -156.45,
+    25.43
+   ]
+  ],
+  "trust": "Generated garden walls, gates and scattered planting are suppressed here; only the traced features below are built."
+ },
+ "gateway": {
+  "id": "elena-north-gateway",
+  "name": "Elena north · arched gateway to the north pool lawn",
+  "points": [
+   [
+    -161.43,
+    29.44
+   ],
+   [
+    -156.12,
+    26.35
+   ]
+  ],
+  "opening": [
+   -0.75,
+   0.75
+  ],
+  "height": 2.0,
+  "archSpring": 1.7,
+  "archCrown": 2.2,
+  "top": 2.55,
+  "thickness": 0.3,
+  "evidence": [
+   "IMG_2363.jpg",
+   "IMG_2202.jpg"
+  ],
+  "trust": "Arched white gateway at the lane's end, crazy paving and the north pool lawn beyond (IMG_2363, looking down from the roof). Opening width and wall height estimated from door and tile sizes."
+ },
+ "walls": [
+  {
+   "id": "elena-north-patio-east",
+   "name": "Elena north · patio wall, east side",
+   "points": [
+    [
+     -158.52,
+     27.92
+    ],
+    [
+     -154.06,
+     35.56
+    ]
+   ],
+   "height": 1.15,
+   "thickness": 0.2,
+   "doors": [
+    {
+     "at": [
+      -155.5,
+      33.1
+     ],
+     "width": 0.9,
+     "height": 1.0
+    }
+   ],
+   "evidence": [
+    "IMG_2363.jpg"
+   ],
+   "trust": "White wall between the lane and the private patios in front of the east terrace; brown door in it. Height estimated."
+  }
+ ],
+ "beds": [
+  {
+   "id": "elena-north-planter-west",
+   "name": "Elena north · planting strip, west side",
+   "ring": [
+    [
+     -160.91,
+     29.65
+    ],
+    [
+     -156.48,
+     37.26
+    ],
+    [
+     -155.32,
+     36.58
+    ],
+    [
+     -159.75,
+     28.98
+    ]
+   ],
+   "kerb": 0.25,
+   "planting": "strip",
+   "evidence": [
+    "IMG_2363.jpg",
+    "IMG_2202.jpg"
+   ],
+   "trust": "Planting along the west houses between their wall and the lane (IMG_2363). Width from the registry front; kerb height estimated. Ends at the covered walkway."
+  },
+  {
+   "id": "elena-north-magnolia-bed",
+   "name": "Elena north · magnolia bed",
+   "ring": [
+    [
+     -153.69,
+     36.44
+    ],
+    [
+     -149.01,
+     44.48
+    ],
+    [
+     -146.75,
+     43.16
+    ],
+    [
+     -151.43,
+     35.13
+    ]
+   ],
+   "kerb": 0.3,
+   "planting": "magnolia",
+   "evidence": [
+    "IMG_2365.jpg",
+    "IMG_2364.jpg",
+    "IMG_2362.jpg"
+   ],
+   "trust": "Raised bed of tall glossy magnolia-like shrubs edged with strap-leaved plants, beside the lane (IMG_2365 from the roof). Extent from the aerial canopy; approximate."
+  },
+  {
+   "id": "elena-north-tree-bed-1",
+   "name": "Elena north · hedged bed with pollarded tree",
+   "ring": [
+    [
+     -148.83,
+     44.78
+    ],
+    [
+     -147.2,
+     47.59
+    ],
+    [
+     -144.94,
+     46.28
+    ],
+    [
+     -146.58,
+     43.47
+    ]
+   ],
+   "kerb": 0.3,
+   "planting": "pollarded",
+   "hedgeBorder": 0.45,
+   "evidence": [
+    "IMG_2365.jpg",
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ],
+   "trust": "Bed boxed by a clipped hedge with a pollarded tree (IMG_2199-2201 at ground level, IMG_2365 from above). Approximate."
+  },
+  {
+   "id": "elena-north-tree-bed-2",
+   "name": "Elena north · second hedged bed",
+   "ring": [
+    [
+     -146.59,
+     48.63
+    ],
+    [
+     -145.21,
+     51.0
+    ],
+    [
+     -143.12,
+     49.79
+    ],
+    [
+     -144.51,
+     47.41
+    ]
+   ],
+   "kerb": 0.3,
+   "planting": "pollarded",
+   "hedgeBorder": 0.45,
+   "evidence": [
+    "IMG_2197.jpg",
+    "IMG_2198.jpg",
+    "IMG_2200.jpg"
+   ],
+   "trust": "Second hedged bed with a pollarded tree near the Cervantes end. A short path to a garden door runs between the two hedged beds. Approximate."
+  }
+ ],
+ "planters": [
+  {
+   "id": "elena-north-planter-box-1",
+   "name": "Elena north · white planter box",
+   "ring": [
+    [
+     -151.18,
+     46.09
+    ],
+    [
+     -150.9,
+     46.57
+    ],
+    [
+     -150.43,
+     46.29
+    ],
+    [
+     -150.71,
+     45.82
+    ]
+   ],
+   "height": 0.6,
+   "evidence": [
+    "IMG_2201.jpg",
+    "IMG_2198.jpg"
+   ],
+   "trust": "Small white rendered planter box against the west house front (IMG_2201). Size from the 0.4 m tiles; position approximate."
+  },
+  {
+   "id": "elena-north-planter-box-2",
+   "name": "Elena north · white planter box",
+   "ring": [
+    [
+     -150.53,
+     47.22
+    ],
+    [
+     -150.25,
+     47.69
+    ],
+    [
+     -149.77,
+     47.41
+    ],
+    [
+     -150.05,
+     46.94
+    ]
+   ],
+   "height": 0.6,
+   "evidence": [
+    "IMG_2201.jpg",
+    "IMG_2198.jpg"
+   ],
+   "trust": "Second planter box beside the first, under the barred window (IMG_2201). Approximate."
+  }
+ ],
+ "sources": [
+  "IMG_2361.jpg",
+  "IMG_2362.jpg",
+  "IMG_2363.jpg",
+  "IMG_2364.jpg",
+  "IMG_2365.jpg",
+  "IMG_2197.jpg",
+  "IMG_2198.jpg",
+  "IMG_2199.jpg",
+  "IMG_2200.jpg",
+  "IMG_2201.jpg",
+  "IMG_2202.jpg"
+ ]
+}

@@ -12,11 +12,12 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 
 ## Coverage
 
-Layout: 1, Views: 1
-1 reviewed, 0 suggested only by camera position.
+Layout: 2, Levels and slopes: 1, Materials: 1, Views: 1
+2 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2345.jpg](../../public/photos-ref/IMG_2345.jpg) | ground | layout, materials, levels | Pintor Picasso: service road, utility sheds and bins |
 | `villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png` | aerial | layout, view | Apple Maps 3D: north pool looking east towards the Picasso car park |

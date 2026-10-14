@@ -17,7 +17,18 @@ export function siteY(x: number, z: number): number {
   else for (let i = 1; i < foot.length; i++) if (tz <= foot[i][1]) { edge = foot[i - 1][0] + (foot[i][0] - foot[i - 1][0]) * (tz - foot[i - 1][1]) / (foot[i][1] - foot[i - 1][1]); break; }
   // Level again by the time the land reaches the paseo.
   const seaward = 1 - clamp((tz - west.fade[0]) / (west.fade[1] - west.fade[0]), 0, 1);
-  return west.rise * clamp((edge - tx) / west.run, 0, 1) * seaward;
+  return west.rise * clamp((edge - tx) / runAt(tz), 0, 1) * seaward;
+}
+
+/** The slope's length: 7 m along most of the foot line, shorter where a photographed ramp is steeper. */
+export function runAt(tz: number): number {
+  let run = west.run;
+  for (const local of west.localRuns ?? []) {
+    const [a, b] = local.tz, inside = tz < a ? (tz - (a - local.blend)) / local.blend : tz > b ? ((b + local.blend) - tz) / local.blend : 1;
+    // Blend back to the usual run either side, so the ground has no seam.
+    if (inside > 0) run = Math.min(run, west.run + (local.run - west.run) * clamp(inside, 0, 1));
+  }
+  return run;
 }
 
 /** The raised part of the ground, laid over the flat sheet with the same painted texture. */

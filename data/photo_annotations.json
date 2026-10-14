@@ -135,5 +135,26 @@
     "originalUrl": "https://drive.google.com/file/d/1sKwoPnIA4dgLpkvZ4Fzt5DkNCEm3hGFe/view?usp=drivesdk",
     "visualReview": "observed; unplaced (no GPS)",
     "areaHint": "area:beach"
+  },
+  "IMG_2345.HEIC": {
+    "title": "Pintor Picasso: service road, utility sheds and bins",
+    "observation": "Looking north-west up the asphalt service road off Calle Pintor Picasso. Left: a dark slatted fence, then low white utility sheds with brown doors and a meter box, then a long plain white boundary wall. Right: a low white building on a rough stone plinth with black tubular railings and a short concrete ramp, green and grey recycling bins, and large plane trees. Palms and the mountains beyond.",
+    "originalUrl": "https://drive.google.com/file/d/1erDqbTnA6AY154GoieIxUfI8mvb5lecH/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "picasso"
+  },
+  "IMG_2364.HEIC": {
+    "title": "Roof by Elena: barrel-tile lean-to over a magnolia bed",
+    "observation": "From a roof edge looking south-east: a mono-pitch roof of lichen-mottled barrel tiles drops beside a tall dense magnolia-like shrub. Beyond: a two-storey white front with arched shuttered windows, a small barrel-tile canopy over a balcony and magenta bougainvillea.",
+    "originalUrl": "https://drive.google.com/file/d/1jhrq_GRFfbAq93WMgebeNPGvVsevTTLo/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
+  },
+  "IMG_2365.HEIC": {
+    "title": "Roof by Elena: looking down on the Elena north lane and its planted bed",
+    "observation": "Almost straight down onto Calle Elena north, looking south-south-east: a straight square-tiled terracotta lane about 1.5 m wide with a narrow white edging kerb. On its left a raised planting bed of tall magnolia-like shrubs edged with strap-leaved plants, ending in a small bed boxed by a clipped hedge. On its right white house walls, a white sill/bench and a first-floor balcony with an iron rail. The lane turns right at the far end by bougainvillea.",
+    "originalUrl": "https://drive.google.com/file/d/1sBf-_QaL7eD_c-o1bKzOjohaVpfYA5_1/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
   }
 }

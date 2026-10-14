@@ -118,21 +118,28 @@
     ]
    },
    "docs": [
+    "docs/ELENA_NORTH.md",
     "docs/STREET_LAYOUT.md",
     "docs/TERRAIN.md"
    ],
    "data": [
+    "data/elena_north.json",
+    "data/cervantes_elena_steps.json",
     "data/street_layout.json",
     "proposals/calle-elena.json",
     "data/terrain.json"
    ],
    "src": [
+    "src/elena-north.ts",
+    "src/ramp-steps.ts",
     "src/terrain.ts",
     "src/layout-routes.ts"
    ],
    "notes": [
-    "IMG_2254 shows the sign CALLE ELENA 18.",
-    "IMG_2286: a smooth ramp beside a separate flight of shallow steps at the Elena/Cervantes junction. The steps are not yet matched in game geometry (docs/LAYOUT_ACCURACY.md).",
+    "IMG_2254 shows the sign CALLE ELENA 18-30.",
+    "Built 2026-10-14 (docs/ELENA_NORTH.md): arched gateway to the north pool lawn, east patio wall, west planting strip, magnolia bed, two hedged beds with pollarded trees, two planter boxes, and the three steps beside the Cervantes ramp.",
+    "The Cervantes/Elena rise is 0.5 m over about 3 m (steps beside a ramp, IMG_2286), not 7 m.",
+    "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds, the gated entry west of the covered walkway (IMG_2361).",
     "IMG_2286 GPS is ±14 m: do not place geometry from its pin alone."
    ]
   },
@@ -148,22 +155,26 @@
    "docs": [
     "docs/DALI_CERVANTES.md",
     "docs/STREET_LAYOUT.md",
-    "docs/FRONTAGE_DIVISIONS.md"
+    "docs/FRONTAGE_DIVISIONS.md",
+    "docs/ELENA_NORTH.md"
    ],
    "data": [
     "data/dali_cervantes.json",
     "data/dali_cervantes_threshold.json",
     "data/cervantes_patio_walls.json",
     "data/passages.json",
-    "data/frontage_divisions.json"
+    "data/frontage_divisions.json",
+    "data/cervantes_elena_steps.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
     "src/dali-threshold.ts",
-    "src/frontages.ts"
+    "src/frontages.ts",
+    "src/ramp-steps.ts"
    ],
    "notes": [
-    "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275). The 0.4 m ramp rise is an estimate, not measured.",
+    "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
+    "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
     "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation."
    ]
   },

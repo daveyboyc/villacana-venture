@@ -413,7 +413,9 @@
    "z": 52.3,
    "heading": 58
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-tree-bed-2"
+  ]
  },
  {
   "id": "IMG_2198.jpg",
@@ -438,7 +440,11 @@
    "z": 49.8,
    "heading": 328
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-tree-bed-2",
+   "elena_north.json:elena-north-planter-box-1",
+   "elena_north.json:elena-north-planter-box-2"
+  ]
  },
  {
   "id": "IMG_2199.jpg",
@@ -463,7 +469,9 @@
    "z": 48.2,
    "heading": 359
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-tree-bed-1"
+  ]
  },
  {
   "id": "IMG_2200.jpg",
@@ -488,7 +496,10 @@
    "z": 47.6,
    "heading": 346
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-tree-bed-2"
+  ]
  },
  {
   "id": "IMG_2201.jpg",
@@ -513,7 +524,11 @@
    "z": 46.4,
    "heading": 328
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-planter-box-1",
+   "elena_north.json:elena-north-planter-box-2"
+  ]
  },
  {
   "id": "IMG_2202.jpg",
@@ -540,7 +555,9 @@
    "heading": 245
   },
   "citedBy": [
-   "building:6265201UF1366N_part5"
+   "building:6265201UF1366N_part5",
+   "elena_north.json:elena-north-gateway",
+   "elena_north.json:elena-north-planter-west"
   ]
  },
  {
@@ -1790,6 +1807,7 @@
    "accuracy": 4.8
   },
   "citedBy": [
+   "steps:cervantes-elena-steps",
    "ramp:cervantes-elena-ramp"
   ]
  },
@@ -2427,7 +2445,10 @@
    "heading": 245,
    "accuracy": 14.0
   },
-  "citedBy": []
+  "citedBy": [
+   "steps:cervantes-elena-steps",
+   "ramp:cervantes-elena-ramp"
+  ]
  },
  {
   "id": "IMG_2287.jpg",
@@ -2810,6 +2831,34 @@
   "citedBy": []
  },
  {
+  "id": "IMG_2345.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2345.jpg",
+  "title": "Pintor Picasso: service road, utility sheds and bins",
+  "shows": [
+   "picasso"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "levels"
+  ],
+  "note": null,
+  "observation": "Looking north-west up the asphalt service road off Calle Pintor Picasso. Left: a dark slatted fence, then low white utility sheds with brown doors and a meter box, then a long plain white boundary wall. Right: a low white building on a rough stone plinth with black tubular railings and a short concrete ramp, green and grey recycling bins, and large plane trees. Palms and the mountains beyond.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1erDqbTnA6AY154GoieIxUfI8mvb5lecH/view?usp=drivesdk",
+  "camera": {
+   "x": -14.4,
+   "z": 48.2,
+   "heading": 318,
+   "accuracy": 5.5,
+   "altitude": 8.1
+  },
+  "citedBy": []
+ },
+ {
   "id": "IMG_2360.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2360.jpg",
@@ -2895,7 +2944,9 @@
    "accuracy": 4.7,
    "altitude": 10.8
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-magnolia-bed"
+  ]
  },
  {
   "id": "IMG_2363.jpg",
@@ -2923,7 +2974,72 @@
    "accuracy": 4.7,
    "altitude": 11.6
   },
-  "citedBy": []
+  "citedBy": [
+   "elena_north.json:elena-north-gateway",
+   "elena_north.json:elena-north-patio-east",
+   "elena_north.json:elena-north-planter-west"
+  ]
+ },
+ {
+  "id": "IMG_2364.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2364.jpg",
+  "title": "Roof by Elena: barrel-tile lean-to over a magnolia bed",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": "From a roof edge looking south-east: a mono-pitch roof of lichen-mottled barrel tiles drops beside a tall dense magnolia-like shrub. Beyond: a two-storey white front with arched shuttered windows, a small barrel-tile canopy over a balcony and magenta bougainvillea.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1jhrq_GRFfbAq93WMgebeNPGvVsevTTLo/view?usp=drivesdk",
+  "camera": {
+   "x": -156.2,
+   "z": 33.4,
+   "heading": 137,
+   "accuracy": 4.7,
+   "altitude": 11.6
+  },
+  "citedBy": [
+   "elena_north.json:elena-north-magnolia-bed"
+  ]
+ },
+ {
+  "id": "IMG_2365.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2365.jpg",
+  "title": "Roof by Elena: looking down on the Elena north lane and its planted bed",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting",
+   "materials"
+  ],
+  "note": "Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it.",
+  "observation": "Almost straight down onto Calle Elena north, looking south-south-east: a straight square-tiled terracotta lane about 1.5 m wide with a narrow white edging kerb. On its left a raised planting bed of tall magnolia-like shrubs edged with strap-leaved plants, ending in a small bed boxed by a clipped hedge. On its right white house walls, a white sill/bench and a first-floor balcony with an iron rail. The lane turns right at the far end by bougainvillea.",
+  "taken": "2026-10-14",
+  "originalUrl": "https://drive.google.com/file/d/1sBf-_QaL7eD_c-o1bKzOjohaVpfYA5_1/view?usp=drivesdk",
+  "camera": {
+   "x": -152.5,
+   "z": 38.3,
+   "heading": 148,
+   "accuracy": 4.3,
+   "altitude": 13.1
+  },
+  "citedBy": [
+   "elena_north.json:elena-north-magnolia-bed",
+   "elena_north.json:elena-north-tree-bed-1"
+  ]
  },
  {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",

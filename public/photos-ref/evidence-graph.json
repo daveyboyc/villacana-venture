@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "7cba1fbaef01a6fb96152acfe14ab7fb13e054cb547f7c7fc4cacc2a576e741c",
+ "inputDigest": "346bdb18f59e8622161ff141610a2c07112c94f12c534e5c8d133a51ac323dac",
  "summary": {
   "unplaced": 1,
   "needs-review": 86,
-  "suggested": 24,
-  "photos": 111,
-  "features": 280,
-  "photosCitedByModel": 18,
-  "modelFeaturesWithPhotoCitations": 22
+  "suggested": 27,
+  "photos": 114,
+  "features": 289,
+  "photosCitedByModel": 28,
+  "modelFeaturesWithPhotoCitations": 31
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2027,13 +2027,107 @@
    ]
   },
   {
+   "id": "elena_north.json:elena-north-gateway",
+   "name": "Elena north · arched gateway to the north pool lawn",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg",
+    "IMG_2202.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-patio-east",
+   "name": "Elena north · patio wall, east side",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-planter-west",
+   "name": "Elena north · planting strip, west side",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg",
+    "IMG_2202.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-magnolia-bed",
+   "name": "Elena north · magnolia bed",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2365.jpg",
+    "IMG_2364.jpg",
+    "IMG_2362.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-tree-bed-1",
+   "name": "Elena north · hedged bed with pollarded tree",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2365.jpg",
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-tree-bed-2",
+   "name": "Elena north · second hedged bed",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2197.jpg",
+    "IMG_2198.jpg",
+    "IMG_2200.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-planter-box-1",
+   "name": "Elena north · white planter box",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2201.jpg",
+    "IMG_2198.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-planter-box-2",
+   "name": "Elena north · white planter box",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2201.jpg",
+    "IMG_2198.jpg"
+   ]
+  },
+  {
+   "id": "steps:cervantes-elena-steps",
+   "name": "Cervantes / Elena · steps beside the ramp",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2286.jpg",
+    "IMG_2262.jpg"
+   ]
+  },
+  {
    "id": "ramp:cervantes-elena-ramp",
    "name": "Cervantes / Elena ramp",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2262.jpg",
-    "IMG_2265.jpg"
+    "IMG_2265.jpg",
+    "IMG_2286.jpg"
    ]
   },
   {
@@ -2797,6 +2891,13 @@
    "status": "suggested"
   },
   {
+   "id": "photo:IMG_2345.jpg",
+   "kind": "photo",
+   "name": "Pintor Picasso: service road, utility sheds and bins",
+   "file": "IMG_2345.jpg",
+   "status": "suggested"
+  },
+  {
    "id": "photo:IMG_2360.jpg",
    "kind": "photo",
    "name": "Roof by Elena: looking east-north-east along Cervantes",
@@ -2822,6 +2923,20 @@
    "kind": "photo",
    "name": "Roof by Elena: looking down the lane to the north pool lawn gate",
    "file": "IMG_2363.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2364.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: barrel-tile lean-to over a magnolia bed",
+   "file": "IMG_2364.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2365.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking down on the Elena north lane and its planted bed",
+   "file": "IMG_2365.jpg",
    "status": "suggested"
   }
  ],
@@ -3214,6 +3329,12 @@
    "angleOffset": 32.8
   },
   {
+   "from": "photo:IMG_2197.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2198.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -3251,6 +3372,24 @@
    "relation": "possibly-in-view",
    "distance": 29.1,
    "angleOffset": 28.0
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "elena_north.json:elena-north-planter-box-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2198.jpg",
+   "to": "elena_north.json:elena-north-planter-box-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2199.jpg",
@@ -3292,6 +3431,12 @@
    "angleOffset": 2.6
   },
   {
+   "from": "photo:IMG_2199.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2200.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -3322,6 +3467,18 @@
    "relation": "possibly-in-view",
    "distance": 42.2,
    "angleOffset": 10.6
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2201.jpg",
@@ -3363,6 +3520,24 @@
    "angleOffset": 30.3
   },
   {
+   "from": "photo:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-planter-box-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-planter-box-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2202.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -3392,6 +3567,18 @@
   {
    "from": "photo:IMG_2202.jpg",
    "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "elena_north.json:elena-north-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2202.jpg",
+   "to": "elena_north.json:elena-north-planter-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -4695,6 +4882,12 @@
   },
   {
    "from": "photo:IMG_2262.jpg",
+   "to": "steps:cervantes-elena-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
    "to": "ramp:cervantes-elena-ramp",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5447,6 +5640,18 @@
    "angleOffset": 29.9
   },
   {
+   "from": "photo:IMG_2286.jpg",
+   "to": "steps:cervantes-elena-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "ramp:cervantes-elena-ramp",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2287.jpg",
    "to": "street:elena-south",
    "relation": "camera-nearby",
@@ -5791,6 +5996,12 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2345.jpg",
+   "to": "street:picasso",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
    "from": "photo:IMG_2360.jpg",
    "to": "building:6265401UF1366N_part2",
    "relation": "possibly-in-view",
@@ -5846,6 +6057,12 @@
    "angleOffset": 17.2
   },
   {
+   "from": "photo:IMG_2362.jpg",
+   "to": "elena_north.json:elena-north-magnolia-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2363.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -5864,6 +6081,68 @@
    "relation": "possibly-in-view",
    "distance": 41.5,
    "angleOffset": 5.2
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-patio-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-planter-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2364.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2364.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 43.1,
+   "angleOffset": 10.1
+  },
+  {
+   "from": "photo:IMG_2364.jpg",
+   "to": "elena_north.json:elena-north-magnolia-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2365.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_2365.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 37.2,
+   "angleOffset": 23.7
+  },
+  {
+   "from": "photo:IMG_2365.jpg",
+   "to": "elena_north.json:elena-north-magnolia-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2365.jpg",
+   "to": "elena_north.json:elena-north-tree-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   }
  ]
 }

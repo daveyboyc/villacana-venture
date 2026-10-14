@@ -10,10 +10,10 @@ Start here. Pick the area you are working on and read its brief: it lists every 
 | Middle pool | 16 | 16 | [areas/middle-pool.md](areas/middle-pool.md) |
 | South pool | 6 | 6 | [areas/south-pool.md](areas/south-pool.md) |
 | Main pool | 1 | 1 | [areas/main-pool.md](areas/main-pool.md) |
-| Calle Elena | 28 | 28 | [areas/elena.md](areas/elena.md) |
+| Calle Elena | 30 | 30 | [areas/elena.md](areas/elena.md) |
 | Calle Miguel de Cervantes | 15 | 15 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 25 | 25 | [areas/dali.md](areas/dali.md) |
-| Pintor Picasso and the car park | 1 | 1 | [areas/picasso.md](areas/picasso.md) |
+| Pintor Picasso and the car park | 2 | 2 | [areas/picasso.md](areas/picasso.md) |
 | Loira, Bolivia, Alberto and Isabel | 0 | 0 | [areas/north-lanes.md](areas/north-lanes.md) |
 | Calle Eva | 6 | 6 | [areas/eva.md](areas/eva.md) |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 27 | 27 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
@@ -23,12 +23,12 @@ Start here. Pick the area you are working on and read its brief: it lists every 
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 96 | [topics/layout.md](topics/layout.md) |
-| Levels and slopes | 10 | [topics/levels.md](topics/levels.md) |
-| Facades and roofs | 37 | [topics/facades.md](topics/facades.md) |
-| Materials | 48 | [topics/materials.md](topics/materials.md) |
-| Planting | 34 | [topics/planting.md](topics/planting.md) |
+| Layout | 98 | [topics/layout.md](topics/layout.md) |
+| Levels and slopes | 11 | [topics/levels.md](topics/levels.md) |
+| Facades and roofs | 38 | [topics/facades.md](topics/facades.md) |
+| Materials | 51 | [topics/materials.md](topics/materials.md) |
+| Planting | 36 | [topics/planting.md](topics/planting.md) |
 | Signs | 9 | [topics/signage.md](topics/signage.md) |
 | Views | 24 | [topics/view.md](topics/view.md) |
 
-138 references: 138 reviewed, 0 with areas suggested only from the camera position.
+141 references: 141 reviewed, 0 with areas suggested only from the camera position.
