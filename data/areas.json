@@ -45,7 +45,8 @@
    ],
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
-    "Skip the glass safety fence round the pools (Dave, 2026-10-11)."
+    "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
+    "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path."
    ]
   },
   {
@@ -265,7 +266,10 @@
    "data": [
     "data/street_layout.json"
    ],
-   "src": []
+   "src": [],
+   "notes": [
+    "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights."
+   ]
   },
   {
    "id": "seaward-lanes",
@@ -330,6 +334,9 @@
    ],
    "src": [
     "src/seafront.ts"
+   ],
+   "notes": [
+    "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall about 1.2 m high, with a green mesh fence on top, holds the seafront houses above it. Not modelled yet."
    ]
   },
   {

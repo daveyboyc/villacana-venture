@@ -1574,5 +1574,55 @@
    "materials"
   ],
   "note": "Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it."
+ },
+ "IMG_2332.jpg": {
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials",
+   "planting"
+  ],
+  "note": "GPS ±14 m. Shows the glass pool fence, which Dave decided to skip."
+ },
+ "IMG_2339.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ]
+ },
+ "IMG_2340.jpg": {
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "signage"
+  ],
+  "note": "The middle pool east gate from Calle Eva; IMG_2244 shows it from inside."
+ },
+ "IMG_2350.jpg": {
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials",
+   "view"
+  ],
+  "note": "The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here."
  }
 }

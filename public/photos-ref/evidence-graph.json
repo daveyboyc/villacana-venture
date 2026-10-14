@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "346bdb18f59e8622161ff141610a2c07112c94f12c534e5c8d133a51ac323dac",
+ "inputDigest": "a06f40928436ec74bfe06f2001cef6452b9c65989384a427cf3fdc04c77712c3",
  "summary": {
   "unplaced": 1,
-  "needs-review": 86,
-  "suggested": 27,
-  "photos": 114,
+  "needs-review": 87,
+  "suggested": 30,
+  "photos": 118,
   "features": 289,
   "photosCitedByModel": 28,
   "modelFeaturesWithPhotoCitations": 31
@@ -2891,10 +2891,38 @@
    "status": "suggested"
   },
   {
+   "id": "photo:IMG_2332.jpg",
+   "kind": "photo",
+   "name": "Middle pool west side: path between the deck and a raised planter wall",
+   "file": "IMG_2332.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2339.jpg",
+   "kind": "photo",
+   "name": "Calle Eva: walled lawn corner with espaliered bougainvillea",
+   "file": "IMG_2339.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2340.jpg",
+   "kind": "photo",
+   "name": "Calle Eva: east gateway into the middle pool courtyard",
+   "file": "IMG_2340.jpg",
+   "status": "suggested"
+  },
+  {
    "id": "photo:IMG_2345.jpg",
    "kind": "photo",
    "name": "Pintor Picasso: service road, utility sheds and bins",
    "file": "IMG_2345.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2350.jpg",
+   "kind": "photo",
+   "name": "Paseo looking north-east: stamped walk, sandstone retaining wall",
+   "file": "IMG_2350.jpg",
    "status": "suggested"
   },
   {
@@ -5996,10 +6024,53 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2332.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 1.2
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 7.7
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 12.0
+  },
+  {
+   "from": "photo:IMG_2339.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2340.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
    "from": "photo:IMG_2345.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 2.0
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "building:6364801UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 31.8,
+   "angleOffset": 27.4
   },
   {
    "from": "photo:IMG_2360.jpg",

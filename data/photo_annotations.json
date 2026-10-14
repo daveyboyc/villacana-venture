@@ -156,5 +156,33 @@
     "originalUrl": "https://drive.google.com/file/d/1sBf-_QaL7eD_c-o1bKzOjohaVpfYA5_1/view?usp=drivesdk",
     "visualReview": "observed; geometry comparison pending",
     "streetHint": "elena-north"
+  },
+  "IMG_2332.HEIC": {
+    "title": "Middle pool west side: path between the deck and a raised planter wall",
+    "observation": "Looking north-north-west along the middle pool. A grey-brown crazy-paving path with a drain cover runs between the cream pool deck (behind the glass fence) and a raised white planter wall about 0.8 m high topped by a dense hedge with red flowers. Beyond: a lawn inside the glass fence, a white garden wall with a brown arched-top door, a small pergola entrance, clipped hedges and two-storey white houses with bougainvillea. GPS ±14 m, so the pin alone does not fix which lobe.",
+    "originalUrl": "https://drive.google.com/file/d/1KwI5Jbq64mdQOeLCbWBBAFY_9Mpvjfz4/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "areaHint": "middle-pool"
+  },
+  "IMG_2339.HEIC": {
+    "title": "Calle Eva: walled lawn corner with espaliered bougainvillea",
+    "observation": "A small lawn in the corner of two white garden walls, with bougainvillea trained flat along both walls, a green bollard light and a clipped shrub at the front. Square terracotta tiles with a grey border run along the near edge. Useful for wall planting and the bollard light.",
+    "originalUrl": "https://drive.google.com/file/d/1TOm6XQK_ftYnGPKXTPnxalTP0MW1tDdr/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "eva"
+  },
+  "IMG_2340.HEIC": {
+    "title": "Calle Eva: east gateway into the middle pool courtyard",
+    "observation": "A white gateway with square piers and a gently curved coping over a flat head, an open black iron gate, and a terracotta path with a drain leading through to the middle pool (glass fence, bird-of-paradise, hedges). A Comunidad Villacana notice and two blue dog-rule signs are on the right pier; white walls with planting run either side. Matches the gate seen from inside in IMG_2244.",
+    "originalUrl": "https://drive.google.com/file/d/1lgeErR2x4OEcK6WOLIdHNuFPitdrihkW/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "eva"
+  },
+  "IMG_2350.HEIC": {
+    "title": "Paseo looking north-east: stamped walk, sandstone retaining wall",
+    "observation": "The seafront promenade: pink-red stamped concrete about 3 m wide with a timber edge onto a strip of sandy, stony beach. On the landward side a yellow sandstone retaining wall about 1.2 m high carries a green mesh fence, with the white seafront houses (round tower with a tiled roof, balconies) standing above it. Slim white lamp posts, palms, the Barraka restaurant and the mountains in the distance. Shows the resort ground standing above the paseo here.",
+    "originalUrl": "https://drive.google.com/file/d/1lrCUJLmefu5MqtqXn6XVFV5QjUkl6U4q/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "areaHint": "area:paseo"
   }
 }

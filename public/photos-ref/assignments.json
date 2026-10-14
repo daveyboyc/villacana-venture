@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "346bdb18f59e8622161ff141610a2c07112c94f12c534e5c8d133a51ac323dac",
+ "inputDigest": "a06f40928436ec74bfe06f2001cef6452b9c65989384a427cf3fdc04c77712c3",
  "summary": {
   "unplaced": 1,
-  "needs-review": 86,
-  "suggested": 27,
-  "photos": 114,
+  "needs-review": 87,
+  "suggested": 30,
+  "photos": 118,
   "features": 289,
   "photosCitedByModel": 28,
   "modelFeaturesWithPhotoCitations": 31
@@ -4519,6 +4519,98 @@
    }
   },
   {
+   "file": "IMG_2332.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Observed camera area disagrees with the GPS/map area candidates"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.2
+    },
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 7.7
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 12.0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -135.1,
+    "z": 90.9,
+    "basis": "phone location",
+    "reportedAccuracy": 14.0,
+    "heading": 347,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2339.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 2.6
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -111.4,
+    "z": 77.3,
+    "basis": "phone location",
+    "reportedAccuracy": 3.9,
+    "heading": 273,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2340.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 2.4
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -112.7,
+    "z": 78.2,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 228,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2345.jpg",
    "status": "suggested",
    "reasons": [
@@ -4541,6 +4633,38 @@
     "basis": "phone location",
     "reportedAccuracy": 5.5,
     "heading": 318,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2350.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 31.8,
+     "angleOffset": 27.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -77.3,
+    "z": 201.6,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 48,
     "headingBasis": "EXIF true north"
    }
   },

@@ -856,10 +856,38 @@
    "viewpoint": "ground"
   },
   {
+   "id": "ref:IMG_2332.jpg",
+   "kind": "phone-photo",
+   "name": "Middle pool west side: path between the deck and a raised planter wall",
+   "path": "public/photos-ref/IMG_2332.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2339.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Eva: walled lawn corner with espaliered bougainvillea",
+   "path": "public/photos-ref/IMG_2339.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2340.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Eva: east gateway into the middle pool courtyard",
+   "path": "public/photos-ref/IMG_2340.jpg",
+   "viewpoint": "ground"
+  },
+  {
    "id": "ref:IMG_2345.jpg",
    "kind": "phone-photo",
    "name": "Pintor Picasso: service road, utility sheds and bins",
    "path": "public/photos-ref/IMG_2345.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2350.jpg",
+   "kind": "phone-photo",
+   "name": "Paseo looking north-east: stamped walk, sandstone retaining wall",
+   "path": "public/photos-ref/IMG_2350.jpg",
    "viewpoint": "ground"
   },
   {
@@ -1936,8 +1964,38 @@
    "relation": "shows"
   },
   {
+   "from": "ref:IMG_2332.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2339.jpg",
+   "to": "area:eva",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2340.jpg",
+   "to": "area:eva",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2340.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
    "from": "ref:IMG_2345.jpg",
    "to": "area:picasso",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "area:barraka-beach",
    "relation": "shows"
   },
   {
@@ -3126,6 +3184,51 @@
    "relation": "useful-for"
   },
   {
+   "from": "ref:IMG_2332.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2332.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2332.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2332.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2339.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2339.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2340.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2340.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2340.jpg",
+   "to": "topic:signage",
+   "relation": "useful-for"
+  },
+  {
    "from": "ref:IMG_2345.jpg",
    "to": "topic:layout",
    "relation": "useful-for"
@@ -3138,6 +3241,26 @@
   {
    "from": "ref:IMG_2345.jpg",
    "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "topic:view",
    "relation": "useful-for"
   },
   {
