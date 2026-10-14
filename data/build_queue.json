@@ -1,5 +1,5 @@
 {
- "about": "Build tasks for agents. One task = one branch = one PR. Fields: area (data/areas.json id), priority 1 (first) to 3, kind, photos to build from (public/photos-ref), build (what to make), avoid (what not to do), accept (checks that must pass, beyond the standard set in docs/HANDOVER.md), dependsOn (task ids), status open | in-progress | done, owner (agent or person working on it). scripts/build_references.py turns this into refs/QUEUE.md, per-area task lists, graph nodes and issue bodies in refs/issues/.",
+ "about": "Build tasks for agents. One task = one branch = one PR. Fields: area (data/areas.json id), priority 1 (first) to 3, kind, photos to build from (public/photos-ref), build (what to make), avoid (what not to do), accept (checks that must pass, beyond the standard set in docs/HANDOVER.md), dependsOn (task ids), status open | in-progress | done, owner (agent or person working on it), issue (GitHub issue number in daveyboyc/villacana-venture; close it from the task's PR). scripts/build_references.py turns this into refs/QUEUE.md, per-area task lists, graph nodes and issue bodies in refs/issues/.",
  "tasks": [
   {
    "id": "elena-garden-door",
@@ -19,7 +19,8 @@
     "layout browser test walks into the path and stops at the door"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 34
   },
   {
    "id": "elena-east-patios",
@@ -41,7 +42,8 @@
    "dependsOn": [
     "elena-garden-door"
    ],
-   "status": "open"
+   "status": "open",
+   "issue": 38
   },
   {
    "id": "elena-gated-entry",
@@ -61,7 +63,8 @@
     "render from IMG_2203"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 46
   },
   {
    "id": "cervantes-door-steps",
@@ -80,7 +83,8 @@
     "layout test still climbs the ramp steps"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 33
   },
   {
    "id": "junction-lawns",
@@ -102,7 +106,8 @@
     "render from IMG_2329"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 45
   },
   {
    "id": "cervantes-east-hedge",
@@ -120,7 +125,8 @@
     "check_cervantes_patio_walls.py or a new check passes"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 43
   },
   {
    "id": "cervantes-north-patios",
@@ -140,7 +146,8 @@
     "render from IMG_2368 with --high"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 44
   },
   {
    "id": "middle-pool-sw-steps",
@@ -159,7 +166,8 @@
     "check_middle_pool.py extended"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 31
   },
   {
    "id": "middle-pool-south-gate",
@@ -180,7 +188,8 @@
    "dependsOn": [
     "middle-pool-sw-steps"
    ],
-   "status": "open"
+   "status": "open",
+   "issue": 39
   },
   {
    "id": "middle-pool-north-entrance",
@@ -201,7 +210,8 @@
     "check_middle_pool.py extended"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 48
   },
   {
    "id": "eva-walled-lawn",
@@ -221,7 +231,8 @@
     "render from IMG_2339"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 47
   },
   {
    "id": "paseo-retaining-wall",
@@ -264,7 +275,8 @@
    "dependsOn": [
     "paseo-retaining-wall"
    ],
-   "status": "open"
+   "status": "open",
+   "issue": 37
   },
   {
    "id": "barraka-boardwalk",
@@ -284,7 +296,8 @@
     "render from IMG_2347"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 42
   },
   {
    "id": "shoreline-check",
@@ -305,7 +318,8 @@
     "note added to docs/SEAFRONT.md"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 32
   },
   {
    "id": "north-pool-garden-walls",
@@ -326,7 +340,8 @@
     "render with --high from IMG_2204"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 36
   },
   {
    "id": "seaward-lanes-paving",
@@ -347,7 +362,8 @@
     "render from IMG_2235"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 51
   },
   {
    "id": "picasso-service-road",
@@ -364,7 +380,8 @@
     "render from IMG_2345"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 50
   },
   {
    "id": "paseo-retrace-line",
@@ -385,7 +402,8 @@
     "paseo still walks end to end"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 35
   },
   {
    "id": "paseo-east-end-height",
@@ -406,7 +424,8 @@
    "dependsOn": [
     "paseo-retrace-line"
    ],
-   "status": "open"
+   "status": "open",
+   "issue": 40
   },
   {
    "id": "paseo-house-clearance",
@@ -426,7 +445,8 @@
    "dependsOn": [
     "paseo-retrace-line"
    ],
-   "status": "open"
+   "status": "open",
+   "issue": 41
   },
   {
    "id": "paseo-details",
@@ -446,7 +466,8 @@
     "render from IMG_2352"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 49
   }
  ]
 }

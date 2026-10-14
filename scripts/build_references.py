@@ -170,7 +170,8 @@ def task_line(t,depth):
     photos=', '.join(f'[{Path(p).stem}]({up}../public/photos-ref/{p})' for p in t['photos'])
     deps=f" (after {', '.join(t['dependsOn'])})" if t.get('dependsOn') else ''
     owner=f" · {t['owner']}" if t.get('owner') else ''
-    return f"| P{t['priority']} | `{t['id']}` | {t['title']}{deps} | {t.get('status','open')}{owner} | {photos} |"
+    issue=f" [#{t['issue']}](https://github.com/daveyboyc/villacana-venture/issues/{t['issue']})" if t.get('issue') else ''
+    return f"| P{t['priority']} | `{t['id']}`{issue} | {t['title']}{deps} | {t.get('status','open')}{owner} | {photos} |"
 
 def queue_page(queue,spec):
     names={a['id']:a['name'] for a in spec['areas']}
@@ -350,7 +351,7 @@ def main():
     edges+=[{'from':f['id'],'to':'ref:'+p,'relation':'cites'} for f in features for p in f['photos']]
     edges+=[{'from':f['id'],'to':'area:'+a,'relation':'in-area'} for f in features for a in f['areas']]
     edges+=[{'from':key(e),'to':m,'relation':'looks-at','basis':e['looksAtBasis']} for e in catalog for m in e.get('looksAtFeatures',[])]
-    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open')} for t in queue]
+    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open'),**({'issue':t['issue']} if t.get('issue') else {})} for t in queue]
     edges+=[{'from':'task:'+t['id'],'to':'area:'+t['area'],'relation':'in-area'} for t in queue]
     edges+=[{'from':'task:'+t['id'],'to':'ref:'+p,'relation':'builds-from'} for t in queue for p in t['photos']]
     edges+=[{'from':'task:'+t['id'],'to':'task:'+d,'relation':'depends-on'} for t in queue for d in t.get('dependsOn',[])]

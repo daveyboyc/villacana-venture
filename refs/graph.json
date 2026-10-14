@@ -1490,77 +1490,88 @@
    "kind": "build-task",
    "name": "Elena north: path and garden door between the two hedged beds",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 34
   },
   {
    "id": "task:elena-east-patios",
    "kind": "build-task",
    "name": "Elena north: private patios east of the beds",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 38
   },
   {
    "id": "task:elena-gated-entry",
    "kind": "build-task",
    "name": "Elena: gated tiled entry west of the covered walkway",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 46
   },
   {
    "id": "task:cervantes-door-steps",
    "kind": "build-task",
    "name": "Cervantes: two steps up to a front door west of the Elena junction",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 33
   },
   {
    "id": "task:junction-lawns",
    "kind": "build-task",
    "name": "Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 45
   },
   {
    "id": "task:cervantes-east-hedge",
    "kind": "build-task",
    "name": "Cervantes east of Elena: white kerb wall and plumbago hedge",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 43
   },
   {
    "id": "task:cervantes-north-patios",
    "kind": "build-task",
    "name": "Walled patios along Cervantes from the roof views",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 44
   },
   {
    "id": "task:middle-pool-sw-steps",
    "kind": "build-task",
    "name": "Middle pool south-west: stone steps and the gateway at their top",
    "priority": 1,
-   "status": "open"
+   "status": "open",
+   "issue": 31
   },
   {
    "id": "task:middle-pool-south-gate",
    "kind": "build-task",
    "name": "Middle pool south: iron double gate under a pergola frame",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 39
   },
   {
    "id": "task:middle-pool-north-entrance",
    "kind": "build-task",
    "name": "Middle pool north-west: curved planter end, white steps, brown-door wall",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 48
   },
   {
    "id": "task:eva-walled-lawn",
    "kind": "build-task",
    "name": "Calle Eva: walled lawn corner with espaliered bougainvillea",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 47
   },
   {
    "id": "task:paseo-retaining-wall",
@@ -1574,70 +1585,80 @@
    "kind": "build-task",
    "name": "South pool: lawn level above the paseo and its seaward wall",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 37
   },
   {
    "id": "task:barraka-boardwalk",
    "kind": "build-task",
    "name": "Barraka Beach: boardwalk, sign planter and parasols",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 42
   },
   {
    "id": "task:shoreline-check",
    "kind": "build-task",
    "name": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 32
   },
   {
    "id": "task:north-pool-garden-walls",
    "kind": "build-task",
    "name": "North pool: curved garden walls and raised patios",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 36
   },
   {
    "id": "task:seaward-lanes-paving",
    "kind": "build-task",
    "name": "Seaward lanes: octagonal paving and covered passages",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 51
   },
   {
    "id": "task:picasso-service-road",
    "kind": "build-task",
    "name": "Pintor Picasso: service road, utility sheds and bins",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 50
   },
   {
    "id": "task:paseo-retrace-line",
    "kind": "build-task",
    "name": "Paseo: re-trace the promenade line from the retaining wall",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 35
   },
   {
    "id": "task:paseo-east-end-height",
    "kind": "build-task",
    "name": "Paseo east end: wall height towards the big pool",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 40
   },
   {
    "id": "task:paseo-house-clearance",
    "kind": "build-task",
    "name": "Paseo east: registry house 6465801UF1366N_part5 blocks the walk",
    "priority": 2,
-   "status": "open"
+   "status": "open",
+   "issue": 41
   },
   {
    "id": "task:paseo-details",
    "kind": "build-task",
    "name": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 49
   }
  ],
  "edges": [

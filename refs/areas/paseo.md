@@ -28,10 +28,10 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `paseo-east-end-height` | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | open | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
-| P2 | `paseo-house-clearance` | Paseo east: registry house 6465801UF1366N_part5 blocks the walk (after paseo-retrace-line) | open | [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
-| P2 | `paseo-retrace-line` | Paseo: re-trace the promenade line from the retaining wall | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
-| P3 | `paseo-details` | Paseo: hedges behind the fence, windbreak cloth, lamp posts | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
+| P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | open | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
+| P2 | `paseo-house-clearance` [#41](https://github.com/daveyboyc/villacana-venture/issues/41) | Paseo east: registry house 6465801UF1366N_part5 blocks the walk (after paseo-retrace-line) | open | [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
+| P2 | `paseo-retrace-line` [#35](https://github.com/daveyboyc/villacana-venture/issues/35) | Paseo: re-trace the promenade line from the retaining wall | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
+| P3 | `paseo-details` [#49](https://github.com/daveyboyc/villacana-venture/issues/49) | Paseo: hedges behind the fence, windbreak cloth, lamp posts | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
 
 ## Built from these photos
 

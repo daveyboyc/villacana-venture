@@ -27,7 +27,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P3 | `eva-walled-lawn` | Calle Eva: walled lawn corner with espaliered bougainvillea | open | [IMG_2339](../../public/photos-ref/IMG_2339.jpg), [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2337](../../public/photos-ref/IMG_2337.jpg), [IMG_2338](../../public/photos-ref/IMG_2338.jpg) |
+| P3 | `eva-walled-lawn` [#47](https://github.com/daveyboyc/villacana-venture/issues/47) | Calle Eva: walled lawn corner with espaliered bougainvillea | open | [IMG_2339](../../public/photos-ref/IMG_2339.jpg), [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2337](../../public/photos-ref/IMG_2337.jpg), [IMG_2338](../../public/photos-ref/IMG_2338.jpg) |
 
 ## Built from these photos
 

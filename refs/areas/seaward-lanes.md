@@ -21,7 +21,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P3 | `seaward-lanes-paving` | Seaward lanes: octagonal paving and covered passages | open | [IMG_2235](../../public/photos-ref/IMG_2235.jpg), [IMG_2237](../../public/photos-ref/IMG_2237.jpg), [IMG_2239](../../public/photos-ref/IMG_2239.jpg), [IMG_2185](../../public/photos-ref/IMG_2185.jpg), [IMG_2190](../../public/photos-ref/IMG_2190.jpg) |
+| P3 | `seaward-lanes-paving` [#51](https://github.com/daveyboyc/villacana-venture/issues/51) | Seaward lanes: octagonal paving and covered passages | open | [IMG_2235](../../public/photos-ref/IMG_2235.jpg), [IMG_2237](../../public/photos-ref/IMG_2237.jpg), [IMG_2239](../../public/photos-ref/IMG_2239.jpg), [IMG_2185](../../public/photos-ref/IMG_2185.jpg), [IMG_2190](../../public/photos-ref/IMG_2190.jpg) |
 
 ## Reviewed references
 

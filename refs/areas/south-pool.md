@@ -22,7 +22,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `south-pool-seaward-level` | South pool: lawn level above the paseo and its seaward wall (after paseo-retaining-wall) | open | [IMG_2349](../../public/photos-ref/IMG_2349.jpg), [IMG_2188](../../public/photos-ref/IMG_2188.jpg) |
+| P2 | `south-pool-seaward-level` [#37](https://github.com/daveyboyc/villacana-venture/issues/37) | South pool: lawn level above the paseo and its seaward wall (after paseo-retaining-wall) | open | [IMG_2349](../../public/photos-ref/IMG_2349.jpg), [IMG_2188](../../public/photos-ref/IMG_2188.jpg) |
 
 ## Reviewed references
 

@@ -21,7 +21,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P3 | `picasso-service-road` | Pintor Picasso: service road, utility sheds and bins | open | [IMG_2345](../../public/photos-ref/IMG_2345.jpg) |
+| P3 | `picasso-service-road` [#50](https://github.com/daveyboyc/villacana-venture/issues/50) | Pintor Picasso: service road, utility sheds and bins | open | [IMG_2345](../../public/photos-ref/IMG_2345.jpg) |
 
 ## Reviewed references
 

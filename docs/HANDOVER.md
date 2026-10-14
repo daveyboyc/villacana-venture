@@ -119,7 +119,9 @@ Then add any build work the photos reveal to `data/build_queue.json`.
 
 ## Splitting the queue into issues
 
-Each open task has a body in `refs/issues/<task-id>.md` with the area, the
+The open tasks are filed as GitHub issues #31-#51 (each task's `issue` field
+in `data/build_queue.json`); close the issue from the task's PR with
+`Closes #<n>`. For new tasks: each open task has a body in `refs/issues/<task-id>.md` with the area, the
 photos (with pin accuracy and subject), what to build, what not to do and a
 checklist. File one issue per task with that body and the task title, label it
 with its area and priority, and reference the task id in the PR that closes it.
