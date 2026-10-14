@@ -25,21 +25,21 @@ Where lanes, walls, openings, patios and lawns are and how they connect.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. |
+| [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up _Used by: middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. _Used by: middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2244.jpg](../../public/photos-ref/IMG_2244.jpg) | ground | layout | Iron gate opening into the middle pool courtyard _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | `villacana-reference/photos/02-pool-from-upper-floor-2020-12.png` | upper-floor | layout, facades, materials, view | Middle pool from an upper floor, December 2020 **Note:** Shows a glass safety fence; Dave decided to skip it. |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane |
 | `villacana-reference/photos/09-middle-pool-through-iron-gate.jpg` | ground | layout, materials, planting | Middle pool through an iron gate from a tiled lane |
 | [IMG_2192.jpg](../../public/photos-ref/IMG_2192.jpg) | ground | layout, materials | Crazy-paving path between hedges into the middle pool lawn |
 | [IMG_2193.jpg](../../public/photos-ref/IMG_2193.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind |
 | [IMG_2194.jpg](../../public/photos-ref/IMG_2194.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind (second shot) |
-| [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up |
-| [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. |
-| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate |
 | [IMG_2341.jpg](../../public/photos-ref/IMG_2341.jpg) | ground | layout, planting | Curved low white wall with hedge, crazy paving and trees **Note:** GPS ±47 m: location uncertain, probably the middle pool courtyard. |
 | `villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg` | ground | layout, materials | Terracotta-tiled lane to an arched white gateway into the middle pool courtyard |
-| [IMG_2244.jpg](../../public/photos-ref/IMG_2244.jpg) | ground | layout | Iron gate opening into the middle pool courtyard |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
-| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. |
+| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 
 ## South pool
 
@@ -161,7 +161,7 @@ Where lanes, walls, openings, patios and lawns are and how they connect.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. |
+| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |

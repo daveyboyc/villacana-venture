@@ -17,7 +17,7 @@ const path = require("node:path");
   const turn = (JSON.parse(fs.readFileSync("public/map/skeleton.json", "utf8")).viewRotation * Math.PI) / 180;
   const turned = (x, z) => `${(x * Math.cos(turn) - z * Math.sin(turn)).toFixed(2)},${(x * Math.sin(turn) + z * Math.cos(turn)).toFixed(2)}`;
   const { createServer } = await import("vite");
-  const server = await createServer({ server: { host: "127.0.0.1", port: 0 }, logLevel: "error" });
+  const server = await createServer({ server: { host: "127.0.0.1", port: 20000 + Math.floor(Math.random() * 20000), strictPort: false }, logLevel: "error" });
   await server.listen();
   const site = "http://127.0.0.1:" + server.httpServer.address().port, out = path.join("layout-checks.local", "views");
   fs.mkdirSync(out, { recursive: true });

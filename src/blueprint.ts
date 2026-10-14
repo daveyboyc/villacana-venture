@@ -5,6 +5,8 @@ import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,D
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
 import elenaNorth from "../data/elena_north.json";
+import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
+import middlePool from "../data/middle_pool.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
 import kinds from "../data/kinds.json";
@@ -48,6 +50,7 @@ function loadEdits(): Edits {
 
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
+  suppressInMiddlePoolReview(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
   const rot = skeleton.viewRotation;
 
@@ -80,6 +83,16 @@ async function boot(): Promise<void> {
   const gate=gatewayParts();
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
   frontages.append(elena);
+  // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
+  const middle=el("g",{id:"middle-pool-features"});
+  const mtitled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);middle.append(node);};
+  const line=(points:Vec2[],stroke:string,width:number,id:string,text:string)=>mtitled(el("path",{d:"M"+points.map(p=>p.join(" ")).join("L"),fill:"none",stroke,"stroke-width":width,"data-middle-id":id}),text);
+  mtitled(el("path",{d:path(middlePoolPlanter.ring),fill:"#405b3d",stroke:"#fffdf5","stroke-width":.14,"data-middle-id":middlePoolPlanter.id}),`${middlePoolPlanter.name}: ${middlePoolPlanter.trust} · ${middlePoolPlanter.evidence.join(", ")}`);
+  const mg=middleGatewayFrame(),gw=middlePool.gateway,gateText=`${gw.name}: ${gw.trust} · ${gw.evidence.join(", ")}`;
+  for(const part of [mg.nw,mg.se])line(part,"#fffdf5",gw.thickness,gw.id,gateText);
+  for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
+  line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
+  frontages.append(middle);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});
   levels.append(el("path",{d:path(lowerPoolRing),fill:"#7dcbd1","fill-opacity":0.12,stroke:"#596d78","stroke-width":0.4,"stroke-dasharray":"1 1"}));

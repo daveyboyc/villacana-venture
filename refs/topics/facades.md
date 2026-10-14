@@ -27,7 +27,7 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 | [IMG_2194.jpg](../../public/photos-ref/IMG_2194.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind (second shot) |
 | [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | materials, facades | Middle pool south: raised white planter with a blue tile panel |
 | `villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg` | ground | planting, facades | Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk |
-| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. |
+| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 
 ## South pool
 
@@ -77,7 +77,7 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. |
+| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade |
 

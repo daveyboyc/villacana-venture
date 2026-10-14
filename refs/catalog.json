@@ -2007,7 +2007,9 @@
    "altitude": 5.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-east-gateway"
+  ],
   "looksAt": [
    -118.4,
    85.3
@@ -2043,7 +2045,9 @@
    "altitude": 5.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ],
   "looksAt": [
    -125.4,
    94.5
@@ -2086,7 +2090,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:elena-south",
-   "street:eva"
+   "street:eva",
+   "middle_pool.json:middle-pool-west-planter"
   ]
  },
  {
@@ -2122,6 +2127,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:elena-south",
+   "middle_pool.json:middle-pool-west-planter",
    "street:eva"
   ]
  },
@@ -4119,7 +4125,9 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ],
   "looksAt": [
    -130.4,
    80.9
@@ -4155,7 +4163,9 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ],
   "looksAt": [
    -136.4,
    85.1
@@ -4191,7 +4201,9 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-planter"
+  ],
   "looksAt": [
    -137.2,
    104.2
@@ -4411,7 +4423,9 @@
    77.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "middle_pool.json:middle-pool-east-gateway"
+  ]
  },
  {
   "id": "IMG_2340.jpg",
@@ -4441,14 +4455,17 @@
    "altitude": 5.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-east-gateway"
+  ],
   "looksAt": [
    -117.2,
    82.2
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:eva"
+   "street:eva",
+   "middle_pool.json:middle-pool-east-gateway"
   ]
  },
  {

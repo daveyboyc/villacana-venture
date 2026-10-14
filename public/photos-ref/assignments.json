@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 289,
-  "photosCitedByModel": 28,
-  "modelFeaturesWithPhotoCitations": 31
+  "features": 291,
+  "photosCitedByModel": 34,
+  "modelFeaturesWithPhotoCitations": 33
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -2146,7 +2146,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-east-gateway"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -113.7,
@@ -2183,7 +2185,9 @@
      "angleOffset": 31.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-west-planter"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -119.4,
@@ -4442,7 +4446,9 @@
      "angleOffset": 27.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-west-planter"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -134.6,
@@ -4482,7 +4488,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-west-planter"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -135.1,
@@ -4521,7 +4529,9 @@
      "angleOffset": 21.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-west-planter"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -133.8,
@@ -4787,7 +4797,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-east-gateway"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -112.7,
