@@ -15,6 +15,14 @@ Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.
 Layout: 2, Levels and slopes: 1, Materials: 1, Views: 1
 2 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P3 | `picasso-service-road` | Pintor Picasso: service road, utility sheds and bins | open | [IMG_2345](../../public/photos-ref/IMG_2345.jpg) |
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

@@ -16,6 +16,14 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 Layout: 6, Levels and slopes: 1, Facades and roofs: 1, Materials: 2, Planting: 2, Views: 2
 7 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P2 | `south-pool-seaward-level` | South pool: lawn level above the paseo and its seaward wall (after paseo-retaining-wall) | open | [IMG_2349](../../public/photos-ref/IMG_2349.jpg), [IMG_2188](../../public/photos-ref/IMG_2188.jpg) |
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

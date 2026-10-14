@@ -25,6 +25,16 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 Layout: 30, Levels and slopes: 7, Facades and roofs: 11, Materials: 11, Planting: 17, Signs: 2, Views: 5
 39 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P2 | `elena-east-patios` | Elena north: private patios east of the beds (after elena-garden-door) | open | [IMG_2366](../../public/photos-ref/IMG_2366.jpg), [IMG_2362](../../public/photos-ref/IMG_2362.jpg), [IMG_2360](../../public/photos-ref/IMG_2360.jpg) |
+| P2 | `elena-garden-door` | Elena north: path and garden door between the two hedged beds | open | [IMG_2199](../../public/photos-ref/IMG_2199.jpg), [IMG_2201](../../public/photos-ref/IMG_2201.jpg), [IMG_2200](../../public/photos-ref/IMG_2200.jpg) |
+| P3 | `elena-gated-entry` | Elena: gated tiled entry west of the covered walkway | open | [IMG_2361](../../public/photos-ref/IMG_2361.jpg), [IMG_2202](../../public/photos-ref/IMG_2202.jpg), [IMG_2203](../../public/photos-ref/IMG_2203.jpg) |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.

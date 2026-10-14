@@ -22,6 +22,13 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 - Keep Google keys in ignored private environment files. Never publish API keys,
   signed download URLs, original photo metadata blobs or fetched Google imagery.
 
+## Build queue
+
+Work is split into tasks in `data/build_queue.json` (shown by priority in
+`refs/QUEUE.md`, one issue body per task in `refs/issues/`). Follow
+`docs/HANDOVER.md` to take one: one task per branch and PR, and its
+definition of done.
+
 ## Reference photos and maps
 
 All reference material is catalogued by area. Before changing anything in an

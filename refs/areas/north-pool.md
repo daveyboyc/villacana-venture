@@ -21,6 +21,14 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 Layout: 12, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 6, Views: 5
 17 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P2 | `north-pool-garden-walls` | North pool: curved garden walls and raised patios | open | [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

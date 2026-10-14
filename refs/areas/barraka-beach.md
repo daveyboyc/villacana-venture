@@ -21,6 +21,15 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 Layout: 3, Levels and slopes: 1, Facades and roofs: 5, Materials: 12, Signs: 2, Views: 9
 15 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P2 | `shoreline-check` | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | open | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
+| P3 | `barraka-boardwalk` | Barraka Beach: boardwalk, sign planter and parasols | open | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg), [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2225](../../public/photos-ref/IMG_2225.jpg) |
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

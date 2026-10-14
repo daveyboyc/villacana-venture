@@ -1474,6 +1474,132 @@
    "id": "steps:cervantes-elena-steps",
    "kind": "model-feature",
    "name": "Cervantes / Elena · steps beside the ramp"
+  },
+  {
+   "id": "task:elena-garden-door",
+   "kind": "build-task",
+   "name": "Elena north: path and garden door between the two hedged beds",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:elena-east-patios",
+   "kind": "build-task",
+   "name": "Elena north: private patios east of the beds",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:elena-gated-entry",
+   "kind": "build-task",
+   "name": "Elena: gated tiled entry west of the covered walkway",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:cervantes-door-steps",
+   "kind": "build-task",
+   "name": "Cervantes: two steps up to a front door west of the Elena junction",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:junction-lawns",
+   "kind": "build-task",
+   "name": "Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:cervantes-east-hedge",
+   "kind": "build-task",
+   "name": "Cervantes east of Elena: white kerb wall and plumbago hedge",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:cervantes-north-patios",
+   "kind": "build-task",
+   "name": "Walled patios along Cervantes from the roof views",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:middle-pool-sw-steps",
+   "kind": "build-task",
+   "name": "Middle pool south-west: stone steps and the gateway at their top",
+   "priority": 1,
+   "status": "open"
+  },
+  {
+   "id": "task:middle-pool-south-gate",
+   "kind": "build-task",
+   "name": "Middle pool south: iron double gate under a pergola frame",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:middle-pool-north-entrance",
+   "kind": "build-task",
+   "name": "Middle pool north-west: curved planter end, white steps, brown-door wall",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:eva-walled-lawn",
+   "kind": "build-task",
+   "name": "Calle Eva: walled lawn corner with espaliered bougainvillea",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:paseo-retaining-wall",
+   "kind": "build-task",
+   "name": "Paseo: sandstone retaining wall, mesh fence and level drop",
+   "priority": 1,
+   "status": "in-progress"
+  },
+  {
+   "id": "task:south-pool-seaward-level",
+   "kind": "build-task",
+   "name": "South pool: lawn level above the paseo and its seaward wall",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:barraka-boardwalk",
+   "kind": "build-task",
+   "name": "Barraka Beach: boardwalk, sign planter and parasols",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:shoreline-check",
+   "kind": "build-task",
+   "name": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:north-pool-garden-walls",
+   "kind": "build-task",
+   "name": "North pool: curved garden walls and raised patios",
+   "priority": 2,
+   "status": "open"
+  },
+  {
+   "id": "task:seaward-lanes-paving",
+   "kind": "build-task",
+   "name": "Seaward lanes: octagonal paving and covered passages",
+   "priority": 3,
+   "status": "open"
+  },
+  {
+   "id": "task:picasso-service-road",
+   "kind": "build-task",
+   "name": "Pintor Picasso: service road, utility sheds and bins",
+   "priority": 3,
+   "status": "open"
   }
  ],
  "edges": [
@@ -6173,6 +6299,396 @@
    "to": "ramp:cervantes-elena-ramp",
    "relation": "looks-at",
    "basis": "reviewed"
+  },
+  {
+   "from": "task:elena-garden-door",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:elena-east-patios",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:elena-gated-entry",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:junction-lawns",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:cervantes-east-hedge",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:cervantes-north-patios",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:middle-pool-sw-steps",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:middle-pool-south-gate",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:middle-pool-north-entrance",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:eva-walled-lawn",
+   "to": "area:eva",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:paseo-retaining-wall",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:south-pool-seaward-level",
+   "to": "area:south-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:barraka-boardwalk",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:shoreline-check",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:north-pool-garden-walls",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:seaward-lanes-paving",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:picasso-service-road",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:elena-garden-door",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-garden-door",
+   "to": "ref:IMG_2201.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-garden-door",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-east-patios",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-east-patios",
+   "to": "ref:IMG_2362.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-east-patios",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-gated-entry",
+   "to": "ref:IMG_2361.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-gated-entry",
+   "to": "ref:IMG_2202.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-gated-entry",
+   "to": "ref:IMG_2203.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:junction-lawns",
+   "to": "ref:IMG_2329.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:junction-lawns",
+   "to": "ref:IMG_2342.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:junction-lawns",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:junction-lawns",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:junction-lawns",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-east-hedge",
+   "to": "ref:IMG_2356.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-east-hedge",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-north-patios",
+   "to": "ref:IMG_2368.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-north-patios",
+   "to": "ref:IMG_2369.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-north-patios",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-sw-steps",
+   "to": "ref:IMG_2333.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-sw-steps",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-south-gate",
+   "to": "ref:IMG_2334.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-south-gate",
+   "to": "ref:IMG_2335.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-north-entrance",
+   "to": "ref:IMG_2331.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-north-entrance",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-north-entrance",
+   "to": "ref:IMG_2195.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-north-entrance",
+   "to": "ref:IMG_2192.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:eva-walled-lawn",
+   "to": "ref:IMG_2339.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:eva-walled-lawn",
+   "to": "ref:IMG_2336.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:eva-walled-lawn",
+   "to": "ref:IMG_2337.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:eva-walled-lawn",
+   "to": "ref:IMG_2338.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retaining-wall",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retaining-wall",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retaining-wall",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:paseo-retaining-wall",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-seaward-level",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-seaward-level",
+   "to": "ref:IMG_2188.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:barraka-boardwalk",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:barraka-boardwalk",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:barraka-boardwalk",
+   "to": "ref:IMG_2223.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:barraka-boardwalk",
+   "to": "ref:IMG_2225.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:shoreline-check",
+   "to": "ref:IMG_2285.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:shoreline-check",
+   "to": "ref:IMG_2298.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:shoreline-check",
+   "to": "ref:IMG_2299.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:shoreline-check",
+   "to": "ref:IMG_2300.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-garden-walls",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-garden-walls",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-garden-walls",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-garden-walls",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:seaward-lanes-paving",
+   "to": "ref:IMG_2235.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:seaward-lanes-paving",
+   "to": "ref:IMG_2237.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:seaward-lanes-paving",
+   "to": "ref:IMG_2239.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:seaward-lanes-paving",
+   "to": "ref:IMG_2185.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:seaward-lanes-paving",
+   "to": "ref:IMG_2190.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:picasso-service-road",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:elena-east-patios",
+   "to": "task:elena-garden-door",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:middle-pool-south-gate",
+   "to": "task:middle-pool-sw-steps",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:south-pool-seaward-level",
+   "to": "task:paseo-retaining-wall",
+   "relation": "depends-on"
   }
  ]
 }

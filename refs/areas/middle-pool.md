@@ -25,6 +25,16 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 Layout: 15, Levels and slopes: 3, Facades and roofs: 6, Materials: 10, Planting: 9, Signs: 1, Views: 1
 23 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `middle-pool-sw-steps` | Middle pool south-west: stone steps and the gateway at their top | open | [IMG_2333](../../public/photos-ref/IMG_2333.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg) |
+| P2 | `middle-pool-south-gate` | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | open | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
+| P3 | `middle-pool-north-entrance` | Middle pool north-west: curved planter end, white steps, brown-door wall | open | [IMG_2331](../../public/photos-ref/IMG_2331.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg), [IMG_2195](../../public/photos-ref/IMG_2195.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg) |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.

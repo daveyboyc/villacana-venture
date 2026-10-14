@@ -10,7 +10,9 @@ reference repo, and writes:
   refs/README.md           the index: areas, topics, counts, what is untagged
   refs/areas/<id>.md       the brief an agent reads before working on an area
   refs/topics/<id>.md      the same, by topic (levels and slopes, materials...)
-  refs/graph.json          areas, topics, references and model features, and how they link
+  refs/graph.json          areas, topics, references, model features and build tasks, and how they link
+  refs/QUEUE.md            the build queue from data/build_queue.json, by priority
+  refs/issues/<task>.md    one ready-to-file issue body per open task
 With --sheets, contact sheets of thumbnails go to <reference>/contact-sheets/,
 because they include private images and this repo is public.
 --check fails if a reference has no area, or a tag names an unknown area,
@@ -149,6 +151,60 @@ def subject_of(photo,tag,model):
     if tag.get('subject'):out['subject']=tag['subject']
     return out
 
+STATUSES=('open','in-progress','done')
+
+def load_queue(spec,catalog,problems):
+    queue=load(ROOT/'data/build_queue.json',{'tasks':[]})['tasks']
+    areas={a['id'] for a in spec['areas']};refs={e['id'] for e in catalog};ids={t['id'] for t in queue}
+    for t in queue:
+        if t['area'] not in areas:problems.append(f"task {t['id']}: unknown area {t['area']!r}")
+        if t.get('status','open') not in STATUSES:problems.append(f"task {t['id']}: unknown status {t.get('status')!r}")
+        for ph in t['photos']:
+            if ph not in refs:problems.append(f"task {t['id']}: photo {ph} is not in the catalogue")
+        for d in t.get('dependsOn',[]):
+            if d not in ids:problems.append(f"task {t['id']}: depends on unknown task {d}")
+    return queue
+
+def task_line(t,depth):
+    up='../'*depth
+    photos=', '.join(f'[{Path(p).stem}]({up}../public/photos-ref/{p})' for p in t['photos'])
+    deps=f" (after {', '.join(t['dependsOn'])})" if t.get('dependsOn') else ''
+    owner=f" · {t['owner']}" if t.get('owner') else ''
+    return f"| P{t['priority']} | `{t['id']}` | {t['title']}{deps} | {t.get('status','open')}{owner} | {photos} |"
+
+def queue_page(queue,spec):
+    names={a['id']:a['name'] for a in spec['areas']}
+    out=['# Build queue','','_Generated from `data/build_queue.json` by `scripts/build_references.py`. Edit the JSON, not this page._','',
+         'How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `refs/issues/<id>.md`.','',
+         '| Priority | Task | What | Status | Photos |','| --- | --- | --- | --- | --- |']
+    order=sorted(queue,key=lambda t:(t.get('status')=='done',t['priority'],t['area'],t['id']))
+    out+=[task_line(t,0) for t in order]
+    out+=['','## By area','']
+    for a in spec['areas']:
+        here=[t for t in order if t['area']==a['id']]
+        if here:out.append(f"- **{names[a['id']]}** ([brief](areas/{a['id']}.md)): "+', '.join(f"`{t['id']}`" for t in here))
+    return '\n'.join(out)+'\n'
+
+def issue_body(t,spec,catalog):
+    area=next(a for a in spec['areas'] if a['id']==t['area']);by={e['id']:e for e in catalog}
+    lines=[f"# {t['title']}",'',f"Task `{t['id']}` · area **{area['name']}** · priority P{t['priority']} · {t['kind']}",'',
+      '## Read first','',f"- `AGENTS.md`, `docs/HANDOVER.md`",f"- `refs/areas/{area['id']}.md` and the contact sheet `villacana-reference/contact-sheets/{area['id']}.jpg`"]
+    lines+=[f"- {kind}: "+', '.join(f'`{p}`' for p in area[kind]) for kind in ('docs','data','src') if area.get(kind)]
+    lines+=['','## Photos to build from','']
+    for ph in t['photos']:
+        e=by[ph];cam=e.get('camera',{})
+        pin=f" — pin ±{cam['accuracy']} m" if cam.get('accuracy') else ''
+        look=f"; looks at {e['subject']}" if e.get('subject') else ''
+        lines.append(f"- `public/photos-ref/{ph}`: {e['title']} ({e.get('viewpoint') or 'viewpoint not reviewed'}{pin}{look})")
+    lines+=['','## Build','',t['build'],'','## Do not','',t['avoid'],'','## Done when','']
+    lines+=[f'- [ ] {a}' for a in t['accept']]
+    lines+=['- [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)',
+            '- [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes',
+            f"- [ ] `data/build_queue.json`: `{t['id']}` set to done",
+            '- [ ] Before/after renders from the photos\' cameras attached to the PR (`scripts/shoot_views.cjs`)']
+    if t.get('dependsOn'):lines+=['',f"Depends on: {', '.join('`'+d+'`' for d in t['dependsOn'])}"]
+    return '\n'.join(lines)+'\n'
+
 def model_features(catalog):
     """Model features from the evidence graph, each placed in the areas its cited photos mostly show."""
     graph=load(ROOT/'public/photos-ref/evidence-graph.json',{'nodes':[],'edges':[]})
@@ -199,7 +255,7 @@ def table(entries,depth,area=None):
     lines=['| Reference | Viewpoint | Use for | What it shows |','| --- | --- | --- | --- |']
     return lines+[row(e,depth) for e in sorted(entries,key=lambda e:rank(e,area))]
 
-def brief(area,entries,topics,spec,features=()):
+def brief(area,entries,topics,spec,features=(),queue=()):
     reviewed=[e for e in entries if e['areasBasis']=='reviewed']
     guessed=[e for e in entries if e['areasBasis']!='reviewed']
     out=[f'# {area["name"]}','',f'_Generated by `scripts/build_references.py`. Do not edit: change `data/areas.json` or `data/reference_tags.json` and rebuild._','',area['summary'],'']
@@ -212,6 +268,8 @@ def brief(area,entries,topics,spec,features=()):
     counts={t['id']:sum(t['id'] in e['useFor'] for e in entries) for t in topics}
     out+=['## Coverage','',', '.join(f'{t["name"]}: {counts[t["id"]]}' for t in topics if counts[t['id']])+('' if any(counts.values()) else 'No references reviewed by topic yet.'),
           f'{len(reviewed)} reviewed, {len(guessed)} suggested only by camera position.','']
+    tasks=sorted((t for t in queue if t['area']==area['id'] and t.get('status')!='done'),key=lambda t:(t['priority'],t['id']))
+    if tasks:out+=['## Open build tasks','','From `data/build_queue.json`; issue bodies in `refs/issues/`.','','| Priority | Task | What | Status | Photos |','| --- | --- | --- | --- | --- |']+[task_line(t,1) for t in tasks]+['']
     if any(area['id'] in f['areas'] for f in features):
         out+=['## Built from these photos','','Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.','']+mermaid(area,features)
     if reviewed:out+=['## Reviewed references','']+table(reviewed,1,area['id'])+['']
@@ -230,6 +288,7 @@ def topic_brief(topic,entries,spec):
 def index(spec,catalog,problems):
     out=['# Villacana references','','_Generated by `scripts/build_references.py`. Do not edit._','',
          'Start here. Pick the area you are working on and read its brief: it lists every photo, map and doc for that area, best first. Photos live in `public/photos-ref/` (public web copies) and in the private `villacana-reference` repo. Full-size originals stay in Google Drive.','',
+         'Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOVER.md` explains how to take one. The full link graph (areas, photos, features, tasks) is [graph.json](graph.json).','',
          '| Area | References | Reviewed | Brief |','| --- | --- | --- | --- |']
     for a in spec['areas']:
         here=[e for e in catalog if a['id'] in e['shows']]
@@ -274,8 +333,14 @@ def main():
     refs=ROOT/'refs';(refs/'areas').mkdir(parents=True,exist_ok=True);(refs/'topics').mkdir(exist_ok=True)
     (refs/'catalog.json').write_text(json.dumps(catalog,indent=1,ensure_ascii=False)+'\n')
     features=model_features(catalog)
+    queue=load_queue(spec,catalog,problems)
     for a in spec['areas']:
-        (refs/'areas'/f'{a["id"]}.md').write_text(brief(a,[e for e in catalog if a['id'] in e['shows']],spec['topics'],spec,features))
+        (refs/'areas'/f'{a["id"]}.md').write_text(brief(a,[e for e in catalog if a['id'] in e['shows']],spec['topics'],spec,features,queue))
+    (refs/'QUEUE.md').write_text(queue_page(queue,spec))
+    issues=refs/'issues';issues.mkdir(exist_ok=True)
+    for old in issues.glob('*.md'):old.unlink()
+    for t in queue:
+        if t.get('status')!='done':(issues/f"{t['id']}.md").write_text(issue_body(t,spec,catalog))
     nodes=[{'id':'area:'+a['id'],'kind':'area','name':a['name']} for a in spec['areas']]+[{'id':'topic:'+t['id'],'kind':'topic','name':t['name']} for t in spec['topics']]
     nodes+=[{'id':'ref:'+e['id'] if not e['id'].startswith('ref:') else e['id'],'kind':e['kind'],'name':e['title'],'path':e['path'],'viewpoint':e['viewpoint']} for e in catalog]
     nodes+=[{'id':f['id'],'kind':'model-feature','name':f['name']} for f in features]
@@ -285,6 +350,10 @@ def main():
     edges+=[{'from':f['id'],'to':'ref:'+p,'relation':'cites'} for f in features for p in f['photos']]
     edges+=[{'from':f['id'],'to':'area:'+a,'relation':'in-area'} for f in features for a in f['areas']]
     edges+=[{'from':key(e),'to':m,'relation':'looks-at','basis':e['looksAtBasis']} for e in catalog for m in e.get('looksAtFeatures',[])]
+    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open')} for t in queue]
+    edges+=[{'from':'task:'+t['id'],'to':'area:'+t['area'],'relation':'in-area'} for t in queue]
+    edges+=[{'from':'task:'+t['id'],'to':'ref:'+p,'relation':'builds-from'} for t in queue for p in t['photos']]
+    edges+=[{'from':'task:'+t['id'],'to':'task:'+d,'relation':'depends-on'} for t in queue for d in t.get('dependsOn',[])]
     (refs/'graph.json').write_text(json.dumps({'about':'Generated by scripts/build_references.py. shows/useful-for come from reviewed tags; cites from feature evidence; in-area is the area most of a feature\'s cited photos show.','nodes':nodes,'edges':edges},indent=1,ensure_ascii=False)+'\n')
     for t in spec['topics']:
         (refs/'topics'/f'{t["id"]}.md').write_text(topic_brief(t,[e for e in catalog if t['id'] in e['useFor']],spec))

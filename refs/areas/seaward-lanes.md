@@ -15,6 +15,14 @@ The lanes between the middle pool and the beach.
 Layout: 21, Levels and slopes: 2, Facades and roofs: 1, Materials: 15, Planting: 5, Signs: 3
 28 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P3 | `seaward-lanes-paving` | Seaward lanes: octagonal paving and covered passages | open | [IMG_2235](../../public/photos-ref/IMG_2235.jpg), [IMG_2237](../../public/photos-ref/IMG_2237.jpg), [IMG_2239](../../public/photos-ref/IMG_2239.jpg), [IMG_2185](../../public/photos-ref/IMG_2185.jpg), [IMG_2190](../../public/photos-ref/IMG_2190.jpg) |
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

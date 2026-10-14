@@ -21,6 +21,14 @@ The seafront promenade between the resort's seaward walls and the beach.
 Layout: 11, Levels and slopes: 4, Materials: 4, Views: 3
 12 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `paseo-retaining-wall` | Paseo: sandstone retaining wall, mesh fence and level drop | in-progress | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg) |
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

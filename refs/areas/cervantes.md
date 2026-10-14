@@ -23,6 +23,17 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 Layout: 24, Levels and slopes: 9, Facades and roofs: 7, Materials: 1, Planting: 9, Signs: 2, Views: 3
 26 reviewed, 0 suggested only by camera position.
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P2 | `cervantes-door-steps` | Cervantes: two steps up to a front door west of the Elena junction | open | [IMG_2327](../../public/photos-ref/IMG_2327.jpg), [IMG_2328](../../public/photos-ref/IMG_2328.jpg) |
+| P3 | `cervantes-east-hedge` | Cervantes east of Elena: white kerb wall and plumbago hedge | open | [IMG_2356](../../public/photos-ref/IMG_2356.jpg), [IMG_2360](../../public/photos-ref/IMG_2360.jpg) |
+| P3 | `cervantes-north-patios` | Walled patios along Cervantes from the roof views | open | [IMG_2368](../../public/photos-ref/IMG_2368.jpg), [IMG_2369](../../public/photos-ref/IMG_2369.jpg), [IMG_2359](../../public/photos-ref/IMG_2359.jpg) |
+| P3 | `junction-lawns` | Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos | open | [IMG_2329](../../public/photos-ref/IMG_2329.jpg), [IMG_2342](../../public/photos-ref/IMG_2342.jpg), [IMG_2358](../../public/photos-ref/IMG_2358.jpg), [IMG_2367](../../public/photos-ref/IMG_2367.jpg), [IMG_2260](../../public/photos-ref/IMG_2260.jpg) |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
