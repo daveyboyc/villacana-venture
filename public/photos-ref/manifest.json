@@ -16,7 +16,11 @@
   "x": -39.0,
   "z": 133.0,
   "heading": 240,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.2,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2183.jpg",
@@ -25,7 +29,11 @@
   "x": -47.3,
   "z": 142.2,
   "heading": 294,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.8,
+  "altitude": 6.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2184.jpg",
@@ -34,7 +42,11 @@
   "x": -56.7,
   "z": 147.2,
   "heading": 148,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2185.jpg",
@@ -43,7 +55,11 @@
   "x": -80.1,
   "z": 159.2,
   "heading": 146,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.9,
+  "altitude": 5.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2186.jpg",
@@ -52,7 +68,11 @@
   "x": -80.1,
   "z": 158.9,
   "heading": 149,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.9,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2187.jpg",
@@ -61,7 +81,11 @@
   "x": -79.6,
   "z": 158.3,
   "heading": 177,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.9,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2188.jpg",
@@ -70,7 +94,11 @@
   "x": -89.3,
   "z": 167.3,
   "heading": 171,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.1,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2189.jpg",
@@ -79,7 +107,11 @@
   "x": -114.9,
   "z": 126.2,
   "heading": 322,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 7.7,
+  "altitude": 6.9,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2190.jpg",
@@ -88,7 +120,11 @@
   "x": -121.1,
   "z": 116.3,
   "heading": 56,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2191.jpg",
@@ -97,7 +133,11 @@
   "x": -121.1,
   "z": 116.0,
   "heading": 88,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2192.jpg",
@@ -106,7 +146,11 @@
   "x": -123.9,
   "z": 105.8,
   "heading": 333,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2193.jpg",
@@ -115,7 +159,11 @@
   "x": -126.3,
   "z": 102.4,
   "heading": 17,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2194.jpg",
@@ -124,7 +172,11 @@
   "x": -126.6,
   "z": 102.0,
   "heading": 13,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2195.jpg",
@@ -133,16 +185,29 @@
   "x": -135.5,
   "z": 92.1,
   "heading": 51,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2196.jpg",
   "title": "IMG_2196",
-  "trust": "phone location",
-  "x": -151.0,
-  "z": 60.0,
+  "trust": "checked against photo content",
+  "x": -152.2,
+  "z": 59.1,
   "heading": 342,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Moved to IMG_2287's position (±3 m): both show the same brown door up tiled steps, plumbago and lamp post from almost the same spot.",
+  "accuracy": 3.0,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -151.0,
+   "z": 60.0,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2197.jpg",
@@ -151,7 +216,11 @@
   "x": -149.2,
   "z": 52.3,
   "heading": 58,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2198.jpg",
@@ -160,7 +229,11 @@
   "x": -145.5,
   "z": 49.8,
   "heading": 328,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.3,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2199.jpg",
@@ -169,7 +242,11 @@
   "x": -147.0,
   "z": 48.2,
   "heading": 359,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.4,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2200.jpg",
@@ -178,7 +255,11 @@
   "x": -147.2,
   "z": 47.6,
   "heading": 346,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.9,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2201.jpg",
@@ -187,7 +268,11 @@
   "x": -148.5,
   "z": 46.4,
   "heading": 328,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 7.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2202.jpg",
@@ -196,7 +281,11 @@
   "x": -154.9,
   "z": 35.3,
   "heading": 245,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.3,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2203.jpg",
@@ -205,7 +294,11 @@
   "x": -154.9,
   "z": 35.3,
   "heading": 59,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.3,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2204.jpg",
@@ -214,7 +307,11 @@
   "x": -169.9,
   "z": 32.2,
   "heading": 329,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.4,
+  "altitude": 9.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2205.jpg",
@@ -222,8 +319,12 @@
   "trust": "phone location",
   "x": -170.1,
   "z": 31.8,
-  "heading": 360,
-  "taken": "2026-10-11"
+  "heading": 0,
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 9.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2206.jpg",
@@ -232,7 +333,11 @@
   "x": -169.9,
   "z": 31.8,
   "heading": 301,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 9.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2207.jpg",
@@ -241,7 +346,11 @@
   "x": -169.1,
   "z": 31.5,
   "heading": 37,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 9.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2208.jpg",
@@ -250,7 +359,11 @@
   "x": -168.9,
   "z": 32.2,
   "heading": 306,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 10.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2214.jpg",
@@ -259,7 +372,11 @@
   "x": -154.9,
   "z": 44.8,
   "heading": 2,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 10.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2215.jpg",
@@ -268,7 +385,11 @@
   "x": -154.7,
   "z": 44.8,
   "heading": 45,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.5,
+  "altitude": 10.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2216.jpg",
@@ -277,7 +398,11 @@
   "x": -154.5,
   "z": 44.8,
   "heading": 112,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 10.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2217.jpg",
@@ -286,7 +411,11 @@
   "x": -154.9,
   "z": 45.8,
   "heading": 157,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.8,
+  "altitude": 10.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2218.jpg",
@@ -295,7 +424,11 @@
   "x": -155.2,
   "z": 46.4,
   "heading": 199,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 10.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2219.jpg",
@@ -304,7 +437,11 @@
   "x": -155.4,
   "z": 50.4,
   "heading": 347,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 11.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2220.jpg",
@@ -313,7 +450,11 @@
   "x": -155.7,
   "z": 51.0,
   "heading": 149,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 11.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2223.jpg",
@@ -322,7 +463,11 @@
   "x": 39.3,
   "z": 102.0,
   "heading": 109,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2224.jpg",
@@ -331,7 +476,11 @@
   "x": 63.2,
   "z": 130.5,
   "heading": 52,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 4.0,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2225.jpg",
@@ -340,7 +489,11 @@
   "x": 61.7,
   "z": 134.2,
   "heading": 266,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.3,
+  "altitude": 2.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2226.jpg",
@@ -349,7 +502,11 @@
   "x": 39.5,
   "z": 155.5,
   "heading": 315,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.0,
+  "altitude": 4.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2227.jpg",
@@ -358,7 +515,11 @@
   "x": 39.3,
   "z": 154.9,
   "heading": 272,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.5,
+  "altitude": 4.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2229.jpg",
@@ -367,7 +528,11 @@
   "x": -37.8,
   "z": 135.1,
   "heading": 222,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.8,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2230.jpg",
@@ -376,7 +541,11 @@
   "x": -39.8,
   "z": 137.3,
   "heading": 251,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.0,
+  "altitude": 5.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2231.jpg",
@@ -385,7 +554,11 @@
   "x": -41.5,
   "z": 137.9,
   "heading": 220,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2232.jpg",
@@ -394,7 +567,11 @@
   "x": -43.0,
   "z": 139.1,
   "heading": 176,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.7,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2233.jpg",
@@ -403,7 +580,11 @@
   "x": -46.5,
   "z": 141.0,
   "heading": 291,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.7,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2234.jpg",
@@ -412,7 +593,11 @@
   "x": -50.5,
   "z": 143.2,
   "heading": 240,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.1,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2235.jpg",
@@ -421,7 +606,11 @@
   "x": -56.2,
   "z": 145.3,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 4.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2236.jpg",
@@ -430,7 +619,11 @@
   "x": -60.4,
   "z": 137.3,
   "heading": 345,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2237.jpg",
@@ -439,7 +632,11 @@
   "x": -62.4,
   "z": 134.2,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2238.jpg",
@@ -448,7 +645,11 @@
   "x": -66.9,
   "z": 128.6,
   "heading": 249,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 4.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2239.jpg",
@@ -457,7 +658,11 @@
   "x": -70.9,
   "z": 120.6,
   "heading": 353,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 6.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2240.jpg",
@@ -466,7 +671,11 @@
   "x": -77.1,
   "z": 111.3,
   "heading": 244,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 4.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2241.jpg",
@@ -475,7 +684,11 @@
   "x": -78.8,
   "z": 106.7,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 7.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2242.jpg",
@@ -484,7 +697,11 @@
   "x": -83.3,
   "z": 96.5,
   "heading": 249,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.7,
+  "altitude": 8.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2243.jpg",
@@ -493,7 +710,11 @@
   "x": -102.5,
   "z": 75.4,
   "heading": 243,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.5,
+  "altitude": 4.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2244.jpg",
@@ -502,7 +723,11 @@
   "x": -113.7,
   "z": 81.6,
   "heading": 232,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 5.0,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2245.jpg",
@@ -511,7 +736,11 @@
   "x": -119.4,
   "z": 94.3,
   "heading": 268,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 5.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2246.jpg",
@@ -520,7 +749,11 @@
   "x": -137.5,
   "z": 103.3,
   "heading": 35,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 7.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2247.jpg",
@@ -529,7 +762,11 @@
   "x": -137.0,
   "z": 103.3,
   "heading": 28,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 7.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2248.jpg",
@@ -538,7 +775,11 @@
   "x": -138.0,
   "z": 103.3,
   "heading": 237,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 7.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2249.jpg",
@@ -547,7 +788,11 @@
   "x": -145.7,
   "z": 108.2,
   "heading": 330,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 7.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2250.jpg",
@@ -556,7 +801,11 @@
   "x": -146.5,
   "z": 107.0,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 6.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2251.jpg",
@@ -565,16 +814,29 @@
   "x": -149.5,
   "z": 107.0,
   "heading": 331,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.2,
+  "altitude": 8.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2252.jpg",
   "title": "IMG_2252",
-  "trust": "phone location",
-  "x": -161.2,
-  "z": 58.4,
+  "trust": "checked against photo content",
+  "x": -159.5,
+  "z": 61.3,
   "heading": 61,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Moved onto the Cervantes centreline: the photo is taken standing in the lane looking down its sloping strip; along-lane position still uncertain.",
+  "accuracy": 4.0,
+  "altitude": 7.3,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -161.2,
+   "z": 58.4,
+   "accuracy": 13.3
+  }
  },
  {
   "file": "IMG_2253.jpg",
@@ -583,54 +845,97 @@
   "x": -153.2,
   "z": 55.7,
   "heading": 141,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2254.jpg",
   "title": "IMG_2254",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 34.3,
+  "trust": "checked against photo content",
+  "x": -155.4,
+  "z": 39.0,
   "heading": 284,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Moved into the Elena covered walkway (registry part 6265201UF1366N_part5): the CALLE ELENA 18-30 plaque is on the walkway wall just inside its east mouth.",
+  "accuracy": 2.0,
+  "altitude": 8.2,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -154.9,
+   "z": 34.3,
+   "accuracy": 15.1
+  }
  },
  {
   "file": "IMG_2255.jpg",
   "title": "IMG_2255",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -152.2,
   "z": 39.9,
   "heading": 250,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Position confirmed by content: on Elena north at the mouth of the covered walkway, looking in.",
+  "accuracy": 3.0,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -152.2,
+   "z": 39.9,
+   "accuracy": 11.0
+  }
  },
  {
   "file": "IMG_2256.jpg",
   "title": "IMG_2256",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -153.0,
   "z": 40.8,
   "heading": 237,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Position confirmed by content: on Elena north at the mouth of the covered walkway, looking in.",
+  "accuracy": 3.0,
+  "altitude": 7.3,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -153.0,
+   "z": 40.8,
+   "accuracy": 11.3
+  }
  },
  {
   "file": "IMG_2260.jpg",
   "title": "IMG_2260",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -149.7,
   "z": 56.9,
   "heading": 158,
   "taken": "2026-10-12",
-  "accuracy": 11.8
+  "accuracy": 3.0,
+  "locationBasis": "Position confirmed by content: at the Cervantes/Elena junction, matching IMG_2263 (±4.1 m) a metre or two away.",
+  "gps": {
+   "x": -149.7,
+   "z": 56.9,
+   "accuracy": 11.8
+  }
  },
  {
   "file": "IMG_2261.jpg",
   "title": "IMG_2261",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -150.2,
   "z": 56.9,
   "heading": 167,
   "taken": "2026-10-12",
-  "accuracy": 10.2
+  "accuracy": 3.0,
+  "locationBasis": "Position confirmed by content: at the Cervantes/Elena junction, matching IMG_2263 (±4.1 m).",
+  "gps": {
+   "x": -150.2,
+   "z": 56.9,
+   "accuracy": 10.2
+  }
  },
  {
   "file": "IMG_2262.jpg",
@@ -677,12 +982,18 @@
  {
   "file": "IMG_2266.jpg",
   "title": "IMG_2266",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -184.8,
   "z": 76.4,
   "heading": 243,
   "taken": "2026-10-12",
-  "accuracy": 14.0
+  "accuracy": 4.0,
+  "locationBasis": "Position confirmed by content: at the west end of Cervantes looking across to the Dalí side, matching IMG_2289 (±3 m).",
+  "gps": {
+   "x": -184.8,
+   "z": 76.4,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2267.jpg",
@@ -887,18 +1198,23 @@
  {
   "file": "IMG_2286.jpg",
   "title": "Elena junction: side-by-side ramp and steps",
-  "trust": "phone location",
-  "x": -154.2,
-  "z": 54.4,
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 14.0,
+  "trust": "checked against photo content",
+  "x": -151.0,
+  "z": 56.2,
+  "locationBasis": "Moved to the lane about 1.6 m below the ramp drain: the photo looks straight up the ramp and steps with the drain at its foot (cf. IMG_2355, IMG_2328).",
+  "accuracy": 1.5,
   "heading": 245,
   "headingBasis": "EXIF true north",
   "taken": "2026-10-13",
   "observation": "Close view of a terracotta approach with a smooth sloping strip beside a flight of shallow steps, low white edging, and a transverse drain at the foot. Clipped hedge, blue flowers and a partially visible Elena plaque identify the junction. The separate steps are visible evidence not yet matched to detailed game geometry.",
   "originalUrl": "https://drive.google.com/file/d/1ktD9QhybOfgC_l0TDhiww-k5IIM0ueKg/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
-  "streetHint": "elena-north"
+  "streetHint": "elena-north",
+  "gps": {
+   "x": -154.2,
+   "z": 54.4,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2287.jpg",
@@ -1372,11 +1688,11 @@
  {
   "file": "IMG_2342.jpg",
   "title": "Cervantes/Elena junction: lawn corner with pollarded tree and drain",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -150.7,
   "z": 56.9,
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 14.0,
+  "locationBasis": "Position confirmed by content: at the junction lawn corner, matching IMG_2329 (±3.6 m).",
+  "accuracy": 3.0,
   "altitude": 7.3,
   "heading": 200,
   "headingBasis": "EXIF true north",
@@ -1384,7 +1700,12 @@
   "observation": "The junction lawn from another angle: white rounded kerb, pollarded tree, manhole, terracotta paving with a drain grate in the foreground, bougainvillea on the houses. GPS ±14 m.",
   "originalUrl": "https://drive.google.com/file/d/1cVYH19h4y5RApfeK5OZnMFOg4JZH2xUe/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
-  "streetHint": "cervantes"
+  "streetHint": "cervantes",
+  "gps": {
+   "x": -150.7,
+   "z": 56.9,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2345.jpg",
@@ -1406,11 +1727,11 @@
  {
   "file": "IMG_2346.jpg",
   "title": "Barraka Beach sign, thatched parasols and boardwalk",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": 35.6,
   "z": 95.2,
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 14.0,
+  "locationBasis": "Position confirmed by content: same Barraka Beach sign scene as IMG_2347 (±4.2 m), 1.3 m away.",
+  "accuracy": 4.2,
   "altitude": 5.6,
   "heading": 108,
   "headingBasis": "EXIF true north",
@@ -1418,7 +1739,12 @@
   "observation": "On the sand by the restaurant: a white planter painted BARRAKA BEACH with shrubs, thatched parasols and loungers, a timber boardwalk across the sand, the sea behind.",
   "originalUrl": "https://drive.google.com/file/d/1uZX4ixz0rYBGp-qL1nFeh77ItS_bTBhh/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
-  "areaHint": "area:barraka"
+  "areaHint": "area:barraka",
+  "gps": {
+   "x": 35.6,
+   "z": 95.2,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2347.jpg",

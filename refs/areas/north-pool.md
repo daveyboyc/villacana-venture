@@ -26,13 +26,13 @@ Layout: 12, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | `villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg` | upper-floor | layout, facades, planting, view | North pool: the whole courtyard looking north. The best single reference for it. |
-| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Note:** Taken from an upper floor; the camera pin is inside a building. |
-| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Note:** Taken from an upper floor; the camera pin is inside a building. |
+| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. |
+| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
 | `villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg` | upper-floor | layout, materials, planting | North pool looking down over barrel roof tiles: hedges, gates, crazy paving |
-| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces |
-| [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden |
-| [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge |
+| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. |
+| [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. |
+| [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. |
 | `villacana-reference/apple-maps/02-3d-north-pool.png` | aerial | layout, facades | Apple Maps 3D: north pool and surrounding terraces |
 | `villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png` | aerial | layout, view | Apple Maps 3D: north pool looking east towards the Picasso car park |
 | `villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg` | upper-floor | planting, facades | North pool: roof tiles, a yucca, a patio behind a hedge |
@@ -41,4 +41,4 @@ Layout: 12, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 
 | `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies |
 | `villacana-reference/apple-maps/09-3d-north-pool-looking-south.png` | aerial | layout | Apple Maps 3D: north pool looking south, lawn ring, curved path, deck |
 | [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west._ |
-| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |
+| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |

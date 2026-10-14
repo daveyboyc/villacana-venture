@@ -9,10 +9,10 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | `villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg` | upper-floor | layout, facades, planting, view | North pool: the whole courtyard looking north. The best single reference for it. |
-| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Note:** Taken from an upper floor; the camera pin is inside a building. |
-| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Note:** Taken from an upper floor; the camera pin is inside a building. |
+| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. |
+| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
-| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces |
+| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. |
 | `villacana-reference/apple-maps/02-3d-north-pool.png` | aerial | layout, facades | Apple Maps 3D: north pool and surrounding terraces |
 | `villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg` | upper-floor | planting, facades | North pool: roof tiles, a yucca, a patio behind a hedge |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |
@@ -39,14 +39,14 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea _Used by: elena_north.json:elena-north-magnolia-bed._ |
-| [IMG_2364.jpg](../../public/photos-ref/IMG_2364.jpg) | roof | facades, materials, planting | Roof by Elena: barrel-tile lean-to over a magnolia bed _Used by: elena_north.json:elena-north-magnolia-bed._ |
+| [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
+| [IMG_2364.jpg](../../public/photos-ref/IMG_2364.jpg) | roof | facades, materials, planting | Roof by Elena: barrel-tile lean-to over a magnolia bed **Looks at:** The magnolia bed and the lean-to roof beside it. _Used by: elena_north.json:elena-north-magnolia-bed._ |
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
-| [IMG_2361.jpg](../../public/photos-ref/IMG_2361.jpg) | roof | layout, materials, facades | Roof by Elena: looking down into a gated tiled entry **Note:** Roof shot looking down. The pin is the roof, not the entry. |
+| [IMG_2361.jpg](../../public/photos-ref/IMG_2361.jpg) | roof | layout, materials, facades | Roof by Elena: looking down into a gated tiled entry **Looks at:** The gated tiled entry west of the covered walkway. **Note:** Roof shot looking down. The pin is the roof, not the entry. |
 | [IMG_2196.jpg](../../public/photos-ref/IMG_2196.jpg) | ground | facades, planting | Elena junction: private brown door up tiled steps, bougainvillea |
 | [IMG_2287.jpg](../../public/photos-ref/IMG_2287.jpg) | ground | facades, planting | Elena junction: private doorway and planting |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades | Cervantes junction: another view of the same terraces _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path._ |
-| [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
+| [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
 | [IMG_2327.jpg](../../public/photos-ref/IMG_2327.jpg) | ground | levels, layout, facades | Cervantes at Elena: steps up to a door beside the lane |
 | [IMG_2214.jpg](../../public/photos-ref/IMG_2214.jpg) | roof | facades, view | Roof terrace: flat roofs, solar panels, water tanks, mountains north **Note:** On a roof by Calle Elena. The pin is inside a building. |
 | [IMG_2215.jpg](../../public/photos-ref/IMG_2215.jpg) | roof | facades, view | Roof terrace looking north-east: roofs, a tall tower block beyond |
@@ -57,11 +57,11 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 | --- | --- | --- | --- |
 | [IMG_2273.jpg](../../public/photos-ref/IMG_2273.jpg) | ground | facades, layout | Cervantes: straight lane and barred windows _Used by: frontage_divisions.json:cervantes-west-planting, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades | Cervantes junction: another view of the same terraces _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path._ |
-| [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
+| [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
 | [IMG_2327.jpg](../../public/photos-ref/IMG_2327.jpg) | ground | levels, layout, facades | Cervantes at Elena: steps up to a door beside the lane |
-| [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Note:** Roof shot: the pin is the roof. |
-| [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Note:** Roof shot: the pin is the roof. |
-| [IMG_2359.jpg](../../public/photos-ref/IMG_2359.jpg) | roof | layout, facades | Roof by Elena: over barrel tiles to the Cervantes patios **Note:** Roof shot: the pin is the roof. |
+| [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. |
+| [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. |
+| [IMG_2359.jpg](../../public/photos-ref/IMG_2359.jpg) | roof | layout, facades | Roof by Elena: over barrel tiles to the Cervantes patios **Looks at:** The walled patios along Cervantes. **Note:** Roof shot: the pin is the roof. |
 
 ## Calle Pintor Dalí
 
@@ -106,15 +106,15 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 | [IMG_2215.jpg](../../public/photos-ref/IMG_2215.jpg) | roof | facades, view | Roof terrace looking north-east: roofs, a tall tower block beyond |
 | [IMG_2216.jpg](../../public/photos-ref/IMG_2216.jpg) | roof | facades, view | Roof terrace looking east-south-east to the sea |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
-| [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea _Used by: elena_north.json:elena-north-magnolia-bed._ |
-| [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
-| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Note:** Taken from an upper floor; the camera pin is inside a building. |
-| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Note:** Taken from an upper floor; the camera pin is inside a building. |
+| [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
+| [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. |
+| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. |
+| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. |
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore |
-| [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Note:** Roof shot: the pin is the roof. |
-| [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Note:** Roof shot: the pin is the roof. |
+| [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. |
+| [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades | From the beach looking back at the resort frontage |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |

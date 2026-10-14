@@ -14,15 +14,15 @@ Street-name plaques, house numbers and other readable signs.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
-| [IMG_2254.jpg](../../public/photos-ref/IMG_2254.jpg) | ground | signage | Plaque reading CALLE ELENA 18-30 _Used by: building:6265201UF1366N_part5._ |
+| [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
+| [IMG_2254.jpg](../../public/photos-ref/IMG_2254.jpg) | ground | signage | Plaque reading CALLE ELENA 18-30 **Looks at:** The CALLE ELENA plaque in the covered walkway. _Used by: building:6265201UF1366N_part5._ |
 
 ## Calle Miguel de Cervantes
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
-| [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
+| [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 
 ## Calle Eva
 
