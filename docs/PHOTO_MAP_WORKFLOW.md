@@ -14,7 +14,14 @@ Every batch goes through the same steps, so any agent can pick up any area.
    observation and Drive link. In `data/reference_tags.json` give it `shows`
    (every area visible, not where the camera stood), `viewpoint` (ground,
    upper-floor, roof, aerial, map) and `useFor` (layout, levels, facades,
-   materials, planting, signage, view).
+   materials, planting, signage, view). For roof shots and any photo you will
+   build from, also set `looksAt` ([x, z] of the main subject) and `subject`.
+   Phone altitude is a check on `viewpoint`: ground shots read 9 m or less,
+   roof and upper-floor shots more (`build_references.py --check` flags a
+   mismatch). If a pin is clearly wrong or vague (worse than about ±8 m) and
+   the picture fixes the spot (a sign, a step, the same scene as a good pin),
+   correct it in `data/photo_positions.json` with `trust: "checked against
+   photo content"`, a `locationBasis` sentence and the original `gps` kept.
 4. `python3 scripts/assign_photo_map.py`, then
    `python3 scripts/build_references.py --sheets --check`.
 5. Commit the web copies, tags and `refs/` here, and the contact sheets in

@@ -11,10 +11,13 @@ const path = require("node:path");
   const args = process.argv.slice(2), flags = args.filter((a) => a.startsWith("--")), photos = args.filter((a) => !a.startsWith("--"));
   const pool = (flags.find((f) => f.startsWith("--pool=")) ?? "--pool=north,middle,south,main").slice(7);
   const manifest = JSON.parse(fs.readFileSync("public/photos-ref/manifest.json", "utf8"));
+  // Aim at the photo's subject point when the catalogue has one (refs/catalog.json, looksAt).
+  const catalog = fs.existsSync("refs/catalog.json") ? JSON.parse(fs.readFileSync("refs/catalog.json", "utf8")) : [];
+  const subject = (file) => catalog.find((e) => e.id === file)?.looksAt;
   const turn = (JSON.parse(fs.readFileSync("public/map/skeleton.json", "utf8")).viewRotation * Math.PI) / 180;
   const turned = (x, z) => `${(x * Math.cos(turn) - z * Math.sin(turn)).toFixed(2)},${(x * Math.sin(turn) + z * Math.cos(turn)).toFixed(2)}`;
   const { createServer } = await import("vite");
-  const server = await createServer({ server: { host: "127.0.0.1", port: 0 }, logLevel: "error" });
+  const server = await createServer({ server: { host: "127.0.0.1", port: 20000 + Math.floor(Math.random() * 20000), strictPort: false }, logLevel: "error" });
   await server.listen();
   const site = "http://127.0.0.1:" + server.httpServer.address().port, out = path.join("layout-checks.local", "views");
   fs.mkdirSync(out, { recursive: true });
@@ -24,7 +27,8 @@ const path = require("node:path");
     const photo = manifest.find((p) => p.file === name || p.file === name + ".jpg");
     if (!photo || photo.x === undefined) { console.log(name, "no camera pin"); continue; }
     const h = ((photo.heading ?? 0) * Math.PI) / 180;
-    const query = `pool=${pool}&at=${turned(photo.x, photo.z)}&look=${turned(photo.x + Math.sin(h) * 12, photo.z - Math.cos(h) * 12)}${flags.includes("--details") ? "&details=1" : ""}`;
+    const look = subject(photo.file) ?? [photo.x + Math.sin(h) * 12, photo.z - Math.cos(h) * 12];
+    const query = `pool=${pool}&at=${turned(photo.x, photo.z)}&look=${turned(look[0], look[1])}${flags.includes("--details") ? "&details=1" : ""}`;
     const page = await browser.newPage({ viewport: { width: 1200, height: 900 } }), errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
     await page.goto(site + "/slice.html?" + query);

@@ -1,5 +1,5 @@
 {
- "about": "Hand-reviewed tags for every reference. Keys are a phone photo's file in public/photos-ref, or 'ref:<path>' for a file in the private villacana-reference repo. shows: area ids from data/areas.json (what the picture shows, not where the camera stood). viewpoint: ground, upper-floor, roof, aerial or map. useFor: topic ids from data/areas.json. note: anything an agent must know before using it. Do not put API keys, signed URLs or photo metadata here: this repo is public.",
+ "about": "Hand-reviewed tags for every reference. Keys are a phone photo's file in public/photos-ref, or 'ref:<path>' for a file in the private villacana-reference repo. shows: area ids from data/areas.json (what the picture shows, not where the camera stood). viewpoint: ground, upper-floor, roof, aerial or map. useFor: topic ids from data/areas.json. looksAt: [x, z] map metres of the picture's main subject, and subject: a few words naming it (set them for roof shots and for photos you build from; otherwise the builder estimates a point along the heading). note: anything an agent must know before using it. Do not put API keys, signed URLs or photo metadata here: this repo is public.",
  "IMG_2182.jpg": {
   "shows": [
    "seaward-lanes"
@@ -172,7 +172,12 @@
    "layout",
    "materials"
   ],
-  "title": "Calle Elena north: tiled lane between planted beds"
+  "title": "Calle Elena north: tiled lane between planted beds",
+  "looksAt": [
+   -144.9,
+   49.2
+  ],
+  "subject": "The second hedged bed and the lane"
  },
  "IMG_2198.jpg": {
   "shows": [
@@ -183,7 +188,12 @@
    "layout",
    "planting"
   ],
-  "title": "Calle Elena north: lane with low white bed walls and pollarded trees"
+  "title": "Calle Elena north: lane with low white bed walls and pollarded trees",
+  "looksAt": [
+   -144.9,
+   49.2
+  ],
+  "subject": "The second hedged bed"
  },
  "IMG_2199.jpg": {
   "shows": [
@@ -194,7 +204,12 @@
    "planting",
    "layout"
   ],
-  "title": "Calle Elena north: planting bed with pollarded tree and a garden door"
+  "title": "Calle Elena north: planting bed with pollarded tree and a garden door",
+  "looksAt": [
+   -146.9,
+   45.5
+  ],
+  "subject": "The first hedged bed"
  },
  "IMG_2200.jpg": {
   "shows": [
@@ -205,7 +220,12 @@
    "layout",
    "planting"
   ],
-  "title": "Calle Elena north: lane beside hedged beds and pollarded trees"
+  "title": "Calle Elena north: lane beside hedged beds and pollarded trees",
+  "looksAt": [
+   -146.9,
+   45.5
+  ],
+  "subject": "The first hedged bed"
  },
  "IMG_2201.jpg": {
   "shows": [
@@ -216,7 +236,12 @@
    "layout",
    "materials"
   ],
-  "title": "Calle Elena north: lane with window grilles and beds"
+  "title": "Calle Elena north: lane with window grilles and beds",
+  "looksAt": [
+   -146.9,
+   45.5
+  ],
+  "subject": "The first hedged bed and the lane north"
  },
  "IMG_2202.jpg": {
   "shows": [
@@ -253,7 +278,12 @@
    "view"
   ],
   "title": "North pool from above: whole courtyard, terraces, mountains behind",
-  "note": "Taken from an upper floor; the camera pin is inside a building."
+  "note": "Taken from an upper floor; the camera pin is inside a building.",
+  "looksAt": [
+   -176.7,
+   20.1
+  ],
+  "subject": "The north pool"
  },
  "IMG_2205.jpg": {
   "shows": [
@@ -267,7 +297,12 @@
    "view"
   ],
   "title": "North pool from above, looking north to the mountains",
-  "note": "Taken from an upper floor; the camera pin is inside a building."
+  "note": "Taken from an upper floor; the camera pin is inside a building.",
+  "looksAt": [
+   -176.7,
+   20.1
+  ],
+  "subject": "The north pool"
  },
  "IMG_2206.jpg": {
   "shows": [
@@ -278,7 +313,12 @@
    "layout",
    "facades"
   ],
-  "title": "North pool from above, west side terraces"
+  "title": "North pool from above, west side terraces",
+  "looksAt": [
+   -178.5,
+   22.0
+  ],
+  "subject": "The north pool, west side"
  },
  "IMG_2207.jpg": {
   "shows": [
@@ -289,7 +329,12 @@
    "materials",
    "planting"
   ],
-  "title": "Looking down over lichen-mottled barrel roof tiles to the north pool garden"
+  "title": "Looking down over lichen-mottled barrel roof tiles to the north pool garden",
+  "looksAt": [
+   -171.0,
+   27.0
+  ],
+  "subject": "The north pool garden below the roof"
  },
  "IMG_2208.jpg": {
   "shows": [
@@ -300,7 +345,12 @@
    "materials",
    "layout"
   ],
-  "title": "Barrel roof tiles, curved hedges and path below, pool edge"
+  "title": "Barrel roof tiles, curved hedges and path below, pool edge",
+  "looksAt": [
+   -171.5,
+   26.0
+  ],
+  "subject": "The north pool garden and path below the roof"
  },
  "IMG_2214.jpg": {
   "shows": [
@@ -385,7 +435,12 @@
    "planting"
   ],
   "title": "From a roof looking down into the lane and lawns of Calle Elena south",
-  "note": "Overhead view of the lane layout. The pin is the roof, not the lane."
+  "note": "Overhead view of the lane layout. The pin is the roof, not the lane.",
+  "looksAt": [
+   -151.0,
+   58.5
+  ],
+  "subject": "The Elena south lane and lawns below the roof"
  },
  "IMG_2223.jpg": {
   "shows": [
@@ -718,7 +773,12 @@
   "useFor": [
    "signage"
   ],
-  "title": "Plaque reading CALLE ELENA 18-30"
+  "title": "Plaque reading CALLE ELENA 18-30",
+  "looksAt": [
+   -155.6,
+   38.8
+  ],
+  "subject": "The CALLE ELENA plaque in the covered walkway"
  },
  "IMG_2255.jpg": {
   "shows": [
@@ -775,7 +835,12 @@
    "levels",
    "layout"
   ],
-  "note": "Shows steps beside a sloping strip, with a drain at the foot."
+  "note": "Shows steps beside a sloping strip, with a drain at the foot.",
+  "looksAt": [
+   -153.9,
+   57.5
+  ],
+  "subject": "The steps beside the Cervantes ramp"
  },
  "IMG_2263.jpg": {
   "shows": [
@@ -997,7 +1062,12 @@
    "levels",
    "layout",
    "signage"
-  ]
+  ],
+  "looksAt": [
+   -153.9,
+   57.5
+  ],
+  "subject": "The steps beside the Cervantes ramp"
  },
  "IMG_2287.jpg": {
   "shows": [
@@ -1493,7 +1563,12 @@
    "planting",
    "view"
   ],
-  "note": "Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away."
+  "note": "Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away.",
+  "looksAt": [
+   -140.0,
+   46.0
+  ],
+  "subject": "Cervantes east of Elena, seen along its line"
  },
  "IMG_2361.jpg": {
   "shows": [
@@ -1505,7 +1580,12 @@
    "materials",
    "facades"
   ],
-  "note": "Roof shot looking down. The pin is the roof, not the entry."
+  "note": "Roof shot looking down. The pin is the roof, not the entry.",
+  "looksAt": [
+   -164.5,
+   40.4
+  ],
+  "subject": "The gated tiled entry west of the covered walkway"
  },
  "IMG_2362.jpg": {
   "shows": [
@@ -1517,7 +1597,12 @@
    "facades",
    "view",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -146.0,
+   33.0
+  ],
+  "subject": "The terraces east of Elena north"
  },
  "IMG_2363.jpg": {
   "shows": [
@@ -1529,7 +1614,12 @@
    "layout",
    "planting"
   ],
-  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate."
+  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate.",
+  "looksAt": [
+   -159.3,
+   28.2
+  ],
+  "subject": "The arched gateway at the north end of Elena"
  },
  "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg": {
   "shows": [
@@ -1561,7 +1651,12 @@
    "facades",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -150.2,
+   39.8
+  ],
+  "subject": "The magnolia bed and the lean-to roof beside it"
  },
  "IMG_2365.jpg": {
   "shows": [
@@ -1573,7 +1668,12 @@
    "planting",
    "materials"
   ],
-  "note": "Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it."
+  "note": "Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it.",
+  "looksAt": [
+   -150.2,
+   39.8
+  ],
+  "subject": "The magnolia bed beside the Elena north lane"
  },
  "IMG_2332.jpg": {
   "shows": [
@@ -1646,7 +1746,12 @@
   "useFor": [
    "levels",
    "layout"
-  ]
+  ],
+  "looksAt": [
+   -153.9,
+   57.5
+  ],
+  "subject": "The ramp and steps side by side"
  },
  "IMG_2329.jpg": {
   "shows": [
@@ -1838,7 +1943,12 @@
   "viewpoint": "ground",
   "useFor": [
    "levels"
-  ]
+  ],
+  "looksAt": [
+   -153.9,
+   57.5
+  ],
+  "subject": "The steps beside the Cervantes ramp"
  },
  "IMG_2356.jpg": {
   "shows": [
@@ -1860,7 +1970,12 @@
    "layout",
    "planting"
   ],
-  "note": "Roof shot: the pin is the roof."
+  "note": "Roof shot: the pin is the roof.",
+  "looksAt": [
+   -151.0,
+   57.5
+  ],
+  "subject": "The junction lawns south of Cervantes"
  },
  "IMG_2359.jpg": {
   "shows": [
@@ -1871,7 +1986,12 @@
    "layout",
    "facades"
   ],
-  "note": "Roof shot: the pin is the roof."
+  "note": "Roof shot: the pin is the roof.",
+  "looksAt": [
+   -160.5,
+   55.0
+  ],
+  "subject": "The walled patios along Cervantes"
  },
  "IMG_2366.jpg": {
   "shows": [
@@ -1882,7 +2002,12 @@
    "layout",
    "planting"
   ],
-  "note": "Roof shot: the pin is the roof."
+  "note": "Roof shot: the pin is the roof.",
+  "looksAt": [
+   -145.5,
+   45.5
+  ],
+  "subject": "The private patios east of the Elena beds"
  },
  "IMG_2367.jpg": {
   "shows": [
@@ -1894,7 +2019,12 @@
    "layout",
    "planting"
   ],
-  "note": "Roof shot: the pin is the roof."
+  "note": "Roof shot: the pin is the roof.",
+  "looksAt": [
+   -151.5,
+   56.0
+  ],
+  "subject": "The Cervantes/Elena junction"
  },
  "IMG_2368.jpg": {
   "shows": [
@@ -1907,7 +2037,12 @@
    "facades",
    "view"
   ],
-  "note": "Roof shot: the pin is the roof."
+  "note": "Roof shot: the pin is the roof.",
+  "looksAt": [
+   -160.0,
+   54.0
+  ],
+  "subject": "The walled patios north of Cervantes"
  },
  "IMG_2369.jpg": {
   "shows": [
@@ -1920,6 +2055,11 @@
    "facades",
    "view"
   ],
-  "note": "Roof shot: the pin is the roof."
+  "note": "Roof shot: the pin is the roof.",
+  "looksAt": [
+   -160.0,
+   54.0
+  ],
+  "subject": "The walled patios north of Cervantes"
  }
 }

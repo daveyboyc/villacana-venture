@@ -47,7 +47,8 @@ def features(s):
         # The paseo's sandstone retaining wall and timber edge (data/paseo_wall.json).
         pw=json.loads((ROOT/'data/paseo_wall.json').read_text())
         add('paseo_wall.json:'+pw['wall']['id'],pw['wall']['name'],'reference feature','authored photo/map interpretation',evidence=pw['wall']['evidence'],points=pw['wall']['face'])
-        add('paseo_wall.json:'+pw['edge']['id'],pw['edge']['name'],'reference feature','authored photo/map interpretation',evidence=pw['edge']['evidence'])
+        # The timber edge is on the paseo beside the wall: the mapped paseo points along the wall stand in for it.
+        add('paseo_wall.json:'+pw['edge']['id'],pw['edge']['name'],'reference feature','authored photo/map interpretation',evidence=pw['edge']['evidence'],points=[q for q in sf['paseo']['points'] if nearest(q,pw['wall']['face'])[0]<8],width=sf['paseo']['width'])
     for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
         data=json.loads((ROOT/'data'/filename).read_text())
         for f in data[key]:
@@ -60,6 +61,9 @@ def features(s):
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
     for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    middle=json.loads((ROOT/'data/middle_pool.json').read_text())
+    for f in [middle['gateway'],middle['planter']]:
+        add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
     steps=json.loads((ROOT/'data/cervantes_elena_steps.json').read_text())
     add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))

@@ -7,11 +7,13 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 ## Known facts and open questions
 
 - IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.
+- Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m.
 
 ## Read first
 
-- docs: `docs/STREET_LAYOUT.md`
-- data: `data/street_layout.json`
+- docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`
+- data: `data/street_layout.json`, `data/middle_pool.json`
+- src: `src/middle-pool.ts`
 - contact sheet: `villacana-reference/contact-sheets/eva.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -19,11 +21,23 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 Layout: 9, Facades and roofs: 3, Materials: 3, Planting: 5, Signs: 1
 11 reviewed, 0 suggested only by camera position.
 
+## Built from these photos
+
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+
+```mermaid
+graph LR
+  A["Calle Eva"]
+  A --> F0["Middle pool · east gateway from Calle Eva"]
+  F0 --> PIMG_2244_jpg(["IMG_2244"])
+  F0 --> PIMG_2340_jpg(["IMG_2340"])
+```
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. |
+| [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |

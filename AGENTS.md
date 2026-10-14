@@ -34,7 +34,7 @@ For cross-cutting work (slopes, paving, planting) use `refs/topics/<id>.md`.
 - Areas and topics are fixed in `data/areas.json`. Do not invent new ids in a
   tag; add the area there first if one is genuinely missing.
 - What a picture shows goes in `data/reference_tags.json` (`shows`,
-  `viewpoint`, `useFor`, `note`). Tag only after looking at the image. A
+  `viewpoint`, `useFor`, `looksAt`, `subject`, `note`). Tag only after looking at the image. A
   camera position is only a suggestion: roof and upper-floor shots stand
   inside a building and show areas far away.
 - After building something from a photo, cite it in that feature's

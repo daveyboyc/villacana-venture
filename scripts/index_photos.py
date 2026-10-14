@@ -76,7 +76,7 @@ def index(source:Path,out:Path,annotations:dict|None=None)->list[dict]:
         for key in ('title','observation','originalUrl','visualReview','streetHint','areaHint'):
             if key in previous:merged[key]=previous[key]
         if previous.get('trust') not in (None,'phone location','unplaced'):
-            for key in ('x','z','heading','accuracy','trust','locationBasis','headingBasis'):
+            for key in ('x','z','heading','accuracy','trust','locationBasis','headingBasis','gps'):
                 if key in previous:merged[key]=previous[key]
         elif 'heading' not in fresh:
             merged.pop('heading',None)
