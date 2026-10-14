@@ -1479,5 +1479,66 @@
    "planting"
   ],
   "note": "Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish."
+ },
+ "IMG_2360.jpg": {
+  "shows": [
+   "cervantes",
+   "elena",
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "facades",
+   "planting",
+   "view"
+  ],
+  "note": "Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away."
+ },
+ "IMG_2361.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "note": "Roof shot looking down. The pin is the roof, not the entry."
+ },
+ "IMG_2362.jpg": {
+  "shows": [
+   "elena",
+   "whole-resort"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "facades",
+   "view",
+   "materials"
+  ]
+ },
+ "IMG_2363.jpg": {
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "viewpoint": "roof",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate."
+ },
+ "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials"
+  ],
+  "note": "No GPS in the file: exact stretch of beach not confirmed."
  }
 }

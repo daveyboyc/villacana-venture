@@ -100,5 +100,40 @@
     "originalUrl": "https://drive.google.com/file/d/1R76UK5F9UUkmC-pmJIdzi2scUz94dVyQ/view?usp=drivesdk",
     "visualReview": "observed; geometry comparison pending",
     "areaHint": "area:beach"
+  },
+  "IMG_2360.HEIC": {
+    "title": "Roof by Elena: looking east-north-east along Cervantes",
+    "observation": "From a roof terrace beside Calle Elena, looking roughly along the line of Cervantes. Below: courtyard walls with magenta bougainvillea, a patio with a timber pergola, arched first-floor windows, a wooden balcony under a small barrel-tile roof and iron balconies. Beyond: flat roofs with solar panels, the long apartment block, a tall palm and the sea at the right. Camera on a roof, so the pin sits inside a registry building.",
+    "originalUrl": "https://drive.google.com/file/d/1seE7lnED0do-4UC2-NhefdPNrAnqayEA/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "cervantes"
+  },
+  "IMG_2361.HEIC": {
+    "title": "Roof by Elena: looking down into a gated tiled entry",
+    "observation": "Looking south-west down over barrel roof tiles into a narrow entry between two-storey houses: patterned terracotta floor tiles, a pair of black iron gates in a white gateway topped with bougainvillea, a small first-floor balcony and an arched opening with lantern beyond. Gives the width and enclosure of the entry from above; dimensions are not measured. Camera on the roof of the covered-passage building (registry part 6265201UF1366N_part5).",
+    "originalUrl": "https://drive.google.com/file/d/1ZvbBNNna5Jt1O1j0q3NdKA5zns9arwba/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
+  },
+  "IMG_2362.HEIC": {
+    "title": "Roof by Elena: looking east-south-east over the terraces to the sea",
+    "observation": "Over lichen-mottled barrel roof tiles and a tall magnolia-like hedge: a wooden balcony with a tiled canopy, iron balconies with arched shuttered doors, flat roofs with solar panels and chimneys, a Norfolk pine, palms, and the sea on the horizon. Good for roofscape and facade detail.",
+    "originalUrl": "https://drive.google.com/file/d/1x8MfGmHi_e1rI95YY9tMK-7lt3KVWUxu/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
+  },
+  "IMG_2363.HEIC": {
+    "title": "Roof by Elena: looking down the lane to the north pool lawn gate",
+    "observation": "Looking almost straight down from a roof edge, north-north-west: a narrow square-tiled terracotta lane between white walls with a planted strip, private patios behind low walls with brown doors, and an arched white garden gateway with bougainvillea that opens onto crazy paving and the north pool lawn (bollard lights, palm, tree). Shows how the Elena north lane meets the north pool courtyard.",
+    "originalUrl": "https://drive.google.com/file/d/1ynufkQ9UxBR_MwF8fvJc4Kdlnasmsdxx/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
+  },
+  "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg": {
+    "title": "Beach: pebbles on sand at the water line",
+    "observation": "Wide 16:9 image of the beach at the water line: coarse grey-brown sand with scattered dark rounded pebbles, a denser pebble band along the shore, small breaking waves and a kite-surfer far out. No location data in the file, so it is unplaced; which stretch of beach it shows is not confirmed.",
+    "originalUrl": "https://drive.google.com/file/d/1sKwoPnIA4dgLpkvZ4Fzt5DkNCEm3hGFe/view?usp=drivesdk",
+    "visualReview": "observed; unplaced (no GPS)",
+    "areaHint": "area:beach"
   }
 }

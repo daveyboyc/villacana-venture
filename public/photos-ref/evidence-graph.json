@@ -1,10 +1,11 @@
 {
  "version": 1,
- "inputDigest": "777184af92efb2b486e07e7cf88b0044d4711b60241ba9ab8140499e579feead",
+ "inputDigest": "7cba1fbaef01a6fb96152acfe14ab7fb13e054cb547f7c7fc4cacc2a576e741c",
  "summary": {
-  "needs-review": 84,
-  "suggested": 22,
-  "photos": 106,
+  "unplaced": 1,
+  "needs-review": 86,
+  "suggested": 24,
+  "photos": 111,
   "features": 280,
   "photosCitedByModel": 18,
   "modelFeaturesWithPhotoCitations": 22
@@ -2047,6 +2048,13 @@
    ]
   },
   {
+   "id": "photo:6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+   "kind": "photo",
+   "name": "Beach: pebbles on sand at the water line",
+   "file": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+   "status": "unplaced"
+  },
+  {
    "id": "photo:IMG_2182.jpg",
    "kind": "photo",
    "name": "IMG_2182",
@@ -2786,6 +2794,34 @@
    "kind": "photo",
    "name": "Beach: pebbles, sand and distant coastline",
    "file": "IMG_2300.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2360.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking east-north-east along Cervantes",
+   "file": "IMG_2360.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2361.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking down into a gated tiled entry",
+   "file": "IMG_2361.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2362.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking east-south-east over the terraces to the sea",
+   "file": "IMG_2362.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2363.jpg",
+   "kind": "photo",
+   "name": "Roof by Elena: looking down the lane to the north pool lawn gate",
+   "file": "IMG_2363.jpg",
    "status": "suggested"
   }
  ],
@@ -5753,6 +5789,81 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 28.5,
+   "angleOffset": 5.8
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 35.2,
+   "angleOffset": 32.1
+  },
+  {
+   "from": "photo:IMG_2361.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 17.0,
+   "angleOffset": 27.6
+  },
+  {
+   "from": "photo:IMG_2361.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 17.0,
+   "angleOffset": 24.4
+  },
+  {
+   "from": "photo:IMG_2361.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 34.1,
+   "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2362.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2362.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 25.9,
+   "angleOffset": 11.3
+  },
+  {
+   "from": "photo:IMG_2362.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 40.5,
+   "angleOffset": 17.2
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "building:6265401UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 28.3,
+   "angleOffset": 29.6
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "building:6266601UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 41.5,
+   "angleOffset": 5.2
   }
  ]
 }

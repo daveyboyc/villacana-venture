@@ -1,16 +1,28 @@
 {
  "version": 1,
- "inputDigest": "777184af92efb2b486e07e7cf88b0044d4711b60241ba9ab8140499e579feead",
+ "inputDigest": "7cba1fbaef01a6fb96152acfe14ab7fb13e054cb547f7c7fc4cacc2a576e741c",
  "summary": {
-  "needs-review": 84,
-  "suggested": 22,
-  "photos": 106,
+  "unplaced": 1,
+  "needs-review": 86,
+  "suggested": 24,
+  "photos": 111,
   "features": 280,
   "photosCitedByModel": 18,
   "modelFeaturesWithPhotoCitations": 22
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
+  {
+   "file": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+   "status": "unplaced",
+   "reasons": [
+    "No usable camera coordinates"
+   ],
+   "nearby": [],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; unplaced (no GPS)"
+  },
   {
    "file": "IMG_2182.jpg",
    "status": "needs-review",
@@ -4482,6 +4494,148 @@
     "basis": "phone location",
     "reportedAccuracy": 3.6,
     "heading": 45,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2360.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Photo/sign interpretation disagrees with the GPS street candidates",
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 28.5,
+     "angleOffset": 5.8
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 35.2,
+     "angleOffset": 32.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.7,
+    "z": 50.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 73,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2361.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Photo/sign interpretation disagrees with the GPS street candidates",
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 17.0,
+     "angleOffset": 27.6
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 17.0,
+     "angleOffset": 24.4
+    },
+    {
+     "id": "building:6265201UF1366N_part6",
+     "distance": 34.1,
+     "angleOffset": 34.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -161.7,
+    "z": 42.1,
+    "basis": "phone location",
+    "reportedAccuracy": 4.6,
+    "heading": 236,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2362.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 25.9,
+     "angleOffset": 11.3
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 40.5,
+     "angleOffset": 17.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.2,
+    "z": 36.5,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 107,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2363.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part1",
+     "distance": 28.3,
+     "angleOffset": 29.6
+    },
+    {
+     "id": "building:6266601UF1366N_part4",
+     "distance": 41.5,
+     "angleOffset": 5.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.9,
+    "z": 33.1,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 343,
     "headingBasis": "EXIF true north"
    }
   }

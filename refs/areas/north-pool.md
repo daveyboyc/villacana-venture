@@ -18,8 +18,8 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 
 ## Coverage
 
-Layout: 11, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 5, Views: 5
-16 reviewed, 0 suggested only by camera position.
+Layout: 12, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 6, Views: 5
+17 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
@@ -41,3 +41,4 @@ Layout: 11, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 
 | `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies |
 | `villacana-reference/apple-maps/09-3d-north-pool-looking-south.png` | aerial | layout | Apple Maps 3D: north pool looking south, lawn ring, curved path, deck |
 | [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5._ |
+| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. |
