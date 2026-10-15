@@ -17,7 +17,19 @@ export function siteY(x: number, z: number): number {
   else for (let i = 1; i < foot.length; i++) if (tz <= foot[i][1]) { edge = foot[i - 1][0] + (foot[i][0] - foot[i - 1][0]) * (tz - foot[i - 1][1]) / (foot[i][1] - foot[i - 1][1]); break; }
   // Level again by the time the land reaches the paseo.
   const seaward = 1 - clamp((tz - west.fade[0]) / (west.fade[1] - west.fade[0]), 0, 1);
-  return west.rise * clamp((edge - tx) / runAt(tz), 0, 1) * seaward;
+  return west.rise * clamp((edge - tx) / runAt(tz), 0, 1) * seaward + localPatioY(x,z);
+}
+
+/** Local photo-backed patios: the pool/lawn stays level; the open stair flight supplies stepped ground. */
+export function localPatioY(x:number,z:number):number {
+  for(const patio of data.localPatios ?? []) {
+    const f=patio.flight,dx=f.to[0]-f.from[0],dz=f.to[1]-f.from[1],length=Math.hypot(dx,dz);
+    const along=((x-f.from[0])*dx+(z-f.from[1])*dz)/length;
+    const across=((x-f.from[0])*-dz+(z-f.from[1])*dx)/length;
+    if(along>=0&&along<=length&&Math.abs(across)<=f.width/2)return f.rise*Math.min(f.count,Math.floor(along/length*f.count)+1)/f.count;
+    if(pointInRing(x,z,patio.ring as Vec2[]))return patio.height;
+  }
+  return 0;
 }
 
 /** The slope's length: 7 m along most of the foot line, shorter where a photographed ramp is steeper. */
@@ -33,10 +45,11 @@ export function runAt(tz: number): number {
 
 /** The raised part of the ground, laid over the flat sheet with the same painted texture. */
 export function addRaisedGround(scene: THREE.Scene, material: THREE.Material, centre: { x: number; z: number }, span: number): void {
+  // Local patios supply their own exact platform/tread meshes; do not interpolate their risers into ramps.
   const cell = 1, n = Math.ceil(span * 2 / cell), x0 = centre.x - span, z0 = centre.z - span;
   const positions: number[] = [], uvs: number[] = [];
   for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
-    const corners = [[i, j], [i, j + 1], [i + 1, j], [i + 1, j], [i, j + 1], [i + 1, j + 1]].map(([a, b]) => { const x = x0 + a * cell, z = z0 + b * cell; return [x, siteY(x, z), z]; });
+    const corners = [[i, j], [i, j + 1], [i + 1, j], [i + 1, j], [i, j + 1], [i + 1, j + 1]].map(([a, b]) => { const x = x0 + a * cell, z = z0 + b * cell; return [x, siteY(x, z) - localPatioY(x,z), z]; });
     if (!corners.some((c) => c[1] > 0)) continue;
     for (const [x, y, z] of corners) { positions.push(x, y + 0.004, z); uvs.push((x - x0) / (span * 2), 1 - (z - z0) / (span * 2)); }
   }

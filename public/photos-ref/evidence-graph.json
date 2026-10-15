@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 297,
+  "photosCitedByModel": 46,
+  "modelFeaturesWithPhotoCitations": 39
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2191,6 +2191,49 @@
    ]
   },
   {
+   "id": "north_pool.json:north-pool-west-curved-wall",
+   "name": "North pool west curved patio retaining wall",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "north_pool.json:north-pool-north-curved-wall",
+   "name": "North pool north raised patio wall",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg"
+   ]
+  },
+  {
+   "id": "north_pool.json:north-pool-west-paving",
+   "name": "North pool west and north crazy paving",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "north_pool.json:north-pool-patio-steps",
+   "name": "North pool tiled steps to raised patio",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
    "id": "photo:6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
    "kind": "photo",
    "name": "Beach: pebbles on sand at the water line",
@@ -3818,6 +3861,30 @@
    "angleOffset": 4.7
   },
   {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool.json:north-pool-west-curved-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool.json:north-pool-north-curved-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool.json:north-pool-west-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool.json:north-pool-patio-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2205.jpg",
    "to": "building:6266601UF1366N_part3",
    "relation": "possibly-in-view",
@@ -3830,6 +3897,24 @@
    "relation": "possibly-in-view",
    "distance": 39.7,
    "angleOffset": 8.2
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool.json:north-pool-west-curved-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool.json:north-pool-north-curved-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool.json:north-pool-west-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",
@@ -3874,6 +3959,18 @@
    "angleOffset": 30.2
   },
   {
+   "from": "photo:IMG_2207.jpg",
+   "to": "north_pool.json:north-pool-west-curved-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2207.jpg",
+   "to": "north_pool.json:north-pool-west-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2208.jpg",
    "to": "building:6165501UF1366N_part1",
    "relation": "possibly-in-view",
@@ -3893,6 +3990,18 @@
    "relation": "possibly-in-view",
    "distance": 36.9,
    "angleOffset": 8.9
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "north_pool.json:north-pool-west-curved-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "north_pool.json:north-pool-west-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2214.jpg",

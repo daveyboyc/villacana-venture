@@ -4,7 +4,9 @@ import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-west = json.loads((ROOT / 'data/terrain.json').read_text())['west']
+terrain = json.loads((ROOT / 'data/terrain.json').read_text())
+west = terrain['west']
+from check_map import inside
 skeleton = json.loads((ROOT / 'public/map/skeleton.json').read_text())
 angle = math.radians(skeleton['viewRotation'])
 
@@ -26,7 +28,15 @@ def site_y(p):
                 edge = a[0] + (b[0] - a[0]) * (tz - a[1]) / (b[1] - a[1])
                 break
     seaward = 1 - max(0, min(1, (tz - west['fade'][0]) / (west['fade'][1] - west['fade'][0])))
-    return west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
+    height = west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
+    for patio in terrain.get('localPatios', []):
+        f=patio['flight'];a,b=f['from'],f['to'];dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
+        along=((p[0]-a[0])*dx+(p[1]-a[1])*dz)/length
+        across=((p[0]-a[0])*-dz+(p[1]-a[1])*dx)/length
+        if 0<=along<=length and abs(across)<=f['width']/2:
+            return height+f['rise']*min(f['count'],math.floor(along/length*f['count'])+1)/f['count']
+        if inside(*p,patio['ring']):return height+patio['height']
+    return height
 
 
 def run_at(tz):

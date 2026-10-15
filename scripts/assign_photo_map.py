@@ -69,6 +69,9 @@ def features(s):
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])
+    north=json.loads((ROOT/'data/north_pool.json').read_text())
+    for f in [*north['walls'],north['path'],north['stairs']]:
+        add('north_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],points=f.get('points',[f.get('from'),f.get('to')]))
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

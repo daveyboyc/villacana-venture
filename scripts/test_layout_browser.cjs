@@ -67,6 +67,7 @@ const path = require("node:path");
         ...cervantesPatioWallRings(),
         ...elenaNorthRings(),
         ...middlePoolRings(),
+        ...(await import("/src/north-pool.ts")).northPoolWallRings(),
         ...coastalWallRings(),
       ],
       Object.fromEntries(
@@ -75,6 +76,7 @@ const path = require("node:path");
         ),
       ),
     );
+    const { northPoolWallRings, northPoolRoutes, northPoolPath, northPoolSteps, northPoolTreads, addNorthPoolGarden } = await import("/src/north-pool.ts");
     let open = true;
     const sd = makeSeaside(s.seafront, s.viewRotation);
     const world = {
@@ -133,8 +135,18 @@ const path = require("node:path");
         segments++;
       }
     };
+    // Local courtyard paths and the five-riser opening remain walkable both ways.
+    walk(northPoolPath.points);walk([...northPoolPath.points].reverse());
+    walk([northPoolSteps.from,northPoolSteps.to]);walk([northPoolSteps.to,northPoolSteps.from]);
+    for(const tread of northPoolTreads()){
+      const x=tread.ring.reduce((v,p)=>v+p[0],0)/4,z=tread.ring.reduce((v,p)=>v+p[1],0)/4;
+      if(Math.abs(siteY(x,z)-tread.height)>.001)throw Error("North patio tread/ground mismatch");
+    }
+    const northScene=new THREE.Scene();northScene.userData.layoutOnly=true;addNorthPoolGarden(northScene);
+    if(northScene.children.filter(o=>o.name===northPoolSteps.id).length!==northPoolSteps.count)throw Error("Missing north patio tread meshes");
+    if(!northPoolWallRings().length)throw Error("North garden lacks collision");
     const routes = protectedRoutes(s.boundaryReference, undefined, [
-      coastalAccess,
+      coastalAccess,...northPoolRoutes,
     ]);
     for (const route of routes)
       for (const points of [route.points, [...route.points].reverse()])
