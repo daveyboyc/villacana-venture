@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
+  "features": 296,
   "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "modelFeaturesWithPhotoCitations": 38
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -733,7 +733,9 @@
     }
    ],
    "citedBy": [
-    "elena_north.json:elena-north-tree-bed-1"
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-tree-bed-1",
+    "elena_north.json:elena-north-garden-door-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -778,8 +780,11 @@
     }
    ],
    "citedBy": [
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-window-return",
     "elena_north.json:elena-north-tree-bed-1",
-    "elena_north.json:elena-north-tree-bed-2"
+    "elena_north.json:elena-north-tree-bed-2",
+    "elena_north.json:elena-north-garden-door-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -823,9 +828,12 @@
     }
    ],
    "citedBy": [
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-window-return",
     "elena_north.json:elena-north-tree-bed-1",
     "elena_north.json:elena-north-planter-box-1",
-    "elena_north.json:elena-north-planter-box-2"
+    "elena_north.json:elena-north-planter-box-2",
+    "elena_north.json:elena-north-garden-door-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

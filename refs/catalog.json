@@ -577,7 +577,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
    "street:elena-north",
-   "street:cervantes"
+   "elena_north.json:elena-north-garden-door-path",
+   "elena_north.json:elena-north-garden-wall"
   ],
   "subject": "The second hedged bed and the lane"
  },
@@ -620,7 +621,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
    "street:elena-north",
-   "street:cervantes"
+   "elena_north.json:elena-north-garden-door-path",
+   "elena_north.json:elena-north-garden-wall"
   ],
   "subject": "The second hedged bed"
  },
@@ -651,7 +653,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "elena_north.json:elena-north-tree-bed-1"
+   "elena_north.json:elena-north-garden-wall",
+   "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "looksAt": [
    -146.9,
@@ -660,8 +664,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-garden-wall",
    "street:elena-north",
-   "elena_north.json:elena-north-magnolia-bed"
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "subject": "The first hedged bed"
  },
@@ -692,8 +697,11 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "elena_north.json:elena-north-garden-wall",
+   "elena_north.json:elena-north-window-return",
    "elena_north.json:elena-north-tree-bed-1",
-   "elena_north.json:elena-north-tree-bed-2"
+   "elena_north.json:elena-north-tree-bed-2",
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "looksAt": [
    -146.9,
@@ -702,8 +710,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-garden-wall",
    "street:elena-north",
-   "elena_north.json:elena-north-magnolia-bed"
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "subject": "The first hedged bed"
  },
@@ -734,9 +743,12 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "elena_north.json:elena-north-garden-wall",
+   "elena_north.json:elena-north-window-return",
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-planter-box-1",
-   "elena_north.json:elena-north-planter-box-2"
+   "elena_north.json:elena-north-planter-box-2",
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "looksAt": [
    -146.9,
@@ -745,8 +757,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-garden-wall",
    "street:elena-north",
-   "elena_north.json:elena-north-magnolia-bed"
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "subject": "The first hedged bed and the lane north"
  },
@@ -1117,7 +1130,9 @@
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
-   "street:cervantes"
+   "street:cervantes",
+   "elena_north.json:elena-north-garden-wall",
+   "elena_north.json:elena-north-garden-door-path"
   ]
  },
  {
@@ -4930,7 +4945,7 @@
    "street:elena-north",
    "elena_north.json:elena-north-planter-box-2",
    "elena_north.json:elena-north-tree-bed-1",
-   "elena_north.json:elena-north-planter-box-1"
+   "elena_north.json:elena-north-garden-door-path"
   ]
  },
  {
@@ -5205,6 +5220,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-magnolia-bed",
+   "elena_north.json:elena-north-garden-wall",
    "street:elena-north"
   ],
   "subject": "The magnolia bed and the lean-to roof beside it"
@@ -5247,6 +5263,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-magnolia-bed",
+   "elena_north.json:elena-north-garden-wall",
    "street:elena-north"
   ],
   "subject": "The magnolia bed beside the Elena north lane"
@@ -5285,6 +5302,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-garden-wall",
+   "elena_north.json:elena-north-garden-door-path",
    "elena_north.json:elena-north-tree-bed-2"
   ],
   "subject": "The private patios east of the Elena beds"

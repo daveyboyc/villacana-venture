@@ -1386,6 +1386,16 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "elena_north.json:elena-north-garden-door-path",
+   "kind": "model-feature",
+   "name": "Elena north · paved approach between the hedged beds"
+  },
+  {
+   "id": "elena_north.json:elena-north-garden-wall",
+   "kind": "model-feature",
+   "name": "Elena north · garden wall and closed timber door"
+  },
+  {
    "id": "elena_north.json:elena-north-gateway",
    "kind": "model-feature",
    "name": "Elena north · arched gateway to the north pool lawn"
@@ -1424,6 +1434,11 @@
    "id": "elena_north.json:elena-north-tree-bed-2",
    "kind": "model-feature",
    "name": "Elena north · second hedged bed"
+  },
+  {
+   "id": "elena_north.json:elena-north-window-return",
+   "kind": "model-feature",
+   "name": "Elena north · barred window wall at the north end of the bed"
   },
   {
    "id": "frontage_divisions.json:cervantes-elena-lawn-1",
@@ -4783,6 +4798,36 @@
    "relation": "cites"
   },
   {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "ref:IMG_2201.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "ref:IMG_2201.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "elena_north.json:elena-north-gateway",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -4875,6 +4920,16 @@
   {
    "from": "elena_north.json:elena-north-tree-bed-2",
    "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-window-return",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-window-return",
+   "to": "ref:IMG_2201.jpg",
    "relation": "cites"
   },
   {
@@ -5133,6 +5188,16 @@
    "relation": "in-area"
   },
   {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
    "from": "elena_north.json:elena-north-gateway",
    "to": "area:elena",
    "relation": "in-area"
@@ -5169,6 +5234,11 @@
   },
   {
    "from": "elena_north.json:elena-north-tree-bed-2",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_north.json:elena-north-window-return",
    "to": "area:elena",
    "relation": "in-area"
   },
@@ -5310,7 +5380,13 @@
   },
   {
    "from": "ref:IMG_2197.jpg",
-   "to": "street:cervantes",
+   "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2197.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5328,7 +5404,13 @@
   },
   {
    "from": "ref:IMG_2198.jpg",
-   "to": "street:cervantes",
+   "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2198.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5340,13 +5422,19 @@
   },
   {
    "from": "ref:IMG_2199.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2199.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2199.jpg",
-   "to": "elena_north.json:elena-north-magnolia-bed",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5358,13 +5446,19 @@
   },
   {
    "from": "ref:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2200.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2200.jpg",
-   "to": "elena_north.json:elena-north-magnolia-bed",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5376,13 +5470,19 @@
   },
   {
    "from": "ref:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2201.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2201.jpg",
-   "to": "elena_north.json:elena-north-magnolia-bed",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5425,6 +5525,18 @@
   {
    "from": "ref:IMG_2216.jpg",
    "to": "street:cervantes",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2216.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2216.jpg",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -6336,7 +6448,7 @@
   },
   {
    "from": "ref:IMG_2356.jpg",
-   "to": "elena_north.json:elena-north-planter-box-1",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6396,6 +6508,12 @@
   },
   {
    "from": "ref:IMG_2364.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2364.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
@@ -6408,6 +6526,12 @@
   },
   {
    "from": "ref:IMG_2365.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2365.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
@@ -6415,6 +6539,18 @@
   {
    "from": "ref:IMG_2366.jpg",
    "to": "elena_north.json:elena-north-tree-bed-1",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },

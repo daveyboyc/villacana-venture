@@ -164,6 +164,18 @@ const path = require("node:path");
         if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.4) throw Error("Raised bed " + bed.id + " is not solid");
       }
     }
+    // Elena garden spur: enter between the beds, reach the door, then stop at it.
+    {
+      const { gardenPath: approach } = await (await fetch("/data/elena_north.json")).json();
+      const [a,b] = [approach.from_, approach.to], length = Math.hypot(b[0]-a[0], b[1]-a[1]);
+      const u = [(b[0]-a[0])/length, (b[1]-a[1])/length];
+      const near = [b[0]-u[0]*0.62, b[1]-u[1]*0.62];
+      walk([a,near]); walk([near,a]); walk([a,near]);
+      for(let i=0;i<240;i++) player.update(1/120,{...input,moveZ:1},world,Math.atan2(u[0],-u[1]));
+      const remaining = (b[0]-player.x)*u[0]+(b[1]-player.z)*u[1];
+      if(remaining<0.45 || remaining>0.7) throw Error("Elena closed garden door failed to stop player: " + remaining);
+      walk([[player.x,player.z],a]);
+    }
     // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
     {
       const { paseoWallRings, paseoWallFace } = await import("/src/paseo-wall.ts");
