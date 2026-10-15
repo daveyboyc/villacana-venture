@@ -46,7 +46,10 @@ photos**.
 ## Not visible yet (photos wanted)
 
 `photosWanted` in the survey lists the shots that would settle these:
-- whether the south pool lawn is lower than the middle and north pools
+- whether the south pool lawn is lower than the middle and north pools (the
+  pools can't be seen from each other, so this needs photos along the lane between
+  them)
+- Cervantes east of Elena, towards Pintor Picasso, which no photo covers
 - the exact place of the north pool stair
 - the patio floors on the north side of upper Cervantes and the south-side front
   patios
