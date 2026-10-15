@@ -96,9 +96,21 @@ for p in sample(n['wall']['points']):north_clear(p,n['wall']['thickness']/2,'bro
 for p in n['pergola']['points']:north_clear(p,n['pergola']['width']*.71,'pergola post')
 st=n['steps'];stair=strip(st['foot'],st['toward'],st['width']/2)
 for p in sample(stair,True):north_clear(p,0,'north steps')
-assert st['count']==3 and .3<=st['rise']<=.5
-terrain=json.loads((ROOT/'data/terrain.json').read_text())['middlePoolNorthSteps']
-for key in ('foot','toward','width','count','rise'):assert st[key]==terrain[key],f'step mesh/ground mismatch {key}'
+assert len(st['risers'])==3 and 0<st['risers'][0]<st['risers'][1]<st['risers'][2]<st['end']
+assert abs(math.dist(st['foot'],st['toward'])-st['end'])<1e-6
+assert 'middlePoolNorth.steps' in (ROOT/'src/ramp-steps.ts').read_text(),'North steps must use existing terrain flight mechanism'
+assert 'middlePoolNorthSteps' not in (ROOT/'data/terrain.json').read_text(),'Do not add an isolated north plateau'
+ns={'__file__':str(ROOT/'scripts/check_terrain.py')}
+exec((ROOT/'scripts/check_terrain.py').read_text().split('\nassert')[0],ns)
+base=ns['site_y'](st['foot']);top=ns['site_y'](st['toward'])
+assert abs(base)<1e-6 and abs(top-.5)<1e-6,'North steps must join pool-level foot to existing upper lane'
+assert .3<=top-base<=.55
+for i,r in enumerate(st['risers']):
+ t=(r+.01)/st['end'];p=[st['foot'][j]+(st['toward'][j]-st['foot'][j])*t for j in range(2)]
+ tread=base+(top-base)*(i+1)/len(st['risers'])
+ offset=max(0,tread-ns['site_y'](p))
+ assert abs(ns['site_y'](p)+offset-max(tread,ns['site_y'](p)))<1e-8
+assert abs(max(top,base+(top-base))-top)<1e-8,'No extra rise at upper endpoint'
 positions=json.loads((ROOT/'data/photo_positions.json').read_text())
 for name in ('IMG_2331.HEIC','IMG_2332.HEIC'):
  assert positions[name]['locationBasis'] and positions[name]['gps']['accuracy']>8

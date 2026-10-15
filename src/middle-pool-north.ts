@@ -14,7 +14,10 @@ export function middlePoolNorthRings(): Vec2[][] {
   const p = data.pergola;
   return [data.cap.ring as Vec2[], strip(...data.wall.points as [Vec2,Vec2],data.wall.thickness), ...p.points.map(([x,z]) => [[x-p.width/2,z-p.width/2],[x+p.width/2,z-p.width/2],[x+p.width/2,z+p.width/2],[x-p.width/2,z+p.width/2]] as Vec2[])];
 }
-export function middlePoolNorthStepRing(): Vec2[] { return strip(...[data.steps.foot,data.steps.toward] as [Vec2,Vec2],data.steps.width); }
+export function middlePoolNorthStepRing(): Vec2[] {
+  const s=data.steps, t=s.risers[0]/s.end, a:Vec2=[s.foot[0]+(s.toward[0]-s.foot[0])*t,s.foot[1]+(s.toward[1]-s.foot[1])*t];
+  return strip(a,s.toward as Vec2,s.width);
+}
 function solid(ring: Vec2[], height: number, material: THREE.Material, id: string): THREE.Mesh {
   const shape = new THREE.Shape(ring.map(([x,z]) => new THREE.Vector2(x,-z)));
   const mesh = new THREE.Mesh(new THREE.ExtrudeGeometry(shape,{depth:height,bevelEnabled:false}).rotateX(-Math.PI/2),material);
@@ -39,10 +42,5 @@ export function addMiddlePoolNorth(scene: THREE.Scene): void {
   group.add(new THREE.Mesh(new THREE.ExtrudeGeometry(shape,{depth:p.depth,bevelEnabled:false}).translate(0,0,-p.depth/2),plaster));
   group.position.set((pa[0]+pb[0])/2,0,(pa[1]+pb[1])/2);group.rotation.y=-Math.atan2(pb[1]-pa[1],pb[0]-pa[0]);
   group.traverse(o=>{o.name=p.id;if(o instanceof THREE.Mesh)o.castShadow=o.receiveShadow=true;});scene.add(group);
-  // Treads have matching terrain heights; do not drape them onto themselves.
-  const s=data.steps, f=s.foot as Vec2, t=s.toward as Vec2;
-  for(let i=0;i<s.count;i++) {
-    const start:Vec2=[f[0]+(t[0]-f[0])*i/s.count,f[1]+(t[1]-f[1])*i/s.count];
-    const block=solid(strip(start,t,s.width),s.rise*(i+1)/s.count,plaster,s.id);block.userData.noDrape=true;scene.add(block);
-  }
+  // Steps are drawn by addRampSteps; their ground offset uses the existing siteY rise.
 }

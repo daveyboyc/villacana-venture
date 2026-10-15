@@ -84,10 +84,13 @@ north termination to the existing planter, the three white side steps, a bounded
 white garden-wall fragment with its closed brown door, and an open shallow
 pergola entrance. The original west planter ring, registry houses, pool rings
 and lane lines remain unchanged. The same outlines drive the blueprint and
-collision; the posts leave the entire protected lane open. The side flight has
-matching three stepped ground heights in `data/terrain.json`, confined to its
-0.82 m width and 1.52 m run. It does not infer an elevated terrace beyond the
-visible upper edge or change the resort's other levels.
+collision; the posts leave the entire protected lane open. The side flight uses the shared `src/ramp-steps.ts` mechanism to climb the
+existing terrain from pool level to the continuous upper lane at +0.5 m.
+Its ground offset is only the difference between each tread and `siteY`,
+confined to a 0.82 m strip; it adds no second terrain plateau. The approach
+and flight extend about 4.5 m to meet the existing upper lane; exact tread
+positions remain estimates. The upstream terrain foot line and local runs
+are preserved unchanged.
 
 IMG_2331 and IMG_2332 camera corrections in `data/photo_positions.json` are
 anchored independently to the aerial crazy-paving fork, the registry pool ring
@@ -98,7 +101,25 @@ white wall / brown door / pergola arrangement across the pool; IMG_2192 shows
 the separate southern path fork and is not mistaken for the north entrance.
 
 Limits: wall length and ends, entrance span, planter-cap radius, tread dimensions
-and 0.42 m rise are estimates from the photos, not measurements. Fragments stop
+are estimates from the photos, not measurements. The flight uses the existing
+0.5 m western rise, within the survey's 0.3-0.55 m photo range. Fragments stop
 where the visible evidence stops. No glass safety fence is added. The queue
 stays in progress pending final browser route checks and matched-camera image
 review; passing source checks alone does not establish photographic fidelity.
+## West side: the courtyard's step up to the Dalí level (15 October)
+
+The courtyard and the path beside the planter are at pool level; the ground
+behind the planter is the upper, Dalí-side level, 0.5 m higher. The planter is
+the retaining edge.
+
+- **South-west steps** (`data/middle_pool_steps.json`, IMG_2333): three stone
+  steps on the north-west half of Calle Eva, beside a steep tiled ramp, between
+  the planter's end wall and a hedge. Risers at 0.05, 0.5 and 0.95 m from the
+  foot; the ramp reaches the top tread's level about 2.5 m up. They are built by
+  `src/ramp-steps.ts`, the same code as the Cervantes steps, and the browser
+  test climbs them.
+- **North end** (IMG_2332, IMG_2331): the terrain rises behind the planter's
+  north end. Issue 48 adds white steps through this existing rise and an open
+  pergola entrance; final browser and matched-camera review remain pending.
+- Terrain: `data/terrain.json` foot line and the `middle-pool-west` local run;
+  `scripts/check_terrain.py` checks it.

@@ -20,7 +20,7 @@
      91.2
     ],
     [
-     -141,
+     -144,
      91.2
     ],
     [
@@ -127,16 +127,26 @@
    88.72
   ],
   "toward": [
-   -140.05,
-   89.3
+   -142.9,
+   90.3
   ],
   "width": 0.82,
   "count": 3,
-  "rise": 0.42,
   "evidence": [
    "IMG_2331.jpg",
    "IMG_2332.jpg"
   ],
-  "trust": "Three pale treads at the north end of the west planter, distinct from the south-west gateway steps. Short side flight stops at its visible upper edge: width 0.82 m, run 1.52 m and rise 0.42 m estimated; no onward elevated terrace or site-wide level change inferred."
+  "trust": "Three white-nosed steps climb through the existing continuous west-side terrain rise (survey middle-pool-nw-rise: 0.3-0.55 m). Foot and upper lane are 0 and 0.5 m; tread heights derive from siteY at those endpoints, never a second added plateau. Riser positions and 0.82 m width estimated from the photos within the approximate aerial path alignment; flight extended to the existing upper lane rather than inventing a new level.",
+  "road": "elena-south",
+  "across": [
+   -0.41,
+   0.41
+  ],
+  "risers": [
+   1.65,
+   2.45,
+   3.25
+  ],
+  "end": 4.534192320579266
  }
 }

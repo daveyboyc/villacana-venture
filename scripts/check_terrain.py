@@ -4,8 +4,7 @@ import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-terrain = json.loads((ROOT / 'data/terrain.json').read_text())
-west = terrain['west']
+west = json.loads((ROOT / 'data/terrain.json').read_text())['west']
 skeleton = json.loads((ROOT / 'public/map/skeleton.json').read_text())
 angle = math.radians(skeleton['viewRotation'])
 
@@ -27,11 +26,7 @@ def site_y(p):
                 edge = a[0] + (b[0] - a[0]) * (tz - a[1]) / (b[1] - a[1])
                 break
     seaward = 1 - max(0, min(1, (tz - west['fade'][0]) / (west['fade'][1] - west['fade'][0])))
-    base = west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
-    st=terrain['middlePoolNorthSteps'];a,b=st['foot'],st['toward'];dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
-    along=((p[0]-a[0])*dx+(p[1]-a[1])*dz)/(length*length);across=((p[0]-a[0])*dz-(p[1]-a[1])*dx)/length
-    if 0<=along<=1 and abs(across)<=st['width']/2:return max(base,st['rise']*min(st['count'],math.floor(along*st['count'])+1)/st['count'])
-    return base
+    return west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
 
 
 def run_at(tz):
@@ -63,19 +58,17 @@ for p in roads['dali']['points']:
 ramp = skeleton['boundaryReference']['ramps'][0]
 top, bottom = ramp['points']
 assert abs(site_y(top) - west['rise']) < 0.03 and site_y(bottom) < 0.03, 'Ground does not climb at the Cervantes ramp'
-# Calle Eva climbs towards Dalí, west of where IMG_2248 was taken, and is level by the middle pool.
+# Calle Eva climbs out of the middle pool courtyard at the stone steps (IMG_2333) and runs on at the upper level to Dalí.
 eva = roads['eva']['points']
 assert abs(site_y(eva[0]) - west['rise']) < 1e-6 and site_y(eva[2]) == 0, 'Calle Eva does not climb towards Dalí'
-photo = next(p for p in json.loads((ROOT / 'public/photos-ref/manifest.json').read_text()) if p['file'] == 'IMG_2248.jpg')
-assert site_y([photo['x'], photo['z']]) == 0, 'IMG_2248 was taken at the foot, looking up the ramp'
+flight = json.loads((ROOT / 'data/middle_pool_steps.json').read_text())
+assert site_y(flight['foot']) < 0.01 and abs(site_y(flight['toward']) - west['rise']) < 0.01, 'Ground does not climb at the middle pool steps'
+photos = {p['file']: p for p in json.loads((ROOT / 'public/photos-ref/manifest.json').read_text())}
+assert abs(site_y([photos['IMG_2248.jpg']['x'], photos['IMG_2248.jpg']['z']]) - west['rise']) < 0.01, 'IMG_2248 looks along the upper lane, above the steps'
+# The courtyard path beside the planter (Elena south) stays at pool level; the planter's back holds the upper ground.
+middle = json.loads((ROOT / 'data/middle_pool.json').read_text())
+assert all(site_y(p) == 0 for p in roads['elena-south']['points'][1:]), 'Elena south is level from the Cervantes junction to the middle pool'
+assert all(site_y(p) < 0.01 for p in middle['planter']['face'][:2]), 'The planter face along the path stands on the courtyard level'
 # The lane itself no longer carries a hump of its own.
 assert len(set(roads['cervantes']['heights'])) == 1
-print('Terrain: Dalí side 0.5 m up, pools level, Cervantes and Eva ramps where photographed, walkable slopes PASS')
-
-# The photographed north side flight changes only its short bounded strip.
-st=terrain['middlePoolNorthSteps'];a,b=st['foot'],st['toward'];dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
-for i in range(st['count']):
- t=(i+.5)/st['count'];p=[a[0]+dx*t,a[1]+dz*t]
- assert abs(site_y(p)-st['rise']*(i+1)/st['count'])<1e-8
- assert site_y([p[0]+dz/length*(st['width']/2+.01),p[1]-dx/length*(st['width']/2+.01)])==0
-print('Terrain: bounded middle-pool north side flight has three matching treads; nearby ground unchanged PASS')
+print('Terrain: Dalí side 0.5 m up, pools level, Cervantes ramp and middle pool steps where photographed, walkable slopes PASS')

@@ -17,11 +17,7 @@ export function siteY(x: number, z: number): number {
   else for (let i = 1; i < foot.length; i++) if (tz <= foot[i][1]) { edge = foot[i - 1][0] + (foot[i][0] - foot[i - 1][0]) * (tz - foot[i - 1][1]) / (foot[i][1] - foot[i - 1][1]); break; }
   // Level again by the time the land reaches the paseo.
   const seaward = 1 - clamp((tz - west.fade[0]) / (west.fade[1] - west.fade[0]), 0, 1);
-  const base = west.rise * clamp((edge - tx) / runAt(tz), 0, 1) * seaward;
-  const s = data.middlePoolNorthSteps, a = s.foot, b = s.toward, dx = b[0]-a[0], dz = b[1]-a[1], length = Math.hypot(dx,dz);
-  const along = ((x-a[0])*dx+(z-a[1])*dz)/(length*length), across = ((x-a[0])*dz-(z-a[1])*dx)/length;
-  if(along >= 0 && along <= 1 && Math.abs(across) <= s.width/2) return Math.max(base,s.rise*Math.min(s.count,Math.floor(along*s.count)+1)/s.count);
-  return base;
+  return west.rise * clamp((edge - tx) / runAt(tz), 0, 1) * seaward;
 }
 
 /** The slope's length: 7 m along most of the foot line, shorter where a photographed ramp is steeper. */
