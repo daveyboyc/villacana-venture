@@ -1311,6 +1311,11 @@
    "viewpoint": "ground"
   },
   {
+   "id": "area:beach",
+   "kind": "model-feature",
+   "name": "Villacana beach"
+  },
+  {
    "id": "building:6265201UF1366N_part5",
    "kind": "model-feature",
    "name": "Calle Elena covered walkway"
@@ -4493,6 +4498,26 @@
    "relation": "useful-for"
   },
   {
+   "from": "area:beach",
+   "to": "ref:IMG_2285.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2298.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2299.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2300.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -5056,6 +5081,11 @@
    "from": "steps:cervantes-elena-steps",
    "to": "ref:IMG_2286.jpg",
    "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
   },
   {
    "from": "building:6265201UF1366N_part5",
@@ -6000,7 +6030,7 @@
   },
   {
    "from": "ref:IMG_2285.jpg",
-   "to": "area:sea",
+   "to": "area:beach",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

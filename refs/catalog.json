@@ -3393,14 +3393,16 @@
    "accuracy": 2.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "area:beach"
+  ],
   "looksAt": [
    67.1,
    158.2
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:sea"
+   "area:beach"
   ]
  },
  {
@@ -3866,6 +3868,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "area:beach",
    "paseo_wall.json:paseo-retaining-wall"
   ],
   "looksAt": [
@@ -3905,6 +3908,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "area:beach",
    "paseo_wall.json:paseo-retaining-wall"
   ],
   "looksAt": [
@@ -3941,7 +3945,9 @@
    "accuracy": 3.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "area:beach"
+  ],
   "looksAt": [
    -74.6,
    256.2
