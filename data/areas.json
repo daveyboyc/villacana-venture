@@ -40,12 +40,14 @@
    ],
    "data": [
     "data/middle_pool.json",
-    "data/objects.json"
+    "data/objects.json",
+    "data/middle_pool_north.json"
    ],
    "src": [
     "src/middle-pool.ts",
     "src/world.ts",
-    "src/water.ts"
+    "src/water.ts",
+    "src/middle-pool-north.ts"
    ],
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
@@ -53,7 +55,7 @@
     "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
     "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.",
     "Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.",
-    "Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south-west steps and gateway (IMG_2333), the south pergola gate (IMG_2334)."
+    "Issue 48 source pass: a bounded curved north planter termination, three white side steps, short brown-door wall and open pergola are modelled from IMG_2331/2332/2195; exact extents and dimensions remain estimates. IMG_2331/2332 cameras are corrected independently from aerial path/pool anchors, original GPS retained. Browser and matched-camera review pending; south-west steps/gateway and south gate are separate tasks."
    ]
   },
   {

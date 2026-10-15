@@ -1,63 +1,82 @@
 {
-  "note": "Ground heights across the resort, in metres above the level of the middle pool. From Dave (2026-10-13): the Pintor Dalí side is about half a metre higher, and the change is mostly at short ramps on the lanes. Coordinates are turned-frame metres (sea downward).",
-  "west": {
-    "rise": 0.5,
-    "run": 7,
-    "foot": [
-      [
-        -180,
-        -120
-      ],
-      [
-        -180,
-        -27
-      ],
-      [
-        -162,
-        -17
-      ],
-      [
-        -162,
-        -12
-      ],
-      [
-        -176,
-        28
-      ],
-      [
-        -176,
-        36
-      ],
-      [
-        -190,
-        46
-      ],
-      [
-        -190,
-        170
-      ]
+ "note": "Ground heights across the resort, in metres above the level of the middle pool. From Dave (2026-10-13): the Pintor Dalí side is about half a metre higher, and the change is mostly at short ramps on the lanes. Coordinates are turned-frame metres (sea downward).",
+ "west": {
+  "rise": 0.5,
+  "run": 7,
+  "foot": [
+   [
+    -180,
+    -120
+   ],
+   [
+    -180,
+    -27
+   ],
+   [
+    -162,
+    -17
+   ],
+   [
+    -162,
+    -12
+   ],
+   [
+    -176,
+    28
+   ],
+   [
+    -176,
+    36
+   ],
+   [
+    -190,
+    46
+   ],
+   [
+    -190,
+    170
+   ]
+  ],
+  "fade": [
+   150,
+   158
+  ],
+  "evidence": {
+   "cervantes": "photo:IMG_2262.jpg, IMG_2265.jpg: tiled ramp at Elena, foot at x -162",
+   "eva": "photo:IMG_2248.jpg: Calle Eva rising towards the Dalí car park, drain across the lane at the foot; foot placed about 7 m west of the camera, approximate",
+   "elsewhere": "guessed: the line joining those two ramps, kept west of the north pool lawn, and 20 m in from Dalí south of Eva"
+  },
+  "localRuns": [
+   {
+    "id": "cervantes-elena",
+    "tz": [
+     -17,
+     -12
     ],
-    "fade": [
-      150,
-      158
-    ],
-    "evidence": {
-      "cervantes": "photo:IMG_2262.jpg, IMG_2265.jpg: tiled ramp at Elena, foot at x -162",
-      "eva": "photo:IMG_2248.jpg: Calle Eva rising towards the Dalí car park, drain across the lane at the foot; foot placed about 7 m west of the camera, approximate",
-      "elsewhere": "guessed: the line joining those two ramps, kept west of the north pool lawn, and 20 m in from Dalí south of Eva"
-    },
-    "localRuns": [
-      {
-        "id": "cervantes-elena",
-        "tz": [
-          -17,
-          -12
-        ],
-        "blend": 3,
-        "run": 3.0,
-        "evidence": "photo:IMG_2286.jpg, IMG_2262.jpg: three shallow steps beside the smooth ramp, starting about one tile up from the foot drain, take the whole rise; each step stands a little above the ramp beside it, so the ramp climbs the same 0.5 m over a few metres, not 7",
-        "trust": "Run estimated from tile and tread sizes in the photos (about 0.4 m tiles, 0.6 m treads): the shortest run that keeps every tread above the ramp beside it. Applies only where the foot line crosses Cervantes; the rest of the line keeps the 7 m run."
-      }
-    ]
-  }
+    "blend": 3,
+    "run": 3.0,
+    "evidence": "photo:IMG_2286.jpg, IMG_2262.jpg: three shallow steps beside the smooth ramp, starting about one tile up from the foot drain, take the whole rise; each step stands a little above the ramp beside it, so the ramp climbs the same 0.5 m over a few metres, not 7",
+    "trust": "Run estimated from tile and tread sizes in the photos (about 0.4 m tiles, 0.6 m treads): the shortest run that keeps every tread above the ramp beside it. Applies only where the foot line crosses Cervantes; the rest of the line keeps the 7 m run."
+   }
+  ]
+ },
+ "middlePoolNorthSteps": {
+  "id": "middle-pool-north-white-steps",
+  "foot": [
+   -138.65,
+   88.72
+  ],
+  "toward": [
+   -140.05,
+   89.3
+  ],
+  "width": 0.82,
+  "count": 3,
+  "rise": 0.42,
+  "evidence": [
+   "IMG_2331.jpg",
+   "IMG_2332.jpg"
+  ],
+  "trust": "Three pale treads at the north end of the west planter, distinct from the south-west gateway steps. Short side flight stops at its visible upper edge: width 0.82 m, run 1.52 m and rise 0.42 m estimated; no onward elevated terrace or site-wide level change inferred."
+ }
 }

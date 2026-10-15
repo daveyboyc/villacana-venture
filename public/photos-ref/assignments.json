@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "d051393085de7ca7fd3245704d39d3cf78c6fb73b4e1b857407b8226c20c90f9",
+ "inputDigest": "ab0bb30318acd75f1bf56241e3302eb47b783fabea69ae804a97a51c6a826a7a",
  "summary": {
   "unplaced": 1,
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 297,
+  "photosCitedByModel": 43,
+  "modelFeaturesWithPhotoCitations": 39
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -539,7 +539,10 @@
      "angleOffset": 28.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool_north.json:middle-pool-north-door-wall",
+    "middle_pool_north.json:middle-pool-north-pergola"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -135.5,
@@ -4421,46 +4424,39 @@
    "file": "IMG_2331.jpg",
    "status": "needs-review",
    "reasons": [
-    "GPS uncertainty exceeds 8 m",
-    "Uncertainty reaches more than one named street",
-    "Observed camera area disagrees with the GPS/map area candidates",
-    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    "Observed camera area disagrees with the GPS/map area candidates"
    ],
    "nearby": [
     {
      "id": "street:elena-south",
      "name": "Calle Elena",
      "kind": "street",
-     "gap": 5.7
-    },
-    {
-     "id": "street:eva",
-     "name": "Calle Eva",
-     "kind": "street",
-     "gap": 17.9
+     "gap": 0
     }
    ],
    "inViewCandidates": [
     {
-     "id": "building:6264501UF1366S_part2",
-     "distance": 30.4,
-     "angleOffset": 28.3
+     "id": "building:6264401UF1366S_part2",
+     "distance": 37.1,
+     "angleOffset": 19.6
     },
     {
-     "id": "building:6264401UF1366S_part2",
-     "distance": 43.2,
-     "angleOffset": 27.1
+     "id": "building:6264501UF1366S_part1",
+     "distance": 43.5,
+     "angleOffset": 12.4
     }
    ],
    "citedBy": [
-    "middle_pool.json:middle-pool-west-planter"
+    "middle_pool.json:middle-pool-west-planter",
+    "middle_pool_north.json:middle-pool-north-planter-cap",
+    "middle_pool_north.json:middle-pool-north-white-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
-    "x": -134.6,
-    "z": 76.7,
-    "basis": "phone location",
-    "reportedAccuracy": 17.3,
+    "x": -137.2,
+    "z": 84.3,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 2.0,
     "heading": 135,
     "headingBasis": "EXIF true north"
    }
@@ -4469,7 +4465,6 @@
    "file": "IMG_2332.jpg",
    "status": "needs-review",
    "reasons": [
-    "GPS uncertainty exceeds 8 m",
     "Uncertainty reaches more than one named street",
     "Observed camera area disagrees with the GPS/map area candidates"
    ],
@@ -4478,31 +4473,40 @@
      "id": "street:elena-south",
      "name": "Calle Elena",
      "kind": "street",
-     "gap": 1.2
+     "gap": 0.6
     },
     {
      "id": "street:eva",
      "name": "Calle Eva",
      "kind": "street",
-     "gap": 7.7
-    },
-    {
-     "id": "street:silvia-north",
-     "name": "Calle Silvia",
-     "kind": "street",
-     "gap": 12.0
+     "gap": 3.6
     }
    ],
-   "inViewCandidates": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 30.1,
+     "angleOffset": 28.8
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 39.3,
+     "angleOffset": 34.6
+    }
+   ],
    "citedBy": [
-    "middle_pool.json:middle-pool-west-planter"
+    "middle_pool.json:middle-pool-west-planter",
+    "middle_pool_north.json:middle-pool-north-planter-cap",
+    "middle_pool_north.json:middle-pool-north-door-wall",
+    "middle_pool_north.json:middle-pool-north-pergola",
+    "middle_pool_north.json:middle-pool-north-white-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
-    "x": -135.1,
-    "z": 90.9,
-    "basis": "phone location",
-    "reportedAccuracy": 14.0,
+    "x": -136.2,
+    "z": 95.8,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 2.0,
     "heading": 347,
     "headingBasis": "EXIF true north"
    }

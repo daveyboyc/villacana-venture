@@ -7,13 +7,13 @@ Task `middle-pool-sw-steps` · area **Middle pool** · priority P1 · levels
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/middle-pool.md` and the contact sheet `villacana-reference/contact-sheets/middle-pool.jpg`
 - docs: `docs/MIDDLE_POOL.md`
-- data: `data/middle_pool.json`, `data/objects.json`
-- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/middle_pool_north.json`
+- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-north.ts`
 
 ## Photos to build from
 
 - `public/photos-ref/IMG_2333.jpg`: Middle pool south-west: stone steps up a tiled path to a gate (ground — pin ±3.0 m)
-- `public/photos-ref/IMG_2332.jpg`: Middle pool west side: path between the deck and a raised planter wall (ground — pin ±14.0 m)
+- `public/photos-ref/IMG_2332.jpg`: Middle pool west side: path between the deck and a raised planter wall (ground — pin ±2.0 m)
 
 ## Build
 

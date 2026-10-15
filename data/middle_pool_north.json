@@ -1,0 +1,142 @@
+{
+ "checkedAt": "2026-10-15",
+ "review": {
+  "rings": [
+   [
+    [
+     -144,
+     81
+    ],
+    [
+     -134.7,
+     81
+    ],
+    [
+     -134.7,
+     85.3
+    ],
+    [
+     -137.7,
+     91.2
+    ],
+    [
+     -141,
+     91.2
+    ],
+    [
+     -144,
+     87.8
+    ]
+   ]
+  ]
+ },
+ "cap": {
+  "id": "middle-pool-north-planter-cap",
+  "name": "Middle pool · curved north end of west planter",
+  "ring": [
+   [
+    -138.19,
+    90.17
+   ],
+   [
+    -138.38,
+    89.88
+   ],
+   [
+    -138.67,
+    89.7
+   ],
+   [
+    -138.99,
+    89.72
+   ],
+   [
+    -139.27,
+    89.94
+   ],
+   [
+    -139.41,
+    90.27
+   ],
+   [
+    -139.29,
+    90.67
+   ]
+  ],
+  "height": 0.8,
+  "wall": 0.18,
+  "evidence": [
+   "IMG_2331.jpg",
+   "IMG_2332.jpg"
+  ],
+  "trust": "Short rounded termination adjoining the existing planter north edge. Curvature and rendered wall are photo-supported; radius about 0.6 m and the exact 0.5 m north extension are estimated against the aerial path band. Original west planter footprint retained."
+ },
+ "wall": {
+  "id": "middle-pool-north-door-wall",
+  "name": "Middle pool · bounded garden wall with brown door",
+  "points": [
+   [
+    -141.75,
+    87.1
+   ],
+   [
+    -138.2,
+    84.94
+   ]
+  ],
+  "height": 2.0,
+  "thickness": 0.2,
+  "door": {
+   "along": 1.3,
+   "width": 0.88,
+   "height": 1.82
+  },
+  "evidence": [
+   "IMG_2332.jpg",
+   "IMG_2195.jpg"
+  ],
+  "trust": "Only the short white wall face containing the closed brown timber door west of the open entrance is represented. Door and wall arrangement supported by both photos; 4.15 m length, 2 m height and exact position estimated from registry frontage and aerial lane bend. No enclosing boundary inferred beyond this fragment."
+ },
+ "pergola": {
+  "id": "middle-pool-north-pergola",
+  "name": "Middle pool · open north-west pergola entrance",
+  "points": [
+   [
+    -138.2,
+    84.94
+   ],
+   [
+    -136.3,
+    83.76
+   ]
+  ],
+  "width": 0.16,
+  "depth": 0.7,
+  "height": 2.12,
+  "evidence": [
+   "IMG_2332.jpg",
+   "IMG_2195.jpg"
+  ],
+  "trust": "Open pale shallow curved pergola header with slender dark posts at the north-west lane bend. Shape supported by ground photos; 2.23 m span, 0.7 m depth and height estimated. No closed gate leaf or unobserved continuation added."
+ },
+ "steps": {
+  "id": "middle-pool-north-white-steps",
+  "name": "Middle pool · north planter side steps",
+  "foot": [
+   -138.65,
+   88.72
+  ],
+  "toward": [
+   -140.05,
+   89.3
+  ],
+  "width": 0.82,
+  "count": 3,
+  "rise": 0.42,
+  "evidence": [
+   "IMG_2331.jpg",
+   "IMG_2332.jpg"
+  ],
+  "trust": "Three pale treads at the north end of the west planter, distinct from the south-west gateway steps. Short side flight stops at its visible upper edge: width 0.82 m, run 1.52 m and rise 0.42 m estimated; no onward elevated terrace or site-wide level change inferred."
+ }
+}

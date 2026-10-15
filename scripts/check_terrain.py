@@ -4,7 +4,8 @@ import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-west = json.loads((ROOT / 'data/terrain.json').read_text())['west']
+terrain = json.loads((ROOT / 'data/terrain.json').read_text())
+west = terrain['west']
 skeleton = json.loads((ROOT / 'public/map/skeleton.json').read_text())
 angle = math.radians(skeleton['viewRotation'])
 
@@ -26,7 +27,11 @@ def site_y(p):
                 edge = a[0] + (b[0] - a[0]) * (tz - a[1]) / (b[1] - a[1])
                 break
     seaward = 1 - max(0, min(1, (tz - west['fade'][0]) / (west['fade'][1] - west['fade'][0])))
-    return west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
+    base = west['rise'] * max(0, min(1, (edge - tx) / run_at(tz))) * seaward
+    st=terrain['middlePoolNorthSteps'];a,b=st['foot'],st['toward'];dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
+    along=((p[0]-a[0])*dx+(p[1]-a[1])*dz)/(length*length);across=((p[0]-a[0])*dz-(p[1]-a[1])*dx)/length
+    if 0<=along<=1 and abs(across)<=st['width']/2:return max(base,st['rise']*min(st['count'],math.floor(along*st['count'])+1)/st['count'])
+    return base
 
 
 def run_at(tz):
@@ -66,3 +71,11 @@ assert site_y([photo['x'], photo['z']]) == 0, 'IMG_2248 was taken at the foot, l
 # The lane itself no longer carries a hump of its own.
 assert len(set(roads['cervantes']['heights'])) == 1
 print('Terrain: Dalí side 0.5 m up, pools level, Cervantes and Eva ramps where photographed, walkable slopes PASS')
+
+# The photographed north side flight changes only its short bounded strip.
+st=terrain['middlePoolNorthSteps'];a,b=st['foot'],st['toward'];dx,dz=b[0]-a[0],b[1]-a[1];length=math.hypot(dx,dz)
+for i in range(st['count']):
+ t=(i+.5)/st['count'];p=[a[0]+dx*t,a[1]+dz*t]
+ assert abs(site_y(p)-st['rise']*(i+1)/st['count'])<1e-8
+ assert site_y([p[0]+dz/length*(st['width']/2+.01),p[1]-dx/length*(st['width']/2+.01)])==0
+print('Terrain: bounded middle-pool north side flight has three matching treads; nearby ground unchanged PASS')

@@ -496,7 +496,10 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_north.json:middle-pool-north-door-wall",
+   "middle_pool_north.json:middle-pool-north-pergola"
+  ],
   "looksAt": [
    -130.8,
    88.3
@@ -4124,22 +4127,26 @@
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1RobV_d5Hdf5y0TKrgj442ku3i5C7aX1y/view?usp=drivesdk",
   "camera": {
-   "x": -134.6,
-   "z": 76.7,
+   "x": -137.2,
+   "z": 84.3,
    "heading": 135,
-   "accuracy": 17.3,
+   "accuracy": 2.0,
    "altitude": 6.6,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
-   "middle_pool.json:middle-pool-west-planter"
+   "middle_pool.json:middle-pool-west-planter",
+   "middle_pool_north.json:middle-pool-north-planter-cap",
+   "middle_pool_north.json:middle-pool-north-white-steps"
   ],
   "looksAt": [
-   -130.4,
-   80.9
+   -133.0,
+   88.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "pool:middle"
+  ]
  },
  {
   "id": "IMG_2332.jpg",
@@ -4162,23 +4169,30 @@
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1KwI5Jbq64mdQOeLCbWBBAFY_9Mpvjfz4/view?usp=drivesdk",
   "camera": {
-   "x": -135.1,
-   "z": 90.9,
+   "x": -136.2,
+   "z": 95.8,
    "heading": 347,
-   "accuracy": 14.0,
+   "accuracy": 2.0,
    "altitude": 6.8,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
-   "middle_pool.json:middle-pool-west-planter"
+   "middle_pool.json:middle-pool-west-planter",
+   "middle_pool_north.json:middle-pool-north-planter-cap",
+   "middle_pool_north.json:middle-pool-north-door-wall",
+   "middle_pool_north.json:middle-pool-north-pergola",
+   "middle_pool_north.json:middle-pool-north-white-steps"
   ],
   "looksAt": [
-   -136.4,
-   85.1
+   -137.5,
+   90.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:elena-south"
+   "street:elena-south",
+   "middle_pool.json:middle-pool-west-planter",
+   "middle_pool_north.json:middle-pool-north-planter-cap",
+   "middle_pool_north.json:middle-pool-north-white-steps"
   ]
  },
  {

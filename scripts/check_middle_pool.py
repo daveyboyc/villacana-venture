@@ -78,3 +78,30 @@ pool=next(p for p in s['pools'] if p['id']=='middle')['ring']
 gap=min(distance(p,a,b) for p in sample(pl['face'][:2]) for a,b in zip(pool,pool[1:]+pool[:1]))
 assert gap>=roads['elena-south']['width'],f'Path between planter and pool too narrow ({gap:.2f} m)'
 print('Middle pool: photo-linked east gateway and west planter keep the lanes clear, gateway open and walkable, houses and pools untouched PASS')
+
+# Issue 48: bounded north-west fragments, separate from the unchanged west planter.
+n=json.loads((ROOT/'data/middle_pool_north.json').read_text())
+for f in [n['cap'],n['wall'],n['pergola'],n['steps']]:
+ assert f['evidence'] and all(p in photos for p in f['evidence'])
+ assert 'estimated' in f['trust']
+def north_clear(p,half,label):
+ for r in roads.values():
+  assert min(distance(p,a,b) for a,b in zip(r['points'],r['points'][1:]))-half>=r['width']/2-.025,f'{label} blocks {r["id"]} at {p}'
+ for h in s['buildings']:
+  if h['floors']>0:assert not inside(*p,h['ring']),f'{label} enters house'
+ for pool in s['pools']:assert not inside(*p,pool['ring']),f'{label} enters pool'
+ assert any(inside(*p,ring) for ring in n['review']['rings']),f'{label} outside review'
+for p in sample(n['cap']['ring'],True):north_clear(p,0,'north cap')
+for p in sample(n['wall']['points']):north_clear(p,n['wall']['thickness']/2,'brown-door wall')
+for p in n['pergola']['points']:north_clear(p,n['pergola']['width']*.71,'pergola post')
+st=n['steps'];stair=strip(st['foot'],st['toward'],st['width']/2)
+for p in sample(stair,True):north_clear(p,0,'north steps')
+assert st['count']==3 and .3<=st['rise']<=.5
+terrain=json.loads((ROOT/'data/terrain.json').read_text())['middlePoolNorthSteps']
+for key in ('foot','toward','width','count','rise'):assert st[key]==terrain[key],f'step mesh/ground mismatch {key}'
+positions=json.loads((ROOT/'data/photo_positions.json').read_text())
+for name in ('IMG_2331.HEIC','IMG_2332.HEIC'):
+ assert positions[name]['locationBasis'] and positions[name]['gps']['accuracy']>8
+assert math.dist(n['cap']['ring'][0],pl['ring'][0])<.01 and math.dist(n['cap']['ring'][-1],pl['ring'][-1])<.01,'Cap must join original planter ends'
+assert max(p[1] for p in n['cap']['ring'])<91,'North feature must not replace south-west steps'
+print('Middle pool north: independently corrected pins, bounded cap/door wall, open pergola and matching stepped ground PASS')

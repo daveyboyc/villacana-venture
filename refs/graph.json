@@ -1466,6 +1466,26 @@
    "name": "Middle pool · raised planter wall with hedge, west path"
   },
   {
+   "id": "middle_pool_north.json:middle-pool-north-door-wall",
+   "kind": "model-feature",
+   "name": "Middle pool · bounded garden wall with brown door"
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-pergola",
+   "kind": "model-feature",
+   "name": "Middle pool · open north-west pergola entrance"
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "kind": "model-feature",
+   "name": "Middle pool · curved north end of west planter"
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-white-steps",
+   "kind": "model-feature",
+   "name": "Middle pool · north planter side steps"
+  },
+  {
    "id": "paseo_wall.json:paseo-retaining-wall",
    "kind": "model-feature",
    "name": "Paseo · sandstone retaining wall and mesh fence"
@@ -1562,7 +1582,7 @@
    "kind": "build-task",
    "name": "Middle pool north-west: curved planter end, white steps, brown-door wall",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 48
   },
   {
@@ -4978,6 +4998,46 @@
    "relation": "cites"
   },
   {
+   "from": "middle_pool_north.json:middle-pool-north-door-wall",
+   "to": "ref:IMG_2195.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-door-wall",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-pergola",
+   "to": "ref:IMG_2195.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-pergola",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "to": "ref:IMG_2331.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-white-steps",
+   "to": "ref:IMG_2331.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-white-steps",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_wall.json:paseo-retaining-wall",
    "to": "ref:IMG_2227.jpg",
    "relation": "cites"
@@ -5214,6 +5274,26 @@
   },
   {
    "from": "middle_pool.json:middle-pool-west-planter",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-door-wall",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-pergola",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_north.json:middle-pool-north-white-steps",
    "to": "area:middle-pool",
    "relation": "in-area"
   },
@@ -6179,8 +6259,32 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2331.jpg",
+   "to": "pool:middle",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2332.jpg",
    "to": "street:elena-south",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2332.jpg",
+   "to": "middle_pool.json:middle-pool-west-planter",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2332.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2332.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-white-steps",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

@@ -7,13 +7,13 @@ Task `middle-pool-north-entrance` · area **Middle pool** · priority P3 · stru
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/middle-pool.md` and the contact sheet `villacana-reference/contact-sheets/middle-pool.jpg`
 - docs: `docs/MIDDLE_POOL.md`
-- data: `data/middle_pool.json`, `data/objects.json`
-- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/middle_pool_north.json`
+- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-north.ts`
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2331.jpg`: Middle pool north: crazy-paving path opening onto the lawn and pool (ground — pin ±17.3 m)
-- `public/photos-ref/IMG_2332.jpg`: Middle pool west side: path between the deck and a raised planter wall (ground — pin ±14.0 m)
+- `public/photos-ref/IMG_2331.jpg`: Middle pool north: crazy-paving path opening onto the lawn and pool (ground — pin ±2.0 m)
+- `public/photos-ref/IMG_2332.jpg`: Middle pool west side: path between the deck and a raised planter wall (ground — pin ±2.0 m)
 - `public/photos-ref/IMG_2195.jpg`: Middle pool close up: cream deck, ladders, life rings (ground — pin ±2.1 m)
 - `public/photos-ref/IMG_2192.jpg`: Crazy-paving path between hedges into the middle pool lawn (ground — pin ±4.7 m)
 
