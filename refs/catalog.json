@@ -4250,7 +4250,9 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_south_gate.json:middle-pool-south-gate"
+  ],
   "looksAt": [
    -124.2,
    107.7
@@ -4286,7 +4288,9 @@
    "altitude": 6.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_south_gate.json:middle-pool-south-gate"
+  ],
   "looksAt": [
    -126.5,
    109.2
