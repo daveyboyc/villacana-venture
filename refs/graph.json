@@ -1638,7 +1638,7 @@
    "kind": "build-task",
    "name": "Paseo: re-trace the promenade line from the retaining wall",
    "priority": 2,
-   "status": "in-progress",
+   "status": "done",
    "issue": 35
   },
   {
