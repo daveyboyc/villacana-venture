@@ -27,7 +27,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | open | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
+| P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | in-progress · issue_32 | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
 | P3 | `barraka-boardwalk` [#42](https://github.com/daveyboyc/villacana-venture/issues/42) | Barraka Beach: boardwalk, sign planter and parasols | open | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg), [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2225](../../public/photos-ref/IMG_2225.jpg) |
 
 ## Reviewed references

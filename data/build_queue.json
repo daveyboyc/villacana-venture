@@ -1,473 +1,474 @@
 {
- "about": "Build tasks for agents. One task = one branch = one PR. Fields: area (data/areas.json id), priority 1 (first) to 3, kind, photos to build from (public/photos-ref), build (what to make), avoid (what not to do), accept (checks that must pass, beyond the standard set in docs/HANDOVER.md), dependsOn (task ids), status open | in-progress | done, owner (agent or person working on it), issue (GitHub issue number in daveyboyc/villacana-venture; close it from the task's PR). scripts/build_references.py turns this into refs/QUEUE.md, per-area task lists, graph nodes and issue bodies in refs/issues/.",
- "tasks": [
-  {
-   "id": "elena-garden-door",
-   "area": "elena",
-   "priority": 2,
-   "kind": "structure",
-   "title": "Elena north: path and garden door between the two hedged beds",
-   "photos": [
-    "IMG_2199.jpg",
-    "IMG_2201.jpg",
-    "IMG_2200.jpg"
-   ],
-   "build": "The short paved path running east between elena-north-tree-bed-1 and tree-bed-2 to a white garden wall with a brown timber door (and a small barred window in that wall). Add the wall segment only as far as the photos show it.",
-   "avoid": "Do not continue the wall past what IMG_2199/2201 show; do not close the path.",
-   "accept": [
-    "check_elena_north.py extended for the new wall",
-    "layout browser test walks into the path and stops at the door"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 34
-  },
-  {
-   "id": "elena-east-patios",
-   "area": "elena",
-   "priority": 2,
-   "kind": "structure",
-   "title": "Elena north: private patios east of the beds",
-   "photos": [
-    "IMG_2366.jpg",
-    "IMG_2362.jpg",
-    "IMG_2360.jpg"
-   ],
-   "build": "The walled private patios between the Elena beds and the east terrace: white patio walls with bougainvillea, a timber pergola, paving. Trace walls from the roof shots against the aerial and registry; patios are private, so walls are solid.",
-   "avoid": "Roof shots: the pin is the roof, not the subject. Trace only walls visible in at least one photo.",
-   "accept": [
-    "new or extended check script",
-    "render from IMG_2366 compared"
-   ],
-   "dependsOn": [
-    "elena-garden-door"
-   ],
-   "status": "open",
-   "issue": 38
-  },
-  {
-   "id": "elena-gated-entry",
-   "area": "elena",
-   "priority": 3,
-   "kind": "structure",
-   "title": "Elena: gated tiled entry west of the covered walkway",
-   "photos": [
-    "IMG_2361.jpg",
-    "IMG_2202.jpg",
-    "IMG_2203.jpg"
-   ],
-   "build": "The narrow gated entry seen looking down in IMG_2361: patterned tiles, a pair of black iron gates in a white gateway topped with bougainvillea, at the west end of the covered walkway (registry part 6265201UF1366N_part5).",
-   "avoid": "Keep the walkway open underneath; do not invent further gates.",
-   "accept": [
-    "walkway still walkable end to end",
-    "render from IMG_2203"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 46
-  },
-  {
-   "id": "cervantes-door-steps",
-   "area": "cervantes",
-   "priority": 2,
-   "kind": "levels",
-   "title": "Cervantes: two steps up to a front door west of the Elena junction",
-   "photos": [
-    "IMG_2327.jpg",
-    "IMG_2328.jpg"
-   ],
-   "build": "Two red-tread steps with white sides climbing to a brown timber door on the north side of Cervantes, just west of the ramp drain, between a plumbago hedge and bougainvillea.",
-   "avoid": "The door belongs to a house: steps stop at the facade; do not narrow the lane or the steps beside the ramp.",
-   "accept": [
-    "check_cervantes_patio_walls.py and check_terrain.py pass",
-    "layout test still climbs the ramp steps"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 33
-  },
-  {
-   "id": "junction-lawns",
-   "area": "cervantes",
-   "priority": 3,
-   "kind": "planting",
-   "title": "Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos",
-   "photos": [
-    "IMG_2329.jpg",
-    "IMG_2342.jpg",
-    "IMG_2358.jpg",
-    "IMG_2367.jpg",
-    "IMG_2260.jpg"
-   ],
-   "build": "Place the pollarded trees and check the lawn outlines and white kerbs in data/frontage_divisions.json against the roof views (IMG_2358, IMG_2367).",
-   "avoid": "Change lawn rings only where a roof shot shows them clearly.",
-   "accept": [
-    "frontage regions still pass their checks",
-    "render from IMG_2329"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 45
-  },
-  {
-   "id": "cervantes-east-hedge",
-   "area": "cervantes",
-   "priority": 3,
-   "kind": "structure",
-   "title": "Cervantes east of Elena: white kerb wall and plumbago hedge",
-   "photos": [
-    "IMG_2356.jpg",
-    "IMG_2360.jpg"
-   ],
-   "build": "The low white kerb wall and tall plumbago hedge on the north side of Cervantes east of the junction, as far as IMG_2356 shows.",
-   "avoid": "Unphotographed eastern frontage stays unasserted (see docs/FRONTAGE_DIVISIONS.md).",
-   "accept": [
-    "check_cervantes_patio_walls.py or a new check passes"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 43
-  },
-  {
-   "id": "cervantes-north-patios",
-   "area": "cervantes",
-   "priority": 3,
-   "kind": "structure",
-   "title": "Walled patios along Cervantes from the roof views",
-   "photos": [
-    "IMG_2368.jpg",
-    "IMG_2369.jpg",
-    "IMG_2359.jpg"
-   ],
-   "build": "Patio walls and planting of the gardens north of Cervantes, traced from the three roof shots against the aerial and registry.",
-   "avoid": "Roof shots: trace only what is clearly visible; mark extents estimated.",
-   "accept": [
-    "new check script",
-    "render from IMG_2368 with --high"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 44
-  },
-  {
-   "id": "middle-pool-sw-steps",
-   "area": "middle-pool",
-   "priority": 1,
-   "kind": "levels",
-   "title": "Middle pool south-west: stone steps and the gateway at their top",
-   "photos": [
-    "IMG_2333.jpg",
-    "IMG_2332.jpg"
-   ],
-   "build": "Three rough stone steps climbing the tiled path between the hedge and the raised planter to a white gateway with bougainvillea; the level change they imply (check against data/terrain.json).",
-   "avoid": "Do not move the planter built in data/middle_pool.json; a level change needs check_terrain.py updated, like the Cervantes steps (docs/ELENA_NORTH.md).",
-   "accept": [
-    "player climbs the steps one riser at a time (copy the Cervantes steps test)",
-    "check_middle_pool.py extended"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 31
-  },
-  {
-   "id": "middle-pool-south-gate",
-   "area": "middle-pool",
-   "priority": 2,
-   "kind": "structure",
-   "title": "Middle pool south: iron double gate under a pergola frame",
-   "photos": [
-    "IMG_2334.jpg",
-    "IMG_2335.jpg"
-   ],
-   "build": "Black iron double gate under a curved metal pergola frame, crazy paving with a drain, the raised white planter with a step and the blue tile panel beside it.",
-   "avoid": "Gate stays open and walkable unless a photo shows it shut.",
-   "accept": [
-    "check_middle_pool.py extended",
-    "layout test walks through"
-   ],
-   "dependsOn": [
-    "middle-pool-sw-steps"
-   ],
-   "status": "open",
-   "issue": 39
-  },
-  {
-   "id": "middle-pool-north-entrance",
-   "area": "middle-pool",
-   "priority": 3,
-   "kind": "structure",
-   "title": "Middle pool north-west: curved planter end, white steps, brown-door wall",
-   "photos": [
-    "IMG_2331.jpg",
-    "IMG_2332.jpg",
-    "IMG_2195.jpg",
-    "IMG_2192.jpg"
-   ],
-   "build": "The curved north end of the raised planter, the white steps by the north-west entrance, and the white garden wall with a brown door and pergola entrance north of the west path.",
-   "avoid": "IMG_2331 (±17 m) and IMG_2332 (±14 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
-   "accept": [
-    "pins corrected with locationBasis",
-    "check_middle_pool.py extended"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 48
-  },
-  {
-   "id": "eva-walled-lawn",
-   "area": "eva",
-   "priority": 3,
-   "kind": "planting",
-   "title": "Calle Eva: walled lawn corner with espaliered bougainvillea",
-   "photos": [
-    "IMG_2339.jpg",
-    "IMG_2336.jpg",
-    "IMG_2337.jpg",
-    "IMG_2338.jpg"
-   ],
-   "build": "The two white walls of the lawn corner beside the middle pool east gateway, espaliered bougainvillea (a wall-texture or flat sprite, not crossed cards), green bollard lights; the lawns and lamp posts along Eva.",
-   "avoid": "Do not change the east gateway built in data/middle_pool.json.",
-   "accept": [
-    "render from IMG_2339"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 47
-  },
-  {
-   "id": "paseo-retaining-wall",
-   "area": "paseo",
-   "priority": 1,
-   "kind": "levels",
-   "title": "Paseo: sandstone retaining wall, mesh fence and level drop",
-   "photos": [
-    "IMG_2350.jpg",
-    "IMG_2349.jpg",
-    "IMG_2352.jpg",
-    "IMG_2354.jpg"
-   ],
-   "build": "Yellow sandstone retaining wall about 1.2 m high with a green mesh fence on top along the landward side of the paseo, and the level difference it holds.",
-   "avoid": "Keep the coastal gate and every lane reaching the paseo open.",
-   "accept": [
-    "paseo walks end to end",
-    "check script for the wall"
-   ],
-   "dependsOn": [],
-   "status": "done",
-   "owner": "claude (subagent)"
-  },
-  {
-   "id": "south-pool-seaward-level",
-   "area": "south-pool",
-   "priority": 2,
-   "kind": "levels",
-   "title": "South pool: lawn level above the paseo and its seaward wall",
-   "photos": [
-    "IMG_2349.jpg",
-    "IMG_2188.jpg"
-   ],
-   "build": "Make the south pool lawn stand above the paseo by the height of the retaining wall (IMG_2349 shows the pool area right above it) and reconcile skeleton.seaWall with the sandstone wall.",
-   "avoid": "Pools stay level (check_terrain.py).",
-   "accept": [
-    "check_terrain.py and check_seafront.py pass",
-    "render from IMG_2349"
-   ],
-   "dependsOn": [
-    "paseo-retaining-wall"
-   ],
-   "status": "open",
-   "issue": 37
-  },
-  {
-   "id": "barraka-boardwalk",
-   "area": "barraka-beach",
-   "priority": 3,
-   "kind": "materials",
-   "title": "Barraka Beach: boardwalk, sign planter and parasols",
-   "photos": [
-    "IMG_2346.jpg",
-    "IMG_2347.jpg",
-    "IMG_2223.jpg",
-    "IMG_2225.jpg"
-   ],
-   "build": "Timber boardwalk across the sand from the paseo to the restaurant, the BARRAKA BEACH painted planter, thatched parasols and loungers (Details).",
-   "avoid": "Beach props are Details only and must keep the route clearance.",
-   "accept": [
-    "render from IMG_2347"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 42
-  },
-  {
-   "id": "shoreline-check",
-   "area": "barraka-beach",
-   "priority": 2,
-   "kind": "layout",
-   "title": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
-   "photos": [
-    "IMG_2285.jpg",
-    "IMG_2298.jpg",
-    "IMG_2299.jpg",
-    "IMG_2300.jpg"
-   ],
-   "build": "Check the sea/beach outline against the beach photos and the aerial; IMG_2285 was taken on the beach but its pin is in the map sea polygon. Correct the outline only with independent map evidence.",
-   "avoid": "Do not move the outline to fit one GPS pin.",
-   "accept": [
-    "check_seafront.py passes",
-    "note added to docs/SEAFRONT.md"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 32
-  },
-  {
-   "id": "north-pool-garden-walls",
-   "area": "north-pool",
-   "priority": 2,
-   "kind": "structure",
-   "title": "North pool: curved garden walls and raised patios",
-   "photos": [
-    "IMG_2207.jpg",
-    "IMG_2208.jpg",
-    "IMG_2204.jpg",
-    "IMG_2205.jpg"
-   ],
-   "build": "Trace the curved white garden walls (about 1 m), raised patios with tiled steps and the crazy-paving path round the lawn from the upper-floor photos (and private reference photos 03-07 if available), replacing generated wall blocks in that band.",
-   "avoid": "Upper-floor shots: pins are inside buildings. Follow the AGENTS.md rule against repeated invented walls.",
-   "accept": [
-    "new check script",
-    "render with --high from IMG_2204"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 36
-  },
-  {
-   "id": "seaward-lanes-paving",
-   "area": "seaward-lanes",
-   "priority": 3,
-   "kind": "materials",
-   "title": "Seaward lanes: octagonal paving and covered passages",
-   "photos": [
-    "IMG_2235.jpg",
-    "IMG_2237.jpg",
-    "IMG_2239.jpg",
-    "IMG_2185.jpg",
-    "IMG_2190.jpg"
-   ],
-   "build": "An octagonal terracotta paving texture for the lanes that use it, and patterned-tile floors in the covered passages.",
-   "avoid": "Materials only; no geometry changes.",
-   "accept": [
-    "render from IMG_2235"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 51
-  },
-  {
-   "id": "picasso-service-road",
-   "area": "picasso",
-   "priority": 3,
-   "kind": "structure",
-   "title": "Pintor Picasso: service road, utility sheds and bins",
-   "photos": [
-    "IMG_2345.jpg"
-   ],
-   "build": "The asphalt service road, low white utility sheds with brown doors, the boundary wall, the stone-plinth building with railings and ramp, recycling bins (Details).",
-   "avoid": "Outside the walkable resort core: keep it simple and evidence-backed.",
-   "accept": [
-    "render from IMG_2345"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 50
-  },
-  {
-   "id": "paseo-retrace-line",
-   "area": "paseo",
-   "priority": 2,
-   "kind": "layout",
-   "title": "Paseo: re-trace the promenade line from the retaining wall",
-   "photos": [
-    "IMG_2350.jpg",
-    "IMG_2352.jpg",
-    "IMG_2354.jpg",
-    "IMG_2349.jpg"
-   ],
-   "build": "The mapped (OSM) paseo is 1-3 m off the real one: in places a sand strip shows between the paseo and the wall that the photos do not have, elsewhere the wall had to be held 1.8 m in. Re-trace the paseo centreline about 1.5 m seaward of data/paseo_wall.json, regenerate skeleton.json and remove the 1.8 m hold-in.",
-   "avoid": "Keep the coastal gate connector and the Barraka boardwalk joins; regenerate skeleton.json with scripts/build_skeleton.py, never by hand.",
-   "accept": [
-    "check_seafront.py and check_paseo_wall.py pass",
-    "paseo still walks end to end"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 35
-  },
-  {
-   "id": "paseo-east-end-height",
-   "area": "paseo",
-   "priority": 2,
-   "kind": "levels",
-   "title": "Paseo east end: wall height towards the big pool",
-   "photos": [
-    "IMG_2227.jpg",
-    "IMG_2350.jpg",
-    "IMG_2226.jpg"
-   ],
-   "build": "The model makes the wall rise to 3 m over its last 40 m because the paseo falls to big-pool level; IMG_2227 from the beach suggests it stays about 1 m. Settle it (a new photo from the paseo near Calle Guillermo would decide) and adjust the paseo or big-pool levels in data/main_pool.json.",
-   "avoid": "Do not change the big-pool level without evidence; Dave set it. Ask for a photo if the existing ones do not decide it.",
-   "accept": [
-    "check_pool_levels.py and check_paseo_wall.py pass"
-   ],
-   "dependsOn": [
-    "paseo-retrace-line"
-   ],
-   "status": "open",
-   "issue": 40
-  },
-  {
-   "id": "paseo-house-clearance",
-   "area": "paseo",
-   "priority": 2,
-   "kind": "layout",
-   "title": "Paseo east: registry house 6465801UF1366N_part5 blocks the walk",
-   "photos": [
-    "IMG_2226.jpg",
-    "IMG_2227.jpg"
-   ],
-   "build": "Further east than the boardwalk the mapped paseo passes 0.64 m from registry house 6465801UF1366N_part5, so the player is blocked. Find whether the paseo line or the footprint is wrong (aerial, photos) and fix the one that is.",
-   "avoid": "Registry footprints stay unless a photo-backed correction is the point; prefer re-tracing the paseo.",
-   "accept": [
-    "layout browser test walks the whole paseo end to end"
-   ],
-   "dependsOn": [
-    "paseo-retrace-line"
-   ],
-   "status": "open",
-   "issue": 41
-  },
-  {
-   "id": "paseo-details",
-   "area": "paseo",
-   "priority": 3,
-   "kind": "planting",
-   "title": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
-   "photos": [
-    "IMG_2350.jpg",
-    "IMG_2352.jpg",
-    "IMG_2354.jpg",
-    "IMG_2349.jpg"
-   ],
-   "build": "Clipped hedges behind the mesh fence, the green windbreak cloth on parts of it, the slim white lamp posts and the service cover, all Details only.",
-   "avoid": "Details must keep the paseo route clearance.",
-   "accept": [
-    "render from IMG_2352"
-   ],
-   "dependsOn": [],
-   "status": "open",
-   "issue": 49
-  }
- ]
+  "about": "Build tasks for agents. One task = one branch = one PR. Fields: area (data/areas.json id), priority 1 (first) to 3, kind, photos to build from (public/photos-ref), build (what to make), avoid (what not to do), accept (checks that must pass, beyond the standard set in docs/HANDOVER.md), dependsOn (task ids), status open | in-progress | done, owner (agent or person working on it), issue (GitHub issue number in daveyboyc/villacana-venture; close it from the task's PR). scripts/build_references.py turns this into refs/QUEUE.md, per-area task lists, graph nodes and issue bodies in refs/issues/.",
+  "tasks": [
+    {
+      "id": "elena-garden-door",
+      "area": "elena",
+      "priority": 2,
+      "kind": "structure",
+      "title": "Elena north: path and garden door between the two hedged beds",
+      "photos": [
+        "IMG_2199.jpg",
+        "IMG_2201.jpg",
+        "IMG_2200.jpg"
+      ],
+      "build": "The short paved path running east between elena-north-tree-bed-1 and tree-bed-2 to a white garden wall with a brown timber door (and a small barred window in that wall). Add the wall segment only as far as the photos show it.",
+      "avoid": "Do not continue the wall past what IMG_2199/2201 show; do not close the path.",
+      "accept": [
+        "check_elena_north.py extended for the new wall",
+        "layout browser test walks into the path and stops at the door"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 34
+    },
+    {
+      "id": "elena-east-patios",
+      "area": "elena",
+      "priority": 2,
+      "kind": "structure",
+      "title": "Elena north: private patios east of the beds",
+      "photos": [
+        "IMG_2366.jpg",
+        "IMG_2362.jpg",
+        "IMG_2360.jpg"
+      ],
+      "build": "The walled private patios between the Elena beds and the east terrace: white patio walls with bougainvillea, a timber pergola, paving. Trace walls from the roof shots against the aerial and registry; patios are private, so walls are solid.",
+      "avoid": "Roof shots: the pin is the roof, not the subject. Trace only walls visible in at least one photo.",
+      "accept": [
+        "new or extended check script",
+        "render from IMG_2366 compared"
+      ],
+      "dependsOn": [
+        "elena-garden-door"
+      ],
+      "status": "open",
+      "issue": 38
+    },
+    {
+      "id": "elena-gated-entry",
+      "area": "elena",
+      "priority": 3,
+      "kind": "structure",
+      "title": "Elena: gated tiled entry west of the covered walkway",
+      "photos": [
+        "IMG_2361.jpg",
+        "IMG_2202.jpg",
+        "IMG_2203.jpg"
+      ],
+      "build": "The narrow gated entry seen looking down in IMG_2361: patterned tiles, a pair of black iron gates in a white gateway topped with bougainvillea, at the west end of the covered walkway (registry part 6265201UF1366N_part5).",
+      "avoid": "Keep the walkway open underneath; do not invent further gates.",
+      "accept": [
+        "walkway still walkable end to end",
+        "render from IMG_2203"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 46
+    },
+    {
+      "id": "cervantes-door-steps",
+      "area": "cervantes",
+      "priority": 2,
+      "kind": "levels",
+      "title": "Cervantes: two steps up to a front door west of the Elena junction",
+      "photos": [
+        "IMG_2327.jpg",
+        "IMG_2328.jpg"
+      ],
+      "build": "Two red-tread steps with white sides climbing to a brown timber door on the north side of Cervantes, just west of the ramp drain, between a plumbago hedge and bougainvillea.",
+      "avoid": "The door belongs to a house: steps stop at the facade; do not narrow the lane or the steps beside the ramp.",
+      "accept": [
+        "check_cervantes_patio_walls.py and check_terrain.py pass",
+        "layout test still climbs the ramp steps"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 33
+    },
+    {
+      "id": "junction-lawns",
+      "area": "cervantes",
+      "priority": 3,
+      "kind": "planting",
+      "title": "Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos",
+      "photos": [
+        "IMG_2329.jpg",
+        "IMG_2342.jpg",
+        "IMG_2358.jpg",
+        "IMG_2367.jpg",
+        "IMG_2260.jpg"
+      ],
+      "build": "Place the pollarded trees and check the lawn outlines and white kerbs in data/frontage_divisions.json against the roof views (IMG_2358, IMG_2367).",
+      "avoid": "Change lawn rings only where a roof shot shows them clearly.",
+      "accept": [
+        "frontage regions still pass their checks",
+        "render from IMG_2329"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 45
+    },
+    {
+      "id": "cervantes-east-hedge",
+      "area": "cervantes",
+      "priority": 3,
+      "kind": "structure",
+      "title": "Cervantes east of Elena: white kerb wall and plumbago hedge",
+      "photos": [
+        "IMG_2356.jpg",
+        "IMG_2360.jpg"
+      ],
+      "build": "The low white kerb wall and tall plumbago hedge on the north side of Cervantes east of the junction, as far as IMG_2356 shows.",
+      "avoid": "Unphotographed eastern frontage stays unasserted (see docs/FRONTAGE_DIVISIONS.md).",
+      "accept": [
+        "check_cervantes_patio_walls.py or a new check passes"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 43
+    },
+    {
+      "id": "cervantes-north-patios",
+      "area": "cervantes",
+      "priority": 3,
+      "kind": "structure",
+      "title": "Walled patios along Cervantes from the roof views",
+      "photos": [
+        "IMG_2368.jpg",
+        "IMG_2369.jpg",
+        "IMG_2359.jpg"
+      ],
+      "build": "Patio walls and planting of the gardens north of Cervantes, traced from the three roof shots against the aerial and registry.",
+      "avoid": "Roof shots: trace only what is clearly visible; mark extents estimated.",
+      "accept": [
+        "new check script",
+        "render from IMG_2368 with --high"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 44
+    },
+    {
+      "id": "middle-pool-sw-steps",
+      "area": "middle-pool",
+      "priority": 1,
+      "kind": "levels",
+      "title": "Middle pool south-west: stone steps and the gateway at their top",
+      "photos": [
+        "IMG_2333.jpg",
+        "IMG_2332.jpg"
+      ],
+      "build": "Three rough stone steps climbing the tiled path between the hedge and the raised planter to a white gateway with bougainvillea; the level change they imply (check against data/terrain.json).",
+      "avoid": "Do not move the planter built in data/middle_pool.json; a level change needs check_terrain.py updated, like the Cervantes steps (docs/ELENA_NORTH.md).",
+      "accept": [
+        "player climbs the steps one riser at a time (copy the Cervantes steps test)",
+        "check_middle_pool.py extended"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 31
+    },
+    {
+      "id": "middle-pool-south-gate",
+      "area": "middle-pool",
+      "priority": 2,
+      "kind": "structure",
+      "title": "Middle pool south: iron double gate under a pergola frame",
+      "photos": [
+        "IMG_2334.jpg",
+        "IMG_2335.jpg"
+      ],
+      "build": "Black iron double gate under a curved metal pergola frame, crazy paving with a drain, the raised white planter with a step and the blue tile panel beside it.",
+      "avoid": "Gate stays open and walkable unless a photo shows it shut.",
+      "accept": [
+        "check_middle_pool.py extended",
+        "layout test walks through"
+      ],
+      "dependsOn": [
+        "middle-pool-sw-steps"
+      ],
+      "status": "open",
+      "issue": 39
+    },
+    {
+      "id": "middle-pool-north-entrance",
+      "area": "middle-pool",
+      "priority": 3,
+      "kind": "structure",
+      "title": "Middle pool north-west: curved planter end, white steps, brown-door wall",
+      "photos": [
+        "IMG_2331.jpg",
+        "IMG_2332.jpg",
+        "IMG_2195.jpg",
+        "IMG_2192.jpg"
+      ],
+      "build": "The curved north end of the raised planter, the white steps by the north-west entrance, and the white garden wall with a brown door and pergola entrance north of the west path.",
+      "avoid": "IMG_2331 (±17 m) and IMG_2332 (±14 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
+      "accept": [
+        "pins corrected with locationBasis",
+        "check_middle_pool.py extended"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 48
+    },
+    {
+      "id": "eva-walled-lawn",
+      "area": "eva",
+      "priority": 3,
+      "kind": "planting",
+      "title": "Calle Eva: walled lawn corner with espaliered bougainvillea",
+      "photos": [
+        "IMG_2339.jpg",
+        "IMG_2336.jpg",
+        "IMG_2337.jpg",
+        "IMG_2338.jpg"
+      ],
+      "build": "The two white walls of the lawn corner beside the middle pool east gateway, espaliered bougainvillea (a wall-texture or flat sprite, not crossed cards), green bollard lights; the lawns and lamp posts along Eva.",
+      "avoid": "Do not change the east gateway built in data/middle_pool.json.",
+      "accept": [
+        "render from IMG_2339"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 47
+    },
+    {
+      "id": "paseo-retaining-wall",
+      "area": "paseo",
+      "priority": 1,
+      "kind": "levels",
+      "title": "Paseo: sandstone retaining wall, mesh fence and level drop",
+      "photos": [
+        "IMG_2350.jpg",
+        "IMG_2349.jpg",
+        "IMG_2352.jpg",
+        "IMG_2354.jpg"
+      ],
+      "build": "Yellow sandstone retaining wall about 1.2 m high with a green mesh fence on top along the landward side of the paseo, and the level difference it holds.",
+      "avoid": "Keep the coastal gate and every lane reaching the paseo open.",
+      "accept": [
+        "paseo walks end to end",
+        "check script for the wall"
+      ],
+      "dependsOn": [],
+      "status": "done",
+      "owner": "claude (subagent)"
+    },
+    {
+      "id": "south-pool-seaward-level",
+      "area": "south-pool",
+      "priority": 2,
+      "kind": "levels",
+      "title": "South pool: lawn level above the paseo and its seaward wall",
+      "photos": [
+        "IMG_2349.jpg",
+        "IMG_2188.jpg"
+      ],
+      "build": "Make the south pool lawn stand above the paseo by the height of the retaining wall (IMG_2349 shows the pool area right above it) and reconcile skeleton.seaWall with the sandstone wall.",
+      "avoid": "Pools stay level (check_terrain.py).",
+      "accept": [
+        "check_terrain.py and check_seafront.py pass",
+        "render from IMG_2349"
+      ],
+      "dependsOn": [
+        "paseo-retaining-wall"
+      ],
+      "status": "open",
+      "issue": 37
+    },
+    {
+      "id": "barraka-boardwalk",
+      "area": "barraka-beach",
+      "priority": 3,
+      "kind": "materials",
+      "title": "Barraka Beach: boardwalk, sign planter and parasols",
+      "photos": [
+        "IMG_2346.jpg",
+        "IMG_2347.jpg",
+        "IMG_2223.jpg",
+        "IMG_2225.jpg"
+      ],
+      "build": "Timber boardwalk across the sand from the paseo to the restaurant, the BARRAKA BEACH painted planter, thatched parasols and loungers (Details).",
+      "avoid": "Beach props are Details only and must keep the route clearance.",
+      "accept": [
+        "render from IMG_2347"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 42
+    },
+    {
+      "id": "shoreline-check",
+      "area": "barraka-beach",
+      "priority": 2,
+      "kind": "layout",
+      "title": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
+      "photos": [
+        "IMG_2285.jpg",
+        "IMG_2298.jpg",
+        "IMG_2299.jpg",
+        "IMG_2300.jpg"
+      ],
+      "build": "Check the sea/beach outline against the beach photos and the aerial; IMG_2285 was taken on the beach but its pin is in the map sea polygon. Correct the outline only with independent map evidence.",
+      "avoid": "Do not move the outline to fit one GPS pin.",
+      "accept": [
+        "check_seafront.py passes",
+        "note added to docs/SEAFRONT.md"
+      ],
+      "dependsOn": [],
+      "status": "in-progress",
+      "issue": 32,
+      "owner": "issue_32"
+    },
+    {
+      "id": "north-pool-garden-walls",
+      "area": "north-pool",
+      "priority": 2,
+      "kind": "structure",
+      "title": "North pool: curved garden walls and raised patios",
+      "photos": [
+        "IMG_2207.jpg",
+        "IMG_2208.jpg",
+        "IMG_2204.jpg",
+        "IMG_2205.jpg"
+      ],
+      "build": "Trace the curved white garden walls (about 1 m), raised patios with tiled steps and the crazy-paving path round the lawn from the upper-floor photos (and private reference photos 03-07 if available), replacing generated wall blocks in that band.",
+      "avoid": "Upper-floor shots: pins are inside buildings. Follow the AGENTS.md rule against repeated invented walls.",
+      "accept": [
+        "new check script",
+        "render with --high from IMG_2204"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 36
+    },
+    {
+      "id": "seaward-lanes-paving",
+      "area": "seaward-lanes",
+      "priority": 3,
+      "kind": "materials",
+      "title": "Seaward lanes: octagonal paving and covered passages",
+      "photos": [
+        "IMG_2235.jpg",
+        "IMG_2237.jpg",
+        "IMG_2239.jpg",
+        "IMG_2185.jpg",
+        "IMG_2190.jpg"
+      ],
+      "build": "An octagonal terracotta paving texture for the lanes that use it, and patterned-tile floors in the covered passages.",
+      "avoid": "Materials only; no geometry changes.",
+      "accept": [
+        "render from IMG_2235"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 51
+    },
+    {
+      "id": "picasso-service-road",
+      "area": "picasso",
+      "priority": 3,
+      "kind": "structure",
+      "title": "Pintor Picasso: service road, utility sheds and bins",
+      "photos": [
+        "IMG_2345.jpg"
+      ],
+      "build": "The asphalt service road, low white utility sheds with brown doors, the boundary wall, the stone-plinth building with railings and ramp, recycling bins (Details).",
+      "avoid": "Outside the walkable resort core: keep it simple and evidence-backed.",
+      "accept": [
+        "render from IMG_2345"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 50
+    },
+    {
+      "id": "paseo-retrace-line",
+      "area": "paseo",
+      "priority": 2,
+      "kind": "layout",
+      "title": "Paseo: re-trace the promenade line from the retaining wall",
+      "photos": [
+        "IMG_2350.jpg",
+        "IMG_2352.jpg",
+        "IMG_2354.jpg",
+        "IMG_2349.jpg"
+      ],
+      "build": "The mapped (OSM) paseo is 1-3 m off the real one: in places a sand strip shows between the paseo and the wall that the photos do not have, elsewhere the wall had to be held 1.8 m in. Re-trace the paseo centreline about 1.5 m seaward of data/paseo_wall.json, regenerate skeleton.json and remove the 1.8 m hold-in.",
+      "avoid": "Keep the coastal gate connector and the Barraka boardwalk joins; regenerate skeleton.json with scripts/build_skeleton.py, never by hand.",
+      "accept": [
+        "check_seafront.py and check_paseo_wall.py pass",
+        "paseo still walks end to end"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 35
+    },
+    {
+      "id": "paseo-east-end-height",
+      "area": "paseo",
+      "priority": 2,
+      "kind": "levels",
+      "title": "Paseo east end: wall height towards the big pool",
+      "photos": [
+        "IMG_2227.jpg",
+        "IMG_2350.jpg",
+        "IMG_2226.jpg"
+      ],
+      "build": "The model makes the wall rise to 3 m over its last 40 m because the paseo falls to big-pool level; IMG_2227 from the beach suggests it stays about 1 m. Settle it (a new photo from the paseo near Calle Guillermo would decide) and adjust the paseo or big-pool levels in data/main_pool.json.",
+      "avoid": "Do not change the big-pool level without evidence; Dave set it. Ask for a photo if the existing ones do not decide it.",
+      "accept": [
+        "check_pool_levels.py and check_paseo_wall.py pass"
+      ],
+      "dependsOn": [
+        "paseo-retrace-line"
+      ],
+      "status": "open",
+      "issue": 40
+    },
+    {
+      "id": "paseo-house-clearance",
+      "area": "paseo",
+      "priority": 2,
+      "kind": "layout",
+      "title": "Paseo east: registry house 6465801UF1366N_part5 blocks the walk",
+      "photos": [
+        "IMG_2226.jpg",
+        "IMG_2227.jpg"
+      ],
+      "build": "Further east than the boardwalk the mapped paseo passes 0.64 m from registry house 6465801UF1366N_part5, so the player is blocked. Find whether the paseo line or the footprint is wrong (aerial, photos) and fix the one that is.",
+      "avoid": "Registry footprints stay unless a photo-backed correction is the point; prefer re-tracing the paseo.",
+      "accept": [
+        "layout browser test walks the whole paseo end to end"
+      ],
+      "dependsOn": [
+        "paseo-retrace-line"
+      ],
+      "status": "open",
+      "issue": 41
+    },
+    {
+      "id": "paseo-details",
+      "area": "paseo",
+      "priority": 3,
+      "kind": "planting",
+      "title": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
+      "photos": [
+        "IMG_2350.jpg",
+        "IMG_2352.jpg",
+        "IMG_2354.jpg",
+        "IMG_2349.jpg"
+      ],
+      "build": "Clipped hedges behind the mesh fence, the green windbreak cloth on parts of it, the slim white lamp posts and the service cover, all Details only.",
+      "avoid": "Details must keep the paseo route clearance.",
+      "accept": [
+        "render from IMG_2352"
+      ],
+      "dependsOn": [],
+      "status": "open",
+      "issue": 49
+    }
+  ]
 }

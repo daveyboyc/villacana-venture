@@ -1601,7 +1601,7 @@
    "kind": "build-task",
    "name": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 32
   },
   {
