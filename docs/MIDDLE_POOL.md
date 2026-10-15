@@ -76,3 +76,21 @@ walls and soil show in Layout; plants only in Details.
   double gate (IMG_2334).
 - The gate leaf is fixed open; the notice text is painted, not legible.
 - The glass pool fence is not built (Dave, 2026-10-11).
+
+## West side: the courtyard's step up to the Dalí level (15 October)
+
+The courtyard and the path beside the planter are at pool level; the ground
+behind the planter is the upper, Dalí-side level, 0.5 m higher. The planter is
+the retaining edge.
+
+- **South-west steps** (`data/middle_pool_steps.json`, IMG_2333): three stone
+  steps on the north-west half of Calle Eva, beside a steep tiled ramp, between
+  the planter's end wall and a hedge. Risers at 0.05, 0.5 and 0.95 m from the
+  foot; the ramp reaches the top tread's level about 2.5 m up. They are built by
+  `src/ramp-steps.ts`, the same code as the Cervantes steps, and the browser
+  test climbs them.
+- **North end** (IMG_2332, IMG_2331): the terrain rises behind the planter's
+  north end. The white steps and pergola gate there are not built yet (task
+  `middle-pool-north-entrance`).
+- Terrain: `data/terrain.json` foot line and the `middle-pool-west` local run;
+  `scripts/check_terrain.py` checks it.

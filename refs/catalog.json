@@ -2174,7 +2174,9 @@
    "altitude": 7.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "steps:middle-pool-sw-steps"
+  ],
   "looksAt": [
    -143.0,
    106.6
@@ -4223,7 +4225,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "middle_pool.json:middle-pool-west-planter"
+   "middle_pool.json:middle-pool-west-planter",
+   "steps:middle-pool-sw-steps"
   ],
   "looksAt": [
    -137.2,
