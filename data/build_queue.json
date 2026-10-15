@@ -500,7 +500,8 @@
     "check_levels.py: north-pool-west-stair marked built"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 54
   },
   {
    "id": "middle-pool-raised-patios",
@@ -524,7 +525,8 @@
    "dependsOn": [
     "raised-terraces"
    ],
-   "status": "open"
+   "status": "open",
+   "issue": 55
   },
   {
    "id": "cervantes-steps-treads",
@@ -545,7 +547,8 @@
     "check_levels.py: cervantes-elena-steps marked built"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 56
   },
   {
    "id": "door-sills",
@@ -568,7 +571,8 @@
     "layout browser test still walks every route both ways"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "issue": 57
   }
  ]
 }

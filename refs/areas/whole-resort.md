@@ -34,7 +34,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P3 | `door-sills` | Door sills and footpath kerbs: the small steps everywhere | open | [IMG_2260](../../public/photos-ref/IMG_2260.jpg), [IMG_2261](../../public/photos-ref/IMG_2261.jpg), [IMG_2330](../../public/photos-ref/IMG_2330.jpg), [IMG_2291](../../public/photos-ref/IMG_2291.jpg), [IMG_2293](../../public/photos-ref/IMG_2293.jpg), [IMG_2283](../../public/photos-ref/IMG_2283.jpg) |
+| P3 | `door-sills` [#57](https://github.com/daveyboyc/villacana-venture/issues/57) | Door sills and footpath kerbs: the small steps everywhere | open | [IMG_2260](../../public/photos-ref/IMG_2260.jpg), [IMG_2261](../../public/photos-ref/IMG_2261.jpg), [IMG_2330](../../public/photos-ref/IMG_2330.jpg), [IMG_2291](../../public/photos-ref/IMG_2291.jpg), [IMG_2293](../../public/photos-ref/IMG_2293.jpg), [IMG_2283](../../public/photos-ref/IMG_2283.jpg) |
 
 ## Reviewed references
 
