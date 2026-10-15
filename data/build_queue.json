@@ -63,8 +63,9 @@
     "render from IMG_2203"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 46
+   "status": "in-progress",
+   "issue": 46,
+   "owner": "issue_46"
   },
   {
    "id": "cervantes-door-steps",
