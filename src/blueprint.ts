@@ -1,3 +1,4 @@
+import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
@@ -95,6 +96,10 @@ async function boot(): Promise<void> {
   for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
   line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
   frontages.append(middle);
+  const picasso=el("g",{id:"picasso-service-road"});
+  for(const f of picassoFeatures){const node=el("path",{d:path(picassoStrip(f.points,f.thickness)),fill:f.kind==="plinth"?"#998b71":"#fffdf5","data-picasso-id":f.id});const title=el("title",{});title.textContent=`${f.name}: ${f.trust} · ${f.evidence.join(", ")}`;node.append(title);picasso.append(node);}
+  picasso.append(el("path",{d:path(picassoRamp.ring as Vec2[]),fill:"#a49f90","data-picasso-id":picassoRamp.id}));
+  frontages.append(picasso);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});
   levels.append(el("path",{d:path(lowerPoolRing),fill:"#7dcbd1","fill-opacity":0.12,stroke:"#596d78","stroke-width":0.4,"stroke-dasharray":"1 1"}));

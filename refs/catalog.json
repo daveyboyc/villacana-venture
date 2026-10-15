@@ -4573,7 +4573,11 @@
    "altitude": 8.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "picasso_service_road.json:picasso-utility-front",
+   "picasso_service_road.json:picasso-boundary-wall",
+   "picasso_service_road.json:picasso-stone-plinth"
+  ],
   "looksAt": [
    -18.4,
    43.7

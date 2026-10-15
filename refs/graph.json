@@ -1476,6 +1476,21 @@
    "name": "Paseo · timber edge onto the beach"
   },
   {
+   "id": "picasso_service_road.json:picasso-boundary-wall",
+   "kind": "model-feature",
+   "name": "picasso boundary wall"
+  },
+  {
+   "id": "picasso_service_road.json:picasso-stone-plinth",
+   "kind": "model-feature",
+   "name": "picasso stone plinth"
+  },
+  {
+   "id": "picasso_service_road.json:picasso-utility-front",
+   "kind": "model-feature",
+   "name": "picasso utility front"
+  },
+  {
    "id": "ramp:cervantes-elena-ramp",
    "kind": "model-feature",
    "name": "Cervantes / Elena ramp"
@@ -1625,7 +1640,7 @@
    "kind": "build-task",
    "name": "Pintor Picasso: service road, utility sheds and bins",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 50
   },
   {
@@ -5033,6 +5048,21 @@
    "relation": "cites"
   },
   {
+   "from": "picasso_service_road.json:picasso-boundary-wall",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "picasso_service_road.json:picasso-stone-plinth",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "picasso_service_road.json:picasso-utility-front",
+   "to": "ref:IMG_2345.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "ramp:cervantes-elena-ramp",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -5225,6 +5255,21 @@
   {
    "from": "paseo_wall.json:paseo-timber-edge",
    "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "picasso_service_road.json:picasso-boundary-wall",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "picasso_service_road.json:picasso-stone-plinth",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "picasso_service_road.json:picasso-utility-front",
+   "to": "area:picasso",
    "relation": "in-area"
   },
   {

@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 296,
+  "photosCitedByModel": 43,
+  "modelFeaturesWithPhotoCitations": 38
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -4960,7 +4960,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "picasso_service_road.json:picasso-utility-front",
+    "picasso_service_road.json:picasso-boundary-wall",
+    "picasso_service_road.json:picasso-stone-plinth"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -14.4,

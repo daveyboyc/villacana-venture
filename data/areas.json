@@ -235,9 +235,15 @@
     "docs/STREET_LAYOUT.md"
    ],
    "data": [
-    "data/street_layout.json"
+    "data/street_layout.json",
+    "data/picasso_service_road.json"
    ],
-   "src": []
+   "src": [
+    "src/picasso-service-road.ts"
+   ],
+   "notes": [
+    "IMG_2345 supports bounded utility fronts/brown doors, boundary wall, stone plinth/railings, short ramp and Details-only bins. Frontage offsets and dimensions remain estimated at the existing Picasso road; registry houses, asphalt route and site levels are retained. Ramp is solid inaccessible private-frontage geometry; no new walkable elevated platform or unseen wall continuation is asserted."
+   ]
   },
   {
    "id": "north-lanes",
