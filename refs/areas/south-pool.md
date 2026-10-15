@@ -10,8 +10,8 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 ## Read first
 
-- docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`
-- data: `data/south_pool.json`, `proposals/south-pool.json`
+- docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`, `docs/LEVELS.md`
+- data: `data/south_pool.json`, `proposals/south-pool.json`, `data/levels_survey.json`
 - src: `src/south-pool.ts`
 - contact sheet: `villacana-reference/contact-sheets/south-pool.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -19,6 +19,12 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 Layout: 6, Levels and slopes: 1, Facades and roofs: 1, Materials: 2, Planting: 2, Views: 2
 7 reviewed, 0 suggested only by camera position.
+
+## Levels
+
+Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
+
+- `south-lawn-over-paseo` (retaining-wall): 0.9-1.1 m above the paseo, medium confidence at (-74, 198) ±3 m. Model: **built**, task `south-pool-seaward-level`. About three sandstone courses; the hedge grows from coping level and the deck and water are seen from just above at eye height. IMG_2350 against a lamp post gives 1.0-1.2 m. Lower to the west: 0.6-0.9 m in IMG_2352, 0.5-0.8 m in IMG_2354. The model has the paseo 1 m below street level beside the south lawn, rising to leave the wall about 0.5 m at its west end (data/main_pool.json paseo profile), which matches. (IMG_2349.jpg, IMG_2350.jpg, IMG_2188.jpg)
 
 ## Open build tasks
 
