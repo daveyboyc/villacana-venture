@@ -197,8 +197,9 @@
    "dependsOn": [
     "middle-pool-sw-steps"
    ],
-   "status": "open",
-   "issue": 39
+   "status": "in-progress",
+   "issue": 39,
+   "owner": "issue39"
   },
   {
    "id": "middle-pool-north-entrance",
