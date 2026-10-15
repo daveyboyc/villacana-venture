@@ -19,7 +19,7 @@
     "layout browser test walks into the path and stops at the door"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 34,
    "owner": "issue_34"
   },
