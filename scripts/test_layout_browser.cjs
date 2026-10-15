@@ -145,19 +145,19 @@ const path = require("node:path");
     for (const route of routes)
       for (const points of [route.points, [...route.points].reverse()])
         walk(points);
-    // Up and down the steps beside the Cervantes ramp: one riser at a time, ending level with the ramp.
-    {
-      const { default: flight } = await import("/data/cervantes_elena_steps.json");
+    // Up and down the steps beside the Cervantes ramp and out of the middle pool onto Calle Eva: one riser at a time, ending level with the ramp.
+    for (const file of ["/data/cervantes_elena_steps.json", "/data/middle_pool_steps.json"]) {
+      const { default: flight } = await import(file);
       const [fx, fz] = flight.foot, [tx, tz] = flight.toward, len = Math.hypot(tx - fx, tz - fz), ux = (tx - fx) / len, uz = (tz - fz) / len, sx = -uz, sz = ux;
       const across = (flight.across[0] + flight.across[1]) / 2, at = (d) => [fx + ux * d + sx * across, fz + uz * d + sz * across];
       const heights = [];
       for (let d = -0.4; d <= flight.end + 0.3; d += 0.05) heights.push(world.groundHeight(...at(d)));
       const jumps = heights.slice(1).map((h, i) => h - heights[i]).filter((j) => j > 0.05);
-      if (jumps.length !== flight.risers.length || jumps.some((j) => j > 0.2)) throw Error("Steps do not rise one shallow riser at a time: " + jumps);
+      if (jumps.length !== flight.risers.length || jumps.some((j) => j > 0.2)) throw Error(flight.id + ": steps do not rise one shallow riser at a time: " + jumps);
       const rampTop = world.groundHeight(fx + ux * flight.end, fz + uz * flight.end);
-      if (Math.abs(heights[heights.length - 1] - rampTop) > 0.03) throw Error("Top of the steps is not level with the ramp");
+      if (Math.abs(heights[heights.length - 1] - rampTop) > 0.03) throw Error(flight.id + ": top of the steps is not level with the ramp");
       walk([at(-0.4), at(flight.end + 0.3)]);
-      if (Math.abs(player.y - rampTop) > 0.08) throw Error("Player did not climb the steps: " + player.y + " vs " + rampTop);
+      if (Math.abs(player.y - rampTop) > 0.08) throw Error(flight.id + ": player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
     }
     // Elena north: through the arched gateway, and the raised beds keep the player out.
