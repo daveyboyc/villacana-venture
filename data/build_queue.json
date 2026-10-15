@@ -436,8 +436,9 @@
    "dependsOn": [
     "paseo-retrace-line"
    ],
-   "status": "open",
-   "issue": 40
+   "status": "in-progress",
+   "issue": 40,
+   "owner": "Codex issue-40"
   },
   {
    "id": "paseo-house-clearance",
