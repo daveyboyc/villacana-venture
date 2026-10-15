@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 296,
+  "photosCitedByModel": 45,
+  "modelFeaturesWithPhotoCitations": 38
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5347,7 +5347,11 @@
      "angleOffset": 30.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_north_patios.json:cervantes-north-partition-east",
+    "cervantes_north_patios.json:cervantes-north-partition-middle",
+    "cervantes_north_patios.json:cervantes-north-partition-west"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.7,
@@ -5677,7 +5681,11 @@
      "angleOffset": 23.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_north_patios.json:cervantes-north-partition-east",
+    "cervantes_north_patios.json:cervantes-north-partition-middle",
+    "cervantes_north_patios.json:cervantes-north-partition-west"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -153.0,
@@ -5720,7 +5728,11 @@
      "angleOffset": 27.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_north_patios.json:cervantes-north-partition-east",
+    "cervantes_north_patios.json:cervantes-north-partition-middle",
+    "cervantes_north_patios.json:cervantes-north-partition-west"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -153.0,

@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 296,
+  "photosCitedByModel": 45,
+  "modelFeaturesWithPhotoCitations": 38
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1834,6 +1834,39 @@
     "IMG_2351.jpg",
     "IMG_2352.jpg",
     "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "name": "Cervantes north · east visible patio partition",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "name": "Cervantes north · middle visible patio partition",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "name": "Cervantes north · west visible patio partition",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
    ]
   },
   {
@@ -6708,6 +6741,24 @@
    "angleOffset": 30.8
   },
   {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2360.jpg",
    "to": "building:6265401UF1366N_part2",
    "relation": "possibly-in-view",
@@ -6911,6 +6962,24 @@
    "angleOffset": 23.7
   },
   {
+   "from": "photo:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2369.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -6936,6 +7005,24 @@
    "relation": "possibly-in-view",
    "distance": 40.0,
    "angleOffset": 27.7
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   }
  ]
 }

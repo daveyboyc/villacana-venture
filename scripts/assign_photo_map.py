@@ -49,7 +49,7 @@ def features(s):
         add('paseo_wall.json:'+pw['wall']['id'],pw['wall']['name'],'reference feature','authored photo/map interpretation',evidence=pw['wall']['evidence'],points=pw['wall']['face'])
         # The timber edge is on the paseo beside the wall: the mapped paseo points along the wall stand in for it.
         add('paseo_wall.json:'+pw['edge']['id'],pw['edge']['name'],'reference feature','authored photo/map interpretation',evidence=pw['edge']['evidence'],points=[q for q in sf['paseo']['points'] if nearest(q,pw['wall']['face'])[0]<8],width=sf['paseo']['width'])
-    for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
+    for filename,key in [('cervantes_north_patios.json','walls'),('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
         data=json.loads((ROOT/'data'/filename).read_text())
         for f in data[key]:
             # Passages refer to an existing registry part rather than a second footprint.

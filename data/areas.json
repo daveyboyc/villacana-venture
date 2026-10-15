@@ -165,7 +165,8 @@
     "docs/DALI_CERVANTES.md",
     "docs/STREET_LAYOUT.md",
     "docs/FRONTAGE_DIVISIONS.md",
-    "docs/ELENA_NORTH.md"
+    "docs/ELENA_NORTH.md",
+    "docs/CERVANTES_NORTH_PATIOS.md"
    ],
    "data": [
     "data/dali_cervantes.json",
@@ -173,19 +174,22 @@
     "data/cervantes_patio_walls.json",
     "data/passages.json",
     "data/frontage_divisions.json",
-    "data/cervantes_elena_steps.json"
+    "data/cervantes_elena_steps.json",
+    "data/cervantes_north_patios.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
     "src/dali-threshold.ts",
     "src/frontages.ts",
-    "src/ramp-steps.ts"
+    "src/ramp-steps.ts",
+    "src/cervantes-north-patios.ts"
    ],
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
     "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
     "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.",
-    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena."
+    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena.",
+    "IMG_2368/2369/2359: three partial transverse patio partitions north of Cervantes traced with Details-only climbers/shrubs (docs/CERVANTES_NORTH_PATIOS.md). Concealed joins and complete enclosure boundaries remain unasserted; plan endpoints estimated to about 1–2 m."
    ]
   },
   {

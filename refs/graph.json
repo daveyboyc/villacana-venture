@@ -1316,6 +1316,21 @@
    "name": "Calle Elena covered walkway"
   },
   {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "kind": "model-feature",
+   "name": "Cervantes north · east visible patio partition"
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "kind": "model-feature",
+   "name": "Cervantes north · middle visible patio partition"
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "kind": "model-feature",
+   "name": "Cervantes north · west visible patio partition"
+  },
+  {
    "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "kind": "model-feature",
    "name": "Cervantes · north patio wall 1"
@@ -1538,7 +1553,7 @@
    "kind": "build-task",
    "name": "Walled patios along Cervantes from the roof views",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 44
   },
   {
@@ -4513,6 +4528,51 @@
    "relation": "cites"
   },
   {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "to": "ref:IMG_2368.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "to": "ref:IMG_2369.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "to": "ref:IMG_2368.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "to": "ref:IMG_2369.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "to": "ref:IMG_2368.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "to": "ref:IMG_2369.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "to": "ref:IMG_2263.jpg",
    "relation": "cites"
@@ -5063,6 +5123,21 @@
    "relation": "in-area"
   },
   {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "to": "area:cervantes",
    "relation": "in-area"
@@ -5297,6 +5372,12 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2197.jpg",
    "to": "elena_north.json:elena-north-tree-bed-2",
    "relation": "looks-at",
@@ -5449,6 +5530,12 @@
   {
    "from": "ref:IMG_2217.jpg",
    "to": "ramp:cervantes-elena-ramp",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2218.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -6029,6 +6116,12 @@
    "basis": "reviewed"
   },
   {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2289.jpg",
    "to": "dali_cervantes_threshold.json:dali-house-footpath-1",
    "relation": "looks-at",
@@ -6115,6 +6208,12 @@
   {
    "from": "ref:IMG_2300.jpg",
    "to": "area:beach",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6365,6 +6464,12 @@
    "basis": "reviewed"
   },
   {
+   "from": "ref:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
    "from": "ref:IMG_2363.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
@@ -6445,6 +6550,18 @@
   {
    "from": "ref:IMG_2367.jpg",
    "to": "ramp:cervantes-elena-ramp",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
    "relation": "looks-at",
    "basis": "reviewed"
   },

@@ -1,3 +1,4 @@
+import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
@@ -154,11 +155,11 @@ async function boot(): Promise<void> {
   const player = new Player();
   player.group.userData.noDrape = true;
   scene.add(player.group);
-  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z) && canPlaceDecoration(x,z,.6));
+  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && canPlaceDecoration(x,z,.6));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
+  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addMiddlePool(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
@@ -166,7 +167,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? []), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? []), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
