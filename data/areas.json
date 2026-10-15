@@ -173,19 +173,22 @@
     "data/cervantes_patio_walls.json",
     "data/passages.json",
     "data/frontage_divisions.json",
-    "data/cervantes_elena_steps.json"
+    "data/cervantes_elena_steps.json",
+    "data/junction_lawns.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
     "src/dali-threshold.ts",
     "src/frontages.ts",
-    "src/ramp-steps.ts"
+    "src/ramp-steps.ts",
+    "src/junction-lawns.ts"
    ],
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
     "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
     "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.",
-    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena."
+    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena.",
+    "2026-10-15 (#45): IMG_2329/2342 show the same near-corner pollarded lawn tree; IMG_2358/2367 and IMG_2260 show three clipped trees in sequence beside the lane, two in the nearer lawn and one beyond the door approach. Details positions/heights estimated; the existing lawn/white-kerb rings remain approximate because the oblique roof views do not calibrate their metric extents."
    ]
   },
   {

@@ -1456,6 +1456,21 @@
    "name": "Dalí · coastal pedestrian gate"
   },
   {
+   "id": "junction_lawns.json:junction-pollarded-1",
+   "kind": "model-feature",
+   "name": "Cervantes / Elena · clipped lawn tree 1"
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-2",
+   "kind": "model-feature",
+   "name": "Cervantes / Elena · clipped lawn tree 2"
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-3",
+   "kind": "model-feature",
+   "name": "Cervantes / Elena · clipped lawn tree 3"
+  },
+  {
    "id": "middle_pool.json:middle-pool-east-gateway",
    "kind": "model-feature",
    "name": "Middle pool · east gateway from Calle Eva"
@@ -1522,7 +1537,7 @@
    "kind": "build-task",
    "name": "Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 45
   },
   {
@@ -4893,6 +4908,26 @@
    "relation": "cites"
   },
   {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "to": "ref:IMG_2329.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "to": "ref:IMG_2342.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "frontage_divisions.json:cervantes-elena-lawn-2",
    "to": "ref:IMG_2260.jpg",
    "relation": "cites"
@@ -4900,6 +4935,26 @@
   {
    "from": "frontage_divisions.json:cervantes-elena-lawn-2",
    "to": "ref:IMG_2261.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "to": "ref:IMG_2329.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "to": "ref:IMG_2342.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "to": "ref:IMG_2367.jpg",
    "relation": "cites"
   },
   {
@@ -4945,6 +5000,56 @@
   {
    "from": "gate:dali-coastal-gate",
    "to": "ref:IMG_2297.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-1",
+   "to": "ref:IMG_2329.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-1",
+   "to": "ref:IMG_2342.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-1",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-1",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-2",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-2",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-2",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-3",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-3",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-3",
+   "to": "ref:IMG_2367.jpg",
    "relation": "cites"
   },
   {
@@ -5200,6 +5305,26 @@
   {
    "from": "gate:dali-coastal-gate",
    "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-1",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-1",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-2",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "junction_lawns.json:junction-pollarded-3",
+   "to": "area:elena",
    "relation": "in-area"
   },
   {

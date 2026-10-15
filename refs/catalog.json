@@ -2484,7 +2484,9 @@
    "frontage_divisions.json:cervantes-elena-lawn-1",
    "frontage_divisions.json:cervantes-elena-lawn-2",
    "frontage_divisions.json:cervantes-front-patio",
-   "frontage_divisions.json:cervantes-lawn-door-path"
+   "frontage_divisions.json:cervantes-lawn-door-path",
+   "junction_lawns.json:junction-pollarded-2",
+   "junction_lawns.json:junction-pollarded-3"
   ],
   "looksAt": [
    -147.5,
@@ -4059,7 +4061,11 @@
    "altitude": 6.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "junction_lawns.json:junction-pollarded-1"
+  ],
   "looksAt": [
    -154.5,
    62.6
@@ -4535,7 +4541,11 @@
    "altitude": 7.3,
    "trust": "checked against photo content"
   },
-  "citedBy": [],
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "junction_lawns.json:junction-pollarded-1"
+  ],
   "looksAt": [
    -152.8,
    62.5
@@ -4960,7 +4970,13 @@
    "altitude": 10.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "junction_lawns.json:junction-pollarded-1",
+   "junction_lawns.json:junction-pollarded-2",
+   "junction_lawns.json:junction-pollarded-3"
+  ],
   "looksAt": [
    -151.0,
    57.5
@@ -5316,7 +5332,13 @@
    "altitude": 11.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-elena-lawn-2",
+   "junction_lawns.json:junction-pollarded-1",
+   "junction_lawns.json:junction-pollarded-2",
+   "junction_lawns.json:junction-pollarded-3"
+  ],
   "looksAt": [
    -151.5,
    56.0
