@@ -6,7 +6,8 @@ Task `shoreline-check` · area **Barraka and the beach** · priority P2 · layou
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/barraka-beach.md` and the contact sheet `villacana-reference/contact-sheets/barraka-beach.jpg`
-- docs: `docs/SEAFRONT.md`
+- docs: `docs/SEAFRONT.md`, `docs/LEVELS.md`
+- data: `data/levels_survey.json`
 - src: `src/seafront.ts`, `src/seaside.ts`
 
 ## Photos to build from

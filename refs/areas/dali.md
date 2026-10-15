@@ -11,8 +11,8 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 ## Read first
 
-- docs: `docs/DALI_CERVANTES.md`, `docs/LAYOUT_ACCURACY.md`
-- data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`
+- docs: `docs/DALI_CERVANTES.md`, `docs/LAYOUT_ACCURACY.md`, `docs/LEVELS.md`
+- data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`, `data/levels_survey.json`
 - src: `src/coastal-gate.ts`, `src/dali-threshold.ts`
 - contact sheet: `villacana-reference/contact-sheets/dali.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -20,6 +20,14 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 4, Planting: 2, Views: 1
 25 reviewed, 0 suggested only by camera position.
+
+## Levels
+
+Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
+
+- `dali-cervantes-apron` (level): 0-0.15 m, high confidence at (-184.5, 75.5) ±4 m. Model: **built**. No step or riser: the pale tiled apron meets the Dalí asphalt flush, with a slot drain 2.5-3.2 m in from the road. A raised white planter of 0.4-0.6 m on the north side of the exit. (IMG_2275.jpg, IMG_2289.jpg, IMG_2266.jpg)
+- `dali-south-approach` (slope): 0.15-0.35 m above the Dalí footpath, low confidence. Model: **missing**, task `door-sills`. Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps. (IMG_2283.jpg)
+- `dali-footpath-kerb` (raised-threshold): 0.1-0.15 m above the parking asphalt, medium confidence. Model: **missing**, task `door-sills`. The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold. (IMG_2291.jpg, IMG_2293.jpg)
 
 ## Built from these photos
 
