@@ -32,7 +32,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P2 | `elena-east-patios` [#38](https://github.com/daveyboyc/villacana-venture/issues/38) | Elena north: private patios east of the beds (after elena-garden-door) | open | [IMG_2366](../../public/photos-ref/IMG_2366.jpg), [IMG_2362](../../public/photos-ref/IMG_2362.jpg), [IMG_2360](../../public/photos-ref/IMG_2360.jpg) |
-| P2 | `elena-garden-door` [#34](https://github.com/daveyboyc/villacana-venture/issues/34) | Elena north: path and garden door between the two hedged beds | open | [IMG_2199](../../public/photos-ref/IMG_2199.jpg), [IMG_2201](../../public/photos-ref/IMG_2201.jpg), [IMG_2200](../../public/photos-ref/IMG_2200.jpg) |
+| P2 | `elena-garden-door` [#34](https://github.com/daveyboyc/villacana-venture/issues/34) | Elena north: path and garden door between the two hedged beds | in-progress · issue_34 | [IMG_2199](../../public/photos-ref/IMG_2199.jpg), [IMG_2201](../../public/photos-ref/IMG_2201.jpg), [IMG_2200](../../public/photos-ref/IMG_2200.jpg) |
 | P3 | `elena-gated-entry` [#46](https://github.com/daveyboyc/villacana-venture/issues/46) | Elena: gated tiled entry west of the covered walkway | open | [IMG_2361](../../public/photos-ref/IMG_2361.jpg), [IMG_2202](../../public/photos-ref/IMG_2202.jpg), [IMG_2203](../../public/photos-ref/IMG_2203.jpg) |
 
 ## Built from these photos
