@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "d051393085de7ca7fd3245704d39d3cf78c6fb73b4e1b857407b8226c20c90f9",
+ "inputDigest": "19bb2817aaab3afd9391eef3815046e620167d56e63d8a7cfe298830a5c04541",
  "summary": {
   "unplaced": 1,
   "suggested": 76,
@@ -295,12 +295,6 @@
      "name": "Calle Patricia",
      "kind": "street",
      "gap": 4.7
-    },
-    {
-     "id": "street:silvia-south",
-     "name": "Calle Silvia",
-     "kind": "street",
-     "gap": 5.6
     }
    ],
    "inViewCandidates": [
@@ -315,8 +309,8 @@
    "camera": {
     "x": -114.9,
     "z": 126.2,
-    "basis": "phone location",
-    "reportedAccuracy": 7.7,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 3.0,
     "heading": 322,
     "headingBasis": "EXIF true north"
    }

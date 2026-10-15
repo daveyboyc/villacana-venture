@@ -261,17 +261,19 @@
   "id": "IMG_2189.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2189.jpg",
-  "title": "Narrow tiled lane with window grilles, lanterns and planting",
+  "title": "Calle Silvia north: tiled lane looking to the middle pool south gateway",
   "shows": [
-   "seaward-lanes"
+   "seaward-lanes",
+   "middle-pool"
   ],
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "materials"
+   "materials",
+   "planting"
   ],
-  "note": null,
+  "note": "Dave (2026-10-15): Looks down to the middle pool down called Silvia",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -279,19 +281,21 @@
    "x": -114.9,
    "z": 126.2,
    "heading": 322,
-   "accuracy": 7.7,
+   "accuracy": 3.0,
    "altitude": 6.9,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [],
   "looksAt": [
-   -118.6,
-   121.5
+   -127.0,
+   103.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:silvia-north"
-  ]
+   "street:silvia-north",
+   "street:eva"
+  ],
+  "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
  },
  {
   "id": "IMG_2190.jpg",

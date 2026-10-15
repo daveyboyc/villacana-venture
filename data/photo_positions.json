@@ -160,5 +160,17 @@
    "z": 95.2,
    "accuracy": 14.0
   }
+ },
+ "IMG_2189.HEIC": {
+  "x": -114.9,
+  "z": 126.2,
+  "accuracy": 3.0,
+  "trust": "checked against photo content",
+  "locationBasis": "Confirmed on the photo map by Dave (2026-10-15): the camera pin is right.",
+  "gps": {
+   "x": -114.9,
+   "z": 126.2,
+   "accuracy": 7.7
+  }
  }
 }

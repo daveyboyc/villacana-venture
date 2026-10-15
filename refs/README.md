@@ -9,7 +9,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Area | References | Reviewed | Brief |
 | --- | --- | --- | --- |
 | North pool | 17 | 17 | [areas/north-pool.md](areas/north-pool.md) |
-| Middle pool | 23 | 23 | [areas/middle-pool.md](areas/middle-pool.md) |
+| Middle pool | 24 | 24 | [areas/middle-pool.md](areas/middle-pool.md) |
 | South pool | 7 | 7 | [areas/south-pool.md](areas/south-pool.md) |
 | Main pool | 1 | 1 | [areas/main-pool.md](areas/main-pool.md) |
 | Calle Elena | 39 | 39 | [areas/elena.md](areas/elena.md) |
@@ -29,7 +29,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Levels and slopes | 21 | [topics/levels.md](topics/levels.md) |
 | Facades and roofs | 45 | [topics/facades.md](topics/facades.md) |
 | Materials | 62 | [topics/materials.md](topics/materials.md) |
-| Planting | 48 | [topics/planting.md](topics/planting.md) |
+| Planting | 49 | [topics/planting.md](topics/planting.md) |
 | Signs | 12 | [topics/signage.md](topics/signage.md) |
 | Views | 28 | [topics/view.md](topics/view.md) |
 
