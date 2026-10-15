@@ -68,7 +68,7 @@ python3 scripts/assign_photo_map.py && python3 scripts/test_photo_assignment.py
 python3 scripts/build_references.py --check
 cd scripts && for c in check_map check_street_layout check_boundary_reference check_terrain \
   check_dali_threshold check_cervantes_patio_walls check_elena_north check_middle_pool check_paseo_wall \
-  check_seafront check_pool_levels; do python3 $c.py | tail -1; done; cd ..
+  check_seafront check_pool_levels check_levels; do python3 $c.py | tail -1; done; cd ..
 npx tsc --noEmit && npm run build
 node scripts/test_layout_browser.cjs
 node scripts/test_overview_browser.cjs
@@ -90,7 +90,9 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
 - Registry house and pool footprints stay as they are unless a photo-backed
   correction is the point of the task.
 - Level changes go through `data/terrain.json` (see `localRuns`) and need
-  `check_terrain.py` updated; steps give the player stepped ground.
+  `check_terrain.py` updated; steps give the player stepped ground. Heights come
+  from `data/levels_survey.json` (`docs/LEVELS.md`): houses stay at lane level,
+  patios and terraces are what is raised.
 - Layout view shows structure; plants, hedges and props are Details only and
   must pass the route-clearance guard.
 - This repo is public: no API keys, signed URLs, photo metadata blobs or fetched
@@ -119,7 +121,7 @@ Then add any build work the photos reveal to `data/build_queue.json`.
 
 ## Splitting the queue into issues
 
-The open tasks are filed as GitHub issues #31-#51 (each task's `issue` field
+The open tasks are filed as GitHub issues (#31-#51, #54-#57) (each task's `issue` field
 in `data/build_queue.json`); close the issue from the task's PR with
 `Closes #<n>`. For new tasks: each open task has a body in `refs/issues/<task-id>.md` with the area, the
 photos (with pin accuracy and subject), what to build, what not to do and a

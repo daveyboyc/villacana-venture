@@ -1,0 +1,28 @@
+{
+ "id": "middle-pool-sw-steps",
+ "name": "Middle pool · stone steps up to Calle Eva",
+ "road": "eva",
+ "foot": [
+  -135.63,
+  100.42
+ ],
+ "toward": [
+  -137.85,
+  101.77
+ ],
+ "across": [
+  0.02,
+  0.6
+ ],
+ "risers": [
+  0.05,
+  0.5,
+  0.95
+ ],
+ "end": 2.6,
+ "evidence": [
+  "IMG_2333.jpg",
+  "IMG_2248.jpg"
+ ],
+ "trust": "Three rough stone steps with white-painted sides on the north-west half of Calle Eva where it leaves the middle pool courtyard, beside a steep terracotta-tiled ramp, between the end wall of the raised planter and a tall hedge (IMG_2333, looking south-west from the courtyard). Treads about 0.45 m (one stone slab each); together the steps climb the same 0.5 m as the ramp, which reaches the top tread's level about 2.5 m up. The foot is placed 2.6 m along the lane from the courtyard junction, beside the planter's south end wall, from the IMG_2333 pin (+-3 m) and the planter outline: position about +-1 m."
+}
