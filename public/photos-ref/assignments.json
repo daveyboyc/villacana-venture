@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "d051393085de7ca7fd3245704d39d3cf78c6fb73b4e1b857407b8226c20c90f9",
+ "inputDigest": "5fc7b1cec9ad0eb0afabfebfea31ca469915286cbc8d5ff522cd3c9894754634",
  "summary": {
   "unplaced": 1,
   "suggested": 76,
@@ -5048,7 +5048,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 2.2
+     "gap": 0.8
     }
    ],
    "inViewCandidates": [
@@ -5082,7 +5082,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 2.0
+     "gap": 0.6
     }
    ],
    "inViewCandidates": [
@@ -5174,7 +5174,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 5.3
+     "gap": 3.4
     }
    ],
    "inViewCandidates": [],

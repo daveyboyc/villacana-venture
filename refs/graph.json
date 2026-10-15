@@ -1633,7 +1633,7 @@
    "kind": "build-task",
    "name": "Paseo: re-trace the promenade line from the retaining wall",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 35
   },
   {
@@ -6258,12 +6258,6 @@
   },
   {
    "from": "ref:IMG_2350.jpg",
-   "to": "paseo_wall.json:paseo-retaining-wall",
-   "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2350.jpg",
    "to": "area:paseo",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
@@ -6275,7 +6269,7 @@
    "basis": "estimated 6 m along the heading"
   },
   {
-   "from": "ref:IMG_2352.jpg",
+   "from": "ref:IMG_2350.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
@@ -6289,6 +6283,12 @@
   {
    "from": "ref:IMG_2352.jpg",
    "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

@@ -4733,9 +4733,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "paseo_wall.json:paseo-retaining-wall",
    "area:paseo",
-   "paseo_wall.json:paseo-timber-edge"
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall"
   ]
  },
  {
@@ -4812,9 +4812,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "paseo_wall.json:paseo-retaining-wall",
    "area:paseo",
-   "paseo_wall.json:paseo-timber-edge"
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall"
   ]
  },
  {

@@ -25,6 +25,19 @@ def build_seafront(buildings, rotation):
         pts=[project(nodes[nd.get('ref')]) for nd in way.findall('nd')]
         route.extend(pts if not route else pts[1:])
     route=[[round(x,2),round(z,2)] for x,z in route]
+    # Photo-backed promenade: pavement meets the retaining wall, with no sand
+    # strip. Keep the mapped approach and eastern/boardwalk joins verbatim.
+    wall_data = json.loads((ROOT / 'data/paseo_wall.json').read_text())
+    face, trace = wall_data['wall']['face'], wall_data['route']
+    retraced = []
+    for i, (x, z) in enumerate(face):
+        a, b = face[max(0, i - 1)], face[min(len(face) - 1, i + 1)]
+        length = math.dist(a, b)
+        offset = trace['offsetSeaward']
+        retraced.append([round(x - (b[1] - a[1]) / length * offset, 2),
+                         round(z + (b[0] - a[0]) / length * offset, 2)])
+    gate_join = json.loads((ROOT / 'data/coastal_gate.json').read_text())['route']['points'][-1]
+    route = route[:trace['retainBefore']] + [gate_join] + retraced + route[trace['retainAfter']:]
     # Clip coastal polygons to a bounded planning window, in the map's turned frame.
     bounds=(-225,85,95,265)
     coast=source['coast']
@@ -35,7 +48,7 @@ def build_seafront(buildings, rotation):
     # Covered terrace extension is approximate, checked against aerial and official photos.
     terrace=[unturn(p) for p in [(-27,120),(-14,117),(-9,135),(-27,140),(-33,130)]]
     return {
-        'paseo':{'name':'Paseo · Senda Litoral','width':3,'points':route,'trust':'OSM route; width approximate'},
+        'paseo':{'name':'Paseo · Senda Litoral','width':trace['width'],'points':route,'trust':trace['trust'],'evidence':trace['evidence']},
         'viewBounds':[unturn(p) for p in [(bounds[0],bounds[2]),(bounds[1],bounds[2]),(bounds[1],bounds[3]),(bounds[0],bounds[3])]],
         'beach':{'name':'Villacana beach','ring':source['beaches'][0]['ring'],'trust':'OSM beach polygon; seasonal boundary'},
         'sea':{'name':'Mediterranean Sea','ring':coast+[[1500,1500],[-1500,1500]],'trust':'OSM coastline; outer edge is display extent'},

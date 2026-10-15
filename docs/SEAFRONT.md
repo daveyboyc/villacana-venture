@@ -74,11 +74,11 @@ plain bank where the wall stands.
 
 ### Limits
 
-- Plan position about 1–2 m. Where the aerial puts the wall on the mapped (OSM) paseo
-  line, it is held 1.8 m in from the line so the modelled paseo keeps its width;
-  where it is up to 4.6 m in, a sand strip lies between the paseo ribbon and the
-  wall that the photos do not show. Re-tracing the paseo line from the wall would
-  fix both; not done here because the paseo is shared OSM data.
+- Plan position about 1–2 m. Issue #35 rechecks the southwest wall foot against
+  the aerial and removes its former OSM clearance hold-in. The builder offsets
+  the photographed wall run 1.5 m seaward to generate the 3 m promenade; its
+  inland edge now meets the sandstone face. OSM is retained before/after that
+  run, preserving the Dalí approach and all Barraka boardwalk joins.
 - The east end height: the model makes the wall up to 3 m over its last 40 m, but
   IMG_2227 from the beach suggests about 1 m there. The big-pool lawn level (Dave)
   and the photos disagree; no photo from the paseo near Guillermo yet.
@@ -90,3 +90,18 @@ plain bank where the wall stands.
   shows on the lawn side is not settled.
 - Further east the mapped paseo passes 0.64 m from a registry house
   (6465801UF1366N_part5), so the browser walk stops at the Barraka boardwalk.
+
+### Promenade retrace (issue #35, 15 October 2026)
+
+`data/paseo_wall.json:route` records the photo evidence, width and seaward offset.
+`scripts/build_seafront.py` derives the centreline; `build_skeleton.py` regenerates
+all map geometry. The southwest frontage wall trace was rechecked against the
+georeferenced aerial, shifting the former held-in segment seaward by up to 0.9 m
+with tapered ends. The south-lawn shared sea-wall trace remains unchanged.
+IMG_2350, IMG_2352 and IMG_2354 show pavement directly touching the wall, which
+now has an explicit maximum-gap check as well as collision clearance checks.
+
+No heights, pool/house footprints, gate geometry or eastern OSM points change.
+The uncorrected eastern house obstruction remains issue #41; wall height near
+Guillermo remains issue #40. Browser coverage follows the complete retraced run
+to the same Barraka boardwalk join rather than relying on an OSM point count.
