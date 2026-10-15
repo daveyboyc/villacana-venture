@@ -15,8 +15,8 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 
 ## Read first
 
-- docs: `docs/MIDDLE_POOL.md`
-- data: `data/middle_pool.json`, `data/objects.json`
+- docs: `docs/MIDDLE_POOL.md`, `docs/LEVELS.md`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/levels_survey.json`
 - src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`
 - contact sheet: `villacana-reference/contact-sheets/middle-pool.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -25,15 +25,26 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 Layout: 15, Levels and slopes: 3, Facades and roofs: 6, Materials: 10, Planting: 9, Signs: 1, Views: 1
 23 reviewed, 0 suggested only by camera position.
 
+## Levels
+
+Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
+
+- `middle-pool-sw-rise` (steps): 0.45-0.55 m above the middle pool courtyard, high confidence at (-135, 101) ±3 m. Model: **missing**, task `middle-pool-sw-steps`. Three rough stone steps with a steep terracotta ramp of 1.5-2 m beside them, from the courtyard's crazy paving up to the south-west lane; the lane climbs a little more to the gateway 8-10 m on, then is level. This is the same 0.5 m western rise as Cervantes: the terrain foot line (data/terrain.json) passes about 6 m further west, so the model keeps this lane flat. (IMG_2333.jpg, IMG_2331.jpg, IMG_2245.jpg)
+- `middle-pool-gates-level` (level): 0-0.05 m, high confidence. Model: **built**. The courtyard is not sunk: Calle Eva runs into it with no step at the east gateway, and the crazy paving runs under the south pergola gate onto a level lane. (IMG_2340.jpg, IMG_2244.jpg, IMG_2334.jpg, IMG_2192.jpg)
+- `middle-pool-west-planter` (raised-bed): 0.7-0.9 m, medium confidence. Model: **built**. A planter, not a change of ground level: about 0.8 m, a lower stepped section of about 0.4 m at its north end, and a 0.15-0.2 m plinth step at its foot (IMG_2192). (IMG_2332.jpg, IMG_2245.jpg, IMG_2192.jpg)
+- `middle-pool-north-terrace` (raised-patio): 0.3-0.6 m above the pool lawn, low confidence at (-127, 85) ±5 m. Model: **missing**, task `middle-pool-raised-patios`. A white wall of 0.6-1.0 m with a hedge beyond the north end of the deck, a patio with an umbrella and the houses behind it, raised above the lawn. (IMG_2193.jpg, IMG_2194.jpg)
+- `middle-pool-patio-beds` (raised-patio): 0.1-0.3 m above the pool lawn, low confidence. Model: **missing**, task `middle-pool-raised-patios`. Kerbed oleander bed of 0.15-0.2 m and a curved hedge wall of 0.35-0.45 m; the patios behind look level with the bed tops. (IMG_2246.jpg, IMG_2247.jpg, IMG_2341.jpg)
+
 ## Open build tasks
 
 From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | open | [IMG_2333](../../public/photos-ref/IMG_2333.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg) |
+| P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | open | [IMG_2333](../../public/photos-ref/IMG_2333.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg), [IMG_2331](../../public/photos-ref/IMG_2331.jpg), [IMG_2245](../../public/photos-ref/IMG_2245.jpg) |
 | P2 | `middle-pool-south-gate` [#39](https://github.com/daveyboyc/villacana-venture/issues/39) | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | open | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 | P3 | `middle-pool-north-entrance` [#48](https://github.com/daveyboyc/villacana-venture/issues/48) | Middle pool north-west: curved planter end, white steps, brown-door wall | open | [IMG_2331](../../public/photos-ref/IMG_2331.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg), [IMG_2195](../../public/photos-ref/IMG_2195.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg) |
+| P3 | `middle-pool-raised-patios` | Middle pool: raised patios behind the north wall and the planted beds (after raised-terraces) | open | [IMG_2193](../../public/photos-ref/IMG_2193.jpg), [IMG_2194](../../public/photos-ref/IMG_2194.jpg), [IMG_2246](../../public/photos-ref/IMG_2246.jpg), [IMG_2247](../../public/photos-ref/IMG_2247.jpg), [IMG_2341](../../public/photos-ref/IMG_2341.jpg) |
 
 ## Built from these photos
 

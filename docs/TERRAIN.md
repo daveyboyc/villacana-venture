@@ -32,6 +32,12 @@ Cervantes no longer carries its own hump in `heights`; the ramp is in the ground
 
 ## Not built yet
 
+The photo survey of levels (`docs/LEVELS.md`, `data/levels_survey.json`) lists
+every slope, step and raised patio seen so far and which task builds each.
+
+- The middle pool's south-west steps: the same 0.5 m rise, about 6 m east of
+  where the foot line runs now (task `middle-pool-sw-steps`).
+
 - A ramp on Calle Eva towards the Picasso car park. Dave remembers one; no photo
   in the set shows it (IMG_2243 looks the other way, along a level lane to the
   middle pool gate).

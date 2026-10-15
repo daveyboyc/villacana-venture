@@ -37,6 +37,8 @@ look at its contact sheet in the private `villacana-reference` repo
 (`contact-sheets/<id>.jpg`). The brief lists the area's photos, map
 screenshots, docs, data and source files, known facts and open questions.
 For cross-cutting work (slopes, paving, planting) use `refs/topics/<id>.md`.
+Heights (slopes, steps, raised patios) are in `data/levels_survey.json`, read
+from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
 
 - Areas and topics are fixed in `data/areas.json`. Do not invent new ids in a
   tag; add the area there first if one is genuinely missing.

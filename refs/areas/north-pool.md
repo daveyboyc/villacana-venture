@@ -12,7 +12,8 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 
 ## Read first
 
-- data: `data/objects.json`
+- docs: `docs/LEVELS.md`
+- data: `data/objects.json`, `data/levels_survey.json`
 - src: `src/world.ts`, `src/water.ts`
 - contact sheet: `villacana-reference/contact-sheets/north-pool.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -21,13 +22,21 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 Layout: 12, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 6, Views: 5
 17 reviewed, 0 suggested only by camera position.
 
+## Levels
+
+Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
+
+- `north-pool-west-stair` (steps): 0.9-1.1 m above the crazy-paving path round the lawn, medium confidence at (-187, 17.5) ±6 m. Model: **missing**, task `raised-terraces`. A flight with red-and-blue patterned tile risers and an iron handrail climbs from the north-west corner of the lawn path to a raised terrace with crazy paving, a terracotta patio with tables and the house fronts. A curved white retaining wall of the same height runs beside it holding a planted bank. Position from two roof bearings (about 312 degrees, 18-25 m), low confidence. About where the terrain foot line runs, but about 1 m rather than 0.5 m; whether it is shared ground or a private terrace is not visible. (IMG_2204.jpg, IMG_2206.jpg, IMG_2208.jpg)
+- `north-pool-north-patios` (raised-patio): 0.25-0.4 m above the path round the lawn, medium confidence at (-166, 8) ±8 m. Model: **missing**, task `north-pool-garden-walls`. Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings. (IMG_2204.jpg, IMG_2205.jpg, IMG_2207.jpg)
+
 ## Open build tasks
 
 From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `north-pool-garden-walls` [#36](https://github.com/daveyboyc/villacana-venture/issues/36) | North pool: curved garden walls and raised patios | open | [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
+| P1 | `raised-terraces` | Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair | open | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg) |
+| P2 | `north-pool-garden-walls` [#36](https://github.com/daveyboyc/villacana-venture/issues/36) | North pool: curved garden walls and raised patios (after raised-terraces) | open | [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
 
 ## Reviewed references
 
