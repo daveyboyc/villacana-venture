@@ -81,14 +81,16 @@
     "IMG_2367.jpg"
    ],
    "build": "Two red-tread steps with white risers climbing about 0.45 m (range 0.3-0.55) to a brown garden door in a white wall with a curved coping, on the north edge of the lane just east of the ramp drain, at about (-152.5, 55.5). The door sits at the foot of the 0.5 m drop and climbs back to the upper Cervantes level; behind it (roof shots) is a tiled patio level with the sill, and a white-walled hedge bed 0.3-0.5 m high runs 2-3 m west along the steps. Heights: data/levels_survey.json items cervantes-junction-door-steps, cervantes-junction-north-patio, cervantes-junction-north-bed.",
-   "avoid": "The door belongs to a house: steps stop at the facade; do not narrow the lane or the steps beside the ramp.",
+   "avoid": "The door is in a garden wall at the lane edge, not in the registry house front: do not move or extend the house, and do not narrow the lane or the steps beside the ramp. The steps stop at the garden wall.",
    "accept": [
     "check_cervantes_patio_walls.py and check_terrain.py pass",
     "layout test still climbs the ramp steps"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 33
+   "status": "in-progress",
+   "issue": 33,
+   "owner": "issue_33",
+   "notes": "Placement blocked after photo/roof/aerial review: identify the IMG_2327 house doorway before geometry. Nearest modeled north facade is 6.17 m from the ramp drain, incompatible with the adjacent photographed stoop without a larger unverified correction. See docs/CERVANTES_DOOR_STEPS_REVIEW.md. Levels survey (15 October, data/levels_survey.json): the roof shots IMG_2358 and IMG_2367 show the same door in a white garden wall with a curved coping standing at the lane edge, with a decorative-tiled patio behind it level with the sill; the house front is behind the patio. That explains the 6.17 m gap: build the garden wall (with the door) on the lane edge at about (-152.5, 55.5) +-1.5 m and the two steps against it; the patio behind is private and stays walled."
   },
   {
    "id": "junction-lawns",

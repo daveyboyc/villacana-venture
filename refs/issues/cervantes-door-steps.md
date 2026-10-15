@@ -6,7 +6,7 @@ Task `cervantes-door-steps` · area **Calle Miguel de Cervantes** · priority P2
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/cervantes.md` and the contact sheet `villacana-reference/contact-sheets/cervantes.jpg`
-- docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`, `docs/ELENA_NORTH.md`, `docs/LEVELS.md`
+- docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`, `docs/ELENA_NORTH.md`, `docs/LEVELS.md`, `docs/CERVANTES_DOOR_STEPS_REVIEW.md`
 - data: `data/dali_cervantes.json`, `data/dali_cervantes_threshold.json`, `data/cervantes_patio_walls.json`, `data/passages.json`, `data/frontage_divisions.json`, `data/cervantes_elena_steps.json`, `data/levels_survey.json`
 - src: `src/cervantes-walls.ts`, `src/dali-threshold.ts`, `src/frontages.ts`, `src/ramp-steps.ts`
 
@@ -33,7 +33,7 @@ Two red-tread steps with white risers climbing about 0.45 m (range 0.3-0.55) to 
 
 ## Do not
 
-The door belongs to a house: steps stop at the facade; do not narrow the lane or the steps beside the ramp.
+The door is in a garden wall at the lane edge, not in the registry house front: do not move or extend the house, and do not narrow the lane or the steps beside the ramp. The steps stop at the garden wall.
 
 ## Done when
 

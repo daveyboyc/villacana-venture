@@ -10,10 +10,11 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 - At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.
 - IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.
 - IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena.
+- Issue #33 review (2026-10-15): IMG_2327/2328 show two door steps immediately downhill of the ramp drain, distinct from the three ramp steps. Door placement remains blocked: the nearest modeled north solid facade is 6.17 m from the drain and the roof/aerial views do not uniquely locate this doorway. Identify the house/corner before changing geometry; see docs/CERVANTES_DOOR_STEPS_REVIEW.md.
 
 ## Read first
 
-- docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`, `docs/ELENA_NORTH.md`, `docs/LEVELS.md`
+- docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`, `docs/ELENA_NORTH.md`, `docs/LEVELS.md`, `docs/CERVANTES_DOOR_STEPS_REVIEW.md`
 - data: `data/dali_cervantes.json`, `data/dali_cervantes_threshold.json`, `data/cervantes_patio_walls.json`, `data/passages.json`, `data/frontage_divisions.json`, `data/cervantes_elena_steps.json`, `data/levels_survey.json`
 - src: `src/cervantes-walls.ts`, `src/dali-threshold.ts`, `src/frontages.ts`, `src/ramp-steps.ts`
 - contact sheet: `villacana-reference/contact-sheets/cervantes.jpg` (thumbnails of everything below, numbered in this order)
@@ -41,7 +42,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `cervantes-door-steps` [#33](https://github.com/daveyboyc/villacana-venture/issues/33) | Cervantes: two steps up to a front door west of the Elena junction | open | [IMG_2327](../../public/photos-ref/IMG_2327.jpg), [IMG_2328](../../public/photos-ref/IMG_2328.jpg), [IMG_2287](../../public/photos-ref/IMG_2287.jpg), [IMG_2196](../../public/photos-ref/IMG_2196.jpg), [IMG_2358](../../public/photos-ref/IMG_2358.jpg), [IMG_2367](../../public/photos-ref/IMG_2367.jpg) |
+| P2 | `cervantes-door-steps` [#33](https://github.com/daveyboyc/villacana-venture/issues/33) | Cervantes: two steps up to a front door west of the Elena junction | in-progress · issue_33 | [IMG_2327](../../public/photos-ref/IMG_2327.jpg), [IMG_2328](../../public/photos-ref/IMG_2328.jpg), [IMG_2287](../../public/photos-ref/IMG_2287.jpg), [IMG_2196](../../public/photos-ref/IMG_2196.jpg), [IMG_2358](../../public/photos-ref/IMG_2358.jpg), [IMG_2367](../../public/photos-ref/IMG_2367.jpg) |
 | P3 | `cervantes-east-hedge` [#43](https://github.com/daveyboyc/villacana-venture/issues/43) | Cervantes east of Elena: white kerb wall and plumbago hedge | open | [IMG_2356](../../public/photos-ref/IMG_2356.jpg), [IMG_2360](../../public/photos-ref/IMG_2360.jpg) |
 | P3 | `cervantes-north-patios` [#44](https://github.com/daveyboyc/villacana-venture/issues/44) | Walled patios along Cervantes from the roof views | open | [IMG_2368](../../public/photos-ref/IMG_2368.jpg), [IMG_2369](../../public/photos-ref/IMG_2369.jpg), [IMG_2359](../../public/photos-ref/IMG_2359.jpg) |
 | P3 | `cervantes-steps-treads` | Cervantes/Elena steps: tighten the treads to the photographed spacing | open | [IMG_2286](../../public/photos-ref/IMG_2286.jpg), [IMG_2355](../../public/photos-ref/IMG_2355.jpg), [IMG_2328](../../public/photos-ref/IMG_2328.jpg) |
