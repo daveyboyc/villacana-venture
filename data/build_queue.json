@@ -83,8 +83,10 @@
     "layout test still climbs the ramp steps"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 33
+   "status": "in-progress",
+   "issue": 33,
+   "owner": "issue_33",
+   "notes": "Placement blocked after photo/roof/aerial review: identify the IMG_2327 house doorway before geometry. Nearest modeled north facade is 6.17 m from the ramp drain, incompatible with the adjacent photographed stoop without a larger unverified correction. See docs/CERVANTES_DOOR_STEPS_REVIEW.md."
   },
   {
    "id": "junction-lawns",
