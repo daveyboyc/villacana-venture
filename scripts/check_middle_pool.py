@@ -94,3 +94,12 @@ for side in [-1,1]:
 assert sw['opening']>=2*PLAYER+.5 and sw['height']>=2
 assert len(r['risers'])==3 and r['rise']/3<=.2
 print('Middle pool southwest: photo-backed three risers and open gateway clear houses, pools and route PASS')
+
+# The entire raised path, including its provisional tie-in, stays out of existing solids.
+for along in [i*.1 for i in range(int(r['tieInEnd']*10)+1)]:
+ for across in [r['across'][0],r['across'][1]]:
+  pt=at(along,across)
+  assert not inside(*pt,pl['ring']),'SW access overlaps the unchanged planter'
+  assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'SW access overlaps a registry house'
+  assert not any(inside(*pt,pool['ring']) for pool in s['pools']),'SW access overlaps a pool'
+print('Middle pool southwest: entire access footprint avoids unchanged planter, houses and pools PASS')

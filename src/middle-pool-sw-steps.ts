@@ -37,6 +37,12 @@ export function addMiddleSwSteps(scene:THREE.Scene):void {
   const surface=(a:number,b:number,c:number,d:number,ya:number,yb:number)=>{
     const pts=[middleSwAt(a,c),middleSwAt(a,d),middleSwAt(b,c),middleSwAt(a,d),middleSwAt(b,d),middleSwAt(b,c)],ys=[ya,ya,yb,ya,yb,yb];
     const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute(pts.flatMap((p,i)=>[p[0],ys[i]+.065,p[1]]),3));g.setAttribute("uv",new THREE.Float32BufferAttribute([0,0,d-c,0,0,b-a,d-c,0,d-c,b-a,0,b-a],2));g.computeVertexNormals();add(new THREE.Mesh(g,tile));
+    // Close the exposed edges down to the old ground; the elevated paving is solid, not a floating sheet.
+    for(const edge of [c,d]) {
+      const A=middleSwAt(a,edge),B=middleSwAt(b,edge),skirt=new THREE.BufferGeometry();
+      skirt.setAttribute("position",new THREE.Float32BufferAttribute([A[0],.06,A[1],B[0],.06,B[1],A[0],ya+.06,A[1],A[0],ya+.06,A[1],B[0],.06,B[1],B[0],yb+.06,B[1]],3));
+      skirt.computeVertexNormals();const material=plaster.clone();material.side=THREE.DoubleSide;add(new THREE.Mesh(skirt,material));
+    }
   };
   surface(0,r.end,r.across[0],r.stepsAcross[0],0,r.rise);
   surface(r.end,r.landingEnd,...r.across as [number,number],r.rise,r.rise);
@@ -51,6 +57,7 @@ export function addMiddleSwSteps(scene:THREE.Scene):void {
   block(g,0,feature.opening,feature.headHeight,p,base+feature.height,plaster);
   block(g,0,feature.opening+2*p+.12,.07,p+.1,base+feature.height+feature.headHeight,plaster);
   if(!scene.userData.layoutOnly) {
-    const p=middleSwAt(g,1.25);addSprites(scene,"bougainvillea",[{x:p[0],z:p[1],y:r.rise+1.5,scale:.75}]);
+    addSprites(scene,"hedge",[.8,2.2,3.5].map(a=>{const p=middleSwAt(a,-1.75);return {x:p[0],z:p[1],y:middleSwGround(...middleSwAt(a,-.5)),scale:1.3};}));
+    const p=middleSwAt(g,1.65);addSprites(scene,"bougainvillea",[{x:p[0],z:p[1],y:r.rise+1.5,scale:.75}]);
   }
 }
