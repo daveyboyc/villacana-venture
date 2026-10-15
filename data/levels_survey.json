@@ -570,7 +570,7 @@
     },
     {
       "for": "south-lawn-over-paseo",
-      "ask": "Standing on the south pool lawn looking towards the middle pool: shows whether the south pool sits lower than the middle pool."
+      "ask": "Walking the lane from the middle pool's south gate to the south pool, one photo at every step, ramp or drain, pointing along the lane. The two pools cannot be seen from each other (Dave, 15 October), so this is how to tell whether the south pool sits lower."
     },
     {
       "for": "cervantes-junction-north-patio",
@@ -579,6 +579,10 @@
     {
       "for": "middle-pool-raised-patios",
       "ask": "Low shots from the lanes, side-on to any patio wall with steps up to a gate (Cervantes north side, Eva, the seaward lanes)."
+    },
+    {
+      "for": "cervantes-east-north-bed",
+      "ask": "Cervantes east of Elena towards Pintor Picasso: no photo covers this half of the lane (the half from Dalí to Elena is well covered). One photo looking along it from each end, and side-on to the white kerb wall and plumbago hedge."
     }
   ]
 }
