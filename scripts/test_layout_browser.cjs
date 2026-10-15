@@ -75,6 +75,12 @@ const path = require("node:path");
         ),
       ),
     );
+    // Issue #43: the bounded east kerb is visible on the map and solid in the shared rings.
+    const eastHedge = await (await fetch("/data/cervantes_east_hedge.json")).json();
+    const eastKerb = eastHedge.walls[0], eastCentre = eastKerb.points[0].map((v, i) => (v + eastKerb.points[1][i]) / 2);
+    if (!document.querySelector(`[data-wall-id="${eastKerb.id}"]`)) throw Error("Cervantes east kerb missing from map");
+    const eastResolved = new Solids(cervantesPatioWallRings()).resolve(...eastCentre, .42);
+    if (Math.hypot(eastResolved.x-eastCentre[0],eastResolved.z-eastCentre[1])<.15) throw Error("Cervantes east kerb missing collision");
     let open = true;
     const sd = makeSeaside(s.seafront, s.viewRotation);
     const world = {

@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 294,
+  "photosCitedByModel": 44,
+  "modelFeaturesWithPhotoCitations": 36
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5283,7 +5283,9 @@
      "angleOffset": 9.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.7,
@@ -5379,7 +5381,9 @@
      "angleOffset": 32.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.7,

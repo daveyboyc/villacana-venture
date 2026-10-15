@@ -1316,6 +1316,11 @@
    "name": "Calle Elena covered walkway"
   },
   {
+   "id": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "kind": "model-feature",
+   "name": "Cervantes east · white plumbago kerb"
+  },
+  {
    "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "kind": "model-feature",
    "name": "Cervantes · north patio wall 1"
@@ -1530,7 +1535,7 @@
    "kind": "build-task",
    "name": "Cervantes east of Elena: white kerb wall and plumbago hedge",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 43
   },
   {
@@ -4513,6 +4518,16 @@
    "relation": "cites"
   },
   {
+   "from": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "to": "ref:IMG_2356.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "to": "ref:IMG_2263.jpg",
    "relation": "cites"
@@ -5063,6 +5078,11 @@
    "relation": "in-area"
   },
   {
+   "from": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "to": "area:cervantes",
    "relation": "in-area"
@@ -5425,6 +5445,12 @@
   {
    "from": "ref:IMG_2216.jpg",
    "to": "street:cervantes",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2216.jpg",
+   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -6361,6 +6387,12 @@
   {
    "from": "ref:IMG_2358.jpg",
    "to": "steps:cervantes-elena-steps",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2360.jpg",
+   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "relation": "looks-at",
    "basis": "reviewed"
   },

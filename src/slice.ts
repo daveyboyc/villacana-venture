@@ -1,3 +1,4 @@
+import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
@@ -158,7 +159,7 @@ async function boot(): Promise<void> {
   addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);}
   addMiddlePool(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
