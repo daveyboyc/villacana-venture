@@ -11,9 +11,12 @@
     ],
     "radius": 30
    },
-   "docs": [],
+   "docs": [
+    "docs/LEVELS.md"
+   ],
    "data": [
-    "data/objects.json"
+    "data/objects.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/world.ts",
@@ -36,11 +39,13 @@
     "radius": 28
    },
    "docs": [
-    "docs/MIDDLE_POOL.md"
+    "docs/MIDDLE_POOL.md",
+    "docs/LEVELS.md"
    ],
    "data": [
     "data/middle_pool.json",
-    "data/objects.json"
+    "data/objects.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/middle-pool.ts",
@@ -68,11 +73,13 @@
    },
    "docs": [
     "docs/SOUTH_POOL.md",
-    "docs/HANDOVER_SOUTH_POOL.md"
+    "docs/HANDOVER_SOUTH_POOL.md",
+    "docs/LEVELS.md"
    ],
    "data": [
     "data/south_pool.json",
-    "proposals/south-pool.json"
+    "proposals/south-pool.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/south-pool.ts"
@@ -128,14 +135,16 @@
    "docs": [
     "docs/ELENA_NORTH.md",
     "docs/STREET_LAYOUT.md",
-    "docs/TERRAIN.md"
+    "docs/TERRAIN.md",
+    "docs/LEVELS.md"
    ],
    "data": [
     "data/elena_north.json",
     "data/cervantes_elena_steps.json",
     "data/street_layout.json",
     "proposals/calle-elena.json",
-    "data/terrain.json"
+    "data/terrain.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/elena-north.ts",
@@ -165,7 +174,9 @@
     "docs/DALI_CERVANTES.md",
     "docs/STREET_LAYOUT.md",
     "docs/FRONTAGE_DIVISIONS.md",
-    "docs/ELENA_NORTH.md"
+    "docs/ELENA_NORTH.md",
+    "docs/LEVELS.md",
+    "docs/CERVANTES_DOOR_STEPS_REVIEW.md"
    ],
    "data": [
     "data/dali_cervantes.json",
@@ -173,7 +184,8 @@
     "data/cervantes_patio_walls.json",
     "data/passages.json",
     "data/frontage_divisions.json",
-    "data/cervantes_elena_steps.json"
+    "data/cervantes_elena_steps.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
@@ -185,7 +197,8 @@
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
     "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
     "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.",
-    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena."
+    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena.",
+    "Issue #33 review (2026-10-15): IMG_2327/2328 show two door steps immediately downhill of the ramp drain, distinct from the three ramp steps. Door placement remains blocked: the nearest modeled north solid facade is 6.17 m from the drain and the roof/aerial views do not uniquely locate this doorway. Identify the house/corner before changing geometry; see docs/CERVANTES_DOOR_STEPS_REVIEW.md."
    ]
   },
   {
@@ -202,12 +215,14 @@
    },
    "docs": [
     "docs/DALI_CERVANTES.md",
-    "docs/LAYOUT_ACCURACY.md"
+    "docs/LAYOUT_ACCURACY.md",
+    "docs/LEVELS.md"
    ],
    "data": [
     "data/dali_cervantes.json",
     "data/dali_photo_reference.json",
-    "data/coastal_gate.json"
+    "data/coastal_gate.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/coastal-gate.ts",
@@ -319,9 +334,12 @@
     ]
    },
    "docs": [
-    "docs/SEAFRONT.md"
+    "docs/SEAFRONT.md",
+    "docs/LEVELS.md"
    ],
-   "data": [],
+   "data": [
+    "data/levels_survey.json"
+   ],
    "src": [
     "src/seafront.ts",
     "src/seaside.ts"
@@ -370,10 +388,12 @@
     "docs/OVERVIEW.md",
     "docs/LAYOUT_ACCURACY.md",
     "docs/TERRAIN.md",
-    "docs/SPEC.md"
+    "docs/SPEC.md",
+    "docs/LEVELS.md"
    ],
    "data": [
-    "data/terrain.json"
+    "data/terrain.json",
+    "data/levels_survey.json"
    ],
    "src": [
     "src/world.ts",

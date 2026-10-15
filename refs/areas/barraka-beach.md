@@ -14,7 +14,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 
 ## Read first
 
-- docs: `docs/SEAFRONT.md`
+- docs: `docs/SEAFRONT.md`, `docs/LEVELS.md`
+- data: `data/levels_survey.json`
 - src: `src/seafront.ts`, `src/seaside.ts`
 - contact sheet: `villacana-reference/contact-sheets/barraka-beach.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -22,6 +23,12 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 
 Layout: 3, Levels and slopes: 1, Facades and roofs: 5, Materials: 12, Signs: 2, Views: 9
 15 reviewed, 0 suggested only by camera position.
+
+## Levels
+
+Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
+
+- `beach-fall` (slope): 1-2 m above the waterline, low confidence. Model: **built**. The paseo's timber edge is about 0.1 m above the sand; the beach falls to the water over 30-50 m. (IMG_2351.jpg)
 
 ## Open build tasks
 
