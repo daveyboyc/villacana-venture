@@ -1386,6 +1386,11 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "elena_gated_entry.json:elena-gated-entry",
+   "kind": "model-feature",
+   "name": "Elena · private tiled entry west of covered walkway"
+  },
+  {
    "id": "elena_north.json:elena-north-gateway",
    "kind": "model-feature",
    "name": "Elena north · arched gateway to the north pool lawn"
@@ -1506,7 +1511,7 @@
    "kind": "build-task",
    "name": "Elena: gated tiled entry west of the covered walkway",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 46
   },
   {
@@ -4783,6 +4788,21 @@
    "relation": "cites"
   },
   {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "ref:IMG_2202.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "ref:IMG_2203.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "ref:IMG_2361.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "elena_north.json:elena-north-gateway",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -5130,6 +5150,11 @@
   {
    "from": "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "area:elena",
    "relation": "in-area"
   },
   {
@@ -6361,6 +6386,12 @@
   {
    "from": "ref:IMG_2358.jpg",
    "to": "steps:cervantes-elena-steps",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2361.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
    "relation": "looks-at",
    "basis": "reviewed"
   },

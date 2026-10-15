@@ -147,9 +147,10 @@
     "IMG_2254 shows the sign CALLE ELENA 18-30.",
     "Built 2026-10-14 (docs/ELENA_NORTH.md): arched gateway to the north pool lawn, east patio wall, west planting strip, magnolia bed, two hedged beds with pollarded trees, two planter boxes, and the three steps beside the Cervantes ramp.",
     "The Cervantes/Elena rise is 0.5 m over about 3 m (steps beside a ramp, IMG_2286), not 7 m.",
-    "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds, the gated entry west of the covered walkway (IMG_2361).",
+    "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.",
     "IMG_2286 GPS is ±14 m: do not place geometry from its pin alone.",
-    "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios."
+    "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios.",
+    "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced."
    ]
   },
   {

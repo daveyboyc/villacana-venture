@@ -780,7 +780,8 @@
   "citedBy": [
    "building:6265201UF1366N_part5",
    "elena_north.json:elena-north-gateway",
-   "elena_north.json:elena-north-planter-west"
+   "elena_north.json:elena-north-planter-west",
+   "elena_gated_entry.json:elena-gated-entry"
   ],
   "looksAt": [
    -160.3,
@@ -816,7 +817,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "building:6265201UF1366N_part5"
+   "building:6265201UF1366N_part5",
+   "elena_gated_entry.json:elena-gated-entry"
   ],
   "looksAt": [
    -149.8,
@@ -5075,13 +5077,17 @@
    "altitude": 9.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_gated_entry.json:elena-gated-entry"
+  ],
   "looksAt": [
    -164.5,
    40.4
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry"
+  ],
   "subject": "The gated tiled entry west of the covered walkway"
  },
  {

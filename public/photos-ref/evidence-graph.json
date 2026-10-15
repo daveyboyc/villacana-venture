@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 294,
+  "photosCitedByModel": 43,
+  "modelFeaturesWithPhotoCitations": 36
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2137,6 +2137,17 @@
    ]
   },
   {
+   "id": "elena_gated_entry.json:elena-gated-entry",
+   "name": "Elena · private tiled entry west of covered walkway",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2361.jpg",
+    "IMG_2202.jpg",
+    "IMG_2203.jpg"
+   ]
+  },
+  {
    "id": "middle_pool.json:middle-pool-east-gateway",
    "name": "Middle pool · east gateway from Calle Eva",
    "kind": "reference feature",
@@ -3771,6 +3782,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2202.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2203.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -3793,6 +3810,12 @@
   {
    "from": "photo:IMG_2203.jpg",
    "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -6741,6 +6764,12 @@
    "relation": "possibly-in-view",
    "distance": 34.1,
    "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2361.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2362.jpg",

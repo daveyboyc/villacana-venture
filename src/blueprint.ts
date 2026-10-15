@@ -1,3 +1,4 @@
+import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
@@ -84,6 +85,8 @@ async function boot(): Promise<void> {
   for(const wall of elenaNorth.walls)titled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-id":wall.id}),`${wall.name}: ${wall.trust}`);
   const gate=gatewayParts();
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
+  titled(el("path",{d:path(elenaEntryRing),fill:"#b46b48",stroke:"#d1b595","stroke-width":.06}),`${elenaEntry.name}: ${elenaEntry.trust}`);
+  for(const ring of elenaEntryRings())titled(el("path",{d:path(ring),fill:"#202622"}),`${elenaEntry.name}: closed private paired gates · ${elenaEntry.evidence.join(", ")}`);
   frontages.append(elena);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
   const middle=el("g",{id:"middle-pool-features"});

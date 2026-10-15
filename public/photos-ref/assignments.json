@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 294,
+  "photosCitedByModel": 43,
+  "modelFeaturesWithPhotoCitations": 36
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -871,7 +871,8 @@
    "citedBy": [
     "building:6265201UF1366N_part5",
     "elena_north.json:elena-north-gateway",
-    "elena_north.json:elena-north-planter-west"
+    "elena_north.json:elena-north-planter-west",
+    "elena_gated_entry.json:elena-gated-entry"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -910,7 +911,8 @@
     }
    ],
    "citedBy": [
-    "building:6265201UF1366N_part5"
+    "building:6265201UF1366N_part5",
+    "elena_gated_entry.json:elena-gated-entry"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -5415,7 +5417,9 @@
      "angleOffset": 34.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_gated_entry.json:elena-gated-entry"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -161.7,
