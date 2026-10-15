@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 294,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 36
+  "features": 295,
+  "photosCitedByModel": 43,
+  "modelFeaturesWithPhotoCitations": 37
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2137,8 +2137,8 @@
    ]
   },
   {
-   "id": "middle_pool_sw_steps.json:middle-pool-sw-steps",
-   "name": "Middle pool · south-west stone steps, tiled ramp and gateway",
+   "id": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "name": "Middle pool · south-west gateway above the stone steps",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
@@ -2176,6 +2176,16 @@
    "evidence": [
     "IMG_2286.jpg",
     "IMG_2262.jpg"
+   ]
+  },
+  {
+   "id": "steps:middle-pool-sw-steps",
+   "name": "Middle pool · stone steps up to Calle Eva",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2333.jpg",
+    "IMG_2248.jpg"
    ]
   },
   {
@@ -4586,6 +4596,12 @@
    "angleOffset": 27.8
   },
   {
+   "from": "photo:IMG_2248.jpg",
+   "to": "steps:middle-pool-sw-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2249.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -6220,7 +6236,7 @@
   },
   {
    "from": "photo:IMG_2332.jpg",
-   "to": "middle_pool_sw_steps.json:middle-pool-sw-steps",
+   "to": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -6251,13 +6267,19 @@
   },
   {
    "from": "photo:IMG_2333.jpg",
-   "to": "middle_pool_sw_steps.json:middle-pool-sw-steps",
+   "to": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2333.jpg",
    "to": "middle_pool.json:middle-pool-west-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2333.jpg",
+   "to": "steps:middle-pool-sw-steps",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

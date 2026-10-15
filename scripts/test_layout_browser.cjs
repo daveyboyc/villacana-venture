@@ -41,7 +41,7 @@ const path = require("node:path");
       { elenaNorthRings, elenaNorthBeds, gatewayParts },
       { stepsGroundOffset },
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
-      { middleSwGround, middleSwRings, middleSwAt, middleSwRun },
+      { middleSwRings, middleSwAt },
     ] = await Promise.all([
       import("/src/player.ts"),
       import("/src/geom.ts"),
@@ -55,7 +55,7 @@ const path = require("node:path");
       import("/src/elena-north.ts"),
       import("/src/ramp-steps.ts"),
       import("/src/middle-pool.ts"),
-      import("/src/middle-pool-sw-steps.ts"),
+      import("/src/middle-pool-sw-gateway.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
@@ -89,7 +89,7 @@ const path = require("node:path");
         sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
-            stepsGroundOffset(x, z) + middleSwGround(x,z) +
+            stepsGroundOffset(x, z) +
             poolGroundY(x, z) +
             referenceGroundHeight(s.boundaryReference, x, z),
       maxGroundStep: 0.45,
@@ -142,34 +142,32 @@ const path = require("node:path");
     for (const route of routes)
       for (const points of [route.points, [...route.points].reverse()])
         walk(points);
-    // Up and down the steps beside the Cervantes ramp: one riser at a time, ending level with the ramp.
-    {
-      const { default: flight } = await import("/data/cervantes_elena_steps.json");
+    // Up and down the steps beside the Cervantes ramp and out of the middle pool onto Calle Eva: one riser at a time, ending level with the ramp.
+    for (const file of ["/data/cervantes_elena_steps.json", "/data/middle_pool_steps.json"]) {
+      const { default: flight } = await import(file);
       const [fx, fz] = flight.foot, [tx, tz] = flight.toward, len = Math.hypot(tx - fx, tz - fz), ux = (tx - fx) / len, uz = (tz - fz) / len, sx = -uz, sz = ux;
       const across = (flight.across[0] + flight.across[1]) / 2, at = (d) => [fx + ux * d + sx * across, fz + uz * d + sz * across];
       const heights = [];
       for (let d = -0.4; d <= flight.end + 0.3; d += 0.05) heights.push(world.groundHeight(...at(d)));
       const jumps = heights.slice(1).map((h, i) => h - heights[i]).filter((j) => j > 0.05);
-      if (jumps.length !== flight.risers.length || jumps.some((j) => j > 0.2)) throw Error("Steps do not rise one shallow riser at a time: " + jumps);
+      if (jumps.length !== flight.risers.length || jumps.some((j) => j > 0.2)) throw Error(flight.id + ": steps do not rise one shallow riser at a time: " + jumps);
       const rampTop = world.groundHeight(fx + ux * flight.end, fz + uz * flight.end);
-      if (Math.abs(heights[heights.length - 1] - rampTop) > 0.03) throw Error("Top of the steps is not level with the ramp");
+      if (Math.abs(heights[heights.length - 1] - rampTop) > 0.03) throw Error(flight.id + ": top of the steps is not level with the ramp");
       walk([at(-0.4), at(flight.end + 0.3)]);
-      if (Math.abs(player.y - rampTop) > 0.08) throw Error("Player did not climb the steps: " + player.y + " vs " + rampTop);
+      if (Math.abs(player.y - rampTop) > 0.08) throw Error(flight.id + ": player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
     }
-    // Issue 31: the planter-side half climbs exactly three risers; the adjacent ramp is smooth.
+    // Issue 31: up the Calle Eva ramp from the middle pool, through the open south-west gateway and back (the steps are walked above).
     {
-      const at=d=>middleSwAt(d,(middleSwRun.stepsAcross[0]+middleSwRun.stepsAcross[1])/2), heights=[];
-      for(let d=0;d<2.15;d+=.025)heights.push(world.groundHeight(...at(d)));
-      const jumps=heights.slice(1).map((h,i)=>h-heights[i]).filter(d=>d>.05);
-      if(jumps.length!==3 || jumps.some(d=>Math.abs(d-.15)>.025))throw Error("Middle SW risers incorrect: "+jumps);
-      walk([at(-.3),at(2.2)]);
-      if(Math.abs(player.y-world.groundHeight(...at(2.2)))>.08)throw Error("Player did not climb middle SW steps");
-      walk([at(2.2),at(-.3)]);
-      walk([middleSwAt(2.3),middleSwAt(6)]);
-      walk([middleSwAt(6),middleSwAt(2.3)]);
-      const ramp=d=>world.groundHeight(...middleSwAt(d,-.5));
-      if(Math.abs(ramp(1.9)-world.groundHeight(...at(1.9)))>.02)throw Error("SW ramp and steps disagree at landing");
+      const { default: gw } = await import("/data/middle_pool_sw_gateway.json");
+      walk([middleSwAt(-1), middleSwAt(gw.gatewayAlong + 2.5)]);
+      walk([middleSwAt(gw.gatewayAlong + 2.5), middleSwAt(-1)]);
+      const gateOnly = new Solids(middleSwRings());
+      for (const ring of middleSwRings().filter((_, i) => i % 2 === 0)) {
+        const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
+        const out = gateOnly.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.15) throw Error("South-west gateway pier is not solid at " + c);
+      }
     }
     // Elena north: through the arched gateway, and the raised beds keep the player out.
     {

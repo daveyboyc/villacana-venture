@@ -1,4 +1,4 @@
-import {addMiddleSwSteps,middleSwGround,middleSwRings} from "./middle-pool-sw-steps";
+import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
@@ -161,7 +161,7 @@ async function boot(): Promise<void> {
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);}
   addMiddlePool(scene);
-  addMiddleSwSteps(scene);
+  addMiddleSwGateway(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
@@ -229,7 +229,7 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + middleSwGround(x,z) + stepsGroundOffset(x,z) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 

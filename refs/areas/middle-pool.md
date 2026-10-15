@@ -12,19 +12,30 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 - IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.
 - Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.
 - Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south pergola gate (IMG_2334).
-- Issue #31: IMG_2333 shows three rough stone risers on the planter-side half, a tiled ramp alongside, a shared landing and a white gateway with two open iron leaves. The local 0.45 m rise and positions are estimated; the unseen lane beyond the gateway uses a provisional 3 m tie-in to the old datum. This does not establish the wider Eva grade. Existing planter and registry footprints are unchanged.
+- Issue #31 (PRs #53 and #60): IMG_2333 shows three rough stone risers on the planter side of Calle Eva, a tiled ramp beside them, a short landing and a white gateway with two open iron leaves. The steps and the 0.5 m rise to the Dalí level are in data/middle_pool_steps.json and data/terrain.json; the gateway is in data/middle_pool_sw_gateway.json. Positions and sizes are estimated from tiles.
 
 ## Read first
 
-- docs: `docs/MIDDLE_POOL.md`, `docs/MIDDLE_POOL_SW_STEPS.md`
-- data: `data/middle_pool.json`, `data/objects.json`, `data/middle_pool_sw_steps.json`, `data/terrain.json`
-- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-sw-steps.ts`
+- docs: `docs/MIDDLE_POOL.md`, `docs/LEVELS.md`, `docs/MIDDLE_POOL_SW_GATEWAY.md`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/levels_survey.json`, `data/middle_pool_steps.json`, `data/middle_pool_sw_gateway.json`, `data/terrain.json`
+- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-sw-gateway.ts`, `src/ramp-steps.ts`
 - contact sheet: `villacana-reference/contact-sheets/middle-pool.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
 Layout: 15, Levels and slopes: 3, Facades and roofs: 6, Materials: 10, Planting: 9, Signs: 1, Views: 1
 23 reviewed, 0 suggested only by camera position.
+
+## Levels
+
+Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
+
+- `middle-pool-sw-rise` (steps): 0.45-0.55 m above the middle pool courtyard, high confidence at (-135, 101) ±3 m. Model: **built**, task `middle-pool-sw-steps`. Three rough stone steps with a steep terracotta ramp of 1.5-2 m beside them, from the courtyard's crazy paving up to the south-west lane; the lane climbs a little more to the gateway 8-10 m on, then is level. This is the same 0.5 m western rise as Cervantes. Built: the terrain foot line follows the back of the planter to the bottom step (local run 2.4 m, data/terrain.json) and data/middle_pool_steps.json adds the three steps beside the ramp. (IMG_2333.jpg, IMG_2331.jpg, IMG_2245.jpg)
+- `middle-pool-nw-rise` (steps): 0.3-0.55 m above the path between the planter and the pool fence, medium confidence at (-138.5, 88.5) ±3 m. Model: **differs**, task `middle-pool-north-entrance`. Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built. (IMG_2332.jpg, IMG_2331.jpg)
+- `middle-pool-gates-level` (level): 0-0.05 m, high confidence. Model: **built**. The courtyard is not sunk: Calle Eva runs into it with no step at the east gateway, and the crazy paving runs under the south pergola gate onto a level lane. (IMG_2340.jpg, IMG_2244.jpg, IMG_2334.jpg, IMG_2192.jpg)
+- `middle-pool-west-planter` (raised-bed): 0.7-0.9 m, medium confidence. Model: **built**. A planter, not a change of ground level: about 0.8 m, a lower stepped section of about 0.4 m at its north end, and a 0.15-0.2 m plinth step at its foot (IMG_2192). (IMG_2332.jpg, IMG_2245.jpg, IMG_2192.jpg)
+- `middle-pool-north-terrace` (raised-patio): 0.3-0.6 m above the pool lawn, low confidence at (-127, 85) ±5 m. Model: **missing**, task `middle-pool-raised-patios`. A white wall of 0.6-1.0 m with a hedge beyond the north end of the deck, a patio with an umbrella and the houses behind it, raised above the lawn. (IMG_2193.jpg, IMG_2194.jpg)
+- `middle-pool-patio-beds` (raised-patio): 0.1-0.3 m above the pool lawn, low confidence. Model: **missing**, task `middle-pool-raised-patios`. Kerbed oleander bed of 0.15-0.2 m and a curved hedge wall of 0.35-0.45 m; the patios behind look level with the bed tops. (IMG_2246.jpg, IMG_2247.jpg, IMG_2341.jpg)
 
 ## Open build tasks
 
@@ -34,6 +45,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P2 | `middle-pool-south-gate` [#39](https://github.com/daveyboyc/villacana-venture/issues/39) | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | open | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 | P3 | `middle-pool-north-entrance` [#48](https://github.com/daveyboyc/villacana-venture/issues/48) | Middle pool north-west: curved planter end, white steps, brown-door wall | open | [IMG_2331](../../public/photos-ref/IMG_2331.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg), [IMG_2195](../../public/photos-ref/IMG_2195.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg) |
+| P3 | `middle-pool-raised-patios` [#55](https://github.com/daveyboyc/villacana-venture/issues/55) | Middle pool: raised patios behind the north wall and the planted beds (after raised-terraces) | open | [IMG_2193](../../public/photos-ref/IMG_2193.jpg), [IMG_2194](../../public/photos-ref/IMG_2194.jpg), [IMG_2246](../../public/photos-ref/IMG_2246.jpg), [IMG_2247](../../public/photos-ref/IMG_2247.jpg), [IMG_2341](../../public/photos-ref/IMG_2341.jpg) |
 
 ## Built from these photos
 
@@ -50,17 +62,20 @@ graph LR
   F1 --> PIMG_2331_jpg(["IMG_2331"])
   F1 --> PIMG_2332_jpg(["IMG_2332"])
   F1 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F2["Middle pool · south-west stone steps, tiled ramp and gateway"]
+  A --> F2["Middle pool · south-west gateway above the stone steps"]
   F2 --> PIMG_2332_jpg(["IMG_2332"])
   F2 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F3["Middle pool · stone steps up to Calle Eva"]
+  F3 --> PIMG_2248_jpg(["IMG_2248"])
+  F3 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool_sw_steps.json:middle-pool-sw-steps, middle_pool.json:middle-pool-west-planter._ |
-| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool_sw_steps.json:middle-pool-sw-steps, middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, steps:middle-pool-sw-steps._ |
+| [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter._ |
 | [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up _Used by: middle_pool.json:middle-pool-west-planter._ |
 | [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. _Used by: middle_pool.json:middle-pool-west-planter._ |
 | [IMG_2244.jpg](../../public/photos-ref/IMG_2244.jpg) | ground | layout | Iron gate opening into the middle pool courtyard _Used by: middle_pool.json:middle-pool-east-gateway._ |

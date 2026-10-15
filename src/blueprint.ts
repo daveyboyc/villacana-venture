@@ -1,4 +1,4 @@
-import {middleSwAt,middleSwRings,middleSwRun} from "./middle-pool-sw-steps";
+import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
@@ -95,8 +95,8 @@ async function boot(): Promise<void> {
   for(const part of [mg.nw,mg.se])line(part,"#fffdf5",gw.thickness,gw.id,gateText);
   for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
   line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
-  for(const ring of middleSwRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5","data-middle-id":"middle-pool-sw-steps"}),"IMG_2333: southwest gateway, estimated placement");
-  for(const a of middleSwRun.risers)line([middleSwAt(a,middleSwRun.stepsAcross[0]),middleSwAt(a,middleSwRun.stepsAcross[1])],"#aaa18d",.12,"middle-pool-sw-steps","IMG_2333: three stone risers beside the tiled ramp");
+  for(const ring of middleSwRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5","data-middle-id":"middle-pool-sw-gateway"}),"IMG_2333: southwest gateway, estimated placement");
+  for(const a of middleSwFlight.risers)line([middleSwAt(a,middleSwFlight.across[0]),middleSwAt(a,middleSwFlight.across[1])],"#aaa18d",.12,"middle-pool-sw-steps","IMG_2333: three stone risers beside the tiled ramp");
   frontages.append(middle);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});

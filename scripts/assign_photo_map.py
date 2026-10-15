@@ -61,14 +61,16 @@ def features(s):
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
     for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
-    sw=json.loads((ROOT/'data/middle_pool_sw_steps.json').read_text())
-    run=next(r for r in json.loads((ROOT/'data/terrain.json').read_text())['localAccessRuns'] if r['id']==sw['terrainId'])
-    add('middle_pool_sw_steps.json:'+sw['id'],sw['name'],'reference feature','authored photo/map interpretation',evidence=sw['evidence'],points=[run['foot']])
+    sw=json.loads((ROOT/'data/middle_pool_sw_gateway.json').read_text())
+    fl=json.loads((ROOT/'data/middle_pool_steps.json').read_text());L=math.dist(fl['foot'],fl['toward'])
+    gate=[fl['foot'][i]+(fl['toward'][i]-fl['foot'][i])/L*sw['gatewayAlong'] for i in range(2)]
+    add('middle_pool_sw_gateway.json:'+sw['id'],sw['name'],'reference feature','authored photo/map interpretation',evidence=sw['evidence'],points=[[round(v,2) for v in gate]])
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
-    steps=json.loads((ROOT/'data/cervantes_elena_steps.json').read_text())
-    add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
+    for name in ('cervantes_elena_steps','middle_pool_steps'):
+        steps=json.loads((ROOT/f'data/{name}.json').read_text())
+        add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])

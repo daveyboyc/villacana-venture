@@ -79,12 +79,13 @@ gap=min(distance(p,a,b) for p in sample(pl['face'][:2]) for a,b in zip(pool,pool
 assert gap>=roads['elena-south']['width'],f'Path between planter and pool too narrow ({gap:.2f} m)'
 print('Middle pool: photo-linked east gateway and west planter keep the lanes clear, gateway open and walkable, houses and pools untouched PASS')
 
-# Issue 31: gateway piers/open leaves use the same frame as the terrain flight.
-sw=json.loads((ROOT/'data/middle_pool_sw_steps.json').read_text())
-r=next(r for r in json.loads((ROOT/'data/terrain.json').read_text())['localAccessRuns'] if r['id']==sw['terrainId'])
+# Issue 31: the south-west gateway sits in the frame of the stone steps (data/middle_pool_steps.json), above their top.
+sw=json.loads((ROOT/'data/middle_pool_sw_gateway.json').read_text())
+r=json.loads((ROOT/'data/middle_pool_steps.json').read_text())
 assert sw['evidence'] and all(p in photos for p in sw['evidence'])
 length=math.dist(r['foot'],r['toward']); ux,uz=[(r['toward'][i]-r['foot'][i])/length for i in range(2)]
 at=lambda a,c:[r['foot'][0]+ux*a-uz*c,r['foot'][1]+uz*a+ux*c]
+assert sw['gatewayAlong']-sw['pierWidth']/2>r['end'],'Gateway stands on the ramp instead of the upper landing'
 for side in [-1,1]:
  c=side*(sw['opening']/2+sw['pierWidth']/2); g=sw['gatewayAlong'];p=sw['pierWidth']
  for pt in [at(g+a,c+b) for a in [-p/2,p/2] for b in [-p/2,p/2]]:
@@ -92,14 +93,13 @@ for side in [-1,1]:
   assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'SW pier inside house'
  assert not any(inside(*at(g,c),pool['ring']) for pool in s['pools'])
 assert sw['opening']>=2*PLAYER+.5 and sw['height']>=2
-assert len(r['risers'])==3 and r['rise']/3<=.2
-print('Middle pool southwest: photo-backed three risers and open gateway clear houses, pools and route PASS')
+print('Middle pool southwest: photo-backed open gateway above the steps clears houses, pools and route PASS')
 
-# The entire raised path, including its provisional tie-in, stays out of existing solids.
-for along in [i*.1 for i in range(int(r['tieInEnd']*10)+1)]:
- for across in [r['across'][0],r['across'][1]]:
+# The steps' footprint stays out of the planter, houses and pools.
+for along in [i*.1 for i in range(int(r['end']*10)+1)]:
+ for across in r['across']:
   pt=at(along,across)
-  assert not inside(*pt,pl['ring']),'SW access overlaps the unchanged planter'
-  assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'SW access overlaps a registry house'
-  assert not any(inside(*pt,pool['ring']) for pool in s['pools']),'SW access overlaps a pool'
-print('Middle pool southwest: entire access footprint avoids unchanged planter, houses and pools PASS')
+  assert not inside(*pt,pl['ring']),'SW steps overlap the unchanged planter'
+  assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'SW steps overlap a registry house'
+  assert not any(inside(*pt,pool['ring']) for pool in s['pools']),'SW steps overlap a pool'
+print('Middle pool southwest: steps footprint avoids unchanged planter, houses and pools PASS')

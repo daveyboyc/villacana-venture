@@ -1,3 +1,3 @@
-Issue #31 validation: all source checks, photo assignment tests, reference validation and production build passed. Final paired camera renders, layout traversal (including three distinct 0.15 m risers and gateway traversal both ways), and overview browser checks passed on 15 October 2026.
+Issue #31 validation, after merging main (15 October 2026): the steps and the 0.5 m rise come from PR #53 (data/middle_pool_steps.json, data/terrain.json); this PR adds the gateway above them. All source checks, photo assignment tests, reference validation and the production build pass; the layout browser test climbs the three risers and walks through the open gateway both ways; the overview browser test passes. IMG_2333-after.png is re-rendered from the merged result.
 
-The 0.45 m local rise, alignment and dimensions remain estimates. The unphotographed ground beyond the gateway uses an explicitly provisional 3 m tie-in; established pool and site levels remain unchanged.
+Positions and dimensions remain estimates from photographed tiles.
