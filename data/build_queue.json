@@ -466,8 +466,9 @@
     "render from IMG_2352"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 49
+   "status": "in-progress",
+   "issue": 49,
+   "owner": "issue49"
   }
  ]
 }
