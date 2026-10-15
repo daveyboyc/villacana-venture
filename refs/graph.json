@@ -1316,9 +1316,29 @@
    "name": "Calle Elena covered walkway"
   },
   {
+   "id": "cervantes_garden_door.json:cervantes-garden-door",
+   "kind": "model-feature",
+   "name": "Cervantes junction · raised garden door and private patio"
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "kind": "model-feature",
+   "name": "cervantes-junction-north-bed"
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "kind": "model-feature",
+   "name": "cervantes-junction-north-patio"
+  },
+  {
    "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "kind": "model-feature",
    "name": "Cervantes · north patio wall 1"
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "kind": "model-feature",
+   "name": "Cervantes · north patio wall east of garden door"
   },
   {
    "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
@@ -4550,6 +4570,66 @@
    "relation": "cites"
   },
   {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2287.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2355.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2369.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "to": "ref:IMG_2263.jpg",
    "relation": "cites"
@@ -4576,6 +4656,36 @@
   },
   {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "ref:IMG_2275.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2263.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2264.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2265.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2273.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2274.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "to": "ref:IMG_2275.jpg",
    "relation": "cites"
   },
@@ -5110,7 +5220,37 @@
    "relation": "in-area"
   },
   {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "to": "area:cervantes",
    "relation": "in-area"
   },
@@ -5354,6 +5494,24 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2197.jpg",
    "to": "elena_north.json:elena-north-tree-bed-2",
    "relation": "looks-at",
@@ -5499,7 +5657,7 @@
   },
   {
    "from": "ref:IMG_2217.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -6086,6 +6244,24 @@
    "basis": "reviewed"
   },
   {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2289.jpg",
    "to": "dali_cervantes_threshold.json:dali-house-footpath-1",
    "relation": "looks-at",
@@ -6172,6 +6348,12 @@
   {
    "from": "ref:IMG_2300.jpg",
    "to": "area:beach",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6489,7 +6671,7 @@
   },
   {
    "from": "ref:IMG_2367.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "reviewed"
   },
