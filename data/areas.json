@@ -271,18 +271,22 @@
    },
    "docs": [
     "docs/STREET_LAYOUT.md",
-    "docs/MIDDLE_POOL.md"
+    "docs/MIDDLE_POOL.md",
+    "docs/EVA_WALLED_LAWN.md"
    ],
    "data": [
     "data/street_layout.json",
-    "data/middle_pool.json"
+    "data/middle_pool.json",
+    "data/eva_walled_lawn.json"
    ],
    "src": [
-    "src/middle-pool.ts"
+    "src/middle-pool.ts",
+    "src/eva-walled-lawn.ts"
    ],
    "notes": [
     "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.",
-    "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m."
+    "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m.",
+    "IMG_2339 corner reuses the unchanged middle gateway NW wing and adds only a 4.2 m return, with a bounded lawn. Two wall-aligned single planes replace the crossed bougainvillea there; bollard, clipped hedge, nearby rounded tree and lantern are Details-only and route guarded. Lengths, heights and adjacent lawn extent remain estimates; no surveyed enclosure closure or new level change is asserted."
    ]
   },
   {

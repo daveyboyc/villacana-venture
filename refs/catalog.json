@@ -4307,7 +4307,7 @@
    "layout",
    "planting"
   ],
-  "note": null,
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location.",
   "observation": "Looking north-east along a square-tiled path between two lawns, with round-headed trees, black lamp posts, low hedges and white terraces beyond.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1y3H8hY8Yybk2NYjRhDFz5GtzrZEf2qxl/view?usp=drivesdk",
@@ -4319,15 +4319,18 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "eva_walled_lawn.json:eva-walled-lawn"
+  ],
   "looksAt": [
    -105.4,
-   76.5
+   75.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:eva"
-  ]
+  ],
+  "subject": "Eva tiled lane beside lawns, clipped trees and dark lantern posts"
  },
  {
   "id": "IMG_2337.jpg",
@@ -4343,7 +4346,7 @@
    "layout",
    "planting"
   ],
-  "note": null,
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location.",
   "observation": "Similar view looking north-north-east: a lawn with a round-headed tree, bougainvillea on a white garden wall with brown doors, a black lamp post and the tiled path at the right edge.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1jquMZ7GN-EjjOz56fS0xskh5qU1Uva7V/view?usp=drivesdk",
@@ -4355,13 +4358,16 @@
    "altitude": 6.0,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -106.5,
-   74.2
+  "citedBy": [
+   "eva_walled_lawn.json:eva-walled-lawn"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAt": [
+   -106.8,
+   73.7
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "Eva lawn beside clipped round tree and lantern post"
  },
  {
   "id": "IMG_2338.jpg",
@@ -4377,7 +4383,7 @@
    "planting",
    "facades"
   ],
-  "note": null,
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location.",
   "observation": "A brown timber door with a house-number plaque, a yellow-flowered shrub (St John's wort-like) beside it, a lawn and a pink-tiled path edge.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1l1ZY8s66AZ1TilPdSh5rEe_tSmDiuZaK/view?usp=drivesdk",
@@ -4389,13 +4395,18 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -113.9,
-   71.4
+  "citedBy": [
+   "eva_walled_lawn.json:eva-walled-lawn"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAt": [
+   -112.8,
+   74.7
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "eva_walled_lawn.json:eva-walled-lawn"
+  ],
+  "subject": "Brown Eva frontage door with yellow-flowered shrub beside lawn"
  },
  {
   "id": "IMG_2339.jpg",
@@ -4411,7 +4422,7 @@
    "planting",
    "materials"
   ],
-  "note": null,
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location.",
   "observation": "A small lawn in the corner of two white garden walls, with bougainvillea trained flat along both walls, a green bollard light and a clipped shrub at the front. Square terracotta tiles with a grey border run along the near edge. Useful for wall planting and the bollard light.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1TOm6XQK_ftYnGPKXTPnxalTP0MW1tDdr/view?usp=drivesdk",
@@ -4423,15 +4434,19 @@
    "altitude": 5.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -117.4,
-   77.0
+  "citedBy": [
+   "eva_walled_lawn.json:eva-walled-lawn"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -115.1,
+   78.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_walled_lawn.json:eva-walled-lawn",
    "middle_pool.json:middle-pool-east-gateway"
-  ]
+  ],
+  "subject": "White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard"
  },
  {
   "id": "IMG_2340.jpg",
@@ -4471,7 +4486,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva",
-   "middle_pool.json:middle-pool-east-gateway"
+   "middle_pool.json:middle-pool-east-gateway",
+   "eva_walled_lawn.json:eva-walled-lawn"
   ]
  },
  {

@@ -1426,6 +1426,11 @@
    "name": "Elena north · second hedged bed"
   },
   {
+   "id": "eva_walled_lawn.json:eva-walled-lawn",
+   "kind": "model-feature",
+   "name": "Calle Eva · walled lawn and espalier corner"
+  },
+  {
    "id": "frontage_divisions.json:cervantes-elena-lawn-1",
    "kind": "model-feature",
    "name": "Cervantes / Elena · front lawn 1"
@@ -1570,7 +1575,7 @@
    "kind": "build-task",
    "name": "Calle Eva: walled lawn corner with espaliered bougainvillea",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 47
   },
   {
@@ -4878,6 +4883,26 @@
    "relation": "cites"
   },
   {
+   "from": "eva_walled_lawn.json:eva-walled-lawn",
+   "to": "ref:IMG_2336.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "eva_walled_lawn.json:eva-walled-lawn",
+   "to": "ref:IMG_2337.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "eva_walled_lawn.json:eva-walled-lawn",
+   "to": "ref:IMG_2338.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "eva_walled_lawn.json:eva-walled-lawn",
+   "to": "ref:IMG_2339.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "frontage_divisions.json:cervantes-elena-lawn-1",
    "to": "ref:IMG_2260.jpg",
    "relation": "cites"
@@ -5170,6 +5195,11 @@
   {
    "from": "elena_north.json:elena-north-tree-bed-2",
    "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "eva_walled_lawn.json:eva-walled-lawn",
+   "to": "area:eva",
    "relation": "in-area"
   },
   {
@@ -6206,13 +6236,25 @@
    "from": "ref:IMG_2336.jpg",
    "to": "street:eva",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2338.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2339.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "looks-at",
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2339.jpg",
    "to": "middle_pool.json:middle-pool-east-gateway",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2340.jpg",
@@ -6223,6 +6265,12 @@
   {
    "from": "ref:IMG_2340.jpg",
    "to": "middle_pool.json:middle-pool-east-gateway",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2340.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

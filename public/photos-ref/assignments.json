@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 294,
+  "photosCitedByModel": 46,
+  "modelFeaturesWithPhotoCitations": 36
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -4672,7 +4672,9 @@
      "angleOffset": 14.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -110.4,
@@ -4714,7 +4716,9 @@
      "angleOffset": 11.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -110.2,
@@ -4751,7 +4755,9 @@
      "angleOffset": 1.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -111.2,
@@ -4777,7 +4783,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -111.4,
