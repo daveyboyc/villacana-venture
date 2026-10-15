@@ -165,7 +165,7 @@
     "IMG_2331.jpg",
     "IMG_2245.jpg"
    ],
-   "build": "Three rough stone steps (rise 0.45-0.55 m) with a steep terracotta ramp of 1.5-2 m beside them, climbing from the courtyard's crazy paving between the hedge and the raised planter to the south-west lane, and the white gateway with bougainvillea 8-10 m on. This is the same 0.5 m western rise as Cervantes: move the terrain foot line (data/terrain.json) east to the steps here with a short local run, as was done for Cervantes. Heights: data/levels_survey.json item middle-pool-sw-rise.",
+   "build": "Three rough stone steps (rise 0.45-0.55 m) with a steep terracotta ramp of 1.5-2 m beside them, climbing from the courtyard's crazy paving between the hedge and the raised planter to the south-west lane, and the white gateway with bougainvillea 8-10 m on. This is the same 0.5 m western rise as Cervantes: the terrain foot line (data/terrain.json) now follows the back of the planter to the bottom step with a 2.4 m local run, and data/middle_pool_steps.json builds the steps (done 15 October). Remaining for the gateway: its own task if wanted. Heights: data/levels_survey.json item middle-pool-sw-rise.",
    "avoid": "Do not move the planter built in data/middle_pool.json. The middle pool ring, deck and lawn must stay at 0 (check_terrain.py 'pools level'); the east gateway and the south pergola gate are photographed level, so the rise stays west of them.",
    "accept": [
     "player climbs the steps one riser at a time (copy the Cervantes steps test)",
@@ -173,7 +173,7 @@
     "check_terrain.py updated; check_levels.py shows middle-pool-sw-rise ok and the item marked built"
    ],
    "dependsOn": [],
-   "status": "open",
+   "status": "done",
    "issue": 31
   },
   {
@@ -210,7 +210,7 @@
     "IMG_2195.jpg",
     "IMG_2192.jpg"
    ],
-   "build": "The curved north end of the raised planter, the white steps by the north-west entrance, and the white garden wall with a brown door and pergola entrance north of the west path.",
+   "build": "The curved north end of the raised planter, the white steps by the north-west entrance, and the white garden wall with a brown door and pergola entrance north of the west path. The steps climb about 0.3-0.55 m from the courtyard path to the upper level behind the planter, which the terrain already gives; build them like data/middle_pool_steps.json. Heights: data/levels_survey.json item middle-pool-nw-rise.",
    "avoid": "IMG_2331 (±17 m) and IMG_2332 (±14 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
    "accept": [
     "pins corrected with locationBasis",

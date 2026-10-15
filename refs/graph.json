@@ -1486,6 +1486,11 @@
    "name": "Cervantes / Elena · steps beside the ramp"
   },
   {
+   "id": "steps:middle-pool-sw-steps",
+   "kind": "model-feature",
+   "name": "Middle pool · stone steps up to Calle Eva"
+  },
+  {
    "id": "task:elena-garden-door",
    "kind": "build-task",
    "name": "Elena north: path and garden door between the two hedged beds",
@@ -1546,7 +1551,7 @@
    "kind": "build-task",
    "name": "Middle pool south-west: stone steps and the gateway at their top",
    "priority": 1,
-   "status": "open",
+   "status": "done",
    "issue": 31
   },
   {
@@ -5086,6 +5091,16 @@
    "relation": "cites"
   },
   {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "ref:IMG_2248.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "ref:IMG_2333.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "area:elena",
    "relation": "in-area"
@@ -5268,6 +5283,16 @@
   {
    "from": "steps:cervantes-elena-steps",
    "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "area:eva",
+   "relation": "in-area"
+  },
+  {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "area:middle-pool",
    "relation": "in-area"
   },
   {

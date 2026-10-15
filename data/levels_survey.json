@@ -275,19 +275,52 @@
         "IMG_2331.jpg",
         "IMG_2245.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "middle-pool-sw-steps",
       "compare": {
         "low": [
-          -133.5,
-          99.5
+          -134.8,
+          99.9
         ],
         "high": [
           -139.0,
-          107.0
+          102.5
         ]
       },
-      "note": "Three rough stone steps with a steep terracotta ramp of 1.5-2 m beside them, from the courtyard's crazy paving up to the south-west lane; the lane climbs a little more to the gateway 8-10 m on, then is level. This is the same 0.5 m western rise as Cervantes: the terrain foot line (data/terrain.json) passes about 6 m further west, so the model keeps this lane flat."
+      "note": "Three rough stone steps with a steep terracotta ramp of 1.5-2 m beside them, from the courtyard's crazy paving up to the south-west lane; the lane climbs a little more to the gateway 8-10 m on, then is level. This is the same 0.5 m western rise as Cervantes. Built: the terrain foot line follows the back of the planter to the bottom step (local run 2.4 m, data/terrain.json) and data/middle_pool_steps.json adds the three steps beside the ramp."
+    },
+    {
+      "id": "middle-pool-nw-rise",
+      "area": "middle-pool",
+      "type": "steps",
+      "from": "the path between the planter and the pool fence",
+      "rise": [
+        0.3,
+        0.55
+      ],
+      "confidence": "medium",
+      "at": [
+        -138.5,
+        88.5
+      ],
+      "atAccuracy": 3,
+      "photos": [
+        "IMG_2332.jpg",
+        "IMG_2331.jpg"
+      ],
+      "model": "differs",
+      "task": "middle-pool-north-entrance",
+      "compare": {
+        "low": [
+          -137.6,
+          89.6
+        ],
+        "high": [
+          -142.9,
+          90.3
+        ]
+      },
+      "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built."
     },
     {
       "id": "middle-pool-gates-level",

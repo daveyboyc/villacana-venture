@@ -19,15 +19,17 @@ photos**.
   house floors are at lane level, or one sill (0.1-0.15 m) above it. No flights of
   steps lead up to front doors. What is raised is the ground in front of some houses:
   walled patios and terraces, reached by one to six steps.
-- **The west side is 0.5 m higher, at three places.** The rise shows at the
-  Cervantes ramp and steps at Elena (built), on Calle Eva by the Dalí car park
-  (built), and at the stone steps and ramp at the middle pool's south-west corner.
-  That last one is not built: the terrain foot line runs about 6 m further west
-  there (task `middle-pool-sw-steps`).
+- **The west side is 0.5 m higher.** The rise shows at the Cervantes ramp and
+  steps at Elena, and all along the west side of the middle pool courtyard: three
+  stone steps and a ramp up to Calle Eva at the south-west corner (IMG_2333), and
+  a short rise with white steps at the planter's north end (IMG_2332, IMG_2331).
+  The raised planter holds back the upper ground. Both rises are built in the
+  terrain and the south-west steps are built. The north-end steps and pergola gate
+  are still to do (task `middle-pool-north-entrance`).
 - **No second rise at Dalí.** Cervantes meets Pintor Dalí flush, at a tiled apron
   with a slot drain. Upper Cervantes is level, or any grade is under about 2%.
 - **The pools are not sunk.** Each deck is level with its lawn, apart from a
-  5-10 cm coping. The middle pool courtyard meets Calle Eva and the south lane with
+  5-10 cm coping. The middle pool courtyard meets Calle Eva at the east gateway and the south lane with
   no step.
 - **Raised terraces at the north pool.** At the north-west corner of the lawn a
   six-riser tiled stair with a handrail and a curved retaining wall climb about 1 m

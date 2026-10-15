@@ -6,7 +6,6 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | open | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg), [IMG_2331](../public/photos-ref/IMG_2331.jpg), [IMG_2245](../public/photos-ref/IMG_2245.jpg) |
 | P1 | `raised-terraces` | Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair | open | [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2206](../public/photos-ref/IMG_2206.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg) |
 | P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | open | [IMG_2285](../public/photos-ref/IMG_2285.jpg), [IMG_2298](../public/photos-ref/IMG_2298.jpg), [IMG_2299](../public/photos-ref/IMG_2299.jpg), [IMG_2300](../public/photos-ref/IMG_2300.jpg) |
 | P2 | `cervantes-door-steps` [#33](https://github.com/daveyboyc/villacana-venture/issues/33) | Cervantes: two steps up to a front door west of the Elena junction | open | [IMG_2327](../public/photos-ref/IMG_2327.jpg), [IMG_2328](../public/photos-ref/IMG_2328.jpg), [IMG_2287](../public/photos-ref/IMG_2287.jpg), [IMG_2196](../public/photos-ref/IMG_2196.jpg), [IMG_2358](../public/photos-ref/IMG_2358.jpg), [IMG_2367](../public/photos-ref/IMG_2367.jpg) |
@@ -31,12 +30,13 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P3 | `picasso-service-road` [#50](https://github.com/daveyboyc/villacana-venture/issues/50) | Pintor Picasso: service road, utility sheds and bins | open | [IMG_2345](../public/photos-ref/IMG_2345.jpg) |
 | P3 | `seaward-lanes-paving` [#51](https://github.com/daveyboyc/villacana-venture/issues/51) | Seaward lanes: octagonal paving and covered passages | open | [IMG_2235](../public/photos-ref/IMG_2235.jpg), [IMG_2237](../public/photos-ref/IMG_2237.jpg), [IMG_2239](../public/photos-ref/IMG_2239.jpg), [IMG_2185](../public/photos-ref/IMG_2185.jpg), [IMG_2190](../public/photos-ref/IMG_2190.jpg) |
 | P3 | `door-sills` | Door sills and footpath kerbs: the small steps everywhere | open | [IMG_2260](../public/photos-ref/IMG_2260.jpg), [IMG_2261](../public/photos-ref/IMG_2261.jpg), [IMG_2330](../public/photos-ref/IMG_2330.jpg), [IMG_2291](../public/photos-ref/IMG_2291.jpg), [IMG_2293](../public/photos-ref/IMG_2293.jpg), [IMG_2283](../public/photos-ref/IMG_2283.jpg) |
+| P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | done | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg), [IMG_2331](../public/photos-ref/IMG_2331.jpg), [IMG_2245](../public/photos-ref/IMG_2245.jpg) |
 | P1 | `paseo-retaining-wall` | Paseo: sandstone retaining wall, mesh fence and level drop | done · claude (subagent) | [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2349](../public/photos-ref/IMG_2349.jpg), [IMG_2352](../public/photos-ref/IMG_2352.jpg), [IMG_2354](../public/photos-ref/IMG_2354.jpg) |
 
 ## By area
 
 - **North pool** ([brief](areas/north-pool.md)): `raised-terraces`, `north-pool-garden-walls`
-- **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
+- **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`, `middle-pool-sw-steps`
 - **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
 - **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
 - **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-north-patios`, `cervantes-steps-treads`, `junction-lawns`
