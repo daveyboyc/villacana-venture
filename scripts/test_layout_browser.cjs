@@ -193,7 +193,16 @@ const path = require("node:path");
       const wallScene = new THREE.Scene();
       addPaseoWall(wallScene, s.seafront, sd, (x, z) => siteY(x, z) + poolGroundY(x, z));
       const cap = wallScene.getObjectByName("paseo-retaining-wall-coping");
-      if (!cap || Math.abs(cap.geometry.getAttribute("position").getY(0) - 0.065) > 0.001) throw Error("Sandstone coping is detached from the lawn datum");
+      if (!cap) throw Error("Sandstone coping missing");
+      const capPoints = cap.geometry.getAttribute("position"), angle = s.viewRotation * Math.PI / 180;
+      let southCap = 0;
+      for (let i = 0; i < capPoints.count; i++) {
+        const tx = capPoints.getX(i) * Math.cos(angle) - capPoints.getZ(i) * Math.sin(angle);
+        if (tx < -174 || tx > -150) continue;
+        southCap++;
+        if (Math.abs(capPoints.getY(i) - 0.065) > 0.001) throw Error("Sandstone coping is detached from the south lawn datum");
+      }
+      if (!southCap) throw Error("No sandstone coping below south lawn");
       const keep = world.solids;
       world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...seaWallRings(legacy, paseoWallCovers), ...rings]);
       // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
