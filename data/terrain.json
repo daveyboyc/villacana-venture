@@ -21,12 +21,28 @@
         -12
       ],
       [
-        -176,
-        28
+        -171,
+        14
+      ],
+      [
+        -165.2,
+        17.5
+      ],
+      [
+        -165.2,
+        28.8
+      ],
+      [
+        -165.95,
+        30.8
+      ],
+      [
+        -168,
+        35
       ],
       [
         -176,
-        36
+        38
       ],
       [
         -190,
@@ -43,8 +59,9 @@
     ],
     "evidence": {
       "cervantes": "photo:IMG_2262.jpg, IMG_2265.jpg: tiled ramp at Elena, foot at x -162",
-      "eva": "photo:IMG_2248.jpg: Calle Eva rising towards the Dalí car park, drain across the lane at the foot; foot placed about 7 m west of the camera, approximate",
-      "elsewhere": "guessed: the line joining those two ramps, kept west of the north pool lawn, and 20 m in from Dalí south of Eva"
+      "eva": "photo:IMG_2333.jpg, IMG_2248.jpg: three stone steps with a tiled ramp beside them climb out of the middle pool courtyard onto Calle Eva (IMG_2333); the foot is the bottom step. IMG_2248, taken a few metres further west, looks along the upper lane towards the Dalí car park, level or gently rising.",
+      "elsewhere": "guessed: the line joining the photographed rises, kept west of the north pool lawn, and 20 m in from Dalí south of Eva",
+      "middlePoolWest": "photo:IMG_2332.jpg, IMG_2331.jpg: the path between the raised planter and the pool fence is at pool level and rises at its north end to a pergola gate, with white steps up by the planter's north end; so the foot follows the back of the planter from there to the Eva steps. The north end is medium confidence."
     },
     "localRuns": [
       {
@@ -57,6 +74,17 @@
         "run": 3.0,
         "evidence": "photo:IMG_2286.jpg, IMG_2262.jpg: three shallow steps beside the smooth ramp, starting about one tile up from the foot drain, take the whole rise; each step stands a little above the ramp beside it, so the ramp climbs the same 0.5 m over a few metres, not 7",
         "trust": "Run estimated from tile and tread sizes in the photos (about 0.4 m tiles, 0.6 m treads): the shortest run that keeps every tread above the ramp beside it. Applies only where the foot line crosses Cervantes; the rest of the line keeps the 7 m run."
+      },
+      {
+        "id": "middle-pool-west",
+        "tz": [
+          17,
+          32.5
+        ],
+        "blend": 2,
+        "run": 2.4,
+        "evidence": "photo:IMG_2333.jpg: three stone steps (about 0.5 m) with a steep tiled ramp of 1.5-2 m beside them, then the lane climbs a little more to the gateway; IMG_2332 shows a short rise at the planter's north end.",
+        "trust": "Run from the step treads (about 0.45 m) and the ramp length judged in IMG_2333: 2.4 m is the shortest walkable run (slope 0.21) that keeps every tread above the ramp. Applies along the west side of the middle pool courtyard only."
       }
     ]
   }

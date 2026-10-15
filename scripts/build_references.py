@@ -186,6 +186,15 @@ def queue_page(queue,spec):
         if here:out.append(f"- **{names[a['id']]}** ([brief](areas/{a['id']}.md)): "+', '.join(f"`{t['id']}`" for t in here))
     return '\n'.join(out)+'\n'
 
+def survey_items():
+    return load(ROOT/'data/levels_survey.json',{'items':[]})['items']
+
+def level_line(i):
+    rise=f"{i['rise'][0]:g}-{i['rise'][1]:g} m" if i['rise'][0]!=i['rise'][1] else f"{i['rise'][0]:g} m"
+    where=f" at ({i['at'][0]:g}, {i['at'][1]:g}) ±{i['atAccuracy']:g} m" if i.get('at') else ''
+    task=f", task `{i['task']}`" if i.get('task') else ''
+    return f"- `{i['id']}` ({i['type']}): {rise}{' above '+i['from'] if i.get('from') else ''}, {i['confidence']} confidence{where}. Model: **{i['model']}**{task}. {i['note']} ({', '.join(i['photos'])})"
+
 def issue_body(t,spec,catalog):
     area=next(a for a in spec['areas'] if a['id']==t['area']);by={e['id']:e for e in catalog}
     lines=[f"# {t['title']}",'',f"Task `{t['id']}` · area **{area['name']}** · priority P{t['priority']} · {t['kind']}",'',
@@ -197,6 +206,8 @@ def issue_body(t,spec,catalog):
         pin=f" — pin ±{cam['accuracy']} m" if cam.get('accuracy') else ''
         look=f"; looks at {e['subject']}" if e.get('subject') else ''
         lines.append(f"- `public/photos-ref/{ph}`: {e['title']} ({e.get('viewpoint') or 'viewpoint not reviewed'}{pin}{look})")
+    levels=[i for i in survey_items() if i.get('task')==t['id']]
+    if levels:lines+=['','## Levels from the photos','','From `data/levels_survey.json` (check with `scripts/check_levels.py`).','']+[level_line(i) for i in levels]
     lines+=['','## Build','',t['build'],'','## Do not','',t['avoid'],'','## Done when','']
     lines+=[f'- [ ] {a}' for a in t['accept']]
     lines+=['- [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)',
@@ -269,6 +280,8 @@ def brief(area,entries,topics,spec,features=(),queue=()):
     counts={t['id']:sum(t['id'] in e['useFor'] for e in entries) for t in topics}
     out+=['## Coverage','',', '.join(f'{t["name"]}: {counts[t["id"]]}' for t in topics if counts[t['id']])+('' if any(counts.values()) else 'No references reviewed by topic yet.'),
           f'{len(reviewed)} reviewed, {len(guessed)} suggested only by camera position.','']
+    levels=[i for i in survey_items() if i['area']==area['id']]
+    if levels:out+=['## Levels','','Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).','']+[level_line(i) for i in levels]+['']
     tasks=sorted((t for t in queue if t['area']==area['id'] and t.get('status')!='done'),key=lambda t:(t['priority'],t['id']))
     if tasks:out+=['## Open build tasks','','From `data/build_queue.json`; issue bodies in `refs/issues/`.','','| Priority | Task | What | Status | Photos |','| --- | --- | --- | --- | --- |']+[task_line(t,1) for t in tasks]+['']
     if any(area['id'] in f['areas'] for f in features):
