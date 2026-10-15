@@ -853,12 +853,7 @@
    "altitude": 9.2,
    "trust": "phone location"
   },
-  "citedBy": [
-   "north_pool.json:north-pool-west-curved-wall",
-   "north_pool.json:north-pool-north-curved-wall",
-   "north_pool.json:north-pool-west-paving",
-   "north_pool.json:north-pool-patio-steps"
-  ],
+  "citedBy": [],
   "looksAt": [
    -176.7,
    20.1
@@ -897,11 +892,7 @@
    "altitude": 9.3,
    "trust": "phone location"
   },
-  "citedBy": [
-   "north_pool.json:north-pool-west-curved-wall",
-   "north_pool.json:north-pool-north-curved-wall",
-   "north_pool.json:north-pool-west-paving"
-  ],
+  "citedBy": [],
   "looksAt": [
    -176.7,
    20.1
@@ -975,10 +966,7 @@
    "altitude": 9.7,
    "trust": "phone location"
   },
-  "citedBy": [
-   "north_pool.json:north-pool-west-curved-wall",
-   "north_pool.json:north-pool-west-paving"
-  ],
+  "citedBy": [],
   "looksAt": [
    -171.0,
    27.0
@@ -1013,10 +1001,7 @@
    "altitude": 10.2,
    "trust": "phone location"
   },
-  "citedBy": [
-   "north_pool.json:north-pool-west-curved-wall",
-   "north_pool.json:north-pool-west-paving"
-  ],
+  "citedBy": [],
   "looksAt": [
    -171.5,
    26.0

@@ -1,4 +1,3 @@
-import {northPoolWalls,northPoolPatio,northPoolPathRings,northPoolTreads,suppressInNorthPoolReview} from "./north-pool";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
@@ -54,7 +53,6 @@ function loadEdits(): Edits {
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   suppressInMiddlePoolReview(skeleton);
-  suppressInNorthPoolReview(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
   const rot = skeleton.viewRotation;
 
@@ -97,12 +95,6 @@ async function boot(): Promise<void> {
   for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
   line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
   frontages.append(middle);
-  const north=el("g",{id:"north-pool-garden"});
-  north.append(el("path",{d:path(northPoolPatio.ring as Vec2[]),fill:"#c4b396",stroke:"#fffdf5","stroke-width":.1,"data-north-pool-id":northPoolPatio.id}));
-  for(const ring of northPoolPathRings())north.append(el("path",{d:path(ring),fill:"#c4b396","data-north-pool-id":"north-pool-west-paving"}));
-  for(const wall of northPoolWalls){const node=el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-north-pool-id":wall.id});const title=el("title",{});title.textContent=wall.trust;node.append(title);north.append(node);}
-  for(const tread of northPoolTreads())north.append(el("path",{d:path(tread.ring),fill:"#bb7759",stroke:"#fffdf5","stroke-width":.08,"data-north-pool-id":"north-pool-patio-steps"}));
-  frontages.append(north);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});
   levels.append(el("path",{d:path(lowerPoolRing),fill:"#7dcbd1","fill-opacity":0.12,stroke:"#596d78","stroke-width":0.4,"stroke-dasharray":"1 1"}));

@@ -1,4 +1,3 @@
-import {addNorthPoolGarden,northPoolWallRings,northPoolRoutes,suppressInNorthPoolReview} from "./north-pool";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
@@ -60,7 +59,6 @@ async function boot(): Promise<void> {
   const detailLink=document.querySelector<HTMLAnchorElement>("#layout-details")!;
   const detailUrl=new URL(location.href);if(layoutOnly)detailUrl.searchParams.set("details","1");else detailUrl.searchParams.delete("details");detailLink.href=detailUrl.pathname+detailUrl.search;detailLink.textContent=layoutOnly?"Layout · show details":"Details · show layout";
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
-  suppressInNorthPoolReview(skeleton);
   suppressInMiddlePoolReview(skeleton); // the traced middle pool gateway and planter replace generated walls there
   const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
   const shown = chosen.length ? chosen : [skeleton.pools.find((p) => p.id === "north")!];
@@ -93,7 +91,7 @@ async function boot(): Promise<void> {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
-  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess,...northPoolRoutes]):[];
+  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess]):[];
   const canPlaceDecoration=(x:number,z:number,radius:number)=>routeClearance(routes,x,z,radius);
   scene.userData.decorationClearance=canPlaceDecoration;scene.userData.protectedRoutes=routes;scene.userData.layoutOnly=layoutOnly;
   scene.background = new THREE.Color("#bfe3f2");
@@ -162,11 +160,9 @@ async function boot(): Promise<void> {
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addElenaNorth(scene);}
   addMiddlePool(scene);
-  addNorthPoolGarden(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
-  fenceRings.push(...northPoolWallRings());
   fenceRings.push(...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);

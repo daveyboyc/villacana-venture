@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 297,
-  "photosCitedByModel": 46,
-  "modelFeaturesWithPhotoCitations": 39
+  "features": 293,
+  "photosCitedByModel": 42,
+  "modelFeaturesWithPhotoCitations": 35
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -946,12 +946,7 @@
      "angleOffset": 4.7
     }
    ],
-   "citedBy": [
-    "north_pool.json:north-pool-west-curved-wall",
-    "north_pool.json:north-pool-north-curved-wall",
-    "north_pool.json:north-pool-west-paving",
-    "north_pool.json:north-pool-patio-steps"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -169.9,
@@ -981,11 +976,7 @@
      "angleOffset": 8.2
     }
    ],
-   "citedBy": [
-    "north_pool.json:north-pool-west-curved-wall",
-    "north_pool.json:north-pool-north-curved-wall",
-    "north_pool.json:north-pool-west-paving"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.1,
@@ -1055,10 +1046,7 @@
      "angleOffset": 30.2
     }
    ],
-   "citedBy": [
-    "north_pool.json:north-pool-west-curved-wall",
-    "north_pool.json:north-pool-west-paving"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -169.1,
@@ -1093,10 +1081,7 @@
      "angleOffset": 8.9
     }
    ],
-   "citedBy": [
-    "north_pool.json:north-pool-west-curved-wall",
-    "north_pool.json:north-pool-west-paving"
-   ],
+   "citedBy": [],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -168.9,

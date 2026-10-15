@@ -204,7 +204,7 @@
     "IMG_2192.jpg"
    ],
    "build": "The curved north end of the raised planter, the white steps by the north-west entrance, and the white garden wall with a brown door and pergola entrance north of the west path.",
-   "avoid": "IMG_2331 (±17 m) and IMG_2332 (±14 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
+   "avoid": "IMG_2331 (\u00b117 m) and IMG_2332 (\u00b114 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
    "accept": [
     "pins corrected with locationBasis",
     "check_middle_pool.py extended"

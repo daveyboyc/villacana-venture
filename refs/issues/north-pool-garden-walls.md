@@ -6,9 +6,8 @@ Task `north-pool-garden-walls` · area **North pool** · priority P2 · structur
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/north-pool.md` and the contact sheet `villacana-reference/contact-sheets/north-pool.jpg`
-- docs: `docs/NORTH_POOL.md`
-- data: `data/objects.json`, `data/north_pool.json`, `data/terrain.json`
-- src: `src/world.ts`, `src/water.ts`, `src/north-pool.ts`
+- data: `data/objects.json`
+- src: `src/world.ts`, `src/water.ts`
 
 ## Photos to build from
 
