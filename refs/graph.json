@@ -1311,6 +1311,21 @@
    "viewpoint": "ground"
   },
   {
+   "id": "barraka_boardwalk.json:barraka-beach-seating",
+   "kind": "model-feature",
+   "name": "Thatched parasols and wooden cream-cushion loungers"
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-boardwalk",
+   "kind": "model-feature",
+   "name": "Barraka weathered timber boardwalk"
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-sign-planter",
+   "kind": "model-feature",
+   "name": "BARRAKA BEACH two-tier white planted sign"
+  },
+  {
    "id": "building:6265201UF1366N_part5",
    "kind": "model-feature",
    "name": "Calle Elena covered walkway"
@@ -1593,7 +1608,7 @@
    "kind": "build-task",
    "name": "Barraka Beach: boardwalk, sign planter and parasols",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 42
   },
   {
@@ -4493,6 +4508,51 @@
    "relation": "useful-for"
   },
   {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "ref:IMG_2223.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "ref:IMG_2225.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2223.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2225.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-sign-planter",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-sign-planter",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -5056,6 +5116,21 @@
    "from": "steps:cervantes-elena-steps",
    "to": "ref:IMG_2286.jpg",
    "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-sign-planter",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
   },
   {
    "from": "building:6265201UF1366N_part5",

@@ -9,6 +9,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 - The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).
 - IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed.
 - IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand.
+- IMG_2346/2347 show narrow weathered green timber access, a white two-tier planted BARRAKA BEACH sign on its left looking seaward, and straw parasols. Added as ground-following planks plus guarded Details furniture; dimensions and seasonal furniture positions are estimates. IMG_2225 wooden cream-cushion beds differ from the blue/white plastic loungers west of the aisle in IMG_2223; those are not asserted as one type. No coast, paseo or registry footprint changes.
+- Boardwalk aerial anchor is the visible southeast-roof-corner run [30,121] to [42,135], not the IMG_2347 camera pin inside registry 6465801UF1366N_part5 about 25 m inland. Photo pair from the uncorrected pin is obstructed by that building. Hidden paseo join and exact camera correction remain unresolved; no cross-house connector is invented.
 
 ## Read first
 
@@ -28,24 +30,45 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | open | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
-| P3 | `barraka-boardwalk` [#42](https://github.com/daveyboyc/villacana-venture/issues/42) | Barraka Beach: boardwalk, sign planter and parasols | open | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg), [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2225](../../public/photos-ref/IMG_2225.jpg) |
+| P3 | `barraka-boardwalk` [#42](https://github.com/daveyboyc/villacana-venture/issues/42) | Barraka Beach: boardwalk, sign planter and parasols | in-progress · issue_42 | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg), [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2225](../../public/photos-ref/IMG_2225.jpg) |
+
+## Built from these photos
+
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+
+```mermaid
+graph LR
+  A["Barraka and the beach"]
+  A --> F0["Thatched parasols and wooden cream-cushion loungers"]
+  F0 --> PIMG_2223_jpg(["IMG_2223"])
+  F0 --> PIMG_2225_jpg(["IMG_2225"])
+  F0 --> PIMG_2347_jpg(["IMG_2347"])
+  A --> F1["Barraka weathered timber boardwalk"]
+  F1 --> PIMG_2223_jpg(["IMG_2223"])
+  F1 --> PIMG_2225_jpg(["IMG_2225"])
+  F1 --> PIMG_2346_jpg(["IMG_2346"])
+  F1 --> PIMG_2347_jpg(["IMG_2347"])
+  A --> F2["BARRAKA BEACH two-tier white planted sign"]
+  F2 --> PIMG_2346_jpg(["IMG_2346"])
+  F2 --> PIMG_2347_jpg(["IMG_2347"])
+```
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter, barraka_boardwalk.json:barraka-beach-seating._ |
+| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter._ |
+| [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
+| [IMG_2225.jpg](../../public/photos-ref/IMG_2225.jpg) | ground | materials | Thatched parasols and wooden loungers on the beach _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage |
-| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach |
 | [IMG_2224.jpg](../../public/photos-ref/IMG_2224.jpg) | ground | materials, view | Open sand looking north-east along the coast to the mountains |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades | From the beach looking back at the resort frontage |
 | [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline |
-| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk |
 | [6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg](../../public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg) | ground | materials | Beach: pebbles on sand at the water line **Note:** No GPS in the file: exact stretch of beach not confirmed. |
-| [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk |
-| [IMG_2225.jpg](../../public/photos-ref/IMG_2225.jpg) | ground | materials | Thatched parasols and wooden loungers on the beach |
 | [IMG_2350.jpg](../../public/photos-ref/IMG_2350.jpg) | ground | layout, levels, materials, view | Paseo looking north-east: stamped walk, sandstone retaining wall **Note:** The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here. _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge._ |
 | [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: paseo_wall.json:paseo-timber-edge._ |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach |

@@ -64,6 +64,11 @@ def features(s):
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
+    for key in ('boardwalk','sign','seating'):
+        f=barraka[key]
+        points=f.get('points') or ([f['point']] if 'point' in f else f['parasols'])
+        add('barraka_boardwalk.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],points=points)
     steps=json.loads((ROOT/'data/cervantes_elena_steps.json').read_text())
     add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))

@@ -1301,7 +1301,10 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_boardwalk.json:barraka-boardwalk",
+   "barraka_boardwalk.json:barraka-beach-seating"
+  ],
   "looksAt": [
    45.0,
    104.0
@@ -1372,7 +1375,10 @@
    "altitude": 2.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_boardwalk.json:barraka-boardwalk",
+   "barraka_boardwalk.json:barraka-beach-seating"
+  ],
   "looksAt": [
    55.7,
    134.6
@@ -4609,7 +4615,10 @@
    "altitude": 5.6,
    "trust": "checked against photo content"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_boardwalk.json:barraka-boardwalk",
+   "barraka_boardwalk.json:barraka-sign-planter"
+  ],
   "looksAt": [
    41.3,
    97.1
@@ -4646,7 +4655,11 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_boardwalk.json:barraka-boardwalk",
+   "barraka_boardwalk.json:barraka-sign-planter",
+   "barraka_boardwalk.json:barraka-beach-seating"
+  ],
   "looksAt": [
    40.2,
    99.9

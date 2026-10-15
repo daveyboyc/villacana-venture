@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 296,
+  "photosCitedByModel": 46,
+  "modelFeaturesWithPhotoCitations": 38
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2159,6 +2159,39 @@
    ]
   },
   {
+   "id": "barraka_boardwalk.json:barraka-boardwalk",
+   "name": "Barraka weathered timber boardwalk",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg",
+    "IMG_2223.jpg",
+    "IMG_2225.jpg"
+   ]
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-sign-planter",
+   "name": "BARRAKA BEACH two-tier white planted sign",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ]
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-beach-seating",
+   "name": "Thatched parasols and wooden cream-cushion loungers",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2225.jpg",
+    "IMG_2347.jpg",
+    "IMG_2223.jpg"
+   ]
+  },
+  {
    "id": "steps:cervantes-elena-steps",
    "name": "Cervantes / Elena · steps beside the ramp",
    "kind": "reference feature",
@@ -4068,6 +4101,18 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2224.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -4078,6 +4123,18 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2225.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2225.jpg",
+   "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2226.jpg",
@@ -6504,6 +6561,18 @@
    "gap": 3.3
   },
   {
+   "from": "photo:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-sign-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2347.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -6514,6 +6583,24 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-sign-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2349.jpg",

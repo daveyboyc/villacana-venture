@@ -1,3 +1,4 @@
+import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
@@ -91,7 +92,7 @@ async function boot(): Promise<void> {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
-  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess]):[];
+  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess,barrakaAccess]):[];
   const canPlaceDecoration=(x:number,z:number,radius:number)=>routeClearance(routes,x,z,radius);
   scene.userData.decorationClearance=canPlaceDecoration;scene.userData.protectedRoutes=routes;scene.userData.layoutOnly=layoutOnly;
   scene.background = new THREE.Color("#bfe3f2");
@@ -145,6 +146,7 @@ async function boot(): Promise<void> {
     coast = new CoastField(map.coast, map.landRef);
   }
   // The paseo's sandstone retaining wall; along the south lawn it is the sea wall, drawn once.
+  if (seaside) addBarrakaBoardwalk(scene, (x,z) => seaside!.y(x,z));
   if (seaside && skeleton.seafront) addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY);
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
