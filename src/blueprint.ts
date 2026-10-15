@@ -4,7 +4,8 @@ import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from ".
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
-import {paseoWallOutline} from "./paseo-wall";
+import { seaWallSegments } from "./south-pool";
+import {paseoWallCovers, paseoWallOutline} from "./paseo-wall";
 import paseoWall from "../data/paseo_wall.json";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
@@ -294,7 +295,7 @@ async function boot(): Promise<void> {
   for (const [x, z] of skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
   // The south lawn's seaward wall and fence: one unbroken line, no gate.
   if (skeleton.seaWall) {
-    const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
+    const line = (points: Vec2[]) => seaWallSegments(points, paseoWallCovers).map(([a, b]) => `M${a[0]} ${a[1]}L${b[0]} ${b[1]}`).join("");
     walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#26352c", "stroke-width": 0.9, "stroke-linejoin": "round" }));
     walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#fff", "stroke-width": 0.45, "stroke-linejoin": "round" }));
   }

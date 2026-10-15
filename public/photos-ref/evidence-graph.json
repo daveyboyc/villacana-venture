@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
-  "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "features": 294,
+  "photosCitedByModel": 43,
+  "modelFeaturesWithPhotoCitations": 36
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1837,6 +1837,16 @@
    ]
   },
   {
+   "id": "south_pool.json:south-pool-seaward-level",
+   "name": "South lawn above the paseo",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2349.jpg",
+    "IMG_2188.jpg"
+   ]
+  },
+  {
    "id": "frontage_divisions.json:cervantes-elena-lawn-1",
    "name": "Cervantes / Elena · front lawn 1",
    "kind": "reference feature",
@@ -3337,6 +3347,12 @@
    "to": "street:silvia-south",
    "relation": "camera-nearby",
    "gap": 4.6
+  },
+  {
+   "from": "photo:IMG_2188.jpg",
+   "to": "south_pool.json:south-pool-seaward-level",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2189.jpg",
@@ -6531,6 +6547,12 @@
   {
    "from": "photo:IMG_2349.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2349.jpg",
+   "to": "south_pool.json:south-pool-seaward-level",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

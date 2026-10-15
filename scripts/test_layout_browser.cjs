@@ -166,7 +166,8 @@ const path = require("node:path");
     }
     // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
     {
-      const { paseoWallRings, paseoWallFace } = await import("/src/paseo-wall.ts");
+      const { paseoWallRings, paseoWallFace, paseoWallCovers, addPaseoWall } = await import("/src/paseo-wall.ts");
+      const { seaWallSegments, seaWallRings, addSeaWall } = await import("/src/south-pool.ts");
       const rings = paseoWallRings(), wallOnly = new Solids(rings);
       for (const ring of rings) {
         const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
@@ -177,8 +178,24 @@ const path = require("node:path");
       const across = (d) => world.groundHeight(fx + (gz - fz) / len * d, fz - (gx - fx) / len * d);
       const step = across(1.2) - across(-0.3);
       if (step < 0.8 || step > 1.3) throw Error("Paseo wall does not stand at the 1 m level change: " + step);
+      // The sandstone line replaces the legacy white wall everywhere, including collision and map segments.
+      const legacy = s.seaWall.points, remaining = seaWallSegments(legacy, paseoWallCovers);
+      if (remaining.length >= legacy.length - 1 || !remaining.length) throw Error("South wall reconciliation omitted no shared stretches or lost the end returns");
+      const legacyScene = new THREE.Scene();
+      addSeaWall(legacyScene, legacy, paseoWallCovers);
+      if (legacyScene.children.length !== remaining.length) throw Error("White wall mesh/map segment disagreement");
+      const cornerCount = new Set(remaining.flat().map(p => p.join(","))).size;
+      if (seaWallRings(legacy, paseoWallCovers).length !== remaining.length + cornerCount) throw Error("White wall collision retains hidden stretches");
+      const south = s.pools.find(p => p.id === "south");
+      for (const [x, z] of south.ring) {
+        if (sd.inZone(x, z) || Math.abs(siteY(x, z) + poolGroundY(x, z)) > 0.001) throw Error("South pool no longer stays level at its existing datum");
+      }
+      const wallScene = new THREE.Scene();
+      addPaseoWall(wallScene, s.seafront, sd, (x, z) => siteY(x, z) + poolGroundY(x, z));
+      const cap = wallScene.getObjectByName("paseo-retaining-wall-coping");
+      if (!cap || Math.abs(cap.geometry.getAttribute("position").getY(0) - 0.065) > 0.001) throw Error("Sandstone coping is detached from the lawn datum");
       const keep = world.solids;
-      world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...rings]);
+      world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...seaWallRings(legacy, paseoWallCovers), ...rings]);
       // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
       const stretch = s.seafront.paseo.points.slice(0, 8);
       walk(stretch);
