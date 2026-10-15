@@ -41,6 +41,7 @@ const path = require("node:path");
       { elenaNorthRings, elenaNorthBeds, gatewayParts },
       { stepsGroundOffset },
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
+      { middleSwGround, middleSwRings, middleSwAt, middleSwRun },
     ] = await Promise.all([
       import("/src/player.ts"),
       import("/src/geom.ts"),
@@ -54,6 +55,7 @@ const path = require("node:path");
       import("/src/elena-north.ts"),
       import("/src/ramp-steps.ts"),
       import("/src/middle-pool.ts"),
+      import("/src/middle-pool-sw-steps.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
@@ -67,6 +69,7 @@ const path = require("node:path");
         ...cervantesPatioWallRings(),
         ...elenaNorthRings(),
         ...middlePoolRings(),
+        ...middleSwRings(),
         ...coastalWallRings(),
       ],
       Object.fromEntries(
@@ -86,7 +89,7 @@ const path = require("node:path");
         sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
-            stepsGroundOffset(x, z) +
+            stepsGroundOffset(x, z) + middleSwGround(x,z) +
             poolGroundY(x, z) +
             referenceGroundHeight(s.boundaryReference, x, z),
       maxGroundStep: 0.45,
@@ -153,6 +156,20 @@ const path = require("node:path");
       walk([at(-0.4), at(flight.end + 0.3)]);
       if (Math.abs(player.y - rampTop) > 0.08) throw Error("Player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
+    }
+    // Issue 31: the planter-side half climbs exactly three risers; the adjacent ramp is smooth.
+    {
+      const at=d=>middleSwAt(d,(middleSwRun.stepsAcross[0]+middleSwRun.stepsAcross[1])/2), heights=[];
+      for(let d=0;d<2.15;d+=.025)heights.push(world.groundHeight(...at(d)));
+      const jumps=heights.slice(1).map((h,i)=>h-heights[i]).filter(d=>d>.05);
+      if(jumps.length!==3 || jumps.some(d=>Math.abs(d-.15)>.025))throw Error("Middle SW risers incorrect: "+jumps);
+      walk([at(-.3),at(2.2)]);
+      if(Math.abs(player.y-world.groundHeight(...at(2.2)))>.08)throw Error("Player did not climb middle SW steps");
+      walk([at(2.2),at(-.3)]);
+      walk([middleSwAt(2.3),middleSwAt(6)]);
+      walk([middleSwAt(6),middleSwAt(2.3)]);
+      const ramp=d=>world.groundHeight(...middleSwAt(d,-.5));
+      if(Math.abs(ramp(1.9)-world.groundHeight(...at(1.9)))>.02)throw Error("SW ramp and steps disagree at landing");
     }
     // Elena north: through the arched gateway, and the raised beds keep the player out.
     {

@@ -6,9 +6,9 @@ Task `middle-pool-north-entrance` · area **Middle pool** · priority P3 · stru
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/middle-pool.md` and the contact sheet `villacana-reference/contact-sheets/middle-pool.jpg`
-- docs: `docs/MIDDLE_POOL.md`
-- data: `data/middle_pool.json`, `data/objects.json`
-- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`
+- docs: `docs/MIDDLE_POOL.md`, `docs/MIDDLE_POOL_SW_STEPS.md`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/middle_pool_sw_steps.json`, `data/terrain.json`
+- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-sw-steps.ts`
 
 ## Photos to build from
 

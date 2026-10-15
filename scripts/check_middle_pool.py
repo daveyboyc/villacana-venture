@@ -78,3 +78,19 @@ pool=next(p for p in s['pools'] if p['id']=='middle')['ring']
 gap=min(distance(p,a,b) for p in sample(pl['face'][:2]) for a,b in zip(pool,pool[1:]+pool[:1]))
 assert gap>=roads['elena-south']['width'],f'Path between planter and pool too narrow ({gap:.2f} m)'
 print('Middle pool: photo-linked east gateway and west planter keep the lanes clear, gateway open and walkable, houses and pools untouched PASS')
+
+# Issue 31: gateway piers/open leaves use the same frame as the terrain flight.
+sw=json.loads((ROOT/'data/middle_pool_sw_steps.json').read_text())
+r=next(r for r in json.loads((ROOT/'data/terrain.json').read_text())['localAccessRuns'] if r['id']==sw['terrainId'])
+assert sw['evidence'] and all(p in photos for p in sw['evidence'])
+length=math.dist(r['foot'],r['toward']); ux,uz=[(r['toward'][i]-r['foot'][i])/length for i in range(2)]
+at=lambda a,c:[r['foot'][0]+ux*a-uz*c,r['foot'][1]+uz*a+ux*c]
+for side in [-1,1]:
+ c=side*(sw['opening']/2+sw['pierWidth']/2); g=sw['gatewayAlong'];p=sw['pierWidth']
+ for pt in [at(g+a,c+b) for a in [-p/2,p/2] for b in [-p/2,p/2]]:
+  for road in roads.values():assert min(distance(pt,a,b) for a,b in zip(road['points'],road['points'][1:]))>=road['width']/2-.025,'SW pier intrudes on route'
+  assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'SW pier inside house'
+ assert not any(inside(*at(g,c),pool['ring']) for pool in s['pools'])
+assert sw['opening']>=2*PLAYER+.5 and sw['height']>=2
+assert len(r['risers'])==3 and r['rise']/3<=.2
+print('Middle pool southwest: photo-backed three risers and open gateway clear houses, pools and route PASS')

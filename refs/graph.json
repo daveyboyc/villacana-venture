@@ -1466,6 +1466,11 @@
    "name": "Middle pool · raised planter wall with hedge, west path"
   },
   {
+   "id": "middle_pool_sw_steps.json:middle-pool-sw-steps",
+   "kind": "model-feature",
+   "name": "Middle pool · south-west stone steps, tiled ramp and gateway"
+  },
+  {
    "id": "paseo_wall.json:paseo-retaining-wall",
    "kind": "model-feature",
    "name": "Paseo · sandstone retaining wall and mesh fence"
@@ -4978,6 +4983,16 @@
    "relation": "cites"
   },
   {
+   "from": "middle_pool_sw_steps.json:middle-pool-sw-steps",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_sw_steps.json:middle-pool-sw-steps",
+   "to": "ref:IMG_2333.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_wall.json:paseo-retaining-wall",
    "to": "ref:IMG_2227.jpg",
    "relation": "cites"
@@ -5214,6 +5229,11 @@
   },
   {
    "from": "middle_pool.json:middle-pool-west-planter",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_sw_steps.json:middle-pool-sw-steps",
    "to": "area:middle-pool",
    "relation": "in-area"
   },

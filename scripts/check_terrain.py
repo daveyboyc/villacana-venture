@@ -66,3 +66,12 @@ assert site_y([photo['x'], photo['z']]) == 0, 'IMG_2248 was taken at the foot, l
 # The lane itself no longer carries a hump of its own.
 assert len(set(roads['cervantes']['heights'])) == 1
 print('Terrain: Dalí side 0.5 m up, pools level, Cervantes and Eva ramps where photographed, walkable slopes PASS')
+
+# Issue 31 is a bounded access, not a replacement for the resort's established datums.
+for r in json.loads((ROOT/'data/terrain.json').read_text()).get('localAccessRuns',[]):
+ assert r['evidence'] and r['trust']
+ assert 0<r['risers'][0]<r['risers'][1]<r['risers'][2]<r['end']<r['landingEnd']<r['tieInEnd']
+ assert r['rise']/len(r['risers'])<=.2 and r['rise']/r['end']<=.25
+ assert r['rise']/(r['tieInEnd']-r['landingEnd'])<=.2
+ assert r['across'][0]<r['stepsAcross'][0]<r['stepsAcross'][1]<=r['across'][1]
+ print(r['id']+': local ramp/steps rise and provisional tie-in remain walkable PASS')

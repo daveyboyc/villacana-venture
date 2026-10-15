@@ -4170,6 +4170,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "middle_pool_sw_steps.json:middle-pool-sw-steps",
    "middle_pool.json:middle-pool-west-planter"
   ],
   "looksAt": [
@@ -4208,6 +4209,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "middle_pool_sw_steps.json:middle-pool-sw-steps",
    "middle_pool.json:middle-pool-west-planter"
   ],
   "looksAt": [

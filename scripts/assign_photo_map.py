@@ -61,6 +61,9 @@ def features(s):
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
     for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    sw=json.loads((ROOT/'data/middle_pool_sw_steps.json').read_text())
+    run=next(r for r in json.loads((ROOT/'data/terrain.json').read_text())['localAccessRuns'] if r['id']==sw['terrainId'])
+    add('middle_pool_sw_steps.json:'+sw['id'],sw['name'],'reference feature','authored photo/map interpretation',evidence=sw['evidence'],points=[run['foot']])
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})

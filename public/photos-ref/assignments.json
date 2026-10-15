@@ -6,9 +6,9 @@
   "suggested": 76,
   "needs-review": 68,
   "photos": 145,
-  "features": 293,
+  "features": 294,
   "photosCitedByModel": 42,
-  "modelFeaturesWithPhotoCitations": 35
+  "modelFeaturesWithPhotoCitations": 36
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -4495,6 +4495,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "middle_pool_sw_steps.json:middle-pool-sw-steps",
     "middle_pool.json:middle-pool-west-planter"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -4536,6 +4537,7 @@
     }
    ],
    "citedBy": [
+    "middle_pool_sw_steps.json:middle-pool-sw-steps",
     "middle_pool.json:middle-pool-west-planter"
    ],
    "geometryReview": "observed; geometry comparison pending",
