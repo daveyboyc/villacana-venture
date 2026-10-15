@@ -83,7 +83,7 @@ Trees, hedges, palms, climbers and beds.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva |
+| [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva _Used by: steps:middle-pool-sw-steps._ |
 | [IMG_2336.jpg](../../public/photos-ref/IMG_2336.jpg) | ground | layout, planting | Calle Eva east of the middle pool: tiled path between lawns |
 | [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp |
 | [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn |
