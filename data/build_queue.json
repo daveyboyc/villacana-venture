@@ -402,8 +402,9 @@
     "paseo still walks end to end"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 35
+   "status": "in-progress",
+   "issue": 35,
+   "owner": "issue_35"
   },
   {
    "id": "paseo-east-end-height",
