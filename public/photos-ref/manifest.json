@@ -1,12 +1,26 @@
 [
  {
+  "file": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+  "title": "Beach: pebbles on sand at the water line",
+  "trust": "unplaced",
+  "taken": "2026-10-14",
+  "observation": "Wide 16:9 image of the beach at the water line: coarse grey-brown sand with scattered dark rounded pebbles, a denser pebble band along the shore, small breaking waves and a kite-surfer far out. No location data in the file, so it is unplaced; which stretch of beach it shows is not confirmed.",
+  "originalUrl": "https://drive.google.com/file/d/1sKwoPnIA4dgLpkvZ4Fzt5DkNCEm3hGFe/view?usp=drivesdk",
+  "visualReview": "observed; unplaced (no GPS)",
+  "areaHint": "area:beach"
+ },
+ {
   "file": "IMG_2182.jpg",
   "title": "IMG_2182",
   "trust": "phone location",
   "x": -39.0,
   "z": 133.0,
   "heading": 240,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.2,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2183.jpg",
@@ -15,7 +29,11 @@
   "x": -47.3,
   "z": 142.2,
   "heading": 294,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.8,
+  "altitude": 6.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2184.jpg",
@@ -24,7 +42,11 @@
   "x": -56.7,
   "z": 147.2,
   "heading": 148,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2185.jpg",
@@ -33,7 +55,11 @@
   "x": -80.1,
   "z": 159.2,
   "heading": 146,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.9,
+  "altitude": 5.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2186.jpg",
@@ -42,7 +68,11 @@
   "x": -80.1,
   "z": 158.9,
   "heading": 149,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.9,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2187.jpg",
@@ -51,7 +81,11 @@
   "x": -79.6,
   "z": 158.3,
   "heading": 177,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.9,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2188.jpg",
@@ -60,7 +94,11 @@
   "x": -89.3,
   "z": 167.3,
   "heading": 171,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.1,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2189.jpg",
@@ -69,7 +107,11 @@
   "x": -114.9,
   "z": 126.2,
   "heading": 322,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 7.7,
+  "altitude": 6.9,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2190.jpg",
@@ -78,7 +120,11 @@
   "x": -121.1,
   "z": 116.3,
   "heading": 56,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2191.jpg",
@@ -87,7 +133,11 @@
   "x": -121.1,
   "z": 116.0,
   "heading": 88,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2192.jpg",
@@ -96,7 +146,11 @@
   "x": -123.9,
   "z": 105.8,
   "heading": 333,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2193.jpg",
@@ -105,7 +159,11 @@
   "x": -126.3,
   "z": 102.4,
   "heading": 17,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2194.jpg",
@@ -114,7 +172,11 @@
   "x": -126.6,
   "z": 102.0,
   "heading": 13,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2195.jpg",
@@ -123,16 +185,29 @@
   "x": -135.5,
   "z": 92.1,
   "heading": 51,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2196.jpg",
   "title": "IMG_2196",
-  "trust": "phone location",
-  "x": -151.0,
-  "z": 60.0,
+  "trust": "checked against photo content",
+  "x": -152.2,
+  "z": 59.1,
   "heading": 342,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Moved to IMG_2287's position (±3 m): both show the same brown door up tiled steps, plumbago and lamp post from almost the same spot.",
+  "accuracy": 3.0,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -151.0,
+   "z": 60.0,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2197.jpg",
@@ -141,7 +216,11 @@
   "x": -149.2,
   "z": 52.3,
   "heading": 58,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2198.jpg",
@@ -150,7 +229,11 @@
   "x": -145.5,
   "z": 49.8,
   "heading": 328,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.3,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2199.jpg",
@@ -159,7 +242,11 @@
   "x": -147.0,
   "z": 48.2,
   "heading": 359,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.4,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2200.jpg",
@@ -168,7 +255,11 @@
   "x": -147.2,
   "z": 47.6,
   "heading": 346,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.9,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2201.jpg",
@@ -177,7 +268,11 @@
   "x": -148.5,
   "z": 46.4,
   "heading": 328,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 7.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2202.jpg",
@@ -186,7 +281,11 @@
   "x": -154.9,
   "z": 35.3,
   "heading": 245,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.3,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2203.jpg",
@@ -195,7 +294,11 @@
   "x": -154.9,
   "z": 35.3,
   "heading": 59,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.3,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2204.jpg",
@@ -204,7 +307,11 @@
   "x": -169.9,
   "z": 32.2,
   "heading": 329,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.4,
+  "altitude": 9.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2205.jpg",
@@ -212,8 +319,12 @@
   "trust": "phone location",
   "x": -170.1,
   "z": 31.8,
-  "heading": 360,
-  "taken": "2026-10-11"
+  "heading": 0,
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 9.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2206.jpg",
@@ -222,7 +333,11 @@
   "x": -169.9,
   "z": 31.8,
   "heading": 301,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 9.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2207.jpg",
@@ -231,7 +346,11 @@
   "x": -169.1,
   "z": 31.5,
   "heading": 37,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 9.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2208.jpg",
@@ -240,7 +359,11 @@
   "x": -168.9,
   "z": 32.2,
   "heading": 306,
-  "taken": "2026-10-11"
+  "taken": "2026-10-11",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 10.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2214.jpg",
@@ -249,7 +372,11 @@
   "x": -154.9,
   "z": 44.8,
   "heading": 2,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 10.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2215.jpg",
@@ -258,7 +385,11 @@
   "x": -154.7,
   "z": 44.8,
   "heading": 45,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.5,
+  "altitude": 10.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2216.jpg",
@@ -267,7 +398,11 @@
   "x": -154.5,
   "z": 44.8,
   "heading": 112,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 10.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2217.jpg",
@@ -276,7 +411,11 @@
   "x": -154.9,
   "z": 45.8,
   "heading": 157,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.8,
+  "altitude": 10.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2218.jpg",
@@ -285,7 +424,11 @@
   "x": -155.2,
   "z": 46.4,
   "heading": 199,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 10.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2219.jpg",
@@ -294,7 +437,11 @@
   "x": -155.4,
   "z": 50.4,
   "heading": 347,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 11.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2220.jpg",
@@ -303,7 +450,11 @@
   "x": -155.7,
   "z": 51.0,
   "heading": 149,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 11.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2223.jpg",
@@ -312,7 +463,11 @@
   "x": 39.3,
   "z": 102.0,
   "heading": 109,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 5.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2224.jpg",
@@ -321,7 +476,11 @@
   "x": 63.2,
   "z": 130.5,
   "heading": 52,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 4.0,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2225.jpg",
@@ -330,7 +489,11 @@
   "x": 61.7,
   "z": 134.2,
   "heading": 266,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.3,
+  "altitude": 2.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2226.jpg",
@@ -339,7 +502,11 @@
   "x": 39.5,
   "z": 155.5,
   "heading": 315,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.0,
+  "altitude": 4.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2227.jpg",
@@ -348,7 +515,11 @@
   "x": 39.3,
   "z": 154.9,
   "heading": 272,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.5,
+  "altitude": 4.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2229.jpg",
@@ -357,7 +528,11 @@
   "x": -37.8,
   "z": 135.1,
   "heading": 222,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.8,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2230.jpg",
@@ -366,7 +541,11 @@
   "x": -39.8,
   "z": 137.3,
   "heading": 251,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.0,
+  "altitude": 5.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2231.jpg",
@@ -375,7 +554,11 @@
   "x": -41.5,
   "z": 137.9,
   "heading": 220,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2232.jpg",
@@ -384,7 +567,11 @@
   "x": -43.0,
   "z": 139.1,
   "heading": 176,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.7,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2233.jpg",
@@ -393,7 +580,11 @@
   "x": -46.5,
   "z": 141.0,
   "heading": 291,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.7,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2234.jpg",
@@ -402,7 +593,11 @@
   "x": -50.5,
   "z": 143.2,
   "heading": 240,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.1,
+  "altitude": 5.3,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2235.jpg",
@@ -411,7 +606,11 @@
   "x": -56.2,
   "z": 145.3,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 4.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2236.jpg",
@@ -420,7 +619,11 @@
   "x": -60.4,
   "z": 137.3,
   "heading": 345,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2237.jpg",
@@ -429,7 +632,11 @@
   "x": -62.4,
   "z": 134.2,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2238.jpg",
@@ -438,7 +645,11 @@
   "x": -66.9,
   "z": 128.6,
   "heading": 249,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 4.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2239.jpg",
@@ -447,7 +658,11 @@
   "x": -70.9,
   "z": 120.6,
   "heading": 353,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 6.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2240.jpg",
@@ -456,7 +671,11 @@
   "x": -77.1,
   "z": 111.3,
   "heading": 244,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 4.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2241.jpg",
@@ -465,7 +684,11 @@
   "x": -78.8,
   "z": 106.7,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 7.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2242.jpg",
@@ -474,7 +697,11 @@
   "x": -83.3,
   "z": 96.5,
   "heading": 249,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.7,
+  "altitude": 8.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2243.jpg",
@@ -483,7 +710,11 @@
   "x": -102.5,
   "z": 75.4,
   "heading": 243,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.5,
+  "altitude": 4.8,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2244.jpg",
@@ -492,7 +723,11 @@
   "x": -113.7,
   "z": 81.6,
   "heading": 232,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 5.0,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2245.jpg",
@@ -501,7 +736,11 @@
   "x": -119.4,
   "z": 94.3,
   "heading": 268,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 5.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2246.jpg",
@@ -510,7 +749,11 @@
   "x": -137.5,
   "z": 103.3,
   "heading": 35,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 7.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2247.jpg",
@@ -519,7 +762,11 @@
   "x": -137.0,
   "z": 103.3,
   "heading": 28,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 7.5,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2248.jpg",
@@ -528,7 +775,11 @@
   "x": -138.0,
   "z": 103.3,
   "heading": 237,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.3,
+  "altitude": 7.4,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2249.jpg",
@@ -537,7 +788,11 @@
   "x": -145.7,
   "z": 108.2,
   "heading": 330,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 7.6,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2250.jpg",
@@ -546,7 +801,11 @@
   "x": -146.5,
   "z": 107.0,
   "heading": 333,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.6,
+  "altitude": 6.1,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2251.jpg",
@@ -555,16 +814,29 @@
   "x": -149.5,
   "z": 107.0,
   "heading": 331,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.2,
+  "altitude": 8.2,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2252.jpg",
   "title": "IMG_2252",
-  "trust": "phone location",
-  "x": -161.2,
-  "z": 58.4,
+  "trust": "checked against photo content",
+  "x": -159.5,
+  "z": 61.3,
   "heading": 61,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Moved onto the Cervantes centreline: the photo is taken standing in the lane looking down its sloping strip; along-lane position still uncertain.",
+  "accuracy": 4.0,
+  "altitude": 7.3,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -161.2,
+   "z": 58.4,
+   "accuracy": 13.3
+  }
  },
  {
   "file": "IMG_2253.jpg",
@@ -573,54 +845,97 @@
   "x": -153.2,
   "z": 55.7,
   "heading": 141,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.1,
+  "altitude": 6.7,
+  "headingBasis": "EXIF true north"
  },
  {
   "file": "IMG_2254.jpg",
   "title": "IMG_2254",
-  "trust": "phone location",
-  "x": -154.9,
-  "z": 34.3,
+  "trust": "checked against photo content",
+  "x": -155.4,
+  "z": 39.0,
   "heading": 284,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Moved into the Elena covered walkway (registry part 6265201UF1366N_part5): the CALLE ELENA 18-30 plaque is on the walkway wall just inside its east mouth.",
+  "accuracy": 2.0,
+  "altitude": 8.2,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -154.9,
+   "z": 34.3,
+   "accuracy": 15.1
+  }
  },
  {
   "file": "IMG_2255.jpg",
   "title": "IMG_2255",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -152.2,
   "z": 39.9,
   "heading": 250,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Position confirmed by content: on Elena north at the mouth of the covered walkway, looking in.",
+  "accuracy": 3.0,
+  "altitude": 6.8,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -152.2,
+   "z": 39.9,
+   "accuracy": 11.0
+  }
  },
  {
   "file": "IMG_2256.jpg",
   "title": "IMG_2256",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -153.0,
   "z": 40.8,
   "heading": 237,
-  "taken": "2026-10-12"
+  "taken": "2026-10-12",
+  "locationBasis": "Position confirmed by content: on Elena north at the mouth of the covered walkway, looking in.",
+  "accuracy": 3.0,
+  "altitude": 7.3,
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -153.0,
+   "z": 40.8,
+   "accuracy": 11.3
+  }
  },
  {
   "file": "IMG_2260.jpg",
   "title": "IMG_2260",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -149.7,
   "z": 56.9,
   "heading": 158,
   "taken": "2026-10-12",
-  "accuracy": 11.8
+  "accuracy": 3.0,
+  "locationBasis": "Position confirmed by content: at the Cervantes/Elena junction, matching IMG_2263 (±4.1 m) a metre or two away.",
+  "gps": {
+   "x": -149.7,
+   "z": 56.9,
+   "accuracy": 11.8
+  }
  },
  {
   "file": "IMG_2261.jpg",
   "title": "IMG_2261",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -150.2,
   "z": 56.9,
   "heading": 167,
   "taken": "2026-10-12",
-  "accuracy": 10.2
+  "accuracy": 3.0,
+  "locationBasis": "Position confirmed by content: at the Cervantes/Elena junction, matching IMG_2263 (±4.1 m).",
+  "gps": {
+   "x": -150.2,
+   "z": 56.9,
+   "accuracy": 10.2
+  }
  },
  {
   "file": "IMG_2262.jpg",
@@ -667,12 +982,18 @@
  {
   "file": "IMG_2266.jpg",
   "title": "IMG_2266",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -184.8,
   "z": 76.4,
   "heading": 243,
   "taken": "2026-10-12",
-  "accuracy": 14.0
+  "accuracy": 4.0,
+  "locationBasis": "Position confirmed by content: at the west end of Cervantes looking across to the Dalí side, matching IMG_2289 (±3 m).",
+  "gps": {
+   "x": -184.8,
+   "z": 76.4,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2267.jpg",
@@ -877,18 +1198,23 @@
  {
   "file": "IMG_2286.jpg",
   "title": "Elena junction: side-by-side ramp and steps",
-  "trust": "phone location",
-  "x": -154.2,
-  "z": 54.4,
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 14.0,
+  "trust": "checked against photo content",
+  "x": -151.0,
+  "z": 56.2,
+  "locationBasis": "Moved to the lane about 1.6 m below the ramp drain: the photo looks straight up the ramp and steps with the drain at its foot (cf. IMG_2355, IMG_2328).",
+  "accuracy": 1.5,
   "heading": 245,
   "headingBasis": "EXIF true north",
   "taken": "2026-10-13",
   "observation": "Close view of a terracotta approach with a smooth sloping strip beside a flight of shallow steps, low white edging, and a transverse drain at the foot. Clipped hedge, blue flowers and a partially visible Elena plaque identify the junction. The separate steps are visible evidence not yet matched to detailed game geometry.",
   "originalUrl": "https://drive.google.com/file/d/1ktD9QhybOfgC_l0TDhiww-k5IIM0ueKg/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
-  "streetHint": "elena-north"
+  "streetHint": "elena-north",
+  "gps": {
+   "x": -154.2,
+   "z": 54.4,
+   "accuracy": 14.0
+  }
  },
  {
   "file": "IMG_2287.jpg",
@@ -1103,5 +1429,661 @@
   "originalUrl": "https://drive.google.com/file/d/1R76UK5F9UUkmC-pmJIdzi2scUz94dVyQ/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
   "areaHint": "area:beach"
+ },
+ {
+  "file": "IMG_2327.jpg",
+  "title": "Cervantes at Elena: steps up to a door beside the lane",
+  "trust": "phone location",
+  "x": -150.5,
+  "z": 56.0,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.2,
+  "altitude": 6.8,
+  "heading": 264,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking west up Cervantes from the Elena junction. On the right two red-tread steps with white sides climb to a brown timber door between a plumbago hedge and bougainvillea; the lane beyond shows the ramp strip and the steps beside it, a drain across the foot and service covers in the tiles.",
+  "originalUrl": "https://drive.google.com/file/d/1aaT74LlpLoCuTv5iEZZaVZQFV0JbFjVP/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2328.jpg",
+  "title": "Cervantes at Elena: ramp and steps side by side, drain at the foot",
+  "trust": "phone location",
+  "x": -150.5,
+  "z": 56.0,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.0,
+  "altitude": 6.8,
+  "heading": 252,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking west-south-west up Cervantes: the smooth ramp strip on the left, the white-edged steps on the right, one drain grate right across the lane at the foot, white kerbs and clipped hedges both sides, a door step on the far right. Confirms the split ramp/steps built from IMG_2286.",
+  "originalUrl": "https://drive.google.com/file/d/1PgdYRu3cBjdTC7IRKLMH9cNckHF-Y4OA/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2329.jpg",
+  "title": "Cervantes/Elena junction: lawn with a pollarded tree and white kerb",
+  "trust": "phone location",
+  "x": -152.5,
+  "z": 56.9,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.6,
+  "altitude": 6.3,
+  "heading": 199,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking south-south-west across the junction: a small lawn edged by a low rounded white kerb, a pollarded tree with a round head, a manhole cover in the grass, terracotta paving round it, and two-storey houses with bougainvillea and balconies behind.",
+  "originalUrl": "https://drive.google.com/file/d/1eH-EBQBGaSzMGDbcfPUc-DupR-1N2EVO/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2330.jpg",
+  "title": "Calle Elena south from the junction, towards the middle pool",
+  "trust": "phone location",
+  "x": -152.2,
+  "z": 56.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.4,
+  "altitude": 6.3,
+  "heading": 169,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking south along Elena south: a straight square-tiled lane between a hedge and planting on the left and a lawn on the right, white low kerb, pollarded trees, a palm and white terraces at the far end.",
+  "originalUrl": "https://drive.google.com/file/d/1JzEI1BeVCRQI0sxbsWJDt8TOckUmLqIY/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-south"
+ },
+ {
+  "file": "IMG_2331.jpg",
+  "title": "Middle pool north: crazy-paving path opening onto the lawn and pool",
+  "trust": "phone location",
+  "x": -134.6,
+  "z": 76.7,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 17.3,
+  "altitude": 6.6,
+  "heading": 135,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Crazy-paving path between a hedge and a white wall, widening into a lawn wedge, with the pool and its glass fence beyond; a black iron gate at the right edge. GPS ±17 m, so the pin is only a rough guide.",
+  "originalUrl": "https://drive.google.com/file/d/1RobV_d5Hdf5y0TKrgj442ku3i5C7aX1y/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "middle-pool"
+ },
+ {
+  "file": "IMG_2332.jpg",
+  "title": "Middle pool west side: path between the deck and a raised planter wall",
+  "trust": "phone location",
+  "x": -135.1,
+  "z": 90.9,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 14.0,
+  "altitude": 6.8,
+  "heading": 347,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking north-north-west along the middle pool. A grey-brown crazy-paving path with a drain cover runs between the cream pool deck (behind the glass fence) and a raised white planter wall about 0.8 m high topped by a dense hedge with red flowers. Beyond: a lawn inside the glass fence, a white garden wall with a brown arched-top door, a small pergola entrance, clipped hedges and two-storey white houses with bougainvillea. GPS ±14 m, so the pin alone does not fix which lobe.",
+  "originalUrl": "https://drive.google.com/file/d/1KwI5Jbq64mdQOeLCbWBBAFY_9Mpvjfz4/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "middle-pool"
+ },
+ {
+  "file": "IMG_2333.jpg",
+  "title": "Middle pool south-west: stone steps up a tiled path to a gate",
+  "trust": "phone location",
+  "x": -133.8,
+  "z": 99.3,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.0,
+  "altitude": 6.7,
+  "heading": 215,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "A terracotta-tiled path with three rough stone steps climbing between a tall hedge and a raised white wall, to a white gateway with bougainvillea at the top. A change of level leaving the middle pool courtyard.",
+  "originalUrl": "https://drive.google.com/file/d/10r6n37AuNf2eqJPkx2ssURMPJ5apo3zy/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "middle-pool"
+ },
+ {
+  "file": "IMG_2334.jpg",
+  "title": "Middle pool south: iron gate in a pergola frame onto a lane",
+  "trust": "phone location",
+  "x": -126.1,
+  "z": 102.0,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 6.5,
+  "heading": 162,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking south through a black iron double gate under a curved metal pergola frame: crazy paving with a drain grate, a raised white planter with shrubs on the right with a white step, a tiled lane beyond between white walls and planting.",
+  "originalUrl": "https://drive.google.com/file/d/1aMUPv4G01OMZqkfEOyJio7IB-crl0irZ/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "middle-pool"
+ },
+ {
+  "file": "IMG_2335.jpg",
+  "title": "Middle pool south: raised white planter with a blue tile panel",
+  "trust": "phone location",
+  "x": -125.6,
+  "z": 103.3,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 6.3,
+  "heading": 189,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Close view of a raised white rendered planter and wall with a framed panel of blue-and-white tiles, a white step in front and climbers above. Detail for the courtyard walls.",
+  "originalUrl": "https://drive.google.com/file/d/1mj-khvMz4GfDmiiVUayMH1ygwcnkR3UQ/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "middle-pool"
+ },
+ {
+  "file": "IMG_2336.jpg",
+  "title": "Calle Eva east of the middle pool: tiled path between lawns",
+  "trust": "phone location",
+  "x": -110.4,
+  "z": 79.8,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.3,
+  "altitude": 6.1,
+  "heading": 57,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking north-east along a square-tiled path between two lawns, with round-headed trees, black lamp posts, low hedges and white terraces beyond.",
+  "originalUrl": "https://drive.google.com/file/d/1y3H8hY8Yybk2NYjRhDFz5GtzrZEf2qxl/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "eva"
+ },
+ {
+  "file": "IMG_2337.jpg",
+  "title": "Calle Eva east of the middle pool: lawn, round trees, lamp",
+  "trust": "phone location",
+  "x": -110.2,
+  "z": 78.9,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.2,
+  "altitude": 6.0,
+  "heading": 38,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Similar view looking north-north-east: a lawn with a round-headed tree, bougainvillea on a white garden wall with brown doors, a black lamp post and the tiled path at the right edge.",
+  "originalUrl": "https://drive.google.com/file/d/1jquMZ7GN-EjjOz56fS0xskh5qU1Uva7V/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "eva"
+ },
+ {
+  "file": "IMG_2338.jpg",
+  "title": "Calle Eva: brown door, yellow-flowered shrub, lawn",
+  "trust": "phone location",
+  "x": -111.2,
+  "z": 76.7,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.6,
+  "altitude": 6.1,
+  "heading": 333,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "A brown timber door with a house-number plaque, a yellow-flowered shrub (St John's wort-like) beside it, a lawn and a pink-tiled path edge.",
+  "originalUrl": "https://drive.google.com/file/d/1l1ZY8s66AZ1TilPdSh5rEe_tSmDiuZaK/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "eva"
+ },
+ {
+  "file": "IMG_2339.jpg",
+  "title": "Calle Eva: walled lawn corner with espaliered bougainvillea",
+  "trust": "phone location",
+  "x": -111.4,
+  "z": 77.3,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.9,
+  "altitude": 5.9,
+  "heading": 273,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "A small lawn in the corner of two white garden walls, with bougainvillea trained flat along both walls, a green bollard light and a clipped shrub at the front. Square terracotta tiles with a grey border run along the near edge. Useful for wall planting and the bollard light.",
+  "originalUrl": "https://drive.google.com/file/d/1TOm6XQK_ftYnGPKXTPnxalTP0MW1tDdr/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "eva"
+ },
+ {
+  "file": "IMG_2340.jpg",
+  "title": "Calle Eva: east gateway into the middle pool courtyard",
+  "trust": "phone location",
+  "x": -112.7,
+  "z": 78.2,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 5.9,
+  "heading": 228,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "A white gateway with square piers and a gently curved coping over a flat head, an open black iron gate, and a terracotta path with a drain leading through to the middle pool (glass fence, bird-of-paradise, hedges). A Comunidad Villacana notice and two blue dog-rule signs are on the right pier; white walls with planting run either side. Matches the gate seen from inside in IMG_2244.",
+  "originalUrl": "https://drive.google.com/file/d/1lgeErR2x4OEcK6WOLIdHNuFPitdrihkW/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "eva"
+ },
+ {
+  "file": "IMG_2341.jpg",
+  "title": "Curved low white wall with hedge, crazy paving and trees",
+  "trust": "phone location",
+  "x": -117.6,
+  "z": 84.4,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 47.5,
+  "altitude": 5.8,
+  "heading": 286,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "A curving low white wall topped by a clipped hedge beside crazy paving, with trees, garden tables and white terraces behind. GPS ±47 m: the place is not established from the pin; probably the middle pool courtyard.",
+  "originalUrl": "https://drive.google.com/file/d/1miiQz8L10Xx5t54Or6zPcpDfucYnTzWI/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "middle-pool"
+ },
+ {
+  "file": "IMG_2342.jpg",
+  "title": "Cervantes/Elena junction: lawn corner with pollarded tree and drain",
+  "trust": "checked against photo content",
+  "x": -150.7,
+  "z": 56.9,
+  "locationBasis": "Position confirmed by content: at the junction lawn corner, matching IMG_2329 (±3.6 m).",
+  "accuracy": 3.0,
+  "altitude": 7.3,
+  "heading": 200,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "The junction lawn from another angle: white rounded kerb, pollarded tree, manhole, terracotta paving with a drain grate in the foreground, bougainvillea on the houses. GPS ±14 m.",
+  "originalUrl": "https://drive.google.com/file/d/1cVYH19h4y5RApfeK5OZnMFOg4JZH2xUe/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes",
+  "gps": {
+   "x": -150.7,
+   "z": 56.9,
+   "accuracy": 14.0
+  }
+ },
+ {
+  "file": "IMG_2345.jpg",
+  "title": "Pintor Picasso: service road, utility sheds and bins",
+  "trust": "phone location",
+  "x": -14.4,
+  "z": 48.2,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 5.5,
+  "altitude": 8.1,
+  "heading": 318,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking north-west up the asphalt service road off Calle Pintor Picasso. Left: a dark slatted fence, then low white utility sheds with brown doors and a meter box, then a long plain white boundary wall. Right: a low white building on a rough stone plinth with black tubular railings and a short concrete ramp, green and grey recycling bins, and large plane trees. Palms and the mountains beyond.",
+  "originalUrl": "https://drive.google.com/file/d/1erDqbTnA6AY154GoieIxUfI8mvb5lecH/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "picasso"
+ },
+ {
+  "file": "IMG_2346.jpg",
+  "title": "Barraka Beach sign, thatched parasols and boardwalk",
+  "trust": "checked against photo content",
+  "x": 35.6,
+  "z": 95.2,
+  "locationBasis": "Position confirmed by content: same Barraka Beach sign scene as IMG_2347 (±4.2 m), 1.3 m away.",
+  "accuracy": 4.2,
+  "altitude": 5.6,
+  "heading": 108,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "On the sand by the restaurant: a white planter painted BARRAKA BEACH with shrubs, thatched parasols and loungers, a timber boardwalk across the sand, the sea behind.",
+  "originalUrl": "https://drive.google.com/file/d/1uZX4ixz0rYBGp-qL1nFeh77ItS_bTBhh/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:barraka",
+  "gps": {
+   "x": 35.6,
+   "z": 95.2,
+   "accuracy": 14.0
+  }
+ },
+ {
+  "file": "IMG_2347.jpg",
+  "title": "Barraka Beach sign and boardwalk to the beach",
+  "trust": "phone location",
+  "x": 35.3,
+  "z": 96.5,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.2,
+  "altitude": 5.5,
+  "heading": 125,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "A second view along the timber boardwalk past the BARRAKA BEACH planter towards the parasols and sea, with potted plants on the right.",
+  "originalUrl": "https://drive.google.com/file/d/1ltk9Ij2tLsPTQS6Klg5SYfqVSLBDOGyc/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:barraka"
+ },
+ {
+  "file": "IMG_2349.jpg",
+  "title": "From the paseo: sandstone retaining wall and fence below the south pool",
+  "trust": "phone location",
+  "x": -77.6,
+  "z": 201.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.3,
+  "altitude": 6.7,
+  "heading": 331,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking north-north-west from the paseo at the yellow sandstone retaining wall with a green mesh fence on top and a clipped hedge behind; the south pool area (pool, glass fence, white terraces) stands above it.",
+  "originalUrl": "https://drive.google.com/file/d/1TaSdYCiNW5AeeWFJMytK_TW-2kHQxNJh/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:paseo"
+ },
+ {
+  "file": "IMG_2350.jpg",
+  "title": "Paseo looking north-east: stamped walk, sandstone retaining wall",
+  "trust": "phone location",
+  "x": -77.3,
+  "z": 201.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.5,
+  "altitude": 6.4,
+  "heading": 48,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "The seafront promenade: pink-red stamped concrete about 3 m wide with a timber edge onto a strip of sandy, stony beach. On the landward side a yellow sandstone retaining wall about 1.2 m high carries a green mesh fence, with the white seafront houses (round tower with a tiled roof, balconies) standing above it. Slim white lamp posts, palms, the Barraka restaurant and the mountains in the distance. Shows the resort ground standing above the paseo here.",
+  "originalUrl": "https://drive.google.com/file/d/1lrCUJLmefu5MqtqXn6XVFV5QjUkl6U4q/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:paseo"
+ },
+ {
+  "file": "IMG_2351.jpg",
+  "title": "Paseo looking south: stamped walk, timber edge, beach and sea",
+  "trust": "phone location",
+  "x": -87.3,
+  "z": 214.3,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 6.1,
+  "heading": 172,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking south from the paseo over its pink stamped concrete and timber edge to the sandy, stony beach and the sea, a kite-surfer offshore.",
+  "originalUrl": "https://drive.google.com/file/d/1Iyt_MH5Ft5LimWBXU8ia8-Y7ORZ1m-8D/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:paseo"
+ },
+ {
+  "file": "IMG_2352.jpg",
+  "title": "Paseo looking west: sandstone wall, mesh fence, lamp posts",
+  "trust": "phone location",
+  "x": -91.0,
+  "z": 217.4,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 6.5,
+  "heading": 252,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking west-south-west along the paseo: the sandstone retaining wall and green mesh fence on the right, slim white lamp posts, palms, beach scrub on the left.",
+  "originalUrl": "https://drive.google.com/file/d/1yWEFOMwfCz4M1Zvhlfz7sjlzLKZonQMP/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:paseo"
+ },
+ {
+  "file": "IMG_2354.jpg",
+  "title": "Paseo curving north-east beside the sandstone wall",
+  "trust": "phone location",
+  "x": -110.4,
+  "z": 226.0,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.4,
+  "altitude": 7.7,
+  "heading": 55,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "The paseo curving north-east with the sandstone retaining wall and green mesh fence on the left, a service cover in the stamped surface, the timber edge on the right.",
+  "originalUrl": "https://drive.google.com/file/d/1Yb9cht0iNnuG0QxSUhKq1PJFFYDXFepH/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "areaHint": "area:paseo"
+ },
+ {
+  "file": "IMG_2355.jpg",
+  "title": "Cervantes/Elena steps from the junction",
+  "trust": "phone location",
+  "x": -154.5,
+  "z": 53.5,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.4,
+  "altitude": 8.6,
+  "heading": 264,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Close view of the three steps beside the ramp: white riser faces, terracotta treads with grey edges, the white wall and hedge on the right, the drain grate across the foot. Confirms the step arrangement built from IMG_2286.",
+  "originalUrl": "https://drive.google.com/file/d/1U1sKV7R28j0VPrrfwlRvrzp6uTjik7Fr/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2356.jpg",
+  "title": "Cervantes east of Elena: lane beside a plumbago hedge",
+  "trust": "phone location",
+  "x": -152.7,
+  "z": 52.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.5,
+  "altitude": 8.7,
+  "heading": 39,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking north-east along Cervantes east of the Elena junction: a square-tiled lane with a low white kerb wall, a tall plumbago and shrub hedge on the left, patches of sun through trees.",
+  "originalUrl": "https://drive.google.com/file/d/1LXG5DLGjL6Mt4AXG10HTYHp7-YQZnALg/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2358.jpg",
+  "title": "Roof by Elena: looking down on Elena south and the junction lawns",
+  "trust": "phone location",
+  "x": -155.7,
+  "z": 50.1,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.0,
+  "altitude": 10.2,
+  "heading": 150,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "From a roof terrace looking south-south-east: the Elena south lane, small lawns with round clipped shrubs, private patios with walls, a brown door and a lamp post. Overhead layout of the junction's south side.",
+  "originalUrl": "https://drive.google.com/file/d/18NPgixt9HrJeDQLdc8EOTgjhCk21GGBT/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-south"
+ },
+ {
+  "file": "IMG_2359.jpg",
+  "title": "Roof by Elena: over barrel tiles to the Cervantes patios",
+  "trust": "phone location",
+  "x": -155.7,
+  "z": 50.1,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.4,
+  "altitude": 10.6,
+  "heading": 218,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "From the roof looking south-west over a barrel-tile roof: white walls, private patios with bougainvillea and shrubs, a parasol, and the lawns along Cervantes.",
+  "originalUrl": "https://drive.google.com/file/d/1EQjWW2KEsYDoxzy6rLYYlJh9Z-yQubyT/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2360.jpg",
+  "title": "Roof by Elena: looking east-north-east along Cervantes",
+  "trust": "phone location",
+  "x": -155.7,
+  "z": 50.1,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 2.8,
+  "altitude": 10.7,
+  "heading": 73,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "From a roof terrace beside Calle Elena, looking roughly along the line of Cervantes. Below: courtyard walls with magenta bougainvillea, a patio with a timber pergola, arched first-floor windows, a wooden balcony under a small barrel-tile roof and iron balconies. Beyond: flat roofs with solar panels, the long apartment block, a tall palm and the sea at the right. Camera on a roof, so the pin sits inside a registry building.",
+  "originalUrl": "https://drive.google.com/file/d/1seE7lnED0do-4UC2-NhefdPNrAnqayEA/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2361.jpg",
+  "title": "Roof by Elena: looking down into a gated tiled entry",
+  "trust": "phone location",
+  "x": -161.7,
+  "z": 42.1,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.6,
+  "altitude": 9.2,
+  "heading": 236,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking south-west down over barrel roof tiles into a narrow entry between two-storey houses: patterned terracotta floor tiles, a pair of black iron gates in a white gateway topped with bougainvillea, a small first-floor balcony and an arched opening with lantern beyond. Gives the width and enclosure of the entry from above; dimensions are not measured. Camera on the roof of the covered-passage building (registry part 6265201UF1366N_part5).",
+  "originalUrl": "https://drive.google.com/file/d/1ZvbBNNna5Jt1O1j0q3NdKA5zns9arwba/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-north"
+ },
+ {
+  "file": "IMG_2362.jpg",
+  "title": "Roof by Elena: looking east-south-east over the terraces to the sea",
+  "trust": "phone location",
+  "x": -155.2,
+  "z": 36.5,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 10.8,
+  "heading": 107,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Over lichen-mottled barrel roof tiles and a tall magnolia-like hedge: a wooden balcony with a tiled canopy, iron balconies with arched shuttered doors, flat roofs with solar panels and chimneys, a Norfolk pine, palms, and the sea on the horizon. Good for roofscape and facade detail.",
+  "originalUrl": "https://drive.google.com/file/d/1x8MfGmHi_e1rI95YY9tMK-7lt3KVWUxu/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-north"
+ },
+ {
+  "file": "IMG_2363.jpg",
+  "title": "Roof by Elena: looking down the lane to the north pool lawn gate",
+  "trust": "phone location",
+  "x": -155.9,
+  "z": 33.1,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 11.6,
+  "heading": 343,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking almost straight down from a roof edge, north-north-west: a narrow square-tiled terracotta lane between white walls with a planted strip, private patios behind low walls with brown doors, and an arched white garden gateway with bougainvillea that opens onto crazy paving and the north pool lawn (bollard lights, palm, tree). Shows how the Elena north lane meets the north pool courtyard.",
+  "originalUrl": "https://drive.google.com/file/d/1ynufkQ9UxBR_MwF8fvJc4Kdlnasmsdxx/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-north"
+ },
+ {
+  "file": "IMG_2364.jpg",
+  "title": "Roof by Elena: barrel-tile lean-to over a magnolia bed",
+  "trust": "phone location",
+  "x": -156.2,
+  "z": 33.4,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.7,
+  "altitude": 11.6,
+  "heading": 137,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "From a roof edge looking south-east: a mono-pitch roof of lichen-mottled barrel tiles drops beside a tall dense magnolia-like shrub. Beyond: a two-storey white front with arched shuttered windows, a small barrel-tile canopy over a balcony and magenta bougainvillea.",
+  "originalUrl": "https://drive.google.com/file/d/1jhrq_GRFfbAq93WMgebeNPGvVsevTTLo/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-north"
+ },
+ {
+  "file": "IMG_2365.jpg",
+  "title": "Roof by Elena: looking down on the Elena north lane and its planted bed",
+  "trust": "phone location",
+  "x": -152.5,
+  "z": 38.3,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.3,
+  "altitude": 13.1,
+  "heading": 148,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Almost straight down onto Calle Elena north, looking south-south-east: a straight square-tiled terracotta lane about 1.5 m wide with a narrow white edging kerb. On its left a raised planting bed of tall magnolia-like shrubs edged with strap-leaved plants, ending in a small bed boxed by a clipped hedge. On its right white house walls, a white sill/bench and a first-floor balcony with an iron rail. The lane turns right at the far end by bougainvillea.",
+  "originalUrl": "https://drive.google.com/file/d/1sBf-_QaL7eD_c-o1bKzOjohaVpfYA5_1/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-north"
+ },
+ {
+  "file": "IMG_2366.jpg",
+  "title": "Roof by Elena: patios east of the Elena beds",
+  "trust": "phone location",
+  "x": -152.2,
+  "z": 47.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.9,
+  "altitude": 11.9,
+  "heading": 75,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking down east-north-east from a roof: private patios behind white walls with bougainvillea, a timber pergola, outdoor furniture, and the tops of the magnolia shrubs. The east-side patios beyond the Elena beds.",
+  "originalUrl": "https://drive.google.com/file/d/1bzdX_yWG-FOO-qUD4D33PGqoEM8-jHE-/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "elena-north"
+ },
+ {
+  "file": "IMG_2367.jpg",
+  "title": "Roof by Elena: looking south over the Cervantes/Elena junction",
+  "trust": "phone location",
+  "x": -152.7,
+  "z": 47.9,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 3.9,
+  "altitude": 11.6,
+  "heading": 170,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "From the roof looking south: the junction lawns with round shrubs and the Elena south lane, patio walls with bougainvillea and parasols in the foreground.",
+  "originalUrl": "https://drive.google.com/file/d/13dhNZCHe8qH_x5SeWsDVvjkVNhffSAs0/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2368.jpg",
+  "title": "Roof by Elena: patios and terraces south-west, along Cervantes",
+  "trust": "phone location",
+  "x": -153.0,
+  "z": 47.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.1,
+  "altitude": 12.6,
+  "heading": 228,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Looking south-west from the roof over walled patios with trees, parasols and bougainvillea to the two-storey terraces along Cervantes and the tall trees on Dalí.",
+  "originalUrl": "https://drive.google.com/file/d/1SEDbWVc87IY_LOXjO11RA_CqrCfBXijF/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
+ },
+ {
+  "file": "IMG_2369.jpg",
+  "title": "Roof by Elena: patios and terraces south-west (second shot)",
+  "trust": "phone location",
+  "x": -153.0,
+  "z": 47.6,
+  "locationBasis": "Original phone GPS; camera position retained without snapping",
+  "accuracy": 4.1,
+  "altitude": 12.6,
+  "heading": 224,
+  "headingBasis": "EXIF true north",
+  "taken": "2026-10-14",
+  "observation": "Same view as IMG_2368, slightly to the left.",
+  "originalUrl": "https://drive.google.com/file/d/1SllhEM6x1HxfDJYIj3NUVBjcaClQ9NuB/view?usp=drivesdk",
+  "visualReview": "observed; geometry comparison pending",
+  "streetHint": "cervantes"
  }
 ]

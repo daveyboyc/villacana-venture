@@ -1,0 +1,424 @@
+{
+ "about": "The fixed list of Villacana areas. Every reference photo, map and doc is tagged against these ids, and scripts/build_references.py writes one brief per area in refs/areas/. 'match' auto-tags a phone photo from where the camera stood (street ids from public/map/skeleton.json, pool ids, seafront parts, and a radius in metres round a point). Camera position is only a first guess: a photo's 'shows' tags in data/reference_tags.json override it.",
+ "areas": [
+  {
+   "id": "north-pool",
+   "name": "North pool",
+   "summary": "The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden walls and the terraces round it.",
+   "match": {
+    "pools": [
+     "north"
+    ],
+    "radius": 30
+   },
+   "docs": [],
+   "data": [
+    "data/objects.json"
+   ],
+   "src": [
+    "src/world.ts",
+    "src/water.ts"
+   ],
+   "notes": [
+    "Dave (2026-10-11): the lawn is bigger than the first pass showed, and the houses have front porches.",
+    "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
+    "Best single reference: villacana-reference/photos/07 (whole courtyard looking north)."
+   ]
+  },
+  {
+   "id": "middle-pool",
+   "name": "Middle pool",
+   "summary": "The clover-shaped middle pool courtyard, entered through arched white gateways off tiled lanes.",
+   "match": {
+    "pools": [
+     "middle"
+    ],
+    "radius": 28
+   },
+   "docs": [
+    "docs/MIDDLE_POOL.md"
+   ],
+   "data": [
+    "data/middle_pool.json",
+    "data/objects.json"
+   ],
+   "src": [
+    "src/middle-pool.ts",
+    "src/world.ts",
+    "src/water.ts"
+   ],
+   "notes": [
+    "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
+    "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
+    "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
+    "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.",
+    "Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.",
+    "Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south-west steps and gateway (IMG_2333), the south pergola gate (IMG_2334)."
+   ]
+  },
+  {
+   "id": "south-pool",
+   "name": "South pool",
+   "summary": "The clover-shaped south pool, its lawn, the date palm and the low seaward wall.",
+   "match": {
+    "pools": [
+     "south"
+    ],
+    "radius": 30
+   },
+   "docs": [
+    "docs/SOUTH_POOL.md",
+    "docs/HANDOVER_SOUTH_POOL.md"
+   ],
+   "data": [
+    "data/south_pool.json",
+    "proposals/south-pool.json"
+   ],
+   "src": [
+    "src/south-pool.ts"
+   ]
+  },
+  {
+   "id": "main-pool",
+   "name": "Main pool",
+   "summary": "The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's and its steps, 90 Miles.",
+   "match": {
+    "pools": [
+     "main",
+     "toddler"
+    ],
+    "radius": 40,
+    "points": [
+     [
+      -41.92,
+      78.3,
+      15
+     ],
+     [
+      -26.57,
+      64.14,
+      12
+     ]
+    ]
+   },
+   "docs": [
+    "docs/MAIN_POOL.md"
+   ],
+   "data": [
+    "data/main_pool.json"
+   ],
+   "src": [
+    "src/main-pool.ts",
+    "src/pool-levels.ts"
+   ],
+   "notes": [
+    "Villacana has one large main pool with a round toddler pool beside it (Dave, 2026-10-11)."
+   ]
+  },
+  {
+   "id": "elena",
+   "name": "Calle Elena",
+   "summary": "Calle Elena, north and south sections, from the north pool to the middle pool, including the ramp and steps at its junction with Cervantes.",
+   "match": {
+    "streets": [
+     "elena-north",
+     "elena-south"
+    ]
+   },
+   "docs": [
+    "docs/ELENA_NORTH.md",
+    "docs/STREET_LAYOUT.md",
+    "docs/TERRAIN.md"
+   ],
+   "data": [
+    "data/elena_north.json",
+    "data/cervantes_elena_steps.json",
+    "data/street_layout.json",
+    "proposals/calle-elena.json",
+    "data/terrain.json"
+   ],
+   "src": [
+    "src/elena-north.ts",
+    "src/ramp-steps.ts",
+    "src/terrain.ts",
+    "src/layout-routes.ts"
+   ],
+   "notes": [
+    "IMG_2254 shows the sign CALLE ELENA 18-30.",
+    "Built 2026-10-14 (docs/ELENA_NORTH.md): arched gateway to the north pool lawn, east patio wall, west planting strip, magnolia bed, two hedged beds with pollarded trees, two planter boxes, and the three steps beside the Cervantes ramp.",
+    "The Cervantes/Elena rise is 0.5 m over about 3 m (steps beside a ramp, IMG_2286), not 7 m.",
+    "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds, the gated entry west of the covered walkway (IMG_2361).",
+    "IMG_2286 GPS is ±14 m: do not place geometry from its pin alone.",
+    "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios."
+   ]
+  },
+  {
+   "id": "cervantes",
+   "name": "Calle Miguel de Cervantes",
+   "summary": "Cervantes, the straight tiled lane across the block from Pintor Dalí to the Picasso car-park access, its ramp, patio walls and covered passages.",
+   "match": {
+    "streets": [
+     "cervantes"
+    ]
+   },
+   "docs": [
+    "docs/DALI_CERVANTES.md",
+    "docs/STREET_LAYOUT.md",
+    "docs/FRONTAGE_DIVISIONS.md",
+    "docs/ELENA_NORTH.md"
+   ],
+   "data": [
+    "data/dali_cervantes.json",
+    "data/dali_cervantes_threshold.json",
+    "data/cervantes_patio_walls.json",
+    "data/passages.json",
+    "data/frontage_divisions.json",
+    "data/cervantes_elena_steps.json"
+   ],
+   "src": [
+    "src/cervantes-walls.ts",
+    "src/dali-threshold.ts",
+    "src/frontages.ts",
+    "src/ramp-steps.ts"
+   ],
+   "notes": [
+    "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
+    "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
+    "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.",
+    "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena."
+   ]
+  },
+  {
+   "id": "dali",
+   "name": "Calle Pintor Dalí",
+   "summary": "Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward turning area and the coastal gate to the paseo.",
+   "match": {
+    "streets": [
+     "dali"
+    ],
+    "parking": [
+     "Dalí car park"
+    ]
+   },
+   "docs": [
+    "docs/DALI_CERVANTES.md",
+    "docs/LAYOUT_ACCURACY.md"
+   ],
+   "data": [
+    "data/dali_cervantes.json",
+    "data/dali_photo_reference.json",
+    "data/coastal_gate.json"
+   ],
+   "src": [
+    "src/coastal-gate.ts",
+    "src/dali-threshold.ts"
+   ],
+   "notes": [
+    "The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.",
+    "IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign."
+   ]
+  },
+  {
+   "id": "picasso",
+   "name": "Pintor Picasso and the car park",
+   "summary": "Calle Pintor Picasso, the inner car-park access aisle and the Picasso car park.",
+   "match": {
+    "streets": [
+     "picasso",
+     "picasso-access"
+    ],
+    "parking": [
+     "Picasso car park"
+    ]
+   },
+   "docs": [
+    "docs/STREET_LAYOUT.md"
+   ],
+   "data": [
+    "data/street_layout.json"
+   ],
+   "src": []
+  },
+  {
+   "id": "north-lanes",
+   "name": "Loira, Bolivia, Alberto and Isabel",
+   "summary": "The northern boundary roads and the lanes round the north pool's upper side.",
+   "match": {
+    "streets": [
+     "loira",
+     "bolivia",
+     "alberto",
+     "isabel"
+    ]
+   },
+   "docs": [
+    "docs/STREET_LAYOUT.md"
+   ],
+   "data": [
+    "data/street_layout.json"
+   ],
+   "src": []
+  },
+  {
+   "id": "eva",
+   "name": "Calle Eva",
+   "summary": "Calle Eva round the middle pool, and its west-side footpath to Patricia.",
+   "match": {
+    "streets": [
+     "eva",
+     "eva-west-footpath"
+    ]
+   },
+   "docs": [
+    "docs/STREET_LAYOUT.md",
+    "docs/MIDDLE_POOL.md"
+   ],
+   "data": [
+    "data/street_layout.json",
+    "data/middle_pool.json"
+   ],
+   "src": [
+    "src/middle-pool.ts"
+   ],
+   "notes": [
+    "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.",
+    "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m."
+   ]
+  },
+  {
+   "id": "seaward-lanes",
+   "name": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo",
+   "summary": "The lanes between the middle pool and the beach.",
+   "match": {
+    "streets": [
+     "patricia",
+     "silvia-north",
+     "silvia-south",
+     "jorge",
+     "teodoro-rojo",
+     "guillermo"
+    ]
+   },
+   "docs": [
+    "docs/STREET_LAYOUT.md"
+   ],
+   "data": [
+    "data/street_layout.json"
+   ],
+   "src": []
+  },
+  {
+   "id": "barraka-beach",
+   "name": "Barraka and the beach",
+   "summary": "The beach in front of Villacana, the Barraka beach restaurant and the sea.",
+   "match": {
+    "seafront": [
+     "beach",
+     "restaurant",
+     "sea"
+    ]
+   },
+   "docs": [
+    "docs/SEAFRONT.md"
+   ],
+   "data": [],
+   "src": [
+    "src/seafront.ts",
+    "src/seaside.ts"
+   ],
+   "notes": [
+    "The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).",
+    "IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed.",
+    "IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand."
+   ]
+  },
+  {
+   "id": "paseo",
+   "name": "The paseo",
+   "summary": "The seafront promenade between the resort's seaward walls and the beach.",
+   "match": {
+    "seafront": [
+     "paseo"
+    ]
+   },
+   "docs": [
+    "docs/SEAFRONT.md"
+   ],
+   "data": [
+    "data/coastal_gate.json",
+    "data/paseo_wall.json"
+   ],
+   "src": [
+    "src/seafront.ts",
+    "src/seaside.ts",
+    "src/paseo-wall.ts"
+   ],
+   "notes": [
+    "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall with a green mesh fence on top holds the seafront houses above it. Built 14 October (data/paseo_wall.json, docs/SEAFRONT.md): about 134 m from the Dalí apron to the end of Calle Guillermo, about 1 m high by the south lawn (the paseo there was lowered from street level to match), lower towards Dalí.",
+    "Open: towards its east end the model makes the wall up to 3 m (the paseo falls to big-pool level there), but IMG_2227 from the beach suggests it stays about 1 m. A photo from the paseo near Calle Guillermo would settle it. The mapped (OSM) paseo line also sits up to 3 m seaward of the wall in places, leaving a sand strip the photos do not show.",
+    "IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349)."
+   ]
+  },
+  {
+   "id": "whole-resort",
+   "name": "The whole resort",
+   "summary": "Overviews, maps and wide views covering several areas at once, and the mountain backdrop.",
+   "match": {},
+   "docs": [
+    "docs/OVERVIEW.md",
+    "docs/LAYOUT_ACCURACY.md",
+    "docs/TERRAIN.md",
+    "docs/SPEC.md"
+   ],
+   "data": [
+    "data/terrain.json"
+   ],
+   "src": [
+    "src/world.ts",
+    "src/terrain.ts"
+   ],
+   "notes": [
+    "Buildings are white with brown wooden Persian-blind shutters (Dave, 2026-10-11).",
+    "Plants and small details should eventually be textures and sprites, not 3D shapes. The player should be able to get into the pools.",
+    "GPS locates the camera, not the subject. A roof or upper-floor photo's pin is inside a building and its subject can be 50+ m away."
+   ]
+  }
+ ],
+ "topics": [
+  {
+   "id": "layout",
+   "name": "Layout",
+   "summary": "Where lanes, walls, openings, patios and lawns are and how they connect."
+  },
+  {
+   "id": "levels",
+   "name": "Levels and slopes",
+   "summary": "How the ground rises and falls: slopes, ramps, steps, raised patios, retaining walls."
+  },
+  {
+   "id": "facades",
+   "name": "Facades and roofs",
+   "summary": "House fronts, shutters, balconies, porches, roofs, chimneys, arches."
+  },
+  {
+   "id": "materials",
+   "name": "Materials",
+   "summary": "Paving, tiles, render, kerbs, fences, sand and pebbles."
+  },
+  {
+   "id": "planting",
+   "name": "Planting",
+   "summary": "Trees, hedges, palms, climbers and beds."
+  },
+  {
+   "id": "signage",
+   "name": "Signs",
+   "summary": "Street-name plaques, house numbers and other readable signs."
+  },
+  {
+   "id": "view",
+   "name": "Views",
+   "summary": "Long views, the backdrop, how areas look from above or from afar."
+  }
+ ]
+}

@@ -10,6 +10,9 @@ the middle of the resort, and the change is mostly at short ramps on the lanes.
   reads it. Zero is the level of the middle pool.
 - **Confirmed by photos:** the Cervantes ramp at Elena (IMG_2262, IMG_2265) and
   Calle Eva rising towards the Dalí car park (IMG_2248).
+- **Shorter at Cervantes:** IMG_2286 and IMG_2262 show three steps beside the
+  ramp taking the whole rise, so `localRuns` makes the slope 3 m long there,
+  blending back to 7 m either side. See `docs/ELENA_NORTH.md`.
 - **Guessed:** where the foot line runs between and beyond those two ramps. It is
   kept west of the north pool lawn, and 20 m in from Dalí south of Eva, so
   Patricia and Jorge also get a short ramp near Dalí. Nobody has confirmed those.

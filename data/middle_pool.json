@@ -1,0 +1,142 @@
+{
+ "checkedAt": "2026-10-14",
+ "scope": "The middle pool courtyard: the east gateway from Calle Eva and the raised white planter wall along the west path. Placed from the photos against the registry houses, the pool ring, the protected routes and the aerial. Positions are approximate (about 1-2 m for the gateway, about 1 m for the planter); heights and widths are estimated from tiles, doors and the manhole cover in the photos, not measured.",
+ "lane": {
+  "street": "eva",
+  "from": [-55.38, 48.14],
+  "to": [-118.05, 84.87],
+  "width": 1.2,
+  "evidence": [
+   "IMG_2340.jpg"
+  ],
+  "trust": "Last straight of Calle Eva before the courtyard: square terracotta tiles with a grey border, a planted strip against the house on the south-east side and a walled lawn on the north-west side (IMG_2340, reference photo 12).",
+  "references": [
+   "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
+  ]
+ },
+ "review": {
+  "rings": [
+   [
+    [-116.12, 77.6],
+    [-118.97, 79.27],
+    [-115.08, 85.91],
+    [-112.23, 84.24]
+   ],
+   [
+    [-138.03, 89.55],
+    [-133.79, 98.95],
+    [-136.45, 100.56],
+    [-137.43, 98.93],
+    [-136.39, 98.3],
+    [-139.95, 90.42]
+   ]
+  ],
+  "trust": "Generated garden walls, gates, props and scattered planting are suppressed inside these two bands; only the traced gateway and planter are built there."
+ },
+ "gateway": {
+  "id": "middle-pool-east-gateway",
+  "name": "Middle pool · east gateway from Calle Eva",
+  "points": [
+   [-116.94, 78.77],
+   [-113.6, 84.47]
+  ],
+  "opening": [-0.75, 0.75],
+  "height": 2.05,
+  "thickness": 0.25,
+  "pier": {
+   "width": 0.4,
+   "depth": 0.37,
+   "height": 2.3
+  },
+  "coping": {
+   "bottom": 2.3,
+   "top": 2.38,
+   "crown": 2.5,
+   "overhang": 0.08
+  },
+  "northWestWing": {
+   "high": 2.05,
+   "highLength": 0.45,
+   "curveLength": 0.7,
+   "low": 1.45
+  },
+  "leaf": {
+   "hinge": "south-east",
+   "openDegrees": 92,
+   "height": 1.95,
+   "thickness": 0.04
+  },
+  "signs": [
+   {
+    "kind": "notice",
+    "text": "Comunidad Villacana",
+    "along": -0.95,
+    "y": 1.45,
+    "width": 0.3,
+    "height": 0.42,
+    "color": "#f4f4ef"
+   },
+   {
+    "kind": "dog rules",
+    "text": "Obligatorio llevar a los perros sujetos · Es obligatorio recoger los excrementos",
+    "along": -1.4,
+    "y": 1.12,
+    "width": 0.46,
+    "height": 0.28,
+    "color": "#1d4fa0"
+   }
+  ],
+  "evidence": [
+   "IMG_2340.jpg",
+   "IMG_2244.jpg"
+  ],
+  "trust": "White gateway across the end of Calle Eva where the lane meets the courtyard: square piers, flat head, gently curved coping, single black iron leaf hinged on the south-east jamb and standing open into the courtyard (IMG_2340 outside, IMG_2244 inside). Placed across the lane level with the corner of the house on its south-east side (registry) and between the two camera pins. Opening 1.5 m and clear height 2.05 m estimated from the 0.6 m manhole cover and the tiles; the north-west wing steps down to about 1.45 m with a curved top (reference photo 12). Wing lengths estimated: about 1.2 m to the house corner on the south-east, about 4 m along the walled lawn on the north-west.",
+  "references": [
+   "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+   "ref:photos/09-middle-pool-through-iron-gate.jpg"
+  ]
+ },
+ "planter": {
+  "id": "middle-pool-west-planter",
+  "name": "Middle pool · raised planter wall with hedge, west path",
+  "face": [
+   [-138.19, 90.17],
+   [-134.3, 98.79],
+   [-136.53, 100.14]
+  ],
+  "ring": [
+   [-138.19, 90.17],
+   [-134.3, 98.79],
+   [-136.53, 100.14],
+   [-137.05, 99.28],
+   [-135.75, 98.5],
+   [-139.29, 90.67]
+  ],
+  "height": 0.8,
+  "wall": 0.18,
+  "evidence": [
+   "IMG_2332.jpg",
+   "IMG_2333.jpg",
+   "IMG_2331.jpg",
+   "IMG_2245.jpg"
+  ],
+  "trust": "White rendered planter wall about 0.8 m high topped by a dense hedge with red flowers, on the west side of the crazy-paving path between it and the pool deck (IMG_2332 looking north; reference photo 08 and IMG_2245 across the pool from the east; reference photo 02 from an upper floor). Placed from the path route and the dark hedge band on the aerial, not from the IMG_2332 pin (GPS ±14 m). It runs south from where the path bends at the north-west lobe to the south-west corner and turns along the start of the lane to the south-west gateway (IMG_2333, GPS ±3 m). Bed depth (1.2 m, 1.0 m on the short leg) and the 2.6 m short leg are estimates; the walls in the photos curve gently, here they are straight.",
+  "references": [
+   "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+   "ref:photos/02-pool-from-upper-floor-2020-12.png"
+  ]
+ },
+ "sources": [
+  "IMG_2340.jpg",
+  "IMG_2244.jpg",
+  "IMG_2332.jpg",
+  "IMG_2333.jpg",
+  "IMG_2331.jpg",
+  "IMG_2245.jpg",
+  "IMG_2339.jpg",
+  "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+  "ref:photos/09-middle-pool-through-iron-gate.jpg",
+  "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+  "ref:photos/02-pool-from-upper-floor-2020-12.png"
+ ]
+}

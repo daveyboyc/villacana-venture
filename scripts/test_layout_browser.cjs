@@ -38,6 +38,9 @@ const path = require("node:path");
       { coastalWallRings, coastalAccess, coastalGate, GatedSolids },
       { protectedRoutes, routeClearance },
       { makeSeaside },
+      { elenaNorthRings, elenaNorthBeds, gatewayParts },
+      { stepsGroundOffset },
+      { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
     ] = await Promise.all([
       import("/src/player.ts"),
       import("/src/geom.ts"),
@@ -48,6 +51,9 @@ const path = require("node:path");
       import("/src/coastal-gate.ts"),
       import("/src/route-clearance.ts"),
       import("/src/seaside.ts"),
+      import("/src/elena-north.ts"),
+      import("/src/ramp-steps.ts"),
+      import("/src/middle-pool.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
@@ -59,6 +65,8 @@ const path = require("node:path");
         ),
         ...barrierRings(s.boundaryReference.barriers),
         ...cervantesPatioWallRings(),
+        ...elenaNorthRings(),
+        ...middlePoolRings(),
         ...coastalWallRings(),
       ],
       Object.fromEntries(
@@ -78,6 +86,7 @@ const path = require("node:path");
         sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
+            stepsGroundOffset(x, z) +
             poolGroundY(x, z) +
             referenceGroundHeight(s.boundaryReference, x, z),
       maxGroundStep: 0.45,
@@ -130,6 +139,70 @@ const path = require("node:path");
     for (const route of routes)
       for (const points of [route.points, [...route.points].reverse()])
         walk(points);
+    // Up and down the steps beside the Cervantes ramp: one riser at a time, ending level with the ramp.
+    {
+      const { default: flight } = await import("/data/cervantes_elena_steps.json");
+      const [fx, fz] = flight.foot, [tx, tz] = flight.toward, len = Math.hypot(tx - fx, tz - fz), ux = (tx - fx) / len, uz = (tz - fz) / len, sx = -uz, sz = ux;
+      const across = (flight.across[0] + flight.across[1]) / 2, at = (d) => [fx + ux * d + sx * across, fz + uz * d + sz * across];
+      const heights = [];
+      for (let d = -0.4; d <= flight.end + 0.3; d += 0.05) heights.push(world.groundHeight(...at(d)));
+      const jumps = heights.slice(1).map((h, i) => h - heights[i]).filter((j) => j > 0.05);
+      if (jumps.length !== flight.risers.length || jumps.some((j) => j > 0.2)) throw Error("Steps do not rise one shallow riser at a time: " + jumps);
+      const rampTop = world.groundHeight(fx + ux * flight.end, fz + uz * flight.end);
+      if (Math.abs(heights[heights.length - 1] - rampTop) > 0.03) throw Error("Top of the steps is not level with the ramp");
+      walk([at(-0.4), at(flight.end + 0.3)]);
+      if (Math.abs(player.y - rampTop) > 0.08) throw Error("Player did not climb the steps: " + player.y + " vs " + rampTop);
+      walk([at(flight.end + 0.3), at(-0.4)]);
+    }
+    // Elena north: through the arched gateway, and the raised beds keep the player out.
+    {
+      const gate = gatewayParts();
+      walk([[gate.cross[0] - 3 * gate.along[1], gate.cross[1] + 3 * gate.along[0]], [gate.cross[0] + 3 * gate.along[1], gate.cross[1] - 3 * gate.along[0]]]);
+      for (const bed of elenaNorthBeds) {
+        const c = bed.ring.reduce((a, q) => [a[0] + q[0] / bed.ring.length, a[1] + q[1] / bed.ring.length], [0, 0]);
+        const out = world.solids.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.4) throw Error("Raised bed " + bed.id + " is not solid");
+      }
+    }
+    // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
+    {
+      const { paseoWallRings, paseoWallFace } = await import("/src/paseo-wall.ts");
+      const rings = paseoWallRings(), wallOnly = new Solids(rings);
+      for (const ring of rings) {
+        const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
+        const out = wallOnly.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.15) throw Error("Paseo wall is not solid at " + c);
+      }
+      const k = Math.floor(paseoWallFace.length / 4), [fx, fz] = paseoWallFace[k], [gx, gz] = paseoWallFace[k + 1], len = Math.hypot(gx - fx, gz - fz);
+      const across = (d) => world.groundHeight(fx + (gz - fz) / len * d, fz - (gx - fx) / len * d);
+      const step = across(1.2) - across(-0.3);
+      if (step < 0.8 || step > 1.3) throw Error("Paseo wall does not stand at the 1 m level change: " + step);
+      const keep = world.solids;
+      world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...rings]);
+      // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
+      const stretch = s.seafront.paseo.points.slice(0, 8);
+      walk(stretch);
+      walk([...stretch].reverse());
+      world.solids = keep;
+    }
+    // Middle pool: in through the east gateway from Calle Eva and out again; the west planter is solid.
+    {
+      const gate = middleGatewayFrame(), out = gate.at(0, -3), into = gate.at(0, 3);
+      walk([out, into]);
+      walk([into, out]);
+      const [f0, f1] = middlePoolPlanter.face, back = middlePoolPlanter.ring[middlePoolPlanter.ring.length - 1];
+      for (const t of [0.2, 0.5, 0.8]) {
+        const c = [f0[0] + (f1[0] - f0[0]) * t + (back[0] - f0[0]) / 2, f0[1] + (f1[1] - f0[1]) * t + (back[1] - f0[1]) / 2];
+        const pushed = world.solids.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(pushed.x - c[0], pushed.z - c[1]) < 0.4) throw Error("Middle pool planter is not solid at " + c);
+      }
+      // Walking along the path beside the planter, towards it, is stopped at its face.
+      const start = [f0[0] + (f1[0] - f0[0]) * 0.5 - (back[0] - f0[0]) * 1.2, f0[1] + (f1[1] - f0[1]) * 0.5 - (back[1] - f0[1]) * 1.2];
+      player.place(...start, 0);
+      for (let i = 0; i < 600; i++) player.update(1 / 120, { ...input, moveZ: 1 }, world, Math.atan2(back[0] - f0[0], -(back[1] - f0[1])));
+      const face = [f0[0] + (f1[0] - f0[0]) * 0.5, f0[1] + (f1[1] - f0[1]) * 0.5], depth = ((player.x - face[0]) * (back[0] - f0[0]) + (player.z - face[1]) * (back[1] - f0[1])) / Math.hypot(back[0] - f0[0], back[1] - f0[1]);
+      if (depth > -0.3) throw Error("Player walked into the middle pool planter: " + depth);
+    }
     open = false;
     const at = [
       (coastalGate.points[0][0] + coastalGate.points[1][0]) / 2,

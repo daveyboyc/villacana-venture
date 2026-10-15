@@ -627,8 +627,8 @@
       "name": "Cervantes / Elena ramp",
       "points": [
         [
-          -158.44,
-          60.66
+          -154.99,
+          58.6
         ],
         [
           -152.41,
@@ -642,9 +642,10 @@
       "width": 1.2,
       "evidence": [
         "photo:IMG_2262.jpg",
-        "photo:IMG_2265.jpg"
+        "photo:IMG_2265.jpg",
+        "photo:IMG_2286.jpg"
       ],
-      "trust": "Slope, white edges and foot drain confirmed by reference photos. The rise is now part of the ground (data/terrain.json): 0.5 m per Dave, 7 m run approximate"
+      "trust": "Slope, white edges and foot drain confirmed by reference photos; IMG_2286 and IMG_2262 show three steps beside it on the north side taking the same rise. The rise is part of the ground (data/terrain.json): 0.5 m per Dave, over about 3 m here, estimated from tile and tread sizes"
     }
   ]
 }

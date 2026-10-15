@@ -16,13 +16,14 @@ export function seaWallRings(points: Vec2[]): Vec2[][] {
   return rings;
 }
 
-/** The low white wall with a dark mesh fence on it, between the south lawn and the paseo. No gate. */
-export function addSeaWall(scene: THREE.Scene, points: Vec2[]): void {
+/** The low white wall with a dark mesh fence on it, between the south lawn and the paseo. No gate. `skip` leaves out stretches another wall already draws. */
+export function addSeaWall(scene: THREE.Scene, points: Vec2[], skip?: (a: Vec2, b: Vec2) => boolean): void {
   const white = new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 0.92 });
   const post = new THREE.MeshStandardMaterial({ color: "#26352c", roughness: 0.7 });
   const mesh = new THREE.MeshStandardMaterial({ color: "#26352c", roughness: 0.8, transparent: true, opacity: 0.35, side: THREE.DoubleSide, depthWrite: false });
   for (let i = 0; i < points.length - 1; i++) {
     const [ax, az] = points[i], [bx, bz] = points[i + 1];
+    if (skip?.(points[i], points[i + 1])) continue;
     const length = Math.hypot(bx - ax, bz - az);
     const run = new THREE.Group();
     run.position.set((ax + bx) / 2, 0, (az + bz) / 2);

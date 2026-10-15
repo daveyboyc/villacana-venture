@@ -49,6 +49,9 @@ def metadata(path:Path)->dict:
             entry.update(x=round(x,1),z=round(z,1),trust='phone location',locationBasis='Original phone GPS; camera position retained without snapping')
             accuracy=number(gps.get(31))
             if accuracy is not None and accuracy>0:entry['accuracy']=round(accuracy,1)
+            # Phone altitude is rough (several metres) but separates roof shots from lane shots.
+            altitude=number(gps.get(6))
+            if altitude is not None:entry['altitude']=round(-altitude if gps.get(5) in (1,b'\x01') else altitude,1)
         heading=number(gps.get(17))
         if heading is not None and gps.get(16)=='T':entry.update(heading=round(heading)%360,headingBasis='EXIF true north')
         elif heading is not None:entry['headingBasis']='Magnetic/unknown direction; no true-north wedge inferred'
@@ -73,7 +76,7 @@ def index(source:Path,out:Path,annotations:dict|None=None)->list[dict]:
         for key in ('title','observation','originalUrl','visualReview','streetHint','areaHint'):
             if key in previous:merged[key]=previous[key]
         if previous.get('trust') not in (None,'phone location','unplaced'):
-            for key in ('x','z','heading','accuracy','trust','locationBasis','headingBasis'):
+            for key in ('x','z','heading','accuracy','trust','locationBasis','headingBasis','gps'):
                 if key in previous:merged[key]=previous[key]
         elif 'heading' not in fresh:
             merged.pop('heading',None)

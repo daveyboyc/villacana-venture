@@ -21,3 +21,32 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   fully verified.
 - Keep Google keys in ignored private environment files. Never publish API keys,
   signed download URLs, original photo metadata blobs or fetched Google imagery.
+
+## Build queue
+
+Work is split into tasks in `data/build_queue.json` (shown by priority in
+`refs/QUEUE.md`, one issue body per task in `refs/issues/`). Follow
+`docs/HANDOVER.md` to take one: one task per branch and PR, and its
+definition of done.
+
+## Reference photos and maps
+
+All reference material is catalogued by area. Before changing anything in an
+area, read `refs/README.md`, then that area's brief in `refs/areas/<id>.md`, and
+look at its contact sheet in the private `villacana-reference` repo
+(`contact-sheets/<id>.jpg`). The brief lists the area's photos, map
+screenshots, docs, data and source files, known facts and open questions.
+For cross-cutting work (slopes, paving, planting) use `refs/topics/<id>.md`.
+
+- Areas and topics are fixed in `data/areas.json`. Do not invent new ids in a
+  tag; add the area there first if one is genuinely missing.
+- What a picture shows goes in `data/reference_tags.json` (`shows`,
+  `viewpoint`, `useFor`, `looksAt`, `subject`, `note`). Tag only after looking at the image. A
+  camera position is only a suggestion: roof and upper-floor shots stand
+  inside a building and show areas far away.
+- After building something from a photo, cite it in that feature's
+  `evidence`, and add any new fact or open question to the area's `notes`.
+- `refs/` is generated. Rebuild with `python3 scripts/build_references.py
+  --sheets` and commit both repos. `--check` must pass before a PR.
+- New photos: follow "Intake for a new Drive batch" in
+  `docs/PHOTO_MAP_WORKFLOW.md`.

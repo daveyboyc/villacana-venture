@@ -1,0 +1,304 @@
+{
+ "checkedAt": "2026-10-14",
+ "scope": "The landward side of the paseo from the Dalí coastal apron to the end of Calle Guillermo. Photographed from the paseo on 14 October (IMG_2349, IMG_2350, IMG_2352, IMG_2354) and from the beach (IMG_2227, IMG_2298, IMG_2299). The plan line is traced from the aerial; heights follow the model's levels, which were corrected to match the photos. Not a survey.",
+ "wall": {
+  "id": "paseo-retaining-wall",
+  "name": "Paseo · sandstone retaining wall and mesh fence",
+  "face": [
+   [
+    -111.25,
+    230.76
+   ],
+   [
+    -108.81,
+    229.02
+   ],
+   [
+    -106.22,
+    227.48
+   ],
+   [
+    -103.48,
+    226.13
+   ],
+   [
+    -100.76,
+    224.77
+   ],
+   [
+    -98.41,
+    223.22
+   ],
+   [
+    -96.2,
+    221.19
+   ],
+   [
+    -93.99,
+    219.16
+   ],
+   [
+    -91.78,
+    217.13
+   ],
+   [
+    -89.57,
+    215.11
+   ],
+   [
+    -87.38,
+    213.05
+   ],
+   [
+    -86.27,
+    212.05
+   ],
+   [
+    -85.16,
+    211.04
+   ],
+   [
+    -84.05,
+    210.03
+   ],
+   [
+    -82.94,
+    209.01
+   ],
+   [
+    -81.85,
+    207.98
+   ],
+   [
+    -80.77,
+    206.95
+   ],
+   [
+    -79.66,
+    205.94
+   ],
+   [
+    -78.55,
+    204.93
+   ],
+   [
+    -77.76,
+    203.57
+   ],
+   [
+    -76.99,
+    202.19
+   ],
+   [
+    -76.18,
+    200.85
+   ],
+   [
+    -75.34,
+    199.55
+   ],
+   [
+    -74.47,
+    198.28
+   ],
+   [
+    -73.44,
+    197.18
+   ],
+   [
+    -72.41,
+    196.09
+   ],
+   [
+    -71.38,
+    194.99
+   ],
+   [
+    -70.21,
+    194.05
+   ],
+   [
+    -69.05,
+    193.09
+   ],
+   [
+    -67.86,
+    192.26
+   ],
+   [
+    -66.58,
+    191.43
+   ],
+   [
+    -65.29,
+    190.62
+   ],
+   [
+    -63.99,
+    189.8
+   ],
+   [
+    -62.66,
+    189.03
+   ],
+   [
+    -61.38,
+    188.19
+   ],
+   [
+    -60.12,
+    187.34
+   ],
+   [
+    -58.86,
+    186.49
+   ],
+   [
+    -57.67,
+    185.57
+   ],
+   [
+    -55.49,
+    183.51
+   ],
+   [
+    -53.31,
+    181.45
+   ],
+   [
+    -51.13,
+    179.39
+   ],
+   [
+    -48.95,
+    177.32
+   ],
+   [
+    -46.78,
+    175.26
+   ],
+   [
+    -44.6,
+    173.2
+   ],
+   [
+    -42.66,
+    170.88
+   ],
+   [
+    -41.12,
+    168.15
+   ],
+   [
+    -39.37,
+    165.63
+   ],
+   [
+    -37.36,
+    163.39
+   ],
+   [
+    -35.18,
+    161.33
+   ],
+   [
+    -32.85,
+    159.43
+   ],
+   [
+    -30.5,
+    157.55
+   ],
+   [
+    -28.25,
+    155.56
+   ],
+   [
+    -26.18,
+    153.62
+   ],
+   [
+    -23.73,
+    151.81
+   ],
+   [
+    -21.21,
+    150.07
+   ],
+   [
+    -18.94,
+    148.09
+   ],
+   [
+    -16.87,
+    145.92
+   ],
+   [
+    -14.8,
+    143.75
+   ],
+   [
+    -12.73,
+    141.58
+   ]
+  ],
+  "thickness": 0.4,
+  "coping": 0.06,
+  "fence": {
+   "height": 1.1,
+   "setback": 0.15,
+   "postSpacing": 2.5
+  },
+  "evidence": [
+   "IMG_2350.jpg",
+   "IMG_2349.jpg",
+   "IMG_2352.jpg",
+   "IMG_2354.jpg",
+   "IMG_2227.jpg",
+   "IMG_2298.jpg",
+   "IMG_2299.jpg"
+  ],
+  "trust": "Wall, fence and their order are photographed: yellow sandstone blocks under a thin coping, a green rigid-mesh fence standing on it, hedges and the seafront gardens behind (IMG_2349, IMG_2350, IMG_2352, IMG_2354). The face line is the dark wall line on the aerial along the paseo's landward edge, smoothed over about 10 m; along the south lawn it follows the south pool pass's sea-wall trace so the two are one wall. Where the aerial puts the wall on the mapped paseo line (the OSM line sits 1-2 m too far inland there) it is held 1.8 m from the line so the 3 m paseo keeps its width. Plan accuracy about 1-2 m. Height is not set here: it is the model's level difference, inland ground minus paseo. Measured by eye against the sea horizon and paseo width in IMG_2350 (camera about 1.5-1.6 m up): wall face about 0.9-1.0 m, fence about 1.0-1.2 m above it, paseo about 3 m from wall foot to timber edge. IMG_2349 gives about 1.0-1.1 m against the fence panels; IMG_2227 shows about a 1 m band from the beach. IMG_2354 and IMG_2352 show it lower towards the Dalí end (about 0.5 m).",
+  "ends": {
+   "west": "Ends where the stamped paseo meets the pale apron in front of the Dalí coastal gate (IMG_2352 looking west, IMG_2354, aerial: the dark wall line starts here). It does not cross the apron or the gate connector.",
+   "east": "Ends at the corner garden by the end of Calle Guillermo, where the wall line turns inland on the aerial and IMG_2227 shows the sandstone band stop before a planted slope. East of it the lower pool lawn meets the paseo with no wall."
+  }
+ },
+ "edge": {
+  "id": "paseo-timber-edge",
+  "name": "Paseo · timber edge onto the beach",
+  "width": 0.12,
+  "height": 0.08,
+  "evidence": [
+   "IMG_2350.jpg",
+   "IMG_2351.jpg",
+   "IMG_2352.jpg",
+   "IMG_2354.jpg"
+  ],
+  "trust": "A timber board edges the seaward side of the stamped paseo in every paseo photo along the wall. Drawn along the mapped paseo's seaward edge over the same stretch as the wall; where it runs beyond the wall's ends is not photographed. Board size estimated."
+ },
+ "surface": {
+  "color": "#c8948a",
+  "evidence": [
+   "IMG_2350.jpg",
+   "IMG_2351.jpg",
+   "IMG_2352.jpg",
+   "IMG_2354.jpg"
+  ],
+  "trust": "Faded pink-red stamped concrete with a board pattern (colour sampled from IMG_2350). The whole mapped paseo uses this colour; the board pattern is not modelled."
+ },
+ "openings": [
+  {
+   "id": "dali-coastal-access",
+   "note": "The gate connector from the Dalí car park meets the paseo west of the wall's west end; the wall keeps clear of it."
+  },
+  {
+   "id": "guillermo",
+   "note": "Calle Guillermo ends at the top of the bank just east of the wall's east end; the wall keeps clear of it."
+  },
+  {
+   "id": "main-pool-lawn",
+   "note": "The lowered pool lawn runs out level onto the paseo east of the wall; no wall there."
+  }
+ ]
+}

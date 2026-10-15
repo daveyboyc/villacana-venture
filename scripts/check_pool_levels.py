@@ -56,9 +56,12 @@ def paseo_height(x):
 for pool in skeleton['pools']:
     if pool['id'] in ('main', 'toddler'):
         assert all(paseo_height(turned(p)[0]) == -layout['drop'] for p in pool['ring']), 'Step between pool and beach'
-# Beside the south pool the paseo stays at street level.
+# Beside the south pool the paseo is about 1 m below the lawn, behind the sandstone retaining wall
+# (IMG_2349, IMG_2350; data/paseo_wall.json), and back at street level by the Dalí coastal gate.
 south = next(p for p in skeleton['pools'] if p['id'] == 'south')
-assert all(paseo_height(turned(p)[0]) == 0 for p in south['ring']), 'South lawn no longer level with the paseo'
+assert all(-1.3 <= paseo_height(turned(p)[0]) <= -0.8 for p in south['ring']), 'Paseo beside the south lawn is not about 1 m below it'
+gate_end = json.loads((ROOT / 'data/coastal_gate.json').read_text())['route']['points'][-1]
+assert paseo_height(turned(gate_end)[0]) == 0, 'Coastal gate connector no longer meets the paseo at street level'
 assert layout['enriqueSteps']['width'] > 2 * .42
 assert 0 < layout['drop'] / layout['enriqueSteps']['count'] <= .2
 # Both flights start on the platform and end on the lower deck.

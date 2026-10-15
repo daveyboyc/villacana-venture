@@ -37,7 +37,7 @@ if ref.get('connection'):
   print('Both mapped car parks include their matching Cervantes entrances PASS')
  print('Cervantes endpoint connectivity: Dalí centreline and the unnamed Picasso car-park access PASS')
 manifest=json.loads((ROOT/'public/photos-ref/manifest.json').read_text())
-photos=[p for p in manifest if 2260<=int(p['file'][4:8])<=2270]
+photos=[p for p in manifest if p['file'].startswith('IMG_') and 2260<=int(p['file'][4:8])<=2270]
 assert len(photos)==11
 for photo in photos:
  assert all(k in photo for k in ['x','z','heading','accuracy']), 'Incomplete photo reference'
@@ -55,7 +55,7 @@ for ramp in ref.get('ramps',[]):
  assert len(ramp['points'])==len(ramp['heights'])==2
  for p,h in zip(ramp['points'],ramp['heights']):
   i=road['points'].index(p);assert abs(road['heights'][i]-h)<0.001
- assert set(ramp['evidence'])=={'photo:IMG_2262.jpg','photo:IMG_2265.jpg'}
+ assert set(ramp['evidence'])=={'photo:IMG_2262.jpg','photo:IMG_2265.jpg','photo:IMG_2286.jpg'}
 print('Photo-backed ramp endpoints, shared heights and walkable slope PASS')
 
 road=next(r for r in ref['roads'] if r['id']=='cervantes')
