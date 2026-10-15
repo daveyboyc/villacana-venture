@@ -39,6 +39,9 @@ graph LR
   A --> F0["Middle pool · east gateway from Calle Eva"]
   F0 --> PIMG_2244_jpg(["IMG_2244"])
   F0 --> PIMG_2340_jpg(["IMG_2340"])
+  A --> F1["Middle pool · stone steps up to Calle Eva"]
+  F1 --> PIMG_2248_jpg(["IMG_2248"])
+  F1 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Reviewed references
@@ -46,7 +49,7 @@ graph LR
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
-| [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva |
+| [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva _Used by: steps:middle-pool-sw-steps._ |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
 | [IMG_2336.jpg](../../public/photos-ref/IMG_2336.jpg) | ground | layout, planting | Calle Eva east of the middle pool: tiled path between lawns |
