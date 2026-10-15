@@ -1,3 +1,4 @@
+import {paintSeawardPaving} from "./seaward-paving";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
@@ -430,6 +431,9 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   tctx.globalCompositeOperation = "source-in";
   tctx.fillStyle = pattern;
   tctx.fillRect(0, 0, size, size);
+  // Local materials are clipped by the existing paving mask, preserving lawn and footprints.
+  tctx.globalCompositeOperation = "source-atop";
+  paintSeawardPaving(tctx,skeleton,centre,span,size);
   pctx.drawImage(tiled, 0, 0);
 
   const lawn = skeleton.cover.classes.lawn;

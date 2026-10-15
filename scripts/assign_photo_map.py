@@ -61,6 +61,10 @@ def features(s):
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
     for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    paving=json.loads((ROOT/'data/seaward_paving.json').read_text())
+    for f in paving['features']:
+        ring=next((b['ring'] for b in s['buildings'] if b['id']==f.get('building')),None)
+        add('seaward_paving.json:'+f['id'],f['id'].replace('-',' '),'reference feature','photo-supported material; estimated extent',evidence=f['evidence'],**({'ring':ring} if ring else {'points':f['points']}))
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
