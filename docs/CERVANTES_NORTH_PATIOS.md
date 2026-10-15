@@ -22,3 +22,19 @@ within the photographed garden band, not botanical identification or a tree surv
 Check `python3 scripts/check_cervantes_north_patios.py`; compare the before and
 after `IMG_2368 --pool=north,middle --high --details` renders. These checks establish
 source linkage and clearance, not surveyed photographic fidelity.
+
+## Validation and render limits
+
+All handover source/photo checks, the new partition check, TypeScript, production
+build and both browser regressions passed. Layout traversal covered 20 routes in
+both directions (217 segments), with no runtime errors. The unchanged site levels
+and registry geometry passed their existing checks.
+
+The required IMG_2368 `--high` pair renders successfully but currently frames the
+Elena beds: the existing render helper follows a ground player and its collision
+resolution from the roof pin, rather than a free camera at roof altitude. It is
+therefore not usable as a direct photographic match. An additional diagnostic
+before/after pair from clear ground at (-157, 62), aimed at (-160, 55), shows the
+partial white partitions and planting appearing behind the unchanged Cervantes
+wall and lane. This diagnostic is explicitly not the source photo camera. A
+proper roof-altitude camera remains needed for a close photographic comparison.
