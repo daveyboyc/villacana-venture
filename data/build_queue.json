@@ -146,8 +146,9 @@
     "render from IMG_2368 with --high"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 44
+   "status": "in-progress",
+   "issue": 44,
+   "owner": "issue_44"
   },
   {
    "id": "middle-pool-sw-steps",
