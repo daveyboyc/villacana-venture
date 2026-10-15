@@ -6,7 +6,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | open | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg) |
+| P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | in-progress · issue_31 | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg) |
 | P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | open | [IMG_2285](../public/photos-ref/IMG_2285.jpg), [IMG_2298](../public/photos-ref/IMG_2298.jpg), [IMG_2299](../public/photos-ref/IMG_2299.jpg), [IMG_2300](../public/photos-ref/IMG_2300.jpg) |
 | P2 | `cervantes-door-steps` [#33](https://github.com/daveyboyc/villacana-venture/issues/33) | Cervantes: two steps up to a front door west of the Elena junction | open | [IMG_2327](../public/photos-ref/IMG_2327.jpg), [IMG_2328](../public/photos-ref/IMG_2328.jpg) |
 | P2 | `elena-east-patios` [#38](https://github.com/daveyboyc/villacana-venture/issues/38) | Elena north: private patios east of the beds (after elena-garden-door) | open | [IMG_2366](../public/photos-ref/IMG_2366.jpg), [IMG_2362](../public/photos-ref/IMG_2362.jpg), [IMG_2360](../public/photos-ref/IMG_2360.jpg) |

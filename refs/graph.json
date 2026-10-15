@@ -1546,7 +1546,7 @@
    "kind": "build-task",
    "name": "Middle pool south-west: stone steps and the gateway at their top",
    "priority": 1,
-   "status": "open",
+   "status": "in-progress",
    "issue": 31
   },
   {
