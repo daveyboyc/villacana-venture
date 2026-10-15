@@ -1670,28 +1670,32 @@
    "kind": "build-task",
    "name": "Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair",
    "priority": 1,
-   "status": "open"
+   "status": "open",
+   "issue": 54
   },
   {
    "id": "task:middle-pool-raised-patios",
    "kind": "build-task",
    "name": "Middle pool: raised patios behind the north wall and the planted beds",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 55
   },
   {
    "id": "task:cervantes-steps-treads",
    "kind": "build-task",
    "name": "Cervantes/Elena steps: tighten the treads to the photographed spacing",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 56
   },
   {
    "id": "task:door-sills",
    "kind": "build-task",
    "name": "Door sills and footpath kerbs: the small steps everywhere",
    "priority": 3,
-   "status": "open"
+   "status": "open",
+   "issue": 57
   }
  ],
  "edges": [
