@@ -1491,6 +1491,11 @@
    "name": "Cervantes / Elena · steps beside the ramp"
   },
   {
+   "id": "steps:middle-pool-sw-steps",
+   "kind": "model-feature",
+   "name": "Middle pool · stone steps up to Calle Eva"
+  },
+  {
    "id": "task:elena-garden-door",
    "kind": "build-task",
    "name": "Elena north: path and garden door between the two hedged beds",
@@ -1519,7 +1524,7 @@
    "kind": "build-task",
    "name": "Cervantes: two steps up to a front door west of the Elena junction",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 33
   },
   {
@@ -1551,7 +1556,7 @@
    "kind": "build-task",
    "name": "Middle pool south-west: stone steps and the gateway at their top",
    "priority": 1,
-   "status": "open",
+   "status": "done",
    "issue": 31
   },
   {
@@ -1664,6 +1669,38 @@
    "priority": 3,
    "status": "open",
    "issue": 49
+  },
+  {
+   "id": "task:raised-terraces",
+   "kind": "build-task",
+   "name": "Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair",
+   "priority": 1,
+   "status": "open",
+   "issue": 54
+  },
+  {
+   "id": "task:middle-pool-raised-patios",
+   "kind": "build-task",
+   "name": "Middle pool: raised patios behind the north wall and the planted beds",
+   "priority": 3,
+   "status": "open",
+   "issue": 55
+  },
+  {
+   "id": "task:cervantes-steps-treads",
+   "kind": "build-task",
+   "name": "Cervantes/Elena steps: tighten the treads to the photographed spacing",
+   "priority": 3,
+   "status": "open",
+   "issue": 56
+  },
+  {
+   "id": "task:door-sills",
+   "kind": "build-task",
+   "name": "Door sills and footpath kerbs: the small steps everywhere",
+   "priority": 3,
+   "status": "open",
+   "issue": 57
   }
  ],
  "edges": [
@@ -5078,6 +5115,16 @@
    "relation": "cites"
   },
   {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "ref:IMG_2248.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "ref:IMG_2333.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "area:elena",
    "relation": "in-area"
@@ -5265,6 +5312,16 @@
   {
    "from": "steps:cervantes-elena-steps",
    "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "area:eva",
+   "relation": "in-area"
+  },
+  {
+   "from": "steps:middle-pool-sw-steps",
+   "to": "area:middle-pool",
    "relation": "in-area"
   },
   {
@@ -6590,6 +6647,26 @@
    "relation": "in-area"
   },
   {
+   "from": "task:raised-terraces",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:cervantes-steps-treads",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -6642,6 +6719,26 @@
   {
    "from": "task:cervantes-door-steps",
    "to": "ref:IMG_2328.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "ref:IMG_2287.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-door-steps",
+   "to": "ref:IMG_2367.jpg",
    "relation": "builds-from"
   },
   {
@@ -6702,6 +6799,16 @@
   {
    "from": "task:middle-pool-sw-steps",
    "to": "ref:IMG_2332.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-sw-steps",
+   "to": "ref:IMG_2331.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-sw-steps",
+   "to": "ref:IMG_2245.jpg",
    "relation": "builds-from"
   },
   {
@@ -6940,6 +7047,91 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:raised-terraces",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:raised-terraces",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:raised-terraces",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "ref:IMG_2193.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "ref:IMG_2194.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "ref:IMG_2246.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "ref:IMG_2247.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "ref:IMG_2341.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-steps-treads",
+   "to": "ref:IMG_2286.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-steps-treads",
+   "to": "ref:IMG_2355.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-steps-treads",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "ref:IMG_2261.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "ref:IMG_2330.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "ref:IMG_2293.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:door-sills",
+   "to": "ref:IMG_2283.jpg",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -6955,6 +7147,11 @@
    "relation": "depends-on"
   },
   {
+   "from": "task:north-pool-garden-walls",
+   "to": "task:raised-terraces",
+   "relation": "depends-on"
+  },
+  {
    "from": "task:paseo-east-end-height",
    "to": "task:paseo-retrace-line",
    "relation": "depends-on"
@@ -6962,6 +7159,11 @@
   {
    "from": "task:paseo-house-clearance",
    "to": "task:paseo-retrace-line",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:middle-pool-raised-patios",
+   "to": "task:raised-terraces",
    "relation": "depends-on"
   }
  ]
