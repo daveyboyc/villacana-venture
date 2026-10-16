@@ -40,7 +40,7 @@ def features(s):
         if p.get('kind')=='car_park':add('parking:'+p['name'],p['name'],'parking','map layout',ring=p['ring'])
     sf=s.get('seafront',{})
     if sf:
-        add('area:beach',sf['beach']['name'],'area','OSM/map',ring=sf['beach']['ring'])
+        add('area:beach',sf['beach']['name'],'area','OSM/map with independent aerial shoreline review',ring=sf['beach']['ring'],evidence=sf['beach'].get('evidence',[]))
         add('area:sea',sf['sea']['name'],'area','OSM/map',ring=sf['sea']['ring'])
         add('area:paseo',sf['paseo']['name'],'area','OSM/map',points=sf['paseo']['points'],width=sf['paseo']['width'])
         add('area:barraka',sf['restaurant']['name'],'area','map/photo interpretation',ring=sf['restaurant']['ring'])
@@ -61,11 +61,17 @@ def features(s):
             if existing:existing.update(name=f['name'],evidence=evidence)
             else:add(id,f['name'],'reference feature','authored photo/map interpretation',evidence=evidence,**{k:f[k] for k in ('ring','points') if k in f})
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
-    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters']]:
+    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters'],elena['gardenPath']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
+    wall_points=[[garden['origin'][i]+a*garden['along'][i] for i in range(2)] for a in [-garden['wallWidth']/2,garden['wallWidth']/2]]
+    add('cervantes_garden_door.json:'+garden['id'],garden['name'],'reference feature','authored photo/levels interpretation',points=wall_points,evidence=garden['evidence'])
+    for part in ('patio','bed'):
+        f=garden[part]
+        add('cervantes_garden_door.json:'+f['id'],f['id'],'reference feature','authored photo/levels interpretation',ring=f['ring'],evidence=f['evidence'])
     for name in ('cervantes_elena_steps','middle_pool_steps'):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
