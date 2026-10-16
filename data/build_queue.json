@@ -246,8 +246,9 @@
     "render from IMG_2339"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 47
+   "status": "in-progress",
+   "issue": 47,
+   "owner": "issue_47"
   },
   {
    "id": "paseo-retaining-wall",

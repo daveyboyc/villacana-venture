@@ -73,6 +73,8 @@ def features(s):
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    eva=json.loads((ROOT/'data/eva_walled_lawn.json').read_text())
+    add('eva_walled_lawn.json:'+eva['id'],eva['name'],'reference feature','authored photo/map interpretation',ring=eva['lawn']['ring'],evidence=eva['evidence']+eva['evaLawn']['evidence'])
     barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
     for key in ('boardwalk','sign','seating'):
         f=barraka[key]
