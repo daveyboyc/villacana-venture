@@ -6,7 +6,7 @@ Task `raised-terraces` · area **North pool** · priority P1 · levels
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/north-pool.md` and the contact sheet `villacana-reference/contact-sheets/north-pool.jpg`
-- docs: `docs/LEVELS.md`
+- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`
 - data: `data/objects.json`, `data/levels_survey.json`
 - src: `src/world.ts`, `src/water.ts`
 
