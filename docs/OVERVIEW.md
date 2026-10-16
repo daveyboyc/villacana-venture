@@ -15,3 +15,24 @@ Annotations are saved in this browser under `villacana-reference-points-v1` and 
 **Export references** downloads `villacana-references.json`. Keep it as a backup or share it for incorporation into the project. **Import** merges such an export by reference ID, preserving other pins. An imported matching ID replaces the local version. Files are validated before changes are applied; malformed files, invalid coordinates and unsafe link schemes are rejected without modifying existing references. Imported exports from another device must come from the same map coordinate system.
 
 Validation covered desktop and mobile zoom/rotate controls, placement in both views, saving/reloading, shared coordinates across views, export/import round trips, rejected imports preserving data, and visible feedback when browser storage is unavailable. The production build and map, seafront and boundary checks pass.
+
+## Mobile camera and surfaces
+
+The 3D walk has **+**, **−** and **Fit area** controls. Fit area opens a north-up
+view of the selected courtyards. The overview keeps zoom and fit visible, with
+rotation, pan mode and alignment checks under **More**. Alignment checks start
+off on small screens; reference tools scroll on a single row. Two fingers can
+pinch across either half of the canvas, including while walking. Adding the
+second finger stops joystick movement. Zoom out can reach three times the fit
+distance; Fit area recentres and resets the camera. **Walk** returns to walking.
+
+The 2D map's **Fit whole resort** button is beside its zoom controls. Grass uses
+a small repeating blade texture at a constant metre scale, including the large
+painted ground and raised surfaces. Existing lawn classification limits the
+detail to grass. Both mobile and desktop use these materials in Layout and
+Details; small blades blend naturally at overview distances. No additional
+plants, buildings or collision are introduced.
+
+Requirements: [MOBILE_MAP_PRD.md](MOBILE_MAP_PRD.md). Run the mobile regression
+with `PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium node scripts/test_mobile_browser.cjs`
+(or omit the executable override when Playwright Chromium is installed).
