@@ -83,9 +83,11 @@ plain bank where the wall stands.
 - The east end height: the model makes the wall up to 3 m over its last 40 m, but
   IMG_2227 from the beach suggests about 1 m there. The big-pool lawn level (Dave)
   and the photos disagree; no photo from the paseo near Guillermo yet.
-- Not modelled: the hedges on the garden side (IMG_2349), the green windbreak cloth
-  on parts of the fence (IMG_2350, IMG_2352), the lamp posts, the drainage holes and
-  the service cover (IMG_2354), the board pattern in the concrete.
+- Built as Details (docs/PASEO_DETAILS.md): the garden-side hedges (IMG_2349), the
+  green windbreak cloth (IMG_2350, IMG_2352), the four white lamps at the wall foot
+  and the service cover (IMG_2354). Along the wall run the protected route is the
+  2.2 m clear walk beyond the lamps; the paving stays 3 m. Not modelled: the
+  drainage holes and the board pattern in the concrete.
 - The south lawn's sea wall keeps its returns at both ends and its collision; its
   stretches along the paseo are now drawn as this wall. Whether a white parapet
   shows on the lawn side is not settled.

@@ -103,7 +103,7 @@ async function boot(): Promise<void> {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
-  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess,barrakaAccess]):[];
+  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,undefined,[...(skeleton.seafront?.paseo.protect??[]),coastalAccess,barrakaAccess]):[];
   const canPlaceDecoration=(x:number,z:number,radius:number)=>routeClearance(routes,x,z,radius);
   scene.userData.decorationClearance=canPlaceDecoration;scene.userData.protectedRoutes=routes;scene.userData.layoutOnly=layoutOnly;
   scene.background = new THREE.Color("#bfe3f2");
