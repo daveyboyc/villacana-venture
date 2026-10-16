@@ -1,15 +1,17 @@
 import * as THREE from "three";
 import layout from "../data/cervantes_patio_walls.json";
+import east from "../data/cervantes_east_hedge.json";
 import { closestOnSegment } from "./geom";
 import { barrierRings, roadHeight } from "./boundaries";
 import { plasterMaterial } from "./materials";
 import type { Boundary, BoundaryReference, Vec2 } from "./types";
 
-export const cervantesPatioWalls=layout.walls.map(w=>({...w,points:w.points as Vec2[]}));
+export const cervantesPatioWalls=[...layout.walls,...east.walls].map(w=>({...w,points:w.points as Vec2[]}));
 export const cervantesWallOpenings=layout.openings.map(o=>({...o,ring:o.ring as Vec2[]}));
 export function inCervantesWallReview(x:number,z:number):boolean {
   const [a,b]=layout.review.points;
-  return closestOnSegment(x,z,a[0],a[1],b[0],b[1]).d<=layout.review.width/2;
+  const [c,d]=east.walls[0].points;
+  return closestOnSegment(x,z,a[0],a[1],b[0],b[1]).d<=layout.review.width/2 || closestOnSegment(x,z,c[0],c[1],d[0],d[1]).d<1.3;
 }
 export const cervantesPatioWallRings=():Vec2[][]=>barrierRings(cervantesPatioWalls as Boundary[]);
 

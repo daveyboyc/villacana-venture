@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 306,
-  "photosCitedByModel": 61,
-  "modelFeaturesWithPhotoCitations": 49
+  "features": 307,
+  "photosCitedByModel": 63,
+  "modelFeaturesWithPhotoCitations": 50
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1971,6 +1971,16 @@
     "IMG_2273.jpg",
     "IMG_2274.jpg",
     "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "name": "Cervantes east · white plumbago kerb",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2356.jpg",
+    "IMG_2360.jpg"
    ]
   },
   {
@@ -7077,6 +7087,12 @@
    "angleOffset": 9.5
   },
   {
+   "from": "photo:IMG_2356.jpg",
+   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2358.jpg",
    "to": "building:6265801UF1366N_part1",
    "relation": "possibly-in-view",
@@ -7129,6 +7145,12 @@
    "relation": "possibly-in-view",
    "distance": 35.2,
    "angleOffset": 32.1
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2361.jpg",

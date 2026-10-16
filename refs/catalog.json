@@ -1140,8 +1140,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
    "street:cervantes",
-   "elena_north.json:elena-north-garden-wall",
-   "elena_north.json:elena-north-garden-door-path"
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "elena_north.json:elena-north-garden-wall"
   ]
  },
  {
@@ -4993,7 +4993,9 @@
    "altitude": 8.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+  ],
   "looksAt": [
    -148.9,
    47.9
@@ -5116,13 +5118,17 @@
    "altitude": 10.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+  ],
   "looksAt": [
    -140.0,
    46.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+  ],
   "subject": "Cervantes east of Elena, seen along its line"
  },
  {

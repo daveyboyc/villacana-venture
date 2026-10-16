@@ -132,8 +132,9 @@
     "check_cervantes_patio_walls.py or a new check passes"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 43
+   "status": "in-progress",
+   "issue": 43,
+   "owner": "issue_43"
   },
   {
    "id": "cervantes-north-patios",
