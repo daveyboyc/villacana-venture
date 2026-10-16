@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 294,
-  "photosCitedByModel": 45,
-  "modelFeaturesWithPhotoCitations": 37
+  "features": 298,
+  "photosCitedByModel": 54,
+  "modelFeaturesWithPhotoCitations": 41
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1908,6 +1908,20 @@
    ]
   },
   {
+   "id": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "name": "Cervantes · north patio wall east of garden door",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
    "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "name": "Cervantes · south patio wall 1",
    "kind": "reference feature",
@@ -2162,6 +2176,42 @@
     "IMG_2333.jpg",
     "IMG_2331.jpg",
     "IMG_2245.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-garden-door",
+   "name": "Cervantes junction · raised garden door and private patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2287.jpg",
+    "IMG_2196.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "name": "cervantes-junction-north-patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2359.jpg",
+    "IMG_2369.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "name": "cervantes-junction-north-bed",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2196.jpg",
+    "IMG_2355.jpg"
    ]
   },
   {
@@ -3535,6 +3585,18 @@
    "relation": "possibly-in-view",
    "distance": 34.3,
    "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2197.jpg",
@@ -4966,6 +5028,12 @@
   },
   {
    "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5023,6 +5091,12 @@
   },
   {
    "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5068,6 +5142,12 @@
   {
    "from": "photo:IMG_2265.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -5341,6 +5421,12 @@
   },
   {
    "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5391,6 +5477,12 @@
   },
   {
    "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5416,6 +5508,12 @@
   {
    "from": "photo:IMG_2275.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -5725,6 +5823,12 @@
    "relation": "possibly-in-view",
    "distance": 34.3,
    "angleOffset": 28.2
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2288.jpg",
@@ -6107,6 +6211,18 @@
    "angleOffset": 29.1
   },
   {
+   "from": "photo:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2328.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6144,6 +6260,18 @@
    "relation": "possibly-in-view",
    "distance": 38.0,
    "angleOffset": 31.0
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2329.jpg",
@@ -6693,6 +6821,12 @@
    "angleOffset": 4.3
   },
   {
+   "from": "photo:IMG_2355.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2356.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6739,6 +6873,12 @@
    "angleOffset": 31.4
   },
   {
+   "from": "photo:IMG_2358.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2359.jpg",
    "to": "building:6265201UF1366N_part4",
    "relation": "possibly-in-view",
@@ -6758,6 +6898,12 @@
    "relation": "possibly-in-view",
    "distance": 38.1,
    "angleOffset": 30.8
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2360.jpg",
@@ -6936,6 +7082,12 @@
    "angleOffset": 21.0
   },
   {
+   "from": "photo:IMG_2367.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2368.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -6988,6 +7140,12 @@
    "relation": "possibly-in-view",
    "distance": 40.0,
    "angleOffset": 27.7
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   }
  ]
 }

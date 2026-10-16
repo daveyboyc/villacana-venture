@@ -1,5 +1,38 @@
 # Cervantes door steps: placement review, issue #33
 
+## Update after the photo levels survey
+
+The later 15 October survey resolves the placement blocker below: IMG_2287 and
+IMG_2196 show a **garden door in a wall**, with a private patio between it and the
+registry house. The old review incorrectly required a house-facade anchor.
+`data/levels_survey.json` anchors the garden wall near (-152.5, 55.5) ±1.5 m.
+
+Implementation is now in `data/cervantes_garden_door.json` and
+`src/cervantes-garden-door.ts`: a bounded wall with a closed timber door and
+curved coping, two red treads/white risers totaling .45 m, a partial private
+patio at the same datum, and a .425 m west bed. The former continuous north
+patio wall is locally trimmed where it would cut across the door approach.
+Map, visible treads, player ground, wall/door collision and bed collision share
+the same outlines/data. Houses, lane/ramp geometry and the .5 m Dalí rise stay
+unchanged. Planting uses guarded Details-only hedge sprites.
+
+The patio association remains a low-confidence roof-view interpretation. Only a
+bounded floor patch is modeled: no complete enclosure, additional entrances,
+connections or facade corrections are asserted. Door position remains an
+estimate, and tread lengths/wall dimensions are not measured.
+
+Task remains in-progress pending the parent's serial before/after camera review
+and final browser suite. Immutable baseline source is captured from `adca41e` in
+`layout-checks.local/issue-33-survey-baseline/adca41e-source.tar`; its SHA is in
+`commit.txt` there. The old baseline images below predate the survey.
+
+Source checks: `check_cervantes_garden_door.py` checks the three photo height
+ranges, bounded bed/patio above terrain, all lane clearances, unchanged registry
+clearance and old-wall trimming. Browser regression includes tread raycast/player
+height agreement, two equal risers, private patio datum and closed door collision.
+
+## Historical placement review (superseded)
+
 Reviewed 15 October 2026. Task `cervantes-door-steps` remains **in-progress**,
 owned by `issue_33`; geometry is not implemented. A door/facade anchor is needed
 before placing a walkable stoop. Existing terrain, registry footprints, the ramp,

@@ -25,6 +25,34 @@
           75.5488
         ],
         [
+          -155.4381,
+          57.8401
+        ]
+      ],
+      "height": 0.65,
+      "thickness": 0.2,
+      "solid": true,
+      "side": "north",
+      "streetId": "cervantes",
+      "evidence": [
+        "IMG_2263.jpg",
+        "IMG_2264.jpg",
+        "IMG_2265.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg",
+        "IMG_2275.jpg"
+      ],
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+    },
+    {
+      "id": "cervantes-patio-north-east",
+      "name": "Cervantes · north patio wall east of garden door",
+      "points": [
+        [
+          -150.9715,
+          55.1776
+        ],
+        [
           -146.6998,
           52.6313
         ]

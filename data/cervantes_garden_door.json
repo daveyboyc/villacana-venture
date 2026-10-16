@@ -1,0 +1,91 @@
+{
+  "id": "cervantes-garden-door",
+  "name": "Cervantes junction · raised garden door and private patio",
+  "origin": [
+    -152.8168,
+    54.9736
+  ],
+  "along": [
+    -0.8586653356329426,
+    0.5125366732072603
+  ],
+  "inward": [
+    -0.5125366732072603,
+    -0.8586653356329426
+  ],
+  "rise": 0.45,
+  "stepRun": 0.38,
+  "stepWidth": 1.04,
+  "risers": 2,
+  "wallWidth": 2.5,
+  "wallThickness": 0.18,
+  "wallHeight": 1.9,
+  "doorWidth": 0.9,
+  "doorHeight": 1.8,
+  "patio": {
+    "id": "cervantes-junction-north-patio",
+    "ring": [
+      [
+        -151.7948,
+        54.2471
+      ],
+      [
+        -153.9414,
+        55.5284
+      ],
+      [
+        -154.9665,
+        53.8111
+      ],
+      [
+        -152.8198,
+        52.5298
+      ]
+    ],
+    "evidence": [
+      "IMG_2358.jpg",
+      "IMG_2367.jpg",
+      "IMG_2359.jpg",
+      "IMG_2369.jpg"
+    ]
+  },
+  "bed": {
+    "id": "cervantes-junction-north-bed",
+    "ring": [
+      [
+        -153.1596,
+        56.3894
+      ],
+      [
+        -154.877,
+        57.4145
+      ],
+      [
+        -155.3331,
+        56.6503
+      ],
+      [
+        -153.6158,
+        55.6252
+      ]
+    ],
+    "height": 0.425,
+    "evidence": [
+      "IMG_2327.jpg",
+      "IMG_2328.jpg",
+      "IMG_2196.jpg",
+      "IMG_2355.jpg"
+    ]
+  },
+  "replaceAlong": [
+    -2.2,
+    3.0
+  ],
+  "evidence": [
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2287.jpg",
+    "IMG_2196.jpg"
+  ],
+  "trust": "Photos support a closed timber garden door in a white wall with curved coping, two red treads with white risers, and an adjacent west planting bed. The .45 m door/patio rise is an estimate within the survey .3-.55 m and .4-.5 m ranges; bed height .425 m is within .3-.5 m. Garden wall origin is within 1.5 m of the survey anchor. Door width, .38 m treads, local wall ends and partial patio extent are estimates, not surveyed boundaries. Roof views support patio/sill datum but do not trace the complete enclosure."
+}
