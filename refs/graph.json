@@ -1311,14 +1311,39 @@
    "viewpoint": "ground"
   },
   {
+   "id": "area:beach",
+   "kind": "model-feature",
+   "name": "Villacana beach"
+  },
+  {
    "id": "building:6265201UF1366N_part5",
    "kind": "model-feature",
    "name": "Calle Elena covered walkway"
   },
   {
+   "id": "cervantes_garden_door.json:cervantes-garden-door",
+   "kind": "model-feature",
+   "name": "Cervantes junction · raised garden door and private patio"
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "kind": "model-feature",
+   "name": "cervantes-junction-north-bed"
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "kind": "model-feature",
+   "name": "cervantes-junction-north-patio"
+  },
+  {
    "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "kind": "model-feature",
    "name": "Cervantes · north patio wall 1"
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "kind": "model-feature",
+   "name": "Cervantes · north patio wall east of garden door"
   },
   {
    "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
@@ -1621,7 +1646,7 @@
    "kind": "build-task",
    "name": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 32
   },
   {
@@ -4545,6 +4570,26 @@
    "relation": "useful-for"
   },
   {
+   "from": "area:beach",
+   "to": "ref:IMG_2285.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2298.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2299.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2300.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -4562,6 +4607,66 @@
   {
    "from": "building:6265201UF1366N_part5",
    "to": "ref:IMG_2255.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2287.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2355.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2369.jpg",
    "relation": "cites"
   },
   {
@@ -4591,6 +4696,36 @@
   },
   {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "ref:IMG_2275.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2263.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2264.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2265.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2273.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2274.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "to": "ref:IMG_2275.jpg",
    "relation": "cites"
   },
@@ -5160,12 +5295,47 @@
    "relation": "cites"
   },
   {
+   "from": "area:beach",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "area:elena",
    "relation": "in-area"
   },
   {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "to": "area:cervantes",
    "relation": "in-area"
   },
@@ -5424,6 +5594,24 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2197.jpg",
    "to": "elena_north.json:elena-north-tree-bed-2",
    "relation": "looks-at",
@@ -5611,7 +5799,7 @@
   },
   {
    "from": "ref:IMG_2217.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -6169,7 +6357,7 @@
   },
   {
    "from": "ref:IMG_2285.jpg",
-   "to": "area:sea",
+   "to": "area:beach",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6196,6 +6384,24 @@
    "to": "steps:cervantes-elena-steps",
    "relation": "looks-at",
    "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
   },
   {
    "from": "ref:IMG_2289.jpg",
@@ -6284,6 +6490,12 @@
   {
    "from": "ref:IMG_2300.jpg",
    "to": "area:beach",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6625,7 +6837,7 @@
   },
   {
    "from": "ref:IMG_2367.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "reviewed"
   },

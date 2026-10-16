@@ -35,4 +35,24 @@ for a, b in zip(sf['paseo']['points'], sf['paseo']['points'][1:]):
         x = a[0]+(b[0]-a[0])*i/steps; z = a[1]+(b[1]-a[1])*i/steps
         assert not inside(x,z,restaurant['ring']), 'Paseo crosses restaurant footprint'
         assert not any(inside(x,z,p['ring']) for p in skeleton['pools']), 'Paseo crosses a pool'
+# Aerial shoreline trace must stay independent of photo camera coordinates.
+root = Path(__file__).resolve().parents[1]
+trace = json.loads((root / 'data/shoreline_trace.json').read_text())
+ground = json.loads((root / trace['georeference']).read_text())
+assert len(trace['points']) == len(trace['pixelPoints']) >= 3
+for (u, v), (x, z) in zip(trace['pixelPoints'], trace['points']):
+    expected = [ground['minX'] + u / trace['imageSize'][0] * (ground['maxX'] - ground['minX']),
+                ground['minZ'] + v / trace['imageSize'][1] * (ground['maxZ'] - ground['minZ'])]
+    assert math.dist(expected, [x, z]) < 0.01, 'Shoreline trace lost its aerial georeference'
+    assert [x, z] in sf['coast'] and [x, z] in sf['beach']['ring'], 'Beach and sea must share aerial trace'
+assert sf['sea']['ring'] == sf['coast'] + [[1500,1500],[-1500,1500]], 'Sea must follow shared coastline'
+source = json.loads((root / 'public/map/villacana.json').read_text())
+low, high = trace['replaceXRange']
+for p in source['coast']:
+    if p[0] <= low or p[0] >= high:
+        assert p in sf['coast'], 'Unreviewed coastline outside aerial trace must remain unchanged'
+manifest = json.loads((root / 'public/photos-ref/manifest.json').read_text())
+for file in trace['evidence']:
+    photo = next(p for p in manifest if p['file'] == file)
+    assert not inside(photo['x'], photo['z'], sf['sea']['ring']), 'Reviewed dry-beach camera is incorrectly classified as sea'
 print('Seafront: simple polygons, no pool overlaps, clear paseo route, exact registry restaurant footprint PASS')
