@@ -4,7 +4,7 @@ const fs = require('node:fs');
 
 (async () => {
   const { createServer } = await import('vite');
-  const server = await createServer({ server: { host: '127.0.0.1', port: 0 }, logLevel: 'error' });
+  const server = await createServer({ cacheDir: `node_modules/.vite-check-${process.pid}`, server: { host: '127.0.0.1', port: 0, strictPort: false }, logLevel: 'error' });
   await server.listen();
   const browser = await chromium.launch({
     executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,
@@ -12,6 +12,7 @@ const fs = require('node:fs');
   });
   try {
     const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } });
+    page.setDefaultTimeout(60000);
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     await page.goto(`http://127.0.0.1:${server.httpServer.address().port}/slice.html?pool=north,middle,south,main&view=overview`);
@@ -20,6 +21,7 @@ const fs = require('node:fs');
     const initial = Number(await state().getAttribute('data-distance'));
     await page.click('#overview-in');
     await page.waitForFunction(d => Number(document.querySelector('#overview-controls').dataset.distance) < d, initial);
+    await page.locator('#overview-more summary').click();
     await page.click('#overview-right');
     await page.waitForFunction(() => document.querySelector('#overview-controls').dataset.bearing !== '0');
     await page.locator('#overview-rotation').evaluate(e => { e.value = '90'; e.dispatchEvent(new Event('input', { bubbles: true })); });
@@ -38,6 +40,7 @@ const fs = require('node:fs');
     await page.click('#overview-check');
     await page.click('#overview-rotate');
     assert.equal(await page.locator('#overview-rotate').getAttribute('aria-pressed'), 'true');
+    await page.locator('#overview-more summary').click();
     await page.click('#overview');
     await page.waitForFunction(() => document.querySelector('#alignment-notes').hidden && document.querySelector('#overview-controls').hidden);
     await page.setViewportSize({ width: 390, height: 844 });

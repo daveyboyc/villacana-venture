@@ -11,12 +11,13 @@ The seafront promenade between the resort's seaward walls and the beach.
 - IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349).
 - Issue #35: paseo centreline generated 1.5 m seaward of the aerial/photo-backed sandstone wall, 3 m approximate width; pavement now meets the face as IMG_2350/IMG_2352/IMG_2354 show. Southwest former hold-in removed against aerial; gate approach and Barraka boardwalk OSM joins retained. Plan accuracy about 1-2 m, not a survey. Eastern wall height (#40) and registry house obstruction (#41) remain unresolved; levels and footprints unchanged.
 - Issue #40 evidence review (15 October): IMG_2227/IMG_2226 from the beach and IMG_2350 looking east do not resolve whether the paseo rises or the gardens fall near Guillermo. The nominal 3 m east-end wall is a result of the approximate paseo profile against assumed inland ground, not a measured height. All levels retained, including Dave's main-pool drop; task remains open. See docs/PASEO_EAST_END_HEIGHT_REVIEW.md for the specific photo needed.
-- Issue #49: Details-only bounded clipped hedges behind mesh (IMG_2349/2352/2354), short green cloth runs (IMG_2350/2352) and a flush service-cover surface (IMG_2354). Positions/dimensions estimated relative to shared wall, not GPS subjects. The four slim white lamps stand on the paving on small base plates at the wall foot (IMG_2352, IMG_2350; shaft centre about 0.15 m from the face, about 3.5 m tall, flat head over the walk), not on the coping. With the paseo route covering the full 3 m paving to the wall face they block it and stay omitted; lamp count/spacing beyond photographed spans remains unknown.
+- Issue #49: Details-only bounded clipped hedges behind mesh (IMG_2349/2352/2354), short green cloth runs (IMG_2350/2352), four photographed slim white lamps on the paving at the wall foot and a flush service-cover surface (IMG_2354). Positions/dimensions estimated relative to shared wall, not GPS subjects. Along the wall run the protected route is the 2.2 m clear walk beyond the lamps (paving stays 3 m), so all four lamps stand where the photos show them; lamp count/spacing beyond the photographed run is not invented.
+- Issue #41 (16 October): after PR #64 the eastern OSM paseo still entered registry part 6465801UF1366N_part5 by 2.8 m (and part6 by 0.5 m), not 0.64 m from it. On the aerial the pink paseo (about 3.5 m wide) crosses both parts and the rest of part5 is open sand; neighbouring registry roofs match the image, and IMG_2346/IMG_2347 (pins about 4 m) show sand, the Barraka sign planter and a walkway there. So the footprint, not the line, was wrong: both parts keep their exact rings as dashed registry outlines with floors 0 (data/registry_corrections.json), no longer extruded or solid. Paseo points unchanged; the whole paseo now keeps 1.5 m from every standing house and is walked end to end both ways. Open: east of Barraka the OSM line runs along the landward edge of the pink strip, about 2 m landward of its centre on the aerial.
 
 ## Read first
 
 - docs: `docs/SEAFRONT.md`
-- data: `data/coastal_gate.json`, `data/paseo_wall.json`, `data/paseo_details.json`
+- data: `data/coastal_gate.json`, `data/paseo_wall.json`, `data/paseo_details.json`, `data/registry_corrections.json`
 - src: `src/seafront.ts`, `src/seaside.ts`, `src/paseo-wall.ts`, `src/paseo-details.ts`
 - contact sheet: `villacana-reference/contact-sheets/paseo.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -32,8 +33,6 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
-| P2 | `paseo-house-clearance` [#41](https://github.com/daveyboyc/villacana-venture/issues/41) | Paseo east: registry house 6465801UF1366N_part5 blocks the walk (after paseo-retrace-line) | open | [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
-| P3 | `paseo-details` [#49](https://github.com/daveyboyc/villacana-venture/issues/49) | Paseo: hedges behind the fence, windbreak cloth, lamp posts | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
 
 ## Built from these photos
 

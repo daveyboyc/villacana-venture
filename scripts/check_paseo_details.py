@@ -38,7 +38,7 @@ def seg(p, a, b):
     return math.hypot(p[0]-a[0]-t*dx, p[1]-a[1]-t*dz)
 routes = [(r['points'], r['width']) for r in sk['boundaryReference']['roads']]
 routes += [(json.loads((ROOT/'data/dali_cervantes_threshold.json').read_text())['footpathCentreline'], 1.3),
-           (sk['seafront']['paseo']['points'], sk['seafront']['paseo']['width'])]
+           *((r['points'], r['width']) for r in sk['seafront']['paseo']['protect'])]
 routes += [(r['points'], r['width']) for r in (json.loads((ROOT/'data/coastal_gate.json').read_text())['route'],
                                                json.loads((ROOT/'data/barraka_boardwalk.json').read_text())['boardwalk'])]
 def clear(p, radius):
@@ -74,3 +74,8 @@ assert 'const p = paseoDetailStation(f.along[0], f.inland);\n      // Head' in s
 lamps = [f for f in features if f['kind'] == 'lamp']
 print(f'Paseo details: bounded evidence, hedge/cloth positions, full-footprint guard and flush-cover invariants pass; '
       f'lamps {len(placed)} placed, {len(lamps)-len(placed)} omitted at photographed wall-foot spots inside the protected paseo')
+# The keep-clear walk along the wall run ends at the paving's seaward edge and stays a real walk.
+route = json.loads((ROOT/'data/paseo_wall.json').read_text())['route']
+c = route['clear']
+assert abs(c['offsetSeaward'] + c['width']/2 - (route['offsetSeaward'] + route['width']/2)) < .01, 'Clear walk must reach the timber edge'
+assert 2 <= c['width'] < route['width'] and c['trust']

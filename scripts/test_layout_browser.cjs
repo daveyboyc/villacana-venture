@@ -3,11 +3,12 @@ const fs = require("node:fs");
 const path = require("node:path");
 (async () => {
   const { createServer } = await import("vite");
-  const server = await createServer({
-    server: { host: "127.0.0.1", port: 0 },
+  const server = await createServer({ cacheDir: `node_modules/.vite-check-${process.pid}`,
+    server: { host: "127.0.0.1", port: 0, strictPort: false },
     logLevel: "error",
   });
   await server.listen();
+  const threeUrl = '/' + require('node:path').relative(process.cwd(), server.config.cacheDir).replaceAll('\\', '/') + '/deps/three.js';
   const site = "http://127.0.0.1:" + server.httpServer.address().port;
   const artifacts = path.join(process.cwd(), "layout-checks.local");
   fs.mkdirSync(artifacts, { recursive: true });
@@ -23,11 +24,12 @@ const path = require("node:path");
   });
   const p = await b.newPage({ viewport: { width: 1400, height: 950 } }),
     errors = [];
+  p.setDefaultTimeout(90000);
   p.on("pageerror", (e) => errors.push(e.message));
   await p.goto(site + "/blueprint.html");
   await p.waitForSelector("#coastal-gate-boundary");
-  const r = await p.evaluate(async () => {
-    const THREE = await import("/node_modules/.vite/deps/three.js");
+  const r = await p.evaluate(async (threeUrl) => {
+    const THREE = await import(threeUrl);
     const [
       { Player },
       { Solids, CoastField },
@@ -267,12 +269,11 @@ const path = require("node:path");
       if (!southCap) throw Error("No sandstone coping below south lawn");
       const keep = world.solids;
       world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...seaWallRings(legacy, paseoWallCovers), ...rings]);
-      // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
-      const end = s.seafront.paseo.points.findIndex(([x, z]) => Math.hypot(x - 28.87, z - 96.28) < 0.01);
-      if (end < 0) throw Error("Paseo lost its Barraka boardwalk join");
-      const stretch = s.seafront.paseo.points.slice(0, end + 1);
-      walk(stretch);
-      walk([...stretch].reverse());
+      // The whole paseo, end to end both ways, past the Barraka join and the registry outlines the aerial shows are open paving (issue #41).
+      if (!s.seafront.paseo.points.some(([x, z]) => Math.hypot(x - 28.87, z - 96.28) < 0.01)) throw Error("Paseo lost its Barraka boardwalk join");
+      if (!s.buildings.some((b) => b.notStanding) || buildings.some((b) => b.notStanding)) throw Error("Not-standing registry parts must stay outlines, not solids");
+      walk(s.seafront.paseo.points);
+      walk([...s.seafront.paseo.points].reverse());
       world.solids = keep;
     }
     // Middle pool: in through the east gateway from Calle Eva and out again; the west planter is solid.
@@ -370,7 +371,7 @@ const path = require("node:path");
       levelBuildingKeepsGroups: true,
       refinedMaterialGroups: plane.groups.length,
     };
-  });
+  }, threeUrl);
   await p.click("#map-frontages");
   await p.screenshot({ path: path.join(artifacts, "layout-map.png") });
   await p.goto(

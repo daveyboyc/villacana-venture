@@ -38,19 +38,15 @@ were re-read from the photos:
   2.9-3.0 m at the lamp and the shaft centre about 0.15 m seaward of the wall
   foot; the shaft is about 3.5 m with a head about 0.65 m long. IMG_2350 against
   the sea horizon gives about 3.0 m of paving.
-- **Result.** At its photographed spot every shaft centre is about 1.35 m from
-  the paseo route centreline; the guard needs 1.65 m even for a zero-size prop.
-  The paseo does not keep its full protected width beside a lamp, so all four
-  stay omitted. They are not moved onto the coping or into the garden, where no
-  photo puts them. Each lamp is marked `omitted` in `data/paseo_details.json`
-  with the reason in its `trust`; `check_paseo_details.py` reruns the guard
-  in Python over the same routes and fails if an omitted lamp starts to clear or
-  a placed one blocks.
-- **To finish.** Placing them needs a route decision: whether the protected
-  paseo width should be the clear walk beside wall-foot fixtures (about 2.7 m)
-  rather than the full paving. That is a `data/paseo_wall.json` route change;
-  after it, drop `omitted` and the existing code places the lamps.
+- **Result (issue #49).** The paving stays 3 m wide, but along the wall run the
+  protected route is now the clear walk beyond the lamps: `route.clear` in
+  `data/paseo_wall.json`, 2.2 m wide, from about 0.8 m off the wall face to the
+  timber edge. That clears each shaft and its overhanging head (the guard counts
+  the head's furthest corner), so all four lamps stand at their photographed
+  spots. Off the wall run the full 3 m paseo stays protected. The skeleton
+  carries the three protected pieces as `seafront.paseo.protect`, which
+  `src/slice.ts` hands to the shared guard; `check_paseo_details.py` reruns the
+  guard in Python over the same routes and fails if a placed lamp blocks.
 
-Renders from IMG_2352 and IMG_2354 (`--pool=south,main --details`) before and
-after this recheck are in `docs/reviews/issue-49/`; they are the same, since no
-lamp is placed.
+Renders from IMG_2352 and IMG_2354 (`--pool=south,main --details`) are in
+`docs/reviews/issue-49/`.
