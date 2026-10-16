@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "d051393085de7ca7fd3245704d39d3cf78c6fb73b4e1b857407b8226c20c90f9",
+ "inputDigest": "38a845f5b9fc0ec306e19b37d8f4b0b17c5cc607b5fe9be942f075747ab2bb12",
  "summary": {
   "unplaced": 1,
-  "suggested": 76,
-  "needs-review": 68,
+  "suggested": 77,
+  "needs-review": 67,
   "photos": 145,
   "features": 298,
-  "photosCitedByModel": 52,
-  "modelFeaturesWithPhotoCitations": 40
+  "photosCitedByModel": 54,
+  "modelFeaturesWithPhotoCitations": 41
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3594,20 +3594,22 @@
   },
   {
    "file": "IMG_2285.jpg",
-   "status": "needs-review",
+   "status": "suggested",
    "reasons": [
-    "Observed camera area disagrees with the GPS/map area candidates"
+    "Compatible map context; metadata association remains a suggestion"
    ],
    "nearby": [
     {
-     "id": "area:sea",
-     "name": "Mediterranean Sea",
+     "id": "area:beach",
+     "name": "Villacana beach",
      "kind": "area",
      "gap": 0
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "area:beach"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": 71.1,
@@ -4165,6 +4167,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:beach",
     "paseo_wall.json:paseo-retaining-wall"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -4193,6 +4196,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:beach",
     "paseo_wall.json:paseo-retaining-wall"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -4220,7 +4224,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "area:beach"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -78.8,

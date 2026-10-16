@@ -64,6 +64,11 @@ async function boot(): Promise<void> {
 }
 
 function start(map: MapData, skeleton: Skeleton): void {
+  // Use the same independently reviewed shoreline as the blueprint and pool walk.
+  if (skeleton.seafront) {
+    map.coast = skeleton.seafront.coast;
+    map.beaches = [{ name: skeleton.seafront.beach.name, ring: skeleton.seafront.beach.ring }, ...map.beaches.slice(1)];
+  }
   const renderer = new THREE.WebGLRenderer({ canvas: view, antialias: true, powerPreference: "high-performance" });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
   renderer.setSize(window.innerWidth, window.innerHeight);

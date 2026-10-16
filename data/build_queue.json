@@ -327,8 +327,9 @@
     "note added to docs/SEAFRONT.md"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 32
+   "status": "in-progress",
+   "issue": 32,
+   "owner": "issue_32"
   },
   {
    "id": "north-pool-garden-walls",

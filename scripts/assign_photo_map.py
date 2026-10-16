@@ -40,7 +40,7 @@ def features(s):
         if p.get('kind')=='car_park':add('parking:'+p['name'],p['name'],'parking','map layout',ring=p['ring'])
     sf=s.get('seafront',{})
     if sf:
-        add('area:beach',sf['beach']['name'],'area','OSM/map',ring=sf['beach']['ring'])
+        add('area:beach',sf['beach']['name'],'area','OSM/map with independent aerial shoreline review',ring=sf['beach']['ring'],evidence=sf['beach'].get('evidence',[]))
         add('area:sea',sf['sea']['name'],'area','OSM/map',ring=sf['sea']['ring'])
         add('area:paseo',sf['paseo']['name'],'area','OSM/map',points=sf['paseo']['points'],width=sf['paseo']['width'])
         add('area:barraka',sf['restaurant']['name'],'area','map/photo interpretation',ring=sf['restaurant']['ring'])
