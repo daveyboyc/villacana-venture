@@ -1,3 +1,4 @@
+import { addMiddlePoolNorth, inMiddlePoolNorthReview, middlePoolNorthRings } from "./middle-pool-north";
 import * as THREE from "three";
 import layout from "../data/middle_pool.json";
 import { pointInRing } from "./geom";
@@ -10,7 +11,7 @@ const gateway = layout.gateway;
 export const middlePoolPlanter = { ...layout.planter, ring: layout.planter.ring as Vec2[], face: layout.planter.face as Vec2[] };
 export const middlePoolReview = layout.review.rings as Vec2[][];
 
-export const inMiddlePoolReview = (x: number, z: number): boolean => middlePoolReview.some((ring) => pointInRing(x, z, ring));
+export const inMiddlePoolReview = (x: number, z: number): boolean => middlePoolReview.some((ring) => pointInRing(x, z, ring)) || inMiddlePoolNorthReview(x,z);
 
 /** Generated garden walls, gates and props give way to the traced features inside the reviewed bands. */
 export function suppressInMiddlePoolReview<T extends { gardenWalls: Vec2[]; gardenGates: Vec2[]; props: { x: number; z: number }[] }>(skeleton: T): void {
@@ -57,6 +58,7 @@ export function middlePoolRings(): Vec2[][] {
     pier(hi + width / 2),
     strip(middleGatewayLeaf(), 0.06),
     middlePoolPlanter.ring,
+    ...middlePoolNorthRings(),
   ];
 }
 
@@ -155,6 +157,7 @@ export function addMiddlePool(scene: THREE.Scene): void {
     panel.name = gateway.id;
     scene.add(panel);
   }
+  addMiddlePoolNorth(scene);
   addPlanter(scene, plaster);
   addMiddlePoolPlanting(scene);
 }

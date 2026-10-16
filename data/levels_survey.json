@@ -311,7 +311,7 @@
         "IMG_2332.jpg",
         "IMG_2331.jpg"
       ],
-      "model": "differs",
+      "model": "built",
       "task": "middle-pool-north-entrance",
       "compare": {
         "low": [
@@ -323,7 +323,7 @@
           90.3
         ]
       },
-      "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built."
+      "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built. Issue 48 source pass adds three white steps using the shared ramp-steps mechanism, following the existing 0-to-0.5 m terrain rise with tread-minus-siteY offsets only; no extra plateau. Pergola and short brown-door wall added as bounded fragments. Flight alignment and tread spacing remain estimates; final browser and image review pending."
     },
     {
       "id": "middle-pool-gates-level",

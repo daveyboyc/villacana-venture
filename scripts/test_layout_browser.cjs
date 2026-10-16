@@ -153,8 +153,9 @@ const path = require("node:path");
       for (const points of [route.points, [...route.points].reverse()])
         walk(points);
     // Up and down the steps beside the Cervantes ramp and out of the middle pool onto Calle Eva: one riser at a time, ending level with the ramp.
-    for (const file of ["/data/cervantes_elena_steps.json", "/data/middle_pool_steps.json"]) {
-      const { default: flight } = await import(file);
+    for (const file of ["/data/cervantes_elena_steps.json", "/data/middle_pool_steps.json", "/data/middle_pool_north.json"]) {
+      const { default: data } = await import(file);
+      const flight = data.steps ?? data;
       const [fx, fz] = flight.foot, [tx, tz] = flight.toward, len = Math.hypot(tx - fx, tz - fz), ux = (tx - fx) / len, uz = (tz - fz) / len, sx = -uz, sz = ux;
       const across = (flight.across[0] + flight.across[1]) / 2, at = (d) => [fx + ux * d + sx * across, fz + uz * d + sz * across];
       const heights = [];

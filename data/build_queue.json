@@ -225,8 +225,9 @@
     "check_middle_pool.py extended"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 48
+   "status": "in-progress",
+   "issue": 48,
+   "owner": "issue48"
   },
   {
    "id": "eva-walled-lawn",
