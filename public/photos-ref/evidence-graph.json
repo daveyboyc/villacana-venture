@@ -2605,6 +2605,8 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2286.jpg",
+    "IMG_2355.jpg",
+    "IMG_2328.jpg",
     "IMG_2262.jpg"
    ]
   },
@@ -6796,6 +6798,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2328.jpg",
+   "to": "steps:cervantes-elena-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2329.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -7599,6 +7607,12 @@
   {
    "from": "photo:IMG_2355.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "steps:cervantes-elena-steps",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
