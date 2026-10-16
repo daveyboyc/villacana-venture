@@ -4746,6 +4746,8 @@
    "trust": "checked against photo content"
   },
   "citedBy": [
+   "building:6465801UF1366N_part5",
+   "building:6465801UF1366N_part6",
    "barraka_boardwalk.json:barraka-boardwalk",
    "barraka_boardwalk.json:barraka-sign-planter"
   ],
@@ -4786,6 +4788,8 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "building:6465801UF1366N_part5",
+   "building:6465801UF1366N_part6",
    "barraka_boardwalk.json:barraka-boardwalk",
    "barraka_boardwalk.json:barraka-sign-planter",
    "barraka_boardwalk.json:barraka-beach-seating"

@@ -309,7 +309,7 @@ async function boot(): Promise<void> {
   for (const b of skeleton.buildings) {
     const node = el("path", { d: path(b.ring, b.holes), "fill-rule": "evenodd", stroke: b.floors===0?"#94654b":"#5b564e", "stroke-width": b.floors===0?.25:.4 });
     node.setAttribute("data-building-id",b.id);if(b.floors===0)node.setAttribute("stroke-dasharray",".8 .4");
-    roofs.push({ node, floors: b.floors });
+    if (b.notStanding) { node.setAttribute("fill", "none"); node.setAttribute("data-not-standing", "1"); } else roofs.push({ node, floors: b.floors }); // issue #41: registry outline only
     world.append(node);
     // Covered walk-throughs: dashed brown if confirmed by a photo, dashed orange if only likely.
     if (b.passage) world.append(el("path", { d: path(b.ring), fill: "#c98463", "fill-opacity": 0.45, stroke: b.passage.trust === "photo" ? "#7a4a2a" : "#e8842b", "stroke-width": 0.5, "stroke-dasharray": "1 0.6" }));

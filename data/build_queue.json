@@ -474,7 +474,8 @@
    "dependsOn": [
     "paseo-retrace-line"
    ],
-   "status": "open",
+   "status": "done",
+   "owner": "issue_41",
    "issue": 41
   },
   {

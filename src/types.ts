@@ -85,6 +85,8 @@ export type SkeletonBuilding = {
   holes?: Vec2[][];
   /** A covered walk-through: built only above head height, open to walk under. */
   passage?: { name: string; trust: "photo" | "likely"; evidence: string };
+  /** A registry part the aerial shows is not standing (data/registry_corrections.json): outline only, floors 0. */
+  notStanding?: { registryFloors: number; trust: string; evidence: string[] };
 };
 
 export type SkeletonPool = {

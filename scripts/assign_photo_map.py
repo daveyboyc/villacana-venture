@@ -34,7 +34,7 @@ def features(s):
     result=[]
     def add(id,name,kind,source,**geometry):result.append(dict(id=id,name=name,kind=kind,source=source,**geometry))
     for r in s['boundaryReference']['roads']:add('street:'+r['id'],r['name'],'street','map layout',points=r['points'],width=r['width'])
-    for b in s['buildings']:add('building:'+b['id'],b['id'],'building','registry',ring=b['ring'],passage=bool(b.get('passage')))
+    for b in s['buildings']:add('building:'+b['id'],b['id'],'building','registry',ring=b['ring'],passage=bool(b.get('passage')),**({'notStanding':True,'evidence':b['notStanding']['evidence']} if b.get('notStanding') else {}))
     for p in s['pools']:add('pool:'+p['id'],p['id']+' pool','pool','registry',ring=p['ring'])
     for p in s.get('areas',[]):
         if p.get('kind')=='car_park':add('parking:'+p['name'],p['name'],'parking','map layout',ring=p['ring'])

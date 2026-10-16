@@ -576,6 +576,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
   const grey = new THREE.MeshStandardMaterial({ color: ROOF_GREY, roughness: 0.95 });
   const terrace = new THREE.MeshStandardMaterial({ color: ROOF_TERRACE, roughness: 0.9 });
   for (const b of buildings) {
+    if (b.notStanding) continue; // registry outline only: the aerial shows open paseo and sand there (issue #41)
     const c = centroid(b.ring);
     // A zero-storey enclosure is not evidence of a solid house or measured walls.
     const height = b.floors > 0 ? b.floors * floorHeight : .035;
