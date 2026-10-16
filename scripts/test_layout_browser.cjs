@@ -3,11 +3,12 @@ const fs = require("node:fs");
 const path = require("node:path");
 (async () => {
   const { createServer } = await import("vite");
-  const server = await createServer({
-    server: { host: "127.0.0.1", port: 0 },
+  const server = await createServer({ cacheDir: `node_modules/.vite-check-${process.pid}`,
+    server: { host: "127.0.0.1", port: 0, strictPort: false },
     logLevel: "error",
   });
   await server.listen();
+  const threeUrl = '/' + require('node:path').relative(process.cwd(), server.config.cacheDir).replaceAll('\\', '/') + '/deps/three.js';
   const site = "http://127.0.0.1:" + server.httpServer.address().port;
   const artifacts = path.join(process.cwd(), "layout-checks.local");
   fs.mkdirSync(artifacts, { recursive: true });
@@ -23,11 +24,12 @@ const path = require("node:path");
   });
   const p = await b.newPage({ viewport: { width: 1400, height: 950 } }),
     errors = [];
+  p.setDefaultTimeout(90000);
   p.on("pageerror", (e) => errors.push(e.message));
   await p.goto(site + "/blueprint.html");
   await p.waitForSelector("#coastal-gate-boundary");
-  const r = await p.evaluate(async () => {
-    const THREE = await import("/node_modules/.vite/deps/three.js");
+  const r = await p.evaluate(async (threeUrl) => {
+    const THREE = await import(threeUrl);
     const [
       { Player },
       { Solids, CoastField },
@@ -369,7 +371,7 @@ const path = require("node:path");
       levelBuildingKeepsGroups: true,
       refinedMaterialGroups: plane.groups.length,
     };
-  });
+  }, threeUrl);
   await p.click("#map-frontages");
   await p.screenshot({ path: path.join(artifacts, "layout-map.png") });
   await p.goto(
