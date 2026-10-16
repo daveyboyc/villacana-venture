@@ -7,8 +7,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 ## Known facts and open questions
 
 - The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).
-- IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed.
 - IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand.
+- Issue #32: the existing georeferenced Esri aerial independently places the wet shoreline band seaward of the old OSM coast by up to about 30 m near Barraka. data/shoreline_trace.json records pixel control points; the local beach/sea edge now shares that trace. IMG_2285 is about 16.5 m inland of it, without changing its GPS. Estimated 3–5 m trace/registration precision; acquisition date, tide and seasonal changes remain unknown.
 
 ## Read first
 
@@ -34,21 +34,35 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | open | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
+| P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | in-progress · issue_32 | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
 | P3 | `barraka-boardwalk` [#42](https://github.com/daveyboyc/villacana-venture/issues/42) | Barraka Beach: boardwalk, sign planter and parasols | open | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg), [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2225](../../public/photos-ref/IMG_2225.jpg) |
+
+## Built from these photos
+
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+
+```mermaid
+graph LR
+  A["Barraka and the beach"]
+  A --> F0["Villacana beach"]
+  F0 --> PIMG_2285_jpg(["IMG_2285"])
+  F0 --> PIMG_2298_jpg(["IMG_2298"])
+  F0 --> PIMG_2299_jpg(["IMG_2299"])
+  F0 --> PIMG_2300_jpg(["IMG_2300"])
+```
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: paseo_wall.json:paseo-retaining-wall._ |
-| [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: paseo_wall.json:paseo-retaining-wall._ |
+| [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
+| [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
+| [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage _Used by: area:beach._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses _Used by: paseo_wall.json:paseo-retaining-wall._ |
-| [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage |
+| [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline _Used by: area:beach._ |
 | [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach |
 | [IMG_2224.jpg](../../public/photos-ref/IMG_2224.jpg) | ground | materials, view | Open sand looking north-east along the coast to the mountains |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades | From the beach looking back at the resort frontage |
-| [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline |
 | [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk |
 | [6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg](../../public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg) | ground | materials | Beach: pebbles on sand at the water line **Note:** No GPS in the file: exact stretch of beach not confirmed. |
 | [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk |
