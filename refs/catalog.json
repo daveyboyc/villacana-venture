@@ -893,7 +893,9 @@
    "altitude": 9.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:north-pool-west-terrace"
+  ],
   "looksAt": [
    -176.7,
    20.1
@@ -969,7 +971,9 @@
    "altitude": 9.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:north-pool-west-terrace"
+  ],
   "looksAt": [
    -178.5,
    22.0
@@ -1041,7 +1045,9 @@
    "altitude": 10.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:north-pool-west-terrace"
+  ],
   "looksAt": [
    -171.5,
    26.0

@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 335,
-  "photosCitedByModel": 78,
-  "modelFeaturesWithPhotoCitations": 80
+  "features": 336,
+  "photosCitedByModel": 81,
+  "modelFeaturesWithPhotoCitations": 81
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2609,6 +2609,17 @@
    ]
   },
   {
+   "id": "raised_terraces.json:north-pool-west-terrace",
+   "name": "North pool · north-west raised terrace and tiled stair",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
    "id": "steps:cervantes-elena-steps",
    "name": "Cervantes / Elena · steps beside the ramp",
    "kind": "reference feature",
@@ -4376,6 +4387,12 @@
    "angleOffset": 4.7
   },
   {
+   "from": "photo:IMG_2204.jpg",
+   "to": "raised_terraces.json:north-pool-west-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2205.jpg",
    "to": "building:6266601UF1366N_part3",
    "relation": "possibly-in-view",
@@ -4409,6 +4426,12 @@
    "relation": "possibly-in-view",
    "distance": 35.8,
    "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "raised_terraces.json:north-pool-west-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2207.jpg",
@@ -4451,6 +4474,12 @@
    "relation": "possibly-in-view",
    "distance": 36.9,
    "angleOffset": 8.9
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "raised_terraces.json:north-pool-west-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2214.jpg",

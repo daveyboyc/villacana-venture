@@ -6,9 +6,9 @@ Task `north-pool-garden-walls` · area **North pool** · priority P2 · structur
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/north-pool.md` and the contact sheet `villacana-reference/contact-sheets/north-pool.jpg`
-- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`
-- data: `data/objects.json`, `data/levels_survey.json`
-- src: `src/world.ts`, `src/water.ts`
+- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`, `docs/RAISED_TERRACES.md`
+- data: `data/objects.json`, `data/levels_survey.json`, `data/raised_terraces.json`
+- src: `src/world.ts`, `src/water.ts`, `src/raised-terraces.ts`
 
 ## Photos to build from
 
