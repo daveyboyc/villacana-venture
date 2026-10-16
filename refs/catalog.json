@@ -545,6 +545,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_north_patios.json:cervantes-north-partition-east",
    "cervantes_garden_door.json:cervantes-garden-door",
    "cervantes_garden_door.json:cervantes-junction-north-bed"
   ]
@@ -1218,6 +1219,7 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
    "cervantes_patio_walls.json:cervantes-patio-north-1",
    "street:cervantes"
   ]
@@ -3522,6 +3524,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_north_patios.json:cervantes-north-partition-east",
    "cervantes_garden_door.json:cervantes-garden-door",
    "cervantes_garden_door.json:cervantes-junction-north-bed"
   ]
@@ -4040,9 +4043,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
    "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "street:cervantes",
-   "street:elena-south"
+   "street:cervantes"
   ]
  },
  {
@@ -5078,6 +5081,9 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "cervantes_north_patios.json:cervantes-north-partition-east",
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "cervantes_north_patios.json:cervantes-north-partition-west",
    "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "looksAt": [
@@ -5085,7 +5091,9 @@
    55.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "cervantes_north_patios.json:cervantes-north-partition-middle"
+  ],
   "subject": "The walled patios along Cervantes"
  },
  {
@@ -5447,13 +5455,19 @@
    "altitude": 12.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_north_patios.json:cervantes-north-partition-east",
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "cervantes_north_patios.json:cervantes-north-partition-west"
+  ],
   "looksAt": [
    -160.0,
    54.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "cervantes_north_patios.json:cervantes-north-partition-middle"
+  ],
   "subject": "The walled patios north of Cervantes"
  },
  {
@@ -5485,6 +5499,9 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "cervantes_north_patios.json:cervantes-north-partition-east",
+   "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "cervantes_north_patios.json:cervantes-north-partition-west",
    "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "looksAt": [
@@ -5492,7 +5509,9 @@
    54.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "cervantes_north_patios.json:cervantes-north-partition-middle"
+  ],
   "subject": "The walled patios north of Cervantes"
  },
  {

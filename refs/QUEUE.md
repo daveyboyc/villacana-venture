@@ -17,7 +17,6 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P2 | `south-pool-seaward-level` [#37](https://github.com/daveyboyc/villacana-venture/issues/37) | South pool: lawn level above the paseo and its seaward wall (after paseo-retaining-wall) | in-progress · issue_37 | [IMG_2349](../public/photos-ref/IMG_2349.jpg), [IMG_2188](../public/photos-ref/IMG_2188.jpg) |
 | P3 | `barraka-boardwalk` [#42](https://github.com/daveyboyc/villacana-venture/issues/42) | Barraka Beach: boardwalk, sign planter and parasols | in-progress · issue_42 | [IMG_2346](../public/photos-ref/IMG_2346.jpg), [IMG_2347](../public/photos-ref/IMG_2347.jpg), [IMG_2223](../public/photos-ref/IMG_2223.jpg), [IMG_2225](../public/photos-ref/IMG_2225.jpg) |
 | P3 | `cervantes-east-hedge` [#43](https://github.com/daveyboyc/villacana-venture/issues/43) | Cervantes east of Elena: white kerb wall and plumbago hedge | in-progress · issue_43 | [IMG_2356](../public/photos-ref/IMG_2356.jpg), [IMG_2360](../public/photos-ref/IMG_2360.jpg) |
-| P3 | `cervantes-north-patios` [#44](https://github.com/daveyboyc/villacana-venture/issues/44) | Walled patios along Cervantes from the roof views | open | [IMG_2368](../public/photos-ref/IMG_2368.jpg), [IMG_2369](../public/photos-ref/IMG_2369.jpg), [IMG_2359](../public/photos-ref/IMG_2359.jpg) |
 | P3 | `cervantes-steps-treads` [#56](https://github.com/daveyboyc/villacana-venture/issues/56) | Cervantes/Elena steps: tighten the treads to the photographed spacing | open | [IMG_2286](../public/photos-ref/IMG_2286.jpg), [IMG_2355](../public/photos-ref/IMG_2355.jpg), [IMG_2328](../public/photos-ref/IMG_2328.jpg) |
 | P3 | `junction-lawns` [#45](https://github.com/daveyboyc/villacana-venture/issues/45) | Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos | open | [IMG_2329](../public/photos-ref/IMG_2329.jpg), [IMG_2342](../public/photos-ref/IMG_2342.jpg), [IMG_2358](../public/photos-ref/IMG_2358.jpg), [IMG_2367](../public/photos-ref/IMG_2367.jpg), [IMG_2260](../public/photos-ref/IMG_2260.jpg) |
 | P3 | `elena-gated-entry` [#46](https://github.com/daveyboyc/villacana-venture/issues/46) | Elena: gated tiled entry west of the covered walkway | open | [IMG_2361](../public/photos-ref/IMG_2361.jpg), [IMG_2202](../public/photos-ref/IMG_2202.jpg), [IMG_2203](../public/photos-ref/IMG_2203.jpg) |
@@ -32,6 +31,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P1 | `paseo-retaining-wall` | Paseo: sandstone retaining wall, mesh fence and level drop | done · claude (subagent) | [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2349](../public/photos-ref/IMG_2349.jpg), [IMG_2352](../public/photos-ref/IMG_2352.jpg), [IMG_2354](../public/photos-ref/IMG_2354.jpg) |
 | P2 | `elena-garden-door` [#34](https://github.com/daveyboyc/villacana-venture/issues/34) | Elena north: path and garden door between the two hedged beds | done · issue_34 | [IMG_2199](../public/photos-ref/IMG_2199.jpg), [IMG_2201](../public/photos-ref/IMG_2201.jpg), [IMG_2200](../public/photos-ref/IMG_2200.jpg) |
 | P2 | `paseo-retrace-line` [#35](https://github.com/daveyboyc/villacana-venture/issues/35) | Paseo: re-trace the promenade line from the retaining wall | done · issue_35 | [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2352](../public/photos-ref/IMG_2352.jpg), [IMG_2354](../public/photos-ref/IMG_2354.jpg), [IMG_2349](../public/photos-ref/IMG_2349.jpg) |
+| P3 | `cervantes-north-patios` [#44](https://github.com/daveyboyc/villacana-venture/issues/44) | Walled patios along Cervantes from the roof views | done · issue_44 | [IMG_2368](../public/photos-ref/IMG_2368.jpg), [IMG_2369](../public/photos-ref/IMG_2369.jpg), [IMG_2359](../public/photos-ref/IMG_2359.jpg) |
 
 ## By area
 
@@ -39,7 +39,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 - **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`, `middle-pool-sw-steps`
 - **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
 - **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-gated-entry`, `elena-garden-door`
-- **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-north-patios`, `cervantes-steps-treads`, `junction-lawns`
+- **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-steps-treads`, `junction-lawns`, `cervantes-north-patios`
 - **Pintor Picasso and the car park** ([brief](areas/picasso.md)): `picasso-service-road`
 - **Calle Eva** ([brief](areas/eva.md)): `eva-walled-lawn`
 - **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** ([brief](areas/seaward-lanes.md)): `seaward-lanes-paving`

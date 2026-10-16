@@ -51,7 +51,7 @@ def features(s):
         add('paseo_wall.json:'+pw['edge']['id'],pw['edge']['name'],'reference feature','authored photo/map interpretation',evidence=pw['edge']['evidence'],points=[q for q in sf['paseo']['points'] if nearest(q,pw['wall']['face'])[0]<8],width=sf['paseo']['width'])
     south=json.loads((ROOT/'data/south_pool.json').read_text())['seawardLevel']
     add('south_pool.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=s['seaWall']['points'])
-    for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('cervantes_east_hedge.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
+    for filename,key in [('cervantes_north_patios.json','walls'),('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('cervantes_east_hedge.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
         data=json.loads((ROOT/'data'/filename).read_text())
         for f in data[key]:
             # Passages refer to an existing registry part rather than a second footprint.
