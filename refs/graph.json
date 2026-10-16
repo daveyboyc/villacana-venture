@@ -1446,6 +1446,11 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "elena_gated_entry.json:elena-gated-entry",
+   "kind": "model-feature",
+   "name": "Elena · private tiled entry west of covered walkway"
+  },
+  {
    "id": "elena_north.json:elena-north-garden-door-path",
    "kind": "model-feature",
    "name": "Elena north · paved approach between the hedged beds"
@@ -1611,7 +1616,7 @@
    "kind": "build-task",
    "name": "Elena: gated tiled entry west of the covered walkway",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 46
   },
   {
@@ -5130,6 +5135,21 @@
    "relation": "cites"
   },
   {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "ref:IMG_2202.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "ref:IMG_2203.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "ref:IMG_2361.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "elena_north.json:elena-north-garden-door-path",
    "to": "ref:IMG_2199.jpg",
    "relation": "cites"
@@ -5707,6 +5727,11 @@
   {
    "from": "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_gated_entry.json:elena-gated-entry",
+   "to": "area:elena",
    "relation": "in-area"
   },
   {
@@ -7118,6 +7143,12 @@
   {
    "from": "ref:IMG_2360.jpg",
    "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2361.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
    "relation": "looks-at",
    "basis": "reviewed"
   },

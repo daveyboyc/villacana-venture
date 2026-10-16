@@ -1,3 +1,4 @@
+import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
@@ -167,9 +168,11 @@ async function boot(): Promise<void> {
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addMiddlePool(scene);
   addMiddleSouthGate(scene);
+  addElenaGatedEntry(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
+  fenceRings.push(...elenaEntryRings());
   fenceRings.push(...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);

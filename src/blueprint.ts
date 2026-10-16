@@ -1,3 +1,4 @@
+import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {barrakaSections} from "./barraka-boardwalk";
 import middleSouth from "../data/middle_pool_south_gate.json";
@@ -95,6 +96,8 @@ async function boot(): Promise<void> {
   for(const wall of elenaNorth.walls)titled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-id":wall.id}),`${wall.name}: ${wall.trust}`);
   const gate=gatewayParts();
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
+  titled(el("path",{d:path(elenaEntryRing),fill:"#b46b48",stroke:"#d1b595","stroke-width":.06}),`${elenaEntry.name}: ${elenaEntry.trust}`);
+  for(const ring of elenaEntryRings())titled(el("path",{d:path(ring),fill:"#202622"}),`${elenaEntry.name}: closed private paired gates · ${elenaEntry.evidence.join(", ")}`);
   titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:"#ba8062","data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
   for(const w of elenaNorth.walls) for(const d of w.doors) {
     const [a,b]=w.points, len=Math.hypot(b[0]-a[0],b[1]-a[1]), ux=(b[0]-a[0])/len, uz=(b[1]-a[1])/len;

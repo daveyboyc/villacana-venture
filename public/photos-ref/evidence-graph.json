@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 313,
-  "photosCitedByModel": 66,
-  "modelFeaturesWithPhotoCitations": 56
+  "features": 314,
+  "photosCitedByModel": 67,
+  "modelFeaturesWithPhotoCitations": 57
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2284,6 +2284,17 @@
    ]
   },
   {
+   "id": "elena_gated_entry.json:elena-gated-entry",
+   "name": "Elena · private tiled entry west of covered walkway",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2361.jpg",
+    "IMG_2202.jpg",
+    "IMG_2203.jpg"
+   ]
+  },
+  {
    "id": "middle_pool_south_gate.json:middle-pool-south-gate",
    "name": "Middle pool · south double iron gate, curved head and tiled planter",
    "kind": "reference feature",
@@ -4073,6 +4084,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2202.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2203.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -4095,6 +4112,12 @@
   {
    "from": "photo:IMG_2203.jpg",
    "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -7343,6 +7366,12 @@
    "relation": "possibly-in-view",
    "distance": 34.1,
    "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2361.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2362.jpg",
