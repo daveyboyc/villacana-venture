@@ -9,10 +9,11 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 - Dave (2026-10-11): the lawn is bigger than the first pass showed, and the houses have front porches.
 - Skip the glass safety fence round the pools (Dave, 2026-10-11).
 - Best single reference: villacana-reference/photos/07 (whole courtyard looking north).
+- Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate.
 
 ## Read first
 
-- docs: `docs/LEVELS.md`
+- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`
 - data: `data/objects.json`, `data/levels_survey.json`
 - src: `src/world.ts`, `src/water.ts`
 - contact sheet: `villacana-reference/contact-sheets/north-pool.jpg` (thumbnails of everything below, numbered in this order)
@@ -57,5 +58,5 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |
 | `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies |
 | `villacana-reference/apple-maps/09-3d-north-pool-looking-south.png` | aerial | layout | Apple Maps 3D: north pool looking south, lawn ring, curved path, deck |
-| [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west._ |
+| [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west, elena_gated_entry.json:elena-gated-entry._ |
 | [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |

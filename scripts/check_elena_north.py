@@ -30,7 +30,7 @@ def clear_of_everything(p,half,what):
  for pool in s['pools']:assert not inside(*p,pool['ring']),f"{what} crosses a pool"
  assert inside(*p,d['review']['ring']),f"{what} leaves the reviewed Elena band"
 
-features=[d['gateway'],*d['walls'],*d['beds']]
+features=[d['gateway'],*d['walls'],*d['beds'],d['gardenPath']]
 assert len({f['id'] for f in features})==len(features)
 for f in features:
  assert f['evidence'] and all(p in photos for p in f['evidence']),f"{f['id']} cites a missing photo"
@@ -60,4 +60,22 @@ for bed in d['beds']:
 for box in d['planters']:
  assert .3<=box['height']<=1 and box['evidence'] and all(p in photos for p in box['evidence'])
  for p in sample(box['ring'],True):clear_of_everything(p,0,box['id'])
+# The spur uses the existing hedge-bed gap, stays open, and terminates at the
+# photographed closed door; the new wall is finite, not an inferred enclosure.
+path=d['gardenPath'];garden=next(w for w in d['walls'] if w['id']=='elena-north-garden-wall')
+assert len(garden['points'])==2 and len(garden['doors'])==1
+assert all(inside(*p,d['review']['ring']) for p in path['ring'])
+start,end=path['from_'],path['to']
+assert math.dist(start,end)>2
+assert math.dist(end,garden['doors'][0]['at'])<.01
+assert distance(end,*garden['points'])<.01
+# Probe only the navigable centre: paving must not become solid before the door.
+for i in range(16):
+ p=[start[j]+(end[j]-start[j])*i/20 for j in range(2)]
+ for bed in d['beds']:
+  assert not inside(*p,bed['ring']), 'Garden approach crosses a raised bed'
+  assert min(distance(p,a,b) for a,b in zip(bed['ring'],bed['ring'][1:]+bed['ring'][:1]))>=PLAYER, 'Garden approach too narrow'
+win=d['gardenWindow'];ret=next(w for w in d['walls'] if w['id']==win['wall'])
+assert distance(win['at'],*ret['points'])<.01
+assert 0<win['sill']<win['sill']+win['height']<ret['height']
 print('Elena north: photo-linked gateway, patio wall and beds keep the lanes clear, gateway open and walkable, houses and pools untouched PASS')

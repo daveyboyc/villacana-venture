@@ -97,6 +97,60 @@
     "IMG_2363.jpg"
    ],
    "trust": "White wall between the lane and the private patios in front of the east terrace; brown door in it. Height estimated."
+  },
+  {
+   "id": "elena-north-garden-wall",
+   "name": "Elena north · garden wall and closed timber door",
+   "points": [
+    [
+     -151.43,
+     35.13
+    ],
+    [
+     -144.3,
+     47.36
+    ]
+   ],
+   "height": 1.85,
+   "thickness": 0.26,
+   "doors": [
+    {
+     "at": [
+      -144.6318881162498,
+      46.79071645697966
+     ],
+     "width": 0.95,
+     "height": 1.95
+    }
+   ],
+   "evidence": [
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ],
+   "trust": "White garden wall behind the planted beds, closed timber door at the east end of their intervening path (IMG_2199-2201). Alignment follows existing bed backs; dimensions estimated, not surveyed. Ends at the photographed door surround; no continuation into the patios is claimed."
+  },
+  {
+   "id": "elena-north-window-return",
+   "name": "Elena north · barred window wall at the north end of the bed",
+   "points": [
+    [
+     -153.69,
+     36.44
+    ],
+    [
+     -151.43,
+     35.13
+    ]
+   ],
+   "height": 2.0,
+   "thickness": 0.18,
+   "doors": [],
+   "evidence": [
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ],
+   "trust": "Short transverse white wall with a barred dark window faces south along Elena (IMG_2200/2201). Approximate placement against the existing magnolia bed; no unseen enclosure is inferred."
   }
  ],
  "beds": [
@@ -293,5 +347,51 @@
   "IMG_2200.jpg",
   "IMG_2201.jpg",
   "IMG_2202.jpg"
- ]
+ ],
+ "gardenPath": {
+  "id": "elena-north-garden-door-path",
+  "name": "Elena north · paved approach between the hedged beds",
+  "ring": [
+   [
+    -147.2,
+    47.59
+   ],
+   [
+    -146.59,
+    48.63
+   ],
+   [
+    -144.51,
+    47.41
+   ],
+   [
+    -144.94,
+    46.28
+   ]
+  ],
+  "from_": [
+   -147.48,
+   48.44
+  ],
+  "to": [
+   -144.6318881162498,
+   46.79071645697966
+  ],
+  "evidence": [
+   "IMG_2199.jpg",
+   "IMG_2200.jpg",
+   "IMG_2201.jpg"
+  ],
+  "trust": "Terracotta spur visible between the two hedge-edged beds in IMG_2200/2201. Uses the existing bed edges; the path stays open up to the photographed closed door."
+ },
+ "gardenWindow": {
+  "wall": "elena-north-window-return",
+  "at": [
+   -152.56,
+   35.785
+  ],
+  "width": 0.85,
+  "height": 1.05,
+  "sill": 0.65
+ }
 }

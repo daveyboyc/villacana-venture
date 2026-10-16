@@ -1,0 +1,46 @@
+{
+ "scope": "Only the short north-side kerb and plumbago strip east of Elena visible in IMG_2356. No continuation to the eastern car park is asserted.",
+ "walls": [
+  {
+   "id": "cervantes-east-plumbago-kerb",
+   "name": "Cervantes east · white plumbago kerb",
+   "points": [
+    [
+     -141.2847,
+     49.2625
+    ],
+    [
+     -134.4159,
+     45.1617
+    ]
+   ],
+   "height": 0.38,
+   "thickness": 0.16,
+   "solid": true,
+   "side": "north",
+   "streetId": "cervantes",
+   "evidence": [
+    "IMG_2356.jpg",
+    "IMG_2360.jpg"
+   ],
+   "trust": "Ground photo supports low white kerb beneath tall blue-flowering plumbago on the north side; roof photo supports lane context only. Short 8 m extent, alignment, 0.38 m height and thickness estimated against checked lane/aerial/registry; GPS camera pin uncertain by 4.5 m. End points deliberately bounded rather than a traced property boundary."
+  }
+ ],
+ "planting": {
+  "from": [
+   -141.2591,
+   48.5251
+  ],
+  "to": [
+   -135.0772,
+   44.8344
+  ],
+  "height": 1.65,
+  "radius": 0.36,
+  "spacing": 0.48,
+  "evidence": [
+   "IMG_2356.jpg"
+  ],
+  "trust": "Tall green hedge with scattered pale-blue flowers observed; density and dimensions estimated. Details only, guarded by full visible radius."
+ }
+}

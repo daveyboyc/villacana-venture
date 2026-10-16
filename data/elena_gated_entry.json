@@ -1,0 +1,69 @@
+{
+ "checkedAt": "2026-10-15",
+ "id": "elena-gated-entry",
+ "name": "Elena · private tiled entry west of covered walkway",
+ "passageId": "6265201UF1366N_part5",
+ "evidence": [
+  "IMG_2361.jpg",
+  "IMG_2202.jpg",
+  "IMG_2203.jpg"
+ ],
+ "trust": "Photo-supported paired iron gates, white shaped lintel and patterned terracotta paving. Position constrained by the west end of the registry covered walkway and adjacent house fronts/aerial; approximately 0.5–1 m, not surveyed. Only the first private gateway is built; further enclosures visible behind it are outside this trace. IMG_2203 looks east out of the walkway and is a route-preservation comparison, not a direct view of the west gates.",
+ "ring": [
+  [
+   -163.319,
+   42.048
+  ],
+  [
+   -166.767,
+   44.076
+  ],
+  [
+   -165.529,
+   46.18
+  ],
+  [
+   -162.081,
+   44.152
+  ]
+ ],
+ "points": [
+  [
+   -166.767,
+   44.076
+  ],
+  [
+   -165.529,
+   46.18
+  ]
+ ],
+ "opening": 1.8,
+ "pierWidth": 0.32,
+ "height": 2.2,
+ "thickness": 0.22,
+ "headHeight": 0.22,
+ "walkwayProbe": [
+  [
+   -155.0,
+   38.95
+  ],
+  [
+   -162.7,
+   43.1
+  ]
+ ],
+ "planting": [
+  {
+   "x": -166.31,
+   "z": 44.063,
+   "y": 1.9,
+   "scale": 0.45
+  },
+  {
+   "x": -165.296,
+   "z": 45.787,
+   "y": 1.9,
+   "scale": 0.45
+  }
+ ]
+}

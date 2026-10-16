@@ -1,0 +1,83 @@
+{
+ "id": "middle-pool-south-gate",
+ "name": "Middle pool · south double iron gate, curved head and tiled planter",
+ "center": [
+  -126.48,
+  103.85
+ ],
+ "forward": [
+  0.5216197630240993,
+  0.853178072164705
+ ],
+ "opening": 1.85,
+ "pier": 0.22,
+ "height": 2.15,
+ "crownRise": 0.15,
+ "headDepth": 0.28,
+ "leafLength": 0.925,
+ "planter": {
+  "along": [
+   -1.45,
+   0.1
+  ],
+  "across": [
+   1.15,
+   1.85
+  ],
+  "height": 0.72,
+  "wall": 0.14
+ },
+ "panel": {
+  "along": [
+   -1.1,
+   -0.1
+  ],
+  "across": 1.72,
+  "bottom": 0.25,
+  "width": 1.0,
+  "height": 0.65,
+  "wallHeight": 1.85
+ },
+ "step": {
+  "along": [
+   -1.1,
+   -0.1
+  ],
+  "across": [
+   1.02,
+   1.72
+  ],
+  "height": 0.22
+ },
+ "paving": {
+  "along": [
+   -3.0,
+   0.15
+  ],
+  "across": [
+   -1.0,
+   1.02
+  ]
+ },
+ "drain": {
+  "along": -1.9,
+  "across": -0.35,
+  "length": 0.65,
+  "width": 0.65
+ },
+ "review": {
+  "along": [
+   -3.1,
+   1.1
+  ],
+  "across": [
+   -1.35,
+   2.0
+  ]
+ },
+ "evidence": [
+  "IMG_2334.jpg",
+  "IMG_2335.jpg"
+ ],
+ "trust": "Separate southern entrance, not the southwest steps of IMG_2333. IMG_2334 shows two open iron leaves below a shallow curved white rendered head with sparse metal pergola frame above, crazy paving and a flush drain. IMG_2335 shows a raised planter flanking a recessed white step and a white tiled panel framed with blue/yellow patterned tiles. Placement follows the gap between unchanged registry blocks southeast of the camera pins, rather than treating GPS as a gate coordinate. Position (roughly 1–2 m), opening, heights, planter ends and shallow step dimensions are estimates; no grade change or enclosing wall beyond the photographed fragment is inferred. Tile motifs are schematic, not photo textures."
+}

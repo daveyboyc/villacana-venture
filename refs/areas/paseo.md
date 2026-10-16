@@ -7,8 +7,10 @@ The seafront promenade between the resort's seaward walls and the beach.
 ## Known facts and open questions
 
 - IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall with a green mesh fence on top holds the seafront houses above it. Built 14 October (data/paseo_wall.json, docs/SEAFRONT.md): about 134 m from the Dalí apron to the end of Calle Guillermo, about 1 m high by the south lawn (the paseo there was lowered from street level to match), lower towards Dalí.
-- Open: towards its east end the model makes the wall up to 3 m (the paseo falls to big-pool level there), but IMG_2227 from the beach suggests it stays about 1 m. A photo from the paseo near Calle Guillermo would settle it. The mapped (OSM) paseo line also sits up to 3 m seaward of the wall in places, leaving a sand strip the photos do not show.
+- Open: towards its east end the model makes the wall up to 3 m (the paseo falls to big-pool level there), but IMG_2227 from the beach suggests it stays about 1 m. A photo from the paseo near Calle Guillermo would settle it.
 - IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349).
+- Issue #35: paseo centreline generated 1.5 m seaward of the aerial/photo-backed sandstone wall, 3 m approximate width; pavement now meets the face as IMG_2350/IMG_2352/IMG_2354 show. Southwest former hold-in removed against aerial; gate approach and Barraka boardwalk OSM joins retained. Plan accuracy about 1-2 m, not a survey. Eastern wall height (#40) and registry house obstruction (#41) remain unresolved; levels and footprints unchanged.
+- Issue #40 evidence review (15 October): IMG_2227/IMG_2226 from the beach and IMG_2350 looking east do not resolve whether the paseo rises or the gardens fall near Guillermo. The nominal 3 m east-end wall is a result of the approximate paseo profile against assumed inland ground, not a measured height. All levels retained, including Dave's main-pool drop; task remains open. See docs/PASEO_EAST_END_HEIGHT_REVIEW.md for the specific photo needed.
 
 ## Read first
 
@@ -28,9 +30,8 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | open | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
+| P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
 | P2 | `paseo-house-clearance` [#41](https://github.com/daveyboyc/villacana-venture/issues/41) | Paseo east: registry house 6465801UF1366N_part5 blocks the walk (after paseo-retrace-line) | open | [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
-| P2 | `paseo-retrace-line` [#35](https://github.com/daveyboyc/villacana-venture/issues/35) | Paseo: re-trace the promenade line from the retaining wall | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
 | P3 | `paseo-details` [#49](https://github.com/daveyboyc/villacana-venture/issues/49) | Paseo: hedges behind the fence, windbreak cloth, lamp posts | open | [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2352](../../public/photos-ref/IMG_2352.jpg), [IMG_2354](../../public/photos-ref/IMG_2354.jpg), [IMG_2349](../../public/photos-ref/IMG_2349.jpg) |
 
 ## Built from these photos
@@ -53,6 +54,9 @@ graph LR
   F1 --> PIMG_2351_jpg(["IMG_2351"])
   F1 --> PIMG_2352_jpg(["IMG_2352"])
   F1 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F2["South lawn above the paseo"]
+  F2 --> PIMG_2188_jpg(["IMG_2188"])
+  F2 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
 ## Reviewed references
@@ -60,9 +64,9 @@ graph LR
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2350.jpg](../../public/photos-ref/IMG_2350.jpg) | ground | layout, levels, materials, view | Paseo looking north-east: stamped walk, sandstone retaining wall **Note:** The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here. _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge._ |
+| [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level._ |
 | [IMG_2352.jpg](../../public/photos-ref/IMG_2352.jpg) | ground | layout, levels, materials | Paseo looking west: sandstone wall, mesh fence, lamp posts _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge._ |
 | [IMG_2354.jpg](../../public/photos-ref/IMG_2354.jpg) | ground | layout, levels | Paseo curving north-east beside the sandstone wall _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge._ |
-| [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: paseo_wall.json:paseo-timber-edge._ |
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
