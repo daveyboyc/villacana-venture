@@ -90,6 +90,11 @@ async function boot(): Promise<void> {
   for(const wall of elenaNorth.walls)titled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-id":wall.id}),`${wall.name}: ${wall.trust}`);
   const gate=gatewayParts();
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
+  titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:"#ba8062","data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
+  for(const w of elenaNorth.walls) for(const d of w.doors) {
+    const [a,b]=w.points, len=Math.hypot(b[0]-a[0],b[1]-a[1]), ux=(b[0]-a[0])/len, uz=(b[1]-a[1])/len;
+    titled(el("path",{d:`M${d.at[0]-ux*d.width/2} ${d.at[1]-uz*d.width/2}L${d.at[0]+ux*d.width/2} ${d.at[1]+uz*d.width/2}`,stroke:"#6b4126","stroke-width":w.thickness+.04}),"Closed timber garden door");
+  }
   frontages.append(elena);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
   const middle=el("g",{id:"middle-pool-features"});

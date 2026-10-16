@@ -19,8 +19,9 @@
     "layout browser test walks into the path and stops at the door"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 34
+   "status": "done",
+   "issue": 34,
+   "owner": "issue_34"
   },
   {
    "id": "elena-east-patios",

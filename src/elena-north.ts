@@ -10,6 +10,7 @@ const gateway = layout.gateway;
 const walls = layout.walls.map((w) => ({ ...w, points: w.points as Vec2[], doors: w.doors.map((d) => ({ ...d, at: d.at as Vec2 })) }));
 export const elenaNorthBeds = layout.beds.map((b) => ({ ...b, ring: b.ring as Vec2[] }));
 export const elenaNorthPlanters = layout.planters.map((p) => ({ ...p, ring: p.ring as Vec2[] }));
+export const elenaGardenPath = layout.gardenPath;
 export const elenaNorthReview = layout.review.ring as Vec2[];
 
 export const inElenaNorthReview = (x: number, z: number): boolean => pointInRing(x, z, elenaNorthReview);
@@ -96,8 +97,36 @@ export function addElenaNorth(scene: THREE.Scene): void {
     for (let i = 0; i < w.points.length - 1; i++) wall(scene, w.points[i], w.points[i + 1], w.height, w.thickness, plaster, w.id);
     const [a, b] = w.points, length = Math.hypot(b[0] - a[0], b[1] - a[1]), dir: Vec2 = [(b[0] - a[0]) / length, (b[1] - a[1]) / length];
     // Doors open onto the lane, on the wall's west face.
-    for (const d of w.doors) door(scene, d.at, dir, 1, w.thickness, d.width, d.height, timber);
+    for (const d of w.doors) {
+      if (w.id === "elena-north-garden-wall") {
+        const a: Vec2 = [d.at[0] - dir[0] * (d.width / 2 + 0.10), d.at[1] - dir[1] * (d.width / 2 + 0.10)];
+        const b: Vec2 = [d.at[0] + dir[0] * (d.width / 2 + 0.10), d.at[1] + dir[1] * (d.width / 2 + 0.10)];
+        wall(scene, a, b, d.height + 0.16, w.thickness, plaster, w.id);
+      }
+      door(scene, d.at, dir, 1, w.thickness, d.width, d.height, timber);
+    }
   }
+
+  // The north-facing return has a recessed dark window and projecting iron grille.
+  // It remains solid: this small barred opening is not a pedestrian passage.
+  const win = layout.gardenWindow, returnWall = walls.find(w => w.id === win.wall)!;
+  const [wa, wb] = returnWall.points, wl = Math.hypot(wb[0] - wa[0], wb[1] - wa[1]);
+  const wu: Vec2 = [(wb[0] - wa[0]) / wl, (wb[1] - wa[1]) / wl];
+  const dark = new THREE.MeshStandardMaterial({ color: "#302924", roughness: 0.9 });
+  const iron = new THREE.MeshStandardMaterial({ color: "#28332b", roughness: 0.8 });
+  const windowFace = (offset: number, bottom: number, width: number, height: number, mat: THREE.Material, depth: number) => {
+    const at: Vec2 = [win.at[0] + wu[0] * offset - wu[1] * depth, win.at[1] + wu[1] * offset + wu[0] * depth];
+    const m = slab([at[0] - wu[0] * width / 2, at[1] - wu[1] * width / 2], [at[0] + wu[0] * width / 2, at[1] + wu[1] * width / 2], height, 0.025, mat, bottom);
+    m.name = "elena-north-barred-window"; scene.add(m);
+  };
+  windowFace(0, win.sill, win.width, win.height, dark, returnWall.thickness / 2 + 0.02);
+  for (let i = 0; i <= 5; i++) windowFace(-win.width / 2 + win.width * i / 5, win.sill, 0.025, win.height, iron, returnWall.thickness / 2 + 0.12);
+  for (const y of [win.sill, win.sill + 0.15, win.sill + win.height]) windowFace(0, y, win.width + 0.08, 0.025, iron, returnWall.thickness / 2 + 0.12);
+  // Paving is a ground surface, not a collision ring. The terminal closed door
+  // is solid with its wall; the two existing beds define the approach edges.
+  const pathShape = new THREE.Shape(elenaGardenPath.ring.map(([x, z]) => new THREE.Vector2(x, -z)));
+  const paving = new THREE.Mesh(new THREE.ShapeGeometry(pathShape).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: "#ba8062", map: surfaceTexture("paving"), roughness: 1 }));
+  paving.position.y = 0.025; paving.receiveShadow = true; paving.name = elenaGardenPath.id; paving.userData.referenceSurface = true; scene.add(paving);
 
   // Raised beds: a low white kerb all round, dark soil inside.
   const soil = new THREE.MeshStandardMaterial({ color: "#5a4433", roughness: 1 });
