@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "896235c100c9272f43b19e87d6ec5104c731225f661f59cadf52c3f3bc1930ad",
+ "inputDigest": "b802a177bf232c7b38121a8fa192b1c213f1a4220f5bcdb5d3c9ab85d3ca6939",
  "summary": {
   "unplaced": 1,
   "suggested": 77,
@@ -3811,12 +3811,6 @@
    "to": "street:patricia",
    "relation": "camera-nearby",
    "gap": 4.7
-  },
-  {
-   "from": "photo:IMG_2189.jpg",
-   "to": "street:silvia-south",
-   "relation": "camera-nearby",
-   "gap": 5.6
   },
   {
    "from": "photo:IMG_2189.jpg",

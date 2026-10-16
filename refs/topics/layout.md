@@ -40,6 +40,7 @@ Where lanes, walls, openings, patios and lawns are and how they connect.
 | `villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg` | ground | layout, materials | Terracotta-tiled lane to an arched white gateway into the middle pool courtyard |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
+| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia |
 
 ## South pool
 
@@ -179,10 +180,10 @@ Where lanes, walls, openings, patios and lawns are and how they connect.
 | [IMG_2190.jpg](../../public/photos-ref/IMG_2190.jpg) | ground | layout, materials | Covered arched passage with potted plants, patterned tiles _Used by: seaward_paving.json:silvia-patterned-floor._ |
 | [IMG_2235.jpg](../../public/photos-ref/IMG_2235.jpg) | ground | materials, layout | Lane paved in octagonal tiles between a white wall and lawn **Note:** Octagonal paving here, not square tiles. _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
+| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |
-| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials | Narrow tiled lane with window grilles, lanterns and planting |
 | [IMG_2229.jpg](../../public/photos-ref/IMG_2229.jpg) | ground | layout, materials | Tiled lane between lawns with a white tiled bench |
 | [IMG_2230.jpg](../../public/photos-ref/IMG_2230.jpg) | ground | layout, materials | Tiled lane beside hedges and a patio wall |
 | [IMG_2234.jpg](../../public/photos-ref/IMG_2234.jpg) | ground | layout, signage | Tiled lane with a wall plaque, lamp post and lawn |

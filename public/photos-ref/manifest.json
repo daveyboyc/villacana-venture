@@ -103,15 +103,20 @@
  {
   "file": "IMG_2189.jpg",
   "title": "IMG_2189",
-  "trust": "phone location",
+  "trust": "checked against photo content",
   "x": -114.9,
   "z": 126.2,
   "heading": 322,
   "taken": "2026-10-11",
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 7.7,
+  "locationBasis": "Confirmed on the photo map by Dave (2026-10-15): the camera pin is right.",
+  "accuracy": 3.0,
   "altitude": 6.9,
-  "headingBasis": "EXIF true north"
+  "headingBasis": "EXIF true north",
+  "gps": {
+   "x": -114.9,
+   "z": 126.2,
+   "accuracy": 7.7
+  }
  },
  {
   "file": "IMG_2190.jpg",

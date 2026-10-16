@@ -79,14 +79,22 @@
  },
  "IMG_2189.jpg": {
   "shows": [
-   "seaward-lanes"
+   "seaward-lanes",
+   "middle-pool"
   ],
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "materials"
+   "materials",
+   "planting"
   ],
-  "title": "Narrow tiled lane with window grilles, lanterns and planting"
+  "title": "Calle Silvia north: tiled lane looking to the middle pool south gateway",
+  "note": "Dave (2026-10-15): Looks down to the middle pool down called Silvia",
+  "looksAt": [
+   -127.0,
+   103.0
+  ],
+  "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
  },
  "IMG_2190.jpg": {
   "shows": [

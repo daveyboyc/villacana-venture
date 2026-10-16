@@ -141,3 +141,21 @@ Specific review items:
   legitimate multiple-direction coverage, not three independent spatial anchors.
 
 No street, building, wall, ramp or coastline geometry is changed in this photo pass.
+
+## Reviews from the photo map
+
+Dave checks pins on the photo map page (a private claude.ai artifact). For each
+photo he can mark the position right, move the pin (where he stood, and
+optionally where it points), mark it unsure, and add a note. The page keeps
+these in its `reviews` store. To apply a batch:
+
+1. Export the store (Claude: `ArtifactData` `list` of `reviews` with `out_dir`).
+2. `python3 scripts/apply_photo_reviews.py <export folder>`: confirmed and
+   moved pins go to `data/photo_positions.json` and the manifest as
+   "checked against photo content" (original GPS kept under `gps`); notes go
+   into the photo's `note` in `data/reference_tags.json`. Running it twice
+   changes nothing.
+3. Look at each reviewed photo and improve its tag if the note says more
+   (`shows`, `subject`, `looksAt`), then run `assign_photo_map.py` and
+   `build_references.py`.
+

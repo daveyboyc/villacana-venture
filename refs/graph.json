@@ -165,7 +165,7 @@
   {
    "id": "ref:IMG_2189.jpg",
    "kind": "phone-photo",
-   "name": "Narrow tiled lane with window grilles, lanterns and planting",
+   "name": "Calle Silvia north: tiled lane looking to the middle pool south gateway",
    "path": "public/photos-ref/IMG_2189.jpg",
    "viewpoint": "ground"
   },
@@ -1955,6 +1955,11 @@
    "relation": "shows"
   },
   {
+   "from": "ref:IMG_2189.jpg",
+   "to": "area:middle-pool",
+   "relation": "shows"
+  },
+  {
    "from": "ref:IMG_2190.jpg",
    "to": "area:seaward-lanes",
    "relation": "shows"
@@ -3122,6 +3127,11 @@
   {
    "from": "ref:IMG_2189.jpg",
    "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2189.jpg",
+   "to": "topic:planting",
    "relation": "useful-for"
   },
   {
@@ -6311,7 +6321,13 @@
    "from": "ref:IMG_2189.jpg",
    "to": "street:silvia-north",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2189.jpg",
+   "to": "street:eva",
+   "relation": "looks-at",
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2192.jpg",
