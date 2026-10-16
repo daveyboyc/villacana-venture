@@ -26,14 +26,6 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `south-lawn-over-paseo` (retaining-wall): 0.9-1.1 m above the paseo, medium confidence at (-74, 198) ±3 m. Model: **built**, task `south-pool-seaward-level`. About three sandstone courses; the hedge grows from coping level and the deck and water are seen from just above at eye height. IMG_2350 against a lamp post gives 1.0-1.2 m. Lower to the west: 0.6-0.9 m in IMG_2352, 0.5-0.8 m in IMG_2354. The model has the paseo 1 m below street level beside the south lawn, rising to leave the wall about 0.5 m at its west end (data/main_pool.json paseo profile), which matches. (IMG_2349.jpg, IMG_2350.jpg, IMG_2188.jpg)
 
-## Open build tasks
-
-From `data/build_queue.json`; issue bodies in `refs/issues/`.
-
-| Priority | Task | What | Status | Photos |
-| --- | --- | --- | --- | --- |
-| P2 | `south-pool-seaward-level` [#37](https://github.com/daveyboyc/villacana-venture/issues/37) | South pool: lawn level above the paseo and its seaward wall (after paseo-retaining-wall) | in-progress · issue_37 | [IMG_2349](../../public/photos-ref/IMG_2349.jpg), [IMG_2188](../../public/photos-ref/IMG_2188.jpg) |
-
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.

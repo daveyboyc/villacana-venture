@@ -30,15 +30,6 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `beach-fall` (slope): 1-2 m above the waterline, low confidence. Model: **built**. The paseo's timber edge is about 0.1 m above the sand; the beach falls to the water over 30-50 m. (IMG_2351.jpg)
 
-## Open build tasks
-
-From `data/build_queue.json`; issue bodies in `refs/issues/`.
-
-| Priority | Task | What | Status | Photos |
-| --- | --- | --- | --- | --- |
-| P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | in-progress · issue_32 | [IMG_2285](../../public/photos-ref/IMG_2285.jpg), [IMG_2298](../../public/photos-ref/IMG_2298.jpg), [IMG_2299](../../public/photos-ref/IMG_2299.jpg), [IMG_2300](../../public/photos-ref/IMG_2300.jpg) |
-| P3 | `barraka-boardwalk` [#42](https://github.com/daveyboyc/villacana-venture/issues/42) | Barraka Beach: boardwalk, sign planter and parasols | in-progress · issue_42 | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg), [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2225](../../public/photos-ref/IMG_2225.jpg) |
-
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.

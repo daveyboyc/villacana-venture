@@ -22,14 +22,6 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 Layout: 9, Facades and roofs: 3, Materials: 3, Planting: 5, Signs: 1
 11 reviewed, 0 suggested only by camera position.
 
-## Open build tasks
-
-From `data/build_queue.json`; issue bodies in `refs/issues/`.
-
-| Priority | Task | What | Status | Photos |
-| --- | --- | --- | --- | --- |
-| P3 | `eva-walled-lawn` [#47](https://github.com/daveyboyc/villacana-venture/issues/47) | Calle Eva: walled lawn corner with espaliered bougainvillea | in-progress · issue_47 | [IMG_2339](../../public/photos-ref/IMG_2339.jpg), [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2337](../../public/photos-ref/IMG_2337.jpg), [IMG_2338](../../public/photos-ref/IMG_2338.jpg) |
-
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
