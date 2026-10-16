@@ -355,9 +355,15 @@
     "docs/STREET_LAYOUT.md"
    ],
    "data": [
-    "data/street_layout.json"
+    "data/street_layout.json",
+    "data/seaward_paving.json"
    ],
-   "src": []
+   "src": [
+    "src/seaward-paving.ts"
+   ],
+   "notes": [
+    "IMG_2235/2237/2239 support octagonal terracotta with diamond infills on the photographed Teodoro Rojo run; IMG_2240 remains square. IMG_2185/2190 support cream/blue corner inserts in covered-floor tiles. Material masks use existing ground/registry strips; tile dimensions and passage extents remain estimates, and solid registry strips may still obscure the floor until separately traced as passages. No levels or geometry were changed."
+   ]
   },
   {
    "id": "barraka-beach",

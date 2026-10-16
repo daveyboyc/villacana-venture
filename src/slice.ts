@@ -1,3 +1,4 @@
+import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
@@ -448,6 +449,9 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   tctx.globalCompositeOperation = "source-in";
   tctx.fillStyle = pattern;
   tctx.fillRect(0, 0, size, size);
+  // Local materials are clipped by the existing paving mask, preserving lawn and footprints.
+  tctx.globalCompositeOperation = "source-atop";
+  paintSeawardPaving(tctx,skeleton,centre,span,size);
   pctx.drawImage(tiled, 0, 0);
 
   const lawn = skeleton.cover.classes.lawn;

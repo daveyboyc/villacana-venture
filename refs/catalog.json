@@ -147,13 +147,17 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seaward_paving.json:seaward-patterned-floor"
+  ],
   "looksAt": [
    -76.7,
    164.2
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "seaward_paving.json:seaward-patterned-floor"
+  ]
  },
  {
   "id": "IMG_2186.jpg",
@@ -186,7 +190,9 @@
    164.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "seaward_paving.json:seaward-patterned-floor"
+  ]
  },
  {
   "id": "IMG_2187.jpg",
@@ -321,7 +327,9 @@
    "altitude": 6.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seaward_paving.json:silvia-patterned-floor"
+  ],
   "looksAt": [
    -116.1,
    112.9
@@ -1702,6 +1710,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:jorge",
+   "seaward_paving.json:teodoro-octagonal-paving",
    "street:teodoro-rojo"
   ]
  },
@@ -1731,13 +1740,16 @@
    "altitude": 4.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seaward_paving.json:teodoro-octagonal-paving"
+  ],
   "looksAt": [
    -58.9,
    140.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "seaward_paving.json:teodoro-octagonal-paving",
    "street:teodoro-rojo"
   ]
  },
@@ -1772,7 +1784,9 @@
    131.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "seaward_paving.json:teodoro-octagonal-paving"
+  ]
  },
  {
   "id": "IMG_2237.jpg",
@@ -1800,13 +1814,16 @@
    "altitude": 5.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seaward_paving.json:teodoro-octagonal-paving"
+  ],
   "looksAt": [
    -65.1,
    128.9
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "seaward_paving.json:teodoro-octagonal-paving",
    "street:teodoro-rojo"
   ]
  },
@@ -1869,7 +1886,9 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seaward_paving.json:teodoro-octagonal-paving"
+  ],
   "looksAt": [
    -71.6,
    114.6

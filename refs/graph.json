@@ -1666,6 +1666,21 @@
    "name": "Cervantes / Elena ramp"
   },
   {
+   "id": "seaward_paving.json:seaward-patterned-floor",
+   "kind": "model-feature",
+   "name": "seaward patterned floor"
+  },
+  {
+   "id": "seaward_paving.json:silvia-patterned-floor",
+   "kind": "model-feature",
+   "name": "silvia patterned floor"
+  },
+  {
+   "id": "seaward_paving.json:teodoro-octagonal-paving",
+   "kind": "model-feature",
+   "name": "teodoro octagonal paving"
+  },
+  {
    "id": "south_pool.json:south-pool-seaward-level",
    "kind": "model-feature",
    "name": "South lawn above the paseo"
@@ -1812,7 +1827,7 @@
    "kind": "build-task",
    "name": "Seaward lanes: octagonal paving and covered passages",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 51
   },
   {
@@ -5780,6 +5795,31 @@
    "relation": "cites"
   },
   {
+   "from": "seaward_paving.json:seaward-patterned-floor",
+   "to": "ref:IMG_2185.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "seaward_paving.json:silvia-patterned-floor",
+   "to": "ref:IMG_2190.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "seaward_paving.json:teodoro-octagonal-paving",
+   "to": "ref:IMG_2235.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "seaward_paving.json:teodoro-octagonal-paving",
+   "to": "ref:IMG_2237.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "seaward_paving.json:teodoro-octagonal-paving",
+   "to": "ref:IMG_2239.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "south_pool.json:south-pool-seaward-level",
    "to": "ref:IMG_2188.jpg",
    "relation": "cites"
@@ -6185,6 +6225,21 @@
    "relation": "in-area"
   },
   {
+   "from": "seaward_paving.json:seaward-patterned-floor",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "seaward_paving.json:silvia-patterned-floor",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "seaward_paving.json:teodoro-octagonal-paving",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
    "from": "south_pool.json:south-pool-seaward-level",
    "to": "area:paseo",
    "relation": "in-area"
@@ -6217,6 +6272,18 @@
   {
    "from": "ref:IMG_2182.jpg",
    "to": "street:jorge",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2185.jpg",
+   "to": "seaward_paving.json:seaward-patterned-floor",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2186.jpg",
+   "to": "seaward_paving.json:seaward-patterned-floor",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6594,13 +6661,37 @@
   },
   {
    "from": "ref:IMG_2234.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2234.jpg",
    "to": "street:teodoro-rojo",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
   {
    "from": "ref:IMG_2235.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2235.jpg",
    "to": "street:teodoro-rojo",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2236.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2237.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

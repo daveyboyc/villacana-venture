@@ -385,8 +385,9 @@
     "render from IMG_2235"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 51
+   "status": "in-progress",
+   "issue": 51,
+   "owner": "issue51"
   },
   {
    "id": "picasso-service-road",

@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 331,
-  "photosCitedByModel": 73,
-  "modelFeaturesWithPhotoCitations": 74
+  "features": 334,
+  "photosCitedByModel": 78,
+  "modelFeaturesWithPhotoCitations": 77
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -171,7 +171,9 @@
      "angleOffset": 14.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seaward_paving.json:seaward-patterned-floor"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -80.1,
@@ -349,7 +351,9 @@
      "angleOffset": 29.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seaward_paving.json:silvia-patterned-floor"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -121.1,
@@ -1813,7 +1817,9 @@
      "angleOffset": 30.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seaward_paving.json:teodoro-octagonal-paving"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -56.2,
@@ -1897,7 +1903,9 @@
      "angleOffset": 19.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seaward_paving.json:teodoro-octagonal-paving"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -62.4,
@@ -1981,7 +1989,9 @@
      "angleOffset": 1.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seaward_paving.json:teodoro-octagonal-paving"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -70.9,

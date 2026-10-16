@@ -1,0 +1,25 @@
+{
+ "trust": "Octagonal tiles and blue/cream corner inserts are photo supported. Tile sizes and material extents are estimates; existing geometry and levels are unchanged. Covered-floor masks use the existing registry strips, without asserting these strips are already open passages.",
+ "features": [
+  {
+   "id": "teodoro-octagonal-paving",
+   "kind": "octagonal",
+   "road": "teodoro-rojo",
+   "points": [[-56.2, 145.3], [-62.4, 134.2], [-70.9, 120.6]],
+   "width": 2.4,
+   "evidence": ["IMG_2235.jpg", "IMG_2237.jpg", "IMG_2239.jpg"]
+  },
+  {
+   "id": "silvia-patterned-floor",
+   "kind": "patterned",
+   "building": "6264401UF1366S_part2",
+   "evidence": ["IMG_2190.jpg"]
+  },
+  {
+   "id": "seaward-patterned-floor",
+   "kind": "patterned",
+   "building": "6364801UF1366S_part3",
+   "evidence": ["IMG_2185.jpg"]
+  }
+ ]
+}

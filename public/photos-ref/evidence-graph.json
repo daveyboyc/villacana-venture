@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 331,
-  "photosCitedByModel": 73,
-  "modelFeaturesWithPhotoCitations": 74
+  "features": 334,
+  "photosCitedByModel": 78,
+  "modelFeaturesWithPhotoCitations": 77
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2369,6 +2369,35 @@
    ]
   },
   {
+   "id": "seaward_paving.json:teodoro-octagonal-paving",
+   "name": "teodoro octagonal paving",
+   "kind": "reference feature",
+   "source": "photo-supported material; estimated extent",
+   "evidence": [
+    "IMG_2235.jpg",
+    "IMG_2237.jpg",
+    "IMG_2239.jpg"
+   ]
+  },
+  {
+   "id": "seaward_paving.json:silvia-patterned-floor",
+   "name": "silvia patterned floor",
+   "kind": "reference feature",
+   "source": "photo-supported material; estimated extent",
+   "evidence": [
+    "IMG_2190.jpg"
+   ]
+  },
+  {
+   "id": "seaward_paving.json:seaward-patterned-floor",
+   "name": "seaward patterned floor",
+   "kind": "reference feature",
+   "source": "photo-supported material; estimated extent",
+   "evidence": [
+    "IMG_2185.jpg"
+   ]
+  },
+  {
    "id": "elena_gated_entry.json:elena-gated-entry",
    "name": "Elena · private tiled entry west of covered walkway",
    "kind": "reference feature",
@@ -3712,6 +3741,12 @@
    "angleOffset": 14.0
   },
   {
+   "from": "photo:IMG_2185.jpg",
+   "to": "seaward_paving.json:seaward-patterned-floor",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2186.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -3799,6 +3834,12 @@
    "relation": "possibly-in-view",
    "distance": 34.6,
    "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2190.jpg",
+   "to": "seaward_paving.json:silvia-patterned-floor",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2191.jpg",
@@ -4811,6 +4852,12 @@
    "angleOffset": 30.6
   },
   {
+   "from": "photo:IMG_2235.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2236.jpg",
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
@@ -4865,6 +4912,12 @@
    "angleOffset": 19.5
   },
   {
+   "from": "photo:IMG_2237.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2238.jpg",
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
@@ -4917,6 +4970,12 @@
    "relation": "possibly-in-view",
    "distance": 31.3,
    "angleOffset": 1.0
+  },
+  {
+   "from": "photo:IMG_2239.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2240.jpg",
