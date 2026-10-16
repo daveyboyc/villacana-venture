@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 310,
-  "photosCitedByModel": 64,
-  "modelFeaturesWithPhotoCitations": 53
+  "features": 313,
+  "photosCitedByModel": 66,
+  "modelFeaturesWithPhotoCitations": 56
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1893,7 +1893,11 @@
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2261.jpg",
-    "IMG_2263.jpg"
+    "IMG_2263.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
    ]
   },
   {
@@ -1903,7 +1907,11 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2260.jpg",
-    "IMG_2261.jpg"
+    "IMG_2261.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
    ]
   },
   {
@@ -2124,6 +2132,40 @@
     "IMG_2284.jpg",
     "IMG_2296.jpg",
     "IMG_2297.jpg"
+   ]
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-1",
+   "name": "Cervantes / Elena · clipped lawn tree 1",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-2",
+   "name": "Cervantes / Elena · clipped lawn tree 2",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-3",
+   "name": "Cervantes / Elena · clipped lawn tree 3",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
    ]
   },
   {
@@ -5108,6 +5150,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2260.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2261.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6513,6 +6567,24 @@
    "angleOffset": 20.6
   },
   {
+   "from": "photo:IMG_2329.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2330.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6884,6 +6956,24 @@
    "angleOffset": 21.7
   },
   {
+   "from": "photo:IMG_2342.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2345.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
@@ -7134,6 +7224,36 @@
   },
   {
    "from": "photo:IMG_2358.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -7364,6 +7484,36 @@
    "relation": "possibly-in-view",
    "distance": 40.7,
    "angleOffset": 21.0
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2367.jpg",

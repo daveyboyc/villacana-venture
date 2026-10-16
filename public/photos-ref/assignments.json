@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 310,
-  "photosCitedByModel": 64,
-  "modelFeaturesWithPhotoCitations": 53
+  "features": 313,
+  "photosCitedByModel": 66,
+  "modelFeaturesWithPhotoCitations": 56
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -2672,7 +2672,9 @@
     "frontage_divisions.json:cervantes-elena-lawn-1",
     "frontage_divisions.json:cervantes-elena-lawn-2",
     "frontage_divisions.json:cervantes-front-patio",
-    "frontage_divisions.json:cervantes-lawn-door-path"
+    "frontage_divisions.json:cervantes-lawn-door-path",
+    "junction_lawns.json:junction-pollarded-2",
+    "junction_lawns.json:junction-pollarded-3"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -4404,7 +4406,11 @@
      "angleOffset": 20.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.5,
@@ -4980,7 +4986,11 @@
      "angleOffset": 21.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -150.7,
@@ -5369,6 +5379,11 @@
     }
    ],
    "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1",
+    "junction_lawns.json:junction-pollarded-2",
+    "junction_lawns.json:junction-pollarded-3",
     "cervantes_garden_door.json:cervantes-junction-north-patio"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -5702,6 +5717,11 @@
     }
    ],
    "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1",
+    "junction_lawns.json:junction-pollarded-2",
+    "junction_lawns.json:junction-pollarded-3",
     "cervantes_garden_door.json:cervantes-junction-north-patio"
    ],
    "geometryReview": "observed; geometry comparison pending",

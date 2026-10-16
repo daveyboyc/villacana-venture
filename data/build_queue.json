@@ -113,8 +113,9 @@
     "render from IMG_2329"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 45
+   "status": "in-progress",
+   "issue": 45,
+   "owner": "issue_45"
   },
   {
    "id": "cervantes-east-hedge",
