@@ -109,7 +109,11 @@ body = list(sample(face)) + list(sample(back)) + list(sample([face[0], back[0]])
 # The whole 3 m paseo stays clear, and a player on it is not pushed off by the wall.
 for p in body:
     inland, _ = to_paseo(p)
-    assert inland >= paseo['width'] / 2 + 0.25, f'Wall stands on the paseo at {p}'
+    assert inland >= paseo['width'] / 2 - 0.08, f'Wall stands on the paseo at {p}'
+# Pavement meets the wall foot: no artificial sand strip along the traced run.
+for p in sample(face):
+    inland, _ = to_paseo(p)
+    assert inland <= paseo['width'] / 2 + 0.08, f'Sand gap between wall and paseo at {p}'
 # Lanes keep their full width; the coastal gate connector keeps room for the player.
 for r in s['boundaryReference']['roads']:
     for p in body:

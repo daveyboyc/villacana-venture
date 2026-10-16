@@ -1,0 +1,161 @@
+{
+  "status": "review-only; not accepted for construction",
+  "supersededImplementation": "4ad9519",
+  "reconciledAgainst": "adca41e",
+  "coordinateFrame": "+x east, +z south, metres; same unrotated frame as map skeleton",
+  "ownership": "These candidate west/northwest traces concern the raised-terraces issue #54 frontage. They are retained for comparison only; issue #36 owns the separate lower north-side patios.",
+  "registrationLimit": "Old 1–2 m accuracy claim is withdrawn. The old stair foot is about 7.5 m from the new survey centre (-187,17.5), outside its stated ±6 m. Re-register wall endpoints and the stair opening from roof bearings, pool ring and registry before reuse.",
+  "sources": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+  ],
+  "privateSources": [
+    "photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+    "photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+    "photos/05-north-pool-west-side-garden-walls.jpg",
+    "photos/06-north-pool-looking-north-east-mountains.jpg",
+    "photos/07-north-pool-whole-courtyard-looking-north.jpg"
+  ],
+  "candidateWallFragments": [
+    {
+      "id": "north-pool-west-curved-wall",
+      "points": [
+        [
+          -190,
+          22
+        ],
+        [
+          -189.9,
+          20
+        ],
+        [
+          -189.3,
+          18
+        ],
+        [
+          -188.2,
+          16.5
+        ],
+        [
+          -186.8,
+          15.2
+        ],
+        [
+          -184.6,
+          13.6
+        ],
+        [
+          -182.7,
+          12.4
+        ]
+      ],
+      "status": "unverified NW retaining frontage candidate; no accepted height or endpoint anchors"
+    },
+    {
+      "id": "north-pool-north-curved-wall",
+      "points": [
+        [
+          -181.1,
+          11.45
+        ],
+        [
+          -178.6,
+          10.1
+        ],
+        [
+          -176.1,
+          8.7
+        ],
+        [
+          -173.4,
+          7.25
+        ]
+      ],
+      "status": "unverified NW retaining frontage candidate; no accepted height or endpoint anchors"
+    }
+  ],
+  "candidatePavingArc": {
+    "points": [
+      [
+        -188.9,
+        22
+      ],
+      [
+        -188.8,
+        20
+      ],
+      [
+        -188.2,
+        18.3
+      ],
+      [
+        -187.3,
+        17.2
+      ],
+      [
+        -186,
+        16
+      ],
+      [
+        -183.9,
+        14.5
+      ],
+      [
+        -182,
+        13.35
+      ],
+      [
+        -180.45,
+        12.4
+      ],
+      [
+        -178,
+        11.05
+      ],
+      [
+        -175.5,
+        9.65
+      ],
+      [
+        -172.8,
+        8.2
+      ]
+    ],
+    "status": "unverified NW path candidate; does not establish the extent of the north-side patios"
+  },
+  "rejectedFlightHypothesis": {
+    "from": [
+      -181.9,
+      12.0
+    ],
+    "to": [
+      -183.19,
+      9.85
+    ],
+    "whyRejected": "The old five-riser/0.75 m hypothesis is superseded. Survey assigns six risers/0.9–1.1 m to issue #54; these old coordinates are not accepted anchors."
+  },
+  "issue36NextTrace": {
+    "surveyItem": "north-pool-north-patios",
+    "surveyAt": [
+      -166,
+      8
+    ],
+    "surveyAtAccuracy": 8,
+    "riseRange": [
+      0.25,
+      0.4
+    ],
+    "plinthWallRange": [
+      0.3,
+      0.4
+    ],
+    "risers": "one or two white-nosed steps per observed opening",
+    "requiredBeforeConstruction": [
+      "raised-terraces module from issue #54",
+      "identify each north-side patio frontage and opening against unchanged registry",
+      "trace each visible boundary independently; do not repeat the northwest curved wall or stair"
+    ]
+  }
+}

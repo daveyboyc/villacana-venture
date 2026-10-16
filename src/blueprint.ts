@@ -1,10 +1,15 @@
+import {barrakaSections} from "./barraka-boardwalk";
+import middleSouth from "../data/middle_pool_south_gate.json";
+import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
+import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
-import {paseoWallOutline} from "./paseo-wall";
+import { seaWallSegments } from "./south-pool";
+import {paseoWallCovers, paseoWallOutline} from "./paseo-wall";
 import paseoWall from "../data/paseo_wall.json";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
@@ -76,6 +81,11 @@ async function boot(): Promise<void> {
   }
   for(const opening of cervantesWallOpenings){const node=el("path",{d:path(opening.ring),fill:"none",stroke:"#4c816b","stroke-width":.08,"stroke-dasharray":".25 .15"});const title=el("title",{});title.textContent=`Kept open: ${opening.name}`;node.append(title);patioWalls.append(node);}
   frontages.append(patioWalls);
+  const garden=el("g",{id:"cervantes-garden-door"});
+  for(const [ring,fill,id] of [[gardenPatioRing,"#c88768",gardenDoor.patio.id],[gardenBedRing,"#62513a",gardenDoor.bed.id],[gardenWallRing,"#fffaf1",gardenDoor.id],...gardenStepRings.map((ring,i)=>[ring,"#a75d43",gardenDoor.id+"-tread-"+(i+1)]),[gardenDoorLeaf,"#65432e",gardenDoor.id+"-closed-door"]] as [Vec2[],string,string][]){
+    const node=el("path",{d:path(ring),fill,stroke:"#fffaf1","stroke-width":.07,"data-garden-door-id":id});const title=el("title",{});title.textContent=`${gardenDoor.name}: ${gardenDoor.trust} · ${gardenDoor.evidence.join(", ")}`;node.append(title);garden.append(node);
+  }
+  frontages.append(garden);
   // Calle Elena north, traced from the roof photos: beds, patio wall and the arched gateway.
   const elena=el("g",{id:"elena-north"});
   const titled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);elena.append(node);};
@@ -84,6 +94,11 @@ async function boot(): Promise<void> {
   for(const wall of elenaNorth.walls)titled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-id":wall.id}),`${wall.name}: ${wall.trust}`);
   const gate=gatewayParts();
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
+  titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:"#ba8062","data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
+  for(const w of elenaNorth.walls) for(const d of w.doors) {
+    const [a,b]=w.points, len=Math.hypot(b[0]-a[0],b[1]-a[1]), ux=(b[0]-a[0])/len, uz=(b[1]-a[1])/len;
+    titled(el("path",{d:`M${d.at[0]-ux*d.width/2} ${d.at[1]-uz*d.width/2}L${d.at[0]+ux*d.width/2} ${d.at[1]+uz*d.width/2}`,stroke:"#6b4126","stroke-width":w.thickness+.04}),"Closed timber garden door");
+  }
   frontages.append(elena);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
   const middle=el("g",{id:"middle-pool-features"});
@@ -94,6 +109,9 @@ async function boot(): Promise<void> {
   for(const part of [mg.nw,mg.se])line(part,"#fffdf5",gw.thickness,gw.id,gateText);
   for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
   line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
+  mtitled(el("path",{d:path(middleSouthRect(...middleSouth.paving.along as [number,number],...middleSouth.paving.across as [number,number])),fill:"#b2a793","data-middle-id":"middle-pool-south-gate-paving"}),"IMG_2334: crazy paving and flush drain at level south entrance");
+  const sd=middleSouth.drain;mtitled(el("path",{d:path(middleSouthRect(sd.along-sd.length/2,sd.along+sd.length/2,sd.across-sd.width/2,sd.across+sd.width/2)),fill:"#26342b","data-middle-id":"middle-pool-south-gate-drain"}),"IMG_2334: flush slatted drain");
+  for(const ring of middleSouthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#26342b","stroke-width":.035,"data-middle-id":"middle-pool-south-gate"}),"IMG_2334/2335: open south double gate, planter and inset step; approximate extents");
   frontages.append(middle);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});
@@ -120,6 +138,7 @@ async function boot(): Promise<void> {
     const wall = el("path", { id: "paseo-wall", d: path(paseoWallOutline()), fill: "#d2ae72", stroke: "#5e4a2c", "stroke-width": 0.12, "stroke-linejoin": "round" });
     const title = el("title", {}); title.textContent = `${paseoWall.wall.name}: ${paseoWall.wall.trust} · ${paseoWall.wall.evidence.join(", ")}`; wall.append(title);
     seafront.append(wall);
+    for(const section of barrakaSections()) seafront.append(el("path",{d:path([section.left,section.right,section.endRight,section.endLeft]),fill:"#80917b",stroke:"#635a47","stroke-width":.1}));
   }
   world.append(seafront);
 
@@ -294,7 +313,7 @@ async function boot(): Promise<void> {
   for (const [x, z] of skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
   // The south lawn's seaward wall and fence: one unbroken line, no gate.
   if (skeleton.seaWall) {
-    const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
+    const line = (points: Vec2[]) => seaWallSegments(points, paseoWallCovers).map(([a, b]) => `M${a[0]} ${a[1]}L${b[0]} ${b[1]}`).join("");
     walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#26352c", "stroke-width": 0.9, "stroke-linejoin": "round" }));
     walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#fff", "stroke-width": 0.45, "stroke-linejoin": "round" }));
   }

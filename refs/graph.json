@@ -1311,6 +1311,26 @@
    "viewpoint": "ground"
   },
   {
+   "id": "area:beach",
+   "kind": "model-feature",
+   "name": "Villacana beach"
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-beach-seating",
+   "kind": "model-feature",
+   "name": "Thatched parasols and wooden cream-cushion loungers"
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-boardwalk",
+   "kind": "model-feature",
+   "name": "Barraka weathered timber boardwalk"
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-sign-planter",
+   "kind": "model-feature",
+   "name": "BARRAKA BEACH two-tier white planted sign"
+  },
+  {
    "id": "building:6265201UF1366N_part5",
    "kind": "model-feature",
    "name": "Calle Elena covered walkway"
@@ -1321,9 +1341,29 @@
    "name": "Cervantes east · white plumbago kerb"
   },
   {
+   "id": "cervantes_garden_door.json:cervantes-garden-door",
+   "kind": "model-feature",
+   "name": "Cervantes junction · raised garden door and private patio"
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "kind": "model-feature",
+   "name": "cervantes-junction-north-bed"
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "kind": "model-feature",
+   "name": "cervantes-junction-north-patio"
+  },
+  {
    "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "kind": "model-feature",
    "name": "Cervantes · north patio wall 1"
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "kind": "model-feature",
+   "name": "Cervantes · north patio wall east of garden door"
   },
   {
    "id": "cervantes_patio_walls.json:cervantes-patio-south-1",
@@ -1391,6 +1431,16 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "elena_north.json:elena-north-garden-door-path",
+   "kind": "model-feature",
+   "name": "Elena north · paved approach between the hedged beds"
+  },
+  {
+   "id": "elena_north.json:elena-north-garden-wall",
+   "kind": "model-feature",
+   "name": "Elena north · garden wall and closed timber door"
+  },
+  {
    "id": "elena_north.json:elena-north-gateway",
    "kind": "model-feature",
    "name": "Elena north · arched gateway to the north pool lawn"
@@ -1429,6 +1479,11 @@
    "id": "elena_north.json:elena-north-tree-bed-2",
    "kind": "model-feature",
    "name": "Elena north · second hedged bed"
+  },
+  {
+   "id": "elena_north.json:elena-north-window-return",
+   "kind": "model-feature",
+   "name": "Elena north · barred window wall at the north end of the bed"
   },
   {
    "id": "frontage_divisions.json:cervantes-elena-lawn-1",
@@ -1471,6 +1526,11 @@
    "name": "Middle pool · raised planter wall with hedge, west path"
   },
   {
+   "id": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "kind": "model-feature",
+   "name": "Middle pool · south double iron gate, curved head and tiled planter"
+  },
+  {
    "id": "paseo_wall.json:paseo-retaining-wall",
    "kind": "model-feature",
    "name": "Paseo · sandstone retaining wall and mesh fence"
@@ -1484,6 +1544,11 @@
    "id": "ramp:cervantes-elena-ramp",
    "kind": "model-feature",
    "name": "Cervantes / Elena ramp"
+  },
+  {
+   "id": "south_pool.json:south-pool-seaward-level",
+   "kind": "model-feature",
+   "name": "South lawn above the paseo"
   },
   {
    "id": "steps:cervantes-elena-steps",
@@ -1500,7 +1565,7 @@
    "kind": "build-task",
    "name": "Elena north: path and garden door between the two hedged beds",
    "priority": 2,
-   "status": "open",
+   "status": "done",
    "issue": 34
   },
   {
@@ -1564,7 +1629,7 @@
    "kind": "build-task",
    "name": "Middle pool south: iron double gate under a pergola frame",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 39
   },
   {
@@ -1595,7 +1660,7 @@
    "kind": "build-task",
    "name": "South pool: lawn level above the paseo and its seaward wall",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 37
   },
   {
@@ -1603,7 +1668,7 @@
    "kind": "build-task",
    "name": "Barraka Beach: boardwalk, sign planter and parasols",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 42
   },
   {
@@ -1611,7 +1676,7 @@
    "kind": "build-task",
    "name": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 32
   },
   {
@@ -1643,7 +1708,7 @@
    "kind": "build-task",
    "name": "Paseo: re-trace the promenade line from the retaining wall",
    "priority": 2,
-   "status": "open",
+   "status": "done",
    "issue": 35
   },
   {
@@ -1651,7 +1716,7 @@
    "kind": "build-task",
    "name": "Paseo east end: wall height towards the big pool",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 40
   },
   {
@@ -4535,6 +4600,71 @@
    "relation": "useful-for"
   },
   {
+   "from": "area:beach",
+   "to": "ref:IMG_2285.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2298.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2299.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "area:beach",
+   "to": "ref:IMG_2300.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "ref:IMG_2223.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "ref:IMG_2225.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2223.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2225.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-sign-planter",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-sign-planter",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -4565,6 +4695,66 @@
    "relation": "cites"
   },
   {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2287.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2196.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2327.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "ref:IMG_2355.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2358.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2359.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2367.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "ref:IMG_2369.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "to": "ref:IMG_2263.jpg",
    "relation": "cites"
@@ -4591,6 +4781,36 @@
   },
   {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "ref:IMG_2275.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2263.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2264.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2265.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2273.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "to": "ref:IMG_2274.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "to": "ref:IMG_2275.jpg",
    "relation": "cites"
   },
@@ -4832,6 +5052,36 @@
   {
    "from": "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "to": "ref:IMG_2275.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "ref:IMG_2201.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "ref:IMG_2201.jpg",
    "relation": "cites"
   },
   {
@@ -4927,6 +5177,16 @@
   {
    "from": "elena_north.json:elena-north-tree-bed-2",
    "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-window-return",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_north.json:elena-north-window-return",
+   "to": "ref:IMG_2201.jpg",
    "relation": "cites"
   },
   {
@@ -5030,6 +5290,16 @@
    "relation": "cites"
   },
   {
+   "from": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "to": "ref:IMG_2334.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "to": "ref:IMG_2335.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_wall.json:paseo-retaining-wall",
    "to": "ref:IMG_2227.jpg",
    "relation": "cites"
@@ -5100,6 +5370,16 @@
    "relation": "cites"
   },
   {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "ref:IMG_2188.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "steps:cervantes-elena-steps",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -5120,6 +5400,26 @@
    "relation": "cites"
   },
   {
+   "from": "area:beach",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-beach-seating",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-boardwalk",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "barraka_boardwalk.json:barraka-sign-planter",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
    "from": "building:6265201UF1366N_part5",
    "to": "area:elena",
    "relation": "in-area"
@@ -5130,7 +5430,37 @@
    "relation": "in-area"
   },
   {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-garden-door",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
    "from": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "to": "area:cervantes",
    "relation": "in-area"
   },
@@ -5200,6 +5530,16 @@
    "relation": "in-area"
   },
   {
+   "from": "elena_north.json:elena-north-garden-door-path",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_north.json:elena-north-garden-wall",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
    "from": "elena_north.json:elena-north-gateway",
    "to": "area:elena",
    "relation": "in-area"
@@ -5236,6 +5576,11 @@
   },
   {
    "from": "elena_north.json:elena-north-tree-bed-2",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_north.json:elena-north-window-return",
    "to": "area:elena",
    "relation": "in-area"
   },
@@ -5285,6 +5630,11 @@
    "relation": "in-area"
   },
   {
+   "from": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "paseo_wall.json:paseo-retaining-wall",
    "to": "area:paseo",
    "relation": "in-area"
@@ -5297,6 +5647,16 @@
   {
    "from": "ramp:cervantes-elena-ramp",
    "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "area:south-pool",
    "relation": "in-area"
   },
   {
@@ -5374,6 +5734,24 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2197.jpg",
    "to": "elena_north.json:elena-north-tree-bed-2",
    "relation": "looks-at",
@@ -5387,7 +5765,13 @@
   },
   {
    "from": "ref:IMG_2197.jpg",
-   "to": "street:cervantes",
+   "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2197.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5405,7 +5789,13 @@
   },
   {
    "from": "ref:IMG_2198.jpg",
-   "to": "street:cervantes",
+   "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2198.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5417,13 +5807,19 @@
   },
   {
    "from": "ref:IMG_2199.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2199.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2199.jpg",
-   "to": "elena_north.json:elena-north-magnolia-bed",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5435,13 +5831,19 @@
   },
   {
    "from": "ref:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2200.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2200.jpg",
-   "to": "elena_north.json:elena-north-magnolia-bed",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5453,13 +5855,19 @@
   },
   {
    "from": "ref:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2201.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2201.jpg",
-   "to": "elena_north.json:elena-north-magnolia-bed",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -5512,6 +5920,12 @@
    "basis": "estimated 12 m along the heading"
   },
   {
+   "from": "ref:IMG_2216.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
    "from": "ref:IMG_2217.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
    "relation": "looks-at",
@@ -5525,7 +5939,7 @@
   },
   {
    "from": "ref:IMG_2217.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -6083,7 +6497,7 @@
   },
   {
    "from": "ref:IMG_2285.jpg",
-   "to": "area:sea",
+   "to": "area:beach",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6110,6 +6524,24 @@
    "to": "steps:cervantes-elena-steps",
    "relation": "looks-at",
    "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
   },
   {
    "from": "ref:IMG_2289.jpg",
@@ -6198,6 +6630,12 @@
   {
    "from": "ref:IMG_2300.jpg",
    "to": "area:beach",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6341,12 +6779,6 @@
   },
   {
    "from": "ref:IMG_2350.jpg",
-   "to": "paseo_wall.json:paseo-retaining-wall",
-   "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2350.jpg",
    "to": "area:paseo",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
@@ -6358,8 +6790,14 @@
    "basis": "estimated 6 m along the heading"
   },
   {
-   "from": "ref:IMG_2352.jpg",
+   "from": "ref:IMG_2350.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "south_pool.json:south-pool-seaward-level",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6372,6 +6810,12 @@
   {
    "from": "ref:IMG_2352.jpg",
    "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
+   "to": "paseo_wall.json:paseo-retaining-wall",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6419,7 +6863,7 @@
   },
   {
    "from": "ref:IMG_2356.jpg",
-   "to": "elena_north.json:elena-north-planter-box-1",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
@@ -6485,6 +6929,12 @@
   },
   {
    "from": "ref:IMG_2364.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2364.jpg",
    "to": "street:elena-north",
    "relation": "looks-at",
    "basis": "reviewed"
@@ -6492,6 +6942,12 @@
   {
    "from": "ref:IMG_2365.jpg",
    "to": "elena_north.json:elena-north-magnolia-bed",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2365.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -6509,6 +6965,18 @@
   },
   {
    "from": "ref:IMG_2366.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
+   "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2366.jpg",
    "to": "elena_north.json:elena-north-tree-bed-2",
    "relation": "looks-at",
    "basis": "reviewed"
@@ -6521,7 +6989,7 @@
   },
   {
    "from": "ref:IMG_2367.jpg",
-   "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "looks-at",
    "basis": "reviewed"
   },

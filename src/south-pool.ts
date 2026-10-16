@@ -4,11 +4,18 @@ import type { Vec2 } from "./types";
 const WALL_HEIGHT = 0.7;
 const FENCE_TOP = 1.7;
 
-/** Footprints that stop the player along the seaward wall: one strip per run, one block per corner. */
-export function seaWallRings(points: Vec2[]): Vec2[][] {
-  const rings: Vec2[][] = points.map(([x, z]) => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
-  for (let i = 0; i < points.length - 1; i++) {
-    const [ax, az] = points[i], [bx, bz] = points[i + 1];
+/** Only legacy return stretches not replaced by the photographed sandstone wall.
+ * Map, visible geometry and collision consume the same segments. */
+export function seaWallSegments(points: Vec2[], skip?: (a: Vec2, b: Vec2) => boolean): [Vec2, Vec2][] {
+  return points.slice(1).flatMap((b, i) => skip?.(points[i], b) ? [] : [[points[i], b] as [Vec2, Vec2]]);
+}
+
+/** Footprints of the remaining low white returns; the sandstone wall supplies its own collision. */
+export function seaWallRings(points: Vec2[], skip?: (a: Vec2, b: Vec2) => boolean): Vec2[][] {
+  const segments = seaWallSegments(points, skip);
+  const corners = [...new Map(segments.flat().map(p => [p.join(","), p])).values()];
+  const rings: Vec2[][] = corners.map(([x, z]) => [[x - 0.3, z - 0.3], [x + 0.3, z - 0.3], [x + 0.3, z + 0.3], [x - 0.3, z + 0.3]]);
+  for (const [[ax, az], [bx, bz]] of segments) {
     const length = Math.hypot(bx - ax, bz - az) || 1;
     const nx = ((bz - az) / length) * 0.3, nz = (-(bx - ax) / length) * 0.3;
     rings.push([[ax + nx, az + nz], [bx + nx, bz + nz], [bx - nx, bz - nz], [ax - nx, az - nz]]);
@@ -21,9 +28,7 @@ export function addSeaWall(scene: THREE.Scene, points: Vec2[], skip?: (a: Vec2, 
   const white = new THREE.MeshStandardMaterial({ color: "#ffffff", roughness: 0.92 });
   const post = new THREE.MeshStandardMaterial({ color: "#26352c", roughness: 0.7 });
   const mesh = new THREE.MeshStandardMaterial({ color: "#26352c", roughness: 0.8, transparent: true, opacity: 0.35, side: THREE.DoubleSide, depthWrite: false });
-  for (let i = 0; i < points.length - 1; i++) {
-    const [ax, az] = points[i], [bx, bz] = points[i + 1];
-    if (skip?.(points[i], points[i + 1])) continue;
+  for (const [[ax, az], [bx, bz]] of seaWallSegments(points, skip)) {
     const length = Math.hypot(bx - ax, bz - az);
     const run = new THREE.Group();
     run.position.set((ax + bx) / 2, 0, (az + bz) / 2);
