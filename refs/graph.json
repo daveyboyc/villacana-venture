@@ -1896,7 +1896,7 @@
    "kind": "build-task",
    "name": "Cervantes/Elena steps: tighten the treads to the photographed spacing",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 56
   },
   {
@@ -5865,6 +5865,16 @@
    "relation": "cites"
   },
   {
+   "from": "steps:cervantes-elena-steps",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "steps:cervantes-elena-steps",
+   "to": "ref:IMG_2355.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "steps:middle-pool-sw-steps",
    "to": "ref:IMG_2248.jpg",
    "relation": "cites"
@@ -6282,11 +6292,6 @@
   {
    "from": "steps:cervantes-elena-steps",
    "to": "area:cervantes",
-   "relation": "in-area"
-  },
-  {
-   "from": "steps:cervantes-elena-steps",
-   "to": "area:elena",
    "relation": "in-area"
   },
   {
