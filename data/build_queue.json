@@ -19,8 +19,9 @@
     "layout browser test walks into the path and stops at the door"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 34
+   "status": "done",
+   "issue": 34,
+   "owner": "issue_34"
   },
   {
    "id": "elena-east-patios",
@@ -63,8 +64,9 @@
     "render from IMG_2203"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 46
+   "status": "in-progress",
+   "issue": 46,
+   "owner": "issue_46"
   },
   {
    "id": "cervantes-door-steps",
@@ -90,7 +92,7 @@
    "status": "in-progress",
    "issue": 33,
    "owner": "issue_33",
-   "notes": "Placement blocked after photo/roof/aerial review: identify the IMG_2327 house doorway before geometry. Nearest modeled north facade is 6.17 m from the ramp drain, incompatible with the adjacent photographed stoop without a larger unverified correction. See docs/CERVANTES_DOOR_STEPS_REVIEW.md. Levels survey (15 October, data/levels_survey.json): the roof shots IMG_2358 and IMG_2367 show the same door in a white garden wall with a curved coping standing at the lane edge, with a decorative-tiled patio behind it level with the sill; the house front is behind the patio. That explains the 6.17 m gap: build the garden wall (with the door) on the lane edge at about (-152.5, 55.5) +-1.5 m and the two steps against it; the patio behind is private and stays walled."
+   "notes": "Garden-wall placement blocker resolved by levels survey and IMG_2287/2196. Implemented bounded wall/closed door, two steps, private patio datum and west bed; source checks pass. Awaiting root serial before/after photo review and final layout/overview browser tests before marking done. Baseline adca41e preserved locally."
   },
   {
    "id": "junction-lawns",
@@ -112,8 +114,9 @@
     "render from IMG_2329"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 45
+   "status": "in-progress",
+   "issue": 45,
+   "owner": "issue_45"
   },
   {
    "id": "cervantes-east-hedge",
@@ -131,8 +134,9 @@
     "check_cervantes_patio_walls.py or a new check passes"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 43
+   "status": "in-progress",
+   "issue": 43,
+   "owner": "issue_43"
   },
   {
    "id": "cervantes-north-patios",
@@ -152,8 +156,9 @@
     "render from IMG_2368 with --high"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 44
+   "status": "done",
+   "issue": 44,
+   "owner": "issue_44"
   },
   {
    "id": "middle-pool-sw-steps",
@@ -197,8 +202,9 @@
    "dependsOn": [
     "middle-pool-sw-steps"
    ],
-   "status": "open",
-   "issue": 39
+   "status": "in-progress",
+   "issue": 39,
+   "owner": "issue39"
   },
   {
    "id": "middle-pool-north-entrance",
@@ -219,8 +225,9 @@
     "check_middle_pool.py extended"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 48
+   "status": "in-progress",
+   "issue": 48,
+   "owner": "issue48"
   },
   {
    "id": "eva-walled-lawn",
@@ -240,8 +247,9 @@
     "render from IMG_2339"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 47
+   "status": "in-progress",
+   "issue": 47,
+   "owner": "issue_47"
   },
   {
    "id": "paseo-retaining-wall",
@@ -284,8 +292,9 @@
    "dependsOn": [
     "paseo-retaining-wall"
    ],
-   "status": "open",
-   "issue": 37
+   "status": "in-progress",
+   "issue": 37,
+   "owner": "issue_37"
   },
   {
    "id": "barraka-boardwalk",
@@ -305,8 +314,9 @@
     "render from IMG_2347"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 42
+   "status": "in-progress",
+   "issue": 42,
+   "owner": "issue_42"
   },
   {
    "id": "shoreline-check",
@@ -327,8 +337,9 @@
     "note added to docs/SEAFRONT.md"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 32
+   "status": "in-progress",
+   "issue": 32,
+   "owner": "issue_32"
   },
   {
    "id": "north-pool-garden-walls",
@@ -352,7 +363,8 @@
     "raised-terraces"
    ],
    "status": "open",
-   "issue": 36
+   "issue": 36,
+   "notes": "Review draft reconciled with the 15 October levels survey: blocked on raised-terraces (#54). Issue #36 owns the 0.25–0.4 m north-side patios and one/two-step openings; the NW six-riser 0.9–1.1 m terrace belongs to #54. Earlier five-riser/0.75 m implementation 4ad9519 is withdrawn from the branch tip. See docs/NORTH_POOL_REVIEW.md and the non-rendered trace draft."
   },
   {
    "id": "seaward-lanes-paving",
@@ -414,8 +426,9 @@
     "paseo still walks end to end"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 35
+   "status": "done",
+   "issue": 35,
+   "owner": "issue_35"
   },
   {
    "id": "paseo-east-end-height",
@@ -436,8 +449,10 @@
    "dependsOn": [
     "paseo-retrace-line"
    ],
-   "status": "open",
-   "issue": 40
+   "status": "in-progress",
+   "issue": 40,
+   "owner": "Codex issue-40",
+   "notes": "Evidence blocked, 2026-10-15: IMG_2227 and IMG_2350 suggest a low wall, but do not separate paseo grade from garden grade near Guillermo. See docs/PASEO_EAST_END_HEIGHT_REVIEW.md. Await a side-on view including paseo surface, wall foot, coping and garden floor, and a view towards the main-pool lawn. All levels retained; issue remains open."
   },
   {
    "id": "paseo-house-clearance",
@@ -478,8 +493,9 @@
     "render from IMG_2352"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 49
+   "status": "in-progress",
+   "issue": 49,
+   "owner": "issue49"
   },
   {
    "id": "raised-terraces",

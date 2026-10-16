@@ -89,6 +89,8 @@ Many enclosure walls have not yet been traced individually. Some covered passage
 remain marked likely from registry/aerial context. Elena's steps beside its ramp
 are now built (docs/ELENA_NORTH.md); their tread sizes are estimated. Site and big-pool
 levels retain their existing estimated dimensions; this pass preserves their
-recent corrections. The beach/sea outline disagreement flagged for IMG_2285 is
-still a review item. Keep those limits visible; do not fill them with repeating
+recent corrections. The beach/sea outline disagreement flagged for IMG_2285 was checked against
+the independent georeferenced aerial in issue #32 (see `docs/SEAFRONT.md`);
+its local edge now follows that dated aerial wet band, with estimated 3–5 m
+precision and unknown tide/season. Keep those limits visible; do not fill them with repeating
 walls, extra scenery or unverified entrances to make the model appear finished.

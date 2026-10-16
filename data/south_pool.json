@@ -1,19 +1,240 @@
 {
-  "evidence": "Traced from the aerial photo (public/map/ground.jpg), read 1 m east to match the registry; checked by eye against Dave's web photos of 2026-10-12",
-  "coordinates": "Turned map metres, sea downward; good to about 2 m",
-  "lawns": [
-    [[-173, 112.6], [-155.3, 112.6], [-155.3, 137.5], [-151.5, 140.5], [-148.5, 143], [-154, 145.1], [-157.1, 147], [-160.2, 149.2], [-163.3, 150.1], [-165.6, 150.8], [-169.7, 152], [-172.6, 152.9], [-173, 150.5]],
-    [[-175, 104], [-159.5, 104], [-159.5, 108], [-165, 109], [-175, 109.2]]
+ "evidence": "Traced from the aerial photo (public/map/ground.jpg), read 1 m east to match the registry; checked by eye against Dave's web photos of 2026-10-12",
+ "coordinates": "Turned map metres, sea downward; good to about 2 m",
+ "lawns": [
+  [
+   [
+    -173,
+    112.6
+   ],
+   [
+    -155.3,
+    112.6
+   ],
+   [
+    -155.3,
+    137.5
+   ],
+   [
+    -151.5,
+    140.5
+   ],
+   [
+    -148.5,
+    143
+   ],
+   [
+    -154,
+    145.1
+   ],
+   [
+    -157.1,
+    147
+   ],
+   [
+    -160.2,
+    149.2
+   ],
+   [
+    -163.3,
+    150.1
+   ],
+   [
+    -165.6,
+    150.8
+   ],
+   [
+    -169.7,
+    152
+   ],
+   [
+    -172.6,
+    152.9
+   ],
+   [
+    -173,
+    150.5
+   ]
   ],
-  "paths": [
-    [[-179, 112.2], [-170, 111.3], [-162, 110.9], [-156, 110.4], [-150, 109.6]],
-    [[-168.5, 129.8], [-173.5, 129.8]]
+  [
+   [
+    -175,
+    104
+   ],
+   [
+    -159.5,
+    104
+   ],
+   [
+    -159.5,
+    108
+   ],
+   [
+    -165,
+    109
+   ],
+   [
+    -175,
+    109.2
+   ]
+  ]
+ ],
+ "paths": [
+  [
+   [
+    -179,
+    112.2
+   ],
+   [
+    -170,
+    111.3
+   ],
+   [
+    -162,
+    110.9
+   ],
+   [
+    -156,
+    110.4
+   ],
+   [
+    -150,
+    109.6
+   ]
   ],
-  "pathWidth": 1.5,
-  "walls": [
-    [[-168.6, 114], [-168.5, 117.5], [-169.2, 121.2], [-170.1, 124.5], [-170.8, 128]],
-    [[-170.9, 131.6], [-170.8, 135], [-170.5, 138]],
-    [[-170, 109.7], [-166, 109.5], [-162, 109.1], [-159.5, 108.2]]
+  [
+   [
+    -168.5,
+    129.8
+   ],
+   [
+    -173.5,
+    129.8
+   ]
+  ]
+ ],
+ "pathWidth": 1.5,
+ "walls": [
+  [
+   [
+    -168.6,
+    114
+   ],
+   [
+    -168.5,
+    117.5
+   ],
+   [
+    -169.2,
+    121.2
+   ],
+   [
+    -170.1,
+    124.5
+   ],
+   [
+    -170.8,
+    128
+   ]
   ],
-  "seaWall": [[-174.2, 149.5], [-173.2, 150.2], [-172.9, 153.3], [-169.75, 152.4], [-165.7, 151.2], [-163.5, 150.5], [-160.4, 149.6], [-157.25, 147.4], [-154.1, 145.5], [-149.1, 143.6], [-144.75, 141.75], [-142, 140.8], [-139.75, 141.2], [-139.8, 135]]
+  [
+   [
+    -170.9,
+    131.6
+   ],
+   [
+    -170.8,
+    135
+   ],
+   [
+    -170.5,
+    138
+   ]
+  ],
+  [
+   [
+    -170,
+    109.7
+   ],
+   [
+    -166,
+    109.5
+   ],
+   [
+    -162,
+    109.1
+   ],
+   [
+    -159.5,
+    108.2
+   ]
+  ]
+ ],
+ "seaWall": [
+  [
+   -174.2,
+   149.5
+  ],
+  [
+   -173.2,
+   150.2
+  ],
+  [
+   -172.9,
+   153.3
+  ],
+  [
+   -169.75,
+   152.4
+  ],
+  [
+   -165.7,
+   151.2
+  ],
+  [
+   -163.5,
+   150.5
+  ],
+  [
+   -160.4,
+   149.6
+  ],
+  [
+   -157.25,
+   147.4
+  ],
+  [
+   -154.1,
+   145.5
+  ],
+  [
+   -149.1,
+   143.6
+  ],
+  [
+   -144.75,
+   141.75
+  ],
+  [
+   -142,
+   140.8
+  ],
+  [
+   -139.75,
+   141.2
+  ],
+  [
+   -139.8,
+   135
+  ]
+ ],
+ "seawardLevel": {
+  "id": "south-pool-seaward-level",
+  "name": "South lawn above the paseo",
+  "evidence": [
+   "IMG_2349.jpg",
+   "IMG_2188.jpg"
+  ],
+  "trust": "IMG_2349 shows sandstone below the lawn and a mesh fence at lawn level; IMG_2188 shows the level pool deck and lawn behind that fence. Lawn and pool retain the middle-pool datum (0 m); the paseo is approximately 1 m lower here using data/main_pool.json levels.seafront.profile, introduced by the paseo retaining-wall pass. Relative height is estimated against the fence, not surveyed; no new slope or extra lawn platform is inferred. The old seaWall seaward stretches are this sandstone wall, not a second white wall; only its approximate unphotographed end returns remain."
+ }
 }

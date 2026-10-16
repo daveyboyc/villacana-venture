@@ -1,3 +1,4 @@
+import { addMiddlePoolNorth, inMiddlePoolNorthReview, middlePoolNorthRings } from "./middle-pool-north";
 import * as THREE from "three";
 import layout from "../data/middle_pool.json";
 import { pointInRing } from "./geom";
@@ -10,7 +11,7 @@ const gateway = layout.gateway;
 export const middlePoolPlanter = { ...layout.planter, ring: layout.planter.ring as Vec2[], face: layout.planter.face as Vec2[] };
 export const middlePoolReview = layout.review.rings as Vec2[][];
 
-export const inMiddlePoolReview = (x: number, z: number): boolean => middlePoolReview.some((ring) => pointInRing(x, z, ring));
+export const inMiddlePoolReview = (x: number, z: number): boolean => middlePoolReview.some((ring) => pointInRing(x, z, ring)) || inMiddlePoolNorthReview(x,z);
 
 /** Generated garden walls, gates and props give way to the traced features inside the reviewed bands. */
 export function suppressInMiddlePoolReview<T extends { gardenWalls: Vec2[]; gardenGates: Vec2[]; props: { x: number; z: number }[] }>(skeleton: T): void {
@@ -57,6 +58,7 @@ export function middlePoolRings(): Vec2[][] {
     pier(hi + width / 2),
     strip(middleGatewayLeaf(), 0.06),
     middlePoolPlanter.ring,
+    ...middlePoolNorthRings(),
   ];
 }
 
@@ -155,6 +157,7 @@ export function addMiddlePool(scene: THREE.Scene): void {
     panel.name = gateway.id;
     scene.add(panel);
   }
+  addMiddlePoolNorth(scene);
   addPlanter(scene, plaster);
   addMiddlePoolPlanting(scene);
 }
@@ -208,8 +211,9 @@ function addMiddlePoolPlanting(scene: THREE.Scene): void {
   for (let t = 0.06; t < 0.97; t += 0.15) flowers.push({ x: f0[0] + (f1[0] - f0[0]) * t + half[0], y: p.height - 0.08 + HEDGE - 0.4, z: f0[1] + (f1[1] - f0[1]) * t + half[1], scale: 0.55 });
   addSprites(scene, "hibiscus_hedge", flowers);
   const { at } = middleGatewayFrame(), [lo, hi] = gateway.opening;
-  // Outside: clipped hedge before the south-east wing, bougainvillea trained on the lawn wall (IMG_2340, photo 12).
+  // Outside: clipped hedge and courtyard bougainvillea (IMG_2340, photo 12).
+  // The lawn-wall espalier is now a flat wall-plane in eva-walled-lawn.ts (IMG_2339).
   const place = (o: number, i: number, y = 0, scale = 0.7): SpritePlacement => { const [x, z] = at(o, i); return { x, y, z, scale }; };
   addSprites(scene, "hedge", [place(hi + 0.95, -0.7, 0, 0.6), place(hi + 0.95, 1.1, 0, 0.6), place(lo - 1.0, 1.3, 0, 0.6)]);
-  addSprites(scene, "bougainvillea", [place(lo - 2.7, -0.35, 0.3, 0.75), place(hi + 0.9, 0.5, 1.2, 0.6)]);
+  addSprites(scene, "bougainvillea", [place(hi + 0.9, 0.5, 1.2, 0.6)]);
 }

@@ -61,6 +61,25 @@ the whole 0.5 m rise happens within about 3 m, not the 7 m the terrain rule used
 Positions are traced against the registry fronts and the aerial to roughly
 0.5–1 m. Wall heights, the gateway arch, bed sizes and tread lengths are
 estimated from tiles and doors in the photos, not measured. Door positions in
-the patio wall are approximate. The garden door between the hedged beds, the
-east-side patios beyond the beds, and the gated entry seen in IMG_2361 (west of
-the covered walkway) are not modelled yet.
+the patio wall are approximate. The east-side patios beyond the beds and the gated entry seen in IMG_2361
+(west of the covered walkway) are not modelled yet. The garden-door approach
+is covered by the issue #34 addition below.
+
+## Garden-door approach (issue #34, 15 October 2026)
+
+IMG_2199, IMG_2200 and IMG_2201 support a short terracotta spur between the
+existing hedged beds to a closed brown timber door. `gardenPath` now records
+that open approach; it adds no collision. The finite `elena-north-garden-wall`
+runs behind the planted beds from `[-151.43, 35.13]` to `[-144.30, 47.36]`,
+terminating at the photographed door surround rather than continuing across
+untraced patios. The door centre is `[-144.631888, 46.790716]`.
+
+The barred dark window visible looking north sits in a short transverse return
+at the north end of the bed, `[-153.69, 36.44]` to `[-151.43, 35.13]`, rather
+than in the long wall. Both wall outlines are shared by map and collision;
+the window remains impassable and the timber door is visibly closed. The
+layout browser regression enters the spur, returns to the lane, and confirms
+that forward movement stops at the door. No terrain or registry footprint is
+changed. Wall heights (1.85–2 m), window/door dimensions and the alignment
+against existing bed backs are estimates, not surveyed measurements. The
+unseen east patios and the gated entry west of the walkway remain separate work.

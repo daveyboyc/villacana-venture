@@ -40,7 +40,7 @@ def features(s):
         if p.get('kind')=='car_park':add('parking:'+p['name'],p['name'],'parking','map layout',ring=p['ring'])
     sf=s.get('seafront',{})
     if sf:
-        add('area:beach',sf['beach']['name'],'area','OSM/map',ring=sf['beach']['ring'])
+        add('area:beach',sf['beach']['name'],'area','OSM/map with independent aerial shoreline review',ring=sf['beach']['ring'],evidence=sf['beach'].get('evidence',[]))
         add('area:sea',sf['sea']['name'],'area','OSM/map',ring=sf['sea']['ring'])
         add('area:paseo',sf['paseo']['name'],'area','OSM/map',points=sf['paseo']['points'],width=sf['paseo']['width'])
         add('area:barraka',sf['restaurant']['name'],'area','map/photo interpretation',ring=sf['restaurant']['ring'])
@@ -49,7 +49,9 @@ def features(s):
         add('paseo_wall.json:'+pw['wall']['id'],pw['wall']['name'],'reference feature','authored photo/map interpretation',evidence=pw['wall']['evidence'],points=pw['wall']['face'])
         # The timber edge is on the paseo beside the wall: the mapped paseo points along the wall stand in for it.
         add('paseo_wall.json:'+pw['edge']['id'],pw['edge']['name'],'reference feature','authored photo/map interpretation',evidence=pw['edge']['evidence'],points=[q for q in sf['paseo']['points'] if nearest(q,pw['wall']['face'])[0]<8],width=sf['paseo']['width'])
-    for filename,key in [('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
+    south=json.loads((ROOT/'data/south_pool.json').read_text())['seawardLevel']
+    add('south_pool.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=s['seaWall']['points'])
+    for filename,key in [('cervantes_north_patios.json','walls'),('frontage_divisions.json','regions'),('cervantes_patio_walls.json','walls'),('cervantes_east_hedge.json','walls'),('dali_cervantes_threshold.json','zones'),('passages.json','passages'),('coastal_gate.json','walls')]:
         data=json.loads((ROOT/'data'/filename).read_text())
         for f in data[key]:
             # Passages refer to an existing registry part rather than a second footprint.
@@ -58,18 +60,53 @@ def features(s):
             evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(f.get('evidence',[])))
             if existing:existing.update(name=f['name'],evidence=evidence)
             else:add(id,f['name'],'reference feature','authored photo/map interpretation',evidence=evidence,**{k:f[k] for k in ('ring','points') if k in f})
+    def paseo_station(along,inland):
+        for a,b in zip(pw['wall']['face'],pw['wall']['face'][1:]):
+            length=math.dist(a,b)
+            if along<=length:
+                t=along/length
+                return [a[0]+(b[0]-a[0])*t+(b[1]-a[1])/length*inland,a[1]+(b[1]-a[1])*t-(b[0]-a[0])/length*inland]
+            along-=length
+        raise ValueError('Paseo detail beyond shared wall')
+    for f in json.loads((ROOT/'data/paseo_details.json').read_text())['features']:
+        add('paseo_details.json:'+f['id'],f['name'],'reference feature','bounded photo interpretation; wall-relative positions estimated',evidence=f['evidence'],points=[paseo_station(s,f['inland']) for s in f['along']])
+    junction=json.loads((ROOT/'data/junction_lawns.json').read_text())
+    for tree in junction['trees']:
+        add('junction_lawns.json:'+tree['id'],tree['name'],'reference feature','authored photo/map interpretation',evidence=tree['evidence'],points=[tree['point']])
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
-    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters']]:
+    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters'],elena['gardenPath']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    entry=json.loads((ROOT/'data/elena_gated_entry.json').read_text())
+    add('elena_gated_entry.json:'+entry['id'],entry['name'],'reference feature','authored photo/map interpretation',evidence=entry['evidence'],ring=entry['ring'],points=entry['points'])
+    south=json.loads((ROOT/'data/middle_pool_south_gate.json').read_text())
+    add('middle_pool_south_gate.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=[south['center']])
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
     picasso=json.loads((ROOT/'data/picasso_service_road.json').read_text())
     for f in picasso['features']:
         add('picasso_service_road.json:'+f['id'],f['name'],'reference feature','bounded single-photo estimate',points=f['points'],evidence=f['evidence'])
+    north=json.loads((ROOT/'data/middle_pool_north.json').read_text())
+    for f in [north['cap'],north['wall'],north['pergola'],north['steps']]:
+        add('middle_pool_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    result[-1]['points']=[north['steps']['foot'],north['steps']['toward']]
+    eva=json.loads((ROOT/'data/eva_walled_lawn.json').read_text())
+    add('eva_walled_lawn.json:'+eva['id'],eva['name'],'reference feature','authored photo/map interpretation',ring=eva['lawn']['ring'],evidence=eva['evidence']+eva['evaLawn']['evidence'])
+    barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
+    for key in ('boardwalk','sign','seating'):
+        f=barraka[key]
+        points=f.get('points') or ([f['point']] if 'point' in f else f['parasols'])
+        add('barraka_boardwalk.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],points=points)
+    garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
+    wall_points=[[garden['origin'][i]+a*garden['along'][i] for i in range(2)] for a in [-garden['wallWidth']/2,garden['wallWidth']/2]]
+    add('cervantes_garden_door.json:'+garden['id'],garden['name'],'reference feature','authored photo/levels interpretation',points=wall_points,evidence=garden['evidence'])
+    for part in ('patio','bed'):
+        f=garden[part]
+        add('cervantes_garden_door.json:'+f['id'],f['id'],'reference feature','authored photo/levels interpretation',ring=f['ring'],evidence=f['evidence'])
     for name in ('cervantes_elena_steps','middle_pool_steps'):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
+
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])

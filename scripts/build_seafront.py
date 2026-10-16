@@ -25,9 +25,34 @@ def build_seafront(buildings, rotation):
         pts=[project(nodes[nd.get('ref')]) for nd in way.findall('nd')]
         route.extend(pts if not route else pts[1:])
     route=[[round(x,2),round(z,2)] for x,z in route]
+    # Photo-backed promenade: pavement meets the retaining wall, with no sand
+    # strip. Keep the mapped approach and eastern/boardwalk joins verbatim.
+    wall_data = json.loads((ROOT / 'data/paseo_wall.json').read_text())
+    face, trace = wall_data['wall']['face'], wall_data['route']
+    retraced = []
+    for i, (x, z) in enumerate(face):
+        a, b = face[max(0, i - 1)], face[min(len(face) - 1, i + 1)]
+        length = math.dist(a, b)
+        offset = trace['offsetSeaward']
+        retraced.append([round(x - (b[1] - a[1]) / length * offset, 2),
+                         round(z + (b[0] - a[0]) / length * offset, 2)])
+    gate_join = json.loads((ROOT / 'data/coastal_gate.json').read_text())['route']['points'][-1]
+    route = route[:trace['retainBefore']] + [gate_join] + retraced + route[trace['retainAfter']:]
     # Clip coastal polygons to a bounded planning window, in the map's turned frame.
     bounds=(-225,85,95,265)
-    coast=source['coast']
+    shore_trace=json.loads((ROOT / 'data/shoreline_trace.json').read_text())
+    low,high=shore_trace['replaceXRange']
+    def corrected(points):
+        # Same independent aerial trace for the sea edge and beach polygon.
+        before=[p for p in points if p[0] <= low]
+        after=[p for p in points if p[0] >= high]
+        return before + shore_trace['points'] + after
+    coast=corrected(source['coast'])
+    beach=source['beaches'][0]['ring']
+    # The OSM beach's seaward edge runs west-to-east between these anchors.
+    first=beach.index([-131.2,330.9])+1
+    last=beach.index([129.0,105.5])
+    beach=beach[:first] + shore_trace['points'] + beach[last:]
     # Ocean side is south of the mapped coastline.
     # Local view extent is separate from natural outlines, so screen cropping
     # never appears as a beach edge or ocean boundary.
@@ -35,10 +60,10 @@ def build_seafront(buildings, rotation):
     # Covered terrace extension is approximate, checked against aerial and official photos.
     terrace=[unturn(p) for p in [(-27,120),(-14,117),(-9,135),(-27,140),(-33,130)]]
     return {
-        'paseo':{'name':'Paseo · Senda Litoral','width':3,'points':route,'trust':'OSM route; width approximate'},
+        'paseo':{'name':'Paseo · Senda Litoral','width':trace['width'],'points':route,'trust':trace['trust'],'evidence':trace['evidence']},
         'viewBounds':[unturn(p) for p in [(bounds[0],bounds[2]),(bounds[1],bounds[2]),(bounds[1],bounds[3]),(bounds[0],bounds[3])]],
-        'beach':{'name':'Villacana beach','ring':source['beaches'][0]['ring'],'trust':'OSM beach polygon; seasonal boundary'},
-        'sea':{'name':'Mediterranean Sea','ring':coast+[[1500,1500],[-1500,1500]],'trust':'OSM coastline; outer edge is display extent'},
+        'beach':{'name':'Villacana beach','ring':beach,'evidence':shore_trace['evidence'],'trust':shore_trace['trust']},
+        'sea':{'name':'Mediterranean Sea','ring':coast+[[1500,1500],[-1500,1500]],'trust':shore_trace['trust']+' Outer edge is display extent.'},
         'coast':[[round(x,2),round(z,2)] for x,z in coast],
         'restaurant':{'name':'Barraka Beach','buildingId':footprint['id'],'ring':footprint['ring'],'terrace':terrace,
                       'trust':'Registry footprint matched to aerial and official photos; terrace approximate'},
