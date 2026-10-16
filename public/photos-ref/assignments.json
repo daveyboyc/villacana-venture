@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 303,
-  "photosCitedByModel": 57,
-  "modelFeaturesWithPhotoCitations": 46
+  "features": 306,
+  "photosCitedByModel": 61,
+  "modelFeaturesWithPhotoCitations": 49
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1401,7 +1401,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-beach-seating"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 39.3,
@@ -1453,7 +1456,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-beach-seating"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 61.7,
@@ -5033,7 +5039,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-sign-planter"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": 35.6,
@@ -5066,7 +5075,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-sign-planter",
+    "barraka_boardwalk.json:barraka-beach-seating"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": 35.3,

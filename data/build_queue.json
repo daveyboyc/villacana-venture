@@ -308,8 +308,9 @@
     "render from IMG_2347"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 42
+   "status": "in-progress",
+   "issue": 42,
+   "owner": "issue_42"
   },
   {
    "id": "shoreline-check",

@@ -68,6 +68,11 @@ def features(s):
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
+    for key in ('boardwalk','sign','seating'):
+        f=barraka[key]
+        points=f.get('points') or ([f['point']] if 'point' in f else f['parasols'])
+        add('barraka_boardwalk.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],points=points)
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
     wall_points=[[garden['origin'][i]+a*garden['along'][i] for i in range(2)] for a in [-garden['wallWidth']/2,garden['wallWidth']/2]]
     add('cervantes_garden_door.json:'+garden['id'],garden['name'],'reference feature','authored photo/levels interpretation',points=wall_points,evidence=garden['evidence'])
