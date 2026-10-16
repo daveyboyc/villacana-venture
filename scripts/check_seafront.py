@@ -3,6 +3,7 @@ import json
 import math
 from pathlib import Path
 from check_map import inside
+from PIL import Image
 
 skeleton = json.loads((Path(__file__).resolve().parents[1] / 'public/map/skeleton.json').read_text())
 sf = skeleton['seafront']
@@ -65,3 +66,37 @@ assert sf['paseo']['points'][0] == [-121.26, 242.45], 'Western mapped approach m
 assert sf['paseo']['points'][-10:] == [[0.97,129.83],[13.48,113.38],[20.79,102.36],[28.87,96.28],[34.28,95.71],[68.46,61.23],[93.49,35.17],[134.29,-4.84],[146.38,-30.72],[150.39,-34.25]], 'Eastern mapped / boardwalk joins moved'
 assert set(sf['paseo']['evidence']) >= {'IMG_2350.jpg','IMG_2352.jpg','IMG_2354.jpg','IMG_2349.jpg'}
 print('Paseo retrace: photographed run, coastal access and eastern boardwalk joins preserved PASS')
+
+# Issue #41: the paseo keeps half its width clear of every standing registry house,
+# end to end. Registry parts the aerial shows are not standing keep their ring.
+def edge_gap(p, ring):
+    best = math.inf
+    for i in range(len(ring)):
+        a, b = ring[i], ring[i-1]
+        dx, dz = b[0]-a[0], b[1]-a[1]
+        t = max(0.0, min(1.0, ((p[0]-a[0])*dx + (p[1]-a[1])*dz) / ((dx*dx + dz*dz) or 1)))
+        best = min(best, math.hypot(p[0]-a[0]-t*dx, p[1]-a[1]-t*dz))
+    return best
+samples = []
+for a, b in zip(sf['paseo']['points'], sf['paseo']['points'][1:]):
+    steps = max(1, math.ceil(math.dist(a, b) / 0.25))
+    samples += [[a[0]+(b[0]-a[0])*i/steps, a[1]+(b[1]-a[1])*i/steps] for i in range(steps+1)]
+half = sf['paseo']['width'] / 2
+for house in skeleton['buildings']:
+    if house['floors'] > 0 and not house.get('passage'):
+        gap = min(-1 if inside(*p, house['ring']) else edge_gap(p, house['ring']) for p in samples)
+        assert gap >= half, f'Paseo enters house {house["id"]}' if gap < 0 else f'Paseo passes {gap:.2f} m from house {house["id"]}; needs {half} m'
+corrections = json.loads((root / 'data/registry_corrections.json').read_text())['notStanding']
+assert {b['id'] for b in skeleton['buildings'] if b.get('notStanding')} == {c['id'] for c in corrections}
+photo = Image.open(root / 'public/map/ground.jpg').convert('RGB')
+for c in corrections:
+    house = next(b for b in skeleton['buildings'] if b['id'] == c['id'])
+    assert house['floors'] == 0 and house['notStanding']['registryFloors'] == c['registryFloors'] >= 1
+    assert all(any(p['file'] == f for p in manifest) for f in c['evidence']) and c['trust']
+    # The correction is only justified where the visible paseo paving crosses the part.
+    assert any(inside(*p, house['ring']) for p in samples), f'{c["id"]} correction is not on the paseo'
+    for x, z in c['aerialPaving']:
+        assert inside(x, z, house['ring'])
+        r, g, b = photo.getpixel((int((x-ground['minX'])/(ground['maxX']-ground['minX'])*photo.width), int((z-ground['minZ'])/(ground['maxZ']-ground['minZ'])*photo.height)))
+        assert r > 190 and r > g + 30 and r > b + 40, f'Aerial at {x},{z} in {c["id"]} is not the pink paseo paving'
+print(f'Paseo clearance: {len(samples)} samples keep {half} m from every standing registry house; {len(corrections)} registry parts on the aerial paseo kept as outlines PASS')
