@@ -6,9 +6,9 @@ Task `middle-pool-south-gate` · area **Middle pool** · priority P2 · structur
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/middle-pool.md` and the contact sheet `villacana-reference/contact-sheets/middle-pool.jpg`
-- docs: `docs/MIDDLE_POOL.md`, `docs/LEVELS.md`
-- data: `data/middle_pool.json`, `data/objects.json`, `data/levels_survey.json`
-- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`
+- docs: `docs/MIDDLE_POOL.md`, `docs/LEVELS.md`, `docs/MIDDLE_POOL_SOUTH_GATE.md`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/levels_survey.json`, `data/middle_pool_south_gate.json`
+- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-south-gate.ts`
 
 ## Photos to build from
 

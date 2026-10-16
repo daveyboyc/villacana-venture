@@ -14,9 +14,11 @@ not bundled in the public site. Apple imagery was compared by eye only.
 - **Stone deck** right round the pool, about 2.4 m wide (aerial and all pool photos).
 - **Lawn** between the two terraces from the cross path down to the seaward wall, and a
   smaller upper lawn north of the cross path (aerial).
-- **Seaward wall and fence:** a low white wall with a dark fence on it along the whole
-  seaward edge of the lawn (web photo 02, `IMG_2188`, aerial). It is one unbroken line
-  with no gate, and the player cannot walk through it.
+- **Seaward wall and fence:** a sandstone retaining wall with a dark mesh fence
+  along the seaward edge (`IMG_2349`, corroborated from the lawn in `IMG_2188`).
+  The earlier white-wall reading from distant pool-side views is superseded by
+  that close paseo view. It is one unbroken boundary with no gate; the player
+  cannot walk through it. Short legacy end returns remain approximate.
 - **Pool fittings**, each placed from two or three photos against the surveyed outline:
   steps on the north-east stub, two ladders, the white pump box, three life rings.
 - **The large palm** north-west of the lawn by the cross path (web photo 01 and a clear
@@ -66,3 +68,27 @@ The handover method: ground traced in `scripts/build_skeleton.py` from
 separate agent reviewed them (20 accepted, 3 rejected; `proposals/south-pool.json`
 keeps every verdict and reason). The north, middle and main pool layouts and the
 seafront were not changed.
+
+## Seaward level and wall reconciliation — issue #37
+
+IMG_2349 was inspected at full size alongside IMG_2188, the south-pool contact
+sheet and the map aerial. From the paseo, the sandstone face supports the lawn;
+the green mesh stands at lawn level, with the pool deck behind it. The existing
+paseo-wall pass already supplies the approximate 1 m difference by lowering the
+paseo to -1 m while the south pool and both lawns stay at datum 0. No additional
+platform or slope is supported by these views, so those heights are preserved.
+The Dalí rise, restaurant-to-main-pool drop and sea profile are unchanged.
+
+The old `skeleton.seaWall` trace records this same boundary, not an additional
+white wall above the sandstone. Shared stretches now disappear consistently from
+the legacy wall mesh, map overlay and collision. The sandstone wall supplies all
+three there; the short old white returns still join the houses. Their extent
+remains approximate and unphotographed, as recorded above. No route, registry
+footprint or coastline is retraced in this task.
+
+`data/south_pool.json:seawardLevel` records the photo evidence and height limits.
+`check_south_pool_level.py` checks the existing flat lawn/pool datum and paseo
+difference; the layout browser check builds both wall meshes and verifies shared
+segments, collision, lawn datum and coping, then walks the paseo both ways.
+Camera comparisons use IMG_2349 at its existing pin/heading in Details mode.
+They are approximate third-person views, not calibrated image matches.
