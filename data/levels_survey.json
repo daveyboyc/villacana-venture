@@ -71,9 +71,19 @@
         "IMG_2328.jpg",
         "IMG_2262.jpg"
       ],
-      "model": "differs",
+      "model": "built",
       "task": "cervantes-steps-treads",
-      "note": "North half of the lane. Bottom riser one tile row up from the drain; each tread one tile plus a grey stone nosing, 0.45-0.55 m. Risers at about 0.4, 0.92 and 1.45 m from the drain; the model has 0.4, 1.0 and 1.6 (data/cervantes_elena_steps.json)."
+      "compare": {
+        "low": [
+          -152.41,
+          57.06
+        ],
+        "high": [
+          -154.99,
+          58.6
+        ]
+      },
+      "note": "North half of the lane. Bottom riser one tile row up from the drain; each tread one tile plus a grey stone nosing, 0.45-0.55 m. Risers at about 0.4, 0.92 and 1.45 m from the drain. Built: data/cervantes_elena_steps.json has risers at 0.4, 0.92 and 1.45 m; the ramp beside them keeps its 3 m local run (data/terrain.json) and stays below every tread."
     },
     {
       "id": "cervantes-junction-door-steps",

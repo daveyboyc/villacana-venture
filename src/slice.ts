@@ -18,7 +18,7 @@ import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview} from "./middle-pool";
-import {pavingCanvas,plasterMaterial} from "./materials";
+import {pavingCanvas,plasterMaterial,groundMaterial} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
 import { asset } from "./asset";
@@ -105,7 +105,7 @@ async function boot(): Promise<void> {
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
   const scene = new THREE.Scene();
-  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,skeleton.seafront?{id:"paseo",...skeleton.seafront.paseo}:undefined,[coastalAccess,barrakaAccess]):[];
+  const routes=skeleton.boundaryReference?protectedRoutes(skeleton.boundaryReference,undefined,[...(skeleton.seafront?.paseo.protect??[]),coastalAccess,barrakaAccess]):[];
   const canPlaceDecoration=(x:number,z:number,radius:number)=>routeClearance(routes,x,z,radius);
   scene.userData.decorationClearance=canPlaceDecoration;scene.userData.protectedRoutes=routes;scene.userData.layoutOnly=layoutOnly;
   scene.background = new THREE.Color("#bfe3f2");
@@ -115,7 +115,7 @@ async function boot(): Promise<void> {
   const resize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     camera.aspect = window.innerWidth / window.innerHeight;
-    camera.far=Math.max(1500,RADIUS*4*innerHeight/innerWidth);
+    camera.far=Math.max(1500,RADIUS*10*Math.max(1,innerHeight/innerWidth));
     camera.updateProjectionMatrix();
   };
   window.addEventListener("resize", resize);
@@ -286,17 +286,22 @@ async function boot(): Promise<void> {
   if(mainPool&&platform)checkLine(platform.ring,true);
   if(seaside&&skeleton.seafront)checkLine(skeleton.seafront.coast,false,true);
   scene.add(checks);
-  let showChecks=true;
+  let showChecks=!matchMedia("(max-width:700px), (max-height:500px)").matches;
+  document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));
   const notes=document.querySelector<HTMLElement>("#alignment-notes")!;
   if(matchMedia("(max-width:700px)").matches)document.querySelector<HTMLDetailsElement>("#alignment-details")!.open=false;
   document.querySelector<HTMLButtonElement>("#alignment-platform")!.hidden=!mainPool;
   document.querySelector<HTMLButtonElement>("#alignment-coast")!.hidden=!seaside;
   const controls=document.querySelector<HTMLElement>("#overview-controls")!;
   const action=(id:string,callback:()=>void)=>document.querySelector(id)!.addEventListener("click",callback);
-  action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest,distance*1.3);});
+  action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest*3,distance*1.3);});
   action("#overview-left",()=>{camYaw-=Math.PI/12;});action("#overview-right",()=>{camYaw+=Math.PI/12;});
   action("#overview-top",()=>{pitch=Math.PI/2;});action("#overview-north",()=>{camYaw=0;});
-  action("#overview-fit",()=>{overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=Math.PI/2;camYaw=0;});
+  const fitArea=()=>{overview=true;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=Math.PI/2;camYaw=0;resetPointers();};
+  action("#overview-fit",fitArea);
+  action(".camera-fit",fitArea);
+  action(".camera-in",()=>{distance=Math.max(3.5,distance/1.3);});
+  action(".camera-out",()=>{distance=Math.min(farthest*3,distance*1.3);});
   const panMode=(pan:boolean)=>{
     overviewPan=pan;
     document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
@@ -335,14 +340,19 @@ async function boot(): Promise<void> {
     if (overview !== wasOverview) {
       // The overview button jumps between walking height and looking down on the whole area.
       wasOverview = overview;
-      controls.hidden=!overview;backdrop.visible=!overview&&!layoutOnly;
+      controls.hidden=!overview;
+      document.querySelector<HTMLElement>("#walk-camera")!.hidden=overview;
+      document.querySelector<HTMLElement>("#jump")!.hidden=overview;
+      document.querySelector("#overview")!.textContent=overview?"Walk":"Overview";
+      document.querySelector<HTMLElement>("#help")!.hidden=overview;
+      backdrop.visible=!overview&&!layoutOnly;
       document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
       if(overview)camYaw=0;
       distance = overview ? farthest : 6;
       pitch = overview ? Math.PI/2 : 0.45;
     }
     pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, overview ? Math.PI/2 : 1.45);
-    distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, farthest);
+    distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, farthest*3);
     // Push the haze back as the camera rises, so the layout stays clear from above.
     fog.near = 90 + distance * 1.5;
     fog.far = 260 + distance * 3;
@@ -362,14 +372,14 @@ async function boot(): Promise<void> {
     camera.lookAt(target);
     pools.update(clock.elapsedTime);
     camera.updateMatrixWorld();
-    document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`${controls.offsetHeight+72}px`;
+    document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`calc(${controls.offsetHeight+24}px + env(safe-area-inset-bottom))`;
     checks.visible=overview&&showChecks;
     notes.hidden=!overview||!showChecks;
     const bearing=((Math.round(-camYaw*180/Math.PI)%360)+360)%360;
     rotation.value=String(bearing);
     document.querySelector("#overview-bearing")!.textContent=`${bearing}°`;
     controls.dataset.distance=distance.toFixed(2);controls.dataset.bearing=String(bearing);
-    controls.dataset.centre=`${overviewCentre.x.toFixed(2)},${overviewCentre.z.toFixed(2)}`;
+    controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
     references.update();
     renderer.render(scene, camera);
 
@@ -488,9 +498,19 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     pctx.fill();
     pctx.globalCompositeOperation = "source-over";
   }
+  // Classification stays separate from colour, so repeating detail never spills
+  // onto paving, pool cutouts or the sea. It uses the existing lawn pixels.
+  const lawnMask=document.createElement("canvas");lawnMask.width=lawnMask.height=size;
+  const maskContext=lawnMask.getContext("2d")!,lawnPixels=maskContext.createImageData(size,size);
+  for(let k=0;k<painted.length;k+=4) {
+    const isLawn=Math.abs(painted[k]-lr)+Math.abs(painted[k+1]-lg)+Math.abs(painted[k+2]-lb)<30;
+    lawnPixels.data[k]=isLawn?255:0;lawnPixels.data[k+3]=255;
+  }
+  maskContext.putImageData(lawnPixels,0,0);
   const texture = new THREE.CanvasTexture(paint);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
+  const material=groundMaterial(texture,lawnMask,span*2);
   // The ground is one sheet with the pools cut out of it.
   const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
   const sheet = shapeOf(
@@ -509,9 +529,9 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const lowerUv:number[]=[];const lowerAt=lowerGeometry.getAttribute("position");
   for(let i=0;i<lowerAt.count;i++) lowerUv.push((lowerAt.getX(i)-(centre.x-span))/(span*2),1-(lowerAt.getZ(i)-(centre.z-span))/(span*2));
   lowerGeometry.setAttribute("uv",new THREE.Float32BufferAttribute(lowerUv,2));
-  const lowerGround=new THREE.Mesh(lowerGeometry,new THREE.MeshStandardMaterial({map:texture,roughness:0.95,alphaTest:0.5}));lowerGround.receiveShadow=true;lowerGround.userData.referenceSurface=true;scene.add(lowerGround);
+  const lowerGround=new THREE.Mesh(lowerGeometry,material);lowerGround.receiveShadow=true;lowerGround.userData.referenceSurface=true;scene.add(lowerGround);
   }
-  const ground = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ map: texture, roughness: 0.95, alphaTest: 0.5 }));
+  const ground = new THREE.Mesh(geometry, material);
   ground.receiveShadow = true;
   ground.userData.noDrape = true;
   addRaisedGround(scene, ground.material, centre, span);
@@ -580,6 +600,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
   const grey = new THREE.MeshStandardMaterial({ color: ROOF_GREY, roughness: 0.95 });
   const terrace = new THREE.MeshStandardMaterial({ color: ROOF_TERRACE, roughness: 0.9 });
   for (const b of buildings) {
+    if (b.notStanding) continue; // registry outline only: the aerial shows open paseo and sand there (issue #41)
     const c = centroid(b.ring);
     // A zero-storey enclosure is not evidence of a solid house or measured walls.
     const height = b.floors > 0 ? b.floors * floorHeight : .035;
@@ -998,6 +1019,7 @@ function readKeys(): void {
   input.run = keys.has("ShiftLeft") || keys.has("ShiftRight");
 }
 
+let resetPointers=()=>{};
 function bindInput(): void {
   window.addEventListener("keydown", (e) => {
     if((e.target as HTMLElement).matches("input,textarea,select")||document.querySelector("dialog[open]"))return;
@@ -1008,28 +1030,27 @@ function bindInput(): void {
   document.querySelector("#jump")!.addEventListener("pointerdown", () => (input.jump = true));
   const overviewButton = document.querySelector<HTMLButtonElement>("#overview")!;
   overviewButton.addEventListener("click", () => {
+    resetPointers();
     overview = !overview;
     overviewButton.textContent = overview ? "Walk" : "Overview";
   });
 
-  // Left half of a touch screen walks, anything else looks around.
+  // Track every canvas pointer before assigning the single-finger walk/look role.
+  // A second finger promotes the joystick to a pinch and stops walking.
+
   const looks = new Map<number, { x: number; y: number }>();
   canvas.addEventListener("pointerdown", (e) => {
     canvas.setPointerCapture(e.pointerId);
+    looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if(looks.size>1) {stick=null;input.moveX=input.moveZ=input.lookDx=input.lookDy=0;return;}
     if (!overview && e.pointerType === "touch" && e.clientX < window.innerWidth / 2 && !stick) {
       stick = { id: e.pointerId, x: e.clientX, y: e.clientY };
-    } else {
-      looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
     }
   });
   canvas.addEventListener("pointermove", (e) => {
-    if (stick && e.pointerId === stick.id) {
-      input.moveX = clamp((e.clientX - stick.x) / 50, -1, 1);
-      input.moveZ = clamp(-(e.clientY - stick.y) / 50, -1, 1);
-      return;
-    }
     const prev = looks.get(e.pointerId);
     if (!prev) return;
+    if (looks.size > 2) {looks.set(e.pointerId,{x:e.clientX,y:e.clientY});return;}
     if (looks.size === 2) {
       // Two fingers: pinch to zoom.
       const other = [...looks.entries()].find(([id]) => id !== e.pointerId)![1];
@@ -1042,7 +1063,10 @@ function bindInput(): void {
       looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
       return;
     }
-    if(overview && overviewPan && !e.shiftKey && !(e.buttons&2)) {panDx+=e.clientX-prev.x;panDy+=e.clientY-prev.y;}
+    if (stick && e.pointerId === stick.id) {
+      input.moveX = clamp((e.clientX - stick.x) / 50, -1, 1);
+      input.moveZ = clamp(-(e.clientY - stick.y) / 50, -1, 1);
+    } else if(overview && overviewPan && !e.shiftKey && !(e.buttons&2)) {panDx+=e.clientX-prev.x;panDy+=e.clientY-prev.y;}
     else {input.lookDx += e.clientX - prev.x;input.lookDy += e.clientY - prev.y;}
     looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
   });
@@ -1056,8 +1080,10 @@ function bindInput(): void {
   };
   canvas.addEventListener("pointerup", release);
   canvas.addEventListener("pointercancel", release);
+  canvas.addEventListener("lostpointercapture", release);
+  resetPointers=()=>{looks.clear();stick=null;keys.clear();input.moveX=input.moveZ=input.lookDx=input.lookDy=input.zoom=panDx=panDy=0;};
   canvas.addEventListener("contextmenu",e=>e.preventDefault());
-  window.addEventListener("blur",()=>{keys.clear();looks.clear();stick=null;input.moveX=input.moveZ=0;});
+  window.addEventListener("blur",resetPointers);
   canvas.addEventListener("wheel", (e) => {
     e.preventDefault();
     input.zoom += clamp(e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1)/100,-4,4);

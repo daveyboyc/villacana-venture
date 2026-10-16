@@ -85,6 +85,8 @@ export type SkeletonBuilding = {
   holes?: Vec2[][];
   /** A covered walk-through: built only above head height, open to walk under. */
   passage?: { name: string; trust: "photo" | "likely"; evidence: string };
+  /** A registry part the aerial shows is not standing (data/registry_corrections.json): outline only, floors 0. */
+  notStanding?: { registryFloors: number; trust: string; evidence: string[] };
 };
 
 export type SkeletonPool = {
@@ -95,7 +97,8 @@ export type SkeletonPool = {
 
 export type Seafront = {
   viewBounds: Vec2[];
-  paseo: { name: string; width: number; points: Vec2[]; trust: string };
+  /** `protect`: what must stay clear. Along the wall run it is the walk beyond the wall-foot lamps, narrower than the paving. */
+  paseo: { name: string; width: number; points: Vec2[]; protect: { id: string; name: string; width: number; points: Vec2[] }[]; trust: string };
   beach: { name: string; ring: Vec2[]; trust: string };
   sea: { name: string; ring: Vec2[]; trust: string };
   coast: Vec2[];
