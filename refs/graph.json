@@ -1521,6 +1521,11 @@
    "name": "Cervantes / Elena ramp"
   },
   {
+   "id": "south_pool.json:south-pool-seaward-level",
+   "kind": "model-feature",
+   "name": "South lawn above the paseo"
+  },
+  {
    "id": "steps:cervantes-elena-steps",
    "kind": "model-feature",
    "name": "Cervantes / Elena · steps beside the ramp"
@@ -1630,7 +1635,7 @@
    "kind": "build-task",
    "name": "South pool: lawn level above the paseo and its seaward wall",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 37
   },
   {
@@ -5275,6 +5280,16 @@
    "relation": "cites"
   },
   {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "ref:IMG_2188.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "steps:cervantes-elena-steps",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -5517,6 +5532,16 @@
   {
    "from": "ramp:cervantes-elena-ramp",
    "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "south_pool.json:south-pool-seaward-level",
+   "to": "area:south-pool",
    "relation": "in-area"
   },
   {
@@ -6652,6 +6677,12 @@
   {
    "from": "ref:IMG_2350.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2350.jpg",
+   "to": "south_pool.json:south-pool-seaward-level",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

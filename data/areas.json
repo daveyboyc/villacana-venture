@@ -85,6 +85,9 @@
    ],
    "src": [
     "src/south-pool.ts"
+   ],
+   "notes": [
+    "IMG_2349 and IMG_2188: the south lawn and level pool stand about 1 m above the paseo behind the sandstone wall and mesh fence. Existing paseo profile supplies that difference; south pool stays at datum 0. The legacy seaward white wall is omitted wherever sandstone replaces it in map, 3D and collision. Short end returns remain approximate, not photographed endpoints."
    ]
   },
   {

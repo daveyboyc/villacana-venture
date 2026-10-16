@@ -167,7 +167,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? []), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {

@@ -24,7 +24,7 @@ Long views, the backdrop, how areas look from above or from afar.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. |
+| [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. _Used by: south_pool.json:south-pool-seaward-level._ |
 | `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. |
 
 ## Calle Elena

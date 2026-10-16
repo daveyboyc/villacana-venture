@@ -285,8 +285,9 @@
    "dependsOn": [
     "paseo-retaining-wall"
    ],
-   "status": "open",
-   "issue": 37
+   "status": "in-progress",
+   "issue": 37,
+   "owner": "issue_37"
   },
   {
    "id": "barraka-boardwalk",

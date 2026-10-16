@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 301,
-  "photosCitedByModel": 54,
-  "modelFeaturesWithPhotoCitations": 44
+  "features": 302,
+  "photosCitedByModel": 55,
+  "modelFeaturesWithPhotoCitations": 45
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -266,7 +266,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "south_pool.json:south-pool-seaward-level"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -89.3,
@@ -5093,7 +5095,8 @@
     }
    ],
    "citedBy": [
-    "paseo_wall.json:paseo-retaining-wall"
+    "paseo_wall.json:paseo-retaining-wall",
+    "south_pool.json:south-pool-seaward-level"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

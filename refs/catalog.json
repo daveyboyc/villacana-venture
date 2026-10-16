@@ -249,7 +249,9 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "south_pool.json:south-pool-seaward-level"
+  ],
   "looksAt": [
    -88.4,
    173.2
@@ -4735,7 +4737,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "paseo_wall.json:paseo-retaining-wall"
+   "paseo_wall.json:paseo-retaining-wall",
+   "south_pool.json:south-pool-seaward-level"
   ],
   "looksAt": [
    -80.5,
@@ -4785,7 +4788,8 @@
   "looksAtFeatures": [
    "area:paseo",
    "paseo_wall.json:paseo-timber-edge",
-   "paseo_wall.json:paseo-retaining-wall"
+   "paseo_wall.json:paseo-retaining-wall",
+   "south_pool.json:south-pool-seaward-level"
   ]
  },
  {
