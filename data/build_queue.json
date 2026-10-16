@@ -497,7 +497,7 @@
    "dependsOn": [],
    "status": "open",
    "issue": 49,
-   "notes": "Hedges behind the mesh, windbreak cloth runs and the flush service cover are built (PR #74, data/paseo_details.json). Still to do: the four slim white lamps. Their photographed positions at the wall foot fail the route-clearance guard, so they were left out rather than moved without evidence; place them once the paseo width at the wall foot is confirmed."
+   "notes": "Hedges behind the mesh, windbreak cloth runs and the flush service cover are built (PR #74, data/paseo_details.json). Lamps rechecked after the issue #35 retrace (PR #64): IMG_2352 and IMG_2350 show all four standing on the paving on base plates at the wall foot, shaft centre about 0.15 m from the face, not on the coping. The protected paseo route is 3 m wide with its landward edge on the wall face, the whole photographed paving (about 2.9-3.0 m), so each shaft centre lies about 0.3 m inside the guard and all four stay omitted (marked 'omitted' with the reason in data/paseo_details.json; check_paseo_details.py fails if one starts to clear). To finish: decide whether the protected paseo width should be the clear walk beside wall-foot fixtures (about 2.7 m) rather than the full paving; that is a data/paseo_wall.json route change, then drop 'omitted' and the lamps place themselves."
   },
   {
    "id": "raised-terraces",

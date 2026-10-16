@@ -75,14 +75,15 @@
     6,
     6
    ],
-   "inland": -0.12,
+   "inland": -0.15,
    "width": 0.16,
    "height": 3.7,
    "evidence": [
     "IMG_2352.jpg",
     "IMG_2354.jpg"
    ],
-   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+   "trust": "Nearest lamp in IMG_2352 (looking west) and top of IMG_2354; along-wall position estimated from the photos, about 1-2 m. Photographed standing on the stamped paseo itself, not on the wall or coping: each shaft rises from a small square base plate set on the pavement against the sandstone foot (IMG_2352, IMG_2350; the next lamp's base shows at the top of IMG_2354). Perspective read of IMG_2352 (camera about 1.55 m up, vanishing point of the wall foot and timber edge) puts the shaft centre about 0.15 m seaward of the wall foot on a paved width of about 2.9-3.0 m; shaft about 3.5 m plus a flat head about 0.65 m long reaching over the walk. The protected paseo route (data/paseo_wall.json route: 3 m wide, centre 1.5 m seaward of the face) covers the whole paving up to the wall face, so the shaft alone lies about 0.3 m inside the guard (centre about 1.35 m from the route centreline against 1.65 m needed at zero radius). The paseo therefore does not keep its full route clear beside a lamp, and the lamp is omitted by the shared guard rather than moved onto the coping or into the garden, where no photo puts it. Placeable only if the protected paseo width is reduced to the clear walk beside wall-foot fixtures (about 2.7 m), which is a route decision outside this task.",
+   "omitted": "blocks protected paseo route"
   },
   {
    "id": "paseo-white-lamp-2",
@@ -92,14 +93,15 @@
     20,
     20
    ],
-   "inland": -0.12,
+   "inland": -0.15,
    "width": 0.16,
    "height": 3.7,
    "evidence": [
     "IMG_2352.jpg",
     "IMG_2354.jpg"
    ],
-   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+   "trust": "Second lamp beyond lamp 1 in IMG_2352, about 14 m further east along the wall; spacing estimated, about 2 m. Photographed standing on the stamped paseo itself, not on the wall or coping: each shaft rises from a small square base plate set on the pavement against the sandstone foot (IMG_2352, IMG_2350; the next lamp's base shows at the top of IMG_2354). Perspective read of IMG_2352 (camera about 1.55 m up, vanishing point of the wall foot and timber edge) puts the shaft centre about 0.15 m seaward of the wall foot on a paved width of about 2.9-3.0 m; shaft about 3.5 m plus a flat head about 0.65 m long reaching over the walk. The protected paseo route (data/paseo_wall.json route: 3 m wide, centre 1.5 m seaward of the face) covers the whole paving up to the wall face, so the shaft alone lies about 0.3 m inside the guard (centre about 1.35 m from the route centreline against 1.65 m needed at zero radius). The paseo therefore does not keep its full route clear beside a lamp, and the lamp is omitted by the shared guard rather than moved onto the coping or into the garden, where no photo puts it. Placeable only if the protected paseo width is reduced to the clear walk beside wall-foot fixtures (about 2.7 m), which is a route decision outside this task.",
+   "omitted": "blocks protected paseo route"
   },
   {
    "id": "paseo-white-lamp-3",
@@ -109,13 +111,14 @@
     54,
     54
    ],
-   "inland": -0.12,
+   "inland": -0.15,
    "width": 0.16,
    "height": 3.7,
    "evidence": [
     "IMG_2350.jpg"
    ],
-   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+   "trust": "Foreground lamp in IMG_2350 (looking north-east) beside the south-pool frontage; position estimated, about 2 m. Photographed standing on the stamped paseo itself, not on the wall or coping: each shaft rises from a small square base plate set on the pavement against the sandstone foot (IMG_2352, IMG_2350; the next lamp's base shows at the top of IMG_2354). Perspective read of IMG_2352 (camera about 1.55 m up, vanishing point of the wall foot and timber edge) puts the shaft centre about 0.15 m seaward of the wall foot on a paved width of about 2.9-3.0 m; shaft about 3.5 m plus a flat head about 0.65 m long reaching over the walk. The protected paseo route (data/paseo_wall.json route: 3 m wide, centre 1.5 m seaward of the face) covers the whole paving up to the wall face, so the shaft alone lies about 0.3 m inside the guard (centre about 1.35 m from the route centreline against 1.65 m needed at zero radius). The paseo therefore does not keep its full route clear beside a lamp, and the lamp is omitted by the shared guard rather than moved onto the coping or into the garden, where no photo puts it. Placeable only if the protected paseo width is reduced to the clear walk beside wall-foot fixtures (about 2.7 m), which is a route decision outside this task.",
+   "omitted": "blocks protected paseo route"
   },
   {
    "id": "paseo-white-lamp-4",
@@ -125,13 +128,14 @@
     77,
     77
    ],
-   "inland": -0.12,
+   "inland": -0.15,
    "width": 0.16,
    "height": 3.7,
    "evidence": [
     "IMG_2350.jpg"
    ],
-   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+   "trust": "Further lamp in IMG_2350, beyond the green windbreak run; distance estimated by eye, about 3 m. Photographed standing on the stamped paseo itself, not on the wall or coping: each shaft rises from a small square base plate set on the pavement against the sandstone foot (IMG_2352, IMG_2350; the next lamp's base shows at the top of IMG_2354). Perspective read of IMG_2352 (camera about 1.55 m up, vanishing point of the wall foot and timber edge) puts the shaft centre about 0.15 m seaward of the wall foot on a paved width of about 2.9-3.0 m; shaft about 3.5 m plus a flat head about 0.65 m long reaching over the walk. The protected paseo route (data/paseo_wall.json route: 3 m wide, centre 1.5 m seaward of the face) covers the whole paving up to the wall face, so the shaft alone lies about 0.3 m inside the guard (centre about 1.35 m from the route centreline against 1.65 m needed at zero radius). The paseo therefore does not keep its full route clear beside a lamp, and the lamp is omitted by the shared guard rather than moved onto the coping or into the garden, where no photo puts it. Placeable only if the protected paseo width is reduced to the clear walk beside wall-foot fixtures (about 2.7 m), which is a route decision outside this task.",
+   "omitted": "blocks protected paseo route"
   },
   {
    "id": "paseo-service-cover",
