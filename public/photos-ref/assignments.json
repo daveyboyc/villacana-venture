@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "b802a177bf232c7b38121a8fa192b1c213f1a4220f5bcdb5d3c9ab85d3ca6939",
+ "inputDigest": "4d4f9339ae9041867304e7f3cad4334d73d0dd412af8a64fbbd6cf73b10edcaa",
  "summary": {
   "unplaced": 1,
   "suggested": 77,
@@ -8,7 +8,7 @@
   "photos": 145,
   "features": 335,
   "photosCitedByModel": 78,
-  "modelFeaturesWithPhotoCitations": 78
+  "modelFeaturesWithPhotoCitations": 80
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -4366,7 +4366,8 @@
    ],
    "citedBy": [
     "cervantes_garden_door.json:cervantes-garden-door",
-    "cervantes_garden_door.json:cervantes-junction-north-bed"
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "steps:cervantes-elena-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5074,6 +5075,8 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "building:6465801UF1366N_part5",
+    "building:6465801UF1366N_part6",
     "barraka_boardwalk.json:barraka-boardwalk",
     "barraka_boardwalk.json:barraka-sign-planter"
    ],
@@ -5110,6 +5113,8 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "building:6465801UF1366N_part5",
+    "building:6465801UF1366N_part6",
     "barraka_boardwalk.json:barraka-boardwalk",
     "barraka_boardwalk.json:barraka-sign-planter",
     "barraka_boardwalk.json:barraka-beach-seating"
@@ -5331,7 +5336,8 @@
     }
    ],
    "citedBy": [
-    "cervantes_garden_door.json:cervantes-junction-north-bed"
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "steps:cervantes-elena-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

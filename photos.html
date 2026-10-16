@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Villacana Photo Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a working site plan. Map first (sea at the bottom, as in the game's overview), photo details beside it on wide screens and under it on phones. */
+:root {
+  --bg: #eef1f1;          /* limewash grey, faint blue bias */
+  --panel: #ffffff;
+  --ink: #1d2a30;
+  --muted: #5d6b71;
+  --line: #d3dadc;
+  --house: #fbfcfc;
+  --house-edge: #a9b4b8;
+  --lane: #dcb79f;        /* the terracotta lane tiles */
+  --pool: #6fb7d6;
+  --sand: #e9dcc0;
+  --sea: #b9d5e3;
+  --accent: #1d5c86;      /* Mediterranean blue: selection */
+  --good: #2f8a4f;
+  --checked: #127a85;
+  --fair: #c38a12;
+  --poor: #c2412d;
+  --none: #7a7f86;
+  --cov-0: #b8324f;
+  --cov-1: #e2a934;
+  --cov-3: #3d9a5b;
+  --display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141b1f; --panel: #1c252a; --ink: #e6ecee; --muted: #9aa8ae; --line: #2e3a40;
+  --house: #2b363c; --house-edge: #4a5960; --lane: #6f5444; --pool: #3d8db0; --sand: #4a4232; --sea: #1f3a4a;
+  --accent: #6db4e4; --good: #5cc07c; --checked: #43b9c4; --fair: #e2ad3b; --poor: #ec6b55; --none: #8c929a;
+  --cov-0: #ec6b55; --cov-1: #e2ad3b; --cov-3: #5cc07c; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141b1f; --panel: #1c252a; --ink: #e6ecee; --muted: #9aa8ae; --line: #2e3a40;
+  --house: #2b363c; --house-edge: #4a5960; --lane: #6f5444; --pool: #3d8db0; --sand: #4a4232; --sea: #1f3a4a;
+  --accent: #6db4e4; --good: #5cc07c; --checked: #43b9c4; --fair: #e2ad3b; --poor: #ec6b55; --none: #8c929a;
+  --cov-0: #ec6b55; --cov-1: #e2ad3b; --cov-3: #5cc07c; color-scheme: dark }
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 18px 40px; max-width: 1280px; margin: 0 auto; display: grid; gap: 18px }
+header { display: grid; gap: 10px }
+h1 { font: 700 clamp(28px, 5vw, 40px)/1.05 var(--display); letter-spacing: .01em; margin: 0; text-wrap: balance }
+h2 { font: 600 20px/1.2 var(--display); letter-spacing: .02em; margin: 0 }
+.lede { margin: 0; color: var(--muted); max-width: 68ch }
+.lede a { color: var(--accent); font-weight: 500 }
+.tally { display: flex; flex-wrap: wrap; gap: 8px }
+.chip { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 5px 11px; font: 500 13px/1.2 var(--body); cursor: pointer }
+.chip:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.chip[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent) }
+.chip .n { font: 500 12px var(--mono); color: var(--muted) }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex: none }
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 18px; align-items: start }
+@media (max-width: 900px) { .main { grid-template-columns: minmax(0, 1fr) } }
+@media (max-width: 600px) { .mapbox { height: 58vh; min-height: 340px } }
+.mapbox { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; height: min(70vh, 720px); min-height: 380px; touch-action: none }
+svg#map { width: 100%; height: 100%; display: block; cursor: grab; user-select: none }
+svg#map.dragging { cursor: grabbing }
+.tools { position: absolute; right: 10px; top: 10px; display: grid; gap: 6px }
+.tools button { width: 38px; height: 38px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font: 600 18px var(--body); cursor: pointer }
+.layers { position: absolute; left: 10px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 6px; max-width: calc(100% - 20px) }
+.layers .chip { font-size: 12px; padding: 4px 9px }
+.compass { position: absolute; left: 10px; top: 10px; font: 500 11px var(--mono); color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 4px 7px }
+aside { display: grid; gap: 14px; min-width: 0 }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0 }
+.detail img { width: 100%; border-radius: 6px; display: block; aspect-ratio: 4 / 3; object-fit: cover; background: var(--line) }
+.detail .title { font: 600 17px/1.3 var(--body); margin: 0 }
+.kv { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; font-size: 13.5px; margin: 0 }
+.kv dt { color: var(--muted) }
+.kv dd { margin: 0 }
+.mono { font-family: var(--mono); font-size: 12.5px }
+.pill { display: inline-flex; align-items: center; gap: 6px; font: 600 12px/1 var(--body); padding: 4px 8px; border-radius: 999px; background: color-mix(in srgb, var(--q) 16%, transparent); color: var(--q) }
+.obs { margin: 0; font-size: 14px; color: var(--ink) }
+.note { margin: 0; font-size: 13px; color: var(--muted) }
+.empty { color: var(--muted); font-size: 14px; margin: 0 }
+.areas { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin }
+.areas .chip { white-space: nowrap; flex: none }
+.areaSum { display: grid; gap: 8px }
+.bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: var(--line) }
+.bar span { display: block; height: 100% }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px }
+.thumb { position: relative; border: 0; padding: 0; background: none; cursor: pointer; border-radius: 6px; overflow: hidden; text-align: left; color: var(--ink) }
+.thumb img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block }
+.thumb .tag { position: absolute; left: 5px; bottom: 5px; font: 500 10.5px var(--mono); background: color-mix(in srgb, var(--panel) 88%, transparent); padding: 2px 5px; border-radius: 4px; display: inline-flex; gap: 4px; align-items: center }
+.thumb[aria-current="true"] { outline: 3px solid var(--accent); outline-offset: -3px }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px }
+ul.plain { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px }
+.legend { display: grid; gap: 6px; font-size: 13px }
+.legend div { display: flex; gap: 8px; align-items: center }
+.sw { width: 26px; height: 6px; border-radius: 3px; flex: none }
+@media (prefers-reduced-motion: no-preference) { .pin { transition: opacity .15s } }
+.btns { display: flex; flex-wrap: wrap; gap: 8px }
+.btn { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 8px; padding: 8px 12px; font: 500 14px var(--body); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--panel) }
+.btn[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent) }
+.btn:disabled { opacity: .5; cursor: default }
+.review { border-top: 1px solid var(--line); padding-top: 12px; display: grid; gap: 10px }
+.review h3 { font: 600 16px/1.2 var(--display); letter-spacing: .02em; margin: 0 }
+.status { font-size: 13.5px; margin: 0 }
+textarea { width: 100%; min-height: 76px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font: 14px/1.4 var(--body); background: var(--bg); color: var(--ink) }
+textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px }
+.saved { font-size: 12.5px; color: var(--muted); min-height: 1em; margin: 0 }
+.banner { position: absolute; left: 10px; right: 58px; top: 44px; background: var(--accent); color: var(--panel); border-radius: 8px; padding: 9px 12px; font: 500 14px/1.35 var(--body); display: grid; gap: 8px; box-shadow: 0 4px 14px rgb(0 0 0 / .18) }
+.banner .btns .btn { padding: 6px 10px; font-size: 13px }
+.banner .btn.light { background: var(--panel); color: var(--accent); border-color: var(--panel) }
+.banner .btn.ghost { background: transparent; color: var(--panel); border-color: color-mix(in srgb, var(--panel) 60%, transparent) }
+.lightbox { position: fixed; inset: 0; z-index: 10; background: rgb(8 12 14 / .94); display: grid; grid-template-rows: auto minmax(0, 1fr); padding: calc(10px + env(safe-area-inset-top, 0px)) max(10px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(10px, env(safe-area-inset-left, 0px)) }
+.lightbox .bar2 { display: flex; gap: 8px; align-items: center; justify-content: space-between; color: #eef2f3; font: 500 14px var(--body); padding-bottom: 8px }
+.lightbox .bar2 span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.lightbox .scroller { overflow: auto; display: grid; place-items: center; min-height: 0 }
+.lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; cursor: zoom-in }
+.lightbox.zoomed .scroller { place-items: start }
+.lightbox.zoomed img { max-width: none; max-height: none; cursor: zoom-out }
+.lightbox .btn { background: #22303a; color: #eef2f3; border-color: #3a4a55 }
+.thumb .rv { position: absolute; right: 5px; top: 5px; font: 600 11px var(--body); background: var(--panel); color: var(--accent); border-radius: 999px; padding: 2px 6px }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>Villacana Photo Map</h1>
+    <p class="lede"><a href="./slice.html?pool=north,middle,south,main">Walk it</a> · <a href="./blueprint.html">Reference map</a></p>
+    <p class="lede">Every reference photo at its camera position, with the sea at the bottom as in the game. The circle round each pin is the phone's own GPS accuracy. Coloured lanes show how many photos look at each stretch. Tap a pin or a thumbnail to see the photo.</p>
+    <div class="tally" id="tally" role="group" aria-label="Filter by pin accuracy"></div>
+  </header>
+
+  <div class="main">
+    <div class="mapbox" id="mapbox">
+      <svg id="map" role="img" aria-label="Site plan of Villacana with photo camera positions"></svg>
+      <div class="compass">↑ inland · sea ↓</div>
+      <div class="tools"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button><button id="zfit" aria-label="Show whole resort">⤢</button></div>
+      <div class="banner" id="banner" hidden></div>
+      <div class="layers" role="group" aria-label="Map layers">
+        <button class="chip" id="lCov" aria-pressed="true">Lane coverage</button>
+        <button class="chip" id="lAcc" aria-pressed="true">Accuracy circles</button>
+        <button class="chip" id="lLook" aria-pressed="false">View lines</button>
+      </div>
+    </div>
+    <aside>
+      <div class="card detail" id="detail" aria-live="polite"></div>
+      <div class="card legend">
+        <h2>Reading the map</h2>
+        <div><span class="dot" style="background:var(--checked)"></span>Position checked against what the photo shows</div>
+        <div><span class="dot" style="background:var(--good)"></span>Phone GPS, ±5 m or better</div>
+        <div><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="var(--panel)" stroke="var(--accent)" stroke-width="2"/></svg>You have reviewed it (a dashed line runs from the old GPS spot to a moved pin)</div>
+        <div><span class="dot" style="background:var(--fair)"></span>Phone GPS, ±5–10 m</div>
+        <div><span class="dot" style="background:var(--poor)"></span>Phone GPS worse than ±10 m: pin not trusted</div>
+        <div><svg width="12" height="12" aria-hidden="true"><rect x="1.5" y="1.5" width="9" height="9" fill="none" stroke="var(--muted)" stroke-width="2"/></svg>Roof or upper-floor shot: the pin is the building, the line runs to what it looks at</div>
+        <div><span class="sw" style="background:var(--cov-3)"></span>Lane seen in 3 or more photos</div>
+        <div><span class="sw" style="background:var(--cov-1)"></span>Lane seen in 1–2 photos</div>
+        <div><span class="sw" style="background:repeating-linear-gradient(90deg,var(--cov-0) 0 6px,transparent 6px 9px)"></span>No photo looks at this stretch</div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo">
+    <div class="bar2"><span id="lbTitle"></span><span class="btns"><button class="btn" id="lbZoom">Full size</button><button class="btn" id="lbClose">Close</button></span></div>
+    <div class="scroller" id="lbScroll"><img id="lbImg" alt=""></div>
+  </div>
+
+  <section class="card" aria-labelledby="areasH">
+    <h2 id="areasH">Coverage by area</h2>
+    <div class="areas" id="areas" role="group" aria-label="Choose an area"></div>
+    <div class="areaSum" id="areaSum"></div>
+    <div class="grid" id="thumbs"></div>
+  </section>
+
+  <div class="cols">
+    <section class="card" aria-labelledby="gapsH">
+      <h2 id="gapsH">Lanes with the least coverage</h2>
+      <p class="note">Share of each lane that no photo sees. A ground photo counts for about 20 m along the way it points; a roof shot counts round the spot it is aimed at.</p>
+      <ul class="plain" id="gaps"></ul>
+    </section>
+    <section class="card" aria-labelledby="wantH">
+      <h2 id="wantH">Photos that would help most</h2>
+      <ul class="plain">
+        <li><b>Middle pool to south pool.</b> You can't see one pool from the other, so walk the lane between them and take a photo at every step, ramp or drain, pointing along the lane. That settles whether the south pool sits lower.</li>
+        <li><b>North pool tiled stair.</b> From the lawn path, side-on to the stair at the north-west corner, with the curved wall in frame.</li>
+        <li><b>Cervantes junction garden door.</b> Through or over the curved-top door with two red steps, to show the patio floor.</li>
+        <li><b>A retake for the poor pin.</b> IMG_2341 (curved hedge wall, probably the middle pool) has GPS of ±47 m. One more shot from the same spot with a good GPS fix would place it.</li>
+        <li><b>Cervantes east of Elena.</b> The half towards Pintor Picasso has no photos; the half from Dalí to Elena is well covered.</li>
+        <li><b>The dashed red lanes on the map.</b> One photo looking along each, ideally from both ends.</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<script type="module" src="/src/photo-map.js"></script>
+</body>
+</html>

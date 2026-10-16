@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "b802a177bf232c7b38121a8fa192b1c213f1a4220f5bcdb5d3c9ab85d3ca6939",
+ "inputDigest": "4d4f9339ae9041867304e7f3cad4334d73d0dd412af8a64fbbd6cf73b10edcaa",
  "summary": {
   "unplaced": 1,
   "suggested": 77,
@@ -8,7 +8,7 @@
   "photos": 145,
   "features": 335,
   "photosCitedByModel": 78,
-  "modelFeaturesWithPhotoCitations": 78
+  "modelFeaturesWithPhotoCitations": 80
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1412,14 +1412,24 @@
    "name": "6465801UF1366N_part5",
    "kind": "building",
    "source": "registry",
-   "passage": false
+   "passage": false,
+   "notStanding": true,
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ]
   },
   {
    "id": "building:6465801UF1366N_part6",
    "name": "6465801UF1366N_part6",
    "kind": "building",
    "source": "registry",
-   "passage": false
+   "passage": false,
+   "notStanding": true,
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ]
   },
   {
    "id": "building:6465801UF1366N_part7",
@@ -2605,6 +2615,8 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2286.jpg",
+    "IMG_2355.jpg",
+    "IMG_2328.jpg",
     "IMG_2262.jpg"
    ]
   },
@@ -6796,6 +6808,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2328.jpg",
+   "to": "steps:cervantes-elena-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2329.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -7347,6 +7365,18 @@
   },
   {
    "from": "photo:IMG_2346.jpg",
+   "to": "building:6465801UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
+   "to": "building:6465801UF1366N_part6",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
    "to": "barraka_boardwalk.json:barraka-boardwalk",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -7368,6 +7398,18 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "building:6465801UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "building:6465801UF1366N_part6",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2347.jpg",
@@ -7599,6 +7641,12 @@
   {
    "from": "photo:IMG_2355.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "steps:cervantes-elena-steps",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

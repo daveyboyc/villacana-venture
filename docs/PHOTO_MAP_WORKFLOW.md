@@ -10,6 +10,8 @@ Every batch goes through the same steps, so any agent can pick up any area.
 2. `python3 scripts/index_photos.py <folder> public/photos-ref --annotations data/photo_annotations.json`
    (needs `Pillow` and `pillow-heif`). It now also records GPS altitude, which
    separates roof shots from lane shots.
+   Then `python3 scripts/build_photo_map.py --thumbs` makes the photo map's
+   thumbnails for the new photos (commit them with the web copies).
 3. Look at every image. In `data/photo_annotations.json` give it a title,
    observation and Drive link. In `data/reference_tags.json` give it `shows`
    (every area visible, not where the camera stood), `viewpoint` (ground,
@@ -144,12 +146,21 @@ No street, building, wall, ramp or coastline geometry is changed in this photo p
 
 ## Reviews from the photo map
 
-Dave checks pins on the photo map page (a private claude.ai artifact). For each
+The photo map is part of the site: `photos.html` (linked from the reference map
+and the walk), built from `public/photo-map.json` (`scripts/build_photo_map.py`,
+run by the site build; `--thumbs` makes thumbnails for new photos in
+`public/photos-ref/thumbs/`). On the live site checks are kept in the browser and
+"Send checks" copies them as text to paste to Claude; save that text to a file and
+pass it to `apply_photo_reviews.py`. Opened as the claude.ai artifact, the same
+page saves to the artifact's shared store instead.
+
+Dave checks pins on the photo map page. For each
 photo he can mark the position right, move the pin (where he stood, and
 optionally where it points), mark it unsure, and add a note. The page keeps
 these in its `reviews` store. To apply a batch:
 
-1. Export the store (Claude: `ArtifactData` `list` of `reviews` with `out_dir`).
+1. Export the store (Claude: `ArtifactData` `list` of `reviews` with `out_dir`),
+   or save the pasted "Send checks" text to a file.
 2. `python3 scripts/apply_photo_reviews.py <export folder>`: confirmed and
    moved pins go to `data/photo_positions.json` and the manifest as
    "checked against photo content" (original GPS kept under `gps`); notes go

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Apply photo reviews from the photo map page to the repo.
 
-python3 scripts/apply_photo_reviews.py <reviews.json | folder of exported review files>
+python3 scripts/apply_photo_reviews.py <reviews.json | folder of exported review files | pasted checks.txt>
 
 The input is the review documents exported from the photo map's
 `reviews` collection (one per photo): {photo, verdict, x, z, heading, note,
@@ -72,7 +72,12 @@ if __name__ == '__main__':
     files = sorted(source.rglob('*.json')) if source.is_dir() else [source]
     rows = []
     for f in files:
-        data = json.loads(f.read_text())
+        text = f.read_text()
+        try:
+            data = json.loads(text)
+        except json.JSONDecodeError:
+            # Pasted from the live site's "Send checks": a heading line, then the JSON list.
+            data = json.loads(text[text.index('['):])
         for d in data if isinstance(data, list) else [data]:
             rows.append(d.get('data', d))
     for line in apply(rows) or ['nothing to apply']:

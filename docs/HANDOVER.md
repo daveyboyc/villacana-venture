@@ -72,6 +72,7 @@ cd scripts && for c in check_map check_street_layout check_boundary_reference ch
 npx tsc --noEmit && npm run build
 node scripts/test_layout_browser.cjs
 node scripts/test_overview_browser.cjs
+node scripts/test_photo_map_browser.cjs
 ```
 
 Plus the task's own `Done when` items, a new or extended `scripts/check_*.py`

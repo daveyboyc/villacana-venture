@@ -1,0 +1,20 @@
+{
+ "checkedAt": "2026-10-16",
+ "about": "Registry building parts that the aerial shows are not standing. The ring stays exactly as the registry gives it (map outline, dashed); only the storey count is set to 0, so the part is neither extruded nor solid. Read by scripts/build_skeleton.py; checked by scripts/check_seafront.py. Issue #41.",
+ "notStanding": [
+  {
+   "id": "6465801UF1366N_part5",
+   "registryFloors": 1,
+   "evidence": ["IMG_2346.jpg", "IMG_2347.jpg"],
+   "trust": "Aerial (public/map/ground.jpg, Esri, date unknown): the pink stamped paseo, about 3.5 m wide, crosses this part from its north-west to its north-east side, and the rest of the part is open sand and the pale beach-access strip beside the Barraka roof; no roof, roof edge or shadow lies anywhere inside the ring. The roofs either side (Barraka 6364501UF1366S_part8 and this parcel's parts 2-4) match their registry rings within about 1 m in the same image, so this is not a registration offset. IMG_2346/IMG_2347 (pins about 4 m accuracy, the latter inside the ring) show only sand, the Barraka sign planter, a timber walkway and a small thatched kiosk where they stand, with no building. The registry parcel (retail, built 1967, record version 2009) still includes the part; why is not known. The footprint is kept as a dashed registry outline, not deleted, and nothing is built in its place.",
+   "aerialPaving": [[34.3, 98.5], [35.7, 97.1], [37.1, 95.7], [38.5, 94.3]]
+  },
+  {
+   "id": "6465801UF1366N_part6",
+   "registryFloors": 1,
+   "evidence": ["IMG_2346.jpg", "IMG_2347.jpg"],
+   "trust": "Thin registry strip wrapping the north-east side of part 5. On the aerial the same pink paseo crosses it with no wall, edge or shadow across the paving, and its seaward end lies on open sand. Kept as a dashed registry outline; nothing built in its place.",
+   "aerialPaving": [[38.9, 93.9], [39.2, 93.6]]
+  }
+ ]
+}
