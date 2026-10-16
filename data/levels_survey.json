@@ -1,588 +1,595 @@
 {
- "about": "Ground and floor levels read from the reference photos (survey of 15 October 2026, Cervantes, the Elena junction, the Dalí exit, the three pools and the paseo). Heights are metres, judged by eye against tiles (0.33-0.40 m), risers (0.15-0.18 m), doors (about 2.0 m), the glass pool fence (1.0-1.1 m) and sandstone courses (0.30-0.35 m). `rise` is the height of the upper side above the lower side named in `from`. `at` is a map position (x east, z south) estimated from the camera pin, heading and a judged distance: trust it to the stated `atAccuracy`. `model` says how the game stands now: built (the model has it and matches), differs (the model has the place but a different level), missing (nothing modelled), or none (no level change; the model is right to be flat). `task` is the build_queue task that owns the change. scripts/check_levels.py validates this file and compares the terrain items with the terrain rule.",
- "checkedAt": "2026-10-15",
- "findings": {
-  "housesMostlyAtLaneLevel": "On Cervantes, Elena south and the pool lanes the house floors sit at lane level or one sill (0.1-0.15 m) above it; no flights of steps up to front doors were seen. What is raised is the ground in front of some houses: walled patios and terraces, reached by one to six steps, and the west side of the resort.",
-  "westSideHigher": "The 0.5 m rise towards Pintor Dalí shows in three places: the Cervantes ramp and steps at Elena, Calle Eva near the Dalí car park, and the stone steps and ramp at the middle pool's south-west corner. The terrain foot line passes 6 m west of the last one, so the model has the middle pool's south-west lane flat.",
-  "noSecondRiseAtDali": "Where Cervantes meets Pintor Dalí there is no step: a tiled apron with a slot drain meets the road flush. Upper Cervantes is level or falls too gently to see (under about 2%).",
-  "seaFall": "Inside the resort no steady fall towards the sea is visible between the pools; every change seen is a local step. The fall to the sea is at the seafront: south lawn, about 1 m down to the paseo, then the beach sloping to the water.",
-  "notVisible": "Whether the south pool lawn is lower than the middle and north pools; the patio floor levels on the north side of upper Cervantes; the south-side front patios on Cervantes; any ramp further along Cervantes."
- },
- "items": [
-  {
-   "id": "cervantes-elena-ramp",
-   "area": "cervantes",
-   "type": "ramp",
-   "from": "the drain at the junction",
-   "rise": [
-    0.4,
-    0.5
-   ],
-   "confidence": "medium",
-   "run": [
-    2.8,
-    3.6
-   ],
-   "falls": "east-north-east to the full-width drain",
-   "at": [
-    -153.7,
-    57.8
-   ],
-   "atAccuracy": 1.5,
-   "photos": [
-    "IMG_2286.jpg",
-    "IMG_2262.jpg",
-    "IMG_2328.jpg",
-    "IMG_2252.jpg",
-    "IMG_2265.jpg"
-   ],
-   "model": "built",
-   "compare": {
-    "low": [
-     -152.0,
-     56.5
-    ],
-    "high": [
-     -155.8,
-     59.1
-    ]
-   },
-   "note": "South half of the lane, the lawn kerb on its south edge. The white side face of the steps tapers out 8-9 tile rows above the drain."
+  "about": "Ground and floor levels read from the reference photos (survey of 15 October 2026, Cervantes, the Elena junction, the Dalí exit, the three pools and the paseo). Heights are metres, judged by eye against tiles (0.33-0.40 m), risers (0.15-0.18 m), doors (about 2.0 m), the glass pool fence (1.0-1.1 m) and sandstone courses (0.30-0.35 m). `rise` is the height of the upper side above the lower side named in `from`. `at` is a map position (x east, z south) estimated from the camera pin, heading and a judged distance: trust it to the stated `atAccuracy`. `model` says how the game stands now: built (the model has it and matches), differs (the model has the place but a different level), missing (nothing modelled), or none (no level change; the model is right to be flat). `task` is the build_queue task that owns the change. scripts/check_levels.py validates this file and compares the terrain items with the terrain rule.",
+  "checkedAt": "2026-10-15",
+  "findings": {
+    "housesMostlyAtLaneLevel": "On Cervantes, Elena south and the pool lanes the house floors sit at lane level or one sill (0.1-0.15 m) above it; no flights of steps up to front doors were seen. What is raised is the ground in front of some houses: walled patios and terraces, reached by one to six steps, and the west side of the resort.",
+    "westSideHigher": "The 0.5 m rise towards Pintor Dalí shows in three places: the Cervantes ramp and steps at Elena, Calle Eva near the Dalí car park, and the stone steps and ramp at the middle pool's south-west corner. The terrain foot line passes 6 m west of the last one, so the model has the middle pool's south-west lane flat.",
+    "noSecondRiseAtDali": "Where Cervantes meets Pintor Dalí there is no step: a tiled apron with a slot drain meets the road flush. Upper Cervantes is level or falls too gently to see (under about 2%).",
+    "seaFall": "Inside the resort no steady fall towards the sea is visible between the pools; every change seen is a local step. The fall to the sea is at the seafront: south lawn, about 1 m down to the paseo, then the beach sloping to the water.",
+    "notVisible": "Whether the south pool lawn is lower than the middle and north pools; the patio floor levels on the north side of upper Cervantes; the south-side front patios on Cervantes; any ramp further along Cervantes."
   },
-  {
-   "id": "cervantes-elena-steps",
-   "area": "cervantes",
-   "type": "steps",
-   "from": "the drain at the junction",
-   "rise": [
-    0.4,
-    0.5
-   ],
-   "confidence": "high",
-   "risers": 3,
-   "at": [
-    -153.7,
-    57.4
-   ],
-   "atAccuracy": 1.5,
-   "photos": [
-    "IMG_2286.jpg",
-    "IMG_2355.jpg",
-    "IMG_2328.jpg",
-    "IMG_2262.jpg"
-   ],
-   "model": "differs",
-   "task": "cervantes-steps-treads",
-   "note": "North half of the lane. Bottom riser one tile row up from the drain; each tread one tile plus a grey stone nosing, 0.45-0.55 m. Risers at about 0.4, 0.92 and 1.45 m from the drain; the model has 0.4, 1.0 and 1.6 (data/cervantes_elena_steps.json)."
-  },
-  {
-   "id": "cervantes-junction-door-steps",
-   "area": "cervantes",
-   "type": "raised-threshold",
-   "from": "the lower junction paving",
-   "rise": [
-    0.3,
-    0.55
-   ],
-   "best": 0.45,
-   "confidence": "medium",
-   "risers": 2,
-   "at": [
-    -152.5,
-    55.5
-   ],
-   "atAccuracy": 1.5,
-   "photos": [
-    "IMG_2287.jpg",
-    "IMG_2196.jpg",
-    "IMG_2327.jpg",
-    "IMG_2328.jpg"
-   ],
-   "model": "missing",
-   "task": "cervantes-door-steps",
-   "note": "Brown garden door in a wall with a curved coping on the north edge of the lane, just east of the drain line, facing south. Two red-tread steps with white risers. It sits at the foot of the 0.5 m drop, so it climbs back to the upper Cervantes level."
-  },
-  {
-   "id": "cervantes-junction-north-patio",
-   "area": "cervantes",
-   "type": "raised-patio",
-   "from": "the lower junction paving",
-   "rise": [
-    0.4,
-    0.5
-   ],
-   "confidence": "low",
-   "at": [
-    -153.5,
-    53.5
-   ],
-   "atAccuracy": 3,
-   "photos": [
-    "IMG_2358.jpg",
-    "IMG_2367.jpg",
-    "IMG_2359.jpg",
-    "IMG_2369.jpg"
-   ],
-   "model": "missing",
-   "task": "cervantes-door-steps",
-   "note": "Inferred: the roof shots show a decorative-tiled patio behind the same curved-coping door, its floor level with the door sill. Its face to the lane is the wall and steps of the door."
-  },
-  {
-   "id": "cervantes-junction-north-bed",
-   "area": "cervantes",
-   "type": "raised-bed",
-   "from": "the lower junction paving",
-   "rise": [
-    0.3,
-    0.5
-   ],
-   "confidence": "medium",
-   "at": [
-    -154.0,
-    56.2
-   ],
-   "atAccuracy": 2,
-   "photos": [
-    "IMG_2286.jpg",
-    "IMG_2328.jpg",
-    "IMG_2355.jpg",
-    "IMG_2327.jpg",
-    "IMG_2196.jpg"
-   ],
-   "model": "missing",
-   "task": "cervantes-door-steps",
-   "note": "White-walled hedge bed on the north side running 2-3 m west from the door corner along the steps; top about level with the second door step."
-  },
-  {
-   "id": "cervantes-east-north-bed",
-   "area": "cervantes",
-   "type": "raised-bed",
-   "from": "Cervantes east of Elena",
-   "rise": [
-    0.3,
-    0.45
-   ],
-   "confidence": "medium",
-   "photos": [
-    "IMG_2356.jpg",
-    "IMG_2265.jpg"
-   ],
-   "model": "missing",
-   "task": "cervantes-east-hedge",
-   "note": "White retaining wall with a plumbago hedge on top, north side east of Elena, at least 8 m, ending in a small rounded post. Water standing at its foot suggests a very flat lane."
-  },
-  {
-   "id": "cervantes-upper-lane",
-   "area": "cervantes",
-   "type": "level",
-   "rise": [
-    0,
-    0.15
-   ],
-   "confidence": "medium",
-   "photos": [
-    "IMG_2264.jpg",
-    "IMG_2273.jpg",
-    "IMG_2274.jpg"
-   ],
-   "model": "built",
-   "compare": {
-    "low": [
-     -160.0,
-     62.5
-    ],
-    "high": [
-     -180.0,
-     74.0
-    ]
-   },
-   "note": "From the top of the ramp to the Dalí apron the lane recedes straight with no break, step or drain: level, or a grade under about 2%. South-side house sills at lane level or one sill above."
-  },
-  {
-   "id": "dali-cervantes-apron",
-   "area": "dali",
-   "type": "level",
-   "rise": [
-    0,
-    0.15
-   ],
-   "confidence": "high",
-   "at": [
-    -184.5,
-    75.5
-   ],
-   "atAccuracy": 4,
-   "photos": [
-    "IMG_2275.jpg",
-    "IMG_2289.jpg",
-    "IMG_2266.jpg"
-   ],
-   "model": "built",
-   "compare": {
-    "low": [
-     -182.0,
-     74.0
-    ],
-    "high": [
-     -188.0,
-     77.5
-    ]
-   },
-   "note": "No step or riser: the pale tiled apron meets the Dalí asphalt flush, with a slot drain 2.5-3.2 m in from the road. A raised white planter of 0.4-0.6 m on the north side of the exit."
-  },
-  {
-   "id": "elena-south-sills",
-   "area": "elena",
-   "type": "raised-threshold",
-   "from": "Calle Elena south",
-   "rise": [
-    0.1,
-    0.15
-   ],
-   "confidence": "medium",
-   "photos": [
-    "IMG_2260.jpg",
-    "IMG_2261.jpg",
-    "IMG_2330.jpg",
-    "IMG_2253.jpg"
-   ],
-   "model": "missing",
-   "task": "door-sills",
-   "note": "Single red-tread or white sills at the house doors. Elena south is level to the middle pool gate; lawns kerbed at about 0.1 m."
-  },
-  {
-   "id": "middle-pool-sw-rise",
-   "area": "middle-pool",
-   "type": "steps",
-   "from": "the middle pool courtyard",
-   "rise": [
-    0.45,
-    0.55
-   ],
-   "confidence": "high",
-   "risers": 3,
-   "run": [
-    1.5,
-    2.0
-   ],
-   "at": [
-    -135.0,
-    101.0
-   ],
-   "atAccuracy": 3,
-   "photos": [
-    "IMG_2333.jpg",
-    "IMG_2331.jpg",
-    "IMG_2245.jpg"
-   ],
-   "model": "built",
-   "task": "middle-pool-sw-steps",
-   "compare": {
-    "low": [
-     -134.8,
-     99.9
-    ],
-    "high": [
-     -139.0,
-     102.5
-    ]
-   },
-   "note": "Three rough stone steps with a steep terracotta ramp of 1.5-2 m beside them, from the courtyard's crazy paving up to the south-west lane; the lane climbs a little more to the gateway 8-10 m on, then is level. This is the same 0.5 m western rise as Cervantes. Built: the terrain foot line follows the back of the planter to the bottom step (local run 2.4 m, data/terrain.json) and data/middle_pool_steps.json adds the three steps beside the ramp."
-  },
-  {
-   "id": "middle-pool-nw-rise",
-   "area": "middle-pool",
-   "type": "steps",
-   "from": "the path between the planter and the pool fence",
-   "rise": [
-    0.3,
-    0.55
-   ],
-   "confidence": "medium",
-   "at": [
-    -138.5,
-    88.5
-   ],
-   "atAccuracy": 3,
-   "photos": [
-    "IMG_2332.jpg",
-    "IMG_2331.jpg"
-   ],
-   "model": "built",
-   "task": "middle-pool-north-entrance",
-   "compare": {
-    "low": [
-     -137.6,
-     89.6
-    ],
-    "high": [
-     -142.9,
-     90.3
-    ]
-   },
-   "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built. Issue 48 source pass adds three white steps using the shared ramp-steps mechanism, following the existing 0-to-0.5 m terrain rise with tread-minus-siteY offsets only; no extra plateau. Pergola and short brown-door wall added as bounded fragments. Flight alignment and tread spacing remain estimates; final browser and image review pending."
-  },
-  {
-   "id": "middle-pool-gates-level",
-   "area": "middle-pool",
-   "type": "level",
-   "rise": [
-    0,
-    0.05
-   ],
-   "confidence": "high",
-   "photos": [
-    "IMG_2340.jpg",
-    "IMG_2244.jpg",
-    "IMG_2334.jpg",
-    "IMG_2192.jpg"
-   ],
-   "model": "built",
-   "compare": {
-    "low": [
-     -112.0,
-     80.5
-    ],
-    "high": [
-     -119.5,
-     84.0
-    ]
-   },
-   "note": "The courtyard is not sunk: Calle Eva runs into it with no step at the east gateway, and the crazy paving runs under the south pergola gate onto a level lane."
-  },
-  {
-   "id": "middle-pool-west-planter",
-   "area": "middle-pool",
-   "type": "raised-bed",
-   "rise": [
-    0.7,
-    0.9
-   ],
-   "confidence": "medium",
-   "photos": [
-    "IMG_2332.jpg",
-    "IMG_2245.jpg",
-    "IMG_2192.jpg"
-   ],
-   "model": "built",
-   "note": "A planter, not a change of ground level: about 0.8 m, a lower stepped section of about 0.4 m at its north end, and a 0.15-0.2 m plinth step at its foot (IMG_2192)."
-  },
-  {
-   "id": "middle-pool-north-terrace",
-   "area": "middle-pool",
-   "type": "raised-patio",
-   "from": "the pool lawn",
-   "rise": [
-    0.3,
-    0.6
-   ],
-   "confidence": "low",
-   "at": [
-    -127.0,
-    85.0
-   ],
-   "atAccuracy": 5,
-   "photos": [
-    "IMG_2193.jpg",
-    "IMG_2194.jpg"
-   ],
-   "model": "missing",
-   "task": "middle-pool-raised-patios",
-   "note": "A white wall of 0.6-1.0 m with a hedge beyond the north end of the deck, a patio with an umbrella and the houses behind it, raised above the lawn."
-  },
-  {
-   "id": "middle-pool-patio-beds",
-   "area": "middle-pool",
-   "type": "raised-patio",
-   "from": "the pool lawn",
-   "rise": [
-    0.1,
-    0.3
-   ],
-   "confidence": "low",
-   "photos": [
-    "IMG_2246.jpg",
-    "IMG_2247.jpg",
-    "IMG_2341.jpg"
-   ],
-   "model": "missing",
-   "task": "middle-pool-raised-patios",
-   "note": "Kerbed oleander bed of 0.15-0.2 m and a curved hedge wall of 0.35-0.45 m; the patios behind look level with the bed tops."
-  },
-  {
-   "id": "north-pool-west-stair",
-   "area": "north-pool",
-   "type": "steps",
-   "from": "the crazy-paving path round the lawn",
-   "rise": [
-    0.9,
-    1.1
-   ],
-   "confidence": "medium",
-   "risers": 6,
-   "at": [
-    -187.0,
-    17.5
-   ],
-   "atAccuracy": 6,
-   "photos": [
-    "IMG_2204.jpg",
-    "IMG_2206.jpg",
-    "IMG_2208.jpg"
-   ],
-   "model": "missing",
-   "task": "raised-terraces",
-   "note": "A flight with red-and-blue patterned tile risers and an iron handrail climbs from the north-west corner of the lawn path to a raised terrace with crazy paving, a terracotta patio with tables and the house fronts. A curved white retaining wall of the same height runs beside it holding a planted bank. Position from two roof bearings (about 312 degrees, 18-25 m), low confidence. About where the terrain foot line runs, but about 1 m rather than 0.5 m; whether it is shared ground or a private terrace is not visible."
-  },
-  {
-   "id": "north-pool-north-patios",
-   "area": "north-pool",
-   "type": "raised-patio",
-   "from": "the path round the lawn",
-   "rise": [
-    0.25,
-    0.4
-   ],
-   "confidence": "medium",
-   "risers": 2,
-   "at": [
-    -166.0,
-    8.0
-   ],
-   "atAccuracy": 8,
-   "photos": [
-    "IMG_2204.jpg",
-    "IMG_2205.jpg",
-    "IMG_2207.jpg"
-   ],
-   "model": "missing",
-   "task": "north-pool-garden-walls",
-   "note": "Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings."
-  },
-  {
-   "id": "pool-decks",
-   "area": "whole-resort",
-   "type": "level",
-   "rise": [
-    0.05,
-    0.1
-   ],
-   "confidence": "high",
-   "photos": [
-    "IMG_2204.jpg",
-    "IMG_2193.jpg",
-    "IMG_2194.jpg",
-    "IMG_2245.jpg",
-    "IMG_2188.jpg"
-   ],
-   "model": "built",
-   "note": "At all three pools the deck is level with the lawn apart from a coping lip of 5-10 cm."
-  },
-  {
-   "id": "south-lawn-over-paseo",
-   "area": "south-pool",
-   "type": "retaining-wall",
-   "from": "the paseo",
-   "rise": [
-    0.9,
-    1.1
-   ],
-   "best": 1.0,
-   "confidence": "medium",
-   "at": [
-    -74.0,
-    198.0
-   ],
-   "atAccuracy": 3,
-   "photos": [
-    "IMG_2349.jpg",
-    "IMG_2350.jpg",
-    "IMG_2188.jpg"
-   ],
-   "model": "built",
-   "task": "south-pool-seaward-level",
-   "note": "About three sandstone courses; the hedge grows from coping level and the deck and water are seen from just above at eye height. IMG_2350 against a lamp post gives 1.0-1.2 m. Lower to the west: 0.6-0.9 m in IMG_2352, 0.5-0.8 m in IMG_2354. The model has the paseo 1 m below street level beside the south lawn, rising to leave the wall about 0.5 m at its west end (data/main_pool.json paseo profile), which matches."
-  },
-  {
-   "id": "beach-fall",
-   "area": "barraka-beach",
-   "type": "slope",
-   "from": "the waterline",
-   "rise": [
-    1.0,
-    2.0
-   ],
-   "confidence": "low",
-   "run": [
-    30,
-    50
-   ],
-   "photos": [
-    "IMG_2351.jpg"
-   ],
-   "model": "built",
-   "note": "The paseo's timber edge is about 0.1 m above the sand; the beach falls to the water over 30-50 m."
-  },
-  {
-   "id": "dali-south-approach",
-   "area": "dali",
-   "type": "slope",
-   "from": "the Dalí footpath",
-   "rise": [
-    0.15,
-    0.35
-   ],
-   "confidence": "low",
-   "run": [
-    5,
-    6
-   ],
-   "photos": [
-    "IMG_2283.jpg"
-   ],
-   "model": "missing",
-   "note": "Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps.",
-   "task": "door-sills"
-  },
-  {
-   "id": "dali-footpath-kerb",
-   "area": "dali",
-   "type": "raised-threshold",
-   "from": "the parking asphalt",
-   "rise": [
-    0.1,
-    0.15
-   ],
-   "confidence": "medium",
-   "photos": [
-    "IMG_2291.jpg",
-    "IMG_2293.jpg"
-   ],
-   "model": "missing",
-   "task": "door-sills",
-   "note": "The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold."
-  }
- ],
- "photosWanted": [
-  {
-   "for": "north-pool-west-stair",
-   "ask": "From the lawn path, side-on to the tiled stair at the north-west corner of the north pool lawn, with the curved wall beside it in frame; and one from the top looking back down."
-  },
-  {
-   "for": "south-lawn-over-paseo",
-   "ask": "Walking the lane from the middle pool's south gate to the south pool, one photo at every step, ramp or drain, pointing along the lane. The two pools cannot be seen from each other (Dave, 15 October), so this is how to tell whether the south pool sits lower."
-  },
-  {
-   "for": "cervantes-junction-north-patio",
-   "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps."
-  },
-  {
-   "for": "middle-pool-raised-patios",
-   "ask": "Low shots from the lanes, side-on to any patio wall with steps up to a gate (Cervantes north side, Eva, the seaward lanes)."
-  },
-  {
-   "for": "cervantes-east-north-bed",
-   "ask": "Cervantes east of Elena towards Pintor Picasso: no photo covers this half of the lane (the half from Dalí to Elena is well covered). One photo looking along it from each end, and side-on to the white kerb wall and plumbago hedge."
-  }
- ]
+  "items": [
+    {
+      "id": "cervantes-elena-ramp",
+      "area": "cervantes",
+      "type": "ramp",
+      "from": "the drain at the junction",
+      "rise": [
+        0.4,
+        0.5
+      ],
+      "confidence": "medium",
+      "run": [
+        2.8,
+        3.6
+      ],
+      "falls": "east-north-east to the full-width drain",
+      "at": [
+        -153.7,
+        57.8
+      ],
+      "atAccuracy": 1.5,
+      "photos": [
+        "IMG_2286.jpg",
+        "IMG_2262.jpg",
+        "IMG_2328.jpg",
+        "IMG_2252.jpg",
+        "IMG_2265.jpg"
+      ],
+      "model": "built",
+      "compare": {
+        "low": [
+          -152.0,
+          56.5
+        ],
+        "high": [
+          -155.8,
+          59.1
+        ]
+      },
+      "note": "South half of the lane, the lawn kerb on its south edge. The white side face of the steps tapers out 8-9 tile rows above the drain."
+    },
+    {
+      "id": "cervantes-elena-steps",
+      "area": "cervantes",
+      "type": "steps",
+      "from": "the drain at the junction",
+      "rise": [
+        0.4,
+        0.5
+      ],
+      "confidence": "high",
+      "risers": 3,
+      "at": [
+        -153.7,
+        57.4
+      ],
+      "atAccuracy": 1.5,
+      "photos": [
+        "IMG_2286.jpg",
+        "IMG_2355.jpg",
+        "IMG_2328.jpg",
+        "IMG_2262.jpg"
+      ],
+      "model": "differs",
+      "task": "cervantes-steps-treads",
+      "note": "North half of the lane. Bottom riser one tile row up from the drain; each tread one tile plus a grey stone nosing, 0.45-0.55 m. Risers at about 0.4, 0.92 and 1.45 m from the drain; the model has 0.4, 1.0 and 1.6 (data/cervantes_elena_steps.json)."
+    },
+    {
+      "id": "cervantes-junction-door-steps",
+      "area": "cervantes",
+      "type": "raised-threshold",
+      "from": "the lower junction paving",
+      "rise": [
+        0.3,
+        0.55
+      ],
+      "best": 0.45,
+      "confidence": "medium",
+      "risers": 2,
+      "at": [
+        -152.5,
+        55.5
+      ],
+      "atAccuracy": 1.5,
+      "photos": [
+        "IMG_2287.jpg",
+        "IMG_2196.jpg",
+        "IMG_2327.jpg",
+        "IMG_2328.jpg"
+      ],
+      "model": "built",
+      "task": "cervantes-door-steps",
+      "note": "Brown garden door in a wall with a curved coping on the north edge of the lane, just east of the drain line, facing south. Two red-tread steps with white risers. It sits at the foot of the 0.5 m drop, so it climbs back to the upper Cervantes level.",
+      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
+    },
+    {
+      "id": "cervantes-junction-north-patio",
+      "area": "cervantes",
+      "type": "raised-patio",
+      "from": "the lower junction paving",
+      "rise": [
+        0.4,
+        0.5
+      ],
+      "confidence": "low",
+      "at": [
+        -153.5,
+        53.5
+      ],
+      "atAccuracy": 3,
+      "photos": [
+        "IMG_2358.jpg",
+        "IMG_2367.jpg",
+        "IMG_2359.jpg",
+        "IMG_2369.jpg"
+      ],
+      "model": "built",
+      "task": "cervantes-door-steps",
+      "note": "Inferred: the roof shots show a decorative-tiled patio behind the same curved-coping door, its floor level with the door sill. Its face to the lane is the wall and steps of the door.",
+      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
+    },
+    {
+      "id": "cervantes-junction-north-bed",
+      "area": "cervantes",
+      "type": "raised-bed",
+      "from": "the lower junction paving",
+      "rise": [
+        0.3,
+        0.5
+      ],
+      "confidence": "medium",
+      "at": [
+        -154.0,
+        56.2
+      ],
+      "atAccuracy": 2,
+      "photos": [
+        "IMG_2286.jpg",
+        "IMG_2328.jpg",
+        "IMG_2355.jpg",
+        "IMG_2327.jpg",
+        "IMG_2196.jpg"
+      ],
+      "model": "built",
+      "task": "cervantes-door-steps",
+      "note": "White-walled hedge bed on the north side running 2-3 m west from the door corner along the steps; top about level with the second door step.",
+      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
+    },
+    {
+      "id": "cervantes-east-north-bed",
+      "area": "cervantes",
+      "type": "raised-bed",
+      "from": "Cervantes east of Elena",
+      "rise": [
+        0.3,
+        0.45
+      ],
+      "confidence": "medium",
+      "photos": [
+        "IMG_2356.jpg",
+        "IMG_2265.jpg"
+      ],
+      "model": "missing",
+      "task": "cervantes-east-hedge",
+      "note": "White retaining wall with a plumbago hedge on top, north side east of Elena, at least 8 m, ending in a small rounded post. Water standing at its foot suggests a very flat lane."
+    },
+    {
+      "id": "cervantes-upper-lane",
+      "area": "cervantes",
+      "type": "level",
+      "rise": [
+        0,
+        0.15
+      ],
+      "confidence": "medium",
+      "photos": [
+        "IMG_2264.jpg",
+        "IMG_2273.jpg",
+        "IMG_2274.jpg"
+      ],
+      "model": "built",
+      "compare": {
+        "low": [
+          -160.0,
+          62.5
+        ],
+        "high": [
+          -180.0,
+          74.0
+        ]
+      },
+      "note": "From the top of the ramp to the Dalí apron the lane recedes straight with no break, step or drain: level, or a grade under about 2%. South-side house sills at lane level or one sill above."
+    },
+    {
+      "id": "dali-cervantes-apron",
+      "area": "dali",
+      "type": "level",
+      "rise": [
+        0,
+        0.15
+      ],
+      "confidence": "high",
+      "at": [
+        -184.5,
+        75.5
+      ],
+      "atAccuracy": 4,
+      "photos": [
+        "IMG_2275.jpg",
+        "IMG_2289.jpg",
+        "IMG_2266.jpg"
+      ],
+      "model": "built",
+      "compare": {
+        "low": [
+          -182.0,
+          74.0
+        ],
+        "high": [
+          -188.0,
+          77.5
+        ]
+      },
+      "note": "No step or riser: the pale tiled apron meets the Dalí asphalt flush, with a slot drain 2.5-3.2 m in from the road. A raised white planter of 0.4-0.6 m on the north side of the exit."
+    },
+    {
+      "id": "elena-south-sills",
+      "area": "elena",
+      "type": "raised-threshold",
+      "from": "Calle Elena south",
+      "rise": [
+        0.1,
+        0.15
+      ],
+      "confidence": "medium",
+      "photos": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg",
+        "IMG_2253.jpg"
+      ],
+      "model": "missing",
+      "task": "door-sills",
+      "note": "Single red-tread or white sills at the house doors. Elena south is level to the middle pool gate; lawns kerbed at about 0.1 m."
+    },
+    {
+      "id": "middle-pool-sw-rise",
+      "area": "middle-pool",
+      "type": "steps",
+      "from": "the middle pool courtyard",
+      "rise": [
+        0.45,
+        0.55
+      ],
+      "confidence": "high",
+      "risers": 3,
+      "run": [
+        1.5,
+        2.0
+      ],
+      "at": [
+        -135.0,
+        101.0
+      ],
+      "atAccuracy": 3,
+      "photos": [
+        "IMG_2333.jpg",
+        "IMG_2331.jpg",
+        "IMG_2245.jpg"
+      ],
+      "model": "built",
+      "task": "middle-pool-sw-steps",
+      "compare": {
+        "low": [
+          -134.8,
+          99.9
+        ],
+        "high": [
+          -139.0,
+          102.5
+        ]
+      },
+      "note": "Three rough stone steps with a steep terracotta ramp of 1.5-2 m beside them, from the courtyard's crazy paving up to the south-west lane; the lane climbs a little more to the gateway 8-10 m on, then is level. This is the same 0.5 m western rise as Cervantes. Built: the terrain foot line follows the back of the planter to the bottom step (local run 2.4 m, data/terrain.json) and data/middle_pool_steps.json adds the three steps beside the ramp."
+    },
+    {
+      "id": "middle-pool-nw-rise",
+      "area": "middle-pool",
+      "type": "steps",
+      "from": "the path between the planter and the pool fence",
+      "rise": [
+        0.3,
+        0.55
+      ],
+      "confidence": "medium",
+      "at": [
+        -138.5,
+        88.5
+      ],
+      "atAccuracy": 3,
+      "photos": [
+        "IMG_2332.jpg",
+        "IMG_2331.jpg"
+      ],
+      "model": "built",
+      "task": "middle-pool-north-entrance",
+      "compare": {
+        "low": [
+          -137.6,
+          89.6
+        ],
+        "high": [
+          -142.9,
+          90.3
+        ]
+      },
+      "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built. Issue 48 source pass adds three white steps using the shared ramp-steps mechanism, following the existing 0-to-0.5 m terrain rise with tread-minus-siteY offsets only; no extra plateau. Pergola and short brown-door wall added as bounded fragments. Flight alignment and tread spacing remain estimates; final browser and image review pending."
+    },
+    {
+      "id": "middle-pool-gates-level",
+      "area": "middle-pool",
+      "type": "level",
+      "rise": [
+        0,
+        0.05
+      ],
+      "confidence": "high",
+      "photos": [
+        "IMG_2340.jpg",
+        "IMG_2244.jpg",
+        "IMG_2334.jpg",
+        "IMG_2192.jpg"
+      ],
+      "model": "built",
+      "compare": {
+        "low": [
+          -112.0,
+          80.5
+        ],
+        "high": [
+          -119.5,
+          84.0
+        ]
+      },
+      "note": "The courtyard is not sunk: Calle Eva runs into it with no step at the east gateway, and the crazy paving runs under the south pergola gate onto a level lane."
+    },
+    {
+      "id": "middle-pool-west-planter",
+      "area": "middle-pool",
+      "type": "raised-bed",
+      "rise": [
+        0.7,
+        0.9
+      ],
+      "confidence": "medium",
+      "photos": [
+        "IMG_2332.jpg",
+        "IMG_2245.jpg",
+        "IMG_2192.jpg"
+      ],
+      "model": "built",
+      "note": "A planter, not a change of ground level: about 0.8 m, a lower stepped section of about 0.4 m at its north end, and a 0.15-0.2 m plinth step at its foot (IMG_2192)."
+    },
+    {
+      "id": "middle-pool-north-terrace",
+      "area": "middle-pool",
+      "type": "raised-patio",
+      "from": "the pool lawn",
+      "rise": [
+        0.3,
+        0.6
+      ],
+      "confidence": "low",
+      "at": [
+        -127.0,
+        85.0
+      ],
+      "atAccuracy": 5,
+      "photos": [
+        "IMG_2193.jpg",
+        "IMG_2194.jpg"
+      ],
+      "model": "missing",
+      "task": "middle-pool-raised-patios",
+      "note": "A white wall of 0.6-1.0 m with a hedge beyond the north end of the deck, a patio with an umbrella and the houses behind it, raised above the lawn."
+    },
+    {
+      "id": "middle-pool-patio-beds",
+      "area": "middle-pool",
+      "type": "raised-patio",
+      "from": "the pool lawn",
+      "rise": [
+        0.1,
+        0.3
+      ],
+      "confidence": "low",
+      "photos": [
+        "IMG_2246.jpg",
+        "IMG_2247.jpg",
+        "IMG_2341.jpg"
+      ],
+      "model": "missing",
+      "task": "middle-pool-raised-patios",
+      "note": "Kerbed oleander bed of 0.15-0.2 m and a curved hedge wall of 0.35-0.45 m; the patios behind look level with the bed tops."
+    },
+    {
+      "id": "north-pool-west-stair",
+      "area": "north-pool",
+      "type": "steps",
+      "from": "the crazy-paving path round the lawn",
+      "rise": [
+        0.9,
+        1.1
+      ],
+      "confidence": "medium",
+      "risers": 6,
+      "at": [
+        -187.0,
+        17.5
+      ],
+      "atAccuracy": 6,
+      "photos": [
+        "IMG_2204.jpg",
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "model": "missing",
+      "task": "raised-terraces",
+      "note": "A flight with red-and-blue patterned tile risers and an iron handrail climbs from the north-west corner of the lawn path to a raised terrace with crazy paving, a terracotta patio with tables and the house fronts. A curved white retaining wall of the same height runs beside it holding a planted bank. Position from two roof bearings (about 312 degrees, 18-25 m), low confidence. About where the terrain foot line runs, but about 1 m rather than 0.5 m; whether it is shared ground or a private terrace is not visible."
+    },
+    {
+      "id": "north-pool-north-patios",
+      "area": "north-pool",
+      "type": "raised-patio",
+      "from": "the path round the lawn",
+      "rise": [
+        0.25,
+        0.4
+      ],
+      "confidence": "medium",
+      "risers": 2,
+      "at": [
+        -166.0,
+        8.0
+      ],
+      "atAccuracy": 8,
+      "photos": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2207.jpg"
+      ],
+      "model": "missing",
+      "task": "north-pool-garden-walls",
+      "note": "Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings."
+    },
+    {
+      "id": "pool-decks",
+      "area": "whole-resort",
+      "type": "level",
+      "rise": [
+        0.05,
+        0.1
+      ],
+      "confidence": "high",
+      "photos": [
+        "IMG_2204.jpg",
+        "IMG_2193.jpg",
+        "IMG_2194.jpg",
+        "IMG_2245.jpg",
+        "IMG_2188.jpg"
+      ],
+      "model": "built",
+      "note": "At all three pools the deck is level with the lawn apart from a coping lip of 5-10 cm."
+    },
+    {
+      "id": "south-lawn-over-paseo",
+      "area": "south-pool",
+      "type": "retaining-wall",
+      "from": "the paseo",
+      "rise": [
+        0.9,
+        1.1
+      ],
+      "best": 1.0,
+      "confidence": "medium",
+      "at": [
+        -74.0,
+        198.0
+      ],
+      "atAccuracy": 3,
+      "photos": [
+        "IMG_2349.jpg",
+        "IMG_2350.jpg",
+        "IMG_2188.jpg"
+      ],
+      "model": "built",
+      "task": "south-pool-seaward-level",
+      "note": "About three sandstone courses; the hedge grows from coping level and the deck and water are seen from just above at eye height. IMG_2350 against a lamp post gives 1.0-1.2 m. Lower to the west: 0.6-0.9 m in IMG_2352, 0.5-0.8 m in IMG_2354. The model has the paseo 1 m below street level beside the south lawn, rising to leave the wall about 0.5 m at its west end (data/main_pool.json paseo profile), which matches."
+    },
+    {
+      "id": "beach-fall",
+      "area": "barraka-beach",
+      "type": "slope",
+      "from": "the waterline",
+      "rise": [
+        1.0,
+        2.0
+      ],
+      "confidence": "low",
+      "run": [
+        30,
+        50
+      ],
+      "photos": [
+        "IMG_2351.jpg"
+      ],
+      "model": "built",
+      "note": "The paseo's timber edge is about 0.1 m above the sand; the beach falls to the water over 30-50 m."
+    },
+    {
+      "id": "dali-south-approach",
+      "area": "dali",
+      "type": "slope",
+      "from": "the Dalí footpath",
+      "rise": [
+        0.15,
+        0.35
+      ],
+      "confidence": "low",
+      "run": [
+        5,
+        6
+      ],
+      "photos": [
+        "IMG_2283.jpg"
+      ],
+      "model": "missing",
+      "note": "Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps.",
+      "task": "door-sills"
+    },
+    {
+      "id": "dali-footpath-kerb",
+      "area": "dali",
+      "type": "raised-threshold",
+      "from": "the parking asphalt",
+      "rise": [
+        0.1,
+        0.15
+      ],
+      "confidence": "medium",
+      "photos": [
+        "IMG_2291.jpg",
+        "IMG_2293.jpg"
+      ],
+      "model": "missing",
+      "task": "door-sills",
+      "note": "The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold."
+    }
+  ],
+  "photosWanted": [
+    {
+      "for": "north-pool-west-stair",
+      "ask": "From the lawn path, side-on to the tiled stair at the north-west corner of the north pool lawn, with the curved wall beside it in frame; and one from the top looking back down."
+    },
+    {
+      "for": "south-lawn-over-paseo",
+      "ask": "Walking the lane from the middle pool's south gate to the south pool, one photo at every step, ramp or drain, pointing along the lane. The two pools cannot be seen from each other (Dave, 15 October), so this is how to tell whether the south pool sits lower."
+    },
+    {
+      "for": "cervantes-junction-north-patio",
+      "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps."
+    },
+    {
+      "for": "middle-pool-raised-patios",
+      "ask": "Low shots from the lanes, side-on to any patio wall with steps up to a gate (Cervantes north side, Eva, the seaward lanes)."
+    },
+    {
+      "for": "cervantes-east-north-bed",
+      "ask": "Cervantes east of Elena towards Pintor Picasso: no photo covers this half of the lane (the half from Dalí to Elena is well covered). One photo looking along it from each end, and side-on to the white kerb wall and plumbago hedge."
+    },
+    {
+      "for": "paseo-east-end-height",
+      "ask": "At the east end of the sandstone wall by Calle Guillermo, take a side-on photograph showing the paseo surface, wall foot, coping and garden floor together, with a person or measured reference beside the wall. Also photograph along the paseo towards the main-pool lawn, including any ramp, step or change of grade. This distinguishes paseo rise from gardens falling while retaining the established pool level."
+    }
+  ]
 }

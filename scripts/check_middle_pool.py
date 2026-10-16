@@ -117,3 +117,27 @@ for name in ('IMG_2331.HEIC','IMG_2332.HEIC'):
 assert math.dist(n['cap']['ring'][0],pl['ring'][0])<.01 and math.dist(n['cap']['ring'][-1],pl['ring'][-1])<.01,'Cap must join original planter ends'
 assert max(p[1] for p in n['cap']['ring'])<91,'North feature must not replace south-west steps'
 print('Middle pool north: independently corrected pins, bounded cap/door wall, open pergola and matching stepped ground PASS')
+# Issue 39: distinct level south entrance; every outline is shared with rendering.
+south=json.loads((ROOT/'data/middle_pool_south_gate.json').read_text())
+assert south['evidence']==['IMG_2334.jpg','IMG_2335.jpg'] and all(p in photos for p in south['evidence'])
+assert south['opening']>=2*PLAYER+.5 and south['height']>=2
+assert abs(math.hypot(*south['forward'])-1)<1e-5
+ux,uz=south['forward'];cx,cz=south['center'];at=lambda a,c:[cx+ux*a-uz*c,cz+uz*a+ux*c]
+def south_rect(a,b,c,d):return [at(a,c),at(b,c),at(b,d),at(a,d)]
+w=south['opening']/2;p=south['pier'];bed=south['planter'];step=south['step'];panel=south['panel']
+rings=[]
+for side in [-1,1]:
+ c=side*(w+p/2);rings.extend([south_rect(-p/2,p/2,c-p/2,c+p/2),south_rect(-south['leafLength'],0,side*w-.025,side*w+.025)])
+rings.extend([south_rect(bed['along'][0],step['along'][0],*bed['across']),south_rect(step['along'][1],bed['along'][1],*bed['across']),south_rect(*step['along'],*step['across']),south_rect(*panel['along'],panel['across'],panel['across']+.16)])
+for ring in rings:
+ for pt in sample(ring,True):
+  for road in roads.values():assert min(distance(pt,a,b) for a,b in zip(road['points'],road['points'][1:]))>=road['width']/2-.025,f'South entrance intrudes on {road["id"]}'
+  assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'South entrance overlaps registry house'
+  assert not any(inside(*pt,pool['ring']) for pool in s['pools']),'South entrance overlaps pool'
+# Collision-free straight traversal between the open leaves; no grade change is authored.
+for pt in sample([at(-2.8,0),at(1.8,0)]):
+ assert not any(inside(*pt,ring) or min(distance(pt,a,b) for a,b in zip(ring,ring[1:]+ring[:1]))<PLAYER for ring in rings),'South entrance blocks a player'
+ assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'South traversal crosses house'
+assert south['step']['across'][0]>=1 and .15<=south['step']['height']<=.25
+assert math.dist(south['center'],[-135.63,100.42])>8,'South gate duplicates southwest entrance'
+print('Middle pool south: separate open double gate, planter/panel and inset step preserve routes and registry PASS')

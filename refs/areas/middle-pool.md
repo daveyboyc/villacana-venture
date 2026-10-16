@@ -11,14 +11,16 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 - IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.
 - IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.
 - Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.
+- Not modelled yet: the south-west gateway above the steps (IMG_2333).
+- Issue #39: separate level south entrance from IMG_2334/2335: two open iron leaves, shallow curved white head with metal pergola ribs, crazy paving and flush drain, raised white planter flanking an inset step and a schematic blue/yellow border round a white tile panel. Placed across Calle Silvia near its courtyard end; positions/ends (about 1–2 m) and dimensions are estimates. No south-lane grade change is inferred; the southwest steps and western 0.5 m rise remain separate.
 - Issue 48 source pass: a bounded curved north planter termination, three white side steps, short brown-door wall and open pergola are modelled from IMG_2331/2332/2195; exact extents and dimensions remain estimates. IMG_2331/2332 cameras are corrected independently from aerial path/pool anchors, original GPS retained. Browser and matched-camera review pending; south-west steps/gateway and south gate are separate tasks.
 - Issue 48 follows the existing continuous western +0.5 m terrain rise for the north steps, using tread-minus-siteY offsets in the shared ramp-steps module; no additional isolated plateau. Pool, deck and west path remain at 0 m. Flight dimensions and bounded wall extents remain estimated pending browser/image review.
 
 ## Read first
 
-- docs: `docs/MIDDLE_POOL.md`, `docs/LEVELS.md`
-- data: `data/middle_pool.json`, `data/objects.json`, `data/middle_pool_north.json`, `data/levels_survey.json`
-- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-north.ts`
+- docs: `docs/MIDDLE_POOL.md`, `docs/LEVELS.md`, `docs/MIDDLE_POOL_SOUTH_GATE.md`
+- data: `data/middle_pool.json`, `data/objects.json`, `data/levels_survey.json`, `data/middle_pool_south_gate.json`, `data/middle_pool_north.json`
+- src: `src/middle-pool.ts`, `src/world.ts`, `src/water.ts`, `src/middle-pool-south-gate.ts`, `src/middle-pool-north.ts`
 - contact sheet: `villacana-reference/contact-sheets/middle-pool.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -43,7 +45,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `middle-pool-south-gate` [#39](https://github.com/daveyboyc/villacana-venture/issues/39) | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | open | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
+| P2 | `middle-pool-south-gate` [#39](https://github.com/daveyboyc/villacana-venture/issues/39) | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | in-progress · issue39 | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 | P3 | `middle-pool-north-entrance` [#48](https://github.com/daveyboyc/villacana-venture/issues/48) | Middle pool north-west: curved planter end, white steps, brown-door wall | in-progress · issue48 | [IMG_2331](../../public/photos-ref/IMG_2331.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg), [IMG_2195](../../public/photos-ref/IMG_2195.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg) |
 | P3 | `middle-pool-raised-patios` [#55](https://github.com/daveyboyc/villacana-venture/issues/55) | Middle pool: raised patios behind the north wall and the planted beds (after raised-terraces) | open | [IMG_2193](../../public/photos-ref/IMG_2193.jpg), [IMG_2194](../../public/photos-ref/IMG_2194.jpg), [IMG_2246](../../public/photos-ref/IMG_2246.jpg), [IMG_2247](../../public/photos-ref/IMG_2247.jpg), [IMG_2341](../../public/photos-ref/IMG_2341.jpg) |
 
@@ -74,9 +76,12 @@ graph LR
   A --> F5["Middle pool · north planter side steps"]
   F5 --> PIMG_2331_jpg(["IMG_2331"])
   F5 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F6["Middle pool · stone steps up to Calle Eva"]
-  F6 --> PIMG_2248_jpg(["IMG_2248"])
-  F6 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F6["Middle pool · south double iron gate, curved head and tiled planter"]
+  F6 --> PIMG_2334_jpg(["IMG_2334"])
+  F6 --> PIMG_2335_jpg(["IMG_2335"])
+  A --> F7["Middle pool · stone steps up to Calle Eva"]
+  F7 --> PIMG_2248_jpg(["IMG_2248"])
+  F7 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Reviewed references
@@ -87,15 +92,15 @@ graph LR
 | [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. _Used by: middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-white-steps._ |
 | [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool.json:middle-pool-west-planter, steps:middle-pool-sw-steps._ |
 | [IMG_2195.jpg](../../public/photos-ref/IMG_2195.jpg) | ground | materials | Middle pool close up: cream deck, ladders, life rings _Used by: middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola._ |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
 | [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up _Used by: middle_pool.json:middle-pool-west-planter._ |
+| [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | materials, facades | Middle pool south: raised white planter with a blue tile panel _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
 | [IMG_2244.jpg](../../public/photos-ref/IMG_2244.jpg) | ground | layout | Iron gate opening into the middle pool courtyard _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | `villacana-reference/photos/02-pool-from-upper-floor-2020-12.png` | upper-floor | layout, facades, materials, view | Middle pool from an upper floor, December 2020 **Note:** Shows a glass safety fence; Dave decided to skip it. |
-| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane |
 | `villacana-reference/photos/09-middle-pool-through-iron-gate.jpg` | ground | layout, materials, planting | Middle pool through an iron gate from a tiled lane |
 | [IMG_2192.jpg](../../public/photos-ref/IMG_2192.jpg) | ground | layout, materials | Crazy-paving path between hedges into the middle pool lawn |
 | [IMG_2193.jpg](../../public/photos-ref/IMG_2193.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind |
 | [IMG_2194.jpg](../../public/photos-ref/IMG_2194.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind (second shot) |
-| [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | materials, facades | Middle pool south: raised white planter with a blue tile panel |
 | [IMG_2341.jpg](../../public/photos-ref/IMG_2341.jpg) | ground | layout, planting | Curved low white wall with hedge, crazy paving and trees **Note:** GPS ±47 m: location uncertain, probably the middle pool courtyard. |
 | `villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg` | ground | planting, facades | Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk |
 | `villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg` | ground | layout, materials | Terracotta-tiled lane to an arched white gateway into the middle pool courtyard |

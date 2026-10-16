@@ -1,0 +1,57 @@
+{
+ "id": "junction-lawns",
+ "name": "Cervantes / Elena · pollarded lawn trees",
+ "reviewedAt": "2026-10-15",
+ "trust": "Three clipped trees and their order beside the lane/door approach are visible in ground and roof photos. Positions and 2.6 m heights are estimated within the existing approximate lawn outlines, not surveyed. Existing lawn rings and white kerbs retained: oblique roof views establish the relationships but do not calibrate a metric retrace.",
+ "trees": [
+  {
+   "id": "junction-pollarded-1",
+   "name": "Cervantes / Elena · clipped lawn tree 1",
+   "point": [
+    -153,
+    62.5
+   ],
+   "region": "cervantes-elena-lawn-1",
+   "scale": 0.62,
+   "evidence": [
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ],
+   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach."
+  },
+  {
+   "id": "junction-pollarded-2",
+   "name": "Cervantes / Elena · clipped lawn tree 2",
+   "point": [
+    -151,
+    66.5
+   ],
+   "region": "cervantes-elena-lawn-1",
+   "scale": 0.62,
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ],
+   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach."
+  },
+  {
+   "id": "junction-pollarded-3",
+   "name": "Cervantes / Elena · clipped lawn tree 3",
+   "point": [
+    -148.9,
+    71.9
+   ],
+   "region": "cervantes-elena-lawn-2",
+   "scale": 0.62,
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ],
+   "trust": "Photo-supported clipped tree; position and size estimated relative to retained lawn and entrance approach."
+  }
+ ]
+}

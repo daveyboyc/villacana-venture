@@ -1,0 +1,71 @@
+{
+ "about": "Barraka beach furniture and timber access. Map metres +x east, +z south; beach heights remain owned by seaside.ts.",
+ "boardwalk": {
+  "id": "barraka-boardwalk",
+  "name": "Barraka weathered timber boardwalk",
+  "points": [
+   [
+    30,
+    121
+   ],
+   [
+    35,
+    127
+   ],
+   [
+    42,
+    135
+   ]
+  ],
+  "width": 1.65,
+  "plankLength": 0.23,
+  "evidence": [
+   "IMG_2346.jpg",
+   "IMG_2347.jpg",
+   "IMG_2223.jpg",
+   "IMG_2225.jpg"
+  ],
+  "trust": "IMG_2346/2347/2223 support narrow transverse green/brown planks. Independently traced visible aerial boardwalk from native ground.jpg pixels about (1508,914) to (1558,972), using ground.json bounds: roughly [30,121] to [42,135], beside the southeast corner of the unchanged restaurant registry roof. Width 1.65 m and exact end are estimates; aerial and photographs are different dates. IMG_2347 camera pin [35.3,96.5] falls inside registry 6465801UF1366N_part5, about 25 m inland of this independently anchored segment; no surveyed camera correction asserted. Hidden connection to the paseo and changing shoreline end remain unresolved, with no cross-house extension."
+ },
+ "sign": {
+  "id": "barraka-sign-planter",
+  "name": "BARRAKA BEACH two-tier white planted sign",
+  "point": [
+   35,
+   122
+  ],
+  "width": 2.1,
+  "depth": 0.8,
+  "height": 1.25,
+  "evidence": [
+   "IMG_2346.jpg",
+   "IMG_2347.jpg"
+  ],
+  "trust": "White painted timber, two planting tiers and black lettering are visible. Position relative to the aisle, dimensions and foliage silhouette are estimated; kept on the photo's left side looking towards the sea."
+ },
+ "seating": {
+  "id": "barraka-beach-seating",
+  "name": "Thatched parasols and wooden cream-cushion loungers",
+  "parasols": [
+   [
+    29,
+    139
+   ],
+   [
+    24,
+    144
+   ],
+   [
+    19,
+    149
+   ]
+  ],
+  "radius": 1.55,
+  "evidence": [
+   "IMG_2225.jpg",
+   "IMG_2347.jpg",
+   "IMG_2223.jpg"
+  ],
+  "trust": "IMG_2225 supports straw parasols and paired low wooden cream-cushion beds on the right of the aisle in IMG_2347. Three representative pairs follow the southwest seating patch visible on the aerial (not a complete seasonal row or count). Dimensions and individual positions are estimates. Blue/white plastic loungers on the other side in IMG_2223 are a different type and are not replaced by wooden beds."
+ }
+}

@@ -211,8 +211,9 @@ function addMiddlePoolPlanting(scene: THREE.Scene): void {
   for (let t = 0.06; t < 0.97; t += 0.15) flowers.push({ x: f0[0] + (f1[0] - f0[0]) * t + half[0], y: p.height - 0.08 + HEDGE - 0.4, z: f0[1] + (f1[1] - f0[1]) * t + half[1], scale: 0.55 });
   addSprites(scene, "hibiscus_hedge", flowers);
   const { at } = middleGatewayFrame(), [lo, hi] = gateway.opening;
-  // Outside: clipped hedge before the south-east wing, bougainvillea trained on the lawn wall (IMG_2340, photo 12).
+  // Outside: clipped hedge and courtyard bougainvillea (IMG_2340, photo 12).
+  // The lawn-wall espalier is now a flat wall-plane in eva-walled-lawn.ts (IMG_2339).
   const place = (o: number, i: number, y = 0, scale = 0.7): SpritePlacement => { const [x, z] = at(o, i); return { x, y, z, scale }; };
   addSprites(scene, "hedge", [place(hi + 0.95, -0.7, 0, 0.6), place(hi + 0.95, 1.1, 0, 0.6), place(lo - 1.0, 1.3, 0, 0.6)]);
-  addSprites(scene, "bougainvillea", [place(lo - 2.7, -0.35, 0.3, 0.75), place(hi + 0.9, 0.5, 1.2, 0.6)]);
+  addSprites(scene, "bougainvillea", [place(hi + 0.9, 0.5, 1.2, 0.6)]);
 }
