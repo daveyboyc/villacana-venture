@@ -4800,7 +4800,8 @@
   },
   "citedBy": [
    "paseo_wall.json:paseo-retaining-wall",
-   "south_pool.json:south-pool-seaward-level"
+   "south_pool.json:south-pool-seaward-level",
+   "paseo_details.json:paseo-pool-hedge"
   ],
   "looksAt": [
    -80.5,
@@ -4840,7 +4841,11 @@
   },
   "citedBy": [
    "paseo_wall.json:paseo-retaining-wall",
-   "paseo_wall.json:paseo-timber-edge"
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_details.json:paseo-pool-hedge",
+   "paseo_details.json:paseo-east-windbreak",
+   "paseo_details.json:paseo-white-lamp-3",
+   "paseo_details.json:paseo-white-lamp-4"
   ],
   "looksAt": [
    -72.8,
@@ -4920,7 +4925,11 @@
   },
   "citedBy": [
    "paseo_wall.json:paseo-retaining-wall",
-   "paseo_wall.json:paseo-timber-edge"
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_details.json:paseo-west-hedge",
+   "paseo_details.json:paseo-west-windbreak",
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2"
   ],
   "looksAt": [
    -96.7,
@@ -4928,6 +4937,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "paseo_details.json:paseo-west-hedge",
    "area:paseo",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_wall.json:paseo-retaining-wall"
@@ -4961,14 +4971,20 @@
   },
   "citedBy": [
    "paseo_wall.json:paseo-retaining-wall",
-   "paseo_wall.json:paseo-timber-edge"
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_details.json:paseo-west-hedge",
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2",
+   "paseo_details.json:paseo-service-cover"
   ],
   "looksAt": [
    -105.5,
    222.6
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "paseo_details.json:paseo-west-hedge"
+  ]
  },
  {
   "id": "IMG_2355.jpg",

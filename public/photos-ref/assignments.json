@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 319,
+  "features": 328,
   "photosCitedByModel": 72,
-  "modelFeaturesWithPhotoCitations": 62
+  "modelFeaturesWithPhotoCitations": 71
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5137,7 +5137,8 @@
    ],
    "citedBy": [
     "paseo_wall.json:paseo-retaining-wall",
-    "south_pool.json:south-pool-seaward-level"
+    "south_pool.json:south-pool-seaward-level",
+    "paseo_details.json:paseo-pool-hedge"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5172,7 +5173,11 @@
    ],
    "citedBy": [
     "paseo_wall.json:paseo-retaining-wall",
-    "paseo_wall.json:paseo-timber-edge"
+    "paseo_wall.json:paseo-timber-edge",
+    "paseo_details.json:paseo-pool-hedge",
+    "paseo_details.json:paseo-east-windbreak",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5229,7 +5234,11 @@
    "inViewCandidates": [],
    "citedBy": [
     "paseo_wall.json:paseo-retaining-wall",
-    "paseo_wall.json:paseo-timber-edge"
+    "paseo_wall.json:paseo-timber-edge",
+    "paseo_details.json:paseo-west-hedge",
+    "paseo_details.json:paseo-west-windbreak",
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5258,7 +5267,11 @@
    "inViewCandidates": [],
    "citedBy": [
     "paseo_wall.json:paseo-retaining-wall",
-    "paseo_wall.json:paseo-timber-edge"
+    "paseo_wall.json:paseo-timber-edge",
+    "paseo_details.json:paseo-west-hedge",
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-service-cover"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

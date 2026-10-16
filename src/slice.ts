@@ -30,6 +30,7 @@ import { addRaisedGround, drapeScene, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addSeaWall, seaWallRings } from "./south-pool";
+import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
@@ -154,7 +155,7 @@ async function boot(): Promise<void> {
   }
   // The paseo's sandstone retaining wall; along the south lawn it is the sea wall, drawn once.
   if (seaside) addBarrakaBoardwalk(scene, (x,z) => seaside!.y(x,z));
-  if (seaside && skeleton.seafront) addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY);
+  if (seaside && skeleton.seafront) { addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY); addPaseoDetails(scene, seaside, liveGroundY); }
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));

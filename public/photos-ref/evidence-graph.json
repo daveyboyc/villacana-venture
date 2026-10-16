@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 319,
+  "features": 328,
   "photosCitedByModel": 72,
-  "modelFeaturesWithPhotoCitations": 62
+  "modelFeaturesWithPhotoCitations": 71
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2132,6 +2132,91 @@
     "IMG_2284.jpg",
     "IMG_2296.jpg",
     "IMG_2297.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-west-hedge",
+   "name": "Paseo · west clipped hedge",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-pool-hedge",
+   "name": "Paseo · south-pool clipped hedge",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2349.jpg",
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-west-windbreak",
+   "name": "Paseo · west green windbreak",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-east-windbreak",
+   "name": "Paseo · east green windbreak",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-1",
+   "name": "Paseo · white lamp 1",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-2",
+   "name": "Paseo · white lamp 2",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-3",
+   "name": "Paseo · white lamp 3",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-4",
+   "name": "Paseo · white lamp 4",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-service-cover",
+   "name": "Paseo · flush square service cover",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2354.jpg"
    ]
   },
   {
@@ -7208,6 +7293,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2349.jpg",
+   "to": "paseo_details.json:paseo-pool-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2350.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -7233,6 +7324,30 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-pool-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-east-windbreak",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2351.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -7259,6 +7374,30 @@
   {
    "from": "photo:IMG_2352.jpg",
    "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-west-windbreak",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -7277,6 +7416,30 @@
   {
    "from": "photo:IMG_2354.jpg",
    "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-service-cover",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

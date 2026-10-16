@@ -60,6 +60,16 @@ def features(s):
             evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(f.get('evidence',[])))
             if existing:existing.update(name=f['name'],evidence=evidence)
             else:add(id,f['name'],'reference feature','authored photo/map interpretation',evidence=evidence,**{k:f[k] for k in ('ring','points') if k in f})
+    def paseo_station(along,inland):
+        for a,b in zip(pw['wall']['face'],pw['wall']['face'][1:]):
+            length=math.dist(a,b)
+            if along<=length:
+                t=along/length
+                return [a[0]+(b[0]-a[0])*t+(b[1]-a[1])/length*inland,a[1]+(b[1]-a[1])*t-(b[0]-a[0])/length*inland]
+            along-=length
+        raise ValueError('Paseo detail beyond shared wall')
+    for f in json.loads((ROOT/'data/paseo_details.json').read_text())['features']:
+        add('paseo_details.json:'+f['id'],f['name'],'reference feature','bounded photo interpretation; wall-relative positions estimated',evidence=f['evidence'],points=[paseo_station(s,f['inland']) for s in f['along']])
     junction=json.loads((ROOT/'data/junction_lawns.json').read_text())
     for tree in junction['trees']:
         add('junction_lawns.json:'+tree['id'],tree['name'],'reference feature','authored photo/map interpretation',evidence=tree['evidence'],points=[tree['point']])

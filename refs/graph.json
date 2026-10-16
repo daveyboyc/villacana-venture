@@ -1591,6 +1591,51 @@
    "name": "Middle pool · south double iron gate, curved head and tiled planter"
   },
   {
+   "id": "paseo_details.json:paseo-east-windbreak",
+   "kind": "model-feature",
+   "name": "Paseo · east green windbreak"
+  },
+  {
+   "id": "paseo_details.json:paseo-pool-hedge",
+   "kind": "model-feature",
+   "name": "Paseo · south-pool clipped hedge"
+  },
+  {
+   "id": "paseo_details.json:paseo-service-cover",
+   "kind": "model-feature",
+   "name": "Paseo · flush square service cover"
+  },
+  {
+   "id": "paseo_details.json:paseo-west-hedge",
+   "kind": "model-feature",
+   "name": "Paseo · west clipped hedge"
+  },
+  {
+   "id": "paseo_details.json:paseo-west-windbreak",
+   "kind": "model-feature",
+   "name": "Paseo · west green windbreak"
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-1",
+   "kind": "model-feature",
+   "name": "Paseo · white lamp 1"
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-2",
+   "kind": "model-feature",
+   "name": "Paseo · white lamp 2"
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-3",
+   "kind": "model-feature",
+   "name": "Paseo · white lamp 3"
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-4",
+   "kind": "model-feature",
+   "name": "Paseo · white lamp 4"
+  },
+  {
    "id": "paseo_wall.json:paseo-retaining-wall",
    "kind": "model-feature",
    "name": "Paseo · sandstone retaining wall and mesh fence"
@@ -1792,7 +1837,7 @@
    "kind": "build-task",
    "name": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
    "priority": 3,
-   "status": "open",
+   "status": "in-progress",
    "issue": 49
   },
   {
@@ -5570,6 +5615,71 @@
    "relation": "cites"
   },
   {
+   "from": "paseo_details.json:paseo-east-windbreak",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-pool-hedge",
+   "to": "ref:IMG_2349.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-pool-hedge",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-service-cover",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-west-hedge",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-west-hedge",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-west-windbreak",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-1",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-1",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-2",
+   "to": "ref:IMG_2352.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-2",
+   "to": "ref:IMG_2354.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-3",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-4",
+   "to": "ref:IMG_2350.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_wall.json:paseo-retaining-wall",
    "to": "ref:IMG_2227.jpg",
    "relation": "cites"
@@ -5967,6 +6077,51 @@
   {
    "from": "middle_pool_south_gate.json:middle-pool-south-gate",
    "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-east-windbreak",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-pool-hedge",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-service-cover",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-west-hedge",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-west-windbreak",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-1",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-2",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-3",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "paseo_details.json:paseo-white-lamp-4",
+   "to": "area:paseo",
    "relation": "in-area"
   },
   {
@@ -7198,6 +7353,12 @@
   },
   {
    "from": "ref:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-west-hedge",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2352.jpg",
    "to": "area:paseo",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
@@ -7211,6 +7372,12 @@
   {
    "from": "ref:IMG_2352.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-west-hedge",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
