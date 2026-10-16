@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "38a845f5b9fc0ec306e19b37d8f4b0b17c5cc607b5fe9be942f075747ab2bb12",
+ "inputDigest": "6aefb7bb31bc4284ea7e57c82db12388f94c0a0074a238de9a6a1f49563129a3",
  "summary": {
   "unplaced": 1,
   "suggested": 77,
@@ -6779,7 +6779,7 @@
    "from": "photo:IMG_2349.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 2.2
+   "gap": 0.8
   },
   {
    "from": "photo:IMG_2349.jpg",
@@ -6798,7 +6798,7 @@
    "from": "photo:IMG_2350.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 2.0
+   "gap": 0.6
   },
   {
    "from": "photo:IMG_2350.jpg",
@@ -6853,7 +6853,7 @@
    "from": "photo:IMG_2354.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 5.3
+   "gap": 3.4
   },
   {
    "from": "photo:IMG_2354.jpg",

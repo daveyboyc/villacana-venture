@@ -213,7 +213,9 @@ const path = require("node:path");
       const keep = world.solids;
       world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...rings]);
       // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
-      const stretch = s.seafront.paseo.points.slice(0, 8);
+      const end = s.seafront.paseo.points.findIndex(([x, z]) => Math.hypot(x - 28.87, z - 96.28) < 0.01);
+      if (end < 0) throw Error("Paseo lost its Barraka boardwalk join");
+      const stretch = s.seafront.paseo.points.slice(0, end + 1);
       walk(stretch);
       walk([...stretch].reverse());
       world.solids = keep;
