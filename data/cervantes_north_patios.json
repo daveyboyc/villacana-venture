@@ -1,0 +1,132 @@
+{
+ "checkedAt": "2026-10-15",
+ "scope": "Only the three visible near-Elena patio partition fragments on the north Cervantes frontage; no inferred closed enclosures or concealed house-end joins.",
+ "trust": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty.",
+ "walls": [
+  {
+   "id": "cervantes-north-partition-east",
+   "name": "Cervantes north · east visible patio partition",
+   "points": [
+    [
+     -152.26,
+     54.55
+    ],
+    [
+     -154.052,
+     51.543
+    ]
+   ],
+   "height": 1.6,
+   "thickness": 0.18,
+   "solid": true,
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ],
+   "trust": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty. Wall ends stop before occluded junctions; gaps do not assert a photographed gate."
+  },
+  {
+   "id": "cervantes-north-partition-middle",
+   "name": "Cervantes north · middle visible patio partition",
+   "points": [
+    [
+     -157.311,
+     57.794
+    ],
+    [
+     -159.564,
+     54.014
+    ]
+   ],
+   "height": 1.65,
+   "thickness": 0.18,
+   "solid": true,
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ],
+   "trust": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty. Wall ends stop before occluded junctions; gaps do not assert a photographed gate."
+  },
+  {
+   "id": "cervantes-north-partition-west",
+   "name": "Cervantes north · west visible patio partition",
+   "points": [
+    [
+     -162.895,
+     61.122
+    ],
+    [
+     -164.84,
+     57.858
+    ]
+   ],
+   "height": 1.55,
+   "thickness": 0.18,
+   "solid": true,
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ],
+   "trust": "Roof photographs support transverse white partitions and climbing planting. Approximate plan positions anchored to the aerial and registry row 6265201UF1366N_part4; endpoints and heights estimated, about 1–2 m plan uncertainty. Wall ends stop before occluded junctions; gaps do not assert a photographed gate."
+  }
+ ],
+ "planting": [
+  {
+   "at": [
+    -153.156,
+    53.047
+   ],
+   "kind": "bougainvillea",
+   "y": 1.2000000000000002,
+   "scale": 0.65
+  },
+  {
+   "at": [
+    -152.286,
+    51.772
+   ],
+   "kind": "magnolia",
+   "y": 0,
+   "scale": 0.55
+  },
+  {
+   "at": [
+    -158.438,
+    55.904
+   ],
+   "kind": "bougainvillea",
+   "y": 1.25,
+   "scale": 0.65
+  },
+  {
+   "at": [
+    -157.44,
+    54.844
+   ],
+   "kind": "magnolia",
+   "y": 0,
+   "scale": 0.55
+  },
+  {
+   "at": [
+    -163.868,
+    59.49
+   ],
+   "kind": "bougainvillea",
+   "y": 1.15,
+   "scale": 0.65
+  },
+  {
+   "at": [
+    -163.023,
+    58.172
+   ],
+   "kind": "magnolia",
+   "y": 0,
+   "scale": 0.55
+  }
+ ]
+}

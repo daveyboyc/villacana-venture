@@ -1,0 +1,96 @@
+{
+  "id": "beach-shoreline",
+  "source": "public/map/ground.jpg",
+  "georeference": "public/map/ground.json",
+  "imageSize": [
+    1792,
+    1792
+  ],
+  "pixelPoints": [
+    [
+      1000,
+      1645
+    ],
+    [
+      1100,
+      1560
+    ],
+    [
+      1200,
+      1490
+    ],
+    [
+      1300,
+      1460
+    ],
+    [
+      1400,
+      1368
+    ],
+    [
+      1500,
+      1290
+    ],
+    [
+      1600,
+      1215
+    ],
+    [
+      1700,
+      1155
+    ],
+    [
+      1792,
+      1100
+    ]
+  ],
+  "points": [
+    [
+      -92.11,
+      296.69
+    ],
+    [
+      -68.1,
+      276.27
+    ],
+    [
+      -44.08,
+      259.46
+    ],
+    [
+      -20.07,
+      252.26
+    ],
+    [
+      3.95,
+      230.16
+    ],
+    [
+      27.96,
+      211.43
+    ],
+    [
+      51.98,
+      193.42
+    ],
+    [
+      76.0,
+      179.01
+    ],
+    [
+      98.09,
+      165.8
+    ]
+  ],
+  "replaceXRange": [
+    -99.5,
+    129.0
+  ],
+  "evidence": [
+    "IMG_2285.jpg",
+    "IMG_2298.jpg",
+    "IMG_2299.jpg",
+    "IMG_2300.jpg"
+  ],
+  "trust": "Manually traced landward edge of the dark wet shoreline band on the existing georeferenced Esri aerial, independently of GPS. Estimated 3\u20135 m tracing/registration precision; imagery acquisition date and tide unknown. Original OSM points retained outside the visible trace; short joins to them are not newly surveyed shoreline."
+}

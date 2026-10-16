@@ -1,0 +1,120 @@
+{
+ "id": "eva-walled-lawn",
+ "name": "Calle Eva · walled lawn and espalier corner",
+ "evidence": [
+  "IMG_2339.jpg"
+ ],
+ "trust": "IMG_2339 supports the two white wall faces, flat-trained bougainvillea, small lawn and green/opal bollard. The unchanged gateway north-west wing is the first wall; only its return is added here. Aerial/registry and route constrain placement. Return length 4.2 m, lawn edges, 1.45 m height and prop positions are estimates, not surveyed; stop at the photographed corner without inventing enclosure closure.",
+ "sharedWall": "middle-pool-east-gateway northWestWing (unchanged)",
+ "wall": {
+  "points": [
+   [
+    -116.94,
+    78.77
+   ],
+   [
+    -113.316,
+    76.647
+   ]
+  ],
+  "height": 1.45,
+  "thickness": 0.22
+ },
+ "lawn": {
+  "ring": [
+   [
+    -116.735,
+    78.824
+   ],
+   [
+    -115.42,
+    81.067
+   ],
+   [
+    -112.012,
+    79.07
+   ],
+   [
+    -113.327,
+    76.827
+   ]
+  ]
+ },
+ "espalier": {
+  "height": 1.35,
+  "faces": [
+   [
+    [
+     -116.72,
+     78.849
+    ],
+    [
+     -115.471,
+     80.981
+    ]
+   ],
+   [
+    [
+     -116.709,
+     78.808
+    ],
+    [
+     -113.37,
+     76.852
+    ]
+   ]
+  ]
+ },
+ "bollards": [
+  [
+   -113.466,
+   79.458
+  ]
+ ],
+ "hedge": {
+  "from": [
+   -113.235,
+   77.874
+  ],
+  "to": [
+   -112.451,
+   79.211
+  ],
+  "height": 0.55,
+  "depth": 0.45
+ },
+ "evaLawn": {
+  "ring": [
+   [
+    -112.802,
+    76.635
+   ],
+   [
+    -111.563,
+    78.749
+   ],
+   [
+    -106.947,
+    76.044
+   ],
+   [
+    -108.186,
+    73.93
+   ]
+  ],
+  "tree": [
+   -109.787,
+   76.143
+  ],
+  "lamp": [
+   -108.058,
+   76.521
+  ],
+  "evidence": [
+   "IMG_2336.jpg",
+   "IMG_2337.jpg",
+   "IMG_2338.jpg"
+  ],
+  "trust": "Photographs support the lawn beside Eva, a round clipped tree and a slender dark lantern post. This is a bounded visible lawn fragment, not a traced private enclosure; extent, tree crown and post positions are estimated relative to the protected lane. Brown doors and yellow shrubs remain in frontage-specific work."
+ }
+}

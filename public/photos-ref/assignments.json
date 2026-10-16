@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "d051393085de7ca7fd3245704d39d3cf78c6fb73b4e1b857407b8226c20c90f9",
+ "inputDigest": "896235c100c9272f43b19e87d6ec5104c731225f661f59cadf52c3f3bc1930ad",
  "summary": {
   "unplaced": 1,
-  "suggested": 76,
-  "needs-review": 68,
+  "suggested": 77,
+  "needs-review": 67,
   "photos": 145,
-  "features": 303,
-  "photosCitedByModel": 43,
-  "modelFeaturesWithPhotoCitations": 45
+  "features": 328,
+  "photosCitedByModel": 72,
+  "modelFeaturesWithPhotoCitations": 71
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -266,7 +266,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "south_pool.json:south-pool-seaward-level"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -89.3,
@@ -539,7 +541,10 @@
      "angleOffset": 28.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool_north.json:middle-pool-north-door-wall",
+    "middle_pool_north.json:middle-pool-north-pergola"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -135.5,
@@ -587,7 +592,10 @@
      "angleOffset": 29.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_garden_door.json:cervantes-garden-door",
+    "cervantes_garden_door.json:cervantes-junction-north-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -152.2,
@@ -733,7 +741,9 @@
     }
    ],
    "citedBy": [
-    "elena_north.json:elena-north-tree-bed-1"
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-tree-bed-1",
+    "elena_north.json:elena-north-garden-door-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -778,8 +788,11 @@
     }
    ],
    "citedBy": [
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-window-return",
     "elena_north.json:elena-north-tree-bed-1",
-    "elena_north.json:elena-north-tree-bed-2"
+    "elena_north.json:elena-north-tree-bed-2",
+    "elena_north.json:elena-north-garden-door-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -823,9 +836,12 @@
     }
    ],
    "citedBy": [
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-window-return",
     "elena_north.json:elena-north-tree-bed-1",
     "elena_north.json:elena-north-planter-box-1",
-    "elena_north.json:elena-north-planter-box-2"
+    "elena_north.json:elena-north-planter-box-2",
+    "elena_north.json:elena-north-garden-door-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -871,7 +887,8 @@
    "citedBy": [
     "building:6265201UF1366N_part5",
     "elena_north.json:elena-north-gateway",
-    "elena_north.json:elena-north-planter-west"
+    "elena_north.json:elena-north-planter-west",
+    "elena_gated_entry.json:elena-gated-entry"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -910,7 +927,8 @@
     }
    ],
    "citedBy": [
-    "building:6265201UF1366N_part5"
+    "building:6265201UF1366N_part5",
+    "elena_gated_entry.json:elena-gated-entry"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1388,7 +1406,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-beach-seating"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 39.3,
@@ -1440,7 +1461,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-beach-seating"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 61.7,
@@ -2653,7 +2677,9 @@
     "frontage_divisions.json:cervantes-elena-lawn-1",
     "frontage_divisions.json:cervantes-elena-lawn-2",
     "frontage_divisions.json:cervantes-front-patio",
-    "frontage_divisions.json:cervantes-lawn-door-path"
+    "frontage_divisions.json:cervantes-lawn-door-path",
+    "junction_lawns.json:junction-pollarded-2",
+    "junction_lawns.json:junction-pollarded-3"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -2794,6 +2820,7 @@
    "citedBy": [
     "frontage_divisions.json:cervantes-elena-lawn-1",
     "cervantes_patio_walls.json:cervantes-patio-north-1",
+    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-3"
@@ -2847,6 +2874,7 @@
    ],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-north-1",
+    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-3"
@@ -2895,6 +2923,7 @@
    ],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-north-1",
+    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
@@ -3171,6 +3200,7 @@
    "citedBy": [
     "frontage_divisions.json:cervantes-west-planting",
     "cervantes_patio_walls.json:cervantes-patio-north-1",
+    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-3"
@@ -3214,6 +3244,7 @@
    "citedBy": [
     "frontage_divisions.json:cervantes-west-planting",
     "cervantes_patio_walls.json:cervantes-patio-north-1",
+    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-3"
@@ -3245,6 +3276,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-north-1",
+    "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
@@ -3585,20 +3617,22 @@
   },
   {
    "file": "IMG_2285.jpg",
-   "status": "needs-review",
+   "status": "suggested",
    "reasons": [
-    "Observed camera area disagrees with the GPS/map area candidates"
+    "Compatible map context; metadata association remains a suggestion"
    ],
    "nearby": [
     {
-     "id": "area:sea",
-     "name": "Mediterranean Sea",
+     "id": "area:beach",
+     "name": "Villacana beach",
      "kind": "area",
      "gap": 0
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "area:beach"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": 71.1,
@@ -3698,7 +3732,9 @@
      "angleOffset": 28.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_garden_door.json:cervantes-garden-door"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.2,
@@ -4154,6 +4190,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:beach",
     "paseo_wall.json:paseo-retaining-wall"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -4182,6 +4219,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:beach",
     "paseo_wall.json:paseo-retaining-wall"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -4209,7 +4247,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "area:beach"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -78.8,
@@ -4263,7 +4303,10 @@
      "angleOffset": 29.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_garden_door.json:cervantes-garden-door",
+    "cervantes_garden_door.json:cervantes-junction-north-bed"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -150.5,
@@ -4317,7 +4360,10 @@
      "angleOffset": 31.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_garden_door.json:cervantes-garden-door",
+    "cervantes_garden_door.json:cervantes-junction-north-bed"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -150.5,
@@ -4365,7 +4411,11 @@
      "angleOffset": 20.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.5,
@@ -4423,46 +4473,39 @@
    "file": "IMG_2331.jpg",
    "status": "needs-review",
    "reasons": [
-    "GPS uncertainty exceeds 8 m",
-    "Uncertainty reaches more than one named street",
-    "Observed camera area disagrees with the GPS/map area candidates",
-    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    "Observed camera area disagrees with the GPS/map area candidates"
    ],
    "nearby": [
     {
      "id": "street:elena-south",
      "name": "Calle Elena",
      "kind": "street",
-     "gap": 5.7
-    },
-    {
-     "id": "street:eva",
-     "name": "Calle Eva",
-     "kind": "street",
-     "gap": 17.9
+     "gap": 0
     }
    ],
    "inViewCandidates": [
     {
-     "id": "building:6264501UF1366S_part2",
-     "distance": 30.4,
-     "angleOffset": 28.3
+     "id": "building:6264401UF1366S_part2",
+     "distance": 37.1,
+     "angleOffset": 19.6
     },
     {
-     "id": "building:6264401UF1366S_part2",
-     "distance": 43.2,
-     "angleOffset": 27.1
+     "id": "building:6264501UF1366S_part1",
+     "distance": 43.5,
+     "angleOffset": 12.4
     }
    ],
    "citedBy": [
-    "middle_pool.json:middle-pool-west-planter"
+    "middle_pool.json:middle-pool-west-planter",
+    "middle_pool_north.json:middle-pool-north-planter-cap",
+    "middle_pool_north.json:middle-pool-north-white-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
-    "x": -134.6,
-    "z": 76.7,
-    "basis": "phone location",
-    "reportedAccuracy": 17.3,
+    "x": -137.2,
+    "z": 84.3,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 2.0,
     "heading": 135,
     "headingBasis": "EXIF true north"
    }
@@ -4471,7 +4514,6 @@
    "file": "IMG_2332.jpg",
    "status": "needs-review",
    "reasons": [
-    "GPS uncertainty exceeds 8 m",
     "Uncertainty reaches more than one named street",
     "Observed camera area disagrees with the GPS/map area candidates"
    ],
@@ -4480,31 +4522,40 @@
      "id": "street:elena-south",
      "name": "Calle Elena",
      "kind": "street",
-     "gap": 1.2
+     "gap": 0.6
     },
     {
      "id": "street:eva",
      "name": "Calle Eva",
      "kind": "street",
-     "gap": 7.7
-    },
-    {
-     "id": "street:silvia-north",
-     "name": "Calle Silvia",
-     "kind": "street",
-     "gap": 12.0
+     "gap": 3.6
     }
    ],
-   "inViewCandidates": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 30.1,
+     "angleOffset": 28.8
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 39.3,
+     "angleOffset": 34.6
+    }
+   ],
    "citedBy": [
-    "middle_pool.json:middle-pool-west-planter"
+    "middle_pool.json:middle-pool-west-planter",
+    "middle_pool_north.json:middle-pool-north-planter-cap",
+    "middle_pool_north.json:middle-pool-north-door-wall",
+    "middle_pool_north.json:middle-pool-north-pergola",
+    "middle_pool_north.json:middle-pool-north-white-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
-    "x": -135.1,
-    "z": 90.9,
-    "basis": "phone location",
-    "reportedAccuracy": 14.0,
+    "x": -136.2,
+    "z": 95.8,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 2.0,
     "heading": 347,
     "headingBasis": "EXIF true north"
    }
@@ -4589,7 +4640,9 @@
      "angleOffset": 31.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool_south_gate.json:middle-pool-south-gate"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -126.1,
@@ -4633,7 +4686,9 @@
      "angleOffset": 22.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool_south_gate.json:middle-pool-south-gate"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -125.6,
@@ -4675,7 +4730,9 @@
      "angleOffset": 14.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -110.4,
@@ -4717,7 +4774,9 @@
      "angleOffset": 11.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -110.2,
@@ -4754,7 +4813,9 @@
      "angleOffset": 1.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -111.2,
@@ -4780,7 +4841,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -111.4,
@@ -4937,7 +5000,11 @@
      "angleOffset": 21.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -150.7,
@@ -4996,7 +5063,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-sign-planter"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": 35.6,
@@ -5029,7 +5099,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_boardwalk.json:barraka-boardwalk",
+    "barraka_boardwalk.json:barraka-sign-planter",
+    "barraka_boardwalk.json:barraka-beach-seating"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": 35.3,
@@ -5051,7 +5125,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 2.2
+     "gap": 0.8
     }
    ],
    "inViewCandidates": [
@@ -5063,6 +5137,7 @@
    ],
    "citedBy": [
     "paseo_wall.json:paseo-retaining-wall",
+    "south_pool.json:south-pool-seaward-level",
     "paseo_details.json:paseo-pool-hedge"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -5086,7 +5161,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 2.0
+     "gap": 0.6
     }
    ],
    "inViewCandidates": [
@@ -5186,7 +5261,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 5.3
+     "gap": 3.4
     }
    ],
    "inViewCandidates": [],
@@ -5245,7 +5320,9 @@
      "angleOffset": 4.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_garden_door.json:cervantes-junction-north-bed"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -154.5,
@@ -5299,7 +5376,9 @@
      "angleOffset": 9.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.7,
@@ -5326,7 +5405,14 @@
      "angleOffset": 31.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1",
+    "junction_lawns.json:junction-pollarded-2",
+    "junction_lawns.json:junction-pollarded-3",
+    "cervantes_garden_door.json:cervantes-junction-north-patio"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.7,
@@ -5363,7 +5449,12 @@
      "angleOffset": 30.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_north_patios.json:cervantes-north-partition-east",
+    "cervantes_north_patios.json:cervantes-north-partition-middle",
+    "cervantes_north_patios.json:cervantes-north-partition-west",
+    "cervantes_garden_door.json:cervantes-junction-north-patio"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.7,
@@ -5395,7 +5486,9 @@
      "angleOffset": 32.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -155.7,
@@ -5431,7 +5524,9 @@
      "angleOffset": 34.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_gated_entry.json:elena-gated-entry"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -161.7,
@@ -5650,7 +5745,14 @@
      "angleOffset": 21.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2",
+    "junction_lawns.json:junction-pollarded-1",
+    "junction_lawns.json:junction-pollarded-2",
+    "junction_lawns.json:junction-pollarded-3",
+    "cervantes_garden_door.json:cervantes-junction-north-patio"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.7,
@@ -5693,7 +5795,11 @@
      "angleOffset": 23.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_north_patios.json:cervantes-north-partition-east",
+    "cervantes_north_patios.json:cervantes-north-partition-middle",
+    "cervantes_north_patios.json:cervantes-north-partition-west"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -153.0,
@@ -5736,7 +5842,12 @@
      "angleOffset": 27.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_north_patios.json:cervantes-north-partition-east",
+    "cervantes_north_patios.json:cervantes-north-partition-middle",
+    "cervantes_north_patios.json:cervantes-north-partition-west",
+    "cervantes_garden_door.json:cervantes-junction-north-patio"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -153.0,
