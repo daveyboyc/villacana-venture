@@ -1646,7 +1646,7 @@
    "kind": "build-task",
    "name": "Paseo east end: wall height towards the big pool",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 40
   },
   {
