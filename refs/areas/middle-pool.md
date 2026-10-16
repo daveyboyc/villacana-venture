@@ -45,8 +45,6 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `middle-pool-south-gate` [#39](https://github.com/daveyboyc/villacana-venture/issues/39) | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | in-progress · issue39 | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
-| P3 | `middle-pool-north-entrance` [#48](https://github.com/daveyboyc/villacana-venture/issues/48) | Middle pool north-west: curved planter end, white steps, brown-door wall | in-progress · issue48 | [IMG_2331](../../public/photos-ref/IMG_2331.jpg), [IMG_2332](../../public/photos-ref/IMG_2332.jpg), [IMG_2195](../../public/photos-ref/IMG_2195.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg) |
 | P3 | `middle-pool-raised-patios` [#55](https://github.com/daveyboyc/villacana-venture/issues/55) | Middle pool: raised patios behind the north wall and the planted beds (after raised-terraces) | open | [IMG_2193](../../public/photos-ref/IMG_2193.jpg), [IMG_2194](../../public/photos-ref/IMG_2194.jpg), [IMG_2246](../../public/photos-ref/IMG_2246.jpg), [IMG_2247](../../public/photos-ref/IMG_2247.jpg), [IMG_2341](../../public/photos-ref/IMG_2341.jpg) |
 
 ## Built from these photos

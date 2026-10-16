@@ -1721,7 +1721,7 @@
    "kind": "build-task",
    "name": "Elena: gated tiled entry west of the covered walkway",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 46
   },
   {
@@ -1729,7 +1729,7 @@
    "kind": "build-task",
    "name": "Cervantes: two steps up to a front door west of the Elena junction",
    "priority": 2,
-   "status": "in-progress",
+   "status": "done",
    "issue": 33
   },
   {
@@ -1737,7 +1737,7 @@
    "kind": "build-task",
    "name": "Cervantes/Elena junction lawns: pollarded trees and kerbs from the new photos",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 45
   },
   {
@@ -1745,7 +1745,7 @@
    "kind": "build-task",
    "name": "Cervantes east of Elena: white kerb wall and plumbago hedge",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 43
   },
   {
@@ -1769,7 +1769,7 @@
    "kind": "build-task",
    "name": "Middle pool south: iron double gate under a pergola frame",
    "priority": 2,
-   "status": "in-progress",
+   "status": "done",
    "issue": 39
   },
   {
@@ -1777,7 +1777,7 @@
    "kind": "build-task",
    "name": "Middle pool north-west: curved planter end, white steps, brown-door wall",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 48
   },
   {
@@ -1785,7 +1785,7 @@
    "kind": "build-task",
    "name": "Calle Eva: walled lawn corner with espaliered bougainvillea",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 47
   },
   {
@@ -1800,7 +1800,7 @@
    "kind": "build-task",
    "name": "South pool: lawn level above the paseo and its seaward wall",
    "priority": 2,
-   "status": "in-progress",
+   "status": "done",
    "issue": 37
   },
   {
@@ -1808,7 +1808,7 @@
    "kind": "build-task",
    "name": "Barraka Beach: boardwalk, sign planter and parasols",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 42
   },
   {
@@ -1816,7 +1816,7 @@
    "kind": "build-task",
    "name": "Beach: shoreline outline vs IMG_2285 (pin falls in the sea)",
    "priority": 2,
-   "status": "in-progress",
+   "status": "done",
    "issue": 32
   },
   {
@@ -1832,7 +1832,7 @@
    "kind": "build-task",
    "name": "Seaward lanes: octagonal paving and covered passages",
    "priority": 3,
-   "status": "in-progress",
+   "status": "done",
    "issue": 51
   },
   {
@@ -1872,7 +1872,7 @@
    "kind": "build-task",
    "name": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
    "priority": 3,
-   "status": "in-progress",
+   "status": "open",
    "issue": 49
   },
   {

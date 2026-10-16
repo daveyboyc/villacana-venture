@@ -170,9 +170,9 @@
         "IMG_2356.jpg",
         "IMG_2265.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "cervantes-east-hedge",
-      "note": "White retaining wall with a plumbago hedge on top, north side east of Elena, at least 8 m, ending in a small rounded post. Water standing at its foot suggests a very flat lane."
+      "note": "White retaining wall with a plumbago hedge on top, north side east of Elena, at least 8 m, ending in a small rounded post. Water standing at its foot suggests a very flat lane. Built as the bounded 8 m white kerb with plumbago in PR #68 (data/cervantes_east_hedge.json)."
     },
     {
       "id": "cervantes-upper-lane",

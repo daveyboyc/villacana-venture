@@ -64,7 +64,7 @@
     "render from IMG_2203"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 46,
    "owner": "issue_46"
   },
@@ -89,7 +89,7 @@
     "layout test still climbs the ramp steps"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 33,
    "owner": "issue_33",
    "notes": "Garden-wall placement blocker resolved by levels survey and IMG_2287/2196. Implemented bounded wall/closed door, two steps, private patio datum and west bed; source checks pass. Awaiting root serial before/after photo review and final layout/overview browser tests before marking done. Baseline adca41e preserved locally."
@@ -114,7 +114,7 @@
     "render from IMG_2329"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 45,
    "owner": "issue_45"
   },
@@ -134,7 +134,7 @@
     "check_cervantes_patio_walls.py or a new check passes"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 43,
    "owner": "issue_43"
   },
@@ -203,7 +203,7 @@
    "dependsOn": [
     "middle-pool-sw-steps"
    ],
-   "status": "in-progress",
+   "status": "done",
    "issue": 39,
    "owner": "issue39"
   },
@@ -226,7 +226,7 @@
     "check_middle_pool.py extended"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 48,
    "owner": "issue48"
   },
@@ -248,7 +248,7 @@
     "render from IMG_2339"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 47,
    "owner": "issue_47"
   },
@@ -293,7 +293,7 @@
    "dependsOn": [
     "paseo-retaining-wall"
    ],
-   "status": "in-progress",
+   "status": "done",
    "issue": 37,
    "owner": "issue_37"
   },
@@ -315,7 +315,7 @@
     "render from IMG_2347"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 42,
    "owner": "issue_42"
   },
@@ -338,7 +338,7 @@
     "note added to docs/SEAFRONT.md"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 32,
    "owner": "issue_32"
   },
@@ -386,7 +386,7 @@
     "render from IMG_2235"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "done",
    "issue": 51,
    "owner": "issue51"
   },
@@ -495,9 +495,9 @@
     "render from IMG_2352"
    ],
    "dependsOn": [],
-   "status": "in-progress",
+   "status": "open",
    "issue": 49,
-   "owner": "issue49"
+   "notes": "Hedges behind the mesh, windbreak cloth runs and the flush service cover are built (PR #74, data/paseo_details.json). Still to do: the four slim white lamps. Their photographed positions at the wall foot fail the route-clearance guard, so they were left out rather than moved without evidence; place them once the paseo width at the wall foot is confirmed."
   },
   {
    "id": "raised-terraces",
