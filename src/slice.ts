@@ -1,3 +1,4 @@
+import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -173,11 +174,13 @@ async function boot(): Promise<void> {
   addMiddleSouthGate(scene);
   addElenaGatedEntry(scene);
   addEvaLawn(scene);
+  addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   fenceRings.push(...elenaEntryRings());
   fenceRings.push(...evaWallRings());
+  fenceRings.push(...picassoServiceRings());
   fenceRings.push(...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);

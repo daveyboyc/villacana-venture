@@ -1,3 +1,4 @@
+import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
@@ -125,6 +126,10 @@ async function boot(): Promise<void> {
   const sd=middleSouth.drain;mtitled(el("path",{d:path(middleSouthRect(sd.along-sd.length/2,sd.along+sd.length/2,sd.across-sd.width/2,sd.across+sd.width/2)),fill:"#26342b","data-middle-id":"middle-pool-south-gate-drain"}),"IMG_2334: flush slatted drain");
   for(const ring of middleSouthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#26342b","stroke-width":.035,"data-middle-id":"middle-pool-south-gate"}),"IMG_2334/2335: open south double gate, planter and inset step; approximate extents");
   frontages.append(middle);
+  const picasso=el("g",{id:"picasso-service-road"});
+  for(const f of picassoFeatures){const node=el("path",{d:path(picassoStrip(f.points,f.thickness)),fill:f.kind==="plinth"?"#998b71":"#fffdf5","data-picasso-id":f.id});const title=el("title",{});title.textContent=`${f.name}: ${f.trust} · ${f.evidence.join(", ")}`;node.append(title);picasso.append(node);}
+  picasso.append(el("path",{d:path(picassoRamp.ring as Vec2[]),fill:"#a49f90","data-picasso-id":picassoRamp.id}));
+  frontages.append(picasso);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});
   levels.append(el("path",{d:path(lowerPoolRing),fill:"#7dcbd1","fill-opacity":0.12,stroke:"#596d78","stroke-width":0.4,"stroke-dasharray":"1 1"}));

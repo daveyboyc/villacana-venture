@@ -83,6 +83,9 @@ def features(s):
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    picasso=json.loads((ROOT/'data/picasso_service_road.json').read_text())
+    for f in picasso['features']:
+        add('picasso_service_road.json:'+f['id'],f['name'],'reference feature','bounded single-photo estimate',points=f['points'],evidence=f['evidence'])
     north=json.loads((ROOT/'data/middle_pool_north.json').read_text())
     for f in [north['cap'],north['wall'],north['pergola'],north['steps']]:
         add('middle_pool_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})

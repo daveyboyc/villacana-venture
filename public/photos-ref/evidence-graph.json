@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 328,
-  "photosCitedByModel": 72,
-  "modelFeaturesWithPhotoCitations": 71
+  "features": 331,
+  "photosCitedByModel": 73,
+  "modelFeaturesWithPhotoCitations": 74
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2409,6 +2409,33 @@
     "IMG_2333.jpg",
     "IMG_2331.jpg",
     "IMG_2245.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_road.json:picasso-utility-front",
+   "name": "picasso utility front",
+   "kind": "reference feature",
+   "source": "bounded single-photo estimate",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_road.json:picasso-boundary-wall",
+   "name": "picasso boundary wall",
+   "kind": "reference feature",
+   "source": "bounded single-photo estimate",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_road.json:picasso-stone-plinth",
+   "name": "picasso stone plinth",
+   "kind": "reference feature",
+   "source": "bounded single-photo estimate",
+   "evidence": [
+    "IMG_2345.jpg"
    ]
   },
   {
@@ -7212,6 +7239,24 @@
    "to": "street:picasso",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_road.json:picasso-utility-front",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_road.json:picasso-boundary-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_road.json:picasso-stone-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2346.jpg",

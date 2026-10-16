@@ -403,8 +403,9 @@
     "render from IMG_2345"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 50
+   "status": "done",
+   "issue": 50,
+   "owner": "issue50"
   },
   {
    "id": "paseo-retrace-line",
