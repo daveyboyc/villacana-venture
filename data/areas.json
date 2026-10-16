@@ -43,21 +43,27 @@
    "docs": [
     "docs/MIDDLE_POOL.md",
     "docs/LEVELS.md",
-    "docs/MIDDLE_POOL_SOUTH_GATE.md"
+    "docs/MIDDLE_POOL_SOUTH_GATE.md",
+    "docs/MIDDLE_POOL_SW_GATEWAY.md"
    ],
    "data": [
     "data/middle_pool.json",
     "data/objects.json",
     "data/levels_survey.json",
     "data/middle_pool_south_gate.json",
-    "data/middle_pool_north.json"
+    "data/middle_pool_north.json",
+    "data/middle_pool_steps.json",
+    "data/middle_pool_sw_gateway.json",
+    "data/terrain.json"
    ],
    "src": [
     "src/middle-pool.ts",
     "src/world.ts",
     "src/water.ts",
     "src/middle-pool-south-gate.ts",
-    "src/middle-pool-north.ts"
+    "src/middle-pool-north.ts",
+    "src/middle-pool-sw-gateway.ts",
+    "src/ramp-steps.ts"
    ],
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
@@ -65,10 +71,10 @@
     "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
     "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.",
     "Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.",
-    "Not modelled yet: the south-west gateway above the steps (IMG_2333).",
     "Issue #39: separate level south entrance from IMG_2334/2335: two open iron leaves, shallow curved white head with metal pergola ribs, crazy paving and flush drain, raised white planter flanking an inset step and a schematic blue/yellow border round a white tile panel. Placed across Calle Silvia near its courtyard end; positions/ends (about 1–2 m) and dimensions are estimates. No south-lane grade change is inferred; the southwest steps and western 0.5 m rise remain separate.",
     "Issue 48 source pass: a bounded curved north planter termination, three white side steps, short brown-door wall and open pergola are modelled from IMG_2331/2332/2195; exact extents and dimensions remain estimates. IMG_2331/2332 cameras are corrected independently from aerial path/pool anchors, original GPS retained. Browser and matched-camera review pending; south-west steps/gateway and south gate are separate tasks.",
-    "Issue 48 follows the existing continuous western +0.5 m terrain rise for the north steps, using tread-minus-siteY offsets in the shared ramp-steps module; no additional isolated plateau. Pool, deck and west path remain at 0 m. Flight dimensions and bounded wall extents remain estimated pending browser/image review."
+    "Issue 48 follows the existing continuous western +0.5 m terrain rise for the north steps, using tread-minus-siteY offsets in the shared ramp-steps module; no additional isolated plateau. Pool, deck and west path remain at 0 m. Flight dimensions and bounded wall extents remain estimated pending browser/image review.",
+    "Issue #31 (PRs #53 and #60): IMG_2333 shows three rough stone risers on the planter side of Calle Eva, a tiled ramp beside them, a short landing and a white gateway with two open iron leaves. The steps and the 0.5 m rise to the Dalí level are in data/middle_pool_steps.json and data/terrain.json; the gateway is in data/middle_pool_sw_gateway.json. Positions and sizes are estimated from tiles."
    ]
   },
   {

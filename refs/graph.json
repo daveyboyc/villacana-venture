@@ -1591,6 +1591,11 @@
    "name": "Middle pool · south double iron gate, curved head and tiled planter"
   },
   {
+   "id": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "kind": "model-feature",
+   "name": "Middle pool · south-west gateway above the stone steps"
+  },
+  {
    "id": "paseo_details.json:paseo-east-windbreak",
    "kind": "model-feature",
    "name": "Paseo · east green windbreak"
@@ -5645,6 +5650,16 @@
    "relation": "cites"
   },
   {
+   "from": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "to": "ref:IMG_2332.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "to": "ref:IMG_2333.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_details.json:paseo-east-windbreak",
    "to": "ref:IMG_2350.jpg",
    "relation": "cites"
@@ -6146,6 +6161,11 @@
   },
   {
    "from": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
    "to": "area:middle-pool",
    "relation": "in-area"
   },

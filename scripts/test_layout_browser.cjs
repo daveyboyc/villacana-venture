@@ -42,6 +42,7 @@ const path = require("node:path");
       { stepsGroundOffset },
       { gardenDoor, gardenPoint, gardenDoorRings, gardenGroundOffset, addCervantesGardenDoor },
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
+      { middleSwRings, middleSwAt },
       { middleSouthRings, middleSouthAt },
     ] = await Promise.all([
       import("/src/player.ts"),
@@ -57,6 +58,7 @@ const path = require("node:path");
       import("/src/ramp-steps.ts"),
       import("/src/cervantes-garden-door.ts"),
       import("/src/middle-pool.ts"),
+      import("/src/middle-pool-sw-gateway.ts"),
       import("/src/middle-pool-south-gate.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
@@ -72,6 +74,7 @@ const path = require("node:path");
         ...gardenDoorRings(),
         ...elenaNorthRings(),
         ...middlePoolRings(),
+        ...middleSwRings(),
         ...middleSouthRings(),
         ...coastalWallRings(),
       ],
@@ -167,6 +170,18 @@ const path = require("node:path");
       walk([at(-0.4), at(flight.end + 0.3)]);
       if (Math.abs(player.y - rampTop) > 0.08) throw Error(flight.id + ": player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
+    }
+    // Issue 31: up the Calle Eva ramp from the middle pool, through the open south-west gateway and back (the steps are walked above).
+    {
+      const { default: gw } = await import("/data/middle_pool_sw_gateway.json");
+      walk([middleSwAt(-1), middleSwAt(gw.gatewayAlong + 2.5)]);
+      walk([middleSwAt(gw.gatewayAlong + 2.5), middleSwAt(-1)]);
+      const gateOnly = new Solids(middleSwRings());
+      for (const ring of middleSwRings().filter((_, i) => i % 2 === 0)) {
+        const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
+        const out = gateOnly.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.15) throw Error("South-west gateway pier is not solid at " + c);
+      }
     }
     // Issue 39: the separate south entrance remains level and open in both directions.
     walk([middleSouthAt(-2.8),middleSouthAt(1.8)]);

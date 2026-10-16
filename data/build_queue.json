@@ -181,7 +181,8 @@
    ],
    "dependsOn": [],
    "status": "done",
-   "issue": 31
+   "issue": 31,
+   "owner": "issue_31"
   },
   {
    "id": "middle-pool-south-gate",

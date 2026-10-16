@@ -118,6 +118,9 @@ the retaining edge.
   foot; the ramp reaches the top tread's level about 2.5 m up. They are built by
   `src/ramp-steps.ts`, the same code as the Cervantes steps, and the browser
   test climbs them.
+- **South-west gateway** (`data/middle_pool_sw_gateway.json`, IMG_2333): the white
+  gateway with two open iron leaves on the landing above the steps, built by
+  `src/middle-pool-sw-gateway.ts`. See `docs/MIDDLE_POOL_SW_GATEWAY.md`.
 - **North end** (IMG_2332, IMG_2331): the terrain rises behind the planter's
   north end. Issue 48 adds white steps through this existing rise and an open
   pergola entrance; final browser and matched-camera review remain pending.

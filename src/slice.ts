@@ -1,3 +1,4 @@
+import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
@@ -176,13 +177,14 @@ async function boot(): Promise<void> {
   addElenaGatedEntry(scene);
   addEvaLawn(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
+  addMiddleSwGateway(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   fenceRings.push(...elenaEntryRings());
   fenceRings.push(...evaWallRings());
   fenceRings.push(...picassoServiceRings());
-  fenceRings.push(...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
+  fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
   const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
