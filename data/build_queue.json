@@ -567,7 +567,8 @@
     "check_levels.py: cervantes-elena-steps marked built"
    ],
    "dependsOn": [],
-   "status": "open",
+   "status": "done",
+   "owner": "issue_56",
    "issue": 56
   },
   {

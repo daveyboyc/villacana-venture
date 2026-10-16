@@ -4366,7 +4366,8 @@
    ],
    "citedBy": [
     "cervantes_garden_door.json:cervantes-garden-door",
-    "cervantes_garden_door.json:cervantes-junction-north-bed"
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "steps:cervantes-elena-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5335,7 +5336,8 @@
     }
    ],
    "citedBy": [
-    "cervantes_garden_door.json:cervantes-junction-north-bed"
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "steps:cervantes-elena-steps"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
