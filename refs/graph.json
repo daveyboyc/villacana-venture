@@ -1506,6 +1506,11 @@
    "name": "Middle pool · raised planter wall with hedge, west path"
   },
   {
+   "id": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "kind": "model-feature",
+   "name": "Middle pool · south double iron gate, curved head and tiled planter"
+  },
+  {
    "id": "paseo_wall.json:paseo-retaining-wall",
    "kind": "model-feature",
    "name": "Paseo · sandstone retaining wall and mesh fence"
@@ -1604,7 +1609,7 @@
    "kind": "build-task",
    "name": "Middle pool south: iron double gate under a pergola frame",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "issue": 39
   },
   {
@@ -5210,6 +5215,16 @@
    "relation": "cites"
   },
   {
+   "from": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "to": "ref:IMG_2334.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "to": "ref:IMG_2335.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_wall.json:paseo-retaining-wall",
    "to": "ref:IMG_2227.jpg",
    "relation": "cites"
@@ -5516,6 +5531,11 @@
   },
   {
    "from": "middle_pool.json:middle-pool-west-planter",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "middle_pool_south_gate.json:middle-pool-south-gate",
    "to": "area:middle-pool",
    "relation": "in-area"
   },

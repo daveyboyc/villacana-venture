@@ -1,3 +1,5 @@
+import middleSouth from "../data/middle_pool_south_gate.json";
+import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
 import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
@@ -106,6 +108,9 @@ async function boot(): Promise<void> {
   for(const part of [mg.nw,mg.se])line(part,"#fffdf5",gw.thickness,gw.id,gateText);
   for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
   line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
+  mtitled(el("path",{d:path(middleSouthRect(...middleSouth.paving.along as [number,number],...middleSouth.paving.across as [number,number])),fill:"#b2a793","data-middle-id":"middle-pool-south-gate-paving"}),"IMG_2334: crazy paving and flush drain at level south entrance");
+  const sd=middleSouth.drain;mtitled(el("path",{d:path(middleSouthRect(sd.along-sd.length/2,sd.along+sd.length/2,sd.across-sd.width/2,sd.across+sd.width/2)),fill:"#26342b","data-middle-id":"middle-pool-south-gate-drain"}),"IMG_2334: flush slatted drain");
+  for(const ring of middleSouthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#26342b","stroke-width":.035,"data-middle-id":"middle-pool-south-gate"}),"IMG_2334/2335: open south double gate, planter and inset step; approximate extents");
   frontages.append(middle);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});

@@ -42,17 +42,20 @@
    },
    "docs": [
     "docs/MIDDLE_POOL.md",
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/MIDDLE_POOL_SOUTH_GATE.md"
    ],
    "data": [
     "data/middle_pool.json",
     "data/objects.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/middle_pool_south_gate.json"
    ],
    "src": [
     "src/middle-pool.ts",
     "src/world.ts",
-    "src/water.ts"
+    "src/water.ts",
+    "src/middle-pool-south-gate.ts"
    ],
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
@@ -60,7 +63,8 @@
     "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
     "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.",
     "Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.",
-    "Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south-west steps and gateway (IMG_2333), the south pergola gate (IMG_2334)."
+    "Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south-west steps and gateway (IMG_2333).",
+    "Issue #39: separate level south entrance from IMG_2334/2335: two open iron leaves, shallow curved white head with metal pergola ribs, crazy paving and flush drain, raised white planter flanking an inset step and a schematic blue/yellow border round a white tile panel. Placed across Calle Silvia near its courtyard end; positions/ends (about 1–2 m) and dimensions are estimates. No south-lane grade change is inferred; the southwest steps and western 0.5 m rise remain separate."
    ]
   },
   {

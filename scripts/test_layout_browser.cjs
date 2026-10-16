@@ -42,6 +42,7 @@ const path = require("node:path");
       { stepsGroundOffset },
       { gardenDoor, gardenPoint, gardenDoorRings, gardenGroundOffset, addCervantesGardenDoor },
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
+      { middleSouthRings, middleSouthAt },
     ] = await Promise.all([
       import("/src/player.ts"),
       import("/src/geom.ts"),
@@ -56,6 +57,7 @@ const path = require("node:path");
       import("/src/ramp-steps.ts"),
       import("/src/cervantes-garden-door.ts"),
       import("/src/middle-pool.ts"),
+      import("/src/middle-pool-south-gate.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
@@ -70,6 +72,7 @@ const path = require("node:path");
         ...gardenDoorRings(),
         ...elenaNorthRings(),
         ...middlePoolRings(),
+        ...middleSouthRings(),
         ...coastalWallRings(),
       ],
       Object.fromEntries(
@@ -158,6 +161,10 @@ const path = require("node:path");
       if (Math.abs(player.y - rampTop) > 0.08) throw Error(flight.id + ": player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
     }
+    // Issue 39: the separate south entrance remains level and open in both directions.
+    walk([middleSouthAt(-2.8),middleSouthAt(1.8)]);
+    walk([middleSouthAt(1.8),middleSouthAt(-2.8)]);
+    if(Math.abs(world.groundHeight(...middleSouthAt(-2))-world.groundHeight(...middleSouthAt(1)))>.05)throw Error("South entrance gained an unsupported step");
     // Private garden threshold: both visible treads equal the sampled player ground,
     // and the photographed closed door stays solid. It is not a through-route.
     {
