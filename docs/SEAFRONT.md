@@ -8,7 +8,8 @@ Checked online on 2026-10-12:
 
 The restaurant roof matches Catastro building `6364501UF1366S_part8` on the existing georeferenced Esri aerial. Its surveyed footprint is reused verbatim; no duplicate building is added. The location is different from the OSM restaurant point, which sits in the outdoor seating area. The terrace outline is approximate, informed by that aerial comparison and official exterior photos.
 
-The beach polygon and coastline come from the existing OSM map. A separate view extent frames the local frontage without introducing artificial edges into the sand or water. Shorelines change with season and survey date. The sea's outer rectangle is a display boundary, not a mapped natural feature. The local beach label is Villacana beach; the larger OSM polygon is tagged Playa de Guadalmansa and extends beyond this frontage.
+The beach polygon and coastline start from the existing OSM map; the local waterline
+now follows the independent aerial trace documented in the issue #32 review below. A separate view extent frames the local frontage without introducing artificial edges into the sand or water. Shorelines change with season and survey date. The sea's outer rectangle is a display boundary, not a mapped natural feature. The local beach label is Villacana beach; the larger OSM polygon is tagged Playa de Guadalmansa and extends beyond this frontage.
 
 `scripts/build_seafront.py` builds `skeleton.seafront`, shared by the blueprint and main-pool walk. The blueprint adds labelled outlines and a Seafront toggle; Whole block includes the sand and a strip of sea. The Seafront link (`slice.html?pool=main&view=seafront`) starts on a safe mapped paseo point with a wider view toward the restaurant and beach. The main-pool view replaces the former uniform ten-metre sand band with the mapped beach polygon and adds the paseo, restaurant roof and terrace outline.
 
@@ -105,3 +106,46 @@ No heights, pool/house footprints, gate geometry or eastern OSM points change.
 The uncorrected eastern house obstruction remains issue #41; wall height near
 Guillermo remains issue #40. Browser coverage follows the complete retraced run
 to the same Barraka boardwalk join rather than relying on an OSM point count.
+
+## Independent shoreline review — issue #32 (15 October 2026)
+
+IMG_2285 visibly stands on dry mixed sand and pebbles in front of Barraka.
+IMG_2298 and IMG_2299 look inland at the white frontage; IMG_2300 looks east
+along the water. The last three share one camera coordinate, so they are one
+spatial anchor, not three independent shoreline measurements.
+
+The existing georeferenced Esri aerial (`public/map/ground.jpg`, bounds in
+`ground.json`) independently shows the old OSM coastline running across dry
+beach near Barraka, landward of the dark wet shoreline band. The Apple Maps
+main-pool aerial confirms the restaurant/frontage arrangement but crops the
+waterline, so it cannot provide another shoreline trace. The Google Maps lane
+screenshot also crops the waterline. Neither screenshot was used to infer one.
+
+`data/shoreline_trace.json` records nine inspected pixel control points on the
+landward edge of the aerial's dark wet band, converted through the published
+image bounds. The first points approximately agree with OSM; the difference
+grows eastward to about 30 m at the image's eastern edge. The trace was selected
+from aerial content, without using camera pins as control points. Both the beach
+polygon and the sea polygon use the same corrected local edge. The overview
+walk and minimap also consume that reviewed skeleton shoreline. Original OSM
+points remain outside that coverage, with short joins to the trace ends.
+No registry footprints, routes or vertical levels were changed.
+
+IMG_2285's unchanged pin was about 9.1 m seaward of the old coast and is now
+about 16.5 m inland of the independent trace. The shared IMG_2298–2300 pin stays
+on the beach, about 19.1 m inland (previously 18.7 m). These are consistency
+observations after tracing, not measured distances to the photographed water.
+The reported phone uncertainty is not the uncertainty of the map or shoreline.
+
+**Limits.** Plan accuracy is estimated at 3–5 m, including manual tracing and
+unknown aerial registration error. The aerial acquisition date, tide and beach
+season are unknown. A dark wet band is a repeatable visual boundary in this
+image, not a permanent surveyed coast or a claim about the instant waterline in
+the photos. Adjacent OSM shoreline and the short joins outside image coverage
+are retained, not independently verified. No image copies or private overlays
+are added by this change.
+
+`check_seafront.py` now checks the pixel-to-map transformation, shared beach/sea
+edge, retained OSM extents and indexed photo evidence in addition to its polygon,
+pool and route checks. Before/after photo-camera renders are saved under
+`layout-checks.local/issue-32/` (ignored local review artifacts).
