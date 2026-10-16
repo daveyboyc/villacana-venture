@@ -98,9 +98,10 @@
         "IMG_2327.jpg",
         "IMG_2328.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "cervantes-door-steps",
-      "note": "Brown garden door in a wall with a curved coping on the north edge of the lane, just east of the drain line, facing south. Two red-tread steps with white risers. It sits at the foot of the 0.5 m drop, so it climbs back to the upper Cervantes level."
+      "note": "Brown garden door in a wall with a curved coping on the north edge of the lane, just east of the drain line, facing south. Two red-tread steps with white risers. It sits at the foot of the 0.5 m drop, so it climbs back to the upper Cervantes level.",
+      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
     },
     {
       "id": "cervantes-junction-north-patio",
@@ -123,9 +124,10 @@
         "IMG_2359.jpg",
         "IMG_2369.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "cervantes-door-steps",
-      "note": "Inferred: the roof shots show a decorative-tiled patio behind the same curved-coping door, its floor level with the door sill. Its face to the lane is the wall and steps of the door."
+      "note": "Inferred: the roof shots show a decorative-tiled patio behind the same curved-coping door, its floor level with the door sill. Its face to the lane is the wall and steps of the door.",
+      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
     },
     {
       "id": "cervantes-junction-north-bed",
@@ -149,9 +151,10 @@
         "IMG_2327.jpg",
         "IMG_2196.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "cervantes-door-steps",
-      "note": "White-walled hedge bed on the north side running 2-3 m west from the door corner along the steps; top about level with the second door step."
+      "note": "White-walled hedge bed on the north side running 2-3 m west from the door corner along the steps; top about level with the second door step.",
+      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
     },
     {
       "id": "cervantes-east-north-bed",
@@ -308,7 +311,7 @@
         "IMG_2332.jpg",
         "IMG_2331.jpg"
       ],
-      "model": "differs",
+      "model": "built",
       "task": "middle-pool-north-entrance",
       "compare": {
         "low": [
@@ -320,7 +323,7 @@
           90.3
         ]
       },
-      "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built."
+      "note": "Read by Claude on 15 October after Dave pointed out the missing slopes. IMG_2332: looking north-north-west along the path between the raised planter and the pool fence, the paving rises at the planter's north end to a pergola gate and a white garden wall with a brown door; a white riser face shows under the upper paving. IMG_2331 (pin +-17 m), looking south-east down the north-west path, shows two or three white-nosed steps climbing to the right at the same corner. So the ground behind the planter is the upper (Dalí-side) level. The terrain now rises behind the planter (data/terrain.json), but the steps and the pergola gate are not built. Issue 48 source pass adds three white steps using the shared ramp-steps mechanism, following the existing 0-to-0.5 m terrain rise with tread-minus-siteY offsets only; no extra plateau. Pergola and short brown-door wall added as bounded fragments. Flight alignment and tread spacing remain estimates; final browser and image review pending."
     },
     {
       "id": "middle-pool-gates-level",
@@ -583,6 +586,10 @@
     {
       "for": "cervantes-east-north-bed",
       "ask": "Cervantes east of Elena towards Pintor Picasso: no photo covers this half of the lane (the half from Dalí to Elena is well covered). One photo looking along it from each end, and side-on to the white kerb wall and plumbago hedge."
+    },
+    {
+      "for": "paseo-east-end-height",
+      "ask": "At the east end of the sandstone wall by Calle Guillermo, take a side-on photograph showing the paseo surface, wall foot, coping and garden floor together, with a person or measured reference beside the wall. Also photograph along the paseo towards the main-pool lawn, including any ramp, step or change of grade. This distinguishes paseo rise from gardens falling while retaining the established pool level."
     }
   ]
 }
