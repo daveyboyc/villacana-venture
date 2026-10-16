@@ -1,10 +1,21 @@
+import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
+import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
+import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
+import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
+import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
+import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
+import {barrakaSections} from "./barraka-boardwalk";
+import middleSouth from "../data/middle_pool_south_gate.json";
+import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
+import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
-import {paseoWallOutline} from "./paseo-wall";
+import { seaWallSegments } from "./south-pool";
+import {paseoWallCovers, paseoWallOutline} from "./paseo-wall";
 import paseoWall from "../data/paseo_wall.json";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
@@ -52,6 +63,7 @@ function loadEdits(): Edits {
 
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
+  suppressInEvaLawn(skeleton);
   suppressInMiddlePoolReview(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
   const rot = skeleton.viewRotation;
@@ -70,12 +82,17 @@ async function boot(): Promise<void> {
   for(const r of frontageRegions) {const node=el("path",{d:path(r.ring),fill:FRONTAGE_COLORS[r.kind],"fill-opacity":.85,stroke:r.kind==="lawn"?"#fffdf3":"#786657","stroke-width":.16,"data-frontage-id":r.id});const title=el("title",{});title.textContent=`${r.name} · ${r.trust} · ${r.evidence.join(", ")}`;node.append(title);frontages.append(node);}
   for(const border of frontageBorders)frontages.append(el("path",{d:"M"+border.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf3","stroke-width":border.width}));
   const patioWalls=el("g",{id:"cervantes-patio-walls"});
-  for(const wall of cervantesPatioWalls) {
+  for(const wall of [...cervantesPatioWalls,...cervantesNorthPartitions]) {
     const node=el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-wall-id":wall.id});
     const title=el("title",{});title.textContent=`${wall.name}: ${wall.trust}`;node.append(title);patioWalls.append(node);
   }
   for(const opening of cervantesWallOpenings){const node=el("path",{d:path(opening.ring),fill:"none",stroke:"#4c816b","stroke-width":.08,"stroke-dasharray":".25 .15"});const title=el("title",{});title.textContent=`Kept open: ${opening.name}`;node.append(title);patioWalls.append(node);}
   frontages.append(patioWalls);
+  const garden=el("g",{id:"cervantes-garden-door"});
+  for(const [ring,fill,id] of [[gardenPatioRing,"#c88768",gardenDoor.patio.id],[gardenBedRing,"#62513a",gardenDoor.bed.id],[gardenWallRing,"#fffaf1",gardenDoor.id],...gardenStepRings.map((ring,i)=>[ring,"#a75d43",gardenDoor.id+"-tread-"+(i+1)]),[gardenDoorLeaf,"#65432e",gardenDoor.id+"-closed-door"]] as [Vec2[],string,string][]){
+    const node=el("path",{d:path(ring),fill,stroke:"#fffaf1","stroke-width":.07,"data-garden-door-id":id});const title=el("title",{});title.textContent=`${gardenDoor.name}: ${gardenDoor.trust} · ${gardenDoor.evidence.join(", ")}`;node.append(title);garden.append(node);
+  }
+  frontages.append(garden);
   // Calle Elena north, traced from the roof photos: beds, patio wall and the arched gateway.
   const elena=el("g",{id:"elena-north"});
   const titled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);elena.append(node);};
@@ -84,6 +101,13 @@ async function boot(): Promise<void> {
   for(const wall of elenaNorth.walls)titled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-id":wall.id}),`${wall.name}: ${wall.trust}`);
   const gate=gatewayParts();
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
+  titled(el("path",{d:path(elenaEntryRing),fill:"#b46b48",stroke:"#d1b595","stroke-width":.06}),`${elenaEntry.name}: ${elenaEntry.trust}`);
+  for(const ring of elenaEntryRings())titled(el("path",{d:path(ring),fill:"#202622"}),`${elenaEntry.name}: closed private paired gates · ${elenaEntry.evidence.join(", ")}`);
+  titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:"#ba8062","data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
+  for(const w of elenaNorth.walls) for(const d of w.doors) {
+    const [a,b]=w.points, len=Math.hypot(b[0]-a[0],b[1]-a[1]), ux=(b[0]-a[0])/len, uz=(b[1]-a[1])/len;
+    titled(el("path",{d:`M${d.at[0]-ux*d.width/2} ${d.at[1]-uz*d.width/2}L${d.at[0]+ux*d.width/2} ${d.at[1]+uz*d.width/2}`,stroke:"#6b4126","stroke-width":w.thickness+.04}),"Closed timber garden door");
+  }
   frontages.append(elena);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
   const middle=el("g",{id:"middle-pool-features"});
@@ -94,7 +118,21 @@ async function boot(): Promise<void> {
   for(const part of [mg.nw,mg.se])line(part,"#fffdf5",gw.thickness,gw.id,gateText);
   for(const o of [gw.opening[0]-gw.pier.width/2,gw.opening[1]+gw.pier.width/2])line([mg.at(o-gw.pier.width/2),mg.at(o+gw.pier.width/2)],"#fffdf5",gw.pier.depth,gw.id,gateText);
   line(middleGatewayLeaf(),"#1f2a22",.06,gw.id,`${gw.name}: open iron leaf`);
+  for(const ring of middleSwRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5","data-middle-id":"middle-pool-sw-gateway"}),"IMG_2333: southwest gateway, estimated placement");
+  for(const a of middleSwFlight.risers)line([middleSwAt(a,middleSwFlight.across[0]),middleSwAt(a,middleSwFlight.across[1])],"#aaa18d",.12,"middle-pool-sw-steps","IMG_2333: three stone risers beside the tiled ramp");
+  for(const ring of middlePoolNorthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.06,"data-middle-id":"middle-pool-north"}),"Photo-backed north cap, brown-door wall and open pergola; extents estimated");
+  mtitled(el("path",{d:path(middlePoolNorthStepRing()),fill:"#fff7e7",stroke:"#84766c","stroke-width":.08,"data-middle-id":middlePoolNorth.steps.id}),middlePoolNorth.steps.trust);
+  line(middlePoolNorth.pergola.points as Vec2[],"#8a8172",.1,middlePoolNorth.pergola.id,middlePoolNorth.pergola.trust);
+  for(const ring of evaLawnRings)mtitled(el("path",{d:path(ring),fill:"#668448","data-eva-id":evaLawn.id}),evaLawn.trust);
+  for(const ring of evaWallRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.04,"data-eva-id":evaLawn.id}),evaLawn.trust);
+  mtitled(el("path",{d:path(middleSouthRect(...middleSouth.paving.along as [number,number],...middleSouth.paving.across as [number,number])),fill:"#b2a793","data-middle-id":"middle-pool-south-gate-paving"}),"IMG_2334: crazy paving and flush drain at level south entrance");
+  const sd=middleSouth.drain;mtitled(el("path",{d:path(middleSouthRect(sd.along-sd.length/2,sd.along+sd.length/2,sd.across-sd.width/2,sd.across+sd.width/2)),fill:"#26342b","data-middle-id":"middle-pool-south-gate-drain"}),"IMG_2334: flush slatted drain");
+  for(const ring of middleSouthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#26342b","stroke-width":.035,"data-middle-id":"middle-pool-south-gate"}),"IMG_2334/2335: open south double gate, planter and inset step; approximate extents");
   frontages.append(middle);
+  const picasso=el("g",{id:"picasso-service-road"});
+  for(const f of picassoFeatures){const node=el("path",{d:path(picassoStrip(f.points,f.thickness)),fill:f.kind==="plinth"?"#998b71":"#fffdf5","data-picasso-id":f.id});const title=el("title",{});title.textContent=`${f.name}: ${f.trust} · ${f.evidence.join(", ")}`;node.append(title);picasso.append(node);}
+  picasso.append(el("path",{d:path(picassoRamp.ring as Vec2[]),fill:"#a49f90","data-picasso-id":picassoRamp.id}));
+  frontages.append(picasso);
   world.append(frontages);
   const levels=el("g",{id:"main-pool-levels"});
   levels.append(el("path",{d:path(lowerPoolRing),fill:"#7dcbd1","fill-opacity":0.12,stroke:"#596d78","stroke-width":0.4,"stroke-dasharray":"1 1"}));
@@ -120,6 +158,7 @@ async function boot(): Promise<void> {
     const wall = el("path", { id: "paseo-wall", d: path(paseoWallOutline()), fill: "#d2ae72", stroke: "#5e4a2c", "stroke-width": 0.12, "stroke-linejoin": "round" });
     const title = el("title", {}); title.textContent = `${paseoWall.wall.name}: ${paseoWall.wall.trust} · ${paseoWall.wall.evidence.join(", ")}`; wall.append(title);
     seafront.append(wall);
+    for(const section of barrakaSections()) seafront.append(el("path",{d:path([section.left,section.right,section.endRight,section.endLeft]),fill:"#80917b",stroke:"#635a47","stroke-width":.1}));
   }
   world.append(seafront);
 
@@ -290,11 +329,11 @@ async function boot(): Promise<void> {
 
   // Garden walls and gates are generated by rule, not surveyed.
   const walls = el("g", {});
-  for (const [x, z] of skeleton.gardenWalls.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: "#8a8172", "stroke-width": 0.1 }));
-  for (const [x, z] of skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
+  for (const [x, z] of skeleton.gardenWalls.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: "#8a8172", "stroke-width": 0.1 }));
+  for (const [x, z] of skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
   // The south lawn's seaward wall and fence: one unbroken line, no gate.
   if (skeleton.seaWall) {
-    const line = (points: Vec2[]) => "M" + points.map((p) => `${p[0]} ${p[1]}`).join("L");
+    const line = (points: Vec2[]) => seaWallSegments(points, paseoWallCovers).map(([a, b]) => `M${a[0]} ${a[1]}L${b[0]} ${b[1]}`).join("");
     walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#26352c", "stroke-width": 0.9, "stroke-linejoin": "round" }));
     walls.append(el("path", { d: line(skeleton.seaWall.points), fill: "none", stroke: "#fff", "stroke-width": 0.45, "stroke-linejoin": "round" }));
   }

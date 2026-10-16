@@ -1,3 +1,4 @@
+import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
 import {surfaceTexture} from "./materials";
 import * as THREE from "three";
@@ -54,7 +55,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   for(const road of reference.roads) {
     if (!road.heights) {
       flat(ribbon(road.points,road.width+(road.surface==="terracotta"?0.12:0.35)),"#f4f0e5",0.25);
-      flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?tiles:undefined);
+      flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?(seawardRoadTexture(road)??tiles):undefined);
       continue;
     }
     // One quad per centreline segment preserves every change of slope.

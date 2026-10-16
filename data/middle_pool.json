@@ -29,9 +29,16 @@
     [-137.43, 98.93],
     [-136.39, 98.3],
     [-139.95, 90.42]
+   ],
+   [[-133.176, 100.568], [-137.625, 103.259], [-139.074, 100.863], [-134.624, 98.172]],
+   [
+    [-126.9452, 100.501],
+    [-124.7544, 104.0843],
+    [-127.6126, 105.8317],
+    [-129.8034, 102.2484]
    ]
   ],
-  "trust": "Generated garden walls, gates, props and scattered planting are suppressed inside these two bands; only the traced gateway and planter are built there."
+  "trust": "Generated garden walls, gates, props and scattered planting are suppressed inside these reviewed bands; only the traced gateways, southwest access and planter are built there."
  },
  "gateway": {
   "id": "middle-pool-east-gateway",

@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "19bb2817aaab3afd9391eef3815046e620167d56e63d8a7cfe298830a5c04541",
+ "inputDigest": "b802a177bf232c7b38121a8fa192b1c213f1a4220f5bcdb5d3c9ab85d3ca6939",
  "summary": {
   "unplaced": 1,
-  "suggested": 76,
-  "needs-review": 68,
+  "suggested": 77,
+  "needs-review": 67,
   "photos": 145,
-  "features": 294,
-  "photosCitedByModel": 43,
-  "modelFeaturesWithPhotoCitations": 36
+  "features": 335,
+  "photosCitedByModel": 78,
+  "modelFeaturesWithPhotoCitations": 78
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1789,7 +1789,13 @@
    "id": "area:beach",
    "name": "Villacana beach",
    "kind": "area",
-   "source": "OSM/map"
+   "source": "OSM/map with independent aerial shoreline review",
+   "evidence": [
+    "IMG_2285.jpg",
+    "IMG_2298.jpg",
+    "IMG_2299.jpg",
+    "IMG_2300.jpg"
+   ]
   },
   {
    "id": "area:sea",
@@ -1837,6 +1843,49 @@
    ]
   },
   {
+   "id": "south_pool.json:south-pool-seaward-level",
+   "name": "South lawn above the paseo",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2349.jpg",
+    "IMG_2188.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "name": "Cervantes north · east visible patio partition",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "name": "Cervantes north · middle visible patio partition",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "name": "Cervantes north · west visible patio partition",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2368.jpg",
+    "IMG_2369.jpg",
+    "IMG_2359.jpg"
+   ]
+  },
+  {
    "id": "frontage_divisions.json:cervantes-elena-lawn-1",
    "name": "Cervantes / Elena · front lawn 1",
    "kind": "reference feature",
@@ -1844,7 +1893,11 @@
    "evidence": [
     "IMG_2260.jpg",
     "IMG_2261.jpg",
-    "IMG_2263.jpg"
+    "IMG_2263.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
    ]
   },
   {
@@ -1854,7 +1907,11 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2260.jpg",
-    "IMG_2261.jpg"
+    "IMG_2261.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
    ]
   },
   {
@@ -1890,6 +1947,20 @@
   {
    "id": "cervantes_patio_walls.json:cervantes-patio-north-1",
    "name": "Cervantes · north patio wall 1",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "name": "Cervantes · north patio wall east of garden door",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
@@ -1941,6 +2012,16 @@
     "IMG_2273.jpg",
     "IMG_2274.jpg",
     "IMG_2275.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "name": "Cervantes east · white plumbago kerb",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2356.jpg",
+    "IMG_2360.jpg"
    ]
   },
   {
@@ -2054,6 +2135,125 @@
    ]
   },
   {
+   "id": "paseo_details.json:paseo-west-hedge",
+   "name": "Paseo · west clipped hedge",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-pool-hedge",
+   "name": "Paseo · south-pool clipped hedge",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2349.jpg",
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-west-windbreak",
+   "name": "Paseo · west green windbreak",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-east-windbreak",
+   "name": "Paseo · east green windbreak",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-1",
+   "name": "Paseo · white lamp 1",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-2",
+   "name": "Paseo · white lamp 2",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-3",
+   "name": "Paseo · white lamp 3",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-white-lamp-4",
+   "name": "Paseo · white lamp 4",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2350.jpg"
+   ]
+  },
+  {
+   "id": "paseo_details.json:paseo-service-cover",
+   "name": "Paseo · flush square service cover",
+   "kind": "reference feature",
+   "source": "bounded photo interpretation; wall-relative positions estimated",
+   "evidence": [
+    "IMG_2354.jpg"
+   ]
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-1",
+   "name": "Cervantes / Elena · clipped lawn tree 1",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-2",
+   "name": "Cervantes / Elena · clipped lawn tree 2",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
+  },
+  {
+   "id": "junction_lawns.json:junction-pollarded-3",
+   "name": "Cervantes / Elena · clipped lawn tree 3",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ]
+  },
+  {
    "id": "elena_north.json:elena-north-gateway",
    "name": "Elena north · arched gateway to the north pool lawn",
    "kind": "reference feature",
@@ -2070,6 +2270,27 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2363.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-garden-wall",
+   "name": "Elena north · garden wall and closed timber door",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-window-return",
+   "name": "Elena north · barred window wall at the north end of the bed",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
    ]
   },
   {
@@ -2137,6 +2358,77 @@
    ]
   },
   {
+   "id": "elena_north.json:elena-north-garden-door-path",
+   "name": "Elena north · paved approach between the hedged beds",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "name": "Middle pool · south-west gateway above the stone steps",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2333.jpg",
+    "IMG_2332.jpg"
+   ]
+  },
+  {
+   "id": "seaward_paving.json:teodoro-octagonal-paving",
+   "name": "teodoro octagonal paving",
+   "kind": "reference feature",
+   "source": "photo-supported material; estimated extent",
+   "evidence": [
+    "IMG_2235.jpg",
+    "IMG_2237.jpg",
+    "IMG_2239.jpg"
+   ]
+  },
+  {
+   "id": "seaward_paving.json:silvia-patterned-floor",
+   "name": "silvia patterned floor",
+   "kind": "reference feature",
+   "source": "photo-supported material; estimated extent",
+   "evidence": [
+    "IMG_2190.jpg"
+   ]
+  },
+  {
+   "id": "seaward_paving.json:seaward-patterned-floor",
+   "name": "seaward patterned floor",
+   "kind": "reference feature",
+   "source": "photo-supported material; estimated extent",
+   "evidence": [
+    "IMG_2185.jpg"
+   ]
+  },
+  {
+   "id": "elena_gated_entry.json:elena-gated-entry",
+   "name": "Elena · private tiled entry west of covered walkway",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2361.jpg",
+    "IMG_2202.jpg",
+    "IMG_2203.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "name": "Middle pool · south double iron gate, curved head and tiled planter",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2335.jpg"
+   ]
+  },
+  {
    "id": "middle_pool.json:middle-pool-east-gateway",
    "name": "Middle pool · east gateway from Calle Eva",
    "kind": "reference feature",
@@ -2156,6 +2448,154 @@
     "IMG_2333.jpg",
     "IMG_2331.jpg",
     "IMG_2245.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_road.json:picasso-utility-front",
+   "name": "picasso utility front",
+   "kind": "reference feature",
+   "source": "bounded single-photo estimate",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_road.json:picasso-boundary-wall",
+   "name": "picasso boundary wall",
+   "kind": "reference feature",
+   "source": "bounded single-photo estimate",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "picasso_service_road.json:picasso-stone-plinth",
+   "name": "picasso stone plinth",
+   "kind": "reference feature",
+   "source": "bounded single-photo estimate",
+   "evidence": [
+    "IMG_2345.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "name": "Middle pool · curved north end of west planter",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2331.jpg",
+    "IMG_2332.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-door-wall",
+   "name": "Middle pool · bounded garden wall with brown door",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2332.jpg",
+    "IMG_2195.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-pergola",
+   "name": "Middle pool · open north-west pergola entrance",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2332.jpg",
+    "IMG_2195.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_north.json:middle-pool-north-white-steps",
+   "name": "Middle pool · north planter side steps",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2331.jpg",
+    "IMG_2332.jpg"
+   ]
+  },
+  {
+   "id": "eva_walled_lawn.json:eva-walled-lawn",
+   "name": "Calle Eva · walled lawn and espalier corner",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2339.jpg",
+    "IMG_2336.jpg",
+    "IMG_2337.jpg",
+    "IMG_2338.jpg"
+   ]
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-boardwalk",
+   "name": "Barraka weathered timber boardwalk",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg",
+    "IMG_2223.jpg",
+    "IMG_2225.jpg"
+   ]
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-sign-planter",
+   "name": "BARRAKA BEACH two-tier white planted sign",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ]
+  },
+  {
+   "id": "barraka_boardwalk.json:barraka-beach-seating",
+   "name": "Thatched parasols and wooden cream-cushion loungers",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2225.jpg",
+    "IMG_2347.jpg",
+    "IMG_2223.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-garden-door",
+   "name": "Cervantes junction · raised garden door and private patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2287.jpg",
+    "IMG_2196.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "name": "cervantes-junction-north-patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2359.jpg",
+    "IMG_2369.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "name": "cervantes-junction-north-bed",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2196.jpg",
+    "IMG_2355.jpg"
    ]
   },
   {
@@ -2842,7 +3282,7 @@
    "kind": "photo",
    "name": "Beach: resort and restaurant frontage",
    "file": "IMG_2285.jpg",
-   "status": "needs-review"
+   "status": "suggested"
   },
   {
    "id": "photo:IMG_2286.jpg",
@@ -3311,6 +3751,12 @@
    "angleOffset": 14.0
   },
   {
+   "from": "photo:IMG_2185.jpg",
+   "to": "seaward_paving.json:seaward-patterned-floor",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2186.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -3347,6 +3793,12 @@
    "to": "street:silvia-south",
    "relation": "camera-nearby",
    "gap": 4.6
+  },
+  {
+   "from": "photo:IMG_2188.jpg",
+   "to": "south_pool.json:south-pool-seaward-level",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2189.jpg",
@@ -3386,6 +3838,12 @@
    "relation": "possibly-in-view",
    "distance": 34.6,
    "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2190.jpg",
+   "to": "seaward_paving.json:silvia-patterned-floor",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2191.jpg",
@@ -3492,6 +3950,18 @@
    "angleOffset": 28.3
   },
   {
+   "from": "photo:IMG_2195.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-door-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2196.jpg",
    "to": "street:elena-south",
    "relation": "camera-nearby",
@@ -3523,6 +3993,18 @@
    "relation": "possibly-in-view",
    "distance": 34.3,
    "angleOffset": 29.2
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2197.jpg",
@@ -3642,7 +4124,19 @@
   },
   {
    "from": "photo:IMG_2199.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
    "to": "elena_north.json:elena-north-tree-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -3674,6 +4168,18 @@
   },
   {
    "from": "photo:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-window-return",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
    "to": "elena_north.json:elena-north-tree-bed-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -3681,6 +4187,12 @@
   {
    "from": "photo:IMG_2200.jpg",
    "to": "elena_north.json:elena-north-tree-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -3713,6 +4225,18 @@
   },
   {
    "from": "photo:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-garden-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-window-return",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
    "to": "elena_north.json:elena-north-tree-bed-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -3726,6 +4250,12 @@
   {
    "from": "photo:IMG_2201.jpg",
    "to": "elena_north.json:elena-north-planter-box-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -3775,6 +4305,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2202.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2203.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -3797,6 +4333,12 @@
   {
    "from": "photo:IMG_2203.jpg",
    "to": "building:6265201UF1366N_part5",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2203.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -4072,6 +4614,18 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2224.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -4082,6 +4636,18 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2225.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2225.jpg",
+   "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2226.jpg",
@@ -4290,6 +4856,12 @@
    "angleOffset": 30.6
   },
   {
+   "from": "photo:IMG_2235.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2236.jpg",
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
@@ -4344,6 +4916,12 @@
    "angleOffset": 19.5
   },
   {
+   "from": "photo:IMG_2237.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2238.jpg",
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
@@ -4396,6 +4974,12 @@
    "relation": "possibly-in-view",
    "distance": 31.3,
    "angleOffset": 1.0
+  },
+  {
+   "from": "photo:IMG_2239.jpg",
+   "to": "seaward_paving.json:teodoro-octagonal-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2240.jpg",
@@ -4828,6 +5412,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2260.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2261.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -4954,6 +5550,12 @@
   },
   {
    "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5011,6 +5613,12 @@
   },
   {
    "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5056,6 +5664,12 @@
   {
    "from": "photo:IMG_2265.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -5329,6 +5943,12 @@
   },
   {
    "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5379,6 +5999,12 @@
   },
   {
    "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-1",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5404,6 +6030,12 @@
   {
    "from": "photo:IMG_2275.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-north-east",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -5626,9 +6258,15 @@
   },
   {
    "from": "photo:IMG_2285.jpg",
-   "to": "area:sea",
+   "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2285.jpg",
+   "to": "area:beach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2286.jpg",
@@ -5707,6 +6345,12 @@
    "relation": "possibly-in-view",
    "distance": 34.3,
    "angleOffset": 28.2
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2288.jpg",
@@ -6009,6 +6653,12 @@
   },
   {
    "from": "photo:IMG_2298.jpg",
+   "to": "area:beach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2298.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -6018,6 +6668,12 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2299.jpg",
+   "to": "area:beach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2299.jpg",
@@ -6030,6 +6686,12 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2300.jpg",
+   "to": "area:beach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2327.jpg",
@@ -6071,6 +6733,18 @@
    "angleOffset": 29.1
   },
   {
+   "from": "photo:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2328.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6110,6 +6784,18 @@
    "angleOffset": 31.0
   },
   {
+   "from": "photo:IMG_2328.jpg",
+   "to": "cervantes_garden_door.json:cervantes-garden-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2329.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6143,6 +6829,24 @@
    "angleOffset": 20.6
   },
   {
+   "from": "photo:IMG_2329.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2329.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2330.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -6172,27 +6876,21 @@
    "from": "photo:IMG_2331.jpg",
    "to": "street:elena-south",
    "relation": "camera-nearby",
-   "gap": 5.7
-  },
-  {
-   "from": "photo:IMG_2331.jpg",
-   "to": "street:eva",
-   "relation": "camera-nearby",
-   "gap": 17.9
-  },
-  {
-   "from": "photo:IMG_2331.jpg",
-   "to": "building:6264501UF1366S_part2",
-   "relation": "possibly-in-view",
-   "distance": 30.4,
-   "angleOffset": 28.3
+   "gap": 0
   },
   {
    "from": "photo:IMG_2331.jpg",
    "to": "building:6264401UF1366S_part2",
    "relation": "possibly-in-view",
-   "distance": 43.2,
-   "angleOffset": 27.1
+   "distance": 37.1,
+   "angleOffset": 19.6
+  },
+  {
+   "from": "photo:IMG_2331.jpg",
+   "to": "building:6264501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 43.5,
+   "angleOffset": 12.4
   },
   {
    "from": "photo:IMG_2331.jpg",
@@ -6201,26 +6899,76 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2331.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2331.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-white-steps",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2332.jpg",
    "to": "street:elena-south",
    "relation": "camera-nearby",
-   "gap": 1.2
+   "gap": 0.6
   },
   {
    "from": "photo:IMG_2332.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
-   "gap": 7.7
+   "gap": 3.6
   },
   {
    "from": "photo:IMG_2332.jpg",
-   "to": "street:silvia-north",
-   "relation": "camera-nearby",
-   "gap": 12.0
+   "to": "building:6265801UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 30.1,
+   "angleOffset": 28.8
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 39.3,
+   "angleOffset": 34.6
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2332.jpg",
    "to": "middle_pool.json:middle-pool-west-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-planter-cap",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-door-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool_north.json:middle-pool-north-white-steps",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -6242,6 +6990,12 @@
    "relation": "possibly-in-view",
    "distance": 29.7,
    "angleOffset": 21.3
+  },
+  {
+   "from": "photo:IMG_2333.jpg",
+   "to": "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2333.jpg",
@@ -6289,6 +7043,12 @@
    "angleOffset": 31.7
   },
   {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2335.jpg",
    "to": "street:silvia-north",
    "relation": "camera-nearby",
@@ -6313,6 +7073,12 @@
    "relation": "possibly-in-view",
    "distance": 29.2,
    "angleOffset": 22.5
+  },
+  {
+   "from": "photo:IMG_2335.jpg",
+   "to": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2336.jpg",
@@ -6342,6 +7108,12 @@
    "angleOffset": 14.9
   },
   {
+   "from": "photo:IMG_2336.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2337.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -6369,6 +7141,12 @@
    "angleOffset": 11.1
   },
   {
+   "from": "photo:IMG_2337.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2338.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -6389,10 +7167,22 @@
    "angleOffset": 1.2
   },
   {
+   "from": "photo:IMG_2338.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2339.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
    "gap": 2.6
+  },
+  {
+   "from": "photo:IMG_2339.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2340.jpg",
@@ -6502,10 +7292,46 @@
    "angleOffset": 21.7
   },
   {
+   "from": "photo:IMG_2342.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2342.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2345.jpg",
    "to": "street:picasso",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_road.json:picasso-utility-front",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_road.json:picasso-boundary-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2345.jpg",
+   "to": "picasso_service_road.json:picasso-stone-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2346.jpg",
@@ -6520,6 +7346,18 @@
    "gap": 3.3
   },
   {
+   "from": "photo:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-sign-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2347.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -6532,10 +7370,28 @@
    "gap": 2.6
   },
   {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-sign-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2349.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 2.2
+   "gap": 0.8
   },
   {
    "from": "photo:IMG_2349.jpg",
@@ -6551,10 +7407,22 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2349.jpg",
+   "to": "south_pool.json:south-pool-seaward-level",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2349.jpg",
+   "to": "paseo_details.json:paseo-pool-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2350.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 2.0
+   "gap": 0.6
   },
   {
    "from": "photo:IMG_2350.jpg",
@@ -6576,6 +7444,30 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-pool-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-east-windbreak",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2351.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -6606,10 +7498,34 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-west-windbreak",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2354.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 5.3
+   "gap": 3.4
   },
   {
    "from": "photo:IMG_2354.jpg",
@@ -6620,6 +7536,30 @@
   {
    "from": "photo:IMG_2354.jpg",
    "to": "paseo_wall.json:paseo-timber-edge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "paseo_details.json:paseo-service-cover",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -6655,6 +7595,12 @@
    "relation": "possibly-in-view",
    "distance": 37.1,
    "angleOffset": 4.3
+  },
+  {
+   "from": "photo:IMG_2355.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2356.jpg",
@@ -6696,11 +7642,53 @@
    "angleOffset": 9.5
   },
   {
+   "from": "photo:IMG_2356.jpg",
+   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2358.jpg",
    "to": "building:6265801UF1366N_part1",
    "relation": "possibly-in-view",
    "distance": 23.2,
    "angleOffset": 31.4
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2359.jpg",
@@ -6724,6 +7712,30 @@
    "angleOffset": 30.8
   },
   {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2359.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2360.jpg",
    "to": "building:6265401UF1366N_part2",
    "relation": "possibly-in-view",
@@ -6736,6 +7748,12 @@
    "relation": "possibly-in-view",
    "distance": 35.2,
    "angleOffset": 32.1
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2361.jpg",
@@ -6757,6 +7775,12 @@
    "relation": "possibly-in-view",
    "distance": 34.1,
    "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2361.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2362.jpg",
@@ -6900,6 +7924,42 @@
    "angleOffset": 21.0
   },
   {
+   "from": "photo:IMG_2367.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "frontage_divisions.json:cervantes-elena-lawn-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "junction_lawns.json:junction-pollarded-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "junction_lawns.json:junction-pollarded-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2367.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2368.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -6927,6 +7987,24 @@
    "angleOffset": 23.7
   },
   {
+   "from": "photo:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2368.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2369.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -6952,6 +8030,30 @@
    "relation": "possibly-in-view",
    "distance": 40.0,
    "angleOffset": 27.7
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_north_patios.json:cervantes-north-partition-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2369.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   }
  ]
 }

@@ -1,0 +1,15 @@
+{
+  "id": "middle-pool-sw-gateway",
+  "name": "Middle pool · south-west gateway above the stone steps",
+  "frame": "middle-pool-sw-steps",
+  "gatewayAlong": 3.3,
+  "opening": 1.7,
+  "pierWidth": 0.28,
+  "height": 2.1,
+  "headHeight": 0.22,
+  "evidence": [
+    "IMG_2333.jpg",
+    "IMG_2332.jpg"
+  ],
+  "trust": "IMG_2333 shows a white gateway with two black iron leaves standing open along the lane edges, on a short tiled landing beyond the three stone steps. Placed along the steps' frame (data/middle_pool_steps.json, Calle Eva leaving the courtyard), about 2.3 m past the top riser and beyond the top of the ramp, so it stands on the upper (Dalí-side) level. Pier size, clear height and the landing length are estimated from tiles; no garden walls are inferred beyond the piers."
+}

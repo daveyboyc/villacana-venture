@@ -12,7 +12,8 @@
     "radius": 30
    },
    "docs": [
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/NORTH_POOL_REVIEW.md"
    ],
    "data": [
     "data/objects.json",
@@ -25,7 +26,8 @@
    "notes": [
     "Dave (2026-10-11): the lawn is bigger than the first pass showed, and the houses have front porches.",
     "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
-    "Best single reference: villacana-reference/photos/07 (whole courtyard looking north)."
+    "Best single reference: villacana-reference/photos/07 (whole courtyard looking north).",
+    "Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate."
    ]
   },
   {
@@ -40,17 +42,28 @@
    },
    "docs": [
     "docs/MIDDLE_POOL.md",
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/MIDDLE_POOL_SOUTH_GATE.md",
+    "docs/MIDDLE_POOL_SW_GATEWAY.md"
    ],
    "data": [
     "data/middle_pool.json",
     "data/objects.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/middle_pool_south_gate.json",
+    "data/middle_pool_north.json",
+    "data/middle_pool_steps.json",
+    "data/middle_pool_sw_gateway.json",
+    "data/terrain.json"
    ],
    "src": [
     "src/middle-pool.ts",
     "src/world.ts",
-    "src/water.ts"
+    "src/water.ts",
+    "src/middle-pool-south-gate.ts",
+    "src/middle-pool-north.ts",
+    "src/middle-pool-sw-gateway.ts",
+    "src/ramp-steps.ts"
    ],
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
@@ -58,7 +71,10 @@
     "IMG_2340 (outside) and IMG_2244 (inside) show the east gateway from Calle Eva: white piers, curved coping, black iron gate, Comunidad Villacana notice. IMG_2332 shows a raised white planter wall (about 0.8 m) with a hedge along the west path.",
     "IMG_2333: three stone steps climb a tiled path to a gate on the south-west side. IMG_2334: black iron double gate under a curved pergola frame on the south side, raised planter beside it. IMG_2335: blue tile panel on a raised planter. IMG_2331 (±17 m) and IMG_2341 (±47 m) have poor GPS.",
     "Built 2026-10-14 (docs/MIDDLE_POOL.md): the east gateway from Calle Eva (piers, flat head, curved coping, open iron leaf, notices) and the raised west planter with its hedge, which turns the south-west corner beside the IMG_2333 steps.",
-    "Not modelled yet: the planter's curved north end and the white steps by the north-west entrance (IMG_2331), the wall with the brown door and the pergola entrance north of the west path (IMG_2332, IMG_2195), the south-west steps and gateway (IMG_2333), the south pergola gate (IMG_2334)."
+    "Issue #39: separate level south entrance from IMG_2334/2335: two open iron leaves, shallow curved white head with metal pergola ribs, crazy paving and flush drain, raised white planter flanking an inset step and a schematic blue/yellow border round a white tile panel. Placed across Calle Silvia near its courtyard end; positions/ends (about 1–2 m) and dimensions are estimates. No south-lane grade change is inferred; the southwest steps and western 0.5 m rise remain separate.",
+    "Issue 48 source pass: a bounded curved north planter termination, three white side steps, short brown-door wall and open pergola are modelled from IMG_2331/2332/2195; exact extents and dimensions remain estimates. IMG_2331/2332 cameras are corrected independently from aerial path/pool anchors, original GPS retained. Browser and matched-camera review pending; south-west steps/gateway and south gate are separate tasks.",
+    "Issue 48 follows the existing continuous western +0.5 m terrain rise for the north steps, using tread-minus-siteY offsets in the shared ramp-steps module; no additional isolated plateau. Pool, deck and west path remain at 0 m. Flight dimensions and bounded wall extents remain estimated pending browser/image review.",
+    "Issue #31 (PRs #53 and #60): IMG_2333 shows three rough stone risers on the planter side of Calle Eva, a tiled ramp beside them, a short landing and a white gateway with two open iron leaves. The steps and the 0.5 m rise to the Dalí level are in data/middle_pool_steps.json and data/terrain.json; the gateway is in data/middle_pool_sw_gateway.json. Positions and sizes are estimated from tiles."
    ]
   },
   {
@@ -83,6 +99,9 @@
    ],
    "src": [
     "src/south-pool.ts"
+   ],
+   "notes": [
+    "IMG_2349 and IMG_2188: the south lawn and level pool stand about 1 m above the paseo behind the sandstone wall and mesh fence. Existing paseo profile supplies that difference; south pool stays at datum 0. The legacy seaward white wall is omitted wherever sandstone replaces it in map, 3D and collision. Short end returns remain approximate, not photographed endpoints."
    ]
   },
   {
@@ -156,9 +175,12 @@
     "IMG_2254 shows the sign CALLE ELENA 18-30.",
     "Built 2026-10-14 (docs/ELENA_NORTH.md): arched gateway to the north pool lawn, east patio wall, west planting strip, magnolia bed, two hedged beds with pollarded trees, two planter boxes, and the three steps beside the Cervantes ramp.",
     "The Cervantes/Elena rise is 0.5 m over about 3 m (steps beside a ramp, IMG_2286), not 7 m.",
-    "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds, the gated entry west of the covered walkway (IMG_2361).",
+    "Not modelled yet: the east-side patios beyond the beds.",
     "IMG_2286 GPS is ±14 m: do not place geometry from its pin alone.",
-    "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios."
+    "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios.",
+    "Issue #34: the short paved spur between the two hedged beds now reaches a closed timber door in a finite white garden wall; the barred window is in a short transverse return at the north end of the planted bed (IMG_2199-2201). Extents against existing bed backs and heights are estimated; no unseen patio enclosure or level change is inferred.",
+    "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.",
+    "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced."
    ]
   },
   {
@@ -175,6 +197,7 @@
     "docs/STREET_LAYOUT.md",
     "docs/FRONTAGE_DIVISIONS.md",
     "docs/ELENA_NORTH.md",
+    "docs/CERVANTES_NORTH_PATIOS.md",
     "docs/LEVELS.md",
     "docs/CERVANTES_DOOR_STEPS_REVIEW.md"
    ],
@@ -185,20 +208,30 @@
     "data/passages.json",
     "data/frontage_divisions.json",
     "data/cervantes_elena_steps.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/cervantes_garden_door.json",
+    "data/cervantes_north_patios.json",
+    "data/junction_lawns.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
     "src/dali-threshold.ts",
     "src/frontages.ts",
-    "src/ramp-steps.ts"
+    "src/ramp-steps.ts",
+    "src/cervantes-garden-door.ts",
+    "src/cervantes-north-patios.ts",
+    "src/junction-lawns.ts"
    ],
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
     "At Elena the lane is split: smooth ramp on the south half, three steps on the north half, built 2026-10-14 (docs/ELENA_NORTH.md). The rise there is 0.5 m over about 3 m.",
     "IMG_2288 shows CALLE MIGUEL inside a passage; reading it as Miguel de Cervantes is interpretation.",
     "IMG_2327: two red-tread steps up to a door just west of the Elena junction. IMG_2356: plumbago hedge and white kerb wall on Cervantes east of Elena.",
-    "Issue #33 review (2026-10-15): IMG_2327/2328 show two door steps immediately downhill of the ramp drain, distinct from the three ramp steps. Door placement remains blocked: the nearest modeled north solid facade is 6.17 m from the drain and the roof/aerial views do not uniquely locate this doorway. Identify the house/corner before changing geometry; see docs/CERVANTES_DOOR_STEPS_REVIEW.md."
+    "IMG_2368/2369/2359: three partial transverse patio partitions north of Cervantes traced with Details-only climbers/shrubs (docs/CERVANTES_NORTH_PATIOS.md). Concealed joins and complete enclosure boundaries remain unasserted; plan endpoints estimated to about 1–2 m.",
+    "IMG_2356 north-side white plumbago kerb built as a bounded 8 m test east of Elena (issue #43). Wall/hedge relationship photo-supported; exact extent, height and alignment estimated. IMG_2360 gives roof context, not a measured boundary. Further eastern frontage remains unasserted.",
+    "Issue #33 review (2026-10-15): IMG_2327/2328 show two door steps immediately downhill of the ramp drain, distinct from the three ramp steps. Historical blocker (resolved by the later garden-wall survey): the nearest modeled north solid facade is 6.17 m from the drain and the roof/aerial views do not uniquely locate this doorway. The assumed house-facade requirement was incorrect; see docs/CERVANTES_DOOR_STEPS_REVIEW.md.",
+    "Issue #33 implementation after the levels survey: the brown door is in a garden wall at the lane edge, not the house facade, resolving the historical 6.17 m blocker. A closed door with curved coping, two .225 m red-tread steps, bounded private patio at +.45 m and west bed at +.425 m are modeled; full patio extent and position remain estimated. Browser/camera acceptance pending.",
+    "2026-10-15 (#45): IMG_2329/2342 show the same near-corner pollarded lawn tree; IMG_2358/2367 and IMG_2260 show three clipped trees in sequence beside the lane, two in the nearer lawn and one beyond the door approach. Details positions/heights estimated; the existing lawn/white-kerb rings remain approximate because the oblique roof views do not calibrate their metric extents."
    ]
   },
   {
@@ -250,9 +283,15 @@
     "docs/STREET_LAYOUT.md"
    ],
    "data": [
-    "data/street_layout.json"
+    "data/street_layout.json",
+    "data/picasso_service_road.json"
    ],
-   "src": []
+   "src": [
+    "src/picasso-service-road.ts"
+   ],
+   "notes": [
+    "IMG_2345 supports bounded utility fronts/brown doors, boundary wall, stone plinth/railings, short ramp and Details-only bins. Frontage offsets and dimensions remain estimated at the existing Picasso road; registry houses, asphalt route and site levels are retained. Ramp is solid inaccessible private-frontage geometry; no new walkable elevated platform or unseen wall continuation is asserted."
+   ]
   },
   {
    "id": "north-lanes",
@@ -286,18 +325,22 @@
    },
    "docs": [
     "docs/STREET_LAYOUT.md",
-    "docs/MIDDLE_POOL.md"
+    "docs/MIDDLE_POOL.md",
+    "docs/EVA_WALLED_LAWN.md"
    ],
    "data": [
     "data/street_layout.json",
-    "data/middle_pool.json"
+    "data/middle_pool.json",
+    "data/eva_walled_lawn.json"
    ],
    "src": [
-    "src/middle-pool.ts"
+    "src/middle-pool.ts",
+    "src/eva-walled-lawn.ts"
    ],
    "notes": [
     "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.",
-    "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m."
+    "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m.",
+    "IMG_2339 corner reuses the unchanged middle gateway NW wing and adds only a 4.2 m return, with a bounded lawn. Two wall-aligned single planes replace the crossed bougainvillea there; bollard, clipped hedge, nearby rounded tree and lantern are Details-only and route guarded. Lengths, heights and adjacent lawn extent remain estimates; no surveyed enclosure closure or new level change is asserted."
    ]
   },
   {
@@ -318,9 +361,15 @@
     "docs/STREET_LAYOUT.md"
    ],
    "data": [
-    "data/street_layout.json"
+    "data/street_layout.json",
+    "data/seaward_paving.json"
    ],
-   "src": []
+   "src": [
+    "src/seaward-paving.ts"
+   ],
+   "notes": [
+    "IMG_2235/2237/2239 support octagonal terracotta with diamond infills on the photographed Teodoro Rojo run; IMG_2240 remains square. IMG_2185/2190 support cream/blue corner inserts in covered-floor tiles. Material masks use existing ground/registry strips; tile dimensions and passage extents remain estimates, and solid registry strips may still obscure the floor until separately traced as passages. No levels or geometry were changed."
+   ]
   },
   {
    "id": "barraka-beach",
@@ -346,8 +395,10 @@
    ],
    "notes": [
     "The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).",
-    "IMG_2285 was taken on the beach but its GPS falls in the map's sea polygon: the shoreline outline needs checking before it is changed.",
-    "IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand."
+    "IMG_2346, IMG_2347: BARRAKA BEACH painted planter, thatched parasols and a timber boardwalk across the sand.",
+    "IMG_2346/2347 show narrow weathered green timber access, a white two-tier planted BARRAKA BEACH sign on its left looking seaward, and straw parasols. Added as ground-following planks plus guarded Details furniture; dimensions and seasonal furniture positions are estimates. IMG_2225 wooden cream-cushion beds differ from the blue/white plastic loungers west of the aisle in IMG_2223; those are not asserted as one type. No coast, paseo or registry footprint changes.",
+    "Boardwalk aerial anchor is the visible southeast-roof-corner run [30,121] to [42,135], not the IMG_2347 camera pin inside registry 6465801UF1366N_part5 about 25 m inland. Photo pair from the uncorrected pin is obstructed by that building. Hidden paseo join and exact camera correction remain unresolved; no cross-house connector is invented.",
+    "Issue #32: the existing georeferenced Esri aerial independently places the wet shoreline band seaward of the old OSM coast by up to about 30 m near Barraka. data/shoreline_trace.json records pixel control points; the local beach/sea edge now shares that trace. IMG_2285 is about 16.5 m inland of it, without changing its GPS. Estimated 3–5 m trace/registration precision; acquisition date, tide and seasonal changes remain unknown."
    ]
   },
   {
@@ -364,17 +415,22 @@
    ],
    "data": [
     "data/coastal_gate.json",
-    "data/paseo_wall.json"
+    "data/paseo_wall.json",
+    "data/paseo_details.json"
    ],
    "src": [
     "src/seafront.ts",
     "src/seaside.ts",
-    "src/paseo-wall.ts"
+    "src/paseo-wall.ts",
+    "src/paseo-details.ts"
    ],
    "notes": [
     "IMG_2350: the paseo is pink stamped concrete with a timber edge onto the beach; a yellow sandstone retaining wall with a green mesh fence on top holds the seafront houses above it. Built 14 October (data/paseo_wall.json, docs/SEAFRONT.md): about 134 m from the Dalí apron to the end of Calle Guillermo, about 1 m high by the south lawn (the paseo there was lowered from street level to match), lower towards Dalí.",
-    "Open: towards its east end the model makes the wall up to 3 m (the paseo falls to big-pool level there), but IMG_2227 from the beach suggests it stays about 1 m. A photo from the paseo near Calle Guillermo would settle it. The mapped (OSM) paseo line also sits up to 3 m seaward of the wall in places, leaving a sand strip the photos do not show.",
-    "IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349)."
+    "Open: towards its east end the model makes the wall up to 3 m (the paseo falls to big-pool level there), but IMG_2227 from the beach suggests it stays about 1 m. A photo from the paseo near Calle Guillermo would settle it.",
+    "IMG_2349, IMG_2352 and IMG_2354 show the same sandstone retaining wall and green mesh fence running along the paseo, including right below the south pool (IMG_2349).",
+    "Issue #35: paseo centreline generated 1.5 m seaward of the aerial/photo-backed sandstone wall, 3 m approximate width; pavement now meets the face as IMG_2350/IMG_2352/IMG_2354 show. Southwest former hold-in removed against aerial; gate approach and Barraka boardwalk OSM joins retained. Plan accuracy about 1-2 m, not a survey. Eastern wall height (#40) and registry house obstruction (#41) remain unresolved; levels and footprints unchanged.",
+    "Issue #40 evidence review (15 October): IMG_2227/IMG_2226 from the beach and IMG_2350 looking east do not resolve whether the paseo rises or the gardens fall near Guillermo. The nominal 3 m east-end wall is a result of the approximate paseo profile against assumed inland ground, not a measured height. All levels retained, including Dave's main-pool drop; task remains open. See docs/PASEO_EAST_END_HEIGHT_REVIEW.md for the specific photo needed.",
+    "Issue #49: Details-only bounded clipped hedges behind mesh (IMG_2349/2352/2354), short green cloth runs (IMG_2350/2352), four photographed slim white lamps and a flush service-cover surface (IMG_2354). Positions/dimensions estimated relative to shared wall, not GPS subjects. Full visible-footprint route guard omits obstructing props rather than relocating them; lamp count/spacing beyond photographed spans remains unknown."
    ]
   },
   {

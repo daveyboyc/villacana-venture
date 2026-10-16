@@ -7,7 +7,8 @@ Task `seaward-lanes-paving` · area **Patricia, Silvia, Jorge, Teodoro Rojo and 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/seaward-lanes.md` and the contact sheet `villacana-reference/contact-sheets/seaward-lanes.jpg`
 - docs: `docs/STREET_LAYOUT.md`
-- data: `data/street_layout.json`
+- data: `data/street_layout.json`, `data/seaward_paving.json`
+- src: `src/seaward-paving.ts`
 
 ## Photos to build from
 

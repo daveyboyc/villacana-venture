@@ -1704,7 +1704,13 @@
   "useFor": [
    "planting",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -115.1,
+   78.5
+  ],
+  "subject": "White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard",
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location."
  },
  "IMG_2340.jpg": {
   "shows": [
@@ -1832,7 +1838,13 @@
   "useFor": [
    "layout",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -105.4,
+   75.3
+  ],
+  "subject": "Eva tiled lane beside lawns, clipped trees and dark lantern posts",
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location."
  },
  "IMG_2337.jpg": {
   "shows": [
@@ -1842,7 +1854,13 @@
   "useFor": [
    "layout",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -106.8,
+   73.7
+  ],
+  "subject": "Eva lawn beside clipped round tree and lantern post",
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location."
  },
  "IMG_2338.jpg": {
   "shows": [
@@ -1852,7 +1870,13 @@
   "useFor": [
    "planting",
    "facades"
-  ]
+  ],
+  "looksAt": [
+   -112.8,
+   74.7
+  ],
+  "subject": "Brown Eva frontage door with yellow-flowered shrub beside lawn",
+  "note": "Subject coordinate is an approximate photo-content interpretation, not a surveyed location."
  },
  "IMG_2341.jpg": {
   "shows": [

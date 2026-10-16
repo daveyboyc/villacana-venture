@@ -161,6 +161,30 @@
    "accuracy": 14.0
   }
  },
+ "IMG_2331.HEIC": {
+  "x": -137.2,
+  "z": 84.3,
+  "accuracy": 2.0,
+  "trust": "checked against photo content",
+  "locationBasis": "Camera placed at the north-west crazy-paving fork visible on the aerial, north-west of the registry middle-pool ring; the triangular lawn and west lobe lie south-east (EXIF heading 135). Independent anchors are the aerial path fork, pool ring and Calle Elena bend, not the planter being added. Approximate ±2 m.",
+  "gps": {
+   "x": -134.6,
+   "z": 76.7,
+   "accuracy": 17.3
+  }
+ },
+ "IMG_2332.HEIC": {
+  "x": -136.2,
+  "z": 95.8,
+  "accuracy": 2.0,
+  "trust": "checked against photo content",
+  "locationBasis": "Camera on the west crazy-paving band beside the south-west lobe of the registry middle-pool ring, looking NNW (EXIF 347) along the aerial path towards its north-west bend. The cream pool deck is immediately right and the existing hedge band left. Independent pool-ring/path anchors; estimated ±2 m, not a survey.",
+  "gps": {
+   "x": -135.1,
+   "z": 90.9,
+   "accuracy": 14.0
+  }
+ },
  "IMG_2189.HEIC": {
   "x": -114.9,
   "z": 126.2,

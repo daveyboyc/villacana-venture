@@ -1,0 +1,125 @@
+{
+ "origin": [
+  -13.66,
+  45.75
+ ],
+ "along": [
+  -0.562,
+  -0.827
+ ],
+ "left": [
+  -0.827,
+  0.562
+ ],
+ "evidence": [
+  "IMG_2345.jpg"
+ ],
+ "trust": "Existing asphalt road retained. GPS camera uncertainty ±5.5 m; single-view frontage extents are estimates.",
+ "features": [
+  {
+   "id": "picasso-utility-front",
+   "name": "picasso utility front",
+   "points": [
+    [
+     -18.887,
+     50.511
+    ],
+    [
+     -21.697,
+     46.376
+    ]
+   ],
+   "thickness": 0.18,
+   "height": 2.25,
+   "kind": "utility",
+   "evidence": [
+    "IMG_2345.jpg"
+   ],
+   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted."
+  },
+  {
+   "id": "picasso-boundary-wall",
+   "name": "picasso boundary wall",
+   "points": [
+    [
+     -23.383,
+     43.895
+    ],
+    [
+     -30.127,
+     33.971
+    ]
+   ],
+   "thickness": 0.2,
+   "height": 2.1,
+   "kind": "wall",
+   "evidence": [
+    "IMG_2345.jpg"
+   ],
+   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted."
+  },
+  {
+   "id": "picasso-stone-plinth",
+   "name": "picasso stone plinth",
+   "points": [
+    [
+     -13.955,
+     37.488
+    ],
+    [
+     -16.765,
+     33.353
+    ]
+   ],
+   "thickness": 0.16,
+   "height": 0.7,
+   "kind": "plinth",
+   "evidence": [
+    "IMG_2345.jpg"
+   ],
+   "trust": "Arrangement and materials visible in IMG_2345; bounded plan offsets and dimensions estimated from existing Picasso road and registry. No unseen continuation asserted."
+  }
+ ],
+ "ramp": {
+  "id": "picasso-ramp",
+  "ring": [
+   [
+    -13.501,
+    40.202
+   ],
+   [
+    -14.906,
+    38.134
+   ],
+   [
+    -14.245,
+    37.685
+   ],
+   [
+    -12.84,
+    39.752
+   ]
+  ],
+  "rise": 0.7,
+  "evidence": [
+   "IMG_2345.jpg"
+  ],
+  "trust": "Short private-frontage ramp form visible; width, rise, plan extent and alignment approximate. Solid inaccessible footprint; no walkable platform, terrain change or registry correction asserted."
+ },
+ "bins": [
+  {
+   "position": [
+    -18.12,
+    30.647
+   ],
+   "color": "#258d60"
+  },
+  {
+   "position": [
+    -19.244,
+    28.993
+   ],
+   "color": "#697570"
+  }
+ ]
+}
