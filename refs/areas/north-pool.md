@@ -9,10 +9,11 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 - Dave (2026-10-11): the lawn is bigger than the first pass showed, and the houses have front porches.
 - Skip the glass safety fence round the pools (Dave, 2026-10-11).
 - Best single reference: villacana-reference/photos/07 (whole courtyard looking north).
+- Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate.
 
 ## Read first
 
-- docs: `docs/LEVELS.md`
+- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`
 - data: `data/objects.json`, `data/levels_survey.json`
 - src: `src/world.ts`, `src/water.ts`
 - contact sheet: `villacana-reference/contact-sheets/north-pool.jpg` (thumbnails of everything below, numbered in this order)

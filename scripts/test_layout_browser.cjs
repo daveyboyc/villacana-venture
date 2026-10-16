@@ -40,7 +40,9 @@ const path = require("node:path");
       { makeSeaside },
       { elenaNorthRings, elenaNorthBeds, gatewayParts },
       { stepsGroundOffset },
+      { gardenDoor, gardenPoint, gardenDoorRings, gardenGroundOffset, addCervantesGardenDoor },
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
+      { middleSouthRings, middleSouthAt },
     ] = await Promise.all([
       import("/src/player.ts"),
       import("/src/geom.ts"),
@@ -53,7 +55,9 @@ const path = require("node:path");
       import("/src/seaside.ts"),
       import("/src/elena-north.ts"),
       import("/src/ramp-steps.ts"),
+      import("/src/cervantes-garden-door.ts"),
       import("/src/middle-pool.ts"),
+      import("/src/middle-pool-south-gate.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
@@ -65,8 +69,10 @@ const path = require("node:path");
         ),
         ...barrierRings(s.boundaryReference.barriers),
         ...cervantesPatioWallRings(),
+        ...gardenDoorRings(),
         ...elenaNorthRings(),
         ...middlePoolRings(),
+        ...middleSouthRings(),
         ...coastalWallRings(),
       ],
       Object.fromEntries(
@@ -75,6 +81,12 @@ const path = require("node:path");
         ),
       ),
     );
+    // Issue #43: the bounded east kerb is visible on the map and solid in the shared rings.
+    const eastHedge = await (await fetch("/data/cervantes_east_hedge.json")).json();
+    const eastKerb = eastHedge.walls[0], eastCentre = eastKerb.points[0].map((v, i) => (v + eastKerb.points[1][i]) / 2);
+    if (!document.querySelector(`[data-wall-id="${eastKerb.id}"]`)) throw Error("Cervantes east kerb missing from map");
+    const eastResolved = new Solids(cervantesPatioWallRings()).resolve(...eastCentre, .42);
+    if (Math.hypot(eastResolved.x-eastCentre[0],eastResolved.z-eastCentre[1])<.15) throw Error("Cervantes east kerb missing collision");
     let open = true;
     const sd = makeSeaside(s.seafront, s.viewRotation);
     const world = {
@@ -87,6 +99,7 @@ const path = require("node:path");
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
             stepsGroundOffset(x, z) +
+            gardenGroundOffset(x,z,s.boundaryReference) +
             poolGroundY(x, z) +
             referenceGroundHeight(s.boundaryReference, x, z),
       maxGroundStep: 0.45,
@@ -154,6 +167,27 @@ const path = require("node:path");
       if (Math.abs(player.y - rampTop) > 0.08) throw Error(flight.id + ": player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
     }
+    // Issue 39: the separate south entrance remains level and open in both directions.
+    walk([middleSouthAt(-2.8),middleSouthAt(1.8)]);
+    walk([middleSouthAt(1.8),middleSouthAt(-2.8)]);
+    if(Math.abs(world.groundHeight(...middleSouthAt(-2))-world.groundHeight(...middleSouthAt(1)))>.05)throw Error("South entrance gained an unsupported step");
+    // Private garden threshold: both visible treads equal the sampled player ground,
+    // and the photographed closed door stays solid. It is not a through-route.
+    {
+      const scene=new THREE.Scene();addCervantesGardenDoor(scene,s.boundaryReference);scene.updateMatrixWorld(true);
+      const ray=new THREE.Raycaster(),levels=[];
+      for(const b of [-gardenDoor.stepRun*1.5,-gardenDoor.stepRun*.65]){
+        const at=gardenPoint(0,b),ground=world.groundHeight(...at);levels.push(ground);
+        ray.set(new THREE.Vector3(at[0],5,at[1]),new THREE.Vector3(0,-1,0));
+        const hit=ray.intersectObjects(scene.children).find(h=>h.object.name.includes("-tread-"));
+        if(!hit||Math.abs(hit.point.y-ground)>.01)throw Error("Garden door visible tread/player ground disagree");
+      }
+      if(Math.abs(levels[1]-levels[0]-gardenDoor.rise/2)>.01)throw Error("Garden door should have two equal risers");
+      const doorSolids=new Solids(gardenDoorRings()),at=gardenPoint(0,0),out=doorSolids.resolve(...at,.42);
+      if(Math.hypot(out.x-at[0],out.z-at[1])<.4)throw Error("Closed garden door is not solid");
+      const patio=gardenPoint(0,1),foot=gardenPoint(0,-gardenDoor.stepRun*2-.1);
+      if(Math.abs(world.groundHeight(...patio)-world.groundHeight(...foot)-gardenDoor.rise)>.01)throw Error("Private patio is not level with garden door sill");
+    }
     // Elena north: through the arched gateway, and the raised beds keep the player out.
     {
       const gate = gatewayParts();
@@ -164,9 +198,22 @@ const path = require("node:path");
         if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.4) throw Error("Raised bed " + bed.id + " is not solid");
       }
     }
+    // Elena garden spur: enter between the beds, reach the door, then stop at it.
+    {
+      const { gardenPath: approach } = await (await fetch("/data/elena_north.json")).json();
+      const [a,b] = [approach.from_, approach.to], length = Math.hypot(b[0]-a[0], b[1]-a[1]);
+      const u = [(b[0]-a[0])/length, (b[1]-a[1])/length];
+      const near = [b[0]-u[0]*0.62, b[1]-u[1]*0.62];
+      walk([a,near]); walk([near,a]); walk([a,near]);
+      for(let i=0;i<240;i++) player.update(1/120,{...input,moveZ:1},world,Math.atan2(u[0],-u[1]));
+      const remaining = (b[0]-player.x)*u[0]+(b[1]-player.z)*u[1];
+      if(remaining<0.45 || remaining>0.7) throw Error("Elena closed garden door failed to stop player: " + remaining);
+      walk([[player.x,player.z],a]);
+    }
     // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
     {
-      const { paseoWallRings, paseoWallFace } = await import("/src/paseo-wall.ts");
+      const { paseoWallRings, paseoWallFace, paseoWallCovers, addPaseoWall } = await import("/src/paseo-wall.ts");
+      const { seaWallSegments, seaWallRings, addSeaWall } = await import("/src/south-pool.ts");
       const rings = paseoWallRings(), wallOnly = new Solids(rings);
       for (const ring of rings) {
         const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
@@ -177,10 +224,37 @@ const path = require("node:path");
       const across = (d) => world.groundHeight(fx + (gz - fz) / len * d, fz - (gx - fx) / len * d);
       const step = across(1.2) - across(-0.3);
       if (step < 0.8 || step > 1.3) throw Error("Paseo wall does not stand at the 1 m level change: " + step);
+      // The sandstone line replaces the legacy white wall everywhere, including collision and map segments.
+      const legacy = s.seaWall.points, remaining = seaWallSegments(legacy, paseoWallCovers);
+      if (remaining.length >= legacy.length - 1 || !remaining.length) throw Error("South wall reconciliation omitted no shared stretches or lost the end returns");
+      const legacyScene = new THREE.Scene();
+      addSeaWall(legacyScene, legacy, paseoWallCovers);
+      if (legacyScene.children.length !== remaining.length) throw Error("White wall mesh/map segment disagreement");
+      const cornerCount = new Set(remaining.flat().map(p => p.join(","))).size;
+      if (seaWallRings(legacy, paseoWallCovers).length !== remaining.length + cornerCount) throw Error("White wall collision retains hidden stretches");
+      const south = s.pools.find(p => p.id === "south");
+      for (const [x, z] of south.ring) {
+        if (sd.inZone(x, z) || Math.abs(siteY(x, z) + poolGroundY(x, z)) > 0.001) throw Error("South pool no longer stays level at its existing datum");
+      }
+      const wallScene = new THREE.Scene();
+      addPaseoWall(wallScene, s.seafront, sd, (x, z) => siteY(x, z) + poolGroundY(x, z));
+      const cap = wallScene.getObjectByName("paseo-retaining-wall-coping");
+      if (!cap) throw Error("Sandstone coping missing");
+      const capPoints = cap.geometry.getAttribute("position"), angle = s.viewRotation * Math.PI / 180;
+      let southCap = 0;
+      for (let i = 0; i < capPoints.count; i++) {
+        const tx = capPoints.getX(i) * Math.cos(angle) - capPoints.getZ(i) * Math.sin(angle);
+        if (tx < -174 || tx > -150) continue;
+        southCap++;
+        if (Math.abs(capPoints.getY(i) - 0.065) > 0.001) throw Error("Sandstone coping is detached from the south lawn datum");
+      }
+      if (!southCap) throw Error("No sandstone coping below south lawn");
       const keep = world.solids;
-      world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...rings]);
+      world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...seaWallRings(legacy, paseoWallCovers), ...rings]);
       // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
-      const stretch = s.seafront.paseo.points.slice(0, 8);
+      const end = s.seafront.paseo.points.findIndex(([x, z]) => Math.hypot(x - 28.87, z - 96.28) < 0.01);
+      if (end < 0) throw Error("Paseo lost its Barraka boardwalk join");
+      const stretch = s.seafront.paseo.points.slice(0, end + 1);
       walk(stretch);
       walk([...stretch].reverse());
       world.solids = keep;
