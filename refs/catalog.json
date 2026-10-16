@@ -592,7 +592,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "elena_north.json:elena-north-tree-bed-2"
+   "elena_north.json:elena-north-tree-bed-2",
+   "elena_east_patios.json:elena-east-patios-west-wall",
+   "elena_east_patios.json:elena-east-patios-cervantes-wall"
   ],
   "looksAt": [
    -144.9,
@@ -603,7 +605,7 @@
    "elena_north.json:elena-north-tree-bed-2",
    "street:elena-north",
    "elena_north.json:elena-north-garden-door-path",
-   "elena_north.json:elena-north-garden-wall"
+   "elena_east_patios.json:elena-east-patios-west-wall"
   ],
   "subject": "The second hedged bed and the lane"
  },
@@ -647,7 +649,7 @@
    "elena_north.json:elena-north-tree-bed-2",
    "street:elena-north",
    "elena_north.json:elena-north-garden-door-path",
-   "elena_north.json:elena-north-garden-wall"
+   "elena_east_patios.json:elena-east-patios-west-wall"
   ],
   "subject": "The second hedged bed"
  },
@@ -680,7 +682,9 @@
   "citedBy": [
    "elena_north.json:elena-north-garden-wall",
    "elena_north.json:elena-north-tree-bed-1",
-   "elena_north.json:elena-north-garden-door-path"
+   "elena_north.json:elena-north-garden-door-path",
+   "elena_east_patios.json:elena-east-patios-west-wall",
+   "elena_east_patios.json:elena-east-patios-pergola"
   ],
   "looksAt": [
    -146.9,
@@ -726,7 +730,8 @@
    "elena_north.json:elena-north-window-return",
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-tree-bed-2",
-   "elena_north.json:elena-north-garden-door-path"
+   "elena_north.json:elena-north-garden-door-path",
+   "elena_east_patios.json:elena-east-patios-pergola"
   ],
   "looksAt": [
    -146.9,
@@ -1157,9 +1162,9 @@
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
-   "street:cervantes",
-   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
-   "elena_north.json:elena-north-garden-wall"
+   "elena_east_patios.json:elena-east-patios-west-wall",
+   "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "street:cervantes"
   ]
  },
  {
@@ -5084,7 +5089,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "elena_east_patios.json:elena-east-patios-cervantes-wall"
   ],
   "looksAt": [
    -148.9,
@@ -5227,6 +5233,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
   ],
   "subject": "Cervantes east of Elena, seen along its line"
@@ -5475,8 +5482,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
-   "elena_north.json:elena-north-garden-door-path",
-   "elena_north.json:elena-north-tree-bed-2"
+   "elena_east_patios.json:elena-east-patios-pergola",
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "subject": "The private patios east of the Elena beds"
  },

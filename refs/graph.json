@@ -1446,6 +1446,21 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "kind": "model-feature",
+   "name": "Elena east patios · white wall behind the plumbago bed on Cervantes"
+  },
+  {
+   "id": "elena_east_patios.json:elena-east-patios-pergola",
+   "kind": "model-feature",
+   "name": "Elena east patios · timber pergola behind the garden door"
+  },
+  {
+   "id": "elena_east_patios.json:elena-east-patios-west-wall",
+   "kind": "model-feature",
+   "name": "Elena east patios · garden wall behind the second hedged bed"
+  },
+  {
    "id": "elena_gated_entry.json:elena-gated-entry",
    "kind": "model-feature",
    "name": "Elena · private tiled entry west of covered walkway"
@@ -1713,8 +1728,15 @@
    "kind": "build-task",
    "name": "Elena north: private patios east of the beds",
    "priority": 2,
-   "status": "open",
+   "status": "done",
    "issue": 38
+  },
+  {
+   "id": "task:cervantes-east-south-patios",
+   "kind": "build-task",
+   "name": "Cervantes east of Elena: walled patios on the south side, with the cane-roofed pergola",
+   "priority": 3,
+   "status": "open"
   },
   {
    "id": "task:elena-gated-entry",
@@ -5250,6 +5272,36 @@
    "relation": "cites"
   },
   {
+   "from": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "to": "ref:IMG_2197.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "to": "ref:IMG_2356.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-pergola",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-pergola",
+   "to": "ref:IMG_2200.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-west-wall",
+   "to": "ref:IMG_2197.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-west-wall",
+   "to": "ref:IMG_2199.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "elena_gated_entry.json:elena-gated-entry",
    "to": "ref:IMG_2202.jpg",
    "relation": "cites"
@@ -6020,6 +6072,26 @@
    "relation": "in-area"
   },
   {
+   "from": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-pergola",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "elena_east_patios.json:elena-east-patios-west-wall",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
    "from": "elena_gated_entry.json:elena-gated-entry",
    "to": "area:elena",
    "relation": "in-area"
@@ -6415,7 +6487,7 @@
   },
   {
    "from": "ref:IMG_2197.jpg",
-   "to": "elena_north.json:elena-north-garden-wall",
+   "to": "elena_east_patios.json:elena-east-patios-west-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -6439,7 +6511,7 @@
   },
   {
    "from": "ref:IMG_2198.jpg",
-   "to": "elena_north.json:elena-north-garden-wall",
+   "to": "elena_east_patios.json:elena-east-patios-west-wall",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -6553,19 +6625,19 @@
   },
   {
    "from": "ref:IMG_2216.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-west-wall",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2216.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "relation": "looks-at",
+   "basis": "estimated 12 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2216.jpg",
    "to": "street:cervantes",
-   "relation": "looks-at",
-   "basis": "estimated 12 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2216.jpg",
-   "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
-   "relation": "looks-at",
-   "basis": "estimated 12 m along the heading"
-  },
-  {
-   "from": "ref:IMG_2216.jpg",
-   "to": "elena_north.json:elena-north-garden-wall",
    "relation": "looks-at",
    "basis": "estimated 12 m along the heading"
   },
@@ -7633,6 +7705,12 @@
   },
   {
    "from": "ref:IMG_2360.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2360.jpg",
    "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "relation": "looks-at",
    "basis": "reviewed"
@@ -7717,13 +7795,13 @@
   },
   {
    "from": "ref:IMG_2366.jpg",
-   "to": "elena_north.json:elena-north-garden-door-path",
+   "to": "elena_east_patios.json:elena-east-patios-pergola",
    "relation": "looks-at",
    "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2366.jpg",
-   "to": "elena_north.json:elena-north-tree-bed-2",
+   "to": "elena_north.json:elena-north-garden-door-path",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -7771,6 +7849,11 @@
   {
    "from": "task:elena-east-patios",
    "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:cervantes-east-south-patios",
+   "to": "area:cervantes",
    "relation": "in-area"
   },
   {
@@ -7921,6 +8004,21 @@
   {
    "from": "task:elena-east-patios",
    "to": "ref:IMG_2360.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-east-south-patios",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-east-south-patios",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:cervantes-east-south-patios",
+   "to": "ref:IMG_2197.jpg",
    "relation": "builds-from"
   },
   {
@@ -8361,6 +8459,11 @@
   {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:cervantes-east-south-patios",
+   "to": "task:elena-east-patios",
    "relation": "depends-on"
   },
   {

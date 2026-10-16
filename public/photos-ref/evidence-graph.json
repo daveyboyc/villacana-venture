@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 335,
+  "features": 338,
   "photosCitedByModel": 78,
-  "modelFeaturesWithPhotoCitations": 78
+  "modelFeaturesWithPhotoCitations": 81
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2419,6 +2419,36 @@
    ]
   },
   {
+   "id": "elena_east_patios.json:elena-east-patios-west-wall",
+   "name": "Elena east patios · garden wall behind the second hedged bed",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2197.jpg",
+    "IMG_2199.jpg"
+   ]
+  },
+  {
+   "id": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "name": "Elena east patios · white wall behind the plumbago bed on Cervantes",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2356.jpg",
+    "IMG_2197.jpg"
+   ]
+  },
+  {
+   "id": "elena_east_patios.json:elena-east-patios-pergola",
+   "name": "Elena east patios · timber pergola behind the garden door",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2199.jpg",
+    "IMG_2200.jpg"
+   ]
+  },
+  {
    "id": "middle_pool_south_gate.json:middle-pool-south-gate",
    "name": "Middle pool · south double iron gate, curved head and tiled planter",
    "kind": "reference feature",
@@ -4039,6 +4069,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2197.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-west-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2198.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -4141,6 +4183,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2199.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-west-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2200.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -4193,6 +4247,12 @@
   {
    "from": "photo:IMG_2200.jpg",
    "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2200.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-pergola",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -7644,6 +7704,12 @@
   {
    "from": "photo:IMG_2356.jpg",
    "to": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2356.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
