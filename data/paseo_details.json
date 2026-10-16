@@ -1,0 +1,153 @@
+{
+ "scope": "Details-only, bounded portions observed in IMG_2349–2354. Distances follow the shared retaining-wall face from its west end. No inferred repetition to the east end.",
+ "features": [
+  {
+   "id": "paseo-west-hedge",
+   "name": "Paseo · west clipped hedge",
+   "kind": "hedge",
+   "along": [
+    2,
+    24
+   ],
+   "inland": 0.9,
+   "width": 0.7,
+   "height": 0.85,
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ],
+   "trust": "Clipped foliage behind mesh is visible. Extent limited to the photographed western frontage; position, clipping height and width approximate, not surveyed."
+  },
+  {
+   "id": "paseo-pool-hedge",
+   "name": "Paseo · south-pool clipped hedge",
+   "kind": "hedge",
+   "along": [
+    39,
+    52
+   ],
+   "inland": 0.9,
+   "width": 0.7,
+   "height": 0.7,
+   "evidence": [
+    "IMG_2349.jpg",
+    "IMG_2350.jpg"
+   ],
+   "trust": "IMG_2349 shows a hedge lower than the mesh with pool lawn behind. Bounded to its local photographed frontage; map extent is estimated."
+  },
+  {
+   "id": "paseo-west-windbreak",
+   "name": "Paseo · west green windbreak",
+   "kind": "cloth",
+   "along": [
+    29,
+    39
+   ],
+   "inland": 0.22,
+   "width": 0.025,
+   "height": 0.78,
+   "evidence": [
+    "IMG_2352.jpg"
+   ],
+   "trust": "Only the short opaque green cloth span in the foreground of IMG_2352; mesh remains exposed above it and on either side. End positions approximate."
+  },
+  {
+   "id": "paseo-east-windbreak",
+   "name": "Paseo · east green windbreak",
+   "kind": "cloth",
+   "along": [
+    60,
+    75
+   ],
+   "inland": 0.22,
+   "width": 0.025,
+   "height": 0.78,
+   "evidence": [
+    "IMG_2350.jpg"
+   ],
+   "trust": "Short visible cloth run beyond the foreground open-mesh garden in IMG_2350, not an entire fence covering. Length and position estimated."
+  },
+  {
+   "id": "paseo-white-lamp-1",
+   "name": "Paseo · white lamp 1",
+   "kind": "lamp",
+   "along": [
+    6,
+    6
+   ],
+   "inland": -0.12,
+   "width": 0.16,
+   "height": 3.7,
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ],
+   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+  },
+  {
+   "id": "paseo-white-lamp-2",
+   "name": "Paseo · white lamp 2",
+   "kind": "lamp",
+   "along": [
+    20,
+    20
+   ],
+   "inland": -0.12,
+   "width": 0.16,
+   "height": 3.7,
+   "evidence": [
+    "IMG_2352.jpg",
+    "IMG_2354.jpg"
+   ],
+   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+  },
+  {
+   "id": "paseo-white-lamp-3",
+   "name": "Paseo · white lamp 3",
+   "kind": "lamp",
+   "along": [
+    54,
+    54
+   ],
+   "inland": -0.12,
+   "width": 0.16,
+   "height": 3.7,
+   "evidence": [
+    "IMG_2350.jpg"
+   ],
+   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+  },
+  {
+   "id": "paseo-white-lamp-4",
+   "name": "Paseo · white lamp 4",
+   "kind": "lamp",
+   "along": [
+    77,
+    77
+   ],
+   "inland": -0.12,
+   "width": 0.16,
+   "height": 3.7,
+   "evidence": [
+    "IMG_2350.jpg"
+   ],
+   "trust": "Slim white shaft and shallow rectangular head seen beside the wall; these four positions approximate only visible lamps. Full projected radius must clear protected routes; if not it is omitted rather than moved away from its photo position."
+  },
+  {
+   "id": "paseo-service-cover",
+   "name": "Paseo · flush square service cover",
+   "kind": "cover",
+   "along": [
+    3.5,
+    3.5
+   ],
+   "inland": -0.7,
+   "width": 0.55,
+   "height": 0,
+   "evidence": [
+    "IMG_2354.jpg"
+   ],
+   "trust": "Square brown-grey cover set flush into the stamped paseo beside the western wall. Size and wall-relative placement estimated. Surface decal only: no raised mesh or collision, so the full walk stays clear."
+  }
+ ]
+}
