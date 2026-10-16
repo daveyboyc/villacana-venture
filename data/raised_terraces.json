@@ -1,0 +1,107 @@
+{
+ "about": "Raised terraces and patios: ground in front of houses that stands above the lane or lawn path, held by retaining faces and reached by stairs in openings. Built by src/raised-terraces.ts and checked by scripts/check_raised_terraces.py; how to add one is in docs/RAISED_TERRACES.md. Coordinates are skeleton metres (+x east, +z south). `outline` is the terrace edge (the outer face of its walls); `edges[i]` describes outline[i] -> outline[i+1]: `face` is a retaining wall drawn with coping and solid, `house` runs along a registry house front (nothing drawn, the house is the solid), `end` is an untraced end of the terrace (a plain face without coping, solid, dashed on the map). `rise` is the floor height above the ground at `base` (siteY there, i.e. the path at the stair foot). Each opening sits on one edge, `at` metres from its start, `width` wide, and carries a stair: `direction` `in` cuts the flight back into the terrace behind the opening, `out` stands it in front of the face; the last riser always lands on the floor. `walks` are waypoints on the floor that the layout browser test walks from the top of the first stair and back.",
+ "checkedAt": "2026-10-16",
+ "terraces": [
+  {
+   "id": "north-pool-west-terrace",
+   "name": "North pool · north-west raised terrace and tiled stair",
+   "area": "north-pool",
+   "survey": "north-pool-west-stair",
+   "walkable": true,
+   "base": [
+    -189.27,
+    17.8
+   ],
+   "rise": 1.0,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.25,
+    "coping": {
+     "height": 0.06,
+     "overhang": 0.03
+    }
+   },
+   "outline": [
+    [-190.45, 24.6],
+    [-190.25, 22.2],
+    [-189.95, 20.0],
+    [-189.55, 18.4],
+    [-189.0, 17.2],
+    [-188.1, 16.15],
+    [-186.9, 15.1],
+    [-184.8, 13.55],
+    [-182.75, 12.25],
+    [-181.3, 11.25],
+    [-184.28, 9.32],
+    [-187.71, 11.38],
+    [-187.62, 11.53],
+    [-187.5, 11.75],
+    [-189.03, 12.63],
+    [-191.57, 14.07],
+    [-191.19, 14.76],
+    [-193.54, 16.05],
+    [-194.78, 16.74],
+    [-194.47, 24.95]
+   ],
+   "edges": [
+    {"kind": "face", "note": "curved retaining wall, south end"},
+    {"kind": "face", "note": "curved retaining wall"},
+    {"kind": "face", "note": "curved retaining wall up to the stair"},
+    {"kind": "face", "note": "stair opening"},
+    {"kind": "face", "note": "wall north of the stair, carries the handrail end"},
+    {"kind": "face"},
+    {"kind": "face"},
+    {"kind": "face"},
+    {"kind": "face", "note": "ends at the white pier before the path up to the north row alley"},
+    {"kind": "end", "note": "return beside the path to the alley: not visible, estimated"},
+    {"kind": "house", "building": "6165501UF1366N_part5"},
+    {"kind": "house", "building": "6165501UF1366N_part5"},
+    {"kind": "house", "building": "6165501UF1366N_part5"},
+    {"kind": "house", "building": "6165501UF1366N_part5"},
+    {"kind": "house", "building": "6165501UF1366N_part5"},
+    {"kind": "house", "building": "6165501UF1366N_part1"},
+    {"kind": "house", "building": "6165501UF1366N_part1"},
+    {"kind": "house", "building": "6165501UF1366N_part1"},
+    {"kind": "end", "note": "west end between the house rows: not visible, estimated"},
+    {"kind": "end", "note": "south end at the walled gardens in front of 6165501UF1366N_part2 (task north-pool-garden-walls): estimated"}
+   ],
+   "openings": [
+    {
+     "id": "north-pool-west-stair",
+     "edge": 3,
+     "at": 0,
+     "width": 1.32,
+     "stair": {
+      "risers": 6,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "red-blue-tile",
+      "treadFinish": "terracotta",
+      "handrail": "right"
+     }
+    }
+   ],
+   "walks": [
+    [[-190.7, 15.4], [-188.6, 14.6], [-186.3, 13.3], [-184.0, 11.6]],
+    [[-191.9, 18.2], [-192.5, 22.5]]
+   ],
+   "planting": {
+    "edges": [0, 1, 2, 4, 5, 6, 7, 8],
+    "inset": 0.7,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ],
+   "trace": {
+    "method": "Camera for IMG_2204 solved from seven points on the registry north pool ring (rms about 20 px): camera about (-173.5, 36.6), 7.8 m up, heading 342 (EXIF 329), pitch 17 deg, 72 deg field of view. The stair foot, the base of the curved wall and the base of the wall north of the stair were then projected onto the ground. IMG_2206 (yaw re-solved from the pool ladder platform, about 310) puts the stair at bearing 324 from the same camera; this flight gives 320, the withdrawn issue-36 flight at (-181.9, 12) would give 341. Wall lines were averaged with the review-only arc in docs/reviews/issue-36/trace-draft.json and checked against the lawn edge on public/map/ground.jpg.",
+    "surveyAt": [-187.0, 17.5],
+    "stairFootFromSurvey": 2.3
+   },
+   "trust": "Photo-supported: a six-riser flight with red-and-blue tiled risers and an iron handrail on its north side, cut back between the end of a curved white retaining wall (south) and a straight white wall with coping (north) that runs east to a pier where a path climbs to the north row alley; the terrace behind carries a planted bank, crazy paving and a terracotta patio in front of the house fronts (IMG_2204, IMG_2206, IMG_2208). Height 1.0 m, the middle of the survey's 0.9-1.1 m, as six 0.167 m risers on 0.3 m treads. Estimated: plan position (camera fit, about +-1.5 m; stair foot 2.3 m from the survey's +-6 m centre), the 1.32 m stair width, the curve of the wall between photo points, the return beside the alley path, the west end and the south end at the walled gardens (none of these three is visible). The back edges follow the registry fronts of 6165501UF1366N_part5 and part1, which keep their own floor datum (about 0.5 m and 0.04 m from the terrain rule), so the terrace floor stands 0.5-1 m above them in the model; whether the house floors are higher or there are steps down is not visible. Whether the terrace is shared ground or private is not visible; it is modelled walkable."
+  }
+ ]
+}

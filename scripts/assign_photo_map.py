@@ -111,6 +111,8 @@ def features(s):
     for part in ('patio','bed'):
         f=garden[part]
         add('cervantes_garden_door.json:'+f['id'],f['id'],'reference feature','authored photo/levels interpretation',ring=f['ring'],evidence=f['evidence'])
+    for t in json.loads((ROOT/'data/raised_terraces.json').read_text())['terraces']:
+        add('raised_terraces.json:'+t['id'],t['name'],'reference feature','authored photo/levels interpretation',ring=t['outline'],evidence=t['evidence'])
     for name in ('cervantes_elena_steps','middle_pool_steps'):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])

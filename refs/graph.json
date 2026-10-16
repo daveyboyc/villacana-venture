@@ -1666,6 +1666,11 @@
    "name": "picasso utility front"
   },
   {
+   "id": "raised_terraces.json:north-pool-west-terrace",
+   "kind": "model-feature",
+   "name": "North pool · north-west raised terrace and tiled stair"
+  },
+  {
    "id": "ramp:cervantes-elena-ramp",
    "kind": "model-feature",
    "name": "Cervantes / Elena ramp"
@@ -1880,7 +1885,7 @@
    "kind": "build-task",
    "name": "Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair",
    "priority": 1,
-   "status": "open",
+   "status": "done",
    "issue": 54
   },
   {
@@ -5805,6 +5810,21 @@
    "relation": "cites"
   },
   {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "ramp:cervantes-elena-ramp",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -6247,6 +6267,11 @@
   {
    "from": "picasso_service_road.json:picasso-utility-front",
    "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "area:north-pool",
    "relation": "in-area"
   },
   {

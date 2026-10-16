@@ -13,21 +13,25 @@
    },
    "docs": [
     "docs/LEVELS.md",
-    "docs/NORTH_POOL_REVIEW.md"
+    "docs/NORTH_POOL_REVIEW.md",
+    "docs/RAISED_TERRACES.md"
    ],
    "data": [
     "data/objects.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/raised_terraces.json"
    ],
    "src": [
     "src/world.ts",
-    "src/water.ts"
+    "src/water.ts",
+    "src/raised-terraces.ts"
    ],
    "notes": [
     "Dave (2026-10-11): the lawn is bigger than the first pass showed, and the houses have front porches.",
     "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
     "Best single reference: villacana-reference/photos/07 (whole courtyard looking north).",
-    "Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate."
+    "Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate.",
+    "Issue #54 (2026-10-16): the NW six-riser tiled stair is built at about (-189.3, 17.8), cut back into a 1.0 m terrace (data/raised_terraces.json) between the curved wall and a straight wall that runs east to a pier where a path climbs to the north row alley. A camera fit of IMG_2204 to the pool ring puts the stair at bearing 320 from the camera, which IMG_2206 confirms (324); the withdrawn (-181.9, 12) flight would be at 341, so that spot is the pier and alley path, not the stair. Open: the terrace floor stands 0.5-1 m above the model datum of the houses behind it (6165501UF1366N_part5, part1); whether their floors are higher or there are steps down is not visible. The west and south ends of the terrace are estimated."
    ]
   },
   {

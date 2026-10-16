@@ -1,4 +1,5 @@
 import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
+import {raisedTerraceBlueprint,suppressInRaisedTerraces} from "./raised-terraces";
 import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
@@ -65,6 +66,7 @@ async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   suppressInEvaLawn(skeleton);
   suppressInMiddlePoolReview(skeleton);
+  suppressInRaisedTerraces(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
   const rot = skeleton.viewRotation;
 
@@ -93,6 +95,10 @@ async function boot(): Promise<void> {
     const node=el("path",{d:path(ring),fill,stroke:"#fffaf1","stroke-width":.07,"data-garden-door-id":id});const title=el("title",{});title.textContent=`${gardenDoor.name}: ${gardenDoor.trust} · ${gardenDoor.evidence.join(", ")}`;node.append(title);garden.append(node);
   }
   frontages.append(garden);
+  // Raised terraces (data/raised_terraces.json): floor, retaining faces, untraced ends (dashed), stairs and handrails.
+  const terraces=el("g",{id:"raised-terraces"});
+  for(const part of raisedTerraceBlueprint()){const node=el("path",{d:part.closed?path(part.points):"M"+part.points.map(p=>p.join(" ")).join("L"),fill:part.fill??"none",stroke:part.stroke??"none","stroke-width":part.width??0,...(part.dash?{"stroke-dasharray":part.dash}:{}),"data-terrace-id":part.id});const title=el("title",{});title.textContent=part.title;node.append(title);terraces.append(node);}
+  frontages.append(terraces);
   // Calle Elena north, traced from the roof photos: beds, patio wall and the arched gateway.
   const elena=el("g",{id:"elena-north"});
   const titled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);elena.append(node);};

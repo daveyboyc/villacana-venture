@@ -33,7 +33,7 @@ photos**.
   no step.
 - **Raised terraces at the north pool.** At the north-west corner of the lawn a
   six-riser tiled stair with a handrail and a curved retaining wall climb about 1 m
-  to a terrace in front of the houses (task `raised-terraces`). The north-side
+  to a terrace in front of the houses (built: `docs/RAISED_TERRACES.md`). The north-side
   patios are 0.25-0.4 m up, behind plinth walls with one or two steps (task
   `north-pool-garden-walls`).
 - **Junction door.** At the foot of the Cervantes drop, a garden door on the north

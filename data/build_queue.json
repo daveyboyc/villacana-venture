@@ -519,8 +519,10 @@
     "check_levels.py: north-pool-west-stair marked built"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 54
+   "status": "done",
+   "issue": 54,
+   "owner": "issue_54",
+   "notes": "Built: data/raised_terraces.json, src/raised-terraces.ts, docs/RAISED_TERRACES.md. Stair placed by a camera fit of IMG_2204 against the pool ring (bearing checked in IMG_2206); about 2.3 m from the survey centre."
   },
   {
    "id": "middle-pool-raised-patios",

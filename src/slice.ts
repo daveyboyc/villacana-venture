@@ -1,4 +1,5 @@
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
+import {addRaisedTerraces,raisedTerraceGroundOffset,raisedTerraceRings,suppressInRaisedTerraces} from "./raised-terraces";
 import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
@@ -72,6 +73,7 @@ async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   suppressInEvaLawn(skeleton);
   suppressInMiddlePoolReview(skeleton); // the traced middle pool gateway and planter replace generated walls there
+  suppressInRaisedTerraces(skeleton); // traced raised terraces replace generated walls there
   const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
   const shown = chosen.length ? chosen : [skeleton.pools.find((p) => p.id === "north")!];
   // Start at the first pool named.
@@ -178,12 +180,14 @@ async function boot(): Promise<void> {
   addEvaLawn(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
+  addRaisedTerraces(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   fenceRings.push(...elenaEntryRings());
   fenceRings.push(...evaWallRings());
   fenceRings.push(...picassoServiceRings());
+  fenceRings.push(...raisedTerraceRings()); // terrace faces and stair cheeks; openings stay open
   fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
@@ -248,7 +252,7 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
