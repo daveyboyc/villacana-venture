@@ -1621,6 +1621,11 @@
    "name": "Middle pool · south-west gateway above the stone steps"
   },
   {
+   "id": "north_pool_gardens.json:north-pool-lawn-path",
+   "kind": "model-feature",
+   "name": "North pool · visible crazy-paving lawn-edge path"
+  },
+  {
    "id": "paseo_details.json:paseo-east-windbreak",
    "kind": "model-feature",
    "name": "Paseo · east green windbreak"
@@ -1689,6 +1694,11 @@
    "id": "picasso_service_road.json:picasso-utility-front",
    "kind": "model-feature",
    "name": "picasso utility front"
+  },
+  {
+   "id": "raised_terraces.json:north-pool-north-patios",
+   "kind": "model-feature",
+   "name": "North pool · low northern patio plinths and white steps"
   },
   {
    "id": "raised_terraces.json:north-pool-west-terrace",
@@ -1861,7 +1871,7 @@
    "kind": "build-task",
    "name": "North pool: curved garden walls and raised patios",
    "priority": 2,
-   "status": "open",
+   "status": "done",
    "issue": 36
   },
   {
@@ -5757,6 +5767,26 @@
    "relation": "cites"
   },
   {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_details.json:paseo-east-windbreak",
    "to": "ref:IMG_2350.jpg",
    "relation": "cites"
@@ -5889,6 +5919,26 @@
   {
    "from": "picasso_service_road.json:picasso-utility-front",
    "to": "ref:IMG_2345.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-north-patios",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-north-patios",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-north-patios",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-north-patios",
+   "to": "ref:IMG_2208.jpg",
    "relation": "cites"
   },
   {
@@ -6322,6 +6372,11 @@
    "relation": "in-area"
   },
   {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "paseo_details.json:paseo-east-windbreak",
    "to": "area:paseo",
    "relation": "in-area"
@@ -6389,6 +6444,11 @@
   {
    "from": "picasso_service_road.json:picasso-utility-front",
    "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-north-patios",
+   "to": "area:north-pool",
    "relation": "in-area"
   },
   {

@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 339,
-  "photosCitedByModel": 81,
-  "modelFeaturesWithPhotoCitations": 84
+  "features": 341,
+  "photosCitedByModel": 83,
+  "modelFeaturesWithPhotoCitations": 86
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -968,7 +968,9 @@
     }
    ],
    "citedBy": [
-    "raised_terraces.json:north-pool-west-terrace"
+    "north_pool_gardens.json:north-pool-lawn-path",
+    "raised_terraces.json:north-pool-west-terrace",
+    "raised_terraces.json:north-pool-north-patios"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -999,7 +1001,10 @@
      "angleOffset": 8.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "north_pool_gardens.json:north-pool-lawn-path",
+    "raised_terraces.json:north-pool-north-patios"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.1,
@@ -1035,6 +1040,7 @@
     }
    ],
    "citedBy": [
+    "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -1071,7 +1077,9 @@
      "angleOffset": 30.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:north-pool-north-patios"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -169.1,
@@ -1107,7 +1115,9 @@
     }
    ],
    "citedBy": [
-    "raised_terraces.json:north-pool-west-terrace"
+    "north_pool_gardens.json:north-pool-lawn-path",
+    "raised_terraces.json:north-pool-west-terrace",
+    "raised_terraces.json:north-pool-north-patios"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

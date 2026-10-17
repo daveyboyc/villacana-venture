@@ -1,3 +1,4 @@
+import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {addRaisedTerraces,raisedTerraceGroundOffset,raisedTerraceRings,suppressInRaisedTerraces} from "./raised-terraces";
 import {paintSeawardPaving} from "./seaward-paving";
@@ -182,6 +183,7 @@ async function boot(): Promise<void> {
   addEvaLawn(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
+  addNorthPoolGardenPath(scene);
   addRaisedTerraces(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);

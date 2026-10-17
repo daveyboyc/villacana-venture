@@ -63,7 +63,7 @@ for t in d['terraces']:
     low, high = item['rise']
     assert low <= t['rise'] <= high, f"{name}: rise {t['rise']} m outside the survey's {low}-{high} m"
     assert f'{low}-{high} m' in t['trust'], f'{name}: trust should quote the survey range'
-    assert item['model'] == 'built' and item['task'] == 'raised-terraces', f"{t['survey']}: survey item not marked built"
+    assert item['model'] == 'built' and tasks[item['task']]['status'] == 'done', f"{t['survey']}: survey item not marked built"
     assert tasks['raised-terraces']['status'] == 'done', 'raised-terraces task not marked done'
     # House edges run along a registry front; houses keep their own datum (not lifted here).
     for i, e in enumerate(edges):
@@ -110,7 +110,9 @@ for t in d['terraces']:
         out = (foot[0] - nrm[0] * 1.0, foot[1] - nrm[1] * 1.0)
         assert not inside(*out, ring), f"{o['id']}: stair foot is not on the ground outside"
         assert not any(b['floors'] > 0 and inside(*out, b['ring']) for b in s['buildings']), f"{o['id']}: stair foot lands in a house"
-        assert math.dist(foot, t['base']) < 0.05, f"{name}: base should be the stair foot"
+        if o is t['openings'][0]:
+            assert math.dist(foot, t['base']) < 0.05, f"{name}: base should be the first stair foot"
+        assert abs(site_y(foot) - site_y(t['base'])) < 0.03, f"{name}: openings need a shared path datum"
         if 'at' in item:
             gap = math.dist(foot, item['at'])
             assert gap <= item['atAccuracy'], f"{o['id']}: {gap:.1f} m from the survey position, outside its +-{item['atAccuracy']} m"

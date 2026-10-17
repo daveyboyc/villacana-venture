@@ -1,3 +1,4 @@
+import {northPoolGardenPathBlueprint} from "./north-pool-gardens";
 import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
 import {raisedTerraceBlueprint,suppressInRaisedTerraces} from "./raised-terraces";
 import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
@@ -98,7 +99,7 @@ async function boot(): Promise<void> {
   frontages.append(garden);
   // Raised terraces (data/raised_terraces.json): floor, retaining faces, untraced ends (dashed), stairs and handrails.
   const terraces=el("g",{id:"raised-terraces"});
-  for(const part of raisedTerraceBlueprint()){const node=el("path",{d:part.closed?path(part.points):"M"+part.points.map(p=>p.join(" ")).join("L"),fill:part.fill??"none",stroke:part.stroke??"none","stroke-width":part.width??0,...(part.dash?{"stroke-dasharray":part.dash}:{}),"data-terrace-id":part.id});const title=el("title",{});title.textContent=part.title;node.append(title);terraces.append(node);}
+  for(const part of [northPoolGardenPathBlueprint(),...raisedTerraceBlueprint()]){const node=el("path",{d:part.closed?path(part.points):"M"+part.points.map(p=>p.join(" ")).join("L"),fill:part.fill??"none",stroke:part.stroke??"none","stroke-width":part.width??0,...(part.dash?{"stroke-dasharray":part.dash}:{}),"data-terrace-id":part.id});const title=el("title",{});title.textContent=part.title;node.append(title);terraces.append(node);}
   frontages.append(terraces);
   // Calle Elena north, traced from the roof photos: beds, patio wall and the arched gateway.
   const elena=el("g",{id:"elena-north"});

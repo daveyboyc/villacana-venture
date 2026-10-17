@@ -102,6 +102,199 @@
     "stairFootFromSurvey": 2.3
    },
    "trust": "Photo-supported: a six-riser flight with red-and-blue tiled risers and an iron handrail on its north side, cut back between the end of a curved white retaining wall (south) and a straight white wall with coping (north) that runs east to a pier where a path climbs to the north row alley; the terrace behind carries a planted bank, crazy paving and a terracotta patio in front of the house fronts (IMG_2204, IMG_2206, IMG_2208). Height 1.0 m, the middle of the survey's 0.9-1.1 m, as six 0.167 m risers on 0.3 m treads. Estimated: plan position (camera fit, about +-1.5 m; stair foot 2.3 m from the survey's +-6 m centre), the 1.32 m stair width, the curve of the wall between photo points, the return beside the alley path, the west end and the south end at the walled gardens (none of these three is visible). The back edges follow the registry fronts of 6165501UF1366N_part5 and part1, which keep their own floor datum (about 0.5 m and 0.04 m from the terrain rule), so the terrace floor stands 0.5-1 m above them in the model; whether the house floors are higher or there are steps down is not visible. Whether the terrace is shared ground or private is not visible; it is modelled walkable."
+  },
+  {
+   "id": "north-pool-north-patios",
+   "name": "North pool · low northern patio plinths and white steps",
+   "area": "north-pool",
+   "survey": "north-pool-north-patios",
+   "walkable": true,
+   "base": [
+    -176.749,
+    10.7525
+   ],
+   "rise": 0.325,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.2,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.025
+    }
+   },
+   "outline": [
+    [
+     -179.3,
+     10.25
+    ],
+    [
+     -176,
+     10.9
+    ],
+    [
+     -172,
+     11.2
+    ],
+    [
+     -167.1,
+     11.3
+    ],
+    [
+     -166.1,
+     8.2
+    ],
+    [
+     -171,
+     7.6
+    ],
+    [
+     -177.5,
+     7.4
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    }
+   ],
+   "openings": [
+    {
+     "id": "north-pool-low-patio-step-1",
+     "edge": 0,
+     "at": 2.0,
+     "width": 1.2,
+     "stair": {
+      "risers": 2,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "render",
+      "treadFinish": "crazy-paving",
+      "handrail": "none",
+      "nosing": true
+     }
+    },
+    {
+     "id": "north-pool-low-patio-step-2",
+     "edge": 1,
+     "at": 2.7,
+     "width": 1.25,
+     "stair": {
+      "risers": 2,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "render",
+      "treadFinish": "crazy-paving",
+      "handrail": "none",
+      "nosing": true
+     }
+    },
+    {
+     "id": "north-pool-low-patio-step-3",
+     "edge": 2,
+     "at": 3.4,
+     "width": 1.3,
+     "stair": {
+      "risers": 2,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "render",
+      "treadFinish": "crazy-paving",
+      "handrail": "none",
+      "nosing": true
+     }
+    }
+   ],
+   "walks": [
+    [
+     [
+      -175.5,
+      9.4
+     ],
+     [
+      -171,
+      9.4
+     ],
+     [
+      -168.1,
+      9.5
+     ]
+    ]
+   ],
+   "planting": {
+    "edges": [
+     0,
+     1,
+     2
+    ],
+    "inset": 0.65,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ],
+   "trace": {
+    "method": "IMG_2204 north-pool ring camera fit from issue 54 (camera about -173.5,36.6, elevation 7.8 m, yaw 342, pitch 17, horizontal field 72 degrees). Inverse ground rays through individually visible plinth toes and shallow openings checked against Esri ground.jpg and unchanged registry. IMG_2205 extends the visible frontage to the east return. Rear floor cut deliberately stops short of registry houses because garden divisions are concealed.",
+    "frontPixels2204": [
+     [
+      935,
+      592
+     ],
+     [
+      1035,
+      604
+     ],
+     [
+      1170,
+      618
+     ],
+     [
+      1200,
+      623
+     ],
+     [
+      1395,
+      641
+     ],
+     [
+      1430,
+      646
+     ],
+     [
+      1580,
+      658
+     ]
+    ]
+   },
+   "trust": "Photo-supported: the lower white plinth frontage east of the central alley, its gentle curve, three separate shallow openings with white noses and stone treads (IMG_2204/2205), and hedges above the plinth. Rise 0.325 m, within the survey 0.25-0.4 m range, represented as two 0.1625 m risers. Estimated: exact opening widths (1.2-1.3 m), individual plan coordinates (about +-2 m from oblique camera registration), the floor depth. The rear floor stops at a conservative visible patio band, 2.5-3 m behind the plinth; all unseen side/back limits are explicitly untraced ends, not asserted property walls, and no concealed garden partitions or house level changes are invented. Three openings belong to distinct patios but their hidden divisions are not known; the supported floor band is continuous. The 1.0 m northwest terrace and six-riser flight remain a separate structure owned by issue 54. The band stops west of Calle Isabel and its pool-side gate; the further eastern garden opening visible in IMG_2205 is outside this north-front trace and is not repeated across the lane."
   }
  ]
 }

@@ -899,7 +899,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "raised_terraces.json:north-pool-west-terrace"
+   "north_pool_gardens.json:north-pool-lawn-path",
+   "raised_terraces.json:north-pool-west-terrace",
+   "raised_terraces.json:north-pool-north-patios"
   ],
   "looksAt": [
    -176.7,
@@ -939,7 +941,10 @@
    "altitude": 9.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "north_pool_gardens.json:north-pool-lawn-path",
+   "raised_terraces.json:north-pool-north-patios"
+  ],
   "looksAt": [
    -176.7,
    20.1
@@ -977,6 +982,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-west-terrace"
   ],
   "looksAt": [
@@ -1015,7 +1021,9 @@
    "altitude": 9.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:north-pool-north-patios"
+  ],
   "looksAt": [
    -171.0,
    27.0
@@ -1051,7 +1059,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "raised_terraces.json:north-pool-west-terrace"
+   "north_pool_gardens.json:north-pool-lawn-path",
+   "raised_terraces.json:north-pool-west-terrace",
+   "raised_terraces.json:north-pool-north-patios"
   ],
   "looksAt": [
    -171.5,
