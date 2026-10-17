@@ -163,13 +163,15 @@
     "data/street_layout.json",
     "proposals/calle-elena.json",
     "data/terrain.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/door_sills.json"
    ],
    "src": [
     "src/elena-north.ts",
     "src/ramp-steps.ts",
     "src/terrain.ts",
-    "src/layout-routes.ts"
+    "src/layout-routes.ts",
+    "src/door-sills.ts"
    ],
    "notes": [
     "IMG_2254 shows the sign CALLE ELENA 18-30.",
@@ -180,7 +182,8 @@
     "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios.",
     "Issue #34: the short paved spur between the two hedged beds now reaches a closed timber door in a finite white garden wall; the barred window is in a short transverse return at the north end of the planted bed (IMG_2199-2201). Extents against existing bed backs and heights are estimated; no unseen patio enclosure or level change is inferred.",
     "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.",
-    "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced."
+    "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced.",
+    "Issue #57 (data/door_sills.json): red-tread sills, 0.12 m, at the two brown doors in the white wall west of the junction lawns (IMG_2260/2261/2330). Not modelled yet: that wall and its doors. The door on the east side at the junction (IMG_2253) has no visible sill and was left out. Open: the terrain rule's guessed west rise puts these lawns 0.2-0.3 m above the lane, while the photos show them level with it behind a 0.1 m kerb."
    ]
   },
   {
@@ -255,15 +258,18 @@
     "data/dali_cervantes.json",
     "data/dali_photo_reference.json",
     "data/coastal_gate.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/door_sills.json"
    ],
    "src": [
     "src/coastal-gate.ts",
-    "src/dali-threshold.ts"
+    "src/dali-threshold.ts",
+    "src/door-sills.ts"
    ],
    "notes": [
     "The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.",
-    "IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign."
+    "IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.",
+    "Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is not opened. Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb."
    ]
   },
   {

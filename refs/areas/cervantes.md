@@ -120,42 +120,49 @@ graph LR
   F11 --> PIMG_2273_jpg(["IMG_2273"])
   F11 --> PIMG_2274_jpg(["IMG_2274"])
   F11 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F12["Cervantes / Elena · front lawn 1"]
-  F12 --> PIMG_2260_jpg(["IMG_2260"])
+  A --> F12["Elena south · sill at the second door, north along the same wall"]
   F12 --> PIMG_2261_jpg(["IMG_2261"])
-  F12 --> PIMG_2263_jpg(["IMG_2263"])
-  F12 --> PIMG_2329_jpg(["IMG_2329"])
-  F12 --> PIMG_2342_jpg(["IMG_2342"])
-  F12 --> PIMG_2358_jpg(["IMG_2358"])
-  F12 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F13["Cervantes / Elena · front lawn 2"]
+  F12 --> PIMG_2330_jpg(["IMG_2330"])
+  A --> F13["Elena south · sill at the door at the end of the lawn path"]
   F13 --> PIMG_2260_jpg(["IMG_2260"])
   F13 --> PIMG_2261_jpg(["IMG_2261"])
-  F13 --> PIMG_2329_jpg(["IMG_2329"])
-  F13 --> PIMG_2342_jpg(["IMG_2342"])
-  F13 --> PIMG_2358_jpg(["IMG_2358"])
-  F13 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F14["Cervantes / Elena · paved front enclosure"]
+  F13 --> PIMG_2330_jpg(["IMG_2330"])
+  A --> F14["Cervantes / Elena · front lawn 1"]
   F14 --> PIMG_2260_jpg(["IMG_2260"])
   F14 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F15["Front-door approach between lawns"]
+  F14 --> PIMG_2263_jpg(["IMG_2263"])
+  F14 --> PIMG_2329_jpg(["IMG_2329"])
+  F14 --> PIMG_2342_jpg(["IMG_2342"])
+  F14 --> PIMG_2358_jpg(["IMG_2358"])
+  F14 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F15["Cervantes / Elena · front lawn 2"]
   F15 --> PIMG_2260_jpg(["IMG_2260"])
   F15 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F16["Cervantes · planting along low wall"]
-  F16 --> PIMG_2273_jpg(["IMG_2273"])
-  F16 --> PIMG_2274_jpg(["IMG_2274"])
-  A --> F17["Cervantes / Elena · clipped lawn tree 1"]
-  F17 --> PIMG_2329_jpg(["IMG_2329"])
-  F17 --> PIMG_2342_jpg(["IMG_2342"])
-  F17 --> PIMG_2358_jpg(["IMG_2358"])
-  F17 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F18["Cervantes / Elena ramp"]
-  F18 --> PIMG_2262_jpg(["IMG_2262"])
-  F18 --> PIMG_2265_jpg(["IMG_2265"])
-  F18 --> PIMG_2286_jpg(["IMG_2286"])
-  A --> F19["Cervantes / Elena · steps beside the ramp"]
-  F19 --> PIMG_2262_jpg(["IMG_2262"])
-  F19 --> PIMG_2286_jpg(["IMG_2286"])
+  F15 --> PIMG_2329_jpg(["IMG_2329"])
+  F15 --> PIMG_2342_jpg(["IMG_2342"])
+  F15 --> PIMG_2358_jpg(["IMG_2358"])
+  F15 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F16["Cervantes / Elena · paved front enclosure"]
+  F16 --> PIMG_2260_jpg(["IMG_2260"])
+  F16 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F17["Front-door approach between lawns"]
+  F17 --> PIMG_2260_jpg(["IMG_2260"])
+  F17 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F18["Cervantes · planting along low wall"]
+  F18 --> PIMG_2273_jpg(["IMG_2273"])
+  F18 --> PIMG_2274_jpg(["IMG_2274"])
+  A --> F19["Cervantes / Elena · clipped lawn tree 1"]
+  F19 --> PIMG_2329_jpg(["IMG_2329"])
+  F19 --> PIMG_2342_jpg(["IMG_2342"])
+  F19 --> PIMG_2358_jpg(["IMG_2358"])
+  F19 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F20["Cervantes / Elena ramp"]
+  F20 --> PIMG_2262_jpg(["IMG_2262"])
+  F20 --> PIMG_2265_jpg(["IMG_2265"])
+  F20 --> PIMG_2286_jpg(["IMG_2286"])
+  A --> F21["Cervantes / Elena · steps beside the ramp"]
+  F21 --> PIMG_2262_jpg(["IMG_2262"])
+  F21 --> PIMG_2286_jpg(["IMG_2286"])
 ```
 
 ## Reviewed references
@@ -163,13 +170,13 @@ graph LR
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2275.jpg](../../public/photos-ref/IMG_2275.jpg) | ground | levels, layout | Cervantes exit onto Pintor Dalí: slope and drain _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
-| [IMG_2260.jpg](../../public/photos-ref/IMG_2260.jpg) | ground | layout, planting | Cervantes junction: white terraces and small lawns _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3._ |
+| [IMG_2260.jpg](../../public/photos-ref/IMG_2260.jpg) | ground | layout, planting | Cervantes junction: white terraces and small lawns _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, door_sills.json:elena-lawn-door-sill._ |
+| [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades | Cervantes junction: another view of the same terraces _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
 | [IMG_2265.jpg](../../public/photos-ref/IMG_2265.jpg) | ground | layout, levels | Cervantes: lane facing into the resort _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, ramp:cervantes-elena-ramp._ |
 | [IMG_2273.jpg](../../public/photos-ref/IMG_2273.jpg) | ground | facades, layout | Cervantes: straight lane and barred windows _Used by: frontage_divisions.json:cervantes-west-planting, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
 | [IMG_2274.jpg](../../public/photos-ref/IMG_2274.jpg) | ground | planting, materials | Cervantes: planting and paving detail _Used by: frontage_divisions.json:cervantes-west-planting, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
 | [IMG_2263.jpg](../../public/photos-ref/IMG_2263.jpg) | ground | layout | Cervantes: lane and clipped planting toward the junction _Used by: frontage_divisions.json:cervantes-elena-lawn-1, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
 | [IMG_2264.jpg](../../public/photos-ref/IMG_2264.jpg) | ground | layout | Cervantes: lane facing toward Pintor Dalí _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
-| [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades | Cervantes junction: another view of the same terraces _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path._ |
 | [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: cervantes_north_patios.json:cervantes-north-partition-east, cervantes_north_patios.json:cervantes-north-partition-middle, cervantes_north_patios.json:cervantes-north-partition-west, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2359.jpg](../../public/photos-ref/IMG_2359.jpg) | roof | layout, facades | Roof by Elena: over barrel tiles to the Cervantes patios **Looks at:** The walled patios along Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: cervantes_north_patios.json:cervantes-north-partition-east, cervantes_north_patios.json:cervantes-north-partition-middle, cervantes_north_patios.json:cervantes-north-partition-west, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: cervantes_north_patios.json:cervantes-north-partition-east, cervantes_north_patios.json:cervantes-north-partition-middle, cervantes_north_patios.json:cervantes-north-partition-west._ |

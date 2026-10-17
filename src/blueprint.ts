@@ -12,6 +12,7 @@ import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { closestOnSegment, pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
+import {doorSills,sillRing,footpathBandRing,footpathLawnRing,footpathKerbLine,footpathDrainRing,approachRing,approachKerbLines} from "./door-sills";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
 import { seaWallSegments } from "./south-pool";
@@ -276,6 +277,18 @@ async function boot(): Promise<void> {
   for(const k of daliThresholdKerbs)threshold.append(el("path",{d:"M"+k.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf3","stroke-width":k.width}));
   threshold.append(el("path",{d:"M"+daliPrivateEdge.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#8b5742","stroke-width":.18,"stroke-dasharray":".5 .3"}));
   world.append(threshold);
+  // Issue #57: sills at photographed doors, the kerbed Dalí footpath and the south Dalí arch approach.
+  const steps=el("g",{id:"door-sills"});
+  const stepNode=(d:string,attrs:Record<string,string|number>,text:string)=>{const node=el("path",{d,...attrs});const title=el("title",{});title.textContent=text;node.append(title);steps.append(node);};
+  const kerbData=doorSills.footpathKerb,approachData=doorSills.approach;
+  stepNode(path(footpathBandRing),{fill:"#c7977c","data-door-sill-id":kerbData.id},`${kerbData.name}: ${kerbData.trust} · ${kerbData.evidence.join(", ")}`);
+  stepNode(path(footpathLawnRing),{fill:"#718658"},kerbData.name+" · grass strip");
+  stepNode(path(footpathDrainRing),{fill:"#3b4243"},`${kerbData.drain.name} · ${kerbData.drain.evidence.join(", ")}`);
+  stepNode("M"+footpathKerbLine.map(p=>p.join(" ")).join("L"),{fill:"none",stroke:"#fffdf3","stroke-width":kerbData.kerbWidth},kerbData.name+" · white kerb");
+  stepNode(path(approachRing),{fill:"#a39b8c",stroke:"#7b7366","stroke-width":.05,"data-door-sill-id":approachData.id},`${approachData.name}: ${approachData.trust} · ${approachData.evidence.join(", ")}`);
+  for(const line of approachKerbLines)stepNode("M"+line.map(p=>p.join(" ")).join("L"),{fill:"none",stroke:"#fffdf3","stroke-width":approachData.kerbWidth},approachData.name+" · flared white kerb");
+  for(const sill of doorSills.sills)stepNode(path(sillRing(sill)),{fill:sill.tread==="red"?"#a75d43":"#fffdf3",stroke:"#fffdf3","stroke-width":.05,"data-door-sill-id":sill.id},`${sill.name}: ${sill.trust} · ${sill.evidence.join(", ")}`);
+  world.append(steps);
   for (const area of skeleton.areas) {
     if (!area.name || (area.kind === "car_park" && skeleton.boundaryReference?.carParks?.length)) continue;
     const cx = area.ring.reduce((sum, p) => sum + p[0], 0) / area.ring.length;

@@ -118,6 +118,12 @@ def features(s):
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])
+    # Issue #57: door sills, the kerbed Dalí footpath and the south Dalí approach (data/door_sills.json).
+    sills=json.loads((ROOT/'data/door_sills.json').read_text())
+    for f in sills['sills']:add('door_sills.json:'+f['id'],f['name'],'reference feature','photo-placed sill; height from the levels survey',evidence=f['evidence'],points=[f['door']])
+    k,a=sills['footpathKerb'],sills['approach']
+    add('door_sills.json:'+k['id'],k['name'],'reference feature','photo-supported kerb on the mapped car park edge; extent estimated',evidence=k['evidence'],points=[[k['origin'][i]+k['along'][i]*t for i in range(2)] for t in (0,k['length'])])
+    add('door_sills.json:'+a['id'],a['name'],'reference feature','photo-supported approach square to the registry arch recess; length estimated',evidence=a['evidence'],points=[[a['arch'][i]+a['outward'][i]*t for i in range(2)] for t in (0,a['foot'])])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

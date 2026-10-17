@@ -61,6 +61,7 @@ const path = require("node:path");
       import("/src/middle-pool-sw-gateway.ts"),
       import("/src/middle-pool-south-gate.ts"),
     ]);
+    const sills = await import("/src/door-sills.ts"); // issue #57
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
     const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
@@ -102,6 +103,7 @@ const path = require("node:path");
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
             stepsGroundOffset(x, z) +
+            sills.doorSillsGroundOffset(x, z) +
             gardenGroundOffset(x,z,s.boundaryReference) +
             poolGroundY(x, z) +
             referenceGroundHeight(s.boundaryReference, x, z),
@@ -203,6 +205,34 @@ const path = require("node:path");
       if(Math.hypot(out.x-at[0],out.z-at[1])<.4)throw Error("Closed garden door is not solid");
       const patio=gardenPoint(0,1),foot=gardenPoint(0,-gardenDoor.stepRun*2-.1);
       if(Math.abs(world.groundHeight(...patio)-world.groundHeight(...foot)-gardenDoor.rise)>.01)throw Error("Private patio is not level with garden door sill");
+    }
+    // Issue #57: sills, the kerbed Dalí footpath and the south Dalí approach are stepped onto and off,
+    // rise by the surveyed amounts, and their visible tops follow the player ground.
+    {
+      const d = sills.doorSills, scene = new THREE.Scene(); sills.addDoorSills(scene); scene.updateMatrixWorld(true);
+      const ray = new THREE.Raycaster(), top = (p, part) => { ray.set(new THREE.Vector3(p[0], 9, p[1]), new THREE.Vector3(0, -1, 0)); const hit = ray.intersectObjects(scene.children).find(h => h.object.name.endsWith(part)); if (!hit) throw Error("No visible " + part + " at " + p); return hit.point.y - world.groundHeight(...p); };
+      const near = (p, o, b) => [p[0] + o[0] * b, p[1] + o[1] * b];
+      for (const sill of d.sills) {
+        const mid = near(sill.door, sill.outward, sill.depth / 2), front = near(sill.door, sill.outward, sill.depth + 0.03), out = near(sill.door, sill.outward, sill.depth + 0.6);
+        if (Math.abs(world.groundHeight(...mid) - world.groundHeight(...front) - sill.rise) > .015) throw Error("Sill " + sill.id + " is not one riser above the ground in front");
+        if (Math.abs(top(mid, "-tread") - (sills.ELENA_SURFACE - 0.06)) > .01) throw Error("Sill " + sill.id + " visible tread disagrees with player ground");
+        walk([out, near(sill.door, sill.outward, 0.05), out]);
+      }
+      const k = d.footpathKerb, band = (p) => sills.kerbPoint(...p);
+      for (const [sa, ca] of [[10, 2.6], [20, 3.0]]) {
+        const on = band([sa, ca]), off = band([sa, sa < k.pathKerbFrom ? -0.8 : k.pathEdge - 0.8]);
+        if (Math.abs(world.groundHeight(...on) - world.groundHeight(...off) - k.rise) > .01) throw Error("Dalí footpath is not a kerb above the asphalt at " + sa);
+        walk([off, on, off]);
+      }
+      const visible = [[1.25, 2.5], [10, 3.0], [22, 3.0]].map(([sa, ca]) => top(band([sa, ca]), "-path"));
+      if (Math.max(...visible) - Math.min(...visible) > .01) throw Error("Dalí footpath tiles do not follow its player ground");
+      const a = d.approach, arch = sills.approachPoint(0.3, 0), foot = sills.approachPoint(a.foot + 1, 0);
+      const rise = world.groundHeight(...arch) - world.groundHeight(...foot);
+      if (rise < 0.15 || rise > 0.35) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
+      for (let t = 0; t < a.foot + 1; t += 0.05) if (Math.abs(world.groundHeight(...sills.approachPoint(t, 0)) - world.groundHeight(...sills.approachPoint(t + 0.05, 0))) > 0.03) throw Error("South Dalí approach has a step at " + t.toFixed(2));
+      const slope = [0.5, 3, 5.8].map(t => top(sills.approachPoint(t, 0), "-flagstones"));
+      if (Math.max(...slope) - Math.min(...slope) > .01) throw Error("South Dalí flagstones do not follow the player ground");
+      walk([foot, sills.approachPoint(0.6, 0), foot]);
     }
     // Elena north: through the arched gateway, and the raised beds keep the player out.
     {
