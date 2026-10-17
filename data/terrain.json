@@ -1,5 +1,5 @@
 {
-  "note": "Ground heights across the resort, in metres above the level of the middle pool. From Dave (2026-10-13): the Pintor Dalí side is about half a metre higher, and the change is mostly at short ramps on the lanes. Coordinates are turned-frame metres (sea downward).",
+  "note": "Ground heights across the resort, in metres above the level of the middle pool. From Dave (2026-10-13): the Pintor Dal\u00ed side is about half a metre higher, and the change is mostly at short ramps on the lanes. Coordinates are turned-frame metres (sea downward).",
   "west": {
     "rise": 0.5,
     "run": 7,
@@ -59,8 +59,8 @@
     ],
     "evidence": {
       "cervantes": "photo:IMG_2262.jpg, IMG_2265.jpg: tiled ramp at Elena, foot at x -162",
-      "eva": "photo:IMG_2333.jpg, IMG_2248.jpg: three stone steps with a tiled ramp beside them climb out of the middle pool courtyard onto Calle Eva (IMG_2333); the foot is the bottom step. IMG_2248, taken a few metres further west, looks along the upper lane towards the Dalí car park, level or gently rising.",
-      "elsewhere": "guessed: the line joining the photographed rises, kept west of the north pool lawn, and 20 m in from Dalí south of Eva",
+      "eva": "photo:IMG_2333.jpg, IMG_2248.jpg: three stone steps with a tiled ramp beside them climb out of the middle pool courtyard onto Calle Eva (IMG_2333); the foot is the bottom step. IMG_2248, taken a few metres further west, looks along the upper lane towards the Dal\u00ed car park, level or gently rising.",
+      "elsewhere": "guessed: the line joining the photographed rises, kept west of the north pool lawn, and 20 m in from Dal\u00ed south of Eva",
       "middlePoolWest": "photo:IMG_2332.jpg, IMG_2331.jpg: the path between the raised planter and the pool fence is at pool level and rises at its north end to a pergola gate, with white steps up by the planter's north end; so the foot follows the back of the planter from there to the Eva steps. The north end is medium confidence."
     },
     "localRuns": [
@@ -87,5 +87,31 @@
         "trust": "Run from the step treads (about 0.45 m) and the ramp length judged in IMG_2333: 2.4 m is the shortest walkable run (slope 0.21) that keeps every tread above the ramp. Applies along the west side of the middle pool courtyard only."
       }
     ]
-  }
+  },
+  "localSurfaces": [
+    {
+      "id": "dali-south-approach",
+      "name": "Dal\u00ed south \u00b7 gentle flagstone approach",
+      "area": "dali",
+      "foot": [
+        -121,
+        218.4
+      ],
+      "top": [
+        -116.2,
+        215.5
+      ],
+      "width": 2.1,
+      "rise": 0.25,
+      "kerbHeight": 0.2,
+      "kerbWidth": 0.16,
+      "flare": 0.45,
+      "groovedToe": 0.42,
+      "evidence": [
+        "IMG_2283.jpg"
+      ],
+      "trust": "IMG_2283 shows a continuous gentle flagstone slope, flared white sides and a grooved concrete toe, not a staircase. Rise .25 m within 0.15-0.35 m photo range; run 5.61 m and width estimated. Aerial and unchanged southern registry facade constrain this bounded external approach to about 2 m; the covered passage behind it has not been traced independently and is not cut into the large registry building. Houses keep their existing datum. The approach stops outside that facade.",
+      "landing": 0.3
+    }
+  ]
 }

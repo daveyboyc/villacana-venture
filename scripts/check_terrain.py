@@ -80,4 +80,24 @@ assert all(site_y(p) == 0 for p in roads['elena-south']['points'][1:]), 'Elena s
 assert all(site_y(p) < 0.01 for p in middle['planter']['face'][:2]), 'The planter face along the path stands on the courtyard level'
 # The lane itself no longer carries a hump of its own.
 assert len(set(roads['cervantes']['heights'])) == 1
-print('Terrain: Dalí side 0.5 m up, pools level, Cervantes ramp and middle pool steps where photographed, walkable slopes PASS')
+# Finite south approach is an additional local surface, never a new west-side run.
+local_surfaces=json.loads((ROOT/'data/terrain.json').read_text()).get('localSurfaces',[])
+assert len(local_surfaces)==1
+approach=local_surfaces[0]
+length=math.dist(approach['foot'],approach['top'])
+assert approach['id']=='dali-south-approach' and approach['evidence']==['IMG_2283.jpg']
+assert 5<=length<=6 and .15<=approach['rise']<=.35 and approach['rise']/length<.07
+assert .15<=approach['kerbHeight']<=.25 and .2<=approach['landing']<=.35
+assert site_y(approach['foot'])==site_y(approach['top'])==west['rise'],'Approach starts on the inherited level Dali-side datum'
+from check_map import inside
+from check_cervantes_patio_walls import distance, sample
+u=[(approach['top'][i]-approach['foot'][i])/length for i in [0,1]]
+at=lambda a,c:[approach['foot'][0]+u[0]*a-u[1]*c,approach['foot'][1]+u[1]*a+u[0]*c]
+end=length+approach['landing'];half=approach['width']/2
+outline=[at(0,-half-approach['flare']),at(1.2,-half),at(end,-half),at(end,half),at(1.2,half),at(0,half+approach['flare'])]
+buildings=[b['ring'] for b in skeleton['buildings'] if b['floors']>0 and not b.get('passage')]
+assert all(not any(inside(*p,b) for b in buildings) for p in sample(outline+[outline[0]])),'Approach/landing intrudes into a house'
+# A radius-.42 player reaches only .12 m beyond the slope end: the .3 m exterior landing covers it.
+gap=lambda p:min(distance(p,a,b) for ring in buildings for a,b in zip(ring,ring[1:]+[ring[0]]))
+assert 0<=gap(approach['top'])-.42<approach['landing'],'Landing must cover reachable space before facade collision'
+print('Terrain: Dalí side 0.5 m up, pools level, Cervantes ramp and middle pool steps where photographed, walkable slopes and bounded continuous south approach/landing PASS')

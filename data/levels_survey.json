@@ -259,9 +259,9 @@
         "IMG_2330.jpg",
         "IMG_2253.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "door-sills",
-      "note": "Single red-tread or white sills at the house doors. Elena south is level to the middle pool gate; lawns kerbed at about 0.1 m."
+      "note": "Single red-tread or white sills at the house doors. Elena south is level to the middle pool gate; lawns kerbed at about 0.1 m. Built #57: only the two photographed garden-door sills, .12 m on the existing frontage datum; plan anchors remain estimated."
     },
     {
       "id": "middle-pool-sw-rise",
@@ -553,8 +553,8 @@
       "photos": [
         "IMG_2283.jpg"
       ],
-      "model": "missing",
-      "note": "Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps.",
+      "model": "built",
+      "note": "Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps. Built #57: bounded external .25 m rise over 5.61 m and .3 m top landing, with .20 m flared kerbs; registry passage behind remains solid/untraced.",
       "task": "door-sills"
     },
     {
@@ -571,9 +571,9 @@
         "IMG_2291.jpg",
         "IMG_2293.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "door-sills",
-      "note": "The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold."
+      "note": "The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold. Built #57: one finite 9 m photographed house-side footpath, lawn and parking-facing .12 m kerb; two flush slot drains. Other Dalí frontages and passages are not extrapolated."
     }
   ],
   "photosWanted": [

@@ -1,3 +1,4 @@
+import {photographedSills,sillOutline,doorSillSurfaces,doorSillKerbs,doorSillDrains,southApproach,approachOutline,approachKerbLines,sillDoorRings} from "./door-sills";
 import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
 import {raisedTerraceBlueprint,suppressInRaisedTerraces} from "./raised-terraces";
 import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
@@ -290,6 +291,16 @@ async function boot(): Promise<void> {
   for(const k of daliThresholdKerbs)threshold.append(el("path",{d:"M"+k.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf3","stroke-width":k.width}));
   threshold.append(el("path",{d:"M"+daliPrivateEdge.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#8b5742","stroke-width":.18,"stroke-dasharray":".5 .3"}));
   world.append(threshold);
+  const sillLayer=el("g",{id:"photo-door-sills"});
+  for(const f of [...photographedSills.map(s=>({...s,ring:sillOutline(s)})),...doorSillSurfaces,{...southApproach,ring:approachOutline}]) {
+    const node=el("path",{d:path(f.ring as Vec2[]),fill:f.id.includes("lawn")?"#718658":f.id.includes("approach")?"#b4b2a0":"#c7977c","data-sill-id":f.id,stroke:f.id===southApproach.id?"none":"#fffdf3","stroke-width":.10});
+    const title=el("title",{});title.textContent=`${f.name} · ${f.trust} · ${f.evidence.join(", ")}`;node.append(title);sillLayer.append(node);
+  }
+  for(const ring of sillDoorRings())sillLayer.append(el("path",{d:path(ring),fill:"#fffdf3",stroke:"#704d34","stroke-width":.08}));
+  for(const points of approachKerbLines)sillLayer.append(el("path",{d:"M"+points.map(p=>p.join(" ")).join("L"),stroke:"#fffdf3","stroke-width":southApproach.kerbWidth,fill:"none"}));
+  for(const k of doorSillKerbs)sillLayer.append(el("path",{d:"M"+k.points.map(p=>p.join(" ")).join("L"),stroke:"#fffdf3","stroke-width":k.width,fill:"none"}));
+  for(const d of doorSillDrains)sillLayer.append(el("circle",{cx:d.center[0],cy:d.center[1],r:.12,fill:"#39403e","data-sill-id":d.id}));
+  world.append(sillLayer);
   for (const area of skeleton.areas) {
     if (!area.name || (area.kind === "car_park" && skeleton.boundaryReference?.carParks?.length)) continue;
     const cx = area.ring.reduce((sum, p) => sum + p[0], 0) / area.ring.length;

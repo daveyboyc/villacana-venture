@@ -1,3 +1,4 @@
+import {addDoorSills,doorSillGroundOffset,inDoorSillReview,sillDoorRings} from "./door-sills";
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {addRaisedTerraces,raisedTerraceGroundOffset,raisedTerraceRings,suppressInRaisedTerraces} from "./raised-terraces";
 import {paintSeawardPaving} from "./seaward-paving";
@@ -165,14 +166,14 @@ async function boot(): Promise<void> {
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
-  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
+  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inDoorSillReview(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
 
   const player = new Player();
   player.group.userData.noDrape = true;
   scene.add(player.group);
-  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && canPlaceDecoration(x,z,.6));
+  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,.6));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && canPlaceDecoration(x,z,1.8)), walls);
+  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addMiddlePool(scene);
@@ -183,6 +184,7 @@ async function boot(): Promise<void> {
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addRaisedTerraces(scene);
+  addDoorSills(scene,!layoutOnly);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
@@ -194,7 +196,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...sillDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -255,7 +257,7 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + doorSillGroundOffset(x,z) + stepsGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 

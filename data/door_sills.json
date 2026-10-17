@@ -1,0 +1,193 @@
+{
+  "checkedAt": "2026-10-17",
+  "scope": "Only the two Elena garden-door sills, short photographed Dal\u00ed frontage and two visible drains. South approach terrain is in data/terrain.json. Small details are optional; player heights use these same outlines.",
+  "sills": [
+    {
+      "id": "elena-south-sill-1",
+      "name": "Elena south \u00b7 photographed garden-door sill 1",
+      "area": "elena",
+      "center": [
+        -148.25,
+        68.3
+      ],
+      "along": [
+        0.515,
+        0.857
+      ],
+      "width": 0.95,
+      "depth": 0.42,
+      "rise": 0.12,
+      "finish": "terracotta",
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg"
+      ],
+      "trust": "Positions estimated against the existing lawn/door-approach outline and unchanged registry facade in the georeferenced Esri aerial; about 1-2 m plan uncertainty. Photos support these two distinct garden doors only; sill width/depth and 0.12 m rise are estimated within the 0.10-0.15 m survey range. No house floors or unphotographed doors are raised. A finite closed brown leaf and short white surround back this sill; surround dimensions and rear setback are estimated, with no complete garden enclosure inferred."
+    },
+    {
+      "id": "elena-south-sill-2",
+      "name": "Elena south \u00b7 photographed garden-door sill 2",
+      "area": "elena",
+      "center": [
+        -145.15,
+        73.15
+      ],
+      "along": [
+        0.515,
+        0.857
+      ],
+      "width": 0.95,
+      "depth": 0.42,
+      "rise": 0.12,
+      "finish": "white",
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg"
+      ],
+      "trust": "Positions estimated against the existing lawn/door-approach outline and unchanged registry facade in the georeferenced Esri aerial; about 1-2 m plan uncertainty. Photos support these two distinct garden doors only; sill width/depth and 0.12 m rise are estimated within the 0.10-0.15 m survey range. No house floors or unphotographed doors are raised. A finite closed brown leaf and short white surround back this sill; surround dimensions and rear setback are estimated, with no complete garden enclosure inferred."
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "dali-eva-photo-footpath",
+      "name": "Dal\u00ed \u00b7 bounded house-side footpath at photographed arch",
+      "area": "dali",
+      "ring": [
+        [
+          -164.6771,
+          130.9058
+        ],
+        [
+          -160.1771,
+          138.9058
+        ],
+        [
+          -161.2229,
+          139.4942
+        ],
+        [
+          -165.7229,
+          131.4942
+        ]
+      ],
+      "rise": 0.12,
+      "finish": "terracotta",
+      "evidence": [
+        "IMG_2291.jpg"
+      ],
+      "trust": "Only the visible 9 m facade run is represented, parallel to the unchanged registry front near the IMG_2291 camera. Phone pin overlaps the house within its \u00b15.6 m uncertainty; it is not the subject coordinate. Surface relationship and 0.10-0.15 m parking kerb rise are photo-supported; strip ends/width/position estimated to 1-2 m. The arch lies in a large unsplit registry part; its internal passage is not newly cut or claimed accessible."
+    },
+    {
+      "id": "dali-eva-photo-lawn",
+      "name": "Dal\u00ed \u00b7 photographed lawn between footpath and parking kerb",
+      "area": "dali",
+      "ring": [
+        [
+          -165.7229,
+          131.4942
+        ],
+        [
+          -161.2229,
+          139.4942
+        ],
+        [
+          -162.0509,
+          139.9599
+        ],
+        [
+          -166.5509,
+          131.9599
+        ]
+      ],
+      "rise": 0.12,
+      "finish": "lawn",
+      "evidence": [
+        "IMG_2291.jpg"
+      ],
+      "trust": "Narrow lawn band separates house footpath from parking kerb as photographed; bounded to the same short facade run. Width .95 m and plan endpoints are approximate, not a continuous surveyed Dal\u00ed strip."
+    }
+  ],
+  "kerbs": [
+    {
+      "id": "dali-eva-parking-kerb",
+      "name": "Dal\u00ed \u00b7 parking-facing kerb beyond the lawn",
+      "area": "dali",
+      "points": [
+        [
+          -162.0509,
+          139.9599
+        ],
+        [
+          -166.5509,
+          131.9599
+        ]
+      ],
+      "width": 0.13,
+      "rise": 0.12,
+      "evidence": [
+        "IMG_2291.jpg"
+      ],
+      "trust": "White kerb on the asphalt-facing side of the lawn, not between lawn and house footpath; estimated 0.12 m rise, limited to the photographed frontage."
+    }
+  ],
+  "drains": [
+    {
+      "id": "dali-eva-arch-slot",
+      "name": "Dal\u00ed \u00b7 flush arch threshold slot drain",
+      "area": "dali",
+      "center": [
+        -163.04,
+        135.07
+      ],
+      "along": [
+        -0.872,
+        0.49
+      ],
+      "width": 1.15,
+      "depth": 0.1,
+      "evidence": [
+        "IMG_2291.jpg"
+      ],
+      "trust": "Dark slot across the passage mouth, flush with the adjacent footpath; approximate position on the short visible facade run, not a new claimed walk-through."
+    },
+    {
+      "id": "dali-patricia-slot",
+      "name": "Dal\u00ed \u00b7 photographed lane-entry slot drain",
+      "area": "dali",
+      "center": [
+        -151.25,
+        154.69
+      ],
+      "along": [
+        0.523,
+        0.852
+      ],
+      "width": 1.05,
+      "depth": 0.12,
+      "evidence": [
+        "IMG_2293.jpg"
+      ],
+      "trust": "Slot across the tiled lane inside the parking apron. Placed at the existing Patricia start by registry/road alignment, within camera \u00b15 m; the photo does not show a readable street name, so identification remains inferred."
+    }
+  ],
+  "datums": {
+    "sillBase": 0.025,
+    "roadBase": 0.27,
+    "legacyPlayerBase": 0.06,
+    "fullApron": 1.0,
+    "blendApron": 2.0,
+    "note": "Finite movement-only datum reconciliation around the new features: sills stand on the existing .025 m frontage paving; Dali surfaces stand on the existing .27 m roads. Within 1 m, soles match those visible datums; the next 2 m blend back to the inherited player datum. This outer blend is a movement approximation, not photographed terrain. Solid house interiors and pools are excluded; remote roads retain their inherited mesh/player mismatch."
+  },
+  "gardenDoor": {
+    "width": 1.55,
+    "thickness": 0.12,
+    "height": 2.0,
+    "leafWidth": 0.82,
+    "leafHeight": 1.75,
+    "backGap": 0.09,
+    "note": "Two finite closed brown garden-door leaves with short white jamb/head surrounds are directly visible in 2260/2261/2330. Each surround stops at its own 1.55 m width; no enclosure or connecting wall is inferred. Width, height and .09 m rear setback from sill edge are estimates.",
+    "inwardSign": -1
+  }
+}

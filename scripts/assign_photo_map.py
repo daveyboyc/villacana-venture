@@ -120,6 +120,12 @@ def features(s):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
 
+    sills=json.loads((ROOT/'data/door_sills.json').read_text())
+    for f in sills['sills']+sills['surfaces']+sills['kerbs']+sills['drains']:
+        add('door_sills.json:'+f['id'],f['name'],'reference feature',f['trust'],evidence=f['evidence'],**({'ring':f['ring']} if 'ring' in f else {'points':f.get('points',[f.get('center')])}))
+    for f in json.loads((ROOT/'data/terrain.json').read_text()).get('localSurfaces',[]):
+        add('terrain.json:'+f['id'],f['name'],'reference feature',f['trust'],points=[f['foot'],f['top']],evidence=f['evidence'])
+
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])

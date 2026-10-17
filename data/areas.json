@@ -160,7 +160,8 @@
    "docs/ELENA_EAST_PATIOS.md",
     "docs/STREET_LAYOUT.md",
     "docs/TERRAIN.md",
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/DOOR_SILLS.md"
    ],
    "data": [
     "data/elena_north.json",
@@ -169,14 +170,16 @@
     "data/street_layout.json",
     "proposals/calle-elena.json",
     "data/terrain.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/door_sills.json"
    ],
    "src": [
     "src/elena-north.ts",
    "src/elena-east-patios.ts",
     "src/ramp-steps.ts",
     "src/terrain.ts",
-    "src/layout-routes.ts"
+    "src/layout-routes.ts",
+    "src/door-sills.ts"
    ],
    "notes": [
     "IMG_2254 shows the sign CALLE ELENA 18-30.",
@@ -188,7 +191,8 @@
     "Issue #34: the short paved spur between the two hedged beds now reaches a closed timber door in a finite white garden wall; the barred window is in a short transverse return at the north end of the planted bed (IMG_2199-2201). Extents against existing bed backs and heights are estimated; no unseen patio enclosure or level change is inferred.",
     "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.",
     "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced.",
-    "Issue #38 (docs/ELENA_EAST_PATIOS.md): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the junction (the trained-trunk wall, curved-coping door and cane-roofed pergola are on the Cervantes south side, cf. IMG_2197; new task cervantes-east-south-patios). The patios behind the Elena garden wall are hidden under the magnolia canopy from every roof camera, so their partitions, floors and levels stay unmodelled. Built from ground photos: the garden wall continued behind the second hedged bed (IMG_2197, IMG_2199), a solid white wall behind the plumbago bed closing the patios off from Cervantes (IMG_2356), and a timber pergola behind the garden door (IMG_2199, IMG_2200); extents and heights estimated."
+    "Issue #38 (docs/ELENA_EAST_PATIOS.md): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the junction (the trained-trunk wall, curved-coping door and cane-roofed pergola are on the Cervantes south side, cf. IMG_2197; new task cervantes-east-south-patios). The patios behind the Elena garden wall are hidden under the magnolia canopy from every roof camera, so their partitions, floors and levels stay unmodelled. Built from ground photos: the garden wall continued behind the second hedged bed (IMG_2197, IMG_2199), a solid white wall behind the plumbago bed closing the patios off from Cervantes (IMG_2356), and a timber pergola behind the garden door (IMG_2199, IMG_2200); extents and heights estimated.",
+    "Issue #57 (docs/DOOR_SILLS.md): only the two red/white garden-door sills visible in IMG_2260/2261/2330 are modelled at .12 m on the existing frontage. Positions follow finite lawn/path endpoints against the aerial and unchanged registry facade, with 1-2 m plan uncertainty; no repeated sills or house floors are raised. Each sill now has its photographed closed brown garden-door leaf in a finite short white surround; estimated surrounds stop locally without inventing a garden enclosure."
    ]
   },
   {
@@ -258,21 +262,25 @@
    "docs": [
     "docs/DALI_CERVANTES.md",
     "docs/LAYOUT_ACCURACY.md",
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/DOOR_SILLS.md"
    ],
    "data": [
     "data/dali_cervantes.json",
     "data/dali_photo_reference.json",
     "data/coastal_gate.json",
-    "data/levels_survey.json"
+    "data/levels_survey.json",
+    "data/door_sills.json"
    ],
    "src": [
     "src/coastal-gate.ts",
-    "src/dali-threshold.ts"
+    "src/dali-threshold.ts",
+    "src/door-sills.ts"
    ],
    "notes": [
     "The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.",
-    "IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign."
+    "IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.",
+    "Issue #57 (docs/DOOR_SILLS.md): finite photo-backed footpath/lawn/outer parking kerb (IMG_2291), two flush drains (2291/2293), and a continuous .25 m / 5.61 m south approach with flared .20 m kerbs and grooved toe (2283). A .3 m exterior landing covers reachable space before the unchanged solid registry facade. The passage itself is untraced; no new walk-through is claimed. Only local movement datums are reconciled with the visible surfaces; the outer 2 m blend remains an approximation to inherited road/player mismatch."
    ]
   },
   {

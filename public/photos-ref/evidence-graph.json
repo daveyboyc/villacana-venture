@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 339,
-  "photosCitedByModel": 81,
-  "modelFeaturesWithPhotoCitations": 84
+  "features": 347,
+  "photosCitedByModel": 85,
+  "modelFeaturesWithPhotoCitations": 92
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2669,6 +2669,82 @@
    "evidence": [
     "IMG_2333.jpg",
     "IMG_2248.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:elena-south-sill-1",
+   "name": "Elena south · photographed garden-door sill 1",
+   "kind": "reference feature",
+   "source": "Positions estimated against the existing lawn/door-approach outline and unchanged registry facade in the georeferenced Esri aerial; about 1-2 m plan uncertainty. Photos support these two distinct garden doors only; sill width/depth and 0.12 m rise are estimated within the 0.10-0.15 m survey range. No house floors or unphotographed doors are raised. A finite closed brown leaf and short white surround back this sill; surround dimensions and rear setback are estimated, with no complete garden enclosure inferred.",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:elena-south-sill-2",
+   "name": "Elena south · photographed garden-door sill 2",
+   "kind": "reference feature",
+   "source": "Positions estimated against the existing lawn/door-approach outline and unchanged registry facade in the georeferenced Esri aerial; about 1-2 m plan uncertainty. Photos support these two distinct garden doors only; sill width/depth and 0.12 m rise are estimated within the 0.10-0.15 m survey range. No house floors or unphotographed doors are raised. A finite closed brown leaf and short white surround back this sill; surround dimensions and rear setback are estimated, with no complete garden enclosure inferred.",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-eva-photo-footpath",
+   "name": "Dalí · bounded house-side footpath at photographed arch",
+   "kind": "reference feature",
+   "source": "Only the visible 9 m facade run is represented, parallel to the unchanged registry front near the IMG_2291 camera. Phone pin overlaps the house within its ±5.6 m uncertainty; it is not the subject coordinate. Surface relationship and 0.10-0.15 m parking kerb rise are photo-supported; strip ends/width/position estimated to 1-2 m. The arch lies in a large unsplit registry part; its internal passage is not newly cut or claimed accessible.",
+   "evidence": [
+    "IMG_2291.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-eva-photo-lawn",
+   "name": "Dalí · photographed lawn between footpath and parking kerb",
+   "kind": "reference feature",
+   "source": "Narrow lawn band separates house footpath from parking kerb as photographed; bounded to the same short facade run. Width .95 m and plan endpoints are approximate, not a continuous surveyed Dalí strip.",
+   "evidence": [
+    "IMG_2291.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-eva-parking-kerb",
+   "name": "Dalí · parking-facing kerb beyond the lawn",
+   "kind": "reference feature",
+   "source": "White kerb on the asphalt-facing side of the lawn, not between lawn and house footpath; estimated 0.12 m rise, limited to the photographed frontage.",
+   "evidence": [
+    "IMG_2291.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-eva-arch-slot",
+   "name": "Dalí · flush arch threshold slot drain",
+   "kind": "reference feature",
+   "source": "Dark slot across the passage mouth, flush with the adjacent footpath; approximate position on the short visible facade run, not a new claimed walk-through.",
+   "evidence": [
+    "IMG_2291.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-patricia-slot",
+   "name": "Dalí · photographed lane-entry slot drain",
+   "kind": "reference feature",
+   "source": "Slot across the tiled lane inside the parking apron. Placed at the existing Patricia start by registry/road alignment, within camera ±5 m; the photo does not show a readable street name, so identification remains inferred.",
+   "evidence": [
+    "IMG_2293.jpg"
+   ]
+  },
+  {
+   "id": "terrain.json:dali-south-approach",
+   "name": "Dalí south · gentle flagstone approach",
+   "kind": "reference feature",
+   "source": "IMG_2283 shows a continuous gentle flagstone slope, flared white sides and a grooved concrete toe, not a staircase. Rise .25 m within 0.15-0.35 m photo range; run 5.61 m and width estimated. Aerial and unchanged southern registry facade constrain this bounded external approach to about 2 m; the covered passage behind it has not been traced independently and is not cut into the large registry building. Houses keep their existing datum. The approach stops outside that facade.",
+   "evidence": [
+    "IMG_2283.jpg"
    ]
   },
   {
@@ -5525,6 +5601,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2260.jpg",
+   "to": "door_sills.json:elena-south-sill-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
+   "to": "door_sills.json:elena-south-sill-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2261.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -5571,6 +5659,18 @@
   {
    "from": "photo:IMG_2261.jpg",
    "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "door_sills.json:elena-south-sill-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "door_sills.json:elena-south-sill-2",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -6322,6 +6422,12 @@
    "angleOffset": 22.4
   },
   {
+   "from": "photo:IMG_2283.jpg",
+   "to": "terrain.json:dali-south-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2284.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -6559,6 +6665,30 @@
    "angleOffset": 29.2
   },
   {
+   "from": "photo:IMG_2291.jpg",
+   "to": "door_sills.json:dali-eva-photo-footpath",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "door_sills.json:dali-eva-photo-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "door_sills.json:dali-eva-parking-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "door_sills.json:dali-eva-arch-slot",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2292.jpg",
    "to": "street:eva-west-footpath",
    "relation": "camera-nearby",
@@ -6641,6 +6771,12 @@
    "relation": "possibly-in-view",
    "distance": 35.5,
    "angleOffset": 20.5
+  },
+  {
+   "from": "photo:IMG_2293.jpg",
+   "to": "door_sills.json:dali-patricia-slot",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2294.jpg",
@@ -6978,6 +7114,18 @@
    "relation": "possibly-in-view",
    "distance": 32.3,
    "angleOffset": 25.8
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "door_sills.json:elena-south-sill-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "door_sills.json:elena-south-sill-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2331.jpg",

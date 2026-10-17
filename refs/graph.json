@@ -1456,6 +1456,41 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "door_sills.json:dali-eva-arch-slot",
+   "kind": "model-feature",
+   "name": "Dalí · flush arch threshold slot drain"
+  },
+  {
+   "id": "door_sills.json:dali-eva-parking-kerb",
+   "kind": "model-feature",
+   "name": "Dalí · parking-facing kerb beyond the lawn"
+  },
+  {
+   "id": "door_sills.json:dali-eva-photo-footpath",
+   "kind": "model-feature",
+   "name": "Dalí · bounded house-side footpath at photographed arch"
+  },
+  {
+   "id": "door_sills.json:dali-eva-photo-lawn",
+   "kind": "model-feature",
+   "name": "Dalí · photographed lawn between footpath and parking kerb"
+  },
+  {
+   "id": "door_sills.json:dali-patricia-slot",
+   "kind": "model-feature",
+   "name": "Dalí · photographed lane-entry slot drain"
+  },
+  {
+   "id": "door_sills.json:elena-south-sill-1",
+   "kind": "model-feature",
+   "name": "Elena south · photographed garden-door sill 1"
+  },
+  {
+   "id": "door_sills.json:elena-south-sill-2",
+   "kind": "model-feature",
+   "name": "Elena south · photographed garden-door sill 2"
+  },
+  {
    "id": "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "kind": "model-feature",
    "name": "Elena east patios · white wall behind the plumbago bed on Cervantes"
@@ -1731,6 +1766,11 @@
    "name": "Middle pool · stone steps up to Calle Eva"
   },
   {
+   "id": "terrain.json:dali-south-approach",
+   "kind": "model-feature",
+   "name": "Dalí south · gentle flagstone approach"
+  },
+  {
    "id": "task:elena-garden-door",
    "kind": "build-task",
    "name": "Elena north: path and garden door between the two hedged beds",
@@ -1941,7 +1981,7 @@
    "kind": "build-task",
    "name": "Door sills and footpath kerbs: the small steps everywhere",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 57
   }
  ],
@@ -5307,6 +5347,61 @@
    "relation": "cites"
   },
   {
+   "from": "door_sills.json:dali-eva-arch-slot",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-eva-parking-kerb",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-eva-photo-footpath",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-eva-photo-lawn",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-patricia-slot",
+   "to": "ref:IMG_2293.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-1",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-1",
+   "to": "ref:IMG_2261.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-1",
+   "to": "ref:IMG_2330.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-2",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-2",
+   "to": "ref:IMG_2261.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-2",
+   "to": "ref:IMG_2330.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "to": "ref:IMG_2197.jpg",
    "relation": "cites"
@@ -5987,6 +6082,11 @@
    "relation": "cites"
   },
   {
+   "from": "terrain.json:dali-south-approach",
+   "to": "ref:IMG_2283.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "area:beach",
    "to": "area:barraka-beach",
    "relation": "in-area"
@@ -6139,6 +6239,41 @@
   {
    "from": "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-eva-arch-slot",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-eva-parking-kerb",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-eva-photo-footpath",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-eva-photo-lawn",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-patricia-slot",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-1",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:elena-south-sill-2",
+   "to": "area:cervantes",
    "relation": "in-area"
   },
   {
@@ -6439,6 +6574,11 @@
   {
    "from": "steps:middle-pool-sw-steps",
    "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "terrain.json:dali-south-approach",
+   "to": "area:dali",
    "relation": "in-area"
   },
   {
@@ -7294,6 +7434,12 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2283.jpg",
+   "to": "terrain.json:dali-south-approach",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2284.jpg",
    "to": "parking:Dalí car park",
    "relation": "looks-at",
@@ -7422,6 +7568,12 @@
   {
    "from": "ref:IMG_2293.jpg",
    "to": "street:patricia",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2296.jpg",
+   "to": "terrain.json:dali-south-approach",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

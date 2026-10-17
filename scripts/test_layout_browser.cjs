@@ -65,6 +65,7 @@ const path = require("node:path");
       import("/src/middle-pool-south-gate.ts"),
       import("/src/raised-terraces.ts"),
     ]);
+    const {doorSillGroundOffset,doorSillRise,photographedSills,doorSillSurfaces,doorSillKerbs,southApproach,approachPoint,approachLength,approachHalfWidth,addDoorSills,sillDoorRings,sillToePoint}=await import("/src/door-sills.ts");
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
     const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
@@ -76,6 +77,7 @@ const path = require("node:path");
         ...barrierRings(s.boundaryReference.barriers),
         ...cervantesPatioWallRings(),
         ...gardenDoorRings(),
+        ...sillDoorRings(),
         ...elenaNorthRings(),
         ...(await import("/src/elena-east-patios.ts")).elenaEastPatioRings(),
         ...middlePoolRings(),
@@ -107,6 +109,7 @@ const path = require("node:path");
         sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
+            doorSillGroundOffset(x,z) +
             stepsGroundOffset(x, z) +
             raisedTerraceGroundOffset(x, z) +
             gardenGroundOffset(x,z,s.boundaryReference) +
@@ -162,6 +165,52 @@ const path = require("node:path");
     for (const route of routes)
       for (const points of [route.points, [...route.points].reverse()])
         walk(points);
+    // Issue #57: finite thresholds are stepped ground; the south approach is a smooth slope.
+    for(const sill of photographedSills)if(Math.abs(doorSillRise(...sill.center)-sill.rise)>1e-6)throw Error(sill.id+": missing photographed sill ground");
+    const rises=[];
+    for(let d=0.05;d<approachLength-.1;d+=.10)rises.push(doorSillRise(...approachPoint(d)));
+    if(rises.some((h,i)=>i&&Math.abs(h-rises[i-1])>.01))throw Error("South approach has stair risers instead of continuous slope");
+    walk([approachPoint(-.3),approachPoint(approachLength-.5)]);walk([approachPoint(approachLength-.5),approachPoint(-.3)]);
+    if(!document.querySelector('[data-sill-id="dali-south-approach"]'))throw Error("South approach missing from shared map");
+    const detailScene=new THREE.Scene();addDoorSills(detailScene,false);
+    if(detailScene.children.some(o=>o.userData.doorSillFeature==="elena-south-sill-1"))throw Error("Door sill detail leaks into Layout");
+    addDoorSills(detailScene,true);
+    if(!detailScene.children.some(o=>o.userData.doorSillFeature==="elena-south-sill-1"))throw Error("Door sill missing from Details");
+    // Absolute world-space sole-to-visible-mesh checks catch origin/datum mistakes.
+    detailScene.updateMatrixWorld(true);
+    const surfaceRay=new THREE.Raycaster();
+    const standOn=(point,label)=>{
+      player.place(...point,0);
+      for(let i=0;i<180;i++)player.update(1/120,input,world,0);
+      player.group.updateMatrixWorld(true);
+      const feet=[];
+      player.group.traverse(o=>{if(o.isMesh&&o.geometry.type==="BoxGeometry"&&Math.abs(o.geometry.parameters.height-.08)<1e-6)feet.push(new THREE.Box3().setFromObject(o).min.y);});
+      if(feet.length!==2)throw Error("Cannot identify both player shoe soles");
+      surfaceRay.set(new THREE.Vector3(point[0],5,point[1]),new THREE.Vector3(0,-1,0));
+      const hit=surfaceRay.intersectObjects(detailScene.children,true)[0];
+      if(!hit||feet.some(y=>Math.abs(y-hit.point.y)>.015))throw Error(label+": actual sole/visible mesh mismatch "+feet+" vs "+hit?.point.y);
+    };
+    const closedSillDoors=new Solids(sillDoorRings());
+    for(const ring of sillDoorRings()){
+      const center=[ring.reduce((v,p)=>v+p[0],0)/ring.length,ring.reduce((v,p)=>v+p[1],0)/ring.length],resolved=closedSillDoors.resolve(...center,.42);
+      if(Math.hypot(resolved.x-center[0],resolved.z-center[1])<.4)throw Error("Photographed private garden door is not closed collision");
+    }
+    for(const sill of photographedSills)standOn(sillToePoint(sill),sill.id+" accessible toe");
+    for(const f of doorSillSurfaces)standOn([f.ring.reduce((sum,p)=>sum+p[0],0)/f.ring.length,f.ring.reduce((sum,p)=>sum+p[1],0)/f.ring.length],f.id);
+    const k=doorSillKerbs[0];standOn([(k.points[0][0]+k.points[1][0])/2,(k.points[0][1]+k.points[1][1])/2],k.id);
+    for(const d of [.02,.2,1,approachLength-.1,approachLength+.08])standOn(approachPoint(d),"Approach at "+d);
+    for(const d of [.6,2,approachLength-.3,approachLength+.06])for(const side of [-1,1])standOn(approachPoint(d,side*approachHalfWidth(d)),"Approach kerb at "+d);
+    if(Math.abs(world.groundHeight(...approachPoint(-.01))-world.groundHeight(...approachPoint(.01)))>.005)throw Error("Invisible toe datum step");
+    // Walk against the unmodified solid facade: reachable exterior never drops off the top.
+    player.place(...approachPoint(approachLength-.4),0);
+    const approachYaw=Math.atan2(southApproach.top[0]-southApproach.foot[0],-(southApproach.top[1]-southApproach.foot[1]));let touchedFacade=false;
+    for(let i=0;i<90;i++){
+      const expected=[player.x+Math.sin(approachYaw)*4.7/120,player.z-Math.cos(approachYaw)*4.7/120];
+      player.update(1/120,{...input,moveZ:1},world,approachYaw);
+      if(Math.hypot(player.x-expected[0],player.z-expected[1])>.001){touchedFacade=true;break;}
+    }
+    if(!touchedFacade||doorSillRise(player.x,player.z)<southApproach.rise-.015)throw Error("Approach top drops before the solid facade");
+    if(doorSillGroundOffset(0,0)!==0)throw Error("Local datum escaped the finite feature area");
     // Up and down the steps beside the Cervantes ramp and out of the middle pool onto Calle Eva: one riser at a time, ending level with the ramp.
     for (const file of ["/data/cervantes_elena_steps.json", "/data/middle_pool_steps.json", "/data/middle_pool_north.json"]) {
       const { default: data } = await import(file);

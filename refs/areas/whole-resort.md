@@ -28,14 +28,6 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `pool-decks` (level): 0.05-0.1 m, high confidence. Model: **built**. At all three pools the deck is level with the lawn apart from a coping lip of 5-10 cm. (IMG_2204.jpg, IMG_2193.jpg, IMG_2194.jpg, IMG_2245.jpg, IMG_2188.jpg)
 
-## Open build tasks
-
-From `data/build_queue.json`; issue bodies in `refs/issues/`.
-
-| Priority | Task | What | Status | Photos |
-| --- | --- | --- | --- | --- |
-| P3 | `door-sills` [#57](https://github.com/daveyboyc/villacana-venture/issues/57) | Door sills and footpath kerbs: the small steps everywhere | open | [IMG_2260](../../public/photos-ref/IMG_2260.jpg), [IMG_2261](../../public/photos-ref/IMG_2261.jpg), [IMG_2330](../../public/photos-ref/IMG_2330.jpg), [IMG_2291](../../public/photos-ref/IMG_2291.jpg), [IMG_2293](../../public/photos-ref/IMG_2293.jpg), [IMG_2283](../../public/photos-ref/IMG_2283.jpg) |
-
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
