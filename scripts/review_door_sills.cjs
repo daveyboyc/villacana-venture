@@ -44,7 +44,7 @@ const path = require("node:path");
     await page.goto(site + "/slice.html?" + query);
     await page.waitForSelector('canvas[data-scene-ready="true"]',{timeout:180000});
     const featureCount=await page.locator("canvas").getAttribute("data-review-feature-count");
-    if(featureViews[name]&&root===process.cwd()&&Number(featureCount)<100)throw Error("New feature Details isolation hook did not render all meshes: "+featureCount);
+    if(featureViews[name]&&fs.existsSync(path.join(root,"src/door-sills.ts"))&&Number(featureCount)<100)throw Error("New feature Details isolation hook did not render all meshes: "+featureCount);
     await page.waitForTimeout(6000);
     if (flags.includes("--high")) {
       await page.mouse.move(600, 450); await page.mouse.down(); await page.mouse.move(600, 700, { steps: 10 }); await page.mouse.up();
