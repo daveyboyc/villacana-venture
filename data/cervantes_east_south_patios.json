@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-10-17",
+  "scope": "One bounded visible south Cervantes frontage near Elena. No internal patio partitions, patio floors, inferred enclosure returns or building-footprint changes. Concealed eastern continuation is unasserted.",
+  "trust": "Photographs support the white lane-side wall, closed curved-coping timber door and cane-roofed pergola, south of Cervantes east of Elena. Plan positions are estimated against the georeferenced Esri aerial, checked street axis and unchanged registry frontage 6265601UF1366N_part1 (roughly 1-2 m uncertainty); heights and dimensions are estimates. Camera pins locate the north-row roof, not these patios.",
+  "origin": [
+    -142.06,
+    50.89
+  ],
+  "along": [
+    0.8590144516972085,
+    -0.5119513373118038
+  ],
+  "inward": [
+    0.5119513373118038,
+    0.8590144516972085
+  ],
+  "review": {
+    "ring": [
+      [
+        -142.5624,
+        52.5864
+      ],
+      [
+        -126.6706,
+        43.1153
+      ],
+      [
+        -124.6228,
+        46.5513
+      ],
+      [
+        -140.5146,
+        56.0224
+      ]
+    ]
+  },
+  "walls": [
+    {
+      "id": "cervantes-east-south-wall",
+      "name": "Cervantes east south \u00b7 bounded white patio frontage",
+      "points": [
+        [
+          -142.3997,
+          52.664
+        ],
+        [
+          -126.7656,
+          43.3465
+        ]
+      ],
+      "height": 1.85,
+      "thickness": 0.2,
+      "solid": true,
+      "evidence": [
+        "IMG_2366.jpg",
+        "IMG_2360.jpg",
+        "IMG_2197.jpg"
+      ],
+      "trust": "Photographs support the white lane-side wall, closed curved-coping timber door and cane-roofed pergola, south of Cervantes east of Elena. Plan positions are estimated against the georeferenced Esri aerial, checked street axis and unchanged registry frontage 6265601UF1366N_part1 (roughly 1-2 m uncertainty); heights and dimensions are estimates. Camera pins locate the north-row roof, not these patios. The bounded fragment stops where foliage/foreshortening obscure the continuation; its ends do not assert gates."
+    }
+  ],
+  "door": {
+    "id": "cervantes-east-south-door",
+    "name": "Cervantes east south \u00b7 closed brown curved-coping garden door",
+    "at": [
+      -140.9394,
+      51.7937
+    ],
+    "width": 0.95,
+    "height": 1.75,
+    "copingWidth": 1.45,
+    "copingRise": 0.22,
+    "evidence": [
+      "IMG_2366.jpg",
+      "IMG_2360.jpg"
+    ],
+    "trust": "The roof photos show the closed brown leaf and curved white coping on the lane wall, before the cane pergola. Door location near the Elena end and dimensions are estimated; no opening or invented step is added."
+  },
+  "pergola": {
+    "id": "cervantes-east-south-pergola",
+    "name": "Cervantes east south \u00b7 timber and cane pergola",
+    "ring": [
+      [
+        -138.5165,
+        50.7805
+      ],
+      [
+        -134.3932,
+        48.3231
+      ],
+      [
+        -132.6526,
+        51.2437
+      ],
+      [
+        -136.7759,
+        53.7011
+      ]
+    ],
+    "height": 2.35,
+    "post": 0.12,
+    "beam": 0.15,
+    "rafterSpacing": 0.6,
+    "caneSpacing": 0.075,
+    "evidence": [
+      "IMG_2366.jpg",
+      "IMG_2360.jpg"
+    ],
+    "trust": "Photographs support a rectangular dark timber pergola with a continuous cane roof between the lane wall and the house under its wooden balcony. The 4.8 by 3.4 m plan, height, post locations and registry-face offset are estimated; no balcony or house footprint is invented."
+  },
+  "planting": [
+    {
+      "id": "cervantes-east-south-climber",
+      "name": "Cervantes east south \u00b7 trained bougainvillea",
+      "at": [
+        -139.2487,
+        51.3099
+      ],
+      "kind": "bougainvillea",
+      "y": 1.25,
+      "scale": 0.5,
+      "evidence": [
+        "IMG_2366.jpg",
+        "IMG_2360.jpg",
+        "IMG_2197.jpg"
+      ],
+      "trust": "Photos support the woody climber along the white lane wall; placement and spread estimated, Details only."
+    },
+    {
+      "id": "cervantes-east-south-shrub-1",
+      "name": "Cervantes east south \u00b7 near clipped shrub",
+      "at": [
+        -140.3905,
+        54.6679
+      ],
+      "kind": "hedge",
+      "y": 0,
+      "scale": 0.55,
+      "evidence": [
+        "IMG_2366.jpg"
+      ],
+      "trust": "Round clipped shrub visible inside the patio; position, species and size estimated, Details only."
+    },
+    {
+      "id": "cervantes-east-south-shrub-2",
+      "name": "Cervantes east south \u00b7 second clipped shrub",
+      "at": [
+        -138.5957,
+        53.7729
+      ],
+      "kind": "hedge",
+      "y": 0,
+      "scale": 0.5,
+      "evidence": [
+        "IMG_2366.jpg"
+      ],
+      "trust": "Second round shrub near the door approach visible in the roof view; position, species and size estimated, Details only."
+    }
+  ]
+}

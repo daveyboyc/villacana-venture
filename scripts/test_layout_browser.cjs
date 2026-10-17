@@ -78,6 +78,7 @@ const path = require("node:path");
         ...gardenDoorRings(),
         ...elenaNorthRings(),
         ...(await import("/src/elena-east-patios.ts")).elenaEastPatioRings(),
+        ...(await import("/src/cervantes-east-south-patios.ts")).cervantesEastSouthRings(),
         ...middlePoolRings(),
         ...middleSwRings(),
         ...middleSouthRings(),
@@ -293,6 +294,20 @@ const path = require("node:path");
       for (let i = 0; i < 1200; i++) player.update(1 / 120, { ...input, moveZ: 1 }, world, Math.atan2(into[0] - player.x, -(into[1] - player.z)));
       if (inElenaEastPatios(player.x, player.z)) throw Error("Walked from Cervantes into the private Elena east patios at " + player.x + "," + player.z);
       walk([[player.x, player.z], from]);
+    }
+    // Issue #89: map, closed door and south frontage collision agree; the route suite walks Cervantes both ways.
+    {
+      const {cervantesEastSouthWalls,cervantesEastSouthDoor,cervantesEastSouthRings}=await import("/src/cervantes-east-south-patios.ts");
+      const wallOnly=new Solids(cervantesEastSouthRings());
+      for(const w of cervantesEastSouthWalls){
+        if(!document.querySelector(`[data-cervantes-east-south-id="${w.id}"]`))throw Error("South Cervantes wall missing on map");
+        for(const t of [.05,.5,.95]){
+          const c=w.points[0].map((v,j)=>v+(w.points[1][j]-v)*t), out=wallOnly.resolve(...c,.42);
+          if(Math.hypot(out.x-c[0],out.z-c[1])<.45)throw Error("South Cervantes wall is not solid");
+        }
+      }
+      const closed=wallOnly.resolve(...cervantesEastSouthDoor.at,.42);
+      if(Math.hypot(closed.x-cervantesEastSouthDoor.at[0],closed.z-cervantesEastSouthDoor.at[1])<.45)throw Error("Closed south garden door is passable");
     }
     // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
     {

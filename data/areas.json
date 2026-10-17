@@ -211,7 +211,8 @@
     "docs/ELENA_NORTH.md",
     "docs/CERVANTES_NORTH_PATIOS.md",
     "docs/LEVELS.md",
-    "docs/CERVANTES_DOOR_STEPS_REVIEW.md"
+    "docs/CERVANTES_DOOR_STEPS_REVIEW.md",
+    "docs/CERVANTES_EAST_SOUTH_PATIOS.md"
    ],
    "data": [
     "data/dali_cervantes.json",
@@ -223,7 +224,8 @@
     "data/levels_survey.json",
     "data/cervantes_garden_door.json",
     "data/cervantes_north_patios.json",
-    "data/junction_lawns.json"
+    "data/junction_lawns.json",
+    "data/cervantes_east_south_patios.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
@@ -232,7 +234,8 @@
     "src/ramp-steps.ts",
     "src/cervantes-garden-door.ts",
     "src/cervantes-north-patios.ts",
-    "src/junction-lawns.ts"
+    "src/junction-lawns.ts",
+    "src/cervantes-east-south-patios.ts"
    ],
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
@@ -244,7 +247,8 @@
     "Issue #33 review (2026-10-15): IMG_2327/2328 show two door steps immediately downhill of the ramp drain, distinct from the three ramp steps. Historical blocker (resolved by the later garden-wall survey): the nearest modeled north solid facade is 6.17 m from the drain and the roof/aerial views do not uniquely locate this doorway. The assumed house-facade requirement was incorrect; see docs/CERVANTES_DOOR_STEPS_REVIEW.md.",
     "Issue #33 implementation after the levels survey: the brown door is in a garden wall at the lane edge, not the house facade, resolving the historical 6.17 m blocker. A closed door with curved coping, two .225 m red-tread steps, bounded private patio at +.45 m and west bed at +.425 m are modeled; full patio extent and position remain estimated. Browser/camera acceptance pending.",
     "2026-10-15 (#45): IMG_2329/2342 show the same near-corner pollarded lawn tree; IMG_2358/2367 and IMG_2260 show three clipped trees in sequence beside the lane, two in the nearer lawn and one beyond the door approach. Details positions/heights estimated; the existing lawn/white-kerb rings remain approximate because the oblique roof views do not calibrate their metric extents.",
-    "Issue #56 (2026-10-16): IMG_2286/2355/2328 count each Elena step tread as one 0.4 m tile plus a grey stone nosing; risers moved to 0.4, 0.92 and 1.45 m from the drain, 3 m ramp run kept, every tread above the ramp beside it."
+    "Issue #56 (2026-10-16): IMG_2286/2355/2328 count each Elena step tread as one 0.4 m tile plus a grey stone nosing; risers moved to 0.4, 0.92 and 1.45 m from the drain, 3 m ramp run kept, every tread above the ramp beside it.",
+    "Issue #89 (2026-10-17): roof IMG_2366/2360 and ground IMG_2197 support the white lane-side south patio wall east of Elena, closed curved-coping brown door and cane-roofed timber pergola against 6265601UF1366N_part1. One bounded 18.2 m frontage, door and pergola built; no internal partitions or concealed enclosure returns asserted. Aerial/registry context checked; endpoints and dimensions remain estimated at roughly 1–2 m. Roof-camera diagnostic uses estimated 7.2 m local eye elevation and within-uncertainty roof-edge camera correction, not a calibrated match."
    ]
   },
   {
