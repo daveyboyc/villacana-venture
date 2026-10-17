@@ -89,6 +89,9 @@ def features(s):
     east=json.loads((ROOT/'data/elena_east_patios.json').read_text()) # issue #38
     for f in [*east['walls'],east['pergola']]:
         add('elena_east_patios.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
+    south_patios=json.loads((ROOT/'data/cervantes_east_south_patios.json').read_text())
+    for f in [*south_patios['walls'],south_patios['door'],south_patios['pergola'],*south_patios['planting']]:
+        add('cervantes_east_south_patios.json:'+f['id'],f['name'],'reference feature','bounded photo/aerial interpretation; dimensions estimated',evidence=f['evidence'],**({'points':[f['at']]} if 'at' in f else {k:f[k] for k in ('ring','points') if k in f}))
     south=json.loads((ROOT/'data/middle_pool_south_gate.json').read_text())
     add('middle_pool_south_gate.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=[south['center']])
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())

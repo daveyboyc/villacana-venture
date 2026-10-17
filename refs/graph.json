@@ -1351,6 +1351,36 @@
    "name": "Cervantes east · white plumbago kerb"
   },
   {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "kind": "model-feature",
+   "name": "Cervantes east south · trained bougainvillea"
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "kind": "model-feature",
+   "name": "Cervantes east south · closed brown curved-coping garden door"
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "kind": "model-feature",
+   "name": "Cervantes east south · timber and cane pergola"
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "kind": "model-feature",
+   "name": "Cervantes east south · near clipped shrub"
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "kind": "model-feature",
+   "name": "Cervantes east south · second clipped shrub"
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "kind": "model-feature",
+   "name": "Cervantes east south · bounded white patio frontage"
+  },
+  {
    "id": "cervantes_garden_door.json:cervantes-garden-door",
    "kind": "model-feature",
    "name": "Cervantes junction · raised garden door and private patio"
@@ -1696,6 +1726,21 @@
    "name": "picasso utility front"
   },
   {
+   "id": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "kind": "model-feature",
+   "name": "Middle pool · short uncertain curved hedge patio"
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-north-terrace",
+   "kind": "model-feature",
+   "name": "Middle pool · bounded north raised patio"
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-oleander-bed",
+   "kind": "model-feature",
+   "name": "Middle pool · shallow oleander bed beside patio"
+  },
+  {
    "id": "raised_terraces.json:north-pool-north-patios",
    "kind": "model-feature",
    "name": "North pool · low northern patio plinths and white steps"
@@ -1761,7 +1806,7 @@
    "kind": "build-task",
    "name": "Cervantes east of Elena: walled patios on the south side, with the cane-roofed pergola",
    "priority": 3,
-   "status": "open"
+   "status": "done"
   },
   {
    "id": "task:elena-gated-entry",
@@ -1935,7 +1980,7 @@
    "kind": "build-task",
    "name": "Middle pool: raised patios behind the north wall and the planted beds",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 55
   },
   {
@@ -4912,6 +4957,66 @@
    "relation": "cites"
   },
   {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "to": "ref:IMG_2197.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "to": "ref:IMG_2197.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "to": "ref:IMG_2360.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "to": "ref:IMG_2366.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "cervantes_garden_door.json:cervantes-garden-door",
    "to": "ref:IMG_2196.jpg",
    "relation": "cites"
@@ -5922,6 +6027,31 @@
    "relation": "cites"
   },
   {
+   "from": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "to": "ref:IMG_2341.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-north-terrace",
+   "to": "ref:IMG_2193.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-north-terrace",
+   "to": "ref:IMG_2194.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-oleander-bed",
+   "to": "ref:IMG_2246.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-oleander-bed",
+   "to": "ref:IMG_2247.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "raised_terraces.json:north-pool-north-patios",
    "to": "ref:IMG_2204.jpg",
    "relation": "cites"
@@ -6074,6 +6204,46 @@
   {
    "from": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "to": "area:elena",
    "relation": "in-area"
   },
   {
@@ -6444,6 +6614,21 @@
   {
    "from": "picasso_service_road.json:picasso-utility-front",
    "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-north-terrace",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-oleander-bed",
+   "to": "area:middle-pool",
    "relation": "in-area"
   },
   {
@@ -7618,6 +7803,12 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2333.jpg",
+   "to": "raised_terraces.json:middle-pool-oleander-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2334.jpg",
    "to": "street:silvia-north",
    "relation": "looks-at",
@@ -7668,6 +7859,12 @@
   {
    "from": "ref:IMG_2340.jpg",
    "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2341.jpg",
+   "to": "raised_terraces.json:middle-pool-curved-hedge-patio",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

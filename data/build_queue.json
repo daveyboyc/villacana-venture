@@ -68,7 +68,8 @@
    "dependsOn": [
     "elena-east-patios"
    ],
-   "status": "open"
+   "status": "done",
+   "owner": "Codex"
   },
   {
    "id": "elena-gated-entry",
@@ -572,8 +573,9 @@
    "dependsOn": [
     "raised-terraces"
    ],
-   "status": "open",
-   "issue": 55
+   "status": "done",
+   "issue": 55,
+   "owner": "Codex issue-55"
   },
   {
    "id": "cervantes-steps-treads",
