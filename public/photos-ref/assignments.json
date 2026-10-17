@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 336,
+  "features": 339,
   "photosCitedByModel": 81,
-  "modelFeaturesWithPhotoCitations": 81
+  "modelFeaturesWithPhotoCitations": 84
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -637,7 +637,9 @@
     }
    ],
    "citedBy": [
-    "elena_north.json:elena-north-tree-bed-2"
+    "elena_north.json:elena-north-tree-bed-2",
+    "elena_east_patios.json:elena-east-patios-west-wall",
+    "elena_east_patios.json:elena-east-patios-cervantes-wall"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -741,7 +743,9 @@
    "citedBy": [
     "elena_north.json:elena-north-garden-wall",
     "elena_north.json:elena-north-tree-bed-1",
-    "elena_north.json:elena-north-garden-door-path"
+    "elena_north.json:elena-north-garden-door-path",
+    "elena_east_patios.json:elena-east-patios-west-wall",
+    "elena_east_patios.json:elena-east-patios-pergola"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -790,7 +794,8 @@
     "elena_north.json:elena-north-window-return",
     "elena_north.json:elena-north-tree-bed-1",
     "elena_north.json:elena-north-tree-bed-2",
-    "elena_north.json:elena-north-garden-door-path"
+    "elena_north.json:elena-north-garden-door-path",
+    "elena_east_patios.json:elena-east-patios-pergola"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -5399,7 +5404,8 @@
     }
    ],
    "citedBy": [
-    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+    "elena_east_patios.json:elena-east-patios-cervantes-wall"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

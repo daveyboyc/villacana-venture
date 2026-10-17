@@ -77,6 +77,7 @@ const path = require("node:path");
         ...cervantesPatioWallRings(),
         ...gardenDoorRings(),
         ...elenaNorthRings(),
+        ...(await import("/src/elena-east-patios.ts")).elenaEastPatioRings(),
         ...middlePoolRings(),
         ...middleSwRings(),
         ...middleSouthRings(),
@@ -270,6 +271,20 @@ const path = require("node:path");
       const remaining = (b[0]-player.x)*u[0]+(b[1]-player.z)*u[1];
       if(remaining<0.45 || remaining>0.7) throw Error("Elena closed garden door failed to stop player: " + remaining);
       walk([[player.x,player.z],a]);
+    }
+    // Issue #38 (elena-east-patios): the patio enclosure is on the map and solid, and Cervantes no longer leads into the private patios.
+    {
+      const { elenaEastPatioWalls, inElenaEastPatios } = await import("/src/elena-east-patios.ts");
+      for (const w of elenaEastPatioWalls) {
+        if (!document.querySelector(`[data-elena-east-id="${w.id}"]`)) throw Error("Elena east patio wall missing from map: " + w.id);
+        const c = [(w.points[0][0] + w.points[1][0]) / 2, (w.points[0][1] + w.points[1][1]) / 2], out = world.solids.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.3) throw Error("Elena east patio wall is not solid: " + w.id);
+      }
+      const from = [-142.2, 50.75], into = [-143.0, 46.5];
+      player.place(...from, 0);
+      for (let i = 0; i < 1200; i++) player.update(1 / 120, { ...input, moveZ: 1 }, world, Math.atan2(into[0] - player.x, -(into[1] - player.z)));
+      if (inElenaEastPatios(player.x, player.z)) throw Error("Walked from Cervantes into the private Elena east patios at " + player.x + "," + player.z);
+      walk([[player.x, player.z], from]);
     }
     // Paseo retaining wall: solid, a level change of about 1 m by the south lawn, and the paseo still walks end to end past it.
     {

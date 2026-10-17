@@ -41,6 +41,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 - `cervantes-east-north-bed` (raised-bed): 0.3-0.45 m above Cervantes east of Elena, medium confidence. Model: **built**, task `cervantes-east-hedge`. White retaining wall with a plumbago hedge on top, north side east of Elena, at least 8 m, ending in a small rounded post. Water standing at its foot suggests a very flat lane. Built as the bounded 8 m white kerb with plumbago in PR #68 (data/cervantes_east_hedge.json). (IMG_2356.jpg, IMG_2265.jpg)
 - `cervantes-upper-lane` (level): 0-0.15 m, medium confidence. Model: **built**. From the top of the ramp to the Dalí apron the lane recedes straight with no break, step or drain: level, or a grade under about 2%. South-side house sills at lane level or one sill above. (IMG_2264.jpg, IMG_2273.jpg, IMG_2274.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P3 | `cervantes-east-south-patios` | Cervantes east of Elena: walled patios on the south side, with the cane-roofed pergola (after elena-east-patios) | open | [IMG_2366](../../public/photos-ref/IMG_2366.jpg), [IMG_2360](../../public/photos-ref/IMG_2360.jpg), [IMG_2197](../../public/photos-ref/IMG_2197.jpg) |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
@@ -113,44 +121,47 @@ graph LR
   F11 --> PIMG_2273_jpg(["IMG_2273"])
   F11 --> PIMG_2274_jpg(["IMG_2274"])
   F11 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F12["Cervantes / Elena · front lawn 1"]
-  F12 --> PIMG_2260_jpg(["IMG_2260"])
-  F12 --> PIMG_2261_jpg(["IMG_2261"])
-  F12 --> PIMG_2263_jpg(["IMG_2263"])
-  F12 --> PIMG_2329_jpg(["IMG_2329"])
-  F12 --> PIMG_2342_jpg(["IMG_2342"])
-  F12 --> PIMG_2358_jpg(["IMG_2358"])
-  F12 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F13["Cervantes / Elena · front lawn 2"]
+  A --> F12["Elena east patios · white wall behind the plumbago bed on Cervantes"]
+  F12 --> PIMG_2197_jpg(["IMG_2197"])
+  F12 --> PIMG_2356_jpg(["IMG_2356"])
+  A --> F13["Cervantes / Elena · front lawn 1"]
   F13 --> PIMG_2260_jpg(["IMG_2260"])
   F13 --> PIMG_2261_jpg(["IMG_2261"])
+  F13 --> PIMG_2263_jpg(["IMG_2263"])
   F13 --> PIMG_2329_jpg(["IMG_2329"])
   F13 --> PIMG_2342_jpg(["IMG_2342"])
   F13 --> PIMG_2358_jpg(["IMG_2358"])
   F13 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F14["Cervantes / Elena · paved front enclosure"]
+  A --> F14["Cervantes / Elena · front lawn 2"]
   F14 --> PIMG_2260_jpg(["IMG_2260"])
   F14 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F15["Front-door approach between lawns"]
+  F14 --> PIMG_2329_jpg(["IMG_2329"])
+  F14 --> PIMG_2342_jpg(["IMG_2342"])
+  F14 --> PIMG_2358_jpg(["IMG_2358"])
+  F14 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F15["Cervantes / Elena · paved front enclosure"]
   F15 --> PIMG_2260_jpg(["IMG_2260"])
   F15 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F16["Cervantes · planting along low wall"]
-  F16 --> PIMG_2273_jpg(["IMG_2273"])
-  F16 --> PIMG_2274_jpg(["IMG_2274"])
-  A --> F17["Cervantes / Elena · clipped lawn tree 1"]
-  F17 --> PIMG_2329_jpg(["IMG_2329"])
-  F17 --> PIMG_2342_jpg(["IMG_2342"])
-  F17 --> PIMG_2358_jpg(["IMG_2358"])
-  F17 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F18["Cervantes / Elena ramp"]
-  F18 --> PIMG_2262_jpg(["IMG_2262"])
-  F18 --> PIMG_2265_jpg(["IMG_2265"])
-  F18 --> PIMG_2286_jpg(["IMG_2286"])
-  A --> F19["Cervantes / Elena · steps beside the ramp"]
+  A --> F16["Front-door approach between lawns"]
+  F16 --> PIMG_2260_jpg(["IMG_2260"])
+  F16 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F17["Cervantes · planting along low wall"]
+  F17 --> PIMG_2273_jpg(["IMG_2273"])
+  F17 --> PIMG_2274_jpg(["IMG_2274"])
+  A --> F18["Cervantes / Elena · clipped lawn tree 1"]
+  F18 --> PIMG_2329_jpg(["IMG_2329"])
+  F18 --> PIMG_2342_jpg(["IMG_2342"])
+  F18 --> PIMG_2358_jpg(["IMG_2358"])
+  F18 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F19["Cervantes / Elena ramp"]
   F19 --> PIMG_2262_jpg(["IMG_2262"])
+  F19 --> PIMG_2265_jpg(["IMG_2265"])
   F19 --> PIMG_2286_jpg(["IMG_2286"])
-  F19 --> PIMG_2328_jpg(["IMG_2328"])
-  F19 --> PIMG_2355_jpg(["IMG_2355"])
+  A --> F20["Cervantes / Elena · steps beside the ramp"]
+  F20 --> PIMG_2262_jpg(["IMG_2262"])
+  F20 --> PIMG_2286_jpg(["IMG_2286"])
+  F20 --> PIMG_2328_jpg(["IMG_2328"])
+  F20 --> PIMG_2355_jpg(["IMG_2355"])
 ```
 
 ## Reviewed references
@@ -173,9 +184,9 @@ graph LR
 | [IMG_2342.jpg](../../public/photos-ref/IMG_2342.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn corner with pollarded tree and drain **Note:** GPS ±14 m. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
 | [IMG_2327.jpg](../../public/photos-ref/IMG_2327.jpg) | ground | levels, layout, facades | Cervantes at Elena: steps up to a door beside the lane _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed._ |
 | [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Looks at:** The steps beside the Cervantes ramp. **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
+| [IMG_2356.jpg](../../public/photos-ref/IMG_2356.jpg) | ground | layout, planting | Cervantes east of Elena: lane beside a plumbago hedge _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, elena_east_patios.json:elena-east-patios-cervantes-wall._ |
 | [IMG_2355.jpg](../../public/photos-ref/IMG_2355.jpg) | ground | levels | Cervantes/Elena steps from the junction **Looks at:** The steps beside the Cervantes ramp. _Used by: cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
 | [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb._ |
-| [IMG_2356.jpg](../../public/photos-ref/IMG_2356.jpg) | ground | layout, planting | Cervantes east of Elena: lane beside a plumbago hedge _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb._ |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |

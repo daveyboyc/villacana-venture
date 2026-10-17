@@ -43,8 +43,32 @@
    "dependsOn": [
     "elena-garden-door"
    ],
-   "status": "open",
-   "issue": 38
+   "status": "done",
+   "issue": 38,
+   "owner": "issue_38"
+  },
+  {
+   "id": "cervantes-east-south-patios",
+   "area": "cervantes",
+   "priority": 3,
+   "kind": "structure",
+   "title": "Cervantes east of Elena: walled patios on the south side, with the cane-roofed pergola",
+   "photos": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg"
+   ],
+   "build": "Found while doing elena-east-patios (issue #38): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the Elena junction. Its south side has white patio walls with a trained bougainvillea trunk (also IMG_2197), a closed brown door under a curved coping, a timber pergola with a cane roof against a house with a wooden balcony, and round clipped shrubs. They lie between the Cervantes axis and the registry front of 6265601UF1366N_part1. Trace the lane-side wall and door; patios are private, so walls are solid.",
+   "avoid": "Confirm the reading first with an overlay or render from the roof camera; roof pins stand on the Cervantes north row. Do not trace the patios' internal partitions unless a photo shows them.",
+   "accept": [
+    "new check script",
+    "render from IMG_2360 compared",
+    "layout browser test still walks Cervantes both ways"
+   ],
+   "dependsOn": [
+    "elena-east-patios"
+   ],
+   "status": "open"
   },
   {
    "id": "elena-gated-entry",

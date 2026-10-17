@@ -157,12 +157,14 @@
    },
    "docs": [
     "docs/ELENA_NORTH.md",
+   "docs/ELENA_EAST_PATIOS.md",
     "docs/STREET_LAYOUT.md",
     "docs/TERRAIN.md",
     "docs/LEVELS.md"
    ],
    "data": [
     "data/elena_north.json",
+   "data/elena_east_patios.json",
     "data/cervantes_elena_steps.json",
     "data/street_layout.json",
     "proposals/calle-elena.json",
@@ -171,6 +173,7 @@
    ],
    "src": [
     "src/elena-north.ts",
+   "src/elena-east-patios.ts",
     "src/ramp-steps.ts",
     "src/terrain.ts",
     "src/layout-routes.ts"
@@ -184,7 +187,8 @@
     "IMG_2355 and IMG_2328 (14 Oct) confirm the three steps beside the Cervantes ramp and the drain across the whole lane. Roof shots IMG_2358, 2366, 2367 look down on the junction lawns and the east-side patios.",
     "Issue #34: the short paved spur between the two hedged beds now reaches a closed timber door in a finite white garden wall; the barred window is in a short transverse return at the north end of the planted bed (IMG_2199-2201). Extents against existing bed backs and heights are estimated; no unseen patio enclosure or level change is inferred.",
     "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.",
-    "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced."
+    "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced.",
+    "Issue #38 (docs/ELENA_EAST_PATIOS.md): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the junction (the trained-trunk wall, curved-coping door and cane-roofed pergola are on the Cervantes south side, cf. IMG_2197; new task cervantes-east-south-patios). The patios behind the Elena garden wall are hidden under the magnolia canopy from every roof camera, so their partitions, floors and levels stay unmodelled. Built from ground photos: the garden wall continued behind the second hedged bed (IMG_2197, IMG_2199), a solid white wall behind the plumbago bed closing the patios off from Cervantes (IMG_2356), and a timber pergola behind the garden door (IMG_2199, IMG_2200); extents and heights estimated."
    ]
   },
   {
