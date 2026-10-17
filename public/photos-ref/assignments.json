@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 339,
-  "photosCitedByModel": 81,
-  "modelFeaturesWithPhotoCitations": 84
+  "features": 345,
+  "photosCitedByModel": 82,
+  "modelFeaturesWithPhotoCitations": 90
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -639,7 +639,9 @@
    "citedBy": [
     "elena_north.json:elena-north-tree-bed-2",
     "elena_east_patios.json:elena-east-patios-west-wall",
-    "elena_east_patios.json:elena-east-patios-cervantes-wall"
+    "elena_east_patios.json:elena-east-patios-cervantes-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-climber"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -5515,7 +5517,11 @@
     }
    ],
    "citedBy": [
-    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-door",
+    "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+    "cervantes_east_south_patios.json:cervantes-east-south-climber"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5735,7 +5741,14 @@
      "angleOffset": 5.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-door",
+    "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+    "cervantes_east_south_patios.json:cervantes-east-south-climber",
+    "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+    "cervantes_east_south_patios.json:cervantes-east-south-shrub-2"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.2,

@@ -68,7 +68,8 @@
    "dependsOn": [
     "elena-east-patios"
    ],
-   "status": "open"
+   "status": "done",
+   "owner": "Codex"
   },
   {
    "id": "elena-gated-entry",

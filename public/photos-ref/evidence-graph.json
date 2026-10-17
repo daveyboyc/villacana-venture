@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 339,
-  "photosCitedByModel": 81,
-  "modelFeaturesWithPhotoCitations": 84
+  "features": 345,
+  "photosCitedByModel": 82,
+  "modelFeaturesWithPhotoCitations": 90
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2459,6 +2459,66 @@
    ]
   },
   {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "name": "Cervantes east south · bounded white patio frontage",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "name": "Cervantes east south · closed brown curved-coping garden door",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "name": "Cervantes east south · timber and cane pergola",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "name": "Cervantes east south · trained bougainvillea",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "name": "Cervantes east south · near clipped shrub",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "name": "Cervantes east south · second clipped shrub",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg"
+   ]
+  },
+  {
    "id": "middle_pool_south_gate.json:middle-pool-south-gate",
    "name": "Middle pool · south double iron gate, curved head and tiled planter",
    "kind": "reference feature",
@@ -4100,6 +4160,18 @@
   {
    "from": "photo:IMG_2197.jpg",
    "to": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-climber",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -7899,6 +7971,30 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2361.jpg",
    "to": "building:6265201UF1366N_part3",
    "relation": "possibly-in-view",
@@ -8045,6 +8141,42 @@
    "relation": "possibly-in-view",
    "distance": 24.3,
    "angleOffset": 5.6
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2367.jpg",

@@ -594,7 +594,9 @@
   "citedBy": [
    "elena_north.json:elena-north-tree-bed-2",
    "elena_east_patios.json:elena-east-patios-west-wall",
-   "elena_east_patios.json:elena-east-patios-cervantes-wall"
+   "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "cervantes_east_south_patios.json:cervantes-east-south-climber"
   ],
   "looksAt": [
    -144.9,
@@ -5237,7 +5239,11 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "cervantes_east_south_patios.json:cervantes-east-south-climber"
   ],
   "looksAt": [
    -140.0,
@@ -5485,7 +5491,14 @@
    "altitude": 11.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "cervantes_east_south_patios.json:cervantes-east-south-shrub-2"
+  ],
   "looksAt": [
    -145.5,
    45.5
