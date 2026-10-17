@@ -50,3 +50,9 @@ Run `python3 scripts/check_north_pool_gardens.py` and the standard checks from
 separate northwest structure/alley/Isabel route and the lawn-level paving.
 The layout browser test climbs and descends each of the three openings, checks
 faces and cheeks, traverses the band and draws it in the map.
+
+Independent review compared the full-size source photos, the georeferenced
+aerial and the paired IMG_2204 renders. It accepted the three-opening bounded
+trace, separate northwest flight and clear central alley. The diagnostic capture
+uses the retained #54 pool-ring camera fit; neither camera fit nor estimated
+patio limits establish surveyed dimensions.
