@@ -102,6 +102,245 @@
     "stairFootFromSurvey": 2.3
    },
    "trust": "Photo-supported: a six-riser flight with red-and-blue tiled risers and an iron handrail on its north side, cut back between the end of a curved white retaining wall (south) and a straight white wall with coping (north) that runs east to a pier where a path climbs to the north row alley; the terrace behind carries a planted bank, crazy paving and a terracotta patio in front of the house fronts (IMG_2204, IMG_2206, IMG_2208). Height 1.0 m, the middle of the survey's 0.9-1.1 m, as six 0.167 m risers on 0.3 m treads. Estimated: plan position (camera fit, about +-1.5 m; stair foot 2.3 m from the survey's +-6 m centre), the 1.32 m stair width, the curve of the wall between photo points, the return beside the alley path, the west end and the south end at the walled gardens (none of these three is visible). The back edges follow the registry fronts of 6165501UF1366N_part5 and part1, which keep their own floor datum (about 0.5 m and 0.04 m from the terrain rule), so the terrace floor stands 0.5-1 m above them in the model; whether the house floors are higher or there are steps down is not visible. Whether the terrace is shared ground or private is not visible; it is modelled walkable."
+  },
+  {
+   "id": "middle-pool-north-terrace",
+   "name": "Middle pool · bounded north raised patio",
+   "area": "middle-pool",
+   "survey": "middle-pool-north-terrace",
+   "walkable": false,
+   "base": [
+    -134.0,
+    83.0
+   ],
+   "rise": 0.45,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.18,
+    "height": 0.8,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.015
+    }
+   },
+   "outline": [
+    [
+     -134.0,
+     83.0
+    ],
+    [
+     -126.3,
+     82.1
+    ],
+    [
+     -126.55,
+     80.2
+    ],
+    [
+     -134.25,
+     81.1
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    }
+   ],
+   "openings": [],
+   "planting": {
+    "edges": [
+     0
+    ],
+    "inset": 0.55,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2193.jpg",
+    "IMG_2194.jpg"
+   ],
+   "trust": "Photo-supported: north patio behind a white rendered face and clipped hedge, with umbrella and north-row houses behind; the white face stops west of the grass opening visible in IMG_2194. Estimated: +0.45 m floor within low-confidence survey 0.3-0.6 m, independent 0.8 m wall top, 7.75 m visible face and bounded 1.9 m floor depth, approximately +-2 m placement against the aerial north courtyard gap and registry front. Ends/back are plain untraced floor cuts, not claimed enclosure walls; no stair or private gate is inferred."
+  },
+  {
+   "id": "middle-pool-oleander-bed",
+   "name": "Middle pool · shallow oleander bed beside patio",
+   "area": "middle-pool",
+   "survey": "middle-pool-patio-beds",
+   "walkable": false,
+   "base": [
+    -134.8,
+    105.25
+   ],
+   "rise": 0.2,
+   "floor": "soil",
+   "face": {
+    "finish": "render",
+    "thickness": 0.18,
+    "height": 0.2,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.015
+    }
+   },
+   "outline": [
+    [
+     -134.8,
+     105.25
+    ],
+    [
+     -130.6,
+     102.7
+    ],
+    [
+     -131.15,
+     101.8
+    ],
+    [
+     -135.35,
+     104.35
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    }
+   ],
+   "openings": [],
+   "planting": {
+    "edges": [
+     0
+    ],
+    "inset": 0.55,
+    "kind": "oleander"
+   },
+   "evidence": [
+    "IMG_2246.jpg",
+    "IMG_2247.jpg"
+   ],
+   "trust": "Photo-supported: narrow oleander soil bed with low rounded white kerb beside crazy paving and terracotta paving; raised bed top is near adjacent patio level. Estimated: 0.2 m soil/kerb height within low-confidence survey 0.1-0.3 m (visible kerb about 0.15-0.2 m), 4.9 m face, 1.05 m bed depth, approximately +-2 m placement in the aerial south-west triangular garden. Only visible outer kerb receives coping; other ends/back are untraced bounded plain soil cuts, not invented private walls. No patio boundary or gate behind foliage inferred."
+  },
+  {
+   "id": "middle-pool-curved-hedge-patio",
+   "name": "Middle pool · short uncertain curved hedge patio",
+   "area": "middle-pool",
+   "survey": "middle-pool-patio-beds",
+   "walkable": false,
+   "base": [
+    -125.0,
+    81.3
+   ],
+   "rise": 0.2,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.18,
+    "height": 0.4,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.015
+    }
+   },
+   "outline": [
+    [
+     -125.0,
+     81.3
+    ],
+    [
+     -123.8,
+     81.1
+    ],
+    [
+     -122.7,
+     80.7
+    ],
+    [
+     -121.65,
+     80.15
+    ],
+    [
+     -120.8,
+     79.55
+    ],
+    [
+     -121.7,
+     78.3
+    ],
+    [
+     -125.35,
+     79.8
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    }
+   ],
+   "openings": [],
+   "planting": {
+    "edges": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "inset": 0.55,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2341.jpg"
+   ],
+   "trust": "Photo-supported: low curving white rendered hedge wall with patio/grass behind at about the bed top. Estimated: +0.2 m floor within low-confidence survey 0.1-0.3 m, 0.4 m wall top within visible 0.35-0.45 m range and only 4.6 m of curved face. Placement in the north-east courtyard is uncertain (about +-4 m): the IMG_2341 camera GPS is +-47 m and cannot locate this wall; north-row fronts, heading and aerial path/lawn band only suggest this position. Untraced back/ends are plain bounded floor cuts, not a long continuous boundary, and this fragment does not establish a connection to the north patio. No access inferred."
   }
  ]
 }

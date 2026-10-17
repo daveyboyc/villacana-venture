@@ -1691,6 +1691,21 @@
    "name": "picasso utility front"
   },
   {
+   "id": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "kind": "model-feature",
+   "name": "Middle pool · short uncertain curved hedge patio"
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-north-terrace",
+   "kind": "model-feature",
+   "name": "Middle pool · bounded north raised patio"
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-oleander-bed",
+   "kind": "model-feature",
+   "name": "Middle pool · shallow oleander bed beside patio"
+  },
+  {
    "id": "raised_terraces.json:north-pool-west-terrace",
    "kind": "model-feature",
    "name": "North pool · north-west raised terrace and tiled stair"
@@ -1925,7 +1940,7 @@
    "kind": "build-task",
    "name": "Middle pool: raised patios behind the north wall and the planted beds",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 55
   },
   {
@@ -5892,6 +5907,31 @@
    "relation": "cites"
   },
   {
+   "from": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "to": "ref:IMG_2341.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-north-terrace",
+   "to": "ref:IMG_2193.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-north-terrace",
+   "to": "ref:IMG_2194.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-oleander-bed",
+   "to": "ref:IMG_2246.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-oleander-bed",
+   "to": "ref:IMG_2247.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "raised_terraces.json:north-pool-west-terrace",
    "to": "ref:IMG_2204.jpg",
    "relation": "cites"
@@ -6389,6 +6429,21 @@
   {
    "from": "picasso_service_road.json:picasso-utility-front",
    "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-north-terrace",
+   "to": "area:middle-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "raised_terraces.json:middle-pool-oleander-bed",
+   "to": "area:middle-pool",
    "relation": "in-area"
   },
   {
@@ -7558,6 +7613,12 @@
    "basis": "estimated 6 m along the heading"
   },
   {
+   "from": "ref:IMG_2333.jpg",
+   "to": "raised_terraces.json:middle-pool-oleander-bed",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
    "from": "ref:IMG_2334.jpg",
    "to": "street:silvia-north",
    "relation": "looks-at",
@@ -7608,6 +7669,12 @@
   {
    "from": "ref:IMG_2340.jpg",
    "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2341.jpg",
+   "to": "raised_terraces.json:middle-pool-curved-hedge-patio",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },

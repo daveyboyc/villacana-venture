@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 339,
-  "photosCitedByModel": 81,
-  "modelFeaturesWithPhotoCitations": 84
+  "features": 342,
+  "photosCitedByModel": 86,
+  "modelFeaturesWithPhotoCitations": 87
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -464,7 +464,9 @@
      "angleOffset": 11.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-north-terrace"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -126.3,
@@ -502,7 +504,9 @@
      "angleOffset": 6.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-north-terrace"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -126.6,
@@ -2260,7 +2264,9 @@
      "angleOffset": 25.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-oleander-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -137.5,
@@ -2292,7 +2298,9 @@
      "angleOffset": 32.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-oleander-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -137.0,
@@ -4970,7 +4978,9 @@
      "angleOffset": 20.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-curved-hedge-patio"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -117.6,

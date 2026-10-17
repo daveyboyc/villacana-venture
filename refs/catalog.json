@@ -437,7 +437,9 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:middle-pool-north-terrace"
+  ],
   "looksAt": [
    -124.5,
    96.7
@@ -474,7 +476,9 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:middle-pool-north-terrace"
+  ],
   "looksAt": [
    -125.3,
    96.2
@@ -2155,7 +2159,9 @@
    "altitude": 7.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:middle-pool-oleander-bed"
+  ],
   "looksAt": [
    -134.1,
    98.4
@@ -2192,7 +2198,9 @@
    "altitude": 7.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:middle-pool-oleander-bed"
+  ],
   "looksAt": [
    -134.2,
    98.0
@@ -4336,7 +4344,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:eva"
+   "street:eva",
+   "raised_terraces.json:middle-pool-oleander-bed"
   ]
  },
  {
@@ -4640,13 +4649,17 @@
    "altitude": 5.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "raised_terraces.json:middle-pool-curved-hedge-patio"
+  ],
   "looksAt": [
    -123.4,
    82.7
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "raised_terraces.json:middle-pool-curved-hedge-patio"
+  ]
  },
  {
   "id": "IMG_2342.jpg",
