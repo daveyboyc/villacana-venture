@@ -25,10 +25,47 @@ export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"|"turf"):THREE.Ca
     c.width=c.height=256;const g=c.getContext("2d")!,pixels=g.createImageData(256,256);
     for(let i=0;i<pixels.data.length;i+=4){const v=kind==="plaster"?235+noise(i)*17:kind==="turf"?225+noise(i)*27:202+noise(Math.floor(i/4/16))*18;pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=v;pixels.data[i+3]=255;}
     g.putImageData(pixels,0,0);
+    if(kind==="turf") {
+      // A 1.6 m swatch: short, irregular blades with wrapped edges for seamless
+      // repetition. No external image, Canvas filters or extra geometry needed.
+      g.lineWidth=.8;g.lineCap="round";
+      for(let i=0;i<6500;i++) {
+        const x=noise(i+17)*256,y=noise(i+503)*256;
+        g.strokeStyle=["#b5b5b5","#dedede","#969696","#fafafa"][i%4];
+        const dx=(noise(i+900)-.5)*4,dy=1+noise(i+700)*5;
+        for(const ox of [-256,0,256])for(const oy of [-256,0,256]) {
+          g.beginPath();g.moveTo(x+ox,y+oy);g.lineTo(x+ox+dx,y+oy-dy);g.stroke();
+        }
+      }
+    }
     if(kind==="mosaic"){g.strokeStyle="#a2a7a2";g.lineWidth=1;for(let at=0;at<256;at+=16){g.beginPath();g.moveTo(at,0);g.lineTo(at,256);g.moveTo(0,at);g.lineTo(256,at);g.stroke();}}
   }
   const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.repeat.setScalar(kind==="plaster"?1:1/1.6);texture.anisotropy=4;cache.set(kind,texture);return texture;
 }
 export function plasterMaterial(color="#f7f7ee"):THREE.MeshStandardMaterial {
   const map=surfaceTexture("plaster");return new THREE.MeshStandardMaterial({color,map,bumpMap:map,bumpScale:.025,roughness:.95});
+}
+
+/** Preserve the mapped cover while adding grass at the same metre scale in
+ * single-courtyard and whole-resort views. Standard lighting, alpha cutouts and
+ * mipmaps still apply on mobile and desktop. Raised ground reuses this material. */
+export function groundMaterial(map:THREE.Texture,lawnCanvas:HTMLCanvasElement,metres:number):THREE.MeshStandardMaterial {
+  const mask=new THREE.CanvasTexture(lawnCanvas);
+  const turf=surfaceTexture("turf");
+  const material=new THREE.MeshStandardMaterial({map,roughness:.95,alphaTest:.5});
+  material.onBeforeCompile=shader=>{
+    shader.uniforms.lawnMask={value:mask};
+    shader.uniforms.turfDetail={value:turf};
+    shader.uniforms.groundMetres={value:metres};
+    shader.fragmentShader=shader.fragmentShader.replace("#include <common>",`#include <common>
+      uniform sampler2D lawnMask;
+      uniform sampler2D turfDetail;
+      uniform float groundMetres;`)
+      .replace("#include <map_fragment>",`#include <map_fragment>
+      float lawn = texture2D(lawnMask, vMapUv).r;
+      vec3 blades = texture2D(turfDetail, vMapUv * groundMetres / 1.6).rgb;
+      diffuseColor.rgb *= mix(vec3(1.0), blades * 1.25, lawn);`);
+  };
+  material.customProgramCacheKey=()=>"mapped-turf-v1";
+  return material;
 }

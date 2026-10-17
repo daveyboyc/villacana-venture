@@ -1336,6 +1336,16 @@
    "name": "Calle Elena covered walkway"
   },
   {
+   "id": "building:6465801UF1366N_part5",
+   "kind": "model-feature",
+   "name": "6465801UF1366N_part5"
+  },
+  {
+   "id": "building:6465801UF1366N_part6",
+   "kind": "model-feature",
+   "name": "6465801UF1366N_part6"
+  },
+  {
    "id": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "kind": "model-feature",
    "name": "Cervantes east · white plumbago kerb"
@@ -1681,6 +1691,11 @@
    "name": "picasso utility front"
   },
   {
+   "id": "raised_terraces.json:north-pool-west-terrace",
+   "kind": "model-feature",
+   "name": "North pool · north-west raised terrace and tiled stair"
+  },
+  {
    "id": "ramp:cervantes-elena-ramp",
    "kind": "model-feature",
    "name": "Cervantes / Elena ramp"
@@ -1886,7 +1901,7 @@
    "kind": "build-task",
    "name": "Paseo east: registry house 6465801UF1366N_part5 blocks the walk",
    "priority": 2,
-   "status": "open",
+   "status": "done",
    "issue": 41
   },
   {
@@ -1894,7 +1909,7 @@
    "kind": "build-task",
    "name": "Paseo: hedges behind the fence, windbreak cloth, lamp posts",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 49
   },
   {
@@ -1902,7 +1917,7 @@
    "kind": "build-task",
    "name": "Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair",
    "priority": 1,
-   "status": "open",
+   "status": "done",
    "issue": 54
   },
   {
@@ -1918,7 +1933,7 @@
    "kind": "build-task",
    "name": "Cervantes/Elena steps: tighten the treads to the photographed spacing",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 56
   },
   {
@@ -4857,6 +4872,26 @@
    "relation": "cites"
   },
   {
+   "from": "building:6465801UF1366N_part5",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "building:6465801UF1366N_part5",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "building:6465801UF1366N_part6",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "building:6465801UF1366N_part6",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "to": "ref:IMG_2356.jpg",
    "relation": "cites"
@@ -5857,6 +5892,21 @@
    "relation": "cites"
   },
   {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "ramp:cervantes-elena-ramp",
    "to": "ref:IMG_2262.jpg",
    "relation": "cites"
@@ -5917,6 +5967,16 @@
    "relation": "cites"
   },
   {
+   "from": "steps:cervantes-elena-steps",
+   "to": "ref:IMG_2328.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "steps:cervantes-elena-steps",
+   "to": "ref:IMG_2355.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "steps:middle-pool-sw-steps",
    "to": "ref:IMG_2248.jpg",
    "relation": "cites"
@@ -5949,6 +6009,16 @@
   {
    "from": "building:6265201UF1366N_part5",
    "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "building:6465801UF1366N_part5",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "building:6465801UF1366N_part6",
+   "to": "area:barraka-beach",
    "relation": "in-area"
   },
   {
@@ -6322,6 +6392,11 @@
    "relation": "in-area"
   },
   {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "ramp:cervantes-elena-ramp",
    "to": "area:cervantes",
    "relation": "in-area"
@@ -6354,11 +6429,6 @@
   {
    "from": "steps:cervantes-elena-steps",
    "to": "area:cervantes",
-   "relation": "in-area"
-  },
-  {
-   "from": "steps:cervantes-elena-steps",
-   "to": "area:elena",
    "relation": "in-area"
   },
   {

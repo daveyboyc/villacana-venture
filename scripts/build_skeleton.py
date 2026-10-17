@@ -195,6 +195,7 @@ def build_buildings() -> list[dict]:
     buildings = []
     # Parts that bridge a lane at first-floor level; the ground under them is open.
     passages = {p["id"]: p for p in json.loads((ROOT / "data" / "passages.json").read_text())["passages"]}
+    gone = {p["id"]: p for p in json.loads((ROOT / "data" / "registry_corrections.json").read_text())["notStanding"]}
     for part in read_features("buildingpart.gml.gz", "BuildingPart"):
         ring = part["rings"][0]
         if not inside(AREA, centroid(ring)):
@@ -204,7 +205,13 @@ def build_buildings() -> list[dict]:
             entry["holes"] = [rounded(r) for r in part["rings"][1:]]
         if part["id"] in passages:
             entry["passage"] = {k: passages[part["id"]][k] for k in ("name", "trust", "evidence")}
+        # Registry parts the aerial shows are not standing: ring kept, no storeys (issue #41).
+        if part["id"] in gone:
+            assert part["floors"] == gone[part["id"]]["registryFloors"], part["id"]
+            entry["floors"] = 0
+            entry["notStanding"] = {k: gone[part["id"]][k] for k in ("registryFloors", "trust", "evidence")}
         buildings.append(entry)
+    assert {b["id"] for b in buildings} >= set(gone), "Registry correction names a missing part"
     return buildings
 
 

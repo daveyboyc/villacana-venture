@@ -8,10 +8,10 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. _Used by: raised_terraces.json:north-pool-west-terrace._ |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
 | `villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg` | upper-floor | layout, materials, planting | North pool looking down over barrel roof tiles: hedges, gates, crazy paving |
 | [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. |
-| [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. |
 | [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west, elena_gated_entry.json:elena-gated-entry._ |
 
 ## Middle pool
@@ -106,10 +106,10 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter, barraka_boardwalk.json:barraka-beach-seating._ |
+| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter, barraka_boardwalk.json:barraka-beach-seating._ |
+| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter._ |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
-| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter._ |
 | [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
 | [IMG_2225.jpg](../../public/photos-ref/IMG_2225.jpg) | ground | materials | Thatched parasols and wooden loungers on the beach _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
 | [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage _Used by: area:beach._ |

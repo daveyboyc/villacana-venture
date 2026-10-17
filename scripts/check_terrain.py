@@ -58,6 +58,15 @@ for p in roads['dali']['points']:
 ramp = skeleton['boundaryReference']['ramps'][0]
 top, bottom = ramp['points']
 assert abs(site_y(top) - west['rise']) < 0.03 and site_y(bottom) < 0.03, 'Ground does not climb at the Cervantes ramp'
+# The steps beside it (IMG_2286, IMG_2355): photographed tread spacing, and every tread above the ramp beside it.
+steps = json.loads((ROOT / 'data/cervantes_elena_steps.json').read_text())
+sf, st = steps['foot'], steps['toward']
+up = [(st[0] - sf[0]) / math.dist(sf, st), (st[1] - sf[1]) / math.dist(sf, st)]
+assert abs(steps['risers'][0] - 0.4) < 0.05 and all(.45 <= b - a <= .55 for a, b in zip(steps['risers'], steps['risers'][1:])), 'Cervantes steps: treads not one tile plus nosing'
+for i, end in enumerate(steps['risers'][1:] + [steps['end']]):
+    for across in steps['across']:
+        p = [sf[0] + up[0] * end - up[1] * across, sf[1] + up[1] * end + up[0] * across]
+        assert site_y(p) <= site_y(sf) + west['rise'] * (i + 1) / len(steps['risers']) + 0.005, f'Cervantes steps: tread {i + 1} below the ramp'
 # Calle Eva climbs out of the middle pool courtyard at the stone steps (IMG_2333) and runs on at the upper level to Dalí.
 eva = roads['eva']['points']
 assert abs(site_y(eva[0]) - west['rise']) < 1e-6 and site_y(eva[2]) == 0, 'Calle Eva does not climb towards Dalí'

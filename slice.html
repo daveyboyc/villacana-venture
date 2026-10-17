@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Villacana pools</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
@@ -19,9 +19,18 @@
       @media (min-width: 700px) { #help { display: block; } }
       #jump { bottom: 64px; right: 16px; padding: 18px 22px; display: none; }
       @media (pointer: coarse) { #jump { display: block; } }
-      #overview-controls { position:fixed; bottom:60px; left:12px; right:12px; display:flex; gap:6px; flex-wrap:wrap; z-index:3; }
-      #overview-controls[hidden] { display:none; }
-      #overview-controls button { min-height:44px; min-width:44px; background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
+      #overview-controls, #walk-camera { position:fixed; bottom:calc(12px + env(safe-area-inset-bottom)); left:max(12px, env(safe-area-inset-left)); display:flex; gap:6px; align-items:center; z-index:4; }
+      #overview-controls[hidden], #walk-camera[hidden], #jump[hidden], #help[hidden] { display:none; }
+      #overview-controls button, #walk-camera button, #overview-more > summary { min-height:44px; min-width:44px; background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
+      #overview { bottom:calc(12px + env(safe-area-inset-bottom)); right:max(12px, env(safe-area-inset-right)); min-height:44px; }
+      #overview-more { position:static; }
+      #overview-more > summary { box-sizing:border-box; cursor:pointer; list-style:none; }
+      #overview-more > summary::-webkit-details-marker { display:none; }
+      #overview-advanced { position:absolute; bottom:54px; left:0; width:min(340px, calc(100vw - 24px)); max-height:45dvh; overflow:auto; display:flex; flex-wrap:wrap; gap:6px; padding:10px; box-sizing:border-box; background:#fffdf8f5; border:1px solid #c9bfae; border-radius:12px; }
+      #overview-more:not([open]) #overview-advanced { display:none; }
+      .reference-tools { flex-wrap:nowrap !important; overflow-x:auto; }
+      .reference-tools button { flex:none; min-height:44px; }
+      #help { bottom:68px; }
       #overview-controls button[aria-pressed="true"] { background:#235f94; color:white; }
       #alignment-notes { position:fixed; top:172px; right:12px; width:min(300px, calc(100vw - 24px)); max-height:35vh; overflow:auto; padding:12px; box-sizing:border-box; background:#fffdf8f2; border:1px solid #c9bfae; border-radius:12px; font-size:13px; z-index:3; }
       #alignment-notes[hidden] { display:none; }
@@ -30,7 +39,7 @@
       #alignment-notes button { background:none; border:0; color:#af1717; text-decoration:underline; cursor:pointer; font:inherit; text-align:left; padding:4px 0; }
       #overview-bearing { min-width:55px; align-self:center; font-variant-numeric:tabular-nums; }
       #overview-rotation { width:120px; }
-      @media(max-width:700px) { #areas { flex-wrap:nowrap; overflow-x:auto; max-height:none; padding-bottom:4px; } #areas .chip { white-space:nowrap; } #alignment-notes { top:170px; max-height:23vh; font-size:12px; } #overview-controls { gap:4px; } #overview-controls button { padding:8px; } }
+      @media(max-width:700px), (max-height:500px) { #areas { flex-wrap:nowrap; overflow-x:auto; max-height:none; padding-bottom:4px; } #areas .chip { white-space:nowrap; } #alignment-notes { top:170px; max-height:23vh; font-size:12px; } #overview-controls, #walk-camera { gap:4px; } #overview-controls button, #walk-camera button, #overview-more > summary { padding:8px; } }
     </style>
   </head>
   <body>
@@ -42,10 +51,14 @@
     <a class="chip" id="back" href="./blueprint.html">Reference map</a>
     <button class="chip" id="gate-control" style="bottom:112px;right:12px" hidden>Open coastal gate</button>
     <button class="chip" id="jump">Jump</button>
+    <div id="walk-camera" role="toolbar" aria-label="Walking camera controls">
+      <button class="camera-in" aria-label="Zoom in">+</button><button class="camera-out" aria-label="Zoom out">−</button><button class="camera-fit">Fit area</button>
+    </div>
     <div id="overview-controls" role="toolbar" aria-label="Overview camera controls" hidden>
       <button id="overview-in" aria-label="Zoom in">+</button><button id="overview-out" aria-label="Zoom out">−</button>
+      <button id="overview-fit">Fit area</button><details id="overview-more"><summary aria-label="More camera controls">More</summary><div id="overview-advanced">
       <button id="overview-left" aria-label="Rotate left">↶</button><button id="overview-right" aria-label="Rotate right">↷</button>
-      <button id="overview-pan" aria-pressed="true">Pan</button><button id="overview-rotate" aria-pressed="false">Rotate</button><input id="overview-rotation" type="range" min="0" max="360" value="0" aria-label="Overview rotation in degrees"><output id="overview-bearing" aria-live="off">0°</output><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-fit">Fit area</button><button id="overview-check" aria-pressed="true">Red map checks</button>
+      <button id="overview-pan" aria-pressed="true">Pan</button><button id="overview-rotate" aria-pressed="false">Rotate</button><input id="overview-rotation" type="range" min="0" max="360" value="0" aria-label="Overview rotation in degrees"><output id="overview-bearing" aria-live="off">0°</output><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-check" aria-pressed="true">Red map checks</button></div></details>
     </div>
     <aside id="alignment-notes" aria-label="Map alignment notes" hidden>
       <details id="alignment-details" open><summary>Map alignment checks</summary>

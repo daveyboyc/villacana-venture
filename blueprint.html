@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Villacana overview & references</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <style>
@@ -34,9 +34,10 @@
       #photo-observation { max-width:850px; line-height:1.4; flex-shrink:0; }
       #viewer p { color: #fff; margin: 0; font-size: 14px; text-align: center; padding: 0 12px; }
       #labelstatus { max-width: 600px; }
-      #map-controls { position:fixed; top:12px; right:12px; display:flex; gap:5px; flex-wrap:wrap; max-width:94vw; z-index:3; }
+      #map-controls { position:fixed; top:12px; right:12px; display:flex; gap:5px; flex-wrap:nowrap; overflow-x:auto; max-width:calc(100vw - 24px); z-index:3; }
+      #map-controls button { min-height:44px; min-width:44px; flex:none; }
       #map-controls button,#map-bearing { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
-      #map-title { position:fixed; top:60px; left:12px; background:#fffdf8e8; border-radius:8px; padding:8px 12px; font-size:14px; }
+      #map-title { position:fixed; top:68px; left:12px; background:#fffdf8e8; border-radius:8px; padding:8px 12px; font-size:14px; }
       #picked { top:96px; }
       #map .evidence-mode [data-photo-file]:not(.selected-photo) path { display:none; }
     </style>
@@ -45,6 +46,7 @@
     <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
     <div id="map-controls" role="toolbar" aria-label="Map camera controls">
       <button id="map-zoom-in" aria-label="Zoom in">+</button><button id="map-zoom-out" aria-label="Zoom out">−</button>
+      <button id="reset">Fit whole resort</button>
       <button id="map-left" aria-label="Rotate left">↶</button><button id="map-right" aria-label="Rotate right">↷</button>
       <button id="layout-mode" aria-pressed="true">Layout</button><button id="map-frontages">Patios &amp; lawns</button><button id="map-north">North ↑</button><span id="map-bearing" aria-label="Map rotation"></span>
     </div>
@@ -80,7 +82,6 @@
       <button id="seafront" aria-pressed="true">Seafront</button>
       <button id="heights" aria-pressed="false">Heights</button>
       <button id="key" aria-pressed="false">Key</button>
-      <button id="reset">Fit whole resort</button>
       <a href="./photos.html">Photo map</a><a href="./slice.html?pool=north,middle,south,main&amp;view=overview">3D overview</a>
       <a href="./slice.html?pool=north,middle,south,main">Walk it</a>
       <a href="./slice.html?pool=south">South pool</a>

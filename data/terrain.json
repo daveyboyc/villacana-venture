@@ -73,7 +73,7 @@
         "blend": 3,
         "run": 3.0,
         "evidence": "photo:IMG_2286.jpg, IMG_2262.jpg: three shallow steps beside the smooth ramp, starting about one tile up from the foot drain, take the whole rise; each step stands a little above the ramp beside it, so the ramp climbs the same 0.5 m over a few metres, not 7",
-        "trust": "Run estimated from tile and tread sizes in the photos (about 0.4 m tiles, 0.6 m treads): the shortest run that keeps every tread above the ramp beside it. Applies only where the foot line crosses Cervantes; the rest of the line keeps the 7 m run."
+        "trust": "Run estimated from tile and tread sizes in the photos (about 0.4 m tiles, 0.5 m treads with their nosings): about the shortest run that keeps every tread above the ramp beside it (from 2.8 m), with a few centimetres to spare at the first tread. Applies only where the foot line crosses Cervantes; the rest of the line keeps the 7 m run."
       },
       {
         "id": "middle-pool-west",

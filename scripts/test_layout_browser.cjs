@@ -3,11 +3,12 @@ const fs = require("node:fs");
 const path = require("node:path");
 (async () => {
   const { createServer } = await import("vite");
-  const server = await createServer({
-    server: { host: "127.0.0.1", port: 0 },
+  const server = await createServer({ cacheDir: `node_modules/.vite-check-${process.pid}`,
+    server: { host: "127.0.0.1", port: 0, strictPort: false },
     logLevel: "error",
   });
   await server.listen();
+  const threeUrl = '/' + require('node:path').relative(process.cwd(), server.config.cacheDir).replaceAll('\\', '/') + '/deps/three.js';
   const site = "http://127.0.0.1:" + server.httpServer.address().port;
   const artifacts = path.join(process.cwd(), "layout-checks.local");
   fs.mkdirSync(artifacts, { recursive: true });
@@ -23,11 +24,12 @@ const path = require("node:path");
   });
   const p = await b.newPage({ viewport: { width: 1400, height: 950 } }),
     errors = [];
+  p.setDefaultTimeout(90000);
   p.on("pageerror", (e) => errors.push(e.message));
   await p.goto(site + "/blueprint.html");
   await p.waitForSelector("#coastal-gate-boundary");
-  const r = await p.evaluate(async () => {
-    const THREE = await import("/node_modules/.vite/deps/three.js");
+  const r = await p.evaluate(async (threeUrl) => {
+    const THREE = await import(threeUrl);
     const [
       { Player },
       { Solids, CoastField },
@@ -44,6 +46,7 @@ const path = require("node:path");
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
       { middleSwRings, middleSwAt },
       { middleSouthRings, middleSouthAt },
+      { raisedTerraces, raisedTerraceRings, raisedTerraceGroundOffset, terraceStairs, terraceFloorY },
     ] = await Promise.all([
       import("/src/player.ts"),
       import("/src/geom.ts"),
@@ -60,6 +63,7 @@ const path = require("node:path");
       import("/src/middle-pool.ts"),
       import("/src/middle-pool-sw-gateway.ts"),
       import("/src/middle-pool-south-gate.ts"),
+      import("/src/raised-terraces.ts"),
     ]);
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
@@ -77,6 +81,7 @@ const path = require("node:path");
         ...middlePoolRings(),
         ...middleSwRings(),
         ...middleSouthRings(),
+        ...raisedTerraceRings(),
         ...coastalWallRings(),
       ],
       Object.fromEntries(
@@ -103,6 +108,7 @@ const path = require("node:path");
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
             stepsGroundOffset(x, z) +
+            raisedTerraceGroundOffset(x, z) +
             gardenGroundOffset(x,z,s.boundaryReference) +
             poolGroundY(x, z) +
             referenceGroundHeight(s.boundaryReference, x, z),
@@ -171,6 +177,45 @@ const path = require("node:path");
       walk([at(-0.4), at(flight.end + 0.3)]);
       if (Math.abs(player.y - rampTop) > 0.08) throw Error(flight.id + ": player did not climb the steps: " + player.y + " vs " + rampTop);
       walk([at(flight.end + 0.3), at(-0.4)]);
+    }
+    // Issue 54: raised terraces. Up each stair one riser at a time, across the floor and back down;
+    // faces are solid, the opening is open, and the lawn and pool deck keep their level.
+    for (const t of raisedTerraces) {
+      if (!document.querySelector(`[data-terrace-id="${t.id}"]`)) throw Error(t.id + ": missing from the map");
+      const floor = terraceFloorY(t) + 0.06, settle = () => { for (let i = 0; i < 120; i++) player.update(1 / 120, input, world, 0); };
+      for (const f of terraceStairs(t)) {
+        const at = (d, c = 0) => [f.foot[0] + f.up[0] * d + f.right[0] * c, f.foot[1] + f.up[1] * d + f.right[1] * c];
+        const heights = [];
+        for (let d = -0.6; d <= f.run + 0.6; d += 0.05) heights.push(world.groundHeight(...at(d)));
+        const jumps = heights.slice(1).map((h, i) => h - heights[i]).filter((j) => Math.abs(j) > 0.02);
+        if (jumps.length !== f.stair.risers || jumps.some((j) => j < 0.1 || j > 0.2)) throw Error(f.opening.id + ": stair does not rise one riser at a time: " + jumps);
+        const foot = world.groundHeight(...at(-0.6)), landing = at(f.run + 0.8);
+        if (Math.abs(world.groundHeight(...landing) - floor) > 0.01 || Math.abs(floor - foot - t.rise) > 0.03) throw Error(f.opening.id + ": top is not the terrace floor");
+        walk([at(-1.2), landing]); settle();
+        if (Math.abs(player.y - floor) > 0.08) throw Error(f.opening.id + ": player did not climb the stair: " + player.y + " vs " + floor);
+        for (const route of t.walks ?? []) {
+          walk([landing, ...route]); settle();
+          if (Math.abs(player.y - world.groundHeight(...route[route.length - 1])) > 0.08 || Math.abs(player.y - floor) > 0.6) throw Error(t.id + ": player left the terrace floor");
+          walk([...route].reverse().concat([landing]));
+        }
+        walk([landing, at(-1.2)]); settle();
+        if (Math.abs(player.y - foot) > 0.08) throw Error(f.opening.id + ": player did not come back down");
+        // The cheeks either side of the flight are solid.
+        for (const c of [-1, 1]) {
+          const p = at(f.run / 2, c * (f.width / 2 + 0.12)), out = world.solids.resolve(...p, 0.42);
+          if (Math.hypot(out.x - p[0], out.z - p[1]) < 0.15) throw Error(f.opening.id + ": stair cheek is not solid");
+        }
+      }
+      // Every face and untraced end is solid along its length.
+      for (const ring of raisedTerraceRings()) {
+        const c = ring.reduce((a, q) => [a[0] + q[0] / ring.length, a[1] + q[1] / ring.length], [0, 0]);
+        const out = world.solids.resolve(c[0], c[1], 0.42);
+        if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.15) throw Error(t.id + ": terrace face is not solid at " + c);
+      }
+    }
+    for (const pool of s.pools) {
+      const [cx, cz] = pool.ring.reduce((a, q) => [a[0] + q[0] / pool.ring.length, a[1] + q[1] / pool.ring.length], [0, 0]);
+      if (raisedTerraceGroundOffset(cx, cz) !== 0 || pool.ring.some((q) => raisedTerraceGroundOffset(...q) !== 0)) throw Error("A raised terrace lifts the " + pool.id + " pool");
     }
     // Issue 31: up the Calle Eva ramp from the middle pool, through the open south-west gateway and back (the steps are walked above).
     {
@@ -282,12 +327,11 @@ const path = require("node:path");
       if (!southCap) throw Error("No sandstone coping below south lawn");
       const keep = world.solids;
       world.solids = new Solids([...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...barrierRings(s.boundaryReference.barriers), ...coastalWallRings(), ...seaWallRings(legacy, paseoWallCovers), ...rings]);
-      // From the Dalí end to the Barraka boardwalk; further east the mapped line passes 0.64 m from a registry house (6465801UF1366N_part5).
-      const end = s.seafront.paseo.points.findIndex(([x, z]) => Math.hypot(x - 28.87, z - 96.28) < 0.01);
-      if (end < 0) throw Error("Paseo lost its Barraka boardwalk join");
-      const stretch = s.seafront.paseo.points.slice(0, end + 1);
-      walk(stretch);
-      walk([...stretch].reverse());
+      // The whole paseo, end to end both ways, past the Barraka join and the registry outlines the aerial shows are open paving (issue #41).
+      if (!s.seafront.paseo.points.some(([x, z]) => Math.hypot(x - 28.87, z - 96.28) < 0.01)) throw Error("Paseo lost its Barraka boardwalk join");
+      if (!s.buildings.some((b) => b.notStanding) || buildings.some((b) => b.notStanding)) throw Error("Not-standing registry parts must stay outlines, not solids");
+      walk(s.seafront.paseo.points);
+      walk([...s.seafront.paseo.points].reverse());
       world.solids = keep;
     }
     // Middle pool: in through the east gateway from Calle Eva and out again; the west planter is solid.
@@ -385,7 +429,7 @@ const path = require("node:path");
       levelBuildingKeepsGroups: true,
       refinedMaterialGroups: plane.groups.length,
     };
-  });
+  }, threeUrl);
   await p.click("#map-frontages");
   await p.screenshot({ path: path.join(artifacts, "layout-map.png") });
   await p.goto(

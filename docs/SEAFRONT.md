@@ -83,14 +83,16 @@ plain bank where the wall stands.
 - The east end height: the model makes the wall up to 3 m over its last 40 m, but
   IMG_2227 from the beach suggests about 1 m there. The big-pool lawn level (Dave)
   and the photos disagree; no photo from the paseo near Guillermo yet.
-- Not modelled: the hedges on the garden side (IMG_2349), the green windbreak cloth
-  on parts of the fence (IMG_2350, IMG_2352), the lamp posts, the drainage holes and
-  the service cover (IMG_2354), the board pattern in the concrete.
+- Built as Details (docs/PASEO_DETAILS.md): the garden-side hedges (IMG_2349), the
+  green windbreak cloth (IMG_2350, IMG_2352), the four white lamps at the wall foot
+  and the service cover (IMG_2354). Along the wall run the protected route is the
+  2.2 m clear walk beyond the lamps; the paving stays 3 m. Not modelled: the
+  drainage holes and the board pattern in the concrete.
 - The south lawn's sea wall keeps its returns at both ends and its collision; its
   stretches along the paseo are now drawn as this wall. Whether a white parapet
   shows on the lawn side is not settled.
-- Further east the mapped paseo passes 0.64 m from a registry house
-  (6465801UF1366N_part5), so the browser walk stops at the Barraka boardwalk.
+- Further east the mapped paseo crossed registry parts 6465801UF1366N_part5/6;
+  resolved by issue #41 below, and the browser walk now covers the whole paseo.
 
 ### Promenade retrace (issue #35, 15 October 2026)
 
@@ -106,6 +108,35 @@ No heights, pool/house footprints, gate geometry or eastern OSM points change.
 The uncorrected eastern house obstruction remains issue #41; wall height near
 Guillermo remains issue #40. Browser coverage follows the complete retraced run
 to the same Barraka boardwalk join rather than relying on an OSM point count.
+
+### Registry parts on the paseo by Barraka (issue #41, 16 October 2026)
+
+Measured after the #35 retrace: the eastern OSM line (kept verbatim) did not pass
+0.64 m from registry part `6465801UF1366N_part5`, it entered it by 2.8 m at the
+OSM vertex [34.28, 95.71] and also entered the thin `part6` by 0.5 m.
+
+The aerial (`public/map/ground.jpg`) decides which is wrong. Colour profiles across
+the promenade show the pink stamped paving, about 3.5 m wide, running unbroken
+through both parts, and the rest of part 5 is open sand and the pale beach-access
+strip beside the Barraka roof: no roof, roof edge or shadow inside either ring.
+The neighbouring registry roofs (Barraka, this parcel's parts 2-4) match the same
+image within about 1 m, so it is not a registration offset, and no line along the
+visible paving could clear the parts. IMG_2346/IMG_2347 (pins about 4 m; IMG_2347's
+inside part 5) show sand, the Barraka sign planter and a timber walkway there.
+
+So the footprints are corrected, not the paseo: `data/registry_corrections.json`
+keeps both registry rings exactly but sets their storeys to 0 (`notStanding` in the
+skeleton). They are drawn as dashed outlines on the map, not extruded and not solid;
+nothing is built in their place. The building count, every other footprint, the
+coastal gate join and all eastern OSM / Barraka join points are unchanged.
+`check_seafront.py` now checks that the whole paseo keeps half its width (1.5 m)
+from every standing registry house (closest now part 2, 1.66 m) and that each
+correction lies on aerial pink paving; the layout browser test walks the whole
+paseo end to end both ways. Before/after: `docs/reviews/issue-41/`.
+
+Limits: why the registry still carries the parts is not known. East of the
+junction the OSM line runs along the landward edge of the pink strip, about 2 m
+landward of its centre on the aerial; not retraced here.
 
 ## Independent shoreline review — issue #32 (15 October 2026)
 
