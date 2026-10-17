@@ -1,9 +1,11 @@
 import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
+import {raisedTerraceBlueprint,suppressInRaisedTerraces} from "./raised-terraces";
 import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
+import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
 import {barrakaSections} from "./barraka-boardwalk";
 import middleSouth from "../data/middle_pool_south_gate.json";
 import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
@@ -66,6 +68,7 @@ async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   suppressInEvaLawn(skeleton);
   suppressInMiddlePoolReview(skeleton);
+  suppressInRaisedTerraces(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
   const rot = skeleton.viewRotation;
 
@@ -94,6 +97,10 @@ async function boot(): Promise<void> {
     const node=el("path",{d:path(ring),fill,stroke:"#fffaf1","stroke-width":.07,"data-garden-door-id":id});const title=el("title",{});title.textContent=`${gardenDoor.name}: ${gardenDoor.trust} · ${gardenDoor.evidence.join(", ")}`;node.append(title);garden.append(node);
   }
   frontages.append(garden);
+  // Raised terraces (data/raised_terraces.json): floor, retaining faces, untraced ends (dashed), stairs and handrails.
+  const terraces=el("g",{id:"raised-terraces"});
+  for(const part of raisedTerraceBlueprint()){const node=el("path",{d:part.closed?path(part.points):"M"+part.points.map(p=>p.join(" ")).join("L"),fill:part.fill??"none",stroke:part.stroke??"none","stroke-width":part.width??0,...(part.dash?{"stroke-dasharray":part.dash}:{}),"data-terrace-id":part.id});const title=el("title",{});title.textContent=part.title;node.append(title);terraces.append(node);}
+  frontages.append(terraces);
   // Calle Elena north, traced from the roof photos: beds, patio wall and the arched gateway.
   const elena=el("g",{id:"elena-north"});
   const titled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);elena.append(node);};
@@ -110,6 +117,13 @@ async function boot(): Promise<void> {
     titled(el("path",{d:`M${d.at[0]-ux*d.width/2} ${d.at[1]-uz*d.width/2}L${d.at[0]+ux*d.width/2} ${d.at[1]+uz*d.width/2}`,stroke:"#6b4126","stroke-width":w.thickness+.04}),"Closed timber garden door");
   }
   frontages.append(elena);
+  // Issue #38: the photographed enclosure of the patios behind the Elena garden wall, and the pergola inside.
+  const eastPatios=el("g",{id:"elena-east-patios"});
+  const etitled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);eastPatios.append(node);};
+  etitled(el("path",{d:path(elenaEastPergola.ring),fill:"none",stroke:"#6b4126","stroke-width":.1,"stroke-dasharray":".3 .15","data-elena-east-id":elenaEastPergola.id}),`${elenaEastPergola.name}: ${elenaEastPergola.trust} · ${elenaEastPergola.evidence.join(", ")}`);
+  for(const ring of elenaEastPergolaPosts())etitled(el("path",{d:path(ring),fill:"#6b4126","data-elena-east-id":elenaEastPergola.id}),`${elenaEastPergola.name}: post (estimated)`);
+  for(const wall of elenaEastPatioWalls)etitled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-east-id":wall.id}),`${wall.name}: ${wall.trust} · ${wall.evidence.join(", ")}`);
+  frontages.append(eastPatios);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
   const middle=el("g",{id:"middle-pool-features"});
   const mtitled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);middle.append(node);};
@@ -322,7 +336,7 @@ async function boot(): Promise<void> {
   for (const b of skeleton.buildings) {
     const node = el("path", { d: path(b.ring, b.holes), "fill-rule": "evenodd", stroke: b.floors===0?"#94654b":"#5b564e", "stroke-width": b.floors===0?.25:.4 });
     node.setAttribute("data-building-id",b.id);if(b.floors===0)node.setAttribute("stroke-dasharray",".8 .4");
-    roofs.push({ node, floors: b.floors });
+    if (b.notStanding) { node.setAttribute("fill", "none"); node.setAttribute("data-not-standing", "1"); } else roofs.push({ node, floors: b.floors }); // issue #41: registry outline only
     world.append(node);
     // Covered walk-throughs: dashed brown if confirmed by a photo, dashed orange if only likely.
     if (b.passage) world.append(el("path", { d: path(b.ring), fill: "#c98463", "fill-opacity": 0.45, stroke: b.passage.trust === "photo" ? "#7a4a2a" : "#e8842b", "stroke-width": 0.5, "stroke-dasharray": "1 0.6" }));
@@ -342,8 +356,8 @@ async function boot(): Promise<void> {
 
   // Garden walls and gates are generated by rule, not surveyed.
   const walls = el("g", {});
-  for (const [x, z] of skeleton.gardenWalls.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: "#8a8172", "stroke-width": 0.1 }));
-  for (const [x, z] of skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
+  for (const [x, z] of skeleton.gardenWalls.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.34, fill: "#fff", stroke: "#8a8172", "stroke-width": 0.1 }));
+  for (const [x, z] of skeleton.gardenGates.filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z))) walls.append(el("circle", { cx: x, cy: z, r: 0.8, fill: "none", stroke: "#7a4a2a", "stroke-width": 0.3 }));
   // The south lawn's seaward wall and fence: one unbroken line, no gate.
   if (skeleton.seaWall) {
     const line = (points: Vec2[]) => seaWallSegments(points, paseoWallCovers).map(([a, b]) => `M${a[0]} ${a[1]}L${b[0]} ${b[1]}`).join("");

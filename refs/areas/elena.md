@@ -15,13 +15,14 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 - Issue #34: the short paved spur between the two hedged beds now reaches a closed timber door in a finite white garden wall; the barred window is in a short transverse return at the north end of the planted bed (IMG_2199-2201). Extents against existing bed backs and heights are estimated; no unseen patio enclosure or level change is inferred.
 - Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.
 - Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced.
+- Issue #38 (docs/ELENA_EAST_PATIOS.md): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the junction (the trained-trunk wall, curved-coping door and cane-roofed pergola are on the Cervantes south side, cf. IMG_2197; new task cervantes-east-south-patios). The patios behind the Elena garden wall are hidden under the magnolia canopy from every roof camera, so their partitions, floors and levels stay unmodelled. Built from ground photos: the garden wall continued behind the second hedged bed (IMG_2197, IMG_2199), a solid white wall behind the plumbago bed closing the patios off from Cervantes (IMG_2356), and a timber pergola behind the garden door (IMG_2199, IMG_2200); extents and heights estimated.
 - Issue #57 (data/door_sills.json): red-tread sills, 0.12 m, at the two brown doors in the white wall west of the junction lawns (IMG_2260/2261/2330). Not modelled yet: that wall and its doors. The door on the east side at the junction (IMG_2253) has no visible sill and was left out. Open: the terrain rule's guessed west rise puts these lawns 0.2-0.3 m above the lane, while the photos show them level with it behind a 0.1 m kerb.
 
 ## Read first
 
-- docs: `docs/ELENA_NORTH.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`
-- data: `data/elena_north.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`
-- src: `src/elena-north.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`
+- docs: `docs/ELENA_NORTH.md`, `docs/ELENA_EAST_PATIOS.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`
+- data: `data/elena_north.json`, `data/elena_east_patios.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`
+- src: `src/elena-north.ts`, `src/elena-east-patios.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`
 - contact sheet: `villacana-reference/contact-sheets/elena.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -34,14 +35,6 @@ Layout: 30, Levels and slopes: 7, Facades and roofs: 11, Materials: 11, Planting
 Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
 
 - `elena-south-sills` (raised-threshold): 0.1-0.15 m above Calle Elena south, medium confidence. Model: **built**, task `door-sills`. Single red-tread or white sills at the house doors. Elena south is level to the middle pool gate; lawns kerbed at about 0.1 m. (IMG_2260.jpg, IMG_2261.jpg, IMG_2330.jpg, IMG_2253.jpg)
-
-## Open build tasks
-
-From `data/build_queue.json`; issue bodies in `refs/issues/`.
-
-| Priority | Task | What | Status | Photos |
-| --- | --- | --- | --- | --- |
-| P2 | `elena-east-patios` [#38](https://github.com/daveyboyc/villacana-venture/issues/38) | Elena north: private patios east of the beds (after elena-garden-door) | open | [IMG_2366](../../public/photos-ref/IMG_2366.jpg), [IMG_2362](../../public/photos-ref/IMG_2362.jpg), [IMG_2360](../../public/photos-ref/IMG_2360.jpg) |
 
 ## Built from these photos
 
@@ -68,77 +61,84 @@ graph LR
   A --> F3["Elena south · sill at the second door, north along the same wall"]
   F3 --> PIMG_2261_jpg(["IMG_2261"])
   F3 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F4["Elena · private tiled entry west of covered walkway"]
-  F4 --> PIMG_2202_jpg(["IMG_2202"])
-  F4 --> PIMG_2203_jpg(["IMG_2203"])
-  F4 --> PIMG_2361_jpg(["IMG_2361"])
-  A --> F5["Elena north · paved approach between the hedged beds"]
+  A --> F4["Elena east patios · white wall behind the plumbago bed on Cervantes"]
+  F4 --> PIMG_2197_jpg(["IMG_2197"])
+  F4 --> PIMG_2356_jpg(["IMG_2356"])
+  A --> F5["Elena east patios · timber pergola behind the garden door"]
   F5 --> PIMG_2199_jpg(["IMG_2199"])
   F5 --> PIMG_2200_jpg(["IMG_2200"])
-  F5 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F6["Elena north · garden wall and closed timber door"]
+  A --> F6["Elena east patios · garden wall behind the second hedged bed"]
+  F6 --> PIMG_2197_jpg(["IMG_2197"])
   F6 --> PIMG_2199_jpg(["IMG_2199"])
-  F6 --> PIMG_2200_jpg(["IMG_2200"])
-  F6 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F7["Elena north · arched gateway to the north pool lawn"]
+  A --> F7["Elena · private tiled entry west of covered walkway"]
   F7 --> PIMG_2202_jpg(["IMG_2202"])
-  F7 --> PIMG_2363_jpg(["IMG_2363"])
-  A --> F8["Elena north · magnolia bed"]
-  F8 --> PIMG_2362_jpg(["IMG_2362"])
-  F8 --> PIMG_2364_jpg(["IMG_2364"])
-  F8 --> PIMG_2365_jpg(["IMG_2365"])
-  A --> F9["Elena north · patio wall, east side"]
-  F9 --> PIMG_2363_jpg(["IMG_2363"])
-  A --> F10["Elena north · white planter box"]
-  F10 --> PIMG_2198_jpg(["IMG_2198"])
-  F10 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F11["Elena north · white planter box"]
-  F11 --> PIMG_2198_jpg(["IMG_2198"])
-  F11 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F12["Elena north · planting strip, west side"]
-  F12 --> PIMG_2202_jpg(["IMG_2202"])
+  F7 --> PIMG_2203_jpg(["IMG_2203"])
+  F7 --> PIMG_2361_jpg(["IMG_2361"])
+  A --> F8["Elena north · paved approach between the hedged beds"]
+  F8 --> PIMG_2199_jpg(["IMG_2199"])
+  F8 --> PIMG_2200_jpg(["IMG_2200"])
+  F8 --> PIMG_2201_jpg(["IMG_2201"])
+  A --> F9["Elena north · garden wall and closed timber door"]
+  F9 --> PIMG_2199_jpg(["IMG_2199"])
+  F9 --> PIMG_2200_jpg(["IMG_2200"])
+  F9 --> PIMG_2201_jpg(["IMG_2201"])
+  A --> F10["Elena north · arched gateway to the north pool lawn"]
+  F10 --> PIMG_2202_jpg(["IMG_2202"])
+  F10 --> PIMG_2363_jpg(["IMG_2363"])
+  A --> F11["Elena north · magnolia bed"]
+  F11 --> PIMG_2362_jpg(["IMG_2362"])
+  F11 --> PIMG_2364_jpg(["IMG_2364"])
+  F11 --> PIMG_2365_jpg(["IMG_2365"])
+  A --> F12["Elena north · patio wall, east side"]
   F12 --> PIMG_2363_jpg(["IMG_2363"])
-  A --> F13["Elena north · hedged bed with pollarded tree"]
-  F13 --> PIMG_2199_jpg(["IMG_2199"])
-  F13 --> PIMG_2200_jpg(["IMG_2200"])
+  A --> F13["Elena north · white planter box"]
+  F13 --> PIMG_2198_jpg(["IMG_2198"])
   F13 --> PIMG_2201_jpg(["IMG_2201"])
-  F13 --> PIMG_2365_jpg(["IMG_2365"])
-  A --> F14["Elena north · second hedged bed"]
-  F14 --> PIMG_2197_jpg(["IMG_2197"])
+  A --> F14["Elena north · white planter box"]
   F14 --> PIMG_2198_jpg(["IMG_2198"])
-  F14 --> PIMG_2200_jpg(["IMG_2200"])
-  A --> F15["Elena north · barred window wall at the north end of the bed"]
-  F15 --> PIMG_2200_jpg(["IMG_2200"])
-  F15 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F16["Cervantes / Elena · clipped lawn tree 1"]
-  F16 --> PIMG_2329_jpg(["IMG_2329"])
-  F16 --> PIMG_2342_jpg(["IMG_2342"])
-  F16 --> PIMG_2358_jpg(["IMG_2358"])
-  F16 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F17["Cervantes / Elena · clipped lawn tree 2"]
-  F17 --> PIMG_2260_jpg(["IMG_2260"])
-  F17 --> PIMG_2358_jpg(["IMG_2358"])
-  F17 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F18["Cervantes / Elena · clipped lawn tree 3"]
-  F18 --> PIMG_2260_jpg(["IMG_2260"])
-  F18 --> PIMG_2358_jpg(["IMG_2358"])
-  F18 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F19["Cervantes / Elena · steps beside the ramp"]
-  F19 --> PIMG_2262_jpg(["IMG_2262"])
-  F19 --> PIMG_2286_jpg(["IMG_2286"])
+  F14 --> PIMG_2201_jpg(["IMG_2201"])
+  A --> F15["Elena north · planting strip, west side"]
+  F15 --> PIMG_2202_jpg(["IMG_2202"])
+  F15 --> PIMG_2363_jpg(["IMG_2363"])
+  A --> F16["Elena north · hedged bed with pollarded tree"]
+  F16 --> PIMG_2199_jpg(["IMG_2199"])
+  F16 --> PIMG_2200_jpg(["IMG_2200"])
+  F16 --> PIMG_2201_jpg(["IMG_2201"])
+  F16 --> PIMG_2365_jpg(["IMG_2365"])
+  A --> F17["Elena north · second hedged bed"]
+  F17 --> PIMG_2197_jpg(["IMG_2197"])
+  F17 --> PIMG_2198_jpg(["IMG_2198"])
+  F17 --> PIMG_2200_jpg(["IMG_2200"])
+  A --> F18["Elena north · barred window wall at the north end of the bed"]
+  F18 --> PIMG_2200_jpg(["IMG_2200"])
+  F18 --> PIMG_2201_jpg(["IMG_2201"])
+  A --> F19["Cervantes / Elena · clipped lawn tree 1"]
+  F19 --> PIMG_2329_jpg(["IMG_2329"])
+  F19 --> PIMG_2342_jpg(["IMG_2342"])
+  F19 --> PIMG_2358_jpg(["IMG_2358"])
+  F19 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F20["Cervantes / Elena · clipped lawn tree 2"]
+  F20 --> PIMG_2260_jpg(["IMG_2260"])
+  F20 --> PIMG_2358_jpg(["IMG_2358"])
+  F20 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F21["Cervantes / Elena · clipped lawn tree 3"]
+  F21 --> PIMG_2260_jpg(["IMG_2260"])
+  F21 --> PIMG_2358_jpg(["IMG_2358"])
+  F21 --> PIMG_2367_jpg(["IMG_2367"])
 ```
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2200.jpg](../../public/photos-ref/IMG_2200.jpg) | ground | layout, planting | Calle Elena north: lane beside hedged beds and pollarded trees **Looks at:** The first hedged bed. _Used by: elena_north.json:elena-north-garden-wall, elena_north.json:elena-north-window-return, elena_north.json:elena-north-tree-bed-1, elena_north.json:elena-north-tree-bed-2, elena_north.json:elena-north-garden-door-path, elena_east_patios.json:elena-east-patios-pergola._ |
 | [IMG_2201.jpg](../../public/photos-ref/IMG_2201.jpg) | ground | layout, materials | Calle Elena north: lane with window grilles and beds **Looks at:** The first hedged bed and the lane north. _Used by: elena_north.json:elena-north-garden-wall, elena_north.json:elena-north-window-return, elena_north.json:elena-north-tree-bed-1, elena_north.json:elena-north-planter-box-1, elena_north.json:elena-north-planter-box-2, elena_north.json:elena-north-garden-door-path._ |
 | [IMG_2358.jpg](../../public/photos-ref/IMG_2358.jpg) | roof | layout, planting | Roof by Elena: looking down on Elena south and the junction lawns **Looks at:** The junction lawns south of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2367.jpg](../../public/photos-ref/IMG_2367.jpg) | roof | layout, planting | Roof by Elena: looking south over the Cervantes/Elena junction **Looks at:** The Cervantes/Elena junction. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
-| [IMG_2200.jpg](../../public/photos-ref/IMG_2200.jpg) | ground | layout, planting | Calle Elena north: lane beside hedged beds and pollarded trees **Looks at:** The first hedged bed. _Used by: elena_north.json:elena-north-garden-wall, elena_north.json:elena-north-window-return, elena_north.json:elena-north-tree-bed-1, elena_north.json:elena-north-tree-bed-2, elena_north.json:elena-north-garden-door-path._ |
+| [IMG_2199.jpg](../../public/photos-ref/IMG_2199.jpg) | ground | planting, layout | Calle Elena north: planting bed with pollarded tree and a garden door **Looks at:** The first hedged bed. _Used by: elena_north.json:elena-north-garden-wall, elena_north.json:elena-north-tree-bed-1, elena_north.json:elena-north-garden-door-path, elena_east_patios.json:elena-east-patios-west-wall, elena_east_patios.json:elena-east-patios-pergola._ |
 | [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west, elena_gated_entry.json:elena-gated-entry._ |
+| [IMG_2197.jpg](../../public/photos-ref/IMG_2197.jpg) | ground | layout, materials | Calle Elena north: tiled lane between planted beds **Looks at:** The second hedged bed and the lane. _Used by: elena_north.json:elena-north-tree-bed-2, elena_east_patios.json:elena-east-patios-west-wall, elena_east_patios.json:elena-east-patios-cervantes-wall._ |
 | [IMG_2198.jpg](../../public/photos-ref/IMG_2198.jpg) | ground | layout, planting | Calle Elena north: lane with low white bed walls and pollarded trees **Looks at:** The second hedged bed. _Used by: elena_north.json:elena-north-tree-bed-2, elena_north.json:elena-north-planter-box-1, elena_north.json:elena-north-planter-box-2._ |
-| [IMG_2199.jpg](../../public/photos-ref/IMG_2199.jpg) | ground | planting, layout | Calle Elena north: planting bed with pollarded tree and a garden door **Looks at:** The first hedged bed. _Used by: elena_north.json:elena-north-garden-wall, elena_north.json:elena-north-tree-bed-1, elena_north.json:elena-north-garden-door-path._ |
 | [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |
 | [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2365.jpg](../../public/photos-ref/IMG_2365.jpg) | roof | layout, planting, materials | Roof by Elena: looking down on the Elena north lane and its planted bed **Looks at:** The magnolia bed beside the Elena north lane. **Note:** Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it. _Used by: elena_north.json:elena-north-magnolia-bed, elena_north.json:elena-north-tree-bed-1._ |
@@ -148,7 +148,6 @@ graph LR
 | [IMG_2361.jpg](../../public/photos-ref/IMG_2361.jpg) | roof | layout, materials, facades | Roof by Elena: looking down into a gated tiled entry **Looks at:** The gated tiled entry west of the covered walkway. **Note:** Roof shot looking down. The pin is the roof, not the entry. _Used by: elena_gated_entry.json:elena-gated-entry._ |
 | [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
 | [IMG_2364.jpg](../../public/photos-ref/IMG_2364.jpg) | roof | facades, materials, planting | Roof by Elena: barrel-tile lean-to over a magnolia bed **Looks at:** The magnolia bed and the lean-to roof beside it. _Used by: elena_north.json:elena-north-magnolia-bed._ |
-| [IMG_2197.jpg](../../public/photos-ref/IMG_2197.jpg) | ground | layout, materials | Calle Elena north: tiled lane between planted beds **Looks at:** The second hedged bed and the lane. _Used by: elena_north.json:elena-north-tree-bed-2._ |
 | [IMG_2255.jpg](../../public/photos-ref/IMG_2255.jpg) | ground | layout, materials | Covered arched passage on Elena north, patterned tiles _Used by: building:6265201UF1366N_part5._ |
 | [IMG_2287.jpg](../../public/photos-ref/IMG_2287.jpg) | ground | facades, planting | Elena junction: private doorway and planting _Used by: cervantes_garden_door.json:cervantes-garden-door._ |
 | [IMG_2254.jpg](../../public/photos-ref/IMG_2254.jpg) | ground | signage | Plaque reading CALLE ELENA 18-30 **Looks at:** The CALLE ELENA plaque in the covered walkway. _Used by: building:6265201UF1366N_part5._ |
@@ -161,13 +160,13 @@ graph LR
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades | Cervantes junction: another view of the same terraces _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
 | [IMG_2265.jpg](../../public/photos-ref/IMG_2265.jpg) | ground | layout, levels | Cervantes: lane facing into the resort _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, ramp:cervantes-elena-ramp._ |
 | [IMG_2263.jpg](../../public/photos-ref/IMG_2263.jpg) | ground | layout | Cervantes: lane and clipped planting toward the junction _Used by: frontage_divisions.json:cervantes-elena-lawn-1, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
+| [IMG_2328.jpg](../../public/photos-ref/IMG_2328.jpg) | ground | levels, layout | Cervantes at Elena: ramp and steps side by side, drain at the foot **Looks at:** The ramp and steps side by side. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
 | [IMG_2329.jpg](../../public/photos-ref/IMG_2329.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn with a pollarded tree and white kerb _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
 | [IMG_2342.jpg](../../public/photos-ref/IMG_2342.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn corner with pollarded tree and drain **Note:** GPS ±14 m. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
 | [IMG_2327.jpg](../../public/photos-ref/IMG_2327.jpg) | ground | levels, layout, facades | Cervantes at Elena: steps up to a door beside the lane _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed._ |
 | [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Looks at:** The steps beside the Cervantes ramp. **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
-| [IMG_2328.jpg](../../public/photos-ref/IMG_2328.jpg) | ground | levels, layout | Cervantes at Elena: ramp and steps side by side, drain at the foot **Looks at:** The ramp and steps side by side. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed._ |
+| [IMG_2355.jpg](../../public/photos-ref/IMG_2355.jpg) | ground | levels | Cervantes/Elena steps from the junction **Looks at:** The steps beside the Cervantes ramp. _Used by: cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
 | [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb._ |
-| [IMG_2355.jpg](../../public/photos-ref/IMG_2355.jpg) | ground | levels | Cervantes/Elena steps from the junction **Looks at:** The steps beside the Cervantes ramp. _Used by: cervantes_garden_door.json:cervantes-junction-north-bed._ |
 | [IMG_2214.jpg](../../public/photos-ref/IMG_2214.jpg) | roof | facades, view | Roof terrace: flat roofs, solar panels, water tanks, mountains north **Note:** On a roof by Calle Elena. The pin is inside a building. |
 | [IMG_2215.jpg](../../public/photos-ref/IMG_2215.jpg) | roof | facades, view | Roof terrace looking north-east: roofs, a tall tower block beyond |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |

@@ -43,8 +43,32 @@
    "dependsOn": [
     "elena-garden-door"
    ],
-   "status": "open",
-   "issue": 38
+   "status": "done",
+   "issue": 38,
+   "owner": "issue_38"
+  },
+  {
+   "id": "cervantes-east-south-patios",
+   "area": "cervantes",
+   "priority": 3,
+   "kind": "structure",
+   "title": "Cervantes east of Elena: walled patios on the south side, with the cane-roofed pergola",
+   "photos": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg"
+   ],
+   "build": "Found while doing elena-east-patios (issue #38): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the Elena junction. Its south side has white patio walls with a trained bougainvillea trunk (also IMG_2197), a closed brown door under a curved coping, a timber pergola with a cane roof against a house with a wooden balcony, and round clipped shrubs. They lie between the Cervantes axis and the registry front of 6265601UF1366N_part1. Trace the lane-side wall and door; patios are private, so walls are solid.",
+   "avoid": "Confirm the reading first with an overlay or render from the roof camera; roof pins stand on the Cervantes north row. Do not trace the patios' internal partitions unless a photo shows them.",
+   "accept": [
+    "new check script",
+    "render from IMG_2360 compared",
+    "layout browser test still walks Cervantes both ways"
+   ],
+   "dependsOn": [
+    "elena-east-patios"
+   ],
+   "status": "open"
   },
   {
    "id": "elena-gated-entry",
@@ -474,7 +498,8 @@
    "dependsOn": [
     "paseo-retrace-line"
    ],
-   "status": "open",
+   "status": "done",
+   "owner": "issue_41",
    "issue": 41
   },
   {
@@ -495,9 +520,9 @@
     "render from IMG_2352"
    ],
    "dependsOn": [],
-   "status": "open",
+   "status": "done",
    "issue": 49,
-   "notes": "Hedges behind the mesh, windbreak cloth runs and the flush service cover are built (PR #74, data/paseo_details.json). Still to do: the four slim white lamps. Their photographed positions at the wall foot fail the route-clearance guard, so they were left out rather than moved without evidence; place them once the paseo width at the wall foot is confirmed."
+   "notes": "Hedges behind the mesh, windbreak cloth runs and the flush service cover are built (PR #74, data/paseo_details.json). The four white lamps stand at their photographed spots on the paving at the wall foot (IMG_2352, IMG_2350): along the wall run the protected route is the 2.2 m clear walk beyond them (data/paseo_wall.json route.clear), the paving stays 3 m."
   },
   {
    "id": "raised-terraces",
@@ -519,8 +544,10 @@
     "check_levels.py: north-pool-west-stair marked built"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 54
+   "status": "done",
+   "issue": 54,
+   "owner": "issue_54",
+   "notes": "Built: data/raised_terraces.json, src/raised-terraces.ts, docs/RAISED_TERRACES.md. Stair placed by a camera fit of IMG_2204 against the pool ring (bearing checked in IMG_2206); about 2.3 m from the survey centre."
   },
   {
    "id": "middle-pool-raised-patios",
@@ -566,7 +593,8 @@
     "check_levels.py: cervantes-elena-steps marked built"
    ],
    "dependsOn": [],
-   "status": "open",
+   "status": "done",
+   "owner": "issue_56",
    "issue": 56
   },
   {

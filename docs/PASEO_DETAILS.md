@@ -23,14 +23,30 @@ the walk with no obstructing volume and is tagged `flushRouteSurface`. It adds
 no collision. Geometry clipping may leave gaps where the protected route reaches
 a proposed detail; final integrated browser/render review must inspect that.
 
-Immutable pre-change archive: `/workspace/issue-49-baseline` (git archive of
-starting HEAD, with dependencies symlinked). Compare Details in baseline and
-updated trees from **IMG_2352**, `--pool=main --details`; IMG_2350, IMG_2354 and
-IMG_2349 provide supporting viewpoints. Baseline contains no new detail data.
+## Lamps rechecked after the paseo retrace (issue #35, PR #64)
 
-Source verification passed: all twelve standard source checks plus the new
-`check_paseo_details.py`, photo assignment and its ten tests, reference check,
-TypeScript and production build. Root integration owns before/after camera
-renders and both browser regressions; these are pending. Queue remains
-`in-progress` until those checks and visual review are complete. No claim of
-photo fidelity or surveyed lamp spacing is made from source/build checks.
+The retrace puts the paseo centreline 1.5 m seaward of the wall face with a 3 m
+protected width, so the route's landward edge is the wall face itself. The lamps
+were re-read from the photos:
+
+- **Where they stand.** On the stamped paving, not on the wall or coping: each
+  white shaft rises from a small square base plate set on the pavement against
+  the sandstone foot (IMG_2352 and IMG_2350 close up; the next lamp's base shows
+  at the top of IMG_2354). The flat head reaches out over the walk.
+- **How far out.** A perspective read of IMG_2352 (camera about 1.55 m up,
+  vanishing point of the wall foot and timber edge) gives a paved width of about
+  2.9-3.0 m at the lamp and the shaft centre about 0.15 m seaward of the wall
+  foot; the shaft is about 3.5 m with a head about 0.65 m long. IMG_2350 against
+  the sea horizon gives about 3.0 m of paving.
+- **Result (issue #49).** The paving stays 3 m wide, but along the wall run the
+  protected route is now the clear walk beyond the lamps: `route.clear` in
+  `data/paseo_wall.json`, 2.2 m wide, from about 0.8 m off the wall face to the
+  timber edge. That clears each shaft and its overhanging head (the guard counts
+  the head's furthest corner), so all four lamps stand at their photographed
+  spots. Off the wall run the full 3 m paseo stays protected. The skeleton
+  carries the three protected pieces as `seafront.paseo.protect`, which
+  `src/slice.ts` hands to the shared guard; `check_paseo_details.py` reruns the
+  guard in Python over the same routes and fails if a placed lamp blocks.
+
+Renders from IMG_2352 and IMG_2354 (`--pool=south,main --details`) are in
+`docs/reviews/issue-49/`.

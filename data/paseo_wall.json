@@ -312,6 +312,11 @@
   ],
   "trust": "Wall-relative centreline over the photographed retaining-wall run; 3 m width estimated from photos, about 1-2 m plan accuracy. OSM retained outside that run, including the coastal gate approach and Barraka boardwalk joins. No level changes or registry footprint corrections.",
   "retainBefore": 1,
-  "retainAfter": 4
+  "retainAfter": 4,
+  "clear": {
+   "width": 2.2,
+   "offsetSeaward": 1.9,
+   "trust": "The walk that must stay clear along the photographed wall run: from about 0.8 m off the wall face (beyond the white lamps at the wall foot and their overhanging heads, IMG_2352, IMG_2350) to the timber edge at about 3 m. The paving itself stays 3 m wide; only the keep-clear strip is narrower. Outside the wall run the full paseo width stays protected."
+  }
  }
 }

@@ -16,13 +16,15 @@
  ],
  "risers": [
   0.4,
-  1.0,
-  1.6
+  0.92,
+  1.45
  ],
  "end": 3.0,
  "evidence": [
   "IMG_2286.jpg",
+  "IMG_2355.jpg",
+  "IMG_2328.jpg",
   "IMG_2262.jpg"
  ],
- "trust": "Three shallow steps on the north half of the lane, beside the smooth ramp, starting about one tile up from the foot drain (IMG_2286, IMG_2262). White-painted risers, terracotta treads with grey stone edges. Tread lengths from the 0.4 m tiles; together they climb the same 0.5 m as the ramp, which reaches the top tread's level 3.0 m up. Positions approximate (about 0.2 m)."
+ "trust": "Three shallow steps on the north half of the lane, beside the smooth ramp, starting one tile row up from the foot drain (IMG_2286, IMG_2355, IMG_2328, IMG_2262). White-painted risers, terracotta treads with grey stone nosings. Risers at 0.4, 0.92 and 1.45 m from the drain: each tread is one 0.4 m tile plus its nosing, about 0.5 m, counted from the tiles in IMG_2286 and IMG_2355. Together they climb the same 0.5 m as the ramp, which reaches the top tread's level 3.0 m up; every tread stays above the ramp beside it (check_terrain.py). Positions approximate (about 0.1 m); the top tread's length to where the ramp meets it is estimated."
 }

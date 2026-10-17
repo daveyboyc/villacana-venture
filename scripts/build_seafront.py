@@ -29,15 +29,24 @@ def build_seafront(buildings, rotation):
     # strip. Keep the mapped approach and eastern/boardwalk joins verbatim.
     wall_data = json.loads((ROOT / 'data/paseo_wall.json').read_text())
     face, trace = wall_data['wall']['face'], wall_data['route']
-    retraced = []
-    for i, (x, z) in enumerate(face):
-        a, b = face[max(0, i - 1)], face[min(len(face) - 1, i + 1)]
-        length = math.dist(a, b)
-        offset = trace['offsetSeaward']
-        retraced.append([round(x - (b[1] - a[1]) / length * offset, 2),
-                         round(z + (b[0] - a[0]) / length * offset, 2)])
+    def seaward(offset):
+        out = []
+        for i, (x, z) in enumerate(face):
+            a, b = face[max(0, i - 1)], face[min(len(face) - 1, i + 1)]
+            length = math.dist(a, b)
+            out.append([round(x - (b[1] - a[1]) / length * offset, 2),
+                        round(z + (b[0] - a[0]) / length * offset, 2)])
+        return out
+    retraced = seaward(trace['offsetSeaward'])
     gate_join = json.loads((ROOT / 'data/coastal_gate.json').read_text())['route']['points'][-1]
-    route = route[:trace['retainBefore']] + [gate_join] + retraced + route[trace['retainAfter']:]
+    before, after = route[:trace['retainBefore']] + [gate_join], route[trace['retainAfter']:]
+    route = before + retraced + after
+    # What must stay clear: the full paving off the wall run, and along it only the
+    # walk beyond the lamps at the wall foot (the paving itself stays full width).
+    clear = trace['clear']
+    protect = [{'id': 'paseo-west', 'name': 'Paseo · Senda Litoral', 'width': trace['width'], 'points': before + retraced[:1]},
+               {'id': 'paseo', 'name': 'Paseo · Senda Litoral (clear walk by the wall)', 'width': clear['width'], 'points': seaward(clear['offsetSeaward'])},
+               {'id': 'paseo-east', 'name': 'Paseo · Senda Litoral', 'width': trace['width'], 'points': retraced[-1:] + after}]
     # Clip coastal polygons to a bounded planning window, in the map's turned frame.
     bounds=(-225,85,95,265)
     shore_trace=json.loads((ROOT / 'data/shoreline_trace.json').read_text())
@@ -60,7 +69,7 @@ def build_seafront(buildings, rotation):
     # Covered terrace extension is approximate, checked against aerial and official photos.
     terrace=[unturn(p) for p in [(-27,120),(-14,117),(-9,135),(-27,140),(-33,130)]]
     return {
-        'paseo':{'name':'Paseo · Senda Litoral','width':trace['width'],'points':route,'trust':trace['trust'],'evidence':trace['evidence']},
+        'paseo':{'name':'Paseo · Senda Litoral','width':trace['width'],'points':route,'protect':protect,'trust':trace['trust'],'evidence':trace['evidence']},
         'viewBounds':[unturn(p) for p in [(bounds[0],bounds[2]),(bounds[1],bounds[2]),(bounds[1],bounds[3]),(bounds[0],bounds[3])]],
         'beach':{'name':'Villacana beach','ring':beach,'evidence':shore_trace['evidence'],'trust':shore_trace['trust']},
         'sea':{'name':'Mediterranean Sea','ring':coast+[[1500,1500],[-1500,1500]],'trust':shore_trace['trust']+' Outer edge is display extent.'},

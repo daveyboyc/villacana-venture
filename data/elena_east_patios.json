@@ -1,0 +1,193 @@
+{
+ "checkedAt": "2026-10-16",
+ "scope": "The private patios behind the Elena north garden wall, between the hedged beds and the east terrace (registry 6265401UF1366N_part3), where they meet Cervantes. Only the enclosure walls and the pergola beam that ground photos show are built; the patios' internal partitions, floors and levels are not visible in any photo and are not modelled.",
+ "trust": "The roof shots listed for the task (IMG_2366, IMG_2360) look along Cervantes east of the junction: their paved strip, trained-trunk white wall, curved-coping door and cane-roofed pergola are on the Cervantes side (compare IMG_2197). From every roof camera the patios behind the garden wall are under the magnolia canopy (IMG_2362, IMG_2364). The enclosure walls and pergola here come from ground photos; positions are anchored to the existing garden wall, hedged bed, Cervantes axis and registry face, about 0.5-1 m in plan. Heights and the pergola's extent are estimated.",
+ "review": {
+  "ring": [
+   [
+    -151.43,
+    35.13
+   ],
+   [
+    -143.202,
+    49.243
+   ],
+   [
+    -137.94,
+    46.105
+   ],
+   [
+    -140.03,
+    42.67
+   ],
+   [
+    -140.39,
+    42.89
+   ],
+   [
+    -142.91,
+    38.77
+   ],
+   [
+    -141.97,
+    38.22
+   ],
+   [
+    -143.96,
+    34.8
+   ],
+   [
+    -144.59,
+    35.22
+   ],
+   [
+    -147.05,
+    31.37
+   ],
+   [
+    -151.55,
+    34.27
+   ]
+  ],
+  "trust": "The patio band between the garden wall (west), the Cervantes wall (south) and the registry face of 6265401UF1366N_part3 (east). Generated garden walls, gates and props are suppressed inside it; nothing invented is drawn there."
+ },
+ "walls": [
+  {
+   "id": "elena-east-patios-west-wall",
+   "name": "Elena east patios · garden wall behind the second hedged bed",
+   "points": [
+    [
+     -144.3,
+     47.36
+    ],
+    [
+     -143.202,
+     49.243
+    ]
+   ],
+   "height": 1.85,
+   "thickness": 0.26,
+   "solid": true,
+   "evidence": [
+    "IMG_2197.jpg",
+    "IMG_2199.jpg"
+   ],
+   "trust": "IMG_2199 shows the white garden wall continuing south of the closed timber door with a bougainvillea trunk trained on it; IMG_2197, looking along Cervantes, shows the same wall behind the second hedged bed up to the lane frontage. Continues the existing elena-north-garden-wall line from its door surround and turns at the bed's Cervantes end. Height matches the existing garden wall (estimated)."
+  },
+  {
+   "id": "elena-east-patios-cervantes-wall",
+   "name": "Elena east patios · white wall behind the plumbago bed on Cervantes",
+   "points": [
+    [
+     -143.202,
+     49.243
+    ],
+    [
+     -137.94,
+     46.105
+    ]
+   ],
+   "height": 1.9,
+   "thickness": 0.2,
+   "solid": true,
+   "evidence": [
+    "IMG_2356.jpg",
+    "IMG_2197.jpg"
+   ],
+   "trust": "IMG_2356 shows a continuous white wall standing behind the raised plumbago bed on the north side of Cervantes east of Elena, with bougainvillea over it and no gate; IMG_2197 shows unbroken planting and white walls along that frontage. Drawn 2.0 m north of the Cervantes axis, behind the existing kerb and hedge, from the garden wall corner to the registry face of 6265401UF1366N_part3, where the house front takes over. Line and height estimated; no opening is photographed, so it is solid."
+  }
+ ],
+ "pergola": {
+  "id": "elena-east-patios-pergola",
+  "name": "Elena east patios · timber pergola behind the garden door",
+  "ring": [
+   [
+    -144.664,
+    45.941
+   ],
+   [
+    -142.504,
+    44.682
+   ],
+   [
+    -143.864,
+    42.35
+   ],
+   [
+    -146.024,
+    43.609
+   ]
+  ],
+  "height": 2.35,
+  "post": 0.12,
+  "beam": 0.14,
+  "rafterSpacing": 0.55,
+  "evidence": [
+   "IMG_2199.jpg",
+   "IMG_2200.jpg"
+  ],
+  "trust": "A dark timber pergola beam shows above the garden wall just north of the closed door in IMG_2199, and again over the wall near the door in IMG_2200, with bougainvillea on it. Only that edge is visible: the 2.7 x 2.5 m extent, the four posts, rafters and 2.35 m height are estimates. It stands inside the walled patio, out of reach of the player."
+ },
+ "planting": [
+  {
+   "at": [
+    -143.57,
+    47.818
+   ],
+   "kind": "bougainvillea",
+   "y": 1.35,
+   "scale": 0.6,
+   "evidence": "IMG_2199.jpg"
+  },
+  {
+   "at": [
+    -143.076,
+    48.665
+   ],
+   "kind": "bougainvillea",
+   "y": 1.35,
+   "scale": 0.55,
+   "evidence": "IMG_2197.jpg"
+  },
+  {
+   "at": [
+    -141.828,
+    47.958
+   ],
+   "kind": "bougainvillea",
+   "y": 1.45,
+   "scale": 0.6,
+   "evidence": "IMG_2356.jpg"
+  },
+  {
+   "at": [
+    -139.987,
+    46.86
+   ],
+   "kind": "bougainvillea",
+   "y": 1.45,
+   "scale": 0.6,
+   "evidence": "IMG_2356.jpg"
+  },
+  {
+   "at": [
+    -144.898,
+    45.441
+   ],
+   "kind": "bougainvillea",
+   "y": 1.6,
+   "scale": 0.65,
+   "evidence": "IMG_2199.jpg"
+  }
+ ],
+ "sources": [
+  "IMG_2366.jpg",
+  "IMG_2360.jpg",
+  "IMG_2362.jpg",
+  "IMG_2364.jpg",
+  "IMG_2197.jpg",
+  "IMG_2199.jpg",
+  "IMG_2200.jpg",
+  "IMG_2356.jpg"
+ ]
+}

@@ -39,8 +39,19 @@ the whole 0.5 m rise happens within about 3 m, not the 7 m the terrain rule used
 - The ramp record in `data/dali_cervantes.json` now ends at the Cervantes vertex
   3 m up from the drain.
 - `data/cervantes_elena_steps.json` and `src/ramp-steps.ts` build the three
-  steps: white risers, terracotta treads, risers at 0.4, 1.0 and 1.6 m. The
+  steps: white risers, terracotta treads, risers at 0.4, 0.92 and 1.45 m. The
   player's ground follows the treads (`stepsGroundOffset`), one riser at a time.
+- Tread spacing (issue #56, 16 October 2026): IMG_2286, IMG_2355 and IMG_2328
+  show the bottom riser one tile row up from the drain and each tread as one
+  0.4 m tile plus a grey stone nosing, about 0.5 m. The risers moved from 0.4,
+  1.0 and 1.6 m to 0.4, 0.92 and 1.45 m. The 3 m local run is kept: the first
+  tread now ends a little over 1 cm above the ramp beside it (it was level, and
+  below at the north edge), the second about 9 cm above; a run under about
+  2.8 m would sink the first tread. The garden door at the foot
+  (`data/cervantes_garden_door.json`) takes its base from the unchanged
+  terrain, so its levels are as before. `check_terrain.py` checks the spacing
+  and that every tread stays above the ramp; `check_levels.py` compares the
+  flight's 0.5 m with the survey.
 
 ## Checks
 
