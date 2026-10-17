@@ -102,6 +102,438 @@
     "stairFootFromSurvey": 2.3
    },
    "trust": "Photo-supported: a six-riser flight with red-and-blue tiled risers and an iron handrail on its north side, cut back between the end of a curved white retaining wall (south) and a straight white wall with coping (north) that runs east to a pier where a path climbs to the north row alley; the terrace behind carries a planted bank, crazy paving and a terracotta patio in front of the house fronts (IMG_2204, IMG_2206, IMG_2208). Height 1.0 m, the middle of the survey's 0.9-1.1 m, as six 0.167 m risers on 0.3 m treads. Estimated: plan position (camera fit, about +-1.5 m; stair foot 2.3 m from the survey's +-6 m centre), the 1.32 m stair width, the curve of the wall between photo points, the return beside the alley path, the west end and the south end at the walled gardens (none of these three is visible). The back edges follow the registry fronts of 6165501UF1366N_part5 and part1, which keep their own floor datum (about 0.5 m and 0.04 m from the terrain rule), so the terrace floor stands 0.5-1 m above them in the model; whether the house floors are higher or there are steps down is not visible. Whether the terrace is shared ground or private is not visible; it is modelled walkable."
+  },
+  {
+   "id": "north-pool-north-patios",
+   "name": "North pool · low northern patio plinths and white steps",
+   "area": "north-pool",
+   "survey": "north-pool-north-patios",
+   "walkable": true,
+   "base": [
+    -176.749,
+    10.7525
+   ],
+   "rise": 0.325,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.2,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.025
+    }
+   },
+   "outline": [
+    [
+     -179.3,
+     10.25
+    ],
+    [
+     -176,
+     10.9
+    ],
+    [
+     -172,
+     11.2
+    ],
+    [
+     -167.1,
+     11.3
+    ],
+    [
+     -166.1,
+     8.2
+    ],
+    [
+     -171,
+     7.6
+    ],
+    [
+     -177.5,
+     7.4
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    },
+    {
+     "kind": "end",
+     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+    }
+   ],
+   "openings": [
+    {
+     "id": "north-pool-low-patio-step-1",
+     "edge": 0,
+     "at": 2.0,
+     "width": 1.2,
+     "stair": {
+      "risers": 2,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "render",
+      "treadFinish": "crazy-paving",
+      "handrail": "none",
+      "nosing": true
+     }
+    },
+    {
+     "id": "north-pool-low-patio-step-2",
+     "edge": 1,
+     "at": 2.7,
+     "width": 1.25,
+     "stair": {
+      "risers": 2,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "render",
+      "treadFinish": "crazy-paving",
+      "handrail": "none",
+      "nosing": true
+     }
+    },
+    {
+     "id": "north-pool-low-patio-step-3",
+     "edge": 2,
+     "at": 3.4,
+     "width": 1.3,
+     "stair": {
+      "risers": 2,
+      "tread": 0.3,
+      "direction": "in",
+      "riserFinish": "render",
+      "treadFinish": "crazy-paving",
+      "handrail": "none",
+      "nosing": true
+     }
+    }
+   ],
+   "walks": [
+    [
+     [
+      -175.5,
+      9.4
+     ],
+     [
+      -171,
+      9.4
+     ],
+     [
+      -168.1,
+      9.5
+     ]
+    ]
+   ],
+   "planting": {
+    "edges": [
+     0,
+     1,
+     2
+    ],
+    "inset": 0.65,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ],
+   "trace": {
+    "method": "IMG_2204 north-pool ring camera fit from issue 54 (camera about -173.5,36.6, elevation 7.8 m, yaw 342, pitch 17, horizontal field 72 degrees). Inverse ground rays through individually visible plinth toes and shallow openings checked against Esri ground.jpg and unchanged registry. IMG_2205 extends the visible frontage to the east return. Rear floor cut deliberately stops short of registry houses because garden divisions are concealed.",
+    "frontPixels2204": [
+     [
+      935,
+      592
+     ],
+     [
+      1035,
+      604
+     ],
+     [
+      1170,
+      618
+     ],
+     [
+      1200,
+      623
+     ],
+     [
+      1395,
+      641
+     ],
+     [
+      1430,
+      646
+     ],
+     [
+      1580,
+      658
+     ]
+    ]
+   },
+   "trust": "Photo-supported: the lower white plinth frontage east of the central alley, its gentle curve, three separate shallow openings with white noses and stone treads (IMG_2204/2205), and hedges above the plinth. Rise 0.325 m, within the survey 0.25-0.4 m range, represented as two 0.1625 m risers. Estimated: exact opening widths (1.2-1.3 m), individual plan coordinates (about +-2 m from oblique camera registration), the floor depth. The rear floor stops at a conservative visible patio band, 2.5-3 m behind the plinth; all unseen side/back limits are explicitly untraced ends, not asserted property walls, and no concealed garden partitions or house level changes are invented. Three openings belong to distinct patios but their hidden divisions are not known; the supported floor band is continuous. The 1.0 m northwest terrace and six-riser flight remain a separate structure owned by issue 54. The band stops west of Calle Isabel and its pool-side gate; the further eastern garden opening visible in IMG_2205 is outside this north-front trace and is not repeated across the lane."
+  },
+  {
+   "id": "middle-pool-north-terrace",
+   "name": "Middle pool · bounded north raised patio",
+   "area": "middle-pool",
+   "survey": "middle-pool-north-terrace",
+   "walkable": false,
+   "base": [
+    -134.0,
+    83.0
+   ],
+   "rise": 0.45,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.18,
+    "height": 0.8,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.015
+    }
+   },
+   "outline": [
+    [
+     -134.0,
+     83.0
+    ],
+    [
+     -126.3,
+     82.1
+    ],
+    [
+     -126.55,
+     80.2
+    ],
+    [
+     -134.25,
+     81.1
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    }
+   ],
+   "openings": [],
+   "planting": {
+    "edges": [
+     0
+    ],
+    "inset": 0.55,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2193.jpg",
+    "IMG_2194.jpg"
+   ],
+   "trust": "Photo-supported: north patio behind a white rendered face and clipped hedge, with umbrella and north-row houses behind; the white face stops west of the grass opening visible in IMG_2194. Estimated: +0.45 m floor within low-confidence survey 0.3-0.6 m, independent 0.8 m wall top, 7.75 m visible face and bounded 1.9 m floor depth, approximately +-2 m placement against the aerial north courtyard gap and registry front. Ends/back are plain untraced floor cuts, not claimed enclosure walls; no stair or private gate is inferred."
+  },
+  {
+   "id": "middle-pool-oleander-bed",
+   "name": "Middle pool · shallow oleander bed beside patio",
+   "area": "middle-pool",
+   "survey": "middle-pool-patio-beds",
+   "walkable": false,
+   "base": [
+    -134.8,
+    105.25
+   ],
+   "rise": 0.2,
+   "floor": "soil",
+   "face": {
+    "finish": "render",
+    "thickness": 0.18,
+    "height": 0.2,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.015
+    }
+   },
+   "outline": [
+    [
+     -134.8,
+     105.25
+    ],
+    [
+     -130.6,
+     102.7
+    ],
+    [
+     -131.15,
+     101.8
+    ],
+    [
+     -135.35,
+     104.35
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    }
+   ],
+   "openings": [],
+   "planting": {
+    "edges": [
+     0
+    ],
+    "inset": 0.55,
+    "kind": "oleander"
+   },
+   "evidence": [
+    "IMG_2246.jpg",
+    "IMG_2247.jpg"
+   ],
+   "trust": "Photo-supported: narrow oleander soil bed with low rounded white kerb beside crazy paving and terracotta paving; raised bed top is near adjacent patio level. Estimated: 0.2 m soil/kerb height within low-confidence survey 0.1-0.3 m (visible kerb about 0.15-0.2 m), 4.9 m face, 1.05 m bed depth, approximately +-2 m placement in the aerial south-west triangular garden. Only visible outer kerb receives coping; other ends/back are untraced bounded plain soil cuts, not invented private walls. No patio boundary or gate behind foliage inferred."
+  },
+  {
+   "id": "middle-pool-curved-hedge-patio",
+   "name": "Middle pool · short uncertain curved hedge patio",
+   "area": "middle-pool",
+   "survey": "middle-pool-patio-beds",
+   "walkable": false,
+   "base": [
+    -125.0,
+    81.3
+   ],
+   "rise": 0.2,
+   "floor": "crazy-paving",
+   "face": {
+    "finish": "render",
+    "thickness": 0.18,
+    "height": 0.4,
+    "coping": {
+     "height": 0.035,
+     "overhang": 0.015
+    }
+   },
+   "outline": [
+    [
+     -125.0,
+     81.3
+    ],
+    [
+     -123.8,
+     81.1
+    ],
+    [
+     -122.7,
+     80.7
+    ],
+    [
+     -121.65,
+     80.15
+    ],
+    [
+     -120.8,
+     79.55
+    ],
+    [
+     -121.7,
+     78.3
+    ],
+    [
+     -125.35,
+     79.8
+    ]
+   ],
+   "edges": [
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "face",
+     "note": "Photo-supported visible face; curvature and exact extent estimated"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    },
+    {
+     "kind": "end",
+     "note": "Untraced floor cut end, not a photographed enclosing wall"
+    }
+   ],
+   "openings": [],
+   "planting": {
+    "edges": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "inset": 0.55,
+    "kind": "hedge"
+   },
+   "evidence": [
+    "IMG_2341.jpg"
+   ],
+   "trust": "Photo-supported: low curving white rendered hedge wall with patio/grass behind at about the bed top. Estimated: +0.2 m floor within low-confidence survey 0.1-0.3 m, 0.4 m wall top within visible 0.35-0.45 m range and only 4.6 m of curved face. Placement in the north-east courtyard is uncertain (about +-4 m): the IMG_2341 camera GPS is +-47 m and cannot locate this wall; north-row fronts, heading and aerial path/lawn band only suggest this position. Untraced back/ends are plain bounded floor cuts, not a long continuous boundary, and this fragment does not establish a connection to the north patio. No access inferred."
   }
  ]
 }

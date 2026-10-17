@@ -1,4 +1,6 @@
 import {addDoorSills,doorSillGroundOffset,inDoorSillReview,sillDoorRings} from "./door-sills";
+import {addNorthPoolGardenPath} from "./north-pool-gardens";
+import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {addRaisedTerraces,raisedTerraceGroundOffset,raisedTerraceRings,suppressInRaisedTerraces} from "./raised-terraces";
 import {paintSeawardPaving} from "./seaward-paving";
@@ -166,29 +168,32 @@ async function boot(): Promise<void> {
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
-  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inDoorSillReview(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
+  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inDoorSillReview(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
 
   const player = new Player();
   player.group.userData.noDrape = true;
   scene.add(player.group);
-  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,.6));
+  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inDoorSillReview(x,z) && !inCervantesEastSouthPatios(x,z) && canPlaceDecoration(x,z,.6));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
+  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inDoorSillReview(x,z) && !inCervantesEastSouthPatios(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addMiddlePool(scene);
   addMiddleSouthGate(scene);
   addElenaGatedEntry(scene);
   addElenaEastPatios(scene);
+  if(skeleton.boundaryReference)addCervantesEastSouthPatios(scene,skeleton.boundaryReference);
   addEvaLawn(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
+  addNorthPoolGardenPath(scene);
   addRaisedTerraces(scene);
   addDoorSills(scene,!layoutOnly);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   fenceRings.push(...elenaEntryRings());
+  fenceRings.push(...cervantesEastSouthRings()); // issue #89: solid closed south patio frontage
   fenceRings.push(...elenaEastPatioRings()); // issue #38: photographed patio enclosure walls are solid
   fenceRings.push(...evaWallRings());
   fenceRings.push(...picassoServiceRings());

@@ -68,7 +68,8 @@
    "dependsOn": [
     "elena-east-patios"
    ],
-   "status": "open"
+   "status": "done",
+   "owner": "Codex"
   },
   {
    "id": "elena-gated-entry",
@@ -387,9 +388,10 @@
    "dependsOn": [
     "raised-terraces"
    ],
-   "status": "open",
+   "status": "done",
    "issue": 36,
-   "notes": "Review draft reconciled with the 15 October levels survey: blocked on raised-terraces (#54). Issue #36 owns the 0.25–0.4 m north-side patios and one/two-step openings; the NW six-riser 0.9–1.1 m terrace belongs to #54. Earlier five-riser/0.75 m implementation 4ad9519 is withdrawn from the branch tip. See docs/NORTH_POOL_REVIEW.md and the non-rendered trace draft."
+   "notes": "Review draft reconciled with the 15 October levels survey: blocked on raised-terraces (#54). Issue #36 owns the 0.25–0.4 m north-side patios and one/two-step openings; the NW six-riser 0.9–1.1 m terrace belongs to #54. Earlier five-riser/0.75 m implementation 4ad9519 is withdrawn from the branch tip. See docs/NORTH_POOL_REVIEW.md and the non-rendered trace draft.",
+   "owner": "Codex"
   },
   {
    "id": "seaward-lanes-paving",
@@ -571,8 +573,9 @@
    "dependsOn": [
     "raised-terraces"
    ],
-   "status": "open",
-   "issue": 55
+   "status": "done",
+   "issue": 55,
+   "owner": "Codex issue-55"
   },
   {
    "id": "cervantes-steps-treads",

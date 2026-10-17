@@ -103,3 +103,11 @@ to belong to the `raised-terraces` task; relax that line when another task owns 
 - Open: the houses behind (6165501UF1366N_part5, part1) keep their terrain datum,
   about 0.5 m and 0.04 m, so the 1.0 m floor stands above them. Whether their
   floors are higher or there are steps down is not visible.
+
+Issue #55 also uses nonwalkable private fragments and a soil bed. Optional
+`face.height` sets a visible wall's top above the base independently of `rise`,
+which remains the patio floor level. Omit it when the retaining face meets the
+floor as before. `floor: "soil"` uses the soil material and blueprint fill.
+Untraced cut ends remain plain faces to floor height, dashed on the blueprint;
+they do not acquire the taller boundary-wall height. See
+`docs/MIDDLE_POOL_RAISED_PATIOS.md` for the photo limits and estimated extents.

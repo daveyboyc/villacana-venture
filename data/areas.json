@@ -19,19 +19,22 @@
    "data": [
     "data/objects.json",
     "data/levels_survey.json",
-    "data/raised_terraces.json"
+    "data/raised_terraces.json",
+    "data/north_pool_gardens.json"
    ],
    "src": [
     "src/world.ts",
     "src/water.ts",
-    "src/raised-terraces.ts"
+    "src/raised-terraces.ts",
+    "src/north-pool-gardens.ts"
    ],
    "notes": [
     "Dave (2026-10-11): the lawn is bigger than the first pass showed, and the houses have front porches.",
     "Skip the glass safety fence round the pools (Dave, 2026-10-11).",
     "Best single reference: villacana-reference/photos/07 (whole courtyard looking north).",
     "Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate.",
-    "Issue #54 (2026-10-16): the NW six-riser tiled stair is built at about (-189.3, 17.8), cut back into a 1.0 m terrace (data/raised_terraces.json) between the curved wall and a straight wall that runs east to a pier where a path climbs to the north row alley. A camera fit of IMG_2204 to the pool ring puts the stair at bearing 320 from the camera, which IMG_2206 confirms (324); the withdrawn (-181.9, 12) flight would be at 341, so that spot is the pier and alley path, not the stair. Open: the terrace floor stands 0.5-1 m above the model datum of the houses behind it (6165501UF1366N_part5, part1); whether their floors are higher or there are steps down is not visible. The west and south ends of the terrace are estimated."
+    "Issue #54 (2026-10-16): the NW six-riser tiled stair is built at about (-189.3, 17.8), cut back into a 1.0 m terrace (data/raised_terraces.json) between the curved wall and a straight wall that runs east to a pier where a path climbs to the north row alley. A camera fit of IMG_2204 to the pool ring puts the stair at bearing 320 from the camera, which IMG_2206 confirms (324); the withdrawn (-181.9, 12) flight would be at 341, so that spot is the pier and alley path, not the stair. Open: the terrace floor stands 0.5-1 m above the model datum of the houses behind it (6165501UF1366N_part5, part1); whether their floors are higher or there are steps down is not visible. The west and south ends of the terrace are estimated.",
+    "Issue #36 (2026-10-17): lower northern plinth band, three independent shallow white-nosed openings and visible northwest/north crazy-paving path built separately from #54. The 0.325 m floor is a conservative visible band; rear and side floor limits and hidden patio divisions are untraced estimates, not surveyed property boundaries. Houses, pool and lawn keep their datum."
    ]
   },
   {
@@ -48,7 +51,8 @@
     "docs/MIDDLE_POOL.md",
     "docs/LEVELS.md",
     "docs/MIDDLE_POOL_SOUTH_GATE.md",
-    "docs/MIDDLE_POOL_SW_GATEWAY.md"
+    "docs/MIDDLE_POOL_SW_GATEWAY.md",
+    "docs/MIDDLE_POOL_RAISED_PATIOS.md"
    ],
    "data": [
     "data/middle_pool.json",
@@ -58,7 +62,8 @@
     "data/middle_pool_north.json",
     "data/middle_pool_steps.json",
     "data/middle_pool_sw_gateway.json",
-    "data/terrain.json"
+    "data/terrain.json",
+    "data/raised_terraces.json"
    ],
    "src": [
     "src/middle-pool.ts",
@@ -67,7 +72,8 @@
     "src/middle-pool-south-gate.ts",
     "src/middle-pool-north.ts",
     "src/middle-pool-sw-gateway.ts",
-    "src/ramp-steps.ts"
+    "src/ramp-steps.ts",
+    "src/raised-terraces.ts"
    ],
    "notes": [
     "Lanes are square terracotta tiles with a pebble border; the courtyard is entered through arched white gateways with black iron gates.",
@@ -78,7 +84,8 @@
     "Issue #39: separate level south entrance from IMG_2334/2335: two open iron leaves, shallow curved white head with metal pergola ribs, crazy paving and flush drain, raised white planter flanking an inset step and a schematic blue/yellow border round a white tile panel. Placed across Calle Silvia near its courtyard end; positions/ends (about 1–2 m) and dimensions are estimates. No south-lane grade change is inferred; the southwest steps and western 0.5 m rise remain separate.",
     "Issue 48 source pass: a bounded curved north planter termination, three white side steps, short brown-door wall and open pergola are modelled from IMG_2331/2332/2195; exact extents and dimensions remain estimates. IMG_2331/2332 cameras are corrected independently from aerial path/pool anchors, original GPS retained. Browser and matched-camera review pending; south-west steps/gateway and south gate are separate tasks.",
     "Issue 48 follows the existing continuous western +0.5 m terrain rise for the north steps, using tread-minus-siteY offsets in the shared ramp-steps module; no additional isolated plateau. Pool, deck and west path remain at 0 m. Flight dimensions and bounded wall extents remain estimated pending browser/image review.",
-    "Issue #31 (PRs #53 and #60): IMG_2333 shows three rough stone risers on the planter side of Calle Eva, a tiled ramp beside them, a short landing and a white gateway with two open iron leaves. The steps and the 0.5 m rise to the Dalí level are in data/middle_pool_steps.json and data/terrain.json; the gateway is in data/middle_pool_sw_gateway.json. Positions and sizes are estimated from tiles."
+    "Issue #31 (PRs #53 and #60): IMG_2333 shows three rough stone risers on the planter side of Calle Eva, a tiled ramp beside them, a short landing and a white gateway with two open iron leaves. The steps and the 0.5 m rise to the Dalí level are in data/middle_pool_steps.json and data/terrain.json; the gateway is in data/middle_pool_sw_gateway.json. Positions and sizes are estimated from tiles.",
+    "Issue #55: bounded north patio floor at +0.45 m behind a +0.8 m white wall (IMG_2193/2194); stops before the photographed grass opening, with no inferred stairs. Shallow oleander bed at +0.2 m from IMG_2246/2247. Only a short +0.4 m curved hedge-wall fragment is estimated from IMG_2341: its GPS is ±47 m and its north-east placement remains uncertain. Floor extents, wall ends and all heights are low-confidence estimates; no hidden private boundaries or gates are traced. See docs/MIDDLE_POOL_RAISED_PATIOS.md."
    ]
   },
   {
@@ -157,7 +164,7 @@
    },
    "docs": [
     "docs/ELENA_NORTH.md",
-   "docs/ELENA_EAST_PATIOS.md",
+    "docs/ELENA_EAST_PATIOS.md",
     "docs/STREET_LAYOUT.md",
     "docs/TERRAIN.md",
     "docs/LEVELS.md",
@@ -165,7 +172,7 @@
    ],
    "data": [
     "data/elena_north.json",
-   "data/elena_east_patios.json",
+    "data/elena_east_patios.json",
     "data/cervantes_elena_steps.json",
     "data/street_layout.json",
     "proposals/calle-elena.json",
@@ -175,7 +182,7 @@
    ],
    "src": [
     "src/elena-north.ts",
-   "src/elena-east-patios.ts",
+    "src/elena-east-patios.ts",
     "src/ramp-steps.ts",
     "src/terrain.ts",
     "src/layout-routes.ts",
@@ -211,7 +218,8 @@
     "docs/ELENA_NORTH.md",
     "docs/CERVANTES_NORTH_PATIOS.md",
     "docs/LEVELS.md",
-    "docs/CERVANTES_DOOR_STEPS_REVIEW.md"
+    "docs/CERVANTES_DOOR_STEPS_REVIEW.md",
+    "docs/CERVANTES_EAST_SOUTH_PATIOS.md"
    ],
    "data": [
     "data/dali_cervantes.json",
@@ -223,7 +231,8 @@
     "data/levels_survey.json",
     "data/cervantes_garden_door.json",
     "data/cervantes_north_patios.json",
-    "data/junction_lawns.json"
+    "data/junction_lawns.json",
+    "data/cervantes_east_south_patios.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
@@ -232,7 +241,8 @@
     "src/ramp-steps.ts",
     "src/cervantes-garden-door.ts",
     "src/cervantes-north-patios.ts",
-    "src/junction-lawns.ts"
+    "src/junction-lawns.ts",
+    "src/cervantes-east-south-patios.ts"
    ],
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
@@ -244,7 +254,8 @@
     "Issue #33 review (2026-10-15): IMG_2327/2328 show two door steps immediately downhill of the ramp drain, distinct from the three ramp steps. Historical blocker (resolved by the later garden-wall survey): the nearest modeled north solid facade is 6.17 m from the drain and the roof/aerial views do not uniquely locate this doorway. The assumed house-facade requirement was incorrect; see docs/CERVANTES_DOOR_STEPS_REVIEW.md.",
     "Issue #33 implementation after the levels survey: the brown door is in a garden wall at the lane edge, not the house facade, resolving the historical 6.17 m blocker. A closed door with curved coping, two .225 m red-tread steps, bounded private patio at +.45 m and west bed at +.425 m are modeled; full patio extent and position remain estimated. Browser/camera acceptance pending.",
     "2026-10-15 (#45): IMG_2329/2342 show the same near-corner pollarded lawn tree; IMG_2358/2367 and IMG_2260 show three clipped trees in sequence beside the lane, two in the nearer lawn and one beyond the door approach. Details positions/heights estimated; the existing lawn/white-kerb rings remain approximate because the oblique roof views do not calibrate their metric extents.",
-    "Issue #56 (2026-10-16): IMG_2286/2355/2328 count each Elena step tread as one 0.4 m tile plus a grey stone nosing; risers moved to 0.4, 0.92 and 1.45 m from the drain, 3 m ramp run kept, every tread above the ramp beside it."
+    "Issue #56 (2026-10-16): IMG_2286/2355/2328 count each Elena step tread as one 0.4 m tile plus a grey stone nosing; risers moved to 0.4, 0.92 and 1.45 m from the drain, 3 m ramp run kept, every tread above the ramp beside it.",
+    "Issue #89 (2026-10-17): roof IMG_2366/2360 and ground IMG_2197 support the white lane-side south patio wall east of Elena, closed curved-coping brown door and cane-roofed timber pergola against 6265601UF1366N_part1. One bounded 18.2 m frontage, door and pergola built; no internal partitions or concealed enclosure returns asserted. Aerial/registry context checked; endpoints and dimensions remain estimated at roughly 1–2 m. Roof-camera diagnostic uses estimated 7.2 m local eye elevation and within-uncertainty roof-edge camera correction, not a calibrated match."
    ]
   },
   {

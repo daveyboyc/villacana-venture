@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 347,
-  "photosCitedByModel": 85,
-  "modelFeaturesWithPhotoCitations": 92
+  "features": 358,
+  "photosCitedByModel": 93,
+  "modelFeaturesWithPhotoCitations": 103
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -464,7 +464,9 @@
      "angleOffset": 11.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-north-terrace"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -126.3,
@@ -502,7 +504,9 @@
      "angleOffset": 6.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-north-terrace"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -126.6,
@@ -639,7 +643,9 @@
    "citedBy": [
     "elena_north.json:elena-north-tree-bed-2",
     "elena_east_patios.json:elena-east-patios-west-wall",
-    "elena_east_patios.json:elena-east-patios-cervantes-wall"
+    "elena_east_patios.json:elena-east-patios-cervantes-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-climber"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -968,7 +974,9 @@
     }
    ],
    "citedBy": [
-    "raised_terraces.json:north-pool-west-terrace"
+    "north_pool_gardens.json:north-pool-lawn-path",
+    "raised_terraces.json:north-pool-west-terrace",
+    "raised_terraces.json:north-pool-north-patios"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -999,7 +1007,10 @@
      "angleOffset": 8.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "north_pool_gardens.json:north-pool-lawn-path",
+    "raised_terraces.json:north-pool-north-patios"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -170.1,
@@ -1035,6 +1046,7 @@
     }
    ],
    "citedBy": [
+    "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -1071,7 +1083,9 @@
      "angleOffset": 30.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:north-pool-north-patios"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -169.1,
@@ -1107,7 +1121,9 @@
     }
    ],
    "citedBy": [
-    "raised_terraces.json:north-pool-west-terrace"
+    "north_pool_gardens.json:north-pool-lawn-path",
+    "raised_terraces.json:north-pool-west-terrace",
+    "raised_terraces.json:north-pool-north-patios"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -2260,7 +2276,9 @@
      "angleOffset": 25.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-oleander-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -137.5,
@@ -2292,7 +2310,9 @@
      "angleOffset": 32.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-oleander-bed"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -137.0,
@@ -4986,7 +5006,9 @@
      "angleOffset": 20.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "raised_terraces.json:middle-pool-curved-hedge-patio"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -117.6,
@@ -5531,7 +5553,11 @@
     }
    ],
    "citedBy": [
-    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
+    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-door",
+    "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+    "cervantes_east_south_patios.json:cervantes-east-south-climber"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5751,7 +5777,14 @@
      "angleOffset": 5.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-door",
+    "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+    "cervantes_east_south_patios.json:cervantes-east-south-climber",
+    "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+    "cervantes_east_south_patios.json:cervantes-east-south-shrub-2"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.2,

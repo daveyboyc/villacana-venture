@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 347,
-  "photosCitedByModel": 85,
-  "modelFeaturesWithPhotoCitations": 92
+  "features": 358,
+  "photosCitedByModel": 93,
+  "modelFeaturesWithPhotoCitations": 103
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2459,6 +2459,66 @@
    ]
   },
   {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "name": "Cervantes east south · bounded white patio frontage",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "name": "Cervantes east south · closed brown curved-coping garden door",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "name": "Cervantes east south · timber and cane pergola",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "name": "Cervantes east south · trained bougainvillea",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "name": "Cervantes east south · near clipped shrub",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "name": "Cervantes east south · second clipped shrub",
+   "kind": "reference feature",
+   "source": "bounded photo/aerial interpretation; dimensions estimated",
+   "evidence": [
+    "IMG_2366.jpg"
+   ]
+  },
+  {
    "id": "middle_pool_south_gate.json:middle-pool-south-gate",
    "name": "Middle pool · south double iron gate, curved head and tiled planter",
    "kind": "reference feature",
@@ -2639,6 +2699,18 @@
    ]
   },
   {
+   "id": "north_pool_gardens.json:north-pool-lawn-path",
+   "name": "North pool · visible crazy-paving lawn-edge path",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
    "id": "raised_terraces.json:north-pool-west-terrace",
    "name": "North pool · north-west raised terrace and tiled stair",
    "kind": "reference feature",
@@ -2647,6 +2719,47 @@
     "IMG_2204.jpg",
     "IMG_2206.jpg",
     "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "raised_terraces.json:north-pool-north-patios",
+   "name": "North pool · low northern patio plinths and white steps",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-north-terrace",
+   "name": "Middle pool · bounded north raised patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2193.jpg",
+    "IMG_2194.jpg"
+   ]
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-oleander-bed",
+   "name": "Middle pool · shallow oleander bed beside patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2246.jpg",
+    "IMG_2247.jpg"
+   ]
+  },
+  {
+   "id": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "name": "Middle pool · short uncertain curved hedge patio",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2341.jpg"
    ]
   },
   {
@@ -4040,6 +4153,12 @@
    "angleOffset": 11.0
   },
   {
+   "from": "photo:IMG_2193.jpg",
+   "to": "raised_terraces.json:middle-pool-north-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2194.jpg",
    "to": "street:silvia-north",
    "relation": "camera-nearby",
@@ -4057,6 +4176,12 @@
    "relation": "possibly-in-view",
    "distance": 43.0,
    "angleOffset": 6.5
+  },
+  {
+   "from": "photo:IMG_2194.jpg",
+   "to": "raised_terraces.json:middle-pool-north-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2195.jpg",
@@ -4176,6 +4301,18 @@
   {
    "from": "photo:IMG_2197.jpg",
    "to": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2197.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-climber",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -4524,7 +4661,19 @@
   },
   {
    "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_gardens.json:north-pool-lawn-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
    "to": "raised_terraces.json:north-pool-west-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "raised_terraces.json:north-pool-north-patios",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -4541,6 +4690,18 @@
    "relation": "possibly-in-view",
    "distance": 39.7,
    "angleOffset": 8.2
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_gardens.json:north-pool-lawn-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "raised_terraces.json:north-pool-north-patios",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",
@@ -4562,6 +4723,12 @@
    "relation": "possibly-in-view",
    "distance": 35.8,
    "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "north_pool_gardens.json:north-pool-lawn-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",
@@ -4591,6 +4758,12 @@
    "angleOffset": 30.2
   },
   {
+   "from": "photo:IMG_2207.jpg",
+   "to": "raised_terraces.json:north-pool-north-patios",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2208.jpg",
    "to": "building:6165501UF1366N_part1",
    "relation": "possibly-in-view",
@@ -4613,7 +4786,19 @@
   },
   {
    "from": "photo:IMG_2208.jpg",
+   "to": "north_pool_gardens.json:north-pool-lawn-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
    "to": "raised_terraces.json:north-pool-west-terrace",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "raised_terraces.json:north-pool-north-patios",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -5308,6 +5493,12 @@
    "angleOffset": 25.8
   },
   {
+   "from": "photo:IMG_2246.jpg",
+   "to": "raised_terraces.json:middle-pool-oleander-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2247.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -5319,6 +5510,12 @@
    "relation": "possibly-in-view",
    "distance": 36.2,
    "angleOffset": 32.4
+  },
+  {
+   "from": "photo:IMG_2247.jpg",
+   "to": "raised_terraces.json:middle-pool-oleander-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2248.jpg",
@@ -7514,6 +7711,12 @@
    "angleOffset": 20.6
   },
   {
+   "from": "photo:IMG_2341.jpg",
+   "to": "raised_terraces.json:middle-pool-curved-hedge-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2342.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -8047,6 +8250,30 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2360.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2361.jpg",
    "to": "building:6265201UF1366N_part3",
    "relation": "possibly-in-view",
@@ -8193,6 +8420,42 @@
    "relation": "possibly-in-view",
    "distance": 24.3,
    "angleOffset": 5.6
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-door",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-pergola",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-climber",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-shrub-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "cervantes_east_south_patios.json:cervantes-east-south-shrub-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2367.jpg",

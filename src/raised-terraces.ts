@@ -1,3 +1,4 @@
+import {crazyPavingTexture} from "./north-pool-gardens";
 import * as THREE from "three";
 import data from "../data/raised_terraces.json";
 import { closestOnSegment, pointInRing } from "./geom";
@@ -15,9 +16,9 @@ import type { Vec2 } from "./types";
  */
 
 export type EdgeKind = "face" | "house" | "end";
-export type TerraceStair = { risers: number; tread: number; direction: "in" | "out"; riserFinish?: string; treadFinish?: string; handrail?: "left" | "right" | "both" | "none"; cheeks?: boolean };
+export type TerraceStair = { risers: number; tread: number; direction: "in" | "out"; riserFinish?: string; treadFinish?: string; handrail?: "left" | "right" | "both" | "none"; cheeks?: boolean; nosing?: boolean };
 export type TerraceOpening = { id: string; edge: number; at: number; width: number; stair?: TerraceStair };
-export type TerraceFace = { finish: "render" | "sandstone"; thickness: number; coping: { height: number; overhang: number } };
+export type TerraceFace = { finish: "render" | "sandstone"; thickness: number; height?: number; coping: { height: number; overhang: number } };
 export type RaisedTerrace = {
   id: string; name: string; area: string; survey?: string; walkable: boolean;
   base: Vec2; rise: number; floor: string; face: TerraceFace;
@@ -166,7 +167,8 @@ function riserTiles(): THREE.CanvasTexture {
 
 export function addRaisedTerraces(scene: THREE.Scene): void {
   const white = plasterMaterial("#fffdf5"), coping = plasterMaterial("#fbf6ea"), sandstone = plasterMaterial("#d7b98d");
-  const paving = new THREE.MeshStandardMaterial({ color: "#d9ccb2", map: surfaceTexture("plaster"), roughness: 1 });
+  const paving = new THREE.MeshStandardMaterial({ color: "#d9ccb2", map: crazyPavingTexture(), roughness: 1 });
+  const soil = new THREE.MeshStandardMaterial({ color: "#827357", roughness: 1 });
   const terracotta = new THREE.MeshStandardMaterial({ color: "#c27a5a", map: surfaceTexture("paving"), roughness: 1 });
   const iron = new THREE.MeshStandardMaterial({ color: "#23282a", roughness: 0.6, metalness: 0.3 });
   const add = (mesh: THREE.Mesh, name: string) => { mesh.name = name; mesh.userData.noDrape = true; mesh.castShadow = mesh.receiveShadow = true; scene.add(mesh); return mesh; };
@@ -178,9 +180,13 @@ export function addRaisedTerraces(scene: THREE.Scene): void {
   };
   for (const t of raisedTerraces) {
     const floor = terraceFloorY(t) + GROUND, th = t.face.thickness, cap = t.face.coping;
+    // A patio floor can sit below its enclosing wall; a bed can use the same face at soil height.
+    const wallTop = siteY(...t.base) + GROUND + (t.face.height ?? t.rise);
     // The floor, cut back where a stair climbs into it.
     const shape = new THREE.Shape(floorRing(t).map(([x, z]) => new THREE.Vector2(x, -z)));
-    const top = add(new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), paving), t.id + "-floor");
+    const top = add(new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2), t.floor === "soil" ? soil : paving), t.id + "-floor");
+    const floorUv = top.geometry.getAttribute("uv"), floorPositions = top.geometry.getAttribute("position");
+    for (let i = 0; i < floorUv.count; i++) floorUv.setXY(i, floorPositions.getX(i), floorPositions.getZ(i));
     top.position.y = floor; top.userData.referenceSurface = true; top.castShadow = false;
     // Retaining faces with a coping; untraced ends as plain faces.
     t.edges.forEach((edge, i) => {
@@ -193,15 +199,15 @@ export function addRaisedTerraces(scene: THREE.Scene): void {
         const mid = along(e.a, e.u, (a + b) / 2, e.n, th / 2), outside = [along(e.a, e.u, d0, e.n, -0.3), along(e.a, e.u, d1, e.n, -0.3)];
         const bottom = Math.min(...outside.map((p) => siteY(...p))) + GROUND - 0.08;
         if (edge.kind === "face") {
-          box(mid, e.u, b - a, th, bottom, floor, material, t.id + "-face");
-          box(along(e.a, e.u, (a + b) / 2, e.n, th / 2 - cap.overhang / 2), e.u, b - a + 0.02, th + cap.overhang, floor, floor + cap.height, coping, t.id + "-coping");
+          box(mid, e.u, b - a, th, bottom, wallTop, material, t.id + "-face");
+          box(along(e.a, e.u, (a + b) / 2, e.n, th / 2 - cap.overhang / 2), e.u, b - a + 0.02, th + cap.overhang, wallTop, wallTop + cap.height, coping, t.id + "-coping");
         } else box(mid, e.u, b - a, th, bottom, floor - 0.005, material, t.id + "-end");
       }
     });
     for (const f of terraceStairs(t)) {
       const s = f.stair, name = f.opening.id, tiles = riserTiles();
       tiles.repeat.set(Math.max(1, Math.round(f.width / f.riser)), 1);
-      const riser = new THREE.MeshStandardMaterial({ map: tiles, roughness: 0.55 });
+      const riser = s.riserFinish === "render" ? white : new THREE.MeshStandardMaterial({ map: tiles, roughness: 0.55 });
       const tread = s.treadFinish === "terracotta" ? terracotta : paving;
       // One slab per riser, from that riser to the top of the flight, stacked on the one below.
       for (let i = 0; i < s.risers; i++) {
@@ -210,6 +216,7 @@ export function addRaisedTerraces(scene: THREE.Scene): void {
         const slab = new THREE.Mesh(new THREE.BoxGeometry(f.width, h, s1 - s0), [white, white, tread, white, white, riser]);
         slab.position.set(mid[0], f.base + GROUND + f.riser * i + h / 2, mid[1]); slab.rotation.y = Math.atan2(f.up[0], f.up[1]);
         add(slab, name + "-tread-" + (i + 1));
+        if (s.nosing) box(along(f.foot, f.up, s0 + 0.025), f.right, f.width, 0.055, f.base + GROUND + f.riser * (i + 1) - 0.018, f.base + GROUND + f.riser * (i + 1) + 0.006, white, name + "-white-nosing-" + (i + 1));
       }
       // The cheeks beside a cut-back flight rise to the floor with the coping, like the faces either side.
       for (const ring of cheekRings(t, f)) {
@@ -256,7 +263,7 @@ export function raisedTerraceBlueprint(): { id: string; points: Vec2[]; closed: 
   return raisedTerraces.flatMap((t) => {
     const out: ReturnType<typeof raisedTerraceBlueprint> = [];
     const text = `${t.name}: ${t.rise} m above the path · ${t.trust} · ${t.evidence.join(", ")}`;
-    out.push({ id: t.id, points: floorRing(t), closed: true, fill: "#e4d6bc", stroke: "none", title: text });
+    out.push({ id: t.id, points: floorRing(t), closed: true, fill: t.floor === "soil" ? "#827357" : "#e4d6bc", stroke: "none", title: text });
     t.edges.forEach((edge, i) => {
       if (edge.kind === "house") return;
       const e = terraceEdge(t, i);
@@ -270,7 +277,7 @@ export function raisedTerraceBlueprint(): { id: string; points: Vec2[]; closed: 
     for (const f of terraceStairs(t)) {
       const title = `${f.opening.id}: ${f.stair.risers} risers of ${f.riser.toFixed(2)} m, ${f.stair.tread} m treads, ${f.stair.direction === "in" ? "cut back into" : "in front of"} the terrace`;
       out.push({ id: f.opening.id, points: stairRing(f), closed: true, fill: "#b4513e", stroke: "none", title });
-      for (let i = 0; i < f.stair.risers; i++) out.push({ id: f.opening.id + "-riser", points: [along(f.foot, f.up, i * f.stair.tread, f.right, -f.width / 2), along(f.foot, f.up, i * f.stair.tread, f.right, f.width / 2)], closed: false, stroke: "#2d4f8c", width: 0.05, title });
+      for (let i = 0; i < f.stair.risers; i++) out.push({ id: f.opening.id + "-riser", points: [along(f.foot, f.up, i * f.stair.tread, f.right, -f.width / 2), along(f.foot, f.up, i * f.stair.tread, f.right, f.width / 2)], closed: false, stroke: f.stair.riserFinish === "render" ? "#fffdf5" : "#2d4f8c", width: 0.05, title });
       for (const ring of cheekRings(t, f)) out.push({ id: f.opening.id + "-cheek", points: ring, closed: true, fill: "#fffdf5", stroke: "none", title });
       const side = f.stair.handrail === "left" ? -1 : 1;
       if (f.stair.handrail && f.stair.handrail !== "none") out.push({ id: f.opening.id + "-handrail", points: [along(f.foot, f.up, 0.12, f.right, side * (f.width / 2 - 0.08)), along(f.foot, f.up, f.run + 0.35, f.right, side * (f.width / 2 - 0.08))], closed: false, stroke: "#23282a", width: 0.05, title: "Iron handrail" });

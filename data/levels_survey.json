@@ -399,9 +399,9 @@
         "IMG_2193.jpg",
         "IMG_2194.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "middle-pool-raised-patios",
-      "note": "A white wall of 0.6-1.0 m with a hedge beyond the north end of the deck, a patio with an umbrella and the houses behind it, raised above the lawn."
+      "note": "A white wall of 0.6-1.0 m with a hedge beyond the north end of the deck, a patio with an umbrella and the houses behind it, raised above the lawn. Built as bounded nonwalkable raised-terrace fragments; north floor +0.45 m, bed/curved-patio floor +0.2 m. Face heights are independent (0.8 m north, 0.2 m kerb, 0.4 m curved face). Placement and untraced floor extents remain estimated; IMG_2341 location uncertain. See docs/MIDDLE_POOL_RAISED_PATIOS.md."
     },
     {
       "id": "middle-pool-patio-beds",
@@ -418,9 +418,9 @@
         "IMG_2247.jpg",
         "IMG_2341.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "middle-pool-raised-patios",
-      "note": "Kerbed oleander bed of 0.15-0.2 m and a curved hedge wall of 0.35-0.45 m; the patios behind look level with the bed tops."
+      "note": "Kerbed oleander bed of 0.15-0.2 m and a curved hedge wall of 0.35-0.45 m; the patios behind look level with the bed tops. Built as bounded nonwalkable raised-terrace fragments; north floor +0.45 m, bed/curved-patio floor +0.2 m. Face heights are independent (0.8 m north, 0.2 m kerb, 0.4 m curved face). Placement and untraced floor extents remain estimated; IMG_2341 location uncertain. See docs/MIDDLE_POOL_RAISED_PATIOS.md."
     },
     {
       "id": "north-pool-west-stair",
@@ -459,8 +459,8 @@
       "confidence": "medium",
       "risers": 2,
       "at": [
-        -166.0,
-        8.0
+        -172,
+        9
       ],
       "atAccuracy": 8,
       "photos": [
@@ -468,9 +468,9 @@
         "IMG_2205.jpg",
         "IMG_2207.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "north-pool-garden-walls",
-      "note": "Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings."
+      "note": "Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings. Issue #36 refines the broad position from (-166,8) to (-172,9), keeping the original +-8 m tolerance: three individual lower openings registered from IMG_2204 pool-ring camera fit span about x=-177 to -168,z=11, west of Calle Isabel; the old centre biased the whole patio band east. Height range unchanged."
     },
     {
       "id": "pool-decks",

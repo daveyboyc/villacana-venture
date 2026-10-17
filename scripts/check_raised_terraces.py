@@ -63,8 +63,12 @@ for t in d['terraces']:
     low, high = item['rise']
     assert low <= t['rise'] <= high, f"{name}: rise {t['rise']} m outside the survey's {low}-{high} m"
     assert f'{low}-{high} m' in t['trust'], f'{name}: trust should quote the survey range'
-    assert item['model'] == 'built' and item['task'] == 'raised-terraces', f"{t['survey']}: survey item not marked built"
+    assert item['model'] == 'built' and tasks[item['task']]['status'] == 'done', f"{t['survey']}: survey item not marked built"
     assert tasks['raised-terraces']['status'] == 'done', 'raised-terraces task not marked done'
+    assert t['face'].get('height', t['rise']) >= t['rise'], f'{name}: wall top lower than floor'
+    if t['area'] == 'middle-pool':
+        assert not t['walkable'] and not t['openings'], f'{name}: no photographed private access'
+        assert any(e['kind'] == 'end' for e in edges), f'{name}: untraced extent must remain explicit'
     # House edges run along a registry front; houses keep their own datum (not lifted here).
     for i, e in enumerate(edges):
         if e['kind'] != 'house':
@@ -110,7 +114,9 @@ for t in d['terraces']:
         out = (foot[0] - nrm[0] * 1.0, foot[1] - nrm[1] * 1.0)
         assert not inside(*out, ring), f"{o['id']}: stair foot is not on the ground outside"
         assert not any(b['floors'] > 0 and inside(*out, b['ring']) for b in s['buildings']), f"{o['id']}: stair foot lands in a house"
-        assert math.dist(foot, t['base']) < 0.05, f"{name}: base should be the stair foot"
+        if o is t['openings'][0]:
+            assert math.dist(foot, t['base']) < 0.05, f"{name}: base should be the first stair foot"
+        assert abs(site_y(foot) - site_y(t['base'])) < 0.03, f"{name}: openings need a shared path datum"
         if 'at' in item:
             gap = math.dist(foot, item['at'])
             assert gap <= item['atAccuracy'], f"{o['id']}: {gap:.1f} m from the survey position, outside its +-{item['atAccuracy']} m"
@@ -119,6 +125,22 @@ for t in d['terraces']:
     for w in t.get('walks', []):
         for p in w:
             assert inside(*p, ring) and ring_gap(p, ring) > PLAYER + 0.2, f'{name}: walk point {p} too close to an edge'
+
+# Issue 55: independent wall/floor levels and explicitly bounded private fragments.
+middle = {t['id']: t for t in d['terraces'] if t['area'] == 'middle-pool'}
+expected = {
+    'middle-pool-north-terrace': (0.45, 0.8, {'IMG_2193.jpg', 'IMG_2194.jpg'}),
+    'middle-pool-oleander-bed': (0.2, 0.2, {'IMG_2246.jpg', 'IMG_2247.jpg'}),
+    'middle-pool-curved-hedge-patio': (0.2, 0.4, {'IMG_2341.jpg'}),
+}
+for name, (rise, wall, evidence) in expected.items():
+    t = middle[name]
+    assert t['rise'] == rise and t['face']['height'] == wall, f'{name}: photo floor/wall levels conflated'
+    assert evidence <= set(t['evidence']), f'{name}: missing photographed evidence'
+    assert 'untraced' in t['trust'].lower() or 'Untraced' in t['trust'], f'{name}: hidden boundary limit omitted'
+    assert not t['openings'] and not t['walkable'], f'{name}: private access inferred'
+assert 'uncertain' in middle['middle-pool-curved-hedge-patio']['trust'].lower(), 'IMG_2341 placement must remain uncertain'
+assert middle['middle-pool-oleander-bed']['floor'] == 'soil', 'Oleander bed must not become an invented paved patio'
 
 # Wired into the game, the map and the browser test.
 src = {f: (ROOT / f).read_text() for f in ('src/slice.ts', 'src/blueprint.ts', 'scripts/test_layout_browser.cjs')}
