@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 350,
-  "photosCitedByModel": 89,
-  "modelFeaturesWithPhotoCitations": 95
+  "features": 354,
+  "photosCitedByModel": 96,
+  "modelFeaturesWithPhotoCitations": 99
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2804,6 +2804,49 @@
     "IMG_2284.jpg",
     "IMG_2296.jpg",
     "IMG_2297.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:elena-lawn-door-sill",
+   "name": "Elena south · sill at the door at the end of the lawn path",
+   "kind": "reference feature",
+   "source": "photo-placed sill; height from the levels survey",
+   "evidence": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:elena-bed-door-sill",
+   "name": "Elena south · sill at the second door, north along the same wall",
+   "kind": "reference feature",
+   "source": "photo-placed sill; height from the levels survey",
+   "evidence": [
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-footpath-kerb",
+   "name": "Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia",
+   "kind": "reference feature",
+   "source": "photo-supported kerb on the mapped car park edge; extent estimated",
+   "evidence": [
+    "IMG_2291.jpg",
+    "IMG_2292.jpg",
+    "IMG_2293.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-south-arch-approach",
+   "name": "Pintor Dalí south · flagstone approach to the arch",
+   "kind": "reference feature",
+   "source": "photo-supported approach square to the registry arch recess; length estimated",
+   "evidence": [
+    "IMG_2283.jpg",
+    "IMG_2294.jpg",
+    "IMG_2295.jpg"
    ]
   },
   {
@@ -5722,6 +5765,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2260.jpg",
+   "to": "door_sills.json:elena-lawn-door-sill",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2261.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -5768,6 +5817,18 @@
   {
    "from": "photo:IMG_2261.jpg",
    "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "door_sills.json:elena-lawn-door-sill",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "door_sills.json:elena-bed-door-sill",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -6519,6 +6580,12 @@
    "angleOffset": 22.4
   },
   {
+   "from": "photo:IMG_2283.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2284.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -6756,6 +6823,12 @@
    "angleOffset": 29.2
   },
   {
+   "from": "photo:IMG_2291.jpg",
+   "to": "door_sills.json:dali-footpath-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2292.jpg",
    "to": "street:eva-west-footpath",
    "relation": "camera-nearby",
@@ -6793,6 +6866,12 @@
    "relation": "possibly-in-view",
    "distance": 38.9,
    "angleOffset": 4.1
+  },
+  {
+   "from": "photo:IMG_2292.jpg",
+   "to": "door_sills.json:dali-footpath-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2293.jpg",
@@ -6840,6 +6919,12 @@
    "angleOffset": 20.5
   },
   {
+   "from": "photo:IMG_2293.jpg",
+   "to": "door_sills.json:dali-footpath-kerb",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2294.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -6859,6 +6944,12 @@
    "angleOffset": 12.5
   },
   {
+   "from": "photo:IMG_2294.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2295.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -6876,6 +6967,12 @@
    "relation": "possibly-in-view",
    "distance": 19.5,
    "angleOffset": 15.1
+  },
+  {
+   "from": "photo:IMG_2295.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2296.jpg",
@@ -7175,6 +7272,18 @@
    "relation": "possibly-in-view",
    "distance": 32.3,
    "angleOffset": 25.8
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "door_sills.json:elena-lawn-door-sill",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "door_sills.json:elena-bed-door-sill",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2331.jpg",

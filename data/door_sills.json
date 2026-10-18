@@ -1,0 +1,160 @@
+{
+  "id": "door-sills",
+  "name": "Door sills, the Dalí footpath kerb and the south Dalí arch approach",
+  "reviewedAt": "2026-10-16",
+  "about": "Small level changes the player steps over (issue #57). Each is a ground-height offset over the lie of the land, not a terrain change: sills and the kerbed footpath are 0.12 m, the arch approach rises 0.25 m over 5 m. House floors are untouched. Heights from data/levels_survey.json (elena-south-sills, dali-footpath-kerb, dali-south-approach), built to the middle of each range.",
+  "trust": "Photo-supported: which doors have sills and their red treads, the kerbed lawn strip and tiled footpath along the Dalí frontage with a slot drain at the arched porch, and the flagstone approach with flared white kerbs and a grooved foot strip. Estimated: every height (read by eye, not measured), sill sizes, door positions to about 1 m, the frontage stations to about 2 m, and the approach length and kerb flare to about 1 m. Not modelled: the white patio wall and the doors themselves west of the Elena lawns, and the covered passage behind the Dalí arch (the registry building stays solid).",
+  "sills": [
+    {
+      "id": "elena-lawn-door-sill",
+      "name": "Elena south · sill at the door at the end of the lawn path",
+      "door": [
+        -153.26,
+        70.64
+      ],
+      "outward": [
+        0.883,
+        -0.47
+      ],
+      "width": 1.05,
+      "depth": 0.32,
+      "rise": 0.12,
+      "tread": "red",
+      "evidence": [
+        "IMG_2260.jpg",
+        "IMG_2261.jpg",
+        "IMG_2330.jpg"
+      ],
+      "trust": "Red tread with a white riser where the tiled path between the two lawns meets a brown door in the white wall on their west side. Door placed just past the traced end of cervantes-lawn-door-path, facing back along it; IMG_2330 puts it at bearing 182 deg against 184 deg here. Height 0.12 m and size estimated.",
+      "photoBearings": {
+        "IMG_2330.jpg": 182,
+        "IMG_2261.jpg": 168
+      },
+      "bearingNote": "Bearing of the door from the camera, from its compass heading plus the door's pixel offset (about 1162 px focal length). IMG_2261's heading reads about 20 deg low against both doors; only the spacing between them is used from it."
+    },
+    {
+      "id": "elena-bed-door-sill",
+      "name": "Elena south · sill at the second door, north along the same wall",
+      "door": [
+        -154.22,
+        67.98
+      ],
+      "outward": [
+        0.883,
+        -0.47
+      ],
+      "width": 0.95,
+      "depth": 0.22,
+      "rise": 0.12,
+      "tread": "red",
+      "evidence": [
+        "IMG_2261.jpg",
+        "IMG_2330.jpg"
+      ],
+      "trust": "Red sill under a brown door set in a slightly projecting length of the same wall, about 2.8 m north of the first, with shrubs in front (IMG_2261). IMG_2330 puts it at bearing 195 deg against 190 deg here. Spacing, projection and height estimated.",
+      "photoBearings": {
+        "IMG_2330.jpg": 195,
+        "IMG_2261.jpg": 179
+      },
+      "bearingNote": "Bearing of the door from the camera, from its compass heading plus the door's pixel offset (about 1162 px focal length). IMG_2261's heading reads about 20 deg low against both doors; only the spacing between them is used from it."
+    }
+  ],
+  "omittedDoors": [
+    {
+      "photo": "IMG_2253.jpg",
+      "door": "brown door under an arched hood on the east side of Elena south, at the junction",
+      "why": "The door is in the photo but its foot is hidden by planting, so no sill is visible, and the pin (±2.1 m) cannot place it along the frontage to better than about 2 m. Left out."
+    }
+  ],
+  "footpathKerb": {
+    "id": "dali-footpath-kerb",
+    "name": "Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia",
+    "origin": [
+      -168.457,
+      130.089
+    ],
+    "along": [
+      0.4508,
+      0.8925
+    ],
+    "toward": [
+      0.8925,
+      -0.4508
+    ],
+    "length": 25.95,
+    "width": 5.2,
+    "rise": 0.12,
+    "taper": 2.5,
+    "kerbWidth": 0.14,
+    "lawn": {
+      "from": 2.5,
+      "to": 16.7,
+      "across": [
+        0.14,
+        1.85
+      ]
+    },
+    "pathKerbFrom": 16.7,
+    "pathEdge": 1.85,
+    "drain": {
+      "id": "dali-arch-porch-drain",
+      "name": "Slot drain at the arched porch threshold",
+      "along": [
+        4.3,
+        6.3
+      ],
+      "across": [
+        3.3,
+        3.52
+      ],
+      "evidence": [
+        "IMG_2291.jpg",
+        "IMG_2292.jpg"
+      ]
+    },
+    "evidence": [
+      "IMG_2291.jpg",
+      "IMG_2292.jpg",
+      "IMG_2293.jpg"
+    ],
+    "trust": "IMG_2291 and IMG_2292 show the house-side tiled footpath and a grass strip standing a white kerb above the asphalt, and the porch floor under the arch flush with the path behind a slot drain. IMG_2292 shows the lawn strip ending with the kerb turned in to the path's own edge; past it cars nose up to the path, as on the left of IMG_2293, whose right-hand kerb runs along the lane like the south end here. The kerb follows the Dalí car park's house-side edge in data/dali_cervantes.json from the building corner by Eva to the corner where the bays start; the footprint runs on into the registry building, which hides it. The lawn-strip end (±3 m), the arch position (±2 m) and 0.12 m are estimates. The 2.5 m north of the building corner is not photographed: the rise fades out there instead of adding a kerb. The map puts Calle Patricia about 3.7 m further south than the end of the band, across the bay tip, so the apron is not carried on into the lane."
+  },
+  "approach": {
+    "id": "dali-south-arch-approach",
+    "name": "Pintor Dalí south · flagstone approach to the arch",
+    "arch": [
+      -114.15,
+      212.45
+    ],
+    "outward": [
+      -0.846,
+      0.533
+    ],
+    "rise": 0.25,
+    "level": 1.0,
+    "slope": 6.0,
+    "foot": 6.5,
+    "footRise": 0.02,
+    "halfWidth": 1.05,
+    "kerbWidth": 0.18,
+    "kerbHeight": 0.18,
+    "flare": {
+      "side": "right",
+      "from": 4.4,
+      "to": 5.4,
+      "extra": 0.72
+    },
+    "building": "6263501UF1366S_part1",
+    "evidence": [
+      "IMG_2283.jpg",
+      "IMG_2294.jpg",
+      "IMG_2295.jpg"
+    ],
+    "trust": "Flagstones between rounded white kerbs rise gently, with no step, from a grooved concrete strip at the asphalt to the arched passage (IMG_2283, corroborated by IMG_2294/2295). The arch is put at the back of the recess in registry building 6263501UF1366S_part1; the axis is square to that face and passes within 0.8 m of the IMG_2283 camera, whose heading (60 deg) matches the 58 deg here. The left kerb runs straight and the right one kinks outward towards the parking, as photographed; the foot ends at the edge of the bays beside it. Rise 0.25 m over 5 m (survey 0.15-0.35 m over 5-6 m) and kerbs 0.18 m above the asphalt are by eye. The passage through the building is not opened.",
+    "photoHeading": {
+      "IMG_2283.jpg": 60,
+      "IMG_2294.jpg": 55,
+      "IMG_2295.jpg": 57
+    }
+  }
+}

@@ -2579,7 +2579,8 @@
    "frontage_divisions.json:cervantes-front-patio",
    "frontage_divisions.json:cervantes-lawn-door-path",
    "junction_lawns.json:junction-pollarded-2",
-   "junction_lawns.json:junction-pollarded-3"
+   "junction_lawns.json:junction-pollarded-3",
+   "door_sills.json:elena-lawn-door-sill"
   ],
   "looksAt": [
    -147.5,
@@ -2621,7 +2622,9 @@
    "frontage_divisions.json:cervantes-elena-lawn-1",
    "frontage_divisions.json:cervantes-elena-lawn-2",
    "frontage_divisions.json:cervantes-front-patio",
-   "frontage_divisions.json:cervantes-lawn-door-path"
+   "frontage_divisions.json:cervantes-lawn-door-path",
+   "door_sills.json:elena-lawn-door-sill",
+   "door_sills.json:elena-bed-door-sill"
   ],
   "looksAt": [
    -148.9,
@@ -3416,13 +3419,16 @@
    "accuracy": 2.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-south-arch-approach"
+  ],
   "looksAt": [
    -118.7,
    214.7
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "door_sills.json:dali-south-arch-approach",
    "parking:Dalí car park"
   ]
  },
@@ -3724,7 +3730,9 @@
    "accuracy": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-footpath-kerb"
+  ],
   "looksAt": [
    -155.4,
    130.5
@@ -3757,7 +3765,9 @@
    "accuracy": 2.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-footpath-kerb"
+  ],
   "looksAt": [
    -157.0,
    138.3
@@ -3791,7 +3801,9 @@
    "accuracy": 5.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-footpath-kerb"
+  ],
   "looksAt": [
    -151.1,
    151.9
@@ -3828,7 +3840,9 @@
    "accuracy": 3.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-south-arch-approach"
+  ],
   "looksAt": [
    -118.0,
    210.3
@@ -3861,7 +3875,9 @@
    "accuracy": 3.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:dali-south-arch-approach"
+  ],
   "looksAt": [
    -117.9,
    210.7
@@ -4220,7 +4236,10 @@
    "altitude": 6.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "door_sills.json:elena-lawn-door-sill",
+   "door_sills.json:elena-bed-door-sill"
+  ],
   "looksAt": [
    -151.1,
    62.5
