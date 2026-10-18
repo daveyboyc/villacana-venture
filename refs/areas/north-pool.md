@@ -33,6 +33,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 - `north-pool-west-stair` (steps): 0.9-1.1 m above the crazy-paving path round the lawn, medium confidence at (-187, 17.5) ±6 m. Model: **built**, task `raised-terraces`. A flight with red-and-blue patterned tile risers and an iron handrail climbs from the north-west corner of the lawn path to a raised terrace with crazy paving, a terracotta patio with tables and the house fronts. A curved white retaining wall of the same height runs beside it holding a planted bank. Position from two roof bearings (about 312 degrees, 18-25 m), low confidence. About where the terrain foot line runs, but about 1 m rather than 0.5 m; whether it is shared ground or a private terrace is not visible. (IMG_2204.jpg, IMG_2206.jpg, IMG_2208.jpg)
 - `north-pool-north-patios` (raised-patio): 0.25-0.4 m above the path round the lawn, medium confidence at (-172, 9) ±8 m. Model: **built**, task `north-pool-garden-walls`. Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings. Issue #36 refines the broad position from (-166,8) to (-172,9), keeping the original +-8 m tolerance: three individual lower openings registered from IMG_2204 pool-ring camera fit span about x=-177 to -168,z=11, west of Calle Isabel; the old centre biased the whole patio band east. Height range unchanged. (IMG_2204.jpg, IMG_2205.jpg, IMG_2207.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `north-pool-alignment-audit` | North pool: register maps and audit courtyard buildings and connecting lanes | in-progress · Codex |  |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.

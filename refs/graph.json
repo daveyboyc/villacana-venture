@@ -2179,6 +2179,14 @@
    "status": "done",
    "verification": "not-comparable",
    "issue": 95
+  },
+  {
+   "id": "task:north-pool-alignment-audit",
+   "kind": "build-task",
+   "name": "North pool: register maps and audit courtyard buildings and connecting lanes",
+   "priority": 1,
+   "status": "in-progress",
+   "verification": "unchecked"
   }
  ],
  "edges": [
@@ -8777,6 +8785,11 @@
   },
   {
    "from": "task:north-pool-west-frontage",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
    "to": "area:north-pool",
    "relation": "in-area"
   },

@@ -6,6 +6,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P1 | `north-pool-alignment-audit` | North pool: register maps and audit courtyard buildings and connecting lanes | in-progress · Codex |  |
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../public/photos-ref/IMG_2227.jpg), [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2226](../public/photos-ref/IMG_2226.jpg) |
 | P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | done · issue_31 · photos: legacy-unchecked | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg), [IMG_2331](../public/photos-ref/IMG_2331.jpg), [IMG_2245](../public/photos-ref/IMG_2245.jpg) |
@@ -68,7 +69,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 ## By area
 
-- **North pool** ([brief](areas/north-pool.md)): `north-pool-west-frontage`, `raised-terraces`, `north-pool-garden-walls`
+- **North pool** ([brief](areas/north-pool.md)): `north-pool-alignment-audit`, `north-pool-west-frontage`, `raised-terraces`, `north-pool-garden-walls`
 - **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-south-forecourt`, `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
 - **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
 - **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
