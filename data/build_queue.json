@@ -219,7 +219,7 @@
     "IMG_2334.jpg",
     "IMG_2335.jpg"
    ],
-   "build": "Black iron double gate under a curved metal pergola frame, crazy paving with a drain, the raised white planter with a step and the blue tile panel beside it.",
+   "build": "Black iron double gate under a curved metal pergola frame, crazy paving with a drain, the raised white planter with a recessed wall bench and the blue tile panel above it, set back past the open right leaf.",
    "avoid": "Gate stays open and walkable unless a photo shows it shut.",
    "accept": [
     "check_middle_pool.py extended",
@@ -624,6 +624,28 @@
    "status": "done",
    "owner": "issue_57",
    "issue": 57
+  },
+  {
+   "id": "middle-pool-south-forecourt",
+   "area": "middle-pool",
+   "priority": 2,
+   "kind": "structure",
+   "title": "Middle pool south: crazy-paved forecourt and hedge inside the south gate",
+   "photos": [
+    "IMG_2334.jpg",
+    "IMG_2335.jpg"
+   ],
+   "build": "Found by the photo check of the south gate (data/photo_checks.json, docs/reviews/middle-pool-south-gate/): from the IMG_2334 camera the model shows lawn either side of a crossing tiled path, where the photo shows a narrow forecourt of irregular crazy paving running about 5 m back from the gate between a tall clipped hedge on the left (east) and the white planter on the right (west). Trace the forecourt surface and the hedge line from the photos and the aerial, and check how the mapped Calle Eva/Silvia routes really meet here.",
+   "avoid": "Do not move the gate, planter or wall bench (data/middle_pool_south_gate.json) unless the trace proves them wrong; keep the forecourt level (levels_survey) and walkable; hedge is Details-only planting unless it is a structural wall.",
+   "accept": [
+    "check_middle_pool.py extended for the forecourt outline",
+    "photo check of IMG_2334 recorded as matches in data/photo_checks.json",
+    "layout browser test still walks every route both ways"
+   ],
+   "dependsOn": [
+    "middle-pool-south-gate"
+   ],
+   "status": "open"
   },
   {
    "id": "north-pool-west-frontage",

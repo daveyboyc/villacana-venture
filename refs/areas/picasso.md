@@ -22,18 +22,20 @@ Layout: 2, Levels and slopes: 1, Materials: 1, Views: 1
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["Pintor Picasso and the car park"]
-  A --> F0["picasso boundary wall"]
+  A --> F0["picasso boundary wall · unchecked"]
   F0 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F1["picasso stone plinth"]
+  A --> F1["picasso stone plinth · unchecked"]
   F1 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F2["picasso utility front"]
+  A --> F2["picasso utility front · unchecked"]
   F2 --> PIMG_2345_jpg(["IMG_2345"])
 ```
+
+**Built but never checked against its photos:** `picasso-service-road`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

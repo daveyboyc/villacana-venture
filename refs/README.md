@@ -25,7 +25,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 123 | [topics/layout.md](topics/layout.md) |
+| Layout | 124 | [topics/layout.md](topics/layout.md) |
 | Levels and slopes | 21 | [topics/levels.md](topics/levels.md) |
 | Facades and roofs | 45 | [topics/facades.md](topics/facades.md) |
 | Materials | 62 | [topics/materials.md](topics/materials.md) |
@@ -34,3 +34,5 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Views | 28 | [topics/view.md](topics/view.md) |
 
 172 references: 172 reviewed, 0 with areas suggested only from the camera position.
+
+Photo checks (`data/photo_checks.json`): 11 renders compared with their photos, 1 match, 1 differ. 25 of 27 done tasks have never been checked against their photos (QUEUE.md, verification backlog).

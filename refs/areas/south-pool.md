@@ -28,15 +28,17 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["South pool"]
-  A --> F0["South lawn above the paseo"]
+  A --> F0["South lawn above the paseo · unchecked"]
   F0 --> PIMG_2188_jpg(["IMG_2188"])
   F0 --> PIMG_2349_jpg(["IMG_2349"])
 ```
+
+**Built but never checked against its photos:** `south-pool-seaward-level`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

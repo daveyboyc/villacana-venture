@@ -93,7 +93,9 @@ def features(s):
     for f in [*south_patios['walls'],south_patios['door'],south_patios['pergola'],*south_patios['planting']]:
         add('cervantes_east_south_patios.json:'+f['id'],f['name'],'reference feature','bounded photo/aerial interpretation; dimensions estimated',evidence=f['evidence'],**({'points':[f['at']]} if 'at' in f else {k:f[k] for k in ('ring','points') if k in f}))
     south=json.loads((ROOT/'data/middle_pool_south_gate.json').read_text())
-    add('middle_pool_south_gate.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=[south['center']])
+    # The gate and its wall bench (local along/across frame), so a photo of the bench links to this feature.
+    sx,sz=south['center'];ux,uz=south['forward'];ba=sum(south['bench']['along'])/2;bc=sum(south['bench']['seat']['across'])/2
+    add('middle_pool_south_gate.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=[south['center'],[round(sx+ux*ba-uz*bc,2),round(sz+uz*ba+ux*bc,2)]])
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})

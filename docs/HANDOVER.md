@@ -14,7 +14,11 @@ levels), then materials, then planting and small details.
     `refs/topics/<topic>.md`: the same by topic (levels, materials...).
   - `refs/graph.json`: nodes for areas, topics, references, model features and
     build tasks; edges `shows`, `useful-for`, `cites`, `in-area`, `looks-at`,
-    `builds-from` and `depends-on`.
+    `builds-from`, `depends-on` and `checked-against`. `cites` only means an author
+    used a photo. `checked-against` (from `data/photo_checks.json`) means the build
+    was rendered from that photo's camera and compared, with the result; features
+    and tasks carry a `verification` state (matches, differs, unchecked).
+    `refs/QUEUE.md` lists the done tasks never checked (verification backlog).
   - Contact sheets of numbered thumbnails per area are in the private
     `villacana-reference` repo (`contact-sheets/<area>.jpg`).
 - **Photo metadata you can trust to a stated degree.** `public/photos-ref/manifest.json`
@@ -43,18 +47,31 @@ levels), then materials, then planting and small details.
    and `owner` to yourself in `data/build_queue.json`, in your first commit.
 3. Read the issue body (`refs/issues/<task-id>.md`), the area brief and its
    contact sheet, then every listed photo at full size.
-4. Render the current game from the photos' cameras before you change anything:
-   `node scripts/shoot_views.cjs IMG_xxxx --pool=<pool> --details`
-   (renders go to `layout-checks.local/views/`; `--high` looks down from above
-   for roof shots). Note how it differs from the photo.
-5. Trace positions against `public/map/ground.jpg` (bounds in
+4. Check each photo's camera first. If the pin or heading disagrees with what the
+   photo shows (a pin inside a gateway, a compass pointing away from the subject),
+   correct it from photo content in `data/photo_positions.json` and the manifest
+   (`trust: "checked against photo content"`, a `locationBasis`, original `gps`
+   kept), and give every photo you build from a `looksAt` and `subject` in
+   `data/reference_tags.json`. Then render the current game from those cameras
+   before you change anything:
+   `node scripts/shoot_views.cjs IMG_xxxx --pool=<pool> --task=<task-id> --as=before`
+   (also saved to `docs/reviews/<task-id>/`; `--high` looks down from above for
+   roof shots). Note how it differs from the photo.
+5. Measure the photo, not just the scene: with a known width (a gate opening,
+   0.2 m tiles, a 1.2 m lane) and the horizon, read how far along the path each
+   part sits and in what order (gate, planter, bench...). Write those distances into
+   the data's `trust`. Trace positions against `public/map/ground.jpg` (bounds in
    `public/map/ground.json`), the registry footprints and the road lines in
    `public/map/skeleton.json`. Map metres: +x east, +z south. A camera pin
    locates the camera, not the subject; roof shots stand inside buildings.
 6. Build the feature in its own data file and module, following the examples.
    Record `evidence` (photo files) and an honest `trust` sentence saying what is
    photo-supported and what is estimated.
-7. Render again from the same cameras and iterate until the structure matches.
+7. Render again from the same cameras (`--as=after`) and put each render beside its
+   photo. Check order and spacing along the path, which side things are on, and that
+   nothing moving (an open gate leaf) sits in front of something it should not.
+   Record one entry per photo in `data/photo_checks.json`: `matches`, or `differs`
+   with notes and a new open task as `followUp` for what is still wrong.
 8. Set the task `done`, add any new fact or open question to the area's `notes`
    in `data/areas.json`, add newly discovered work as new tasks (with photos),
    and rebuild the references.
@@ -76,7 +93,11 @@ node scripts/test_photo_map_browser.cjs
 ```
 
 Plus the task's own `Done when` items, a new or extended `scripts/check_*.py`
-for what you built, and before/after renders from the photo cameras in the PR.
+for what you built, and before/after renders from the photo cameras committed in
+`docs/reviews/<task-id>/` and recorded in `data/photo_checks.json`.
+`build_references.py --check` fails for a done task with an unchecked photo, a
+`differs` without an open follow-up, or a checked photo without a reviewed `looksAt`.
+Passing source checks and walking tests does not show the build looks like the place.
 Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
 
 ## Rules that matter most

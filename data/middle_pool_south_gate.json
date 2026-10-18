@@ -17,7 +17,7 @@
  "leafLength": 0.925,
  "planter": {
   "along": [
-   -1.45,
+   -3.1,
    0.1
   ],
   "across": [
@@ -29,55 +29,68 @@
  },
  "panel": {
   "along": [
-   -1.1,
-   -0.1
+   -2.7,
+   -1.7
   ],
-  "across": 1.72,
-  "bottom": 0.25,
+  "wallAlong": [
+   -2.85,
+   -1.55
+  ],
+  "across": 1.85,
+  "bottom": 0.92,
   "width": 1.0,
-  "height": 0.65,
-  "wallHeight": 1.85
+  "height": 0.66,
+  "wallHeight": 2.6
  },
- "step": {
+ "bench": {
   "along": [
-   -1.1,
-   -0.1
+   -2.7,
+   -1.7
   ],
-  "across": [
-   1.02,
-   1.72
-  ],
-  "height": 0.22
+  "seat": {
+   "across": [
+    1.4,
+    1.85
+   ],
+   "height": 0.42
+  },
+  "plinth": {
+   "across": [
+    1.12,
+    1.4
+   ],
+   "height": 0.08
+  }
  },
  "paving": {
   "along": [
-   -3.0,
+   -3.6,
    0.15
   ],
   "across": [
    -1.0,
-   1.02
+   1.12
   ]
  },
  "drain": {
-  "along": -1.9,
-  "across": -0.35,
+  "along": -2.65,
+  "across": -0.1,
   "length": 0.65,
   "width": 0.65
  },
  "review": {
   "along": [
-   -3.1,
+   -3.8,
    1.1
   ],
   "across": [
    -1.35,
-   2.0
+   2.1
   ]
  },
  "evidence": [
   "IMG_2334.jpg",
   "IMG_2335.jpg"
  ],
- "trust": "Separate southern entrance, not the southwest steps of IMG_2333. IMG_2334 shows two open iron leaves below a shallow curved white rendered head with sparse metal pergola frame above, crazy paving and a flush drain. IMG_2335 shows a raised planter flanking a recessed white step and a white tiled panel framed with blue/yellow patterned tiles. Placement follows the gap between unchanged registry blocks southeast of the camera pins, rather than treating GPS as a gate coordinate. Position (roughly 1–2 m), opening, heights, planter ends and shallow step dimensions are estimates; no grade change or enclosing wall beyond the photographed fragment is inferred. Tile motifs are schematic, not photo textures."
+ "trust": "Separate southern entrance, not the southwest steps of IMG_2333. IMG_2334 shows two open iron leaves below a shallow curved white rendered head with sparse metal pergola frame above, crazy paving and a flush drain. IMG_2335 shows the wall bench: a seat-height block recessed into the raised planter with a low plinth in front, below a tall white wall carrying a panel of white tiles framed with blue/yellow figure tiles. Corrected 18 October from a perspective reading of IMG_2334 (gate opening about 1.85 m as the scale): the right leaf opens back against about 1.7 m of planter, the bench recess runs about 1.7-2.7 m in from the gate line, and the planter continues past it towards the courtyard (modelled to about 3.1 m in, where the approximate mapped Calle Eva route turns north-west; its real courtyard end is not visible); the drain sits about 2.3-3.0 m in. Placement of the gate follows the gap between unchanged registry blocks, not GPS. Position (roughly 1-2 m), opening, heights, planter ends and bench dimensions are estimates (about ±0.3 m along the path); No grade change or enclosing wall beyond the photographed fragment is inferred. Tile motifs are schematic, not photo textures."
 }

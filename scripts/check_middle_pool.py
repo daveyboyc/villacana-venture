@@ -148,11 +148,11 @@ assert south['opening']>=2*PLAYER+.5 and south['height']>=2
 assert abs(math.hypot(*south['forward'])-1)<1e-5
 ux,uz=south['forward'];cx,cz=south['center'];at=lambda a,c:[cx+ux*a-uz*c,cz+uz*a+ux*c]
 def south_rect(a,b,c,d):return [at(a,c),at(b,c),at(b,d),at(a,d)]
-w=south['opening']/2;p=south['pier'];bed=south['planter'];step=south['step'];panel=south['panel']
+w=south['opening']/2;p=south['pier'];bed=south['planter'];bench=south['bench'];panel=south['panel']
 rings=[]
 for side in [-1,1]:
  c=side*(w+p/2);rings.extend([south_rect(-p/2,p/2,c-p/2,c+p/2),south_rect(-south['leafLength'],0,side*w-.025,side*w+.025)])
-rings.extend([south_rect(bed['along'][0],step['along'][0],*bed['across']),south_rect(step['along'][1],bed['along'][1],*bed['across']),south_rect(*step['along'],*step['across']),south_rect(*panel['along'],panel['across'],panel['across']+.16)])
+rings.extend([south_rect(bed['along'][0],bench['along'][0],*bed['across']),south_rect(bench['along'][1],bed['along'][1],*bed['across']),south_rect(*bench['along'],bench['plinth']['across'][0],bench['seat']['across'][1]),south_rect(*panel['wallAlong'],panel['across'],panel['across']+.16)])
 for ring in rings:
  for pt in sample(ring,True):
   for road in roads.values():assert min(distance(pt,a,b) for a,b in zip(road['points'],road['points'][1:]))>=road['width']/2-.025,f'South entrance intrudes on {road["id"]}'
@@ -162,6 +162,15 @@ for ring in rings:
 for pt in sample([at(-2.8,0),at(1.8,0)]):
  assert not any(inside(*pt,ring) or min(distance(pt,a,b) for a,b in zip(ring,ring[1:]+ring[:1]))<PLAYER for ring in rings),'South entrance blocks a player'
  assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'South traversal crosses house'
-assert south['step']['across'][0]>=1 and .15<=south['step']['height']<=.25
+# IMG_2334/2335 (corrected 18 Oct): the open right leaf lies against planter, and the wall bench starts past its swing.
+seat,plinth=bench['seat'],bench['plinth']
+assert bed['along'][0]<bench['along'][0]<bench['along'][1]<bed['along'][1],'Bench must be recessed into the planter, with planter on both sides'
+assert bench['along'][1]<=-(south['leafLength']+.5),'Wall bench must sit past the open gate leaf, not behind it'
+assert 1.4<=-bench['along'][1]<=2.2,'IMG_2334: about 1.7 m of planter between the gate and the bench'
+assert .35<=seat['height']<=.5 and .03<=plinth['height']<=.15,'IMG_2335: a seat-height bench with a low plinth in front'
+assert plinth['across'][0]<=bed['across'][0]+.05 and plinth['across'][1]==seat['across'][0] and seat['across'][1]==panel['across'],'Plinth, seat and tiled back wall must stack without gaps'
+assert panel['wallAlong'][0]<=panel['along'][0] and panel['along'][1]<=panel['wallAlong'][1] and panel['bottom']>=seat['height']+.3
+assert bed['along'][0]<=-3.0,'IMG_2334: the planter continues past the bench towards the courtyard'
+assert -3.1<=south['drain']['along']<=-2.2,'IMG_2334: the drain sits level with the bench, about 2.3-3 m in from the gate'
 assert math.dist(south['center'],[-135.63,100.42])>8,'South gate duplicates southwest entrance'
-print('Middle pool south: separate open double gate, planter/panel and inset step preserve routes and registry PASS')
+print('Middle pool south: separate open double gate, planter, wall bench past the leaf and tiled panel preserve routes and registry PASS')

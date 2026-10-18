@@ -16,7 +16,17 @@ reference repo, and writes:
 With --sheets, contact sheets of thumbnails go to <reference>/contact-sheets/,
 because they include private images and this repo is public.
 --check fails if a reference has no area, or a tag names an unknown area,
-topic or file.
+topic or file, or a done task was never checked against its photos.
+
+A feature citing a photo ('cites') only says an author used it. Whether the
+build was compared with the photo is recorded in data/photo_checks.json: an
+after-render from the photo's camera, a result (matches, differs or
+not-comparable) and notes. Those become 'checked-against' edges and a
+'verification' state on features and tasks. A done task must have a check for
+every photo it builds from (tasks done before this rule are listed in
+legacyUnchecked, a list that may only shrink), a 'differs' needs an open
+follow-up task, and a checked photo needs a reviewed looksAt so the render
+faced its subject.
 
 A camera position only suggests areas. 'shows' in reference_tags.json is what
 a person or agent saw in the picture, and replaces the suggestion.
@@ -134,6 +144,15 @@ def build(reference:Path):
     return spec,catalog,problems
 
 ALTITUDE_SPLIT=9.0
+HEADING_TOLERANCE=45
+CHECK_RESULTS=('matches','differs','not-comparable')
+# Done tasks that were never rendered against their photos when photo checks began (18 October).
+# data/photo_checks.json legacyUnchecked may only hold these; check one and remove it from there.
+LEGACY_CEILING=frozenset('''barraka-boardwalk cervantes-door-steps cervantes-east-hedge cervantes-east-south-patios
+ cervantes-north-patios cervantes-steps-treads door-sills elena-east-patios elena-garden-door elena-gated-entry eva-walled-lawn
+ junction-lawns middle-pool-north-entrance middle-pool-raised-patios middle-pool-sw-steps north-pool-garden-walls paseo-details
+ paseo-house-clearance paseo-retaining-wall paseo-retrace-line picasso-service-road raised-terraces seaward-lanes-paving
+ shoreline-check south-pool-seaward-level'''.split())
 LOOK_DISTANCE={'ground':6,'upper-floor':10,'roof':12}
 
 def subject_of(photo,tag,model):
@@ -150,6 +169,11 @@ def subject_of(photo,tag,model):
         if gap<=2.5:near.append((gap,m['id']))
     out={'looksAt':point,'looksAtBasis':basis,'looksAtFeatures':[i for _,i in sorted(near)[:4]]}
     if tag.get('subject'):out['subject']=tag['subject']
+    if basis=='reviewed' and all(k in photo for k in ('x','z','heading')) and math.dist(point,[photo['x'],photo['z']])>1:
+        # A phone compass can be well off; say so when the subject is not where the heading points.
+        bearing=math.degrees(math.atan2(point[0]-photo['x'],-(point[1]-photo['z'])))%360
+        off=abs((bearing-photo['heading']+180)%360-180)
+        if off>HEADING_TOLERANCE:out['headingOff']=round(off)
     return out
 
 STATUSES=('open','in-progress','done')
@@ -166,21 +190,63 @@ def load_queue(spec,catalog,problems):
             if d not in ids:problems.append(f"task {t['id']}: depends on unknown task {d}")
     return queue
 
+def load_checks(catalog,queue,features,problems):
+    """Render-versus-photo checks from data/photo_checks.json, validated against the queue, features and tags."""
+    spec=load(ROOT/'data/photo_checks.json',{'checks':[],'legacyUnchecked':[]})
+    checks,legacy=spec.get('checks',[]),spec.get('legacyUnchecked',[])
+    by={e['id']:e for e in catalog};tasks={t['id']:t for t in queue};feats={f['id'] for f in features}
+    for c in checks:
+        name=f"photo check {c.get('task')} / {c.get('photo')}";res=c.get('result')
+        if c.get('task') not in tasks:problems.append(f'{name}: unknown task')
+        if c.get('feature') not in feats:problems.append(f"{name}: feature {c.get('feature')!r} does not cite photos in the evidence graph")
+        e=by.get(c.get('photo'))
+        if e is None:problems.append(f'{name}: photo not in the catalogue')
+        elif e.get('camera') and e.get('looksAtBasis')!='reviewed':problems.append(f'{name}: set looksAt and subject for the photo in data/reference_tags.json, so the render faces what the photo shows')
+        if res not in CHECK_RESULTS:problems.append(f'{name}: result must be one of {", ".join(CHECK_RESULTS)}')
+        if res!='not-comparable' and not (c.get('render') and (ROOT/c['render']).is_file()):problems.append(f"{name}: after render {c.get('render')!r} is not committed")
+        if c.get('before') and not (ROOT/c['before']).is_file():problems.append(f"{name}: before render {c['before']!r} is not committed")
+        if not c.get('notes'):problems.append(f'{name}: notes must say what matches and what differs')
+        follow=tasks.get(c.get('followUp'))
+        if res=='differs' and (follow is None or follow.get('status')=='done'):problems.append(f'{name}: differs, so followUp must name an open task in data/build_queue.json')
+    checked={(c.get('task'),c.get('photo')) for c in checks}
+    for t in queue:
+        missing=[p for p in t['photos'] if (t['id'],p) not in checked]
+        t['verification']=verdict([c for c in checks if c.get('task')==t['id']]) if not missing else ('legacy-unchecked' if t['id'] in legacy else 'unchecked')
+        if t.get('status')!='done':continue
+        if t['id'] in legacy:
+            if not missing:problems.append(f"legacyUnchecked {t['id']}: every photo is checked now, remove it from the list")
+        elif missing:problems.append(f"task {t['id']}: done but not checked against {', '.join(missing)}: render from the photo's camera (scripts/shoot_views.cjs --task={t['id']} --as=after) and record it in data/photo_checks.json")
+    for l in legacy:
+        if l not in LEGACY_CEILING:problems.append(f'legacyUnchecked {l}: only tasks done before photo checks began may be listed; check it instead')
+        elif tasks.get(l,{}).get('status')!='done':problems.append(f'legacyUnchecked {l}: not a done task')
+    return checks,legacy
+
+def verdict(checks):
+    results={c.get('result') for c in checks}
+    return 'differs' if 'differs' in results else 'matches' if 'matches' in results else 'not-comparable' if results else 'unchecked'
+
 def task_line(t,depth):
     up='../'*depth
     photos=', '.join(f'`{p[4:]}`' if p.startswith('ref:') else f'[{Path(p).stem}]({up}../public/photos-ref/{p})' for p in t['photos'])
     deps=f" (after {', '.join(t['dependsOn'])})" if t.get('dependsOn') else ''
     owner=f" · {t['owner']}" if t.get('owner') else ''
     issue=f" [#{t['issue']}](https://github.com/daveyboyc/villacana-venture/issues/{t['issue']})" if t.get('issue') else ''
-    return f"| P{t['priority']} | `{t['id']}`{issue} | {t['title']}{deps} | {t.get('status','open')}{owner} | {photos} |"
+    checked=f" · photos: {t['verification']}" if t.get('status')=='done' and t.get('verification') else ''
+    return f"| P{t['priority']} | `{t['id']}`{issue} | {t['title']}{deps} | {t.get('status','open')}{owner}{checked} | {photos} |"
 
-def queue_page(queue,spec):
+def queue_page(queue,spec,legacy=()):
     names={a['id']:a['name'] for a in spec['areas']}
     out=['# Build queue','','_Generated from `data/build_queue.json` by `scripts/build_references.py`. Edit the JSON, not this page._','',
          'How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `refs/issues/<id>.md`.','',
          '| Priority | Task | What | Status | Photos |','| --- | --- | --- | --- | --- |']
     order=sorted(queue,key=lambda t:(t.get('status')=='done',t['priority'],t['area'],t['id']))
     out+=[task_line(t,0) for t in order]
+    backlog=[t for t in order if t['id'] in legacy]
+    if backlog:
+        out+=['','## Verification backlog','',f'{len(backlog)} tasks were marked done before render-versus-photo checks were recorded, so nobody has confirmed the build matches their photos. '
+              'Check one: `node scripts/shoot_views.cjs <photos> --task=<id> --as=after`, compare each render with its photo, record the result in `data/photo_checks.json` '
+              '(a `differs` needs a new open task as `followUp`) and remove the task from `legacyUnchecked`.','']
+        out+=[f"- `{t['id']}` ({names[t['area']]}): "+', '.join(t['photos']) for t in backlog]
     out+=['','## By area','']
     for a in spec['areas']:
         here=[t for t in order if t['area']==a['id']]
@@ -214,7 +280,7 @@ def issue_body(t,spec,catalog):
     lines+=['- [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)',
             '- [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes',
             f"- [ ] `data/build_queue.json`: `{t['id']}` set to done",
-            '- [ ] Before/after renders from the photos\' cameras attached to the PR (`scripts/shoot_views.cjs`)']
+            '- [ ] Before/after renders from each photo\'s camera (`scripts/shoot_views.cjs <photos> --task=<id> --as=before|after`), each compared with its photo and recorded in `data/photo_checks.json` (matches, or differs with an open follow-up task); `--check` fails without them']
     if t.get('dependsOn'):lines+=['',f"Depends on: {', '.join('`'+d+'`' for d in t['dependsOn'])}"]
     return '\n'.join(lines)+'\n'
 
@@ -242,7 +308,7 @@ def mermaid(area,features):
     safe=lambda t:t.replace('"',"'")
     out=['```mermaid','graph LR',f'  A["{safe(area["name"])}"]']
     for i,f in enumerate(here):
-        out.append(f'  A --> F{i}["{safe(f["name"])}"]')
+        out.append(f'  A --> F{i}["{safe(f["name"])} · {f.get("verification","unchecked")}"]')
         for photo in f['photos']:
             node=re.sub(r'[^A-Za-z0-9_]','_',photo)
             out.append(f'  F{i} --> P{node}(["{Path(photo).stem}"])')
@@ -263,6 +329,7 @@ def row(e,depth):
     view=e['viewpoint'] or 'not reviewed'
     extra=f' **Note:** {e["note"]}' if e.get('note') else ''
     if e.get('subject'):extra=f' **Looks at:** {e["subject"]}.'+extra
+    if e.get('headingOff'):extra+=f' **Compass:** the subject is {e["headingOff"]}° from the phone heading; trust looksAt, not the heading.'
     cited=f' _Used by: {", ".join(e["citedBy"])}._' if e.get('citedBy') else ''
     return f'| {link(e,depth)} | {view} | {use} | {e["title"]}{extra}{cited} |'
 
@@ -270,7 +337,7 @@ def table(entries,depth,area=None):
     lines=['| Reference | Viewpoint | Use for | What it shows |','| --- | --- | --- | --- |']
     return lines+[row(e,depth) for e in sorted(entries,key=lambda e:rank(e,area))]
 
-def brief(area,entries,topics,spec,features=(),queue=()):
+def brief(area,entries,topics,spec,features=(),queue=(),checks=()):
     reviewed=[e for e in entries if e['areasBasis']=='reviewed']
     guessed=[e for e in entries if e['areasBasis']!='reviewed']
     out=[f'# {area["name"]}','',f'_Generated by `scripts/build_references.py`. Do not edit: change `data/areas.json` or `data/reference_tags.json` and rebuild._','',area['summary'],'']
@@ -288,7 +355,14 @@ def brief(area,entries,topics,spec,features=(),queue=()):
     tasks=sorted((t for t in queue if t['area']==area['id'] and t.get('status')!='done'),key=lambda t:(t['priority'],t['id']))
     if tasks:out+=['## Open build tasks','','From `data/build_queue.json`; issue bodies in `refs/issues/`.','','| Priority | Task | What | Status | Photos |','| --- | --- | --- | --- | --- |']+[task_line(t,1) for t in tasks]+['']
     if any(area['id'] in f['areas'] for f in features):
-        out+=['## Built from these photos','','Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.','']+mermaid(area,features)
+        out+=['## Built from these photos','','Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo\'s camera and compared.','']+mermaid(area,features)
+    ids={t['id'] for t in queue if t['area']==area['id']}
+    here=[c for c in checks if c.get('task') in ids]
+    if here:
+        out+=['## Photo checks','','Renders from each photo\'s camera compared with the photo (`data/photo_checks.json`).','','| Task | Photo | Result | Render | Notes |','| --- | --- | --- | --- | --- |']
+        out+=[f"| `{c['task']}` | [{Path(c['photo']).stem}](../../public/photos-ref/{c['photo']}) | **{c['result']}**{' → `'+c['followUp']+'`' if c.get('followUp') else ''} | "+(f"[after](../../{c['render']})" if c.get('render') else '')+(f" · [before](../../{c['before']})" if c.get('before') else '')+f" | {c.get('notes','')} |" for c in here]+['']
+    never=[t for t in queue if t['area']==area['id'] and t.get('status')=='done' and t.get('verification') in ('unchecked','legacy-unchecked')]
+    if never:out+=['**Built but never checked against its photos:** '+', '.join(f"`{t['id']}`" for t in never)+'. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.','']
     if reviewed:out+=['## Reviewed references','']+table(reviewed,1,area['id'])+['']
     if guessed:out+=['## Suggested by camera position, not yet reviewed','','The camera stood in or near this area. Check what the picture actually shows before relying on it.','']+table(guessed,1,area['id'])+['']
     return '\n'.join(out)
@@ -302,7 +376,7 @@ def topic_brief(topic,entries,spec):
     if not entries:out.append('No references reviewed for this topic yet.')
     return '\n'.join(out)
 
-def index(spec,catalog,problems):
+def index(spec,catalog,problems,queue=(),checks=()):
     out=['# Villacana references','','_Generated by `scripts/build_references.py`. Do not edit._','',
          'Start here. Pick the area you are working on and read its brief: it lists every photo, map and doc for that area, best first. Photos live in `public/photos-ref/` (public web copies) and in the private `villacana-reference` repo. Full-size originals stay in Google Drive.','',
          'Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOVER.md` explains how to take one. The full link graph (areas, photos, features, tasks) is [graph.json](graph.json).','',
@@ -315,6 +389,9 @@ def index(spec,catalog,problems):
         out.append(f'| {t["name"]} | {sum(t["id"] in e["useFor"] for e in catalog)} | [topics/{t["id"]}.md](topics/{t["id"]}.md) |')
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     out+=['',f'{len(catalog)} references: {reviewed} reviewed, {len(catalog)-reviewed} with areas suggested only from the camera position.','']
+    done=[t for t in queue if t.get('status')=='done'];results=[c.get('result') for c in checks]
+    out+=[f"Photo checks (`data/photo_checks.json`): {len(checks)} renders compared with their photos, {results.count('matches')} match, {results.count('differs')} differ. "
+          f"{sum(t.get('verification') in ('unchecked','legacy-unchecked') for t in done)} of {len(done)} done tasks have never been checked against their photos (QUEUE.md, verification backlog).",'']
     if problems:out+=['## Needs attention','']+[f'- {p}' for p in problems]+['']
     return '\n'.join(out)
 
@@ -351,30 +428,33 @@ def main():
     (refs/'catalog.json').write_text(json.dumps(catalog,indent=1,ensure_ascii=False)+'\n')
     features=model_features(catalog)
     queue=load_queue(spec,catalog,problems)
+    checks,legacy=load_checks(catalog,queue,features,problems)
+    for f in features:f['verification']=verdict([c for c in checks if c.get('feature')==f['id']])
     for a in spec['areas']:
-        (refs/'areas'/f'{a["id"]}.md').write_text(brief(a,[e for e in catalog if a['id'] in e['shows']],spec['topics'],spec,features,queue))
-    (refs/'QUEUE.md').write_text(queue_page(queue,spec))
+        (refs/'areas'/f'{a["id"]}.md').write_text(brief(a,[e for e in catalog if a['id'] in e['shows']],spec['topics'],spec,features,queue,checks))
+    (refs/'QUEUE.md').write_text(queue_page(queue,spec,legacy))
     issues=refs/'issues';issues.mkdir(exist_ok=True)
     for old in issues.glob('*.md'):old.unlink()
     for t in queue:
         if t.get('status')!='done':(issues/f"{t['id']}.md").write_text(issue_body(t,spec,catalog))
     nodes=[{'id':'area:'+a['id'],'kind':'area','name':a['name']} for a in spec['areas']]+[{'id':'topic:'+t['id'],'kind':'topic','name':t['name']} for t in spec['topics']]
     nodes+=[{'id':'ref:'+e['id'] if not e['id'].startswith('ref:') else e['id'],'kind':e['kind'],'name':e['title'],'path':e['path'],'viewpoint':e['viewpoint']} for e in catalog]
-    nodes+=[{'id':f['id'],'kind':'model-feature','name':f['name']} for f in features]
+    nodes+=[{'id':f['id'],'kind':'model-feature','name':f['name'],'verification':f['verification']} for f in features]
     key=lambda e:'ref:'+e['id'] if not e['id'].startswith('ref:') else e['id']
     edges=[{'from':key(e),'to':'area:'+a,'relation':'shows'} for e in catalog for a in e['shows']]
     edges+=[{'from':key(e),'to':'topic:'+t,'relation':'useful-for'} for e in catalog for t in e['useFor']]
     edges+=[{'from':f['id'],'to':p if p.startswith('ref:') else 'ref:'+p,'relation':'cites'} for f in features for p in f['photos']]
     edges+=[{'from':f['id'],'to':'area:'+a,'relation':'in-area'} for f in features for a in f['areas']]
+    edges+=[{'from':c['feature'],'to':c['photo'] if c['photo'].startswith('ref:') else 'ref:'+c['photo'],'relation':'checked-against','result':c['result'],'task':c['task'],'checked':c.get('checked'),**({'render':c['render']} if c.get('render') else {})} for c in checks]
     edges+=[{'from':key(e),'to':m,'relation':'looks-at','basis':e['looksAtBasis']} for e in catalog for m in e.get('looksAtFeatures',[])]
-    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open'),**({'issue':t['issue']} if t.get('issue') else {})} for t in queue]
+    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open'),'verification':t['verification'],**({'issue':t['issue']} if t.get('issue') else {})} for t in queue]
     edges+=[{'from':'task:'+t['id'],'to':'area:'+t['area'],'relation':'in-area'} for t in queue]
     edges+=[{'from':'task:'+t['id'],'to':p if p.startswith('ref:') else 'ref:'+p,'relation':'builds-from'} for t in queue for p in t['photos']]
     edges+=[{'from':'task:'+t['id'],'to':'task:'+d,'relation':'depends-on'} for t in queue for d in t.get('dependsOn',[])]
-    (refs/'graph.json').write_text(json.dumps({'about':'Generated by scripts/build_references.py. shows/useful-for come from reviewed tags; cites from feature evidence; in-area is the area most of a feature\'s cited photos show.','nodes':nodes,'edges':edges},indent=1,ensure_ascii=False)+'\n')
+    (refs/'graph.json').write_text(json.dumps({'about':'Generated by scripts/build_references.py. shows/useful-for come from reviewed tags; cites from feature evidence (an author used the photo, not proof it matches); checked-against from data/photo_checks.json (rendered from the photo\'s camera and compared, with its result); verification on features and tasks summarises those checks; in-area is the area most of a feature\'s cited photos show.','nodes':nodes,'edges':edges},indent=1,ensure_ascii=False)+'\n')
     for t in spec['topics']:
         (refs/'topics'/f'{t["id"]}.md').write_text(topic_brief(t,[e for e in catalog if t['id'] in e['useFor']],spec))
-    (refs/'README.md').write_text(index(spec,catalog,problems))
+    (refs/'README.md').write_text(index(spec,catalog,problems,queue,checks))
     if args.sheets:sheets(spec,catalog,args.reference)
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     print(f'{len(catalog)} references, {reviewed} reviewed, {len(problems)} problems')

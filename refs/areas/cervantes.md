@@ -44,93 +44,93 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["Calle Miguel de Cervantes"]
-  A --> F0["Cervantes east · white plumbago kerb"]
+  A --> F0["Cervantes east · white plumbago kerb · unchecked"]
   F0 --> PIMG_2356_jpg(["IMG_2356"])
   F0 --> PIMG_2360_jpg(["IMG_2360"])
-  A --> F1["Cervantes east south · closed brown curved-coping garden door"]
+  A --> F1["Cervantes east south · closed brown curved-coping garden door · unchecked"]
   F1 --> PIMG_2360_jpg(["IMG_2360"])
   F1 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F2["Cervantes east south · timber and cane pergola"]
+  A --> F2["Cervantes east south · timber and cane pergola · unchecked"]
   F2 --> PIMG_2360_jpg(["IMG_2360"])
   F2 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F3["Cervantes junction · raised garden door and private patio"]
+  A --> F3["Cervantes junction · raised garden door and private patio · unchecked"]
   F3 --> PIMG_2196_jpg(["IMG_2196"])
   F3 --> PIMG_2287_jpg(["IMG_2287"])
   F3 --> PIMG_2327_jpg(["IMG_2327"])
   F3 --> PIMG_2328_jpg(["IMG_2328"])
-  A --> F4["cervantes-junction-north-bed"]
+  A --> F4["cervantes-junction-north-bed · unchecked"]
   F4 --> PIMG_2196_jpg(["IMG_2196"])
   F4 --> PIMG_2327_jpg(["IMG_2327"])
   F4 --> PIMG_2328_jpg(["IMG_2328"])
   F4 --> PIMG_2355_jpg(["IMG_2355"])
-  A --> F5["cervantes-junction-north-patio"]
+  A --> F5["cervantes-junction-north-patio · unchecked"]
   F5 --> PIMG_2358_jpg(["IMG_2358"])
   F5 --> PIMG_2359_jpg(["IMG_2359"])
   F5 --> PIMG_2367_jpg(["IMG_2367"])
   F5 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F6["Cervantes north · east visible patio partition"]
+  A --> F6["Cervantes north · east visible patio partition · unchecked"]
   F6 --> PIMG_2359_jpg(["IMG_2359"])
   F6 --> PIMG_2368_jpg(["IMG_2368"])
   F6 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F7["Cervantes north · middle visible patio partition"]
+  A --> F7["Cervantes north · middle visible patio partition · unchecked"]
   F7 --> PIMG_2359_jpg(["IMG_2359"])
   F7 --> PIMG_2368_jpg(["IMG_2368"])
   F7 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F8["Cervantes north · west visible patio partition"]
+  A --> F8["Cervantes north · west visible patio partition · unchecked"]
   F8 --> PIMG_2359_jpg(["IMG_2359"])
   F8 --> PIMG_2368_jpg(["IMG_2368"])
   F8 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F9["Cervantes · north patio wall 1"]
+  A --> F9["Cervantes · north patio wall 1 · unchecked"]
   F9 --> PIMG_2263_jpg(["IMG_2263"])
   F9 --> PIMG_2264_jpg(["IMG_2264"])
   F9 --> PIMG_2265_jpg(["IMG_2265"])
   F9 --> PIMG_2273_jpg(["IMG_2273"])
   F9 --> PIMG_2274_jpg(["IMG_2274"])
   F9 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F10["Cervantes · north patio wall east of garden door"]
+  A --> F10["Cervantes · north patio wall east of garden door · unchecked"]
   F10 --> PIMG_2263_jpg(["IMG_2263"])
   F10 --> PIMG_2264_jpg(["IMG_2264"])
   F10 --> PIMG_2265_jpg(["IMG_2265"])
   F10 --> PIMG_2273_jpg(["IMG_2273"])
   F10 --> PIMG_2274_jpg(["IMG_2274"])
   F10 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F11["Cervantes · south patio wall 1"]
+  A --> F11["Cervantes · south patio wall 1 · unchecked"]
   F11 --> PIMG_2263_jpg(["IMG_2263"])
   F11 --> PIMG_2264_jpg(["IMG_2264"])
   F11 --> PIMG_2265_jpg(["IMG_2265"])
   F11 --> PIMG_2273_jpg(["IMG_2273"])
   F11 --> PIMG_2274_jpg(["IMG_2274"])
   F11 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F12["Cervantes · south patio wall 2"]
+  A --> F12["Cervantes · south patio wall 2 · unchecked"]
   F12 --> PIMG_2263_jpg(["IMG_2263"])
   F12 --> PIMG_2264_jpg(["IMG_2264"])
   F12 --> PIMG_2265_jpg(["IMG_2265"])
   F12 --> PIMG_2273_jpg(["IMG_2273"])
   F12 --> PIMG_2274_jpg(["IMG_2274"])
   F12 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F13["Cervantes · south patio wall 3"]
+  A --> F13["Cervantes · south patio wall 3 · unchecked"]
   F13 --> PIMG_2263_jpg(["IMG_2263"])
   F13 --> PIMG_2264_jpg(["IMG_2264"])
   F13 --> PIMG_2265_jpg(["IMG_2265"])
   F13 --> PIMG_2273_jpg(["IMG_2273"])
   F13 --> PIMG_2274_jpg(["IMG_2274"])
   F13 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F14["Elena south · sill at the second door, north along the same wall"]
+  A --> F14["Elena south · sill at the second door, north along the same wall · unchecked"]
   F14 --> PIMG_2261_jpg(["IMG_2261"])
   F14 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F15["Elena south · sill at the door at the end of the lawn path"]
+  A --> F15["Elena south · sill at the door at the end of the lawn path · unchecked"]
   F15 --> PIMG_2260_jpg(["IMG_2260"])
   F15 --> PIMG_2261_jpg(["IMG_2261"])
   F15 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F16["Elena east patios · white wall behind the plumbago bed on Cervantes"]
+  A --> F16["Elena east patios · white wall behind the plumbago bed on Cervantes · unchecked"]
   F16 --> PIMG_2197_jpg(["IMG_2197"])
   F16 --> PIMG_2356_jpg(["IMG_2356"])
-  A --> F17["Cervantes / Elena · front lawn 1"]
+  A --> F17["Cervantes / Elena · front lawn 1 · unchecked"]
   F17 --> PIMG_2260_jpg(["IMG_2260"])
   F17 --> PIMG_2261_jpg(["IMG_2261"])
   F17 --> PIMG_2263_jpg(["IMG_2263"])
@@ -138,37 +138,39 @@ graph LR
   F17 --> PIMG_2342_jpg(["IMG_2342"])
   F17 --> PIMG_2358_jpg(["IMG_2358"])
   F17 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F18["Cervantes / Elena · front lawn 2"]
+  A --> F18["Cervantes / Elena · front lawn 2 · unchecked"]
   F18 --> PIMG_2260_jpg(["IMG_2260"])
   F18 --> PIMG_2261_jpg(["IMG_2261"])
   F18 --> PIMG_2329_jpg(["IMG_2329"])
   F18 --> PIMG_2342_jpg(["IMG_2342"])
   F18 --> PIMG_2358_jpg(["IMG_2358"])
   F18 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F19["Cervantes / Elena · paved front enclosure"]
+  A --> F19["Cervantes / Elena · paved front enclosure · unchecked"]
   F19 --> PIMG_2260_jpg(["IMG_2260"])
   F19 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F20["Front-door approach between lawns"]
+  A --> F20["Front-door approach between lawns · unchecked"]
   F20 --> PIMG_2260_jpg(["IMG_2260"])
   F20 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F21["Cervantes · planting along low wall"]
+  A --> F21["Cervantes · planting along low wall · unchecked"]
   F21 --> PIMG_2273_jpg(["IMG_2273"])
   F21 --> PIMG_2274_jpg(["IMG_2274"])
-  A --> F22["Cervantes / Elena · clipped lawn tree 1"]
+  A --> F22["Cervantes / Elena · clipped lawn tree 1 · unchecked"]
   F22 --> PIMG_2329_jpg(["IMG_2329"])
   F22 --> PIMG_2342_jpg(["IMG_2342"])
   F22 --> PIMG_2358_jpg(["IMG_2358"])
   F22 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F23["Cervantes / Elena ramp"]
+  A --> F23["Cervantes / Elena ramp · unchecked"]
   F23 --> PIMG_2262_jpg(["IMG_2262"])
   F23 --> PIMG_2265_jpg(["IMG_2265"])
   F23 --> PIMG_2286_jpg(["IMG_2286"])
-  A --> F24["Cervantes / Elena · steps beside the ramp"]
+  A --> F24["Cervantes / Elena · steps beside the ramp · unchecked"]
   F24 --> PIMG_2262_jpg(["IMG_2262"])
   F24 --> PIMG_2286_jpg(["IMG_2286"])
   F24 --> PIMG_2328_jpg(["IMG_2328"])
   F24 --> PIMG_2355_jpg(["IMG_2355"])
 ```
+
+**Built but never checked against its photos:** `cervantes-east-south-patios`, `cervantes-door-steps`, `junction-lawns`, `cervantes-east-hedge`, `cervantes-north-patios`, `cervantes-steps-treads`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
@@ -192,7 +194,7 @@ graph LR
 | [IMG_2327.jpg](../../public/photos-ref/IMG_2327.jpg) | ground | levels, layout, facades | Cervantes at Elena: steps up to a door beside the lane _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed._ |
 | [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Looks at:** The steps beside the Cervantes ramp. **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2356.jpg](../../public/photos-ref/IMG_2356.jpg) | ground | layout, planting | Cervantes east of Elena: lane beside a plumbago hedge _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, elena_east_patios.json:elena-east-patios-cervantes-wall._ |
-| [IMG_2355.jpg](../../public/photos-ref/IMG_2355.jpg) | ground | levels | Cervantes/Elena steps from the junction **Looks at:** The steps beside the Cervantes ramp. _Used by: cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
+| [IMG_2355.jpg](../../public/photos-ref/IMG_2355.jpg) | ground | levels | Cervantes/Elena steps from the junction **Looks at:** The steps beside the Cervantes ramp. **Compass:** the subject is 93° from the phone heading; trust looksAt, not the heading. _Used by: cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |

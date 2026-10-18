@@ -301,6 +301,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:silvia-north",
+   "middle_pool_south_gate.json:middle-pool-south-gate",
    "street:eva"
   ],
   "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
@@ -797,7 +798,8 @@
    "street:elena-north",
    "elena_north.json:elena-north-garden-door-path"
   ],
-  "subject": "The first hedged bed and the lane north"
+  "subject": "The first hedged bed and the lane north",
+  "headingOff": 93
  },
  {
   "id": "IMG_2202.jpg",
@@ -1036,7 +1038,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [],
-  "subject": "The north pool garden below the roof"
+  "subject": "The north pool garden below the roof",
+  "headingOff": 60
  },
  {
   "id": "IMG_2208.jpg",
@@ -4400,24 +4403,27 @@
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1aMUPv4G01OMZqkfEOyJio7IB-crl0irZ/view?usp=drivesdk",
   "camera": {
-   "x": -126.1,
-   "z": 102.0,
-   "heading": 162,
-   "accuracy": 4.7,
+   "x": -129.5,
+   "z": 100.0,
+   "heading": 153,
+   "accuracy": 1.5,
    "altitude": 6.5,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
    "middle_pool_south_gate.json:middle-pool-south-gate"
   ],
   "looksAt": [
-   -124.2,
-   107.7
+   -127.3,
+   104.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:silvia-north"
-  ]
+   "street:silvia-north",
+   "middle_pool_south_gate.json:middle-pool-south-gate",
+   "street:eva"
+  ],
+  "subject": "south gate, double iron leaves and the planter to its right"
  },
  {
   "id": "IMG_2335.jpg",
@@ -4430,32 +4436,37 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
+   "layout",
    "materials",
    "facades"
   ],
   "note": null,
-  "observation": "Close view of a raised white rendered planter and wall with a framed panel of blue-and-white tiles, a white step in front and climbers above. Detail for the courtyard walls.",
+  "observation": "Close view of a raised white rendered planter and wall with a framed panel of blue-and-white tiles, a seat-height wall bench recessed into it with a low plinth in front, and climbers above. Detail for the courtyard walls.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1mj-khvMz4GfDmiiVUayMH1ygwcnkR3UQ/view?usp=drivesdk",
   "camera": {
-   "x": -125.6,
-   "z": 103.3,
-   "heading": 189,
-   "accuracy": 4.7,
+   "x": -128.3,
+   "z": 100.9,
+   "heading": 203,
+   "accuracy": 1.5,
    "altitude": 6.3,
-   "trust": "phone location"
+   "trust": "checked against photo content"
   },
   "citedBy": [
    "middle_pool_south_gate.json:middle-pool-south-gate"
   ],
   "looksAt": [
-   -126.5,
-   109.2
+   -129.2,
+   103.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:silvia-north"
-  ]
+   "middle_pool_south_gate.json:middle-pool-south-gate",
+   "street:silvia-north",
+   "street:eva",
+   "raised_terraces.json:middle-pool-oleander-bed"
+  ],
+  "subject": "wall bench and blue/yellow tile panel in the west planter, inside the south gate"
  },
  {
   "id": "IMG_2336.jpg",
@@ -5116,7 +5127,8 @@
    "ramp:cervantes-elena-ramp",
    "steps:cervantes-elena-steps"
   ],
-  "subject": "The steps beside the Cervantes ramp"
+  "subject": "The steps beside the Cervantes ramp",
+  "headingOff": 93
  },
  {
   "id": "IMG_2356.jpg",
@@ -5336,7 +5348,8 @@
   "looksAtFeatures": [
    "elena_gated_entry.json:elena-gated-entry"
   ],
-  "subject": "The gated tiled entry west of the covered walkway"
+  "subject": "The gated tiled entry west of the covered walkway",
+  "headingOff": 65
  },
  {
   "id": "IMG_2362.jpg",

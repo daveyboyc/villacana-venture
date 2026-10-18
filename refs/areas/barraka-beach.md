@@ -32,35 +32,37 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["Barraka and the beach"]
-  A --> F0["Villacana beach"]
+  A --> F0["Villacana beach · unchecked"]
   F0 --> PIMG_2285_jpg(["IMG_2285"])
   F0 --> PIMG_2298_jpg(["IMG_2298"])
   F0 --> PIMG_2299_jpg(["IMG_2299"])
   F0 --> PIMG_2300_jpg(["IMG_2300"])
-  A --> F1["Thatched parasols and wooden cream-cushion loungers"]
+  A --> F1["Thatched parasols and wooden cream-cushion loungers · unchecked"]
   F1 --> PIMG_2223_jpg(["IMG_2223"])
   F1 --> PIMG_2225_jpg(["IMG_2225"])
   F1 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F2["Barraka weathered timber boardwalk"]
+  A --> F2["Barraka weathered timber boardwalk · unchecked"]
   F2 --> PIMG_2223_jpg(["IMG_2223"])
   F2 --> PIMG_2225_jpg(["IMG_2225"])
   F2 --> PIMG_2346_jpg(["IMG_2346"])
   F2 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F3["BARRAKA BEACH two-tier white planted sign"]
+  A --> F3["BARRAKA BEACH two-tier white planted sign · unchecked"]
   F3 --> PIMG_2346_jpg(["IMG_2346"])
   F3 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F4["6465801UF1366N_part5"]
+  A --> F4["6465801UF1366N_part5 · unchecked"]
   F4 --> PIMG_2346_jpg(["IMG_2346"])
   F4 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F5["6465801UF1366N_part6"]
+  A --> F5["6465801UF1366N_part6 · unchecked"]
   F5 --> PIMG_2346_jpg(["IMG_2346"])
   F5 --> PIMG_2347_jpg(["IMG_2347"])
 ```
+
+**Built but never checked against its photos:** `barraka-boardwalk`, `shoreline-check`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
