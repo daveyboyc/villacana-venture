@@ -469,7 +469,14 @@
   "useFor": [
    "materials"
   ],
-  "title": "Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk"
+  "title": "Barraka Beach barbecue boat beside the timber boardwalk",
+  "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
+  "looksAt": [
+   37,
+   126
+  ],
+  "locationBasis": "Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.",
+  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish."
  },
  "IMG_2224.jpg": {
   "shows": [
@@ -1931,7 +1938,15 @@
   "useFor": [
    "signage",
    "materials"
-  ]
+  ],
+  "title": "BARRAKA BEACH sign, barbecue boat and boardwalk",
+  "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
+  "looksAt": [
+   37,
+   126
+  ],
+  "locationBasis": "Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.",
+  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish."
  },
  "IMG_2347.jpg": {
   "shows": [
@@ -1942,7 +1957,15 @@
    "signage",
    "materials",
    "layout"
-  ]
+  ],
+  "title": "Barraka barbecue boat, planted sign and boardwalk towards the sea",
+  "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
+  "looksAt": [
+   37,
+   126
+  ],
+  "locationBasis": "Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.",
+  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish."
  },
  "IMG_2349.jpg": {
   "shows": [

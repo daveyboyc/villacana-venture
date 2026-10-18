@@ -49,12 +49,21 @@ model. Building centroids within 45 m and 35 degrees of the camera heading are
 possible viewing-context candidates, not proven visible objects; occlusion is not
 computed. Legacy headings can be approximate and carry an unknown-calibration note.
 
-The reference map's **Photo evidence** control turns photo pins on; selecting a photo displays its uncertainty circle and
-suggested street links. Unselected direction wedges are hidden to keep it readable. Blue circles have one compatible suggested map context;
-amber ones need review. Dashed circles have no reported uncertainty: their radius
-is only the review heuristic. Opening a photo shows candidate areas, review reasons
-and source-citation counts; closing it leaves the suggested street links highlighted.
-Photo labels retain their existing local-save/export behaviour.
+The canonical app root opens **Map & photos**. Photo IDs are on by default;
+zoom reveals overlapping IDs, and the list always includes every catalogue entry.
+Search by ID, area or visible subject. Selecting a photo shows its full label,
+image, camera uncertainty and reviewed look-at context. Dots locate cameras;
+pink crosses locate reviewed subjects approximately. A dashed radius without
+reported accuracy is a 10 m search heuristic. **Photo evidence** under Layers
+controls this selected-photo context. Private and unplaced sources stay listed;
+private pixels are never copied to the public website.
+
+**Copy photo link** gives a stable `?view=map&photo=<ID>` URL. **Copy agent
+reference** supplies the source path, published caption, local draft caption if
+any, camera-versus-subject distinction, uncertainty, model citations and recorded
+checks. The same records are in `public/reference-index.json`; agents can run
+`python3 scripts/find_reference.py boat` or use `--area north-pool --json`.
+Keep earlier manual reviews separate from absent modern check records.
 
 ## Repeat for a new downloaded batch
 
@@ -152,18 +161,19 @@ No street, building, wall, ramp or coastline geometry is changed in this photo p
 
 ## Reviews from the photo map
 
-The photo map is part of the site: `photos.html` (linked from the reference map
-and the walk), built from `public/photo-map.json` (`scripts/build_photo_map.py`,
-run by the site build; `--thumbs` makes thumbnails for new photos in
-`public/photos-ref/thumbs/`). On the live site checks are kept in the browser and
-"Send checks" copies them as text to paste to Claude; save that text to a file and
-pass it to `apply_photo_reviews.py`. Opened as the claude.ai artifact, the same
-page saves to the artifact's shared store instead.
+Photo checks live in the canonical app's selected-photo card, under **Label and
+camera review**. `photos.html` redirects there. The page uses the detailed map;
+there is no separate simplified photo-map renderer. `build_photo_map.py --thumbs`
+still maintains public thumbnails and the legacy data export, while
+`build_references.py` generates the shared reference index. Reviews retain
+`villacana-photo-checks-v1` in browser storage. **Send checks** copies the same
+importable review records; it does not publish a correction. Older exports from
+the artifact review store remain accepted by `apply_photo_reviews.py`.
 
 Dave checks pins on the photo map page. For each
 photo he can mark the position right, move the pin (where he stood, and
 optionally where it points), mark it unsure, and add a note. The page keeps
-these in its `reviews` store. To apply a batch:
+these in browser storage, using the original per-photo keys. To apply a batch:
 
 1. Export the store (Claude: `ArtifactData` `list` of `reviews` with `out_dir`),
    or save the pasted "Send checks" text to a file.

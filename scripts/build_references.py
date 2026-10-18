@@ -191,6 +191,16 @@ def load_queue(spec,catalog,problems):
             if d not in ids:problems.append(f"task {t['id']}: depends on unknown task {d}")
     return queue
 
+def task_verification(task,checks,legacy=()):
+    """Tooling without model-photo inputs is not a photographic claim or a backlog item."""
+    if task.get('kind')=='tooling' and not task['photos']:
+        return 'not-applicable (tooling)'
+    related=[c for c in checks if c.get('task')==task['id']]
+    checked={c.get('photo') for c in related}
+    if any(p not in checked for p in task['photos']):
+        return 'legacy-unchecked' if task['id'] in legacy else 'unchecked'
+    return verdict(related)
+
 def load_checks(catalog,queue,features,problems):
     """Render-versus-photo checks from data/photo_checks.json, validated against the queue, features and tags."""
     spec=load(ROOT/'data/photo_checks.json',{'checks':[],'legacyUnchecked':[]})
@@ -212,7 +222,7 @@ def load_checks(catalog,queue,features,problems):
     checked={(c.get('task'),c.get('photo')) for c in checks}
     for t in queue:
         missing=[p for p in t['photos'] if (t['id'],p) not in checked]
-        t['verification']=verdict([c for c in checks if c.get('task')==t['id']]) if not missing else ('legacy-unchecked' if t['id'] in legacy else 'unchecked')
+        t['verification']=task_verification(t,checks,legacy)
         if t.get('status')!='done':continue
         if t['id'] in legacy:
             if not missing:problems.append(f"legacyUnchecked {t['id']}: every photo is checked now, remove it from the list")
@@ -388,6 +398,7 @@ def index(spec,catalog,problems,queue=(),checks=()):
     out+=['','| Topic | Reviewed references | Brief |','| --- | --- | --- |']
     for t in spec['topics']:
         out.append(f'| {t["name"]} | {sum(t["id"] in e["useFor"] for e in catalog)} | [topics/{t["id"]}.md](topics/{t["id"]}.md) |')
+    out+=['','## Find one reference','','Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including private and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; private pixels stay in the private repo.','']
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     out+=['',f'{len(catalog)} references: {reviewed} reviewed, {len(catalog)-reviewed} with areas suggested only from the camera position.','']
     done=[t for t in queue if t.get('status')=='done'];results=[c.get('result') for c in checks]
@@ -417,6 +428,38 @@ def sheets(spec,catalog,reference:Path):
             mark='' if e['areasBasis']=='reviewed' else ' ?'
             draw.text((x+4,y+cell+2),f'{i+1}. {Path(e["id"]).stem[:24]}{mark}',fill='black',font=font)
         sheet.save(out/f'{a["id"]}.jpg',quality=80)
+
+def public_reference_index(catalog,features,checks,spec):
+    """One published discovery index for the map and agents; private pixels stay private."""
+    from urllib.parse import quote
+    tags=load(ROOT/'data/reference_tags.json',{})
+    positions=load(ROOT/'data/photo_positions.json',{})
+    assignments={a['file']:a for a in load(ROOT/'public/photos-ref/assignments.json',{'photos':[]})['photos']}
+    skeleton=load(ROOT/'public/map/skeleton.json')
+    entries=[]
+    for e in catalog:
+        private=e['id'].startswith('ref:')
+        source=e['path']
+        entry={
+            'id':e['id'], 'label':e['title'], 'kind':e['kind'], 'private':private,
+            'sourcePath':source, 'sourceUrl':('https://github.com/daveyboyc/villacana-reference/blob/main/'+quote(e['id'][4:],safe='/') if private else None),
+            'image':None if private else e['path'].removeprefix('public/'),
+            'thumbnail':None if private else 'photos-ref/thumbs/'+e['id'],
+            'areas':e['shows'], 'viewpoint':e.get('viewpoint'), 'useFor':e['useFor'],
+            'observation':e.get('observation') or '', 'note':e.get('note') or '',
+            'camera':e.get('camera'), 'subject':e.get('subject'),
+            'looksAt':e.get('looksAt'), 'looksAtBasis':e.get('looksAtBasis'),
+            'locationBasis':tags.get(e['id'],{}).get('locationBasis') or positions.get(e['id'].removesuffix('.jpg')+'.HEIC',{}).get('locationBasis'),
+            'association':assignments.get(e['id']),
+            'originalUrl':e.get('originalUrl'),
+            'mapUrl':'./?view=map&photo='+quote(e['id'],safe=''),
+            'features':[{'id':f['id'],'name':f['name'],'verification':f['verification']} for f in features if e['id'] in f['photos']],
+            'checks':[c for c in checks if c['photo']==e['id']]
+        }
+        entries.append(entry)
+    return {'version':1,'frame':{'origin':skeleton['origin'],'viewRotation':skeleton['viewRotation'],'axes':'+x east, +z south, metres'},
+            'about':'Generated by build_references.py. Camera position is not subject position; citations and checks are distinct. Private images are linked to their private repository, never copied here.',
+            'areas':[{'id':a['id'],'name':a['name']} for a in spec['areas']], 'references':entries}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -456,6 +499,7 @@ def main():
     for t in spec['topics']:
         (refs/'topics'/f'{t["id"]}.md').write_text(topic_brief(t,[e for e in catalog if t['id'] in e['useFor']],spec))
     (refs/'README.md').write_text(index(spec,catalog,problems,queue,checks))
+    (ROOT/'public/reference-index.json').write_text(json.dumps(public_reference_index(catalog,features,checks,spec),indent=1,ensure_ascii=False)+'\n')
     if args.sheets:sheets(spec,catalog,args.reference)
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     print(f'{len(catalog)} references, {reviewed} reviewed, {len(problems)} problems')

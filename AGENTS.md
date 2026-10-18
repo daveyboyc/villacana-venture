@@ -31,6 +31,14 @@ definition of done.
 
 ## Reference photos and maps
 
+Use the canonical app root (`/?view=map`) for maps and photos, not separate
+worlds. Find sources by ID/place/visible subject with
+`python3 scripts/find_reference.py <query> [--area <id>] [--json]` or search
+`public/reference-index.json`. It includes private and unplaced references and
+stable `?view=map&photo=<ID>` links. Open full images at the returned source path;
+a thumbnail, citation or camera pin is not proof of the pictured location.
+Do not revive the retired OSM default or simplified photo-map renderer.
+
 All reference material is catalogued by area. Before changing anything in an
 area, read `refs/README.md`, then that area's brief in `refs/areas/<id>.md`, and
 look at its contact sheet in the private `villacana-reference` repo

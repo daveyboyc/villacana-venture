@@ -1,91 +1,81 @@
-# Villacana Roam
+# Villacana
 
-A small third-person stroll through **Villacana**, the beach urbanization in Estepona, on the Costa del Sol. The lanes, the shoreline, the pools, and the traced houses come from the real map. You walk, run, and jump, with the camera over your shoulder.
-
-This is an original prototype. It is not affiliated with Nintendo.
-
-## Run it
+One resort map with **Map & photos**, **Overview** and **Walk** modes.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:4731`.
+Open `http://localhost:4731/`. The default map shows the detailed registry layout
+and photo IDs. Overview and Walk use the same current geometry across all four
+pool areas and the seafront. `blueprint.html` and `photos.html` redirect here and
+preserve selected-photo links. `slice.html` is the underlying 3D renderer.
 
-| Action | Control |
-| --- | --- |
-| Walk | WASD or arrow keys |
-| Run | Shift |
-| Jump | Space |
-| Look | Drag the mouse, or hold Q and R |
-| Zoom | Mouse wheel |
-| Read a photo frame | E, or the Look button when you are beside one |
-| About this map | H, or the button in the corner |
-| Phone | Stick on the left, drag the right side to look, Jump and Run |
+## Find a reference
 
-On a phone the same dev server works if you open it from another device on the network.
+Search an ID (`IMG_2206`), place (`north-pool`) or subject (`boat`) in **Map & photos**.
+Choose a result to read its label, open the full photo, see camera uncertainty and
+reviewed subject context, or **Copy agent reference**. **Copy photo link** reopens
+that specific source. Overlapping pin labels appear as you zoom; all references
+remain in the searchable list. Private sources link to the private repository;
+unplaced references stay searchable without invented coordinates.
 
-## How the prototype is put together
-
-The playable place is the rectangle of Villacana between the beach and the inland lanes, about 800 by 700 metres, centred near Calle de Picasso.
-
-1. **The map.** `data/villacana.osm.gz` is an OpenStreetMap extract (© OpenStreetMap contributors, [ODbL](https://opendatacommons.org/licenses/odbl/)). `scripts/build_map.py` projects it into local metres and writes `public/map/villacana.json`.
-2. **What is real.** The coastline, Playa del Sol, named streets, parks, pitches, and building footprints that exist in OpenStreetMap are kept. The five pool outlines are traced from a georeferenced aerial photo of the Villacana block, using the same metre grid as the streets, so a street corner on the photo is the same point in the game. The base of the resort is the aerial photo itself (`scripts/build_ground.py`). It uses the same metre origin as the streets, and it checks that those streets land on the paved pixels. Invented houses are not drawn on top of that photo. `scripts/trace_pools.py` traces the pools on that same grid. OpenStreetMap's own pool outlines for this rectangle are elsewhere, so they are not used.
-3. **What is filled in.** Most of the white terraces were never drawn house by house. Along residential lanes that are empty, the script places ordinary low houses set back from the curb, the kind of building the urbanization is full of. Palms and bougainvillea are planted along those lanes for the same reason. The about panel in the game gives the counts.
-4. **The walk.** A Vite app and Three.js turn that JSON into a lit neighbourhood: sand, sea, roads, pools, and roofs. A character walks it in third person.
-5. **The photos.** Frames stand at real spots (Playa del Sol, Barraca, Calle de Picasso, Gregorio, the middle of Villacana). Two of them use Creative Commons photographs of the Estepona coast, which is the same shore. The others are empty on purpose, so your own pictures can go in.
-
-## Add your own photos
-
-Edit `public/photos/album.json`. A frame needs a title, a latitude, a longitude, and optionally an image in `public/photos/`:
-
-```json
-{
-  "id": "pool",
-  "title": "The long pool",
-  "lat": 36.4555,
-  "lon": -5.0505,
-  "image": "/photos/pool.jpg",
-  "caption": "Saturday morning, before anyone else is in.",
-  "credit": "Photo by you."
-}
-```
-
-Leave `"image": null` for an empty frame. Refresh the page. You do not need to rebuild the map.
-
-On `blueprint.html`, tap a photo pin, enter a label, then tap **Save** or press
-**Enter/Done**. The photo stays open and confirms whether the label was saved on
-this browser. Reopening the photo or refreshing restores saved labels. If browser
-storage is unavailable, the message explains that the label only lasts for this
-visit; use **Send changes** before leaving.
-
-Labels do not automatically update GitHub or sync between devices. **Send changes**
-shares or copies the edits so they can be applied with `scripts/apply_map_edits.py`
-and published in `public/photos-ref/labels.json`.
-
-The two pictures already in the game:
-
-- Playa del Sol uses [Estepona beach](https://commons.wikimedia.org/wiki/File:Estepona_beach.jpg) by Jay Cross, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
-- Barraca uses [Playa del Cristo in winter](https://commons.wikimedia.org/wiki/File:Playa_del_cristo_winter_-_Estepona_beach_(cropped).jpg) by Turista Inglesa, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). That beach is further along the same coast. Replace it with your own picture of Barraca when you have one.
-
-## Rebuild the map
-
-The JSON in the repo is already built. To regenerate it from a fresh extract:
+For an agent working in the repository:
 
 ```bash
-curl -A "VillacanaRoam/1.0" -o data/villacana.osm \
-  "https://api.openstreetmap.org/api/0.6/map?bbox=-5.0605,36.4495,-5.0425,36.4635"
-gzip -f data/villacana.osm
-npm run map
+python3 scripts/find_reference.py boat
+python3 scripts/find_reference.py --area north-pool
+python3 scripts/find_reference.py IMG_2206 --json
 ```
 
-## What this slice leaves out
+Read [AGENTS.md](AGENTS.md), [docs/HANDOVER.md](docs/HANDOVER.md) and the area's
+brief in [refs/README.md](refs/README.md). Inspect full images before editing.
+The complete generated discovery index is `public/reference-index.json`.
+Private imagery stays in `daveyboyc/villacana-reference`.
 
-Interiors, cars, a true height map, and your own photographs of each street. The next useful step is to drop those photographs into the frames, and, if you want the houses to match a specific block, to trace any missing footprints in OpenStreetMap and rebuild the map.
+## Sources and limits
 
-Production builds require Python 3.10+ to regenerate photo associations (standard library only). Importing original photos additionally uses Pillow and pillow-heif.
+Buildings and pools mainly use Spanish registry footprints. The ground aerial is
+Esri imagery georeferenced by `public/map/ground.json`. Checked streets and local
+features share metre coordinates across the SVG map, 3D and collision. The old
+OSM prototype data remains historical input; it no longer supplies a separate
+published default world. This is not a direct Google satellite reconstruction.
 
-Photo placement and the evidence graph: see [PHOTO_MAP_WORKFLOW.md](docs/PHOTO_MAP_WORKFLOW.md). Use **Photo evidence** on the reference map to inspect camera uncertainty and proposed street associations.
+Photo GPS locates the camera, not the subject. Pink crosses are reviewed look-at
+landmarks, with stated uncertainty, not traced footprints. Citations show which
+sources informed a feature; recorded checks and earlier manual reviews must be
+read separately. Software tests do not prove real-world accuracy.
 
-Structural accuracy comes first: [LAYOUT_ACCURACY.md](docs/LAYOUT_ACCURACY.md). The reference map and 3D scene open in a clear Layout view; decorative detail is optional.
+See [docs/LAYOUT_ACCURACY.md](docs/LAYOUT_ACCURACY.md),
+[docs/PHOTO_MAP_WORKFLOW.md](docs/PHOTO_MAP_WORKFLOW.md) and
+[docs/UNIFIED_REFERENCE_MAP.md](docs/UNIFIED_REFERENCE_MAP.md).
+
+## Controls and local edits
+
+Drag/pinch or use +/−, rotate, North and Fit. In Walk, use WASD/arrows or touch
+controls; Shift runs and Space jumps. The main navigation changes mode.
+
+Map labels/references, draft photo labels and camera reviews persist in this
+browser. **Export references**, **Send changes** and **Send checks** share the
+corresponding edits; they do not publish automatically or sync between devices.
+Existing browser storage keys are retained. Use `scripts/apply_map_edits.py` and
+`scripts/apply_photo_reviews.py` to apply exported proposals after source review.
+
+## Checks
+
+```bash
+python3 scripts/build_references.py --check
+python3 scripts/test_photo_assignment.py
+npm run build
+PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium node scripts/test_photo_map_browser.cjs
+```
+
+See the handover for the complete geometry and browser suite.
+
+Historical photo-frame assets retain their source credits in
+`public/photos/album.json`: Jay Cross's Estepona beach (CC BY 2.0) and Turista
+Inglesa's Playa del Cristo image (CC BY-SA 4.0). These are legacy prototype assets,
+not location evidence for the current reference map.
+
+The historical OpenStreetMap extract is © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), [ODbL](https://opendatacommons.org/licenses/odbl/).

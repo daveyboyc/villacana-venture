@@ -1,0 +1,37 @@
+# Barraka sand-filled barbecue boat: establish placement and add shared geometry
+
+Task `barraka-barbecue-boat` · area **Barraka and the beach** · priority P2 · structure
+
+## Read first
+
+- `AGENTS.md`, `docs/HANDOVER.md`
+- `refs/areas/barraka-beach.md` and the contact sheet `villacana-reference/contact-sheets/barraka-beach.jpg`
+- docs: `docs/SEAFRONT.md`, `docs/LEVELS.md`
+- data: `data/levels_survey.json`
+- src: `src/seafront.ts`, `src/seaside.ts`
+
+## Photos to build from
+
+- `public/photos-ref/IMG_2223.jpg`: Barraka Beach barbecue boat beside the timber boardwalk (ground — pin ±3.5 m; looks at Sand-filled barbecue boat beside the Barraka boardwalk)
+- `public/photos-ref/IMG_2346.jpg`: BARRAKA BEACH sign, barbecue boat and boardwalk (ground — pin ±4.2 m; looks at Sand-filled barbecue boat beside the Barraka boardwalk)
+- `public/photos-ref/IMG_2347.jpg`: Barraka barbecue boat, planted sign and boardwalk towards the sea (ground — pin ±4.2 m; looks at Sand-filled barbecue boat beside the Barraka boardwalk)
+
+## Build
+
+Model the confirmed sand-filled barbecue boat visible on the left of the boardwalk looking seaward. First measure its dimensions and placement relative to the independently aerial-anchored boardwalk and sign; add shared map, 3D and collision geometry. The unified map and reference index now locate all three sources and an approximate subject landmark.
+
+## Do not
+
+Do not place the boat at the inland phone GPS pins, call it a planter, or interpret the approximate look-at [37,126] as a surveyed footprint. Keep the boardwalk clear. No smoke or seasonal arrangement extrapolated.
+
+## Done when
+
+- [ ] Audit before/after against full IMG_2223/2346/2347, with camera mismatch explicitly recorded
+- [ ] One hull outline shared by map, 3D and collision; dimensions, uncertainty and evidence documented
+- [ ] Relevant geometry, route, reference, build and browser checks pass
+- [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)
+- [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes
+- [ ] `data/build_queue.json`: `barraka-barbecue-boat` set to done
+- [ ] Before/after renders from each photo's camera (`scripts/shoot_views.cjs <photos> --task=<id> --as=before|after`), each compared with its photo and recorded in `data/photo_checks.json` (matches, or differs with an open follow-up task); `--check` fails without them
+
+Depends on: `unified-reference-map`

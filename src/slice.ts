@@ -44,6 +44,11 @@ import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
+const embedded = new URLSearchParams(location.search).get("embedded") === "1";
+if(embedded) {
+  document.body.classList.add("embedded");
+  const style=document.createElement("style");style.textContent="body.embedded #areas,body.embedded #back,body.embedded #title,body.embedded #overview {display:none!important}";document.head.append(style);
+}
 const layoutOnly=new URLSearchParams(location.search).get("details")!=="1";
 const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
 /** How far the walkable area reaches from its centre. Grows to take in every pool asked for. */
@@ -253,7 +258,8 @@ async function boot(): Promise<void> {
     const turn = skeleton.viewRotation * Math.PI / 180;
     return [v[0] * Math.cos(turn) + v[1] * Math.sin(turn), -v[0] * Math.sin(turn) + v[1] * Math.cos(turn)];
   };
-  const at = spot("at"), look = spot("look");
+  const at = spot("at"), look = spot("look"), initialFocus=spot("focus");
+  let focusPending=!!initialFocus;
   if (at) { spawn[0] = at[0]; spawn[1] = at[1]; }
   if (look) { start.x = look[0]; start.z = look[1]; }
   player.place(spawn[0], spawn[1], 0);
@@ -277,7 +283,7 @@ async function boot(): Promise<void> {
   let farthest = RADIUS * 2.6 * Math.max(1,innerHeight/innerWidth);
   window.addEventListener("resize",()=>{const previous=farthest;farthest=RADIUS*2.6*Math.max(1,innerHeight/innerWidth);if(overview)distance*=farthest/previous;});
   let wasOverview = false;
-  const overviewCentre=new THREE.Vector3(centre.x,0.5,centre.z);
+  const overviewCentre=new THREE.Vector3(initialFocus?.[0]??centre.x,0.5,initialFocus?.[1]??centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
     project:(x,z)=>{const p=new THREE.Vector3(x,liveGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
@@ -327,6 +333,33 @@ async function boot(): Promise<void> {
   action("#alignment-platform",()=>{if(platform)focus(platform.ring);});
   action("#alignment-coast",()=>{if(skeleton.seafront)focus(skeleton.seafront.coast);});
   document.querySelector("#overview")!.textContent=overview?"Walk":"Overview";
+  // Photo labels share the canonical index and always reopen the same selected source.
+  const photoLabels=document.createElement("div");photoLabels.className="reference-layer photo-overview-labels";document.body.append(photoLabels);
+  const photoButtons:{button:HTMLButtonElement;x:number;z:number;selected:boolean}[]=[];
+  const selectedPhoto=new URLSearchParams(location.search).get("photo");
+  void fetch(asset("/reference-index.json")).then(r=>r.json()).then((index:{references:{id:string;label:string;camera?:{x:number;z:number}}[]})=>{
+    for(const r of index.references) {
+      if(!r.camera)continue;
+      const button=document.createElement("button");button.hidden=true;button.className="reference-pin";button.textContent=r.id.replace(/\.jpg$/,"");button.title=`${r.id} · ${r.label} · camera location`;
+      button.dataset.photoId=r.id;
+      button.addEventListener("pointerdown",e=>e.stopPropagation());
+      button.addEventListener("click",()=>{if(embedded)parent.postMessage({type:"villacana-map",photo:r.id},location.origin);else location.href=asset("/")+`?view=map&photo=${encodeURIComponent(r.id)}`;});
+      photoLabels.append(button);photoButtons.push({button,x:r.camera.x,z:r.camera.z,selected:r.id===selectedPhoto});
+    }
+    photoButtons.sort((a,b)=>Number(b.selected)-Number(a.selected));
+  });
+  const photoToggle=document.createElement("button");photoToggle.id="overview-photo-labels";photoToggle.textContent="Photo labels";photoToggle.setAttribute("aria-pressed","true");document.querySelector("#overview-advanced")!.append(photoToggle);
+  let showPhotoLabels=true;photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
+  const updatePhotoLabels=()=>{
+    photoLabels.hidden=!overview||!showPhotoLabels;
+    if(!overview||!showPhotoLabels)return;
+    const boxes:number[][]=[];
+    for(const p of photoButtons) {
+      const v=new THREE.Vector3(p.x,liveGroundY(p.x,p.z)+1,p.z).project(camera),x=(v.x+1)*innerWidth/2,y=(1-v.y)*innerHeight/2;
+      const box=[x,y,x+90,y+27],fits=v.z>-1&&v.z<1&&x>0&&x<innerWidth-95&&y>50&&y<innerHeight-155&&(!boxes.some(b=>box[0]<b[2]&&box[2]>b[0]&&box[1]<b[3]&&box[3]>b[1])||p.selected);
+      p.button.hidden=!fits;if(fits){p.button.style.left=`${x}px`;p.button.style.top=`${y}px`;boxes.push(box);}
+    }
+  };
   const fog = scene.fog as THREE.Fog;
   const target = new THREE.Vector3();
   const clock = new THREE.Clock();
@@ -338,6 +371,7 @@ async function boot(): Promise<void> {
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
   renderer.setAnimationLoop(() => {
     const dt = Math.min(clock.getDelta(), 0.05);
+    if(embedded && parent.document.body.dataset.appView === "map")return;
     readKeys();
     const currentRoute=document.querySelector<HTMLElement>("#current-route")!;
     const nearbyNames=routes.map(r=>({name:r.name,d:Math.min(...r.points.slice(1).map((b,i)=>closestOnSegment(player.x,player.z,...r.points[i],...b).d)),width:r.width})).filter(r=>r.d<r.width/2+.7).sort((a,b)=>a.d-b.d);
@@ -360,7 +394,7 @@ async function boot(): Promise<void> {
       backdrop.visible=!overview&&!layoutOnly;
       document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
       if(overview)camYaw=0;
-      distance = overview ? farthest : 6;
+      distance = overview ? (focusPending ? Math.min(110,farthest) : farthest) : 6;focusPending=false;
       pitch = overview ? Math.PI/2 : 0.45;
     }
     pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, overview ? Math.PI/2 : 1.45);
@@ -392,7 +426,7 @@ async function boot(): Promise<void> {
     document.querySelector("#overview-bearing")!.textContent=`${bearing}°`;
     controls.dataset.distance=distance.toFixed(2);controls.dataset.bearing=String(bearing);
     controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
-    references.update();
+    references.update();updatePhotoLabels();
     renderer.render(scene, camera);
 
     input.jump = false;
