@@ -33,7 +33,7 @@ const path = require("node:path");
     const [
       { Player },
       { Solids, CoastField },
-      { barrierRings, referenceGroundHeight },
+      { barrierRings, referenceGroundHeight, addBoundaryReference },
       { cervantesPatioWallRings },
       { poolGroundY, poolTerraceRing, POOL_TERRACE_ID },
       { siteY, drapeScene, refine },
@@ -270,7 +270,7 @@ const path = require("node:path");
       for (const sill of d.sills) {
         const mid = near(sill.door, sill.outward, sill.depth / 2), front = near(sill.door, sill.outward, sill.depth + 0.03), out = near(sill.door, sill.outward, sill.depth + 0.6);
         if (Math.abs(world.groundHeight(...mid) - world.groundHeight(...front) - sill.rise) > .015) throw Error("Sill " + sill.id + " is not one riser above the ground in front");
-        if (Math.abs(top(mid, "-tread") - (sills.ELENA_SURFACE - 0.06)) > .01) throw Error("Sill " + sill.id + " visible tread disagrees with player ground");
+        if (Math.abs(top(mid, "-tread")) > .01) throw Error("Sill " + sill.id + " visible tread disagrees with player ground");
         walk([out, near(sill.door, sill.outward, 0.05), out]);
       }
       const k = d.footpathKerb, band = (p) => sills.kerbPoint(...p);
@@ -280,14 +280,53 @@ const path = require("node:path");
         walk([off, on, off]);
       }
       const visible = [[1.25, 2.5], [10, 3.0], [22, 3.0]].map(([sa, ca]) => top(band([sa, ca]), "-path"));
-      if (Math.max(...visible) - Math.min(...visible) > .01) throw Error("Dalí footpath tiles do not follow its player ground");
+      if (visible.some(delta=>Math.abs(delta)>.01)) throw Error("Dalí footpath tiles do not follow its player ground");
       const a = d.approach, arch = sills.approachPoint(0.3, 0), foot = sills.approachPoint(a.foot + 1, 0);
       const rise = world.groundHeight(...arch) - world.groundHeight(...foot);
       if (rise < 0.15 || rise > 0.35) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
       for (let t = 0; t < a.foot + 1; t += 0.05) if (Math.abs(world.groundHeight(...sills.approachPoint(t, 0)) - world.groundHeight(...sills.approachPoint(t + 0.05, 0))) > 0.03) throw Error("South Dalí approach has a step at " + t.toFixed(2));
       const slope = [0.5, 3, 5.8].map(t => top(sills.approachPoint(t, 0), "-flagstones"));
-      if (Math.max(...slope) - Math.min(...slope) > .01) throw Error("South Dalí flagstones do not follow the player ground");
+      if (slope.some(delta=>Math.abs(delta)>.01)) throw Error("South Dalí flagstones do not follow the player ground");
       walk([foot, sills.approachPoint(0.6, 0), foot]);
+      // Absolute contact: a settled player's actual shoe soles must touch the visible mesh.
+      const standOn=(point,label)=>{
+        player.place(...point,0);
+        for(let i=0;i<180;i++)player.update(1/120,input,world,0);
+        if(Math.hypot(player.x-point[0],player.z-point[1])>.02)throw Error(label+": contact sample is obstructed");
+        player.group.updateMatrixWorld(true);
+        const feet=[];
+        player.group.traverse(o=>{if(o.isMesh&&o.geometry.type==="BoxGeometry"&&Math.abs(o.geometry.parameters.height-.08)<1e-6)feet.push(new THREE.Box3().setFromObject(o).min.y);});
+        ray.set(new THREE.Vector3(point[0],9,point[1]),new THREE.Vector3(0,-1,0));
+        const hit=ray.intersectObjects(scene.children,true)[0];
+        if(feet.length!==2||!hit||feet.some(y=>Math.abs(y-hit.point.y)>.015))throw Error(label+": settled shoe sole/visible mesh mismatch "+feet+" vs "+hit?.point.y);
+      };
+      for(const sill of d.sills)standOn(near(sill.door,sill.outward,sill.depth/2),sill.id);
+      for(const [st,c] of [[1.25,2.5],[10,3],[10,1],[10,.07],[20,3],[20,1],[20,k.pathEdge+k.kerbWidth/2]])standOn(sills.kerbPoint(st,c),"Dalí frontage "+st+","+c);
+      for(const t of [.6,1,3,5.8,6.2,6.49])standOn(sills.approachPoint(t,0),"Approach "+t);
+      for(const t of [1,3,5.8])for(const sign of [-1,1])standOn(sills.approachPoint(t,sign*(sills.approachInner(t,sign>0?"right":"left")+a.kerbWidth/2)),"Approach side kerb "+t+","+sign);
+      if(Math.abs(world.groundHeight(...sills.approachPoint(a.foot-.01,0))-world.groundHeight(...sills.approachPoint(a.foot+.01,0)))>.005)throw Error("Invisible approach toe step");
+      player.place(...sills.approachPoint(1.2,0),0);
+      const yaw=Math.atan2(-a.outward[0],a.outward[1]);let touchedFacade=false;
+      for(let i=0;i<90;i++){
+        const expected=[player.x+Math.sin(yaw)*4.7/120,player.z-Math.cos(yaw)*4.7/120];
+        player.update(1/120,{...input,moveZ:1},world,yaw);
+        if(Math.hypot(player.x-expected[0],player.z-expected[1])>.001){touchedFacade=true;break;}
+      }
+      if(!touchedFacade||Math.abs(world.groundHeight(player.x,player.z)-(sills.approachBase()+a.rise+sills.DALI_SURFACE))>.015)throw Error("Approach landing drops before the solid facade");
+      // Inspect old-road/new-apron asphalt contact, then apron/kerb contact on the shared outline.
+      const asphaltScene=new THREE.Scene();addBoundaryReference(asphaltScene,s.boundaryReference);drapeScene(asphaltScene,buildings);sills.addDoorSills(asphaltScene);asphaltScene.updateMatrixWorld(true);
+      for(const st of [5,10,20,25])for(const c of [-.22,-.18,-.07,-.03]){
+        const point=sills.kerbPoint(st,c);ray.set(new THREE.Vector3(point[0],9,point[1]),new THREE.Vector3(0,-1,0));
+        const hit=ray.intersectObjects(asphaltScene.children,true)[0];
+        if(!hit||Math.abs(hit.point.y-world.groundHeight(...point))>.015)throw Error("Dalí road/apron asphalt contact differs at "+st+","+c+": "+hit?.point.y+" vs "+world.groundHeight(...point));
+      }
+      for(const st of [5,10,20,25]){
+        const edge=st<k.pathKerbFrom?0:k.pathEdge;
+        const asphalt=sills.kerbPoint(st,edge-.02),stone=sills.kerbPoint(st,edge+k.kerbWidth/2);
+        standOn(asphalt,"Kerb asphalt toe "+st);standOn(stone,"Kerb top "+st);
+      }
+      if(sills.doorSillsGroundOffset(0,0)!==0)throw Error("Local threshold datum escaped its feature area");
+
     }
     // Elena north: through the arched gateway, and the raised beds keep the player out.
     {
