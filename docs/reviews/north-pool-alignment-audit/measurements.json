@@ -312,15 +312,15 @@
     {
       "id": "P2",
       "esri": [
-        665,
+        656,
         501
       ],
-      "note": "Eastern water/dark edging, uncertain about 2 pixels",
+      "note": "Tentative dark eastern rim (not water/deck datum); about2px selection ambiguity. Exact source pixel RGB67/95/98 inspected during independent review.",
       "observedLocal": [
-        -172.56609374999996,
+        -174.72749999999996,
         21.941077008928573
       ],
-      "nearestRegistryOutlineM": 0.34190703697713726
+      "nearestRegistryOutlineM": 1.5479163255192723
     },
     {
       "id": "P3",
@@ -338,15 +338,15 @@
     {
       "id": "P4",
       "esri": [
-        618,
+        621,
         505
       ],
-      "note": "Western water edge, nearby plant hides part of lobe",
+      "note": "Tentative western water/pale-rim transition; about 2px blur; vegetation conceals another part of SW lobe",
       "observedLocal": [
-        -183.85343749999998,
+        -183.13296874999997,
         22.901724330357155
       ],
-      "nearestRegistryOutlineM": 1.3587867601885144
+      "nearestRegistryOutlineM": 0.64044016133729
     }
   ],
   "gapChecks": [
@@ -392,5 +392,67 @@
     "observedRoofLengthM": 13.390820109877799,
     "orientationDifferenceDeg": -2.6006412972589374
   },
-  "modeledElenaOpeningSeparationM": 18.743996852325807
+  "modeledElenaOpeningSeparationM": 18.743996852325807,
+  "reproducedWaterLandmarks": {
+    "esri": {
+      "north": {
+        "pixel": [
+          640.1243628950051,
+          498.48725790010195
+        ],
+        "componentPixels": 981
+      },
+      "middle": {
+        "pixel": [
+          843.0930693069307,
+          792.7237623762376
+        ],
+        "componentPixels": 1010
+      },
+      "south": {
+        "pixel": [
+          1005.0376984126984,
+          1195.3472222222222
+        ],
+        "componentPixels": 1008
+      },
+      "toddler": {
+        "pixel": [
+          1336.6467065868264,
+          756.1736526946107
+        ],
+        "componentPixels": 167
+      }
+    },
+    "google": {
+      "north": {
+        "pixel": [
+          359.29944077275036,
+          875.8368073207931
+        ],
+        "componentPixels": 1967
+      },
+      "middle": {
+        "pixel": [
+          440.40445544554456,
+          1339.6148514851486
+        ],
+        "componentPixels": 2020
+      },
+      "south": {
+        "pixel": [
+          410.5700258397933,
+          1908.4630490956072
+        ],
+        "componentPixels": 1935
+      },
+      "toddler": {
+        "pixel": [
+          1052.8384615384616,
+          1567.2107692307693
+        ],
+        "componentPixels": 650
+      }
+    }
+  }
 }

@@ -15,7 +15,8 @@
     "docs/LEVELS.md",
     "docs/NORTH_POOL_REVIEW.md",
     "docs/RAISED_TERRACES.md",
-    "docs/NORTH_WEST_CANOPIES.md"
+    "docs/NORTH_WEST_CANOPIES.md",
+    "docs/reviews/north-pool-alignment-audit/README.md"
    ],
    "data": [
     "data/objects.json",
@@ -38,7 +39,8 @@
     "Issue #36 reconciliation (2026-10-15): north-side patios are 0.25–0.4 m above the path, separate from the NW six-riser 0.9–1.1 m terrace owned by #54. The old five-riser/0.75 m model is withdrawn; issue #36 remains open pending the raised-terraces module and individual north-patio/opening traces. Historical NW coordinate candidates are review-only, with stair placement still conflicting with the survey bearing estimate.",
     "Issue #54 (2026-10-16): the NW six-riser tiled stair is built at about (-189.3, 17.8), cut back into a 1.0 m terrace (data/raised_terraces.json) between the curved wall and a straight wall that runs east to a pier where a path climbs to the north row alley. A camera fit of IMG_2204 to the pool ring puts the stair at bearing 320 from the camera, which IMG_2206 confirms (324); the withdrawn (-181.9, 12) flight would be at 341, so that spot is the pier and alley path, not the stair. Open: the terrace floor stands 0.5-1 m above the model datum of the houses behind it (6165501UF1366N_part5, part1); whether their floors are higher or there are steps down is not visible. The west and south ends of the terrace are estimated.",
     "Issue #36 (2026-10-17): lower northern plinth band, three independent shallow white-nosed openings and visible northwest/north crazy-paving path built separately from #54. The 0.325 m floor is a conservative visible band; rear and side floor limits and hidden patio divisions are untraced estimates, not surveyed property boundaries. Houses, pool and lawn keep their datum.",
-    "Issue #95: the circled gap between the west row and standalone house has three separately observed upper balcony canopies, traced from the georeferenced aerial and Apple02/08/09. These structural roofs were missing in Layout; generic optional porches are not a replacement. Roof edges and elevations remain estimated, hidden ground boundaries untraced. The IMG_2206 brown doors are poolward of the marked gap. Current north/whole renders retain turf and deck; the supplied screenshot surface absence remains unreproduced."
+    "Issue #95: the circled gap between the west row and standalone house has three separately observed upper balcony canopies, traced from the georeferenced aerial and Apple02/08/09. These structural roofs were missing in Layout; generic optional porches are not a replacement. Roof edges and elevations remain estimated, hidden ground boundaries untraced. The IMG_2206 brown doors are poolward of the marked gap. Current north/whole renders retain turf and deck; the supplied screenshot surface absence remains unreproduced.",
+    "Alignment audit 2026-10-18 (docs/reviews/north-pool-alignment-audit): Google screenshot globally registered to fixed Esri frame; held-out relative residuals about 1.5-2.1 m, sampled roof/registry differences about 0.6-1.5 m do not establish ground-wall shifts. No runtime geometry changed. IMG_2202/2361 are the separate private36/34 entry, not IMG_2363 lawn gateway. Missing newer photo-check records do not erase earlier manual reviews. Concealed boundaries, complete pool/ground perimeter and access widths remain unresolved in north-pool-unresolved-plan."
    ]
   },
   {

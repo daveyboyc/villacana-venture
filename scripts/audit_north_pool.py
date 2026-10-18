@@ -15,6 +15,7 @@ import numpy as np
 from PIL import Image
 import matplotlib
 matplotlib.use('Agg')
+matplotlib.rcParams.update({'svg.hashsalt':'north-pool-audit-2026-10-18','svg.fonttype':'none'})
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.patches import Polygon
@@ -135,7 +136,7 @@ def public_plan():
         p=world(t['esri']);ax.plot(*p,'+',color='black',ms=6);ax.annotate(t['id'],p,xytext=(4,5),textcoords='offset points',fontsize=7)
     ax.set(xlim=(BOX[0],BOX[2]),ylim=(BOX[3],BOX[1]),xlabel='x east (m)',ylabel='z south (m)',title='North-pool audit: unchanged baseline plans and measurement locations')
     ax.set_aspect('equal');ax.grid(alpha=.15);ax.legend(handles=LEGEND,loc='upper right',fontsize=7)
-    fig.tight_layout();fig.savefig(OUT/'layout.svg');fig.savefig(OUT/'layout.png',dpi=140);plt.close(fig)
+    fig.tight_layout();fig.savefig(OUT/'layout.svg',metadata={'Date':None});fig.savefig(OUT/'layout.png',dpi=140);plt.close(fig)
 
 def residual_plot(d):
     fig,ax=plt.subplots(figsize=(8,7))
@@ -143,7 +144,7 @@ def residual_plot(d):
         for p in d[key]:
             x,z=p['residualXZMetres'];ax.arrow(0,0,x,z,color=col,length_includes_head=True,head_width=.07);ax.text(x,z,' '+p['id']+f" {p['residualMetres']:.2f}m",fontsize=9)
     ax.set(xlim=(-2.5,2.5),ylim=(2.5,-2.5),xlabel='Google registered to Esri: east residual (m)',ylabel='South residual (m)',title='Single global similarity; held-out V landmarks were not fitted')
-    ax.set_aspect('equal');ax.grid(alpha=.3);fig.tight_layout();fig.savefig(OUT/'alignment-residuals.svg');plt.close(fig)
+    ax.set_aspect('equal');ax.grid(alpha=.3);fig.tight_layout();fig.savefig(OUT/'alignment-residuals.svg',metadata={'Date':None});plt.close(fig)
 
 def private_overlays(reference,out,d):
     if out.resolve().is_relative_to(ROOT):raise ValueError('Private outputs must be outside public repository')
@@ -172,11 +173,33 @@ def private_overlays(reference,out,d):
         ax.set_title('C = fitted; V = held out; source pixels, no image warping');fig.tight_layout();fig.savefig(out/(name+'.png'),dpi=140);plt.close(fig)
     d['privateSourceHashes']={str(p.relative_to(reference)):sha(p) for p in [reference/'google-maps/02-satellite-lane-names.png',reference/'google-maps/01-street-map-lane-names.png']}
     (out/'measurements.json').write_text(json.dumps(d,indent=2)+'\n')
-    (out/'index.html').write_text('''<!doctype html><meta charset="utf-8"><title>North pool private comparison</title><style>body{font:16px system-ui;background:#eee;margin:24px}img{max-width:100%}section{margin:30px 0}a{color:#135f96}</style><h1>North pool — private comparison</h1><p>Baseline e043c0e. C1–C3 fitted once globally; V1–V3 held out. No imagery is warped locally. Roof projections are not ground walls. See the public audit report for uncertainty and the full photo assessment.</p>'''+''.join(f'<section><h2>{name}</h2><a href="{name}.png"><img src="{name}.png"></a></section>' for name in ['esri-context','esri-courtyard','google-satellite-overlay','esri-landmarks','google-landmarks'])+'<p>Original Google <a href="../../google-maps/02-satellite-lane-names.png">satellite</a> and <a href="../../google-maps/01-street-map-lane-names.png">standard</a>; <a href="../../contact-sheets/north-pool.jpg">north-pool contact sheet</a>. These originals remain private.</p>')
+    (out/'index.html').write_text('''<!doctype html><meta charset="utf-8"><title>North pool private comparison</title><style>body{font:16px system-ui;background:#eee;margin:24px}img{max-width:100%}section{margin:30px 0}a{color:#135f96}</style><h1>North pool — private comparison</h1><p>Baseline e043c0e. C1–C3 fitted once globally; V1–V3 held out. No imagery is warped locally. Roof projections are not ground walls. See the public audit report for uncertainty and the full photo assessment.</p>'''+''.join(f'<section><h2>{name}</h2><a href="{name}.png"><img src="{name}.png"></a></section>' for name in ['esri-context','esri-courtyard','google-satellite-overlay','esri-landmarks','google-landmarks'])+'<p><a href="photo-comparisons.html">Photo/source comparability pairs</a></p><p>Original Google <a href="../../google-maps/02-satellite-lane-names.png">satellite</a> and <a href="../../google-maps/01-street-map-lane-names.png">standard</a>; <a href="../../contact-sheets/north-pool.jpg">north-pool contact sheet</a>. These originals remain private.</p>')
+
+def validate_water_landmarks(reference):
+    # Extract independently from image pixels, never from registry geometry.
+    from trace_pools import components
+    expected={'esri':{'north':[640.12,498.49],'middle':[843.09,792.72],'south':[1005.04,1195.35],'toddler':[1336.65,756.17]},
+              'google':{'north':[359.30,875.84],'middle':[440.40,1339.61],'south':[410.57,1908.46],'toddler':[1052.84,1567.21]}}
+    result={}
+    for source,path in [('esri',ROOT/'public/map/ground.jpg'),('google',reference/'google-maps/02-satellite-lane-names.png')]:
+        if not path.exists():
+            result[source]={'status':'source unavailable; retained observed picks only'}
+            continue
+        im=Image.open(path).convert('RGB'); values={}
+        for name,box in OBS['waterCentroids'][source].items():
+            cells=components(im,tuple(box))[0]
+            point=[sum(p[k] for p in cells)/len(cells) for k in range(2)]
+            if np.linalg.norm(np.asarray(point)-expected[source][name])>.02:
+                raise ValueError(f'{source} {name}: source pixel centroid changed; review registration')
+            values[name]={'pixel':point,'componentPixels':len(cells)}
+        result[source]=values
+    return result
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--reference',type=Path,default=ROOT.parent/'villacana-reference');p.add_argument('--private-out',type=Path);a=p.parse_args()
-    d=measurements();public_plan();residual_plot(d)
+    d=measurements();d['reproducedWaterLandmarks']=validate_water_landmarks(a.reference);public_plan();residual_plot(d)
+    for svg in (OUT/'layout.svg',OUT/'alignment-residuals.svg'):
+        svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     (OUT/'measurements.json').write_text(json.dumps(d,indent=2)+'\n')
     (OUT/'building-labels.json').write_text(json.dumps({v:k for k,v in IDS.items()},indent=2)+'\n')
     if a.private_out:private_overlays(a.reference,a.private_out,d)

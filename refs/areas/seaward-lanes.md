@@ -37,7 +37,7 @@ graph LR
   F2 --> PIMG_2239_jpg(["IMG_2239"])
 ```
 
-**Built but never checked against its photos:** `seaward-lanes-paving`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `seaward-lanes-paving`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

@@ -16,7 +16,7 @@ reference repo, and writes:
 With --sheets, contact sheets of thumbnails go to <reference>/contact-sheets/,
 because they include private images and this repo is public.
 --check fails if a reference has no area, or a tag names an unknown area,
-topic or file, or a done task was never checked against its photos.
+topic or file, or a done task lacks required photo-check records.
 
 A feature citing a photo ('cites') only says an author used it. Whether the
 build was compared with the photo is recorded in data/photo_checks.json: an
@@ -146,7 +146,8 @@ def build(reference:Path):
 ALTITUDE_SPLIT=9.0
 HEADING_TOLERANCE=45
 CHECK_RESULTS=('matches','differs','not-comparable')
-# Done tasks that were never rendered against their photos when photo checks began (18 October).
+# Tasks missing complete modern photo-check records when recording began (18 October).
+# Earlier manual reviews may exist in docs/reviews and task documentation.
 # data/photo_checks.json legacyUnchecked may only hold these; check one and remove it from there.
 LEGACY_CEILING=frozenset('''barraka-boardwalk cervantes-door-steps cervantes-east-hedge cervantes-east-south-patios
  cervantes-north-patios cervantes-steps-treads door-sills elena-east-patios elena-garden-door elena-gated-entry eva-walled-lawn
@@ -243,7 +244,7 @@ def queue_page(queue,spec,legacy=()):
     out+=[task_line(t,0) for t in order]
     backlog=[t for t in order if t['id'] in legacy]
     if backlog:
-        out+=['','## Verification backlog','',f'{len(backlog)} tasks were marked done before render-versus-photo checks were recorded, so nobody has confirmed the build matches their photos. '
+        out+=['','## Verification backlog','',f'{len(backlog)} tasks lack complete entries in the newer render-versus-photo check records. Earlier manual reviews may exist in task docs and committed review pairs; this backlog does not mean the work was never reviewed. '
               'Check one: `node scripts/shoot_views.cjs <photos> --task=<id> --as=after`, compare each render with its photo, record the result in `data/photo_checks.json` '
               '(a `differs` needs a new open task as `followUp`) and remove the task from `legacyUnchecked`.','']
         out+=[f"- `{t['id']}` ({names[t['area']]}): "+', '.join(t['photos']) for t in backlog]
@@ -362,7 +363,7 @@ def brief(area,entries,topics,spec,features=(),queue=(),checks=()):
         out+=['## Photo checks','','Renders from each photo\'s camera compared with the photo (`data/photo_checks.json`).','','| Task | Photo | Result | Render | Notes |','| --- | --- | --- | --- | --- |']
         out+=[f"| `{c['task']}` | [{Path(c['photo']).stem}](../../public/photos-ref/{c['photo']}) | **{c['result']}**{' → `'+c['followUp']+'`' if c.get('followUp') else ''} | "+(f"[after](../../{c['render']})" if c.get('render') else '')+(f" · [before](../../{c['before']})" if c.get('before') else '')+f" | {c.get('notes','')} |" for c in here]+['']
     never=[t for t in queue if t['area']==area['id'] and t.get('status')=='done' and t.get('verification') in ('unchecked','legacy-unchecked')]
-    if never:out+=['**Built but never checked against its photos:** '+', '.join(f"`{t['id']}`" for t in never)+'. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.','']
+    if never:out+=['**Built without complete newer photo-check records:** '+', '.join(f"`{t['id']}`" for t in never)+'. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.','']
     if reviewed:out+=['## Reviewed references','']+table(reviewed,1,area['id'])+['']
     if guessed:out+=['## Suggested by camera position, not yet reviewed','','The camera stood in or near this area. Check what the picture actually shows before relying on it.','']+table(guessed,1,area['id'])+['']
     return '\n'.join(out)
@@ -390,8 +391,8 @@ def index(spec,catalog,problems,queue=(),checks=()):
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     out+=['',f'{len(catalog)} references: {reviewed} reviewed, {len(catalog)-reviewed} with areas suggested only from the camera position.','']
     done=[t for t in queue if t.get('status')=='done'];results=[c.get('result') for c in checks]
-    out+=[f"Photo checks (`data/photo_checks.json`): {len(checks)} renders compared with their photos, {results.count('matches')} match, {results.count('differs')} differ. "
-          f"{sum(t.get('verification') in ('unchecked','legacy-unchecked') for t in done)} of {len(done)} done tasks have never been checked against their photos (QUEUE.md, verification backlog).",'']
+    out+=[f"Photo checks (`data/photo_checks.json`): {len(checks)} photo-check records, {results.count('matches')} match, {results.count('differs')} differ. "
+          f"{sum(t.get('verification') in ('unchecked','legacy-unchecked') for t in done)} of {len(done)} done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).",'']
     if problems:out+=['## Needs attention','']+[f'- {p}' for p in problems]+['']
     return '\n'.join(out)
 

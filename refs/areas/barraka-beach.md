@@ -62,7 +62,7 @@ graph LR
   F5 --> PIMG_2347_jpg(["IMG_2347"])
 ```
 
-**Built but never checked against its photos:** `barraka-boardwalk`, `shoreline-check`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `barraka-boardwalk`, `shoreline-check`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
