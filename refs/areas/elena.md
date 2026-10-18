@@ -43,7 +43,7 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Elena"]
-  A --> F0["Calle Elena covered walkway · unchecked"]
+  A --> F0["Calle Elena covered walkway · not-comparable"]
   F0 --> PIMG_2202_jpg(["IMG_2202"])
   F0 --> PIMG_2203_jpg(["IMG_2203"])
   F0 --> PIMG_2254_jpg(["IMG_2254"])
@@ -100,8 +100,7 @@ graph LR
   F15 --> PIMG_2199_jpg(["IMG_2199"])
   F15 --> PIMG_2200_jpg(["IMG_2200"])
   F15 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F16["Elena north · arched gateway to the north pool lawn · unchecked"]
-  F16 --> PIMG_2202_jpg(["IMG_2202"])
+  A --> F16["Elena north · arched gateway to the north pool lawn · not-comparable"]
   F16 --> PIMG_2363_jpg(["IMG_2363"])
   A --> F17["Elena north · magnolia bed · unchecked"]
   F17 --> PIMG_2362_jpg(["IMG_2362"])
@@ -116,7 +115,6 @@ graph LR
   F20 --> PIMG_2198_jpg(["IMG_2198"])
   F20 --> PIMG_2201_jpg(["IMG_2201"])
   A --> F21["Elena north · planting strip, west side · unchecked"]
-  F21 --> PIMG_2202_jpg(["IMG_2202"])
   F21 --> PIMG_2363_jpg(["IMG_2363"])
   A --> F22["Elena north · hedged bed with pollarded tree · unchecked"]
   F22 --> PIMG_2199_jpg(["IMG_2199"])
@@ -145,7 +143,7 @@ graph LR
   F27 --> PIMG_2367_jpg(["IMG_2367"])
 ```
 
-**Built but never checked against its photos:** `elena-garden-door`, `elena-east-patios`, `elena-gated-entry`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `elena-garden-door`, `elena-east-patios`, `elena-gated-entry`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
@@ -158,15 +156,15 @@ graph LR
 | [IMG_2367.jpg](../../public/photos-ref/IMG_2367.jpg) | roof | layout, planting | Roof by Elena: looking south over the Cervantes/Elena junction **Looks at:** The Cervantes/Elena junction. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2197.jpg](../../public/photos-ref/IMG_2197.jpg) | ground | layout, materials | Calle Elena north: tiled lane between planted beds **Looks at:** The second hedged bed and the lane. _Used by: elena_north.json:elena-north-tree-bed-2, elena_east_patios.json:elena-east-patios-west-wall, elena_east_patios.json:elena-east-patios-cervantes-wall, cervantes_east_south_patios.json:cervantes-east-south-wall, cervantes_east_south_patios.json:cervantes-east-south-climber._ |
 | [IMG_2199.jpg](../../public/photos-ref/IMG_2199.jpg) | ground | planting, layout | Calle Elena north: planting bed with pollarded tree and a garden door **Looks at:** The first hedged bed. _Used by: elena_north.json:elena-north-garden-wall, elena_north.json:elena-north-tree-bed-1, elena_north.json:elena-north-garden-door-path, elena_east_patios.json:elena-east-patios-west-wall, elena_east_patios.json:elena-east-patios-pergola._ |
-| [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west, elena_gated_entry.json:elena-gated-entry._ |
 | [IMG_2198.jpg](../../public/photos-ref/IMG_2198.jpg) | ground | layout, planting | Calle Elena north: lane with low white bed walls and pollarded trees **Looks at:** The second hedged bed. _Used by: elena_north.json:elena-north-tree-bed-2, elena_north.json:elena-north-planter-box-1, elena_north.json:elena-north-planter-box-2._ |
-| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |
+| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |
 | [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2365.jpg](../../public/photos-ref/IMG_2365.jpg) | roof | layout, planting, materials | Roof by Elena: looking down on the Elena north lane and its planted bed **Looks at:** The magnolia bed beside the Elena north lane. **Note:** Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it. _Used by: elena_north.json:elena-north-magnolia-bed, elena_north.json:elena-north-tree-bed-1._ |
 | [IMG_2196.jpg](../../public/photos-ref/IMG_2196.jpg) | ground | facades, planting | Elena junction: private brown door up tiled steps, bougainvillea _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed._ |
-| [IMG_2203.jpg](../../public/photos-ref/IMG_2203.jpg) | ground | layout, materials | Covered passage with a doorway, arched opening to a garden _Used by: building:6265201UF1366N_part5, elena_gated_entry.json:elena-gated-entry._ |
+| [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Elena covered passage looking toward the private iron gates numbered 36/34 **Looks at:** Private paired gates 36/34 west of the covered walkway. **Note:** Inspected 2026-10-18 with IMG_2361 and opposite-facing IMG_2203: patterned tiled private spur beyond covered-building arch. Distinct from the lawn gateway in IMG_2363. looksAt aims at the existing estimated gate location; it does not calibrate the camera or move the phone pin. _Used by: building:6265201UF1366N_part5, elena_gated_entry.json:elena-gated-entry._ |
+| [IMG_2203.jpg](../../public/photos-ref/IMG_2203.jpg) | ground | layout, materials | Covered passage looking out onto Calle Elena and its planted bed **Looks at:** Opposite exit of the covered passage onto Calle Elena. **Note:** Inspected 2026-10-18: CALLE ELENA plaque visible; opposite direction to IMG_2202. The plain-grid-tiled lane outside leads separately toward the lawn gateway shown in IMG_2363. Approximate diagnostic aim, not camera calibration. **Compass:** the subject is 101° from the phone heading; trust looksAt, not the heading. _Used by: building:6265201UF1366N_part5, elena_gated_entry.json:elena-gated-entry._ |
 | [IMG_2330.jpg](../../public/photos-ref/IMG_2330.jpg) | ground | layout | Calle Elena south from the junction, towards the middle pool _Used by: door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
-| [IMG_2361.jpg](../../public/photos-ref/IMG_2361.jpg) | roof | layout, materials, facades | Roof by Elena: looking down into a gated tiled entry **Looks at:** The gated tiled entry west of the covered walkway. **Note:** Roof shot looking down. The pin is the roof, not the entry. **Compass:** the subject is 65° from the phone heading; trust looksAt, not the heading. _Used by: elena_gated_entry.json:elena-gated-entry._ |
+| [IMG_2361.jpg](../../public/photos-ref/IMG_2361.jpg) | roof | layout, materials, facades | Roof by Elena: looking down into a gated tiled entry **Looks at:** The gated tiled entry west of the covered walkway. **Note:** Roof view of the paired private 36/34 gates seen in IMG_2202, with patterned paving and shaped lintel. The pin is the camera on the roof, not the entry. Audit aim is existing estimated gate position, not a calibrated pose. _Used by: elena_gated_entry.json:elena-gated-entry._ |
 | [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
 | [IMG_2364.jpg](../../public/photos-ref/IMG_2364.jpg) | roof | facades, materials, planting | Roof by Elena: barrel-tile lean-to over a magnolia bed **Looks at:** The magnolia bed and the lean-to roof beside it. _Used by: elena_north.json:elena-north-magnolia-bed._ |
 | [IMG_2255.jpg](../../public/photos-ref/IMG_2255.jpg) | ground | layout, materials | Covered arched passage on Elena north, patterned tiles _Used by: building:6265201UF1366N_part5._ |

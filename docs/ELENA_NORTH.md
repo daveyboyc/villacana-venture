@@ -12,7 +12,7 @@ what actually lines it.
 
 | Feature | From | Notes |
 | --- | --- | --- |
-| Arched gateway onto the north pool lawn | IMG_2363, IMG_2202 | White wall across the gap between the two terraces, 1.5 m opening, arch crown 2.2 m. A brown garden door in its east part faces the patio. Bougainvillea over it in Details. |
+| Arched gateway onto the north pool lawn | IMG_2363 | White wall across the gap between the two terraces, 1.5 m opening, arch crown 2.2 m. A brown garden door in its east part faces the patio. Bougainvillea over it in Details. |
 | Patio wall, east side, north half | IMG_2363 | 1.15 m white wall between the lane and the private patios, with a brown door onto the lane. |
 | Planting strip, west side, north half | IMG_2363 | Low kerb along the west houses up to the covered walkway. |
 | Magnolia bed | IMG_2365, IMG_2364, IMG_2362 | Raised 0.3 m white-kerbed bed of tall glossy shrubs, edged with strap-leaved plants. |
@@ -68,6 +68,8 @@ the whole 0.5 m rise happens within about 3 m, not the 7 m the terrain rule used
   with the photo by eye.
 
 ## Limits
+
+Audit correction (18 October 2026): IMG_2202 shows the covered-building arch looking toward the private paired gates numbered 36/34, also seen in IMG_2361. IMG_2203 looks out the opposite end onto Elena. These are distinct from the lawn gateway in IMG_2363. The former IMG_2202 citations on the lawn gateway and planting strip were incorrect and are removed; no geometry is moved. See [the measured north-pool audit](reviews/north-pool-alignment-audit/README.md).
 
 Positions are traced against the registry fronts and the aerial to roughly
 0.5–1 m. Wall heights, the gateway arch, bed sizes and tread lengths are

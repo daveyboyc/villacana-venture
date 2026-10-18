@@ -38,7 +38,7 @@ graph LR
   F0 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
-**Built but never checked against its photos:** `south-pool-seaward-level`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `south-pool-seaward-level`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

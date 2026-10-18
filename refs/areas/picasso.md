@@ -35,7 +35,7 @@ graph LR
   F2 --> PIMG_2345_jpg(["IMG_2345"])
 ```
 
-**Built but never checked against its photos:** `picasso-service-road`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `picasso-service-road`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

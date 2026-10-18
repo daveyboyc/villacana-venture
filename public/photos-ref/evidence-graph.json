@@ -2269,8 +2269,7 @@
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
-    "IMG_2363.jpg",
-    "IMG_2202.jpg"
+    "IMG_2363.jpg"
    ]
   },
   {
@@ -2309,8 +2308,7 @@
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
-    "IMG_2363.jpg",
-    "IMG_2202.jpg"
+    "IMG_2363.jpg"
    ]
   },
   {
@@ -4600,18 +4598,6 @@
   {
    "from": "photo:IMG_2202.jpg",
    "to": "building:6265201UF1366N_part5",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2202.jpg",
-   "to": "elena_north.json:elena-north-gateway",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2202.jpg",
-   "to": "elena_north.json:elena-north-planter-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

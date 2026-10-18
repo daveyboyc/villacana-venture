@@ -673,6 +673,59 @@
    "issue": 95,
    "owner": "Codex",
    "notes": "Three individually registered upper balcony canopies restored in Layout/Details/map after independent aerial/oblique review and passing source/build/browser checks. This bounded correction does not claim concealed ground layout or the unreproduced mobile lawn/deck discrepancy is resolved."
+  },
+  {
+   "id": "north-pool-alignment-audit",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "audit",
+   "title": "North pool: register maps and audit courtyard buildings and connecting lanes",
+   "photos": [
+    "IMG_2202.jpg",
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg",
+    "IMG_2363.jpg"
+   ],
+   "build": "Produce source inventory, distributed control and held-out landmark measurements, labelled footprint/pool/path overlays, per-feature discrepancies and photo limitations before any geometry correction. Sources include IMG_2202/2204-2208/2363, private photos01/03-07, Apple02/07/08/09 and available Google satellite/standard screenshots. Apply only independently reviewed confirmed plan errors within the north-pool scope.",
+   "avoid": "No local image warps, private imagery in public assets, inferred hidden boundaries or claimed calibrated photographic matches. Preserve registry baseline unless specific evidence supports correction.",
+   "accept": [
+    "Reviewable measured alignment and discrepancy report committed before geometry edits",
+    "Private comparisons in villacana-reference; public report links only",
+    "Independent source-image review; required checks for any geometry changes"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Codex"
+  },
+  {
+   "id": "north-pool-unresolved-plan",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "audit",
+   "title": "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg",
+    "IMG_2363.jpg"
+   ],
+   "build": "Follow up NP-04/06/08/09/11 in docs/reviews/north-pool-alignment-audit: obtain clear ground-wall corners, complete water/deck transition, individual visible roof projections and unobscured Dalí/Picasso/Isabel access/width views. Use fixed global registration and independent held-out ground landmarks before proposing bounded plan corrections. Existing photos establish presence/order, not concealed extents.",
+   "avoid": "No hidden property polygons, repeated substitute walls/roofs, camera-pin snapping or local image warps. No assumption that unchanged registry coordinates prove accuracy.",
+   "accept": [
+    "Plan corrections supported by independently identifiable ground corners or stated unresolved limits",
+    "Separate water/construction/deck edges and roof/ground footprints",
+    "New comparisons and honest photo-check records for any built correction"
+   ],
+   "dependsOn": [
+    "north-pool-alignment-audit"
+   ],
+   "status": "open",
+   "issue": 98
   }
  ]
 }

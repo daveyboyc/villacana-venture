@@ -805,10 +805,9 @@
   "id": "IMG_2202.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2202.jpg",
-  "title": "Covered arched passage at the north end of Elena, gate beyond",
+  "title": "Elena covered passage looking toward the private iron gates numbered 36/34",
   "shows": [
-   "elena",
-   "north-pool"
+   "elena"
   ],
   "areasBasis": "reviewed",
   "viewpoint": "ground",
@@ -816,7 +815,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "Inspected 2026-10-18 with IMG_2361 and opposite-facing IMG_2203: patterned tiled private spur beyond covered-building arch. Distinct from the lawn gateway in IMG_2363. looksAt aims at the existing estimated gate location; it does not calibrate the camera or move the phone pin.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -830,22 +829,23 @@
   },
   "citedBy": [
    "building:6265201UF1366N_part5",
-   "elena_north.json:elena-north-gateway",
-   "elena_north.json:elena-north-planter-west",
    "elena_gated_entry.json:elena-gated-entry"
   ],
   "looksAt": [
-   -160.3,
-   37.8
+   -166.148,
+   45.128
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry"
+  ],
+  "subject": "Private paired gates 36/34 west of the covered walkway"
  },
  {
   "id": "IMG_2203.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2203.jpg",
-  "title": "Covered passage with a doorway, arched opening to a garden",
+  "title": "Covered passage looking out onto Calle Elena and its planted bed",
   "shows": [
    "elena"
   ],
@@ -855,7 +855,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "Inspected 2026-10-18: CALLE ELENA plaque visible; opposite direction to IMG_2202. The plain-grid-tiled lane outside leads separately toward the lawn gateway shown in IMG_2363. Approximate diagnostic aim, not camera calibration.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -872,11 +872,16 @@
    "elena_gated_entry.json:elena-gated-entry"
   ],
   "looksAt": [
-   -149.8,
-   32.2
+   -153.0,
+   40.5
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "street:elena-north",
+   "elena_north.json:elena-north-magnolia-bed"
+  ],
+  "subject": "Opposite exit of the covered passage onto Calle Elena",
+  "headingOff": 101
  },
  {
   "id": "IMG_2204.jpg",
@@ -5325,7 +5330,7 @@
    "materials",
    "facades"
   ],
-  "note": "Roof shot looking down. The pin is the roof, not the entry.",
+  "note": "Roof view of the paired private 36/34 gates seen in IMG_2202, with patterned paving and shaped lintel. The pin is the camera on the roof, not the entry. Audit aim is existing estimated gate position, not a calibrated pose.",
   "observation": "Looking south-west down over barrel roof tiles into a narrow entry between two-storey houses: patterned terracotta floor tiles, a pair of black iron gates in a white gateway topped with bougainvillea, a small first-floor balcony and an arched opening with lantern beyond. Gives the width and enclosure of the entry from above; dimensions are not measured. Camera on the roof of the covered-passage building (registry part 6265201UF1366N_part5).",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1ZvbBNNna5Jt1O1j0q3NdKA5zns9arwba/view?usp=drivesdk",
@@ -5341,15 +5346,14 @@
    "elena_gated_entry.json:elena-gated-entry"
   ],
   "looksAt": [
-   -164.5,
-   40.4
+   -166.148,
+   45.128
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_gated_entry.json:elena-gated-entry"
   ],
-  "subject": "The gated tiled entry west of the covered walkway",
-  "headingOff": 65
+  "subject": "The gated tiled entry west of the covered walkway"
  },
  {
   "id": "IMG_2362.jpg",
@@ -5405,7 +5409,7 @@
    "layout",
    "planting"
   ],
-  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate.",
+  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361.",
   "observation": "Looking almost straight down from a roof edge, north-north-west: a narrow square-tiled terracotta lane between white walls with a planted strip, private patios behind low walls with brown doors, and an arched white garden gateway with bougainvillea that opens onto crazy paving and the north pool lawn (bollard lights, palm, tree). Shows how the Elena north lane meets the north pool courtyard.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1ynufkQ9UxBR_MwF8fvJc4Kdlnasmsdxx/view?usp=drivesdk",

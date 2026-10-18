@@ -8,7 +8,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 | Area | References | Reviewed | Brief |
 | --- | --- | --- | --- |
-| North pool | 17 | 17 | [areas/north-pool.md](areas/north-pool.md) |
+| North pool | 16 | 16 | [areas/north-pool.md](areas/north-pool.md) |
 | Middle pool | 24 | 24 | [areas/middle-pool.md](areas/middle-pool.md) |
 | South pool | 7 | 7 | [areas/south-pool.md](areas/south-pool.md) |
 | Main pool | 1 | 1 | [areas/main-pool.md](areas/main-pool.md) |
@@ -35,4 +35,4 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 172 references: 172 reviewed, 0 with areas suggested only from the camera position.
 
-Photo checks (`data/photo_checks.json`): 11 renders compared with their photos, 1 match, 1 differ. 25 of 27 done tasks have never been checked against their photos (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 18 photo-check records, 1 match, 1 differ. 25 of 28 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).

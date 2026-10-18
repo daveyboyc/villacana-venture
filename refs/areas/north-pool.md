@@ -13,18 +13,19 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 - Issue #54 (2026-10-16): the NW six-riser tiled stair is built at about (-189.3, 17.8), cut back into a 1.0 m terrace (data/raised_terraces.json) between the curved wall and a straight wall that runs east to a pier where a path climbs to the north row alley. A camera fit of IMG_2204 to the pool ring puts the stair at bearing 320 from the camera, which IMG_2206 confirms (324); the withdrawn (-181.9, 12) flight would be at 341, so that spot is the pier and alley path, not the stair. Open: the terrace floor stands 0.5-1 m above the model datum of the houses behind it (6165501UF1366N_part5, part1); whether their floors are higher or there are steps down is not visible. The west and south ends of the terrace are estimated.
 - Issue #36 (2026-10-17): lower northern plinth band, three independent shallow white-nosed openings and visible northwest/north crazy-paving path built separately from #54. The 0.325 m floor is a conservative visible band; rear and side floor limits and hidden patio divisions are untraced estimates, not surveyed property boundaries. Houses, pool and lawn keep their datum.
 - Issue #95: the circled gap between the west row and standalone house has three separately observed upper balcony canopies, traced from the georeferenced aerial and Apple02/08/09. These structural roofs were missing in Layout; generic optional porches are not a replacement. Roof edges and elevations remain estimated, hidden ground boundaries untraced. The IMG_2206 brown doors are poolward of the marked gap. Current north/whole renders retain turf and deck; the supplied screenshot surface absence remains unreproduced.
+- Alignment audit 2026-10-18 (docs/reviews/north-pool-alignment-audit): Google screenshot globally registered to fixed Esri frame; held-out relative residuals about 1.5-2.1 m, sampled roof/registry differences about 0.6-1.5 m do not establish ground-wall shifts. No runtime geometry changed. IMG_2202/2361 are the separate private36/34 entry, not IMG_2363 lawn gateway. Missing newer photo-check records do not erase earlier manual reviews. Concealed boundaries, complete pool/ground perimeter and access widths remain unresolved in north-pool-unresolved-plan.
 
 ## Read first
 
-- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`, `docs/RAISED_TERRACES.md`, `docs/NORTH_WEST_CANOPIES.md`
+- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`, `docs/RAISED_TERRACES.md`, `docs/NORTH_WEST_CANOPIES.md`, `docs/reviews/north-pool-alignment-audit/README.md`
 - data: `data/objects.json`, `data/levels_survey.json`, `data/raised_terraces.json`, `data/north_pool_gardens.json`, `data/north_west_canopies.json`
 - src: `src/world.ts`, `src/water.ts`, `src/raised-terraces.ts`, `src/north-pool-gardens.ts`, `src/north-west-canopies.ts`
 - contact sheet: `villacana-reference/contact-sheets/north-pool.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 12, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 6, Views: 5
-17 reviewed, 0 suggested only by camera position.
+Layout: 11, Levels and slopes: 1, Facades and roofs: 9, Materials: 4, Planting: 6, Views: 5
+16 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -33,6 +34,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 - `north-pool-west-stair` (steps): 0.9-1.1 m above the crazy-paving path round the lawn, medium confidence at (-187, 17.5) ±6 m. Model: **built**, task `raised-terraces`. A flight with red-and-blue patterned tile risers and an iron handrail climbs from the north-west corner of the lawn path to a raised terrace with crazy paving, a terracotta patio with tables and the house fronts. A curved white retaining wall of the same height runs beside it holding a planted bank. Position from two roof bearings (about 312 degrees, 18-25 m), low confidence. About where the terrain foot line runs, but about 1 m rather than 0.5 m; whether it is shared ground or a private terrace is not visible. (IMG_2204.jpg, IMG_2206.jpg, IMG_2208.jpg)
 - `north-pool-north-patios` (raised-patio): 0.25-0.4 m above the path round the lawn, medium confidence at (-172, 9) ±8 m. Model: **built**, task `north-pool-garden-walls`. Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings. Issue #36 refines the broad position from (-166,8) to (-172,9), keeping the original +-8 m tolerance: three individual lower openings registered from IMG_2204 pool-ring camera fit span about x=-177 to -168,z=11, west of Calle Isabel; the old centre biased the whole patio band east. Height range unchanged. (IMG_2204.jpg, IMG_2205.jpg, IMG_2207.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2363](../../public/photos-ref/IMG_2363.jpg) |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
@@ -40,7 +49,7 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["North pool"]
-  A --> F0["North pool · visible crazy-paving lawn-edge path · unchecked"]
+  A --> F0["North pool · visible crazy-paving lawn-edge path · not-comparable"]
   F0 --> PIMG_2204_jpg(["IMG_2204"])
   F0 --> PIMG_2205_jpg(["IMG_2205"])
   F0 --> PIMG_2206_jpg(["IMG_2206"])
@@ -57,12 +66,12 @@ graph LR
   F3 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F3 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F3 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F4["North pool · low northern patio plinths and white steps · unchecked"]
+  A --> F4["North pool · low northern patio plinths and white steps · not-comparable"]
   F4 --> PIMG_2204_jpg(["IMG_2204"])
   F4 --> PIMG_2205_jpg(["IMG_2205"])
   F4 --> PIMG_2207_jpg(["IMG_2207"])
   F4 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F5["North pool · north-west raised terrace and tiled stair · unchecked"]
+  A --> F5["North pool · north-west raised terrace and tiled stair · not-comparable"]
   F5 --> PIMG_2204_jpg(["IMG_2204"])
   F5 --> PIMG_2206_jpg(["IMG_2206"])
   F5 --> PIMG_2208_jpg(["IMG_2208"])
@@ -83,8 +92,15 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `north-pool-west-frontage` | [08-3d-north-pool-looking-west-porches](../../public/photos-ref/ref:apple-maps/08-3d-north-pool-looking-west-porches.png) | **not-comparable** | [after](../../docs/reviews/issue-95/after/west-oblique.png) · [before](../../docs/reviews/issue-95/before/west-oblique.png) | Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled. |
 | `north-pool-west-frontage` | [09-3d-north-pool-looking-south](../../public/photos-ref/ref:apple-maps/09-3d-north-pool-looking-south.png) | **not-comparable** | [after](../../docs/reviews/issue-95/after/west-oblique.png) · [before](../../docs/reviews/issue-95/before/west-oblique.png) | Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled. |
 | `north-pool-west-frontage` | [02-3d-north-pool](../../public/photos-ref/ref:apple-maps/02-3d-north-pool.png) | **not-comparable** | [after](../../docs/reviews/issue-95/after/west-oblique.png) · [before](../../docs/reviews/issue-95/before/west-oblique.png) | Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled. |
+| `north-pool-alignment-audit` | [IMG_2202](../../public/photos-ref/IMG_2202.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2202-after.png) | Source is the covered-building arch toward private36/34 gates, not the lawn arch. IMG2361 and opposite-view2203 establish identity; the high diagnostic looks down on Elena and does not reproduce that ground camera. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
+| `north-pool-alignment-audit` | [IMG_2204](../../public/photos-ref/IMG_2204.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2204-after.png) | Source shows broad courtyard/facade order, tiled NW flight and north shallow openings; hedges conceal patio boundaries. Diagnostic high view crops the pool and does not reproduce the facade perspective. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
+| `north-pool-alignment-audit` | [IMG_2205](../../public/photos-ref/IMG_2205.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2205-after.png) | Source extends toward Isabel-side gate; cropped pool and foreground roof/yucca prevent full boundary tracing. Diagnostic high view crops that facade and cannot verify the gate against the photo. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
+| `north-pool-alignment-audit` | [IMG_2206](../../public/photos-ref/IMG_2206.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2206-after.png) | Source supports tiled flight/curved face and poolward west garden doors, not door placement in western canopy gap. Diagnostic high view omits the photographed facade/stair perspective. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
+| `north-pool-alignment-audit` | [IMG_2207](../../public/photos-ref/IMG_2207.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2207-after.png) | Source supports local roof/parapet/patio/path only; no whole north patio footprint. Diagnostic high view does not reproduce this cropped roof perspective. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
+| `north-pool-alignment-audit` | [IMG_2208](../../public/photos-ref/IMG_2208.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2208-after.png) | Source supports local west doors/path/hedge ordering; hidden ends untraced. Diagnostic high view omits the original roof/door foreground. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
+| `north-pool-alignment-audit` | [IMG_2363](../../public/photos-ref/IMG_2363.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2363-after.png) | Source supports separate lawn arch and adjacent patio door beyond plain-tiled Elena lane. Diagnostic view shows that lane/arch topology approximately but has a different eye height/crop, not a pixel match. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
 
-**Built but never checked against its photos:** `north-pool-garden-walls`, `raised-terraces`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `north-pool-garden-walls`, `raised-terraces`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
@@ -105,5 +121,4 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg` | upper-floor | planting, facades | North pool: roof tiles, a yucca, a patio behind a hedge |
 | `villacana-reference/photos/05-north-pool-west-side-garden-walls.jpg` | upper-floor | layout, levels | North pool west side: curved garden walls, raised patios, tiled steps |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |
-| [IMG_2202.jpg](../../public/photos-ref/IMG_2202.jpg) | ground | layout, materials | Covered arched passage at the north end of Elena, gate beyond _Used by: building:6265201UF1366N_part5, elena_north.json:elena-north-gateway, elena_north.json:elena-north-planter-west, elena_gated_entry.json:elena-gated-entry._ |
-| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |
+| [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-planter-west._ |

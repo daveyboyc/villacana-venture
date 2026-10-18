@@ -62,10 +62,9 @@
   "top": 2.55,
   "thickness": 0.3,
   "evidence": [
-   "IMG_2363.jpg",
-   "IMG_2202.jpg"
+   "IMG_2363.jpg"
   ],
-  "trust": "Arched white gateway at the lane's end, crazy paving and the north pool lawn beyond (IMG_2363, looking down from the roof). Opening width and wall height estimated from door and tile sizes."
+  "trust": "Arched white gateway at the lane's end, crazy paving and the north pool lawn beyond (IMG_2363, looking down from the roof). Opening width and wall height estimated from door and tile sizes. Audit 2026-10-18: IMG_2202 shows the separate private 36/34 entry west of the covered walkway, not this lawn-end feature; its citation is removed. Position/dimensions unchanged and remain estimates."
  },
  "walls": [
   {
@@ -178,10 +177,9 @@
    "kerb": 0.25,
    "planting": "strip",
    "evidence": [
-    "IMG_2363.jpg",
-    "IMG_2202.jpg"
+    "IMG_2363.jpg"
    ],
-   "trust": "Planting along the west houses between their wall and the lane (IMG_2363). Width from the registry front; kerb height estimated. Ends at the covered walkway."
+   "trust": "Planting along the west houses between their wall and the lane (IMG_2363). Width from the registry front; kerb height estimated. Ends at the covered walkway. Audit 2026-10-18: IMG_2202 shows the separate private 36/34 entry west of the covered walkway, not this lawn-end feature; its citation is removed. Position/dimensions unchanged and remain estimates."
   },
   {
    "id": "elena-north-magnolia-bed",

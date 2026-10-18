@@ -42,7 +42,7 @@ graph LR
   F2 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
-**Built but never checked against its photos:** `eva-walled-lawn`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `eva-walled-lawn`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

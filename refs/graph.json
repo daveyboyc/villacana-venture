@@ -256,14 +256,14 @@
   {
    "id": "ref:IMG_2202.jpg",
    "kind": "phone-photo",
-   "name": "Covered arched passage at the north end of Elena, gate beyond",
+   "name": "Elena covered passage looking toward the private iron gates numbered 36/34",
    "path": "public/photos-ref/IMG_2202.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:IMG_2203.jpg",
    "kind": "phone-photo",
-   "name": "Covered passage with a doorway, arched opening to a garden",
+   "name": "Covered passage looking out onto Calle Elena and its planted bed",
    "path": "public/photos-ref/IMG_2203.jpg",
    "viewpoint": "ground"
   },
@@ -1338,7 +1338,7 @@
    "id": "building:6265201UF1366N_part5",
    "kind": "model-feature",
    "name": "Calle Elena covered walkway",
-   "verification": "unchecked"
+   "verification": "not-comparable"
   },
   {
    "id": "building:6465801UF1366N_part5",
@@ -1584,7 +1584,7 @@
    "id": "elena_north.json:elena-north-gateway",
    "kind": "model-feature",
    "name": "Elena north · arched gateway to the north pool lawn",
-   "verification": "unchecked"
+   "verification": "not-comparable"
   },
   {
    "id": "elena_north.json:elena-north-magnolia-bed",
@@ -1746,7 +1746,7 @@
    "id": "north_pool_gardens.json:north-pool-lawn-path",
    "kind": "model-feature",
    "name": "North pool · visible crazy-paving lawn-edge path",
-   "verification": "unchecked"
+   "verification": "not-comparable"
   },
   {
    "id": "north_west_canopies.json:north-west-balcony-canopy-1",
@@ -1872,13 +1872,13 @@
    "id": "raised_terraces.json:north-pool-north-patios",
    "kind": "model-feature",
    "name": "North pool · low northern patio plinths and white steps",
-   "verification": "unchecked"
+   "verification": "not-comparable"
   },
   {
    "id": "raised_terraces.json:north-pool-west-terrace",
    "kind": "model-feature",
    "name": "North pool · north-west raised terrace and tiled stair",
-   "verification": "unchecked"
+   "verification": "not-comparable"
   },
   {
    "id": "ramp:cervantes-elena-ramp",
@@ -2179,6 +2179,23 @@
    "status": "done",
    "verification": "not-comparable",
    "issue": 95
+  },
+  {
+   "id": "task:north-pool-alignment-audit",
+   "kind": "build-task",
+   "name": "North pool: register maps and audit courtyard buildings and connecting lanes",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-comparable"
+  },
+  {
+   "id": "task:north-pool-unresolved-plan",
+   "kind": "build-task",
+   "name": "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
+   "priority": 1,
+   "status": "open",
+   "verification": "unchecked",
+   "issue": 98
   }
  ],
  "edges": [
@@ -2295,11 +2312,6 @@
   {
    "from": "ref:IMG_2202.jpg",
    "to": "area:elena",
-   "relation": "shows"
-  },
-  {
-   "from": "ref:IMG_2202.jpg",
-   "to": "area:north-pool",
    "relation": "shows"
   },
   {
@@ -5739,11 +5751,6 @@
   },
   {
    "from": "elena_north.json:elena-north-gateway",
-   "to": "ref:IMG_2202.jpg",
-   "relation": "cites"
-  },
-  {
-   "from": "elena_north.json:elena-north-gateway",
    "to": "ref:IMG_2363.jpg",
    "relation": "cites"
   },
@@ -5785,11 +5792,6 @@
   {
    "from": "elena_north.json:elena-north-planter-box-2",
    "to": "ref:IMG_2201.jpg",
-   "relation": "cites"
-  },
-  {
-   "from": "elena_north.json:elena-north-planter-west",
-   "to": "ref:IMG_2202.jpg",
    "relation": "cites"
   },
   {
@@ -7112,6 +7114,69 @@
    "render": "docs/reviews/issue-95/after/west-oblique.png"
   },
   {
+   "from": "building:6265201UF1366N_part5",
+   "to": "ref:IMG_2202.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2202-after.png"
+  },
+  {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2204-after.png"
+  },
+  {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2205-after.png"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2206-after.png"
+  },
+  {
+   "from": "raised_terraces.json:north-pool-north-patios",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2207-after.png"
+  },
+  {
+   "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2208-after.png"
+  },
+  {
+   "from": "elena_north.json:elena-north-gateway",
+   "to": "ref:IMG_2363.jpg",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-alignment-audit",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/north-pool-alignment-audit/IMG_2363-after.png"
+  },
+  {
    "from": "ref:IMG_2182.jpg",
    "to": "street:jorge",
    "relation": "looks-at",
@@ -7330,6 +7395,24 @@
   {
    "from": "ref:IMG_2201.jpg",
    "to": "elena_north.json:elena-north-garden-door-path",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2202.jpg",
+   "to": "elena_gated_entry.json:elena-gated-entry",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2203.jpg",
+   "to": "street:elena-north",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2203.jpg",
+   "to": "elena_north.json:elena-north-magnolia-bed",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -8781,6 +8864,16 @@
    "relation": "in-area"
   },
   {
+   "from": "task:north-pool-alignment-audit",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -9286,6 +9379,71 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2202.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-alignment-audit",
+   "to": "ref:IMG_2363.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "ref:IMG_2363.jpg",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -9338,6 +9496,11 @@
   {
    "from": "task:north-pool-west-frontage",
    "to": "task:north-pool-garden-walls",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:north-pool-unresolved-plan",
+   "to": "task:north-pool-alignment-audit",
    "relation": "depends-on"
   }
  ]

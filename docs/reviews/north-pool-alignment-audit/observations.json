@@ -1,0 +1,277 @@
+{
+  "date": "2026-10-18",
+  "baseline": "e043c0e",
+  "method": "Manual image picks in original image pixels; a single global similarity maps Google screenshot pixels into the georeferenced Esri pixel grid. No local warps. Water-colour centroids are approximate image landmarks, not surveyed pool centres.",
+  "googleControls": [
+    {
+      "id": "C1",
+      "feature": "NW outer roof corner, Dalí/Loira block",
+      "google": [
+        149,
+        698
+      ],
+      "esri": [
+        448,
+        438
+      ],
+      "uncertaintyM": 1.2
+    },
+    {
+      "id": "C2",
+      "feature": "NE outer roof corner, northern Picasso frontage (alignment context only)",
+      "google": [
+        797,
+        609
+      ],
+      "esri": [
+        866,
+        168
+      ],
+      "uncertaintyM": 1.2
+    },
+    {
+      "id": "C3",
+      "feature": "South pool water-colour centroid (alignment context only)",
+      "google": [
+        410.57,
+        1908.46
+      ],
+      "esri": [
+        1005.04,
+        1195.35
+      ],
+      "uncertaintyM": 0.8
+    }
+  ],
+  "googleValidation": [
+    {
+      "id": "V1",
+      "feature": "North pool water-colour centroid",
+      "google": [
+        359.3,
+        875.84
+      ],
+      "esri": [
+        640.12,
+        498.49
+      ],
+      "uncertaintyM": 0.8
+    },
+    {
+      "id": "V2",
+      "feature": "Middle pool water-colour centroid",
+      "google": [
+        440.4,
+        1339.61
+      ],
+      "esri": [
+        843.09,
+        792.72
+      ],
+      "uncertaintyM": 0.8
+    },
+    {
+      "id": "V3",
+      "feature": "Toddler pool water-colour centroid",
+      "google": [
+        1052.84,
+        1567.21
+      ],
+      "esri": [
+        1336.65,
+        756.17
+      ],
+      "uncertaintyM": 0.8
+    }
+  ],
+  "waterCentroids": {
+    "method": "trace_pools.components on RGB source with the existing is_water colour threshold; largest component in each window. Shadow/plant exclusions bias centroids. No model vertices used in extraction. Windows [left,top,right,bottom]. Main pool excluded because threshold separates its shadowed water into multiple components.",
+    "esri": {
+      "north": [
+        600,
+        460,
+        680,
+        530
+      ],
+      "middle": [
+        810,
+        760,
+        890,
+        830
+      ],
+      "south": [
+        970,
+        1150,
+        1050,
+        1235
+      ],
+      "toddler": [
+        1320,
+        745,
+        1350,
+        770
+      ]
+    },
+    "google": {
+      "north": [
+        310,
+        830,
+        410,
+        910
+      ],
+      "middle": [
+        390,
+        1310,
+        490,
+        1390
+      ],
+      "south": [
+        370,
+        1870,
+        445,
+        1970
+      ],
+      "toddler": [
+        1035,
+        1545,
+        1075,
+        1588
+      ]
+    }
+  },
+  "roofChecks": [
+    {
+      "id": "R1",
+      "building": "6165501UF1366N_part4",
+      "vertex": 5,
+      "esri": [
+        448,
+        438
+      ],
+      "note": "NW roof corner; also C1, not an independent registration validation"
+    },
+    {
+      "id": "R2",
+      "building": "6165501UF1366N_part2",
+      "vertex": 4,
+      "esri": [
+        527,
+        541
+      ],
+      "note": "Standalone western house, west corner"
+    },
+    {
+      "id": "R3",
+      "building": "6165501UF1366N_part2",
+      "vertex": 10,
+      "esri": [
+        574,
+        511
+      ],
+      "note": "Standalone western house, north corner"
+    },
+    {
+      "id": "R4",
+      "building": "6266601UF1366N_part2",
+      "vertex": 5,
+      "esri": [
+        584,
+        360
+      ],
+      "note": "North/Loira block, west roof corner"
+    },
+    {
+      "id": "R5",
+      "building": "6265401UF1366N_part4",
+      "vertex": 12,
+      "esri": [
+        763,
+        412
+      ],
+      "note": "Eastern double terrace, north roof corner"
+    },
+    {
+      "id": "R6",
+      "building": "6265201UF1366N_part3",
+      "vertex": 26,
+      "esri": [
+        713,
+        530
+      ],
+      "note": "South bordering terrace at Elena, north-east roof corner"
+    }
+  ],
+  "waterEdgeChecks": [
+    {
+      "id": "P1",
+      "esri": [
+        648,
+        476
+      ],
+      "note": "Visible northern water edge, cream deck excluded"
+    },
+    {
+      "id": "P2",
+      "esri": [
+        656,
+        501
+      ],
+      "note": "Tentative dark eastern rim (not water/deck datum); about2px selection ambiguity. Exact source pixel RGB67/95/98 inspected during independent review."
+    },
+    {
+      "id": "P3",
+      "esri": [
+        653,
+        514
+      ],
+      "note": "Southern water lobe, shadow boundary uncertain about 2 pixels"
+    },
+    {
+      "id": "P4",
+      "esri": [
+        621,
+        505
+      ],
+      "note": "Tentative western water/pale-rim transition; about 2px blur; vegetation conceals another part of SW lobe"
+    }
+  ],
+  "gapChecks": [
+    {
+      "id": "G1",
+      "a": "6165501UF1366N_part5",
+      "b": "6165501UF1366N_part2",
+      "note": "Nominal ground-plan gap beneath western upper canopies; not a surveyed access width"
+    },
+    {
+      "id": "G2",
+      "a": "6165501UF1366N_part5",
+      "b": "6266601UF1366N_part4",
+      "note": "North-row alley gap between registry solids; roof bridges treated separately"
+    },
+    {
+      "id": "G3",
+      "a": "6265201UF1366N_part3",
+      "b": "6265401UF1366N_part3",
+      "note": "Gap between south/east bordering terraces at Elena; includes private patio margins, not usable lane width"
+    }
+  ],
+  "limits": "All roof picks about 0.7–1.2 m; visible roof parapets and projecting balconies are not proven ground walls. Water picks about 0.5 m. No ground survey, camera calibration, source capture dates or independent absolute checkpoints are available. The Google standard screenshot and Apple 3D views are qualitative only.",
+  "rejectedPoolPicks": [
+    {
+      "id": "P2",
+      "esri": [
+        665,
+        501
+      ],
+      "reason": "Bright deck rather than water edge. First revised pick661,501 was also bright deck and rejected on exact-pixel inspection. Final dark-rim diagnostic is656,501; no claimed measured water boundary."
+    },
+    {
+      "id": "P4",
+      "esri": [
+        618,
+        505
+      ],
+      "reason": "Independent review identified pale rim/deck blur; tentative water transition repicked at621,505"
+    }
+  ]
+}
