@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 348,
-  "photosCitedByModel": 87,
-  "modelFeaturesWithPhotoCitations": 93
+  "features": 352,
+  "photosCitedByModel": 94,
+  "modelFeaturesWithPhotoCitations": 97
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -2704,7 +2704,8 @@
     "frontage_divisions.json:cervantes-front-patio",
     "frontage_divisions.json:cervantes-lawn-door-path",
     "junction_lawns.json:junction-pollarded-2",
-    "junction_lawns.json:junction-pollarded-3"
+    "junction_lawns.json:junction-pollarded-3",
+    "door_sills.json:elena-lawn-door-sill"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -2752,7 +2753,9 @@
     "frontage_divisions.json:cervantes-elena-lawn-1",
     "frontage_divisions.json:cervantes-elena-lawn-2",
     "frontage_divisions.json:cervantes-front-patio",
-    "frontage_divisions.json:cervantes-lawn-door-path"
+    "frontage_divisions.json:cervantes-lawn-door-path",
+    "door_sills.json:elena-lawn-door-sill",
+    "door_sills.json:elena-bed-door-sill"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -3592,7 +3595,9 @@
      "angleOffset": 22.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-south-arch-approach"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -123.9,
@@ -3930,7 +3935,9 @@
      "angleOffset": 29.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-footpath-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -161.4,
@@ -3984,7 +3991,9 @@
      "angleOffset": 4.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-footpath-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -162.4,
@@ -4044,7 +4053,9 @@
      "angleOffset": 20.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-footpath-kerb"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -156.4,
@@ -4082,7 +4093,9 @@
      "angleOffset": 12.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-south-arch-approach"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -122.9,
@@ -4120,7 +4133,9 @@
      "angleOffset": 15.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:dali-south-arch-approach"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -122.9,
@@ -4484,7 +4499,10 @@
      "angleOffset": 25.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "door_sills.json:elena-lawn-door-sill",
+    "door_sills.json:elena-bed-door-sill"
+   ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
     "x": -152.2,

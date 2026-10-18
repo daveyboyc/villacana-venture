@@ -620,7 +620,8 @@
     "layout browser test still walks every route both ways"
    ],
    "dependsOn": [],
-   "status": "open",
+   "status": "done",
+   "owner": "issue_57",
    "issue": 57
   }
  ]
