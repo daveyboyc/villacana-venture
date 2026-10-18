@@ -1,0 +1,105 @@
+{
+ "id": "north-pool-west-canopies",
+ "area": "north-pool",
+ "building": "6165501UF1366N_part5",
+ "reviewedAt": "2026-10-18",
+ "method": "Individually visible orange/brown projecting roof patches in georeferenced Esri ground.jpg; back edges anchored to unchanged registry longrow frontage. Apple08 confirms upper balcony canopy rather than ground porch. Plan edges deliberately conservative inside aerial roof/shadow uncertainty (about +-1m). Three patches are not repeated from a generic frontage rule.",
+ "mapEvidence": "public/map/ground.jpg",
+ "limits": "Only the three independently visible upper balcony roofs in the marked western gap are traced. No ground enclosure, door, post, floor level or hidden connection is inferred. Roof plan edges about ±1 m; eave/back elevations are estimates. Lawn/deck absence in user screenshot did not reproduce in current north-only and whole-resort captures.",
+ "canopies": [
+  {
+   "id": "north-west-balcony-canopy-1",
+   "name": "North pool west · observed upper balcony canopy 1",
+   "ring": [
+    [
+     -211.11,
+     25.213
+    ],
+    [
+     -206.919,
+     22.895
+    ],
+    [
+     -204.975,
+     26.433
+    ],
+    [
+     -209.175,
+     28.733
+    ]
+   ],
+   "backHeight": 5.4,
+   "eaveHeight": 4.8,
+   "thickness": 0.1,
+   "evidence": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ],
+   "trust": "Photo-supported: this individual terracotta roof projects from the west house row above an upper-floor balcony; its footprint is registered to the orange roof patch in the georeferenced aerial. Estimated: plan edges about ±1 m, 5.4 m back and 4.8 m eave above the unchanged house datum, .10 m thickness. Hidden ground divisions, supports and access below the canopy are untraced; no new ground enclosure or doorway is asserted."
+  },
+  {
+   "id": "north-west-balcony-canopy-2",
+   "name": "North pool west · observed upper balcony canopy 2",
+   "ring": [
+    [
+     -206.64,
+     22.732
+    ],
+    [
+     -202.578,
+     20.269
+    ],
+    [
+     -200.833,
+     23.248
+    ],
+    [
+     -204.933,
+     25.648
+    ]
+   ],
+   "backHeight": 5.4,
+   "eaveHeight": 4.8,
+   "thickness": 0.1,
+   "evidence": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ],
+   "trust": "Photo-supported: this individual terracotta roof projects from the west house row above an upper-floor balcony; its footprint is registered to the orange roof patch in the georeferenced aerial. Estimated: plan edges about ±1 m, 5.4 m back and 4.8 m eave above the unchanged house datum, .10 m thickness. Hidden ground divisions, supports and access below the canopy are untraced; no new ground enclosure or doorway is asserted."
+  },
+  {
+   "id": "north-west-balcony-canopy-3",
+   "name": "North pool west · observed upper balcony canopy 3",
+   "ring": [
+    [
+     -202.195,
+     20.039
+    ],
+    [
+     -198.213,
+     17.876
+    ],
+    [
+     -196.778,
+     20.312
+    ],
+    [
+     -200.678,
+     22.612
+    ]
+   ],
+   "backHeight": 5.4,
+   "eaveHeight": 4.8,
+   "thickness": 0.1,
+   "evidence": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ],
+   "trust": "Photo-supported: this individual terracotta roof projects from the west house row above an upper-floor balcony; its footprint is registered to the orange roof patch in the georeferenced aerial. Estimated: plan edges about ±1 m, 5.4 m back and 4.8 m eave above the unchanged house datum, .10 m thickness. Hidden ground divisions, supports and access below the canopy are untraced; no new ground enclosure or doorway is asserted."
+  }
+ ],
+ "attachment": "Back corners projected to the unchanged registry facade, then overlapped 0.05 m toward the house to close the mounting seam. Front eaves retain the independently reviewed aerial estimate; all plan edges remain about ±1 m."
+}

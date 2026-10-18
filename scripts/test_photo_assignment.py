@@ -4,7 +4,9 @@ import tempfile
 import unittest
 from pathlib import Path
 from PIL import Image
-from assign_photo_map import assign, features, ROOT
+from unittest.mock import patch
+from assign_photo_map import assign, build, features, ROOT
+import build_references
 from index_photos import index, project, metadata
 
 class PhotoAssignmentTests(unittest.TestCase):
@@ -66,5 +68,18 @@ class PhotoAssignmentTests(unittest.TestCase):
         a=assign(self.photo(file='IMG_2267.jpg'),model,self.bounds)
         self.assertTrue(a['citedBy'])
         self.assertIn('No recorded',a['geometryReview'])
+    def test_private_roof_sources_are_traceable_without_false_phone_citations(self):
+        s=json.loads((ROOT/'public/map/skeleton.json').read_text())
+        _,graph=build([],s,self.bounds)
+        ids={n['id'] for n in graph['nodes']}
+        self.assertTrue(all(e['from'] in ids and e['to'] in ids for e in graph['edges']))
+        sources=[e['from'] for e in graph['edges'] if e['relation']=='cited-as-source' and e['to'].startswith('north_west_canopies.json:')]
+        self.assertTrue(sources)
+        self.assertTrue(all(ref.startswith('ref:apple-maps/') for ref in sources))
+        catalog=[{'id':ref,'shows':['north-pool']} for ref in set(sources)]
+        with patch.object(build_references,'load',return_value=graph):
+            roofs=[f for f in build_references.model_features(catalog) if f['id'].startswith('north_west_canopies.json:')]
+        self.assertEqual(len(roofs),3)
+        self.assertTrue(all(f['areas']==['north-pool'] and all(ref in sources for ref in f['photos']) for f in roofs))
 
 if __name__=='__main__':unittest.main()

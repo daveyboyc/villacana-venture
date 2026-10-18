@@ -165,6 +165,23 @@ const path = require("node:path");
     for (const route of routes)
       for (const points of [route.points, [...route.points].reverse()])
         walk(points);
+    // Issue95: individually observed upper roofs remain above usable ground.
+    // Their map plans and actual mesh tops share the traced footprint; they add no ground wall.
+    {
+      const roofs=await import('/src/north-west-canopies.ts'),scene=new THREE.Scene();
+      roofs.addNorthWestCanopies(scene,s.buildings);scene.updateMatrixWorld(true);
+      const ray=new THREE.Raycaster(),baseY=roofs.canopyBase(s.buildings);
+      for(const c of roofs.northWestCanopies){
+        const ring=roofs.canopyRing(c),p=ring.reduce((v,q)=>[v[0]+q[0]/4,v[1]+q[1]/4],[0,0]);
+        if(!document.querySelector(`[data-terrace-id="${c.id}"]`))throw Error('Observed canopy missing from map '+c.id);
+        ray.set(new THREE.Vector3(p[0],12,p[1]),new THREE.Vector3(0,-1,0));
+        const hit=ray.intersectObjects(scene.children)[0];
+        if(!hit||hit.object.name!==c.id||Math.abs(hit.point.y-baseY-(c.backHeight+c.eaveHeight)/2)>.03)throw Error('Canopy height/plan disagrees '+c.id);
+        if(hit.point.y-world.groundHeight(...p)<2.2)throw Error('Upper canopy obstructs headroom '+c.id);
+        const resolved=world.solids.resolve(...p,.42);
+        if(Math.hypot(resolved.x-p[0],resolved.z-p[1])>.01)throw Error('Canopy acquired an invented ground obstruction '+c.id);
+      }
+    }
     // Up and down the steps beside the Cervantes ramp and out of the middle pool onto Calle Eva: one riser at a time, ending level with the ramp.
     for (const file of ["/data/cervantes_elena_steps.json", "/data/middle_pool_steps.json", "/data/middle_pool_north.json"]) {
       const { default: data } = await import(file);

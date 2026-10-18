@@ -1,4 +1,5 @@
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
+import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {addRaisedTerraces,raisedTerraceGroundOffset,raisedTerraceRings,suppressInRaisedTerraces} from "./raised-terraces";
@@ -188,6 +189,7 @@ async function boot(): Promise<void> {
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addNorthPoolGardenPath(scene);
+  addNorthWestCanopies(scene,skeleton.buildings);
   addRaisedTerraces(scene);
   const gate=addCoastalGate(scene,liveGroundY);
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
@@ -763,6 +765,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const t = (k + 0.5) / count;
         const x = ax + (bx - ax) * t;
         const z = az + (bz - az) * t;
+        if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         // Only where the house looks out over a lane or garden.
         if ([1, 2.5, 4.5].some((d) => blocked(x + nx * d, z + nz * d))) continue;

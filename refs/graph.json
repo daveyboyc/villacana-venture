@@ -1749,6 +1749,24 @@
    "verification": "unchecked"
   },
   {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "kind": "model-feature",
+   "name": "North pool west · observed upper balcony canopy 1",
+   "verification": "not-comparable"
+  },
+  {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "kind": "model-feature",
+   "name": "North pool west · observed upper balcony canopy 2",
+   "verification": "not-comparable"
+  },
+  {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "kind": "model-feature",
+   "name": "North pool west · observed upper balcony canopy 3",
+   "verification": "not-comparable"
+  },
+  {
    "id": "paseo_details.json:paseo-east-windbreak",
    "kind": "model-feature",
    "name": "Paseo · east green windbreak",
@@ -2152,6 +2170,15 @@
    "priority": 2,
    "status": "open",
    "verification": "unchecked"
+  },
+  {
+   "id": "task:north-pool-west-frontage",
+   "kind": "build-task",
+   "name": "North pool west courtyard: missing observed balcony canopies",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-comparable",
+   "issue": 95
   }
  ],
  "edges": [
@@ -6106,6 +6133,51 @@
    "relation": "cites"
   },
   {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_details.json:paseo-east-windbreak",
    "to": "ref:IMG_2350.jpg",
    "relation": "cites"
@@ -6786,6 +6858,21 @@
    "relation": "in-area"
   },
   {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "paseo_details.json:paseo-east-windbreak",
    "to": "area:paseo",
    "relation": "in-area"
@@ -6942,6 +7029,87 @@
    "task": "middle-pool-south-gate",
    "checked": "2026-10-18",
    "render": "docs/reviews/middle-pool-south-gate/IMG_2335-after.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "checked-against",
+   "result": "not-comparable",
+   "task": "north-pool-west-frontage",
+   "checked": "2026-10-18",
+   "render": "docs/reviews/issue-95/after/west-oblique.png"
   },
   {
    "from": "ref:IMG_2182.jpg",
@@ -8608,6 +8776,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:north-pool-west-frontage",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -9098,6 +9271,21 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:north-pool-west-frontage",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -9140,6 +9328,16 @@
   {
    "from": "task:middle-pool-south-forecourt",
    "to": "task:middle-pool-south-gate",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "task:raised-terraces",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "task:north-pool-garden-walls",
    "relation": "depends-on"
   }
  ]

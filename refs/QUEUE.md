@@ -9,6 +9,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../public/photos-ref/IMG_2227.jpg), [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2226](../public/photos-ref/IMG_2226.jpg) |
 | P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | done · issue_31 · photos: legacy-unchecked | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg), [IMG_2331](../public/photos-ref/IMG_2331.jpg), [IMG_2245](../public/photos-ref/IMG_2245.jpg) |
+| P1 | `north-pool-west-frontage` [#95](https://github.com/daveyboyc/villacana-venture/issues/95) | North pool west courtyard: missing observed balcony canopies (after raised-terraces, north-pool-garden-walls) | done · Codex · photos: not-comparable | `apple-maps/08-3d-north-pool-looking-west-porches.png`, `apple-maps/09-3d-north-pool-looking-south.png`, `apple-maps/02-3d-north-pool.png` |
 | P1 | `raised-terraces` [#54](https://github.com/daveyboyc/villacana-venture/issues/54) | Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair | done · issue_54 · photos: legacy-unchecked | [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2206](../public/photos-ref/IMG_2206.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg) |
 | P1 | `paseo-retaining-wall` | Paseo: sandstone retaining wall, mesh fence and level drop | done · claude (subagent) · photos: legacy-unchecked | [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2349](../public/photos-ref/IMG_2349.jpg), [IMG_2352](../public/photos-ref/IMG_2352.jpg), [IMG_2354](../public/photos-ref/IMG_2354.jpg) |
 | P2 | `shoreline-check` [#32](https://github.com/daveyboyc/villacana-venture/issues/32) | Beach: shoreline outline vs IMG_2285 (pin falls in the sea) | done · issue_32 · photos: legacy-unchecked | [IMG_2285](../public/photos-ref/IMG_2285.jpg), [IMG_2298](../public/photos-ref/IMG_2298.jpg), [IMG_2299](../public/photos-ref/IMG_2299.jpg), [IMG_2300](../public/photos-ref/IMG_2300.jpg) |
@@ -67,7 +68,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 ## By area
 
-- **North pool** ([brief](areas/north-pool.md)): `raised-terraces`, `north-pool-garden-walls`
+- **North pool** ([brief](areas/north-pool.md)): `north-pool-west-frontage`, `raised-terraces`, `north-pool-garden-walls`
 - **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-south-forecourt`, `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
 - **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
 - **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`

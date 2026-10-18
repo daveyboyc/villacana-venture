@@ -35,4 +35,4 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 172 references: 172 reviewed, 0 with areas suggested only from the camera position.
 
-Photo checks (`data/photo_checks.json`): 2 renders compared with their photos, 1 match, 1 differ. 25 of 26 done tasks have never been checked against their photos (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 11 renders compared with their photos, 1 match, 1 differ. 25 of 27 done tasks have never been checked against their photos (QUEUE.md, verification backlog).

@@ -121,6 +121,8 @@ def features(s):
         add('cervantes_garden_door.json:'+f['id'],f['id'],'reference feature','authored photo/levels interpretation',ring=f['ring'],evidence=f['evidence'])
     north_path=json.loads((ROOT/'data/north_pool_gardens.json').read_text())
     add('north_pool_gardens.json:'+north_path['id'],north_path['name'],'reference feature','authored photo/map interpretation',ring=north_path['ring'],evidence=north_path['evidence'])
+    for roof in json.loads((ROOT/'data/north_west_canopies.json').read_text())['canopies']:
+        add('north_west_canopies.json:'+roof['id'],roof['name'],'reference feature','individually observed upper balcony roof; aerial trace estimated',ring=roof['ring'],evidence=roof['evidence'])
     for t in json.loads((ROOT/'data/raised_terraces.json').read_text())['terraces']:
         add('raised_terraces.json:'+t['id'],t['name'],'reference feature','authored photo/levels interpretation',ring=t['outline'],evidence=t['evidence'])
     for name in ('cervantes_elena_steps','middle_pool_steps'):
@@ -192,6 +194,13 @@ def build(manifest,s,bounds):
         for q in a['nearby']:edges.append({'from':id,'to':q['id'],'relation':'camera-nearby','gap':q['gap']})
         for q in a['inViewCandidates']:edges.append({'from':id,'to':q['id'],'relation':'possibly-in-view','distance':q['distance'],'angleOffset':q['angleOffset']})
         for id2 in a['citedBy']:edges.append({'from':id,'to':id2,'relation':'cited-as-source','visualValidation':'not established by citation'})
+    # Private indexed references can support a structure without publishing their images
+    # or falsely citing a public phone photo that does not show it.
+    private_refs=sorted({ref for f in model for ref in f.get('evidence',[]) if ref.startswith('ref:')})
+    for ref in private_refs:
+        nodes.append({'id':ref,'kind':'reference','name':ref})
+        for f in model:
+            if ref in f.get('evidence',[]):edges.append({'from':ref,'to':f['id'],'relation':'cited-as-source','visualValidation':'not established by citation'})
     summary=dict(Counter(a['status'] for a in assignments));summary.update(photos=len(manifest),features=len(model),photosCitedByModel=sum(bool(a['citedBy']) for a in assignments),modelFeaturesWithPhotoCitations=sum(bool(f.get('evidence')) for f in model))
     # Digest rather than a runtime timestamp makes repeated builds deterministic.
     digest=hashlib.sha256(json.dumps([manifest,s],sort_keys=True).encode()).hexdigest()

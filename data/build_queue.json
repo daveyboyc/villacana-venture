@@ -646,6 +646,33 @@
     "middle-pool-south-gate"
    ],
    "status": "open"
+  },
+  {
+   "id": "north-pool-west-frontage",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "structure",
+   "title": "North pool west courtyard: missing observed balcony canopies",
+   "photos": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ],
+   "build": "Trace the three individually visible terracotta upper balcony canopy footprints in the circled west gap using the georeferenced aerial and Apple courtyard views. Keep them structural in Layout and Details, with matching map roof plans; leave ground collision and registry unchanged.",
+   "avoid": "Do not place the IMG_2206 garden doors in this gap: registered controls put them poolward, outside the circle. Do not infer hidden ground enclosures, columns or floor changes. The user screenshot lawn/deck absence did not reproduce in current captures.",
+   "accept": [
+    "paired marked-area overview and photo-camera renders",
+    "independent original photo and aerial review",
+    "source, build and browser checks"
+   ],
+   "dependsOn": [
+    "raised-terraces",
+    "north-pool-garden-walls"
+   ],
+   "status": "done",
+   "issue": 95,
+   "owner": "Codex",
+   "notes": "Three individually registered upper balcony canopies restored in Layout/Details/map after independent aerial/oblique review and passing source/build/browser checks. This bounded correction does not claim concealed ground layout or the unreproduced mobile lawn/deck discrepancy is resolved."
   }
  ]
 }

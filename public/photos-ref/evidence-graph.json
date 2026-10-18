@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 354,
+  "features": 357,
   "photosCitedByModel": 96,
-  "modelFeaturesWithPhotoCitations": 99
+  "modelFeaturesWithPhotoCitations": 102
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2711,6 +2711,39 @@
    ]
   },
   {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "name": "North pool west · observed upper balcony canopy 1",
+   "kind": "reference feature",
+   "source": "individually observed upper balcony roof; aerial trace estimated",
+   "evidence": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ]
+  },
+  {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "name": "North pool west · observed upper balcony canopy 2",
+   "kind": "reference feature",
+   "source": "individually observed upper balcony roof; aerial trace estimated",
+   "evidence": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ]
+  },
+  {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "name": "North pool west · observed upper balcony canopy 3",
+   "kind": "reference feature",
+   "source": "individually observed upper balcony roof; aerial trace estimated",
+   "evidence": [
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
+   ]
+  },
+  {
    "id": "raised_terraces.json:north-pool-west-terrace",
    "name": "North pool · north-west raised terrace and tiled stair",
    "kind": "reference feature",
@@ -3863,6 +3896,21 @@
    "name": "Roof by Elena: patios and terraces south-west (second shot)",
    "file": "IMG_2369.jpg",
    "status": "needs-review"
+  },
+  {
+   "id": "ref:apple-maps/02-3d-north-pool.png",
+   "kind": "reference",
+   "name": "ref:apple-maps/02-3d-north-pool.png"
+  },
+  {
+   "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "kind": "reference",
+   "name": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png"
+  },
+  {
+   "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "kind": "reference",
+   "name": "ref:apple-maps/09-3d-north-pool-looking-south.png"
   }
  ],
  "edges": [
@@ -8559,6 +8607,60 @@
   {
    "from": "photo:IMG_2369.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/02-3d-north-pool.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/02-3d-north-pool.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/02-3d-north-pool.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "to": "north_west_canopies.json:north-west-balcony-canopy-3",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   }

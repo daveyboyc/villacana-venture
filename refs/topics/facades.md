@@ -9,14 +9,14 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios._ |
+| `villacana-reference/apple-maps/02-3d-north-pool.png` | aerial | layout, facades | Apple Maps 3D: north pool and surrounding terraces _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
+| `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
 | [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-north-patios._ |
 | [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace._ |
 | `villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg` | upper-floor | layout, facades, planting, view | North pool: the whole courtyard looking north. The best single reference for it. |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
-| `villacana-reference/apple-maps/02-3d-north-pool.png` | aerial | layout, facades | Apple Maps 3D: north pool and surrounding terraces |
 | `villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg` | upper-floor | planting, facades | North pool: roof tiles, a yucca, a patio behind a hedge |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |
-| `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies |
 
 ## Middle pool
 

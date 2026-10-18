@@ -23,6 +23,105 @@
    "by": "Claude (Dave's review of the live site)",
    "result": "matches",
    "notes": "Seat-height bench with a low plinth, recessed into the planter with planter either side, under a tall white wall with the tile panel; the open leaf is to its left (gate side) as in the photo. Tile motifs are schematic and the cypress and geraniums are Details planting."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "photo": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "photo": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "photo": "ref:apple-maps/02-3d-north-pool.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "photo": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "photo": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "photo": "ref:apple-maps/02-3d-north-pool.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "photo": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "photo": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
+  },
+  {
+   "task": "north-pool-west-frontage",
+   "feature": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "photo": "ref:apple-maps/02-3d-north-pool.png",
+   "before": "docs/reviews/issue-95/before/west-oblique.png",
+   "render": "docs/reviews/issue-95/after/west-oblique.png",
+   "checked": "2026-10-18",
+   "by": "Codex and independent north_mismatch_review",
+   "result": "not-comparable",
+   "notes": "Exact Apple Maps camera pose is unavailable, so no calibrated same-camera match is claimed. Independent aerial and oblique review confirms this individual projecting upper balcony roof and the bounded outline; the committed pair uses one shared estimated diagnostic camera. Plan edges ±1 m and 4.8/5.4 m eave/rear heights remain estimates. Hidden balcony/ground divisions are not modelled."
   }
  ],
  "legacyUnchecked": [

@@ -5734,7 +5734,11 @@
    "facades"
   ],
   "note": null,
-  "citedBy": []
+  "citedBy": [
+   "north_west_canopies.json:north-west-balcony-canopy-1",
+   "north_west_canopies.json:north-west-balcony-canopy-2",
+   "north_west_canopies.json:north-west-balcony-canopy-3"
+  ]
  },
  {
   "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
@@ -5837,7 +5841,11 @@
    "facades"
   ],
   "note": null,
-  "citedBy": []
+  "citedBy": [
+   "north_west_canopies.json:north-west-balcony-canopy-1",
+   "north_west_canopies.json:north-west-balcony-canopy-2",
+   "north_west_canopies.json:north-west-balcony-canopy-3"
+  ]
  },
  {
   "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
@@ -5853,7 +5861,11 @@
    "layout"
   ],
   "note": null,
-  "citedBy": []
+  "citedBy": [
+   "north_west_canopies.json:north-west-balcony-canopy-1",
+   "north_west_canopies.json:north-west-balcony-canopy-2",
+   "north_west_canopies.json:north-west-balcony-canopy-3"
+  ]
  },
  {
   "id": "ref:google-maps/01-street-map-lane-names.png",

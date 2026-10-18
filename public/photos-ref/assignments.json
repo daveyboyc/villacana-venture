@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 354,
+  "features": 357,
   "photosCitedByModel": 96,
-  "modelFeaturesWithPhotoCitations": 99
+  "modelFeaturesWithPhotoCitations": 102
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
