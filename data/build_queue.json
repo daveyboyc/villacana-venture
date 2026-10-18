@@ -768,6 +768,26 @@
     "unified-reference-map"
    ],
    "status": "open"
+  },
+  {
+   "id": "placement-verification-gate",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Gate graph placement verification on fresh measured evidence and independent review",
+   "photos": [],
+   "build": "Separate placement verification from photo diagnostics and software checks. Require feature-specific evidence packets, independent validation controls and reviews, current source/model/artifact digests and explicit discrepancy resolution. Show the Barraka planter report as disputed. Gate new geometry completion and PR geometry changes; expose blockers in graph, briefs, map agent references and CLI.",
+   "avoid": "Do not invent a planter correction, fabricate photographic matches or erase previous manual reviews. A citation, task done flag, unrelated photo check or software PASS must not verify a placement.",
+   "accept": [
+    "Positive and negative policy tests including partial checks, stale evidence, wrong-feature citations, review identity and open discrepancy blockers",
+    "Barraka planter is disputed and reports a concrete follow-up",
+    "Reference generation, handover source/build/browser checks and PR gate pass"
+   ],
+   "dependsOn": [
+    "unified-reference-map"
+   ],
+   "status": "in-progress",
+   "owner": "Codex"
   }
  ]
 }

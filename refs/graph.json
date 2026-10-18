@@ -2212,6 +2212,14 @@
    "priority": 2,
    "status": "open",
    "verification": "unchecked"
+  },
+  {
+   "id": "task:placement-verification-gate",
+   "kind": "build-task",
+   "name": "Gate graph placement verification on fresh measured evidence and independent review",
+   "priority": 1,
+   "status": "in-progress",
+   "verification": "not-applicable (tooling)"
   }
  ],
  "edges": [
@@ -8918,6 +8926,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:placement-verification-gate",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -9564,6 +9577,11 @@
   },
   {
    "from": "task:barraka-barbecue-boat",
+   "to": "task:unified-reference-map",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:placement-verification-gate",
    "to": "task:unified-reference-map",
    "relation": "depends-on"
   }
