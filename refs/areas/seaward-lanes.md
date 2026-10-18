@@ -22,20 +22,22 @@ Layout: 21, Levels and slopes: 2, Facades and roofs: 1, Materials: 15, Planting:
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo"]
-  A --> F0["seaward patterned floor"]
+  A --> F0["seaward patterned floor · unchecked"]
   F0 --> PIMG_2185_jpg(["IMG_2185"])
-  A --> F1["silvia patterned floor"]
+  A --> F1["silvia patterned floor · unchecked"]
   F1 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F2["teodoro octagonal paving"]
+  A --> F2["teodoro octagonal paving · unchecked"]
   F2 --> PIMG_2235_jpg(["IMG_2235"])
   F2 --> PIMG_2237_jpg(["IMG_2237"])
   F2 --> PIMG_2239_jpg(["IMG_2239"])
 ```
+
+**Built but never checked against its photos:** `seaward-lanes-paving`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
@@ -64,7 +66,7 @@ graph LR
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
-| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |

@@ -1818,7 +1818,12 @@
    "layout",
    "levels",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -127.3,
+   104.3
+  ],
+  "subject": "south gate, double iron leaves and the planter to its right"
  },
  "IMG_2335.jpg": {
   "shows": [
@@ -1826,9 +1831,15 @@
   ],
   "viewpoint": "ground",
   "useFor": [
+   "layout",
    "materials",
    "facades"
-  ]
+  ],
+  "looksAt": [
+   -129.2,
+   103.0
+  ],
+  "subject": "wall bench and blue/yellow tile panel in the west planter, inside the south gate"
  },
  "IMG_2336.jpg": {
   "shows": [

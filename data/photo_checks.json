@@ -1,0 +1,55 @@
+{
+ "about": "Render-versus-photo checks: the only record that a built feature was compared with the photos it cites. A 'cites' edge in refs/graph.json only says an author used a photo; a check says someone rendered the game from that photo's camera (scripts/shoot_views.cjs --task=<id> --as=after) and compared the two. Each check: task (data/build_queue.json id), feature (evidence-graph feature id), photo, render (committed after-render, usually docs/reviews/<task>/<photo>-after.png), before (optional), checked (date), by, result matches | differs | not-comparable, notes, and for differs a followUp task id that is not done. A photo used for a check needs a reviewed looksAt in data/reference_tags.json so the render faces the photo's subject. build_references.py --check fails when a done task has a photo without a check, unless the task is in legacyUnchecked; that list may only shrink.",
+ "checks": [
+  {
+   "task": "middle-pool-south-gate",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/middle-pool-south-gate/IMG_2334-before.png",
+   "render": "docs/reviews/middle-pool-south-gate/IMG_2334-after.png",
+   "checked": "2026-10-18",
+   "by": "Claude (Dave's review of the live site)",
+   "result": "differs",
+   "notes": "Gate, open right leaf, planter and wall bench now come in the photo's order: about 1.7 m of planter behind the leaf, then the bench recess and tiled wall, then more planter. Before, the bench sat 0.1-1.1 m from the gate, directly behind the open leaf. Still different: the model shows lawn either side of a crossing tiled path where the photo shows a narrow crazy-paved forecourt with a tall hedge on the left.",
+   "followUp": "middle-pool-south-forecourt"
+  },
+  {
+   "task": "middle-pool-south-gate",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "photo": "IMG_2335.jpg",
+   "before": "docs/reviews/middle-pool-south-gate/IMG_2335-before.png",
+   "render": "docs/reviews/middle-pool-south-gate/IMG_2335-after.png",
+   "checked": "2026-10-18",
+   "by": "Claude (Dave's review of the live site)",
+   "result": "matches",
+   "notes": "Seat-height bench with a low plinth, recessed into the planter with planter either side, under a tall white wall with the tile panel; the open leaf is to its left (gate side) as in the photo. Tile motifs are schematic and the cypress and geraniums are Details planting."
+  }
+ ],
+ "legacyUnchecked": [
+  "barraka-boardwalk",
+  "cervantes-door-steps",
+  "cervantes-east-hedge",
+  "cervantes-east-south-patios",
+  "cervantes-north-patios",
+  "cervantes-steps-treads",
+  "door-sills",
+  "elena-east-patios",
+  "elena-garden-door",
+  "elena-gated-entry",
+  "eva-walled-lawn",
+  "junction-lawns",
+  "middle-pool-north-entrance",
+  "middle-pool-raised-patios",
+  "middle-pool-sw-steps",
+  "north-pool-garden-walls",
+  "paseo-details",
+  "paseo-house-clearance",
+  "paseo-retaining-wall",
+  "paseo-retrace-line",
+  "picasso-service-road",
+  "raised-terraces",
+  "seaward-lanes-paving",
+  "shoreline-check",
+  "south-pool-seaward-level"
+ ]
+}

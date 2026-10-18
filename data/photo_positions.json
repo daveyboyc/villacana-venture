@@ -196,5 +196,33 @@
    "z": 126.2,
    "accuracy": 7.7
   }
+ },
+ "IMG_2334.HEIC": {
+  "x": -129.5,
+  "z": 100.0,
+  "accuracy": 1.5,
+  "trust": "checked against photo content",
+  "locationBasis": "Placed from photo content on 18 Oct: perspective of IMG_2334 with the 1.85 m gate opening as scale puts the camera about 4.9 m back from the gate line, slightly right of its centre, looking straight through it.",
+  "gps": {
+   "x": -126.1,
+   "z": 102.0,
+   "accuracy": 4.7
+  },
+  "heading": 153,
+  "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 162)"
+ },
+ "IMG_2335.HEIC": {
+  "x": -128.3,
+  "z": 100.9,
+  "accuracy": 1.5,
+  "trust": "checked against photo content",
+  "locationBasis": "Placed from photo content on 18 Oct: the camera stands on the crazy paving facing the bench recess across the path (south-south-west), with the open gate leaf at the left edge of the frame. The phone compass (189 degrees) agrees within about 15 degrees; the GPS pin was 3.6 m east, in the gateway itself.",
+  "gps": {
+   "x": -125.6,
+   "z": 103.3,
+   "accuracy": 4.7
+  },
+  "heading": 203,
+  "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 189)"
  }
 }

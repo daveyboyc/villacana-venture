@@ -110,9 +110,15 @@ have been compared with the rendered model.
 3. Record which feature cites which photos and which assumptions remain estimated.
    Compare rendered views from similar camera positions where possible:
    `node scripts/shoot_views.cjs IMG_xxxx --details` renders the game from a
-   photo's pin and heading into `layout-checks.local/views/`. There is
-   currently no calibrated pixel comparison, measured dimensional reconstruction,
-   photogrammetry or systematic rendered comparison for every image.
+   photo's pin, facing its `looksAt` (or, with a warning, the phone heading) into
+   `layout-checks.local/views/`; `--task=<id> --as=before|after` also saves it in
+   `docs/reviews/<id>/`. Each comparison is recorded in `data/photo_checks.json`
+   (matches, differs with an open follow-up task, or not-comparable) and becomes a
+   `checked-against` edge in `refs/graph.json`. A done task must have one for every
+   photo it builds from; tasks done before 18 October are the verification backlog
+   in `refs/QUEUE.md`. There is still no calibrated pixel comparison or
+   photogrammetry: the comparison is by eye, against measured distances read from
+   the photo.
 4. Geometry checks catch paths through houses/water, wall/kerb clearance and closed
    openings. Actual Player traversals catch blocked routes and collision errors.
    Type/build and browser checks catch loading, controls and label persistence.

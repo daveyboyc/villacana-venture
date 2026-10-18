@@ -32,60 +32,60 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["Calle Pintor Dalí"]
-  A --> F0["Dalí · gate pier"]
+  A --> F0["Dalí · gate pier · unchecked"]
   F0 --> PIMG_2284_jpg(["IMG_2284"])
   F0 --> PIMG_2296_jpg(["IMG_2296"])
   F0 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F1["Dalí · white plinth and rigid metal mesh"]
+  A --> F1["Dalí · white plinth and rigid metal mesh · unchecked"]
   F1 --> PIMG_2284_jpg(["IMG_2284"])
   F1 --> PIMG_2296_jpg(["IMG_2296"])
   F1 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F2["Dalí · tall white coastal wall"]
+  A --> F2["Dalí · tall white coastal wall · unchecked"]
   F2 --> PIMG_2284_jpg(["IMG_2284"])
   F2 --> PIMG_2296_jpg(["IMG_2296"])
   F2 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F3["Cervantes · tiled parking crossing"]
+  A --> F3["Cervantes · tiled parking crossing · unchecked"]
   F3 --> PIMG_2267_jpg(["IMG_2267"])
   F3 --> PIMG_2268_jpg(["IMG_2268"])
   F3 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F4["Dalí · parking bays"]
+  A --> F4["Dalí · parking bays · unchecked"]
   F4 --> PIMG_2267_jpg(["IMG_2267"])
   F4 --> PIMG_2268_jpg(["IMG_2268"])
   F4 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F5["Dalí · parking bays"]
+  A --> F5["Dalí · parking bays · unchecked"]
   F5 --> PIMG_2267_jpg(["IMG_2267"])
   F5 --> PIMG_2268_jpg(["IMG_2268"])
   F5 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F6["Dalí · house-side footpath"]
+  A --> F6["Dalí · house-side footpath · unchecked"]
   F6 --> PIMG_2267_jpg(["IMG_2267"])
   F6 --> PIMG_2268_jpg(["IMG_2268"])
   F6 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F7["Dalí · house-side footpath"]
+  A --> F7["Dalí · house-side footpath · unchecked"]
   F7 --> PIMG_2267_jpg(["IMG_2267"])
   F7 --> PIMG_2268_jpg(["IMG_2268"])
   F7 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F8["Dalí · grass strip"]
+  A --> F8["Dalí · grass strip · unchecked"]
   F8 --> PIMG_2267_jpg(["IMG_2267"])
   F8 --> PIMG_2268_jpg(["IMG_2268"])
   F8 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F9["Dalí · grass strip"]
+  A --> F9["Dalí · grass strip · unchecked"]
   F9 --> PIMG_2267_jpg(["IMG_2267"])
   F9 --> PIMG_2268_jpg(["IMG_2268"])
   F9 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F10["Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia"]
+  A --> F10["Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia · unchecked"]
   F10 --> PIMG_2291_jpg(["IMG_2291"])
   F10 --> PIMG_2292_jpg(["IMG_2292"])
   F10 --> PIMG_2293_jpg(["IMG_2293"])
-  A --> F11["Pintor Dalí south · flagstone approach to the arch"]
+  A --> F11["Pintor Dalí south · flagstone approach to the arch · unchecked"]
   F11 --> PIMG_2283_jpg(["IMG_2283"])
   F11 --> PIMG_2294_jpg(["IMG_2294"])
   F11 --> PIMG_2295_jpg(["IMG_2295"])
-  A --> F12["Dalí · coastal pedestrian gate"]
+  A --> F12["Dalí · coastal pedestrian gate · unchecked"]
   F12 --> PIMG_2284_jpg(["IMG_2284"])
   F12 --> PIMG_2296_jpg(["IMG_2296"])
   F12 --> PIMG_2297_jpg(["IMG_2297"])
