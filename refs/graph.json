@@ -1676,6 +1676,21 @@
    "name": "North pool · visible crazy-paving lawn-edge path"
   },
   {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "kind": "model-feature",
+   "name": "North pool west · observed upper balcony canopy 1"
+  },
+  {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "kind": "model-feature",
+   "name": "North pool west · observed upper balcony canopy 2"
+  },
+  {
+   "id": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "kind": "model-feature",
+   "name": "North pool west · observed upper balcony canopy 3"
+  },
+  {
    "id": "paseo_details.json:paseo-east-windbreak",
    "kind": "model-feature",
    "name": "Paseo · east green windbreak"
@@ -2018,6 +2033,14 @@
    "priority": 3,
    "status": "done",
    "issue": 57
+  },
+  {
+   "id": "task:north-pool-west-frontage",
+   "kind": "build-task",
+   "name": "North pool west courtyard: missing observed balcony canopies",
+   "priority": 1,
+   "status": "done",
+   "issue": 95
   }
  ],
  "edges": [
@@ -5967,6 +5990,51 @@
    "relation": "cites"
   },
   {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "cites"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "cites"
+  },
+  {
    "from": "paseo_details.json:paseo-east-windbreak",
    "to": "ref:IMG_2350.jpg",
    "relation": "cites"
@@ -6643,6 +6711,21 @@
   },
   {
    "from": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-1",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-2",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "north_west_canopies.json:north-west-balcony-canopy-3",
    "to": "area:north-pool",
    "relation": "in-area"
   },
@@ -8410,6 +8493,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:north-pool-west-frontage",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -8890,6 +8978,21 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:north-pool-west-frontage",
+   "to": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "ref:apple-maps/02-3d-north-pool.png",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -8927,6 +9030,16 @@
   {
    "from": "task:middle-pool-raised-patios",
    "to": "task:raised-terraces",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "task:raised-terraces",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:north-pool-west-frontage",
+   "to": "task:north-pool-garden-walls",
    "relation": "depends-on"
   }
  ]

@@ -630,14 +630,14 @@
    "area": "north-pool",
    "priority": 1,
    "kind": "structure",
-   "title": "North pool west courtyard: photographed gardens and closed doorways",
+   "title": "North pool west courtyard: missing observed balcony canopies",
    "photos": [
-    "IMG_2206.jpg",
-    "IMG_2208.jpg",
-    "IMG_2204.jpg"
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:apple-maps/02-3d-north-pool.png"
    ],
-   "build": "Trace only the visible west garden/patio pockets and closed brown door structures below the northwest terrace, registered against the georeferenced aerial and the west-facing Apple courtyard view. Share map, mesh and collision; keep the curved common path clear.",
-   "avoid": "Do not move registry houses or pool, extend the raised terrace into the private gardens, repeat doors, or invent hidden enclosure limits. The user screenshot lawn/deck disappearance has not reproduced on current north-only/whole-resort renders.",
+   "build": "Trace the three individually visible terracotta upper balcony canopy footprints in the circled west gap using the georeferenced aerial and Apple courtyard views. Keep them structural in Layout and Details, with matching map roof plans; leave ground collision and registry unchanged.",
+   "avoid": "Do not place the IMG_2206 garden doors in this gap: registered controls put them poolward, outside the circle. Do not infer hidden ground enclosures, columns or floor changes. The user screenshot lawn/deck absence did not reproduce in current captures.",
    "accept": [
     "paired marked-area overview and photo-camera renders",
     "independent original photo and aerial review",
@@ -647,9 +647,10 @@
     "raised-terraces",
     "north-pool-garden-walls"
    ],
-   "status": "in-progress",
+   "status": "done",
    "issue": 95,
-   "owner": "Codex"
+   "owner": "Codex",
+   "notes": "Three individually registered upper balcony canopies restored in Layout/Details/map after independent aerial/oblique review and passing source/build/browser checks. This bounded correction does not claim concealed ground layout or the unreproduced mobile lawn/deck discrepancy is resolved."
   }
  ]
 }
