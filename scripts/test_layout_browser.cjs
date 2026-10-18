@@ -185,6 +185,11 @@ const path = require("node:path");
     // faces are solid, the opening is open, and the lawn and pool deck keep their level.
     for (const t of raisedTerraces) {
       if (!document.querySelector(`[data-terrace-id="${t.id}"]`)) throw Error(t.id + ": missing from the map");
+      // Issue 55: enclosed private patios and soil beds do not lift the playable lawn.
+      if (t.area === 'middle-pool') {
+        const c = t.outline.reduce((sum, p) => [sum[0] + p[0] / t.outline.length, sum[1] + p[1] / t.outline.length], [0, 0]);
+        if (t.walkable || t.openings.length || raisedTerraceGroundOffset(...c) !== 0) throw Error(t.id + ': inferred private access or changed public ground');
+      }
       const floor = terraceFloorY(t) + 0.06, settle = () => { for (let i = 0; i < 120; i++) player.update(1 / 120, input, world, 0); };
       for (const f of terraceStairs(t)) {
         const at = (d, c = 0) => [f.foot[0] + f.up[0] * d + f.right[0] * c, f.foot[1] + f.up[1] * d + f.right[1] * c];
@@ -216,6 +221,9 @@ const path = require("node:path");
         if (Math.hypot(out.x - c[0], out.z - c[1]) < 0.15) throw Error(t.id + ": terrace face is not solid at " + c);
       }
     }
+    // IMG_2194 shows a grass opening; neither a private wall nor an invented stair closes it.
+    const middleNorthGap = [-125.65, 81.7], gapResolved = world.solids.resolve(...middleNorthGap, 0.42);
+    if (Math.hypot(gapResolved.x - middleNorthGap[0], gapResolved.z - middleNorthGap[1]) > 0.02 || raisedTerraceGroundOffset(...middleNorthGap) !== 0) throw Error('Middle pool north grass opening is blocked or raised');
     for (const pool of s.pools) {
       const [cx, cz] = pool.ring.reduce((a, q) => [a[0] + q[0] / pool.ring.length, a[1] + q[1] / pool.ring.length], [0, 0]);
       if (raisedTerraceGroundOffset(cx, cz) !== 0 || pool.ring.some((q) => raisedTerraceGroundOffset(...q) !== 0)) throw Error("A raised terrace lifts the " + pool.id + " pool");
