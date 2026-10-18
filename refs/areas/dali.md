@@ -8,7 +8,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 - The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.
 - IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.
-- Issue #57 (docs/DOOR_SILLS.md): finite photo-backed footpath/lawn/outer parking kerb (IMG_2291), two flush drains (2291/2293), and a continuous .25 m / 5.61 m south approach with flared .20 m kerbs and grooved toe (2283). A .3 m exterior landing covers reachable space before the unchanged solid registry facade. The passage itself is untraced; no new walk-through is claimed. Only local movement datums are reconciled with the visible surfaces; the outer 2 m blend remains an approximation to inherited road/player mismatch.
+- Issue #57 (docs/DOOR_SILLS.md): finite photo-backed footpath/lawn/outer parking kerb (IMG_2291), a bounded asphalt apron joining that kerb to the unchanged Dalí road ribbon edge (closing the inherited .92-1.32 m brown strip), two flush drains (2291/2293), and a continuous .25 m / 5.61 m south approach with flared .20 m kerbs and grooved toe (2283). A .3 m exterior landing covers reachable space before the unchanged solid registry facade. The passage itself is untraced; no new walk-through is claimed. Only local movement datums are reconciled with the visible surfaces; the outer 2 m blend remains an approximation to inherited road/player mismatch.
 
 ## Read first
 
@@ -81,18 +81,20 @@ graph LR
   F10 --> PIMG_2291_jpg(["IMG_2291"])
   A --> F11["Dalí · parking-facing kerb beyond the lawn"]
   F11 --> PIMG_2291_jpg(["IMG_2291"])
-  A --> F12["Dalí · bounded house-side footpath at photographed arch"]
+  A --> F12["Dalí · finite asphalt apron between photographed parking kerb and existing road edge"]
   F12 --> PIMG_2291_jpg(["IMG_2291"])
-  A --> F13["Dalí · photographed lawn between footpath and parking kerb"]
+  A --> F13["Dalí · bounded house-side footpath at photographed arch"]
   F13 --> PIMG_2291_jpg(["IMG_2291"])
-  A --> F14["Dalí · photographed lane-entry slot drain"]
-  F14 --> PIMG_2293_jpg(["IMG_2293"])
-  A --> F15["Dalí · coastal pedestrian gate"]
-  F15 --> PIMG_2284_jpg(["IMG_2284"])
-  F15 --> PIMG_2296_jpg(["IMG_2296"])
-  F15 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F16["Dalí south · gentle flagstone approach"]
-  F16 --> PIMG_2283_jpg(["IMG_2283"])
+  A --> F14["Dalí · photographed lawn between footpath and parking kerb"]
+  F14 --> PIMG_2291_jpg(["IMG_2291"])
+  A --> F15["Dalí · photographed lane-entry slot drain"]
+  F15 --> PIMG_2293_jpg(["IMG_2293"])
+  A --> F16["Dalí · coastal pedestrian gate"]
+  F16 --> PIMG_2284_jpg(["IMG_2284"])
+  F16 --> PIMG_2296_jpg(["IMG_2296"])
+  F16 --> PIMG_2297_jpg(["IMG_2297"])
+  A --> F17["Dalí south · gentle flagstone approach"]
+  F17 --> PIMG_2283_jpg(["IMG_2283"])
 ```
 
 ## Reviewed references
@@ -101,7 +103,7 @@ graph LR
 | --- | --- | --- | --- |
 | [IMG_2268.jpg](../../public/photos-ref/IMG_2268.jpg) | ground | layout, planting | Pintor Dalí: house-side footpath and parking looking south _Used by: dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
 | [IMG_2267.jpg](../../public/photos-ref/IMG_2267.jpg) | ground | layout | Pintor Dalí: house-side footpath and parking looking north _Used by: dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
-| [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-eva-photo-footpath, door_sills.json:dali-eva-photo-lawn, door_sills.json:dali-eva-parking-kerb, door_sills.json:dali-eva-arch-slot._ |
+| [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-eva-photo-footpath, door_sills.json:dali-eva-photo-lawn, door_sills.json:dali-eva-photo-asphalt-apron, door_sills.json:dali-eva-parking-kerb, door_sills.json:dali-eva-arch-slot._ |
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2297.jpg](../../public/photos-ref/IMG_2297.jpg) | ground | layout | Dalí seaward end: narrow pedestrian gate _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |

@@ -126,7 +126,7 @@ def features(s):
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
 
     sills=json.loads((ROOT/'data/door_sills.json').read_text())
-    for f in sills['sills']+sills['surfaces']+sills['kerbs']+sills['drains']:
+    for f in sills['sills']+sills['surfaces']+sills['aprons']+sills['kerbs']+sills['drains']:
         add('door_sills.json:'+f['id'],f['name'],'reference feature',f['trust'],evidence=f['evidence'],**({'ring':f['ring']} if 'ring' in f else {'points':f.get('points',[f.get('center')])}))
     for f in json.loads((ROOT/'data/terrain.json').read_text()).get('localSurfaces',[]):
         add('terrain.json:'+f['id'],f['name'],'reference feature',f['trust'],points=[f['foot'],f['top']],evidence=f['evidence'])

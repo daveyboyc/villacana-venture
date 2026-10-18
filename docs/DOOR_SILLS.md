@@ -17,7 +17,12 @@ recorded. No other door receives an inferred sill.
 IMG_2291 supports the ordering house / terracotta footpath / lawn / white parking
 kerb / asphalt. This is one bounded 9 m frontage, with an estimated .12 m rise.
 The dark slot at its arch and the transverse slot inside the apron in 2293 are
-flush drain details. The latter's Patricia identification remains inferred: its
+flush drain details. A finite asphalt apron closes the inherited .92–1.32 m
+brown-ground gap between that outer kerb and the existing Dalí ribbon edge,
+matching the source photo’s direct kerb/asphalt contact. Its endpoints use the
+rendered road’s vertex-tangent normals and unchanged width/axis; it changes only
+the photographed 9 m frontage. Its .27 m visible top is also the local standing
+datum. The IMG_2293 slot’s Patricia identification remains inferred: its
 photo does not show a readable street name. Neither drain creates a new passage.
 
 IMG_2283 shows a gentle continuous flagstone approach, white flared side kerbs
@@ -46,7 +51,7 @@ Verification includes finite source/registry/road/pool checks, continuous terrai
 and landing checks, all named routes both ways, and browser raycasts comparing
 actual settled player shoe soles with visible tops at the physically accessible
 outer toe of each sill, before its closed private door,, both Dalí bands,
-the parking kerb, ramp toe/middle/top/landing, and both flared kerbs. The browser
+the parking kerb and finite asphalt apron, ramp toe/middle/top/landing, and both flared kerbs. The browser
 also walks up against the unmodified solid facade and checks the reachable top
 does not fall off the ramp before collision. Before/after game renders use the
 same reference cameras; camera uncertainty and third-person framing prevent a

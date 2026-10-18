@@ -67,7 +67,7 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-eva-photo-footpath, door_sills.json:dali-eva-photo-lawn, door_sills.json:dali-eva-parking-kerb, door_sills.json:dali-eva-arch-slot._ |
+| [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-eva-photo-footpath, door_sills.json:dali-eva-photo-lawn, door_sills.json:dali-eva-photo-asphalt-apron, door_sills.json:dali-eva-parking-kerb, door_sills.json:dali-eva-arch-slot._ |
 | [IMG_2283.jpg](../../public/photos-ref/IMG_2283.jpg) | ground | levels, layout, facades | Pintor Dalí: raised stone approach and archway _Used by: terrain.json:dali-south-approach._ |
 | [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
 | [IMG_2295.jpg](../../public/photos-ref/IMG_2295.jpg) | ground | layout, facades | Dalí seaward end: covered access and shutters |
@@ -79,7 +79,7 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 | --- | --- | --- | --- |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn **Looks at:** Brown Eva frontage door with yellow-flowered shrub beside lawn. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
-| [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-eva-photo-footpath, door_sills.json:dali-eva-photo-lawn, door_sills.json:dali-eva-parking-kerb, door_sills.json:dali-eva-arch-slot._ |
+| [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-eva-photo-footpath, door_sills.json:dali-eva-photo-lawn, door_sills.json:dali-eva-photo-asphalt-apron, door_sills.json:dali-eva-parking-kerb, door_sills.json:dali-eva-arch-slot._ |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo
 

@@ -33,7 +33,7 @@ const path = require("node:path");
     const [
       { Player },
       { Solids, CoastField },
-      { barrierRings, referenceGroundHeight },
+      { barrierRings, referenceGroundHeight, addBoundaryReference },
       { cervantesPatioWallRings },
       { poolGroundY, poolTerraceRing, POOL_TERRACE_ID },
       { siteY, drapeScene, refine },
@@ -65,7 +65,7 @@ const path = require("node:path");
       import("/src/middle-pool-south-gate.ts"),
       import("/src/raised-terraces.ts"),
     ]);
-    const {doorSillGroundOffset,doorSillRise,photographedSills,doorSillSurfaces,doorSillKerbs,southApproach,approachPoint,approachLength,approachHalfWidth,addDoorSills,sillDoorRings,sillToePoint}=await import("/src/door-sills.ts");
+    const {doorSillGroundOffset,doorSillRise,photographedSills,doorSillSurfaces,doorSillAprons,doorSillKerbs,southApproach,approachPoint,approachLength,approachHalfWidth,addDoorSills,sillDoorRings,sillToePoint}=await import("/src/door-sills.ts");
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
     const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
@@ -197,7 +197,18 @@ const path = require("node:path");
       if(Math.hypot(resolved.x-center[0],resolved.z-center[1])<.4)throw Error("Photographed private garden door is not closed collision");
     }
     for(const sill of photographedSills)standOn(sillToePoint(sill),sill.id+" accessible toe");
-    for(const f of doorSillSurfaces)standOn([f.ring.reduce((sum,p)=>sum+p[0],0)/f.ring.length,f.ring.reduce((sum,p)=>sum+p[1],0)/f.ring.length],f.id);
+    for(const f of [...doorSillSurfaces,...doorSillAprons])standOn([f.ring.reduce((sum,p)=>sum+p[0],0)/f.ring.length,f.ring.reduce((sum,p)=>sum+p[1],0)/f.ring.length],f.id);
+    // Inspect actual old-road/new-apron contact from both sides of the shared edge.
+    const apronScene=new THREE.Scene();addBoundaryReference(apronScene,s.boundaryReference);drapeScene(apronScene,buildings);addDoorSills(apronScene,true);apronScene.updateMatrixWorld(true);
+    const apron=doorSillAprons[0],r=apron.ring;
+    for(const t of [.1,.5,.9]){
+      const edge=[r[3][0]*(1-t)+r[2][0]*t,r[3][1]*(1-t)+r[2][1]*t],kerb=[r[0][0]*(1-t)+r[1][0]*t,r[0][1]*(1-t)+r[1][1]*t],len=Math.hypot(kerb[0]-edge[0],kerb[1]-edge[1]);
+      for(const epsilon of [-.02,.02]){
+        const at=[edge[0]+(kerb[0]-edge[0])/len*epsilon,edge[1]+(kerb[1]-edge[1])/len*epsilon];
+        surfaceRay.set(new THREE.Vector3(at[0],5,at[1]),new THREE.Vector3(0,-1,0));const hit=surfaceRay.intersectObjects(apronScene.children,true)[0];
+        if(!hit||Math.abs(hit.point.y-world.groundHeight(...at))>.01)throw Error("Dali asphalt apron/road mesh-ground contact differs: "+hit?.point.y+" vs "+world.groundHeight(...at));
+      }
+    }
     const k=doorSillKerbs[0];standOn([(k.points[0][0]+k.points[1][0])/2,(k.points[0][1]+k.points[1][1])/2],k.id);
     for(const d of [.02,.2,1,approachLength-.1,approachLength+.08])standOn(approachPoint(d),"Approach at "+d);
     for(const d of [.6,2,approachLength-.3,approachLength+.06])for(const side of [-1,1])standOn(approachPoint(d,side*approachHalfWidth(d)),"Approach kerb at "+d);

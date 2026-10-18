@@ -1,4 +1,4 @@
-import {photographedSills,sillOutline,doorSillSurfaces,doorSillKerbs,doorSillDrains,southApproach,approachOutline,approachKerbLines,sillDoorRings,inDoorSillReview} from "./door-sills";
+import {photographedSills,sillOutline,doorSillSurfaces,doorSillAprons,doorSillKerbs,doorSillDrains,southApproach,approachOutline,approachKerbLines,sillDoorRings,inDoorSillReview} from "./door-sills";
 import {northPoolGardenPathBlueprint} from "./north-pool-gardens";
 import {cervantesEastSouthWalls,cervantesEastSouthDoor,cervantesEastSouthPergola,cervantesEastSouthPostRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
 import {middleSwAt,middleSwRings,middleSwFlight} from "./middle-pool-sw-gateway";
@@ -298,8 +298,8 @@ async function boot(): Promise<void> {
   threshold.append(el("path",{d:"M"+daliPrivateEdge.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#8b5742","stroke-width":.18,"stroke-dasharray":".5 .3"}));
   world.append(threshold);
   const sillLayer=el("g",{id:"photo-door-sills"});
-  for(const f of [...photographedSills.map(s=>({...s,ring:sillOutline(s)})),...doorSillSurfaces,{...southApproach,ring:approachOutline}]) {
-    const node=el("path",{d:path(f.ring as Vec2[]),fill:f.id.includes("lawn")?"#718658":f.id.includes("approach")?"#b4b2a0":"#c7977c","data-sill-id":f.id,stroke:f.id===southApproach.id?"none":"#fffdf3","stroke-width":.10});
+  for(const f of [...photographedSills.map(s=>({...s,ring:sillOutline(s)})),...doorSillSurfaces,...doorSillAprons,{...southApproach,ring:approachOutline}]) {
+    const node=el("path",{d:path(f.ring as Vec2[]),fill:f.id.includes("asphalt-apron")?"#7f8384":f.id.includes("lawn")?"#718658":f.id.includes("approach")?"#b4b2a0":"#c7977c","data-sill-id":f.id,stroke:f.id===southApproach.id?"none":"#fffdf3","stroke-width":.10});
     const title=el("title",{});title.textContent=`${f.name} · ${f.trust} · ${f.evidence.join(", ")}`;node.append(title);sillLayer.append(node);
   }
   for(const ring of sillDoorRings())sillLayer.append(el("path",{d:path(ring),fill:"#fffdf3",stroke:"#704d34","stroke-width":.08}));

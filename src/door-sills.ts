@@ -9,6 +9,7 @@ import type { Vec2 } from "./types";
 
 export const photographedSills = data.sills;
 export const doorSillSurfaces = data.surfaces.map(s => ({...s, ring:s.ring as Vec2[]}));
+export const doorSillAprons = data.aprons.map(s=>({...s,ring:s.ring as Vec2[]}));
 export const doorSillKerbs = data.kerbs.map(k => ({...k, points:k.points as Vec2[]}));
 export const doorSillDrains = data.drains;
 export const southApproach = terrain.localSurfaces[0];
@@ -30,7 +31,7 @@ export const sillDoorCenters=photographedSills.map(s=>{const a=unit(s.along),inw
 export function sillDoorRings():Vec2[][] {return sillDoorCenters.map(s=>sillOutline({...s,width:data.gardenDoor.width,depth:data.gardenDoor.thickness}));}
 export const sillToePoint=(s:typeof photographedSills[number]):Vec2=>{const a=unit(s.along),outward:Vec2=[-a[1]*data.gardenDoor.inwardSign,a[0]*data.gardenDoor.inwardSign],toe=s.depth/2-.015;return [s.center[0]+outward[0]*toe,s.center[1]+outward[1]*toe];};
 // Reject remote routes before polygon/segment work; local correction remains finite.
-const datumPoints=[...approachOutline,...photographedSills.flatMap(sillOutline),...doorSillSurfaces.flatMap(s=>s.ring),...doorSillDrains.map(d=>d.center)];
+const datumPoints=[...approachOutline,...photographedSills.flatMap(sillOutline),...doorSillSurfaces.flatMap(s=>s.ring),...doorSillAprons.flatMap(s=>s.ring),...doorSillDrains.map(d=>d.center)];
 const datumReach=data.datums.fullApron+data.datums.blendApron;
 const datumBounds={minX:Math.min(...datumPoints.map(p=>p[0]))-datumReach,maxX:Math.max(...datumPoints.map(p=>p[0]))+datumReach,minZ:Math.min(...datumPoints.map(p=>p[1]))-datumReach,maxZ:Math.max(...datumPoints.map(p=>p[1]))+datumReach};
 export const approachOffset=(x:number,z:number):number=>{
@@ -61,14 +62,14 @@ export function doorSillGroundOffset(x:number,z:number):number {
   const gap=(ring:Vec2[])=>pointInRing(x,z,ring)?0:Math.min(...ring.map((a,i)=>closestOnSegment(x,z,...a,...ring[(i+1)%ring.length]).d));
   const weight=(d:number)=>Math.max(0,Math.min(1,1-(d-data.datums.fullApron)/data.datums.blendApron));
   const sillDistance=Math.min(...photographedSills.map(s=>gap(sillOutline(s))));
-  const roadDistance=Math.min(gap(approachOutline),...doorSillSurfaces.map(s=>gap(s.ring)),...doorSillDrains.map(d=>Math.hypot(x-d.center[0],z-d.center[1])));
+  const roadDistance=Math.min(gap(approachOutline),...doorSillSurfaces.map(s=>gap(s.ring)),...doorSillAprons.map(s=>gap(s.ring)),...doorSillDrains.map(d=>Math.hypot(x-d.center[0],z-d.center[1])));
   if(Math.min(sillDistance,roadDistance)>=data.datums.fullApron+data.datums.blendApron||forbiddenGround.some(r=>pointInRing(x,z,r)))return 0;
   const datum=roadDistance<sillDistance?weight(roadDistance)*(roadBase-data.datums.legacyPlayerBase):weight(sillDistance)*(sillBase-data.datums.legacyPlayerBase);
   return datum+doorSillRise(x,z);
 }
 /** Suppress illustrative objects on the finite photographed surfaces. */
 export function inDoorSillReview(x:number,z:number):boolean {
-  return pointInRing(x,z,approachOutline)||doorSillSurfaces.some(s=>pointInRing(x,z,s.ring))||photographedSills.some(s=>Math.hypot(x-s.center[0],z-s.center[1])<1);
+  return pointInRing(x,z,approachOutline)||[...doorSillSurfaces,...doorSillAprons].some(s=>pointInRing(x,z,s.ring))||photographedSills.some(s=>Math.hypot(x-s.center[0],z-s.center[1])<1);
 }
 /** Original irregular flagstone drawing; never sampled from reference imagery. */
 function flagstoneTexture():THREE.CanvasTexture {
@@ -87,7 +88,7 @@ export function addDoorSills(scene:THREE.Scene,details:boolean):void {
     const p=geometry.getAttribute("position"),uv=geometry.getAttribute("uv");
     for(let i=0;i<p.count;i++){const x=p.getX(i),z=p.getZ(i);p.setY(i,height(x,z)+siteY(x,z));uv.setXY(i,x,z);}
     geometry.computeVertexNormals();
-    const material=new THREE.MeshStandardMaterial({color:finish==="lawn"?"#718658":"#ffffff",map:finish==="white"?undefined:finish==="flagstone"?stone:surfaceTexture(finish==="lawn"?"turf":"paving"),roughness:1,side:THREE.DoubleSide});
+    const material=new THREE.MeshStandardMaterial({color:finish==="lawn"?"#718658":finish==="asphalt"?"#7f8384":"#ffffff",map:finish==="white"||finish==="asphalt"?undefined:finish==="flagstone"?stone:surfaceTexture(finish==="lawn"?"turf":"paving"),roughness:1,side:THREE.DoubleSide});
     const mesh=new THREE.Mesh(geometry,material);mesh.receiveShadow=true;mesh.userData.noDrape=true;mesh.userData.referenceSurface=id;mesh.userData.doorSillFeature=id;scene.add(mesh);
   };
   const bar=(a:Vec2,b:Vec2,width:number,depth:number,y:number,material:THREE.Material,id:string)=>{
@@ -100,6 +101,8 @@ export function addDoorSills(scene:THREE.Scene,details:boolean):void {
     surface([approachPoint(a,-approachHalfWidth(a)),approachPoint(b,-approachHalfWidth(b)),approachPoint(b,approachHalfWidth(b)),approachPoint(a,approachHalfWidth(a))],(x,z)=>roadBase+southApproach.rise*((x-southApproach.foot[0])*u[0]+(z-southApproach.foot[1])*u[1])/approachLength,"flagstone",southApproach.id);
   }
   surface([approachPoint(approachLength,-approachHalfWidth(approachLength)),approachPoint(approachLength+southApproach.landing,-approachHalfWidth(approachLength)),approachPoint(approachLength+southApproach.landing,approachHalfWidth(approachLength)),approachPoint(approachLength,approachHalfWidth(approachLength))],()=>roadBase+southApproach.rise,"flagstone",southApproach.id+"-landing");
+  // Restore the photographed kerb-to-asphalt contact only over this finite frontage.
+  for(const apron of doorSillAprons)surface(apron.ring,()=>roadBase,"asphalt",apron.id);
   // Only the two photographed closed doors, each in a short finite white surround.
   const wood=new THREE.MeshStandardMaterial({color:"#704d34",roughness:1});
   for(const s of sillDoorCenters){

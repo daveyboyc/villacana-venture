@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 load=lambda p:json.loads((ROOT/p).read_text())
 d=load('data/door_sills.json');s=load('public/map/skeleton.json');terrain=load('data/terrain.json')
 photos={p['file'] for p in load('public/photos-ref/manifest.json')}
-for f in d['sills']+d['surfaces']+d['kerbs']+d['drains']+terrain['localSurfaces']:
+for f in d['sills']+d['surfaces']+d['aprons']+d['kerbs']+d['drains']+terrain['localSurfaces']:
  assert f['evidence'] and set(f['evidence'])<=photos and len(f['trust'])>80,f['id']
 assert len(d['sills'])==2,'Only two garden doors are visible in 2260/2261/2330'
 front=load('data/frontage_divisions.json')
@@ -38,6 +38,19 @@ for f in d['surfaces']:
 path,lawn=[f['ring'] for f in d['surfaces']];kerb=d['kerbs'][0]['points']
 assert min(gap(p,lawn) for p in path)<.001
 assert all(gap(p,lawn)<.001 and gap(p,path)>.8 for p in sample(kerb)),'Parking kerb must be outside lawn, not at footpath edge'
+apron=d['aprons'][0];assert len(d['aprons'])==1 and apron['finish']=='asphalt' and apron['rise']==0
+assert apron['ring'][:2]==kerb,'Asphalt apron must meet the actual parking kerb'
+dali=next(r for r in s['boundaryReference']['roads'] if r['id']=='dali')
+# Match the actual ribbon edge, including averaged vertex tangents used in boundaries.ts.
+edge=[]
+for i,p in enumerate(dali['points']):
+ a=dali['points'][max(0,i-1)];b=dali['points'][min(len(dali['points'])-1,i+1)];length=math.dist(a,b)
+ edge.append([p[0]+(b[1]-a[1])/length*dali['width']/2,p[1]-(b[0]-a[0])/length*dali['width']/2])
+assert all(min(distance(p,a,b) for a,b in zip(edge,edge[1:]))<.001 for p in apron['ring'][2:]),'Apron misses rendered ribbon edge'
+for p in apron['ring'][2:]:
+ assert abs(min(distance(p,a,b) for a,b in zip(dali['points'],dali['points'][1:]))-dali['width']/2)<.001,'Asphalt apron misses the unchanged road edge'
+assert all(.8<math.dist(apron['ring'][i],apron['ring'][3-i])<1.4 for i in [0,1]),'Apron extends beyond the finite inherited gap'
+for p in sample(apron['ring']+[apron['ring'][0]]):assert not any(inside(*p,b) for b in buildings),'Apron intrudes into house'
 r=terrain['localSurfaces'][0];length=math.dist(r['foot'],r['top']);assert 5<=length<=6 and .15<=r['rise']<=.35
 assert r['rise']/length<.07 and .15<=r['kerbHeight']<=.25
 assert min(gap(r['top'],b) for b in buildings)>.35,'External approach stops before unresolved solid registry passage'

@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 358,
+  "features": 359,
   "photosCitedByModel": 93,
-  "modelFeaturesWithPhotoCitations": 103
+  "modelFeaturesWithPhotoCitations": 104
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2820,6 +2820,15 @@
    "name": "Dalí · photographed lawn between footpath and parking kerb",
    "kind": "reference feature",
    "source": "Narrow lawn band separates house footpath from parking kerb as photographed; bounded to the same short facade run. Width .95 m and plan endpoints are approximate, not a continuous surveyed Dalí strip.",
+   "evidence": [
+    "IMG_2291.jpg"
+   ]
+  },
+  {
+   "id": "door_sills.json:dali-eva-photo-asphalt-apron",
+   "name": "Dalí · finite asphalt apron between photographed parking kerb and existing road edge",
+   "kind": "reference feature",
+   "source": "IMG_2291 shows parking asphalt directly against the outer white kerb beyond the lawn. This finite apron closes the inherited .92-1.32 m brown-ground gap to the existing Dalí road edge over only the photographed 9 m frontage. Kerb-side endpoints are unchanged; road-side endpoints are projected onto the unchanged Dalí ribbon edge using the same vertex-tangent normals and recorded width as the rendered road. The apron is an estimated local paving correction, not a new road axis or a surveyed parking extent.",
    "evidence": [
     "IMG_2291.jpg"
    ]
@@ -6870,6 +6879,12 @@
   {
    "from": "photo:IMG_2291.jpg",
    "to": "door_sills.json:dali-eva-photo-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2291.jpg",
+   "to": "door_sills.json:dali-eva-photo-asphalt-apron",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

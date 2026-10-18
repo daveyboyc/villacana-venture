@@ -189,5 +189,36 @@
     "backGap": 0.09,
     "note": "Two finite closed brown garden-door leaves with short white jamb/head surrounds are directly visible in 2260/2261/2330. Each surround stops at its own 1.55 m width; no enclosure or connecting wall is inferred. Width, height and .09 m rear setback from sill edge are estimates.",
     "inwardSign": -1
-  }
+  },
+  "aprons": [
+    {
+      "id": "dali-eva-photo-asphalt-apron",
+      "name": "Dal\u00ed \u00b7 finite asphalt apron between photographed parking kerb and existing road edge",
+      "area": "dali",
+      "ring": [
+        [
+          -162.0509,
+          139.9599
+        ],
+        [
+          -166.5509,
+          131.9599
+        ],
+        [
+          -167.3703,
+          132.3747
+        ],
+        [
+          -163.2287,
+          140.5561
+        ]
+      ],
+      "rise": 0,
+      "finish": "asphalt",
+      "evidence": [
+        "IMG_2291.jpg"
+      ],
+      "trust": "IMG_2291 shows parking asphalt directly against the outer white kerb beyond the lawn. This finite apron closes the inherited .92-1.32 m brown-ground gap to the existing Dal\u00ed road edge over only the photographed 9 m frontage. Kerb-side endpoints are unchanged; road-side endpoints are projected onto the unchanged Dal\u00ed ribbon edge using the same vertex-tangent normals and recorded width as the rendered road. The apron is an estimated local paving correction, not a new road axis or a surveyed parking extent."
+    }
+  ]
 }

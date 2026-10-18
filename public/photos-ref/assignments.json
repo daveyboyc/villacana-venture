@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 358,
+  "features": 359,
   "photosCitedByModel": 93,
-  "modelFeaturesWithPhotoCitations": 103
+  "modelFeaturesWithPhotoCitations": 104
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3949,6 +3949,7 @@
    "citedBy": [
     "door_sills.json:dali-eva-photo-footpath",
     "door_sills.json:dali-eva-photo-lawn",
+    "door_sills.json:dali-eva-photo-asphalt-apron",
     "door_sills.json:dali-eva-parking-kerb",
     "door_sills.json:dali-eva-arch-slot"
    ],

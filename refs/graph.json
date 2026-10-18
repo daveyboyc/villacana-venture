@@ -1496,6 +1496,11 @@
    "name": "Dalí · parking-facing kerb beyond the lawn"
   },
   {
+   "id": "door_sills.json:dali-eva-photo-asphalt-apron",
+   "kind": "model-feature",
+   "name": "Dalí · finite asphalt apron between photographed parking kerb and existing road edge"
+  },
+  {
    "id": "door_sills.json:dali-eva-photo-footpath",
    "kind": "model-feature",
    "name": "Dalí · bounded house-side footpath at photographed arch"
@@ -5472,6 +5477,11 @@
    "relation": "cites"
   },
   {
+   "from": "door_sills.json:dali-eva-photo-asphalt-apron",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "door_sills.json:dali-eva-photo-footpath",
    "to": "ref:IMG_2291.jpg",
    "relation": "cites"
@@ -6468,6 +6478,11 @@
   },
   {
    "from": "door_sills.json:dali-eva-parking-kerb",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-eva-photo-asphalt-apron",
    "to": "area:dali",
    "relation": "in-area"
   },
