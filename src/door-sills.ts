@@ -1,5 +1,7 @@
 import * as THREE from "three";
 import data from "../data/door_sills.json";
+import skeleton from "../public/map/skeleton.json";
+import { closestOnSegment, pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
@@ -37,6 +39,13 @@ const bandHeight = (s: number) => kerb.rise * Math.min(1, Math.max(0, s / kerb.t
 function kerbRise(x: number, z: number): number | undefined {
   const s = dot([x, z], kOrigin, kAlong), c = dot([x, z], kOrigin, kToward);
   if (s < 0 || s > kerb.length || c > kerb.width || c < bandStart(s)) return undefined;
+  const kw = kerb.kerbWidth;
+  const white = (s >= kerb.taper && s <= kerb.pathKerbFrom && c <= kw) ||
+    (s >= kerb.pathKerbFrom - kw && s <= kerb.pathKerbFrom && c >= kw && c <= kerb.pathEdge + kw) ||
+    (s >= kerb.pathKerbFrom && c <= kerb.pathEdge + kw);
+  if (white) return bandHeight(s) + 0.012;
+  if (s >= kerb.lawn.from && s <= kerb.lawn.to && c >= kerb.lawn.across[0] && c <= kerb.lawn.across[1]) return bandHeight(s) - 0.01;
+  if (s >= kerb.drain.along[0] && s <= kerb.drain.along[1] && c >= kerb.drain.across[0] && c <= kerb.drain.across[1]) return bandHeight(s) + 0.006;
   return bandHeight(s);
 }
 export const footpathBandRing: Vec2[] = [
@@ -46,6 +55,12 @@ export const footpathBandRing: Vec2[] = [
 export const footpathLawnRing: Vec2[] = [
   kerbPoint(kerb.lawn.from, kerb.lawn.across[0]), kerbPoint(kerb.lawn.to, kerb.lawn.across[0]),
   kerbPoint(kerb.lawn.to, kerb.lawn.across[1]), kerbPoint(kerb.lawn.from, kerb.lawn.across[1]),
+];
+/** Finite asphalt contact: the unchanged ribbon edge, then the inward-turned path kerb. */
+export const footpathParkingApronRing: Vec2[] = [
+  kerbPoint(kerb.taper, -kerb.parkingApron.overlap), kerbPoint(kerb.length, -kerb.parkingApron.overlap),
+  kerbPoint(kerb.length, kerb.pathEdge), kerbPoint(kerb.pathKerbFrom, kerb.pathEdge),
+  kerbPoint(kerb.pathKerbFrom, 0), kerbPoint(kerb.taper, 0),
 ];
 /** The photographed white kerb: along the asphalt, turned in at the lawn's end, then along the path edge. */
 export const footpathKerbLine: Vec2[] = [
@@ -87,14 +102,30 @@ export const approachRing: Vec2[] = [
 export const approachKerbLines: Vec2[][] = (["left", "right"] as const).map((side) =>
   approachStations.map((t) => approachPoint(t, (side === "right" ? 1 : -1) * (approachInner(t, side) + ap.kerbWidth / 2))));
 
-/** Extra ground height over siteY + the reference lane height. Zero away from these features. */
+/** Visual datums are shared by meshes and the finite player-ground correction. */
+export const ELENA_SURFACE = data.datums.elenaSurface, DALI_SURFACE = data.datums.daliSurface;
+const localRings = [...data.sills.map(sillRing), footpathBandRing, footpathParkingApronRing, approachRing];
+const reach = data.datums.fullApron + data.datums.blendApron;
+const points = localRings.flat();
+const bounds = {minX:Math.min(...points.map(p=>p[0]))-reach,maxX:Math.max(...points.map(p=>p[0]))+reach,minZ:Math.min(...points.map(p=>p[1]))-reach,maxZ:Math.max(...points.map(p=>p[1]))+reach};
+const forbiddenGround = [...skeleton.buildings.filter(b=>b.floors>0&&!b.passage).map(b=>b.ring as Vec2[]),...skeleton.pools.map(p=>p.ring as Vec2[])];
+/** Suppress generated illustrative objects only on the reviewed physical surfaces. */
+export const inDoorSillReview = (x:number,z:number):boolean => localRings.some(r=>pointInRing(x,z,r));
+/** Extra ground over the inherited player datum. The apron blend is a movement
+ * approximation; the photographed feature itself stands at its visible mesh datum. */
 export function doorSillsGroundOffset(x: number, z: number): number {
-  return sillRise(x, z) ?? approachRise(x, z) ?? kerbRise(x, z) ?? 0;
+  if(x<bounds.minX||x>bounds.maxX||z<bounds.minZ||z>bounds.maxZ)return 0;
+  const gap=(ring:Vec2[])=>pointInRing(x,z,ring)?0:Math.min(...ring.map((a,i)=>closestOnSegment(x,z,...a,...ring[(i+1)%ring.length]).d));
+  const sillDistance=Math.min(...data.sills.map(s=>gap(sillRing(s))));
+  const roadDistance=Math.min(...[footpathBandRing,footpathParkingApronRing,approachRing].map(gap));
+  const distance=Math.min(sillDistance,roadDistance);
+  if(distance>=reach||forbiddenGround.some(r=>pointInRing(x,z,r)))return 0;
+  const weight=Math.max(0,Math.min(1,1-(distance-data.datums.fullApron)/data.datums.blendApron));
+  const datum=(sillDistance<roadDistance?ELENA_SURFACE:DALI_SURFACE)-data.datums.legacyPlayerSurface;
+  return datum*weight + (sillRise(x,z) ?? approachRise(x,z) ?? kerbRise(x,z) ?? 0);
 }
 
 // ---- Meshes. Built on the visual surface of each place, lifted by siteY per vertex (not draped).
-/** Visual surface of the lawns (Elena) and the asphalt (Dalí) the features stand on. */
-export const ELENA_SURFACE = 0.025, DALI_SURFACE = 0.272;
 const quad = (positions: number[], a: number[], b: number[], c: number[], d: number[]) => positions.push(...a, ...b, ...c, ...a, ...c, ...d);
 const lift = (p: Vec2, datum: number, h: number) => [p[0], siteY(...p) + datum + h, p[1]];
 function mesh(positions: number[], material: THREE.Material, name: string): THREE.Mesh {
@@ -133,6 +164,8 @@ export function addDoorSills(scene: THREE.Scene): void {
     scene.add(mesh(treads, s.tread === "red" ? red : white, s.id + "-tread"), mesh(sides, white, s.id + "-riser"));
   }
   // The kerbed footpath: tiles, the lawn strip, the white kerb and its faces, and the porch drain.
+  const asphalt = new THREE.MeshStandardMaterial({color:"#7f8384",roughness:1,side:THREE.DoubleSide});
+  scene.add(mesh([...sheet(kerbPoint,[kerb.taper,kerb.pathKerbFrom],[-kerb.parkingApron.overlap,0],()=>0,DALI_SURFACE),...sheet(kerbPoint,[kerb.pathKerbFrom,kerb.length],[-kerb.parkingApron.overlap,kerb.pathEdge],()=>0,DALI_SURFACE)],asphalt,kerb.id+"-parking-apron"));
   const tiles = new THREE.MeshStandardMaterial({ color: "#ffffff", map: surfaceTexture("paving"), roughness: 1, side: THREE.DoubleSide });
   const turf = new THREE.MeshStandardMaterial({ color: "#718658", map: surfaceTexture("turf"), roughness: 1, side: THREE.DoubleSide });
   const band = (s: number) => bandHeight(s);

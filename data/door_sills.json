@@ -117,7 +117,15 @@
       "IMG_2292.jpg",
       "IMG_2293.jpg"
     ],
-    "trust": "IMG_2291 and IMG_2292 show the house-side tiled footpath and a grass strip standing a white kerb above the asphalt, and the porch floor under the arch flush with the path behind a slot drain. IMG_2292 shows the lawn strip ending with the kerb turned in to the path's own edge; past it cars nose up to the path, as on the left of IMG_2293, whose right-hand kerb runs along the lane like the south end here. The kerb follows the Dalí car park's house-side edge in data/dali_cervantes.json from the building corner by Eva to the corner where the bays start; the footprint runs on into the registry building, which hides it. The lawn-strip end (±3 m), the arch position (±2 m) and 0.12 m are estimates. The 2.5 m north of the building corner is not photographed: the rise fades out there instead of adding a kerb. The map puts Calle Patricia about 3.7 m further south than the end of the band, across the bay tip, so the apron is not carried on into the lane."
+    "trust": "IMG_2291 and IMG_2292 show the house-side tiled footpath and a grass strip standing a white kerb above the asphalt, and the porch floor under the arch flush with the path behind a slot drain. IMG_2292 shows the lawn strip ending with the kerb turned in to the path's own edge; past it cars nose up to the path, as on the left of IMG_2293, whose right-hand kerb runs along the lane like the south end here. The kerb follows the Dalí car park's house-side edge in data/dali_cervantes.json from the building corner by Eva to the corner where the bays start; the footprint runs on into the registry building, which hides it. The lawn-strip end (±3 m), the arch position (±2 m) and 0.12 m are estimates. The 2.5 m north of the building corner is not photographed: the rise fades out there instead of adding a kerb. The map puts Calle Patricia about 3.7 m further south than the end of the band, across the bay tip, so the apron is not carried on into the lane.",
+    "parkingApron": {
+      "overlap": 0.2,
+      "evidence": [
+        "IMG_2292.jpg",
+        "IMG_2293.jpg"
+      ],
+      "trust": "The photographed white kerb meets asphalt directly. A finite L-shaped apron joins the unchanged Dalí ribbon to the existing kerb: to across 0 before the lawn ends, and to the inward-turned path kerb at across 1.85 afterwards. It overlaps the old asphalt by at least 0.1 m to close the inherited narrow white-border/sliver and the 1.85 m gap after the lawn. Ends remain the existing photographed full-height-kerb and frontage-end stations. Estimated local paving correction, no new bay trace or street extent."
+    }
   },
   "approach": {
     "id": "dali-south-arch-approach",
@@ -156,5 +164,13 @@
       "IMG_2294.jpg": 55,
       "IMG_2295.jpg": 57
     }
+  },
+  "datums": {
+    "elenaSurface": 0.025,
+    "daliSurface": 0.272,
+    "legacyPlayerSurface": 0.06,
+    "fullApron": 1.0,
+    "blendApron": 2.0,
+    "note": "Local player-to-visible-surface reconciliation around these photographed outlines only. The first metre retains the mesh datum; the next two metres blend to inherited player ground. Solid house and pool interiors are excluded. Remote inherited mesh/player offsets remain unchanged; no surveyed terrain or house-floor correction is claimed."
   }
 }
