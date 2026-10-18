@@ -2196,6 +2196,14 @@
    "status": "open",
    "verification": "unchecked",
    "issue": 98
+  },
+  {
+   "id": "task:unified-reference-map",
+   "kind": "build-task",
+   "name": "One canonical resort map with overview and searchable photo references",
+   "priority": 1,
+   "status": "in-progress",
+   "verification": "unchecked"
   }
  ],
  "edges": [
@@ -8871,6 +8879,11 @@
   {
    "from": "task:north-pool-unresolved-plan",
    "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:unified-reference-map",
+   "to": "area:whole-resort",
    "relation": "in-area"
   },
   {

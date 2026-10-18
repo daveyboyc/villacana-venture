@@ -7,6 +7,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open | [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2205](../public/photos-ref/IMG_2205.jpg), [IMG_2206](../public/photos-ref/IMG_2206.jpg), [IMG_2207](../public/photos-ref/IMG_2207.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg), [IMG_2363](../public/photos-ref/IMG_2363.jpg) |
+| P1 | `unified-reference-map` | One canonical resort map with overview and searchable photo references | in-progress · Codex |  |
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../public/photos-ref/IMG_2227.jpg), [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2226](../public/photos-ref/IMG_2226.jpg) |
 | P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | done · issue_31 · photos: legacy-unchecked | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg), [IMG_2331](../public/photos-ref/IMG_2331.jpg), [IMG_2245](../public/photos-ref/IMG_2245.jpg) |
@@ -80,4 +81,4 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 - **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** ([brief](areas/seaward-lanes.md)): `seaward-lanes-paving`
 - **Barraka and the beach** ([brief](areas/barraka-beach.md)): `shoreline-check`, `barraka-boardwalk`
 - **The paseo** ([brief](areas/paseo.md)): `paseo-east-end-height`, `paseo-retaining-wall`, `paseo-house-clearance`, `paseo-retrace-line`, `paseo-details`
-- **The whole resort** ([brief](areas/whole-resort.md)): `door-sills`
+- **The whole resort** ([brief](areas/whole-resort.md)): `unified-reference-map`, `door-sills`
