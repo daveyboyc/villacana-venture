@@ -354,7 +354,7 @@
   {
    "id": "ref:IMG_2223.jpg",
    "kind": "phone-photo",
-   "name": "Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk",
+   "name": "Barraka Beach barbecue boat beside the timber boardwalk",
    "path": "public/photos-ref/IMG_2223.jpg",
    "viewpoint": "ground"
   },
@@ -977,14 +977,14 @@
   {
    "id": "ref:IMG_2346.jpg",
    "kind": "phone-photo",
-   "name": "Barraka Beach sign, thatched parasols and boardwalk",
+   "name": "BARRAKA BEACH sign, barbecue boat and boardwalk",
    "path": "public/photos-ref/IMG_2346.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:IMG_2347.jpg",
    "kind": "phone-photo",
-   "name": "Barraka Beach sign and boardwalk to the beach",
+   "name": "Barraka barbecue boat, planted sign and boardwalk towards the sea",
    "path": "public/photos-ref/IMG_2347.jpg",
    "viewpoint": "ground"
   },
@@ -2196,6 +2196,22 @@
    "status": "open",
    "verification": "unchecked",
    "issue": 98
+  },
+  {
+   "id": "task:unified-reference-map",
+   "kind": "build-task",
+   "name": "One canonical resort map with overview and searchable photo references",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-applicable (tooling)"
+  },
+  {
+   "id": "task:barraka-barbecue-boat",
+   "kind": "build-task",
+   "name": "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
+   "priority": 2,
+   "status": "open",
+   "verification": "unchecked"
   }
  ],
  "edges": [
@@ -7546,7 +7562,13 @@
    "from": "ref:IMG_2223.jpg",
    "to": "area:beach",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "looks-at",
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2224.jpg",
@@ -8440,13 +8462,25 @@
    "from": "ref:IMG_2346.jpg",
    "to": "area:beach",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "looks-at",
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2347.jpg",
    "to": "area:beach",
    "relation": "looks-at",
-   "basis": "estimated 6 m along the heading"
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-boardwalk",
+   "relation": "looks-at",
+   "basis": "reviewed"
   },
   {
    "from": "ref:IMG_2350.jpg",
@@ -8871,6 +8905,16 @@
   {
    "from": "task:north-pool-unresolved-plan",
    "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:unified-reference-map",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:barraka-barbecue-boat",
+   "to": "area:barraka-beach",
    "relation": "in-area"
   },
   {
@@ -9444,6 +9488,21 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:barraka-barbecue-boat",
+   "to": "ref:IMG_2223.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:barraka-barbecue-boat",
+   "to": "ref:IMG_2346.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:barraka-barbecue-boat",
+   "to": "ref:IMG_2347.jpg",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -9501,6 +9560,11 @@
   {
    "from": "task:north-pool-unresolved-plan",
    "to": "task:north-pool-alignment-audit",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:barraka-barbecue-boat",
+   "to": "task:unified-reference-map",
    "relation": "depends-on"
   }
  ]

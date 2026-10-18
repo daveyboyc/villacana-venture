@@ -14,7 +14,7 @@ import middleSouth from "../data/middle_pool_south_gate.json";
 import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
 import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
-import { closestOnSegment, pointInRing } from "./geom";
+import { pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
 import {doorSills,sillRing,footpathBandRing,footpathParkingApronRing,footpathLawnRing,footpathKerbLine,footpathDrainRing,approachRing,approachKerbLines,inDoorSillReview} from "./door-sills";
@@ -28,6 +28,7 @@ import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddleP
 import middlePool from "../data/middle_pool.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
+import { photoLibrary } from "./photo-library";
 import kinds from "../data/kinds.json";
 import {accessSection,lowerPoolRing,poolAccess} from "./pool-levels";
 import type { MapObject, Skeleton, Vec2 } from "./types";
@@ -40,8 +41,6 @@ const EDITS_KEY = "villacana-map-edits";
 const ICONS: Record<string, { r: number; fill: string; edge: string; label: string }> = kinds;
 const UNKNOWN = { r: 0.8, fill: "#999", edge: "#333", label: "Object" };
 
-type PhotoPin = { file: string; title: string; trust: string; x?: number; z?: number; heading?: number; accuracy?: number; taken?: string; observation?: string };
-type PhotoAssignment={file:string;status:string;reasons:string[];nearby:{id:string;name:string;kind:string;gap:number}[];citedBy:string[];geometryReview:string};
 type Edits = { added: MapObject[]; moved: Record<string, Vec2>; removed: string[]; labels: Record<string, string> };
 
 const svg = document.querySelector<SVGSVGElement>("#map")!;
@@ -464,118 +463,9 @@ async function boot(): Promise<void> {
   [...live.values()].sort((a, b) => (ICONS[b.kind] ?? UNKNOWN).r - (ICONS[a.kind] ?? UNKNOWN).r).forEach(draw);
   world.append(names);
 
-  // Photos: a pin where each was taken and a wedge showing where it looks.
   objects.style.display="none";$("#objects").setAttribute("aria-pressed","false");
   for(const node of walls.querySelectorAll("circle"))node.setAttribute("display","none");
-  const photoEvidence=el("g",{id:"photo-evidence-layer",style:"display:none;pointer-events:none"});
-  const selectedEvidence=el("g",{id:"selected-photo-context"});
-  photoEvidence.append(selectedEvidence);world.append(photoEvidence);
-  const photos = el("g", {style:"display:none"});$("#photos").setAttribute("aria-pressed","false");
-  const viewer = $<HTMLDivElement>("#viewer");
-  const labelBox = $<HTMLInputElement>("#label");
-  const labelStatus = $("#labelstatus");
-  const observation=document.createElement("p");observation.id="photo-observation";viewer.querySelector("p")!.after(observation);
-  const evidenceDescription=document.createElement("p");evidenceDescription.id="photo-association";observation.after(evidenceDescription);
-  labelBox.addEventListener("input", () => {
-    labelStatus.textContent = "Unsaved label. Tap Save or press Done to keep it.";
-  });
-  let open: { pin: PhotoPin; dot: SVGCircleElement } | null = null;
-  viewer.addEventListener("click", (e) => {
-    if (e.target === viewer || e.target instanceof HTMLImageElement) viewer.hidden = true;
-  });
-  $("#closeviewer").addEventListener("click", () => (viewer.hidden = true));
-  try {
-    const response = await fetch(asset("/photos-ref/manifest.json"));
-    const manifest = response.ok ? ((await response.json()) as PhotoPin[]) : [];
-    const labelsFile = await fetch(asset("/photos-ref/labels.json"));
-    const published = labelsFile.ok ? ((await labelsFile.json()) as Record<string, string>) : {};
-    const assignmentData=await fetch(asset("/photos-ref/assignments.json")).then(r=>r.ok?r.json():{photos:[]}).catch(()=>({photos:[]}));
-    const assignments=new Map<string,PhotoAssignment>((assignmentData.photos as PhotoAssignment[]).map(a=>[a.file,a]));
-    const photoViews: { pin: PhotoPin; dot: SVGCircleElement }[] = [];
-    const labelOf = (pin: PhotoPin) => edits.labels[pin.file] ?? published[pin.file] ?? "";
-    const showPhoto = (photo: { pin: PhotoPin; dot: SVGCircleElement }) => {
-      open = photo;
-      const pin = photo.pin;
-      viewer.querySelector("img")!.src = asset(`/photos-ref/${pin.file}`);
-      viewer.querySelector("img")!.alt = pin.title;
-      viewer.querySelector("p")!.textContent = `${pin.title} · ${pin.file}${pin.taken ? " · " + pin.taken : ""}${pin.accuracy ? " · GPS ±" + pin.accuracy + " m" : ""}`;
-      observation.textContent=pin.observation??"";observation.hidden=!pin.observation;
-      const association=assignments.get(pin.file);
-      evidenceDescription.textContent=association?`${association.status==="suggested"?"Suggested map context":"Map association needs checking"}: ${[...new Set(association.nearby.map(q=>q.name))].join(" · ")||"No nearby mapped area"}. ${association.status==="needs-review"?association.reasons.join("; ")+". ":""}${association.citedBy.length?`Cited by ${association.citedBy.length} model features; citation does not establish visual accuracy. `:""}Camera pin stays at its recorded position. ${association.geometryReview}.`:"";
-      evidenceDescription.hidden=!association;
-      for(const circle of photoEvidence.querySelectorAll("[data-uncertainty-photo]"))circle.setAttribute("display",circle.getAttribute("data-uncertainty-photo")===pin.file?"":"none");
-      for(const group of photos.querySelectorAll("[data-photo-file]"))group.classList.toggle("selected-photo",group.getAttribute("data-photo-file")===pin.file);
-      selectedEvidence.replaceChildren();
-      if(association&&pin.x!==undefined&&pin.z!==undefined)for(const context of association.nearby) {
-        if(context.kind!=="street")continue;
-        const road=skeleton.boundaryReference?.roads.find(r=>`street:${r.id}`===context.id);if(!road)continue;
-        selectedEvidence.append(el("path",{d:"M"+road.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#db9c24","stroke-width":road.width+.4,"stroke-opacity":.5}));
-        const hit=road.points.slice(1).map((p,i)=>closestOnSegment(pin.x!,pin.z!,...road.points[i],...p)).sort((a,b)=>a.d-b.d)[0];
-        selectedEvidence.append(el("path",{d:`M${pin.x} ${pin.z}L${hit.x} ${hit.z}`,fill:"none",stroke:"#805614","stroke-width":.3,"stroke-dasharray":".7 .5"}));
-      }
-      labelBox.value = labelOf(pin);
-      labelStatus.textContent = "Tap Save to keep this label on this browser. Use Send changes to share it.";
-      const index = photoViews.indexOf(photo);
-      $<HTMLButtonElement>("#previousphoto").disabled = index <= 0;
-      $<HTMLButtonElement>("#nextphoto").disabled = index >= photoViews.length - 1;
-      viewer.hidden = false;
-    };
-    for (const [id, step] of [["#previousphoto", -1], ["#nextphoto", 1]] as const) {
-      $(id).addEventListener("click", () => {
-        if (!open) return;
-        const next = photoViews[photoViews.indexOf(open) + step];
-        if (next) showPhoto(next);
-      });
-    }
-    // Labelled photos turn green, so it is easy to see which are still to do.
-    const tint = (pin: PhotoPin, dot: SVGCircleElement) => dot.setAttribute("fill", labelOf(pin) ? "#2f9e44" : "#d6336c");
-    $("#labelrow").addEventListener("submit", (e) => {
-      e.preventDefault();
-      if (!open) return;
-      const text = labelBox.value.trim();
-      if (text === (published[open.pin.file] ?? "")) delete edits.labels[open.pin.file];
-      else edits.labels[open.pin.file] = text;
-      tint(open.pin, open.dot);
-      const persisted = save();
-      labelBox.value = text;
-      labelBox.blur();
-      labelStatus.textContent = persisted
-        ? "Saved on this browser. Close the photo and use Send changes to share your labels."
-        : "This browser could not save your label. It is kept for this visit only. Close the photo and use Send changes before leaving.";
-    });
-    for (const pin of manifest.sort((a, b) => a.file.localeCompare(b.file))) {
-      if (pin.x === undefined || pin.z === undefined) continue;
-      const association=assignments.get(pin.file);
-      const radius=pin.accuracy??10;
-      const circle=el("circle",{cx:pin.x,cy:pin.z,r:radius,fill:association?.status==="suggested"?"#4389ae":"#d99b2b","fill-opacity":.08,stroke:association?.status==="suggested"?"#4389ae":"#b27c19","stroke-width":.18,"stroke-dasharray":pin.accuracy?"1 .4":".3 .6","data-uncertainty-photo":pin.file,display:"none"});
-      const uncertaintyTitle=el("title",{});uncertaintyTitle.textContent=pin.accuracy?`${pin.file}: reported GPS ±${pin.accuracy} m`: `${pin.file}: uncertainty unknown; 10 m review search radius`;
-      circle.append(uncertaintyTitle);photoEvidence.prepend(circle);
-      const g = el("g", { style: "cursor:pointer", "data-photo-file":pin.file });
-      const photoTitle=el("title",{});photoTitle.textContent=labelOf(pin)||pin.title;g.append(photoTitle);
-      if (pin.heading !== undefined) {
-        const wedge = (deg: number, r: number) => {
-          const a = ((deg - 90) * Math.PI) / 180;
-          return `${pin.x! + Math.cos(a) * r} ${pin.z! + Math.sin(a) * r}`;
-        };
-        g.append(el("path", { d: `M${pin.x} ${pin.z}L${wedge(pin.heading - 28, 14)}L${wedge(pin.heading + 28, 14)}Z`, fill: "#d6336c", "fill-opacity": 0.18 }));
-      }
-      const dot = el("circle", { cx: pin.x, cy: pin.z, r: 1.4, fill: "#d6336c", stroke: "#fff", "stroke-width": 0.35 });
-      tint(pin, dot);
-      g.append(dot);
-      // Keep the tap from panning the map or, in edit mode, adding an object.
-      g.addEventListener("pointerdown", (e) => e.stopPropagation());
-      const photoView = { pin, dot };
-      photoViews.push(photoView);
-      g.addEventListener("click", (e) => {
-        e.stopPropagation();
-        showPhoto(photoView);
-      });
-      photos.append(g);
-    }
-  } catch {
-    // No photo index published: the map works without it.
-  }
-  world.append(photos);
+  let library: Awaited<ReturnType<typeof photoLibrary>> | undefined;
   if (skeleton.seafront) {
     const sf = skeleton.seafront;
     const centreOf = (ring: Vec2[]) => ring.reduce(([x, z], p) => [x + p[0] / ring.length, z + p[1] / ring.length], [0, 0] as Vec2);
@@ -631,7 +521,7 @@ async function boot(): Promise<void> {
   };
   apply();
   $("#map-frontages").addEventListener("click",()=>{
-    rotation=rot;photos.style.display="none";photoEvidence.style.display="none";$("#photo-evidence").setAttribute("aria-pressed","false");photos.classList.remove("evidence-mode");$("#photos").setAttribute("aria-pressed","false");
+    rotation=rot;
     const points=[...frontageRegions,...daliThresholdZones].flatMap(r=>r.ring).map(([x,z])=>[x*Math.cos(a)-z*Math.sin(a),x*Math.sin(a)+z*Math.cos(a)]);
     const minX=Math.min(...points.map(p=>p[0])),maxX=Math.max(...points.map(p=>p[0])),minY=Math.min(...points.map(p=>p[1])),maxY=Math.max(...points.map(p=>p[1]));
     const width=Math.max(maxX-minX+10,(maxY-minY+20)*innerWidth/innerHeight),height=width*innerHeight/innerWidth;
@@ -665,14 +555,14 @@ async function boot(): Promise<void> {
   // Screen-sized labels remain readable at every zoom and rotation.
   names.querySelectorAll("text").forEach(t=>t.style.display="none");
   seafrontNames.querySelectorAll("text").forEach(t=>t.style.display="none");
-  const references=referenceEditor({surface:svg,labels:mapLabels(skeleton),
-    project:(x,z)=>{const p=new DOMPoint(x,z).matrixTransform(world.getScreenCTM()!);return {x:p.x,y:p.y,visible:p.x>0&&p.x<innerWidth&&p.y>90&&p.y<innerHeight-175};},
+  const references=referenceEditor({surface:svg,labels:mapLabels(skeleton),enabled:()=>!document.querySelector<HTMLElement>("#map-page")?.hidden,
+    project:(x,z)=>{const p=new DOMPoint(x,z).matrixTransform(world.getScreenCTM()!);return {x:p.x,y:p.y,visible:p.x>0&&p.x<(innerWidth>760?innerWidth-375:innerWidth)&&p.y>(innerWidth>760?115:215)&&p.y<(innerWidth>760?innerHeight-150:innerHeight*.52)};},
     unproject:(x,y)=>{const p=new DOMPoint(x,y).matrixTransform(world.getScreenCTM()!.inverse());return [p.x,p.y];},
     onArm:()=>{editing=false;$("#editbar").hidden=true;$("#edit").setAttribute("aria-pressed","false");}
   });
-  const updateReferences=()=>{references.update();requestAnimationFrame(updateReferences);};updateReferences();
+  const updateReferences=()=>{if(svg.clientWidth){references.update();library?.update();}requestAnimationFrame(updateReferences);};updateReferences();
   window.addEventListener("keydown",e=>{
-    if((e.target as HTMLElement).matches("input,textarea,select")||references.active())return;
+    if(!svg.clientWidth||(e.target as HTMLElement).matches("input,textarea,select")||references.active()||library?.active())return;
     if(e.key==="+"||e.key==="=")zoomAt(innerWidth/2,innerHeight/2,1/1.3);
     if(e.key==="-")zoomAt(innerWidth/2,innerHeight/2,1.3);
     if(e.key.toLowerCase()==="q")rotateBy(-15);if(e.key.toLowerCase()==="e")rotateBy(15);
@@ -708,7 +598,7 @@ async function boot(): Promise<void> {
     touches.set(e.pointerId, { x: e.clientX, y: e.clientY });
   });
   svg.addEventListener("pointerup", (e) => {
-    if (!touches.delete(e.pointerId) || !editing || travelled > 8) return;
+    if (!touches.delete(e.pointerId) || !editing || travelled > 8 || library?.active()) return;
     // A tap on open map adds the chosen kind of object there.
     const [x, z] = toWorld(e);
     const o: MapObject = { id: `u${Date.now().toString(36)}`, kind: $<HTMLSelectElement>("#kind").value, x, z, evidence: "dave:map" };
@@ -749,15 +639,14 @@ async function boot(): Promise<void> {
     show(objects)(!on);$("#objects").setAttribute("aria-pressed",String(!on));
     for(const node of walls.querySelectorAll("circle"))node.setAttribute("display",on?"none":"");
     for(const {node,floors}of roofs){node.setAttribute("stroke",floors===0?"#94654b":"#5b564e");node.setAttribute("stroke-width",String(floors===0?.25:.4));node.setAttribute("stroke-dasharray",floors===0?".8 .4":"");}
-    show(photos)(!on);$("#photos").setAttribute("aria-pressed",String(!on));
-    if(on){show(photoEvidence)(false);$("#photo-evidence").setAttribute("aria-pressed","false");photos.classList.remove("evidence-mode");}
   });
   toggle("#objects", (on) => {
     show(objects)(on);
     show(walls)(on);
   });
-  toggle("#photos", (on)=>{show(photos)(on);show(photoEvidence)(on&&$("#photo-evidence").getAttribute("aria-pressed")==="true");});
-  toggle("#photo-evidence", (on)=>{show(photoEvidence)(on);photos.classList.toggle("evidence-mode",on);if(on){show(photos)(true);$("#photos").setAttribute("aria-pressed","true");}});
+  toggle("#photos", (on)=>library?.setVisible(on));
+  toggle("#photo-evidence", (on)=>library?.setEvidence(on));
+  $("#photo-evidence").setAttribute("aria-pressed","true");
   toggle("#boundary", show(boundary));
   toggle("#seafront", (on) => { show(seafront)(on); show(seafrontNames)(on); });
   toggle("#heights", paintRoofs);
@@ -771,6 +660,21 @@ async function boot(): Promise<void> {
     rotation=rot;Object.assign(view, home);
     apply();
   });
+
+  try {
+    library = await photoLibrary({svg,world,scale,rotation:()=>rotation,setLabel:(id,value)=>{edits.labels[id]=value;return save();},focus:(points)=>{
+      const theta=rotation*Math.PI/180;
+      const ps=points.map(([x,z])=>[x*Math.cos(theta)-z*Math.sin(theta),x*Math.sin(theta)+z*Math.cos(theta)]);
+      const minX=Math.min(...ps.map(p=>p[0])),maxX=Math.max(...ps.map(p=>p[0])),minY=Math.min(...ps.map(p=>p[1])),maxY=Math.max(...ps.map(p=>p[1]));
+      const panel=document.querySelector("#photo-library")!.getBoundingClientRect();
+      const top=Math.max(110,document.querySelector("#map-controls")!.getBoundingClientRect().bottom+12);
+      const availableW=innerWidth>760?panel.left-12:innerWidth;
+      const availableH=Math.max(60,(innerWidth>760?innerHeight-150:panel.top-12)-top);
+      const unit=Math.max((maxX-minX+35)/availableW,(maxY-minY+35)/availableH);
+      view.w=innerWidth*unit;view.h=innerHeight*unit;
+      view.x=(minX+maxX)/2-availableW*unit/2;view.y=(minY+maxY)/2-(top+availableH/2)*unit;apply();
+    }});
+  } catch(error) {const warning=document.createElement("p");warning.id="photo-load-error";warning.textContent="Photo references could not load. Reload to try again.";document.querySelector("#map-page")!.append(warning);console.error(error);}
 
   // Editing.
   const kind = $<HTMLSelectElement>("#kind");

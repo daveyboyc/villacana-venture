@@ -726,6 +726,48 @@
    ],
    "status": "open",
    "issue": 98
+  },
+  {
+   "id": "unified-reference-map",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "One canonical resort map with overview and searchable photo references",
+   "photos": [],
+   "build": "Unify the current overview, detailed map and labelled photo evidence into one canonical entry. Give agents stable photo IDs, searchable subjects, source paths, copyable reference links and explicit camera-versus-subject positions. Include unplaced and private references without exposing private pixels. Trace the Barraka Beach boat example through this workflow.",
+   "avoid": "No competing OSM-based default map, hidden photo labels, unsupported location snapping or private image publication. Preserve local annotations and existing deep links.",
+   "accept": [
+    "Canonical entry offers overview, map/photos and walk modes using the existing shared geometry",
+    "All catalogued references discoverable by ID and label; boat search finds actual boat references",
+    "Stable links reopen selected photo and mode; reference text includes source and uncertainty",
+    "Desktop/mobile browser regression and standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Codex"
+  },
+  {
+   "id": "barraka-barbecue-boat",
+   "area": "barraka-beach",
+   "priority": 2,
+   "kind": "structure",
+   "title": "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
+   "photos": [
+    "IMG_2223.jpg",
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
+   "build": "Model the confirmed sand-filled barbecue boat visible on the left of the boardwalk looking seaward. First measure its dimensions and placement relative to the independently aerial-anchored boardwalk and sign; add shared map, 3D and collision geometry. The unified map and reference index now locate all three sources and an approximate subject landmark.",
+   "avoid": "Do not place the boat at the inland phone GPS pins, call it a planter, or interpret the approximate look-at [37,126] as a surveyed footprint. Keep the boardwalk clear. No smoke or seasonal arrangement extrapolated.",
+   "accept": [
+    "Audit before/after against full IMG_2223/2346/2347, with camera mismatch explicitly recorded",
+    "One hull outline shared by map, 3D and collision; dimensions, uncertainty and evidence documented",
+    "Relevant geometry, route, reference, build and browser checks pass"
+   ],
+   "dependsOn": [
+    "unified-reference-map"
+   ],
+   "status": "open"
   }
  ]
 }

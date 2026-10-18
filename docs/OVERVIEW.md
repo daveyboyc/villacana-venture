@@ -1,10 +1,15 @@
 # Villacana overview and reference map
 
-Open `blueprint.html` for the detailed map, or select **Overview** while walking for the 3D view. The map’s **3D overview** link opens all four pool areas together, including the seafront. Both views use the same map coordinates, street names, car parks and ramp data.
+Open the app root for one canonical map. **Map & photos** combines the detailed
+registry map with searchable labelled references. **Overview** and **Walk** use
+the current 3D renderer for all four pools and the seafront. Photo IDs also appear
+in Overview and reopen their full reference in Map & photos. `blueprint.html`
+and `photos.html` preserve old links by redirecting here; `slice.html` remains the
+underlying renderer for diagnostic tools. See [UNIFIED_REFERENCE_MAP.md](UNIFIED_REFERENCE_MAP.md).
 
 The map has zoom buttons, wheel/pinch zoom, rotation buttons, two-finger rotation, North and Fit whole resort. Drag to pan. Keyboard +/− zoom and Q/E rotate. Street labels stay upright and keep a readable screen size; overlapping labels are hidden until there is room at a closer zoom. User annotations, pools and the principal connecting streets receive priority.
 
-The 3D overview freezes walking and has zoom/rotate buttons, North, Top down, Fit area, and a Drag: pan / Drag: rotate switch. Touch gestures pan or rotate according to this switch, and two fingers pinch to zoom. WASD pans in overview. Decorative distant mountains are hidden in overview. Return with Walk.
+The 3D overview freezes walking and has zoom/rotate buttons, North, Top down, Fit area, and a Drag: pan / Drag: rotate switch. Touch gestures pan or rotate according to this switch, and two fingers pinch to zoom. WASD pans in overview. Decorative distant mountains are hidden in overview. Return with the main Walk button.
 
 ## Labels and references
 

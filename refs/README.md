@@ -33,6 +33,11 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Signs | 12 | [topics/signage.md](topics/signage.md) |
 | Views | 28 | [topics/view.md](topics/view.md) |
 
+## Find one reference
+
+Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including private and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; private pixels stay in the private repo.
+
+
 172 references: 172 reviewed, 0 with areas suggested only from the camera position.
 
-Photo checks (`data/photo_checks.json`): 18 photo-check records, 1 match, 1 differ. 25 of 28 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 18 photo-check records, 1 match, 1 differ. 25 of 29 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).

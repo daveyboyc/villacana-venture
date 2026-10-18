@@ -2,89 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Villacana Roam</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Nunito:wght@560;750;800&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Villacana · map and photos</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      html, body { margin: 0; height: 100%; background: #c9a07a; font-family: system-ui, sans-serif; overflow: hidden; }
+      #map { width: 100vw; height: 100dvh; touch-action: none; display: block; }
+      .bar { position: fixed; left: 0; right: 0; display: flex; gap: 8px; align-items: center; padding: 0 12px; overflow-x: auto; scrollbar-width: none; }
+      .bar::-webkit-scrollbar { display: none; }
+      #bar { bottom: 12px; }
+      #editbar { bottom: 62px; }
+      #editbar[hidden], #legend[hidden], #viewer[hidden] { display: none; }
+      .bar button, .bar a, .bar select, #legend, #picked { flex: none; background: #fffdf8; border: 1px solid #c9bfae; border-radius: 999px; padding: 8px 14px; font-size: 14px; color: #222; text-decoration: none; white-space: nowrap; }
+      .bar button[aria-pressed="true"] { background: #222; color: #fff; }
+      .bar button:disabled { opacity: 0.45; }
+      #send { background: #1c6fd1; color: #fff; border-color: #1c6fd1; }
+      #picked { position: fixed; top: 12px; left: 50%; transform: translateX(-50%); max-width: 92vw; overflow: hidden; text-overflow: ellipsis; }
+      #editbar[hidden] ~ #picked { display: none; }
+      #legend { position: fixed; top: 12px; left: 12px; border-radius: 12px; line-height: 1.6; font-size: 13px; white-space: normal; }
+      #legend i { display: inline-block; width: 12px; height: 12px; margin-right: 6px; border: 1px solid #0006; vertical-align: -1px; }
+      #map-controls { position:fixed; top:12px; right:12px; display:flex; gap:5px; flex-wrap:nowrap; overflow-x:auto; max-width:calc(100vw - 24px); z-index:3; }
+      #map-controls button { min-height:44px; min-width:44px; flex:none; }
+      #map-controls button,#map-bearing { background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
+      #map-title { position:fixed; top:68px; left:12px; background:#fffdf8e8; border-radius:8px; padding:8px 12px; font-size:14px; }
+      #picked { top:96px; }
+      #map .evidence-mode [data-photo-file]:not(.selected-photo) path { display:none; }
+    </style>
   </head>
-  <body>
-    <canvas id="view"></canvas>
-    <div id="vignette"></div>
-
-    <div id="loading">
-      <p class="eyebrow">Estepona · Costa del Sol</p>
-      <h1>Villacana Roam</h1>
-      <p id="loadingText">Unfolding the lanes, the pools, and Playa del Sol…</p>
+  <body data-app-view="map">
+    <nav id="app-nav" aria-label="Map views"><a class="app-brand" href="./">Villacana</a><button id="view-map" type="button" aria-pressed="true">Map &amp; photos</button><button id="view-overview" type="button" aria-pressed="false">Overview</button><button id="view-walk" type="button" aria-pressed="false">Walk</button><button id="app-photo-toggle" type="button">Find a photo</button><span id="app-selected"></span></nav>
+    <section id="scene-page" hidden aria-label="Resort 3D view"><iframe id="resort-scene" title="Villacana resort overview and walk" allow="clipboard-write"></iframe></section>
+    <div id="map-page">
+    <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div id="map-controls" role="toolbar" aria-label="Map camera controls">
+      <button id="map-zoom-in" aria-label="Zoom in">+</button><button id="map-zoom-out" aria-label="Zoom out">−</button>
+      <button id="reset">Fit whole resort</button>
+      <button id="map-left" aria-label="Rotate left">↶</button><button id="map-right" aria-label="Rotate right">↷</button>
+      <button id="layout-mode" aria-pressed="true">Layout</button><button id="map-frontages">Patios &amp; lawns</button><button id="map-north">North ↑</button><span id="map-bearing" aria-label="Map rotation"></span>
     </div>
 
-    <header id="title">
-      <p class="eyebrow">Estepona · Costa del Sol</p>
-      <h1>Villacana Roam</h1>
-      <p id="street">Villacana</p>
-      <p id="osm">Map data © OpenStreetMap contributors</p>
-    </header>
-
-    <div id="topRight">
-      <button id="aboutBtn" type="button">About the map</button>
-      <p id="stops">Stops 0/5</p>
-      <canvas id="minimap" width="180" height="180" aria-label="Map of Villacana"></canvas>
+    <div id="legend" hidden></div>
+    <div class="bar" id="editbar" hidden>
+      <select id="kind" aria-label="Kind of object to add"></select>
+      <button id="delete" disabled>Delete</button>
+      <button id="undo" disabled>Discard all</button>
     </div>
+    <div id="picked"></div>
+    <div class="bar" id="bar">
+      <button id="send" hidden>Send changes</button>
+      <details id="map-options"><summary>Layers &amp; editing</summary><div class="map-options-body">
+      <a href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=36.4544655,-5.0511079&amp;zoom=18&amp;basemap=satellite" target="_blank" rel="noopener noreferrer">Google satellite</a><a href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=36.4544655,-5.0511079&amp;zoom=18&amp;basemap=roadmap" target="_blank" rel="noopener noreferrer">Google street map</a>
 
-    <p id="hint">WASD walk · Shift run · Space jump · drag to look · Q and R turn · E at a frame</p>
-    <p id="nearby"></p>
-    <button id="prompt" type="button" hidden>Look</button>
+      <button id="edit" aria-pressed="false">Edit</button>
+      <button id="photo" aria-pressed="false">Aerial photo</button>
+      <button id="streets" aria-pressed="true">Streets</button>
+      <button id="objects" aria-pressed="true">Objects</button>
+      <button id="boundary" aria-pressed="true">Parking & fence</button>
+      <button id="photos" aria-pressed="true">Photos</button>
+      <button id="photo-evidence" aria-pressed="false" title="Select a photo to inspect its GPS uncertainty and suggested street links">Photo evidence</button>
+      <button id="seafront" aria-pressed="true">Seafront</button>
+      <button id="heights" aria-pressed="false">Heights</button>
+      <button id="key" aria-pressed="false">Key</button>
 
-    <div id="card" hidden>
-      <article>
-        <button id="cardClose" type="button">Close</button>
-        <img id="cardImg" alt="" />
-        <div id="cardEmpty" hidden>
-          <p>This frame is waiting for a photograph from the lane.</p>
-        </div>
-        <h2 id="cardTitle"></h2>
-        <p id="cardCaption"></p>
-        <p id="cardCredit"></p>
-        <a id="cardSource" target="_blank" rel="noreferrer"></a>
-      </article>
+
+
+
+
+
+      </div></details>
     </div>
-
-    <div id="about" hidden>
-      <article>
-        <button id="aboutClose" type="button">Close</button>
-        <p class="eyebrow">How this prototype is made</p>
-        <h2>A walk built from the real map</h2>
-        <p>
-          The coastline, Playa del Sol, the named lanes, the swimming pools, and the houses volunteers
-          have traced all come from OpenStreetMap. Streets that do not have a house drawn yet get a row
-          of ordinary white terraces, which is what this urbanization actually looks like, so the walk
-          is a neighbourhood rather than an empty plan.
-        </p>
-        <p>
-          The two beach pictures are Creative Commons photographs of the Estepona coast, the same shore
-          Villacana faces. The empty frames are yours. Put a picture in <code>public/photos</code> and
-          point <code>album.json</code> at it.
-        </p>
-        <p>
-          You move the way you would in a small 3D platformer: walk, run, jump, and a camera over your
-          shoulder. It is an original stroll, not a Nintendo game.
-        </p>
-        <p id="aboutStats"></p>
-        <button id="respawn" type="button">Back to the lane</button>
-      </article>
     </div>
-
-    <div id="touch">
-      <div id="stick" aria-hidden="true"><div id="knob"></div></div>
-      <button id="runBtn" type="button">Run</button>
-      <button id="jumpBtn" type="button">Jump</button>
-    </div>
-
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/app.ts"></script>
   </body>
 </html>

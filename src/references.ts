@@ -70,7 +70,7 @@ function validPoints(value: unknown): ReferencePoint[] {
       try { const link=new URL(url);if(!["https:","http:"].includes(link.protocol)||!link.hostname)throw Error(); }
       catch { throw Error("Reference links must start with https:// or http:// and include a valid address."); }
     }
-    if(photo && !/^IMG_\d+\.jpg$/.test(photo)) throw Error("Invalid reference photo.");
+    if(photo && !/^[A-Za-z0-9_-]+\.jpg$/.test(photo)) throw Error("Invalid reference photo.");
     return {id:p.id,x:p.x,z:p.z,label:p.label.trim(),note,url,photo};
   });
 }
@@ -127,8 +127,8 @@ export function referenceEditor(options: {
   });
   get("ref-delete").addEventListener("click",()=>{if(!selected)return;points=points.filter(q=>q.id!==selected!.id);status.textContent=saveMessage(persist());dialog.close();render();});
   photo.addEventListener("change",media);url.addEventListener("input",media);
-  void fetch(asset("/photos-ref/manifest.json")).then(r=>r.json()).then((manifest:{file:string;title:string}[])=>{
-    for(const p of manifest.sort((a,b)=>a.file.localeCompare(b.file)))photo.add(new Option(p.title,p.file));if(selected){photo.value=selected.photo;media();}
+  void fetch(asset("/reference-index.json")).then(r=>r.json()).then((index:{references:{id:string;label:string;image:string|null}[]})=>{
+    for(const p of index.references.filter(p=>p.image).sort((a,b)=>a.id.localeCompare(b.id)))photo.add(new Option(`${p.id} · ${p.label}`,p.id));if(selected){photo.value=selected.photo;media();}
   }).catch(()=>{status.textContent="Photo list unavailable. You can still add a web or Drive link.";});
   get("ref-export").addEventListener("click",()=>{
     const blob=new Blob([JSON.stringify({format:"villacana-references",version:1,references:points},null,2)],{type:"application/json"});

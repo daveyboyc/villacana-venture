@@ -11,6 +11,7 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 - IMG_2346/2347 show narrow weathered green timber access, a white two-tier planted BARRAKA BEACH sign on its left looking seaward, and straw parasols. Added as ground-following planks plus guarded Details furniture; dimensions and seasonal furniture positions are estimates. IMG_2225 wooden cream-cushion beds differ from the blue/white plastic loungers west of the aisle in IMG_2223; those are not asserted as one type. No coast, paseo or registry footprint changes.
 - Boardwalk aerial anchor is the visible southeast-roof-corner run [30,121] to [42,135], not the IMG_2347 camera pin inside registry 6465801UF1366N_part5 about 25 m inland. Photo pair from the uncorrected pin is obstructed by that building. Hidden paseo join and exact camera correction remain unresolved; no cross-house connector is invented.
 - Issue #32: the existing georeferenced Esri aerial independently places the wet shoreline band seaward of the old OSM coast by up to about 30 m near Barraka. data/shoreline_trace.json records pixel control points; the local beach/sea edge now shares that trace. IMG_2285 is about 16.5 m inland of it, without changing its GPS. Estimated 3–5 m trace/registration precision; acquisition date, tide and seasonal changes remain unknown.
+- 2026-10-18 unified-map source review: IMG_2223/2346/2347 show a sand-filled barbecue boat, not a boat planter; it sits to photo-left of the timber boardwalk looking seaward, beyond the separate planted sign. It is absent from current 3D geometry (open task barraka-barbecue-boat). Reviewed look-at [37,126] is an approximate subject landmark (~3 m uncertainty), not a surveyed hull or corrected camera position. Phone positions about 25 m inland remain conflicting evidence.
 
 ## Read first
 
@@ -29,6 +30,14 @@ Layout: 3, Levels and slopes: 1, Facades and roofs: 5, Materials: 12, Signs: 2, 
 Ground and floor levels read from the photos, from `data/levels_survey.json` (see `docs/LEVELS.md`).
 
 - `beach-fall` (slope): 1-2 m above the waterline, low confidence. Model: **built**. The paseo's timber edge is about 0.1 m above the sand; the beach falls to the water over 30-50 m. (IMG_2351.jpg)
+
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map) | open | [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg) |
 
 ## Built from these photos
 
@@ -68,11 +77,11 @@ graph LR
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka Beach sign and boardwalk to the beach _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter, barraka_boardwalk.json:barraka-beach-seating._ |
-| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | Barraka Beach sign, thatched parasols and boardwalk _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter._ |
+| [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka barbecue boat, planted sign and boardwalk towards the sea **Looks at:** Sand-filled barbecue boat beside the Barraka boardwalk. **Note:** Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish. **Compass:** the subject is 52° from the phone heading; trust looksAt, not the heading. _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter, barraka_boardwalk.json:barraka-beach-seating._ |
+| [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | BARRAKA BEACH sign, barbecue boat and boardwalk **Looks at:** Sand-filled barbecue boat beside the Barraka boardwalk. **Note:** Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish. **Compass:** the subject is 69° from the phone heading; trust looksAt, not the heading. _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter._ |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
-| [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Beach by Barraka: sand, a boat planter, thatched parasols, boardwalk _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
+| [IMG_2223.jpg](../../public/photos-ref/IMG_2223.jpg) | ground | materials | Barraka Beach barbecue boat beside the timber boardwalk **Looks at:** Sand-filled barbecue boat beside the Barraka boardwalk. **Note:** Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish. **Compass:** the subject is 76° from the phone heading; trust looksAt, not the heading. _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
 | [IMG_2225.jpg](../../public/photos-ref/IMG_2225.jpg) | ground | materials | Thatched parasols and wooden loungers on the beach _Used by: barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-beach-seating._ |
 | [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage _Used by: area:beach._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses _Used by: paseo_wall.json:paseo-retaining-wall._ |
