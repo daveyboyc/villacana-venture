@@ -7,13 +7,13 @@ import type { Vec2 } from "./types";
 export const middleSouthAt = (along: number, across = 0): Vec2 => [f.center[0]+f.forward[0]*along-f.forward[1]*across,f.center[1]+f.forward[1]*along+f.forward[0]*across];
 export const middleSouthRect = (a:number,b:number,c:number,d:number):Vec2[] => [middleSouthAt(a,c),middleSouthAt(b,c),middleSouthAt(b,d),middleSouthAt(a,d)];
 export function middleSouthRings():Vec2[][] {
- const w=f.opening/2,p=f.pier,b=f.planter,s=f.step,panel=f.panel;
- // Leaves are fixed open into the courtyard; the inset step is outside the through route.
+ const w=f.opening/2,p=f.pier,b=f.planter,s=f.bench,panel=f.panel;
+ // Leaves are fixed open into the courtyard against the planter; the wall bench is set back past them, outside the through route.
  return [-1,1].flatMap(side=>{const c=side*(w+p/2);return [middleSouthRect(-p/2,p/2,c-p/2,c+p/2),middleSouthRect(-f.leafLength,0,side*w-.025,side*w+.025)];}).concat([
   middleSouthRect(b.along[0],s.along[0],...b.across as [number,number]),
   middleSouthRect(s.along[1],b.along[1],...b.across as [number,number]),
-  middleSouthRect(s.along[0],s.along[1],...s.across as [number,number]),
-  middleSouthRect(...panel.along as [number,number],panel.across,panel.across+.16),
+  middleSouthRect(s.along[0],s.along[1],s.plinth.across[0],s.seat.across[1]),
+  middleSouthRect(...panel.wallAlong as [number,number],panel.across,panel.across+.16),
  ]);
 }
 function crazyPavingTexture():THREE.CanvasTexture {
@@ -50,19 +50,21 @@ export function addMiddleSouthGate(scene:THREE.Scene):void {
   const points=Array.from({length:25},(_,i)=>{const x=-w+i*2*w/24;return new THREE.Vector3(x,f.height+.26+f.crownRise*(1-(x/w)**2),a);});
   group.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points),24,.014,5,false),iron));
  }
- const b=f.planter,s=f.step;
+ const b=f.planter,s=f.bench,bm=(s.along[0]+s.along[1])/2,bl=s.along[1]-s.along[0];
  for(const [lo,hi] of [[b.along[0],s.along[0]],[s.along[1],b.along[1]]]) {
   box((lo+hi)/2,(b.across[0]+b.across[1])/2,b.across[1]-b.across[0],b.height,hi-lo,0,plaster);
   box((lo+hi)/2,(b.across[0]+b.across[1])/2,b.across[1]-b.across[0]-2*b.wall,.025,hi-lo-.05,b.height,new THREE.MeshStandardMaterial({color:"#584c32"}));
  }
- box((s.along[0]+s.along[1])/2,(s.across[0]+s.across[1])/2,s.across[1]-s.across[0],s.height,s.along[1]-s.along[0],0,plaster);
+ // IMG_2335: a seat-height block recessed into the planter, with a low plinth in front of it.
+ for(const part of [s.seat,s.plinth])box(bm,(part.across[0]+part.across[1])/2,part.across[1]-part.across[0],part.height,bl,0,plaster);
  const panel=f.panel,pa=(panel.along[0]+panel.along[1])/2;
- box(pa,panel.across+.08,.16,panel.wallHeight,panel.width,0,plaster);
+ box((panel.wallAlong[0]+panel.wallAlong[1])/2,panel.across+.08,.16,panel.wallHeight,panel.wallAlong[1]-panel.wallAlong[0],0,plaster);
  const canvas=document.createElement("canvas");canvas.width=384;canvas.height=256;const g=canvas.getContext("2d")!;
- g.fillStyle="#eeeade";g.fillRect(0,0,384,256);
+ g.fillStyle="#f4f3ee";g.fillRect(0,0,384,256);
+ // Figure tiles along the top, bottom and gate-side edge (column 5 lands there once the group is mirrored); plain white tiles inside. The far edge is hidden by a cypress in the photo.
  for(let y=0;y<4;y++)for(let x=0;x<6;x++) {
-  const border=y===0||y===3||x===0||x===5;g.strokeStyle="#b6b4a2";g.strokeRect(x*64,y*64,64,64);
-  if(border){g.fillStyle="#dcc46e";g.fillRect(x*64+2,y*64+2,60,60);g.fillStyle="#214c96";g.beginPath();g.ellipse(x*64+32,y*64+32,24,27,0,0,Math.PI*2);g.fill();g.strokeStyle="#e7e6ce";g.lineWidth=4;g.beginPath();g.arc(x*64+32,y*64+32,16,0,Math.PI*1.7);g.stroke();}
+  const border=y===0||y===3||x===5;g.strokeStyle="#c9c8bd";g.lineWidth=2;g.strokeRect(x*64,y*64,64,64);
+  if(border){g.fillStyle="#e2c75a";g.fillRect(x*64+1,y*64+1,62,62);g.fillStyle="#5d8f3c";g.fillRect(x*64+1,y*64+1,62,10);g.fillStyle="#1f3f95";g.beginPath();g.arc(x*64+32,y*64+34,22,0,Math.PI*2);g.fill();g.fillStyle="#f2efe4";g.beginPath();g.ellipse(x*64+32,y*64+34,7,13,.3,0,Math.PI*2);g.fill();}
  }
  const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;
  box(pa,panel.across-.006,.012,panel.height,panel.width,panel.bottom,new THREE.MeshStandardMaterial({map:texture,roughness:.8}));

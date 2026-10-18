@@ -28,6 +28,8 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `pool-decks` (level): 0.05-0.1 m, high confidence. Model: **built**. At all three pools the deck is level with the lawn apart from a coping lip of 5-10 cm. (IMG_2204.jpg, IMG_2193.jpg, IMG_2194.jpg, IMG_2245.jpg, IMG_2188.jpg)
 
+**Built but never checked against its photos:** `door-sills`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
+
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |

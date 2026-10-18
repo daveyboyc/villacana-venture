@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "c4ff198829c319254dc1ca5f2016c04de95ccdc17f0522a9fb3fb54aa2fa2321",
+ "inputDigest": "dfb08f507beba3ef0230b02fffaf8abf02770735fe11aac30efc0cff0b91a031",
  "summary": {
   "unplaced": 1,
   "suggested": 77,
@@ -7424,36 +7424,35 @@
   },
   {
    "from": "photo:IMG_2334.jpg",
-   "to": "street:silvia-north",
+   "to": "street:eva",
    "relation": "camera-nearby",
-   "gap": 0.7
+   "gap": 0.0
   },
   {
    "from": "photo:IMG_2334.jpg",
-   "to": "street:eva",
+   "to": "street:silvia-north",
    "relation": "camera-nearby",
-   "gap": 1.0
+   "gap": 1.4
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 3.4
   },
   {
    "from": "photo:IMG_2334.jpg",
    "to": "building:6264401UF1366S_part2",
    "relation": "possibly-in-view",
-   "distance": 16.5,
-   "angleOffset": 1.1
+   "distance": 19.6,
+   "angleOffset": 2.3
   },
   {
    "from": "photo:IMG_2334.jpg",
    "to": "building:6364201UF1366S_part3",
    "relation": "possibly-in-view",
-   "distance": 40.0,
-   "angleOffset": 10.7
-  },
-  {
-   "from": "photo:IMG_2334.jpg",
-   "to": "building:6364201UF1366S_part5",
-   "relation": "possibly-in-view",
-   "distance": 44.9,
-   "angleOffset": 31.7
+   "distance": 43.4,
+   "angleOffset": 4.4
   },
   {
    "from": "photo:IMG_2334.jpg",
@@ -7463,29 +7462,22 @@
   },
   {
    "from": "photo:IMG_2335.jpg",
-   "to": "street:silvia-north",
-   "relation": "camera-nearby",
-   "gap": 0.4
-  },
-  {
-   "from": "photo:IMG_2335.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
-   "gap": 2.4
+   "gap": 0
   },
   {
    "from": "photo:IMG_2335.jpg",
-   "to": "building:6264401UF1366S_part2",
-   "relation": "possibly-in-view",
-   "distance": 15.1,
-   "angleOffset": 25.5
+   "to": "street:silvia-north",
+   "relation": "camera-nearby",
+   "gap": 0
   },
   {
    "from": "photo:IMG_2335.jpg",
    "to": "building:6264401UF1366S_part3",
    "relation": "possibly-in-view",
-   "distance": 29.2,
-   "angleOffset": 22.5
+   "distance": 30.0,
+   "angleOffset": 1.7
   },
   {
    "from": "photo:IMG_2335.jpg",

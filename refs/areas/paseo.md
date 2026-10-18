@@ -36,34 +36,34 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["The paseo"]
-  A --> F0["Paseo · east green windbreak"]
+  A --> F0["Paseo · east green windbreak · unchecked"]
   F0 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F1["Paseo · south-pool clipped hedge"]
+  A --> F1["Paseo · south-pool clipped hedge · unchecked"]
   F1 --> PIMG_2349_jpg(["IMG_2349"])
   F1 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F2["Paseo · flush square service cover"]
+  A --> F2["Paseo · flush square service cover · unchecked"]
   F2 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F3["Paseo · west clipped hedge"]
+  A --> F3["Paseo · west clipped hedge · unchecked"]
   F3 --> PIMG_2352_jpg(["IMG_2352"])
   F3 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F4["Paseo · west green windbreak"]
+  A --> F4["Paseo · west green windbreak · unchecked"]
   F4 --> PIMG_2352_jpg(["IMG_2352"])
-  A --> F5["Paseo · white lamp 1"]
+  A --> F5["Paseo · white lamp 1 · unchecked"]
   F5 --> PIMG_2352_jpg(["IMG_2352"])
   F5 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F6["Paseo · white lamp 2"]
+  A --> F6["Paseo · white lamp 2 · unchecked"]
   F6 --> PIMG_2352_jpg(["IMG_2352"])
   F6 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F7["Paseo · white lamp 3"]
+  A --> F7["Paseo · white lamp 3 · unchecked"]
   F7 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F8["Paseo · white lamp 4"]
+  A --> F8["Paseo · white lamp 4 · unchecked"]
   F8 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F9["Paseo · sandstone retaining wall and mesh fence"]
+  A --> F9["Paseo · sandstone retaining wall and mesh fence · unchecked"]
   F9 --> PIMG_2227_jpg(["IMG_2227"])
   F9 --> PIMG_2298_jpg(["IMG_2298"])
   F9 --> PIMG_2299_jpg(["IMG_2299"])
@@ -71,15 +71,17 @@ graph LR
   F9 --> PIMG_2350_jpg(["IMG_2350"])
   F9 --> PIMG_2352_jpg(["IMG_2352"])
   F9 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F10["Paseo · timber edge onto the beach"]
+  A --> F10["Paseo · timber edge onto the beach · unchecked"]
   F10 --> PIMG_2350_jpg(["IMG_2350"])
   F10 --> PIMG_2351_jpg(["IMG_2351"])
   F10 --> PIMG_2352_jpg(["IMG_2352"])
   F10 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F11["South lawn above the paseo"]
+  A --> F11["South lawn above the paseo · unchecked"]
   F11 --> PIMG_2188_jpg(["IMG_2188"])
   F11 --> PIMG_2349_jpg(["IMG_2349"])
 ```
+
+**Built but never checked against its photos:** `paseo-retaining-wall`, `paseo-retrace-line`, `paseo-house-clearance`, `paseo-details`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

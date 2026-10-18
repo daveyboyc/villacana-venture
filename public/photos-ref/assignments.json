@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "c4ff198829c319254dc1ca5f2016c04de95ccdc17f0522a9fb3fb54aa2fa2321",
+ "inputDigest": "dfb08f507beba3ef0230b02fffaf8abf02770735fe11aac30efc0cff0b91a031",
  "summary": {
   "unplaced": 1,
   "suggested": 77,
@@ -4667,33 +4667,34 @@
    ],
    "nearby": [
     {
-     "id": "street:silvia-north",
-     "name": "Calle Silvia",
-     "kind": "street",
-     "gap": 0.7
-    },
-    {
      "id": "street:eva",
      "name": "Calle Eva",
      "kind": "street",
-     "gap": 1.0
+     "gap": 0.0
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.4
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.4
     }
    ],
    "inViewCandidates": [
     {
      "id": "building:6264401UF1366S_part2",
-     "distance": 16.5,
-     "angleOffset": 1.1
+     "distance": 19.6,
+     "angleOffset": 2.3
     },
     {
      "id": "building:6364201UF1366S_part3",
-     "distance": 40.0,
-     "angleOffset": 10.7
-    },
-    {
-     "id": "building:6364201UF1366S_part5",
-     "distance": 44.9,
-     "angleOffset": 31.7
+     "distance": 43.4,
+     "angleOffset": 4.4
     }
    ],
    "citedBy": [
@@ -4701,12 +4702,12 @@
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
-    "x": -126.1,
-    "z": 102.0,
-    "basis": "phone location",
-    "reportedAccuracy": 4.7,
-    "heading": 162,
-    "headingBasis": "EXIF true north"
+    "x": -129.5,
+    "z": 100.0,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 1.5,
+    "heading": 153,
+    "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 162)"
    }
   },
   {
@@ -4718,28 +4719,23 @@
    ],
    "nearby": [
     {
-     "id": "street:silvia-north",
-     "name": "Calle Silvia",
-     "kind": "street",
-     "gap": 0.4
-    },
-    {
      "id": "street:eva",
      "name": "Calle Eva",
      "kind": "street",
-     "gap": 2.4
+     "gap": 0
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
     }
    ],
    "inViewCandidates": [
     {
-     "id": "building:6264401UF1366S_part2",
-     "distance": 15.1,
-     "angleOffset": 25.5
-    },
-    {
      "id": "building:6264401UF1366S_part3",
-     "distance": 29.2,
-     "angleOffset": 22.5
+     "distance": 30.0,
+     "angleOffset": 1.7
     }
    ],
    "citedBy": [
@@ -4747,12 +4743,12 @@
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
-    "x": -125.6,
-    "z": 103.3,
-    "basis": "phone location",
-    "reportedAccuracy": 4.7,
-    "heading": 189,
-    "headingBasis": "EXIF true north"
+    "x": -128.3,
+    "z": 100.9,
+    "basis": "checked against photo content",
+    "reportedAccuracy": 1.5,
+    "heading": 203,
+    "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 189)"
    }
   },
   {

@@ -48,6 +48,10 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
   inside a building and show areas far away.
 - After building something from a photo, cite it in that feature's
   `evidence`, and add any new fact or open question to the area's `notes`.
+- A citation is not a check. Render the build from each photo's camera
+  (`scripts/shoot_views.cjs --task=<id> --as=after`), compare it with the photo,
+  and record the result in `data/photo_checks.json`; a done task with an
+  unchecked photo fails `build_references.py --check`.
 - `refs/` is generated. Rebuild with `python3 scripts/build_references.py
   --sheets` and commit both repos. `--check` must pass before a PR.
 - New photos: follow "Intake for a new Drive batch" in

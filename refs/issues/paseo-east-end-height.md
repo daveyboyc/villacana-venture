@@ -30,6 +30,6 @@ Do not change the big-pool level without evidence; Dave set it. Ask for a photo 
 - [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)
 - [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes
 - [ ] `data/build_queue.json`: `paseo-east-end-height` set to done
-- [ ] Before/after renders from the photos' cameras attached to the PR (`scripts/shoot_views.cjs`)
+- [ ] Before/after renders from each photo's camera (`scripts/shoot_views.cjs <photos> --task=<id> --as=before|after`), each compared with its photo and recorded in `data/photo_checks.json` (matches, or differs with an open follow-up task); `--check` fails without them
 
 Depends on: `paseo-retrace-line`

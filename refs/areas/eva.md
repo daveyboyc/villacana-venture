@@ -24,23 +24,25 @@ Layout: 9, Facades and roofs: 3, Materials: 3, Planting: 5, Signs: 1
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["Calle Eva"]
-  A --> F0["Calle Eva · walled lawn and espalier corner"]
+  A --> F0["Calle Eva · walled lawn and espalier corner · unchecked"]
   F0 --> PIMG_2336_jpg(["IMG_2336"])
   F0 --> PIMG_2337_jpg(["IMG_2337"])
   F0 --> PIMG_2338_jpg(["IMG_2338"])
   F0 --> PIMG_2339_jpg(["IMG_2339"])
-  A --> F1["Middle pool · east gateway from Calle Eva"]
+  A --> F1["Middle pool · east gateway from Calle Eva · unchecked"]
   F1 --> PIMG_2244_jpg(["IMG_2244"])
   F1 --> PIMG_2340_jpg(["IMG_2340"])
-  A --> F2["Middle pool · stone steps up to Calle Eva"]
+  A --> F2["Middle pool · stone steps up to Calle Eva · unchecked"]
   F2 --> PIMG_2248_jpg(["IMG_2248"])
   F2 --> PIMG_2333_jpg(["IMG_2333"])
 ```
+
+**Built but never checked against its photos:** `eva-walled-lawn`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

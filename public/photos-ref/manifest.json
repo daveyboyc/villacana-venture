@@ -1567,36 +1567,46 @@
  {
   "file": "IMG_2334.jpg",
   "title": "Middle pool south: iron gate in a pergola frame onto a lane",
-  "trust": "phone location",
-  "x": -126.1,
-  "z": 102.0,
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 4.7,
+  "trust": "checked against photo content",
+  "x": -129.5,
+  "z": 100.0,
+  "locationBasis": "Placed from photo content on 18 Oct: perspective of IMG_2334 with the 1.85 m gate opening as scale puts the camera about 4.9 m back from the gate line, slightly right of its centre, looking straight through it.",
+  "accuracy": 1.5,
   "altitude": 6.5,
-  "heading": 162,
-  "headingBasis": "EXIF true north",
+  "heading": 153,
+  "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 162)",
   "taken": "2026-10-14",
   "observation": "Looking south through a black iron double gate under a curved metal pergola frame: crazy paving with a drain grate, a raised white planter with shrubs on the right with a white step, a tiled lane beyond between white walls and planting.",
   "originalUrl": "https://drive.google.com/file/d/1aMUPv4G01OMZqkfEOyJio7IB-crl0irZ/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
-  "areaHint": "middle-pool"
+  "areaHint": "middle-pool",
+  "gps": {
+   "x": -126.1,
+   "z": 102.0,
+   "accuracy": 4.7
+  }
  },
  {
   "file": "IMG_2335.jpg",
   "title": "Middle pool south: raised white planter with a blue tile panel",
-  "trust": "phone location",
-  "x": -125.6,
-  "z": 103.3,
-  "locationBasis": "Original phone GPS; camera position retained without snapping",
-  "accuracy": 4.7,
+  "trust": "checked against photo content",
+  "x": -128.3,
+  "z": 100.9,
+  "locationBasis": "Placed from photo content on 18 Oct: the camera stands on the crazy paving facing the bench recess across the path (south-south-west), with the open gate leaf at the left edge of the frame. The phone compass (189 degrees) agrees within about 15 degrees; the GPS pin was 3.6 m east, in the gateway itself.",
+  "accuracy": 1.5,
   "altitude": 6.3,
-  "heading": 189,
-  "headingBasis": "EXIF true north",
+  "heading": 203,
+  "headingBasis": "Set from photo content on 18 Oct (EXIF compass read 189)",
   "taken": "2026-10-14",
-  "observation": "Close view of a raised white rendered planter and wall with a framed panel of blue-and-white tiles, a white step in front and climbers above. Detail for the courtyard walls.",
+  "observation": "Close view of a raised white rendered planter and wall with a framed panel of blue-and-white tiles, a seat-height wall bench recessed into it with a low plinth in front, and climbers above. Detail for the courtyard walls.",
   "originalUrl": "https://drive.google.com/file/d/1mj-khvMz4GfDmiiVUayMH1ygwcnkR3UQ/view?usp=drivesdk",
   "visualReview": "observed; geometry comparison pending",
-  "areaHint": "middle-pool"
+  "areaHint": "middle-pool",
+  "gps": {
+   "x": -125.6,
+   "z": 103.3,
+   "accuracy": 4.7
+  }
  },
  {
   "file": "IMG_2336.jpg",

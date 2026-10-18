@@ -34,26 +34,28 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 ## Built from these photos
 
-Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`. A citation records what a feature was traced from; it does not prove the feature matches.
+Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
 
 ```mermaid
 graph LR
   A["North pool"]
-  A --> F0["North pool · visible crazy-paving lawn-edge path"]
+  A --> F0["North pool · visible crazy-paving lawn-edge path · unchecked"]
   F0 --> PIMG_2204_jpg(["IMG_2204"])
   F0 --> PIMG_2205_jpg(["IMG_2205"])
   F0 --> PIMG_2206_jpg(["IMG_2206"])
   F0 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F1["North pool · low northern patio plinths and white steps"]
+  A --> F1["North pool · low northern patio plinths and white steps · unchecked"]
   F1 --> PIMG_2204_jpg(["IMG_2204"])
   F1 --> PIMG_2205_jpg(["IMG_2205"])
   F1 --> PIMG_2207_jpg(["IMG_2207"])
   F1 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F2["North pool · north-west raised terrace and tiled stair"]
+  A --> F2["North pool · north-west raised terrace and tiled stair · unchecked"]
   F2 --> PIMG_2204_jpg(["IMG_2204"])
   F2 --> PIMG_2206_jpg(["IMG_2206"])
   F2 --> PIMG_2208_jpg(["IMG_2208"])
 ```
+
+**Built but never checked against its photos:** `north-pool-garden-walls`, `raised-terraces`. Treat their geometry as unconfirmed; see the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
@@ -63,7 +65,7 @@ graph LR
 | [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios._ |
 | [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-north-patios._ |
 | [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace._ |
-| [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. _Used by: raised_terraces.json:north-pool-north-patios._ |
+| [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. **Compass:** the subject is 60° from the phone heading; trust looksAt, not the heading. _Used by: raised_terraces.json:north-pool-north-patios._ |
 | `villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg` | upper-floor | layout, facades, planting, view | North pool: the whole courtyard looking north. The best single reference for it. |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
 | `villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg` | upper-floor | layout, materials, planting | North pool looking down over barrel roof tiles: hedges, gates, crazy paving |
