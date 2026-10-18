@@ -6,7 +6,6 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `north-pool-garden-walls` [#36](https://github.com/daveyboyc/villacana-venture/issues/36) | North pool: curved garden walls and raised patios (after raised-terraces) | open | [IMG_2207](../public/photos-ref/IMG_2207.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg), [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2205](../public/photos-ref/IMG_2205.jpg) |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../public/photos-ref/IMG_2227.jpg), [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2226](../public/photos-ref/IMG_2226.jpg) |
 | P1 | `middle-pool-sw-steps` [#31](https://github.com/daveyboyc/villacana-venture/issues/31) | Middle pool south-west: stone steps and the gateway at their top | done · issue_31 | [IMG_2333](../public/photos-ref/IMG_2333.jpg), [IMG_2332](../public/photos-ref/IMG_2332.jpg), [IMG_2331](../public/photos-ref/IMG_2331.jpg), [IMG_2245](../public/photos-ref/IMG_2245.jpg) |
 | P1 | `raised-terraces` [#54](https://github.com/daveyboyc/villacana-venture/issues/54) | Raised terraces: a reusable module, first used for the north pool west terrace and its tiled stair | done · issue_54 | [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2206](../public/photos-ref/IMG_2206.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg) |
@@ -16,6 +15,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P2 | `elena-east-patios` [#38](https://github.com/daveyboyc/villacana-venture/issues/38) | Elena north: private patios east of the beds (after elena-garden-door) | done · issue_38 | [IMG_2366](../public/photos-ref/IMG_2366.jpg), [IMG_2362](../public/photos-ref/IMG_2362.jpg), [IMG_2360](../public/photos-ref/IMG_2360.jpg) |
 | P2 | `elena-garden-door` [#34](https://github.com/daveyboyc/villacana-venture/issues/34) | Elena north: path and garden door between the two hedged beds | done · issue_34 | [IMG_2199](../public/photos-ref/IMG_2199.jpg), [IMG_2201](../public/photos-ref/IMG_2201.jpg), [IMG_2200](../public/photos-ref/IMG_2200.jpg) |
 | P2 | `middle-pool-south-gate` [#39](https://github.com/daveyboyc/villacana-venture/issues/39) | Middle pool south: iron double gate under a pergola frame (after middle-pool-sw-steps) | done · issue39 | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
+| P2 | `north-pool-garden-walls` [#36](https://github.com/daveyboyc/villacana-venture/issues/36) | North pool: curved garden walls and raised patios (after raised-terraces) | done · Codex | [IMG_2207](../public/photos-ref/IMG_2207.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg), [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2205](../public/photos-ref/IMG_2205.jpg) |
 | P2 | `paseo-house-clearance` [#41](https://github.com/daveyboyc/villacana-venture/issues/41) | Paseo east: registry house 6465801UF1366N_part5 blocks the walk (after paseo-retrace-line) | done · issue_41 | [IMG_2226](../public/photos-ref/IMG_2226.jpg), [IMG_2227](../public/photos-ref/IMG_2227.jpg) |
 | P2 | `paseo-retrace-line` [#35](https://github.com/daveyboyc/villacana-venture/issues/35) | Paseo: re-trace the promenade line from the retaining wall | done · issue_35 | [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2352](../public/photos-ref/IMG_2352.jpg), [IMG_2354](../public/photos-ref/IMG_2354.jpg), [IMG_2349](../public/photos-ref/IMG_2349.jpg) |
 | P2 | `south-pool-seaward-level` [#37](https://github.com/daveyboyc/villacana-venture/issues/37) | South pool: lawn level above the paseo and its seaward wall (after paseo-retaining-wall) | done · issue_37 | [IMG_2349](../public/photos-ref/IMG_2349.jpg), [IMG_2188](../public/photos-ref/IMG_2188.jpg) |
@@ -36,7 +36,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 ## By area
 
-- **North pool** ([brief](areas/north-pool.md)): `north-pool-garden-walls`, `raised-terraces`
+- **North pool** ([brief](areas/north-pool.md)): `raised-terraces`, `north-pool-garden-walls`
 - **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
 - **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
 - **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`

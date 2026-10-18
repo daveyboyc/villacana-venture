@@ -459,8 +459,8 @@
       "confidence": "medium",
       "risers": 2,
       "at": [
-        -166.0,
-        8.0
+        -172,
+        9
       ],
       "atAccuracy": 8,
       "photos": [
@@ -468,9 +468,9 @@
         "IMG_2205.jpg",
         "IMG_2207.jpg"
       ],
-      "model": "missing",
+      "model": "built",
       "task": "north-pool-garden-walls",
-      "note": "Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings."
+      "note": "Ground-floor patios across the lawn behind white plinth walls of 0.3-0.4 m with hedges on top; one or two white-nosed steps in the openings. Issue #36 refines the broad position from (-166,8) to (-172,9), keeping the original +-8 m tolerance: three individual lower openings registered from IMG_2204 pool-ring camera fit span about x=-177 to -168,z=11, west of Calle Isabel; the old centre biased the whole patio band east. Height range unchanged."
     },
     {
       "id": "pool-decks",
