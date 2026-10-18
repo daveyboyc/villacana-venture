@@ -281,10 +281,20 @@ const path = require("node:path");
       }
       const visible = [[1.25, 2.5], [10, 3.0], [22, 3.0]].map(([sa, ca]) => top(band([sa, ca]), "-path"));
       if (visible.some(delta=>Math.abs(delta)>.01)) throw Error("Dalí footpath tiles do not follow its player ground");
-      const a = d.approach, arch = sills.approachPoint(0.3, 0), foot = sills.approachPoint(a.foot + 1, 0);
+      const a = d.approach, arch = sills.approachPoint(0.6, 0), foot = sills.approachPoint(a.foot + 1, 0);
       const rise = world.groundHeight(...arch) - world.groundHeight(...foot);
       if (rise < 0.15 || rise > 0.35) throw Error("South Dalí approach rise " + rise.toFixed(2) + " m is outside the survey");
-      for (let t = 0; t < a.foot + 1; t += 0.05) if (Math.abs(world.groundHeight(...sills.approachPoint(t, 0)) - world.groundHeight(...sills.approachPoint(t + 0.05, 0))) > 0.03) throw Error("South Dalí approach has a step at " + t.toFixed(2));
+      // The arch plane itself intersects the unchanged solid registry facade.
+      // Check continuity at every reachable player centre, including the whole exterior landing.
+      let continuousSamples=0,firstReachable=Infinity;
+      const reachable=point=>{const hit=world.solids.resolve(...point,.42);return Math.hypot(hit.x-point[0],hit.z-point[1])<.001;};
+      for(let t=0;t<a.foot+1;t+=.05){
+        const p=sills.approachPoint(t,0),q=sills.approachPoint(t+.05,0);
+        if(!reachable(p)||!reachable(q))continue;
+        firstReachable=Math.min(firstReachable,t);continuousSamples++;
+        if(Math.abs(world.groundHeight(...p)-world.groundHeight(...q))>.03)throw Error("South Dalí approach has a reachable step at "+t.toFixed(2));
+      }
+      if(continuousSamples<100||firstReachable>a.level)throw Error("South Dalí landing is not reachable up to the facade collision stop");
       const slope = [0.5, 3, 5.8].map(t => top(sills.approachPoint(t, 0), "-flagstones"));
       if (slope.some(delta=>Math.abs(delta)>.01)) throw Error("South Dalí flagstones do not follow the player ground");
       walk([foot, sills.approachPoint(0.6, 0), foot]);
@@ -303,7 +313,13 @@ const path = require("node:path");
       for(const sill of d.sills)standOn(near(sill.door,sill.outward,sill.depth/2),sill.id);
       for(const [st,c] of [[1.25,2.5],[10,3],[10,1],[10,.07],[20,3],[20,1],[20,k.pathEdge+k.kerbWidth/2]])standOn(sills.kerbPoint(st,c),"Dalí frontage "+st+","+c);
       for(const t of [.6,1,3,5.8,6.2,6.49])standOn(sills.approachPoint(t,0),"Approach "+t);
-      for(const t of [1,3,5.8])for(const sign of [-1,1])standOn(sills.approachPoint(t,sign*(sills.approachInner(t,sign>0?"right":"left")+a.kerbWidth/2)),"Approach side kerb "+t+","+sign);
+      const kerbContacts={left:0,right:0};
+      for(const t of [1,3,5.8])for(const sign of [-1,1]){
+        const side=sign>0?"right":"left",point=sills.approachPoint(t,sign*(sills.approachInner(t,side)+a.kerbWidth/2));
+        if(reachable(point)){standOn(point,"Approach side kerb "+t+","+sign);kerbContacts[side]++;}
+        else if(Math.abs(top(point,"-kerbs"))>.015)throw Error("Approach kerb beside solid facade has mismatched visible height");
+      }
+      if(!kerbContacts.left||!kerbContacts.right)throw Error("No reachable shoe-sole check on both approach side kerbs");
       if(Math.abs(world.groundHeight(...sills.approachPoint(a.foot-.01,0))-world.groundHeight(...sills.approachPoint(a.foot+.01,0)))>.005)throw Error("Invisible approach toe step");
       player.place(...sills.approachPoint(1.2,0),0);
       const yaw=Math.atan2(-a.outward[0],a.outward[1]);let touchedFacade=false;
