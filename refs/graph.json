@@ -1486,6 +1486,26 @@
    "name": "Dalí · grass strip"
   },
   {
+   "id": "door_sills.json:dali-footpath-kerb",
+   "kind": "model-feature",
+   "name": "Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia"
+  },
+  {
+   "id": "door_sills.json:dali-south-arch-approach",
+   "kind": "model-feature",
+   "name": "Pintor Dalí south · flagstone approach to the arch"
+  },
+  {
+   "id": "door_sills.json:elena-bed-door-sill",
+   "kind": "model-feature",
+   "name": "Elena south · sill at the second door, north along the same wall"
+  },
+  {
+   "id": "door_sills.json:elena-lawn-door-sill",
+   "kind": "model-feature",
+   "name": "Elena south · sill at the door at the end of the lawn path"
+  },
+  {
    "id": "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "kind": "model-feature",
    "name": "Elena east patios · white wall behind the plumbago bed on Cervantes"
@@ -1971,7 +1991,7 @@
    "kind": "build-task",
    "name": "Door sills and footpath kerbs: the small steps everywhere",
    "priority": 3,
-   "status": "open",
+   "status": "done",
    "issue": 57
   }
  ],
@@ -5397,6 +5417,61 @@
    "relation": "cites"
   },
   {
+   "from": "door_sills.json:dali-footpath-kerb",
+   "to": "ref:IMG_2291.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-footpath-kerb",
+   "to": "ref:IMG_2292.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-footpath-kerb",
+   "to": "ref:IMG_2293.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-south-arch-approach",
+   "to": "ref:IMG_2283.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-south-arch-approach",
+   "to": "ref:IMG_2294.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:dali-south-arch-approach",
+   "to": "ref:IMG_2295.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-bed-door-sill",
+   "to": "ref:IMG_2261.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-bed-door-sill",
+   "to": "ref:IMG_2330.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-lawn-door-sill",
+   "to": "ref:IMG_2260.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-lawn-door-sill",
+   "to": "ref:IMG_2261.jpg",
+   "relation": "cites"
+  },
+  {
+   "from": "door_sills.json:elena-lawn-door-sill",
+   "to": "ref:IMG_2330.jpg",
+   "relation": "cites"
+  },
+  {
    "from": "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "to": "ref:IMG_2197.jpg",
    "relation": "cites"
@@ -6269,6 +6344,31 @@
   {
    "from": "dali_cervantes_threshold.json:dali-lawn-strip-2",
    "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-footpath-kerb",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:dali-south-arch-approach",
+   "to": "area:dali",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:elena-bed-door-sill",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:elena-bed-door-sill",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "door_sills.json:elena-lawn-door-sill",
+   "to": "area:cervantes",
    "relation": "in-area"
   },
   {
@@ -7414,6 +7514,12 @@
   {
    "from": "ref:IMG_2282.jpg",
    "to": "parking:Dalí car park",
+   "relation": "looks-at",
+   "basis": "estimated 6 m along the heading"
+  },
+  {
+   "from": "ref:IMG_2283.jpg",
+   "to": "door_sills.json:dali-south-arch-approach",
    "relation": "looks-at",
    "basis": "estimated 6 m along the heading"
   },
