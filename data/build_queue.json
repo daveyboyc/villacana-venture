@@ -624,6 +624,32 @@
    "status": "done",
    "owner": "issue_57",
    "issue": 57
+  },
+  {
+   "id": "north-pool-west-frontage",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "structure",
+   "title": "North pool west courtyard: photographed gardens and closed doorways",
+   "photos": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg",
+    "IMG_2204.jpg"
+   ],
+   "build": "Trace only the visible west garden/patio pockets and closed brown door structures below the northwest terrace, registered against the georeferenced aerial and the west-facing Apple courtyard view. Share map, mesh and collision; keep the curved common path clear.",
+   "avoid": "Do not move registry houses or pool, extend the raised terrace into the private gardens, repeat doors, or invent hidden enclosure limits. The user screenshot lawn/deck disappearance has not reproduced on current north-only/whole-resort renders.",
+   "accept": [
+    "paired marked-area overview and photo-camera renders",
+    "independent original photo and aerial review",
+    "source, build and browser checks"
+   ],
+   "dependsOn": [
+    "raised-terraces",
+    "north-pool-garden-walls"
+   ],
+   "status": "in-progress",
+   "issue": 95,
+   "owner": "Codex"
   }
  ]
 }
