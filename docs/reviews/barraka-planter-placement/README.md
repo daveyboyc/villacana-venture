@@ -32,6 +32,26 @@ registry to approximately half a metre in the sampled picks, with roof/parallax
 and picking uncertainty still present. This is a local image/registry diagnostic,
 not proof of absolute survey accuracy or a visible wall toe.
 
+The wider site registration and its independent Google/Esri validation landmarks
+remain documented in the [north-pool alignment audit](../north-pool-alignment-audit/README.md).
+Its cross-source residuals do not establish planter coordinates. This smaller
+comparison uses the existing fixed aerial frame, three local roof diagnostics
+and a held-out southern roof corner; it is not a complete placement packet.
+
+## Comparison artifacts
+
+- [Old versus candidate aisle/sign overlay](alignment-comparison.png), identical
+  Esri crop/frame with unchanged restaurant registry ring.
+- [Pixel observations and displacement](observations.json).
+- IMG_2346 [before](IMG_2346-before.png) / [after](IMG_2346-after.png);
+  IMG_2347 [before](IMG_2347-before.png) / [after](IMG_2347-after.png).
+  Each pair uses that photo's unchanged stored pin and the same illustrative
+  look-at `[38,106]`, with Details enabled. Third-person camera offset,
+  foreground obstruction and missing boat/hut prevent a photographic match.
+- [Independent source review](independent-source-review.md), including review of
+  the actual final draft renders against the originals.
+- [Validation and outstanding evidence gate](validation.md).
+
 ## Discrepancies and proposed correction
 
 | ID | Evidence and observed difference | Proposed change | Confidence / limits |
@@ -63,3 +83,8 @@ The citations on northern registry parts `6465801UF1366N_part5/part6` support th
 They are retained. They must not be mistaken for evidence identifying the cooking
 hut or the actual Barraka roof. Earlier reviews are preserved with this correction
 to the aisle interpretation.
+
+The automatic photo association now excludes these `notStanding` records from
+solid-camera warnings and visible-building suggestions, while retaining their
+evidence citations. A camera inside an absent registry structure is not evidence
+of GPS drift or a blocked view.

@@ -472,11 +472,11 @@
   "title": "Barraka Beach barbecue boat beside the timber boardwalk",
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
   "looksAt": [
-   37,
-   126
+   38,
+   106
   ],
-  "locationBasis": "Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.",
-  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish."
+  "locationBasis": "Illustrative subject landmark for the northeast-side correction proposal: [38,106], with approximately 4 m uncertainty. This is not a traced boat footprint or measured position. Owner and originals confirm planter, cooking boat and hut left of the green aisle looking seaward, immediately left/northeast of Barraka. The old 25 m camera disagreement was measured against the wrong southwest aisle and does not establish GPS error. Retain original camera coordinates; camera calibration is unavailable.",
+  "note": "Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement."
  },
  "IMG_2224.jpg": {
   "shows": [
@@ -1942,11 +1942,11 @@
   "title": "BARRAKA BEACH sign, barbecue boat and boardwalk",
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
   "looksAt": [
-   37,
-   126
+   38,
+   106
   ],
-  "locationBasis": "Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.",
-  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish."
+  "locationBasis": "Illustrative subject landmark for the northeast-side correction proposal: [38,106], with approximately 4 m uncertainty. This is not a traced boat footprint or measured position. Owner and originals confirm planter, cooking boat and hut left of the green aisle looking seaward, immediately left/northeast of Barraka. The old 25 m camera disagreement was measured against the wrong southwest aisle and does not establish GPS error. Retain original camera coordinates; camera calibration is unavailable.",
+  "note": "Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement."
  },
  "IMG_2347.jpg": {
   "shows": [
@@ -1961,11 +1961,11 @@
   "title": "Barraka barbecue boat, planted sign and boardwalk towards the sea",
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
   "looksAt": [
-   37,
-   126
+   38,
+   106
   ],
-  "locationBasis": "Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.",
-  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish."
+  "locationBasis": "Illustrative subject landmark for the northeast-side correction proposal: [38,106], with approximately 4 m uncertainty. This is not a traced boat footprint or measured position. Owner and originals confirm planter, cooking boat and hut left of the green aisle looking seaward, immediately left/northeast of Barraka. The old 25 m camera disagreement was measured against the wrong southwest aisle and does not establish GPS error. Retain original camera coordinates; camera calibration is unavailable.",
+  "note": "Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement."
  },
  "IMG_2349.jpg": {
   "shows": [

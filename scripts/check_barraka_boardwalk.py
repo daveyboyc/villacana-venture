@@ -37,6 +37,11 @@ for p,radius in [(d['sign']['point'],1.25)]+[(p,2.35) for p in d['seating']['par
    assert not inside(*p,house['ring'])
    assert min(distance(p,a,b) for a,b in zip(house['ring'],house['ring'][1:]+house['ring'][:1]))>=radius
  if p != d['sign']['point']: assert not inside(*p,s['seafront']['restaurant']['terrace'])
-# Pins locate the camera, not sign/parasols: the placement is bounded to the restaurant's beach access.
-assert math.dist(w['points'][0],[30,121])<2 and math.dist(w['points'][-1],[42,135])<2
-print('Barraka: indexed photo evidence, finite estimated boardwalk, full prop envelopes clear of access/paseo/houses/pools PASS')
+# Owner and originals establish the flank and side; this does not certify precise coordinates.
+a,b=w['points'][0],w['points'][-1]
+def left(point):return ((b[1]-a[1])*(point[0]-a[0])-(b[0]-a[0])*(point[1]-a[1]))/math.dist(a,b)
+roof=s['seafront']['restaurant']['ring'];centre=[sum(p[j] for p in roof)/len(roof) for j in (0,1)]
+assert left(centre)<-w['width']/2,'Restaurant must be right of the seaward aisle, per owner identification'
+assert left(d['sign']['point'])>w['width']/2+1.25,'Planter must be left of the aisle, clear of its full width'
+assert math.dist(a,min(roof,key=lambda p:math.dist(p,a)))<4,'Landward aisle context must remain beside actual Barraka'
+print('Barraka: source-supported flank/side relations, estimated finite access and full prop clearance PASS; metre placement remains unapproved')

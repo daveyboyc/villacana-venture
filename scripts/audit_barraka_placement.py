@@ -23,10 +23,11 @@ def main():
     def world(pixel):return [bounds['minX']+pixel[0]*sx,bounds['minZ']+pixel[1]*sz]
     def source(point):return [(point[0]-bounds['minX'])/sx,(point[1]-bounds['minZ'])/sz]
     roof=skeleton['seafront']['restaurant']['ring']
-    picks=[('C1 north', [1506,832],1),('C2 east',[1544,876],4),('C3 west',[1467,866],6),('V1 south, held out',[1505,911],5)]
+    picks=[('C1 north', [1506,832],1),('C2 east',[1544,876],3),('C3 west',[1467,866],6),('V1 south, held out',[1505,911],4)]
     observations=[{'id':id,'sourcePixel':p,'sourcePoint':world(p),'modelPoint':roof[i],
                    'distanceM':round(math.dist(world(p),roof[i]),3),'uncertaintyM':1.0,
                    'role':'held-out diagnostic' if id.startswith('V') else 'registration diagnostic'} for id,p,i in picks]
+    assert all(item['distanceM']<2 for item in observations), 'Check corner identity and registry index before publishing registration diagnostics'
     record={'baseline':BASE,'frame':'map-metres-east-south','transform':[sx,0,0,sz,bounds['minX'],bounds['minZ']],
             'about':'Same fixed aerial frame for both panels. No local warp or fit to the proposal. Roof picks diagnose local registration only; no <=2m placement approval.',
             'sources':{'aerial':hashlib.sha256((ROOT/'public/map/ground.jpg').read_bytes()).hexdigest(),
@@ -49,7 +50,7 @@ def main():
         x,y=at(sign);draw.ellipse((x-10,y-10,x+10,y+10),fill='#aaff44',outline='black',width=2)
         draw.text((x+12,y-10),'planter centre (estimate)',fill='black',font=small,stroke_width=2,stroke_fill='white')
         x,y=at([25,109]);draw.text((x-45,y-15),'BARRAKA',fill='black',font=font,stroke_width=2,stroke_fill='white')
-        x,y=at([47,99]);draw.text((x-40,y),'Photo-left side:\nplanter / cooking hut / boat\n(precise footprints unresolved)',fill='#222222',font=small,stroke_width=2,stroke_fill='white')
+        draw.text((offset+w-340,65),'Photo-left side:\nplanter / cooking hut / boat\n(precise footprints unresolved)',fill='#222222',font=small,stroke_width=2,stroke_fill='white')
         for item in observations:
             x,y=at(item['sourcePoint']);draw.ellipse((x-4,y-4,x+4,y+4),fill='white',outline='black')
         x,y=at([47,137]);draw.line([(x,y),(x+35,y+44)],fill='white',width=4);draw.text((x-5,y-26),'towards sea',font=small,fill='black',stroke_width=2,stroke_fill='white')

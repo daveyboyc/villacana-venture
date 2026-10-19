@@ -49,6 +49,14 @@ class PhotoAssignmentTests(unittest.TestCase):
         a=assign(self.photo(heading=0),self.model+[north,south],self.bounds)
         self.assertEqual([q['id']for q in a['inViewCandidates']],['building:n'])
         self.assertEqual(a['citedBy'],[])
+    def test_absent_registry_parts_are_not_solid_camera_obstructions(self):
+        ring=[[-2,-2],[2,-2],[2,2],[-2,2]]
+        building={'id':'building:historical','kind':'building','ring':ring,'notStanding':True,'evidence':['p.jpg']}
+        a=assign(self.photo(),self.model+[building],self.bounds)
+        self.assertFalse(any('solid registry' in reason for reason in a['reasons']))
+        self.assertIn('building:historical',a['citedBy'],'absence evidence remains traceable')
+        building.pop('notStanding')
+        self.assertTrue(any('solid registry' in reason for reason in assign(self.photo(),self.model+[building],self.bounds)['reasons']))
     def test_import_keeps_existing_annotations_and_strips_metadata(self):
         with tempfile.TemporaryDirectory() as tmp:
             source=Path(tmp)/'originals';source.mkdir();out=Path(tmp)/'web';out.mkdir()

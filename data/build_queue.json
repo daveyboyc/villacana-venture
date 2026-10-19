@@ -757,15 +757,16 @@
     "IMG_2346.jpg",
     "IMG_2347.jpg"
    ],
-   "build": "Model the confirmed sand-filled barbecue boat visible on the left of the boardwalk looking seaward. First measure its dimensions and placement relative to the independently aerial-anchored boardwalk and sign; add shared map, 3D and collision geometry. The unified map and reference index now locate all three sources and an approximate subject landmark.",
-   "avoid": "Do not place the boat at the inland phone GPS pins, call it a planter, or interpret the approximate look-at [37,126] as a surveyed footprint. Keep the boardwalk clear. No smoke or seasonal arrangement extrapolated.",
+   "build": "Model the confirmed sand-filled cooking boat visible on the left of the green aisle looking seaward, separate from the planted sign and thatched cooking shelter. First establish measured placement against the actual northeast Barraka flank and inspect docs/reviews/barraka-planter-placement; the earlier southwest aisle anchor was wrong, and the draft NE correction is not a precise survey. Then add shared map, 3D and collision geometry from the full originals.",
+   "avoid": "Do not place the boat at phone GPS, call it a planter, or use old look-at [37,126]. Current [38,106] is an illustrative subject landmark with approximately 4m uncertainty, not a surveyed footprint. Do not identify the ambiguous elongated aerial object as this boat without corroboration. Keep the aisle clear and cooking shelter distinct; no hidden footprint or seasonal smoke arrangement invented.",
    "accept": [
     "Audit before/after against full IMG_2223/2346/2347, with camera mismatch explicitly recorded",
     "One hull outline shared by map, 3D and collision; dimensions, uncertainty and evidence documented",
     "Relevant geometry, route, reference, build and browser checks pass"
    ],
    "dependsOn": [
-    "unified-reference-map"
+    "unified-reference-map",
+    "barraka-planter-placement"
    ],
    "status": "open"
   },
@@ -801,6 +802,7 @@
     "IMG_2347.jpg"
    ],
    "features": [
+    "barraka_boardwalk.json:barraka-boardwalk",
     "barraka_boardwalk.json:barraka-sign-planter"
    ],
    "build": "Resolve discrepancy barraka-planter-position. Audit the sign, hut and boardwalk registration; measure and independently review a correction with current overlay/comparison artifacts before changing coordinates. Recheck any other boardwalk features affected by a correction.",

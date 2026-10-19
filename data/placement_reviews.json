@@ -16,6 +16,21 @@
    "notes": "User reports BARRAKA BEACH planter is in the wrong place. Current [35,122] is an estimate; exact correction has not been independently measured. Earlier reviews and passing clearance tests do not establish this position.",
    "evidence": "docs/reviews/placement-verification-gate/barraka-planter.md",
    "followUp": "barraka-planter-placement"
+  },
+  {
+   "id": "barraka-boardwalk-flank",
+   "feature": "barraka_boardwalk.json:barraka-boardwalk",
+   "status": "open",
+   "reportedBy": "Project owner clarification, independently checked against originals and maps",
+   "reportedAt": "2026-10-19",
+   "sources": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg",
+    "map:ground"
+   ],
+   "notes": "Green aisle is immediately left/northeast of actual Barraka looking seaward; previous southwest run anchors the whole planter arrangement on the wrong flank. Draft candidate moves aisle/planter by [+1,-20]m; exact ground trace/endpoints remain unapproved. See independent review. No closure inferred from software checks or owner side identification.",
+   "evidence": "docs/reviews/barraka-planter-placement/README.md",
+   "followUp": "barraka-planter-placement"
   }
  ]
 }

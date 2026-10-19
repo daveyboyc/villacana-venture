@@ -168,13 +168,13 @@ def assign(photo,model,bounds):
     area_hint=photo.get('areaHint')
     if area_hint and area_hint not in {q['id'] for q in result['nearby']}:flags.append('Observed camera area disagrees with the GPS/map area candidates')
     if not result['nearby']:flags.append('No mapped street/area within the uncertainty range')
-    if known and any(f['kind']=='building' and not f.get('passage') and inside(p,f['ring']) for f in model):flags.append('Camera overlaps a solid registry footprint; check GPS drift or footprint alignment')
+    if known and any(f['kind']=='building' and not f.get('passage') and not f.get('notStanding') and inside(p,f['ring']) for f in model):flags.append('Camera overlaps a solid registry footprint; check GPS drift or footprint alignment')
     heading=photo.get('heading')
     if isinstance(heading,(int,float)) and math.isfinite(heading):
         result['camera']['heading']=heading
         result['camera']['headingBasis']=photo.get('headingBasis','Existing recorded heading; calibration unknown')
         for f in model:
-            if f['kind']!='building':continue
+            if f['kind']!='building' or f.get('notStanding'):continue
             ring=f['ring'];q=[sum(v[j] for v in ring)/len(ring) for j in (0,1)];distance=math.dist(p,q)
             angle=math.degrees(math.atan2(q[0]-p[0],-(q[1]-p[1])))%360
             delta=abs((angle-heading+180)%360-180)

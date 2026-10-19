@@ -5101,8 +5101,7 @@
    "file": "IMG_2346.jpg",
    "status": "needs-review",
    "reasons": [
-    "Observed camera area disagrees with the GPS/map area candidates",
-    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    "Observed camera area disagrees with the GPS/map area candidates"
    ],
    "nearby": [
     {
@@ -5139,8 +5138,7 @@
    "file": "IMG_2347.jpg",
    "status": "needs-review",
    "reasons": [
-    "Observed camera area disagrees with the GPS/map area candidates",
-    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    "Observed camera area disagrees with the GPS/map area candidates"
    ],
    "nearby": [
     {

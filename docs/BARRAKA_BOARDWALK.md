@@ -1,5 +1,12 @@
 # Barraka timber beach access and optional furniture (#42)
 
+**19 October correction:** the aisle anchor below was identified on the wrong
+restaurant flank. The owner and full IMG_2346/2347 identify the green aisle on the
+northeast/left side of Barraka looking towards the sea. See the
+[current comparison and independent source review](reviews/barraka-planter-placement/README.md).
+The old 25 m camera-to-aisle distance does not establish GPS error. This document
+retains the earlier implementation/review history; it is superseded on that anchor.
+
 Sources inspected: barraka-beach contact sheet, IMG_2346, IMG_2347,
 IMG_2223 and IMG_2225 at full web-copy resolution, and the georeferenced aerial.
 The photographs support weathered green/brown transverse timber boards, a white

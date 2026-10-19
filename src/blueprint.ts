@@ -9,7 +9,7 @@ import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
-import {barrakaSections} from "./barraka-boardwalk";
+import {barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import middleSouth from "../data/middle_pool_south_gate.json";
 import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
 import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
@@ -180,6 +180,8 @@ async function boot(): Promise<void> {
     const title = el("title", {}); title.textContent = `${paseoWall.wall.name}: ${paseoWall.wall.trust} · ${paseoWall.wall.evidence.join(", ")}`; wall.append(title);
     seafront.append(wall);
     for(const section of barrakaSections()) seafront.append(el("path",{d:path([section.left,section.right,section.endRight,section.endLeft]),fill:"#80917b",stroke:"#635a47","stroke-width":.1}));
+    const planter=el("circle",{id:"barraka-sign-planter-marker",cx:barrakaSign.point[0],cy:barrakaSign.point[1],r:.6,fill:"#a6bc68",stroke:"#455833","stroke-width":.15});
+    const planterTitle=el("title",{});planterTitle.textContent=`${barrakaSign.name} · estimated position; marker, not footprint`;planter.append(planterTitle);seafront.append(planter);
   }
   world.append(seafront);
 

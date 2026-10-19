@@ -44,10 +44,10 @@
         112.00176339285716
       ],
       "modelPoint": [
-        29.15,
-        120.64
+        38.72,
+        112.21
       ],
-      "distanceM": 12.753,
+      "distanceM": 0.281,
       "uncertaintyM": 1.0,
       "role": "registration diagnostic"
     },
@@ -80,10 +80,10 @@
         120.40742745535715
       ],
       "modelPoint": [
-        27.92,
-        119.23
+        29.15,
+        120.64
       ],
-      "distanceM": 1.714,
+      "distanceM": 0.233,
       "uncertaintyM": 1.0,
       "role": "held-out diagnostic"
     }

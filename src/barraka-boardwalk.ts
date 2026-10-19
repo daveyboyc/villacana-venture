@@ -5,6 +5,9 @@ import type { Vec2 } from "./types";
 
 /** Shared map/3D access; protects the whole walk from optional furniture. */
 export const barrakaAccess: ProtectedRoute = { id: data.boardwalk.id, name: data.boardwalk.name, points: data.boardwalk.points as Vec2[], width: data.boardwalk.width };
+/** The sign spans the aisle; its lettering faces back towards the inland approach. */
+export const barrakaSign = { point: data.sign.point as Vec2, name: data.sign.name,
+  yaw: Math.atan2(barrakaAccess.points[1][0]-barrakaAccess.points[0][0], barrakaAccess.points[1][1]-barrakaAccess.points[0][1])+Math.PI };
 export function barrakaSections(): { a: Vec2; b: Vec2; left: Vec2; right: Vec2; endLeft: Vec2; endRight: Vec2 }[] {
   return barrakaAccess.points.slice(1).map((b, i) => {
     const a = barrakaAccess.points[i], length = Math.hypot(b[0] - a[0], b[1] - a[1]), nx = -(b[1] - a[1]) / length * barrakaAccess.width / 2, nz = (b[0] - a[0]) / length * barrakaAccess.width / 2;
@@ -39,7 +42,7 @@ export function addBarrakaBoardwalk(scene: THREE.Scene, groundY: (x: number, z: 
   };
   const [sx, sz] = data.sign.point, signRadius = Math.hypot(data.sign.width / 2, data.sign.depth / 2 + .3);
   if (clear(sx, sz, signRadius)) {
-    const sign = new THREE.Group(); sign.position.set(sx, groundY(sx, sz), sz); sign.rotation.y = -.7; details.add(sign);
+    const sign = new THREE.Group(); sign.name = data.sign.id; sign.position.set(sx, groundY(sx, sz), sz); sign.rotation.y = barrakaSign.yaw; details.add(sign);
     box(sign, 2.1, .42, .65, 0, .25, .28, white); box(sign, 2.1, 1.25, .16, 0, .65, -.12, white);
     const canvas = document.createElement("canvas"); canvas.width = 512; canvas.height = 192;
     const ctx = canvas.getContext("2d")!; ctx.fillStyle = "#e9e7d9"; ctx.fillRect(0, 0, 512, 192); ctx.fillStyle = "#24271e"; ctx.textAlign = "center"; ctx.font = "bold 62px serif"; ctx.fillText("BARRAKA", 256, 77); ctx.fillText("BEACH", 300, 151);
