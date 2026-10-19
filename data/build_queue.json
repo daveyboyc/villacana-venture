@@ -768,6 +768,53 @@
     "unified-reference-map"
    ],
    "status": "open"
+  },
+  {
+   "id": "placement-verification-gate",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Gate graph placement verification on fresh measured evidence and independent review",
+   "photos": [],
+   "build": "Separate placement verification from photo diagnostics and software checks. Require feature-specific evidence packets, independent validation controls and reviews, current source/model/artifact digests and explicit discrepancy resolution. Show the Barraka planter report as disputed. Gate new geometry completion and PR geometry changes; expose blockers in graph, briefs, map agent references and CLI.",
+   "avoid": "Do not invent a planter correction, fabricate photographic matches or erase previous manual reviews. A citation, task done flag, unrelated photo check or software PASS must not verify a placement.",
+   "accept": [
+    "Positive and negative policy tests including partial checks, stale evidence, wrong-feature citations, review identity and open discrepancy blockers",
+    "Barraka planter is disputed and reports a concrete follow-up",
+    "Reference generation, handover source/build/browser checks and PR gate pass"
+   ],
+   "dependsOn": [
+    "unified-reference-map"
+   ],
+   "status": "done",
+   "owner": "Codex",
+   "issue": 101
+  },
+  {
+   "id": "barraka-planter-placement",
+   "area": "barraka-beach",
+   "priority": 1,
+   "kind": "layout",
+   "title": "Correct reported Barraka planter placement against registered source evidence",
+   "photos": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
+   "features": [
+    "barraka_boardwalk.json:barraka-sign-planter"
+   ],
+   "build": "Resolve discrepancy barraka-planter-position. Audit the sign, hut and boardwalk registration; measure and independently review a correction with current overlay/comparison artifacts before changing coordinates. Recheck any other boardwalk features affected by a correction.",
+   "avoid": "Do not substitute camera GPS or arbitrary offsets for measured subject position. Existing citation, software PASS or legacy task completion does not establish correct placement.",
+   "accept": [
+    "Resolve the graph discrepancy with a fresh approved same-feature placement packet",
+    "Inspect full IMG_2346/2347 against the actual Details renderer and registered aerial",
+    "Keep shared geometry and protected paths consistent; run source/build/browser checks"
+   ],
+   "dependsOn": [
+    "placement-verification-gate"
+   ],
+   "status": "open",
+   "issue": 102
   }
  ]
 }

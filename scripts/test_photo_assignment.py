@@ -77,7 +77,7 @@ class PhotoAssignmentTests(unittest.TestCase):
         self.assertTrue(sources)
         self.assertTrue(all(ref.startswith('ref:apple-maps/') for ref in sources))
         catalog=[{'id':ref,'shows':['north-pool']} for ref in set(sources)]
-        with patch.object(build_references,'load',return_value=graph):
+        with patch.object(build_references,'load',return_value=s):
             roofs=[f for f in build_references.model_features(catalog) if f['id'].startswith('north_west_canopies.json:')]
         self.assertEqual(len(roofs),3)
         self.assertTrue(all(f['areas']==['north-pool'] and all(ref in sources for ref in f['photos']) for f in roofs))

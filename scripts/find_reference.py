@@ -45,6 +45,10 @@ def main() -> None:
             if r.get(key):
                 print(f"  {key}: {r[key]}")
         print(f"  Model citations: {', '.join(f['id'] for f in r['features']) or 'none recorded (not proof of absence)'}")
+        for feature in r['features']:
+            placement=feature.get('placement',{})
+            print(f"    {feature['id']}: placement {placement.get('status','unreviewed')}"+(f" (tolerance {placement['toleranceM']} m)" if 'toleranceM' in placement else '')+f"; photo diagnostics {feature.get('photoVerification','unchecked')}")
+            for blocker in placement.get('blockers',[]):print(f"      Blocker: {blocker}")
         print(f"  Recorded checks: {', '.join(c['result'] for c in r['checks']) or 'none in current records; earlier manual reviews may exist'}")
         print()
     print(f'{len(rows)} reference(s). Inspect full images before editing; citations do not prove a photographic match.')

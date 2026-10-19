@@ -49,88 +49,88 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Miguel de Cervantes"]
-  A --> F0["Cervantes east · white plumbago kerb · unchecked"]
+  A --> F0["Cervantes east · white plumbago kerb · unreviewed"]
   F0 --> PIMG_2356_jpg(["IMG_2356"])
   F0 --> PIMG_2360_jpg(["IMG_2360"])
-  A --> F1["Cervantes east south · closed brown curved-coping garden door · unchecked"]
+  A --> F1["Cervantes east south · closed brown curved-coping garden door · unreviewed"]
   F1 --> PIMG_2360_jpg(["IMG_2360"])
   F1 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F2["Cervantes east south · timber and cane pergola · unchecked"]
+  A --> F2["Cervantes east south · timber and cane pergola · unreviewed"]
   F2 --> PIMG_2360_jpg(["IMG_2360"])
   F2 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F3["Cervantes junction · raised garden door and private patio · unchecked"]
+  A --> F3["Cervantes junction · raised garden door and private patio · unreviewed"]
   F3 --> PIMG_2196_jpg(["IMG_2196"])
   F3 --> PIMG_2287_jpg(["IMG_2287"])
   F3 --> PIMG_2327_jpg(["IMG_2327"])
   F3 --> PIMG_2328_jpg(["IMG_2328"])
-  A --> F4["cervantes-junction-north-bed · unchecked"]
+  A --> F4["cervantes-junction-north-bed · unreviewed"]
   F4 --> PIMG_2196_jpg(["IMG_2196"])
   F4 --> PIMG_2327_jpg(["IMG_2327"])
   F4 --> PIMG_2328_jpg(["IMG_2328"])
   F4 --> PIMG_2355_jpg(["IMG_2355"])
-  A --> F5["cervantes-junction-north-patio · unchecked"]
+  A --> F5["cervantes-junction-north-patio · unreviewed"]
   F5 --> PIMG_2358_jpg(["IMG_2358"])
   F5 --> PIMG_2359_jpg(["IMG_2359"])
   F5 --> PIMG_2367_jpg(["IMG_2367"])
   F5 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F6["Cervantes north · east visible patio partition · unchecked"]
+  A --> F6["Cervantes north · east visible patio partition · unreviewed"]
   F6 --> PIMG_2359_jpg(["IMG_2359"])
   F6 --> PIMG_2368_jpg(["IMG_2368"])
   F6 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F7["Cervantes north · middle visible patio partition · unchecked"]
+  A --> F7["Cervantes north · middle visible patio partition · unreviewed"]
   F7 --> PIMG_2359_jpg(["IMG_2359"])
   F7 --> PIMG_2368_jpg(["IMG_2368"])
   F7 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F8["Cervantes north · west visible patio partition · unchecked"]
+  A --> F8["Cervantes north · west visible patio partition · unreviewed"]
   F8 --> PIMG_2359_jpg(["IMG_2359"])
   F8 --> PIMG_2368_jpg(["IMG_2368"])
   F8 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F9["Cervantes · north patio wall 1 · unchecked"]
+  A --> F9["Cervantes · north patio wall 1 · unreviewed"]
   F9 --> PIMG_2263_jpg(["IMG_2263"])
   F9 --> PIMG_2264_jpg(["IMG_2264"])
   F9 --> PIMG_2265_jpg(["IMG_2265"])
   F9 --> PIMG_2273_jpg(["IMG_2273"])
   F9 --> PIMG_2274_jpg(["IMG_2274"])
   F9 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F10["Cervantes · north patio wall east of garden door · unchecked"]
+  A --> F10["Cervantes · north patio wall east of garden door · unreviewed"]
   F10 --> PIMG_2263_jpg(["IMG_2263"])
   F10 --> PIMG_2264_jpg(["IMG_2264"])
   F10 --> PIMG_2265_jpg(["IMG_2265"])
   F10 --> PIMG_2273_jpg(["IMG_2273"])
   F10 --> PIMG_2274_jpg(["IMG_2274"])
   F10 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F11["Cervantes · south patio wall 1 · unchecked"]
+  A --> F11["Cervantes · south patio wall 1 · unreviewed"]
   F11 --> PIMG_2263_jpg(["IMG_2263"])
   F11 --> PIMG_2264_jpg(["IMG_2264"])
   F11 --> PIMG_2265_jpg(["IMG_2265"])
   F11 --> PIMG_2273_jpg(["IMG_2273"])
   F11 --> PIMG_2274_jpg(["IMG_2274"])
   F11 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F12["Cervantes · south patio wall 2 · unchecked"]
+  A --> F12["Cervantes · south patio wall 2 · unreviewed"]
   F12 --> PIMG_2263_jpg(["IMG_2263"])
   F12 --> PIMG_2264_jpg(["IMG_2264"])
   F12 --> PIMG_2265_jpg(["IMG_2265"])
   F12 --> PIMG_2273_jpg(["IMG_2273"])
   F12 --> PIMG_2274_jpg(["IMG_2274"])
   F12 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F13["Cervantes · south patio wall 3 · unchecked"]
+  A --> F13["Cervantes · south patio wall 3 · unreviewed"]
   F13 --> PIMG_2263_jpg(["IMG_2263"])
   F13 --> PIMG_2264_jpg(["IMG_2264"])
   F13 --> PIMG_2265_jpg(["IMG_2265"])
   F13 --> PIMG_2273_jpg(["IMG_2273"])
   F13 --> PIMG_2274_jpg(["IMG_2274"])
   F13 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F14["Elena south · sill at the second door, north along the same wall · unchecked"]
+  A --> F14["Elena south · sill at the second door, north along the same wall · unreviewed"]
   F14 --> PIMG_2261_jpg(["IMG_2261"])
   F14 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F15["Elena south · sill at the door at the end of the lawn path · unchecked"]
+  A --> F15["Elena south · sill at the door at the end of the lawn path · unreviewed"]
   F15 --> PIMG_2260_jpg(["IMG_2260"])
   F15 --> PIMG_2261_jpg(["IMG_2261"])
   F15 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F16["Elena east patios · white wall behind the plumbago bed on Cervantes · unchecked"]
+  A --> F16["Elena east patios · white wall behind the plumbago bed on Cervantes · unreviewed"]
   F16 --> PIMG_2197_jpg(["IMG_2197"])
   F16 --> PIMG_2356_jpg(["IMG_2356"])
-  A --> F17["Cervantes / Elena · front lawn 1 · unchecked"]
+  A --> F17["Cervantes / Elena · front lawn 1 · unreviewed"]
   F17 --> PIMG_2260_jpg(["IMG_2260"])
   F17 --> PIMG_2261_jpg(["IMG_2261"])
   F17 --> PIMG_2263_jpg(["IMG_2263"])
@@ -138,37 +138,69 @@ graph LR
   F17 --> PIMG_2342_jpg(["IMG_2342"])
   F17 --> PIMG_2358_jpg(["IMG_2358"])
   F17 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F18["Cervantes / Elena · front lawn 2 · unchecked"]
+  A --> F18["Cervantes / Elena · front lawn 2 · unreviewed"]
   F18 --> PIMG_2260_jpg(["IMG_2260"])
   F18 --> PIMG_2261_jpg(["IMG_2261"])
   F18 --> PIMG_2329_jpg(["IMG_2329"])
   F18 --> PIMG_2342_jpg(["IMG_2342"])
   F18 --> PIMG_2358_jpg(["IMG_2358"])
   F18 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F19["Cervantes / Elena · paved front enclosure · unchecked"]
+  A --> F19["Cervantes / Elena · paved front enclosure · unreviewed"]
   F19 --> PIMG_2260_jpg(["IMG_2260"])
   F19 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F20["Front-door approach between lawns · unchecked"]
+  A --> F20["Front-door approach between lawns · unreviewed"]
   F20 --> PIMG_2260_jpg(["IMG_2260"])
   F20 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F21["Cervantes · planting along low wall · unchecked"]
+  A --> F21["Cervantes · planting along low wall · unreviewed"]
   F21 --> PIMG_2273_jpg(["IMG_2273"])
   F21 --> PIMG_2274_jpg(["IMG_2274"])
-  A --> F22["Cervantes / Elena · clipped lawn tree 1 · unchecked"]
+  A --> F22["Cervantes / Elena · clipped lawn tree 1 · unreviewed"]
   F22 --> PIMG_2329_jpg(["IMG_2329"])
   F22 --> PIMG_2342_jpg(["IMG_2342"])
   F22 --> PIMG_2358_jpg(["IMG_2358"])
   F22 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F23["Cervantes / Elena ramp · unchecked"]
+  A --> F23["Cervantes / Elena ramp · unreviewed"]
   F23 --> PIMG_2262_jpg(["IMG_2262"])
   F23 --> PIMG_2265_jpg(["IMG_2265"])
   F23 --> PIMG_2286_jpg(["IMG_2286"])
-  A --> F24["Cervantes / Elena · steps beside the ramp · unchecked"]
+  A --> F24["Cervantes / Elena · steps beside the ramp · unreviewed"]
   F24 --> PIMG_2262_jpg(["IMG_2262"])
   F24 --> PIMG_2286_jpg(["IMG_2286"])
   F24 --> PIMG_2328_jpg(["IMG_2328"])
   F24 --> PIMG_2355_jpg(["IMG_2355"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `cervantes_east_hedge.json:cervantes-east-plumbago-kerb` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-door` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-pergola` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_garden_door.json:cervantes-garden-door` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_garden_door.json:cervantes-junction-north-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_garden_door.json:cervantes-junction-north-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_north_patios.json:cervantes-north-partition-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_north_patios.json:cervantes-north-partition-middle` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_north_patios.json:cervantes-north-partition-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_patio_walls.json:cervantes-patio-north-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_patio_walls.json:cervantes-patio-north-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_patio_walls.json:cervantes-patio-south-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_patio_walls.json:cervantes-patio-south-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_patio_walls.json:cervantes-patio-south-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `door_sills.json:elena-bed-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `door_sills.json:elena-lawn-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_east_patios.json:elena-east-patios-cervantes-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-elena-lawn-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-elena-lawn-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-front-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-lawn-door-path` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-west-planting` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `junction_lawns.json:junction-pollarded-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `ramp:cervantes-elena-ramp` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `steps:cervantes-elena-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `cervantes-east-south-patios`, `cervantes-door-steps`, `junction-lawns`, `cervantes-east-hedge`, `cervantes-north-patios`, `cervantes-steps-treads`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

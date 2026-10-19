@@ -7,7 +7,7 @@ type Reference = {
   observation: string; note: string; subject: string | null; looksAt?: Vec2; looksAtBasis?: string;
   locationBasis?: string; camera?: { x: number; z: number; accuracy?: number; heading?: number; trust?: string };
   association?: {status:string;reasons:string[];geometryReview:string};
-  features: { id: string; name: string; verification: unknown }[]; checks: { result: string; notes?: string }[];
+  features: { id: string; name: string; verification: string; photoVerification: string; placement: {status:string;blockers:string[];toleranceM?:number} }[]; checks: { result: string; notes?: string }[];
 };
 type Review = { photo: string; verdict: string; note: string; updatedAt: string; x?: number; z?: number; heading?: number; pinBefore?: unknown; gpsAccuracy?: number };
 const NS = "http://www.w3.org/2000/svg", STORE = "villacana-photo-checks-v1";
@@ -56,7 +56,8 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     `Subject: ${r.subject ?? "not separately located"}`, ...(r.looksAt ? [`Subject/look-at: ${JSON.stringify(r.looksAt)}; basis: ${r.looksAtBasis}. Not a surveyed boundary.`] : []),
     ...(r.locationBasis ? [`Location basis: ${r.locationBasis}`] : []), `Observed: ${r.observation || "See source image."}`, `Notes: ${r.note || "none recorded"}`,
     ...(r.association?[`Camera/map association: ${r.association.status}; ${r.association.reasons.join("; ")}. ${r.association.geometryReview}`]:[]),
-    `Model citations: ${r.features.map(f => f.id).join(", ") || "No model citation recorded (not proof of absence)."}`,
+    `Model citations: ${r.features.map(f => `${f.id} [placement: ${f.placement.status}${f.placement.toleranceM===undefined?"":` (tolerance ${f.placement.toleranceM} m)`}; photo diagnostics: ${f.photoVerification}]`).join(", ") || "No model citation recorded (not proof of absence)."}`,
+    ...r.features.flatMap(f=>f.placement.blockers.map(b=>`Placement blocker for ${f.id}: ${b}`)),
     `Recorded photo checks: ${r.checks.map(c => `${c.result}${c.notes ? `: ${c.notes}` : ""}`).join("; ") || "none in current check records; earlier manual reviews may exist"}`,
     "Inspect the full image before editing. A citation or software test does not establish photographic agreement."
   ].join("\n");
@@ -99,6 +100,7 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     const cameraText = r.camera ? `Camera [${r.camera.x}, ${r.camera.z}] m · ${r.camera.accuracy === undefined ? "uncertainty unknown; dashed 10 m search radius" : `GPS ±${r.camera.accuracy} m`}.` : "No camera position recorded; this reference stays in the list.";
     make("p", cameraText + " Dots show cameras, not subjects. Pink crosses show reviewed look-at points, not surveyed dimensions.", detail).className = "photo-hint";
     if(r.association?.status === "needs-review")make("p",`Camera/map context needs review: ${r.association.reasons.join("; ")}.`,detail).className="photo-state";
+    for(const f of r.features.filter(f=>f.placement.status==="disputed"))make("p",`Placement disputed: ${f.name}. ${f.placement.blockers.join("; ")}`,detail).className="photo-state";
     if (r.note) make("p", r.note, detail);
     if (r.locationBasis) make("p", r.locationBasis, detail);
     const actions = make("div", "", detail); actions.className = "photo-actions";

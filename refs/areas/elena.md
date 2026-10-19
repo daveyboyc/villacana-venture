@@ -43,105 +43,140 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Elena"]
-  A --> F0["Calle Elena covered walkway · not-comparable"]
+  A --> F0["Calle Elena covered walkway · unreviewed"]
   F0 --> PIMG_2202_jpg(["IMG_2202"])
   F0 --> PIMG_2203_jpg(["IMG_2203"])
   F0 --> PIMG_2254_jpg(["IMG_2254"])
   F0 --> PIMG_2255_jpg(["IMG_2255"])
-  A --> F1["Cervantes east south · trained bougainvillea · unchecked"]
+  A --> F1["Cervantes east south · trained bougainvillea · unreviewed"]
   F1 --> PIMG_2197_jpg(["IMG_2197"])
   F1 --> PIMG_2360_jpg(["IMG_2360"])
   F1 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F2["Cervantes east south · closed brown curved-coping garden door · unchecked"]
+  A --> F2["Cervantes east south · closed brown curved-coping garden door · unreviewed"]
   F2 --> PIMG_2360_jpg(["IMG_2360"])
   F2 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F3["Cervantes east south · timber and cane pergola · unchecked"]
+  A --> F3["Cervantes east south · timber and cane pergola · unreviewed"]
   F3 --> PIMG_2360_jpg(["IMG_2360"])
   F3 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F4["Cervantes east south · near clipped shrub · unchecked"]
+  A --> F4["Cervantes east south · near clipped shrub · unreviewed"]
   F4 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F5["Cervantes east south · second clipped shrub · unchecked"]
+  A --> F5["Cervantes east south · second clipped shrub · unreviewed"]
   F5 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F6["Cervantes east south · bounded white patio frontage · unchecked"]
+  A --> F6["Cervantes east south · bounded white patio frontage · unreviewed"]
   F6 --> PIMG_2197_jpg(["IMG_2197"])
   F6 --> PIMG_2360_jpg(["IMG_2360"])
   F6 --> PIMG_2366_jpg(["IMG_2366"])
-  A --> F7["Cervantes junction · raised garden door and private patio · unchecked"]
+  A --> F7["Cervantes junction · raised garden door and private patio · unreviewed"]
   F7 --> PIMG_2196_jpg(["IMG_2196"])
   F7 --> PIMG_2287_jpg(["IMG_2287"])
   F7 --> PIMG_2327_jpg(["IMG_2327"])
   F7 --> PIMG_2328_jpg(["IMG_2328"])
-  A --> F8["cervantes-junction-north-patio · unchecked"]
+  A --> F8["cervantes-junction-north-patio · unreviewed"]
   F8 --> PIMG_2358_jpg(["IMG_2358"])
   F8 --> PIMG_2359_jpg(["IMG_2359"])
   F8 --> PIMG_2367_jpg(["IMG_2367"])
   F8 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F9["Elena south · sill at the second door, north along the same wall · unchecked"]
+  A --> F9["Elena south · sill at the second door, north along the same wall · unreviewed"]
   F9 --> PIMG_2261_jpg(["IMG_2261"])
   F9 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F10["Elena east patios · white wall behind the plumbago bed on Cervantes · unchecked"]
+  A --> F10["Elena east patios · white wall behind the plumbago bed on Cervantes · unreviewed"]
   F10 --> PIMG_2197_jpg(["IMG_2197"])
   F10 --> PIMG_2356_jpg(["IMG_2356"])
-  A --> F11["Elena east patios · timber pergola behind the garden door · unchecked"]
+  A --> F11["Elena east patios · timber pergola behind the garden door · unreviewed"]
   F11 --> PIMG_2199_jpg(["IMG_2199"])
   F11 --> PIMG_2200_jpg(["IMG_2200"])
-  A --> F12["Elena east patios · garden wall behind the second hedged bed · unchecked"]
+  A --> F12["Elena east patios · garden wall behind the second hedged bed · unreviewed"]
   F12 --> PIMG_2197_jpg(["IMG_2197"])
   F12 --> PIMG_2199_jpg(["IMG_2199"])
-  A --> F13["Elena · private tiled entry west of covered walkway · unchecked"]
+  A --> F13["Elena · private tiled entry west of covered walkway · unreviewed"]
   F13 --> PIMG_2202_jpg(["IMG_2202"])
   F13 --> PIMG_2203_jpg(["IMG_2203"])
   F13 --> PIMG_2361_jpg(["IMG_2361"])
-  A --> F14["Elena north · paved approach between the hedged beds · unchecked"]
+  A --> F14["Elena north · paved approach between the hedged beds · unreviewed"]
   F14 --> PIMG_2199_jpg(["IMG_2199"])
   F14 --> PIMG_2200_jpg(["IMG_2200"])
   F14 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F15["Elena north · garden wall and closed timber door · unchecked"]
+  A --> F15["Elena north · garden wall and closed timber door · unreviewed"]
   F15 --> PIMG_2199_jpg(["IMG_2199"])
   F15 --> PIMG_2200_jpg(["IMG_2200"])
   F15 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F16["Elena north · arched gateway to the north pool lawn · not-comparable"]
+  A --> F16["Elena north · arched gateway to the north pool lawn · unreviewed"]
   F16 --> PIMG_2363_jpg(["IMG_2363"])
-  A --> F17["Elena north · magnolia bed · unchecked"]
+  A --> F17["Elena north · magnolia bed · unreviewed"]
   F17 --> PIMG_2362_jpg(["IMG_2362"])
   F17 --> PIMG_2364_jpg(["IMG_2364"])
   F17 --> PIMG_2365_jpg(["IMG_2365"])
-  A --> F18["Elena north · patio wall, east side · unchecked"]
+  A --> F18["Elena north · patio wall, east side · unreviewed"]
   F18 --> PIMG_2363_jpg(["IMG_2363"])
-  A --> F19["Elena north · white planter box · unchecked"]
+  A --> F19["Elena north · white planter box · unreviewed"]
   F19 --> PIMG_2198_jpg(["IMG_2198"])
   F19 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F20["Elena north · white planter box · unchecked"]
+  A --> F20["Elena north · white planter box · unreviewed"]
   F20 --> PIMG_2198_jpg(["IMG_2198"])
   F20 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F21["Elena north · planting strip, west side · unchecked"]
+  A --> F21["Elena north · planting strip, west side · unreviewed"]
   F21 --> PIMG_2363_jpg(["IMG_2363"])
-  A --> F22["Elena north · hedged bed with pollarded tree · unchecked"]
+  A --> F22["Elena north · hedged bed with pollarded tree · unreviewed"]
   F22 --> PIMG_2199_jpg(["IMG_2199"])
   F22 --> PIMG_2200_jpg(["IMG_2200"])
   F22 --> PIMG_2201_jpg(["IMG_2201"])
   F22 --> PIMG_2365_jpg(["IMG_2365"])
-  A --> F23["Elena north · second hedged bed · unchecked"]
+  A --> F23["Elena north · second hedged bed · unreviewed"]
   F23 --> PIMG_2197_jpg(["IMG_2197"])
   F23 --> PIMG_2198_jpg(["IMG_2198"])
   F23 --> PIMG_2200_jpg(["IMG_2200"])
-  A --> F24["Elena north · barred window wall at the north end of the bed · unchecked"]
+  A --> F24["Elena north · barred window wall at the north end of the bed · unreviewed"]
   F24 --> PIMG_2200_jpg(["IMG_2200"])
   F24 --> PIMG_2201_jpg(["IMG_2201"])
-  A --> F25["Cervantes / Elena · clipped lawn tree 1 · unchecked"]
+  A --> F25["Cervantes / Elena · clipped lawn tree 1 · unreviewed"]
   F25 --> PIMG_2329_jpg(["IMG_2329"])
   F25 --> PIMG_2342_jpg(["IMG_2342"])
   F25 --> PIMG_2358_jpg(["IMG_2358"])
   F25 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F26["Cervantes / Elena · clipped lawn tree 2 · unchecked"]
+  A --> F26["Cervantes / Elena · clipped lawn tree 2 · unreviewed"]
   F26 --> PIMG_2260_jpg(["IMG_2260"])
   F26 --> PIMG_2358_jpg(["IMG_2358"])
   F26 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F27["Cervantes / Elena · clipped lawn tree 3 · unchecked"]
+  A --> F27["Cervantes / Elena · clipped lawn tree 3 · unreviewed"]
   F27 --> PIMG_2260_jpg(["IMG_2260"])
   F27 --> PIMG_2358_jpg(["IMG_2358"])
   F27 --> PIMG_2367_jpg(["IMG_2367"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `building:6265201UF1366N_part5` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-climber` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-door` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-pergola` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-shrub-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-shrub-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_east_south_patios.json:cervantes-east-south-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_garden_door.json:cervantes-garden-door` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_garden_door.json:cervantes-junction-north-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `door_sills.json:elena-bed-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_east_patios.json:elena-east-patios-cervantes-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_east_patios.json:elena-east-patios-pergola` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_east_patios.json:elena-east-patios-west-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_gated_entry.json:elena-gated-entry` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-garden-door-path` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-garden-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-gateway` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-magnolia-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-patio-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-planter-box-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-planter-box-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-planter-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-tree-bed-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-tree-bed-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `elena_north.json:elena-north-window-return` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `junction_lawns.json:junction-pollarded-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `junction_lawns.json:junction-pollarded-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `junction_lawns.json:junction-pollarded-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `elena-garden-door`, `elena-east-patios`, `elena-gated-entry`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

@@ -37,59 +37,79 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Pintor Dalí"]
-  A --> F0["Dalí · gate pier · unchecked"]
+  A --> F0["Dalí · gate pier · unreviewed"]
   F0 --> PIMG_2284_jpg(["IMG_2284"])
   F0 --> PIMG_2296_jpg(["IMG_2296"])
   F0 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F1["Dalí · white plinth and rigid metal mesh · unchecked"]
+  A --> F1["Dalí · white plinth and rigid metal mesh · unreviewed"]
   F1 --> PIMG_2284_jpg(["IMG_2284"])
   F1 --> PIMG_2296_jpg(["IMG_2296"])
   F1 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F2["Dalí · tall white coastal wall · unchecked"]
+  A --> F2["Dalí · tall white coastal wall · unreviewed"]
   F2 --> PIMG_2284_jpg(["IMG_2284"])
   F2 --> PIMG_2296_jpg(["IMG_2296"])
   F2 --> PIMG_2297_jpg(["IMG_2297"])
-  A --> F3["Cervantes · tiled parking crossing · unchecked"]
+  A --> F3["Cervantes · tiled parking crossing · unreviewed"]
   F3 --> PIMG_2267_jpg(["IMG_2267"])
   F3 --> PIMG_2268_jpg(["IMG_2268"])
   F3 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F4["Dalí · parking bays · unchecked"]
+  A --> F4["Dalí · parking bays · unreviewed"]
   F4 --> PIMG_2267_jpg(["IMG_2267"])
   F4 --> PIMG_2268_jpg(["IMG_2268"])
   F4 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F5["Dalí · parking bays · unchecked"]
+  A --> F5["Dalí · parking bays · unreviewed"]
   F5 --> PIMG_2267_jpg(["IMG_2267"])
   F5 --> PIMG_2268_jpg(["IMG_2268"])
   F5 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F6["Dalí · house-side footpath · unchecked"]
+  A --> F6["Dalí · house-side footpath · unreviewed"]
   F6 --> PIMG_2267_jpg(["IMG_2267"])
   F6 --> PIMG_2268_jpg(["IMG_2268"])
   F6 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F7["Dalí · house-side footpath · unchecked"]
+  A --> F7["Dalí · house-side footpath · unreviewed"]
   F7 --> PIMG_2267_jpg(["IMG_2267"])
   F7 --> PIMG_2268_jpg(["IMG_2268"])
   F7 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F8["Dalí · grass strip · unchecked"]
+  A --> F8["Dalí · grass strip · unreviewed"]
   F8 --> PIMG_2267_jpg(["IMG_2267"])
   F8 --> PIMG_2268_jpg(["IMG_2268"])
   F8 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F9["Dalí · grass strip · unchecked"]
+  A --> F9["Dalí · grass strip · unreviewed"]
   F9 --> PIMG_2267_jpg(["IMG_2267"])
   F9 --> PIMG_2268_jpg(["IMG_2268"])
   F9 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F10["Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia · unchecked"]
+  A --> F10["Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia · unreviewed"]
   F10 --> PIMG_2291_jpg(["IMG_2291"])
   F10 --> PIMG_2292_jpg(["IMG_2292"])
   F10 --> PIMG_2293_jpg(["IMG_2293"])
-  A --> F11["Pintor Dalí south · flagstone approach to the arch · unchecked"]
+  A --> F11["Pintor Dalí south · flagstone approach to the arch · unreviewed"]
   F11 --> PIMG_2283_jpg(["IMG_2283"])
   F11 --> PIMG_2294_jpg(["IMG_2294"])
   F11 --> PIMG_2295_jpg(["IMG_2295"])
-  A --> F12["Dalí · coastal pedestrian gate · unchecked"]
+  A --> F12["Dalí · coastal pedestrian gate · unreviewed"]
   F12 --> PIMG_2284_jpg(["IMG_2284"])
   F12 --> PIMG_2296_jpg(["IMG_2296"])
   F12 --> PIMG_2297_jpg(["IMG_2297"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `coastal_gate.json:dali-coastal-gate-pier` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `coastal_gate.json:dali-coastal-mesh-base` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `coastal_gate.json:dali-coastal-solid-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:cervantes-parking-crossing` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:dali-bays-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:dali-bays-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:dali-house-footpath-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:dali-house-footpath-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:dali-lawn-strip-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_cervantes_threshold.json:dali-lawn-strip-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `door_sills.json:dali-footpath-kerb` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `door_sills.json:dali-south-arch-approach` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `gate:dali-coastal-gate` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Reviewed references
 

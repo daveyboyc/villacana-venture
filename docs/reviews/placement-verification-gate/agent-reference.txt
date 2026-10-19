@@ -1,0 +1,21 @@
+Photo: IMG_2347.jpg
+Published label: Barraka barbecue boat, planted sign and boardwalk towards the sea
+Map: https://daveyboyc.github.io/villacana-venture/?view=map&photo=IMG_2347.jpg
+Source: public/photos-ref/IMG_2347.jpg
+Areas: barraka-beach
+Viewpoint: ground
+Camera: [35.3, 96.5] m; GPS uncertainty ±4.2 m; phone location. Camera is not subject.
+Subject: Sand-filled barbecue boat beside the Barraka boardwalk
+Subject/look-at: [37,126]; basis: reviewed. Not a surveyed boundary.
+Location basis: Subject landmark only: approximately [37,126] on the photo-left of the aerial-anchored boardwalk, seaward of the planted sign. Approximate 3 m uncertainty, not a traced boat footprint or surveyed camera correction. The recorded phone positions are about 25 m inland; do not treat their reported GPS accuracy or earlier content confirmation as a validated location.
+Observed: On Barraka Beach: white planted BARRAKA BEACH sign, sand-filled barbecue boat on the left of the timber boardwalk looking seaward, thatched parasols and loungers. The boat is distinct from the planted sign.
+Notes: Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish.
+Camera/map association: needs-review; Observed camera area disagrees with the GPS/map area candidates; Camera overlaps a solid registry footprint; check GPS drift or footprint alignment. observed; geometry comparison pending
+Model citations: barraka_boardwalk.json:barraka-beach-seating [placement: unreviewed; photo diagnostics: unchecked], barraka_boardwalk.json:barraka-boardwalk [placement: unreviewed; photo diagnostics: unchecked], barraka_boardwalk.json:barraka-sign-planter [placement: disputed; photo diagnostics: unchecked], building:6465801UF1366N_part5 [placement: unreviewed; photo diagnostics: unchecked], building:6465801UF1366N_part6 [placement: unreviewed; photo diagnostics: unchecked]
+Placement blocker for barraka_boardwalk.json:barraka-beach-seating: No measured placement packet and independent approval recorded; earlier manual reviews may exist.
+Placement blocker for barraka_boardwalk.json:barraka-boardwalk: No measured placement packet and independent approval recorded; earlier manual reviews may exist.
+Placement blocker for barraka_boardwalk.json:barraka-sign-planter: open discrepancy barraka-planter-position
+Placement blocker for building:6465801UF1366N_part5: No measured placement packet and independent approval recorded; earlier manual reviews may exist.
+Placement blocker for building:6465801UF1366N_part6: No measured placement packet and independent approval recorded; earlier manual reviews may exist.
+Recorded photo checks: none in current check records; earlier manual reviews may exist
+Inspect the full image before editing. A citation or software test does not establish photographic agreement.

@@ -1,0 +1,119 @@
+{
+  "about": "Public-safe graph excerpt for the evidence gate review; no placement approval or geometry correction is asserted.",
+  "featureCounts": {
+    "unreviewed": 355,
+    "disputed": 2
+  },
+  "nodes": [
+    {
+      "id": "ref:IMG_2346.jpg",
+      "kind": "phone-photo",
+      "name": "BARRAKA BEACH sign, barbecue boat and boardwalk",
+      "path": "public/photos-ref/IMG_2346.jpg",
+      "viewpoint": "ground"
+    },
+    {
+      "id": "ref:IMG_2347.jpg",
+      "kind": "phone-photo",
+      "name": "Barraka barbecue boat, planted sign and boardwalk towards the sea",
+      "path": "public/photos-ref/IMG_2347.jpg",
+      "viewpoint": "ground"
+    },
+    {
+      "id": "model:barraka_boardwalk.json:barraka-sign-planter",
+      "featureId": "barraka_boardwalk.json:barraka-sign-planter",
+      "kind": "model-feature",
+      "name": "BARRAKA BEACH two-tier white planted sign",
+      "verification": "disputed",
+      "photoVerification": "unchecked",
+      "placement": {
+        "status": "disputed",
+        "scope": "placement only",
+        "blockers": [
+          "open discrepancy barraka-planter-position"
+        ],
+        "reviewIds": [],
+        "reportIds": [
+          "barraka-planter-position"
+        ],
+        "modelDigest": "4e1d10d9800897bf5305b27dc203d8dc22ad363e1e6d293d98aac96058826317",
+        "contextDigest": "9a4b5f514b055fd0ac902b45cba2eee64e7bb06e9328d2203fa4a63d9bd95d98"
+      }
+    },
+    {
+      "id": "task:barraka-planter-placement",
+      "kind": "build-task",
+      "name": "Correct reported Barraka planter placement against registered source evidence",
+      "priority": 1,
+      "status": "open",
+      "verification": "not-verified",
+      "photoVerification": "unchecked",
+      "placement": {
+        "status": "not-verified",
+        "features": [
+          "barraka_boardwalk.json:barraka-sign-planter"
+        ]
+      },
+      "issue": 102
+    },
+    {
+      "id": "placement-discrepancy:barraka-planter-position",
+      "kind": "placement-discrepancy",
+      "feature": "barraka_boardwalk.json:barraka-sign-planter",
+      "status": "open",
+      "notes": "User reports BARRAKA BEACH planter is in the wrong place. Current [35,122] is an estimate; exact correction has not been independently measured. Earlier reviews and passing clearance tests do not establish this position.",
+      "reportedBy": "User (project owner), conversation 2026-10-18",
+      "reportedAt": "2026-10-18",
+      "evidence": "docs/reviews/placement-verification-gate/barraka-planter.md",
+      "followUp": "barraka-planter-placement",
+      "resolutionReview": null
+    }
+  ],
+  "edges": [
+    {
+      "from": "model:barraka_boardwalk.json:barraka-sign-planter",
+      "to": "ref:IMG_2346.jpg",
+      "relation": "cites"
+    },
+    {
+      "from": "model:barraka_boardwalk.json:barraka-sign-planter",
+      "to": "ref:IMG_2347.jpg",
+      "relation": "cites"
+    },
+    {
+      "from": "task:barraka-planter-placement",
+      "to": "ref:IMG_2346.jpg",
+      "relation": "builds-from"
+    },
+    {
+      "from": "task:barraka-planter-placement",
+      "to": "ref:IMG_2347.jpg",
+      "relation": "builds-from"
+    },
+    {
+      "from": "model:barraka_boardwalk.json:barraka-sign-planter",
+      "to": "placement-discrepancy:barraka-planter-position",
+      "relation": "has-discrepancy"
+    },
+    {
+      "from": "placement-discrepancy:barraka-planter-position",
+      "to": "task:barraka-planter-placement",
+      "relation": "follow-up"
+    },
+    {
+      "from": "placement-discrepancy:barraka-planter-position",
+      "to": "ref:IMG_2346.jpg",
+      "relation": "discrepancy-source"
+    },
+    {
+      "from": "placement-discrepancy:barraka-planter-position",
+      "to": "ref:IMG_2347.jpg",
+      "relation": "discrepancy-source"
+    },
+    {
+      "from": "task:barraka-planter-placement",
+      "to": "model:barraka_boardwalk.json:barraka-sign-planter",
+      "relation": "changes-feature"
+    }
+  ]
+}

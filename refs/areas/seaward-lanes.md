@@ -27,15 +27,25 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo"]
-  A --> F0["seaward patterned floor · unchecked"]
+  A --> F0["seaward patterned floor · unreviewed"]
   F0 --> PIMG_2185_jpg(["IMG_2185"])
-  A --> F1["silvia patterned floor · unchecked"]
+  A --> F1["silvia patterned floor · unreviewed"]
   F1 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F2["teodoro octagonal paving · unchecked"]
+  A --> F2["teodoro octagonal paving · unreviewed"]
   F2 --> PIMG_2235_jpg(["IMG_2235"])
   F2 --> PIMG_2237_jpg(["IMG_2237"])
   F2 --> PIMG_2239_jpg(["IMG_2239"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `seaward_paving.json:seaward-patterned-floor` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `seaward_paving.json:silvia-patterned-floor` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `seaward_paving.json:teodoro-octagonal-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `seaward-lanes-paving`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

@@ -1,0 +1,21 @@
+{
+ "version": 1,
+ "about": "Strict placement packets and explicit discrepancy history. No packet is a photographic match or source survey by default. See docs/PLACEMENT_VERIFICATION.md. Open discrepancies override positive checks; resolution requires a fresh same-feature independent approval.",
+ "reviews": [],
+ "reports": [
+  {
+   "id": "barraka-planter-position",
+   "feature": "barraka_boardwalk.json:barraka-sign-planter",
+   "status": "open",
+   "reportedBy": "User (project owner), conversation 2026-10-18",
+   "reportedAt": "2026-10-18",
+   "sources": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
+   "notes": "User reports BARRAKA BEACH planter is in the wrong place. Current [35,122] is an estimate; exact correction has not been independently measured. Earlier reviews and passing clearance tests do not establish this position.",
+   "evidence": "docs/reviews/placement-verification-gate/barraka-planter.md",
+   "followUp": "barraka-planter-placement"
+  }
+ ]
+}

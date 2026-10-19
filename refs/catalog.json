@@ -5729,6 +5729,7 @@
    "layout",
    "view"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5746,6 +5747,7 @@
    "layout",
    "facades"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": [
    "north_west_canopies.json:north-west-balcony-canopy-1",
@@ -5767,6 +5769,7 @@
   "useFor": [
    "layout"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5785,6 +5788,7 @@
   "useFor": [
    "layout"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5802,6 +5806,7 @@
   "useFor": [
    "layout"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5819,6 +5824,7 @@
    "layout",
    "signage"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5837,6 +5843,7 @@
    "layout",
    "view"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5853,6 +5860,7 @@
   "useFor": [
    "facades"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": [
    "north_west_canopies.json:north-west-balcony-canopy-1",
@@ -5873,6 +5881,7 @@
   "useFor": [
    "layout"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": [
    "north_west_canopies.json:north-west-balcony-canopy-1",
@@ -5894,6 +5903,7 @@
    "layout",
    "signage"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5911,6 +5921,7 @@
    "layout",
    "signage"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5929,6 +5940,7 @@
    "materials",
    "planting"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5948,6 +5960,7 @@
    "materials",
    "view"
   ],
+  "sourceRevision": null,
   "note": "Shows a glass safety fence; Dave decided to skip it.",
   "citedBy": []
  },
@@ -5966,6 +5979,7 @@
    "materials",
    "planting"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -5983,6 +5997,7 @@
    "planting",
    "facades"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6000,6 +6015,7 @@
    "layout",
    "levels"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6018,6 +6034,7 @@
    "facades",
    "view"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6037,6 +6054,7 @@
    "planting",
    "view"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6054,6 +6072,7 @@
    "planting",
    "facades"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6072,6 +6091,7 @@
    "materials",
    "planting"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6088,6 +6108,7 @@
   "useFor": [
    "planting"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6104,6 +6125,7 @@
   "useFor": [
    "planting"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6121,6 +6143,7 @@
    "layout",
    "materials"
   ],
+  "sourceRevision": null,
   "note": null,
   "citedBy": []
  },
@@ -6138,6 +6161,7 @@
    "facades",
    "planting"
   ],
+  "sourceRevision": null,
   "note": "Found on the web. Reference only, never publish.",
   "citedBy": []
  },
@@ -6156,6 +6180,7 @@
    "layout",
    "view"
   ],
+  "sourceRevision": null,
   "note": "Found on the web. Reference only, never publish.",
   "citedBy": []
  },
@@ -6173,6 +6198,7 @@
    "layout",
    "materials"
   ],
+  "sourceRevision": null,
   "note": "Found on the web; has people in it. Reference only, never publish.",
   "citedBy": []
  },
@@ -6189,6 +6215,7 @@
   "useFor": [
    "planting"
   ],
+  "sourceRevision": null,
   "note": "Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish.",
   "citedBy": []
  }

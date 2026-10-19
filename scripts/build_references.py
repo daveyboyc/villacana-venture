@@ -22,7 +22,8 @@ A feature citing a photo ('cites') only says an author used it. Whether the
 build was compared with the photo is recorded in data/photo_checks.json: an
 after-render from the photo's camera, a result (matches, differs or
 not-comparable) and notes. Those become 'checked-against' edges and a
-'verification' state on features and tasks. A done task must have a check for
+'photoVerification' diagnostic on features and tasks. Strict placement approval
+is separate (docs/PLACEMENT_VERIFICATION.md). A done task must have a check for
 every photo it builds from (tasks done before this rule are listed in
 legacyUnchecked, a list that may only shrink), a 'differs' needs an open
 follow-up task, and a checked photo needs a reviewed looksAt so the render
@@ -38,6 +39,7 @@ import json
 import math
 import re
 import sys
+from placement_verification import evaluate as evaluate_placements, model_inventory, photo_summary
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 VIEWPOINTS=('ground','upper-floor','roof','aerial','map')
@@ -126,7 +128,7 @@ def build(reference:Path):
         if reference.is_dir() and path not in files:problems.append(f'{key}: no such file in {reference.name}')
         catalog.append({'id':key,'kind':tag.get('kind','reference'),'path':f'{reference.name}/{path}',
                         'title':tag.get('title',path),'shows':tag.get('shows',[]),'areasBasis':'reviewed' if tag.get('shows') else 'untagged',
-                        'viewpoint':tag.get('viewpoint'),'useFor':tag.get('useFor',[]),'note':tag.get('note'),'citedBy':[f['id'] for f in model if key in f.get('evidence',[])]})
+                        'viewpoint':tag.get('viewpoint'),'useFor':tag.get('useFor',[]),'sourceRevision':tag.get('sourceRevision'),'note':tag.get('note'),'citedBy':[f['id'] for f in model if key in f.get('evidence',[])]})
     for path in sorted(files-{k[4:] for k in tags if k.startswith('ref:')}):
         problems.append(f'ref:{path}: in {reference.name} but has no entry in data/reference_tags.json')
         catalog.append({'id':'ref:'+path,'kind':'reference','path':f'{reference.name}/{path}','title':path,'shows':[],'areasBasis':'untagged','viewpoint':None,'useFor':[],'note':None,'citedBy':[]})
@@ -199,17 +201,18 @@ def task_verification(task,checks,legacy=()):
     checked={c.get('photo') for c in related}
     if any(p not in checked for p in task['photos']):
         return 'legacy-unchecked' if task['id'] in legacy else 'unchecked'
-    return verdict(related)
+    return photo_summary(task['photos'], related)
 
 def load_checks(catalog,queue,features,problems):
     """Render-versus-photo checks from data/photo_checks.json, validated against the queue, features and tags."""
     spec=load(ROOT/'data/photo_checks.json',{'checks':[],'legacyUnchecked':[]})
     checks,legacy=spec.get('checks',[]),spec.get('legacyUnchecked',[])
-    by={e['id']:e for e in catalog};tasks={t['id']:t for t in queue};feats={f['id'] for f in features}
+    by={e['id']:e for e in catalog};tasks={t['id']:t for t in queue};feats={f['id']:f for f in features}
     for c in checks:
         name=f"photo check {c.get('task')} / {c.get('photo')}";res=c.get('result')
         if c.get('task') not in tasks:problems.append(f'{name}: unknown task')
         if c.get('feature') not in feats:problems.append(f"{name}: feature {c.get('feature')!r} does not cite photos in the evidence graph")
+        if c.get('feature') in feats and c.get('photo') not in feats[c['feature']]['photos']:problems.append(f'{name}: photo is not cited by this specific feature')
         e=by.get(c.get('photo'))
         if e is None:problems.append(f'{name}: photo not in the catalogue')
         elif e.get('camera') and e.get('looksAtBasis')!='reviewed':problems.append(f'{name}: set looksAt and subject for the photo in data/reference_tags.json, so the render faces what the photo shows')
@@ -218,7 +221,7 @@ def load_checks(catalog,queue,features,problems):
         if c.get('before') and not (ROOT/c['before']).is_file():problems.append(f"{name}: before render {c['before']!r} is not committed")
         if not c.get('notes'):problems.append(f'{name}: notes must say what matches and what differs')
         follow=tasks.get(c.get('followUp'))
-        if res=='differs' and (follow is None or follow.get('status')=='done'):problems.append(f'{name}: differs, so followUp must name an open task in data/build_queue.json')
+        if res=='differs' and follow is None:problems.append(f'{name}: differs, so followUp must name an open task in data/build_queue.json')
     checked={(c.get('task'),c.get('photo')) for c in checks}
     for t in queue:
         missing=[p for p in t['photos'] if (t['id'],p) not in checked]
@@ -243,6 +246,7 @@ def task_line(t,depth):
     owner=f" · {t['owner']}" if t.get('owner') else ''
     issue=f" [#{t['issue']}](https://github.com/daveyboyc/villacana-venture/issues/{t['issue']})" if t.get('issue') else ''
     checked=f" · photos: {t['verification']}" if t.get('status')=='done' and t.get('verification') else ''
+    if t.get('placement'):checked+=f" · placement: {t['placement']['status']}"
     return f"| P{t['priority']} | `{t['id']}`{issue} | {t['title']}{deps} | {t.get('status','open')}{owner}{checked} | {photos} |"
 
 def queue_page(queue,spec,legacy=()):
@@ -291,26 +295,34 @@ def issue_body(t,spec,catalog):
     lines+=['- [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)',
             '- [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes',
             f"- [ ] `data/build_queue.json`: `{t['id']}` set to done",
+            '- [ ] Geometry work declares changed feature IDs in `features`; each has a fresh measured placement packet with independent approval; discrepancies resolved in `data/placement_reviews.json`',
             '- [ ] Before/after renders from each photo\'s camera (`scripts/shoot_views.cjs <photos> --task=<id> --as=before|after`), each compared with its photo and recorded in `data/photo_checks.json` (matches, or differs with an open follow-up task); `--check` fails without them']
     if t.get('dependsOn'):lines+=['',f"Depends on: {', '.join('`'+d+'`' for d in t['dependsOn'])}"]
     return '\n'.join(lines)+'\n'
 
 def model_features(catalog):
-    """Model features from the evidence graph, each placed in the areas its cited photos mostly show."""
-    graph=load(ROOT/'public/photos-ref/evidence-graph.json',{'nodes':[],'edges':[]})
-    names={n['id']:n.get('name',n['id']) for n in graph['nodes']}
+    """Read current geometry, including uncited features, rather than a possibly stale graph."""
     shows={e['id']:e['shows'] for e in catalog}
-    features={}
-    for edge in graph['edges']:
-        if edge['relation']!='cited-as-source':continue
-        features.setdefault(edge['to'],{'id':edge['to'],'name':names.get(edge['to'],edge['to']),'photos':[]})['photos'].append(edge['from'].removeprefix('photo:'))
-    for f in features.values():
+    features=[]
+    for model in assign.features(load(ROOT/'public/map/skeleton.json')):
+        photos=sorted(set(model.get('evidence',[])))
         votes={}
-        for photo in f['photos']:
-            for a in shows.get(photo,[])[:1]:votes[a]=votes.get(a,0)+1
-        top=max(votes.values(),default=0);f['areas']=sorted(a for a,v in votes.items() if v==top)
-        f['photos'].sort()
-    return sorted(features.values(),key=lambda f:f['id'])
+        for photo in photos:
+            for area in shows.get(photo,[])[:1]:votes[area]=votes.get(area,0)+1
+        top=max(votes.values(),default=0)
+        features.append({'id':model['id'],'name':model['name'],'photos':photos,
+                         'areas':sorted(a for a,v in votes.items() if v==top),'model':model})
+    return sorted(features,key=lambda f:f['id'])
+
+
+def graph_integrity(nodes,edges,problems):
+    ids=[n['id'] for n in nodes]
+    if len(ids)!=len(set(ids)):problems.append('reference graph contains duplicate node IDs')
+    known=set(ids)
+    for edge in edges:
+        if edge['from'] not in known or edge['to'] not in known:
+            problems.append(f"graph edge {edge['relation']} has unknown endpoint {edge['from']} -> {edge['to']}")
+
 
 def mermaid(area,features):
     """A small diagram: the area, the model features built from its photos, and those photos."""
@@ -367,6 +379,12 @@ def brief(area,entries,topics,spec,features=(),queue=(),checks=()):
     if tasks:out+=['## Open build tasks','','From `data/build_queue.json`; issue bodies in `refs/issues/`.','','| Priority | Task | What | Status | Photos |','| --- | --- | --- | --- | --- |']+[task_line(t,1) for t in tasks]+['']
     if any(area['id'] in f['areas'] for f in features):
         out+=['## Built from these photos','','Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo\'s camera and compared.','']+mermaid(area,features)
+    placement_here=[f for f in features if area['id'] in f['areas'] and f.get('placement')]
+    if placement_here:
+        out+=['## Placement evidence','','`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.','','| Feature | Placement | Photo diagnostics | Blockers |','| --- | --- | --- | --- |']
+        for f in placement_here:
+            out.append(f"| `{f['id']}` | {f['verification']}"+(f" (≤{f['placement']['toleranceM']} m)" if 'toleranceM' in f['placement'] else '')+f" | {f['photoVerification']} | {'; '.join(f['placement']['blockers'])} |")
+        out+=['']
     ids={t['id'] for t in queue if t['area']==area['id']}
     here=[c for c in checks if c.get('task') in ids]
     if here:
@@ -401,6 +419,7 @@ def index(spec,catalog,problems,queue=(),checks=()):
     out+=['','## Find one reference','','Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including private and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; private pixels stay in the private repo.','']
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     out+=['',f'{len(catalog)} references: {reviewed} reviewed, {len(catalog)-reviewed} with areas suggested only from the camera position.','']
+    out+=['Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.','']
     done=[t for t in queue if t.get('status')=='done'];results=[c.get('result') for c in checks]
     out+=[f"Photo checks (`data/photo_checks.json`): {len(checks)} photo-check records, {results.count('matches')} match, {results.count('differs')} differ. "
           f"{sum(t.get('verification') in ('unchecked','legacy-unchecked') for t in done)} of {len(done)} done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).",'']
@@ -442,7 +461,7 @@ def public_reference_index(catalog,features,checks,spec):
         source=e['path']
         entry={
             'id':e['id'], 'label':e['title'], 'kind':e['kind'], 'private':private,
-            'sourcePath':source, 'sourceUrl':('https://github.com/daveyboyc/villacana-reference/blob/main/'+quote(e['id'][4:],safe='/') if private else None),
+            'sourcePath':source, 'sourceUrl':('https://github.com/daveyboyc/villacana-reference/blob/'+(e.get('sourceRevision') or 'main')+'/'+quote(e['id'][4:],safe='/') if private else None),
             'image':None if private else e['path'].removeprefix('public/'),
             'thumbnail':None if private else 'photos-ref/thumbs/'+e['id'],
             'areas':e['shows'], 'viewpoint':e.get('viewpoint'), 'useFor':e['useFor'],
@@ -453,7 +472,7 @@ def public_reference_index(catalog,features,checks,spec):
             'association':assignments.get(e['id']),
             'originalUrl':e.get('originalUrl'),
             'mapUrl':'./?view=map&photo='+quote(e['id'],safe=''),
-            'features':[{'id':f['id'],'name':f['name'],'verification':f['verification']} for f in features if e['id'] in f['photos']],
+            'features':[{'id':f['id'],'name':f['name'],'verification':f['verification'],'photoVerification':f['photoVerification'],'placement':f['placement']} for f in features if e['id'] in f['photos']],
             'checks':[c for c in checks if c['photo']==e['id']]
         }
         entries.append(entry)
@@ -473,7 +492,15 @@ def main():
     features=model_features(catalog)
     queue=load_queue(spec,catalog,problems)
     checks,legacy=load_checks(catalog,queue,features,problems)
-    for f in features:f['verification']=verdict([c for c in checks if c.get('feature')==f['id']])
+    inventory=model_inventory(ROOT,[f['model'] for f in features])
+    placements,reviews,reports=evaluate_placements(ROOT,features,catalog,queue,checks,inventory,problems)
+    for f in features:
+        f['photoVerification']=photo_summary(f['photos'],[c for c in checks if c.get('feature')==f['id']])
+        f['placement']=placements[f['id']]
+        f['verification']=f['placement']['status']
+    for f in features:
+        for photo in f['photos']:
+            if photo not in {e['id'] for e in catalog}:problems.append(f"feature {f['id']}: unknown cited source {photo}")
     for a in spec['areas']:
         (refs/'areas'/f'{a["id"]}.md').write_text(brief(a,[e for e in catalog if a['id'] in e['shows']],spec['topics'],spec,features,queue,checks))
     (refs/'QUEUE.md').write_text(queue_page(queue,spec,legacy))
@@ -482,20 +509,55 @@ def main():
     for t in queue:
         if t.get('status')!='done':(issues/f"{t['id']}.md").write_text(issue_body(t,spec,catalog))
     nodes=[{'id':'area:'+a['id'],'kind':'area','name':a['name']} for a in spec['areas']]+[{'id':'topic:'+t['id'],'kind':'topic','name':t['name']} for t in spec['topics']]
+    nodes.append({'id':'map:ground','kind':'georeferenced-aerial','name':'Esri georeferenced aerial','path':'public/map/ground.jpg','bounds':'public/map/ground.json'})
     nodes+=[{'id':'ref:'+e['id'] if not e['id'].startswith('ref:') else e['id'],'kind':e['kind'],'name':e['title'],'path':e['path'],'viewpoint':e['viewpoint']} for e in catalog]
-    nodes+=[{'id':f['id'],'kind':'model-feature','name':f['name'],'verification':f['verification']} for f in features]
+    nodes+=[{'id':'model:'+f['id'],'featureId':f['id'],'kind':'model-feature','name':f['name'],'verification':f['verification'],'photoVerification':f['photoVerification'],'placement':f['placement']} for f in features]
     key=lambda e:'ref:'+e['id'] if not e['id'].startswith('ref:') else e['id']
     edges=[{'from':key(e),'to':'area:'+a,'relation':'shows'} for e in catalog for a in e['shows']]
     edges+=[{'from':key(e),'to':'topic:'+t,'relation':'useful-for'} for e in catalog for t in e['useFor']]
-    edges+=[{'from':f['id'],'to':p if p.startswith('ref:') else 'ref:'+p,'relation':'cites'} for f in features for p in f['photos']]
-    edges+=[{'from':f['id'],'to':'area:'+a,'relation':'in-area'} for f in features for a in f['areas']]
-    edges+=[{'from':c['feature'],'to':c['photo'] if c['photo'].startswith('ref:') else 'ref:'+c['photo'],'relation':'checked-against','result':c['result'],'task':c['task'],'checked':c.get('checked'),**({'render':c['render']} if c.get('render') else {})} for c in checks]
-    edges+=[{'from':key(e),'to':m,'relation':'looks-at','basis':e['looksAtBasis']} for e in catalog for m in e.get('looksAtFeatures',[])]
-    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open'),'verification':t['verification'],**({'issue':t['issue']} if t.get('issue') else {})} for t in queue]
+    edges+=[{'from':'model:'+f['id'],'to':p if p.startswith('ref:') else 'ref:'+p,'relation':'cites'} for f in features for p in f['photos']]
+    edges+=[{'from':'model:'+f['id'],'to':'area:'+a,'relation':'in-area'} for f in features for a in f['areas']]
+    edges+=[{'from':'model:'+c['feature'],'to':c['photo'] if c['photo'].startswith('ref:') else 'ref:'+c['photo'],'relation':'checked-against','scope':'photographic diagnostic, not placement approval','result':c['result'],'task':c['task'],'checked':c.get('checked'),**({'render':c['render']} if c.get('render') else {})} for c in checks]
+    edges+=[{'from':key(e),'to':'model:'+m,'relation':'looks-at','basis':e['looksAtBasis']} for e in catalog for m in e.get('looksAtFeatures',[])]
+    nodes+=[{'id':'task:'+t['id'],'kind':'build-task','name':t['title'],'priority':t['priority'],'status':t.get('status','open'),'verification':t['placement']['status'],'photoVerification':t['verification'],'placement':t['placement'],**({'issue':t['issue']} if t.get('issue') else {})} for t in queue]
     edges+=[{'from':'task:'+t['id'],'to':'area:'+t['area'],'relation':'in-area'} for t in queue]
     edges+=[{'from':'task:'+t['id'],'to':p if p.startswith('ref:') else 'ref:'+p,'relation':'builds-from'} for t in queue for p in t['photos']]
     edges+=[{'from':'task:'+t['id'],'to':'task:'+d,'relation':'depends-on'} for t in queue for d in t.get('dependsOn',[])]
-    (refs/'graph.json').write_text(json.dumps({'about':'Generated by scripts/build_references.py. shows/useful-for come from reviewed tags; cites from feature evidence (an author used the photo, not proof it matches); checked-against from data/photo_checks.json (rendered from the photo\'s camera and compared, with its result); verification on features and tasks summarises those checks; in-area is the area most of a feature\'s cited photos show.','nodes':nodes,'edges':edges},indent=1,ensure_ascii=False)+'\n')
+    for review in reviews:
+        if not isinstance(review,dict) or not review.get('id') or review.get('feature') not in placements:continue
+        id='placement-review:'+review['id']
+        nodes.append({'id':id,'kind':'placement-review','feature':review['feature'],'task':review.get('task'),'recordPath':'data/placement_reviews.json',
+                      **{k:review.get(k) for k in ('author','checked','frame','snapshot','toleranceM','limitations','sourceAssessments','overlay','comparison','render','registration','measurements','reviewer','supersedes','resolves')}})
+        edges.append({'from':'model:'+review['feature'],'to':id,'relation':'placement-reviewed-by'})
+        for source in (review.get('snapshot') or {}).get('sources',{}):
+            edges.append({'from':id,'to':source if source.startswith(('ref:','map:')) else 'ref:'+source,'relation':'placement-source'})
+        if placements.get(review['feature'],{}).get('status')=='verified' and review['id'] in placements[review['feature']]['reviewIds']:
+            edges.append({'from':'model:'+review['feature'],'to':id,'relation':'placement-verified-by','scope':'placement within declared tolerance','toleranceM':review['toleranceM']})
+        registration=review.get('registration',{})
+        if not isinstance(registration,dict):continue
+        for group,relation in [('controls','registered-with'),('validation','validated-with')]:
+            landmarks=registration.get(group,[])
+            if not isinstance(landmarks,list):continue
+            for landmark in landmarks:
+                if not isinstance(landmark,dict) or not landmark.get('id'):continue
+                lid=id+':landmark:'+landmark['id']
+                nodes.append({'id':lid,'kind':'registration-landmark','role':group,**{k:landmark.get(k) for k in ('source','sourcePixel','sourcePoint','mapPoint','uncertaintyM','identification','modelFeature')}})
+                nodes[-1]['id']=lid  # Preserve globally namespaced ID, not the local landmark label.
+                edges.append({'from':id,'to':lid,'relation':relation})
+                if landmark.get('modelFeature'):edges.append({'from':lid,'to':'model:'+landmark['modelFeature'],'relation':'anchors-to'})
+    for report in reports:
+        id='placement-discrepancy:'+report['id']
+        nodes.append({'id':id,'kind':'placement-discrepancy',**{k:report.get(k) for k in ('feature','status','notes','reportedBy','reportedAt','evidence','followUp','resolutionReview')}})
+        edges.append({'from':'model:'+report['feature'],'to':id,'relation':'has-discrepancy'})
+        if report.get('followUp'):edges.append({'from':id,'to':'task:'+report['followUp'],'relation':'follow-up'})
+        for photo in report.get('sources',[]):
+            edges.append({'from':id,'to':photo if photo.startswith(('ref:','map:')) else 'ref:'+photo,'relation':'discrepancy-source'})
+        if report.get('status')=='resolved':edges.append({'from':id,'to':'placement-review:'+report['resolutionReview'],'relation':'resolved-by'})
+    for task in queue:
+        for feature in task.get('features',[]):edges.append({'from':'task:'+task['id'],'to':'model:'+feature,'relation':'changes-feature'})
+    graph_integrity(nodes,edges,problems)
+    (refs/'graph.json').write_text(json.dumps({'version':2,'about':'Generated by scripts/build_references.py. All model nodes use model:<feature ID>. verification is strict placement status; photoVerification and checked-against retain photographic diagnostics separately. Only placement-verified-by edges grant placement approval within their stated tolerance. Open discrepancies block approval. Earlier manual reviews are not erased. Record validation does not inspect pixels or authenticate reviewer identity.',
+         'modelState':inventory,'nodes':nodes,'edges':edges},indent=1,ensure_ascii=False)+'\n')
     for t in spec['topics']:
         (refs/'topics'/f'{t["id"]}.md').write_text(topic_brief(t,[e for e in catalog if t['id'] in e['useFor']],spec))
     (refs/'README.md').write_text(index(spec,catalog,problems,queue,checks))

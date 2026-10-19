@@ -128,6 +128,11 @@ have been compared with the rendered model.
    in `refs/QUEUE.md`. There is still no calibrated pixel comparison or
    photogrammetry: the comparison is by eye, against measured distances read from
    the photo.
+   These results now live under `photoVerification`, separate from strict placement
+   `verification`. Follow `docs/PLACEMENT_VERIFICATION.md` for measured controls,
+   held-out validation, fresh source/model/artifact snapshots and independent
+   source review. Open discrepancies override positive checks. `unreviewed` means
+   no complete placement packet in this system; earlier manual reviews may exist.
 4. Geometry checks catch paths through houses/water, wall/kerb clearance and closed
    openings. Actual Player traversals catch blocked routes and collision errors.
    Type/build and browser checks catch loading, controls and label persistence.
