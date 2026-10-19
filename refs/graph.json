@@ -34132,7 +34132,7 @@
    "kind": "build-task",
    "name": "Correct reported Barraka planter placement against registered source evidence",
    "priority": 1,
-   "status": "open",
+   "status": "in-progress",
    "verification": "not-verified",
    "photoVerification": "unchecked",
    "placement": {

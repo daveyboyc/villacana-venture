@@ -813,8 +813,9 @@
    "dependsOn": [
     "placement-verification-gate"
    ],
-   "status": "open",
-   "issue": 102
+   "status": "in-progress",
+   "issue": 102,
+   "owner": "Codex"
   }
  ]
 }
