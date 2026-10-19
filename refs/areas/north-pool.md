@@ -40,7 +40,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2363](../../public/photos-ref/IMG_2363.jpg) |
+| P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open · placement: not-applicable | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2363](../../public/photos-ref/IMG_2363.jpg) |
 
 ## Built from these photos
 
@@ -49,33 +49,46 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["North pool"]
-  A --> F0["North pool · visible crazy-paving lawn-edge path · not-comparable"]
+  A --> F0["North pool · visible crazy-paving lawn-edge path · unreviewed"]
   F0 --> PIMG_2204_jpg(["IMG_2204"])
   F0 --> PIMG_2205_jpg(["IMG_2205"])
   F0 --> PIMG_2206_jpg(["IMG_2206"])
   F0 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F1["North pool west · observed upper balcony canopy 1 · not-comparable"]
+  A --> F1["North pool west · observed upper balcony canopy 1 · unreviewed"]
   F1 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F1 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F1 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F2["North pool west · observed upper balcony canopy 2 · not-comparable"]
+  A --> F2["North pool west · observed upper balcony canopy 2 · unreviewed"]
   F2 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F2 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F2 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F3["North pool west · observed upper balcony canopy 3 · not-comparable"]
+  A --> F3["North pool west · observed upper balcony canopy 3 · unreviewed"]
   F3 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F3 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F3 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F4["North pool · low northern patio plinths and white steps · not-comparable"]
+  A --> F4["North pool · low northern patio plinths and white steps · unreviewed"]
   F4 --> PIMG_2204_jpg(["IMG_2204"])
   F4 --> PIMG_2205_jpg(["IMG_2205"])
   F4 --> PIMG_2207_jpg(["IMG_2207"])
   F4 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F5["North pool · north-west raised terrace and tiled stair · not-comparable"]
+  A --> F5["North pool · north-west raised terrace and tiled stair · unreviewed"]
   F5 --> PIMG_2204_jpg(["IMG_2204"])
   F5 --> PIMG_2206_jpg(["IMG_2206"])
   F5 --> PIMG_2208_jpg(["IMG_2208"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `north_pool_gardens.json:north-pool-lawn-path` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `north_west_canopies.json:north-west-balcony-canopy-1` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `north_west_canopies.json:north-west-balcony-canopy-2` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `north_west_canopies.json:north-west-balcony-canopy-3` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `raised_terraces.json:north-pool-north-patios` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `raised_terraces.json:north-pool-west-terrace` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
 

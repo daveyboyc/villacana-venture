@@ -29,18 +29,28 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Eva"]
-  A --> F0["Calle Eva · walled lawn and espalier corner · unchecked"]
+  A --> F0["Calle Eva · walled lawn and espalier corner · unreviewed"]
   F0 --> PIMG_2336_jpg(["IMG_2336"])
   F0 --> PIMG_2337_jpg(["IMG_2337"])
   F0 --> PIMG_2338_jpg(["IMG_2338"])
   F0 --> PIMG_2339_jpg(["IMG_2339"])
-  A --> F1["Middle pool · east gateway from Calle Eva · unchecked"]
+  A --> F1["Middle pool · east gateway from Calle Eva · unreviewed"]
   F1 --> PIMG_2244_jpg(["IMG_2244"])
   F1 --> PIMG_2340_jpg(["IMG_2340"])
-  A --> F2["Middle pool · stone steps up to Calle Eva · unchecked"]
+  A --> F2["Middle pool · stone steps up to Calle Eva · unreviewed"]
   F2 --> PIMG_2248_jpg(["IMG_2248"])
   F2 --> PIMG_2333_jpg(["IMG_2333"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `eva_walled_lawn.json:eva-walled-lawn` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool.json:middle-pool-east-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `steps:middle-pool-sw-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `eva-walled-lawn`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

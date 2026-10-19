@@ -786,8 +786,35 @@
    "dependsOn": [
     "unified-reference-map"
    ],
-   "status": "in-progress",
-   "owner": "Codex"
+   "status": "done",
+   "owner": "Codex",
+   "issue": 101
+  },
+  {
+   "id": "barraka-planter-placement",
+   "area": "barraka-beach",
+   "priority": 1,
+   "kind": "layout",
+   "title": "Correct reported Barraka planter placement against registered source evidence",
+   "photos": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
+   "features": [
+    "barraka_boardwalk.json:barraka-sign-planter"
+   ],
+   "build": "Resolve discrepancy barraka-planter-position. Audit the sign, hut and boardwalk registration; measure and independently review a correction with current overlay/comparison artifacts before changing coordinates. Recheck any other boardwalk features affected by a correction.",
+   "avoid": "Do not substitute camera GPS or arbitrary offsets for measured subject position. Existing citation, software PASS or legacy task completion does not establish correct placement.",
+   "accept": [
+    "Resolve the graph discrepancy with a fresh approved same-feature placement packet",
+    "Inspect full IMG_2346/2347 against the actual Details renderer and registered aerial",
+    "Keep shared geometry and protected paths consistent; run source/build/browser checks"
+   ],
+   "dependsOn": [
+    "placement-verification-gate"
+   ],
+   "status": "open",
+   "issue": 102
   }
  ]
 }

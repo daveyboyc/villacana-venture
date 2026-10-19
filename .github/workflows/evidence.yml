@@ -1,0 +1,24 @@
+name: Evidence graph
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  placement-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install Pillow==11.3.0
+      - run: python3 scripts/assign_photo_map.py
+      - run: python3 scripts/build_references.py --check
+      - run: python3 scripts/test_photo_assignment.py && python3 scripts/test_reference_index.py && python3 scripts/test_placement_verification.py
+      - run: python3 scripts/check_placement_changes.py --base "$PLACEMENT_BASE"
+        env:
+          PLACEMENT_BASE: ${{ github.event.pull_request.base.sha }}
+      - name: Generated evidence must be committed
+        run: git diff --exit-code -- refs public/reference-index.json public/photos-ref/assignments.json public/photos-ref/evidence-graph.json

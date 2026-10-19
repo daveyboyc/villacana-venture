@@ -37,7 +37,8 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map) | open | [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg) |
+| P1 | `barraka-planter-placement` [#102](https://github.com/daveyboyc/villacana-venture/issues/102) | Correct reported Barraka planter placement against registered source evidence (after placement-verification-gate) | open · placement: not-verified | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg) |
+| P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map) | open · placement: not-verified | [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg) |
 
 ## Built from these photos
 
@@ -46,30 +47,43 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Barraka and the beach"]
-  A --> F0["Villacana beach · unchecked"]
+  A --> F0["Villacana beach · unreviewed"]
   F0 --> PIMG_2285_jpg(["IMG_2285"])
   F0 --> PIMG_2298_jpg(["IMG_2298"])
   F0 --> PIMG_2299_jpg(["IMG_2299"])
   F0 --> PIMG_2300_jpg(["IMG_2300"])
-  A --> F1["Thatched parasols and wooden cream-cushion loungers · unchecked"]
+  A --> F1["Thatched parasols and wooden cream-cushion loungers · unreviewed"]
   F1 --> PIMG_2223_jpg(["IMG_2223"])
   F1 --> PIMG_2225_jpg(["IMG_2225"])
   F1 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F2["Barraka weathered timber boardwalk · unchecked"]
+  A --> F2["Barraka weathered timber boardwalk · unreviewed"]
   F2 --> PIMG_2223_jpg(["IMG_2223"])
   F2 --> PIMG_2225_jpg(["IMG_2225"])
   F2 --> PIMG_2346_jpg(["IMG_2346"])
   F2 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F3["BARRAKA BEACH two-tier white planted sign · unchecked"]
+  A --> F3["BARRAKA BEACH two-tier white planted sign · disputed"]
   F3 --> PIMG_2346_jpg(["IMG_2346"])
   F3 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F4["6465801UF1366N_part5 · unchecked"]
+  A --> F4["6465801UF1366N_part5 · unreviewed"]
   F4 --> PIMG_2346_jpg(["IMG_2346"])
   F4 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F5["6465801UF1366N_part6 · unchecked"]
+  A --> F5["6465801UF1366N_part6 · unreviewed"]
   F5 --> PIMG_2346_jpg(["IMG_2346"])
   F5 --> PIMG_2347_jpg(["IMG_2347"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `area:beach` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `barraka_boardwalk.json:barraka-beach-seating` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `barraka_boardwalk.json:barraka-boardwalk` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `barraka_boardwalk.json:barraka-sign-planter` | disputed | unchecked | open discrepancy barraka-planter-position |
+| `building:6465801UF1366N_part5` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `building:6465801UF1366N_part6` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `barraka-boardwalk`, `shoreline-check`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

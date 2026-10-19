@@ -31,6 +31,7 @@ Do not move the gate, planter or wall bench (data/middle_pool_south_gate.json) u
 - [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)
 - [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes
 - [ ] `data/build_queue.json`: `middle-pool-south-forecourt` set to done
+- [ ] Geometry work declares changed feature IDs in `features`; each has a fresh measured placement packet with independent approval; discrepancies resolved in `data/placement_reviews.json`
 - [ ] Before/after renders from each photo's camera (`scripts/shoot_views.cjs <photos> --task=<id> --as=before|after`), each compared with its photo and recorded in `data/photo_checks.json` (matches, or differs with an open follow-up task); `--check` fails without them
 
 Depends on: `middle-pool-south-gate`

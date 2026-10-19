@@ -47,7 +47,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
+| P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open · placement: not-verified | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 
 ## Built from these photos
 
@@ -56,44 +56,63 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Middle pool"]
-  A --> F0["Middle pool · east gateway from Calle Eva · unchecked"]
+  A --> F0["Middle pool · east gateway from Calle Eva · unreviewed"]
   F0 --> PIMG_2244_jpg(["IMG_2244"])
   F0 --> PIMG_2340_jpg(["IMG_2340"])
-  A --> F1["Middle pool · raised planter wall with hedge, west path · unchecked"]
+  A --> F1["Middle pool · raised planter wall with hedge, west path · unreviewed"]
   F1 --> PIMG_2245_jpg(["IMG_2245"])
   F1 --> PIMG_2331_jpg(["IMG_2331"])
   F1 --> PIMG_2332_jpg(["IMG_2332"])
   F1 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F2["Middle pool · bounded garden wall with brown door · unchecked"]
+  A --> F2["Middle pool · bounded garden wall with brown door · unreviewed"]
   F2 --> PIMG_2195_jpg(["IMG_2195"])
   F2 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F3["Middle pool · open north-west pergola entrance · unchecked"]
+  A --> F3["Middle pool · open north-west pergola entrance · unreviewed"]
   F3 --> PIMG_2195_jpg(["IMG_2195"])
   F3 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F4["Middle pool · curved north end of west planter · unchecked"]
+  A --> F4["Middle pool · curved north end of west planter · unreviewed"]
   F4 --> PIMG_2331_jpg(["IMG_2331"])
   F4 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F5["Middle pool · north planter side steps · unchecked"]
+  A --> F5["Middle pool · north planter side steps · unreviewed"]
   F5 --> PIMG_2331_jpg(["IMG_2331"])
   F5 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F6["Middle pool · south double iron gate, curved head and tiled planter · differs"]
+  A --> F6["Middle pool · south double iron gate, curved head and tiled planter · disputed"]
   F6 --> PIMG_2334_jpg(["IMG_2334"])
   F6 --> PIMG_2335_jpg(["IMG_2335"])
-  A --> F7["Middle pool · south-west gateway above the stone steps · unchecked"]
+  A --> F7["Middle pool · south-west gateway above the stone steps · unreviewed"]
   F7 --> PIMG_2332_jpg(["IMG_2332"])
   F7 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F8["Middle pool · short uncertain curved hedge patio · unchecked"]
+  A --> F8["Middle pool · short uncertain curved hedge patio · unreviewed"]
   F8 --> PIMG_2341_jpg(["IMG_2341"])
-  A --> F9["Middle pool · bounded north raised patio · unchecked"]
+  A --> F9["Middle pool · bounded north raised patio · unreviewed"]
   F9 --> PIMG_2193_jpg(["IMG_2193"])
   F9 --> PIMG_2194_jpg(["IMG_2194"])
-  A --> F10["Middle pool · shallow oleander bed beside patio · unchecked"]
+  A --> F10["Middle pool · shallow oleander bed beside patio · unreviewed"]
   F10 --> PIMG_2246_jpg(["IMG_2246"])
   F10 --> PIMG_2247_jpg(["IMG_2247"])
-  A --> F11["Middle pool · stone steps up to Calle Eva · unchecked"]
+  A --> F11["Middle pool · stone steps up to Calle Eva · unreviewed"]
   F11 --> PIMG_2248_jpg(["IMG_2248"])
   F11 --> PIMG_2333_jpg(["IMG_2333"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `middle_pool.json:middle-pool-east-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool.json:middle-pool-west-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_north.json:middle-pool-north-door-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_north.json:middle-pool-north-pergola` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_north.json:middle-pool-north-planter-cap` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_north.json:middle-pool-north-white-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_south_gate.json:middle-pool-south-gate` | disputed | differs | open discrepancy photo-discrepancy:98f50a7718586a39 |
+| `middle_pool_sw_gateway.json:middle-pool-sw-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `raised_terraces.json:middle-pool-curved-hedge-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `raised_terraces.json:middle-pool-north-terrace` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `raised_terraces.json:middle-pool-oleander-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `steps:middle-pool-sw-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
 

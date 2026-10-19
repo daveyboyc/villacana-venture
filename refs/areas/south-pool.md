@@ -33,10 +33,18 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["South pool"]
-  A --> F0["South lawn above the paseo · unchecked"]
+  A --> F0["South lawn above the paseo · unreviewed"]
   F0 --> PIMG_2188_jpg(["IMG_2188"])
   F0 --> PIMG_2349_jpg(["IMG_2349"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `south-pool-seaward-level`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

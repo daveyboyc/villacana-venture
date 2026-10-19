@@ -27,13 +27,23 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Pintor Picasso and the car park"]
-  A --> F0["picasso boundary wall · unchecked"]
+  A --> F0["picasso boundary wall · unreviewed"]
   F0 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F1["picasso stone plinth · unchecked"]
+  A --> F1["picasso stone plinth · unreviewed"]
   F1 --> PIMG_2345_jpg(["IMG_2345"])
-  A --> F2["picasso utility front · unchecked"]
+  A --> F2["picasso utility front · unreviewed"]
   F2 --> PIMG_2345_jpg(["IMG_2345"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `picasso_service_road.json:picasso-boundary-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_service_road.json:picasso-stone-plinth` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `picasso_service_road.json:picasso-utility-front` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `picasso-service-road`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

@@ -52,6 +52,27 @@ class ReferenceDiscovery(unittest.TestCase):
         checked=[{'task':'ui','photo':'IMG_2223.jpg','result':'not-comparable'}]
         self.assertEqual(task_verification({**task,'photos':['IMG_2223.jpg']},checked),'not-comparable')
 
+    def test_graph_has_every_model_with_unique_reachable_ids(self):
+        graph=json.loads((ROOT/'refs/graph.json').read_text())
+        self.assertEqual(graph['version'],2)
+        ids=[n['id'] for n in graph['nodes']]
+        self.assertEqual(len(ids),len(set(ids)))
+        self.assertTrue(all(e['from'] in ids and e['to'] in ids for e in graph['edges']))
+        models={n['featureId']:n for n in graph['nodes'] if n['kind']=='model-feature'}
+        self.assertEqual(set(models),set(graph['modelState']))
+        for row in self.index['references']:
+            for f in row['features']:
+                self.assertEqual(f['placement'],models[f['id']]['placement'])
+
+    def test_real_planter_report_blocks_promotion(self):
+        graph=json.loads((ROOT/'refs/graph.json').read_text())
+        planter=next(n for n in graph['nodes'] if n.get('featureId')=='barraka_boardwalk.json:barraka-sign-planter')
+        self.assertEqual(planter['verification'],'disputed')
+        self.assertIn('barraka-planter-position',planter['placement']['reportIds'])
+        self.assertFalse(any(e['from']==planter['id'] and e['relation']=='placement-verified-by' for e in graph['edges']))
+        report=next(n for n in graph['nodes'] if n['id']=='placement-discrepancy:barraka-planter-position')
+        self.assertEqual(report['followUp'],'barraka-planter-placement')
+
     def test_frame_and_camera_positions_not_silently_transformed(self):
         skeleton = json.loads((ROOT / 'public/map/skeleton.json').read_text())
         self.assertEqual(self.index['frame']['viewRotation'], skeleton['viewRotation'])

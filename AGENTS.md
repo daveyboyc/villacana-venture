@@ -8,6 +8,15 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   house/pool footprints unless a specific evidence-backed correction is intended.
 - GPS locates a camera, not the photographed subject. Source citations and passed
   movement tests do not prove photographic fidelity or surveyed dimensions.
+- Follow `docs/PLACEMENT_VERIFICATION.md` before changing geometry. Declare the
+  task's affected feature IDs; save measured overlays/comparisons, keep open
+  discrepancies, and obtain independent review of actual maps/full-size photos.
+  Only a current `placement-verified-by` graph edge grants scoped placement
+  approval. Photo diagnostics and earlier task completion cannot grant it.
+- Run `scripts/check_placement_changes.py --base origin/main` after regenerating
+  references. The Evidence graph PR check must pass before merging geometry.
+  Do not bypass a disputed/stale placement by deleting reports, inventing review
+  identities, changing task kind or treating unavailable calibration as a match.
 - Distinguish photo-supported wall/opening arrangements from estimated extents,
   untraced enclosure boundaries and likely passages. Do not invent repeated walls
   or gates as substitutes for tracing.
@@ -59,7 +68,8 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
 - A citation is not a check. Render the build from each photo's camera
   (`scripts/shoot_views.cjs --task=<id> --as=after`), compare it with the photo,
   and record the result in `data/photo_checks.json`; a done task with an
-  unchecked photo fails `build_references.py --check`.
+  unchecked photo fails `build_references.py --check`. These remain photographic
+  diagnostics, separate from the measured placement gate and its limitations.
 - `refs/` is generated. Rebuild with `python3 scripts/build_references.py
   --sheets` and commit both repos. `--check` must pass before a PR.
 - New photos: follow "Intake for a new Drive batch" in

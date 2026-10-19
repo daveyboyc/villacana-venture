@@ -32,7 +32,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
+| P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 · placement: not-verified | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
 
 ## Built from these photos
 
@@ -41,29 +41,29 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["The paseo"]
-  A --> F0["Paseo · east green windbreak · unchecked"]
+  A --> F0["Paseo · east green windbreak · unreviewed"]
   F0 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F1["Paseo · south-pool clipped hedge · unchecked"]
+  A --> F1["Paseo · south-pool clipped hedge · unreviewed"]
   F1 --> PIMG_2349_jpg(["IMG_2349"])
   F1 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F2["Paseo · flush square service cover · unchecked"]
+  A --> F2["Paseo · flush square service cover · unreviewed"]
   F2 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F3["Paseo · west clipped hedge · unchecked"]
+  A --> F3["Paseo · west clipped hedge · unreviewed"]
   F3 --> PIMG_2352_jpg(["IMG_2352"])
   F3 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F4["Paseo · west green windbreak · unchecked"]
+  A --> F4["Paseo · west green windbreak · unreviewed"]
   F4 --> PIMG_2352_jpg(["IMG_2352"])
-  A --> F5["Paseo · white lamp 1 · unchecked"]
+  A --> F5["Paseo · white lamp 1 · unreviewed"]
   F5 --> PIMG_2352_jpg(["IMG_2352"])
   F5 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F6["Paseo · white lamp 2 · unchecked"]
+  A --> F6["Paseo · white lamp 2 · unreviewed"]
   F6 --> PIMG_2352_jpg(["IMG_2352"])
   F6 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F7["Paseo · white lamp 3 · unchecked"]
+  A --> F7["Paseo · white lamp 3 · unreviewed"]
   F7 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F8["Paseo · white lamp 4 · unchecked"]
+  A --> F8["Paseo · white lamp 4 · unreviewed"]
   F8 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F9["Paseo · sandstone retaining wall and mesh fence · unchecked"]
+  A --> F9["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
   F9 --> PIMG_2227_jpg(["IMG_2227"])
   F9 --> PIMG_2298_jpg(["IMG_2298"])
   F9 --> PIMG_2299_jpg(["IMG_2299"])
@@ -71,15 +71,34 @@ graph LR
   F9 --> PIMG_2350_jpg(["IMG_2350"])
   F9 --> PIMG_2352_jpg(["IMG_2352"])
   F9 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F10["Paseo · timber edge onto the beach · unchecked"]
+  A --> F10["Paseo · timber edge onto the beach · unreviewed"]
   F10 --> PIMG_2350_jpg(["IMG_2350"])
   F10 --> PIMG_2351_jpg(["IMG_2351"])
   F10 --> PIMG_2352_jpg(["IMG_2352"])
   F10 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F11["South lawn above the paseo · unchecked"]
+  A --> F11["South lawn above the paseo · unreviewed"]
   F11 --> PIMG_2188_jpg(["IMG_2188"])
   F11 --> PIMG_2349_jpg(["IMG_2349"])
 ```
+
+## Placement evidence
+
+`verification` is placement status, separate from photographic diagnostics. Earlier manual reviews may exist. Only a fresh measured packet and independent approval can grant `verified`.
+
+| Feature | Placement | Photo diagnostics | Blockers |
+| --- | --- | --- | --- |
+| `paseo_details.json:paseo-east-windbreak` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-pool-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-service-cover` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-west-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-west-windbreak` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-white-lamp-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-white-lamp-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-white-lamp-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_details.json:paseo-white-lamp-4` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_wall.json:paseo-retaining-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `paseo_wall.json:paseo-timber-edge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `paseo-retaining-wall`, `paseo-retrace-line`, `paseo-house-clearance`, `paseo-details`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

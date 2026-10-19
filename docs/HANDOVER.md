@@ -13,12 +13,13 @@ levels), then materials, then planting and small details.
     its photos (best first), known facts, open questions, docs, data and code.
     `refs/topics/<topic>.md`: the same by topic (levels, materials...).
   - `refs/graph.json`: nodes for areas, topics, references, model features and
-    build tasks; edges `shows`, `useful-for`, `cites`, `in-area`, `looks-at`,
-    `builds-from`, `depends-on` and `checked-against`. `cites` only means an author
-    used a photo. `checked-against` (from `data/photo_checks.json`) means the build
-    was rendered from that photo's camera and compared, with the result; features
-    and tasks carry a `verification` state (matches, differs, unchecked).
-    `refs/QUEUE.md` lists the done tasks never checked (verification backlog).
+    build tasks, placement packets, registration landmarks and discrepancies.
+    `cites` only means an author used a photo. `checked-against` retains render/photo
+    diagnostics as `photoVerification`. `verification` is now strict placement
+    status; only `placement-verified-by` grants approval within its metre tolerance.
+    Open discrepancies override positive checks. Read `docs/PLACEMENT_VERIFICATION.md`.
+    `refs/QUEUE.md` lists gaps in newer photo-check records; earlier manual reviews
+    may exist and are not erased by this backlog.
   - Contact sheets of numbered thumbnails per area are in the private
     `villacana-reference` repo (`contact-sheets/<area>.jpg`).
 - **Photo metadata you can trust to a stated degree.** `public/photos-ref/manifest.json`
@@ -63,7 +64,12 @@ levels), then materials, then planting and small details.
    the data's `trust`. Trace positions against `public/map/ground.jpg` (bounds in
    `public/map/ground.json`), the registry footprints and the road lines in
    `public/map/skeleton.json`. Map metres: +x east, +z south. A camera pin
-   locates the camera, not the subject; roof shots stand inside buildings.
+   locates the camera, not the subject; roof shots stand inside buildings. Save a
+   reviewable alignment/discrepancy report before editing geometry: one global
+   registration, distributed controls and separate held-out landmarks, metre
+   errors including uncertainty, labelled ground/roof outlines and proposed
+   bounded corrections. Record concealed boundaries as unresolved. Declare the
+   task's affected raw feature IDs in `features`.
 6. Build the feature in its own data file and module, following the examples.
    Record `evidence` (photo files) and an honest `trust` sentence saying what is
    photo-supported and what is estimated.
@@ -74,7 +80,11 @@ levels), then materials, then planting and small details.
    with notes and a new open task as `followUp` for what is still wrong.
 8. Set the task `done`, add any new fact or open question to the area's `notes`
    in `data/areas.json`, add newly discovered work as new tasks (with photos),
-   and rebuild the references.
+   and rebuild the references. New geometry tasks also require a fresh measured
+   placement packet for every declared feature, independently reviewed against
+   actual maps and full-size photos. Keep them in progress if this approval is
+   unavailable. Follow `docs/PLACEMENT_VERIFICATION.md` for packets and discrepancy
+   resolution; a later match or a closed task cannot erase an open discrepancy.
 
 ## Definition of done (every task)
 
@@ -83,6 +93,8 @@ Run from the repo root; all must pass:
 ```bash
 python3 scripts/assign_photo_map.py && python3 scripts/test_photo_assignment.py
 python3 scripts/build_references.py --check
+python3 scripts/test_reference_index.py && python3 scripts/test_placement_verification.py
+python3 scripts/check_placement_changes.py --base origin/main
 cd scripts && for c in check_map check_street_layout check_boundary_reference check_terrain \
   check_dali_threshold check_cervantes_patio_walls check_elena_north check_middle_pool check_paseo_wall \
   check_seafront check_pool_levels check_levels; do python3 $c.py | tail -1; done; cd ..
@@ -95,6 +107,10 @@ node scripts/test_photo_map_browser.cjs
 Plus the task's own `Done when` items, a new or extended `scripts/check_*.py`
 for what you built, and before/after renders from the photo cameras committed in
 `docs/reviews/<task-id>/` and recorded in `data/photo_checks.json`.
+For tooling/audit tasks without geometry changes, record applicable evidence and
+software outcomes instead of inventing photo-camera pairs or placement approvals.
+The Evidence graph PR check must pass before merge. It validates records, hashes
+and arithmetic; independent source inspection still establishes what images show.
 `build_references.py --check` fails for a done task with an unchecked photo, a
 `differs` without an open follow-up, or a checked photo without a reviewed `looksAt`.
 Passing source checks and walking tests does not show the build looks like the place.
