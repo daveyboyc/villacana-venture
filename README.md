@@ -27,6 +27,10 @@ Facts confirmed by Dave (2026-10-11):
 | apple-maps/07 | 3D, north pool looking east towards the Picasso car park |
 | apple-maps/08 | 3D, north pool looking west: front porches, tiled canopies, balconies |
 | apple-maps/09 | 3D, north pool looking south: lawn ring, curved path, deck |
+| apple-maps/10 | 3D, main pool and Calle Guillermo from the sea, looking west (wide) |
+| apple-maps/11 | 3D, Calle Guillermo sloping down beside the pool lawn to the paseo, Jorge junction, kiosk at the foot |
+| apple-maps/12 | 3D, main pool looking north-east: 90 Miles terrace lobe and the narrow steps down from the Picasso wall |
+| apple-maps/13 | 3D, nearly top-down: restaurant terrace curve, west steps beside Guillermo, east steps by the Picasso wall |
 
 Dave's notes on the north pool (2026-10-11): the grass area is bigger than the first
 pass showed, and the houses have front porches.
