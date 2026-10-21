@@ -52,6 +52,9 @@ gp, jp = [turned(p) for p in g['points']], [turned(p) for p in j['points']]
 assert g['heights'][0] == g['heights'][1] == STREET and abs(g['heights'][-1] - foot) < 1e-6, g['heights']
 assert math.dist(gp[1], spec['guillermo']['slopeStart']) < 0.05
 assert all(b <= a for a, b in zip(g['heights'], g['heights'][1:])), 'Guillermo climbs on its way to the sea'
+# A smooth ramp, no steps (Dave, 2026-10-21): one even grade from the slope start to the foot.
+falls = [(a - b) / math.dist(p, q) for p, q, a, b in zip(gp, gp[1:], g['heights'], g['heights'][1:]) if a > b]
+assert falls and max(falls) - min(falls) < 0.005 and 'smooth' in spec['guillermo']['slopeEvidence'], 'Guillermo ramp is not one smooth grade'
 # Steep but walkable: Dave's ramp starts just past Jorge, so 3 m comes down in about 15 m.
 grade = g['maxGrade']
 assert grade <= 0.2 and grade == spec['guillermo']['maxGrade']

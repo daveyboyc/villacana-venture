@@ -109,7 +109,8 @@ showed two things the model had wrong.
 - **Calle Guillermo ends in a ramp down to the paseo, not on a bank.** The lane runs
   down to the paseo between the house gardens and a white wall on the lawn side.
   This replaces "Calle Guillermo now ends at the top of that bank" above. Dave then
-  said Calle Jorge meets Guillermo on the level and the ramp starts just past it, so
+  said Calle Jorge meets Guillermo on the level and the ramp starts just past it, and
+  that it is a smooth ramp with no steps, so
   Guillermo stays at street level to the Jorge junction and falls from 0.66 m past
   it (clear of Jorge's paving) to paseo level at the lane's foot: 3 m over 15.5 m,
   about 19 %, then runs on level through the gateway to the paseo. Its heights are
