@@ -86,10 +86,11 @@
   "useFor": [
    "layout",
    "materials",
-   "planting"
+   "planting",
+   "facades"
   ],
   "title": "Calle Silvia north: tiled lane looking to the middle pool south gateway",
-  "note": "Dave (2026-10-15): Looks down to the middle pool down called Silvia",
+  "note": "Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails.",
   "looksAt": [
    -127.0,
    103.0
@@ -1835,13 +1836,16 @@
   "useFor": [
    "layout",
    "levels",
-   "materials"
+   "materials",
+   "planting",
+   "facades"
   ],
   "looksAt": [
    -127.3,
    104.3
   ],
-  "subject": "south gate, double iron leaves and the planter to its right"
+  "subject": "south gate, double iron leaves and the planter to its right",
+  "note": "User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf."
  },
  "IMG_2335.jpg": {
   "shows": [

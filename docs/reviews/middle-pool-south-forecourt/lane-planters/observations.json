@@ -1,0 +1,189 @@
+{
+  "source": "public/photos-ref/IMG_2334.jpg",
+  "sourcePixels": [
+    1200,
+    1600
+  ],
+  "frame": "source-image-pixels; x right, y down",
+  "worldPlacement": null,
+  "status": "visible frontage mapping; no geometry change or measured placement approval",
+  "userObservation": "Hedge and planter run along the walls on both sides of the street beyond the entrance gate.",
+  "frontages": [
+    {
+      "id": "lane-left-planted-border",
+      "sideInPhoto": "left",
+      "description": "Narrow planted strip against house frontage; low pale kerb with grasses and hedge/shrubs. Lower than the raised bed on the opposite side. Gate leaf, foliage, ladder and cart hide much of the structure.",
+      "visibleSegments": [
+        {
+          "part": "kerb at paving edge",
+          "pixelPoints": [
+            [
+              215,
+              710
+            ],
+            [
+              229,
+              662
+            ],
+            [
+              240,
+              620
+            ],
+            [
+              251,
+              584
+            ],
+            [
+              267,
+              549
+            ]
+          ]
+        }
+      ],
+      "occludedBeyondPixels": [
+        [
+          267,
+          549
+        ]
+      ],
+      "limits": "Do not infer a continuous tall white planter wall, concealed door breaks or a far endpoint. Not an isolated pot and not the courtyard-side hedge."
+    },
+    {
+      "id": "lane-right-raised-planter",
+      "sideInPhoto": "right",
+      "description": "Raised white rendered planter under barred openings with clipped shrubs and taller planting. Coping/frontage steps in and out; a recessed doorway interrupts the near and far visible sections.",
+      "visibleSegments": [
+        {
+          "part": "near planter front at paving edge",
+          "pixelPoints": [
+            [
+              578,
+              744
+            ],
+            [
+              552,
+              713
+            ],
+            [
+              525,
+              681
+            ],
+            [
+              502,
+              654
+            ],
+            [
+              477,
+              615
+            ],
+            [
+              449,
+              568
+            ],
+            [
+              425,
+              541
+            ]
+          ]
+        },
+        {
+          "part": "near planter coping",
+          "pixelPoints": [
+            [
+              574,
+              582
+            ],
+            [
+              541,
+              567
+            ],
+            [
+              512,
+              553
+            ],
+            [
+              489,
+              542
+            ],
+            [
+              460,
+              525
+            ],
+            [
+              429,
+              509
+            ]
+          ]
+        },
+        {
+          "part": "far planter front beyond doorway",
+          "pixelPoints": [
+            [
+              404,
+              526
+            ],
+            [
+              392,
+              515
+            ],
+            [
+              379,
+              507
+            ],
+            [
+              372,
+              500
+            ]
+          ]
+        }
+      ],
+      "occludedBeyondPixels": [
+        [
+          578,
+          744
+        ],
+        [
+          372,
+          500
+        ]
+      ],
+      "doorwayBreakPixels": [
+        [
+          405,
+          524
+        ],
+        [
+          414,
+          535
+        ],
+        [
+          427,
+          552
+        ]
+      ],
+      "limits": "Foot of the near section is partly occluded by the gate. Far end hidden in perspective/foliage. The doorway break must remain open. No exact world-space length/width/height inferred."
+    }
+  ],
+  "correspondenceLimit": "IMG_2189 shows both planted frontages but its distant flat-headed gateway and community notices resemble the east entrance in IMG_2340/2244. It cannot securely establish a reverse view of IMG_2334's curved double gate. Retain earlier camera data as history; do not transfer these source-pixel traces into global coordinates using that unproven correspondence.",
+  "schematic": "Schematic drawing shows side ordering and an observed doorway break only. It is not a metre trace, a building footprint, or a claim that the two frontages have identical dimensions.",
+  "pixelPickUncertainty": "Approximately ±5–15 source pixels for visible margins; hidden endpoints are not bounded.",
+  "windowGrilles": [
+    {
+      "id": "lane-right-window-grille",
+      "source": "public/photos-ref/IMG_2334.jpg",
+      "labelPointPixels": [
+        507,
+        393
+      ],
+      "sideInPhoto": "right",
+      "observed": "Black projecting metal grille in front of brown louvred shutter, above the raised white frontage bed. Vertical bars and horizontal ties visible behind the separate foreground open gate leaf.",
+      "limits": "Partially occluded/cropped top; no exact count, dimensions or full perimeter traced. Photo-left window grille location not independently exposed in this source."
+    },
+    {
+      "id": "window-grille-style-reference",
+      "source": "public/photos-ref/IMG_2189.jpg",
+      "observed": "Projecting/bowed black grille cages over brown-shuttered ground-floor openings on both sides of the photographed lane. Window grilles sit above planting borders and differ from upper balcony rails.",
+      "limits": "Use for observed construction/appearance, not an assumed reverse view or global placement of IMG_2334."
+    }
+  ]
+}

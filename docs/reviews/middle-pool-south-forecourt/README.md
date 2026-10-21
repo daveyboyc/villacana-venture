@@ -11,6 +11,12 @@ Task `middle-pool-south-forecourt` remains **in progress**. Its estimated full
 boundary and hedge continuation do not have placement approval. The existing
 south-gate discrepancy is retained; this draft does not close it.
 
+Dave's subsequent clarification identifies two planted frontage borders on the
+tiled street beyond the gate. They are mapped separately in the
+[annotated photograph and source-relative plan](lane-planters/README.md),
+with the visible doorway break retained. This adds evidence and a future build
+task; the current 3D draft has not yet built those lane-side beds.
+
 ## Repository photo accounting
 
 [photo-inventory.json](photo-inventory.json) records the exact repository revisions
