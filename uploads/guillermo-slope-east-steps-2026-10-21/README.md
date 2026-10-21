@@ -15,3 +15,4 @@ Private comparisons for villacana-venture task `guillermo-slope-east-steps`
 - `gateway.jpg`: IMG_2226 (left part, full size) beside the modelled white wall,
   arched gateway and railings. `IMG_2226-cmp.jpg`, `IMG_2227-cmp.jpg`: photo, then the
   before/after renders from their camera pins (not comparable: walk camera).
+- `jorge-junction.jpg`: Apple crop at the Jorge junction beside the model after Dave's correction (Jorge level, ramp starting just past it).
