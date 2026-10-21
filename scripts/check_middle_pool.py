@@ -174,3 +174,20 @@ assert bed['along'][0]<=-3.0,'IMG_2334: the planter continues past the bench tow
 assert -3.1<=south['drain']['along']<=-2.2,'IMG_2334: the drain sits level with the bench, about 2.3-3 m in from the gate'
 assert math.dist(south['center'],[-135.63,100.42])>8,'South gate duplicates southwest entrance'
 print('Middle pool south: separate open double gate, planter, wall bench past the leaf and tiled panel preserve routes and registry PASS')
+
+# Bounded south forecourt: materials can cross a route, planting must clear its full width.
+court,hedge=south['forecourt'],south['hedge']
+assert court['evidence']==south['evidence'] and hedge['evidence']==['IMG_2334.jpg']
+assert 'estimated' in court['trust'] and 'estimated' in hedge['trust']
+assert court['along'][0]<south['paving']['along'][0] and court['along'][1]==south['paving']['along'][1]
+assert court['across']==south['paving']['across'],'Keep the photographed narrow width; do not widen across private boundaries'
+for pt in sample(south_rect(*court['along'],*court['across']),True):
+ assert not any(inside(*pt,b['ring']) for b in s['buildings'] if b['floors']>0),'Forecourt enters registry house'
+ assert not any(inside(*pt,p['ring']) for p in s['pools']),'Forecourt enters pool'
+radius=1.7*hedge['spriteScale']/2
+for along in (hedge['along'][0]+hedge['spacing']*i for i in range(1+round((hedge['along'][1]-hedge['along'][0])/hedge['spacing']))):
+ pt=at(along,hedge['across'])
+ for road in roads.values():
+  gap=min(distance(pt,a,b) for a,b in zip(road['points'],road['points'][1:]))
+  assert gap>=road['width']/2+radius+.15,f'Visible hedge footprint blocks {road["id"]}'
+print('Middle pool south forecourt: bounded photo-cited stone avoids registry solids; Details hedge footprint clears Eva/Silvia PASS')

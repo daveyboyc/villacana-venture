@@ -45,7 +45,7 @@ const path = require("node:path");
       { gardenDoor, gardenPoint, gardenDoorRings, gardenGroundOffset, addCervantesGardenDoor },
       { middlePoolRings, middlePoolPlanter, middleGatewayFrame },
       { middleSwRings, middleSwAt },
-      { middleSouthRings, middleSouthAt },
+      { middleSouthRings, middleSouthAt, middleSouthRect, addMiddleSouthGate, outsideMiddleSouthForecourt },
       { raisedTerraces, raisedTerraceRings, raisedTerraceGroundOffset, terraceStairs, terraceFloorY },
     ] = await Promise.all([
       import("/src/player.ts"),
@@ -290,6 +290,25 @@ const path = require("node:path");
     walk([middleSouthAt(-2.8),middleSouthAt(1.8)]);
     walk([middleSouthAt(1.8),middleSouthAt(-2.8)]);
     if(Math.abs(world.groundHeight(...middleSouthAt(-2))-world.groundHeight(...middleSouthAt(1)))>.05)throw Error("South entrance gained an unsupported step");
+    // The photo-supported forecourt replaces the drawn road surface without moving its through routes.
+    walk([middleSouthAt(-4.8),middleSouthAt(1.8)]);
+    walk([middleSouthAt(1.8),middleSouthAt(-4.8)]);
+    {
+      const source=middleSouthRect(-7,2,-2,2),parts=outsideMiddleSouthForecourt(source);
+      const area=ring=>Math.abs(ring.reduce((sum,p,i)=>{const q=ring[(i+1)%ring.length];return sum+p[0]*q[1]-q[0]*p[1];},0))/2;
+      if(Math.abs(parts.reduce((sum,p)=>sum+area(p),0)-(36-5.15*2.12))>1e-6)throw Error("Forecourt clipping loses road surface outside its bounded patch");
+      if(outsideMiddleSouthForecourt(middleSouthRect(-4,-1,-.5,.5)).length)throw Error("Terracotta ribbon still covers the forecourt");
+      const scene=new THREE.Scene();scene.userData.layoutOnly=true;addBoundaryReference(scene,s.boundaryReference);addMiddleSouthGate(scene);scene.updateMatrixWorld(true);
+      const at=middleSouthAt(-4.2),ray=new THREE.Raycaster(new THREE.Vector3(at[0],4,at[1]),new THREE.Vector3(0,-1,0));
+      const hit=ray.intersectObjects(scene.children,true)[0];
+      if(hit?.object.name!=="middle-pool-south-gate"||Math.abs(hit.point.y-.08)>.005)throw Error("Forecourt stone is hidden under crossing tiles or has gained a raised slab");
+      if(scene.getObjectByName("middle-pool-south-east-hedge"))throw Error("Forecourt hedge leaked into Layout");
+      const details=new THREE.Scene(),routes=protectedRoutes(s.boundaryReference);details.userData.decorationClearance=(x,z,r)=>routeClearance(routes,x,z,r);
+      addMiddleSouthGate(details);
+      const hedge=details.getObjectByName("middle-pool-south-east-hedge");let count=0;
+      hedge?.traverse(mesh=>{if(!mesh.isInstancedMesh)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),q=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,q,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error("Forecourt hedge blocks a protected route");count++;}});
+      if(!count)throw Error("Details forecourt hedge fragment is missing");
+    }
     // Private garden threshold: both visible treads equal the sampled player ground,
     // and the photographed closed door stays solid. It is not a through-route.
     {

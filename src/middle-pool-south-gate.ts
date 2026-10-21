@@ -2,10 +2,41 @@ import * as THREE from "three";
 import f from "../data/middle_pool_south_gate.json";
 import { plasterMaterial } from "./materials";
 import type { Vec2 } from "./types";
+import { addSprites } from "./sprites";
 
 // Local +along points south into the lane; +across is the planter on the photo's right.
 export const middleSouthAt = (along: number, across = 0): Vec2 => [f.center[0]+f.forward[0]*along-f.forward[1]*across,f.center[1]+f.forward[1]*along+f.forward[0]*across];
 export const middleSouthRect = (a:number,b:number,c:number,d:number):Vec2[] => [middleSouthAt(a,c),middleSouthAt(b,c),middleSouthAt(b,d),middleSouthAt(a,d)];
+export const middleSouthForecourtRing = (): Vec2[] => middleSouthRect(...f.forecourt.along as [number,number],...f.forecourt.across as [number,number]);
+
+/** Remove only the paved forecourt from a visual road ribbon. Route axes, levels and collision stay shared. */
+export function outsideMiddleSouthForecourt(ring: Vec2[]): Vec2[][] {
+ const local = ring.map(([x,z]):Vec2 => [(x-f.center[0])*f.forward[0]+(z-f.center[1])*f.forward[1],-(x-f.center[0])*f.forward[1]+(z-f.center[1])*f.forward[0]]);
+ const [a,b]=f.forecourt.along,[c,d]=f.forecourt.across;
+ if(local.every(p=>p[0]<a)||local.every(p=>p[0]>b)||local.every(p=>p[1]<c)||local.every(p=>p[1]>d))return [ring];
+ const clip=(poly:Vec2[],axis:number,bound:number,sign:number):Vec2[]=>{
+  const out:Vec2[]=[];
+  for(let i=0;i<poly.length;i++) {
+   const p=poly[i],q=poly[(i+1)%poly.length],dp=sign*(p[axis]-bound),dq=sign*(q[axis]-bound);
+   if(dp>=0)out.push(p);
+   if((dp>=0)!==(dq>=0)){const t=dp/(dp-dq);out.push([p[0]+t*(q[0]-p[0]),p[1]+t*(q[1]-p[1])]);}
+  }
+  return out;
+ };
+ // Each convex ribbon triangle is partitioned into disjoint outside pieces.
+ const result:Vec2[][]=[];
+ for(const ids of THREE.ShapeUtils.triangulateShape(local.map(p=>new THREE.Vector2(...p)),[])) {
+  let inside=ids.map(i=>local[i]);
+  for(const [axis,bound,sign] of [[0,a,1],[0,b,-1],[1,c,1],[1,d,-1]]) {
+   const outside=clip(inside,axis,bound,-sign);
+   const area=Math.abs(outside.reduce((sum,p,i)=>{const q=outside[(i+1)%outside.length];return sum+p[0]*q[1]-q[0]*p[1];},0))/2;
+   if(area>1e-8)result.push(outside.map(([along,across])=>middleSouthAt(along,across)));
+   inside=clip(inside,axis,bound,sign);
+   if(!inside.length)break;
+  }
+ }
+ return result;
+}
 export function middleSouthRings():Vec2[][] {
  const w=f.opening/2,p=f.pier,b=f.planter,s=f.bench,panel=f.panel;
  // Leaves are fixed open into the courtyard against the planter; the wall bench is set back past them, outside the through route.
@@ -68,8 +99,19 @@ export function addMiddleSouthGate(scene:THREE.Scene):void {
  }
  const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;
  box(pa,panel.across-.006,.012,panel.height,panel.width,panel.bottom,new THREE.MeshStandardMaterial({map:texture,roughness:.8}));
- const paving=f.paving;box((paving.along[0]+paving.along[1])/2,(paving.across[0]+paving.across[1])/2,paving.across[1]-paving.across[0],.014,paving.along[1]-paving.along[0],.006,stone);
+ // Original gate paving is extended as a bounded surface, not a new raised slab.
+ const paving=f.forecourt;stone.map!.wrapS=stone.map!.wrapT=THREE.RepeatWrapping;
+ stone.map!.repeat.set((paving.across[1]-paving.across[0])/2,(paving.along[1]-paving.along[0])/2);
+ box((paving.along[0]+paving.along[1])/2,(paving.across[0]+paving.across[1])/2,paving.across[1]-paving.across[0],.014,paving.along[1]-paving.along[0],.006,stone);
  const drain=f.drain;box(drain.along,drain.across,drain.width,.02,drain.length,.023,iron);
  for(let a=-drain.length/2+.04;a<drain.length/2;a+=.055)box(drain.along+a,drain.across,drain.width-.035,.012,.015,.045,new THREE.MeshStandardMaterial({color:"#65716d"}));
  group.traverse(m=>{m.name=f.id;m.userData.noDrape=true;if(m instanceof THREE.Mesh)m.castShadow=m.receiveShadow=true;});scene.add(group);
+ if(!scene.userData.layoutOnly) {
+  const hedge=new THREE.Scene();hedge.userData={...scene.userData};
+  const h=f.hedge,places=[];
+  for(let a=h.along[0];a<=h.along[1]+1e-6;a+=h.spacing){const [x,z]=middleSouthAt(a,h.across);places.push({x,z,scale:h.spriteScale});}
+  addSprites(hedge,"hedge",places);
+  hedge.name=h.id;hedge.scale.y=h.heightScale;hedge.position.y=.06;
+  hedge.traverse(m=>{m.userData.noDrape=true;});scene.add(hedge);
+ }
 }

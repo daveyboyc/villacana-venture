@@ -645,7 +645,13 @@
    "dependsOn": [
     "middle-pool-south-gate"
    ],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Codex",
+   "features": [
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   ]
   },
   {
    "id": "north-pool-west-frontage",
@@ -818,6 +824,29 @@
    "status": "in-progress",
    "issue": 102,
    "owner": "Codex"
+  },
+  {
+   "id": "middle-pool-south-lane-planters",
+   "area": "middle-pool",
+   "priority": 2,
+   "kind": "structure",
+   "title": "South entrance lane: planted frontage borders and projecting window grilles",
+   "photos": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg"
+   ],
+   "build": "User identified two planted house-frontage runs beyond the gate, mapped in docs/reviews/middle-pool-south-forecourt/lane-planters/. Establish gateway/world correspondence and trace each visible bed segment separately. Left is a low kerb/planted strip partly hidden by leaf/ladder/cart; right is a raised white rendered bed beneath barred openings, with a recessed doorway break and a separate far section. Keep courtyard bench/hedge distinct. Implement shared map, 3D and collision only after source-based placement is supported. Include the observed projecting black window grille over the brown shutter above the right bed; use IMG_2189 for grille appearance only until gate correspondence is resolved. Model grilles separately from entrance leaves and upper balcony rails; project above the bed, without obstructing the route.",
+   "avoid": "Do not mirror a uniform hedge/planter on both sides, fill hidden endpoints, block doorways/routes, or assume IMG_2189 is the reverse of IMG_2334 from its existing label. Source-pixel annotations and a schematic do not establish metre geometry.",
+   "accept": [
+    "Both frontage runs have independently supported world anchors, declared affected IDs and fresh measured placement review",
+    "Doorway and street clearances retained; map/3D/collision share the same supported outlines",
+    "Photo comparisons include visible frontage faces, not only the courtyard bench",
+    "Visible window grille placement/projection has its own evidence; brown shutters remain visible behind the bars"
+   ],
+   "dependsOn": [
+    "middle-pool-south-forecourt"
+   ],
+   "status": "open"
   },
   {
    "id": "guillermo-slope-east-steps",

@@ -1,0 +1,67 @@
+{
+  "frame": "map-metres-east-south",
+  "aerial": "public/map/ground.jpg",
+  "pixels": [
+    1792,
+    1792
+  ],
+  "pixelToMap": [
+    0.24015625000000002,
+    0,
+    0,
+    0.24016183035714286,
+    -332.27,
+    -98.38
+  ],
+  "groundSha256": "1de68eeff912ac3de2f4fc411df6bdbfccc74e41054cb06ce2eb2e3fefad5815",
+  "gateCenter": [
+    -126.48,
+    103.85
+  ],
+  "oldPavingRing": [
+    [
+      -127.50465307472204,
+      100.25693917718296
+    ],
+    [
+      -125.54857896338169,
+      103.4563569478006
+    ],
+    [
+      -127.35731647637087,
+      104.56219084541169
+    ],
+    [
+      -129.3133905877112,
+      101.36277307479405
+    ]
+  ],
+  "proposedForecourtRing": [
+    [
+      -128.2349207429558,
+      99.06248987615237
+    ],
+    [
+      -125.54857896338169,
+      103.4563569478006
+    ],
+    [
+      -127.35731647637087,
+      104.56219084541169
+    ],
+    [
+      -130.04365825594496,
+      100.16832377376346
+    ]
+  ],
+  "measurements": {
+    "modelLengthM": 5.15,
+    "modelWidthM": 2.12,
+    "addedLengthM": 1.4,
+    "sourceBoundaryResidualsM": null,
+    "sourceUncertaintyM": "Cannot bound all occluded endpoints within <=2m from this aerial and the oblique photos."
+  },
+  "controls": [],
+  "heldOut": [],
+  "limitations": "The georeferenced aerial establishes one common frame only. A visible pool/path constrains topology; foliage, shadow and roof overhang prevent distributed identified controls and a complete independent full-vertex boundary trace. No control residuals or approval are invented."
+}

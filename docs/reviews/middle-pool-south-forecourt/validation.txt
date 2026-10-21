@@ -1,0 +1,57 @@
+Validation — 21 October 2026
+
+PASS python3 scripts/assign_photo_map.py
+  145 phone photos: 77 suggested, 67 needs-review, 1 unplaced.
+PASS python3 scripts/build_references.py --sheets --check
+  172 references, 172 reviewed content tags, 0 problems; not placement approval.
+PASS python3 scripts/build_photo_map.py
+  145 photos, 276 lane stretches.
+PASS python3 scripts/test_photo_assignment.py — 12 tests
+PASS python3 scripts/test_reference_index.py — 7 tests
+PASS python3 scripts/test_placement_verification.py — 31 tests
+PASS all 12 source checks required by docs/HANDOVER.md:
+  check_map, check_street_layout, check_boundary_reference, check_terrain,
+  check_dali_threshold, check_cervantes_patio_walls, check_elena_north,
+  check_middle_pool (extended for forecourt), check_paseo_wall,
+  check_seafront, check_pool_levels, check_levels.
+PASS npm run typecheck
+PASS npm run build
+  Existing Vite large-chunk advisory; no build errors.
+PASS scripts/test_layout_browser.cjs with system Chromium:
+  20 routes, both directions, 406 segments, errors [].
+  Added forecourt area subtraction, drawn-stone ray, level traverse,
+  Details hedge presence and visible-footprint clearance assertions passed.
+PASS scripts/test_overview_browser.cjs with system Chromium:
+  Zoom, rotation, north reset, focus notes, overlay toggle,
+  walk visibility and mobile toolbar.
+PASS scripts/test_photo_map_browser.cjs with system Chromium:
+  All 172 references; search, boat lookup, camera/subject distinction,
+  full photo, stable links, private/unplaced discovery, local reviews, mobile.
+PASS git diff --check
+
+BLOCKED python3 scripts/check_placement_changes.py --base origin/main
+  Exit 1: 36 feature fingerprints require fresh verified placement packets.
+  Conservative shared renderer/blueprint fingerprints include unchanged
+  Elena/middle/paseo features and street renderers, as well as the three
+  declared south-gate/forecourt/hedge features. No gate bypass, policy change,
+  invented controls or reviewer approval is made. This branch is draft only.
+
+Independent source and final-render review:
+  /root/forecourt_source_review inspected actual full-size photos, aerial,
+  overlay and before/after renders. Improvement supported; placement
+  approval withheld because complete ground endpoints are concealed.
+
+Repository photo inventory: no missing primary source records or public pixels.
+Scope does not include searching Drive for a newer batch of original photos.
+Private contact sheet companion: daveyboyc/villacana-reference PR #6.
+
+Follow-up: both lane frontages and window bars (photo mapping only)
+  Annotated IMG_2334 and a source-relative plan added under lane-planters/.
+  IMG_2189 recorded for projecting/bowed grille appearance; gate correspondence unresolved.
+  Independent source reviewer inspected final purple diagram and observation records.
+PASS build_references.py --sheets --check: 172 references, 0 problems.
+PASS test_reference_index.py (7), test_photo_assignment.py (12), test_placement_verification.py (31).
+PASS git diff --check.
+  This follow-up changes docs/tags/queue only; no renderer, geometry or collision change.
+  Follow-up base: 423cba7 (merged PR #105).
+PASS check_placement_changes.py --base origin/main for this annotation-only follow-up.
