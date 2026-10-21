@@ -27,9 +27,9 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | --- | --- | --- |
 | Layout | 124 | [topics/layout.md](topics/layout.md) |
 | Levels and slopes | 21 | [topics/levels.md](topics/levels.md) |
-| Facades and roofs | 45 | [topics/facades.md](topics/facades.md) |
+| Facades and roofs | 47 | [topics/facades.md](topics/facades.md) |
 | Materials | 62 | [topics/materials.md](topics/materials.md) |
-| Planting | 49 | [topics/planting.md](topics/planting.md) |
+| Planting | 50 | [topics/planting.md](topics/planting.md) |
 | Signs | 12 | [topics/signage.md](topics/signage.md) |
 | Views | 28 | [topics/view.md](topics/view.md) |
 
