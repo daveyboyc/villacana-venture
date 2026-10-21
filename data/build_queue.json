@@ -645,7 +645,8 @@
    "dependsOn": [
     "middle-pool-south-gate"
    ],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Codex"
   },
   {
    "id": "north-pool-west-frontage",
