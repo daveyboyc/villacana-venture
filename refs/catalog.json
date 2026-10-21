@@ -1367,7 +1367,7 @@
   "useFor": [
    "materials"
   ],
-  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish.",
+  "note": "Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1384,8 +1384,8 @@
    "barraka_boardwalk.json:barraka-beach-seating"
   ],
   "looksAt": [
-   37,
-   126
+   38,
+   106
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
@@ -1393,7 +1393,7 @@
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
-  "headingOff": 76
+  "headingOff": 89
  },
  {
   "id": "IMG_2224.jpg",
@@ -4808,7 +4808,7 @@
    "signage",
    "materials"
   ],
-  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish.",
+  "note": "Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement.",
   "observation": "On Barraka Beach: white planted BARRAKA BEACH sign, sand-filled barbecue boat on the left of the timber boardwalk looking seaward, thatched parasols and loungers. The boat is distinct from the planted sign.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1uZX4ixz0rYBGp-qL1nFeh77ItS_bTBhh/view?usp=drivesdk",
@@ -4827,8 +4827,8 @@
    "barraka_boardwalk.json:barraka-sign-planter"
   ],
   "looksAt": [
-   37,
-   126
+   38,
+   106
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
@@ -4836,7 +4836,7 @@
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
-  "headingOff": 69
+  "headingOff": 59
  },
  {
   "id": "IMG_2347.jpg",
@@ -4853,7 +4853,7 @@
    "materials",
    "layout"
   ],
-  "note": "Full photos IMG_2223/2346/2347 show the same sand-filled cooking boat; IMG_2223 shows logs and smoke. Earlier “boat planter” label was misleading. The boat is absent from current 3D geometry; photo/subject discovery is provided, with dimensions and exact placement still to establish.",
+  "note": "Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement.",
   "observation": "On Barraka Beach: white planted BARRAKA BEACH sign, sand-filled barbecue boat on the left of the timber boardwalk looking seaward, thatched parasols and loungers. The boat is distinct from the planted sign.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1ltk9Ij2tLsPTQS6Klg5SYfqVSLBDOGyc/view?usp=drivesdk",
@@ -4873,16 +4873,15 @@
    "barraka_boardwalk.json:barraka-beach-seating"
   ],
   "looksAt": [
-   37,
-   126
+   38,
+   106
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
-  "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
-  "headingOff": 52
+  "subject": "Sand-filled barbecue boat beside the Barraka boardwalk"
  },
  {
   "id": "IMG_2349.jpg",

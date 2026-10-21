@@ -5,16 +5,16 @@
   "name": "Barraka weathered timber boardwalk",
   "points": [
    [
-    30,
-    121
+    31,
+    101
    ],
    [
-    35,
-    127
+    36,
+    107
    ],
    [
-    42,
-    135
+    43,
+    115
    ]
   ],
   "width": 1.65,
@@ -25,14 +25,14 @@
    "IMG_2223.jpg",
    "IMG_2225.jpg"
   ],
-  "trust": "IMG_2346/2347/2223 support narrow transverse green/brown planks. Independently traced visible aerial boardwalk from native ground.jpg pixels about (1508,914) to (1558,972), using ground.json bounds: roughly [30,121] to [42,135], beside the southeast corner of the unchanged restaurant registry roof. Width 1.65 m and exact end are estimates; aerial and photographs are different dates. IMG_2347 camera pin [35.3,96.5] falls inside registry 6465801UF1366N_part5, about 25 m inland of this independently anchored segment; no surveyed camera correction asserted. Hidden connection to the paseo and changing shoreline end remain unresolved, with no cross-house extension."
+  "trust": "Owner clarification and full originals IMG_2346/2347 put the green aisle on the northeast/left flank of actual Barraka 6364501UF1366S_part8 looking seaward, with planter, cooking boat and hut to its left. Candidate axis moved from the erroneous southwest run by [+1,-20] m. Native Esri pale NE-flank strip around (1510,829) to (1560,886) supplies approximate context, but can mix roof/facade edge and ground. Endpoints and 1.65m width remain estimates with several metres uncertainty; no <=2m placement approval. See docs/reviews/barraka-planter-placement. Raw camera coordinates retained; the old 25m GPS-error inference used the wrong aisle and is retracted. Hidden landward join and exact seaward continuation unresolved."
  },
  "sign": {
   "id": "barraka-sign-planter",
   "name": "BARRAKA BEACH two-tier white planted sign",
   "point": [
-   35,
-   122
+   36,
+   102
   ],
   "width": 2.1,
   "depth": 0.8,
@@ -41,7 +41,7 @@
    "IMG_2346.jpg",
    "IMG_2347.jpg"
   ],
-  "trust": "White painted timber, two planting tiers and black lettering are visible. Position relative to the aisle, dimensions and foliage silhouette are estimated; kept on the photo's left side looking towards the sea."
+  "trust": "White painted timber, two planted tiers, dark BARRAKA BEACH lettering and photo-left placement are supported by originals IMG_2346/2347 and owner clarification. Proposed anchor moved [+1,-20]m with the northeast aisle correction, retaining the local left-side relation; lettered face now looks inland across the shared aisle direction. Anchor, dimensions and foliage silhouette remain estimates, not independently measured <=2m placement. Open discrepancy and independent-review limitations are retained in docs/reviews/barraka-planter-placement."
  },
  "seating": {
   "id": "barraka-beach-seating",

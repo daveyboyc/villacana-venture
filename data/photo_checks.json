@@ -192,6 +192,28 @@
    "by": "Codex; source/overlay review independently by independent_source_review",
    "result": "not-comparable",
    "notes": "Source supports separate lawn arch and adjacent patio door beyond plain-tiled Elena lane. Diagnostic view shows that lane/arch topology approximately but has a different eye height/crop, not a pixel match. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification."
+  },
+  {
+   "task": "barraka-planter-placement",
+   "feature": "barraka_boardwalk.json:barraka-sign-planter",
+   "photo": "IMG_2346.jpg",
+   "before": "docs/reviews/barraka-planter-placement/IMG_2346-before.png",
+   "render": "docs/reviews/barraka-planter-placement/IMG_2346-after.png",
+   "checked": "2026-10-19",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full Drive original inspected. Owner and independent source review confirm NE restaurant flank, planter/cooking boat/hut left of green aisle and boat beyond planter. Draft moves wrong-flank aisle/planter and turns lettering inland. Before/after use identical stored camera and illustrative look-at [38,106], Details enabled; third-person offset, roof/foreground occlusion, unknown calibrated pose and estimated metre coordinates prevent a photographic match. Boat/hut remain unmodelled. No <=2m approval; discrepancy stays open."
+  },
+  {
+   "task": "barraka-planter-placement",
+   "feature": "barraka_boardwalk.json:barraka-sign-planter",
+   "photo": "IMG_2347.jpg",
+   "before": "docs/reviews/barraka-planter-placement/IMG_2347-before.png",
+   "render": "docs/reviews/barraka-planter-placement/IMG_2347-after.png",
+   "checked": "2026-10-19",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full Drive original inspected. Owner and independent source review confirm NE restaurant flank, planter/cooking boat/hut left of green aisle and boat beyond planter. Draft moves wrong-flank aisle/planter and turns lettering inland. Before/after use identical stored camera and illustrative look-at [38,106], Details enabled; third-person offset, roof/foreground occlusion, unknown calibrated pose and estimated metre coordinates prevent a photographic match. Boat/hut remain unmodelled. No <=2m approval; discrepancy stays open."
   }
  ],
  "legacyUnchecked": [

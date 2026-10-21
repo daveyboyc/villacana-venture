@@ -18,11 +18,11 @@ Task `barraka-barbecue-boat` · area **Barraka and the beach** · priority P2 ·
 
 ## Build
 
-Model the confirmed sand-filled barbecue boat visible on the left of the boardwalk looking seaward. First measure its dimensions and placement relative to the independently aerial-anchored boardwalk and sign; add shared map, 3D and collision geometry. The unified map and reference index now locate all three sources and an approximate subject landmark.
+Model the confirmed sand-filled cooking boat visible on the left of the green aisle looking seaward, separate from the planted sign and thatched cooking shelter. First establish measured placement against the actual northeast Barraka flank and inspect docs/reviews/barraka-planter-placement; the earlier southwest aisle anchor was wrong, and the draft NE correction is not a precise survey. Then add shared map, 3D and collision geometry from the full originals.
 
 ## Do not
 
-Do not place the boat at the inland phone GPS pins, call it a planter, or interpret the approximate look-at [37,126] as a surveyed footprint. Keep the boardwalk clear. No smoke or seasonal arrangement extrapolated.
+Do not place the boat at phone GPS, call it a planter, or use old look-at [37,126]. Current [38,106] is an illustrative subject landmark with approximately 4m uncertainty, not a surveyed footprint. Do not identify the ambiguous elongated aerial object as this boat without corroboration. Keep the aisle clear and cooking shelter distinct; no hidden footprint or seasonal smoke arrangement invented.
 
 ## Done when
 
@@ -35,4 +35,4 @@ Do not place the boat at the inland phone GPS pins, call it a planter, or interp
 - [ ] Geometry work declares changed feature IDs in `features`; each has a fresh measured placement packet with independent approval; discrepancies resolved in `data/placement_reviews.json`
 - [ ] Before/after renders from each photo's camera (`scripts/shoot_views.cjs <photos> --task=<id> --as=before|after`), each compared with its photo and recorded in `data/photo_checks.json` (matches, or differs with an open follow-up task); `--check` fails without them
 
-Depends on: `unified-reference-map`
+Depends on: `unified-reference-map`, `barraka-planter-placement`

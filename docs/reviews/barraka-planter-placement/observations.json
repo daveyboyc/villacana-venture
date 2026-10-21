@@ -1,0 +1,133 @@
+{
+  "baseline": "b57cd88843e16f3277bca8aaf10a7b199f3975b1",
+  "frame": "map-metres-east-south",
+  "transform": [
+    0.24015625000000002,
+    0,
+    0,
+    0.24016183035714286,
+    -332.27,
+    -98.38
+  ],
+  "about": "Same fixed aerial frame for both panels. No local warp or fit to the proposal. Roof picks diagnose local registration only; no <=2m placement approval.",
+  "sources": {
+    "aerial": "1de68eeff912ac3de2f4fc411df6bdbfccc74e41054cb06ce2eb2e3fefad5815",
+    "bounds": "751567801539d3b746957cf657426e2ca5138072b1b8c7687365799fbcac3b29"
+  },
+  "landmarks": [
+    {
+      "id": "C1 north",
+      "sourcePixel": [
+        1506,
+        832
+      ],
+      "sourcePoint": [
+        29.405312500000036,
+        101.43464285714288
+      ],
+      "modelPoint": [
+        29.42,
+        101.56
+      ],
+      "distanceM": 0.126,
+      "uncertaintyM": 1.0,
+      "role": "registration diagnostic"
+    },
+    {
+      "id": "C2 east",
+      "sourcePixel": [
+        1544,
+        876
+      ],
+      "sourcePoint": [
+        38.53125000000006,
+        112.00176339285716
+      ],
+      "modelPoint": [
+        38.72,
+        112.21
+      ],
+      "distanceM": 0.281,
+      "uncertaintyM": 1.0,
+      "role": "registration diagnostic"
+    },
+    {
+      "id": "C3 west",
+      "sourcePixel": [
+        1467,
+        866
+      ],
+      "sourcePoint": [
+        20.039218750000032,
+        109.60014508928572
+      ],
+      "modelPoint": [
+        19.85,
+        109.99
+      ],
+      "distanceM": 0.433,
+      "uncertaintyM": 1.0,
+      "role": "registration diagnostic"
+    },
+    {
+      "id": "V1 south, held out",
+      "sourcePixel": [
+        1505,
+        911
+      ],
+      "sourcePoint": [
+        29.165156250000052,
+        120.40742745535715
+      ],
+      "modelPoint": [
+        29.15,
+        120.64
+      ],
+      "distanceM": 0.233,
+      "uncertaintyM": 1.0,
+      "role": "held-out diagnostic"
+    }
+  ],
+  "old": {
+    "points": [
+      [
+        30,
+        121
+      ],
+      [
+        35,
+        127
+      ],
+      [
+        42,
+        135
+      ]
+    ],
+    "sign": [
+      35,
+      122
+    ]
+  },
+  "candidate": {
+    "points": [
+      [
+        31,
+        101
+      ],
+      [
+        36,
+        107
+      ],
+      [
+        43,
+        115
+      ]
+    ],
+    "sign": [
+      36,
+      102
+    ]
+  },
+  "candidateDisplacementM": 20.025,
+  "limits": "Candidate axis identity and planter ground corners unresolved; dimensions retained estimates. Independent source review confirms wrong flank/side arrangement only. No precise boat or hut footprint is inferred."
+}
