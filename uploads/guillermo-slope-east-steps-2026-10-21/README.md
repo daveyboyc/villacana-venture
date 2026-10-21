@@ -12,3 +12,6 @@ Private comparisons for villacana-venture task `guillermo-slope-east-steps`
 - `plan-lane-foot.png`, `plan-garden-fall.png`: plan of the new outlines (turned metres):
   lowered lawn (blue), ground cut (pink), lane centre lines, the falling garden (green)
   with its street-level edges (orange).
+- `gateway.jpg`: IMG_2226 (left part, full size) beside the modelled white wall,
+  arched gateway and railings. `IMG_2226-cmp.jpg`, `IMG_2227-cmp.jpg`: photo, then the
+  before/after renders from their camera pins (not comparable: walk camera).
