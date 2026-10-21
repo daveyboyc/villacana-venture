@@ -44,3 +44,12 @@ Independent source and final-render review:
 Repository photo inventory: no missing primary source records or public pixels.
 Scope does not include searching Drive for a newer batch of original photos.
 Private contact sheet companion: daveyboyc/villacana-reference PR #6.
+
+Follow-up: both lane frontages and window bars (photo mapping only)
+  Annotated IMG_2334 and a source-relative plan added under lane-planters/.
+  IMG_2189 recorded for projecting/bowed grille appearance; gate correspondence unresolved.
+  Independent source reviewer inspected final purple diagram and observation records.
+PASS build_references.py --sheets --check: 172 references, 0 problems.
+PASS test_reference_index.py (7), test_photo_assignment.py (12), test_placement_verification.py (31).
+PASS git diff --check.
+  This follow-up changes docs/tags/queue only; no renderer, geometry or collision change.

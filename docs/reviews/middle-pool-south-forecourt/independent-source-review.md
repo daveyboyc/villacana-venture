@@ -118,3 +118,113 @@ existing photo discrepancy and geometry task open, and withhold placement
 approval. No `placement-verified-by` attestation or approval packet is supplied by
 this review. A follow-up needs independent visible boundary/route evidence and a
 complete measured packet, rather than a new positive diagnostic alone.
+
+## User clarification: planted frontages beyond the gate
+
+Reinspected full-size IMG_2334 after the owner pointed out the planting along
+**both sides of the terracotta street beyond the gateway**. This is an additional
+observed arrangement, distinct from the courtyard-side bench/planter and the
+short hedge fragment added in this draft. Both frontage strips are visible.
+
+- Photo-right: white rendered raised bed faces run against the houses beneath
+  barred openings, with planting above. Their front edges step in/out with the
+  frontage. A recessed doorway/threshold interrupts the bed; another planted
+  white bed continues farther along the lane. These are not one uninterrupted
+  invented enclosure wall.
+- Photo-left: a narrower planted strip follows the lane edge, including clipped
+  shrubs and long strap-like leaves. The low pale edging is visible in fragments.
+  The open leaf masks the nearest part; foliage, the ladder and the cart obscure
+  farther parts. Do not substitute a continuous surveyed wall for that partly
+  visible planting margin.
+
+Approximate source-space traces below use IMG_2334's actual 1200 × 1600 pixels,
+origin top left, +u right and +v down, ordered nearest-to-farthest. They describe
+visible image edges, **not map-metre geometry**. Endpoint picks are uncertain by
+roughly 5–15 pixels, and obscured connections carry larger unbounded uncertainty.
+
+| Trace | Pixel polyline | Interpretation and limit |
+| --- | --- | --- |
+| Right nearest bed face, foot at lane | `[[578,744],[552,713],[525,681],[502,654],[477,615],[449,568],[425,541]]` | Main visible raised frontage bed beyond gate. Nearest end disappears behind open right leaf. Stop at doorway interruption. |
+| Right farther bed face, foot at lane | `[[404,526],[392,515],[379,507],[372,500]]` | Separate fragment beyond recessed door; far end concealed/narrowed by perspective. Do not connect across doorway. |
+| Left planting / tile margin | `[[215,710],[229,662],[240,620],[251,584],[267,549]]` | A rough visible margin, not a fully exposed kerb face. Near continuation behind leaf is hidden; far continuation is occluded by ladder/cart and foliage. |
+
+The source stone-to-terracotta transition is approximately
+`[[211,792],[303,794],[398,782],[484,781],[574,775]]`. Its apparent waviness and
+occlusion should not be promoted to a precise surveyed gate line. The newly
+identified frontage runs lie on the **far/terracotta side** of that transition;
+the courtyard bench and foreground hedge lie on the near/crazy-paving side.
+
+In the model's present gate frame, looking out through this gate is positive
+`along`; photo-right is positive `across` and photo-left negative `across`. Thus
+these new observations would be positive-along frontage fragments, not an
+extension of the negative-along courtyard bench/hedge. Calling the sides west/east
+is conditional on the current estimated gate orientation and identification.
+
+### IMG_2189 correspondence check
+
+Inspected actual full-size IMG_2189, IMG_2340 and IMG_2244, plus a magnified view
+of IMG_2189's distant gateway. IMG_2189 has white beds/planting on both sides of
+its lane, but its distant gateway has the **community notice and two blue dog-rule
+signs on photo-right**, with a large bird-of-paradise and pool view beyond. Those
+specific landmarks strongly associate it with the east-gateway photographs
+IMG_2340/IMG_2244. IMG_2340 also shows the matching curved coping profile and the
+notice/sign grouping; IMG_2244 corroborates the bird-of-paradise, pool and front
+hedge beyond that opening.
+
+The description "flat-headed" is not exact: IMG_2189's distant gateway has a
+shallow raised curved coping over a level opening. Nevertheless, the sign group
+and pool-side landmarks do not establish correspondence to IMG_2334's curved
+double-leaf gateway, courtyard bench and tiled wall. No common bench/tile-panel
+landmark can be identified in IMG_2189, and the existing catalogue's Silvia label
+is not independent visual proof of a reverse shot. A same-gateway claim is
+therefore **unestablished**. The working catalogue may conflate entrances;
+conversely, the present east/south distinction must not be taken as proof that
+the images are different gateways. The available opposite-side views do not
+resolve that identity reliably. Do not mirror IMG_2189's beds onto IMG_2334's map position or
+change camera tags/streets without resolving that identity conflict.
+
+For the owner's requested mapping, IMG_2334 alone is sufficient to annotate the
+two visible lane-side frontage strips and their interruptions in source space.
+It does not supply their concealed ends or exact global lengths.
+
+## User clarification: fixed metal window grilles
+
+Reinspected full IMG_2334 and IMG_2189 after the owner called attention to metal
+bars over the windows. IMG_2334 clearly shows a tall fixed dark iron grille over
+a shuttered opening on the photo-right frontage beyond the gate, directly above
+the raised white planted bed. Its narrow vertical bars and horizontal bands are
+separate from the larger foreground gate leaf, which stands open at the threshold.
+Vegetation partly masks the grille, so all its ends and bar counts are not traced.
+
+IMG_2189 provides clearer style evidence on both lane frontages: projecting,
+partly bowed/cage-like black iron grilles sit outside brown wooden shutters, with
+vertical bars, horizontal bands and some ornamental curved metalwork. Their side
+returns stand proud of the wall/opening. They are fixed security/window grilles;
+there is no supported balcony floor/platform or hinged street gate at these
+window positions. Do not substitute a flat balcony rail or repeated open gate
+leaf for that architectural feature.
+
+IMG_2189 can support this grille **style**, and the fact that such grilles occur
+on both of its photographed frontages. The unresolved gateway correspondence
+prevents using it to assign two exact grille positions or symmetric spacing to
+IMG_2334's world location. IMG_2334 directly supports its visible photo-right
+grille; obscured opposite-side windows remain untraced.
+
+### Final source-relative diagram review
+
+Inspected the updated `lane-planters/lane-planters-map.png` and its
+`observations.json` `windowGrilles` records. The purple annotation at source pixel
+`[507,393]` points to the actual photo-right window grille behind the foreground
+gate leaf. Its schematic marker is above the right frontage bed and attached to
+the frontage, rather than drawn as a new gate across the walkable lane. The two
+bed treatments, observed doorway interruption and distinction between lane and
+stone forecourt remain legible. No mirrored left-hand grille or exact world
+position is asserted. IMG_2189 is explicitly a construction/appearance reference.
+
+The schematic remains a source-relative, unscaled account of the observed
+arrangement. Its parallel walls, grille projection, repeated planting symbols and
+bed lengths are diagram conventions, not traced property geometry or measured
+architectural dimensions. The JSON correctly leaves world placement unavailable
+and distinguishes direct grille evidence from the style-only reference. This
+annotation is suitable for the owner's review and a future bounded build brief;
+it supplies no placement approval and makes no change to the current 3D scene.
