@@ -332,13 +332,22 @@
           194.01
         ],
         [
+          -37.56,
+          135.61
+        ],
+        [
           -20.47,
           125.72
         ]
       ],
       "surface": "terracotta",
       "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
-      "referenceId": "street-Calle Jorge"
+      "referenceId": "street-Calle Jorge",
+      "heights": [
+        0.27,
+        0.27,
+        -1.507
+      ]
     },
     {
       "id": "teodoro-rojo",
@@ -371,6 +380,10 @@
           53.47
         ],
         [
+          -32.65,
+          105.71
+        ],
+        [
           -14.33,
           135.8
         ],
@@ -381,7 +394,13 @@
       ],
       "surface": "terracotta",
       "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
-      "referenceId": "street-Calle Guillermo"
+      "referenceId": "street-Calle Guillermo",
+      "heights": [
+        0.27,
+        0.27,
+        -2.402,
+        -2.73
+      ]
     },
     {
       "id": "eva-west-footpath",

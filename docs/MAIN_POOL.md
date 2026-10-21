@@ -100,3 +100,47 @@ two yuccas and a bird-of-paradise, and a tall palm stands on the lawn at the
 foot (`data/objects.json`, ids `enrique-steps-1` to `-4`). Shapes and positions
 are approximate. The bed wall does not block the player. Plants and the hedge
 show only with "Show details" on.
+
+## Calle Guillermo runs down to the paseo; the east steps (2026-10-21)
+
+Dave's Apple Maps 3D screenshots (private `villacana-reference`, apple-maps/10 to 13)
+showed two things the model had wrong.
+
+- **Calle Guillermo is a slope, not a lane stopping on a bank.** The lane runs down
+  continuously from beside the steps to Enrique's to the paseo, between the house
+  gardens and a long white wall on the lawn side whose lawn face gets lower towards
+  the sea. This replaces "Calle Guillermo now ends at the top of that bank" above.
+  The lane now falls evenly from street level at the foot of the Enrique's steps
+  (turned z 80.7) to paseo level at its end: 3 m over 39.5 m, about 7.6 %. Its heights
+  are road `heights` in `data/street_layout.json`, as for the Cervantes ramp. A
+  0.5 m white parapet stands on the lawn side; on the garden side a white face holds
+  the street-level gardens back. Calle Jorge joins part-way down; no photo shows it,
+  so its last 19.7 m ramps at 9 % to meet Guillermo about 1.8 m below street level,
+  with no step at the junction.
+- **The kiosk at the foot** (registry part `6364501UF1366S_part2`) stands on the
+  lowered lawn, not 3 m up on street-level ground, and the old street-level channel
+  past it to the beach gate is lowered with the lawn.
+- **The east steps** are a narrow (1.1 m) flight from an opening in the white wall
+  along Calle Pintor Picasso, between the curved 90 Miles terrace and the long white
+  building on the east side of the lawn, down to the paving north-east of the
+  toddler pool. They replace the wide flight off the restaurant roof; the lobe's
+  facade returns to its registry line where that flight was cut into it.
+- **The corner garden and the east end of the paseo wall.** On a render of the corner,
+  Dave said the sandstone wall is not that tall (about 3 m in the model). The garden
+  behind the wall's east end now falls from street level at the house fronts to 1 m
+  above the paseo at the wall (`levels.gardenFall`), so the wall stays about 1 m all
+  along, as IMG_2227 suggested (issue #40).
+
+`data/guillermo_slope.json` holds the inputs, evidence and trust;
+`scripts/build_lowered_lanes.py` derived the outlines from it once (needs shapely):
+`levels.lowerArea` (now with the lawn strip beside the lane, the kiosk and the old
+channel, never a lane's centre line), `surfaceRing`, `terraceRing`, `steps`,
+`gardenFall` and `sheetCut`, the hole cut in the street-level ground for the deck,
+the lowered lanes and the falling garden. `src/lowered-lanes.ts` draws the lane walls;
+`scripts/check_lowered_lanes.py` checks them.
+
+All heights here are estimates: Apple's mesh shows which way the ground falls, not
+how far. The slope's start, the parapet, Jorge's ramp, the 1 m wall and the garden's
+fall are not measured, and the houses beside the lowered lanes stay at street level,
+so the lane passes the last house before the kiosk about 2.4 m below it. Placement
+of the changed streets and kiosk is unapproved until an independent review.

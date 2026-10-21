@@ -5889,6 +5889,83 @@
   ]
  },
  {
+  "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+  "title": "Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west",
+  "shows": [
+   "main-pool",
+   "seaward-lanes",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "sourceRevision": null,
+  "note": "Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png",
+  "title": "Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo",
+  "shows": [
+   "main-pool",
+   "seaward-lanes",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "sourceRevision": null,
+  "note": "Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png",
+  "title": "Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps",
+  "shows": [
+   "main-pool",
+   "picasso"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "sourceRevision": null,
+  "note": "Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+  "title": "Apple Maps 3D: main pool terrace curve with the west and east steps",
+  "shows": [
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels"
+  ],
+  "sourceRevision": null,
+  "note": "Dave, 2026-10-21. Nearly top-down. West: terracotta steps between the Guillermo-side wall and the terrace's curved planter wall. East: a dark narrow slot between the 90 Miles lobe and the Picasso boundary wall, the steps in shadow.",
+  "citedBy": []
+ },
+ {
   "id": "ref:google-maps/01-street-map-lane-names.png",
   "kind": "map-screenshot",
   "path": "villacana-reference/google-maps/01-street-map-lane-names.png",

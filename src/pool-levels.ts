@@ -13,10 +13,32 @@ export const POOL_TERRACE_ID = levels.terraceId;
 export const poolTerraceRing = levels.terraceRing.map(poolLevelPoint);
 export const lowerPoolHoles = (levels.lowerHoles as number[][][]).map(r=>r.map(poolLevelPoint));
 export const lowerPoolRing = levels.lowerArea.map(poolLevelPoint);
+/** The hole in the street-level ground: the lowered area and the lowered lanes beside it. */
+export const sheetCutRing = levels.sheetCut.map(poolLevelPoint);
 export const poolAccess = [
   { id:"main-pool-steps",name:"Steps to big pool",...levels.steps,kind:"steps" },
   { id:"main-pool-ramp",name:"Steps to Enrique’s",...levels.enriqueSteps,kind:"steps" },
 ].map(a=>({...a,points:a.points.map(poolLevelPoint)}));
+
+/**
+ * The garden behind the east end of the paseo wall, falling from street level at the house fronts
+ * to `wallHeight` above the paseo at the wall (data/guillermo_slope.json gardenFall).
+ */
+const garden = levels.gardenFall;
+export const gardenFallRing = garden.ring.map(poolLevelPoint);
+const gardenFace = garden.face.map(poolLevelPoint), gardenInland = garden.inland.map(e=>e.map(poolLevelPoint));
+const paseoAt = (tx:number):number => {
+  const profile = levels.seafront.profile;
+  if (tx <= profile[0][0]) return profile[0][1];
+  for (let i = 1; i < profile.length; i++) if (tx <= profile[i][0]) return profile[i-1][1] + (profile[i][1]-profile[i-1][1]) * (tx-profile[i-1][0]) / (profile[i][0]-profile[i-1][0]);
+  return profile[profile.length-1][1];
+};
+export function gardenFallY(x:number,z:number):number {
+  const tx = x*Math.cos(angle) - z*Math.sin(angle);
+  const toFace = Math.min(...gardenFace.slice(1).map((b,i)=>closestOnSegment(x,z,...gardenFace[i],...b).d));
+  const toInland = Math.min(...gardenInland.map(([a,b])=>closestOnSegment(x,z,...a,...b).d));
+  return Math.min(0, paseoAt(tx) + garden.wallHeight) * toInland / ((toInland + toFace) || 1);
+}
 
 /** The access meshes and movement share one source of elevations. */
 export function lowerTerrainY(_x:number,_z:number):number {
@@ -39,6 +61,7 @@ export function poolGroundY(x:number,z:number):number {
       return LOWER_POOL_Y*t;
     }
   }
+  if(pointInRing(x,z,gardenFallRing)) return gardenFallY(x,z);
   if(!pointInRing(x,z,lowerPoolRing)||lowerPoolHoles.some(r=>pointInRing(x,z,r))) return 0;
   return lowerTerrainY(x,z);
 }
@@ -141,15 +164,46 @@ export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolea
 
 /** Subdivide the lower lawn so its final grading joins the existing paseo terrain. */
 export function lowerPoolSurface(holes:Vec2[][]):THREE.BufferGeometry {
-  const shape=new THREE.Shape(levels.surfaceRing.map(poolLevelPoint).map(([x,z])=>new THREE.Vector2(x,-z)));
-  [...holes,...(levels.surfaceHoles as number[][][]).map(r=>r.map(poolLevelPoint))].forEach(r=>shape.holes.push(new THREE.Path(r.map(([x,z])=>new THREE.Vector2(x,-z)))));
+  return loweredSurface(levels.surfaceRing.map(poolLevelPoint),[...holes,...(levels.surfaceHoles as number[][][]).map(r=>r.map(poolLevelPoint))],lowerTerrainY);
+}
+
+/**
+ * The falling garden's ground: a grid of square cells clipped to its outline. Neighbouring cells
+ * share every vertex, so the slope has no hairline seams (which the lawn's split triangles can leave).
+ */
+export function gardenFallSurface(cell=1):THREE.BufferGeometry {
+  const ring=gardenFallRing,xs=ring.map(p=>p[0]),zs=ring.map(p=>p[1]),out:number[]=[];
+  // Keep the part of a polygon on one side of an axis line (Sutherland-Hodgman; the cell is convex).
+  const clip=(poly:Vec2[],axis:0|1,at:number,keepBelow:boolean):Vec2[]=>{
+    const inside=(p:Vec2)=>keepBelow?p[axis]<=at:p[axis]>=at,result:Vec2[]=[];
+    poly.forEach((p,i)=>{const q=poly[(i+1)%poly.length];
+      if(inside(p))result.push(p);
+      if(inside(p)!==inside(q)){const t=(at-p[axis])/(q[axis]-p[axis]);result.push([p[0]+(q[0]-p[0])*t,p[1]+(q[1]-p[1])*t]);}});
+    return result;
+  };
+  for(let x=Math.floor(Math.min(...xs));x<Math.max(...xs);x+=cell) for(let z=Math.floor(Math.min(...zs));z<Math.max(...zs);z+=cell) {
+    const piece=clip(clip(clip(clip(ring,0,x,false),0,x+cell,true),1,z,false),1,z+cell,true);
+    if(piece.length<3) continue;
+    const contour=piece.map(([px,pz])=>new THREE.Vector2(px,pz));
+    for(const face of THREE.ShapeUtils.triangulateShape(contour,[])) {
+      // Wound so the face looks up once laid flat (x east, z south).
+      for(const k of [face[0],face[2],face[1]]) {const [px,pz]=piece[k];out.push(px,gardenFallY(px,pz),pz);}
+    }
+  }
+  const geometry=new THREE.BufferGeometry();geometry.setAttribute("position",new THREE.Float32BufferAttribute(out,3));geometry.computeVertexNormals();
+  return geometry;
+}
+
+function loweredSurface(ring:Vec2[],holes:Vec2[][],heightAt:(x:number,z:number)=>number):THREE.BufferGeometry {
+  const shape=new THREE.Shape(ring.map(([x,z])=>new THREE.Vector2(x,-z)));
+  holes.forEach(r=>shape.holes.push(new THREE.Path(r.map(([x,z])=>new THREE.Vector2(x,-z)))));
   const base=new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2).toNonIndexed();
   const pos=base.getAttribute("position"),out:number[]=[];
   const triangle=(a:Vec2,b:Vec2,c:Vec2,depth:number)=>{
     if(depth && Math.max(Math.hypot(a[0]-b[0],a[1]-b[1]),Math.hypot(b[0]-c[0],b[1]-c[1]),Math.hypot(c[0]-a[0],c[1]-a[1]))>2) {
       const ab:Vec2=[(a[0]+b[0])/2,(a[1]+b[1])/2],bc:Vec2=[(b[0]+c[0])/2,(b[1]+c[1])/2],ca:Vec2=[(c[0]+a[0])/2,(c[1]+a[1])/2];
       triangle(a,ab,ca,depth-1);triangle(ab,b,bc,depth-1);triangle(ca,bc,c,depth-1);triangle(ab,bc,ca,depth-1);
-    } else for(const [x,z] of [a,b,c]) out.push(x,lowerTerrainY(x,z),z);
+    } else for(const [x,z] of [a,b,c]) out.push(x,heightAt(x,z),z);
   };
   for(let i=0;i<pos.count;i+=3) triangle([pos.getX(i),pos.getZ(i)],[pos.getX(i+1),pos.getZ(i+1)],[pos.getX(i+2),pos.getZ(i+2)],7);
   base.dispose();const result=new THREE.BufferGeometry();result.setAttribute("position",new THREE.Float32BufferAttribute(out,3));result.computeVertexNormals();return result;

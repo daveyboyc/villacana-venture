@@ -7,6 +7,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P1 | `barraka-planter-placement` [#102](https://github.com/daveyboyc/villacana-venture/issues/102) | Correct reported Barraka planter placement against registered source evidence (after placement-verification-gate) | in-progress · Codex · placement: not-verified | [IMG_2346](../public/photos-ref/IMG_2346.jpg), [IMG_2347](../public/photos-ref/IMG_2347.jpg) |
+| P1 | `guillermo-slope-east-steps` | Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall | in-progress · Claude · placement: not-verified | `apple-maps/11-3d-guillermo-slope-to-paseo.png`, `apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`, `apple-maps/12-3d-main-pool-east-steps-picasso.png`, `apple-maps/13-3d-main-pool-terrace-both-stairs.png` |
 | P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open · placement: not-applicable | [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2205](../public/photos-ref/IMG_2205.jpg), [IMG_2206](../public/photos-ref/IMG_2206.jpg), [IMG_2207](../public/photos-ref/IMG_2207.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg), [IMG_2363](../public/photos-ref/IMG_2363.jpg) |
 | P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map, barraka-planter-placement) | open · placement: not-verified | [IMG_2223](../public/photos-ref/IMG_2223.jpg), [IMG_2346](../public/photos-ref/IMG_2346.jpg), [IMG_2347](../public/photos-ref/IMG_2347.jpg) |
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open · placement: not-verified | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
@@ -77,6 +78,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 - **North pool** ([brief](areas/north-pool.md)): `north-pool-unresolved-plan`, `north-pool-alignment-audit`, `north-pool-west-frontage`, `raised-terraces`, `north-pool-garden-walls`
 - **Middle pool** ([brief](areas/middle-pool.md)): `middle-pool-south-forecourt`, `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
 - **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
+- **Main pool** ([brief](areas/main-pool.md)): `guillermo-slope-east-steps`
 - **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
 - **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-east-south-patios`, `cervantes-north-patios`, `cervantes-steps-treads`, `junction-lawns`
 - **Pintor Picasso and the car park** ([brief](areas/picasso.md)): `picasso-service-road`

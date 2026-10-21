@@ -35,7 +35,7 @@ const path = require("node:path");
       { Solids, CoastField },
       { barrierRings, referenceGroundHeight, addBoundaryReference },
       { cervantesPatioWallRings },
-      { poolGroundY, poolTerraceRing, POOL_TERRACE_ID },
+      { poolGroundY, poolTerraceRing, POOL_TERRACE_ID, poolAccess, accessWallRings, LOWER_POOL_Y },
       { siteY, drapeScene, refine },
       { coastalWallRings, coastalAccess, coastalGate, GatedSolids },
       { protectedRoutes, routeClearance },
@@ -244,6 +244,26 @@ const path = require("node:path");
     for (const pool of s.pools) {
       const [cx, cz] = pool.ring.reduce((a, q) => [a[0] + q[0] / pool.ring.length, a[1] + q[1] / pool.ring.length], [0, 0]);
       if (raisedTerraceGroundOffset(cx, cz) !== 0 || pool.ring.some((q) => raisedTerraceGroundOffset(...q) !== 0)) throw Error("A raised terrace lifts the " + pool.id + " pool");
+    }
+    // Both flights between the big-pool deck and street level, down and back up, between their side walls:
+    // the narrow east steps from the Picasso side and the steps to Enrique's.
+    {
+      const saved = world.solids;
+      world.solids = new Solids(
+        [...buildings.map((b) => b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring), ...accessWallRings()],
+        Object.fromEntries(buildings.flatMap((b, i) => b.id === POOL_TERRACE_ID ? [[i, -0.5]] : [])),
+      );
+      for (const flight of poolAccess) {
+        const [a, b] = [flight.points[0], flight.points[flight.points.length - 1]], q = flight.points[flight.points.length - 2];
+        const u = [(b[0] - q[0]) / Math.hypot(b[0] - q[0], b[1] - q[1]), (b[1] - q[1]) / Math.hypot(b[0] - q[0], b[1] - q[1])];
+        const deck = [b[0] + u[0] * 1.2, b[1] + u[1] * 1.2];
+        walk([a, ...flight.points.slice(1), deck]);
+        const at = () => world.groundHeight(player.x, player.z);
+        if (Math.abs(at() - LOWER_POOL_Y - 0.06) > 0.05) throw Error(flight.id + ": did not reach the deck: " + at());
+        walk([deck, ...[...flight.points].reverse()]);
+        if (Math.abs(at() - 0.06) > 0.05) throw Error(flight.id + ": did not climb back to street level: " + at());
+      }
+      world.solids = saved;
     }
     // Issue 31: up the Calle Eva ramp from the middle pool, through the open south-west gateway and back (the steps are walked above).
     {

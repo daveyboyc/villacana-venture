@@ -37,7 +37,8 @@ import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
 import { addRaisedGround, drapeScene, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
-import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
+import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
+import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -67,8 +68,10 @@ const PASSAGE_HEADROOM = 2.6;
 
 /** Heights seaward of the paseo, when this view shows the sea. */
 let seaside: Seaside | undefined;
+/** Calle Guillermo and the foot of Calle Jorge, cut below street level (src/lowered-lanes.ts). */
+let lowered: ReturnType<typeof loweredRoads> = [];
 /** Ground height for anything standing on the ground. */
-const groundY = (x: number, z: number): number => seaside?.inZone(x, z) ? seaside.y(x, z) : poolGroundY(x, z);
+const groundY = (x: number, z: number): number => seaside?.inZone(x, z) ? seaside.y(x, z) : poolGroundY(x, z) + laneDrop(lowered, x, z);
 /** The same, with the lie of the land added: for things placed after the scene is built. */
 const liveGroundY = (x: number, z: number): number => groundY(x, z) + (seaside?.inZone(x, z) ? 0 : siteY(x, z));
 
@@ -81,6 +84,7 @@ async function boot(): Promise<void> {
   const detailLink=document.querySelector<HTMLAnchorElement>("#layout-details")!;
   const detailUrl=new URL(location.href);if(layoutOnly)detailUrl.searchParams.set("details","1");else detailUrl.searchParams.delete("details");detailLink.href=detailUrl.pathname+detailUrl.search;detailLink.textContent=layoutOnly?"Layout · show details":"Details · show layout";
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
+  if (skeleton.boundaryReference) lowered = loweredRoads(skeleton.boundaryReference);
   suppressInEvaLawn(skeleton);
   suppressInMiddlePoolReview(skeleton); // the traced middle pool gateway and planter replace generated walls there
   suppressInRaisedTerraces(skeleton); // traced raised terraces replace generated walls there
@@ -147,10 +151,11 @@ async function boot(): Promise<void> {
   if ((mainPool || shown.some((p) => p.id === "south")) && skeleton.seafront) seaside = makeSeaside(skeleton.seafront, skeleton.viewRotation);
   await addGround(scene, skeleton, centre, poolRings);
   addFrontageDivisions(scene);
-  if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, poolGroundY);
+  if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => poolGroundY(x, z) + laneDrop(lowered, x, z));
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
-  if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z));
+  // No deck wall where the lawn meets the paseo, or along a lowered lane (its own walls stand there).
+  if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !b.passage && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight);addPorches(scene, houses, skeleton.floorHeight);}
@@ -183,7 +188,7 @@ async function boot(): Promise<void> {
   addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
   addMiddlePool(scene);
   addMiddleSouthGate(scene);
@@ -561,7 +566,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
   const sheet = shapeOf(
     [[centre.x - span, centre.z - span], [centre.x + span, centre.z - span], [centre.x + span, centre.z + span], [centre.x - span, centre.z + span]],
-    showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),lowerPoolRing]:pools,
+    showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:pools,
   );
   const geometry = new THREE.ShapeGeometry(sheet).rotateX(-Math.PI / 2);
   if(showLowerDeck) for(const ring of lowerPoolHoles) {const island=new THREE.Mesh(new THREE.ShapeGeometry(shapeOf(ring)).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:"#c78667",roughness:0.95}));island.userData.referenceSurface=true;scene.add(island);}
@@ -576,6 +581,11 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   for(let i=0;i<lowerAt.count;i++) lowerUv.push((lowerAt.getX(i)-(centre.x-span))/(span*2),1-(lowerAt.getZ(i)-(centre.z-span))/(span*2));
   lowerGeometry.setAttribute("uv",new THREE.Float32BufferAttribute(lowerUv,2));
   const lowerGround=new THREE.Mesh(lowerGeometry,material);lowerGround.receiveShadow=true;lowerGround.userData.referenceSurface=true;scene.add(lowerGround);
+  // The garden falling to the low end of the paseo wall, cut out of the sheet with the lowered lawn.
+  const gardenGeometry=gardenFallSurface(),gardenUv:number[]=[],gardenAt=gardenGeometry.getAttribute("position");
+  for(let i=0;i<gardenAt.count;i++) gardenUv.push((gardenAt.getX(i)-(centre.x-span))/(span*2),1-(gardenAt.getZ(i)-(centre.z-span))/(span*2));
+  gardenGeometry.setAttribute("uv",new THREE.Float32BufferAttribute(gardenUv,2));
+  const gardenGround=new THREE.Mesh(gardenGeometry,material);gardenGround.receiveShadow=true;gardenGround.userData.referenceSurface=true;scene.add(gardenGround);
   }
   const ground = new THREE.Mesh(geometry, material);
   ground.receiveShadow = true;
@@ -658,6 +668,8 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     const mesh = new THREE.Mesh(geometry, [cap, wall]);
     mesh.position.y = lift;
     if(b.id===POOL_TERRACE_ID) {mesh.position.y=LOWER_POOL_Y;mesh.userData.referenceSurface=true;}
+    // The kiosk at the foot of Calle Guillermo stands on the lowered lawn.
+    else if(pointInRing(c.x,c.z,lowerPoolRing)) mesh.position.y=LOWER_POOL_Y;
     // A building out on the sand stands at the beach's height.
     else if(seaside?.inZone(c.x,c.z)) mesh.position.y=seaside.y(c.x,c.z);
     mesh.castShadow = mesh.receiveShadow = true;

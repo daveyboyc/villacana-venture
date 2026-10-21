@@ -90,6 +90,16 @@ def site_y(p):
     return west['rise'] * max(0, min(1, (edge - tx) / west['run'])) * seaward
 
 
+def garden_y(p):
+    """gardenFallY from src/pool-levels.ts: the garden behind the east end falls to wallHeight above the paseo."""
+    fall, tp = levels['gardenFall'], turned(p)
+    if not inside(*tp, fall['ring']):
+        return 0
+    to_face = to_line(tp, fall['face'])
+    to_inland = min(distance(tp, a, b) for a, b in fall['inland'])
+    return min(0, paseo_height(tp[0]) + fall['wallHeight']) * to_inland / ((to_inland + to_face) or 1)
+
+
 wall, edge, surface = d['wall'], d['edge'], d['surface']
 for f in (wall, edge, surface):
     assert f['evidence'] and all(p in photos for p in f['evidence']), f"{f.get('id', 'surface')} cites a photo that is not indexed"
@@ -144,13 +154,16 @@ assert to_paseo(face[0])[1] > to_paseo(gate['route']['points'][-1])[1] + 4, 'Wal
 assert {o['id'] for o in d['openings']} == {'dali-coastal-access', 'guillermo', 'main-pool-lawn'}
 
 # Heights follow the levels: ground behind minus paseo in front. By the south lawn (IMG_2349, IMG_2350)
-# that must be about 1 m, and lower towards the Dalí end (IMG_2352, IMG_2354).
+# that must be about 1 m, and lower towards the Dalí end (IMG_2352, IMG_2354). Towards the east end the
+# garden behind falls with the paseo, so the wall stays about 1 m there too (Dave, 2026-10-21; IMG_2227).
 heights = []
 for p, q in zip(face, back):
-    inland = site_y(q)
-    assert abs(inland) < 0.05, f'Ground behind the wall is not at street level at {q}'
+    inland = site_y(q) + garden_y(q)
+    assert abs(site_y(q)) < 0.05, f'Ground behind the wall is not at street level at {q}'
     heights.append(inland - paseo_height(turned(p)[0]))
-assert all(0.3 <= h <= 3.05 for h in heights), f'Wall height outside 0.3-3 m: {min(heights):.2f}-{max(heights):.2f}'
+assert all(0.3 <= h <= 1.3 for h in heights), f'Wall height outside 0.3-1.3 m: {min(heights):.2f}-{max(heights):.2f}'
+east = [h for p, h in zip(face, heights) if turned(p)[0] > -100]
+assert east and all(h <= levels['gardenFall']['wallHeight'] + 0.3 for h in east), 'Wall grows tall at its east end (issue #40)'
 south = next(p for p in s['pools'] if p['id'] == 'south')
 sx = [turned(p)[0] for p in south['ring']]
 by_lawn = [h for p, h in zip(face, heights) if min(sx) - 5 <= turned(p)[0] <= max(sx) + 5]
@@ -162,4 +175,4 @@ fence = offset(face, wall['fence']['setback'])
 shared = [(a, b) for a, b in zip(s['seaWall']['points'], s['seaWall']['points'][1:]) if to_line(a, fence) < 1.2 and to_line(b, fence) < 1.2]
 assert len(shared) >= 8, 'Sea wall and paseo wall no longer follow the same line'
 print(f"Paseo wall: {len(face)} points, {sum(math.dist(a, b) for a, b in zip(face, face[1:])):.0f} m, photo-linked; paseo, lanes and gate connector clear; houses and pools untouched; "
-      f"openings kept; heights {min(heights):.1f}-{max(heights):.1f} m, about 1 m by the south lawn PASS")
+      f"openings kept; heights {min(heights):.1f}-{max(heights):.1f} m, about 1 m by the south lawn and at the east end PASS")
