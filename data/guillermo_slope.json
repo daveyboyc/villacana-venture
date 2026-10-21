@@ -5,18 +5,20 @@
     "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
     "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png"
   ],
-  "trust": "From Apple Maps 3D screenshots (Dave, 2026-10-21): the lane falls continuously from beside the steps to Enrique's down to the paseo, the white wall between it and the lawn gets lower towards the sea, Calle Jorge joins part-way down with no steps seen, and the kiosk at the foot stands at lawn level. Apple's mesh shows which way the ground falls, not heights. Estimated: the slope starts at the foot of the Enrique's steps (turned z 80.7) and falls evenly to paseo level (-3 m, Dave's pool level) at the lane's end, about 7.6 %; Jorge's last stretch ramps at 9 % to meet it, about 1.8 m below street level at the junction (no photo shows Jorge); the 0.5 m parapet on the lawn side is a guess. Houses stay at street level; the gardens beside the lanes do too, except the garden behind the east end of the paseo wall (gardenFall).",
+  "trust": "From Apple Maps 3D screenshots (Dave, 2026-10-21): the lane runs down to the paseo between the house gardens and a white wall on the lawn side, and the kiosk at its foot stands at lawn level; Apple's mesh shows which way the ground falls, not heights. Dave then said Calle Jorge meets Guillermo on the level and the ramp starts just past it (slopeEvidence). The 0.5 m parapet on the lawn side is a guess. Houses stay at street level; the gardens beside the lane do too, except the garden behind the east end of the paseo wall (gardenFall). Heights are estimates, not measured.",
   "guillermo": {
     "road": "guillermo",
     "slopeStart": [
-      -75.69,
-      80.7
+      -73.45,
+      104.68
     ],
-    "foot": -3
+    "foot": -3,
+    "maxGrade": 0.2,
+    "slopeEvidence": "Dave, 2026-10-21: Calle Jorge meets Guillermo on the level and the ramp starts just past it, sloping down to the sea. The slope starts 0.66 m seaward of Jorge's centre line (clear of Jorge's paving) and falls 3 m (Dave's pool level) over 15.5 m to the lane's foot, about 19 %; it then runs on level through the gateway to the paseo. The 3 m and the grade follow from that; neither is measured."
   },
   "jorge": {
     "road": "jorge",
-    "slope": 0.09
+    "level": true
   },
   "corridorHalfWidth": 0.66,
   "lawnReach": 1.3,

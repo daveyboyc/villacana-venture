@@ -162,8 +162,8 @@
    "notes": [
     "Villacana has one large main pool with a round toddler pool beside it (Dave, 2026-10-11).",
     "Apple 3D screenshots (Dave, 2026-10-21, apple-maps/10-13): Calle Guillermo runs down beside the lawn to the paseo, the kiosk at its foot is at lawn level, and the east steps are a narrow flight from the Picasso wall between the 90 Miles terrace and the east building. Built by task guillermo-slope-east-steps (docs/MAIN_POOL.md); heights estimated.",
-    "Open: does Calle Jorge slope down to meet Guillermo (modelled as a 9 % ramp, no photo), and do the houses beside the lower lane stand lower than the street-level houses further up?",
-    "Dave, 2026-10-21: a fence and a coastal gate separate Villacana from Barraka beach in front of the lawn. IMG_2226 shows the white wall, a round-arched gateway at the foot of Calle Guillermo, a short wall and white railings along the lawn; built as data/seafront_fence.json (heights by eye, gateway left open)."
+    "Dave, 2026-10-21: a fence and a coastal gate separate Villacana from Barraka beach in front of the lawn. IMG_2226 shows the white wall, a round-arched gateway at the foot of Calle Guillermo, a short wall and white railings along the lawn; built as data/seafront_fence.json (heights by eye, gateway left open).",
+    "Dave, 2026-10-21: Calle Jorge meets Guillermo on the level; Guillermo's ramp starts just past the junction and slopes down to the paseo (modelled 3 m over 15.5 m, about 19 %). Open: do the houses beside the ramp stand lower than street level?"
    ]
   },
   {

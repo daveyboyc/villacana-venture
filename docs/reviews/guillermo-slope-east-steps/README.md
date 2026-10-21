@@ -15,7 +15,7 @@ match; they show order, sides and which way the ground falls.
 | --- | --- |
 | `guillermo-foot-before.png` / `-after.png` | The lane used to stop on a 3 m bank at the paseo with the kiosk standing on street-level ground; it now runs down to the paseo and the kiosk stands on the lawn. |
 | `east-steps-before.png` / `-after.png` | A 2.6 m flight off the restaurant roof becomes a 1.1 m flight from the Picasso side, between the 90 Miles terrace and the east building. |
-| `west-steps-before.png` / `-after.png` | The steps to Enrique's are unchanged; the lane beside them now falls away towards the sea. |
+| `west-steps-before.png` / `-after.png` | The steps to Enrique's are unchanged. |
 | `corner-wall-before.png` / `-after.png` | The garden behind the paseo wall's east end falls, so the sandstone wall stays about 1 m. |
 | `guillermo-lane-after.png` | Looking down the lowered lane: retaining face on the garden side, parapet on the lawn side. |
 | `gateway-after.png`, `lawn-railing-after.png` | The white wall, arched gateway at the lane's foot and railings along the lawn (IMG_2226), with the lane running on through the gateway to the paseo. |
@@ -23,8 +23,9 @@ match; they show order, sides and which way the ground falls.
 
 What each source supports:
 
-- apple-maps/11 and 10: the lane's continuous fall, the lawn-side wall getting lower
-  towards the sea, Jorge joining part-way down, the kiosk at lawn level. Not heights.
+- apple-maps/11 and 10: the lane falling to the paseo, the lawn-side wall getting lower
+  towards the sea, the kiosk at lawn level. Not heights.
+- Dave's remark that Jorge meets Guillermo on the level and the ramp starts just past it.
 - apple-maps/12 and 13: the narrow east flight between the terrace lobe and the
   east building, from an opening in the Picasso-side wall. Its line was read off
   the georeferenced aerial (`public/map/ground.jpg`) to about 1 m.
@@ -36,7 +37,7 @@ What each source supports:
 
 No ground photo shows the slope of Calle Guillermo itself.
 
-Not supported by any source: Calle Jorge's level (modelled as a 9 % ramp), where
-Guillermo's slope starts, the parapet height, and the shape of the garden's fall.
-Placement of `street:guillermo`, `street:jorge` and `building:6364501UF1366S_part2`
+Not supported by any source: the ramp's exact start and grade (3 m over 15.5 m follows
+from Dave's description and pool level), the parapet height, and the shape of the
+garden's fall. Placement of `street:guillermo` and `building:6364501UF1366S_part2`
 is unapproved: no measured packet or independent review yet.

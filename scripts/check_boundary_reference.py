@@ -49,7 +49,8 @@ for road in ref['roads']:
   assert len(road['heights']) == len(road['points'])
   assert all(math.isfinite(h) for h in road['heights'])
   for a,b,ha,hb in zip(road['points'],road['points'][1:],road['heights'],road['heights'][1:]):
-   assert abs(ha-hb)/math.dist(a,b)<0.1, 'Implausibly steep pedestrian slope'
+   # A lane may declare a steeper grade where a source shows a steep ramp (Calle Guillermo, data/guillermo_slope.json).
+   assert abs(ha-hb)/math.dist(a,b)<road.get('maxGrade',0.1)+1e-6, 'Implausibly steep pedestrian slope'
 for ramp in ref.get('ramps',[]):
  road=next(r for r in ref['roads'] if r['id']=='cervantes')
  assert len(ramp['points'])==len(ramp['heights'])==2

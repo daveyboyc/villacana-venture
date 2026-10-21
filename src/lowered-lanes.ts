@@ -10,7 +10,7 @@ const STREET = 0.27;
 /** Half the tiled lane and its pale edging: the corridor cut out of the street-level ground. */
 const edgeOffset = (road: Road): number => (road.width + 0.12) / 2;
 
-/** Lanes that dip below street level somewhere (Calle Guillermo and the foot of Calle Jorge). */
+/** Lanes that dip below street level somewhere (the ramp at the foot of Calle Guillermo). */
 export const loweredRoads = (reference: BoundaryReference): Road[] => reference.roads.filter((r) => r.heights?.some((h) => h < STREET - 0.01));
 
 /** How far a lowered lane's surface lies below street level at (x, z), or 0 off them. */

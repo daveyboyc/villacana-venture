@@ -21,7 +21,7 @@ Task `guillermo-slope-east-steps` · area **Main pool** · priority P1 · levels
 
 ## Build
 
-Apple 3D screenshots from Dave (2026-10-21) show Calle Guillermo running down continuously beside the pool lawn to the paseo, not ending on top of a 3 m bank, and the single-storey kiosk at its foot standing at lawn level. Lower the seaward end of Guillermo from street level to paseo level, ramp Calle Jorge's last stretch to meet it, keep a low wall between the lane and the lawn, and stand the kiosk at lawn level. The east steps are a narrow flight from an opening in the Picasso boundary wall, between the 90 Miles terrace and the east lawn; move them there from the restaurant roof.
+Apple 3D screenshots from Dave (2026-10-21) show Calle Guillermo running down continuously beside the pool lawn to the paseo, not ending on top of a 3 m bank, and the single-storey kiosk at its foot standing at lawn level. Lower the seaward end of Guillermo from street level to paseo level, keep a low wall between the lane and the lawn, and stand the kiosk at lawn level. The east steps are a narrow flight from an opening in the Picasso boundary wall, between the 90 Miles terrace and the east lawn; move them there from the restaurant roof.
 
 ## Do not
 
@@ -29,7 +29,7 @@ Do not change the big-pool level, the paseo profile or the sandstone wall (issue
 
 ## Done when
 
-- [ ] Guillermo and Jorge stay walkable both ways with no jump at the junction or the paseo
+- [ ] Guillermo stays walkable both ways, level where Jorge meets it, with no jump at the junction, the gateway or the paseo
 - [ ] check_pool_levels.py, check_street_layout.py, check_paseo_wall.py and the layout browser test pass
 - [ ] Before/after renders against the Apple screenshots in docs/reviews/guillermo-slope-east-steps/
 - [ ] Placement remains unapproved until an independent reviewer completes a packet

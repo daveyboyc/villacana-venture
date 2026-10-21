@@ -835,13 +835,12 @@
    ],
    "features": [
     "street:guillermo",
-    "street:jorge",
     "building:6364501UF1366S_part2"
    ],
-   "build": "Apple 3D screenshots from Dave (2026-10-21) show Calle Guillermo running down continuously beside the pool lawn to the paseo, not ending on top of a 3 m bank, and the single-storey kiosk at its foot standing at lawn level. Lower the seaward end of Guillermo from street level to paseo level, ramp Calle Jorge's last stretch to meet it, keep a low wall between the lane and the lawn, and stand the kiosk at lawn level. The east steps are a narrow flight from an opening in the Picasso boundary wall, between the 90 Miles terrace and the east lawn; move them there from the restaurant roof.",
+   "build": "Apple 3D screenshots from Dave (2026-10-21) show Calle Guillermo running down continuously beside the pool lawn to the paseo, not ending on top of a 3 m bank, and the single-storey kiosk at its foot standing at lawn level. Lower the seaward end of Guillermo from street level to paseo level, keep a low wall between the lane and the lawn, and stand the kiosk at lawn level. The east steps are a narrow flight from an opening in the Picasso boundary wall, between the 90 Miles terrace and the east lawn; move them there from the restaurant roof.",
    "avoid": "Do not change the big-pool level, the paseo profile or the sandstone wall (issue #40 owns those). Heights read from Apple's 3D mesh are estimates; say so. Do not move registry footprints.",
    "accept": [
-    "Guillermo and Jorge stay walkable both ways with no jump at the junction or the paseo",
+    "Guillermo stays walkable both ways, level where Jorge meets it, with no jump at the junction, the gateway or the paseo",
     "check_pool_levels.py, check_street_layout.py, check_paseo_wall.py and the layout browser test pass",
     "Before/after renders against the Apple screenshots in docs/reviews/guillermo-slope-east-steps/",
     "Placement remains unapproved until an independent reviewer completes a packet"
@@ -849,7 +848,7 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "2026-10-21: built; Dave then flagged the sandstone wall at the corner as too tall, so the garden behind the paseo wall's east end now falls to keep it about 1 m (overlaps issue #40, paseo-east-end-height; its paseo profile and pool level are unchanged). Placement stays unapproved pending independent review. Then Dave: a fence and a coastal gate separate Villacana from Barraka beach in front of the slope; built from IMG_2226 as data/seafront_fence.json (white wall, arched gateway at the lane's foot, railings along the lawn). No ground photo of the slope itself exists yet."
+   "notes": "2026-10-21: built; Dave then flagged the sandstone wall at the corner as too tall, so the garden behind the paseo wall's east end now falls to keep it about 1 m (overlaps issue #40, paseo-east-end-height; its paseo profile and pool level are unchanged). Placement stays unapproved pending independent review. Then Dave: a fence and a coastal gate separate Villacana from Barraka beach in front of the slope; built from IMG_2226 as data/seafront_fence.json (white wall, arched gateway at the lane's foot, railings along the lawn). No ground photo of the slope itself exists yet. Dave then said Jorge meets Guillermo on the level and the ramp starts just past it: Jorge is level again and Guillermo falls 3 m over the last 15.5 m (about 19 %)."
   }
  ]
 }

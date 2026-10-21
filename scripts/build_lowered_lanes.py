@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Derive the lowered Calle Guillermo/Jorge and the moved east steps from data/guillermo_slope.json.
+"""Derive the lowered Calle Guillermo, the falling corner garden and the moved east steps from data/guillermo_slope.json.
 
 Run once (needs shapely: pip install shapely); the outputs are committed and the
 game and checks read them without shapely. It refuses to run twice, because it
 edits outlines in place:
 
-  data/street_layout.json  guillermo and jorge get a vertex where the slope starts and per-vertex heights
+  data/street_layout.json  guillermo gets a vertex where the slope starts, one on the paseo, and per-vertex heights
   data/main_pool.json      levels.lowerArea, surfaceRing, terraceRing, steps and a new sheetCut
 
 lowerArea gains the lawn strip between Guillermo and the old wall line and the kiosk at the
@@ -80,15 +80,10 @@ def main():
     run = along[-1] - along[1]
     g_heights = [STREET] + [round(STREET + foot * (s - along[1]) / run, 3) for s in along[1:]]
 
-    # Jorge: its east end sits on Guillermo; it ramps up westward from the junction's height.
+    # Jorge meets Guillermo on the level (Dave, 2026-10-21): the slope starts just seaward of it.
     j = [turned(p) for p in jorge['points']]
     junction = LineString(g).project(LineString([j[-1], j[-1]]).centroid)
-    junction_height = STREET + foot * (junction - along[1]) / run
-    ramp = (STREET - junction_height) / spec['jorge']['slope']
-    direction = ((j[0][0] - j[-1][0]) / math.dist(j[0], j[-1]), (j[0][1] - j[-1][1]) / math.dist(j[0], j[-1]))
-    top = (j[-1][0] + direction[0] * ramp, j[-1][1] + direction[1] * ramp)
-    j = [j[0], top, j[-1]]
-    j_heights = [STREET, STREET, round(junction_height, 3)]
+    assert junction <= along[1] + 0.01, 'the slope starts before the Jorge junction'
 
     # Carried on, level, through the gateway at its foot to the paseo's centre line, where the
     # seaside heights take over: no stretch where both the deck and the road's end lower the ground.
@@ -97,8 +92,7 @@ def main():
     beyond = (onto.x, onto.y)
     g, g_heights = [*g, beyond], [*g_heights, g_heights[-1]]
     corridor_g = LineString(g[1:]).buffer(half, cap_style=2, join_style=2)
-    corridor_j = LineString(j[1:]).buffer(half, cap_style=2, join_style=2)
-    corridors = unary_union([corridor_g, corridor_j])
+    corridors = corridor_g
     # Negative distance: the right-hand side, which is east in these (x east, z south) metres.
     lawn_side = LineString(g[1:]).buffer(-spec['lawnReach'], single_sided=True, cap_style=2, join_style=2)
     assert lawn_side.centroid.x > LineString(g[1:]).centroid.x, 'lawn strip is on the wrong side of the lane'
@@ -161,12 +155,10 @@ def main():
     # Write the road changes in raw (skeleton) metres.
     guillermo['points'] = [[round(v, 2) for v in unturned(p)] for p in g]
     guillermo['heights'] = g_heights
-    jorge['points'] = [[round(v, 2) for v in unturned(p)] for p in j]
-    jorge['heights'] = j_heights
+    guillermo['maxGrade'] = spec['guillermo']['maxGrade']
     (ROOT / 'data/street_layout.json').write_text(json.dumps(streets, indent=2, ensure_ascii=False) + '\n')
 
-    print(f'Guillermo falls {-foot} m over {run:.1f} m ({-foot / run:.1%}); Jorge meets it at {junction_height - STREET:.2f} m '
-          f'after a {ramp:.1f} m ramp; lowerArea {lower.area:.0f} m2, sheetCut {sheet.area:.0f} m2; '
+    print(f'Guillermo falls {-foot} m over {run:.1f} m ({-foot / run:.1%}) from just past Jorge; lowerArea {lower.area:.0f} m2, sheetCut {sheet.area:.0f} m2; '
           f'falling garden {garden.area:.0f} m2 with {len(inland)} street-level edges')
 
 

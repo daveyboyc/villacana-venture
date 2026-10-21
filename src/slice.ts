@@ -69,7 +69,7 @@ const PASSAGE_HEADROOM = 2.6;
 
 /** Heights seaward of the paseo, when this view shows the sea. */
 let seaside: Seaside | undefined;
-/** Calle Guillermo and the foot of Calle Jorge, cut below street level (src/lowered-lanes.ts). */
+/** The ramp at the foot of Calle Guillermo, cut below street level (src/lowered-lanes.ts). */
 let lowered: ReturnType<typeof loweredRoads> = [];
 /** Ground height for anything standing on the ground. */
 const groundY = (x: number, z: number): number => seaside?.inZone(x, z) ? seaside.y(x, z) : poolGroundY(x, z) + laneDrop(lowered, x, z);

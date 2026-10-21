@@ -106,17 +106,19 @@ show only with "Show details" on.
 Dave's Apple Maps 3D screenshots (private `villacana-reference`, apple-maps/10 to 13)
 showed two things the model had wrong.
 
-- **Calle Guillermo is a slope, not a lane stopping on a bank.** The lane runs down
-  continuously from beside the steps to Enrique's to the paseo, between the house
-  gardens and a long white wall on the lawn side whose lawn face gets lower towards
-  the sea. This replaces "Calle Guillermo now ends at the top of that bank" above.
-  The lane now falls evenly from street level at the foot of the Enrique's steps
-  (turned z 80.7) to paseo level at its end: 3 m over 39.5 m, about 7.6 %. Its heights
-  are road `heights` in `data/street_layout.json`, as for the Cervantes ramp. A
-  0.5 m white parapet stands on the lawn side; on the garden side a white face holds
-  the street-level gardens back. Calle Jorge joins part-way down; no photo shows it,
-  so its last 19.7 m ramps at 9 % to meet Guillermo about 1.8 m below street level,
-  with no step at the junction.
+- **Calle Guillermo ends in a ramp down to the paseo, not on a bank.** The lane runs
+  down to the paseo between the house gardens and a white wall on the lawn side.
+  This replaces "Calle Guillermo now ends at the top of that bank" above. Dave then
+  said Calle Jorge meets Guillermo on the level and the ramp starts just past it, so
+  Guillermo stays at street level to the Jorge junction and falls from 0.66 m past
+  it (clear of Jorge's paving) to paseo level at the lane's foot: 3 m over 15.5 m,
+  about 19 %, then runs on level through the gateway to the paseo. Its heights are
+  road `heights` in `data/street_layout.json`, as for the Cervantes ramp, and the
+  road carries `maxGrade` 0.2 for this documented steep ramp (other lanes keep the
+  10 % limit). A 0.5 m white parapet stands on the lawn side; on the garden side a
+  white face holds the street-level gardens back. (An earlier version of this task
+  sloped the lane from the foot of the Enrique's steps and ramped Jorge down to meet
+  it; Dave's correction replaced that.)
 - **The kiosk at the foot** (registry part `6364501UF1366S_part2`) stands on the
   lowered lawn, not 3 m up on street-level ground, and the old street-level channel
   past it to the beach gate is lowered with the lawn.
@@ -140,9 +142,11 @@ the lowered lanes and the falling garden. `src/lowered-lanes.ts` draws the lane 
 `scripts/check_lowered_lanes.py` checks them.
 
 All heights here are estimates: Apple's mesh shows which way the ground falls, not
-how far. The slope's start, the parapet, Jorge's ramp, the 1 m wall and the garden's
-fall are not measured, and the houses beside the lowered lanes stay at street level,
-so the lane passes the last house before the kiosk about 2.4 m below it. Placement
+how far. The ramp's start is Dave's description, not a measurement; its 3 m comes
+from Dave's pool level, so its 19 % grade is only as good as that. The parapet, the
+1 m wall and the garden's fall are not measured, and the houses beside the ramp stay
+at street level, so the lane passes the last house before the kiosk up to about
+2.4 m below it. Placement
 of the changed streets and kiosk is unapproved until an independent review.
 
 ## The fence and gateway onto the paseo (2026-10-21)
