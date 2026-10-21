@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 357,
+  "features": 359,
   "photosCitedByModel": 96,
-  "modelFeaturesWithPhotoCitations": 102
+  "modelFeaturesWithPhotoCitations": 104
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -4696,7 +4696,9 @@
     }
    ],
    "citedBy": [
-    "middle_pool_south_gate.json:middle-pool-south-gate"
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "middle_pool_south_gate.json:middle-pool-south-east-hedge"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -4737,7 +4739,8 @@
     }
    ],
    "citedBy": [
-    "middle_pool_south_gate.json:middle-pool-south-gate"
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

@@ -1,0 +1,55 @@
+{
+  "checked": "2026-10-21",
+  "ventureBase": "9ab55b3ed1a20a9fc476c84172946dbfd14ed7d4",
+  "referenceRevision": "73a4ea623017dae665d8b164f9bb1567d409cb69",
+  "references": 172,
+  "byKind": {
+    "phone-photo": 145,
+    "map-screenshot": 11,
+    "own-photo": 12,
+    "web-photo": 4
+  },
+  "phonePhotos": 145,
+  "cameraPins": 144,
+  "unplacedPhonePhotos": [
+    "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg"
+  ],
+  "privateReferencesWithoutCameraPins": 27,
+  "phoneAssociationStatuses": {
+    "unplaced": 1,
+    "suggested": 77,
+    "needs-review": 67
+  },
+  "privatePrimaryImages": 27,
+  "byteIdenticalDriveCopies": 67,
+  "derivedImagesExcluded": [
+    "contact-sheets/barraka-beach.jpg",
+    "contact-sheets/cervantes.jpg",
+    "contact-sheets/dali.jpg",
+    "contact-sheets/elena.jpg",
+    "contact-sheets/eva.jpg",
+    "contact-sheets/main-pool.jpg",
+    "contact-sheets/middle-pool.jpg",
+    "contact-sheets/north-pool.jpg",
+    "contact-sheets/paseo.jpg",
+    "contact-sheets/picasso.jpg",
+    "contact-sheets/seaward-lanes.jpg",
+    "contact-sheets/south-pool.jpg",
+    "contact-sheets/whole-resort.jpg",
+    "uploads/north-pool-audit-2026-10-18/esri-context.png",
+    "uploads/north-pool-audit-2026-10-18/esri-courtyard.png",
+    "uploads/north-pool-audit-2026-10-18/esri-landmarks.png",
+    "uploads/north-pool-audit-2026-10-18/google-landmarks.png",
+    "uploads/north-pool-audit-2026-10-18/google-satellite-overlay.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2202-diagnostic.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2204-diagnostic.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2204-estimated-fit.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2205-diagnostic.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2206-diagnostic.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2207-diagnostic.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2208-diagnostic.png",
+    "uploads/north-pool-audit-2026-10-18/renders/IMG_2363-diagnostic.png"
+  ],
+  "missingSourceRecordsOrPublicPixels": [],
+  "scope": "Repository files and the app catalogue only. Drive originals not scanned for a newer batch. Generated contact sheets and uploaded diagnostic maps/renders are review artifacts, not additional photographed viewpoints. Legacy prototype beach assets are not location evidence."
+}

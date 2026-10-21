@@ -96,6 +96,11 @@ def features(s):
     # The gate and its wall bench (local along/across frame), so a photo of the bench links to this feature.
     sx,sz=south['center'];ux,uz=south['forward'];ba=sum(south['bench']['along'])/2;bc=sum(south['bench']['seat']['across'])/2
     add('middle_pool_south_gate.json:'+south['id'],south['name'],'reference feature','authored photo/map interpretation',evidence=south['evidence'],points=[south['center'],[round(sx+ux*ba-uz*bc,2),round(sz+uz*ba+ux*bc,2)]])
+    south_at=lambda a,c:[round(sx+ux*a-uz*c,6),round(sz+uz*a+ux*c,6)]
+    court=south['forecourt'];a,b=court['along'];c,d=court['across']
+    add('middle_pool_south_gate.json:'+court['id'],court['name'],'reference feature','photo-supported paving; bounded estimated outline, unapproved placement',evidence=court['evidence'],ring=[south_at(a,c),south_at(b,c),south_at(b,d),south_at(a,d)])
+    hedge=south['hedge']
+    add('middle_pool_south_gate.json:'+hedge['id'],hedge['name'],'reference feature','photo-supported east hedge; estimated fragment with unresolved continuation',evidence=hedge['evidence'],points=[south_at(a,hedge['across']) for a in hedge['along']])
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})

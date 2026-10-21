@@ -646,7 +646,12 @@
     "middle-pool-south-gate"
    ],
    "status": "in-progress",
-   "owner": "Codex"
+   "owner": "Codex",
+   "features": [
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   ]
   },
   {
    "id": "north-pool-west-frontage",

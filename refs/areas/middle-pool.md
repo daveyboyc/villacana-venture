@@ -17,6 +17,7 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 - Issue #31 (PRs #53 and #60): IMG_2333 shows three rough stone risers on the planter side of Calle Eva, a tiled ramp beside them, a short landing and a white gateway with two open iron leaves. The steps and the 0.5 m rise to the Dalí level are in data/middle_pool_steps.json and data/terrain.json; the gateway is in data/middle_pool_sw_gateway.json. Positions and sizes are estimated from tiles.
 - Issue #55: bounded north patio floor at +0.45 m behind a +0.8 m white wall (IMG_2193/2194); stops before the photographed grass opening, with no inferred stairs. Shallow oleander bed at +0.2 m from IMG_2246/2247. Only a short +0.4 m curved hedge-wall fragment is estimated from IMG_2341: its GPS is ±47 m and its north-east placement remains uncertain. Floor extents, wall ends and all heights are low-confidence estimates; no hidden private boundaries or gates are traced. See docs/MIDDLE_POOL_RAISED_PATIOS.md.
 - 18 October (Dave's review of the live site): the south gate's tiled wall bench was built behind the open right leaf. IMG_2334 read by perspective puts it about 1.7-2.7 m in from the gate past about 1.7 m of planter; it is now seat height with a plinth. IMG_2334/2335 pins were corrected from photo content. Open: the forecourt inside the gate is crazy paving with a hedge, not lawn (task middle-pool-south-forecourt).
+- 21 October draft (middle-pool-south-forecourt): bounded 5.15 × 2.12 m crazy-paving patch replaces the crossing tile render locally, with a Details-only east hedge fragment. Gate, bench/planter, registry footprints, route axes, terrain and collision retained. Photos confirm material/side ordering, not the estimated endpoints. Aerial shade/foliage conceal full edges; Eva crossing still interrupts the photographed hedge/corridor. Independent source review withholds full placement approval; task stays in progress. See docs/reviews/middle-pool-south-forecourt/.
 
 ## Read first
 
@@ -47,7 +48,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | open · placement: not-verified | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
+| P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | in-progress · Codex · placement: not-verified | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 
 ## Built from these photos
 
@@ -76,23 +77,28 @@ graph LR
   A --> F5["Middle pool · north planter side steps · unreviewed"]
   F5 --> PIMG_2331_jpg(["IMG_2331"])
   F5 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F6["Middle pool · south double iron gate, curved head and tiled planter · disputed"]
+  A --> F6["Middle pool · visible east hedge fragment · disputed"]
   F6 --> PIMG_2334_jpg(["IMG_2334"])
-  F6 --> PIMG_2335_jpg(["IMG_2335"])
-  A --> F7["Middle pool · south-west gateway above the stone steps · unreviewed"]
-  F7 --> PIMG_2332_jpg(["IMG_2332"])
-  F7 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F8["Middle pool · short uncertain curved hedge patio · unreviewed"]
-  F8 --> PIMG_2341_jpg(["IMG_2341"])
-  A --> F9["Middle pool · bounded north raised patio · unreviewed"]
-  F9 --> PIMG_2193_jpg(["IMG_2193"])
-  F9 --> PIMG_2194_jpg(["IMG_2194"])
-  A --> F10["Middle pool · shallow oleander bed beside patio · unreviewed"]
-  F10 --> PIMG_2246_jpg(["IMG_2246"])
-  F10 --> PIMG_2247_jpg(["IMG_2247"])
-  A --> F11["Middle pool · stone steps up to Calle Eva · unreviewed"]
-  F11 --> PIMG_2248_jpg(["IMG_2248"])
-  F11 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F7["Middle pool · bounded crazy-paved south forecourt · disputed"]
+  F7 --> PIMG_2334_jpg(["IMG_2334"])
+  F7 --> PIMG_2335_jpg(["IMG_2335"])
+  A --> F8["Middle pool · south double iron gate, curved head and tiled planter · disputed"]
+  F8 --> PIMG_2334_jpg(["IMG_2334"])
+  F8 --> PIMG_2335_jpg(["IMG_2335"])
+  A --> F9["Middle pool · south-west gateway above the stone steps · unreviewed"]
+  F9 --> PIMG_2332_jpg(["IMG_2332"])
+  F9 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F10["Middle pool · short uncertain curved hedge patio · unreviewed"]
+  F10 --> PIMG_2341_jpg(["IMG_2341"])
+  A --> F11["Middle pool · bounded north raised patio · unreviewed"]
+  F11 --> PIMG_2193_jpg(["IMG_2193"])
+  F11 --> PIMG_2194_jpg(["IMG_2194"])
+  A --> F12["Middle pool · shallow oleander bed beside patio · unreviewed"]
+  F12 --> PIMG_2246_jpg(["IMG_2246"])
+  F12 --> PIMG_2247_jpg(["IMG_2247"])
+  A --> F13["Middle pool · stone steps up to Calle Eva · unreviewed"]
+  F13 --> PIMG_2248_jpg(["IMG_2248"])
+  F13 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Placement evidence
@@ -107,6 +113,8 @@ graph LR
 | `middle_pool_north.json:middle-pool-north-pergola` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_north.json:middle-pool-north-planter-cap` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_north.json:middle-pool-north-white-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_south_gate.json:middle-pool-south-east-hedge` | disputed | unchecked | open discrepancy middle-south-hedge-continuation |
+| `middle_pool_south_gate.json:middle-pool-south-forecourt` | disputed | differs | open discrepancy middle-south-forecourt-trace; open discrepancy photo-discrepancy:9579a59d07ca4c03 |
 | `middle_pool_south_gate.json:middle-pool-south-gate` | disputed | differs | open discrepancy photo-discrepancy:98f50a7718586a39 |
 | `middle_pool_sw_gateway.json:middle-pool-sw-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:middle-pool-curved-hedge-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -122,6 +130,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | --- | --- | --- | --- | --- |
 | `middle-pool-south-gate` | [IMG_2334](../../public/photos-ref/IMG_2334.jpg) | **differs** → `middle-pool-south-forecourt` | [after](../../docs/reviews/middle-pool-south-gate/IMG_2334-after.png) · [before](../../docs/reviews/middle-pool-south-gate/IMG_2334-before.png) | Gate, open right leaf, planter and wall bench now come in the photo's order: about 1.7 m of planter behind the leaf, then the bench recess and tiled wall, then more planter. Before, the bench sat 0.1-1.1 m from the gate, directly behind the open leaf. Still different: the model shows lawn either side of a crossing tiled path where the photo shows a narrow crazy-paved forecourt with a tall hedge on the left. |
 | `middle-pool-south-gate` | [IMG_2335](../../public/photos-ref/IMG_2335.jpg) | **matches** | [after](../../docs/reviews/middle-pool-south-gate/IMG_2335-after.png) · [before](../../docs/reviews/middle-pool-south-gate/IMG_2335-before.png) | Seat-height bench with a low plinth, recessed into the planter with planter either side, under a tall white wall with the tile panel; the open leaf is to its left (gate side) as in the photo. Tile motifs are schematic and the cypress and geraniums are Details planting. |
+| `middle-pool-south-forecourt` | [IMG_2334](../../public/photos-ref/IMG_2334.jpg) | **differs** → `middle-pool-south-forecourt` | [after](../../docs/reviews/middle-pool-south-forecourt/IMG_2334-after.png) · [before](../../docs/reviews/middle-pool-south-forecourt/IMG_2334-before.png) | The same stored camera/subject and Details view now show continuous stone through the foreground and a gate-side east hedge, replacing lawn/crossing terracotta in the bounded patch. The photo shows a longer continuous hedge/corridor; the estimated Eva crossing is retained and leaves an unresolved interruption. Patch ends/width are estimated, adjacent model frontage differs, and the third-person camera has uncalibrated eye height/pitch/intrinsics. Do not claim a photographic or measured placement match. |
+| `middle-pool-south-forecourt` | [IMG_2335](../../public/photos-ref/IMG_2335.jpg) | **not-comparable** | [after](../../docs/reviews/middle-pool-south-forecourt/IMG_2335-after.png) · [before](../../docs/reviews/middle-pool-south-forecourt/IMG_2335-before.png) | Same stored camera and Details view. Stone now continues alongside the unchanged recessed bench/plinth and tiled wall; existing bench/gate geometry is retained. The third-person view includes the whole junction rather than the source close-up, so it cannot verify precise panel, hedge, width or full boundary placement. The earlier bench-specific check is retained; this record makes no new full-scene match claim. |
 
 **Built without complete newer photo-check records:** `middle-pool-sw-steps`, `middle-pool-north-entrance`, `middle-pool-raised-patios`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
@@ -130,11 +140,11 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola, middle_pool_north.json:middle-pool-north-white-steps._ |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge._ |
 | [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. _Used by: middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-white-steps._ |
 | [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, steps:middle-pool-sw-steps._ |
+| [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | layout, materials, facades | Middle pool south: raised white planter with a blue tile panel **Looks at:** wall bench and blue/yellow tile panel in the west planter, inside the south gate. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt._ |
 | [IMG_2195.jpg](../../public/photos-ref/IMG_2195.jpg) | ground | materials | Middle pool close up: cream deck, ladders, life rings _Used by: middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola._ |
-| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
-| [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | layout, materials, facades | Middle pool south: raised white planter with a blue tile panel **Looks at:** wall bench and blue/yellow tile panel in the west planter, inside the south gate. _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
 | [IMG_2193.jpg](../../public/photos-ref/IMG_2193.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind _Used by: raised_terraces.json:middle-pool-north-terrace._ |
 | [IMG_2194.jpg](../../public/photos-ref/IMG_2194.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind (second shot) _Used by: raised_terraces.json:middle-pool-north-terrace._ |
 | [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up _Used by: middle_pool.json:middle-pool-west-planter._ |
