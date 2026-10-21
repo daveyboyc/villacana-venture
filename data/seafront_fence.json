@@ -1,0 +1,86 @@
+{
+  "note": "The boundary between Villacana and the paseo/Barraka beach along the big-pool lawn: a white wall from the end of the sandstone wall to an arched gateway at the foot of Calle Guillermo, a short white wall, then white railings along the lawn to its east end. Turned-frame metres (sea downward); every line is 1.75 m inland of the paseo's centre line, just off the 3 m paving. Heights are metres above the paseo.",
+  "evidence": [
+    "IMG_2226.jpg",
+    "IMG_2227.jpg",
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+    "ref:apple-maps/05-top-down-main-pool-and-lawn.png"
+  ],
+  "trust": "Dave, 2026-10-21: a fence and a coastal gate run in front of the slope, separating Villacana from Barraka beach. IMG_2226 (from the beach, looking north-west) shows, west to east, a white wall with a tiled panel, a white arched gateway at paseo level, a short white wall and white railings along the lawn up to Barraka's raised deck; IMG_2227 shows the white tiled wall where the sandstone wall ends; apple-maps/11 shows the gateway at the bottom of the lane with the zebra crossing in front. Positions follow the paseo line (plan about 1-2 m); the gateway sits where the lane meets it. Heights (wall 1.5 m, railings 1.1 m, arch 2.4 m), the 1.4 m opening and the bar spacing are read by eye, not measured. The gateway is left open: no photo shows a closed leaf.",
+  "wall": {
+    "id": "guillermo-corner-wall",
+    "points": [
+      [
+        -73.59,
+        121.44
+      ],
+      [
+        -73.58,
+        121.44
+      ],
+      [
+        -71.17,
+        120.59
+      ]
+    ],
+    "height": 1.5,
+    "thickness": 0.25
+  },
+  "gate": {
+    "id": "guillermo-beach-gate",
+    "at": [
+      -70.09,
+      120.21
+    ],
+    "along": [
+      0.943,
+      -0.332
+    ],
+    "opening": 1.4,
+    "pier": 0.45,
+    "depth": 0.35,
+    "spring": 1.7,
+    "height": 2.6
+  },
+  "stub": {
+    "id": "guillermo-gate-east-wall",
+    "points": [
+      [
+        -69.0,
+        119.83
+      ],
+      [
+        -66.17,
+        118.83
+      ]
+    ],
+    "height": 1.5,
+    "thickness": 0.25
+  },
+  "railing": {
+    "id": "main-pool-lawn-railing",
+    "points": [
+      [
+        -66.17,
+        118.83
+      ],
+      [
+        -56.73,
+        115.5
+      ],
+      [
+        -38.42,
+        106.28
+      ],
+      [
+        -33.4,
+        103.32
+      ]
+    ],
+    "height": 1.1,
+    "plinth": 0.3,
+    "thickness": 0.2,
+    "bar": 0.13,
+    "post": 2.5
+  }
+}

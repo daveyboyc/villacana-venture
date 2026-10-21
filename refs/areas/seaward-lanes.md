@@ -17,8 +17,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 23, Levels and slopes: 4, Facades and roofs: 1, Materials: 15, Planting: 6, Signs: 3
-30 reviewed, 0 suggested only by camera position.
+Layout: 23, Levels and slopes: 5, Facades and roofs: 2, Materials: 15, Planting: 6, Signs: 3, Views: 1
+31 reviewed, 0 suggested only by camera position.
 
 ## Built from these photos
 
@@ -76,6 +76,7 @@ graph LR
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
+| [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. _Used by: middle_pool_south_gate.json:middle-pool-south-gate._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |

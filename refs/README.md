@@ -11,22 +11,22 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | North pool | 16 | 16 | [areas/north-pool.md](areas/north-pool.md) |
 | Middle pool | 24 | 24 | [areas/middle-pool.md](areas/middle-pool.md) |
 | South pool | 7 | 7 | [areas/south-pool.md](areas/south-pool.md) |
-| Main pool | 5 | 5 | [areas/main-pool.md](areas/main-pool.md) |
+| Main pool | 6 | 6 | [areas/main-pool.md](areas/main-pool.md) |
 | Calle Elena | 39 | 39 | [areas/elena.md](areas/elena.md) |
 | Calle Miguel de Cervantes | 26 | 26 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 25 | 25 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 3 | 3 | [areas/picasso.md](areas/picasso.md) |
 | Loira, Bolivia, Alberto and Isabel | 0 | 0 | [areas/north-lanes.md](areas/north-lanes.md) |
 | Calle Eva | 11 | 11 | [areas/eva.md](areas/eva.md) |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 30 | 30 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 31 | 31 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
 | Barraka and the beach | 15 | 15 | [areas/barraka-beach.md](areas/barraka-beach.md) |
-| The paseo | 14 | 14 | [areas/paseo.md](areas/paseo.md) |
+| The paseo | 16 | 16 | [areas/paseo.md](areas/paseo.md) |
 | The whole resort | 21 | 21 | [areas/whole-resort.md](areas/whole-resort.md) |
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 128 | [topics/layout.md](topics/layout.md) |
-| Levels and slopes | 25 | [topics/levels.md](topics/levels.md) |
+| Layout | 129 | [topics/layout.md](topics/layout.md) |
+| Levels and slopes | 27 | [topics/levels.md](topics/levels.md) |
 | Facades and roofs | 45 | [topics/facades.md](topics/facades.md) |
 | Materials | 62 | [topics/materials.md](topics/materials.md) |
 | Planting | 49 | [topics/planting.md](topics/planting.md) |

@@ -23,6 +23,8 @@ import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from 
 import { seaWallSegments } from "./south-pool";
 import {paseoWallCovers, paseoWallOutline} from "./paseo-wall";
 import paseoWall from "../data/paseo_wall.json";
+import seafrontFence from "../data/seafront_fence.json";
+import { seafrontFenceRings } from "./seafront-fence";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
 import middlePool from "../data/middle_pool.json";
@@ -179,6 +181,11 @@ async function boot(): Promise<void> {
     const wall = el("path", { id: "paseo-wall", d: path(paseoWallOutline()), fill: "#d2ae72", stroke: "#5e4a2c", "stroke-width": 0.12, "stroke-linejoin": "round" });
     const title = el("title", {}); title.textContent = `${paseoWall.wall.name}: ${paseoWall.wall.trust} · ${paseoWall.wall.evidence.join(", ")}`; wall.append(title);
     seafront.append(wall);
+    // The white wall, arched gateway and lawn railings between the big pool and the paseo (data/seafront_fence.json).
+    const fence = el("g", { id: "seafront-fence" });
+    for (const ring of seafrontFenceRings()) fence.append(el("path", { d: path(ring), fill: "#fffdf3", stroke: "#6d6a5f", "stroke-width": 0.06 }));
+    const fenceTitle = el("title", {}); fenceTitle.textContent = `White wall, arched gateway and railings: ${seafrontFence.trust} · ${seafrontFence.evidence.join(", ")}`; fence.append(fenceTitle);
+    seafront.append(fence);
     for(const section of barrakaSections()) seafront.append(el("path",{d:path([section.left,section.right,section.endRight,section.endLeft]),fill:"#80917b",stroke:"#635a47","stroke-width":.1}));
     const planter=el("circle",{id:"barraka-sign-planter-marker",cx:barrakaSign.point[0],cy:barrakaSign.point[1],r:.6,fill:"#a6bc68",stroke:"#455833","stroke-width":.15});
     const planterTitle=el("title",{});planterTitle.textContent=`${barrakaSign.name} · estimated position; marker, not footprint`;planter.append(planterTitle);seafront.append(planter);

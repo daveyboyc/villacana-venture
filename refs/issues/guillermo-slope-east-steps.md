@@ -7,8 +7,8 @@ Task `guillermo-slope-east-steps` · area **Main pool** · priority P1 · levels
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/main-pool.md` and the contact sheet `villacana-reference/contact-sheets/main-pool.jpg`
 - docs: `docs/MAIN_POOL.md`
-- data: `data/main_pool.json`, `data/guillermo_slope.json`
-- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`
+- data: `data/main_pool.json`, `data/guillermo_slope.json`, `data/seafront_fence.json`
+- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`, `src/seafront-fence.ts`
 
 ## Photos to build from
 
@@ -16,6 +16,8 @@ Task `guillermo-slope-east-steps` · area **Main pool** · priority P1 · levels
 - `public/photos-ref/ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`: Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west (aerial)
 - `public/photos-ref/ref:apple-maps/12-3d-main-pool-east-steps-picasso.png`: Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps (aerial)
 - `public/photos-ref/ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png`: Apple Maps 3D: main pool terrace curve with the west and east steps (aerial)
+- `public/photos-ref/IMG_2226.jpg`: From the beach looking back at the resort frontage (ground — pin ±2.0 m; looks at big-pool lawn frontage: white railings, Guillermo gateway at left)
+- `public/photos-ref/IMG_2227.jpg`: From the beach looking west along the white seafront houses (ground — pin ±2.5 m; looks at east end of the sandstone wall and the corner house by Calle Guillermo)
 
 ## Build
 

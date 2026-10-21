@@ -85,6 +85,7 @@ const path = require("node:path");
         ...middleSouthRings(),
         ...raisedTerraceRings(),
         ...coastalWallRings(),
+        ...(await import("/src/seafront-fence.ts")).seafrontFenceRings(),
       ],
       Object.fromEntries(
         buildings.flatMap((b, i) =>
@@ -244,6 +245,14 @@ const path = require("node:path");
     for (const pool of s.pools) {
       const [cx, cz] = pool.ring.reduce((a, q) => [a[0] + q[0] / pool.ring.length, a[1] + q[1] / pool.ring.length], [0, 0]);
       if (raisedTerraceGroundOffset(cx, cz) !== 0 || pool.ring.some((q) => raisedTerraceGroundOffset(...q) !== 0)) throw Error("A raised terrace lifts the " + pool.id + " pool");
+    }
+    // Down Calle Guillermo, through the arched gateway at its foot onto the paseo, and back.
+    {
+      const g = s.boundaryReference.roads.find((r) => r.id === "guillermo").points, [a, b] = g.slice(-2);
+      const n = Math.hypot(b[0] - a[0], b[1] - a[1]), out = [b[0] + (b[0] - a[0]) / n * 3, b[1] + (b[1] - a[1]) / n * 3];
+      walk([a, b, out]);
+      if (!sd.inZone(player.x, player.z)) throw Error("Guillermo gateway: did not reach the paseo");
+      walk([out, b, a]);
     }
     // Both flights between the big-pool deck and street level, down and back up, between their side walls:
     // the narrow east steps from the Picasso side and the steps to Enrique's.

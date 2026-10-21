@@ -18,6 +18,8 @@ match; they show order, sides and which way the ground falls.
 | `west-steps-before.png` / `-after.png` | The steps to Enrique's are unchanged; the lane beside them now falls away towards the sea. |
 | `corner-wall-before.png` / `-after.png` | The garden behind the paseo wall's east end falls, so the sandstone wall stays about 1 m. |
 | `guillermo-lane-after.png` | Looking down the lowered lane: retaining face on the garden side, parapet on the lawn side. |
+| `gateway-after.png`, `lawn-railing-after.png` | The white wall, arched gateway at the lane's foot and railings along the lawn (IMG_2226), with the lane running on through the gateway to the paseo. |
+| `IMG_2226-before.png` / `-after.png`, `IMG_2227-before.png` / `-after.png` | `scripts/shoot_views.cjs` from the photos' camera pins. Not comparable: the walk camera looks down at the player from behind, so only the far frontage shows; the railings appear along the lawn in the after render. |
 
 What each source supports:
 
@@ -27,6 +29,12 @@ What each source supports:
   east building, from an opening in the Picasso-side wall. Its line was read off
   the georeferenced aerial (`public/map/ground.jpg`) to about 1 m.
 - Dave's remark: the wall height at the corner; with IMG_2227, about 1 m.
+- Dave's remark that a fence and coastal gate separate Villacana from Barraka beach,
+  and IMG_2226: the order of white wall, arched gateway, short wall and railings,
+  and that the gateway's foot is at paseo level. IMG_2227: the white tiled wall where
+  the sandstone wall ends, and the corner house about 1 m above the beach.
+
+No ground photo shows the slope of Calle Guillermo itself.
 
 Not supported by any source: Calle Jorge's level (modelled as a 9 % ramp), where
 Guillermo's slope starts, the parapet height, and the shape of the garden's fall.

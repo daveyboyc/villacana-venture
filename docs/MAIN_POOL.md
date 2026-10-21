@@ -144,3 +144,21 @@ how far. The slope's start, the parapet, Jorge's ramp, the 1 m wall and the gard
 fall are not measured, and the houses beside the lowered lanes stay at street level,
 so the lane passes the last house before the kiosk about 2.4 m below it. Placement
 of the changed streets and kiosk is unapproved until an independent review.
+
+## The fence and gateway onto the paseo (2026-10-21)
+
+Dave: a fence and a coastal gate run in front of the slope, separating Villacana from
+Barraka beach. IMG_2226, from the beach looking north-west, shows them west to east:
+a white wall with a tiled panel where the sandstone wall ends (also IMG_2227), a white
+round-arched gateway at paseo level at the foot of Calle Guillermo, a short white wall,
+then white railings along the big-pool lawn up to Barraka's raised deck.
+`data/seafront_fence.json` and `src/seafront-fence.ts` build them 1.75 m inland of the
+paseo's centre line, just off the paving; the walls and railings are solid, and the
+1.4 m gateway is open (no photo shows a closed leaf). The map draws them and
+`scripts/check_seafront_fence.py` checks their order, the gateway's line with the lane,
+and that they keep clear of the paseo, lanes, houses and pools. Heights (wall 1.5 m,
+railings 1.1 m, arch 2.4 m) are by eye. This replaces "no wall, no step" between the
+lawn and the paseo above: still no step, but a fence.
+
+No ground photo shows the slope of Calle Guillermo itself. IMG_2226 and IMG_2227 show
+its foot: the gateway at paseo level and the corner house about 1 m above the beach.

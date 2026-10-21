@@ -829,7 +829,9 @@
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
     "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
     "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
-    "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png"
+    "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+    "IMG_2226.jpg",
+    "IMG_2227.jpg"
    ],
    "features": [
     "street:guillermo",
@@ -847,7 +849,7 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "2026-10-21: built; Dave then flagged the sandstone wall at the corner as too tall, so the garden behind the paseo wall's east end now falls to keep it about 1 m (overlaps issue #40, paseo-east-end-height; its paseo profile and pool level are unchanged). Placement stays unapproved pending independent review."
+   "notes": "2026-10-21: built; Dave then flagged the sandstone wall at the corner as too tall, so the garden behind the paseo wall's east end now falls to keep it about 1 m (overlaps issue #40, paseo-east-end-height; its paseo profile and pool level are unchanged). Placement stays unapproved pending independent review. Then Dave: a fence and a coastal gate separate Villacana from Barraka beach in front of the slope; built from IMG_2226 as data/seafront_fence.json (white wall, arched gateway at the lane's foot, railings along the lawn). No ground photo of the slope itself exists yet."
   }
  ]
 }

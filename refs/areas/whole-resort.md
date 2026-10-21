@@ -19,7 +19,7 @@ Overviews, maps and wide views covering several areas at once, and the mountain 
 
 ## Coverage
 
-Layout: 9, Facades and roofs: 17, Materials: 4, Planting: 2, Signs: 3, Views: 18
+Layout: 10, Levels and slopes: 2, Facades and roofs: 17, Materials: 4, Planting: 2, Signs: 3, Views: 18
 21 reviewed, 0 suggested only by camera position.
 
 ## Levels
@@ -50,8 +50,8 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 | [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-north-patios._ |
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
+| [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
-| [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades | From the beach looking west along the white seafront houses _Used by: paseo_wall.json:paseo-retaining-wall._ |
+| [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. |
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
-| [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades | From the beach looking back at the resort frontage |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |

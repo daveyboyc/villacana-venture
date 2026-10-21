@@ -1476,15 +1476,19 @@
   "title": "From the beach looking back at the resort frontage",
   "shows": [
    "barraka-beach",
+   "main-pool",
+   "paseo",
    "whole-resort"
   ],
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
    "view",
-   "facades"
+   "facades",
+   "layout",
+   "levels"
   ],
-  "note": null,
+  "note": "Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1498,13 +1502,14 @@
   },
   "citedBy": [],
   "looksAt": [
-   35.3,
-   151.3
+   0.1,
+   125.7
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:beach"
-  ]
+   "area:paseo"
+  ],
+  "subject": "big-pool lawn frontage: white railings, Guillermo gateway at left"
  },
  {
   "id": "IMG_2227.jpg",
@@ -1513,15 +1518,18 @@
   "title": "From the beach looking west along the white seafront houses",
   "shows": [
    "barraka-beach",
+   "paseo",
+   "seaward-lanes",
    "whole-resort"
   ],
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
    "view",
-   "facades"
+   "facades",
+   "levels"
   ],
-  "note": null,
+  "note": "Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1537,13 +1545,17 @@
    "paseo_wall.json:paseo-retaining-wall"
   ],
   "looksAt": [
-   33.3,
-   154.7
+   -12.1,
+   140.5
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:beach"
-  ]
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall",
+   "street:guillermo"
+  ],
+  "subject": "east end of the sandstone wall and the corner house by Calle Guillermo"
  },
  {
   "id": "IMG_2229.jpg",

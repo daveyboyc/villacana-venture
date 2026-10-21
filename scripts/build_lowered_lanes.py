@@ -90,24 +90,18 @@ def main():
     j = [j[0], top, j[-1]]
     j_heights = [STREET, STREET, round(junction_height, 3)]
 
-    # Carried 0.3 m past the lane's end, so the deck never takes its last point (the deck and the
-    # road would both lower the ground there).
-    ux, uz = (g[-1][0] - g[-2][0]) / math.dist(g[-1], g[-2]), (g[-1][1] - g[-2][1]) / math.dist(g[-1], g[-2])
-    past = (g[-1][0] + ux * 0.3, g[-1][1] + uz * 0.3)
-    corridor_g = LineString([*g[1:], past]).buffer(half, cap_style=2, join_style=2)
-    end_cap = LineString([g[-1], past]).buffer(half, cap_style=2, join_style=2)
+    # Carried on, level, through the gateway at its foot to the paseo's centre line, where the
+    # seaside heights take over: no stretch where both the deck and the road's end lower the ground.
+    paseo = [turned(p) for p in json.loads((ROOT / 'public/map/skeleton.json').read_text())['seafront']['paseo']['points']]
+    onto = LineString(paseo).interpolate(LineString(paseo).project(LineString([g[-1], g[-1]]).centroid))
+    beyond = (onto.x, onto.y)
+    g, g_heights = [*g, beyond], [*g_heights, g_heights[-1]]
+    corridor_g = LineString(g[1:]).buffer(half, cap_style=2, join_style=2)
     corridor_j = LineString(j[1:]).buffer(half, cap_style=2, join_style=2)
     corridors = unary_union([corridor_g, corridor_j])
-    # Lawn to the east of the lowered lane (single-sided buffer: right of the line, walking seaward),
-    # and the lane's own line carried on to the paseo so its foot meets the paseo at the same level.
-    paseo = [turned(p) for p in json.loads((ROOT / 'public/map/skeleton.json').read_text())['seafront']['paseo']['points']]
-    reach = LineString(paseo).project(LineString([g[-1], g[-1]]).centroid)
-    onto = LineString(paseo).interpolate(reach)
-    beyond = (onto.x, onto.y)
     # Negative distance: the right-hand side, which is east in these (x east, z south) metres.
-    lawn_side = LineString([*g[1:], beyond]).buffer(-spec['lawnReach'], single_sided=True, cap_style=2, join_style=2)
+    lawn_side = LineString(g[1:]).buffer(-spec['lawnReach'], single_sided=True, cap_style=2, join_style=2)
     assert lawn_side.centroid.x > LineString(g[1:]).centroid.x, 'lawn strip is on the wrong side of the lane'
-    foot_way = LineString([g[-1], beyond]).buffer(half, cap_style=2, join_style=2)
     skeleton = json.loads((ROOT / 'public/map/skeleton.json').read_text())
     kiosk = Polygon([turned(p) for p in next(b for b in skeleton['buildings'] if b['id'] == spec['kiosk'])['ring']]).buffer(0.05, join_style=2)
     # The old street-level channel that carried the lane past the kiosk to the beach-gate path.
@@ -125,13 +119,13 @@ def main():
     terrace = terrace[:-4] + [[-40.3, 61.8]]
     terrace_poly = Polygon(terrace)
 
-    lower = unary_union([Polygon(levels['lowerArea']), lawn_side, foot_way, kiosk, channel, steps_area]).difference(corridors).difference(terrace_poly)
+    lower = unary_union([Polygon(levels['lowerArea']), lawn_side, kiosk, channel, steps_area]).difference(corridors).difference(terrace_poly)
     lower = max(getattr(lower, 'geoms', [lower]), key=lambda p: p.area).buffer(0)
     # Slivers left where outlines nearly touch (the kiosk's curve) are not real islands of street level.
     assert all(hole.area < 0.05 for hole in lower.interiors), [hole.area for hole in lower.interiors]
     lower = Polygon(lower.exterior)
     sheet = unary_union([lower, corridors.difference(terrace_poly)])
-    surface = unary_union([lower, end_cap]).difference(steps_area)
+    surface = lower.difference(steps_area)
     surface = max(getattr(surface, 'geoms', [surface]), key=lambda p: p.area)
 
     # The garden behind the east end of the paseo wall falls towards the sea, so the wall stays

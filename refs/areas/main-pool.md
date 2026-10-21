@@ -9,18 +9,19 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 - Villacana has one large main pool with a round toddler pool beside it (Dave, 2026-10-11).
 - Apple 3D screenshots (Dave, 2026-10-21, apple-maps/10-13): Calle Guillermo runs down beside the lawn to the paseo, the kiosk at its foot is at lawn level, and the east steps are a narrow flight from the Picasso wall between the 90 Miles terrace and the east building. Built by task guillermo-slope-east-steps (docs/MAIN_POOL.md); heights estimated.
 - Open: does Calle Jorge slope down to meet Guillermo (modelled as a 9 % ramp, no photo), and do the houses beside the lower lane stand lower than the street-level houses further up?
+- Dave, 2026-10-21: a fence and a coastal gate separate Villacana from Barraka beach in front of the lawn. IMG_2226 shows the white wall, a round-arched gateway at the foot of Calle Guillermo, a short wall and white railings along the lawn; built as data/seafront_fence.json (heights by eye, gateway left open).
 
 ## Read first
 
 - docs: `docs/MAIN_POOL.md`
-- data: `data/main_pool.json`, `data/guillermo_slope.json`
-- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`
+- data: `data/main_pool.json`, `data/guillermo_slope.json`, `data/seafront_fence.json`
+- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`, `src/seafront-fence.ts`
 - contact sheet: `villacana-reference/contact-sheets/main-pool.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 5, Levels and slopes: 4
-5 reviewed, 0 suggested only by camera position.
+Layout: 6, Levels and slopes: 5, Facades and roofs: 1, Views: 1
+6 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -28,7 +29,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `guillermo-slope-east-steps` | Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall | in-progress · Claude · placement: not-verified | `apple-maps/11-3d-guillermo-slope-to-paseo.png`, `apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`, `apple-maps/12-3d-main-pool-east-steps-picasso.png`, `apple-maps/13-3d-main-pool-terrace-both-stairs.png` |
+| P1 | `guillermo-slope-east-steps` | Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall | in-progress · Claude · placement: not-verified | `apple-maps/11-3d-guillermo-slope-to-paseo.png`, `apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`, `apple-maps/12-3d-main-pool-east-steps-picasso.png`, `apple-maps/13-3d-main-pool-terrace-both-stairs.png`, [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
 
 ## Reviewed references
 
@@ -39,3 +40,4 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | `villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
 | `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels | Apple Maps 3D: main pool terrace curve with the west and east steps **Note:** Dave, 2026-10-21. Nearly top-down. West: terracotta steps between the Guillermo-side wall and the terrace's curved planter wall. East: a dark narrow slot between the 90 Miles lobe and the Picasso boundary wall, the steps in shadow. |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach |
+| [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. |
