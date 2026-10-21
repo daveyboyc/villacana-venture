@@ -1,0 +1,34 @@
+{
+  "note": "Calle Guillermo runs down beside the big-pool lawn to the paseo instead of stopping on top of a 3 m bank. Turned-frame metres (sea downward). Heights are metres above street level; the lane's surface heights live on the roads in data/street_layout.json (0.27 is street level there, as for every road), the outlines in data/main_pool.json (levels.lowerArea, surfaceRing, sheetCut). scripts/build_lowered_lanes.py derived both from this file once.",
+  "evidence": [
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+    "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+    "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png"
+  ],
+  "trust": "From Apple Maps 3D screenshots (Dave, 2026-10-21): the lane runs down to the paseo between the house gardens and a white wall on the lawn side, and the kiosk at its foot stands at lawn level; Apple's mesh shows which way the ground falls, not heights. Dave then said Calle Jorge meets Guillermo on the level and the ramp starts just past it (slopeEvidence). The 0.5 m parapet on the lawn side is a guess. Houses stay at street level; the gardens beside the lane do too, except the garden behind the east end of the paseo wall (gardenFall). Heights are estimates, not measured.",
+  "guillermo": {
+    "road": "guillermo",
+    "slopeStart": [
+      -73.45,
+      104.68
+    ],
+    "foot": -3,
+    "maxGrade": 0.2,
+    "slopeEvidence": "Dave, 2026-10-21: Calle Jorge meets Guillermo on the level and the ramp starts just past it, sloping down to the sea; it is a smooth ramp, with no steps. The slope starts 0.66 m seaward of Jorge's centre line (clear of Jorge's paving) and falls 3 m (Dave's pool level) over 15.5 m to the lane's foot, about 19 %; it then runs on level through the gateway to the paseo. The 3 m and the grade follow from that; neither is measured."
+  },
+  "jorge": {
+    "road": "jorge",
+    "level": true
+  },
+  "corridorHalfWidth": 0.66,
+  "lawnReach": 1.3,
+  "parapet": 0.5,
+  "kiosk": "6364501UF1366S_part2",
+  "gardenFall": {
+    "fromX": -110,
+    "northZ": 112,
+    "wallHeight": 1.0,
+    "evidence": "Dave, 2026-10-21, on a render of the corner by the foot of Calle Guillermo: the sandstone wall there is not 3 m tall. IMG_2227 (issue #40) suggests about 1 m and shows the sandstone band ending at a planted slope; apple-maps/11 shows the gardens beside the lower lane falling towards the sea.",
+    "trust": "The 1 m wall is from Dave's correction and IMG_2227, not measured. The garden's shape is the open ground between the wall face (carried on to the lane), the house fronts, Calle Guillermo and turned x -110 (where the paseo is back to 1 m below street level); it falls evenly from street level at the houses to 1 m above the paseo at the wall. Houses stay at street level."
+  }
+}

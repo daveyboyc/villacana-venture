@@ -151,14 +151,21 @@
     "docs/MAIN_POOL.md"
    ],
    "data": [
-    "data/main_pool.json"
+    "data/main_pool.json",
+    "data/guillermo_slope.json",
+    "data/seafront_fence.json"
    ],
    "src": [
     "src/main-pool.ts",
-    "src/pool-levels.ts"
+    "src/pool-levels.ts",
+    "src/lowered-lanes.ts",
+    "src/seafront-fence.ts"
    ],
    "notes": [
-    "Villacana has one large main pool with a round toddler pool beside it (Dave, 2026-10-11)."
+    "Villacana has one large main pool with a round toddler pool beside it (Dave, 2026-10-11).",
+    "Apple 3D screenshots (Dave, 2026-10-21, apple-maps/10-13): Calle Guillermo runs down beside the lawn to the paseo, the kiosk at its foot is at lawn level, and the east steps are a narrow flight from the Picasso wall between the 90 Miles terrace and the east building. Built by task guillermo-slope-east-steps (docs/MAIN_POOL.md); heights estimated.",
+    "Dave, 2026-10-21: a fence and a coastal gate separate Villacana from Barraka beach in front of the lawn. IMG_2226 shows the white wall, a round-arched gateway at the foot of Calle Guillermo, a short wall and white railings along the lawn; built as data/seafront_fence.json (heights by eye, gateway left open).",
+    "Dave, 2026-10-21: Calle Jorge meets Guillermo on the level; Guillermo's ramp starts just past the junction and slopes down to the paseo as a smooth ramp with no steps (modelled 3 m over 15.5 m, about 19 %). Open: do the houses beside the ramp stand lower than street level?"
    ]
   },
   {
@@ -468,7 +475,8 @@
     "Issue #35: paseo centreline generated 1.5 m seaward of the aerial/photo-backed sandstone wall, 3 m approximate width; pavement now meets the face as IMG_2350/IMG_2352/IMG_2354 show. Southwest former hold-in removed against aerial; gate approach and Barraka boardwalk OSM joins retained. Plan accuracy about 1-2 m, not a survey. Eastern wall height (#40) and registry house obstruction (#41) remain unresolved; levels and footprints unchanged.",
     "Issue #40 evidence review (15 October): IMG_2227/IMG_2226 from the beach and IMG_2350 looking east do not resolve whether the paseo rises or the gardens fall near Guillermo. The nominal 3 m east-end wall is a result of the approximate paseo profile against assumed inland ground, not a measured height. All levels retained, including Dave's main-pool drop; task remains open. See docs/PASEO_EAST_END_HEIGHT_REVIEW.md for the specific photo needed.",
     "Issue #49: Details-only bounded clipped hedges behind mesh (IMG_2349/2352/2354), short green cloth runs (IMG_2350/2352), four photographed slim white lamps on the paving at the wall foot and a flush service-cover surface (IMG_2354). Positions/dimensions estimated relative to shared wall, not GPS subjects. Along the wall run the protected route is the 2.2 m clear walk beyond the lamps (paving stays 3 m), so all four lamps stand where the photos show them; lamp count/spacing beyond the photographed run is not invented.",
-    "Issue #41 (16 October): after PR #64 the eastern OSM paseo still entered registry part 6465801UF1366N_part5 by 2.8 m (and part6 by 0.5 m), not 0.64 m from it. On the aerial the pink paseo (about 3.5 m wide) crosses both parts and the rest of part5 is open sand; neighbouring registry roofs match the image, and IMG_2346/IMG_2347 (pins about 4 m) show sand, the Barraka sign planter and a walkway there. So the footprint, not the line, was wrong: both parts keep their exact rings as dashed registry outlines with floors 0 (data/registry_corrections.json), no longer extruded or solid. Paseo points unchanged; the whole paseo now keeps 1.5 m from every standing house and is walked end to end both ways. Open: east of Barraka the OSM line runs along the landward edge of the pink strip, about 2 m landward of its centre on the aerial."
+    "Issue #41 (16 October): after PR #64 the eastern OSM paseo still entered registry part 6465801UF1366N_part5 by 2.8 m (and part6 by 0.5 m), not 0.64 m from it. On the aerial the pink paseo (about 3.5 m wide) crosses both parts and the rest of part5 is open sand; neighbouring registry roofs match the image, and IMG_2346/IMG_2347 (pins about 4 m) show sand, the Barraka sign planter and a walkway there. So the footprint, not the line, was wrong: both parts keep their exact rings as dashed registry outlines with floors 0 (data/registry_corrections.json), no longer extruded or solid. Paseo points unchanged; the whole paseo now keeps 1.5 m from every standing house and is walked end to end both ways. Open: east of Barraka the OSM line runs along the landward edge of the pink strip, about 2 m landward of its centre on the aerial.",
+    "Dave, 2026-10-21, on a render of the corner by Calle Guillermo: the sandstone wall is not 3 m tall there. The garden behind its east end now falls to 1 m above the paseo (data/main_pool.json gardenFall), so the wall stays about 1 m (task guillermo-slope-east-steps); this answers issue #40's question in favour of the gardens falling. The fall's shape is estimated."
    ]
   },
   {
