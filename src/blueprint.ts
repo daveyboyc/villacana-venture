@@ -11,7 +11,7 @@ import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
 import {barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import middleSouth from "../data/middle_pool_south_gate.json";
-import {middleSouthRings,middleSouthRect} from "./middle-pool-south-gate";
+import {middleSouthRings,middleSouthRect,middleSouthAt} from "./middle-pool-south-gate";
 import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { pointInRing } from "./geom";
@@ -146,7 +146,9 @@ async function boot(): Promise<void> {
   line(middlePoolNorth.pergola.points as Vec2[],"#8a8172",.1,middlePoolNorth.pergola.id,middlePoolNorth.pergola.trust);
   for(const ring of evaLawnRings)mtitled(el("path",{d:path(ring),fill:"#668448","data-eva-id":evaLawn.id}),evaLawn.trust);
   for(const ring of evaWallRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.04,"data-eva-id":evaLawn.id}),evaLawn.trust);
-  mtitled(el("path",{d:path(middleSouthRect(...middleSouth.paving.along as [number,number],...middleSouth.paving.across as [number,number])),fill:"#b2a793","data-middle-id":"middle-pool-south-gate-paving"}),"IMG_2334: crazy paving and flush drain at level south entrance");
+  mtitled(el("path",{d:path(middleSouthRect(...middleSouth.forecourt.along as [number,number],...middleSouth.forecourt.across as [number,number])),fill:"#b2a793","data-middle-id":middleSouth.forecourt.id}),middleSouth.forecourt.trust);
+  // A thin line records the estimated hedge fragment without claiming a structural wall.
+  line([middleSouthAt(middleSouth.hedge.along[0],middleSouth.hedge.across),middleSouthAt(middleSouth.hedge.along[1],middleSouth.hedge.across)],"#5e7948",.18,middleSouth.hedge.id,middleSouth.hedge.trust);
   const sd=middleSouth.drain;mtitled(el("path",{d:path(middleSouthRect(sd.along-sd.length/2,sd.along+sd.length/2,sd.across-sd.width/2,sd.across+sd.width/2)),fill:"#26342b","data-middle-id":"middle-pool-south-gate-drain"}),"IMG_2334: flush slatted drain");
   for(const ring of middleSouthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#26342b","stroke-width":.035,"data-middle-id":"middle-pool-south-gate"}),"IMG_2334/2335: open south double gate, planter and wall bench set back past the open leaf; approximate extents");
   frontages.append(middle);

@@ -300,6 +300,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
    "middle_pool_south_gate.json:middle-pool-south-gate",
    "street:eva"
@@ -409,7 +410,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva",
-   "street:silvia-north"
+   "middle_pool_south_gate.json:middle-pool-south-forecourt",
+   "street:silvia-north",
+   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
   ]
  },
  {
@@ -4419,7 +4422,9 @@
    "trust": "checked against photo content"
   },
   "citedBy": [
-   "middle_pool_south_gate.json:middle-pool-south-gate"
+   "middle_pool_south_gate.json:middle-pool-south-gate",
+   "middle_pool_south_gate.json:middle-pool-south-forecourt",
+   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
   ],
   "looksAt": [
    -127.3,
@@ -4427,9 +4432,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
    "middle_pool_south_gate.json:middle-pool-south-gate",
-   "street:eva"
+   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
   ],
   "subject": "south gate, double iron leaves and the planter to its right"
  },
@@ -4461,7 +4467,8 @@
    "trust": "checked against photo content"
   },
   "citedBy": [
-   "middle_pool_south_gate.json:middle-pool-south-gate"
+   "middle_pool_south_gate.json:middle-pool-south-gate",
+   "middle_pool_south_gate.json:middle-pool-south-forecourt"
   ],
   "looksAt": [
    -129.2,
@@ -4470,9 +4477,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "middle_pool_south_gate.json:middle-pool-south-gate",
+   "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
-   "street:eva",
-   "raised_terraces.json:middle-pool-oleander-bed"
+   "street:eva"
   ],
   "subject": "wall bench and blue/yellow tile panel in the west planter, inside the south gate"
  },

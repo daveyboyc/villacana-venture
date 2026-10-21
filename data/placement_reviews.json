@@ -31,6 +31,35 @@
    "notes": "Green aisle is immediately left/northeast of actual Barraka looking seaward; previous southwest run anchors the whole planter arrangement on the wrong flank. Draft candidate moves aisle/planter by [+1,-20]m; exact ground trace/endpoints remain unapproved. See independent review. No closure inferred from software checks or owner side identification.",
    "evidence": "docs/reviews/barraka-planter-placement/README.md",
    "followUp": "barraka-planter-placement"
+  },
+  {
+   "id": "middle-south-forecourt-trace",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-forecourt",
+   "status": "open",
+   "reportedBy": "Codex; independent source review by /root/forecourt_source_review",
+   "reportedAt": "2026-10-21",
+   "sources": [
+    "IMG_2334.jpg",
+    "IMG_2335.jpg",
+    "map:ground"
+   ],
+   "notes": "Draft bounded stone rectangle improves the observed material but ends and width are estimates, concealed in aerial shade/vegetation. Complete physical corner controls/held-out registration and full-vertex measurements are unavailable; current Eva crossing disagrees with the continuous photographed corridor. No <=2m approval or resolution of earlier south-gate photo disagreement.",
+   "evidence": "docs/reviews/middle-pool-south-forecourt/README.md",
+   "followUp": "middle-pool-south-forecourt"
+  },
+  {
+   "id": "middle-south-hedge-continuation",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+   "status": "open",
+   "reportedBy": "Codex; independent source review by /root/forecourt_source_review",
+   "reportedAt": "2026-10-21",
+   "sources": [
+    "IMG_2334.jpg",
+    "map:ground"
+   ],
+   "notes": "Photo shows a tall east hedge continuing inward from the gate. Draft includes only gate-side fragment, stopping clear of retained Eva route. Source does not establish an actual hedge gap at that route, nor independently measured endpoints. Continuation/route relationship remains unresolved.",
+   "evidence": "docs/reviews/middle-pool-south-forecourt/README.md",
+   "followUp": "middle-pool-south-forecourt"
   }
  ]
 }

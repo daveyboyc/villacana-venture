@@ -1,6 +1,7 @@
 import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
 import {surfaceTexture} from "./materials";
+import { outsideMiddleSouthForecourt } from "./middle-pool-south-gate";
 import * as THREE from "three";
 import { closestOnSegment, pointInRing } from "./geom";
 import { addSprites, type SpritePlacement } from "./sprites";
@@ -42,9 +43,11 @@ export function referenceGroundHeight(reference: BoundaryReference, x: number, z
 export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryReference): void {
   const tiles=surfaceTexture("paving");
   const flat=(ring:Vec2[],color:string,y:number,map?:THREE.Texture) => {
-    const shape=new THREE.Shape(ring.map(([x,z])=>new THREE.Vector2(x,-z)));
+   for(const part of outsideMiddleSouthForecourt(ring)) {
+    const shape=new THREE.Shape(part.map(([x,z])=>new THREE.Vector2(x,-z)));
     const mesh=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color,map,roughness:1}));
     mesh.position.y=y;mesh.receiveShadow=true;scene.add(mesh);
+   }
   };
   const ribbon=(points:Vec2[],width:number):Vec2[] => {
     const edge=(sign:number):Vec2[]=>points.map(([x,z],i)=>{
