@@ -58,3 +58,6 @@ arrangement is complete; an exact resort-map placement and 3D build still need
 those world anchors. This follows [AGENTS.md](../../../../AGENTS.md):
 “Distinguish photo-supported wall/opening arrangements from estimated extents,
 untraced enclosure boundaries and likely passages.”
+
+
+22 October correction: the earlier bowed-grille interpretation is withdrawn after owner review and independent full-photo inspection. The fixed grille cages are rectangular, with straight front bars and square side returns. The lane shows four terracotta courses across. See [corrective review](../../middle-pool-south-lane-planters/corrective-review.md). Existing pixel traces are retained; they do not establish a curved cage profile.

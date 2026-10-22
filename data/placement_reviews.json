@@ -60,6 +60,93 @@
    "notes": "Photo shows a tall east hedge continuing inward from the gate. Draft includes only gate-side fragment, stopping clear of retained Eva route. Source does not establish an actual hedge gap at that route, nor independently measured endpoints. Continuation/route relationship remains unresolved.",
    "evidence": "docs/reviews/middle-pool-south-forecourt/README.md",
    "followUp": "middle-pool-south-forecourt"
+  },
+  {
+   "id": "south-lane-left-border-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-left-border",
+   "status": "open",
+   "reportedBy": "Codex; independently source-reviewed by /root/forecourt_source_review",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "map:ground"
+   ],
+   "notes": "Low pale kerb and mixed planting observed on photo-left beyond gate; not a mirror of right raised bed. Draft 2.55 m by .42 m at .18 m high, estimated from gate/tile scale. Stops before registry east house begins at along3.33m: only near exposed fragment built; hidden continuation and true facade/route registration unresolved. No complete visible-corner global registration, held-out validation or independently approved full-vertex placement packet is available. Existing gate/route frame provisional; do not treat compatibility checks as surveyed accuracy.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/README.md",
+   "followUp": "middle-pool-south-lane-planters"
+  },
+  {
+   "id": "south-lane-right-near-bed-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+   "status": "open",
+   "reportedBy": "Codex; independently source-reviewed by /root/forecourt_source_review",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "map:ground"
+   ],
+   "notes": "Raised white bed with clipped shrubs beneath barred opening and coping offsets is visible beyond gate, photo-right. Draft ends at estimated doorway break7.55m, using unchanged west registry facade at across2.49-2.61 as a provisional back constraint. Height .55m, depth .66-.73m and .35-7.55m run are estimates, not a calibrated image trace or independently approved placement. No complete visible-corner global registration, held-out validation or independently approved full-vertex placement packet is available. Existing gate/route frame provisional; do not treat compatibility checks as surveyed accuracy.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/README.md",
+   "followUp": "middle-pool-south-lane-planters"
+  },
+  {
+   "id": "south-lane-right-far-bed-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "status": "open",
+   "reportedBy": "Codex; independently source-reviewed by /root/forecourt_source_review",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "map:ground"
+   ],
+   "notes": "Separate farther white planted fragment visible past recessed doorway. Draft8.6-11.4m run, .6m depth and .48m height estimated; stops without claiming hidden far end. Registry frontage constrains back at across2.22-2.30. Keep7.55-8.6m gap open; the gap position/width are estimates, not a traced surveyed door. No complete visible-corner global registration, held-out validation or independently approved full-vertex placement packet is available. Existing gate/route frame provisional; do not treat compatibility checks as surveyed accuracy.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/README.md",
+   "followUp": "middle-pool-south-lane-planters"
+  },
+  {
+   "id": "south-lane-right-near-grille-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "status": "open",
+   "reportedBy": "Codex; independently source-reviewed by /root/forecourt_source_review",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg",
+    "map:ground"
+   ],
+   "notes": "IMG_2334 shows fixed black grille above right bed, brown shutter behind; IMG_2189 supplies bowed cage/rail style only, not reverse-view placement. Attached at midpoint of unchanged registry frontage; replaces the procedural inferred ground-floor door at this opening. Exact opening location, 1.25m width, .72m sill, 1.95m height, .32m projection and bar count are estimates. No actual building cut or house footprint change. No complete visible-corner global registration, held-out validation or independently approved full-vertex placement packet is available. Existing gate/route frame provisional; do not treat compatibility checks as surveyed accuracy.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/README.md",
+   "followUp": "middle-pool-south-lane-planters"
+  },
+  {
+   "id": "south-lane-right-far-grille-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-far-grille",
+   "status": "open",
+   "reportedBy": "Codex; independently source-reviewed by /root/forecourt_source_review",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg",
+    "map:ground"
+   ],
+   "notes": "IMG_2334 has a farther barred/frontage fragment beyond the doorway, partly hidden by foliage; IMG_2189 supplies grille construction only. Draft midpoint of next unchanged west registry facade, replacing another inferred procedural ground door. Full grille shape/count, shutter surround, .95m width, .78m sill, 1.75m height and .26m projection estimated; no independently established reverse-photo/world correspondence. No complete visible-corner global registration, held-out validation or independently approved full-vertex placement packet is available. Existing gate/route frame provisional; do not treat compatibility checks as surveyed accuracy.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/README.md",
+   "followUp": "middle-pool-south-lane-planters"
+  },
+  {
+   "id": "south-lane-four-column-paving-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "status": "open",
+   "reportedBy": "Codex; owner count correction independently source-checked",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg",
+    "map:ground"
+   ],
+   "notes": "Four tile columns and lane alignment are source-supported, but absolute tile size, edge extents and global floor registration are model estimates. The bounded visual surface follows existing bed and registry constraints. No measured approval; no route or building rescale to force a nominal tile size.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/corrections/README.md",
+   "followUp": "middle-pool-south-lane-planters"
   }
  ]
 }

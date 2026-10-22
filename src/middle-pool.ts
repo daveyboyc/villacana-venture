@@ -5,13 +5,14 @@ import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import { addSprites, type SpritePlacement } from "./sprites";
 import type { Vec2 } from "./types";
+import { inLaneFrontageBand } from "./middle-pool-lane-frontages";
 
 /** The middle pool courtyard: east gateway from Calle Eva and the west planter wall (data/middle_pool.json). */
 const gateway = layout.gateway;
 export const middlePoolPlanter = { ...layout.planter, ring: layout.planter.ring as Vec2[], face: layout.planter.face as Vec2[] };
 export const middlePoolReview = layout.review.rings as Vec2[][];
 
-export const inMiddlePoolReview = (x: number, z: number): boolean => middlePoolReview.some((ring) => pointInRing(x, z, ring)) || inMiddlePoolNorthReview(x,z);
+export const inMiddlePoolReview = (x: number, z: number): boolean => middlePoolReview.some((ring) => pointInRing(x, z, ring)) || inMiddlePoolNorthReview(x,z) || inLaneFrontageBand(x,z);
 
 /** Generated garden walls, gates and props give way to the traced features inside the reviewed bands. */
 export function suppressInMiddlePoolReview<T extends { gardenWalls: Vec2[]; gardenGates: Vec2[]; props: { x: number; z: number }[] }>(skeleton: T): void {

@@ -12,6 +12,7 @@ import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPat
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
 import {addMiddleSouthGate,middleSouthRings} from "./middle-pool-south-gate";
+import { replacesLaneGroundOpening } from "./middle-pool-lane-frontages";
 import {addCervantesGardenDoor,gardenDoorRings,gardenGroundOffset} from "./cervantes-garden-door";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
 import {addLayoutRoutes} from "./layout-routes";
@@ -715,6 +716,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         // A wall shared with the next house has no openings.
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         for (let f = 0; f < b.floors; f++) {
+          if (f === 0 && replacesLaneGroundOpening(x, z)) continue;
           const door = f === 0 && hash(x, z) < 0.3;
           const y = f * floorHeight + (door ? 1.05 : 1.3);
           (door ? doors : windows).push(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), turn, new THREE.Vector3(1, 1, 1)));

@@ -282,7 +282,7 @@
    "planting",
    "facades"
   ],
-  "note": "Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails.",
+  "note": "Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. Owner correction 22 October 2026, independently rechecked against full photo: window-grille cages have straight vertical bars in a flat rectangular projecting frame with square side returns; the earlier bowed interpretation is withdrawn. IMG_2189 clearly shows four terracotta tile columns across the main lane (three internal longitudinal joints); IMG_2334 supports lane-aligned square paving with partly obscured edge cuts. No measured tile dimensions or new world registration inferred.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -294,7 +294,11 @@
    "altitude": 6.9,
    "trust": "checked against photo content"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "middle_pool_lane_frontages.json:south-lane-right-far-grille"
+  ],
   "looksAt": [
    -127.0,
    103.0
@@ -304,7 +308,7 @@
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
    "middle_pool_south_gate.json:middle-pool-south-gate",
-   "street:eva"
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving"
   ],
   "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
  },
@@ -4424,7 +4428,7 @@
    "planting",
    "facades"
   ],
-  "note": "User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf.",
+  "note": "User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. Owner correction 22 October 2026, independently rechecked against full photo: window-grille cages have straight vertical bars in a flat rectangular projecting frame with square side returns; the earlier bowed interpretation is withdrawn. IMG_2189 clearly shows four terracotta tile columns across the main lane (three internal longitudinal joints); IMG_2334 supports lane-aligned square paving with partly obscured edge cuts. No measured tile dimensions or new world registration inferred.",
   "observation": "Looking south through a black iron double gate under a curved metal pergola frame: crazy paving with a drain grate, a raised white planter with shrubs on the right with a white step, a tiled lane beyond between white walls and planting.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1aMUPv4G01OMZqkfEOyJio7IB-crl0irZ/view?usp=drivesdk",
@@ -4439,7 +4443,13 @@
   "citedBy": [
    "middle_pool_south_gate.json:middle-pool-south-gate",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "middle_pool_lane_frontages.json:south-lane-left-border",
+   "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+   "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "middle_pool_lane_frontages.json:south-lane-right-far-grille"
   ],
   "looksAt": [
    -127.3,
@@ -4448,9 +4458,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
    "street:silvia-north",
-   "middle_pool_south_gate.json:middle-pool-south-gate",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "middle_pool_south_gate.json:middle-pool-south-gate"
   ],
   "subject": "south gate, double iron leaves and the planter to its right"
  },

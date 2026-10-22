@@ -1,0 +1,260 @@
+{
+ "about": "Bounded draft from IMG_2334; +along and +across share middle_pool_south_gate.json. Structure and planting types observed; global registration, dimensions and hidden endpoints remain estimates. No house/pool/route/terrain edits.",
+ "beds": [
+  {
+   "id": "south-lane-left-border",
+   "name": "Entrance lane · low left planted border",
+   "outline": [
+    [
+     0.35,
+     -1.22
+    ],
+    [
+     2.9,
+     -1.22
+    ],
+    [
+     2.9,
+     -0.8
+    ],
+    [
+     0.35,
+     -0.8
+    ]
+   ],
+   "height": 0.18,
+   "wall": 0.08,
+   "planting": {
+    "kind": "mixed",
+    "across": -1.01,
+    "along": [
+     0.55,
+     2.7
+    ],
+    "spacing": 0.32,
+    "scale": 0.2,
+    "heightScale": 2.4
+   },
+   "evidence": [
+    "IMG_2334.jpg"
+   ],
+   "trust": "Low pale kerb and mixed planting observed on photo-left beyond gate; not a mirror of right raised bed. Draft 2.55 m by .42 m at .18 m high, estimated from gate/tile scale. Stops before registry east house begins at along3.33m: only near exposed fragment built; hidden continuation and true facade/route registration unresolved."
+  },
+  {
+   "id": "south-lane-right-near-bed",
+   "name": "Entrance lane · raised right frontage bed",
+   "outline": [
+    [
+     0.35,
+     1.72
+    ],
+    [
+     2.4,
+     1.72
+    ],
+    [
+     2.4,
+     1.65
+    ],
+    [
+     7.55,
+     1.65
+    ],
+    [
+     7.55,
+     2.38
+    ],
+    [
+     0.35,
+     2.38
+    ]
+   ],
+   "height": 0.55,
+   "wall": 0.12,
+   "planting": {
+    "kind": "hedge",
+    "across": 2.0,
+    "along": [
+     0.6,
+     7.3
+    ],
+    "spacing": 0.4,
+    "scale": 0.34,
+    "heightScale": 1.6
+   },
+   "evidence": [
+    "IMG_2334.jpg"
+   ],
+   "trust": "Raised white bed with clipped shrubs beneath barred opening and coping offsets is visible beyond gate, photo-right. Draft ends at estimated doorway break7.55m, using unchanged west registry facade at across2.49-2.61 as a provisional back constraint. Height .55m, depth .66-.73m and .35-7.55m run are estimates, not a calibrated image trace or independently approved placement."
+  },
+  {
+   "id": "south-lane-right-far-bed",
+   "name": "Entrance lane · separate right bed beyond doorway",
+   "outline": [
+    [
+     8.6,
+     1.5
+    ],
+    [
+     11.4,
+     1.5
+    ],
+    [
+     11.4,
+     2.1
+    ],
+    [
+     8.6,
+     2.1
+    ]
+   ],
+   "height": 0.48,
+   "wall": 0.11,
+   "planting": {
+    "kind": "hedge",
+    "across": 1.8,
+    "along": [
+     8.85,
+     11.15
+    ],
+    "spacing": 0.4,
+    "scale": 0.28,
+    "heightScale": 1.8
+   },
+   "evidence": [
+    "IMG_2334.jpg"
+   ],
+   "trust": "Separate farther white planted fragment visible past recessed doorway. Draft8.6-11.4m run, .6m depth and .48m height estimated; stops without claiming hidden far end. Registry frontage constrains back at across2.22-2.30. Keep7.55-8.6m gap open; the gap position/width are estimates, not a traced surveyed door."
+  }
+ ],
+ "openings": [
+  {
+   "id": "south-lane-right-near-grille",
+   "name": "Entrance lane · projecting near window grille and brown shutters",
+   "building": "6264401UF1366S_part3",
+   "facade": [
+    [
+     -126.84,
+     108.03
+    ],
+    [
+     -124.52,
+     112.05
+    ]
+   ],
+   "at": 0.5,
+   "width": 1.25,
+   "bottom": 0.72,
+   "height": 1.95,
+   "projection": 0.32,
+   "bars": 9,
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg"
+   ],
+   "trust": "IMG_2334 shows fixed black grille above right bed, brown shutter behind; IMG_2189 supplies straight rectangular cage/rail style only, not reverse-view placement. Attached at midpoint of unchanged registry frontage; replaces the procedural inferred ground-floor door at this opening. Exact opening location, 1.25m width, .72m sill, 1.95m height, .32m projection and bar count are estimates. No actual building cut or house footprint change. Owner correction 2026-10-22, independently rechecked: straight upright bars in a flat front plane with square side returns; the earlier sine-shaped bow was unsupported.",
+   "profile": "rectangular"
+  },
+  {
+   "id": "south-lane-right-far-grille",
+   "name": "Entrance lane · bounded farther shuttered grille",
+   "building": "6264401UF1366S_part3",
+   "facade": [
+    [
+     -124.17,
+     111.86
+    ],
+    [
+     -121.64,
+     116.21
+    ]
+   ],
+   "at": 0.5,
+   "width": 0.95,
+   "bottom": 0.78,
+   "height": 1.75,
+   "projection": 0.26,
+   "bars": 7,
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg"
+   ],
+   "trust": "IMG_2334 has a farther barred/frontage fragment beyond the doorway, partly hidden by foliage; IMG_2189 supplies grille construction only. Draft midpoint of next unchanged west registry facade, replacing another inferred procedural ground door. Full grille shape/count, shutter surround, .95m width, .78m sill, 1.75m height and .26m projection estimated; no independently established reverse-photo/world correspondence. Owner correction 2026-10-22, independently rechecked: straight upright bars in a flat front plane with square side returns; the earlier sine-shaped bow was unsupported.",
+   "profile": "rectangular"
+  }
+ ],
+ "doorway": {
+  "along": [
+   7.55,
+   8.6
+  ],
+  "across": [
+   0.8,
+   2.45
+  ],
+  "trust": "Maintain open approach between separate right bed fragments. Estimated position; no invented solid gate, door leaf or enclosed private boundary."
+ },
+ "review": {
+  "along": [
+   0.15,
+   11.65
+  ],
+  "across": [
+   -1.4,
+   2.75
+  ]
+ },
+ "paving": {
+  "id": "south-lane-four-column-paving",
+  "name": "Entrance lane · four-column terracotta paving",
+  "columns": 4,
+  "tilePitch": 0.6,
+  "sections": [
+   [
+    0.15,
+    -0.8,
+    1.72
+   ],
+   [
+    2.4,
+    -0.8,
+    1.72
+   ],
+   [
+    2.4,
+    -0.8,
+    1.65
+   ],
+   [
+    2.9,
+    -0.8,
+    1.65
+   ],
+   [
+    3.333642,
+    -0.766875,
+    1.65
+   ],
+   [
+    7.55,
+    -0.72192,
+    1.65
+   ],
+   [
+    8.6,
+    -0.710725,
+    1.5
+   ],
+   [
+    11.4,
+    -0.680871,
+    1.5
+   ]
+  ],
+  "evidence": [
+   "IMG_2334.jpg",
+   "IMG_2189.jpg"
+  ],
+  "trust": "Owner identifies four tiles across, independently rechecked in IMG_2189: four terracotta courses with three internal longitudinal joints, aligned to lane. IMG_2334 supports lane-aligned square paving, with edge cuts and occlusion. Bounded existing model gap is used for a four-column UV grid; .6m row pitch is model-derived and estimated, not measured tile size. Edge bounds follow existing bed fronts and stay outside original east house. No lane, bed, building, doorway or route rescale; exact world width/registration remains unapproved."
+ }
+}
