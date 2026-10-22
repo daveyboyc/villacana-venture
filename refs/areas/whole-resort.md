@@ -28,6 +28,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `pool-decks` (level): 0.05-0.1 m, high confidence. Model: **built**. At all three pools the deck is level with the lawn apart from a coping lip of 5-10 cm. (IMG_2204.jpg, IMG_2193.jpg, IMG_2194.jpg, IMG_2245.jpg, IMG_2188.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `entrance-photo-reference-pack` | Entrance photo inventory, annotated drawings and repeatable map rollout | in-progress · Codex · placement: not-applicable | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2189](../../public/photos-ref/IMG_2189.jpg), [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg), [IMG_2185](../../public/photos-ref/IMG_2185.jpg), [IMG_2187](../../public/photos-ref/IMG_2187.jpg) |
+
 **Built without complete newer photo-check records:** `door-sills`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references

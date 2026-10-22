@@ -878,6 +878,32 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "2026-10-21: built; Dave then flagged the sandstone wall at the corner as too tall, so the garden behind the paseo wall's east end now falls to keep it about 1 m (overlaps issue #40, paseo-east-end-height; its paseo profile and pool level are unchanged). Placement stays unapproved pending independent review. Then Dave: a fence and a coastal gate separate Villacana from Barraka beach in front of the slope; built from IMG_2226 as data/seafront_fence.json (white wall, arched gateway at the lane's foot, railings along the lawn). No ground photo of the slope itself exists yet. Dave then said Jorge meets Guillermo on the level and the ramp starts just past it: Jorge is level again and Guillermo falls 3 m over the last 15.5 m (about 19 %)."
+  },
+  {
+   "id": "entrance-photo-reference-pack",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Entrance photo inventory, annotated drawings and repeatable map rollout",
+   "photos": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg",
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "IMG_2185.jpg",
+    "IMG_2187.jpg"
+   ],
+   "build": "Create numbered source-photo annotations, independent scene drawings, feature/source/model-status inventory and machine-readable reference-pack template. Include covered-passage structure and identity/registration blockers. Generate a rollout backlog for every existing area using the current reference catalogue.",
+   "avoid": "No geometry changes, invented measurements, inferred hidden connections, private source pixels, or inventory/diagram completion treated as placement approval.",
+   "accept": [
+    "Observed source features have stable IDs, pixel locators and source hashes",
+    "Silvia and Jorge passages and unresolved entrance correspondence remain distinct",
+    "Interactive photo/trace/checklist viewer works on desktop and mobile",
+    "Reusable template, validation and catalogue-driven rollout inventory cover every fixed area"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex"
   }
  ]
 }

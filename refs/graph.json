@@ -34310,6 +34310,19 @@
    }
   },
   {
+   "id": "task:entrance-photo-reference-pack",
+   "kind": "build-task",
+   "name": "Entrance photo inventory, annotated drawings and repeatable map rollout",
+   "priority": 1,
+   "status": "in-progress",
+   "verification": "not-applicable",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -41366,6 +41379,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -41998,6 +42016,36 @@
   {
    "from": "task:guillermo-slope-east-steps",
    "to": "ref:IMG_2227.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "ref:IMG_2334.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "ref:IMG_2189.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "ref:IMG_2190.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "ref:IMG_2191.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "ref:IMG_2185.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "ref:IMG_2187.jpg",
    "relation": "builds-from"
   },
   {
