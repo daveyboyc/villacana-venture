@@ -38,12 +38,12 @@ Source groups remain distinct. Model states refer to draft snapshot 51b75f5. No 
 | T03 | Side walls and belt moulding | IMG_2190.jpg, IMG_2191.jpg | structure-unmapped | Wall thickness, concealed turns and full side extents unresolved. |
 | T04 | Garden exit arch and onward path | IMG_2190.jpg | structure-unmapped | Exit bearing, complete path and relationship to A/B are not established. |
 | T05 | Patterned tunnel tiles and pebble inset | IMG_2190.jpg | material-only | Existing patterned-floor citation does not establish arches, ceiling or walk-through collision. Do not extend the four-course street grid here. |
-| T06 | Left paired door and threshold | IMG_2190.jpg | structure-unmapped | Private access and opening positions unregistered; do not treat as through routes. |
+| T06 | Left near entrance door and threshold | IMG_2190.jpg | structure-unmapped | Private access and opening positions unregistered; do not treat as through routes. |
 | T07 | Hanging lantern | IMG_2190.jpg | unassessed | Further hidden fittings and exact mounting height unknown. |
 | T08 | Pots and shrubs | IMG_2190.jpg | unassessed | Species, permanent arrangement and concealed edges uncertain. |
 | T09 | CALLE SILVIA 1 15 plaque | IMG_2191.jpg | unassessed | Sign is an identity clue, not surveyed entrance placement. |
 | T10 | Wall vent and water-service hatch | IMG_2191.jpg | unassessed | Panel sizes, text detail and mapped wall segment unmeasured. |
-| T11 | Right paired door and threshold | IMG_2190.jpg | structure-unmapped | Separate from the left opening; exact position and mapped facade remain unresolved. |
+| T11 | Right near entrance door and threshold | IMG_2190.jpg | structure-unmapped | Separate from the left opening; exact position and mapped facade remain unresolved. |
 | T12 | Door beside Silvia plaque | IMG_2191.jpg | identity-unresolved | Whether this is T06 or T11 from another angle is not established. Do not add an extra world door from this row. |
 | T13 | Left inner entrance recess | IMG_2190.jpg | structure-unmapped | Global position and precise dimensions remain unresolved. Study uses a guessed 0.65 m recess, not a measured dimension. |
 | T14 | Right inner entrance recess | IMG_2190.jpg | structure-unmapped | Global position and precise dimensions remain unresolved. Study uses a guessed 0.65 m recess, not a measured dimension. |

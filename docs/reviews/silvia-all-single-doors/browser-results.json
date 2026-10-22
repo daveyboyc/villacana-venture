@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checks": [
+    "all four entrances have one normal-width leaf and one spherical gold knob; no paired seams/panels/slats",
+    "continuous bidirectional passage walking",
+    "solid wall/door footprints",
+    "ceiling, inset, lantern, plaque and services",
+    "Details foliage toggle",
+    "canonical app query, photo comparison and 320/390px controls"
+  ],
+  "errors": []
+}

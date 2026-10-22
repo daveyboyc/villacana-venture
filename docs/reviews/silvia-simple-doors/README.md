@@ -1,5 +1,8 @@
 # Simple recessed entrance doors
 
+This was the earlier inner-only correction. The later owner clarification applies
+to all four entrances; see [the full correction](../silvia-all-single-doors/README.md).
+
 Owner correction, 22 October 2026: the wooden entrance doors are simple single
 doors with round golden knobs. The two inner recessed entrances now have plain
 brown wooden leaves and one round gold knob each. The decorative panels, louvres

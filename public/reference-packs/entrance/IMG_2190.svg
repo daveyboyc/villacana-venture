@@ -19,7 +19,7 @@
 <g class="annotation" data-feature="T05" role="button" tabindex="0" aria-label="T05 Patterned tunnel tiles and pebble inset"><title>Patterned tunnel tiles and pebble inset: Terracotta clipped-corner field, small blue/white inserts and a separate pebble rectangle.</title>
 <rect class="locator" x="585" y="930" width="217" height="130" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="652" y="968" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="687" y="1002" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T05</text></g>
-<g class="annotation" data-feature="T06" role="button" tabindex="0" aria-label="T06 Left paired door and threshold"><title>Left paired door and threshold: The left side of IMG_2190 contains a dark paneled/louvred paired door with a threshold.</title>
+<g class="annotation" data-feature="T06" role="button" tabindex="0" aria-label="T06 Left near entrance door and threshold"><title>Left near entrance door and threshold: Dark brown door surface, surrounding frame and threshold in the left near wall bay.</title>
 <rect class="locator" x="233" y="467" width="146" height="405" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="266" y="655" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="301" y="689" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T06</text></g>
 <g class="annotation" data-feature="T07" role="button" tabindex="0" aria-label="T07 Hanging lantern"><title>Hanging lantern: One hanging lantern is clearly visible in IMG_2190.</title>
@@ -31,7 +31,7 @@
 <g class="annotation" data-feature="T08" role="button" tabindex="0" aria-label="T08 Pots and shrubs"><title>Pots and shrubs: Terracotta pots and shrubs flank the floor; planting partly screens the exit.</title>
 <rect class="locator" x="874" y="760" width="316" height="830" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="1009" y="1308" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="1044" y="1342" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T08</text></g>
-<g class="annotation" data-feature="T11" role="button" tabindex="0" aria-label="T11 Right paired door and threshold"><title>Right paired door and threshold: A second dark paired door and threshold are visible on the right of IMG_2190.</title>
+<g class="annotation" data-feature="T11" role="button" tabindex="0" aria-label="T11 Right near entrance door and threshold"><title>Right near entrance door and threshold: Dark brown door surface, surrounding frame and threshold in the right near wall bay.</title>
 <rect class="locator" x="875" y="540" width="298" height="500" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="985" y="740" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="1020" y="774" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T11</text></g>
 <g class="annotation" data-feature="T13" role="button" tabindex="0" aria-label="T13 Left inner entrance recess"><title>Left inner entrance recess: A narrow shadowed side-opening fragment is partly hidden behind the white pier in IMG_2190. The photo does not expose the full door or recess depth.</title>

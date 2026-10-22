@@ -1788,23 +1788,25 @@
     {
       "id": "T06",
       "scene": "T",
-      "name": "Left paired door and threshold",
+      "name": "Left near entrance door and threshold",
       "category": "opening",
       "priority": "structure",
-      "observed": "The left side of IMG_2190 contains a dark paneled/louvred paired door with a threshold.",
+      "observed": "Dark brown door surface, surrounding frame and threshold in the left near wall bay.",
       "modelStatus": "structure-unmapped",
       "modelRevision": null,
       "modelFeatureIds": [],
       "unknown": "Private access and opening positions unregistered; do not treat as through routes.",
       "buildReady": false,
       "requirements": [
-        "Dark paneled/louvred doors stand on both sides with visible thresholds."
+        "One simple brown wooden leaf with one round gold knob, within the existing recessed entrance bay."
       ],
       "evidence": [
         "IMG_2190.jpg"
       ],
       "followUp": "silvia-covered-passage-reference-audit",
-      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map."
+      "studyRepresentation": "Owner-corrected source-relative draft: one normal-width wooden leaf and one round gold knob at every entrance. Wider bays have white side infill. World placement remains unresolved.",
+      "ownerConfirmed": "Latest owner clarification: every entrance is a simple single brown wooden door with one round gold knob, including the near bays. This supersedes the earlier paired-door modelling choice.",
+      "previousInterpretation": "The left side of IMG_2190 contains a dark paneled/louvred paired door with a threshold. Superseded by the owner clarification that these are single doors."
     },
     {
       "id": "T07",
@@ -1893,23 +1895,25 @@
     {
       "id": "T11",
       "scene": "T",
-      "name": "Right paired door and threshold",
+      "name": "Right near entrance door and threshold",
       "category": "opening",
       "priority": "structure",
-      "observed": "A second dark paired door and threshold are visible on the right of IMG_2190.",
+      "observed": "Dark brown door surface, surrounding frame and threshold in the right near wall bay.",
       "modelStatus": "structure-unmapped",
       "modelRevision": null,
       "modelFeatureIds": [],
       "unknown": "Separate from the left opening; exact position and mapped facade remain unresolved.",
       "buildReady": false,
       "requirements": [
-        "A second dark paired door and threshold are visible on the right of IMG_2190."
+        "One simple brown wooden leaf with one round gold knob, within the existing recessed entrance bay."
       ],
       "evidence": [
         "IMG_2190.jpg"
       ],
       "followUp": "silvia-covered-passage-reference-audit",
-      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map."
+      "studyRepresentation": "Owner-corrected source-relative draft: one normal-width wooden leaf and one round gold knob at every entrance. Wider bays have white side infill. World placement remains unresolved.",
+      "ownerConfirmed": "Latest owner clarification: every entrance is a simple single brown wooden door with one round gold knob, including the near bays. This supersedes the earlier paired-door modelling choice.",
+      "previousInterpretation": "A second dark paired door and threshold are visible on the right of IMG_2190. Superseded by the owner clarification that these are single doors."
     },
     {
       "id": "T12",
@@ -1930,7 +1934,8 @@
         "IMG_2191.jpg"
       ],
       "followUp": "silvia-covered-passage-reference-audit",
-      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map."
+      "studyRepresentation": "Owner-corrected source-relative draft: one normal-width wooden leaf and one round gold knob at every entrance. Wider bays have white side infill. World placement remains unresolved.",
+      "ownerConfirmed": "Latest owner clarification: every entrance is a simple single brown wooden door with one round gold knob, including the near bays. This supersedes the earlier paired-door modelling choice."
     },
     {
       "id": "T13",
@@ -1939,7 +1944,7 @@
       "category": "opening",
       "priority": "structure",
       "observed": "A narrow shadowed side-opening fragment is partly hidden behind the white pier in IMG_2190. The photo does not expose the full door or recess depth.",
-      "ownerConfirmed": "Owner identifies this as a recessed entrance with a simple single brown wooden door and a round gold knob. Recess depth may be estimated.",
+      "ownerConfirmed": "Latest owner clarification: every entrance is a simple single brown wooden door with one round gold knob, including the near bays. This supersedes the earlier paired-door modelling choice.",
       "modelStatus": "structure-unmapped",
       "modelRevision": null,
       "modelFeatureIds": [],
@@ -1952,7 +1957,7 @@
         "IMG_2190.jpg"
       ],
       "followUp": "silvia-tunnel-details",
-      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map."
+      "studyRepresentation": "Owner-corrected source-relative draft: one normal-width wooden leaf and one round gold knob at every entrance. Wider bays have white side infill. World placement remains unresolved."
     },
     {
       "id": "T14",
@@ -1961,7 +1966,7 @@
       "category": "opening",
       "priority": "structure",
       "observed": "A narrow shadowed side-opening fragment is partly hidden behind the white pier in IMG_2190. The photo does not expose the full door or recess depth.",
-      "ownerConfirmed": "Owner identifies this as a recessed entrance with a simple single brown wooden door and a round gold knob. Recess depth may be estimated.",
+      "ownerConfirmed": "Latest owner clarification: every entrance is a simple single brown wooden door with one round gold knob, including the near bays. This supersedes the earlier paired-door modelling choice.",
       "modelStatus": "structure-unmapped",
       "modelRevision": null,
       "modelFeatureIds": [],
@@ -1974,7 +1979,7 @@
         "IMG_2190.jpg"
       ],
       "followUp": "silvia-tunnel-details",
-      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map."
+      "studyRepresentation": "Owner-corrected source-relative draft: one normal-width wooden leaf and one round gold knob at every entrance. Wider bays have white side infill. World placement remains unresolved."
     }
   ],
   "relationships": [

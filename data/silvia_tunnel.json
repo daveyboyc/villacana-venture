@@ -6,7 +6,7 @@
   "IMG_2191.jpg"
  ],
  "frame": "photo-relative; x left when looking in, z into the tunnel; no world-map transform",
- "trust": "Visible forms from full-size photos and owner clarification. All dimensions are estimates. Owner authorizes guessed recess depths and generic brown wooden doors where concealed. No measured world placement or connection to the pool gate is asserted. Owner correction: the two inner entrance doors are plain single brown wooden doors with round gold knobs.",
+ "trust": "Visible forms from full-size photos and owner clarification. All dimensions are estimates. Owner authorizes guessed recess depths and generic brown wooden doors where concealed. No measured world placement or connection to the pool gate is asserted. Owner correction: the two inner entrance doors are plain single brown wooden doors with round gold knobs. Latest owner clarification applies to every entrance, including the nearer doors: all four are simple single doors with round gold knobs, superseding the earlier paired-door model.",
  "dimensions": {
   "width": 3.1,
   "length": 7.2,
@@ -26,8 +26,9 @@
    ],
    "depth": 0.32,
    "doorHeight": 2.38,
-   "paired": true,
-   "basis": "Visible paired brown door and threshold; shallow setback estimated."
+   "paired": false,
+   "basis": "Owner confirms one simple brown wooden door with a round gold knob at this entrance. Bay dimensions and recess depth remain estimates.",
+   "knobSide": -1
   },
   {
    "id": "right-near",
@@ -38,8 +39,9 @@
    ],
    "depth": 0.32,
    "doorHeight": 2.38,
-   "paired": true,
-   "basis": "Visible paired brown door and threshold; shallow setback estimated."
+   "paired": false,
+   "basis": "Owner confirms one simple brown wooden door with a round gold knob at this entrance. Bay dimensions and recess depth remain estimates.",
+   "knobSide": -1
   },
   {
    "id": "left-inner",
@@ -51,7 +53,8 @@
    "depth": 0.65,
    "doorHeight": 2.25,
    "paired": false,
-   "basis": "Shadowed side entrance: owner confirms a plain single brown wooden door with a round gold knob. Recess depth remains an estimate."
+   "basis": "Owner confirms one simple brown wooden door with a round gold knob at this entrance. Bay dimensions and recess depth remain estimates.",
+   "knobSide": 1
   },
   {
    "id": "right-inner",
@@ -63,7 +66,8 @@
    "depth": 0.65,
    "doorHeight": 2.25,
    "paired": false,
-   "basis": "Shadowed side entrance: owner confirms a plain single brown wooden door with a round gold knob. Recess depth remains an estimate."
+   "basis": "Owner confirms one simple brown wooden door with a round gold knob at this entrance. Bay dimensions and recess depth remain estimates.",
+   "knobSide": 1
   }
  ],
  "pebbleInset": {
@@ -143,6 +147,7 @@
   "Global entrance footprint and connection to other lanes",
   "Surveyed width/length/height and recess depths",
   "Precise exterior garden layout beyond the exit",
-  "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near pair"
- ]
+  "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near entrance"
+ ],
+ "doorLeafWidth": 0.88
 }
