@@ -1,15 +1,15 @@
 Lane frontage draft validation — 2026-10-22 UTC
-Base: villacana-venture origin/main c472f7a
+Current base: villacana-venture origin/main 65ba8a7f5adccaf4879a742bdc3e8b6d11f9ef86
+Before captures: unchanged baseline c472f7a; after captures refreshed after merging current main.
 Reference inputs: villacana-reference origin/main 24d14f7cd3e3f0f9e7014236819eec2895111e0b
 
-PASS npm run typecheck
-PASS npm run build (existing Vite large-chunk advisory only)
+PASS npm run build (includes typecheck; existing Vite large-chunk advisory only)
 PASS assignment tests: 12
 PASS reference-index tests: 7
 PASS placement-policy unit tests: 31
 PASS assign_photo_map.py: 145 phone sources, 144 camera pins, 1 unplaced
 PASS build_references.py --sheets --check: 176 references, all reviewed, 0 problems
-Reference sync also catalogued four newly merged private Apple screenshots after full-size inspection; these are not lane geometry evidence.
+Reference sync preserves the latest main annotations and four recently merged private Apple screenshots. These are not lane geometry evidence.
 
 PASS check_map: 117 objects checked, 0 problems
 PASS check_street_layout: 18 Google/photo-checked street segments, house/player clearances, 25 joins, canonical names, original registry frontages and key-free reference links PASS
@@ -19,27 +19,40 @@ PASS check_dali_threshold: Dalí threshold: distinct photo-linked bays, grass, s
 PASS check_cervantes_patio_walls: Cervantes photo-linked walls: checked Calle clearances, open approaches, original houses/pools and bounded test scope PASS
 PASS check_elena_north: Elena north: photo-linked gateway, patio wall and beds keep the lanes clear, gateway open and walkable, houses and pools untouched PASS
 PASS check_middle_pool: Middle pool south forecourt: bounded photo-cited stone avoids registry solids; Details hedge footprint clears Eva/Silvia PASS
-PASS check_paseo_wall: Paseo wall: 59 points, 134 m, photo-linked; paseo, lanes and gate connector clear; houses and pools untouched; openings kept; heights 0.4-3.0 m, about 1 m by the south lawn PASS
+PASS check_paseo_wall: Paseo wall: 59 points, 134 m, photo-linked; paseo, lanes and gate connector clear; houses and pools untouched; openings kept; heights 0.4-1.3 m, about 1 m by the south lawn and at the east end PASS
 PASS check_seafront: Paseo clearance: 1676 samples keep 1.5 m from every standing registry house; 2 registry parts on the aerial paseo kept as outlines PASS
 PASS check_pool_levels: Lower main/children’s pools, unchanged other pools and street centre lines, stair rise and ramp width PASS
 PASS check_levels: Levels survey: 22 items, 0 level changes queued, built items match the terrain PASS
 PASS check_lane_frontages: Lane frontages: bounded cited beds clear registry solids/routes; plant footprints clear all streets; grille fronts face lane; doorway gap remains open PASS
+PASS check_lowered_lanes: Lowered lanes: Guillermo falls 3.0 m at most 20% from just past the level Jorge junction, ground cut along it, kiosk on the lawn; east steps 1.1 m wide from street level onto the deck PASS
+PASS check_seafront_fence: Seafront fence: corner wall from the sandstone wall's end, 1.4 m arched gateway at the foot of Calle Guillermo, 36 m of railings to the lawn's east edge, all beside the paseo and clear of lanes, houses and pools PASS
 
-PASS layout browser: 20 routes, bothDirections=true, 410 segments, runtime errors=[]
-Added checks: shared bed map/collision, open doorway approach, lane both directions, Details plant footprint clearance, no Layout planting, explicit generic ground-opening replacement, grille ray visibility from lane.
-PASS overview browser: zoom, rotation, north reset, focus, notes overlay, walk visibility, mobile toolbar.
-PASS photo-map browser (including three mobile viewports):
+PASS layout:
+{"result":{"routes":20,"bothDirections":true,"segments":432,"closedGateBlocks":true,"openGatePasses":true,"levelBuildingKeepsGroups":true,"refinedMaterialGroups":6},"errors":[]}
+
+PASS overview:
+Overview zoom, rotation, north reset, focus notes, overlay toggle, walk visibility and mobile toolbar PASS
+
+PASS photo-map:
 Discovery, full photo, local reviews and caption persistence PASS
 Stable alias and overview photo navigation PASS
 Private and unplaced source discovery PASS
 Unified map: 176 sources, boat search, camera/subject separation, full photo, links, private/unplaced sources, local reviews and mobile PASS
-PASS before/after camera captures and reproducible close views: runtime errors=[]
+
+PASS close-after:
+{"label":"after","query":"pool=middle&at=-159.01467439490852,39.8855679130847&look=-159.89158546407617,46.4985118094724&details=1","viewport":[1200,900],"controls":"wheel -1200, drag [600,450] to [600,360]","errors":[]}
+
+PASS photo-after:
+layout-checks.local/views/IMG_2334.png pool=middle&at=-160.23,33.11&look=-160.14,37.94&details=1 ok
+layout-checks.local/views/IMG_2189.png pool=middle&at=-158.59,63.06&look=-159.30,36.90&details=1 ok
+
+Added layout checks cover shared bed map/collision, open doorway approach, lane both directions, Details plant footprint clearance, no Layout planting, explicit generic ground-opening replacement, grille ray visibility from lane.
 PASS git diff --check
-UNCHANGED original public/map/skeleton.json, data/terrain.json and data/middle_pool_south_gate.json
+UNCHANGED relative to latest main: original public/map/skeleton.json, public/map/ground.jpg, data/terrain.json, data/street_layout.json, data/main_pool.json and data/middle_pool_south_gate.json. Latest-main Guillermo/pool/seafront work is preserved.
 
 PLACEMENT GATE: FAIL — expected unresolved approval, not a software pass.
 Command: python3 scripts/check_placement_changes.py --base origin/main
-253 feature fingerprints lack fresh measured approval, including all five new lane features. Shared renderer dependencies conservatively fingerprint many existing features. Original registry/route/terrain inputs are unchanged.
+253 feature fingerprints lack fresh measured approval, including all five new lane features. Shared renderer dependencies conservatively fingerprint many existing features. Original registry/route/terrain inputs are unchanged relative to current main.
 No gate bypass, report deletion, review identity invention or new placement-verified-by edge.
 Task remains in-progress and PR remains draft. Main unresolved points: left continuation conflicts with current house/route frame; exact bed endpoints/heights, doorway station and window centres are estimates; IMG_2189 is style evidence only.
 

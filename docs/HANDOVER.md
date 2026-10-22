@@ -97,7 +97,7 @@ python3 scripts/test_reference_index.py && python3 scripts/test_placement_verifi
 python3 scripts/check_placement_changes.py --base origin/main
 cd scripts && for c in check_map check_street_layout check_boundary_reference check_terrain \
   check_dali_threshold check_cervantes_patio_walls check_elena_north check_middle_pool check_paseo_wall \
-  check_seafront check_pool_levels check_levels; do python3 $c.py | tail -1; done; cd ..
+  check_seafront check_pool_levels check_levels check_lowered_lanes check_seafront_fence; do python3 $c.py | tail -1; done; cd ..
 npx tsc --noEmit && npm run build
 node scripts/test_layout_browser.cjs
 node scripts/test_overview_browser.cjs

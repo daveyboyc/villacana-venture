@@ -1,0 +1,43 @@
+# guillermo-slope-east-steps: renders and comparison notes
+
+Sources: Dave's Apple Maps 3D screenshots, private `villacana-reference`
+`apple-maps/10` to `13` (2026-10-21), and Dave's remark on `corner-wall-before.png`
+(a render from an intermediate state of this task) that the sandstone wall there is
+not that tall. Side-by-side comparisons with the screenshots stay in the private
+repo (`uploads/guillermo-slope-east-steps-2026-10-21/`), because the screenshots
+are Apple imagery.
+
+The renders use the game's third-person walk camera at an estimated position. The
+Apple camera poses are unknown, so none of these is a calibrated photographic
+match; they show order, sides and which way the ground falls.
+
+| Render pair | What changed |
+| --- | --- |
+| `guillermo-foot-before.png` / `-after.png` | The lane used to stop on a 3 m bank at the paseo with the kiosk standing on street-level ground; it now runs down to the paseo and the kiosk stands on the lawn. |
+| `east-steps-before.png` / `-after.png` | A 2.6 m flight off the restaurant roof becomes a 1.1 m flight from the Picasso side, between the 90 Miles terrace and the east building. |
+| `west-steps-before.png` / `-after.png` | The steps to Enrique's are unchanged. |
+| `corner-wall-before.png` / `-after.png` | The garden behind the paseo wall's east end falls, so the sandstone wall stays about 1 m. |
+| `guillermo-lane-after.png` | Looking down the lowered lane: retaining face on the garden side, parapet on the lawn side. |
+| `gateway-after.png`, `lawn-railing-after.png` | The white wall, arched gateway at the lane's foot and railings along the lawn (IMG_2226), with the lane running on through the gateway to the paseo. |
+| `IMG_2226-before.png` / `-after.png`, `IMG_2227-before.png` / `-after.png` | `scripts/shoot_views.cjs` from the photos' camera pins. Not comparable: the walk camera looks down at the player from behind, so only the far frontage shows; the railings appear along the lawn in the after render. |
+
+What each source supports:
+
+- apple-maps/11 and 10: the lane falling to the paseo, the lawn-side wall getting lower
+  towards the sea, the kiosk at lawn level. Not heights.
+- Dave's remark that Jorge meets Guillermo on the level and the ramp starts just past it.
+- apple-maps/12 and 13: the narrow east flight between the terrace lobe and the
+  east building, from an opening in the Picasso-side wall. Its line was read off
+  the georeferenced aerial (`public/map/ground.jpg`) to about 1 m.
+- Dave's remark: the wall height at the corner; with IMG_2227, about 1 m.
+- Dave's remark that a fence and coastal gate separate Villacana from Barraka beach,
+  and IMG_2226: the order of white wall, arched gateway, short wall and railings,
+  and that the gateway's foot is at paseo level. IMG_2227: the white tiled wall where
+  the sandstone wall ends, and the corner house about 1 m above the beach.
+
+No ground photo shows the slope of Calle Guillermo itself.
+
+Not supported by any source: the ramp's exact start and grade (3 m over 15.5 m follows
+from Dave's description and pool level), the parapet height, and the shape of the
+garden's fall. Placement of `street:guillermo` and `building:6364501UF1366S_part2`
+is unapproved: no measured packet or independent review yet.

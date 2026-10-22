@@ -371,17 +371,33 @@
           53.47
         ],
         [
+          -20.13,
+          126.28
+        ],
+        [
           -14.33,
           135.8
         ],
         [
           -10.85,
           138.36
+        ],
+        [
+          -9.12,
+          140.06
         ]
       ],
       "surface": "terracotta",
       "trust": "Google standard map, satellite imagery and walking-route cross-check, 12 October 2026; local alignment and widths approximate (roughly 1–2 m reference precision)",
-      "referenceId": "street-Calle Guillermo"
+      "referenceId": "street-Calle Guillermo",
+      "heights": [
+        0.27,
+        0.27,
+        -1.892,
+        -2.73,
+        -2.73
+      ],
+      "maxGrade": 0.2
     },
     {
       "id": "eva-west-footpath",

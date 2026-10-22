@@ -78,13 +78,16 @@ Grille projection stays over the bed, outside the protected through route.
 
 ## Validation and limits
 
-The production build, all thirteen applicable source checks, fifty assignment/
+The production build, all fifteen applicable source checks, fifty assignment/
 index/placement-policy tests and full layout regression passed. Layout traversed
-20 routes both ways over 410 segments without runtime errors. Added checks cover
+20 routes both ways over 432 segments without runtime errors. Added checks cover
 bed map nodes/collision, doorway traversal, along-lane traversal, plant footprints,
 explicit procedural-opening replacement, and grilles visible from the lane.
 Overview and photo-map regressions also passed, including mobile views and all
-176 indexed sources. Full outcomes are in [validation.txt](validation.txt).
+176 indexed sources. These checks were rerun after merging current main
+`65ba8a7`, preserving the separately built Guillermo ramp, pool stairs and
+seafront frontage. Before captures retain baseline `c472f7a`; after captures were
+refreshed on the combined build. Full outcomes are in [validation.txt](validation.txt).
 
 The placement change gate withholds approval for the five new features and
 conservatively fingerprinted shared renderer dependencies. No policy is weakened,

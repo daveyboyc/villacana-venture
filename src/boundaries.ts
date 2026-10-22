@@ -83,10 +83,11 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
     const edge = strip(road.width+(road.surface==="terracotta"?0.12:0.35),"#f4f0e5",-0.015);
     strip(road.width,"#ffffff",0,tiles);
     // White retaining faces under the raised tiled approach, down to the ground.
+    // A lane cut below the ground gets its walls from src/lowered-lanes.ts instead.
     const wallPositions: number[] = [];
     for (let i=0;i<edge.length;i++) {
       const a=edge[i], b=edge[(i+1)%edge.length];
-      const ay=roadHeight(road,...a).height-0.015, by=roadHeight(road,...b).height-0.015;
+      const ay=Math.max(0.05,roadHeight(road,...a).height-0.015), by=Math.max(0.05,roadHeight(road,...b).height-0.015);
       wallPositions.push(a[0],0.05,a[1],b[0],by,b[1],a[0],ay,a[1],a[0],0.05,a[1],b[0],0.05,b[1],b[0],by,b[1]);
     }
     const wallGeometry=new THREE.BufferGeometry();wallGeometry.setAttribute("position",new THREE.Float32BufferAttribute(wallPositions,3));wallGeometry.computeVertexNormals();

@@ -100,3 +100,70 @@ two yuccas and a bird-of-paradise, and a tall palm stands on the lawn at the
 foot (`data/objects.json`, ids `enrique-steps-1` to `-4`). Shapes and positions
 are approximate. The bed wall does not block the player. Plants and the hedge
 show only with "Show details" on.
+
+## Calle Guillermo runs down to the paseo; the east steps (2026-10-21)
+
+Dave's Apple Maps 3D screenshots (private `villacana-reference`, apple-maps/10 to 13)
+showed two things the model had wrong.
+
+- **Calle Guillermo ends in a ramp down to the paseo, not on a bank.** The lane runs
+  down to the paseo between the house gardens and a white wall on the lawn side.
+  This replaces "Calle Guillermo now ends at the top of that bank" above. Dave then
+  said Calle Jorge meets Guillermo on the level and the ramp starts just past it, and
+  that it is a smooth ramp with no steps, so
+  Guillermo stays at street level to the Jorge junction and falls from 0.66 m past
+  it (clear of Jorge's paving) to paseo level at the lane's foot: 3 m over 15.5 m,
+  about 19 %, then runs on level through the gateway to the paseo. Its heights are
+  road `heights` in `data/street_layout.json`, as for the Cervantes ramp, and the
+  road carries `maxGrade` 0.2 for this documented steep ramp (other lanes keep the
+  10 % limit). A 0.5 m white parapet stands on the lawn side; on the garden side a
+  white face holds the street-level gardens back. (An earlier version of this task
+  sloped the lane from the foot of the Enrique's steps and ramped Jorge down to meet
+  it; Dave's correction replaced that.)
+- **The kiosk at the foot** (registry part `6364501UF1366S_part2`) stands on the
+  lowered lawn, not 3 m up on street-level ground, and the old street-level channel
+  past it to the beach gate is lowered with the lawn.
+- **The east steps** are a narrow (1.1 m) flight from an opening in the white wall
+  along Calle Pintor Picasso, between the curved 90 Miles terrace and the long white
+  building on the east side of the lawn, down to the paving north-east of the
+  toddler pool. They replace the wide flight off the restaurant roof; the lobe's
+  facade returns to its registry line where that flight was cut into it.
+- **The corner garden and the east end of the paseo wall.** On a render of the corner,
+  Dave said the sandstone wall is not that tall (about 3 m in the model). The garden
+  behind the wall's east end now falls from street level at the house fronts to 1 m
+  above the paseo at the wall (`levels.gardenFall`), so the wall stays about 1 m all
+  along, as IMG_2227 suggested (issue #40).
+
+`data/guillermo_slope.json` holds the inputs, evidence and trust;
+`scripts/build_lowered_lanes.py` derived the outlines from it once (needs shapely):
+`levels.lowerArea` (now with the lawn strip beside the lane, the kiosk and the old
+channel, never a lane's centre line), `surfaceRing`, `terraceRing`, `steps`,
+`gardenFall` and `sheetCut`, the hole cut in the street-level ground for the deck,
+the lowered lanes and the falling garden. `src/lowered-lanes.ts` draws the lane walls;
+`scripts/check_lowered_lanes.py` checks them.
+
+All heights here are estimates: Apple's mesh shows which way the ground falls, not
+how far. The ramp's start is Dave's description, not a measurement; its 3 m comes
+from Dave's pool level, so its 19 % grade is only as good as that. The parapet, the
+1 m wall and the garden's fall are not measured, and the houses beside the ramp stay
+at street level, so the lane passes the last house before the kiosk up to about
+2.4 m below it. Placement
+of the changed streets and kiosk is unapproved until an independent review.
+
+## The fence and gateway onto the paseo (2026-10-21)
+
+Dave: a fence and a coastal gate run in front of the slope, separating Villacana from
+Barraka beach. IMG_2226, from the beach looking north-west, shows them west to east:
+a white wall with a tiled panel where the sandstone wall ends (also IMG_2227), a white
+round-arched gateway at paseo level at the foot of Calle Guillermo, a short white wall,
+then white railings along the big-pool lawn up to Barraka's raised deck.
+`data/seafront_fence.json` and `src/seafront-fence.ts` build them 1.75 m inland of the
+paseo's centre line, just off the paving; the walls and railings are solid, and the
+1.4 m gateway is open (no photo shows a closed leaf). The map draws them and
+`scripts/check_seafront_fence.py` checks their order, the gateway's line with the lane,
+and that they keep clear of the paseo, lanes, houses and pools. Heights (wall 1.5 m,
+railings 1.1 m, arch 2.4 m) are by eye. This replaces "no wall, no step" between the
+lawn and the paseo above: still no step, but a fence.
+
+No ground photo shows the slope of Calle Guillermo itself. IMG_2226 and IMG_2227 show
+its foot: the gateway at paseo level and the corner house about 1 m above the beach.

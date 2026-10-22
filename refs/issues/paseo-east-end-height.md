@@ -12,9 +12,9 @@ Task `paseo-east-end-height` · area **The paseo** · priority P2 · levels
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2227.jpg`: From the beach looking west along the white seafront houses (ground — pin ±2.5 m)
+- `public/photos-ref/IMG_2227.jpg`: From the beach looking west along the white seafront houses (ground — pin ±2.5 m; looks at east end of the sandstone wall and the corner house by Calle Guillermo)
 - `public/photos-ref/IMG_2350.jpg`: Paseo looking north-east: stamped walk, sandstone retaining wall (ground — pin ±3.5 m)
-- `public/photos-ref/IMG_2226.jpg`: From the beach looking back at the resort frontage (ground — pin ±2.0 m)
+- `public/photos-ref/IMG_2226.jpg`: From the beach looking back at the resort frontage (ground — pin ±2.0 m; looks at big-pool lawn frontage: white railings, Guillermo gateway at left)
 
 ## Build
 

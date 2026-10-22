@@ -180,3 +180,12 @@ are added by this change.
 edge, retained OSM extents and indexed photo evidence in addition to its polygon,
 pool and route checks. Before/after photo-camera renders are saved under
 `layout-checks.local/issue-32/` (ignored local review artifacts).
+
+### East end height (21 October 2026)
+
+Dave, on a render of the corner by the foot of Calle Guillermo: the sandstone wall is
+not that tall (the model had about 3 m). The paseo profile and the big-pool level stay
+as they were; instead the garden behind the wall's east end now falls from street
+level at the house fronts to 1 m above the paseo at the wall (`levels.gardenFall` in
+`data/main_pool.json`, see docs/MAIN_POOL.md). `check_paseo_wall.py` now expects
+0.3-1.3 m all along. The fall's shape is estimated; IMG_2227 calls it a planted slope.
