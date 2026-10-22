@@ -959,6 +959,33 @@
    "status": "in-progress",
    "owner": "Codex",
    "notes": "Owner explicitly authorizes guessed recess depth and generic brown wooden doors. Source-relative reconstruction only until map registration is resolved; not a main-map footprint change. Built and independently source-reviewed as a photo-relative draft. Four entrance bays, flat ceiling/arches, floor/inset, mouldings, lantern, pots, plaque and services are represented; software evidence in docs/reviews/silvia-tunnel-details/. No global transform or calibrated photo match; task remains in progress pending world registration."
+  },
+  {
+   "id": "silvia-simple-doors",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "build",
+   "title": "Simplify the recessed entrance doors and add round gold knobs",
+   "photos": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg"
+   ],
+   "features": [
+    "silvia_tunnel.json:silvia-tunnel-study"
+   ],
+   "build": "Apply the owner correction to the two inner recessed entrances: plain single brown wooden leaves with round gold knobs. Preserve the photographed near paired doors and existing recess footprints.",
+   "avoid": "No change to map placement or estimated recess dimensions. Do not describe owner-confirmed concealed door styling as directly measured from the photo.",
+   "accept": [
+    "Both inner doors have simple single leaves and round gold knobs",
+    "Existing paired door sets and passage collision remain intact",
+    "Actual render and production build checked"
+   ],
+   "dependsOn": [
+    "entrance-photo-reference-pack"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Continuation of the owner-approved merged tunnel study. World-registration follow-up remains open; this is an appearance correction."
   }
  ]
 }
