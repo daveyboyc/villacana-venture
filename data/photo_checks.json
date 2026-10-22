@@ -315,6 +315,72 @@
    "by": "Codex",
    "result": "not-comparable",
    "notes": "Construction-style source only: IMG_2189 gate correspondence is unestablished. The draft does not mirror its positions; before/after from its retained camera are diagnostic and cannot verify these feature locations."
+  },
+  {
+   "task": "middle-pool-south-lane-planters",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2334-before.png",
+   "render": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2334-after.png",
+   "checked": "2026-10-22",
+   "by": "Codex (owner correction; independent source review)",
+   "result": "not-comparable",
+   "notes": "Owner-identified grille correction: constant-projection straight uprights, rectangular perimeter and square side returns replace unsupported sinusoidal bow. Brown shutters retained. Corrected source-camera diagnostic uses existing approximate pose; no calibrated photographic match or measured global placement claimed. IMG_2189 supplies count/construction evidence only; its identity as the reverse view of this gate remains unresolved. See corrections/README.md and corrective-review.md."
+  },
+  {
+   "task": "middle-pool-south-lane-planters",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "photo": "IMG_2189.jpg",
+   "before": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2189-before.png",
+   "render": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2189-after.png",
+   "checked": "2026-10-22",
+   "by": "Codex (owner correction; independent source review)",
+   "result": "not-comparable",
+   "notes": "Owner-identified grille correction: constant-projection straight uprights, rectangular perimeter and square side returns replace unsupported sinusoidal bow. Brown shutters retained. Corrected source-camera diagnostic uses existing approximate pose; no calibrated photographic match or measured global placement claimed. IMG_2189 supplies count/construction evidence only; its identity as the reverse view of this gate remains unresolved. See corrections/README.md and corrective-review.md."
+  },
+  {
+   "task": "middle-pool-south-lane-planters",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-far-grille",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2334-before.png",
+   "render": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2334-after.png",
+   "checked": "2026-10-22",
+   "by": "Codex (owner correction; independent source review)",
+   "result": "not-comparable",
+   "notes": "Owner-identified grille correction: constant-projection straight uprights, rectangular perimeter and square side returns replace unsupported sinusoidal bow. Brown shutters retained. Corrected source-camera diagnostic uses existing approximate pose; no calibrated photographic match or measured global placement claimed. IMG_2189 supplies count/construction evidence only; its identity as the reverse view of this gate remains unresolved. See corrections/README.md and corrective-review.md."
+  },
+  {
+   "task": "middle-pool-south-lane-planters",
+   "feature": "middle_pool_lane_frontages.json:south-lane-right-far-grille",
+   "photo": "IMG_2189.jpg",
+   "before": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2189-before.png",
+   "render": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2189-after.png",
+   "checked": "2026-10-22",
+   "by": "Codex (owner correction; independent source review)",
+   "result": "not-comparable",
+   "notes": "Owner-identified grille correction: constant-projection straight uprights, rectangular perimeter and square side returns replace unsupported sinusoidal bow. Brown shutters retained. Corrected source-camera diagnostic uses existing approximate pose; no calibrated photographic match or measured global placement claimed. IMG_2189 supplies count/construction evidence only; its identity as the reverse view of this gate remains unresolved. See corrections/README.md and corrective-review.md."
+  },
+  {
+   "task": "middle-pool-south-lane-planters",
+   "feature": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2334-before.png",
+   "render": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2334-after.png",
+   "checked": "2026-10-22",
+   "by": "Codex (owner correction; independent source review)",
+   "result": "not-comparable",
+   "notes": "Owner-identified tile-count correction: four terracotta courses, three internal longitudinal joints, aligned with lane. Actual modeled floor spans one four-column atlas; row pitch and full width remain estimates. Corrected source-camera diagnostic uses existing approximate pose; no calibrated photographic match or measured global placement claimed. IMG_2189 supplies count/construction evidence only; its identity as the reverse view of this gate remains unresolved. See corrections/README.md and corrective-review.md."
+  },
+  {
+   "task": "middle-pool-south-lane-planters",
+   "feature": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "photo": "IMG_2189.jpg",
+   "before": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2189-before.png",
+   "render": "docs/reviews/middle-pool-south-lane-planters/corrections/IMG_2189-after.png",
+   "checked": "2026-10-22",
+   "by": "Codex (owner correction; independent source review)",
+   "result": "not-comparable",
+   "notes": "Owner-identified tile-count correction: four terracotta courses, three internal longitudinal joints, aligned with lane. Actual modeled floor spans one four-column atlas; row pitch and full width remain estimates. Corrected source-camera diagnostic uses existing approximate pose; no calibrated photographic match or measured global placement claimed. IMG_2189 supplies count/construction evidence only; its identity as the reverse view of this gate remains unresolved. See corrections/README.md and corrective-review.md."
   }
  ],
  "legacyUnchecked": [

@@ -1,5 +1,7 @@
 # Entrance lane frontage build
 
+**Owner correction, 22 October:** the initial bowed cages were incorrect. Current grilles are rectangular with straight bars; the lane now uses four aligned tile columns. See [corrected comparisons](corrections/README.md) and [independent corrective review](corrective-review.md). Earlier renders and the initial assessment below are retained as history.
+
 The owner asks to build the mapped planted borders and projecting window grilles.
 Full-size IMG_2334 and IMG_2189 and the middle-pool contact sheet were inspected.
 Before renders use the existing corrected cameras/subjects in Details mode.
@@ -43,7 +45,7 @@ street axes and terrain remain unchanged. The task remains in progress until
 required measured placement review is available; source comparison alone is
 not approval under [PLACEMENT_VERIFICATION.md](../../PLACEMENT_VERIFICATION.md).
 
-## Built result and source comparisons
+## Initial build and source comparisons (before owner correction)
 
 - [IMG_2334 before](IMG_2334-before.png) / [after](IMG_2334-after.png): both
   lane-side bed types now appear beyond the gate, with planted right frontage and
@@ -89,7 +91,7 @@ Overview and photo-map regressions also passed, including mobile views and all
 seafront frontage. Before captures retain baseline `c472f7a`; after captures were
 refreshed on the combined build. Full outcomes are in [validation.txt](validation.txt).
 
-The placement change gate withholds approval for the five new features and
+The placement change gate withholds approval for the initially five new features and
 conservatively fingerprinted shared renderer dependencies. No policy is weakened,
 discrepancy deleted or reviewer identity invented. Existing original building,
 pool, street and terrain inputs are unchanged. See

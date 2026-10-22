@@ -38,7 +38,7 @@ export function outsideMiddleSouthForecourt(ring: Vec2[]): Vec2[][] {
  }
  return result;
 }
-export function middleSouthRings():Vec2[][] {
+export function middleSouthRings(includeLaneBeds = true):Vec2[][] {
  const w=f.opening/2,p=f.pier,b=f.planter,s=f.bench,panel=f.panel;
  // Leaves are fixed open into the courtyard against the planter; the wall bench is set back past them, outside the through route.
  return [-1,1].flatMap(side=>{const c=side*(w+p/2);return [middleSouthRect(-p/2,p/2,c-p/2,c+p/2),middleSouthRect(-f.leafLength,0,side*w-.025,side*w+.025)];}).concat([
@@ -46,7 +46,7 @@ export function middleSouthRings():Vec2[][] {
   middleSouthRect(s.along[1],b.along[1],...b.across as [number,number]),
   middleSouthRect(s.along[0],s.along[1],s.plinth.across[0],s.seat.across[1]),
   middleSouthRect(...panel.wallAlong as [number,number],panel.across,panel.across+.16),
-  ...laneFrontageRings(),
+  ...(includeLaneBeds ? laneFrontageRings() : []),
  ]);
 }
 function crazyPavingTexture():THREE.CanvasTexture {

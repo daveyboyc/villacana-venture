@@ -152,7 +152,8 @@
     "IMG_2334.jpg",
     "IMG_2189.jpg"
    ],
-   "trust": "IMG_2334 shows fixed black grille above right bed, brown shutter behind; IMG_2189 supplies bowed cage/rail style only, not reverse-view placement. Attached at midpoint of unchanged registry frontage; replaces the procedural inferred ground-floor door at this opening. Exact opening location, 1.25m width, .72m sill, 1.95m height, .32m projection and bar count are estimates. No actual building cut or house footprint change."
+   "trust": "IMG_2334 shows fixed black grille above right bed, brown shutter behind; IMG_2189 supplies straight rectangular cage/rail style only, not reverse-view placement. Attached at midpoint of unchanged registry frontage; replaces the procedural inferred ground-floor door at this opening. Exact opening location, 1.25m width, .72m sill, 1.95m height, .32m projection and bar count are estimates. No actual building cut or house footprint change. Owner correction 2026-10-22, independently rechecked: straight upright bars in a flat front plane with square side returns; the earlier sine-shaped bow was unsupported.",
+   "profile": "rectangular"
   },
   {
    "id": "south-lane-right-far-grille",
@@ -178,7 +179,8 @@
     "IMG_2334.jpg",
     "IMG_2189.jpg"
    ],
-   "trust": "IMG_2334 has a farther barred/frontage fragment beyond the doorway, partly hidden by foliage; IMG_2189 supplies grille construction only. Draft midpoint of next unchanged west registry facade, replacing another inferred procedural ground door. Full grille shape/count, shutter surround, .95m width, .78m sill, 1.75m height and .26m projection estimated; no independently established reverse-photo/world correspondence."
+   "trust": "IMG_2334 has a farther barred/frontage fragment beyond the doorway, partly hidden by foliage; IMG_2189 supplies grille construction only. Draft midpoint of next unchanged west registry facade, replacing another inferred procedural ground door. Full grille shape/count, shutter surround, .95m width, .78m sill, 1.75m height and .26m projection estimated; no independently established reverse-photo/world correspondence. Owner correction 2026-10-22, independently rechecked: straight upright bars in a flat front plane with square side returns; the earlier sine-shaped bow was unsupported.",
+   "profile": "rectangular"
   }
  ],
  "doorway": {
@@ -201,5 +203,58 @@
    -1.4,
    2.75
   ]
+ },
+ "paving": {
+  "id": "south-lane-four-column-paving",
+  "name": "Entrance lane · four-column terracotta paving",
+  "columns": 4,
+  "tilePitch": 0.6,
+  "sections": [
+   [
+    0.15,
+    -0.8,
+    1.72
+   ],
+   [
+    2.4,
+    -0.8,
+    1.72
+   ],
+   [
+    2.4,
+    -0.8,
+    1.65
+   ],
+   [
+    2.9,
+    -0.8,
+    1.65
+   ],
+   [
+    3.333642,
+    -0.766875,
+    1.65
+   ],
+   [
+    7.55,
+    -0.72192,
+    1.65
+   ],
+   [
+    8.6,
+    -0.710725,
+    1.5
+   ],
+   [
+    11.4,
+    -0.680871,
+    1.5
+   ]
+  ],
+  "evidence": [
+   "IMG_2334.jpg",
+   "IMG_2189.jpg"
+  ],
+  "trust": "Owner identifies four tiles across, independently rechecked in IMG_2189: four terracotta courses with three internal longitudinal joints, aligned to lane. IMG_2334 supports lane-aligned square paving, with edge cuts and occlusion. Bounded existing model gap is used for a four-column UV grid; .6m row pitch is model-derived and estimated, not measured tile size. Edge bounds follow existing bed fronts and stay outside original east house. No lane, bed, building, doorway or route rescale; exact world width/registration remains unapproved."
  }
 }

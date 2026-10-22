@@ -36,6 +36,7 @@ for bed in data['beds']:
 
 houses={b['id']:b for b in skeleton['buildings']}
 for opening in data['openings']:
+    assert opening['profile']=='rectangular','Photo-backed grilles must have straight rectangular profiles'
     assert set(opening['evidence'])<=photos and 'estimat' in opening['trust'].lower()
     a,b=opening['facade']; house=houses[opening['building']]
     assert any(math.dist(a,p)<1e-6 and math.dist(b,q)<1e-6 for p,q in zip(house['ring'],house['ring'][1:]+house['ring'][:1])),'Opening anchor no longer uses original registry edge'
@@ -52,4 +53,20 @@ for c in [i*.1 for i in range(17)]:
         ring=[at(*q) for q in bed['outline']]
         assert not inside(p,ring) and nearest(p,ring+[ring[0]])[0]>=.42,'Doorway approach blocks a player'
 assert max(p[0] for p in data['beds'][0]['outline'])<3.33,'Left fragment must stop before unresolved house/route conflict'
-print('Lane frontages: bounded cited beds clear registry solids/routes; plant footprints clear all streets; grille fronts face lane; doorway gap remains open PASS')
+paving=data['paving']
+assert paving['columns']==4 and set(paving['evidence'])<=photos
+assert 'estimat' in paving['trust'] and paving['tilePitch']>0
+for first,last in zip(paving['sections'],paving['sections'][1:]):
+    if last[0]==first[0]:continue
+    steps=max(1,math.ceil((last[0]-first[0])/.05))
+    for i in range(steps):
+        # Sample each strip interior; duplicate stations encode zero-area bed-front steps.
+        t=(i+.5)/steps;a,left,right=[first[k]+(last[k]-first[k])*t for k in range(3)]
+        assert left<-.6 and right>.6,'Four-course surface no longer covers protected through lane'
+        # Check just inside its perimeter: shared bed edges are legitimate touching boundaries.
+        for across in [left+.001,(left+right)/2,right-.001]:
+            p=at(a,across)
+            assert not any(inside(p,b['ring']) for b in skeleton['buildings'] if b['floors']>0),'Paving enters an original house'
+            assert not any(inside(p,[at(*q) for q in bed['outline']]) for bed in data['beds']),f'Paving enters a planted bed at local {[a,across]}'
+assert paving['sections'][0][0]>=gate['forecourt']['along'][1],'Lane tiles cover courtyard crazy paving'
+print('Lane frontages: bounded beds and four-course paving clear original houses; plant footprints clear streets; rectangular grilles face lane; doorway stays open PASS')

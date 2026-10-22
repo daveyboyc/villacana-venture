@@ -132,6 +132,21 @@
    "notes": "IMG_2334 has a farther barred/frontage fragment beyond the doorway, partly hidden by foliage; IMG_2189 supplies grille construction only. Draft midpoint of next unchanged west registry facade, replacing another inferred procedural ground door. Full grille shape/count, shutter surround, .95m width, .78m sill, 1.75m height and .26m projection estimated; no independently established reverse-photo/world correspondence. No complete visible-corner global registration, held-out validation or independently approved full-vertex placement packet is available. Existing gate/route frame provisional; do not treat compatibility checks as surveyed accuracy.",
    "evidence": "docs/reviews/middle-pool-south-lane-planters/README.md",
    "followUp": "middle-pool-south-lane-planters"
+  },
+  {
+   "id": "south-lane-four-column-paving-registration",
+   "feature": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "status": "open",
+   "reportedBy": "Codex; owner count correction independently source-checked",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg",
+    "map:ground"
+   ],
+   "notes": "Four tile columns and lane alignment are source-supported, but absolute tile size, edge extents and global floor registration are model estimates. The bounded visual surface follows existing bed and registry constraints. No measured approval; no route or building rescale to force a nominal tile size.",
+   "evidence": "docs/reviews/middle-pool-south-lane-planters/corrections/README.md",
+   "followUp": "middle-pool-south-lane-planters"
   }
  ]
 }

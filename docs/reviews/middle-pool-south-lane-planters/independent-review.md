@@ -1,5 +1,7 @@
 # Independent source review: lane-side beds and window grilles
 
+**Historical assessment:** the bowed-profile interpretation below is corrected by [corrective-review.md](corrective-review.md), following the owner's 22 October source correction. This earlier report remains as history and grants no approval.
+
 Reviewer: Codex source-review agent `/root/forecourt_source_review`, separate from
 implementation author. Initial source inspection: 21 October 2026; final render
 review: 22 October 2026 (recorded below). **No placement approval**.

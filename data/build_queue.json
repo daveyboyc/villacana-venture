@@ -853,8 +853,10 @@
     "middle_pool_lane_frontages.json:south-lane-right-near-bed",
     "middle_pool_lane_frontages.json:south-lane-right-far-bed",
     "middle_pool_lane_frontages.json:south-lane-right-near-grille",
-    "middle_pool_lane_frontages.json:south-lane-right-far-grille"
-   ]
+    "middle_pool_lane_frontages.json:south-lane-right-far-grille",
+    "middle_pool_lane_frontages.json:south-lane-four-column-paving"
+   ],
+   "notes": "Owner correction 22 October: rectangular projecting grille frames with straight bars, and four tile columns across the lane. See corrective-review.md and corrections/; prior bowed build retained as comparison history. Absolute placement remains unapproved."
   },
   {
    "id": "guillermo-slope-east-steps",

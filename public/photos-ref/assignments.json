@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 364,
+  "features": 365,
   "photosCitedByModel": 97,
-  "modelFeaturesWithPhotoCitations": 109
+  "modelFeaturesWithPhotoCitations": 110
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -309,6 +309,7 @@
     }
    ],
    "citedBy": [
+    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
     "middle_pool_lane_frontages.json:south-lane-right-near-grille",
     "middle_pool_lane_frontages.json:south-lane-right-far-grille"
    ],
@@ -4702,6 +4703,7 @@
     "middle_pool_south_gate.json:middle-pool-south-gate",
     "middle_pool_south_gate.json:middle-pool-south-forecourt",
     "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
     "middle_pool_lane_frontages.json:south-lane-left-border",
     "middle_pool_lane_frontages.json:south-lane-right-near-bed",
     "middle_pool_lane_frontages.json:south-lane-right-far-bed",

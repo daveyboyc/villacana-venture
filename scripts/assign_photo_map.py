@@ -102,6 +102,8 @@ def features(s):
     hedge=south['hedge']
     add('middle_pool_south_gate.json:'+hedge['id'],hedge['name'],'reference feature','photo-supported east hedge; estimated fragment with unresolved continuation',evidence=hedge['evidence'],points=[south_at(a,hedge['across']) for a in hedge['along']])
     frontages=json.loads((ROOT/'data/middle_pool_lane_frontages.json').read_text())
+    paving=frontages['paving'];sections=paving['sections']
+    add('middle_pool_lane_frontages.json:'+paving['id'],paving['name'],'reference feature','four observed tile columns; bounded model surface and row pitch estimated',evidence=paving['evidence'],ring=[south_at(a,left) for a,left,right in sections]+[south_at(a,right) for a,left,right in reversed(sections)])
     for bed in frontages['beds']:
         add('middle_pool_lane_frontages.json:'+bed['id'],bed['name'],'reference feature','bounded draft from observed frontage; world placement estimated',evidence=bed['evidence'],ring=[south_at(*p) for p in bed['outline']])
     for opening in frontages['openings']:

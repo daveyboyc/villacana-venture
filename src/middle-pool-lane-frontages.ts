@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import data from "../data/middle_pool_lane_frontages.json";
 import gate from "../data/middle_pool_south_gate.json";
-import { plasterMaterial } from "./materials";
+import { plasterMaterial, pavingCanvas } from "./materials";
 import { addSprites, type SpriteKind } from "./sprites";
 import type { Vec2 } from "./types";
 
@@ -14,8 +14,47 @@ export function laneLocal(x: number, z: number): Vec2 {
 export const laneBeds = data.beds;
 export const laneOpenings = data.openings;
 export const laneDoorway = data.doorway;
+export const lanePaving = data.paving;
+export const lanePavingRing = (): Vec2[] => [
+  ...data.paving.sections.map(([a, left]) => laneAt(a, left)),
+  ...[...data.paving.sections].reverse().map(([a, , right]) => laneAt(a, right)),
+];
 export const laneBedRing = (bed: typeof data.beds[number]): Vec2[] => bed.outline.map(([a, c]) => laneAt(a, c));
 export const laneFrontageRings = (): Vec2[][] => data.beds.map(laneBedRing);
+
+/** Replace the generic tile ribbon and white edging only inside this bounded surface. */
+export function outsideLanePaving(ring: Vec2[]): Vec2[][] {
+  const local = ring.map(([x, z]) => laneLocal(x, z));
+  const sections = lanePaving.sections;
+  if (local.every(p => p[0] < sections[0][0]) || local.every(p => p[0] > sections.at(-1)![0]) ||
+      local.every(p => p[1] < Math.min(...sections.map(s => s[1]))) || local.every(p => p[1] > Math.max(...sections.map(s => s[2])))) return [ring];
+  const area = (poly: Vec2[]) => Math.abs(poly.reduce((sum, p, i) => { const q = poly[(i + 1) % poly.length]; return sum + p[0] * q[1] - q[0] * p[1]; }, 0)) / 2;
+  const clip = (poly: Vec2[], a: Vec2, b: Vec2, sign: number): Vec2[] => {
+    const out: Vec2[] = [], distance = (p: Vec2) => sign * ((b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]));
+    for (let i = 0; i < poly.length; i++) {
+      const p = poly[i], q = poly[(i + 1) % poly.length], dp = distance(p), dq = distance(q);
+      if (dp >= 0) out.push(p);
+      if ((dp >= 0) !== (dq >= 0)) { const t = dp / (dp - dq); out.push([p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t]); }
+    }
+    return out;
+  };
+  let parts = THREE.ShapeUtils.triangulateShape(local.map(p => new THREE.Vector2(...p)), []).map(ids => ids.map(i => local[i]));
+  for (let i = 1; i < sections.length; i++) {
+    const [a, left, right] = sections[i - 1], [b, nextLeft, nextRight] = sections[i];
+    if (a === b) continue;
+    const quad: Vec2[] = [[a, left], [b, nextLeft], [b, nextRight], [a, right]];
+    parts = parts.flatMap(part => {
+      const outside: Vec2[][] = []; let inside = part;
+      for (let e = 0; e < quad.length && inside.length; e++) {
+        const p = quad[e], q = quad[(e + 1) % quad.length], fragment = clip(inside, p, q, -1);
+        if (area(fragment) > 1e-8) outside.push(fragment);
+        inside = clip(inside, p, q, 1);
+      }
+      return outside;
+    });
+  }
+  return parts.map(part => part.map(([a, c]) => laneAt(a, c)));
+}
 
 /** Suppress only illustrative clutter and inferred ground openings in this bounded frontage. */
 export function inLaneFrontageBand(x: number, z: number): boolean {
@@ -92,6 +131,33 @@ function shutterTexture(): THREE.CanvasTexture {
   return texture;
 }
 
+function addPaving(scene: THREE.Scene): void {
+  const positions: number[] = [], uv: number[] = [], indices: number[] = [];
+  const start = lanePaving.sections[0][0];
+  lanePaving.sections.forEach(([a, left, right], i) => {
+    for (const [side, across] of [left, right].entries()) {
+      const [x, z] = laneAt(a, across);
+      positions.push(x, .086, z);
+      // The original atlas has four columns and four rows. One full width = four tiles.
+      uv.push(side, (a - start) / (lanePaving.columns * lanePaving.tilePitch));
+    }
+    if (i && a > lanePaving.sections[i - 1][0]) {
+      const l = (i - 1) * 2, r = l + 1, next = i * 2;
+      indices.push(l, r, next, r, next + 1, next);
+    }
+  });
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  geometry.setIndex(indices); geometry.computeVertexNormals();
+  const texture = new THREE.CanvasTexture(pavingCanvas());
+  texture.colorSpace = THREE.SRGBColorSpace; texture.wrapT = THREE.RepeatWrapping;
+  texture.anisotropy = 8;
+  const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ map: texture, roughness: 1 }));
+  mesh.name = lanePaving.id; mesh.userData.noDrape = true; mesh.receiveShadow = true;
+  scene.add(mesh);
+}
+
 export function laneGrilleRing(o: typeof data.openings[number]): Vec2[] {
   const [a, b] = o.facade as Vec2[], length = Math.hypot(b[0] - a[0], b[1] - a[1]);
   const along: Vec2 = [(b[0] - a[0]) / length, (b[1] - a[1]) / length];
@@ -111,7 +177,7 @@ function addOpening(scene: THREE.Scene, o: typeof data.openings[number], plaster
   const iron = new THREE.MeshStandardMaterial({ color: "#202522", roughness: .65, metalness: .35 });
   const box = (x: number, y: number, z: number, w: number, h: number, d: number, material: THREE.Material) => {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
-    mesh.position.set(x, y + h / 2, z); group.add(mesh);
+    mesh.position.set(x, y + h / 2, z); group.add(mesh); return mesh;
   };
   // These facades face clockwise into the lane; the orientation is validated against the house polygon.
   for (const side of [-1, 1]) box(side * (o.width / 2 + .055), o.bottom - .06, .045, .11, o.height + .17, .11, plaster);
@@ -119,26 +185,26 @@ function addOpening(scene: THREE.Scene, o: typeof data.openings[number], plaster
   box(0, o.bottom + o.height, .045, o.width + .24, .12, .12, plaster);
   const shutter = new THREE.Mesh(new THREE.PlaneGeometry(o.width, o.height), new THREE.MeshStandardMaterial({ map: shutterTexture(), roughness: .9, side: THREE.DoubleSide }));
   shutter.position.set(0, o.bottom + o.height / 2, .055); group.add(shutter);
-  const front = (t: number) => .08 + (o.projection - .08) * Math.sin(Math.PI * t);
   const tube = (points: THREE.Vector3[], radius = .012) => group.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 16, radius, 5, false), iron));
   for (let i = 0; i < o.bars; i++) {
     const x = -o.width / 2 + i * o.width / (o.bars - 1);
-    tube(Array.from({ length: 17 }, (_, j) => { const t = j / 16; return new THREE.Vector3(x, o.bottom + o.height * t, front(t)); }));
+    box(x, o.bottom, o.projection, .022, o.height, .022, iron).userData.grillePart = "upright";
   }
   for (const t of [0, .32, .65, 1]) {
-    box(0, o.bottom + o.height * t, front(t), o.width + .04, .026, .026, iron);
-    for (const side of [-1, 1]) box(side * o.width / 2, o.bottom + o.height * t, front(t) / 2, .026, .026, front(t), iron);
+    box(0, o.bottom + o.height * t, o.projection, o.width + .04, .026, .026, iron);
+    for (const side of [-1, 1]) box(side * o.width / 2, o.bottom + o.height * t, o.projection / 2, .026, .026, o.projection, iron);
   }
   // Small paired curls are schematic metalwork; no photographic texture or exact motif claim.
   for (const side of [-1, 1]) tube(Array.from({ length: 21 }, (_, i) => {
     const angle = i * Math.PI * 2 / 20;
-    return new THREE.Vector3(side * .14 + .055 * Math.cos(angle), o.bottom + o.height * .48 + .095 * Math.sin(angle), front(.48));
+    return new THREE.Vector3(side * .14 + .055 * Math.cos(angle), o.bottom + o.height * .48 + .095 * Math.sin(angle), o.projection);
   }), .009);
   group.traverse(object => { object.name = o.id; object.userData.noDrape = true; if (object instanceof THREE.Mesh) object.castShadow = object.receiveShadow = true; });
   scene.add(group);
 }
 
 export function addLaneFrontages(scene: THREE.Scene): void {
+  addPaving(scene);
   const plaster = plasterMaterial("#fffdf5");
   for (const bed of data.beds) addBed(scene, bed, plaster);
   for (const opening of data.openings) addOpening(scene, opening, plaster);

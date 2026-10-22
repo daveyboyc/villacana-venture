@@ -25,7 +25,7 @@ const { chromium } = require('playwright');
     await page.mouse.move(600,450);await page.mouse.wheel(0,-1200);await page.waitForTimeout(1200);
     await page.mouse.down();await page.mouse.move(600,360,{steps:6});await page.mouse.up();
     await page.waitForTimeout(1800);
-    const out=path.join(process.cwd(),'docs/reviews/middle-pool-south-lane-planters');fs.mkdirSync(out,{recursive:true});
+    const out=process.env.REVIEW_OUTPUT || path.join(process.cwd(),'docs/reviews/middle-pool-south-lane-planters');fs.mkdirSync(out,{recursive:true});
     await page.screenshot({path:path.join(out,`lane-close-${label}.png`)});
     console.log(JSON.stringify({label,query,viewport:[1200,900],controls:'wheel -1200, drag [600,450] to [600,360]',errors}));
     if(errors.length)throw Error(errors.join('; '));
