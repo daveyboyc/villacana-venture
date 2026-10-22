@@ -6,7 +6,7 @@
   "IMG_2191.jpg"
  ],
  "frame": "photo-relative; x left when looking in, z into the tunnel; no world-map transform",
- "trust": "Visible forms from full-size photos and owner clarification. All dimensions are estimates. Owner authorizes guessed recess depths and generic brown wooden doors where concealed. No measured world placement or connection to the pool gate is asserted.",
+ "trust": "Visible forms from full-size photos and owner clarification. All dimensions are estimates. Owner authorizes guessed recess depths and generic brown wooden doors where concealed. No measured world placement or connection to the pool gate is asserted. Owner correction: the two inner entrance doors are plain single brown wooden doors with round gold knobs.",
  "dimensions": {
   "width": 3.1,
   "length": 7.2,
@@ -51,7 +51,7 @@
    "depth": 0.65,
    "doorHeight": 2.25,
    "paired": false,
-   "basis": "Shadowed side entrance: owner identifies a recessed doorway. Depth and hidden brown wooden door are generic estimates."
+   "basis": "Shadowed side entrance: owner confirms a plain single brown wooden door with a round gold knob. Recess depth remains an estimate."
   },
   {
    "id": "right-inner",
@@ -63,7 +63,7 @@
    "depth": 0.65,
    "doorHeight": 2.25,
    "paired": false,
-   "basis": "Shadowed side entrance: owner identifies a recessed doorway. Depth and hidden brown wooden door are generic estimates."
+   "basis": "Shadowed side entrance: owner confirms a plain single brown wooden door with a round gold knob. Recess depth remains an estimate."
   }
  ],
  "pebbleInset": {
@@ -142,7 +142,6 @@
  "unknown": [
   "Global entrance footprint and connection to other lanes",
   "Surveyed width/length/height and recess depths",
-  "Hidden door design",
   "Precise exterior garden layout beyond the exit",
   "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near pair"
  ]

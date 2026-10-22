@@ -65,7 +65,8 @@ export function createSilviaTunnel(details=true){
   box(e.id+'-threshold',e.side*(half+e.depth/2),.065,z,e.depth,.045,span,trim);
   const door=new THREE.Group();door.name=e.id+'-brown-wooden-door';door.position.set(x,e.doorHeight/2+.06,z);door.rotation.y=Math.PI/2;root.add(door);
   box(e.id+'-leaf',0,0,0,span-.1,e.doorHeight,.085,wood,door);
-  const leaves=e.paired?2:1,leafW=(span-.15)/leaves;
+  if(e.paired){
+  const leaves=2,leafW=(span-.15)/leaves;
   if(e.paired)box('paired-door-centre-seam',0,0,e.side*-.07,.016,e.doorHeight,.016,dark,door);
   for(let j=0;j<leaves;j++){
    const cx=(j-(leaves-1)/2)*leafW;
@@ -75,6 +76,14 @@ export function createSilviaTunnel(details=true){
    }
    for(let slat=0;slat<4;slat++)box('vent-slats',cx,e.doorHeight*.25+slat*.043,e.side*-.1,leafW*.43,.025,.025,dark,door);
    box('door-handle',cx+(j===0?1:-1)*leafW*.29,-.04,e.side*-.11,.023,.12,.025,brass,door);
+  }
+  }else{
+   // Owner correction: a plain single wooden leaf with one spherical gold knob.
+   const gold=new THREE.MeshStandardMaterial({color:'#d8ad42',metalness:.72,roughness:.26});
+   const knobX=(span-.1)*.34,inward=-e.side;
+   const plate=mesh(new THREE.CylinderGeometry(.047,.047,.012,24),gold,'round-gold-backplate',knobX,-e.doorHeight/2+1.02,inward*.053,door);plate.rotation.x=Math.PI/2;
+   const stem=mesh(new THREE.CylinderGeometry(.012,.012,.04,16),gold,'gold-knob-stem',knobX,-e.doorHeight/2+1.02,inward*.078,door);stem.rotation.x=Math.PI/2;
+   mesh(new THREE.SphereGeometry(.043,24,16),gold,'round-gold-knob',knobX,-e.doorHeight/2+1.02,inward*.107,door);
   }
   for(const u of [-span/2,span/2])box('door-frame',u,0,0,.055,e.doorHeight+.1,.14,wood,door);
   box('door-head',0,e.doorHeight/2,0,span+.06,.065,.14,wood,door);

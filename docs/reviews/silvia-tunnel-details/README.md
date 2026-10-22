@@ -1,5 +1,9 @@
 # Silvia tunnel detail draft
 
+Later owner correction: the inner doors are now plain single wooden leaves with
+round gold knobs. See [the correction](../silvia-simple-doors/README.md). The
+original renders below preserve the earlier draft.
+
 The owner identifies the partly hidden left/right spaces as recessed entrance
 bays and explicitly authorizes guessed depth and generic brown wooden doors.
 The build now distinguishes the two directly visible paired door sets from two
