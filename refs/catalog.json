@@ -335,6 +335,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "silvia_tunnel.json:silvia-tunnel-study",
    "seaward_paving.json:silvia-patterned-floor"
   ],
   "looksAt": [
@@ -369,7 +370,9 @@
    "altitude": 6.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_tunnel.json:silvia-tunnel-study"
+  ],
   "looksAt": [
    -115.1,
    115.8

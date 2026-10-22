@@ -1,5 +1,9 @@
 # Entrance reference-pack validation
 
+Historical PR109 pilot snapshot (41 components). The later tunnel draft adds
+T13/T14 and a 43-component pack; see
+[updated validation](../reviews/silvia-tunnel-details/validation.md).
+
 22 October 2026. Scope: source-reference tooling and metadata; no runtime
 geometry, collision, camera positions or placement policy changed.
 

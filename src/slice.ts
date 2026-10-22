@@ -79,7 +79,9 @@ const liveGroundY = (x: number, z: number): number => groundY(x, z) + (seaside?.
 const canvas = document.querySelector<HTMLCanvasElement>("#scene")!;
 const input: InputState = { moveX: 0, moveZ: 0, run: false, jump: false, lookDx: 0, lookDy: 0, zoom: 0, interact: false };
 
-void boot();
+if(new URLSearchParams(location.search).get('study')==='silvia'){
+  void import('./silvia-study').then(m=>m.bootSilviaStudy());
+}else void boot();
 
 async function boot(): Promise<void> {
   const detailLink=document.querySelector<HTMLAnchorElement>("#layout-details")!;

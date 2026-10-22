@@ -2,14 +2,14 @@
 
 A reference pack turns a scene into numbered observations that a person or agent
 can check systematically. The [entrance pilot](../public/reference-packs/entrance/index.html)
-has six source sheets, 41 components, a relationship plan, form elevations,
+has six source sheets, 43 components, a relationship plan, form elevations,
 a feature CSV/JSON and a [map-wide rollout queue](reference-packs/rollout.md).
 The [source review](reference-packs/independent-source-review.md) records the
 independent inspection and remaining limits.
 
 ## What the example demonstrates
 
-The tunnel is no longer a single vague item called “passage”. T01–T12 list its
+The tunnel is no longer a single vague item called “passage”. T01–T14 list its
 arch, flat ceiling, side walls, exit, patterned floor/pebble inset, paired side
 doors/thresholds, lantern, pots, street plaque and services. Only a patterned
 floor currently has an authored source citation; that does not account for the
@@ -110,3 +110,9 @@ changes to runtime geometry, collision, camera positions or placement policy.
 Its queue `photos` field is empty because it builds no model from photos; all six
 inspected input IDs remain explicitly listed in `sourceReferences` and the pack.
 Software/source-review outcomes replace invented model-camera matches.
+
+The later `silvia-tunnel-details` geometry task adds a photo-relative 3D study,
+including two owner-confirmed inner entrance recesses (T13/T14). Its guessed
+depths and concealed brown doors are distinct from direct photo observations.
+Open `/?view=walk&study=silvia&details=1`. This study has no global map transform;
+it does not replace registration or resolve the tunnel audit.

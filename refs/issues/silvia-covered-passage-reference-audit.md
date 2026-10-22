@@ -15,7 +15,7 @@ Task `silvia-covered-passage-reference-audit` · area **Patricia, Silvia, Jorge,
 
 ## Build
 
-Inspect T01–T12 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.
+Inspect T01–T14 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.
 
 ## Do not
 

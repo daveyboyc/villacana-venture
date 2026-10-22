@@ -1,0 +1,149 @@
+{
+ "id": "silvia-tunnel-study",
+ "name": "Calle Silvia 1–15 covered entrance — photo-relative study",
+ "evidence": [
+  "IMG_2190.jpg",
+  "IMG_2191.jpg"
+ ],
+ "frame": "photo-relative; x left when looking in, z into the tunnel; no world-map transform",
+ "trust": "Visible forms from full-size photos and owner clarification. All dimensions are estimates. Owner authorizes guessed recess depths and generic brown wooden doors where concealed. No measured world placement or connection to the pool gate is asserted.",
+ "dimensions": {
+  "width": 3.1,
+  "length": 7.2,
+  "ceiling": 3.05,
+  "wall": 0.28,
+  "archSpring": 2.05,
+  "archCrown": 2.94,
+  "archDepth": 0.32
+ },
+ "entrances": [
+  {
+   "id": "left-near",
+   "side": 1,
+   "along": [
+    1.9,
+    3.35
+   ],
+   "depth": 0.32,
+   "doorHeight": 2.38,
+   "paired": true,
+   "basis": "Visible paired brown door and threshold; shallow setback estimated."
+  },
+  {
+   "id": "right-near",
+   "side": -1,
+   "along": [
+    2.05,
+    3.65
+   ],
+   "depth": 0.32,
+   "doorHeight": 2.38,
+   "paired": true,
+   "basis": "Visible paired brown door and threshold; shallow setback estimated."
+  },
+  {
+   "id": "left-inner",
+   "side": 1,
+   "along": [
+    4.9,
+    5.85
+   ],
+   "depth": 0.65,
+   "doorHeight": 2.25,
+   "paired": false,
+   "basis": "Shadowed side entrance: owner identifies a recessed doorway. Depth and hidden brown wooden door are generic estimates."
+  },
+  {
+   "id": "right-inner",
+   "side": -1,
+   "along": [
+    4.8,
+    5.8
+   ],
+   "depth": 0.65,
+   "doorHeight": 2.25,
+   "paired": false,
+   "basis": "Shadowed side entrance: owner identifies a recessed doorway. Depth and hidden brown wooden door are generic estimates."
+  }
+ ],
+ "pebbleInset": {
+  "along": [
+   3.5,
+   4.65
+  ],
+  "width": 1.65
+ },
+ "lantern": {
+  "along": 4.25,
+  "bottom": 2.27
+ },
+ "pots": [
+  {
+   "id": "front-left",
+   "at": [
+    1.22,
+    0.8
+   ],
+   "radius": 0.31,
+   "height": 0.54,
+   "foliage": 1.12
+  },
+  {
+   "id": "front-right",
+   "at": [
+    -1.22,
+    0.75
+   ],
+   "radius": 0.28,
+   "height": 0.5,
+   "foliage": 1.08
+  },
+  {
+   "id": "exit-left",
+   "at": [
+    1.2,
+    6.45
+   ],
+   "radius": 0.24,
+   "height": 0.4,
+   "foliage": 0.83
+  },
+  {
+   "id": "exit-right",
+   "at": [
+    -1.18,
+    6.4
+   ],
+   "radius": 0.23,
+   "height": 0.4,
+   "foliage": 0.85
+  },
+  {
+   "id": "garden-left-fragment",
+   "at": [
+    1.55,
+    8.7
+   ],
+   "radius": 0.28,
+   "height": 0.4,
+   "foliage": 2.05
+  },
+  {
+   "id": "garden-right-fragment",
+   "at": [
+    -1.55,
+    8.5
+   ],
+   "radius": 0.26,
+   "height": 0.4,
+   "foliage": 1.85
+  }
+ ],
+ "unknown": [
+  "Global entrance footprint and connection to other lanes",
+  "Surveyed width/length/height and recess depths",
+  "Hidden door design",
+  "Precise exterior garden layout beyond the exit",
+  "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near pair"
+ ]
+}

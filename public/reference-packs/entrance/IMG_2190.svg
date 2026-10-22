@@ -34,4 +34,10 @@
 <g class="annotation" data-feature="T11" role="button" tabindex="0" aria-label="T11 Right paired door and threshold"><title>Right paired door and threshold: A second dark paired door and threshold are visible on the right of IMG_2190.</title>
 <rect class="locator" x="875" y="540" width="298" height="500" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="985" y="740" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="1020" y="774" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T11</text></g>
+<g class="annotation" data-feature="T13" role="button" tabindex="0" aria-label="T13 Left inner entrance recess"><title>Left inner entrance recess: A narrow shadowed side-opening fragment is partly hidden behind the white pier in IMG_2190. The photo does not expose the full door or recess depth.</title>
+<rect class="locator" x="382" y="545" width="65" height="252" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="375" y="600" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="410" y="634" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T13</text></g>
+<g class="annotation" data-feature="T14" role="button" tabindex="0" aria-label="T14 Right inner entrance recess"><title>Right inner entrance recess: A narrow shadowed side-opening fragment is partly hidden behind the white pier in IMG_2190. The photo does not expose the full door or recess depth.</title>
+<rect class="locator" x="789" y="551" width="61" height="252" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="784" y="615" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="819" y="649" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T14</text></g>
 </svg>
