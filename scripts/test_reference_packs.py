@@ -1,7 +1,7 @@
 """Reject stale/unsupported source packs and keep the rollout candid about coverage."""
 import copy
 import unittest
-from build_reference_packs import ROOT, catalogue, read, seed, validate
+from build_reference_packs import ROOT, catalogue, read, seed, validate, outputs
 
 class ReferencePacks(unittest.TestCase):
     def setUp(self):self.pack=read(ROOT/'data/reference_packs/entrance.json')
@@ -11,6 +11,16 @@ class ReferencePacks(unittest.TestCase):
         self.assertTrue({'J05','J06','T11','T12'}<={f['id'] for f in self.pack['features']})
         self.assertTrue({f'T{i:02}' for i in range(1,11)}<={f['id'] for f in self.pack['features']})
         self.assertTrue(any(r['from']=='T' and r['to']=='J' and r['status']=='different-place' for r in self.pack['relationships']))
+    def test_next_area_has_own_inventory_and_pending_drawings_without_snapshot(self):
+        self.pack['id']='elena';self.pack['title']='Elena pilot';self.pack.pop('modelSnapshot')
+        for feature in self.pack['features']:feature['modelStatus']='unassessed'
+        files=outputs(self.pack)
+        inventory=ROOT/'docs/reference-packs/elena-inventory.md'
+        self.assertIn(inventory,files)
+        self.assertNotIn(ROOT/'docs/reference-packs/entrance-inventory.md',files)
+        self.assertIn('Elena pilot',files[inventory])
+        self.assertIn('No pinned model snapshot',files[inventory])
+        self.assertIn('pending source tracing',files[ROOT/'public/reference-packs/elena/plan.svg'])
     def test_source_bytes_are_bound(self):
         self.pack['sources'][0]['sha256']='0'*64
         with self.assertRaisesRegex(AssertionError,'Stale source'):validate(self.pack)

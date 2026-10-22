@@ -125,13 +125,17 @@ def outputs(pack):
         elif pack['id']=='entrance': value=entrance_schematic(kind)
         else: value='<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="1200" height="800" fill="#f7f5ef"/><text x="60" y="100" font-family="sans-serif" font-size="30">'+esc(pack['title'])+': '+kind+' drawing pending source tracing</text><text x="60" y="160" font-family="sans-serif" font-size="22">No dimensions, hidden boundaries or connecting routes have been inferred.</text></svg>'
         files[base/(kind+'.svg')]=value
-    rows=['# Entrance feature inventory','','Source groups remain distinct. Model states refer to draft snapshot '+pack['modelSnapshot']['revision'][:7]+'. No row grants placement approval.','','| ID | Feature | Source evidence | Game assessment | Unknown / next check |','| --- | --- | --- | --- | --- |']
+    snapshot=pack.get('modelSnapshot')
+    model_scope='Model states refer to draft snapshot '+snapshot['revision'][:7]+'.' if snapshot else 'No pinned model snapshot is supplied.'
+    rows=['# '+pack['title']+' feature inventory','','Source groups remain distinct. '+model_scope+' No row grants placement approval.','','| ID | Feature | Source evidence | Game assessment | Unknown / next check |','| --- | --- | --- | --- | --- |']
     csv_io=io.StringIO(); writer=csv.writer(csv_io,lineterminator="\n");writer.writerow(['id','scene','feature','source_ids','model_status','observed','unknown','follow_up'])
     for f in pack['features']:
         rows.append('| '+' | '.join(str(v).replace('|','/') for v in [f['id'],f['name'],', '.join(f['evidence']),f['modelStatus'],f['unknown']])+' |')
         writer.writerow([f['id'],f['scene'],f['name'],', '.join(f['evidence']),f['modelStatus'],f['observed'],f['unknown'],f['followUp']])
-    files[base/'checklist.csv']=csv_io.getvalue();files[ROOT/'docs/reference-packs/entrance-inventory.md']='\n'.join(rows)+'\n'
-    areas=read(ROOT/'data/areas.json')['areas']; refs=catalogue(); inspected={s['id'] for p in (read(path) for path in sorted((ROOT/'data/reference_packs').glob('*.json')) if path.name!='schema.json') for s in p.get('sources',[])}; rollout=[]
+    files[base/'checklist.csv']=csv_io.getvalue();files[ROOT/'docs/reference-packs'/(pack['id']+'-inventory.md')]='\n'.join(rows)+'\n'
+    registered=[read(path) for path in sorted((ROOT/'data/reference_packs').glob('*.json')) if path.name!='schema.json']
+    for registered_pack in registered: validate(registered_pack)
+    areas=read(ROOT/'data/areas.json')['areas']; refs=catalogue(); inspected={s['id'] for p in registered for s in p['sources']}; rollout=[]
     priorities={'middle-pool':1,'seaward-lanes':1,'elena':2,'cervantes':2,'dali':2,'north-pool':3,'main-pool':3,'paseo':3,'barraka-beach':3}
     for a in areas:
         candidates=[r for r in refs if a['id'] in r['shows']]; covered=sorted({r['id'] for r in candidates}&inspected)

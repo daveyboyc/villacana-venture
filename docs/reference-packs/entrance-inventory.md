@@ -1,4 +1,4 @@
-# Entrance feature inventory
+# Entrance lane + covered passages feature inventory
 
 Source groups remain distinct. Model states refer to draft snapshot 51b75f5. No row grants placement approval.
 

@@ -8,9 +8,9 @@ geometry, collision, camera positions or placement policy changed.
 - Pack generation/check: six inspected source sheets, 41 component rows and 14
   area templates; deterministic generated outputs current.
 - Portable JSON schema and pilot data validate.
-- Nine reference-pack tests pass, including stale source hash, out-of-bounds
+- Ten reference-pack tests pass, including stale source hash, out-of-bounds
   locators, private source rejection, unknown IDs, unsupported connection claims
-  and model-state evidence requirements.
+  model-state evidence requirements and a second area without a model snapshot.
 - Existing photo-assignment/reference-index/placement-policy tests: 50 pass.
 - Actual Chromium viewer regression passes source switching, component lookup
   and clipboard JSON, photo/trace/label controls, model-state filter, stable deep
