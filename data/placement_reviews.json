@@ -60,6 +60,21 @@
    "notes": "Photo shows a tall east hedge continuing inward from the gate. Draft includes only gate-side fragment, stopping clear of retained Eva route. Source does not establish an actual hedge gap at that route, nor independently measured endpoints. Continuation/route relationship remains unresolved.",
    "evidence": "docs/reviews/middle-pool-south-forecourt/README.md",
    "followUp": "middle-pool-south-forecourt"
+  },
+  {
+   "id": "silvia-study-world-registration",
+   "feature": "silvia_tunnel.json:silvia-tunnel-study",
+   "status": "open",
+   "reportedBy": "Codex; independent source review by /root/forecourt_source_review",
+   "reportedAt": "2026-10-22",
+   "sources": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "map:ground"
+   ],
+   "notes": "Source-relative tunnel draft has no world-map transform. Existing material mask/phone GPS do not register the full entrance, side recesses or garden exit. Owner authorized guessed recess depth/generic concealed doors, not a surveyed global footprint. Register identifiable corners/connections before placing this component on the resort map.",
+   "evidence": "docs/reviews/silvia-tunnel-details/README.md",
+   "followUp": "silvia-covered-passage-reference-audit"
   }
  ]
 }

@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 359,
-  "photosCitedByModel": 96,
-  "modelFeaturesWithPhotoCitations": 104
+  "features": 360,
+  "photosCitedByModel": 97,
+  "modelFeaturesWithPhotoCitations": 105
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2387,6 +2387,16 @@
    ]
   },
   {
+   "id": "silvia_tunnel.json:silvia-tunnel-study",
+   "name": "Calle Silvia 1–15 covered entrance — photo-relative study",
+   "kind": "reference feature",
+   "source": "photo-relative study; world connection unresolved",
+   "evidence": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg"
+   ]
+  },
+  {
    "id": "seaward_paving.json:teodoro-octagonal-paving",
    "name": "teodoro octagonal paving",
    "kind": "reference feature",
@@ -4115,6 +4125,12 @@
   },
   {
    "from": "photo:IMG_2190.jpg",
+   "to": "silvia_tunnel.json:silvia-tunnel-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2190.jpg",
    "to": "seaward_paving.json:silvia-patterned-floor",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -4145,6 +4161,12 @@
    "relation": "possibly-in-view",
    "distance": 41.6,
    "angleOffset": 20.5
+  },
+  {
+   "from": "photo:IMG_2191.jpg",
+   "to": "silvia_tunnel.json:silvia-tunnel-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2192.jpg",

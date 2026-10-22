@@ -9,6 +9,8 @@
   function view(id){for(const node of document.querySelectorAll('.view'))node.hidden=node.id!==id;for(const b of document.querySelectorAll('[data-view]'))b.setAttribute('aria-pressed',String(b.dataset.view===id));}
   function detail(){
     const f=selected,box=$('#feature-detail');box.replaceChildren(el('div',f.id+' / SOURCE GROUP '+f.scene,'id'),el('h2',f.name),el('span',readable(f.modelStatus),'status '+f.modelStatus),el('p',f.observed),el('strong','Still unknown'),el('p',f.unknown),el('small','Follow-up: '+f.followUp));
+    if(f.ownerConfirmed)box.append(el('strong','Owner clarification'),el('p',f.ownerConfirmed));
+    if(f.studyRepresentation)box.append(el('p',f.studyRepresentation));
     for(const id of f.evidence){const b=el('button','Inspect '+id);b.onclick=()=>choose(f.id,id);box.append(b);}
     const copy=el('button','Copy component reference');copy.className='copy-reference';copy.onclick=async()=>{const reference={pack:pack.id,feature:f,sources:pack.sources.filter(s=>f.evidence.includes(s.id)).map(s=>({id:s.id,path:s.path,sha256:s.sha256,width:s.width,height:s.height,locators:s.observations.filter(o=>o.feature===f.id)})),placementStatus:'unapproved'};const text=JSON.stringify(reference,null,2);try{await navigator.clipboard.writeText(text);copy.textContent='Component reference copied';}catch{const fallback=el('textarea');fallback.value=text;fallback.readOnly=true;fallback.setAttribute('aria-label','Component reference for manual copying');box.append(fallback);fallback.select();}};box.append(copy);
   }
@@ -33,6 +35,7 @@
     for(const f of pack.features.filter(f=>filter==='all'||f.modelStatus===filter)){const b=el('button');b.dataset.feature=f.id;b.append(el('span',f.id),document.createTextNode(f.name));b.setAttribute('aria-pressed',String(f.id===selected.id));b.onclick=()=>choose(f.id);list.append(b);}
   }
   $('#scope').textContent=pack.scope;
+  if(pack.study){const a=el('a',pack.study.label);a.href=pack.study.url;a.className='study-link';a.title=pack.study.scope;$('.pack-header nav').append(a);}
   $('#diagram-warning').textContent=pack.diagramNotes||'Author source-specific drawings before geometry. Missing diagrams remain marked pending; no dimensions or hidden connections are inferred.';
   $('#scene-summary').textContent='Source groups '+[...new Set(pack.features.map(f=>f.scene))].join(', ')+' remain distinct until their physical relationships are established.';
   for(const text of [pack.sources.length+' inspected source sheets',pack.features.length+' numbered components',pack.areas.length+' areas partially covered','Placement unapproved'])$('#metrics').append(el('strong',text));

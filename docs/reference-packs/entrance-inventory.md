@@ -45,3 +45,5 @@ Source groups remain distinct. Model states refer to draft snapshot 51b75f5. No 
 | T10 | Wall vent and water-service hatch | IMG_2191.jpg | unassessed | Panel sizes, text detail and mapped wall segment unmeasured. |
 | T11 | Right paired door and threshold | IMG_2190.jpg | structure-unmapped | Separate from the left opening; exact position and mapped facade remain unresolved. |
 | T12 | Door beside Silvia plaque | IMG_2191.jpg | identity-unresolved | Whether this is T06 or T11 from another angle is not established. Do not add an extra world door from this row. |
+| T13 | Left inner entrance recess | IMG_2190.jpg | structure-unmapped | Global position and concealed leaf design remain unresolved. Study uses a guessed 0.65 m recess, not a measured dimension. |
+| T14 | Right inner entrance recess | IMG_2190.jpg | structure-unmapped | Global position and concealed leaf design remain unresolved. Study uses a guessed 0.65 m recess, not a measured dimension. |

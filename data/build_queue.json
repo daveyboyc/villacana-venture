@@ -920,7 +920,7 @@
     "IMG_2185.jpg",
     "IMG_2187.jpg"
    ],
-   "build": "Inspect T01–T12 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.",
+   "build": "Inspect T01–T14 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.",
    "avoid": "Do not transfer the Jorge radial fanlight gate or its passage length into Silvia, infer a barrel vault from an arch, propagate four-column street paving into patterned tunnel floors, or treat a material citation as a structural passage.",
    "accept": [
     "Owner-reported tunnel is identified or remains explicitly unresolved",
@@ -958,7 +958,7 @@
    ],
    "status": "in-progress",
    "owner": "Codex",
-   "notes": "Owner explicitly authorizes guessed recess depth and generic brown wooden doors. Source-relative reconstruction only until map registration is resolved; not a main-map footprint change."
+   "notes": "Owner explicitly authorizes guessed recess depth and generic brown wooden doors. Source-relative reconstruction only until map registration is resolved; not a main-map footprint change. Built and independently source-reviewed as a photo-relative draft. Four entrance bays, flat ceiling/arches, floor/inset, mouldings, lantern, pots, plaque and services are represented; software evidence in docs/reviews/silvia-tunnel-details/. No global transform or calibrated photo match; task remains in progress pending world registration."
   }
  ]
 }
