@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "id": "north-pool",
+  "title": "North pool reference pack",
+  "areas": [
+    "north-pool"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "North pool",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2204.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2204.jpg"
+    },
+    {
+      "id": "IMG_2205.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2205.jpg"
+    },
+    {
+      "id": "IMG_2206.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2206.jpg"
+    },
+    {
+      "id": "IMG_2207.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2207.jpg"
+    },
+    {
+      "id": "IMG_2208.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2208.jpg"
+    },
+    {
+      "id": "IMG_2363.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2363.jpg"
+    },
+    {
+      "id": "ref:apple-maps/02-3d-north-pool.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/02-3d-north-pool.png"
+    },
+    {
+      "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png"
+    },
+    {
+      "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png"
+    },
+    {
+      "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/09-3d-north-pool-looking-south.png"
+    },
+    {
+      "id": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
+      "private": true,
+      "path": "villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png"
+    },
+    {
+      "id": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+      "private": true,
+      "path": "villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg"
+    },
+    {
+      "id": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+      "private": true,
+      "path": "villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg"
+    },
+    {
+      "id": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
+      "private": true,
+      "path": "villacana-reference/photos/05-north-pool-west-side-garden-walls.jpg"
+    },
+    {
+      "id": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
+      "private": true,
+      "path": "villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg"
+    },
+    {
+      "id": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
+      "private": true,
+      "path": "villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

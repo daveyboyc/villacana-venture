@@ -31,6 +31,14 @@ Every batch goes through the same steps, so any agent can pick up any area.
    only for findings that change what we know about an area; also add those
    findings to the area's `notes` in `data/areas.json`.
 
+## Turn photos into a component reference pack
+
+After intake/tagging, follow [REFERENCE_PACK_WORKFLOW.md](REFERENCE_PACK_WORKFLOW.md).
+The pilot at `public/reference-packs/entrance/index.html` links numbered photo
+locators/traces to a component checklist, drawings and model gaps. The rollout
+board has catalogue-derived starter templates for every fixed area. An area tag,
+camera pin or material citation does not account for every visible structure.
+
 ## What is automatic now
 
 `index_photos.py` takes downloaded originals from a private folder, reads phone

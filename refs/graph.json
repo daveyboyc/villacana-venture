@@ -34314,7 +34314,20 @@
    "kind": "build-task",
    "name": "Entrance photo inventory, annotated drawings and repeatable map rollout",
    "priority": 1,
-   "status": "in-progress",
+   "status": "done",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
+   "id": "task:silvia-covered-passage-reference-audit",
+   "kind": "build-task",
+   "name": "Resolve the Silvia tunnel entrance, its components and connection to the lane",
+   "priority": 1,
+   "status": "open",
    "verification": "not-applicable",
    "photoVerification": "unchecked",
    "placement": {
@@ -41384,6 +41397,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:silvia-covered-passage-reference-audit",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -42019,36 +42037,6 @@
    "relation": "builds-from"
   },
   {
-   "from": "task:entrance-photo-reference-pack",
-   "to": "ref:IMG_2334.jpg",
-   "relation": "builds-from"
-  },
-  {
-   "from": "task:entrance-photo-reference-pack",
-   "to": "ref:IMG_2189.jpg",
-   "relation": "builds-from"
-  },
-  {
-   "from": "task:entrance-photo-reference-pack",
-   "to": "ref:IMG_2190.jpg",
-   "relation": "builds-from"
-  },
-  {
-   "from": "task:entrance-photo-reference-pack",
-   "to": "ref:IMG_2191.jpg",
-   "relation": "builds-from"
-  },
-  {
-   "from": "task:entrance-photo-reference-pack",
-   "to": "ref:IMG_2185.jpg",
-   "relation": "builds-from"
-  },
-  {
-   "from": "task:entrance-photo-reference-pack",
-   "to": "ref:IMG_2187.jpg",
-   "relation": "builds-from"
-  },
-  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -42131,6 +42119,11 @@
   {
    "from": "task:middle-pool-south-lane-planters",
    "to": "task:middle-pool-south-forecourt",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:silvia-covered-passage-reference-audit",
+   "to": "task:entrance-photo-reference-pack",
    "relation": "depends-on"
   },
   {

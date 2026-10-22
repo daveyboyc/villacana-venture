@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "id": "main-pool",
+  "title": "Main pool reference pack",
+  "areas": [
+    "main-pool"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Main pool",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2226.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2226.jpg"
+    },
+    {
+      "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png"
+    },
+    {
+      "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png"
+    },
+    {
+      "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png"
+    },
+    {
+      "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png"
+    },
+    {
+      "id": "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

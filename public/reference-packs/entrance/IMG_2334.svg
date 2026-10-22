@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<image class="source-photo" href="../../photos-ref/IMG_2334.jpg" width="1200" height="1600"/>
+<g class="annotation" data-feature="A01" role="button" tabindex="0" aria-label="A01 Gate portal and curved head"><title>Gate portal and curved head: White piers and shallow curved head surround the lane opening.</title>
+<rect class="locator" x="50" y="120" width="610" height="150" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<polyline class="source-trace" points="65,183 180,225 565,253 665,220" fill="none" stroke="#e29d25" stroke-width="6"/>
+<rect x="37" y="122" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="72" y="156" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A01</text></g>
+<g class="annotation" data-feature="A02" role="button" tabindex="0" aria-label="A02 Two open gate leaves"><title>Two open gate leaves: Hinged foreground leaves are distinct from fixed window cages.</title>
+<rect class="locator" x="65" y="190" width="155" height="665" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="55" y="302" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="90" y="336" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A02</text></g>
+<g class="annotation" data-feature="A02" role="button" tabindex="0" aria-label="A02 Two open gate leaves"><title>Two open gate leaves: Hinged foreground leaves are distinct from fixed window cages.</title>
+<rect class="locator" x="565" y="230" width="100" height="635" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="565" y="697" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="600" y="731" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A02</text></g>
+<g class="annotation" data-feature="A03" role="button" tabindex="0" aria-label="A03 Crazy-paved forecourt"><title>Crazy-paved forecourt: Irregular stone foreground changes to terracotta beyond the gate.</title>
+<rect class="locator" x="220" y="805" width="560" height="725" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="375" y="1347" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="410" y="1381" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A03</text></g>
+<g class="annotation" data-feature="A04" role="button" tabindex="0" aria-label="A04 Flush slatted drain"><title>Flush slatted drain: Rectangular black grate sits in the stone paving.</title>
+<rect class="locator" x="0" y="1070" width="387" height="220" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<polyline class="source-trace" points="1,1108 364,1071 386,1257 1,1285" fill="none" stroke="#e29d25" stroke-width="6"/>
+<rect x="175" y="1137" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="210" y="1171" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A04</text></g>
+<g class="annotation" data-feature="A05" role="button" tabindex="0" aria-label="A05 Bench recess and tile panel"><title>Bench recess and tile panel: White inset seat/plinth and blue/yellow tile panel sit right of the opening.</title>
+<rect class="locator" x="805" y="405" width="385" height="1015" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="1030" y="942" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="1065" y="976" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A05</text></g>
+<g class="annotation" data-feature="A06" role="button" tabindex="0" aria-label="A06 Low left planted border"><title>Low left planted border: A lower pale kerb and mixed plants follow photo-left; gate/equipment obscure parts.</title>
+<rect class="locator" x="205" y="345" width="100" height="435" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="205" y="627" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="240" y="661" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A06</text></g>
+<g class="annotation" data-feature="A07" role="button" tabindex="0" aria-label="A07 Raised right frontage bed"><title>Raised right frontage bed: Raised white bed follows the frontage beneath fixed grilles.</title>
+<rect class="locator" x="410" y="455" width="162" height="305" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="465" y="672" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="500" y="706" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A07</text></g>
+<g class="annotation" data-feature="A08" role="button" tabindex="0" aria-label="A08 Recessed doorway break"><title>Recessed doorway break: A recessed opening interrupts the right-hand planted frontage.</title>
+<rect class="locator" x="345" y="360" width="85" height="215" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="345" y="442" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="380" y="476" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A08</text></g>
+<g class="annotation" data-feature="A09" role="button" tabindex="0" aria-label="A09 Rectangular fixed window cage"><title>Rectangular fixed window cage: Straight uprights in a projecting rectangular frame; square side returns, not a bowed silhouette.</title>
+<rect class="locator" x="465" y="245" width="95" height="290" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<polyline class="source-trace" points="487,267 487,522 551,538 551,258" fill="none" stroke="#e29d25" stroke-width="6"/>
+<rect x="473" y="322" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="508" y="356" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A09</text></g>
+<g class="annotation" data-feature="A10" role="button" tabindex="0" aria-label="A10 Brown shutter behind cage"><title>Brown shutter behind cage: Brown louvred shutter remains visible behind fixed bars.</title>
+<rect class="locator" x="535" y="250" width="30" height="240" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="513" y="387" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="548" y="421" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A10</text></g>
+<g class="annotation" data-feature="A11" role="button" tabindex="0" aria-label="A11 Four-course lane paving"><title>Four-course lane paving: Main terracotta lane is aligned with the route; four principal courses are supported, clearer in B03.</title>
+<rect class="locator" x="230" y="520" width="335" height="270" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="320" y="707" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="355" y="741" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A11</text></g>
+<g class="annotation" data-feature="A12" role="button" tabindex="0" aria-label="A12 Climbers and tall boundary planting"><title>Climbers and tall boundary planting: Climbers and tall shrubs frame the portal and obscure wall feet.</title>
+<rect class="locator" x="680" y="25" width="490" height="765" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="860" y="197" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="895" y="231" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A12</text></g>
+<g class="annotation" data-feature="A13" role="button" tabindex="0" aria-label="A13 Farther raised bed fragment"><title>Farther raised bed fragment: A separate white planted fragment is visible farther along the right frontage.</title>
+<rect class="locator" x="353" y="457" width="58" height="108" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="344" y="499" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="379" y="533" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A13</text></g>
+</svg>

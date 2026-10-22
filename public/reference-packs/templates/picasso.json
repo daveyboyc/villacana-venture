@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "id": "picasso",
+  "title": "Pintor Picasso and the car park reference pack",
+  "areas": [
+    "picasso"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Pintor Picasso and the car park",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2345.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2345.jpg"
+    },
+    {
+      "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png"
+    },
+    {
+      "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

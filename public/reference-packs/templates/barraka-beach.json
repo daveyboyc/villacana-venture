@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "id": "barraka-beach",
+  "title": "Barraka and the beach reference pack",
+  "areas": [
+    "barraka-beach"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Barraka and the beach",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+      "private": false,
+      "path": "public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg"
+    },
+    {
+      "id": "IMG_2223.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2223.jpg"
+    },
+    {
+      "id": "IMG_2224.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2224.jpg"
+    },
+    {
+      "id": "IMG_2225.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2225.jpg"
+    },
+    {
+      "id": "IMG_2226.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2226.jpg"
+    },
+    {
+      "id": "IMG_2227.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2227.jpg"
+    },
+    {
+      "id": "IMG_2285.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2285.jpg"
+    },
+    {
+      "id": "IMG_2298.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2298.jpg"
+    },
+    {
+      "id": "IMG_2299.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2299.jpg"
+    },
+    {
+      "id": "IMG_2300.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2300.jpg"
+    },
+    {
+      "id": "IMG_2346.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2346.jpg"
+    },
+    {
+      "id": "IMG_2347.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2347.jpg"
+    },
+    {
+      "id": "IMG_2350.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2350.jpg"
+    },
+    {
+      "id": "IMG_2351.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2351.jpg"
+    },
+    {
+      "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

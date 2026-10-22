@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<image class="source-photo" href="../../photos-ref/IMG_2187.jpg" width="1200" height="1600"/>
+<g class="annotation" data-feature="J01" role="button" tabindex="0" aria-label="J01 Separate covered arch sequence"><title>Separate covered arch sequence: The Jorge set shows a longer repeated arch/flat-ceiling sequence.</title>
+<rect class="locator" x="141" y="0" width="949" height="1500" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="844" y="596" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="879" y="630" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J01</text></g>
+<g class="annotation" data-feature="J04" role="button" tabindex="0" aria-label="J04 CALLE JORGE 27 35 plaque"><title>CALLE JORGE 27 35 plaque: Readable plaque distinguishes Jorge from Silvia 1–15.</title>
+<rect class="locator" x="488" y="874" width="285" height="107" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="598" y="908" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="633" y="942" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J04</text></g>
+</svg>

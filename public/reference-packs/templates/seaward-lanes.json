@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "id": "seaward-lanes",
+  "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo reference pack",
+  "areas": [
+    "seaward-lanes"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2182.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2182.jpg"
+    },
+    {
+      "id": "IMG_2183.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2183.jpg"
+    },
+    {
+      "id": "IMG_2184.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2184.jpg"
+    },
+    {
+      "id": "IMG_2185.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2185.jpg"
+    },
+    {
+      "id": "IMG_2186.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2186.jpg"
+    },
+    {
+      "id": "IMG_2187.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2187.jpg"
+    },
+    {
+      "id": "IMG_2189.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2189.jpg"
+    },
+    {
+      "id": "IMG_2190.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2190.jpg"
+    },
+    {
+      "id": "IMG_2191.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2191.jpg"
+    },
+    {
+      "id": "IMG_2227.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2227.jpg"
+    },
+    {
+      "id": "IMG_2229.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2229.jpg"
+    },
+    {
+      "id": "IMG_2230.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2230.jpg"
+    },
+    {
+      "id": "IMG_2231.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2231.jpg"
+    },
+    {
+      "id": "IMG_2232.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2232.jpg"
+    },
+    {
+      "id": "IMG_2233.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2233.jpg"
+    },
+    {
+      "id": "IMG_2234.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2234.jpg"
+    },
+    {
+      "id": "IMG_2235.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2235.jpg"
+    },
+    {
+      "id": "IMG_2236.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2236.jpg"
+    },
+    {
+      "id": "IMG_2237.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2237.jpg"
+    },
+    {
+      "id": "IMG_2238.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2238.jpg"
+    },
+    {
+      "id": "IMG_2239.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2239.jpg"
+    },
+    {
+      "id": "IMG_2240.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2240.jpg"
+    },
+    {
+      "id": "IMG_2241.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2241.jpg"
+    },
+    {
+      "id": "IMG_2242.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2242.jpg"
+    },
+    {
+      "id": "IMG_2243.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2243.jpg"
+    },
+    {
+      "id": "IMG_2280.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2280.jpg"
+    },
+    {
+      "id": "IMG_2293.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2293.jpg"
+    },
+    {
+      "id": "IMG_2334.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2334.jpg"
+    },
+    {
+      "id": "ref:apple-maps/04-top-down-south-half.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/04-top-down-south-half.png"
+    },
+    {
+      "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png"
+    },
+    {
+      "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+      "private": true,
+      "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

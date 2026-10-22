@@ -48,6 +48,11 @@ stable `?view=map&photo=<ID>` links. Open full images at the returned source pat
 a thumbnail, citation or camera pin is not proof of the pictured location.
 Do not revive the retired OSM default or simplified photo-map renderer.
 
+Before a new scene build, use `docs/REFERENCE_PACK_WORKFLOW.md` to inventory
+visible openings, covered connections, levels and boundaries with numbered source
+references. Keep uncertain identities/connections explicit. A material citation
+does not account for an entire structure. Update an existing pack when applicable.
+
 All reference material is catalogued by area. Before changing anything in an
 area, read `refs/README.md`, then that area's brief in `refs/areas/<id>.md`, and
 look at its contact sheet in the private `villacana-reference` repo

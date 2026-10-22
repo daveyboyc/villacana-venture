@@ -7,11 +7,12 @@ The lanes between the middle pool and the beach.
 ## Known facts and open questions
 
 - IMG_2235/2237/2239 support octagonal terracotta with diamond infills on the photographed Teodoro Rojo run; IMG_2240 remains square. IMG_2185/2190 support cream/blue corner inserts in covered-floor tiles. Material masks use existing ground/registry strips; tile dimensions and passage extents remain estimates, and solid registry strips may still obscure the floor until separately traced as passages. No levels or geometry were changed.
+- 22 October reference-pack pilot: numbered photo locators/traces and 41 component rows keep gate view, lane detail, Silvia1–15 passage and Jorge27–35 passage distinct. Silvia tunnel arch/flat ceiling/walls/doors/exit are not accounted for by the existing floor citation; precise connection and owner target remain unresolved. No geometry changed. See docs/REFERENCE_PACK_WORKFLOW.md and public/reference-packs/entrance/index.html.
 
 ## Read first
 
-- docs: `docs/STREET_LAYOUT.md`
-- data: `data/street_layout.json`, `data/seaward_paving.json`
+- docs: `docs/STREET_LAYOUT.md`, `docs/REFERENCE_PACK_WORKFLOW.md`
+- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`
 - src: `src/seaward-paving.ts`
 - contact sheet: `villacana-reference/contact-sheets/seaward-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
@@ -19,6 +20,14 @@ The lanes between the middle pool and the beach.
 
 Layout: 23, Levels and slopes: 5, Facades and roofs: 4, Materials: 15, Planting: 7, Signs: 3, Views: 1
 31 reviewed, 0 suggested only by camera position.
+
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `silvia-covered-passage-reference-audit` | Resolve the Silvia tunnel entrance, its components and connection to the lane (after entrance-photo-reference-pack) | open · placement: not-applicable |  |
 
 ## Built from these photos
 

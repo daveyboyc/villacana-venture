@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "id": "dali",
+  "title": "Calle Pintor Dalí reference pack",
+  "areas": [
+    "dali"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Calle Pintor Dalí",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2218.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2218.jpg"
+    },
+    {
+      "id": "IMG_2266.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2266.jpg"
+    },
+    {
+      "id": "IMG_2267.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2267.jpg"
+    },
+    {
+      "id": "IMG_2268.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2268.jpg"
+    },
+    {
+      "id": "IMG_2269.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2269.jpg"
+    },
+    {
+      "id": "IMG_2270.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2270.jpg"
+    },
+    {
+      "id": "IMG_2275.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2275.jpg"
+    },
+    {
+      "id": "IMG_2276.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2276.jpg"
+    },
+    {
+      "id": "IMG_2277.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2277.jpg"
+    },
+    {
+      "id": "IMG_2278.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2278.jpg"
+    },
+    {
+      "id": "IMG_2279.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2279.jpg"
+    },
+    {
+      "id": "IMG_2280.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2280.jpg"
+    },
+    {
+      "id": "IMG_2281.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2281.jpg"
+    },
+    {
+      "id": "IMG_2282.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2282.jpg"
+    },
+    {
+      "id": "IMG_2283.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2283.jpg"
+    },
+    {
+      "id": "IMG_2284.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2284.jpg"
+    },
+    {
+      "id": "IMG_2289.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2289.jpg"
+    },
+    {
+      "id": "IMG_2290.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2290.jpg"
+    },
+    {
+      "id": "IMG_2291.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2291.jpg"
+    },
+    {
+      "id": "IMG_2292.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2292.jpg"
+    },
+    {
+      "id": "IMG_2293.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2293.jpg"
+    },
+    {
+      "id": "IMG_2294.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2294.jpg"
+    },
+    {
+      "id": "IMG_2295.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2295.jpg"
+    },
+    {
+      "id": "IMG_2296.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2296.jpg"
+    },
+    {
+      "id": "IMG_2297.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2297.jpg"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

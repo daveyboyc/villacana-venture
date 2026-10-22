@@ -17,6 +17,8 @@ jobs:
       - run: python3 scripts/assign_photo_map.py
       - run: python3 scripts/build_references.py --check
       - run: python3 scripts/test_photo_assignment.py && python3 scripts/test_reference_index.py && python3 scripts/test_placement_verification.py
+      - run: python3 scripts/build_reference_packs.py --check
+      - run: python3 scripts/test_reference_packs.py
       - run: python3 scripts/check_placement_changes.py --base "$PLACEMENT_BASE"
         env:
           PLACEMENT_BASE: ${{ github.event.pull_request.base.sha }}

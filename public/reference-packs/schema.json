@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Villacana photo reference pack",
+  "type": "object",
+  "required": [
+    "version",
+    "id",
+    "title",
+    "areas",
+    "scope",
+    "placementStatus",
+    "sources",
+    "features",
+    "relationships",
+    "criticalChecks"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "areas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "placementStatus": {
+      "const": "unapproved"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "scene",
+          "path",
+          "width",
+          "height",
+          "sha256",
+          "inspectedBy",
+          "inspectedAt",
+          "observations"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "scene": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^public/photos-ref/"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "inspectedBy": {
+            "type": "string",
+            "minLength": 1
+          },
+          "inspectedAt": {
+            "type": "string"
+          },
+          "observations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "feature",
+                "kind",
+                "bbox",
+                "label"
+              ],
+              "properties": {
+                "feature": {
+                  "type": "string"
+                },
+                "kind": {
+                  "enum": [
+                    "locator",
+                    "trace"
+                  ]
+                },
+                "bbox": {
+                  "type": "array",
+                  "minItems": 4,
+                  "maxItems": 4,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "label": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                "polyline": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "features": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "scene",
+          "name",
+          "observed",
+          "modelStatus",
+          "unknown",
+          "buildReady",
+          "requirements",
+          "evidence",
+          "followUp"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z][0-9]{2}$"
+          },
+          "scene": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "observed": {
+            "type": "string"
+          },
+          "modelStatus": {
+            "enum": [
+              "draft-partial",
+              "appearance-corrected",
+              "unassessed",
+              "identity-unresolved",
+              "structure-unmapped",
+              "material-only",
+              "comparison-only"
+            ]
+          },
+          "unknown": {
+            "type": "string",
+            "minLength": 1
+          },
+          "buildReady": {
+            "const": false
+          },
+          "requirements": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "followUp": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "status",
+          "note"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "unresolved",
+              "different-place",
+              "observed-connection"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "criticalChecks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
