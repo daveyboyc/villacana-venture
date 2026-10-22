@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checks": [
+    "four distinct door sets with two generic recessed entrances",
+    "continuous bidirectional passage walking",
+    "solid wall/door footprints",
+    "ceiling, inset, lantern, plaque and services",
+    "Details foliage toggle",
+    "canonical app query, photo comparison and 320/390px controls"
+  ],
+  "errors": []
+}
