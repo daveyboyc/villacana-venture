@@ -17,8 +17,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 21, Levels and slopes: 2, Facades and roofs: 3, Materials: 15, Planting: 7, Signs: 3
-28 reviewed, 0 suggested only by camera position.
+Layout: 24, Levels and slopes: 5, Facades and roofs: 6, Materials: 15, Planting: 7, Signs: 3
+31 reviewed, 0 suggested only by camera position.
 
 ## Built from these photos
 
@@ -27,14 +27,20 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo"]
-  A --> F0["seaward patterned floor · unreviewed"]
-  F0 --> PIMG_2185_jpg(["IMG_2185"])
-  A --> F1["silvia patterned floor · unreviewed"]
-  F1 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F2["teodoro octagonal paving · unreviewed"]
-  F2 --> PIMG_2235_jpg(["IMG_2235"])
-  F2 --> PIMG_2237_jpg(["IMG_2237"])
-  F2 --> PIMG_2239_jpg(["IMG_2239"])
+  A --> F0["Entrance lane · bounded farther shuttered grille · disputed"]
+  F0 --> PIMG_2189_jpg(["IMG_2189"])
+  F0 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F1["Entrance lane · projecting near window grille and brown shutters · disputed"]
+  F1 --> PIMG_2189_jpg(["IMG_2189"])
+  F1 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F2["seaward patterned floor · unreviewed"]
+  F2 --> PIMG_2185_jpg(["IMG_2185"])
+  A --> F3["silvia patterned floor · unreviewed"]
+  F3 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F4["teodoro octagonal paving · unreviewed"]
+  F4 --> PIMG_2235_jpg(["IMG_2235"])
+  F4 --> PIMG_2237_jpg(["IMG_2237"])
+  F4 --> PIMG_2239_jpg(["IMG_2239"])
 ```
 
 ## Placement evidence
@@ -43,6 +49,8 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `middle_pool_lane_frontages.json:south-lane-right-far-grille` | disputed | not-comparable | open discrepancy south-lane-right-far-grille-registration |
+| `middle_pool_lane_frontages.json:south-lane-right-near-grille` | disputed | not-comparable | open discrepancy south-lane-right-near-grille-registration |
 | `seaward_paving.json:seaward-patterned-floor` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seaward_paving.json:silvia-patterned-floor` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seaward_paving.json:teodoro-octagonal-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -53,12 +61,12 @@ graph LR
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2185.jpg](../../public/photos-ref/IMG_2185.jpg) | ground | layout, materials | Covered arched passage, patterned terracotta tiles, sea at the far end _Used by: seaward_paving.json:seaward-patterned-floor._ |
 | [IMG_2190.jpg](../../public/photos-ref/IMG_2190.jpg) | ground | layout, materials | Covered arched passage with potted plants, patterned tiles _Used by: seaward_paving.json:silvia-patterned-floor._ |
 | [IMG_2235.jpg](../../public/photos-ref/IMG_2235.jpg) | ground | materials, layout | Lane paved in octagonal tiles between a white wall and lawn **Note:** Octagonal paving here, not square tiles. _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
-| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |
@@ -76,8 +84,11 @@ graph LR
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
-| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge._ |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
+| `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool west lane and promenade from the sea **Note:** Wide oblique overview of tiled roofs, the lane beside the main-pool terrace and the promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool west lane descending to the promenade **Note:** Closer view of the descending lane, retaining edge and seaward gateway beside the main pool. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool terrace and both stair ends **Note:** Main-pool terrace with western stairs and rounded eastern stair end, pool, toddler pool and promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |

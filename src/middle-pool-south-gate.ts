@@ -3,6 +3,7 @@ import f from "../data/middle_pool_south_gate.json";
 import { plasterMaterial } from "./materials";
 import type { Vec2 } from "./types";
 import { addSprites } from "./sprites";
+import { addLaneFrontages, laneFrontageRings } from "./middle-pool-lane-frontages";
 
 // Local +along points south into the lane; +across is the planter on the photo's right.
 export const middleSouthAt = (along: number, across = 0): Vec2 => [f.center[0]+f.forward[0]*along-f.forward[1]*across,f.center[1]+f.forward[1]*along+f.forward[0]*across];
@@ -45,6 +46,7 @@ export function middleSouthRings():Vec2[][] {
   middleSouthRect(s.along[1],b.along[1],...b.across as [number,number]),
   middleSouthRect(s.along[0],s.along[1],s.plinth.across[0],s.seat.across[1]),
   middleSouthRect(...panel.wallAlong as [number,number],panel.across,panel.across+.16),
+  ...laneFrontageRings(),
  ]);
 }
 function crazyPavingTexture():THREE.CanvasTexture {
@@ -62,6 +64,7 @@ function crazyPavingTexture():THREE.CanvasTexture {
  const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;return texture;
 }
 export function addMiddleSouthGate(scene:THREE.Scene):void {
+ addLaneFrontages(scene);
  const group=new THREE.Group();group.position.set(f.center[0],.06,f.center[1]);
  // Reflect across so local x follows photo-right while local z follows the lane.
  group.rotation.y=Math.atan2(f.forward[0],f.forward[1]);group.scale.x=-1;

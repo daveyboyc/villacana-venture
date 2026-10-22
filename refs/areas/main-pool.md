@@ -17,11 +17,15 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 
 ## Coverage
 
-Layout: 1
-1 reviewed, 0 suggested only by camera position.
+Layout: 5, Levels and slopes: 4, Facades and roofs: 4
+5 reviewed, 0 suggested only by camera position.
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool west lane and promenade from the sea **Note:** Wide oblique overview of tiled roofs, the lane beside the main-pool terrace and the promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool west lane descending to the promenade **Note:** Closer view of the descending lane, retaining edge and seaward gateway beside the main pool. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool east terrace and Picasso car park **Note:** Main building, pool and toddler pool, east terrace edge and labelled Picasso car park; trees obscure parts of the steps. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool terrace and both stair ends **Note:** Main-pool terrace with western stairs and rounded eastern stair end, pool, toddler pool and promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach |

@@ -12,6 +12,7 @@ import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPa
 import {barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import middleSouth from "../data/middle_pool_south_gate.json";
 import {middleSouthRings,middleSouthRect,middleSouthAt} from "./middle-pool-south-gate";
+import { laneBeds, laneOpenings, laneBedRing, laneGrilleRing } from "./middle-pool-lane-frontages";
 import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { pointInRing } from "./geom";
@@ -152,6 +153,8 @@ async function boot(): Promise<void> {
   const sd=middleSouth.drain;mtitled(el("path",{d:path(middleSouthRect(sd.along-sd.length/2,sd.along+sd.length/2,sd.across-sd.width/2,sd.across+sd.width/2)),fill:"#26342b","data-middle-id":"middle-pool-south-gate-drain"}),"IMG_2334: flush slatted drain");
   for(const ring of middleSouthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#26342b","stroke-width":.035,"data-middle-id":"middle-pool-south-gate"}),"IMG_2334/2335: open south double gate, planter and wall bench set back past the open leaf; approximate extents");
   frontages.append(middle);
+  for(const bed of laneBeds)mtitled(el("path",{d:path(laneBedRing(bed)),fill:"#6d8150",stroke:"#fffdf5","stroke-width":bed.wall,"data-middle-id":bed.id}),`${bed.name}: ${bed.trust}`);
+  for(const opening of laneOpenings)mtitled(el("path",{d:path(laneGrilleRing(opening)),fill:"none",stroke:"#303a36","stroke-width":.05,"data-middle-id":opening.id}),`${opening.name}: ${opening.trust}`);
   const picasso=el("g",{id:"picasso-service-road"});
   for(const f of picassoFeatures){const node=el("path",{d:path(picassoStrip(f.points,f.thickness)),fill:f.kind==="plinth"?"#998b71":"#fffdf5","data-picasso-id":f.id});const title=el("title",{});title.textContent=`${f.name}: ${f.trust} · ${f.evidence.join(", ")}`;node.append(title);picasso.append(node);}
   picasso.append(el("path",{d:path(picassoRamp.ring as Vec2[]),fill:"#a49f90","data-picasso-id":picassoRamp.id}));

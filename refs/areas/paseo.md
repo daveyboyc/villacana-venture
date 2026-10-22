@@ -23,8 +23,8 @@ The seafront promenade between the resort's seaward walls and the beach.
 
 ## Coverage
 
-Layout: 11, Levels and slopes: 4, Materials: 4, Views: 3
-12 reviewed, 0 suggested only by camera position.
+Layout: 14, Levels and slopes: 7, Facades and roofs: 3, Materials: 4, Views: 3
+15 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -114,6 +114,9 @@ graph LR
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2297.jpg](../../public/photos-ref/IMG_2297.jpg) | ground | layout | Dalí seaward end: narrow pedestrian gate _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
+| `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool west lane and promenade from the sea **Note:** Wide oblique overview of tiled roofs, the lane beside the main-pool terrace and the promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool west lane descending to the promenade **Note:** Closer view of the descending lane, retaining edge and seaward gateway beside the main pool. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
+| `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels, facades | Apple Maps 3D: main-pool terrace and both stair ends **Note:** Main-pool terrace with western stairs and rounded eastern stair end, pool, toddler pool and promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b. |
 | `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |

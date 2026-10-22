@@ -1,0 +1,300 @@
+Lane frontage draft validation — 2026-10-22 UTC
+Base: villacana-venture origin/main c472f7a
+Reference inputs: villacana-reference origin/main 24d14f7cd3e3f0f9e7014236819eec2895111e0b
+
+PASS npm run typecheck
+PASS npm run build (existing Vite large-chunk advisory only)
+PASS assignment tests: 12
+PASS reference-index tests: 7
+PASS placement-policy unit tests: 31
+PASS assign_photo_map.py: 145 phone sources, 144 camera pins, 1 unplaced
+PASS build_references.py --sheets --check: 176 references, all reviewed, 0 problems
+Reference sync also catalogued four newly merged private Apple screenshots after full-size inspection; these are not lane geometry evidence.
+
+PASS check_map: 117 objects checked, 0 problems
+PASS check_street_layout: 18 Google/photo-checked street segments, house/player clearances, 25 joins, canonical names, original registry frontages and key-free reference links PASS
+PASS check_boundary_reference: Straight, Google-checked Cervantes axis and original registry frontages PASS
+PASS check_terrain: Terrain: Dalí side 0.5 m up, pools level, Cervantes ramp and middle pool steps where photographed, walkable slopes PASS
+PASS check_dali_threshold: Dalí threshold: distinct photo-linked bays, grass, shared path and crossing; facade/wall clearances and open kerbs PASS
+PASS check_cervantes_patio_walls: Cervantes photo-linked walls: checked Calle clearances, open approaches, original houses/pools and bounded test scope PASS
+PASS check_elena_north: Elena north: photo-linked gateway, patio wall and beds keep the lanes clear, gateway open and walkable, houses and pools untouched PASS
+PASS check_middle_pool: Middle pool south forecourt: bounded photo-cited stone avoids registry solids; Details hedge footprint clears Eva/Silvia PASS
+PASS check_paseo_wall: Paseo wall: 59 points, 134 m, photo-linked; paseo, lanes and gate connector clear; houses and pools untouched; openings kept; heights 0.4-3.0 m, about 1 m by the south lawn PASS
+PASS check_seafront: Paseo clearance: 1676 samples keep 1.5 m from every standing registry house; 2 registry parts on the aerial paseo kept as outlines PASS
+PASS check_pool_levels: Lower main/children’s pools, unchanged other pools and street centre lines, stair rise and ramp width PASS
+PASS check_levels: Levels survey: 22 items, 0 level changes queued, built items match the terrain PASS
+PASS check_lane_frontages: Lane frontages: bounded cited beds clear registry solids/routes; plant footprints clear all streets; grille fronts face lane; doorway gap remains open PASS
+
+PASS layout browser: 20 routes, bothDirections=true, 410 segments, runtime errors=[]
+Added checks: shared bed map/collision, open doorway approach, lane both directions, Details plant footprint clearance, no Layout planting, explicit generic ground-opening replacement, grille ray visibility from lane.
+PASS overview browser: zoom, rotation, north reset, focus, notes overlay, walk visibility, mobile toolbar.
+PASS photo-map browser (including three mobile viewports):
+Discovery, full photo, local reviews and caption persistence PASS
+Stable alias and overview photo navigation PASS
+Private and unplaced source discovery PASS
+Unified map: 176 sources, boat search, camera/subject separation, full photo, links, private/unplaced sources, local reviews and mobile PASS
+PASS before/after camera captures and reproducible close views: runtime errors=[]
+PASS git diff --check
+UNCHANGED original public/map/skeleton.json, data/terrain.json and data/middle_pool_south_gate.json
+
+PLACEMENT GATE: FAIL — expected unresolved approval, not a software pass.
+Command: python3 scripts/check_placement_changes.py --base origin/main
+253 feature fingerprints lack fresh measured approval, including all five new lane features. Shared renderer dependencies conservatively fingerprint many existing features. Original registry/route/terrain inputs are unchanged.
+No gate bypass, report deletion, review identity invention or new placement-verified-by edge.
+Task remains in-progress and PR remains draft. Main unresolved points: left continuation conflicts with current house/route frame; exact bed endpoints/heights, doorway station and window centres are estimates; IMG_2189 is style evidence only.
+
+Full placement gate output:
+FAIL: building:6165501UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6165501UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6165501UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6165501UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6165501UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6165501UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6263501UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6264401UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6264401UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6264401UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6264501UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6264501UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6264601UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6264601UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6264601UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6264601UF1366S_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6264601UF1366S_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6264601UF1366S_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6265201UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6265201UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6265201UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6265201UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6265201UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6265201UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6265401UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6265401UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6265401UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6265401UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part10: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part11: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part12: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part13: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part14: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6265501UF1366N_part9: changed geometry has no fresh verified placement packet
+FAIL: building:6265601UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6265801UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6265801UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6265801UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6265801UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6265801UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6266601UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6266601UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6266601UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6266601UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6266801UF1366N_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part10: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6364201UF1366S_part9: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part10: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part11: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6364401UF1366S_part9: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6364501UF1366S_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6364601UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6364601UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6364601UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6364601UF1366S_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6364601UF1366S_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6364801UF1366S_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6364801UF1366S_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6364801UF1366S_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part10: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6365101UF1366N_part9: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part10: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part11: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part12: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part13: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part14: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part15: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part16: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part17: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part18: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6365201UF1366N_part9: changed geometry has no fresh verified placement packet
+FAIL: building:6366901UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465301UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465301UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465301UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6465301UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6465301UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6465501UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465501UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465502UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465502UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465503UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465503UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465504UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465504UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465505UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465505UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465506UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465506UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465507UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465507UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465508UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465508UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465509UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465509UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465510UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465510UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465511UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465511UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465512UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465512UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465513UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465513UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465514UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465514UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465541UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465541UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465542UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465542UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465543UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465543UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465544UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465544UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465545UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465545UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465546UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465546UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465547UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465547UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465548UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465548UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465549UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465549UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465550UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465550UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465551UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465551UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part3: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part4: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part5: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part6: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part7: changed geometry has no fresh verified placement packet
+FAIL: building:6465801UF1366N_part8: changed geometry has no fresh verified placement packet
+FAIL: building:6466326UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466327UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466328UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466329UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466329UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466330UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466330UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466331UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466331UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466332UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466332UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466333UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466333UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466334UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466334UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466335UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466335UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466336UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466336UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466337UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466337UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466338UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466338UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466339UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466339UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466340UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466340UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466341UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466341UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466342UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466342UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466343UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466343UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466344UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466344UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466345UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466346UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466347UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466348UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466348UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466349UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466349UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: building:6466350UF1366N_part1: changed geometry has no fresh verified placement packet
+FAIL: building:6466350UF1366N_part2: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-garden-door-path: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-garden-wall: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-gateway: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-magnolia-bed: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-patio-east: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-planter-box-1: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-planter-box-2: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-planter-west: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-tree-bed-1: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-tree-bed-2: changed geometry has no fresh verified placement packet
+FAIL: elena_north.json:elena-north-window-return: changed geometry has no fresh verified placement packet
+FAIL: middle_pool.json:middle-pool-east-gateway: changed geometry has no fresh verified placement packet
+FAIL: middle_pool.json:middle-pool-west-planter: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_lane_frontages.json:south-lane-left-border: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_lane_frontages.json:south-lane-right-far-bed: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_lane_frontages.json:south-lane-right-far-grille: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_lane_frontages.json:south-lane-right-near-bed: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_lane_frontages.json:south-lane-right-near-grille: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_south_gate.json:middle-pool-south-east-hedge: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_south_gate.json:middle-pool-south-forecourt: changed geometry has no fresh verified placement packet
+FAIL: middle_pool_south_gate.json:middle-pool-south-gate: changed geometry has no fresh verified placement packet
+FAIL: paseo_wall.json:paseo-retaining-wall: changed geometry has no fresh verified placement packet
+FAIL: paseo_wall.json:paseo-timber-edge: changed geometry has no fresh verified placement packet
+Placement change gate: FAIL

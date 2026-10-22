@@ -261,6 +261,32 @@ const path = require("node:path");
     walk([middleSouthAt(-2.8),middleSouthAt(1.8)]);
     walk([middleSouthAt(1.8),middleSouthAt(-2.8)]);
     if(Math.abs(world.groundHeight(...middleSouthAt(-2))-world.groundHeight(...middleSouthAt(1)))>.05)throw Error("South entrance gained an unsupported step");
+    {
+      const {laneAt,laneBeds,laneBedRing,laneFrontageRings,laneOpenings,laneGrilleRing,laneDoorway,addLaneFrontages,replacesLaneGroundOpening}=await import('/src/middle-pool-lane-frontages.ts');
+      for(const bed of laneBeds){
+        if(!document.querySelector(`[data-middle-id="${bed.id}"]`))throw Error('Lane bed missing from map: '+bed.id);
+        const ring=laneBedRing(bed),c=ring.reduce((a,p)=>[a[0]+p[0]/ring.length,a[1]+p[1]/ring.length],[0,0]),resolved=new Solids(laneFrontageRings()).resolve(...c,.42);
+        if(Math.hypot(resolved.x-c[0],resolved.z-c[1])<.1)throw Error('Lane bed lacks shared collision');
+      }
+      const station=(laneDoorway.along[0]+laneDoorway.along[1])/2;
+      walk([laneAt(station,0),laneAt(station,1.65)]);walk([laneAt(station,1.65),laneAt(station,0)]);
+      walk([laneAt(.2),laneAt(12)]);walk([laneAt(12),laneAt(.2)]);
+      const layout=new THREE.Scene();layout.userData.layoutOnly=true;addLaneFrontages(layout);layout.updateMatrixWorld(true);
+      if(layout.children.some(m=>m.userData.spriteKind))throw Error('Lane planting leaked into Layout');
+      const details=new THREE.Scene(),routes=protectedRoutes(s.boundaryReference);details.userData.decorationClearance=(x,z,r)=>routeClearance(routes,x,z,r);addLaneFrontages(details);details.updateMatrixWorld(true);
+      let plants=0;details.traverse(mesh=>{if(!mesh.isInstancedMesh)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),rot=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,rot,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error('Lane plant footprint blocks route');plants++;}});
+      if(plants<12)throw Error('Lane planted borders are missing');
+      const ray=new THREE.Raycaster();
+      for(const o of laneOpenings){
+        if(!document.querySelector(`[data-middle-id="${o.id}"]`))throw Error('Window grille missing from map');
+        const [a,b]=o.facade,L=Math.hypot(b[0]-a[0],b[1]-a[1]),center=a.map((v,i)=>v+(b[i]-v)*o.at),normal=[(b[1]-a[1])/L,-(b[0]-a[0])/L];
+        if(!replacesLaneGroundOpening(...center))throw Error('Procedural door was not replaced at mapped grille');
+        ray.set(new THREE.Vector3(center[0]+normal[0]*1.3,o.bottom+.06+o.height*.5,center[1]+normal[1]*1.3),new THREE.Vector3(-normal[0],0,-normal[1]));
+        const hits=ray.intersectObjects(details.children,true).filter(h=>h.object.name===o.id);
+        if(hits.length<1||hits[0].distance>1.3)throw Error('Grille/shutter is inside house or invisible from lane');
+        const ring=laneGrilleRing(o);if(!ring.every(p=>routeClearance(routes,...p,0)))throw Error('Projecting grille crosses route');
+      }
+    }
     // The photo-supported forecourt replaces the drawn road surface without moving its through routes.
     walk([middleSouthAt(-4.8),middleSouthAt(1.8)]);
     walk([middleSouthAt(1.8),middleSouthAt(-4.8)]);

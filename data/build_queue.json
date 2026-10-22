@@ -847,7 +847,14 @@
     "middle-pool-south-forecourt"
    ],
    "status": "in-progress",
-   "owner": "Codex"
+   "owner": "Codex",
+   "features": [
+    "middle_pool_lane_frontages.json:south-lane-left-border",
+    "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+    "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+    "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+    "middle_pool_lane_frontages.json:south-lane-right-far-grille"
+   ]
   }
  ]
 }

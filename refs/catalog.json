@@ -294,7 +294,10 @@
    "altitude": 6.9,
    "trust": "checked against photo content"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "middle_pool_lane_frontages.json:south-lane-right-far-grille"
+  ],
   "looksAt": [
    -127.0,
    103.0
@@ -4427,7 +4430,12 @@
   "citedBy": [
    "middle_pool_south_gate.json:middle-pool-south-gate",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+   "middle_pool_lane_frontages.json:south-lane-left-border",
+   "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+   "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "middle_pool_lane_frontages.json:south-lane-right-far-grille"
   ],
   "looksAt": [
    -127.3,
@@ -4438,7 +4446,7 @@
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
    "middle_pool_south_gate.json:middle-pool-south-gate",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "middle_pool_lane_frontages.json:south-lane-right-near-bed"
   ],
   "subject": "south gate, double iron leaves and the planter to its right"
  },
@@ -6226,6 +6234,91 @@
   ],
   "sourceRevision": null,
   "note": "Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+  "title": "Apple Maps 3D: main-pool west lane and promenade from the sea",
+  "shows": [
+   "main-pool",
+   "seaward-lanes",
+   "paseo",
+   "whole-resort"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels",
+   "facades"
+  ],
+  "sourceRevision": null,
+  "note": "Wide oblique overview of tiled roofs, the lane beside the main-pool terrace and the promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png",
+  "title": "Apple Maps 3D: main-pool west lane descending to the promenade",
+  "shows": [
+   "main-pool",
+   "seaward-lanes",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels",
+   "facades"
+  ],
+  "sourceRevision": null,
+  "note": "Closer view of the descending lane, retaining edge and seaward gateway beside the main pool. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png",
+  "title": "Apple Maps 3D: main-pool east terrace and Picasso car park",
+  "shows": [
+   "main-pool",
+   "picasso"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels",
+   "facades"
+  ],
+  "sourceRevision": null,
+  "note": "Main building, pool and toddler pool, east terrace edge and labelled Picasso car park; trees obscure parts of the steps. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b.",
+  "citedBy": []
+ },
+ {
+  "id": "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+  "kind": "map-screenshot",
+  "path": "villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+  "title": "Apple Maps 3D: main-pool terrace and both stair ends",
+  "shows": [
+   "main-pool",
+   "picasso",
+   "paseo",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "aerial",
+  "useFor": [
+   "layout",
+   "levels",
+   "facades"
+  ],
+  "sourceRevision": null,
+  "note": "Main-pool terrace with western stairs and rounded eastern stair end, pool, toddler pool and promenade. Inspected full-size 2026-10-22. Photogrammetry is distorted; this is contextual evidence, not measured heights or hidden-edge tracing. Not used to place the middle-pool entrance lane beds or grilles. Catalogued from private reference commit 24d14f7cd3e3f0f9e7014236819eec2895111e0b.",
   "citedBy": []
  }
 ]
