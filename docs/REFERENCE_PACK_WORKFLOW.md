@@ -10,7 +10,7 @@ independent inspection and remaining limits.
 ## What the example demonstrates
 
 The tunnel is no longer a single vague item called “passage”. T01–T14 list its
-arch, flat ceiling, side walls, exit, patterned floor/pebble inset, paired side
+arch, flat ceiling, side walls, exit, patterned floor/pebble inset, side entrance
 doors/thresholds, lantern, pots, street plaque and services. Only a patterned
 floor currently has an authored source citation; that does not account for the
 structure or prove an open walk-through. The connection to the gate remains
@@ -116,3 +116,8 @@ including two owner-confirmed inner entrance recesses (T13/T14). Its guessed
 depths and concealed brown doors are distinct from direct photo observations.
 Open `/?view=walk&study=silvia&details=1`. This study has no global map transform;
 it does not replace registration or resolve the tunnel audit.
+
+The latest owner clarification supersedes the initial paired-door reading for
+the 3D study: all four entrances use normal-width single leaves and round gold
+knobs. Source interpretation history remains in the records; no global placement
+approval is inferred.

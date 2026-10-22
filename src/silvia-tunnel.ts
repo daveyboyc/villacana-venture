@@ -64,29 +64,17 @@ export function createSilviaTunnel(details=true){
   box(e.id+'-soffit',e.side*(half+e.depth/2),(e.doorHeight+d.ceiling)/2,z,e.depth+d.wall,d.ceiling-e.doorHeight,span);
   box(e.id+'-threshold',e.side*(half+e.depth/2),.065,z,e.depth,.045,span,trim);
   const door=new THREE.Group();door.name=e.id+'-brown-wooden-door';door.position.set(x,e.doorHeight/2+.06,z);door.rotation.y=Math.PI/2;root.add(door);
-  box(e.id+'-leaf',0,0,0,span-.1,e.doorHeight,.085,wood,door);
-  if(e.paired){
-  const leaves=2,leafW=(span-.15)/leaves;
-  if(e.paired)box('paired-door-centre-seam',0,0,e.side*-.07,.016,e.doorHeight,.016,dark,door);
-  for(let j=0;j<leaves;j++){
-   const cx=(j-(leaves-1)/2)*leafW;
-   for(const cy of [-e.doorHeight*.28,e.doorHeight*.14]){
-    box('wood-panel-frame',cx,cy,e.side*-.058,leafW-.12,e.doorHeight*.34,.038,wood,door);
-    box('wood-panel-inset',cx,cy,e.side*-.081,leafW-.19,e.doorHeight*.28,.018,new THREE.MeshStandardMaterial({color:'#49382a',roughness:.9}),door);
-   }
-   for(let slat=0;slat<4;slat++)box('vent-slats',cx,e.doorHeight*.25+slat*.043,e.side*-.1,leafW*.43,.025,.025,dark,door);
-   box('door-handle',cx+(j===0?1:-1)*leafW*.29,-.04,e.side*-.11,.023,.12,.025,brass,door);
-  }
-  }else{
-   // Owner correction: a plain single wooden leaf with one spherical gold knob.
-   const gold=new THREE.MeshStandardMaterial({color:'#d8ad42',metalness:.72,roughness:.26});
-   const knobX=(span-.1)*.34,inward=-e.side;
-   const plate=mesh(new THREE.CylinderGeometry(.047,.047,.012,24),gold,'round-gold-backplate',knobX,-e.doorHeight/2+1.02,inward*.053,door);plate.rotation.x=Math.PI/2;
-   const stem=mesh(new THREE.CylinderGeometry(.012,.012,.04,16),gold,'gold-knob-stem',knobX,-e.doorHeight/2+1.02,inward*.078,door);stem.rotation.x=Math.PI/2;
-   mesh(new THREE.SphereGeometry(.043,24,16),gold,'round-gold-knob',knobX,-e.doorHeight/2+1.02,inward*.107,door);
-  }
-  for(const u of [-span/2,span/2])box('door-frame',u,0,0,.055,e.doorHeight+.1,.14,wood,door);
-  box('door-head',0,e.doorHeight/2,0,span+.06,.065,.14,wood,door);
+  // Every entrance uses one normal-width leaf, including the wider near bays.
+  const leafWidth=Math.min(data.doorLeafWidth,span-.1),infill=(span-leafWidth)/2;
+  box(e.id+'-leaf',0,0,0,leafWidth,e.doorHeight,.085,wood,door);
+  for(const side of [-1,1])box(e.id+'-door-side-infill',side*(leafWidth+infill)/2,0,0,infill,e.doorHeight+.05,.1,plaster,door);
+  const gold=new THREE.MeshStandardMaterial({color:'#d8ad42',metalness:.72,roughness:.26});
+  const knobX=leafWidth*.34*e.knobSide,inward=-e.side;
+  const plate=mesh(new THREE.CylinderGeometry(.047,.047,.012,24),gold,'round-gold-backplate',knobX,-e.doorHeight/2+1.02,inward*.053,door);plate.rotation.x=Math.PI/2;
+  const stem=mesh(new THREE.CylinderGeometry(.012,.012,.04,16),gold,'gold-knob-stem',knobX,-e.doorHeight/2+1.02,inward*.078,door);stem.rotation.x=Math.PI/2;
+  mesh(new THREE.SphereGeometry(.043,24,16),gold,'round-gold-knob',knobX,-e.doorHeight/2+1.02,inward*.107,door);
+  for(const u of [-leafWidth/2,leafWidth/2])box('door-frame',u,0,0,.055,e.doorHeight+.1,.14,wood,door);
+  box('door-head',0,e.doorHeight/2,0,leafWidth+.06,.065,.14,wood,door);
  }
  // Arched portals with straight jambs, thick reveals and square horizontal impost bands.
  for(const [id,z] of [['T01',0],['T04',d.length]] as const){

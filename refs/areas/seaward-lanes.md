@@ -10,6 +10,7 @@ The lanes between the middle pool and the beach.
 - 22 October reference-pack pilot: numbered photo locators/traces and 41 component rows keep gate view, lane detail, Silvia1–15 passage and Jorge27–35 passage distinct. Silvia tunnel arch/flat ceiling/walls/doors/exit are not accounted for by the existing floor citation; precise connection and owner target remain unresolved. No geometry changed. See docs/REFERENCE_PACK_WORKFLOW.md and public/reference-packs/entrance/index.html.
 - Owner clarification: the narrow side spaces in the Silvia tunnel are recessed entrances with brown doors. Photo-relative 3D study includes the two visible paired doors plus two owner-confirmed inner entrances with guessed 0.65 m recesses and generic wooden doors; inventory now has T13/T14 (43 total). Study has no global map transform; connection and measured placement remain unresolved.
 - Owner correction to the Silvia tunnel study: the two inner recessed entrance doors are plain single brown wooden leaves with round gold knobs. This clarifies hidden door styling, while recess depth and world placement remain estimates.
+- Owner clarification applies to all tunnel entrance doors, including the nearer bays: use normal-width single brown leaves with one round gold knob each. Earlier paired-door readings remain source history, superseded for the model. Recess footprints and world-registration uncertainty are unchanged.
 
 ## Read first
 
@@ -29,6 +30,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P1 | `silvia-all-single-doors` | Make every tunnel entrance a single door with a round gold knob (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-covered-passage-reference-audit` | Resolve the Silvia tunnel entrance, its components and connection to the lane (after entrance-photo-reference-pack) | open · placement: not-applicable |  |
 | P1 | `silvia-simple-doors` | Simplify the recessed entrance doors and add round gold knobs (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-tunnel-details` | Build the Silvia tunnel with recessed brown entrance doors and photo details (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |

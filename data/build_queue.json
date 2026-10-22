@@ -985,7 +985,34 @@
    ],
    "status": "in-progress",
    "owner": "Codex",
-   "notes": "Continuation of the owner-approved merged tunnel study. World-registration follow-up remains open; this is an appearance correction."
+   "notes": "Continuation of the owner-approved merged tunnel study. World-registration follow-up remains open; this is an appearance correction. Superseded in scope by silvia-all-single-doors: the owner requires single leaves and round knobs at every entrance, including near bays. Do not restore the earlier near-paired modelling choice."
+  },
+  {
+   "id": "silvia-all-single-doors",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "build",
+   "title": "Make every tunnel entrance a single door with a round gold knob",
+   "photos": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg"
+   ],
+   "features": [
+    "silvia_tunnel.json:silvia-tunnel-study"
+   ],
+   "build": "Apply the owner clarification to all four entrance bays, including the near doors. Use normal-width single wooden leaves with one round gold knob each, no double-door seams, panels or louvres. Infill the sides of wider existing bays with white wall.",
+   "avoid": "Do not limit the correction to inner recesses again. No changes to bay locations, recess depth or world-map placement. Preserve earlier photo readings as history and record the owner override.",
+   "accept": [
+    "Every entrance has exactly one normal-width wooden leaf and one spherical gold knob",
+    "Entrance/interior view visibly shows single doors at the near bays",
+    "Side doors remain closed/solid and both axial openings stay walkable"
+   ],
+   "dependsOn": [
+    "entrance-photo-reference-pack"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Owner clarification supersedes the previous near-paired modelling choice. Global placement remains unresolved, as in the merged study."
   }
  ]
 }
