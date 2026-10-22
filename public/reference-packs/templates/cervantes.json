@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "id": "cervantes",
+  "title": "Calle Miguel de Cervantes reference pack",
+  "areas": [
+    "cervantes"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Calle Miguel de Cervantes",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2252.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2252.jpg"
+    },
+    {
+      "id": "IMG_2260.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2260.jpg"
+    },
+    {
+      "id": "IMG_2261.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2261.jpg"
+    },
+    {
+      "id": "IMG_2262.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2262.jpg"
+    },
+    {
+      "id": "IMG_2263.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2263.jpg"
+    },
+    {
+      "id": "IMG_2264.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2264.jpg"
+    },
+    {
+      "id": "IMG_2265.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2265.jpg"
+    },
+    {
+      "id": "IMG_2266.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2266.jpg"
+    },
+    {
+      "id": "IMG_2273.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2273.jpg"
+    },
+    {
+      "id": "IMG_2274.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2274.jpg"
+    },
+    {
+      "id": "IMG_2275.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2275.jpg"
+    },
+    {
+      "id": "IMG_2286.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2286.jpg"
+    },
+    {
+      "id": "IMG_2288.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2288.jpg"
+    },
+    {
+      "id": "IMG_2289.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2289.jpg"
+    },
+    {
+      "id": "IMG_2327.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2327.jpg"
+    },
+    {
+      "id": "IMG_2328.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2328.jpg"
+    },
+    {
+      "id": "IMG_2329.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2329.jpg"
+    },
+    {
+      "id": "IMG_2342.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2342.jpg"
+    },
+    {
+      "id": "IMG_2355.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2355.jpg"
+    },
+    {
+      "id": "IMG_2356.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2356.jpg"
+    },
+    {
+      "id": "IMG_2358.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2358.jpg"
+    },
+    {
+      "id": "IMG_2359.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2359.jpg"
+    },
+    {
+      "id": "IMG_2360.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2360.jpg"
+    },
+    {
+      "id": "IMG_2367.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2367.jpg"
+    },
+    {
+      "id": "IMG_2368.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2368.jpg"
+    },
+    {
+      "id": "IMG_2369.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2369.jpg"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

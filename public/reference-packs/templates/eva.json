@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "id": "eva",
+  "title": "Calle Eva reference pack",
+  "areas": [
+    "eva"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Calle Eva",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2243.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2243.jpg"
+    },
+    {
+      "id": "IMG_2248.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2248.jpg"
+    },
+    {
+      "id": "IMG_2249.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2249.jpg"
+    },
+    {
+      "id": "IMG_2250.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2250.jpg"
+    },
+    {
+      "id": "IMG_2251.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2251.jpg"
+    },
+    {
+      "id": "IMG_2291.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2291.jpg"
+    },
+    {
+      "id": "IMG_2336.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2336.jpg"
+    },
+    {
+      "id": "IMG_2337.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2337.jpg"
+    },
+    {
+      "id": "IMG_2338.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2338.jpg"
+    },
+    {
+      "id": "IMG_2339.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2339.jpg"
+    },
+    {
+      "id": "IMG_2340.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2340.jpg"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

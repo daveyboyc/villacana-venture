@@ -34310,6 +34310,32 @@
    }
   },
   {
+   "id": "task:entrance-photo-reference-pack",
+   "kind": "build-task",
+   "name": "Entrance photo inventory, annotated drawings and repeatable map rollout",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
+   "id": "task:silvia-covered-passage-reference-audit",
+   "kind": "build-task",
+   "name": "Resolve the Silvia tunnel entrance, its components and connection to the lane",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -41366,6 +41392,16 @@
    "relation": "in-area"
   },
   {
+   "from": "task:entrance-photo-reference-pack",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:silvia-covered-passage-reference-audit",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -42083,6 +42119,11 @@
   {
    "from": "task:middle-pool-south-lane-planters",
    "to": "task:middle-pool-south-forecourt",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:silvia-covered-passage-reference-audit",
+   "to": "task:entrance-photo-reference-pack",
    "relation": "depends-on"
   },
   {

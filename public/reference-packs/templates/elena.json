@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "id": "elena",
+  "title": "Calle Elena reference pack",
+  "areas": [
+    "elena"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Calle Elena",
+  "status": "not-started",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [
+    {
+      "id": "IMG_2196.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2196.jpg"
+    },
+    {
+      "id": "IMG_2197.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2197.jpg"
+    },
+    {
+      "id": "IMG_2198.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2198.jpg"
+    },
+    {
+      "id": "IMG_2199.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2199.jpg"
+    },
+    {
+      "id": "IMG_2200.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2200.jpg"
+    },
+    {
+      "id": "IMG_2201.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2201.jpg"
+    },
+    {
+      "id": "IMG_2202.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2202.jpg"
+    },
+    {
+      "id": "IMG_2203.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2203.jpg"
+    },
+    {
+      "id": "IMG_2214.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2214.jpg"
+    },
+    {
+      "id": "IMG_2215.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2215.jpg"
+    },
+    {
+      "id": "IMG_2219.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2219.jpg"
+    },
+    {
+      "id": "IMG_2220.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2220.jpg"
+    },
+    {
+      "id": "IMG_2252.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2252.jpg"
+    },
+    {
+      "id": "IMG_2253.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2253.jpg"
+    },
+    {
+      "id": "IMG_2254.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2254.jpg"
+    },
+    {
+      "id": "IMG_2255.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2255.jpg"
+    },
+    {
+      "id": "IMG_2256.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2256.jpg"
+    },
+    {
+      "id": "IMG_2260.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2260.jpg"
+    },
+    {
+      "id": "IMG_2261.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2261.jpg"
+    },
+    {
+      "id": "IMG_2262.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2262.jpg"
+    },
+    {
+      "id": "IMG_2263.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2263.jpg"
+    },
+    {
+      "id": "IMG_2265.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2265.jpg"
+    },
+    {
+      "id": "IMG_2286.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2286.jpg"
+    },
+    {
+      "id": "IMG_2287.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2287.jpg"
+    },
+    {
+      "id": "IMG_2327.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2327.jpg"
+    },
+    {
+      "id": "IMG_2328.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2328.jpg"
+    },
+    {
+      "id": "IMG_2329.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2329.jpg"
+    },
+    {
+      "id": "IMG_2330.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2330.jpg"
+    },
+    {
+      "id": "IMG_2342.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2342.jpg"
+    },
+    {
+      "id": "IMG_2355.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2355.jpg"
+    },
+    {
+      "id": "IMG_2358.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2358.jpg"
+    },
+    {
+      "id": "IMG_2360.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2360.jpg"
+    },
+    {
+      "id": "IMG_2361.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2361.jpg"
+    },
+    {
+      "id": "IMG_2362.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2362.jpg"
+    },
+    {
+      "id": "IMG_2363.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2363.jpg"
+    },
+    {
+      "id": "IMG_2364.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2364.jpg"
+    },
+    {
+      "id": "IMG_2365.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2365.jpg"
+    },
+    {
+      "id": "IMG_2366.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2366.jpg"
+    },
+    {
+      "id": "IMG_2367.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2367.jpg"
+    }
+  ],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

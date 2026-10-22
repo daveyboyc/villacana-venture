@@ -40,6 +40,15 @@ levels), then materials, then planting and small details.
   shows them by priority; `refs/issues/<task>.md` is a ready-to-file issue body
   for each open task.
 
+## Photo inventory before a geometry task
+
+Use [REFERENCE_PACK_WORKFLOW.md](REFERENCE_PACK_WORKFLOW.md) to make numbered
+source locators/traces, a feature checklist and schematic relationship/form
+drawings before a new scene build. The entrance pilot exposes the difference
+between a floor citation and a fully accounted-for covered passage. Keep source
+groups separate until connections are established. This complements the existing
+measured placement gate and never grants placement approval.
+
 ## Taking a task
 
 1. Pick an `open` task from `refs/QUEUE.md` whose `dependsOn` tasks are `done`.

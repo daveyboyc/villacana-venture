@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<image class="source-photo" href="../../photos-ref/IMG_2191.jpg" width="1200" height="1600"/>
+<g class="annotation" data-feature="T01" role="button" tabindex="0" aria-label="T01 Silvia entrance arch and imposts"><title>Silvia entrance arch and imposts: Thick white arched portal with moulded springing/impost detail.</title>
+<rect class="locator" x="337" y="0" width="778" height="1590" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="913" y="651" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="948" y="685" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T01</text></g>
+<g class="annotation" data-feature="T03" role="button" tabindex="0" aria-label="T03 Side walls and belt moulding"><title>Side walls and belt moulding: White passage walls, pilasters and horizontal mouldings surround the route.</title>
+<rect class="locator" x="395" y="700" width="538" height="330" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="695" y="902" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="730" y="936" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T03</text></g>
+<g class="annotation" data-feature="T09" role="button" tabindex="0" aria-label="T09 CALLE SILVIA 1 15 plaque"><title>CALLE SILVIA 1 15 plaque: Readable plaque identifies the Silvia passage set.</title>
+<rect class="locator" x="462" y="797" width="278" height="108" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="576" y="822" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="611" y="856" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T09</text></g>
+<g class="annotation" data-feature="T10" role="button" tabindex="0" aria-label="T10 Wall vent and water-service hatch"><title>Wall vent and water-service hatch: High vent and low AGUA POTABLE service hatch are visible beside the plaque.</title>
+<rect class="locator" x="738" y="395" width="52" height="70" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="729" y="407" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="764" y="441" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T10</text></g>
+<g class="annotation" data-feature="T10" role="button" tabindex="0" aria-label="T10 Wall vent and water-service hatch"><title>Wall vent and water-service hatch: High vent and low AGUA POTABLE service hatch are visible beside the plaque.</title>
+<rect class="locator" x="714" y="1380" width="121" height="180" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="739" y="1447" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="774" y="1481" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T10</text></g>
+<g class="annotation" data-feature="T12" role="button" tabindex="0" aria-label="T12 Door beside Silvia plaque"><title>Door beside Silvia plaque: IMG_2191 shows a dark paired door beside the street plaque.</title>
+<rect class="locator" x="83" y="620" width="245" height="440" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="165" y="778" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="200" y="812" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T12</text></g>
+</svg>

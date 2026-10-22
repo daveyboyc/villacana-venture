@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<rect width="100%" height="100%" fill="#fbfaf6"/>
+<image class="source-photo" href="../../photos-ref/IMG_2185.jpg" width="1200" height="1600"/>
+<g class="annotation" data-feature="J01" role="button" tabindex="0" aria-label="J01 Separate covered arch sequence"><title>Separate covered arch sequence: The Jorge set shows a longer repeated arch/flat-ceiling sequence.</title>
+<rect class="locator" x="492" y="562" width="316" height="287" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="512" y="611" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="547" y="645" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J01</text></g>
+<g class="annotation" data-feature="J02" role="button" tabindex="0" aria-label="J02 Jorge hanging lantern sequence"><title>Jorge hanging lantern sequence: Four hanging lanterns are visible in IMG_2185, along the flat-ceiling sequence.</title>
+<rect class="locator" x="562" y="314" width="195" height="379" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="648" y="390" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="683" y="424" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J02</text></g>
+<g class="annotation" data-feature="J03" role="button" tabindex="0" aria-label="J03 Far metal gate with radial fanlight"><title>Far metal gate with radial fanlight: An arched metal gate with radial fanlight is visible at the bright far end.</title>
+<rect class="locator" x="597" y="641" width="88" height="124" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="602" y="674" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="637" y="708" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J03</text></g>
+<g class="annotation" data-feature="J05" role="button" tabindex="0" aria-label="J05 Jorge fixed window grille"><title>Jorge fixed window grille: A fixed projecting rectangular cage is visible on the passage right wall.</title>
+<rect class="locator" x="798" y="579" width="70" height="179" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="796" y="647" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="831" y="681" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J05</text></g>
+<g class="annotation" data-feature="J06" role="button" tabindex="0" aria-label="J06 Jorge potted planting"><title>Jorge potted planting: Substantial pots and shrubs stand beside the route on both sides.</title>
+<rect class="locator" x="0" y="716" width="530" height="774" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="178" y="1149" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="213" y="1183" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J06</text></g>
+<g class="annotation" data-feature="J06" role="button" tabindex="0" aria-label="J06 Jorge potted planting"><title>Jorge potted planting: Substantial pots and shrubs stand beside the route on both sides.</title>
+<rect class="locator" x="717" y="729" width="165" height="164" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="761" y="788" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="796" y="822" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J06</text></g>
+<g class="annotation" data-feature="J07" role="button" tabindex="0" aria-label="J07 Jorge right paired door / threshold"><title>Jorge right paired door / threshold: A dark paired door and threshold stand on the right side of the covered passage.</title>
+<rect class="locator" x="966" y="509" width="159" height="537" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="1009" y="757" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="1044" y="791" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J07</text></g>
+<g class="annotation" data-feature="J08" role="button" tabindex="0" aria-label="J08 Jorge patterned tiles / pebble insets"><title>Jorge patterned tiles / pebble insets: Clipped-corner terracotta tiles with blue/white inserts and at least two pebble rectangles are visible.</title>
+<rect class="locator" x="315" y="1077" width="875" height="513" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="725" y="1354" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="760" y="1388" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J08</text></g>
+<g class="annotation" data-feature="J08" role="button" tabindex="0" aria-label="J08 Jorge patterned tiles / pebble insets"><title>Jorge patterned tiles / pebble insets: Clipped-corner terracotta tiles with blue/white inserts and at least two pebble rectangles are visible.</title>
+<rect class="locator" x="527" y="946" width="277" height="120" fill="none" stroke="#765db1" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="617" y="971" width="70" height="46" rx="12" fill="#765db1" stroke="white" stroke-width="3"/><text x="652" y="1005" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">J08</text></g>
+</svg>

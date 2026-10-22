@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "id": "north-lanes",
+  "title": "Loira, Bolivia, Alberto and Isabel reference pack",
+  "areas": [
+    "north-lanes"
+  ],
+  "scope": "One identified physical scene at a time; split uncertain connections.",
+  "sources": [],
+  "relationships": [],
+  "criticalChecks": [
+    "Opening/ceiling/wall/level inventory before finishes",
+    "Every feature has a pixel locator and stated uncertainty",
+    "Model state and placement approval kept separate"
+  ],
+  "name": "Loira, Bolivia, Alberto and Isabel",
+  "status": "source-needed",
+  "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
+  "candidateSources": [],
+  "features": [],
+  "observations": [],
+  "placementStatus": "unapproved"
+}

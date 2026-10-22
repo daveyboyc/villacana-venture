@@ -878,6 +878,59 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "2026-10-21: built; Dave then flagged the sandstone wall at the corner as too tall, so the garden behind the paseo wall's east end now falls to keep it about 1 m (overlaps issue #40, paseo-east-end-height; its paseo profile and pool level are unchanged). Placement stays unapproved pending independent review. Then Dave: a fence and a coastal gate separate Villacana from Barraka beach in front of the slope; built from IMG_2226 as data/seafront_fence.json (white wall, arched gateway at the lane's foot, railings along the lawn). No ground photo of the slope itself exists yet. Dave then said Jorge meets Guillermo on the level and the ramp starts just past it: Jorge is level again and Guillermo falls 3 m over the last 15.5 m (about 19 %)."
+  },
+  {
+   "id": "entrance-photo-reference-pack",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Entrance photo inventory, annotated drawings and repeatable map rollout",
+   "photos": [],
+   "build": "Create numbered source-photo annotations, independent scene drawings, feature/source/model-status inventory and machine-readable reference-pack template. Include covered-passage structure and identity/registration blockers. Generate a rollout backlog for every existing area using the current reference catalogue.",
+   "avoid": "No geometry changes, invented measurements, inferred hidden connections, private source pixels, or inventory/diagram completion treated as placement approval.",
+   "accept": [
+    "Observed source features have stable IDs, pixel locators and source hashes",
+    "Silvia and Jorge passages and unresolved entrance correspondence remain distinct",
+    "Interactive photo/trace/checklist viewer works on desktop and mobile",
+    "Reusable template, validation and catalogue-driven rollout inventory cover every fixed area"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Codex",
+   "sourceReferences": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg",
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "IMG_2185.jpg",
+    "IMG_2187.jpg"
+   ],
+   "notes": "Reference audit/tooling only. Source inputs are in sourceReferences and data/reference_packs/entrance.json; no model geometry or model-camera match is authored. See docs/REFERENCE_PACK_WORKFLOW.md. Completed bounded pilot: six inspected sources, 41 component records, independent corrected-source review, browser-tested viewer and 14 area templates. No complete area or measured placement approval claimed."
+  },
+  {
+   "id": "silvia-covered-passage-reference-audit",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Resolve the Silvia tunnel entrance, its components and connection to the lane",
+   "photos": [],
+   "sourceReferences": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "IMG_2185.jpg",
+    "IMG_2187.jpg"
+   ],
+   "build": "Inspect T01–T12 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.",
+   "avoid": "Do not transfer the Jorge radial fanlight gate or its passage length into Silvia, infer a barrel vault from an arch, propagate four-column street paving into patterned tunnel floors, or treat a material citation as a structural passage.",
+   "accept": [
+    "Owner-reported tunnel is identified or remains explicitly unresolved",
+    "Every passage opening, ceiling/wall/threshold and onward connection has source/model evidence or a clear blocker",
+    "Follow-up geometry has declared feature IDs and the existing independent measured-placement requirements"
+   ],
+   "dependsOn": [
+    "entrance-photo-reference-pack"
+   ],
+   "status": "open"
   }
  ]
 }
