@@ -1061,6 +1061,36 @@
    "status": "done",
    "owner": "Codex",
    "notes": "UI/input/camera task only: no placements, geometry, collision or movement physics changed. Native two-thumb input moves actual Player in the main app; release/cancel stop, mode choice preserves position and persists. Chromium/WebKit input-module tests, iPhone-sized portrait/landscape app test, layout/overview/photo-map regressions, 60 Python tests and production build checked. Shared renderer fingerprints change conservatively; measured placement remains unverified as before. See docs/reviews/mobile-walk-camera/."
+  },
+  {
+   "id": "tunnel-entrance-context",
+   "area": "middle-pool",
+   "priority": 1,
+   "kind": "build",
+   "title": "Check pool-to-gate spacing and build photo-supported tunnel entrance context",
+   "photos": [
+    "IMG_2334.jpg",
+    "IMG_2335.jpg",
+    "IMG_2189.jpg",
+    "IMG_2190.jpg",
+    "IMG_2191.jpg"
+   ],
+   "features": [
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+    "silvia_tunnel.json:silvia-tunnel-study"
+   ],
+   "build": "Independently compare full photos and satellite imagery against the current pool/gate/bench/planter and tunnel entrance. Build bounded photo-supported entrance details; correct spacing only when actual source anchors support it, and keep candidate/unseen extents explicit.",
+   "avoid": "Do not confuse the separate Silvia covered passage with the pool pergola gate, infer identity from GPS or contact order, move the registry pool/house footprints, or manufacture placement approval.",
+   "accept": [
+    "Public-safe annotated satellite/model overlay and independently reviewed source comparison",
+    "Map, 3D and collision use matching outlines for any supported changes",
+    "Actual before/after views and route checks; unresolved placement remains open"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex"
   }
  ]
 }
