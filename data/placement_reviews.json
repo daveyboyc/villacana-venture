@@ -75,6 +75,21 @@
    "notes": "Source-relative tunnel draft has no world-map transform. Existing material mask/phone GPS do not register the full entrance, side recesses or garden exit. Owner authorized guessed recess depth/generic concealed doors, not a surveyed global footprint. Register identifiable corners/connections before placing this component on the resort map.",
    "evidence": "docs/reviews/silvia-tunnel-details/README.md",
    "followUp": "silvia-covered-passage-reference-audit"
+  },
+  {
+   "id": "silvia-main-map-west-candidate",
+   "feature": "silvia_tunnel.json:silvia-tunnel-study",
+   "status": "open",
+   "reportedBy": "Codex; independently investigated by /root/forecourt_source_review",
+   "reportedAt": "2026-10-23",
+   "sources": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "map:ground"
+   ],
+   "notes": "Approximate west-side main-map integration candidate is compatible with registry portal/courtyard topology. EXIF heading disagrees; opposite northeast host remains possible. No identified source controls or measured approval. Existing world-registration report remains open.",
+   "evidence": "docs/reviews/silvia-main-integration/independent-location-review.md",
+   "followUp": "silvia-covered-passage-reference-audit"
   }
  ]
 }

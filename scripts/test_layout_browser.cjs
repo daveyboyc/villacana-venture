@@ -69,11 +69,14 @@ const path = require("node:path");
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
     const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
+    const silvia=await import("/src/silvia-map.ts");
+    const parts=buildings.flatMap(b=>silvia.silviaGroundParts(b).map(p=>({...p,id:b.id})));
     const base = new Solids(
       [
-        ...buildings.map((b) =>
+        ...parts.map((b) =>
           b.id === POOL_TERRACE_ID ? poolTerraceRing : b.ring,
         ),
+        ...silvia.silviaWallRings(),
         ...barrierRings(s.boundaryReference.barriers),
         ...cervantesPatioWallRings(),
         ...gardenDoorRings(),
@@ -88,10 +91,11 @@ const path = require("node:path");
         ...(await import("/src/seafront-fence.ts")).seafrontFenceRings(),
       ],
       Object.fromEntries(
-        buildings.flatMap((b, i) =>
+        parts.flatMap((b, i) =>
           b.id === POOL_TERRACE_ID ? [[i, -0.5]] : [],
         ),
       ),
+      Object.fromEntries(parts.map((b,i)=>[i,b.holes])),
     );
     // Issue #43: the bounded east kerb is visible on the map and solid in the shared rings.
     const eastHedge = await (await fetch("/data/cervantes_east_hedge.json")).json();
@@ -101,13 +105,15 @@ const path = require("node:path");
     if (Math.hypot(eastResolved.x-eastCentre[0],eastResolved.z-eastCentre[1])<.15) throw Error("Cervantes east kerb missing collision");
     let open = true;
     const sd = makeSeaside(s.seafront, s.viewRotation);
+    const hostCentre=(await import("/src/geom.ts")).centroid(buildings.find(b=>b.id===silvia.SILVIA_HOST).ring);
+    const tunnelY=siteY(hostCentre.x,hostCentre.z)+poolGroundY(hostCentre.x,hostCentre.z);
     const world = {
       solids: new GatedSolids(base, () => open),
       coast: new CoastField(map.coast, map.landRef),
       pools: s.pools.map((p) => p.ring),
       bounds: map.bounds,
       groundHeight: (x, z) =>
-        sd.inZone(x, z)
+        silvia.inSilviaFloor(x,z) ? tunnelY+.06 : sd.inZone(x, z)
           ? sd.y(x, z) + 0.06
           : siteY(x, z) +
             stepsGroundOffset(x, z) +
@@ -160,6 +166,14 @@ const path = require("node:path");
         segments++;
       }
     };
+    // Same transformed host carve and closed-door rings as the real main scene.
+    if(!document.querySelector('#silvia-main-map'))throw Error('Tunnel missing from main map');
+    walk([silvia.silviaWorld(0,-3.5),silvia.silviaWorld(0,7.6)]);
+    walk([silvia.silviaWorld(0,7.6),silvia.silviaWorld(0,-3.5)]);
+    for(const ring of silvia.silviaWallRings()){
+      const c=ring.reduce((a,p)=>[a[0]+p[0]/ring.length,a[1]+p[1]/ring.length],[0,0]);const hit=base.resolve(...c,.22);
+      if(Math.hypot(hit.x-c[0],hit.z-c[1])<.05)throw Error('Tunnel wall/door collision missing');
+    }
     const routes = protectedRoutes(s.boundaryReference, undefined, [
       coastalAccess,
     ]);

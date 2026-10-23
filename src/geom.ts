@@ -71,13 +71,13 @@ export function yawFromDirection(dx: number, dz: number): number {
   return Math.atan2(dx, -dz);
 }
 
-type RingBox = { ring: Vec2[]; minX: number; maxX: number; minZ: number; maxZ: number };
+type RingBox = { ring: Vec2[]; holes: Vec2[][]; minX: number; maxX: number; minZ: number; maxZ: number };
 
 export class Solids {
   private readonly boxes: RingBox[];
 
-  constructor(rings: Vec2[][], private readonly ceiling: Record<number,number> = {}) {
-    this.boxes = rings.map((ring) => {
+  constructor(rings: Vec2[][], private readonly ceiling: Record<number,number> = {}, holes: Record<number,Vec2[][]> = {}) {
+    this.boxes = rings.map((ring,index) => {
       let minX = Infinity;
       let maxX = -Infinity;
       let minZ = Infinity;
@@ -88,7 +88,7 @@ export class Solids {
         minZ = Math.min(minZ, z);
         maxZ = Math.max(maxZ, z);
       }
-      return { ring, minX, maxX, minZ, maxZ };
+      return { ring, holes:holes[index]??[], minX, maxX, minZ, maxZ };
     });
   }
 
@@ -106,14 +106,14 @@ export class Solids {
         ) {
           continue;
         }
-        const inside = pointInRing(px, pz, box.ring);
+        const inside = pointInRing(px, pz, box.ring) && !box.holes.some(r=>pointInRing(px,pz,r));
         let best = Infinity;
         let cx = px;
         let cz = pz;
         const ring = box.ring;
-        for (let i = 0; i < ring.length; i++) {
-          const a = ring[i];
-          const b = ring[(i + 1) % ring.length];
+        for (const boundary of [ring,...box.holes]) for (let i = 0; i < boundary.length; i++) {
+          const a = boundary[i];
+          const b = boundary[(i + 1) % boundary.length];
           const hit = closestOnSegment(px, pz, a[0], a[1], b[0], b[1]);
           if (hit.d < best) {
             best = hit.d;

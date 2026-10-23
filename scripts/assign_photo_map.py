@@ -81,7 +81,10 @@ def features(s):
     gate=[fl['foot'][i]+(fl['toward'][i]-fl['foot'][i])/L*sw['gatewayAlong'] for i in range(2)]
     add('middle_pool_sw_gateway.json:'+sw['id'],sw['name'],'reference feature','authored photo/map interpretation',evidence=sw['evidence'],points=[[round(v,2) for v in gate]])
     tunnel=json.loads((ROOT/'data/silvia_tunnel.json').read_text())
-    add('silvia_tunnel.json:'+tunnel['id'],tunnel['name'],'reference feature','photo-relative study; world connection unresolved',evidence=tunnel['evidence'],points=[])
+    placement=json.loads((ROOT/'data/silvia_map.json').read_text())
+    ax,az=placement['entry'];fx,fz=placement['forward'];h=tunnel['dimensions']['width']/2;length=tunnel['dimensions']['length']
+    points=[[ax+fz*x+fx*z,az-fx*x+fz*z] for x,z in [(-h,-3.65),(h,-3.65),(h,length+.35),(-h,length+.35)]]
+    add('silvia_tunnel.json:'+tunnel['id'],tunnel['name'],'reference feature','approximate west registry connection; photo direction unresolved',evidence=tunnel['evidence'],points=points)
     paving=json.loads((ROOT/'data/seaward_paving.json').read_text())
     for f in paving['features']:
         ring=next((b['ring'] for b in s['buildings'] if b['id']==f.get('building')),None)

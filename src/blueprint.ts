@@ -1,3 +1,4 @@
+import {silviaFloor,silviaWallRings} from "./silvia-map";
 import {northPoolGardenPathBlueprint} from "./north-pool-gardens";
 import {northWestCanopyBlueprint} from "./north-west-canopies";
 import {cervantesEastSouthWalls,cervantesEastSouthDoor,cervantesEastSouthPergola,cervantesEastSouthPostRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
@@ -367,6 +368,13 @@ async function boot(): Promise<void> {
     }
   };
   paintRoofs(false);
+  const silviaOverlay=el('g',{id:'silvia-main-map',role:'button',tabindex:'0','aria-label':'Walk through the Silvia tunnel (approximate map position)',cursor:'pointer'});
+  const silviaTitle=el('title',{});silviaTitle.textContent='Silvia tunnel · approximate position · click to walk';silviaOverlay.append(silviaTitle);
+  silviaOverlay.append(el('path',{d:path(silviaFloor),fill:'#cfaa83',stroke:'#a86e38','stroke-width':.2,'stroke-dasharray':'.6 .4'}));
+  for(const ring of silviaWallRings())silviaOverlay.append(el('path',{d:path(ring),fill:'#fff9e8',stroke:'#60574c','stroke-width':.12}));
+  const visitSilvia=()=>document.querySelector<HTMLButtonElement>('#visit-silvia')?.click();
+  silviaOverlay.addEventListener('click',visitSilvia);silviaOverlay.addEventListener('keydown',event=>{if(event.key==='Enter')visitSilvia();});
+  world.append(silviaOverlay);
 
   for (const p of skeleton.pools) {
     world.append(el("path", { d: path(p.ring), fill: "#4fc3e8", stroke: "#f4eede", "stroke-width": 1, "stroke-linejoin": "round" }));

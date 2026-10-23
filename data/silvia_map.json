@@ -1,0 +1,20 @@
+{
+  "id": "silvia-main-map",
+  "status": "approximate",
+  "entry": [
+    -121.79,
+    118.12
+  ],
+  "forward": [
+    -0.854121,
+    0.520074
+  ],
+  "hostBuilding": "6264401UF1366S_part3",
+  "canopyBuilding": "6264401UF1366S_part2",
+  "evidence": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "map:ground"
+  ],
+  "note": "West-side registry-topology candidate. Photo heading conflicts; opposite-side host remains possible. Not placement approved."
+}

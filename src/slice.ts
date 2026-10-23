@@ -1,3 +1,5 @@
+import {createSilviaTunnel} from "./silvia-tunnel";
+import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
@@ -157,10 +159,26 @@ async function boot(): Promise<void> {
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => poolGroundY(x, z) + laneDrop(lowered, x, z));
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
+  const host=buildings.find(b=>b.id===SILVIA_HOST);
+  const hostCentre=host?centroid(host.ring):{x:-121.79,z:118.12};
+  // Same level datum as the surrounding host; the model is deliberately not terrain-draped.
+  const silviaY=liveGroundY(hostCentre.x,hostCentre.z);
+  if(host){
+    const tunnel=createSilviaTunnel(!layoutOnly);tunnel.rotation.y=silviaRotation;
+    const [x,z]=silviaWorld(0,0);tunnel.position.set(x,silviaY,z);scene.add(tunnel);
+    // A short street apron uses the same floor material, with no extra buildings or doors.
+    const original=tunnel.getObjectByName('T05-patterned-floor') as THREE.Mesh;
+    const apronGeo=new THREE.ShapeGeometry(shapeOf(silviaRect(-1.55,-3.65,1.55,-1.25)));
+    const uv=apronGeo.getAttribute('uv'),vertices=apronGeo.getAttribute('position');
+    for(let i=0;i<uv.count;i++){const [u,v]=silviaLocal(vertices.getX(i),-vertices.getY(i));uv.setXY(i,(u+2.65)/5.3,1-(v+1.25)/9.7);}
+    const apron=new THREE.Mesh(apronGeo,original.material);
+    apron.rotation.x=-Math.PI/2;apron.position.y=silviaY+.051;apron.receiveShadow=true;apron.userData.noDrape=true;apron.name='silvia-street-connection';scene.add(apron);
+    for(const along of [1,6]){const light=new THREE.PointLight('#fff0d4',1.5,7,2);const p=silviaWorld(0,along);light.position.set(p[0],silviaY+2.35,p[1]);scene.add(light);}
+  }
   // No deck wall where the lawn meets the paseo, or along a lowered lane (its own walls stand there).
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
-  const houses = buildings.filter((b) => !b.passage && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
+  const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight);addPorches(scene, houses, skeleton.floorHeight);}
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
@@ -218,7 +236,8 @@ async function boot(): Promise<void> {
   fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
-  const solids = new Solids([...solidBuildings.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : []), ...(seaside && mainPool ? seafrontFenceRings() : [])], Object.fromEntries(solidBuildings.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])));
+  const buildingParts=solidBuildings.flatMap(b=>silviaGroundParts(b).map(p=>({...p,id:b.id})));
+  const solids = new Solids([...buildingParts.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...silviaWallRings(), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : []), ...(seaside && mainPool ? seafrontFenceRings() : [])], Object.fromEntries(buildingParts.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])), Object.fromEntries(buildingParts.map((b,i)=>[i,b.holes])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   if (seafrontFocus && skeleton.seafront) {
@@ -268,6 +287,10 @@ async function boot(): Promise<void> {
     const turn = skeleton.viewRotation * Math.PI / 180;
     return [v[0] * Math.cos(turn) + v[1] * Math.sin(turn), -v[0] * Math.sin(turn) + v[1] * Math.cos(turn)];
   };
+  if(new URLSearchParams(location.search).get('place')==='silvia'){
+    [spawn[0],spawn[1]]=silviaWorld(0,-3.5);[start.x,start.z]=silviaWorld(0,4);
+    document.querySelector('#title')!.textContent='Calle Silvia · tunnel';
+  }
   const at = spot("at"), look = spot("look"), initialFocus=spot("focus");
   let focusPending=!!initialFocus;
   if (at) { spawn[0] = at[0]; spawn[1] = at[1]; }
@@ -280,7 +303,7 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + doorSillsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    groundHeight: (x,z) => host && inSilviaFloor(x,z) ? silviaY+.06 : seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + doorSillsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 
@@ -424,7 +447,14 @@ async function boot(): Promise<void> {
     } else target.set(player.x, player.y + 1.3, player.z);
     panDx=panDy=0;
     const hd = Math.cos(pitch) * distance;
+    const closeCamera=!overview && !!host && (silviaCloseCamera(player.x,player.z) || (host.holes??[]).some(r=>pointInRing(player.x,player.z,r)));
     camera.position.set(target.x - Math.sin(camYaw) * hd, target.y + Math.sin(pitch) * distance, target.z + Math.cos(camYaw) * hd);
+    if(closeCamera){
+      // First-person clearance under the low ceiling; keep normal walking controls.
+      camera.position.set(player.x,player.y+1.6,player.z);
+      target.set(player.x+Math.sin(camYaw),player.y+1.6-Math.sin(pitch-.45),player.z-Math.cos(camYaw));
+      player.group.visible=false;
+    }else player.group.visible=true;
     camera.lookAt(target);
     pools.update(clock.elapsedTime);
     camera.updateMatrixWorld();
@@ -438,6 +468,7 @@ async function boot(): Promise<void> {
     controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
     references.update();updatePhotoLabels();
     renderer.render(scene, camera);
+    canvas.dataset.ready="true";canvas.dataset.player=`${player.x.toFixed(3)},${player.z.toFixed(3)}`;canvas.dataset.closeCamera=String(closeCamera);
 
     input.jump = false;
     input.lookDx = 0;
@@ -666,7 +697,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     // A zero-storey enclosure is not evidence of a solid house or measured walls.
     const height = b.floors > 0 ? b.floors * floorHeight : .035;
     // A covered walk-through is only the storey above; the lane runs under it.
-    const lift = b.passage ? PASSAGE_HEADROOM : 0;
+    const lift = b.id===SILVIA_HOST?3.35:b.id===SILVIA_CANOPY?2.98:b.passage ? PASSAGE_HEADROOM : 0;
     const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
     const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height - lift, bevelEnabled: false });
     geometry.rotateX(-Math.PI / 2);
@@ -682,6 +713,10 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     mesh.userData.base = [c.x, c.z];
     mesh.name=`building:${b.id}`;mesh.userData.structural=true;
     scene.add(mesh);
+    if(b.id===SILVIA_HOST){for(const part of silviaGroundParts(b)){
+      const lowerGeo=new THREE.ExtrudeGeometry(shapeOf(part.ring,part.holes),{depth:3.35,bevelEnabled:false});lowerGeo.rotateX(-Math.PI/2);
+      const lower=new THREE.Mesh(lowerGeo,[cap,wall]);lower.castShadow=lower.receiveShadow=true;lower.userData.base=[c.x,c.z];lower.userData.structural=true;lower.name='silvia-host-ground';scene.add(lower);
+    }}
     const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height+lift+.012,z))),new THREE.LineBasicMaterial({color:b.floors>0?"#59564e":"#936347"}));
     outline.position.y=mesh.position.y-lift;outline.userData.base=[c.x,c.z];scene.add(outline);
   }
@@ -717,6 +752,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         // A wall shared with the next house has no openings.
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         for (let f = 0; f < b.floors; f++) {
+          if(b.id===SILVIA_HOST && f===0 && silviaCloseCamera(x,z))continue;
           const door = f === 0 && hash(x, z) < 0.3;
           const y = f * floorHeight + (door ? 1.05 : 1.3);
           (door ? doors : windows).push(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), turn, new THREE.Vector3(1, 1, 1)));
@@ -816,6 +852,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const t = (k + 0.5) / count;
         const x = ax + (bx - ax) * t;
         const z = az + (bz - az) * t;
+        if(b.id===SILVIA_HOST && silviaCloseCamera(x,z))continue;
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         // Only where the house looks out over a lane or garden.
