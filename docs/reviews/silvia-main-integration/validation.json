@@ -1,0 +1,18 @@
+{
+  "routes": 20,
+  "segments": 430,
+  "bothDirections": true,
+  "closedGateBlocks": true,
+  "openGatePasses": true,
+  "levelBuildingKeepsGroups": true,
+  "errors": [],
+  "pythonUnitTests": 60,
+  "productionBuild": "pass",
+  "sourceChecks": [
+    "street layout",
+    "levels",
+    "terrain",
+    "silvia tunnel"
+  ],
+  "placementGate": "FAIL - no fresh measured independent approval"
+}

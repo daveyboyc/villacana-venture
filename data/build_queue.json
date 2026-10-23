@@ -1041,7 +1041,7 @@
    ],
    "status": "in-progress",
    "owner": "Codex",
-   "notes": "Owner requests main-map integration. Independent source review supports bounded approximate west candidate, not placement approval; see docs/reviews/silvia-main-integration/independent-location-review.md."
+   "notes": "Owner requests main-map integration. Independent source review supports bounded approximate west candidate, not placement approval; see docs/reviews/silvia-main-integration/independent-location-review.md. Implemented and independently reviewed: same reusable model in canonical Map/Walk, bounded ground-floor carve with upper storey retained, street/courtyard traversal and close camera. Build, 60 unit checks, source checks and 430 layout segments pass. Placement gate fails; draft remains in progress and is not deployed. Courtyard garden context is incomplete."
   }
  ]
 }

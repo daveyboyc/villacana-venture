@@ -14,6 +14,7 @@
     "test:layout": "node scripts/test_layout_browser.cjs"
   },
   "dependencies": {
+    "polygon-clipping": "^0.15.7",
     "three": "^0.170.0"
   },
   "devDependencies": {

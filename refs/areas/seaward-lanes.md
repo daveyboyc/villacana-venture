@@ -11,12 +11,13 @@ The lanes between the middle pool and the beach.
 - Owner clarification: the narrow side spaces in the Silvia tunnel are recessed entrances with brown doors. Photo-relative 3D study includes the two visible paired doors plus two owner-confirmed inner entrances with guessed 0.65 m recesses and generic wooden doors; inventory now has T13/T14 (43 total). Study has no global map transform; connection and measured placement remain unresolved.
 - Owner correction to the Silvia tunnel study: the two inner recessed entrance doors are plain single brown wooden leaves with round gold knobs. This clarifies hidden door styling, while recess depth and world placement remain estimates.
 - Owner clarification applies to all tunnel entrance doors, including the nearer bays: use normal-width single brown leaves with one round gold knob each. Earlier paired-door readings remain source history, superseded for the model. Recess footprints and world-registration uncertainty are unchanged.
+- 23 October main-map integration draft reuses the corrected Silvia model at an approximate west-side registry-topology candidate: canopy 6264401UF1366S_part2, lower corridor through part3 to its courtyard, preserving upper floor/roof. Map and Walk/collision share one transform. Photo heading conflicts and opposite-side host remain unresolved; no measured placement approval. See docs/reviews/silvia-main-integration/.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/REFERENCE_PACK_WORKFLOW.md`
-- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`
-- src: `src/seaward-paving.ts`
+- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`, `data/silvia_map.json`
+- src: `src/seaward-paving.ts`, `src/silvia-map.ts`, `src/silvia-tunnel.ts`
 - contact sheet: `villacana-reference/contact-sheets/seaward-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -32,6 +33,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P1 | `silvia-all-single-doors` | Make every tunnel entrance a single door with a round gold knob (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-covered-passage-reference-audit` | Resolve the Silvia tunnel entrance, its components and connection to the lane (after entrance-photo-reference-pack) | open · placement: not-applicable |  |
+| P1 | `silvia-main-map` | Connect the Silvia tunnel study to the main map and Walk scene (after silvia-all-single-doors) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-simple-doors` | Simplify the recessed entrance doors and add round gold knobs (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-tunnel-details` | Build the Silvia tunnel with recessed brown entrance doors and photo details (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 
@@ -64,7 +66,7 @@ graph LR
 | `seaward_paving.json:seaward-patterned-floor` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seaward_paving.json:silvia-patterned-floor` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seaward_paving.json:teodoro-octagonal-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `silvia_tunnel.json:silvia-tunnel-study` | disputed | unchecked | open discrepancy silvia-study-world-registration |
+| `silvia_tunnel.json:silvia-tunnel-study` | disputed | unchecked | open discrepancy silvia-study-world-registration; open discrepancy silvia-main-map-west-candidate |
 
 **Built without complete newer photo-check records:** `seaward-lanes-paving`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 

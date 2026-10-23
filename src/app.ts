@@ -23,7 +23,7 @@ function setView(view: View, history = true): void {
     if(url.searchParams.has("photo"))scene.searchParams.set("photo",url.searchParams.get("photo")!);
     if (view === "overview") scene.searchParams.set("view", "overview");
     // Preserve old bookmarked scene focus/coordinates when opening the canonical app.
-    for (const key of ["details", "at", "look", "study"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
+    for (const key of ["details", "at", "look", "study", "place"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
     if (selectedPoint && view === "overview") {
       const r = frameRotation * Math.PI / 180, [x, z] = selectedPoint;
       const turned = `${(x * Math.cos(r) - z * Math.sin(r)).toFixed(2)},${(x * Math.sin(r) + z * Math.cos(r)).toFixed(2)}`;
@@ -36,6 +36,9 @@ function setView(view: View, history = true): void {
   window.dispatchEvent(new Event("resize"));
 }
 for (const view of ["map", "overview", "walk"] as const) document.querySelector(`#view-${view}`)!.addEventListener("click", () => setView(view));
+document.querySelector('#visit-silvia')!.addEventListener('click',()=>{
+  const url=new URL(location.href);url.searchParams.delete('study');url.searchParams.delete('at');url.searchParams.delete('look');url.searchParams.set('place','silvia');url.searchParams.set('details','1');window.history.replaceState(null,'',url);setView('walk');
+});
 document.querySelector("#app-photo-toggle")!.addEventListener("click", () => { setView("map"); document.querySelector<HTMLInputElement>("#photo-search")?.focus(); });
 window.addEventListener("popstate", () => {
   const mode = new URL(location.href).searchParams.get("view"); setView(mode === "overview" || mode === "walk" ? mode : "map", false);
