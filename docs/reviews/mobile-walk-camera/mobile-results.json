@@ -1,0 +1,12 @@
+{
+  "chromium": {
+    "touchMovement": 1.174448806887727,
+    "simultaneousLookAndMove": true,
+    "releaseStops": true,
+    "cancelStops": true,
+    "cameraSwitchKeepsPosition": true,
+    "preferencePersists": true,
+    "landscape": true,
+    "errors": []
+  }
+}

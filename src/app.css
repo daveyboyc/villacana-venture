@@ -1,7 +1,10 @@
 [hidden] { display: none !important; }
 #app-nav { position:fixed;inset:0 0 auto;z-index:12;height:54px;display:flex;align-items:center;gap:6px;padding:0 12px;background:#fffdf8;border-bottom:1px solid #d5cbbb;color:#29352e;box-sizing:border-box; }
+#app-nav {overflow-x:auto;scrollbar-width:none;}
+#app-nav .nav-short{display:none;}
+#app-nav button, #app-nav .app-brand {flex-shrink:0;}
 #app-nav .app-brand {font-size:18px;font-weight:700;margin-right:10px;text-decoration:none;color:inherit;}
-#app-nav button {border:1px solid #c9bfae;background:#fffdf8;border-radius:8px;padding:8px 12px;color:#263b32;font:inherit;cursor:pointer;white-space:nowrap;}
+#app-nav button {min-height:44px;border:1px solid #c9bfae;background:#fffdf8;border-radius:8px;padding:8px 12px;color:#263b32;font:inherit;cursor:pointer;white-space:nowrap;}
 #app-nav button[aria-pressed="true"] {background:#264c40;color:white;border-color:#264c40;}
 #app-nav button:focus-visible,.photo-result:focus-visible {outline:3px solid #1c6fd1;outline-offset:2px;}
 #app-selected {margin-left:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:12px ui-monospace,monospace;}
@@ -41,7 +44,7 @@ body[data-app-view="overview"]>.reference-tools,body[data-app-view="overview"]>.
 .photo-map-pin text {font-family:system-ui,sans-serif;paint-order:stroke;stroke:#fffdf8;stroke-width:3px;stroke-linejoin:round;fill:#183f35;}
 .photo-map-pin {cursor:pointer;}.photo-map-pin:focus {outline:none;}.photo-map-pin:focus circle {stroke:#1c6fd1;stroke-width:3px;}
 @media(max-width:760px) {
- #app-nav {padding:0 6px;gap:4px;height:52px;}#app-nav .app-brand {font-size:15px;margin-right:2px;}#app-nav button {font-size:12px;padding:8px 7px;}#app-selected {display:none;}
+ #app-nav {padding:0 6px;gap:4px;height:52px;}#app-nav .app-brand {display:none;}#app-nav .nav-long{display:none;}#app-nav .nav-short{display:inline;}#app-nav button {font-size:12px;padding:8px 7px;}#app-selected {display:none;}
  #scene-page {top:52px;}#map-controls {top:60px !important;right:8px !important;max-width:calc(100vw - 16px);gap:4px;}#map-controls button {padding:6px 9px;font-size:12px;}
  #photo-library {top:auto;left:8px;right:8px;width:auto;bottom:66px;height:39dvh;min-height:210px;border-radius:10px;}
  .photo-library-head {padding:8px;gap:5px;} .photo-library-head h1 {display:none;}.photo-filters {gap:5px;}#photo-results {min-height:65px;}#photo-detail {max-height:55%;}#photo-detail img {max-height:110px;}

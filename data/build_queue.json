@@ -1042,6 +1042,25 @@
    "status": "in-progress",
    "owner": "Codex",
    "notes": "Owner requests main-map integration. Independent source review supports bounded approximate west candidate, not placement approval; see docs/reviews/silvia-main-integration/independent-location-review.md. Implemented and independently reviewed: same reusable model in canonical Map/Walk, bounded ground-floor carve with upper storey retained, street/courtyard traversal and close camera. Build, 60 unit checks, source checks and 430 layout segments pass. Placement gate fails; draft remains in progress and is not deployed. Courtyard garden context is incomplete."
+  },
+  {
+   "id": "mobile-walk-camera",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Repair mobile walking input and add first/third person view switching",
+   "photos": [],
+   "build": "Separate touch movement from keyboard state, add a visible mobile movement pad, support looking while moving, and add persistent first/third person camera choice in normal Walk.",
+   "avoid": "No source geometry, footprint, placement or collision changes. Preserve existing movement physics and overview gestures.",
+   "accept": [
+    "Touch movement reaches the actual Player across rendered frames on a mobile viewport",
+    "First/third person switch preserves position and preference across view navigation",
+    "Released/cancelled gestures stop movement; desktop keyboard and overview gestures remain usable"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Codex",
+   "notes": "UI/input/camera task only: no placements, geometry, collision or movement physics changed. Native two-thumb input moves actual Player in the main app; release/cancel stop, mode choice preserves position and persists. Chromium/WebKit input-module tests, iPhone-sized portrait/landscape app test, layout/overview/photo-map regressions, 60 Python tests and production build checked. Shared renderer fingerprints change conservatively; measured placement remains unverified as before. See docs/reviews/mobile-walk-camera/."
   }
  ]
 }

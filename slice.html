@@ -31,7 +31,7 @@
       .reference-tools { flex-wrap:nowrap !important; overflow-x:auto; }
       .reference-tools button { flex:none; min-height:44px; }
       #help { bottom:68px; }
-      #overview-controls button[aria-pressed="true"] { background:#235f94; color:white; }
+      #walk-camera button[aria-pressed="true"], #overview-controls button[aria-pressed="true"] { background:#235f94; color:white; }
       #alignment-notes { position:fixed; top:172px; right:12px; width:min(300px, calc(100vw - 24px)); max-height:35vh; overflow:auto; padding:12px; box-sizing:border-box; background:#fffdf8f2; border:1px solid #c9bfae; border-radius:12px; font-size:13px; z-index:3; }
       #alignment-notes[hidden] { display:none; }
       #alignment-notes summary { font-weight:700; cursor:pointer; }
@@ -40,6 +40,26 @@
       #overview-bearing { min-width:55px; align-self:center; font-variant-numeric:tabular-nums; }
       #overview-rotation { width:120px; }
       @media(max-width:700px), (max-height:500px) { #areas { flex-wrap:nowrap; overflow-x:auto; max-height:none; padding-bottom:4px; } #areas .chip { white-space:nowrap; } #alignment-notes { top:170px; max-height:23vh; font-size:12px; } #overview-controls, #walk-camera { gap:4px; } #overview-controls button, #walk-camera button, #overview-more > summary { padding:8px; } }
+      #walk-pad, #walk-touch-help { display:none; }
+      #walk-pad { position:fixed; z-index:5; bottom:calc(16px + env(safe-area-inset-bottom)); left:max(16px,env(safe-area-inset-left)); width:128px; height:128px; border:2px solid #fff9; border-radius:50%; background:#fffdf8c9; color:#264c40; touch-action:none; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; box-shadow:0 2px 12px #0003; }
+      #walk-pad[hidden], #walk-touch-help[hidden] { display:none!important; }
+      .walk-arrow { position:absolute; font:22px system-ui; pointer-events:none; }.walk-up{top:3px;left:50%;transform:translateX(-50%)}.walk-down{bottom:3px;left:50%;transform:translateX(-50%)}.walk-left{left:7px;top:50%;transform:translateY(-50%)}.walk-right{right:7px;top:50%;transform:translateY(-50%)}
+      .walk-thumb { position:absolute; width:40px; height:40px; left:42px; top:42px; border-radius:50%; background:#477260; border:2px solid #fff; box-sizing:border-box; pointer-events:none; }
+      #walk-pad[data-active="true"] { background:#e4f3e9e8; }
+      #walk-touch-help { position:fixed; bottom:calc(96px + env(safe-area-inset-bottom)); right:max(16px,env(safe-area-inset-right)); padding:7px 10px; border-radius:8px; background:#fffdf8dc; color:#264c40; font-size:12px; pointer-events:none; }
+      @media(max-width:700px) { #walk-camera :is(.camera-in,.camera-out,.camera-fit){display:none}#walk-camera{bottom:calc(68px + env(safe-area-inset-bottom))} }
+      @media (pointer:coarse) {
+        #walk-pad, #walk-touch-help { display:block; }
+        #walk-camera { bottom:calc(156px + env(safe-area-inset-bottom)); }
+        #walk-camera :is(.camera-in,.camera-out,.camera-fit) { display:none; }
+        #walk-camera button { min-height:44px; }
+        #jump { bottom:calc(72px + env(safe-area-inset-bottom));right:max(16px,env(safe-area-inset-right)); }
+        body.embedded #jump {bottom:calc(18px + env(safe-area-inset-bottom));}
+        body:not(.embedded) #walk-touch-help {bottom:calc(216px + env(safe-area-inset-bottom));}
+        #gate-control { bottom:calc(216px + env(safe-area-inset-bottom))!important; }
+        #help { display:none; }
+      }
+      @media (pointer:coarse) and (max-height:450px) { #walk-pad{width:112px;height:112px}.walk-thumb{left:34px;top:34px}#walk-camera{bottom:auto;top:12px;left:12px}#walk-touch-help{bottom:76px}#layout-details{top:12px!important} }
     </style>
   </head>
   <body>
@@ -52,8 +72,11 @@
     <button class="chip" id="gate-control" style="bottom:112px;right:12px" hidden>Open coastal gate</button>
     <button class="chip" id="jump">Jump</button>
     <div id="walk-camera" role="toolbar" aria-label="Walking camera controls">
+      <button id="camera-first" type="button" aria-pressed="false">First person</button><button id="camera-third" type="button" aria-pressed="false">Third person</button>
       <button class="camera-in" aria-label="Zoom in">+</button><button class="camera-out" aria-label="Zoom out">−</button><button class="camera-fit">Fit area</button>
     </div>
+    <button id="walk-pad" type="button" aria-label="Movement joystick: drag up to walk forward, down to walk backward, left or right to move sideways"><span class="walk-arrow walk-up" aria-hidden="true">↑</span><span class="walk-arrow walk-down" aria-hidden="true">↓</span><span class="walk-arrow walk-left" aria-hidden="true">←</span><span class="walk-arrow walk-right" aria-hidden="true">→</span><span class="walk-thumb" aria-hidden="true"></span></button>
+    <div id="walk-touch-help">Left thumb: move · drag scene: look</div>
     <div id="overview-controls" role="toolbar" aria-label="Overview camera controls" hidden>
       <button id="overview-in" aria-label="Zoom in">+</button><button id="overview-out" aria-label="Zoom out">−</button>
       <button id="overview-fit">Fit area</button><details id="overview-more"><summary aria-label="More camera controls">More</summary><div id="overview-advanced">
