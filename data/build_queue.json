@@ -1058,8 +1058,9 @@
     "Released/cancelled gestures stop movement; desktop keyboard and overview gestures remain usable"
    ],
    "dependsOn": [],
-   "status": "in-progress",
-   "owner": "Codex"
+   "status": "done",
+   "owner": "Codex",
+   "notes": "UI/input/camera task only: no placements, geometry, collision or movement physics changed. Native two-thumb input moves actual Player in the main app; release/cancel stop, mode choice preserves position and persists. Chromium/WebKit input-module tests, iPhone-sized portrait/landscape app test, layout/overview/photo-map regressions, 60 Python tests and production build checked. Shared renderer fingerprints change conservatively; measured placement remains unverified as before. See docs/reviews/mobile-walk-camera/."
   }
  ]
 }

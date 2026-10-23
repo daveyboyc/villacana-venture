@@ -1,0 +1,18 @@
+{
+  "productionBuild": "pass",
+  "pythonUnitTests": 60,
+  "referenceGeneration": "pass: 176 reviewed references",
+  "layoutBrowser": {
+    "routes": 20,
+    "segments": 430,
+    "bothDirections": true,
+    "errors": []
+  },
+  "overviewBrowser": "pass",
+  "photoMapBrowser": "pass: desktop, 390/320 portrait and 844 landscape",
+  "chromiumInputModule": "pass",
+  "webkitInputModule": "pass",
+  "iphoneSizedMainApp": "pass: two-thumb movement/look, release/cancel, camera selection and persistence, portrait/landscape",
+  "physicalIPhoneTest": false,
+  "placementGate": "FAIL: shared renderer fingerprints; no new placement, geometry or collision changes"
+}

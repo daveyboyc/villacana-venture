@@ -8,7 +8,7 @@ import type {InputState} from './types';
 /** Explicit photo-relative study in the canonical app. Never substitutes a guessed map footprint. */
 export function bootSilviaStudy(){
  const canvas=document.querySelector<HTMLCanvasElement>('#scene')!;
- for(const id of ['areas','title','current-route','layout-details','back','gate-control','jump','walk-camera','overview-controls','alignment-notes','overview','help']){const node=document.getElementById(id);if(node)node.style.display='none';}
+ for(const id of ['areas','title','current-route','layout-details','back','gate-control','jump','walk-camera','walk-pad','walk-touch-help','overview-controls','alignment-notes','overview','help']){const node=document.getElementById(id);if(node)node.style.display='none';}
  const style=document.createElement('style');style.textContent=`
  .study-bar{position:fixed;top:16px;left:16px;right:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;z-index:5;font:14px system-ui;color:#273b34}
  .study-bar h1{font-size:18px;margin:0 12px 0 0}.study-bar button,.study-bar a{font:inherit;padding:10px 13px;border-radius:8px;border:1px solid #b8b9aa;background:#fffdf5;color:#273b34;text-decoration:none;cursor:pointer;min-height:44px}.study-bar button[aria-pressed=true]{background:#245e4c;color:white}

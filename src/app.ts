@@ -13,6 +13,7 @@ void fetch(asset("/map/skeleton.json")).then(r=>r.json()).then(s=>{frameRotation
 function setView(view: View, history = true): void {
   const url = new URL(location.href); url.searchParams.set("view", view);
   if (history) window.history.pushState(null, "", url);
+  frame.contentWindow?.postMessage({type:"villacana-controls-reset"},location.origin);
   document.body.dataset.appView = view;
   mapPage.hidden = view !== "map"; scenePage.hidden = view === "map";
   for (const mode of ["map", "overview", "walk"] as const) document.querySelector(`#view-${mode}`)!.setAttribute("aria-pressed", String(mode === view));
@@ -23,7 +24,7 @@ function setView(view: View, history = true): void {
     if(url.searchParams.has("photo"))scene.searchParams.set("photo",url.searchParams.get("photo")!);
     if (view === "overview") scene.searchParams.set("view", "overview");
     // Preserve old bookmarked scene focus/coordinates when opening the canonical app.
-    for (const key of ["details", "at", "look", "study", "place"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
+    for (const key of ["details", "at", "look", "study", "place", "camera"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
     if (selectedPoint && view === "overview") {
       const r = frameRotation * Math.PI / 180, [x, z] = selectedPoint;
       const turned = `${(x * Math.cos(r) - z * Math.sin(r)).toFixed(2)},${(x * Math.sin(r) + z * Math.cos(r)).toFixed(2)}`;
@@ -52,6 +53,9 @@ window.addEventListener("reference-selected", ((event: CustomEvent<{ id: string;
 window.addEventListener("reference-view", ((event: CustomEvent<View>) => setView(event.detail)) as EventListener);
 window.addEventListener("message", event => {
   if (event.origin !== location.origin || event.source !== frame.contentWindow) return;
+  if(event.data?.type==='villacana-camera'&&['first','third'].includes(event.data.mode)){
+    const url=new URL(location.href);url.searchParams.set('camera',event.data.mode);window.history.replaceState(null,'',url);
+  }
   if (event.data?.type === "villacana-map") {
     setView("map");
     if(typeof event.data.photo === "string") window.dispatchEvent(new CustomEvent("reference-open", {detail:event.data.photo}));

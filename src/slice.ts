@@ -1,3 +1,4 @@
+import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
 import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
@@ -312,6 +313,20 @@ async function boot(): Promise<void> {
   let pitch = seafrontFocus ? 0.75 : 0.45;
   let distance = seafrontFocus ? 90 : 6;
   let lookHold = 0;
+  type WalkingView='first'|'third';
+  const validView=(v:string|null):v is WalkingView=>v==='first'||v==='third';
+  const queryView=new URLSearchParams(location.search).get('camera');
+  let walkingView:WalkingView|null=validView(queryView)?queryView:null;
+  if(!walkingView){try{const stored=localStorage.getItem('villacana.walk-camera');if(validView(stored))walkingView=stored;}catch{/* Private browsing may deny storage. */}}
+  const chooseView=(mode:WalkingView)=>{
+    walkingView=mode;pitch=.45;resetPointers();
+    try{localStorage.setItem('villacana.walk-camera',mode);}catch{/* The current session still works. */}
+    const url=new URL(location.href);url.searchParams.set('camera',mode);history.replaceState(null,'',url);
+    const details=new URL(url);if(layoutOnly)details.searchParams.set('details','1');else details.searchParams.delete('details');detailLink.href=details.pathname+details.search;
+    if(embedded)parent.postMessage({type:'villacana-camera',mode},location.origin);
+  };
+  document.querySelector('#camera-first')!.addEventListener('click',()=>chooseView('first'));
+  document.querySelector('#camera-third')!.addEventListener('click',()=>chooseView('third'));
   // Far enough back to take in every courtyard on show.
   let farthest = RADIUS * 2.6 * Math.max(1,innerHeight/innerWidth);
   window.addEventListener("resize",()=>{const previous=farthest;farthest=RADIUS*2.6*Math.max(1,innerHeight/innerWidth);if(overview)distance*=farthest/previous;});
@@ -399,6 +414,9 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
+  const cameraBlockers:THREE.Object3D[]=[];
+  scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
+  const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
 
   const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
@@ -412,6 +430,12 @@ async function boot(): Promise<void> {
     gateButton.hidden=overview||Math.hypot(player.x-gate.at[0],player.z-gate.at[1])>6;
     if(!overview && !references.active()) player.update(dt, input, world, camYaw);
 
+    const inCloseSpace=!!host && (silviaCloseCamera(player.x,player.z)||(host.holes??[]).some(r=>pointInRing(player.x,player.z,r)));
+    const firstPerson=!overview && (walkingView==='first'||(walkingView===null&&inCloseSpace));
+    document.querySelector('#camera-first')!.setAttribute('aria-pressed',String(firstPerson));
+    document.querySelector('#camera-third')!.setAttribute('aria-pressed',String(!overview&&!firstPerson));
+    document.querySelector<HTMLElement>('#walk-pad')!.hidden=overview;
+    document.querySelector<HTMLElement>('#walk-touch-help')!.hidden=overview;
     const moving = input.moveX * input.moveX + input.moveZ * input.moveZ > 0.04;
     if (input.lookDx || input.lookDy) lookHold = 0.9;
     lookHold = Math.max(0, lookHold - dt);
@@ -430,12 +454,12 @@ async function boot(): Promise<void> {
       distance = overview ? (focusPending ? Math.min(110,farthest) : farthest) : 6;focusPending=false;
       pitch = overview ? Math.PI/2 : 0.45;
     }
-    pitch = clamp(pitch + input.lookDy * 0.0035, 0.15, overview ? Math.PI/2 : 1.45);
+    pitch = clamp(pitch + input.lookDy * 0.0035, firstPerson ? -.65 : .15, overview ? Math.PI/2 : firstPerson ? 1.55 : 1.45);
     distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, farthest*3);
     // Push the haze back as the camera rises, so the layout stays clear from above.
     fog.near = 90 + distance * 1.5;
     fog.far = 260 + distance * 3;
-    if (!overview && lookHold === 0 && moving) camYaw = dampAngle(camYaw, player.yaw, dt * 2.2);
+    if (!overview && !firstPerson && lookHold === 0 && moving) camYaw = dampAngle(camYaw, player.yaw, dt * 2.2);
 
     if(overview) {
       const scale=distance/innerHeight;
@@ -447,14 +471,25 @@ async function boot(): Promise<void> {
     } else target.set(player.x, player.y + 1.3, player.z);
     panDx=panDy=0;
     const hd = Math.cos(pitch) * distance;
-    const closeCamera=!overview && !!host && (silviaCloseCamera(player.x,player.z) || (host.holes??[]).some(r=>pointInRing(player.x,player.z,r)));
+    const closeCamera=firstPerson;
     camera.position.set(target.x - Math.sin(camYaw) * hd, target.y + Math.sin(pitch) * distance, target.z + Math.cos(camYaw) * hd);
     if(closeCamera){
       // First-person clearance under the low ceiling; keep normal walking controls.
       camera.position.set(player.x,player.y+1.6,player.z);
       target.set(player.x+Math.sin(camYaw),player.y+1.6-Math.sin(pitch-.45),player.z-Math.cos(camYaw));
       player.group.visible=false;
-    }else player.group.visible=true;
+    }else{
+      player.group.visible=true;
+      if(!overview){
+        // Keep the third-person camera in front of opaque walls and ceilings.
+        walkCameraDirection.copy(camera.position).sub(target);const desired=walkCameraDirection.length();walkCameraDirection.normalize();
+        walkCameraRay.set(target,walkCameraDirection);walkCameraRay.far=desired;
+        const hit=walkCameraRay.intersectObjects(cameraBlockers,false)[0];
+        if(hit){const reach=Math.max(.15,hit.distance-.2);camera.position.copy(target).addScaledVector(walkCameraDirection,reach);player.group.visible=reach>2.2;}
+      }
+    }
+    const walkingFov=!overview&&!firstPerson&&inCloseSpace?70:55;
+    if(camera.fov!==walkingFov){camera.fov=walkingFov;camera.updateProjectionMatrix();}
     camera.lookAt(target);
     pools.update(clock.elapsedTime);
     camera.updateMatrixWorld();
@@ -468,7 +503,7 @@ async function boot(): Promise<void> {
     controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
     references.update();updatePhotoLabels();
     renderer.render(scene, camera);
-    canvas.dataset.ready="true";canvas.dataset.player=`${player.x.toFixed(3)},${player.z.toFixed(3)}`;canvas.dataset.closeCamera=String(closeCamera);
+    canvas.dataset.ready="true";canvas.dataset.player=`${player.x.toFixed(3)},${player.z.toFixed(3)}`;canvas.dataset.closeCamera=String(closeCamera);canvas.dataset.cameraView=overview?"overview":firstPerson?"first":"third";canvas.dataset.move=`${input.moveX.toFixed(2)},${input.moveZ.toFixed(2)}`;canvas.dataset.yaw=camYaw.toFixed(4);
 
     input.jump = false;
     input.lookDx = 0;
@@ -1108,85 +1143,15 @@ function hash(x: number, z: number): number {
   return s - Math.floor(s);
 }
 
-const keys = new Set<string>();
 let overview = new URLSearchParams(location.search).get("view") === "overview";
 let overviewPan=true, panDx=0, panDy=0;
-let stick: { id: number; x: number; y: number } | null = null;
-
-function readKeys(): void {
-  if (stick) return;
-  input.moveX = (keys.has("KeyD") || keys.has("ArrowRight") ? 1 : 0) - (keys.has("KeyA") || keys.has("ArrowLeft") ? 1 : 0);
-  input.moveZ = (keys.has("KeyW") || keys.has("ArrowUp") ? 1 : 0) - (keys.has("KeyS") || keys.has("ArrowDown") ? 1 : 0);
-  input.run = keys.has("ShiftLeft") || keys.has("ShiftRight");
-}
-
+let walkInput:ReturnType<typeof bindWalkControls>|undefined;
+const readKeys=()=>walkInput?.read();
 let resetPointers=()=>{};
-function bindInput(): void {
-  window.addEventListener("keydown", (e) => {
-    if((e.target as HTMLElement).matches("input,textarea,select")||document.querySelector("dialog[open]"))return;
-    keys.add(e.code);
-    if (e.code === "Space") input.jump = true;
+function bindInput():void{
+  walkInput=bindWalkControls({canvas,pad:document.querySelector<HTMLButtonElement>('#walk-pad')!,input,
+    isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},
+    toggleOverview:()=>{overview=!overview;document.querySelector('#overview')!.textContent=overview?'Walk':'Overview';}
   });
-  window.addEventListener("keyup", (e) => keys.delete(e.code));
-  document.querySelector("#jump")!.addEventListener("pointerdown", () => (input.jump = true));
-  const overviewButton = document.querySelector<HTMLButtonElement>("#overview")!;
-  overviewButton.addEventListener("click", () => {
-    resetPointers();
-    overview = !overview;
-    overviewButton.textContent = overview ? "Walk" : "Overview";
-  });
-
-  // Track every canvas pointer before assigning the single-finger walk/look role.
-  // A second finger promotes the joystick to a pinch and stops walking.
-
-  const looks = new Map<number, { x: number; y: number }>();
-  canvas.addEventListener("pointerdown", (e) => {
-    canvas.setPointerCapture(e.pointerId);
-    looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    if(looks.size>1) {stick=null;input.moveX=input.moveZ=input.lookDx=input.lookDy=0;return;}
-    if (!overview && e.pointerType === "touch" && e.clientX < window.innerWidth / 2 && !stick) {
-      stick = { id: e.pointerId, x: e.clientX, y: e.clientY };
-    }
-  });
-  canvas.addEventListener("pointermove", (e) => {
-    const prev = looks.get(e.pointerId);
-    if (!prev) return;
-    if (looks.size > 2) {looks.set(e.pointerId,{x:e.clientX,y:e.clientY});return;}
-    if (looks.size === 2) {
-      // Two fingers: pinch to zoom.
-      const other = [...looks.entries()].find(([id]) => id !== e.pointerId)![1];
-      const before = Math.hypot(prev.x - other.x, prev.y - other.y);
-      const after = Math.hypot(e.clientX - other.x, e.clientY - other.y);
-      if(before>5&&after>5) {
-        input.zoom += Math.log(before/after)/.08;
-        if(overview){const turn=Math.atan2(e.clientY-other.y,e.clientX-other.x)-Math.atan2(prev.y-other.y,prev.x-other.x);input.lookDx+=Math.atan2(Math.sin(turn),Math.cos(turn))/.0045;}
-      }
-      looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
-      return;
-    }
-    if (stick && e.pointerId === stick.id) {
-      input.moveX = clamp((e.clientX - stick.x) / 50, -1, 1);
-      input.moveZ = clamp(-(e.clientY - stick.y) / 50, -1, 1);
-    } else if(overview && overviewPan && !e.shiftKey && !(e.buttons&2)) {panDx+=e.clientX-prev.x;panDy+=e.clientY-prev.y;}
-    else {input.lookDx += e.clientX - prev.x;input.lookDy += e.clientY - prev.y;}
-    looks.set(e.pointerId, { x: e.clientX, y: e.clientY });
-  });
-  const release = (e: PointerEvent) => {
-    if (stick && e.pointerId === stick.id) {
-      stick = null;
-      input.moveX = 0;
-      input.moveZ = 0;
-    }
-    looks.delete(e.pointerId);
-  };
-  canvas.addEventListener("pointerup", release);
-  canvas.addEventListener("pointercancel", release);
-  canvas.addEventListener("lostpointercapture", release);
-  resetPointers=()=>{looks.clear();stick=null;keys.clear();input.moveX=input.moveZ=input.lookDx=input.lookDy=input.zoom=panDx=panDy=0;};
-  canvas.addEventListener("contextmenu",e=>e.preventDefault());
-  window.addEventListener("blur",resetPointers);
-  canvas.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    input.zoom += clamp(e.deltaY*(e.deltaMode===1?16:e.deltaMode===2?innerHeight:1)/100,-4,4);
-  }, { passive: false });
+  resetPointers=()=>{walkInput!.reset();panDx=panDy=0;};
 }

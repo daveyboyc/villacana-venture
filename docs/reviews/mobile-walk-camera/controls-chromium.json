@@ -1,0 +1,11 @@
+{
+  "engine": "chromium",
+  "padMovesActualPlayer": true,
+  "allDirectionsAndDiagonal": true,
+  "cancelStops": true,
+  "blurStops": true,
+  "appNavigationStops": true,
+  "keyboardWorks": true,
+  "overviewPanAndZoom": true,
+  "errors": []
+}
