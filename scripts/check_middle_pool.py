@@ -143,7 +143,7 @@ assert max(p[1] for p in n['cap']['ring'])<91,'North feature must not replace so
 print('Middle pool north: independently corrected pins, bounded cap/door wall, open pergola and matching stepped ground PASS')
 # Issue 39: distinct level south entrance; every outline is shared with rendering.
 south=json.loads((ROOT/'data/middle_pool_south_gate.json').read_text())
-assert south['evidence']==['IMG_2334.jpg','IMG_2335.jpg'] and all(p in photos for p in south['evidence'])
+assert {'IMG_2334.jpg','IMG_2335.jpg'}<=set(south['evidence']) and all(p in photos for p in south['evidence'])
 assert south['opening']>=2*PLAYER+.5 and south['height']>=2
 assert abs(math.hypot(*south['forward'])-1)<1e-5
 ux,uz=south['forward'];cx,cz=south['center'];at=lambda a,c:[cx+ux*a-uz*c,cz+uz*a+ux*c]
@@ -177,7 +177,7 @@ print('Middle pool south: separate open double gate, planter, wall bench past th
 
 # Bounded south forecourt: materials can cross a route, planting must clear its full width.
 court,hedge=south['forecourt'],south['hedge']
-assert court['evidence']==south['evidence'] and hedge['evidence']==['IMG_2334.jpg']
+assert {'IMG_2334.jpg','IMG_2335.jpg'}<=set(court['evidence'])<=set(south['evidence']) and hedge['evidence']==['IMG_2334.jpg']
 assert 'estimated' in court['trust'] and 'estimated' in hedge['trust']
 assert court['along'][0]<south['paving']['along'][0] and court['along'][1]==south['paving']['along'][1]
 assert court['across']==south['paving']['across'],'Keep the photographed narrow width; do not widen across private boundaries'

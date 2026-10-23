@@ -1,6 +1,6 @@
 {
  "id": "middle-pool-south-gate",
- "name": "Middle pool · south double iron gate, curved head and tiled planter",
+ "name": "Middle pool \u00b7 south double iron gate, curved head and tiled planter",
  "center": [
   -126.48,
   103.85
@@ -90,12 +90,13 @@
  },
  "evidence": [
   "IMG_2334.jpg",
-  "IMG_2335.jpg"
+  "IMG_2335.jpg",
+  "IMG_2192.jpg"
  ],
- "trust": "Separate southern entrance, not the southwest steps of IMG_2333. IMG_2334 shows two open iron leaves below a shallow curved white rendered head with sparse metal pergola frame above, crazy paving and a flush drain. IMG_2335 shows the wall bench: a seat-height block recessed into the raised planter with a low plinth in front, below a tall white wall carrying a panel of white tiles framed with blue/yellow figure tiles. Corrected 18 October from a perspective reading of IMG_2334 (gate opening about 1.85 m as the scale): the right leaf opens back against about 1.7 m of planter, the bench recess runs about 1.7-2.7 m in from the gate line, and the planter continues past it towards the courtyard (modelled to about 3.1 m in, where the approximate mapped Calle Eva route turns north-west; its real courtyard end is not visible); the drain sits about 2.3-3.0 m in. Placement of the gate follows the gap between unchanged registry blocks, not GPS. Position (roughly 1-2 m), opening, heights, planter ends and bench dimensions are estimates (about ±0.3 m along the path); No grade change or enclosing wall beyond the photographed fragment is inferred. Tile motifs are schematic, not photo textures.",
+ "trust": "Separate southern entrance, not the southwest steps of IMG_2333. IMG_2334 shows two open iron leaves below a shallow curved white rendered head with sparse metal pergola frame above, crazy paving and a flush drain. IMG_2335 shows the wall bench: a seat-height block recessed into the raised planter with a low plinth in front, below a tall white wall carrying a panel of white tiles framed with blue/yellow figure tiles. Corrected 18 October from a perspective reading of IMG_2334 (gate opening about 1.85 m as the scale): the right leaf opens back against about 1.7 m of planter, the bench recess runs about 1.7-2.7 m in from the gate line, and the planter continues past it towards the courtyard (modelled to about 3.1 m in, where the approximate mapped Calle Eva route turns north-west; its real courtyard end is not visible); the drain sits about 2.3-3.0 m in. Placement of the gate follows the gap between unchanged registry blocks, not GPS. Position (roughly 1-2 m), opening, heights, planter ends and bench dimensions are estimates (about \u00b10.3 m along the path); No grade change or enclosing wall beyond the photographed fragment is inferred. Tile motifs are schematic, not photo textures.",
  "forecourt": {
   "id": "middle-pool-south-forecourt",
-  "name": "Middle pool · bounded crazy-paved south forecourt",
+  "name": "Middle pool \u00b7 bounded crazy-paved south forecourt",
   "along": [
    -5.0,
    0.15
@@ -112,7 +113,7 @@
  },
  "hedge": {
   "id": "middle-pool-south-east-hedge",
-  "name": "Middle pool · visible east hedge fragment",
+  "name": "Middle pool \u00b7 visible east hedge fragment",
   "along": [
    -1.65,
    -0.15
@@ -125,5 +126,55 @@
    "IMG_2334.jpg"
   ],
   "trust": "Tall clipped hedge at photo-left/east in IMG_2334. Only the gate-side fragment is drafted. Width, height and endpoints estimated; its hidden continuation is deliberately unresolved. Fragment stops before the mapped Eva crossing at along -2.99 m; this route clearance is not evidence of an actual gap in the hedge. Details-only cards, no wall or collision."
+ },
+ "benchPlanting": {
+  "evidence": [
+   "IMG_2334.jpg",
+   "IMG_2335.jpg",
+   "IMG_2192.jpg"
+  ],
+  "trust": "Columnar evergreen shrubs and geraniums flank the bench in the photographs. Roots are bounded estimates within the unchanged planter; full visible radii use the shared route guard. Any source plant conflicting with estimated Eva crossing is omitted rather than relocating the route.",
+  "cypresses": [
+   {
+    "along": -0.9,
+    "across": 1.52,
+    "radius": 0.29,
+    "height": 2.85
+   },
+   {
+    "along": -2.91,
+    "across": 1.53,
+    "radius": 0.25,
+    "height": 2.7
+   }
+  ],
+  "geraniums": [
+   {
+    "along": -0.25,
+    "across": 1.52,
+    "radius": 0.27
+   },
+   {
+    "along": -1.45,
+    "across": 1.53,
+    "radius": 0.28
+   },
+   {
+    "along": -2.91,
+    "across": 1.5,
+    "radius": 0.26
+   }
+  ]
+ },
+ "cabinet": {
+  "along": -3.1,
+  "across": 1.52,
+  "width": 0.46,
+  "height": 0.52,
+  "bottom": 0.12,
+  "evidence": [
+   "IMG_2192.jpg"
+  ],
+  "trust": "Small pale vented cabinet face observed at courtyard end of the planter in IMG_2192. Appearance/attachment estimated on existing face; utility identity, contents and hidden services unknown. No new opening or walk obstacle."
  }
 }

@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 360,
-  "photosCitedByModel": 97,
-  "modelFeaturesWithPhotoCitations": 105
+  "features": 366,
+  "photosCitedByModel": 99,
+  "modelFeaturesWithPhotoCitations": 111
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2533,7 +2533,8 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2334.jpg",
-    "IMG_2335.jpg"
+    "IMG_2335.jpg",
+    "IMG_2192.jpg"
    ]
   },
   {
@@ -2553,6 +2554,63 @@
    "source": "photo-supported east hedge; estimated fragment with unresolved continuation",
    "evidence": [
     "IMG_2334.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "name": "Entrance lane · four-column terracotta paving",
+   "kind": "reference feature",
+   "source": "four observed tile columns; bounded model surface and row pitch estimated",
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_lane_frontages.json:south-lane-left-border",
+   "name": "Entrance lane · low left planted border",
+   "kind": "reference feature",
+   "source": "bounded draft from observed frontage; world placement estimated",
+   "evidence": [
+    "IMG_2334.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+   "name": "Entrance lane · raised right frontage bed",
+   "kind": "reference feature",
+   "source": "bounded draft from observed frontage; world placement estimated",
+   "evidence": [
+    "IMG_2334.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "name": "Entrance lane · separate right bed beyond doorway",
+   "kind": "reference feature",
+   "source": "bounded draft from observed frontage; world placement estimated",
+   "evidence": [
+    "IMG_2334.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "name": "Entrance lane · projecting near window grille and brown shutters",
+   "kind": "reference feature",
+   "source": "observed grille construction; facade attachment and dimensions estimated",
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool_lane_frontages.json:south-lane-right-far-grille",
+   "name": "Entrance lane · bounded farther shuttered grille",
+   "kind": "reference feature",
+   "source": "observed grille construction; facade attachment and dimensions estimated",
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2189.jpg"
    ]
   },
   {
@@ -4104,6 +4162,24 @@
    "angleOffset": 0.6
   },
   {
+   "from": "photo:IMG_2189.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2189.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2189.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-right-far-grille",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2190.jpg",
    "to": "street:silvia-north",
    "relation": "camera-nearby",
@@ -4179,6 +4255,12 @@
    "to": "street:eva",
    "relation": "camera-nearby",
    "gap": 5.4
+  },
+  {
+   "from": "photo:IMG_2192.jpg",
+   "to": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2193.jpg",
@@ -7544,6 +7626,42 @@
   {
    "from": "photo:IMG_2334.jpg",
    "to": "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-left-border",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2334.jpg",
+   "to": "middle_pool_lane_frontages.json:south-lane-right-far-grille",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
