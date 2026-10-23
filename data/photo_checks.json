@@ -237,6 +237,28 @@
    "by": "Codex",
    "result": "not-comparable",
    "notes": "Same stored camera and Details view. Stone now continues alongside the unchanged recessed bench/plinth and tiled wall; existing bench/gate geometry is retained. The third-person view includes the whole junction rather than the source close-up, so it cannot verify precise panel, hedge, width or full boundary placement. The earlier bench-specific check is retained; this record makes no new full-scene match claim."
+  },
+  {
+   "task": "tunnel-entrance-context",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/tunnel-entrance-context/IMG_2334-before.png",
+   "render": "docs/reviews/tunnel-entrance-context/IMG_2334-after.png",
+   "checked": "2026-10-23",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full source inspected with independent source review. Actual main-app before/after pair uses the same stored reviewed camera/looksAt, first person and Details. Added finite bench planting, middle-band gate scrolls and lane borders/square grilles/four-column paving; original gate/bench/pool/tunnel transforms retained. Camera pose is not calibrated; schematic vegetation, tile artwork and surrounding procedural facades still differ. Hidden ground anchors and uncertain source/world registration prevent a measured placement or photographic match. Existing discrepancies and the new pool-spacing report remain open."
+  },
+  {
+   "task": "tunnel-entrance-context",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "photo": "IMG_2335.jpg",
+   "before": "docs/reviews/tunnel-entrance-context/IMG_2335-before.png",
+   "render": "docs/reviews/tunnel-entrance-context/IMG_2335-after.png",
+   "checked": "2026-10-23",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full source inspected with independent source review. Actual main-app before/after pair uses the same stored reviewed camera/looksAt, first person and Details. Added finite bench planting, middle-band gate scrolls and lane borders/square grilles/four-column paving; original gate/bench/pool/tunnel transforms retained. Camera pose is not calibrated; schematic vegetation, tile artwork and surrounding procedural facades still differ. Hidden ground anchors and uncertain source/world registration prevent a measured placement or photographic match. Existing discrepancies and the new pool-spacing report remain open."
   }
  ],
  "legacyUnchecked": [

@@ -106,6 +106,15 @@ def features(s):
     add('middle_pool_south_gate.json:'+court['id'],court['name'],'reference feature','photo-supported paving; bounded estimated outline, unapproved placement',evidence=court['evidence'],ring=[south_at(a,c),south_at(b,c),south_at(b,d),south_at(a,d)])
     hedge=south['hedge']
     add('middle_pool_south_gate.json:'+hedge['id'],hedge['name'],'reference feature','photo-supported east hedge; estimated fragment with unresolved continuation',evidence=hedge['evidence'],points=[south_at(a,hedge['across']) for a in hedge['along']])
+    frontages=json.loads((ROOT/'data/middle_pool_lane_frontages.json').read_text())
+    paving=frontages['paving'];sections=paving['sections']
+    add('middle_pool_lane_frontages.json:'+paving['id'],paving['name'],'reference feature','four observed tile columns; bounded model surface and row pitch estimated',evidence=paving['evidence'],ring=[south_at(a,left) for a,left,right in sections]+[south_at(a,right) for a,left,right in reversed(sections)])
+    for bed in frontages['beds']:
+        add('middle_pool_lane_frontages.json:'+bed['id'],bed['name'],'reference feature','bounded draft from observed frontage; world placement estimated',evidence=bed['evidence'],ring=[south_at(*p) for p in bed['outline']])
+    for opening in frontages['openings']:
+        a,b=opening['facade'];t=opening['at'];length=math.dist(a,b);dx,dz=[(b[i]-a[i])/length for i in range(2)];cx,cz=[a[i]+(b[i]-a[i])*t for i in range(2)]
+        ring=[[cx+dx*side*opening['width']/2+dz*front*opening['projection'],cz+dz*side*opening['width']/2-dx*front*opening['projection']] for side,front in [(-1,0),(1,0),(1,1),(-1,1)]]
+        add('middle_pool_lane_frontages.json:'+opening['id'],opening['name'],'reference feature','observed grille construction; facade attachment and dimensions estimated',evidence=opening['evidence'],ring=ring)
     middle=json.loads((ROOT/'data/middle_pool.json').read_text())
     for f in [middle['gateway'],middle['planter']]:
         add('middle_pool.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})

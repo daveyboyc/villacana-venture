@@ -294,7 +294,11 @@
    "altitude": 6.9,
    "trust": "checked against photo content"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "middle_pool_lane_frontages.json:south-lane-right-far-grille"
+  ],
   "looksAt": [
    -127.0,
    103.0
@@ -304,7 +308,7 @@
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
    "middle_pool_south_gate.json:middle-pool-south-gate",
-   "street:eva"
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving"
   ],
   "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
  },
@@ -406,7 +410,9 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool_south_gate.json:middle-pool-south-gate"
+  ],
   "looksAt": [
    -126.6,
    100.5
@@ -4442,7 +4448,13 @@
   "citedBy": [
    "middle_pool_south_gate.json:middle-pool-south-gate",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "middle_pool_lane_frontages.json:south-lane-left-border",
+   "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+   "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+   "middle_pool_lane_frontages.json:south-lane-right-far-grille"
   ],
   "looksAt": [
    -127.3,
@@ -4451,9 +4463,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
    "street:silvia-north",
-   "middle_pool_south_gate.json:middle-pool-south-gate",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "middle_pool_south_gate.json:middle-pool-south-gate"
   ],
   "subject": "south gate, double iron leaves and the planter to its right"
  },

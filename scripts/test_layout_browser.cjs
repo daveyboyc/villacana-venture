@@ -304,6 +304,55 @@ const path = require("node:path");
     walk([middleSouthAt(-2.8),middleSouthAt(1.8)]);
     walk([middleSouthAt(1.8),middleSouthAt(-2.8)]);
     if(Math.abs(world.groundHeight(...middleSouthAt(-2))-world.groundHeight(...middleSouthAt(1)))>.05)throw Error("South entrance gained an unsupported step");
+    {
+      const {laneAt,laneBeds,laneBedRing,laneFrontageRings,laneOpenings,laneGrilleRing,laneDoorway,lanePaving,outsideLanePaving,addLaneFrontages,replacesLaneGroundOpening}=await import('/src/middle-pool-lane-frontages.ts');
+      for(const bed of laneBeds){
+        if(!document.querySelector(`[data-middle-id="${bed.id}"]`))throw Error('Lane bed missing from map: '+bed.id);
+        const ring=laneBedRing(bed),c=ring.reduce((a,p)=>[a[0]+p[0]/ring.length,a[1]+p[1]/ring.length],[0,0]),resolved=new Solids(laneFrontageRings()).resolve(...c,.42);
+        if(Math.hypot(resolved.x-c[0],resolved.z-c[1])<.1)throw Error('Lane bed lacks shared collision');
+      }
+      const station=(laneDoorway.along[0]+laneDoorway.along[1])/2;
+      walk([laneAt(station,0),laneAt(station,1.65)]);walk([laneAt(station,1.65),laneAt(station,0)]);
+      walk([laneAt(.2),laneAt(12)]);walk([laneAt(12),laneAt(.2)]);
+      const layout=new THREE.Scene();layout.userData.layoutOnly=true;addLaneFrontages(layout);layout.updateMatrixWorld(true);
+      if(layout.children.some(m=>m.userData.spriteKind))throw Error('Lane planting leaked into Layout');
+      const details=new THREE.Scene(),routes=protectedRoutes(s.boundaryReference);details.userData.decorationClearance=(x,z,r)=>routeClearance(routes,x,z,r);addLaneFrontages(details);details.updateMatrixWorld(true);
+      const floor=details.getObjectByName(lanePaving.id);
+      if(!floor||!document.querySelector(`[data-middle-id="${lanePaving.id}"]`))throw Error('Four-column paving missing from scene or map');
+      const uv=floor.geometry.getAttribute('uv'),texture=floor.material.map,pixels=texture.image.getContext('2d');
+      for(let i=0;i<uv.count;i+=2)if(uv.getX(i)!==0||uv.getX(i+1)!==1)throw Error('Lane texture does not span exactly one four-column atlas');
+      if(texture.repeat.x!==1||lanePaving.columns!==4)throw Error('Wrong lane tile count');
+      const redMinusGreen=x=>{const p=pixels.getImageData(x,64,1,1).data;return p[0]-p[1];};
+      if(![64,192,320,448].every(x=>redMinusGreen(x)>35)||![128,256,384].every(x=>redMinusGreen(x)<25))throw Error('Tile atlas must have four terracotta courses and three internal grout joints');
+      if(outsideLanePaving([laneAt(1,-.5),laneAt(2,-.5),laneAt(2,.5),laneAt(1,.5)]).length)throw Error('Generic paving still covers the four-column surface');
+      const area=ring=>Math.abs(ring.reduce((v,p,i)=>{const q=ring[(i+1)%ring.length];return v+p[0]*q[1]-q[0]*p[1];},0))/2;
+      const rectangle=[laneAt(1,-2),laneAt(2,-2),laneAt(2,3),laneAt(1,3)],outside=outsideLanePaving(rectangle);
+      if(Math.abs(outside.reduce((sum,r)=>sum+area(r),0)-(5-2.52))>.0001)throw Error('Lane paving clip removes or retains wrong surface area');
+      const floorAt=laneAt(2,0),pavingRay=new THREE.Raycaster(new THREE.Vector3(floorAt[0],5,floorAt[1]),new THREE.Vector3(0,-1,0));
+      const floorHit=pavingRay.intersectObjects(details.children,true).find(h=>h.object.name===lanePaving.id);
+      if(!floorHit||Math.abs(floorHit.point.y-world.groundHeight(...laneAt(2,0)))>.05)throw Error('Four-column surface is not a flush visual ground layer');
+      let plants=0;details.traverse(mesh=>{if(!mesh.isInstancedMesh)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),rot=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,rot,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error('Lane plant footprint blocks route');plants++;}});
+      if(plants<12)throw Error('Lane planted borders are missing');
+      const ray=new THREE.Raycaster();
+      for(const o of laneOpenings){
+        if(!document.querySelector(`[data-middle-id="${o.id}"]`))throw Error('Window grille missing from map');
+        const [a,b]=o.facade,L=Math.hypot(b[0]-a[0],b[1]-a[1]),center=a.map((v,i)=>v+(b[i]-v)*o.at),normal=[(b[1]-a[1])/L,-(b[0]-a[0])/L];
+        if(!replacesLaneGroundOpening(...center))throw Error('Procedural door was not replaced at mapped grille');
+        ray.set(new THREE.Vector3(center[0]+normal[0]*1.3,o.bottom+.06+o.height*.5,center[1]+normal[1]*1.3),new THREE.Vector3(-normal[0],0,-normal[1]));
+        const hits=ray.intersectObjects(details.children,true).filter(h=>h.object.name===o.id);
+        if(hits.length<1||hits[0].distance>1.3)throw Error('Grille/shutter is inside house or invisible from lane');
+        const cage=hits[0].object.parent,bars=cage.children.filter(m=>m.userData.grillePart==='upright');
+        if(bars.length!==o.bars||bars.some(m=>m.geometry.type!=='BoxGeometry'||Math.abs(m.position.z-o.projection)>.0001||Math.abs(m.geometry.parameters.height-o.height)>.0001))throw Error('Grille uprights must stay straight in one rectangular front plane');
+        const ring=laneGrilleRing(o);if(!ring.every(p=>routeClearance(routes,...p,0)))throw Error('Projecting grille crosses route');
+      }
+    }
+    {
+      const {addSouthBenchPlanting}=await import('/src/middle-south-planting.ts');
+      const scene=new THREE.Scene();scene.userData.protectedRoutes=routes;
+      const plants=addSouthBenchPlanting(scene);scene.updateMatrixWorld(true);
+      if(!plants.children.some(p=>p.name.startsWith('bench-cypress-'))||!plants.children.some(p=>p.name.startsWith('bench-geranium-')))throw Error('Photographed bench planting missing');
+      const v=new THREE.Vector3();plants.traverse(mesh=>{if(!mesh.isMesh)return;const p=mesh.geometry.getAttribute('position');for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i).applyMatrix4(mesh.matrixWorld);if(!routeClearance(routes,v.x,v.z,0))throw Error('Visible bench planting intrudes on a protected route');}});
+    }
     // The photo-supported forecourt replaces the drawn road surface without moving its through routes.
     walk([middleSouthAt(-4.8),middleSouthAt(1.8)]);
     walk([middleSouthAt(1.8),middleSouthAt(-4.8)]);

@@ -1,3 +1,4 @@
+import {outsideLanePaving} from "./middle-pool-lane-frontages";
 import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
 import {surfaceTexture} from "./materials";
@@ -43,7 +44,7 @@ export function referenceGroundHeight(reference: BoundaryReference, x: number, z
 export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryReference): void {
   const tiles=surfaceTexture("paving");
   const flat=(ring:Vec2[],color:string,y:number,map?:THREE.Texture) => {
-   for(const part of outsideMiddleSouthForecourt(ring)) {
+   for(const part of outsideMiddleSouthForecourt(ring).flatMap(outsideLanePaving)) {
     const shape=new THREE.Shape(part.map(([x,z])=>new THREE.Vector2(x,-z)));
     const mesh=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color,map,roughness:1}));
     mesh.position.y=y;mesh.receiveShadow=true;scene.add(mesh);

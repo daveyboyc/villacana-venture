@@ -1,0 +1,28 @@
+{
+  "minX": -178.56513231222053,
+  "maxX": -86.34519022512553,
+  "minZ": 55.32230527337665,
+  "maxZ": 147.54224736047163,
+  "width": 768,
+  "height": 768,
+  "source": "Esri World Imagery tiles",
+  "zoom": 20,
+  "topLeftTile": [
+    509573,
+    410119
+  ],
+  "note": "Local tangent approximation to Web Mercator; roofs/canopies are not ground boundaries.",
+  "fetchedAt": "2026-10-23",
+  "acquisitionDate": "unknown",
+  "urlTemplate": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/20/{y}/{x}",
+  "crop": {
+    "localBounds": [
+      -150,
+      76,
+      -100,
+      141
+    ],
+    "width": 1000,
+    "height": 1300
+  }
+}

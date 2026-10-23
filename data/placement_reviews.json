@@ -90,6 +90,22 @@
    "notes": "Approximate west-side main-map integration candidate is compatible with registry portal/courtyard topology. EXIF heading disagrees; opposite northeast host remains possible. No identified source controls or measured approval. Existing world-registration report remains open.",
    "evidence": "docs/reviews/silvia-main-integration/independent-location-review.md",
    "followUp": "silvia-covered-passage-reference-audit"
+  },
+  {
+   "id": "middle-south-pool-spacing",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "status": "open",
+   "reportedBy": "Project owner, conversation 23 October 2026",
+   "reportedAt": "2026-10-23",
+   "sources": [
+    "IMG_2334.jpg",
+    "IMG_2335.jpg",
+    "IMG_2192.jpg",
+    "map:ground"
+   ],
+   "notes": "Owner suspects gate, bench and planter are too close to pool. Independent satellite/photo assessment confirms planted lawn/approach buffer, but foliage and roof projection conceal exact ground gate/bench anchors. Current model water-ring distance: gate7.58m; bench front centre6.49m. These are model diagnostics, not source measurements. No translation applied; retain as unresolved.",
+   "evidence": "docs/reviews/tunnel-entrance-context/independent-review.md",
+   "followUp": "tunnel-entrance-context"
   }
  ]
 }

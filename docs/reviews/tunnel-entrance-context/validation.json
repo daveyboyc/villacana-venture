@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-23",
+  "baseline": "1996b1e005d9fa654a284191771948c3a09ac2f9",
+  "productionBuild": "pass; TypeScript and Vite",
+  "pythonUnitTests": 60,
+  "sourceChecks": "14 handover source/layout/terrain/level checks and check_lane_frontages.py PASS",
+  "layoutBrowser": {
+    "status": "pass",
+    "routes": 20,
+    "segments": 434,
+    "directions": "both",
+    "errors": []
+  },
+  "overviewBrowser": "pass, including mobile toolbar",
+  "photoMapBrowser": "pass, including mobile discovery/navigation",
+  "referenceChecks": "176 references reviewed, 0 problems; reference packs current",
+  "sceneRenders": "four illustrative views and two stored source-camera before/after pairs, first person with Details; uncalibrated",
+  "placementGate": {
+    "exitCode": 1,
+    "status": "fail; no fresh measured independently approved placement packets",
+    "output": "placement-gate.txt",
+    "note": "Conservative shared-renderer fingerprints also invalidate context for unchanged distant features. No original registry footprint/pool/street axis, gate/bench transform or Silvia transform was moved; no placement approval is claimed."
+  },
+  "independentSourceReview": "independent-review.md; actual maps, full photos and final gate/bench/lane views inspected; bounded detail accepted, measured placement withheld"
+}

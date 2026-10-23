@@ -2,6 +2,8 @@ import * as THREE from "three";
 import f from "../data/middle_pool_south_gate.json";
 import { plasterMaterial } from "./materials";
 import type { Vec2 } from "./types";
+import { addLaneFrontages,laneFrontageRings } from "./middle-pool-lane-frontages";
+import {addSouthBenchPlanting} from "./middle-south-planting";
 import { addSprites } from "./sprites";
 
 // Local +along points south into the lane; +across is the planter on the photo's right.
@@ -37,7 +39,7 @@ export function outsideMiddleSouthForecourt(ring: Vec2[]): Vec2[][] {
  }
  return result;
 }
-export function middleSouthRings():Vec2[][] {
+export function middleSouthRings(includeLaneBeds=true):Vec2[][] {
  const w=f.opening/2,p=f.pier,b=f.planter,s=f.bench,panel=f.panel;
  // Leaves are fixed open into the courtyard against the planter; the wall bench is set back past them, outside the through route.
  return [-1,1].flatMap(side=>{const c=side*(w+p/2);return [middleSouthRect(-p/2,p/2,c-p/2,c+p/2),middleSouthRect(-f.leafLength,0,side*w-.025,side*w+.025)];}).concat([
@@ -45,6 +47,7 @@ export function middleSouthRings():Vec2[][] {
   middleSouthRect(s.along[1],b.along[1],...b.across as [number,number]),
   middleSouthRect(s.along[0],s.along[1],s.plinth.across[0],s.seat.across[1]),
   middleSouthRect(...panel.wallAlong as [number,number],panel.across,panel.across+.16),
+  ...(includeLaneBeds?laneFrontageRings():[]),
  ]);
 }
 function crazyPavingTexture():THREE.CanvasTexture {
@@ -62,17 +65,23 @@ function crazyPavingTexture():THREE.CanvasTexture {
  const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;return texture;
 }
 export function addMiddleSouthGate(scene:THREE.Scene):void {
+ addLaneFrontages(scene);
  const group=new THREE.Group();group.position.set(f.center[0],.06,f.center[1]);
  // Reflect across so local x follows photo-right while local z follows the lane.
  group.rotation.y=Math.atan2(f.forward[0],f.forward[1]);group.scale.x=-1;
  const plaster=plasterMaterial("#fffdf5"),iron=new THREE.MeshStandardMaterial({color:"#202823",roughness:.6,metalness:.45}),stone=new THREE.MeshStandardMaterial({color:"#b2a793",map:crazyPavingTexture(),roughness:1});
- const box=(a:number,c:number,w:number,h:number,d:number,y:number,mat:THREE.Material)=>{const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);m.position.set(c,y+h/2,a);group.add(m);};
+ const box=(a:number,c:number,w:number,h:number,d:number,y:number,mat:THREE.Material)=>{const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);m.position.set(c,y+h/2,a);group.add(m);return m;};
  const w=f.opening/2,p=f.pier;
  for(const side of [-1,1]) {
   box(0,side*(w+p/2),p,f.height+.2,p,0,plaster);
   for(const a of [-f.leafLength,0])box(a,side*w,.035,f.height-.08,.035,0,iron);
   for(const y of [.06,1.05,f.height-.08])box(-f.leafLength/2,side*w,.04,.035,f.leafLength,y,iron);
   for(let a=.12;a<f.leafLength;a+=.12)box(-a,side*w,.018,f.height-.08,.018,0,iron);
+  // Paired middle-band scrolls are visible in IMG_2334; the ironwork stays inside each open leaf.
+  for(const curl of [-1,1]){
+   const points=Array.from({length:29},(_,i)=>{const t=i/28;return new THREE.Vector3(side*w,.8+t*.55,-f.leafLength/2+curl*(.1+.085*Math.sin(t*Math.PI*2)));});
+   group.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points),28,.012,5,false),iron));
+  }
  }
  const shape=new THREE.Shape();shape.moveTo(-w-p,f.height);shape.lineTo(w+p,f.height);shape.lineTo(w+p,f.height+.2);shape.quadraticCurveTo(0,f.height+.2+2*f.crownRise,-w-p,f.height+.2);shape.closePath();
  const head=new THREE.Mesh(new THREE.ExtrudeGeometry(shape,{depth:f.headDepth,bevelEnabled:false,curveSegments:24}),plaster);head.position.z=-f.headDepth/2;group.add(head);
@@ -88,6 +97,11 @@ export function addMiddleSouthGate(scene:THREE.Scene):void {
  }
  // IMG_2335: a seat-height block recessed into the planter, with a low plinth in front of it.
  for(const part of [s.seat,s.plinth])box(bm,(part.across[0]+part.across[1])/2,part.across[1]-part.across[0],part.height,bl,0,plaster);
+ // IMG_2192: small pale vented cabinet on the existing planter end; services unknown.
+ const cabinet=f.cabinet,paint=new THREE.MeshStandardMaterial({color:'#e5e6dc',roughness:.9});
+ const face=box(cabinet.along-.003,cabinet.across,cabinet.width,cabinet.height,.008,cabinet.bottom,paint);face.userData.component='bench-end-cabinet';
+ const ventPaint=new THREE.MeshStandardMaterial({color:'#a5ada4',roughness:1});
+ for(let n=0;n<6;n++)box(cabinet.along-.008,cabinet.across,cabinet.width*.64,.008,.004,cabinet.bottom+.06+n*.026,ventPaint);
  const panel=f.panel,pa=(panel.along[0]+panel.along[1])/2;
  box((panel.wallAlong[0]+panel.wallAlong[1])/2,panel.across+.08,.16,panel.wallHeight,panel.wallAlong[1]-panel.wallAlong[0],0,plaster);
  const canvas=document.createElement("canvas");canvas.width=384;canvas.height=256;const g=canvas.getContext("2d")!;
@@ -107,6 +121,7 @@ export function addMiddleSouthGate(scene:THREE.Scene):void {
  for(let a=-drain.length/2+.04;a<drain.length/2;a+=.055)box(drain.along+a,drain.across,drain.width-.035,.012,.015,.045,new THREE.MeshStandardMaterial({color:"#65716d"}));
  group.traverse(m=>{m.name=f.id;m.userData.noDrape=true;if(m instanceof THREE.Mesh)m.castShadow=m.receiveShadow=true;});scene.add(group);
  if(!scene.userData.layoutOnly) {
+  addSouthBenchPlanting(scene);
   const hedge=new THREE.Scene();hedge.userData={...scene.userData};
   const h=f.hedge,places=[];
   for(let a=h.along[0];a<=h.along[1]+1e-6;a+=h.spacing){const [x,z]=middleSouthAt(a,h.across);places.push({x,z,scale:h.spriteScale});}

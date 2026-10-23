@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 360,
-  "photosCitedByModel": 97,
-  "modelFeaturesWithPhotoCitations": 105
+  "features": 366,
+  "photosCitedByModel": 99,
+  "modelFeaturesWithPhotoCitations": 111
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -308,7 +308,11 @@
      "angleOffset": 0.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+    "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+    "middle_pool_lane_frontages.json:south-lane-right-far-grille"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -114.9,
@@ -424,7 +428,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool_south_gate.json:middle-pool-south-gate"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -123.9,
@@ -4701,7 +4707,13 @@
    "citedBy": [
     "middle_pool_south_gate.json:middle-pool-south-gate",
     "middle_pool_south_gate.json:middle-pool-south-forecourt",
-    "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+    "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+    "middle_pool_lane_frontages.json:south-lane-left-border",
+    "middle_pool_lane_frontages.json:south-lane-right-near-bed",
+    "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+    "middle_pool_lane_frontages.json:south-lane-right-near-grille",
+    "middle_pool_lane_frontages.json:south-lane-right-far-grille"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

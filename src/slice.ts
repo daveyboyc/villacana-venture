@@ -1,3 +1,4 @@
+import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-frontages";
 import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
 import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
@@ -788,6 +789,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         for (let f = 0; f < b.floors; f++) {
           if(b.id===SILVIA_HOST && f===0 && silviaCloseCamera(x,z))continue;
+          if(f===0 && replacesLaneGroundOpening(x,z))continue;
           const door = f === 0 && hash(x, z) < 0.3;
           const y = f * floorHeight + (door ? 1.05 : 1.3);
           (door ? doors : windows).push(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), turn, new THREE.Vector3(1, 1, 1)));
@@ -888,6 +890,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const x = ax + (bx - ax) * t;
         const z = az + (bz - az) * t;
         if(b.id===SILVIA_HOST && silviaCloseCamera(x,z))continue;
+        if(inLaneFrontageBand(x,z))continue;
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         // Only where the house looks out over a lane or garden.
