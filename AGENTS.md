@@ -78,6 +78,9 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
 - To measure rather than eyeball, solve the photo's camera and render through it
   (`docs/PHOTO_ALIGNMENT.md`: `scripts/photo_pose.py`, `shoot_views.cjs --pose`).
   Held-out checks give the model's misfit in metres; they are not placement approval.
+- Ground levels, street slopes and roof heights can be measured against the national
+  laser survey (`scripts/lidar_check.py`, docs/reviews/lidar-levels). Check a level or
+  height change there before building it.
 - `refs/` is generated. Rebuild with `python3 scripts/build_references.py
   --sheets` and commit both repos. `--check` must pass before a PR.
 - New photos: follow "Intake for a new Drive batch" in

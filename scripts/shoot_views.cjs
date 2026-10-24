@@ -1,5 +1,6 @@
 // Render the game from where reference photos were taken, to compare by eye.
 //   node scripts/shoot_views.cjs IMG_2365 IMG_2286 [--pool=north,middle] [--details] [--high] [--pose [--initial]] [--task=<id> --as=before|after]
+//   node scripts/shoot_views.cjs --model     only writes layout-checks.local/model.json (scripts/lidar_check.py)
 // Stands the player at each photo's camera pin, facing its compass heading, and writes
 // layout-checks.local/views/<photo>.png. The game camera is third-person at walking height,
 // so a roof or upper-floor photo is matched in position and direction only (use --high to
@@ -33,6 +34,16 @@ const path = require("node:path");
   fs.mkdirSync(out, { recursive: true });
   const executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE;
   const browser = await chromium.launch({ ...(executablePath ? { executablePath } : {}), args: ["--no-sandbox", "--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
+  if (flags.includes("--model")) {
+    const page = await browser.newPage({ viewport: { width: 800, height: 600 } }), errors = [];
+    page.on("pageerror", (e) => errors.push(e.message));
+    await page.goto(`${site}/slice.html?pool=${pool}&export=model`);
+    try { await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 60000 }); }
+    catch (error) { throw new Error(`the scene did not finish loading. ${errors.join(" | ")}`); }
+    fs.writeFileSync(path.join("layout-checks.local", "model.json"), JSON.stringify(await page.evaluate(() => window.villacanaModel)));
+    console.log("layout-checks.local/model.json", errors.length ? "ERRORS " + errors.join(" | ") : "ok");
+    await page.close();
+  }
   for (const name of photos) {
     const photo = manifest.find((p) => p.file === name || p.file === name + ".jpg");
     if (!photo || photo.x === undefined) { console.log(name, "no camera pin"); continue; }

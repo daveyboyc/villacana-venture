@@ -43,6 +43,9 @@ cannot fix its own distance. Shared-station solving is what makes the camera dep
   That is about 0.3 m of camera uncertainty either way. The model gives a two-storey house
   2 × 3 m and no parapet; the photographed parapets stand about 7.0–7.2 m above their ground.
   Follow-up: task `north-pool-roof-heights`.
+  **Later, against the laser survey (`docs/reviews/lidar-levels`):** the misfit is real relative to
+  the pool, but it is ground, not storey height. The north deck and these houses stand 0.8–1.2 m
+  higher than the model; over their own ground the roofs are ordinary two-storey heights.
 - **East side of the courtyard, by eye (IMG_2205).** A model building block stands where the
   photo shows the big yucca in front of an arched house set further back. A tiled route with
   route markers crosses what the photo shows as lawn and hedge. The model export does not cover

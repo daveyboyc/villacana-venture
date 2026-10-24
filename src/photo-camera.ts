@@ -54,20 +54,28 @@ export function photoCamera() {
       camera.updateProjectionMatrix();
       Object.assign(image.style, { width: `${width * scale}px`, height: `${height * scale}px`, left: `${(windowWidth - width * scale) / 2}px`, top: `${(windowHeight - height * scale) / 2}px` });
     },
-    /** Publishes the built houses and pool edges, as placed in the scene, for scripts/photo_pose.py. */
-    exportModel(scene: THREE.Scene, skeleton: Skeleton, groundY: (x: number, z: number) => number) {
-      const meshes = new Map<string, THREE.Object3D>();
-      scene.traverse((o) => { if (o.name.startsWith("building:")) meshes.set(o.name.slice(9), o); });
-      scene.updateMatrixWorld(true);
-      const box = new THREE.Box3(), round = (v: number) => Math.round(v * 1000) / 1000;
-      const buildings = skeleton.buildings.flatMap((b) => {
-        const mesh = meshes.get(b.id);
-        if (!mesh) return [];
-        box.setFromObject(mesh);
-        return [{ id: b.id, floors: b.floors, passage: !!b.passage, ring: b.ring, base: round(box.min.y), top: round(box.max.y) }];
-      });
-      const pools = skeleton.pools.map((p) => ({ id: p.id, ring: p.ring.map(([x, z]: Vec2) => [x, round(groundY(x, z)), z]) }));
-      (window as unknown as { villacanaModel: unknown }).villacanaModel = { frame: "scene metres, +x east, +z south, y up", buildings, pools };
-    },
   };
+}
+
+/** Publishes the built houses, pool edges and the walkable ground on a 2 m grid, as placed in the
+ * scene, for scripts/photo_pose.py and scripts/lidar_check.py (with ?photocam= or ?export=model). */
+export function exportModel(scene: THREE.Scene, skeleton: Skeleton, groundY: (x: number, z: number) => number, standY: (x: number, z: number) => number) {
+  const meshes = new Map<string, THREE.Object3D>();
+  scene.traverse((o) => { if (o.name.startsWith("building:")) meshes.set(o.name.slice(9), o); });
+  scene.updateMatrixWorld(true);
+  const box = new THREE.Box3(), round = (v: number) => Math.round(v * 1000) / 1000;
+  const buildings = skeleton.buildings.flatMap((b) => {
+    const mesh = meshes.get(b.id);
+    if (!mesh) return [];
+    box.setFromObject(mesh);
+    return [{ id: b.id, floors: b.floors, passage: !!b.passage, ring: b.ring, base: round(box.min.y), top: round(box.max.y) }];
+  });
+  const pools = skeleton.pools.map((p) => ({ id: p.id, ring: p.ring.map(([x, z]: Vec2) => [x, round(groundY(x, z)), z]) }));
+  const xs = buildings.flatMap((b) => b.ring.map((p) => p[0])), zs = buildings.flatMap((b) => b.ring.map((p) => p[1]));
+  const step = 2, x0 = Math.floor(Math.min(...xs) / step) * step - 10, z0 = Math.floor(Math.min(...zs) / step) * step - 10;
+  const nx = Math.ceil((Math.max(...xs) + 10 - x0) / step) + 1, nz = Math.ceil((Math.max(...zs) + 10 - z0) / step) + 1;
+  const heights: number[] = [];
+  for (let k = 0; k < nz; k++) for (let i = 0; i < nx; i++) heights.push(Math.round(standY(x0 + i * step, z0 + k * step) * 100) / 100);
+  const ground = { x0, z0, step, nx, nz, heights };
+  (window as unknown as { villacanaModel: unknown }).villacanaModel = { frame: "scene metres, +x east, +z south, y up", buildings, pools, ground };
 }
