@@ -1198,6 +1198,33 @@
    "owner": "Codex",
    "dependsOn": [],
    "notes": "Full2190/2191 reinspection and independent final renders correct earlier clipped-corner reading: offset large square tiles and small decorated squares create diagonal insert runs, not a uniform octagon grid or whole-field45degree rotation. Coherent metric UVs across slab/apron/garden, varied worn tiles/inserts, granular inset and finite wall pebble bands. Original geometry extents, transforms, collision, levels, doors/pots/planters and street grid retained. Material pitches/motifs/angle remain estimates; placement remains unapproved and task in progress. See docs/reviews/silvia-paving/."
+  },
+  {
+   "id": "silvia-outdoor-path",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "build",
+   "title": "Match the outdoor Silvia path toward the pool entrance",
+   "photos": [
+    "IMG_2189.jpg",
+    "IMG_2334.jpg",
+    "IMG_2192.jpg"
+   ],
+   "features": [
+    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+    "silvia_tunnel.json:silvia-tunnel-study",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt"
+   ],
+   "build": "Correct exterior paving material and coherent outdoor continuation to the provisional tunnel mouth, using four lane-aligned plain square tile columns, broad mortar and worn colouring. Keep indoor hopscotch behind the arch and pool-side stone forecourt distinct.",
+   "avoid": "No pool/gate/tunnel/planter/house/street/collision/level changes, no invented continuous bed/wall, no asserted photographic registration for the estimated connector.",
+   "accept": [
+    "Independent full-source and actual-map review with exact source limits",
+    "Actual before/after outdoor scene and visible material transition, map/3D surface consistency",
+    "Source/build/route checks and preserved known placement uncertainty"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "dependsOn": []
   }
  ]
 }
