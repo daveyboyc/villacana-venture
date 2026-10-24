@@ -26,6 +26,7 @@
    "start": 0.0,
    "run": 3.0,
    "halfWidth": 3.0,
+   "behind": 3.0,
    "base": 0.54,
    "rise": 0.5,
    "photoRise": [
@@ -47,7 +48,8 @@
    ],
    "start": 0.0,
    "run": 2.6,
-   "halfWidth": 3.0,
+   "halfWidth": 2.0,
+   "behind": 3.0,
    "base": 0.16,
    "rise": 0.53,
    "photoRise": [
@@ -69,7 +71,8 @@
    ],
    "start": 1.65,
    "run": 4.534,
-   "halfWidth": 3.0,
+   "halfWidth": 2.0,
+   "behind": 1.21,
    "base": 0.4,
    "rise": 0.52,
    "photoRise": [

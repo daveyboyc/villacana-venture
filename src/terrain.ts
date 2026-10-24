@@ -3,7 +3,7 @@ import data from "../data/terrain.json";
 import { centroid, clamp, closestOnSegment, pointInRing } from "./geom";
 import type { Vec2 } from "./types";
 
-type Ramp = { foot: number[]; toward: number[]; start: number; run: number; halfWidth: number; base: number; rise: number };
+type Ramp = { foot: number[]; toward: number[]; start: number; run: number; halfWidth: number; behind: number; base: number; rise: number };
 type Grid = { x0: number; z0: number; step: number; nx: number; nz: number; fade: number[]; ramps: Ramp[]; cm: number[][] };
 const grid = data as unknown as Grid;
 const COS = Math.cos(26 * Math.PI / 180), SIN = Math.sin(26 * Math.PI / 180);
@@ -11,7 +11,7 @@ const ramps = grid.ramps.map((r) => {
   const dx = r.toward[0] - r.foot[0], dz = r.toward[1] - r.foot[1], length = Math.hypot(dx, dz);
   return { ...r, up: [dx / length, dz / length] };
 });
-/** How far a photographed flight's own profile reaches before giving way to the survey grid. */
+/** How far a photographed flight's own profile reaches beside and above it before giving way to the survey grid (below its foot: behind). */
 const RAMP_BLEND = 3;
 
 /** The surveyed ground, sampled bilinearly. */
@@ -35,8 +35,8 @@ export function siteY(x: number, z: number): number {
   let y = surveyed(x, z);
   for (const r of ramps) {
     const dx = x - r.foot[0], dz = z - r.foot[1], along = dx * r.up[0] + dz * r.up[1], across = Math.abs(dz * r.up[0] - dx * r.up[1]);
-    const beyond = Math.max(-1 - along, along - (r.run + 1.5), 0), aside = Math.max(across - r.halfWidth, 0);
-    const weight = (1 - clamp(beyond / RAMP_BLEND, 0, 1)) * (1 - clamp(aside / RAMP_BLEND, 0, 1));
+    const below = Math.max(-1 - along, 0) / r.behind, beyond = Math.max(along - (r.run + 1.5), 0) / RAMP_BLEND, aside = Math.max(across - r.halfWidth, 0) / RAMP_BLEND;
+    const weight = (1 - clamp(Math.max(below, beyond), 0, 1)) * (1 - clamp(aside, 0, 1));
     if (weight > 0) y += (r.base + r.rise * clamp((along - r.start) / (r.run - r.start), 0, 1) - y) * weight;
   }
   return y * seaward;

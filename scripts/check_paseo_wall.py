@@ -4,12 +4,14 @@ import math
 from pathlib import Path
 from check_map import inside
 
+terrain = {'__file__': str(Path(__file__).resolve().parent / 'check_terrain.py')}
+exec((Path(__file__).resolve().parent / 'check_terrain.py').read_text().split('\nassert')[0], terrain)
+
 ROOT = Path(__file__).resolve().parents[1]
 s = json.loads((ROOT / 'public/map/skeleton.json').read_text())
 d = json.loads((ROOT / 'data/paseo_wall.json').read_text())
 levels = json.loads((ROOT / 'data/main_pool.json').read_text())['levels']
 gate = json.loads((ROOT / 'data/coastal_gate.json').read_text())
-west = json.loads((ROOT / 'data/terrain.json').read_text())['west']
 photos = {p['file'] for p in json.loads((ROOT / 'public/photos-ref/manifest.json').read_text())}
 angle = math.radians(s['viewRotation'])
 paseo = s['seafront']['paseo']
@@ -75,19 +77,8 @@ def paseo_height(tx):
 
 
 def site_y(p):
-    """siteY from src/terrain.ts, without local runs (none reach the seafront)."""
-    tx, tz = turned(p)
-    foot = west['foot']
-    edge = foot[-1][0]
-    if tz <= foot[0][1]:
-        edge = foot[0][0]
-    else:
-        for a, b in zip(foot, foot[1:]):
-            if tz <= b[1]:
-                edge = a[0] + (b[0] - a[0]) * (tz - a[1]) / (b[1] - a[1])
-                break
-    seaward = 1 - max(0, min(1, (tz - west['fade'][0]) / (west['fade'][1] - west['fade'][0])))
-    return west['rise'] * max(0, min(1, (edge - tx) / west['run'])) * seaward
+    """siteY from src/terrain.ts, as check_terrain.py states it."""
+    return terrain['site_y'](p)
 
 
 def garden_y(p):

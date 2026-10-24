@@ -430,7 +430,20 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
         # Level below the foot at the surveyed ground where the photographed rise begins.
         # A flight with a level landing before its first riser starts climbing there.
         start = flight['risers'][0] if flight['risers'][0] >= 1.0 else 0.0
-        ramps.append({'id': flight['id'], 'foot': foot, 'toward': flight['toward'], 'start': start, 'run': round(flight['end'], 3), 'halfWidth': 3.0,
+        # Below the foot the flight's level gives way to the grid within 3 m, or sooner where a pool
+        # edge lies closer (the middle pool, 3 m below the north white steps), so the pool stays level.
+        up = np.subtract(flight['toward'], foot) / math.dist(flight['toward'], foot)
+        behind = 3.0
+        for ring in pools.values():
+            rel = np.asarray(ring)[:, :2] - foot
+            ahead, across = rel @ up, np.abs(rel @ [-up[1], up[0]])
+            near = (ahead < 0) & (across < 6.0)
+            if near.any():
+                behind = min(behind, max(0.5, float(-ahead[near].max()) - 1.25))
+        # The Cervantes flight shares the lane with a ramp as wide as the lane; the courtyard flights are
+        # narrow (the south-west one with a 1.5-2 m terracotta ramp beside it), so the ground beside them stays the survey's.
+        half = 3.0 if flight['id'] == 'cervantes-elena-steps' else 2.0
+        ramps.append({'id': flight['id'], 'foot': foot, 'toward': flight['toward'], 'start': start, 'run': round(flight['end'], 3), 'halfWidth': half, 'behind': round(behind, 2),
                       'base': round(float(ground.at(*compare['low'])) - datum, 3), 'rise': round(rise, 2), 'photoRise': [low, high], 'surveyRise': round(survey_rise, 2),
                       'from': 'survey' if rise == survey_rise else 'photos (the survey reads less; open in data/levels_survey.json)'})
     out = {'note': ('Ground heights across the resort in metres above the middle pool deck, sampled by src/terrain.ts (bilinear). '
