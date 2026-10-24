@@ -1099,6 +1099,45 @@
    "status": "in-progress",
    "owner": "Codex",
    "notes": "Bounded entrance-lane details from the prior PR108 draft, source-observed bench planting/cabinet and gate scrolls implemented without translating the gate/bench/planter, pool, registry houses or provisional Silvia transform. Public Esri satellite overlays and full-photo independent review saved in docs/reviews/tunnel-entrance-context/. Satellite/IMG_2192 establish a lawn/approach buffer but conceal ground gate/bench bases; no defensible measured shift. Pool-spacing discrepancy remains open; task in progress, placement unapproved. Main-app before/after and source-camera pairs retained as uncalibrated diagnostics; source/route/build checks do not grant placement approval."
+  },
+  {
+   "id": "photo-camera-alignment",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Look through a photo's own camera: solve photo poses and measure the model against them",
+   "photos": [],
+   "build": "Add a photo-camera view to the renderer (?photocam=<photo>, src/photo-camera.ts) that looks through a photo's solved camera at the photo's own size, with the photo laid over it. Add scripts/photo_pose.py to solve each camera (position, compass yaw, pitch, roll, focal length) from pixels matched to model corners, pool edges and upright edges, solve photos taken from one spot together, hold out check points and report misfit in pixels and metres. shoot_views.cjs --pose renders through the solved camera. Test it on the north pool upper-floor station (IMG_2204-2206).",
+   "avoid": "No geometry changes. No claim that a solved camera verifies placement: checks measure the model against the photo, they do not approve it. No private imagery in public overlays.",
+   "accept": [
+    "Renders through the solved camera line up with the photo; held-out checks reported in data/photo_poses.json",
+    "Station solve consistent across photos; single-photo limits stated",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Claude"
+  },
+  {
+   "id": "north-pool-roof-heights",
+   "area": "north-pool",
+   "priority": 2,
+   "kind": "structure",
+   "title": "North pool: raise the two-storey courtyard roofs to the measured parapet height",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg"
+   ],
+   "build": "Four held-out roof corners measured through the solved north-pool station camera (data/photo_poses.json, docs/reviews/photo-camera-alignment) sit 0.9-1.2 m above the model's tops on both the tall house (registry 6165501UF1366N_part5) and the east block (6266601UF1366N_part4): the model gives a two-storey house 2 x 3 m with no parapet, the photos show parapet tops about 7.0-7.2 m above their ground. Decide from more corners and other areas whether this is a parapet, a taller storey or both, and change the height rule rather than single buildings if it holds everywhere.",
+   "avoid": "No change to registry footprints. Do not raise every building from four corners at one courtyard: measure more stations first.",
+   "accept": [
+    "Re-solved photo checks for the parapet corners within about 0.3 m",
+    "Roof corners measured at a second station or area before a resort-wide rule changes"
+   ],
+   "dependsOn": [
+    "photo-camera-alignment"
+   ],
+   "status": "open"
   }
  ]
 }

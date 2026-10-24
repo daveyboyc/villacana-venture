@@ -1,0 +1,1500 @@
+{
+ "note": "Photo cameras solved from points matched between each photo and the model (scripts/photo_pose.py, docs/PHOTO_ALIGNMENT.md). Scene metres, +x east, +z south, y up; yaw is compass degrees, pitch up and roll in degrees, f the focal length in photo pixels. Controls fit the camera; checks are held out and measure the model.",
+ "photos": {
+  "IMG_2204.jpg": {
+   "image": [
+    1600,
+    1200
+   ],
+   "points": [
+    {
+     "pixel": [
+      530,
+      742
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      620,
+      724
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      700,
+      714
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      760,
+      700
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      810,
+      680
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      850,
+      680
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      930,
+      688
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1000,
+      680
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1070,
+      680
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1150,
+      703
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1200,
+      730
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1100,
+      770
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1080,
+      850
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1108,
+      895
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1070,
+      950
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      980,
+      968
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      880,
+      952
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      800,
+      900
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      795,
+      870
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      909,
+      300
+     ],
+     "ref": "building:6266601UF1366N_part4:39:corner",
+     "use": "control",
+     "note": "front-left corner of the east block, beside the lane"
+    },
+    {
+     "pixel": [
+      910,
+      450
+     ],
+     "ref": "building:6266601UF1366N_part4:39:corner",
+     "use": "control",
+     "note": "same corner, lower"
+    },
+    {
+     "pixel": [
+      439.5,
+      300
+     ],
+     "ref": "building:6165501UF1366N_part5:39:corner",
+     "use": "control",
+     "note": "facade step where the tiled-canopy house meets the tall house"
+    },
+    {
+     "pixel": [
+      439.5,
+      360
+     ],
+     "ref": "building:6165501UF1366N_part5:39:corner",
+     "use": "control",
+     "note": "same step, lower"
+    },
+    {
+     "pixel": [
+      638,
+      300
+     ],
+     "ref": "building:6165501UF1366N_part5:36:corner",
+     "use": "check",
+     "note": "facade step right of the arched balcony door"
+    },
+    {
+     "pixel": [
+      439,
+      228
+     ],
+     "ref": "building:6165501UF1366N_part5:39:top",
+     "use": "check",
+     "note": "parapet top above the facade step"
+    },
+    {
+     "pixel": [
+      638,
+      231
+     ],
+     "ref": "building:6165501UF1366N_part5:36:top",
+     "use": "check",
+     "note": "parapet top above the second step"
+    },
+    {
+     "vertical": [
+      [
+       439,
+       247
+      ],
+      [
+       440,
+       400
+      ]
+     ],
+     "use": "control",
+     "note": "left edge of the tall house"
+    },
+    {
+     "vertical": [
+      [
+       638,
+       232
+      ],
+      [
+       637,
+       357
+      ]
+     ],
+     "use": "control",
+     "note": "facade step right of the arched balcony door"
+    },
+    {
+     "vertical": [
+      [
+       522,
+       310
+      ],
+      [
+       522,
+       397
+      ]
+     ],
+     "use": "control",
+     "note": "balcony door frame"
+    },
+    {
+     "vertical": [
+      [
+       909,
+       300
+      ],
+      [
+       910,
+       450
+      ]
+     ],
+     "use": "control",
+     "note": "front-left corner of the east block"
+    },
+    {
+     "vertical": [
+      [
+       1538,
+       340
+      ],
+      [
+       1535,
+       393
+      ]
+     ],
+     "use": "control",
+     "note": "arched window frame, east block"
+    }
+   ],
+   "initial": {
+    "x": -169.9,
+    "y": 5.0,
+    "z": 32.2,
+    "yaw": 330.7,
+    "pitch": -20.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; upper-floor eye height; 24 mm-equivalent lens",
+   "solved": {
+    "pose": {
+     "x": -170.116,
+     "y": 8.453,
+     "z": 37.13,
+     "yaw": 333.41,
+     "pitch": -17.609,
+     "roll": 1.474,
+     "f": 1281.01
+    },
+    "sigma": {
+     "x": 0.329,
+     "y": 0.485,
+     "z": 0.659,
+     "f": 44.111,
+     "yaw": 0.521,
+     "pitch": 0.87,
+     "roll": 0.596
+    },
+    "rmsControlPx": 10.21,
+    "rmsCheckPx": 37.39,
+    "rmsCheckM": 0.87,
+    "residuals": [
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 4.1,
+      "m": 0.07,
+      "depth": 20.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 5.5,
+      "m": 0.09,
+      "depth": 21.4
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 5.5,
+      "m": 0.09,
+      "depth": 21.9
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 10.1,
+      "m": 0.18,
+      "depth": 22.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 3.1,
+      "m": 0.06,
+      "depth": 23.2
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 6.4,
+      "m": 0.12,
+      "depth": 23.1
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 9.9,
+      "m": 0.18,
+      "depth": 22.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 4.0,
+      "m": 0.07,
+      "depth": 23.4
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 3.7,
+      "m": 0.07,
+      "depth": 23.5
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 3.0,
+      "m": 0.05,
+      "depth": 22.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 8.6,
+      "m": 0.15,
+      "depth": 21.9
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 13.3,
+      "m": 0.2,
+      "depth": 19.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 19.9,
+      "m": 0.28,
+      "depth": 17.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 16.3,
+      "m": 0.21,
+      "depth": 16.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 1.1,
+      "m": 0.01,
+      "depth": 15.1
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 1.8,
+      "m": 0.02,
+      "depth": 14.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 9.4,
+      "m": 0.11,
+      "depth": 14.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 21.6,
+      "m": 0.26,
+      "depth": 15.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 28.3,
+      "m": 0.38,
+      "depth": 17.1
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:39:corner",
+      "use": "control",
+      "px": 7.4,
+      "m": 0.18,
+      "depth": 30.4
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:39:corner",
+      "use": "control",
+      "px": 2.5,
+      "m": 0.06,
+      "depth": 31.5
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:39:corner",
+      "use": "control",
+      "px": 3.6,
+      "m": 0.09,
+      "depth": 30.6
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:39:corner",
+      "use": "control",
+      "px": 0.0,
+      "m": 0.0,
+      "depth": 31.0
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:36:corner",
+      "use": "check",
+      "px": 10.3,
+      "m": 0.24,
+      "depth": 29.8
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:39:top",
+      "use": "check",
+      "px": 42.7,
+      "m": 1.01,
+      "depth": 30.3
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:36:top",
+      "use": "check",
+      "px": 47.6,
+      "m": 1.1,
+      "depth": 29.6
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 8.0
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.7
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 3.5
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 8.4
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 7.3
+     }
+    ]
+   },
+   "station": "north-pool-south-upper"
+  },
+  "IMG_2205.jpg": {
+   "image": [
+    1600,
+    1200
+   ],
+   "points": [
+    {
+     "pixel": [
+      80,
+      746
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      150,
+      740
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      20,
+      785
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      220,
+      750
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      260,
+      742
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      300,
+      729
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      340,
+      712
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      360,
+      703
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      400,
+      698
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      440,
+      697
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      480,
+      700
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      520,
+      708
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      555,
+      720
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      440,
+      800
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      500,
+      770
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      450,
+      835
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      490,
+      855
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      515,
+      880
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      522,
+      910
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      505,
+      940
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      450,
+      990
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      360,
+      1010
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      99,
+      950
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      115,
+      990
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      200,
+      300
+     ],
+     "ref": "building:6266601UF1366N_part4:39:corner",
+     "use": "control",
+     "note": "front-left corner of the east block, beside the lane"
+    },
+    {
+     "pixel": [
+      206,
+      430
+     ],
+     "ref": "building:6266601UF1366N_part4:39:corner",
+     "use": "control",
+     "note": "same corner, lower"
+    },
+    {
+     "pixel": [
+      580,
+      330
+     ],
+     "ref": "building:6266601UF1366N_part4:38:corner",
+     "use": "control",
+     "note": "corner where the window bay meets the tiled-canopy house"
+    },
+    {
+     "pixel": [
+      578,
+      440
+     ],
+     "ref": "building:6266601UF1366N_part4:38:corner",
+     "use": "control",
+     "note": "same corner, lower"
+    },
+    {
+     "pixel": [
+      200,
+      262
+     ],
+     "ref": "building:6266601UF1366N_part4:39:top",
+     "use": "check",
+     "note": "parapet top above the east block corner"
+    },
+    {
+     "pixel": [
+      578,
+      266
+     ],
+     "ref": "building:6266601UF1366N_part4:38:top",
+     "use": "check",
+     "note": "parapet top above the window bay corner"
+    },
+    {
+     "vertical": [
+      [
+       580,
+       315
+      ],
+      [
+       577.5,
+       447
+      ]
+     ],
+     "use": "control",
+     "note": "window bay corner"
+    },
+    {
+     "vertical": [
+      [
+       272.5,
+       342
+      ],
+      [
+       272.5,
+       390
+      ]
+     ],
+     "use": "control",
+     "note": "shutter frame, first floor"
+    },
+    {
+     "vertical": [
+      [
+       533.8,
+       342
+      ],
+      [
+       533.8,
+       388
+      ]
+     ],
+     "use": "control",
+     "note": "shutter frame, first floor"
+    },
+    {
+     "vertical": [
+      [
+       706,
+       350
+      ],
+      [
+       707,
+       425
+      ]
+     ],
+     "use": "control",
+     "note": "balcony post under the tiled canopy"
+    }
+   ],
+   "initial": {
+    "x": -170.1,
+    "y": 5.0,
+    "z": 31.8,
+    "yaw": 330.6,
+    "pitch": -20.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; upper-floor eye height; 24 mm-equivalent lens",
+   "solved": {
+    "pose": {
+     "x": -170.116,
+     "y": 8.453,
+     "z": 37.13,
+     "yaw": 3.464,
+     "pitch": -16.241,
+     "roll": 3.184,
+     "f": 1281.01
+    },
+    "sigma": {
+     "x": 0.329,
+     "y": 0.485,
+     "z": 0.659,
+     "f": 44.111,
+     "yaw": 0.899,
+     "pitch": 0.881,
+     "roll": 0.855
+    },
+    "rmsControlPx": 8.02,
+    "rmsCheckPx": 48.65,
+    "rmsCheckM": 1.15,
+    "residuals": [
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 0.4,
+      "m": 0.01,
+      "depth": 20.2
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 2.4,
+      "m": 0.04,
+      "depth": 20.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 3.5,
+      "m": 0.05,
+      "depth": 18.9
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 2.9,
+      "m": 0.05,
+      "depth": 20.4
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 1.1,
+      "m": 0.02,
+      "depth": 20.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 6.1,
+      "m": 0.1,
+      "depth": 21.5
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 2.7,
+      "m": 0.05,
+      "depth": 22.2
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 1.6,
+      "m": 0.03,
+      "depth": 22.5
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 0.1,
+      "m": 0.0,
+      "depth": 22.9
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 2.2,
+      "m": 0.04,
+      "depth": 23.1
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 3.4,
+      "m": 0.06,
+      "depth": 23.1
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 5.7,
+      "m": 0.1,
+      "depth": 23.0
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 7.8,
+      "m": 0.14,
+      "depth": 22.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 19.2,
+      "m": 0.28,
+      "depth": 18.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 4.7,
+      "m": 0.07,
+      "depth": 20.3
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 9.0,
+      "m": 0.13,
+      "depth": 18.1
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 11.7,
+      "m": 0.16,
+      "depth": 17.3
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 16.7,
+      "m": 0.22,
+      "depth": 16.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 14.6,
+      "m": 0.18,
+      "depth": 16.2
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 14.4,
+      "m": 0.18,
+      "depth": 15.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 18.0,
+      "m": 0.21,
+      "depth": 14.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 4.4,
+      "m": 0.05,
+      "depth": 14.0
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 1.8,
+      "m": 0.02,
+      "depth": 14.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 8.1,
+      "m": 0.09,
+      "depth": 14.0
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:39:corner",
+      "use": "control",
+      "px": 10.9,
+      "m": 0.24,
+      "depth": 27.8
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:39:corner",
+      "use": "control",
+      "px": 0.9,
+      "m": 0.02,
+      "depth": 28.5
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:38:corner",
+      "use": "control",
+      "px": 1.4,
+      "m": 0.04,
+      "depth": 32.8
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:38:corner",
+      "use": "control",
+      "px": 2.8,
+      "m": 0.07,
+      "depth": 33.6
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:39:top",
+      "use": "check",
+      "px": 48.7,
+      "m": 1.06,
+      "depth": 27.8
+     },
+     {
+      "ref": "building:6266601UF1366N_part4:38:top",
+      "use": "check",
+      "px": 48.6,
+      "m": 1.24,
+      "depth": 32.7
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 1.8
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.9
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.2
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 3.4
+     }
+    ]
+   },
+   "station": "north-pool-south-upper"
+  },
+  "IMG_2206.jpg": {
+   "image": [
+    1600,
+    1200
+   ],
+   "points": [
+    {
+     "pixel": [
+      1210,
+      752
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1260,
+      748
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1320,
+      750
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1380,
+      757
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1440,
+      758
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1480,
+      754
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1540,
+      744
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1590,
+      750
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1497,
+      935
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1500,
+      975
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1520,
+      1005
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1560,
+      1035
+     ],
+     "ref": "pool:north",
+     "use": "control",
+     "note": "water edge"
+    },
+    {
+     "pixel": [
+      1184,
+      280
+     ],
+     "ref": "building:6165501UF1366N_part5:39:corner",
+     "use": "control",
+     "note": "facade step where the tiled-canopy house meets the tall house (as in IMG_2204)"
+    },
+    {
+     "pixel": [
+      1184,
+      380
+     ],
+     "ref": "building:6165501UF1366N_part5:39:corner",
+     "use": "control",
+     "note": "same step, lower"
+    },
+    {
+     "vertical": [
+      [
+       1261.7,
+       307
+      ],
+      [
+       1261.7,
+       397
+      ]
+     ],
+     "use": "control",
+     "note": "arched balcony door frame"
+    },
+    {
+     "vertical": [
+      [
+       1184,
+       280
+      ],
+      [
+       1184,
+       380
+      ]
+     ],
+     "use": "control",
+     "note": "facade step"
+    }
+   ],
+   "initial": {
+    "x": -170.124,
+    "y": 8.729,
+    "z": 37.64,
+    "yaw": 318.7,
+    "pitch": -17.0,
+    "roll": 0.0,
+    "f": 1304.684
+   },
+   "initialBasis": "position and lens from the solved station (IMG_2204/IMG_2205); yaw from reviewed looksAt",
+   "station": "north-pool-south-upper",
+   "solved": {
+    "pose": {
+     "x": -170.116,
+     "y": 8.453,
+     "z": 37.13,
+     "yaw": 300.483,
+     "pitch": -16.528,
+     "roll": -3.729,
+     "f": 1281.01
+    },
+    "sigma": {
+     "x": 0.329,
+     "y": 0.485,
+     "z": 0.659,
+     "f": 44.111,
+     "yaw": 1.139,
+     "pitch": 0.917,
+     "roll": 0.97
+    },
+    "rmsControlPx": 7.45,
+    "rmsCheckPx": null,
+    "rmsCheckM": null,
+    "residuals": [
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 16.2,
+      "m": 0.25,
+      "depth": 19.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 8.3,
+      "m": 0.13,
+      "depth": 20.0
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 2.5,
+      "m": 0.04,
+      "depth": 20.0
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 4.6,
+      "m": 0.07,
+      "depth": 19.8
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 4.5,
+      "m": 0.07,
+      "depth": 19.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 0.9,
+      "m": 0.01,
+      "depth": 19.6
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 8.4,
+      "m": 0.13,
+      "depth": 20.0
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 8.1,
+      "m": 0.12,
+      "depth": 19.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 15.2,
+      "m": 0.17,
+      "depth": 14.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 7.8,
+      "m": 0.09,
+      "depth": 14.2
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 7.0,
+      "m": 0.07,
+      "depth": 13.7
+     },
+     {
+      "ref": "pool:north",
+      "use": "control",
+      "px": 0.9,
+      "m": 0.01,
+      "depth": 13.1
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:39:corner",
+      "use": "control",
+      "px": 1.2,
+      "m": 0.03,
+      "depth": 30.3
+     },
+     {
+      "ref": "building:6165501UF1366N_part5:39:corner",
+      "use": "control",
+      "px": 3.3,
+      "m": 0.08,
+      "depth": 31.0
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 3.5
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.2
+     }
+    ]
+   }
+  },
+  "IMG_2207.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -169.1,
+    "y": 5.0,
+    "z": 31.5,
+    "yaw": 337.1,
+    "pitch": -20.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; upper-floor eye height; 24 mm-equivalent lens"
+  },
+  "IMG_2208.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -168.9,
+    "y": 5.0,
+    "z": 32.2,
+    "yaw": 337.2,
+    "pitch": -20.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; upper-floor eye height; 24 mm-equivalent lens"
+  }
+ }
+}

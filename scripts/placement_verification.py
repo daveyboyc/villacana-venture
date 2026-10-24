@@ -24,9 +24,10 @@ paseo-details paseo-house-clearance paseo-retaining-wall paseo-retrace-line
 cervantes-door-steps cervantes-steps-treads door-sills elena-east-patios junction-lawns
 raised-terraces seaward-lanes-paving south-pool-seaward-level north-pool-west-frontage
 north-pool-alignment-audit unified-reference-map'''.split())
-UI_MODULES = {'app.ts', 'photo-library.ts', 'references.ts', 'asset.ts'}
+# photo-camera.ts only places the camera for ?photocam= and reads the scene; it builds no geometry.
+UI_MODULES = {'app.ts', 'photo-library.ts', 'references.ts', 'asset.ts', 'photo-camera.ts'}
 WORKFLOW_DATA = {'areas.json', 'build_queue.json', 'photo_checks.json', 'photo_positions.json',
-                 'photo_annotations.json', 'reference_tags.json', 'placement_reviews.json'}
+                 'photo_annotations.json', 'reference_tags.json', 'placement_reviews.json', 'photo_poses.json'}
 
 
 def digest(value):

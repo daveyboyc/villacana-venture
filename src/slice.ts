@@ -48,6 +48,7 @@ import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
+import { photoCamera } from "./photo-camera";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -88,6 +89,7 @@ if(new URLSearchParams(location.search).get('study')==='silvia'){
 }else void boot();
 
 async function boot(): Promise<void> {
+  const photoView = photoCamera();
   const detailLink=document.querySelector<HTMLAnchorElement>("#layout-details")!;
   const detailUrl=new URL(location.href);if(layoutOnly)detailUrl.searchParams.set("details","1");else detailUrl.searchParams.delete("details");detailLink.href=detailUrl.pathname+detailUrl.search;detailLink.textContent=layoutOnly?"Layout · show details":"Details · show layout";
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
@@ -415,6 +417,7 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
+  photoView?.exportModel(scene, skeleton, liveGroundY);
   const cameraBlockers:THREE.Object3D[]=[];
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
@@ -492,6 +495,8 @@ async function boot(): Promise<void> {
     const walkingFov=!overview&&!firstPerson&&inCloseSpace?70:55;
     if(camera.fov!==walkingFov){camera.fov=walkingFov;camera.updateProjectionMatrix();}
     camera.lookAt(target);
+    // Looking through a photo's camera replaces the walking camera (src/photo-camera.ts).
+    if (photoView) { photoView.apply(camera, innerWidth, innerHeight); player.group.visible = false; }
     pools.update(clock.elapsedTime);
     camera.updateMatrixWorld();
     document.querySelector<HTMLElement>(".reference-tools")!.style.bottom=`calc(${controls.offsetHeight+24}px + env(safe-area-inset-bottom))`;
