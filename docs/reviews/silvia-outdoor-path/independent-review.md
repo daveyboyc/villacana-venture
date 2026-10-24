@@ -74,3 +74,50 @@ missing comparison by moving the gate or tunnel. Final before/after views should
 show travel from tunnel to pool, the reverse lane view and the external arch
 threshold, plus the plain-tile/stone transition. Implementation/render review
 is pending; no measured placement approval is supplied.
+
+## Implementation and actual-app review, 24 October 2026
+
+Reviewed `src/silvia-outdoor-paving.ts`, the lane mesh/ribbon clipping,
+`src/slice.ts` apron overlay, the shared paving data, blueprint and reference-pack
+change against the full-size sources above. The additional lane sections end at
+along 16.2 m; they extend the visual surface and its existing generic-road mask,
+without moving registry buildings, beds, the gate, tunnel or collision. The apron
+now reaches tunnel-local zero, covering the previous decorated exterior strip
+within the existing clear passage. Its extent and the material threshold remain
+estimates in the provisional frame. Decorative slab wings beyond the 3.1 m clear
+apron lie within the original host footprint at sampled x=±2, z=-1/-0.3; these are
+not evidence for widening the outdoor connection or carving more of the house.
+
+Inspected the actual canonical-app `toward-pool` and `outdoor-floor` before/after
+pairs (after captures 23:22 and 23:24 UTC), the outdoor atlas and the IMG_2334
+source-camera diagnostic pair (after 23:26). The new surface visibly retains four
+columns and three internal joints aligned along the lane. Broader grey mortar,
+salmon/brown variation, patches and pitting are closer to IMG_2189/2334 than the
+previous uniform material. The pattern remains procedural: its four-row wear
+repeat, regular joints and smooth colour washes do not reproduce every crack,
+edge cut, wet patch or irregular mortar repair in the photos. These are remaining
+appearance limits, not a reason to move the surrounding buildings or planters.
+The pool-side stone forecourt remains a separate surface in both lane and gate
+views. The gate-camera diagnostic is illustrative, not a solved camera match;
+its pre-existing facade/planting differences and disputed spacing remain open.
+
+Inspected the implementation author's current `surface-check.json`: first hits
+at lane along 11.8/13/14.6/16 are the plain lane surface; tunnel-local -3 hits the
+lane, -1/-0.2 the plain apron, +0.2/+2 the indoor patterned slab. The finite garden
+path remains visible at 8.6/9.5/10.3. This resolves the earlier risk of a generic
+road ribbon hiding the extension at those samples. Reported apron UV interpolation
+differences are at most 0.00216 atlas units (about 1.11 pixels in its 512 px atlas),
+consistent with the tapered lane approximation. The retained garden/slab seam
+delta is below 1e-7. These are renderer diagnostics, not source-measured positions.
+
+The reference-pack change retains the historical model revision and explicitly
+records unresolved gateway identity, unmeasured widths and estimated connector
+extents. The map adds the same bounded apron with its uncertainty in the title.
+The saved source-check artifact reports no source-check failures; the measured
+placement gate remains failed, including the new apron and lane surface. No
+placement approval is supplied by this material review.
+
+The initial threshold pair was byte-identical before/after and showed only the
+interior, so it did **not** verify the exterior/indoor transition visually. A closer
+and downward-looking replacement capture is pending; the two lane pairs and gate
+diagnostic have no blocking material issue within this declared scope.

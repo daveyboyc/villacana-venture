@@ -14,7 +14,7 @@ Source groups remain distinct. Model states refer to draft snapshot 51b75f5. No 
 | A08 | Recessed doorway break | IMG_2334.jpg | draft-partial | Door identity, depth, precise break station and far hidden end are unresolved. |
 | A09 | Rectangular fixed window cage | IMG_2334.jpg | appearance-corrected | Bar count, cross-section, projection and opening centres remain estimated. |
 | A10 | Brown shutter behind cage | IMG_2334.jpg | appearance-corrected | Actual opening outline and detailed shutter construction unmeasured. |
-| A11 | Four-course lane paving | IMG_2334.jpg | appearance-corrected | Cut edges, actual tile size and world width unmeasured. Four columns do not establish centimetres. |
+| A11 | Four-course lane paving | IMG_2334.jpg | appearance-corrected | Cut edges, actual tile size and world width unmeasured. Four columns do not establish centimetres. The outdoor continuation to the provisional tunnel apron and its threshold are model estimates; IMG_2189 and IMG_2334 gateway identity remains unresolved. |
 | A12 | Climbers and tall boundary planting | IMG_2334.jpg | unassessed | Species, individual plant extent and hidden wall boundaries are not fixed. |
 | A13 | Farther raised bed fragment | IMG_2334.jpg | draft-partial | Foliage/equipment screen its complete ends; its relationship to mapped model stations remains estimated. |
 | B01 | Rectangular cages on both frontages | IMG_2189.jpg | comparison-only | Construction reference only; left/right instances are not registered to A. The draft A geometry uses this form/count exemplar; neither frontage in B is claimed built or placed. |

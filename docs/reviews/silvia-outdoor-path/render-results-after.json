@@ -1,0 +1,17 @@
+{
+  "views": [
+    [
+      "tunnel-threshold",
+      [
+        -120.89317295000001,
+        117.5739223
+      ],
+      [
+        -124.35236300000001,
+        119.680222
+      ]
+    ]
+  ],
+  "errors": [],
+  "camera": "illustrative first-person; not calibrated"
+}

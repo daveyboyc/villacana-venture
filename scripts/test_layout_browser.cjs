@@ -322,8 +322,9 @@ const path = require("node:path");
       const uv=floor.geometry.getAttribute('uv'),texture=floor.material.map,pixels=texture.image.getContext('2d');
       for(let i=0;i<uv.count;i+=2)if(uv.getX(i)!==0||uv.getX(i+1)!==1)throw Error('Lane texture does not span exactly one four-column atlas');
       if(texture.repeat.x!==1||lanePaving.columns!==4)throw Error('Wrong lane tile count');
-      const redMinusGreen=x=>{const p=pixels.getImageData(x,64,1,1).data;return p[0]-p[1];};
-      if(![64,192,320,448].every(x=>redMinusGreen(x)>35)||![128,256,384].every(x=>redMinusGreen(x)<25))throw Error('Tile atlas must have four terracotta courses and three internal grout joints');
+      // Weathered patches can alter one pixel; sample the central tile region.
+      const redMinusGreen=x=>{const samples=[];for(const dx of [-8,0,8])for(const y of [40,64,88]){const p=pixels.getImageData(x+dx,y,1,1).data;samples.push(p[0]-p[1]);}return samples.sort((a,b)=>a-b)[4];};
+      if(![64,192,320,448].every(x=>redMinusGreen(x)>30)||![128,256,384].every(x=>{const p=pixels.getImageData(x,64,1,1).data;return Math.abs(p[0]-p[1])<10;}))throw Error('Tile atlas must have four terracotta courses and three internal grout joints');
       if(outsideLanePaving([laneAt(1,-.5),laneAt(2,-.5),laneAt(2,.5),laneAt(1,.5)]).length)throw Error('Generic paving still covers the four-column surface');
       const area=ring=>Math.abs(ring.reduce((v,p,i)=>{const q=ring[(i+1)%ring.length];return v+p[0]*q[1]-q[0]*p[1];},0))/2;
       const rectangle=[laneAt(1,-2),laneAt(2,-2),laneAt(2,3),laneAt(1,3)],outside=outsideLanePaving(rectangle);
@@ -358,6 +359,9 @@ const path = require("node:path");
       const {entranceBeds,entranceWorld,entranceBedRings}=await import('/src/entrance-planters.ts');
       const {createSilviaTunnel}=await import('/src/silvia-tunnel.ts');
       const {silviaWorld,silviaRotation}=await import('/src/silvia-map.ts');
+      const {laneAt}=await import('/src/middle-pool-lane-frontages.ts');
+      walk([laneAt(2,.4),laneAt(16,.4)]);walk([laneAt(16,.4),laneAt(2,.4)]);
+      if(!document.querySelector('[data-middle-id="silvia-outdoor-apron"]'))throw Error('Plain outdoor approach missing from map');
       walk([silviaWorld(0,-2),silviaWorld(0,10.7)]);walk([silviaWorld(0,10.7),silviaWorld(0,-2)]);
       for(const bed of entranceBeds){
         if(!document.querySelector(`[data-planter-id="${bed.id}"]`))throw Error('Entrance planter missing from map: '+bed.id);
