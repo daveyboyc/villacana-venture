@@ -28,7 +28,7 @@ block falling about 3 m towards the main pool and the paseo; the ground now foll
 - **Raised terraces and patios** are masked out of the survey (it reads the patio as ground)
   and held at the ground at their foot, so `src/raised-terraces.ts` does not lift them twice.
   The south Dalí approach is held at the survey level of its foot.
-- **Kept on the old datum:** the strip 3 m behind the paseo wall stays at zero so the
+- **Kept on the old datum:** the strip 4 m behind the paseo wall stays at zero so the
   photographed 1 m wall keeps its height, and seaward of the fade line (turned-frame z
   150-158 m) the seafront heights take over as before. The survey puts the gardens behind the
   wall 0.1-0.6 m higher. The lowered main-pool area's south-west corner, where the survey

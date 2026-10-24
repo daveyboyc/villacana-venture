@@ -8,17 +8,17 @@
   {
    "pool": "north",
    "survey": 0.8,
-   "model": 0.8
+   "model": 0.82
   },
   {
    "pool": "middle",
    "survey": 0.0,
-   "model": -0.01
+   "model": 0.02
   },
   {
    "pool": "south",
    "survey": 0.11,
-   "model": 0.1
+   "model": 0.12
   },
   {
    "pool": "main",
@@ -322,10 +322,10 @@
    ],
    "model": [
     0.75,
-    -0.2
+    -0.29
    ],
    "medianMiss": 0.07,
-   "worstMiss": 0.32
+   "worstMiss": 0.23
   },
   {
    "street": "Calle Silvia",
@@ -350,7 +350,7 @@
     0.06
    ],
    "medianMiss": 0.07,
-   "worstMiss": 0.26
+   "worstMiss": 0.22
   },
   {
    "street": "Calle Silvia",
@@ -397,10 +397,10 @@
    ],
    "model": [
     0.66,
-    -0.06
+    -0.05
    ],
    "medianMiss": 0.07,
-   "worstMiss": 0.31
+   "worstMiss": 0.32
   },
   {
    "street": "Calle Teodoro Rojo",
@@ -425,7 +425,7 @@
     -0.28
    ],
    "medianMiss": 0.09,
-   "worstMiss": 0.19
+   "worstMiss": 0.18
   },
   {
    "street": "Calle Guillermo",
@@ -474,7 +474,7 @@
     0.94,
     0.75
    ],
-   "medianMiss": 0.38,
+   "medianMiss": 0.39,
    "worstMiss": 0.45
   }
  ],

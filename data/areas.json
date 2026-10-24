@@ -43,7 +43,7 @@
     "Alignment audit 2026-10-18 (docs/reviews/north-pool-alignment-audit): Google screenshot globally registered to fixed Esri frame; held-out relative residuals about 1.5-2.1 m, sampled roof/registry differences about 0.6-1.5 m do not establish ground-wall shifts. No runtime geometry changed. IMG_2202/2361 are the separate private36/34 entry, not IMG_2363 lawn gateway. Missing newer photo-check records do not erase earlier manual reviews. Concealed boundaries, complete pool/ground perimeter and access widths remain unresolved in north-pool-unresolved-plan.",
     "Photo camera alignment 2026-10-24 (docs/reviews/photo-camera-alignment): IMG_2204-2206 solved as one upper-floor station about 5 m from their pins, 8.5 m above pool level, 28 mm lens. Pool water edge agrees with the aerial trace to about 0.1 m; a held-out facade step to 0.24 m. Four held-out parapet corners stand 1.0-1.2 m above the model tops (north-pool-roof-heights). By eye, IMG_2205 shows the east-side block set further back than the model and lawn where the model has a tiled route; not yet measured.",
     "Laser survey 2026-10-24 (docs/reviews/lidar-levels): the north pool deck is 0.80 m above the middle pool deck and the houses around it stand on ground about 1.2 m above the model; their roofs are ordinary two-storey heights over that ground. The 1.0-1.2 m parapet misfit from the photo camera alignment is this ground error (terrain-from-lidar), not storey height.",
-    "Laser survey ground 2026-10-24: the north pool deck and lawn now stand at +0.80 m and the houses around it on the surveyed ground. Open: the north-pool-west-terrace floor (+1.93 m) is about 0.2 m above the survey's top (+1.72 m), and its outline may sit about 5 m too far east over the lawn; not changed."
+    "Laser survey ground 2026-10-24: the north pool deck and lawn now stand at +0.82 m and the houses around it on the surveyed ground. Open: the north-pool-west-terrace floor (+1.93 m) is about 0.2 m above the survey's top (+1.72 m), and its outline may sit about 5 m too far east over the lawn; not changed."
    ]
   },
   {
@@ -136,7 +136,7 @@
    ],
    "notes": [
     "IMG_2349 and IMG_2188: the south lawn and level pool stand about 1 m above the paseo behind the sandstone wall and mesh fence. Existing paseo profile supplies that difference; south pool stays at datum 0. The legacy seaward white wall is omitted wherever sandstone replaces it in map, 3D and collision. Short end returns remain approximate, not photographed endpoints.",
-    "Laser survey ground 2026-10-24: the south pool deck is +0.10 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo."
+    "Laser survey ground 2026-10-24: the south pool deck is +0.12 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo."
    ]
   },
   {

@@ -9,6 +9,7 @@ Overviews, maps and wide views covering several areas at once, and the mountain 
 - Buildings are white with brown wooden Persian-blind shutters (Dave, 2026-10-11).
 - Plants and small details should eventually be textures and sprites, not 3D shapes. The player should be able to get into the pools.
 - GPS locates the camera, not the subject. A roof or upper-floor photo's pin is inside a building and its subject can be 50+ m away.
+- Laser survey ground 2026-10-24 (terrain-from-lidar, docs/reviews/terrain-from-lidar): the ground now follows a 2 m PNOA-LiDAR grid instead of one 0.5 m rise; 92% of open ground near houses is within 0.25 m of the survey. Houses keep one floor datum at the ground under their middle. Open: the seafront strip behind the paseo wall keeps the old zero (survey 0.1-0.6 m higher), the Guillermo cut, and whether house floors follow the survey or the lanes.
 
 ## Read first
 
