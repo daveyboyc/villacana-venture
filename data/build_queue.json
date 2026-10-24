@@ -1154,22 +1154,23 @@
   },
   {
    "id": "north-pool-roof-heights",
-   "area": "north-pool",
-   "priority": 2,
+   "area": "whole-resort",
+   "priority": 3,
    "kind": "structure",
-   "title": "North pool: raise the two-storey courtyard roofs to the measured parapet height",
+   "title": "Storey heights: match roof heights to the laser survey",
    "photos": [
     "IMG_2204.jpg",
     "IMG_2205.jpg"
    ],
-   "build": "Four held-out roof corners measured through the solved north-pool station camera (data/photo_poses.json, docs/reviews/photo-camera-alignment) sit 0.9-1.2 m above the model's tops on both the tall house (registry 6165501UF1366N_part5) and the east block (6266601UF1366N_part4): the model gives a two-storey house 2 x 3 m with no parapet, the photos show parapet tops about 7.0-7.2 m above their ground. Decide from more corners and other areas whether this is a parapet, a taller storey or both, and change the height rule rather than single buildings if it holds everywhere.",
-   "avoid": "No change to registry footprints. Do not raise every building from four corners at one courtyard: measure more stations first.",
+   "build": "The north-pool parapets that the photo camera solve measured 1.0-1.2 m above the model's roofs (IMG_2204/2205) turned out to be ground, not storey height: the laser survey puts those houses' ground about 1.2 m higher than the model and their roofs at 5.5-6.3 m above it (docs/reviews/lidar-levels). Resort-wide the survey gives 3.7 m for one storey (model 3.0), 5.9 m for two (6.0) and 8.3 m for three (9.0). Replace the flat 3 m per storey with a rule that matches, or per-building surveyed heights, once terrain-from-lidar sets the ground.",
+   "avoid": "No change to registry footprints. Do not raise roofs to fix what is a ground-level error.",
    "accept": [
-    "Re-solved photo checks for the parapet corners within about 0.3 m",
-    "Roof corners measured at a second station or area before a resort-wide rule changes"
+    "scripts/lidar_check.py roof medians within 0.3 m of the model for each storey count",
+    "Re-solved photo checks for the north-pool parapet corners within about 0.3 m"
    ],
    "dependsOn": [
-    "photo-camera-alignment"
+    "photo-camera-alignment",
+    "terrain-from-lidar"
    ],
    "status": "open"
   },
@@ -1198,6 +1199,39 @@
    "owner": "Codex",
    "dependsOn": [],
    "notes": "Full2190/2191 reinspection and independent final renders correct earlier clipped-corner reading: offset large square tiles and small decorated squares create diagonal insert runs, not a uniform octagon grid or whole-field45degree rotation. Coherent metric UVs across slab/apron/garden, varied worn tiles/inserts, granular inset and finite wall pebble bands. Original geometry extents, transforms, collision, levels, doors/pots/planters and street grid retained. Material pitches/motifs/angle remain estimates; placement remains unapproved and task in progress. See docs/reviews/silvia-paving/."
+  },
+  {
+   "id": "terrain-from-lidar",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "levels",
+   "title": "Ground levels: follow the laser survey instead of one 0.5 m rise",
+   "photos": [],
+   "build": "The block falls about 3 m from its north-west corner to the main pool and paseo (docs/reviews/lidar-levels): Dalí +1.75 to +0.07, Cervantes +1.40 to +0.23, Picasso +1.52 to -0.90, the north pool deck +0.80 and the houses around it about +1.2 above the model. Over half the open ground within 15 m of a house is more than 0.5 m off. Build the ground from the survey's 1 m ground model (smoothed, sampled into data/terrain.json or a committed derived height grid) with the photo-read steps, ramps and raised patios in data/levels_survey.json kept as local detail, and houses keeping one level datum each.",
+   "avoid": "No raw survey rasters in the repository; commit only derived, attributed heights. Do not let interpolated ground under buildings or over pools set those levels. Keep every lane walkable.",
+   "accept": [
+    "scripts/lidar_check.py: open ground within 15 m of a house mostly within 0.25 m of the survey; every street profile within 0.3 m",
+    "Pool decks within 0.15 m of the survey",
+    "check_terrain/check_levels updated; layout browser test walks every route"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
+   "id": "guillermo-descent-recheck",
+   "area": "main-pool",
+   "priority": 1,
+   "kind": "levels",
+   "title": "Calle Guillermo: put the fall to the paseo where the survey has it",
+   "photos": [],
+   "build": "The model drops Calle Guillermo 3 m over the last 15 m of the mapped street. The laser survey keeps the street at about -0.2 to -0.4 m to that end, with the main-pool lawn 2.5 m lower beside it behind a sharp edge (a retaining wall), and the fall to the paseo starting south of the mapped end (docs/reviews/lidar-levels). Re-check against Apple 3D screenshots 10, 11 and 13 and any ground photos, then move the descent and the wall line to match.",
+   "avoid": "Do not remove the east steps or the kiosk without evidence. No raw survey rasters in the repository.",
+   "accept": [
+    "scripts/lidar_check.py Guillermo profile within 0.3 m of the survey",
+    "check_lowered_lanes updated; layout browser test passes"
+   ],
+   "dependsOn": [],
+   "status": "open"
   },
   {
    "id": "silvia-outdoor-path",

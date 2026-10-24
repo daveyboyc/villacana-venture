@@ -27,6 +27,14 @@ the middle of the resort, and the change is mostly at short ramps on the lanes.
 - The north, middle and south pools are all on level ground. The big pool, the
   beach and the sea keep their own levels (`docs/MAIN_POOL.md`).
 
+## Measured against the laser survey
+
+`scripts/lidar_check.py` compares this rule with PNOA-LiDAR (docs/reviews/lidar-levels). The
+real block falls about 3 m from its north-west corner to the main pool and paseo, and over half
+the open ground is more than 0.5 m off. The north pool deck is 0.8 m above the middle one. The
+middle-pool steps match the survey; the Cervantes ramp measures about half its photo-read
+rise (docs/LEVELS.md); the rest of the rule does not hold. Task `terrain-from-lidar` replaces it.
+
 ## How it is applied
 
 The scene is still built flat. Just before the first frame `drapeScene` lifts

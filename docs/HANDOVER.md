@@ -120,8 +120,8 @@ for what you built, and before/after renders from the photo cameras committed in
 `docs/reviews/<task-id>/` and recorded in `data/photo_checks.json`.
 For tooling/audit tasks without geometry changes, record applicable evidence and
 software outcomes instead of inventing photo-camera pairs or placement approvals.
-The Evidence graph PR check must pass before merge. It validates records, hashes
-and arithmetic; independent source inspection still establishes what images show.
+Fix what the Evidence graph PR check flags in your change, then merge it yourself
+(AGENTS.md, Merging). The check validates records, hashes and arithmetic; independent source inspection still establishes what images show.
 `build_references.py --check` fails for a done task with an unchecked photo, a
 `differs` without an open follow-up, or a checked photo without a reviewed `looksAt`.
 Passing source checks and walking tests does not show the build looks like the place.

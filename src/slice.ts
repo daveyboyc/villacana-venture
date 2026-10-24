@@ -50,7 +50,7 @@ import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
-import { photoCamera } from "./photo-camera";
+import { exportModel, photoCamera } from "./photo-camera";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -418,7 +418,7 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
-  photoView?.exportModel(scene, skeleton, liveGroundY);
+  if (photoView || new URLSearchParams(location.search).get("export") === "model") exportModel(scene, skeleton, liveGroundY, world.groundHeight ?? liveGroundY);
   const cameraBlockers:THREE.Object3D[]=[];
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();

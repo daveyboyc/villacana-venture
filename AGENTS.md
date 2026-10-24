@@ -14,7 +14,8 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   Only a current `placement-verified-by` graph edge grants scoped placement
   approval. Photo diagnostics and earlier task completion cannot grant it.
 - Run `scripts/check_placement_changes.py --base origin/main` after regenerating
-  references. The Evidence graph PR check must pass before merging geometry.
+  references. Fix every Evidence graph failure your change can fix; a red placement
+  gate does not hold up the merge (see Merging), but say in the PR what it flags.
   Do not bypass a disputed/stale placement by deleting reports, inventing review
   identities, changing task kind or treating unavailable calibration as a match.
 - Distinguish photo-supported wall/opening arrangements from estimated extents,
@@ -30,6 +31,14 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   fully verified.
 - Keep Google keys in ignored private environment files. Never publish API keys,
   signed download URLs, original photo metadata blobs or fetched Google imagery.
+
+## Merging
+
+Dave's rule: never wait for him. When your work is done and its checks pass, merge
+your own PR into `main` yourself (or push straight to `main`) and push. Do not leave
+a PR open for approval. If a check is red for a reason outside your change, such as
+the placement gate flagging a renderer edit, merge anyway and record in one PR
+comment what failed and why.
 
 ## Build queue
 
@@ -78,6 +87,9 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
 - To measure rather than eyeball, solve the photo's camera and render through it
   (`docs/PHOTO_ALIGNMENT.md`: `scripts/photo_pose.py`, `shoot_views.cjs --pose`).
   Held-out checks give the model's misfit in metres; they are not placement approval.
+- Ground levels, street slopes and roof heights can be measured against the national
+  laser survey (`scripts/lidar_check.py`, docs/reviews/lidar-levels). Check a level or
+  height change there before building it.
 - `refs/` is generated. Rebuild with `python3 scripts/build_references.py
   --sheets` and commit both repos. `--check` must pass before a PR.
 - New photos: follow "Intake for a new Drive batch" in

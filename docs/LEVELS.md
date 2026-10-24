@@ -55,6 +55,14 @@ photos**.
   patios
 - side-on views of patio walls with steps along the lanes
 
+## Checked against the laser survey
+
+`scripts/lidar_check.py report` measures each item's rise between its `compare` points on the
+survey's 1 m ground model (docs/reviews/lidar-levels/measurements.json, `levelsSurvey`). Four of
+the seven with comparison points fall inside their photo range and the Dalí apron is 0.11 m over.
+The Cervantes ramp and steps measure about half their photo-read rise: check whether the points
+straddle the whole rise. A 1 m grid softens steps and short ramps.
+
 ## Using it when building
 
 1. Find your area's items in the brief, or in the issue under **Levels from the
