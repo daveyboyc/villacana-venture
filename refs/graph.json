@@ -35103,7 +35103,7 @@
    "kind": "build-task",
    "name": "Ground levels: follow the laser survey instead of one 0.5 m rise",
    "priority": 1,
-   "status": "open",
+   "status": "in-progress",
    "verification": "not-verified",
    "photoVerification": "unchecked",
    "placement": {

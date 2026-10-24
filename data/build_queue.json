@@ -1215,7 +1215,8 @@
     "check_terrain/check_levels updated; layout browser test walks every route"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude"
   },
   {
    "id": "guillermo-descent-recheck",
