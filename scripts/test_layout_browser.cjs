@@ -105,7 +105,8 @@ const path = require("node:path");
     if (Math.hypot(eastResolved.x-eastCentre[0],eastResolved.z-eastCentre[1])<.15) throw Error("Cervantes east kerb missing collision");
     let open = true;
     const sd = makeSeaside(s.seafront, s.viewRotation);
-    const hostCentre=(await import("/src/geom.ts")).centroid(buildings.find(b=>b.id===silvia.SILVIA_HOST).ring);
+    // The tunnel floor takes its level on the lane through it (src/slice.ts SILVIA_DATUM).
+    const hostCentre=(await import("/src/geom.ts")).centroid(silvia.silviaFloor);
     const tunnelY=siteY(hostCentre.x,hostCentre.z)+poolGroundY(hostCentre.x,hostCentre.z);
     const world = {
       solids: new GatedSolids(base, () => open),
@@ -282,9 +283,10 @@ const path = require("node:path");
         const deck = [b[0] + u[0] * 1.2, b[1] + u[1] * 1.2];
         walk([a, ...flight.points.slice(1), deck]);
         const at = () => world.groundHeight(player.x, player.z);
-        if (Math.abs(at() - LOWER_POOL_Y - 0.06) > 0.05) throw Error(flight.id + ": did not reach the deck: " + at());
+        // The lowered deck follows the surveyed ground (siteY) like everything else.
+        if (Math.abs(at() - LOWER_POOL_Y - siteY(player.x, player.z) - 0.06) > 0.05) throw Error(flight.id + ": did not reach the deck: " + at());
         walk([deck, ...[...flight.points].reverse()]);
-        if (Math.abs(at() - 0.06) > 0.05) throw Error(flight.id + ": did not climb back to street level: " + at());
+        if (Math.abs(at() - siteY(player.x, player.z) - 0.06) > 0.05) throw Error(flight.id + ": did not climb back to street level: " + at());
       }
       world.solids = saved;
     }
@@ -429,7 +431,8 @@ const path = require("node:path");
       const k = d.footpathKerb, band = (p) => sills.kerbPoint(...p);
       for (const [sa, ca] of [[10, 2.6], [20, 3.0]]) {
         const on = band([sa, ca]), off = band([sa, sa < k.pathKerbFrom ? -0.8 : k.pathEdge - 0.8]);
-        if (Math.abs(world.groundHeight(...on) - world.groundHeight(...off) - k.rise) > .01) throw Error("Dalí footpath is not a kerb above the asphalt at " + sa);
+        // Measured above the local ground, which may fall across the 3.4 m between the two points.
+        if (Math.abs(world.groundHeight(...on) - siteY(...on) - world.groundHeight(...off) + siteY(...off) - k.rise) > .01) throw Error("Dalí footpath is not a kerb above the asphalt at " + sa);
         walk([off, on, off]);
       }
       const visible = [[1.25, 2.5], [10, 3.0], [22, 3.0]].map(([sa, ca]) => top(band([sa, ca]), "-path"));
@@ -569,9 +572,10 @@ const path = require("node:path");
       if (legacyScene.children.length !== remaining.length) throw Error("White wall mesh/map segment disagreement");
       const cornerCount = new Set(remaining.flat().map(p => p.join(","))).size;
       if (seaWallRings(legacy, paseoWallCovers).length !== remaining.length + cornerCount) throw Error("White wall collision retains hidden stretches");
-      const south = s.pools.find(p => p.id === "south");
+      // The south pool stays level, at its surveyed deck height (data/terrain.json decks).
+      const south = s.pools.find(p => p.id === "south"), surveyedDeck = (await import("/data/terrain.json")).default.decks.south;
       for (const [x, z] of south.ring) {
-        if (sd.inZone(x, z) || Math.abs(siteY(x, z) + poolGroundY(x, z)) > 0.001) throw Error("South pool no longer stays level at its existing datum");
+        if (sd.inZone(x, z) || Math.abs(siteY(x, z) + poolGroundY(x, z) - surveyedDeck) > 0.005) throw Error("South pool no longer stays level at its surveyed deck");
       }
       const wallScene = new THREE.Scene();
       addPaseoWall(wallScene, s.seafront, sd, (x, z) => siteY(x, z) + poolGroundY(x, z));

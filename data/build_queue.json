@@ -1215,7 +1215,9 @@
     "check_terrain/check_levels updated; layout browser test walks every route"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "Built 24 October (docs/reviews/terrain-from-lidar): data/terrain.json is a 2 m PNOA-LiDAR ground grid with fills under houses and pools, level surveyed pool decks and the three photographed flights kept exact. lidar_check: open ground within 0.25 m of the survey 26% -> 92%, over 0.5 m off 55% -> 6%; pool decks within 0.04 m; every street's median miss 0.06-0.11 m (the Eva west footpath 0.39 m: its door-sill visual datum). Worst misses over 0.3 m remain at Guillermo (the lowered cut, guillermo-descent-recheck), the Cervantes steps (photo 0.5 m against the survey's 0.21 m), Dalí by the south approach hold (0.72 m), Loira (0.46 m) and Jorge (0.32 m). The seafront strip behind the paseo wall keeps the old datum. Placement: buildings and door sills move vertically, so the placement gate flags them; no placement approval is claimed, so the task stays in progress until a verified packet exists (docs/PLACEMENT_VERIFICATION.md)."
   },
   {
    "id": "guillermo-descent-recheck",
