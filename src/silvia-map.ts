@@ -14,6 +14,8 @@ export function silviaRect(x0:number,z0:number,x1:number,z1:number):Vec2[]{retur
 const d=silviaTunnel.dimensions,h=d.width/2;
 // The carve includes the actual wall thickness and each recess, never the entire house.
 export const silviaEnvelope=[silviaRect(-h-d.wall,-1.3,h+d.wall,d.length+.35),...silviaTunnel.entrances.map(e=>silviaRect(Math.min(e.side*h,e.side*(h+e.depth+d.wall)),e.along[0]-d.wall/2,Math.max(e.side*h,e.side*(h+e.depth+d.wall)),e.along[1]+d.wall/2))];
+// Exact existing study slab footprint; generic ground must not rise through it.
+export const silviaSlabFloor=silviaRect(-h-1.1,-1.25,h+1.1,d.length+1.25);
 export const silviaFloor= silviaRect(-h,-3.65,h,d.length+.35);
 export const silviaWallRings=()=>silviaTunnelRings().map(r=>r.map(([x,z])=>silviaWorld(x,z)));
 export function silviaGroundParts(b:SkeletonBuilding):{ring:Vec2[];holes:Vec2[][]}[]{

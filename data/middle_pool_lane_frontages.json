@@ -249,12 +249,39 @@
     11.4,
     -0.680871,
     1.5
+   ],
+   [
+    12.5,
+    -0.64,
+    1.5
+   ],
+   [
+    16.2,
+    -0.615,
+    1.5
    ]
   ],
   "evidence": [
    "IMG_2334.jpg",
    "IMG_2189.jpg"
   ],
-  "trust": "Owner identifies four tiles across, independently rechecked in IMG_2189: four terracotta courses with three internal longitudinal joints, aligned to lane. IMG_2334 supports lane-aligned square paving, with edge cuts and occlusion. Bounded existing model gap is used for a four-column UV grid; .6m row pitch is model-derived and estimated, not measured tile size. Edge bounds follow existing bed fronts and stay outside original east house. No lane, bed, building, doorway or route rescale; exact world width/registration remains unapproved."
+  "trust": "Owner identifies four tiles across, independently rechecked in IMG_2189: four terracotta courses with three internal longitudinal joints, aligned to lane. IMG_2334 supports lane-aligned square paving, with edge cuts and occlusion. Bounded existing model gap is used for a four-column UV grid; .6m row pitch is model-derived and estimated, not measured tile size. Edge bounds follow existing bed fronts and stay outside original east house. No lane, bed, building, doorway or route rescale; exact world width/registration remains unapproved. Outdoor correction: the last11.4–16.2m surface segment follows the existing registry-free route to the provisional tunnel branch, as an estimated material continuation. No bed/route/house/level moved. Worn pink/brown square tiles and broad grey mortar follow2189/2334; no decorative inserts outside. Connector extents/arch transition are uncalibrated.",
+  "apron": {
+   "id": "silvia-outdoor-apron",
+   "name": "Silvia · plain tiled outdoor approach to estimated arch threshold",
+   "along": [
+    -3.65,
+    0
+   ],
+   "across": [
+    -1.55,
+    1.55
+   ],
+   "evidence": [
+    "IMG_2189.jpg",
+    "IMG_2334.jpg"
+   ],
+   "trust": "Plain exterior square-tile construction from lane sources, applied to the existing provisional street connection/slab footprint up to tunnel-localz0 arch. Material boundary and world connection are estimated; no photo proves this entire connecting shape or gate identity. No original floor, collision or ground-level changes."
+  }
  }
 }

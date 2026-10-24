@@ -1344,10 +1344,11 @@
       "modelFeatureIds": [
         "middle_pool_lane_frontages.json:south-lane-four-column-paving"
       ],
-      "unknown": "Cut edges, actual tile size and world width unmeasured. Four columns do not establish centimetres.",
+      "unknown": "Cut edges, actual tile size and world width unmeasured. Four columns do not establish centimetres. The outdoor continuation to the provisional tunnel apron and its threshold are model estimates; IMG_2189 and IMG_2334 gateway identity remains unresolved.",
       "buildReady": false,
       "requirements": [
-        "Main terracotta lane is aligned with the route; four principal courses are supported, clearer in B03."
+        "Main terracotta lane is aligned with the route; four principal courses are supported, clearer in B03.",
+        "Plain worn terracotta squares and broad grey mortar outside; keep decorated small inserts inside the tunnel and irregular stone on the pool side of the gate."
       ],
       "evidence": [
         "IMG_2334.jpg"

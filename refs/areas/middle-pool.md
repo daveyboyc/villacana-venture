@@ -23,6 +23,7 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 - 23 October entrance context: user questions gate/bench/planter distance from pool. Satellite and IMG_2192 confirm lawn/hedged approach buffer, but ground anchors are concealed, so gate, bench, pool and tunnel transform are retained. Bounded PR108 street-side planters, square window cages and four-course paving are transplanted into the main scene; bench cypress/geranium-like planting and small pale cabinet added from2334/2335/2192. Extents and facade attachments remain estimates, with shared route-clearance guard and open discrepancy. See docs/reviews/tunnel-entrance-context/.
 - 24 October planter correction: a bounded low right garden bed, left greenery with its base unresolved, and continuing near path beyond the Silvia exit arch replace two unsupported illustrative tall garden pots; four observed near/threshold pots remain. At the pool entrance the existing bench beds gain rounded returns/white rims/soil inside their original bounds, and a short LOW grey-beige kerb follows the existing opposite hedge fragment. Satellite context/full photos independently rechecked; no measured extent, complete garden perimeter, route/gate/pool relocation or placement approval is inferred. See docs/reviews/silvia-entrance-planters/.
 - Laser survey ground 2026-10-24: the south-west and north white steps keep their surveyed rises (0.53, 0.52 m); their feet are 0.16 and 0.40 m above the deck. Elena south falls about 0.35 m over 15 m to the gate, which the photos read as level. The oleander bed fragment stands where the survey climbs 0.3 m towards Calle Eva; its +-2 m placement may be off.
+- 24 October outdoor Silvia path: full IMG_2189/2334 show plain worn terracotta squares, four straight columns and broad grey mortar; the decorated square-insert paving belongs inside the tunnel. Existing lane visual surface continues to the provisional side approach, with a plain overlay to the estimated arch threshold. Pool-side irregular stone/grate retained. Continuation endpoints, threshold and gate/tunnel association remain estimated; no registry, route, terrain, collision or structural placement change. See docs/reviews/silvia-outdoor-path/.
 
 ## Read first
 
@@ -75,56 +76,59 @@ graph LR
   F2 --> PIMG_2331_jpg(["IMG_2331"])
   F2 --> PIMG_2332_jpg(["IMG_2332"])
   F2 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F3["Entrance lane · four-column terracotta paving · unreviewed"]
+  A --> F3["Silvia · plain tiled outdoor approach to estimated arch threshold · unreviewed"]
   F3 --> PIMG_2189_jpg(["IMG_2189"])
   F3 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F4["Entrance lane · low left planted border · unreviewed"]
+  A --> F4["Entrance lane · four-column terracotta paving · unreviewed"]
+  F4 --> PIMG_2189_jpg(["IMG_2189"])
   F4 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F5["Entrance lane · separate right bed beyond doorway · unreviewed"]
+  A --> F5["Entrance lane · low left planted border · unreviewed"]
   F5 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F6["Entrance lane · bounded farther shuttered grille · unreviewed"]
-  F6 --> PIMG_2189_jpg(["IMG_2189"])
+  A --> F6["Entrance lane · separate right bed beyond doorway · unreviewed"]
   F6 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F7["Entrance lane · raised right frontage bed · unreviewed"]
+  A --> F7["Entrance lane · bounded farther shuttered grille · unreviewed"]
+  F7 --> PIMG_2189_jpg(["IMG_2189"])
   F7 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F8["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
-  F8 --> PIMG_2189_jpg(["IMG_2189"])
+  A --> F8["Entrance lane · raised right frontage bed · unreviewed"]
   F8 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F9["Middle pool · bounded garden wall with brown door · unreviewed"]
-  F9 --> PIMG_2195_jpg(["IMG_2195"])
-  F9 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F10["Middle pool · open north-west pergola entrance · unreviewed"]
+  A --> F9["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
+  F9 --> PIMG_2189_jpg(["IMG_2189"])
+  F9 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F10["Middle pool · bounded garden wall with brown door · unreviewed"]
   F10 --> PIMG_2195_jpg(["IMG_2195"])
   F10 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F11["Middle pool · curved north end of west planter · unreviewed"]
-  F11 --> PIMG_2331_jpg(["IMG_2331"])
+  A --> F11["Middle pool · open north-west pergola entrance · unreviewed"]
+  F11 --> PIMG_2195_jpg(["IMG_2195"])
   F11 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F12["Middle pool · north planter side steps · unreviewed"]
+  A --> F12["Middle pool · curved north end of west planter · unreviewed"]
   F12 --> PIMG_2331_jpg(["IMG_2331"])
   F12 --> PIMG_2332_jpg(["IMG_2332"])
-  A --> F13["Middle pool · visible east hedge fragment · disputed"]
-  F13 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F14["Middle pool · bounded crazy-paved south forecourt · disputed"]
+  A --> F13["Middle pool · north planter side steps · unreviewed"]
+  F13 --> PIMG_2331_jpg(["IMG_2331"])
+  F13 --> PIMG_2332_jpg(["IMG_2332"])
+  A --> F14["Middle pool · visible east hedge fragment · disputed"]
   F14 --> PIMG_2334_jpg(["IMG_2334"])
-  F14 --> PIMG_2335_jpg(["IMG_2335"])
-  A --> F15["Middle pool · south double iron gate, curved head and tiled planter · disputed"]
-  F15 --> PIMG_2192_jpg(["IMG_2192"])
+  A --> F15["Middle pool · bounded crazy-paved south forecourt · disputed"]
   F15 --> PIMG_2334_jpg(["IMG_2334"])
   F15 --> PIMG_2335_jpg(["IMG_2335"])
-  A --> F16["Middle pool · south-west gateway above the stone steps · unreviewed"]
-  F16 --> PIMG_2332_jpg(["IMG_2332"])
-  F16 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F17["Middle pool · short uncertain curved hedge patio · unreviewed"]
-  F17 --> PIMG_2341_jpg(["IMG_2341"])
-  A --> F18["Middle pool · bounded north raised patio · unreviewed"]
-  F18 --> PIMG_2193_jpg(["IMG_2193"])
-  F18 --> PIMG_2194_jpg(["IMG_2194"])
-  A --> F19["Middle pool · shallow oleander bed beside patio · unreviewed"]
-  F19 --> PIMG_2246_jpg(["IMG_2246"])
-  F19 --> PIMG_2247_jpg(["IMG_2247"])
-  A --> F20["Middle pool · stone steps up to Calle Eva · unreviewed"]
-  F20 --> PIMG_2248_jpg(["IMG_2248"])
-  F20 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F16["Middle pool · south double iron gate, curved head and tiled planter · disputed"]
+  F16 --> PIMG_2192_jpg(["IMG_2192"])
+  F16 --> PIMG_2334_jpg(["IMG_2334"])
+  F16 --> PIMG_2335_jpg(["IMG_2335"])
+  A --> F17["Middle pool · south-west gateway above the stone steps · unreviewed"]
+  F17 --> PIMG_2332_jpg(["IMG_2332"])
+  F17 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F18["Middle pool · short uncertain curved hedge patio · unreviewed"]
+  F18 --> PIMG_2341_jpg(["IMG_2341"])
+  A --> F19["Middle pool · bounded north raised patio · unreviewed"]
+  F19 --> PIMG_2193_jpg(["IMG_2193"])
+  F19 --> PIMG_2194_jpg(["IMG_2194"])
+  A --> F20["Middle pool · shallow oleander bed beside patio · unreviewed"]
+  F20 --> PIMG_2246_jpg(["IMG_2246"])
+  F20 --> PIMG_2247_jpg(["IMG_2247"])
+  A --> F21["Middle pool · stone steps up to Calle Eva · unreviewed"]
+  F21 --> PIMG_2248_jpg(["IMG_2248"])
+  F21 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Placement evidence
@@ -136,7 +140,8 @@ graph LR
 | `entrance_planters.json:silvia-pool-entry-hedge-kerb` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool.json:middle-pool-east-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool.json:middle-pool-west-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `middle_pool_lane_frontages.json:south-lane-four-column-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_lane_frontages.json:silvia-outdoor-apron` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `middle_pool_lane_frontages.json:south-lane-four-column-paving` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-left-border` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-right-far-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-right-far-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -174,7 +179,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola, middle_pool_north.json:middle-pool-north-white-steps._ |
 | [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. _Used by: middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-white-steps._ |
 | [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, steps:middle-pool-sw-steps._ |
@@ -196,5 +201,5 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg` | ground | planting | Patio beside the middle pool: oleander bed, pollarded tree |
 | `villacana-reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg` | ground | planting | Patio beside the middle pool: oleander bed, two feathery trees |
 | `villacana-reference/web/easyjet-pool-probably-middle.jpg` | ground | planting | A small pool with bird-of-paradise, palm and pollarded tree **Note:** Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish. |
-| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
+| [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |

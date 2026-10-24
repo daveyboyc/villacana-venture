@@ -1,0 +1,134 @@
+{
+  "groundCutEdge": {
+    "name": "silvia-ground-cut-edge",
+    "distance": 0.1500016140557116
+  },
+  "lane": [
+    {
+      "a": 11.8,
+      "name": "south-lane-four-column-paving",
+      "layout": "plain-four-column-exterior"
+    },
+    {
+      "a": 13,
+      "name": "south-lane-four-column-paving",
+      "layout": "plain-four-column-exterior"
+    },
+    {
+      "a": 14.6,
+      "name": "silvia-street-connection",
+      "layout": "plain-four-column-exterior"
+    },
+    {
+      "a": 16,
+      "name": "silvia-street-connection",
+      "layout": "plain-four-column-exterior"
+    }
+  ],
+  "apronUv": [
+    0.0016146797595358268,
+    0.0021583344374428567,
+    0.0004092413194340286
+  ],
+  "surfaces": [
+    {
+      "z": -3,
+      "name": "silvia-street-connection",
+      "y": 0.3644005632499744,
+      "reference": false
+    },
+    {
+      "z": -1,
+      "name": "silvia-street-connection",
+      "y": 0.36440056324997416,
+      "reference": false
+    },
+    {
+      "z": -0.2,
+      "name": "silvia-street-connection",
+      "y": 0.3644005632499741,
+      "reference": false
+    },
+    {
+      "z": 0.2,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 2,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 3,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 4,
+      "name": "T05-pebble-inset",
+      "y": 0.3864005633021544,
+      "reference": false
+    },
+    {
+      "z": 5,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 6,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 7,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 8.6,
+      "name": "silvia-exit-path-fragment",
+      "y": 0.5901493901702848,
+      "reference": false
+    },
+    {
+      "z": 9.5,
+      "name": "silvia-exit-path-fragment",
+      "y": 0.620382973561757,
+      "reference": false
+    },
+    {
+      "z": 10.3,
+      "name": "silvia-exit-path-fragment",
+      "y": 0.6470013537626997,
+      "reference": false
+    }
+  ],
+  "seams": [
+    {
+      "z": 8.425,
+      "uvA": [
+        0.09803920143608066,
+        8.259802039370427
+      ],
+      "uvB": [
+        0.09803919173945673,
+        8.259802120645697
+      ],
+      "delta": 8.185165787105882e-8
+    }
+  ],
+  "material": {
+    "pavingLayout": "offset-square-and-insert",
+    "tileSize": 0.24,
+    "insertSize": 0.06
+  },
+  "pebbleBands": 6,
+  "errors": []
+}

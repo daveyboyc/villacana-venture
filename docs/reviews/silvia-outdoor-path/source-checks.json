@@ -1,0 +1,87 @@
+{
+  "check_map": {
+    "exitCode": 0,
+    "output": "117 objects checked, 0 problems",
+    "stderr": ""
+  },
+  "check_street_layout": {
+    "exitCode": 0,
+    "output": "18 Google/photo-checked street segments, house/player clearances, 25 joins, canonical names, original registry frontages and key-free reference links PASS",
+    "stderr": ""
+  },
+  "check_boundary_reference": {
+    "exitCode": 0,
+    "output": "Both mapped car parks include their matching Cervantes entrances PASS\nCervantes endpoint connectivity: Dal\u00ed centreline and the unnamed Picasso car-park access PASS\nBoundary references: clear street routes, solid fence, 11 positioned/heading/accuracy references, stripped embedded metadata PASS\nPhoto-backed ramp endpoints, shared heights and walkable slope PASS\nStraight, Google-checked Cervantes axis and original registry frontages PASS",
+    "stderr": ""
+  },
+  "check_terrain": {
+    "exitCode": 0,
+    "output": "Terrain: laser-survey grid (attributed), pools level at surveyed decks, photographed flights exact, Dal\u00ed side up, lanes walkable PASS",
+    "stderr": ""
+  },
+  "check_dali_threshold": {
+    "exitCode": 0,
+    "output": "Cervantes photo-linked walls: checked Calle clearances, open approaches, original houses/pools and bounded test scope PASS\nDal\u00ed threshold: distinct photo-linked bays, grass, shared path and crossing; facade/wall clearances and open kerbs PASS",
+    "stderr": ""
+  },
+  "check_cervantes_patio_walls": {
+    "exitCode": 0,
+    "output": "Cervantes photo-linked walls: checked Calle clearances, open approaches, original houses/pools and bounded test scope PASS",
+    "stderr": ""
+  },
+  "check_elena_north": {
+    "exitCode": 0,
+    "output": "Elena north: photo-linked gateway, patio wall and beds keep the lanes clear, gateway open and walkable, houses and pools untouched PASS",
+    "stderr": ""
+  },
+  "check_middle_pool": {
+    "exitCode": 0,
+    "output": "Middle pool: photo-linked east gateway and west planter keep the lanes clear, gateway open and walkable, houses and pools untouched PASS\nMiddle pool southwest: photo-backed open gateway above the steps clears houses, pools and route PASS\nMiddle pool southwest: steps footprint avoids unchanged planter, houses and pools PASS\nMiddle pool north: independently corrected pins, bounded cap/door wall, open pergola and matching stepped ground PASS\nMiddle pool south: separate open double gate, planter, wall bench past the leaf and tiled panel preserve routes and registry PASS\nMiddle pool south forecourt: bounded photo-cited stone avoids registry solids; Details hedge footprint clears Eva/Silvia PASS",
+    "stderr": ""
+  },
+  "check_paseo_wall": {
+    "exitCode": 0,
+    "output": "Paseo wall: 59 points, 134 m, photo-linked; paseo, lanes and gate connector clear; houses and pools untouched; openings kept; heights 0.4-1.3 m, about 1 m by the south lawn and at the east end PASS",
+    "stderr": ""
+  },
+  "check_seafront": {
+    "exitCode": 0,
+    "output": "Seafront: simple polygons, no pool overlaps, clear paseo route, exact registry restaurant footprint PASS\nPaseo retrace: photographed run, coastal access and eastern boardwalk joins preserved PASS\nPaseo clearance: 1676 samples keep 1.5 m from every standing registry house; 2 registry parts on the aerial paseo kept as outlines PASS",
+    "stderr": ""
+  },
+  "check_pool_levels": {
+    "exitCode": 0,
+    "output": "Lower main/children\u2019s pools, unchanged other pools and street centre lines, stair rise and ramp width PASS",
+    "stderr": ""
+  },
+  "check_levels": {
+    "exitCode": 0,
+    "output": "cervantes-elena-ramp         photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-elena-steps        photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-upper-lane         photo 0.00-0.15 m  model 0.09 m  ok\n  dali-cervantes-apron         photo 0.00-0.15 m  model 0.20 m  ok\n  middle-pool-sw-rise          photo 0.45-0.55 m  model 0.53 m  ok\n  middle-pool-nw-rise          photo 0.30-0.55 m  model 0.52 m  ok\n  middle-pool-gates-level      photo 0.00-0.05 m  model 0.03 m  ok\nLevels survey: 22 items, 0 level changes queued, built items match the terrain PASS",
+    "stderr": ""
+  },
+  "check_lowered_lanes": {
+    "exitCode": 0,
+    "output": "Lowered lanes: Guillermo falls 3.0 m at most 20% from just past the level Jorge junction, ground cut along it, kiosk on the lawn; east steps 1.1 m wide from street level onto the deck PASS",
+    "stderr": ""
+  },
+  "check_seafront_fence": {
+    "exitCode": 0,
+    "output": "Seafront fence: corner wall from the sandstone wall's end, 1.4 m arched gateway at the foot of Calle Guillermo, 36 m of railings to the lawn's east edge, all beside the paseo and clear of lanes, houses and pools PASS",
+    "stderr": ""
+  },
+  "check_lane_frontages": {
+    "exitCode": 0,
+    "output": "Lane frontages: bounded beds and four-course paving clear original houses; plant footprints clear streets; rectangular grilles face lane; doorway stays open PASS",
+    "stderr": ""
+  },
+  "check_entrance_planters": {
+    "exitCode": 0,
+    "output": "Silvia/pool entrance planters: asymmetric low fragments, four observed pots, host courtyard, unchanged pool and full route radii PASS (placement provisional)",
+    "stderr": ""
+  },
+  "check_silvia_tunnel": {
+    "exitCode": 0,
+    "output": "Silvia study: entrance separation/headroom, full foliage clearance and explicit estimated frame PASS (not world placement)",
+    "stderr": ""
+  }
+}

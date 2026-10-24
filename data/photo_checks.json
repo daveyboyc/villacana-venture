@@ -281,6 +281,28 @@
    "by": "Codex",
    "result": "not-comparable",
    "notes": "Full source and current actual-main-app render inspected. Rounded planter returns, white coping and recessed soil remain within previous bounds; bench/gate/cabinet transforms retained. The stored reviewed camera/look directions are unchanged, first person with Details; before reuses baseline main9735d00 committed PR115 render byte-for-byte. Pose is uncalibrated, source/world registration unresolved, foliage/tile motifs/procedural facades schematic. No measured-placement or exact photographic match claim; all earlier discrepancies remain open."
+  },
+  {
+   "task": "silvia-outdoor-path",
+   "feature": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/silvia-outdoor-path/IMG_2334-before.png",
+   "render": "docs/reviews/silvia-outdoor-path/IMG_2334-after.png",
+   "checked": "2026-10-24",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Stored reviewed camera/look-at, first-person Details. Exterior plain squares/broad grey mortar are visible beyond the unchanged iron gate; stone/grate forecourt retained. Full source and independent review inspected. No solved pose, measured tile pitch, threshold position, gateway identity or tunnel/gate connection. Schematic wear, facades and planting remain; no exact photographic or placement match. Existing discrepancies and in-progress follow-ups are retained."
+  },
+  {
+   "task": "silvia-outdoor-path",
+   "feature": "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "photo": "IMG_2189.jpg",
+   "before": "docs/reviews/silvia-outdoor-path/outdoor-floor-before.png",
+   "render": "docs/reviews/silvia-outdoor-path/outdoor-floor-after.png",
+   "checked": "2026-10-24",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Illustrative lane camera, not the photo camera: four plain terracotta columns with broad grey mortar and wear are now visible; the former gap to the provisional tunnel approach is covered. Full source and independent review inspected. No solved pose, measured tile pitch, threshold position, gateway identity or tunnel/gate connection. Schematic wear, facades and planting remain; no exact photographic or placement match. Existing discrepancies and in-progress follow-ups are retained."
   }
  ],
  "legacyUnchecked": [
