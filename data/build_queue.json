@@ -1101,6 +1101,40 @@
    "notes": "Bounded entrance-lane details from the prior PR108 draft, source-observed bench planting/cabinet and gate scrolls implemented without translating the gate/bench/planter, pool, registry houses or provisional Silvia transform. Public Esri satellite overlays and full-photo independent review saved in docs/reviews/tunnel-entrance-context/. Satellite/IMG_2192 establish a lawn/approach buffer but conceal ground gate/bench bases; no defensible measured shift. Pool-spacing discrepancy remains open; task in progress, placement unapproved. Main-app before/after and source-camera pairs retained as uncalibrated diagnostics; source/route/build checks do not grant placement approval."
   },
   {
+   "id": "silvia-entrance-planters",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "build",
+   "title": "Build bounded planters at the Silvia tunnel and pool entrance",
+   "photos": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg",
+    "IMG_2192.jpg",
+    "IMG_2334.jpg",
+    "IMG_2335.jpg"
+   ],
+   "features": [
+    "silvia_tunnel.json:silvia-tunnel-study",
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "entrance_planters.json:silvia-exit-right-planter",
+    "entrance_planters.json:silvia-exit-left-planting-fragment",
+    "entrance_planters.json:silvia-pool-entry-hedge-kerb",
+    "entrance_planters.json:silvia-exit-path-fragment"
+   ],
+   "build": "Inspect satellite and full photos, inventory raised bed/kerb fragments immediately beside the covered Silvia entrance and pool entrance, and build the source-visible bounded outlines in map/3D/collision. Keep hidden extents and provisional world registration explicit.",
+   "avoid": "Do not mistake potted shrubs for continuous structural beds, transfer unrelated gate structures or invent a pool ring wall. Preserve registry houses/pool, street axes, doors and mobile controls.",
+   "accept": [
+    "Independent actual-source review and labelled satellite/model overlay",
+    "Bounded observed bed fragments share map, collision and mesh outlines; visible planting footprint clears routes",
+    "Actual scene before/after evidence and source/route/build checks; unresolved placement remains in progress"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Full sources and aerials independently inspected. Build the observed low right garden bed, bounded left greenery with its base unresolved, continuing near path, rounded bench-planter returns within old extents and low opposite pool-hedge kerb. Four actual pots retained; two unsupported illustrative tall garden containers removed. No registry, route, entrance/tunnel placement or level change. Left base may be arch/plinth; no structural bed or collision invented. Placement remains provisional and task in progress."
+  },
+  {
    "id": "photo-camera-alignment",
    "area": "whole-resort",
    "priority": 1,

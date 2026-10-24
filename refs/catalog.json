@@ -308,7 +308,7 @@
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
    "middle_pool_south_gate.json:middle-pool-south-gate",
-   "middle_pool_lane_frontages.json:south-lane-four-column-paving"
+   "entrance_planters.json:silvia-pool-entry-hedge-kerb"
   ],
   "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
  },
@@ -340,7 +340,10 @@
   },
   "citedBy": [
    "silvia_tunnel.json:silvia-tunnel-study",
-   "seaward_paving.json:silvia-patterned-floor"
+   "seaward_paving.json:silvia-patterned-floor",
+   "entrance_planters.json:silvia-exit-right-planter",
+   "entrance_planters.json:silvia-exit-left-planting-fragment",
+   "entrance_planters.json:silvia-exit-path-fragment"
   ],
   "looksAt": [
    -116.1,
@@ -411,7 +414,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "middle_pool_south_gate.json:middle-pool-south-gate"
+   "middle_pool_south_gate.json:middle-pool-south-gate",
+   "entrance_planters.json:silvia-pool-entry-hedge-kerb"
   ],
   "looksAt": [
    -126.6,
@@ -422,7 +426,7 @@
    "street:eva",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
-   "middle_pool_south_gate.json:middle-pool-south-east-hedge"
+   "entrance_planters.json:silvia-pool-entry-hedge-kerb"
   ]
  },
  {
@@ -4449,6 +4453,7 @@
    "middle_pool_south_gate.json:middle-pool-south-gate",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+   "entrance_planters.json:silvia-pool-entry-hedge-kerb",
    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
    "middle_pool_lane_frontages.json:south-lane-left-border",
    "middle_pool_lane_frontages.json:south-lane-right-near-bed",

@@ -106,6 +106,14 @@ def features(s):
     add('middle_pool_south_gate.json:'+court['id'],court['name'],'reference feature','photo-supported paving; bounded estimated outline, unapproved placement',evidence=court['evidence'],ring=[south_at(a,c),south_at(b,c),south_at(b,d),south_at(a,d)])
     hedge=south['hedge']
     add('middle_pool_south_gate.json:'+hedge['id'],hedge['name'],'reference feature','photo-supported east hedge; estimated fragment with unresolved continuation',evidence=hedge['evidence'],points=[south_at(a,hedge['across']) for a in hedge['along']])
+    entrance=json.loads((ROOT/'data/entrance_planters.json').read_text())
+    def entrance_point(frame,p):
+        x,z=p
+        if frame=='pool':return south_at(z,x)
+        f=placement['forward'];a=placement['entry']
+        return [round(a[0]+f[1]*x+f[0]*z,6),round(a[1]-f[0]*x+f[1]*z,6)]
+    for fragment in [*entrance['beds'],entrance['path']]:
+        add('entrance_planters.json:'+fragment['id'],fragment['name'],'reference feature','bounded source-observed fragment; hidden back/ends and world placement estimated',evidence=fragment['evidence'],ring=[entrance_point(fragment['frame'],p) for p in fragment['ring']])
     frontages=json.loads((ROOT/'data/middle_pool_lane_frontages.json').read_text())
     paving=frontages['paving'];sections=paving['sections']
     add('middle_pool_lane_frontages.json:'+paving['id'],paving['name'],'reference feature','four observed tile columns; bounded model surface and row pitch estimated',evidence=paving['evidence'],ring=[south_at(a,left) for a,left,right in sections]+[south_at(a,right) for a,left,right in reversed(sections)])

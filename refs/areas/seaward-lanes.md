@@ -12,12 +12,13 @@ The lanes between the middle pool and the beach.
 - Owner correction to the Silvia tunnel study: the two inner recessed entrance doors are plain single brown wooden leaves with round gold knobs. This clarifies hidden door styling, while recess depth and world placement remain estimates.
 - Owner clarification applies to all tunnel entrance doors, including the nearer bays: use normal-width single brown leaves with one round gold knob each. Earlier paired-door readings remain source history, superseded for the model. Recess footprints and world-registration uncertainty are unchanged.
 - 23 October main-map integration draft reuses the corrected Silvia model at an approximate west-side registry-topology candidate: canopy 6264401UF1366S_part2, lower corridor through part3 to its courtyard, preserving upper floor/roof. Map and Walk/collision share one transform. Photo heading conflicts and opposite-side host remain unresolved; no measured placement approval. See docs/reviews/silvia-main-integration/.
+- 24 October planter correction: a bounded low right garden bed, left greenery with its base unresolved, and continuing near path beyond the Silvia exit arch replace two unsupported illustrative tall garden pots; four observed near/threshold pots remain. At the pool entrance the existing bench beds gain rounded returns/white rims/soil inside their original bounds, and a short LOW grey-beige kerb follows the existing opposite hedge fragment. Satellite context/full photos independently rechecked; no measured extent, complete garden perimeter, route/gate/pool relocation or placement approval is inferred. See docs/reviews/silvia-entrance-planters/.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/REFERENCE_PACK_WORKFLOW.md`
-- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`, `data/silvia_map.json`
-- src: `src/seaward-paving.ts`, `src/silvia-map.ts`, `src/silvia-tunnel.ts`
+- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`, `data/silvia_map.json`, `data/entrance_planters.json`
+- src: `src/seaward-paving.ts`, `src/silvia-map.ts`, `src/silvia-tunnel.ts`, `src/entrance-planters.ts`
 - contact sheet: `villacana-reference/contact-sheets/seaward-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -33,6 +34,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P1 | `silvia-all-single-doors` | Make every tunnel entrance a single door with a round gold knob (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-covered-passage-reference-audit` | Resolve the Silvia tunnel entrance, its components and connection to the lane (after entrance-photo-reference-pack) | open · placement: not-applicable |  |
+| P1 | `silvia-entrance-planters` | Build bounded planters at the Silvia tunnel and pool entrance | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg), [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 | P1 | `silvia-main-map` | Connect the Silvia tunnel study to the main map and Walk scene (after silvia-all-single-doors) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-simple-doors` | Simplify the recessed entrance doors and add round gold knobs (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-tunnel-details` | Build the Silvia tunnel with recessed brown entrance doors and photo details (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg) |
@@ -44,26 +46,32 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo"]
-  A --> F0["Entrance lane · four-column terracotta paving · unreviewed"]
-  F0 --> PIMG_2189_jpg(["IMG_2189"])
-  F0 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F1["Entrance lane · bounded farther shuttered grille · unreviewed"]
-  F1 --> PIMG_2189_jpg(["IMG_2189"])
-  F1 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F2["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
-  F2 --> PIMG_2189_jpg(["IMG_2189"])
-  F2 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F3["seaward patterned floor · unreviewed"]
-  F3 --> PIMG_2185_jpg(["IMG_2185"])
-  A --> F4["silvia patterned floor · unreviewed"]
-  F4 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F5["teodoro octagonal paving · unreviewed"]
-  F5 --> PIMG_2235_jpg(["IMG_2235"])
-  F5 --> PIMG_2237_jpg(["IMG_2237"])
-  F5 --> PIMG_2239_jpg(["IMG_2239"])
-  A --> F6["Calle Silvia 1–15 covered entrance — photo-relative study · disputed"]
-  F6 --> PIMG_2190_jpg(["IMG_2190"])
-  F6 --> PIMG_2191_jpg(["IMG_2191"])
+  A --> F0["Silvia garden arch · bounded left greenery, base unresolved · unreviewed"]
+  F0 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F1["Silvia garden arch · bounded continuing terracotta path · unreviewed"]
+  F1 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F2["Silvia garden arch · low angled right planter fragment · unreviewed"]
+  F2 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F3["Entrance lane · four-column terracotta paving · unreviewed"]
+  F3 --> PIMG_2189_jpg(["IMG_2189"])
+  F3 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F4["Entrance lane · bounded farther shuttered grille · unreviewed"]
+  F4 --> PIMG_2189_jpg(["IMG_2189"])
+  F4 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F5["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
+  F5 --> PIMG_2189_jpg(["IMG_2189"])
+  F5 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F6["seaward patterned floor · unreviewed"]
+  F6 --> PIMG_2185_jpg(["IMG_2185"])
+  A --> F7["silvia patterned floor · unreviewed"]
+  F7 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F8["teodoro octagonal paving · unreviewed"]
+  F8 --> PIMG_2235_jpg(["IMG_2235"])
+  F8 --> PIMG_2237_jpg(["IMG_2237"])
+  F8 --> PIMG_2239_jpg(["IMG_2239"])
+  A --> F9["Calle Silvia 1–15 covered entrance — photo-relative study · disputed"]
+  F9 --> PIMG_2190_jpg(["IMG_2190"])
+  F9 --> PIMG_2191_jpg(["IMG_2191"])
 ```
 
 ## Placement evidence
@@ -72,6 +80,9 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `entrance_planters.json:silvia-exit-left-planting-fragment` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `entrance_planters.json:silvia-exit-path-fragment` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `entrance_planters.json:silvia-exit-right-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-four-column-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-right-far-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-right-near-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -80,14 +91,23 @@ graph LR
 | `seaward_paving.json:teodoro-octagonal-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `silvia_tunnel.json:silvia-tunnel-study` | disputed | unchecked | open discrepancy silvia-study-world-registration; open discrepancy silvia-main-map-west-candidate |
 
+## Photo checks
+
+Renders from each photo's camera compared with the photo (`data/photo_checks.json`).
+
+| Task | Photo | Result | Render | Notes |
+| --- | --- | --- | --- | --- |
+| `silvia-entrance-planters` | [IMG_2334](../../public/photos-ref/IMG_2334.jpg) | **not-comparable** | [after](../../docs/reviews/silvia-entrance-planters/IMG_2334-after.png) · [before](../../docs/reviews/silvia-entrance-planters/IMG_2334-before.png) | Full source and current actual-main-app render inspected. Rounded planter returns, white coping and recessed soil remain within previous bounds; bench/gate/cabinet transforms retained. The stored reviewed camera/look directions are unchanged, first person with Details; before reuses baseline main9735d00 committed PR115 render byte-for-byte. Pose is uncalibrated, source/world registration unresolved, foliage/tile motifs/procedural facades schematic. No measured-placement or exact photographic match claim; all earlier discrepancies remain open. |
+| `silvia-entrance-planters` | [IMG_2335](../../public/photos-ref/IMG_2335.jpg) | **not-comparable** | [after](../../docs/reviews/silvia-entrance-planters/IMG_2335-after.png) · [before](../../docs/reviews/silvia-entrance-planters/IMG_2335-before.png) | Full source and current actual-main-app render inspected. Rounded planter returns, white coping and recessed soil remain within previous bounds; bench/gate/cabinet transforms retained. The stored reviewed camera/look directions are unchanged, first person with Details; before reuses baseline main9735d00 committed PR115 render byte-for-byte. Pose is uncalibrated, source/world registration unresolved, foliage/tile motifs/procedural facades schematic. No measured-placement or exact photographic match claim; all earlier discrepancies remain open. |
+
 **Built without complete newer photo-check records:** `seaward-lanes-paving`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2190.jpg](../../public/photos-ref/IMG_2190.jpg) | ground | layout, materials | Covered arched passage with potted plants, patterned tiles _Used by: silvia_tunnel.json:silvia-tunnel-study, seaward_paving.json:silvia-patterned-floor, entrance_planters.json:silvia-exit-right-planter, entrance_planters.json:silvia-exit-left-planting-fragment, entrance_planters.json:silvia-exit-path-fragment._ |
 | [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
-| [IMG_2190.jpg](../../public/photos-ref/IMG_2190.jpg) | ground | layout, materials | Covered arched passage with potted plants, patterned tiles _Used by: silvia_tunnel.json:silvia-tunnel-study, seaward_paving.json:silvia-patterned-floor._ |
 | [IMG_2185.jpg](../../public/photos-ref/IMG_2185.jpg) | ground | layout, materials | Covered arched passage, patterned terracotta tiles, sea at the far end _Used by: seaward_paving.json:seaward-patterned-floor._ |
 | [IMG_2235.jpg](../../public/photos-ref/IMG_2235.jpg) | ground | materials, layout | Lane paved in octagonal tiles between a white wall and lawn **Note:** Octagonal paving here, not square tiles. _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
@@ -109,7 +129,7 @@ graph LR
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
-| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
+| [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |

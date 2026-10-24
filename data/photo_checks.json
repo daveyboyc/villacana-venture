@@ -259,6 +259,28 @@
    "by": "Codex",
    "result": "not-comparable",
    "notes": "Full source inspected with independent source review. Actual main-app before/after pair uses the same stored reviewed camera/looksAt, first person and Details. Added finite bench planting, middle-band gate scrolls and lane borders/square grilles/four-column paving; original gate/bench/pool/tunnel transforms retained. Camera pose is not calibrated; schematic vegetation, tile artwork and surrounding procedural facades still differ. Hidden ground anchors and uncertain source/world registration prevent a measured placement or photographic match. Existing discrepancies and the new pool-spacing report remain open."
+  },
+  {
+   "task": "silvia-entrance-planters",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "photo": "IMG_2334.jpg",
+   "before": "docs/reviews/silvia-entrance-planters/IMG_2334-before.png",
+   "render": "docs/reviews/silvia-entrance-planters/IMG_2334-after.png",
+   "checked": "2026-10-24",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full source and current actual-main-app render inspected. Rounded planter returns, white coping and recessed soil remain within previous bounds; bench/gate/cabinet transforms retained. The stored reviewed camera/look directions are unchanged, first person with Details; before reuses baseline main9735d00 committed PR115 render byte-for-byte. Pose is uncalibrated, source/world registration unresolved, foliage/tile motifs/procedural facades schematic. No measured-placement or exact photographic match claim; all earlier discrepancies remain open."
+  },
+  {
+   "task": "silvia-entrance-planters",
+   "feature": "middle_pool_south_gate.json:middle-pool-south-gate",
+   "photo": "IMG_2335.jpg",
+   "before": "docs/reviews/silvia-entrance-planters/IMG_2335-before.png",
+   "render": "docs/reviews/silvia-entrance-planters/IMG_2335-after.png",
+   "checked": "2026-10-24",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full source and current actual-main-app render inspected. Rounded planter returns, white coping and recessed soil remain within previous bounds; bench/gate/cabinet transforms retained. The stored reviewed camera/look directions are unchanged, first person with Details; before reuses baseline main9735d00 committed PR115 render byte-for-byte. Pose is uncalibrated, source/world registration unresolved, foliage/tile motifs/procedural facades schematic. No measured-placement or exact photographic match claim; all earlier discrepancies remain open."
   }
  ],
  "legacyUnchecked": [

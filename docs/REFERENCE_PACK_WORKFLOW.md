@@ -2,7 +2,7 @@
 
 A reference pack turns a scene into numbered observations that a person or agent
 can check systematically. The [entrance pilot](../public/reference-packs/entrance/index.html)
-has six source sheets, 43 components, a relationship plan, form elevations,
+has six source sheets, 46 components, a relationship plan, form elevations,
 a feature CSV/JSON and a [map-wide rollout queue](reference-packs/rollout.md).
 The [source review](reference-packs/independent-source-review.md) records the
 independent inspection and remaining limits.
@@ -121,3 +121,9 @@ The latest owner clarification supersedes the initial paired-door reading for
 the 3D study: all four entrances use normal-width single leaves and round gold
 knobs. Source interpretation history remains in the records; no global placement
 approval is inferred.
+
+24 October source reinspection adds T15/T16 for the unequal low garden-edge fragments
+beyond the Silvia arch and A14 for the low opposite pool-hedge kerb. These are
+source observations with locators, not new approvals of the historical PR108
+model snapshot. See docs/reviews/silvia-entrance-planters/ for current scoped
+implementation, actual-app renders, satellite overlay and independent review.
