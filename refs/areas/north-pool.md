@@ -14,6 +14,7 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 - Issue #36 (2026-10-17): lower northern plinth band, three independent shallow white-nosed openings and visible northwest/north crazy-paving path built separately from #54. The 0.325 m floor is a conservative visible band; rear and side floor limits and hidden patio divisions are untraced estimates, not surveyed property boundaries. Houses, pool and lawn keep their datum.
 - Issue #95: the circled gap between the west row and standalone house has three separately observed upper balcony canopies, traced from the georeferenced aerial and Apple02/08/09. These structural roofs were missing in Layout; generic optional porches are not a replacement. Roof edges and elevations remain estimated, hidden ground boundaries untraced. The IMG_2206 brown doors are poolward of the marked gap. Current north/whole renders retain turf and deck; the supplied screenshot surface absence remains unreproduced.
 - Alignment audit 2026-10-18 (docs/reviews/north-pool-alignment-audit): Google screenshot globally registered to fixed Esri frame; held-out relative residuals about 1.5-2.1 m, sampled roof/registry differences about 0.6-1.5 m do not establish ground-wall shifts. No runtime geometry changed. IMG_2202/2361 are the separate private36/34 entry, not IMG_2363 lawn gateway. Missing newer photo-check records do not erase earlier manual reviews. Concealed boundaries, complete pool/ground perimeter and access widths remain unresolved in north-pool-unresolved-plan.
+- Photo camera alignment 2026-10-24 (docs/reviews/photo-camera-alignment): IMG_2204-2206 solved as one upper-floor station about 5 m from their pins, 8.5 m above pool level, 28 mm lens. Pool water edge agrees with the aerial trace to about 0.1 m; a held-out facade step to 0.24 m. Four held-out parapet corners stand 1.0-1.2 m above the model tops (north-pool-roof-heights). By eye, IMG_2205 shows the east-side block set further back than the model and lawn where the model has a tiled route; not yet measured.
 
 ## Read first
 
@@ -41,6 +42,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open · placement: not-applicable | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2363](../../public/photos-ref/IMG_2363.jpg) |
+| P2 | `north-pool-roof-heights` | North pool: raise the two-storey courtyard roofs to the measured parapet height (after photo-camera-alignment) | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
 
 ## Built from these photos
 

@@ -133,9 +133,9 @@ have been compared with the rendered model.
    (matches, differs with an open follow-up task, or not-comparable) and becomes a
    `checked-against` edge in `refs/graph.json`. A done task must have one for every
    photo it builds from; tasks done before 18 October are the verification backlog
-   in `refs/QUEUE.md`. There is still no calibrated pixel comparison or
-   photogrammetry: the comparison is by eye, against measured distances read from
-   the photo.
+   in `refs/QUEUE.md`. These comparisons are by eye, against measured distances
+   read from the photo. For a calibrated one, solve the photo's camera from matched
+   points and render through it (`docs/PHOTO_ALIGNMENT.md`, `shoot_views.cjs --pose`).
    These results now live under `photoVerification`, separate from strict placement
    `verification`. Follow `docs/PLACEMENT_VERIFICATION.md` for measured controls,
    held-out validation, fresh source/model/artifact snapshots and independent

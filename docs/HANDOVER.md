@@ -66,7 +66,9 @@ measured placement gate and never grants placement approval.
    before you change anything:
    `node scripts/shoot_views.cjs IMG_xxxx --pool=<pool> --task=<task-id> --as=before`
    (also saved to `docs/reviews/<task-id>/`; `--high` looks down from above for
-   roof shots). Note how it differs from the photo.
+   roof shots). Note how it differs from the photo. For a render that lines up with
+   the photo pixel for pixel, solve its camera first and add `--pose`
+   (`docs/PHOTO_ALIGNMENT.md`); held-out points then measure the model in metres.
 5. Measure the photo, not just the scene: with a known width (a gate opening,
    0.2 m tiles, a 1.2 m lane) and the horizon, read how far along the path each
    part sits and in what order (gate, planter, bench...). Write those distances into
