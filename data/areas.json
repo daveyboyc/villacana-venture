@@ -427,7 +427,8 @@
     "src/seaward-paving.ts",
     "src/silvia-map.ts",
     "src/silvia-tunnel.ts",
-    "src/entrance-planters.ts"
+    "src/entrance-planters.ts",
+    "src/silvia-paving.ts"
    ],
    "notes": [
     "IMG_2235/2237/2239 support octagonal terracotta with diamond infills on the photographed Teodoro Rojo run; IMG_2240 remains square. IMG_2185/2190 support cream/blue corner inserts in covered-floor tiles. Material masks use existing ground/registry strips; tile dimensions and passage extents remain estimates, and solid registry strips may still obscure the floor until separately traced as passages. No levels or geometry were changed.",
@@ -436,7 +437,8 @@
     "Owner correction to the Silvia tunnel study: the two inner recessed entrance doors are plain single brown wooden leaves with round gold knobs. This clarifies hidden door styling, while recess depth and world placement remain estimates.",
     "Owner clarification applies to all tunnel entrance doors, including the nearer bays: use normal-width single brown leaves with one round gold knob each. Earlier paired-door readings remain source history, superseded for the model. Recess footprints and world-registration uncertainty are unchanged.",
     "23 October main-map integration draft reuses the corrected Silvia model at an approximate west-side registry-topology candidate: canopy 6264401UF1366S_part2, lower corridor through part3 to its courtyard, preserving upper floor/roof. Map and Walk/collision share one transform. Photo heading conflicts and opposite-side host remain unresolved; no measured placement approval. See docs/reviews/silvia-main-integration/.",
-    "24 October planter correction: a bounded low right garden bed, left greenery with its base unresolved, and continuing near path beyond the Silvia exit arch replace two unsupported illustrative tall garden pots; four observed near/threshold pots remain. At the pool entrance the existing bench beds gain rounded returns/white rims/soil inside their original bounds, and a short LOW grey-beige kerb follows the existing opposite hedge fragment. Satellite context/full photos independently rechecked; no measured extent, complete garden perimeter, route/gate/pool relocation or placement approval is inferred. See docs/reviews/silvia-entrance-planters/."
+    "24 October planter correction: a bounded low right garden bed, left greenery with its base unresolved, and continuing near path beyond the Silvia exit arch replace two unsupported illustrative tall garden pots; four observed near/threshold pots remain. At the pool entrance the existing bench beds gain rounded returns/white rims/soil inside their original bounds, and a short LOW grey-beige kerb follows the existing opposite hedge fragment. Satellite context/full photos independently rechecked; no measured extent, complete garden perimeter, route/gate/pool relocation or placement approval is inferred. See docs/reviews/silvia-entrance-planters/.",
+    "24 October Silvia paving correction: full2190/2191 floor reinspection identifies square terracotta units offset around small blue/cream squares, creating diagonal insert runs. Earlier clipped-corner description was imprecise. Current surface uses coherent metric UVs, varied aged tiles/grout/motifs and wall pebble bands; precise pitches/angle remain estimates. Existing floor extents, topology, level, collision and tunnel/bed positions retained. See docs/reviews/silvia-paving/."
    ]
   },
   {

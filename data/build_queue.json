@@ -1175,6 +1175,32 @@
    "status": "open"
   },
   {
+   "id": "silvia-paving",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "build",
+   "title": "Correct Silvia diagonal terracotta paving and continuous ground appearance",
+   "photos": [
+    "IMG_2190.jpg",
+    "IMG_2191.jpg"
+   ],
+   "features": [
+    "silvia_tunnel.json:silvia-tunnel-study",
+    "entrance_planters.json:silvia-exit-path-fragment"
+   ],
+   "build": "Reinspect full source floors and actual main scene, correct diagonal tile orientation, weathered terracotta/grout/inserts and visible continuous paving using one metric UV frame. Inspect wall-side pebble bands and preserve the central pebble rectangle.",
+   "avoid": "No footprint, tunnel/gate/bed transform, street layout, collision, level, door or mobile-input changes. Do not transfer four-column exterior lane grid or diagonalize unrelated streets.",
+   "accept": [
+    "Full-source independent review of tile angle/material and corrected actual-app views",
+    "Coherent surface scale/orientation/phase across tunnel and its bounded extensions",
+    "Source/build/browser checks; hidden extents and placement still provisional"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "dependsOn": [],
+   "notes": "Full2190/2191 reinspection and independent final renders correct earlier clipped-corner reading: offset large square tiles and small decorated squares create diagonal insert runs, not a uniform octagon grid or whole-field45degree rotation. Coherent metric UVs across slab/apron/garden, varied worn tiles/inserts, granular inset and finite wall pebble bands. Original geometry extents, transforms, collision, levels, doors/pots/planters and street grid retained. Material pitches/motifs/angle remain estimates; placement remains unapproved and task in progress. See docs/reviews/silvia-paving/."
+  },
+  {
    "id": "terrain-from-lidar",
    "area": "whole-resort",
    "priority": 1,
