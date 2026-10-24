@@ -139,9 +139,15 @@ function mesh(positions: number[], material: THREE.Material, name: string): THRE
   m.name = name; m.userData.noDrape = true; m.castShadow = m.receiveShadow = true;
   return m;
 }
+/** The stations split no more than half a unit apart, so a surface lifted per vertex follows the ground. */
+const dense = (stations: number[]): number[] => stations.flatMap((b, i) => {
+  if (!i) return [b];
+  const a = stations[i - 1], n = Math.max(1, Math.ceil(Math.abs(b - a) / 0.5));
+  return Array.from({ length: n }, (_, k) => a + (b - a) * (k + 1) / n);
+});
 /** Top surface over a (u,v) grid, plus optional vertical faces down to the datum along its edges. */
-function sheet(point: (u: number, v: number) => Vec2, us: number[], vs: number[], height: (u: number, v: number) => number, datum: number): number[] {
-  const out: number[] = [];
+function sheet(point: (u: number, v: number) => Vec2, stationsU: number[], stationsV: number[], height: (u: number, v: number) => number, datum: number): number[] {
+  const out: number[] = [], us = dense(stationsU), vs = dense(stationsV);
   for (let i = 1; i < us.length; i++) for (let j = 1; j < vs.length; j++) {
     const v = (a: number, b: number) => lift(point(a, b), datum, height(a, b));
     quad(out, v(us[i - 1], vs[j - 1]), v(us[i - 1], vs[j]), v(us[i], vs[j]), v(us[i], vs[j - 1]));
@@ -149,8 +155,12 @@ function sheet(point: (u: number, v: number) => Vec2, us: number[], vs: number[]
   return out;
 }
 function face(a: Vec2, b: Vec2, datum: number, ha: number, hb: number): number[] {
-  const out: number[] = [];
-  quad(out, lift(a, datum, -0.01), lift(a, datum, ha), lift(b, datum, hb), lift(b, datum, -0.01));
+  const out: number[] = [], n = Math.max(1, Math.ceil(Math.hypot(b[0] - a[0], b[1] - a[1]) / 0.5));
+  const at = (t: number): Vec2 => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t], h = (t: number) => ha + (hb - ha) * t;
+  for (let k = 0; k < n; k++) {
+    const t0 = k / n, t1 = (k + 1) / n;
+    quad(out, lift(at(t0), datum, -0.01), lift(at(t0), datum, h(t0)), lift(at(t1), datum, h(t1)), lift(at(t1), datum, -0.01));
+  }
   return out;
 }
 

@@ -3,50 +3,43 @@ import data from "../data/terrain.json";
 import { centroid, clamp, closestOnSegment, pointInRing } from "./geom";
 import type { Vec2 } from "./types";
 
-const west = data.west;
+type Ramp = { foot: number[]; toward: number[]; start: number; run: number; halfWidth: number; base: number; rise: number };
+type Grid = { x0: number; z0: number; step: number; nx: number; nz: number; fade: number[]; ramps: Ramp[]; cm: number[][] };
+const grid = data as unknown as Grid;
 const COS = Math.cos(26 * Math.PI / 180), SIN = Math.sin(26 * Math.PI / 180);
+const ramps = grid.ramps.map((r) => {
+  const dx = r.toward[0] - r.foot[0], dz = r.toward[1] - r.foot[1], length = Math.hypot(dx, dz);
+  return { ...r, up: [dx / length, dz / length] };
+});
+/** How far a photographed flight's own profile reaches before giving way to the survey grid. */
+const RAMP_BLEND = 3;
+
+/** The surveyed ground, sampled bilinearly. */
+function surveyed(x: number, z: number): number {
+  const u = clamp((x - grid.x0) / grid.step, 0, grid.nx - 1.001), v = clamp((z - grid.z0) / grid.step, 0, grid.nz - 1.001);
+  const i = Math.floor(u), j = Math.floor(v), fu = u - i, fv = v - j, row = grid.cm[j], next = grid.cm[j + 1];
+  const top = row[i] + (row[i + 1] - row[i]) * fu, bottom = next[i] + (next[i + 1] - next[i]) * fu;
+  return (top + (bottom - top) * fv) / 100;
+}
 
 /**
- * Height of the ground above the middle-pool level. The Dalí side stands
- * `rise` higher; the ground climbs to it over `run` metres west of the `foot` line.
+ * Height of the ground above the middle-pool deck, from the laser survey (data/terrain.json,
+ * written by scripts/lidar_check.py grid). Each photographed flight of steps keeps an exact
+ * rise: level ground, a straight climb from its first riser (or its foot), level ground above. Seaward of the fade
+ * line the seafront heights take over.
  */
 export function siteY(x: number, z: number): number {
-  const tx = x * COS - z * SIN, tz = x * SIN + z * COS, foot = west.foot;
-  let edge = foot[foot.length - 1][0];
-  if (tz <= foot[0][1]) edge = foot[0][0];
-  else for (let i = 1; i < foot.length; i++) if (tz <= foot[i][1]) { edge = foot[i - 1][0] + (foot[i][0] - foot[i - 1][0]) * (tz - foot[i - 1][1]) / (foot[i][1] - foot[i - 1][1]); break; }
-  // Level again by the time the land reaches the paseo.
-  const seaward = 1 - clamp((tz - west.fade[0]) / (west.fade[1] - west.fade[0]), 0, 1);
-  return west.rise * clamp((edge - tx) / runAt(tz), 0, 1) * seaward;
-}
-
-/** The slope's length: 7 m along most of the foot line, shorter where a photographed ramp is steeper. */
-export function runAt(tz: number): number {
-  let run = west.run;
-  for (const local of west.localRuns ?? []) {
-    const [a, b] = local.tz, inside = tz < a ? (tz - (a - local.blend)) / local.blend : tz > b ? ((b + local.blend) - tz) / local.blend : 1;
-    // Blend back to the usual run either side, so the ground has no seam.
-    if (inside > 0) run = Math.min(run, west.run + (local.run - west.run) * clamp(inside, 0, 1));
+  const tz = x * SIN + z * COS;
+  const seaward = 1 - clamp((tz - grid.fade[0]) / (grid.fade[1] - grid.fade[0]), 0, 1);
+  if (!seaward) return 0;
+  let y = surveyed(x, z);
+  for (const r of ramps) {
+    const dx = x - r.foot[0], dz = z - r.foot[1], along = dx * r.up[0] + dz * r.up[1], across = Math.abs(dz * r.up[0] - dx * r.up[1]);
+    const beyond = Math.max(-1 - along, along - (r.run + 1.5), 0), aside = Math.max(across - r.halfWidth, 0);
+    const weight = (1 - clamp(beyond / RAMP_BLEND, 0, 1)) * (1 - clamp(aside / RAMP_BLEND, 0, 1));
+    if (weight > 0) y += (r.base + r.rise * clamp((along - r.start) / (r.run - r.start), 0, 1) - y) * weight;
   }
-  return run;
-}
-
-/** The raised part of the ground, laid over the flat sheet with the same painted texture. */
-export function addRaisedGround(scene: THREE.Scene, material: THREE.Material, centre: { x: number; z: number }, span: number): void {
-  const cell = 1, n = Math.ceil(span * 2 / cell), x0 = centre.x - span, z0 = centre.z - span;
-  const positions: number[] = [], uvs: number[] = [];
-  for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
-    const corners = [[i, j], [i, j + 1], [i + 1, j], [i + 1, j], [i, j + 1], [i + 1, j + 1]].map(([a, b]) => { const x = x0 + a * cell, z = z0 + b * cell; return [x, siteY(x, z), z]; });
-    if (!corners.some((c) => c[1] > 0)) continue;
-    for (const [x, y, z] of corners) { positions.push(x, y + 0.004, z); uvs.push((x - x0) / (span * 2), 1 - (z - z0) / (span * 2)); }
-  }
-  const geometry = new THREE.BufferGeometry();
-  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
-  geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
-  geometry.computeVertexNormals();
-  const mesh = new THREE.Mesh(geometry, material);
-  mesh.receiveShadow = true; mesh.userData.noDrape = true; mesh.userData.referenceSurface = true;
-  scene.add(mesh);
+  return y * seaward;
 }
 
 /** Split triangles that cross a change of height, so a draped surface follows the ground. */
@@ -60,8 +53,10 @@ export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: 
   const emit = (a: P, b: P, c: P, depth: number) => {
     const ab = mid(a, b), bc = mid(b, c), ca = mid(c, a);
     const hs = [a.h, b.h, c.h, ab.h, bc.h, ca.h], uneven = Math.max(...hs) - Math.min(...hs) > 0.01;
+    // How far the ground at each edge's middle bends away from the straight edge.
+    const bend = Math.max(Math.abs(ab.h - (a.h + b.h) / 2), Math.abs(bc.h - (b.h + c.h) / 2), Math.abs(ca.h - (c.h + a.h) / 2));
     const longest = Math.max(Math.hypot(a.p[0] - b.p[0], a.p[2] - b.p[2]), Math.hypot(b.p[0] - c.p[0], b.p[2] - c.p[2]), Math.hypot(c.p[0] - a.p[0], c.p[2] - a.p[2]));
-    if (depth && uneven && longest > 1.5) { emit(a, ab, ca, depth - 1); emit(ab, b, bc, depth - 1); emit(ca, bc, c, depth - 1); emit(ab, bc, ca, depth - 1); return; }
+    if (depth && longest > 1.5 && (bend > 0.02 || uneven && longest > 6)) { emit(a, ab, ca, depth - 1); emit(ab, b, bc, depth - 1); emit(ca, bc, c, depth - 1); emit(ab, bc, ca, depth - 1); return; }
     for (const q of [a, b, c]) { if (q.h) lifted = true; outP.push(q.p[0], q.p[1] + q.h, q.p[2]); outU.push(...q.u); }
   };
   const groups:{start:number;count:number;materialIndex:number}[]=[];
@@ -72,7 +67,7 @@ export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: 
     const source=flat.groups.find(g=>i>=g.start&&i<g.start+g.count);
     if(source){const count=outP.length/3-start,last=groups[groups.length-1];if(last&&last.materialIndex===source.materialIndex&&last.start+last.count===start)last.count+=count;else groups.push({start,count,materialIndex:source.materialIndex??0});}
   }
-  // Nothing here stands on raised ground: leave it exactly as it was.
+  // Nothing here stands off the deck level: leave it exactly as it was.
   if (!lifted) return geometry;
   const result = new THREE.BufferGeometry();
   result.setAttribute("position", new THREE.Float32BufferAttribute(outP, 3));

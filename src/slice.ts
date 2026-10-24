@@ -2,7 +2,7 @@ import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-f
 import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
 import {setSilviaPavingUvs} from "./silvia-paving";
-import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
+import {SILVIA_HOST,SILVIA_CANOPY,silviaFloor,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
@@ -40,7 +40,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
-import { addRaisedGround, drapeScene, siteY } from "./terrain";
+import { drapeScene, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
@@ -70,6 +70,8 @@ const WALL = "#ffffff";
 const ROOF_GREY = "#d9d5cc";
 const ROOF_TERRACE = "#c98f6e";
 const SHUTTER = "#7a4a2a";
+/** Where the Silvia tunnel and its host building take their level: the middle of the tunnel floor. */
+const SILVIA_DATUM = centroid(silviaFloor);
 /** Clear height under a covered walk-through. */
 const PASSAGE_HEADROOM = 2.6;
 
@@ -165,9 +167,9 @@ async function boot(): Promise<void> {
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const host=buildings.find(b=>b.id===SILVIA_HOST);
-  const hostCentre=host?centroid(host.ring):{x:-121.79,z:118.12};
-  // Same level datum as the surrounding host; the model is deliberately not terrain-draped.
-  const silviaY=liveGroundY(hostCentre.x,hostCentre.z);
+  // Same level datum as the surrounding host, both taken on the lane through the tunnel so the
+  // floor meets Calle Silvia at either end on sloping ground; the model is not terrain-draped.
+  const silviaY=liveGroundY(SILVIA_DATUM.x,SILVIA_DATUM.z);
   if(host){
     const tunnel=createSilviaTunnel(!layoutOnly,(x,z,r)=>{const p=silviaWorld(x,z);return canPlaceDecoration(p[0],p[1],r);});tunnel.rotation.y=silviaRotation;
     const [x,z]=silviaWorld(0,0);tunnel.position.set(x,silviaY,z);scene.add(tunnel);
@@ -664,10 +666,9 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   gardenGeometry.setAttribute("uv",new THREE.Float32BufferAttribute(gardenUv,2));
   const gardenGround=new THREE.Mesh(gardenGeometry,material);gardenGround.receiveShadow=true;gardenGround.userData.referenceSurface=true;scene.add(gardenGround);
   }
+  // The sheet follows the surveyed ground: drapeScene bends it over siteY like the roads.
   const ground = new THREE.Mesh(geometry, material);
   ground.receiveShadow = true;
-  ground.userData.noDrape = true;
-  addRaisedGround(scene, ground.material, centre, span);
   ground.userData.referenceSurface=true;
   scene.add(ground);
 
@@ -750,16 +751,17 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     // A building out on the sand stands at the beach's height.
     else if(seaside?.inZone(c.x,c.z)) mesh.position.y=seaside.y(c.x,c.z);
     mesh.castShadow = mesh.receiveShadow = true;
-    // A house keeps one floor level: the ground height at its middle.
-    mesh.userData.base = [c.x, c.z];
+    // A house keeps one floor level: the ground height at its middle (the tunnel's host, on its lane).
+    const base:Vec2 = b.id===SILVIA_HOST ? [SILVIA_DATUM.x,SILVIA_DATUM.z] : [c.x, c.z];
+    mesh.userData.base = base;
     mesh.name=`building:${b.id}`;mesh.userData.structural=true;
     scene.add(mesh);
     if(b.id===SILVIA_HOST){for(const part of silviaGroundParts(b)){
       const lowerGeo=new THREE.ExtrudeGeometry(shapeOf(part.ring,part.holes),{depth:3.35,bevelEnabled:false});lowerGeo.rotateX(-Math.PI/2);
-      const lower=new THREE.Mesh(lowerGeo,[cap,wall]);lower.castShadow=lower.receiveShadow=true;lower.userData.base=[c.x,c.z];lower.userData.structural=true;lower.name='silvia-host-ground';scene.add(lower);
+      const lower=new THREE.Mesh(lowerGeo,[cap,wall]);lower.castShadow=lower.receiveShadow=true;lower.userData.base=base;lower.userData.structural=true;lower.name='silvia-host-ground';scene.add(lower);
     }}
     const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height+lift+.012,z))),new THREE.LineBasicMaterial({color:b.floors>0?"#59564e":"#936347"}));
-    outline.position.y=mesh.position.y-lift;outline.userData.base=[c.x,c.z];scene.add(outline);
+    outline.position.y=mesh.position.y-lift;outline.userData.base=base;scene.add(outline);
   }
 }
 
