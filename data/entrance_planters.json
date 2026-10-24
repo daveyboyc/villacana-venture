@@ -1,0 +1,179 @@
+{
+ "about": "Bounded source-visible garden and pool-entry fragments. Coordinates use the existing provisional Silvia or pool gate frame; hidden back edges and fragment ends are model cutoffs, not traced property boundaries. No registry or entrance transforms moved.",
+ "beds": [
+  {
+   "id": "silvia-exit-right-planter",
+   "name": "Silvia garden arch · low angled right planter fragment",
+   "frame": "silvia",
+   "ring": [
+    [
+     -2.3,
+     8.05
+    ],
+    [
+     -1.35,
+     8.05
+    ],
+    [
+     -1.12,
+     8.45
+    ],
+    [
+     -0.98,
+     9.15
+    ],
+    [
+     -0.98,
+     10.55
+    ],
+    [
+     -2.3,
+     10.55
+    ]
+   ],
+   "height": 0.16,
+   "wall": 0.09,
+   "color": "#ddd8c5",
+   "evidence": [
+    "IMG_2190.jpg"
+   ],
+   "trust": "Beyond the garden arch on photo-right: a low pale kerb steps/angles around strappy planted pockets and curves around a tree base. Only the near visible fragment is built; exact tree enclosure, rear boundary and garden extent are concealed. Local 8.05–10.55 m station, .16 m height and all widths are illustrative estimates within the unchanged courtyard candidate. Not a raised mirror of the foreground pots; no measured placement approval.",
+   "plants": [
+    {
+     "at": [
+      -1.67,
+      8.55
+     ],
+     "radius": 0.38,
+     "height": 0.62,
+     "kind": "strappy"
+    },
+    {
+     "at": [
+      -1.65,
+      9.65
+     ],
+     "radius": 0.43,
+     "height": 0.72,
+     "kind": "strappy"
+    },
+    {
+     "at": [
+      -1.72,
+      10.05
+     ],
+     "radius": 0.42,
+     "height": 1.75,
+     "kind": "broadleaf"
+    }
+   ],
+   "kind": "kerbed-bed"
+  },
+  {
+   "id": "silvia-exit-left-planting-fragment",
+   "name": "Silvia garden arch · bounded left greenery, base unresolved",
+   "frame": "silvia",
+   "ring": [
+    [
+     1.22,
+     8.55
+    ],
+    [
+     1.98,
+     8.55
+    ],
+    [
+     1.98,
+     9.35
+    ],
+    [
+     1.1,
+     9.35
+    ],
+    [
+     1.1,
+     8.85
+    ]
+   ],
+   "height": 0,
+   "wall": 0,
+   "color": "#ddd8c5",
+   "evidence": [
+    "IMG_2190.jpg"
+   ],
+   "trust": "Greenery is visible beyond the left threshold pot, but a tiny pale return is too occluded to distinguish a separate bed from the arch/plinth. Only finite Details planting is represented within this estimated region. No structural kerb, soil enclosure, collision or complete left garden boundary is built. World registration, back edge and plant species remain unresolved.",
+   "plants": [
+    {
+     "at": [
+      1.57,
+      8.95
+     ],
+     "radius": 0.29,
+     "height": 0.65,
+     "kind": "broadleaf"
+    }
+   ],
+   "kind": "planting-fragment"
+  },
+  {
+   "id": "silvia-pool-entry-hedge-kerb",
+   "name": "Silvia pool entrance · low weathered kerb below opposite hedge",
+   "frame": "pool",
+   "ring": [
+    [
+     -1.62,
+     -1.65
+    ],
+    [
+     -1.07,
+     -1.65
+    ],
+    [
+     -1.07,
+     -0.15
+    ],
+    [
+     -1.62,
+     -0.15
+    ]
+   ],
+   "height": 0.13,
+   "wall": 0.075,
+   "color": "#b7b2a2",
+   "evidence": [
+    "IMG_2334.jpg",
+    "IMG_2192.jpg"
+   ],
+   "trust": "IMG_2192 and IMG_2334 expose a low weathered grey/beige kerb face at the paver edge beneath the opposite hedge. Only the existing hedge fragment is edged. .13 m height, .55 m depth and local endpoints estimated; concealed hedge continuation and back edge are not surveyed. Existing mapped Eva crossing remains open; no full white raised bed or new enclosing wall inferred.",
+   "plants": [],
+   "kind": "kerbed-bed"
+  }
+ ],
+ "path": {
+  "id": "silvia-exit-path-fragment",
+  "name": "Silvia garden arch · bounded continuing terracotta path",
+  "frame": "silvia",
+  "ring": [
+   [
+    -0.98,
+    8.4
+   ],
+   [
+    1.1,
+    8.4
+   ],
+   [
+    1.1,
+    10.55
+   ],
+   [
+    -0.98,
+    10.55
+   ]
+  ],
+  "evidence": [
+   "IMG_2190.jpg"
+  ],
+  "trust": "A narrow terracotta path continues beyond the arch between planted edges. This finite near segment connects the existing slab to the visible kerb fragments; material continuity supported, exact width/pitch/end estimated. No far gate, complete courtyard network or four-column street grid is asserted."
+ }
+}

@@ -46,4 +46,7 @@
 <g class="annotation" data-feature="A13" role="button" tabindex="0" aria-label="A13 Farther raised bed fragment"><title>Farther raised bed fragment: A separate white planted fragment is visible farther along the right frontage.</title>
 <rect class="locator" x="353" y="457" width="58" height="108" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="344" y="499" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="379" y="533" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A13</text></g>
+<g class="annotation" data-feature="A14" role="button" tabindex="0" aria-label="A14 Low kerb beneath opposite pool-entry hedge"><title>Low kerb beneath opposite pool-entry hedge: A low weathered grey/beige kerb face borders the stone path beneath the opposite hedge, partly screened by leaves.</title>
+<rect class="locator" x="1" y="730" width="167" height="345" fill="none" stroke="#e29d25" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="-7" y="877" width="70" height="46" rx="12" fill="#e29d25" stroke="white" stroke-width="3"/><text x="28" y="911" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">A14</text></g>
 </svg>

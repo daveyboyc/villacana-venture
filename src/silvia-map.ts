@@ -22,4 +22,4 @@ export function silviaGroundParts(b:SkeletonBuilding):{ring:Vec2[];holes:Vec2[][
  return clipping.difference([b.ring,...(b.holes??[])],...silviaEnvelope.map(r=>[r])).map(poly=>({ring:poly[0] as Vec2[],holes:poly.slice(1) as Vec2[][]}));
 }
 export function inSilviaFloor(x:number,z:number){const [u,v]=silviaLocal(x,z);return Math.abs(u)<h+.02&&v>-3.65&&v<d.length+.35;}
-export function silviaCloseCamera(x:number,z:number){const [u,v]=silviaLocal(x,z);return Math.abs(u)<h+.75&&v>-5.8&&v<d.length+2;}
+export function silviaCloseCamera(x:number,z:number){const [u,v]=silviaLocal(x,z);return Math.abs(u)<h+.75&&v>-5.8&&v<d.length+3.5;}

@@ -3,6 +3,7 @@ import data from "../data/silvia_tunnel.json";
 import {routeClearance} from "./route-clearance";
 import {plasterMaterial} from "./materials";
 import type {Vec2} from "./types";
+import {addEntranceBeds,entranceBeds,entranceGardenPath} from './entrance-planters';
 
 export const silviaTunnel=data;
 const d=data.dimensions, half=d.width/2;
@@ -21,7 +22,7 @@ export function tunnelWallParts(){
  }
  return parts;
 }
-export const silviaTunnelRings=()=>tunnelWallParts().map(p=>rect(p.x,p.z,p.w,p.l));
+export const silviaTunnelRings=()=>[...tunnelWallParts().map(p=>rect(p.x,p.z,p.w,p.l)),...entranceBeds.filter(b=>b.frame==='silvia'&&b.kind==='kerbed-bed').map(b=>b.ring as Vec2[])];
 
 /** Original procedural textures: no source-photo pixels are used. */
 function texture(draw:(g:CanvasRenderingContext2D,n:number)=>void,n=1024){const c=document.createElement('canvas');c.width=c.height=n;draw(c.getContext('2d')!,n);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;return t;}
@@ -39,7 +40,7 @@ function tileTexture(){return texture((g,n)=>{
 function pebbleTexture(){return texture((g,n)=>{g.fillStyle='#9d9987';g.fillRect(0,0,n,n);for(let j=0;j<100;j++)for(let i=0;i<85;i++){const x=(i+.5*(j%2))*n/85,y=j*n/100;g.fillStyle=['#c9c4af','#4c5149','#e7e0c9','#818574'][(i*7+j*3)%4];g.beginPath();g.ellipse(x,y,3.1,4.7,(i+j)*.9,0,Math.PI*2);g.fill();}});}
 function woodTexture(){return texture((g,n)=>{g.fillStyle='#775a40';g.fillRect(0,0,n,n);for(let i=0;i<550;i++){g.strokeStyle=i%2?'#b79c6a12':'#1b160e18';g.lineWidth=i%3+1;const x=(i*31.7)%n;g.beginPath();g.moveTo(x,0);g.bezierCurveTo(x+9,n*.3,x-8,n*.7,x,n);g.stroke();}},512);}
 
-export function createSilviaTunnel(details=true){
+export function createSilviaTunnel(details=true,gardenClearance?:(x:number,z:number,r:number)=>boolean){
  const root=new THREE.Group();root.name=data.id;root.userData.noDrape=true;root.userData.sourceFrame=data.frame;
  const plaster=plasterMaterial('#f4f2e9');plaster.bumpScale=.006;
  const trim=new THREE.MeshStandardMaterial({color:'#f8f5e9',roughness:.88});
@@ -104,6 +105,13 @@ export function createSilviaTunnel(details=true){
  box('lantern-glass',0,.2,0,.23,.27,.23,glass,lamp);
  for(const x of [-.13,.13])for(const z of [-.13,.13])box('lantern-frame',x,.2,z,.016,.3,.016,dark,lamp);
  mesh(new THREE.SphereGeometry(.04,8,6),brass,'lantern-bulb',0,.2,0,lamp);
+ // The photographed garden has low kerbed beds beyond the arch, distinct from the four pots inside.
+ addEntranceBeds(root,'silvia',details,false,gardenClearance);
+ const pathShape=new THREE.Shape(entranceGardenPath.ring.map(([x,z])=>new THREE.Vector2(x,-z)));
+ const pathGeometry=new THREE.ShapeGeometry(pathShape),pathPositions=pathGeometry.getAttribute('position'),pathUv=pathGeometry.getAttribute('uv');
+ for(let i=0;i<pathUv.count;i++)pathUv.setXY(i,(pathPositions.getX(i)+2.65)/5.3,1-(-pathPositions.getY(i)+1.25)/9.7);
+ const gardenFloor=new THREE.Mesh(pathGeometry.rotateX(-Math.PI/2),floor);
+ gardenFloor.name=entranceGardenPath.id;gardenFloor.position.y=.052;gardenFloor.receiveShadow=true;root.add(gardenFloor);
  if(details){for(const p of data.pots){
   const radius=Math.max(p.radius*1.09,p.radius*1.4+.178);
   if(!routeClearance([{id:'silvia-study-axis',name:'Silvia study centre route',points:[[0,-1],[0,d.length+2]],width:.84}],p.at[0],p.at[1],radius))throw Error('Planting intrudes on tunnel route: '+p.id);

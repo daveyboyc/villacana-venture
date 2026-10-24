@@ -5,11 +5,15 @@ import type { Vec2 } from "./types";
 import { addLaneFrontages,laneFrontageRings } from "./middle-pool-lane-frontages";
 import {addSouthBenchPlanting} from "./middle-south-planting";
 import { addSprites } from "./sprites";
+import {roundedBedRing,planterBed} from './planter-bed';
+import {addEntranceBeds,entranceBedRings} from './entrance-planters';
+import {routeClearance} from './route-clearance';
 
 // Local +along points south into the lane; +across is the planter on the photo's right.
 export const middleSouthAt = (along: number, across = 0): Vec2 => [f.center[0]+f.forward[0]*along-f.forward[1]*across,f.center[1]+f.forward[1]*along+f.forward[0]*across];
 export const middleSouthRect = (a:number,b:number,c:number,d:number):Vec2[] => [middleSouthAt(a,c),middleSouthAt(b,c),middleSouthAt(b,d),middleSouthAt(a,d)];
 export const middleSouthForecourtRing = (): Vec2[] => middleSouthRect(...f.forecourt.along as [number,number],...f.forecourt.across as [number,number]);
+export const middleSouthPlanterParts=()=>[[f.planter.along[0],f.bench.along[0]],[f.bench.along[1],f.planter.along[1]]].map(([a,b])=>roundedBedRing(f.planter.across[0],a,f.planter.across[1],b,f.planter.cornerRadius));
 
 /** Remove only the paved forecourt from a visual road ribbon. Route axes, levels and collision stay shared. */
 export function outsideMiddleSouthForecourt(ring: Vec2[]): Vec2[][] {
@@ -40,14 +44,14 @@ export function outsideMiddleSouthForecourt(ring: Vec2[]): Vec2[][] {
  return result;
 }
 export function middleSouthRings(includeLaneBeds=true):Vec2[][] {
- const w=f.opening/2,p=f.pier,b=f.planter,s=f.bench,panel=f.panel;
+ const w=f.opening/2,p=f.pier,s=f.bench,panel=f.panel;
  // Leaves are fixed open into the courtyard against the planter; the wall bench is set back past them, outside the through route.
  return [-1,1].flatMap(side=>{const c=side*(w+p/2);return [middleSouthRect(-p/2,p/2,c-p/2,c+p/2),middleSouthRect(-f.leafLength,0,side*w-.025,side*w+.025)];}).concat([
-  middleSouthRect(b.along[0],s.along[0],...b.across as [number,number]),
-  middleSouthRect(s.along[1],b.along[1],...b.across as [number,number]),
+  ...middleSouthPlanterParts().map(ring=>ring.map(([c,a])=>middleSouthAt(a,c))),
   middleSouthRect(s.along[0],s.along[1],s.plinth.across[0],s.seat.across[1]),
   middleSouthRect(...panel.wallAlong as [number,number],panel.across,panel.across+.16),
   ...(includeLaneBeds?laneFrontageRings():[]),
+  ...entranceBedRings('pool'),
  ]);
 }
 function crazyPavingTexture():THREE.CanvasTexture {
@@ -66,6 +70,7 @@ function crazyPavingTexture():THREE.CanvasTexture {
 }
 export function addMiddleSouthGate(scene:THREE.Scene):void {
  addLaneFrontages(scene);
+ addEntranceBeds(scene,'pool',!scene.userData.layoutOnly,true,(x,z,r)=>routeClearance(scene.userData.protectedRoutes??[],x,z,r));
  const group=new THREE.Group();group.position.set(f.center[0],.06,f.center[1]);
  // Reflect across so local x follows photo-right while local z follows the lane.
  group.rotation.y=Math.atan2(f.forward[0],f.forward[1]);group.scale.x=-1;
@@ -91,10 +96,7 @@ export function addMiddleSouthGate(scene:THREE.Scene):void {
   group.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points),24,.014,5,false),iron));
  }
  const b=f.planter,s=f.bench,bm=(s.along[0]+s.along[1])/2,bl=s.along[1]-s.along[0];
- for(const [lo,hi] of [[b.along[0],s.along[0]],[s.along[1],b.along[1]]]) {
-  box((lo+hi)/2,(b.across[0]+b.across[1])/2,b.across[1]-b.across[0],b.height,hi-lo,0,plaster);
-  box((lo+hi)/2,(b.across[0]+b.across[1])/2,b.across[1]-b.across[0]-2*b.wall,.025,hi-lo-.05,b.height,new THREE.MeshStandardMaterial({color:"#584c32"}));
- }
+ for(const ring of middleSouthPlanterParts())planterBed(group,ring,b.height,b.wall,plaster,'middle-south-bench-planter',0);
  // IMG_2335: a seat-height block recessed into the planter, with a low plinth in front of it.
  for(const part of [s.seat,s.plinth])box(bm,(part.across[0]+part.across[1])/2,part.across[1]-part.across[0],part.height,bl,0,plaster);
  // IMG_2192: small pale vented cabinet on the existing planter end; services unknown.

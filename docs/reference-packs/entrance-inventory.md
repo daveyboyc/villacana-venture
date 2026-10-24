@@ -47,3 +47,6 @@ Source groups remain distinct. Model states refer to draft snapshot 51b75f5. No 
 | T12 | Door beside Silvia plaque | IMG_2191.jpg | identity-unresolved | Whether this is T06 or T11 from another angle is not established. Do not add an extra world door from this row. |
 | T13 | Left inner entrance recess | IMG_2190.jpg | structure-unmapped | Global position and precise dimensions remain unresolved. Study uses a guessed 0.65 m recess, not a measured dimension. |
 | T14 | Right inner entrance recess | IMG_2190.jpg | structure-unmapped | Global position and precise dimensions remain unresolved. Study uses a guessed 0.65 m recess, not a measured dimension. |
+| T15 | Garden exit right low planter kerb | IMG_2190.jpg | unassessed | Concealed rear boundary, full garden extent, metre dimensions and world registration unresolved. |
+| T16 | Garden exit left greenery and uncertain pale return | IMG_2190.jpg | unassessed | Separate built-in bed identity is unestablished. Represent bounded greenery only; no matching structural left bed or enclosed soil polygon. |
+| A14 | Low kerb beneath opposite pool-entry hedge | IMG_2334.jpg | unassessed | Exact height, hidden back edge, continuation and mapped Eva crossing remain unresolved. |

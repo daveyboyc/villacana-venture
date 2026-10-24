@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-24",
+  "baseline": "9735d000f9e3e3b7b819285cbaa339f2a538d37f",
+  "productionBuild": "PASS: TypeScript and Vite",
+  "pythonUnitTests": {
+    "count": 60,
+    "status": "PASS"
+  },
+  "sourceChecks": {
+    "status": "PASS",
+    "count": 17,
+    "includes": [
+      "check_entrance_planters.py",
+      "check_silvia_tunnel.py",
+      "check_lane_frontages.py",
+      "14 handover source/route/level checks"
+    ]
+  },
+  "layoutBrowser": {
+    "status": "PASS",
+    "routes": 20,
+    "segments": 436,
+    "bothDirections": true,
+    "errors": [],
+    "checks": [
+      "extended tunnel garden approach traversed both ways",
+      "new kerbed beds included in actual Solids",
+      "left greenery has no structural collision",
+      "new visible vertices clear shared routes",
+      "Layout retains beds and omits foliage"
+    ]
+  },
+  "overviewBrowser": "PASS including mobile toolbar",
+  "photoMapBrowser": "PASS including 176 sources, private discovery and mobile navigation",
+  "references": "176 reviewed, 0 problems",
+  "referencePack": "6 source sheets, 46 components, outputs current; old PR108 snapshot remains historical",
+  "renderPairs": [
+    "tunnel-entry",
+    "tunnel-garden",
+    "pool-entry",
+    "pool-return",
+    "pool-bench",
+    "IMG_2334",
+    "IMG_2335"
+  ],
+  "renderLimitations": "Illustrative first-person with Details, not calibrated photographic matches. Last partial render-results-after.json records final refreshed tunnel views; pool views are unchanged from earlier captures. Source-camera before files reuse byte-identical baseline main PR115 renders.",
+  "privateCompanion": "daveyboyc/villacana-reference#12",
+  "independentReview": "independent-review.md; actual full photos, aerials, corrected locators and final affected renders inspected; no measured placement approval",
+  "placementGate": {
+    "status": "FAIL",
+    "reason": "No current independently approved measured placement packets. Hidden base/extent and provisional host/direction/spacing remain unresolved; conservative shared renderer context invalidates other feature fingerprints.",
+    "output": "placement-gate.txt",
+    "policyChanged": false
+  },
+  "preserved": [
+    "registry house/pool outlines",
+    "street axes and levels",
+    "pool/gate/bench/cabinet transforms",
+    "provisional Silvia transform",
+    "single tunnel door leaves and round gold knobs",
+    "mobile movement and camera UI"
+  ]
+}

@@ -1116,7 +1116,11 @@
    "features": [
     "silvia_tunnel.json:silvia-tunnel-study",
     "middle_pool_south_gate.json:middle-pool-south-gate",
-    "middle_pool_south_gate.json:middle-pool-south-forecourt"
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "entrance_planters.json:silvia-exit-right-planter",
+    "entrance_planters.json:silvia-exit-left-planting-fragment",
+    "entrance_planters.json:silvia-pool-entry-hedge-kerb",
+    "entrance_planters.json:silvia-exit-path-fragment"
    ],
    "build": "Inspect satellite and full photos, inventory raised bed/kerb fragments immediately beside the covered Silvia entrance and pool entrance, and build the source-visible bounded outlines in map/3D/collision. Keep hidden extents and provisional world registration explicit.",
    "avoid": "Do not mistake potted shrubs for continuous structural beds, transfer unrelated gate structures or invent a pool ring wall. Preserve registry houses/pool, street axes, doors and mobile controls.",
@@ -1127,7 +1131,8 @@
    ],
    "dependsOn": [],
    "status": "in-progress",
-   "owner": "Codex"
+   "owner": "Codex",
+   "notes": "Full sources and aerials independently inspected. Build the observed low right garden bed, bounded left greenery with its base unresolved, continuing near path, rounded bench-planter returns within old extents and low opposite pool-hedge kerb. Four actual pots retained; two unsupported illustrative tall garden containers removed. No registry, route, entrance/tunnel placement or level change. Left base may be arch/plinth; no structural bed or collision invented. Placement remains provisional and task in progress."
   }
  ]
 }
