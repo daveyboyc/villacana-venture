@@ -1813,22 +1813,24 @@
       "name": "Patterned tunnel tiles and pebble inset",
       "category": "floor",
       "priority": "structure",
-      "observed": "Terracotta clipped-corner field, small blue/white inserts and a separate pebble rectangle.",
+      "observed": "Reinspection24Oct: large square terracotta units are offset in a square-and-dot/hopscotch arrangement around smaller blue/cream decorated squares. Inserts progress diagonally; large edges broadly align with walls and the separate pebble rectangle. Narrow pebble bands line visible wall fragments.",
       "modelStatus": "material-only",
       "modelRevision": "51b75f59bc7e97f32aba091e51d96d996ef4719d",
       "modelFeatureIds": [
         "seaward_paving.json:silvia-patterned-floor"
       ],
-      "unknown": "Existing patterned-floor citation does not establish arches, ceiling or walk-through collision. Do not extend the four-course street grid here.",
+      "unknown": "Existing patterned-floor citation does not establish arches, ceiling or walk-through collision. Do not extend the four-course street grid here. Exact tile pitch, camera pose, whole-field angle and surveyed registration remain uncalibrated. Earlier clipped-corner reading is superseded for the current source observation; historical PR108 model assessment is retained.",
       "buildReady": false,
       "requirements": [
-        "Terracotta clipped-corner field, small blue/white inserts and a separate pebble rectangle."
+        "Offset square-and-insert topology with diagonal insert runs, warm worn red/brown variation, varied schematic blue/cream motifs and pale uneven grout.",
+        "Preserve the separate pebble rectangle and finite wall-edge pebble strips. Use a coherent scale/phase across existing floor pieces; do not diagonalize the four-column street paving."
       ],
       "evidence": [
         "IMG_2190.jpg"
       ],
       "followUp": "silvia-covered-passage-reference-audit",
-      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map."
+      "studyRepresentation": "A source-relative draft exists in the canonical app tunnel study. It does not establish this component on the resort map.",
+      "earlierInterpretation": "Terracotta clipped-corner field, small blue/white inserts and a separate pebble rectangle."
     },
     {
       "id": "T06",
