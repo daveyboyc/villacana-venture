@@ -10,6 +10,7 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 - Apple 3D screenshots (Dave, 2026-10-21, apple-maps/10-13): Calle Guillermo runs down beside the lawn to the paseo, the kiosk at its foot is at lawn level, and the east steps are a narrow flight from the Picasso wall between the 90 Miles terrace and the east building. Built by task guillermo-slope-east-steps (docs/MAIN_POOL.md); heights estimated.
 - Dave, 2026-10-21: a fence and a coastal gate separate Villacana from Barraka beach in front of the lawn. IMG_2226 shows the white wall, a round-arched gateway at the foot of Calle Guillermo, a short wall and white railings along the lawn; built as data/seafront_fence.json (heights by eye, gateway left open).
 - Dave, 2026-10-21: Calle Jorge meets Guillermo on the level; Guillermo's ramp starts just past the junction and slopes down to the paseo as a smooth ramp with no steps (modelled 3 m over 15.5 m, about 19 %). Open: do the houses beside the ramp stand lower than street level?
+- Laser survey 2026-10-24 (docs/reviews/lidar-levels): main pool deck -2.87 m (model -3.00). Calle Guillermo stays at about -0.2 to -0.4 m along the mapped street with the pool lawn 2.5 m lower behind a sharp edge; the fall to the paseo starts south of the mapped end, not over its last 15 m as modelled (guillermo-descent-recheck).
 
 ## Read first
 
@@ -29,6 +30,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P1 | `guillermo-descent-recheck` | Calle Guillermo: put the fall to the paseo where the survey has it | open · placement: not-verified |  |
 | P1 | `guillermo-slope-east-steps` | Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall | in-progress · Claude · placement: not-verified | `apple-maps/11-3d-guillermo-slope-to-paseo.png`, `apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`, `apple-maps/12-3d-main-pool-east-steps-picasso.png`, `apple-maps/13-3d-main-pool-terrace-both-stairs.png`, [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
 
 ## Reviewed references

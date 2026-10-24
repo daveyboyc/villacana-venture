@@ -1,0 +1,1908 @@
+{
+ "datum": {
+  "surveyHeight": 5.05,
+  "meaning": "survey ground at the middle pool deck, the model zero (orthometric metres)",
+  "surveyHeight2015": 5.0
+ },
+ "pools": [
+  {
+   "pool": "north",
+   "survey": 0.8,
+   "model": 0.0
+  },
+  {
+   "pool": "middle",
+   "survey": 0.0,
+   "model": 0.0
+  },
+  {
+   "pool": "south",
+   "survey": 0.11,
+   "model": 0.0
+  },
+  {
+   "pool": "main",
+   "survey": -2.87,
+   "model": -3.0
+  }
+ ],
+ "streets": [
+  {
+   "street": "Calle Pintor Dalí",
+   "from": [
+    -234.6,
+    -3.3
+   ],
+   "to": [
+    -126.4,
+    230.0
+   ],
+   "survey": [
+    1.75,
+    0.07
+   ],
+   "surveyRange": [
+    0.07,
+    1.99
+   ],
+   "model": [
+    0.56,
+    0.47
+   ],
+   "medianMiss": -0.51,
+   "worstMiss": 1.43
+  },
+  {
+   "street": "Calle Miguel de Cervantes",
+   "from": [
+    -194.6,
+    82.2
+   ],
+   "to": [
+    -76.4,
+    11.8
+   ],
+   "survey": [
+    1.4,
+    0.23
+   ],
+   "surveyRange": [
+    0.17,
+    1.53
+   ],
+   "model": [
+    0.56,
+    0.06
+   ],
+   "medianMiss": -0.48,
+   "worstMiss": 0.97
+  },
+  {
+   "street": "Calle Loira",
+   "from": [
+    -234.6,
+    -3.3
+   ],
+   "to": [
+    -108.3,
+    -73.5
+   ],
+   "survey": [
+    1.75,
+    1.26
+   ],
+   "surveyRange": [
+    1.23,
+    2.28
+   ],
+   "model": [
+    0.56,
+    0.06
+   ],
+   "medianMiss": -1.25,
+   "worstMiss": 2.22
+  },
+  {
+   "street": "Calle Bolivia",
+   "from": [
+    -108.3,
+    -73.5
+   ],
+   "to": [
+    -87.7,
+    -82.4
+   ],
+   "survey": [
+    1.26,
+    1.52
+   ],
+   "surveyRange": [
+    1.26,
+    1.55
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -1.34,
+   "worstMiss": 1.49
+  },
+  {
+   "street": "Calle Pintor Picasso",
+   "from": [
+    -87.7,
+    -82.4
+   ],
+   "to": [
+    -13.7,
+    45.8
+   ],
+   "survey": [
+    1.52,
+    -0.9
+   ],
+   "surveyRange": [
+    -0.9,
+    1.52
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -0.01,
+   "worstMiss": 1.46
+  },
+  {
+   "street": "Picasso car-park access",
+   "from": [
+    -112.8,
+    -50.1
+   ],
+   "to": [
+    -55.4,
+    48.1
+   ],
+   "survey": [
+    1.21,
+    -0.07
+   ],
+   "surveyRange": [
+    -0.07,
+    1.29
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -0.59,
+   "worstMiss": 1.23
+  },
+  {
+   "street": "Calle Elena",
+   "from": [
+    -164.8,
+    18.9
+   ],
+   "to": [
+    -145.1,
+    52.7
+   ],
+   "survey": [
+    0.73,
+    0.56
+   ],
+   "surveyRange": [
+    0.56,
+    0.74
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -0.61,
+   "worstMiss": 0.68
+  },
+  {
+   "street": "Calle Elena",
+   "from": [
+    -153.7,
+    57.8
+   ],
+   "to": [
+    -133.4,
+    99.1
+   ],
+   "survey": [
+    0.52,
+    0.08
+   ],
+   "surveyRange": [
+    -0.05,
+    0.79
+   ],
+   "model": [
+    0.37,
+    0.06
+   ],
+   "medianMiss": -0.5,
+   "worstMiss": 0.73
+  },
+  {
+   "street": "Calle Isabel de Oyarzábal",
+   "from": [
+    -164.8,
+    18.9
+   ],
+   "to": [
+    -137.5,
+    -8.0
+   ],
+   "survey": [
+    0.73,
+    1.15
+   ],
+   "surveyRange": [
+    0.63,
+    1.15
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -0.67,
+   "worstMiss": 1.09
+  },
+  {
+   "street": "Calle Alberto",
+   "from": [
+    -159.1,
+    -43.2
+   ],
+   "to": [
+    -112.3,
+    33.2
+   ],
+   "survey": [
+    1.32,
+    0.26
+   ],
+   "surveyRange": [
+    0.26,
+    1.37
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -0.91,
+   "worstMiss": 1.31
+  },
+  {
+   "street": "Calle Eva",
+   "from": [
+    -171.8,
+    128.0
+   ],
+   "to": [
+    -55.4,
+    48.1
+   ],
+   "survey": [
+    0.97,
+    -0.07
+   ],
+   "surveyRange": [
+    -0.35,
+    1.02
+   ],
+   "model": [
+    0.56,
+    0.06
+   ],
+   "medianMiss": 0.1,
+   "worstMiss": 0.49
+  },
+  {
+   "street": "Calle Patricia",
+   "from": [
+    -151.6,
+    154.9
+   ],
+   "to": [
+    -42.8,
+    89.0
+   ],
+   "survey": [
+    0.58,
+    -0.52
+   ],
+   "surveyRange": [
+    -0.52,
+    0.66
+   ],
+   "model": [
+    0.58,
+    0.06
+   ],
+   "medianMiss": 0.03,
+   "worstMiss": 0.6
+  },
+  {
+   "street": "Calle Silvia",
+   "from": [
+    -128.0,
+    101.3
+   ],
+   "to": [
+    -110.6,
+    129.8
+   ],
+   "survey": [
+    -0.1,
+    -0.02
+   ],
+   "surveyRange": [
+    -0.1,
+    0.24
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": -0.02,
+   "worstMiss": 0.18
+  },
+  {
+   "street": "Calle Silvia",
+   "from": [
+    -114.9,
+    132.4
+   ],
+   "to": [
+    -94.3,
+    168.5
+   ],
+   "survey": [
+    -0.01,
+    -0.03
+   ],
+   "surveyRange": [
+    -0.04,
+    0.41
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": 0.02,
+   "worstMiss": 0.35
+  },
+  {
+   "street": "Calle Jorge",
+   "from": [
+    -138.4,
+    194.0
+   ],
+   "to": [
+    -20.5,
+    125.7
+   ],
+   "survey": [
+    0.59,
+    -0.37
+   ],
+   "surveyRange": [
+    -0.39,
+    0.73
+   ],
+   "model": [
+    0.56,
+    0.06
+   ],
+   "medianMiss": 0.06,
+   "worstMiss": 0.53
+  },
+  {
+   "street": "Calle Teodoro Rojo",
+   "from": [
+    -100.5,
+    74.6
+   ],
+   "to": [
+    -57.6,
+    147.2
+   ],
+   "survey": [
+    -0.35,
+    -0.38
+   ],
+   "surveyRange": [
+    -0.4,
+    -0.22
+   ],
+   "model": [
+    0.06,
+    0.06
+   ],
+   "medianMiss": 0.39,
+   "worstMiss": 0.46
+  },
+  {
+   "street": "Calle Guillermo",
+   "from": [
+    -64.5,
+    53.5
+   ],
+   "to": [
+    -9.1,
+    140.1
+   ],
+   "survey": [
+    -0.19,
+    -0.18
+   ],
+   "surveyRange": [
+    -2.32,
+    0.11
+   ],
+   "model": [
+    0.06,
+    -2.94
+   ],
+   "medianMiss": 0.35,
+   "worstMiss": 2.76
+  },
+  {
+   "street": "Calle Eva",
+   "from": [
+    -169.4,
+    123.9
+   ],
+   "to": [
+    -151.6,
+    154.9
+   ],
+   "survey": [
+    0.85,
+    0.58
+   ],
+   "surveyRange": [
+    0.58,
+    0.85
+   ],
+   "model": [
+    0.56,
+    0.58
+   ],
+   "medianMiss": 0.16,
+   "worstMiss": 0.29
+  }
+ ],
+ "levelsSurvey": [
+  {
+   "id": "cervantes-elena-ramp",
+   "photoRise": [
+    0.4,
+    0.5
+   ],
+   "surveyRise": 0.22,
+   "outsideBy": 0.18
+  },
+  {
+   "id": "cervantes-elena-steps",
+   "photoRise": [
+    0.4,
+    0.5
+   ],
+   "surveyRise": 0.21,
+   "outsideBy": 0.19
+  },
+  {
+   "id": "cervantes-upper-lane",
+   "photoRise": [
+    0,
+    0.15
+   ],
+   "surveyRise": 0.1,
+   "outsideBy": 0.0
+  },
+  {
+   "id": "dali-cervantes-apron",
+   "photoRise": [
+    0,
+    0.15
+   ],
+   "surveyRise": 0.26,
+   "outsideBy": 0.11
+  },
+  {
+   "id": "middle-pool-sw-rise",
+   "photoRise": [
+    0.45,
+    0.55
+   ],
+   "surveyRise": 0.53,
+   "outsideBy": 0.0
+  },
+  {
+   "id": "middle-pool-nw-rise",
+   "photoRise": [
+    0.3,
+    0.55
+   ],
+   "surveyRise": 0.52,
+   "outsideBy": 0.0
+  },
+  {
+   "id": "middle-pool-gates-level",
+   "photoRise": [
+    0,
+    0.05
+   ],
+   "surveyRise": 0.04,
+   "outsideBy": 0.0
+  }
+ ],
+ "roofs": {
+  "byFloors": [
+   {
+    "floors": 1,
+    "buildings": 108,
+    "model": 3.0,
+    "roofMedian": 3.66,
+    "roofHigh": 4.08
+   },
+   {
+    "floors": 2,
+    "buildings": 45,
+    "model": 6.0,
+    "roofMedian": 5.85,
+    "roofHigh": 6.61
+   },
+   {
+    "floors": 3,
+    "buildings": 10,
+    "model": 9.0,
+    "roofMedian": 8.29,
+    "roofHigh": 8.43
+   }
+  ],
+  "buildings": [
+   {
+    "id": "6165501UF1366N_part1",
+    "floors": 1,
+    "model": 3.0,
+    "roofMedian": 0.0,
+    "roofHigh": 6.46,
+    "groundAboveDatum": 1.72
+   },
+   {
+    "id": "6165501UF1366N_part2",
+    "floors": 2,
+    "model": 6.0,
+    "roofMedian": 5.93,
+    "roofHigh": 6.02,
+    "groundAboveDatum": 1.67
+   },
+   {
+    "id": "6165501UF1366N_part4",
+    "floors": 2,
+    "model": 6.0,
+    "roofMedian": 5.53,
+    "roofHigh": 6.32,
+    "groundAboveDatum": 1.75
+   },
+   {
+    "id": "6165501UF1366N_part5",
+    "floors": 2,
+    "model": 6.0,
+    "roofMedian": 5.47,
+    "roofHigh": 5.9,
+    "groundAboveDatum": 1.75
+   },
+   {
+    "id": "6263501UF1366S_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.81,
+    "roofHigh": 6.69,
+    "groundAboveDatum": 0.65
+   },
+   {
+    "id": "6264401UF1366S_part3",
+    "floors": 2,
+    "model": 2.65,
+    "roofMedian": 5.87,
+    "roofHigh": 6.7,
+    "groundAboveDatum": 0.66
+   },
+   {
+    "id": "6264501UF1366S_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.79,
+    "roofHigh": 7.56,
+    "groundAboveDatum": 0.15
+   },
+   {
+    "id": "6264501UF1366S_part2",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.98,
+    "roofHigh": 7.1,
+    "groundAboveDatum": 0.03
+   },
+   {
+    "id": "6264601UF1366S_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.93,
+    "roofHigh": 8.38,
+    "groundAboveDatum": 0.62
+   },
+   {
+    "id": "6264601UF1366S_part2",
+    "floors": 3,
+    "model": 9.0,
+    "roofMedian": 8.34,
+    "roofHigh": 8.66,
+    "groundAboveDatum": 0.63
+   },
+   {
+    "id": "6264601UF1366S_part3",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 8.39,
+    "roofHigh": 8.54,
+    "groundAboveDatum": 0.68
+   },
+   {
+    "id": "6264601UF1366S_part4",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 8.43,
+    "roofHigh": 8.64,
+    "groundAboveDatum": 0.7
+   },
+   {
+    "id": "6264601UF1366S_part5",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 8.56,
+    "roofHigh": 9.22,
+    "groundAboveDatum": 0.32
+   },
+   {
+    "id": "6264601UF1366S_part6",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 8.59,
+    "roofHigh": 8.71,
+    "groundAboveDatum": 0.29
+   },
+   {
+    "id": "6265201UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 6.17,
+    "roofHigh": 6.89,
+    "groundAboveDatum": 1.19
+   },
+   {
+    "id": "6265201UF1366N_part3",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.91,
+    "roofHigh": 6.63,
+    "groundAboveDatum": 1.17
+   },
+   {
+    "id": "6265201UF1366N_part4",
+    "floors": 2,
+    "model": 6.0,
+    "roofMedian": 5.87,
+    "roofHigh": 6.54,
+    "groundAboveDatum": 1.17
+   },
+   {
+    "id": "6265201UF1366N_part6",
+    "floors": 1,
+    "model": 3.0,
+    "roofMedian": 2.91,
+    "roofHigh": 3.15,
+    "groundAboveDatum": 1.32
+   },
+   {
+    "id": "6265401UF1366N_part3",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.82,
+    "roofHigh": 6.73,
+    "groundAboveDatum": 0.69
+   },
+   {
+    "id": "6265401UF1366N_part4",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.81,
+    "roofHigh": 6.3,
+    "groundAboveDatum": 0.69
+   },
+   {
+    "id": "6265501UF1366N_part2",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.28,
+    "roofHigh": 7.86,
+    "groundAboveDatum": 1.18
+   },
+   {
+    "id": "6265501UF1366N_part3",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.37,
+    "roofHigh": 3.73,
+    "groundAboveDatum": 1.21
+   },
+   {
+    "id": "6265501UF1366N_part6",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.5,
+    "roofHigh": 6.28,
+    "groundAboveDatum": 1.17
+   },
+   {
+    "id": "6265501UF1366N_part7",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.02,
+    "roofHigh": 6.45,
+    "groundAboveDatum": 1.24
+   },
+   {
+    "id": "6265501UF1366N_part8",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.8,
+    "roofHigh": 6.69,
+    "groundAboveDatum": 0.94
+   },
+   {
+    "id": "6265501UF1366N_part9",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.76,
+    "roofHigh": 6.06,
+    "groundAboveDatum": 1.16
+   },
+   {
+    "id": "6265501UF1366N_part10",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.58,
+    "roofHigh": 5.63,
+    "groundAboveDatum": 1.2
+   },
+   {
+    "id": "6265501UF1366N_part11",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 6.03,
+    "roofHigh": 6.51,
+    "groundAboveDatum": 1.18
+   },
+   {
+    "id": "6265501UF1366N_part12",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 2.55,
+    "roofHigh": 3.43,
+    "groundAboveDatum": 1.21
+   },
+   {
+    "id": "6265501UF1366N_part13",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 2.82,
+    "roofHigh": 5.18,
+    "groundAboveDatum": 1.21
+   },
+   {
+    "id": "6265501UF1366N_part14",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 2.97,
+    "roofHigh": 3.93,
+    "groundAboveDatum": 1.19
+   },
+   {
+    "id": "6265601UF1366N_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.84,
+    "roofHigh": 6.38,
+    "groundAboveDatum": 0.64
+   },
+   {
+    "id": "6265801UF1366N_part2",
+    "floors": 1,
+    "model": 3.0,
+    "roofMedian": 5.52,
+    "roofHigh": 5.83,
+    "groundAboveDatum": 1.18
+   },
+   {
+    "id": "6265801UF1366N_part3",
+    "floors": 1,
+    "model": 3.0,
+    "roofMedian": 5.65,
+    "roofHigh": 5.68,
+    "groundAboveDatum": 1.23
+   },
+   {
+    "id": "6265801UF1366N_part5",
+    "floors": 2,
+    "model": 6.0,
+    "roofMedian": 5.88,
+    "roofHigh": 6.52,
+    "groundAboveDatum": 1.17
+   },
+   {
+    "id": "6266601UF1366N_part2",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.78,
+    "roofHigh": 5.94,
+    "groundAboveDatum": 1.24
+   },
+   {
+    "id": "6266601UF1366N_part4",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.87,
+    "roofHigh": 6.29,
+    "groundAboveDatum": 1.23
+   },
+   {
+    "id": "6266801UF1366N_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.73,
+    "roofHigh": 6.61,
+    "groundAboveDatum": 0.71
+   },
+   {
+    "id": "6266801UF1366N_part2",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.8,
+    "roofHigh": 6.89,
+    "groundAboveDatum": 0.74
+   },
+   {
+    "id": "6266801UF1366N_part3",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.7,
+    "roofHigh": 6.03,
+    "groundAboveDatum": 0.72
+   },
+   {
+    "id": "6266801UF1366N_part4",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.04,
+    "roofHigh": 5.61,
+    "groundAboveDatum": 0.68
+   },
+   {
+    "id": "6266801UF1366N_part5",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.42,
+    "roofHigh": 4.11,
+    "groundAboveDatum": 0.57
+   },
+   {
+    "id": "6266801UF1366N_part6",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.61,
+    "roofHigh": 7.0,
+    "groundAboveDatum": 0.66
+   },
+   {
+    "id": "6266801UF1366N_part7",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.24,
+    "roofHigh": 3.79,
+    "groundAboveDatum": 0.55
+   },
+   {
+    "id": "6266801UF1366N_part8",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.85,
+    "roofHigh": 6.62,
+    "groundAboveDatum": 0.74
+   },
+   {
+    "id": "6364201UF1366S_part1",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 5.9,
+    "roofHigh": 6.35,
+    "groundAboveDatum": 0.16
+   },
+   {
+    "id": "6364201UF1366S_part2",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 5.9,
+    "roofHigh": 6.3,
+    "groundAboveDatum": 0.17
+   },
+   {
+    "id": "6364201UF1366S_part3",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 3.02,
+    "roofHigh": 5.73,
+    "groundAboveDatum": 0.07
+   },
+   {
+    "id": "6364201UF1366S_part4",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 3.06,
+    "roofHigh": 3.76,
+    "groundAboveDatum": 0.1
+   },
+   {
+    "id": "6364201UF1366S_part5",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.53,
+    "roofHigh": 5.89,
+    "groundAboveDatum": 0.17
+   },
+   {
+    "id": "6364201UF1366S_part6",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.34,
+    "roofHigh": 6.4,
+    "groundAboveDatum": 0.16
+   },
+   {
+    "id": "6364201UF1366S_part7",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.04,
+    "roofHigh": 7.13,
+    "groundAboveDatum": 0.04
+   },
+   {
+    "id": "6364201UF1366S_part8",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.27,
+    "roofHigh": 6.98,
+    "groundAboveDatum": -0.04
+   },
+   {
+    "id": "6364201UF1366S_part9",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 5.82,
+    "roofHigh": 5.91,
+    "groundAboveDatum": 0.19
+   },
+   {
+    "id": "6364201UF1366S_part10",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 5.89,
+    "roofHigh": 6.69,
+    "groundAboveDatum": 0.2
+   },
+   {
+    "id": "6364401UF1366S_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.6,
+    "roofHigh": 15.35,
+    "groundAboveDatum": -0.29
+   },
+   {
+    "id": "6364401UF1366S_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.11,
+    "roofHigh": 3.74,
+    "groundAboveDatum": -0.28
+   },
+   {
+    "id": "6364401UF1366S_part3",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.77,
+    "roofHigh": 4.96,
+    "groundAboveDatum": -0.21
+   },
+   {
+    "id": "6364401UF1366S_part4",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.21,
+    "roofHigh": 5.34,
+    "groundAboveDatum": -0.28
+   },
+   {
+    "id": "6364401UF1366S_part5",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.88,
+    "roofHigh": 4.48,
+    "groundAboveDatum": -0.27
+   },
+   {
+    "id": "6364401UF1366S_part6",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.42,
+    "roofHigh": 7.42,
+    "groundAboveDatum": -0.28
+   },
+   {
+    "id": "6364401UF1366S_part7",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.3,
+    "roofHigh": 7.53,
+    "groundAboveDatum": -0.35
+   },
+   {
+    "id": "6364401UF1366S_part8",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.38,
+    "roofHigh": 7.03,
+    "groundAboveDatum": -0.22
+   },
+   {
+    "id": "6364401UF1366S_part9",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.72,
+    "roofHigh": 6.75,
+    "groundAboveDatum": -0.23
+   },
+   {
+    "id": "6364401UF1366S_part10",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.13,
+    "roofHigh": 6.63,
+    "groundAboveDatum": -0.28
+   },
+   {
+    "id": "6364401UF1366S_part11",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.86,
+    "roofHigh": 7.11,
+    "groundAboveDatum": -0.28
+   },
+   {
+    "id": "6364501UF1366S_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.1,
+    "roofHigh": 4.42,
+    "groundAboveDatum": -0.17
+   },
+   {
+    "id": "6364501UF1366S_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 0.89,
+    "roofHigh": 1.28,
+    "groundAboveDatum": -1.17
+   },
+   {
+    "id": "6364501UF1366S_part3",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 2.35,
+    "roofHigh": 2.46,
+    "groundAboveDatum": -2.13
+   },
+   {
+    "id": "6364501UF1366S_part4",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 2.39,
+    "roofHigh": 4.69,
+    "groundAboveDatum": -2.08
+   },
+   {
+    "id": "6364501UF1366S_part5",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 0.36,
+    "roofHigh": 0.79,
+    "groundAboveDatum": -0.04
+   },
+   {
+    "id": "6364501UF1366S_part6",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.67,
+    "roofHigh": 4.93,
+    "groundAboveDatum": -1.82
+   },
+   {
+    "id": "6364501UF1366S_part7",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.42,
+    "roofHigh": 5.36,
+    "groundAboveDatum": -2.34
+   },
+   {
+    "id": "6364501UF1366S_part8",
+    "floors": 1,
+    "model": 3.0,
+    "roofMedian": 2.89,
+    "roofHigh": 3.67,
+    "groundAboveDatum": -2.06
+   },
+   {
+    "id": "6364601UF1366S_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.85,
+    "roofHigh": 5.74,
+    "groundAboveDatum": -0.37
+   },
+   {
+    "id": "6364601UF1366S_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.07,
+    "roofHigh": 6.42,
+    "groundAboveDatum": -0.3
+   },
+   {
+    "id": "6364601UF1366S_part3",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 6.13,
+    "roofHigh": 6.89,
+    "groundAboveDatum": -0.3
+   },
+   {
+    "id": "6364601UF1366S_part4",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.72,
+    "roofHigh": 6.58,
+    "groundAboveDatum": -0.3
+   },
+   {
+    "id": "6364601UF1366S_part5",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.75,
+    "roofHigh": 6.45,
+    "groundAboveDatum": -0.31
+   },
+   {
+    "id": "6364801UF1366S_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.38,
+    "roofHigh": 6.64,
+    "groundAboveDatum": 0.03
+   },
+   {
+    "id": "6364801UF1366S_part2",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.86,
+    "roofHigh": 6.96,
+    "groundAboveDatum": 0.07
+   },
+   {
+    "id": "6364801UF1366S_part3",
+    "floors": 3,
+    "model": 9,
+    "roofMedian": 8.25,
+    "roofHigh": 8.33,
+    "groundAboveDatum": 0.05
+   },
+   {
+    "id": "6365101UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.37,
+    "roofHigh": 4.37,
+    "groundAboveDatum": -0.31
+   },
+   {
+    "id": "6365101UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.65,
+    "roofHigh": 6.58,
+    "groundAboveDatum": -0.28
+   },
+   {
+    "id": "6365101UF1366N_part3",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.67,
+    "roofHigh": 5.71,
+    "groundAboveDatum": -0.27
+   },
+   {
+    "id": "6365101UF1366N_part4",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.78,
+    "roofHigh": 6.15,
+    "groundAboveDatum": -0.3
+   },
+   {
+    "id": "6365101UF1366N_part5",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.38,
+    "roofHigh": 5.23,
+    "groundAboveDatum": -0.31
+   },
+   {
+    "id": "6365101UF1366N_part6",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.01,
+    "roofHigh": 4.04,
+    "groundAboveDatum": -0.32
+   },
+   {
+    "id": "6365101UF1366N_part7",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.73,
+    "roofHigh": 6.31,
+    "groundAboveDatum": -0.36
+   },
+   {
+    "id": "6365101UF1366N_part8",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 6.29,
+    "roofHigh": 6.29,
+    "groundAboveDatum": -0.27
+   },
+   {
+    "id": "6365101UF1366N_part9",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.72,
+    "roofHigh": 6.28,
+    "groundAboveDatum": -0.29
+   },
+   {
+    "id": "6365201UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.53,
+    "roofHigh": 5.67,
+    "groundAboveDatum": -0.03
+   },
+   {
+    "id": "6365201UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.65,
+    "roofHigh": 7.12,
+    "groundAboveDatum": 0.19
+   },
+   {
+    "id": "6365201UF1366N_part4",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.72,
+    "roofHigh": 5.87,
+    "groundAboveDatum": 0.22
+   },
+   {
+    "id": "6365201UF1366N_part5",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.26,
+    "roofHigh": 5.59,
+    "groundAboveDatum": 0.25
+   },
+   {
+    "id": "6365201UF1366N_part7",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.14,
+    "roofHigh": 5.68,
+    "groundAboveDatum": 0.19
+   },
+   {
+    "id": "6365201UF1366N_part8",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 5.5,
+    "roofHigh": 5.62,
+    "groundAboveDatum": 0.26
+   },
+   {
+    "id": "6365201UF1366N_part9",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.31,
+    "roofHigh": 3.57,
+    "groundAboveDatum": 0.19
+   },
+   {
+    "id": "6365201UF1366N_part11",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.18,
+    "roofHigh": 7.44,
+    "groundAboveDatum": 0.25
+   },
+   {
+    "id": "6365201UF1366N_part12",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.72,
+    "roofHigh": 7.27,
+    "groundAboveDatum": 0.23
+   },
+   {
+    "id": "6365201UF1366N_part13",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.15,
+    "roofHigh": 5.18,
+    "groundAboveDatum": 0.25
+   },
+   {
+    "id": "6365201UF1366N_part14",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.42,
+    "roofHigh": 7.07,
+    "groundAboveDatum": 0.22
+   },
+   {
+    "id": "6365201UF1366N_part15",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.79,
+    "roofHigh": 7.0,
+    "groundAboveDatum": 0.22
+   },
+   {
+    "id": "6365201UF1366N_part16",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.62,
+    "roofHigh": 6.67,
+    "groundAboveDatum": 0.25
+   },
+   {
+    "id": "6365201UF1366N_part17",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.99,
+    "roofHigh": 6.35,
+    "groundAboveDatum": 0.23
+   },
+   {
+    "id": "6365201UF1366N_part18",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.25,
+    "roofHigh": 6.57,
+    "groundAboveDatum": 0.07
+   },
+   {
+    "id": "6366901UF1366N_part1",
+    "floors": 11,
+    "model": 33,
+    "roofMedian": 1.9,
+    "roofHigh": 3.64,
+    "groundAboveDatum": 0.56
+   },
+   {
+    "id": "6465301UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 1.88,
+    "roofHigh": 2.42,
+    "groundAboveDatum": -0.81
+   },
+   {
+    "id": "6465301UF1366N_part4",
+    "floors": 5,
+    "model": 15,
+    "roofMedian": 0.11,
+    "roofHigh": 2.28,
+    "groundAboveDatum": -0.74
+   },
+   {
+    "id": "6465301UF1366N_part5",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 0.03,
+    "roofHigh": 8.64,
+    "groundAboveDatum": -0.62
+   },
+   {
+    "id": "6465501UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.78,
+    "roofHigh": 3.98,
+    "groundAboveDatum": -0.51
+   },
+   {
+    "id": "6465502UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.75,
+    "roofHigh": 3.97,
+    "groundAboveDatum": -0.54
+   },
+   {
+    "id": "6465503UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.66,
+    "roofHigh": 4.01,
+    "groundAboveDatum": -0.52
+   },
+   {
+    "id": "6465504UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.87,
+    "roofHigh": 3.96,
+    "groundAboveDatum": -0.52
+   },
+   {
+    "id": "6465505UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.87,
+    "roofHigh": 4.03,
+    "groundAboveDatum": -0.53
+   },
+   {
+    "id": "6465506UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.69,
+    "roofHigh": 4.03,
+    "groundAboveDatum": -0.54
+   },
+   {
+    "id": "6465507UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 4.23,
+    "roofHigh": 6.06,
+    "groundAboveDatum": -0.71
+   },
+   {
+    "id": "6465508UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.65,
+    "roofHigh": 3.99,
+    "groundAboveDatum": -0.71
+   },
+   {
+    "id": "6465509UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.77,
+    "roofHigh": 4.02,
+    "groundAboveDatum": -0.74
+   },
+   {
+    "id": "6465510UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.47,
+    "roofHigh": 3.93,
+    "groundAboveDatum": -0.71
+   },
+   {
+    "id": "6465511UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.72,
+    "roofHigh": 3.94,
+    "groundAboveDatum": -0.74
+   },
+   {
+    "id": "6465512UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.67,
+    "roofHigh": 3.79,
+    "groundAboveDatum": -0.85
+   },
+   {
+    "id": "6465513UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.5,
+    "roofHigh": 3.86,
+    "groundAboveDatum": -0.82
+   },
+   {
+    "id": "6465514UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.77,
+    "roofHigh": 5.44,
+    "groundAboveDatum": -0.85
+   },
+   {
+    "id": "6465541UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.5,
+    "roofHigh": 3.79,
+    "groundAboveDatum": -0.82
+   },
+   {
+    "id": "6465541UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.22,
+    "roofHigh": 3.25,
+    "groundAboveDatum": -0.82
+   },
+   {
+    "id": "6465542UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.54,
+    "roofHigh": 3.99,
+    "groundAboveDatum": -0.79
+   },
+   {
+    "id": "6465543UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.55,
+    "roofHigh": 3.79,
+    "groundAboveDatum": -0.76
+   },
+   {
+    "id": "6465544UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.31,
+    "roofHigh": 3.82,
+    "groundAboveDatum": -0.78
+   },
+   {
+    "id": "6465545UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.47,
+    "roofHigh": 3.74,
+    "groundAboveDatum": -0.76
+   },
+   {
+    "id": "6465546UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.52,
+    "roofHigh": 3.94,
+    "groundAboveDatum": -0.75
+   },
+   {
+    "id": "6465547UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.78,
+    "roofHigh": 3.99,
+    "groundAboveDatum": -0.73
+   },
+   {
+    "id": "6465548UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.73,
+    "roofHigh": 3.76,
+    "groundAboveDatum": -0.76
+   },
+   {
+    "id": "6465549UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.84,
+    "roofHigh": 4.45,
+    "groundAboveDatum": -0.77
+   },
+   {
+    "id": "6465550UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.56,
+    "roofHigh": 4.01,
+    "groundAboveDatum": -0.77
+   },
+   {
+    "id": "6465551UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.59,
+    "roofHigh": 3.9,
+    "groundAboveDatum": -0.8
+   },
+   {
+    "id": "6465801UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 1.89,
+    "roofHigh": 1.96,
+    "groundAboveDatum": -1.34
+   },
+   {
+    "id": "6465801UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 0.13,
+    "roofHigh": 4.19,
+    "groundAboveDatum": -1.77
+   },
+   {
+    "id": "6465801UF1366N_part3",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 0.05,
+    "roofHigh": 0.61,
+    "groundAboveDatum": -1.26
+   },
+   {
+    "id": "6465801UF1366N_part4",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 2.68,
+    "roofHigh": 2.77,
+    "groundAboveDatum": -1.14
+   },
+   {
+    "id": "6465801UF1366N_part7",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.17,
+    "roofHigh": 3.35,
+    "groundAboveDatum": -1.0
+   },
+   {
+    "id": "6465801UF1366N_part8",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.44,
+    "roofHigh": 3.6,
+    "groundAboveDatum": -1.07
+   },
+   {
+    "id": "6466328UF1366N_part2",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 0.01,
+    "roofHigh": 0.03,
+    "groundAboveDatum": 1.04
+   },
+   {
+    "id": "6466329UF1366N_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 5.79,
+    "roofHigh": 5.94,
+    "groundAboveDatum": 0.92
+   },
+   {
+    "id": "6466330UF1366N_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.05,
+    "roofHigh": 6.25,
+    "groundAboveDatum": 0.95
+   },
+   {
+    "id": "6466331UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.55,
+    "roofHigh": 3.85,
+    "groundAboveDatum": 0.29
+   },
+   {
+    "id": "6466332UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.71,
+    "roofHigh": 3.98,
+    "groundAboveDatum": 0.31
+   },
+   {
+    "id": "6466333UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.79,
+    "roofHigh": 3.91,
+    "groundAboveDatum": 0.27
+   },
+   {
+    "id": "6466334UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.66,
+    "roofHigh": 3.95,
+    "groundAboveDatum": 0.26
+   },
+   {
+    "id": "6466335UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.71,
+    "roofHigh": 3.84,
+    "groundAboveDatum": 0.27
+   },
+   {
+    "id": "6466336UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.5,
+    "roofHigh": 3.94,
+    "groundAboveDatum": 0.28
+   },
+   {
+    "id": "6466337UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.81,
+    "roofHigh": 4.0,
+    "groundAboveDatum": 0.17
+   },
+   {
+    "id": "6466338UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.63,
+    "roofHigh": 3.98,
+    "groundAboveDatum": 0.22
+   },
+   {
+    "id": "6466339UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.69,
+    "roofHigh": 6.84,
+    "groundAboveDatum": 0.24
+   },
+   {
+    "id": "6466340UF1366N_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.49,
+    "roofHigh": 6.77,
+    "groundAboveDatum": 0.24
+   },
+   {
+    "id": "6466341UF1366N_part1",
+    "floors": 2,
+    "model": 6,
+    "roofMedian": 6.49,
+    "roofHigh": 6.67,
+    "groundAboveDatum": 0.24
+   },
+   {
+    "id": "6466342UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 7.0,
+    "roofHigh": 7.52,
+    "groundAboveDatum": 0.29
+   },
+   {
+    "id": "6466343UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 6.7,
+    "roofHigh": 6.84,
+    "groundAboveDatum": 0.27
+   },
+   {
+    "id": "6466344UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.62,
+    "roofHigh": 5.68,
+    "groundAboveDatum": 0.24
+   },
+   {
+    "id": "6466345UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.76,
+    "roofHigh": 6.55,
+    "groundAboveDatum": 0.33
+   },
+   {
+    "id": "6466346UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.74,
+    "roofHigh": 3.94,
+    "groundAboveDatum": 0.3
+   },
+   {
+    "id": "6466347UF1366N_part1",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.67,
+    "roofHigh": 3.83,
+    "groundAboveDatum": 0.36
+   },
+   {
+    "id": "6466348UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.61,
+    "roofHigh": 3.88,
+    "groundAboveDatum": 0.31
+   },
+   {
+    "id": "6466349UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.52,
+    "roofHigh": 3.7,
+    "groundAboveDatum": 0.34
+   },
+   {
+    "id": "6466350UF1366N_part2",
+    "floors": 1,
+    "model": 3,
+    "roofMedian": 3.61,
+    "roofHigh": 3.83,
+    "groundAboveDatum": 0.33
+   }
+  ]
+ },
+ "ground": {
+  "cells": 6663,
+  "medianMiss": -0.15,
+  "within25cm": 0.26,
+  "over50cm": 0.55,
+  "note": "model minus survey on a 2 m grid of open ground within 15 m of a house (buildings and pools left out)"
+ },
+ "registration": {
+  "east": 0.25,
+  "south": -1.5,
+  "fit": 0.404,
+  "fitUnshifted": 0.385,
+  "note": "best footprint shift against the 2014-15 2 m surface model; its grid is pixel-is-point, so about 1 m is within its own uncertainty"
+ },
+ "sources": "PNOA-LiDAR (c) Instituto Geografico Nacional de Espana, CC BY 4.0, via REDIAM, Junta de Andalucia (2020-21 V226 MDT 1 m; 2014-15 V208 MDS/MDT 2 m)."
+}
