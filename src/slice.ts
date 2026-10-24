@@ -1,8 +1,9 @@
 import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-frontages";
 import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
-import {setSilviaPavingUvs} from "./silvia-paving";
-import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
+import {outdoorPavingMaterial,outdoorPavingUv} from './silvia-outdoor-paving';
+import laneFrontages from '../data/middle_pool_lane_frontages.json';
+import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect} from "./silvia-map";
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
@@ -171,11 +172,11 @@ async function boot(): Promise<void> {
   if(host){
     const tunnel=createSilviaTunnel(!layoutOnly,(x,z,r)=>{const p=silviaWorld(x,z);return canPlaceDecoration(p[0],p[1],r);});tunnel.rotation.y=silviaRotation;
     const [x,z]=silviaWorld(0,0);tunnel.position.set(x,silviaY,z);scene.add(tunnel);
-    // A short street apron uses the same floor material, with no extra buildings or doors.
-    const original=tunnel.getObjectByName('T05-patterned-floor') as THREE.Mesh;
-    const apronGeo=new THREE.ShapeGeometry(shapeOf(silviaRect(-1.55,-3.65,1.55,-1.25)));
-    setSilviaPavingUvs(apronGeo,(x,y)=>silviaLocal(x,-y));
-    const apron=new THREE.Mesh(apronGeo,original.material);
+    // Plain outdoor paving reaches the estimated arch threshold; decorated tiles stay inside.
+    const approach=laneFrontages.paving.apron;
+    const apronGeo=new THREE.ShapeGeometry(shapeOf(silviaRect(approach.across[0],approach.along[0],approach.across[1],approach.along[1])));
+    const av=apronGeo.getAttribute('position'),au=apronGeo.getAttribute('uv');for(let i=0;i<au.count;i++)au.setXY(i,...outdoorPavingUv(av.getX(i),-av.getY(i)));
+    const apron=new THREE.Mesh(apronGeo,outdoorPavingMaterial());
     apron.rotation.x=-Math.PI/2;apron.position.y=silviaY+.051;apron.receiveShadow=true;apron.userData.noDrape=true;apron.name='silvia-street-connection';scene.add(apron);
     for(const along of [1,6]){const light=new THREE.PointLight('#fff0d4',1.5,7,2);const p=silviaWorld(0,along);light.position.set(p[0],silviaY+2.35,p[1]);scene.add(light);}
   }

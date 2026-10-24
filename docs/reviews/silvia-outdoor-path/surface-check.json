@@ -1,0 +1,100 @@
+{
+  "lane": [
+    {
+      "a": 11.8,
+      "name": "south-lane-four-column-paving",
+      "layout": "plain-four-column-exterior"
+    },
+    {
+      "a": 13,
+      "name": "south-lane-four-column-paving",
+      "layout": "plain-four-column-exterior"
+    },
+    {
+      "a": 14.6,
+      "name": "south-lane-four-column-paving",
+      "layout": "plain-four-column-exterior"
+    },
+    {
+      "a": 16,
+      "name": "south-lane-four-column-paving",
+      "layout": "plain-four-column-exterior"
+    }
+  ],
+  "apronUv": [
+    0.0016146797595358268,
+    0.0021583344374428567,
+    0.0004092413194340286
+  ],
+  "surfaces": [
+    {
+      "z": -3,
+      "name": "south-lane-four-column-paving",
+      "y": 0.0860000029206276,
+      "reference": false
+    },
+    {
+      "z": -1,
+      "name": "silvia-street-connection",
+      "y": 0.050999999999973754,
+      "reference": false
+    },
+    {
+      "z": -0.2,
+      "name": "silvia-street-connection",
+      "y": 0.050999999999973664,
+      "reference": false
+    },
+    {
+      "z": 0.2,
+      "name": "T05-patterned-floor",
+      "y": 0.05000000037252903,
+      "reference": false
+    },
+    {
+      "z": 2,
+      "name": "T05-patterned-floor",
+      "y": 0.05000000037252903,
+      "reference": false
+    },
+    {
+      "z": 8.6,
+      "name": "silvia-exit-path-fragment",
+      "y": 0.051999999999999554,
+      "reference": false
+    },
+    {
+      "z": 9.5,
+      "name": "silvia-exit-path-fragment",
+      "y": 0.05199999999999933,
+      "reference": false
+    },
+    {
+      "z": 10.3,
+      "name": "silvia-exit-path-fragment",
+      "y": 0.05199999999999933,
+      "reference": false
+    }
+  ],
+  "seams": [
+    {
+      "z": 8.425,
+      "uvA": [
+        0.09803920143608066,
+        8.259802039370427
+      ],
+      "uvB": [
+        0.09803919173945674,
+        8.259802120645695
+      ],
+      "delta": 8.185165610556681e-8
+    }
+  ],
+  "material": {
+    "pavingLayout": "offset-square-and-insert",
+    "tileSize": 0.24,
+    "insertSize": 0.06
+  },
+  "pebbleBands": 6,
+  "errors": []
+}

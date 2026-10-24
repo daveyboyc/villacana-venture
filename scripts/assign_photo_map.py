@@ -117,6 +117,8 @@ def features(s):
     frontages=json.loads((ROOT/'data/middle_pool_lane_frontages.json').read_text())
     paving=frontages['paving'];sections=paving['sections']
     add('middle_pool_lane_frontages.json:'+paving['id'],paving['name'],'reference feature','four observed tile columns; bounded model surface and row pitch estimated',evidence=paving['evidence'],ring=[south_at(a,left) for a,left,right in sections]+[south_at(a,right) for a,left,right in reversed(sections)])
+    apron=paving['apron'];a,b=apron['along'];c,d=apron['across']
+    add('middle_pool_lane_frontages.json:'+apron['id'],apron['name'],'reference feature','photo-supported plain material; estimated existing connection and threshold',evidence=apron['evidence'],ring=[entrance_point('silvia',p) for p in [(c,a),(d,a),(d,b),(c,b)]])
     for bed in frontages['beds']:
         add('middle_pool_lane_frontages.json:'+bed['id'],bed['name'],'reference feature','bounded draft from observed frontage; world placement estimated',evidence=bed['evidence'],ring=[south_at(*p) for p in bed['outline']])
     for opening in frontages['openings']:

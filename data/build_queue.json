@@ -1213,7 +1213,8 @@
    "features": [
     "middle_pool_lane_frontages.json:south-lane-four-column-paving",
     "silvia_tunnel.json:silvia-tunnel-study",
-    "middle_pool_south_gate.json:middle-pool-south-forecourt"
+    "middle_pool_south_gate.json:middle-pool-south-forecourt",
+    "middle_pool_lane_frontages.json:silvia-outdoor-apron"
    ],
    "build": "Correct exterior paving material and coherent outdoor continuation to the provisional tunnel mouth, using four lane-aligned plain square tile columns, broad mortar and worn colouring. Keep indoor hopscotch behind the arch and pool-side stone forecourt distinct.",
    "avoid": "No pool/gate/tunnel/planter/house/street/collision/level changes, no invented continuous bed/wall, no asserted photographic registration for the estimated connector.",
