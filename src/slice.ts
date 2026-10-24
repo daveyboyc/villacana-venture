@@ -1,6 +1,7 @@
 import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-frontages";
 import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
+import {setSilviaPavingUvs} from "./silvia-paving";
 import {SILVIA_HOST,SILVIA_CANOPY,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect,silviaLocal} from "./silvia-map";
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
@@ -171,8 +172,7 @@ async function boot(): Promise<void> {
     // A short street apron uses the same floor material, with no extra buildings or doors.
     const original=tunnel.getObjectByName('T05-patterned-floor') as THREE.Mesh;
     const apronGeo=new THREE.ShapeGeometry(shapeOf(silviaRect(-1.55,-3.65,1.55,-1.25)));
-    const uv=apronGeo.getAttribute('uv'),vertices=apronGeo.getAttribute('position');
-    for(let i=0;i<uv.count;i++){const [u,v]=silviaLocal(vertices.getX(i),-vertices.getY(i));uv.setXY(i,(u+2.65)/5.3,1-(v+1.25)/9.7);}
+    setSilviaPavingUvs(apronGeo,(x,y)=>silviaLocal(x,-y));
     const apron=new THREE.Mesh(apronGeo,original.material);
     apron.rotation.x=-Math.PI/2;apron.position.y=silviaY+.051;apron.receiveShadow=true;apron.userData.noDrape=true;apron.name='silvia-street-connection';scene.add(apron);
     for(const along of [1,6]){const light=new THREE.PointLight('#fff0d4',1.5,7,2);const p=silviaWorld(0,along);light.position.set(p[0],silviaY+2.35,p[1]);scene.add(light);}

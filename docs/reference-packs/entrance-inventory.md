@@ -37,7 +37,7 @@ Source groups remain distinct. Model states refer to draft snapshot 51b75f5. No 
 | T02 | Flat covered ceiling | IMG_2190.jpg | structure-unmapped | Full covered length, thickness and roof/upper-floor connection unmeasured. |
 | T03 | Side walls and belt moulding | IMG_2190.jpg, IMG_2191.jpg | structure-unmapped | Wall thickness, concealed turns and full side extents unresolved. |
 | T04 | Garden exit arch and onward path | IMG_2190.jpg | structure-unmapped | Exit bearing, complete path and relationship to A/B are not established. |
-| T05 | Patterned tunnel tiles and pebble inset | IMG_2190.jpg | material-only | Existing patterned-floor citation does not establish arches, ceiling or walk-through collision. Do not extend the four-course street grid here. |
+| T05 | Patterned tunnel tiles and pebble inset | IMG_2190.jpg | material-only | Existing patterned-floor citation does not establish arches, ceiling or walk-through collision. Do not extend the four-course street grid here. Exact tile pitch, camera pose, whole-field angle and surveyed registration remain uncalibrated. Earlier clipped-corner reading is superseded for the current source observation; historical PR108 model assessment is retained. |
 | T06 | Left near entrance door and threshold | IMG_2190.jpg | structure-unmapped | Private access and opening positions unregistered; do not treat as through routes. |
 | T07 | Hanging lantern | IMG_2190.jpg | unassessed | Further hidden fittings and exact mounting height unknown. |
 | T08 | Pots and shrubs | IMG_2190.jpg | unassessed | Species, permanent arrangement and concealed edges uncertain. |

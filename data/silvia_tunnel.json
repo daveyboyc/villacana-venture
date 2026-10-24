@@ -130,5 +130,17 @@
   "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near entrance",
   "Garden kerbs/path beyond exit are finite near fragments; full garden layout and hidden back edges remain untraced. Earlier illustrative tall garden pots are replaced by source-observed planted beds."
  ],
- "doorLeafWidth": 0.88
+ "doorLeafWidth": 0.88,
+ "paving": {
+  "layout": "offset-square-and-insert",
+  "tileSize": 0.24,
+  "insertSize": 0.06,
+  "angleDegrees": 0,
+  "wallPebbleWidth": 0.11,
+  "evidence": [
+   "IMG_2190.jpg",
+   "IMG_2191.jpg"
+  ],
+  "trust": "Reinspection24Oct: large terracotta tiles have square corners in an offset square-and-small-insert/hopscotch arrangement. Small blue/cream decorated squares run diagonally because adjacent large squares are staggered; not a uniform octagonal grid or a whole-field45degree diamond rotation. Large edges broadly follow the pebble inset and walls. .24m/.06m pitches, exact angle and .11m wall pebble band width are estimates; motifs schematic. Earlier clipped-corner wording remains historical and is superseded for this surface."
+ }
 }

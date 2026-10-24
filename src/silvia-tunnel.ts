@@ -4,6 +4,7 @@ import {routeClearance} from "./route-clearance";
 import {plasterMaterial} from "./materials";
 import type {Vec2} from "./types";
 import {addEntranceBeds,entranceBeds,entranceGardenPath} from './entrance-planters';
+import {silviaPavingMaterial,setSilviaPavingUvs} from './silvia-paving';
 
 export const silviaTunnel=data;
 const d=data.dimensions, half=d.width/2;
@@ -26,18 +27,11 @@ export const silviaTunnelRings=()=>[...tunnelWallParts().map(p=>rect(p.x,p.z,p.w
 
 /** Original procedural textures: no source-photo pixels are used. */
 function texture(draw:(g:CanvasRenderingContext2D,n:number)=>void,n=1024){const c=document.createElement('canvas');c.width=c.height=n;draw(c.getContext('2d')!,n);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=8;return t;}
-function tileTexture(){return texture((g,n)=>{
- const u=n/8;g.fillStyle='#b8ae96';g.fillRect(0,0,n,n);
- for(let j=-1;j<9;j++)for(let i=-1;i<9;i++){
-  const x=i*u,y=j*u,cut=u*.115,v=(i*23+j*17+300)%9;
-  g.fillStyle=`rgb(${163+v*4},${82+v*3},${49+v*2})`;
-  g.beginPath();g.moveTo(x+cut,y+2);g.lineTo(x+u-cut,y+2);g.lineTo(x+u-2,y+cut);g.lineTo(x+u-2,y+u-cut);g.lineTo(x+u-cut,y+u-2);g.lineTo(x+cut,y+u-2);g.lineTo(x+2,y+u-cut);g.lineTo(x+2,y+cut);g.closePath();g.fill();
-  for(let k=0;k<24;k++){g.fillStyle=k%2?'#ffffff07':'#381b1709';g.fillRect(x+5+(k*17%110),y+5+(k*29%110),18,2);}
-  const q=cut*1.45;g.fillStyle='#eee9d8';g.fillRect(x-q,y-q,q*2,q*2);g.strokeStyle='#224c75';g.lineWidth=1.7;g.strokeRect(x-q*.8,y-q*.8,q*1.6,q*1.6);
-  g.save();g.translate(x,y);g.rotate((i+j)%2?Math.PI/4:0);g.fillStyle='#254b6a';for(let k=0;k<4;k++){g.rotate(Math.PI/2);g.beginPath();g.ellipse(q*.35,0,q*.31,q*.13,0,0,Math.PI*2);g.fill();}g.restore();
- }
+function pebbleTexture(){return texture((g,n)=>{
+ g.fillStyle='#888477';g.fillRect(0,0,n,n);
+ const noise=(k:number)=>{const v=Math.sin(k*127.1)*43758.5453;return v-Math.floor(v);};
+ for(let i=0;i<21000;i++){const x=noise(i*3+1)*n,y=noise(i*3+2)*n;g.fillStyle=['#bdb7a5','#575449','#d3ccb8','#777366','#393a34'][i%5];g.beginPath();g.ellipse(x,y,2+noise(i+19)*2.3,2.5+noise(i+47)*3.4,noise(i+71)*Math.PI,0,Math.PI*2);g.fill();}
  });}
-function pebbleTexture(){return texture((g,n)=>{g.fillStyle='#9d9987';g.fillRect(0,0,n,n);for(let j=0;j<100;j++)for(let i=0;i<85;i++){const x=(i+.5*(j%2))*n/85,y=j*n/100;g.fillStyle=['#c9c4af','#4c5149','#e7e0c9','#818574'][(i*7+j*3)%4];g.beginPath();g.ellipse(x,y,3.1,4.7,(i+j)*.9,0,Math.PI*2);g.fill();}});}
 function woodTexture(){return texture((g,n)=>{g.fillStyle='#775a40';g.fillRect(0,0,n,n);for(let i=0;i<550;i++){g.strokeStyle=i%2?'#b79c6a12':'#1b160e18';g.lineWidth=i%3+1;const x=(i*31.7)%n;g.beginPath();g.moveTo(x,0);g.bezierCurveTo(x+9,n*.3,x-8,n*.7,x,n);g.stroke();}},512);}
 
 export function createSilviaTunnel(details=true,gardenClearance?:(x:number,z:number,r:number)=>boolean){
@@ -50,9 +44,9 @@ export function createSilviaTunnel(details=true,gardenClearance?:(x:number,z:num
  function mesh(geo:THREE.BufferGeometry,mat:THREE.Material,name:string,x=0,y=0,z=0,parent:THREE.Object3D=root){const m=new THREE.Mesh(geo,mat);m.name=name;m.position.set(x,y,z);m.castShadow=m.receiveShadow=true;parent.add(m);return m;}
  function box(name:string,x:number,y:number,z:number,w:number,h:number,l:number,mat:THREE.Material=plaster,parent:THREE.Object3D=root){return mesh(new THREE.BoxGeometry(w,h,l),mat,name,x,y,z,parent);}
  // A level slab, flat ceiling and actual U-shaped recess returns, not doors painted on a wall.
- const tiles=tileTexture();tiles.wrapS=tiles.wrapT=THREE.RepeatWrapping;tiles.repeat.set((d.width+2.2)/2.4,(d.length+2.5)/2.4);
- const floor=new THREE.MeshStandardMaterial({map:tiles,roughness:.83});
- box('T05-patterned-floor',0,.025,d.length/2,d.width+2.2,.05,d.length+2.5,floor);
+ const floor=silviaPavingMaterial();
+ const slab=box('T05-patterned-floor',0,.025,d.length/2,d.width+2.2,.05,d.length+2.5,floor);
+ setSilviaPavingUvs(slab.geometry,(x,_y,z)=>[x,z+d.length/2]);
  box('T02-flat-ceiling',0,d.ceiling+.15,d.length/2,d.width+2.1,.3,d.length);
  for(const p of tunnelWallParts()){
   if(p.id.endsWith('closed-door'))continue;
@@ -87,8 +81,13 @@ export function createSilviaTunnel(details=true,gardenClearance?:(x:number,z:num
  }
  // One observed pebble rectangle, distinct from the patterned terracotta field.
  const inset=data.pebbleInset,mid=(inset.along[0]+inset.along[1])/2,len=inset.along[1]-inset.along[0];
- box('T05-pebble-border',0,.056,mid,inset.width+.1,.015,len+.1,trim);
+ box('T05-pebble-border',0,.056,mid,inset.width+.1,.015,len+.1,new THREE.MeshStandardMaterial({color:'#afa38b',roughness:1}));
  box('T05-pebble-inset',0,.067,mid,inset.width,.012,len,new THREE.MeshStandardMaterial({map:pebbleTexture(),roughness:1}));
+ // Narrow pebble bands sit beside photographed wall fragments, leaving each door threshold clear.
+ const pebble=new THREE.MeshStandardMaterial({map:pebbleTexture(),roughness:1}),band=data.paving.wallPebbleWidth;
+ for(const p of tunnelWallParts().filter(p=>p.id.startsWith('wall-'))){
+  box('T05-wall-pebbles-'+p.id,Math.sign(p.x)*(half-band/2),.052,p.z,band,.002,p.l,pebble);
+ }
  // Plaque and services remain on the entry's right wall, not a mirrored extra door.
  const sign=texture((g,n)=>{g.fillStyle='#eee8d8';g.fillRect(0,0,n,n);const words=['CALLE','SILVIA','1','15'],widths=[.25,.35,.12,.16];let x=n*.02;g.textAlign='center';g.textBaseline='middle';for(let i=0;i<4;i++){const w=widths[i]*n;g.fillStyle='#183a58';g.fillRect(x,n*.35,w,n*.3);g.strokeStyle='#faf5dd';g.lineWidth=3;g.strokeRect(x+4,n*.35+4,w-8,n*.3-8);g.fillStyle='#faf5dd';g.font=`${i<2?115:160}px Georgia`;g.fillText(words[i],x+w/2,n*.51,w-10);x+=w+n*.02;}});
  const plaque=mesh(new THREE.PlaneGeometry(1.25,1.25),new THREE.MeshStandardMaterial({map:sign,transparent:false,side:THREE.DoubleSide,roughness:.9}),'T09-CALLE-SILVIA-1-15',-half+.008,1.48,.9);plaque.rotation.y=Math.PI/2;
@@ -108,8 +107,7 @@ export function createSilviaTunnel(details=true,gardenClearance?:(x:number,z:num
  // The photographed garden has low kerbed beds beyond the arch, distinct from the four pots inside.
  addEntranceBeds(root,'silvia',details,false,gardenClearance);
  const pathShape=new THREE.Shape(entranceGardenPath.ring.map(([x,z])=>new THREE.Vector2(x,-z)));
- const pathGeometry=new THREE.ShapeGeometry(pathShape),pathPositions=pathGeometry.getAttribute('position'),pathUv=pathGeometry.getAttribute('uv');
- for(let i=0;i<pathUv.count;i++)pathUv.setXY(i,(pathPositions.getX(i)+2.65)/5.3,1-(-pathPositions.getY(i)+1.25)/9.7);
+ const pathGeometry=setSilviaPavingUvs(new THREE.ShapeGeometry(pathShape),(x,y)=>[x,-y]);
  const gardenFloor=new THREE.Mesh(pathGeometry.rotateX(-Math.PI/2),floor);
  gardenFloor.name=entranceGardenPath.id;gardenFloor.position.y=.052;gardenFloor.receiveShadow=true;root.add(gardenFloor);
  if(details){for(const p of data.pots){

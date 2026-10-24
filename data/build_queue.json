@@ -1157,7 +1157,8 @@
    ],
    "status": "in-progress",
    "owner": "Codex",
-   "dependsOn": []
+   "dependsOn": [],
+   "notes": "Full2190/2191 reinspection and independent final renders correct earlier clipped-corner reading: offset large square tiles and small decorated squares create diagonal insert runs, not a uniform octagon grid or whole-field45degree rotation. Coherent metric UVs across slab/apron/garden, varied worn tiles/inserts, granular inset and finite wall pebble bands. Original geometry extents, transforms, collision, levels, doors/pots/planters and street grid retained. Material pitches/motifs/angle remain estimates; placement remains unapproved and task in progress. See docs/reviews/silvia-paving/."
   }
  ]
 }

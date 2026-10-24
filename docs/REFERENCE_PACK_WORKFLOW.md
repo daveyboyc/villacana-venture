@@ -18,7 +18,7 @@ unresolved. The owner has been asked which tunnel entrance they mean.
 
 Signs identify the Silvia 1–15 set separately from Jorge 27–35. The latter's
 radial fanlight gate must not be transferred into Silvia. Similarly, four square
-street-tile courses and the tunnel's clipped-corner tiles with blue/white inserts
+street-tile courses and the tunnel's offset square tiles with blue/white inserts
 are distinct observations. The arch opening has a flat ceiling behind it; drawing
 a barrel vault would add unsupported structure.
 
@@ -127,3 +127,9 @@ beyond the Silvia arch and A14 for the low opposite pool-hedge kerb. These are
 source observations with locators, not new approvals of the historical PR108
 model snapshot. See docs/reviews/silvia-entrance-planters/ for current scoped
 implementation, actual-app renders, satellite overlay and independent review.
+
+24 October floor reinspection supersedes the early clipped-corner shorthand for
+Silvia: large red square units offset around smaller decorated squares create
+diagonal insert runs. The material pass uses one metric UV frame across the
+existing slab/apron/garden path. Exact tile sizes/angle and hidden path extents
+remain estimates; see docs/reviews/silvia-paving/.
