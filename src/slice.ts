@@ -166,7 +166,7 @@ async function boot(): Promise<void> {
   // Same level datum as the surrounding host; the model is deliberately not terrain-draped.
   const silviaY=liveGroundY(hostCentre.x,hostCentre.z);
   if(host){
-    const tunnel=createSilviaTunnel(!layoutOnly);tunnel.rotation.y=silviaRotation;
+    const tunnel=createSilviaTunnel(!layoutOnly,(x,z,r)=>{const p=silviaWorld(x,z);return canPlaceDecoration(p[0],p[1],r);});tunnel.rotation.y=silviaRotation;
     const [x,z]=silviaWorld(0,0);tunnel.position.set(x,silviaY,z);scene.add(tunnel);
     // A short street apron uses the same floor material, with no extra buildings or doors.
     const original=tunnel.getObjectByName('T05-patterned-floor') as THREE.Mesh;

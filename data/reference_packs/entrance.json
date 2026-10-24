@@ -293,6 +293,21 @@
             522
           ],
           "note": "Source-local locator; no measured footprint or cross-view instance identity claimed."
+        },
+        {
+          "feature": "A14",
+          "kind": "locator",
+          "bbox": [
+            1,
+            730,
+            168,
+            1075
+          ],
+          "label": [
+            28,
+            900
+          ],
+          "note": "Low weathered edge at hedge base; leaves hide much of it. Full2192 reinspection corroborates appearance; no raised mirror bed."
         }
       ]
     },
@@ -762,6 +777,36 @@
             819,
             638
           ]
+        },
+        {
+          "feature": "T15",
+          "kind": "locator",
+          "bbox": [
+            575,
+            760,
+            706,
+            851
+          ],
+          "label": [
+            655,
+            837
+          ],
+          "note": "Pale low right kerb and strappy planting beyond the arch; locator only, hidden back/end not traced."
+        },
+        {
+          "feature": "T16",
+          "kind": "locator",
+          "bbox": [
+            438,
+            802,
+            488,
+            852
+          ],
+          "label": [
+            450,
+            831
+          ],
+          "note": "Tiny pale return, partly behind threshold pot. May be arch/plinth; does not establish a separate structural bed. Locator only; left greenery remains visible."
         }
       ]
     },
@@ -1980,6 +2025,69 @@
       ],
       "followUp": "silvia-tunnel-details",
       "studyRepresentation": "Owner-corrected source-relative draft: one normal-width wooden leaf and one round gold knob at every entrance. Wider bays have white side infill. World placement remains unresolved."
+    },
+    {
+      "id": "T15",
+      "scene": "T",
+      "name": "Garden exit right low planter kerb",
+      "category": "planting-edge",
+      "priority": "structure",
+      "observed": "Low pale kerb beyond the garden arch steps/angles around strappy planting and a tree pocket; distinct from the threshold pot.",
+      "modelStatus": "unassessed",
+      "modelRevision": null,
+      "modelFeatureIds": [],
+      "unknown": "Concealed rear boundary, full garden extent, metre dimensions and world registration unresolved.",
+      "buildReady": false,
+      "requirements": [
+        "Keep this source-observed low edge finite and asymmetric; preserve the open path. Do not infer hidden enclosure boundaries."
+      ],
+      "evidence": [
+        "IMG_2190.jpg"
+      ],
+      "followUp": "silvia-entrance-planters",
+      "studyRepresentation": "24 October bounded implementation is reviewed separately in docs/reviews/silvia-entrance-planters/. The pinned PR108 inventory snapshot remains historical; these rows do not grant placement approval."
+    },
+    {
+      "id": "T16",
+      "scene": "T",
+      "name": "Garden exit left greenery and uncertain pale return",
+      "category": "planting-edge",
+      "priority": "structure",
+      "observed": "Greenery is visible beyond the left threshold pot; the small pale return is heavily occluded and may be arch-base/plinth rather than a separate planter edge.",
+      "modelStatus": "unassessed",
+      "modelRevision": null,
+      "modelFeatureIds": [],
+      "unknown": "Separate built-in bed identity is unestablished. Represent bounded greenery only; no matching structural left bed or enclosed soil polygon.",
+      "buildReady": false,
+      "requirements": [
+        "Represent only visible finite greenery. Keep a separate structural bed, enclosed soil, inferred wall and collision absent until the pale return is identified."
+      ],
+      "evidence": [
+        "IMG_2190.jpg"
+      ],
+      "followUp": "silvia-entrance-planters",
+      "studyRepresentation": "24 October bounded implementation is reviewed separately in docs/reviews/silvia-entrance-planters/. The pinned PR108 inventory snapshot remains historical; these rows do not grant placement approval."
+    },
+    {
+      "id": "A14",
+      "scene": "A",
+      "name": "Low kerb beneath opposite pool-entry hedge",
+      "category": "planting-edge",
+      "priority": "structure",
+      "observed": "A low weathered grey/beige kerb face borders the stone path beneath the opposite hedge, partly screened by leaves.",
+      "modelStatus": "unassessed",
+      "modelRevision": null,
+      "modelFeatureIds": [],
+      "unknown": "Exact height, hidden back edge, continuation and mapped Eva crossing remain unresolved.",
+      "buildReady": false,
+      "requirements": [
+        "Keep this source-observed low edge finite and asymmetric; preserve the open path. Do not infer hidden enclosure boundaries."
+      ],
+      "evidence": [
+        "IMG_2334.jpg"
+      ],
+      "followUp": "silvia-entrance-planters",
+      "studyRepresentation": "24 October bounded implementation is reviewed separately in docs/reviews/silvia-entrance-planters/. The pinned PR108 inventory snapshot remains historical; these rows do not grant placement approval."
     }
   ],
   "relationships": [

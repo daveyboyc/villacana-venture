@@ -1,4 +1,5 @@
 import {laneBeds,laneOpenings,laneBedRing,laneGrilleRing,lanePaving,lanePavingRing} from "./middle-pool-lane-frontages";
+import {entranceBeds,entranceWorld,entrancePathRing} from './entrance-planters';
 import {silviaFloor,silviaWallRings} from "./silvia-map";
 import {northPoolGardenPathBlueprint} from "./north-pool-gardens";
 import {northWestCanopyBlueprint} from "./north-west-canopies";
@@ -376,7 +377,9 @@ async function boot(): Promise<void> {
   const silviaOverlay=el('g',{id:'silvia-main-map',role:'button',tabindex:'0','aria-label':'Walk through the Silvia tunnel (approximate map position)',cursor:'pointer'});
   const silviaTitle=el('title',{});silviaTitle.textContent='Silvia tunnel · approximate position · click to walk';silviaOverlay.append(silviaTitle);
   silviaOverlay.append(el('path',{d:path(silviaFloor),fill:'#cfaa83',stroke:'#a86e38','stroke-width':.2,'stroke-dasharray':'.6 .4'}));
+  silviaOverlay.append(el('path',{d:path(entrancePathRing()),fill:'#cfaa83','data-planter-id':'silvia-exit-path-fragment'}));
   for(const ring of silviaWallRings())silviaOverlay.append(el('path',{d:path(ring),fill:'#fff9e8',stroke:'#60574c','stroke-width':.12}));
+  for(const bed of entranceBeds){const ring=bed.ring.map(p=>entranceWorld(bed.frame as 'silvia'|'pool',p as Vec2));const node=el('path',{d:path(ring),fill:'#74805b',stroke:bed.kind==='kerbed-bed'?bed.color:'#74805b','fill-opacity':bed.kind==='kerbed-bed'?1:.25,'stroke-dasharray':bed.kind==='kerbed-bed'?'none':'.2 .2','stroke-width':Math.max(.04,bed.wall),'data-planter-id':bed.id});const title=el('title',{});title.textContent=bed.name+': '+bed.trust;node.append(title);(bed.frame==='silvia'?silviaOverlay:frontages).append(node);}
   const visitSilvia=()=>document.querySelector<HTMLButtonElement>('#visit-silvia')?.click();
   silviaOverlay.addEventListener('click',visitSilvia);silviaOverlay.addEventListener('keydown',event=>{if(event.key==='Enter')visitSilvia();});
   world.append(silviaOverlay);

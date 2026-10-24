@@ -40,4 +40,10 @@
 <g class="annotation" data-feature="T14" role="button" tabindex="0" aria-label="T14 Right inner entrance recess"><title>Right inner entrance recess: A narrow shadowed side-opening fragment is partly hidden behind the white pier in IMG_2190. The photo does not expose the full door or recess depth.</title>
 <rect class="locator" x="789" y="551" width="61" height="252" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
 <rect x="784" y="615" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="819" y="649" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T14</text></g>
+<g class="annotation" data-feature="T15" role="button" tabindex="0" aria-label="T15 Garden exit right low planter kerb"><title>Garden exit right low planter kerb: Low pale kerb beyond the garden arch steps/angles around strappy planting and a tree pocket; distinct from the threshold pot.</title>
+<rect class="locator" x="575" y="760" width="131" height="91" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="620" y="814" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="655" y="848" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T15</text></g>
+<g class="annotation" data-feature="T16" role="button" tabindex="0" aria-label="T16 Garden exit left greenery and uncertain pale return"><title>Garden exit left greenery and uncertain pale return: Greenery is visible beyond the left threshold pot; the small pale return is heavily occluded and may be arch-base/plinth rather than a separate planter edge.</title>
+<rect class="locator" x="438" y="802" width="50" height="50" fill="none" stroke="#be4869" stroke-width="4" stroke-dasharray="12 8"/>
+<rect x="415" y="808" width="70" height="46" rx="12" fill="#be4869" stroke="white" stroke-width="3"/><text x="450" y="842" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="29" fill="white">T16</text></g>
 </svg>

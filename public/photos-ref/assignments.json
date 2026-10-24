@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 366,
+  "features": 370,
   "photosCitedByModel": 99,
-  "modelFeaturesWithPhotoCitations": 111
+  "modelFeaturesWithPhotoCitations": 115
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -351,7 +351,10 @@
    ],
    "citedBy": [
     "silvia_tunnel.json:silvia-tunnel-study",
-    "seaward_paving.json:silvia-patterned-floor"
+    "seaward_paving.json:silvia-patterned-floor",
+    "entrance_planters.json:silvia-exit-right-planter",
+    "entrance_planters.json:silvia-exit-left-planting-fragment",
+    "entrance_planters.json:silvia-exit-path-fragment"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -429,7 +432,8 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "middle_pool_south_gate.json:middle-pool-south-gate"
+    "middle_pool_south_gate.json:middle-pool-south-gate",
+    "entrance_planters.json:silvia-pool-entry-hedge-kerb"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -4708,6 +4712,7 @@
     "middle_pool_south_gate.json:middle-pool-south-gate",
     "middle_pool_south_gate.json:middle-pool-south-forecourt",
     "middle_pool_south_gate.json:middle-pool-south-east-hedge",
+    "entrance_planters.json:silvia-pool-entry-hedge-kerb",
     "middle_pool_lane_frontages.json:south-lane-four-column-paving",
     "middle_pool_lane_frontages.json:south-lane-left-border",
     "middle_pool_lane_frontages.json:south-lane-right-near-bed",

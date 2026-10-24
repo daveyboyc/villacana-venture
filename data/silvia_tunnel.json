@@ -121,33 +121,14 @@
    "radius": 0.23,
    "height": 0.4,
    "foliage": 0.85
-  },
-  {
-   "id": "garden-left-fragment",
-   "at": [
-    1.55,
-    8.7
-   ],
-   "radius": 0.28,
-   "height": 0.4,
-   "foliage": 2.05
-  },
-  {
-   "id": "garden-right-fragment",
-   "at": [
-    -1.55,
-    8.5
-   ],
-   "radius": 0.26,
-   "height": 0.4,
-   "foliage": 1.85
   }
  ],
  "unknown": [
   "Global entrance footprint and connection to other lanes",
   "Surveyed width/length/height and recess depths",
   "Precise exterior garden layout beyond the exit",
-  "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near entrance"
+  "T12 is not an additional doorway: plaque-view door corresponds provisionally to the right-near entrance",
+  "Garden kerbs/path beyond exit are finite near fragments; full garden layout and hidden back edges remain untraced. Earlier illustrative tall garden pots are replaced by source-observed planted beds."
  ],
  "doorLeafWidth": 0.88
 }

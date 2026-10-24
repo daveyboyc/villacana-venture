@@ -353,6 +353,27 @@ const path = require("node:path");
       if(!plants.children.some(p=>p.name.startsWith('bench-cypress-'))||!plants.children.some(p=>p.name.startsWith('bench-geranium-')))throw Error('Photographed bench planting missing');
       const v=new THREE.Vector3();plants.traverse(mesh=>{if(!mesh.isMesh)return;const p=mesh.geometry.getAttribute('position');for(let i=0;i<p.count;i++){v.fromBufferAttribute(p,i).applyMatrix4(mesh.matrixWorld);if(!routeClearance(routes,v.x,v.z,0))throw Error('Visible bench planting intrudes on a protected route');}});
     }
+    // The actual garden approach stays open between the low, asymmetric entrance beds.
+    {
+      const {entranceBeds,entranceWorld,entranceBedRings}=await import('/src/entrance-planters.ts');
+      const {createSilviaTunnel}=await import('/src/silvia-tunnel.ts');
+      const {silviaWorld,silviaRotation}=await import('/src/silvia-map.ts');
+      walk([silviaWorld(0,-2),silviaWorld(0,10.7)]);walk([silviaWorld(0,10.7),silviaWorld(0,-2)]);
+      for(const bed of entranceBeds){
+        if(!document.querySelector(`[data-planter-id="${bed.id}"]`))throw Error('Entrance planter missing from map: '+bed.id);
+        if(bed.kind!=='kerbed-bed')continue;
+        const ring=bed.ring.map(p=>entranceWorld(bed.frame,p)),c=ring.reduce((a,p)=>[a[0]+p[0]/ring.length,a[1]+p[1]/ring.length],[0,0]),out=world.solids.resolve(...c,.42);
+        if(Math.hypot(out.x-c[0],out.z-c[1])<.05)throw Error('Entrance planter is missing from real collision: '+bed.id);
+      }
+      const details=createSilviaTunnel(true),layout=createSilviaTunnel(false);
+      details.rotation.y=silviaRotation;const [x,z]=silviaWorld(0,0);details.position.set(x,0,z);details.updateMatrixWorld(true);
+      const garden=details.getObjectByName('silvia-entrance-planters'),bare=layout.getObjectByName('silvia-entrance-planters');
+      if(!garden||!bare||bare.children.some(m=>m.name.includes('-plant-')))throw Error('Garden beds/Details separation failed');
+      if(garden.children.filter(m=>m.name.includes('-plant-')).length!==4||garden.userData.omittedPlants.length)throw Error('Bounded source plants missing');
+      const v=new THREE.Vector3();
+      garden.traverse(mesh=>{if(!mesh.isMesh)return;const positions=mesh.geometry.getAttribute('position');for(let i=0;i<positions.count;i++){v.fromBufferAttribute(positions,i).applyMatrix4(mesh.matrixWorld);if(!routeClearance(routes,v.x,v.z,0))throw Error('Visible entrance planting or kerb blocks a named route');}});
+      if(entranceBedRings('silvia').length!==1)throw Error('Unexpected garden enclosure fragments');
+    }
     // The photo-supported forecourt replaces the drawn road surface without moving its through routes.
     walk([middleSouthAt(-4.8),middleSouthAt(1.8)]);
     walk([middleSouthAt(1.8),middleSouthAt(-4.8)]);
