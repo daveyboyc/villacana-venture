@@ -56,7 +56,7 @@ export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: 
     // How far the ground at each edge's middle bends away from the straight edge.
     const bend = Math.max(Math.abs(ab.h - (a.h + b.h) / 2), Math.abs(bc.h - (b.h + c.h) / 2), Math.abs(ca.h - (c.h + a.h) / 2));
     const longest = Math.max(Math.hypot(a.p[0] - b.p[0], a.p[2] - b.p[2]), Math.hypot(b.p[0] - c.p[0], b.p[2] - c.p[2]), Math.hypot(c.p[0] - a.p[0], c.p[2] - a.p[2]));
-    if (depth && longest > 1.5 && (bend > 0.02 || uneven && longest > 6)) { emit(a, ab, ca, depth - 1); emit(ab, b, bc, depth - 1); emit(ca, bc, c, depth - 1); emit(ab, bc, ca, depth - 1); return; }
+    if (depth && longest > 1.5 && (bend > 0.008 || uneven && longest > 4)) { emit(a, ab, ca, depth - 1); emit(ab, b, bc, depth - 1); emit(ca, bc, c, depth - 1); emit(ab, bc, ca, depth - 1); return; }
     for (const q of [a, b, c]) { if (q.h) lifted = true; outP.push(q.p[0], q.p[1] + q.h, q.p[2]); outU.push(...q.u); }
   };
   const groups:{start:number;count:number;materialIndex:number}[]=[];

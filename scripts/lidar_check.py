@@ -359,7 +359,13 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
     raised = [(t['outline'], bool(t.get('walkable'))) for t in json.loads((ROOT / 'data/raised_terraces.json').read_text())['terraces']]
     raised += [(json.loads((ROOT / 'data/cervantes_garden_door.json').read_text())['patio']['ring'], False),
                (json.loads((ROOT / 'data/picasso_service_road.json').read_text())['ramp']['ring'], False)]
-    for ring, _ in raised:
+    # The south Dalí flagstone approach rises a photo-read amount from the asphalt at its foot.
+    ap = json.loads((ROOT / 'data/door_sills.json').read_text())['approach']
+    out, right = np.array(ap['outward']), np.array([ap['outward'][1], -ap['outward'][0]])
+    side = ap['halfWidth'] + ap['kerbWidth']
+    corner = lambda t, q: (np.array(ap['arch']) + out * t + right * q).tolist()
+    approach = [corner(0, -side), corner(ap['foot'], -side), corner(ap['foot'], side + ap['flare']['extra']), corner(0, side + ap['flare']['extra'])]
+    for ring in [r for r, _ in raised] + [approach]:
         unknown |= within(ring, 1.0)
     # Narrow lanes run between houses: the survey reads their surface directly, so keep it there.
     skeleton = json.loads((ROOT / 'public/map/skeleton.json').read_text())
@@ -373,10 +379,10 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
     smooth = gaussian_filter(filled, 1.0)
     from scipy.ndimage import distance_transform_edt
 
-    def hold(ring, value, core, blend):
-        """Hold the ground level within `core` metres of a ring, blending back over `blend` more."""
+    def hold(ring, value, core, blend, inside=None):
+        """Hold the ground level within `core` metres of a ring (or a given mask), blending back over `blend` more."""
         nonlocal smooth
-        inside = within(ring, core)
+        inside = within(ring, core) if inside is None else inside
         weight = np.clip(distance_transform_edt(~inside) / blend, 0, 1)
         smooth = value + (smooth - value) * weight
 
@@ -395,6 +401,14 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
         band = within(ring, 6.0) & ~within(ring, 4.0) & known
         if near or band.any():
             hold(ring, near[0] if near else float(np.percentile(height[band], 20)), 3.0 if walkable else 0.5, 2.0)
+    foot = corner(ap['foot'], 0)
+    hold(approach, float(ground.at(*foot)) - datum, 0.5, 2.0)
+    # The paseo and its retaining wall keep the seafront's own heights (src/seaside.ts, main_pool.json
+    # seafront) on the old street datum; the survey puts the gardens behind the wall 0.1-0.6 m higher.
+    # Until the seafront is rebuilt from the survey, the strip behind the wall stays at that datum,
+    # so the photographed 1 m wall keeps its height.
+    face = json.loads((ROOT / 'data/paseo_wall.json').read_text())['wall']['face']
+    hold(None, 0.0, 0, 4.0, inside=along([q[:2] for q in face], 3.0))
     for pid, ring in pools.items():
         smooth = np.where(within(ring, 1.0), deck_level[pid], smooth)
     k = int(round(step))
