@@ -114,7 +114,8 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
     geometry.computeVertexNormals();
     const m = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ color, roughness: 0.95, side: THREE.DoubleSide }));
-    m.receiveShadow = shadow; m.userData.referenceSurface = true; scene.add(m);
+    // The seaside has its own heights, as the player's ground does in its zone: not draped over siteY.
+    m.receiveShadow = shadow; m.userData.referenceSurface = true; m.userData.noDrape = true; scene.add(m);
   };
   mesh(sand, SAND);
 

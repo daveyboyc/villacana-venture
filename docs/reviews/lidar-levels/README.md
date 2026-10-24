@@ -24,6 +24,14 @@ environment. The tiles stay out of the repository (`layout-checks.local/lidar`).
 
 ## Findings
 
+> **Update, 24 October (task `terrain-from-lidar`).** The ground now follows a 2 m grid from this
+> survey (`data/terrain.json`, `docs/TERRAIN.md`), and `measurements.json` and
+> `ground-difference.png` are refreshed for it: 92% of the open ground near houses is within
+> 0.25 m of the survey (was 26%), pool decks are within 0.04 m, and every street's median miss is
+> 0.06–0.11 m. Findings 1 and 2 below describe the model before that change; before and after
+> numbers are in `docs/reviews/terrain-from-lidar`.
+
+
 **1. The ground is not flat; the model mostly is.** The block falls about 3 m from its
 north-west corner to the main pool and the paseo. The model has one 0.5 m rise on the Dalí side
 and keeps everything else at zero.
@@ -91,8 +99,8 @@ a metre; the large errors are vertical.
 - The two surveys are about six years apart. Their ground under the middle pool deck agrees to
   0.05 m (5.00 against 5.05 m).
 - Survey heights are ground and roof surfaces, not floor levels, door sills or parapet tops.
-- These are measurements, not placement approvals (`docs/PLACEMENT_VERIFICATION.md`). No model
-  geometry changed.
+- These are measurements, not placement approvals (`docs/PLACEMENT_VERIFICATION.md`). This
+  report changed no geometry; `terrain-from-lidar` then rebuilt the ground from it.
 
 Sources: PNOA-LiDAR © Instituto Geográfico Nacional de España (CC BY 4.0), via REDIAM, Junta de
 Andalucía. REDIAM's own terms for this folder were not found; only derived maps and numbers are

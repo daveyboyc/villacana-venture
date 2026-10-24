@@ -40,7 +40,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
-import { drapeScene, siteY } from "./terrain";
+import { drapeScene, groundSheet, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
@@ -163,7 +163,7 @@ async function boot(): Promise<void> {
   if ((mainPool || shown.some((p) => p.id === "south")) && skeleton.seafront) seaside = makeSeaside(skeleton.seafront, skeleton.viewRotation);
   await addGround(scene, skeleton, centre, poolRings);
   addFrontageDivisions(scene);
-  if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => poolGroundY(x, z) + laneDrop(lowered, x, z));
+  if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const host=buildings.find(b=>b.id===SILVIA_HOST);
@@ -643,11 +643,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const material=groundMaterial(texture,lawnMask,span*2);
   // The ground is one sheet with the pools cut out of it.
   const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
-  const sheet = shapeOf(
-    [[centre.x - span, centre.z - span], [centre.x + span, centre.z - span], [centre.x + span, centre.z + span], [centre.x - span, centre.z + span]],
-    showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:pools,
-  );
-  const geometry = new THREE.ShapeGeometry(sheet).rotateX(-Math.PI / 2);
+  const geometry = groundSheet([centre.x - span, centre.z - span], [centre.x + span, centre.z + span],
+    showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:pools);
   if(showLowerDeck) for(const ring of lowerPoolHoles) {const island=new THREE.Mesh(new THREE.ShapeGeometry(shapeOf(ring)).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:"#c78667",roughness:0.95}));island.userData.referenceSurface=true;scene.add(island);}
   const at = geometry.getAttribute("position");
   const uv = geometry.getAttribute("uv");
