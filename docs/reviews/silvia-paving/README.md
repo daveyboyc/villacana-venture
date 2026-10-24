@@ -48,3 +48,12 @@ The task stays in progress because exact placement has no fresh measured packet.
 This material/source correction does not approve the provisional tunnel host,
 hidden path boundaries or pool spacing. Final software outcomes are recorded in
 `validation.json`; the placement gate output is retained separately.
+
+## Concurrent main update
+
+Main PR117 (`e0e9278`) added an optional solved-photo-camera mode while this
+material pass was in review. Its code, queue tasks and north-pool findings are
+preserved; generated graph/reference files were regenerated after merging it.
+TypeScript/production build,60 Python tests and the actual-scene paving check
+were checked on the combined code. This task does not create or claim a solved
+Silvia camera: the normal first-person comparisons remain illustrative.

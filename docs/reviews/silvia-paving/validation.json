@@ -35,5 +35,11 @@
     "Insert artwork, grout/wear and pebble organization schematic",
     "Garden path cutoff remains a finite model boundary",
     "Existing host/direction and spacing disputes remain open"
-  ]
+  ],
+  "mainIntegration": {
+    "revision": "e0e92789c89f2d34cf5e3ac7efddc456ad56efaf",
+    "change": "Preserve PR117 photo-camera alignment mode and new north-pool follow-up; generated files regenerated, task queues combined.",
+    "checks": "TypeScript/production build and60 Python tests pass after merge; actual-scene paving test rerun on combined code.",
+    "cameraLimitation": "No calibrated Silvia pose exists in this task. Before/after remain illustrative; no photogrammetric measurement or exact-match claim."
+  }
 }

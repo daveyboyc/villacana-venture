@@ -57,6 +57,9 @@ def metadata(path:Path)->dict:
         elif heading is not None:entry['headingBasis']='Magnetic/unknown direction; no true-north wedge inferred'
         taken=exif.get_ifd(0x8769).get(0x9003) if exif else None
         if taken:entry['taken']=str(taken)[:10].replace(':','-')
+        # The lens's 35 mm-equivalent focal length fixes the field of view for scripts/photo_pose.py.
+        focal=number(exif.get_ifd(0x8769).get(0xA405)) if exif else None
+        if focal:entry['focal35']=round(focal,1)
         return entry
 
 def index(source:Path,out:Path,annotations:dict|None=None)->list[dict]:
