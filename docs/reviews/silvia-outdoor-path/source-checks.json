@@ -16,7 +16,7 @@
   },
   "check_terrain": {
     "exitCode": 0,
-    "output": "Terrain: Dal\u00ed side 0.5 m up, pools level, Cervantes ramp and middle pool steps where photographed, walkable slopes PASS",
+    "output": "Terrain: laser-survey grid (attributed), pools level at surveyed decks, photographed flights exact, Dal\u00ed side up, lanes walkable PASS",
     "stderr": ""
   },
   "check_dali_threshold": {
@@ -56,7 +56,7 @@
   },
   "check_levels": {
     "exitCode": 0,
-    "output": "cervantes-elena-ramp         photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-elena-steps        photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-upper-lane         photo 0.00-0.15 m  model 0.00 m  ok\n  dali-cervantes-apron         photo 0.00-0.15 m  model 0.00 m  ok\n  middle-pool-sw-rise          photo 0.45-0.55 m  model 0.50 m  ok\n  middle-pool-nw-rise          photo 0.30-0.55 m  model 0.50 m  ok\n  middle-pool-gates-level      photo 0.00-0.05 m  model 0.00 m  ok\nLevels survey: 22 items, 0 level changes queued, built items match the terrain PASS",
+    "output": "cervantes-elena-ramp         photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-elena-steps        photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-upper-lane         photo 0.00-0.15 m  model 0.09 m  ok\n  dali-cervantes-apron         photo 0.00-0.15 m  model 0.20 m  ok\n  middle-pool-sw-rise          photo 0.45-0.55 m  model 0.53 m  ok\n  middle-pool-nw-rise          photo 0.30-0.55 m  model 0.52 m  ok\n  middle-pool-gates-level      photo 0.00-0.05 m  model 0.03 m  ok\nLevels survey: 22 items, 0 level changes queued, built items match the terrain PASS",
     "stderr": ""
   },
   "check_lowered_lanes": {

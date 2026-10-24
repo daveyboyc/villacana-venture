@@ -118,6 +118,96 @@ placement gate remains failed, including the new apron and lane surface. No
 placement approval is supplied by this material review.
 
 The initial threshold pair was byte-identical before/after and showed only the
-interior, so it did **not** verify the exterior/indoor transition visually. A closer
-and downward-looking replacement capture is pending; the two lane pairs and gate
-diagnostic have no blocking material issue within this declared scope.
+interior, so it did **not** verify the exterior/indoor transition visually. The
+replacement pair at tunnel-local z=-1.05 with a stronger downward camera angle
+(before 23:32:32; after 23:33:28 UTC) now visibly shows plain square exterior tiles
+in the foreground, ending at a straight boundary before the smaller decorated
+indoor floor. Before showed the decorated pattern across that foreground too.
+The corrected view has no visible generic-road overlay, hole or flickering seam
+at this threshold. The exact boundary line, branch orientation, tile pitch and
+relative scale are estimated; this screenshot does not calibrate them against
+the source. These two lane pairs, the gate diagnostic and the replacement
+threshold pair have no blocking material issue within the declared scope.
+
+This visual outcome applies to the reviewed pre-terrain-integration snapshot.
+The implementation author reports that main's separate terrain-from-lidar change
+is now being integrated. Any resulting surface-height or visibility adjustment
+needs fresh scene/ray checks and affected captures before carrying this outcome
+forward; none is implicitly approved by the images reviewed here. The original
+world-placement and gateway-identity limits remain open.
+
+## Combined-main terrain review, initial findings
+
+After main `548b3e3` was integrated, reviewed the two bounded renderer adaptations:
+the lane mesh is refined over current `siteY` once, retaining `noDrape`; the finite
+garden child mesh adds only positive survey-minus-host height after scene draping.
+The latter has a rotation about world-up, so the local vertical lift remains
+vertical in the main scene. Rings, UV/material phase, survey data and collision
+inputs are retained. This adapts existing visual paving to main's new ground;
+it does not establish photographed ground levels or relocate the passage.
+
+The refreshed ray artifact correctly finds plain lane/apron surfaces at all four
+lane samples, and garden paving at local z=8.6/9.5/10.3 (y=.590/.620/.647).
+The level indoor slab is at y=.363. Thus the garden/slab height relationship
+remains unresolved: the approximately .227 m difference at z=8.6 is a model
+consequence of the survey/level-host combination, not a source-observed step.
+The approximately 8e-8 UV seam delta checks texture phase only, not vertical
+continuity or photographic agreement.
+
+Inspected `toward-pool-after-lidar` (23:37) and `outdoor-floor-after-lidar` (23:39).
+The plain four-column lane is visible on the surveyed ground and remains distinct
+from pool-side stone. However, `tunnel-threshold-after-lidar` (23:40) exposes a
+new problem: a smooth brown surface covers the deeper patterned passage floor
+beyond/around the pebble inset. The retained +.2/+2 ray samples cannot establish
+visibility through the entire passage. Requested additional centreline samples
+at z=3–7 and a bounded ground-mask correction if survey ground is the occluder;
+raising the level indoor floor would disturb door/pot relationships. Final
+combined-main outcome is pending this issue and the garden close-up.
+
+The implementation author subsequently removed generic ground only beneath the
+exact existing 5.3 × 9.7 m slab footprint, gated on actual host inclusion and full
+ground-sheet containment. Code review confirms that this does not change the
+slab, survey or collision data, and avoids a ground hole in a scene omitting the
+host. Refreshed rays now find patterned floor at z=3/5/6/7 and the pebble inset
+at z=4, with the outdoor/garden samples still correct. The replacement threshold
+capture (23:44) visibly restores the deeper decorated field.
+
+The additional garden close-up (23:45) identifies a separate visible blocker:
+a sky-blue gap crosses the route between the level slab and raised garden path.
+The survey/host height discrepancy alone is an unresolved accuracy limit, but
+the see-through underside is a renderer defect. Requested a bounded closure of
+the exposed transition/underside without changing the existing top heights,
+footprints or collision. The garden path is visible beyond it and still ends
+at its declared finite boundary; the bare courtyard beyond is not a reconstructed
+source garden. Final combined-main visual outcome remains pending that closure.
+
+## Final combined-main outcome
+
+Reviewed the closure in `addGround`: a double-sided, ground-textured vertical
+mesh follows only the existing slab perimeter between slab and survey heights,
+under the same host-inclusion/sheet-containment guard. It is explicitly excluded
+from further draping and adds no structural or collision surface. It changes no
+top elevation, source footprint, door, planter or survey input.
+
+Reopened the final garden close-up (file timestamp 23:49:41 UTC). The complete
+blue strip is now closed by a brown ground edge; the level indoor field and
+raised finite garden field both remain visible. The remaining approximately
+.23 m model height transition reads as an edge/step and is **not** established
+by the photos. It remains a survey-versus-level-host discrepancy, not a newly
+verified source feature or a reason to claim continuous level paving.
+
+Inspected the final ray artifact too: the horizontal underside probe hits
+`silvia-ground-cut-edge` at approximately .150 m, the extended outdoor lane and
+apron remain plain, the deeper indoor samples retain patterned floor/pebble inset,
+and all three garden samples hit the authored path above ground. Runtime errors
+are empty. The retained final threshold view at 23:44 shows the indoor intrusion
+resolved; the two final lane views at 23:37/23:39 show the outdoor surface visible.
+The implementation author reports a passing production build; final route checks
+are being run separately and are not asserted here as independently executed.
+
+No remaining renderer/material blocker was found in these inspected views after
+the bounded fixes. This concludes the source, code and actual-render review of
+the outdoor material correction on the combined-main snapshot. Procedural wear,
+estimated material threshold/scale/connector, the garden height edge and wider
+source/world-placement discrepancies remain explicitly unresolved. This report
+does not grant measured placement or photographic level approval.

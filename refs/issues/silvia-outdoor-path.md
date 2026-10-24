@@ -29,6 +29,7 @@ No pool/gate/tunnel/planter/house/street/collision/level changes, no invented co
 - [ ] Independent full-source and actual-map review with exact source limits
 - [ ] Actual before/after outdoor scene and visible material transition, map/3D surface consistency
 - [ ] Source/build/route checks and preserved known placement uncertainty
+- [ ] Open after mainPR120 survey integration: garden sample at local8.6 is about0.23m above the level indoor slab. Reconcile the existing host datum/garden ground transition against source levels before claiming seamless photographic/placement fidelity; retain this task in progress.
 - [ ] Standard checks in `docs/HANDOVER.md` pass (source checks, build, both browser tests)
 - [ ] New features cite their photos in `evidence`; area notes updated; `build_references.py --check` passes
 - [ ] `data/build_queue.json`: `silvia-outdoor-path` set to done

@@ -3,7 +3,7 @@ import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
 import {outdoorPavingMaterial,outdoorPavingUv} from './silvia-outdoor-paving';
 import laneFrontages from '../data/middle_pool_lane_frontages.json';
-import {SILVIA_HOST,SILVIA_CANOPY,silviaFloor,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect} from "./silvia-map";
+import {SILVIA_HOST,SILVIA_CANOPY,silviaFloor,silviaSlabFloor,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect} from "./silvia-map";
 import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
@@ -41,7 +41,7 @@ import { addPools, POOL_STAND } from "./water";
 import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
-import { drapeScene, groundSheet, siteY } from "./terrain";
+import { drapeScene, groundSheet, refine, siteY } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
@@ -162,7 +162,7 @@ async function boot(): Promise<void> {
   const poolRings = skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring);
   // Where the sea is on show, the ground seaward of the paseo follows the seaside heights.
   if ((mainPool || shown.some((p) => p.id === "south")) && skeleton.seafront) seaside = makeSeaside(skeleton.seafront, skeleton.viewRotation);
-  await addGround(scene, skeleton, centre, poolRings);
+  await addGround(scene, skeleton, centre, poolRings,buildings.some(b=>b.id===SILVIA_HOST));
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
@@ -420,6 +420,9 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
+  // Keep the existing finite garden paving visible on the newly surveyed ground.
+  const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
+  if(gardenPaving){scene.updateMatrixWorld(true);const old=gardenPaving.geometry;gardenPaving.geometry=refine(old,(x,z)=>Math.max(0,siteY(x,z)-silviaY),gardenPaving.matrixWorld);if(gardenPaving.geometry!==old)old.dispose();}
   if (photoView || new URLSearchParams(location.search).get("export") === "model") exportModel(scene, skeleton, liveGroundY, world.groundHeight ?? liveGroundY);
   const cameraBlockers:THREE.Object3D[]=[];
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
@@ -539,7 +542,7 @@ function nearRing(x: number, z: number, ring: Vec2[], margin: number): boolean {
   return ring.some((p) => Math.hypot(p[0] - x, p[1] - z) < margin);
 }
 
-async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }, pools: Vec2[][]): Promise<void> {
+async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }, pools: Vec2[][],hasSilvia:boolean): Promise<void> {
   const cover = skeleton.cover;
   const image = await new THREE.ImageLoader().loadAsync(asset(cover.image));
   const w = cover.maxX - cover.minX;
@@ -644,8 +647,11 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const material=groundMaterial(texture,lawnMask,span*2);
   // The ground is one sheet with the pools cut out of it.
   const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
+  const groundHoles=showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:[...pools];
+  const cutSilvia=hasSilvia&&silviaSlabFloor.every(([x,z])=>Math.abs(x-centre.x)<span&&Math.abs(z-centre.z)<span);
+  if(cutSilvia)groundHoles.push(silviaSlabFloor);
   const geometry = groundSheet([centre.x - span, centre.z - span], [centre.x + span, centre.z + span],
-    showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:pools);
+    groundHoles);
   if(showLowerDeck) for(const ring of lowerPoolHoles) {const island=new THREE.Mesh(new THREE.ShapeGeometry(shapeOf(ring)).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color:"#c78667",roughness:0.95}));island.userData.referenceSurface=true;scene.add(island);}
   const at = geometry.getAttribute("position");
   const uv = geometry.getAttribute("uv");
@@ -669,6 +675,19 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   ground.receiveShadow = true;
   ground.userData.referenceSurface=true;
   scene.add(ground);
+  // Close the exposed sides of the ground cut at its existing slab boundary.
+  // This visual fill changes neither top surfaces nor walking/collision heights.
+  if(cutSilvia){
+    const positions:number[]=[],uvs:number[]=[],floor=liveGroundY(SILVIA_DATUM.x,SILVIA_DATUM.z)+.05;
+    const vertex=(x:number,y:number,z:number)=>{positions.push(x,y,z);uvs.push((x-centre.x+span)/(span*2),1-(z-centre.z+span)/(span*2));};
+    for(let edge=0;edge<silviaSlabFloor.length;edge++){const a=silviaSlabFloor[edge],b=silviaSlabFloor[(edge+1)%silviaSlabFloor.length],n=Math.ceil(Math.hypot(b[0]-a[0],b[1]-a[1])/.1);
+      for(let j=0;j<n;j++){const point=(t:number)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];const p=point(j/n),q=point((j+1)/n),low=(p:number[])=>Math.min(floor-.01,siteY(p[0],p[1])-.01),high=(p:number[])=>Math.max(floor,siteY(p[0],p[1])+.006);
+        for(const [v,y] of [[p,low(p)],[q,low(q)],[q,high(q)],[p,low(p)],[q,high(q)],[p,high(p)]] as [number[],number][])vertex(v[0],y,v[1]);
+      }
+    }
+    const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geo.setAttribute('uv',new THREE.Float32BufferAttribute(uvs,2));geo.computeVertexNormals();
+    const edge=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({map:texture,roughness:1,side:THREE.DoubleSide}));edge.name='silvia-ground-cut-edge';edge.userData.noDrape=true;edge.receiveShadow=true;scene.add(edge);
+  }
 
   // Plants grow according to the ground cover: trees on planting, tufts on lawn.
   const probe = document.createElement("canvas");

@@ -45,3 +45,34 @@ are estimates. Facades and plants remain schematic. Existing tunnel-host, gate/
 pool-spacing and forecourt-extent discrepancies stay open; this task remains in
 progress in the evidence queue. No exact photographic match or new measured
 placement approval is claimed.
+
+## Main integration: survey terrain
+
+MainPR120 (`548b3e3`) landed during this pass. Its survey grid and new tunnel datum
+are retained unchanged. Fresh first-hit checks caught the former flat/noDrape
+lane and garden patches below that ground. The lane now refines its existing
+surface over `siteY`; only the existing garden fragment receives the positive
+survey-height difference from its tunnel datum. Its existing ring, material UVs,
+beds, collision and the indoor slab remain unchanged. No new slope or level data
+is authored here. Garden/slab UV phase is retained, but the new survey introduces
+a vertical ground-height difference beyond the exit; this pass does not claim a
+measured seamless level transition there.
+
+The original paired images retain the material-only review snapshot. Additional
+`*-after-lidar.png` and `render-results-after-lidar.json` show the combined main
+scene after this visibility adaptation. `surface-check.json` is rerun on that
+combined code. The prior survey changes are not attributed to this paving pass.
+
+A deeper passage check also caught generic survey ground showing through the
+far interior floor. The main ground sheet now has a hole exactly matching the
+existing study slab footprint (only when that footprint is in the rendered
+sheet). The actual slab, inset, doors and walking datum are retained. Extended
+rays sample interior stations3,4,5,6,7 as well as the near entry, so preserving
+just the first rows cannot conceal a deeper floor regression.
+
+The first combined garden view exposed sky under the raised ground edge. A visual
+cut-edge fill now closes the exact guarded slab-mask perimeter between existing
+slab and survey heights. It uses the existing ground paint, adds no collision,
+and changes neither top surface nor datum. A horizontal ray below the raised
+edge and a replacement garden capture verify closure. The approximately0.23m
+model level discrepancy remains explicitly unresolved.

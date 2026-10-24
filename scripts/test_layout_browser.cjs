@@ -322,7 +322,7 @@ const path = require("node:path");
       const floor=details.getObjectByName(lanePaving.id);
       if(!floor||!document.querySelector(`[data-middle-id="${lanePaving.id}"]`))throw Error('Four-column paving missing from scene or map');
       const uv=floor.geometry.getAttribute('uv'),texture=floor.material.map,pixels=texture.image.getContext('2d');
-      for(let i=0;i<uv.count;i+=2)if(uv.getX(i)!==0||uv.getX(i+1)!==1)throw Error('Lane texture does not span exactly one four-column atlas');
+      const us=Array.from({length:uv.count},(_,i)=>uv.getX(i));if(Math.abs(Math.min(...us))>.00001||Math.abs(Math.max(...us)-1)>.00001)throw Error('Draped lane must retain exactly one four-column atlas across its width');
       if(texture.repeat.x!==1||lanePaving.columns!==4)throw Error('Wrong lane tile count');
       // Weathered patches can alter one pixel; sample the central tile region.
       const redMinusGreen=x=>{const samples=[];for(const dx of [-8,0,8])for(const y of [40,64,88]){const p=pixels.getImageData(x+dx,y,1,1).data;samples.push(p[0]-p[1]);}return samples.sort((a,b)=>a-b)[4];};

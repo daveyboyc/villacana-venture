@@ -2,6 +2,7 @@ import * as THREE from "three";
 import data from "../data/middle_pool_lane_frontages.json";
 import gate from "../data/middle_pool_south_gate.json";
 import { plasterMaterial } from "./materials";
+import {refine,siteY} from './terrain';
 import {outdoorPavingMaterial} from './silvia-outdoor-paving';
 import { addSprites, type SpriteKind } from "./sprites";
 import type { Vec2 } from "./types";
@@ -151,7 +152,7 @@ function addPaving(scene: THREE.Scene): void {
   geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
   geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
   geometry.setIndex(indices); geometry.computeVertexNormals();
-  const mesh = new THREE.Mesh(geometry, outdoorPavingMaterial());
+  const mesh = new THREE.Mesh(refine(geometry,siteY,new THREE.Matrix4()), outdoorPavingMaterial());
   mesh.name = lanePaving.id; mesh.userData.noDrape = true; mesh.receiveShadow = true;
   scene.add(mesh);
 }

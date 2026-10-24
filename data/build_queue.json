@@ -1250,14 +1250,16 @@
     "middle_pool_lane_frontages.json:south-lane-four-column-paving",
     "silvia_tunnel.json:silvia-tunnel-study",
     "middle_pool_south_gate.json:middle-pool-south-forecourt",
-    "middle_pool_lane_frontages.json:silvia-outdoor-apron"
+    "middle_pool_lane_frontages.json:silvia-outdoor-apron",
+    "entrance_planters.json:silvia-exit-path-fragment"
    ],
    "build": "Correct exterior paving material and coherent outdoor continuation to the provisional tunnel mouth, using four lane-aligned plain square tile columns, broad mortar and worn colouring. Keep indoor hopscotch behind the arch and pool-side stone forecourt distinct.",
    "avoid": "No pool/gate/tunnel/planter/house/street/collision/level changes, no invented continuous bed/wall, no asserted photographic registration for the estimated connector.",
    "accept": [
     "Independent full-source and actual-map review with exact source limits",
     "Actual before/after outdoor scene and visible material transition, map/3D surface consistency",
-    "Source/build/route checks and preserved known placement uncertainty"
+    "Source/build/route checks and preserved known placement uncertainty",
+    "Open after mainPR120 survey integration: garden sample at local8.6 is about0.23m above the level indoor slab. Reconcile the existing host datum/garden ground transition against source levels before claiming seamless photographic/placement fidelity; retain this task in progress."
    ],
    "status": "in-progress",
    "owner": "Codex",

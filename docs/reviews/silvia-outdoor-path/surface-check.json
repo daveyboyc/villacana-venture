@@ -1,4 +1,8 @@
 {
+  "groundCutEdge": {
+    "name": "silvia-ground-cut-edge",
+    "distance": 0.1500016140557116
+  },
   "lane": [
     {
       "a": 11.8,
@@ -12,12 +16,12 @@
     },
     {
       "a": 14.6,
-      "name": "south-lane-four-column-paving",
+      "name": "silvia-street-connection",
       "layout": "plain-four-column-exterior"
     },
     {
       "a": 16,
-      "name": "south-lane-four-column-paving",
+      "name": "silvia-street-connection",
       "layout": "plain-four-column-exterior"
     }
   ],
@@ -29,50 +33,80 @@
   "surfaces": [
     {
       "z": -3,
-      "name": "south-lane-four-column-paving",
-      "y": 0.0860000029206276,
+      "name": "silvia-street-connection",
+      "y": 0.3644005632499744,
       "reference": false
     },
     {
       "z": -1,
       "name": "silvia-street-connection",
-      "y": 0.050999999999973754,
+      "y": 0.36440056324997416,
       "reference": false
     },
     {
       "z": -0.2,
       "name": "silvia-street-connection",
-      "y": 0.050999999999973664,
+      "y": 0.3644005632499741,
       "reference": false
     },
     {
       "z": 0.2,
       "name": "T05-patterned-floor",
-      "y": 0.05000000037252903,
+      "y": 0.36340056362252937,
       "reference": false
     },
     {
       "z": 2,
       "name": "T05-patterned-floor",
-      "y": 0.05000000037252903,
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 3,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 4,
+      "name": "T05-pebble-inset",
+      "y": 0.3864005633021544,
+      "reference": false
+    },
+    {
+      "z": 5,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 6,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
+      "reference": false
+    },
+    {
+      "z": 7,
+      "name": "T05-patterned-floor",
+      "y": 0.36340056362252937,
       "reference": false
     },
     {
       "z": 8.6,
       "name": "silvia-exit-path-fragment",
-      "y": 0.051999999999999554,
+      "y": 0.5901493901702848,
       "reference": false
     },
     {
       "z": 9.5,
       "name": "silvia-exit-path-fragment",
-      "y": 0.05199999999999933,
+      "y": 0.620382973561757,
       "reference": false
     },
     {
       "z": 10.3,
       "name": "silvia-exit-path-fragment",
-      "y": 0.05199999999999933,
+      "y": 0.6470013537626997,
       "reference": false
     }
   ],
@@ -84,10 +118,10 @@
         8.259802039370427
       ],
       "uvB": [
-        0.09803919173945674,
-        8.259802120645695
+        0.09803919173945673,
+        8.259802120645697
       ],
-      "delta": 8.185165610556681e-8
+      "delta": 8.185165787105882e-8
     }
   ],
   "material": {
