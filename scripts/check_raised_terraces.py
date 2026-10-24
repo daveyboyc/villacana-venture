@@ -120,8 +120,11 @@ for t in d['terraces']:
         if 'at' in item:
             gap = math.dist(foot, item['at'])
             assert gap <= item['atAccuracy'], f"{o['id']}: {gap:.1f} m from the survey position, outside its +-{item['atAccuracy']} m"
-    # The ground at the base is the path level: pools are level with it, nothing is lifted around them.
-    assert abs(site_y(t['base'])) < 0.05, f'{name}: stair foot should be at lawn level'
+    # The ground at the base is the path level: a walkable terrace's stairs start at its pool's surveyed deck level,
+    # and the survey's reading of the patio itself is not added to the ground under it (the floor is never buried).
+    pool_deck = ns['grid']['decks'][{'north-pool': 'north', 'middle-pool': 'middle'}[t['area']]]
+    assert not t['walkable'] or abs(site_y(t['base']) - pool_deck) < 0.15, f'{name}: stair foot should be at lawn level'
+    assert all(site_y(p) <= site_y(t['base']) + t['rise'] for p in ring), f'{name}: ground under the terrace rises through its floor'
     for w in t.get('walks', []):
         for p in w:
             assert inside(*p, ring) and ring_gap(p, ring) > PLAYER + 0.2, f'{name}: walk point {p} too close to an edge'

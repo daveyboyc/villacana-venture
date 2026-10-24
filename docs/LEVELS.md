@@ -19,13 +19,14 @@ photos**.
   house floors are at lane level, or one sill (0.1-0.15 m) above it. No flights of
   steps lead up to front doors. What is raised is the ground in front of some houses:
   walled patios and terraces, reached by one to six steps.
-- **The west side is 0.5 m higher.** The rise shows at the Cervantes ramp and
+- **The west side is higher.** The rise shows at the Cervantes ramp and
   steps at Elena, and all along the west side of the middle pool courtyard: three
   stone steps and a ramp up to Calle Eva at the south-west corner (IMG_2333), and
   a short rise with white steps at the planter's north end (IMG_2332, IMG_2331).
-  The raised planter holds back the upper ground. Both rises are built in the
-  terrain and the south-west steps are built. The north-end steps and pergola gate
-  are still to do (task `middle-pool-north-entrance`).
+  The raised planter holds back the upper ground. Photos read about 0.5 m; the laser
+  survey shows the whole block falling about 3 m from Dalí to the main pool and the
+  paseo, and the ground now follows it (`docs/TERRAIN.md`). Each photographed flight
+  keeps its own exact rise in `data/terrain.json` `ramps`.
 - **No second rise at Dalí.** Cervantes meets Pintor Dalí flush, at a tiled apron
   with a slot drain. Upper Cervantes is level, or any grade is under about 2%.
 - **The pools are not sunk.** Each deck is level with its lawn, apart from a
@@ -60,8 +61,14 @@ photos**.
 `scripts/lidar_check.py report` measures each item's rise between its `compare` points on the
 survey's 1 m ground model (docs/reviews/lidar-levels/measurements.json, `levelsSurvey`). Four of
 the seven with comparison points fall inside their photo range and the Dalí apron is 0.11 m over.
-The Cervantes ramp and steps measure about half their photo-read rise: check whether the points
-straddle the whole rise. A 1 m grid softens steps and short ramps.
+The ground itself now comes from the survey (task `terrain-from-lidar`), so the model matches
+the survey wherever the photos do. Where they disagree the photo-read rise is built and the item
+stays open:
+- **Cervantes ramp and steps at Elena:** photos 0.4-0.5 m (three risers counted), survey 0.21-0.22 m.
+  Built at 0.5 m. Check whether the `compare` points straddle the whole rise, or whether the
+  ground above the steps is lower than the photos suggest; a 1 m grid softens steps and short ramps.
+- **Elena south** reads level in the photos; the survey has it falling about 0.35 m over 15 m to
+  the middle pool gate, too gentle to see. The survey is built.
 
 ## Using it when building
 
@@ -69,7 +76,8 @@ straddle the whole rise. A 1 m grid softens steps and short ramps.
    photos**.
 2. Build to the middle of the range unless a better photo narrows it, and quote
    the range in the feature's `trust`.
-3. Ground changes go through `data/terrain.json`, as in `docs/TERRAIN.md`. Patios
+3. Ground changes go through `scripts/lidar_check.py grid`, which writes
+   `data/terrain.json` (`docs/TERRAIN.md`); a photographed flight is a `ramps` entry. Patios
    and terraces go through the raised-terrace module from task `raised-terraces`.
    Houses keep their floor at the ground height under their middle.
 4. When the model matches, set the item's `model` to `built`, add a `compare` pair

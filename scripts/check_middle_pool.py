@@ -127,7 +127,8 @@ assert 'middlePoolNorthSteps' not in (ROOT/'data/terrain.json').read_text(),'Do 
 ns={'__file__':str(ROOT/'scripts/check_terrain.py')}
 exec((ROOT/'scripts/check_terrain.py').read_text().split('\nassert')[0],ns)
 base=ns['site_y'](st['foot']);top=ns['site_y'](st['toward'])
-assert abs(base)<1e-6 and abs(top-.5)<1e-6,'North steps must join pool-level foot to existing upper lane'
+fl=next(r for r in ns['grid']['ramps'] if r['id']==st['id'])
+assert abs(base-fl['base'])<1e-6 and abs(top-base-fl['rise'])<1e-6,'North steps must join the surveyed foot to the upper lane'
 assert .3<=top-base<=.55
 for i,r in enumerate(st['risers']):
  t=(r+.01)/st['end'];p=[st['foot'][j]+(st['toward'][j]-st['foot'][j])*t for j in range(2)]
