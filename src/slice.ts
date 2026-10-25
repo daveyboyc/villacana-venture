@@ -52,7 +52,7 @@ import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 import { exportModel, photoCamera } from "./photo-camera";
 import { setupLook } from "./look";
-import { addFacadeKit, poolFacingWalls } from "./facade-kit";
+import { addFacadeKit, facadeKitWalls } from "./facade-kit";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -190,9 +190,9 @@ async function boot(): Promise<void> {
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
-  // The Blender-built facade kit dresses the walls facing the north pool (src/facade-kit.ts).
-  const northPool = shown.find((p) => p.id === "north");
-  const kitWalls = !layoutOnly && northPool ? poolFacingWalls(houses, northPool.ring) : new Set<string>();
+  // The Blender-built facade kit dresses the house walls (src/facade-kit.ts); small screens keep
+  // the flat shutters except on the walls traced from photos.
+  const kitWalls = layoutOnly ? new Set<string>() : facadeKitWalls(houses, matchMedia("(max-width:700px), (max-height:500px)").matches);
   if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight, kitWalls);addPorches(scene, houses, skeleton.floorHeight);}
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
