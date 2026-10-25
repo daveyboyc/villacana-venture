@@ -52,6 +52,7 @@ import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 import { exportModel, photoCamera } from "./photo-camera";
 import { setupLook } from "./look";
+import { addFacadeKit, poolFacingWalls } from "./facade-kit";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -189,7 +190,10 @@ async function boot(): Promise<void> {
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
-  if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight);addPorches(scene, houses, skeleton.floorHeight);}
+  // The Blender-built facade kit dresses the walls facing the north pool (src/facade-kit.ts).
+  const northPool = shown.find((p) => p.id === "north");
+  const kitWalls = !layoutOnly && northPool ? poolFacingWalls(houses, northPool.ring) : new Set<string>();
+  if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight, kitWalls);addPorches(scene, houses, skeleton.floorHeight);}
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
@@ -423,6 +427,7 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
+  if (kitWalls.size) void addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight);
   // Keep the existing finite garden paving visible on the newly surveyed ground.
   const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
   if(gardenPaving){scene.updateMatrixWorld(true);const old=gardenPaving.geometry;gardenPaving.geometry=refine(old,(x,z)=>Math.max(0,siteY(x,z)-silviaY),gardenPaving.matrixWorld);if(gardenPaving.geometry!==old)old.dispose();}
@@ -785,7 +790,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
   }
 }
 
-function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
+function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number, kitWalls: Set<string>): void {
   const houses = buildings.filter((b) => b.floors > 0);
   const windows: THREE.Matrix4[] = [];
   const doors: THREE.Matrix4[] = [];
@@ -797,7 +802,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
       const [ax, az] = ring[i];
       const [bx, bz] = ring[(i + 1) % ring.length];
       const length = Math.hypot(bx - ax, bz - az);
-      if (length < 2.6) continue;
+      if (length < 2.6 || kitWalls.has(`${b.id}:${i}`)) continue;
       let nx = (bz - az) / length;
       let nz = -(bx - ax) / length;
       const mx = (ax + bx) / 2;
