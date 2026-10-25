@@ -1495,6 +1495,74 @@
     "f": 1109.3
    },
    "initialBasis": "phone pin; reviewed looksAt; upper-floor eye height; 24 mm-equivalent lens"
+  },
+  "IMG_2220.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -155.7,
+    "y": 9.0,
+    "z": 51.0,
+    "yaw": 147.9,
+    "pitch": -30.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+  },
+  "IMG_2358.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -155.7,
+    "y": 9.0,
+    "z": 50.1,
+    "yaw": 147.6,
+    "pitch": -50.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+  },
+  "IMG_2359.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -155.7,
+    "y": 9.0,
+    "z": 50.1,
+    "yaw": 224.4,
+    "pitch": -35.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+  },
+  "IMG_2360.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -155.7,
+    "y": 9.0,
+    "z": 50.1,
+    "yaw": 75.4,
+    "pitch": -25.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
   }
  }
 }

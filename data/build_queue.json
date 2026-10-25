@@ -1677,6 +1677,22 @@
    ],
    "dependsOn": [],
    "status": "open"
+  },
+  {
+   "id": "facade-kit-elena",
+   "area": "elena",
+   "priority": 2,
+   "kind": "tooling",
+   "title": "Elena roof station: make the camera solvable, then trace its facades",
+   "photos": [],
+   "build": "The roof station at about (-155.7, 50.1) (IMG_2358/2359/2360, and IMG_2220 nearby) shows the Elena lanes and the facades of buildings 44 and 39 well, but its camera could not be solved (docs/reviews/facade-kit-elena): the model has a flat 7.2 m block (building 21) where the photos show an upper terrace over a tiled roof, and the solver's model export holds only registry buildings and pools, not the traced lane edges and garden walls these photos show best. Add traced walls and lane edges to the model export as polylines photo_pose.py can match, check the roof form at the pin, then solve the station and trace the facades into data/facade_kit.json.",
+   "avoid": "Do not trace from an unstable solve. No change to footprints without evidence.",
+   "accept": [
+    "Station solve with held-out checks within about 0.3 m and each photo alone within 2 m of the station",
+    "Traced parts cross-checked in two photos where possible"
+   ],
+   "dependsOn": [],
+   "status": "open"
   }
  ]
 }
