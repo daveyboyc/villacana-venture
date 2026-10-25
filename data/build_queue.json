@@ -1424,8 +1424,9 @@
    "dependsOn": [
     "path-network-baseline"
    ],
-   "status": "open",
-   "issue": 129
+   "status": "in-progress",
+   "issue": 129,
+   "owner": "Codex"
   },
   {
    "id": "path-network-inventory-cervantes",
