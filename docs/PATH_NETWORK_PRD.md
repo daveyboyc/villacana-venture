@@ -4,6 +4,10 @@
 **Owner:** Dave. **Delivery:** Villacana project maintainers and agents.  
 **Baseline:** main [212f7d3](https://github.com/daveyboyc/villacana-venture/commit/212f7d3ffd56ef9aba7fede4d8e35905a4a5dcb4), following the Silvia outdoor-path example.
 
+Implementation tracking: [graph-backed baseline and remaining work](PATH_NETWORK_IMPLEMENTATION.md).
+The first software task provides accounting and inspection; the full-source survey
+and structural delivery phases remain open.
+
 ## 1. Intent
 
 Extend the photo-to-drawing-to-game process used around Silvia across the resort.

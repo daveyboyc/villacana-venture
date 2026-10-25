@@ -54,6 +54,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P1 | `path-network-inventory-middle-pool` | Middle pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `tunnel-entrance-context` | Check pool-to-gate spacing and build photo-supported tunnel entrance context | in-progress · Codex · placement: not-verified | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg), [IMG_2189](../../public/photos-ref/IMG_2189.jpg), [IMG_2190](../../public/photos-ref/IMG_2190.jpg), [IMG_2191](../../public/photos-ref/IMG_2191.jpg), [IMG_2192](../../public/photos-ref/IMG_2192.jpg) |
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | in-progress · Codex · placement: not-verified | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2335](../../public/photos-ref/IMG_2335.jpg) |
 | P2 | `middle-pool-south-lane-planters` | South entrance lane: planted frontage borders and projecting window grilles (after middle-pool-south-forecourt) | open · placement: not-verified | [IMG_2334](../../public/photos-ref/IMG_2334.jpg), [IMG_2189](../../public/photos-ref/IMG_2189.jpg) |

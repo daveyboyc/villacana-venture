@@ -7,11 +7,23 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P1 | `barraka-planter-placement` [#102](https://github.com/daveyboyc/villacana-venture/issues/102) | Correct reported Barraka planter placement against registered source evidence (after placement-verification-gate) | in-progress · Codex · placement: not-verified | [IMG_2346](../public/photos-ref/IMG_2346.jpg), [IMG_2347](../public/photos-ref/IMG_2347.jpg) |
+| P1 | `path-network-inventory-barraka-beach` | Barraka and the beach: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-cervantes` | Calle Miguel de Cervantes: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-dali` | Calle Pintor Dalí: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-elena` | Calle Elena: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-eva` | Calle Eva: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `guillermo-descent-recheck` | Calle Guillermo: put the fall to the paseo where the survey has it | open · placement: not-verified |  |
 | P1 | `guillermo-slope-east-steps` | Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall | in-progress · Claude · placement: not-verified | `apple-maps/11-3d-guillermo-slope-to-paseo.png`, `apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`, `apple-maps/12-3d-main-pool-east-steps-picasso.png`, `apple-maps/13-3d-main-pool-terrace-both-stairs.png`, [IMG_2226](../public/photos-ref/IMG_2226.jpg), [IMG_2227](../public/photos-ref/IMG_2227.jpg) |
+| P1 | `path-network-inventory-main-pool` | Main pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-middle-pool` | Middle pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `tunnel-entrance-context` | Check pool-to-gate spacing and build photo-supported tunnel entrance context | in-progress · Codex · placement: not-verified | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg), [IMG_2189](../public/photos-ref/IMG_2189.jpg), [IMG_2190](../public/photos-ref/IMG_2190.jpg), [IMG_2191](../public/photos-ref/IMG_2191.jpg), [IMG_2192](../public/photos-ref/IMG_2192.jpg) |
+| P1 | `path-network-inventory-north-lanes` | Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `blender-kit-pilot` | Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard | in-progress · Claude · placement: not-verified |  |
 | P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open · placement: not-applicable | [IMG_2204](../public/photos-ref/IMG_2204.jpg), [IMG_2205](../public/photos-ref/IMG_2205.jpg), [IMG_2206](../public/photos-ref/IMG_2206.jpg), [IMG_2207](../public/photos-ref/IMG_2207.jpg), [IMG_2208](../public/photos-ref/IMG_2208.jpg), [IMG_2363](../public/photos-ref/IMG_2363.jpg) |
+| P1 | `path-network-inventory-north-pool` | North pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-paseo` | The paseo: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-picasso` | Pintor Picasso and the car park: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-seaward-lanes` | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `silvia-all-single-doors` | Make every tunnel entrance a single door with a round gold knob (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../public/photos-ref/IMG_2190.jpg), [IMG_2191](../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-covered-passage-reference-audit` | Resolve the Silvia tunnel entrance, its components and connection to the lane (after entrance-photo-reference-pack) | open · placement: not-applicable |  |
 | P1 | `silvia-entrance-planters` | Build bounded planters at the Silvia tunnel and pool entrance | in-progress · Codex · placement: not-verified | [IMG_2190](../public/photos-ref/IMG_2190.jpg), [IMG_2191](../public/photos-ref/IMG_2191.jpg), [IMG_2192](../public/photos-ref/IMG_2192.jpg), [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
@@ -20,6 +32,8 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P1 | `silvia-paving` | Correct Silvia diagonal terracotta paving and continuous ground appearance | in-progress · Codex · placement: not-verified | [IMG_2190](../public/photos-ref/IMG_2190.jpg), [IMG_2191](../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-simple-doors` | Simplify the recessed entrance doors and add round gold knobs (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../public/photos-ref/IMG_2190.jpg), [IMG_2191](../public/photos-ref/IMG_2191.jpg) |
 | P1 | `silvia-tunnel-details` | Build the Silvia tunnel with recessed brown entrance doors and photo details (after entrance-photo-reference-pack) | in-progress · Codex · placement: not-verified | [IMG_2190](../public/photos-ref/IMG_2190.jpg), [IMG_2191](../public/photos-ref/IMG_2191.jpg) |
+| P1 | `path-network-inventory-south-pool` | South pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-whole-resort` | The whole resort: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `terrain-from-lidar` | Ground levels: follow the laser survey instead of one 0.5 m rise | in-progress · Claude · placement: not-verified |  |
 | P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map, barraka-planter-placement) | open · placement: not-verified | [IMG_2223](../public/photos-ref/IMG_2223.jpg), [IMG_2346](../public/photos-ref/IMG_2346.jpg), [IMG_2347](../public/photos-ref/IMG_2347.jpg) |
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | in-progress · Codex · placement: not-verified | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
@@ -33,6 +47,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P1 | `paseo-retaining-wall` | Paseo: sandstone retaining wall, mesh fence and level drop | done · claude (subagent) · photos: legacy-unchecked · placement: not-verified | [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2349](../public/photos-ref/IMG_2349.jpg), [IMG_2352](../public/photos-ref/IMG_2352.jpg), [IMG_2354](../public/photos-ref/IMG_2354.jpg) |
 | P1 | `entrance-photo-reference-pack` | Entrance photo inventory, annotated drawings and repeatable map rollout | done · Codex · photos: not-applicable (tooling) · placement: not-applicable |  |
 | P1 | `mobile-walk-camera` | Repair mobile walking input and add first/third person view switching | done · Codex · photos: not-applicable (tooling) · placement: not-applicable |  |
+| P1 | `path-network-baseline` | Path network: graph-backed baseline and canonical map inspector | done · Codex · photos: not-applicable (tooling) · placement: not-applicable |  |
 | P1 | `path-network-prd` | Specify photo-backed path, tunnel and boundary mapping across Villacana | done · Codex · photos: unchecked · placement: not-applicable |  |
 | P1 | `photo-camera-alignment` | Look through a photo's own camera: solve photo poses and measure the model against them | done · Claude · photos: not-applicable (tooling) · placement: not-applicable |  |
 | P1 | `placement-verification-gate` [#101](https://github.com/daveyboyc/villacana-venture/issues/101) | Gate graph placement verification on fresh measured evidence and independent review (after unified-reference-map) | done · Codex · photos: not-applicable (tooling) · placement: not-applicable |  |
@@ -93,15 +108,17 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 
 ## By area
 
-- **North pool** ([brief](areas/north-pool.md)): `blender-kit-pilot`, `north-pool-unresolved-plan`, `north-pool-alignment-audit`, `north-pool-west-frontage`, `raised-terraces`, `north-pool-garden-walls`
-- **Middle pool** ([brief](areas/middle-pool.md)): `tunnel-entrance-context`, `middle-pool-south-forecourt`, `middle-pool-south-lane-planters`, `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
-- **South pool** ([brief](areas/south-pool.md)): `south-pool-seaward-level`
-- **Main pool** ([brief](areas/main-pool.md)): `guillermo-descent-recheck`, `guillermo-slope-east-steps`
-- **Calle Elena** ([brief](areas/elena.md)): `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
-- **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-east-south-patios`, `cervantes-north-patios`, `cervantes-steps-treads`, `junction-lawns`
-- **Pintor Picasso and the car park** ([brief](areas/picasso.md)): `picasso-service-road`
-- **Calle Eva** ([brief](areas/eva.md)): `eva-walled-lawn`
-- **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** ([brief](areas/seaward-lanes.md)): `silvia-all-single-doors`, `silvia-covered-passage-reference-audit`, `silvia-entrance-planters`, `silvia-main-map`, `silvia-outdoor-path`, `silvia-paving`, `silvia-simple-doors`, `silvia-tunnel-details`, `seaward-lanes-paving`
-- **Barraka and the beach** ([brief](areas/barraka-beach.md)): `barraka-planter-placement`, `barraka-barbecue-boat`, `shoreline-check`, `barraka-boardwalk`
-- **The paseo** ([brief](areas/paseo.md)): `paseo-east-end-height`, `paseo-retaining-wall`, `paseo-house-clearance`, `paseo-retrace-line`, `paseo-details`
-- **The whole resort** ([brief](areas/whole-resort.md)): `terrain-from-lidar`, `north-pool-roof-heights`, `entrance-photo-reference-pack`, `mobile-walk-camera`, `path-network-prd`, `photo-camera-alignment`, `placement-verification-gate`, `unified-reference-map`, `door-sills`
+- **North pool** ([brief](areas/north-pool.md)): `blender-kit-pilot`, `north-pool-unresolved-plan`, `path-network-inventory-north-pool`, `north-pool-alignment-audit`, `north-pool-west-frontage`, `raised-terraces`, `north-pool-garden-walls`
+- **Middle pool** ([brief](areas/middle-pool.md)): `path-network-inventory-middle-pool`, `tunnel-entrance-context`, `middle-pool-south-forecourt`, `middle-pool-south-lane-planters`, `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
+- **South pool** ([brief](areas/south-pool.md)): `path-network-inventory-south-pool`, `south-pool-seaward-level`
+- **Main pool** ([brief](areas/main-pool.md)): `guillermo-descent-recheck`, `guillermo-slope-east-steps`, `path-network-inventory-main-pool`
+- **Calle Elena** ([brief](areas/elena.md)): `path-network-inventory-elena`, `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
+- **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `path-network-inventory-cervantes`, `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-east-south-patios`, `cervantes-north-patios`, `cervantes-steps-treads`, `junction-lawns`
+- **Calle Pintor Dalí** ([brief](areas/dali.md)): `path-network-inventory-dali`
+- **Pintor Picasso and the car park** ([brief](areas/picasso.md)): `path-network-inventory-picasso`, `picasso-service-road`
+- **Loira, Bolivia, Alberto and Isabel** ([brief](areas/north-lanes.md)): `path-network-inventory-north-lanes`
+- **Calle Eva** ([brief](areas/eva.md)): `path-network-inventory-eva`, `eva-walled-lawn`
+- **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** ([brief](areas/seaward-lanes.md)): `path-network-inventory-seaward-lanes`, `silvia-all-single-doors`, `silvia-covered-passage-reference-audit`, `silvia-entrance-planters`, `silvia-main-map`, `silvia-outdoor-path`, `silvia-paving`, `silvia-simple-doors`, `silvia-tunnel-details`, `seaward-lanes-paving`
+- **Barraka and the beach** ([brief](areas/barraka-beach.md)): `barraka-planter-placement`, `path-network-inventory-barraka-beach`, `barraka-barbecue-boat`, `shoreline-check`, `barraka-boardwalk`
+- **The paseo** ([brief](areas/paseo.md)): `path-network-inventory-paseo`, `paseo-east-end-height`, `paseo-retaining-wall`, `paseo-house-clearance`, `paseo-retrace-line`, `paseo-details`
+- **The whole resort** ([brief](areas/whole-resort.md)): `path-network-inventory-whole-resort`, `terrain-from-lidar`, `north-pool-roof-heights`, `entrance-photo-reference-pack`, `mobile-walk-camera`, `path-network-baseline`, `path-network-prd`, `photo-camera-alignment`, `placement-verification-gate`, `unified-reference-map`, `door-sills`
