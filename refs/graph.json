@@ -35228,7 +35228,7 @@
    "kind": "build-task",
    "name": "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
    "priority": 1,
-   "status": "done",
+   "status": "in-progress",
    "verification": "not-verified",
    "photoVerification": "unchecked",
    "placement": {

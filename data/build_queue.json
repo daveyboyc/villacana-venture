@@ -1272,7 +1272,7 @@
    "kind": "materials",
    "title": "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
    "photos": [],
-   "build": "Better lighting and surfaces for the whole scene (image-based lighting, filmic tone mapping, softer shadows, ambient occlusion on desktop, better plaster/terracotta/paving textures), and a kit of facade parts built headless in Blender by scripts/build_kit.py (arched louvred shutter doors with their moulded surround, wrought-iron balcony, wooden balcony with barrel-tile roof), exported as compressed glTF and placed by footprint data along the north-pool courtyard facades. Compare before/after through the solved photo cameras. IMG_2204-2206 were the dimension and evaluation references; no model feature in the evidence graph represents the kit, so they are compared in docs/reviews/blender-kit-pilot rather than recorded as photo checks.",
+   "build": "Better lighting and surfaces for the whole scene (image-based lighting, filmic tone mapping, softer shadows, ambient occlusion on desktop, better plaster/terracotta/paving textures), and a kit of facade parts built headless in Blender by scripts/build_kit.py (arched louvred shutter doors with their moulded surround, wrought-iron balcony, wooden balcony with barrel-tile roof), exported as compressed glTF and placed by footprint data along the north-pool courtyard facades. Compare before/after through the solved photo cameras. IMG_2204-2206 were the dimension and evaluation references; no model feature in the evidence graph represents the kit, so they are compared in docs/reviews/blender-kit-pilot rather than recorded as photo checks. Left in progress: the reference check treats a done materials task as geometry needing verified placement packets, which the facade kit cannot have yet.",
    "avoid": "No change to footprints, collision or ground. Keep the Layout view clear and ?photocam= renders working. Only CC0 or original assets.",
    "accept": [
     "Before/after renders through the solved IMG_2204-2206 cameras committed in docs/reviews/blender-kit-pilot",
@@ -1280,7 +1280,7 @@
     "Standard handover checks pass"
    ],
    "dependsOn": [],
-   "status": "done",
+   "status": "in-progress",
    "owner": "Claude"
   }
  ]

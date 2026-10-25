@@ -43,6 +43,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P1 | `blender-kit-pilot` | Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard | in-progress · Claude · placement: not-verified |  |
 | P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open · placement: not-applicable | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2363](../../public/photos-ref/IMG_2363.jpg) |
 
 ## Built from these photos
@@ -116,7 +117,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `north-pool-alignment-audit` | [IMG_2208](../../public/photos-ref/IMG_2208.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2208-after.png) | Source supports local west doors/path/hedge ordering; hidden ends untraced. Diagnostic high view omits the original roof/door foreground. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
 | `north-pool-alignment-audit` | [IMG_2363](../../public/photos-ref/IMG_2363.jpg) | **not-comparable** | [after](../../docs/reviews/north-pool-alignment-audit/IMG_2363-after.png) | Source supports separate lawn arch and adjacent patio door beyond plain-tiled Elena lane. Diagnostic view shows that lane/arch topology approximately but has a different eye height/crop, not a pixel match. Captured using shoot_views --high from unchanged uncertain phone pin toward reviewed subject, with animation throttled for software WebGL. Eye height/pitch/intrinsics are uncalibrated; no photographic match or surveyed plan is claimed. See the audit report and open north-pool-unresolved-plan. This audit record does not complete earlier build-task verification. |
 
-**Built without complete newer photo-check records:** `north-pool-garden-walls`, `raised-terraces`, `blender-kit-pilot`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `north-pool-garden-walls`, `raised-terraces`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
