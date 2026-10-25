@@ -1638,6 +1638,45 @@
    ],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "facade-kit-resort",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "materials",
+   "title": "Facade kit on every house: Blender doors, windows and balconies resort-wide",
+   "photos": [],
+   "build": "Extend the north-pool facade kit (facade-kit-traced) to every house: walls traced in data/facade_kit.json keep their parts, all other walls get generated doors, shuttered and arched windows and balconies from the kit instead of flat shutter planes. Keep it in the Details view, instanced, and cheap on small screens.",
+   "avoid": "No change to footprints, ground or collision. No new heavy assets.",
+   "accept": [
+    "Whole-resort Details view draw calls and frame time measured before and after",
+    "Layout and mobile views stay usable"
+   ],
+   "dependsOn": [
+    "facade-kit-traced"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
+   "id": "retexture-surfaces",
+   "area": "whole-resort",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Retexture plaster, terracotta and crazy paving from the photos",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2263.jpg",
+    "IMG_2237.jpg"
+   ],
+   "build": "The graphics pilot left the generated plaster, terracotta tile and crazy-paving textures as they were. Replace them with photo-matched textures (CC0 sources or textures made from the photos' colours and scale: 0.2 m tiles, grey-brown crazy paving), compared through the solved north-pool cameras.",
+   "avoid": "No heavy downloads: keep textures small and tiled. No geometry changes.",
+   "accept": [
+    "Before/after through the solved north-pool cameras",
+    "Download size added stated"
+   ],
+   "dependsOn": [],
+   "status": "open"
   }
  ]
 }

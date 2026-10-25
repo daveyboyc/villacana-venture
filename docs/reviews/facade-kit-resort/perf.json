@@ -1,0 +1,46 @@
+{
+ "before": {
+  "overview": {
+   "msPerFrame": 1888.2,
+   "drawCallsPerFrame": 5605,
+   "errors": []
+  },
+  "middle-pool": {
+   "msPerFrame": 1454.4,
+   "drawCallsPerFrame": 2239,
+   "errors": []
+  },
+  "cervantes": {
+   "msPerFrame": 1441.1,
+   "drawCallsPerFrame": 2068,
+   "errors": []
+  },
+  "cervantes-phone": {
+   "msPerFrame": 940,
+   "drawCallsPerFrame": 1543,
+   "errors": []
+  }
+ },
+ "after": {
+  "overview": {
+   "msPerFrame": 1691.6,
+   "drawCallsPerFrame": 5594,
+   "errors": []
+  },
+  "middle-pool": {
+   "msPerFrame": 1502,
+   "drawCallsPerFrame": 2285,
+   "errors": []
+  },
+  "cervantes": {
+   "msPerFrame": 1650.8,
+   "drawCallsPerFrame": 2112,
+   "errors": []
+  },
+  "cervantes-phone": {
+   "msPerFrame": 818.1,
+   "drawCallsPerFrame": 1532,
+   "errors": []
+  }
+ }
+}
