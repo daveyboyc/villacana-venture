@@ -35,3 +35,9 @@ Registration and level tasks #144/#148 remain open.
 The dedicated browser check tests tile/grout count, rotation at four path angles,
 square pitch, garden-spur phase, unchanged vertex positions and canonical map
 joints. Full layout/route and standard source/build checks are recorded in the PR.
+
+The material correction is delivered provisionally under AGENTS.md. Task #151
+remains in progress because the existing placement framework also requires fresh
+placement evidence for material tasks; the old unregistered ribbon is not made
+verified by changing its UVs. No task kind or review identity was changed to bypass
+that rule. The renderer change gate's warnings are retained in the PR.

@@ -197,7 +197,10 @@
     "elena:C01": "elena-register-path-edges",
     "elena:R01": "elena-register-path-edges",
     "elena:A01": "elena-register-path-edges"
-   }
+   },
+   "additionalAssessments": [
+    "docs/reviews/elena-path-tiles/current-comparisons.json"
+   ]
   }
  ]
 }

@@ -1911,14 +1911,16 @@
     "Three straight tile columns on existing Elena north/south paths; grey margins separate",
     "Actual-surface ray checks and before/after source-context renders",
     "Map/3D share lane alignment; unchanged original registry/pool/road inputs",
-    "Independent source/render review and applicable source/build/route regressions"
+    "Independent source/render review and applicable source/build/route regressions",
+    "Scoped material correction independently reviewed; original road/spur geometry and known height/registration gaps retained. Full layout passed 20 routes in both directions / 438 traversal segments."
    ],
    "dependsOn": [
     "path-network-inventory-elena"
    ],
    "status": "in-progress",
    "owner": "Codex",
-   "issue": 151
+   "issue": 151,
+   "notes": "Material/UV implementation independently reviewed and delivered provisionally. Original positions/widths/heights remain unverified; task stays in progress under the placement policy, with no verified or reconstruction-complete count increment."
   }
  ]
 }
