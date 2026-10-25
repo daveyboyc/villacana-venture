@@ -8,8 +8,10 @@ Every part is built from numbers here, so it can be rebuilt and reviewed like co
 read from the north-pool photos (IMG_2204, IMG_2205, IMG_2206) against the 3 m storey and the
 0.2 m tiles: arched shutter doors about 1.2 m wide and 2.3 m to the top of the arch, black iron
 balconies about 1.8 m wide on a slab 0.45 m deep, and wooden balconies about 3 m wide and
-0.9 m deep with posts carrying a small barrel-tile roof. Each part faces +Z in the game, with
-its origin on the wall face at the floor of its opening.
+0.9 m deep with posts carrying a small barrel-tile roof, rectangular windows about 1.4 m wide
+with their louvred shutters folded open, and narrow arched windows about 0.7 m wide. Each part
+faces +Z in the game, with its origin on the wall face at the floor of its storey (windows carry
+their own sill height).
 """
 import math
 from pathlib import Path
@@ -26,6 +28,7 @@ COLOURS = {  # sRGB, from the photos
     'iron': ('#1d1d1f', 0.55),
     'timber': ('#4a2c1a', 0.7),
     'tile': ('#b4643f', 0.85),
+    'glass': ('#1f2326', 0.25),
 }
 
 
@@ -184,8 +187,35 @@ def wood_balcony(part, width=3.0, depth=0.9, rail=0.95, eave=2.45, ridge=2.75):
     part.box('plaster', -width / 2 - 0.1, width / 2 + 0.1, -0.12, 0, ridge - 0.05, ridge + 0.2)  # wall flashing
 
 
+def shutter_window(part, width=1.4, sill=1.0, height=1.1, proud=0.03):
+    """A dark glazed opening with its two louvred shutters folded open against the wall, under a
+    white moulded hood and over a white sill (IMG_2204/2205, the block east of the north pool)."""
+    r = width / 2
+    part.box('glass', -r, r, -0.005, 0, sill, sill + height)
+    for side in (1, -1):
+        x0, x1 = sorted((side * r, side * (r + width / 2)))
+        part.box('shutter', x0, x1, -proud, 0, sill, sill + height)
+        z = sill + 0.06
+        while z < sill + height - 0.05:
+            part.box('shutter', x0 + 0.03, x1 - 0.03, -proud - 0.02, -proud, z, z + 0.03)
+            z += 0.06
+    part.box('plaster', -r - 0.08, r + 0.08, -0.08, 0, sill - 0.07, sill)                   # sill
+    part.box('plaster', -r - 0.18, r + 0.18, -0.1, 0, sill + height + 0.1, sill + height + 0.22)  # hood
+    part.box('plaster', -r - 0.1, r + 0.1, -0.06, 0, sill + height + 0.22, sill + height + 0.3)
+
+
+def arched_window(part, width=0.7, sill=0.9, spring=0.95):
+    """A narrow louvred window under a half-round head: the door's leaves and surround, smaller and
+    raised to a sill (the arched windows on the east row of the north pool)."""
+    shutter_door(part, width=width, spring=spring)
+    for b in part.meshes.values():
+        for v in b.verts:
+            v.co.z += sill
+
+
 def main():
-    for name, build in (('shutter-door', shutter_door), ('iron-balcony', iron_balcony), ('wood-balcony', wood_balcony)):
+    for name, build in (('shutter-door', shutter_door), ('iron-balcony', iron_balcony), ('wood-balcony', wood_balcony),
+                        ('shutter-window', shutter_window), ('arched-window', arched_window)):
         part = Part(name)
         build(part)
         part.build()

@@ -1,0 +1,352 @@
+{
+ "about": "Facade kit parts read from the north-pool photos through the solved station camera (data/photo_poses.json): each part was located by casting the camera ray through its centre pixel onto the nearest wall facing the camera. \"along\" is metres from footprint corner \"edge\" towards the next corner; storey 0 is the ground floor; \"width\" is the opening width in metres where it differs from the part. Walls listed here get exactly these parts; other pool-facing walls keep the generator (src/facade-kit.ts). Readings of the same part from two photos agree to 0.1-0.3 m. Heights are not read from the photos: parts stand at the model storey heights. See docs/reviews/facade-kit-traced.",
+ "evidence": [
+  "IMG_2204.jpg",
+  "IMG_2205.jpg",
+  "IMG_2206.jpg"
+ ],
+ "walls": [
+  {
+   "building": "6165501UF1366N_part5",
+   "edge": 39,
+   "note": "Tiled-roof wooden balcony across the first floor with two doors behind it; the ground floor is hidden by the one-storey annexe in front.",
+   "parts": [
+    {
+     "part": "wood-balcony",
+     "along": 2.0,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 2.8,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 1.0,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6165501UF1366N_part1",
+   "edge": 4,
+   "note": "One-storey annexe under the wooden balcony: two arched doors.",
+   "parts": [
+    {
+     "part": "shutter-door",
+     "along": 2.3,
+     "storey": 0,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 0.4,
+     "storey": 0,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6165501UF1366N_part5",
+   "edge": 41,
+   "note": "Left of the wooden balcony: the first floor shows plain wall above the tree with no balcony roof; everything lower is hidden by the tree, so no parts are placed.",
+   "parts": []
+  },
+  {
+   "building": "6165501UF1366N_part5",
+   "edge": 37,
+   "note": "Arched balcony door with an iron balcony over an arched ground-floor door, right at the facade step. The registry corner sits a few tenths of a metre off the photographed step, so the parts are kept inside the wall.",
+   "parts": [
+    {
+     "part": "shutter-door",
+     "along": 0.3,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    },
+    {
+     "part": "iron-balcony",
+     "along": 0.4,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 0.2,
+     "storey": 0,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6165501UF1366N_part5",
+   "edge": 33,
+   "note": "Wide arched balcony door with an iron balcony over a wide arched ground-floor door.",
+   "parts": [
+    {
+     "part": "shutter-door",
+     "along": 1.8,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg"
+     ]
+    },
+    {
+     "part": "iron-balcony",
+     "along": 1.8,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 1.8,
+     "storey": 0,
+     "photos": [
+      "IMG_2204.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6266601UF1366N_part4",
+   "edge": 38,
+   "note": "Two rectangular windows with their shutters open on the first floor and an arched door below the right-hand one (seen from the left). The ground floor under the other window is hidden by a tree and awnings.",
+   "parts": [
+    {
+     "part": "shutter-window",
+     "along": 6.5,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ]
+    },
+    {
+     "part": "shutter-window",
+     "along": 2.2,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 6.1,
+     "storey": 0,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6266601UF1366N_part4",
+   "edge": 36,
+   "note": "Tiled-roof wooden balcony across the first floor with doors behind it; awnings hide the ground floor.",
+   "parts": [
+    {
+     "part": "wood-balcony",
+     "along": 1.2,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 2.5,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg"
+     ]
+    },
+    {
+     "part": "shutter-door",
+     "along": 0.2,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6266601UF1366N_part4",
+   "edge": 34,
+   "note": "One narrow arched first-floor window; the ground floor is hidden.",
+   "parts": [
+    {
+     "part": "arched-window",
+     "along": 2.3,
+     "storey": 1,
+     "photos": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6266601UF1366N_part4",
+   "edge": 33,
+   "note": "Two narrow arched first-floor windows and one on the ground floor; the rest of the ground floor is hidden by planting.",
+   "parts": [
+    {
+     "part": "arched-window",
+     "along": 4.7,
+     "storey": 1,
+     "photos": [
+      "IMG_2205.jpg"
+     ]
+    },
+    {
+     "part": "arched-window",
+     "along": 1.0,
+     "storey": 1,
+     "photos": [
+      "IMG_2205.jpg"
+     ]
+    },
+    {
+     "part": "arched-window",
+     "along": 1.0,
+     "storey": 0,
+     "photos": [
+      "IMG_2205.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6265401UF1366N_part3",
+   "edge": 6,
+   "note": "Two arched louvred windows on the first floor, behind the big yucca; the ground floor is hidden.",
+   "parts": [
+    {
+     "part": "arched-window",
+     "along": 3.8,
+     "storey": 1,
+     "photos": [
+      "IMG_2205.jpg"
+     ],
+     "width": 1.1
+    },
+    {
+     "part": "arched-window",
+     "along": 2.0,
+     "storey": 1,
+     "photos": [
+      "IMG_2205.jpg"
+     ],
+     "width": 1.1
+    }
+   ]
+  },
+  {
+   "building": "6165501UF1366N_part2",
+   "edge": 10,
+   "note": "West row: a tall arched balcony door with a small iron balcony and a narrower one beside it on the first floor; an arched door and a small arched window on the ground floor.",
+   "parts": [
+    {
+     "part": "shutter-door",
+     "along": 2.9,
+     "storey": 1,
+     "photos": [
+      "IMG_2206.jpg"
+     ],
+     "width": 0.8
+    },
+    {
+     "part": "iron-balcony",
+     "along": 2.9,
+     "storey": 1,
+     "photos": [
+      "IMG_2206.jpg"
+     ],
+     "width": 0.9
+    },
+    {
+     "part": "shutter-door",
+     "along": 5.9,
+     "storey": 1,
+     "photos": [
+      "IMG_2206.jpg"
+     ],
+     "width": 0.6
+    },
+    {
+     "part": "iron-balcony",
+     "along": 5.9,
+     "storey": 1,
+     "photos": [
+      "IMG_2206.jpg"
+     ],
+     "width": 0.7
+    },
+    {
+     "part": "shutter-door",
+     "along": 0.6,
+     "storey": 0,
+     "photos": [
+      "IMG_2206.jpg"
+     ]
+    },
+    {
+     "part": "arched-window",
+     "along": 3.2,
+     "storey": 0,
+     "photos": [
+      "IMG_2206.jpg"
+     ]
+    }
+   ]
+  },
+  {
+   "building": "6165501UF1366N_part5",
+   "edge": 1,
+   "note": "One arched first-floor opening, half hidden by a tree.",
+   "parts": [
+    {
+     "part": "shutter-door",
+     "along": 2.0,
+     "storey": 1,
+     "photos": [
+      "IMG_2206.jpg"
+     ]
+    }
+   ]
+  }
+ ]
+}
