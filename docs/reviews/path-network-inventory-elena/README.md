@@ -44,7 +44,11 @@ these same-direction views do not prove the reverse connection or world identity
 Five named evidence requests remain open: ground registration, concealed returns,
 second-candidate identity, the south approach's reverse view, and levels/clearance.
 All 29 component comparisons are semantic differences/partial coverage or explicit
-not-comparable results at the pinned model. No calibrated photo match is claimed.
+not-comparable results at the pinned model. No calibrated photo match is claimed. After incorporating newer main, all 20 declared
+model input digests still match the pinned comparison baseline. Upstream added
+roof-camera/export work and changed a shutter appearance; it did not add the
+unrepresented Elena tunnel structure. Render artifacts retain their original commit
+provenance rather than being relabelled as new captures.
 The private gateway's shaped head is already represented in simplified form; the
 missing covered-portal arch is a different component.
 

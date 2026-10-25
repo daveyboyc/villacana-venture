@@ -2653,25 +2653,25 @@
   }
  ],
  "tasks": {
+  "elena-level-clearance-survey": {
+   "id": "elena-level-clearance-survey",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/148"
+  },
   "elena-register-path-edges": {
    "id": "elena-register-path-edges",
    "url": "https://github.com/daveyboyc/villacana-venture/issues/144"
+  },
+  "elena-register-tunnel-portals": {
+   "id": "elena-register-tunnel-portals",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/145"
   },
   "elena-south-terminal-identify": {
    "id": "elena-south-terminal-identify",
    "url": "https://github.com/daveyboyc/villacana-venture/issues/147"
   },
-  "elena-level-clearance-survey": {
-   "id": "elena-level-clearance-survey",
-   "url": "https://github.com/daveyboyc/villacana-venture/issues/148"
-  },
   "elena-tunnel-structure-correction": {
    "id": "elena-tunnel-structure-correction",
    "url": "https://github.com/daveyboyc/villacana-venture/issues/146"
-  },
-  "elena-register-tunnel-portals": {
-   "id": "elena-register-tunnel-portals",
-   "url": "https://github.com/daveyboyc/villacana-venture/issues/145"
   }
  },
  "inventoryComplete": true

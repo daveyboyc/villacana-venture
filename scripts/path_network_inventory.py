@@ -172,7 +172,7 @@ def load_inventories(root, authored, catalog, features, problems):
             safe_features.append({**{k:f.get(k) for k in ['id','name','kind','sources','observed','unknowns','modelFeatureIds','nextAction']}, 'traces':[t for t in f.get('traces', []) if t.get('source') in known and known[t['source']]['path'].startswith('public/')]})
         safe = dict(area=area, scope=inventory.get('scope', inventory.get('scopeLimit')), revision=sha(path), sources=safe_sources,
             features=safe_features, drawings=drawings, assessments=assessments,
-            tasks={id:task_link(id) for id in set(entry.get('featureFollowUps', {}).values())},
+            tasks={id:task_link(id) for id in sorted(set(entry.get('featureFollowUps', {}).values()))},
             inventoryComplete=summaries[area]['inventoryComplete'])
         (target/'inventory.json').write_text(json.dumps(safe, indent=1, ensure_ascii=False)+'\n')
         shutil.copyfile(root/'scripts/path_network_inventory_viewer.html', target/'index.html')
