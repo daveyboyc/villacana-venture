@@ -63,5 +63,6 @@ so photos indexed before this change rely on the solve and a loose 24 mm prior.
   They carry the camera's own uncertainty (the `sigma` stored with the solve), so treat anything
   under about 0.3 m as agreement.
 - A solved camera is a measurement tool. It does not grant placement approval
-  (`docs/PLACEMENT_VERIFICATION.md`), and the model export currently covers registry buildings
-  and pool edges only; walls, steps and planters are compared by eye in the overlay.
+  (`docs/PLACEMENT_VERIFICATION.md`). The model export covers registry buildings, pool edges,
+  street edges and the rendered edges of traced walls, steps, kerbs, beds and terraces; planting
+  and other details are still compared by eye in the overlay.
