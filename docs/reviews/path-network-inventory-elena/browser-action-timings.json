@@ -1,0 +1,102 @@
+[
+ {
+  "action": "browserType.launch",
+  "seconds": 0.314,
+  "result": "succeeded"
+ },
+ {
+  "action": "browser.newPage",
+  "seconds": 0.238,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.goto",
+  "seconds": 0.91,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 12.152,
+  "result": "succeeded"
+ },
+ {
+  "action": "locator.getAttribute",
+  "seconds": 0.55,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.click",
+  "seconds": 0.375,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 0.058,
+  "result": "succeeded"
+ },
+ {
+  "action": "locator.click",
+  "seconds": 0.154,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.click",
+  "seconds": 0.381,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 0.091,
+  "result": "succeeded"
+ },
+ {
+  "action": "locator.evaluate",
+  "seconds": 0.097,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 4.854,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.click",
+  "seconds": 32.333,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 11.008,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.click",
+  "seconds": 15.124,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 3.922,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.screenshot",
+  "seconds": 31.941,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.click",
+  "seconds": 3.203,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.waitForFunction",
+  "seconds": 6.9,
+  "result": "succeeded"
+ },
+ {
+  "action": "page.screenshot",
+  "seconds": 51.93,
+  "result": "succeeded"
+ }
+]

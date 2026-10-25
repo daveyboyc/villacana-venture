@@ -1,0 +1,165 @@
+{
+ "scope": "All 29 source inventory rows accounted for as semantic differences or explicit not-comparable scopes; no placement approval.",
+ "assessments": [
+  {
+   "featureIds": [
+    "elena:T01",
+    "elena:T09"
+   ],
+   "image": "tunnel-private-context.png",
+   "imageSha256": "25d03a14054f14dfd994195a52ee65e097f8fa8e7dfef84f165ff5d9c40218ab",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "differs",
+   "observation": "Existing host representation is a rectangular covered shell facing simplified paired barred gates. The photographed covered-portal curved arch/soffit is missing from this representation. The separate private gateway has a shaped head in the model; its detailed profile and leaf design are simplified, not absent.",
+   "limitations": "This is a semantic component comparison. It does not measure portal positions, dimensions, gateway curvature or inferred public access. Capture uses host context, not the inaccurate IMG_2202 pin.",
+   "followUp": "elena-tunnel-structure-correction",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:T02",
+    "elena:T03",
+    "elena:T04",
+    "elena:T05",
+    "elena:T06",
+    "elena:T07",
+    "elena:T08"
+   ],
+   "image": "tunnel-lane-context.png",
+   "imageSha256": "68979f234f9657cd4b66d74e257fd5ce209fa2f056bbaeafc15a21476d90136b",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "differs",
+   "observation": "Current model has a flat overhead slab and plain side walls with a rectangular exit. Photographed arched exit, two near brown side-door recesses, two smaller far shuttered openings, lantern and central pebble inset are not represented in this shell.",
+   "limitations": "Smaller far openings remain window-like/unknown; do not convert them into extra doors. Dimensions and world identity remain unregistered. Decoration and paving follow supported structural layout.",
+   "followUp": "elena-tunnel-structure-correction",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:N01",
+    "elena:N02",
+    "elena:N03",
+    "elena:N05"
+   ],
+   "image": "north-lane-context.png",
+   "imageSha256": "e69e8763723cb0a5cb93670123aa87de9a93a9bc7ead82dc3882308ec0a8cd07",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Model represents finite raised bed edges, a plain ground wall and a barred return opening. The schematic path texture and generic surrounding ground do not establish the grey/pebble paved margins seen in photos.",
+   "limitations": "Approximate model camera and incomplete framing cannot certify either physical path edge, width, hidden return or upper/ground alignment. Vegetation omission in Layout is intentional.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:N04",
+    "elena:N06",
+    "elena:N07"
+   ],
+   "image": "IMG_2200-before.png",
+   "imageSha256": "7901cf6aaeea6df9c3ffdf310417d4be579b8d7b7b5893968a7492e7390c32b7",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Existing garden wall, private brown door, bounded spur, planter beds and timber pergola are visible in current model context.",
+   "limitations": "Third-person photo-pin context is not a calibrated source camera; only some of these components are in frame. Hidden private patios/partitions remain unresolved.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:G01"
+   ],
+   "image": "IMG_2363-before.png",
+   "imageSha256": "678ee64d2651679f186e7f59b49f8bd91f1218fe8c068f7ff84fb70c9a965eac",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "A separate shallow arched lawn gateway and adjacent private brown door are represented in current model context. It is not the covered passage.",
+   "limitations": "Approximate third-person camera cannot verify the opening width, depth, height, placement or all adjacent boundaries.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:S01",
+    "elena:S02",
+    "elena:S03",
+    "elena:S04"
+   ],
+   "image": "south-lane-context.png",
+   "imageSha256": "0afa1fb54e2afc70dff0157b60627a759befaebe44c2fd33ff34d619110d5b26",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Model shows south-route guide, bounded lawn edge, a distant gate/frame and generic frontage. The visible whole-ground copper surface and nominal route strip do not delineate the photographed physical paving extents.",
+   "limitations": "Terminal structure is too distant in this model view to compare material or leaf design. Closer same-direction private photos09/12 show an open iron gate candidate and a separate glass pool barrier beyond; they do not prove a reverse Elena connection or world identity. Both path edges and complete wall/door layout need registration.",
+   "followUp": "elena-south-terminal-identify",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:J01",
+    "elena:J02",
+    "elena:J03",
+    "elena:J04"
+   ],
+   "image": "junction-context.png",
+   "imageSha256": "027d4186711cda28b018d9fb6598731bed30dddb5a4bab18e9e4edbd43554d5b",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Three model risers sit alongside a smooth ramp, with a transverse drain, a retained bed and adjoining private raised door context. The photographed side-by-side arrangement is represented in part.",
+   "limitations": "Camera is selected from model coordinates, not solved to IMG_2286. No measured riser, datum, planter footprint or ground-wall agreement follows from this view.",
+   "followUp": "elena-level-clearance-survey",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:T10"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-tunnel-portals",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:C01"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-path-edges",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:R01"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-path-edges",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:A01"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-path-edges",
+   "reviewer": "Codex root"
+  }
+ ]
+}

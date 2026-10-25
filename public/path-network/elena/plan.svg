@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 1720" role="img" aria-labelledby="title desc"><title id="title">Elena source-relative path and boundary inventory</title><desc id="desc">Four labelled schematic plans distinguish observed path margins, building ground-wall fragments, garden walls, openings and unknown connections. No metric registration or geometry proposal.</desc><style>text{font-family:system-ui,sans-serif;fill:#23362e;font-size:14px} .title{font-size:24px;font-weight:700}.h{font-size:17px;font-weight:700}.small{font-size:12px}.path{fill:#f4dac0;stroke:none}.ground{stroke:#303537;stroke-width:6;fill:none}.wall{stroke:#a66d42;stroke-width:5;fill:none}.kerb{stroke:#3f8952;stroke-width:4;fill:none}.unknown{stroke:#a65784;stroke-width:3;stroke-dasharray:9 6;fill:none}.opening{stroke:#1c769f;stroke-width:6;fill:none}.roof{stroke:#8b8c92;stroke-width:3;stroke-dasharray:3 5;fill:none}.box{fill:#fffdf8;stroke:#c7c0af}.id{font-weight:700;fill:#24627c}.labelbg{fill:#fffdf8;opacity:.92}</style>
+<rect width="1480" height="1720" fill="#f5f1e7"/><text x="40" y="45" class="title">Calle Elena · observed path structure before paving/detail</text>
+<text x="40" y="74">Source-relative relationship plans · NOT TO SCALE · no world/map transform, measured width or placement approval</text>
+<text x="40" y="101">Solid segments record visible source forms only. Dashed magenta retains concealed/identity/registration gaps; no guessed joins.</text>
+<path d="M45 131h70" class="ground"/><text x="125" y="136">visible building ground-wall fragment</text><path d="M510 131h70" class="wall"/><text x="590" y="136">garden / enclosure wall</text>
+<path d="M45 163h70" class="kerb"/><text x="125" y="168">observed low kerb / planter edge</text><path d="M510 163h70" class="opening"/><text x="590" y="168">opening / finite threshold</text><path d="M1020 163h70" class="unknown"/><text x="1100" y="168">unresolved continuation</text>
+<rect x="30" y="195" width="695" height="690" rx="12" class="box"/><text x="50" y="224" class="h">A · North lane and shallow lawn gateway</text>
+<text x="50" y="247" class="small">IMG_2197–2201, 2363, 2365 · orientation schematic, source-local labels</text>
+<path d="M220 800V380H343V800Z" class="path"/><path d="M230 800V385M333 800V385" stroke="#dba87e" stroke-width="2" fill="none"/>
+<path d="M202 795V680m0-50v-80m0-35V400" class="ground"/><text x="52" y="508">N02 · building fronts</text><text x="52" y="529" class="small">visible pieces; grilles/planters</text>
+<path d="M220 793V680m0-35v-94m0-33V410" class="kerb"/><path d="M345 790V655H493M345 604V440H493" class="kerb"/>
+<path d="M345 655H493V606H345Z" class="path"/><text x="370" y="687" class="id">N03 · bed1 + bed2</text><text x="370" y="709" class="small">low kerbs / clipped hedge</text>
+<text x="238" y="822" class="id">N01 · both paved margins</text><text x="70" y="850" class="small">Red tile field sits inside wider grey aggregate margins; unknowns retained at plants.</text>
+<path d="M510 795V665m0-80V430" class="wall"/><path d="M510 665V585" class="opening"/><text x="528" y="610" class="id">N04 · private door</text><text x="528" y="632" class="small">spur between beds</text>
+<path d="M345 432H510" class="wall"/><path d="M397 432h60" class="opening"/><text x="52" y="309" class="small">N05 · barred shutter opening</text>
+<path d="M220 385h123" class="opening"/><path d="M188 385h32M343 385h56" class="wall"/><text x="400" y="345" class="id">G01 · shallow garden gateway</text>
+<text x="400" y="368" class="small">open leaf; tile → stone threshold</text><rect x="201" y="285" width="165" height="80" fill="#e1ebd1"/><text x="220" y="327">stone path / lawn</text>
+<path d="M510 431V345h80" class="wall"/><path d="M510 478v62" class="opening"/><text x="528" y="476" class="id">N06 · lane-side patio</text><text x="528" y="497" class="small">door + uncertain recess</text><text x="528" y="548" class="small">N07 separate patio-side door</text>
+<path d="M510 795v28M510 344v-32M202 398v-38" class="unknown"/>
+<rect x="755" y="195" width="695" height="690" rx="12" class="box"/><text x="775" y="224" class="h">B · Covered passage + private 36/34 forecourt</text>
+<text x="775" y="247" class="small">IMG_2202/2203, 2254–2256, 2361 · source-facing plan, compass unresolved</text>
+<rect x="1020" y="368" width="135" height="390" class="path"/><path d="M1010 368V450m0 54v105m0 95v54M1165 368v82m0 54v105m0 95v54" class="ground"/>
+<path d="M1010 450v54M1165 450v54" class="opening"/><text x="790" y="465">T06/T07 · farther shuttered</text><text x="790" y="487">openings with sills; not doors</text>
+<path d="M1010 609v95M1165 609v95" class="opening"/><text x="1190" y="635">T04/T05</text><text x="1190" y="657">near private</text><text x="1190" y="679">brown doorways</text>
+<path d="M1010 368h155M1010 758h155" class="opening"/><text x="1190" y="366" class="id">T01 · portal A</text><text x="1190" y="389" class="small">private-forecourt side</text><text x="1184" y="758" class="id">T02 · portal B</text><text x="1184" y="780" class="small">plain lane / bed side</text>
+<rect x="1050" y="542" width="74" height="47" fill="#c6c0aa"/><text x="790" y="567">T08 · patterned floor +</text><text x="790" y="589">separate pebble inset</text>
+<path d="M1087 758v65" class="unknown"/><text x="790" y="843" class="small">Unregistered connection to Elena lane: photo 2203 shows bed across portal.</text>
+<rect x="1020" y="302" width="135" height="63" class="path"/><path d="M1010 302h155" class="opening"/><text x="1184" y="308" class="id">T09 · gates 36/34</text><text x="1184" y="330" class="small">private/gated terminal spur</text>
+<text x="790" y="700" class="small">T03: flat ceiling behind arches</text><path d="M1087 300v-28" class="unknown"/><text x="790" y="280" class="small">T10: farther gateway/arch in roof view; NOT assigned to tun-002</text>
+<rect x="30" y="915" width="695" height="640" rx="12" class="box"/><text x="50" y="945" class="h">C · Ramp / stair junction (source 2286 direction)</text>
+<text x="50" y="969" class="small">IMG_2286, 2327/2328, 2355, 2252/2262/2265</text>
+<rect x="216" y="1034" width="246" height="370" class="path"/><path d="M215 1040v340" class="kerb"/><path d="M463 1038v349" class="wall"/>
+<path d="M216 1405h246" class="opening"/><text x="50" y="1450" class="id">J01 · full-width drain across foot</text>
+<path d="M340 1180h122m-122 80h122m-122 80h122" class="opening"/>
+<text x="237" y="1180" transform="rotate(90 237 1180)">continuous tiled slope</text><text x="355" y="1134">three risers</text><text x="490" y="1185" class="id">J02 · planter wall</text><text x="490" y="1208">hidden back unresolved</text>
+<path d="M120 1405h400m-150 0v80" class="path"/><path d="M215 1027v-27M463 1027v-27M216 1405h-80M462 1405h74" class="unknown"/>
+<text x="490" y="1310" class="id">J03 · private door</text><text x="490" y="1333">separate two-step</text><text x="490" y="1355">approach beside route</text>
+<text x="50" y="1492" class="small">J04: junction branches + two utility covers. Dimensions and datums remain unknown.</text>
+<rect x="755" y="915" width="695" height="640" rx="12" class="box"/><text x="775" y="945" class="h">D · South lane / lawns / separate terminal frame</text>
+<text x="775" y="969" class="small">IMG_2253, 2330, 2220, 2358, 2367 · private09/12 closer candidate views</text>
+<rect x="1000" y="1030" width="92" height="426" class="path"/><path d="M986 1045v95m0 45v83m0 43v90" class="ground"/><path d="M1000 1041v381" class="kerb"/>
+<path d="M1093 1030v170h215M1093 1250v206h215" class="kerb"/>
+<rect x="1094" y="1030" width="210" height="168" fill="#e1ebd1"/><rect x="1094" y="1251" width="210" height="204" fill="#e1ebd1"/>
+<rect x="1093" y="1202" width="215" height="45" class="path"/><path d="M1312 1032v165m0 53v110m0 61v36" class="wall"/><path d="M1312 1197v53m0 110v61" class="opening"/>
+<text x="1130" y="1100" class="id">S02 · two lawns</text><text x="1130" y="1123">and kerb returns</text><text x="1120" y="1228" class="small">private cross-lawn path</text><text x="1127" y="1333" class="id">S03 · garden wall</text><text x="1127" y="1354">two brown doors</text>
+<path d="M1000 1030h92" class="opening"/><text x="810" y="1013" class="id">S04 · terminal gateway; closer iron-leaf candidate</text>
+<text x="780" y="1479" class="id">S01 · both paved edges, not nominal 1.2 m buffer</text><text x="780" y="1503" class="small">Frontage edge partly hidden by foliage. Lawn kerb does not establish whole lawn level.</text>
+<rect x="30" y="1580" width="1420" height="110" rx="10" fill="#f3e5d9"/><text x="50" y="1609" class="h">Unresolved work remains visible</text>
+<text x="50" y="1636">R01/A01: roof/aerial outlines do not establish concealed ground walls. Legacy tun-002 has no identified portal pair.</text>
+<text x="50" y="1661">Register full sources with independent ground controls; inspect hidden returns/terminal gate; compare every supported component to current game.</text>
+</svg>

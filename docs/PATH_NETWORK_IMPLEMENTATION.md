@@ -1,5 +1,9 @@
 # Path network implementation status
 
+Elena now has a [scoped available-source inventory](reviews/path-network-inventory-elena/README.md)
+with independent source/drawing/model review and explicit unresolved registration
+and geometry gaps. This advances source accounting; it does not complete the physical map.
+
 The first implementation task is `path-network-baseline`: graph-backed software
 accounting and an inspector on the canonical map. This does **not** complete phase
 0's full-source survey, nor any geometry delivery in phases 1–4.

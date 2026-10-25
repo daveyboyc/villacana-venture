@@ -7,9 +7,12 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 ## Counts
 
 - areas: 14
-- inventoryCompleteAreas: 0
+- inventoryCompleteAreas: 1
+- sourceObservations: 29
+- sourcePixelTraces: 40
+- sourcePixelLocators: 8
 - sources: 176
-- uninspectedSources: 176
+- uninspectedSources: 117
 - routes: 24
 - segments: 173
 - tracedSides: 0
@@ -25,7 +28,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Middle pool | 24 / 24 | 0 | 0 | uninspected |
 | South pool | 7 / 7 | 0 | 0 | uninspected |
 | Main pool | 6 / 6 | 0 | 0 | uninspected |
-| Calle Elena | 39 / 39 | 2 | 2 | uninspected |
+| Calle Elena | 39 / 0 | 2 | 2 | inspected |
 | Calle Miguel de Cervantes | 26 / 26 | 1 | 0 | uninspected |
 | Calle Pintor Dalí | 25 / 25 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 3 / 3 | 2 | 0 | uninspected |
@@ -36,7 +39,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | The paseo | 16 / 16 | 4 | 0 | uninspected |
 | The whole resort | 21 / 21 | 0 | 0 | uninspected |
 
-Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.
+Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.
 
 Registry outlines retain their original rings and hashes; they are not physical wall traces. Route junctions share exact imported coordinates only; intersections, near misses and dead ends need source review. Existing model discrepancies remain in the reference graph.
 

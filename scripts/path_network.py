@@ -6,6 +6,7 @@ context, never promoted to traced edges, source inspection or placement approval
 import hashlib
 import json
 from pathlib import Path
+from path_network_inventory import load_inventories
 
 
 def read(root, path):
@@ -128,8 +129,38 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
         model_context(row, [f['id']])
         for source in f['photos']:
             link(row['id'], source if source.startswith('ref:') else 'ref:'+source, 'cites')
+    observed, inspected_accounting, area_inventories = load_inventories(root, authored, catalog, features, problems)
+    for area, inventory in area_inventories.items():
+        for update in inventory.get('tunnels', []):
+            row = next((r for r in records if r['id']=='path-tunnel:'+update['id']), None)
+            if not row:
+                problems.append('path inventory: unknown tunnel '+update['id']); continue
+            row['sourceObservations'] = update
+            row['states']['source'] = 'inspected'
+            row['states']['identity'] = 'candidate'
+            row['identityNote'] = update['identity']
+            row['accessObservation'] = update['access']
+            row['nextAction'] = update['nextAction']
+            row['portals'] = [{'connection':None, **p} for p in update['portals']]
+            row['sources'] = sorted(set(row['sources'] + update['sources']))
+            row['drawing'] = inventory['drawing']
+            for portal in update['portals']:
+                if portal.get('observation'):
+                    link(row['id'], 'path-observation:'+portal['observation'], 'portal-observed-as')
+        for gap in inventory.get('evidenceRequests', []):
+            row = add('path-gap:'+gap['id'], 'path-evidence-gap', gap['id'].replace('-', ' '),
+                      needed=gap['needed'], nextAction=gap['needed'], states={**states(), 'source':'source needed'})
+            in_areas(row, [area])
+            if gap.get('followUp'): link(row['id'], 'task:'+gap['followUp'], 'follow-up')
+    for row in observed:
+        records.append(row)
+        for area in row['areas']: link(row['id'], 'area:'+area, 'in-area')
+        for source in row['sources']:
+            link(row['id'], source if source.startswith(('ref:','map:')) else 'ref:'+source, 'observed-in')
+        if row.get('nextTask'): link(row['id'], 'task:'+row['nextTask']['id'], 'follow-up')
+        for model in row['modelContext']: link(row['id'], model['id'], 'compared-with')
     source_ids = {e['id'] for e in catalog}
-    accounting = authored.get('sourceAccounting', {})
+    accounting = {**authored.get('sourceAccounting', {}), **inspected_accounting}
     for source in accounting:
         if source not in source_ids: problems.append('path network: unknown accounted source '+source)
     for e in catalog:
@@ -144,7 +175,7 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
         if disposition == 'duplicate' and record.get('retainedSource') not in source_ids - {e['id']}:
             problems.append('path network: duplicate needs distinct retained source '+e['id'])
         row = add('path-source:'+e['id'], 'path-source-accounting', e['title'], sourceId=e['id'],
-            disposition=disposition, review=record or None,
+            disposition=disposition, inspectionScopes=record.get('areasInspected', []), review=record or None,
             nextAction='Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.')
         in_areas(row, e['shows'])
         link(row['id'], e['id'] if e['id'].startswith('ref:') else 'ref:'+e['id'], 'accounts-for')
@@ -157,10 +188,12 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
         area_routes = [r['id'] for r in records if r['kind']=='path-route' and a['id'] in r['areas']]
         tunnels = [r['id'] for r in records if r['kind']=='path-tunnel' and a['id'] in r['areas']]
         row = add('path-coverage:'+a['id'], 'path-area-coverage', a['name'],
-            states=states(), sourceCoverage='uninspected' if sources else 'source needed',
-            sourceCount=len(sources), uninspectedSources=sum(r['disposition']=='not-yet-inspected' for r in sources),
-            routes=area_routes, tunnels=tunnels, inventoryComplete=False,
-            limits='Catalogue association only. Full-source feature inventory, additional tunnel search and boundary traces remain outstanding.',
+            states=states(), sourceCoverage=area_inventories.get(a['id'], {}).get('sourceCoverage', 'uninspected' if sources else 'source needed'),
+            sourceCount=len(sources), uninspectedSources=sum(a['id'] not in r['inspectionScopes'] for r in sources),
+            routes=area_routes, tunnels=tunnels, inventoryComplete=area_inventories.get(a['id'], {}).get('inventoryComplete', False),
+            inventory=area_inventories.get(a['id']),
+            drawing=area_inventories.get(a['id'], {}).get('drawing'),
+            limits=area_inventories.get(a['id'], {}).get('limits', 'Catalogue association only. Full-source feature inventory, additional tunnel search and boundary traces remain outstanding.'),
             nextAction='Obtain opposite-end portal photos, path-edge views and ground/roof anchors.' if sources else 'Request ground views along every lane, both ends of covered connections and an aerial with independent anchors.')
         row['states']['source'] = row['sourceCoverage']
         in_areas(row, [a['id']])
@@ -169,15 +202,17 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
         for area in row.get('areas', []):
             if area not in area_ids: problems.append('path network: unknown area '+area)
     nodes.extend(records)
-    totals = dict(areas=len(spec['areas']), inventoryCompleteAreas=0, sources=len(catalog),
+    totals = dict(areas=len(spec['areas']), inventoryCompleteAreas=sum(r['kind']=='path-area-coverage' and r['inventoryComplete'] for r in records),
+        sourceObservations=len(observed), sourcePixelTraces=sum('locator' not in t.get('role','').lower() for r in observed for t in r['traces']),
+        sourcePixelLocators=sum('locator' in t.get('role','').lower() for r in observed for t in r['traces']), sources=len(catalog),
         uninspectedSources=sum(r['kind']=='path-source-accounting' and r['disposition']=='not-yet-inspected' for r in records),
         routes=len(routes), segments=sum(r['kind']=='path-segment' for r in records),
         tracedSides=0, tunnelCandidates=len(authored['tunnels']), confirmedUniqueTunnels=None,
         registryOutlines=len(skeleton['buildings']))
-    data = dict(version=1, scope='Phase 0 software baseline; full-source resort survey remains open.',
+    data = dict(version=1, scope='Phase 0 source inventory; full resort survey and world placement remain open.',
         frame=dict(axes='+x east, +z south', units='metres', displayRotationApplied=False),
         inputDigests={name: hashlib.sha256((root/name).read_bytes()).hexdigest() for name in ['data/path_network.json','public/map/skeleton.json','data/passages.json']},
-        totals=totals, records=records)
+        totals=totals, inventories=area_inventories, records=records)
     (root/'public/path-network.json').write_text(json.dumps(data, indent=1, ensure_ascii=False)+'\n')
     lines = ['# Path network baseline', '', '_Generated from the reference graph inputs. Not a completed survey._', '',
         'Canonical inspector: `/?view=map&network=1`. Source content tags, citations and legacy trust labels do not establish traced edges or placement approval.', '',
@@ -186,7 +221,7 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
     for r in records:
         if r['kind']=='path-area-coverage':
             lines.append(f'| {r["name"]} | {r["sourceCount"]} / {r["uninspectedSources"]} | {len(r["routes"])} | {len(r["tunnels"])} | {r["sourceCoverage"]} |')
-    lines += ['', 'Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.', '',
+    lines += ['', 'Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.', '',
         'Registry outlines retain their original rings and hashes; they are not physical wall traces. Route junctions share exact imported coordinates only; intersections, near misses and dead ends need source review. Existing model discrepancies remain in the reference graph.', '',
         '## Next work', '', 'Each area has an open `path-network-inventory-<area>` task in QUEUE.md. Complete source accounting in data/path_network.json only after full-source inspection, linking observations and retaining unusable/duplicate reasons and revisions. Do not infer unseen geometry. See docs/PATH_NETWORK_PRD.md for later tracing, drawing, runtime and release gates.']
     (root/'refs/PATH_NETWORK.md').write_text('\n'.join(lines)+'\n')
