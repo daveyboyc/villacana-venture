@@ -7,12 +7,21 @@ import hashlib
 import json
 import shutil
 import re
-from PIL import Image
+import struct
+from placement_verification import jpeg_size
 from pathlib import Path
 
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def image_size(path):
+    with path.open('rb') as stream:
+        header=stream.read(24)
+    if header.startswith(b'\x89PNG\r\n\x1a\n'):
+        return struct.unpack('>II', header[16:24])
+    return jpeg_size(path)
 
 
 def load_inventories(root, authored, catalog, features, problems):
@@ -89,9 +98,8 @@ def load_inventories(root, authored, catalog, features, problems):
             if (is_public or original.is_file()) and (not original.is_file() or source.get('sha256') != sha(original)):
                 problems.append('path inventory: source bytes stale '+id)
             if original.is_file():
-                with Image.open(original) as image:
-                    if image.size != (source.get('width'), source.get('height')):
-                        problems.append('path inventory: source dimensions stale '+id)
+                if image_size(original) != (source.get('width'), source.get('height')):
+                    problems.append('path inventory: source dimensions stale '+id)
             if not all(source.get(k) for k in ('reason', 'disposition', 'limitations')):
                 problems.append('path inventory: source accounting lacks disposition/reason/limitations '+id)
             if source.get('disposition') == 'observed' and not by_source[id]:
