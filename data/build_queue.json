@@ -1301,6 +1301,25 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "path-network-baseline",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Path network: graph-backed baseline and canonical map inspector",
+   "photos": [],
+   "build": "Reconcile existing graph, catalogue, routes, registry and passage/source-group candidates into explicit accounting and unresolved work. Expose a searchable canonical map inspector without changing runtime geometry.",
+   "avoid": "Do not claim full-source inventory completion, trace edges from nominal buffers, merge tunnel candidates or grant placement approval.",
+   "accept": [
+    "All fixed areas and catalogue sources accounted for without promoting content tags to feature inspection",
+    "Every runtime route axis imported with unknown physical edges",
+    "Legacy passages and separate Silvia/Jorge candidates retained",
+    "Graph integrity, state validation and map/mobile inspector checks pass"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex"
   }
  ]
 }
