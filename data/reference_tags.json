@@ -810,7 +810,13 @@
   "useFor": [
    "layout"
   ],
-  "title": "Calle Elena south: tiled lane beside a lawn"
+  "title": "Calle Elena south: tiled lane beside a lawn",
+  "looksAt": [
+   -145.27,
+   71.4
+  ],
+  "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage",
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged."
  },
  "IMG_2254.jpg": {
   "shows": [
@@ -1881,7 +1887,13 @@
   "viewpoint": "ground",
   "useFor": [
    "layout"
-  ]
+  ],
+  "looksAt": [
+   -145.27,
+   71.4
+  ],
+  "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage",
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged."
  },
  "IMG_2331.jpg": {
   "shows": [

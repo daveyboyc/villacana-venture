@@ -9,6 +9,7 @@ import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
 import {addRaisedTerraces,raisedTerraceGroundOffset,raisedTerraceRings,suppressInRaisedTerraces} from "./raised-terraces";
+import {paintElenaPaving,elenaSurfaceSamples} from "./elena-lane-paving";
 import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
@@ -431,6 +432,7 @@ async function boot(): Promise<void> {
   // Keep the existing finite garden paving visible on the newly surveyed ground.
   const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
   if(gardenPaving){scene.updateMatrixWorld(true);const old=gardenPaving.geometry;gardenPaving.geometry=refine(old,(x,z)=>Math.max(0,siteY(x,z)-silviaY),gardenPaving.matrixWorld);if(gardenPaving.geometry!==old)old.dispose();}
+  if(new URLSearchParams(location.search).get("checkSurface")==="elena")(window as unknown as {villacanaElenaSurfaces:unknown}).villacanaElenaSurfaces=elenaSurfaceSamples(scene,skeleton.boundaryReference?.roads??[],world.groundHeight??liveGroundY);
   if (photoView || new URLSearchParams(location.search).get("export") === "model") exportModel(scene, skeleton, liveGroundY, world.groundHeight ?? liveGroundY);
   const cameraBlockers:THREE.Object3D[]=[];
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
@@ -610,6 +612,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   // Local materials are clipped by the existing paving mask, preserving lawn and footprints.
   tctx.globalCompositeOperation = "source-atop";
   paintSeawardPaving(tctx,skeleton,centre,span,size);
+  paintElenaPaving(tctx,skeleton.boundaryReference?.roads??[],centre,span,size);
   pctx.drawImage(tiled, 0, 0);
 
   const lawn = skeleton.cover.classes.lawn;

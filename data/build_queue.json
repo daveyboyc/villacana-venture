@@ -1902,9 +1902,10 @@
    ],
    "features": [
     "elena_lane_paving.json:elena-north-three-column",
-    "elena_lane_paving.json:elena-south-three-column"
+    "elena_lane_paving.json:elena-south-three-column",
+    "elena_north.json:elena-north-garden-door-path"
    ],
-   "build": "Apply the owner-confirmed three-column straight square-tile grid along the existing north/south path axes. Retain existing path extents and levels, make grey margins distinct, and align the garden spur to its own direction. Compare actual visible surfaces before/after; no new measured path boundaries inferred.",
+   "build": "Apply the owner-confirmed three-column straight square-tile grid along the existing north/south path axes. Retain existing path extents and levels, make grey margins distinct, and continue the shared square-grid phase through the garden spur. Compare actual visible surfaces before/after; no new measured path boundaries inferred.",
    "avoid": "Do not apply this grid to patterned covered passages, Silvia four-column surfaces, pools or other streets. Do not derive surveyed widths from the tile count or change registry/terrain/collision.",
    "accept": [
     "Three straight tile columns on existing Elena north/south paths; grey margins separate",
@@ -1916,7 +1917,8 @@
     "path-network-inventory-elena"
    ],
    "status": "in-progress",
-   "owner": "Codex"
+   "owner": "Codex",
+   "issue": 151
   }
  ]
 }

@@ -1,5 +1,7 @@
 import * as THREE from "three";
 import layout from "../data/elena_north.json";
+import skeleton from "../public/map/skeleton.json";
+import {elenaPavingTexture,applyElenaPavingUv} from "./elena-lane-paving";
 import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import { addSprites, type SpritePlacement } from "./sprites";
@@ -125,7 +127,9 @@ export function addElenaNorth(scene: THREE.Scene): void {
   // Paving is a ground surface, not a collision ring. The terminal closed door
   // is solid with its wall; the two existing beds define the approach edges.
   const pathShape = new THREE.Shape(elenaGardenPath.ring.map(([x, z]) => new THREE.Vector2(x, -z)));
-  const paving = new THREE.Mesh(new THREE.ShapeGeometry(pathShape).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: "#ba8062", map: surfaceTexture("paving"), roughness: 1 }));
+  const paving = new THREE.Mesh(new THREE.ShapeGeometry(pathShape).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ color: "#ffffff", map: elenaPavingTexture(), roughness: 1 }));
+  const lane=skeleton.boundaryReference.roads.find(r=>r.id==="elena-north")!;
+  applyElenaPavingUv(paving.geometry,{...lane,points:lane.points as Vec2[]});
   paving.position.y = 0.025; paving.receiveShadow = true; paving.name = elenaGardenPath.id; paving.userData.referenceSurface = true; scene.add(paving);
 
   // Raised beds: a low white kerb all round, dark soil inside.

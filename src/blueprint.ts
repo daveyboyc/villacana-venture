@@ -34,6 +34,7 @@ import middlePool from "../data/middle_pool.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
 import { pathNetwork } from "./path-network";
+import {elenaPavingFor,elenaGridLines} from "./elena-lane-paving";
 import { photoLibrary } from "./photo-library";
 import kinds from "../data/kinds.json";
 import {accessSection,lowerPoolRing,poolAccess} from "./pool-levels";
@@ -285,6 +286,15 @@ async function boot(): Promise<void> {
     if (street.points) {
       const d = "M" + street.points.map((p) => `${p[0]} ${p[1]}`).join("L");
       streets.append(el("path", { d, fill: "none", stroke: skeleton.boundaryReference?.roads.find((r) => r.name === street.name)?.surface === "asphalt" ? "#7f8384" : "#fffdf8", "stroke-opacity": 1, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+      const road=skeleton.boundaryReference?.roads.find(r=>r.id===street.id);
+      if(road&&elenaPavingFor(road)){
+        const fill=streets.lastElementChild!;fill.setAttribute("stroke","#b88169");
+        streets.insertBefore(el("path",{d,fill:"none",stroke:elenaPavingFor(road)!.marginColor,"stroke-width":road.width+.12,"stroke-linecap":"round","stroke-linejoin":"round"}),fill);
+        for(const points of elenaGridLines(road)){
+          const joint=el("path",{d:"M"+points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#a6a093","stroke-width":.025,"data-elena-paving":road.id!});
+          const title=el("title",{});title.textContent="Three straight tile columns; existing model width and row origin remain estimated.";joint.append(title);streets.append(joint);
+        }
+      }
       const segmentLengths=street.points.slice(1).map((p,i)=>Math.hypot(p[0]-street.points![i][0],p[1]-street.points![i][1]));
       const total=segmentLengths.reduce((a,b)=>a+b,0);
       const stations=total>50?Array.from({length:Math.ceil(total/45)},(_,i)=>Math.min(total-5,20+i*45)):[total/2];

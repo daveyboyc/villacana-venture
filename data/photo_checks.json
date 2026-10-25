@@ -303,6 +303,42 @@
    "by": "Codex",
    "result": "not-comparable",
    "notes": "Illustrative lane camera, not the photo camera: four plain terracotta columns with broad grey mortar and wear are now visible; the former gap to the provisional tunnel approach is covered. Full source and independent review inspected. No solved pose, measured tile pitch, threshold position, gateway identity or tunnel/gate connection. Schematic wear, facades and planting remain; no exact photographic or placement match. Existing discrepancies and in-progress follow-ups are retained."
+  },
+  {
+   "task": "elena-path-tiles",
+   "feature": "elena_lane_paving.json:elena-north-three-column",
+   "photo": "IMG_2201.jpg",
+   "before": "docs/reviews/elena-path-tiles/north-lane-context-before.png",
+   "render": "docs/reviews/elena-path-tiles/north-lane-context-after.png",
+   "checked": "2026-10-25",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Owner-confirmed three straight columns and grey margins are represented in the current model-context render; the previous diagonal grid is removed. This is an uncalibrated model-context camera, not a registered photo-camera comparison; path width, ground-wall placement, hidden extents and existing floor/player-height differences remain unresolved. No whole-photo match or placement approval is asserted.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-path-tiles",
+   "feature": "elena_lane_paving.json:elena-south-three-column",
+   "photo": "IMG_2253.jpg",
+   "before": "docs/reviews/elena-path-tiles/south-lane-context-before.png",
+   "render": "docs/reviews/elena-path-tiles/south-lane-context-after.png",
+   "checked": "2026-10-25",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Owner-confirmed three straight columns and grey margins are represented in the current model-context render; the previous diagonal grid is removed. This is an uncalibrated model-context camera, not a registered photo-camera comparison; path width, ground-wall placement, hidden extents and existing floor/player-height differences remain unresolved. No whole-photo match or placement approval is asserted.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-path-tiles",
+   "feature": "elena_lane_paving.json:elena-south-three-column",
+   "photo": "IMG_2330.jpg",
+   "before": "docs/reviews/elena-path-tiles/south-lane-context-before.png",
+   "render": "docs/reviews/elena-path-tiles/south-lane-context-after.png",
+   "checked": "2026-10-25",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Owner-confirmed three straight columns and grey margins are represented in the current model-context render; the previous diagonal grid is removed. This is an uncalibrated model-context camera, not a registered photo-camera comparison; path width, ground-wall placement, hidden extents and existing floor/player-height differences remain unresolved. No whole-photo match or placement approval is asserted.",
+   "followUp": "elena-register-path-edges"
   }
  ],
  "legacyUnchecked": [

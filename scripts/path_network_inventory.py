@@ -157,21 +157,30 @@ def load_inventories(root, authored, catalog, features, problems):
             drawings.append(dict(name=drawing.get('name', src.stem), path=src.name))
             if src.with_suffix('.png').is_file(): shutil.copyfile(src.with_suffix('.png'), target/src.with_suffix('.png').name)
         assessments = []
-        if entry.get('assessments') and (root/entry['assessments']).is_file():
-            assessment_doc = json.loads((root/entry['assessments']).read_text())
+        comparison_paths=entry.get('additionalAssessments', [])+([entry['assessments']] if entry.get('assessments') else [])
+        for comparison_path in comparison_paths:
+            comparison_file=root/comparison_path
+            if not comparison_file.is_file():
+                problems.append('path inventory: missing assessment file '+comparison_path);continue
+            assessment_doc=json.loads(comparison_file.read_text())
+            review_artifact=assessment_doc.get('review')
+            if comparison_path in entry.get('additionalAssessments', []):
+                if not review_artifact or not (root/review_artifact.get('path','')).is_file() or review_artifact.get('sha256')!=sha(root/review_artifact['path']):
+                    problems.append('path inventory: additional assessment needs a current scoped review '+comparison_path)
             for item in assessment_doc.get('assessments', []):
                 if not set(item.get('featureIds', [])).issubset(ids):
                     problems.append('path inventory: assessment has unknown feature '+area)
                 if not re.fullmatch('[a-f0-9]{40}', item.get('modelRevision', '')):
                     problems.append('path inventory: assessment needs immutable model revision '+area)
-                image = path.parent / item['image'] if item.get('image') else None
+                image = comparison_file.parent / item['image'] if item.get('image') else None
                 if image:
                     if not image.is_file() or item.get('imageSha256') != sha(image):
                         problems.append('path inventory: assessment render is stale '+str(image)); continue
                     if image.suffix.lower() not in ('.png','.jpg','.jpeg'):
                         problems.append('path inventory: assessment must use a render image '+str(image)); continue
                     shutil.copyfile(image, target/image.name)
-                assessments.append({**item, **({'image': image.name} if image else {})})
+                label='Earlier pinned comparison; unresolved geometry remains open' if entry.get('additionalAssessments') and comparison_path==entry.get('assessments') else assessment_doc.get('scope','Pinned comparison')
+                assessments.append({**item, 'label':label, **({'image': image.name} if image else {})})
         if assessments_path and assessments_path.is_file() and ids-set(id for item in assessments for id in item.get('featureIds', [])):
             problems.append('path inventory: every component needs an assessment or explicit not-comparable result '+area)
         if len(problems)>initial_problems: summaries[area]['inventoryComplete']=False

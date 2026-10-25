@@ -1,0 +1,7 @@
+{
+ "about": "Owner correction: Elena's outdoor lanes have three straight columns, not a diagonal grid. Material/UV correction within existing road geometry only. The current model width is not a photo measurement; no world boundaries or levels are moved.",
+ "features": [
+  {"id":"elena-north-three-column","name":"Elena north · three straight tile columns and grey margins","roadId":"elena-north","columns":3,"marginColor":"#969286","evidence":["IMG_2201.jpg"],"trust":"Three aligned square columns and grey aggregate margins observed in IMG_2201 and confirmed by owner. Fit to the unchanged model ribbon; dimensions, edge registration and row origin remain estimated."},
+  {"id":"elena-south-three-column","name":"Elena south · three straight tile columns and grey margins","roadId":"elena-south","columns":3,"marginColor":"#969286","evidence":["IMG_2253.jpg","IMG_2330.jpg"],"trust":"Three aligned square columns visible beside the lawns, confirmed by owner. Fit to unchanged model ribbon; turn positions, width and row origin remain estimated. Grey margin is distinct from the white lawn kerb."}
+ ]
+}
