@@ -62,7 +62,8 @@ geometry or collision.
 
 ## Remaining programme
 
-All 14 `path-network-inventory-<area>` audit tasks remain open in the build queue,
+Elena has completed its declared available-source inventory; the other 13
+`path-network-inventory-<area>` audit tasks remain open in the build queue,
 including northern lanes with zero area-tagged sources. Each requires full images
 and aerial inspection, a component census, explicit evidence requests, annotated
 plans and sections. Subsequent tasks must add actual evidence-linked edge traces,

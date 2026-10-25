@@ -45,4 +45,4 @@ Registry outlines retain their original rings and hashes; they are not physical 
 
 ## Next work
 
-Each area has an open `path-network-inventory-<area>` task in QUEUE.md. Complete source accounting in data/path_network.json only after full-source inspection, linking observations and retaining unusable/duplicate reasons and revisions. Do not infer unseen geometry. See docs/PATH_NETWORK_PRD.md for later tracing, drawing, runtime and release gates.
+Area inventories and their correction/evidence tasks are listed in QUEUE.md. A reviewed source scope does not close registration or model gaps. Complete source accounting in data/path_network.json only after full-source inspection, linking observations and retaining unusable/duplicate reasons and revisions. Do not infer unseen geometry. See docs/PATH_NETWORK_PRD.md for later tracing, drawing, runtime and release gates.

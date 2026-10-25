@@ -176,7 +176,7 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
             problems.append('path network: duplicate needs distinct retained source '+e['id'])
         row = add('path-source:'+e['id'], 'path-source-accounting', e['title'], sourceId=e['id'],
             disposition=disposition, inspectionScopes=record.get('areasInspected', []), review=record or None,
-            nextAction='Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.')
+            nextAction=('Source inspection recorded for '+', '.join(record.get('areasInspected', []))+'. Follow the linked observations and evidence requests; other area scopes and world placement remain separate.') if disposition!='not-yet-inspected' else 'Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.')
         in_areas(row, e['shows'])
         link(row['id'], e['id'] if e['id'].startswith('ref:') else 'ref:'+e['id'], 'accounts-for')
         for feature in record.get('features', []): link(row['id'], feature, 'observed-feature')
@@ -223,6 +223,6 @@ def extend(root, spec, catalog, features, nodes, edges, problems):
             lines.append(f'| {r["name"]} | {r["sourceCount"]} / {r["uninspectedSources"]} | {len(r["routes"])} | {len(r["tunnels"])} | {r["sourceCoverage"]} |')
     lines += ['', 'Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.', '',
         'Registry outlines retain their original rings and hashes; they are not physical wall traces. Route junctions share exact imported coordinates only; intersections, near misses and dead ends need source review. Existing model discrepancies remain in the reference graph.', '',
-        '## Next work', '', 'Each area has an open `path-network-inventory-<area>` task in QUEUE.md. Complete source accounting in data/path_network.json only after full-source inspection, linking observations and retaining unusable/duplicate reasons and revisions. Do not infer unseen geometry. See docs/PATH_NETWORK_PRD.md for later tracing, drawing, runtime and release gates.']
+        '## Next work', '', 'Area inventories and their correction/evidence tasks are listed in QUEUE.md. A reviewed source scope does not close registration or model gaps. Complete source accounting in data/path_network.json only after full-source inspection, linking observations and retaining unusable/duplicate reasons and revisions. Do not infer unseen geometry. See docs/PATH_NETWORK_PRD.md for later tracing, drawing, runtime and release gates.']
     (root/'refs/PATH_NETWORK.md').write_text('\n'.join(lines)+'\n')
     return totals
