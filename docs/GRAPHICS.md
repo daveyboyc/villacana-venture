@@ -48,6 +48,9 @@ from numbers read off IMG_2204–2206, and exports them to `public/models/` (183
 The pip build of Blender has no Draco or meshopt compression, so the files are plain glTF; at
 this size that costs little and needs no decoder. `src/facade-kit.ts` places the parts by
 footprint data on the house walls facing the north pool (Details view only). The generic
-shutters skip those walls. Opening spacing and which walls get a wooden balcony are generated,
-not traced from photos. No collision, footprint or ground changed. Before and after views
+shutters skip those walls. No collision, footprint or ground changed. Before and after views
 through the solved photo cameras are in `docs/reviews/blender-kit-pilot`.
+
+Walls listed in `data/facade_kit.json` get the parts read from the north-pool photos through the
+solved station camera, including two later parts: a rectangular shuttered window and a narrow
+arched window (`docs/reviews/facade-kit-traced`). The other walls keep the generated spacing.

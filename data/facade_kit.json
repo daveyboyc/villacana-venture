@@ -67,6 +67,12 @@
   },
   {
    "building": "6165501UF1366N_part5",
+   "edge": 41,
+   "note": "Left of the wooden balcony: the first floor shows plain wall above the tree with no balcony roof; everything lower is hidden by the tree, so no parts are placed.",
+   "parts": []
+  },
+  {
+   "building": "6165501UF1366N_part5",
    "edge": 37,
    "note": "Arched balcony door with an iron balcony over an arched ground-floor door, right at the facade step. The registry corner sits a few tenths of a metre off the photographed step, so the parts are kept inside the wall.",
    "parts": [
