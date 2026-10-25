@@ -35224,6 +35224,19 @@
    }
   },
   {
+   "id": "task:path-network-prd",
+   "kind": "build-task",
+   "name": "Specify photo-backed path, tunnel and boundary mapping across Villacana",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-applicable",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
    "id": "task:blender-kit-pilot",
    "kind": "build-task",
    "name": "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
@@ -42636,6 +42649,11 @@
   {
    "from": "task:silvia-outdoor-path",
    "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:path-network-prd",
+   "to": "area:whole-resort",
    "relation": "in-area"
   },
   {

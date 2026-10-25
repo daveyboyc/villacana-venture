@@ -1266,6 +1266,25 @@
    "dependsOn": []
   },
   {
+   "id": "path-network-prd",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Specify photo-backed path, tunnel and boundary mapping across Villacana",
+   "photos": [],
+   "features": [],
+   "build": "Write a product requirements document for a complete evidence-linked inventory of tunnels, path edges, building ground boundaries and walls, followed by phased photo-backed path improvements. Requirements only; no mapping completion or new geometry is implied.",
+   "avoid": "No runtime geometry, collision, placement policy or source-photo changes; do not treat current passage records or catalogue tags as a complete field survey.",
+   "accept": [
+    "PRD identifies existing systems and known gaps, functional requirements, evidence and data model, phased delivery, measurable acceptance and completion criteria",
+    "All areas and known/candidate tunnels receive explicit coverage requirements; concealed boundaries and unresolved connections remain visible",
+    "PRD linked from the repository README and reference consistency checked"
+   ],
+   "status": "done",
+   "owner": "Codex",
+   "dependsOn": []
+  },
+  {
    "id": "blender-kit-pilot",
    "area": "north-pool",
    "priority": 1,
