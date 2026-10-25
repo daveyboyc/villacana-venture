@@ -1301,6 +1301,29 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "facade-kit-traced",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "materials",
+   "title": "North pool: place the facade kit from the photos instead of generating it",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ],
+   "build": "The pilot (blender-kit-pilot) generates which walls facing the north pool get doors, iron balconies and wooden tiled balconies. Read each part's wall and position along it through the solved station cameras (data/photo_poses.json) and keep them as data; walls the photos do not show keep the generator.",
+   "avoid": "No change to footprints, ground or collision. No parts where the photos show none.",
+   "accept": [
+    "Renders through the solved cameras put each balcony and door within about 0.5 m of the photo along its wall",
+    "The IMG_2204 left block has one wooden balcony"
+   ],
+   "dependsOn": [
+    "blender-kit-pilot"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }
