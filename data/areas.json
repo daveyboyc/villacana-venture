@@ -200,7 +200,8 @@
     "docs/ELENA_EAST_PATIOS.md",
     "docs/STREET_LAYOUT.md",
     "docs/TERRAIN.md",
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/reviews/path-network-inventory-elena/README.md"
    ],
    "data": [
     "data/elena_north.json",
@@ -231,7 +232,8 @@
     "Not modelled yet: the garden door between the hedged beds, the east-side patios beyond the beds.",
     "Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced.",
     "Issue #38 (docs/ELENA_EAST_PATIOS.md): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the junction (the trained-trunk wall, curved-coping door and cane-roofed pergola are on the Cervantes south side, cf. IMG_2197; new task cervantes-east-south-patios). The patios behind the Elena garden wall are hidden under the magnolia canopy from every roof camera, so their partitions, floors and levels stay unmodelled. Built from ground photos: the garden wall continued behind the second hedged bed (IMG_2197, IMG_2199), a solid white wall behind the plumbago bed closing the patios off from Cervantes (IMG_2356), and a timber pergola behind the garden door (IMG_2199, IMG_2200); extents and heights estimated.",
-    "Issue #57 (data/door_sills.json): red-tread sills, 0.12 m, at the two brown doors in the white wall west of the junction lawns (IMG_2260/2261/2330). Not modelled yet: that wall and its doors. The door on the east side at the junction (IMG_2253) has no visible sill and was left out. Open: the terrain rule's guessed west rise puts these lawns 0.2-0.3 m above the lane, while the photos show them level with it behind a 0.1 m kerb."
+    "Issue #57 (data/door_sills.json): red-tread sills, 0.12 m, at the two brown doors in the white wall west of the junction lawns (IMG_2260/2261/2330). Not modelled yet: that wall and its doors. The door on the east side at the junction (IMG_2253) has no visible sill and was left out. Open: the terrain rule's guessed west rise puts these lawns 0.2-0.3 m above the lane, while the photos show them level with it behind a 0.1 m kerb.",
+    "25 October source inventory #129: 60 distinct sources independently inspected and 17 storage mirrors deduplicated; 29 feature observations, source-pixel traces/locators and plan/sections linked in path-network inspector. Covered passage, private 36/34 spur and shallow lawn gateway are separate. Smaller farther shuttered openings are not extra doors. Private 09/12 support an iron-gate candidate with a separate pool-glass barrier beyond, not registered reverse connectivity. Both world portals, physical path-edge registration, concealed boundaries and levels/clearance remain unresolved; five evidence requests and issues #143–148 precede further structure/surfaces. No runtime geometry or placement approval changed."
    ]
   },
   {

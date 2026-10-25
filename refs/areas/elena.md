@@ -17,10 +17,11 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 - Issue #46: the first paired iron gateway and short patterned tiled entry west of covered walkway 6265201UF1366N_part5 are modelled from IMG_2361/2202; IMG_2203 faces the opposite open end. Gates enclose a private side entry beyond the passage, leaving the complete covered walkway open. Gateway dimensions and placement remain estimates; further gates/enclosures in the roof view are untraced.
 - Issue #38 (docs/ELENA_EAST_PATIOS.md): the roof shots IMG_2366/IMG_2360 look along Cervantes east of the junction (the trained-trunk wall, curved-coping door and cane-roofed pergola are on the Cervantes south side, cf. IMG_2197; new task cervantes-east-south-patios). The patios behind the Elena garden wall are hidden under the magnolia canopy from every roof camera, so their partitions, floors and levels stay unmodelled. Built from ground photos: the garden wall continued behind the second hedged bed (IMG_2197, IMG_2199), a solid white wall behind the plumbago bed closing the patios off from Cervantes (IMG_2356), and a timber pergola behind the garden door (IMG_2199, IMG_2200); extents and heights estimated.
 - Issue #57 (data/door_sills.json): red-tread sills, 0.12 m, at the two brown doors in the white wall west of the junction lawns (IMG_2260/2261/2330). Not modelled yet: that wall and its doors. The door on the east side at the junction (IMG_2253) has no visible sill and was left out. Open: the terrain rule's guessed west rise puts these lawns 0.2-0.3 m above the lane, while the photos show them level with it behind a 0.1 m kerb.
+- 25 October source inventory #129: 60 distinct sources independently inspected and 17 storage mirrors deduplicated; 29 feature observations, source-pixel traces/locators and plan/sections linked in path-network inspector. Covered passage, private 36/34 spur and shallow lawn gateway are separate. Smaller farther shuttered openings are not extra doors. Private 09/12 support an iron-gate candidate with a separate pool-glass barrier beyond, not registered reverse connectivity. Both world portals, physical path-edge registration, concealed boundaries and levels/clearance remain unresolved; five evidence requests and issues #143–148 precede further structure/surfaces. No runtime geometry or placement approval changed.
 
 ## Read first
 
-- docs: `docs/ELENA_NORTH.md`, `docs/ELENA_EAST_PATIOS.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`
+- docs: `docs/ELENA_NORTH.md`, `docs/ELENA_EAST_PATIOS.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`, `docs/reviews/path-network-inventory-elena/README.md`
 - data: `data/elena_north.json`, `data/elena_east_patios.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`
 - src: `src/elena-north.ts`, `src/elena-east-patios.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`
 - contact sheet: `villacana-reference/contact-sheets/elena.jpg` (thumbnails of everything below, numbered in this order)
@@ -42,7 +43,11 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `path-network-inventory-elena` [#129](https://github.com/daveyboyc/villacana-venture/issues/129) | Calle Elena: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `elena-level-clearance-survey` [#148](https://github.com/daveyboyc/villacana-venture/issues/148) | Elena: resolve path/threshold levels and usable clearance uncertainty (after path-network-inventory-elena) | open · placement: not-applicable |  |
+| P1 | `elena-register-path-edges` [#144](https://github.com/daveyboyc/villacana-venture/issues/144) | Elena: register both physical path edges and finite ground boundaries (after path-network-inventory-elena) | open · placement: not-applicable |  |
+| P1 | `elena-register-tunnel-portals` [#145](https://github.com/daveyboyc/villacana-venture/issues/145) | Elena: register both portals and reconcile second tunnel candidate (after path-network-inventory-elena) | open · placement: not-applicable |  |
+| P1 | `elena-south-terminal-identify` [#147](https://github.com/daveyboyc/villacana-venture/issues/147) | Elena south: identify terminal frame and adjoining wall/door connections (after path-network-inventory-elena) | open · placement: not-applicable |  |
+| P1 | `elena-tunnel-structure-correction` [#146](https://github.com/daveyboyc/villacana-venture/issues/146) | Elena: correct covered passage structural omissions after registration (after path-network-inventory-elena, elena-register-tunnel-portals, 3d-browser-regression-reliability) | open · placement: not-verified | [IMG_2202](../../public/photos-ref/IMG_2202.jpg), [IMG_2203](../../public/photos-ref/IMG_2203.jpg), [IMG_2255](../../public/photos-ref/IMG_2255.jpg) |
 | P2 | `facade-kit-elena` | Elena roof station: make the camera solvable, then trace its facades | in-progress · Claude · placement: not-applicable |  |
 
 ## Built from these photos
@@ -187,7 +192,7 @@ graph LR
 | `junction_lawns.json:junction-pollarded-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `junction_lawns.json:junction-pollarded-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
-**Built without complete newer photo-check records:** `elena-garden-door`, `elena-east-patios`, `elena-gated-entry`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `elena-garden-door`, `elena-east-patios`, `elena-gated-entry`, `path-network-inventory-elena`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

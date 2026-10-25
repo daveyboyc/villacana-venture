@@ -1,0 +1,2678 @@
+{
+ "area": "elena",
+ "scope": "All 39 Elena-tagged public photos, the Esri aerial, 8 private map/3D references and 12 private neighbouring pool/approach photos were inspected: 60 distinct source records, with 17 byte-identical private Drive mirrors not double-counted. Hidden ground geometry, tunnel identity, opposite terminal views and cross-area registration remain explicit gaps. Scoped source accounting does not mean a completed physical map.",
+ "revision": "695473a25e22355bccfc31abf0ef015623666fa6db2b19193a0faa657dcea70b",
+ "sources": [
+  {
+   "id": "IMG_2196.jpg",
+   "image": "../../photos-ref/IMG_2196.jpg",
+   "disposition": "observed",
+   "reason": "Closed private brown door, curved coping, two projecting red treads, adjacent planter, drain and utility covers; distant building balcony is upper structure.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "6e4046ac753887691d35d768a280ebb1edd85f2707840a8a5c7e421087b27de3",
+   "private": false
+  },
+  {
+   "id": "IMG_2197.jpg",
+   "image": "../../photos-ref/IMG_2197.jpg",
+   "disposition": "observed",
+   "reason": "Both plain-grid lane margins, low hedged bed return, opposite garden wall and distant lane continuation; foreground drain strip and trained climbing plants.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "ecbda642fb4610791be154bb1713b74e6b4bcc1e0f01949c50712b1420958ca6",
+   "private": false
+  },
+  {
+   "id": "IMG_2198.jpg",
+   "image": "../../photos-ref/IMG_2198.jpg",
+   "disposition": "observed",
+   "reason": "Plain-grid lane to shallow lawn gateway, low building planters left, two separately kerbed tree/soil beds right, one short side spur.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "2e8c79079ec658d69b637f6f490c72e7c3355b6318db732a0b4def6079a2d5b7",
+   "private": false
+  },
+  {
+   "id": "IMG_2199.jpg",
+   "image": "../../photos-ref/IMG_2199.jpg",
+   "disposition": "observed",
+   "reason": "White finite garden back wall and single brown timber garden door with curved coping, soil bed/low hedge in foreground and pergola above; private ground beyond wall hidden.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "75037519d2cca4df82aed4a130ed530b02800c2edd9cad403adbb8c8aac7c896",
+   "private": false
+  },
+  {
+   "id": "IMG_2200.jpg",
+   "image": "../../photos-ref/IMG_2200.jpg",
+   "disposition": "observed",
+   "reason": "Both lane sides, two tree beds with an intervening tiled spur, wall/door behind, barred shutter in transverse return and shallow lawn gateway ahead.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "ebd7aadd8b808f356f04a43d784584a873ffab1293095b0efb3d839264e89466",
+   "private": false
+  },
+  {
+   "id": "IMG_2201.jpg",
+   "image": "../../photos-ref/IMG_2201.jpg",
+   "disposition": "observed",
+   "reason": "Clear lane tile field, aggregate margins, building planters and grilles, kerbed beds/return, barred window, shallow gateway to lawn.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "d9eef823d34aab87f9768765fbb04878b327ffc81670e15c4bd495e08bd7fe27",
+   "private": false
+  },
+  {
+   "id": "IMG_2202.jpg",
+   "image": "../../photos-ref/IMG_2202.jpg",
+   "disposition": "observed",
+   "reason": "Private36/34 gateway beyond curved covered arch, short patterned-tile forecourt, potted shrubs and open/angled36 gate; flat ceiling/side walls foreground.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "de7ff7c674a5e1fa69f66579c02469bf5f2914926833a756373876a53f48238b",
+   "private": false
+  },
+  {
+   "id": "IMG_2203.jpg",
+   "image": "../../photos-ref/IMG_2203.jpg",
+   "disposition": "observed",
+   "reason": "Opposite covered arch looking to plain lane/kerbed tree bed; flat ceiling, CALLE ELENA plaque, near right brown private doorway, patterned floor and pebble inset.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "518bdd1778422c5961cf15c5a07acc185720d10c980bd1bcb8639164520e239a",
+   "private": false
+  },
+  {
+   "id": "IMG_2214.jpg",
+   "image": "../../photos-ref/IMG_2214.jpg",
+   "disposition": "unusable",
+   "reason": "Roof solar collectors, parapets and distant roofs/mountains; no Elena public path ground or tunnel portals visible.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Roof/private terrace source does not establish shared ground-path geometry.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "62e3f7f18ea65e2969ac46939e4ea0be77833de981180dc0f6f2e52ca4e6f700",
+   "private": false
+  },
+  {
+   "id": "IMG_2215.jpg",
+   "image": "../../photos-ref/IMG_2215.jpg",
+   "disposition": "unusable",
+   "reason": "Roof solar collectors, parapets and distant tower; no Elena public path ground or portal geometry visible.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Roof/private terrace source does not establish shared ground-path geometry.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "d17693b85ead08e295a68df1b95cddcf28fa53de01ae8798f816cda4a2d7f06d",
+   "private": false
+  },
+  {
+   "id": "IMG_2219.jpg",
+   "image": "../../photos-ref/IMG_2219.jpg",
+   "disposition": "unusable",
+   "reason": "Private roof terrace with patterned paving, solar collectors, furniture and parapet; it is not the shared ground path.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Roof/private terrace source does not establish shared ground-path geometry.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "d7dbcf78c2eec2bd75017235b2196b19a81904c6a9dae0d95f0187560ce1c72a",
+   "private": false
+  },
+  {
+   "id": "IMG_2220.jpg",
+   "image": "../../photos-ref/IMG_2220.jpg",
+   "disposition": "observed",
+   "reason": "South lane from roof: both lane sides, two separate lawns and their cross-path, private rear wall/doors, distant terminal frame; intervening plants obscure ends.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "699f92112c7bf4c67cfe778c90306d4c4390758e69ffe76f568eeecf6d56eceb",
+   "private": false
+  },
+  {
+   "id": "IMG_2252.jpg",
+   "image": "../../photos-ref/IMG_2252.jpg",
+   "disposition": "observed",
+   "reason": "Reverse direction across ramp/stair: continuous sloping strip alongside stair, drain at foot, two utility covers, narrow lane onwards and low lawn kerb.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "5d61b239fea27e6750cb14d68437e62fc29ce2bc79b2cbfaa16aae0d4240e725",
+   "private": false
+  },
+  {
+   "id": "IMG_2253.jpg",
+   "image": "../../photos-ref/IMG_2253.jpg",
+   "disposition": "observed",
+   "reason": "South lane plain square tiles, planted frontage, low lawn kerb, separate lawn cross-path and distant glazed-looking gate/frame; near brown private door at left.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "6aa501046ac6335272a6c2c96293d3dd3b90bfa70b0d8d390d4454b297957954",
+   "private": false
+  },
+  {
+   "id": "IMG_2254.jpg",
+   "image": "../../photos-ref/IMG_2254.jpg",
+   "disposition": "observed",
+   "reason": "CALLE ELENA18–30 tile plaque, recessed brown private doorway, red border strip and water-service hatch; does not show complete passage.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "2dba9e7fd6dfd0dcb6b86cec1b21e36320c6720718c36e864e577c867a753dfd",
+   "private": false
+  },
+  {
+   "id": "IMG_2255.jpg",
+   "image": "../../photos-ref/IMG_2255.jpg",
+   "disposition": "observed",
+   "reason": "Longer covered interior: flat ceiling/lantern, two near tall brown doorways, two farther recessed shuttered openings, patterned floor/pebble inset and private 36/34 arch/forecourt.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "4d2a7ca1a7d383e0739cdecadb6baab4c3ae734d448e04d8a044f36b4693d39b",
+   "private": false
+  },
+  {
+   "id": "IMG_2256.jpg",
+   "image": "../../photos-ref/IMG_2256.jpg",
+   "disposition": "observed",
+   "reason": "Closer oblique covered arch/private forecourt view: left recessed shuttered opening/red sill, private 36/34 gate identity and finite hedge/pot margins.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "26313d0bb35ec30ec2cc1ae38c39d8f4e7f88ded0ed4a376d336e5daad5ff90e",
+   "private": false
+  },
+  {
+   "id": "IMG_2260.jpg",
+   "image": "../../photos-ref/IMG_2260.jpg",
+   "disposition": "observed",
+   "reason": "South lane/lawns from elevated viewpoint; separate private boundary wall beyond lawns, two doors, cross-lawn path and low rounded kerbs.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "a2b713cee3b2187b5547f6c2026fba6ed57805cc8cd87ad37271677406f46775",
+   "private": false
+  },
+  {
+   "id": "IMG_2261.jpg",
+   "image": "../../photos-ref/IMG_2261.jpg",
+   "disposition": "observed",
+   "reason": "South lawn rear boundary: two distinct brown private doors, narrow path between lawns, climbing plants; white building and canopy stand beyond garden wall.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "ef5120d603571cfa5ba45a646ea38f4c937b0ae2b28917eb0fa6394bb970ce75",
+   "private": false
+  },
+  {
+   "id": "IMG_2262.jpg",
+   "image": "../../photos-ref/IMG_2262.jpg",
+   "disposition": "observed",
+   "reason": "Side view of three-riser stair and adjacent tiled ramp, low lawn kerb, planter wall, drain and sign CALLE ELENA.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "0c1c2626713e78dc84eeda5d7ebfc1a83e0502c8d640688cae0b0c566b0305eb",
+   "private": false
+  },
+  {
+   "id": "IMG_2263.jpg",
+   "image": "../../photos-ref/IMG_2263.jpg",
+   "disposition": "observed",
+   "reason": "South lane both margins, lawn kerbs/cross-path, planted frontage, rear private wall and terminal gate/frame.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "2cc2451d1d335b3d6d53d63964cff0dd667b5a9ea992069fae4fd755dc348549",
+   "private": false
+  },
+  {
+   "id": "IMG_2265.jpg",
+   "image": "../../photos-ref/IMG_2265.jpg",
+   "disposition": "observed",
+   "reason": "Reverse ramp/stair context: continuous ramp strip, stair side, drain, utility covers and both onward lane margins; distant parked car does not establish vehicle access here.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "d076e55324aaf09adf7bf2cc2f512ec0b6d0193bac1d1f1b153b8acc865ebdcc",
+   "private": false
+  },
+  {
+   "id": "IMG_2286.jpg",
+   "image": "../../photos-ref/IMG_2286.jpg",
+   "disposition": "observed",
+   "reason": "Three clear riser faces beside continuous tiled slope, low rounded lawn kerb, right planter wall/hedge and full-width drain at foot.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "8f2a6e3b81329a5b56fb869d0be5f51030dddf9d1c531dd507bb7bdee475eef7",
+   "private": false
+  },
+  {
+   "id": "IMG_2287.jpg",
+   "image": "../../photos-ref/IMG_2287.jpg",
+   "disposition": "observed",
+   "reason": "Private brown doorway with curved coping, two-step doorstep, adjoining white garden boundary/planters; separate from route flight.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "139ec55ca381a405733232cc9157fdc2e15df1c32a0a2fe8b3a4bc100e38b5a2",
+   "private": false
+  },
+  {
+   "id": "IMG_2327.jpg",
+   "image": "../../photos-ref/IMG_2327.jpg",
+   "disposition": "observed",
+   "reason": "Private two-step doorstep beside planter return, route three-riser flight and drain; distinguishes private steps from public route steps.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "2e137e415f0383af9c698342a655920070d17713269e5aaf6d9e1e3ac4554953",
+   "private": false
+  },
+  {
+   "id": "IMG_2328.jpg",
+   "image": "../../photos-ref/IMG_2328.jpg",
+   "disposition": "observed",
+   "reason": "Complete local ramp/stair arrangement and foot drain, adjacent private doorstep, two aggregate utility covers and sign; no calibrated rise or width.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "cddf246ed2bd824062a31644e84d9814f4549ce3991d47a1c9d604c423565656",
+   "private": false
+  },
+  {
+   "id": "IMG_2329.jpg",
+   "image": "../../photos-ref/IMG_2329.jpg",
+   "disposition": "observed",
+   "reason": "Near lawn corner/low rounded kerb, clipped tree and circular utility cover; rear white private wall has separate brown doorways and CALLE ELENA sign.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "9a45f700b9cb7aecd33d6370417cecc1a1585f7c94f768ca0615971c64600bb4",
+   "private": false
+  },
+  {
+   "id": "IMG_2330.jpg",
+   "image": "../../photos-ref/IMG_2330.jpg",
+   "disposition": "observed",
+   "reason": "South lane from junction: both margins, two lawn compartments, cross-path to private door, wall/door run and distant terminal frame.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "fb967e35e84c63d8934bfe25cf48753c0d9117cd9d9278b97b25ace7c96407ec",
+   "private": false
+  },
+  {
+   "id": "IMG_2342.jpg",
+   "image": "../../photos-ref/IMG_2342.jpg",
+   "disposition": "observed",
+   "reason": "Near lawn corner and kerb beside junction drain; rear wall/door and CALLE ELENA sign, tree and circular cover. GPS is not ground boundary registration.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "19a256c53a0a2e2b6643358f55509b7e7843ffa876400183c3f3cc2fca72eec1",
+   "private": false
+  },
+  {
+   "id": "IMG_2355.jpg",
+   "image": "../../photos-ref/IMG_2355.jpg",
+   "disposition": "observed",
+   "reason": "Close three-riser flight, continuous slope alongside, planter wall and drainage grate. Wet paving crack/shadow is not extra step.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "1430d88334e23a63a3ef36ac99c37c2a793c8be9ec4e49d7fbd3d73a73cf4789",
+   "private": false
+  },
+  {
+   "id": "IMG_2358.jpg",
+   "image": "../../photos-ref/IMG_2358.jpg",
+   "disposition": "observed",
+   "reason": "Roof view down south lane: both lane sides, two separate lawns, cross-path to private door, garden walls/door in foreground private terrace; no roof-to-ground projection.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "7042a789b021862cac772cd1df8f20a321f267cbb7074af654f42dbcf6a91c4a",
+   "private": false
+  },
+  {
+   "id": "IMG_2360.jpg",
+   "image": "../../photos-ref/IMG_2360.jpg",
+   "disposition": "observed",
+   "reason": "Roof oblique Cervantes context, private garden door/wall and canopy partly obscured by magnolia; hidden Elena patio partitions not visible.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "2f1f1ac3633048667b1dd4f91546dea2fff61e592338f61672dc1ab2e3252bc5",
+   "private": false
+  },
+  {
+   "id": "IMG_2361.jpg",
+   "image": "../../photos-ref/IMG_2361.jpg",
+   "disposition": "observed",
+   "reason": "Roof over patterned forecourt/private 36/34 gates: separate farther gateway and far covered arch visible; no ground identity/portal registration of legacy tun-002.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "1bbf2e340ad7a14181c269099a134d2d0a0a25b8bd074cca697d0f661802b8d2",
+   "private": false
+  },
+  {
+   "id": "IMG_2362.jpg",
+   "image": "../../photos-ref/IMG_2362.jpg",
+   "disposition": "observed",
+   "reason": "Roof/balcony elevations and tree canopy dominate; supports roof-versus-ground distinction, not complete concealed patio walls.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "9f2530873c1d1b96cb4f8ffeec9e23ffc7c9d9d7deef0cf4c2bb8474fd65a312",
+   "private": false
+  },
+  {
+   "id": "IMG_2363.jpg",
+   "image": "../../photos-ref/IMG_2363.jpg",
+   "disposition": "observed",
+   "reason": "Roof view of narrow lane to shallow garden gateway, square-to-stone threshold, low planter left, private patio wall/door right, lawn beyond; no long covered tunnel at this gateway.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "9409e8377a42d2dd505bd39b294da79eacecc7cc3ddd413635e419221a668081",
+   "private": false
+  },
+  {
+   "id": "IMG_2364.jpg",
+   "image": "../../photos-ref/IMG_2364.jpg",
+   "disposition": "observed",
+   "reason": "Barrel-tile lean-to/canopy over tree-filled garden; canopy hides ground. Roof overhang cannot establish building ground footprint.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "5ab27d0c882b6e48d88512c654374733297128e4dc13566ca0c12139c1564bb1",
+   "private": false
+  },
+  {
+   "id": "IMG_2365.jpg",
+   "image": "../../photos-ref/IMG_2365.jpg",
+   "disposition": "observed",
+   "reason": "Downward lane view, plain tile field with aggregate margins, low bed kerb and opposite building/planting strip, cross-junction and drain at far end.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "e5f463fef7e01cbd0d240bd58408a29eb2095c2b117cba30cbd089e2880ed2eb",
+   "private": false
+  },
+  {
+   "id": "IMG_2366.jpg",
+   "image": "../../photos-ref/IMG_2366.jpg",
+   "disposition": "observed",
+   "reason": "Downward Cervantes garden wall/curved doorway, cane pergola, tiled lane partly hidden by tree; separate private lawn/patio foreground.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "ecef437153f7fff1120bb366d1899f81d6a4056068cb2b89d1e160de05c65c39",
+   "private": false
+  },
+  {
+   "id": "IMG_2367.jpg",
+   "image": "../../photos-ref/IMG_2367.jpg",
+   "disposition": "observed",
+   "reason": "Roof view over south lawns, both lane edges, cross-path/private doors and boundary walls; building balcony/pergola above and separate foreground private patio.",
+   "limitations": "No calibrated camera/metric registration; hidden boundaries remain unknown. Foliage, perspective, cropping and exposure limit visible extents.",
+   "width": 1200,
+   "height": 1600,
+   "sha256": "36e8af206e0eea16b4fa99a4b80d27711a530e7c74bf3a66e6463c6814339665",
+   "private": false
+  },
+  {
+   "id": "map:ground",
+   "image": "../../map/ground.jpg",
+   "disposition": "observed",
+   "reason": "Existing georeferenced Esri aerial inspected at full 1792×1792; north/middle blocks and roof/vegetation gaps are visible. Ground-vs-roof and hidden tunnel floor extents cannot be independently recovered from this view.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1792,
+   "height": 1792,
+   "sha256": "1de68eeff912ac3de2f4fc411df6bdbfccc74e41054cb06ce2eb2e3fefad5815",
+   "private": false
+  },
+  {
+   "id": "ref:apple-maps/01-3d-overview-from-north.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Wide Apple3D mesh context shows resort block relationships. Resolution, roof surfaces and mesh/tree artefacts prevent individual Elena portal or ground-edge measurement.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "b4a52aead26e0a1fe045579f80dc32ef49b30c05a97f02e80b6b7c6f31197f24",
+   "private": true
+  },
+  {
+   "id": "ref:apple-maps/02-3d-north-pool.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Apple3D north-pool context inspected for Elena-side approaches and roof/garden gaps. Trees/roof surfaces and reconstructed mesh artefacts obscure narrow ground connections; no portal pair or ground-wall trace is established.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "cc2304489e4367e5435d5962cee526cb7e0ab561ace5be472d29950282cc8817",
+   "private": true
+  },
+  {
+   "id": "ref:apple-maps/06-top-down-whole-block.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Top-down whole-block imagery shows north/middle pool blocks, roofs and narrow garden gaps. Roof cover/canopy prevents complete ground-boundary and covered-portal tracing.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "f2c98bfe0d11c6ea4032914d6ffb8a0d35d6a110376c71837395bb1a148c2dae",
+   "private": true
+  },
+  {
+   "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Apple3D north-pool context inspected for Elena-side approaches and roof/garden gaps. Trees/roof surfaces and reconstructed mesh artefacts obscure narrow ground connections; no portal pair or ground-wall trace is established.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "7d9195f5cb8fda365d0d951f940c20c102e123bcd39f64ce416555e21c5fa2fe",
+   "private": true
+  },
+  {
+   "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Apple3D north-pool context inspected for Elena-side approaches and roof/garden gaps. Trees/roof surfaces and reconstructed mesh artefacts obscure narrow ground connections; no portal pair or ground-wall trace is established.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "61e9504b6eae45ac2c05b30359f7d1d6a98bdbc7353249b9589af9652208f2cb",
+   "private": true
+  },
+  {
+   "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Apple3D north-pool context inspected for Elena-side approaches and roof/garden gaps. Trees/roof surfaces and reconstructed mesh artefacts obscure narrow ground connections; no portal pair or ground-wall trace is established.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "4fe31a60d1e8e5048e0d643cfd090112acc0d0e983185eec3c0a1453500e1c27",
+   "private": true
+  },
+  {
+   "id": "ref:google-maps/01-street-map-lane-names.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Street-map labels and drawn schematic road/building context were inspected. This is navigation context, not aerial pixels or evidence of a physical portal/ground wall.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "fca89cb13e2d26d77e03ec244301fb02544f0ea72cc09cc7392da7a428de1ead",
+   "private": true
+  },
+  {
+   "id": "ref:google-maps/02-satellite-lane-names.png",
+   "image": null,
+   "disposition": "observed",
+   "reason": "Satellite screenshot places named Elena among the north/middle blocks, but the blue location marker/heading wedge obscures part of Elena and roof/canopy covers the covered connections. It cannot resolve both tunnel portals.",
+   "limitations": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "6e244a6d7b713710de5ba18d87bd8f9c8fbcaad3fbfee6e7afc3b1f0b476f0d4",
+   "private": true
+  },
+  {
+   "id": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Ground-level north-pool lawn/context and a shallow courtyard-side opening are visible, but there is no signed/shared architecture match sufficient to identify it as Elena G01 or either covered passage. Not usable for tracing the Elena lane/portal pair from this frame.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "b4c48ac4dba507226c83f92f4b8cfa1e7ad808ca913e58998f3ea02b9dc0ed4d",
+   "private": true
+  },
+  {
+   "id": "ref:photos/02-pool-from-upper-floor-2020-12.png",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Elevated middle-pool view shows courtyard path and planting, but does not expose the Elena lane terminal threshold or opposite portal pair with identifiable ground anchors. Pool courtyard work remains in its own area inventory.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1260,
+   "height": 2736,
+   "sha256": "8f462d186c12ea6d8ceb8725a80541dc4d12546d0a1222851e6f1b41dc7fe002",
+   "private": true
+  },
+  {
+   "id": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Roof/courtyard view shows private brown garden doors, hedge and stone path by north pool; foreground roof and foliage conceal connecting lane. No supported association to Elena gateway or covered portals is established.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "9096cf8dc24acef7868c23a381f81571dd5b3c34e2eb4fc1f3d3a19e31f35674",
+   "private": true
+  },
+  {
+   "id": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Roof foreground, tree/hedge and private patio obscure the narrow shared-ground connection. Visible garden-side opening is not identified as Elena G01; cannot trace Elena limits from this view.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "936210595a374e41cc8c1c2ce72fa7ec95ffc509b8cc85897d2a505bcaf006c3",
+   "private": true
+  },
+  {
+   "id": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "North-pool west-side curved garden wall and private stair/courtyard context were inspected. This is outside the identified Elena lane run and does not establish its portal/ground boundary.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 2576,
+   "height": 1932,
+   "sha256": "919fbae8b52e5dd7a2ba6129aba1c27aa059810d22b2bec5e8bd9a5e29fba6c8",
+   "private": true
+  },
+  {
+   "id": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "North-pool courtyard opposite row, shallow gated side accesses and stone perimeter are visible. No unique Elena portal identity or continuous lane view is supported; retain as neighbouring-area context without transferring geometry.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 2576,
+   "height": 1932,
+   "sha256": "e13db846b17c4cf3920f514145713af7bc6251ed7742418ba5b490a51fb92400",
+   "private": true
+  },
+  {
+   "id": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Whole north-pool courtyard and opposite northern-row side accesses are visible. Different-looking shallow gateway candidates are not merged into Elena G01; the hidden lane connection cannot be traced from this view.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 2576,
+   "height": 1932,
+   "sha256": "de67056c69ccddc4a58d795aac5b6b418bc72baa6267be70b4f5578dbb78e27a",
+   "private": true
+  },
+  {
+   "id": "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Middle-pool deck/bird-of-paradise, an iron-gated side approach and neighbouring building façades were inspected. This angle does not trace both Elena terminal sides or provide a uniquely registered reverse view into Elena.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "694836fe6799ab5c9f4f679cafaa6b9b40cae42b6a90e363f121ea9d9da5f7e5",
+   "private": true
+  },
+  {
+   "id": "ref:photos/09-middle-pool-through-iron-gate.jpg",
+   "image": null,
+   "disposition": "observed",
+   "reason": "An open foreground iron gate leads from square-tiled approach over a material/threshold strip to stone paving and hedge by the middle pool. The pool glass barrier and lifering are farther beyond the gate. This is closer same-direction candidate context for S04, not a reverse view or world registration.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "2b0e8ed925905c871d81c854b875b6df6297479b682a2e51c80d9ec3e77091a9",
+   "private": true
+  },
+  {
+   "id": "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Middle-pool garden bed, hedge, furniture and adjacent stone path were inspected; foreground planting conceals the Elena connection. No tunnel or Elena path-edge trace can be supported from this courtyard-detail view.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "253218764b2700e46d2124b035056829cf481a3b7f6980667c400ee57d362f5c",
+   "private": true
+  },
+  {
+   "id": "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+   "image": null,
+   "disposition": "unusable",
+   "reason": "Second middle-pool planting/patio viewpoint has a visible square-tile path fragment, but no signed/independent anchor ties it to the complete Elena terminal run. Do not promote the garden fragment to a traced lane connection.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "71a7d8eac0cd1c101413612470d94ebc46e053bd69d971d764b26b96d260ee23",
+   "private": true
+  },
+  {
+   "id": "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+   "image": null,
+   "disposition": "observed",
+   "reason": "A closer square-tiled approach ends at a shallow shaped white gateway with open dark iron leaf, notices and pool/lifering beyond. Separate grey aggregate strips run along the tile field beside a planted wall and lawn. Façade/palm/pool planting context supports a candidate association with distant S04, without world placement or reverse-view proof.",
+   "limitations": "Private source pixels/annotations remain in villacana-reference. No calibrated camera or map registration; architectural association remains candidate where stated. No source-relative private traces are published.",
+   "width": 1932,
+   "height": 2576,
+   "sha256": "6b3a078a98523fc4a4722c1897895d15c960ed2d0afc49fe5b9352e57d322d52",
+   "private": true
+  }
+ ],
+ "features": [
+  {
+   "id": "elena:N01",
+   "name": "North lane: both paved margins and tile-field edges",
+   "kind": "path-extent",
+   "sources": [
+    "IMG_2197.jpg",
+    "IMG_2198.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2365.jpg"
+   ],
+   "observed": "A narrow plain square terracotta field has grey/pebble paved strips along both sides. Building-side low planters and opposite kerbed beds bound the physical paving. A side spur interrupts the bed-side edge. Visible extent differs from the red tile field and from vegetation overhang.",
+   "unknowns": "Metric width, hidden edge under foliage, complete end-to-end registration and clearance under plants remain unknown. Tile count is not centimetres.",
+   "modelFeatureIds": [
+    "street:elena-north"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2365.jpg",
+     "points": [
+      [
+       640,
+       1599
+      ],
+      [
+       659,
+       1392
+      ],
+      [
+       676,
+       1120
+      ],
+      [
+       696,
+       825
+      ],
+      [
+       725,
+       579
+      ],
+      [
+       742,
+       356
+      ]
+     ],
+     "role": "tile-field-boundary: source-left",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2365.jpg",
+     "points": [
+      [
+       874,
+       1599
+      ],
+      [
+       877,
+       1385
+      ],
+      [
+       875,
+       1093
+      ],
+      [
+       884,
+       836
+      ],
+      [
+       890,
+       612
+      ],
+      [
+       896,
+       356
+      ]
+     ],
+     "role": "tile-field-boundary: source-right",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2365.jpg",
+     "points": [
+      [
+       617,
+       1599
+      ],
+      [
+       633,
+       1354
+      ],
+      [
+       652,
+       1115
+      ],
+      [
+       680,
+       822
+      ],
+      [
+       704,
+       578
+      ],
+      [
+       733,
+       370
+      ]
+     ],
+     "role": "observed-paved-extent: bed-side kerb foot; foliage interrupts precision",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2365.jpg",
+     "points": [
+      [
+       906,
+       1599
+      ],
+      [
+       923,
+       1300
+      ],
+      [
+       928,
+       1000
+      ],
+      [
+       944,
+       804
+      ]
+     ],
+     "role": "observed-paved-extent: building/soil-strip boundary; stops at projecting wall",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2201.jpg",
+     "points": [
+      [
+       833,
+       1599
+      ],
+      [
+       786,
+       1305
+      ],
+      [
+       738,
+       1080
+      ],
+      [
+       690,
+       860
+      ],
+      [
+       644,
+       652
+      ],
+      [
+       624,
+       545
+      ]
+     ],
+     "role": "tile-field-boundary: source-right",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:N02",
+   "name": "North lane building ground frontage and finite low planters",
+   "kind": "ground-boundary",
+   "sources": [
+    "IMG_2198.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2365.jpg"
+   ],
+   "observed": "White building fronts have barred ground windows, projecting plinths and separate low white planters next to the lane. The grey walking strip runs between red tiles and those planters/fronts.",
+   "unknowns": "Aerial roof edge is not this ground line. Foliage and window projection conceal portions; do not join the whole frontage into one straight wall.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2201.jpg",
+     "points": [
+      [
+       0,
+       1440
+      ],
+      [
+       148,
+       1187
+      ],
+      [
+       219,
+       1060
+      ],
+      [
+       259,
+       969
+      ]
+     ],
+     "role": "visible-ground-planter-foot: finite near run",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2201.jpg",
+     "points": [
+      [
+       353,
+       809
+      ],
+      [
+       400,
+       732
+      ],
+      [
+       459,
+       635
+      ]
+     ],
+     "role": "visible-ground-planter-foot: separate farther run",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:N03",
+   "name": "Two separately kerbed planted beds and intervening spur",
+   "kind": "boundary-run",
+   "sources": [
+    "IMG_2197.jpg",
+    "IMG_2198.jpg",
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2365.jpg"
+   ],
+   "observed": "Two soil beds with clipped low hedge and pollarded trees have low pale kerbs. The nearer bed returns away from the lane, leaving a tiled break/spur towards a private brown garden door. These are low garden edges rather than a continuous building wall.",
+   "unknowns": "Hidden rear kerbs, earth levels and concealed footing/masonry are unknown; canopy is not a ground boundary.",
+   "modelFeatureIds": [
+    "elena_north.json:elena-north-tree-bed-1",
+    "elena_north.json:elena-north-tree-bed-2"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2201.jpg",
+     "points": [
+      [
+       650,
+       637
+      ],
+      [
+       706,
+       875
+      ],
+      [
+       806,
+       1189
+      ],
+      [
+       1199,
+       1158
+      ]
+     ],
+     "role": "kerb-foot: lane-side run and finite return",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2200.jpg",
+     "points": [
+      [
+       314,
+       713
+      ],
+      [
+       347,
+       869
+      ],
+      [
+       371,
+       979
+      ],
+      [
+       1085,
+       895
+      ]
+     ],
+     "role": "kerb-foot: farther bed front and return; stops at occlusion",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:N04",
+   "name": "Garden back wall and closed brown door behind the beds",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2197.jpg"
+   ],
+   "observed": "A finite white garden wall behind the soil beds contains a single closed brown timber door with curved coping. A pergola/upper balcony is behind/above it, rather than evidence of an open through route.",
+   "unknowns": "Wall joins hidden by magnolia and climbing plants, patio divisions behind it, threshold and full spur extent are unresolved. Private door is not a public route.",
+   "modelFeatureIds": [
+    "elena_north.json:elena-north-garden-wall",
+    "elena_east_patios.json:elena-east-patios-west-wall"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2199.jpg",
+     "points": [
+      [
+       673,
+       849
+      ],
+      [
+       674,
+       468
+      ],
+      [
+       799,
+       466
+      ],
+      [
+       801,
+       841
+      ]
+     ],
+     "role": "door-leaf-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2199.jpg",
+     "points": [
+      [
+       287,
+       512
+      ],
+      [
+       554,
+       507
+      ],
+      [
+       643,
+       428
+      ],
+      [
+       750,
+       396
+      ],
+      [
+       862,
+       426
+      ],
+      [
+       981,
+       514
+      ]
+     ],
+     "role": "visible-wall/coping: finite upper boundary, partly plant-obscured",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:N05",
+   "name": "Transverse barred shutter opening at north bed return",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2200.jpg",
+    "IMG_2201.jpg"
+   ],
+   "observed": "Near the garden gateway a short white return contains a closed brown shutter behind black bars, with curved coping above. It is an opening in a boundary wall, not another passage portal.",
+   "unknowns": "No access or interior geometry is established. Dimensions, back face and concealed joins are unknown.",
+   "modelFeatureIds": [
+    "elena_north.json:elena-north-window-return"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2201.jpg",
+     "points": [
+      [
+       715,
+       384
+      ],
+      [
+       816,
+       384
+      ],
+      [
+       817,
+       531
+      ],
+      [
+       718,
+       532
+      ]
+     ],
+     "role": "barred-shutter-opening-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:G01",
+   "name": "Shallow garden/lawn gateway, separate from covered tunnel",
+   "kind": "gateway",
+   "sources": [
+    "IMG_2198.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2363.jpg"
+   ],
+   "observed": "The narrow lane reaches a shallow white gateway with an open dark leaf/notices and crazy-paving immediately beyond onto lawn. IMG_2363 looks down over the gateway: there is no long overhead building bridge visible in this opening.",
+   "unknowns": "Exact map pose, opening width, leaf operating range and threshold elevation are unmeasured. Do not merge with the covered arch/private 36/34 group.",
+   "modelFeatureIds": [
+    "elena_north.json:elena-north-gateway"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2363.jpg",
+     "points": [
+      [
+       398,
+       488
+      ],
+      [
+       590,
+       466
+      ],
+      [
+       588,
+       648
+      ],
+      [
+       424,
+       658
+      ]
+     ],
+     "role": "gateway-clear-opening: perspective polygon",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2363.jpg",
+     "points": [
+      [
+       417,
+       657
+      ],
+      [
+       584,
+       648
+      ]
+     ],
+     "role": "visible-stone-to-square-tile threshold",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:N06",
+   "name": "Lane-side patio enclosure and private brown opening near lawn gateway",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2363.jpg"
+   ],
+   "observed": "The right-hand side of the narrow lane in the roof view has a white enclosure wall with a visible brown closed lane-side opening. A second small recess is partly hidden near the foliage; it is not counted as a proven additional passage.",
+   "unknowns": "Secondary recess identity, hidden returns and wall thickness/height are unresolved. The brown door in the patio beyond the gateway is separate.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2363.jpg",
+     "points": [
+      [
+       594,
+       530
+      ],
+      [
+       654,
+       694
+      ],
+      [
+       700,
+       861
+      ],
+      [
+       760,
+       1051
+      ],
+      [
+       868,
+       1408
+      ]
+     ],
+     "role": "visible-lane-side-enclosure top line; finite run",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:N07",
+   "name": "Private patio door beyond and beside the lawn gateway",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2363.jpg"
+   ],
+   "observed": "A closed brown timber door sits in the white patio boundary immediately beside the shallow garden gateway, on its patio side. The courtyard has its own square paving and building door.",
+   "unknowns": "Ground datum, private layout behind the door and concealed wall back are unknown. This does not prove pedestrian access through private patios.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2363.jpg",
+     "points": [
+      [
+       839,
+       437
+      ],
+      [
+       939,
+       421
+      ],
+      [
+       900,
+       611
+      ],
+      [
+       808,
+       624
+      ]
+     ],
+     "role": "private-patio-door-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T01",
+   "name": "Covered passage portal facing private 36/34 forecourt",
+   "kind": "tunnel-portal",
+   "sources": [
+    "IMG_2202.jpg",
+    "IMG_2255.jpg",
+    "IMG_2256.jpg",
+    "IMG_2361.jpg"
+   ],
+   "observed": "The covered interior ends at a broad curved white arch. A short open-air patterned-tile forecourt leads onwards to separately framed paired iron gates labelled 36 and 34. Both are visible in opposite-distance views; hanging foliage masks parts of the arch.",
+   "unknowns": "World entrance position and direction, clear width, spring/crown heights and the forecourt registration are unknown. Gate beyond is not the tunnel exit opening itself.",
+   "modelFeatureIds": [
+    "building:6265201UF1366N_part5"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2202.jpg",
+     "points": [
+      [
+       177,
+       719
+      ],
+      [
+       183,
+       614
+      ],
+      [
+       222,
+       520
+      ],
+      [
+       287,
+       425
+      ],
+      [
+       373,
+       347
+      ],
+      [
+       469,
+       292
+      ],
+      [
+       578,
+       266
+      ],
+      [
+       683,
+       265
+      ],
+      [
+       789,
+       296
+      ],
+      [
+       885,
+       353
+      ],
+      [
+       962,
+       440
+      ],
+      [
+       1026,
+       535
+      ],
+      [
+       1070,
+       640
+      ],
+      [
+       1080,
+       722
+      ]
+     ],
+     "role": "observed-arch-inner-profile",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T02",
+   "name": "Opposite covered portal onto Elena lane and garden bed",
+   "kind": "tunnel-portal",
+   "sources": [
+    "IMG_2203.jpg"
+   ],
+   "observed": "An opposite-looking interior view shows a white curved arch opening onto the plain square-tiled lane, with kerbed tree bed and white climbing-plant wall across it. CALLE ELENA plaque is on the interior left wall. This establishes an open outside threshold in the source frame.",
+   "unknowns": "World exit position, precise path segment junction, arch dimensions and axis registration are unresolved. Phone heading disagrees with existing subject aim and cannot establish them.",
+   "modelFeatureIds": [
+    "building:6265201UF1366N_part5"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2203.jpg",
+     "points": [
+      [
+       242,
+       900
+      ],
+      [
+       233,
+       642
+      ],
+      [
+       251,
+       550
+      ],
+      [
+       298,
+       474
+      ],
+      [
+       370,
+       418
+      ],
+      [
+       443,
+       389
+      ],
+      [
+       521,
+       391
+      ],
+      [
+       602,
+       418
+      ],
+      [
+       668,
+       474
+      ],
+      [
+       711,
+       553
+      ],
+      [
+       739,
+       640
+      ],
+      [
+       741,
+       902
+      ]
+     ],
+     "role": "observed-arch-inner-profile",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T03",
+   "name": "Covered passage flat ceiling, side walls and hanging lantern",
+   "kind": "tunnel-structure",
+   "sources": [
+    "IMG_2202.jpg",
+    "IMG_2203.jpg",
+    "IMG_2255.jpg",
+    "IMG_2256.jpg"
+   ],
+   "observed": "White flat ceiling behind arched portals, continuous side wall faces interrupted by private openings, wall vents/service hatches, and one hanging lantern visible along the centre. Arch form does not imply a barrel-vault ceiling.",
+   "unknowns": "Covered length, headroom, wall thickness and exact concealed structural joints are unmeasured. Only visible forms are recorded.",
+   "modelFeatureIds": [
+    "building:6265201UF1366N_part5"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2255.jpg",
+     "points": [
+      [
+       0,
+       102
+      ],
+      [
+       237,
+       375
+      ],
+      [
+       668,
+       377
+      ],
+      [
+       1199,
+       41
+      ]
+     ],
+     "role": "visible-ceiling/side-wall junctions",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T04",
+   "name": "Near left brown private doorway and recessed threshold",
+   "kind": "private-door",
+   "sources": [
+    "IMG_2255.jpg",
+    "IMG_2254.jpg"
+   ],
+   "observed": "A tall brown timber private doorway is visible on the left near side, recessed into the wall with a red-tile threshold ledge and small services nearby.",
+   "unknowns": "Leaf pairing, depth, aperture width/height and private room beyond are not measured; do not open this as a public route.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2255.jpg",
+     "points": [
+      [
+       0,
+       284
+      ],
+      [
+       101,
+       371
+      ],
+      [
+       141,
+       971
+      ],
+      [
+       0,
+       1085
+      ]
+     ],
+     "role": "near-left-door-visible-leaf",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T05",
+   "name": "Near right brown private doorway and recessed threshold",
+   "kind": "private-door",
+   "sources": [
+    "IMG_2255.jpg",
+    "IMG_2203.jpg"
+   ],
+   "observed": "A tall brown timber private doorway is visible on the right near side with a red threshold/recess. In IMG_2255 the visible near leaf arrangement has a centre seam; do not copy Silvia owner corrections to this Elena scene.",
+   "unknowns": "Precise leaf count where cropped, dimensions, recess depth and interior access are unresolved.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2255.jpg",
+     "points": [
+      [
+       911,
+       342
+      ],
+      [
+       1148,
+       226
+      ],
+      [
+       1141,
+       998
+      ],
+      [
+       908,
+       908
+      ]
+     ],
+     "role": "near-right-door-visible-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T06",
+   "name": "Far left recessed shuttered opening",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2255.jpg",
+    "IMG_2256.jpg"
+   ],
+   "observed": "A smaller recessed brown shuttered opening with a red sill sits on the left farther towards the private 36/34 arch.",
+   "unknowns": "Photographs do not establish that this is a walk-through door; lower wall/sill means treat it as shuttered opening until reviewed.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2256.jpg",
+     "points": [
+      [
+       208,
+       101
+      ],
+      [
+       310,
+       153
+      ],
+      [
+       313,
+       512
+      ],
+      [
+       211,
+       550
+      ]
+     ],
+     "role": "far-left-shuttered-opening-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T07",
+   "name": "Far right recessed shuttered opening",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2255.jpg"
+   ],
+   "observed": "A matching-size recessed dark/brown shuttered opening is visible on the right farther side, above a red sill.",
+   "unknowns": "Door versus window and private access remain unconfirmed; dimensions and depth are unmeasured.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2255.jpg",
+     "points": [
+      [
+       726,
+       435
+      ],
+      [
+       759,
+       420
+      ],
+      [
+       757,
+       599
+      ],
+      [
+       726,
+       607
+      ]
+     ],
+     "role": "far-right-shuttered-opening-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T08",
+   "name": "Passage paving, central pebble inset and exit transition",
+   "kind": "surface-boundary",
+   "sources": [
+    "IMG_2255.jpg",
+    "IMG_2203.jpg",
+    "IMG_2202.jpg"
+   ],
+   "observed": "Covered floor has offset terracotta square fields with small patterned inserts, a rectangular pebble mosaic inset, red border strips at wall feet and a transition to the plain outdoor grid at the Elena exit.",
+   "unknowns": "Actual tile dimensions, floor datum and hidden slab extent remain unresolved. Wet/shiny patches and doormats are not structural boundaries.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2255.jpg",
+     "points": [
+      [
+       386,
+       920
+      ],
+      [
+       650,
+       901
+      ],
+      [
+       769,
+       1046
+      ],
+      [
+       337,
+       1078
+      ]
+     ],
+     "role": "pebble-inset-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T09",
+   "name": "Private36/34 paired iron gates and shaped gateway",
+   "kind": "gate",
+   "sources": [
+    "IMG_2202.jpg",
+    "IMG_2255.jpg",
+    "IMG_2256.jpg",
+    "IMG_2361.jpg"
+   ],
+   "observed": "Two iron gate leaves in adjacent openings are labelled 36 and 34, under shaped pale coping with centre pier. The36 leaf is open/angled in ground views; the34 side appears closed. Drain lies across forecourt at their foot in roof view.",
+   "unknowns": "Leaf state in one capture does not establish public access. Forecourt length, gateway width and relation to farther private gateway in roof view remain unregistered.",
+   "modelFeatureIds": [
+    "elena_gated_entry.json:elena-gated-entry"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2202.jpg",
+     "points": [
+      [
+       506,
+       539
+      ],
+      [
+       578,
+       533
+      ],
+      [
+       582,
+       744
+      ],
+      [
+       507,
+       737
+      ]
+     ],
+     "role": "36-gate-aperture-locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2202.jpg",
+     "points": [
+      [
+       590,
+       540
+      ],
+      [
+       674,
+       541
+      ],
+      [
+       673,
+       748
+      ],
+      [
+       593,
+       744
+      ]
+     ],
+     "role": "34-gate-aperture-locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:T10",
+   "name": "Further gates and far arch beyond36/34 in roof view",
+   "kind": "identity-gap",
+   "sources": [
+    "IMG_2361.jpg"
+   ],
+   "observed": "Roof view shows another shaped gateway farther down the building gap and a still farther covered arch/building connection. Their relationship to the foreground36/34 forecourt is partly occluded.",
+   "unknowns": "Do not assign these automatically to legacy tun-002 or create another confirmed unique tunnel. Need ground opposite views and signed anchors.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2361.jpg",
+     "points": [
+      [
+       610,
+       611
+      ],
+      [
+       748,
+       615
+      ],
+      [
+       750,
+       746
+      ],
+      [
+       613,
+       746
+      ]
+     ],
+     "role": "farther-gateway-locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2361.jpg",
+     "points": [
+      [
+       639,
+       507
+      ],
+      [
+       744,
+       514
+      ],
+      [
+       745,
+       610
+      ],
+      [
+       638,
+       608
+      ]
+     ],
+     "role": "far-arch-locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:S01",
+   "name": "South lane: both paved sides, lawn kerb and planting-front edge",
+   "kind": "path-extent",
+   "sources": [
+    "IMG_2253.jpg",
+    "IMG_2330.jpg",
+    "IMG_2263.jpg",
+    "IMG_2220.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg"
+   ],
+   "observed": "Plain square terracotta lane runs between planted building frontage on one side and low rounded white lawn kerb on the other. A narrow aggregate strip is visible alongside the kerb in places. Side paths branch across separate lawn rectangles to private brown doors.",
+   "unknowns": "Vegetation conceals parts of the building-side physical edge; clear walking width and full terminal connection are unmeasured. Existing1.2 m clearance is not traced pavement.",
+   "modelFeatureIds": [
+    "street:elena-south"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2253.jpg",
+     "points": [
+      [
+       342,
+       973
+      ],
+      [
+       484,
+       788
+      ],
+      [
+       591,
+       641
+      ],
+      [
+       656,
+       530
+      ],
+      [
+       681,
+       486
+      ]
+     ],
+     "role": "tile-field boundary: planting side; stop at foliage",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2253.jpg",
+     "points": [
+      [
+       1110,
+       1599
+      ],
+      [
+       1007,
+       1264
+      ],
+      [
+       916,
+       979
+      ],
+      [
+       848,
+       789
+      ],
+      [
+       793,
+       632
+      ],
+      [
+       771,
+       533
+      ]
+     ],
+     "role": "paved-extent at lawn kerb foot",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2358.jpg",
+     "points": [
+      [
+       548,
+       817
+      ],
+      [
+       562,
+       647
+      ],
+      [
+       574,
+       445
+      ],
+      [
+       579,
+       306
+      ],
+      [
+       590,
+       105
+      ]
+     ],
+     "role": "paved-extent: visible frontage-side edge; occlusions retained",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2358.jpg",
+     "points": [
+      [
+       728,
+       831
+      ],
+      [
+       718,
+       647
+      ],
+      [
+       702,
+       444
+      ],
+      [
+       686,
+       336
+      ],
+      [
+       677,
+       144
+      ]
+     ],
+     "role": "paved-extent: lawn-side kerb foot",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:S02",
+   "name": "Two lawn rectangles, kerb returns and cross-lawn private paths",
+   "kind": "boundary-run",
+   "sources": [
+    "IMG_2253.jpg",
+    "IMG_2330.jpg",
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2358.jpg",
+    "IMG_2367.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg"
+   ],
+   "observed": "Two separate low-white-kerbed lawns lie along the lane. A narrow straight terracotta path between them reaches a brown private door; pollarded trees/circular cover and shrubs lie within lawn rather than the shared walking field.",
+   "unknowns": "Lawn level versus model guessed west rise is unresolved. Kerb top is not proof of elevated whole lawn or hidden retaining wall. The cross-lawn branch lower edge is observed qualitatively but remains untraced here after independent review rejected an inaccurate redundant polyline.",
+   "modelFeatureIds": [
+    "frontage_divisions.json:cervantes-elena-lawn-1",
+    "frontage_divisions.json:cervantes-elena-lawn-2"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2367.jpg",
+     "points": [
+      [
+       464,
+       639
+      ],
+      [
+       716,
+       590
+      ]
+     ],
+     "role": "cross-lawn path north edge",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2342.jpg",
+     "points": [
+      [
+       0,
+       839
+      ],
+      [
+       718,
+       1129
+      ],
+      [
+       1199,
+       676
+      ]
+     ],
+     "role": "near-lawn kerb return: observed open polygon",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:S03",
+   "name": "Lawn-side white wall and two distinct brown private doors",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg",
+    "IMG_2367.jpg"
+   ],
+   "observed": "The lawn rear is a white garden boundary with two distinct brown private doors in the visible run, climbing plants and a curved/stepped top. One door is reached by the narrow cross-lawn path. Building and balcony stand beyond this garden wall.",
+   "unknowns": "Far returns and private parcel subdivisions are concealed. Side sill heights are source-visible but uncalibrated; do not equate roof footprint with this wall.",
+   "modelFeatureIds": [
+    "door_sills.json:elena-lawn-door-sill",
+    "door_sills.json:elena-bed-door-sill"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2261.jpg",
+     "points": [
+      [
+       600,
+       741
+      ],
+      [
+       644,
+       734
+      ],
+      [
+       645,
+       1002
+      ],
+      [
+       605,
+       998
+      ]
+     ],
+     "role": "farther-private-door-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2261.jpg",
+     "points": [
+      [
+       831,
+       864
+      ],
+      [
+       906,
+       827
+      ],
+      [
+       906,
+       1166
+      ],
+      [
+       831,
+       1150
+      ]
+     ],
+     "role": "nearer-private-door-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:S04",
+   "name": "South terminal gateway candidate and separate pool barrier",
+   "kind": "gateway",
+   "sources": [
+    "IMG_2253.jpg",
+    "IMG_2330.jpg",
+    "IMG_2263.jpg",
+    "IMG_2220.jpg",
+    "ref:photos/09-middle-pool-through-iron-gate.jpg",
+    "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
+   ],
+   "observed": "The public lane photos show a distant shallow terminal gateway/frame with circular warning marker beyond. Private middle-pool photos09/12 show a closer open iron-gated approach, shaped white head, notices and a separate glass pool barrier/lifering beyond. Matching façade, palm and pool-planting context supports a candidate association; the glass seen at distance must not automatically become the gate material.",
+   "unknowns": "The two private closer views face towards the pool, not back into Elena. Exact identity/world registration, opposite-end lane view, operational state over time, threshold level and shared/public access remain unresolved. No roofed tunnel is established by this shallow gateway.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2253.jpg",
+     "points": [
+      [
+       693,
+       383
+      ],
+      [
+       757,
+       380
+      ],
+      [
+       756,
+       483
+      ],
+      [
+       692,
+       486
+      ]
+     ],
+     "role": "terminal-frame locator; distant",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:J01",
+   "name": "Cervantes/Elena ramp and three-riser stair side by side",
+   "kind": "level-transition",
+   "sources": [
+    "IMG_2286.jpg",
+    "IMG_2328.jpg",
+    "IMG_2355.jpg",
+    "IMG_2262.jpg",
+    "IMG_2252.jpg",
+    "IMG_2265.jpg",
+    "IMG_2327.jpg"
+   ],
+   "observed": "Three separate white riser faces with red treads lie beside a continuous sloping tiled strip. The flight occupies one side only. Rounded lawn kerb and a separate low planter wall constrain opposite edges; a full-width drainage grate crosses the foot.",
+   "unknowns": "Rise, tread depth, ramp gradient, transverse slope and player clearance must be measured; none is established by nominal route width.",
+   "modelFeatureIds": [
+    "steps:cervantes-elena-steps",
+    "ramp:cervantes-elena-ramp"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2286.jpg",
+     "points": [
+      [
+       584,
+       700
+      ],
+      [
+       865,
+       687
+      ]
+     ],
+     "role": "upper-riser nosing",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2286.jpg",
+     "points": [
+      [
+       597,
+       876
+      ],
+      [
+       953,
+       868
+      ]
+     ],
+     "role": "middle-riser nosing",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2286.jpg",
+     "points": [
+      [
+       622,
+       1115
+      ],
+      [
+       1059,
+       1111
+      ]
+     ],
+     "role": "lower-riser nosing",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2286.jpg",
+     "points": [
+      [
+       0,
+       1416
+      ],
+      [
+       1184,
+       1390
+      ],
+      [
+       1199,
+       1481
+      ],
+      [
+       0,
+       1539
+      ]
+     ],
+     "role": "drainage-grate extent",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:J02",
+   "name": "Junction planter retaining edge behind stair",
+   "kind": "boundary-run",
+   "sources": [
+    "IMG_2328.jpg",
+    "IMG_2327.jpg",
+    "IMG_2286.jpg",
+    "IMG_2355.jpg"
+   ],
+   "observed": "White finite raised planter/wall runs beside the flight, with clipped hedge/plumbago above; its face turns around the adjacent private doorstep. Vegetation above cannot resolve the hidden structural continuation.",
+   "unknowns": "Thickness, back limits and height beyond visible face remain unmeasured.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2327.jpg",
+     "points": [
+      [
+       399,
+       706
+      ],
+      [
+       467,
+       877
+      ],
+      [
+       511,
+       987
+      ],
+      [
+       643,
+       1136
+      ],
+      [
+       735,
+       1001
+      ]
+     ],
+     "role": "visible-planter wall/foot return; partly obscured",
+     "closed": false,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:J03",
+   "name": "Raised private brown garden door and two-step approach",
+   "kind": "private-door",
+   "sources": [
+    "IMG_2196.jpg",
+    "IMG_2287.jpg",
+    "IMG_2327.jpg"
+   ],
+   "observed": "A single brown timber door with curved coping is reached by two tiled projecting steps and a small threshold. It is private frontage beside the shared junction, separate from the adjacent three-riser route flight.",
+   "unknowns": "Doorway size, tread/rise metrics and private interior are unmeasured. Do not create a public walk-through.",
+   "modelFeatureIds": [
+    "cervantes_garden_door.json:cervantes-garden-door"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2196.jpg",
+     "points": [
+      [
+       641,
+       547
+      ],
+      [
+       837,
+       550
+      ],
+      [
+       838,
+       1067
+      ],
+      [
+       643,
+       1063
+      ]
+     ],
+     "role": "private-door-outline",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2196.jpg",
+     "points": [
+      [
+       627,
+       1119
+      ],
+      [
+       891,
+       1116
+      ],
+      [
+       891,
+       1143
+      ],
+      [
+       619,
+       1148
+      ]
+     ],
+     "role": "upper-step tread/nosing",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2196.jpg",
+     "points": [
+      [
+       602,
+       1200
+      ],
+      [
+       935,
+       1191
+      ],
+      [
+       938,
+       1238
+      ],
+      [
+       586,
+       1241
+      ]
+     ],
+     "role": "lower-step tread/nosing",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:J04",
+   "name": "Junction paved branches, drains and utility covers",
+   "kind": "junction",
+   "sources": [
+    "IMG_2196.jpg",
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2342.jpg",
+    "IMG_2265.jpg"
+   ],
+   "observed": "At the ramp foot the square-tile field branches along the lawn and to the private doorstep. Two rectangular aggregate utility covers lie near the drain; pale aggregate border strips accompany the tiling.",
+   "unknowns": "Exact junction registration, vehicle clearance and all paving beyond image bounds remain unresolved.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2328.jpg",
+     "points": [
+      [
+       123,
+       1158
+      ],
+      [
+       335,
+       1135
+      ],
+      [
+       331,
+       1251
+      ],
+      [
+       113,
+       1269
+      ]
+     ],
+     "role": "utility-cover-one locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    },
+    {
+     "source": "IMG_2328.jpg",
+     "points": [
+      [
+       341,
+       1134
+      ],
+      [
+       522,
+       1125
+      ],
+      [
+       520,
+       1237
+      ],
+      [
+       339,
+       1253
+      ]
+     ],
+     "role": "utility-cover-two locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:C01",
+   "name": "Cervantes east-facing white enclosure, curved door and cane pergola",
+   "kind": "wall-opening",
+   "sources": [
+    "IMG_2197.jpg",
+    "IMG_2360.jpg",
+    "IMG_2366.jpg"
+   ],
+   "observed": "The roof view exposes a narrow tiled lane beside a separate white garden wall with trained climbing trunk, a closed brown door under curved coping and a timber/cane canopy behind. These are Cervantes frontage context rather than proof of Elena private-patio internals.",
+   "unknowns": "Magnolia and bougainvillea obscure joins. Door route/access and hidden patio subdivisions cannot be inferred.",
+   "modelFeatureIds": [
+    "cervantes_east_south_patios.json:cervantes-east-south-wall",
+    "cervantes_east_south_patios.json:cervantes-east-south-door",
+    "cervantes_east_south_patios.json:cervantes-east-south-pergola"
+   ],
+   "nextAction": null,
+   "traces": [
+    {
+     "source": "IMG_2366.jpg",
+     "points": [
+      [
+       808,
+       709
+      ],
+      [
+       933,
+       766
+      ],
+      [
+       1001,
+       935
+      ],
+      [
+       894,
+       993
+      ]
+     ],
+     "role": "curved-coping garden doorway locator",
+     "closed": true,
+     "space": "source-pixels",
+     "uncertaintyPixels": "manual visual trace; approximately 5–15 px on clear boundaries, larger at foliage; no metric transform"
+    }
+   ]
+  },
+  {
+   "id": "elena:R01",
+   "name": "Roof and canopy outlines distinct from hidden ground boundaries",
+   "kind": "interpretation-gap",
+   "sources": [
+    "IMG_2362.jpg",
+    "IMG_2364.jpg",
+    "IMG_2360.jpg",
+    "IMG_2366.jpg",
+    "IMG_2361.jpg"
+   ],
+   "observed": "Roof parapets, barrel-tile lean-tos, balconies and canopy edges are visible above/over the gardens; much of the actual patio ground boundary is concealed by trees, roofs or garden wall.",
+   "unknowns": "These lines cannot be projected down automatically as building ground walls or property boundaries. Require ground anchors/held-out registration.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": []
+  },
+  {
+   "id": "elena:A01",
+   "name": "Aerial and map context: roof footprints and incomplete ground visibility",
+   "kind": "map-context",
+   "sources": [
+    "map:ground",
+    "ref:apple-maps/01-3d-overview-from-north.png",
+    "ref:apple-maps/02-3d-north-pool.png",
+    "ref:apple-maps/06-top-down-whole-block.png",
+    "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:google-maps/01-street-map-lane-names.png",
+    "ref:google-maps/02-satellite-lane-names.png"
+   ],
+   "observed": "Whole-resort context establishes the north/middle pool blocks and visible roof/garden gaps. Street-map labels are navigation context. Aerial views and mesh reconstructions do not expose the covered floors or concealed walls.",
+   "unknowns": "Apple mesh fills narrow gaps and deforms trees/roof edges; Google location marker obscures part of Elena. No independent global photo registration or tunnel portal coordinates is obtained. Private source traces remain private.",
+   "modelFeatureIds": [],
+   "nextAction": null,
+   "traces": []
+  }
+ ],
+ "drawings": [
+  {
+   "name": "Labelled source-relative path, boundary and opening plan",
+   "path": "plan.svg"
+  },
+  {
+   "name": "Covered-passage section and opening elevations",
+   "path": "tunnel-section.svg"
+  }
+ ],
+ "assessments": [
+  {
+   "featureIds": [
+    "elena:T01",
+    "elena:T09"
+   ],
+   "image": "tunnel-private-context.png",
+   "imageSha256": "25d03a14054f14dfd994195a52ee65e097f8fa8e7dfef84f165ff5d9c40218ab",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "differs",
+   "observation": "Existing host representation is a rectangular covered shell facing simplified paired barred gates. The photographed covered-portal curved arch/soffit is missing from this representation. The separate private gateway has a shaped head in the model; its detailed profile and leaf design are simplified, not absent.",
+   "limitations": "This is a semantic component comparison. It does not measure portal positions, dimensions, gateway curvature or inferred public access. Capture uses host context, not the inaccurate IMG_2202 pin.",
+   "followUp": "elena-tunnel-structure-correction",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:T02",
+    "elena:T03",
+    "elena:T04",
+    "elena:T05",
+    "elena:T06",
+    "elena:T07",
+    "elena:T08"
+   ],
+   "image": "tunnel-lane-context.png",
+   "imageSha256": "68979f234f9657cd4b66d74e257fd5ce209fa2f056bbaeafc15a21476d90136b",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "differs",
+   "observation": "Current model has a flat overhead slab and plain side walls with a rectangular exit. Photographed arched exit, two near brown side-door recesses, two smaller far shuttered openings, lantern and central pebble inset are not represented in this shell.",
+   "limitations": "Smaller far openings remain window-like/unknown; do not convert them into extra doors. Dimensions and world identity remain unregistered. Decoration and paving follow supported structural layout.",
+   "followUp": "elena-tunnel-structure-correction",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:N01",
+    "elena:N02",
+    "elena:N03",
+    "elena:N05"
+   ],
+   "image": "north-lane-context.png",
+   "imageSha256": "e69e8763723cb0a5cb93670123aa87de9a93a9bc7ead82dc3882308ec0a8cd07",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Model represents finite raised bed edges, a plain ground wall and a barred return opening. The schematic path texture and generic surrounding ground do not establish the grey/pebble paved margins seen in photos.",
+   "limitations": "Approximate model camera and incomplete framing cannot certify either physical path edge, width, hidden return or upper/ground alignment. Vegetation omission in Layout is intentional.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:N04",
+    "elena:N06",
+    "elena:N07"
+   ],
+   "image": "IMG_2200-before.png",
+   "imageSha256": "7901cf6aaeea6df9c3ffdf310417d4be579b8d7b7b5893968a7492e7390c32b7",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Existing garden wall, private brown door, bounded spur, planter beds and timber pergola are visible in current model context.",
+   "limitations": "Third-person photo-pin context is not a calibrated source camera; only some of these components are in frame. Hidden private patios/partitions remain unresolved.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:G01"
+   ],
+   "image": "IMG_2363-before.png",
+   "imageSha256": "678ee64d2651679f186e7f59b49f8bd91f1218fe8c068f7ff84fb70c9a965eac",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "A separate shallow arched lawn gateway and adjacent private brown door are represented in current model context. It is not the covered passage.",
+   "limitations": "Approximate third-person camera cannot verify the opening width, depth, height, placement or all adjacent boundaries.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:S01",
+    "elena:S02",
+    "elena:S03",
+    "elena:S04"
+   ],
+   "image": "south-lane-context.png",
+   "imageSha256": "0afa1fb54e2afc70dff0157b60627a759befaebe44c2fd33ff34d619110d5b26",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Model shows south-route guide, bounded lawn edge, a distant gate/frame and generic frontage. The visible whole-ground copper surface and nominal route strip do not delineate the photographed physical paving extents.",
+   "limitations": "Terminal structure is too distant in this model view to compare material or leaf design. Closer same-direction private photos09/12 show an open iron gate candidate and a separate glass pool barrier beyond; they do not prove a reverse Elena connection or world identity. Both path edges and complete wall/door layout need registration.",
+   "followUp": "elena-south-terminal-identify",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:J01",
+    "elena:J02",
+    "elena:J03",
+    "elena:J04"
+   ],
+   "image": "junction-context.png",
+   "imageSha256": "027d4186711cda28b018d9fb6598731bed30dddb5a4bab18e9e4edbd43554d5b",
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "Three model risers sit alongside a smooth ramp, with a transverse drain, a retained bed and adjoining private raised door context. The photographed side-by-side arrangement is represented in part.",
+   "limitations": "Camera is selected from model coordinates, not solved to IMG_2286. No measured riser, datum, planter footprint or ground-wall agreement follows from this view.",
+   "followUp": "elena-level-clearance-survey",
+   "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:T10"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-tunnel-portals",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:C01"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-path-edges",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:R01"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-path-edges",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "elena:A01"
+   ],
+   "modelRevision": "5c1e56910a2a0e067215df383ee871f2859fd94a",
+   "result": "not-comparable",
+   "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
+   "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
+   "followUp": "elena-register-path-edges",
+   "reviewer": "Codex root"
+  }
+ ],
+ "tasks": {
+  "elena-level-clearance-survey": {
+   "id": "elena-level-clearance-survey",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/148"
+  },
+  "elena-register-path-edges": {
+   "id": "elena-register-path-edges",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/144"
+  },
+  "elena-register-tunnel-portals": {
+   "id": "elena-register-tunnel-portals",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/145"
+  },
+  "elena-south-terminal-identify": {
+   "id": "elena-south-terminal-identify",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/147"
+  },
+  "elena-tunnel-structure-correction": {
+   "id": "elena-tunnel-structure-correction",
+   "url": "https://github.com/daveyboyc/villacana-venture/issues/146"
+  }
+ },
+ "inventoryComplete": true
+}

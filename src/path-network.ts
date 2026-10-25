@@ -3,6 +3,9 @@ import type { Vec2 } from './types';
 
 type RecordRow = {
   id: string; kind: string; name: string; areas?: string[]; axis?: Vec2[]; outline?: Vec2[];
+  inventory?: {sources:string[];inventoryComplete:boolean;limits:string} | null;
+  nextTask?: {id:string;url:string} | null;
+  observed?: string; unknowns?: string[];
   sources?: string[]; sourceId?: string; location?: Vec2 | null;
   states?: { source: string; identity: string; model: string; placement: string; runtime: string };
   modelContext?: {id:string; placement:{status:string; blockers:string[]}; photoVerification:string}[];
@@ -25,7 +28,7 @@ export async function pathNetwork(world: SVGGElement, focus: (points: Vec2[]) =>
   const head = make('header', panel);
   make('h2', head, 'Path network');
   const close = make('button', head, 'Close'); close.type = 'button';
-  make('p', panel, 'Baseline inventory · full-source survey remains open. Unknown edges and portals are not confirmed public routes.');
+  make('p', panel, 'Source inventory · full resort survey remains open. Unknown edges and portals are not confirmed public routes.');
   const summary = make('p', panel);
   summary.textContent = `${data.totals.areas} areas · ${data.totals.sources} sources (${data.totals.uninspectedSources} awaiting feature inspection) · ${data.totals.tunnelCandidates} tunnel candidates (unique count unresolved)`;
   const legend = make('p', panel); legend.className = 'network-legend';
@@ -38,6 +41,8 @@ export async function pathNetwork(world: SVGGElement, focus: (points: Vec2[]) =>
   const filters = make('div', panel); filters.className = 'network-filters';
   const enabled = new Map<string, HTMLInputElement>();
   for (const [kind, label, on] of [
+    ['path-observation', 'Photo-traced features', true],
+    ['path-evidence-gap', 'Evidence requests', true],
     ['path-route', 'Paths and edges', true], ['path-tunnel', 'Tunnels', true],
     ['path-boundary', 'Buildings / registry outlines', false],
     ['path-model-fragment', 'Walls and openings · model context', false],
@@ -74,22 +79,32 @@ export async function pathNetwork(world: SVGGElement, focus: (points: Vec2[]) =>
   function select(row: RecordRow, move = true) {
     selected = row; detail.replaceChildren(); highlight.replaceChildren();
     make('h3', detail, row.name); make('code', detail, row.id);
+    if (row.kind==='path-observation') make('p', detail, 'Photo-pixel observation · not registered in world metres.');
     make('p', detail, points(row).length ? 'Imported map context; physical placement remains unreviewed.' : 'Location unresolved · no defensible map pin.');
+    if (row.observed) make('p', detail, row.observed);
+    if (typeof row.accessObservation==='string') make('p', detail, row.accessObservation);
+    if (row.sourceObservations) make('p', detail, String(row.identityNote));
+    if (row.unknowns?.length) make('p', detail, 'Unresolved: '+row.unknowns.join(' '));
     if (row.states) {
       const dl = make('dl', detail);
       for (const [key, state] of Object.entries(row.states)) { make('dt', dl, key); make('dd', dl, state); }
     }
+    if(row.inventory){make('p',detail,`${row.inventory.inventoryComplete?'Inventory complete for declared available sources':'Inventory review incomplete or stale'} · ${row.inventory.sources.length} source records. World placement and physical map completion remain separate.`);make('p',detail,row.inventory.limits);}
     if (row.sourceCoverage) make('p', detail, `Source coverage: ${row.sourceCoverage} · ${row.sourceCount} sources / ${row.uninspectedSources} uninspected for feature accounting.`);
     for (const model of row.modelContext ?? []) {
       make('p', detail, `Existing model ${model.id}: placement ${model.placement.status}; photo diagnostics ${model.photoVerification}.`);
       for (const blocker of model.placement.blockers) make('p', detail, blocker);
     }
+    if(row.nextTask){const task=make('a',detail,'Next task: '+row.nextTask.id);task.href=row.nextTask.url;task.target='_blank';task.rel='noopener';}
     make('p', detail, row.nextAction ?? 'Inspect full sources and reconcile topology before tracing physical boundaries.');
     if (typeof row.drawing === 'string') {
-      const drawing = make('a', detail, 'Open source-relative drawing and component checklist');
+      const drawing = make('a', detail, 'Compare photo → drawing → current game');
       drawing.href = asset(row.drawing); drawing.target = '_blank'; drawing.rel = 'noopener';
     }
     for (const id of row.sources ?? (row.sourceId ? [row.sourceId] : [])) {
+      if (id==='map:ground') {
+        const aerial=make('a', detail, 'Open georeferenced aerial'); aerial.href=asset('/map/ground.jpg'); aerial.target='_blank'; aerial.rel='noopener'; continue;
+      }
       const photo = make('button', detail, 'Open source ' + id);
       photo.addEventListener('click', () => { show(false); window.dispatchEvent(new CustomEvent('reference-open', { detail: id })); });
     }
@@ -114,7 +129,7 @@ export async function pathNetwork(world: SVGGElement, focus: (points: Vec2[]) =>
     const terms = search.value.toLowerCase().trim().split(/\s+/);
     const rows = data.records.filter(row => enabled.get(row.kind)?.checked &&
       (!area.value || row.areas?.includes(area.value)) && terms.every(term => JSON.stringify(row).toLowerCase().includes(term)));
-    count.textContent = `${rows.length} records · ${data.totals.tracedSides} traced path sides / ${Number(data.totals.segments) * 2} imported segment sides`;
+    count.textContent = `${rows.length} records · ${data.totals.sourcePixelTraces ?? 0} source-pixel traces · ${data.totals.tracedSides} traced path sides / ${Number(data.totals.segments) * 2} imported segment sides`;
     for (const row of rows) {
       const item = make('button', results, row.name + (row.kind === 'path-tunnel' ? ' · portals unresolved' : row.sourceCoverage ? ' · ' + row.sourceCoverage : ''));
       item.dataset.networkId = row.id; item.addEventListener('click', () => select(row)); draw(row, layer);
