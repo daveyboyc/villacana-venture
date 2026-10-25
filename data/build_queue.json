@@ -1303,6 +1303,320 @@
    "owner": "Claude"
   },
   {
+   "id": "path-network-baseline",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Path network: graph-backed baseline and canonical map inspector",
+   "photos": [],
+   "build": "Reconcile existing graph, catalogue, routes, registry and passage/source-group candidates into explicit accounting and unresolved work. Expose a searchable canonical map inspector without changing runtime geometry.",
+   "avoid": "Do not claim full-source inventory completion, trace edges from nominal buffers, merge tunnel candidates or grant placement approval.",
+   "accept": [
+    "All fixed areas and catalogue sources accounted for without promoting content tags to feature inspection",
+    "Every runtime route axis imported with unknown physical edges",
+    "Legacy passages and separate Silvia/Jorge candidates retained",
+    "Graph integrity, state validation and map/mobile inspector checks pass",
+    "Software-only delivery; scope and remaining survey work recorded in docs/PATH_NETWORK_IMPLEMENTATION.md; validation in docs/reviews/path-network-baseline/README.md"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Codex"
+  },
+  {
+   "id": "path-network-inventory-north-pool",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "audit",
+   "title": "North pool: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 125
+  },
+  {
+   "id": "path-network-inventory-middle-pool",
+   "area": "middle-pool",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Middle pool: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 126
+  },
+  {
+   "id": "path-network-inventory-south-pool",
+   "area": "south-pool",
+   "priority": 1,
+   "kind": "audit",
+   "title": "South pool: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 127
+  },
+  {
+   "id": "path-network-inventory-main-pool",
+   "area": "main-pool",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Main pool: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 128
+  },
+  {
+   "id": "path-network-inventory-elena",
+   "area": "elena",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Calle Elena: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 129
+  },
+  {
+   "id": "path-network-inventory-cervantes",
+   "area": "cervantes",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Calle Miguel de Cervantes: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 130
+  },
+  {
+   "id": "path-network-inventory-dali",
+   "area": "dali",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Calle Pintor Dalí: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 131
+  },
+  {
+   "id": "path-network-inventory-picasso",
+   "area": "picasso",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 132
+  },
+  {
+   "id": "path-network-inventory-north-lanes",
+   "area": "north-lanes",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 133
+  },
+  {
+   "id": "path-network-inventory-eva",
+   "area": "eva",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Calle Eva: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 134
+  },
+  {
+   "id": "path-network-inventory-seaward-lanes",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 135
+  },
+  {
+   "id": "path-network-inventory-barraka-beach",
+   "area": "barraka-beach",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Barraka and the beach: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 136
+  },
+  {
+   "id": "path-network-inventory-paseo",
+   "area": "paseo",
+   "priority": 1,
+   "kind": "audit",
+   "title": "The paseo: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 137
+  },
+  {
+   "id": "path-network-inventory-whole-resort",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "audit",
+   "title": "The whole resort: full-source path, tunnel and boundary inventory",
+   "photos": [],
+   "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
+   "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
+   "accept": [
+    "All available relevant full sources inspected with revision, reviewer, observations and limitations",
+    "Every visible path, boundary and opening linked or named as a gap",
+    "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+   ],
+   "dependsOn": [
+    "path-network-baseline"
+   ],
+   "status": "open",
+   "issue": 138
+  },
+  {
    "id": "facade-kit-traced",
    "area": "north-pool",
    "priority": 1,

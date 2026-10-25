@@ -16,11 +16,11 @@ jobs:
       - run: python3 -m pip install Pillow==11.3.0
       - run: python3 scripts/assign_photo_map.py
       - run: python3 scripts/build_references.py --check
-      - run: python3 scripts/test_photo_assignment.py && python3 scripts/test_reference_index.py && python3 scripts/test_placement_verification.py
+      - run: python3 scripts/test_photo_assignment.py && python3 scripts/test_reference_index.py && python3 scripts/test_placement_verification.py && python3 scripts/test_path_network.py
       - run: python3 scripts/build_reference_packs.py --check
       - run: python3 scripts/test_reference_packs.py
       - run: python3 scripts/check_placement_changes.py --base "$PLACEMENT_BASE"
         env:
           PLACEMENT_BASE: ${{ github.event.pull_request.base.sha }}
       - name: Generated evidence must be committed
-        run: git diff --exit-code -- refs public/reference-index.json public/photos-ref/assignments.json public/photos-ref/evidence-graph.json
+        run: git diff --exit-code -- refs public/reference-index.json public/photos-ref/assignments.json public/photos-ref/evidence-graph.json public/path-network.json

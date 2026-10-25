@@ -36,6 +36,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `elena-south-sills` (raised-threshold): 0.1-0.15 m above Calle Elena south, medium confidence. Model: **built**, task `door-sills`. Single red-tread or white sills at the house doors. Elena south is level to the middle pool gate; lawns kerbed at about 0.1 m. (IMG_2260.jpg, IMG_2261.jpg, IMG_2330.jpg, IMG_2253.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `path-network-inventory-elena` [#129](https://github.com/daveyboyc/villacana-venture/issues/129) | Calle Elena: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.

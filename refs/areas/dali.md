@@ -30,6 +30,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 - `dali-south-approach` (slope): 0.15-0.35 m above the Dalí footpath, low confidence. Model: **built**, task `door-sills`. Flagstone approach between flared white kerbs of 0.15-0.25 m with a grooved concrete strip at its foot, rising gently towards the arch. No flight of steps. (IMG_2283.jpg)
 - `dali-footpath-kerb` (raised-threshold): 0.1-0.15 m above the parking asphalt, medium confidence. Model: **built**, task `door-sills`. The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold. (IMG_2291.jpg, IMG_2293.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `path-network-inventory-dali` [#131](https://github.com/daveyboyc/villacana-venture/issues/131) | Calle Pintor Dalí: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.

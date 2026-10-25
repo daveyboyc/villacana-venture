@@ -33,6 +33,7 @@ import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddleP
 import middlePool from "../data/middle_pool.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
+import { pathNetwork } from "./path-network";
 import { photoLibrary } from "./photo-library";
 import kinds from "../data/kinds.json";
 import {accessSection,lowerPoolRing,poolAccess} from "./pool-levels";
@@ -703,6 +704,22 @@ async function boot(): Promise<void> {
       view.x=(minX+maxX)/2-availableW*unit/2;view.y=(minY+maxY)/2-(top+availableH/2)*unit;apply();
     }});
   } catch(error) {const warning=document.createElement("p");warning.id="photo-load-error";warning.textContent="Photo references could not load. Reload to try again.";document.querySelector("#map-page")!.append(warning);console.error(error);}
+
+  try {
+    await pathNetwork(world, (points) => {
+      const theta = rotation * Math.PI / 180;
+      const ps = points.map(([x,z]) => [x*Math.cos(theta)-z*Math.sin(theta), x*Math.sin(theta)+z*Math.cos(theta)]);
+      const xs=ps.map(p=>p[0]), ys=ps.map(p=>p[1]);
+      const w=Math.max(45,Math.max(...xs)-Math.min(...xs)+30), h=Math.max(45,Math.max(...ys)-Math.min(...ys)+30);
+      const unit=Math.max(w/Math.max(100,innerWidth-(innerWidth>760?390:0)),h/Math.max(100,innerHeight*.45));
+      view.w=innerWidth*unit; view.h=innerHeight*unit;
+      view.x=(Math.min(...xs)+Math.max(...xs))/2-view.w*(innerWidth>760?.35:.5);
+      view.y=(Math.min(...ys)+Math.max(...ys))/2-view.h*.32; apply();
+    });
+  } catch(error) {
+    const warning=document.createElement("p");warning.id="network-load-error";warning.textContent="Path network inventory could not load. Reload to try again.";
+    document.querySelector("#map-page")!.append(warning);console.error(error);
+  }
 
   // Editing.
   const kind = $<HTMLSelectElement>("#kind");
