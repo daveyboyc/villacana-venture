@@ -48,6 +48,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P1 | `elena-register-tunnel-portals` [#145](https://github.com/daveyboyc/villacana-venture/issues/145) | Elena: register both portals and reconcile second tunnel candidate (after path-network-inventory-elena) | open · placement: not-applicable |  |
 | P1 | `elena-south-terminal-identify` [#147](https://github.com/daveyboyc/villacana-venture/issues/147) | Elena south: identify terminal frame and adjoining wall/door connections (after path-network-inventory-elena) | open · placement: not-applicable |  |
 | P1 | `elena-tunnel-structure-correction` [#146](https://github.com/daveyboyc/villacana-venture/issues/146) | Elena: correct covered passage structural omissions after registration (after path-network-inventory-elena, elena-register-tunnel-portals, 3d-browser-regression-reliability) | open · placement: not-verified | [IMG_2202](../../public/photos-ref/IMG_2202.jpg), [IMG_2203](../../public/photos-ref/IMG_2203.jpg), [IMG_2255](../../public/photos-ref/IMG_2255.jpg) |
+| P2 | `facade-kit-elena` | Elena roof station: make the camera solvable, then trace its facades | in-progress · Claude · placement: not-applicable |  |
 
 ## Built from these photos
 

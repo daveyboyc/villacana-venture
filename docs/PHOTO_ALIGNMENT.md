@@ -34,12 +34,17 @@ Each entry under a photo's `points` in `data/photo_poses.json`:
 | `{"pixel": [u, v], "ref": "pool:<id>"}` | anywhere on the traced water edge |
 | `{"pixel": [u, v], "ref": "world:x,y,z"}` | a point in scene metres |
 | `{"vertical": [[u, v], [u, v]]}` | two pixels on any upright edge; uses no model geometry |
+| `{"pixel": [u, v], "ref": "building:<id>:*:top"}` (or `base`) | anywhere on that building's roofline (or base); easy to slide onto the wrong face, so use it with upright edges |
+| `{"pixel": [u, v], "ref": "edge:<feature>"}` | anywhere on a rendered edge of a traced wall, step, kerb, bed or terrace (`edge:<feature>@<k>` for one segment); `guide` labels them E<n> |
+| `{"pixel": [u, v], "ref": "road:<id>:left"}` (or `right`) | anywhere on a mapped street edge, half its mapped width from the centre line; left is left looking along the road's points; `guide` labels them R<n> |
 
 `"use": "control"` fits the camera; `"use": "check"` is held out and measures the model.
 Fit with things you trust (registry footprint corners as upright edges, the traced pool edge,
 real verticals) and hold out what you want to test (roof heights, a facade step, a wall). Read
 pixels off a gridded zoom of the full photo, not the thumbnail. Each match is weighted by its
-pixel error plus the model's own uncertainty at that distance (pool trace 0.3 m, footprints 0.2 m).
+pixel error plus the model's own uncertainty at that distance (pool trace 0.3 m, footprints 0.2 m,
+traced walls and steps 0.3 m, street edges 0.6 m because mapped widths are approximate). A photo's
+`"heightPrior": [y, sigma]` holds the camera height, for example a surveyed roof plus eye level.
 
 Photos taken from one spot get the same `"station"` and are solved together: one position and
 lens, a direction each. This matters: a single photo that shows a pool edge and one corner leaves
@@ -58,5 +63,6 @@ so photos indexed before this change rely on the solve and a loose 24 mm prior.
   They carry the camera's own uncertainty (the `sigma` stored with the solve), so treat anything
   under about 0.3 m as agreement.
 - A solved camera is a measurement tool. It does not grant placement approval
-  (`docs/PLACEMENT_VERIFICATION.md`), and the model export currently covers registry buildings
-  and pool edges only; walls, steps and planters are compared by eye in the overlay.
+  (`docs/PLACEMENT_VERIFICATION.md`). The model export covers registry buildings, pool edges,
+  street edges and the rendered edges of traced walls, steps, kerbs, beds and terraces; planting
+  and other details are still compared by eye in the overlay.
