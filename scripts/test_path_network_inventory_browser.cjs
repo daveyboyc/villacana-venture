@@ -43,6 +43,10 @@ const fs=require('node:fs');
   assert.match(await viewer.locator('#source-limitations').innerText(),/./);
   await viewer.reload();await viewer.waitForSelector('#feature option',{state:'attached'});
   assert.equal(await viewer.locator('#feature').inputValue(),'elena:A01','source-relative selection survives reload');
+  await viewer.selectOption('#feature','elena:N01');
+  assert.match(await viewer.locator('#comparison h3').first().innerText(),/Current material correction/);
+  assert.ok((await viewer.locator('#comparison img').first().getAttribute('src')).endsWith('north-lane-context-after.png'));
+  assert.ok((await viewer.locator('#comparison img').nth(1).getAttribute('src')).endsWith('north-lane-context.png'));
   assert.deepEqual(errors,[]);
   console.log('Elena source traces, comparison drawings, pinned game views, private metadata, deep links and three mobile viewports PASS');
  }finally{await browser.close();await server.close();}

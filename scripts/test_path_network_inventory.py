@@ -84,6 +84,22 @@ class InventoryValidation(unittest.TestCase):
             self.assertEqual(accounting['fixture.jpg']['areasInspected'],['cervantes','elena'])
             self.assertEqual(set(accounting['fixture.jpg']['features']),{'path-observation:elena:edge','path-observation:cervantes:edge'})
             self.assertEqual(len(accounting['fixture.jpg']['scopedReviews']),2)
+    def test_new_comparison_requires_review_and_preserves_baseline(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);path,data,entry,catalog=self.fixture(root)
+            base=root/'docs/inventory/base.json';base.write_text(json.dumps({'assessments':[dict(featureIds=['elena:edge'],modelRevision='1'*40,result='not-comparable')]}))
+            baseline_hash=digest(base);entry['assessments']='docs/inventory/base.json'
+            extra=root/'docs/inventory/new.json';review=root/'docs/inventory/material-review.md';review.write_text('Independent scoped material review fixture')
+            payload=dict(scope='Material correction',review=dict(path='docs/inventory/material-review.md',sha256='0'*64),assessments=[dict(featureIds=['elena:edge'],modelRevision='2'*40,result='partial')])
+            extra.write_text(json.dumps(payload));entry['additionalAssessments']=['docs/inventory/new.json'];self.review(root,path,assessmentSha256=baseline_hash)
+            self.assertTrue(any('current scoped review' in p for p in self.project(root,entry,catalog)[3]))
+            payload['review']['sha256']=digest(review);extra.write_text(json.dumps(payload))
+            self.assertEqual(self.project(root,entry,catalog)[3],[])
+            public=json.loads((root/'public/path-network/elena/inventory.json').read_text())
+            self.assertEqual(len(public['assessments']),2)
+            self.assertEqual(public['assessments'][0]['modelRevision'],'2'*40)
+            self.assertEqual(public['assessments'][1]['modelRevision'],'1'*40)
+            self.assertEqual(digest(base),baseline_hash)
     def test_current_real_inventory_retains_unknowns_and_hashes(self):
         data=json.loads((ROOT/'public/path-network.json').read_text())
         rows=[r for r in data['records'] if r['kind']=='path-observation' and 'elena' in r['areas']]

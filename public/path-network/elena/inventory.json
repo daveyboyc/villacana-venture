@@ -2493,6 +2493,52 @@
  "assessments": [
   {
    "featureIds": [
+    "elena:N01"
+   ],
+   "image": "north-lane-context-after.png",
+   "imageSha256": "18068f34ace53afb7bdf8997af2391ae053daaa054be97fd3bdfc1dcca966bb8",
+   "modelRevision": "9a3fbc822d8ac9f3e23898d0a7941bfd9dbb112e",
+   "result": "partial",
+   "observation": "Three straight square-tile columns and separate grey margins replace the diagonal grid on the unchanged north ribbon.",
+   "limitations": "Material-only correction from owner and full photos. Uncalibrated model-context view; no registered edge/width, whole-photo match, floor/clearance fidelity or placement approval. Earlier structural/level gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review",
+   "label": "Current material correction: three straight tile columns"
+  },
+  {
+   "featureIds": [
+    "elena:S01"
+   ],
+   "image": "south-lane-context-after.png",
+   "imageSha256": "7f33d4d4c4e622dd30a05574dc4530423eaf1b10c146c2dd57bab5e9061965d6",
+   "modelRevision": "9a3fbc822d8ac9f3e23898d0a7941bfd9dbb112e",
+   "result": "partial",
+   "observation": "Three straight square-tile columns run along the existing south path; grey margin is distinct from the white lawn kerb.",
+   "limitations": "Material-only correction from owner and full photos. Uncalibrated model-context view; no registered edge/width, whole-photo match, floor/clearance fidelity or placement approval. Earlier structural/level gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review",
+   "label": "Current material correction: three straight tile columns"
+  },
+  {
+   "featureIds": [
+    "elena:N03",
+    "elena:N04"
+   ],
+   "image": "garden-spur-context-after.png",
+   "imageSha256": "e72954b0d34d2c082da78740aa4c3d62a9d555684edfe926acf21439561df3f9",
+   "modelRevision": "9a3fbc822d8ac9f3e23898d0a7941bfd9dbb112e",
+   "result": "partial",
+   "observation": "Only the existing paved spur changes material: its square grid shares the north lane origin and phase. Beds, door, walls and path ring stay unchanged.",
+   "limitations": "Material-only correction from owner and full photos. Uncalibrated model-context view; no registered edge/width, whole-photo match, floor/clearance fidelity or placement approval. Earlier structural/level gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review",
+   "label": "Current material correction: three straight tile columns"
+  },
+  {
+   "featureIds": [
     "elena:T01",
     "elena:T09"
    ],
@@ -2504,7 +2550,8 @@
    "limitations": "This is a semantic component comparison. It does not measure portal positions, dimensions, gateway curvature or inferred public access. Capture uses host context, not the inaccurate IMG_2202 pin.",
    "followUp": "elena-tunnel-structure-correction",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2524,7 +2571,8 @@
    "limitations": "Smaller far openings remain window-like/unknown; do not convert them into extra doors. Dimensions and world identity remain unregistered. Decoration and paving follow supported structural layout.",
    "followUp": "elena-tunnel-structure-correction",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2541,7 +2589,8 @@
    "limitations": "Approximate model camera and incomplete framing cannot certify either physical path edge, width, hidden return or upper/ground alignment. Vegetation omission in Layout is intentional.",
    "followUp": "elena-register-path-edges",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2557,7 +2606,8 @@
    "limitations": "Third-person photo-pin context is not a calibrated source camera; only some of these components are in frame. Hidden private patios/partitions remain unresolved.",
    "followUp": "elena-register-path-edges",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2571,7 +2621,8 @@
    "limitations": "Approximate third-person camera cannot verify the opening width, depth, height, placement or all adjacent boundaries.",
    "followUp": "elena-register-path-edges",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2588,7 +2639,8 @@
    "limitations": "Terminal structure is too distant in this model view to compare material or leaf design. Closer same-direction private photos09/12 show an open iron gate candidate and a separate glass pool barrier beyond; they do not prove a reverse Elena connection or world identity. Both path edges and complete wall/door layout need registration.",
    "followUp": "elena-south-terminal-identify",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2605,7 +2657,8 @@
    "limitations": "Camera is selected from model coordinates, not solved to IMG_2286. No measured riser, datum, planter footprint or ground-wall agreement follows from this view.",
    "followUp": "elena-level-clearance-survey",
    "cameraStatus": "Uncalibrated model-context camera; approximate or model-authored position, no held-out registration.",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2616,7 +2669,8 @@
    "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
    "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
    "followUp": "elena-register-tunnel-portals",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2627,7 +2681,8 @@
    "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
    "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
    "followUp": "elena-register-path-edges",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2638,7 +2693,8 @@
    "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
    "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
    "followUp": "elena-register-path-edges",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   },
   {
    "featureIds": [
@@ -2649,7 +2705,8 @@
    "observation": "This component is outside the captured current-game views or cannot be safely registered to its source.",
    "limitations": "Keep its model assessment open; source drawing is not a current-render match.",
    "followUp": "elena-register-path-edges",
-   "reviewer": "Codex root"
+   "reviewer": "Codex root",
+   "label": "Earlier pinned comparison; unresolved geometry remains open"
   }
  ],
  "tasks": {

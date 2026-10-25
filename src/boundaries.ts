@@ -1,6 +1,7 @@
 import {outsideLanePaving} from "./middle-pool-lane-frontages";
 import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
+import {elenaPavingFor,elenaPavingTexture,applyElenaPavingUv} from "./elena-lane-paving";
 import {surfaceTexture} from "./materials";
 import { outsideMiddleSouthForecourt } from "./middle-pool-south-gate";
 import * as THREE from "three";
@@ -43,10 +44,11 @@ export function referenceGroundHeight(reference: BoundaryReference, x: number, z
 
 export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryReference): void {
   const tiles=surfaceTexture("paving");
-  const flat=(ring:Vec2[],color:string,y:number,map?:THREE.Texture) => {
+  const flat=(ring:Vec2[],color:string,y:number,map?:THREE.Texture,road?:BoundaryReference["roads"][number]) => {
    for(const part of outsideMiddleSouthForecourt(ring).flatMap(outsideLanePaving)) {
     const shape=new THREE.Shape(part.map(([x,z])=>new THREE.Vector2(x,-z)));
     const mesh=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color,map,roughness:1}));
+    if(road){applyElenaPavingUv(mesh.geometry,road);mesh.name=elenaPavingFor(road)!.id;mesh.userData.elenaPaving=true;}
     mesh.position.y=y;mesh.receiveShadow=true;scene.add(mesh);
    }
   };
@@ -58,8 +60,9 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   };
   for(const road of reference.roads) {
     if (!road.heights) {
-      flat(ribbon(road.points,road.width+(road.surface==="terracotta"?0.12:0.35)),"#f4f0e5",0.25);
-      flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?(seawardRoadTexture(road)??tiles):undefined);
+      const elena=elenaPavingFor(road);
+      flat(ribbon(road.points,road.width+(road.surface==="terracotta"?0.12:0.35)),elena?.marginColor??"#f4f0e5",0.25);
+      flat(ribbon(road.points,road.width),road.surface==="asphalt"?"#7f8384":"#ffffff",0.27,road.surface==="terracotta"?(elena?elenaPavingTexture():(seawardRoadTexture(road)??tiles)):undefined,elena?road:undefined);
       continue;
     }
     // One quad per centreline segment preserves every change of slope.

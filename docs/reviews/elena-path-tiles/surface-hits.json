@@ -1,0 +1,86 @@
+[
+ {
+  "road": "elena-north",
+  "fraction": 0.1,
+  "x": -162.78300000000002,
+  "z": 22.306,
+  "firstHit": "elena-north-three-column",
+  "paving": true,
+  "uv": [
+   0.4999999937035944,
+   3.2560275619623646
+  ],
+  "visibleFloorY": 0.9490499973297106,
+  "playerFloorY": 0.78847
+ },
+ {
+  "road": "elena-north",
+  "fraction": 0.5,
+  "x": -154.91500000000002,
+  "z": 35.81,
+  "firstHit": "elena-north-three-column",
+  "paving": true,
+  "uv": [
+   0.49999999370397624,
+   16.28013315294575
+  ],
+  "visibleFloorY": 0.9490499973297096,
+  "playerFloorY": 0.73905
+ },
+ {
+  "road": "elena-north",
+  "fraction": 0.9,
+  "x": -147.04700000000003,
+  "z": 49.314,
+  "firstHit": "elena-north-three-column",
+  "paving": true,
+  "uv": [
+   0.5000000102580044,
+   29.304240197307386
+  ],
+  "visibleFloorY": 0.9490499973297088,
+  "playerFloorY": 0.7043700000000006
+ },
+ {
+  "road": "elena-south",
+  "fraction": 0.1,
+  "x": -151.19368212278079,
+  "z": 61.81247214301283,
+  "firstHit": "elena-south-three-column",
+  "paving": true,
+  "uv": [
+   0.5000006439699114,
+   3.9156979180505145
+  ],
+  "visibleFloorY": 0.9639174532657373,
+  "playerFloorY": 0.75253231330329
+ },
+ {
+  "road": "elena-south",
+  "fraction": 0.5,
+  "x": -141.288410613904,
+  "z": 77.82236071506416,
+  "firstHit": "elena-south-three-column",
+  "paving": true,
+  "uv": [
+   0.4752964949208748,
+   19.671903295048914
+  ],
+  "visibleFloorY": 0.9995300543763866,
+  "playerFloorY": 0.7895303858771312
+ },
+ {
+  "road": "elena-south",
+  "fraction": 0.9,
+  "x": -135.3458558050927,
+  "z": 94.77996552618535,
+  "firstHit": "elena-south-three-column",
+  "paving": true,
+  "uv": [
+   0.4827603081168105,
+   35.339619480144286
+  ],
+  "visibleFloorY": 0.2963000111309635,
+  "playerFloorY": 0.0866674157580904
+ }
+]
