@@ -27,6 +27,14 @@ Ground and floor levels read from the photos, from `data/levels_survey.json` (se
 
 - `south-lawn-over-paseo` (retaining-wall): 0.9-1.1 m above the paseo, medium confidence at (-74, 198) ±3 m. Model: **built**, task `south-pool-seaward-level`. About three sandstone courses; the hedge grows from coping level and the deck and water are seen from just above at eye height. IMG_2350 against a lamp post gives 1.0-1.2 m. Lower to the west: 0.6-0.9 m in IMG_2352, 0.5-0.8 m in IMG_2354. The model has the paseo 1 m below street level beside the south lawn, rising to leave the wall about 0.5 m at its west end (data/main_pool.json paseo profile), which matches. (IMG_2349.jpg, IMG_2350.jpg, IMG_2188.jpg)
 
+## Open build tasks
+
+From `data/build_queue.json`; issue bodies in `refs/issues/`.
+
+| Priority | Task | What | Status | Photos |
+| --- | --- | --- | --- | --- |
+| P1 | `path-network-inventory-south-pool` | South pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+
 ## Built from these photos
 
 Model features that cite photos of this area, from `public/photos-ref/evidence-graph.json`, with their photo-check state. A citation records what a feature was traced from; only a check in `data/photo_checks.json` says someone rendered it from the photo's camera and compared.
