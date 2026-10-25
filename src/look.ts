@@ -16,13 +16,13 @@ import { asset } from "./asset";
 export function setupLook(renderer: THREE.WebGLRenderer, scene: THREE.Scene, camera: THREE.PerspectiveCamera, sun: THREE.DirectionalLight, sky: THREE.HemisphereLight, widest: number) {
   renderer.toneMapping = THREE.NeutralToneMapping;
   renderer.toneMappingExposure = 1;
-  sky.intensity = 0.9;
+  sky.intensity = 1.05;
   sun.intensity = 2.1;
   sun.shadow.normalBias = 0.03;
   const pmrem = new THREE.PMREMGenerator(renderer);
   new RGBELoader().load(asset("/art/sky-kloofendal-1k.hdr"), (hdr) => {
     scene.environment = pmrem.fromEquirectangular(hdr).texture;
-    scene.environmentIntensity = 0.55;
+    scene.environmentIntensity = 0.75;
     hdr.dispose();
     pmrem.dispose();
   });
