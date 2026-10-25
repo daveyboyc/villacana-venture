@@ -22,7 +22,7 @@ const WIDTH: Record<(typeof PARTS)[number], number> = { "shutter-door": 1.2, "ir
 const FAR = 120;
 /** The far quad for each opening part, as built: width, height, sill and colour (scripts/build_kit.py). */
 const FLAT: Partial<Record<(typeof PARTS)[number], [number, number, number, string]>> = {
-  "shutter-door": [1.2, 2.3, 0, "#5b3622"], "shutter-window": [1.4, 1.1, 1.0, "#1f2326"], "arched-window": [0.7, 1.3, 0.9, "#5b3622"],
+  "shutter-door": [1.2, 2.3, 0, "#5b3622"], "shutter-window": [1.4, 1.1, 1.0, "#5b3622"], "arched-window": [0.7, 1.3, 0.9, "#5b3622"],
 };
 type Traced = { part: (typeof PARTS)[number]; along: number; storey: number; width?: number };
 const tracedWalls = new Map<string, Traced[]>(
