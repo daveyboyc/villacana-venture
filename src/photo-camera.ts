@@ -77,5 +77,34 @@ export function exportModel(scene: THREE.Scene, skeleton: Skeleton, groundY: (x:
   const heights: number[] = [];
   for (let k = 0; k < nz; k++) for (let i = 0; i < nx; i++) heights.push(Math.round(standY(x0 + i * step, z0 + k * step) * 100) / 100);
   const ground = { x0, z0, step, nx, nz, heights };
-  (window as unknown as { villacanaModel: unknown }).villacanaModel = { frame: "scene metres, +x east, +z south, y up", buildings, pools, ground };
+  // The rendered edges of every other solid mesh (walls, gateways, steps, terraces, kerbs), grouped by
+  // the nearest named object, so photo_pose.py can match a pixel to "an edge of this wall".
+  // Unnamed meshes are numbered in build order, which is the same on every load.
+  const features = new Map<string, number[][]>(), named = (o: THREE.Object3D | null): string => (!o ? "" : o.name || named(o.parent));
+  let unnamed = 0;
+  scene.traverse((o) => {
+    const mesh = o as THREE.Mesh;
+    if (!mesh.isMesh || (mesh as THREE.InstancedMesh).isInstancedMesh || !mesh.visible || !mesh.geometry) return;
+    const id = named(mesh) || `unnamed#${unnamed++}`;
+    if (/^(building:|facade-kit|route:)/.test(id) || mesh.geometry.getAttribute("position").count > 6000) return;
+    const edges = new THREE.EdgesGeometry(mesh.geometry, 40).applyMatrix4(mesh.matrixWorld).getAttribute("position");
+    const list = features.get(id) ?? [];
+    for (let i = 0; i < edges.count; i += 2) list.push([edges.getX(i), edges.getY(i), edges.getZ(i), edges.getX(i + 1), edges.getY(i + 1), edges.getZ(i + 1)].map(round));
+    features.set(id, list);
+  });
+  // Street edges, half the mapped width either side of each centre line, on the walkable ground.
+  const roads = (skeleton.boundaryReference?.roads ?? []).flatMap((r) => (["left", "right"] as const).map((side) => {
+    const line: number[][] = [];
+    r.points.slice(1).forEach((b, i) => {
+      const a = r.points[i], length = Math.hypot(b[0] - a[0], b[1] - a[1]), half = (r.width ?? 4) / 2 * (side === "left" ? 1 : -1);
+      const nx = -(b[1] - a[1]) / length, nz = (b[0] - a[0]) / length;
+      for (let t = 0; t <= length; t += 1) {
+        const x = a[0] + (b[0] - a[0]) * t / length + nx * half, z = a[1] + (b[1] - a[1]) * t / length + nz * half;
+        line.push([round(x), round(standY(x, z)), round(z)]);
+      }
+    });
+    return { id: `${r.id}:${side}`, name: r.name, line };
+  }));
+  (window as unknown as { villacanaModel: unknown }).villacanaModel = { frame: "scene metres, +x east, +z south, y up", buildings, pools, ground,
+    features: [...features].map(([id, segments]) => ({ id, segments })), roads };
 }

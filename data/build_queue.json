@@ -1692,7 +1692,9 @@
     "Traced parts cross-checked in two photos where possible"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "25 Oct: export now carries traced wall/step/kerb edges and street edges (edge:, road:, building:*: refs). Elena roof photos IMG_2358-2360 still not solvable as one station (solo solves 0.5/4.2/4.4 m apart, joint lens 37 mm, IMG_2360 turned 65 deg): probably different spots on the terrace. Next: solve each photo alone with more matches and held-out checks. Nothing traced yet."
   }
  ]
 }

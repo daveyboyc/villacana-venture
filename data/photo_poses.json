@@ -1518,7 +1518,125 @@
     1200,
     1600
    ],
-   "points": [],
+   "points": [
+    {
+     "pixel": [
+      560,
+      640
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane (photo left)"
+    },
+    {
+     "pixel": [
+      573,
+      500
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane (photo left)"
+    },
+    {
+     "pixel": [
+      580,
+      340
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane (photo left)"
+    },
+    {
+     "pixel": [
+      582,
+      200
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane (photo left)"
+    },
+    {
+     "pixel": [
+      585,
+      120
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge of the Elena south lane (photo left)"
+    },
+    {
+     "pixel": [
+      698,
+      640
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      690,
+      500
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      683,
+      400
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      675,
+      300
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      667,
+      200
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      663,
+      120
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      612,
+      20
+     ],
+     "ref": "pool:middle",
+     "use": "control",
+     "note": "near water edge of the middle pool at the end of the lane"
+    },
+    {
+     "pixel": [
+      640,
+      22
+     ],
+     "ref": "pool:middle",
+     "use": "control",
+     "note": "near water edge of the middle pool at the end of the lane"
+    }
+   ],
    "initial": {
     "x": -155.7,
     "y": 9.0,
@@ -1528,41 +1646,279 @@
     "roll": 0.0,
     "f": 1109.3
    },
-   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)",
+   "heightPrior": [
+    8.5,
+    0.4
+   ],
+   "heightPriorBasis": "building 21 roof at the pin surveyed at 6.9-7.1 m above the middle pool deck (PNOA-LiDAR 2014-15) plus about 1.5 m eye height",
+   "note": "Not solved: as one station the three photos contradict each other (alone they land 0.5, 4.2 and 4.4 m from the joint camera, the joint lens comes out at 37 mm, and IMG_2360 is turned 65 degrees from its own solve and compass). Probably taken from different spots on the roof terrace. See docs/reviews/facade-kit-elena."
   },
   "IMG_2359.jpg": {
    "image": [
     1200,
     1600
    ],
-   "points": [],
+   "points": [
+    {
+     "pixel": [
+      20,
+      318
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      80,
+      309
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      130,
+      300
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      200,
+      292
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      300,
+      282
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      400,
+      273
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      470,
+      266
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      520,
+      250
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      580,
+      230
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "pixel": [
+      640,
+      208
+     ],
+     "ref": "building:6265801UF1366N_part5:*:top",
+     "use": "control",
+     "note": "parapet line of the big house west of the lane (building 44)"
+    },
+    {
+     "vertical": [
+      [
+       482,
+       262
+      ],
+      [
+       508,
+       470
+      ]
+     ],
+     "use": "control",
+     "note": "left edge of the projecting bay, building 44"
+    },
+    {
+     "vertical": [
+      [
+       142,
+       300
+      ],
+      [
+       165,
+       480
+      ]
+     ],
+     "use": "control",
+     "note": "facade step, building 44"
+    }
+   ],
    "initial": {
-    "x": -155.7,
-    "y": 9.0,
-    "z": 50.1,
+    "x": -157.294,
+    "y": 5.736,
+    "z": 51.604,
     "yaw": 224.4,
     "pitch": -35.0,
     "roll": 0.0,
-    "f": 1109.3
+    "f": 1120.728
    },
-   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+   "initialBasis": "position and lens from the coarse IMG_2358 solve; yaw and pitch from the phone and by eye",
+   "heightPrior": [
+    8.5,
+    0.4
+   ],
+   "heightPriorBasis": "building 21 roof at the pin surveyed at 6.9-7.1 m above the middle pool deck (PNOA-LiDAR 2014-15) plus about 1.5 m eye height",
+   "note": "Not solved: as one station the three photos contradict each other (alone they land 0.5, 4.2 and 4.4 m from the joint camera, the joint lens comes out at 37 mm, and IMG_2360 is turned 65 degrees from its own solve and compass). Probably taken from different spots on the roof terrace. See docs/reviews/facade-kit-elena."
   },
   "IMG_2360.jpg": {
    "image": [
     1200,
     1600
    ],
-   "points": [],
+   "points": [
+    {
+     "pixel": [
+      760,
+      431
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      800,
+      440
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      850,
+      449
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      900,
+      457
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      950,
+      466
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      1000,
+      475
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      1050,
+      485
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "pixel": [
+      1100,
+      495
+     ],
+     "ref": "building:6265601UF1366N_part1:*:top",
+     "use": "control",
+     "note": "parapet line of the long house east of the camera (building 39)"
+    },
+    {
+     "vertical": [
+      [
+       745,
+       430
+      ],
+      [
+       747,
+       548
+      ]
+     ],
+     "use": "control",
+     "note": "west end of the building 39 facade block"
+    },
+    {
+     "vertical": [
+      [
+       1120,
+       502
+      ],
+      [
+       1120,
+       558
+      ]
+     ],
+     "use": "control",
+     "note": "east end of the facade block"
+    }
+   ],
    "initial": {
-    "x": -155.7,
-    "y": 9.0,
-    "z": 50.1,
+    "x": -157.294,
+    "y": 5.736,
+    "z": 51.604,
     "yaw": 75.4,
     "pitch": -25.0,
     "roll": 0.0,
-    "f": 1109.3
+    "f": 1120.728
    },
-   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+   "initialBasis": "position and lens from the coarse IMG_2358 solve; yaw and pitch from the phone and by eye",
+   "heightPrior": [
+    8.5,
+    0.4
+   ],
+   "heightPriorBasis": "building 21 roof at the pin surveyed at 6.9-7.1 m above the middle pool deck (PNOA-LiDAR 2014-15) plus about 1.5 m eye height",
+   "note": "Not solved: as one station the three photos contradict each other (alone they land 0.5, 4.2 and 4.4 m from the joint camera, the joint lens comes out at 37 mm, and IMG_2360 is turned 65 degrees from its own solve and compass). Probably taken from different spots on the roof terrace. See docs/reviews/facade-kit-elena."
   }
  }
 }
