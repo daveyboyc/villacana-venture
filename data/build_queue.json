@@ -1888,6 +1888,35 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "25 Oct: export now carries traced wall/step/kerb edges and street edges (edge:, road:, building:*: refs). Elena roof photos IMG_2358-2360 still not solvable as one station (solo solves 0.5/4.2/4.4 m apart, joint lens 37 mm, IMG_2360 turned 65 deg): probably different spots on the terrace. Next: solve each photo alone with more matches and held-out checks. Nothing traced yet."
+  },
+  {
+   "id": "elena-path-tiles",
+   "area": "elena",
+   "priority": 1,
+   "kind": "materials",
+   "title": "Elena: three straight tile columns and separate grey path margins",
+   "photos": [
+    "IMG_2201.jpg",
+    "IMG_2253.jpg",
+    "IMG_2330.jpg"
+   ],
+   "features": [
+    "elena_lane_paving.json:elena-north-three-column",
+    "elena_lane_paving.json:elena-south-three-column"
+   ],
+   "build": "Apply the owner-confirmed three-column straight square-tile grid along the existing north/south path axes. Retain existing path extents and levels, make grey margins distinct, and align the garden spur to its own direction. Compare actual visible surfaces before/after; no new measured path boundaries inferred.",
+   "avoid": "Do not apply this grid to patterned covered passages, Silvia four-column surfaces, pools or other streets. Do not derive surveyed widths from the tile count or change registry/terrain/collision.",
+   "accept": [
+    "Three straight tile columns on existing Elena north/south paths; grey margins separate",
+    "Actual-surface ray checks and before/after source-context renders",
+    "Map/3D share lane alignment; unchanged original registry/pool/road inputs",
+    "Independent source/render review and applicable source/build/route regressions"
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "in-progress",
+   "owner": "Codex"
   }
  ]
 }
