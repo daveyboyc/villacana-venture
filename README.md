@@ -51,6 +51,13 @@ See [docs/LAYOUT_ACCURACY.md](docs/LAYOUT_ACCURACY.md),
 [docs/PHOTO_MAP_WORKFLOW.md](docs/PHOTO_MAP_WORKFLOW.md) and
 [docs/UNIFIED_REFERENCE_MAP.md](docs/UNIFIED_REFERENCE_MAP.md).
 
+## Path and tunnel mapping programme
+
+The [path network PRD](docs/PATH_NETWORK_PRD.md) specifies a resort-wide inventory
+of tunnels, both path edges, building ground boundaries and walls, followed by
+photo-backed improvements one connected area at a time. It distinguishes mapped,
+missing and unverified features; the programme is not yet complete.
+
 ## Controls and local edits
 
 Drag/pinch or use +/−, rotate, North and Fit. In Walk, use WASD/arrows or touch

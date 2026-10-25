@@ -38,7 +38,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P1 | `terrain-from-lidar` | Ground levels: follow the laser survey instead of one 0.5 m rise | in-progress · Claude · placement: not-verified |  |
 | P3 | `north-pool-roof-heights` | Storey heights: match roof heights to the laser survey (after photo-camera-alignment, terrain-from-lidar) | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
 
-**Built without complete newer photo-check records:** `door-sills`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `door-sills`, `path-network-prd`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

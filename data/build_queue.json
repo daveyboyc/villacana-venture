@@ -1280,7 +1280,7 @@
     "All areas and known/candidate tunnels receive explicit coverage requirements; concealed boundaries and unresolved connections remain visible",
     "PRD linked from the repository README and reference consistency checked"
    ],
-   "status": "in-progress",
+   "status": "done",
    "owner": "Codex",
    "dependsOn": []
   }

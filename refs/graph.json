@@ -35224,6 +35224,19 @@
    }
   },
   {
+   "id": "task:path-network-prd",
+   "kind": "build-task",
+   "name": "Specify photo-backed path, tunnel and boundary mapping across Villacana",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-applicable",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -42623,6 +42636,11 @@
   {
    "from": "task:silvia-outdoor-path",
    "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:path-network-prd",
+   "to": "area:whole-resort",
    "relation": "in-area"
   },
   {
