@@ -51,6 +51,7 @@ import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
 import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight } from "./boundaries";
 import { exportModel, photoCamera } from "./photo-camera";
+import { setupLook } from "./look";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -148,7 +149,8 @@ async function boot(): Promise<void> {
   window.addEventListener("resize", resize);
   resize();
 
-  scene.add(new THREE.HemisphereLight("#f4fbff", "#e6d6bd", 2.1));
+  const skyLight = new THREE.HemisphereLight("#f4fbff", "#e6d6bd", 2.1);
+  scene.add(skyLight);
   const sun = new THREE.DirectionalLight("#fff1d6", 1.9);
   sun.position.set(centre.x - 60, 90, centre.z + 40);
   sun.target.position.set(centre.x, 0, centre.z);
@@ -158,6 +160,7 @@ async function boot(): Promise<void> {
   Object.assign(sun.shadow.camera, { left: -reach, right: reach, top: reach, bottom: -reach, near: 1, far: 420 });
   sun.shadow.bias = -0.0004;
   scene.add(sun, sun.target);
+  const finish = setupLook(renderer, scene, camera, sun, skyLight, reach);
 
   const poolRings = skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring);
   // Where the sea is on show, the ground seaward of the paseo follows the seaside heights.
@@ -165,7 +168,7 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre, poolRings,buildings.some(b=>b.id===SILVIA_HOST));
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
-  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;addBackdrop(backdrop,centre);scene.add(backdrop);
+  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;addBackdrop(backdrop,centre);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const host=buildings.find(b=>b.id===SILVIA_HOST);
   // Same level datum as the surrounding host, both taken on the lane through the tunnel so the
@@ -514,7 +517,7 @@ async function boot(): Promise<void> {
     controls.dataset.distance=distance.toFixed(2);controls.dataset.bearing=String(bearing);
     controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
     references.update();updatePhotoLabels();
-    renderer.render(scene, camera);
+    finish.render();
     canvas.dataset.ready="true";canvas.dataset.player=`${player.x.toFixed(3)},${player.z.toFixed(3)}`;canvas.dataset.closeCamera=String(closeCamera);canvas.dataset.cameraView=overview?"overview":firstPerson?"first":"third";canvas.dataset.move=`${input.moveX.toFixed(2)},${input.moveZ.toFixed(2)}`;canvas.dataset.yaw=camYaw.toFixed(4);
 
     input.jump = false;
