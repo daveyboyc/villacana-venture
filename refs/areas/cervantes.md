@@ -49,7 +49,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `path-network-inventory-cervantes` | Calle Miguel de Cervantes: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-cervantes` [#130](https://github.com/daveyboyc/villacana-venture/issues/130) | Calle Miguel de Cervantes: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
 ## Built from these photos
 

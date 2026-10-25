@@ -38,7 +38,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P1 | `barraka-planter-placement` [#102](https://github.com/daveyboyc/villacana-venture/issues/102) | Correct reported Barraka planter placement against registered source evidence (after placement-verification-gate) | in-progress · Codex · placement: not-verified | [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg) |
-| P1 | `path-network-inventory-barraka-beach` | Barraka and the beach: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `path-network-inventory-barraka-beach` [#136](https://github.com/daveyboyc/villacana-venture/issues/136) | Barraka and the beach: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map, barraka-planter-placement) | open · placement: not-verified | [IMG_2223](../../public/photos-ref/IMG_2223.jpg), [IMG_2346](../../public/photos-ref/IMG_2346.jpg), [IMG_2347](../../public/photos-ref/IMG_2347.jpg) |
 
 ## Built from these photos

@@ -35285,7 +35285,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 125
   },
   {
    "id": "task:path-network-inventory-middle-pool",
@@ -35298,7 +35299,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 126
   },
   {
    "id": "task:path-network-inventory-south-pool",
@@ -35311,7 +35313,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 127
   },
   {
    "id": "task:path-network-inventory-main-pool",
@@ -35324,7 +35327,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 128
   },
   {
    "id": "task:path-network-inventory-elena",
@@ -35337,7 +35341,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 129
   },
   {
    "id": "task:path-network-inventory-cervantes",
@@ -35350,7 +35355,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 130
   },
   {
    "id": "task:path-network-inventory-dali",
@@ -35363,7 +35369,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 131
   },
   {
    "id": "task:path-network-inventory-picasso",
@@ -35376,7 +35383,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 132
   },
   {
    "id": "task:path-network-inventory-north-lanes",
@@ -35389,7 +35397,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 133
   },
   {
    "id": "task:path-network-inventory-eva",
@@ -35402,7 +35411,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 134
   },
   {
    "id": "task:path-network-inventory-seaward-lanes",
@@ -35415,7 +35425,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 135
   },
   {
    "id": "task:path-network-inventory-barraka-beach",
@@ -35428,7 +35439,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 136
   },
   {
    "id": "task:path-network-inventory-paseo",
@@ -35441,7 +35453,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 137
   },
   {
    "id": "task:path-network-inventory-whole-resort",
@@ -35454,7 +35467,8 @@
    "placement": {
     "status": "not-applicable",
     "features": []
-   }
+   },
+   "issue": 138
   },
   {
    "id": "placement-discrepancy:barraka-planter-position",

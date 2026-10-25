@@ -19,10 +19,10 @@ No source inspection or placement approval is claimed.
   execution context during alias navigation. Overview timed out waiting for
   `#overview-north` to be stable; photo-map passed discovery and overview/source
   navigation then timed out loading the blueprint alias. These do not establish
-  full broad-browser regression success. Runtime scene modules were not changed.
+  full broad-browser regression success. An isolated checkout of unchanged origin/main also timed out loading the overview labels in the photo-map suite. Runtime scene modules were not changed.
 - The placement-change gate remains red. Editing `src/blueprint.ts` changes renderer
   snapshot inputs, so previously unverified feature packets are flagged, including
-  Silvia, Barraka, entrance fragments and Guillermo. No warnings or discrepancies
+  Elena, middle-pool fragments and paseo boundaries. No warnings or discrepancies
   were deleted and no inventory record grants approval. Per AGENTS.md's Merging
   rule this gate is reported rather than used to claim verified reconstruction.
 
