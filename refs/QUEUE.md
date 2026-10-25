@@ -38,6 +38,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 | P1 | `path-network-inventory-whole-resort` [#138](https://github.com/daveyboyc/villacana-venture/issues/138) | The whole resort: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P1 | `terrain-from-lidar` | Ground levels: follow the laser survey instead of one 0.5 m rise | in-progress · Claude · placement: not-verified |  |
 | P2 | `barraka-barbecue-boat` | Barraka sand-filled barbecue boat: establish placement and add shared geometry (after unified-reference-map, barraka-planter-placement) | open · placement: not-verified | [IMG_2223](../public/photos-ref/IMG_2223.jpg), [IMG_2346](../public/photos-ref/IMG_2346.jpg), [IMG_2347](../public/photos-ref/IMG_2347.jpg) |
+| P2 | `facade-kit-elena` | Elena roof station: make the camera solvable, then trace its facades | open · placement: not-applicable |  |
 | P2 | `middle-pool-south-forecourt` | Middle pool south: crazy-paved forecourt and hedge inside the south gate (after middle-pool-south-gate) | in-progress · Codex · placement: not-verified | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2335](../public/photos-ref/IMG_2335.jpg) |
 | P2 | `middle-pool-south-lane-planters` | South entrance lane: planted frontage borders and projecting window grilles (after middle-pool-south-forecourt) | open · placement: not-verified | [IMG_2334](../public/photos-ref/IMG_2334.jpg), [IMG_2189](../public/photos-ref/IMG_2189.jpg) |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 · placement: not-verified | [IMG_2227](../public/photos-ref/IMG_2227.jpg), [IMG_2350](../public/photos-ref/IMG_2350.jpg), [IMG_2226](../public/photos-ref/IMG_2226.jpg) |
@@ -115,7 +116,7 @@ How to take a task: `docs/HANDOVER.md`. Each task has a ready issue body in `ref
 - **Middle pool** ([brief](areas/middle-pool.md)): `path-network-inventory-middle-pool`, `tunnel-entrance-context`, `middle-pool-south-forecourt`, `middle-pool-south-lane-planters`, `middle-pool-sw-steps`, `middle-pool-south-gate`, `middle-pool-north-entrance`, `middle-pool-raised-patios`
 - **South pool** ([brief](areas/south-pool.md)): `path-network-inventory-south-pool`, `south-pool-seaward-level`
 - **Main pool** ([brief](areas/main-pool.md)): `guillermo-descent-recheck`, `guillermo-slope-east-steps`, `path-network-inventory-main-pool`
-- **Calle Elena** ([brief](areas/elena.md)): `path-network-inventory-elena`, `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
+- **Calle Elena** ([brief](areas/elena.md)): `path-network-inventory-elena`, `facade-kit-elena`, `elena-east-patios`, `elena-garden-door`, `elena-gated-entry`
 - **Calle Miguel de Cervantes** ([brief](areas/cervantes.md)): `path-network-inventory-cervantes`, `cervantes-door-steps`, `cervantes-east-hedge`, `cervantes-east-south-patios`, `cervantes-north-patios`, `cervantes-steps-treads`, `junction-lawns`
 - **Calle Pintor Dalí** ([brief](areas/dali.md)): `path-network-inventory-dali`
 - **Pintor Picasso and the car park** ([brief](areas/picasso.md)): `path-network-inventory-picasso`, `picasso-service-road`

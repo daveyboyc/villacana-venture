@@ -35510,6 +35510,19 @@
    }
   },
   {
+   "id": "task:facade-kit-elena",
+   "kind": "build-task",
+   "name": "Elena roof station: make the camera solvable, then trace its facades",
+   "priority": 2,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -80410,6 +80423,11 @@
   {
    "from": "task:retexture-surfaces",
    "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:facade-kit-elena",
+   "to": "area:elena",
    "relation": "in-area"
   },
   {
