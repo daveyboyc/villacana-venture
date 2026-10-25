@@ -18,7 +18,8 @@ Each point is {"pixel": [u, v], "ref": ..., "use": "control" | "check"}. Control
 camera; checks are held out and measure the model. {"vertical": [[u, v], [u, v]]} marks two
 pixels on any upright edge (a wall corner, door frame, post): it fixes tilt without any model
 geometry. Photos given the same "station" were taken from one spot and are solved together,
-sharing position and lens. A ref names a model point or line:
+sharing position and lens. "heightPrior": [y, sigma] on a photo holds the camera's height
+(for instance a surveyed roof plus eye level). A ref names a model point or line:
   building:<id>:<i>:top|base       a footprint corner at roof or ground height
   building:<id>:<i>:corner         the vertical edge at that corner (pixel anywhere on it)
   building:<id>:<i>-<j>:top|base   the footprint edge between two corners
@@ -50,7 +51,9 @@ EYE = {'ground': 1.6, 'upper-floor': 5.0, 'roof': 7.5}
 # in metres seen at that distance. Pool outlines were traced from a 0.24 m/px aerial; footprints are
 # registry outlines; an upright edge uses no model geometry at all.
 PICK_SIGMA = 3.0
-MODEL_SIGMA = {'pool': 0.3, 'building': 0.2, 'world': 0.1, 'vertical': 0.0}
+# Traced walls, steps and beds were placed from photos and the aerial, so are trusted less than
+# registry corners; mapped street edges are centre lines plus an approximate width.
+MODEL_SIGMA = {'pool': 0.3, 'building': 0.2, 'world': 0.1, 'vertical': 0.0, 'edge': 0.3, 'road': 0.6}
 ROLL_SIGMA = 5.0
 
 
@@ -109,7 +112,13 @@ def model_index():
     if not MODEL.exists():
         raise SystemExit(f'{MODEL.relative_to(ROOT)} is missing: run node scripts/shoot_views.cjs <photo> --pose first')
     model = json.loads(MODEL.read_text())
+    EXTRA['edges'] = {f['id']: np.array(f['segments'], float).reshape(-1, 6) for f in model.get('features', [])}
+    EXTRA['roads'] = {r['id']: np.array(r['line'], float) for r in model.get('roads', [])}
     return model, {b['id']: b for b in model['buildings']}, {p['id']: p for p in model['pools']}
+
+
+# Traced features and street edges from the export, filled in by model_index().
+EXTRA = {'edges': {}, 'roads': {}}
 
 
 def target(point, buildings, pools):
@@ -127,6 +136,14 @@ def resolve(ref, buildings, pools):
     if kind == 'pool':
         ring = np.array(pools[rest]['ring'], float)
         return 'line', (ring, np.roll(ring, -1, 0))
+    if kind == 'edge':
+        # edge:<feature> is any rendered edge of that feature; edge:<feature>@<k> one segment of it.
+        feature, _, k = rest.partition('@')
+        segments = EXTRA['edges'][feature][[int(k)] if k else slice(None)]
+        return 'line', (segments[:, :3], segments[:, 3:])
+    if kind == 'road':
+        line = EXTRA['roads'][rest]
+        return 'line', (line[:-1], line[1:])
     if kind != 'building':
         raise SystemExit(f'unknown ref {ref}')
     bid, corner, level = rest.rsplit(':', 2)
@@ -136,6 +153,10 @@ def resolve(ref, buildings, pools):
     if level == 'corner':
         i = int(corner)
         return 'line', (np.array([at(i, b['base'])]), np.array([at(i, b['top'])]))
+    if corner == '*':
+        # building:<id>:*:top|base is anywhere on that building's roofline or base.
+        ring = np.array([at(i, height[level]) for i in range(len(b['ring']))])
+        return 'line', (ring, np.roll(ring, -1, 0))
     if '-' in corner:
         i, j = (int(v) for v in corner.split('-'))
         return 'line', (np.array([at(i, height[level])]), np.array([at(j, height[level])]))
@@ -183,6 +204,7 @@ def solve(group):
     # A focal length read from the original's EXIF is held tightly; otherwise a phone main camera is assumed loosely.
     f35_prior, f_sigma = (lenses.pop(), 0.02) if len(lenses) == 1 else (F35_PRIOR, F35_SIGMA)
     pins = [(m['x'], m['z'], max(3.0, 2 * (m.get('accuracy') or 5.0))) for _, _, m in group if 'x' in m]
+    heights = [tuple(record['heightPrior']) for record, _, _ in group if 'heightPrior' in record][:1]
     controls = [[(*t, MODEL_SIGMA[p.get('ref', 'vertical').split(':')[0]]) for t, p in zip(targets, record['points']) if p.get('use', 'control') == 'control']
                 for record, targets, _ in group]
 
@@ -206,6 +228,8 @@ def solve(group):
                 out.append(residual(pose, record['image'], t, px)[0] / sigma)
             out.append(np.array([pose['roll'] / ROLL_SIGMA]))
         out.append(np.array([(vector[3] - math.log(f35_prior)) / f_sigma]))
+        # A measured eye height, e.g. the surveyed roof the photos were taken from plus eye level.
+        out += [np.array([(vector[1] - h) / sigma]) for h, sigma in heights]
         out += [np.array([(vector[0] - x) / sigma, (vector[2] - z) / sigma]) for x, z, sigma in pins]
         return np.concatenate(out)
 
@@ -308,6 +332,22 @@ def command_guide(name, initial):
     for pool in model['pools']:
         for a, b in zip(*project_segments(pose, size, resolve('pool:' + pool['id'], buildings, pools)[1])[:2]):
             draw.line([tuple(a), tuple(b)], fill=(0, 220, 255), width=3)
+    # Traced features (E<n>, any colour) and street edges (R<n>, yellow) within 40 m, labelled on their longest visible segment.
+    lines = [(f'E{n}', 'edge:' + f['id'], f['id']) for n, f in enumerate(model.get('features', []))] + \
+            [(f'R{n}', 'road:' + r['id'], r['id']) for n, r in enumerate(model.get('roads', []))]
+    for code, ref, feature in lines:
+        ua, ub, da, db = project_segments(pose, size, resolve(ref, buildings, pools)[1])
+        keep = (np.maximum(da, db) < 40) & ((np.abs(ua - [size[0] / 2, size[1] / 2]) < size).all(1) | (np.abs(ub - [size[0] / 2, size[1] / 2]) < size).all(1))
+        if not keep.any():
+            continue
+        colour = (255, 230, 0) if code[0] == 'R' else tuple(int(v) for v in np.random.default_rng(abs(hash(feature)) % 2**32).integers(60, 255, 3))
+        for a, b in zip(ua[keep], ub[keep]):
+            draw.line([tuple(a), tuple(b)], fill=colour, width=2)
+        longest = np.argmax(np.where(keep, np.hypot(*(ub - ua).T), -1))
+        mid = (ua[longest] + ub[longest]) / 2
+        if 0 <= mid[0] < size[0] and 0 <= mid[1] < size[1]:
+            legend[code] = ref
+            draw.text(tuple(mid + [4, -8]), code, fill=colour, font=small, stroke_width=2, stroke_fill=(0, 0, 0))
     for n, b in enumerate(model['buildings']):
         for i in range(len(b['ring'])):
             for level, colour in (('top', (255, 40, 40)), ('base', (255, 200, 0))):
@@ -325,12 +365,22 @@ def command_guide(name, initial):
     path = OUT / f"{file_id(name)[:-4]}-guide.jpg"
     image.save(path, quality=90)
     (OUT / f"{file_id(name)[:-4]}-guide.json").write_text(json.dumps(legend, indent=1))
-    print(path.relative_to(ROOT), f'{len(legend)} corners labelled <building>.<corner><t=top|b=base>; refs in', (OUT / f"{file_id(name)[:-4]}-guide.json").relative_to(ROOT))
+    print(path.relative_to(ROOT), f'{len(legend)} labels: <building>.<corner><t=top|b=base>, E<n> traced features, R<n> street edges; refs in', (OUT / f"{file_id(name)[:-4]}-guide.json").relative_to(ROOT))
     # The same labels on a plan, north up, to tell which corner is which.
-    seen = {int(code.split('.')[0]) for code in legend}
+    plan_lines = []
+    seen = {int(code.split('.')[0]) for code in legend if code[0].isdigit()}
+    for code, ref in legend.items():
+        if code[0] in 'ER':
+            ua_ = resolve(ref, buildings, pools)[1]
+            plan_lines += [(code, [(a[0], a[2]), (b[0], b[2])]) for a, b in zip(*ua_)]
     scale, span = 12, 70
     plan = Image.new('RGB', (2 * span * scale, 2 * span * scale), (245, 245, 240))
     pd = ImageDraw.Draw(plan)
+    to_plan = lambda x, z: ((x - pose['x'] + span) * scale, (z - pose['z'] + span) * scale)
+    for code, pts in plan_lines:
+        pd.line([to_plan(*q) for q in pts], fill=(200, 160, 0) if code[0] == 'R' else (120, 60, 160), width=1)
+    for code in {c for c, _ in plan_lines}:
+        pd.text(to_plan(*[pts for c, pts in plan_lines if c == code][0][0]), code, fill=(120, 0, 120) if code[0] == 'E' else (150, 110, 0), font=font(11))
     at = lambda x, z: ((x - pose['x'] + span) * scale, (z - pose['z'] + span) * scale)
     for pool in model['pools']:
         pd.line([at(x, z) for x, _, z in pool['ring'] + pool['ring'][:1]], fill=(0, 160, 220), width=3)

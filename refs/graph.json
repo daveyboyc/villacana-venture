@@ -35514,7 +35514,7 @@
    "kind": "build-task",
    "name": "Elena roof station: make the camera solvable, then trace its facades",
    "priority": 2,
-   "status": "open",
+   "status": "in-progress",
    "verification": "not-applicable",
    "photoVerification": "not-applicable (tooling)",
    "placement": {

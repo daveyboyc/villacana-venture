@@ -47,3 +47,61 @@ hedges at close range.
 
 The starting cameras for IMG_2220 and IMG_2358–2360 are kept in `data/photo_poses.json`
 (unsolved, no matches) so this can resume from here.
+
+## Second attempt (25 October): walls and lane edges in the export
+
+The model export (`exportModel` in `src/photo-camera.ts`) now also carries, as placed in the scene:
+
+- **every rendered edge of the other solid meshes**, grouped by the nearest named object:
+  traced garden and patio walls, gateways, steps, kerbs, beds, terraces and pergolas.
+  That is 1,176 groups, with unnamed meshes numbered in build order.
+- **both edges of every mapped street**, on the walkable ground.
+
+`photo_pose.py` matches them as lines: `edge:<feature>`, `road:<id>:left|right`, and
+`building:<id>:*:top|base` for anywhere on a roofline. `guide` draws them as E<n> and R<n>
+(`IMG_2358-guide-new-refs.jpg`). A photo can also carry `heightPrior` to hold the camera height.
+
+### Matches tried
+
+| Photo | Matches |
+| --- | --- |
+| IMG_2358 | Elena south lane: both paving edges (11 points); the middle pool's near edge at the end of the lane |
+| IMG_2359 | Building 44's parapet line (10 points); two upright facade edges |
+| IMG_2360 | Building 39's parapet line (8 points); both ends of its facade block |
+
+The laser survey gives building 21's roof at the pin as 6.9–7.1 m above the middle-pool deck,
+so the camera height was held at 8.5 ± 0.4 m.
+
+### Result: not stable, nothing traced
+
+As one station the matches fit to 5.6 / 7.2 / 10.5 px. The station still fails:
+
+- **Lens:** the shared lens comes out at 37 mm. These phones shoot at 24–28 mm.
+- **Direction:** IMG_2360 is turned to 131°, although its own solve and its phone compass both say 66–73°.
+- **Single photos:** solved alone, each photo lands 0.5 m (IMG_2358), 4.2 m (IMG_2359) and
+  4.4 m (IMG_2360) from the joint camera. That is outside the 2 m test.
+- **Without the height prior** the joint camera sat at 6.4 m, below the surveyed roof.
+
+The likeliest cause is that the photos were not taken from one spot. They share a GPS pin, but
+the solo solutions are about 4 m apart, which is easy to walk on a roof terrace. The
+anywhere-on-the-roofline matches also make it easy to slide onto the wrong face of a building.
+No parts were traced, and the matches are kept unsolved in `data/photo_poses.json`.
+`station-attempt-IMG_2359-2360.jpg` shows the joint solve: building 44 lines up roughly, and
+building 39 in IMG_2360 does not.
+
+### The roof at the pin
+
+The survey does not confirm a large error there. Building 21's roof around the pin is 6.9–7.1 m
+(model 7.19 m), with one 2 m cell at 3.6 m. That fits a small tiled slope below the upper
+terrace, as the photos show, too small for the survey grid to resolve. No follow-up task.
+
+### What would solve it
+
+Solve each photo on its own, each with more independent matches at several depths, and with
+held-out checks for each photo:
+
+- **IMG_2358:** registry corners and upright edges of the left-hand house.
+- **IMG_2360:** the Cervantes lane edges.
+- **IMG_2359:** upright edges and garden walls.
+
+Or confirm from Dave where on the terrace each photo was taken.
