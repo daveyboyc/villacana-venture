@@ -19,7 +19,10 @@ camera; checks are held out and measure the model. {"vertical": [[u, v], [u, v]]
 pixels on any upright edge (a wall corner, door frame, post): it fixes tilt without any model
 geometry. Photos given the same "station" were taken from one spot and are solved together,
 sharing position and lens. "heightPrior": [y, sigma] on a photo holds the camera's height
-(for instance a surveyed roof plus eye level). A ref names a model point or line:
+(for instance a surveyed roof plus eye level); "regionPrior": {"polygon": [[x, z], ...], "sigma": m}
+keeps it inside an area, such as the roof it was taken from (no pull inside, sigma per metre outside);
+"lensPrior": [f35, fraction] holds the 35 mm-equivalent focal length, for instance from the same phone solved elsewhere.
+A ref names a model point or line:
   building:<id>:<i>:top|base       a footprint corner at roof or ground height
   building:<id>:<i>:corner         the vertical edge at that corner (pixel anywhere on it)
   building:<id>:<i>-<j>:top|base   the footprint edge between two corners
@@ -187,6 +190,20 @@ def residual(pose, size, target, pixel):
     return np.array([distance[k]]), da[k] + (db[k] - da[k]) * t[k]
 
 
+def outside(polygon, x, z):
+    """How far (x, z) lies outside a plan polygon, in metres; 0 inside."""
+    a, b = polygon, np.roll(polygon, -1, 0)
+    inside = False
+    for (x1, z1), (x2, z2) in zip(a, b):
+        if (z1 > z) != (z2 > z) and x < x1 + (z - z1) * (x2 - x1) / (z2 - z1):
+            inside = not inside
+    if inside:
+        return 0.0
+    d = b - a
+    t = np.clip(((x - a[:, 0]) * d[:, 0] + (z - a[:, 1]) * d[:, 1]) / np.maximum((d * d).sum(1), 1e-12), 0, 1)
+    return float(np.min(np.hypot(a[:, 0] + d[:, 0] * t - x, a[:, 1] + d[:, 1] * t - z)))
+
+
 def f_from_f35(f35, size):
     return f35 / DIAGONAL_35 * math.hypot(*size)
 
@@ -201,10 +218,14 @@ def solve(group):
         if sum(1 if t[0] == 'point' else 0.5 for t in controls) < (4 if len(group) == 1 else 3):
             raise SystemExit('need at least four control points per photo, or three at a shared station (a line counts as half)')
     lenses = {m['focal35'] for _, _, m in group if 'focal35' in m}
-    # A focal length read from the original's EXIF is held tightly; otherwise a phone main camera is assumed loosely.
-    f35_prior, f_sigma = (lenses.pop(), 0.02) if len(lenses) == 1 else (F35_PRIOR, F35_SIGMA)
+    # A focal length read from the original's EXIF is held tightly; a "lensPrior": [f35, fraction] on a photo (say, the
+    # same phone solved elsewhere) as given; otherwise a phone main camera is assumed loosely.
+    given = [tuple(record['lensPrior']) for record, _, _ in group if 'lensPrior' in record][:1]
+    f35_prior, f_sigma = (lenses.pop(), 0.02) if len(lenses) == 1 else given[0] if given else (F35_PRIOR, F35_SIGMA)
     pins = [(m['x'], m['z'], max(3.0, 2 * (m.get('accuracy') or 5.0))) for _, _, m in group if 'x' in m]
     heights = [tuple(record['heightPrior']) for record, _, _ in group if 'heightPrior' in record][:1]
+    regions = [(np.array(record['regionPrior']['polygon'], float), record['regionPrior']['sigma'])
+               for record, _, _ in group if 'regionPrior' in record][:1]
     controls = [[(*t, MODEL_SIGMA[p.get('ref', 'vertical').split(':')[0]]) for t, p in zip(targets, record['points']) if p.get('use', 'control') == 'control']
                 for record, targets, _ in group]
 
@@ -230,6 +251,7 @@ def solve(group):
         out.append(np.array([(vector[3] - math.log(f35_prior)) / f_sigma]))
         # A measured eye height, e.g. the surveyed roof the photos were taken from plus eye level.
         out += [np.array([(vector[1] - h) / sigma]) for h, sigma in heights]
+        out += [np.array([outside(polygon, vector[0], vector[2]) / sigma]) for polygon, sigma in regions]
         out += [np.array([(vector[0] - x) / sigma, (vector[2] - z) / sigma]) for x, z, sigma in pins]
         return np.concatenate(out)
 

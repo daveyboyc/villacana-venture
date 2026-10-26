@@ -1501,17 +1501,297 @@
     1200,
     1600
    ],
-   "points": [],
+   "points": [
+    {
+     "pixel": [
+      535,
+      1000
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
+    },
+    {
+     "pixel": [
+      528,
+      1100
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
+    },
+    {
+     "pixel": [
+      522,
+      1200
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
+    },
+    {
+     "pixel": [
+      640,
+      950
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      647,
+      1090
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      656,
+      1240
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      507,
+      450
+     ],
+     "ref": "building:6265601UF1366N_part1:3:corner",
+     "use": "control",
+     "note": "north-west corner of building 39 at the lane (6265601UF1366N_part1 corner 3)"
+    },
+    {
+     "pixel": [
+      508,
+      650
+     ],
+     "ref": "building:6265601UF1366N_part1:3:corner",
+     "use": "control",
+     "note": "north-west corner of building 39 at the lane"
+    },
+    {
+     "vertical": [
+      [
+       410,
+       1040
+      ],
+      [
+       419,
+       1180
+      ]
+     ],
+     "use": "control",
+     "note": "lamp post beside the lane"
+    },
+    {
+     "vertical": [
+      [
+       757,
+       350
+      ],
+      [
+       755,
+       550
+      ]
+     ],
+     "use": "control",
+     "note": "left edge of the tall house across the lawn"
+    },
+    {
+     "vertical": [
+      [
+       650,
+       310
+      ],
+      [
+       650,
+       430
+      ]
+     ],
+     "use": "control",
+     "note": "left edge of the house at the far end of the lane"
+    },
+    {
+     "pixel": [
+      508,
+      389
+     ],
+     "ref": "building:6265601UF1366N_part1:3:top",
+     "use": "check",
+     "note": "roof corner of building 39 above its north-west corner: tests its roof height"
+    }
+   ],
    "initial": {
-    "x": -155.7,
-    "y": 9.0,
+    "x": -157.8,
+    "y": 8.75,
     "z": 51.0,
-    "yaw": 147.9,
-    "pitch": -30.0,
-    "roll": 0.0,
-    "f": 1109.3
+    "yaw": 147.0,
+    "pitch": -24.0,
+    "roll": -2.0,
+    "f": 1239.0
    },
-   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)"
+   "initialBasis": "position from the IMG_2358 solve with the Elena 24 roof prior; aim by eye (same lane view as IMG_2358)",
+   "heightPrior": [
+    8.79,
+    0.3
+   ],
+   "heightPriorBasis": "roof of Elena 24 (east end of 6265201UF1366N_part4), model top 7.19 m, plus 1.6 m eye height; LiDAR puts that roof at 6.9-7.1 m",
+   "regionPrior": {
+    "polygon": [
+     [
+      -154.8,
+      40.4
+     ],
+     [
+      -152.1,
+      44.6
+     ],
+     [
+      -152.5,
+      44.7
+     ],
+     [
+      -150.0,
+      48.7
+     ],
+     [
+      -153.8,
+      51.0
+     ],
+     [
+      -154.2,
+      51.0
+     ],
+     [
+      -157.8,
+      53.1
+     ],
+     [
+      -158.4,
+      52.2
+     ],
+     [
+      -162.0,
+      44.5
+     ]
+    ],
+    "sigma": 0.3,
+    "basis": "Dave (25 Oct 2026): taken from the roof of Elena 24, the east end of registry block 6265201UF1366N_part4 at the lane junction, the end with the door (circled on the game map; phone pins about (-155.7, 50.1)). Polygon is that block's footprint up to its second facade step, about 9 m along the block; possibly different spots on that roof, so each photo is solved alone."
+   },
+   "lensPrior": [
+    26.8,
+    0.03
+   ],
+   "lensPriorBasis": "same phone as the north-pool station IMG_2204-2206, whose three-photo solve gives 26.8 mm-equivalent (originals carry no EXIF here)",
+   "solved": {
+    "pose": {
+     "x": -159.133,
+     "y": 8.655,
+     "z": 50.76,
+     "yaw": 143.113,
+     "pitch": -23.178,
+     "roll": -0.985,
+     "f": 1254.128
+    },
+    "sigma": {
+     "x": 0.566,
+     "y": 0.292,
+     "z": 1.093,
+     "f": 36.465,
+     "yaw": 1.744,
+     "pitch": 2.17,
+     "roll": 0.697
+    },
+    "rmsControlPx": 20.33,
+    "rmsCheckPx": 68.7,
+    "rmsCheckM": 0.76,
+    "residuals": [
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 32.9,
+      "m": 0.38,
+      "depth": 14.6
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 20.1,
+      "m": 0.21,
+      "depth": 12.9
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 6.7,
+      "m": 0.06,
+      "depth": 11.5
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 33.7,
+      "m": 0.42,
+      "depth": 15.5
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 18.0,
+      "m": 0.18,
+      "depth": 12.7
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 37.3,
+      "m": 0.33,
+      "depth": 11.2
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:corner",
+      "use": "control",
+      "px": 11.5,
+      "m": 0.13,
+      "depth": 13.9
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:corner",
+      "use": "control",
+      "px": 1.2,
+      "m": 0.01,
+      "depth": 14.9
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 3.5
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 4.3
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.0
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:top",
+      "use": "check",
+      "px": 68.7,
+      "m": 0.76,
+      "depth": 13.9
+     }
+    ]
+   },
+   "note": "Solved alone with the Elena 24 roof, eye-height and lens priors (26 Oct): +/-0.6 m (x), +/-1.1 m (z), but lane-edge controls miss by up to 37 px (0.4 m) against the building 39 corner, and the held-out roof corner of building 39 sits 0.76 m above the model's (parapet not in the model, or camera height). 1.4 m from IMG_2358. Fails the stability test; nothing traced from it."
   },
   "IMG_2358.jpg": {
    "image": [
@@ -1524,99 +1804,99 @@
       560,
       640
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       573,
       500
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       580,
       340
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       582,
       200
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       585,
       120
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       698,
       640
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       690,
       500
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       683,
       400
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       675,
       300
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       667,
       200
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       663,
       120
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
@@ -1635,12 +1915,122 @@
      "ref": "pool:middle",
      "use": "control",
      "note": "near water edge of the middle pool at the end of the lane"
+    },
+    {
+     "vertical": [
+      [
+       126,
+       126
+      ],
+      [
+       155,
+       267
+      ]
+     ],
+     "use": "control",
+     "note": "left side of the upper window opening, building 39 (house east of the lane)"
+    },
+    {
+     "vertical": [
+      [
+       228,
+       125
+      ],
+      [
+       259,
+       267
+      ]
+     ],
+     "use": "control",
+     "note": "right side of the upper window opening, building 39"
+    },
+    {
+     "vertical": [
+      [
+       476,
+       600
+      ],
+      [
+       499,
+       787
+      ]
+     ],
+     "use": "control",
+     "note": "lamp post beside the lane"
+    },
+    {
+     "vertical": [
+      [
+       508,
+       955
+      ],
+      [
+       528,
+       1125
+      ]
+     ],
+     "use": "control",
+     "note": "right jamb of the garden door below the camera"
+    },
+    {
+     "pixel": [
+      362,
+      990
+     ],
+     "ref": "edge:cervantes-garden-door-door-frame",
+     "use": "check",
+     "note": "left jamb of the garden door below the camera"
+    },
+    {
+     "pixel": [
+      390,
+      1110
+     ],
+     "ref": "edge:cervantes-garden-door-door-frame",
+     "use": "check",
+     "note": "left jamb of the garden door below the camera"
+    },
+    {
+     "pixel": [
+      514,
+      1000
+     ],
+     "ref": "edge:cervantes-garden-door-door-frame",
+     "use": "check",
+     "note": "right jamb of the garden door"
+    },
+    {
+     "pixel": [
+      430,
+      952
+     ],
+     "ref": "edge:cervantes-garden-door-door-frame",
+     "use": "check",
+     "note": "head of the garden door"
+    },
+    {
+     "pixel": [
+      500,
+      20
+     ],
+     "ref": "building:6265601UF1366N_part1:3:corner",
+     "use": "control",
+     "note": "north-west corner of building 39 at the lane (6265601UF1366N_part1 corner 3), as in IMG_2220"
+    },
+    {
+     "pixel": [
+      501,
+      190
+     ],
+     "ref": "building:6265601UF1366N_part1:3:corner",
+     "use": "control",
+     "note": "north-west corner of building 39 at the lane"
     }
    ],
    "initial": {
-    "x": -155.7,
-    "y": 9.0,
-    "z": 50.1,
+    "x": -155.5,
+    "y": 8.79,
+    "z": 47.0,
     "yaw": 147.6,
     "pitch": -50.0,
     "roll": 0.0,
@@ -1648,11 +2038,236 @@
    },
    "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)",
    "heightPrior": [
-    8.5,
-    0.4
+    8.79,
+    0.3
    ],
-   "heightPriorBasis": "building 21 roof at the pin surveyed at 6.9-7.1 m above the middle pool deck (PNOA-LiDAR 2014-15) plus about 1.5 m eye height",
-   "note": "Not solved: as one station the three photos contradict each other (alone they land 0.5, 4.2 and 4.4 m from the joint camera, the joint lens comes out at 37 mm, and IMG_2360 is turned 65 degrees from its own solve and compass). Probably taken from different spots on the roof terrace. See docs/reviews/facade-kit-elena."
+   "heightPriorBasis": "roof of Elena 24 (east end of 6265201UF1366N_part4), model top 7.19 m, plus 1.6 m eye height; LiDAR puts that roof at 6.9-7.1 m",
+   "regionPrior": {
+    "polygon": [
+     [
+      -154.8,
+      40.4
+     ],
+     [
+      -152.1,
+      44.6
+     ],
+     [
+      -152.5,
+      44.7
+     ],
+     [
+      -150.0,
+      48.7
+     ],
+     [
+      -153.8,
+      51.0
+     ],
+     [
+      -154.2,
+      51.0
+     ],
+     [
+      -157.8,
+      53.1
+     ],
+     [
+      -158.4,
+      52.2
+     ],
+     [
+      -162.0,
+      44.5
+     ]
+    ],
+    "sigma": 0.3,
+    "basis": "Dave (25 Oct 2026): taken from the roof of Elena 24, the east end of registry block 6265201UF1366N_part4 at the lane junction, the end with the door (circled on the game map; phone pins about (-155.7, 50.1)). Polygon is that block's footprint up to its second facade step, about 9 m along the block; possibly different spots on that roof, so each photo is solved alone."
+   },
+   "solved": {
+    "pose": {
+     "x": -158.365,
+     "y": 8.744,
+     "z": 49.849,
+     "yaw": 146.645,
+     "pitch": -42.254,
+     "roll": -2.005,
+     "f": 1254.725
+    },
+    "sigma": {
+     "x": 1.642,
+     "y": 0.298,
+     "z": 2.01,
+     "f": 35.814,
+     "yaw": 1.381,
+     "pitch": 1.036,
+     "roll": 0.693
+    },
+    "rmsControlPx": 10.82,
+    "rmsCheckPx": 149.22,
+    "rmsCheckM": 1.27,
+    "residuals": [
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 26.9,
+      "m": 0.3,
+      "depth": 13.9
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 17.2,
+      "m": 0.22,
+      "depth": 16.3
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 13.6,
+      "m": 0.22,
+      "depth": 20.2
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 14.3,
+      "m": 0.29,
+      "depth": 25.2
+     },
+     {
+      "ref": "road:elena-south:left",
+      "use": "control",
+      "px": 13.0,
+      "m": 0.3,
+      "depth": 29.5
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 0.2,
+      "m": 0.0,
+      "depth": 13.5
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 6.3,
+      "m": 0.08,
+      "depth": 16.0
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 8.9,
+      "m": 0.13,
+      "depth": 18.3
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 10.0,
+      "m": 0.17,
+      "depth": 21.3
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 10.6,
+      "m": 0.21,
+      "depth": 25.0
+     },
+     {
+      "ref": "road:elena-south:right",
+      "use": "control",
+      "px": 13.3,
+      "m": 0.31,
+      "depth": 28.9
+     },
+     {
+      "ref": "pool:middle",
+      "use": "control",
+      "px": 2.4,
+      "m": 0.08,
+      "depth": 40.7
+     },
+     {
+      "ref": "pool:middle",
+      "use": "control",
+      "px": 2.2,
+      "m": 0.07,
+      "depth": 40.9
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 6.6
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 1.9
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 2.6
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.5
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 107.8,
+      "m": 0.92,
+      "depth": 10.7
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 230.8,
+      "m": 1.96,
+      "depth": 10.7
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 139.3,
+      "m": 1.18,
+      "depth": 10.6
+     },
+     {
+      "ref": "edge:cervantes-garden-door-door-frame",
+      "use": "check",
+      "px": 69.1,
+      "m": 0.59,
+      "depth": 10.6
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:corner",
+      "use": "control",
+      "px": 7.9,
+      "m": 0.08,
+      "depth": 12.7
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:3:corner",
+      "use": "control",
+      "px": 3.4,
+      "m": 0.04,
+      "depth": 13.9
+     }
+    ]
+   },
+   "lensPrior": [
+    26.8,
+    0.03
+   ],
+   "lensPriorBasis": "same phone as the north-pool station IMG_2204-2206, whose three-photo solve gives 26.8 mm-equivalent (originals carry no EXIF here)",
+   "note": "Solved alone with the Elena 24 roof, eye-height and lens priors (26 Oct): lands on the roof but only to +/-1.6 m (x) and +/-2.0 m (z); 1.4 m from IMG_2220, which shares its viewpoint; held-out garden-door frame 0.6-2.0 m off (rms 1.27 m). Fails the stability test; nothing traced from it. docs/reviews/facade-kit-elena."
   },
   "IMG_2359.jpg": {
    "image": [
@@ -1780,21 +2395,173 @@
     }
    ],
    "initial": {
-    "x": -157.294,
-    "y": 5.736,
-    "z": 51.604,
-    "yaw": 224.4,
-    "pitch": -35.0,
+    "x": -157.7,
+    "y": 8.79,
+    "z": 51.3,
+    "yaw": 212,
+    "pitch": -28,
     "roll": 0.0,
-    "f": 1120.728
+    "f": 1170.0
    },
-   "initialBasis": "position and lens from the coarse IMG_2358 solve; yaw and pitch from the phone and by eye",
+   "initialBasis": "position from the IMG_2358 solve with the Elena 24 roof prior; yaw and pitch from the phone and by eye",
    "heightPrior": [
-    8.5,
-    0.4
+    8.79,
+    0.3
    ],
-   "heightPriorBasis": "building 21 roof at the pin surveyed at 6.9-7.1 m above the middle pool deck (PNOA-LiDAR 2014-15) plus about 1.5 m eye height",
-   "note": "Not solved: as one station the three photos contradict each other (alone they land 0.5, 4.2 and 4.4 m from the joint camera, the joint lens comes out at 37 mm, and IMG_2360 is turned 65 degrees from its own solve and compass). Probably taken from different spots on the roof terrace. See docs/reviews/facade-kit-elena."
+   "heightPriorBasis": "roof of Elena 24 (east end of 6265201UF1366N_part4), model top 7.19 m, plus 1.6 m eye height; LiDAR puts that roof at 6.9-7.1 m",
+   "regionPrior": {
+    "polygon": [
+     [
+      -154.8,
+      40.4
+     ],
+     [
+      -152.1,
+      44.6
+     ],
+     [
+      -152.5,
+      44.7
+     ],
+     [
+      -150.0,
+      48.7
+     ],
+     [
+      -153.8,
+      51.0
+     ],
+     [
+      -154.2,
+      51.0
+     ],
+     [
+      -157.8,
+      53.1
+     ],
+     [
+      -158.4,
+      52.2
+     ],
+     [
+      -162.0,
+      44.5
+     ]
+    ],
+    "sigma": 0.3,
+    "basis": "Dave (25 Oct 2026): taken from the roof of Elena 24, the east end of registry block 6265201UF1366N_part4 at the lane junction, the end with the door (circled on the game map; phone pins about (-155.7, 50.1)). Polygon is that block's footprint up to its second facade step, about 9 m along the block; possibly different spots on that roof, so each photo is solved alone."
+   },
+   "lensPrior": [
+    26.8,
+    0.03
+   ],
+   "lensPriorBasis": "same phone as the north-pool station IMG_2204-2206, whose three-photo solve gives 26.8 mm-equivalent (originals carry no EXIF here)",
+   "solved": {
+    "pose": {
+     "x": -156.53,
+     "y": 8.538,
+     "z": 46.881,
+     "yaw": 214.698,
+     "pitch": -26.383,
+     "roll": -2.84,
+     "f": 1282.744
+    },
+    "sigma": {
+     "x": 6.301,
+     "y": 0.42,
+     "z": 4.708,
+     "f": 62.258,
+     "yaw": 17.519,
+     "pitch": 1.31,
+     "roll": 1.301
+    },
+    "rmsControlPx": 7.7,
+    "rmsCheckPx": null,
+    "rmsCheckM": null,
+    "residuals": [
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 9.4,
+      "m": 0.13,
+      "depth": 17.2
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 0.6,
+      "m": 0.01,
+      "depth": 16.8
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 8.2,
+      "m": 0.11,
+      "depth": 16.4
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 9.8,
+      "m": 0.13,
+      "depth": 16.9
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 3.2,
+      "m": 0.05,
+      "depth": 18.8
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 0.9,
+      "m": 0.01,
+      "depth": 20.3
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 5.6,
+      "m": 0.1,
+      "depth": 22.2
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 1.8,
+      "m": 0.03,
+      "depth": 23.6
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 9.4,
+      "m": 0.26,
+      "depth": 35.3
+     },
+     {
+      "ref": "building:6265801UF1366N_part5:*:top",
+      "use": "control",
+      "px": 10.6,
+      "m": 0.29,
+      "depth": 34.7
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 9.6
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 11.0
+     }
+    ]
+   },
+   "note": "Solved alone with the Elena 24 roof, eye-height and lens priors (26 Oct): +/-6.3 m (x), +/-4.7 m (z), so the roof prior alone places it. Only roofline and upright matches; no registry corner identified with confidence and no held-out check. Fails; nothing traced."
   },
   "IMG_2360.jpg": {
    "image": [
@@ -1904,21 +2671,159 @@
     }
    ],
    "initial": {
-    "x": -157.294,
-    "y": 5.736,
-    "z": 51.604,
-    "yaw": 75.4,
-    "pitch": -25.0,
+    "x": -157.7,
+    "y": 8.79,
+    "z": 51.3,
+    "yaw": 75,
+    "pitch": -25,
     "roll": 0.0,
-    "f": 1120.728
+    "f": 1170.0
    },
-   "initialBasis": "position and lens from the coarse IMG_2358 solve; yaw and pitch from the phone and by eye",
+   "initialBasis": "position from the IMG_2358 solve with the Elena 24 roof prior; yaw and pitch from the phone and by eye",
    "heightPrior": [
-    8.5,
-    0.4
+    8.79,
+    0.3
    ],
-   "heightPriorBasis": "building 21 roof at the pin surveyed at 6.9-7.1 m above the middle pool deck (PNOA-LiDAR 2014-15) plus about 1.5 m eye height",
-   "note": "Not solved: as one station the three photos contradict each other (alone they land 0.5, 4.2 and 4.4 m from the joint camera, the joint lens comes out at 37 mm, and IMG_2360 is turned 65 degrees from its own solve and compass). Probably taken from different spots on the roof terrace. See docs/reviews/facade-kit-elena."
+   "heightPriorBasis": "roof of Elena 24 (east end of 6265201UF1366N_part4), model top 7.19 m, plus 1.6 m eye height; LiDAR puts that roof at 6.9-7.1 m",
+   "regionPrior": {
+    "polygon": [
+     [
+      -154.8,
+      40.4
+     ],
+     [
+      -152.1,
+      44.6
+     ],
+     [
+      -152.5,
+      44.7
+     ],
+     [
+      -150.0,
+      48.7
+     ],
+     [
+      -153.8,
+      51.0
+     ],
+     [
+      -154.2,
+      51.0
+     ],
+     [
+      -157.8,
+      53.1
+     ],
+     [
+      -158.4,
+      52.2
+     ],
+     [
+      -162.0,
+      44.5
+     ]
+    ],
+    "sigma": 0.3,
+    "basis": "Dave (25 Oct 2026): taken from the roof of Elena 24, the east end of registry block 6265201UF1366N_part4 at the lane junction, the end with the door (circled on the game map; phone pins about (-155.7, 50.1)). Polygon is that block's footprint up to its second facade step, about 9 m along the block; possibly different spots on that roof, so each photo is solved alone."
+   },
+   "lensPrior": [
+    26.8,
+    0.03
+   ],
+   "lensPriorBasis": "same phone as the north-pool station IMG_2204-2206, whose three-photo solve gives 26.8 mm-equivalent (originals carry no EXIF here)",
+   "solved": {
+    "pose": {
+     "x": -155.902,
+     "y": 8.875,
+     "z": 52.015,
+     "yaw": 68.574,
+     "pitch": -18.832,
+     "roll": -3.477,
+     "f": 1244.945
+    },
+    "sigma": {
+     "x": 4.467,
+     "y": 0.275,
+     "z": 2.61,
+     "f": 32.93,
+     "yaw": 2.661,
+     "pitch": 0.654,
+     "roll": 1.301
+    },
+    "rmsControlPx": 3.57,
+    "rmsCheckPx": null,
+    "rmsCheckM": null,
+    "residuals": [
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 1.1,
+      "m": 0.04,
+      "depth": 44.2
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 3.1,
+      "m": 0.09,
+      "depth": 35.6
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 0.1,
+      "m": 0.0,
+      "depth": 32.0
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 4.3,
+      "m": 0.09,
+      "depth": 27.4
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 1.8,
+      "m": 0.04,
+      "depth": 25.3
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 0.7,
+      "m": 0.01,
+      "depth": 23.2
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 4.2,
+      "m": 0.07,
+      "depth": 21.7
+     },
+     {
+      "ref": "building:6265601UF1366N_part1:*:top",
+      "use": "control",
+      "px": 7.7,
+      "m": 0.13,
+      "depth": 20.2
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 0.2
+     },
+     {
+      "ref": "vertical",
+      "use": "control",
+      "px": 4.2
+     }
+    ]
+   },
+   "note": "Solved alone with the Elena 24 roof, eye-height and lens priors (26 Oct): +/-4.5 m (x), +/-2.6 m (z). Only roofline and upright matches; no held-out check. Fails; nothing traced."
   }
  }
 }

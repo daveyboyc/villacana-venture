@@ -97,7 +97,8 @@ export function exportModel(scene: THREE.Scene, skeleton: Skeleton, groundY: (x:
     const line: number[][] = [];
     r.points.slice(1).forEach((b, i) => {
       const a = r.points[i], length = Math.hypot(b[0] - a[0], b[1] - a[1]), half = (r.width ?? 4) / 2 * (side === "left" ? 1 : -1);
-      const nx = -(b[1] - a[1]) / length, nz = (b[0] - a[0]) / length;
+      // With +z south, (dz, -dx) points to the left looking along the points.
+      const nx = (b[1] - a[1]) / length, nz = -(b[0] - a[0]) / length;
       for (let t = 0; t <= length; t += 1) {
         const x = a[0] + (b[0] - a[0]) * t / length + nx * half, z = a[1] + (b[1] - a[1]) * t / length + nz * half;
         line.push([round(x), round(standY(x, z)), round(z)]);
