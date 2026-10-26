@@ -881,8 +881,15 @@
   "useFor": [
    "layout",
    "planting",
-   "facades"
-  ]
+   "facades",
+   "materials"
+  ],
+  "note": "26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged.",
+  "looksAt": [
+   -153.7,
+   69.3
+  ],
+  "subject": "Two brown garden doors in the white wall and the tiled approach between Elena south lawns"
  },
  "IMG_2262.jpg": {
   "shows": [
@@ -1893,14 +1900,15 @@
   ],
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials"
   ],
   "looksAt": [
    -145.27,
    71.4
   ],
   "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage",
-  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged."
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged. 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin."
  },
  "IMG_2331.jpg": {
   "shows": [

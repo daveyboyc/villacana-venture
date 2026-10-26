@@ -411,6 +411,30 @@
    "result": "not-comparable",
    "notes": "Corner frame cannot compare this photo. No inferred height change from hedge top. Existing estimated boundary uses consistent vertex ground; source registration remains open.",
    "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "frontage_divisions.json:cervantes-lawn-door-path",
+   "photo": "IMG_2261.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/south-crosspath-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/south-crosspath-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full sources show plain square cross-lawn tiles aligned to Elena lane axes. The existing model approach now shares south-lane UV axes/pitch/phase, without moving the ring/height. Exact junction phase is a consistency choice; uncalibrated elevated model-context view cannot establish physical boundaries, wall/door positions or complete photographic match. Existing south garden-wall/door modelling and registration gaps remain open.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "frontage_divisions.json:cervantes-lawn-door-path",
+   "photo": "IMG_2330.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/south-crosspath-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/south-crosspath-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Full sources show plain square cross-lawn tiles aligned to Elena lane axes. The existing model approach now shares south-lane UV axes/pitch/phase, without moving the ring/height. Exact junction phase is a consistency choice; uncalibrated elevated model-context view cannot establish physical boundaries, wall/door positions or complete photographic match. Existing south garden-wall/door modelling and registration gaps remain open.",
+   "followUp": "elena-register-path-edges"
   }
  ],
  "legacyUnchecked": [

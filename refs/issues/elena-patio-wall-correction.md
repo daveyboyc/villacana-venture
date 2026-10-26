@@ -18,10 +18,12 @@ Task `elena-patio-wall-correction` · area **Calle Elena** · priority P1 · geo
 - `public/photos-ref/IMG_2201.jpg`: Calle Elena north: lane with window grilles and beds (ground — pin ±3.5 m; looks at The first hedged bed and the lane north)
 - `public/photos-ref/IMG_2197.jpg`: Calle Elena north: tiled lane between planted beds (ground — pin ±3.5 m; looks at The second hedged bed and the lane)
 - `public/photos-ref/IMG_2356.jpg`: Cervantes east of Elena: lane beside a plumbago hedge (ground — pin ±4.5 m; looks at Plumbago bed edge and screened patio boundary on Cervantes east of Elena)
+- `public/photos-ref/IMG_2261.jpg`: Cervantes junction: another view of the same terraces (ground — pin ±3.0 m; looks at Two brown garden doors in the white wall and the tiled approach between Elena south lawns)
+- `public/photos-ref/IMG_2330.jpg`: Calle Elena south from the junction, towards the middle pool (ground — pin ±3.4 m; looks at Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage)
 
 ## Build
 
-Recheck full sources, correct door-relative wall heights and photographed front-patio returns, join wall meshes on a consistent surveyed-ground datum; audit patio/path material alignment without inventing concealed floors.
+Recheck full sources, correct door-relative wall heights and photographed front-patio returns, join wall meshes on a consistent surveyed-ground datum; audit patio/path material alignment without inventing concealed floors. Align the existing south cross-lawn approach to its adjoining lane grid/phase, with unchanged surface extent.
 
 ## Do not
 

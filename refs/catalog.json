@@ -2661,9 +2661,10 @@
   "useFor": [
    "layout",
    "planting",
-   "facades"
+   "facades",
+   "materials"
   ],
-  "note": null,
+  "note": "26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -2683,14 +2684,16 @@
    "door_sills.json:elena-bed-door-sill"
   ],
   "looksAt": [
-   -148.9,
-   62.7
+   -153.7,
+   69.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south"
-  ]
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-lawn-door-path",
+   "frontage_divisions.json:cervantes-elena-lawn-2"
+  ],
+  "subject": "Two brown garden doors in the white wall and the tiled approach between Elena south lawns"
  },
  {
   "id": "IMG_2262.jpg",
@@ -4280,9 +4283,10 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials"
   ],
-  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged.",
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged. 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin.",
   "observation": "Looking south along Elena south: a straight square-tiled lane between a hedge and planting on the left and a lawn on the right, white low kerb, pollarded trees, a palm and white terraces at the far end.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1JzEI1BeVCRQI0sxbsWJDt8TOckUmLqIY/view?usp=drivesdk",
@@ -4296,6 +4300,7 @@
   },
   "citedBy": [
    "elena_lane_paving.json:elena-south-three-column",
+   "frontage_divisions.json:cervantes-lawn-door-path",
    "door_sills.json:elena-lawn-door-sill",
    "door_sills.json:elena-bed-door-sill"
   ],

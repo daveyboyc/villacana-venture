@@ -1970,7 +1970,8 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2260.jpg",
-    "IMG_2261.jpg"
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
    ]
   },
   {
@@ -7559,6 +7560,12 @@
   {
    "from": "photo:IMG_2330.jpg",
    "to": "elena_lane_paving.json:elena-south-three-column",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "frontage_divisions.json:cervantes-lawn-door-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

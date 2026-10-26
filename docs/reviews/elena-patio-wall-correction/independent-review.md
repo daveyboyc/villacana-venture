@@ -25,3 +25,18 @@ Reviewed artifact SHA-256 values:
 - `elevated-patios-after.png`: `2bfffba2510ceb87ff8846445811af2bf0c6e3011dbfcb4685a4e0ec0ae23df2`
 - `garden-door-before.png`: `6236a4fae184519ecb52f557ee1bdf2af1a48f50be868fa0f6b9cfb2b666c91f`
 - `garden-door-after.png`: `9c24ce61de38a458b503b3fa024a667c2f41baf5bf34cc08d31c0b7a5ce7ea88`
+
+## Supplemental review: south cross-lawn tile alignment
+
+Reviewed 26 October 2026 against the separate material snapshot `57ee2f000d01bf46f3f96cbacd56e2193c4d1c5e`. The original north-wall review and its snapshot above remain unchanged. Scope here is only `cervantes-lawn-door-path` material/UV and its canonical map pattern.
+
+I reopened full IMG_2261, IMG_2330 and IMG_2358. They support a plain square-tiled approach between the two lawns, aligned with the main lane's square-course axes, with separate white kerbs. The junction is partly hidden/foreshortened, so an exact shared joint phase is not measured from these photos. Sharing the existing lane's model pitch and phase is an explicit consistency choice. The decorated private patio in the foreground of IMG_2358 remains a distinct surface.
+
+I inspected the actual south-crosspath before/after elevated renders and the current canonical map. The old darker, diagonal-to-route tile field is replaced by the same plain square field as the lane. The original path footprint, white kerbs, lawns and other surroundings remain represented in the same positions. The camera eye/target are identical model-context coordinates, not a calibrated source camera. Broader south wall/door discrepancies remain outside this UV correction.
+
+The `frontages.ts` selection targets this one region ID and uses the south Elena UV frame and plain texture. `blueprint.ts` applies the corresponding pattern to that same map region. The diff preserves the existing ring, mesh positions/height and collision inputs; it adds no hidden private floor or decorative inserts. The extended browser check compares the actual crosspath mesh UVs/material with the lane frame and checks its map fill. No remaining blocker was found for this bounded material correction. No placement, measured dimensions/levels, exact source grid origin or whole-photo match is approved.
+
+Supplemental render SHA-256 values:
+
+- `south-crosspath-before.png`: `39a6284bb3000f523b6937e2a9a35fad0be0e12511df6efdfaa77f7424681938`
+- `south-crosspath-after.png`: `95318237b480f6e0aa0d74a529e72b2b05cd8c25f646b13a1762e8f16f0767c9`

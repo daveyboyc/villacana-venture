@@ -529,7 +529,8 @@
     "observations": [
       "South lane retains three straight columns and plain cross-lawn path; white lawn kerbs are low, separate from full-height garden boundaries.",
       "IMG_2358 foreground private patio has decorative tile inserts; do not unify all patio floors with plain public path.",
-      "South garden-wall/door run still needs physical-edge registration under #144 and terminal identity #147; this correction does not invent concealed enclosure returns or replace those gaps."
+      "South garden-wall/door run still needs physical-edge registration under #144 and terminal identity #147; this correction does not invent concealed enclosure returns or replace those gaps.",
+      "Final code check found the existing south cross-lawn approach still used world-axis paving. Its UV/material now use the south lane axes, pitch and model phase; ring/height unchanged. Exact junction phase is a model consistency choice, not measured from the partly obscured source junction."
     ]
   }
 }

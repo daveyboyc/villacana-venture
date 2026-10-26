@@ -16,7 +16,10 @@ Only the first patio floor visibly bounded in IMG_2363 receives a plain square-t
 patch. Its extent fits the existing registry and estimated wall anchors; following
 the existing surveyed ground is a model assumption, not a measured private floor
 level. Its phase is independent of the public lane. The public paths retain three
-straight columns, and the garden spur retains the north lane's phase. The canonical
+straight columns, and the garden spur retains the north lane's phase. The existing
+south cross-lawn approach now shares its adjoining lane's axes, square pitch and
+model phase as well. The source junction is partly obscured: exact phase is a model
+consistency choice, not a measured origin. The canonical
 map now shows the corresponding square patterns on this patio and the spur.
 
 IMG_2261/2330/2358 were also rechecked: south-lane and cross-lawn paving is plain,
@@ -32,6 +35,7 @@ and terminal identity remain in #144/#147.
 - [Elevated before](elevated-patios-before.png) / [after](elevated-patios-after.png):
   full production scene with only the camera overridden by the local render harness.
 - [Garden door before](garden-door-before.png) / [after](garden-door-after.png).
+- [South cross-lawn path before](south-crosspath-before.png) / [after](south-crosspath-after.png); material/UV only, unchanged ring and height.
 - [Independent full-source, code and render review](independent-review.md).
 - [Actual wall, door and join mesh checks](mesh-checks.json).
 - [Before camera records](capture-before.json) / [after records](capture-after.json).
@@ -54,3 +58,7 @@ MDT/2 m MDS products do not resolve these thin walls; raw survey tiles are absen
 from this workspace. Existing derived ground supplies consistent bases, not a new
 wall-height measurement. Placement remains unverified and task #153 stays in
 progress under the repository policy despite provisional delivery.
+
+The independent review pins the north wall snapshot to `f879f907` and the final
+south approach material snapshot to `57ee2f00`; each comparison carries its own
+immutable model revision and render hash. Historical comparisons remain available.
