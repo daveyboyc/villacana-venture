@@ -48,8 +48,8 @@
     29.44
    ],
    [
-    -156.12,
-    26.35
+    -155.95,
+    26.52
    ]
   ],
   "opening": [
@@ -64,7 +64,7 @@
   "evidence": [
    "IMG_2363.jpg"
   ],
-  "trust": "Arched white gateway at the lane's end, crazy paving and the north pool lawn beyond (IMG_2363, looking down from the roof). Opening width and wall height estimated from door and tile sizes. Audit 2026-10-18: IMG_2202 shows the separate private 36/34 entry west of the covered walkway, not this lawn-end feature; its citation is removed. Position/dimensions unchanged and remain estimates."
+  "trust": "Arched white gateway at the lane's end, crazy paving and the north pool lawn beyond (IMG_2363, looking down from the roof). Opening width and wall height estimated from door and tile sizes. Audit 2026-10-18: IMG_2202 shows the separate private 36/34 entry west of the covered walkway, not this lawn-end feature; its citation is removed. Position/dimensions unchanged and remain estimates. Owner correction 26 October: east wing now ends on unchanged registry house corner; lane patio junction uses the same line. This is source-supported topology with estimated plan anchors, not measured placement."
  },
  "walls": [
   {
@@ -72,30 +72,30 @@
    "name": "Elena north · patio wall, east side",
    "points": [
     [
-     -158.52,
-     27.92
+     -158.53269275458544,
+     27.89617935098349
     ],
     [
-     -154.06,
-     35.56
+     -153.69,
+     36.44
     ]
    ],
-   "height": 1.15,
+   "height": 1.85,
    "thickness": 0.2,
    "doors": [
     {
      "at": [
-      -155.5,
-      33.1
+      -155.5629194719012,
+      33.13566316326331
      ],
      "width": 0.9,
-     "height": 1.0
+     "height": 1.8
     }
    ],
    "evidence": [
     "IMG_2363.jpg"
    ],
-   "trust": "White wall between the lane and the private patios in front of the east terrace; brown door in it. Height estimated."
+   "trust": "Full-height lane-facing privacy wall and timber door in IMG_2363, with a raised shaped door head. Height 1.85 m / door 1.8 m estimated from relative door proportions (about 0.2–0.3 m uncertainty), not measured. Gateway junction snapped to the existing return. The short former 0.95 m gap to the window return is closed as estimated frontage continuity: foliage hides the exact connection; it is not source-registered."
   },
   {
    "id": "elena-north-garden-wall",
@@ -150,6 +150,27 @@
     "IMG_2201.jpg"
    ],
    "trust": "Short transverse white wall with a barred dark window faces south along Elena (IMG_2200/2201). Approximate placement against the existing magnolia bed; no unseen enclosure is inferred."
+  },
+  {
+   "id": "elena-north-patio-divider",
+   "name": "Elena north · visible front-patio divider to house",
+   "points": [
+    [
+     -155.9726283171307,
+     32.41282587637534
+    ],
+    [
+     -153.42543481803332,
+     30.966677309145865
+    ]
+   ],
+   "height": 1.85,
+   "thickness": 0.2,
+   "doors": [],
+   "evidence": [
+    "IMG_2363.jpg"
+   ],
+   "trust": "One cross-patio divider is visible above the table and blue tarp in IMG_2363, joining the lane-facing wall to the house frontage. The bounded model fragment is fitted to the unchanged wall and registry face (about 0.5–1 m plan uncertainty); height estimated to match the privacy wall. No repeated concealed partitions are inferred."
   }
  ],
  "beds": [
@@ -391,5 +412,31 @@
   "width": 0.85,
   "height": 1.05,
   "sill": 0.65
+ },
+ "frontPatioFloor": {
+  "id": "elena-north-visible-patio-floor",
+  "name": "Elena north · bounded visible first-patio plain square tiles",
+  "ring": [
+   [
+    -158.53269275458544,
+    27.89617935098349
+   ],
+   [
+    -155.95,
+    26.52
+   ],
+   [
+    -153.42543481803332,
+    30.966677309145865
+   ],
+   [
+    -155.9726283171307,
+    32.41282587637534
+   ]
+  ],
+  "evidence": [
+   "IMG_2363.jpg"
+  ],
+  "trust": "Only the first patio floor visible in IMG_2363, bounded by gateway return, lane wall, one visible divider and house. Plain square tiles align with local frontage; phase is independent of the public lane. Extents are fitted to estimated model walls/unchanged registry, and surveyed-ground draping is a model assumption, not a measured private floor level. Hidden garden-patio floors remain unmodelled."
  }
 }

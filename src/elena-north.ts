@@ -2,6 +2,7 @@ import * as THREE from "three";
 import layout from "../data/elena_north.json";
 import skeleton from "../public/map/skeleton.json";
 import {elenaPavingTexture,applyElenaPavingUv} from "./elena-lane-paving";
+import {groundElenaWall} from "./elena-wall-ground";
 import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import { addSprites, type SpritePlacement } from "./sprites";
@@ -13,6 +14,7 @@ const walls = layout.walls.map((w) => ({ ...w, points: w.points as Vec2[], doors
 export const elenaNorthBeds = layout.beds.map((b) => ({ ...b, ring: b.ring as Vec2[] }));
 export const elenaNorthPlanters = layout.planters.map((p) => ({ ...p, ring: p.ring as Vec2[] }));
 export const elenaGardenPath = layout.gardenPath;
+export const elenaVisiblePatioFloor = layout.frontPatioFloor;
 export const elenaNorthReview = layout.review.ring as Vec2[];
 
 export const inElenaNorthReview = (x: number, z: number): boolean => pointInRing(x, z, elenaNorthReview);
@@ -59,7 +61,7 @@ function wall(scene: THREE.Scene, a: Vec2, b: Vec2, height: number, thickness: n
   const body = slab(a, b, height - 0.05, thickness, plaster);
   const cap = slab(a, b, 0.05, thickness + 0.06, plaster, height - 0.05);
   body.name = cap.name = name;
-  scene.add(body, cap);
+  scene.add(groundElenaWall(body), groundElenaWall(cap));
 }
 
 /** A closed brown timber door drawn on one face of a wall. */
@@ -67,7 +69,22 @@ function door(scene: THREE.Scene, at: Vec2, along: Vec2, side: number, thickness
   const mesh = new THREE.Mesh(new THREE.BoxGeometry(width, height, 0.04), material);
   mesh.position.set(at[0] - along[1] * side * (thickness / 2 + 0.02), height / 2 + 0.02, at[1] + along[0] * side * (thickness / 2 + 0.02));
   mesh.rotation.y = -Math.atan2(along[1], along[0]);
-  scene.add(mesh);
+  mesh.name = "elena-timber-door";
+  scene.add(groundElenaWall(mesh,at));
+}
+
+/** The door heads rise above the ordinary wall with a shallow curved coping. */
+function doorHead(scene:THREE.Scene,at:Vec2,along:Vec2,width:number,height:number,thickness:number,plaster:THREE.Material,name:string):void {
+  const half=width/2+.10,spring=height+.08,rise=.14;
+  const shape=new THREE.Shape();shape.moveTo(-half,0);shape.lineTo(-half,spring);
+  shape.quadraticCurveTo(0,spring+rise*2,half,spring);shape.lineTo(half,0);shape.closePath();
+  const cap=new THREE.Shape();cap.moveTo(-half-.04,spring);cap.quadraticCurveTo(0,spring+rise*2,half+.04,spring);
+  cap.lineTo(half+.04,spring+.055);cap.quadraticCurveTo(0,spring+rise*2+.055,-half-.04,spring+.055);cap.closePath();
+  for(const [profile,depth]of [[shape,thickness],[cap,thickness+.06]] as const){
+    const mesh=new THREE.Mesh(new THREE.ExtrudeGeometry(profile,{depth,bevelEnabled:false,curveSegments:16}).translate(0,0,-depth/2),plaster);
+    mesh.position.set(at[0],0,at[1]);mesh.rotation.y=-Math.atan2(along[1],along[0]);mesh.name=name;
+    mesh.castShadow=mesh.receiveShadow=true;scene.add(groundElenaWall(mesh));
+  }
 }
 
 export function addElenaNorth(scene: THREE.Scene): void {
@@ -90,7 +107,7 @@ export function addElenaNorth(scene: THREE.Scene): void {
   arch.rotation.y = -Math.atan2(along[1], along[0]);
   arch.castShadow = arch.receiveShadow = true;
   arch.name = gateway.id;
-  scene.add(arch);
+  scene.add(groundElenaWall(arch));
   // The garden door in the gateway wall faces the private patio (south side).
   const doorAt: Vec2 = [cross[0] + along[0] * 1.9, cross[1] + along[1] * 1.9];
   door(scene, doorAt, along, 1, gateway.thickness, 0.9, 1.85, timber);
@@ -100,11 +117,7 @@ export function addElenaNorth(scene: THREE.Scene): void {
     const [a, b] = w.points, length = Math.hypot(b[0] - a[0], b[1] - a[1]), dir: Vec2 = [(b[0] - a[0]) / length, (b[1] - a[1]) / length];
     // Doors open onto the lane, on the wall's west face.
     for (const d of w.doors) {
-      if (w.id === "elena-north-garden-wall") {
-        const a: Vec2 = [d.at[0] - dir[0] * (d.width / 2 + 0.10), d.at[1] - dir[1] * (d.width / 2 + 0.10)];
-        const b: Vec2 = [d.at[0] + dir[0] * (d.width / 2 + 0.10), d.at[1] + dir[1] * (d.width / 2 + 0.10)];
-        wall(scene, a, b, d.height + 0.16, w.thickness, plaster, w.id);
-      }
+      doorHead(scene,d.at,dir,d.width,d.height,w.thickness,plaster,w.id);
       door(scene, d.at, dir, 1, w.thickness, d.width, d.height, timber);
     }
   }
@@ -119,7 +132,7 @@ export function addElenaNorth(scene: THREE.Scene): void {
   const windowFace = (offset: number, bottom: number, width: number, height: number, mat: THREE.Material, depth: number) => {
     const at: Vec2 = [win.at[0] + wu[0] * offset - wu[1] * depth, win.at[1] + wu[1] * offset + wu[0] * depth];
     const m = slab([at[0] - wu[0] * width / 2, at[1] - wu[1] * width / 2], [at[0] + wu[0] * width / 2, at[1] + wu[1] * width / 2], height, 0.025, mat, bottom);
-    m.name = "elena-north-barred-window"; scene.add(m);
+    m.name = "elena-north-barred-window"; scene.add(groundElenaWall(m,win.at as Vec2));
   };
   windowFace(0, win.sill, win.width, win.height, dark, returnWall.thickness / 2 + 0.02);
   for (let i = 0; i <= 5; i++) windowFace(-win.width / 2 + win.width * i / 5, win.sill, 0.025, win.height, iron, returnWall.thickness / 2 + 0.12);
@@ -131,6 +144,15 @@ export function addElenaNorth(scene: THREE.Scene): void {
   const lane=skeleton.boundaryReference.roads.find(r=>r.id==="elena-north")!;
   applyElenaPavingUv(paving.geometry,{...lane,points:lane.points as Vec2[]});
   paving.position.y = 0.025; paving.receiveShadow = true; paving.name = elenaGardenPath.id; paving.userData.referenceSurface = true; scene.add(paving);
+
+  // Only the bounded first patio exposed in IMG_2363. Its tile phase is independent
+  // of the public lane; concealed patios behind the magnolia have no floor patch.
+  const patio=elenaVisiblePatioFloor,patioShape=new THREE.Shape(patio.ring.map(([x,z])=>new THREE.Vector2(x,-z)));
+  const patioMesh=new THREE.Mesh(new THREE.ShapeGeometry(patioShape).rotateX(-Math.PI/2),paving.material);
+  const origin=patio.ring[0],a=lane.points[0],b=lane.points[1],length=Math.hypot(b[0]-a[0],b[1]-a[1]);
+  applyElenaPavingUv(patioMesh.geometry,{width:lane.width,points:[origin as Vec2,[origin[0]+(b[0]-a[0])/length*20,origin[1]+(b[1]-a[1])/length*20]]});
+  patioMesh.position.y=.035;patioMesh.name=patio.id;patioMesh.receiveShadow=true;
+  scene.add(groundElenaWall(patioMesh));
 
   // Raised beds: a low white kerb all round, dark soil inside.
   const soil = new THREE.MeshStandardMaterial({ color: "#5a4433", roughness: 1 });

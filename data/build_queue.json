@@ -1921,6 +1921,48 @@
    "owner": "Codex",
    "issue": 151,
    "notes": "Material/UV implementation independently reviewed and delivered provisionally. Original positions/widths/heights remain unverified; task stays in progress under the placement policy, with no verified or reconstruction-complete count increment."
+  },
+  {
+   "id": "elena-patio-wall-correction",
+   "area": "elena",
+   "priority": 1,
+   "kind": "geometry",
+   "title": "Elena: correct front-patio wall heights, joins and paving consistency",
+   "photos": [
+    "IMG_2363.jpg",
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2197.jpg",
+    "IMG_2356.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ],
+   "features": [
+    "elena_north.json:elena-north-patio-east",
+    "elena_north.json:elena-north-gateway",
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-window-return",
+    "elena_east_patios.json:elena-east-patios-west-wall",
+    "elena_east_patios.json:elena-east-patios-cervantes-wall",
+    "elena_north.json:elena-north-patio-divider",
+    "elena_north.json:elena-north-visible-patio-floor",
+    "frontage_divisions.json:cervantes-lawn-door-path"
+   ],
+   "build": "Recheck full sources, correct door-relative wall heights and photographed front-patio returns, join wall meshes on a consistent surveyed-ground datum; audit patio/path material alignment without inventing concealed floors. Align the existing south cross-lawn approach to its adjoining lane grid/phase, with unchanged surface extent.",
+   "avoid": "No repeated guessed partitions, terrain changes, roof-to-ground projection or surveyed placement claims.",
+   "accept": [
+    "Annotated source comparison and independently inspected full photos",
+    "Joined wall/coping meshes and shared collision/map inputs",
+    "Same-camera before/after render evidence, paving consistency and route checks"
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Bounded correction independently reviewed and delivered provisionally: full-height north wall/door, joined visible returns, one divider and finite first-patio plain tile field. Model commit f879f907e141984b1261a9b92ec2ed014ede2329. Hidden 0.95 m frontage continuity, door-relative heights and floor datum remain estimates. Placement gate warnings retained; task remains in progress without fresh measured registration.",
+   "issue": 153
   }
  ]
 }

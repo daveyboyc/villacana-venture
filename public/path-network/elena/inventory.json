@@ -2493,6 +2493,57 @@
  "assessments": [
   {
    "featureIds": [
+    "elena:N01",
+    "elena:N06",
+    "elena:N07",
+    "elena:G01",
+    "elena:N05"
+   ],
+   "image": "elevated-patios-after.png",
+   "imageSha256": "2bfffba2510ceb87ff8846445811af2bf0c6e3011dbfcb4685a4e0ec0ae23df2",
+   "modelRevision": "f879f907e141984b1261a9b92ec2ed014ede2329",
+   "result": "partial",
+   "observation": "Full-height north privacy wall/door, joined gateway return to house and one visible divider now represented. First visible patio uses plain square tiles with independent phase. The short foliage-hidden window-return connection is explicitly estimated.",
+   "limitations": "Uncalibrated model-context camera; door-relative heights, unchanged-model plan anchors and concealed join remain estimates. Existing survey grounds meshes but does not measure private floor/wall heights. No full-photo match, registration or placement approval. Other concealed partitions and south wall/terminal gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context elevated camera",
+   "reviewer": "Codex:elena_independent_review",
+   "label": "Current patio wall correction"
+  },
+  {
+   "featureIds": [
+    "elena:N03",
+    "elena:N04"
+   ],
+   "image": "garden-door-after.png",
+   "imageSha256": "9c24ce61de38a458b503b3fa024a667c2f41baf5bf34cc08d31c0b7a5ce7ea88",
+   "modelRevision": "f879f907e141984b1261a9b92ec2ed014ede2329",
+   "result": "partial",
+   "observation": "Ordinary garden wall and door now share actual vertex/anchor ground; the door has a raised shallow curved coping. Plain square spur tiles retain the north lane grid phase.",
+   "limitations": "Uncalibrated model-context camera; door-relative heights, unchanged-model plan anchors and concealed join remain estimates. Existing survey grounds meshes but does not measure private floor/wall heights. No full-photo match, registration or placement approval. Other concealed partitions and south wall/terminal gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review",
+   "label": "Current patio wall correction"
+  },
+  {
+   "featureIds": [
+    "elena:S01",
+    "elena:S02"
+   ],
+   "image": "south-crosspath-after.png",
+   "imageSha256": "95318237b480f6e0aa0d74a529e72b2b05cd8c25f646b13a1762e8f16f0767c9",
+   "modelRevision": "57ee2f000d01bf46f3f96cbacd56e2193c4d1c5e",
+   "result": "partial",
+   "observation": "Existing cross-lawn approach now uses the plain square field with south-lane axes, pitch and model phase. Original patch ring/height, white kerbs, lawns and decorative private patio fields are unchanged.",
+   "limitations": "Material/UV consistency only. Exact junction phase is partly hidden in sources and is a model consistency choice. Uncalibrated elevated camera; no physical-edge registration, wall/door-layout correction, measured private floor or placement approval. Existing south garden-wall and terminal discrepancies remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated elevated model-context camera",
+   "reviewer": "Codex:elena_independent_review",
+   "label": "Current patio wall correction"
+  },
+  {
+   "featureIds": [
     "elena:N01"
    ],
    "image": "north-lane-context-after.png",
@@ -2504,7 +2555,7 @@
    "followUp": "elena-register-path-edges",
    "cameraStatus": "Uncalibrated model-context first-person camera",
    "reviewer": "Codex:elena_independent_review",
-   "label": "Current material correction: three straight tile columns"
+   "label": "Earlier pinned comparison: Current material correction: three straight tile columns"
   },
   {
    "featureIds": [
@@ -2519,7 +2570,7 @@
    "followUp": "elena-register-path-edges",
    "cameraStatus": "Uncalibrated model-context first-person camera",
    "reviewer": "Codex:elena_independent_review",
-   "label": "Current material correction: three straight tile columns"
+   "label": "Earlier pinned comparison: Current material correction: three straight tile columns"
   },
   {
    "featureIds": [
@@ -2535,7 +2586,7 @@
    "followUp": "elena-register-path-edges",
    "cameraStatus": "Uncalibrated model-context first-person camera",
    "reviewer": "Codex:elena_independent_review",
-   "label": "Current material correction: three straight tile columns"
+   "label": "Earlier pinned comparison: Current material correction: three straight tile columns"
   },
   {
    "featureIds": [
