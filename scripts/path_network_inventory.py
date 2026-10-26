@@ -179,7 +179,11 @@ def load_inventories(root, authored, catalog, features, problems):
                     if image.suffix.lower() not in ('.png','.jpg','.jpeg'):
                         problems.append('path inventory: assessment must use a render image '+str(image)); continue
                     shutil.copyfile(image, target/image.name)
-                label='Earlier pinned comparison; unresolved geometry remains open' if entry.get('additionalAssessments') and comparison_path==entry.get('assessments') else assessment_doc.get('scope','Pinned comparison')
+                label=assessment_doc.get('scope','Pinned comparison')
+                if entry.get('additionalAssessments') and comparison_path==entry.get('assessments'):
+                    label='Earlier pinned comparison; unresolved geometry remains open'
+                elif comparison_path!=comparison_paths[0]:
+                    label='Earlier pinned comparison: '+label
                 assessments.append({**item, 'label':label, **({'image': image.name} if image else {})})
         if assessments_path and assessments_path.is_file() and ids-set(id for item in assessments for id in item.get('featureIds', [])):
             problems.append('path inventory: every component needs an assessment or explicit not-comparable result '+area)

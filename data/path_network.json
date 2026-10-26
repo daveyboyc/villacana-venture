@@ -199,6 +199,7 @@
     "elena:A01": "elena-register-path-edges"
    },
    "additionalAssessments": [
+    "docs/reviews/elena-patio-wall-correction/current-comparisons.json",
     "docs/reviews/elena-path-tiles/current-comparisons.json"
    ]
   }

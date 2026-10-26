@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 373,
+  "features": 375,
   "photosCitedByModel": 100,
-  "modelFeaturesWithPhotoCitations": 118
+  "modelFeaturesWithPhotoCitations": 120
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2322,6 +2322,15 @@
    ]
   },
   {
+   "id": "elena_north.json:elena-north-patio-divider",
+   "name": "Elena north · visible front-patio divider to house",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg"
+   ]
+  },
+  {
    "id": "elena_north.json:elena-north-planter-west",
    "name": "Elena north · planting strip, west side",
    "kind": "reference feature",
@@ -2393,6 +2402,15 @@
     "IMG_2199.jpg",
     "IMG_2200.jpg",
     "IMG_2201.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-visible-patio-floor",
+   "name": "Elena north · bounded visible first-patio plain square tiles",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg"
    ]
   },
   {
@@ -8650,7 +8668,19 @@
   },
   {
    "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-patio-divider",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
    "to": "elena_north.json:elena-north-planter-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-visible-patio-floor",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

@@ -1,0 +1,535 @@
+{
+  "date": "2026-10-26",
+  "baselineRevision": "3326375bd5358103a7b72030947d2b6571abf20b",
+  "frame": "map-metres-east-south",
+  "placementVerified": false,
+  "registration": null,
+  "limits": "Source-visible relationships only. No calibrated camera or metric registration; horizontal endpoints fitted to unchanged existing wall/registry geometry. No measured tolerance or full placement approval.",
+  "sources": [
+    {
+      "photo": "IMG_2363.jpg",
+      "observations": [
+        "Lane wall is a full-height privacy boundary with full-height timber door, not a waist-high wall.",
+        "Gateway-side patio return meets lane wall and house. A further cross-patio divider meets lane wall and house.",
+        "Plain square terracotta patio floor visible at gateway patio; source does not establish uniform grid phase with public lane. Decorated circular table is furniture, not floor pattern."
+      ],
+      "baselineDiscrepancy": "patio wall 1.15m and door 1.0m; no lateral divider. Gateway wing ends ~0.24m from registry house corner; north wall-to-gateway centreline residual ~0.02m."
+    },
+    {
+      "photo": "IMG_2199.jpg",
+      "observations": [
+        "Continuous ordinary garden wall with higher shaped curved door surround.",
+        "One finite approach between hedged beds. Hidden patio floors/partitions cannot be traced."
+      ],
+      "baselineDiscrepancy": "Rectangular door-head block simplifies the curved coping."
+    },
+    {
+      "photo": "IMG_2200.jpg",
+      "observations": [
+        "Garden wall meets transverse barred-shutter wall.",
+        "Plain lane and garden spur use square tiles with continuous alignment; grey aggregate margin."
+      ],
+      "baselineDiscrepancy": "Independent terrain placement may lift adjoining mesh pieces by different ground offsets."
+    },
+    {
+      "photo": "IMG_2201.jpg",
+      "observations": [
+        "Three straight lane tile columns with grey margins, matched plain spur grid.",
+        "Barred shutter return is a solid wall, not a walk-through."
+      ]
+    },
+    {
+      "photo": "IMG_2197.jpg",
+      "observations": [
+        "Garden boundary continues round junction; dense planting obscures some wall tops/ends.",
+        "Do not equate wall top with hedge top."
+      ]
+    },
+    {
+      "photo": "IMG_2356.jpg",
+      "observations": [
+        "Plumbago hedge stands on low white kerb in front of taller garden boundary.",
+        "Lane tiles square to local frontage; no basis to repaint Cervantes from Elena tile count."
+      ]
+    }
+  ],
+  "surveyCheck": {
+    "source": "docs/reviews/lidar-levels/README.md",
+    "groundProduct": "2020–21 MDT 1m, reduced to data/terrain.json 2m grid",
+    "surfaceProduct": "2014–15 MDS/MDT 2m",
+    "result": "Existing survey documents explicitly warn thin parapets/short steps are unresolved. No wall-height observations exist in committed survey report; raw cached tiles absent. Use existing surveyed ground only for shared wall base, not as a privacy-wall-height measurement. Heights remain door-relative estimates."
+  },
+  "proposals": [
+    {
+      "feature": "elena-north-patio-east",
+      "beforeHeight": 1.15,
+      "proposedHeight": 1.85,
+      "beforeDoorHeight": 1.0,
+      "proposedDoorHeight": 1.8,
+      "uncertainty": "about 0.2–0.3m vertically from door proportions, not measured"
+    },
+    {
+      "feature": "elena-north-patio-divider",
+      "proposal": "One photographed cross-patio wall, bounded to lane-wall/registry anchors; no repeated hidden returns.",
+      "uncertainty": "about 0.5–1m in plan from unchanged model anchors; no approved transform."
+    },
+    {
+      "feature": "connected wall mesh bases",
+      "proposal": "Sample shared surveyed ground at actual vertices and door/window anchors so separate midpoint draping cannot create a crack."
+    }
+  ],
+  "finalModelAnchors": {
+    "checkedAt": "2026-10-14",
+    "scope": "Calle Elena north, from the arched gateway onto the north pool lawn to the Cervantes junction. Traced from the 14 October roof photos and the ground photos of 11 October against the registry fronts and the aerial. Positions are approximate (about 0.5-1 m); heights are estimated from the photos, not measured.",
+    "lane": {
+      "street": "elena-north",
+      "from": [
+        -164.75,
+        18.93
+      ],
+      "to": [
+        -145.08,
+        52.69
+      ],
+      "width": 1.45,
+      "evidence": [
+        "IMG_2363.jpg",
+        "IMG_2365.jpg"
+      ],
+      "trust": "Square terracotta lane about 1.4-1.5 m wide between walls and beds (roof photos)."
+    },
+    "review": {
+      "ring": [
+        [
+          -162.15,
+          28.76
+        ],
+        [
+          -147.85,
+          53.3
+        ],
+        [
+          -142.15,
+          49.97
+        ],
+        [
+          -156.45,
+          25.43
+        ]
+      ],
+      "trust": "Generated garden walls, gates and scattered planting are suppressed here; only the traced features below are built."
+    },
+    "gateway": {
+      "id": "elena-north-gateway",
+      "name": "Elena north · arched gateway to the north pool lawn",
+      "points": [
+        [
+          -161.43,
+          29.44
+        ],
+        [
+          -155.95,
+          26.52
+        ]
+      ],
+      "opening": [
+        -0.75,
+        0.75
+      ],
+      "height": 2.0,
+      "archSpring": 1.7,
+      "archCrown": 2.2,
+      "top": 2.55,
+      "thickness": 0.3,
+      "evidence": [
+        "IMG_2363.jpg"
+      ],
+      "trust": "Arched white gateway at the lane's end, crazy paving and the north pool lawn beyond (IMG_2363, looking down from the roof). Opening width and wall height estimated from door and tile sizes. Audit 2026-10-18: IMG_2202 shows the separate private 36/34 entry west of the covered walkway, not this lawn-end feature; its citation is removed. Position/dimensions unchanged and remain estimates. Owner correction 26 October: east wing now ends on unchanged registry house corner; lane patio junction uses the same line. This is source-supported topology with estimated plan anchors, not measured placement."
+    },
+    "walls": [
+      {
+        "id": "elena-north-patio-east",
+        "name": "Elena north · patio wall, east side",
+        "points": [
+          [
+            -158.53269275458544,
+            27.89617935098349
+          ],
+          [
+            -153.69,
+            36.44
+          ]
+        ],
+        "height": 1.85,
+        "thickness": 0.2,
+        "doors": [
+          {
+            "at": [
+              -155.5629194719012,
+              33.13566316326331
+            ],
+            "width": 0.9,
+            "height": 1.8
+          }
+        ],
+        "evidence": [
+          "IMG_2363.jpg"
+        ],
+        "trust": "Full-height lane-facing privacy wall and timber door in IMG_2363, with a raised shaped door head. Height 1.85 m / door 1.8 m estimated from relative door proportions (about 0.2–0.3 m uncertainty), not measured. Gateway junction snapped to the existing return. The short former 0.95 m gap to the window return is closed as estimated frontage continuity: foliage hides the exact connection; it is not source-registered."
+      },
+      {
+        "id": "elena-north-garden-wall",
+        "name": "Elena north · garden wall and closed timber door",
+        "points": [
+          [
+            -151.43,
+            35.13
+          ],
+          [
+            -144.3,
+            47.36
+          ]
+        ],
+        "height": 1.85,
+        "thickness": 0.26,
+        "doors": [
+          {
+            "at": [
+              -144.6318881162498,
+              46.79071645697966
+            ],
+            "width": 0.95,
+            "height": 1.95
+          }
+        ],
+        "evidence": [
+          "IMG_2199.jpg",
+          "IMG_2200.jpg",
+          "IMG_2201.jpg"
+        ],
+        "trust": "White garden wall behind the planted beds, closed timber door at the east end of their intervening path (IMG_2199-2201). Alignment follows existing bed backs; dimensions estimated, not surveyed. Ends at the photographed door surround; no continuation into the patios is claimed."
+      },
+      {
+        "id": "elena-north-window-return",
+        "name": "Elena north · barred window wall at the north end of the bed",
+        "points": [
+          [
+            -153.69,
+            36.44
+          ],
+          [
+            -151.43,
+            35.13
+          ]
+        ],
+        "height": 2.0,
+        "thickness": 0.18,
+        "doors": [],
+        "evidence": [
+          "IMG_2200.jpg",
+          "IMG_2201.jpg"
+        ],
+        "trust": "Short transverse white wall with a barred dark window faces south along Elena (IMG_2200/2201). Approximate placement against the existing magnolia bed; no unseen enclosure is inferred."
+      },
+      {
+        "id": "elena-north-patio-divider",
+        "name": "Elena north · visible front-patio divider to house",
+        "points": [
+          [
+            -155.9726283171307,
+            32.41282587637534
+          ],
+          [
+            -153.42543481803332,
+            30.966677309145865
+          ]
+        ],
+        "height": 1.85,
+        "thickness": 0.2,
+        "doors": [],
+        "evidence": [
+          "IMG_2363.jpg"
+        ],
+        "trust": "One cross-patio divider is visible above the table and blue tarp in IMG_2363, joining the lane-facing wall to the house frontage. The bounded model fragment is fitted to the unchanged wall and registry face (about 0.5–1 m plan uncertainty); height estimated to match the privacy wall. No repeated concealed partitions are inferred."
+      }
+    ],
+    "beds": [
+      {
+        "id": "elena-north-planter-west",
+        "name": "Elena north · planting strip, west side",
+        "ring": [
+          [
+            -160.91,
+            29.65
+          ],
+          [
+            -156.48,
+            37.26
+          ],
+          [
+            -155.32,
+            36.58
+          ],
+          [
+            -159.75,
+            28.98
+          ]
+        ],
+        "kerb": 0.25,
+        "planting": "strip",
+        "evidence": [
+          "IMG_2363.jpg"
+        ],
+        "trust": "Planting along the west houses between their wall and the lane (IMG_2363). Width from the registry front; kerb height estimated. Ends at the covered walkway. Audit 2026-10-18: IMG_2202 shows the separate private 36/34 entry west of the covered walkway, not this lawn-end feature; its citation is removed. Position/dimensions unchanged and remain estimates."
+      },
+      {
+        "id": "elena-north-magnolia-bed",
+        "name": "Elena north · magnolia bed",
+        "ring": [
+          [
+            -153.69,
+            36.44
+          ],
+          [
+            -149.01,
+            44.48
+          ],
+          [
+            -146.75,
+            43.16
+          ],
+          [
+            -151.43,
+            35.13
+          ]
+        ],
+        "kerb": 0.3,
+        "planting": "magnolia",
+        "evidence": [
+          "IMG_2365.jpg",
+          "IMG_2364.jpg",
+          "IMG_2362.jpg"
+        ],
+        "trust": "Raised bed of tall glossy magnolia-like shrubs edged with strap-leaved plants, beside the lane (IMG_2365 from the roof). Extent from the aerial canopy; approximate."
+      },
+      {
+        "id": "elena-north-tree-bed-1",
+        "name": "Elena north · hedged bed with pollarded tree",
+        "ring": [
+          [
+            -148.83,
+            44.78
+          ],
+          [
+            -147.2,
+            47.59
+          ],
+          [
+            -144.94,
+            46.28
+          ],
+          [
+            -146.58,
+            43.47
+          ]
+        ],
+        "kerb": 0.3,
+        "planting": "pollarded",
+        "hedgeBorder": 0.45,
+        "evidence": [
+          "IMG_2365.jpg",
+          "IMG_2199.jpg",
+          "IMG_2200.jpg",
+          "IMG_2201.jpg"
+        ],
+        "trust": "Bed boxed by a clipped hedge with a pollarded tree (IMG_2199-2201 at ground level, IMG_2365 from above). Approximate."
+      },
+      {
+        "id": "elena-north-tree-bed-2",
+        "name": "Elena north · second hedged bed",
+        "ring": [
+          [
+            -146.59,
+            48.63
+          ],
+          [
+            -145.21,
+            51.0
+          ],
+          [
+            -143.12,
+            49.79
+          ],
+          [
+            -144.51,
+            47.41
+          ]
+        ],
+        "kerb": 0.3,
+        "planting": "pollarded",
+        "hedgeBorder": 0.45,
+        "evidence": [
+          "IMG_2197.jpg",
+          "IMG_2198.jpg",
+          "IMG_2200.jpg"
+        ],
+        "trust": "Second hedged bed with a pollarded tree near the Cervantes end. A short path to a garden door runs between the two hedged beds. Approximate."
+      }
+    ],
+    "planters": [
+      {
+        "id": "elena-north-planter-box-1",
+        "name": "Elena north · white planter box",
+        "ring": [
+          [
+            -151.18,
+            46.09
+          ],
+          [
+            -150.9,
+            46.57
+          ],
+          [
+            -150.43,
+            46.29
+          ],
+          [
+            -150.71,
+            45.82
+          ]
+        ],
+        "height": 0.6,
+        "evidence": [
+          "IMG_2201.jpg",
+          "IMG_2198.jpg"
+        ],
+        "trust": "Small white rendered planter box against the west house front (IMG_2201). Size from the 0.4 m tiles; position approximate."
+      },
+      {
+        "id": "elena-north-planter-box-2",
+        "name": "Elena north · white planter box",
+        "ring": [
+          [
+            -150.53,
+            47.22
+          ],
+          [
+            -150.25,
+            47.69
+          ],
+          [
+            -149.77,
+            47.41
+          ],
+          [
+            -150.05,
+            46.94
+          ]
+        ],
+        "height": 0.6,
+        "evidence": [
+          "IMG_2201.jpg",
+          "IMG_2198.jpg"
+        ],
+        "trust": "Second planter box beside the first, under the barred window (IMG_2201). Approximate."
+      }
+    ],
+    "sources": [
+      "IMG_2361.jpg",
+      "IMG_2362.jpg",
+      "IMG_2363.jpg",
+      "IMG_2364.jpg",
+      "IMG_2365.jpg",
+      "IMG_2197.jpg",
+      "IMG_2198.jpg",
+      "IMG_2199.jpg",
+      "IMG_2200.jpg",
+      "IMG_2201.jpg",
+      "IMG_2202.jpg"
+    ],
+    "gardenPath": {
+      "id": "elena-north-garden-door-path",
+      "name": "Elena north · paved approach between the hedged beds",
+      "ring": [
+        [
+          -147.2,
+          47.59
+        ],
+        [
+          -146.59,
+          48.63
+        ],
+        [
+          -144.51,
+          47.41
+        ],
+        [
+          -144.94,
+          46.28
+        ]
+      ],
+      "from_": [
+        -147.48,
+        48.44
+      ],
+      "to": [
+        -144.6318881162498,
+        46.79071645697966
+      ],
+      "evidence": [
+        "IMG_2199.jpg",
+        "IMG_2200.jpg",
+        "IMG_2201.jpg"
+      ],
+      "trust": "Terracotta spur visible between the two hedge-edged beds in IMG_2200/2201. Uses the existing bed edges; the path stays open up to the photographed closed door."
+    },
+    "gardenWindow": {
+      "wall": "elena-north-window-return",
+      "at": [
+        -152.56,
+        35.785
+      ],
+      "width": 0.85,
+      "height": 1.05,
+      "sill": 0.65
+    },
+    "frontPatioFloor": {
+      "id": "elena-north-visible-patio-floor",
+      "name": "Elena north · bounded visible first-patio plain square tiles",
+      "ring": [
+        [
+          -158.53269275458544,
+          27.89617935098349
+        ],
+        [
+          -155.95,
+          26.52
+        ],
+        [
+          -153.42543481803332,
+          30.966677309145865
+        ],
+        [
+          -155.9726283171307,
+          32.41282587637534
+        ]
+      ],
+      "evidence": [
+        "IMG_2363.jpg"
+      ],
+      "trust": "Only the first patio floor visible in IMG_2363, bounded by gateway return, lane wall, one visible divider and house. Plain square tiles align with local frontage; phase is independent of the public lane. Extents are fitted to estimated model walls/unchanged registry, and surveyed-ground draping is a model assumption, not a measured private floor level. Hidden garden-patio floors remain unmodelled."
+    }
+  },
+  "additionalPhotoAudit": {
+    "sources": [
+      "IMG_2261.jpg",
+      "IMG_2330.jpg",
+      "IMG_2358.jpg"
+    ],
+    "observations": [
+      "South lane retains three straight columns and plain cross-lawn path; white lawn kerbs are low, separate from full-height garden boundaries.",
+      "IMG_2358 foreground private patio has decorative tile inserts; do not unify all patio floors with plain public path.",
+      "South garden-wall/door run still needs physical-edge registration under #144 and terminal identity #147; this correction does not invent concealed enclosure returns or replace those gaps."
+    ]
+  }
+}

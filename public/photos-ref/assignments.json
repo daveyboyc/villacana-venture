@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 373,
+  "features": 375,
   "photosCitedByModel": 100,
-  "modelFeaturesWithPhotoCitations": 118
+  "modelFeaturesWithPhotoCitations": 120
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5698,7 +5698,9 @@
    "citedBy": [
     "elena_north.json:elena-north-gateway",
     "elena_north.json:elena-north-patio-east",
-    "elena_north.json:elena-north-planter-west"
+    "elena_north.json:elena-north-patio-divider",
+    "elena_north.json:elena-north-planter-west",
+    "elena_north.json:elena-north-visible-patio-floor"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {

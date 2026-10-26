@@ -1,0 +1,32 @@
+{
+  "samples": [
+    {
+      "id": "elena-north-patio-east",
+      "relativeTop": 1.8499999981486068
+    },
+    {
+      "id": "elena-north-garden-wall",
+      "relativeTop": 1.8500000082215409
+    },
+    {
+      "id": "elena-north-window-return",
+      "relativeTop": 1.9999999857642412
+    },
+    {
+      "id": "elena-north-patio-divider",
+      "relativeTop": 1.849999992316242
+    },
+    {
+      "id": "elena-east-patios-west-wall",
+      "relativeTop": 1.8500000174722069
+    },
+    {
+      "id": "elena-east-patios-cervantes-wall",
+      "relativeTop": 1.9000000135969475
+    }
+  ],
+  "joinedVertices": 6,
+  "doorsVisible": true,
+  "sharedGroundAppliedOnce": true,
+  "visiblePatioFloor": true
+}

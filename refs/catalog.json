@@ -602,7 +602,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: distinguish low planted-bed kerb from taller privacy enclosure; hedge tops cannot set wall heights.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -690,9 +690,10 @@
   "viewpoint": "ground",
   "useFor": [
    "planting",
-   "layout"
+   "layout",
+   "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: ordinary garden wall has a raised curved coping above the full-height timber door; no visible hidden private floor bounds.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -736,9 +737,10 @@
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "planting"
+   "planting",
+   "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: garden wall meets barred-window return; plain square lane/spur tiles and separate grey aggregate margins.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -785,7 +787,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: three straight columns of plain square tiles; matching grid alignment into the existing garden-door spur. Barred-window return is solid.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -1139,9 +1141,10 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "elena_north.json:elena-north-patio-divider",
+   "elena_north.json:elena-north-visible-patio-floor",
    "elena_north.json:elena-north-patio-east",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ]
  },
  {
@@ -5219,7 +5222,7 @@
    "layout",
    "planting"
   ],
-  "note": null,
+  "note": "26 October recheck: low rendered plumbago-bed edge is distinct from taller screened enclosure behind it. The source supports a local frontage, not all hidden wall heights. looksAt is approximate existing-model context only, not registered subject placement.",
   "observation": "Looking north-east along Cervantes east of the Elena junction: a square-tiled lane with a low white kerb wall, a tall plumbago and shrub hedge on the left, patches of sun through trees.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1LXG5DLGjL6Mt4AXG10HTYHp7-YQZnALg/view?usp=drivesdk",
@@ -5236,16 +5239,16 @@
    "elena_east_patios.json:elena-east-patios-cervantes-wall"
   ],
   "looksAt": [
-   -148.9,
-   47.9
+   -141.0,
+   47.95
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-planter-box-2",
-   "elena_north.json:elena-north-tree-bed-1"
-  ]
+   "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "street:cervantes"
+  ],
+  "subject": "Plumbago bed edge and screened patio boundary on Cervantes east of Elena"
  },
  {
   "id": "IMG_2358.jpg",
@@ -5477,9 +5480,10 @@
   "viewpoint": "roof",
   "useFor": [
    "layout",
-   "planting"
+   "planting",
+   "materials"
   ],
-  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361.",
+  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. 26 October patio recheck: full-height lane privacy wall and timber door, gateway return meeting house, one visible cross-patio divider, and plain square first-patio tiles. Circular decorated object is a table, not a floor inset. Coordinates/heights remain model estimates; hidden joins and other partitions unresolved.",
   "observation": "Looking almost straight down from a roof edge, north-north-west: a narrow square-tiled terracotta lane between white walls with a planted strip, private patios behind low walls with brown doors, and an arched white garden gateway with bougainvillea that opens onto crazy paving and the north pool lawn (bollard lights, palm, tree). Shows how the Elena north lane meets the north pool courtyard.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1ynufkQ9UxBR_MwF8fvJc4Kdlnasmsdxx/view?usp=drivesdk",
@@ -5494,7 +5498,9 @@
   "citedBy": [
    "elena_north.json:elena-north-gateway",
    "elena_north.json:elena-north-patio-east",
-   "elena_north.json:elena-north-planter-west"
+   "elena_north.json:elena-north-patio-divider",
+   "elena_north.json:elena-north-planter-west",
+   "elena_north.json:elena-north-visible-patio-floor"
   ],
   "looksAt": [
    -159.3,

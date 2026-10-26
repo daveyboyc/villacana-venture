@@ -339,6 +339,78 @@
    "result": "not-comparable",
    "notes": "Owner-confirmed three straight columns and grey margins are represented in the current model-context render; the previous diagonal grid is removed. This is an uncalibrated model-context camera, not a registered photo-camera comparison; path width, ground-wall placement, hidden extents and existing floor/player-height differences remain unresolved. No whole-photo match or placement approval is asserted.",
    "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "elena_north.json:elena-north-patio-east",
+   "photo": "IMG_2363.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/elevated-patios-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/elevated-patios-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Elevated model-context view shows corrected full-height lane wall, gateway return, one divider and finite plain-tile first patio. No calibrated photo camera; plan anchors/height and hidden join remain estimated.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "elena_north.json:elena-north-garden-wall",
+   "photo": "IMG_2199.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/garden-door-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/garden-door-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Shaped curved door coping is represented and wall/door base joins checked. Model-context camera does not establish full-photo match or measured heights.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "elena_north.json:elena-north-window-return",
+   "photo": "IMG_2200.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/north-join-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/north-join-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Near-wall context is occluded and cannot compare full photographic form. Source-visible garden/window connection is documented separately; actual mesh/ground tests verify joins only.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "elena_north.json:elena-north-garden-door-path",
+   "photo": "IMG_2201.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/garden-door-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/garden-door-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Garden spur retains plain square grid aligned/phase-shared with public lane; source camera remains uncalibrated.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "elena_east_patios.json:elena-east-patios-west-wall",
+   "photo": "IMG_2197.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/cervantes-corner-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/cervantes-corner-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Corner model-context frame is occluded; no photograph match. Full source distinguishes low kerb from privacy wall; shared-ground mesh continuity checked separately.",
+   "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "elena-patio-wall-correction",
+   "feature": "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "photo": "IMG_2356.jpg",
+   "before": "docs/reviews/elena-patio-wall-correction/cervantes-corner-before.png",
+   "render": "docs/reviews/elena-patio-wall-correction/cervantes-corner-after.png",
+   "checked": "2026-10-26",
+   "by": "Codex",
+   "result": "not-comparable",
+   "notes": "Corner frame cannot compare this photo. No inferred height change from hedge top. Existing estimated boundary uses consistent vertex ground; source registration remains open.",
+   "followUp": "elena-register-path-edges"
   }
  ],
  "legacyUnchecked": [
