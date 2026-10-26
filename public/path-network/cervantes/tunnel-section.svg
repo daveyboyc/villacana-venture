@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1150" role="img" aria-label="Cervantes source-relative observations"><style>text{font-family:Arial,sans-serif;fill:#26352e}.title{font-size:28px;font-weight:bold}.h{font-size:20px;font-weight:bold}.t{font-size:16px}.small{font-size:14px}.edge{stroke:#ad4775;stroke-width:5;fill:none}.unknown{stroke:#397992;stroke-width:3;stroke-dasharray:8 6;fill:none}.context{stroke:#999;stroke-width:4;stroke-dasharray:12 7;fill:none}</style><rect width="100%" height="100%" fill="#f7f3e9"/>
+<text x="35" y="45" class="title">Cervantes · source-relative sections and distinctions</text>
+<text x="35" y="77" class="t">Schematic form/order from photos only · no measured dimensions, heights or world portal placement</text>
+<rect x="35" y="112" width="690" height="450" rx="6" fill="#fff" stroke="#b7b1a3"/>
+<text x="53" y="145" class="h">J01 shared-route transition</text>
+<text x="53" y="175" class="t">IMG_2286 / 2355 / 2328: ramp beside THREE route treads</text>
+<path d="M80 447H183V390H277V333H375V276H636" fill="none" stroke="#ac7653" stroke-width="9"/><path d="M80 481L375 309H636" fill="none" stroke="#526e80" stroke-width="5"/>
+<text x="92" y="466" class="small">foot drain</text>
+<text x="244" y="416" class="small">three route tread rises</text>
+<text x="399" y="330" class="small">smooth adjacent ramp</text>
+<text x="55" y="515" class="small">Total rise is not solved: existing photo interpretation and survey differ.</text>
+<text x="55" y="540" class="small">This is not an instruction to change levels or infer another stair.</text>
+<rect x="755" y="112" width="710" height="450" rx="6" fill="#fff" stroke="#b7b1a3"/>
+<text x="775" y="145" class="h">J03 private garden entrance</text>
+<text x="775" y="175" class="t">IMG_2196 / 2287 / 2327: TWO projecting treads + raised sill</text>
+<path d="M795 460H916V404H1004V347H1082V320H1195" fill="none" stroke="#ad7652" stroke-width="9"/>
+<rect x="1086" y="224" width="107" height="97" rx="6" fill="#805339" stroke="#b7b1a3"/>
+<path d="M1070 223Q1136 175 1208 223" stroke="#999" fill="none" stroke-width="9"/>
+<text x="801" y="491" class="small">shared lower paving</text>
+<text x="915" y="427" class="small">tread 1</text>
+<text x="993" y="372" class="small">tread 2</text>
+<text x="1199" y="329" class="small">raised sill</text>
+<text x="779" y="515" class="small">Closed garden door / containing bed wall are separate from the route flight.</text>
+<text x="779" y="540" class="small">Hidden patio, exact tread/riser dimensions and usable clearance unresolved.</text>
+<rect x="35" y="595" width="1430" height="480" rx="6" fill="#fff" stroke="#b7b1a3"/>
+<text x="54" y="630" class="h">T01–T07 · CALLE MIGUEL interior (IMG_2288)</text>
+<text x="54" y="660" class="t">Unfolded components: doors are on opposite walls. No barrel vault, world host or reverse connection is inferred.</text>
+<path d="M110 982V749H1355V982" stroke="#aa9279" stroke-width="10" fill="#f6e8d7"/><path d="M1020 976V860Q1120 710 1220 860V976" fill="#dbebd1" stroke="#a88e72" stroke-width="6"/>
+<text x="304" y="786" class="h">Flat ceiling</text>
+<text x="1023" y="815" class="small">visible far arch</text>
+<rect x="230" y="829" width="100" height="145" rx="6" fill="#805337" stroke="#b7b1a3"/>
+<rect x="610" y="831" width="100" height="143" rx="6" fill="#805337" stroke="#b7b1a3"/>
+<path d="M280 829V974M660 831V974" stroke="#d7bf9d" stroke-width="2"/>
+<rect x="830" y="859" width="56" height="99" rx="6" fill="#55615c" stroke="#b7b1a3"/>
+<rect x="432" y="956" width="130" height="18" rx="6" fill="#95958a" stroke="#b7b1a3"/>
+<text x="364" y="1010" class="small">door sets / inset / farther window are source components, not metric positions</text>
+<text x="62" y="1048" class="small">Private source snapshots stay private. Both portal map points remain null until source identity and registration are supported.</text>
+</svg>

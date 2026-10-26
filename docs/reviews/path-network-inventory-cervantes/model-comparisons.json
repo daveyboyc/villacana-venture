@@ -1,0 +1,403 @@
+{
+ "scope": "Pinned Cervantes inventory model-context assessments; all30 rows accounted; no placement approval or calibrated match.",
+ "assessments": [
+  {
+   "featureIds": [
+    "cervantes:W01"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "differs",
+   "observation": "Current model shows a regular tiled lane between simplified wall/lawn/building edges. Source has aggregate margins, finite planted wall fragments and detailed plinth/grille projections. This context does not locate the exact photographed frontage or establish width, wall ends or detailed visibility. The apron/crossing uses a diagonal grid while the photographed open apron shows straight square courses; this is an appearance/coverage observation, not a measured angle.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "west-lane-context.png",
+   "imageSha256": "1453f25a9ccabb295234562da60f57f87305986645ed76eca987322e40339aaf"
+  },
+  {
+   "featureIds": [
+    "cervantes:W02"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current model shows a regular tiled lane between simplified wall/lawn/building edges. Source has aggregate margins, finite planted wall fragments and detailed plinth/grille projections. This context does not locate the exact photographed frontage or establish width, wall ends or detailed visibility.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "west-lane-context.png",
+   "imageSha256": "1453f25a9ccabb295234562da60f57f87305986645ed76eca987322e40339aaf"
+  },
+  {
+   "featureIds": [
+    "cervantes:W03"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current model shows a regular tiled lane between simplified wall/lawn/building edges. Source has aggregate margins, finite planted wall fragments and detailed plinth/grille projections. This context does not locate the exact photographed frontage or establish width, wall ends or detailed visibility.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "west-lane-context.png",
+   "imageSha256": "1453f25a9ccabb295234562da60f57f87305986645ed76eca987322e40339aaf"
+  },
+  {
+   "featureIds": [
+    "cervantes:W04"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "differs",
+   "observation": "Current game shows a tiled crossing continuing across the asphalt toward schematic fence/tree context. The source shows a finite near-side apron, inset grate, shaped planter/service end, wall plaque and hedge across the road. The framing does not verify the service/grate or plaque positions, nor the far-side connection.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "dali-exit-context.png",
+   "imageSha256": "2c1f48cb74ed81f342d63af513b73a4cf92f29082575b70387fcd284a079f229"
+  },
+  {
+   "featureIds": [
+    "cervantes:W05"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game shows a tiled crossing continuing across the asphalt toward schematic fence/tree context. The source shows a finite near-side apron, inset grate, shaped planter/service end, wall plaque and hedge across the road. The framing does not verify the service/grate or plaque positions, nor the far-side connection.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "dali-exit-context.png",
+   "imageSha256": "2c1f48cb74ed81f342d63af513b73a4cf92f29082575b70387fcd284a079f229"
+  },
+  {
+   "featureIds": [
+    "cervantes:W06"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game shows a tiled crossing continuing across the asphalt toward schematic fence/tree context. The source shows a finite near-side apron, inset grate, shaped planter/service end, wall plaque and hedge across the road. The framing does not verify the service/grate or plaque positions, nor the far-side connection.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "dali-exit-context.png",
+   "imageSha256": "2c1f48cb74ed81f342d63af513b73a4cf92f29082575b70387fcd284a079f229"
+  },
+  {
+   "featureIds": [
+    "cervantes:W07"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game shows a tiled crossing continuing across the asphalt toward schematic fence/tree context. The source shows a finite near-side apron, inset grate, shaped planter/service end, wall plaque and hedge across the road. The framing does not verify the service/grate or plaque positions, nor the far-side connection.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "dali-exit-context.png",
+   "imageSha256": "2c1f48cb74ed81f342d63af513b73a4cf92f29082575b70387fcd284a079f229"
+  },
+  {
+   "featureIds": [
+    "cervantes:J01"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "partial",
+   "observation": "The game visibly represents the paired ramp/three-route-tread arrangement, foot grate, private-door side and planted bed/lawn context. These are distinct authored objects. Source noses/margins/vegetation and exact relative registration remain unresolved; software/semantic representation does not resolve photo-versus-survey height conflict.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "elena-level-clearance-survey",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "junction-context.png",
+   "imageSha256": "2a01bf2120ddb518fe7ed526d00763a601c0c7851a1fe7807fac28dd4515a332"
+  },
+  {
+   "featureIds": [
+    "cervantes:J02"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "partial",
+   "observation": "The game visibly represents the paired ramp/three-route-tread arrangement, foot grate, private-door side and planted bed/lawn context. These are distinct authored objects. Source noses/margins/vegetation and exact relative registration remain unresolved; software/semantic representation does not resolve photo-versus-survey height conflict.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "junction-context.png",
+   "imageSha256": "2a01bf2120ddb518fe7ed526d00763a601c0c7851a1fe7807fac28dd4515a332"
+  },
+  {
+   "featureIds": [
+    "cervantes:J03"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "partial",
+   "observation": "Current model has a closed brown garden door with shaped coping and a separate private approach; it is not a through-route opening. The two projecting source treads plus raised sill require specific level comparison; the uncalibrated view cannot certify complete tread/sill rise, measured proportions or world position.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "elena-level-clearance-survey",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "door-steps-context.png",
+   "imageSha256": "a1ad21a269f7debb3cba339260545c27f6c5b56761d93b0f0667d1eae72bf3cc"
+  },
+  {
+   "featureIds": [
+    "cervantes:J04"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "partial",
+   "observation": "The game visibly represents the paired ramp/three-route-tread arrangement, foot grate, private-door side and planted bed/lawn context. These are distinct authored objects. Source noses/margins/vegetation and exact relative registration remain unresolved; software/semantic representation does not resolve photo-versus-survey height conflict.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "junction-context.png",
+   "imageSha256": "2a01bf2120ddb518fe7ed526d00763a601c0c7851a1fe7807fac28dd4515a332"
+  },
+  {
+   "featureIds": [
+    "cervantes:J05"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current junction context retains the Elena lawns and lower garden-wall/upper-house distinction. This camera does not reproduce the elevated source views or expose the complete cross-lawn spur; do not convert contextual coverage into physical edge registration.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "junction-context.png",
+   "imageSha256": "2a01bf2120ddb518fe7ed526d00763a601c0c7851a1fe7807fac28dd4515a332"
+  },
+  {
+   "featureIds": [
+    "cervantes:J06"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current junction context retains the Elena lawns and lower garden-wall/upper-house distinction. This camera does not reproduce the elevated source views or expose the complete cross-lawn spur; do not convert contextual coverage into physical edge registration.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "junction-context.png",
+   "imageSha256": "2a01bf2120ddb518fe7ed526d00763a601c0c7851a1fe7807fac28dd4515a332"
+  },
+  {
+   "featureIds": [
+    "cervantes:E01"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game has a narrow route between a planted/house side and a tall white garden-wall frontage, with distant modeled connections. Source shows partly screened low bed edge, separate enclosure, trained climbers, finite wall/door/pergola and a red grooved side strip. This frame does not verify each component or identify the concealed eastern terminal.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "east-lane-context.png",
+   "imageSha256": "63a5986b02460d4adbef2f5a22e5e36f77a256e720c94440cb01053455dc3e0e"
+  },
+  {
+   "featureIds": [
+    "cervantes:E02"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game has a narrow route between a planted/house side and a tall white garden-wall frontage, with distant modeled connections. Source shows partly screened low bed edge, separate enclosure, trained climbers, finite wall/door/pergola and a red grooved side strip. This frame does not verify each component or identify the concealed eastern terminal.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "east-lane-context.png",
+   "imageSha256": "63a5986b02460d4adbef2f5a22e5e36f77a256e720c94440cb01053455dc3e0e"
+  },
+  {
+   "featureIds": [
+    "cervantes:E03"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game has a narrow route between a planted/house side and a tall white garden-wall frontage, with distant modeled connections. Source shows partly screened low bed edge, separate enclosure, trained climbers, finite wall/door/pergola and a red grooved side strip. This frame does not verify each component or identify the concealed eastern terminal.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "east-lane-context.png",
+   "imageSha256": "63a5986b02460d4adbef2f5a22e5e36f77a256e720c94440cb01053455dc3e0e"
+  },
+  {
+   "featureIds": [
+    "cervantes:E04"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game has a narrow route between a planted/house side and a tall white garden-wall frontage, with distant modeled connections. Source shows partly screened low bed edge, separate enclosure, trained climbers, finite wall/door/pergola and a red grooved side strip. This frame does not verify each component or identify the concealed eastern terminal.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "east-lane-context.png",
+   "imageSha256": "63a5986b02460d4adbef2f5a22e5e36f77a256e720c94440cb01053455dc3e0e"
+  },
+  {
+   "featureIds": [
+    "cervantes:E05"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game has a narrow route between a planted/house side and a tall white garden-wall frontage, with distant modeled connections. Source shows partly screened low bed edge, separate enclosure, trained climbers, finite wall/door/pergola and a red grooved side strip. This frame does not verify each component or identify the concealed eastern terminal.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "east-lane-context.png",
+   "imageSha256": "63a5986b02460d4adbef2f5a22e5e36f77a256e720c94440cb01053455dc3e0e"
+  },
+  {
+   "featureIds": [
+    "cervantes:E06"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Current game has a narrow route between a planted/house side and a tall white garden-wall frontage, with distant modeled connections. Source shows partly screened low bed edge, separate enclosure, trained climbers, finite wall/door/pergola and a red grooved side strip. This frame does not verify each component or identify the concealed eastern terminal.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root",
+   "image": "east-lane-context.png",
+   "imageSha256": "63a5986b02460d4adbef2f5a22e5e36f77a256e720c94440cb01053455dc3e0e"
+  },
+  {
+   "featureIds": [
+    "cervantes:R01"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Roof/upper-patio source cannot be matched to these uncalibrated ground-context views. Existing model-data IDs identify partial patio partitions or a bounded patio where listed, but no complete roof-to-ground registration or current roof-camera visual match is asserted.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:R02"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Roof/upper-patio source cannot be matched to these uncalibrated ground-context views. Existing model-data IDs identify partial patio partitions or a bounded patio where listed, but no complete roof-to-ground registration or current roof-camera visual match is asserted.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:R03"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Roof/upper-patio source cannot be matched to these uncalibrated ground-context views. Existing model-data IDs identify partial patio partitions or a bounded patio where listed, but no complete roof-to-ground registration or current roof-camera visual match is asserted.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T01"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T02"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T03"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T04"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T05"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T06"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:T07"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "IMG2288 CALLE MIGUEL interior has no identified world host or registered camera/portal pair in this audit. No existing tunnel screenshot is substituted for it. Source components are inventoried, but source-to-game comparison remains not-comparable; do not build or merge a guessed passage.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-identify-miguel-passage",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  },
+  {
+   "featureIds": [
+    "cervantes:A01"
+   ],
+   "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+   "result": "not-comparable",
+   "observation": "Actual maps/aerial provide ordering and roof/ground context. No held-out source-to-world registration or model-footprint match is supplied by this inventory.",
+   "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
+   "followUp": "cervantes-register-edges",
+   "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",
+   "reviewer": "Codex root"
+  }
+ ]
+}
