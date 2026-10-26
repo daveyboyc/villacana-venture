@@ -77,7 +77,7 @@ def features(s):
     for tree in junction['trees']:
         add('junction_lawns.json:'+tree['id'],tree['name'],'reference feature','authored photo/map interpretation',evidence=tree['evidence'],points=[tree['point']])
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
-    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters'],elena['gardenPath']]:
+    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters'],elena['gardenPath'],elena['frontPatioFloor']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
     sw=json.loads((ROOT/'data/middle_pool_sw_gateway.json').read_text())
     fl=json.loads((ROOT/'data/middle_pool_steps.json').read_text());L=math.dist(fl['foot'],fl['toward'])
