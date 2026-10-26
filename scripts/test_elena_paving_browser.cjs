@@ -21,9 +21,14 @@ const {chromium}=require('playwright');const assert=require('node:assert/strict'
    if(original.some((v,i)=>v!==geometry.getAttribute('position').array[i]))throw Error('Material correction moved geometry');
    const scene=new THREE.Scene();scene.userData.layoutOnly=true;const elena=await import('/src/elena-north.ts');elena.addElenaNorth(scene);const model=await fetch('/map/skeleton.json').then(r=>r.json());const lane=model.boundaryReference.roads.find(r=>r.id==='elena-north');const spur=scene.getObjectByName(elena.elenaGardenPath.id),positions=spur.geometry.getAttribute('position'),uvs=spur.geometry.getAttribute('uv');
    for(let i=0;i<positions.count;i++){const expected=paving.elenaPavingUv(lane,positions.getX(i),positions.getZ(i));if(Math.abs(expected[0]-uvs.getX(i))>1e-4||Math.abs(expected[1]-uvs.getY(i))>1e-4)throw Error('Garden spur joints reset from lane phase');}
+   const frontages=await import('/src/frontages.ts'),frontageScene=new THREE.Scene();frontageScene.userData.layoutOnly=true;frontages.addFrontageDivisions(frontageScene);
+   const crossPath=frontageScene.getObjectByName('cervantes-lawn-door-path'),south=model.boundaryReference.roads.find(r=>r.id==='elena-south'),crossPositions=crossPath.geometry.getAttribute('position'),crossUv=crossPath.geometry.getAttribute('uv');
+   for(let i=0;i<crossPositions.count;i++){const expected=paving.elenaPavingUv(south,crossPositions.getX(i),crossPositions.getZ(i));if(Math.abs(expected[0]-crossUv.getX(i))>1e-4||Math.abs(expected[1]-crossUv.getY(i))>1e-4)throw Error('South cross-lawn path resets tile orientation or phase');}
+   if(crossPath.material.map!==paving.elenaPavingTexture()||crossPath.material.color.getHexString()!=='ffffff')throw Error('South cross-lawn path uses a different tile field');
    return {rotationCases:4,columns:3,geometryUnchanged:true};
   },threeUrl);
   assert.equal(result.columns,3);assert.ok(await page.locator('[data-elena-paving="elena-north"]').count()>2);assert.ok(await page.locator('[data-elena-paving="elena-south"]').count()>2);
+  assert.match(await page.locator('[data-frontage-id="cervantes-lawn-door-path"]').getAttribute('fill'),/elena-south-spur-grid/);
   console.log('Elena three-column grout, path-relative rotation, square pitch, unchanged positions and canonical map joints PASS');
  }finally{await browser.close();await server.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});
