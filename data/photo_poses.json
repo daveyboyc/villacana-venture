@@ -1501,17 +1501,141 @@
     1200,
     1600
    ],
-   "points": [],
+   "points": [
+    {
+     "pixel": [
+      535,
+      1000
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
+    },
+    {
+     "pixel": [
+      528,
+      1100
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
+    },
+    {
+     "pixel": [
+      522,
+      1200
+     ],
+     "ref": "road:elena-south:left",
+     "use": "control",
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
+    },
+    {
+     "pixel": [
+      640,
+      950
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      647,
+      1090
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      656,
+      1240
+     ],
+     "ref": "road:elena-south:right",
+     "use": "control",
+     "note": "west paving edge against the lawn kerb (photo right)"
+    },
+    {
+     "pixel": [
+      507,
+      450
+     ],
+     "ref": "building:6265601UF1366N_part1:3:corner",
+     "use": "control",
+     "note": "north-west corner of building 39 at the lane (6265601UF1366N_part1 corner 3)"
+    },
+    {
+     "pixel": [
+      508,
+      650
+     ],
+     "ref": "building:6265601UF1366N_part1:3:corner",
+     "use": "control",
+     "note": "north-west corner of building 39 at the lane"
+    },
+    {
+     "vertical": [
+      [
+       410,
+       1040
+      ],
+      [
+       419,
+       1180
+      ]
+     ],
+     "use": "control",
+     "note": "lamp post beside the lane"
+    },
+    {
+     "vertical": [
+      [
+       757,
+       350
+      ],
+      [
+       755,
+       550
+      ]
+     ],
+     "use": "control",
+     "note": "left edge of the tall house across the lawn"
+    },
+    {
+     "vertical": [
+      [
+       650,
+       310
+      ],
+      [
+       650,
+       430
+      ]
+     ],
+     "use": "control",
+     "note": "left edge of the house at the far end of the lane"
+    },
+    {
+     "pixel": [
+      508,
+      389
+     ],
+     "ref": "building:6265601UF1366N_part1:3:top",
+     "use": "check",
+     "note": "roof corner of building 39 above its north-west corner: tests its roof height"
+    }
+   ],
    "initial": {
-    "x": -155.5,
-    "y": 8.79,
-    "z": 47.0,
-    "yaw": 147.9,
-    "pitch": -30.0,
-    "roll": 0.0,
-    "f": 1109.3
+    "x": -157.8,
+    "y": 8.75,
+    "z": 51.0,
+    "yaw": 147.0,
+    "pitch": -24.0,
+    "roll": -2.0,
+    "f": 1239.0
    },
-   "initialBasis": "phone pin; reviewed looksAt; roof eye height; assumed 24 mm-equivalent lens; pitch and height set by eye; not solved (docs/reviews/facade-kit-elena)",
+   "initialBasis": "position from the IMG_2358 solve with the Elena 24 roof prior; aim by eye (same lane view as IMG_2358)",
    "heightPrior": [
     8.79,
     0.3
@@ -1576,99 +1700,99 @@
       560,
       640
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       573,
       500
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       580,
       340
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       582,
       200
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       585,
       120
      ],
-     "ref": "road:elena-south:right",
+     "ref": "road:elena-south:left",
      "use": "control",
-     "note": "west paving edge of the Elena south lane (photo left)"
+     "note": "east paving edge of the Elena south lane, against the planters (photo left)"
     },
     {
      "pixel": [
       698,
       640
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       690,
       500
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       683,
       400
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       675,
       300
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       667,
       200
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
       663,
       120
      ],
-     "ref": "road:elena-south:left",
+     "ref": "road:elena-south:right",
      "use": "control",
-     "note": "east paving edge against the lawn kerb (photo right)"
+     "note": "west paving edge against the lawn kerb (photo right)"
     },
     {
      "pixel": [
