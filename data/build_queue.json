@@ -1510,8 +1510,9 @@
    "dependsOn": [
     "path-network-baseline"
    ],
-   "status": "open",
-   "issue": 130
+   "status": "in-progress",
+   "issue": 130,
+   "owner": "Codex"
   },
   {
    "id": "path-network-inventory-dali",
