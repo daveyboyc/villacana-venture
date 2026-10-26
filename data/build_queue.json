@@ -1887,7 +1887,7 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "25 Oct: export now carries traced wall/step/kerb edges and street edges (edge:, road:, building:*: refs). Elena roof photos IMG_2358-2360 still not solvable as one station (solo solves 0.5/4.2/4.4 m apart, joint lens 37 mm, IMG_2360 turned 65 deg): probably different spots on the terrace. Next: solve each photo alone with more matches and held-out checks. Nothing traced yet."
+   "notes": "25 Oct: export now carries traced wall/step/kerb edges and street edges (edge:, road:, building:*: refs). Elena roof photos IMG_2358-2360 still not solvable as one station (solo solves 0.5/4.2/4.4 m apart, joint lens 37 mm, IMG_2360 turned 65 deg): probably different spots on the terrace. Next: solve each photo alone with more matches and held-out checks. Nothing traced yet. 26 Oct: Dave placed the photos on the roof of Elena 24 (east end of building 21); each solved alone with a roof region prior, roof+eye height and the north-pool lens. None passes: IMG_2220 +/-0.6/1.1 m, IMG_2358 +/-1.6/2.0 m and 1.4 m from IMG_2220, IMG_2359/2360 placed by the prior alone (+/-4-6 m); held-out garden door 0.6-2.0 m and building 39 roof corner 0.76 m off. Nothing traced. Next: more registry corners at different depths (building 39 north face, building 44 corners) or a site visit photo from the roof with known marks."
   },
   {
    "id": "elena-path-tiles",

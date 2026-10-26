@@ -44,7 +44,12 @@ real verticals) and hold out what you want to test (roof heights, a facade step,
 pixels off a gridded zoom of the full photo, not the thumbnail. Each match is weighted by its
 pixel error plus the model's own uncertainty at that distance (pool trace 0.3 m, footprints 0.2 m,
 traced walls and steps 0.3 m, street edges 0.6 m because mapped widths are approximate). A photo's
-`"heightPrior": [y, sigma]` holds the camera height, for example a surveyed roof plus eye level.
+`"heightPrior": [y, sigma]` holds the camera height, for example a surveyed roof plus eye level. A
+`"regionPrior": {"polygon": [[x, z], ...], "sigma": m}` keeps the camera inside a plan area, such
+as the roof it was taken from: no pull inside, `sigma` metres per metre outside. A
+`"lensPrior": [f35, fraction]` holds the lens, for example from the same phone solved elsewhere
+(the Elena roof photos use the north-pool station's 26.8 mm). A prior keeps a weak solve
+plausible but does not make it a measurement: read the reported ± before trusting a camera.
 
 Photos taken from one spot get the same `"station"` and are solved together: one position and
 lens, a direction each. This matters: a single photo that shows a pool edge and one corner leaves
