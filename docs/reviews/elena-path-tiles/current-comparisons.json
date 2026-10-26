@@ -1,0 +1,52 @@
+{
+ "scope": "Current material correction: three straight tile columns",
+ "review": {
+  "path": "docs/reviews/elena-path-tiles/independent-review.md",
+  "sha256": "0078572f326dfb8cd180b533a0bda913a6de7049ab53e120a2660051b4d534bc"
+ },
+ "assessments": [
+  {
+   "featureIds": [
+    "elena:N01"
+   ],
+   "image": "north-lane-context-after.png",
+   "imageSha256": "18068f34ace53afb7bdf8997af2391ae053daaa054be97fd3bdfc1dcca966bb8",
+   "modelRevision": "9a3fbc822d8ac9f3e23898d0a7941bfd9dbb112e",
+   "result": "partial",
+   "observation": "Three straight square-tile columns and separate grey margins replace the diagonal grid on the unchanged north ribbon.",
+   "limitations": "Material-only correction from owner and full photos. Uncalibrated model-context view; no registered edge/width, whole-photo match, floor/clearance fidelity or placement approval. Earlier structural/level gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review"
+  },
+  {
+   "featureIds": [
+    "elena:S01"
+   ],
+   "image": "south-lane-context-after.png",
+   "imageSha256": "7f33d4d4c4e622dd30a05574dc4530423eaf1b10c146c2dd57bab5e9061965d6",
+   "modelRevision": "9a3fbc822d8ac9f3e23898d0a7941bfd9dbb112e",
+   "result": "partial",
+   "observation": "Three straight square-tile columns run along the existing south path; grey margin is distinct from the white lawn kerb.",
+   "limitations": "Material-only correction from owner and full photos. Uncalibrated model-context view; no registered edge/width, whole-photo match, floor/clearance fidelity or placement approval. Earlier structural/level gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review"
+  },
+  {
+   "featureIds": [
+    "elena:N03",
+    "elena:N04"
+   ],
+   "image": "garden-spur-context-after.png",
+   "imageSha256": "e72954b0d34d2c082da78740aa4c3d62a9d555684edfe926acf21439561df3f9",
+   "modelRevision": "9a3fbc822d8ac9f3e23898d0a7941bfd9dbb112e",
+   "result": "partial",
+   "observation": "Only the existing paved spur changes material: its square grid shares the north lane origin and phase. Beds, door, walls and path ring stay unchanged.",
+   "limitations": "Material-only correction from owner and full photos. Uncalibrated model-context view; no registered edge/width, whole-photo match, floor/clearance fidelity or placement approval. Earlier structural/level gaps remain open.",
+   "followUp": "elena-register-path-edges",
+   "cameraStatus": "Uncalibrated model-context first-person camera",
+   "reviewer": "Codex:elena_independent_review"
+  }
+ ]
+}

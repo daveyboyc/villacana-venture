@@ -2,6 +2,7 @@ import * as THREE from "three";
 import layout from "../data/elena_east_patios.json";
 import { pointInRing } from "./geom";
 import { plasterMaterial } from "./materials";
+import {groundElenaWall} from "./elena-wall-ground";
 import { addSprites, type SpriteKind } from "./sprites";
 import type { Vec2 } from "./types";
 
@@ -40,7 +41,7 @@ export function addElenaEastPatios(scene: THREE.Scene): void {
   // White walls with a slightly wider coping, matching the existing garden wall.
   for (const w of elenaEastPatioWalls) {
     const [a, b] = w.points;
-    scene.add(beam(a, b, 0, w.thickness, w.height - 0.05, plaster, w.id), beam(a, b, w.height - 0.05, w.thickness + 0.06, 0.05, plaster, w.id));
+    scene.add(groundElenaWall(beam(a, b, 0, w.thickness, w.height - 0.05, plaster, w.id)), groundElenaWall(beam(a, b, w.height - 0.05, w.thickness + 0.06, 0.05, plaster, w.id)));
   }
   // Pergola: four posts, two beams along the wall and rafters across them.
   const p = elenaEastPergola, [c0, c1, c2, c3] = p.ring;

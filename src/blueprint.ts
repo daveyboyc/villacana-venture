@@ -34,6 +34,7 @@ import middlePool from "../data/middle_pool.json";
 import { mapLabels, referenceEditor } from "./references";
 import { asset } from "./asset";
 import { pathNetwork } from "./path-network";
+import {elenaPavingFor,elenaGridLines} from "./elena-lane-paving";
 import { photoLibrary } from "./photo-library";
 import kinds from "../data/kinds.json";
 import {accessSection,lowerPoolRing,poolAccess} from "./pool-levels";
@@ -112,6 +113,16 @@ async function boot(): Promise<void> {
   // Calle Elena north, traced from the roof photos: beds, patio wall and the arched gateway.
   const elena=el("g",{id:"elena-north"});
   const titled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);elena.append(node);};
+  const elenaLane=skeleton.boundaryReference!.roads.find(r=>r.id==='elena-north')!;
+  const floorGrid=(id:string,origin:number[],road=elenaLane)=>{
+    const [a,b]=road.points,l=Math.hypot(b[0]-a[0],b[1]-a[1]),ux=(b[0]-a[0])/l,uz=(b[1]-a[1])/l,pitch=road.width/3;
+    const pattern=el('pattern',{id,patternUnits:'userSpaceOnUse',width:pitch,height:pitch,patternTransform:`matrix(${ux} ${uz} ${-uz} ${ux} ${origin[0]+uz*road.width/2} ${origin[1]-ux*road.width/2})`});
+    pattern.append(el('rect',{width:pitch,height:pitch,fill:'#ba8062'}),el('path',{d:`M0 ${pitch}V0H${pitch}`,fill:'none',stroke:'#c8b9a3','stroke-width':.014}));elena.append(pattern);return `url(#${id})`;
+  };
+  const southLane=skeleton.boundaryReference!.roads.find(r=>r.id==='elena-south')!;
+  const southSpur=frontages.querySelector('[data-frontage-id="cervantes-lawn-door-path"]');
+  southSpur?.setAttribute('fill',floorGrid('elena-south-spur-grid',southLane.points[0],southLane));southSpur?.setAttribute('fill-opacity','1');
+  titled(el('path',{d:path(elenaNorth.frontPatioFloor.ring as Vec2[]),fill:floorGrid('elena-first-patio-grid',elenaNorth.frontPatioFloor.ring[0]),'data-elena-id':elenaNorth.frontPatioFloor.id}),`${elenaNorth.frontPatioFloor.name}: ${elenaNorth.frontPatioFloor.trust}`);
   for(const bed of elenaNorthBeds)titled(el("path",{d:path(bed.ring),fill:"#405b3d",stroke:"#fffdf5","stroke-width":.14,"data-elena-id":bed.id}),`${bed.name}: ${bed.trust} · ${bed.evidence.join(", ")}`);
   for(const box of elenaNorthPlanters)titled(el("path",{d:path(box.ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.06,"data-elena-id":box.id}),`${box.name}: ${box.trust}`);
   for(const wall of elenaNorth.walls)titled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-id":wall.id}),`${wall.name}: ${wall.trust}`);
@@ -119,7 +130,7 @@ async function boot(): Promise<void> {
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
   titled(el("path",{d:path(elenaEntryRing),fill:"#b46b48",stroke:"#d1b595","stroke-width":.06}),`${elenaEntry.name}: ${elenaEntry.trust}`);
   for(const ring of elenaEntryRings())titled(el("path",{d:path(ring),fill:"#202622"}),`${elenaEntry.name}: closed private paired gates · ${elenaEntry.evidence.join(", ")}`);
-  titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:"#ba8062","data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
+  titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:floorGrid('elena-spur-grid',elenaLane.points[0]),"data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
   for(const w of elenaNorth.walls) for(const d of w.doors) {
     const [a,b]=w.points, len=Math.hypot(b[0]-a[0],b[1]-a[1]), ux=(b[0]-a[0])/len, uz=(b[1]-a[1])/len;
     titled(el("path",{d:`M${d.at[0]-ux*d.width/2} ${d.at[1]-uz*d.width/2}L${d.at[0]+ux*d.width/2} ${d.at[1]+uz*d.width/2}`,stroke:"#6b4126","stroke-width":w.thickness+.04}),"Closed timber garden door");
@@ -285,6 +296,15 @@ async function boot(): Promise<void> {
     if (street.points) {
       const d = "M" + street.points.map((p) => `${p[0]} ${p[1]}`).join("L");
       streets.append(el("path", { d, fill: "none", stroke: skeleton.boundaryReference?.roads.find((r) => r.name === street.name)?.surface === "asphalt" ? "#7f8384" : "#fffdf8", "stroke-opacity": 1, "stroke-width": street.width ?? 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }));
+      const road=skeleton.boundaryReference?.roads.find(r=>r.id===street.id);
+      if(road&&elenaPavingFor(road)){
+        const fill=streets.lastElementChild!;fill.setAttribute("stroke","#b88169");
+        streets.insertBefore(el("path",{d,fill:"none",stroke:elenaPavingFor(road)!.marginColor,"stroke-width":road.width+.12,"stroke-linecap":"round","stroke-linejoin":"round"}),fill);
+        for(const points of elenaGridLines(road)){
+          const joint=el("path",{d:"M"+points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#a6a093","stroke-width":.025,"data-elena-paving":road.id!});
+          const title=el("title",{});title.textContent="Three straight tile columns; existing model width and row origin remain estimated.";joint.append(title);streets.append(joint);
+        }
+      }
       const segmentLengths=street.points.slice(1).map((p,i)=>Math.hypot(p[0]-street.points![i][0],p[1]-street.points![i][1]));
       const total=segmentLengths.reduce((a,b)=>a+b,0);
       const stations=total>50?Array.from({length:Math.ceil(total/45)},(_,i)=>Math.min(total-5,20+i*45)):[total/2];

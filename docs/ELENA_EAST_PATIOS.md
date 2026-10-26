@@ -5,6 +5,11 @@ Task `elena-east-patios`. Data `data/elena_east_patios.json`, built by
 block in `src/blueprint.ts`, checked by `scripts/check_elena_east_patios.py`.
 Map, mesh and collision all read the same wall records.
 
+The [26 October patio-wall correction](reviews/elena-patio-wall-correction/README.md)
+keeps these enclosure outlines/heights and uses shared vertex ground for joined
+wall bodies/copings. The separately visible first patio near the lawn gateway has
+one bounded divider and plain-tile floor; it does not fill these concealed interiors.
+
 ## What the photos show
 
 The task listed three roof shots. All of them were checked at full size, and a

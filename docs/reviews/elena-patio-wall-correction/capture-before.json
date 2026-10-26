@@ -1,0 +1,106 @@
+[
+  {
+    "id": "north-patio",
+    "at": [
+      -157.55,
+      30.5
+    ],
+    "look": [
+      -154.2,
+      30.4
+    ],
+    "camera": "uncalibrated model-context first person",
+    "elapsedMs": 20791,
+    "errors": []
+  },
+  {
+    "id": "north-join",
+    "at": [
+      -154.9,
+      35.7
+    ],
+    "look": [
+      -152.7,
+      35.6
+    ],
+    "camera": "uncalibrated model-context first person",
+    "elapsedMs": 46194,
+    "errors": []
+  },
+  {
+    "id": "garden-door",
+    "at": [
+      -149.15,
+      49.4
+    ],
+    "look": [
+      -144.63,
+      46.79
+    ],
+    "camera": "uncalibrated model-context first person",
+    "elapsedMs": 53419,
+    "errors": []
+  },
+  {
+    "id": "cervantes-corner",
+    "at": [
+      -139.5,
+      51.2
+    ],
+    "look": [
+      -145,
+      44
+    ],
+    "camera": "uncalibrated model-context first person",
+    "elapsedMs": 40461,
+    "errors": []
+  },
+  {
+    "id": "elevated-patios",
+    "at": [
+      -159,
+      36
+    ],
+    "look": [
+      -153,
+      30
+    ],
+    "camera": "uncalibrated elevated model-context; local harness camera override",
+    "eye": [
+      -160,
+      17,
+      29
+    ],
+    "target": [
+      -153,
+      1.8,
+      30
+    ],
+    "elapsedMs": 20540,
+    "errors": []
+  },
+  {
+    "id": "south-crosspath",
+    "at": [
+      -146.5,
+      69.5
+    ],
+    "look": [
+      -153,
+      70
+    ],
+    "camera": "uncalibrated elevated model-context; local harness camera override",
+    "eye": [
+      -142,
+      9,
+      72
+    ],
+    "target": [
+      -150.5,
+      1,
+      69.5
+    ],
+    "elapsedMs": 20294,
+    "errors": []
+  }
+]

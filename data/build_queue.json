@@ -1419,13 +1419,78 @@
     "All available relevant full sources inspected with revision, reviewer, observations and limitations",
     "Every visible path, boundary and opening linked or named as a gap",
     "Both tunnel portals known or explicitly unresolved; aliases and identity evidence retained",
-    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified"
+    "Labelled plan, annotations and tunnel sections linked; unresolved sources and tasks quantified",
+    "Scoped available-source accounting independently reviewed; no physical map, calibrated match or placement approval claimed; browser timeout investigation and remaining prerequisite in issue #143"
    ],
    "dependsOn": [
     "path-network-baseline"
    ],
-   "status": "open",
-   "issue": 129
+   "status": "done",
+   "issue": 129,
+   "owner": "Codex",
+   "sourceReferences": [
+    "IMG_2196.jpg",
+    "IMG_2197.jpg",
+    "IMG_2198.jpg",
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2202.jpg",
+    "IMG_2203.jpg",
+    "IMG_2214.jpg",
+    "IMG_2215.jpg",
+    "IMG_2219.jpg",
+    "IMG_2220.jpg",
+    "IMG_2252.jpg",
+    "IMG_2253.jpg",
+    "IMG_2254.jpg",
+    "IMG_2255.jpg",
+    "IMG_2256.jpg",
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2263.jpg",
+    "IMG_2265.jpg",
+    "IMG_2286.jpg",
+    "IMG_2287.jpg",
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2329.jpg",
+    "IMG_2330.jpg",
+    "IMG_2342.jpg",
+    "IMG_2355.jpg",
+    "IMG_2358.jpg",
+    "IMG_2360.jpg",
+    "IMG_2361.jpg",
+    "IMG_2362.jpg",
+    "IMG_2363.jpg",
+    "IMG_2364.jpg",
+    "IMG_2365.jpg",
+    "IMG_2366.jpg",
+    "IMG_2367.jpg",
+    "map:ground",
+    "ref:apple-maps/01-3d-overview-from-north.png",
+    "ref:apple-maps/02-3d-north-pool.png",
+    "ref:apple-maps/06-top-down-whole-block.png",
+    "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+    "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
+    "ref:apple-maps/09-3d-north-pool-looking-south.png",
+    "ref:google-maps/01-street-map-lane-names.png",
+    "ref:google-maps/02-satellite-lane-names.png",
+    "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
+    "ref:photos/02-pool-from-upper-floor-2020-12.png",
+    "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+    "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+    "ref:photos/05-north-pool-west-side-garden-walls.jpg",
+    "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
+    "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
+    "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+    "ref:photos/09-middle-pool-through-iron-gate.jpg",
+    "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+    "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+    "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
+   ],
+   "inventoryReview": "docs/reviews/path-network-inventory-elena/independent-review.json"
   },
   {
    "id": "path-network-inventory-cervantes",
@@ -1679,6 +1744,134 @@
    "status": "open"
   },
   {
+   "id": "3d-browser-regression-reliability",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Diagnose and stabilise 3D browser regressions before geometry releases",
+   "photos": [],
+   "build": "Reproduce cold-start, rotation and compositor waits serially on the software renderer; separate dependency-reload navigation from frame/compositor costs. Retain every route, surface, photo-map and mobile assertion. Source capture default 30 s fails while observed overview screenshots take 32–52 s; record timings and provide useful failure diagnostics.",
+   "avoid": "Do not silently disable shadows/geometry or skip assertions to obtain a pass; do not equate a larger timeout with performance resolution.",
+   "accept": [
+    "Declared source/model scope and limitations retained",
+    "Bounded comparison artifact and follow-up for every unresolved item",
+    "Applicable HANDOVER checks and full 3D/mobile regression completed; no geometry release on unresolved browser regressions"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "issue": 143
+  },
+  {
+   "id": "elena-register-path-edges",
+   "area": "elena",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Elena: register both physical path edges and finite ground boundaries",
+   "photos": [],
+   "build": "Register source-pixel traces N01/N02/N03/S01/S02/J04 to independent ground anchors, reserve held-out controls and distinguish paved margin, tile field, clearance and roof outlines. Resolve hidden returns with named evidence requests before surfaces.",
+   "avoid": "No widths from tile counts, GPS camera pins, roof overhangs or nominal clearance buffers; no paving pass before structure.",
+   "accept": [
+    "Declared source/model scope and limitations retained",
+    "Bounded comparison artifact and follow-up for every unresolved item",
+    "Applicable audit software checks completed; geometry releases remain behind the browser regression prerequisite."
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "open",
+   "issue": 144
+  },
+  {
+   "id": "elena-register-tunnel-portals",
+   "area": "elena",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Elena: register both portals and reconcile second tunnel candidate",
+   "photos": [],
+   "build": "Resolve tun-001 portal observations T01/T02, private 36/34 spur and connected Elena lane. Obtain both-end views for legacy tun-002 host 6265201UF1366N_part2; keep far roof-view arch identity separate until supported.",
+   "avoid": "No inferred public through route or duplicate merge from a similar-looking arch; both world portals stay null until evidence registration.",
+   "accept": [
+    "Declared source/model scope and limitations retained",
+    "Bounded comparison artifact and follow-up for every unresolved item",
+    "Applicable audit software checks completed; geometry releases remain behind the browser regression prerequisite."
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "open",
+   "issue": 145
+  },
+  {
+   "id": "elena-tunnel-structure-correction",
+   "area": "elena",
+   "priority": 1,
+   "kind": "structure",
+   "title": "Elena: correct covered passage structural omissions after registration",
+   "photos": [
+    "IMG_2202.jpg",
+    "IMG_2203.jpg",
+    "IMG_2255.jpg"
+   ],
+   "build": "Compare T01–T09 drawings and pinned model-context captures. After bounded placement workflow, implement supported arched soffits, near door recesses, small farther shuttered openings (type unresolved), and distinct private gateway. Preserve flat ceiling, upper floors, roof and shared collision. Floor inset/surface follows supported structure; unknown dimensions remain open.",
+   "avoid": "Do not turn smaller farther openings into extra doors, open a private gate as public access, change a host footprint or transfer details from Silvia/Jorge. No decorative pass before inventory/registration.",
+   "accept": [
+    "Declared source/model scope and limitations retained",
+    "Bounded comparison artifact and follow-up for every unresolved item",
+    "Applicable HANDOVER checks and full 3D/mobile regression completed; no geometry release on unresolved browser regressions"
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena",
+    "elena-register-tunnel-portals",
+    "3d-browser-regression-reliability"
+   ],
+   "status": "open",
+   "features": [
+    "building:6265201UF1366N_part5",
+    "elena_gated_entry.json:elena-gated-entry"
+   ],
+   "issue": 146
+  },
+  {
+   "id": "elena-south-terminal-identify",
+   "area": "elena",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Elena south: identify terminal frame and adjoining wall/door connections",
+   "photos": [],
+   "build": "Obtain an independently anchored reverse view from the pool gateway into Elena to resolve S03/S04 wall/door connections, operational gate state and threshold. Private photos09/12 already show a closer same-direction open iron gate candidate and a separate glass pool barrier beyond; retain candidate association until ground anchors and reverse connectivity are established. Compare the current model at registered sources before bounded corrections.",
+   "avoid": "Do not equate the pool safety glass with the gate material, infer public access or join a hidden wall from distant pixels or a far model frame.",
+   "accept": [
+    "Declared source/model scope and limitations retained",
+    "Bounded comparison artifact and follow-up for every unresolved item",
+    "Applicable audit software checks completed; geometry releases remain behind the browser regression prerequisite."
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "open",
+   "issue": 147
+  },
+  {
+   "id": "elena-level-clearance-survey",
+   "area": "elena",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Elena: resolve path/threshold levels and usable clearance uncertainty",
+   "photos": [],
+   "build": "Measure kerb, doorway thresholds, ramp and three steps against current level/survey framework and calibrated views. Keep existing estimated dimensions separate from new measurements. Record unknown clearance where uncertainty consumes usable width.",
+   "avoid": "Do not raise floors/doors to hide incompatible terrain, infer metres from tile counts, or count successful movement as real-world clearance.",
+   "accept": [
+    "Declared source/model scope and limitations retained",
+    "Bounded comparison artifact and follow-up for every unresolved item",
+    "Applicable audit software checks completed; geometry releases remain behind the browser regression prerequisite."
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "open",
+   "issue": 148
+  },
+  {
    "id": "facade-kit-elena",
    "area": "elena",
    "priority": 2,
@@ -1695,6 +1888,81 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "25 Oct: export now carries traced wall/step/kerb edges and street edges (edge:, road:, building:*: refs). Elena roof photos IMG_2358-2360 still not solvable as one station (solo solves 0.5/4.2/4.4 m apart, joint lens 37 mm, IMG_2360 turned 65 deg): probably different spots on the terrace. Next: solve each photo alone with more matches and held-out checks. Nothing traced yet. 26 Oct: Dave placed the photos on the roof of Elena 24 (east end of building 21); each solved alone with a roof region prior, roof+eye height and the north-pool lens. None passes: IMG_2220 +/-0.6/1.1 m, IMG_2358 +/-1.6/2.0 m and 1.4 m from IMG_2220, IMG_2359/2360 placed by the prior alone (+/-4-6 m); held-out garden door 0.6-2.0 m and building 39 roof corner 0.76 m off. Nothing traced. Next: more registry corners at different depths (building 39 north face, building 44 corners) or a site visit photo from the roof with known marks."
+  },
+  {
+   "id": "elena-path-tiles",
+   "area": "elena",
+   "priority": 1,
+   "kind": "materials",
+   "title": "Elena: three straight tile columns and separate grey path margins",
+   "photos": [
+    "IMG_2201.jpg",
+    "IMG_2253.jpg",
+    "IMG_2330.jpg"
+   ],
+   "features": [
+    "elena_lane_paving.json:elena-north-three-column",
+    "elena_lane_paving.json:elena-south-three-column",
+    "elena_north.json:elena-north-garden-door-path"
+   ],
+   "build": "Apply the owner-confirmed three-column straight square-tile grid along the existing north/south path axes. Retain existing path extents and levels, make grey margins distinct, and continue the shared square-grid phase through the garden spur. Compare actual visible surfaces before/after; no new measured path boundaries inferred.",
+   "avoid": "Do not apply this grid to patterned covered passages, Silvia four-column surfaces, pools or other streets. Do not derive surveyed widths from the tile count or change registry/terrain/collision.",
+   "accept": [
+    "Three straight tile columns on existing Elena north/south paths; grey margins separate",
+    "Actual-surface ray checks and before/after source-context renders",
+    "Map/3D share lane alignment; unchanged original registry/pool/road inputs",
+    "Independent source/render review and applicable source/build/route regressions",
+    "Scoped material correction independently reviewed; original road/spur geometry and known height/registration gaps retained. Full layout passed 20 routes in both directions / 438 traversal segments."
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "issue": 151,
+   "notes": "Material/UV implementation independently reviewed and delivered provisionally. Original positions/widths/heights remain unverified; task stays in progress under the placement policy, with no verified or reconstruction-complete count increment."
+  },
+  {
+   "id": "elena-patio-wall-correction",
+   "area": "elena",
+   "priority": 1,
+   "kind": "geometry",
+   "title": "Elena: correct front-patio wall heights, joins and paving consistency",
+   "photos": [
+    "IMG_2363.jpg",
+    "IMG_2199.jpg",
+    "IMG_2200.jpg",
+    "IMG_2201.jpg",
+    "IMG_2197.jpg",
+    "IMG_2356.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ],
+   "features": [
+    "elena_north.json:elena-north-patio-east",
+    "elena_north.json:elena-north-gateway",
+    "elena_north.json:elena-north-garden-wall",
+    "elena_north.json:elena-north-window-return",
+    "elena_east_patios.json:elena-east-patios-west-wall",
+    "elena_east_patios.json:elena-east-patios-cervantes-wall",
+    "elena_north.json:elena-north-patio-divider",
+    "elena_north.json:elena-north-visible-patio-floor",
+    "frontage_divisions.json:cervantes-lawn-door-path"
+   ],
+   "build": "Recheck full sources, correct door-relative wall heights and photographed front-patio returns, join wall meshes on a consistent surveyed-ground datum; audit patio/path material alignment without inventing concealed floors. Align the existing south cross-lawn approach to its adjoining lane grid/phase, with unchanged surface extent.",
+   "avoid": "No repeated guessed partitions, terrain changes, roof-to-ground projection or surveyed placement claims.",
+   "accept": [
+    "Annotated source comparison and independently inspected full photos",
+    "Joined wall/coping meshes and shared collision/map inputs",
+    "Same-camera before/after render evidence, paving consistency and route checks"
+   ],
+   "dependsOn": [
+    "path-network-inventory-elena"
+   ],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Bounded correction independently reviewed and delivered provisionally: full-height north wall/door, joined visible returns, one divider and finite first-patio plain tile field. Model commit f879f907e141984b1261a9b92ec2ed014ede2329. Hidden 0.95 m frontage continuity, door-relative heights and floor datum remain estimates. Placement gate warnings retained; task remains in progress without fresh measured registration.",
+   "issue": 153
   }
  ]
 }

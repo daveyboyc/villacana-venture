@@ -13,7 +13,7 @@ what actually lines it.
 | Feature | From | Notes |
 | --- | --- | --- |
 | Arched gateway onto the north pool lawn | IMG_2363 | White wall across the gap between the two terraces, 1.5 m opening, arch crown 2.2 m. A brown garden door in its east part faces the patio. Bougainvillea over it in Details. |
-| Patio wall, east side, north half | IMG_2363 | 1.15 m white wall between the lane and the private patios, with a brown door onto the lane. |
+| Patio wall, east side, north half | IMG_2363 | Estimated 1.85 m privacy wall with 1.8 m timber door; replaces the incorrect 1.15 m wall/1.0 m door. Gateway return meets the house; one visible divider and bounded first-patio floor are represented. |
 | Planting strip, west side, north half | IMG_2363 | Low kerb along the west houses up to the covered walkway. |
 | Magnolia bed | IMG_2365, IMG_2364, IMG_2362 | Raised 0.3 m white-kerbed bed of tall glossy shrubs, edged with strap-leaved plants. |
 | Two hedged beds with pollarded trees | IMG_2197–2201, IMG_2365 | Boxed by a clipped hedge, spider-plant-like strap leaves inside. A short path to a garden door runs between them. |
@@ -74,8 +74,10 @@ Audit correction (18 October 2026): IMG_2202 shows the covered-building arch loo
 Positions are traced against the registry fronts and the aerial to roughly
 0.5–1 m. Wall heights, the gateway arch, bed sizes and tread lengths are
 estimated from tiles and doors in the photos, not measured. Door positions in
-the patio wall are approximate. The east-side patios beyond the beds and the gated entry seen in IMG_2361
-(west of the covered walkway) are not modelled yet. The garden-door approach
+the patio wall are approximate. The concealed interiors of the east-side patios
+beyond the beds remain unmodelled; their visible enclosure is documented in
+ELENA_EAST_PATIOS.md, and the separate private gated entry has its own model.
+The garden-door approach
 is covered by the issue #34 addition below.
 
 ## Garden-door approach (issue #34, 15 October 2026)
@@ -96,3 +98,16 @@ that forward movement stops at the door. No terrain or registry footprint is
 changed. Wall heights (1.85–2 m), window/door dimensions and the alignment
 against existing bed backs are estimates, not surveyed measurements. The
 unseen east patios and the gated entry west of the walkway remain separate work.
+
+## Front-patio correction (issue #153, 26 October 2026)
+
+The full IMG_2363 recheck supports a full-height wall/door, the gateway-side
+return into the house, and one visible divider. Connected Elena wall meshes now
+use shared vertex ground instead of independent midpoint offsets. The garden
+door has raised shallow curved coping. Plain square tiles cover only the visible
+first patio; the garden spur retains the lane's three-column grid phase in both
+map and scene. Other private decorative tile fields remain distinct.
+
+The short foliage-hidden connection to the window return is estimated continuity,
+and all heights/private floor levels remain estimates. See the [source plan,
+before/after views and independent review](reviews/elena-patio-wall-correction/README.md).

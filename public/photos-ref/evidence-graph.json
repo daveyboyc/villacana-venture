@@ -6,9 +6,9 @@
   "suggested": 77,
   "needs-review": 67,
   "photos": 145,
-  "features": 371,
-  "photosCitedByModel": 99,
-  "modelFeaturesWithPhotoCitations": 116
+  "features": 375,
+  "photosCitedByModel": 100,
+  "modelFeaturesWithPhotoCitations": 120
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -119,6 +119,25 @@
    "name": "Calle Eva",
    "kind": "street",
    "source": "map layout"
+  },
+  {
+   "id": "elena_lane_paving.json:elena-north-three-column",
+   "name": "Elena north · three straight tile columns and grey margins",
+   "kind": "reference feature",
+   "source": "Three aligned square columns and grey aggregate margins observed in IMG_2201 and confirmed by owner. Fit to the unchanged model ribbon; dimensions, edge registration and row origin remain estimated.",
+   "evidence": [
+    "IMG_2201.jpg"
+   ]
+  },
+  {
+   "id": "elena_lane_paving.json:elena-south-three-column",
+   "name": "Elena south · three straight tile columns and grey margins",
+   "kind": "reference feature",
+   "source": "Three aligned square columns visible beside the lawns, confirmed by owner. Fit to unchanged model ribbon; turn positions, width and row origin remain estimated. Grey margin is distinct from the white lawn kerb.",
+   "evidence": [
+    "IMG_2253.jpg",
+    "IMG_2330.jpg"
+   ]
   },
   {
    "id": "building:6165501UF1366N_part1",
@@ -1951,7 +1970,8 @@
    "source": "authored photo/map interpretation",
    "evidence": [
     "IMG_2260.jpg",
-    "IMG_2261.jpg"
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
    ]
   },
   {
@@ -2303,6 +2323,15 @@
    ]
   },
   {
+   "id": "elena_north.json:elena-north-patio-divider",
+   "name": "Elena north · visible front-patio divider to house",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg"
+   ]
+  },
+  {
    "id": "elena_north.json:elena-north-planter-west",
    "name": "Elena north · planting strip, west side",
    "kind": "reference feature",
@@ -2374,6 +2403,15 @@
     "IMG_2199.jpg",
     "IMG_2200.jpg",
     "IMG_2201.jpg"
+   ]
+  },
+  {
+   "id": "elena_north.json:elena-north-visible-patio-floor",
+   "name": "Elena north · bounded visible first-patio plain square tiles",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2363.jpg"
    ]
   },
   {
@@ -4734,6 +4772,12 @@
   },
   {
    "from": "photo:IMG_2201.jpg",
+   "to": "elena_lane_paving.json:elena-north-three-column",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2201.jpg",
    "to": "elena_north.json:elena-north-garden-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5856,6 +5900,12 @@
    "to": "street:elena-south",
    "relation": "camera-nearby",
    "gap": 1.6
+  },
+  {
+   "from": "photo:IMG_2253.jpg",
+   "to": "elena_lane_paving.json:elena-south-three-column",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2254.jpg",
@@ -7509,6 +7559,18 @@
   },
   {
    "from": "photo:IMG_2330.jpg",
+   "to": "elena_lane_paving.json:elena-south-three-column",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
+   "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
    "to": "door_sills.json:elena-lawn-door-sill",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8613,7 +8675,19 @@
   },
   {
    "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-patio-divider",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
    "to": "elena_north.json:elena-north-planter-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2363.jpg",
+   "to": "elena_north.json:elena-north-visible-patio-floor",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

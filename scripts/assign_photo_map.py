@@ -34,6 +34,9 @@ def features(s):
     result=[]
     def add(id,name,kind,source,**geometry):result.append(dict(id=id,name=name,kind=kind,source=source,**geometry))
     for r in s['boundaryReference']['roads']:add('street:'+r['id'],r['name'],'street','map layout',points=r['points'],width=r['width'])
+    for f in json.loads((ROOT/'data/elena_lane_paving.json').read_text())['features']:
+        r=next(r for r in s['boundaryReference']['roads'] if r['id']==f['roadId'])
+        add('elena_lane_paving.json:'+f['id'],f['name'],'reference feature',f['trust'],points=r['points'],width=r['width'],evidence=f['evidence'])
     for b in s['buildings']:add('building:'+b['id'],b['id'],'building','registry',ring=b['ring'],passage=bool(b.get('passage')),**({'notStanding':True,'evidence':b['notStanding']['evidence']} if b.get('notStanding') else {}))
     for p in s['pools']:add('pool:'+p['id'],p['id']+' pool','pool','registry',ring=p['ring'])
     for p in s.get('areas',[]):
@@ -74,7 +77,7 @@ def features(s):
     for tree in junction['trees']:
         add('junction_lawns.json:'+tree['id'],tree['name'],'reference feature','authored photo/map interpretation',evidence=tree['evidence'],points=[tree['point']])
     elena=json.loads((ROOT/'data/elena_north.json').read_text())
-    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters'],elena['gardenPath']]:
+    for f in [elena['gateway'],*elena['walls'],*elena['beds'],*elena['planters'],elena['gardenPath'],elena['frontPatioFloor']]:
         add('elena_north.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})
     sw=json.loads((ROOT/'data/middle_pool_sw_gateway.json').read_text())
     fl=json.loads((ROOT/'data/middle_pool_steps.json').read_text());L=math.dist(fl['foot'],fl['toward'])

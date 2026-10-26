@@ -23,7 +23,7 @@
   },
   {
    "id": "tun-002",
-   "name": "Calle Elena, Dal\u00ed end",
+   "name": "Calle Elena, Dalí end",
    "legacyPassage": "6265201UF1366N_part2",
    "aliases": [
     "6265201UF1366N_part2"
@@ -37,7 +37,7 @@
   },
   {
    "id": "tun-003",
-   "name": "North row alley, Dal\u00ed end",
+   "name": "North row alley, Dalí end",
    "legacyPassage": "6165501UF1366N_part3",
    "aliases": [
     "6165501UF1366N_part3"
@@ -93,7 +93,7 @@
   },
   {
    "id": "tun-007",
-   "name": "Walk-through from Isabel de Oyarz\u00e1bal",
+   "name": "Walk-through from Isabel de Oyarzábal",
    "legacyPassage": "6265401UF1366N_part1",
    "aliases": [
     "6265401UF1366N_part1"
@@ -153,5 +153,55 @@
    "nextAction": "Reconcile signed identity and opposite-end views; register source drawing before assigning world portals."
   }
  ],
- "sourceAccounting": {}
+ "sourceAccounting": {},
+ "inventories": [
+  {
+   "area": "elena",
+   "path": "docs/reviews/path-network-inventory-elena/inventory.json",
+   "review": "docs/reviews/path-network-inventory-elena/independent-review.json",
+   "assessments": "docs/reviews/path-network-inventory-elena/model-comparisons.json",
+   "followUps": {
+    "elena-gap-registration": "elena-register-path-edges",
+    "elena-gap-concealed-ground": "elena-register-path-edges",
+    "elena-gap-tun002": "elena-register-tunnel-portals",
+    "elena-gap-south-terminal": "elena-south-terminal-identify",
+    "elena-gap-levels": "elena-level-clearance-survey"
+   },
+   "featureFollowUps": {
+    "elena:N01": "elena-register-path-edges",
+    "elena:N02": "elena-register-path-edges",
+    "elena:N03": "elena-register-path-edges",
+    "elena:N04": "elena-register-path-edges",
+    "elena:N05": "elena-register-path-edges",
+    "elena:G01": "elena-register-path-edges",
+    "elena:N06": "elena-register-path-edges",
+    "elena:N07": "elena-register-path-edges",
+    "elena:T01": "elena-tunnel-structure-correction",
+    "elena:T02": "elena-tunnel-structure-correction",
+    "elena:T03": "elena-tunnel-structure-correction",
+    "elena:T04": "elena-tunnel-structure-correction",
+    "elena:T05": "elena-tunnel-structure-correction",
+    "elena:T06": "elena-tunnel-structure-correction",
+    "elena:T07": "elena-tunnel-structure-correction",
+    "elena:T08": "elena-tunnel-structure-correction",
+    "elena:T09": "elena-tunnel-structure-correction",
+    "elena:T10": "elena-register-tunnel-portals",
+    "elena:S01": "elena-register-path-edges",
+    "elena:S02": "elena-register-path-edges",
+    "elena:S03": "elena-south-terminal-identify",
+    "elena:S04": "elena-south-terminal-identify",
+    "elena:J01": "elena-level-clearance-survey",
+    "elena:J02": "elena-level-clearance-survey",
+    "elena:J03": "elena-level-clearance-survey",
+    "elena:J04": "elena-register-path-edges",
+    "elena:C01": "elena-register-path-edges",
+    "elena:R01": "elena-register-path-edges",
+    "elena:A01": "elena-register-path-edges"
+   },
+   "additionalAssessments": [
+    "docs/reviews/elena-patio-wall-correction/current-comparisons.json",
+    "docs/reviews/elena-path-tiles/current-comparisons.json"
+   ]
+  }
+ ]
 }

@@ -309,9 +309,10 @@
    ],
    "evidence": [
     "IMG_2260.jpg",
-    "IMG_2261.jpg"
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
    ],
-   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey",
+   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey 26 October material recheck: plain square tiles on this approach align with the south Elena grid; UVs share lane axes/phase while the existing path ring/level remain unchanged. Grid origin/pitch fit the model and are not survey measurements.",
    "status": "photo-backed type; approximate extent"
   }
  ],

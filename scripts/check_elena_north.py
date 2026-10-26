@@ -26,7 +26,11 @@ def clear_of_everything(p,half,what):
   assert gap>=r['width']/2-.025,f"{what} intrudes into {r['id']}"
  for b in s['buildings']:
   # Zero-storey registry parts are yards, not houses; covered walkways stay open below.
-  if b['floors']>0:assert not inside(*p,b['ring']),f"{what} crosses house {b['id']}"
+  if b['floors']>0:
+   # These two bounded returns terminate exactly on the unchanged registry face.
+   contacts={g['id']:g['points'][-1], 'elena-north-patio-divider':next(w for w in d['walls'] if w['id']=='elena-north-patio-divider')['points'][-1]}
+   touches=what in contacts and math.dist(p,contacts[what])<1e-6 and min(distance(p,a,c) for a,c in zip(b['ring'],b['ring'][1:]+b['ring'][:1]))<1e-6
+   assert touches or not inside(*p,b['ring']),f"{what} crosses house {b['id']}"
  for pool in s['pools']:assert not inside(*p,pool['ring']),f"{what} crosses a pool"
  assert inside(*p,d['review']['ring']),f"{what} leaves the reviewed Elena band"
 

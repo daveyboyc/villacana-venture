@@ -187,7 +187,8 @@
    -144.9,
    49.2
   ],
-  "subject": "The second hedged bed and the lane"
+  "subject": "The second hedged bed and the lane",
+  "note": "26 October recheck: distinguish low planted-bed kerb from taller privacy enclosure; hedge tops cannot set wall heights."
  },
  "IMG_2198.jpg": {
   "shows": [
@@ -212,14 +213,16 @@
   "viewpoint": "ground",
   "useFor": [
    "planting",
-   "layout"
+   "layout",
+   "materials"
   ],
   "title": "Calle Elena north: planting bed with pollarded tree and a garden door",
   "looksAt": [
    -146.9,
    45.5
   ],
-  "subject": "The first hedged bed"
+  "subject": "The first hedged bed",
+  "note": "26 October recheck: ordinary garden wall has a raised curved coping above the full-height timber door; no visible hidden private floor bounds."
  },
  "IMG_2200.jpg": {
   "shows": [
@@ -228,14 +231,16 @@
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "planting"
+   "planting",
+   "materials"
   ],
   "title": "Calle Elena north: lane beside hedged beds and pollarded trees",
   "looksAt": [
    -146.9,
    45.5
   ],
-  "subject": "The first hedged bed"
+  "subject": "The first hedged bed",
+  "note": "26 October recheck: garden wall meets barred-window return; plain square lane/spur tiles and separate grey aggregate margins."
  },
  "IMG_2201.jpg": {
   "shows": [
@@ -251,7 +256,8 @@
    -146.9,
    45.5
   ],
-  "subject": "The first hedged bed and the lane north"
+  "subject": "The first hedged bed and the lane north",
+  "note": "26 October recheck: three straight columns of plain square tiles; matching grid alignment into the existing garden-door spur. Barred-window return is solid."
  },
  "IMG_2202.jpg": {
   "shows": [
@@ -810,7 +816,13 @@
   "useFor": [
    "layout"
   ],
-  "title": "Calle Elena south: tiled lane beside a lawn"
+  "title": "Calle Elena south: tiled lane beside a lawn",
+  "looksAt": [
+   -145.27,
+   71.4
+  ],
+  "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage",
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged."
  },
  "IMG_2254.jpg": {
   "shows": [
@@ -869,8 +881,15 @@
   "useFor": [
    "layout",
    "planting",
-   "facades"
-  ]
+   "facades",
+   "materials"
+  ],
+  "note": "26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged.",
+  "looksAt": [
+   -153.7,
+   69.3
+  ],
+  "subject": "Two brown garden doors in the white wall and the tiled approach between Elena south lawns"
  },
  "IMG_2262.jpg": {
   "shows": [
@@ -1716,9 +1735,10 @@
   "viewpoint": "roof",
   "useFor": [
    "layout",
-   "planting"
+   "planting",
+   "materials"
   ],
-  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361.",
+  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. 26 October patio recheck: full-height lane privacy wall and timber door, gateway return meeting house, one visible cross-patio divider, and plain square first-patio tiles. Circular decorated object is a table, not a floor inset. Coordinates/heights remain model estimates; hidden joins and other partitions unresolved.",
   "looksAt": [
    -159.3,
    28.2
@@ -1880,8 +1900,15 @@
   ],
   "viewpoint": "ground",
   "useFor": [
-   "layout"
-  ]
+   "layout",
+   "materials"
+  ],
+  "looksAt": [
+   -145.27,
+   71.4
+  ],
+  "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage",
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged. 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin."
  },
  "IMG_2331.jpg": {
   "shows": [
@@ -2116,7 +2143,13 @@
   "useFor": [
    "layout",
    "planting"
-  ]
+  ],
+  "note": "26 October recheck: low rendered plumbago-bed edge is distinct from taller screened enclosure behind it. The source supports a local frontage, not all hidden wall heights. looksAt is approximate existing-model context only, not registered subject placement.",
+  "looksAt": [
+   -141.0,
+   47.95
+  ],
+  "subject": "Plumbago bed edge and screened patio boundary on Cervantes east of Elena"
  },
  "IMG_2358.jpg": {
   "shows": [

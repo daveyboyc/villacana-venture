@@ -602,7 +602,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: distinguish low planted-bed kerb from taller privacy enclosure; hedge tops cannot set wall heights.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -628,9 +628,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path",
-   "elena_east_patios.json:elena-east-patios-west-wall"
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "subject": "The second hedged bed and the lane"
  },
@@ -672,9 +672,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path",
-   "elena_east_patios.json:elena-east-patios-west-wall"
+   "elena_north.json:elena-north-garden-door-path"
   ],
   "subject": "The second hedged bed"
  },
@@ -690,9 +690,10 @@
   "viewpoint": "ground",
   "useFor": [
    "planting",
-   "layout"
+   "layout",
+   "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: ordinary garden wall has a raised curved coping above the full-height timber door; no visible hidden private floor bounds.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -719,8 +720,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
-   "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path"
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
   ],
   "subject": "The first hedged bed"
  },
@@ -736,9 +737,10 @@
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "planting"
+   "planting",
+   "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: garden wall meets barred-window return; plain square lane/spur tiles and separate grey aggregate margins.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -766,8 +768,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
-   "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path"
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
   ],
   "subject": "The first hedged bed"
  },
@@ -785,7 +787,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "26 October recheck: three straight columns of plain square tiles; matching grid alignment into the existing garden-door spur. Barred-window return is solid.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -798,6 +800,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "elena_lane_paving.json:elena-north-three-column",
    "elena_north.json:elena-north-garden-wall",
    "elena_north.json:elena-north-window-return",
    "elena_north.json:elena-north-tree-bed-1",
@@ -813,8 +816,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
-   "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path"
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
   ],
   "subject": "The first hedged bed and the lane north",
   "headingOff": 93
@@ -895,6 +898,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-magnolia-bed"
   ],
@@ -1137,8 +1141,10 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "elena_north.json:elena-north-patio-divider",
+   "elena_north.json:elena-north-visible-patio-floor",
    "elena_north.json:elena-north-patio-east",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ]
  },
  {
@@ -1366,9 +1372,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "street:cervantes",
-   "ramp:cervantes-elena-ramp"
+   "street:cervantes"
   ],
   "subject": "The Elena south lane and lawns below the roof"
  },
@@ -2221,6 +2227,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
    "street:eva",
    "middle_pool.json:middle-pool-west-planter"
@@ -2260,6 +2267,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
    "middle_pool.json:middle-pool-west-planter",
    "street:eva"
@@ -2441,7 +2449,7 @@
    "street:cervantes",
    "ramp:cervantes-elena-ramp",
    "steps:cervantes-elena-steps",
-   "street:elena-south"
+   "elena_lane_paving.json:elena-south-three-column"
   ]
  },
  {
@@ -2457,7 +2465,7 @@
   "useFor": [
    "layout"
   ],
-  "note": null,
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -2469,15 +2477,20 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -149.4,
-   60.4
+  "citedBy": [
+   "elena_lane_paving.json:elena-south-three-column"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -145.27,
+   71.4
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:elena-south"
-  ]
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south",
+   "frontage_divisions.json:cervantes-elena-lawn-2"
+  ],
+  "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage"
  },
  {
   "id": "IMG_2254.jpg",
@@ -2513,6 +2526,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-planter-west"
   ],
@@ -2629,6 +2643,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ]
  },
@@ -2646,9 +2661,10 @@
   "useFor": [
    "layout",
    "planting",
-   "facades"
+   "facades",
+   "materials"
   ],
-  "note": null,
+  "note": "26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -2668,13 +2684,16 @@
    "door_sills.json:elena-bed-door-sill"
   ],
   "looksAt": [
-   -148.9,
-   62.7
+   -153.7,
+   69.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:elena-south"
-  ]
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-lawn-door-path",
+   "frontage_divisions.json:cervantes-elena-lawn-2"
+  ],
+  "subject": "Two brown garden doors in the white wall and the tiled approach between Elena south lawns"
  },
  {
   "id": "IMG_2262.jpg",
@@ -2712,10 +2731,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp",
-   "steps:cervantes-elena-steps"
+   "ramp:cervantes-elena-ramp"
   ],
   "subject": "The steps beside the Cervantes ramp"
  },
@@ -2758,6 +2777,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ]
  },
@@ -2844,9 +2864,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:cervantes",
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp",
-   "steps:cervantes-elena-steps"
+   "ramp:cervantes-elena-ramp"
   ]
  },
  {
@@ -3590,10 +3610,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp",
-   "steps:cervantes-elena-steps"
+   "ramp:cervantes-elena-ramp"
   ],
   "subject": "The steps beside the Cervantes ramp"
  },
@@ -4204,10 +4224,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp",
-   "steps:cervantes-elena-steps"
+   "ramp:cervantes-elena-ramp"
   ],
   "subject": "The ramp and steps side by side"
  },
@@ -4263,9 +4283,10 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials"
   ],
-  "note": null,
+  "note": "Tile correction review: lane identity and three-column layout inspected from the full photo; looksAt is approximate existing-model route context, not a registered subject position. Original camera/GPS unchanged. 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin.",
   "observation": "Looking south along Elena south: a straight square-tiled lane between a hedge and planting on the left and a lawn on the right, white low kerb, pollarded trees, a palm and white terraces at the far end.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1JzEI1BeVCRQI0sxbsWJDt8TOckUmLqIY/view?usp=drivesdk",
@@ -4278,18 +4299,22 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "elena_lane_paving.json:elena-south-three-column",
+   "frontage_divisions.json:cervantes-lawn-door-path",
    "door_sills.json:elena-lawn-door-sill",
    "door_sills.json:elena-bed-door-sill"
   ],
   "looksAt": [
-   -151.1,
-   62.5
+   -145.27,
+   71.4
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "frontage_divisions.json:cervantes-elena-lawn-1"
-  ]
+   "frontage_divisions.json:cervantes-elena-lawn-2"
+  ],
+  "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage"
  },
  {
   "id": "IMG_2331.jpg",
@@ -4373,10 +4398,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
    "middle_pool.json:middle-pool-west-planter",
-   "middle_pool_north.json:middle-pool-north-planter-cap",
-   "middle_pool_north.json:middle-pool-north-white-steps"
+   "middle_pool_north.json:middle-pool-north-planter-cap"
   ]
  },
  {
@@ -4794,6 +4819,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "frontage_divisions.json:cervantes-elena-lawn-1",
+   "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ]
  },
@@ -5179,10 +5205,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
    "street:cervantes",
    "street:elena-south",
-   "ramp:cervantes-elena-ramp",
-   "steps:cervantes-elena-steps"
+   "ramp:cervantes-elena-ramp"
   ],
   "subject": "The steps beside the Cervantes ramp",
   "headingOff": 93
@@ -5201,7 +5227,7 @@
    "layout",
    "planting"
   ],
-  "note": null,
+  "note": "26 October recheck: low rendered plumbago-bed edge is distinct from taller screened enclosure behind it. The source supports a local frontage, not all hidden wall heights. looksAt is approximate existing-model context only, not registered subject placement.",
   "observation": "Looking north-east along Cervantes east of the Elena junction: a square-tiled lane with a low white kerb wall, a tall plumbago and shrub hedge on the left, patches of sun through trees.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1LXG5DLGjL6Mt4AXG10HTYHp7-YQZnALg/view?usp=drivesdk",
@@ -5218,16 +5244,16 @@
    "elena_east_patios.json:elena-east-patios-cervantes-wall"
   ],
   "looksAt": [
-   -148.9,
-   47.9
+   -141.0,
+   47.95
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:elena-north",
-   "elena_north.json:elena-north-planter-box-2",
-   "elena_north.json:elena-north-tree-bed-1",
-   "elena_north.json:elena-north-garden-door-path"
-  ]
+   "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "street:cervantes"
+  ],
+  "subject": "Plumbago bed edge and screened patio boundary on Cervantes east of Elena"
  },
  {
   "id": "IMG_2358.jpg",
@@ -5459,9 +5485,10 @@
   "viewpoint": "roof",
   "useFor": [
    "layout",
-   "planting"
+   "planting",
+   "materials"
   ],
-  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361.",
+  "note": "Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. 26 October patio recheck: full-height lane privacy wall and timber door, gateway return meeting house, one visible cross-patio divider, and plain square first-patio tiles. Circular decorated object is a table, not a floor inset. Coordinates/heights remain model estimates; hidden joins and other partitions unresolved.",
   "observation": "Looking almost straight down from a roof edge, north-north-west: a narrow square-tiled terracotta lane between white walls with a planted strip, private patios behind low walls with brown doors, and an arched white garden gateway with bougainvillea that opens onto crazy paving and the north pool lawn (bollard lights, palm, tree). Shows how the Elena north lane meets the north pool courtyard.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1ynufkQ9UxBR_MwF8fvJc4Kdlnasmsdxx/view?usp=drivesdk",
@@ -5476,7 +5503,9 @@
   "citedBy": [
    "elena_north.json:elena-north-gateway",
    "elena_north.json:elena-north-patio-east",
-   "elena_north.json:elena-north-planter-west"
+   "elena_north.json:elena-north-patio-divider",
+   "elena_north.json:elena-north-planter-west",
+   "elena_north.json:elena-north-visible-patio-floor"
   ],
   "looksAt": [
    -159.3,
@@ -5484,10 +5513,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-gateway",
-   "elena_north.json:elena-north-patio-east",
-   "elena_north.json:elena-north-planter-west"
+   "elena_north.json:elena-north-patio-east"
   ],
   "subject": "The arched gateway at the north end of Elena"
  },
@@ -5529,6 +5558,7 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-magnolia-bed",
    "elena_north.json:elena-north-garden-wall",
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north"
   ],
   "subject": "The magnolia bed and the lean-to roof beside it"
@@ -5572,6 +5602,7 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-magnolia-bed",
    "elena_north.json:elena-north-garden-wall",
+   "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north"
   ],
   "subject": "The magnolia bed beside the Elena north lane"
