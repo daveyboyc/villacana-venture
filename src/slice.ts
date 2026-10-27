@@ -428,7 +428,8 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
-  if (kitWalls.size) void addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight);
+  const kitParts = kitWalls.size ? addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight) : Promise.resolve([]);
+  if (new URLSearchParams(location.search).get("export") === "kit") void kitParts.then((parts) => { (window as unknown as { villacanaKit: unknown }).villacanaKit = parts; });
   // Keep the existing finite garden paving visible on the newly surveyed ground.
   const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
   if(gardenPaving){scene.updateMatrixWorld(true);const old=gardenPaving.geometry;gardenPaving.geometry=refine(old,(x,z)=>Math.max(0,siteY(x,z)-silviaY),gardenPaving.matrixWorld);if(gardenPaving.geometry!==old)old.dispose();}

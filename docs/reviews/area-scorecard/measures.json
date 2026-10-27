@@ -1,0 +1,283 @@
+{
+ "about": "Written by python3 scripts/build_scorecard.py measure. ground: model minus 2020-21 survey on a 2 m grid of open ground within 15 m of a house. plan: footprint shift (metres east, south) that best fits the 2014-15 surveyed roofs, its correlation, and the share of footprint (1 m in from the edge) on surveyed roof at least 2 m up. kit: facade kit parts as placed in the Details view, traced from photos (data/facade_kit.json) or generated.",
+ "measuredAt": "2026-10-27",
+ "commit": "3f1a917",
+ "areaGrid": "7273ccfa24aec399",
+ "areas": {
+  "north-pool": {
+   "ground": {
+    "cells": 183,
+    "medianMiss": 0.06,
+    "within25cm": 0.85,
+    "over50cm": 0.05
+   },
+   "plan": {
+    "houses": 9,
+    "east": 0.5,
+    "south": -1.75,
+    "fit": 0.479,
+    "fitUnshifted": 0.386,
+    "onRoof": 0.92
+   },
+   "kit": {
+    "traced": 26,
+    "generated": 89
+   }
+  },
+  "middle-pool": {
+   "ground": {
+    "cells": 129,
+    "medianMiss": 0.05,
+    "within25cm": 0.91,
+    "over50cm": 0.01
+   },
+   "plan": {
+    "houses": 5,
+    "east": 0.5,
+    "south": -1.25,
+    "fit": 0.657,
+    "fitUnshifted": 0.592,
+    "onRoof": 0.96
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 40
+   }
+  },
+  "south-pool": {
+   "ground": {
+    "cells": 78,
+    "medianMiss": 0.05,
+    "within25cm": 1.0,
+    "over50cm": 0.0
+   },
+   "plan": {
+    "houses": 2,
+    "east": 0.25,
+    "south": -1.25,
+    "fit": 0.622,
+    "fitUnshifted": 0.577,
+    "onRoof": 0.98
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 29
+   }
+  },
+  "main-pool": {
+   "ground": {
+    "cells": 237,
+    "medianMiss": 0.06,
+    "within25cm": 0.88,
+    "over50cm": 0.06
+   },
+   "plan": {
+    "houses": 10,
+    "east": 3.5,
+    "south": -3.5,
+    "fit": -0.06,
+    "fitUnshifted": -0.156,
+    "onRoof": 0.24
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 35
+   }
+  },
+  "elena": {
+   "ground": {
+    "cells": 137,
+    "medianMiss": 0.07,
+    "within25cm": 0.98,
+    "over50cm": 0.0
+   },
+   "plan": {
+    "houses": 5,
+    "east": 0.5,
+    "south": -1.25,
+    "fit": 0.616,
+    "fitUnshifted": 0.559,
+    "onRoof": 0.97
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 75
+   }
+  },
+  "cervantes": {
+   "ground": {
+    "cells": 324,
+    "medianMiss": 0.06,
+    "within25cm": 0.99,
+    "over50cm": 0.0
+   },
+   "plan": {
+    "houses": 19,
+    "east": 0.75,
+    "south": -1.0,
+    "fit": 0.624,
+    "fitUnshifted": 0.559,
+    "onRoof": 0.96
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 149
+   }
+  },
+  "dali": {
+   "ground": {
+    "cells": 440,
+    "medianMiss": 0.07,
+    "within25cm": 0.93,
+    "over50cm": 0.01
+   },
+   "plan": {
+    "houses": 12,
+    "east": 0.5,
+    "south": -1.25,
+    "fit": 0.565,
+    "fitUnshifted": 0.515,
+    "onRoof": 0.95
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 130
+   }
+  },
+  "picasso": {
+   "ground": {
+    "cells": 892,
+    "medianMiss": 0.06,
+    "within25cm": 1.0,
+    "over50cm": 0.0
+   },
+   "plan": {
+    "houses": 23,
+    "east": -1.5,
+    "south": -0.75,
+    "fit": 0.005,
+    "fitUnshifted": -0.011,
+    "onRoof": 0.46
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 274
+   }
+  },
+  "north-lanes": {
+   "ground": {
+    "cells": 516,
+    "medianMiss": 0.06,
+    "within25cm": 1.0,
+    "over50cm": 0.0
+   },
+   "plan": {
+    "houses": 16,
+    "east": 0.25,
+    "south": -1.75,
+    "fit": 0.57,
+    "fitUnshifted": 0.465,
+    "onRoof": 0.95
+   },
+   "kit": {
+    "traced": 4,
+    "generated": 249
+   }
+  },
+  "eva": {
+   "ground": {
+    "cells": 316,
+    "medianMiss": 0.06,
+    "within25cm": 0.94,
+    "over50cm": 0.0
+   },
+   "plan": {
+    "houses": 18,
+    "east": 0.0,
+    "south": -1.5,
+    "fit": 0.416,
+    "fitUnshifted": 0.371,
+    "onRoof": 0.8
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 146
+   }
+  },
+  "seaward-lanes": {
+   "ground": {
+    "cells": 1147,
+    "medianMiss": 0.06,
+    "within25cm": 0.97,
+    "over50cm": 0.02
+   },
+   "plan": {
+    "houses": 54,
+    "east": 0.5,
+    "south": -1.5,
+    "fit": 0.513,
+    "fitUnshifted": 0.46,
+    "onRoof": 0.86
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 599
+   }
+  },
+  "barraka-beach": {
+   "ground": {
+    "cells": 142,
+    "medianMiss": -0.94,
+    "within25cm": 0.03,
+    "over50cm": 0.94
+   },
+   "plan": {
+    "houses": 1
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 0
+   }
+  },
+  "paseo": {
+   "ground": {
+    "cells": 684,
+    "medianMiss": 0.05,
+    "within25cm": 0.65,
+    "over50cm": 0.29
+   },
+   "plan": {
+    "houses": 18,
+    "east": 0.0,
+    "south": -1.5,
+    "fit": 0.406,
+    "fitUnshifted": 0.359,
+    "onRoof": 0.75
+   },
+   "kit": {
+    "traced": 0,
+    "generated": 111
+   }
+  },
+  "whole-resort": {
+   "ground": {
+    "cells": 6663,
+    "medianMiss": 0.06,
+    "within25cm": 0.92,
+    "over50cm": 0.06
+   },
+   "plan": {
+    "houses": 198,
+    "east": 0.25,
+    "south": -1.25,
+    "fit": 0.431,
+    "fitUnshifted": 0.392,
+    "onRoof": 0.83
+   },
+   "kit": {
+    "traced": 30,
+    "generated": 2480
+   }
+  }
+ }
+}

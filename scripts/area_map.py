@@ -6,8 +6,11 @@ mapped width), car parks and seafront shapes, and a circle around its pools. A p
 the nearest area within REACH metres, so a house beside a lane belongs to that lane's area;
 ties go to the area listed first. A pool courtyard owns the ground within COURTYARD metres of its
 water outright and competes by distance beyond that, out to its matching radius, so lanes that
-run past a courtyard keep their own area. Further out a point belongs to none.
+run past a courtyard keep their own area. A house belongs to the area most of its corners fall
+in, and ground further out than REACH (back gardens, inner courtyards) to the nearest house
+within HOUSE_REACH metres. Further out still a point belongs to none.
 """
+from collections import Counter
 import json
 import math
 from pathlib import Path
@@ -17,6 +20,7 @@ from build_references import area_matchers
 
 ROOT = Path(__file__).resolve().parents[1]
 REACH = 15.0
+HOUSE_REACH = 15.0
 COURTYARD = 8.0
 STEP = 4.0
 
@@ -27,7 +31,8 @@ def load_areas():
 
 
 def classifier(skeleton=None, areas=None):
-    """A function (x, z) -> area id or None, in model metres (+x east, +z south)."""
+    """A function (x, z) -> area id or None, in model metres (+x east, +z south). Its `houses`
+    attribute gives the area of each house by building id."""
     skeleton = skeleton or json.loads((ROOT / 'public/map/skeleton.json').read_text())
     areas = areas or load_areas()
     by_feature, near_points = area_matchers(areas, skeleton)
@@ -58,17 +63,33 @@ def classifier(skeleton=None, areas=None):
                 best = 0.0  # an extra point of the area (main-pool's 'points'), owned outright within its radius
         return best
 
-    def area_of(x, z):
+    def near(x, z):
         d, area = min((distance(a, (x, z)), i, a) for i, a in enumerate(order))[::2]
         return area if d <= REACH else None
+
+    houses = []
+    for b in skeleton['buildings']:
+        if b['floors'] > 0 and not b.get('passage'):
+            votes = Counter(a for a in (near(x, z) for x, z in b['ring']) if a)
+            if votes:
+                houses.append((b['id'], b['ring'], min(votes, key=lambda a: (-votes[a], order.index(a)))))
+
+    def area_of(x, z):
+        area = near(x, z)
+        if area:
+            return area
+        d, area = min(((0.0 if assign.inside((x, z), ring) else assign.nearest((x, z), ring + ring[:1])[0], a) for _, ring, a in houses),
+                      default=(math.inf, None))
+        return area if d <= HOUSE_REACH else None
+    area_of.houses = {id: a for id, _, a in houses}  # the area of each house, by building id
     return area_of
 
 
-def grid(skeleton=None, areas=None):
+def grid(skeleton=None, areas=None, area_of=None):
     """The area of every STEP-metre cell over the resort, compactly: one character per cell."""
     skeleton = skeleton or json.loads((ROOT / 'public/map/skeleton.json').read_text())
     areas = areas or load_areas()
-    area_of = classifier(skeleton, areas)
+    area_of = area_of or classifier(skeleton, areas)
     xs = [p[0] for b in skeleton['buildings'] for p in b['ring']]
     zs = [p[1] for b in skeleton['buildings'] for p in b['ring']]
     x0, z0 = math.floor(min(xs) / STEP) * STEP - 20, math.floor(min(zs) / STEP) * STEP - 20
