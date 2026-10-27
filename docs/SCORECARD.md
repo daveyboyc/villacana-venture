@@ -47,6 +47,7 @@ Pintor Picasso fall outside every area and count only toward the whole resort.
 | Cameras solved, stations holding | `data/photo_poses.json` | Photos with a solved camera (`docs/PHOTO_ALIGNMENT.md`). A station (or a photo solved alone) holds when its position is known to within 1 m east and south (one sigma) and a held-out check measured the model through it. The north-pool station holds; the Elena roof solves do not. |
 | Held-out misfit | the same | RMS misfit in metres of each solved photo's held-out checks, holding or not. |
 | Kit parts traced / all | the scene in the Details view (`measure`) | Facade-kit doors, windows and balconies placed from photos (`data/facade_kit.json`) against all placed, including the generated ones. |
+| How sure | `public/confidence.json` (`docs/CONFIDENCE.md`) | Features of the area that are photographed, estimated and inferred, and known gaps. A judgement for the game, not placement approval. |
 | Placement verified / features | `refs/graph.json` | Model features in the area with a current `placement-verified-by` approval, of all registered there (`docs/PLACEMENT_VERIFICATION.md`). |
 | Open discrepancies | the same | Unresolved placement reports on the area's features. |
 | Tasks | `data/build_queue.json` | Open and in-progress queue tasks for the area. |

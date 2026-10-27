@@ -21,6 +21,13 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 - Distinguish photo-supported wall/opening arrangements from estimated extents,
   untraced enclosure boundaries and likely passages. Do not invent repeated walls
   or gates as substitutes for tracing.
+- Every feature has a confidence level shown by the map/Overview "Sure / unsure"
+  overlay (`docs/CONFIDENCE.md`): photographed, estimated, inferred, plus known gaps.
+  When you build or change a feature, set its level and reason in `data/confidence.json`.
+  Structure that is plainly there but only partly visible or seen only on the aerial
+  may be built as `inferred` (orange) instead of being left out; never grade it
+  photographed. Record anything left out under `gaps`. Respect Dave's decisions there:
+  `accepted` means leave it alone, `needs-photos` means improve it when photos arrive.
 - Default to the clear Layout view. Decorative objects must respect the shared
   route-clearance guard, including their visible footprint. Keep Details optional.
 - Buildings keep a level datum, opaque materials and extrusion material groups.
