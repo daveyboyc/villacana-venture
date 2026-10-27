@@ -1510,8 +1510,10 @@
    "dependsOn": [
     "path-network-baseline"
    ],
-   "status": "open",
-   "issue": 130
+   "status": "done",
+   "issue": 130,
+   "owner": "Codex",
+   "notes": "Declared available-source audit: 51 distinct full sources, 30 component rows, source annotations, schematic plan/sections and pinned model comparisons. Independent review completes only this inventory scope. Registration, Miguel identity/portals, concealed joins, eastern terminal, measured levels and structural corrections remain open in #156/#157/#158 and shared #148. No physical map completion or placement approval."
   },
   {
    "id": "path-network-inventory-dali",
@@ -1963,6 +1965,140 @@
    "owner": "Codex",
    "notes": "Bounded correction independently reviewed and delivered provisionally: full-height north wall/door, joined visible returns, one divider and finite first-patio plain tile field. Model commit f879f907e141984b1261a9b92ec2ed014ede2329. Hidden 0.95 m frontage continuity, door-relative heights and floor datum remain estimates. Placement gate warnings retained; task remains in progress without fresh measured registration.",
    "issue": 153
+  },
+  {
+   "id": "cervantes-register-edges",
+   "area": "cervantes",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Cervantes: register finite path sides, wall ends and eastern terminal",
+   "photos": [],
+   "features": [],
+   "sourceReferences": [
+    "IMG_2196.jpg",
+    "IMG_2197.jpg",
+    "IMG_2252.jpg",
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2266.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg",
+    "IMG_2286.jpg",
+    "IMG_2287.jpg",
+    "IMG_2288.jpg",
+    "IMG_2289.jpg",
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2355.jpg",
+    "IMG_2356.jpg",
+    "IMG_2358.jpg",
+    "IMG_2359.jpg",
+    "IMG_2360.jpg",
+    "IMG_2366.jpg",
+    "IMG_2367.jpg",
+    "IMG_2368.jpg",
+    "IMG_2369.jpg"
+   ],
+   "build": "Register source-traced physical margins, house/ground-wall distinctions and finite patio fragments using ground controls and held-out points. Obtain missing far-eastern terminal/hidden-return views; retain unknown intervals.",
+   "avoid": "No moving registry houses/pools or turning route buffers/roof silhouettes into physical edges.",
+   "accept": [
+    "Bounded source-to-world registration and source uncertainty for supported edges",
+    "Both sides/terminal and concealed gaps explicit; cross-area Elena references reused",
+    "Independent actual-source/map review; no unmeasured completeness claim"
+   ],
+   "status": "open",
+   "dependsOn": [
+    "path-network-inventory-cervantes"
+   ],
+   "issue": 156
+  },
+  {
+   "id": "cervantes-identify-miguel-passage",
+   "area": "cervantes",
+   "priority": 1,
+   "kind": "audit",
+   "title": "Cervantes/Miguel: identify signed passage and both world portals",
+   "photos": [],
+   "features": [],
+   "sourceReferences": [
+    "IMG_2288.jpg",
+    "IMG_2289.jpg",
+    "IMG_2266.jpg"
+   ],
+   "build": "Obtain opposite/entrance views and physical shared anchors for IMG2288. Resolve CALLE MIGUEL interior identity, host and both portal connections, keeping legacytun008 and other signed groups separate until supported.",
+   "avoid": "No guessed host cut, tunnel merge by street name/style, new access assumption or unmeasured width.",
+   "accept": [
+    "Both world portals registered or explicitly unresolved with evidence requests",
+    "Camera-side portal remains unknown until a real source identifies it",
+    "Legacy aliases and signed source group retained; no placement approval from source inventory"
+   ],
+   "status": "open",
+   "dependsOn": [
+    "path-network-inventory-cervantes"
+   ],
+   "issue": 157
+  },
+  {
+   "id": "cervantes-bounded-structure",
+   "area": "cervantes",
+   "priority": 1,
+   "kind": "build",
+   "title": "Cervantes: correct supported boundary and passage omissions after registration",
+   "photos": [],
+   "features": [],
+   "sourceReferences": [
+    "IMG_2196.jpg",
+    "IMG_2197.jpg",
+    "IMG_2252.jpg",
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2262.jpg",
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2266.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg",
+    "IMG_2286.jpg",
+    "IMG_2287.jpg",
+    "IMG_2288.jpg",
+    "IMG_2289.jpg",
+    "IMG_2327.jpg",
+    "IMG_2328.jpg",
+    "IMG_2329.jpg",
+    "IMG_2342.jpg",
+    "IMG_2355.jpg",
+    "IMG_2356.jpg",
+    "IMG_2358.jpg",
+    "IMG_2359.jpg",
+    "IMG_2360.jpg",
+    "IMG_2366.jpg",
+    "IMG_2367.jpg",
+    "IMG_2368.jpg",
+    "IMG_2369.jpg"
+   ],
+   "build": "Compare source inventory with the registered current model and implement only declared supported finite structural corrections, before surface/detail refinement. Keep the Miguel group separate until its identity/portals are solved.",
+   "avoid": "No whole-lane facade replacement, hidden enclosure completion or unregistered tunnel construction.",
+   "accept": [
+    "Affected raw feature IDs and before/after source comparisons declared",
+    "Ground/roof, route/door steps and drain distinctions retained",
+    "Build, actual-surface visibility and routes both directions pass; unresolved placement/levels remain visible"
+   ],
+   "status": "open",
+   "dependsOn": [
+    "path-network-inventory-cervantes",
+    "cervantes-register-edges",
+    "3d-browser-regression-reliability"
+   ],
+   "issue": 158
   }
  ]
 }
