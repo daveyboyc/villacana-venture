@@ -245,7 +245,7 @@
     "IMG_2192.jpg"
    ],
    "build": "The curved north end of the raised planter, the white steps by the north-west entrance, and the white garden wall with a brown door and pergola entrance north of the west path. The steps climb about 0.3-0.55 m from the courtyard path to the upper level behind the planter, which the terrain already gives; build them like data/middle_pool_steps.json. Heights: data/levels_survey.json item middle-pool-nw-rise.",
-   "avoid": "IMG_2331 (±17 m) and IMG_2332 (±14 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
+   "avoid": "IMG_2331 (\u00b117 m) and IMG_2332 (\u00b114 m) have poor pins: place from the pool ring, path and aerial, not the pins. Correct their pins in data/photo_positions.json first.",
    "accept": [
     "pins corrected with locationBasis",
     "check_middle_pool.py extended"
@@ -390,7 +390,7 @@
    ],
    "status": "done",
    "issue": 36,
-   "notes": "Review draft reconciled with the 15 October levels survey: blocked on raised-terraces (#54). Issue #36 owns the 0.25–0.4 m north-side patios and one/two-step openings; the NW six-riser 0.9–1.1 m terrace belongs to #54. Earlier five-riser/0.75 m implementation 4ad9519 is withdrawn from the branch tip. See docs/NORTH_POOL_REVIEW.md and the non-rendered trace draft.",
+   "notes": "Review draft reconciled with the 15 October levels survey: blocked on raised-terraces (#54). Issue #36 owns the 0.25\u20130.4 m north-side patios and one/two-step openings; the NW six-riser 0.9\u20131.1 m terrace belongs to #54. Earlier five-riser/0.75 m implementation 4ad9519 is withdrawn from the branch tip. See docs/NORTH_POOL_REVIEW.md and the non-rendered trace draft.",
    "owner": "Codex"
   },
   {
@@ -614,7 +614,7 @@
     "IMG_2293.jpg",
     "IMG_2283.jpg"
    ],
-   "build": "House doors on the lanes sit one sill (0.1-0.15 m, red tread or white) above the lane; the Dalí house-side footpath stands a kerb (0.1-0.15 m) above the parking asphalt, with passages flush to it and a slot drain at the threshold. Add sills under photographed doors and the footpath kerb as Details-level geometry that the player steps over. Also the gentle flagstone approach to the arch at the south end of Dalí (IMG_2283): 0.15-0.35 m over 5-6 m between flared white kerbs, no steps. Heights: data/levels_survey.json items elena-south-sills, dali-footpath-kerb, dali-south-approach.",
+   "build": "House doors on the lanes sit one sill (0.1-0.15 m, red tread or white) above the lane; the Dal\u00ed house-side footpath stands a kerb (0.1-0.15 m) above the parking asphalt, with passages flush to it and a slot drain at the threshold. Add sills under photographed doors and the footpath kerb as Details-level geometry that the player steps over. Also the gentle flagstone approach to the arch at the south end of Dal\u00ed (IMG_2283): 0.15-0.35 m over 5-6 m between flared white kerbs, no steps. Heights: data/levels_survey.json items elena-south-sills, dali-footpath-kerb, dali-south-approach.",
    "avoid": "No sills on doors no photo shows; do not raise house floors (their floors stay at lane level).",
    "accept": [
     "check script for sill positions against photographed doors",
@@ -720,7 +720,7 @@
     "IMG_2208.jpg",
     "IMG_2363.jpg"
    ],
-   "build": "Follow up NP-04/06/08/09/11 in docs/reviews/north-pool-alignment-audit: obtain clear ground-wall corners, complete water/deck transition, individual visible roof projections and unobscured Dalí/Picasso/Isabel access/width views. Use fixed global registration and independent held-out ground landmarks before proposing bounded plan corrections. Existing photos establish presence/order, not concealed extents.",
+   "build": "Follow up NP-04/06/08/09/11 in docs/reviews/north-pool-alignment-audit: obtain clear ground-wall corners, complete water/deck transition, individual visible roof projections and unobscured Dal\u00ed/Picasso/Isabel access/width views. Use fixed global registration and independent held-out ground landmarks before proposing bounded plan corrections. Existing photos establish presence/order, not concealed extents.",
    "avoid": "No hidden property polygons, repeated substitute walls/roofs, camera-pin snapping or local image warps. No assumption that unchanged registry coordinates prove accuracy.",
    "accept": [
     "Plan corrections supported by independently identifiable ground corners or stated unresolved limits",
@@ -920,7 +920,7 @@
     "IMG_2185.jpg",
     "IMG_2187.jpg"
    ],
-   "build": "Inspect T01–T14 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.",
+   "build": "Inspect T01\u2013T14 and the separate Jorge comparison in the entrance pack. Confirm the owner-reported tunnel identity, register the entrance/exit against identifiable ground/registry landmarks, and assess each structural component against the actual model. Publish a bounded plan/elevation and unresolved dimensions before a separate geometry build.",
    "avoid": "Do not transfer the Jorge radial fanlight gate or its passage length into Silvia, infer a barrel vault from an arch, propagate four-column street paving into patterned tunnel floors, or treat a material citation as a structural passage.",
    "accept": [
     "Owner-reported tunnel is identified or remains explicitly unresolved",
@@ -1207,7 +1207,7 @@
    "kind": "levels",
    "title": "Ground levels: follow the laser survey instead of one 0.5 m rise",
    "photos": [],
-   "build": "The block falls about 3 m from its north-west corner to the main pool and paseo (docs/reviews/lidar-levels): Dalí +1.75 to +0.07, Cervantes +1.40 to +0.23, Picasso +1.52 to -0.90, the north pool deck +0.80 and the houses around it about +1.2 above the model. Over half the open ground within 15 m of a house is more than 0.5 m off. Build the ground from the survey's 1 m ground model (smoothed, sampled into data/terrain.json or a committed derived height grid) with the photo-read steps, ramps and raised patios in data/levels_survey.json kept as local detail, and houses keeping one level datum each.",
+   "build": "The block falls about 3 m from its north-west corner to the main pool and paseo (docs/reviews/lidar-levels): Dal\u00ed +1.75 to +0.07, Cervantes +1.40 to +0.23, Picasso +1.52 to -0.90, the north pool deck +0.80 and the houses around it about +1.2 above the model. Over half the open ground within 15 m of a house is more than 0.5 m off. Build the ground from the survey's 1 m ground model (smoothed, sampled into data/terrain.json or a committed derived height grid) with the photo-read steps, ramps and raised patios in data/levels_survey.json kept as local detail, and houses keeping one level datum each.",
    "avoid": "No raw survey rasters in the repository; commit only derived, attributed heights. Do not let interpolated ground under buildings or over pools set those levels. Keep every lane walkable.",
    "accept": [
     "scripts/lidar_check.py: open ground within 15 m of a house mostly within 0.25 m of the survey; every street profile within 0.3 m",
@@ -1217,7 +1217,7 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "Built 24 October (docs/reviews/terrain-from-lidar): data/terrain.json is a 2 m PNOA-LiDAR ground grid with fills under houses and pools, level surveyed pool decks and the three photographed flights kept exact. lidar_check: open ground within 0.25 m of the survey 26% -> 92%, over 0.5 m off 55% -> 6%; pool decks within 0.04 m; every street's median miss 0.06-0.11 m (the Eva west footpath 0.39 m: its door-sill visual datum). Worst misses over 0.3 m remain at Guillermo (the lowered cut, guillermo-descent-recheck), the Cervantes steps (photo 0.5 m against the survey's 0.21 m), Dalí by the south approach hold (0.72 m), Loira (0.46 m) and Jorge (0.32 m). The seafront strip behind the paseo wall keeps the old datum. Placement: buildings and door sills move vertically, so the placement gate flags them; no placement approval is claimed, so the task stays in progress until a verified packet exists (docs/PLACEMENT_VERIFICATION.md)."
+   "notes": "Built 24 October (docs/reviews/terrain-from-lidar): data/terrain.json is a 2 m PNOA-LiDAR ground grid with fills under houses and pools, level surveyed pool decks and the three photographed flights kept exact. lidar_check: open ground within 0.25 m of the survey 26% -> 92%, over 0.5 m off 55% -> 6%; pool decks within 0.04 m; every street's median miss 0.06-0.11 m (the Eva west footpath 0.39 m: its door-sill visual datum). Worst misses over 0.3 m remain at Guillermo (the lowered cut, guillermo-descent-recheck), the Cervantes steps (photo 0.5 m against the survey's 0.21 m), Dal\u00ed by the south approach hold (0.72 m), Loira (0.46 m) and Jorge (0.32 m). The seafront strip behind the paseo wall keeps the old datum. Placement: buildings and door sills move vertically, so the placement gate flags them; no placement approval is claimed, so the task stays in progress until a verified packet exists (docs/PLACEMENT_VERIFICATION.md)."
   },
   {
    "id": "guillermo-descent-recheck",
@@ -1520,7 +1520,7 @@
    "area": "dali",
    "priority": 1,
    "kind": "audit",
-   "title": "Calle Pintor Dalí: full-source path, tunnel and boundary inventory",
+   "title": "Calle Pintor Dal\u00ed: full-source path, tunnel and boundary inventory",
    "photos": [],
    "build": "Inspect every relevant full source and aerial; account for observed features, duplicates and unusable sources. Census covered connections, both path edges and wall/roof/enclosure interpretations; preserve unknowns and evidence requests.",
    "avoid": "No guessed geometry, inferred public access, placement approval or completion from catalogue tags.",
@@ -1752,7 +1752,7 @@
    "kind": "tooling",
    "title": "Diagnose and stabilise 3D browser regressions before geometry releases",
    "photos": [],
-   "build": "Reproduce cold-start, rotation and compositor waits serially on the software renderer; separate dependency-reload navigation from frame/compositor costs. Retain every route, surface, photo-map and mobile assertion. Source capture default 30 s fails while observed overview screenshots take 32–52 s; record timings and provide useful failure diagnostics.",
+   "build": "Reproduce cold-start, rotation and compositor waits serially on the software renderer; separate dependency-reload navigation from frame/compositor costs. Retain every route, surface, photo-map and mobile assertion. Source capture default 30 s fails while observed overview screenshots take 32\u201352 s; record timings and provide useful failure diagnostics.",
    "avoid": "Do not silently disable shadows/geometry or skip assertions to obtain a pass; do not equate a larger timeout with performance resolution.",
    "accept": [
     "Declared source/model scope and limitations retained",
@@ -1819,7 +1819,7 @@
     "IMG_2203.jpg",
     "IMG_2255.jpg"
    ],
-   "build": "Compare T01–T09 drawings and pinned model-context captures. After bounded placement workflow, implement supported arched soffits, near door recesses, small farther shuttered openings (type unresolved), and distinct private gateway. Preserve flat ceiling, upper floors, roof and shared collision. Floor inset/surface follows supported structure; unknown dimensions remain open.",
+   "build": "Compare T01\u2013T09 drawings and pinned model-context captures. After bounded placement workflow, implement supported arched soffits, near door recesses, small farther shuttered openings (type unresolved), and distinct private gateway. Preserve flat ceiling, upper floors, roof and shared collision. Floor inset/surface follows supported structure; unknown dimensions remain open.",
    "avoid": "Do not turn smaller farther openings into extra doors, open a private gate as public access, change a host footprint or transfer details from Silvia/Jorge. No decorative pass before inventory/registration.",
    "accept": [
     "Declared source/model scope and limitations retained",
@@ -2146,6 +2146,33 @@
    "status": "done",
    "owner": "Claude",
    "notes": "Done: scripts/build_scorecard.py, public/scorecard.json, refs/SCORECARD.md, src/scorecard.ts; docs/SCORECARD.md; screenshots in docs/reviews/area-scorecard/."
+  },
+  {
+   "id": "paseo-stamped-surface",
+   "area": "paseo",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Paseo: photo-backed stamped concrete on the existing walk",
+   "photos": [
+    "IMG_2481.jpg",
+    "IMG_2482.jpg",
+    "IMG_2483.jpg"
+   ],
+   "features": [
+    "paseo_wall.json:paseo-retaining-wall",
+    "paseo_wall.json:paseo-timber-edge"
+   ],
+   "build": "Replace the flat pink existing paseo ribbon material with muted weathered red stamped-concrete markings, using continuous metric UVs along its existing centreline. Preserve all geometry, width, levels, wall/fence, terrain and collision.",
+   "avoid": "No inferred plant positions, changed wall/path extents or calibrated placement claims. Elena excluded.",
+   "accept": [
+    "Independent full-source and final-render review",
+    "Continuous scale/phase through ribbon segments; unchanged vertex positions and traversal",
+    "Source checks, production build and layout/overview/photo-map browser regressions"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Material-only first section pass from the 27 October batch. Exact stamp scale, camera alignment and inherited path placement remain estimates; no placement approval claimed."
   }
  ]
 }
