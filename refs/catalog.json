@@ -5790,6 +5790,355 @@
   "subject": "The walled patios north of Cervantes"
  },
  {
+  "id": "IMG_2481.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2481.jpg",
+  "title": "Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -86.8,
+   "z": 216.5,
+   "heading": 46,
+   "accuracy": 2.0,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -50.0,
+   180.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall"
+  ],
+  "subject": "Paseo curve and verge towards Barraka"
+ },
+ {
+  "id": "IMG_2482.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2482.jpg",
+  "title": "Paseo looking north-east: agave verge and Barraka restaurant",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -48.7,
+   "z": 180.9,
+   "heading": 49,
+   "accuracy": 2.6,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   28.8,
+   110.5
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:barraka",
+   "area:beach"
+  ],
+  "subject": "Barraka beach restaurant at the end of the paseo"
+ },
+ {
+  "id": "IMG_2483.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2483.jpg",
+  "title": "Paseo looking north-east, second shot: agave verge to Barraka",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -47.5,
+   "z": 179.0,
+   "heading": 54,
+   "accuracy": 2.7,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   28.8,
+   110.5
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:barraka",
+   "area:beach"
+  ],
+  "subject": "Barraka beach restaurant at the end of the paseo"
+ },
+ {
+  "id": "IMG_2488.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2488.jpg",
+  "title": "Calle Guillermo from its seaward end, looking up the lane",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials",
+   "planting"
+  ],
+  "note": "Looks up Guillermo (heading 334, the street runs 328). Relevant to guillermo-descent-recheck: no steps in the lower lane; gradient not judged from this photo.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -11.4,
+   "z": 134.2,
+   "heading": 334,
+   "accuracy": 4.7,
+   "altitude": 3.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -22.0,
+   120.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "street:guillermo"
+  ],
+  "subject": "Calle Guillermo from its seaward end"
+ },
+ {
+  "id": "IMG_2494.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2494.jpg",
+  "title": "Narrow lane by Teodoro Rojo: barred windows, planter, drains",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ],
+  "note": "Near-duplicate viewpoint of IMG_2241.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -79.8,
+   "z": 105.8,
+   "heading": 336,
+   "accuracy": 4.7,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -84.0,
+   95.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "Narrow lane north of Teodoro Rojo"
+ },
+ {
+  "id": "IMG_2507.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2507.jpg",
+  "title": "Elena 25 passage: street arch with potted schefflera",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": "Second covered passage on Elena, distinct from the 18-36 walkway (6265201UF1366N_part5). Floor flush with the lane.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -143.3,
+   "z": 73.6,
+   "heading": 16,
+   "accuracy": 2.5,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -142.0,
+   71.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ],
+  "subject": "Street arch of the CALLE ELENA 25 passage"
+ },
+ {
+  "id": "IMG_2508.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2508.jpg",
+  "title": "Covered passage signed CALLE ELENA 25, looking through to a garden gate",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage",
+   "materials"
+  ],
+  "note": "Not in data/passages.json; the registry draws this block as one solid 2-storey part. Compass heading inside a covered passage may be off; direction into the block is from the pin against the Elena south lane, the far end is unregistered.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -144.0,
+   "z": 72.0,
+   "heading": 53,
+   "accuracy": 2.6,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -138.0,
+   66.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "CALLE ELENA 25 covered passage into block 6265601UF1366N_part1"
+ },
+ {
+  "id": "IMG_2518.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2518.jpg",
+  "title": "Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "levels",
+   "materials",
+   "layout"
+  ],
+  "note": "Plaque reads CALLE ELENA 18 36, not 18-30. Two risers up into the walkway from the lane: level item elena-walkway-east-steps.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.0,
+   "z": 37.7,
+   "heading": 276,
+   "accuracy": 2.5,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -155.0,
+   39.5
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ],
+  "subject": "East portal steps and ramp of the Calle Elena covered walkway",
+  "headingOff": 67
+ },
+ {
+  "id": "IMG_2519.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2519.jpg",
+  "title": "Elena covered walkway looking west to the arch and the 36/34 gates",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "note": "Both-end evidence for the walkway with IMG_2203 (opposite direction) and IMG_2202.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": null,
+  "camera": {
+   "x": -154.0,
+   "z": 36.8,
+   "heading": 246,
+   "accuracy": 2.6,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -162.0,
+   43.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry"
+  ],
+  "subject": "Calle Elena covered walkway towards its west arch"
+ },
+ {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
   "kind": "map-screenshot",
   "path": "villacana-reference/apple-maps/01-3d-overview-from-north.png",

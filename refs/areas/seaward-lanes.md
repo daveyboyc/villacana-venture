@@ -16,6 +16,7 @@ The lanes between the middle pool and the beach.
 - 24 October Silvia paving correction: full2190/2191 floor reinspection identifies square terracotta units offset around small blue/cream squares, creating diagonal insert runs. Earlier clipped-corner description was imprecise. Current surface uses coherent metric UVs, varied aged tiles/grout/motifs and wall pebble bands; precise pitches/angle remain estimates. Existing floor extents, topology, level, collision and tunnel/bed positions retained. See docs/reviews/silvia-paving/.
 - 24 October outdoor Silvia path: full IMG_2189/2334 show plain worn terracotta squares, four straight columns and broad grey mortar; the decorated square-insert paving belongs inside the tunnel. Existing lane visual surface continues to the provisional side approach, with a plain overlay to the estimated arch threshold. Pool-side irregular stone/grate retained. Continuation endpoints, threshold and gate/tunnel association remain estimated; no registry, route, terrain, collision or structural placement change. See docs/reviews/silvia-outdoor-path/.
 - Outdoor-path integration with mainPR120: the current survey ground covered previously flat lane/garden paving, so only those existing visual surfaces now follow siteY. Source outlines, collision and survey data retained. Model diagnostic: garden sample at local8.6 is about0.23m above the level tunnel slab; this is an unresolved host/garden ground transition, not a photo-measured step or smooth source match. Track with in-progress silvia-outdoor-path.
+- 27 October batch: IMG_2488 looks up Calle Guillermo from its seaward end: plain square terracotta tiles, a slot drain across the lane, raised white planter with strelitzia; no steps in the lower lane (input for guillermo-descent-recheck, gradient not judged). IMG_2494 repeats the IMG_2241 lane near Teodoro Rojo.
 
 ## Read first
 
@@ -26,8 +27,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 23, Levels and slopes: 5, Facades and roofs: 4, Materials: 15, Planting: 7, Signs: 3, Views: 1
-31 reviewed, 0 suggested only by camera position.
+Layout: 25, Levels and slopes: 6, Facades and roofs: 5, Materials: 17, Planting: 8, Signs: 3, Views: 1
+33 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -125,6 +126,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2191.jpg](../../public/photos-ref/IMG_2191.jpg) | ground | signage | Passage plaque reading CALLE SILVIA 1-15 _Used by: silvia_tunnel.json:silvia-tunnel-study._ |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
+| [IMG_2488.jpg](../../public/photos-ref/IMG_2488.jpg) | ground | layout, levels, materials, planting | Calle Guillermo from its seaward end, looking up the lane **Looks at:** Calle Guillermo from its seaward end. **Note:** Looks up Guillermo (heading 334, the street runs 328). Relevant to guillermo-descent-recheck: no steps in the lower lane; gradient not judged from this photo. |
+| [IMG_2494.jpg](../../public/photos-ref/IMG_2494.jpg) | ground | layout, facades, materials | Narrow lane by Teodoro Rojo: barred windows, planter, drains **Looks at:** Narrow lane north of Teodoro Rojo. **Note:** Near-duplicate viewpoint of IMG_2241. |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |

@@ -12,10 +12,18 @@ Task `elena-level-clearance-survey` · area **Calle Elena** · priority P1 · au
 
 ## Photos to build from
 
+- `public/photos-ref/IMG_2518.jpg`: Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp (ground — pin ±2.5 m; looks at East portal steps and ramp of the Calle Elena covered walkway)
+- `public/photos-ref/IMG_2519.jpg`: Elena covered walkway looking west to the arch and the 36/34 gates (ground — pin ±2.6 m; looks at Calle Elena covered walkway towards its west arch)
+
+## Levels from the photos
+
+From `data/levels_survey.json` (check with `scripts/check_levels.py`).
+
+- `elena-walkway-east-steps` (steps): 0.25-0.36 m above the Calle Elena lane outside the covered walkway's east portal, medium confidence at (-154.5, 38.5) ±2.5 m. Model: **missing**, task `elena-level-clearance-survey`. Two risers with white nosings up from the lane into the walkway (6265201UF1366N_part5), a red ribbed rubber ramp beside them on the north side. Floor inside is terracotta with blue-and-white inset tiles. Rise judged from two 0.15-0.18 m risers; under a roof, so the laser survey cannot check it. (IMG_2518.jpg, IMG_2519.jpg, IMG_2254.jpg)
 
 ## Build
 
-Measure kerb, doorway thresholds, ramp and three steps against current level/survey framework and calibrated views. Keep existing estimated dimensions separate from new measurements. Record unknown clearance where uncertainty consumes usable width.
+Measure kerb, doorway thresholds, ramp and three steps against current level/survey framework and calibrated views. Keep existing estimated dimensions separate from new measurements. Record unknown clearance where uncertainty consumes usable width. Includes the two steps and ramp at the covered walkway's east portal (data/levels_survey.json elena-walkway-east-steps, IMG_2518/2519).
 
 ## Do not
 

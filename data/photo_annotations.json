@@ -373,5 +373,68 @@
     "originalUrl": "https://drive.google.com/file/d/1SllhEM6x1HxfDJYIj3NUVBjcaClQ9NuB/view?usp=drivesdk",
     "visualReview": "observed; geometry comparison pending",
     "streetHint": "cervantes"
+  },
+  "IMG_2481.HEIC": {
+    "title": "Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge",
+    "observation": "From the paseo's west stretch (52 mm lens): pink stamped walk curving between the sandstone retaining wall with green mesh fence and slim white lamps on the left, and a broad dry earth verge with a timber edge on the right. Barraka beach restaurant, its white pergola and thatched parasols ahead; La Concha behind. Phone GPS +/-2 m.",
+    "originalUrl": "https://drive.google.com/file/d/1pzWJAdc6EJHblOwKEc-JT0FbKEZG5tQl/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "paseo"
+  },
+  "IMG_2482.HEIC": {
+    "title": "Paseo looking north-east: agave verge and Barraka restaurant",
+    "observation": "Pink stamped walk with its timber edge, a row of young agaves planted along the verge, sandstone wall and fence on the left with slim white lamps at its foot; Barraka (two-storey white building with maroon awnings), white timber pergola and parasols at the far end. 52 mm lens.",
+    "originalUrl": "https://drive.google.com/file/d/15hZZgqLLrO3Jsm1oYc-Izuy9MXoMhFZz/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "paseo"
+  },
+  "IMG_2483.HEIC": {
+    "title": "Paseo looking north-east, second shot: agave verge to Barraka",
+    "observation": "Same view as IMG_2482 turned a little right: agave row along the timber edge, open dry verge, Barraka restaurant, pergola, palms and parasols. 52 mm lens.",
+    "originalUrl": "https://drive.google.com/file/d/1uOwWozkqX3jmod1T0jOyxY7Pkr9AUquO/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "paseo"
+  },
+  "IMG_2488.HEIC": {
+    "title": "Calle Guillermo from its seaward end, looking up the lane",
+    "observation": "Square terracotta-tiled lane between a whitewashed house wall (left, wide base plinth, meter box) and a raised white planter with strelitzia and lantana (right). A slot drain crosses the lane about 4 m ahead; lawns, a green lantern post and white garden walls beyond, a blue awning on a curved-topped wall at the far right. No steps visible. Phone GPS +/-4.7 m.",
+    "originalUrl": "https://drive.google.com/file/d/1GKXF-XNuaCEGBSvhuMEh8i18d5st21Th/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "guillermo"
+  },
+  "IMG_2494.HEIC": {
+    "title": "Narrow lane by Teodoro Rojo: barred windows, planter, drains",
+    "observation": "Narrow square-tiled lane between white houses: green iron window grilles, a raised white planter and a trained bougainvillea trunk on the left, an arched window recess on the right, several slot and square drain covers; bougainvillea and a tiled-roof house at the far end. Very close to IMG_2241.",
+    "originalUrl": "https://drive.google.com/file/d/1Q-1hF6zFZvVmQcHRnjHnIeE2VQkRwEjU/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "teodoro-rojo"
+  },
+  "IMG_2507.HEIC": {
+    "title": "Elena 25 passage: street arch with potted schefflera",
+    "observation": "Arched opening in a white wall off Calle Elena south: plain square lane tiles with a grey margin outside, then a covered entry floored with diagonal terracotta tiles and small blue-and-white inset tiles, flush with the lane (no step). A potted schefflera inside; the entry turns right to a door. Part of the CALLE ELENA 25 passage in IMG_2508.",
+    "originalUrl": "https://drive.google.com/file/d/12fXueD54VeVd0TSStCsSpaDUgum5sOTb/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-south"
+  },
+  "IMG_2508.HEIC": {
+    "title": "Covered passage signed CALLE ELENA 25, looking through to a garden gate",
+    "observation": "Covered walk-through with a flat white ceiling and hanging lantern, brown panelled double doors on both sides, tile plaque CALLE ELENA 25, potted scheffleras and dracaena; an arch at the far end opens onto a red-tiled path and a white-framed iron garden gate under bougainvillea. Enters the registry block 6265601UF1366N_part1 east of Calle Elena south; not in data/passages.json.",
+    "originalUrl": "https://drive.google.com/file/d/1uDcqzEZyfmNNEi_6HjksMqZfPE6StAMr/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-south"
+  },
+  "IMG_2518.HEIC": {
+    "title": "Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp",
+    "observation": "Inside the Calle Elena covered walkway at its east end: tile plaque CALLE ELENA 18 36 (IMG_2254 shows the same plaque cropped as 18 3..), CASA WILKES and GEE name tiles beside dark brown panelled double doors, an AGUA POTABLE hatch. The passage floor is two steps (white-nosed terracotta treads) above the Calle Elena lane, with a red ribbed rubber ramp beside them.",
+    "originalUrl": "https://drive.google.com/file/d/1pjznwsx-ivhdTe4KDqWZqjY_FG9ODUmE/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
+  },
+  "IMG_2519.HEIC": {
+    "title": "Elena covered walkway looking west to the arch and the 36/34 gates",
+    "observation": "From the top of the east steps: terracotta floor with blue-and-white inset tiles, red ribbed ramp on the right, a pebble mat, brown doors on both sides, then the far arch with two large potted plants and the private gates beyond (as IMG_2202).",
+    "originalUrl": "https://drive.google.com/file/d/1uD-ysObK6Ia_cIabMjp6YwZn-c2WQ7D9/view?usp=drivesdk",
+    "visualReview": "observed; geometry comparison pending",
+    "streetHint": "elena-north"
   }
 }

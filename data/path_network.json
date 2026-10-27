@@ -151,6 +151,21 @@
    ],
    "identityNote": "Separate signed source group in entrance pack; relationship to legacy registry candidates unresolved. No confirmed unique count.",
    "nextAction": "Reconcile signed identity and opposite-end views; register source drawing before assigning world portals."
+  },
+  {
+   "id": "miguel-source",
+   "name": "CALLE MIGUEL covered passage · signed source group",
+   "aliases": [
+    "source:IMG_2288"
+   ],
+   "areas": [
+    "cervantes"
+   ],
+   "sources": [
+    "IMG_2288.jpg"
+   ],
+   "identityNote": "Signed source group observed in IMG2288; no established relationship to legacytun008, Elena, Silvia or Jorge. Not an additional confirmed unique physical count.",
+   "nextAction": "Find camera-side entrance/opposite views and shared ground anchors before assigning host, world portals or public connectivity."
   }
  ],
  "sourceAccounting": {},
@@ -202,6 +217,51 @@
     "docs/reviews/elena-patio-wall-correction/current-comparisons.json",
     "docs/reviews/elena-path-tiles/current-comparisons.json"
    ]
+  },
+  {
+   "area": "cervantes",
+   "path": "docs/reviews/path-network-inventory-cervantes/inventory.json",
+   "review": "docs/reviews/path-network-inventory-cervantes/independent-review.json",
+   "assessments": "docs/reviews/path-network-inventory-cervantes/model-comparisons.json",
+   "followUps": {
+    "cervantes-gap-registration": "cervantes-register-edges",
+    "cervantes-gap-miguel-identity": "cervantes-identify-miguel-passage",
+    "cervantes-gap-concealed-partitions": "cervantes-register-edges",
+    "cervantes-gap-levels": "elena-level-clearance-survey",
+    "cervantes-gap-picasso-end": "cervantes-register-edges"
+   },
+   "featureFollowUps": {
+    "cervantes:W01": "cervantes-register-edges",
+    "cervantes:W02": "cervantes-register-edges",
+    "cervantes:W03": "cervantes-register-edges",
+    "cervantes:W04": "cervantes-register-edges",
+    "cervantes:W05": "cervantes-register-edges",
+    "cervantes:W06": "cervantes-register-edges",
+    "cervantes:W07": "cervantes-identify-miguel-passage",
+    "cervantes:J01": "elena-level-clearance-survey",
+    "cervantes:J02": "cervantes-register-edges",
+    "cervantes:J03": "elena-level-clearance-survey",
+    "cervantes:J04": "cervantes-register-edges",
+    "cervantes:J05": "cervantes-register-edges",
+    "cervantes:J06": "cervantes-register-edges",
+    "cervantes:E01": "cervantes-register-edges",
+    "cervantes:E02": "cervantes-register-edges",
+    "cervantes:E03": "cervantes-register-edges",
+    "cervantes:E04": "cervantes-register-edges",
+    "cervantes:E05": "cervantes-register-edges",
+    "cervantes:E06": "cervantes-register-edges",
+    "cervantes:R01": "cervantes-register-edges",
+    "cervantes:R02": "cervantes-register-edges",
+    "cervantes:R03": "cervantes-register-edges",
+    "cervantes:T01": "cervantes-identify-miguel-passage",
+    "cervantes:T02": "cervantes-identify-miguel-passage",
+    "cervantes:T03": "cervantes-identify-miguel-passage",
+    "cervantes:T04": "cervantes-identify-miguel-passage",
+    "cervantes:T05": "cervantes-identify-miguel-passage",
+    "cervantes:T06": "cervantes-identify-miguel-passage",
+    "cervantes:T07": "cervantes-identify-miguel-passage",
+    "cervantes:A01": "cervantes-register-edges"
+   }
   }
  ]
 }

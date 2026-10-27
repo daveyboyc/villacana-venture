@@ -2252,5 +2252,168 @@
    54.0
   ],
   "subject": "The walled patios north of Cervantes"
+ },
+ "IMG_2481.jpg": {
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "title": "Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge",
+  "looksAt": [
+   -50.0,
+   180.0
+  ],
+  "subject": "Paseo curve and verge towards Barraka"
+ },
+ "IMG_2482.jpg": {
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "view"
+  ],
+  "title": "Paseo looking north-east: agave verge and Barraka restaurant",
+  "looksAt": [
+   28.8,
+   110.5
+  ],
+  "subject": "Barraka beach restaurant at the end of the paseo"
+ },
+ "IMG_2483.jpg": {
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "view"
+  ],
+  "title": "Paseo looking north-east, second shot: agave verge to Barraka",
+  "looksAt": [
+   28.8,
+   110.5
+  ],
+  "subject": "Barraka beach restaurant at the end of the paseo"
+ },
+ "IMG_2488.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials",
+   "planting"
+  ],
+  "title": "Calle Guillermo from its seaward end, looking up the lane",
+  "looksAt": [
+   -22.0,
+   120.0
+  ],
+  "subject": "Calle Guillermo from its seaward end",
+  "note": "Looks up Guillermo (heading 334, the street runs 328). Relevant to guillermo-descent-recheck: no steps in the lower lane; gradient not judged from this photo."
+ },
+ "IMG_2494.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ],
+  "title": "Narrow lane by Teodoro Rojo: barred windows, planter, drains",
+  "looksAt": [
+   -84.0,
+   95.0
+  ],
+  "subject": "Narrow lane north of Teodoro Rojo",
+  "note": "Near-duplicate viewpoint of IMG_2241."
+ },
+ "IMG_2507.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "title": "Elena 25 passage: street arch with potted schefflera",
+  "looksAt": [
+   -142.0,
+   71.0
+  ],
+  "subject": "Street arch of the CALLE ELENA 25 passage",
+  "note": "Second covered passage on Elena, distinct from the 18-36 walkway (6265201UF1366N_part5). Floor flush with the lane."
+ },
+ "IMG_2508.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage",
+   "materials"
+  ],
+  "title": "Covered passage signed CALLE ELENA 25, looking through to a garden gate",
+  "looksAt": [
+   -138.0,
+   66.0
+  ],
+  "subject": "CALLE ELENA 25 covered passage into block 6265601UF1366N_part1",
+  "note": "Not in data/passages.json; the registry draws this block as one solid 2-storey part. Compass heading inside a covered passage may be off; direction into the block is from the pin against the Elena south lane, the far end is unregistered."
+ },
+ "IMG_2518.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "levels",
+   "materials",
+   "layout"
+  ],
+  "title": "Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp",
+  "looksAt": [
+   -155.0,
+   39.5
+  ],
+  "subject": "East portal steps and ramp of the Calle Elena covered walkway",
+  "note": "Plaque reads CALLE ELENA 18 36, not 18-30. Two risers up into the walkway from the lane: level item elena-walkway-east-steps."
+ },
+ "IMG_2519.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "title": "Elena covered walkway looking west to the arch and the 36/34 gates",
+  "looksAt": [
+   -162.0,
+   43.0
+  ],
+  "subject": "Calle Elena covered walkway towards its west arch",
+  "note": "Both-end evidence for the walkway with IMG_2203 (opposite direction) and IMG_2202."
  }
 }

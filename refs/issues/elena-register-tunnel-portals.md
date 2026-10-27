@@ -12,6 +12,10 @@ Task `elena-register-tunnel-portals` · area **Calle Elena** · priority P1 · a
 
 ## Photos to build from
 
+- `public/photos-ref/IMG_2518.jpg`: Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp (ground — pin ±2.5 m; looks at East portal steps and ramp of the Calle Elena covered walkway)
+- `public/photos-ref/IMG_2519.jpg`: Elena covered walkway looking west to the arch and the 36/34 gates (ground — pin ±2.6 m; looks at Calle Elena covered walkway towards its west arch)
+- `public/photos-ref/IMG_2203.jpg`: Covered passage looking out onto Calle Elena and its planted bed (ground — pin ±5.3 m; looks at Opposite exit of the covered passage onto Calle Elena)
+- `public/photos-ref/IMG_2202.jpg`: Elena covered passage looking toward the private iron gates numbered 36/34 (ground — pin ±5.3 m; looks at Private paired gates 36/34 west of the covered walkway)
 
 ## Build
 

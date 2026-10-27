@@ -8,15 +8,15 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 
 - areas: 14
 - inventoryCompleteAreas: 1
-- sourceObservations: 29
-- sourcePixelTraces: 40
-- sourcePixelLocators: 8
-- sources: 176
-- uninspectedSources: 117
+- sourceObservations: 59
+- sourcePixelTraces: 57
+- sourcePixelLocators: 32
+- sources: 185
+- uninspectedSources: 115
 - routes: 24
 - segments: 173
 - tracedSides: 0
-- tunnelCandidates: 10
+- tunnelCandidates: 11
 - confirmedUniqueTunnels: unresolved
 - registryOutlines: 230
 
@@ -28,15 +28,15 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Middle pool | 24 / 24 | 0 | 0 | uninspected |
 | South pool | 7 / 7 | 0 | 0 | uninspected |
 | Main pool | 6 / 6 | 0 | 0 | uninspected |
-| Calle Elena | 39 / 0 | 2 | 2 | inspected |
-| Calle Miguel de Cervantes | 26 / 26 | 1 | 0 | uninspected |
+| Calle Elena | 43 / 4 | 2 | 2 | partial |
+| Calle Miguel de Cervantes | 26 / 0 | 1 | 1 | inspected |
 | Calle Pintor Dalí | 25 / 25 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 3 / 3 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 0 / 0 | 4 | 6 | source needed |
 | Calle Eva | 11 / 11 | 2 | 0 | uninspected |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 31 / 31 | 6 | 2 | uninspected |
-| Barraka and the beach | 15 / 15 | 1 | 0 | uninspected |
-| The paseo | 16 / 16 | 4 | 0 | uninspected |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 33 / 33 | 6 | 2 | uninspected |
+| Barraka and the beach | 18 / 18 | 1 | 0 | uninspected |
+| The paseo | 19 / 19 | 4 | 0 | uninspected |
 | The whole resort | 21 / 21 | 0 | 0 | uninspected |
 
 Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.
