@@ -668,6 +668,39 @@ async function boot(): Promise<void> {
     zoomAt(e.clientX, e.clientY, e.deltaY > 0 ? 1.15 : 1 / 1.15);
   }, { passive: false });
 
+  // Scorecard colours and photo spots (public/scorecard.json, data/photo_requests.json): each area tinted
+  // red (photos needed), amber (photos in, checking or building) or green (up to date), and a numbered
+  // pin where to stand with a line to what to photograph.
+  const spotsLayer = el("g", { id: "photo-spots" });
+  world.append(spotsLayer);
+  const LIGHTS: Record<string, string> = { red: "#c8352b", amber: "#e09a00", green: "#2f8a3e" };
+  void fetch(asset("/scorecard.json")).then((r) => r.json()).then((card: { grid: { x0: number; z0: number; step: number; nx: number; rows: string[]; areas: string[] };
+    areas: { id: string; name: string; light: { colour: string; headline: string; requests: { id: string; at: [number, number]; look: [number, number] | null; ask: string; state: string }[] } }[] }) => {
+    const g = card.grid, byId = new Map(card.areas.map((a) => [a.id, a]));
+    g.rows.forEach((row, k) => {
+      let i = 0;
+      while (i < row.length) {
+        let j = i; while (j < row.length && row[j] === row[i]) j++;
+        const area = row[i] === "." ? undefined : byId.get(g.areas[row.charCodeAt(i) - 97]);
+        if (area) {
+          const cellRect = el("rect", { x: g.x0 + i * g.step, y: g.z0 + k * g.step, width: (j - i) * g.step + .05, height: g.step + .05, fill: LIGHTS[area.light.colour], "fill-opacity": .22, "data-area": area.id, "data-light": area.light.colour });
+          const title = el("title", {}); title.textContent = `${area.name}: ${area.light.headline}`; cellRect.append(title); spotsLayer.append(cellRect);
+        }
+        i = j;
+      }
+    });
+    const whole = byId.get("whole-resort");
+    whole?.light.requests.forEach((r, n) => {
+      const colour = r.state === "open" ? LIGHTS.red : LIGHTS.amber, [x, z] = r.at, pin = el("g", { "data-request": r.id });
+      if (r.look) pin.append(el("path", { d: `M${x} ${z}L${r.look[0]} ${r.look[1]}`, stroke: colour, "stroke-width": .6, "stroke-dasharray": "1.2 .6", fill: "none" }));
+      pin.append(el("circle", { cx: x, cy: z, r: 2.6, fill: colour, stroke: "#fff", "stroke-width": .5 }));
+      const number = el("text", { x, y: z, transform: `rotate(${-rot} ${x} ${z})`, "font-size": 3, "font-weight": 700, "text-anchor": "middle", "dominant-baseline": "central", fill: "#fff" });
+      number.textContent = String(n + 1); pin.append(number);
+      const title = el("title", {}); title.textContent = `${n + 1}. ${r.ask} (${r.state === "open" ? "photos needed" : "photos in, waiting for review"})`; pin.append(title);
+      spotsLayer.append(pin);
+    });
+  });
+
   const toggle = (id: string, onChange: (on: boolean) => void) => {
     const button = $<HTMLButtonElement>(id);
     button.addEventListener("click", () => {
@@ -705,6 +738,7 @@ async function boot(): Promise<void> {
   toggle("#seafront", (on) => { show(seafront)(on); show(seafrontNames)(on); });
   toggle("#heights", paintRoofs);
   toggle("#key", (on) => ($("#legend").hidden = !on));
+  toggle("#photo-spots-toggle", show(spotsLayer));
   toggle("#edit", (on) => {
     editing = on;
     $("#editbar").hidden = !on;

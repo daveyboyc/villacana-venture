@@ -211,7 +211,29 @@
     "Facades: 26 of 115 kit parts traced from photos.",
     "How sure: 5 photographed, 1 estimated, 0 inferred.",
     "Placement: 0 of 6 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 1 spot",
+    "requests": [
+     {
+      "id": "north-pool-west-stair",
+      "at": [
+       -187.0,
+       17.5
+      ],
+      "look": [
+       -185.0,
+       14.0
+      ],
+      "ask": "From the lawn path, side-on to the tiled stair at the north-west corner of the north pool lawn with the curved wall beside it; and one from the top looking down.",
+      "why": "levels item north-pool-west-stair",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "middle-pool",
@@ -317,7 +339,12 @@
     "Facades: 0 of 40 kit parts traced from photos.",
     "How sure: 9 photographed, 11 estimated, 2 inferred.",
     "Placement: 0 of 22 features verified, 5 open discrepancies."
-   ]
+   ],
+   "light": {
+    "colour": "amber",
+    "headline": "Photos in: 4 build tasks open, 5 open discrepancies",
+    "requests": []
+   }
   },
   {
    "id": "south-pool",
@@ -397,7 +424,29 @@
     "Facades: 0 of 29 kit parts traced from photos.",
     "How sure: 0 photographed, 1 estimated, 0 inferred.",
     "Placement: 0 of 1 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 1 spot",
+    "requests": [
+     {
+      "id": "south-lane-walk",
+      "at": [
+       -125.0,
+       108.0
+      ],
+      "look": [
+       -92.0,
+       178.0
+      ],
+      "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
+      "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "main-pool",
@@ -479,7 +528,61 @@
     "Facades: 0 of 35 kit parts traced from photos.",
     "How sure: 0 photographed, 2 estimated, 0 inferred.",
     "Placement: 0 of 2 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 3 spots",
+    "requests": [
+     {
+      "id": "beach-gateway",
+      "at": [
+       -1.0,
+       137.0
+      ],
+      "look": [
+       -5.0,
+       133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "main-pool-lawn",
+      "at": [
+       -12.0,
+       108.0
+      ],
+      "look": [
+       -18.0,
+       91.0
+      ],
+      "ask": "From the big-pool lawn: the pool and the terraces behind it; then turn round to the gateway and the railings.",
+      "why": "the main pool has only one placed photo",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "guillermo-lawn-edge",
+      "at": [
+       -12.0,
+       124.0
+      ],
+      "look": [
+       -18.0,
+       129.0
+      ],
+      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "elena",
@@ -567,7 +670,58 @@
     "Facades: 0 of 75 kit parts traced from photos.",
     "How sure: 12 photographed, 18 estimated, 2 inferred, 3 known gaps.",
     "Placement: 0 of 33 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 3 spots",
+    "requests": [
+     {
+      "id": "elena-25-far-end",
+      "at": [
+       -139.0,
+       67.0
+      ],
+      "look": [
+       -132.0,
+       62.0
+      ],
+      "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
+      "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-25-from-lane",
+      "at": [
+       -148.0,
+       77.0
+      ],
+      "look": [
+       -143.5,
+       72.0
+      ],
+      "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
+      "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-roof-station",
+      "at": [
+       -155.7,
+       50.1
+      ],
+      "look": null,
+      "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+      "why": "task facade-kit-elena: a roof camera that can be solved",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "cervantes",
@@ -657,7 +811,61 @@
     "Facades: 0 of 149 kit parts traced from photos.",
     "How sure: 12 photographed, 11 estimated, 2 inferred, 2 known gaps.",
     "Placement: 0 of 25 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 3 spots",
+    "requests": [
+     {
+      "id": "cervantes-east-from-elena",
+      "at": [
+       -129.0,
+       43.0
+      ],
+      "look": [
+       -102.0,
+       27.0
+      ],
+      "ask": "Cervantes east of Elena: stand at the Elena end and photograph along the lane towards Pintor Picasso.",
+      "why": "no photo covers this half of Cervantes (levels item cervantes-east-north-bed)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "cervantes-east-from-picasso",
+      "at": [
+       -78.0,
+       13.0
+      ],
+      "look": [
+       -102.0,
+       27.0
+      ],
+      "ask": "Cervantes from the Pintor Picasso end, looking west along the lane; then one side-on to the white kerb wall and plumbago hedge.",
+      "why": "no photo covers this half of Cervantes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "cervantes-junction-patio",
+      "at": [
+       -153.5,
+       53.5
+      ],
+      "look": [
+       -150.0,
+       50.0
+      ],
+      "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+      "why": "levels item cervantes-junction-north-patio",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "dali",
@@ -739,7 +947,12 @@
     "Facades: 0 of 130 kit parts traced from photos.",
     "How sure: 13 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "amber",
+    "headline": "Photos in: 1 build task open",
+    "requests": []
+   }
   },
   {
    "id": "picasso",
@@ -818,7 +1031,29 @@
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 3 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 1 spot",
+    "requests": [
+     {
+      "id": "picasso-lane",
+      "at": [
+       -60.0,
+       -30.0
+      ],
+      "look": [
+       -40.0,
+       5.0
+      ],
+      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
+      "why": "only one photo in the Picasso area",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "north-lanes",
@@ -896,7 +1131,45 @@
     "Photos: 0, 0 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
     "Placement: no model features registered here yet."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 2 spots",
+    "requests": [
+     {
+      "id": "alberto",
+      "at": [
+       -150.0,
+       -28.0
+      ],
+      "look": [
+       -130.0,
+       3.0
+      ],
+      "ask": "Calle Alberto: one photo along the lane from each end.",
+      "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "isabel",
+      "at": [
+       -160.0,
+       9.0
+      ],
+      "look": [
+       -140.0,
+       -6.0
+      ],
+      "ask": "Calle Isabel: one photo along the lane from the Elena end.",
+      "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "eva",
@@ -975,7 +1248,29 @@
     "Facades: 0 of 146 kit parts traced from photos.",
     "How sure: 3 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 1 spot",
+    "requests": [
+     {
+      "id": "eva-east",
+      "at": [
+       -60.0,
+       51.0
+      ],
+      "look": [
+       -85.0,
+       66.0
+      ],
+      "ask": "Calle Eva's east stretch from the Guillermo end, looking west along it.",
+      "why": "no photo covers Eva east of the middle pool",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "seaward-lanes",
@@ -1065,7 +1360,61 @@
     "Facades: 0 of 599 kit parts traced from photos.",
     "How sure: 1 photographed, 7 estimated, 3 inferred.",
     "Placement: 0 of 11 features verified, 2 open discrepancies."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 3 spots",
+    "requests": [
+     {
+      "id": "guillermo-lane-walk",
+      "at": [
+       -55.0,
+       68.0
+      ],
+      "look": [
+       -40.0,
+       92.0
+      ],
+      "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
+      "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "patricia-east",
+      "at": [
+       -45.0,
+       90.0
+      ],
+      "look": [
+       -70.0,
+       105.0
+      ],
+      "ask": "Calle Patricia from its east end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "patricia-west",
+      "at": [
+       -148.0,
+       153.0
+      ],
+      "look": [
+       -120.0,
+       136.0
+      ],
+      "ask": "Calle Patricia from its west end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "barraka-beach",
@@ -1145,7 +1494,29 @@
     "Photos: 17, 16 placed; no camera solved.",
     "How sure: 0 photographed, 10 estimated, 0 inferred.",
     "Placement: 0 of 10 features verified, 2 open discrepancies."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 1 spot",
+    "requests": [
+     {
+      "id": "beach-verge",
+      "at": [
+       2.0,
+       141.0
+      ],
+      "look": [
+       14.0,
+       128.0
+      ],
+      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "paseo",
@@ -1222,7 +1593,29 @@
     "Facades: 0 of 111 kit parts traced from photos.",
     "How sure: 4 photographed, 9 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 1 spot",
+    "requests": [
+     {
+      "id": "paseo-wall-east-end",
+      "at": [
+       -16.0,
+       147.0
+      ],
+      "look": [
+       -20.0,
+       142.0
+      ],
+      "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
+      "why": "levels item paseo-east-end-height; the survey shows little or no step there",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   },
   {
    "id": "whole-resort",
@@ -1372,7 +1765,330 @@
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 55 photographed, 85 estimated, 7 inferred, 5 known gaps.",
     "Placement: 0 of 380 features verified, 9 open discrepancies."
-   ]
+   ],
+   "light": {
+    "colour": "red",
+    "headline": "Photos needed: 20 spots",
+    "requests": [
+     {
+      "id": "alberto",
+      "at": [
+       -150.0,
+       -28.0
+      ],
+      "look": [
+       -130.0,
+       3.0
+      ],
+      "ask": "Calle Alberto: one photo along the lane from each end.",
+      "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "beach-gateway",
+      "at": [
+       -1.0,
+       137.0
+      ],
+      "look": [
+       -5.0,
+       133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "beach-verge",
+      "at": [
+       2.0,
+       141.0
+      ],
+      "look": [
+       14.0,
+       128.0
+      ],
+      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "cervantes-east-from-elena",
+      "at": [
+       -129.0,
+       43.0
+      ],
+      "look": [
+       -102.0,
+       27.0
+      ],
+      "ask": "Cervantes east of Elena: stand at the Elena end and photograph along the lane towards Pintor Picasso.",
+      "why": "no photo covers this half of Cervantes (levels item cervantes-east-north-bed)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "cervantes-east-from-picasso",
+      "at": [
+       -78.0,
+       13.0
+      ],
+      "look": [
+       -102.0,
+       27.0
+      ],
+      "ask": "Cervantes from the Pintor Picasso end, looking west along the lane; then one side-on to the white kerb wall and plumbago hedge.",
+      "why": "no photo covers this half of Cervantes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-25-far-end",
+      "at": [
+       -139.0,
+       67.0
+      ],
+      "look": [
+       -132.0,
+       62.0
+      ],
+      "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
+      "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "guillermo-lane-walk",
+      "at": [
+       -55.0,
+       68.0
+      ],
+      "look": [
+       -40.0,
+       92.0
+      ],
+      "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
+      "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "isabel",
+      "at": [
+       -160.0,
+       9.0
+      ],
+      "look": [
+       -140.0,
+       -6.0
+      ],
+      "ask": "Calle Isabel: one photo along the lane from the Elena end.",
+      "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "main-pool-lawn",
+      "at": [
+       -12.0,
+       108.0
+      ],
+      "look": [
+       -18.0,
+       91.0
+      ],
+      "ask": "From the big-pool lawn: the pool and the terraces behind it; then turn round to the gateway and the railings.",
+      "why": "the main pool has only one placed photo",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "cervantes-junction-patio",
+      "at": [
+       -153.5,
+       53.5
+      ],
+      "look": [
+       -150.0,
+       50.0
+      ],
+      "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+      "why": "levels item cervantes-junction-north-patio",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-25-from-lane",
+      "at": [
+       -148.0,
+       77.0
+      ],
+      "look": [
+       -143.5,
+       72.0
+      ],
+      "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
+      "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-roof-station",
+      "at": [
+       -155.7,
+       50.1
+      ],
+      "look": null,
+      "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+      "why": "task facade-kit-elena: a roof camera that can be solved",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "eva-east",
+      "at": [
+       -60.0,
+       51.0
+      ],
+      "look": [
+       -85.0,
+       66.0
+      ],
+      "ask": "Calle Eva's east stretch from the Guillermo end, looking west along it.",
+      "why": "no photo covers Eva east of the middle pool",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "guillermo-lawn-edge",
+      "at": [
+       -12.0,
+       124.0
+      ],
+      "look": [
+       -18.0,
+       129.0
+      ],
+      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "north-pool-west-stair",
+      "at": [
+       -187.0,
+       17.5
+      ],
+      "look": [
+       -185.0,
+       14.0
+      ],
+      "ask": "From the lawn path, side-on to the tiled stair at the north-west corner of the north pool lawn with the curved wall beside it; and one from the top looking down.",
+      "why": "levels item north-pool-west-stair",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "paseo-wall-east-end",
+      "at": [
+       -16.0,
+       147.0
+      ],
+      "look": [
+       -20.0,
+       142.0
+      ],
+      "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
+      "why": "levels item paseo-east-end-height; the survey shows little or no step there",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "patricia-east",
+      "at": [
+       -45.0,
+       90.0
+      ],
+      "look": [
+       -70.0,
+       105.0
+      ],
+      "ask": "Calle Patricia from its east end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "patricia-west",
+      "at": [
+       -148.0,
+       153.0
+      ],
+      "look": [
+       -120.0,
+       136.0
+      ],
+      "ask": "Calle Patricia from its west end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-lane",
+      "at": [
+       -60.0,
+       -30.0
+      ],
+      "look": [
+       -40.0,
+       5.0
+      ],
+      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
+      "why": "only one photo in the Picasso area",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "south-lane-walk",
+      "at": [
+       -125.0,
+       108.0
+      ],
+      "look": [
+       -92.0,
+       178.0
+      ],
+      "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
+      "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     }
+    ]
+   }
   }
  ]
 }

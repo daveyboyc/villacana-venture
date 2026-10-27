@@ -476,7 +476,7 @@ async function boot(): Promise<void> {
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
 
-  const scorecard=areaScorecard();
+  const scorecard=areaScorecard(scene,liveGroundY);
   const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
   renderer.setAnimationLoop(() => {
