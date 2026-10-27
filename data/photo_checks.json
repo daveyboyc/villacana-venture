@@ -479,6 +479,39 @@
    "by": "Claude",
    "result": "not-comparable",
    "notes": "Third-person view from the pin: the door flight sits at the far right of the photo; render shows the new bottom step flush with the bed front beside the ramp steps, unchanged ramp/steps/drain. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2481.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2481-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2481-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2482.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2482-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2482-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2483.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2483-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2483-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
   }
  ],
  "legacyUnchecked": [

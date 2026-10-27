@@ -1,0 +1,81 @@
+{
+  "checked": "2026-10-27",
+  "baseline": "8b5e1f8",
+  "sourceChecks": {
+    "photoAssignment": {
+      "passed": true,
+      "tests": 12
+    },
+    "referenceIndex": {
+      "passed": true,
+      "tests": 10
+    },
+    "placementPolicyUnitTests": {
+      "passed": true,
+      "tests": 31
+    },
+    "referencePacks": {
+      "passed": true,
+      "tests": 10,
+      "combinedMainOutputsRegenerated": true
+    },
+    "referenceCatalogue": {
+      "passed": true,
+      "references": 185,
+      "problems": 0
+    },
+    "geometrySourceChecks": {
+      "passed": true,
+      "checks": [
+        "map",
+        "street_layout",
+        "boundary_reference",
+        "terrain",
+        "dali_threshold",
+        "cervantes_patio_walls",
+        "elena_north",
+        "middle_pool",
+        "paseo_wall",
+        "seafront",
+        "pool_levels",
+        "levels",
+        "lowered_lanes",
+        "seafront_fence"
+      ]
+    }
+  },
+  "productionBuild": {
+    "passed": true,
+    "notes": "Existing bundle-size advisory retained."
+  },
+  "geometryComparison": "geometry-comparison.json",
+  "browser": {
+    "layout": {
+      "passed": true,
+      "routes": 20,
+      "bothDirections": true,
+      "segments": 438,
+      "runtimeErrors": [],
+      "combinedMainPassed": true
+    },
+    "photoMap": {
+      "passed": true,
+      "sources": 185
+    },
+    "overviewBaseline": {
+      "passed": true
+    },
+    "overviewFinal": {
+      "passed": true,
+      "target": "Built production files, same test_overview_browser.cjs assertions served through Vite preview to avoid development HMR during source regeneration.",
+      "notes": "Earlier dev-server runs timed out during concurrent regeneration; unchanged-main overview and the final production run passed."
+    }
+  },
+  "placementGate": {
+    "passed": false,
+    "output": "placement-gate.txt",
+    "notes": "Conservative renderer/source-context fingerprint flags existing paseo retaining-wall and timber-edge features. Actual seaside vertices/normals are identical. No measured placement approval claimed; task remains in progress."
+  },
+  "independentMaterialReview": "independent-source-review.md",
+  "integrationBase": "8324a9933fa324ec701a28ffac108f08355aab9d"
+}

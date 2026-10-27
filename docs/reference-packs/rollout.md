@@ -6,7 +6,7 @@ Generated from the current reference catalogue. Six pilot source sheets do not c
 | --- | --- | --- | --- | --- | --- |
 | 1 | Middle pool | 24 | 16 / 8 | 2 | pilot-partial |
 | 1 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 33 | 30 / 3 | 6 | pilot-partial |
-| 2 | Calle Miguel de Cervantes | 26 | 26 / 0 | 0 | not-started |
+| 2 | Calle Miguel de Cervantes | 28 | 28 / 0 | 0 | not-started |
 | 2 | Calle Pintor Dalí | 25 | 25 / 0 | 0 | not-started |
 | 2 | Calle Elena | 43 | 43 / 0 | 0 | not-started |
 | 3 | Barraka and the beach | 18 | 17 / 1 | 0 | not-started |

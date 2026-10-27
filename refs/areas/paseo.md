@@ -15,6 +15,7 @@ The seafront promenade between the resort's seaward walls and the beach.
 - Issue #41 (16 October): after PR #64 the eastern OSM paseo still entered registry part 6465801UF1366N_part5 by 2.8 m (and part6 by 0.5 m), not 0.64 m from it. On the aerial the pink paseo (about 3.5 m wide) crosses both parts and the rest of part5 is open sand; neighbouring registry roofs match the image, and IMG_2346/IMG_2347 (pins about 4 m) show sand, the Barraka sign planter and a walkway there. So the footprint, not the line, was wrong: both parts keep their exact rings as dashed registry outlines with floors 0 (data/registry_corrections.json), no longer extruded or solid. Paseo points unchanged; the whole paseo now keeps 1.5 m from every standing house and is walked end to end both ways. Open: east of Barraka the OSM line runs along the landward edge of the pink strip, about 2 m landward of its centre on the aerial.
 - Dave, 2026-10-21, on a render of the corner by Calle Guillermo: the sandstone wall is not 3 m tall there. The garden behind its east end now falls to 1 m above the paseo (data/main_pool.json gardenFall), so the wall stays about 1 m (task guillermo-slope-east-steps); this answers issue #40's question in favour of the gardens falling. The fall's shape is estimated.
 - 27 October batch: IMG_2481-2483 (52 mm) look north-east along the west paseo to Barraka: the curving pink stamped walk, a broad dry earth verge with a timber edge and a row of young agaves on the seaward side, the sandstone wall, mesh fence and slim white lamps on the land side.
+- 27 October material pass: the existing west retaining-wall frontage gains shallow transverse board-stamp marks, fine grain and weathered dusty-red variation (IMG_2481-2483; close material source IMG_2351). Original path/edge/wall positions, widths, levels and collision remain unchanged. Stamp pitch and camera alignment are estimates; eastern surfaces retain the prior finish. Dry verge and agave positions remain a separate unbuilt placement task. See docs/reviews/paseo-stamped-surface/.
 
 ## Read first
 
@@ -36,6 +37,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P1 | `path-network-inventory-paseo` [#137](https://github.com/daveyboyc/villacana-venture/issues/137) | The paseo: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 · placement: not-verified | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
+| P2 | `paseo-stamped-surface` | Paseo: photo-backed stamped concrete on the existing walk | in-progress · Codex · placement: not-verified | [IMG_2481](../../public/photos-ref/IMG_2481.jpg), [IMG_2482](../../public/photos-ref/IMG_2482.jpg), [IMG_2483](../../public/photos-ref/IMG_2483.jpg), [IMG_2351](../../public/photos-ref/IMG_2351.jpg) |
 
 ## Built from these photos
 
@@ -44,44 +46,52 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["The paseo"]
-  A --> F0["Paseo · east green windbreak · unreviewed"]
+  A --> F0["Paseo · Senda Litoral · unreviewed"]
   F0 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F1["Paseo · south-pool clipped hedge · unreviewed"]
-  F1 --> PIMG_2349_jpg(["IMG_2349"])
+  F0 --> PIMG_2351_jpg(["IMG_2351"])
+  F0 --> PIMG_2352_jpg(["IMG_2352"])
+  F0 --> PIMG_2354_jpg(["IMG_2354"])
+  F0 --> PIMG_2481_jpg(["IMG_2481"])
+  F0 --> PIMG_2482_jpg(["IMG_2482"])
+  F0 --> PIMG_2483_jpg(["IMG_2483"])
+  A --> F1["Paseo · east green windbreak · unreviewed"]
   F1 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F2["Paseo · flush square service cover · unreviewed"]
-  F2 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F3["Paseo · west clipped hedge · unreviewed"]
-  F3 --> PIMG_2352_jpg(["IMG_2352"])
+  A --> F2["Paseo · south-pool clipped hedge · unreviewed"]
+  F2 --> PIMG_2349_jpg(["IMG_2349"])
+  F2 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F3["Paseo · flush square service cover · unreviewed"]
   F3 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F4["Paseo · west green windbreak · unreviewed"]
+  A --> F4["Paseo · west clipped hedge · unreviewed"]
   F4 --> PIMG_2352_jpg(["IMG_2352"])
-  A --> F5["Paseo · white lamp 1 · unreviewed"]
+  F4 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F5["Paseo · west green windbreak · unreviewed"]
   F5 --> PIMG_2352_jpg(["IMG_2352"])
-  F5 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F6["Paseo · white lamp 2 · unreviewed"]
+  A --> F6["Paseo · white lamp 1 · unreviewed"]
   F6 --> PIMG_2352_jpg(["IMG_2352"])
   F6 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F7["Paseo · white lamp 3 · unreviewed"]
-  F7 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F8["Paseo · white lamp 4 · unreviewed"]
+  A --> F7["Paseo · white lamp 2 · unreviewed"]
+  F7 --> PIMG_2352_jpg(["IMG_2352"])
+  F7 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F8["Paseo · white lamp 3 · unreviewed"]
   F8 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F9["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
-  F9 --> PIMG_2227_jpg(["IMG_2227"])
-  F9 --> PIMG_2298_jpg(["IMG_2298"])
-  F9 --> PIMG_2299_jpg(["IMG_2299"])
-  F9 --> PIMG_2349_jpg(["IMG_2349"])
+  A --> F9["Paseo · white lamp 4 · unreviewed"]
   F9 --> PIMG_2350_jpg(["IMG_2350"])
-  F9 --> PIMG_2352_jpg(["IMG_2352"])
-  F9 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F10["Paseo · timber edge onto the beach · unreviewed"]
+  A --> F10["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
+  F10 --> PIMG_2227_jpg(["IMG_2227"])
+  F10 --> PIMG_2298_jpg(["IMG_2298"])
+  F10 --> PIMG_2299_jpg(["IMG_2299"])
+  F10 --> PIMG_2349_jpg(["IMG_2349"])
   F10 --> PIMG_2350_jpg(["IMG_2350"])
-  F10 --> PIMG_2351_jpg(["IMG_2351"])
   F10 --> PIMG_2352_jpg(["IMG_2352"])
   F10 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F11["South lawn above the paseo · unreviewed"]
-  F11 --> PIMG_2188_jpg(["IMG_2188"])
-  F11 --> PIMG_2349_jpg(["IMG_2349"])
+  A --> F11["Paseo · timber edge onto the beach · unreviewed"]
+  F11 --> PIMG_2350_jpg(["IMG_2350"])
+  F11 --> PIMG_2351_jpg(["IMG_2351"])
+  F11 --> PIMG_2352_jpg(["IMG_2352"])
+  F11 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F12["South lawn above the paseo · unreviewed"]
+  F12 --> PIMG_2188_jpg(["IMG_2188"])
+  F12 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
 ## Placement evidence
@@ -90,6 +100,7 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `area:paseo` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-east-windbreak` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-pool-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-service-cover` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -103,20 +114,30 @@ graph LR
 | `paseo_wall.json:paseo-timber-edge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
+## Photo checks
+
+Renders from each photo's camera compared with the photo (`data/photo_checks.json`).
+
+| Task | Photo | Result | Render | Notes |
+| --- | --- | --- | --- | --- |
+| `paseo-stamped-surface` | [IMG_2481](../../public/photos-ref/IMG_2481.jpg) | **not-comparable** | [after](../../docs/reviews/paseo-stamped-surface/IMG_2481-after.png) · [before](../../docs/reviews/paseo-stamped-surface/IMG_2481-before.png) | Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built. |
+| `paseo-stamped-surface` | [IMG_2482](../../public/photos-ref/IMG_2482.jpg) | **not-comparable** | [after](../../docs/reviews/paseo-stamped-surface/IMG_2482-after.png) · [before](../../docs/reviews/paseo-stamped-surface/IMG_2482-before.png) | Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built. |
+| `paseo-stamped-surface` | [IMG_2483](../../public/photos-ref/IMG_2483.jpg) | **not-comparable** | [after](../../docs/reviews/paseo-stamped-surface/IMG_2483-after.png) · [before](../../docs/reviews/paseo-stamped-surface/IMG_2483-before.png) | Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built. |
+
 **Built without complete newer photo-check records:** `paseo-retaining-wall`, `paseo-retrace-line`, `paseo-house-clearance`, `paseo-details`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2350.jpg](../../public/photos-ref/IMG_2350.jpg) | ground | layout, levels, materials, view | Paseo looking north-east: stamped walk, sandstone retaining wall **Note:** The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here. _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-pool-hedge, paseo_details.json:paseo-east-windbreak, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4._ |
-| [IMG_2352.jpg](../../public/photos-ref/IMG_2352.jpg) | ground | layout, levels, materials | Paseo looking west: sandstone wall, mesh fence, lamp posts _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-west-windbreak, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2._ |
-| [IMG_2354.jpg](../../public/photos-ref/IMG_2354.jpg) | ground | layout, levels | Paseo curving north-east beside the sandstone wall _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-service-cover._ |
+| [IMG_2350.jpg](../../public/photos-ref/IMG_2350.jpg) | ground | layout, levels, materials, view | Paseo looking north-east: stamped walk, sandstone retaining wall **Note:** The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here. _Used by: area:paseo, paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-pool-hedge, paseo_details.json:paseo-east-windbreak, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4._ |
+| [IMG_2352.jpg](../../public/photos-ref/IMG_2352.jpg) | ground | layout, levels, materials | Paseo looking west: sandstone wall, mesh fence, lamp posts _Used by: area:paseo, paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-west-windbreak, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2._ |
+| [IMG_2354.jpg](../../public/photos-ref/IMG_2354.jpg) | ground | layout, levels | Paseo curving north-east beside the sandstone wall _Used by: area:paseo, paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-service-cover._ |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
-| [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: paseo_wall.json:paseo-timber-edge._ |
-| [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. |
-| [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. |
-| [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. |
+| [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: area:paseo, paseo_wall.json:paseo-timber-edge._ |
+| [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. _Used by: area:paseo._ |
+| [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
+| [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2297.jpg](../../public/photos-ref/IMG_2297.jpg) | ground | layout | Dalí seaward end: narrow pedestrian gate _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |

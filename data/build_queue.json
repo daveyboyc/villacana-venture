@@ -2177,6 +2177,33 @@
    "status": "in-progress",
    "owner": "claude",
    "notes": "Riser count, tread rows, widths and the bed/planter framing are read from photos; dimensions to about 0.05 m, not measured. No measured placement packet or independent review: placement stays unapproved, so the task stays in progress."
+  },
+  {
+   "id": "paseo-stamped-surface",
+   "area": "paseo",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Paseo: photo-backed stamped concrete on the existing walk",
+   "photos": [
+    "IMG_2481.jpg",
+    "IMG_2482.jpg",
+    "IMG_2483.jpg",
+    "IMG_2351.jpg"
+   ],
+   "features": [
+    "area:paseo"
+   ],
+   "build": "Apply muted weathered red stamped-concrete markings to the existing retaining-wall frontage only, with continuous metric UVs along the unchanged centreline; retain the prior eastern material. Preserve geometry, width, levels, wall/fence, terrain and collision.",
+   "avoid": "No inferred plant positions, changed wall/path extents or calibrated placement claims. Elena excluded.",
+   "accept": [
+    "Independent full-source and final-render review",
+    "Continuous scale/phase through ribbon segments; unchanged vertex positions and traversal",
+    "Source checks, production build and layout/overview/photo-map browser regressions"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Material pass delivered provisionally from the 27 October batch. Exact stamp scale, camera alignment and inherited path placement remain estimates; no placement approval claimed. Source and final render review, geometry invariance and validation are recorded in docs/reviews/paseo-stamped-surface/."
   }
  ]
 }
