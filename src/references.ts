@@ -3,6 +3,7 @@ import {daliThresholdZones,daliPrivateEdge} from "./dali-threshold";
 import {cervantesPatioWalls} from "./cervantes-walls";
 import {frontageRegions} from "./frontages";
 import { asset } from "./asset";
+import { confidenceOverlay } from "./confidence";
 import type { Skeleton, Vec2 } from "./types";
 import "./references.css";
 import layout from "../data/main_pool.json";
@@ -90,6 +91,7 @@ export function referenceEditor(options: {
   const tools=document.createElement("div");tools.className="reference-tools";
   tools.innerHTML='<button id="ref-add" type="button">+ Label / reference</button><button id="ref-labels" type="button" aria-pressed="true">Labels</button><button id="ref-export" type="button">Export references</button><button id="ref-import" type="button">Import</button><input id="ref-file" type="file" accept="application/json,.json" hidden><span id="ref-status" role="status" aria-live="polite"></span>';
   document.body.append(tools);
+  const confidence=confidenceOverlay({toolbar:tools,project:options.project,enabled:()=>options.enabled?.()??true});
   const dialog=document.createElement("dialog");dialog.className="reference-dialog";
   dialog.innerHTML='<form><h2>Map reference</h2><p id="ref-location"></p><label>Name<input id="ref-name" required maxlength="120" placeholder="e.g. Cervantes ramp"></label><label>Notes<textarea id="ref-note" maxlength="2000" placeholder="What does this show? What needs correcting?"></textarea></label><label>Reference photo<select id="ref-photo"><option value="">No photo</option></select></label><img id="ref-image" alt="Selected reference photo" hidden><label>Web or Drive link<input id="ref-url" type="url" placeholder="https://…"></label><a id="ref-open" target="_blank" rel="noopener noreferrer" hidden>Open reference link</a><p id="ref-save-status" role="status" aria-live="polite"></p><div class="reference-actions"><button type="submit">Save</button><button id="ref-move" type="button">Move pin</button><button id="ref-delete" type="button">Delete</button><button id="ref-close" type="button">Close</button></div><p class="reference-hint">Saved on this browser. Export references to back them up or share them; import on another device.</p></form>';
   document.body.append(dialog);
@@ -158,6 +160,7 @@ export function referenceEditor(options: {
   window.addEventListener("storage",e=>{if(e.key!==KEY)return;try{points=validPoints(JSON.parse(e.newValue??"[]"));render();}catch{status.textContent="Could not read updated references.";}});
   return { update(){
     const enabled=options.enabled?.()??true;if(!enabled&&armed){arm();down=null;}tools.hidden=!enabled;layer.hidden=!enabled||hidden;
+    confidence.update();
     if(!enabled||hidden)return;
     // Give user annotations priority when labels would overlap.
     const occupied:{x:number;y:number;w:number;h:number}[]=[];
@@ -168,5 +171,5 @@ export function referenceEditor(options: {
       const overlaps=occupied.some(r=>box.x<r.x+r.w+6&&box.x+w+6>r.x&&box.y<r.y+r.h+4&&box.y+h+4>r.y);
       b.style.visibility=pos.visible&&!overlaps?"visible":"hidden";if(pos.visible&&!overlaps)occupied.push(box);
     }
-  }, active:()=>armed||dialog.open };
+  }, active:()=>armed||dialog.open||confidence.active() };
 }

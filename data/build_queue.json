@@ -2204,6 +2204,25 @@
    "status": "in-progress",
    "owner": "Codex",
    "notes": "Material pass delivered provisionally from the 27 October batch. Exact stamp scale, camera alignment and inherited path placement remain estimates; no placement approval claimed. Source and final render review, geometry invariance and validation are recorded in docs/reviews/paseo-stamped-surface/."
+  },
+  {
+   "id": "confidence-overlay",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Sure / unsure overlay: colour every feature by how sure the model is, with known gaps and owner decisions",
+   "photos": [],
+   "build": "Owner request 27 October: show what is sure and what is unsure, and let Dave choose to accept a feature as good enough or ask for more photos. Every feature in the shared inventory gets a level (photographed, estimated, inferred, registry) from defaults plus data/confidence.json overrides; known gaps are pins. Map & photos and Overview get a 'Sure / unsure' toggle, legend and tap-for-details panel with Good enough / Needs photos. The scorecard counts levels per area. AGENTS.md allows inferred builds marked orange.",
+   "avoid": "No geometry changes. A level is a judgement for the game, never placement approval.",
+   "accept": [
+    "test_confidence.py passes in CI",
+    "Overlay renders on the map and in Overview",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Claude",
+   "notes": "Done: scripts/build_confidence.py, data/confidence.json, public/confidence.json, src/confidence.ts (UI module), docs/CONFIDENCE.md; screenshots in docs/reviews/confidence-overlay/. First grading by Claude from each feature's recorded trust note."
   }
  ]
 }

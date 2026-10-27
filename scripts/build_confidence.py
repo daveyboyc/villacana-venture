@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+"""How sure the model is about each feature: public/confidence.json for the 'Sure / unsure' overlay.
+
+  python3 scripts/build_confidence.py           write public/confidence.json
+  python3 scripts/build_confidence.py --check   fail if it is stale or data/confidence.json is invalid
+
+Every feature in the shared inventory (scripts/assign_photo_map.py) gets a level. Defaults: registry
+houses and pools are 'registry'; mapped streets, car parks and seafront areas are 'estimated';
+authored features are 'estimated' when they cite a photo and 'inferred' when they cite none.
+data/confidence.json overrides a level with a reason, records the owner's decision (accepted or
+needs-photos) and lists known gaps. Open placement discrepancies and photo checks that differ are
+flagged. build_references.py runs this. A level is a judgement for the game, not placement approval.
+See docs/CONFIDENCE.md.
+"""
+import argparse
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'scripts'))
+import assign_photo_map  # noqa: E402
+
+OUT = ROOT / 'public/confidence.json'
+LEVELS = ['photographed', 'estimated', 'inferred', 'registry']
+COLOURS = {'photographed': '#2f9e44', 'estimated': '#f2b400', 'inferred': '#e8590c', 'registry': '#4c7fd0', 'gap': '#c92a2a'}
+DECISIONS = ['accepted', 'needs-photos']
+
+
+def load(path):
+    return json.loads((ROOT / path).read_text())
+
+
+def rounded(value):
+    return [rounded(v) for v in value] if isinstance(value, list) else round(value, 2)
+
+
+def default(f):
+    if f['kind'] in ('building', 'pool'):
+        if f.get('notStanding'):
+            return 'estimated', 'Registry part judged not standing on the aerial; drawn as an outline only.'
+        return 'registry', 'Official land-registry footprint.'
+    if f['kind'] in ('street', 'parking', 'area'):
+        return 'estimated', f"Mapped outline ({f['source']}); width and edges approximate."
+    if f.get('evidence'):
+        return 'estimated', f"Built from {len(f['evidence'])} photo{'s' if len(f['evidence']) != 1 else ''}; no reviewer has yet said it is clearly photographed. {f['source']}"
+    return 'inferred', f"No photo cited. {f['source']}"
+
+
+def build():
+    spec = load('data/confidence.json')
+    skeleton = load('public/map/skeleton.json')
+    graph = load('refs/graph.json')
+    photos = {p['file'] for p in load('public/photos-ref/manifest.json')}
+    inventory = assign_photo_map.features(skeleton)
+    nodes = {n['featureId']: n for n in graph['nodes'] if n['kind'] == 'model-feature'}
+    areas = {}
+    for e in graph['edges']:
+        if e['relation'] == 'in-area' and e['from'].startswith('model:'):
+            areas.setdefault(e['from'][6:], []).append(e['to'][5:])
+    problems = []
+    ids = {f['id'] for f in inventory}
+    for id, entry in spec['features'].items():
+        if id not in ids:
+            problems.append(f'data/confidence.json: unknown feature {id}')
+        if 'level' in entry and entry['level'] not in LEVELS[:3]:
+            problems.append(f'data/confidence.json: {id} level must be one of {LEVELS[:3]}')
+        if 'level' in entry and not entry.get('why'):
+            problems.append(f'data/confidence.json: {id} needs a why for its level')
+        if 'decision' in entry and entry['decision'] not in DECISIONS:
+            problems.append(f'data/confidence.json: {id} decision must be one of {DECISIONS}')
+    features = []
+    for f in inventory:
+        level, why = default(f)
+        entry = spec['features'].get(f['id'], {})
+        if 'level' in entry:
+            level, why = entry['level'], entry['why']
+        node = nodes.get(f['id'], {})
+        item = {'id': f['id'], 'name': f['name'], 'kind': f['kind'], 'level': level, 'why': why,
+                'evidence': f.get('evidence', []), 'areas': sorted(areas.get(f['id'], []))}
+        flags = []
+        if node.get('verification') == 'verified':
+            flags.append('placement verified')
+        if node.get('verification') == 'disputed':
+            flags.append('open placement discrepancy')
+        if node.get('photoVerification') == 'differs':
+            flags.append('a photo check found it differs')
+        if flags:
+            item['flags'] = flags
+        if 'decision' in entry:
+            item['decision'] = entry['decision']
+            if entry.get('note'):
+                item['note'] = entry['note']
+        for key in ('ring', 'points', 'width'):
+            if key in f:
+                item[key] = rounded(f[key])
+        features.append(item)
+    for g in spec['gaps']:
+        for p in g['photos']:
+            if p not in photos:
+                problems.append(f"data/confidence.json: {g['id']} cites unknown photo {p}")
+    counts = {level: sum(f['level'] == level for f in features) for level in LEVELS}
+    counts['gap'] = len(spec['gaps'])
+    out = {'about': 'Generated by scripts/build_confidence.py from data/confidence.json and the shared feature inventory. '
+                    'See docs/CONFIDENCE.md. A level is a judgement for the game, not placement approval.',
+           'levels': [{'id': l, 'colour': COLOURS[l], 'meaning': spec['levels'][l], 'count': counts[l]} for l in LEVELS]
+           + [{'id': 'gap', 'colour': COLOURS['gap'], 'meaning': 'Known gap: visibly there, not modelled yet.', 'count': counts['gap']}],
+           'decisions': spec['decisions'], 'features': features, 'gaps': spec['gaps']}
+    return out, problems
+
+
+def text(out):
+    return json.dumps(out, ensure_ascii=False, separators=(',', ':')) + '\n'
+
+
+def write():
+    out, problems = build()
+    OUT.write_text(text(out))
+    return problems
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('--check', action='store_true')
+    args = parser.parse_args()
+    out, problems = build()
+    if args.check:
+        if not OUT.exists() or OUT.read_text() != text(out):
+            problems.append('public/confidence.json is stale: run python3 scripts/build_confidence.py')
+    else:
+        OUT.write_text(text(out))
+    counts = ', '.join(f"{l['count']} {l['id']}" for l in out['levels'])
+    print(f'Confidence: {counts}')
+    for p in problems:
+        print(' -', p)
+    if problems:
+        sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()
