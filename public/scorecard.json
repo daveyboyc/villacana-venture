@@ -516,8 +516,8 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 2,
-    "inferred": 0,
+    "estimated": 1,
+    "inferred": 1,
     "registry": 0,
     "gaps": 0
    },
@@ -526,7 +526,7 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 1, 1 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "How sure: 0 photographed, 2 estimated, 0 inferred.",
+    "How sure: 0 photographed, 1 estimated, 1 inferred.",
     "Placement: 0 of 2 features verified."
    ],
    "light": {
@@ -1483,8 +1483,8 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 10,
-    "inferred": 0,
+    "estimated": 9,
+    "inferred": 1,
     "registry": 0,
     "gaps": 0
    },
@@ -1492,7 +1492,7 @@
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 17, 16 placed; no camera solved.",
-    "How sure: 0 photographed, 10 estimated, 0 inferred.",
+    "How sure: 0 photographed, 9 estimated, 1 inferred.",
     "Placement: 0 of 10 features verified, 2 open discrepancies."
    ],
    "light": {
@@ -1753,8 +1753,8 @@
    },
    "confidence": {
     "photographed": 55,
-    "estimated": 85,
-    "inferred": 7,
+    "estimated": 84,
+    "inferred": 8,
     "registry": 233,
     "gaps": 5
    },
@@ -1763,7 +1763,7 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 170, 153 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 55 photographed, 85 estimated, 7 inferred, 5 known gaps.",
+    "How sure: 55 photographed, 84 estimated, 8 inferred, 5 known gaps.",
     "Placement: 0 of 380 features verified, 9 open discrepancies."
    ],
    "light": {

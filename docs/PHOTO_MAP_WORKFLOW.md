@@ -24,8 +24,11 @@ Every batch goes through the same steps, so any agent can pick up any area.
    the picture fixes the spot (a sign, a step, the same scene as a good pin),
    correct it in `data/photo_positions.json` with `trust: "checked against
    photo content"`, a `locationBasis` sentence and the original `gps` kept.
-4. `python3 scripts/assign_photo_map.py`, then
-   `python3 scripts/build_references.py --sheets --check`.
+4. `python3 scripts/assign_photo_map.py`, then `python3 scripts/photo_requests.py` to see which
+   photo requests (`data/photo_requests.json`, the red spots on the scorecard) the new photos
+   answer. Look at them: set the request `answered` with `answeredBy` and a `note`, or leave it
+   open and say in its `note` what is still missing. Add requests for anything the batch shows is
+   still unphotographed. Then `python3 scripts/build_references.py --sheets --check`.
 5. Commit the web copies, tags and `refs/` here, and the contact sheets in
    `villacana-reference`. Write a short dated note (`docs/PHOTOS_<date>.md`)
    only for findings that change what we know about an area; also add those

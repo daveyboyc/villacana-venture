@@ -167,6 +167,10 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
 
   return {
     update(x: number, z: number) {
+      // Sit below the inspection jump box when it shows (it shares the top-left corner).
+      const jump = document.querySelector<HTMLElement>("#inspection-jump"), box = jump?.getBoundingClientRect();
+      const top = box && box.height && getComputedStyle(jump!).display !== "none" ? `${Math.round(box.bottom + 8)}px` : "";
+      if (panel.style.top !== top) panel.style.top = top;
       if (!data) return;
       here = [x, z];
       if (!spots.length) { const all = data.areas.find((a) => a.id === WHOLE); if (all) placeBeacons(all); showBeacons(); }

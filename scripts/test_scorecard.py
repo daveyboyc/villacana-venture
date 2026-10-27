@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 import build_scorecard
+import photo_requests
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -40,6 +41,30 @@ class Scorecard(unittest.TestCase):
             self.assertEqual(area_at(sum(p[0] for p in ring) / len(ring), sum(p[1] for p in ring) / len(ring)), area)
         self.assertEqual(area_at(-158.8, 41.2), 'elena')  # the Elena passage
         self.assertEqual(area_at(-153.7, 57.8), 'elena')  # the ramp up from Cervantes, on the Elena side
+
+    def test_lights_follow_photo_requests(self):
+        cards = {c['id']: c for c in self.card['areas']}
+        states = photo_requests.states()
+        for c in self.card['areas']:
+            self.assertIn(c['light']['colour'], ('red', 'amber', 'green'))
+            mine = [r for r in states if c['id'] == 'whole-resort' or r['area'] == c['id']]
+            # Red exactly while a request here still waits for photos.
+            self.assertEqual(c['light']['colour'] == 'red', any(r['state'] == 'open' for r in mine), c['id'])
+        self.assertEqual(len(cards['whole-resort']['light']['requests']), sum(r['state'] != 'answered' for r in states))
+
+    def test_matcher_picks_up_new_photos(self):
+        request = {'id': 'x', 'area': 'elena', 'at': [0, 0], 'look': [0, -10], 'ask': '', 'why': '', 'priority': 1, 'radius': 6, 'since': '2026-10-27', 'status': 'open'}
+        photo = lambda **kw: {'file': 'IMG_9999.jpg', 'x': 2, 'z': 1, 'accuracy': 3, 'heading': 10, 'taken': '2026-10-28', **kw}
+        state = lambda p, tags=None: photo_requests.states([request], [p], tags or {})[0]
+        self.assertEqual(state(photo())['state'], 'received')
+        self.assertEqual(state(photo(taken='2026-10-20'))['state'], 'open', 'older photos do not answer a new request')
+        self.assertEqual(state(photo(x=20))['state'], 'open', 'too far from the spot')
+        self.assertEqual(state(photo(heading=180))['state'], 'open', 'facing away')
+        self.assertEqual(state(photo(heading=180), {'IMG_9999.jpg': {'looksAt': [0, -9]}})['state'], 'received', 'a reviewed looksAt overrides the compass')
+        done = photo_requests.states([{**request, 'status': 'answered', 'answeredBy': ['IMG_1.jpg']}], [], {})[0]
+        self.assertEqual((done['state'], done['photos']), ('answered', ['IMG_1.jpg']))
+        for r in photo_requests.load():
+            self.assertTrue(r['ask'] and r['why'] and len(r['at']) == 2 and r['status'] in ('open', 'answered'), r['id'])
 
 
 if __name__ == '__main__':
