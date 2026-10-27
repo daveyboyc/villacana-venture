@@ -14,14 +14,40 @@
     -0.8586653356329426
   ],
   "rise": 0.45,
-  "stepRun": 0.38,
-  "stepWidth": 1.04,
-  "risers": 2,
+  "risers": 3,
+  "steps": [
+    {
+      "top": 0.15,
+      "front": -1.04,
+      "back": -0.71,
+      "width": 1.2,
+      "radius": 0.12
+    },
+    {
+      "top": 0.3,
+      "front": -0.71,
+      "back": -0.38,
+      "width": 1.0
+    },
+    {
+      "top": 0.45,
+      "front": -0.38,
+      "back": -0.09,
+      "width": 1.0
+    }
+  ],
+  "tile": 0.165,
   "wallWidth": 2.5,
   "wallThickness": 0.18,
   "wallHeight": 1.9,
-  "doorWidth": 0.9,
+  "doorWidth": 0.72,
   "doorHeight": 1.8,
+  "frame": {
+    "width": 0.14,
+    "projection": 0.05,
+    "height": 1.9,
+    "copingHalfWidth": 0.55
+  },
   "patio": {
     "id": "cervantes-junction-north-patio",
     "ring": [
@@ -53,11 +79,11 @@
     "id": "cervantes-junction-north-bed",
     "ring": [
       [
-        -153.1596,
-        56.3894
+        -152.8161,
+        56.1844
       ],
       [
-        -154.877,
+        -154.8769,
         57.4145
       ],
       [
@@ -65,8 +91,16 @@
         56.6503
       ],
       [
-        -153.6158,
-        55.6252
+        -153.1693,
+        55.3587
+      ],
+      [
+        -152.8822,
+        55.8395
+      ],
+      [
+        -152.9853,
+        55.901
       ]
     ],
     "height": 0.425,
@@ -74,8 +108,45 @@
       "IMG_2327.jpg",
       "IMG_2328.jpg",
       "IMG_2196.jpg",
-      "IMG_2355.jpg"
+      "IMG_2355.jpg",
+      "IMG_2287.jpg"
     ]
+  },
+  "eastPlanter": {
+    "id": "cervantes-junction-east-planter",
+    "ring": [
+      [
+        -152.3413,
+        54.7946
+      ],
+      [
+        -152.0236,
+        55.327
+      ],
+      [
+        -151.9205,
+        55.2655
+      ],
+      [
+        -151.8744,
+        55.3428
+      ],
+      [
+        -151.1359,
+        54.902
+      ],
+      [
+        -151.4998,
+        54.2923
+      ]
+    ],
+    "height": 0.45,
+    "evidence": [
+      "IMG_2196.jpg",
+      "IMG_2287.jpg",
+      "IMG_2327.jpg"
+    ],
+    "trust": "Photos show a low white rounded-corner planter with a clipped shrub directly east of the upper treads, its front set back from the bottom step, which wraps round its corner. Front set back about .24 m (IMG_2196 and IMG_2287 base lines read .2-.3 m); height about .45 m, about level with the threshold; its east end is stopped at the start of the separate low lane-edge wall, which this task does not move. Extent and height are estimates."
   },
   "replaceAlong": [
     -2.2,
@@ -87,5 +158,5 @@
     "IMG_2287.jpg",
     "IMG_2196.jpg"
   ],
-  "trust": "Photos support a closed timber garden door in a white wall with curved coping, two red treads with white risers, and an adjacent west planting bed. The .45 m door/patio rise is an estimate within the survey .3-.55 m and .4-.5 m ranges; bed height .425 m is within .3-.5 m. Garden wall origin is within 1.5 m of the survey anchor. Door width, .38 m treads, local wall ends and partial patio extent are estimates, not surveyed boundaries. Roof views support patio/sill datum but do not trace the complete enclosure."
+  "trust": "IMG_2196, IMG_2287 and IMG_2327 (27 October recheck) show three white risers, not two: the lane, a bottom step about 1.2 m wide with rounded ends, a second step about 1.0 m wide between the west bed's rounded end and the east planter, then a threshold tread in front of the door. Each tread is two rows of small square red quarry tiles, about .3 m. Riser heights read about .18, .14 and .15 m in IMG_2196; they are modelled as three equal .15 m risers to the unchanged .45 m door/patio rise (survey .3-.55 m). The bottom step is flush with the west bed front and wraps the bed's thickened end; the bed now runs to the flight. Door about .72 m by 1.8 m (width/height ratio from IMG_2196) in a white pilaster frame about 1.0 m wide under a curved coping about 1.1 m wide. Garden wall origin, wall line and patio extent are unchanged estimates; tread depths, widths and riser heights are read from photos to about .05 m, not measured; no placement approval."
 }

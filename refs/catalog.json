@@ -552,15 +552,17 @@
   "path": "public/photos-ref/IMG_2196.jpg",
   "title": "Elena junction: private brown door up tiled steps, bougainvillea",
   "shows": [
-   "elena"
+   "elena",
+   "cervantes"
   ],
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
+   "planting",
+   "levels"
   ],
-  "note": null,
+  "note": "Door-steps detail recheck 27 October: three white risers (lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door), the bottom step wider with rounded ends, the upper flight between the west hedge bed's rounded end and a low east planter set back from the bottom step.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -574,19 +576,21 @@
   },
   "citedBy": [
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-bed"
+   "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ],
   "looksAt": [
-   -154.1,
-   53.4
+   -152.8,
+   55.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_north_patios.json:cervantes-north-partition-east",
    "cervantes_garden_door.json:cervantes-garden-door",
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
    "cervantes_garden_door.json:cervantes-junction-north-bed"
-  ]
+  ],
+  "subject": "The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it"
  },
  {
   "id": "IMG_2197.jpg",
@@ -1258,7 +1262,7 @@
    "cervantes_patio_walls.json:cervantes-patio-south-3",
    "street:cervantes",
    "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ]
  },
  {
@@ -3623,15 +3627,17 @@
   "path": "public/photos-ref/IMG_2287.jpg",
   "title": "Elena junction: private doorway and planting",
   "shows": [
-   "elena"
+   "elena",
+   "cervantes"
   ],
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
+   "planting",
+   "levels"
   ],
-  "note": null,
+  "note": "Door-steps detail recheck 27 October: three white risers; the bottom step is wider than the flight with rounded ends, and the east planter's front stands about 0.2-0.3 m behind it (base lines compared with the west bed's).",
   "observation": "A private brown timber door sits above small tiled entrance steps behind a low white planting wall. Blue flowers and bougainvillea screen white plaster fronts; a tall black lantern and flush utility cover are visible. Private door steps are distinct from the shared junction ramp.",
   "taken": "2026-10-13",
   "originalUrl": "https://drive.google.com/file/d/1CcAqqBZGKYO7Ekg9-Kn3_IRtp1Ft10pP/view?usp=drivesdk",
@@ -3643,19 +3649,22 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "cervantes_garden_door.json:cervantes-garden-door"
+   "cervantes_garden_door.json:cervantes-garden-door",
+   "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ],
   "looksAt": [
-   -154.0,
-   53.4
+   -152.8,
+   55.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_north_patios.json:cervantes-north-partition-east",
    "cervantes_garden_door.json:cervantes-garden-door",
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
    "cervantes_garden_door.json:cervantes-junction-north-bed"
-  ]
+  ],
+  "subject": "The brown garden door and its three-riser flight between the west hedge bed and the east planter"
  },
  {
   "id": "IMG_2288.jpg",
@@ -4158,7 +4167,7 @@
    "layout",
    "facades"
   ],
-  "note": null,
+  "note": "Door-steps detail recheck 27 October: each red tread is two rows of small square quarry tiles; a third white riser climbs from the second tread to the threshold tiles in front of the door. The bottom step's rounded west end wraps in front of the bed's thickened rounded end.",
   "observation": "Looking west up Cervantes from the Elena junction. On the right two red-tread steps with white sides climb to a brown timber door between a plumbago hedge and bougainvillea; the lane beyond shows the ramp strip and the steps beside it, a drain across the foot and service covers in the tiles.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1aaT74LlpLoCuTv5iEZZaVZQFV0JbFjVP/view?usp=drivesdk",
@@ -4172,19 +4181,21 @@
   },
   "citedBy": [
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-bed"
+   "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
   ],
   "looksAt": [
-   -156.5,
-   56.6
+   -152.7,
+   55.6
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "cervantes_garden_door.json:cervantes-junction-north-bed",
-   "cervantes_north_patios.json:cervantes-north-partition-middle",
-   "cervantes_patio_walls.json:cervantes-patio-north-1",
-   "street:cervantes"
-  ]
+   "cervantes_garden_door.json:cervantes-garden-door",
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
+  ],
+  "subject": "The garden-door steps: two red treads and the threshold, the west bed's rounded end and the east planter"
  },
  {
   "id": "IMG_2328.jpg",
@@ -5696,9 +5707,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:cervantes",
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
    "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "cervantes_patio_walls.json:cervantes-patio-south-3",
-   "ramp:cervantes-elena-ramp"
+   "cervantes_patio_walls.json:cervantes-patio-south-3"
   ],
   "subject": "The Cervantes/Elena junction"
  },

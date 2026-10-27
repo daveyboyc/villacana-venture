@@ -2146,6 +2146,37 @@
    "status": "done",
    "owner": "Claude",
    "notes": "Done: scripts/build_scorecard.py, public/scorecard.json, refs/SCORECARD.md, src/scorecard.ts; docs/SCORECARD.md; screenshots in docs/reviews/area-scorecard/."
+  },
+  {
+   "id": "cervantes-door-steps-detail",
+   "area": "cervantes",
+   "priority": 2,
+   "kind": "levels",
+   "title": "Cervantes/Elena garden door (Elena 24 patio): three-riser flight, framing beds and door frame",
+   "photos": [
+    "IMG_2196.jpg",
+    "IMG_2287.jpg",
+    "IMG_2327.jpg",
+    "IMG_2328.jpg"
+   ],
+   "features": [
+    "cervantes_garden_door.json:cervantes-garden-door",
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "cervantes_garden_door.json:cervantes-junction-east-planter"
+   ],
+   "build": "Full-size recheck of IMG_2196/2287/2327/2328: the brown garden door on Cervantes north at the Elena junction (the patio photographed from the Elena 24 roof) is reached by three white risers, not two: a bottom step about 1.2 m wide with rounded ends, flush with the west hedge bed's front; a second step about 1.0 m wide between the bed's rounded end and a low east planter; a threshold tread in front of the door. Each tread is two rows of small red quarry tiles. Door about 0.72 m by 1.8 m in a white pilaster frame about 1.0 m wide under a curved coping about 1.1 m wide.",
+   "avoid": "Keep the garden wall origin and line, the 0.45 m door/patio rise and the private patio extent; do not move the separate low lane-edge wall east of the planter or narrow Cervantes.",
+   "accept": [
+    "check_cervantes_garden_door.py and check_terrain.py pass",
+    "layout test climbs three equal risers to the patio datum and finds the door solid",
+    "before/after renders from IMG_2196, IMG_2287, IMG_2327 and IMG_2328 recorded"
+   ],
+   "dependsOn": [
+    "cervantes-door-steps"
+   ],
+   "status": "in-progress",
+   "owner": "claude",
+   "notes": "Riser count, tread rows, widths and the bed/planter framing are read from photos; dimensions to about 0.05 m, not measured. No measured placement packet or independent review: placement stays unapproved, so the task stays in progress."
   }
  ]
 }

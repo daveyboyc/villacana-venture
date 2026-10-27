@@ -164,14 +164,22 @@
  },
  "IMG_2196.jpg": {
   "shows": [
-   "elena"
+   "elena",
+   "cervantes"
   ],
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
+   "planting",
+   "levels"
   ],
-  "title": "Elena junction: private brown door up tiled steps, bougainvillea"
+  "title": "Elena junction: private brown door up tiled steps, bougainvillea",
+  "looksAt": [
+   -152.8,
+   55.0
+  ],
+  "subject": "The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it",
+  "note": "Door-steps detail recheck 27 October: three white risers (lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door), the bottom step wider with rounded ends, the upper flight between the west hedge bed's rounded end and a low east planter set back from the bottom step."
  },
  "IMG_2197.jpg": {
   "shows": [
@@ -1137,13 +1145,21 @@
  },
  "IMG_2287.jpg": {
   "shows": [
-   "elena"
+   "elena",
+   "cervantes"
   ],
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
-  ]
+   "planting",
+   "levels"
+  ],
+  "looksAt": [
+   -152.8,
+   55.0
+  ],
+  "subject": "The brown garden door and its three-riser flight between the west hedge bed and the east planter",
+  "note": "Door-steps detail recheck 27 October: three white risers; the bottom step is wider than the flight with rounded ends, and the east planter's front stands about 0.2-0.3 m behind it (base lines compared with the west bed's)."
  },
  "IMG_2288.jpg": {
   "shows": [
@@ -1865,7 +1881,13 @@
    "levels",
    "layout",
    "facades"
-  ]
+  ],
+  "looksAt": [
+   -152.7,
+   55.6
+  ],
+  "subject": "The garden-door steps: two red treads and the threshold, the west bed's rounded end and the east planter",
+  "note": "Door-steps detail recheck 27 October: each red tread is two rows of small square quarry tiles; a third white riser climbs from the second tread to the threshold tiles in front of the door. The bottom step's rounded west end wraps in front of the bed's thickened rounded end."
  },
  "IMG_2328.jpg": {
   "shows": [
