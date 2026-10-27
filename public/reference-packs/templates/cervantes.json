@@ -18,6 +18,11 @@
   "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
   "candidateSources": [
     {
+      "id": "IMG_2196.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2196.jpg"
+    },
+    {
       "id": "IMG_2252.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2252.jpg"
@@ -76,6 +81,11 @@
       "id": "IMG_2286.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2286.jpg"
+    },
+    {
+      "id": "IMG_2287.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2287.jpg"
     },
     {
       "id": "IMG_2288.jpg",

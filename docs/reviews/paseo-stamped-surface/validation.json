@@ -16,7 +16,8 @@
     },
     "referencePacks": {
       "passed": true,
-      "tests": 10
+      "tests": 10,
+      "combinedMainOutputsRegenerated": true
     },
     "referenceCatalogue": {
       "passed": true,
@@ -54,7 +55,8 @@
       "routes": 20,
       "bothDirections": true,
       "segments": 438,
-      "runtimeErrors": []
+      "runtimeErrors": [],
+      "combinedMainPassed": true
     },
     "photoMap": {
       "passed": true,
@@ -64,7 +66,9 @@
       "passed": true
     },
     "overviewFinal": {
-      "status": "running"
+      "passed": true,
+      "target": "Built production files, same test_overview_browser.cjs assertions served through Vite preview to avoid development HMR during source regeneration.",
+      "notes": "Earlier dev-server runs timed out during concurrent regeneration; unchanged-main overview and the final production run passed."
     }
   },
   "placementGate": {
@@ -72,5 +76,6 @@
     "output": "placement-gate.txt",
     "notes": "Conservative renderer/source-context fingerprint flags existing paseo retaining-wall and timber-edge features. Actual seaside vertices/normals are identical. No measured placement approval claimed; task remains in progress."
   },
-  "independentMaterialReview": "independent-source-review.md"
+  "independentMaterialReview": "independent-source-review.md",
+  "integrationBase": "8324a9933fa324ec701a28ffac108f08355aab9d"
 }
