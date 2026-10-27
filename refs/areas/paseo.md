@@ -14,6 +14,7 @@ The seafront promenade between the resort's seaward walls and the beach.
 - Issue #49: Details-only bounded clipped hedges behind mesh (IMG_2349/2352/2354), short green cloth runs (IMG_2350/2352), four photographed slim white lamps on the paving at the wall foot and a flush service-cover surface (IMG_2354). Positions/dimensions estimated relative to shared wall, not GPS subjects. Along the wall run the protected route is the 2.2 m clear walk beyond the lamps (paving stays 3 m), so all four lamps stand where the photos show them; lamp count/spacing beyond the photographed run is not invented.
 - Issue #41 (16 October): after PR #64 the eastern OSM paseo still entered registry part 6465801UF1366N_part5 by 2.8 m (and part6 by 0.5 m), not 0.64 m from it. On the aerial the pink paseo (about 3.5 m wide) crosses both parts and the rest of part5 is open sand; neighbouring registry roofs match the image, and IMG_2346/IMG_2347 (pins about 4 m) show sand, the Barraka sign planter and a walkway there. So the footprint, not the line, was wrong: both parts keep their exact rings as dashed registry outlines with floors 0 (data/registry_corrections.json), no longer extruded or solid. Paseo points unchanged; the whole paseo now keeps 1.5 m from every standing house and is walked end to end both ways. Open: east of Barraka the OSM line runs along the landward edge of the pink strip, about 2 m landward of its centre on the aerial.
 - Dave, 2026-10-21, on a render of the corner by Calle Guillermo: the sandstone wall is not 3 m tall there. The garden behind its east end now falls to 1 m above the paseo (data/main_pool.json gardenFall), so the wall stays about 1 m (task guillermo-slope-east-steps); this answers issue #40's question in favour of the gardens falling. The fall's shape is estimated.
+- 27 October batch: IMG_2481-2483 (52 mm) look north-east along the west paseo to Barraka: the curving pink stamped walk, a broad dry earth verge with a timber edge and a row of young agaves on the seaward side, the sandstone wall, mesh fence and slim white lamps on the land side.
 
 ## Read first
 
@@ -24,8 +25,8 @@ The seafront promenade between the resort's seaward walls and the beach.
 
 ## Coverage
 
-Layout: 14, Levels and slopes: 8, Facades and roofs: 2, Materials: 4, Views: 5
-16 reviewed, 0 suggested only by camera position.
+Layout: 16, Levels and slopes: 8, Facades and roofs: 2, Materials: 5, Planting: 2, Views: 8
+19 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -113,6 +114,9 @@ graph LR
 | [IMG_2354.jpg](../../public/photos-ref/IMG_2354.jpg) | ground | layout, levels | Paseo curving north-east beside the sandstone wall _Used by: paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-west-hedge, paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-service-cover._ |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
 | [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: paseo_wall.json:paseo-timber-edge._ |
+| [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. |
+| [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. |
+| [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. |
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2297.jpg](../../public/photos-ref/IMG_2297.jpg) | ground | layout | Dalí seaward end: narrow pedestrian gate _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |

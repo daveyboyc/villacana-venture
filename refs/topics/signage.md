@@ -16,6 +16,8 @@ Street-name plaques, house numbers and other readable signs.
 | --- | --- | --- | --- |
 | [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2254.jpg](../../public/photos-ref/IMG_2254.jpg) | ground | signage | Plaque reading CALLE ELENA 18-30 **Looks at:** The CALLE ELENA plaque in the covered walkway. _Used by: building:6265201UF1366N_part5._ |
+| [IMG_2518.jpg](../../public/photos-ref/IMG_2518.jpg) | ground | signage, levels, materials, layout | Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp **Looks at:** East portal steps and ramp of the Calle Elena covered walkway. **Note:** Plaque reads CALLE ELENA 18 36, not 18-30. Two risers up into the walkway from the lane: level item elena-walkway-east-steps. **Compass:** the subject is 67° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2508.jpg](../../public/photos-ref/IMG_2508.jpg) | ground | layout, signage, materials | Covered passage signed CALLE ELENA 25, looking through to a garden gate **Looks at:** CALLE ELENA 25 covered passage into block 6265601UF1366N_part1. **Note:** Not in data/passages.json; the registry draws this block as one solid 2-storey part. Compass heading inside a covered passage may be off; direction into the block is from the pin against the Elena south lane, the far end is unregistered. |
 
 ## Calle Miguel de Cervantes
 

@@ -574,6 +574,34 @@
       "model": "built",
       "task": "door-sills",
       "note": "The house-side footpath stands a kerb above the asphalt; passage floors under the arches are flush with it, with a slot drain at the threshold."
+    },
+    {
+      "id": "elena-walkway-east-steps",
+      "area": "elena",
+      "type": "steps",
+      "from": "the Calle Elena lane outside the covered walkway's east portal",
+      "rise": [
+        0.25,
+        0.36
+      ],
+      "confidence": "medium",
+      "run": [
+        0.6,
+        0.9
+      ],
+      "at": [
+        -154.5,
+        38.5
+      ],
+      "atAccuracy": 2.5,
+      "photos": [
+        "IMG_2518.jpg",
+        "IMG_2519.jpg",
+        "IMG_2254.jpg"
+      ],
+      "model": "missing",
+      "task": "elena-level-clearance-survey",
+      "note": "Two risers with white nosings up from the lane into the walkway (6265201UF1366N_part5), a red ribbed rubber ramp beside them on the north side. Floor inside is terracotta with blue-and-white inset tiles. Rise judged from two 0.15-0.18 m risers; under a roof, so the laser survey cannot check it."
     }
   ],
   "photosWanted": [

@@ -1789,7 +1789,12 @@
    "priority": 1,
    "kind": "audit",
    "title": "Elena: register both portals and reconcile second tunnel candidate",
-   "photos": [],
+   "photos": [
+    "IMG_2518.jpg",
+    "IMG_2519.jpg",
+    "IMG_2203.jpg",
+    "IMG_2202.jpg"
+   ],
    "build": "Resolve tun-001 portal observations T01/T02, private 36/34 spur and connected Elena lane. Obtain both-end views for legacy tun-002 host 6265201UF1366N_part2; keep far roof-view arch identity separate until supported.",
    "avoid": "No inferred public through route or duplicate merge from a similar-looking arch; both world portals stay null until evidence registration.",
    "accept": [
@@ -1859,8 +1864,11 @@
    "priority": 1,
    "kind": "audit",
    "title": "Elena: resolve path/threshold levels and usable clearance uncertainty",
-   "photos": [],
-   "build": "Measure kerb, doorway thresholds, ramp and three steps against current level/survey framework and calibrated views. Keep existing estimated dimensions separate from new measurements. Record unknown clearance where uncertainty consumes usable width.",
+   "photos": [
+    "IMG_2518.jpg",
+    "IMG_2519.jpg"
+   ],
+   "build": "Measure kerb, doorway thresholds, ramp and three steps against current level/survey framework and calibrated views. Keep existing estimated dimensions separate from new measurements. Record unknown clearance where uncertainty consumes usable width. Includes the two steps and ramp at the covered walkway's east portal (data/levels_survey.json elena-walkway-east-steps, IMG_2518/2519).",
    "avoid": "Do not raise floors/doors to hide incompatible terrain, infer metres from tile counts, or count successful movement as real-world clearance.",
    "accept": [
     "Declared source/model scope and limitations retained",
@@ -2099,6 +2107,26 @@
     "3d-browser-regression-reliability"
    ],
    "issue": 158
+  },
+  {
+   "id": "elena-25-passage",
+   "area": "elena",
+   "priority": 2,
+   "kind": "audit",
+   "title": "Elena south: register the CALLE ELENA 25 covered passage and where it leads",
+   "photos": [
+    "IMG_2507.jpg",
+    "IMG_2508.jpg"
+   ],
+   "build": "IMG_2507/2508 (27 Oct batch) show a second covered walk-through on Calle Elena, signed CALLE ELENA 25: a street arch off Elena south, a covered passage with doors both sides, and a far arch to a red-tiled path and an iron garden gate. It enters registry block 6265601UF1366N_part1, which the registry and the game draw as one solid two-storey part; the aerial shows a planted courtyard inside the block. Register the portal on the lane (pin +/-2.5 m, heading unreliable under cover), estimate the passage line against the aerial courtyard, and decide whether it belongs in data/passages.json (which today only opens whole registry parts).",
+   "avoid": "Do not cut the block or open a public route through it without a both-end view; the garden gate at the far end may be private. Do not merge it with the 18-36 walkway or the legacy Dali-end candidate.",
+   "accept": [
+    "Portal registered on the Elena south lane with stated uncertainty",
+    "Passage line and far-end identity recorded as evidence or open question",
+    "build_references --check passes"
+   ],
+   "dependsOn": [],
+   "status": "open"
   }
  ]
 }
