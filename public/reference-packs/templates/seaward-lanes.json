@@ -158,6 +158,16 @@
       "path": "public/photos-ref/IMG_2334.jpg"
     },
     {
+      "id": "IMG_2488.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2488.jpg"
+    },
+    {
+      "id": "IMG_2494.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2494.jpg"
+    },
+    {
       "id": "ref:apple-maps/04-top-down-south-half.png",
       "private": true,
       "path": "villacana-reference/apple-maps/04-top-down-south-half.png"

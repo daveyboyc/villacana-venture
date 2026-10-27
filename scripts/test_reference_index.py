@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 from find_reference import find
 from build_references import task_verification
+from test_scorecard import Scorecard  # noqa: F401  run with the reference index tests in CI
 
 ROOT = Path(__file__).resolve().parents[1]
 

@@ -54,6 +54,7 @@ import { addBoundaryReference, barrierRings, referenceGroundHeight, roadHeight }
 import { exportModel, photoCamera } from "./photo-camera";
 import { setupLook } from "./look";
 import { addFacadeKit, facadeKitWalls } from "./facade-kit";
+import { areaScorecard } from "./scorecard";
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -428,7 +429,8 @@ async function boot(): Promise<void> {
 
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
-  if (kitWalls.size) void addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight);
+  const kitParts = kitWalls.size ? addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight) : Promise.resolve([]);
+  if (new URLSearchParams(location.search).get("export") === "kit") void kitParts.then((parts) => { (window as unknown as { villacanaKit: unknown }).villacanaKit = parts; });
   // Keep the existing finite garden paving visible on the newly surveyed ground.
   const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
   if(gardenPaving){scene.updateMatrixWorld(true);const old=gardenPaving.geometry;gardenPaving.geometry=refine(old,(x,z)=>Math.max(0,siteY(x,z)-silviaY),gardenPaving.matrixWorld);if(gardenPaving.geometry!==old)old.dispose();}
@@ -438,6 +440,7 @@ async function boot(): Promise<void> {
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
 
+  const scorecard=areaScorecard();
   const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
   renderer.setAnimationLoop(() => {
@@ -449,6 +452,7 @@ async function boot(): Promise<void> {
     const routeNames=[...new Set(nearbyNames.map(r=>r.name))].slice(0,2);currentRoute.hidden=overview||!routeNames.length;currentRoute.textContent=routeNames.join(" · ");
     gateButton.hidden=overview||Math.hypot(player.x-gate.at[0],player.z-gate.at[1])>6;
     if(!overview && !references.active()) player.update(dt, input, world, camYaw);
+    scorecard.update(overview?overviewCentre.x:player.x,overview?overviewCentre.z:player.z);
 
     const inCloseSpace=!!host && (silviaCloseCamera(player.x,player.z)||(host.holes??[]).some(r=>pointInRing(player.x,player.z,r)));
     const firstPerson=!overview && (walkingView==='first'||(walkingView===null&&inCloseSpace));

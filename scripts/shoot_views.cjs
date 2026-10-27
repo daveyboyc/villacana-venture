@@ -1,6 +1,7 @@
 // Render the game from where reference photos were taken, to compare by eye.
 //   node scripts/shoot_views.cjs IMG_2365 IMG_2286 [--pool=north,middle] [--details] [--high] [--pose [--initial]] [--task=<id> --as=before|after]
 //   node scripts/shoot_views.cjs --model     only writes layout-checks.local/model.json (scripts/lidar_check.py)
+//   node scripts/shoot_views.cjs --kit       only writes layout-checks.local/kit.json, the facade kit as placed (scripts/build_scorecard.py)
 // Stands the player at each photo's camera pin, facing its compass heading, and writes
 // layout-checks.local/views/<photo>.png. The game camera is third-person at walking height,
 // so a roof or upper-floor photo is matched in position and direction only (use --high to
@@ -42,6 +43,16 @@ const path = require("node:path");
     catch (error) { throw new Error(`the scene did not finish loading. ${errors.join(" | ")}`); }
     fs.writeFileSync(path.join("layout-checks.local", "model.json"), JSON.stringify(await page.evaluate(() => window.villacanaModel)));
     console.log("layout-checks.local/model.json", errors.length ? "ERRORS " + errors.join(" | ") : "ok");
+    await page.close();
+  }
+  if (flags.includes("--kit")) {
+    const page = await browser.newPage({ viewport: { width: 800, height: 600 } }), errors = [];
+    page.on("pageerror", (e) => errors.push(e.message));
+    await page.goto(`${site}/slice.html?pool=${pool}&details=1&export=kit`);
+    try { await page.waitForFunction(() => window.villacanaKit, null, { timeout: 120000 }); }
+    catch (error) { throw new Error(`the facade kit did not finish loading. ${errors.join(" | ")}`); }
+    fs.writeFileSync(path.join("layout-checks.local", "kit.json"), JSON.stringify(await page.evaluate(() => window.villacanaKit)));
+    console.log("layout-checks.local/kit.json", errors.length ? "ERRORS " + errors.join(" | ") : "ok");
     await page.close();
   }
   for (const name of photos) {

@@ -54,8 +54,12 @@ function facing(ring: Vec2[], ax: number, az: number, bx: number, bz: number): V
   return [nx, nz];
 }
 
-export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[], walls: Set<string>, floorHeight: number): Promise<void> {
+/** One placed part, for the scorecard's count of traced and generated parts (scripts/build_scorecard.py). */
+export type PlacedPart = { part: (typeof PARTS)[number]; x: number; z: number; traced: boolean };
+
+export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[], walls: Set<string>, floorHeight: number): Promise<PlacedPart[]> {
   const kit: Kit = { "shutter-door": [], "iron-balcony": [], "wood-balcony": [], "shutter-window": [], "arched-window": [] };
+  const tracedParts = new Set<THREE.Matrix4>();
   const up = new THREE.Vector3(0, 1, 0), one = new THREE.Vector3(1, 1, 1);
   for (const b of houses) {
     // Stand on the house's own floor datum, as draped (src/terrain.ts).
@@ -72,7 +76,9 @@ export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[
           const width = p.width ?? WIDTH[p.part];
           // Keep the part on its own wall where the photographed corner and the registry corner differ.
           const along = Math.min(Math.max(p.along, width / 2), Math.max(length - width / 2, width / 2));
-          kit[p.part].push(new THREE.Matrix4().compose(at(along / length, p.storey * floorHeight), turn, new THREE.Vector3(width / WIDTH[p.part], 1, 1)));
+          const m = new THREE.Matrix4().compose(at(along / length, p.storey * floorHeight), turn, new THREE.Vector3(width / WIDTH[p.part], 1, 1));
+          kit[p.part].push(m);
+          tracedParts.add(m);
         }
         return;
       }
@@ -152,4 +158,5 @@ export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[
     lod.addLevel(far, FAR);
     scene.add(lod);
   }
+  return PARTS.flatMap((part) => kit[part].map((m) => ({ part, x: m.elements[12], z: m.elements[14], traced: tracedParts.has(m) })));
 }
