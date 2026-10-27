@@ -3,6 +3,7 @@ import layout from "../data/main_pool.json";
 import paseoWall from "../data/paseo_wall.json";
 import { closestOnSegment, pointInRing } from "./geom";
 import type { Seafront, Vec2 } from "./types";
+import { paseoSurfaceMaterial } from "./paseo-surface";
 
 const levels = layout.levels.seafront;
 /** The seaside starts this far inland of the paseo's centre line. */
@@ -109,13 +110,16 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
     const at = (v: number, di: number, dj: number) => sand.push(x0 + (i + di) * cell, heights[v], z0 + (j + dj) * cell);
     at(k[0], 0, 0); at(k[2], 0, 1); at(k[1], 1, 0); at(k[1], 1, 0); at(k[2], 0, 1); at(k[3], 1, 1);
   }
-  const mesh = (positions: number[], color: string, shadow = true) => {
+  const mesh = (positions: number[], color: string | THREE.Material | THREE.Material[], shadow = true, uvs?: number[]) => {
     const geometry = new THREE.BufferGeometry();
     geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
     geometry.computeVertexNormals();
-    const m = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ color, roughness: 0.95, side: THREE.DoubleSide }));
+    if (uvs) geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
+    const m = new THREE.Mesh(geometry, typeof color === "string" ? new THREE.MeshStandardMaterial({ color, roughness: 0.95, side: THREE.DoubleSide }) : color);
+    if (uvs) m.name = "paseo-stamped-walk";
     // The seaside has its own heights, as the player's ground does in its zone: not draped over siteY.
     m.receiveShadow = shadow; m.userData.referenceSurface = true; m.userData.noDrape = true; scene.add(m);
+    return m;
   };
   mesh(sand, SAND);
 
@@ -128,16 +132,33 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   const near = ([x, z]: Vec2) => Math.abs(x - centre.x) < span + 4 && Math.abs(z - centre.z) < span + 4;
 
   // The paseo: a ribbon lying on the ground it crosses.
-  const ribbon: number[] = [], line = steps(sf.paseo.points), half = sf.paseo.width / 2;
+  const ribbon: number[] = [], ribbonUv: number[] = [], stamped: boolean[] = [], line = steps(sf.paseo.points), half = sf.paseo.width / 2;
+  let along = 0;
   for (let i = 0; i < line.length - 1; i++) {
     const a = line[i], b = line[i + 1];
+    const run = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const start = along; along += run;
     if (!near(a) && !near(b)) continue;
-    const length = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1, nx = (b[1] - a[1]) / length * half, nz = -(b[0] - a[0]) / length * half;
+    const length = run || 1, nx = (b[1] - a[1]) / length * half, nz = -(b[0] - a[0]) / length * half;
     const ay = seaside.y(a[0], a[1]) + 0.04, by = seaside.y(b[0], b[1]) + 0.04;
     ribbon.push(a[0] + nx, ay, a[1] + nz, a[0] - nx, ay, a[1] - nz, b[0] + nx, by, b[1] + nz, b[0] + nx, by, b[1] + nz, a[0] - nx, ay, a[1] - nz, b[0] - nx, by, b[1] - nz);
+    // U crosses the walk; V accumulates distance even across cropped segments.
+    const u = sf.paseo.width / 3, va = start / 3, vb = along / 3;
+    ribbonUv.push(0, va, u, va, 0, vb, 0, vb, u, va, u, vb);
+    stamped.push(seaside.walled((a[0] + b[0]) / 2, (a[1] + b[1]) / 2));
   }
-  // Faded pink-red stamped concrete (IMG_2350).
-  mesh(ribbon, paseoWall.surface.color);
+  // Material-only: exact original positions, ground heights and collision retained.
+  const walk = mesh(ribbon, [
+    new THREE.MeshStandardMaterial({ color: paseoWall.surface.color, roughness: .95, side: THREE.DoubleSide }),
+    paseoSurfaceMaterial(),
+  ], true, ribbonUv);
+  // Limit the observed finish to the existing retaining-wall frontage; eastern
+  // surfaces retain their previous material pending their own source review.
+  stamped.forEach((observed, i) => {
+    const index = observed ? 1 : 0, previous = walk.geometry.groups.at(-1);
+    if (previous?.materialIndex === index) previous.count += 6;
+    else walk.geometry.addGroup(i * 6, 6, index);
+  });
 
   // Where the land behind the paseo stands higher, a bank holds it back.
   const bank: number[] = [], rim = steps(seaside.edge);

@@ -105,7 +105,7 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     if (r.locationBasis) make("p", r.locationBasis, detail);
     const actions = make("div", "", detail); actions.className = "photo-actions";
     if (points(r).length) button("Locate on map", actions, () => options.focus(points(r)));
-    if (r.looksAtBasis === "reviewed" || r.camera) button("See in overview", actions, () => window.dispatchEvent(new CustomEvent("reference-view", { detail: "overview" })));
+    if (r.looksAtBasis === "reviewed" || r.camera) button("Inspect this area", actions, () => window.dispatchEvent(new CustomEvent("reference-view", { detail: "overview" })));
     const status = make("p", "", detail); status.id = "photo-copy-status"; status.setAttribute("role", "status");
     const fallback=make("textarea","",detail);fallback.id="photo-copy-fallback";fallback.hidden=true;fallback.readOnly=true;fallback.setAttribute("aria-label","Text to copy");
     button("Copy photo link", actions, () => void copy(new URL(`?view=map&photo=${encodeURIComponent(r.id)}`, location.href).href, status));

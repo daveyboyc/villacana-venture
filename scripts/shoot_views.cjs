@@ -81,9 +81,11 @@ const path = require("node:path");
     const look = subject(photo.file) ?? [photo.x + Math.sin(h) * 12, photo.z - Math.cos(h) * 12];
     const query = `pool=${pool}&at=${turned(photo.x, photo.z)}&look=${turned(look[0], look[1])}${flags.includes("--details") ? "&details=1" : ""}`;
     const page = await browser.newPage({ viewport: { width: 1200, height: 900 } }), errors = [];
+    page.setDefaultTimeout(120000);
     page.on("pageerror", (e) => errors.push(e.message));
     await page.goto(site + "/slice.html?" + query);
-    await page.waitForTimeout(6000);
+    await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 120000 });
+    if (errors.length) throw new Error(`${name}: ${errors.join(" | ")}`);
     if (flags.includes("--high")) {
       await page.mouse.move(600, 450); await page.mouse.down(); await page.mouse.move(600, 700, { steps: 10 }); await page.mouse.up();
       for (let i = 0; i < 8; i++) await page.mouse.wheel(0, 100);

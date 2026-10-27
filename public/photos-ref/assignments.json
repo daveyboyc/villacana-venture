@@ -6,9 +6,9 @@
   "suggested": 84,
   "needs-review": 69,
   "photos": 154,
-  "features": 379,
-  "photosCitedByModel": 102,
-  "modelFeaturesWithPhotoCitations": 124
+  "features": 380,
+  "photosCitedByModel": 105,
+  "modelFeaturesWithPhotoCitations": 126
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -610,7 +610,8 @@
    ],
    "citedBy": [
     "cervantes_garden_door.json:cervantes-garden-door",
-    "cervantes_garden_door.json:cervantes-junction-north-bed"
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "cervantes_garden_door.json:cervantes-junction-east-planter"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -3795,7 +3796,9 @@
     }
    ],
    "citedBy": [
-    "cervantes_garden_door.json:cervantes-garden-door"
+    "cervantes_garden_door.json:cervantes-garden-door",
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "cervantes_garden_door.json:cervantes-junction-east-planter"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -4377,7 +4380,8 @@
    ],
    "citedBy": [
     "cervantes_garden_door.json:cervantes-garden-door",
-    "cervantes_garden_door.json:cervantes-junction-north-bed"
+    "cervantes_garden_door.json:cervantes-junction-north-bed",
+    "cervantes_garden_door.json:cervantes-junction-east-planter"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5267,6 +5271,7 @@
     }
    ],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-retaining-wall",
     "paseo_wall.json:paseo-timber-edge",
     "paseo_details.json:paseo-pool-hedge",
@@ -5300,6 +5305,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-timber-edge"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -5328,6 +5334,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-retaining-wall",
     "paseo_wall.json:paseo-timber-edge",
     "paseo_details.json:paseo-west-hedge",
@@ -5361,6 +5368,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-retaining-wall",
     "paseo_wall.json:paseo-timber-edge",
     "paseo_details.json:paseo-west-hedge",
@@ -5983,7 +5991,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "area:paseo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -86.8,
@@ -6020,7 +6030,9 @@
      "angleOffset": 26.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "area:paseo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -48.7,
@@ -6057,7 +6069,9 @@
      "angleOffset": 21.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "area:paseo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -47.5,

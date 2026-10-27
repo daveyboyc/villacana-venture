@@ -2824,6 +2824,57 @@
     ]
    },
    "note": "Solved alone with the Elena 24 roof, eye-height and lens priors (26 Oct): +/-4.5 m (x), +/-2.6 m (z). Only roofline and upright matches; no held-out check. Fails; nothing traced."
+  },
+  "IMG_2196.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -152.2,
+    "y": 2.25,
+    "z": 59.1,
+    "yaw": 344.0,
+    "pitch": 3.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; assumed 24 mm-equivalent lens"
+  },
+  "IMG_2327.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -150.5,
+    "y": 2.15,
+    "z": 56.0,
+    "yaw": 263.0,
+    "pitch": -16.6,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; assumed 24 mm-equivalent lens"
+  },
+  "IMG_2287.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -152.2,
+    "y": 2.25,
+    "z": 59.1,
+    "yaw": 345.0,
+    "pitch": 3.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; assumed 24 mm-equivalent lens"
   }
  }
 }

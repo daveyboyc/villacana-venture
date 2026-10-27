@@ -96,7 +96,7 @@
       ],
       "best": 0.45,
       "confidence": "medium",
-      "risers": 2,
+      "risers": 3,
       "at": [
         -152.5,
         55.5
@@ -110,8 +110,8 @@
       ],
       "model": "built",
       "task": "cervantes-door-steps",
-      "note": "Brown garden door in a wall with a curved coping on the north edge of the lane, just east of the drain line, facing south. Two red-tread steps with white risers. It sits at the foot of the 0.5 m drop, so it climbs back to the upper Cervantes level.",
-      "implementation": "data/cervantes_garden_door.json; height/clearance checked by scripts/check_cervantes_garden_door.py; final serial browser/photo acceptance pending"
+      "note": "Brown garden door in a wall with a curved coping on the north edge of the lane, just east of the drain line, facing south. Three white risers (27 October recheck of IMG_2196/2287/2327; earlier read as two): lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door. Risers read about .18, .14 and .15 m in IMG_2196. It sits at the foot of the 0.5 m drop, so it climbs back to the upper Cervantes level.",
+      "implementation": "data/cervantes_garden_door.json (three .15 m risers, task cervantes-door-steps-detail); height/clearance checked by scripts/check_cervantes_garden_door.py"
     },
     {
       "id": "cervantes-junction-north-patio",

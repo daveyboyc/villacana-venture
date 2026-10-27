@@ -1,4 +1,5 @@
 import {replacesLaneGroundOpening,inLaneFrontageBand} from "./middle-pool-lane-frontages";
+import {inspectionTargets} from "./inspection-targets";
 import {bindWalkControls} from "./walk-controls";
 import {createSilviaTunnel} from "./silvia-tunnel";
 import {outdoorPavingMaterial,outdoorPavingUv} from './silvia-outdoor-paving';
@@ -147,7 +148,7 @@ async function boot(): Promise<void> {
   const resize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     camera.aspect = window.innerWidth / window.innerHeight;
-    camera.far=Math.max(1500,RADIUS*10*Math.max(1,innerHeight/innerWidth));
+    camera.far=Math.max(1500,RADIUS*48*Math.max(1,innerHeight/innerWidth));
     camera.updateProjectionMatrix();
   };
   window.addEventListener("resize", resize);
@@ -348,6 +349,7 @@ async function boot(): Promise<void> {
   let farthest = RADIUS * 2.6 * Math.max(1,innerHeight/innerWidth);
   window.addEventListener("resize",()=>{const previous=farthest;farthest=RADIUS*2.6*Math.max(1,innerHeight/innerWidth);if(overview)distance*=farthest/previous;});
   let wasOverview = false;
+  let savedInspection:{distance:number;pitch:number;yaw:number}|null=null;
   const overviewCentre=new THREE.Vector3(initialFocus?.[0]??centre.x,0.5,initialFocus?.[1]??centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
@@ -369,7 +371,7 @@ async function boot(): Promise<void> {
   if(mainPool&&platform)checkLine(platform.ring,true);
   if(seaside&&skeleton.seafront)checkLine(skeleton.seafront.coast,false,true);
   scene.add(checks);
-  let showChecks=!matchMedia("(max-width:700px), (max-height:500px)").matches;
+  let showChecks=false;
   document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));
   const notes=document.querySelector<HTMLElement>("#alignment-notes")!;
   if(matchMedia("(max-width:700px)").matches)document.querySelector<HTMLDetailsElement>("#alignment-details")!.open=false;
@@ -377,16 +379,17 @@ async function boot(): Promise<void> {
   document.querySelector<HTMLButtonElement>("#alignment-coast")!.hidden=!seaside;
   const controls=document.querySelector<HTMLElement>("#overview-controls")!;
   const action=(id:string,callback:()=>void)=>document.querySelector(id)!.addEventListener("click",callback);
-  action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest*3,distance*1.3);});
+  action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest*8,distance*1.3);});
   action("#overview-left",()=>{camYaw-=Math.PI/12;});action("#overview-right",()=>{camYaw+=Math.PI/12;});
   action("#overview-top",()=>{pitch=Math.PI/2;});action("#overview-north",()=>{camYaw=0;});
-  const fitArea=()=>{overview=true;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=Math.PI/2;camYaw=0;resetPointers();};
+  const fitArea=()=>{overview=true;inspectionStarted=true;savedInspection=null;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=Math.PI/2;camYaw=0;resetPointers();areaSelect.value="whole-resort";rememberArea("whole-resort");};
   action("#overview-fit",fitArea);
   action(".camera-fit",fitArea);
   action(".camera-in",()=>{distance=Math.max(3.5,distance/1.3);});
   action(".camera-out",()=>{distance=Math.min(farthest*3,distance*1.3);});
   const panMode=(pan:boolean)=>{
     overviewPan=pan;
+    document.querySelector("#inspection-jump span")!.textContent=`Drag to ${pan?"pan":"orbit"} · scroll or pinch to zoom`;
     document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
@@ -397,7 +400,38 @@ async function boot(): Promise<void> {
   const focus=(points:Vec2[])=>{const at=centroid(points);overviewCentre.set(at.x,.5,at.z);distance=Math.min(farthest,85);pitch=Math.PI/2;};
   action("#alignment-platform",()=>{if(platform)focus(platform.ring);});
   action("#alignment-coast",()=>{if(skeleton.seafront)focus(skeleton.seafront.coast);});
-  document.querySelector("#overview")!.textContent=overview?"Walk":"Overview";
+  document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
+  const areaSelect=document.querySelector<HTMLSelectElement>('#inspection-area')!;
+  const targets=inspectionTargets(skeleton).filter(t=>t.id==='whole-resort'||t.points.some(([x,z])=>Math.hypot(x-centre.x,z-centre.z)<RADIUS-20));
+  if(seaside)targets.push({id:'coastal-gate',name:'Coastal gate',group:'Coast',points:coastalAccess.points});
+  for(const group of [...new Set(targets.map(t=>t.group))]){
+    const options=document.createElement('optgroup');options.label=group;
+    for(const target of targets.filter(t=>t.group===group)){const option=document.createElement('option');option.value=target.id;option.textContent=target.name;options.append(option);}
+    areaSelect.append(options);
+  }
+  let inspectionStarted=false;
+  const rememberArea=(id:string)=>{
+    const url=new URL(location.href);url.searchParams.set('area',id);url.searchParams.set('view','overview');history.replaceState(null,'',url);
+    const detailUrl=new URL(url);if(layoutOnly)detailUrl.searchParams.set('details','1');else detailUrl.searchParams.delete('details');detailLink.href=detailUrl.pathname+detailUrl.search;
+    if(embedded)parent.postMessage({type:'villacana-inspect-area',area:id},location.origin);
+  };
+  const jumpToArea=(id:string)=>{
+    const destination=targets.find(t=>t.id===id);if(!destination)return;
+    overview=true;inspectionStarted=true;savedInspection=null;resetPointers();panMode(true);camYaw=0;areaSelect.value=id;
+    if(id==='whole-resort'){overviewCentre.set(centre.x,.5,centre.z);distance=farthest;pitch=Math.PI/2;}
+    else{
+      const xs=destination.points.map(p=>p[0]),zs=destination.points.map(p=>p[1]);
+      const x=(Math.min(...xs)+Math.max(...xs))/2,z=(Math.min(...zs)+Math.max(...zs))/2;
+      overviewCentre.set(x,liveGroundY(x,z)+.5,z);pitch=Math.PI/3;
+      const halfWidth=(Math.max(...xs)-Math.min(...xs))/2+12,halfDepth=(Math.max(...zs)-Math.min(...zs))/2+12;
+      const tan=Math.tan(camera.fov*Math.PI/360);
+      distance=Math.max(55,halfWidth/(tan*camera.aspect),halfDepth/(tan*Math.sin(pitch)))*1.25;
+    }
+    rememberArea(id);
+  };
+  areaSelect.addEventListener('change',()=>jumpToArea(areaSelect.value));
+  const initialArea=new URLSearchParams(location.search).get('area');
+  if(initialArea && overview)jumpToArea(initialArea);
   // Photo labels share the canonical index and always reopen the same selected source.
   const photoLabels=document.createElement("div");photoLabels.className="reference-layer photo-overview-labels";document.body.append(photoLabels);
   const photoButtons:{button:HTMLButtonElement;x:number;z:number;selected:boolean}[]=[];
@@ -413,8 +447,8 @@ async function boot(): Promise<void> {
     }
     photoButtons.sort((a,b)=>Number(b.selected)-Number(a.selected));
   });
-  const photoToggle=document.createElement("button");photoToggle.id="overview-photo-labels";photoToggle.textContent="Photo labels";photoToggle.setAttribute("aria-pressed","true");document.querySelector("#overview-advanced")!.append(photoToggle);
-  let showPhotoLabels=true;photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
+  const photoToggle=document.createElement("button");photoToggle.id="overview-photo-labels";photoToggle.textContent="Photo labels";photoToggle.setAttribute("aria-pressed",String(!!selectedPhoto));document.querySelector("#overview-advanced")!.append(photoToggle);
+  let showPhotoLabels=!!selectedPhoto;photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
   const updatePhotoLabels=()=>{
     photoLabels.hidden=!overview||!showPhotoLabels;
     if(!overview||!showPhotoLabels)return;
@@ -468,31 +502,31 @@ async function boot(): Promise<void> {
     camYaw += input.lookDx * 0.0045;
     if (overview !== wasOverview) {
       // The overview button jumps between walking height and looking down on the whole area.
+      if(!overview && inspectionStarted)savedInspection={distance,pitch,yaw:camYaw};
       wasOverview = overview;
       controls.hidden=!overview;
       document.querySelector<HTMLElement>("#walk-camera")!.hidden=overview;
       document.querySelector<HTMLElement>("#jump")!.hidden=overview;
-      document.querySelector("#overview")!.textContent=overview?"Walk":"Overview";
+      document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
       document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
-      if(overview)camYaw=0;
-      distance = overview ? (focusPending ? Math.min(110,farthest) : farthest) : 6;focusPending=false;
-      pitch = overview ? Math.PI/2 : 0.45;
+      if(overview && !inspectionStarted){camYaw=0;distance=focusPending?Math.min(110,farthest):farthest;pitch=focusPending?Math.PI/3:Math.PI/2;inspectionStarted=true;}
+      if(overview && savedInspection){({distance,pitch,yaw:camYaw}=savedInspection);savedInspection=null;}
+      if(!overview){distance=6;pitch=.45;}focusPending=false;
     }
     pitch = clamp(pitch + input.lookDy * 0.0035, firstPerson ? -.65 : .15, overview ? Math.PI/2 : firstPerson ? 1.55 : 1.45);
-    distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, farthest*3);
+    distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, (overview?farthest*8:farthest*3));
     // Push the haze back as the camera rises, so the layout stays clear from above.
     fog.near = 90 + distance * 1.5;
     fog.far = 260 + distance * 3;
     if (!overview && !firstPerson && lookHold === 0 && moving) camYaw = dampAngle(camYaw, player.yaw, dt * 2.2);
 
     if(overview) {
-      const scale=distance/innerHeight;
-      const dx=panDx*scale-input.moveX*dt*distance*0.4, dz=panDy*scale+input.moveZ*dt*distance*0.4;
+      const scale=2*Math.tan(camera.fov*Math.PI/360)*distance/innerHeight;
+      const dx=panDx*scale-input.moveX*dt*distance*0.4, dz=panDy*scale/Math.max(.2,Math.sin(pitch))+input.moveZ*dt*distance*0.4;
       overviewCentre.x-=Math.cos(camYaw)*dx+Math.sin(camYaw)*dz;
       overviewCentre.z-=Math.sin(camYaw)*dx-Math.cos(camYaw)*dz;
-      overviewCentre.x=clamp(overviewCentre.x,centre.x-RADIUS,centre.x+RADIUS);overviewCentre.z=clamp(overviewCentre.z,centre.z-RADIUS,centre.z+RADIUS);
       target.copy(overviewCentre);
     } else target.set(player.x, player.y + 1.3, player.z);
     panDx=panDy=0;
@@ -505,7 +539,7 @@ async function boot(): Promise<void> {
       target.set(player.x+Math.sin(camYaw),player.y+1.6-Math.sin(pitch-.45),player.z-Math.cos(camYaw));
       player.group.visible=false;
     }else{
-      player.group.visible=true;
+      player.group.visible=!overview;
       if(!overview){
         // Keep the third-person camera in front of opaque walls and ceilings.
         walkCameraDirection.copy(camera.position).sub(target);const desired=walkCameraDirection.length();walkCameraDirection.normalize();
@@ -527,6 +561,7 @@ async function boot(): Promise<void> {
     const bearing=((Math.round(-camYaw*180/Math.PI)%360)+360)%360;
     rotation.value=String(bearing);
     document.querySelector("#overview-bearing")!.textContent=`${bearing}°`;
+    controls.dataset.area=areaSelect.value;controls.dataset.pitch=pitch.toFixed(4);controls.dataset.maxDistance=(farthest*8).toFixed(2);canvas.dataset.avatarVisible=String(player.group.visible);
     controls.dataset.distance=distance.toFixed(2);controls.dataset.bearing=String(bearing);
     controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
     references.update();updatePhotoLabels();
@@ -1195,7 +1230,7 @@ let resetPointers=()=>{};
 function bindInput():void{
   walkInput=bindWalkControls({canvas,pad:document.querySelector<HTMLButtonElement>('#walk-pad')!,input,
     isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},
-    toggleOverview:()=>{overview=!overview;document.querySelector('#overview')!.textContent=overview?'Walk':'Overview';}
+    toggleOverview:()=>{overview=!overview;document.querySelector('#overview')!.textContent=overview?'Walk':'Inspect';}
   });
   resetPointers=()=>{walkInput!.reset();panDx=panDy=0;};
 }

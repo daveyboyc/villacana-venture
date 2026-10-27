@@ -435,7 +435,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3c44706145ce6f51014af724fb5c967b09afab670a3e953aebb329984825bcca",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -667,7 +667,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fe392bc3ed1cac9009c9fbbbcbe74fae4a816fca51b0442b521c453fd7a1524e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -769,8 +769,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "ad78baa916d4f5e4fd8e453048cc276f1fcce0c45c87d83c7c60d6c7b13a7a2b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9cbebf3ac0e7fc0f46f3f23c506ccc04991f8a75586235723b94d50f802eaa03",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -786,8 +786,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "a1dafca006fa9bfaaba000abdd461d7afd9a6e8a521938a7d48914631134a21e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "4f5f142f9b590a09eecd039171e35d40c61cc7fb16ab0432a868fbf68ad252eb",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -803,8 +803,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f6e15951f696d41706ebf120052f0d1439776774c7d967697e406a63c581a29b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "d7e14174697c2ff4659ddaf318684deb093ad0041e438e80e7d411203875b619",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -820,8 +820,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "9a0de37c84227fcf0cd4d5ee47688c671b9973b7be9a8c4c3b8124ff58ddda48",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9072feb390ba71ff778d235580451603e70310b12b6c7036d5b1bfb5be80a0cb",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -933,7 +933,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c0874145f6a4f6d47dab26a352f2a3d7b3fcd299bb7439809ed17c53250e8f32",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -950,7 +950,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "da91a564dcaab9b7d0ba547825f6ca6e64ad4d0b1095e088c8ba2e62c327f426",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -967,7 +967,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c88168f4736e85418afe6e35155a82adcf674d54725590969087ea77100504dc",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -984,7 +984,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fbac3b654111634242409b3388b3f9e3a08d1188f43799b5f9ffa44875bea099",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1005,7 +1005,7 @@
        "silvia-main-map-west-candidate"
       ],
       "modelDigest": "4c827669ce0e8703a61c9338a13077d3d0a2d51b65030ae189603c015f378edf",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1109,7 +1109,7 @@
        "silvia-main-map-west-candidate"
       ],
       "modelDigest": "4c827669ce0e8703a61c9338a13077d3d0a2d51b65030ae189603c015f378edf",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1201,7 +1201,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abd29e7e9952144ea4244c868424e82d081cac2b655aa745d3407831975419fb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1221,8 +1221,8 @@
        "middle-south-pool-spacing",
        "photo-discrepancy:98f50a7718586a39"
       ],
-      "modelDigest": "9e510007826e7f49d65f52f22f4eb4c38189886e6c55b12a4325f7efecdc254c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9f761c799fdb7fbc420049ecad575acf1a092cae07c1edf2ae25bcb507a31812",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1324,7 +1324,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fcaa9d3eaca28394174b0ffdebd7a07c17b99031a42b197d20b29dc2f0150497",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1421,7 +1421,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fcaa9d3eaca28394174b0ffdebd7a07c17b99031a42b197d20b29dc2f0150497",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1517,7 +1517,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "f344dea80285a500ed8708b3b244a4f04db6c4a662a062160fca584dd1f13ca2",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1534,7 +1534,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "ac4564d748d6b0e3d05505622523b64a7f8d6e5f92e4d828f34a4ca361c869e6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1550,15 +1550,17 @@
    "image": "photos-ref/IMG_2196.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2196.jpg",
    "areas": [
-    "elena"
+    "elena",
+    "cervantes"
    ],
    "viewpoint": "ground",
    "useFor": [
     "facades",
-    "planting"
+    "planting",
+    "levels"
    ],
    "observation": "",
-   "note": "",
+   "note": "Door-steps detail recheck 27 October: three white risers (lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door), the bottom step wider with rounded ends, the upper flight between the west hedge bed's rounded end and a low east planter set back from the bottom step.",
    "camera": {
     "x": -152.2,
     "z": 59.1,
@@ -1567,12 +1569,12 @@
     "altitude": 6.7,
     "trust": "checked against photo content"
    },
-   "subject": null,
+   "subject": "The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it",
    "looksAt": [
-    -154.1,
-    53.4
+    -152.8,
+    55.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": "Moved to IMG_2287's position (±3 m): both show the same brown door up tiled steps, plumbago and lamp post from almost the same spot.",
    "association": {
     "file": "IMG_2196.jpg",
@@ -1613,7 +1615,8 @@
     ],
     "citedBy": [
      "cervantes_garden_door.json:cervantes-garden-door",
-     "cervantes_garden_door.json:cervantes-junction-north-bed"
+     "cervantes_garden_door.json:cervantes-junction-north-bed",
+     "cervantes_garden_door.json:cervantes-junction-east-planter"
     ],
     "geometryReview": "No recorded photo-to-model comparison",
     "camera": {
@@ -1632,6 +1635,23 @@
      "id": "cervantes_garden_door.json:cervantes-garden-door",
      "name": "Cervantes junction · raised garden door and private patio",
      "verification": "unreviewed",
+     "photoVerification": "not-comparable",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "357788b42fd8b572a5c226ba33bb5b1a77a3fc1fc8b3b285532afa7e62df01ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
+     "id": "cervantes_garden_door.json:cervantes-junction-east-planter",
+     "name": "cervantes-junction-east-planter",
+     "verification": "unreviewed",
      "photoVerification": "unchecked",
      "placement": {
       "status": "unreviewed",
@@ -1641,8 +1661,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "010065c87b4c3b0f59e47cc72a148e3acf85b84b6ee8b26cfe78cafab4ed526d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "551818828106d95e5fbf2db8f1d40d37c544a3d0aed20276309e6e30cd8ebfb6",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1658,12 +1678,24 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "dd8ba6b286a2f783ad0c70e14869e07d25069e8c93ec9620cd1d6a9c3a87c098",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "79055ac16361d6ce3dcd2e6a8cdf63f4e9417626de0c29c51dea157276d8c186",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
-   "checks": []
+   "checks": [
+    {
+     "task": "cervantes-door-steps-detail",
+     "feature": "cervantes_garden_door.json:cervantes-garden-door",
+     "photo": "IMG_2196.jpg",
+     "before": "docs/reviews/cervantes-door-steps-detail/IMG_2196-pose-before.jpg",
+     "render": "docs/reviews/cervantes-door-steps-detail/IMG_2196-pose-after.jpg",
+     "checked": "2026-10-27",
+     "by": "Claude",
+     "result": "not-comparable",
+     "notes": "Side by side in IMG_2196-compare.jpg. After: three equal white risers with red quarry-tile treads, bottom step wider with rounded ends and flush with the west bed front, upper flight framed by the bed and the new east planter, narrower door in a pilaster frame under a narrower curved coping, as photographed. Before had two tall risers, a 0.9 m door and a flight recessed behind the bed. Remaining: plain 2.5 m wall slab either side; the photo's wall carries bougainvillea and is partly hidden by planting (Details only). Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+    }
+   ]
   },
   {
    "id": "IMG_2197.jpg",
@@ -1765,7 +1797,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e909cac040b5f46cb45f64a529aafb305bee00ac22d8a7a1e0be8421a4278c2f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1782,7 +1814,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "61ad921bc84d729412024bc55ab417944dad37940e89cb95b218c16554e2bfe9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1799,7 +1831,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "0478c10857055127fb14feb32d8032fd043fae152e4c83c666ff312b345995ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1816,7 +1848,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "23ef6dafb73a6c87a10e36bba390a984df06459bd935da12fce21d884b3cd5ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1832,8 +1864,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "02dec73b753eb003776efd8547227a9297f5a8bf599157f537693cd4f1f16d91",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "55b2afe65d06304906f37bef860ae2eaaaa452532306feb1246be1c247a4d20e",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -1954,8 +1986,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "efafc6af2a77554c883701f3f848709b4e48ab48adffc7513ac8eb260bdf4abe",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "4f71882fd921011e1569273727807003a0f497b96bb8ef1659cd604332233835",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1971,8 +2003,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "20570e05fce10d4209224d7e6ce4fe51aad8e58e8ef40c1e66e838e9cefedd06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "f9e03a28b0ae94fd90a67a2ceeaf5939e0595e43c70b4c3dac9612539327e5fd",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -1988,8 +2020,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "02dec73b753eb003776efd8547227a9297f5a8bf599157f537693cd4f1f16d91",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "55b2afe65d06304906f37bef860ae2eaaaa452532306feb1246be1c247a4d20e",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -2101,7 +2133,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9b282a7a9a53ae337eb4ab742ac73c84adb9a37b35fe585084b7ab7fd93f6ecd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2118,7 +2150,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "23ef6dafb73a6c87a10e36bba390a984df06459bd935da12fce21d884b3cd5ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2134,8 +2166,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "47f4796a32ca550e3fa6a334a648437943754ae1e1009ab891bbaec6dc10461b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "423ce9d1cef4bfaac99488dca5fa336031e97183f3ebd23cf6ec1a14632be0e2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2151,8 +2183,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "6ade764b20db1352bca26d3a94a2e008cfa11053c3c1c29d3c2b81a75113ccfb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "d5d8a8b46e425b8297d5f6c45208530a5904b4f79d613bedc8a0199abf194ed1",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2168,8 +2200,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "5c7bc0b6858c89e764c9ec7de798869a70dc7fadb57296a81f8c8d64e9e84187",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9de96238d027551ff53c64b4e31eb5c5acebcdf8145afedb2edad12a361510ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -2290,7 +2322,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9b282a7a9a53ae337eb4ab742ac73c84adb9a37b35fe585084b7ab7fd93f6ecd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2306,8 +2338,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "47f4796a32ca550e3fa6a334a648437943754ae1e1009ab891bbaec6dc10461b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "423ce9d1cef4bfaac99488dca5fa336031e97183f3ebd23cf6ec1a14632be0e2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2323,8 +2355,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "6ade764b20db1352bca26d3a94a2e008cfa11053c3c1c29d3c2b81a75113ccfb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "d5d8a8b46e425b8297d5f6c45208530a5904b4f79d613bedc8a0199abf194ed1",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2340,8 +2372,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "5c7bc0b6858c89e764c9ec7de798869a70dc7fadb57296a81f8c8d64e9e84187",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9de96238d027551ff53c64b4e31eb5c5acebcdf8145afedb2edad12a361510ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2357,8 +2389,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "02dec73b753eb003776efd8547227a9297f5a8bf599157f537693cd4f1f16d91",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "55b2afe65d06304906f37bef860ae2eaaaa452532306feb1246be1c247a4d20e",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2374,8 +2406,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "ace7544609164f0793eb100bd45d1916893b0f78b971908f5125d109398ded27",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "2baf8c00e80c475294a58b111e5d41f428dc24f267988d188f9a5438f838657e",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -2495,7 +2527,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "d3dc9f116d1d1bec707696ca2b1df2abf9c284c560e2b9d9406d036ffaecec8c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2511,8 +2543,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "47f4796a32ca550e3fa6a334a648437943754ae1e1009ab891bbaec6dc10461b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "423ce9d1cef4bfaac99488dca5fa336031e97183f3ebd23cf6ec1a14632be0e2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2528,8 +2560,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "6ade764b20db1352bca26d3a94a2e008cfa11053c3c1c29d3c2b81a75113ccfb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "d5d8a8b46e425b8297d5f6c45208530a5904b4f79d613bedc8a0199abf194ed1",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2545,8 +2577,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "efafc6af2a77554c883701f3f848709b4e48ab48adffc7513ac8eb260bdf4abe",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "4f71882fd921011e1569273727807003a0f497b96bb8ef1659cd604332233835",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2562,8 +2594,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "20570e05fce10d4209224d7e6ce4fe51aad8e58e8ef40c1e66e838e9cefedd06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "f9e03a28b0ae94fd90a67a2ceeaf5939e0595e43c70b4c3dac9612539327e5fd",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2579,8 +2611,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "5c7bc0b6858c89e764c9ec7de798869a70dc7fadb57296a81f8c8d64e9e84187",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9de96238d027551ff53c64b4e31eb5c5acebcdf8145afedb2edad12a361510ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2596,8 +2628,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "ace7544609164f0793eb100bd45d1916893b0f78b971908f5125d109398ded27",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "2baf8c00e80c475294a58b111e5d41f428dc24f267988d188f9a5438f838657e",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -2723,8 +2755,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "bc4763706513dc7ec28b0bdb87bed47aacb41ab776bb7eaca38461236533961f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "a9a38f00063ee5d8265390379f1078e9b0b25a03b8020eec1c3120d15c0dbc35",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2741,7 +2773,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9cd34cddf24e23d3c2e1db5ef2110875cec9170bc5a8d3cb8643e4ed2692a4a8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -2848,8 +2880,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "bc4763706513dc7ec28b0bdb87bed47aacb41ab776bb7eaca38461236533961f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "a9a38f00063ee5d8265390379f1078e9b0b25a03b8020eec1c3120d15c0dbc35",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2866,7 +2898,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9cd34cddf24e23d3c2e1db5ef2110875cec9170bc5a8d3cb8643e4ed2692a4a8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -2964,7 +2996,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fd8db77070e303ee4b0140992d2df18446e3157f5cdd6a79723e1ffa9ca37447",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2981,7 +3013,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fa8ecab797f92a863b615d0e4f3861331c6ec81fb4155af08810e618acf6a368",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -2998,7 +3030,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e188a2a6168efea53d3939c0e2c0f0c6f19038c356b4a28a80f0c91d205e7d1f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -3101,7 +3133,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fd8db77070e303ee4b0140992d2df18446e3157f5cdd6a79723e1ffa9ca37447",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -3118,7 +3150,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fa8ecab797f92a863b615d0e4f3861331c6ec81fb4155af08810e618acf6a368",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -3224,7 +3256,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fd8db77070e303ee4b0140992d2df18446e3157f5cdd6a79723e1ffa9ca37447",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -3241,7 +3273,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e188a2a6168efea53d3939c0e2c0f0c6f19038c356b4a28a80f0c91d205e7d1f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -3346,7 +3378,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fa8ecab797f92a863b615d0e4f3861331c6ec81fb4155af08810e618acf6a368",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -3453,7 +3485,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fd8db77070e303ee4b0140992d2df18446e3157f5cdd6a79723e1ffa9ca37447",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -3470,7 +3502,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fa8ecab797f92a863b615d0e4f3861331c6ec81fb4155af08810e618acf6a368",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -3487,7 +3519,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e188a2a6168efea53d3939c0e2c0f0c6f19038c356b4a28a80f0c91d205e7d1f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -4143,7 +4175,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fe6baca8071bf0f2a35447657c344ee1958afbbbba097f8973235d53a4954ba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4162,7 +4194,7 @@
        "barraka-boardwalk-flank"
       ],
       "modelDigest": "5ecce3395b1ceb38678a2893cc622a3e64f5919defc7b37a7ab4970b60dae5dd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -4312,7 +4344,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fe6baca8071bf0f2a35447657c344ee1958afbbbba097f8973235d53a4954ba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4331,7 +4363,7 @@
        "barraka-boardwalk-flank"
       ],
       "modelDigest": "5ecce3395b1ceb38678a2893cc622a3e64f5919defc7b37a7ab4970b60dae5dd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -4423,8 +4455,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "67e931c01e7d42b8851fd299aee17837d0cd5e318ee9dffacf2c5372d3a1de23",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "b73037c9085a75bae6a8ae74efd0ab806f9cbdf00340c5afaa12ae3fa4d9787b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4440,8 +4472,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "33e2d1ce27058601fd032ad0aa087066ea918478d2cca0770c637636b55c2d2b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "5aef0ecf942bdf5b49b59cd20eb2c5dd315d270544946d27e3339859cc1b2fd2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4457,8 +4489,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "0d70aa8120dddbd55883fd565c8b54d62fce49ae196f2866f2d14b83d1386880",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3e907c0669ce9e37d9451f486aa541c9fd9e965fd5e66cfe31fcc73c0d608cc9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4474,8 +4506,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "87f5739f094548d3cb75e829e2446c48908864b4e90fc3acb82675527d7be6be",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7684f39ae1b64187212dcc58ff8bb47abb7a1fe559e280cb359c3d940c40fa8b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -4577,8 +4609,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4594,8 +4626,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "0d70aa8120dddbd55883fd565c8b54d62fce49ae196f2866f2d14b83d1386880",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3e907c0669ce9e37d9451f486aa541c9fd9e965fd5e66cfe31fcc73c0d608cc9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -4611,8 +4643,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "87f5739f094548d3cb75e829e2446c48908864b4e90fc3acb82675527d7be6be",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7684f39ae1b64187212dcc58ff8bb47abb7a1fe559e280cb359c3d940c40fa8b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -5197,7 +5229,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e4393355363f1324b9cf42e020662705ec51af8afaa8b96ff649cacbfff67fa3",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -5378,7 +5410,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e4393355363f1324b9cf42e020662705ec51af8afaa8b96ff649cacbfff67fa3",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -5559,7 +5591,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e4393355363f1324b9cf42e020662705ec51af8afaa8b96ff649cacbfff67fa3",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -5963,8 +5995,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "1c4c40c8527dc7c9bf620fc491b2b0dfadf861f7598715c2d17ee2dd119d9f93",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "b66af074cd3d0584f582931b5220b003a686258cd7f13faa211324fda060af2c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6059,8 +6091,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "158d410bb472a28a8c6891e7e26d163d83c927d11709c372e7bdac3bcd9104ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "907499299c32c2942b39d65d09add154f3e71937c8db6ef1d2bbbf889b2000c9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6150,7 +6182,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "031ecf571a66ee122f8236b2d11ef51c8683c71a438cc38f9837af293051eb16",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6240,7 +6272,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "031ecf571a66ee122f8236b2d11ef51c8683c71a438cc38f9837af293051eb16",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6336,7 +6368,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a86a3b1b55c521ee0359b3eda8b80cf9b6ec43e68dabbaa2b749768abade00ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6745,7 +6777,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bfd6e873979dd8b32ad3b53453c012e58c67feb8c6633d2893ac033ae75e7059",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6857,8 +6889,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "bc4763706513dc7ec28b0bdb87bed47aacb41ab776bb7eaca38461236533961f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "a9a38f00063ee5d8265390379f1078e9b0b25a03b8020eec1c3120d15c0dbc35",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -6958,8 +6990,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "bc4763706513dc7ec28b0bdb87bed47aacb41ab776bb7eaca38461236533961f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "a9a38f00063ee5d8265390379f1078e9b0b25a03b8020eec1c3120d15c0dbc35",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -7137,7 +7169,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c6c646ad11ed156c455b2409dcd7e92456bc90bbbd905b847b1500a4fa1a2d7b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7154,7 +7186,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7171,7 +7203,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "1ad235a707aa63977f38bc48dc1e86c9560d31818158fbfd118fee315d93ac2e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7188,7 +7220,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6a8fb256dbc0ea46a5b571fd79630c7dc0368aa709fa9ef4e19f2ce4031e1edb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7205,7 +7237,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6b59fb12043569df00b12bdcdfb6b0e08c4732b3f03ab83d44bfff18cde8874b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7222,7 +7254,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "83831d3ce3da320a1b685b89669a816b04922542bf13efde235f3a93095d78e6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7239,7 +7271,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "91d744ef287c9298fa59fc6b4e2b3f058f6bece058670ff0560170a52b67e4cd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -7348,7 +7380,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9662ea1dc07ac03bd92982003cbf105987ba9933afa30c8e9692a211fcd6a36b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7365,7 +7397,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c6c646ad11ed156c455b2409dcd7e92456bc90bbbd905b847b1500a4fa1a2d7b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7382,7 +7414,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7399,7 +7431,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "1ad235a707aa63977f38bc48dc1e86c9560d31818158fbfd118fee315d93ac2e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7416,7 +7448,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6a8fb256dbc0ea46a5b571fd79630c7dc0368aa709fa9ef4e19f2ce4031e1edb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7433,7 +7465,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6b59fb12043569df00b12bdcdfb6b0e08c4732b3f03ab83d44bfff18cde8874b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -7560,7 +7592,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3e2048f6968f518dcedc9296de61fbad4f7fecf0e3a3fc0465fbf2453f19d0eb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7577,7 +7609,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b48715111dede89e8c209153a5908d06abebe11c8e7549b98da118b818d796d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -7672,7 +7704,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "544fb839d4eb80dba0808dffe1e66f6c60b0fb096a2e451a01e60814c5c061b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7689,7 +7721,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bec1bab1c8877799e4a61400771234f42244ffb3429a03c333ae689d90e5de17",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7706,7 +7738,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9a7565e3d433656f9d7a5cbd69cc6c46a4dd57c847df525416a6d871a4e406c0",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7723,7 +7755,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "085f62249679cb5c6db4bca96c80c3d92ecaad0c603889ad33fd9dede82a67ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7740,7 +7772,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abaf68c7d4ac415669d5d75ed0556f9b5a4bc90f702a213f48069c27815a6b03",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7757,7 +7789,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -7866,7 +7898,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "544fb839d4eb80dba0808dffe1e66f6c60b0fb096a2e451a01e60814c5c061b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7883,7 +7915,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bec1bab1c8877799e4a61400771234f42244ffb3429a03c333ae689d90e5de17",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7900,7 +7932,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9a7565e3d433656f9d7a5cbd69cc6c46a4dd57c847df525416a6d871a4e406c0",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7917,7 +7949,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "085f62249679cb5c6db4bca96c80c3d92ecaad0c603889ad33fd9dede82a67ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -7934,7 +7966,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abaf68c7d4ac415669d5d75ed0556f9b5a4bc90f702a213f48069c27815a6b03",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -8041,7 +8073,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "544fb839d4eb80dba0808dffe1e66f6c60b0fb096a2e451a01e60814c5c061b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8058,7 +8090,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bec1bab1c8877799e4a61400771234f42244ffb3429a03c333ae689d90e5de17",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8075,7 +8107,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9a7565e3d433656f9d7a5cbd69cc6c46a4dd57c847df525416a6d871a4e406c0",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8092,7 +8124,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "085f62249679cb5c6db4bca96c80c3d92ecaad0c603889ad33fd9dede82a67ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8109,7 +8141,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abaf68c7d4ac415669d5d75ed0556f9b5a4bc90f702a213f48069c27815a6b03",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8126,7 +8158,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3e2048f6968f518dcedc9296de61fbad4f7fecf0e3a3fc0465fbf2453f19d0eb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -8302,7 +8334,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "01760915e1e04b58ad4c5cb3f4f04a214f154a91a7ac830255cb80ad3c5eeba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8319,7 +8351,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9f653de8b7bfb2c9ae52f4cb38476e244fbfa0b1c6dee7082d2513588ec7d213",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8336,7 +8368,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3d7c0765aa3b516d0d9c39b6ac9b1e033bc2a82acc99c22ced3d0c3cafe667a6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8353,7 +8385,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "29a54abbdf028ad6b418f41157b8106a2d3f1f3247aa9c66b430814b467fb4a7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8370,7 +8402,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bfb45f834b15cfd34d7034609e7a1a27588d93fdec3bd8d428cdcd68c690e725",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8387,7 +8419,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "4d645d97ae6637304415d7dbed600094eae1cc0db87e798cff46b3818516483b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8404,7 +8436,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "33b5281da8e9c298f6cee5b45e097f4c4ed86a3803ea8bd8a209411bdc6ab7d6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -8516,7 +8548,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "01760915e1e04b58ad4c5cb3f4f04a214f154a91a7ac830255cb80ad3c5eeba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8533,7 +8565,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9f653de8b7bfb2c9ae52f4cb38476e244fbfa0b1c6dee7082d2513588ec7d213",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8550,7 +8582,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3d7c0765aa3b516d0d9c39b6ac9b1e033bc2a82acc99c22ced3d0c3cafe667a6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8567,7 +8599,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "29a54abbdf028ad6b418f41157b8106a2d3f1f3247aa9c66b430814b467fb4a7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8584,7 +8616,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bfb45f834b15cfd34d7034609e7a1a27588d93fdec3bd8d428cdcd68c690e725",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8601,7 +8633,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "4d645d97ae6637304415d7dbed600094eae1cc0db87e798cff46b3818516483b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8618,7 +8650,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "33b5281da8e9c298f6cee5b45e097f4c4ed86a3803ea8bd8a209411bdc6ab7d6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -8885,7 +8917,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "544fb839d4eb80dba0808dffe1e66f6c60b0fb096a2e451a01e60814c5c061b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8902,7 +8934,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bec1bab1c8877799e4a61400771234f42244ffb3429a03c333ae689d90e5de17",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8919,7 +8951,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9a7565e3d433656f9d7a5cbd69cc6c46a4dd57c847df525416a6d871a4e406c0",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8936,7 +8968,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "085f62249679cb5c6db4bca96c80c3d92ecaad0c603889ad33fd9dede82a67ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8953,7 +8985,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abaf68c7d4ac415669d5d75ed0556f9b5a4bc90f702a213f48069c27815a6b03",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -8970,7 +9002,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c25592ba9e9bc6ebe7412d2650024a5af0cafcc6117cbc4029e4dd877502b5ae",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -9070,7 +9102,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "544fb839d4eb80dba0808dffe1e66f6c60b0fb096a2e451a01e60814c5c061b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9087,7 +9119,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bec1bab1c8877799e4a61400771234f42244ffb3429a03c333ae689d90e5de17",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9104,7 +9136,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9a7565e3d433656f9d7a5cbd69cc6c46a4dd57c847df525416a6d871a4e406c0",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9121,7 +9153,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "085f62249679cb5c6db4bca96c80c3d92ecaad0c603889ad33fd9dede82a67ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9138,7 +9170,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abaf68c7d4ac415669d5d75ed0556f9b5a4bc90f702a213f48069c27815a6b03",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9155,7 +9187,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c25592ba9e9bc6ebe7412d2650024a5af0cafcc6117cbc4029e4dd877502b5ae",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -9251,7 +9283,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "544fb839d4eb80dba0808dffe1e66f6c60b0fb096a2e451a01e60814c5c061b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9268,7 +9300,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bec1bab1c8877799e4a61400771234f42244ffb3429a03c333ae689d90e5de17",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9285,7 +9317,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9a7565e3d433656f9d7a5cbd69cc6c46a4dd57c847df525416a6d871a4e406c0",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9302,7 +9334,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "085f62249679cb5c6db4bca96c80c3d92ecaad0c603889ad33fd9dede82a67ef",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9319,7 +9351,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abaf68c7d4ac415669d5d75ed0556f9b5a4bc90f702a213f48069c27815a6b03",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9336,7 +9368,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "01760915e1e04b58ad4c5cb3f4f04a214f154a91a7ac830255cb80ad3c5eeba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9353,7 +9385,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9f653de8b7bfb2c9ae52f4cb38476e244fbfa0b1c6dee7082d2513588ec7d213",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9370,7 +9402,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3d7c0765aa3b516d0d9c39b6ac9b1e033bc2a82acc99c22ced3d0c3cafe667a6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9387,7 +9419,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "29a54abbdf028ad6b418f41157b8106a2d3f1f3247aa9c66b430814b467fb4a7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9404,7 +9436,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bfb45f834b15cfd34d7034609e7a1a27588d93fdec3bd8d428cdcd68c690e725",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9421,7 +9453,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "4d645d97ae6637304415d7dbed600094eae1cc0db87e798cff46b3818516483b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -9438,7 +9470,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "33b5281da8e9c298f6cee5b45e097f4c4ed86a3803ea8bd8a209411bdc6ab7d6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -10043,7 +10075,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "0a5832e7636fb64d06943e5250b0a04a27779d6f178f595748d83a1ab240603d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -10136,7 +10168,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "53b3b7fac7cb13c87b35ae1d7bf7ca156ffada4081abc8067b4e61a7ac58e892",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -10153,7 +10185,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "125e67b6c7c0a33cc04cfe037b60f4b466bfecc01038d3c704839a55bae7c7a7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -10170,7 +10202,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "48f533569ea6e37984f871e49fd4ad0d2c4602ee845a70841254be3f9581e0f6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -10187,7 +10219,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "199efc4b13298fbda14ed315415329bec012317a9b2e9f81bd3976d34e186c6a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -10272,7 +10304,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9fdafa1bffe4f0cf2d1122091233d635e6ba626249c54ac565ae913b63148bd7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -10382,7 +10414,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3e2048f6968f518dcedc9296de61fbad4f7fecf0e3a3fc0465fbf2453f19d0eb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -10399,7 +10431,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b48715111dede89e8c209153a5908d06abebe11c8e7549b98da118b818d796d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -10415,15 +10447,17 @@
    "image": "photos-ref/IMG_2287.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2287.jpg",
    "areas": [
-    "elena"
+    "elena",
+    "cervantes"
    ],
    "viewpoint": "ground",
    "useFor": [
     "facades",
-    "planting"
+    "planting",
+    "levels"
    ],
    "observation": "A private brown timber door sits above small tiled entrance steps behind a low white planting wall. Blue flowers and bougainvillea screen white plaster fronts; a tall black lantern and flush utility cover are visible. Private door steps are distinct from the shared junction ramp.",
-   "note": "",
+   "note": "Door-steps detail recheck 27 October: three white risers; the bottom step is wider than the flight with rounded ends, and the east planter's front stands about 0.2-0.3 m behind it (base lines compared with the west bed's).",
    "camera": {
     "x": -152.2,
     "z": 59.1,
@@ -10431,12 +10465,12 @@
     "accuracy": 3.0,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "The brown garden door and its three-riser flight between the west hedge bed and the east planter",
    "looksAt": [
-    -154.0,
-    53.4
+    -152.8,
+    55.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2287.jpg",
@@ -10476,7 +10510,9 @@
      }
     ],
     "citedBy": [
-     "cervantes_garden_door.json:cervantes-garden-door"
+     "cervantes_garden_door.json:cervantes-garden-door",
+     "cervantes_garden_door.json:cervantes-junction-north-bed",
+     "cervantes_garden_door.json:cervantes-junction-east-planter"
     ],
     "geometryReview": "observed; geometry comparison pending",
     "camera": {
@@ -10495,6 +10531,23 @@
      "id": "cervantes_garden_door.json:cervantes-garden-door",
      "name": "Cervantes junction · raised garden door and private patio",
      "verification": "unreviewed",
+     "photoVerification": "not-comparable",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "357788b42fd8b572a5c226ba33bb5b1a77a3fc1fc8b3b285532afa7e62df01ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
+     "id": "cervantes_garden_door.json:cervantes-junction-east-planter",
+     "name": "cervantes-junction-east-planter",
+     "verification": "unreviewed",
      "photoVerification": "unchecked",
      "placement": {
       "status": "unreviewed",
@@ -10504,12 +10557,41 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "010065c87b4c3b0f59e47cc72a148e3acf85b84b6ee8b26cfe78cafab4ed526d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "551818828106d95e5fbf2db8f1d40d37c544a3d0aed20276309e6e30cd8ebfb6",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
+     "id": "cervantes_garden_door.json:cervantes-junction-north-bed",
+     "name": "cervantes-junction-north-bed",
+     "verification": "unreviewed",
+     "photoVerification": "unchecked",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "79055ac16361d6ce3dcd2e6a8cdf63f4e9417626de0c29c51dea157276d8c186",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
-   "checks": []
+   "checks": [
+    {
+     "task": "cervantes-door-steps-detail",
+     "feature": "cervantes_garden_door.json:cervantes-garden-door",
+     "photo": "IMG_2287.jpg",
+     "before": "docs/reviews/cervantes-door-steps-detail/IMG_2287-before.png",
+     "render": "docs/reviews/cervantes-door-steps-detail/IMG_2287-after.png",
+     "checked": "2026-10-27",
+     "by": "Claude",
+     "result": "not-comparable",
+     "notes": "Third-person view from the pin: three-riser flight, beds either side and pilaster frame visible at small scale; the player figure covers part of the flight. See IMG_2196 pose comparison (same station) for detail. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+    }
+   ]
   },
   {
    "id": "IMG_2288.jpg",
@@ -10849,7 +10931,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7675acabce607e2c0e653842d7fd4fc38a2ae9de472ad58f9391b849f0b8823e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -10961,7 +11043,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7675acabce607e2c0e653842d7fd4fc38a2ae9de472ad58f9391b849f0b8823e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11080,7 +11162,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7675acabce607e2c0e653842d7fd4fc38a2ae9de472ad58f9391b849f0b8823e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11176,7 +11258,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "0a5832e7636fb64d06943e5250b0a04a27779d6f178f595748d83a1ab240603d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11272,7 +11354,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "0a5832e7636fb64d06943e5250b0a04a27779d6f178f595748d83a1ab240603d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11359,7 +11441,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "53b3b7fac7cb13c87b35ae1d7bf7ca156ffada4081abc8067b4e61a7ac58e892",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11376,7 +11458,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "125e67b6c7c0a33cc04cfe037b60f4b466bfecc01038d3c704839a55bae7c7a7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11393,7 +11475,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "48f533569ea6e37984f871e49fd4ad0d2c4602ee845a70841254be3f9581e0f6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11410,7 +11492,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "199efc4b13298fbda14ed315415329bec012317a9b2e9f81bd3976d34e186c6a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11503,7 +11585,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "53b3b7fac7cb13c87b35ae1d7bf7ca156ffada4081abc8067b4e61a7ac58e892",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11520,7 +11602,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "125e67b6c7c0a33cc04cfe037b60f4b466bfecc01038d3c704839a55bae7c7a7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11537,7 +11619,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "48f533569ea6e37984f871e49fd4ad0d2c4602ee845a70841254be3f9581e0f6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11554,7 +11636,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "199efc4b13298fbda14ed315415329bec012317a9b2e9f81bd3976d34e186c6a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11641,7 +11723,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9fdafa1bffe4f0cf2d1122091233d635e6ba626249c54ac565ae913b63148bd7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11657,8 +11739,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11745,7 +11827,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9fdafa1bffe4f0cf2d1122091233d635e6ba626249c54ac565ae913b63148bd7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11761,8 +11843,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11846,7 +11928,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9fdafa1bffe4f0cf2d1122091233d635e6ba626249c54ac565ae913b63148bd7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -11872,7 +11954,7 @@
     "facades"
    ],
    "observation": "Looking west up Cervantes from the Elena junction. On the right two red-tread steps with white sides climb to a brown timber door between a plumbago hedge and bougainvillea; the lane beyond shows the ramp strip and the steps beside it, a drain across the foot and service covers in the tiles.",
-   "note": "",
+   "note": "Door-steps detail recheck 27 October: each red tread is two rows of small square quarry tiles; a third white riser climbs from the second tread to the threshold tiles in front of the door. The bottom step's rounded west end wraps in front of the bed's thickened rounded end.",
    "camera": {
     "x": -150.5,
     "z": 56.0,
@@ -11881,12 +11963,12 @@
     "altitude": 6.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "The garden-door steps: two red treads and the threshold, the west bed's rounded end and the east planter",
    "looksAt": [
-    -156.5,
-    56.6
+    -152.7,
+    55.6
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2327.jpg",
@@ -11933,7 +12015,8 @@
     ],
     "citedBy": [
      "cervantes_garden_door.json:cervantes-garden-door",
-     "cervantes_garden_door.json:cervantes-junction-north-bed"
+     "cervantes_garden_door.json:cervantes-junction-north-bed",
+     "cervantes_garden_door.json:cervantes-junction-east-planter"
     ],
     "geometryReview": "observed; geometry comparison pending",
     "camera": {
@@ -11952,6 +12035,23 @@
      "id": "cervantes_garden_door.json:cervantes-garden-door",
      "name": "Cervantes junction · raised garden door and private patio",
      "verification": "unreviewed",
+     "photoVerification": "not-comparable",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "357788b42fd8b572a5c226ba33bb5b1a77a3fc1fc8b3b285532afa7e62df01ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
+     "id": "cervantes_garden_door.json:cervantes-junction-east-planter",
+     "name": "cervantes-junction-east-planter",
+     "verification": "unreviewed",
      "photoVerification": "unchecked",
      "placement": {
       "status": "unreviewed",
@@ -11961,8 +12061,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "010065c87b4c3b0f59e47cc72a148e3acf85b84b6ee8b26cfe78cafab4ed526d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "551818828106d95e5fbf2db8f1d40d37c544a3d0aed20276309e6e30cd8ebfb6",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -11978,12 +12078,24 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "dd8ba6b286a2f783ad0c70e14869e07d25069e8c93ec9620cd1d6a9c3a87c098",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "79055ac16361d6ce3dcd2e6a8cdf63f4e9417626de0c29c51dea157276d8c186",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
-   "checks": []
+   "checks": [
+    {
+     "task": "cervantes-door-steps-detail",
+     "feature": "cervantes_garden_door.json:cervantes-garden-door",
+     "photo": "IMG_2327.jpg",
+     "before": "docs/reviews/cervantes-door-steps-detail/IMG_2327-pose-before.jpg",
+     "render": "docs/reviews/cervantes-door-steps-detail/IMG_2327-pose-after.jpg",
+     "checked": "2026-10-27",
+     "by": "Claude",
+     "result": "not-comparable",
+     "notes": "Side by side in IMG_2327-compare.jpg. After: two tile-row treads plus the threshold tread, rounded bottom step wrapping the west bed's corner, east planter beside the upper treads, matching the photo's order. The bed's thickened rounded end is drawn as a square notch. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+    }
+   ]
   },
   {
    "id": "IMG_2328.jpg",
@@ -12085,7 +12197,7 @@
      "id": "cervantes_garden_door.json:cervantes-garden-door",
      "name": "Cervantes junction · raised garden door and private patio",
      "verification": "unreviewed",
-     "photoVerification": "unchecked",
+     "photoVerification": "not-comparable",
      "placement": {
       "status": "unreviewed",
       "scope": "placement only",
@@ -12094,8 +12206,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "010065c87b4c3b0f59e47cc72a148e3acf85b84b6ee8b26cfe78cafab4ed526d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "357788b42fd8b572a5c226ba33bb5b1a77a3fc1fc8b3b285532afa7e62df01ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12111,8 +12223,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "dd8ba6b286a2f783ad0c70e14869e07d25069e8c93ec9620cd1d6a9c3a87c098",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "79055ac16361d6ce3dcd2e6a8cdf63f4e9417626de0c29c51dea157276d8c186",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12129,11 +12241,23 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b48715111dede89e8c209153a5908d06abebe11c8e7549b98da118b818d796d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
-   "checks": []
+   "checks": [
+    {
+     "task": "cervantes-door-steps-detail",
+     "feature": "cervantes_garden_door.json:cervantes-garden-door",
+     "photo": "IMG_2328.jpg",
+     "before": "docs/reviews/cervantes-door-steps-detail/IMG_2328-before.png",
+     "render": "docs/reviews/cervantes-door-steps-detail/IMG_2328-after.png",
+     "checked": "2026-10-27",
+     "by": "Claude",
+     "result": "not-comparable",
+     "notes": "Third-person view from the pin: the door flight sits at the far right of the photo; render shows the new bottom step flush with the bed front beside the ramp steps, unchanged ramp/steps/drain. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+    }
+   ]
   },
   {
    "id": "IMG_2329.jpg",
@@ -12239,7 +12363,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12256,7 +12380,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "1ad235a707aa63977f38bc48dc1e86c9560d31818158fbfd118fee315d93ac2e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12273,7 +12397,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7c33d2a7a7dffe3c444a63a250eb84cc2015a14f08f5fa214b7626d82c047774",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -12378,7 +12502,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9662ea1dc07ac03bd92982003cbf105987ba9933afa30c8e9692a211fcd6a36b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12395,7 +12519,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c6c646ad11ed156c455b2409dcd7e92456bc90bbbd905b847b1500a4fa1a2d7b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12412,7 +12536,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "bfd6e873979dd8b32ad3b53453c012e58c67feb8c6633d2893ac033ae75e7059",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12429,7 +12553,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6b59fb12043569df00b12bdcdfb6b0e08c4732b3f03ab83d44bfff18cde8874b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -12551,8 +12675,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "158d410bb472a28a8c6891e7e26d163d83c927d11709c372e7bdac3bcd9104ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "907499299c32c2942b39d65d09add154f3e71937c8db6ef1d2bbbf889b2000c9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12569,7 +12693,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "505e43747ad793fdea1e9e7ffbc9bc2be7e08686a073b3578e041a83fa9398dc",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12586,7 +12710,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "36a5ab728fa1c7d0485cf0e62be8f5aa7ad74ee6b1a860b8c40831464651031a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -12695,8 +12819,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "158d410bb472a28a8c6891e7e26d163d83c927d11709c372e7bdac3bcd9104ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "907499299c32c2942b39d65d09add154f3e71937c8db6ef1d2bbbf889b2000c9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12713,7 +12837,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "f344dea80285a500ed8708b3b244a4f04db6c4a662a062160fca584dd1f13ca2",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12730,7 +12854,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "ac4564d748d6b0e3d05505622523b64a7f8d6e5f92e4d828f34a4ca361c869e6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12747,7 +12871,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "505e43747ad793fdea1e9e7ffbc9bc2be7e08686a073b3578e041a83fa9398dc",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12764,7 +12888,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "36a5ab728fa1c7d0485cf0e62be8f5aa7ad74ee6b1a860b8c40831464651031a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12781,7 +12905,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "230844de8dd466fe0a0c2d2570a17c7e38f714218b4ac63dda2eeaf6281f7482",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -12880,8 +13004,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "158d410bb472a28a8c6891e7e26d163d83c927d11709c372e7bdac3bcd9104ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "907499299c32c2942b39d65d09add154f3e71937c8db6ef1d2bbbf889b2000c9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12898,7 +13022,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "230844de8dd466fe0a0c2d2570a17c7e38f714218b4ac63dda2eeaf6281f7482",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -12915,7 +13039,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a86a3b1b55c521ee0359b3eda8b80cf9b6ec43e68dabbaa2b749768abade00ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13038,7 +13162,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "abd29e7e9952144ea4244c868424e82d081cac2b655aa745d3407831975419fb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13054,8 +13178,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "ad78baa916d4f5e4fd8e453048cc276f1fcce0c45c87d83c7c60d6c7b13a7a2b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9cbebf3ac0e7fc0f46f3f23c506ccc04991f8a75586235723b94d50f802eaa03",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13071,8 +13195,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "a1dafca006fa9bfaaba000abdd461d7afd9a6e8a521938a7d48914631134a21e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "4f5f142f9b590a09eecd039171e35d40c61cc7fb16ab0432a868fbf68ad252eb",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13088,8 +13212,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "cd1bc814b308e08e5f0d301cbcaae3d4be6d376964f998a964548485ca8194a1",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "78e865639a1654a3dcbeafccef60c7ba128ffb9b90a6ebf1fb72fbf529c0ee5c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13105,8 +13229,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "29d42702139a0b69a95e0f9dec9ff39a5f4456cbcb44f5dba83fcd1e056159cc",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "f3dc4601b48a982319f538a5c26a8a690ecaabaea3beafdb2bb1bcd98d0dc56b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13122,8 +13246,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f6e15951f696d41706ebf120052f0d1439776774c7d967697e406a63c581a29b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "d7e14174697c2ff4659ddaf318684deb093ad0041e438e80e7d411203875b619",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13139,8 +13263,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "8826f836a1cf3590c8c48b45954cbd12dabf7976891929d5ab55722596e4a590",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "8c76edc219fe758766ba04d08ba6a905427a732fa53f17c0e739eb5cace28f76",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13156,8 +13280,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "9a0de37c84227fcf0cd4d5ee47688c671b9973b7be9a8c4c3b8124ff58ddda48",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9072feb390ba71ff778d235580451603e70310b12b6c7036d5b1bfb5be80a0cb",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13175,8 +13299,8 @@
       "reportIds": [
        "middle-south-hedge-continuation"
       ],
-      "modelDigest": "31175aeae6758664bc24ce4687f8ddaa28670ad0ea75139894fea2a96a4d966c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "df97172f3d801824cc1a695dfef29d237b63b03562f0728dc75f23d355890f42",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13196,8 +13320,8 @@
        "middle-south-forecourt-trace",
        "photo-discrepancy:9579a59d07ca4c03"
       ],
-      "modelDigest": "b1e64f3af88c3572142baf3f500fe2c9877ceefdb35cb8425ece92964fada37e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "e57d81418e6bc938942a9f28b418cd11d7419818c893f56c460f0f5970668acc",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13217,8 +13341,8 @@
        "middle-south-pool-spacing",
        "photo-discrepancy:98f50a7718586a39"
       ],
-      "modelDigest": "9e510007826e7f49d65f52f22f4eb4c38189886e6c55b12a4325f7efecdc254c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9f761c799fdb7fbc420049ecad575acf1a092cae07c1edf2ae25bcb507a31812",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13379,8 +13503,8 @@
        "middle-south-forecourt-trace",
        "photo-discrepancy:9579a59d07ca4c03"
       ],
-      "modelDigest": "b1e64f3af88c3572142baf3f500fe2c9877ceefdb35cb8425ece92964fada37e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "e57d81418e6bc938942a9f28b418cd11d7419818c893f56c460f0f5970668acc",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -13400,8 +13524,8 @@
        "middle-south-pool-spacing",
        "photo-discrepancy:98f50a7718586a39"
       ],
-      "modelDigest": "9e510007826e7f49d65f52f22f4eb4c38189886e6c55b12a4325f7efecdc254c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9f761c799fdb7fbc420049ecad575acf1a092cae07c1edf2ae25bcb507a31812",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13547,7 +13671,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b56fbd78ec327ba7b8a5aa690f215d2138f68198218025d0700286e5acd3ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13648,7 +13772,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b56fbd78ec327ba7b8a5aa690f215d2138f68198218025d0700286e5acd3ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13744,7 +13868,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b56fbd78ec327ba7b8a5aa690f215d2138f68198218025d0700286e5acd3ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13829,7 +13953,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b56fbd78ec327ba7b8a5aa690f215d2138f68198218025d0700286e5acd3ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -13915,8 +14039,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "1c4c40c8527dc7c9bf620fc491b2b0dfadf861f7598715c2d17ee2dd119d9f93",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "b66af074cd3d0584f582931b5220b003a686258cd7f13faa211324fda060af2c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14056,7 +14180,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9c36ea1bc01d15e947d90de575471dd60c4df0edb9aa0feb73b96d9564b463b8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14166,7 +14290,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14183,7 +14307,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "1ad235a707aa63977f38bc48dc1e86c9560d31818158fbfd118fee315d93ac2e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14200,7 +14324,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7c33d2a7a7dffe3c444a63a250eb84cc2015a14f08f5fa214b7626d82c047774",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14288,7 +14412,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "ae371c61e5cfab32f1bbfd4266bb05a961fe39c8e0c80f3298e5dcad11901233",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14305,7 +14429,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9c2e83c3a215c4ecde04c811519f8f500f0ead1986e0f3ea425944cfea3ee54d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14322,7 +14446,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7ae6cc9f5a872ddda15ac4fc81fc5f00dd72acc8d2c5d7aa4302858e80a2fcde",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14418,7 +14542,7 @@
        "barraka-boardwalk-flank"
       ],
       "modelDigest": "5ecce3395b1ceb38678a2893cc622a3e64f5919defc7b37a7ab4970b60dae5dd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14437,7 +14561,7 @@
        "barraka-planter-position"
       ],
       "modelDigest": "ca24faac78bcdcd57bb5cef3e98a525e42d2ee2257824faacf7b88a306dc1331",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14453,8 +14577,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "22a3ad38397ddd0ebd8db24e7bb0e918523bd9b77caa152357cf6978d3954938",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "0563b12c13eed55d7d3354ca427d066e843a540da2e16d972c4c0729f0365163",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14470,8 +14594,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f44a6355434fefdf88229bdd2d6a16a1c788dbac1a18efa456578774c92b9261",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "405b6fd422e0607cb52f888b1c93cfd144a2cfd56a0829452b2198f20b0e0a0d",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14579,7 +14703,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fe6baca8071bf0f2a35447657c344ee1958afbbbba097f8973235d53a4954ba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14598,7 +14722,7 @@
        "barraka-boardwalk-flank"
       ],
       "modelDigest": "5ecce3395b1ceb38678a2893cc622a3e64f5919defc7b37a7ab4970b60dae5dd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14617,7 +14741,7 @@
        "barraka-planter-position"
       ],
       "modelDigest": "ca24faac78bcdcd57bb5cef3e98a525e42d2ee2257824faacf7b88a306dc1331",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14633,8 +14757,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "22a3ad38397ddd0ebd8db24e7bb0e918523bd9b77caa152357cf6978d3954938",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "0563b12c13eed55d7d3354ca427d066e843a540da2e16d972c4c0729f0365163",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14650,8 +14774,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f44a6355434fefdf88229bdd2d6a16a1c788dbac1a18efa456578774c92b9261",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "405b6fd422e0607cb52f888b1c93cfd144a2cfd56a0829452b2198f20b0e0a0d",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14758,7 +14882,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "ebc5c36bc3d6c708430422f1f12b7797408210099357eeaabfb3fd9055fe71b5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14774,8 +14898,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14792,7 +14916,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fe392bc3ed1cac9009c9fbbbcbe74fae4a816fca51b0442b521c453fd7a1524e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -14857,6 +14981,7 @@
      }
     ],
     "citedBy": [
+     "area:paseo",
      "paseo_wall.json:paseo-retaining-wall",
      "paseo_wall.json:paseo-timber-edge",
      "paseo_details.json:paseo-pool-hedge",
@@ -14878,6 +15003,23 @@
    "mapUrl": "./?view=map&photo=IMG_2350.jpg",
    "features": [
     {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
      "id": "paseo_details.json:paseo-east-windbreak",
      "name": "Paseo · east green windbreak",
      "verification": "unreviewed",
@@ -14891,7 +15033,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3deb7a866f433e3ec6a65f616bc599849956ddb45383783f61542862c337776c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14908,7 +15050,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "ebc5c36bc3d6c708430422f1f12b7797408210099357eeaabfb3fd9055fe71b5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14925,7 +15067,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "fbf22326bb9c86fc1d5e447f1a3f5ed1cabf577acff8204ed332d90e0abd9347",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14942,7 +15084,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "3e01efc3dd16dc8fbc3d296f32256541c05ec8f63bf6aadb42bf1bb66a8524fe",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14958,8 +15100,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -14975,8 +15117,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f8547165e6368025ea6538e75a1a0ae4723b38895261d6c68c0515d06fdc9e6d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "8fedd619e0e8beaff6a99dd6f6f412be0047ebd72bfa8365ddc50f053c95565c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15033,6 +15175,7 @@
     ],
     "inViewCandidates": [],
     "citedBy": [
+     "area:paseo",
      "paseo_wall.json:paseo-timber-edge"
     ],
     "geometryReview": "observed; geometry comparison pending",
@@ -15049,6 +15192,23 @@
    "mapUrl": "./?view=map&photo=IMG_2351.jpg",
    "features": [
     {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
      "id": "paseo_wall.json:paseo-timber-edge",
      "name": "Paseo · timber edge onto the beach",
      "verification": "unreviewed",
@@ -15061,8 +15221,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f8547165e6368025ea6538e75a1a0ae4723b38895261d6c68c0515d06fdc9e6d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "8fedd619e0e8beaff6a99dd6f6f412be0047ebd72bfa8365ddc50f053c95565c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15119,6 +15279,7 @@
     ],
     "inViewCandidates": [],
     "citedBy": [
+     "area:paseo",
      "paseo_wall.json:paseo-retaining-wall",
      "paseo_wall.json:paseo-timber-edge",
      "paseo_details.json:paseo-west-hedge",
@@ -15140,6 +15301,23 @@
    "mapUrl": "./?view=map&photo=IMG_2352.jpg",
    "features": [
     {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
      "id": "paseo_details.json:paseo-west-hedge",
      "name": "Paseo · west clipped hedge",
      "verification": "unreviewed",
@@ -15153,7 +15331,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2a1d222c10f12a23ecee9d6534b93c21d37c1aec1bb62e91f159fc4c57d09176",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15170,7 +15348,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "8bbfa3b51065c10eec1f36bd6dfd907348ba14febbf1fa952412e4766125e40e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15187,7 +15365,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "dc05aa84a89d477d3800c12d61cfaa13db7a20365a91e77159e58a85db15900d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15204,7 +15382,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "510879dc7193738c7fefd6fdb9f5d06fd7519581f7c48924b407b0ee1fa8bef9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15220,8 +15398,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15237,8 +15415,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f8547165e6368025ea6538e75a1a0ae4723b38895261d6c68c0515d06fdc9e6d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "8fedd619e0e8beaff6a99dd6f6f412be0047ebd72bfa8365ddc50f053c95565c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15294,6 +15472,7 @@
     ],
     "inViewCandidates": [],
     "citedBy": [
+     "area:paseo",
      "paseo_wall.json:paseo-retaining-wall",
      "paseo_wall.json:paseo-timber-edge",
      "paseo_details.json:paseo-west-hedge",
@@ -15315,6 +15494,23 @@
    "mapUrl": "./?view=map&photo=IMG_2354.jpg",
    "features": [
     {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    },
+    {
      "id": "paseo_details.json:paseo-service-cover",
      "name": "Paseo · flush square service cover",
      "verification": "unreviewed",
@@ -15328,7 +15524,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "26390a7664011f0837d1406e547ffcd2a234f00d0836d5cd3eee61c0d003d84c",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15345,7 +15541,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2a1d222c10f12a23ecee9d6534b93c21d37c1aec1bb62e91f159fc4c57d09176",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15362,7 +15558,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "dc05aa84a89d477d3800c12d61cfaa13db7a20365a91e77159e58a85db15900d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15379,7 +15575,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "510879dc7193738c7fefd6fdb9f5d06fd7519581f7c48924b407b0ee1fa8bef9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15395,8 +15591,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "abe8b107f2b3c7993e37f11bc5c331d0d0e0dcc59aa0dd3df45a3d6032e21618",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7910c8809677383348f5292d0895638d9bd1bc7e0263457cca82249bbb08ac7f",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15412,8 +15608,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "f8547165e6368025ea6538e75a1a0ae4723b38895261d6c68c0515d06fdc9e6d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "8fedd619e0e8beaff6a99dd6f6f412be0047ebd72bfa8365ddc50f053c95565c",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15520,8 +15716,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "dd8ba6b286a2f783ad0c70e14869e07d25069e8c93ec9620cd1d6a9c3a87c098",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "79055ac16361d6ce3dcd2e6a8cdf63f4e9417626de0c29c51dea157276d8c186",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15538,7 +15734,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2b48715111dede89e8c209153a5908d06abebe11c8e7549b98da118b818d796d",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15652,7 +15848,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "8e921b1edfcc11aa27f072b9255fca3731614792a5f42e16da07c9d9021cc186",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15669,7 +15865,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "0478c10857055127fb14feb32d8032fd043fae152e4c83c666ff312b345995ad",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15773,8 +15969,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "43196aa24208fe66248d969e8a153a634be59a6f9b0b47bc5422331035d630d8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3c14fcd3b7cf32c292608df0b4b4377982b672856ace4771ffa9849a514e9bb2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15791,7 +15987,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15808,7 +16004,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "1ad235a707aa63977f38bc48dc1e86c9560d31818158fbfd118fee315d93ac2e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15825,7 +16021,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7c33d2a7a7dffe3c444a63a250eb84cc2015a14f08f5fa214b7626d82c047774",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15842,7 +16038,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "83831d3ce3da320a1b685b89669a816b04922542bf13efde235f3a93095d78e6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15859,7 +16055,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "91d744ef287c9298fa59fc6b4e2b3f058f6bece058670ff0560170a52b67e4cd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -15957,8 +16153,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "43196aa24208fe66248d969e8a153a634be59a6f9b0b47bc5422331035d630d8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3c14fcd3b7cf32c292608df0b4b4377982b672856ace4771ffa9849a514e9bb2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15975,7 +16171,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7e87d6952cf7f1c132afec6a2c5ade184ac6374b6c10e2edcdb9723569cf4ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -15992,7 +16188,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "b62837c08745e1c56344f081745379672b91002c099db4d7391b171baabe58ce",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16009,7 +16205,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "514795866bd475f3c1f15e3521cdf4e7a61b06adfa8ccf66bcae6515eff34d0a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16108,7 +16304,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "8e921b1edfcc11aa27f072b9255fca3731614792a5f42e16da07c9d9021cc186",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16125,7 +16321,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e909cac040b5f46cb45f64a529aafb305bee00ac22d8a7a1e0be8421a4278c2f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16142,7 +16338,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6d6d4c1afd4a5fe89162fd7602b1bc1d13647334889eb78a356bd92931c0898b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16159,7 +16355,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "32b9cbc08121280cc79307843a82154cb2a0ac65fba9a0d1d9cc521153acef15",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16176,7 +16372,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "61ad921bc84d729412024bc55ab417944dad37940e89cb95b218c16554e2bfe9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16272,7 +16468,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "9cd34cddf24e23d3c2e1db5ef2110875cec9170bc5a8d3cb8643e4ed2692a4a8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16369,8 +16565,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "e61d41de4f05e838933c3848b03bb0faba0dde14ed95e48e75670c66875cddf9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "374eb2a5e0ae5da0ec65c1fb8ade76e51e7a30548efb5cd7f713df4938ef2604",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16471,8 +16667,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "ec5db78dd230eda8ebc7f6cb845ac573a741cce923efed4da1cadd1e83950970",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "af392ae74402f628f22c137426c3b3150a59daef01faacf3e0f12c914ef28800",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16488,8 +16684,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "cd041eb9a87a917ade7238a420b26b421d2336f9bb92fe85e211584eaac97834",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "e319bc3f69a70412677ed0b43d3e7c36c45f55ee9278cde02f72602ceb581990",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16505,8 +16701,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "322a31ab6a039ed364f26d057399a4698320e734bd0e567503a6f3359b6caba5",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "191a2a7cb1cd0495a543e054474e1c711e44c03f1d7cfed764ba6aa199b6ae38",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16522,8 +16718,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "232e8b2a4b16aaa49052f308f207237a8560c8a6d248be91f5a9b5af6c166d48",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "4ed93cfc23146e75780dbb9bf916df60b805b58b3baedfaf568fc13f38991c07",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16539,8 +16735,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "e53fac615dcd05a1c65992e3ed0ced6ac3be9be221a0e032b3f78531e9c21858",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "c0f13f1e74f3df82db9f307c4245bdbe4210a3e2023314793b32b87a33868e74",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16654,8 +16850,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "e61d41de4f05e838933c3848b03bb0faba0dde14ed95e48e75670c66875cddf9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "374eb2a5e0ae5da0ec65c1fb8ade76e51e7a30548efb5cd7f713df4938ef2604",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16747,8 +16943,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "e61d41de4f05e838933c3848b03bb0faba0dde14ed95e48e75670c66875cddf9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "374eb2a5e0ae5da0ec65c1fb8ade76e51e7a30548efb5cd7f713df4938ef2604",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16764,8 +16960,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "5c7bc0b6858c89e764c9ec7de798869a70dc7fadb57296a81f8c8d64e9e84187",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "9de96238d027551ff53c64b4e31eb5c5acebcdf8145afedb2edad12a361510ba",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -16861,7 +17057,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "e909cac040b5f46cb45f64a529aafb305bee00ac22d8a7a1e0be8421a4278c2f",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16878,7 +17074,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "6d6d4c1afd4a5fe89162fd7602b1bc1d13647334889eb78a356bd92931c0898b",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16895,7 +17091,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "32b9cbc08121280cc79307843a82154cb2a0ac65fba9a0d1d9cc521153acef15",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16912,7 +17108,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "c911d2af3b59a0683d9008f41d2294699f7f098e6826aad1c65addb80f7840ff",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16929,7 +17125,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "19e0802a3d7aaf0f9d34a086693099381e8e0618915f81c848e6d4a6931dcdbb",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -16946,7 +17142,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "61ad921bc84d729412024bc55ab417944dad37940e89cb95b218c16554e2bfe9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -17048,8 +17244,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "43196aa24208fe66248d969e8a153a634be59a6f9b0b47bc5422331035d630d8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3c14fcd3b7cf32c292608df0b4b4377982b672856ace4771ffa9849a514e9bb2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17066,7 +17262,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "a060210dafbf361c88e61fdba200348b287ccecf6f38c37a38a08c08323dce06",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17083,7 +17279,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "1ad235a707aa63977f38bc48dc1e86c9560d31818158fbfd118fee315d93ac2e",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17100,7 +17296,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7c33d2a7a7dffe3c444a63a250eb84cc2015a14f08f5fa214b7626d82c047774",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17117,7 +17313,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "83831d3ce3da320a1b685b89669a816b04922542bf13efde235f3a93095d78e6",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17134,7 +17330,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "91d744ef287c9298fa59fc6b4e2b3f058f6bece058670ff0560170a52b67e4cd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -17240,7 +17436,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7e87d6952cf7f1c132afec6a2c5ade184ac6374b6c10e2edcdb9723569cf4ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17257,7 +17453,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "b62837c08745e1c56344f081745379672b91002c099db4d7391b171baabe58ce",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17274,7 +17470,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "514795866bd475f3c1f15e3521cdf4e7a61b06adfa8ccf66bcae6515eff34d0a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -17380,8 +17576,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "43196aa24208fe66248d969e8a153a634be59a6f9b0b47bc5422331035d630d8",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3c14fcd3b7cf32c292608df0b4b4377982b672856ace4771ffa9849a514e9bb2",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17398,7 +17594,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "7e87d6952cf7f1c132afec6a2c5ade184ac6374b6c10e2edcdb9723569cf4ae7",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17415,7 +17611,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "b62837c08745e1c56344f081745379672b91002c099db4d7391b171baabe58ce",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17432,7 +17628,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "514795866bd475f3c1f15e3521cdf4e7a61b06adfa8ccf66bcae6515eff34d0a",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -17489,7 +17685,9 @@
      }
     ],
     "inViewCandidates": [],
-    "citedBy": [],
+    "citedBy": [
+     "area:paseo"
+    ],
     "geometryReview": "No recorded photo-to-model comparison",
     "camera": {
      "x": -86.8,
@@ -17502,8 +17700,38 @@
    },
    "originalUrl": null,
    "mapUrl": "./?view=map&photo=IMG_2481.jpg",
-   "features": [],
-   "checks": []
+   "features": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    }
+   ],
+   "checks": [
+    {
+     "task": "paseo-stamped-surface",
+     "feature": "area:paseo",
+     "photo": "IMG_2481.jpg",
+     "before": "docs/reviews/paseo-stamped-surface/IMG_2481-before.png",
+     "render": "docs/reviews/paseo-stamped-surface/IMG_2481-after.png",
+     "checked": "2026-10-27",
+     "by": "Codex; independent /root/paseo_source_review",
+     "result": "not-comparable",
+     "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+    }
+   ]
   },
   {
    "id": "IMG_2482.jpg",
@@ -17567,7 +17795,9 @@
       "angleOffset": 26.0
      }
     ],
-    "citedBy": [],
+    "citedBy": [
+     "area:paseo"
+    ],
     "geometryReview": "No recorded photo-to-model comparison",
     "camera": {
      "x": -48.7,
@@ -17580,8 +17810,38 @@
    },
    "originalUrl": null,
    "mapUrl": "./?view=map&photo=IMG_2482.jpg",
-   "features": [],
-   "checks": []
+   "features": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    }
+   ],
+   "checks": [
+    {
+     "task": "paseo-stamped-surface",
+     "feature": "area:paseo",
+     "photo": "IMG_2482.jpg",
+     "before": "docs/reviews/paseo-stamped-surface/IMG_2482-before.png",
+     "render": "docs/reviews/paseo-stamped-surface/IMG_2482-after.png",
+     "checked": "2026-10-27",
+     "by": "Codex; independent /root/paseo_source_review",
+     "result": "not-comparable",
+     "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+    }
+   ]
   },
   {
    "id": "IMG_2483.jpg",
@@ -17644,7 +17904,9 @@
       "angleOffset": 21.0
      }
     ],
-    "citedBy": [],
+    "citedBy": [
+     "area:paseo"
+    ],
     "geometryReview": "No recorded photo-to-model comparison",
     "camera": {
      "x": -47.5,
@@ -17657,8 +17919,38 @@
    },
    "originalUrl": null,
    "mapUrl": "./?view=map&photo=IMG_2483.jpg",
-   "features": [],
-   "checks": []
+   "features": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "verification": "unreviewed",
+     "photoVerification": "incomplete",
+     "placement": {
+      "status": "unreviewed",
+      "scope": "placement only",
+      "blockers": [
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+      ],
+      "reviewIds": [],
+      "reportIds": [],
+      "modelDigest": "b9377470782fe1102ecaecbd8b87b7b680d6c477cdfc07a37e48847d9f9e43ef",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
+     }
+    }
+   ],
+   "checks": [
+    {
+     "task": "paseo-stamped-surface",
+     "feature": "area:paseo",
+     "photo": "IMG_2483.jpg",
+     "before": "docs/reviews/paseo-stamped-surface/IMG_2483-before.png",
+     "render": "docs/reviews/paseo-stamped-surface/IMG_2483-after.png",
+     "checked": "2026-10-27",
+     "by": "Codex; independent /root/paseo_source_review",
+     "result": "not-comparable",
+     "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+    }
+   ]
   },
   {
    "id": "IMG_2488.jpg",
@@ -17758,8 +18050,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "0d70aa8120dddbd55883fd565c8b54d62fce49ae196f2866f2d14b83d1386880",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3e907c0669ce9e37d9451f486aa541c9fd9e965fd5e66cfe31fcc73c0d608cc9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -17775,8 +18067,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "87f5739f094548d3cb75e829e2446c48908864b4e90fc3acb82675527d7be6be",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7684f39ae1b64187212dcc58ff8bb47abb7a1fe559e280cb359c3d940c40fa8b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -18269,7 +18561,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2141e26b19ec799e6ca06a38492532446e37cda50a20bfa196fcf8a4fcc91726",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18286,7 +18578,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "62856a29eb0eb6e0ea159c73b013e84ac80e14b44edbb0772b9e0fac45728ec9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18303,7 +18595,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "5cf6cc4b7d6f4fae6f7653cafa9a4cef96671bfe67300351c1b7540081d8efbd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -18445,8 +18737,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "0d70aa8120dddbd55883fd565c8b54d62fce49ae196f2866f2d14b83d1386880",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3e907c0669ce9e37d9451f486aa541c9fd9e965fd5e66cfe31fcc73c0d608cc9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18462,8 +18754,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "87f5739f094548d3cb75e829e2446c48908864b4e90fc3acb82675527d7be6be",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7684f39ae1b64187212dcc58ff8bb47abb7a1fe559e280cb359c3d940c40fa8b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -18571,7 +18863,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2141e26b19ec799e6ca06a38492532446e37cda50a20bfa196fcf8a4fcc91726",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18588,7 +18880,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "62856a29eb0eb6e0ea159c73b013e84ac80e14b44edbb0772b9e0fac45728ec9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18605,7 +18897,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "5cf6cc4b7d6f4fae6f7653cafa9a4cef96671bfe67300351c1b7540081d8efbd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -18686,7 +18978,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "2141e26b19ec799e6ca06a38492532446e37cda50a20bfa196fcf8a4fcc91726",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18703,7 +18995,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "62856a29eb0eb6e0ea159c73b013e84ac80e14b44edbb0772b9e0fac45728ec9",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18720,7 +19012,7 @@
       "reviewIds": [],
       "reportIds": [],
       "modelDigest": "5cf6cc4b7d6f4fae6f7653cafa9a4cef96671bfe67300351c1b7540081d8efbd",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],
@@ -18835,8 +19127,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "0d70aa8120dddbd55883fd565c8b54d62fce49ae196f2866f2d14b83d1386880",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "3e907c0669ce9e37d9451f486aa541c9fd9e965fd5e66cfe31fcc73c0d608cc9",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     },
     {
@@ -18852,8 +19144,8 @@
       ],
       "reviewIds": [],
       "reportIds": [],
-      "modelDigest": "87f5739f094548d3cb75e829e2446c48908864b4e90fc3acb82675527d7be6be",
-      "contextDigest": "9a7445a5176c46f67b3dbc564e502415e4f0c14e1a803e48a3f060791e164323"
+      "modelDigest": "7684f39ae1b64187212dcc58ff8bb47abb7a1fe559e280cb359c3d940c40fa8b",
+      "contextDigest": "0cc5325c3f30537eef1cc2341a8076e6431f097ab7a11572a3f7915f3eba6e33"
      }
     }
    ],

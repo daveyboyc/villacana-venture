@@ -129,9 +129,11 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
 
 ## Rules that matter most
 
-- Build only what photos support. If a photo does not show where a wall ends,
-  stop it where the photo stops and say so. Never fill gaps with repeated walls,
-  gates or scenery.
+- Build what photos support. If a photo does not show where a wall ends, stop it
+  where the photo stops and say so, or build the obvious continuation as `inferred`
+  (orange in the Sure / unsure overlay, `docs/CONFIDENCE.md`). Never fill gaps with
+  repeated walls, gates or scenery. Set every feature's level in `data/confidence.json`
+  and list what you leave out under `gaps`.
 - Keep every lane walkable: walls keep each route's half-width clear; openings
   stay open unless a photo shows them shut. The browser test walks all routes
   both ways.

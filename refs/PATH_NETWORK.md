@@ -29,7 +29,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | South pool | 7 / 7 | 0 | 0 | uninspected |
 | Main pool | 6 / 6 | 0 | 0 | uninspected |
 | Calle Elena | 43 / 4 | 2 | 2 | partial |
-| Calle Miguel de Cervantes | 26 / 0 | 1 | 1 | inspected |
+| Calle Miguel de Cervantes | 28 / 0 | 1 | 1 | inspected |
 | Calle Pintor Dalí | 25 / 25 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 3 / 3 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 0 / 0 | 4 | 6 | source needed |

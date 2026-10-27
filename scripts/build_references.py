@@ -14,6 +14,7 @@ reference repo, and writes:
   refs/QUEUE.md            the build queue from data/build_queue.json, by priority
   refs/issues/<task>.md    one ready-to-file issue body per open task
   public/scorecard.json    the per-area scorecard (scripts/build_scorecard.py)
+  public/confidence.json   how sure each feature is (scripts/build_confidence.py)
 With --sheets, contact sheets of thumbnails go to <reference>/contact-sheets/,
 because they include private images and this repo is public.
 --check fails if a reference has no area, or a tag names an unknown area,
@@ -566,6 +567,7 @@ def main():
     (refs/'README.md').write_text(index(spec,catalog,problems,queue,checks)+'\nPath-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.\n')
     (ROOT/'public/reference-index.json').write_text(json.dumps(public_reference_index(catalog,features,checks,spec),indent=1,ensure_ascii=False)+'\n')
     if args.sheets:sheets(spec,catalog,args.reference)
+    import build_confidence;problems+=build_confidence.write()  # public/confidence.json: the 'Sure / unsure' overlay
     import build_scorecard;build_scorecard.write()  # public/scorecard.json reads what was just written
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     print(f'{len(catalog)} references, {reviewed} reviewed, {len(problems)} problems')

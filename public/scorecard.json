@@ -197,11 +197,19 @@
      "North pool: full-source path, tunnel and boundary inventory"
     ]
    },
+   "confidence": {
+    "photographed": 5,
+    "estimated": 1,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 85% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 12, 6 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
+    "How sure: 5 photographed, 1 estimated, 0 inferred.",
     "Placement: 0 of 6 features verified."
    ]
   },
@@ -295,11 +303,19 @@
      "Middle pool south: crazy-paved forecourt and hedge inside the south gate"
     ]
    },
+   "confidence": {
+    "photographed": 9,
+    "estimated": 11,
+    "inferred": 2,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 91% of open ground within 0.25 m of the laser survey.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 23, 16 placed; no camera solved.",
     "Facades: 0 of 40 kit parts traced from photos.",
+    "How sure: 9 photographed, 11 estimated, 2 inferred.",
     "Placement: 0 of 22 features verified, 5 open discrepancies."
    ]
   },
@@ -367,11 +383,19 @@
      "South pool: full-source path, tunnel and boundary inventory"
     ]
    },
+   "confidence": {
+    "photographed": 0,
+    "estimated": 1,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 98% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 5, 2 placed; no camera solved.",
     "Facades: 0 of 29 kit parts traced from photos.",
+    "How sure: 0 photographed, 1 estimated, 0 inferred.",
     "Placement: 0 of 1 features verified."
    ]
   },
@@ -441,11 +465,19 @@
      "Main pool: full-source path, tunnel and boundary inventory"
     ]
    },
+   "confidence": {
+    "photographed": 0,
+    "estimated": 2,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 1, 1 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
+    "How sure: 0 photographed, 2 estimated, 0 inferred.",
     "Placement: 0 of 2 features verified."
    ]
   },
@@ -488,7 +520,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 12
+     "not-comparable": 16
     },
     "camerasSolved": 3,
     "stationsHolding": [],
@@ -507,7 +539,7 @@
     "generated": 75
    },
    "placement": {
-    "features": 32,
+    "features": 33,
     "verified": 0,
     "disputed": 0
    },
@@ -521,12 +553,20 @@
      "Elena: correct covered passage structural omissions after registration"
     ]
    },
+   "confidence": {
+    "photographed": 12,
+    "estimated": 18,
+    "inferred": 2,
+    "registry": 1,
+    "gaps": 3
+   },
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 43, 43 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
-    "Placement: 0 of 32 features verified."
+    "How sure: 12 photographed, 18 estimated, 2 inferred, 3 known gaps.",
+    "Placement: 0 of 33 features verified."
    ]
   },
   {
@@ -565,13 +605,13 @@
     }
    },
    "photos": {
-    "count": 26,
-    "tagged": 26,
-    "placed": 26,
+    "count": 28,
+    "tagged": 28,
+    "placed": 28,
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 2
+     "not-comparable": 6
     },
     "camerasSolved": 3,
     "stationsHolding": [],
@@ -596,18 +636,26 @@
    "discrepancies": [],
    "tasks": {
     "open": 3,
-    "inProgress": 0,
+    "inProgress": 1,
     "titles": [
      "Cervantes: register finite path sides, wall ends and eastern terminal",
      "Cervantes/Miguel: identify signed passage and both world portals",
      "Cervantes: correct supported boundary and passage omissions after registration"
     ]
    },
+   "confidence": {
+    "photographed": 12,
+    "estimated": 11,
+    "inferred": 2,
+    "registry": 0,
+    "gaps": 2
+   },
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 26, 26 placed; 3 cameras solved, none holding.",
+    "Photos: 28, 28 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 149 kit parts traced from photos.",
+    "How sure: 12 photographed, 11 estimated, 2 inferred, 2 known gaps.",
     "Placement: 0 of 25 features verified."
    ]
   },
@@ -677,11 +725,19 @@
      "Calle Pintor Dalí: full-source path, tunnel and boundary inventory"
     ]
    },
+   "confidence": {
+    "photographed": 13,
+    "estimated": 0,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 93% of open ground within 0.25 m of the laser survey; streets within 0.72 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 25, 25 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
+    "How sure: 13 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
    ]
   },
@@ -748,11 +804,19 @@
      "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory"
     ]
    },
+   "confidence": {
+    "photographed": 0,
+    "estimated": 3,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.23 m.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 1, 1 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
+    "How sure: 0 photographed, 3 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
    ]
   },
@@ -818,6 +882,13 @@
     "titles": [
      "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory"
     ]
+   },
+   "confidence": {
+    "photographed": 0,
+    "estimated": 0,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
@@ -890,11 +961,19 @@
      "Calle Eva: full-source path, tunnel and boundary inventory"
     ]
    },
+   "confidence": {
+    "photographed": 3,
+    "estimated": 0,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 0.45 m.",
     "Footprints: 80% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 11, 11 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
+    "How sure: 3 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
    ]
   },
@@ -972,11 +1051,19 @@
      "Simplify the recessed entrance doors and add round gold knobs"
     ]
    },
+   "confidence": {
+    "photographed": 1,
+    "estimated": 7,
+    "inferred": 3,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 30, 30 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
+    "How sure: 1 photographed, 7 estimated, 3 inferred.",
     "Placement: 0 of 11 features verified, 2 open discrepancies."
    ]
   },
@@ -1010,7 +1097,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 3
+     "not-comparable": 6
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1045,10 +1132,18 @@
      "Barraka sand-filled barbecue boat: establish placement and add shared geometry"
     ]
    },
+   "confidence": {
+    "photographed": 0,
+    "estimated": 10,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
+   },
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 17, 16 placed; no camera solved.",
+    "How sure: 0 photographed, 10 estimated, 0 inferred.",
     "Placement: 0 of 10 features verified, 2 open discrepancies."
    ]
   },
@@ -1087,7 +1182,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 1
+     "not-comparable": 4
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1099,25 +1194,34 @@
     "generated": 111
    },
    "placement": {
-    "features": 12,
+    "features": 13,
     "verified": 0,
     "disputed": 0
    },
    "discrepancies": [],
    "tasks": {
     "open": 1,
-    "inProgress": 1,
+    "inProgress": 2,
     "titles": [
      "The paseo: full-source path, tunnel and boundary inventory",
-     "Paseo east end: wall height towards the big pool"
+     "Paseo east end: wall height towards the big pool",
+     "Paseo: photo-backed stamped concrete on the existing walk"
     ]
+   },
+   "confidence": {
+    "photographed": 4,
+    "estimated": 9,
+    "inferred": 0,
+    "registry": 0,
+    "gaps": 0
    },
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 16, 15 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
-    "Placement: 0 of 12 features verified."
+    "How sure: 4 photographed, 9 estimated, 0 inferred.",
+    "Placement: 0 of 13 features verified."
    ]
   },
   {
@@ -1179,7 +1283,7 @@
     "checks": {
      "matches": 2,
      "differs": 2,
-     "not-comparable": 28
+     "not-comparable": 35
     },
     "camerasSolved": 7,
     "stationsHolding": [
@@ -1203,7 +1307,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 379,
+    "features": 380,
     "verified": 0,
     "disputed": 6
    },
@@ -1247,19 +1351,27 @@
    ],
    "tasks": {
     "open": 28,
-    "inProgress": 21,
+    "inProgress": 23,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
      "Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall"
     ]
    },
+   "confidence": {
+    "photographed": 55,
+    "estimated": 85,
+    "inferred": 7,
+    "registry": 233,
+    "gaps": 5
+   },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 170, 153 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "Placement: 0 of 379 features verified, 9 open discrepancies."
+    "How sure: 55 photographed, 85 estimated, 7 inferred, 5 known gaps.",
+    "Placement: 0 of 380 features verified, 9 open discrepancies."
    ]
   }
  ]

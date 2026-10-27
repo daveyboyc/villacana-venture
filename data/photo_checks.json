@@ -437,6 +437,83 @@
    "followUp": "elena-register-path-edges"
   },
   {
+   "task": "cervantes-door-steps-detail",
+   "feature": "cervantes_garden_door.json:cervantes-garden-door",
+   "photo": "IMG_2196.jpg",
+   "before": "docs/reviews/cervantes-door-steps-detail/IMG_2196-pose-before.jpg",
+   "render": "docs/reviews/cervantes-door-steps-detail/IMG_2196-pose-after.jpg",
+   "checked": "2026-10-27",
+   "by": "Claude",
+   "result": "not-comparable",
+   "notes": "Side by side in IMG_2196-compare.jpg. After: three equal white risers with red quarry-tile treads, bottom step wider with rounded ends and flush with the west bed front, upper flight framed by the bed and the new east planter, narrower door in a pilaster frame under a narrower curved coping, as photographed. Before had two tall risers, a 0.9 m door and a flight recessed behind the bed. Remaining: plain 2.5 m wall slab either side; the photo's wall carries bougainvillea and is partly hidden by planting (Details only). Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+  },
+  {
+   "task": "cervantes-door-steps-detail",
+   "feature": "cervantes_garden_door.json:cervantes-garden-door",
+   "photo": "IMG_2327.jpg",
+   "before": "docs/reviews/cervantes-door-steps-detail/IMG_2327-pose-before.jpg",
+   "render": "docs/reviews/cervantes-door-steps-detail/IMG_2327-pose-after.jpg",
+   "checked": "2026-10-27",
+   "by": "Claude",
+   "result": "not-comparable",
+   "notes": "Side by side in IMG_2327-compare.jpg. After: two tile-row treads plus the threshold tread, rounded bottom step wrapping the west bed's corner, east planter beside the upper treads, matching the photo's order. The bed's thickened rounded end is drawn as a square notch. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+  },
+  {
+   "task": "cervantes-door-steps-detail",
+   "feature": "cervantes_garden_door.json:cervantes-garden-door",
+   "photo": "IMG_2287.jpg",
+   "before": "docs/reviews/cervantes-door-steps-detail/IMG_2287-before.png",
+   "render": "docs/reviews/cervantes-door-steps-detail/IMG_2287-after.png",
+   "checked": "2026-10-27",
+   "by": "Claude",
+   "result": "not-comparable",
+   "notes": "Third-person view from the pin: three-riser flight, beds either side and pilaster frame visible at small scale; the player figure covers part of the flight. See IMG_2196 pose comparison (same station) for detail. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+  },
+  {
+   "task": "cervantes-door-steps-detail",
+   "feature": "cervantes_garden_door.json:cervantes-garden-door",
+   "photo": "IMG_2328.jpg",
+   "before": "docs/reviews/cervantes-door-steps-detail/IMG_2328-before.png",
+   "render": "docs/reviews/cervantes-door-steps-detail/IMG_2328-after.png",
+   "checked": "2026-10-27",
+   "by": "Claude",
+   "result": "not-comparable",
+   "notes": "Third-person view from the pin: the door flight sits at the far right of the photo; render shows the new bottom step flush with the bed front beside the ramp steps, unchanged ramp/steps/drain. Camera is an unsolved hand-set starting pose (pin, looksAt, vanishing-point yaw/pitch), so this is an arrangement comparison, not a calibrated match; wall origin/line and dimensions remain photo-read estimates."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2481.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2481-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2481-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2482.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2482-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2482-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2483.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2483-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2483-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
    "task": "beach-gate-verge",
    "checked": "2026-10-27",
    "by": "Claude",

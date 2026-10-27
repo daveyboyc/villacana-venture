@@ -1,0 +1,334 @@
+{
+ "about": "How sure the model is about each feature, for the map and Overview 'Sure / unsure' overlay (docs/CONFIDENCE.md). scripts/build_confidence.py gives every feature in the shared inventory a default level; entries here override it with a reason, record the owner's decision, or mark a known gap (something visibly there that is not modelled). A level is a judgement for the game, not placement approval (docs/PLACEMENT_VERIFICATION.md).",
+ "levels": {
+  "photographed": "Clearly photographed: what it is and how it fits its neighbours is clear in the photos. Sizes and exact map position can still be off by up to about a metre.",
+  "estimated": "Seen in photos, but only partly (one angle, cropped, distant or behind planting): its shape, size or extent is estimated.",
+  "inferred": "Not seen directly: built from the aerial, the levels survey or what must be there.",
+  "registry": "Official land-registry footprint: the outline is reliable, the whole map sits about 1-1.5 m off the laser survey."
+ },
+ "decisions": {
+  "accepted": "Good enough for the game; no more work planned.",
+  "needs-photos": "Worth improving; more photos wanted."
+ },
+ "features": {
+  "elena_lane_paving.json:elena-north-three-column": {
+   "level": "photographed",
+   "why": "Three tile columns and grey margins seen in IMG_2201 and confirmed by the owner."
+  },
+  "elena_lane_paving.json:elena-south-three-column": {
+   "level": "photographed",
+   "why": "Three tile columns beside the lawns seen in IMG_2253/IMG_2330 and confirmed by the owner."
+  },
+  "cervantes_garden_door.json:cervantes-garden-door": {
+   "level": "photographed",
+   "why": "Close ground photos from three angles (IMG_2196, IMG_2287, IMG_2327) show the three-riser flight, door frame and coping; sizes read to about 0.1 m, wall position within about 1.5 m."
+  },
+  "cervantes_garden_door.json:cervantes-junction-north-bed": {
+   "level": "photographed",
+   "why": "The bed's front, rounded end and height are clear in IMG_2196, IMG_2327 and IMG_2328; its west end is estimated."
+  },
+  "cervantes_garden_door.json:cervantes-junction-east-planter": {
+   "level": "photographed",
+   "why": "Seen beside the flight in IMG_2196, IMG_2287 and IMG_2327; its east end is stopped at the existing lane-edge wall."
+  },
+  "cervantes_garden_door.json:cervantes-junction-north-patio": {
+   "level": "inferred",
+   "why": "The roof photos show a tiled patio behind the door; its outline and level are inferred from the door sill (levels survey: low confidence)."
+  },
+  "silvia_tunnel.json:silvia-tunnel-study": {
+   "level": "inferred",
+   "why": "Approximate west registry connection; the direction of the photographed tunnel is unresolved."
+  },
+  "paseo_wall.json:paseo-retaining-wall": {
+   "level": "photographed",
+   "why": "Wall, fence and their order are clear in four ground photos; face line from the aerial, smoothed."
+  },
+  "paseo_wall.json:paseo-timber-edge": {
+   "level": "photographed",
+   "why": "The timber edge shows in every paseo photo along the wall; board size estimated."
+  },
+  "cervantes_patio_walls.json:cervantes-patio-north-1": {
+   "level": "photographed",
+   "why": "White patio/planting walls clear in six ground photos; height and thickness estimated."
+  },
+  "cervantes_patio_walls.json:cervantes-patio-south-1": {
+   "level": "photographed",
+   "why": "White patio/planting walls clear in six ground photos; height and thickness estimated."
+  },
+  "cervantes_patio_walls.json:cervantes-patio-south-2": {
+   "level": "photographed",
+   "why": "White patio/planting walls clear in six ground photos; height and thickness estimated."
+  },
+  "cervantes_patio_walls.json:cervantes-patio-south-3": {
+   "level": "photographed",
+   "why": "White patio/planting walls clear in six ground photos; height and thickness estimated."
+  },
+  "dali_cervantes_threshold.json:dali-bays-1": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "dali_cervantes_threshold.json:dali-bays-2": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "dali_cervantes_threshold.json:dali-lawn-strip-1": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "dali_cervantes_threshold.json:dali-lawn-strip-2": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "dali_cervantes_threshold.json:dali-house-footpath-1": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "dali_cervantes_threshold.json:dali-house-footpath-2": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "dali_cervantes_threshold.json:cervantes-parking-crossing": {
+   "level": "photographed",
+   "why": "Surfaces clear in three ground photos and cross-checked on the satellite; widths approximate."
+  },
+  "coastal_gate.json:dali-coastal-mesh-base": {
+   "level": "photographed",
+   "why": "Wall, mesh and gate arrangement clear in three ground photos; position about 1-2 m."
+  },
+  "coastal_gate.json:dali-coastal-gate-pier": {
+   "level": "photographed",
+   "why": "Wall, mesh and gate arrangement clear in three ground photos; position about 1-2 m."
+  },
+  "coastal_gate.json:dali-coastal-solid-wall": {
+   "level": "photographed",
+   "why": "Wall, mesh and gate arrangement clear in three ground photos; position about 1-2 m."
+  },
+  "gate:dali-coastal-gate": {
+   "level": "photographed",
+   "why": "The gate is clear in three ground photos."
+  },
+  "paseo_details.json:paseo-white-lamp-1": {
+   "level": "photographed",
+   "why": "Seen standing on the paseo in two photos; position read by perspective to about 1-2 m."
+  },
+  "paseo_details.json:paseo-white-lamp-2": {
+   "level": "photographed",
+   "why": "Seen in two photos; spacing estimated to about 2 m."
+  },
+  "elena_north.json:elena-north-garden-wall": {
+   "level": "photographed",
+   "why": "Wall and closed timber door clear in three ground photos; dimensions estimated."
+  },
+  "elena_north.json:elena-north-window-return": {
+   "level": "photographed",
+   "why": "Short wall with a barred window clear in two ground photos; placement approximate."
+  },
+  "elena_north.json:elena-north-tree-bed-1": {
+   "level": "photographed",
+   "why": "Hedged bed and pollarded tree clear from the ground and the roof."
+  },
+  "elena_north.json:elena-north-tree-bed-2": {
+   "level": "photographed",
+   "why": "Second hedged bed clear in three photos; approximate."
+  },
+  "elena_north.json:elena-north-planter-box-1": {
+   "level": "photographed",
+   "why": "Planter box clear in IMG_2201, sized from the tiles."
+  },
+  "elena_north.json:elena-north-planter-box-2": {
+   "level": "photographed",
+   "why": "Planter box clear in IMG_2201, sized from the tiles."
+  },
+  "elena_north.json:elena-north-garden-door-path": {
+   "level": "photographed",
+   "why": "Terracotta spur to the closed door clear in IMG_2200/2201."
+  },
+  "elena_gated_entry.json:elena-gated-entry": {
+   "level": "photographed",
+   "why": "Paired iron gates, lintel and paving clear in three photos; position about 0.5-1 m."
+  },
+  "middle_pool_south_gate.json:middle-pool-south-gate": {
+   "level": "photographed",
+   "why": "Gate, bench and planter clear in three photos, measured by perspective from the gate opening."
+  },
+  "middle_pool.json:middle-pool-east-gateway": {
+   "level": "photographed",
+   "why": "Gateway clear from both sides (IMG_2340, IMG_2244); sizes from the manhole cover and tiles."
+  },
+  "middle_pool.json:middle-pool-west-planter": {
+   "level": "photographed",
+   "why": "Planter wall and hedge clear in four photos from several sides; bed depth estimated."
+  },
+  "middle_pool_sw_gateway.json:middle-pool-sw-gateway": {
+   "level": "photographed",
+   "why": "White gateway with open iron leaves clear in IMG_2333; landing length estimated."
+  },
+  "middle_pool_north.json:middle-pool-north-door-wall": {
+   "level": "photographed",
+   "why": "Wall face and closed door clear in two photos; length estimated."
+  },
+  "middle_pool_north.json:middle-pool-north-pergola": {
+   "level": "photographed",
+   "why": "Pergola shape clear in two ground photos; span and height estimated."
+  },
+  "middle_pool_north.json:middle-pool-north-white-steps": {
+   "level": "photographed",
+   "why": "Three white-nosed steps clear in two photos; riser positions estimated."
+  },
+  "eva_walled_lawn.json:eva-walled-lawn": {
+   "level": "photographed",
+   "why": "Wall faces, lawn and bollard clear in IMG_2339; return length estimated."
+  },
+  "raised_terraces.json:north-pool-west-terrace": {
+   "level": "photographed",
+   "why": "Six-riser flight, walls and terrace clear in three photos; plan position about 1.5 m."
+  },
+  "raised_terraces.json:north-pool-north-patios": {
+   "level": "photographed",
+   "why": "Plinth frontage and its three openings clear in IMG_2204/2205; plan about 2 m."
+  },
+  "steps:cervantes-elena-steps": {
+   "level": "photographed",
+   "why": "Three steps counted tile by tile in four close photos."
+  },
+  "ramp:cervantes-elena-ramp": {
+   "level": "photographed",
+   "why": "Ramp beside the steps clear in three close photos."
+  },
+  "steps:middle-pool-sw-steps": {
+   "level": "photographed",
+   "why": "Three stone steps clear in two photos."
+  },
+  "door_sills.json:elena-lawn-door-sill": {
+   "level": "photographed",
+   "why": "Red sill at the brown door clear in three photos; height estimated."
+  },
+  "door_sills.json:dali-footpath-kerb": {
+   "level": "photographed",
+   "why": "Kerbed footpath and grass strip clear in three ground photos."
+  },
+  "door_sills.json:dali-south-arch-approach": {
+   "level": "photographed",
+   "why": "Flagstone approach and kerbs clear in three photos; rise within the survey range."
+  },
+  "north_west_canopies.json:north-west-balcony-canopy-1": {
+   "level": "photographed",
+   "why": "Roof seen in photos and traced on the aerial to about 1 m."
+  },
+  "north_west_canopies.json:north-west-balcony-canopy-2": {
+   "level": "photographed",
+   "why": "Roof seen in photos and traced on the aerial to about 1 m."
+  },
+  "north_west_canopies.json:north-west-balcony-canopy-3": {
+   "level": "photographed",
+   "why": "Roof seen in photos and traced on the aerial to about 1 m."
+  },
+  "frontage_divisions.json:cervantes-elena-lawn-1": {
+   "level": "photographed",
+   "why": "Lawn, white kerb and door approach clear from the ground and the roof; outline approximate."
+  },
+  "frontage_divisions.json:cervantes-elena-lawn-2": {
+   "level": "photographed",
+   "why": "Lawn, white kerb and door approach clear from the ground and the roof; outline approximate."
+  },
+  "frontage_divisions.json:cervantes-lawn-door-path": {
+   "level": "photographed",
+   "why": "Tiled approach between the lawns clear in three photos."
+  },
+  "middle_pool_lane_frontages.json:south-lane-four-column-paving": {
+   "level": "photographed",
+   "why": "Four tile columns identified by the owner and rechecked in IMG_2189."
+  },
+  "frontage_divisions.json:cervantes-front-patio": {
+   "level": "inferred",
+   "why": "Provisional paved enclosure from registry and satellite; the photos do not confirm its use or boundary."
+  },
+  "middle_pool_lane_frontages.json:silvia-outdoor-apron": {
+   "level": "inferred",
+   "why": "Material seen, but no photo shows this connecting shape; the connection is estimated."
+  },
+  "entrance_planters.json:silvia-exit-left-planting-fragment": {
+   "level": "inferred",
+   "why": "Greenery seen, but too hidden to tell what bed or boundary is there; an estimated region only."
+  },
+  "raised_terraces.json:middle-pool-curved-hedge-patio": {
+   "level": "inferred",
+   "why": "The wall is photographed, but where it stands is guessed (about 4 m): the photo GPS is off by 47 m."
+  },
+  "elena_east_patios.json:elena-east-patios-pergola": {
+   "level": "inferred",
+   "why": "Only one beam edge shows over the wall; the pergola's size, posts and height are guessed."
+  }
+ },
+ "gaps": [
+  {
+   "id": "gap:elena-south-west-wall",
+   "name": "Elena south · white wall with two brown doors west of the junction lawns",
+   "at": [
+    -153.74,
+    69.31
+   ],
+   "photos": [
+    "IMG_2260.jpg",
+    "IMG_2261.jpg",
+    "IMG_2330.jpg"
+   ],
+   "why": "The two door sills are built (data/door_sills.json); the white wall and the doors themselves are not modelled."
+  },
+  {
+   "id": "gap:elena-east-patios",
+   "name": "Elena north · patios behind the garden wall",
+   "at": [
+    -146.5,
+    40.5
+   ],
+   "photos": [
+    "IMG_2366.jpg",
+    "IMG_2360.jpg",
+    "IMG_2197.jpg",
+    "IMG_2199.jpg"
+   ],
+   "why": "The garden wall, door and pergola are built; the patios behind them (partitions, floors, levels) are hidden under the magnolia canopy in every roof photo, so they are empty in the model."
+  },
+  {
+   "id": "gap:elena-25-courtyard",
+   "name": "CALLE ELENA 25 · covered passage and inner courtyard",
+   "at": [
+    -121.75,
+    59.26
+   ],
+   "photos": [
+    "IMG_2507.jpg",
+    "IMG_2508.jpg"
+   ],
+   "why": "The photos show a covered passage into this block and the aerial a planted courtyard; the model draws the block solid (task elena-25-passage)."
+  },
+  {
+   "id": "gap:elena-walkway-east-steps",
+   "name": "CALLE ELENA 18-36 walkway · two steps and ramp at the east portal",
+   "at": [
+    -154.5,
+    38.5
+   ],
+   "photos": [
+    "IMG_2518.jpg",
+    "IMG_2519.jpg",
+    "IMG_2254.jpg"
+   ],
+   "why": "Two risers and a red ribbed ramp up into the walkway (levels survey elena-walkway-east-steps); not modelled."
+  },
+  {
+   "id": "gap:cervantes-east-planter-front",
+   "name": "Cervantes junction · lane-edge wall east of the garden-door planter",
+   "at": [
+    -150.97,
+    55.18
+   ],
+   "photos": [
+    "IMG_2196.jpg",
+    "IMG_2287.jpg"
+   ],
+   "why": "The 0.65 m lane-edge wall stands about 0.3 m further out than the planter front in the photos; it may be the same planter continuing east."
+  }
+ ]
+}

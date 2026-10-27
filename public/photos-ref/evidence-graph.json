@@ -6,9 +6,9 @@
   "suggested": 84,
   "needs-review": 69,
   "photos": 154,
-  "features": 379,
-  "photosCitedByModel": 102,
-  "modelFeaturesWithPhotoCitations": 124
+  "features": 380,
+  "photosCitedByModel": 105,
+  "modelFeaturesWithPhotoCitations": 126
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1836,7 +1836,16 @@
    "id": "area:paseo",
    "name": "Paseo · Senda Litoral",
    "kind": "area",
-   "source": "OSM/map"
+   "source": "OSM/map geometry; photo-backed surface material",
+   "evidence": [
+    "IMG_2350.jpg",
+    "IMG_2351.jpg",
+    "IMG_2352.jpg",
+    "IMG_2354.jpg",
+    "IMG_2481.jpg",
+    "IMG_2482.jpg",
+    "IMG_2483.jpg"
+   ]
   },
   {
    "id": "area:barraka",
@@ -2909,7 +2918,19 @@
     "IMG_2327.jpg",
     "IMG_2328.jpg",
     "IMG_2196.jpg",
-    "IMG_2355.jpg"
+    "IMG_2355.jpg",
+    "IMG_2287.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_garden_door.json:cervantes-junction-east-planter",
+   "name": "cervantes-junction-east-planter",
+   "kind": "reference feature",
+   "source": "authored photo/levels interpretation",
+   "evidence": [
+    "IMG_2196.jpg",
+    "IMG_2287.jpg",
+    "IMG_2327.jpg"
    ]
   },
   {
@@ -4625,6 +4646,12 @@
   {
    "from": "photo:IMG_2196.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2196.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-east-planter",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -7155,6 +7182,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2287.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-east-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2288.jpg",
    "to": "street:cervantes",
    "relation": "camera-nearby",
@@ -7573,6 +7612,12 @@
   {
    "from": "photo:IMG_2327.jpg",
    "to": "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2327.jpg",
+   "to": "cervantes_garden_door.json:cervantes-junction-east-planter",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8383,6 +8428,12 @@
   },
   {
    "from": "photo:IMG_2350.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2350.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8425,6 +8476,12 @@
   },
   {
    "from": "photo:IMG_2351.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2351.jpg",
    "to": "paseo_wall.json:paseo-timber-edge",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8434,6 +8491,12 @@
    "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2352.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2352.jpg",
@@ -8476,6 +8539,12 @@
    "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 3.4
+  },
+  {
+   "from": "photo:IMG_2354.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2354.jpg",
@@ -9096,6 +9165,12 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2481.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2482.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -9116,6 +9191,12 @@
    "angleOffset": 26.0
   },
   {
+   "from": "photo:IMG_2482.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2483.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -9134,6 +9215,12 @@
    "relation": "possibly-in-view",
    "distance": 43.7,
    "angleOffset": 21.0
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2488.jpg",

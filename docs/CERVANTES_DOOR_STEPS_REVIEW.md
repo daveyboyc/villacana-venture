@@ -113,3 +113,14 @@ flock /tmp/villacana-browser.lock -c 'PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/ch
 No “after” render or geometry acceptance is claimed because no geometry changed.
 Source checks for patio walls and terrain, photo assignment validation and the
 regenerated reference catalogue were checked for this review.
+
+## Step detail recheck (27 October 2026)
+
+The full-size IMG_2196, IMG_2287 and IMG_2327 show **three** white risers, not two:
+the lane, two red treads of two small quarry-tile rows each, then a threshold tread
+in front of the door. The bottom step is wider (about 1.2 m) with rounded ends and is
+flush with the west bed front; the upper flight sits between the bed's rounded end
+and a low east planter. `data/cervantes_garden_door.json` now records the three
+treads (`steps`), the door frame and the planter; the wall origin, the .45 m rise and
+the patio are unchanged. Sources, measurements and before/after renders:
+[reviews/cervantes-door-steps-detail](reviews/cervantes-door-steps-detail/README.md).
