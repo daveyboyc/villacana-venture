@@ -1010,7 +1010,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 2
+     "not-comparable": 5
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1087,7 +1087,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 0
+     "not-comparable": 3
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1099,17 +1099,18 @@
     "generated": 111
    },
    "placement": {
-    "features": 12,
+    "features": 13,
     "verified": 0,
     "disputed": 0
    },
    "discrepancies": [],
    "tasks": {
     "open": 1,
-    "inProgress": 1,
+    "inProgress": 2,
     "titles": [
      "The paseo: full-source path, tunnel and boundary inventory",
-     "Paseo east end: wall height towards the big pool"
+     "Paseo east end: wall height towards the big pool",
+     "Paseo: photo-backed stamped concrete on the existing walk"
     ]
    },
    "status": [
@@ -1117,7 +1118,7 @@
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 16, 15 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
-    "Placement: 0 of 12 features verified."
+    "Placement: 0 of 13 features verified."
    ]
   },
   {
@@ -1179,7 +1180,7 @@
     "checks": {
      "matches": 1,
      "differs": 2,
-     "not-comparable": 27
+     "not-comparable": 30
     },
     "camerasSolved": 7,
     "stationsHolding": [
@@ -1247,7 +1248,7 @@
    ],
    "tasks": {
     "open": 29,
-    "inProgress": 19,
+    "inProgress": 20,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",

@@ -1,0 +1,3 @@
+FAIL: paseo_wall.json:paseo-retaining-wall: changed geometry has no fresh verified placement packet
+FAIL: paseo_wall.json:paseo-timber-edge: changed geometry has no fresh verified placement packet
+Placement change gate: FAIL

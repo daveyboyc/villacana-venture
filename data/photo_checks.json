@@ -435,6 +435,39 @@
    "result": "not-comparable",
    "notes": "Full sources show plain square cross-lawn tiles aligned to Elena lane axes. The existing model approach now shares south-lane UV axes/pitch/phase, without moving the ring/height. Exact junction phase is a consistency choice; uncalibrated elevated model-context view cannot establish physical boundaries, wall/door positions or complete photographic match. Existing south garden-wall/door modelling and registration gaps remain open.",
    "followUp": "elena-register-path-edges"
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2481.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2481-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2481-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2482.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2482-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2482-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "paseo-stamped-surface",
+   "feature": "area:paseo",
+   "photo": "IMG_2483.jpg",
+   "before": "docs/reviews/paseo-stamped-surface/IMG_2483-before.png",
+   "render": "docs/reviews/paseo-stamped-surface/IMG_2483-after.png",
+   "checked": "2026-10-27",
+   "by": "Codex; independent /root/paseo_source_review",
+   "result": "not-comparable",
+   "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
   }
  ],
  "legacyUnchecked": [

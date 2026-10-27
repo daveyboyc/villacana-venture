@@ -5023,6 +5023,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "area:paseo",
    "paseo_wall.json:paseo-retaining-wall",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_details.json:paseo-pool-hedge",
@@ -5070,6 +5071,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "area:paseo",
    "paseo_wall.json:paseo-timber-edge"
   ],
   "looksAt": [
@@ -5107,6 +5109,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "area:paseo",
    "paseo_wall.json:paseo-retaining-wall",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_details.json:paseo-west-hedge",
@@ -5153,6 +5156,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "area:paseo",
    "paseo_wall.json:paseo-retaining-wall",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_details.json:paseo-west-hedge",
@@ -5817,7 +5821,9 @@
    "altitude": 4.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "area:paseo"
+  ],
   "looksAt": [
    -50.0,
    180.0
@@ -5858,7 +5864,9 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "area:paseo"
+  ],
   "looksAt": [
    28.8,
    110.5
@@ -5897,7 +5905,9 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "area:paseo"
+  ],
   "looksAt": [
    28.8,
    110.5

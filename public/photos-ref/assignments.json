@@ -7,8 +7,8 @@
   "needs-review": 69,
   "photos": 154,
   "features": 375,
-  "photosCitedByModel": 100,
-  "modelFeaturesWithPhotoCitations": 120
+  "photosCitedByModel": 103,
+  "modelFeaturesWithPhotoCitations": 121
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5260,6 +5260,7 @@
     }
    ],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-retaining-wall",
     "paseo_wall.json:paseo-timber-edge",
     "paseo_details.json:paseo-pool-hedge",
@@ -5293,6 +5294,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-timber-edge"
    ],
    "geometryReview": "observed; geometry comparison pending",
@@ -5321,6 +5323,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-retaining-wall",
     "paseo_wall.json:paseo-timber-edge",
     "paseo_details.json:paseo-west-hedge",
@@ -5354,6 +5357,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "area:paseo",
     "paseo_wall.json:paseo-retaining-wall",
     "paseo_wall.json:paseo-timber-edge",
     "paseo_details.json:paseo-west-hedge",
@@ -5976,7 +5980,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "area:paseo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -86.8,
@@ -6013,7 +6019,9 @@
      "angleOffset": 26.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "area:paseo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -48.7,
@@ -6050,7 +6058,9 @@
      "angleOffset": 21.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "area:paseo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -47.5,
