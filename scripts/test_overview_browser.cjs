@@ -28,6 +28,7 @@ const fs = require('node:fs');
     await page.waitForFunction(() => document.querySelector('#overview-bearing').textContent === '90°');
     await page.click('#overview-north');
     await page.waitForFunction(() => document.querySelector('#overview-bearing').textContent === '0°');
+    await page.click('#overview-check');
     await page.click('#alignment-platform');
     await page.waitForFunction(() => Number(document.querySelector('#overview-controls').dataset.distance) === 85);
     fs.mkdirSync('layout-checks.local', { recursive: true });
@@ -53,7 +54,7 @@ const fs = require('node:fs');
     assert.equal(await page.locator('#alignment-details').getAttribute('open'), null);
     await page.screenshot({ path: 'layout-checks.local/overview-mobile.png' });
     assert.deepEqual(errors, []);
-    console.log('Overview zoom, rotation, north reset, focus notes, overlay toggle, walk visibility and mobile toolbar PASS');
+    console.log('Inspection zoom, rotation, north reset, focus notes, overlay toggle, walk visibility and mobile toolbar PASS');
   } finally {
     await browser.close();
     await server.close();
