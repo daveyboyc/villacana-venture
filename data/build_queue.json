@@ -1963,6 +1963,24 @@
    "owner": "Codex",
    "notes": "Bounded correction independently reviewed and delivered provisionally: full-height north wall/door, joined visible returns, one divider and finite first-patio plain tile field. Model commit f879f907e141984b1261a9b92ec2ed014ede2329. Hidden 0.95 m frontage continuity, door-relative heights and floor datum remain estimates. Placement gate warnings retained; task remains in progress without fresh measured registration.",
    "issue": 153
+  },
+  {
+   "id": "area-scorecard",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Per-area scorecard, visible while playing",
+   "photos": [],
+   "build": "Generate public/scorecard.json with one entry per area in data/areas.json: plan and level fit against the laser survey, street and pool-deck misfits, roof heights, reference photos (tagged, placed, solved cameras and whether a station passed), traced versus generated facade-kit parts, open discrepancies and tasks, placement state, and a plain-language status. Show the scorecard for the area the player stands in, in Walk and Overview, with a link to the area brief.",
+   "avoid": "No fake percentages: show the inputs. No scorecard in automated comparison renders. No geometry changes.",
+   "accept": [
+    "build_scorecard.py --check passes and runs in the build",
+    "Panel shows the right area at two spots and toggles (browser test)",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }
