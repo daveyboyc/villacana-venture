@@ -7,12 +7,12 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 ## Counts
 
 - areas: 14
-- inventoryCompleteAreas: 1
+- inventoryCompleteAreas: 0
 - sourceObservations: 59
 - sourcePixelTraces: 57
 - sourcePixelLocators: 32
-- sources: 185
-- uninspectedSources: 115
+- sources: 197
+- uninspectedSources: 127
 - routes: 24
 - segments: 173
 - tracedSides: 0
@@ -26,17 +26,17 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | --- | --- | --- | --- | --- |
 | North pool | 16 / 16 | 0 | 0 | uninspected |
 | Middle pool | 24 / 24 | 0 | 0 | uninspected |
-| South pool | 7 / 7 | 0 | 0 | uninspected |
-| Main pool | 6 / 6 | 0 | 0 | uninspected |
-| Calle Elena | 43 / 4 | 2 | 2 | partial |
-| Calle Miguel de Cervantes | 28 / 0 | 1 | 1 | inspected |
+| South pool | 8 / 8 | 0 | 0 | uninspected |
+| Main pool | 7 / 7 | 0 | 0 | uninspected |
+| Calle Elena | 45 / 6 | 2 | 2 | partial |
+| Calle Miguel de Cervantes | 29 / 1 | 1 | 1 | partial |
 | Calle Pintor Dalí | 25 / 25 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 3 / 3 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 0 / 0 | 4 | 6 | source needed |
-| Calle Eva | 11 / 11 | 2 | 0 | uninspected |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 33 / 33 | 6 | 2 | uninspected |
-| Barraka and the beach | 18 / 18 | 1 | 0 | uninspected |
-| The paseo | 19 / 19 | 4 | 0 | uninspected |
+| Calle Eva | 12 / 12 | 2 | 0 | uninspected |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 39 / 39 | 6 | 2 | uninspected |
+| Barraka and the beach | 21 / 21 | 1 | 0 | uninspected |
+| The paseo | 20 / 20 | 4 | 0 | uninspected |
 | The whole resort | 21 / 21 | 0 | 0 | uninspected |
 
 Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.

@@ -6170,6 +6170,442 @@
   "subject": "Calle Elena covered walkway towards its west arch"
  },
  {
+  "id": "IMG_2539.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2539.jpg",
+  "title": "Elena north by the Cervantes junction: steps and tiled lane between planted beds",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1ryAqIZj-DlBkOPDBjIlzoOv_crCXBdAn/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 47.9,
+   "heading": 243,
+   "accuracy": 15.7,
+   "altitude": 8.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -158.0,
+   50.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2549.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2549.jpg",
+  "title": "Calle Eva: lane between a white wall and planted beds, towards the middle pool",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/12Dpn0UVa82eOg2EUZUwz0i0M7S50HU9U/view?usp=drivesdk",
+  "camera": {
+   "x": -149.2,
+   "z": 104.5,
+   "heading": 247,
+   "accuracy": 3.8,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -154.7,
+   106.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2559.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2559.jpg",
+  "title": "Calle Patricia from its west end, looking along the lane",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1jD6inlx6hAiahxLZanC4_9iKI3DN5_BQ/view?usp=drivesdk",
+  "camera": {
+   "x": -150.0,
+   "z": 153.7,
+   "heading": 60,
+   "accuracy": 2.6,
+   "altitude": 8.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -120.0,
+   136.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "street:patricia"
+  ],
+  "subject": "Calle Patricia looking east-north-east from its west end"
+ },
+ {
+  "id": "IMG_2572.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2572.jpg",
+  "title": "Path between oleanders off Calle Silvia south",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1StBTouSCCFwneGQ4GT9t-EqKbCrlL30f/view?usp=drivesdk",
+  "camera": {
+   "x": -101.7,
+   "z": 148.7,
+   "heading": 68,
+   "accuracy": 3.4,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -96.1,
+   146.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2586.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2586.jpg",
+  "title": "Courtyard with arch and patterned floor near Calle Jorge",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/12PzsEbJls2BU0rXfaYkJfXh_QrOr7Zk5/view?usp=drivesdk",
+  "camera": {
+   "x": -69.9,
+   "z": 167.3,
+   "heading": 65,
+   "accuracy": 2.7,
+   "altitude": 5.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -64.5,
+   164.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2600.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2600.jpg",
+  "title": "From the foot of Calle Guillermo: tiled path down past the white wall towards the beach",
+  "shows": [
+   "main-pool",
+   "seaward-lanes",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/17N1NeNGDPj1zmkOmZgsOiTTee3dP3yY8/view?usp=drivesdk",
+  "camera": {
+   "x": -12.7,
+   "z": 132.0,
+   "heading": 112,
+   "accuracy": 2.3,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -2.0,
+   127.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "The lawn corner and fence at the foot of the path",
+  "headingOff": 47
+ },
+ {
+  "id": "IMG_2616.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2616.jpg",
+  "title": "Barraka boardwalk and BARRAKA BEACH sign planter",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1PPNIYBcEERBkXMvbXlPL5io81YRii-dq/view?usp=drivesdk",
+  "camera": {
+   "x": 35.3,
+   "z": 97.7,
+   "heading": 126,
+   "accuracy": 4.7,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   40.2,
+   101.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2629.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2629.jpg",
+  "title": "Beach east of Barraka from the paseo edge",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1-_QG2C1TNOS80k848Chm5OLpPk1Dyd7N/view?usp=drivesdk",
+  "camera": {
+   "x": 56.5,
+   "z": 76.4,
+   "heading": 192,
+   "accuracy": 2.5,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   55.3,
+   82.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2645.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2645.jpg",
+  "title": "South pool lawn and houses",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1QXRxbrEzq0fOUkjgKVexVe0_iQRc2vjW/view?usp=drivesdk",
+  "camera": {
+   "x": -75.1,
+   "z": 200.4,
+   "heading": 266,
+   "accuracy": 2.0,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -81.1,
+   200.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2658.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2658.jpg",
+  "title": "Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1wTMKAO9lBDOYWtiFl0JNNWii-laeb5iW/view?usp=drivesdk",
+  "camera": {
+   "x": -103.0,
+   "z": 147.8,
+   "heading": 246,
+   "accuracy": 3.0,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -108.5,
+   150.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2675.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2675.jpg",
+  "title": "Lane off Teodoro Rojo between planted walls",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1LsukLBOA9S53lBppbqItwRR6Bxc0W-k2/view?usp=drivesdk",
+  "camera": {
+   "x": -89.5,
+   "z": 98.0,
+   "heading": 328,
+   "accuracy": 3.7,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -92.7,
+   92.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:teodoro-rojo"
+  ]
+ },
+ {
+  "id": "IMG_2687.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2687.jpg",
+  "title": "Elena north: lane beside a house with window grilles, towards the lawns",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1lqisTdWob2l1NKyZtWW9d7eajwgSg3bH/view?usp=drivesdk",
+  "camera": {
+   "x": -149.7,
+   "z": 44.5,
+   "heading": 320,
+   "accuracy": 2.5,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -153.6,
+   39.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "elena_north.json:elena-north-magnolia-bed"
+  ]
+ },
+ {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
   "kind": "map-screenshot",
   "path": "villacana-reference/apple-maps/01-3d-overview-from-north.png",

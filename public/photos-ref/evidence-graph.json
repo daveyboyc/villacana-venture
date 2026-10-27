@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "bd85192ed06fa37120e2820bd2e2b850eca0df18bf219d6749aed56d252793d6",
+ "inputDigest": "6a1dca2180fb41d94d0e050c5f5bf125abf759e1cb861ccd4a53c886b220f384",
  "summary": {
   "unplaced": 1,
-  "suggested": 84,
-  "needs-review": 69,
-  "photos": 154,
+  "suggested": 90,
+  "needs-review": 75,
+  "photos": 166,
   "features": 380,
   "photosCitedByModel": 105,
   "modelFeaturesWithPhotoCitations": 126
@@ -4193,6 +4193,90 @@
    "kind": "photo",
    "name": "IMG_2519",
    "file": "IMG_2519.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2539.jpg",
+   "kind": "photo",
+   "name": "IMG_2539",
+   "file": "IMG_2539.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2549.jpg",
+   "kind": "photo",
+   "name": "IMG_2549",
+   "file": "IMG_2549.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2559.jpg",
+   "kind": "photo",
+   "name": "IMG_2559",
+   "file": "IMG_2559.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2572.jpg",
+   "kind": "photo",
+   "name": "IMG_2572",
+   "file": "IMG_2572.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2586.jpg",
+   "kind": "photo",
+   "name": "IMG_2586",
+   "file": "IMG_2586.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2600.jpg",
+   "kind": "photo",
+   "name": "IMG_2600",
+   "file": "IMG_2600.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2616.jpg",
+   "kind": "photo",
+   "name": "IMG_2616",
+   "file": "IMG_2616.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2629.jpg",
+   "kind": "photo",
+   "name": "IMG_2629",
+   "file": "IMG_2629.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2645.jpg",
+   "kind": "photo",
+   "name": "IMG_2645",
+   "file": "IMG_2645.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2658.jpg",
+   "kind": "photo",
+   "name": "IMG_2658",
+   "file": "IMG_2658.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2675.jpg",
+   "kind": "photo",
+   "name": "IMG_2675",
+   "file": "IMG_2675.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2687.jpg",
+   "kind": "photo",
+   "name": "IMG_2687",
+   "file": "IMG_2687.jpg",
    "status": "suggested"
   },
   {
@@ -9379,6 +9463,269 @@
    "relation": "possibly-in-view",
    "distance": 25.6,
    "angleOffset": 7.7
+  },
+  {
+   "from": "photo:IMG_2539.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 3.6
+  },
+  {
+   "from": "photo:IMG_2539.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 7.4
+  },
+  {
+   "from": "photo:IMG_2539.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 9.4
+  },
+  {
+   "from": "photo:IMG_2539.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 19.9,
+   "angleOffset": 1.2
+  },
+  {
+   "from": "photo:IMG_2539.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.8,
+   "angleOffset": 22.5
+  },
+  {
+   "from": "photo:IMG_2539.jpg",
+   "to": "building:6265201UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 40.2,
+   "angleOffset": 9.3
+  },
+  {
+   "from": "photo:IMG_2549.jpg",
+   "to": "street:eva",
+   "relation": "camera-nearby",
+   "gap": 2.9
+  },
+  {
+   "from": "photo:IMG_2549.jpg",
+   "to": "building:6265801UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 14.9,
+   "angleOffset": 25.7
+  },
+  {
+   "from": "photo:IMG_2559.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2559.jpg",
+   "to": "street:eva-west-footpath",
+   "relation": "camera-nearby",
+   "gap": 1.4
+  },
+  {
+   "from": "photo:IMG_2559.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 1.5
+  },
+  {
+   "from": "photo:IMG_2559.jpg",
+   "to": "building:6264601UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 21.3,
+   "angleOffset": 34.1
+  },
+  {
+   "from": "photo:IMG_2559.jpg",
+   "to": "building:6264601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 29.0,
+   "angleOffset": 23.9
+  },
+  {
+   "from": "photo:IMG_2559.jpg",
+   "to": "building:6264601UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 38.2,
+   "angleOffset": 22.8
+  },
+  {
+   "from": "photo:IMG_2572.jpg",
+   "to": "street:silvia-south",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2572.jpg",
+   "to": "building:6364201UF1366S_part6",
+   "relation": "possibly-in-view",
+   "distance": 20.8,
+   "angleOffset": 23.3
+  },
+  {
+   "from": "photo:IMG_2572.jpg",
+   "to": "building:6364201UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 28.0,
+   "angleOffset": 22.3
+  },
+  {
+   "from": "photo:IMG_2572.jpg",
+   "to": "building:6364201UF1366S_part10",
+   "relation": "possibly-in-view",
+   "distance": 29.7,
+   "angleOffset": 8.4
+  },
+  {
+   "from": "photo:IMG_2586.jpg",
+   "to": "building:6364801UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 11.3,
+   "angleOffset": 33.6
+  },
+  {
+   "from": "photo:IMG_2586.jpg",
+   "to": "building:6364601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 25.5,
+   "angleOffset": 12.2
+  },
+  {
+   "from": "photo:IMG_2586.jpg",
+   "to": "building:6364601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 32.1,
+   "angleOffset": 1.1
+  },
+  {
+   "from": "photo:IMG_2600.jpg",
+   "to": "street:guillermo",
+   "relation": "camera-nearby",
+   "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2616.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2616.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 1.8
+  },
+  {
+   "from": "photo:IMG_2629.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2629.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 1.4
+  },
+  {
+   "from": "photo:IMG_2629.jpg",
+   "to": "building:6364501UF1366S_part8",
+   "relation": "possibly-in-view",
+   "distance": 43.9,
+   "angleOffset": 27.0
+  },
+  {
+   "from": "photo:IMG_2645.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2645.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 34.8,
+   "angleOffset": 5.5
+  },
+  {
+   "from": "photo:IMG_2658.jpg",
+   "to": "street:silvia-south",
+   "relation": "camera-nearby",
+   "gap": 2.1
+  },
+  {
+   "from": "photo:IMG_2658.jpg",
+   "to": "building:6264601UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 9.2,
+   "angleOffset": 17.1
+  },
+  {
+   "from": "photo:IMG_2658.jpg",
+   "to": "building:6264601UF1366S_part6",
+   "relation": "possibly-in-view",
+   "distance": 9.3,
+   "angleOffset": 29.9
+  },
+  {
+   "from": "photo:IMG_2658.jpg",
+   "to": "building:6264601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 18.4,
+   "angleOffset": 15.2
+  },
+  {
+   "from": "photo:IMG_2675.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.9
+  },
+  {
+   "from": "photo:IMG_2675.jpg",
+   "to": "building:6264501UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 20.4,
+   "angleOffset": 19.9
+  },
+  {
+   "from": "photo:IMG_2675.jpg",
+   "to": "building:6365201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 35.7,
+   "angleOffset": 34.8
+  },
+  {
+   "from": "photo:IMG_2675.jpg",
+   "to": "building:6365201UF1366N_part14",
+   "relation": "possibly-in-view",
+   "distance": 43.6,
+   "angleOffset": 34.7
+  },
+  {
+   "from": "photo:IMG_2687.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2687.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 8.9,
+   "angleOffset": 20.2
+  },
+  {
+   "from": "photo:IMG_2687.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 23.0,
+   "angleOffset": 26.2
   },
   {
    "from": "ref:apple-maps/02-3d-north-pool.png",

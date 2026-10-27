@@ -2437,5 +2437,160 @@
   ],
   "subject": "Calle Elena covered walkway towards its west arch",
   "note": "Both-end evidence for the walkway with IMG_2203 (opposite direction) and IMG_2202."
+ },
+ "IMG_2539.jpg": {
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "planting"
+  ],
+  "title": "Elena north by the Cervantes junction: steps and tiled lane between planted beds"
+ },
+ "IMG_2549.jpg": {
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "title": "Calle Eva: lane between a white wall and planted beds, towards the middle pool"
+ },
+ "IMG_2559.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "title": "Calle Patricia from its west end, looking along the lane",
+  "looksAt": [
+   -120.0,
+   136.0
+  ],
+  "subject": "Calle Patricia looking east-north-east from its west end"
+ },
+ "IMG_2572.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ],
+  "title": "Path between oleanders off Calle Silvia south"
+ },
+ "IMG_2586.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "title": "Courtyard with arch and patterned floor near Calle Jorge"
+ },
+ "IMG_2600.jpg": {
+  "shows": [
+   "main-pool",
+   "seaward-lanes",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "title": "From the foot of Calle Guillermo: tiled path down past the white wall towards the beach",
+  "looksAt": [
+   -2.0,
+   127.0
+  ],
+  "subject": "The lawn corner and fence at the foot of the path"
+ },
+ "IMG_2616.jpg": {
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "title": "Barraka boardwalk and BARRAKA BEACH sign planter"
+ },
+ "IMG_2629.jpg": {
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "title": "Beach east of Barraka from the paseo edge"
+ },
+ "IMG_2645.jpg": {
+  "shows": [
+   "south-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "planting"
+  ],
+  "title": "South pool lawn and houses"
+ },
+ "IMG_2658.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials"
+  ],
+  "title": "Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp"
+ },
+ "IMG_2675.jpg": {
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "title": "Lane off Teodoro Rojo between planted walls"
+ },
+ "IMG_2687.jpg": {
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "planting"
+  ],
+  "title": "Elena north: lane beside a house with window grilles, towards the lawns"
  }
 }
