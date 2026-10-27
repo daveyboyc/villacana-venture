@@ -1,7 +1,7 @@
 {
   "about": "Area counts overlap. Pilot source annotation is distinct from complete area inventory or placement approval. Templates are uninspected candidates.",
-  "uniqueReferences": 176,
-  "uniquePublicPhotos": 145,
+  "uniqueReferences": 185,
+  "uniquePublicPhotos": 154,
   "annotatedSources": 6,
   "areas": [
     {
@@ -20,8 +20,8 @@
     {
       "id": "seaward-lanes",
       "name": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo",
-      "references": 31,
-      "publicPhotos": 28,
+      "references": 33,
+      "publicPhotos": 30,
       "privateReferences": 3,
       "annotatedSources": [
         "IMG_2185.jpg",
@@ -57,8 +57,8 @@
     {
       "id": "elena",
       "name": "Calle Elena",
-      "references": 39,
-      "publicPhotos": 39,
+      "references": 43,
+      "publicPhotos": 43,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -67,8 +67,8 @@
     {
       "id": "barraka-beach",
       "name": "Barraka and the beach",
-      "references": 15,
-      "publicPhotos": 14,
+      "references": 18,
+      "publicPhotos": 17,
       "privateReferences": 1,
       "annotatedSources": [],
       "status": "not-started",
@@ -97,8 +97,8 @@
     {
       "id": "paseo",
       "name": "The paseo",
-      "references": 16,
-      "publicPhotos": 12,
+      "references": 19,
+      "publicPhotos": 15,
       "privateReferences": 4,
       "annotatedSources": [],
       "status": "not-started",
