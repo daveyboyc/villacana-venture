@@ -1,0 +1,362 @@
+{
+  "about": "Photos wanted, one request per spot. at: where to stand ([x, z] map metres, +x east, +z south); look: what to point at (null for a roof station: several directions); radius: how close a photo's camera must be (plus up to 5 m of its GPS accuracy). status: open until photos taken on or after `since` are matched by scripts/photo_requests.py (it reports them as received); an agent who has looked at them sets status answered with answeredBy photo ids and a note, or keeps it open and says what is still missing. The scorecard colours an area red while it has open requests, amber while received or reviewed photos and open build tasks wait, green when nothing is open. See docs/SCORECARD.md.",
+  "requests": [
+    {
+      "id": "elena-25-far-end",
+      "area": "elena",
+      "at": [
+        -139.0,
+        67.0
+      ],
+      "look": [
+        -132.0,
+        62.0
+      ],
+      "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
+      "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+      "priority": 1,
+      "radius": 8,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "elena-25-from-lane",
+      "area": "elena",
+      "at": [
+        -148.0,
+        77.0
+      ],
+      "look": [
+        -143.5,
+        72.0
+      ],
+      "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
+      "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "elena-roof-station",
+      "area": "elena",
+      "at": [
+        -155.7,
+        50.1
+      ],
+      "look": null,
+      "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+      "why": "task facade-kit-elena: a roof camera that can be solved",
+      "priority": 2,
+      "radius": 4,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "cervantes-east-from-elena",
+      "area": "cervantes",
+      "at": [
+        -129.0,
+        43.0
+      ],
+      "look": [
+        -102.0,
+        27.0
+      ],
+      "ask": "Cervantes east of Elena: stand at the Elena end and photograph along the lane towards Pintor Picasso.",
+      "why": "no photo covers this half of Cervantes (levels item cervantes-east-north-bed)",
+      "priority": 1,
+      "radius": 6,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "cervantes-east-from-picasso",
+      "area": "cervantes",
+      "at": [
+        -78.0,
+        13.0
+      ],
+      "look": [
+        -102.0,
+        27.0
+      ],
+      "ask": "Cervantes from the Pintor Picasso end, looking west along the lane; then one side-on to the white kerb wall and plumbago hedge.",
+      "why": "no photo covers this half of Cervantes",
+      "priority": 1,
+      "radius": 6,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "cervantes-junction-patio",
+      "area": "cervantes",
+      "at": [
+        -153.5,
+        53.5
+      ],
+      "look": [
+        -150.0,
+        50.0
+      ],
+      "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+      "why": "levels item cervantes-junction-north-patio",
+      "priority": 2,
+      "radius": 4,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "guillermo-lane-walk",
+      "area": "seaward-lanes",
+      "at": [
+        -55.0,
+        68.0
+      ],
+      "look": [
+        -40.0,
+        92.0
+      ],
+      "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
+      "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
+      "priority": 1,
+      "radius": 10,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "guillermo-lawn-edge",
+      "area": "main-pool",
+      "at": [
+        -12.0,
+        124.0
+      ],
+      "look": [
+        -18.0,
+        129.0
+      ],
+      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "beach-gateway",
+      "area": "main-pool",
+      "at": [
+        -1.0,
+        137.0
+      ],
+      "look": [
+        -5.0,
+        133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "radius": 6,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "beach-verge",
+      "area": "barraka-beach",
+      "at": [
+        2.0,
+        141.0
+      ],
+      "look": [
+        14.0,
+        128.0
+      ],
+      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+      "priority": 1,
+      "radius": 8,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "paseo-wall-east-end",
+      "area": "paseo",
+      "at": [
+        -16.0,
+        147.0
+      ],
+      "look": [
+        -20.0,
+        142.0
+      ],
+      "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
+      "why": "levels item paseo-east-end-height; the survey shows little or no step there",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "main-pool-lawn",
+      "area": "main-pool",
+      "at": [
+        -12.0,
+        108.0
+      ],
+      "look": [
+        -18.0,
+        91.0
+      ],
+      "ask": "From the big-pool lawn: the pool and the terraces behind it; then turn round to the gateway and the railings.",
+      "why": "the main pool has only one placed photo",
+      "priority": 1,
+      "radius": 10,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "south-lane-walk",
+      "area": "south-pool",
+      "at": [
+        -125.0,
+        108.0
+      ],
+      "look": [
+        -92.0,
+        178.0
+      ],
+      "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
+      "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
+      "priority": 2,
+      "radius": 10,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "north-pool-west-stair",
+      "area": "north-pool",
+      "at": [
+        -187.0,
+        17.5
+      ],
+      "look": [
+        -185.0,
+        14.0
+      ],
+      "ask": "From the lawn path, side-on to the tiled stair at the north-west corner of the north pool lawn with the curved wall beside it; and one from the top looking down.",
+      "why": "levels item north-pool-west-stair",
+      "priority": 2,
+      "radius": 5,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "patricia-west",
+      "area": "seaward-lanes",
+      "at": [
+        -148.0,
+        153.0
+      ],
+      "look": [
+        -120.0,
+        136.0
+      ],
+      "ask": "Calle Patricia from its west end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "patricia-east",
+      "area": "seaward-lanes",
+      "at": [
+        -45.0,
+        90.0
+      ],
+      "look": [
+        -70.0,
+        105.0
+      ],
+      "ask": "Calle Patricia from its east end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "eva-east",
+      "area": "eva",
+      "at": [
+        -60.0,
+        51.0
+      ],
+      "look": [
+        -85.0,
+        66.0
+      ],
+      "ask": "Calle Eva's east stretch from the Guillermo end, looking west along it.",
+      "why": "no photo covers Eva east of the middle pool",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "alberto",
+      "area": "north-lanes",
+      "at": [
+        -150.0,
+        -28.0
+      ],
+      "look": [
+        -130.0,
+        3.0
+      ],
+      "ask": "Calle Alberto: one photo along the lane from each end.",
+      "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "radius": 10,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "isabel",
+      "area": "north-lanes",
+      "at": [
+        -160.0,
+        9.0
+      ],
+      "look": [
+        -140.0,
+        -6.0
+      ],
+      "ask": "Calle Isabel: one photo along the lane from the Elena end.",
+      "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "radius": 8,
+      "since": "2026-10-27",
+      "status": "open"
+    },
+    {
+      "id": "picasso-lane",
+      "area": "picasso",
+      "at": [
+        -60.0,
+        -30.0
+      ],
+      "look": [
+        -40.0,
+        5.0
+      ],
+      "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
+      "why": "only one photo in the Picasso area",
+      "priority": 2,
+      "radius": 12,
+      "since": "2026-10-27",
+      "status": "open"
+    }
+  ]
+}

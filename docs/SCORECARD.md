@@ -6,19 +6,46 @@ centre of the view); `refs/SCORECARD.md` has every area side by side. Each figur
 measurement with its unit. Nothing is scored out of 100, and a good figure on one line does not
 vouch for another: ground that matches the survey says nothing about where a wall stands.
 
+## Colour and photo spots
+
+Each area is red, amber or green, from `data/photo_requests.json` and the build queue:
+
+- **Red: photos needed.** The area has a photo request still waiting for photos. Each request says
+  where to stand (`at`), what to point at (`look`), what to photograph (`ask`) and what it unblocks
+  (`why`).
+- **Amber: photos in, checking or building.** No request is waiting, but photos that answer one are
+  waiting for review, or build tasks or placement discrepancies are open there.
+- **Green: up to date.** Nothing open.
+
+When a new batch is indexed (`docs/PHOTO_MAP_WORKFLOW.md`), `scripts/photo_requests.py` matches each
+photo taken on or after a request's `since` date to the request whose spot it was taken from (within
+its radius, plus up to 5 m of GPS accuracy) and facing its `look` point (reviewed `looksAt`, or the
+compass within 60 degrees). The request then counts as received and the area turns amber. An agent
+looks at the photos and sets `status: answered` with `answeredBy` and a `note`, or leaves it open and
+says what is still missing. `scripts/build_references.py` adds each request to the evidence graph
+(`photo-request:<id>`, `in-area`, `unblocks` a task, and an `answers` edge from each matching photo,
+basis position or reviewed) and fails on an answered request without photos and a note.
+
 ## In the game
 
-`slice.html` (Walk and Overview) shows a panel at the top left: `Scorecard · <area>`. Click the
-title to open or close it; the choice is remembered in the browser. It starts open on wide
-screens and collapsed on phones. It changes as you walk from one area into the next. Between
-areas (outside every area's reach) it shows the whole resort. It links to the area's brief
-(`refs/areas/<id>.md`) and to the full table.
+`slice.html` (Walk and Overview) shows a panel at the top left, edged in the area's colour:
+`<area> · photos needed` (or `checking`, `up to date`). It lists the area's photo spots, numbered,
+with the live distance and direction from you, and keeps the figures under **Measurements**. While
+the panel is open, a numbered beacon stands at each spot with an arrow to what to photograph (no
+collision; not part of the model). Click the title to open or close it; the choice is remembered in
+the browser. It starts open on wide screens and collapsed on phones, changes as you walk from one
+area into the next, and between areas shows the whole resort. It links to the photo spots on the
+map, the area's brief (`refs/areas/<id>.md`) and the full table.
 
 The panel is off in automated renders: with `?photocam=` and in any browser driven by Playwright
 (`navigator.webdriver`), so `shoot_views.cjs` and the layout tests see the scene as before. Add
-`&scorecard=1` to show it there, or `&scorecard=0` to hide it anywhere. It is a panel only
-(`src/scorecard.ts`, listed in `UI_MODULES`) and builds no geometry. The Map & photos view does
-not show it yet.
+`&scorecard=1` to show it there, or `&scorecard=0` to hide it anywhere (`src/scorecard.ts`).
+
+## On the map
+
+Map & photos tints every area in its colour and shows each photo spot as a numbered pin (red: photos
+needed, amber: photos in) with a dashed line to what to photograph; hover for the request. The
+**Photo spots** layer button hides them.
 
 ## Which area a place belongs to
 

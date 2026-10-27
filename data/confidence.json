@@ -258,6 +258,22 @@
   "elena_east_patios.json:elena-east-patios-pergola": {
    "level": "inferred",
    "why": "Only one beam edge shows over the wall; the pergola's size, posts and height are guessed."
+  },
+  "seafront_fence.json:guillermo-beach-gate": {
+   "level": "estimated",
+   "why": "Position from the aerial (a gateway at the lawn's south-west corner) and the arch's bearing in IMG_2226, confirmed in words by Dave (27 Oct); no close photo, so opening and heights are by eye."
+  },
+  "seafront_fence.json:guillermo-ramp-wall": {
+   "level": "inferred",
+   "why": "A wall must close the lawn between the foot of Calle Guillermo and the gateway (IMG_2226 shows white wall there from the beach); its line follows the paseo edge and its height is assumed."
+  },
+  "beach_verge.json:barraka-front-verge": {
+   "level": "estimated",
+   "why": "Grass outline read off the aerial and IMG_2226 from the beach; Dave confirms grass and plants there. Edges good to about 2-3 m."
+  },
+  "beach_verge.json:barraka-front-shrubs": {
+   "level": "estimated",
+   "why": "Shrub clumps placed on the dark clumps of the aerial; sizes and species unknown until close photos."
   }
  },
  "gaps": [
