@@ -7,7 +7,8 @@
 A photo answers a request when it was taken on or after the request's `since` date, its camera is
 within the request's radius of `at` (plus up to 5 m of the phone's GPS accuracy), and, when the
 request has a `look` point, the photo faces it: its reviewed looksAt is within the radius of `look`
-or its compass heading is within 60 degrees of the bearing from `at` to `look`. That makes the
+or its compass heading is within 60 degrees of the bearing from `at` to `look`. A request with
+`viewpoint: roof` (or upper-floor) also needs the phone's altitude above ground level. That makes the
 request `received`; it stays so until an agent who has looked at the photos sets `status: answered`
 with `answeredBy` and a `note` (or leaves it open and says what is still missing).
 build_scorecard.py colours the areas from these states and build_references.py puts them in the
@@ -21,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FACING = 60
 GPS_SLACK = 5.0
+GROUND_MAX_ALTITUDE = 9.0  # ground shots read 9 m or less (docs/PHOTO_MAP_WORKFLOW.md)
 
 
 def load():
@@ -32,6 +34,9 @@ def matches(request, photo, tag):
         return False
     slack = min(photo.get('accuracy') or GPS_SLACK, GPS_SLACK)
     if math.dist((photo['x'], photo['z']), request['at']) > request['radius'] + slack:
+        return False
+    # A roof or upper-floor spot needs a photo taken up there: phone altitude above ground level.
+    if request.get('viewpoint') in ('roof', 'upper-floor') and (photo.get('altitude') or 0) <= GROUND_MAX_ALTITUDE:
         return False
     look = request.get('look')
     if not look:

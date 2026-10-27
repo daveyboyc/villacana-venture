@@ -5,14 +5,19 @@
 Every batch goes through the same steps, so any agent can pick up any area.
 
 1. Find new files in the Drive folder "Villacana" (newer than the last indexed
-   IMG number in `public/photos-ref/manifest.json`). Download the originals to a
-   private folder outside both repos.
+   IMG number in `public/photos-ref/manifest.json`). Download each with the Drive
+   connector; it saves a JSON file per photo. `python3 scripts/import_drive_downloads.py
+   <private folder> <download files>` writes the originals to a private folder outside
+   both repos and records each photo's Drive link.
 2. `python3 scripts/index_photos.py <folder> public/photos-ref --annotations data/photo_annotations.json`
    (needs `Pillow` and `pillow-heif`). It now also records GPS altitude, which
    separates roof shots from lane shots.
    Then `python3 scripts/build_photo_map.py --thumbs` makes the photo map's
    thumbnails for the new photos (commit them with the web copies).
-3. Look at every image. In `data/photo_annotations.json` give it a title,
+3. Look at every image. `python3 scripts/photo_sheet.py IMG_xxxx ...` makes a reading
+   sheet per photo in `layout-checks.local/sheets/`: the photo with a pixel grid beside a
+   north-up aerial of the camera pin, its GPS circle and view, streets, outlines, nearby
+   photos and photo spots, with the facts above. Read the sheet, not the bare photo. In `data/photo_annotations.json` give it a title,
    observation and Drive link. In `data/reference_tags.json` give it `shows`
    (every area visible, not where the camera stood), `viewpoint` (ground,
    upper-floor, roof, aerial, map) and `useFor` (layout, levels, facades,

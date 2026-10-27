@@ -19,8 +19,8 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 
 ## Coverage
 
-Layout: 9, Facades and roofs: 3, Materials: 3, Planting: 5, Signs: 1
-11 reviewed, 0 suggested only by camera position.
+Layout: 10, Facades and roofs: 3, Materials: 4, Planting: 6, Signs: 1
+12 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -72,6 +72,7 @@ graph LR
 | [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp **Looks at:** Eva lawn beside clipped round tree and lantern post. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn **Looks at:** Brown Eva frontage door with yellow-flowered shrub beside lawn. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
+| [IMG_2549.jpg](../../public/photos-ref/IMG_2549.jpg) | ground | layout, materials, planting | Calle Eva: lane between a white wall and planted beds, towards the middle pool |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |

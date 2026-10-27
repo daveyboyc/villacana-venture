@@ -61,6 +61,9 @@ class Scorecard(unittest.TestCase):
         self.assertEqual(state(photo(x=20))['state'], 'open', 'too far from the spot')
         self.assertEqual(state(photo(heading=180))['state'], 'open', 'facing away')
         self.assertEqual(state(photo(heading=180), {'IMG_9999.jpg': {'looksAt': [0, -9]}})['state'], 'received', 'a reviewed looksAt overrides the compass')
+        roof = {**request, 'look': None, 'viewpoint': 'roof'}
+        self.assertEqual(photo_requests.states([roof], [photo(altitude=7)], {})[0]['state'], 'open', 'a ground photo does not answer a roof spot')
+        self.assertEqual(photo_requests.states([roof], [photo(altitude=14)], {})[0]['state'], 'received')
         done = photo_requests.states([{**request, 'status': 'answered', 'answeredBy': ['IMG_1.jpg']}], [], {})[0]
         self.assertEqual((done['state'], done['photos']), ('answered', ['IMG_1.jpg']))
         for r in photo_requests.load():

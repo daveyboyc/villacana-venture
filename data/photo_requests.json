@@ -50,7 +50,8 @@
       "priority": 2,
       "radius": 4,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "viewpoint": "roof"
     },
     {
       "id": "cervantes-east-from-elena",
@@ -158,7 +159,8 @@
       "priority": 1,
       "radius": 6,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo."
     },
     {
       "id": "beach-verge",
@@ -266,7 +268,11 @@
       "priority": 2,
       "radius": 8,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "answered",
+      "answeredBy": [
+        "IMG_2559.jpg"
+      ],
+      "note": "Reviewed 27 Oct: IMG_2559 looks along Calle Patricia from its west end (pin 0.2 m from the mapped end, heading 60 on the lane bearing 58): tiled lane between white garden walls, bougainvillea, hedges and a candelabra cactus."
     },
     {
       "id": "patricia-east",

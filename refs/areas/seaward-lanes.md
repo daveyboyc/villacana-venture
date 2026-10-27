@@ -27,8 +27,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 25, Levels and slopes: 6, Facades and roofs: 5, Materials: 17, Planting: 8, Signs: 3, Views: 1
-33 reviewed, 0 suggested only by camera position.
+Layout: 29, Levels and slopes: 8, Facades and roofs: 6, Materials: 22, Planting: 12, Signs: 3, Views: 1
+39 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -128,6 +128,9 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2191.jpg](../../public/photos-ref/IMG_2191.jpg) | ground | signage | Passage plaque reading CALLE SILVIA 1-15 _Used by: silvia_tunnel.json:silvia-tunnel-study._ |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2494.jpg](../../public/photos-ref/IMG_2494.jpg) | ground | layout, facades, materials | Narrow lane by Teodoro Rojo: barred windows, planter, drains **Looks at:** Narrow lane north of Teodoro Rojo. **Note:** Near-duplicate viewpoint of IMG_2241. |
+| [IMG_2559.jpg](../../public/photos-ref/IMG_2559.jpg) | ground | layout, materials, planting | Calle Patricia from its west end, looking along the lane **Looks at:** Calle Patricia looking east-north-east from its west end. |
+| [IMG_2586.jpg](../../public/photos-ref/IMG_2586.jpg) | ground | facades, materials, planting | Courtyard with arch and patterned floor near Calle Jorge |
+| [IMG_2675.jpg](../../public/photos-ref/IMG_2675.jpg) | ground | layout, materials, planting | Lane off Teodoro Rojo between planted walls |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |
@@ -138,6 +141,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2240.jpg](../../public/photos-ref/IMG_2240.jpg) | ground | layout, materials | Square-tiled lane between a hedge and a white wall |
 | [IMG_2241.jpg](../../public/photos-ref/IMG_2241.jpg) | ground | layout, facades | Narrow lane with window grilles and a drain |
 | [IMG_2242.jpg](../../public/photos-ref/IMG_2242.jpg) | ground | layout, materials | Covered entrance with tiled step and patterned floor |
+| [IMG_2572.jpg](../../public/photos-ref/IMG_2572.jpg) | ground | layout, planting | Path between oleanders off Calle Silvia south |
+| [IMG_2658.jpg](../../public/photos-ref/IMG_2658.jpg) | ground | levels, materials | Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp |
 | [IMG_2183.jpg](../../public/photos-ref/IMG_2183.jpg) | ground | planting | Lawn with a tall candelabra cactus and clipped shrubs |
 | [IMG_2186.jpg](../../public/photos-ref/IMG_2186.jpg) | ground | layout | Covered passage through the terrace with a view to the sea |
 | [IMG_2231.jpg](../../public/photos-ref/IMG_2231.jpg) | ground | materials | White tiled bench beside the lane |
@@ -148,6 +153,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
+| [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |

@@ -12,6 +12,7 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 - Dave, 2026-10-21: Calle Jorge meets Guillermo on the level; Guillermo's ramp starts just past the junction and slopes down to the paseo as a smooth ramp with no steps (modelled 3 m over 15.5 m, about 19 %). Open: do the houses beside the ramp stand lower than street level?
 - Laser survey 2026-10-24 (docs/reviews/lidar-levels): main pool deck -2.87 m (model -3.00). Calle Guillermo stays at about -0.2 to -0.4 m along the mapped street with the pool lawn 2.5 m lower behind a sharp edge; the fall to the paseo starts south of the mapped end, not over its last 15 m as modelled (guillermo-descent-recheck).
 - 27 Oct (docs/reviews/beach-gate-verge): the beach gateway is at the lawn's south-west corner beside the paseo ramp, not at the foot of Calle Guillermo (Dave; aerial; IMG_2226). Calle Guillermo is level to the paseo (survey, IMG_2488); the paseo ramps 1.7 m down east of the lane's foot to lawn level. The 21 Oct 3 m lane ramp is removed.
+- 27 Oct, IMG_2600 from beside the kiosk: an inner tiled path runs down east-south-east from the foot of Calle Guillermo behind a white wall topped with green rigid mesh, to grass, a hedge and a green rigid-mesh fence with the beach beyond. The model draws white railings there (read from IMG_2226 at 50 m); the fence's material and where mesh turns to railings are open. A tall white pier at the left edge may be the beach gateway.
 
 ## Read first
 
@@ -22,8 +23,8 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 
 ## Coverage
 
-Layout: 6, Levels and slopes: 5, Facades and roofs: 1, Views: 1
-6 reviewed, 0 suggested only by camera position.
+Layout: 7, Levels and slopes: 6, Facades and roofs: 1, Materials: 1, Views: 1
+7 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -81,6 +82,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | --- | --- | --- | --- |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
+| [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | `villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
 | `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels | Apple Maps 3D: main pool terrace curve with the west and east steps **Note:** Dave, 2026-10-21. Nearly top-down. West: terracotta steps between the Guillermo-side wall and the terrace's curved planter wall. East: a dark narrow slot between the 90 Miles lobe and the Picasso boundary wall, the steps in shadow. |
