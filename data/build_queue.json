@@ -1225,7 +1225,10 @@
    "priority": 1,
    "kind": "levels",
    "title": "Calle Guillermo: put the fall to the paseo where the survey has it",
-   "photos": [],
+   "photos": [
+    "IMG_2488.jpg",
+    "IMG_2226.jpg"
+   ],
    "build": "The model drops Calle Guillermo 3 m over the last 15 m of the mapped street. The laser survey keeps the street at about -0.2 to -0.4 m to that end, with the main-pool lawn 2.5 m lower beside it behind a sharp edge (a retaining wall), and the fall to the paseo starting south of the mapped end (docs/reviews/lidar-levels). Re-check against Apple 3D screenshots 10, 11 and 13 and any ground photos, then move the descent and the wall line to match.",
    "avoid": "Do not remove the east steps or the kiosk without evidence. No raw survey rasters in the repository.",
    "accept": [
@@ -1233,7 +1236,9 @@
     "check_lowered_lanes updated; layout browser test passes"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "27 Oct, with task beach-gate-verge: Guillermo back at street level (survey -0.2 to -0.4; IMG_2488 shows it level); the paseo follows the survey (a 12% ramp from -0.3 to -2.0 east of the lane foot, lawn level along the railings, -1.1 past Barraka); the sloping corner by the kiosk taken out of the lowered lawn. Lane west edge within 0.33 m of the survey; its east edge reads the lawn below the retaining wall in the 1 m survey (up to 2.3 m), so the mapped lane may sit up to 1 m too far east."
   },
   {
    "id": "silvia-outdoor-path",
@@ -2146,6 +2151,33 @@
    "status": "done",
    "owner": "Claude",
    "notes": "Done: scripts/build_scorecard.py, public/scorecard.json, refs/SCORECARD.md, src/scorecard.ts; docs/SCORECARD.md; screenshots in docs/reviews/area-scorecard/."
+  },
+  {
+   "id": "beach-gate-verge",
+   "area": "main-pool",
+   "priority": 1,
+   "kind": "structure",
+   "title": "Beach gateway beside the paseo ramp, survey paseo levels, grass and shrubs in front of the railings",
+   "photos": [
+    "IMG_2226.jpg",
+    "IMG_2488.jpg"
+   ],
+   "build": "Dave (27 Oct): the beach entrance from the big pool is not at the end of the slope but to its left looking at the beach, the height there is wrong, and there is grass and planting in front of the gateway and the railings alongside Barraka. Move the arched gateway to the lawn's south-west corner (aerial, IMG_2226 bearing), wall the paseo ramp beside it, take the paseo and Guillermo levels from the laser survey (data/main_pool.json seafront profile, data/terrain.json), and outline the verge (data/beach_verge.json).",
+   "avoid": "Do not invent gate leaves or fences not seen; keep the verge a rough outline until close photos arrive; shrubs are Details only.",
+   "accept": [
+    "check_seafront_fence, check_pool_levels, check_lowered_lanes, check_beach_verge pass",
+    "paseo within 0.25 m of the survey from the Guillermo foot to Barraka",
+    "layout, overview and photo-map browser tests pass"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude",
+   "features": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
+   ]
   }
  ]
 }

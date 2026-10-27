@@ -3,7 +3,8 @@
   "evidence": [
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
     "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
-    "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png"
+    "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+    "IMG_2488.jpg"
   ],
   "trust": "From Apple Maps 3D screenshots (Dave, 2026-10-21): the lane runs down to the paseo between the house gardens and a white wall on the lawn side, and the kiosk at its foot stands at lawn level; Apple's mesh shows which way the ground falls, not heights. Dave then said Calle Jorge meets Guillermo on the level and the ramp starts just past it (slopeEvidence). The 0.5 m parapet on the lawn side is a guess. Houses stay at street level; the gardens beside the lane do too, except the garden behind the east end of the paseo wall (gardenFall). Heights are estimates, not measured.",
   "guillermo": {
@@ -12,9 +13,9 @@
       -73.45,
       104.68
     ],
-    "foot": -3,
+    "foot": 0,
     "maxGrade": 0.2,
-    "slopeEvidence": "Dave, 2026-10-21: Calle Jorge meets Guillermo on the level and the ramp starts just past it, sloping down to the sea; it is a smooth ramp, with no steps. The slope starts 0.66 m seaward of Jorge's centre line (clear of Jorge's paving) and falls 3 m (Dave's pool level) over 15.5 m to the lane's foot, about 19 %; it then runs on level through the gateway to the paseo. The 3 m and the grade follow from that; neither is measured."
+    "slopeEvidence": "Superseded 2026-10-27: the laser survey (PNOA-LiDAR 2020-21) keeps Calle Guillermo at about 0.2-0.4 m below street level all the way to the paseo, and IMG_2488, looking up the lane from its foot, shows it level with no ramp. The fall to the lawn is on the paseo east of the lane's foot (about 1.7 m over 14 m, data/main_pool.json seafront profile), and Dave (2026-10-27) puts the beach entrance beside that ramp, not at the lane's foot. The lane is back at street level; the lowered lawn strip beside it, which the survey has at lawn level, stays. Earlier reading (Dave, 2026-10-21, from Apple Maps 3D): a smooth ramp, no steps, from just past Jorge down 3 m to the paseo."
   },
   "jorge": {
     "road": "jorge",

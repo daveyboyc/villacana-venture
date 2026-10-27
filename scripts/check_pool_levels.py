@@ -41,9 +41,10 @@ assert 0 < layout['drop'] / layout['steps']['count'] <= .2
 # The big pool is level with the beach; the beach falls gently to a lower sea.
 front = layout['seafront']
 heights = [h for _, h in front['profile']]
-assert min(heights) == -layout['drop'] and max(heights) == 0, 'Paseo must run from street level down to pool level'
+assert max(heights) == 0 and -2.4 <= min(heights) <= -2.0, 'Paseo must run from street level down to the big-pool lawn level (laser survey, about -2.3)'
 assert all(a[0] < b[0] for a, b in zip(front['profile'], front['profile'][1:]))
-assert all(abs(b[1] - a[1]) / (b[0] - a[0]) <= 0.1 for a, b in zip(front['profile'], front['profile'][1:])), 'Paseo too steep'
+# The ramp east of the foot of Calle Guillermo is the steepest stretch: 1.7 m over 14 m in the survey.
+assert all(abs(b[1] - a[1]) / (b[0] - a[0]) <= 0.125 for a, b in zip(front['profile'], front['profile'][1:])), 'Paseo too steep'
 assert front['sea'] < -layout['drop'] and front['shore'] < front['sea'] <= front['shore'] + 0.3, 'Sea must lie just below the beach'
 mapped = [turned(p) for p in skeleton['seafront']['paseo']['points']]
 def paseo_height(x):
@@ -52,10 +53,11 @@ def paseo_height(x):
     for a, b in zip(pts, pts[1:]):
         if x <= b[0]: return a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0])
     return pts[-1][1]
-# In front of both lowered pools the paseo is at pool level, so there is no step.
-for pool in skeleton['pools']:
-    if pool['id'] in ('main', 'toddler'):
-        assert all(paseo_height(turned(p)[0]) == -layout['drop'] for p in pool['ring']), 'Step between pool and beach'
+# Along the big-pool lawn's railings the paseo is at the surveyed lawn level (about -2.3; the deck is -2.83),
+# so the lawn meets it with no step.
+rail = json.loads((ROOT / 'data/seafront_fence.json').read_text())['railing']['points']
+# The railings start at the foot of the ramp, so check from where the ramp ends (turned x -56).
+assert all(-2.4 <= paseo_height(x) <= -1.9 for x in range(max(-56, int(rail[0][0]) + 1), int(rail[-1][0]))), 'Step between the lawn and the paseo'
 # Beside the south pool the paseo is about 1 m below the lawn, behind the sandstone retaining wall
 # (IMG_2349, IMG_2350; data/paseo_wall.json), and back at street level by the Dalí coastal gate.
 south = next(p for p in skeleton['pools'] if p['id'] == 'south')

@@ -1524,7 +1524,12 @@
    "altitude": 4.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ],
   "looksAt": [
    0.1,
    125.7
@@ -1566,7 +1571,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "paseo_wall.json:paseo-retaining-wall"
+   "paseo_wall.json:paseo-retaining-wall",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall"
   ],
   "looksAt": [
    -12.1,
@@ -5937,7 +5944,10 @@
    "altitude": 3.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ],
   "looksAt": [
    -22.0,
    120.0
@@ -6231,7 +6241,10 @@
   ],
   "sourceRevision": null,
   "note": null,
-  "citedBy": []
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ]
  },
  {
   "id": "ref:apple-maps/06-top-down-whole-block.png",
@@ -6350,7 +6363,10 @@
   ],
   "sourceRevision": null,
   "note": "Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh.",
-  "citedBy": []
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ]
  },
  {
   "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",

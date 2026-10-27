@@ -1,7 +1,7 @@
 {
  "about": "Written by python3 scripts/build_scorecard.py measure. ground: model minus 2020-21 survey on a 2 m grid of open ground within 15 m of a house. plan: footprint shift (metres east, south) that best fits the 2014-15 surveyed roofs, its correlation, and the share of footprint (1 m in from the edge) on surveyed roof at least 2 m up. kit: facade kit parts as placed in the Details view, traced from photos (data/facade_kit.json) or generated.",
  "measuredAt": "2026-10-27",
- "commit": "3f1a917",
+ "commit": "8b5e1f8",
  "areaGrid": "7273ccfa24aec399",
  "areas": {
   "north-pool": {
@@ -68,8 +68,8 @@
    "ground": {
     "cells": 237,
     "medianMiss": 0.06,
-    "within25cm": 0.88,
-    "over50cm": 0.06
+    "within25cm": 0.95,
+    "over50cm": 0.02
    },
    "plan": {
     "houses": 10,
@@ -208,8 +208,8 @@
    "ground": {
     "cells": 1147,
     "medianMiss": 0.06,
-    "within25cm": 0.97,
-    "over50cm": 0.02
+    "within25cm": 0.98,
+    "over50cm": 0.01
    },
    "plan": {
     "houses": 54,
@@ -227,9 +227,9 @@
   "barraka-beach": {
    "ground": {
     "cells": 142,
-    "medianMiss": -0.94,
-    "within25cm": 0.03,
-    "over50cm": 0.94
+    "medianMiss": -0.0,
+    "within25cm": 0.41,
+    "over50cm": 0.18
    },
    "plan": {
     "houses": 1
@@ -242,9 +242,9 @@
   "paseo": {
    "ground": {
     "cells": 684,
-    "medianMiss": 0.05,
-    "within25cm": 0.65,
-    "over50cm": 0.29
+    "medianMiss": 0.06,
+    "within25cm": 0.78,
+    "over50cm": 0.09
    },
    "plan": {
     "houses": 18,
@@ -263,8 +263,8 @@
    "ground": {
     "cells": 6663,
     "medianMiss": 0.06,
-    "within25cm": 0.92,
-    "over50cm": 0.06
+    "within25cm": 0.94,
+    "over50cm": 0.02
    },
    "plan": {
     "houses": 198,

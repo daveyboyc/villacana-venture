@@ -1,12 +1,13 @@
 {
-  "note": "The boundary between Villacana and the paseo/Barraka beach along the big-pool lawn: a white wall from the end of the sandstone wall to an arched gateway at the foot of Calle Guillermo, a short white wall, then white railings along the lawn to its east end. Turned-frame metres (sea downward); every line is 1.75 m inland of the paseo's centre line, just off the 3 m paving. Heights are metres above the paseo.",
+  "note": "The boundary between Villacana and the paseo/Barraka beach along the big-pool lawn: a white wall from the end of the sandstone wall, down beside the paseo ramp, to an arched gateway at the lawn's south-west corner, a short white wall, then white railings along the lawn to its east end. Turned-frame metres (sea downward); every line is 1.75 m inland of the paseo's centre line, just off the 3 m paving. Heights are metres above the paseo.",
   "evidence": [
     "IMG_2226.jpg",
     "IMG_2227.jpg",
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
-    "ref:apple-maps/05-top-down-main-pool-and-lawn.png"
+    "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+    "IMG_2488.jpg"
   ],
-  "trust": "Dave, 2026-10-21: a fence and a coastal gate run in front of the slope, separating Villacana from Barraka beach. IMG_2226 (from the beach, looking north-west) shows, west to east, a white wall with a tiled panel, a white arched gateway at paseo level, a short white wall and white railings along the lawn up to Barraka's raised deck; IMG_2227 shows the white tiled wall where the sandstone wall ends; apple-maps/11 shows the gateway at the bottom of the lane with the zebra crossing in front. Positions follow the paseo line (plan about 1-2 m); the gateway sits where the lane meets it. Heights (wall 1.5 m, railings 1.1 m, arch 2.4 m), the 1.4 m opening and the bar spacing are read by eye, not measured. The gateway is left open: no photo shows a closed leaf.",
+  "trust": "Dave, 2026-10-21: a fence and a coastal gate run in front of the slope, separating Villacana from Barraka beach. IMG_2226 (from the beach, looking north-west) shows, west to east, a white wall with a tiled panel, a white arched gateway at paseo level, a short white wall and white railings along the lawn up to Barraka's raised deck; IMG_2227 shows the white tiled wall where the sandstone wall ends; apple-maps/11 shows the gateway at the bottom of the lane with the zebra crossing in front. Positions follow the paseo line (plan about 1-2 m); the gateway sits where the lane meets it. Heights (wall 1.5 m, railings 1.1 m, arch 2.4 m), the 1.4 m opening and the bar spacing are read by eye, not measured. The gateway is left open: no photo shows a closed leaf. Dave, 2026-10-27: the beach entrance is not at the end of the slope but to its left looking at the beach. Moved 7.5 m north-east along the same line to the dark gateway the aerial shows at the lawn's south-west corner (about scene -6, 131.5), which also agrees within compass error with the arch's bearing in IMG_2226; the wall is split into 1.5 m runs so it steps down the ramp. Ground there from the laser survey (main_pool.json seafront profile).",
   "wall": {
     "id": "guillermo-corner-wall",
     "points": [
@@ -26,11 +27,38 @@
     "height": 1.5,
     "thickness": 0.25
   },
+  "rampWall": {
+    "id": "guillermo-ramp-wall",
+    "points": [
+      [
+        -69.0,
+        119.83
+      ],
+      [
+        -67.77,
+        119.39
+      ],
+      [
+        -66.54,
+        118.96
+      ],
+      [
+        -65.31,
+        118.53
+      ],
+      [
+        -64.08,
+        118.09
+      ]
+    ],
+    "height": 1.5,
+    "thickness": 0.25
+  },
   "gate": {
     "id": "guillermo-beach-gate",
     "at": [
-      -70.09,
-      120.21
+      -63.0,
+      117.71
     ],
     "along": [
       0.943,
@@ -46,12 +74,12 @@
     "id": "guillermo-gate-east-wall",
     "points": [
       [
-        -69.0,
-        119.83
+        -61.91,
+        117.33
       ],
       [
-        -66.17,
-        118.83
+        -59.08,
+        116.33
       ]
     ],
     "height": 1.5,
@@ -61,8 +89,8 @@
     "id": "main-pool-lawn-railing",
     "points": [
       [
-        -66.17,
-        118.83
+        -59.08,
+        116.33
       ],
       [
         -56.73,

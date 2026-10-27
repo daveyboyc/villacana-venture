@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "f21d710029345a10ffdad7d07dd92b4199c752058b9e911d2c6b89ef41b26567",
+ "inputDigest": "bd85192ed06fa37120e2820bd2e2b850eca0df18bf219d6749aed56d252793d6",
  "summary": {
   "unplaced": 1,
   "suggested": 84,
   "needs-review": 69,
   "photos": 154,
-  "features": 375,
-  "photosCitedByModel": 100,
-  "modelFeaturesWithPhotoCitations": 120
+  "features": 379,
+  "photosCitedByModel": 102,
+  "modelFeaturesWithPhotoCitations": 124
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1528,7 +1528,12 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 39.5,
@@ -1555,7 +1560,9 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "paseo_wall.json:paseo-retaining-wall"
+    "paseo_wall.json:paseo-retaining-wall",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -6093,7 +6100,10 @@
      "angleOffset": 33.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -11.4,

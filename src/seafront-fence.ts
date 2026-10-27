@@ -6,7 +6,7 @@ import type { Vec2 } from "./types";
 
 /** The white wall, arched gateway and railings between the big-pool lawn and the paseo (data/seafront_fence.json). */
 const line = (points: number[][]): Vec2[] => points.map(poolLevelPoint).filter((p, i, all) => !i || Math.hypot(p[0] - all[i - 1][0], p[1] - all[i - 1][1]) > 0.05);
-const pieces = [data.wall, data.stub, data.railing].map((f) => ({ ...f, line: line(f.points) }));
+const pieces = [data.wall, data.rampWall, data.stub, data.railing].map((f) => ({ ...f, line: line(f.points) }));
 const gateAt = poolLevelPoint(data.gate.at), gateAlong = (() => { const [x, z] = poolLevelPoint(data.gate.along); const n = Math.hypot(x, z); return [x / n, z / n] as Vec2; })();
 
 function strip(a: Vec2, b: Vec2, thickness: number): Vec2[] {
@@ -36,9 +36,9 @@ export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: nu
     mesh.castShadow = mesh.receiveShadow = true; group.add(mesh);
   };
   const base = (a: Vec2, b: Vec2) => Math.min(groundAt(...a), groundAt(...b));
-  for (const f of [pieces[0], pieces[1]]) f.line.slice(1).forEach((b, i) => { const a = f.line[i]; beam(a, b, base(a, b) - 0.2, f.height + 0.2, f.thickness, white); });
+  for (const f of [pieces[0], pieces[1], pieces[2]]) f.line.slice(1).forEach((b, i) => { const a = f.line[i]; beam(a, b, base(a, b) - 0.2, f.height + 0.2, f.thickness, white); });
   // Railings: a low white plinth, square posts, a top rail and close vertical bars between them.
-  const rail = pieces[2], bars: THREE.Matrix4[] = [];
+  const rail = pieces[3], bars: THREE.Matrix4[] = [];
   rail.line.slice(1).forEach((b, i) => {
     const a = rail.line[i], y = base(a, b), length = Math.hypot(b[0] - a[0], b[1] - a[1]), yaw = -Math.atan2(b[1] - a[1], b[0] - a[0]);
     beam(a, b, y - 0.2, data.railing.plinth + 0.2, rail.thickness, white);
