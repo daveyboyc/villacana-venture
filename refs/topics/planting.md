@@ -24,20 +24,34 @@ Trees, hedges, palms, climbers and beds.
 | [IMG_2341.jpg](../../public/photos-ref/IMG_2341.jpg) | ground | layout, planting | Curved low white wall with hedge, crazy paving and trees **Note:** GPS ±47 m: location uncertain, probably the middle pool courtyard. _Used by: raised_terraces.json:middle-pool-curved-hedge-patio._ |
 | [IMG_2246.jpg](../../public/photos-ref/IMG_2246.jpg) | ground | planting | Oleander bed and pollarded tree by the middle pool _Used by: raised_terraces.json:middle-pool-oleander-bed._ |
 | [IMG_2247.jpg](../../public/photos-ref/IMG_2247.jpg) | ground | planting | Oleander bed and pollarded tree by the middle pool (second shot) _Used by: raised_terraces.json:middle-pool-oleander-bed._ |
+| [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | ground | layout, planting, materials | Tiled lane through an arch with a lantern, monstera planters on both sides |
+| [IMG_2680.jpg](../../public/photos-ref/IMG_2680.jpg) | ground | layout, planting, materials | Crazy-paving path curving across a lawn between hedges to a house gate |
 | `villacana-reference/photos/09-middle-pool-through-iron-gate.jpg` | ground | layout, materials, planting | Middle pool through an iron gate from a tiled lane |
 | `villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg` | ground | planting, facades | Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk |
 | `villacana-reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg` | ground | planting | Patio beside the middle pool: oleander bed, pollarded tree |
 | `villacana-reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg` | ground | planting | Patio beside the middle pool: oleander bed, two feathery trees |
 | `villacana-reference/web/easyjet-pool-probably-middle.jpg` | ground | planting | A small pool with bird-of-paradise, palm and pollarded tree **Note:** Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish. |
 | [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting | Middle pool garden: crazy-paving path curving beside the glass pool fence, hedge and a tree |
 
 ## South pool
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. _Used by: south_pool.json:south-pool-seaward-level._ |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | ground | layout, materials, planting | Through the gate: crazy-paving path curving between hedges to the south pool's glass fence and lawn |
+| [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | layout, planting, view | South pool lawn to the seafront: candelabra cactus, yuccas, green mesh fence and the sea |
 | [IMG_2645.jpg](../../public/photos-ref/IMG_2645.jpg) | ground | facades, layout, planting | South pool lawn and houses |
 | `villacana-reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. |
+| [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | layout, planting, view | Lawn from the houses to the seafront fence, yuccas and a lamp, the sea beyond |
+
+## Main pool
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | layout, signage, planting | COMUNIDAD VILLACANA sign beside an iron gate on a white pier, plumbago over the wall, pink paseo in front **Looks at:** Outer pier of the beach gateway with the COMUNIDAD VILLACANA sign. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | layout, planting, view | Big lawn with a marigold bed, the pink paseo and Barraka beyond a green fence |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, planting, facades | Terracotta path across the lawn to the white gate piers with an arched iron gate, green mesh fence alongside, Barraka behind **Looks at:** The beach gateway side-on from the inside landing, with the green mesh running on to Barraka. |
 
 ## Calle Elena
 
@@ -55,9 +69,19 @@ Trees, hedges, palms, climbers and beds.
 | [IMG_2365.jpg](../../public/photos-ref/IMG_2365.jpg) | roof | layout, planting, materials | Roof by Elena: looking down on the Elena north lane and its planted bed **Looks at:** The magnolia bed beside the Elena north lane. **Note:** Overhead view of the Elena north lane: width, edging kerb and the planted bed beside it. _Used by: elena_north.json:elena-north-magnolia-bed, elena_north.json:elena-north-tree-bed-1._ |
 | [IMG_2364.jpg](../../public/photos-ref/IMG_2364.jpg) | roof | facades, materials, planting | Roof by Elena: barrel-tile lean-to over a magnolia bed **Looks at:** The magnolia bed and the lean-to roof beside it. _Used by: elena_north.json:elena-north-magnolia-bed._ |
 | [IMG_2507.jpg](../../public/photos-ref/IMG_2507.jpg) | ground | layout, materials, planting | Elena 25 passage: street arch with potted schefflera **Looks at:** Street arch of the CALLE ELENA 25 passage. **Note:** Second covered passage on Elena, distinct from the 18-36 walkway (6265201UF1366N_part5). Floor flush with the lane. |
+| [IMG_2511.jpg](../../public/photos-ref/IMG_2511.jpg) | ground | layout, levels, planting | Lawn with steps up |
 | [IMG_2539.jpg](../../public/photos-ref/IMG_2539.jpg) | ground | layout, levels, planting | Elena north by the Cervantes junction: steps and tiled lane between planted beds |
+| [IMG_2683.jpg](../../public/photos-ref/IMG_2683.jpg) | ground | layout, planting, facades | Elena garden: lawn with clipped topiary trees, terracotta path, houses with timber balconies |
+| [IMG_2684.jpg](../../public/photos-ref/IMG_2684.jpg) | ground | layout, planting, facades | Same garden: topiary on the lawn, path towards the timber-balconied house |
 | [IMG_2687.jpg](../../public/photos-ref/IMG_2687.jpg) | ground | facades, layout, planting | Elena north: lane beside a house with window grilles, towards the lawns |
 | [IMG_2220.jpg](../../public/photos-ref/IMG_2220.jpg) | roof | layout, planting | From a roof looking down into the lane and lawns of Calle Elena south **Looks at:** The Elena south lane and lawns below the roof. **Note:** Overhead view of the lane layout. The pin is the roof, not the lane. |
+| [IMG_2458.jpg](../../public/photos-ref/IMG_2458.jpg) | ground | planting, layout | Planted bed with a tree in front of a brown garden door in a white wall |
+| [IMG_2460.jpg](../../public/photos-ref/IMG_2460.jpg) | ground | layout, planting | Elena lane between planted beds and garden walls, a magnolia and houses beyond |
+| [IMG_2515.jpg](../../public/photos-ref/IMG_2515.jpg) | ground | layout, planting | Elena lane between beds towards a gate |
+| [IMG_2516.jpg](../../public/photos-ref/IMG_2516.jpg) | ground | layout, planting | Elena lane between beds, closer to the gate |
+| [IMG_2682.jpg](../../public/photos-ref/IMG_2682.jpg) | ground | layout, planting | Elena: long terracotta lane between houses and planters, bougainvillea at the end |
+| [IMG_2685.jpg](../../public/photos-ref/IMG_2685.jpg) | ground | layout, planting | Path between the lawn and grilled windows towards the timber-balconied house |
+| [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting | Terracotta path between houses and a planted bed with pollarded trees, a hut at the end |
 | [IMG_2260.jpg](../../public/photos-ref/IMG_2260.jpg) | ground | layout, planting | Cervantes junction: white terraces and small lawns _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, door_sills.json:elena-lawn-door-sill._ |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades, materials | Cervantes junction: another view of the same terraces **Looks at:** Two brown garden doors in the white wall and the tiled approach between Elena south lawns. **Note:** 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
 | [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, cervantes_east_south_patios.json:cervantes-east-south-wall, cervantes_east_south_patios.json:cervantes-east-south-door, cervantes_east_south_patios.json:cervantes-east-south-pergola, cervantes_east_south_patios.json:cervantes-east-south-climber._ |
@@ -75,6 +99,21 @@ Trees, hedges, palms, climbers and beds.
 | [IMG_2329.jpg](../../public/photos-ref/IMG_2329.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn with a pollarded tree and white kerb _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
 | [IMG_2342.jpg](../../public/photos-ref/IMG_2342.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn corner with pollarded tree and drain **Note:** GPS ±14 m. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
 | [IMG_2356.jpg](../../public/photos-ref/IMG_2356.jpg) | ground | layout, planting | Cervantes east of Elena: lane beside a plumbago hedge **Looks at:** Plumbago bed edge and screened patio boundary on Cervantes east of Elena. **Note:** 26 October recheck: low rendered plumbago-bed edge is distinct from taller screened enclosure behind it. The source supports a local frontage, not all hidden wall heights. looksAt is approximate existing-model context only, not registered subject placement. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, elena_east_patios.json:elena-east-patios-cervantes-wall._ |
+| [IMG_2540.jpg](../../public/photos-ref/IMG_2540.jpg) | ground | layout, levels, materials, planting | Terracotta path with two steps up, slot drain and manhole covers, between a lawn and hedges, bougainvillea above |
+| [IMG_2442.jpg](../../public/photos-ref/IMG_2442.jpg) | ground | layout, materials, planting | Lane of octagonal terracotta tiles past candelabra cacti, a white post box and steps up to a patio |
+| [IMG_2443.jpg](../../public/photos-ref/IMG_2443.jpg) | ground | layout, materials, planting | Same lane as IMG_2442: octagonal tiles, candelabra cacti, steps up on the right |
+| [IMG_2544.jpg](../../public/photos-ref/IMG_2544.jpg) | ground | layout, planting, facades | Tiled lane between white houses with balconies and climbers, a covered passage at the end |
+| [IMG_2446.jpg](../../public/photos-ref/IMG_2446.jpg) | ground | layout, planting | Junction lawn with a lamp post, octagonal-tiled path and white houses with balconies |
+| [IMG_2447.jpg](../../public/photos-ref/IMG_2447.jpg) | ground | planting, layout | Lawn and garden with banana plant and a fruit tree in front of a patio |
+| [IMG_2453.jpg](../../public/photos-ref/IMG_2453.jpg) | ground | facades, planting | Square-tiled lane past a barred window and a lantana bed |
+| [IMG_2455.jpg](../../public/photos-ref/IMG_2455.jpg) | ground | planting, layout | Lane past a raised bed with bougainvillea and palms |
+| [IMG_2465.jpg](../../public/photos-ref/IMG_2465.jpg) | ground | planting, layout | Lawn with a round topiary tree and kerbed tiled path, houses behind |
+| [IMG_2466.jpg](../../public/photos-ref/IMG_2466.jpg) | ground | layout, planting | Tiled path along a lawn with topiary trees towards a palm |
+| [IMG_2467.jpg](../../public/photos-ref/IMG_2467.jpg) | ground | layout, planting | Lane between a white house and an oleander hedge |
+| [IMG_2514.jpg](../../public/photos-ref/IMG_2514.jpg) | ground | planting, materials | Planted bed with a tree and a slot drain |
+| [IMG_2543.jpg](../../public/photos-ref/IMG_2543.jpg) | ground | layout, planting | View through an arch down a tiled lane between white houses with climbers |
+| [IMG_2545.jpg](../../public/photos-ref/IMG_2545.jpg) | ground | layout, planting | Tiled lane with a raised white planter and a banana plant |
+| [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | ground | planting | Bougainvillea over a white wall above a clipped hedge and plumbago |
 | [IMG_2358.jpg](../../public/photos-ref/IMG_2358.jpg) | roof | layout, planting | Roof by Elena: looking down on Elena south and the junction lawns **Looks at:** The junction lawns south of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2367.jpg](../../public/photos-ref/IMG_2367.jpg) | roof | layout, planting | Roof by Elena: looking south over the Cervantes/Elena junction **Looks at:** The Cervantes/Elena junction. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2196.jpg](../../public/photos-ref/IMG_2196.jpg) | ground | facades, planting, levels | Elena junction: private brown door up tiled steps, bougainvillea **Looks at:** The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it. **Note:** Door-steps detail recheck 27 October: three white risers (lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door), the bottom step wider with rounded ends, the upper flight between the west hedge bed's rounded end and a low east planter set back from the bottom step. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, cervantes_garden_door.json:cervantes-junction-east-planter._ |
@@ -87,6 +126,7 @@ Trees, hedges, palms, climbers and beds.
 | --- | --- | --- | --- |
 | [IMG_2268.jpg](../../public/photos-ref/IMG_2268.jpg) | ground | layout, planting | Pintor Dalí: house-side footpath and parking looking south _Used by: dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
 | [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
+| [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | ground | layout, planting | Tiled path beside parking with a strelitzia |
 
 ## Calle Eva
 
@@ -97,7 +137,12 @@ Trees, hedges, palms, climbers and beds.
 | [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp **Looks at:** Eva lawn beside clipped round tree and lantern post. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn **Looks at:** Brown Eva frontage door with yellow-flowered shrub beside lawn. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
+| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | ground | layout, materials, planting | Eva: tiled path along a lawn |
 | [IMG_2549.jpg](../../public/photos-ref/IMG_2549.jpg) | ground | layout, materials, planting | Calle Eva: lane between a white wall and planted beds, towards the middle pool |
+| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | ground | layout, materials, planting | Long straight terracotta path between beds and houses |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, planting | Terracotta path across a lawn to a gate in a white wall, houses beyond |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting | Middle pool garden: crazy-paving path curving beside the glass pool fence, hedge and a tree |
+| [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | ground | planting | Eva: hedges and a tree beside the path |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo
 
@@ -107,22 +152,58 @@ Trees, hedges, palms, climbers and beds.
 | [IMG_2488.jpg](../../public/photos-ref/IMG_2488.jpg) | ground | layout, levels, materials, planting | Calle Guillermo from its seaward end, looking up the lane **Looks at:** Calle Guillermo from its seaward end. **Note:** Looks up Guillermo (heading 334, the street runs 328). Relevant to guillermo-descent-recheck: no steps in the lower lane; gradient not judged from this photo. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2559.jpg](../../public/photos-ref/IMG_2559.jpg) | ground | layout, materials, planting | Calle Patricia from its west end, looking along the lane **Looks at:** Calle Patricia looking east-north-east from its west end. |
+| [IMG_2565.jpg](../../public/photos-ref/IMG_2565.jpg) | ground | layout, planting, facades | Long tiled lane between white houses with window grilles and planters, a tiled-roof upper gallery at the end |
 | [IMG_2586.jpg](../../public/photos-ref/IMG_2586.jpg) | ground | facades, materials, planting | Courtyard with arch and patterned floor near Calle Jorge |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | layout, planting, view | Big lawn with a marigold bed, the pink paseo and Barraka beyond a green fence |
+| [IMG_2652.jpg](../../public/photos-ref/IMG_2652.jpg) | ground | layout, planting, facades | Small front lawn and patio of a house, oleanders in front |
+| [IMG_2673.jpg](../../public/photos-ref/IMG_2673.jpg) | ground | layout, materials, planting | Tiled path between raised planters with an inspection cover, garden lanes beyond |
 | [IMG_2675.jpg](../../public/photos-ref/IMG_2675.jpg) | ground | layout, materials, planting | Lane off Teodoro Rojo between planted walls |
 | [IMG_2238.jpg](../../public/photos-ref/IMG_2238.jpg) | ground | layout, planting | Tall hedges along a lane edge |
+| [IMG_2491.jpg](../../public/photos-ref/IMG_2491.jpg) | ground | layout, planting | Lane with a palm between white walls |
+| [IMG_2498.jpg](../../public/photos-ref/IMG_2498.jpg) | ground | layout, planting | Grass path between hedged gardens with pergolas |
+| [IMG_2499.jpg](../../public/photos-ref/IMG_2499.jpg) | ground | layout, planting | Grass path between hedged gardens, continued |
+| [IMG_2500.jpg](../../public/photos-ref/IMG_2500.jpg) | ground | layout, planting | Grass path between hedged gardens with pergolas, further along |
+| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | ground | layout, planting | Narrow terracotta lane between white garden walls with candelabra cactus, a pine at the end |
+| [IMG_2566.jpg](../../public/photos-ref/IMG_2566.jpg) | ground | layout, planting | Tiled courtyard with bougainvillea, arches and a gallery above |
+| [IMG_2571.jpg](../../public/photos-ref/IMG_2571.jpg) | ground | layout, planting | Garden beyond the passage: oleander bed with green mesh, lawn and terracotta path |
 | [IMG_2572.jpg](../../public/photos-ref/IMG_2572.jpg) | ground | layout, planting | Path between oleanders off Calle Silvia south |
+| [IMG_2573.jpg](../../public/photos-ref/IMG_2573.jpg) | ground | layout, planting | Lawn and oleanders in front of white houses with a balcony |
+| [IMG_2578.jpg](../../public/photos-ref/IMG_2578.jpg) | ground | layout, planting | Terracotta path along white houses to a lawn with lamp posts |
+| [IMG_2580.jpg](../../public/photos-ref/IMG_2580.jpg) | ground | layout, planting | Lane along a house with planters to a railing and steps down |
+| [IMG_2587.jpg](../../public/photos-ref/IMG_2587.jpg) | ground | materials, planting | Blue-inset terracotta tiles in a lane between raised planters |
+| [IMG_2593.jpg](../../public/photos-ref/IMG_2593.jpg) | ground | layout, planting | Narrow terracotta lane between a textured wall and planters, lamp posts and palms beyond |
+| [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | ground | layout, planting | Same lane further on, raised planters and a meter box |
+| [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | ground | layout, planting | Terracotta path across lawns between low white walls, a street sign plinth and candelabra cactus |
+| [IMG_2648.jpg](../../public/photos-ref/IMG_2648.jpg) | ground | facades, planting | Two-storey houses with balconies behind an oleander hedge and lawn |
+| [IMG_2649.jpg](../../public/photos-ref/IMG_2649.jpg) | ground | facades, planting | Houses with balconies, oleanders and green shade netting in front |
+| [IMG_2651.jpg](../../public/photos-ref/IMG_2651.jpg) | ground | layout, planting | Terracotta path between oleanders and green netting towards the houses |
+| [IMG_2653.jpg](../../public/photos-ref/IMG_2653.jpg) | ground | facades, planting | House front with balcony and bougainvillea behind oleanders and netting |
+| [IMG_2662.jpg](../../public/photos-ref/IMG_2662.jpg) | ground | layout, planting | Long terracotta lane between front doors and planters, a trolley parked |
+| [IMG_2663.jpg](../../public/photos-ref/IMG_2663.jpg) | ground | layout, planting | Lane corner with bougainvillea over a doorway and a gas meter box |
+| [IMG_2664.jpg](../../public/photos-ref/IMG_2664.jpg) | ground | layout, planting | Long terracotta lane between planted beds to an arched gate at the end |
+| [IMG_2674.jpg](../../public/photos-ref/IMG_2674.jpg) | ground | layout, planting | Arch with climbers into a covered passage with potted trees |
 | [IMG_2183.jpg](../../public/photos-ref/IMG_2183.jpg) | ground | planting | Lawn with a tall candelabra cactus and clipped shrubs |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | layout, planting | Lawn in front of Barraka with wicker seats, Villacana houses beyond |
 
 ## Barraka and the beach
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2616.jpg](../../public/photos-ref/IMG_2616.jpg) | ground | layout, materials, planting | Barraka boardwalk and BARRAKA BEACH sign planter |
+| [IMG_2627.jpg](../../public/photos-ref/IMG_2627.jpg) | ground | facades, planting | White single-storey house with a green dado behind the fence, stone path and a leaning tree, hotel above |
+| [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | ground | layout, planting | Barraka's front lawn with wicker seats and a rope barrier, pink paseo with a slot drain |
 | [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
 | [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | layout, planting, view | Big lawn with a marigold bed, the pink paseo and Barraka beyond a green fence |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, planting, facades | Terracotta path across the lawn to the white gate piers with an arched iron gate, green mesh fence alongside, Barraka behind **Looks at:** The beach gateway side-on from the inside landing, with the green mesh running on to Barraka. |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | layout, planting | Lawn in front of Barraka with wicker seats, Villacana houses beyond |
 
 ## The paseo
 
@@ -130,6 +211,18 @@ Trees, hedges, palms, climbers and beds.
 | --- | --- | --- | --- |
 | [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
 | [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
+| [IMG_2480.jpg](../../public/photos-ref/IMG_2480.jpg) | ground | layout, materials, planting | Pink paseo walk along the sandstone wall with a lamp and the beach verge, looking north-east |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | layout, signage, planting | COMUNIDAD VILLACANA sign beside an iron gate on a white pier, plumbago over the wall, pink paseo in front **Looks at:** Outer pier of the beach gateway with the COMUNIDAD VILLACANA sign. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, planting, facades | Terracotta path across the lawn to the white gate piers with an arched iron gate, green mesh fence alongside, Barraka behind **Looks at:** The beach gateway side-on from the inside landing, with the green mesh running on to Barraka. |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | ground | layout, materials, planting | Arch with bougainvillea, pebble flower mat and a covered passage to an arched grille gate |
+| [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | layout, planting, view | Lawn from the houses to the seafront fence, yuccas and a lamp, the sea beyond |
+| [IMG_2487.jpg](../../public/photos-ref/IMG_2487.jpg) | ground | layout, planting | Path beside a house with lavender beds |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | layout, planting | Lawn in front of Barraka with wicker seats, Villacana houses beyond |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | layout, planting, view | Big lawn with a marigold bed, the pink paseo and Barraka beyond a green fence |
+| [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | layout, planting, view | South pool lawn to the seafront: candelabra cactus, yuccas, green mesh fence and the sea |
+| [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | ground | layout, planting | Barraka's front lawn with wicker seats and a rope barrier, pink paseo with a slot drain |
 
 ## The whole resort
 

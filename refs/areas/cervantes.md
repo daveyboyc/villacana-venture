@@ -20,6 +20,7 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 - Laser survey ground 2026-10-24: Cervantes now falls with the survey (+1.46 to +0.27 m). The Elena steps and ramp keep the photo-read 0.5 m; the survey measures 0.21-0.22 m there, still open (docs/LEVELS.md).
 - 2026-10-26 available-source inventory: 51 distinct full sources inspected, 30 component observations, schematic plan/sections and pinned uncalibrated game comparisons. Three shared-route treads remain distinct from two private-door treads plus raised sill; IMG_2288 CALLE MIGUEL has a flat ceiling/far arch and remains a separate unlocated source group. World edge registration, hidden joins, eastern terminal and measured levels remain open; this inventory grants no placement approval.
 - 27 October garden-door detail (task cervantes-door-steps-detail): full IMG_2196/2287/2327 show three white risers, not two (lane, two red treads of two small quarry-tile rows, threshold tread at the door). Built as three .15 m risers to the unchanged .45 m rise; bottom step 1.2 m with rounded ends, flush with the west bed front, which now runs to the flight; new low east planter beside the upper treads; .72 m door recessed in a pilaster frame under a 1.1 m coping. Wall origin/line and patio unchanged. Open: the .65 m lane-edge wall east of the planter stands .32 m further out than the planter front in the photos. See docs/reviews/cervantes-door-steps-detail.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2541 shows a CALLE MIGUEL plaque in a covered walkway with a lantern, a bench and an arch at the far end. IMG_2442/2443 near the east end show octagonal tiles (GPS ±13 m; which lane it is stays open). IMG_2513 shows the curved-coping garden door at the Elena junction from the lane.
 
 ## Read first
 
@@ -30,8 +31,8 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 
 ## Coverage
 
-Layout: 25, Levels and slopes: 12, Facades and roofs: 9, Materials: 2, Planting: 12, Signs: 2, Views: 3
-29 reviewed, 0 suggested only by camera position.
+Layout: 52, Levels and slopes: 15, Facades and roofs: 13, Materials: 14, Planting: 27, Signs: 7, Views: 3
+60 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -254,10 +255,41 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Looks at:** The steps beside the Cervantes ramp. **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2356.jpg](../../public/photos-ref/IMG_2356.jpg) | ground | layout, planting | Cervantes east of Elena: lane beside a plumbago hedge **Looks at:** Plumbago bed edge and screened patio boundary on Cervantes east of Elena. **Note:** 26 October recheck: low rendered plumbago-bed edge is distinct from taller screened enclosure behind it. The source supports a local frontage, not all hidden wall heights. looksAt is approximate existing-model context only, not registered subject placement. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, elena_east_patios.json:elena-east-patios-cervantes-wall._ |
 | [IMG_2355.jpg](../../public/photos-ref/IMG_2355.jpg) | ground | levels | Cervantes/Elena steps from the junction **Looks at:** The steps beside the Cervantes ramp. **Compass:** the subject is 93° from the phone heading; trust looksAt, not the heading. _Used by: cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
+| [IMG_2540.jpg](../../public/photos-ref/IMG_2540.jpg) | ground | layout, levels, materials, planting | Terracotta path with two steps up, slot drain and manhole covers, between a lawn and hedges, bougainvillea above |
+| [IMG_2442.jpg](../../public/photos-ref/IMG_2442.jpg) | ground | layout, materials, planting | Lane of octagonal terracotta tiles past candelabra cacti, a white post box and steps up to a patio |
+| [IMG_2443.jpg](../../public/photos-ref/IMG_2443.jpg) | ground | layout, materials, planting | Same lane as IMG_2442: octagonal tiles, candelabra cacti, steps up on the right |
+| [IMG_2451.jpg](../../public/photos-ref/IMG_2451.jpg) | ground | layout, signage, materials | Covered passage with plaque CALLE MIGUEL, patterned floor, pot plants and an arch at the far end |
+| [IMG_2452.jpg](../../public/photos-ref/IMG_2452.jpg) | ground | layout, signage, materials | Second shot of the CALLE MIGUEL covered passage |
+| [IMG_2541.jpg](../../public/photos-ref/IMG_2541.jpg) | ground | layout, signage, materials | Covered walkway with CALLE MIGUEL plaque, lantern, bench and arch at the far end |
+| [IMG_2544.jpg](../../public/photos-ref/IMG_2544.jpg) | ground | layout, planting, facades | Tiled lane between white houses with balconies and climbers, a covered passage at the end |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
+| [IMG_2444.jpg](../../public/photos-ref/IMG_2444.jpg) | ground | layout, materials | Octagonal-tiled lane along a white house wall and hedge towards the car park |
+| [IMG_2446.jpg](../../public/photos-ref/IMG_2446.jpg) | ground | layout, planting | Junction lawn with a lamp post, octagonal-tiled path and white houses with balconies |
+| [IMG_2447.jpg](../../public/photos-ref/IMG_2447.jpg) | ground | planting, layout | Lawn and garden with banana plant and a fruit tree in front of a patio |
+| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | ground | signage, layout | Sign CALLE DE MIGUEL on a white wall above a square-tiled lane |
+| [IMG_2450.jpg](../../public/photos-ref/IMG_2450.jpg) | ground | layout, facades | Square-tiled lane beside an arched porch with bougainvillea |
+| [IMG_2453.jpg](../../public/photos-ref/IMG_2453.jpg) | ground | facades, planting | Square-tiled lane past a barred window and a lantana bed |
+| [IMG_2454.jpg](../../public/photos-ref/IMG_2454.jpg) | ground | layout, materials | Square-tiled lane with grey margins between hedges |
+| [IMG_2455.jpg](../../public/photos-ref/IMG_2455.jpg) | ground | planting, layout | Lane past a raised bed with bougainvillea and palms |
+| [IMG_2463.jpg](../../public/photos-ref/IMG_2463.jpg) | ground | layout, levels | Lane with steps up to patios between clipped hedges |
+| [IMG_2464.jpg](../../public/photos-ref/IMG_2464.jpg) | ground | layout, levels | Lane with short flights of steps up to patios, lantern post, lawn |
+| [IMG_2465.jpg](../../public/photos-ref/IMG_2465.jpg) | ground | planting, layout | Lawn with a round topiary tree and kerbed tiled path, houses behind |
+| [IMG_2466.jpg](../../public/photos-ref/IMG_2466.jpg) | ground | layout, planting | Tiled path along a lawn with topiary trees towards a palm |
+| [IMG_2467.jpg](../../public/photos-ref/IMG_2467.jpg) | ground | layout, planting | Lane between a white house and an oleander hedge |
+| [IMG_2468.jpg](../../public/photos-ref/IMG_2468.jpg) | ground | layout, facades | Lane past arched porches with planting |
+| [IMG_2469.jpg](../../public/photos-ref/IMG_2469.jpg) | ground | signage, layout | Covered passage plaque CALLE MIGUEL 1 19 with potted plants |
+| [IMG_2470.jpg](../../public/photos-ref/IMG_2470.jpg) | ground | layout, materials | Covered passage looking through to an arch, patterned floor, doors both sides |
+| [IMG_2514.jpg](../../public/photos-ref/IMG_2514.jpg) | ground | planting, materials | Planted bed with a tree and a slot drain |
+| [IMG_2542.jpg](../../public/photos-ref/IMG_2542.jpg) | ground | layout, materials | Tiled lane with a pebble mat, bench and hedged planters |
+| [IMG_2543.jpg](../../public/photos-ref/IMG_2543.jpg) | ground | layout, planting | View through an arch down a tiled lane between white houses with climbers |
+| [IMG_2545.jpg](../../public/photos-ref/IMG_2545.jpg) | ground | layout, planting | Tiled lane with a raised white planter and a banana plant |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
+| [IMG_2445.jpg](../../public/photos-ref/IMG_2445.jpg) | ground | materials | Close-up of octagonal terracotta tiles with small square insets and the grey margin |
+| [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | ground | planting | Bougainvillea over a white wall above a clipped hedge and plumbago |
+| [IMG_2512.jpg](../../public/photos-ref/IMG_2512.jpg) | ground | layout | Cervantes lane between houses |
+| [IMG_2513.jpg](../../public/photos-ref/IMG_2513.jpg) | ground | layout | Cervantes lane (phone altitude high, likely on steps) |
 | [IMG_2358.jpg](../../public/photos-ref/IMG_2358.jpg) | roof | layout, planting | Roof by Elena: looking down on Elena south and the junction lawns **Looks at:** The junction lawns south of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2367.jpg](../../public/photos-ref/IMG_2367.jpg) | roof | layout, planting | Roof by Elena: looking south over the Cervantes/Elena junction **Looks at:** The Cervantes/Elena junction. **Note:** Roof shot: the pin is the roof. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2196.jpg](../../public/photos-ref/IMG_2196.jpg) | ground | facades, planting, levels | Elena junction: private brown door up tiled steps, bougainvillea **Looks at:** The brown garden door, its pilaster frame and curved coping, and the three-riser flight up to it. **Note:** Door-steps detail recheck 27 October: three white risers (lane, two red treads of two small quarry-tile rows each, then a threshold tread at the door), the bottom step wider with rounded ends, the upper flight between the west hedge bed's rounded end and a low east planter set back from the bottom step. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, cervantes_garden_door.json:cervantes-junction-east-planter._ |

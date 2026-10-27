@@ -17,6 +17,7 @@ The seafront promenade between the resort's seaward walls and the beach.
 - 27 October batch: IMG_2481-2483 (52 mm) look north-east along the west paseo to Barraka: the curving pink stamped walk, a broad dry earth verge with a timber edge and a row of young agaves on the seaward side, the sandstone wall, mesh fence and slim white lamps on the land side.
 - 27 October material pass: the existing west retaining-wall frontage gains shallow transverse board-stamp marks, fine grain and weathered dusty-red variation (IMG_2481-2483; close material source IMG_2351). Original path/edge/wall positions, widths, levels and collision remain unchanged. Stamp pitch and camera alignment are estimates; eastern surfaces retain the prior finish. Dry verge and agave positions remain a separate unbuilt placement task. See docs/reviews/paseo-stamped-surface/.
 - 27 Oct: paseo levels from the laser survey between the foot of Calle Guillermo and Barraka (37 of 38 samples within 0.25 m): -0.3 at the lane's foot, a 12% ramp to lawn level along the railings, -1.1 past Barraka. West of turned x -110 it keeps the photo-read level; the survey puts it about 1 m higher (open).
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2632 at the east end of the sandstone wall shows the paseo level with the wall foot and the wall about 1–1.2 m high by eye, with green mesh and shade netting on top. That supports about 1 m, not the 3 m the old model had (paseo-wall-east-end answered; not measured). IMG_2484/2604: from the gateway a solid green railing on a sandstone base runs along the paseo to Barraka. The beach side is a worn grass verge with a timber edge, rope posts and wicker seats in front of Barraka. IMG_2637/2638: at the west end the wall and fence reach a gravel service access.
 
 ## Read first
 
@@ -27,8 +28,8 @@ The seafront promenade between the resort's seaward walls and the beach.
 
 ## Coverage
 
-Layout: 17, Levels and slopes: 8, Facades and roofs: 2, Materials: 5, Planting: 2, Views: 9
-20 reviewed, 0 suggested only by camera position.
+Layout: 53, Levels and slopes: 12, Facades and roofs: 8, Materials: 20, Planting: 14, Signs: 2, Views: 14
+57 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -139,13 +140,50 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. _Used by: area:paseo._ |
 | [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
 | [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
+| [IMG_2480.jpg](../../public/photos-ref/IMG_2480.jpg) | ground | layout, materials, planting | Pink paseo walk along the sandstone wall with a lamp and the beach verge, looking north-east |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, levels, materials | Paseo ramp: green rigid mesh on top of the sandstone wall, red-and-white crossing marks, the hotel and Barraka beyond **Looks at:** The paseo at the foot of Calle Guillermo looking to the gateway, the green fence and Barraka. |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | layout, signage, planting | COMUNIDAD VILLACANA sign beside an iron gate on a white pier, plumbago over the wall, pink paseo in front **Looks at:** Outer pier of the beach gateway with the COMUNIDAD VILLACANA sign. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, planting, facades | Terracotta path across the lawn to the white gate piers with an arched iron gate, green mesh fence alongside, Barraka behind **Looks at:** The beach gateway side-on from the inside landing, with the green mesh running on to Barraka. |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | ground | layout, materials, planting | Arch with bougainvillea, pebble flower mat and a covered passage to an arched grille gate |
+| [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | layout, planting, view | Lawn from the houses to the seafront fence, yuccas and a lamp, the sea beyond |
+| [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials | Tiled path between white walls and a lawn |
+| [IMG_2487.jpg](../../public/photos-ref/IMG_2487.jpg) | ground | layout, planting | Path beside a house with lavender beds |
+| [IMG_2603.jpg](../../public/photos-ref/IMG_2603.jpg) | ground | layout, view | Pink path across the lawn from the seafront towards the main pool clubhouse |
+| [IMG_2604.jpg](../../public/photos-ref/IMG_2604.jpg) | ground | layout, materials | Pink paseo along the green fence on a sandstone base, grass verge, Barraka ahead **Looks at:** The grass verge on the beach side of the paseo, from the gateway to Barraka. |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | layout, planting | Lawn in front of Barraka with wicker seats, Villacana houses beyond |
+| [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials | Paseo between the green railing and the Barraka building, sandbags along the wall |
+| [IMG_2612.jpg](../../public/photos-ref/IMG_2612.jpg) | ground | layout, signage | Pink paseo past a white wall end, sandstone-walled bed, lamp and a shop sign, beach beyond |
+| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, levels | Service lane between white walls up from the paseo, bollard, grating and parked bikes |
+| [IMG_2615.jpg](../../public/photos-ref/IMG_2615.jpg) | ground | layout, facades | Barraka's side wall with a door, stacked loungers on the access to the beach |
+| [IMG_2625.jpg](../../public/photos-ref/IMG_2625.jpg) | ground | layout, facades | Paseo along the chain-link fence on a sandstone wall, the disused pavilion with its long flat roof |
+| [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | ground | layout, materials | Paseo past Barraka's glazed front and sandbags, the curved green railing on a sandstone wall ahead |
+| [IMG_2632.jpg](../../public/photos-ref/IMG_2632.jpg) | ground | layout, materials | Pink paseo west along the sandstone wall and green mesh fence, beach to the left **Looks at:** The sandstone wall at the east end of the paseo, about 1 m high by eye. |
+| [IMG_2636.jpg](../../public/photos-ref/IMG_2636.jpg) | ground | layout, materials | Pink paseo west along green mesh with shade netting on the sandstone wall |
+| [IMG_2637.jpg](../../public/photos-ref/IMG_2637.jpg) | ground | layout, materials | West end of the paseo: the fence on the sandstone wall reaches a gravel access with a van |
+| [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, materials | Close-up of the sandstone wall with green rigid mesh at the west end of the paseo |
+| [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | ground | layout, materials | Covered passage with a pebble mat, looking through a run of arches to a lawn |
+| [IMG_2614.jpg](../../public/photos-ref/IMG_2614.jpg) | ground | layout | Concrete access from the paseo down to the beach beside Barraka, stacked loungers and potted plants |
+| [IMG_2628.jpg](../../public/photos-ref/IMG_2628.jpg) | ground | layout | Pink paseo east between a fenced lawn and the beach, edged with timber |
+| [IMG_2633.jpg](../../public/photos-ref/IMG_2633.jpg) | ground | layout | Pink paseo curving west beside the beach, agave in the sand |
+| [IMG_2634.jpg](../../public/photos-ref/IMG_2634.jpg) | ground | layout | Pink paseo curving west with the low sandstone wall and fence on the right |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. _Used by: beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2297.jpg](../../public/photos-ref/IMG_2297.jpg) | ground | layout | Dalí seaward end: narrow pedestrian gate _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | layout, planting, view | Big lawn with a marigold bed, the pink paseo and Barraka beyond a green fence |
+| [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | layout, planting, view | South pool lawn to the seafront: candelabra cactus, yuccas, green mesh fence and the sea |
+| [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | ground | layout, levels | Terracotta ramp down between white walls with a raised hedge bed, green rigid mesh fence at the bottom |
+| [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | ground | layout, levels | Bottom of the ramp: paving widens beside a sloping white wall, hedge and green mesh fence on the seafront |
+| [IMG_2618.jpg](../../public/photos-ref/IMG_2618.jpg) | ground | layout, facades | Barraka's beach side from the sand: white two-storey block with a brown band, pink boardwalk up to the paseo |
+| [IMG_2621.jpg](../../public/photos-ref/IMG_2621.jpg) | ground | layout, view | Pink paseo running east between the sand and a chain-link fence |
+| [IMG_2622.jpg](../../public/photos-ref/IMG_2622.jpg) | ground | layout, facades | Pink paseo east past a small white building behind a chain-link fence on a sandstone wall |
 | [IMG_2629.jpg](../../public/photos-ref/IMG_2629.jpg) | ground | layout, view | Beach east of Barraka from the paseo edge |
+| [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | ground | layout, planting | Barraka's front lawn with wicker seats and a rope barrier, pink paseo with a slot drain |
+| [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | ground | facades, materials | Villacana houses beyond green rigid mesh on the sandstone wall and a hedge |
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |

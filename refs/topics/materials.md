@@ -26,7 +26,13 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | [IMG_2195.jpg](../../public/photos-ref/IMG_2195.jpg) | ground | materials | Middle pool close up: cream deck, ladders, life rings _Used by: middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola._ |
 | [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up _Used by: middle_pool.json:middle-pool-west-planter._ |
 | `villacana-reference/photos/02-pool-from-upper-floor-2020-12.png` | upper-floor | layout, facades, materials, view | Middle pool from an upper floor, December 2020 **Note:** Shows a glass safety fence; Dave decided to skip it. |
+| [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | ground | layout, planting, materials | Tiled lane through an arch with a lantern, monstera planters on both sides |
+| [IMG_2680.jpg](../../public/photos-ref/IMG_2680.jpg) | ground | layout, planting, materials | Crazy-paving path curving across a lawn between hedges to a house gate |
 | `villacana-reference/photos/09-middle-pool-through-iron-gate.jpg` | ground | layout, materials, planting | Middle pool through an iron gate from a tiled lane |
+| [IMG_2505.jpg](../../public/photos-ref/IMG_2505.jpg) | ground | layout, materials | Middle pool glass fence beside a crazy-paving path |
+| [IMG_2547.jpg](../../public/photos-ref/IMG_2547.jpg) | ground | layout, materials | Covered walkway with front doors, potted trees, lantern and tiled floor |
+| [IMG_2548.jpg](../../public/photos-ref/IMG_2548.jpg) | ground | layout, materials | Same covered walkway as IMG_2547 |
+| [IMG_2681.jpg](../../public/photos-ref/IMG_2681.jpg) | ground | layout, materials | Crazy-paving path to an open iron gate in a hedge |
 | `villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg` | ground | layout, materials | Terracotta-tiled lane to an arched white gateway into the middle pool courtyard |
 | [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 
@@ -34,6 +40,9 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | ground | layout, materials, planting | Through the gate: crazy-paving path curving between hedges to the south pool's glass fence and lawn |
+| [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | ground | facades, materials | Villacana houses beyond green rigid mesh on the sandstone wall and a hedge |
+| [IMG_2641.jpg](../../public/photos-ref/IMG_2641.jpg) | ground | layout, materials | Covered passage ending at an arched iron gate onto crazy paving and the south pool garden |
 | `villacana-reference/web/south-pool-03-lawn-from-north-west.jpg` | ground | layout, materials | South lawn from the north-west: curved low white wall, bollard lights, loungers **Note:** Found on the web; has people in it. Reference only, never publish. |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
 
@@ -42,6 +51,8 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, levels, materials | Paseo ramp: green rigid mesh on top of the sandstone wall, red-and-white crossing marks, the hotel and Barraka beyond **Looks at:** The paseo at the foot of Calle Guillermo looking to the gateway, the green fence and Barraka. |
+| [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | ground | layout, materials | Barraka terrace with a curved sandstone wall and green railing, lawn beyond |
 
 ## Calle Elena
 
@@ -65,7 +76,15 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | [IMG_2507.jpg](../../public/photos-ref/IMG_2507.jpg) | ground | layout, materials, planting | Elena 25 passage: street arch with potted schefflera **Looks at:** Street arch of the CALLE ELENA 25 passage. **Note:** Second covered passage on Elena, distinct from the 18-36 walkway (6265201UF1366N_part5). Floor flush with the lane. |
 | [IMG_2508.jpg](../../public/photos-ref/IMG_2508.jpg) | ground | layout, signage, materials | Covered passage signed CALLE ELENA 25, looking through to a garden gate **Looks at:** CALLE ELENA 25 covered passage into block 6265601UF1366N_part1. **Note:** Not in data/passages.json; the registry draws this block as one solid 2-storey part. Compass heading inside a covered passage may be off; direction into the block is from the pin against the Elena south lane, the far end is unregistered. |
 | [IMG_2519.jpg](../../public/photos-ref/IMG_2519.jpg) | ground | layout, levels, materials | Elena covered walkway looking west to the arch and the 36/34 gates **Looks at:** Calle Elena covered walkway towards its west arch. **Note:** Both-end evidence for the walkway with IMG_2203 (opposite direction) and IMG_2202. |
+| [IMG_2537.jpg](../../public/photos-ref/IMG_2537.jpg) | ground | layout, materials, facades | Covered entrance hall at Elena 22: terracotta tiles with blue insets, doormat, brown doors (ground level despite phone altitude) |
+| [IMG_2538.jpg](../../public/photos-ref/IMG_2538.jpg) | ground | layout, materials, signage | Covered entrance with CALLE ELENA plaque looking out through an arch to a courtyard with a tree and bougainvillea (ground level despite phone altitude) |
 | [IMG_2256.jpg](../../public/photos-ref/IMG_2256.jpg) | ground | layout, materials | Covered passage opening through an arch to a garden gate |
+| [IMG_2459.jpg](../../public/photos-ref/IMG_2459.jpg) | ground | levels, materials | Two tiled steps beside the red ribbed ramp into the Elena walkway |
+| [IMG_2520.jpg](../../public/photos-ref/IMG_2520.jpg) | ground | layout, materials | Elena walkway towards the arch over a pebble mat |
+| [IMG_2521.jpg](../../public/photos-ref/IMG_2521.jpg) | ground | layout, materials | Elena walkway under the arch, pebble mat |
+| [IMG_2690.jpg](../../public/photos-ref/IMG_2690.jpg) | ground | layout, materials | Covered passage with front doors, a doormat and an arch onto a garden |
+| [IMG_2457.jpg](../../public/photos-ref/IMG_2457.jpg) | ground | materials | Pebble mosaic mat in the Elena walkway floor, terracotta with blue insets |
+| [IMG_2523.jpg](../../public/photos-ref/IMG_2523.jpg) | ground | materials | Tiled doormat with blue tiles at a front door |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades, materials | Cervantes junction: another view of the same terraces **Looks at:** Two brown garden doors in the white wall and the tiled approach between Elena south lawns. **Note:** 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
 
 ## Calle Miguel de Cervantes
@@ -74,6 +93,18 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | --- | --- | --- | --- |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades, materials | Cervantes junction: another view of the same terraces **Looks at:** Two brown garden doors in the white wall and the tiled approach between Elena south lawns. **Note:** 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
 | [IMG_2274.jpg](../../public/photos-ref/IMG_2274.jpg) | ground | planting, materials | Cervantes: planting and paving detail _Used by: frontage_divisions.json:cervantes-west-planting, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
+| [IMG_2540.jpg](../../public/photos-ref/IMG_2540.jpg) | ground | layout, levels, materials, planting | Terracotta path with two steps up, slot drain and manhole covers, between a lawn and hedges, bougainvillea above |
+| [IMG_2442.jpg](../../public/photos-ref/IMG_2442.jpg) | ground | layout, materials, planting | Lane of octagonal terracotta tiles past candelabra cacti, a white post box and steps up to a patio |
+| [IMG_2443.jpg](../../public/photos-ref/IMG_2443.jpg) | ground | layout, materials, planting | Same lane as IMG_2442: octagonal tiles, candelabra cacti, steps up on the right |
+| [IMG_2451.jpg](../../public/photos-ref/IMG_2451.jpg) | ground | layout, signage, materials | Covered passage with plaque CALLE MIGUEL, patterned floor, pot plants and an arch at the far end |
+| [IMG_2452.jpg](../../public/photos-ref/IMG_2452.jpg) | ground | layout, signage, materials | Second shot of the CALLE MIGUEL covered passage |
+| [IMG_2541.jpg](../../public/photos-ref/IMG_2541.jpg) | ground | layout, signage, materials | Covered walkway with CALLE MIGUEL plaque, lantern, bench and arch at the far end |
+| [IMG_2444.jpg](../../public/photos-ref/IMG_2444.jpg) | ground | layout, materials | Octagonal-tiled lane along a white house wall and hedge towards the car park |
+| [IMG_2454.jpg](../../public/photos-ref/IMG_2454.jpg) | ground | layout, materials | Square-tiled lane with grey margins between hedges |
+| [IMG_2470.jpg](../../public/photos-ref/IMG_2470.jpg) | ground | layout, materials | Covered passage looking through to an arch, patterned floor, doors both sides |
+| [IMG_2514.jpg](../../public/photos-ref/IMG_2514.jpg) | ground | planting, materials | Planted bed with a tree and a slot drain |
+| [IMG_2542.jpg](../../public/photos-ref/IMG_2542.jpg) | ground | layout, materials | Tiled lane with a pebble mat, bench and hedged planters |
+| [IMG_2445.jpg](../../public/photos-ref/IMG_2445.jpg) | ground | materials | Close-up of octagonal terracotta tiles with small square insets and the grey margin |
 
 ## Calle Pintor Dalí
 
@@ -95,9 +126,17 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
+| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | ground | layout, materials, planting | Eva: tiled path along a lawn |
 | [IMG_2549.jpg](../../public/photos-ref/IMG_2549.jpg) | ground | layout, materials, planting | Calle Eva: lane between a white wall and planted beds, towards the middle pool |
+| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | ground | layout, materials, planting | Long straight terracotta path between beds and houses |
+| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage | Covered entrance with a street plaque looking through an arch, potted plants (ground level despite phone altitude) |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
+| [IMG_2550.jpg](../../public/photos-ref/IMG_2550.jpg) | ground | facades, materials | Arched wooden double gate in a white wall, terracotta paving in front |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials | Terracotta path curving between a hedge and a kerb towards the car park |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials | Curving terracotta path with white kerbs, car park and hedged wall beyond, a lamp post |
+| [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | ground | layout, materials | Terracotta path between houses and a grass strip along the car park lane |
+| [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials | Terracotta path to a gate between beds, car park on the right |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo
 
@@ -110,8 +149,11 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | [IMG_2235.jpg](../../public/photos-ref/IMG_2235.jpg) | ground | materials, layout | Lane paved in octagonal tiles between a white wall and lawn **Note:** Octagonal paving here, not square tiles. _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2494.jpg](../../public/photos-ref/IMG_2494.jpg) | ground | layout, facades, materials | Narrow lane by Teodoro Rojo: barred windows, planter, drains **Looks at:** Narrow lane north of Teodoro Rojo. **Note:** Near-duplicate viewpoint of IMG_2241. |
+| [IMG_2496.jpg](../../public/photos-ref/IMG_2496.jpg) | ground | signage, levels, materials | CALLE TEODORO 2–16 plaque above tiled steps beside a red ribbed ramp |
 | [IMG_2559.jpg](../../public/photos-ref/IMG_2559.jpg) | ground | layout, materials, planting | Calle Patricia from its west end, looking along the lane **Looks at:** Calle Patricia looking east-north-east from its west end. |
+| [IMG_2570.jpg](../../public/photos-ref/IMG_2570.jpg) | ground | layout, levels, materials | Passage exit: red ribbed ramp down to a green mesh screen in front of the gardens |
 | [IMG_2586.jpg](../../public/photos-ref/IMG_2586.jpg) | ground | facades, materials, planting | Courtyard with arch and patterned floor near Calle Jorge |
+| [IMG_2673.jpg](../../public/photos-ref/IMG_2673.jpg) | ground | layout, materials, planting | Tiled path between raised planters with an inspection cover, garden lanes beyond |
 | [IMG_2675.jpg](../../public/photos-ref/IMG_2675.jpg) | ground | layout, materials, planting | Lane off Teodoro Rojo between planted walls |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
@@ -119,12 +161,40 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | [IMG_2230.jpg](../../public/photos-ref/IMG_2230.jpg) | ground | layout, materials | Tiled lane beside hedges and a patio wall |
 | [IMG_2240.jpg](../../public/photos-ref/IMG_2240.jpg) | ground | layout, materials | Square-tiled lane between a hedge and a white wall |
 | [IMG_2242.jpg](../../public/photos-ref/IMG_2242.jpg) | ground | layout, materials | Covered entrance with tiled step and patterned floor |
+| [IMG_2489.jpg](../../public/photos-ref/IMG_2489.jpg) | ground | layout, materials | Octagonal-tiled lane with a tiled bench |
+| [IMG_2493.jpg](../../public/photos-ref/IMG_2493.jpg) | ground | layout, materials | Lane with slot drains between white walls |
+| [IMG_2501.jpg](../../public/photos-ref/IMG_2501.jpg) | ground | layout, materials | Small tiled courtyard between houses |
+| [IMG_2562.jpg](../../public/photos-ref/IMG_2562.jpg) | ground | layout, materials | Through the arch: a run of covered passages and arches in line |
+| [IMG_2563.jpg](../../public/photos-ref/IMG_2563.jpg) | ground | layout, materials | Covered passage with front doors, pebble mat, lantern and an arch to the next lane |
+| [IMG_2568.jpg](../../public/photos-ref/IMG_2568.jpg) | ground | layout, materials | Tiled lane with a slot drain to an arch under a vine, green mesh screen beyond |
+| [IMG_2569.jpg](../../public/photos-ref/IMG_2569.jpg) | ground | layout, materials | Covered passage with pebble mat to an arch with green mesh screening a lawn |
+| [IMG_2574.jpg](../../public/photos-ref/IMG_2574.jpg) | ground | levels, materials | Three tiled steps beside a red ribbed ramp at a covered entrance |
+| [IMG_2575.jpg](../../public/photos-ref/IMG_2575.jpg) | ground | levels, materials | Same steps and ramp from the lane, with a raised planter |
+| [IMG_2579.jpg](../../public/photos-ref/IMG_2579.jpg) | ground | layout, materials | Terracotta path with manhole covers between hedges towards a lawn |
+| [IMG_2583.jpg](../../public/photos-ref/IMG_2583.jpg) | ground | layout, materials | Through an arch into a tiled lane with a slot drain, palm and climbers |
+| [IMG_2584.jpg](../../public/photos-ref/IMG_2584.jpg) | ground | layout, materials | Covered passage with planters to a fan-light grille gate opening on a lawn |
+| [IMG_2585.jpg](../../public/photos-ref/IMG_2585.jpg) | ground | layout, materials | Covered passage with front doors, lanterns and an arch at the end |
+| [IMG_2587.jpg](../../public/photos-ref/IMG_2587.jpg) | ground | materials, planting | Blue-inset terracotta tiles in a lane between raised planters |
+| [IMG_2588.jpg](../../public/photos-ref/IMG_2588.jpg) | ground | layout, materials | Tiled courtyard corner with an arcade and potted plants |
+| [IMG_2591.jpg](../../public/photos-ref/IMG_2591.jpg) | ground | layout, materials | Covered passage with front doors and a doormat, opening onto a white wall |
+| [IMG_2657.jpg](../../public/photos-ref/IMG_2657.jpg) | ground | levels, materials | Red ribbed ramp beside three tiled steps in the covered passage |
 | [IMG_2658.jpg](../../public/photos-ref/IMG_2658.jpg) | ground | levels, materials | Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp |
+| [IMG_2667.jpg](../../public/photos-ref/IMG_2667.jpg) | ground | layout, materials | Arcade corner with potted trees, front door and a tiled floor |
+| [IMG_2668.jpg](../../public/photos-ref/IMG_2668.jpg) | ground | layout, materials | Covered passage with potted trees to an arch onto a garden |
+| [IMG_2672.jpg](../../public/photos-ref/IMG_2672.jpg) | ground | layout, materials | Covered passage with a pebble mat to an arch onto a planted garden path |
+| [IMG_2676.jpg](../../public/photos-ref/IMG_2676.jpg) | ground | layout, materials | Terracotta path between a hedge and a lawn |
 | [IMG_2231.jpg](../../public/photos-ref/IMG_2231.jpg) | ground | materials | White tiled bench beside the lane |
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
+| [IMG_2564.jpg](../../public/photos-ref/IMG_2564.jpg) | ground | materials | Pebble flower mosaic set in the blue-inset tiled lane, slot drain beyond |
+| [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | ground | materials | Tiled bench under a decorative tile, manhole covers in the terracotta path |
+| [IMG_2654.jpg](../../public/photos-ref/IMG_2654.jpg) | ground | materials | Terracotta path between netting and oleanders meeting a cross path |
+| [IMG_2661.jpg](../../public/photos-ref/IMG_2661.jpg) | ground | materials | Corner of a terracotta lane with a raised planter and inspection covers |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
+| [IMG_2632.jpg](../../public/photos-ref/IMG_2632.jpg) | ground | layout, materials | Pink paseo west along the sandstone wall and green mesh fence, beach to the left **Looks at:** The sandstone wall at the east end of the paseo, about 1 m high by eye. |
 
 ## Barraka and the beach
 
@@ -139,12 +209,20 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage _Used by: area:beach._ |
 | [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline _Used by: area:beach._ |
 | [IMG_2616.jpg](../../public/photos-ref/IMG_2616.jpg) | ground | layout, materials, planting | Barraka boardwalk and BARRAKA BEACH sign planter |
+| [253A75E4-A471-4502-9F5D-C9BAF074D664.jpg](../../public/photos-ref/253A75E4-A471-4502-9F5D-C9BAF074D664.jpg) | ground | view, materials | Beach with loungers, closed parasols and a plank walkway to the sea |
 | [IMG_2224.jpg](../../public/photos-ref/IMG_2224.jpg) | ground | materials, view | Open sand looking north-east along the coast to the mountains |
+| [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | ground | layout, materials | Barraka terrace with a curved sandstone wall and green railing, lawn beyond |
 | [6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg](../../public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg) | ground | materials | Beach: pebbles on sand at the water line **Note:** No GPS in the file: exact stretch of beach not confirmed. |
 | [IMG_2350.jpg](../../public/photos-ref/IMG_2350.jpg) | ground | layout, levels, materials, view | Paseo looking north-east: stamped walk, sandstone retaining wall **Note:** The sandstone retaining wall shows the resort ground standing about 1.2 m above the paseo here. _Used by: area:paseo, paseo_wall.json:paseo-retaining-wall, paseo_wall.json:paseo-timber-edge, paseo_details.json:paseo-pool-hedge, paseo_details.json:paseo-east-windbreak, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4._ |
 | [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: area:paseo, paseo_wall.json:paseo-timber-edge._ |
 | [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. _Used by: area:paseo._ |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, levels, materials | Paseo ramp: green rigid mesh on top of the sandstone wall, red-and-white crossing marks, the hotel and Barraka beyond **Looks at:** The paseo at the foot of Calle Guillermo looking to the gateway, the green fence and Barraka. |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
+| [IMG_2604.jpg](../../public/photos-ref/IMG_2604.jpg) | ground | layout, materials | Pink paseo along the green fence on a sandstone base, grass verge, Barraka ahead **Looks at:** The grass verge on the beach side of the paseo, from the gateway to Barraka. |
+| [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials | Paseo between the green railing and the Barraka building, sandbags along the wall |
+| [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | ground | layout, materials | Paseo past Barraka's glazed front and sandbags, the curved green railing on a sandstone wall ahead |
 
 ## The paseo
 
@@ -155,6 +233,21 @@ Paving, tiles, render, kerbs, fences, sand and pebbles.
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
 | [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: area:paseo, paseo_wall.json:paseo-timber-edge._ |
 | [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. _Used by: area:paseo._ |
+| [IMG_2480.jpg](../../public/photos-ref/IMG_2480.jpg) | ground | layout, materials, planting | Pink paseo walk along the sandstone wall with a lamp and the beach verge, looking north-east |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, levels, materials | Paseo ramp: green rigid mesh on top of the sandstone wall, red-and-white crossing marks, the hotel and Barraka beyond **Looks at:** The paseo at the foot of Calle Guillermo looking to the gateway, the green fence and Barraka. |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | layout, planting, materials | From Barraka looking south-west: lawn and seats, roped pink paseo, green railing on a sandstone wall, Villacana houses |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials | Same view as IMG_2608 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | ground | layout, materials, planting | Arch with bougainvillea, pebble flower mat and a covered passage to an arched grille gate |
+| [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials | Tiled path between white walls and a lawn |
+| [IMG_2604.jpg](../../public/photos-ref/IMG_2604.jpg) | ground | layout, materials | Pink paseo along the green fence on a sandstone base, grass verge, Barraka ahead **Looks at:** The grass verge on the beach side of the paseo, from the gateway to Barraka. |
+| [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials | Paseo between the green railing and the Barraka building, sandbags along the wall |
+| [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | ground | layout, materials | Paseo past Barraka's glazed front and sandbags, the curved green railing on a sandstone wall ahead |
+| [IMG_2632.jpg](../../public/photos-ref/IMG_2632.jpg) | ground | layout, materials | Pink paseo west along the sandstone wall and green mesh fence, beach to the left **Looks at:** The sandstone wall at the east end of the paseo, about 1 m high by eye. |
+| [IMG_2636.jpg](../../public/photos-ref/IMG_2636.jpg) | ground | layout, materials | Pink paseo west along green mesh with shade netting on the sandstone wall |
+| [IMG_2637.jpg](../../public/photos-ref/IMG_2637.jpg) | ground | layout, materials | West end of the paseo: the fence on the sandstone wall reaches a gravel access with a van |
+| [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, materials | Close-up of the sandstone wall with green rigid mesh at the west end of the paseo |
+| [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | ground | layout, materials | Covered passage with a pebble mat, looking through a run of arches to a lawn |
+| [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | ground | facades, materials | Villacana houses beyond green rigid mesh on the sandstone wall and a hedge |
 
 ## The whole resort
 

@@ -9,6 +9,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 - The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.
 - IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.
 - Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is not opened. Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2524–2526 and 2554/2555 show the Dalí car park: tarmac with a white kerb along a chain-link fence and hedge, bays in front of the white houses, a CCTV pole at the entrance.
 
 ## Read first
 
@@ -19,8 +20,8 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 ## Coverage
 
-Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 4, Planting: 2, Views: 1
-25 reviewed, 0 suggested only by camera position.
+Layout: 36, Levels and slopes: 5, Facades and roofs: 8, Materials: 4, Planting: 3, Views: 1
+38 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -138,12 +139,25 @@ graph LR
 | [IMG_2278.jpg](../../public/photos-ref/IMG_2278.jpg) | ground | layout, materials | Pintor Dalí: seaward parking row and chain-link fence |
 | [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
+| [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | ground | layout, planting | Tiled path beside parking with a strelitzia |
+| [IMG_2477.jpg](../../public/photos-ref/IMG_2477.jpg) | ground | layout, facades | Dalí car park beside the arched houses |
+| [IMG_2478.jpg](../../public/photos-ref/IMG_2478.jpg) | ground | layout, facades | Dalí arched entrance into a covered passage |
+| [IMG_2525.jpg](../../public/photos-ref/IMG_2525.jpg) | ground | layout, facades | Dalí car park bays in front of the white houses |
 | [IMG_2269.jpg](../../public/photos-ref/IMG_2269.jpg) | ground | layout | Pintor Dalí: parking and chain-link fence looking south |
 | [IMG_2270.jpg](../../public/photos-ref/IMG_2270.jpg) | ground | layout | Pintor Dalí: parking and fence looking north |
 | [IMG_2276.jpg](../../public/photos-ref/IMG_2276.jpg) | ground | layout | Pintor Dalí: parking junction toward the sea |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | [IMG_2290.jpg](../../public/photos-ref/IMG_2290.jpg) | ground | layout | Pintor Dalí: grass between bays and shared footpath |
+| [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | ground | layout | Tiled path out to the car park road beside a white post box |
+| [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | ground | layout | Tiled path beside parked cars and a kerbed lawn strip |
+| [IMG_2474.jpg](../../public/photos-ref/IMG_2474.jpg) | ground | layout | Car park road with hedges and a house beyond |
+| [IMG_2475.jpg](../../public/photos-ref/IMG_2475.jpg) | ground | layout | Car park road between parked cars and hedges |
+| [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | ground | layout | Car park road with parked cars and white houses |
+| [IMG_2524.jpg](../../public/photos-ref/IMG_2524.jpg) | ground | layout | Dalí car park looking south: tarmac lane with white kerb along a chain-link fence and trees, parked cars, the sea at the end |
+| [IMG_2526.jpg](../../public/photos-ref/IMG_2526.jpg) | ground | layout | Dalí car park looking north along the hedge-lined kerb |
+| [IMG_2554.jpg](../../public/photos-ref/IMG_2554.jpg) | ground | layout | Car park entrance with a CCTV pole and a lawn corner |
+| [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | ground | layout | Car park bays beside a lawn and white houses |
 | [IMG_2275.jpg](../../public/photos-ref/IMG_2275.jpg) | ground | levels, layout | Cervantes exit onto Pintor Dalí: slope and drain _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |

@@ -8,6 +8,7 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 - IMG_2349 and IMG_2188: the south lawn and level pool stand about 1 m above the paseo behind the sandstone wall and mesh fence. Existing paseo profile supplies that difference; south pool stays at datum 0. The legacy seaward white wall is omitted wherever sandstone replaces it in map, 3D and collision. Short end returns remain approximate, not photographed endpoints.
 - Laser survey ground 2026-10-24: the south pool deck is +0.12 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2641/2642: a covered passage ends at an arched iron gate onto crazy paving that curves between hedges to the south pool. IMG_2643: the lawn runs down to the green mesh on the seafront.
 
 ## Read first
 
@@ -18,8 +19,8 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 ## Coverage
 
-Layout: 7, Levels and slopes: 1, Facades and roofs: 2, Materials: 2, Planting: 3, Views: 2
-8 reviewed, 0 suggested only by camera position.
+Layout: 11, Levels and slopes: 1, Facades and roofs: 3, Materials: 5, Planting: 6, Views: 4
+13 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -62,10 +63,15 @@ graph LR
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. _Used by: south_pool.json:south-pool-seaward-level._ |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | ground | layout, materials, planting | Through the gate: crazy-paving path curving between hedges to the south pool's glass fence and lawn |
+| [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | layout, planting, view | South pool lawn to the seafront: candelabra cactus, yuccas, green mesh fence and the sea |
 | [IMG_2645.jpg](../../public/photos-ref/IMG_2645.jpg) | ground | facades, layout, planting | South pool lawn and houses |
+| [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | ground | facades, materials | Villacana houses beyond green rigid mesh on the sandstone wall and a hedge |
+| [IMG_2641.jpg](../../public/photos-ref/IMG_2641.jpg) | ground | layout, materials | Covered passage ending at an arched iron gate onto crazy paving and the south pool garden |
 | `villacana-reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. |
 | `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. |
 | `villacana-reference/web/south-pool-03-lawn-from-north-west.jpg` | ground | layout, materials | South lawn from the north-west: curved low white wall, bollard lights, loungers **Note:** Found on the web; has people in it. Reference only, never publish. |
 | `villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
+| [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | layout, planting, view | Lawn from the houses to the seafront fence, yuccas and a lamp, the sea beyond |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |

@@ -9,6 +9,7 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 - IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.
 - Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m.
 - IMG_2339 corner reuses the unchanged middle gateway NW wing and adds only a 4.2 m return, with a bounded lawn. Two wall-aligned single planes replace the crossed bougainvillea there; bollard, clipped hedge, nearby rounded tree and lantern are Details-only and route guarded. Lengths, heights and adjacent lawn extent remain estimates; no surveyed enclosure closure or new level change is asserted.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2550: an arched wooden double gate in a white wall. IMG_2551–2553/2556: terracotta paths with white kerbs between lawns, beds and the car park lane.
 
 ## Read first
 
@@ -19,8 +20,8 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 
 ## Coverage
 
-Layout: 10, Facades and roofs: 3, Materials: 4, Planting: 6, Signs: 1
-12 reviewed, 0 suggested only by camera position.
+Layout: 20, Facades and roofs: 4, Materials: 12, Planting: 11, Signs: 2, Views: 1
+24 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -72,9 +73,21 @@ graph LR
 | [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp **Looks at:** Eva lawn beside clipped round tree and lantern post. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn **Looks at:** Brown Eva frontage door with yellow-flowered shrub beside lawn. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
+| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | ground | layout, materials, planting | Eva: tiled path along a lawn |
 | [IMG_2549.jpg](../../public/photos-ref/IMG_2549.jpg) | ground | layout, materials, planting | Calle Eva: lane between a white wall and planted beds, towards the middle pool |
+| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | ground | layout, materials, planting | Long straight terracotta path between beds and houses |
+| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage | Covered entrance with a street plaque looking through an arch, potted plants (ground level despite phone altitude) |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
+| [IMG_2550.jpg](../../public/photos-ref/IMG_2550.jpg) | ground | facades, materials | Arched wooden double gate in a white wall, terracotta paving in front |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials | Terracotta path curving between a hedge and a kerb towards the car park |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials | Curving terracotta path with white kerbs, car park and hedged wall beyond, a lamp post |
+| [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | ground | layout, materials | Terracotta path between houses and a grass strip along the car park lane |
+| [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials | Terracotta path to a gate between beds, car park on the right |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, planting | Terracotta path across a lawn to a gate in a white wall, houses beyond |
+| [IMG_2678.jpg](../../public/photos-ref/IMG_2678.jpg) | ground | layout, view | Through an open iron gate in an arched opening: the middle pool and its glass fence |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting | Middle pool garden: crazy-paving path curving beside the glass pool fence, hedge and a tree |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | [IMG_2251.jpg](../../public/photos-ref/IMG_2251.jpg) | ground | layout | Narrow lane through an arch, planting both sides |
+| [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | ground | planting | Eva: hedges and a tree beside the path |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |
