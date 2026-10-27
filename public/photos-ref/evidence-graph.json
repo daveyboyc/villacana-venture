@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "f1d07f75565522a92ab080e61147cb2ff5f62279f0fe5db2e063f372fd69cfdb",
+ "inputDigest": "f21d710029345a10ffdad7d07dd92b4199c752058b9e911d2c6b89ef41b26567",
  "summary": {
   "unplaced": 1,
-  "suggested": 77,
-  "needs-review": 67,
-  "photos": 145,
+  "suggested": 84,
+  "needs-review": 69,
+  "photos": 154,
   "features": 375,
   "photosCitedByModel": 100,
   "modelFeaturesWithPhotoCitations": 120
@@ -4066,6 +4066,69 @@
    "name": "Roof by Elena: patios and terraces south-west (second shot)",
    "file": "IMG_2369.jpg",
    "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2481.jpg",
+   "kind": "photo",
+   "name": "IMG_2481",
+   "file": "IMG_2481.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2482.jpg",
+   "kind": "photo",
+   "name": "IMG_2482",
+   "file": "IMG_2482.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2483.jpg",
+   "kind": "photo",
+   "name": "IMG_2483",
+   "file": "IMG_2483.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2488.jpg",
+   "kind": "photo",
+   "name": "IMG_2488",
+   "file": "IMG_2488.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2494.jpg",
+   "kind": "photo",
+   "name": "IMG_2494",
+   "file": "IMG_2494.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2507.jpg",
+   "kind": "photo",
+   "name": "IMG_2507",
+   "file": "IMG_2507.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2508.jpg",
+   "kind": "photo",
+   "name": "IMG_2508",
+   "file": "IMG_2508.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2518.jpg",
+   "kind": "photo",
+   "name": "IMG_2518",
+   "file": "IMG_2518.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2519.jpg",
+   "kind": "photo",
+   "name": "IMG_2519",
+   "file": "IMG_2519.jpg",
+   "status": "suggested"
   },
   {
    "id": "ref:apple-maps/02-3d-north-pool.png",
@@ -8935,6 +8998,198 @@
    "to": "cervantes_garden_door.json:cervantes-junction-north-patio",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2481.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "building:6364601UF1366S_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.8,
+   "angleOffset": 33.7
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "building:6364601UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 38.1,
+   "angleOffset": 26.0
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "building:6364601UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 35.9,
+   "angleOffset": 31.6
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "building:6364601UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 43.7,
+   "angleOffset": 21.0
+  },
+  {
+   "from": "photo:IMG_2488.jpg",
+   "to": "street:guillermo",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2488.jpg",
+   "to": "area:paseo",
+   "relation": "camera-nearby",
+   "gap": 4.2
+  },
+  {
+   "from": "photo:IMG_2488.jpg",
+   "to": "building:6364401UF1366S_part11",
+   "relation": "possibly-in-view",
+   "distance": 36.1,
+   "angleOffset": 27.1
+  },
+  {
+   "from": "photo:IMG_2488.jpg",
+   "to": "building:6364401UF1366S_part5",
+   "relation": "possibly-in-view",
+   "distance": 37.8,
+   "angleOffset": 33.7
+  },
+  {
+   "from": "photo:IMG_2494.jpg",
+   "to": "street:teodoro-rojo",
+   "relation": "camera-nearby",
+   "gap": 1.3
+  },
+  {
+   "from": "photo:IMG_2494.jpg",
+   "to": "street:patricia",
+   "relation": "camera-nearby",
+   "gap": 3.7
+  },
+  {
+   "from": "photo:IMG_2494.jpg",
+   "to": "building:6365101UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 23.8,
+   "angleOffset": 23.8
+  },
+  {
+   "from": "photo:IMG_2494.jpg",
+   "to": "building:6365101UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 24.4,
+   "angleOffset": 6.1
+  },
+  {
+   "from": "photo:IMG_2494.jpg",
+   "to": "building:6365101UF1366N_part9",
+   "relation": "possibly-in-view",
+   "distance": 32.6,
+   "angleOffset": 26.9
+  },
+  {
+   "from": "photo:IMG_2507.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2507.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 37.2,
+   "angleOffset": 5.9
+  },
+  {
+   "from": "photo:IMG_2508.jpg",
+   "to": "street:elena-south",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_2508.jpg",
+   "to": "building:6265601UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 25.6,
+   "angleOffset": 7.2
+  },
+  {
+   "from": "photo:IMG_2508.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 36.0,
+   "angleOffset": 29.1
+  },
+  {
+   "from": "photo:IMG_2518.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2518.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 16.9,
+   "angleOffset": 2.4
+  },
+  {
+   "from": "photo:IMG_2518.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 25.4,
+   "angleOffset": 20.4
+  },
+  {
+   "from": "photo:IMG_2518.jpg",
+   "to": "building:6265201UF1366N_part6",
+   "relation": "possibly-in-view",
+   "distance": 42.0,
+   "angleOffset": 11.4
+  },
+  {
+   "from": "photo:IMG_2519.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2519.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 4.7,
+   "angleOffset": 19.5
+  },
+  {
+   "from": "photo:IMG_2519.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 16.8,
+   "angleOffset": 29.4
+  },
+  {
+   "from": "photo:IMG_2519.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 25.6,
+   "angleOffset": 7.7
   },
   {
    "from": "ref:apple-maps/02-3d-north-pool.png",
