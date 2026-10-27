@@ -57,7 +57,11 @@ model. Building centroids within 45 m and 35 degrees of the camera heading are
 possible viewing-context candidates, not proven visible objects; occlusion is not
 computed. Legacy headings can be approximate and carry an unknown-calibration note.
 
-The canonical app root opens **Map & photos**. Photo IDs are on by default;
+The canonical app root opens **Inspect** for camera-only review. Use **Jump to
+inspect** to go directly to a pool, named lane, the west paseo or Barraka; drag to
+pan, scroll/pinch to zoom, and choose **Orbit** to view the model at an angle.
+**Walk** remains a separate mode. **Map & photos** (or `?view=map`) opens the
+reference map. Photo IDs are on by default;
 zoom reveals overlapping IDs, and the list always includes every catalogue entry.
 Search by ID, area or visible subject. Selecting a photo shows its full label,
 image, camera uncertainty and reviewed look-at context. Dots locate cameras;

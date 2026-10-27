@@ -23,6 +23,12 @@
       #overview-controls[hidden], #walk-camera[hidden], #jump[hidden], #help[hidden] { display:none; }
       #overview-controls button, #walk-camera button, #overview-more > summary { min-height:44px; min-width:44px; background:#fffdf8; border:1px solid #c9bfae; border-radius:8px; padding:10px; font:14px system-ui; }
       #overview { bottom:calc(12px + env(safe-area-inset-bottom)); right:max(12px, env(safe-area-inset-right)); min-height:44px; }
+      #inspection-jump {position:fixed;top:112px;left:12px;z-index:5;display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:calc(100vw - 24px);background:#fffdf8ed;border:1px solid #c9bfae;border-radius:10px;padding:8px 10px;box-sizing:border-box;color:#263b32;font-size:13px;}
+      body.embedded #inspection-jump {top:12px;}
+      #inspection-jump label {font-weight:600;}
+      #inspection-area {min-height:44px;max-width:100%;min-width:0;border:1px solid #c9bfae;border-radius:6px;background:white;padding:8px;color:#263b32;font:14px system-ui;}
+      #inspection-jump span {font-size:12px;}
+      #overview-controls {max-width:calc(100vw - 24px);flex-wrap:wrap;}
       #overview-more { position:static; }
       #overview-more > summary { box-sizing:border-box; cursor:pointer; list-style:none; }
       #overview-more > summary::-webkit-details-marker { display:none; }
@@ -39,7 +45,7 @@
       #alignment-notes button { background:none; border:0; color:#af1717; text-decoration:underline; cursor:pointer; font:inherit; text-align:left; padding:4px 0; }
       #overview-bearing { min-width:55px; align-self:center; font-variant-numeric:tabular-nums; }
       #overview-rotation { width:120px; }
-      @media(max-width:700px), (max-height:500px) { #areas { flex-wrap:nowrap; overflow-x:auto; max-height:none; padding-bottom:4px; } #areas .chip { white-space:nowrap; } #alignment-notes { top:170px; max-height:23vh; font-size:12px; } #overview-controls, #walk-camera { gap:4px; } #overview-controls button, #walk-camera button, #overview-more > summary { padding:8px; } }
+      @media(max-width:700px), (max-height:500px) { #inspection-jump {gap:4px;padding:6px;right:12px;}#inspection-jump label{font-size:12px;}#inspection-area{flex:1;width:170px;}#inspection-jump span{flex-basis:100%;}body.embedded #layout-details{top:112px!important;}#overview-controls button{font-size:12px;}body:not(.embedded) #overview-controls{max-width:calc(100vw - 94px);} #areas { flex-wrap:nowrap; overflow-x:auto; max-height:none; padding-bottom:4px; } #areas .chip { white-space:nowrap; } #alignment-notes { top:170px; max-height:23vh; font-size:12px; } #overview-controls, #walk-camera { gap:4px; } #overview-controls button, #walk-camera button, #overview-more > summary { padding:8px; } }
       #walk-pad, #walk-touch-help { display:none; }
       #walk-pad { position:fixed; z-index:5; bottom:calc(16px + env(safe-area-inset-bottom)); left:max(16px,env(safe-area-inset-left)); width:128px; height:128px; border:2px solid #fff9; border-radius:50%; background:#fffdf8c9; color:#264c40; touch-action:none; user-select:none; -webkit-user-select:none; -webkit-touch-callout:none; box-shadow:0 2px 12px #0003; }
       #walk-pad[hidden], #walk-touch-help[hidden] { display:none!important; }
@@ -65,6 +71,7 @@
   <body>
     <canvas id="scene"></canvas>
     <div class="chip" id="title">Pool</div>
+    <div id="inspection-jump"><label for="inspection-area">Jump to inspect</label><select id="inspection-area" aria-label="Jump to inspect an area"></select><span>Drag to pan · scroll or pinch to zoom</span></div>
     <div class="chip" id="current-route" style="top:100px;left:12px;max-width:65vw" hidden></div>
     <div id="areas"><a class="chip" href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=36.4544655,-5.0511079&amp;zoom=18&amp;basemap=satellite" target="_blank" rel="noopener noreferrer">Google satellite</a><a class="chip" href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=36.4544655,-5.0511079&amp;zoom=18&amp;basemap=roadmap" target="_blank" rel="noopener noreferrer">Google street map</a><a class="chip" href="?pool=north,middle,south,main&amp;view=coastal-gate">Coastal gate</a><a class="chip" href="?pool=main">Main pool</a><a class="chip" href="?pool=main&amp;view=seafront">Seafront</a><a class="chip" href="?pool=north">North pool</a><a class="chip" href="?pool=middle">Middle pool</a><a class="chip" href="?pool=south">South pool</a><a class="chip" href="?pool=north,middle,south,main">Whole resort</a><a class="chip" href="./photos.html">Photo map</a><a class="chip" href="?pool=north,middle&amp;view=dali">Pintor Dalí</a><a class="chip" href="?pool=north,middle&amp;view=cervantes">Cervantes · two car parks</a></div>
     <a class="chip" id="layout-details" style="top:100px;right:12px" href="?details=1">Show details</a>
@@ -77,11 +84,11 @@
     </div>
     <button id="walk-pad" type="button" aria-label="Movement joystick: drag up to walk forward, down to walk backward, left or right to move sideways"><span class="walk-arrow walk-up" aria-hidden="true">↑</span><span class="walk-arrow walk-down" aria-hidden="true">↓</span><span class="walk-arrow walk-left" aria-hidden="true">←</span><span class="walk-arrow walk-right" aria-hidden="true">→</span><span class="walk-thumb" aria-hidden="true"></span></button>
     <div id="walk-touch-help">Left thumb: move · drag scene: look</div>
-    <div id="overview-controls" role="toolbar" aria-label="Overview camera controls" hidden>
+    <div id="overview-controls" role="toolbar" aria-label="Inspection camera controls" hidden>
       <button id="overview-in" aria-label="Zoom in">+</button><button id="overview-out" aria-label="Zoom out">−</button>
-      <button id="overview-fit">Fit area</button><details id="overview-more"><summary aria-label="More camera controls">More</summary><div id="overview-advanced">
+      <button id="overview-fit">Whole resort</button><button id="overview-pan" aria-pressed="true">Pan</button><button id="overview-rotate" aria-pressed="false">Orbit</button><details id="overview-more"><summary aria-label="More camera controls">More</summary><div id="overview-advanced">
       <button id="overview-left" aria-label="Rotate left">↶</button><button id="overview-right" aria-label="Rotate right">↷</button>
-      <button id="overview-pan" aria-pressed="true">Pan</button><button id="overview-rotate" aria-pressed="false">Rotate</button><input id="overview-rotation" type="range" min="0" max="360" value="0" aria-label="Overview rotation in degrees"><output id="overview-bearing" aria-live="off">0°</output><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-check" aria-pressed="true">Red map checks</button></div></details>
+      <input id="overview-rotation" type="range" min="0" max="360" value="0" aria-label="Overview rotation in degrees"><output id="overview-bearing" aria-live="off">0°</output><button id="overview-top">Top down</button><button id="overview-north">North ↑</button><button id="overview-check" aria-pressed="true">Red map checks</button></div></details>
     </div>
     <aside id="alignment-notes" aria-label="Map alignment notes" hidden>
       <details id="alignment-details" open><summary>Map alignment checks</summary>
@@ -90,10 +97,10 @@
       <p>Solid red shows the registry outline used by the reference map. The overview uses a different photo-based platform outline; compare before changing either.</p>
       <button id="alignment-coast">2 · Shoreline — needs review</button>
       <p>Dashed red shows the shared map shoreline, not a verified correction. IMG_2285 is on the beach but its GPS falls in mapped sea. Check aerial alignment before moving it.</p>
-      <p>Drag to pan; select Rotate to turn. Scroll or pinch to zoom; twist two fingers to rotate. North ↑ resets the bearing.</p>
+      <p>Drag to pan; select Orbit to turn. Scroll or pinch to zoom; twist two fingers to rotate. North ↑ resets the bearing.</p>
       </details>
     </aside>
-    <button class="chip" id="overview">Overview</button>
+    <button class="chip" id="overview">Inspect</button>
     <div class="chip" id="help">WASD or left thumb to walk · drag to look</div>
     <script type="module" src="/src/slice.ts"></script>
   </body>
