@@ -7,16 +7,16 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 ## Counts
 
 - areas: 14
-- inventoryCompleteAreas: 0
-- sourceObservations: 29
-- sourcePixelTraces: 40
-- sourcePixelLocators: 8
+- inventoryCompleteAreas: 1
+- sourceObservations: 59
+- sourcePixelTraces: 57
+- sourcePixelLocators: 32
 - sources: 185
-- uninspectedSources: 126
+- uninspectedSources: 115
 - routes: 24
 - segments: 173
 - tracedSides: 0
-- tunnelCandidates: 10
+- tunnelCandidates: 11
 - confirmedUniqueTunnels: unresolved
 - registryOutlines: 230
 
@@ -29,7 +29,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | South pool | 7 / 7 | 0 | 0 | uninspected |
 | Main pool | 6 / 6 | 0 | 0 | uninspected |
 | Calle Elena | 43 / 4 | 2 | 2 | partial |
-| Calle Miguel de Cervantes | 26 / 26 | 1 | 0 | uninspected |
+| Calle Miguel de Cervantes | 26 / 0 | 1 | 1 | inspected |
 | Calle Pintor Dalí | 25 / 25 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 3 / 3 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 0 / 0 | 4 | 6 | source needed |

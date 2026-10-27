@@ -1,8 +1,9 @@
 # Path network implementation status
 
-Elena now has a [scoped available-source inventory](reviews/path-network-inventory-elena/README.md)
-with independent source/drawing/model review and explicit unresolved registration
-and geometry gaps. This advances source accounting; it does not complete the physical map.
+Elena and Cervantes now have scoped available-source inventories with independent
+source/drawing/model review and explicit unresolved registration and geometry gaps:
+[Elena](reviews/path-network-inventory-elena/README.md),
+[Cervantes](reviews/path-network-inventory-cervantes/README.md). This advances source accounting; it does not complete the physical map.
 
 The first implementation task is `path-network-baseline`: graph-backed software
 accounting and an inspector on the canonical map. This does **not** complete phase
@@ -49,7 +50,8 @@ migration of authored references rather than assuming their identity is stable.
 
 The eight legacy passages have host-independent IDs `tun-001`–`tun-008`. Silvia
 and Jorge remain separate source groups, with unresolved relationships to legacy
-candidates. Ten candidate records do not mean ten unique tunnels. Both portals,
+candidates. The additional CALLE MIGUEL interior is a separate unlocated source group. Eleven
+candidate records do not mean eleven unique tunnels. Both portals,
 physical dimensions, datum, topology and access are explicitly unknown. Existing
 host models and photo-relative study are context only. No candidate map pins,
 through-route claims or registry cuts were invented.
@@ -62,7 +64,7 @@ geometry or collision.
 
 ## Remaining programme
 
-Elena has completed its declared available-source inventory; the other 13
+Elena and Cervantes have completed their declared available-source inventories; the other 12
 `path-network-inventory-<area>` audit tasks remain open in the build queue,
 including northern lanes with zero area-tagged sources. Each requires full images
 and aerial inspection, a component census, explicit evidence requests, annotated

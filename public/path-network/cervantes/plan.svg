@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1120" role="img" aria-label="Cervantes source-relative observations"><style>text{font-family:Arial,sans-serif;fill:#26352e}.title{font-size:28px;font-weight:bold}.h{font-size:20px;font-weight:bold}.t{font-size:16px}.small{font-size:14px}.edge{stroke:#ad4775;stroke-width:5;fill:none}.unknown{stroke:#397992;stroke-width:3;stroke-dasharray:8 6;fill:none}.context{stroke:#999;stroke-width:4;stroke-dasharray:12 7;fill:none}</style><rect width="100%" height="100%" fill="#f7f3e9"/>
+<text x="35" y="45" class="title">Cervantes · observed paths, walls and openings</text>
+<text x="35" y="75" class="t">Relationship plan only · not to scale · no source-pixel to world registration</text>
+<rect x="30" y="103" width="1440" height="450" rx="6" fill="#fff" stroke="#b7b1a3"/>
+<text x="50" y="133" class="h">A01: existing block/route context, separate from physical source traces</text>
+<path d="M70 340H1415" class="context"/>
+<text x="65" y="320" class="t">Dalí side</text>
+<text x="1310" y="320" class="t">Picasso side</text>
+<rect x="80" y="170" width="310" height="90" rx="6" fill="#eee4d4" stroke="#b7b1a3"/>
+<text x="95" y="200" class="t">W02 · finite planted wall</text>
+<text x="95" y="226" class="t">W03 · opposite house plinth</text>
+<text x="95" y="249" class="small">Hidden joins remain unknown</text>
+<rect x="80" y="370" width="310" height="105" rx="6" fill="#e7c6ad" stroke="#b7b1a3"/>
+<text x="95" y="399" class="t">W01 · field + both margins</text>
+<text x="95" y="426" class="t">W04–W06 · apron/grate/ends</text>
+<text x="95" y="450" class="small">W07 · CALLE DE MIGUEL plaque</text>
+<path d="M105 292H365M105 363H365" class="edge"/>
+<rect x="485" y="170" width="410" height="130" rx="6" fill="#e1ecd7" stroke="#b7b1a3"/>
+<text x="502" y="201" class="t">J01 · route ramp + three treads</text>
+<text x="502" y="229" class="t">J02 · foot drain + covers</text>
+<text x="502" y="257" class="t">J03 · private door: two treads + sill</text>
+<text x="502" y="281" class="small">J04 · separating planted bed</text>
+<path d="M673 305V515" class="context"/>
+<text x="697" y="391" class="t">Elena side context</text>
+<text x="697" y="417" class="t">J05 lawns / cross spur</text>
+<text x="697" y="444" class="t">J06 lower vs upper wall</text>
+<rect x="970" y="170" width="410" height="130" rx="6" fill="#eee4d4" stroke="#b7b1a3"/>
+<text x="986" y="200" class="t">R01 · partial patio partitions</text>
+<text x="986" y="226" class="t">R02 · private floor / furniture</text>
+<text x="986" y="252" class="t">R03 · upper roof/eave outlines</text>
+<text x="986" y="280" class="small">Concealed ends are not closed</text>
+<rect x="970" y="370" width="410" height="118" rx="6" fill="#e7c6ad" stroke="#b7b1a3"/>
+<text x="986" y="398" class="t">E01 · visible paved margins</text>
+<text x="986" y="423" class="t">E02–E05 · kerb, wall, door, pergola</text>
+<text x="986" y="449" class="t">E06 · red grooved side strip</text>
+<text x="986" y="474" class="small">Far east edge/contact: source needed</text>
+<path d="M990 311H1255M990 363H1170" class="edge"/><path d="M1255 311H1380M1170 363H1380" class="unknown"/>
+<text x="54" y="529" class="small">Main axis and Elena spur are existing-model context; lengths, angles and joins in this drawing are not coordinates.</text>
+<rect x="30" y="582" width="760" height="432" rx="6" fill="#fff" stroke="#b7b1a3"/>
+<text x="49" y="614" class="h">Miguel signed source group · T01–T07</text>
+<text x="49" y="641" class="t">IMG_2288: a separate observation, not a mapped Cervantes portal</text>
+<rect x="89" y="685" width="650" height="240" rx="6" fill="#e6c1a6" stroke="#b7b1a3"/>
+<path d="M90 685H739M90 925H739" class="edge"/><path d="M90 687V923" class="unknown"/>
+<text x="101" y="676" class="small">camera-side portal unseen</text>
+<rect x="175" y="685" width="105" height="20" rx="6" fill="#825332" stroke="#b7b1a3"/>
+<rect x="175" y="905" width="105" height="20" rx="6" fill="#825332" stroke="#b7b1a3"/>
+<path d="M227 685V705M227 905V925" stroke="#fff"/>
+<rect x="420" y="685" width="63" height="17" rx="6" fill="#555" stroke="#b7b1a3"/>
+<rect x="420" y="908" width="63" height="17" rx="6" fill="#555" stroke="#b7b1a3"/>
+<rect x="330" y="767" width="130" height="70" rx="6" fill="#a6a397" stroke="#b7b1a3"/>
+<rect x="440" y="874" width="100" height="19" rx="6" fill="#5c4d3e" stroke="#b7b1a3"/>
+<path d="M710 685V925" stroke="#8a6c4b" stroke-width="6"/>
+<text x="128" y="740" class="t">T02 near door sets</text>
+<text x="385" y="730" class="t">T03 farther windows</text>
+<text x="320" y="859" class="t">T04 pebble inset</text>
+<text x="466" y="864" class="small">T05 right bench</text>
+<text x="119" y="960" class="small">T01 flat covered ceiling / far arch · T06 light, plaque, vent and plants</text>
+<text x="119" y="985" class="small">T07 garden beyond: finite view only; host, portals and access unresolved</text>
+<rect x="820" y="582" width="650" height="432" rx="6" fill="#fff" stroke="#b7b1a3"/>
+<text x="841" y="615" class="h">Source and interpretation limits</text>
+<text x="843" y="657" class="small">Solid pink: finite directly observed source features.</text>
+<text x="843" y="688" class="small">Dashed blue: concealed/unregistered portion or unknown.</text>
+<text x="843" y="719" class="small">Grey dash: existing route context; not a traced boundary.</text>
+<text x="843" y="750" class="small">No implied scale, width, public access or closed enclosure.</text>
+<text x="843" y="781" class="small">Roof/parapet lines remain distinct from ground walls.</text>
+<text x="843" y="812" class="small">Do not connect Miguel to tun-008, Silvia or Elena by style.</text>
+<text x="843" y="843" class="small">Junction garden door is not a public passage.</text>
+<text x="843" y="874" class="small">Decorative private patio floor is not street paving.</text>
+<text x="843" y="905" class="small">51 full sources accounted; private pixels stay private.</text>
+<text x="843" y="936" class="small">Photo observations need registration before geometry.</text>
+<text x="35" y="1063" class="t">Evidence: public ground/roof frames listed by each feature; Esri ground and limited map context.</text>
+<text x="35" y="1094" class="small">Open gaps: physical-edge registration · Miguel identity/portals · hidden returns · level/clearance conflict · eastern terminal</text>
+</svg>

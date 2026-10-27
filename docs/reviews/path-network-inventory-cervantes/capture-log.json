@@ -1,0 +1,110 @@
+[
+  {
+    "id": "west-lane-context",
+    "at": [
+      -179.5,
+      73.2
+    ],
+    "look": [
+      -191,
+      80
+    ],
+    "actualPlayer": "-179.500,73.200",
+    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+    "camera": "uncalibrated model-context first person, not a registered source-photo camera",
+    "width": 960,
+    "height": 720,
+    "elapsedMs": 25847,
+    "errors": []
+  },
+  {
+    "id": "dali-exit-context",
+    "at": [
+      -188.2,
+      78.4
+    ],
+    "look": [
+      -197.2,
+      83.8
+    ],
+    "actualPlayer": "-188.200,78.400",
+    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+    "camera": "uncalibrated model-context first person, not a registered source-photo camera",
+    "width": 960,
+    "height": 720,
+    "elapsedMs": 25863,
+    "errors": []
+  },
+  {
+    "id": "junction-context",
+    "at": [
+      -149.9,
+      55.4
+    ],
+    "look": [
+      -155.5,
+      58.9
+    ],
+    "actualPlayer": "-149.900,55.400",
+    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+    "camera": "uncalibrated model-context first person, not a registered source-photo camera",
+    "width": 960,
+    "height": 720,
+    "elapsedMs": 31002,
+    "errors": []
+  },
+  {
+    "id": "door-context",
+    "at": [
+      -151.7,
+      57
+    ],
+    "look": [
+      -152.8168,
+      54.9736
+    ],
+    "actualPlayer": "-151.700,57.000",
+    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+    "camera": "uncalibrated model-context first person, not a registered source-photo camera",
+    "width": 960,
+    "height": 720,
+    "elapsedMs": 44611,
+    "errors": []
+  },
+  {
+    "id": "east-lane-context",
+    "at": [
+      -137.5,
+      48.2
+    ],
+    "look": [
+      -118,
+      36.6
+    ],
+    "actualPlayer": "-137.500,48.200",
+    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+    "camera": "uncalibrated model-context first person, not a registered source-photo camera",
+    "width": 960,
+    "height": 720,
+    "elapsedMs": 39525,
+    "errors": []
+  },
+  {
+    "id": "door-steps-context",
+    "at": [
+      -150.9,
+      57.5
+    ],
+    "look": [
+      -152.8168,
+      54.9736
+    ],
+    "actualPlayer": "-150.772,57.713",
+    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
+    "camera": "uncalibrated model-context first person, not a registered source-photo camera",
+    "width": 960,
+    "height": 720,
+    "elapsedMs": 84402,
+    "errors": []
+  }
+]
