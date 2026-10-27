@@ -404,16 +404,17 @@ const path = require("node:path");
     {
       const scene=new THREE.Scene();addCervantesGardenDoor(scene,s.boundaryReference);scene.updateMatrixWorld(true);
       const ray=new THREE.Raycaster(),levels=[];
-      for(const b of [-gardenDoor.stepRun*1.5,-gardenDoor.stepRun*.65]){
-        const at=gardenPoint(0,b),ground=world.groundHeight(...at);levels.push(ground);
+      const foot=gardenPoint(0,gardenDoor.steps[0].front-.02);levels.push(world.groundHeight(...foot));
+      for(const step of gardenDoor.steps){
+        const at=gardenPoint(0,(step.front+step.back)/2),ground=world.groundHeight(...at);levels.push(ground);
         ray.set(new THREE.Vector3(at[0],5,at[1]),new THREE.Vector3(0,-1,0));
         const hit=ray.intersectObjects(scene.children).find(h=>h.object.name.includes("-tread-"));
         if(!hit||Math.abs(hit.point.y-ground)>.01)throw Error("Garden door visible tread/player ground disagree");
       }
-      if(Math.abs(levels[1]-levels[0]-gardenDoor.rise/2)>.01)throw Error("Garden door should have two equal risers");
+      for(let i=1;i<levels.length;i++)if(Math.abs(levels[i]-levels[i-1]-gardenDoor.rise/gardenDoor.risers)>.01)throw Error("Garden door should have three equal photographed risers");
       const doorSolids=new Solids(gardenDoorRings()),at=gardenPoint(0,0),out=doorSolids.resolve(...at,.42);
       if(Math.hypot(out.x-at[0],out.z-at[1])<.4)throw Error("Closed garden door is not solid");
-      const patio=gardenPoint(0,1),foot=gardenPoint(0,-gardenDoor.stepRun*2-.1);
+      const patio=gardenPoint(0,1);
       if(Math.abs(world.groundHeight(...patio)-world.groundHeight(...foot)-gardenDoor.rise)>.01)throw Error("Private patio is not level with garden door sill");
     }
     // Issue #57: sills, the kerbed Dalí footpath and the south Dalí approach are stepped onto and off,

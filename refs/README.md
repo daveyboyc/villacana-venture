@@ -13,7 +13,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | South pool | 7 | 7 | [areas/south-pool.md](areas/south-pool.md) |
 | Main pool | 6 | 6 | [areas/main-pool.md](areas/main-pool.md) |
 | Calle Elena | 43 | 43 | [areas/elena.md](areas/elena.md) |
-| Calle Miguel de Cervantes | 26 | 26 | [areas/cervantes.md](areas/cervantes.md) |
+| Calle Miguel de Cervantes | 28 | 28 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 25 | 25 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 3 | 3 | [areas/picasso.md](areas/picasso.md) |
 | Loira, Bolivia, Alberto and Isabel | 0 | 0 | [areas/north-lanes.md](areas/north-lanes.md) |
@@ -26,7 +26,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
 | Layout | 137 | [topics/layout.md](topics/layout.md) |
-| Levels and slopes | 30 | [topics/levels.md](topics/levels.md) |
+| Levels and slopes | 32 | [topics/levels.md](topics/levels.md) |
 | Facades and roofs | 48 | [topics/facades.md](topics/facades.md) |
 | Materials | 74 | [topics/materials.md](topics/materials.md) |
 | Planting | 54 | [topics/planting.md](topics/planting.md) |
@@ -42,6 +42,6 @@ Use the canonical app root (`/?view=map`) and search a photo ID, place or visibl
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
-Photo checks (`data/photo_checks.json`): 42 photo-check records, 1 match, 2 differ. 28 of 38 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 46 photo-check records, 1 match, 2 differ. 28 of 38 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
 
 Path-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.

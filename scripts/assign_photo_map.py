@@ -149,7 +149,7 @@ def features(s):
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
     wall_points=[[garden['origin'][i]+a*garden['along'][i] for i in range(2)] for a in [-garden['wallWidth']/2,garden['wallWidth']/2]]
     add('cervantes_garden_door.json:'+garden['id'],garden['name'],'reference feature','authored photo/levels interpretation',points=wall_points,evidence=garden['evidence'])
-    for part in ('patio','bed'):
+    for part in ('patio','bed','eastPlanter'):
         f=garden[part]
         add('cervantes_garden_door.json:'+f['id'],f['id'],'reference feature','authored photo/levels interpretation',ring=f['ring'],evidence=f['evidence'])
     north_path=json.loads((ROOT/'data/north_pool_gardens.json').read_text())
