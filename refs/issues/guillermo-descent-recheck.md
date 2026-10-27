@@ -12,6 +12,8 @@ Task `guillermo-descent-recheck` · area **Main pool** · priority P1 · levels
 
 ## Photos to build from
 
+- `public/photos-ref/IMG_2488.jpg`: Calle Guillermo from its seaward end, looking up the lane (ground — pin ±4.7 m; looks at Calle Guillermo from its seaward end)
+- `public/photos-ref/IMG_2226.jpg`: From the beach looking back at the resort frontage (ground — pin ±2.0 m; looks at big-pool lawn frontage: white railings, Guillermo gateway at left)
 
 ## Build
 

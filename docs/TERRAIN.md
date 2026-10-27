@@ -31,9 +31,10 @@ block falling about 3 m towards the main pool and the paseo; the ground now foll
 - **Kept on the old datum:** the strip 4 m behind the paseo wall stays at zero so the
   photographed 1 m wall keeps its height, and seaward of the fade line (turned-frame z
   150-158 m) the seafront heights take over as before. The survey puts the gardens behind the
-  wall 0.1-0.6 m higher. The lowered main-pool area's south-west corner, where the survey
-  climbs well above the lawn (the Guillermo cut), keeps the lawn level: task
-  `guillermo-descent-recheck`.
+  wall 0.1-0.6 m higher. Inside the lowered main-pool area only survey cells near the lawn's level set the grid,
+  and the lowered area and the ground round it are filled apart. The sloping corner by the foot of
+  Calle Guillermo is outside the lowered area since 27 October, so it follows the survey
+  (docs/reviews/beach-gate-verge).
 - **Before this (until October 2026)** the rule was a single 0.5 m rise at a guessed foot line
   on the Dalí side. Over half the open ground was more than 0.5 m off the survey.
 

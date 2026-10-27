@@ -19,6 +19,7 @@ import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-
 import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
+import { addBeachVerge } from "./beach-verge";
 import {addMiddleSouthGate,middleSouthRings} from "./middle-pool-south-gate";
 import {addCervantesGardenDoor,gardenDoorRings,gardenGroundOffset} from "./cervantes-garden-door";
 import {addCoastalGate,coastalAccess,coastalWallRings,GatedSolids} from "./coastal-gate";
@@ -213,6 +214,7 @@ async function boot(): Promise<void> {
   }
   // The paseo's sandstone retaining wall; along the south lawn it is the sea wall, drawn once.
   if (seaside) addBarrakaBoardwalk(scene, (x,z) => seaside!.y(x,z));
+  if (seaside && mainPool) addBeachVerge(scene, (x,z) => seaside!.y(x,z));
   if (seaside && skeleton.seafront) { addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY); addPaseoDetails(scene, seaside, liveGroundY); }
   // The wall, gateway and railings between the big-pool lawn and the paseo.
   if (seaside && mainPool) { const sd = seaside; addSeafrontFence(scene, (x, z) => sd.y(x, z)); }
@@ -813,7 +815,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     const mesh = new THREE.Mesh(geometry, [cap, wall]);
     mesh.position.y = lift;
     if(b.id===POOL_TERRACE_ID) {mesh.position.y=LOWER_POOL_Y;mesh.userData.referenceSurface=true;}
-    // The kiosk at the foot of Calle Guillermo stands on the lowered lawn.
+    // A building on the lowered lawn stands on it.
     else if(pointInRing(c.x,c.z,lowerPoolRing)) mesh.position.y=LOWER_POOL_Y;
     // A building out on the sand stands at the beach's height.
     else if(seaside?.inZone(c.x,c.z)) mesh.position.y=seaside.y(c.x,c.z);

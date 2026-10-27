@@ -322,10 +322,10 @@
    ],
    "model": [
     0.75,
-    -0.29
+    -0.31
    ],
    "medianMiss": 0.07,
-   "worstMiss": 0.23
+   "worstMiss": 0.21
   },
   {
    "street": "Calle Silvia",
@@ -397,10 +397,10 @@
    ],
    "model": [
     0.66,
-    -0.05
+    -0.62
    ],
    "medianMiss": 0.07,
-   "worstMiss": 0.32
+   "worstMiss": 0.25
   },
   {
    "street": "Calle Teodoro Rojo",
@@ -447,10 +447,10 @@
    ],
    "model": [
     -0.12,
-    -2.94
+    -0.24
    ],
-   "medianMiss": 0.07,
-   "worstMiss": 2.76
+   "medianMiss": 0.06,
+   "worstMiss": 1.92
   },
   {
    "street": "Calle Eva",
@@ -1893,8 +1893,8 @@
  "ground": {
   "cells": 6663,
   "medianMiss": 0.06,
-  "within25cm": 0.92,
-  "over50cm": 0.06,
+  "within25cm": 0.95,
+  "over50cm": 0.02,
   "note": "model minus survey on a 2 m grid of open ground within 15 m of a house (buildings and pools left out)"
  },
  "registration": {

@@ -1,4 +1,4 @@
-"""Check the lowered Calle Guillermo, level where Jorge meets it, the kiosk at the lane's foot and the east steps from the Picasso side."""
+"""Check Calle Guillermo (level to the paseo since the 2026-10-27 survey correction), Jorge level, the kiosk at the lane's foot and the east steps from the Picasso side."""
 import json
 import math
 from pathlib import Path
@@ -43,28 +43,18 @@ def along(points, heights, steps=50):
 
 
 assert all(ref in tags for ref in spec['evidence']), 'Evidence screenshot is not catalogued in data/reference_tags.json'
-assert 'not heights' in spec['trust'] and 'estimates' in spec['trust'] and 'Dave' in spec['guillermo']['slopeEvidence'], 'Trust must say the heights are estimates'
 roads = {r.get('id'): r for r in skeleton['boundaryReference']['roads']}
 g, j = roads[spec['guillermo']['road']], roads[spec['jorge']['road']]
 gp, jp = [turned(p) for p in g['points']], [turned(p) for p in j['points']]
 
-# Guillermo: street level to the slope start, then down evenly to paseo level at its foot.
-assert g['heights'][0] == g['heights'][1] == STREET and abs(g['heights'][-1] - foot) < 1e-6, g['heights']
-assert math.dist(gp[1], spec['guillermo']['slopeStart']) < 0.05
-assert all(b <= a for a, b in zip(g['heights'], g['heights'][1:])), 'Guillermo climbs on its way to the sea'
-# A smooth ramp, no steps (Dave, 2026-10-21): one even grade from the slope start to the foot.
-falls = [(a - b) / math.dist(p, q) for p, q, a, b in zip(gp, gp[1:], g['heights'], g['heights'][1:]) if a > b]
-assert falls and max(falls) - min(falls) < 0.005 and 'smooth' in spec['guillermo']['slopeEvidence'], 'Guillermo ramp is not one smooth grade'
-# Steep but walkable: Dave's ramp starts just past Jorge, so 3 m comes down in about 15 m.
-grade = g['maxGrade']
-assert grade <= 0.2 and grade == spec['guillermo']['maxGrade']
-for a, b, ha, hb in zip(gp, gp[1:], g['heights'], g['heights'][1:]):
-    assert abs(hb - ha) / math.dist(a, b) <= grade + 1e-6, f"Guillermo steeper than {grade:.0%}"
-# The paseo where the lane meets it is at pool level (data/main_pool.json levels.seafront).
+# Guillermo: level at street level to the paseo (laser survey and IMG_2488, 2026-10-27); the old 3 m ramp is gone.
+assert all(h == STREET for h in g['heights']), f"Guillermo is not level: {g['heights']}"
+assert 'survey' in spec['guillermo']['slopeEvidence'] and 'IMG_2488' in spec['guillermo']['slopeEvidence']
+# Where the lane meets the paseo, the paseo is within 0.4 m of street level (data/main_pool.json levels.seafront).
 profile = levels['seafront']['profile']
 x = gp[-1][0]
 paseo = next(a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0]) for a, b in zip(profile, profile[1:]) if a[0] <= x <= b[0])
-assert abs(paseo - (foot - STREET)) < 1e-6, 'Lane foot is not level with the paseo'
+assert abs(paseo) <= 0.4, f'Lane foot is {paseo:.2f} m off the paseo'
 
 # Jorge stays at street level and meets Guillermo where Guillermo is still level (Dave, 2026-10-21).
 assert all(h == STREET for h in j.get('heights', [STREET])), 'Jorge is no longer level'
@@ -83,11 +73,11 @@ for road, points in ((g, gp),):
             assert not inside(p, levels['lowerArea']), f"{road['id']} at street level inside the deck"
 assert all(inside(p, levels['sheetCut']) or to_ring(p, levels['sheetCut']) < 0.02 for p in levels['lowerArea']), 'Deck reaches past the cut'
 
-# The kiosk at the foot stands on the lowered lawn, clear of the lane.
+# The kiosk at the foot stands on the sloping corner above the lawn (survey, 2026-10-27), clear of the lane.
 kiosk = next(b for b in skeleton['buildings'] if b['id'] == spec['kiosk'])
 ring = [turned(p) for p in kiosk['ring']]
 centre = (sum(p[0] for p in ring) / len(ring), sum(p[1] for p in ring) / len(ring))
-assert inside(centre, levels['lowerArea']), 'Kiosk is not on the lowered lawn'
+assert not inside(centre, levels['lowerArea']), 'Kiosk is on the lowered lawn; the survey has it on the slope above'
 assert min(to_ring(p, ring) for p, _ in along(gp[1:], g['heights'][1:])) >= g['width'] / 2, 'Kiosk blocks the lane'
 
 # East steps: a narrow flight from street level beside the Picasso side down onto the deck.
@@ -101,5 +91,5 @@ for i in range(21):
     p = (top[0] + (bottom[0] - top[0]) * i / 20, top[1] + (bottom[1] - top[1]) * i / 20)
     assert all(not inside(p, r) and to_ring(p, r) >= steps['width'] / 2 for r in solid), 'East steps run into the terrace or the east building'
     assert i in (0, 20) or not inside(p, levels['surfaceRing']), 'Lawn drawn over the east steps'
-print(f"Lowered lanes: Guillermo falls {g['heights'][1] - g['heights'][-1]:.1f} m at most {grade:.0%} from just past the level Jorge junction, "
-      f"ground cut along it, kiosk on the lawn; east steps {steps['width']} m wide from street level onto the deck PASS")
+print(f"Lowered lanes: Guillermo level at street level to the paseo (survey), Jorge level, "
+      f"ground cut along it, kiosk on the slope above the lawn; east steps {steps['width']} m wide from street level onto the deck PASS")

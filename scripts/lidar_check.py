@@ -347,13 +347,13 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
     lowered = within(scene(levels['lowerArea']))
     for hole in levels['lowerHoles']:
         lowered &= ~within(scene(hole))
+    sunk = lowered.copy()
     unknown = within(scene(levels['gardenFall']['ring']), 1.0) | within(scene(levels['lowerArea']), 1.5) & ~within(scene(levels['lowerArea']), -1.5)
     for flight in (levels['steps'], levels['enriqueSteps']):
         unknown |= along(scene(flight['points']), flight['width'] / 2 + 1.0)
     lowered &= ~unknown
-    # Part of the modelled lowered area (by the foot of Calle Guillermo) is really sloping ground
-    # well above the pool lawn. Until guillermo-descent-recheck rebuilds it, keep the lawn there
-    # level with the rest: only survey cells near the lawn's own level set the grid.
+    # Keep the lawn level: inside the lowered area only survey cells near the lawn's own level set the
+    # grid (the sloping corner by the foot of Calle Guillermo was taken out of the area on 2026-10-27).
     lawn = float(np.median(ground.inside(pools['main'], 4.0)) - datum)
     unknown |= lowered & (height > lawn + 0.6)
     height = np.where(lowered, height + levels['drop'], height)
@@ -380,10 +380,17 @@ def grid(step=2.0, extent=(-270.0, -160.0, 130.0, 270.0)):
         if not road.get('heights'):
             unknown &= ~along(road['points'], max(0.5, road['width'] / 2 - 0.2))
     known = ~unknown & np.isfinite(height)
-    filled = griddata(points[known.ravel()], height[known], points, method='linear').reshape(gx.shape)
-    gaps = ~np.isfinite(filled)
-    filled[gaps] = griddata(points[known.ravel()], height[known], points[gaps.ravel()], method='nearest')
-    smooth = gaussian_filter(filled, 1.0)
+    # The lowered area and the ground round it are filled and smoothed apart: their grid values sit on
+    # different datums, and where the step between them is small (the slope by the foot of Calle
+    # Guillermo) mixing them would pull the lawn edge down.
+    filled, smooth = np.full(gx.shape, np.nan), np.zeros(gx.shape)
+    for part in (sunk, ~sunk):
+        use = known & part
+        filled[part] = griddata(points[use.ravel()], height[use], points[part.ravel()], method='linear')
+        gaps = part & ~np.isfinite(filled)
+        filled[gaps] = griddata(points[use.ravel()], height[use], points[gaps.ravel()], method='nearest')
+        weight = gaussian_filter(part.astype(float), 1.0)
+        smooth = np.where(part, gaussian_filter(np.where(part, filled, 0.0), 1.0) / np.maximum(weight, 1e-6), smooth)
 
     def hold(ring, value, core, blend, inside=None):
         """Hold the ground level within `core` metres of a ring (or a given mask), blending back over `blend` more."""

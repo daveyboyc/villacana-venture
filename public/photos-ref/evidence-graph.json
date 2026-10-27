@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "f21d710029345a10ffdad7d07dd92b4199c752058b9e911d2c6b89ef41b26567",
+ "inputDigest": "bd85192ed06fa37120e2820bd2e2b850eca0df18bf219d6749aed56d252793d6",
  "summary": {
   "unplaced": 1,
   "suggested": 84,
   "needs-review": 69,
   "photos": 154,
-  "features": 376,
-  "photosCitedByModel": 103,
-  "modelFeaturesWithPhotoCitations": 122
+  "features": 380,
+  "photosCitedByModel": 105,
+  "modelFeaturesWithPhotoCitations": 126
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2842,6 +2842,50 @@
    ]
   },
   {
+   "id": "beach_verge.json:barraka-front-verge",
+   "name": "Grass in front of the beach gateway and railings",
+   "kind": "reference feature",
+   "source": "rough aerial/photo outline; unmeasured",
+   "evidence": [
+    "IMG_2226.jpg"
+   ]
+  },
+  {
+   "id": "beach_verge.json:barraka-front-shrubs",
+   "name": "Shrubs in front of the beach gateway and railings",
+   "kind": "reference feature",
+   "source": "rough aerial/photo outline; Details only",
+   "evidence": [
+    "IMG_2226.jpg"
+   ]
+  },
+  {
+   "id": "seafront_fence.json:guillermo-beach-gate",
+   "name": "Beach gateway from the big-pool lawn",
+   "kind": "reference feature",
+   "source": "photo/aerial/survey interpretation; position about 1-2 m",
+   "evidence": [
+    "IMG_2226.jpg",
+    "IMG_2227.jpg",
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+    "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+    "IMG_2488.jpg"
+   ]
+  },
+  {
+   "id": "seafront_fence.json:guillermo-ramp-wall",
+   "name": "White wall beside the paseo ramp",
+   "kind": "reference feature",
+   "source": "photo/aerial/survey interpretation; position about 1-2 m",
+   "evidence": [
+    "IMG_2226.jpg",
+    "IMG_2227.jpg",
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+    "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+    "IMG_2488.jpg"
+   ]
+  },
+  {
    "id": "cervantes_garden_door.json:cervantes-garden-door",
    "name": "Cervantes junction · raised garden door and private patio",
    "kind": "reference feature",
@@ -4157,6 +4201,11 @@
    "name": "ref:apple-maps/02-3d-north-pool.png"
   },
   {
+   "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+   "kind": "reference",
+   "name": "ref:apple-maps/05-top-down-main-pool-and-lawn.png"
+  },
+  {
    "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
    "kind": "reference",
    "name": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png"
@@ -4165,6 +4214,11 @@
    "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
    "kind": "reference",
    "name": "ref:apple-maps/09-3d-north-pool-looking-south.png"
+  },
+  {
+   "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+   "kind": "reference",
+   "name": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
   }
  ],
  "edges": [
@@ -5353,6 +5407,30 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2226.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2226.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2226.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2226.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2227.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -5361,6 +5439,18 @@
   {
    "from": "photo:IMG_2227.jpg",
    "to": "paseo_wall.json:paseo-retaining-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2227.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2227.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -9159,6 +9249,18 @@
    "angleOffset": 33.7
   },
   {
+   "from": "photo:IMG_2488.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2488.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2494.jpg",
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
@@ -9297,6 +9399,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
    "to": "north_west_canopies.json:north-west-balcony-canopy-1",
    "relation": "cited-as-source",
@@ -9329,6 +9443,18 @@
   {
    "from": "ref:apple-maps/09-3d-north-pool-looking-south.png",
    "to": "north_west_canopies.json:north-west-balcony-canopy-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   }

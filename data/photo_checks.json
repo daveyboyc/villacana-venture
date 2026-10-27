@@ -512,6 +512,28 @@
    "by": "Codex; independent /root/paseo_source_review",
    "result": "not-comparable",
    "notes": "Identical approximate GPS/subject bookmark before/after shows the material improvement on unchanged geometry. Exact photo camera and stamp scale are unsolved, so this is a material diagnostic, not a calibrated photographic or placement match. Existing bend cracks remain; dry verge/agave positions are not built."
+  },
+  {
+   "task": "beach-gate-verge",
+   "checked": "2026-10-27",
+   "by": "Claude",
+   "feature": "seafront_fence.json:guillermo-beach-gate",
+   "photo": "IMG_2488.jpg",
+   "before": "docs/reviews/beach-gate-verge/IMG_2488-before.png",
+   "render": "docs/reviews/beach-gate-verge/IMG_2488-after.png",
+   "result": "matches",
+   "notes": "Looking up Calle Guillermo from its foot: the photo shows a level tiled lane between a white house wall and a raised planter. Before, the model sank the lane into a 3 m ramp channel with retaining walls; after, it is level at street level as photographed. Third-person view from the pin, not a solved camera; the planter and strelitzia are not modelled."
+  },
+  {
+   "task": "beach-gate-verge",
+   "checked": "2026-10-27",
+   "by": "Claude",
+   "feature": "beach_verge.json:barraka-front-verge",
+   "photo": "IMG_2226.jpg",
+   "before": "docs/reviews/beach-gate-verge/IMG_2226-before.png",
+   "render": "docs/reviews/beach-gate-verge/IMG_2226-after.png",
+   "result": "not-comparable",
+   "notes": "From the beach the photo shows a grass band with low shrubs in front of the white wall, gateway and railings. After, the render shows the green verge and shrub clumps along the frontage where before there was bare sand; the pin view is 50 m off and third-person, so extents, the arch position and shrub sizes cannot be compared. Rough outline pending close photos."
   }
  ],
  "legacyUnchecked": [

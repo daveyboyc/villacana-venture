@@ -13,6 +13,8 @@ import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
 import {barrakaSections,barrakaSign} from "./barraka-boardwalk";
+import { vergeClumps, vergeRing } from "./beach-verge";
+import beachVerge from "../data/beach_verge.json";
 import middleSouth from "../data/middle_pool_south_gate.json";
 import {middleSouthRings,middleSouthRect,middleSouthAt} from "./middle-pool-south-gate";
 import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing,gardenPlanterRing} from "./cervantes-garden-door";
@@ -207,6 +209,9 @@ async function boot(): Promise<void> {
     for (const ring of seafrontFenceRings()) fence.append(el("path", { d: path(ring), fill: "#fffdf3", stroke: "#6d6a5f", "stroke-width": 0.06 }));
     const fenceTitle = el("title", {}); fenceTitle.textContent = `White wall, arched gateway and railings: ${seafrontFence.trust} · ${seafrontFence.evidence.join(", ")}`; fence.append(fenceTitle);
     seafront.append(fence);
+    const verge=el("path",{id:"barraka-front-verge",d:path(vergeRing),fill:"#8c9a5b","fill-opacity":.85,stroke:"#5d6b3a","stroke-width":.15});
+    const vergeTitle=el("title",{});vergeTitle.textContent=`Grass and planting in front of the gateway and railings: ${beachVerge.trust}`;verge.append(vergeTitle);seafront.append(verge);
+    for(const [x,z,r] of vergeClumps) seafront.append(el("circle",{cx:x,cy:z,r,fill:"#4f6b3a",stroke:"#33452a","stroke-width":.1}));
     for(const section of barrakaSections()) seafront.append(el("path",{d:path([section.left,section.right,section.endRight,section.endLeft]),fill:"#80917b",stroke:"#635a47","stroke-width":.1}));
     const planter=el("circle",{id:"barraka-sign-planter-marker",cx:barrakaSign.point[0],cy:barrakaSign.point[1],r:.6,fill:"#a6bc68",stroke:"#455833","stroke-width":.15});
     const planterTitle=el("title",{});planterTitle.textContent=`${barrakaSign.name} · estimated position; marker, not footprint`;planter.append(planterTitle);seafront.append(planter);
