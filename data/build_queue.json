@@ -2129,6 +2129,25 @@
    "status": "open"
   },
   {
+   "id": "area-scorecard",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Per-area scorecard, visible while playing",
+   "photos": [],
+   "build": "Generate public/scorecard.json with one entry per area in data/areas.json: plan and level fit against the laser survey, street and pool-deck misfits, roof heights, reference photos (tagged, placed, solved cameras and whether a station passed), traced versus generated facade-kit parts, open discrepancies and tasks, placement state, and a plain-language status. Show the scorecard for the area the player stands in, in Walk and Overview, with a link to the area brief.",
+   "avoid": "No fake percentages: show the inputs. No scorecard in automated comparison renders. No geometry changes.",
+   "accept": [
+    "build_scorecard.py --check passes and runs in the build",
+    "Panel shows the right area at two spots and toggles (browser test)",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "done",
+   "owner": "Claude",
+   "notes": "Done: scripts/build_scorecard.py, public/scorecard.json, refs/SCORECARD.md, src/scorecard.ts; docs/SCORECARD.md; screenshots in docs/reviews/area-scorecard/."
+  },
+  {
    "id": "cervantes-door-steps-detail",
    "area": "cervantes",
    "priority": 2,
