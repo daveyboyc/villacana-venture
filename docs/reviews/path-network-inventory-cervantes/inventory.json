@@ -2,7 +2,7 @@
  "version": 1,
  "area": "cervantes",
  "task": "path-network-inventory-cervantes",
- "status": "source-inspected-review-pending",
+ "status": "available-source-inspected",
  "inspectedBy": "Codex Cervantes source inventory",
  "mapFrame": "source pixels and relationship schematics; world frame map-metres-east-south remains unregistered",
  "sources": [
@@ -888,62 +888,67 @@
    "observed": "Straight square terracotta field with broad grey joints and pale aggregate strips. Planting/garden-wall side and house/plinth side bound the paving independently of the red field.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "Some margin intervals disappear under plants and projecting walls; no measured full width."
+    "Some margin intervals disappear under plants and projecting walls; no measured full width.",
+    "Upper apron/kerb transition is not joined to these lower tile-field fragments; intervening margins need separate tracing."
    ],
    "traces": [
     {
      "source": "IMG_2275.jpg",
-     "role": "visible tile-field boundary: source-left finite fragment",
+     "role": "visible tile-field boundary: source-left lower fragment; stops before apron transition",
      "points": [
       [
-       130,
-       1590
+       50,
+       1570
       ],
       [
-       205,
-       1370
+       143,
+       1400
       ],
       [
-       292,
-       1110
+       260,
+       1200
       ],
       [
-       373,
-       850
+       340,
+       1030
       ],
       [
-       420,
-       720
+       392,
+       920
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2275.jpg",
-     "role": "visible tile-field boundary: source-right stops at foliage",
+     "role": "visible tile-field boundary: source-right lower fragment; stops before foliage and apron",
      "points": [
       [
-       1002,
-       1500
+       1090,
+       1570
       ],
       [
-       922,
-       1260
+       1000,
+       1370
       ],
       [
-       823,
-       1020
+       927,
+       1200
       ],
       [
-       749,
-       851
+       852,
+       1025
+      ],
+      [
+       793,
+       920
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -996,7 +1001,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1048,7 +1053,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1093,7 +1098,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2289.jpg",
@@ -1114,7 +1119,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2289.jpg",
@@ -1135,7 +1140,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1180,7 +1185,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1233,7 +1238,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1285,7 +1290,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1309,7 +1314,7 @@
    "observed": "Three projecting route treads with white risers and broad grey noses run beside a smooth tiled ramp between lawn kerb and planted bed.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "Tread counts are observed, not metric rise. Existing photo-read0.4–0.5m and survey~0.21m conflict stays open."
+    "Tread counts are observed, not metric rise. Existing photo-read 0.4–0.5 m and survey ~0.21 m conflict stays open."
    ],
    "traces": [
     {
@@ -1335,7 +1340,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2286.jpg",
@@ -1360,7 +1365,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2355.jpg",
@@ -1389,7 +1394,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1440,7 +1445,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2328.jpg",
@@ -1469,7 +1474,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1524,7 +1529,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2196.jpg",
@@ -1553,7 +1558,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1591,15 +1596,11 @@
       [
        599,
        1137
-      ],
-      [
-       675,
-       1165
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1631,45 +1632,53 @@
    "traces": [
     {
      "source": "IMG_2342.jpg",
-     "role": "lawn kerb: source-near two visible sides",
+     "role": "lawn kerb foot: two finite visible sides; not tile-field boundary",
      "points": [
       [
-       0,
-       1170
+       25,
+       882
       ],
       [
-       795,
-       1435
+       405,
+       1024
       ],
       [
-       1199,
-       892
+       742,
+       1150
+      ],
+      [
+       968,
+       938
+      ],
+      [
+       1175,
+       730
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2358.jpg",
      "role": "lawn-side paved edge: visible near-lane segment",
      "points": [
       [
-       688,
-       811
+       724,
+       810
       ],
       [
-       666,
-       522
+       706,
+       590
       ],
       [
-       655,
-       304
+       690,
+       400
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1726,7 +1735,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1750,7 +1759,8 @@
    "observed": "Plain square tile corridor has aggregate margins between a planted low edge and wall/soil strips. Visible segments stop where vegetation/roof framing hides the ground.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "No complete eastern-end boundary, calibrated width or exact Picasso approach connection from these frames."
+    "No complete eastern-end boundary, calibrated width or exact Picasso approach connection from these frames.",
+    "Foreground widening and distant foliage-hidden margins are not joined to these short visible tile-field fragments."
    ],
    "traces": [
     {
@@ -1758,58 +1768,42 @@
      "role": "tile-field boundary source-left: finite clear run",
      "points": [
       [
-       108,
-       1599
+       359,
+       1140
       ],
       [
-       237,
-       1248
+       449,
+       970
       ],
       [
-       340,
-       1019
-      ],
-      [
-       450,
-       826
-      ],
-      [
-       530,
-       673
+       506,
+       860
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2197.jpg",
      "role": "tile-field boundary source-right: finite clear run",
      "points": [
       [
-       1067,
-       1599
+       930,
+       1140
       ],
       [
-       913,
-       1251
+       862,
+       980
       ],
       [
-       812,
-       1014
-      ],
-      [
-       704,
-       819
-      ],
-      [
-       631,
-       674
+       804,
+       850
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1840,29 +1834,29 @@
      "role": "visible bed wall foot: stops at rounded end",
      "points": [
       [
-       90,
-       1517
+       235,
+       1540
       ],
       [
-       332,
-       1246
+       395,
+       1270
       ],
       [
-       576,
-       963
+       555,
+       1010
       ],
       [
-       746,
-       713
+       700,
+       770
       ],
       [
-       826,
-       523
+       813,
+       565
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1916,7 +1910,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -1946,29 +1940,29 @@
      "role": "locator: shaped coping and closed garden door",
      "points": [
       [
-       778,
-       949
+       760,
+       735
       ],
       [
        1055,
-       949
+       735
       ],
       [
        1055,
-       1260
+       1020
       ],
       [
-       778,
-       1260
+       760,
+       1020
       ],
       [
-       778,
-       949
+       760,
+       735
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2020,7 +2014,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2046,24 +2040,20 @@
    "traces": [
     {
      "source": "IMG_2197.jpg",
-     "role": "red grooved strip on side approach: visible span",
+     "role": "locator: red grooved strip component; not an edge trace",
      "points": [
       [
-       115,
-       1381
+       162,
+       1300
       ],
       [
-       199,
-       1196
-      ],
-      [
-       279,
-       1153
+       230,
+       1190
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2086,52 +2076,10 @@
    "observed": "Several transverse white garden-wall tops subdivide visible private patio cells beneath climbers/umbrellas, stopping at cropped or hidden joins.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "The model has three partial spans; one-to-one source/world identity and full house-end joins remain unresolved."
+    "The model has three partial spans; one-to-one source/world identity and full house-end joins remain unresolved.",
+    "Wall tops are partly screened by climbers and trees. Inaccurate initial pixel lines were removed; no continuous partition-top trace is claimed here."
    ],
-   "traces": [
-    {
-     "source": "IMG_2369.jpg",
-     "role": "visible wall-top fragment across near patio",
-     "points": [
-      [
-       62,
-       1322
-      ],
-      [
-       404,
-       1174
-      ],
-      [
-       701,
-       1049
-      ]
-     ],
-     "closed": false,
-     "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
-    },
-    {
-     "source": "IMG_2369.jpg",
-     "role": "visible middle partition wall-top fragment",
-     "points": [
-      [
-       469,
-       900
-      ],
-      [
-       698,
-       831
-      ],
-      [
-       899,
-       800
-      ]
-     ],
-     "closed": false,
-     "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
-    }
-   ],
+   "traces": [],
    "mapGeometry": null,
    "mapTransform": null,
    "modelFeatureIds": [
@@ -2186,7 +2134,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2242,7 +2190,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2261,69 +2209,70 @@
    "observed": "A CALLE MIGUEL signed interior has a flat plaster ceiling, side walls/pilasters and a clearly visible round exit arch.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "Camera-side entrance is out of frame; world host, both portal positions, dimensions, public access and relation to any legacy candidate are unresolved."
+    "Camera-side entrance is out of frame; world host, both portal positions, dimensions, public access and relation to any legacy candidate are unresolved.",
+    "The lower right arch intrados is obscured by the foreground bench and is not traced through that occlusion."
    ],
    "traces": [
     {
      "source": "IMG_2288.jpg",
-     "role": "far arch intrados: observed curved outline",
+     "role": "far arch intrados: finite observed curve and legs; right side stops above bench",
      "points": [
       [
-       267,
-       818
+       278,
+       810
       ],
       [
-       269,
-       704
+       275,
+       706
       ],
       [
-       286,
-       630
+       282,
+       655
       ],
       [
-       329,
-       583
+       301,
+       609
       ],
       [
-       380,
-       552
+       335,
+       574
       ],
       [
-       428,
-       538
+       378,
+       548
       ],
       [
-       478,
-       535
+       422,
+       536
       ],
       [
-       533,
-       549
+       468,
+       543
       ],
       [
-       578,
-       576
+       511,
+       562
       ],
       [
-       615,
-       620
+       549,
+       592
       ],
       [
-       640,
-       676
+       577,
+       633
       ],
       [
-       649,
-       733
+       586,
+       681
       ],
       [
-       649,
-       817
+       590,
+       730
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -2360,7 +2309,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2409,7 +2358,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -2438,7 +2387,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2487,7 +2436,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -2516,7 +2465,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2565,7 +2514,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2614,7 +2563,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2663,7 +2612,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -2692,7 +2641,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2741,7 +2690,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -2779,7 +2728,7 @@
  "tunnels": [
   {
    "id": "miguel-source",
-   "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, includingtun008, are unresolved.",
+   "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, including tun-008, are unresolved.",
    "access": "A visible corridor continues beyond an arch; public access and its two world connections remain unknown.",
    "sources": [
     "IMG_2288.jpg"
@@ -2811,7 +2760,7 @@
   },
   {
    "id": "cervantes-gap-miguel-identity",
-   "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacytun008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
+   "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacy tun-008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
    "followUp": "cervantes-identify-miguel-passage"
   },
   {
@@ -2821,7 +2770,7 @@
   },
   {
    "id": "cervantes-gap-levels",
-   "needed": "Resolve photo-read0.4–0.5m versus survey~0.21m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
+   "needed": "Resolve photo-read 0.4–0.5 m versus survey ~0.21 m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
    "followUp": "elena-level-clearance-survey"
   },
   {
@@ -2836,7 +2785,7 @@
   "No invented roof-to-ground boundary, public access or metric width."
  ],
  "placementVerified": false,
- "scopeLimit": "Scoped available-source inventory:26area-tagged public +4neighbouringpublic +Esriground +20private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
+ "scopeLimit": "Scoped available-source inventory: 26 area-tagged public photos, four neighbouring public views, the Esri ground image and 20 private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
  "drawings": [
   {
    "path": "plan.svg",

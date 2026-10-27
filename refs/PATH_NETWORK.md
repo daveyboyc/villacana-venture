@@ -7,10 +7,10 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 ## Counts
 
 - areas: 14
-- inventoryCompleteAreas: 1
+- inventoryCompleteAreas: 2
 - sourceObservations: 59
-- sourcePixelTraces: 60
-- sourcePixelLocators: 31
+- sourcePixelTraces: 57
+- sourcePixelLocators: 32
 - sources: 176
 - uninspectedSources: 106
 - routes: 24

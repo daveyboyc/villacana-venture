@@ -13,7 +13,7 @@ or [select Cervantes in the canonical map inspector](https://daveyboyc.github.io
 - 30 component rows, including finite path margins, ground walls versus upper
   facades/roof outlines, the Dalí apron, drains, garden door, steps, patio fragments,
   and the signed CALLE MIGUEL interior.
-- Source-pixel annotations and separate schematic [plan](plan.svg) and
+- 41 source-pixel annotations (17 finite traces and 24 locators) and separate schematic [plan](plan.svg) and
   [sections](tunnel-section.svg). These express visible relationships, not scale
   or map registration. Dashed locators identify components; they are not edge traces.
 - Per-component [model assessments](model-comparisons.json) and six actual game
@@ -38,8 +38,9 @@ pixels are excluded from public outputs; their source hashes and limitations are
 recorded. No new 3D geometry, collision, physical access or placement approval is
 claimed by this inventory.
 
-Named next tasks in the queue are `cervantes-register-edges`,
-`cervantes-identify-miguel-passage` and `cervantes-bounded-structure`. The existing
+Next tasks: [register the finite edges #156](https://github.com/daveyboyc/villacana-venture/issues/156),
+[identify Miguel and both portals #157](https://github.com/daveyboyc/villacana-venture/issues/157),
+then [correct supported structures #158](https://github.com/daveyboyc/villacana-venture/issues/158). The existing
 `elena-level-clearance-survey` covers the shared level discrepancy; it is reused.
 Structural corrections follow registration and runtime acceptance, before paving.
 

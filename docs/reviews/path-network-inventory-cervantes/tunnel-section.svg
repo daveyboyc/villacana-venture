@@ -4,7 +4,7 @@
 <rect x="35" y="112" width="690" height="450" rx="6" fill="#fff" stroke="#b7b1a3"/>
 <text x="53" y="145" class="h">J01 shared-route transition</text>
 <text x="53" y="175" class="t">IMG_2286 / 2355 / 2328: ramp beside THREE route treads</text>
-<path d="M80 447H183V390H277V333H375V276H636" fill="none" stroke="#ac7653" stroke-width="9"/><path d="M80 481L375 309H636" fill="none" stroke="#526e80" stroke-width="5"/>
+<path d="M80 447H183V390H277V333H375V276H636" fill="none" stroke="#ac7653" stroke-width="9"/><path d="M80 447L636 276" fill="none" stroke="#526e80" stroke-width="5"/>
 <text x="92" y="466" class="small">foot drain</text>
 <text x="244" y="416" class="small">three route tread rises</text>
 <text x="399" y="330" class="small">smooth adjacent ramp</text>

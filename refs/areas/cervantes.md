@@ -50,10 +50,9 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `cervantes-bounded-structure` | Cervantes: correct supported boundary and passage omissions after registration (after path-network-inventory-cervantes, cervantes-register-edges, 3d-browser-regression-reliability) | open · placement: not-verified |  |
-| P1 | `cervantes-identify-miguel-passage` | Cervantes/Miguel: identify signed passage and both world portals (after path-network-inventory-cervantes) | open · placement: not-applicable |  |
-| P1 | `cervantes-register-edges` | Cervantes: register finite path sides, wall ends and eastern terminal (after path-network-inventory-cervantes) | open · placement: not-applicable |  |
-| P1 | `path-network-inventory-cervantes` [#130](https://github.com/daveyboyc/villacana-venture/issues/130) | Calle Miguel de Cervantes: full-source path, tunnel and boundary inventory (after path-network-baseline) | in-progress · Codex · placement: not-applicable |  |
+| P1 | `cervantes-bounded-structure` [#158](https://github.com/daveyboyc/villacana-venture/issues/158) | Cervantes: correct supported boundary and passage omissions after registration (after path-network-inventory-cervantes, cervantes-register-edges, 3d-browser-regression-reliability) | open · placement: not-verified |  |
+| P1 | `cervantes-identify-miguel-passage` [#157](https://github.com/daveyboyc/villacana-venture/issues/157) | Cervantes/Miguel: identify signed passage and both world portals (after path-network-inventory-cervantes) | open · placement: not-applicable |  |
+| P1 | `cervantes-register-edges` [#156](https://github.com/daveyboyc/villacana-venture/issues/156) | Cervantes: register finite path sides, wall ends and eastern terminal (after path-network-inventory-cervantes) | open · placement: not-applicable |  |
 
 ## Built from these photos
 
@@ -216,7 +215,7 @@ graph LR
 | `ramp:cervantes-elena-ramp` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `steps:cervantes-elena-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
-**Built without complete newer photo-check records:** `cervantes-east-south-patios`, `cervantes-door-steps`, `junction-lawns`, `cervantes-east-hedge`, `cervantes-north-patios`, `cervantes-steps-treads`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
+**Built without complete newer photo-check records:** `cervantes-east-south-patios`, `cervantes-door-steps`, `junction-lawns`, `cervantes-east-hedge`, `cervantes-north-patios`, `cervantes-steps-treads`, `path-network-inventory-cervantes`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
 ## Reviewed references
 

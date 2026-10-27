@@ -13,10 +13,10 @@
  },
  "totals": {
   "areas": 14,
-  "inventoryCompleteAreas": 1,
+  "inventoryCompleteAreas": 2,
   "sourceObservations": 59,
-  "sourcePixelTraces": 60,
-  "sourcePixelLocators": 31,
+  "sourcePixelTraces": 57,
+  "sourcePixelLocators": 32,
   "sources": 176,
   "uninspectedSources": 106,
   "routes": 24,
@@ -225,7 +225,7 @@
   },
   "cervantes": {
    "inventoryPath": "docs/reviews/path-network-inventory-cervantes/inventory.json",
-   "revision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790",
+   "revision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2",
    "sources": [
     "IMG_2252.jpg",
     "IMG_2260.jpg",
@@ -313,14 +313,14 @@
     "cervantes:A01"
    ],
    "sourceCoverage": "inspected",
-   "inventoryComplete": false,
-   "reviewCurrent": false,
-   "limits": "Scoped available-source inventory:26area-tagged public +4neighbouringpublic +Esriground +20private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
+   "inventoryComplete": true,
+   "reviewCurrent": true,
+   "limits": "Scoped available-source inventory: 26 area-tagged public photos, four neighbouring public views, the Esri ground image and 20 private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
    "drawing": "/path-network/cervantes/index.html",
    "tunnels": [
     {
      "id": "miguel-source",
-     "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, includingtun008, are unresolved.",
+     "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, including tun-008, are unresolved.",
      "access": "A visible corridor continues beyond an arch; public access and its two world connections remain unknown.",
      "sources": [
       "IMG_2288.jpg"
@@ -352,7 +352,7 @@
     },
     {
      "id": "cervantes-gap-miguel-identity",
-     "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacytun008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
+     "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacy tun-008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
      "followUp": "cervantes-identify-miguel-passage"
     },
     {
@@ -362,7 +362,7 @@
     },
     {
      "id": "cervantes-gap-levels",
-     "needed": "Resolve photo-read0.4–0.5m versus survey~0.21m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
+     "needed": "Resolve photo-read 0.4–0.5 m versus survey ~0.21 m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
      "followUp": "elena-level-clearance-survey"
     },
     {
@@ -13452,14 +13452,14 @@
    ],
    "location": null,
    "nextAction": "Obtain opposite view/shared physical anchors before assigning a host, world portals or through-route.",
-   "identityNote": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, includingtun008, are unresolved.",
+   "identityNote": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, including tun-008, are unresolved.",
    "areas": [
     "cervantes"
    ],
    "modelContext": [],
    "sourceObservations": {
     "id": "miguel-source",
-    "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, includingtun008, are unresolved.",
+    "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, including tun-008, are unresolved.",
     "access": "A visible corridor continues beyond an arch; public access and its two world connections remain unknown.",
     "sources": [
      "IMG_2288.jpg"
@@ -35503,8 +35503,8 @@
    "id": "path-gap:cervantes-gap-miguel-identity",
    "kind": "path-evidence-gap",
    "name": "cervantes gap miguel identity",
-   "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacytun008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
-   "nextAction": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacytun008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
+   "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacy tun-008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
+   "nextAction": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacy tun-008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
    "states": {
     "source": "source needed",
     "identity": "unresolved",
@@ -35537,8 +35537,8 @@
    "id": "path-gap:cervantes-gap-levels",
    "kind": "path-evidence-gap",
    "name": "cervantes gap levels",
-   "needed": "Resolve photo-read0.4–0.5m versus survey~0.21m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
-   "nextAction": "Resolve photo-read0.4–0.5m versus survey~0.21m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
+   "needed": "Resolve photo-read 0.4–0.5 m versus survey ~0.21 m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
+   "nextAction": "Resolve photo-read 0.4–0.5 m versus survey ~0.21 m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
    "states": {
     "source": "source needed",
     "identity": "unresolved",
@@ -38309,7 +38309,8 @@
    "observed": "Straight square terracotta field with broad grey joints and pale aggregate strips. Planting/garden-wall side and house/plinth side bound the paving independently of the red field.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "Some margin intervals disappear under plants and projecting walls; no measured full width."
+    "Some margin intervals disappear under plants and projecting walls; no measured full width.",
+    "Upper apron/kerb transition is not joined to these lower tile-field fragments; intervening margins need separate tracing."
    ],
    "sources": [
     "IMG_2273.jpg",
@@ -38320,57 +38321,61 @@
    "traces": [
     {
      "source": "IMG_2275.jpg",
-     "role": "visible tile-field boundary: source-left finite fragment",
+     "role": "visible tile-field boundary: source-left lower fragment; stops before apron transition",
      "points": [
       [
-       130,
-       1590
+       50,
+       1570
       ],
       [
-       205,
-       1370
+       143,
+       1400
       ],
       [
-       292,
-       1110
+       260,
+       1200
       ],
       [
-       373,
-       850
+       340,
+       1030
       ],
       [
-       420,
-       720
+       392,
+       920
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2275.jpg",
-     "role": "visible tile-field boundary: source-right stops at foliage",
+     "role": "visible tile-field boundary: source-right lower fragment; stops before foliage and apron",
      "points": [
       [
-       1002,
-       1500
+       1090,
+       1570
       ],
       [
-       922,
-       1260
+       1000,
+       1370
       ],
       [
-       823,
-       1020
+       927,
+       1200
       ],
       [
-       749,
-       851
+       852,
+       1025
+      ],
+      [
+       793,
+       920
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38403,9 +38408,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:W02",
@@ -38453,7 +38458,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38486,9 +38491,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:W03",
@@ -38535,7 +38540,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38568,9 +38573,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:W04",
@@ -38610,7 +38615,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2289.jpg",
@@ -38631,7 +38636,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2289.jpg",
@@ -38652,7 +38657,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38685,9 +38690,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:W05",
@@ -38727,7 +38732,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38760,9 +38765,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:W06",
@@ -38810,7 +38815,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38843,9 +38848,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:W07",
@@ -38892,7 +38897,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -38909,9 +38914,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:J01",
@@ -38924,7 +38929,7 @@
    "observed": "Three projecting route treads with white risers and broad grey noses run beside a smooth tiled ramp between lawn kerb and planted bed.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "Tread counts are observed, not metric rise. Existing photo-read0.4–0.5m and survey~0.21m conflict stays open."
+    "Tread counts are observed, not metric rise. Existing photo-read 0.4–0.5 m and survey ~0.21 m conflict stays open."
    ],
    "sources": [
     "IMG_2252.jpg",
@@ -38958,7 +38963,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2286.jpg",
@@ -38983,7 +38988,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2355.jpg",
@@ -39012,7 +39017,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39062,7 +39067,7 @@
     "id": "elena-level-clearance-survey",
     "url": "https://github.com/daveyboyc/villacana-venture/issues/148"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:J02",
@@ -39107,7 +39112,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2328.jpg",
@@ -39136,7 +39141,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39169,9 +39174,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:J03",
@@ -39221,7 +39226,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2196.jpg",
@@ -39250,7 +39255,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39285,7 +39290,7 @@
     "id": "elena-level-clearance-survey",
     "url": "https://github.com/daveyboyc/villacana-venture/issues/148"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:J04",
@@ -39318,15 +39323,11 @@
       [
        599,
        1137
-      ],
-      [
-       675,
-       1165
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39359,9 +39360,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:J05",
@@ -39388,45 +39389,53 @@
    "traces": [
     {
      "source": "IMG_2342.jpg",
-     "role": "lawn kerb: source-near two visible sides",
+     "role": "lawn kerb foot: two finite visible sides; not tile-field boundary",
      "points": [
       [
-       0,
-       1170
+       25,
+       882
       ],
       [
-       795,
-       1435
+       405,
+       1024
       ],
       [
-       1199,
-       892
+       742,
+       1150
+      ],
+      [
+       968,
+       938
+      ],
+      [
+       1175,
+       730
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2358.jpg",
      "role": "lawn-side paved edge: visible near-lane segment",
      "points": [
       [
-       688,
-       811
+       724,
+       810
       ],
       [
-       666,
-       522
+       706,
+       590
       ],
       [
-       655,
-       304
+       690,
+       400
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39489,9 +39498,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:J06",
@@ -39541,7 +39550,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39574,9 +39583,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:E01",
@@ -39589,7 +39598,8 @@
    "observed": "Plain square tile corridor has aggregate margins between a planted low edge and wall/soil strips. Visible segments stop where vegetation/roof framing hides the ground.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "No complete eastern-end boundary, calibrated width or exact Picasso approach connection from these frames."
+    "No complete eastern-end boundary, calibrated width or exact Picasso approach connection from these frames.",
+    "Foreground widening and distant foliage-hidden margins are not joined to these short visible tile-field fragments."
    ],
    "sources": [
     "IMG_2197.jpg",
@@ -39603,58 +39613,42 @@
      "role": "tile-field boundary source-left: finite clear run",
      "points": [
       [
-       108,
-       1599
+       359,
+       1140
       ],
       [
-       237,
-       1248
+       449,
+       970
       ],
       [
-       340,
-       1019
-      ],
-      [
-       450,
-       826
-      ],
-      [
-       530,
-       673
+       506,
+       860
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2197.jpg",
      "role": "tile-field boundary source-right: finite clear run",
      "points": [
       [
-       1067,
-       1599
+       930,
+       1140
       ],
       [
-       913,
-       1251
+       862,
+       980
       ],
       [
-       812,
-       1014
-      ],
-      [
-       704,
-       819
-      ],
-      [
-       631,
-       674
+       804,
+       850
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39687,9 +39681,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:E02",
@@ -39715,29 +39709,29 @@
      "role": "visible bed wall foot: stops at rounded end",
      "points": [
       [
-       90,
-       1517
+       235,
+       1540
       ],
       [
-       332,
-       1246
+       395,
+       1270
       ],
       [
-       576,
-       963
+       555,
+       1010
       ],
       [
-       746,
-       713
+       700,
+       770
       ],
       [
-       826,
-       523
+       813,
+       565
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39785,9 +39779,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:E03",
@@ -39835,7 +39829,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39868,9 +39862,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:E04",
@@ -39895,29 +39889,29 @@
      "role": "locator: shaped coping and closed garden door",
      "points": [
       [
-       778,
-       949
+       760,
+       735
       ],
       [
        1055,
-       949
+       735
       ],
       [
        1055,
-       1260
+       1020
       ],
       [
-       778,
-       1260
+       760,
+       1020
       ],
       [
-       778,
-       949
+       760,
+       735
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -39950,9 +39944,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:E05",
@@ -39999,7 +39993,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40032,9 +40026,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:E06",
@@ -40055,24 +40049,20 @@
    "traces": [
     {
      "source": "IMG_2197.jpg",
-     "role": "red grooved strip on side approach: visible span",
+     "role": "locator: red grooved strip component; not an edge trace",
      "points": [
       [
-       115,
-       1381
+       162,
+       1300
       ],
       [
-       199,
-       1196
-      ],
-      [
-       279,
-       1153
+       230,
+       1190
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40105,9 +40095,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:R01",
@@ -40120,57 +40110,15 @@
    "observed": "Several transverse white garden-wall tops subdivide visible private patio cells beneath climbers/umbrellas, stopping at cropped or hidden joins.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "The model has three partial spans; one-to-one source/world identity and full house-end joins remain unresolved."
+    "The model has three partial spans; one-to-one source/world identity and full house-end joins remain unresolved.",
+    "Wall tops are partly screened by climbers and trees. Inaccurate initial pixel lines were removed; no continuous partition-top trace is claimed here."
    ],
    "sources": [
     "IMG_2359.jpg",
     "IMG_2368.jpg",
     "IMG_2369.jpg"
    ],
-   "traces": [
-    {
-     "source": "IMG_2369.jpg",
-     "role": "visible wall-top fragment across near patio",
-     "points": [
-      [
-       62,
-       1322
-      ],
-      [
-       404,
-       1174
-      ],
-      [
-       701,
-       1049
-      ]
-     ],
-     "closed": false,
-     "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
-    },
-    {
-     "source": "IMG_2369.jpg",
-     "role": "visible middle partition wall-top fragment",
-     "points": [
-      [
-       469,
-       900
-      ],
-      [
-       698,
-       831
-      ],
-      [
-       899,
-       800
-      ]
-     ],
-     "closed": false,
-     "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
-    }
-   ],
+   "traces": [],
    "mapGeometry": null,
    "modelContext": [
     {
@@ -40231,9 +40179,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:R02",
@@ -40283,7 +40231,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40316,9 +40264,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:R03",
@@ -40369,7 +40317,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40386,9 +40334,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T01",
@@ -40401,7 +40349,8 @@
    "observed": "A CALLE MIGUEL signed interior has a flat plaster ceiling, side walls/pilasters and a clearly visible round exit arch.",
    "unknowns": [
     "No calibrated source-to-world transform; physical dimensions and concealed endpoints remain unresolved.",
-    "Camera-side entrance is out of frame; world host, both portal positions, dimensions, public access and relation to any legacy candidate are unresolved."
+    "Camera-side entrance is out of frame; world host, both portal positions, dimensions, public access and relation to any legacy candidate are unresolved.",
+    "The lower right arch intrados is obscured by the foreground bench and is not traced through that occlusion."
    ],
    "sources": [
     "IMG_2288.jpg"
@@ -40409,64 +40358,64 @@
    "traces": [
     {
      "source": "IMG_2288.jpg",
-     "role": "far arch intrados: observed curved outline",
+     "role": "far arch intrados: finite observed curve and legs; right side stops above bench",
      "points": [
       [
-       267,
-       818
+       278,
+       810
       ],
       [
-       269,
-       704
+       275,
+       706
       ],
       [
-       286,
-       630
+       282,
+       655
       ],
       [
-       329,
-       583
+       301,
+       609
       ],
       [
-       380,
-       552
+       335,
+       574
       ],
       [
-       428,
-       538
+       378,
+       548
       ],
       [
-       478,
-       535
+       422,
+       536
       ],
       [
-       533,
-       549
+       468,
+       543
       ],
       [
-       578,
-       576
+       511,
+       562
       ],
       [
-       615,
-       620
+       549,
+       592
       ],
       [
-       640,
-       676
+       577,
+       633
       ],
       [
-       649,
-       733
+       586,
+       681
       ],
       [
-       649,
-       817
+       590,
+       730
       ]
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -40503,7 +40452,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40520,9 +40469,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T02",
@@ -40568,7 +40517,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -40597,7 +40546,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40614,9 +40563,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T03",
@@ -40662,7 +40611,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -40691,7 +40640,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40708,9 +40657,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T04",
@@ -40756,7 +40705,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40773,9 +40722,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T05",
@@ -40821,7 +40770,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40838,9 +40787,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T06",
@@ -40886,7 +40835,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     },
     {
      "source": "IMG_2288.jpg",
@@ -40915,7 +40864,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40932,9 +40881,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:T07",
@@ -40980,7 +40929,7 @@
      ],
      "closed": false,
      "space": "source-pixels",
-     "uncertaintyPixels": "Manual visual trace/locator; approximately10–25px on clear lines, larger under foliage; no metric transform."
+     "uncertaintyPixels": "Manual visual trace/locator; approximately 10–25 px on clear lines, larger under foliage; no metric transform."
     }
    ],
    "mapGeometry": null,
@@ -40997,9 +40946,9 @@
    "nextAction": "Resolve the stated limits under cervantes-identify-miguel-passage before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-identify-miguel-passage",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-identify-miguel-passage.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/157"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-observation:cervantes:A01",
@@ -41052,9 +41001,9 @@
    "nextAction": "Resolve the stated limits under cervantes-register-edges before treating this source observation as positioned geometry.",
    "nextTask": {
     "id": "cervantes-register-edges",
-    "url": "https://github.com/daveyboyc/villacana-venture/blob/main/refs/issues/cervantes-register-edges.md"
+    "url": "https://github.com/daveyboyc/villacana-venture/issues/156"
    },
-   "inventoryRevision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790"
+   "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
    "id": "path-source:6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
@@ -45906,10 +45855,10 @@
    "tunnels": [
     "path-tunnel:miguel-source"
    ],
-   "inventoryComplete": false,
+   "inventoryComplete": true,
    "inventory": {
     "inventoryPath": "docs/reviews/path-network-inventory-cervantes/inventory.json",
-    "revision": "14311c89520b431a3f27bfd0b07bc8c8a0401a3bd02a335f791c407d69884790",
+    "revision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2",
     "sources": [
      "IMG_2252.jpg",
      "IMG_2260.jpg",
@@ -45997,14 +45946,14 @@
      "cervantes:A01"
     ],
     "sourceCoverage": "inspected",
-    "inventoryComplete": false,
-    "reviewCurrent": false,
-    "limits": "Scoped available-source inventory:26area-tagged public +4neighbouringpublic +Esriground +20private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
+    "inventoryComplete": true,
+    "reviewCurrent": true,
+    "limits": "Scoped available-source inventory: 26 area-tagged public photos, four neighbouring public views, the Esri ground image and 20 private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
     "drawing": "/path-network/cervantes/index.html",
     "tunnels": [
      {
       "id": "miguel-source",
-      "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, includingtun008, are unresolved.",
+      "identity": "CALLE MIGUEL interior in IMG2288 is a separate signed source group. Its host and relationship to all legacy registry candidates, including tun-008, are unresolved.",
       "access": "A visible corridor continues beyond an arch; public access and its two world connections remain unknown.",
       "sources": [
        "IMG_2288.jpg"
@@ -46036,7 +45985,7 @@
      },
      {
       "id": "cervantes-gap-miguel-identity",
-      "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacytun008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
+      "needed": "Find opposite/entrance view and shared architectural anchors for IMG2288 CALLE MIGUEL; resolve host, both portal positions and relationship (if any) to legacy tun-008. Exterior CALLE DE MIGUEL plaque alone is insufficient.",
       "followUp": "cervantes-identify-miguel-passage"
      },
      {
@@ -46046,7 +45995,7 @@
      },
      {
       "id": "cervantes-gap-levels",
-      "needed": "Resolve photo-read0.4–0.5m versus survey~0.21m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
+      "needed": "Resolve photo-read 0.4–0.5 m versus survey ~0.21 m at shared ramp; independently measure route clear width, tread/rise and garden-door projecting steps plus raised sill.",
       "followUp": "elena-level-clearance-survey"
      },
      {
@@ -46057,7 +46006,7 @@
     ]
    },
    "drawing": "/path-network/cervantes/index.html",
-   "limits": "Scoped available-source inventory:26area-tagged public +4neighbouringpublic +Esriground +20private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
+   "limits": "Scoped available-source inventory: 26 area-tagged public photos, four neighbouring public views, the Esri ground image and 20 private references. Source-relative observations only; physical map, registered edges, tunnel identity and measured clearance remain unresolved.",
    "nextAction": "Obtain opposite-end portal photos, path-edge views and ground/roof anchors.",
    "areas": [
     "cervantes"

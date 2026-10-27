@@ -1,5 +1,5 @@
 {
- "scope": "Pinned Cervantes inventory model-context assessments; all30 rows accounted; no placement approval or calibrated match.",
+ "scope": "Pinned Cervantes inventory model-context assessments; all 30 rows accounted; no placement approval or calibrated match.",
  "assessments": [
   {
    "featureIds": [
@@ -133,7 +133,7 @@
    ],
    "modelRevision": "83ca94df5f0cdab85e5972a8ac8c8cce69daced9",
    "result": "partial",
-   "observation": "Current model has a closed brown garden door with shaped coping and a separate private approach; it is not a through-route opening. The two projecting source treads plus raised sill require specific level comparison; the uncalibrated view cannot certify complete tread/sill rise, measured proportions or world position.",
+   "observation": "Current model has a closed brown garden door with shaped coping and a separate private approach. The pinned view visibly presents only one projecting tread/block plus a raised sill; terrain or spacing interrupts the second tread expected from the source. This is a visible component/level mismatch requiring correction, not proof that both source treads are represented. The uncalibrated view cannot certify complete tread/sill rise, measured proportions or world position.",
    "limitations": "Semantic component coverage only. Uncalibrated model-context views and source-relative drawings cannot approve physical position, width, height, access or hidden boundaries.",
    "followUp": "elena-level-clearance-survey",
    "cameraStatus": "Uncalibrated context or explicitly unlocated source; no exact photo match",

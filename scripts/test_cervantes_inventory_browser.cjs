@@ -2,7 +2,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 (async()=>{
- const {createServer}=await import('vite');const server=await createServer({cacheDir:`node_modules/.vite-cervantes-${process.pid}`,server:{host:'127.0.0.1',port:0},logLevel:'error'});await server.listen();
+ const {createServer}=await import('vite');const server=await createServer({cacheDir:`node_modules/.vite-cervantes-${process.pid}`,server:{host:'127.0.0.1',port:0,strictPort:false},logLevel:'error'});await server.listen();
  const browser=await chromium.launch({executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,args:['--no-sandbox']});
  try{
   const page=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -35,7 +35,11 @@ const fs=require('node:fs');
   assert.equal(await viewer.locator('#image').isVisible(),false);
   assert.match(await viewer.locator('#source-limitations').innerText(),/./);
   await viewer.reload();await viewer.waitForSelector('#feature option',{state:'attached'});assert.equal(await viewer.locator('#feature').inputValue(),'cervantes:A01');
-  const network=JSON.parse(fs.readFileSync('public/path-network.json'));assert.ok(JSON.stringify(network).includes('miguel-source'));
+  const network=JSON.parse(fs.readFileSync('public/path-network.json')),miguel=network.records.find(r=>r.id==='path-tunnel:miguel-source');
+  assert.equal(miguel.location,null);assert.equal(miguel.hostIds.length,0);assert.ok(miguel.portals.every(p=>p.point===null && p.connection===null));
+  await page.goto(site+'/?view=map&network=1');await page.waitForSelector('#network-search');await page.fill('#network-search','CALLE MIGUEL');
+  await page.locator('[data-network-id="path-tunnel:miguel-source"]').click();assert.match(await page.locator('#network-detail').innerText(),/Location unresolved/);
+  await page.reload();await page.waitForSelector('#network-detail h3');assert.match(await page.locator('#network-detail h3').innerText(),/CALLE MIGUEL/);
   assert.deepEqual(errors,[]);
   console.log('Cervantes source annotations, drawings, pinned comparisons, unlocated tunnel, private metadata and three mobile viewports PASS');
  }finally{await browser.close();await server.close();}
