@@ -1,7 +1,8 @@
 # One map and a complete photo index
 
-The app root is the canonical entry. Map & photos uses `src/blueprint.ts`'s detailed
-registry map; Overview and Walk embed the existing `src/slice.ts` renderer for
+The app root is the canonical entry and opens Inspect. Use `?view=map` for
+Map & photos, which uses `src/blueprint.ts`'s detailed
+registry map; Inspect and Walk embed the existing `src/slice.ts` renderer for
 north, middle, south and main pools plus the seafront. The separate OSM default
 and simplified photo-map browser modules have been retired. Old `blueprint.html`
 and `photos.html` links preserve query parameters, selected-photo IDs and hashes
@@ -10,9 +11,10 @@ while redirecting to the root. Diagnostic `slice.html` links remain usable.
 ## Find and cite a photo
 
 - Search a stable ID, visible subject, caption or area; choose an area filter if useful.
-- Camera IDs are on by default in Map & photos and Overview. Labels declutter at
-  crowded zoom levels; every source remains available in the list. Selecting an
-  overview ID opens its photo card in Map & photos.
+- Camera IDs are on by default in Map & photos. In Inspect, Photo labels under
+  More enables them; inspecting a selected photo enables them automatically. Labels
+  declutter at crowded zoom levels; every source remains available in the list.
+  Selecting an inspection ID opens its photo card in Map & photos.
 - The card opens the full public JPEG or links to the private repository. Private
   and unplaced sources are searchable; neither receives an invented camera pin.
 - Copy photo link reopens the chosen ID. Copy agent reference includes the source
