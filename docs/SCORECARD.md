@@ -22,7 +22,8 @@ photo taken on or after a request's `since` date to the request whose spot it wa
 its radius, plus up to 5 m of GPS accuracy) and facing its `look` point (reviewed `looksAt`, or the
 compass within 60 degrees). The request then counts as received and the area turns amber. An agent
 looks at the photos and sets `status: answered` with `answeredBy` and a `note`, or leaves it open and
-says what is still missing. `scripts/build_references.py` adds each request to the evidence graph
+says what is still missing; photos that matched by position but do not show the spot go in
+`notAnswering`, which turns the request back to red. `scripts/build_references.py` adds each request to the evidence graph
 (`photo-request:<id>`, `in-area`, `unblocks` a task, and an `answers` edge from each matching photo,
 basis position or reviewed) and fails on an answered request without photos and a note.
 
