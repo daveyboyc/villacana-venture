@@ -16,8 +16,10 @@ class Scorecard(unittest.TestCase):
         cls.card = json.loads((ROOT / 'public/scorecard.json').read_text())
 
     def test_committed_scorecard_is_current(self):
-        self.assertEqual((ROOT / 'public/scorecard.json').read_text(), build_scorecard.text(build_scorecard.build()),
-                         'public/scorecard.json is stale: run python3 scripts/build_scorecard.py')
+        card = build_scorecard.build()
+        stale = 'stale: run python3 scripts/build_scorecard.py'
+        self.assertEqual((ROOT / 'public/scorecard.json').read_text(), build_scorecard.text(card), 'public/scorecard.json is ' + stale)
+        self.assertEqual((ROOT / 'refs/SCORECARD.md').read_text(), build_scorecard.table(card), 'refs/SCORECARD.md is ' + stale)
 
     def test_every_area_has_a_card(self):
         areas = [a['id'] for a in json.loads((ROOT / 'data/areas.json').read_text())['areas']]
