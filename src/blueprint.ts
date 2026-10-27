@@ -15,7 +15,7 @@ import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPa
 import {barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import middleSouth from "../data/middle_pool_south_gate.json";
 import {middleSouthRings,middleSouthRect,middleSouthAt} from "./middle-pool-south-gate";
-import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing} from "./cervantes-garden-door";
+import {gardenDoor,gardenStepRings,gardenWallRing,gardenDoorLeaf,gardenPatioRing,gardenBedRing,gardenPlanterRing} from "./cervantes-garden-door";
 import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
@@ -102,7 +102,7 @@ async function boot(): Promise<void> {
   for(const opening of cervantesWallOpenings){const node=el("path",{d:path(opening.ring),fill:"none",stroke:"#4c816b","stroke-width":.08,"stroke-dasharray":".25 .15"});const title=el("title",{});title.textContent=`Kept open: ${opening.name}`;node.append(title);patioWalls.append(node);}
   frontages.append(patioWalls);
   const garden=el("g",{id:"cervantes-garden-door"});
-  for(const [ring,fill,id] of [[gardenPatioRing,"#c88768",gardenDoor.patio.id],[gardenBedRing,"#62513a",gardenDoor.bed.id],[gardenWallRing,"#fffaf1",gardenDoor.id],...gardenStepRings.map((ring,i)=>[ring,"#a75d43",gardenDoor.id+"-tread-"+(i+1)]),[gardenDoorLeaf,"#65432e",gardenDoor.id+"-closed-door"]] as [Vec2[],string,string][]){
+  for(const [ring,fill,id] of [[gardenPatioRing,"#c88768",gardenDoor.patio.id],[gardenBedRing,"#62513a",gardenDoor.bed.id],[gardenPlanterRing,"#62513a",gardenDoor.eastPlanter.id],[gardenWallRing,"#fffaf1",gardenDoor.id],...gardenStepRings.map((ring,i)=>[ring,"#a75d43",gardenDoor.id+"-tread-"+(i+1)]),[gardenDoorLeaf,"#65432e",gardenDoor.id+"-closed-door"]] as [Vec2[],string,string][]){
     const node=el("path",{d:path(ring),fill,stroke:"#fffaf1","stroke-width":.07,"data-garden-door-id":id});const title=el("title",{});title.textContent=`${gardenDoor.name}: ${gardenDoor.trust} · ${gardenDoor.evidence.join(", ")}`;node.append(title);garden.append(node);
   }
   frontages.append(garden);
