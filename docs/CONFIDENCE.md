@@ -32,7 +32,7 @@ still the only thing that grants placement approval.
 
 `scripts/build_confidence.py` writes `public/confidence.json` from the shared feature inventory
 (`scripts/assign_photo_map.py`) and `data/confidence.json`. `build_references.py` runs it, and
-`scripts/test_confidence.py` (in CI) fails when the file is stale.
+`scripts/test_confidence.py` (run in CI with the reference index tests) fails when the file is stale.
 
 - Defaults:
   - Registry houses and pools are blue.

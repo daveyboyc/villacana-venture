@@ -2215,7 +2215,7 @@
    "build": "Owner request 27 October: show what is sure and what is unsure, and let Dave choose to accept a feature as good enough or ask for more photos. Every feature in the shared inventory gets a level (photographed, estimated, inferred, registry) from defaults plus data/confidence.json overrides; known gaps are pins. Map & photos and Overview get a 'Sure / unsure' toggle, legend and tap-for-details panel with Good enough / Needs photos. The scorecard counts levels per area. AGENTS.md allows inferred builds marked orange.",
    "avoid": "No geometry changes. A level is a judgement for the game, never placement approval.",
    "accept": [
-    "test_confidence.py passes in CI",
+    "test_confidence.py passes (run in CI through test_reference_index.py)",
     "Overlay renders on the map and in Overview",
     "Standard handover checks pass"
    ],

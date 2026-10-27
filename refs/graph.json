@@ -36055,6 +36055,19 @@
    }
   },
   {
+   "id": "task:confidence-overlay",
+   "kind": "build-task",
+   "name": "Sure / unsure overlay: colour every feature by how sure the model is, with known gaps and owner decisions",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   }
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -90346,6 +90359,11 @@
   {
    "from": "task:paseo-stamped-surface",
    "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:confidence-overlay",
+   "to": "area:whole-resort",
    "relation": "in-area"
   },
   {
