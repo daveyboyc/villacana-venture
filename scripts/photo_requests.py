@@ -10,7 +10,8 @@ request has a `look` point, the photo faces it: its reviewed looksAt is within t
 or its compass heading is within 60 degrees of the bearing from `at` to `look`. A request with
 `viewpoint: roof` (or upper-floor) also needs the phone's altitude above ground level. That makes the
 request `received`; it stays so until an agent who has looked at the photos sets `status: answered`
-with `answeredBy` and a `note` (or leaves it open and says what is still missing).
+with `answeredBy` and a `note` (or leaves it open and says what is still missing, listing photos that
+matched by position but do not show the spot in `notAnswering`, so the spot turns red again).
 build_scorecard.py colours the areas from these states and build_references.py puts them in the
 evidence graph.
 """
@@ -56,7 +57,8 @@ def states(requests=None, manifest=None, tags=None):
     tags = tags if tags is not None else json.loads((ROOT / 'data/reference_tags.json').read_text())
     out = []
     for r in requests:
-        found = sorted(p['file'] for p in manifest if matches(r, p, tags.get(p['file'], {})))
+        found = sorted(p['file'] for p in manifest if p['file'] not in r.get('notAnswering', [])
+                       and matches(r, p, tags.get(p['file'], {})))
         state = 'answered' if r['status'] == 'answered' else 'received' if found else 'open'
         out.append({**r, 'state': state, 'photos': sorted(set(found) | set(r.get('answeredBy', [])))})
     return out

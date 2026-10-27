@@ -22,6 +22,7 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 - Owner patio correction 26 October (#153): full-height north privacy wall/door, source-visible gateway→house return and one divider; existing garden/Cervantes wall pieces share vertex ground, with shaped door coping. First visible north-patio floor uses plain square tiles with independent phase; lane/spur keep their three-column grid. Hidden 0.95 m frontage join and all heights/plan anchors remain estimates. Low kerbs stay low; IMG_2358 private decorated patio patterns stay distinct. Concealed partitions and south wall/door registration remain open; see docs/reviews/elena-patio-wall-correction. Final material check also aligned the existing south cross-lawn approach to its adjoining lane axes/pitch/model phase; exact source phase is partly hidden and remains a consistency assumption.
 - 27 October batch (docs/PHOTOS_2026-10-27.md): the walkway plaque reads CALLE ELENA 18 36 (IMG_2518; IMG_2254 had it cropped, earlier read as 18-30). The walkway floor is two risers (about 0.3 m) above the lane at its east portal, with a red ribbed ramp beside the steps (IMG_2518/2519, level item elena-walkway-east-steps, not modelled). IMG_2519 looks the whole walkway to the west arch and the 36/34 gates, the both-end view #145 asked for together with IMG_2203.
 - 27 October batch: a second covered passage, signed CALLE ELENA 25, opens off Elena south through a moulded street arch into block 6265601UF1366N_part1 (IMG_2507/2508): doors both sides, flush floor of terracotta with blue inset tiles, far arch to a red-tiled path and an iron garden gate. The registry and the game draw the block solid; the aerial shows a courtyard inside. Task elena-25-passage.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2517/2689 show the CALLE ELENA 18–36 plaque over a red ribbed ramp beside tiled steps. IMG_2683–2685 show a garden of clipped topiary on a lawn in front of a house with timber balconies. IMG_2537/2538 are ground-level entrance halls although the phone altitude read 10.5 m.
 
 ## Read first
 
@@ -32,8 +33,8 @@ Calle Elena, north and south sections, from the north pool to the middle pool, i
 
 ## Coverage
 
-Layout: 36, Levels and slopes: 12, Facades and roofs: 12, Materials: 20, Planting: 20, Signs: 4, Views: 5
-45 reviewed, 0 suggested only by camera position.
+Layout: 57, Levels and slopes: 16, Facades and roofs: 21, Materials: 28, Planting: 30, Signs: 8, Views: 5
+75 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -268,11 +269,40 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
 | [IMG_2507.jpg](../../public/photos-ref/IMG_2507.jpg) | ground | layout, materials, planting | Elena 25 passage: street arch with potted schefflera **Looks at:** Street arch of the CALLE ELENA 25 passage. **Note:** Second covered passage on Elena, distinct from the 18-36 walkway (6265201UF1366N_part5). Floor flush with the lane. |
 | [IMG_2508.jpg](../../public/photos-ref/IMG_2508.jpg) | ground | layout, signage, materials | Covered passage signed CALLE ELENA 25, looking through to a garden gate **Looks at:** CALLE ELENA 25 covered passage into block 6265601UF1366N_part1. **Note:** Not in data/passages.json; the registry draws this block as one solid 2-storey part. Compass heading inside a covered passage may be off; direction into the block is from the pin against the Elena south lane, the far end is unregistered. |
+| [IMG_2511.jpg](../../public/photos-ref/IMG_2511.jpg) | ground | layout, levels, planting | Lawn with steps up |
 | [IMG_2519.jpg](../../public/photos-ref/IMG_2519.jpg) | ground | layout, levels, materials | Elena covered walkway looking west to the arch and the 36/34 gates **Looks at:** Calle Elena covered walkway towards its west arch. **Note:** Both-end evidence for the walkway with IMG_2203 (opposite direction) and IMG_2202. |
+| [IMG_2537.jpg](../../public/photos-ref/IMG_2537.jpg) | ground | layout, materials, facades | Covered entrance hall at Elena 22: terracotta tiles with blue insets, doormat, brown doors (ground level despite phone altitude) |
+| [IMG_2538.jpg](../../public/photos-ref/IMG_2538.jpg) | ground | layout, materials, signage | Covered entrance with CALLE ELENA plaque looking out through an arch to a courtyard with a tree and bougainvillea (ground level despite phone altitude) |
 | [IMG_2539.jpg](../../public/photos-ref/IMG_2539.jpg) | ground | layout, levels, planting | Elena north by the Cervantes junction: steps and tiled lane between planted beds |
+| [IMG_2683.jpg](../../public/photos-ref/IMG_2683.jpg) | ground | layout, planting, facades | Elena garden: lawn with clipped topiary trees, terracotta path, houses with timber balconies |
+| [IMG_2684.jpg](../../public/photos-ref/IMG_2684.jpg) | ground | layout, planting, facades | Same garden: topiary on the lawn, path towards the timber-balconied house |
 | [IMG_2687.jpg](../../public/photos-ref/IMG_2687.jpg) | ground | facades, layout, planting | Elena north: lane beside a house with window grilles, towards the lawns |
 | [IMG_2220.jpg](../../public/photos-ref/IMG_2220.jpg) | roof | layout, planting | From a roof looking down into the lane and lawns of Calle Elena south **Looks at:** The Elena south lane and lawns below the roof. **Note:** Overhead view of the lane layout. The pin is the roof, not the lane. |
 | [IMG_2256.jpg](../../public/photos-ref/IMG_2256.jpg) | ground | layout, materials | Covered passage opening through an arch to a garden gate |
+| [IMG_2456.jpg](../../public/photos-ref/IMG_2456.jpg) | ground | layout, signage | Elena covered walkway: plaque CALLE ELENA 18 36 and the arch out to a garden with a trained tree |
+| [IMG_2458.jpg](../../public/photos-ref/IMG_2458.jpg) | ground | planting, layout | Planted bed with a tree in front of a brown garden door in a white wall |
+| [IMG_2459.jpg](../../public/photos-ref/IMG_2459.jpg) | ground | levels, materials | Two tiled steps beside the red ribbed ramp into the Elena walkway |
+| [IMG_2460.jpg](../../public/photos-ref/IMG_2460.jpg) | ground | layout, planting | Elena lane between planted beds and garden walls, a magnolia and houses beyond |
+| [IMG_2510.jpg](../../public/photos-ref/IMG_2510.jpg) | ground | layout, facades | Elena path beside a grille gate |
+| [IMG_2515.jpg](../../public/photos-ref/IMG_2515.jpg) | ground | layout, planting | Elena lane between beds towards a gate |
+| [IMG_2516.jpg](../../public/photos-ref/IMG_2516.jpg) | ground | layout, planting | Elena lane between beds, closer to the gate |
+| [IMG_2517.jpg](../../public/photos-ref/IMG_2517.jpg) | ground | signage, levels | ELENA 18–36 plaque and red ribbed ramp at the walkway portal |
+| [IMG_2520.jpg](../../public/photos-ref/IMG_2520.jpg) | ground | layout, materials | Elena walkway towards the arch over a pebble mat |
+| [IMG_2521.jpg](../../public/photos-ref/IMG_2521.jpg) | ground | layout, materials | Elena walkway under the arch, pebble mat |
+| [IMG_2682.jpg](../../public/photos-ref/IMG_2682.jpg) | ground | layout, planting | Elena: long terracotta lane between houses and planters, bougainvillea at the end |
+| [IMG_2685.jpg](../../public/photos-ref/IMG_2685.jpg) | ground | layout, planting | Path between the lawn and grilled windows towards the timber-balconied house |
+| [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting | Terracotta path between houses and a planted bed with pollarded trees, a hut at the end |
+| [IMG_2688.jpg](../../public/photos-ref/IMG_2688.jpg) | ground | layout, facades | Path past an arched porch with a lantern towards a garden gate |
+| [IMG_2689.jpg](../../public/photos-ref/IMG_2689.jpg) | ground | levels, signage | CALLE ELENA 18 36 plaque over a red ribbed ramp and tiled steps |
+| [IMG_2690.jpg](../../public/photos-ref/IMG_2690.jpg) | ground | layout, materials | Covered passage with front doors, a doormat and an arch onto a garden |
+| [IMG_2457.jpg](../../public/photos-ref/IMG_2457.jpg) | ground | materials | Pebble mosaic mat in the Elena walkway floor, terracotta with blue insets |
+| [IMG_2461.jpg](../../public/photos-ref/IMG_2461.jpg) | ground | facades | Barred window with green grille and a trained trunk |
+| [IMG_2506.jpg](../../public/photos-ref/IMG_2506.jpg) | ground | layout | Elena lane between white walls |
+| [IMG_2509.jpg](../../public/photos-ref/IMG_2509.jpg) | ground | layout | Elena lane further along |
+| [IMG_2522.jpg](../../public/photos-ref/IMG_2522.jpg) | ground | facades | Brown front door on the Elena walkway |
+| [IMG_2523.jpg](../../public/photos-ref/IMG_2523.jpg) | ground | materials | Tiled doormat with blue tiles at a front door |
+| [IMG_2691.jpg](../../public/photos-ref/IMG_2691.jpg) | ground | facades | Brown double door with a warning sign in the covered passage |
+| [IMG_2692.jpg](../../public/photos-ref/IMG_2692.jpg) | ground | facades | Arched brown front door with a grille, tiled doormat |
 | [IMG_2260.jpg](../../public/photos-ref/IMG_2260.jpg) | ground | layout, planting | Cervantes junction: white terraces and small lawns _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, door_sills.json:elena-lawn-door-sill._ |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades, materials | Cervantes junction: another view of the same terraces **Looks at:** Two brown garden doors in the white wall and the tiled approach between Elena south lawns. **Note:** 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
 | [IMG_2265.jpg](../../public/photos-ref/IMG_2265.jpg) | ground | layout, levels | Cervantes: lane facing into the resort _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, ramp:cervantes-elena-ramp._ |
@@ -287,3 +317,4 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2214.jpg](../../public/photos-ref/IMG_2214.jpg) | roof | facades, view | Roof terrace: flat roofs, solar panels, water tanks, mountains north **Note:** On a roof by Calle Elena. The pin is inside a building. |
 | [IMG_2215.jpg](../../public/photos-ref/IMG_2215.jpg) | roof | facades, view | Roof terrace looking north-east: roofs, a tall tower block beyond |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
+| [IMG_2513.jpg](../../public/photos-ref/IMG_2513.jpg) | ground | layout | Cervantes lane (phone altitude high, likely on steps) |

@@ -64,6 +64,8 @@ class Scorecard(unittest.TestCase):
         roof = {**request, 'look': None, 'viewpoint': 'roof'}
         self.assertEqual(photo_requests.states([roof], [photo(altitude=7)], {})[0]['state'], 'open', 'a ground photo does not answer a roof spot')
         self.assertEqual(photo_requests.states([roof], [photo(altitude=14)], {})[0]['state'], 'received')
+        self.assertEqual(photo_requests.states([{**request, 'notAnswering': ['IMG_9999.jpg']}], [photo()], {})[0]['state'], 'open',
+                         'a reviewed photo that does not show the spot leaves it open')
         done = photo_requests.states([{**request, 'status': 'answered', 'answeredBy': ['IMG_1.jpg']}], [], {})[0]
         self.assertEqual((done['state'], done['photos']), ('answered', ['IMG_1.jpg']))
         for r in photo_requests.load():

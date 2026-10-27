@@ -10,6 +10,13 @@ Street-name plaques, house numbers and other readable signs.
 | --- | --- | --- | --- |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 
+## Main pool
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | layout, signage, planting | COMUNIDAD VILLACANA sign beside an iron gate on a white pier, plumbago over the wall, pink paseo in front **Looks at:** Outer pier of the beach gateway with the COMUNIDAD VILLACANA sign. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | layout, signage, view | Street sign plinth on a lawn by an old olive, hotel and mountain beyond the wall |
+
 ## Calle Elena
 
 | Reference | Viewpoint | Use for | What it shows |
@@ -18,27 +25,48 @@ Street-name plaques, house numbers and other readable signs.
 | [IMG_2254.jpg](../../public/photos-ref/IMG_2254.jpg) | ground | signage | Plaque reading CALLE ELENA 18-30 **Looks at:** The CALLE ELENA plaque in the covered walkway. _Used by: building:6265201UF1366N_part5._ |
 | [IMG_2518.jpg](../../public/photos-ref/IMG_2518.jpg) | ground | signage, levels, materials, layout | Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp **Looks at:** East portal steps and ramp of the Calle Elena covered walkway. **Note:** Plaque reads CALLE ELENA 18 36, not 18-30. Two risers up into the walkway from the lane: level item elena-walkway-east-steps. **Compass:** the subject is 67° from the phone heading; trust looksAt, not the heading. |
 | [IMG_2508.jpg](../../public/photos-ref/IMG_2508.jpg) | ground | layout, signage, materials | Covered passage signed CALLE ELENA 25, looking through to a garden gate **Looks at:** CALLE ELENA 25 covered passage into block 6265601UF1366N_part1. **Note:** Not in data/passages.json; the registry draws this block as one solid 2-storey part. Compass heading inside a covered passage may be off; direction into the block is from the pin against the Elena south lane, the far end is unregistered. |
+| [IMG_2538.jpg](../../public/photos-ref/IMG_2538.jpg) | ground | layout, materials, signage | Covered entrance with CALLE ELENA plaque looking out through an arch to a courtyard with a tree and bougainvillea (ground level despite phone altitude) |
+| [IMG_2456.jpg](../../public/photos-ref/IMG_2456.jpg) | ground | layout, signage | Elena covered walkway: plaque CALLE ELENA 18 36 and the arch out to a garden with a trained tree |
+| [IMG_2517.jpg](../../public/photos-ref/IMG_2517.jpg) | ground | signage, levels | ELENA 18–36 plaque and red ribbed ramp at the walkway portal |
+| [IMG_2689.jpg](../../public/photos-ref/IMG_2689.jpg) | ground | levels, signage | CALLE ELENA 18 36 plaque over a red ribbed ramp and tiled steps |
 
 ## Calle Miguel de Cervantes
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2451.jpg](../../public/photos-ref/IMG_2451.jpg) | ground | layout, signage, materials | Covered passage with plaque CALLE MIGUEL, patterned floor, pot plants and an arch at the far end |
+| [IMG_2452.jpg](../../public/photos-ref/IMG_2452.jpg) | ground | layout, signage, materials | Second shot of the CALLE MIGUEL covered passage |
+| [IMG_2541.jpg](../../public/photos-ref/IMG_2541.jpg) | ground | layout, signage, materials | Covered walkway with CALLE MIGUEL plaque, lantern, bench and arch at the far end |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
+| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | ground | signage, layout | Sign CALLE DE MIGUEL on a white wall above a square-tiled lane |
+| [IMG_2469.jpg](../../public/photos-ref/IMG_2469.jpg) | ground | signage, layout | Covered passage plaque CALLE MIGUEL 1 19 with potted plants |
 | [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
+
+## Loira, Bolivia, Alberto and Isabel
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | layout, levels, signage | Lane where octagonal tiles meet square tiles, three steps up, sign ...BERTO (Calle Alberto) |
 
 ## Calle Eva
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
+| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage | Covered entrance with a street plaque looking through an arch, potted plants (ground level despite phone altitude) |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2191.jpg](../../public/photos-ref/IMG_2191.jpg) | ground | signage | Passage plaque reading CALLE SILVIA 1-15 _Used by: silvia_tunnel.json:silvia-tunnel-study._ |
+| [IMG_2496.jpg](../../public/photos-ref/IMG_2496.jpg) | ground | signage, levels, materials | CALLE TEODORO 2–16 plaque above tiled steps beside a red ribbed ramp |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | layout, signage, view | Street sign plinth on a lawn by an old olive, hotel and mountain beyond the wall |
+| [IMG_2656.jpg](../../public/photos-ref/IMG_2656.jpg) | ground | layout, levels, signage | Covered passage with a CALLE SILVIA plaque: red ribbed ramp beside tiled steps, an arch at the far end |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |
 | [IMG_2234.jpg](../../public/photos-ref/IMG_2234.jpg) | ground | layout, signage | Tiled lane with a wall plaque, lamp post and lawn |
+| [IMG_2581.jpg](../../public/photos-ref/IMG_2581.jpg) | ground | levels, signage | Covered entrance with a street plaque, tiled steps beside a red ramp |
+| [IMG_2492.jpg](../../public/photos-ref/IMG_2492.jpg) | ground | signage | CALLE DE TEODORO street sign and a post box |
 
 ## Barraka and the beach
 
@@ -46,6 +74,14 @@ Street-name plaques, house numbers and other readable signs.
 | --- | --- | --- | --- |
 | [IMG_2347.jpg](../../public/photos-ref/IMG_2347.jpg) | ground | signage, materials, layout | Barraka barbecue boat, planted sign and boardwalk towards the sea **Looks at:** Sand-filled barbecue boat beside the Barraka boardwalk. **Note:** Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement. _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter, barraka_boardwalk.json:barraka-beach-seating._ |
 | [IMG_2346.jpg](../../public/photos-ref/IMG_2346.jpg) | ground | signage, materials | BARRAKA BEACH sign, barbecue boat and boardwalk **Looks at:** Sand-filled barbecue boat beside the Barraka boardwalk. **Note:** Owner clarification and full originals IMG_2346/2347 confirm the planter, log-filled cooking boat and thatched cooking shelter on the LEFT of the green wooden aisle looking towards the sea; the boat is beyond the planter. The aisle belongs on the northeast flank of actual restaurant 6364501UF1366S_part8, not the old southwest run. Boat and cooking hut are distinct from the planted sign and remain unmodelled; their exact footprint/scale is unresolved. See docs/reviews/barraka-planter-placement. **Compass:** the subject is 59° from the phone heading; trust looksAt, not the heading. _Used by: building:6465801UF1366N_part5, building:6465801UF1366N_part6, barraka_boardwalk.json:barraka-boardwalk, barraka_boardwalk.json:barraka-sign-planter._ |
+| [IMG_2612.jpg](../../public/photos-ref/IMG_2612.jpg) | ground | layout, signage | Pink paseo past a white wall end, sandstone-walled bed, lamp and a shop sign, beach beyond |
+
+## The paseo
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | layout, signage, planting | COMUNIDAD VILLACANA sign beside an iron gate on a white pier, plumbago over the wall, pink paseo in front **Looks at:** Outer pier of the beach gateway with the COMUNIDAD VILLACANA sign. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2612.jpg](../../public/photos-ref/IMG_2612.jpg) | ground | layout, signage | Pink paseo past a white wall end, sandstone-walled bed, lamp and a shop sign, beach beyond |
 
 ## The whole resort
 

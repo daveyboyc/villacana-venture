@@ -13,6 +13,7 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 - Laser survey 2026-10-24 (docs/reviews/lidar-levels): main pool deck -2.87 m (model -3.00). Calle Guillermo stays at about -0.2 to -0.4 m along the mapped street with the pool lawn 2.5 m lower behind a sharp edge; the fall to the paseo starts south of the mapped end, not over its last 15 m as modelled (guillermo-descent-recheck).
 - 27 Oct (docs/reviews/beach-gate-verge): the beach gateway is at the lawn's south-west corner beside the paseo ramp, not at the foot of Calle Guillermo (Dave; aerial; IMG_2226). Calle Guillermo is level to the paseo (survey, IMG_2488); the paseo ramps 1.7 m down east of the lane's foot to lawn level. The 21 Oct 3 m lane ramp is removed.
 - 27 Oct, IMG_2600 from beside the kiosk: an inner tiled path runs down east-south-east from the foot of Calle Guillermo behind a white wall topped with green rigid mesh, to grass, a hedge and a green rigid-mesh fence with the beach beyond. The model draws white railings there (read from IMG_2226 at 50 m); the fence's material and where mesh turns to railings are open. A tall white pier at the left edge may be the beach gateway.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2602 shows the beach gateway side-on from the inside landing: white piers with an arched coping over an iron gate, green rigid mesh running on from the pier towards Barraka. IMG_2485 shows the outer pier with the COMUNIDAD VILLACANA plaque and plumbago. The square-on view from the paseo is still wanted (beach-gateway). IMG_2603 looks from the seafront up the pink lawn path to the clubhouse.
 
 ## Read first
 
@@ -23,8 +24,8 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 
 ## Coverage
 
-Layout: 7, Levels and slopes: 6, Facades and roofs: 1, Materials: 1, Views: 1
-7 reviewed, 0 suggested only by camera position.
+Layout: 14, Levels and slopes: 7, Facades and roofs: 2, Materials: 3, Planting: 3, Signs: 2, Views: 4
+14 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -87,3 +88,10 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
 | `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels | Apple Maps 3D: main pool terrace curve with the west and east steps **Note:** Dave, 2026-10-21. Nearly top-down. West: terracotta steps between the Guillermo-side wall and the terrace's curved planter wall. East: a dark narrow slot between the 90 Miles lobe and the Picasso boundary wall, the steps in shadow. |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. _Used by: beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, levels, materials | Paseo ramp: green rigid mesh on top of the sandstone wall, red-and-white crossing marks, the hotel and Barraka beyond **Looks at:** The paseo at the foot of Calle Guillermo looking to the gateway, the green fence and Barraka. |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | layout, signage, planting | COMUNIDAD VILLACANA sign beside an iron gate on a white pier, plumbago over the wall, pink paseo in front **Looks at:** Outer pier of the beach gateway with the COMUNIDAD VILLACANA sign. **Compass:** the subject is 118° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | layout, signage, view | Street sign plinth on a lawn by an old olive, hotel and mountain beyond the wall |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | layout, planting, view | Big lawn with a marigold bed, the pink paseo and Barraka beyond a green fence |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, planting, facades | Terracotta path across the lawn to the white gate piers with an arched iron gate, green mesh fence alongside, Barraka behind **Looks at:** The beach gateway side-on from the inside landing, with the green mesh running on to Barraka. |
+| [IMG_2603.jpg](../../public/photos-ref/IMG_2603.jpg) | ground | layout, view | Pink path across the lawn from the seafront towards the main pool clubhouse |
+| [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | ground | layout, materials | Barraka terrace with a curved sandstone wall and green railing, lawn beyond |

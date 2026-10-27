@@ -1,5 +1,5 @@
 {
-  "about": "Photos wanted, one request per spot. at: where to stand ([x, z] map metres, +x east, +z south); look: what to point at (null for a roof station: several directions); radius: how close a photo's camera must be (plus up to 5 m of its GPS accuracy). status: open until photos taken on or after `since` are matched by scripts/photo_requests.py (it reports them as received); an agent who has looked at them sets status answered with answeredBy photo ids and a note, or keeps it open and says what is still missing. The scorecard colours an area red while it has open requests, amber while received or reviewed photos and open build tasks wait, green when nothing is open. See docs/SCORECARD.md.",
+  "about": "Photos wanted, one request per spot. at: where to stand ([x, z] map metres, +x east, +z south); look: what to point at (null for a roof station: several directions); radius: how close a photo's camera must be (plus up to 5 m of its GPS accuracy). status: open until photos taken on or after `since` are matched by scripts/photo_requests.py (it reports them as received); an agent who has looked at them sets status answered with answeredBy photo ids and a note, or keeps it open and says what is still missing, listing matched photos that do not show the spot in notAnswering (the request turns open again). The scorecard colours an area red while it has open requests, amber while received or reviewed photos and open build tasks wait, green when nothing is open. See docs/SCORECARD.md.",
   "requests": [
     {
       "id": "elena-25-far-end",
@@ -51,7 +51,12 @@
       "radius": 4,
       "since": "2026-10-27",
       "status": "open",
-      "viewpoint": "roof"
+      "viewpoint": "roof",
+      "notAnswering": [
+        "IMG_2537.jpg",
+        "IMG_2538.jpg"
+      ],
+      "note": "Reviewed 27 Oct: IMG_2537 and IMG_2538 matched on phone altitude (10.5 m) but are ground-level covered entrance halls (Elena 22 door; CALLE ELENA 18 36 plaque looking out through an arch to a courtyard), GPS ±16 m. Still wanted: the four views from the Elena 24 roof."
     },
     {
       "id": "cervantes-east-from-elena",
@@ -69,7 +74,8 @@
       "priority": 1,
       "radius": 6,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "Reviewed 27 Oct: the 26 Oct photos at this spot (IMG_2450–2455) look west or north, not east towards Pintor Picasso. Still wanted."
     },
     {
       "id": "cervantes-east-from-picasso",
@@ -87,7 +93,8 @@
       "priority": 1,
       "radius": 6,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "Reviewed 27 Oct: IMG_2442/2443 (26 Oct, GPS ±13 m) look west-south-west along an octagonal-tiled lane with candelabra cacti, white kerb walls and hedges near the east end. Cervantes is known for square tiles further west, so whether this is Cervantes is not settled. Still wanted from a known spot at the Picasso end."
     },
     {
       "id": "cervantes-junction-patio",
@@ -105,7 +112,11 @@
       "priority": 2,
       "radius": 4,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "notAnswering": [
+        "IMG_2538.jpg"
+      ],
+      "note": "Reviewed 27 Oct: IMG_2538 is the Elena 18–36 entrance hall, not the patio. IMG_2513 (26 Oct, older than this request) shows the curved-coping brown door from the lane looking east but not the patio behind it. Still wanted: the patio floor against the steps, through the door or over the wall."
     },
     {
       "id": "guillermo-lane-walk",
@@ -123,7 +134,8 @@
       "priority": 1,
       "radius": 10,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "Reviewed 27 Oct: IMG_2599 and IMG_2601 cover only the foot of the lane (terracotta ramp down between white walls to the green mesh on the seafront); IMG_2597/2598 are at the Jorge junction looking across the lawns. Still wanted: the walk from Calle Jorge down, every 15 m."
     },
     {
       "id": "guillermo-lawn-edge",
@@ -141,7 +153,8 @@
       "priority": 2,
       "radius": 6,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "Reviewed 27 Oct: IMG_2598 is near the spot but looks east over the lawn and a marigold bed to the paseo and Barraka, not side-on at the lane/lawn wall. Still wanted."
     },
     {
       "id": "beach-gateway",
@@ -160,7 +173,10 @@
       "radius": 6,
       "since": "2026-10-27",
       "status": "open",
-      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo."
+      "note": "Reviewed 27 Oct: IMG_2603 looks inland across the lawn to the clubhouse, not at the gateway. Partial: IMG_2602 shows the gateway side-on from the inside landing (white piers with an arched top, iron gate, green rigid mesh running on towards Barraka); IMG_2485 (26 Oct) is close up on the outer pier with the COMUNIDAD VILLACANA sign and plumbago; IMG_2484 (26 Oct) shows it from down the paseo. Still wanted: the gateway square-on from the paseo, and the wall down the ramp beside it.",
+      "notAnswering": [
+        "IMG_2603.jpg"
+      ]
     },
     {
       "id": "beach-verge",
@@ -178,6 +194,32 @@
       "priority": 1,
       "radius": 8,
       "since": "2026-10-27",
+      "status": "answered",
+      "answeredBy": [
+        "IMG_2604.jpg",
+        "IMG_2484.jpg",
+        "IMG_2607.jpg",
+        "IMG_2608.jpg",
+        "IMG_2631.jpg"
+      ],
+      "note": "Reviewed 27 Oct: IMG_2604 looks from the gateway along the paseo to Barraka: green railing on a sandstone base on the inland side, and on the beach side a worn grass verge with a timber edge to the paseo, rope posts and wicker seats in front of Barraka. IMG_2484 shows the same verge from the foot of Guillermo; IMG_2607/2608/2631 show Barraka's lawn with seats and the roped paseo from the terrace. The view from the sand is a separate request (beach-verge-from-sand)."
+    },
+    {
+      "id": "beach-verge-from-sand",
+      "area": "barraka-beach",
+      "at": [
+        14.0,
+        146.0
+      ],
+      "look": [
+        8.0,
+        134.0
+      ],
+      "ask": "From the sand in front of the beach gateway, looking back at the grass verge, its shrubs and the green fence behind it, with the gateway in frame.",
+      "why": "data/beach_verge.json: the seaward edge of the verge and its shrub line are read off the aerial only",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-10-28",
       "status": "open"
     },
     {
@@ -196,7 +238,12 @@
       "priority": 2,
       "radius": 6,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "answered",
+      "answeredBy": [
+        "IMG_2632.jpg",
+        "IMG_2484.jpg"
+      ],
+      "note": "Reviewed 27 Oct: IMG_2632 (pin 0.8 m from the spot) looks south-west along the sandstone wall: the paseo meets the wall foot with no step, the wall is about the height of the lamp-post base plus a metre (by eye, about 1–1.2 m) with green rigid mesh and shade netting on top and the gardens behind at its top. IMG_2484 looks north-east from the same stretch to the gateway. Not side-on and no person beside the wall, so the height is an estimate; it supports about 1 m, not the 3 m the old model had."
     },
     {
       "id": "main-pool-lawn",
@@ -232,7 +279,8 @@
       "priority": 2,
       "radius": 10,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "Reviewed 27 Oct: nearby photos IMG_2665–2673 are the CALLE SILVIA 2–20 covered passage and its approaches, not the lane from the middle pool's south gate. Still wanted."
     },
     {
       "id": "north-pool-west-stair",

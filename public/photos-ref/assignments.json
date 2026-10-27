@@ -1,17 +1,28 @@
 {
  "version": 1,
- "inputDigest": "6a1dca2180fb41d94d0e050c5f5bf125abf759e1cb861ccd4a53c886b220f384",
+ "inputDigest": "5e7467fa0e9eb64bb707761793db394da89af2380ac2d06d2245f1d428029b4c",
  "summary": {
-  "unplaced": 1,
-  "suggested": 90,
-  "needs-review": 75,
-  "photos": 166,
+  "unplaced": 2,
+  "suggested": 205,
+  "needs-review": 176,
+  "photos": 383,
   "features": 380,
   "photosCitedByModel": 105,
   "modelFeaturesWithPhotoCitations": 126
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
+  {
+   "file": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+   "status": "unplaced",
+   "reasons": [
+    "No usable camera coordinates"
+   ],
+   "nearby": [],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending"
+  },
   {
    "file": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
    "status": "unplaced",
@@ -5977,6 +5988,1622 @@
    }
   },
   {
+   "file": "IMG_2442.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 5.6
+    },
+    {
+     "id": "parking:Picasso car park",
+     "name": "Picasso car park",
+     "kind": "parking",
+     "gap": 7.6
+    },
+    {
+     "id": "street:picasso-access",
+     "name": "Picasso car-park access",
+     "kind": "street",
+     "gap": 8.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266801UF1366N_part7",
+     "distance": 5.1,
+     "angleOffset": 9.2
+    },
+    {
+     "id": "building:6266801UF1366N_part2",
+     "distance": 12.1,
+     "angleOffset": 6.6
+    },
+    {
+     "id": "building:6266801UF1366N_part5",
+     "distance": 18.3,
+     "angleOffset": 6.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -88.5,
+    "z": 11.8,
+    "basis": "phone location",
+    "reportedAccuracy": 13.4,
+    "heading": 251,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2443.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266801UF1366N_part2",
+     "distance": 10.9,
+     "angleOffset": 34.3
+    },
+    {
+     "id": "building:6266801UF1366N_part5",
+     "distance": 15.4,
+     "angleOffset": 10.6
+    },
+    {
+     "id": "building:6365201UF1366N_part11",
+     "distance": 20.8,
+     "angleOffset": 29.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -89.8,
+    "z": 17.3,
+    "basis": "phone location",
+    "reportedAccuracy": 5.7,
+    "heading": 251,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2444.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365201UF1366N_part2",
+     "distance": 7.6,
+     "angleOffset": 29.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -90.0,
+    "z": 19.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 65,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2445.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365201UF1366N_part11",
+     "distance": 9.2,
+     "angleOffset": 33.1
+    },
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 33.2,
+     "angleOffset": 4.4
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 41.1,
+     "angleOffset": 27.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -99.5,
+    "z": 24.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 240,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2446.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 28.8,
+     "angleOffset": 26.3
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 31.2,
+     "angleOffset": 15.8
+    },
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 42.4,
+     "angleOffset": 0.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -103.2,
+    "z": 27.2,
+    "basis": "phone location",
+    "reportedAccuracy": 3.4,
+    "heading": 272,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2447.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6266801UF1366N_part5",
+     "distance": 8.0,
+     "angleOffset": 30.3
+    },
+    {
+     "id": "building:6266801UF1366N_part1",
+     "distance": 20.6,
+     "angleOffset": 3.2
+    },
+    {
+     "id": "building:6266801UF1366N_part8",
+     "distance": 33.4,
+     "angleOffset": 20.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -104.7,
+    "z": 27.5,
+    "basis": "phone location",
+    "reportedAccuracy": 3.6,
+    "heading": 327,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2448.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:alberto",
+     "name": "Calle Alberto",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 19.6,
+     "angleOffset": 5.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -111.2,
+    "z": 31.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 243,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2449.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:alberto",
+     "name": "Calle Alberto",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 17.8,
+     "angleOffset": 17.4
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 27.7,
+     "angleOffset": 33.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -112.7,
+    "z": 33.1,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 233,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2450.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 7.5,
+     "angleOffset": 25.6
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 35.6,
+     "angleOffset": 24.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -121.9,
+    "z": 39.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.0,
+    "heading": 244,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2451.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 24.3,
+     "angleOffset": 2.9
+    },
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 24.6,
+     "angleOffset": 32.4
+    },
+    {
+     "id": "building:6265401UF1366N_part1",
+     "distance": 42.4,
+     "angleOffset": 15.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -126.6,
+    "z": 41.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 342,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2452.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 4.1,
+     "angleOffset": 34.8
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 24.9,
+     "angleOffset": 0.4
+    },
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 25.2,
+     "angleOffset": 34.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -126.3,
+    "z": 41.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 345,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2453.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 28.0,
+     "angleOffset": 24.5
+    },
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 39.4,
+     "angleOffset": 31.7
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 41.9,
+     "angleOffset": 28.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -129.8,
+    "z": 44.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 254,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2454.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 33.7,
+     "angleOffset": 22.0
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 36.1,
+     "angleOffset": 14.6
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 42.4,
+     "angleOffset": 2.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -136.0,
+    "z": 46.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 239,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2455.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 31.3,
+     "angleOffset": 2.2
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 37.4,
+     "angleOffset": 21.9
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 38.6,
+     "angleOffset": 19.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -140.3,
+    "z": 48.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 258,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2456.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 8.4
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 10.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 22.4,
+     "angleOffset": 24.3
+    },
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 24.5,
+     "angleOffset": 28.8
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 35.1,
+     "angleOffset": 8.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.7,
+    "z": 46.7,
+    "basis": "phone location",
+    "reportedAccuracy": 19.8,
+    "heading": 43,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2457.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 8.4
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 10.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 8.2,
+     "angleOffset": 6.6
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 21.3,
+     "angleOffset": 28.5
+    },
+    {
+     "id": "building:6265401UF1366N_part1",
+     "distance": 41.3,
+     "angleOffset": 33.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.7,
+    "z": 46.7,
+    "basis": "phone location",
+    "reportedAccuracy": 19.8,
+    "heading": 331,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2458.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 8.4
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 10.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 24.5,
+     "angleOffset": 12.8
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 35.1,
+     "angleOffset": 24.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.7,
+    "z": 46.7,
+    "basis": "phone location",
+    "reportedAccuracy": 14.0,
+    "heading": 59,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2459.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 3.5,
+     "angleOffset": 7.1
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 24.2,
+     "angleOffset": 17.4
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 25.0,
+     "angleOffset": 17.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -154.2,
+    "z": 38.7,
+    "basis": "phone location",
+    "reportedAccuracy": 6.2,
+    "heading": 240,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2460.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 35.2,
+     "angleOffset": 19.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.2,
+    "z": 41.7,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 139,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2461.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 23.9,
+     "angleOffset": 29.7
+    },
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 29.5,
+     "angleOffset": 17.7
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 33.1,
+     "angleOffset": 10.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -150.0,
+    "z": 44.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 210,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2462.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.1
+    },
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 18.2,
+     "angleOffset": 30.0
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 25.3,
+     "angleOffset": 25.3
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 31.3,
+     "angleOffset": 17.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -145.5,
+    "z": 53.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 289,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2463.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 24.8,
+     "angleOffset": 2.6
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 30.0,
+     "angleOffset": 23.2
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 34.0,
+     "angleOffset": 25.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -146.0,
+    "z": 53.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.4,
+    "heading": 261,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2464.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 21.0,
+     "angleOffset": 33.3
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 23.5,
+     "angleOffset": 25.7
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 28.6,
+     "angleOffset": 1.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -147.2,
+    "z": 54.4,
+    "basis": "phone location",
+    "reportedAccuracy": 3.7,
+    "heading": 239,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2465.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 17.6,
+     "angleOffset": 3.5
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 32.7,
+     "angleOffset": 2.3
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 37.4,
+     "angleOffset": 26.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -150.7,
+    "z": 56.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.0,
+    "heading": 195,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2466.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 17.1,
+     "angleOffset": 23.2
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 32.2,
+     "angleOffset": 23.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -151.5,
+    "z": 56.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.0,
+    "heading": 173,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2467.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.2
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 20.2,
+     "angleOffset": 0.1
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 33.2,
+     "angleOffset": 18.3
+    },
+    {
+     "id": "building:6265201UF1366N_part2",
+     "distance": 36.8,
+     "angleOffset": 30.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -154.2,
+    "z": 59.1,
+    "basis": "phone location",
+    "reportedAccuracy": 4.5,
+    "heading": 238,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2468.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 6.3,
+     "angleOffset": 19.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -167.1,
+    "z": 65.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 242,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2469.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 3.5,
+     "angleOffset": 19.1
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 18.7,
+     "angleOffset": 1.1
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 37.0,
+     "angleOffset": 28.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -169.1,
+    "z": 67.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 201,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2470.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 22.0,
+     "angleOffset": 0.1
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 35.9,
+     "angleOffset": 17.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -171.1,
+    "z": 68.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 151,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2471.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.8
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -181.8,
+    "z": 73.0,
+    "basis": "phone location",
+    "reportedAccuracy": 3.4,
+    "heading": 242,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2472.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0.6
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 4.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part2",
+     "distance": 16.2,
+     "angleOffset": 12.2
+    },
+    {
+     "id": "building:6265201UF1366N_part6",
+     "distance": 35.3,
+     "angleOffset": 15.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -185.5,
+    "z": 75.4,
+    "basis": "phone location",
+    "reportedAccuracy": 3.3,
+    "heading": 328,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2473.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.5
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 4.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 14.7,
+     "angleOffset": 26.8
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 36.5,
+     "angleOffset": 16.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -186.3,
+    "z": 74.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 159,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2474.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 1.3
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 4.9
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -188.8,
+    "z": 78.5,
+    "basis": "phone location",
+    "reportedAccuracy": 3.0,
+    "heading": 194,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2475.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0.5
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 0.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 36.3,
+     "angleOffset": 27.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -192.3,
+    "z": 81.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 156,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2476.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part6",
+     "distance": 38.4,
+     "angleOffset": 26.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -195.2,
+    "z": 80.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 333,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2477.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part2",
+     "distance": 13.0,
+     "angleOffset": 11.8
+    },
+    {
+     "id": "building:6265201UF1366N_part6",
+     "distance": 30.3,
+     "angleOffset": 11.3
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 33.1,
+     "angleOffset": 20.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -196.2,
+    "z": 72.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 12,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2478.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part2",
+     "distance": 9.6,
+     "angleOffset": 1.4
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 29.4,
+     "angleOffset": 15.6
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 30.0,
+     "angleOffset": 13.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -199.5,
+    "z": 64.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 61,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2480.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -89.0,
+    "z": 218.3,
+    "basis": "phone location",
+    "reportedAccuracy": 3.6,
+    "heading": 47,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2481.jpg",
    "status": "suggested",
    "reasons": [
@@ -6083,6 +7710,160 @@
    }
   },
   {
+   "file": "IMG_2484.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.4
+    },
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 1.6
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 2.8
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -8.5,
+    "z": 142.2,
+    "basis": "phone location",
+    "reportedAccuracy": 3.9,
+    "heading": 17,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2485.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.5
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -2.5,
+    "z": 130.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 339,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2486.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 8.6,
+     "angleOffset": 23.8
+    },
+    {
+     "id": "building:6364601UF1366S_part5",
+     "distance": 23.3,
+     "angleOffset": 20.7
+    },
+    {
+     "id": "building:6364601UF1366S_part2",
+     "distance": 33.8,
+     "angleOffset": 24.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -4.0,
+    "z": 129.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.2,
+    "heading": 217,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2487.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.3
+    },
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 3.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 2.5,
+     "angleOffset": 29.4
+    },
+    {
+     "id": "building:6364401UF1366S_part7",
+     "distance": 30.1,
+     "angleOffset": 13.9
+    },
+    {
+     "id": "building:6364401UF1366S_part10",
+     "distance": 35.1,
+     "angleOffset": 29.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -9.0,
+    "z": 134.5,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 309,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2488.jpg",
    "status": "needs-review",
    "reasons": [
@@ -6125,6 +7906,189 @@
     "basis": "phone location",
     "reportedAccuracy": 4.7,
     "heading": 334,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2489.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 9.4
+    },
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 12.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364401UF1366S_part9",
+     "distance": 9.3,
+     "angleOffset": 2.7
+    },
+    {
+     "id": "building:6364401UF1366S_part3",
+     "distance": 10.1,
+     "angleOffset": 30.0
+    },
+    {
+     "id": "building:6364401UF1366S_part1",
+     "distance": 18.6,
+     "angleOffset": 7.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -48.5,
+    "z": 103.9,
+    "basis": "phone location",
+    "reportedAccuracy": 10.1,
+    "heading": 242,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2491.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part7",
+     "distance": 18.3,
+     "angleOffset": 28.6
+    },
+    {
+     "id": "building:6364201UF1366S_part1",
+     "distance": 27.1,
+     "angleOffset": 33.2
+    },
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 30.8,
+     "angleOffset": 25.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -69.9,
+    "z": 104.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.6,
+    "heading": 239,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2492.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0.3
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 3.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 24.0,
+     "angleOffset": 7.6
+    },
+    {
+     "id": "building:6264501UF1366S_part2",
+     "distance": 36.6,
+     "angleOffset": 29.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -76.6,
+    "z": 107.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 278,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2493.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0.6
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365101UF1366N_part4",
+     "distance": 18.7,
+     "angleOffset": 34.8
+    },
+    {
+     "id": "building:6365101UF1366N_part3",
+     "distance": 26.3,
+     "angleOffset": 22.4
+    },
+    {
+     "id": "building:6365101UF1366N_part1",
+     "distance": 27.3,
+     "angleOffset": 6.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -77.8,
+    "z": 108.2,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 333,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6174,6 +8138,477 @@
     "basis": "phone location",
     "reportedAccuracy": 4.7,
     "heading": 336,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2495.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 2.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365101UF1366N_part1",
+     "distance": 19.7,
+     "angleOffset": 19.4
+    },
+    {
+     "id": "building:6264501UF1366S_part2",
+     "distance": 29.0,
+     "angleOffset": 19.6
+    },
+    {
+     "id": "building:6365201UF1366N_part1",
+     "distance": 39.6,
+     "angleOffset": 27.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -81.3,
+    "z": 101.4,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 323,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2496.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part2",
+     "distance": 24.2,
+     "angleOffset": 10.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -84.3,
+    "z": 97.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 288,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2497.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 17.9,
+     "angleOffset": 20.8
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 40.7,
+     "angleOffset": 13.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -86.6,
+    "z": 96.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 252,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2498.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365101UF1366N_part1",
+     "distance": 9.9,
+     "angleOffset": 23.0
+    },
+    {
+     "id": "building:6365101UF1366N_part3",
+     "distance": 13.2,
+     "angleOffset": 10.9
+    },
+    {
+     "id": "building:6365101UF1366N_part9",
+     "distance": 21.5,
+     "angleOffset": 0.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -87.8,
+    "z": 92.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 26,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2499.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365101UF1366N_part3",
+     "distance": 12.9,
+     "angleOffset": 11.4
+    },
+    {
+     "id": "building:6365101UF1366N_part4",
+     "distance": 13.2,
+     "angleOffset": 28.6
+    },
+    {
+     "id": "building:6365101UF1366N_part9",
+     "distance": 21.1,
+     "angleOffset": 23.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -88.3,
+    "z": 91.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 52,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2500.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365101UF1366N_part3",
+     "distance": 12.9,
+     "angleOffset": 13.4
+    },
+    {
+     "id": "building:6365101UF1366N_part4",
+     "distance": 13.2,
+     "angleOffset": 26.6
+    },
+    {
+     "id": "building:6365101UF1366N_part9",
+     "distance": 21.1,
+     "angleOffset": 25.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -88.3,
+    "z": 91.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 54,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2501.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365201UF1366N_part13",
+     "distance": 32.1,
+     "angleOffset": 34.6
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 32.9,
+     "angleOffset": 22.4
+    },
+    {
+     "id": "building:6365201UF1366N_part12",
+     "distance": 41.4,
+     "angleOffset": 28.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -95.3,
+    "z": 78.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 329,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2502.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.4
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6365201UF1366N_part1",
+     "distance": 16.0,
+     "angleOffset": 14.4
+    },
+    {
+     "id": "building:6365201UF1366N_part14",
+     "distance": 23.0,
+     "angleOffset": 2.9
+    },
+    {
+     "id": "building:6365201UF1366N_part5",
+     "distance": 23.3,
+     "angleOffset": 12.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -97.5,
+    "z": 75.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 23,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2503.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.4
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 25.2,
+     "angleOffset": 26.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.0,
+    "z": 72.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 274,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2504.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.5
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -101.5,
+    "z": 72.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 241,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2505.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 40.7,
+     "angleOffset": 4.8
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 44.2,
+     "angleOffset": 15.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -116.6,
+    "z": 82.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 278,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2506.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 38.6,
+     "angleOffset": 26.4
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 42.7,
+     "angleOffset": 3.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -138.8,
+    "z": 78.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 331,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6243,6 +8678,378 @@
     "basis": "phone location",
     "reportedAccuracy": 2.6,
     "heading": 53,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2509.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 26.9,
+     "angleOffset": 34.4
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 30.6,
+     "angleOffset": 8.0
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 40.4,
+     "angleOffset": 23.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -146.5,
+    "z": 68.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 331,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2510.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 26.3,
+     "angleOffset": 7.9
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 35.8,
+     "angleOffset": 28.7
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 36.6,
+     "angleOffset": 10.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -149.7,
+    "z": 65.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 335,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2511.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 20.1,
+     "angleOffset": 18.9
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 33.0,
+     "angleOffset": 2.2
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 33.6,
+     "angleOffset": 18.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -151.5,
+    "z": 62.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 307,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2512.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 2.4
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 31.3,
+     "angleOffset": 11.2
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 34.3,
+     "angleOffset": 27.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.9,
+    "z": 55.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 69,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2513.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 2.8
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 28.2,
+     "angleOffset": 6.5
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 32.2,
+     "angleOffset": 34.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -153.5,
+    "z": 53.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 65,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2514.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.6
+    },
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 27.0,
+     "angleOffset": 8.2
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 38.0,
+     "angleOffset": 9.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -148.7,
+    "z": 52.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 15,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2515.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 4.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 13.2,
+     "angleOffset": 22.1
+    },
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 22.8,
+     "angleOffset": 33.7
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 27.0,
+     "angleOffset": 31.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -147.0,
+    "z": 48.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 330,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2516.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 7.9,
+     "angleOffset": 29.5
+    },
+    {
+     "id": "building:6265401UF1366N_part1",
+     "distance": 38.7,
+     "angleOffset": 30.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -150.7,
+    "z": 44.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 331,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2517.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 17.5,
+     "angleOffset": 25.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -153.5,
+    "z": 38.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 307,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6331,6 +9138,363 @@
    }
   },
   {
+   "file": "IMG_2520.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 3.7,
+     "angleOffset": 17.4
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 24.6,
+     "angleOffset": 13.4
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 24.8,
+     "angleOffset": 21.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -154.9,
+    "z": 37.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 241,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2521.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 2.7,
+     "angleOffset": 8.9
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 23.8,
+     "angleOffset": 18.2
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 23.9,
+     "angleOffset": 18.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.4,
+    "z": 38.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 238,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2522.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 5.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 38.5,
+     "angleOffset": 27.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -156.9,
+    "z": 43.6,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 141,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2523.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 27.5,
+     "angleOffset": 32.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -156.7,
+    "z": 45.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 147,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2524.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -187.0,
+    "z": 96.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.7,
+    "heading": 161,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2525.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 24.2,
+     "angleOffset": 30.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -187.3,
+    "z": 97.1,
+    "basis": "phone location",
+    "reportedAccuracy": 3.4,
+    "heading": 137,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2526.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part2",
+     "distance": 36.6,
+     "angleOffset": 7.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -187.0,
+    "z": 96.5,
+    "basis": "phone location",
+    "reportedAccuracy": 3.3,
+    "heading": 346,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2537.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.7
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 7.2
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 9.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 9.4,
+     "angleOffset": 1.7
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 22.2,
+     "angleOffset": 22.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.7,
+    "z": 48.2,
+    "basis": "phone location",
+    "reportedAccuracy": 19.0,
+    "heading": 328,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2538.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 3.6
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 7.1
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 9.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 23.8,
+     "angleOffset": 27.9
+    },
+    {
+     "id": "building:6265401UF1366N_part2",
+     "distance": 24.8,
+     "angleOffset": 23.4
+    },
+    {
+     "id": "building:6265401UF1366N_part4",
+     "distance": 36.3,
+     "angleOffset": 12.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -152.5,
+    "z": 48.2,
+    "basis": "phone location",
+    "reportedAccuracy": 16.7,
+    "heading": 45,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2539.jpg",
    "status": "needs-review",
    "reasons": [
@@ -6387,6 +9551,338 @@
    }
   },
   {
+   "file": "IMG_2540.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.8
+    },
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 6.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 19.6,
+     "angleOffset": 22.5
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 24.8,
+     "angleOffset": 9.7
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 37.9,
+     "angleOffset": 24.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -151.0,
+    "z": 55.7,
+    "basis": "phone location",
+    "reportedAccuracy": 14.0,
+    "heading": 245,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2541.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 4.6,
+     "angleOffset": 29.4
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 20.0,
+     "angleOffset": 34.0
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 24.8,
+     "angleOffset": 4.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -170.6,
+    "z": 65.2,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 160,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2542.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 16.1,
+     "angleOffset": 31.6
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 24.2,
+     "angleOffset": 6.2
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 38.5,
+     "angleOffset": 21.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -170.6,
+    "z": 65.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 149,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2543.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 4.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 18.1,
+     "angleOffset": 17.1
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 33.3,
+     "angleOffset": 30.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -165.4,
+    "z": 70.5,
+    "basis": "phone location",
+    "reportedAccuracy": 6.2,
+    "heading": 147,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2544.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 4.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 18.1,
+     "angleOffset": 18.1
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 33.3,
+     "angleOffset": 31.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -165.4,
+    "z": 70.5,
+    "basis": "phone location",
+    "reportedAccuracy": 6.2,
+    "heading": 146,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2545.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 6.2,
+     "angleOffset": 18.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -164.2,
+    "z": 82.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.5,
+    "heading": 124,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2546.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 40.0,
+     "angleOffset": 8.6
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 43.4,
+     "angleOffset": 21.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.4,
+    "z": 90.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.6,
+    "heading": 150,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2547.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 36.0,
+     "angleOffset": 13.0
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 39.9,
+     "angleOffset": 20.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -153.7,
+    "z": 94.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.5,
+    "heading": 146,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2548.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 36.0,
+     "angleOffset": 12.0
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 39.9,
+     "angleOffset": 21.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -153.7,
+    "z": 94.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.5,
+    "heading": 147,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2549.jpg",
    "status": "needs-review",
    "reasons": [
@@ -6415,6 +9911,390 @@
     "basis": "phone location",
     "reportedAccuracy": 3.8,
     "heading": 247,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2550.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part1",
+     "distance": 29.0,
+     "angleOffset": 1.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -153.2,
+    "z": 111.6,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 189,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2551.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -154.7,
+    "z": 113.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 244,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2552.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -162.7,
+    "z": 117.2,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 242,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2553.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0.3
+    },
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 3.0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -167.9,
+    "z": 120.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 63,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2554.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.7
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 3.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 34.9,
+     "angleOffset": 34.5
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 37.8,
+     "angleOffset": 10.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -168.6,
+    "z": 121.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 339,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2555.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 0
+    },
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.7
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 3.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 18.6,
+     "angleOffset": 8.0
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 34.9,
+     "angleOffset": 7.5
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 37.8,
+     "angleOffset": 16.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -168.6,
+    "z": 121.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 6,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2556.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0.1
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 2.9
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 3.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part1",
+     "distance": 13.7,
+     "angleOffset": 3.4
+    },
+    {
+     "id": "building:6264601UF1366S_part2",
+     "distance": 41.5,
+     "angleOffset": 12.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -165.9,
+    "z": 128.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 151,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2557.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 2.8
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 2.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 22.8,
+     "angleOffset": 9.7
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 44.9,
+     "angleOffset": 8.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -160.4,
+    "z": 139.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 69,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2558.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 2.9
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 2.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part2",
+     "distance": 26.6,
+     "angleOffset": 20.6
+    },
+    {
+     "id": "building:6264601UF1366S_part1",
+     "distance": 42.2,
+     "angleOffset": 34.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -158.9,
+    "z": 142.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 151,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6473,6 +10353,459 @@
    }
   },
   {
+   "file": "IMG_2560.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:eva-west-footpath",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 2.2
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 2.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 28.2,
+     "angleOffset": 26.3
+    },
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 37.3,
+     "angleOffset": 25.1
+    },
+    {
+     "id": "building:6264601UF1366S_part6",
+     "distance": 40.8,
+     "angleOffset": 34.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -149.2,
+    "z": 153.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 58,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2561.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part2",
+     "distance": 11.9,
+     "angleOffset": 25.0
+    },
+    {
+     "id": "building:6264601UF1366S_part3",
+     "distance": 13.7,
+     "angleOffset": 24.7
+    },
+    {
+     "id": "building:6264601UF1366S_part1",
+     "distance": 23.6,
+     "angleOffset": 21.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -140.5,
+    "z": 148.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 146,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2562.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part2",
+     "distance": 11.8,
+     "angleOffset": 24.8
+    },
+    {
+     "id": "building:6264601UF1366S_part3",
+     "distance": 12.7,
+     "angleOffset": 27.9
+    },
+    {
+     "id": "building:6264601UF1366S_part1",
+     "distance": 22.6,
+     "angleOffset": 25.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -139.3,
+    "z": 148.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 152,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2563.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part1",
+     "distance": 17.7,
+     "angleOffset": 31.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -136.5,
+    "z": 152.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 151,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2564.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part1",
+     "distance": 16.7,
+     "angleOffset": 31.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -136.5,
+    "z": 154.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.0,
+    "heading": 145,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2565.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part3",
+     "distance": 6.7,
+     "angleOffset": 24.7
+    },
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 15.1,
+     "angleOffset": 8.2
+    },
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 24.3,
+     "angleOffset": 11.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -135.5,
+    "z": 155.5,
+    "basis": "phone location",
+    "reportedAccuracy": 5.1,
+    "heading": 63,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2566.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 6.3,
+     "angleOffset": 14.9
+    },
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 15.1,
+     "angleOffset": 1.8
+    },
+    {
+     "id": "building:6264601UF1366S_part6",
+     "distance": 17.6,
+     "angleOffset": 26.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -126.1,
+    "z": 154.6,
+    "basis": "phone location",
+    "reportedAccuracy": 3.6,
+    "heading": 66,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2567.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 5.3,
+     "angleOffset": 17.2
+    },
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 13.7,
+     "angleOffset": 7.5
+    },
+    {
+     "id": "building:6264601UF1366S_part6",
+     "distance": 16.1,
+     "angleOffset": 34.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -124.6,
+    "z": 154.6,
+    "basis": "phone location",
+    "reportedAccuracy": 3.7,
+    "heading": 58,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2568.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 9.8,
+     "angleOffset": 3.9
+    },
+    {
+     "id": "building:6364201UF1366S_part3",
+     "distance": 21.5,
+     "angleOffset": 18.4
+    },
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 26.1,
+     "angleOffset": 2.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -120.9,
+    "z": 153.4,
+    "basis": "phone location",
+    "reportedAccuracy": 3.7,
+    "heading": 59,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2569.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 18.4,
+     "angleOffset": 13.7
+    },
+    {
+     "id": "building:6364201UF1366S_part9",
+     "distance": 21.7,
+     "angleOffset": 33.5
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 29.2,
+     "angleOffset": 15.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -112.7,
+    "z": 151.5,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 61,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2570.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 4.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 16.1,
+     "angleOffset": 13.4
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 27.0,
+     "angleOffset": 14.6
+    },
+    {
+     "id": "building:6364201UF1366S_part6",
+     "distance": 29.8,
+     "angleOffset": 28.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -110.7,
+    "z": 150.3,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 59,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2571.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 10.0,
+     "angleOffset": 28.0
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 20.9,
+     "angleOffset": 29.8
+    },
+    {
+     "id": "building:6364201UF1366S_part6",
+     "distance": 25.7,
+     "angleOffset": 23.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -106.4,
+    "z": 146.0,
+    "basis": "phone location",
+    "reportedAccuracy": 3.7,
+    "heading": 74,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2572.jpg",
    "status": "suggested",
    "reasons": [
@@ -6515,6 +10848,524 @@
    }
   },
   {
+   "file": "IMG_2573.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 3.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part9",
+     "distance": 11.1,
+     "angleOffset": 26.0
+    },
+    {
+     "id": "building:6364201UF1366S_part6",
+     "distance": 20.3,
+     "angleOffset": 3.4
+    },
+    {
+     "id": "building:6364201UF1366S_part10",
+     "distance": 29.3,
+     "angleOffset": 11.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -101.2,
+    "z": 148.7,
+    "basis": "phone location",
+    "reportedAccuracy": 3.3,
+    "heading": 88,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2574.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 10.4,
+     "angleOffset": 18.2
+    },
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 19.6,
+     "angleOffset": 22.6
+    },
+    {
+     "id": "building:6264601UF1366S_part3",
+     "distance": 27.8,
+     "angleOffset": 30.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -101.7,
+    "z": 148.7,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 287,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2575.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 10.0,
+     "angleOffset": 33.7
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 35.8,
+     "angleOffset": 28.8
+    },
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 43.5,
+     "angleOffset": 1.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -102.2,
+    "z": 148.1,
+    "basis": "phone location",
+    "reportedAccuracy": 3.1,
+    "heading": 299,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2576.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part4",
+     "distance": 14.7,
+     "angleOffset": 8.0
+    },
+    {
+     "id": "building:6364801UF1366S_part3",
+     "distance": 33.2,
+     "angleOffset": 32.7
+    },
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 42.7,
+     "angleOffset": 26.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -102.2,
+    "z": 149.0,
+    "basis": "phone location",
+    "reportedAccuracy": 3.0,
+    "heading": 149,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2577.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part4",
+     "distance": 11.8,
+     "angleOffset": 11.0
+    },
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 40.1,
+     "angleOffset": 29.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.7,
+    "z": 151.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 150,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2578.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 3.0
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 5.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364401UF1366S_part2",
+     "distance": 17.8,
+     "angleOffset": 25.4
+    },
+    {
+     "id": "building:6364401UF1366S_part10",
+     "distance": 27.9,
+     "angleOffset": 11.0
+    },
+    {
+     "id": "building:6364401UF1366S_part4",
+     "distance": 28.7,
+     "angleOffset": 20.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -64.7,
+    "z": 147.2,
+    "basis": "phone location",
+    "reportedAccuracy": 4.1,
+    "heading": 60,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2579.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.7
+    },
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 4.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364401UF1366S_part2",
+     "distance": 14.0,
+     "angleOffset": 31.4
+    },
+    {
+     "id": "building:6364401UF1366S_part10",
+     "distance": 23.9,
+     "angleOffset": 13.4
+    },
+    {
+     "id": "building:6364401UF1366S_part4",
+     "distance": 24.8,
+     "angleOffset": 24.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -61.9,
+    "z": 144.4,
+    "basis": "phone location",
+    "reportedAccuracy": 3.4,
+    "heading": 63,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2580.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 1.1
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 3.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 9.7,
+     "angleOffset": 2.4
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 16.5,
+     "angleOffset": 26.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -54.5,
+    "z": 143.5,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 152,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2581.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 4.9
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 5.5
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -52.5,
+    "z": 150.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 176,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2582.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364801UF1366S_part1",
+     "distance": 13.3,
+     "angleOffset": 20.9
+    },
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 22.9,
+     "angleOffset": 14.8
+    },
+    {
+     "id": "building:6364801UF1366S_part3",
+     "distance": 23.3,
+     "angleOffset": 11.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -51.0,
+    "z": 154.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 236,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2583.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 5.4
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 5.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364801UF1366S_part1",
+     "distance": 10.0,
+     "angleOffset": 31.2
+    },
+    {
+     "id": "building:6364801UF1366S_part3",
+     "distance": 20.4,
+     "angleOffset": 27.7
+    },
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 21.9,
+     "angleOffset": 0.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -55.2,
+    "z": 152.8,
+    "basis": "phone location",
+    "reportedAccuracy": 9.7,
+    "heading": 210,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2584.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -69.1,
+    "z": 170.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 149,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2585.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364801UF1366S_part3",
+     "distance": 7.8,
+     "angleOffset": 11.9
+    },
+    {
+     "id": "building:6364201UF1366S_part6",
+     "distance": 24.6,
+     "angleOffset": 5.6
+    },
+    {
+     "id": "building:6364201UF1366S_part4",
+     "distance": 25.6,
+     "angleOffset": 32.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -69.6,
+    "z": 171.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 327,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2586.jpg",
    "status": "needs-review",
    "reasons": [
@@ -6551,6 +11402,464 @@
    }
   },
   {
+   "file": "IMG_2587.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 22.2,
+     "angleOffset": 10.7
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 28.7,
+     "angleOffset": 2.1
+    },
+    {
+     "id": "building:6364601UF1366S_part2",
+     "distance": 38.6,
+     "angleOffset": 3.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -66.9,
+    "z": 165.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 62,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2588.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 19.7,
+     "angleOffset": 5.2
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 26.0,
+     "angleOffset": 9.7
+    },
+    {
+     "id": "building:6364601UF1366S_part2",
+     "distance": 36.0,
+     "angleOffset": 4.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -64.2,
+    "z": 165.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 53,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2589.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 17.7,
+     "angleOffset": 14.1
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 23.7,
+     "angleOffset": 31.6
+    },
+    {
+     "id": "building:6364401UF1366S_part2",
+     "distance": 33.1,
+     "angleOffset": 16.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -61.7,
+    "z": 164.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 29,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2590.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 15.8,
+     "angleOffset": 1.9
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 21.8,
+     "angleOffset": 17.4
+    },
+    {
+     "id": "building:6364401UF1366S_part2",
+     "distance": 31.6,
+     "angleOffset": 33.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -60.2,
+    "z": 163.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 44,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2591.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 13.0,
+     "angleOffset": 19.3
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 19.2,
+     "angleOffset": 2.6
+    },
+    {
+     "id": "building:6364601UF1366S_part2",
+     "distance": 29.1,
+     "angleOffset": 4.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -58.4,
+    "z": 161.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 62,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2592.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 12.7,
+     "angleOffset": 21.5
+    },
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 18.7,
+     "angleOffset": 1.8
+    },
+    {
+     "id": "building:6364601UF1366S_part2",
+     "distance": 28.7,
+     "angleOffset": 4.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -57.7,
+    "z": 161.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 61,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2593.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part8",
+     "distance": 18.4,
+     "angleOffset": 19.7
+    },
+    {
+     "id": "building:6364401UF1366S_part2",
+     "distance": 23.9,
+     "angleOffset": 21.1
+    },
+    {
+     "id": "building:6364201UF1366S_part10",
+     "distance": 25.6,
+     "angleOffset": 27.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -51.7,
+    "z": 156.2,
+    "basis": "phone location",
+    "reportedAccuracy": 3.6,
+    "heading": 332,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2594.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part8",
+     "distance": 16.5,
+     "angleOffset": 16.5
+    },
+    {
+     "id": "building:6364401UF1366S_part2",
+     "distance": 22.4,
+     "angleOffset": 27.5
+    },
+    {
+     "id": "building:6364201UF1366S_part10",
+     "distance": 23.6,
+     "angleOffset": 25.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -53.2,
+    "z": 154.9,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 329,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2595.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 0.4
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364401UF1366S_part10",
+     "distance": 20.6,
+     "angleOffset": 29.6
+    },
+    {
+     "id": "building:6364601UF1366S_part2",
+     "distance": 22.4,
+     "angleOffset": 24.4
+    },
+    {
+     "id": "building:6364401UF1366S_part7",
+     "distance": 30.8,
+     "angleOffset": 26.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -56.2,
+    "z": 145.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 67,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2596.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 0.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364401UF1366S_part7",
+     "distance": 13.5,
+     "angleOffset": 19.3
+    },
+    {
+     "id": "building:6364401UF1366S_part11",
+     "distance": 22.7,
+     "angleOffset": 32.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -38.1,
+    "z": 135.1,
+    "basis": "phone location",
+    "reportedAccuracy": 3.0,
+    "heading": 27,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2597.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 0.7
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -26.4,
+    "z": 127.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 35,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2598.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 1.9
+    },
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -17.9,
+    "z": 125.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 78,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2599.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 2.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 3.8,
+     "angleOffset": 16.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -13.4,
+    "z": 130.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 133,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2600.jpg",
    "status": "needs-review",
    "reasons": [
@@ -6573,6 +11882,627 @@
     "basis": "phone location",
     "reportedAccuracy": 2.3,
     "heading": 112,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2601.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 2.8
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 3.7
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -10.7,
+    "z": 134.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 106,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2602.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.8
+    },
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 4.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part8",
+     "distance": 43.9,
+     "angleOffset": 5.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -7.5,
+    "z": 135.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 50,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2603.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.8
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -4.7,
+    "z": 132.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 348,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2604.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part8",
+     "distance": 36.8,
+     "angleOffset": 3.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -1.7,
+    "z": 131.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 59,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2605.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 4.9
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 36.3,
+    "z": 120.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 158,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2606.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 4.4
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 35.8,
+    "z": 120.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 113,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2607.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 6.7
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 10.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 28.6,
+     "angleOffset": 31.8
+    },
+    {
+     "id": "building:6364601UF1366S_part5",
+     "distance": 43.3,
+     "angleOffset": 33.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 10.7,
+    "z": 116.0,
+    "basis": "phone location",
+    "reportedAccuracy": 18.8,
+    "heading": 199,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2608.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 5.7
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 8.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 31.5,
+     "angleOffset": 9.1
+    },
+    {
+     "id": "building:6364601UF1366S_part3",
+     "distance": 39.7,
+     "angleOffset": 16.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 13.4,
+    "z": 114.7,
+    "basis": "phone location",
+    "reportedAccuracy": 12.6,
+    "heading": 223,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2609.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 7.6
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 7.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 32.3,
+     "angleOffset": 2.4
+    },
+    {
+     "id": "building:6364601UF1366S_part3",
+     "distance": 40.2,
+     "angleOffset": 10.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 12.7,
+    "z": 112.6,
+    "basis": "phone location",
+    "reportedAccuracy": 12.3,
+    "heading": 226,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2610.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 0.2
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 1.0
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 5.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part2",
+     "distance": 29.9,
+     "angleOffset": 30.5
+    },
+    {
+     "id": "building:6364501UF1366S_part3",
+     "distance": 43.8,
+     "angleOffset": 5.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 21.9,
+    "z": 112.6,
+    "basis": "phone location",
+    "reportedAccuracy": 4.2,
+    "heading": 326,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2611.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.7
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part3",
+     "distance": 29.3,
+     "angleOffset": 33.8
+    },
+    {
+     "id": "building:6465801UF1366N_part4",
+     "distance": 34.0,
+     "angleOffset": 29.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 20.6,
+    "z": 106.7,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 52,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2612.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.9
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 2.3
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 5.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part3",
+     "distance": 22.8,
+     "angleOffset": 23.8
+    },
+    {
+     "id": "building:6465801UF1366N_part4",
+     "distance": 27.2,
+     "angleOffset": 16.7
+    },
+    {
+     "id": "building:6465801UF1366N_part8",
+     "distance": 43.7,
+     "angleOffset": 3.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 26.1,
+    "z": 101.4,
+    "basis": "phone location",
+    "reportedAccuracy": 4.4,
+    "heading": 33,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2613.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.1
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 4.2
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 4.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part2",
+     "distance": 18.6,
+     "angleOffset": 6.5
+    },
+    {
+     "id": "building:6465801UF1366N_part3",
+     "distance": 18.9,
+     "angleOffset": 25.9
+    },
+    {
+     "id": "building:6465801UF1366N_part1",
+     "distance": 36.5,
+     "angleOffset": 5.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 31.1,
+    "z": 97.7,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 330,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2614.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 4.7
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 5.5
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 32.1,
+    "z": 96.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 132,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2615.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 4.0
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 6.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part8",
+     "distance": 14.4,
+     "angleOffset": 29.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 33.1,
+    "z": 96.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 168,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6605,6 +12535,488 @@
     "basis": "phone location",
     "reportedAccuracy": 4.7,
     "heading": 126,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2617.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.1
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.2
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 43.0,
+    "z": 92.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 112,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2618.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.1
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part8",
+     "distance": 27.4,
+     "angleOffset": 2.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 46.0,
+    "z": 89.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 221,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2619.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.4
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part8",
+     "distance": 27.8,
+     "angleOffset": 26.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 46.0,
+    "z": 88.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 192,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2620.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.7
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 46.8,
+    "z": 89.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 154,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2621.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.9
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 49.5,
+    "z": 86.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 55,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2622.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 2.3
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 50.2,
+    "z": 85.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 41,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2623.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.9
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part8",
+     "distance": 18.2,
+     "angleOffset": 14.2
+    },
+    {
+     "id": "building:6465801UF1366N_part7",
+     "distance": 20.6,
+     "angleOffset": 4.4
+    },
+    {
+     "id": "building:6465545UF1366N_part1",
+     "distance": 44.7,
+     "angleOffset": 18.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 53.0,
+    "z": 80.7,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 357,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2624.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.8
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part8",
+     "distance": 17.6,
+     "angleOffset": 7.8
+    },
+    {
+     "id": "building:6465801UF1366N_part7",
+     "distance": 19.9,
+     "angleOffset": 18.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 54.0,
+    "z": 79.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.2,
+    "heading": 331,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2625.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 1.0
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part4",
+     "distance": 26.0,
+     "angleOffset": 13.2
+    },
+    {
+     "id": "building:6465801UF1366N_part3",
+     "distance": 30.4,
+     "angleOffset": 7.0
+    },
+    {
+     "id": "building:6465801UF1366N_part2",
+     "distance": 40.7,
+     "angleOffset": 4.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 59.7,
+    "z": 73.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 253,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2626.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.8
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part8",
+     "distance": 16.0,
+     "angleOffset": 19.1
+    },
+    {
+     "id": "building:6465801UF1366N_part7",
+     "distance": 16.5,
+     "angleOffset": 33.6
+    },
+    {
+     "id": "building:6465801UF1366N_part4",
+     "distance": 26.0,
+     "angleOffset": 25.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 59.7,
+    "z": 73.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 292,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2627.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 0.5
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.4
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465801UF1366N_part7",
+     "distance": 19.1,
+     "angleOffset": 5.0
+    },
+    {
+     "id": "building:6465801UF1366N_part8",
+     "distance": 21.3,
+     "angleOffset": 14.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 68.9,
+    "z": 64.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 289,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2628.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.6
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 1.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6465542UF1366N_part1",
+     "distance": 23.1,
+     "angleOffset": 32.6
+    },
+    {
+     "id": "building:6465541UF1366N_part2",
+     "distance": 24.8,
+     "angleOffset": 23.1
+    },
+    {
+     "id": "building:6465542UF1366N_part2",
+     "distance": 26.7,
+     "angleOffset": 32.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 71.4,
+    "z": 61.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 43,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6647,6 +13059,483 @@
    }
   },
   {
+   "file": "IMG_2630.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.2
+    },
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 2.1
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 5.8
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 24.9,
+    "z": 102.7,
+    "basis": "phone location",
+    "reportedAccuracy": 6.8,
+    "heading": 227,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2631.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:barraka",
+     "name": "Barraka Beach",
+     "kind": "area",
+     "gap": 0.7
+    },
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.8
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 4.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364501UF1366S_part2",
+     "distance": 41.8,
+     "angleOffset": 25.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": 21.1,
+    "z": 107.9,
+    "basis": "phone location",
+    "reportedAccuracy": 4.0,
+    "heading": 206,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2632.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364601UF1366S_part4",
+     "distance": 26.6,
+     "angleOffset": 29.0
+    },
+    {
+     "id": "building:6364601UF1366S_part1",
+     "distance": 34.7,
+     "angleOffset": 34.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -15.2,
+    "z": 147.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 228,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2633.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -20.1,
+    "z": 151.2,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 205,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2634.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -21.4,
+    "z": 152.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 216,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2635.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 12.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6263501UF1366S_part1",
+     "distance": 37.4,
+     "angleOffset": 22.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -76.1,
+    "z": 183.4,
+    "basis": "phone location",
+    "reportedAccuracy": 15.9,
+    "heading": 267,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2636.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0.4
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -86.6,
+    "z": 217.4,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 229,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2637.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.5,
+    "z": 225.1,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 238,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2638.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -104.7,
+    "z": 227.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.0,
+    "heading": 245,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2639.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 9.0
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 13.5
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -105.5,
+    "z": 217.1,
+    "basis": "phone location",
+    "reportedAccuracy": 17.8,
+    "heading": 57,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2640.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 11.9
+    },
+    {
+     "id": "parking:Dalí car park",
+     "name": "Dalí car park",
+     "kind": "parking",
+     "gap": 17.2
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 23.3
+    },
+    {
+     "id": "street:dali",
+     "name": "Calle Pintor Dalí",
+     "kind": "street",
+     "gap": 24.7
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -103.2,
+    "z": 211.5,
+    "basis": "phone location",
+    "reportedAccuracy": 28.6,
+    "heading": 63,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2641.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 12.3
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.2,
+    "z": 208.1,
+    "basis": "phone location",
+    "reportedAccuracy": 15.9,
+    "heading": 64,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2642.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "GPS uncertainty exceeds 8 m",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 10.3
+    },
+    {
+     "id": "area:beach",
+     "name": "Villacana beach",
+     "kind": "area",
+     "gap": 21.5
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -95.8,
+    "z": 207.2,
+    "basis": "phone location",
+    "reportedAccuracy": 22.0,
+    "heading": 61,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2643.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 33.9,
+     "angleOffset": 28.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -86.6,
+    "z": 198.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.7,
+    "heading": 66,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2644.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "area:paseo",
+     "name": "Paseo · Senda Litoral",
+     "kind": "area",
+     "gap": 1.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 30.5,
+     "angleOffset": 32.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -77.6,
+    "z": 200.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.1,
+    "heading": 55,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2645.jpg",
    "status": "suggested",
    "reasons": [
@@ -6675,6 +13564,475 @@
     "basis": "phone location",
     "reportedAccuracy": 2.0,
     "heading": 266,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2646.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:jorge",
+     "name": "Calle Jorge",
+     "kind": "street",
+     "gap": 2.5
+    },
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 3.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part4",
+     "distance": 3.3,
+     "angleOffset": 13.4
+    },
+    {
+     "id": "building:6264601UF1366S_part6",
+     "distance": 18.4,
+     "angleOffset": 33.3
+    },
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 24.9,
+     "angleOffset": 23.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -92.0,
+    "z": 163.6,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 330,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2647.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 3.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 22.4,
+     "angleOffset": 27.2
+    },
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 23.1,
+     "angleOffset": 14.8
+    },
+    {
+     "id": "building:6364201UF1366S_part3",
+     "distance": 27.8,
+     "angleOffset": 0.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -93.5,
+    "z": 161.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 331,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2648.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 3.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 15.1,
+     "angleOffset": 17.4
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 23.7,
+     "angleOffset": 2.8
+    },
+    {
+     "id": "building:6364201UF1366S_part1",
+     "distance": 29.5,
+     "angleOffset": 21.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -97.5,
+    "z": 154.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 11,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2649.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 14.4,
+     "angleOffset": 5.7
+    },
+    {
+     "id": "building:6364201UF1366S_part3",
+     "distance": 18.1,
+     "angleOffset": 30.8
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 23.5,
+     "angleOffset": 12.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -99.0,
+    "z": 153.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 5,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2650.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part4",
+     "distance": 10.9,
+     "angleOffset": 7.3
+    },
+    {
+     "id": "building:6364801UF1366S_part3",
+     "distance": 29.9,
+     "angleOffset": 34.2
+    },
+    {
+     "id": "building:6364801UF1366S_part2",
+     "distance": 39.2,
+     "angleOffset": 26.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.0,
+    "z": 152.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 147,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2651.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 11.8,
+     "angleOffset": 31.6
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 22.0,
+     "angleOffset": 19.1
+    },
+    {
+     "id": "building:6364201UF1366S_part1",
+     "distance": 29.7,
+     "angleOffset": 3.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -102.5,
+    "z": 150.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 48,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2652.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part9",
+     "distance": 11.9,
+     "angleOffset": 16.7
+    },
+    {
+     "id": "building:6364201UF1366S_part6",
+     "distance": 21.6,
+     "angleOffset": 1.2
+    },
+    {
+     "id": "building:6364201UF1366S_part10",
+     "distance": 30.9,
+     "angleOffset": 14.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -102.5,
+    "z": 150.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 89,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2653.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 11.5,
+     "angleOffset": 7.2
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 21.8,
+     "angleOffset": 5.3
+    },
+    {
+     "id": "building:6364201UF1366S_part1",
+     "distance": 29.5,
+     "angleOffset": 21.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -102.5,
+    "z": 150.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 24,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2654.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part2",
+     "distance": 11.5,
+     "angleOffset": 33.2
+    },
+    {
+     "id": "building:6364201UF1366S_part5",
+     "distance": 21.8,
+     "angleOffset": 20.7
+    },
+    {
+     "id": "building:6364201UF1366S_part1",
+     "distance": 29.5,
+     "angleOffset": 5.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -102.5,
+    "z": 150.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 50,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2656.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 8.5,
+     "angleOffset": 24.5
+    },
+    {
+     "id": "building:6264601UF1366S_part6",
+     "distance": 8.9,
+     "angleOffset": 25.5
+    },
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 17.7,
+     "angleOffset": 22.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -103.7,
+    "z": 147.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 238,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2657.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part5",
+     "distance": 8.5,
+     "angleOffset": 23.5
+    },
+    {
+     "id": "building:6264601UF1366S_part6",
+     "distance": 8.9,
+     "angleOffset": 26.5
+    },
+    {
+     "id": "building:6264601UF1366S_part4",
+     "distance": 17.7,
+     "angleOffset": 21.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -103.7,
+    "z": 147.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 239,
     "headingBasis": "EXIF true north"
    }
   },
@@ -6721,6 +14079,582 @@
    }
   },
   {
+   "file": "IMG_2660.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6364201UF1366S_part3",
+     "distance": 9.3,
+     "angleOffset": 6.2
+    },
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 33.0,
+     "angleOffset": 8.3
+    },
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 38.5,
+     "angleOffset": 28.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -104.2,
+    "z": 146.0,
+    "basis": "phone location",
+    "reportedAccuracy": 3.2,
+    "heading": 337,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2661.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0.6
+    },
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 2.5
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 4.5
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 18.9,
+     "angleOffset": 33.9
+    },
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 29.1,
+     "angleOffset": 15.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -112.4,
+    "z": 134.5,
+    "basis": "phone location",
+    "reportedAccuracy": 3.5,
+    "heading": 298,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2662.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0.1
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 3.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264601UF1366S_part3",
+     "distance": 27.2,
+     "angleOffset": 30.6
+    },
+    {
+     "id": "building:6264601UF1366S_part2",
+     "distance": 36.8,
+     "angleOffset": 21.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -114.2,
+    "z": 132.3,
+    "basis": "phone location",
+    "reportedAccuracy": 3.3,
+    "heading": 243,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2663.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0.8
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 3.0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 27.3,
+     "angleOffset": 8.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -113.7,
+    "z": 131.7,
+    "basis": "phone location",
+    "reportedAccuracy": 3.0,
+    "heading": 37,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2664.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:patricia",
+     "name": "Calle Patricia",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.0
+    },
+    {
+     "id": "street:silvia-south",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 2.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 16.0,
+     "angleOffset": 13.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -111.9,
+    "z": 130.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 338,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2665.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 8.5,
+     "angleOffset": 31.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -114.4,
+    "z": 122.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 337,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2666.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 7.1,
+     "angleOffset": 15.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -115.4,
+    "z": 121.8,
+    "basis": "phone location",
+    "reportedAccuracy": 3.0,
+    "heading": 319,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2667.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part2",
+     "distance": 35.1,
+     "angleOffset": 2.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -118.4,
+    "z": 118.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 24,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2668.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 20.1,
+     "angleOffset": 10.7
+    },
+    {
+     "id": "building:6264501UF1366S_part2",
+     "distance": 33.4,
+     "angleOffset": 31.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -118.9,
+    "z": 116.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 55,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2669.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 2.8,
+     "angleOffset": 4.3
+    },
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 24.9,
+     "angleOffset": 0.5
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -118.9,
+    "z": 116.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 242,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2670.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264401UF1366S_part2",
+     "distance": 3.8,
+     "angleOffset": 9.9
+    },
+    {
+     "id": "building:6264401UF1366S_part3",
+     "distance": 25.9,
+     "angleOffset": 1.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -118.4,
+    "z": 115.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 239,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2671.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -118.4,
+    "z": 116.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 307,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2672.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 18.1,
+     "angleOffset": 3.2
+    },
+    {
+     "id": "building:6365101UF1366N_part1",
+     "distance": 44.0,
+     "angleOffset": 20.4
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -117.1,
+    "z": 115.0,
+    "basis": "phone location",
+    "reportedAccuracy": 3.0,
+    "heading": 63,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2673.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:silvia-north",
+     "name": "Calle Silvia",
+     "kind": "street",
+     "gap": 1.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6264501UF1366S_part1",
+     "distance": 18.2,
+     "angleOffset": 3.4
+    },
+    {
+     "id": "building:6364201UF1366S_part7",
+     "distance": 39.0,
+     "angleOffset": 33.6
+    },
+    {
+     "id": "building:6365101UF1366N_part1",
+     "distance": 43.7,
+     "angleOffset": 22.1
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -117.6,
+    "z": 114.1,
+    "basis": "phone location",
+    "reportedAccuracy": 3.9,
+    "heading": 66,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2674.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range",
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6365101UF1366N_part1",
+     "distance": 26.8,
+     "angleOffset": 29.0
+    },
+    {
+     "id": "building:6365101UF1366N_part4",
+     "distance": 30.1,
+     "angleOffset": 1.4
+    },
+    {
+     "id": "building:6365101UF1366N_part3",
+     "distance": 31.6,
+     "angleOffset": 17.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.7,
+    "z": 105.8,
+    "basis": "phone location",
+    "reportedAccuracy": 4.8,
+    "heading": 59,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2675.jpg",
    "status": "needs-review",
    "reasons": [
@@ -6763,6 +14697,409 @@
    }
   },
   {
+   "file": "IMG_2676.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0.3
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -100.2,
+    "z": 75.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 251,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2677.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.8
+    },
+    {
+     "id": "street:teodoro-rojo",
+     "name": "Calle Teodoro Rojo",
+     "kind": "street",
+     "gap": 4.6
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -105.7,
+    "z": 74.8,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 246,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2678.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 1.7
+    }
+   ],
+   "inViewCandidates": [],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -113.4,
+    "z": 79.5,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 230,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2679.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:eva",
+     "name": "Calle Eva",
+     "kind": "street",
+     "gap": 0.8
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 40.9,
+     "angleOffset": 11.7
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 44.4,
+     "angleOffset": 8.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -116.4,
+    "z": 82.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.9,
+    "heading": 271,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2680.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 29.1,
+     "angleOffset": 17.2
+    },
+    {
+     "id": "building:6265801UF1366N_part5",
+     "distance": 32.0,
+     "angleOffset": 10.9
+    },
+    {
+     "id": "building:6265801UF1366N_part3",
+     "distance": 41.0,
+     "angleOffset": 32.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -128.8,
+    "z": 82.9,
+    "basis": "phone location",
+    "reportedAccuracy": 2.8,
+    "heading": 272,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2681.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "No mapped street/area within the uncertainty range"
+   ],
+   "nearby": [],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 26.9,
+     "angleOffset": 5.4
+    },
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 42.3,
+     "angleOffset": 9.2
+    },
+    {
+     "id": "building:6265801UF1366N_part2",
+     "distance": 43.8,
+     "angleOffset": 29.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -131.6,
+    "z": 84.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 299,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2682.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 39.4,
+     "angleOffset": 27.3
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 44.1,
+     "angleOffset": 1.3
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -139.0,
+    "z": 80.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 334,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2683.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 2.7
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265801UF1366N_part4",
+     "distance": 30.4,
+     "angleOffset": 28.8
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 33.4,
+     "angleOffset": 5.4
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 35.9,
+     "angleOffset": 29.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -141.0,
+    "z": 72.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 303,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2684.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.9
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 32.0,
+     "angleOffset": 17.3
+    },
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 34.8,
+     "angleOffset": 19.2
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -142.3,
+    "z": 71.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.6,
+    "heading": 315,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2685.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-south",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.3
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 29.4,
+     "angleOffset": 4.5
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 39.5,
+     "angleOffset": 27.7
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 40.1,
+     "angleOffset": 10.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -146.7,
+    "z": 67.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.7,
+    "heading": 334,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2686.jpg",
+   "status": "needs-review",
+   "reasons": [
+    "Uncertainty reaches more than one named street"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    },
+    {
+     "id": "street:cervantes",
+     "name": "Calle Miguel de Cervantes",
+     "kind": "street",
+     "gap": 1.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 16.2,
+     "angleOffset": 18.5
+    },
+    {
+     "id": "building:6265401UF1366N_part3",
+     "distance": 25.6,
+     "angleOffset": 29.0
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 29.7,
+     "angleOffset": 29.0
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -145.5,
+    "z": 51.0,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 331,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
    "file": "IMG_2687.jpg",
    "status": "suggested",
    "reasons": [
@@ -6796,6 +15133,211 @@
     "basis": "phone location",
     "reportedAccuracy": 2.5,
     "heading": 320,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2688.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 5.8,
+     "angleOffset": 32.8
+    },
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 19.9,
+     "angleOffset": 25.8
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -151.7,
+    "z": 41.1,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 313,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2689.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part1",
+     "distance": 17.5,
+     "angleOffset": 5.9
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 25.7,
+     "angleOffset": 28.8
+    },
+    {
+     "id": "building:6265201UF1366N_part6",
+     "distance": 42.5,
+     "angleOffset": 20.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -153.5,
+    "z": 38.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 286,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2690.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.2
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 3.7,
+     "angleOffset": 4.4
+    },
+    {
+     "id": "building:6265201UF1366N_part3",
+     "distance": 24.6,
+     "angleOffset": 26.4
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 24.8,
+     "angleOffset": 8.7
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -154.9,
+    "z": 37.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.4,
+    "heading": 228,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2691.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 0.6
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 3.4,
+     "angleOffset": 12.5
+    },
+    {
+     "id": "building:6265201UF1366N_part4",
+     "distance": 24.5,
+     "angleOffset": 13.4
+    },
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 35.9,
+     "angleOffset": 23.6
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -155.4,
+    "z": 37.4,
+    "basis": "phone location",
+    "reportedAccuracy": 2.3,
+    "heading": 205,
+    "headingBasis": "EXIF true north"
+   }
+  },
+  {
+   "file": "IMG_2692.jpg",
+   "status": "suggested",
+   "reasons": [
+    "Compatible map context; metadata association remains a suggestion"
+   ],
+   "nearby": [
+    {
+     "id": "street:elena-north",
+     "name": "Calle Elena",
+     "kind": "street",
+     "gap": 1.1
+    }
+   ],
+   "inViewCandidates": [
+    {
+     "id": "building:6265201UF1366N_part5",
+     "distance": 4.8,
+     "angleOffset": 24.9
+    },
+    {
+     "id": "building:6265801UF1366N_part1",
+     "distance": 38.0,
+     "angleOffset": 20.6
+    },
+    {
+     "id": "building:6265601UF1366N_part1",
+     "distance": 42.8,
+     "angleOffset": 33.9
+    }
+   ],
+   "citedBy": [],
+   "geometryReview": "observed; geometry comparison pending",
+   "camera": {
+    "x": -157.2,
+    "z": 35.3,
+    "basis": "phone location",
+    "reportedAccuracy": 2.5,
+    "heading": 158,
     "headingBasis": "EXIF true north"
    }
   }

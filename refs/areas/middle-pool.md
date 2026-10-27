@@ -24,6 +24,7 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 - 24 October planter correction: a bounded low right garden bed, left greenery with its base unresolved, and continuing near path beyond the Silvia exit arch replace two unsupported illustrative tall garden pots; four observed near/threshold pots remain. At the pool entrance the existing bench beds gain rounded returns/white rims/soil inside their original bounds, and a short LOW grey-beige kerb follows the existing opposite hedge fragment. Satellite context/full photos independently rechecked; no measured extent, complete garden perimeter, route/gate/pool relocation or placement approval is inferred. See docs/reviews/silvia-entrance-planters/.
 - Laser survey ground 2026-10-24: the south-west and north white steps keep their surveyed rises (0.53, 0.52 m); their feet are 0.16 and 0.40 m above the deck. Elena south falls about 0.35 m over 15 m to the gate, which the photos read as level. The oleander bed fragment stands where the survey climbs 0.3 m towards Calle Eva; its +-2 m placement may be off.
 - 24 October outdoor Silvia path: full IMG_2189/2334 show plain worn terracotta squares, four straight columns and broad grey mortar; the decorated square-insert paving belongs inside the tunnel. Existing lane visual surface continues to the provisional side approach, with a plain overlay to the estimated arch threshold. Pool-side irregular stone/grate retained. Continuation endpoints, threshold and gate/tunnel association remain estimated; no registry, route, terrain, collision or structural placement change. See docs/reviews/silvia-outdoor-path/.
+- 27 Oct batch (docs/PHOTOS_2026-10-27b.md): IMG_2678/2679: a gate from the Eva side opens into the middle pool garden, with crazy-paving paths curving beside the glass pool fence (also IMG_2680/2681).
 
 ## Read first
 
@@ -34,8 +35,8 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 
 ## Coverage
 
-Layout: 17, Levels and slopes: 3, Facades and roofs: 8, Materials: 11, Planting: 11, Signs: 1, Views: 1
-24 reviewed, 0 suggested only by camera position.
+Layout: 25, Levels and slopes: 3, Facades and roofs: 8, Materials: 17, Planting: 14, Signs: 1, Views: 2
+32 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -195,7 +196,13 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2246.jpg](../../public/photos-ref/IMG_2246.jpg) | ground | planting | Oleander bed and pollarded tree by the middle pool _Used by: raised_terraces.json:middle-pool-oleander-bed._ |
 | [IMG_2247.jpg](../../public/photos-ref/IMG_2247.jpg) | ground | planting | Oleander bed and pollarded tree by the middle pool (second shot) _Used by: raised_terraces.json:middle-pool-oleander-bed._ |
 | `villacana-reference/photos/02-pool-from-upper-floor-2020-12.png` | upper-floor | layout, facades, materials, view | Middle pool from an upper floor, December 2020 **Note:** Shows a glass safety fence; Dave decided to skip it. |
+| [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | ground | layout, planting, materials | Tiled lane through an arch with a lantern, monstera planters on both sides |
+| [IMG_2680.jpg](../../public/photos-ref/IMG_2680.jpg) | ground | layout, planting, materials | Crazy-paving path curving across a lawn between hedges to a house gate |
 | `villacana-reference/photos/09-middle-pool-through-iron-gate.jpg` | ground | layout, materials, planting | Middle pool through an iron gate from a tiled lane |
+| [IMG_2505.jpg](../../public/photos-ref/IMG_2505.jpg) | ground | layout, materials | Middle pool glass fence beside a crazy-paving path |
+| [IMG_2547.jpg](../../public/photos-ref/IMG_2547.jpg) | ground | layout, materials | Covered walkway with front doors, potted trees, lantern and tiled floor |
+| [IMG_2548.jpg](../../public/photos-ref/IMG_2548.jpg) | ground | layout, materials | Same covered walkway as IMG_2547 |
+| [IMG_2681.jpg](../../public/photos-ref/IMG_2681.jpg) | ground | layout, materials | Crazy-paving path to an open iron gate in a hedge |
 | `villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg` | ground | planting, facades | Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk |
 | `villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg` | ground | layout, materials | Terracotta-tiled lane to an arched white gateway into the middle pool courtyard |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
@@ -204,3 +211,5 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/web/easyjet-pool-probably-middle.jpg` | ground | planting | A small pool with bird-of-paradise, palm and pollarded tree **Note:** Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish. |
 | [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
+| [IMG_2678.jpg](../../public/photos-ref/IMG_2678.jpg) | ground | layout, view | Through an open iron gate in an arched opening: the middle pool and its glass fence |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting | Middle pool garden: crazy-paving path curving beside the glass pool fence, hedge and a tree |

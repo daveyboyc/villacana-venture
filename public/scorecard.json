@@ -272,9 +272,9 @@
     }
    },
    "photos": {
-    "count": 23,
-    "tagged": 23,
-    "placed": 16,
+    "count": 31,
+    "tagged": 31,
+    "placed": 24,
     "checks": {
      "matches": 1,
      "differs": 2,
@@ -335,7 +335,7 @@
    "status": [
     "Ground: 91% of open ground within 0.25 m of the laser survey.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 23, 16 placed; no camera solved.",
+    "Photos: 31, 24 placed; no camera solved.",
     "Facades: 0 of 40 kit parts traced from photos.",
     "How sure: 9 photographed, 11 estimated, 2 inferred.",
     "Placement: 0 of 22 features verified, 5 open discrepancies."
@@ -380,9 +380,9 @@
     }
    },
    "photos": {
-    "count": 6,
-    "tagged": 6,
-    "placed": 3,
+    "count": 11,
+    "tagged": 11,
+    "placed": 8,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -420,7 +420,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 98% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 6, 3 placed; no camera solved.",
+    "Photos: 11, 8 placed; no camera solved.",
     "Facades: 0 of 29 kit parts traced from photos.",
     "How sure: 0 photographed, 1 estimated, 0 inferred.",
     "Placement: 0 of 1 features verified."
@@ -482,9 +482,9 @@
     }
    },
    "photos": {
-    "count": 2,
-    "tagged": 2,
-    "placed": 2,
+    "count": 9,
+    "tagged": 9,
+    "placed": 9,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -524,31 +524,15 @@
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 2, 2 placed; no camera solved.",
+    "Photos: 9, 9 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
     "How sure: 0 photographed, 1 estimated, 1 inferred.",
     "Placement: 0 of 2 features verified."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 2 spots",
     "requests": [
-     {
-      "id": "beach-gateway",
-      "at": [
-       -1.0,
-       137.0
-      ],
-      "look": [
-       -5.0,
-       133.4
-      ],
-      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
-      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
      {
       "id": "main-pool-lawn",
       "at": [
@@ -580,6 +564,24 @@
       "priority": 2,
       "state": "open",
       "photos": []
+     },
+     {
+      "id": "beach-gateway",
+      "at": [
+       -1.0,
+       137.0
+      ],
+      "look": [
+       -5.0,
+       133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "state": "received",
+      "photos": [
+       "IMG_2602.jpg"
+      ]
      }
     ]
    }
@@ -617,9 +619,9 @@
     }
    },
    "photos": {
-    "count": 45,
-    "tagged": 45,
-    "placed": 45,
+    "count": 75,
+    "tagged": 75,
+    "placed": 75,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -666,7 +668,7 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 45, 45 placed; 3 cameras solved, none holding.",
+    "Photos: 75, 75 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
     "How sure: 12 photographed, 18 estimated, 2 inferred, 3 known gaps.",
     "Placement: 0 of 33 features verified."
@@ -759,9 +761,9 @@
     }
    },
    "photos": {
-    "count": 29,
-    "tagged": 29,
-    "placed": 29,
+    "count": 60,
+    "tagged": 60,
+    "placed": 60,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -807,7 +809,7 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 29, 29 placed; 3 cameras solved, none holding.",
+    "Photos: 60, 60 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 149 kit parts traced from photos.",
     "How sure: 12 photographed, 11 estimated, 2 inferred, 2 known gaps.",
     "Placement: 0 of 25 features verified."
@@ -903,9 +905,9 @@
     }
    },
    "photos": {
-    "count": 25,
-    "tagged": 25,
-    "placed": 25,
+    "count": 38,
+    "tagged": 38,
+    "placed": 38,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -943,7 +945,7 @@
    "status": [
     "Ground: 93% of open ground within 0.25 m of the laser survey; streets within 0.72 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 25, 25 placed; no camera solved.",
+    "Photos: 38, 38 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
     "How sure: 13 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
@@ -1088,9 +1090,9 @@
     }
    },
    "photos": {
-    "count": 0,
-    "tagged": 0,
-    "placed": 0,
+    "count": 1,
+    "tagged": 1,
+    "placed": 1,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1128,7 +1130,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
-    "Photos: 0, 0 placed; no camera solved.",
+    "Photos: 1, 1 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
     "Placement: no model features registered here yet."
    ],
@@ -1204,9 +1206,9 @@
     }
    },
    "photos": {
-    "count": 12,
-    "tagged": 12,
-    "placed": 12,
+    "count": 24,
+    "tagged": 24,
+    "placed": 24,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1244,7 +1246,7 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 0.45 m.",
     "Footprints: 80% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 12, 12 placed; no camera solved.",
+    "Photos: 24, 24 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
     "How sure: 3 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
@@ -1305,9 +1307,9 @@
     }
    },
    "photos": {
-    "count": 36,
-    "tagged": 36,
-    "placed": 36,
+    "count": 118,
+    "tagged": 118,
+    "placed": 118,
     "checks": {
      "matches": 1,
      "differs": 2,
@@ -1356,7 +1358,7 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
-    "Photos: 36, 36 placed; no camera solved.",
+    "Photos: 118, 118 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
     "How sure: 1 photographed, 7 estimated, 3 inferred.",
     "Placement: 0 of 11 features verified, 2 open discrepancies."
@@ -1424,9 +1426,9 @@
     }
    },
    "photos": {
-    "count": 20,
-    "tagged": 20,
-    "placed": 19,
+    "count": 49,
+    "tagged": 49,
+    "placed": 47,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1475,7 +1477,7 @@
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
-    "Photos: 20, 19 placed; no camera solved.",
+    "Photos: 49, 47 placed; no camera solved.",
     "How sure: 0 photographed, 9 estimated, 1 inferred.",
     "Placement: 0 of 10 features verified, 2 open discrepancies."
    ],
@@ -1484,18 +1486,18 @@
     "headline": "Photos needed: 1 spot",
     "requests": [
      {
-      "id": "beach-verge",
+      "id": "beach-verge-from-sand",
       "at": [
-       2.0,
-       141.0
+       14.0,
+       146.0
       ],
       "look": [
-       14.0,
-       128.0
+       8.0,
+       134.0
       ],
-      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
-      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
-      "priority": 1,
+      "ask": "From the sand in front of the beach gateway, looking back at the grass verge, its shrubs and the green fence behind it, with the gateway in frame.",
+      "why": "data/beach_verge.json: the seaward edge of the verge and its shrub line are read off the aerial only",
+      "priority": 2,
       "state": "open",
       "photos": []
      }
@@ -1531,9 +1533,9 @@
     }
    },
    "photos": {
-    "count": 17,
-    "tagged": 17,
-    "placed": 16,
+    "count": 54,
+    "tagged": 54,
+    "placed": 53,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1573,32 +1575,15 @@
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 17, 16 placed; no camera solved.",
+    "Photos: 54, 53 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
     "How sure: 4 photographed, 9 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
    ],
    "light": {
-    "colour": "red",
-    "headline": "Photos needed: 1 spot",
-    "requests": [
-     {
-      "id": "paseo-wall-east-end",
-      "at": [
-       -16.0,
-       147.0
-      ],
-      "look": [
-       -20.0,
-       142.0
-      ],
-      "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
-      "why": "levels item paseo-east-end-height; the survey shows little or no step there",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     }
-    ]
+    "colour": "amber",
+    "headline": "Photos in: 3 build tasks open",
+    "requests": []
    }
   },
   {
@@ -1654,9 +1639,9 @@
     }
    },
    "photos": {
-    "count": 182,
-    "tagged": 182,
-    "placed": 165,
+    "count": 399,
+    "tagged": 399,
+    "placed": 381,
     "checks": {
      "matches": 2,
      "differs": 2,
@@ -1745,14 +1730,14 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 182, 165 placed; 7 cameras solved, 1 station holding.",
+    "Photos: 399, 381 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 55 photographed, 84 estimated, 8 inferred, 5 known gaps.",
     "Placement: 0 of 380 features verified, 9 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 19 spots",
+    "headline": "Photos needed: 17 spots",
     "requests": [
      {
       "id": "alberto",
@@ -1766,38 +1751,6 @@
       ],
       "ask": "Calle Alberto: one photo along the lane from each end.",
       "why": "no photos at all in the north lanes",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "beach-gateway",
-      "at": [
-       -1.0,
-       137.0
-      ],
-      "look": [
-       -5.0,
-       133.4
-      ],
-      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
-      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "beach-verge",
-      "at": [
-       2.0,
-       141.0
-      ],
-      "look": [
-       14.0,
-       128.0
-      ],
-      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
-      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -1899,6 +1852,22 @@
       "photos": []
      },
      {
+      "id": "beach-verge-from-sand",
+      "at": [
+       14.0,
+       146.0
+      ],
+      "look": [
+       8.0,
+       134.0
+      ],
+      "ask": "From the sand in front of the beach gateway, looking back at the grass verge, its shrubs and the green fence behind it, with the gateway in frame.",
+      "why": "data/beach_verge.json: the seaward edge of the verge and its shrub line are read off the aerial only",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "cervantes-junction-patio",
       "at": [
        -153.5,
@@ -1992,22 +1961,6 @@
       "photos": []
      },
      {
-      "id": "paseo-wall-east-end",
-      "at": [
-       -16.0,
-       147.0
-      ],
-      "look": [
-       -20.0,
-       142.0
-      ],
-      "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
-      "why": "levels item paseo-east-end-height; the survey shows little or no step there",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
       "id": "patricia-east",
       "at": [
        -45.0,
@@ -2054,6 +2007,24 @@
       "priority": 2,
       "state": "open",
       "photos": []
+     },
+     {
+      "id": "beach-gateway",
+      "at": [
+       -1.0,
+       137.0
+      ],
+      "look": [
+       -5.0,
+       133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "state": "received",
+      "photos": [
+       "IMG_2602.jpg"
+      ]
      }
     ]
    }

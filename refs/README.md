@@ -9,39 +9,48 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Area | References | Reviewed | Brief |
 | --- | --- | --- | --- |
 | North pool | 16 | 16 | [areas/north-pool.md](areas/north-pool.md) |
-| Middle pool | 24 | 24 | [areas/middle-pool.md](areas/middle-pool.md) |
-| South pool | 8 | 8 | [areas/south-pool.md](areas/south-pool.md) |
-| Main pool | 7 | 7 | [areas/main-pool.md](areas/main-pool.md) |
-| Calle Elena | 45 | 45 | [areas/elena.md](areas/elena.md) |
-| Calle Miguel de Cervantes | 29 | 29 | [areas/cervantes.md](areas/cervantes.md) |
-| Calle Pintor Dalí | 25 | 25 | [areas/dali.md](areas/dali.md) |
+| Middle pool | 32 | 32 | [areas/middle-pool.md](areas/middle-pool.md) |
+| South pool | 13 | 13 | [areas/south-pool.md](areas/south-pool.md) |
+| Main pool | 14 | 14 | [areas/main-pool.md](areas/main-pool.md) |
+| Calle Elena | 75 | 75 | [areas/elena.md](areas/elena.md) |
+| Calle Miguel de Cervantes | 60 | 60 | [areas/cervantes.md](areas/cervantes.md) |
+| Calle Pintor Dalí | 38 | 38 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 3 | 3 | [areas/picasso.md](areas/picasso.md) |
-| Loira, Bolivia, Alberto and Isabel | 0 | 0 | [areas/north-lanes.md](areas/north-lanes.md) |
-| Calle Eva | 12 | 12 | [areas/eva.md](areas/eva.md) |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 39 | 39 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
-| Barraka and the beach | 21 | 21 | [areas/barraka-beach.md](areas/barraka-beach.md) |
-| The paseo | 20 | 20 | [areas/paseo.md](areas/paseo.md) |
+| Loira, Bolivia, Alberto and Isabel | 1 | 1 | [areas/north-lanes.md](areas/north-lanes.md) |
+| Calle Eva | 24 | 24 | [areas/eva.md](areas/eva.md) |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 121 | 121 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
+| Barraka and the beach | 50 | 50 | [areas/barraka-beach.md](areas/barraka-beach.md) |
+| The paseo | 57 | 57 | [areas/paseo.md](areas/paseo.md) |
 | The whole resort | 21 | 21 | [areas/whole-resort.md](areas/whole-resort.md) |
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 147 | [topics/layout.md](topics/layout.md) |
-| Levels and slopes | 35 | [topics/levels.md](topics/levels.md) |
-| Facades and roofs | 51 | [topics/facades.md](topics/facades.md) |
-| Materials | 81 | [topics/materials.md](topics/materials.md) |
-| Planting | 63 | [topics/planting.md](topics/planting.md) |
-| Signs | 14 | [topics/signage.md](topics/signage.md) |
-| Views | 32 | [topics/view.md](topics/view.md) |
+| Layout | 326 | [topics/layout.md](topics/layout.md) |
+| Levels and slopes | 59 | [topics/levels.md](topics/levels.md) |
+| Facades and roofs | 96 | [topics/facades.md](topics/facades.md) |
+| Materials | 162 | [topics/materials.md](topics/materials.md) |
+| Planting | 135 | [topics/planting.md](topics/planting.md) |
+| Signs | 32 | [topics/signage.md](topics/signage.md) |
+| Views | 44 | [topics/view.md](topics/view.md) |
 
 ## Find one reference
 
 Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including private and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; private pixels stay in the private repo.
 
 
-197 references: 197 reviewed, 0 with areas suggested only from the camera position.
+414 references: 414 reviewed, 0 with areas suggested only from the camera position.
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
 Photo checks (`data/photo_checks.json`): 48 photo-check records, 2 match, 2 differ. 28 of 39 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+
+## Needs attention
+
+- IMG_2513.jpg: tagged ground but altitude 10.9 m suggests a roof or upper floor
+- IMG_2537.jpg: tagged ground but altitude 10.5 m suggests a roof or upper floor
+- IMG_2538.jpg: tagged ground but altitude 10.5 m suggests a roof or upper floor
+- IMG_2557.jpg: tagged ground but altitude 9.3 m suggests a roof or upper floor
+- IMG_2558.jpg: tagged ground but altitude 9.3 m suggests a roof or upper floor
+- IMG_2646.jpg: tagged ground but altitude 9.1 m suggests a roof or upper floor
 
 Path-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.
