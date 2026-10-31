@@ -37,9 +37,10 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P1 | `3d-browser-regression-reliability` [#143](https://github.com/daveyboyc/villacana-venture/issues/143) | Diagnose and stabilise 3D browser regressions before geometry releases | open · placement: not-applicable |  |
 | P1 | `facade-kit-resort` | Facade kit on every house: Blender doors, windows and balconies resort-wide (after facade-kit-traced) | in-progress · Claude · placement: not-verified |  |
-| P1 | `path-network-inventory-whole-resort` [#138](https://github.com/daveyboyc/villacana-venture/issues/138) | The whole resort: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P1 | `pool-detail` | Pools: photo-matched water, waterline tiles, jointed coping, straight steps and slab decks | in-progress · Claude · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg) |
+| P1 | `retexture-surfaces` | Retexture plaster, terracotta and crazy paving from the photos | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2263](../../public/photos-ref/IMG_2263.jpg), [IMG_2237](../../public/photos-ref/IMG_2237.jpg) |
 | P1 | `terrain-from-lidar` | Ground levels: follow the laser survey instead of one 0.5 m rise | in-progress · Claude · placement: not-verified |  |
-| P2 | `retexture-surfaces` | Retexture plaster, terracotta and crazy paving from the photos | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2263](../../public/photos-ref/IMG_2263.jpg), [IMG_2237](../../public/photos-ref/IMG_2237.jpg) |
+| P2 | `path-network-inventory-whole-resort` [#138](https://github.com/daveyboyc/villacana-venture/issues/138) | The whole resort: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P3 | `north-pool-roof-heights` | Storey heights: match roof heights to the laser survey (after photo-camera-alignment, terrain-from-lidar) | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
 
 **Built without complete newer photo-check records:** `door-sills`, `path-network-prd`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.

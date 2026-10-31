@@ -1017,7 +1017,7 @@
   {
    "id": "silvia-main-map",
    "area": "seaward-lanes",
-   "priority": 1,
+   "priority": 3,
    "kind": "build",
    "title": "Connect the Silvia tunnel study to the main map and Walk scene",
    "photos": [
@@ -1330,7 +1330,7 @@
   {
    "id": "path-network-inventory-north-pool",
    "area": "north-pool",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "North pool: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1351,7 +1351,7 @@
   {
    "id": "path-network-inventory-middle-pool",
    "area": "middle-pool",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Middle pool: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1372,7 +1372,7 @@
   {
    "id": "path-network-inventory-south-pool",
    "area": "south-pool",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "South pool: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1393,7 +1393,7 @@
   {
    "id": "path-network-inventory-main-pool",
    "area": "main-pool",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Main pool: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1523,7 +1523,7 @@
   {
    "id": "path-network-inventory-dali",
    "area": "dali",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Calle Pintor Dalí: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1544,7 +1544,7 @@
   {
    "id": "path-network-inventory-picasso",
    "area": "picasso",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1565,7 +1565,7 @@
   {
    "id": "path-network-inventory-north-lanes",
    "area": "north-lanes",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1586,7 +1586,7 @@
   {
    "id": "path-network-inventory-eva",
    "area": "eva",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Calle Eva: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1607,7 +1607,7 @@
   {
    "id": "path-network-inventory-seaward-lanes",
    "area": "seaward-lanes",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1628,7 +1628,7 @@
   {
    "id": "path-network-inventory-barraka-beach",
    "area": "barraka-beach",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "Barraka and the beach: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1649,7 +1649,7 @@
   {
    "id": "path-network-inventory-paseo",
    "area": "paseo",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "The paseo: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1670,7 +1670,7 @@
   {
    "id": "path-network-inventory-whole-resort",
    "area": "whole-resort",
-   "priority": 1,
+   "priority": 2,
    "kind": "audit",
    "title": "The whole resort: full-source path, tunnel and boundary inventory",
    "photos": [],
@@ -1733,7 +1733,7 @@
   {
    "id": "retexture-surfaces",
    "area": "whole-resort",
-   "priority": 2,
+   "priority": 1,
    "kind": "materials",
    "title": "Retexture plaster, terracotta and crazy paving from the photos",
    "photos": [
@@ -2255,6 +2255,50 @@
     "beach_verge.json:barraka-front-verge",
     "beach_verge.json:barraka-front-shrubs"
    ]
+  },
+  {
+   "id": "pool-detail",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "materials",
+   "title": "Pools: photo-matched water, waterline tiles, jointed coping, straight steps and slab decks",
+   "photos": [
+    "IMG_2204.jpg"
+   ],
+   "build": "Owner request 31 October: focus on a detailed 3D model, and the pools are less detailed than the photos. Water is pale over the margins and deeper blue in the middle (colours sampled from IMG_2204), rippled with sky reflection and sun glints; a darker waterline tile band tops each wall; the coping is 0.38 m stone slabs with joints in three tones; pool_steps are three straight treads square to the nearest wall with dark blue nosings; plant-room boxes have louvred sides; pool decks get 0.6 by 0.4 m pale slabs at full resolution; ground class edges are smoothed per class so no pale halo remains between deck and lawn.",
+   "avoid": "No change to registry pool rings, deck outlines, pool levels or prop positions. The glass safety fence stays out (Dave, 2026-10-11).",
+   "accept": [
+    "IMG_2204 rendered through its solved camera before and after",
+    "Production build, layout browser test, overview browser test and check_pool_levels.py pass",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "Built: src/water.ts, src/slice.ts (steps, louvred box, class-edge smoothing), src/materials.ts (deck slabs). Before/after renders through the solved IMG_2204 camera and comparison notes in docs/reviews/pool-detail/README.md. Stays in progress until placement review; no pool ring, deck outline, level or prop position changed. Remaining difference: the traced deck band is wider than the photo and lacks the squared tongue east of the steps (pool-deck-outline)."
+  },
+  {
+   "id": "pool-deck-outline",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "build",
+   "title": "North pool: trace the deck outline and squared deck tongue from the solved cameras",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ],
+   "build": "Through the solved IMG_2204-2206 cameras the pool deck in the photos is a fairly even band about 1.5-2 m wide with a straight-edged tongue reaching into the pool east of the steps, where the plant-room box stands. The model's deck comes from the 0.25 m cover classes, wider in places and stair-stepped. Trace the deck edge against the photos and the aerial, keep the registry water ring, and record measured residuals.",
+   "avoid": "Do not move the water ring without measured evidence. No glass fence.",
+   "accept": [
+    "Deck edge residuals measured through the solved cameras",
+    "Placement packet per docs/PLACEMENT_VERIFICATION.md",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [
+    "pool-detail"
+   ],
+   "status": "open"
   }
  ]
 }

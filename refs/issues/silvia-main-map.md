@@ -1,6 +1,6 @@
 # Connect the Silvia tunnel study to the main map and Walk scene
 
-Task `silvia-main-map` · area **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** · priority P1 · build
+Task `silvia-main-map` · area **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** · priority P3 · build
 
 ## Read first
 

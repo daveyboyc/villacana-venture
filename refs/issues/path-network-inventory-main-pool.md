@@ -1,6 +1,6 @@
 # Main pool: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-main-pool` · area **Main pool** · priority P1 · audit
+Task `path-network-inventory-main-pool` · area **Main pool** · priority P2 · audit
 
 ## Read first
 

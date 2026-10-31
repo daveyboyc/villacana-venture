@@ -36,9 +36,9 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `path-network-inventory-paseo` [#137](https://github.com/daveyboyc/villacana-venture/issues/137) | The paseo: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `paseo-east-end-height` [#40](https://github.com/daveyboyc/villacana-venture/issues/40) | Paseo east end: wall height towards the big pool (after paseo-retrace-line) | in-progress · Codex issue-40 · placement: not-verified | [IMG_2227](../../public/photos-ref/IMG_2227.jpg), [IMG_2350](../../public/photos-ref/IMG_2350.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
 | P2 | `paseo-stamped-surface` | Paseo: photo-backed stamped concrete on the existing walk | in-progress · Codex · placement: not-verified | [IMG_2481](../../public/photos-ref/IMG_2481.jpg), [IMG_2482](../../public/photos-ref/IMG_2482.jpg), [IMG_2483](../../public/photos-ref/IMG_2483.jpg), [IMG_2351](../../public/photos-ref/IMG_2351.jpg) |
+| P2 | `path-network-inventory-paseo` [#137](https://github.com/daveyboyc/villacana-venture/issues/137) | The paseo: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
 ## Built from these photos
 

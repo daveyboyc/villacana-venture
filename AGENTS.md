@@ -1,6 +1,17 @@
 # Villacana project direction
 
-Prioritise structural accuracy before additional decorative detail. Read
+## Current focus (Dave, 2026-10-31)
+
+The goal for now is a good, detailed 3D model of Villacana that looks like the
+photos when inspected, not a walkable game. Prefer work that makes what you see in
+Inspect closer to the photos: pools, materials and surfaces, facades, planting and
+small built details. Walking is paused: do not start work whose purpose is
+walking, collision, route connectivity or Walk-scene integration, and leave Walk
+working as it is. The path, tunnel and boundary inventories still matter where they
+fix what the model shows, but they no longer come first. Detail still goes on
+geometry the evidence supports; it no longer waits for every route to be mapped.
+
+Prioritise structural accuracy alongside photo-matched detail. Read
 `docs/LAYOUT_ACCURACY.md` for the current layout view, sources and remaining
 uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 

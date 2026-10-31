@@ -21,4 +21,4 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
-| P1 | `path-network-inventory-north-lanes` [#133](https://github.com/daveyboyc/villacana-venture/issues/133) | Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P2 | `path-network-inventory-north-lanes` [#133](https://github.com/daveyboyc/villacana-venture/issues/133) | Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |

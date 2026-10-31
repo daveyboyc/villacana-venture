@@ -1,6 +1,6 @@
 # Pintor Picasso and the car park: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-picasso` · area **Pintor Picasso and the car park** · priority P1 · audit
+Task `path-network-inventory-picasso` · area **Pintor Picasso and the car park** · priority P2 · audit
 
 ## Read first
 

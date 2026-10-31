@@ -1,6 +1,6 @@
 # Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-north-lanes` · area **Loira, Bolivia, Alberto and Isabel** · priority P1 · audit
+Task `path-network-inventory-north-lanes` · area **Loira, Bolivia, Alberto and Isabel** · priority P2 · audit
 
 ## Read first
 

@@ -1,6 +1,6 @@
 # Barraka and the beach: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-barraka-beach` · area **Barraka and the beach** · priority P1 · audit
+Task `path-network-inventory-barraka-beach` · area **Barraka and the beach** · priority P2 · audit
 
 ## Read first
 

@@ -1,6 +1,6 @@
 # The whole resort: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-whole-resort` · area **The whole resort** · priority P1 · audit
+Task `path-network-inventory-whole-resort` · area **The whole resort** · priority P2 · audit
 
 ## Read first
 
