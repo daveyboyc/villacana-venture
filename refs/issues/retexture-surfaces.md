@@ -1,6 +1,6 @@
 # Retexture plaster, terracotta and crazy paving from the photos
 
-Task `retexture-surfaces` · area **The whole resort** · priority P2 · materials
+Task `retexture-surfaces` · area **The whole resort** · priority P1 · materials
 
 ## Read first
 

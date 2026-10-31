@@ -1,6 +1,6 @@
 # The paseo: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-paseo` · area **The paseo** · priority P1 · audit
+Task `path-network-inventory-paseo` · area **The paseo** · priority P2 · audit
 
 ## Read first
 

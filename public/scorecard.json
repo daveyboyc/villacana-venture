@@ -189,12 +189,12 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 2,
+    "open": 3,
     "inProgress": 2,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
-     "North pool: full-source path, tunnel and boundary inventory"
+     "North pool: place the facade kit from the photos instead of generating it"
     ]
    },
    "confidence": {
@@ -321,8 +321,8 @@
     "inProgress": 2,
     "titles": [
      "Check pool-to-gate spacing and build photo-supported tunnel entrance context",
-     "Middle pool: full-source path, tunnel and boundary inventory",
-     "Middle pool south: crazy-paved forecourt and hedge inside the south gate"
+     "Middle pool south: crazy-paved forecourt and hedge inside the south gate",
+     "South entrance lane: planted frontage borders and projecting window grilles"
     ]
    },
    "confidence": {
@@ -511,7 +511,7 @@
     "titles": [
      "Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall",
      "Calle Guillermo: put the fall to the paseo where the survey has it",
-     "Main pool: full-source path, tunnel and boundary inventory"
+     "Beach gateway beside the paseo ramp, survey paseo levels, grass and shrubs in front of the railings"
     ]
    },
    "confidence": {
@@ -1461,8 +1461,8 @@
     "inProgress": 1,
     "titles": [
      "Correct reported Barraka planter placement against registered source evidence",
-     "Barraka and the beach: full-source path, tunnel and boundary inventory",
-     "Barraka sand-filled barbecue boat: establish placement and add shared geometry"
+     "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
+     "Barraka and the beach: full-source path, tunnel and boundary inventory"
     ]
    },
    "confidence": {
@@ -1558,8 +1558,8 @@
     "open": 1,
     "inProgress": 2,
     "titles": [
-     "The paseo: full-source path, tunnel and boundary inventory",
      "Paseo east end: wall height towards the big pool",
+     "The paseo: full-source path, tunnel and boundary inventory",
      "Paseo: photo-backed stamped concrete on the existing walk"
     ]
    },
@@ -1727,8 +1727,8 @@
     }
    ],
    "tasks": {
-    "open": 28,
-    "inProgress": 23,
+    "open": 29,
+    "inProgress": 24,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",

@@ -1,6 +1,6 @@
 # Calle Eva: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-eva` · area **Calle Eva** · priority P1 · audit
+Task `path-network-inventory-eva` · area **Calle Eva** · priority P2 · audit
 
 ## Read first
 

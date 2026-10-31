@@ -1,6 +1,6 @@
 # Calle Pintor Dalí: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-dali` · area **Calle Pintor Dalí** · priority P1 · audit
+Task `path-network-inventory-dali` · area **Calle Pintor Dalí** · priority P2 · audit
 
 ## Read first
 

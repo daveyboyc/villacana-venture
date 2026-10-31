@@ -1,6 +1,6 @@
 # Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory
 
-Task `path-network-inventory-seaward-lanes` · area **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** · priority P1 · audit
+Task `path-network-inventory-seaward-lanes` · area **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** · priority P2 · audit
 
 ## Read first
 

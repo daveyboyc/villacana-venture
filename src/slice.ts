@@ -40,7 +40,7 @@ import { centroid, clamp, closestOnSegment, CoastField, dampAngle, pointInRing, 
 import { Player, type MoveWorld } from "./player";
 import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { BoundaryReference, InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
-import { addPools, POOL_STAND } from "./water";
+import { addPools, POOL_STAND, poolSteps } from "./water";
 import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
@@ -221,7 +221,7 @@ async function boot(): Promise<void> {
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
-  addProps(scene, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
+  addProps(scene, poolRings, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
 
   const player = new Player();
   player.group.userData.noDrape = true;
@@ -593,6 +593,63 @@ function nearRing(x: number, z: number, ring: Vec2[], margin: number): boolean {
   return ring.some((p) => Math.hypot(p[0] - x, p[1] - z) < margin);
 }
 
+/**
+ * Round off class boundaries without blending colours: each class's own mask is
+ * blurred, and every pixel takes the class whose blurred mask is strongest there.
+ */
+function smoothClassEdges(ctx: CanvasRenderingContext2D, size: number, classes: string[], blurPx: number): void {
+  const rgb = classes.map((hex) => [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)]);
+  const image = ctx.getImageData(0, 0, size, size), d = image.data;
+  const best = new Uint8Array(d.length / 4), strength = new Uint8Array(d.length / 4);
+  const mask = document.createElement("canvas"), soft = document.createElement("canvas");
+  mask.width = mask.height = soft.width = soft.height = size;
+  const mctx = mask.getContext("2d")!, sctx = soft.getContext("2d", { willReadFrequently: true })!;
+  sctx.filter = `blur(${blurPx}px)`;
+  for (const [index, c] of rgb.entries()) {
+    const own = mctx.createImageData(size, size);
+    let any = false;
+    for (let k = 0; k < d.length; k += 4) if (d[k] === c[0] && d[k + 1] === c[1] && d[k + 2] === c[2]) { own.data[k + 3] = 255; any = true; }
+    if (!any) continue;
+    mctx.putImageData(own, 0, 0);
+    sctx.clearRect(0, 0, size, size);
+    sctx.drawImage(mask, 0, 0);
+    const blurred = sctx.getImageData(0, 0, size, size).data;
+    for (let p = 0; p < best.length; p++) if (blurred[p * 4 + 3] > strength[p]) { strength[p] = blurred[p * 4 + 3]; best[p] = index; }
+  }
+  for (let p = 0; p < best.length; p++) {
+    if (!strength[p]) continue;
+    const c = rgb[best[p]];
+    d[p * 4] = c[0]; d[p * 4 + 1] = c[1]; d[p * 4 + 2] = c[2];
+  }
+  ctx.putImageData(image, 0, 0);
+}
+
+/**
+ * A 4.8 m square of pale travertine-like slabs, 0.6 by 0.4 m in staggered rows,
+ * each a slightly different cream with a little mottling and a grey joint.
+ */
+export function deckSlabCanvas(): HTMLCanvasElement {
+  const c = document.createElement("canvas");
+  c.width = c.height = 384;
+  const g = c.getContext("2d")!, perMetre = 80;
+  g.fillStyle = "#b9ad97";
+  g.fillRect(0, 0, 384, 384);
+  const tones = ["#ece2cc", "#e6dac0", "#f0e8d6", "#e2d4b8", "#eadfc6"];
+  for (let row = 0; row < 12; row++) {
+    const y = row * 0.4 * perMetre, offset = row % 2 ? 0.3 * perMetre : 0;
+    for (let col = -1; col < 9; col++) {
+      const x = col * 0.6 * perMetre + offset;
+      g.fillStyle = tones[(row * 7 + col * 3 + 12) % tones.length];
+      g.fillRect(x + 1.5, y + 1.5, 0.6 * perMetre - 1.5, 0.4 * perMetre - 1.5);
+    }
+  }
+  for (let i = 0; i < 3600; i++) {
+    g.fillStyle = i % 2 ? "rgba(150,130,100,0.10)" : "rgba(255,255,255,0.12)";
+    g.fillRect(hash(i, 4.1) * 384, hash(i, 8.3) * 384, 1 + hash(i, 2.7) * 5, 1 + hash(i, 6.2) * 3);
+  }
+  return c;
+}
+
 async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }, pools: Vec2[][],hasSilvia:boolean): Promise<void> {
   const cover = skeleton.cover;
   const image = await new THREE.ImageLoader().loadAsync(asset(cover.image));
@@ -608,7 +665,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const pctx = paint.getContext("2d")!;
   pctx.fillStyle = skeleton.cover.classes.paving;
   pctx.fillRect(0, 0, size, size);
-  pctx.filter = layoutOnly?"none":"blur(2.5px)";
+  // Draw the classes crisp, then round their edges class by class below.
+  pctx.imageSmoothingEnabled = false;
   const perMetre = image.width / w;
   pctx.drawImage(
     image,
@@ -621,8 +679,12 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     size,
     size,
   );
+  pctx.imageSmoothingEnabled = true;
+  // The cover's 25 cm cells leave stair-stepped edges, and softening them by blurring
+  // leaves in-between colours that read as a pale halo between deck and lawn. Blur
+  // each class on its own and keep the strongest: smooth curves, no mixed colours.
+  smoothClassEdges(pctx, size, Object.values(skeleton.cover.classes), Math.max(3, (size / (span * 2)) * 0.5));
   // Paint short blades all over the lawn so it reads as grass right to its edges.
-  pctx.filter = "none";
   const painted = pctx.getImageData(0, 0, size, size).data;
   // Keep classification pixels intact, but make the rendered turf less saturated.
   const turf=new ImageData(new Uint8ClampedArray(painted),size,size);
@@ -693,10 +755,17 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     lawnPixels.data[k]=isLawn?255:0;lawnPixels.data[k+3]=255;
   }
   maskContext.putImageData(lawnPixels,0,0);
+  // The pool decks get their stone slabs from the material at full resolution.
+  const deckRgb=rgbOf(skeleton.cover.classes.deck),deckMask=document.createElement("canvas");deckMask.width=deckMask.height=size;
+  const deckContext=deckMask.getContext("2d")!,deckPixels=deckContext.createImageData(size,size);
+  for(let k=0;k<painted.length;k+=4) {
+    deckPixels.data[k]=painted[k]===deckRgb[0]&&painted[k+1]===deckRgb[1]&&painted[k+2]===deckRgb[2]?255:0;deckPixels.data[k+3]=255;
+  }
+  deckContext.putImageData(deckPixels,0,0);
   const texture = new THREE.CanvasTexture(paint);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
-  const material=groundMaterial(texture,lawnMask,span*2);
+  const material=groundMaterial(texture,lawnMask,span*2,{mask:deckMask,slabs:deckSlabCanvas(),turn:skeleton.viewRotation});
   // The ground is one sheet with the pools cut out of it.
   const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
   const groundHoles=showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:[...pools];
@@ -1045,8 +1114,23 @@ function slatTexture(): THREE.CanvasTexture {
   return texture;
 }
 
+/** Horizontal louvre slats with shadowed gaps, for the pool plant-room boxes. */
+function louvreTexture(): THREE.CanvasTexture {
+  const c = document.createElement("canvas");
+  c.width = 64;
+  c.height = 64;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#ffffff";
+  g.fillRect(0, 0, 64, 64);
+  g.fillStyle = "#b9b9b4";
+  for (let y = 10; y < 60; y += 5) g.fillRect(6, y, 52, 2);
+  const texture = new THREE.CanvasTexture(c);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  return texture;
+}
+
 /** Hand-placed things from the skeleton, each drawn according to its kind. */
-function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
+function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["props"]): void {
   const white = plasterMaterial(WALL);
   const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
   const ring = new THREE.MeshStandardMaterial({ color: "#e8532b", roughness: 0.6 });
@@ -1063,10 +1147,13 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
   };
   for (const p of props) {
     switch (p.kind) {
-      case "pool_steps":
-        // Three wide steps going down into the water.
-        for (let i = 0; i < 3; i++) add(new THREE.Mesh(new THREE.CylinderGeometry(1.5 - i * 0.4, 1.5 - i * 0.4, 0.3, 20), white), p.x, -0.95 + i * 0.3, p.z);
+      case "pool_steps": {
+        // Straight steps square to the nearest wall; round ones only if no wall is close.
+        const steps = poolSteps(p.x, p.z, poolRings);
+        if (steps) for (const mesh of steps.meshes) add(mesh, steps.at[0], 0, steps.at[1]);
+        else for (let i = 0; i < 3; i++) add(new THREE.Mesh(new THREE.CylinderGeometry(1.5 - i * 0.4, 1.5 - i * 0.4, 0.3, 20), white), p.x, -0.95 + i * 0.3, p.z);
         break;
+      }
       case "pool_ladder":
         for (const side of [-0.25, 0.25]) {
           const rail = add(new THREE.Mesh(new THREE.TorusGeometry(0.42, 0.03, 8, 16, Math.PI), steel), p.x + side, 0.45, p.z);
@@ -1075,9 +1162,12 @@ function addProps(scene: THREE.Scene, props: Skeleton["props"]): void {
           add(new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.5, 8), steel), p.x + side, 0.2, p.z + 0.42);
         }
         break;
-      case "pump_box":
-        add(new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.5, 0.9), white), p.x, 0.32, p.z);
+      case "pump_box": {
+        // White plant-room box with louvred sides and a plain lid, as by the pools.
+        const sides = new THREE.MeshStandardMaterial({ color: WALL, map: louvreTexture(), roughness: 0.7 });
+        add(new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.5, 0.9), [sides, sides, white, white, sides, sides]), p.x, 0.32, p.z);
         break;
+      }
       case "life_ring": {
         add(new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 1.5, 8), steel), p.x, 0.75, p.z);
         add(new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.09, 10, 20), ring), p.x, 1.35, p.z + 0.1);

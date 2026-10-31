@@ -49,23 +49,38 @@ export function plasterMaterial(color="#f7f7ee"):THREE.MeshStandardMaterial {
 /** Preserve the mapped cover while adding grass at the same metre scale in
  * single-courtyard and whole-resort views. Standard lighting, alpha cutouts and
  * mipmaps still apply on mobile and desktop. Raised ground reuses this material. */
-export function groundMaterial(map:THREE.Texture,lawnCanvas:HTMLCanvasElement,metres:number):THREE.MeshStandardMaterial {
+export function groundMaterial(map:THREE.Texture,lawnCanvas:HTMLCanvasElement,metres:number,deck?:{mask:HTMLCanvasElement;slabs:HTMLCanvasElement;turn:number}):THREE.MeshStandardMaterial {
   const mask=new THREE.CanvasTexture(lawnCanvas);
   const turf=surfaceTexture("turf");
   const material=new THREE.MeshStandardMaterial({map,roughness:.95,alphaTest:.5});
+  // Pool-deck slabs: a 4.8 m swatch in metres, turned square to the houses like the paving.
+  const deckMask=deck?new THREE.CanvasTexture(deck.mask):null;
+  const slabs=deck?new THREE.CanvasTexture(deck.slabs):null;
+  if(slabs){slabs.colorSpace=THREE.SRGBColorSpace;slabs.wrapS=slabs.wrapT=THREE.RepeatWrapping;slabs.anisotropy=8;}
+  const turn=(deck?.turn??0)*Math.PI/180;
   material.onBeforeCompile=shader=>{
     shader.uniforms.lawnMask={value:mask};
     shader.uniforms.turfDetail={value:turf};
     shader.uniforms.groundMetres={value:metres};
+    shader.uniforms.deckMask={value:deckMask};
+    shader.uniforms.deckSlabs={value:slabs};
+    shader.uniforms.deckTurn={value:new THREE.Vector2(Math.cos(turn),Math.sin(turn))};
     shader.fragmentShader=shader.fragmentShader.replace("#include <common>",`#include <common>
       uniform sampler2D lawnMask;
       uniform sampler2D turfDetail;
-      uniform float groundMetres;`)
+      uniform float groundMetres;
+      ${deck?`uniform sampler2D deckMask;
+      uniform sampler2D deckSlabs;
+      uniform vec2 deckTurn;`:""}`)
       .replace("#include <map_fragment>",`#include <map_fragment>
       float lawn = texture2D(lawnMask, vMapUv).r;
       vec3 blades = texture2D(turfDetail, vMapUv * groundMetres / 1.6).rgb;
-      diffuseColor.rgb *= mix(vec3(1.0), blades * 1.25, lawn);`);
+      diffuseColor.rgb *= mix(vec3(1.0), blades * 1.25, lawn);
+      ${deck?`float deck = texture2D(deckMask, vMapUv).r;
+      vec2 m = vMapUv * groundMetres;
+      vec2 turned = vec2(deckTurn.x * m.x - deckTurn.y * m.y, deckTurn.y * m.x + deckTurn.x * m.y);
+      diffuseColor.rgb = mix(diffuseColor.rgb, texture2D(deckSlabs, turned / 4.8).rgb, deck);`:""}`);
   };
-  material.customProgramCacheKey=()=>"mapped-turf-v1";
+  material.customProgramCacheKey=()=>deck?"mapped-turf-deck-v1":"mapped-turf-v1";
   return material;
 }
