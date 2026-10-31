@@ -146,8 +146,9 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
   patios and terraces are what is raised.
 - Layout view shows structure; plants, hedges and props are Details only and
   must pass the route-clearance guard.
-- This repo is public: no API keys, signed URLs, photo metadata blobs or fetched
-  Google imagery. Private reference images stay in `villacana-reference`.
+- This repo is public: no API keys, signed URLs or photo metadata blobs. Google
+  imagery may be published with credit (AGENTS.md). Other private reference images
+  stay in `villacana-reference`.
 
 ## Working alongside other agents
 

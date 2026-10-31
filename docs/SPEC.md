@@ -156,7 +156,8 @@ like one picture.
 | Coast, beach, surrounding roads | OpenStreetMap (`data/villacana.osm.gz`) | Good outside the block, poor inside it |
 | Look and detail | Dave's reference images (private `villacana-reference` repo) | Compared by eye only, never traced |
 
-Google and Apple imagery is reference only. No geometry is copied from it.
+Apple imagery is reference only; no geometry is copied from it. Google imagery may be
+traced from and published with credit (Dave, 2026-10-31; see AGENTS.md).
 
 Known facts, confirmed by Dave: three small clover-shaped pools, one large main pool.
 The registry also records the round toddler pool beside the main pool.

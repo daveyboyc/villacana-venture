@@ -9,3 +9,5 @@ The supplied credential was tested successfully against Google Maps Static API s
 The current deployment uses GitHub Pages, which serves static files and cannot run a private API endpoint. A live integration that keeps the key private needs a separate server-side service, with the credential set in that service’s environment. That service should return the permitted Google data to the site without returning the key. The alternative browser Maps JavaScript integration uses a visible, website-restricted key and does not satisfy a requirement that the key remain private.
 
 The Google imagery layer is not enabled on the public site by this configuration change. No secret is committed or bundled.
+
+Since 31 October 2026 (Dave) Google imagery itself may be used, traced from and published in this repo and on the site, credited "Imagery © Google" with the year. This changes nothing above about the key: it still stays private.

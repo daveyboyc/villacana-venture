@@ -47,8 +47,12 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   production build and the layout browser regression test. Summarise the observed
   outcome and remaining accuracy limits rather than claiming the whole resort is
   fully verified.
-- Keep Google keys in ignored private environment files. Never publish API keys,
-  signed download URLs, original photo metadata blobs or fetched Google imagery.
+- Google imagery (satellite, Street View, photorealistic 3D tiles, map screenshots) may
+  be used as a source, traced from, and published in this repo and on the site (Dave,
+  2026-10-31). Credit it where it is shown ("Imagery © Google" with the year) and
+  record which Google product and date it came from. Keep Google keys in ignored
+  private environment files, and never publish API keys, signed download URLs or
+  original photo metadata blobs.
 
 ## Merging
 

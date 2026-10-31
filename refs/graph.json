@@ -36468,6 +36468,19 @@
    }
   },
   {
+   "id": "task:north-pool-detail-pilot",
+   "kind": "build-task",
+   "name": "Detail pilot: make the north pool courtyard look like its photos",
+   "priority": 1,
+   "status": "in-progress",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": []
+   }
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -91814,6 +91827,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:north-pool-detail-pilot",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -92796,6 +92814,31 @@
   {
    "from": "task:pool-deck-outline",
    "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-detail-pilot",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-detail-pilot",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-detail-pilot",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-detail-pilot",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:north-pool-detail-pilot",
+   "to": "ref:IMG_2208.jpg",
    "relation": "builds-from"
   },
   {

@@ -2299,6 +2299,30 @@
     "pool-detail"
    ],
    "status": "open"
+  },
+  {
+   "id": "north-pool-detail-pilot",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "materials",
+   "title": "Detail pilot: make the north pool courtyard look like its photos",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ],
+   "build": "Owner request 31 October: one well-photographed pilot area taken as far as it will go before the rest of the resort. The north pool has the most references, three solved cameras (IMG_2204-2206) and two more photos with starting poses (IMG_2207-2208, to be solved), laser-survey levels and the Blender facade-kit pilot. Work in increments, each rendered through these five cameras beside the photos (docs/reviews/north-pool-detail-pilot): (1) photo-matched surfaces in the courtyard: plaster, crazy-paving path, terracotta, barrel roof tiles, deck stone; (2) 3D planting to replace cards where the photos show it: Strelitzia, palms, clipped hedges, bougainvillea; (3) pool details built in Blender: rounded coping, ladders, life-ring stands, with the deck outline from pool-deck-outline; (4) Google satellite and photorealistic 3D tiles as extra comparison views, credited, now that Google imagery may be published. Optional later: a photo or video capture on a site visit for a scanned version of the courtyard.",
+   "avoid": "No change to registry footprints, pool rings or levels without measured evidence. Walk and collision stay as they are. Each increment keeps the resort-wide build within the existing mobile limits.",
+   "accept": [
+    "Before and after renders through IMG_2204-2208 for each increment",
+    "Production build, layout and overview browser tests pass",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }
