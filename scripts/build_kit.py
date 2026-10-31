@@ -27,7 +27,7 @@ COLOURS = {  # sRGB, from the photos
     'plaster': ('#f3f1ea', 0.95),
     'iron': ('#1d1d1f', 0.55),
     'timber': ('#4a2c1a', 0.7),
-    'tile': ('#b4643f', 0.85),
+    'tile': ('#a07c68', 0.85),  # weathered, lichen-mottled barrel tiles in IMG_2207-2208
     'reveal': ('#2e2925', 0.95),  # the dark, matt recess seen between closed louvres
 }
 

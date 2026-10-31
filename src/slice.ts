@@ -32,7 +32,7 @@ import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
 import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview} from "./middle-pool";
-import {pavingCanvas,plasterMaterial,groundMaterial} from "./materials";
+import {pavingCanvas,plasterMaterial,groundMaterial,photoMetres,photoTexture,surfaceTexture} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
 import { asset } from "./asset";
@@ -75,7 +75,6 @@ const COURTYARD = 30;
 
 const WALL = "#ffffff";
 const ROOF_GREY = "#d9d5cc";
-const ROOF_TERRACE = "#c98f6e";
 const SHUTTER = "#7a4a2a";
 /** Where the Silvia tunnel and its host building take their level: the middle of the tunnel floor. */
 const SILVIA_DATUM = centroid(silviaFloor);
@@ -755,17 +754,28 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
     lawnPixels.data[k]=isLawn?255:0;lawnPixels.data[k+3]=255;
   }
   maskContext.putImageData(lawnPixels,0,0);
-  // The pool decks get their stone slabs from the material at full resolution.
-  const deckRgb=rgbOf(skeleton.cover.classes.deck),deckMask=document.createElement("canvas");deckMask.width=deckMask.height=size;
-  const deckContext=deckMask.getContext("2d")!,deckPixels=deckContext.createImageData(size,size);
+  // Pool deck (red), terracotta paving (green) and crazy-paving paths (blue) get their
+  // surfaces from the material at full resolution. Local paving designs keep their own.
+  const localPaving=document.createElement("canvas");localPaving.width=localPaving.height=size;
+  const localContext=localPaving.getContext("2d")!;
+  paintSeawardPaving(localContext,skeleton,centre,span,size);
+  paintElenaPaving(localContext,skeleton.boundaryReference?.roads??[],centre,span,size);
+  const local=localContext.getImageData(0,0,size,size).data;
+  const deckRgb=rgbOf(skeleton.cover.classes.deck),pathRgb=rgbOf(skeleton.cover.classes.path);
+  const detailMask=document.createElement("canvas");detailMask.width=detailMask.height=size;
+  const detailContext=detailMask.getContext("2d")!,detailPixels=detailContext.createImageData(size,size);
+  const is=(k:number,c:number[])=>painted[k]===c[0]&&painted[k+1]===c[1]&&painted[k+2]===c[2];
   for(let k=0;k<painted.length;k+=4) {
-    deckPixels.data[k]=painted[k]===deckRgb[0]&&painted[k+1]===deckRgb[1]&&painted[k+2]===deckRgb[2]?255:0;deckPixels.data[k+3]=255;
+    detailPixels.data[k]=is(k,deckRgb)?255:0;
+    detailPixels.data[k+1]=is(k,paving)&&!local[k+3]?255:0;
+    detailPixels.data[k+2]=is(k,pathRgb)?255:0;
+    detailPixels.data[k+3]=255;
   }
-  deckContext.putImageData(deckPixels,0,0);
+  detailContext.putImageData(detailPixels,0,0);
   const texture = new THREE.CanvasTexture(paint);
   texture.colorSpace = THREE.SRGBColorSpace;
   texture.anisotropy = 8;
-  const material=groundMaterial(texture,lawnMask,span*2,{mask:deckMask,slabs:deckSlabCanvas(),turn:skeleton.viewRotation});
+  const material=groundMaterial(texture,lawnMask,span*2,{mask:detailMask,slabs:deckSlabCanvas(),turn:skeleton.viewRotation});
   // The ground is one sheet with the pools cut out of it.
   const showLowerDeck=pools.some(r=>pointInRing(...r[0],lowerPoolRing));
   const groundHoles=showLowerDeck?[...pools.filter(r=>!pointInRing(...r[0],lowerPoolRing)),sheetCutRing]:[...pools];
@@ -870,7 +880,8 @@ function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {
 function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeight: number): void {
   const wall = plasterMaterial(WALL);
   const grey = new THREE.MeshStandardMaterial({ color: ROOF_GREY, roughness: 0.95 });
-  const terrace = new THREE.MeshStandardMaterial({ color: ROOF_TERRACE, roughness: 0.9 });
+  // Roof terraces are tiled in terracotta; extrusion caps carry UVs in metres.
+  const terrace = new THREE.MeshStandardMaterial({ color: "#ffffff", map: surfaceTexture("paving"), roughness: 0.9 });
   for (const b of buildings) {
     if (b.notStanding) continue; // registry outline only: the aerial shows open paseo and sand there (issue #41)
     const c = centroid(b.ring);
@@ -996,6 +1007,12 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryR
   addSprites(scene, "hedge", hedged.filter((p) => !flowering(p)).map(place));
 }
 
+/** Photo barrel tiles on a unit box scaled to width by depth, the columns running down the slope. */
+function porchTiles(width: number, depth: number): THREE.MeshStandardMaterial {
+  const scaled = (t: THREE.Texture) => { const c = t.clone(); c.repeat.set(width / photoMetres("roof-tiles"), depth / photoMetres("roof-tiles")); return c; };
+  return new THREE.MeshStandardMaterial({ map: scaled(photoTexture("roof-tiles")), normalMap: scaled(photoTexture("roof-tiles", true)), roughness: 0.9 });
+}
+
 /**
  * Front porches on walls that face open ground: a clay-tiled
  * lean-to roof, and on two-storey houses a balcony: wooden under that roof,
@@ -1078,7 +1095,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
   const colours = { white: WALL, tile: "#b9663f", wood: SHUTTER, iron: "#1d1b1a", canvas: "#efe6d2" };
   const unit = new THREE.BoxGeometry(1, 1, 1);
   for (const key of ["white", "tile", "wood", "iron", "canvas"] as const) {
-    const mesh = new THREE.InstancedMesh(unit, new THREE.MeshStandardMaterial({ color: colours[key], roughness: 0.9 }), parts[key].length);
+    const mesh = new THREE.InstancedMesh(unit, key === "tile" ? porchTiles(WIDTH + 0.3, DEPTH + 0.5) : new THREE.MeshStandardMaterial({ color: colours[key], roughness: 0.9 }), parts[key].length);
     parts[key].forEach((matrix, i) => mesh.setMatrixAt(i, matrix));
     mesh.castShadow = key === "white" || key === "tile" || key === "canvas";
     mesh.receiveShadow = true;

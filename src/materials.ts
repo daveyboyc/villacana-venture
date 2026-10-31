@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { asset } from "./asset";
 
 /** Original, repeatable surfaces; colour/scale matched to IMG_2263/2237/2204. */
 const noise=(i:number)=>{const v=Math.sin(i*127.1+31.7)*43758.5453;return v-Math.floor(v);};
@@ -17,11 +18,30 @@ export function pavingCanvas(size=512):HTMLCanvasElement {
   for(let i=0;i<1100;i++){g.fillStyle=i%3?"rgba(48,39,28,.13)":"rgba(233,216,189,.2)";g.fillRect(noise(i+3000)*size,noise(i+8000)*size,1+noise(i+90)*2,1);}
   return c;
 }
-const cache=new Map<string,THREE.CanvasTexture>();
-export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"|"turf"):THREE.CanvasTexture {
+/**
+ * CC0 Poly Haven surfaces, recoloured to the photos and scaled to the metre
+ * (public/textures/CREDITS.md). Each image covers `metres` of surface, so on
+ * geometry whose UVs are in metres the shared texture tiles at true size.
+ */
+export type PhotoSurface="plaster"|"roof-tiles"|"crazy-paving"|"terracotta";
+const PHOTO_METRES:Record<PhotoSurface,number>={plaster:2,"roof-tiles":2.5,"crazy-paving":2,terracotta:3.2};
+const photoCache=new Map<string,THREE.Texture>();
+export function photoTexture(name:PhotoSurface,normal=false):THREE.Texture {
+  const key=name+(normal?"-normal":"");const saved=photoCache.get(key);if(saved)return saved;
+  const texture=new THREE.TextureLoader().load(asset(`/textures/${key}.jpg`));
+  if(!normal)texture.colorSpace=THREE.SRGBColorSpace;
+  texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.repeat.setScalar(1/PHOTO_METRES[name]);texture.anisotropy=8;
+  photoCache.set(key,texture);return texture;
+}
+/** The metres one image of a photo surface covers, for geometry whose UVs are not in metres. */
+export function photoMetres(name:PhotoSurface):number {return PHOTO_METRES[name];}
+const cache=new Map<string,THREE.Texture>();
+/** Shared surfaces. "paving" is the terracotta photo surface: 0.4 m tiles, 8 to an image 3.2 m across. */
+export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"|"turf"):THREE.Texture {
+  if(kind==="paving")return photoTexture("terracotta");
   const saved=cache.get(kind);if(saved)return saved;
-  const c=kind==="paving"?pavingCanvas():document.createElement("canvas");
-  if(kind!=="paving") {
+  const c=document.createElement("canvas");
+  {
     c.width=c.height=256;const g=c.getContext("2d")!,pixels=g.createImageData(256,256);
     for(let i=0;i<pixels.data.length;i+=4){const v=kind==="plaster"?235+noise(i)*17:kind==="turf"?225+noise(i)*27:202+noise(Math.floor(i/4/16))*18;pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=v;pixels.data[i+3]=255;}
     g.putImageData(pixels,0,0);
@@ -43,44 +63,55 @@ export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"|"turf"):THREE.Ca
   const texture=new THREE.CanvasTexture(c);texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.repeat.setScalar(kind==="plaster"?1:1/1.6);texture.anisotropy=4;cache.set(kind,texture);return texture;
 }
 export function plasterMaterial(color="#f7f7ee"):THREE.MeshStandardMaterial {
-  const map=surfaceTexture("plaster");return new THREE.MeshStandardMaterial({color,map,bumpMap:map,bumpScale:.025,roughness:.95});
+  return new THREE.MeshStandardMaterial({color,map:photoTexture("plaster"),normalMap:photoTexture("plaster",true),normalScale:new THREE.Vector2(.6,.6),roughness:.95});
 }
 
-/** Preserve the mapped cover while adding grass at the same metre scale in
- * single-courtyard and whole-resort views. Standard lighting, alpha cutouts and
- * mipmaps still apply on mobile and desktop. Raised ground reuses this material. */
-export function groundMaterial(map:THREE.Texture,lawnCanvas:HTMLCanvasElement,metres:number,deck?:{mask:HTMLCanvasElement;slabs:HTMLCanvasElement;turn:number}):THREE.MeshStandardMaterial {
+export type GroundDetail={mask:HTMLCanvasElement;slabs:HTMLCanvasElement;turn:number};
+/**
+ * Preserve the mapped cover while adding grass at the same metre scale in
+ * single-courtyard and whole-resort views. With `detail`, the mask's red, green
+ * and blue mark pool deck, terracotta paving and crazy paving, drawn at full
+ * resolution in metres and turned square to the houses like the painted paving.
+ * Standard lighting, alpha cutouts and mipmaps still apply on mobile and desktop.
+ * Raised ground reuses this material.
+ */
+export function groundMaterial(map:THREE.Texture,lawnCanvas:HTMLCanvasElement,metres:number,detail?:GroundDetail):THREE.MeshStandardMaterial {
   const mask=new THREE.CanvasTexture(lawnCanvas);
   const turf=surfaceTexture("turf");
   const material=new THREE.MeshStandardMaterial({map,roughness:.95,alphaTest:.5});
-  // Pool-deck slabs: a 4.8 m swatch in metres, turned square to the houses like the paving.
-  const deckMask=deck?new THREE.CanvasTexture(deck.mask):null;
-  const slabs=deck?new THREE.CanvasTexture(deck.slabs):null;
+  const detailMask=detail?new THREE.CanvasTexture(detail.mask):null;
+  const slabs=detail?new THREE.CanvasTexture(detail.slabs):null;
   if(slabs){slabs.colorSpace=THREE.SRGBColorSpace;slabs.wrapS=slabs.wrapT=THREE.RepeatWrapping;slabs.anisotropy=8;}
-  const turn=(deck?.turn??0)*Math.PI/180;
+  const turn=(detail?.turn??0)*Math.PI/180;
   material.onBeforeCompile=shader=>{
     shader.uniforms.lawnMask={value:mask};
     shader.uniforms.turfDetail={value:turf};
     shader.uniforms.groundMetres={value:metres};
-    shader.uniforms.deckMask={value:deckMask};
+    shader.uniforms.detailMask={value:detailMask};
     shader.uniforms.deckSlabs={value:slabs};
-    shader.uniforms.deckTurn={value:new THREE.Vector2(Math.cos(turn),Math.sin(turn))};
+    shader.uniforms.terracotta={value:detail?photoTexture("terracotta"):null};
+    shader.uniforms.crazyPaving={value:detail?photoTexture("crazy-paving"):null};
+    shader.uniforms.detailTurn={value:new THREE.Vector2(Math.cos(turn),Math.sin(turn))};
     shader.fragmentShader=shader.fragmentShader.replace("#include <common>",`#include <common>
       uniform sampler2D lawnMask;
       uniform sampler2D turfDetail;
       uniform float groundMetres;
-      ${deck?`uniform sampler2D deckMask;
+      ${detail?`uniform sampler2D detailMask;
       uniform sampler2D deckSlabs;
-      uniform vec2 deckTurn;`:""}`)
+      uniform sampler2D terracotta;
+      uniform sampler2D crazyPaving;
+      uniform vec2 detailTurn;`:""}`)
       .replace("#include <map_fragment>",`#include <map_fragment>
       float lawn = texture2D(lawnMask, vMapUv).r;
       vec3 blades = texture2D(turfDetail, vMapUv * groundMetres / 1.6).rgb;
       diffuseColor.rgb *= mix(vec3(1.0), blades * 1.25, lawn);
-      ${deck?`float deck = texture2D(deckMask, vMapUv).r;
+      ${detail?`vec3 surfaces = texture2D(detailMask, vMapUv).rgb;
       vec2 m = vMapUv * groundMetres;
-      vec2 turned = vec2(deckTurn.x * m.x - deckTurn.y * m.y, deckTurn.y * m.x + deckTurn.x * m.y);
-      diffuseColor.rgb = mix(diffuseColor.rgb, texture2D(deckSlabs, turned / 4.8).rgb, deck);`:""}`);
+      vec2 turned = vec2(detailTurn.x * m.x - detailTurn.y * m.y, detailTurn.y * m.x + detailTurn.x * m.y);
+      diffuseColor.rgb = mix(diffuseColor.rgb, texture2D(deckSlabs, turned / 4.8).rgb, surfaces.r);
+      diffuseColor.rgb = mix(diffuseColor.rgb, texture2D(terracotta, turned / ${PHOTO_METRES.terracotta.toFixed(1)}).rgb, surfaces.g);
+      diffuseColor.rgb = mix(diffuseColor.rgb, texture2D(crazyPaving, m / ${PHOTO_METRES["crazy-paving"].toFixed(1)}).rgb, surfaces.b);`:""}`);
   };
-  material.customProgramCacheKey=()=>deck?"mapped-turf-deck-v1":"mapped-turf-v1";
+  material.customProgramCacheKey=()=>detail?"mapped-turf-detail-v1":"mapped-turf-v1";
   return material;
 }
