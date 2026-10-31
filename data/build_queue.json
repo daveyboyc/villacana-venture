@@ -1748,7 +1748,8 @@
     "Download size added stated"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "open",
+   "notes": "Plaster, terracotta and crazy paving (and barrel roof tiles) were replaced resort-wide by north-pool-detail-pilot step 1 with recoloured CC0 Poly Haven textures. Left here: per-area colour checks against the photos outside the north pool."
   },
   {
    "id": "3d-browser-regression-reliability",
@@ -2322,7 +2323,8 @@
    ],
    "dependsOn": [],
    "status": "in-progress",
-   "owner": "Claude"
+   "owner": "Claude",
+   "notes": "Step 1 done 31 October: photo-matched plaster, terracotta, crazy paving and barrel tiles (CC0 Poly Haven, recoloured; public/textures/CREDITS.md), kit balcony tiles rebuilt in the same colour. Renders and notes in docs/reviews/north-pool-detail-pilot. Next: step 2, 3D planting."
   }
  ]
 }

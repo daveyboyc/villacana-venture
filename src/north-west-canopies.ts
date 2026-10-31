@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import data from "../data/north_west_canopies.json";
 import {centroid, closestOnSegment, pointInRing} from "./geom";
+import {photoMetres, photoTexture} from "./materials";
 import {siteY} from "./terrain";
 import type {SkeletonBuilding, Vec2} from "./types";
 
@@ -15,19 +16,13 @@ export function canopyBase(buildings:Pick<SkeletonBuilding,"id"|"ring">[]):numbe
   if(!house)throw Error("Missing registered north-west canopy house");
   const c=centroid(house.ring);return siteY(c.x,c.z);
 }
-function tileTexture():THREE.CanvasTexture {
-  const canvas=document.createElement("canvas");canvas.width=canvas.height=128;
-  const ctx=canvas.getContext("2d")!;
-  ctx.fillStyle="#c49378";ctx.fillRect(0,0,128,128);
-  for(let x=0;x<128;x+=32){
-    const shade=ctx.createLinearGradient(x,0,x+32,0);shade.addColorStop(0,"#936447");shade.addColorStop(.45,"#d8aa89");shade.addColorStop(1,"#ae7452");ctx.fillStyle=shade;ctx.fillRect(x,0,32,128);
-  }
-  ctx.strokeStyle="#9e7055";ctx.lineWidth=3;
-  for(const y of [1,65]){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(128,y);ctx.stroke();}
-  const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.anisotropy=4;return texture;
+/** Photo barrel tiles; this geometry's UV units are 1.12 m across and 0.9 m down the slope. */
+function tileMaterial():THREE.MeshStandardMaterial {
+  const scaled=(t:THREE.Texture)=>{const c=t.clone();c.repeat.set(1.12/photoMetres("roof-tiles"),.9/photoMetres("roof-tiles"));return c;};
+  return new THREE.MeshStandardMaterial({map:scaled(photoTexture("roof-tiles")),normalMap:scaled(photoTexture("roof-tiles",true)),roughness:1,side:THREE.DoubleSide});
 }
 export function addNorthWestCanopies(scene:THREE.Scene,buildings:Pick<SkeletonBuilding,"id"|"ring">[]):void {
-  const base=canopyBase(buildings),material=new THREE.MeshStandardMaterial({map:tileTexture(),roughness:1,side:THREE.DoubleSide});
+  const base=canopyBase(buildings),material=tileMaterial();
   for(const c of northWestCanopies){
     const ring=canopyRing(c),ys=[c.backHeight,c.backHeight,c.eaveHeight,c.eaveHeight],positions:number[]=[],uvs:number[]=[];
     const width=Math.hypot(ring[1][0]-ring[0][0],ring[1][1]-ring[0][1]);

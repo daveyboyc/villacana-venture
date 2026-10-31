@@ -32,7 +32,7 @@ export function addCervantesGardenDoor(scene: THREE.Scene,ref: BoundaryReference
   const base=baseY(ref),datum=base+data.rise,frame=data.frame,turn=-Math.atan2(along[1],along[0]);
   const white=plasterMaterial("#fffaf1"),timber=new THREE.MeshStandardMaterial({color:"#65432e",roughness:.9});
   // Small square red quarry tiles, two rows per tread; UVs below are in metres.
-  const quarry=surfaceTexture("paving").clone();quarry.repeat.setScalar(1/(4*data.tile));quarry.needsUpdate=true;
+  const quarry=surfaceTexture("paving").clone();quarry.repeat.setScalar(1/(8*data.tile));quarry.needsUpdate=true;
   const red=new THREE.MeshStandardMaterial({color:"#d47a68",map:quarry,roughness:.85});
   const soil=new THREE.MeshStandardMaterial({color:"#5a4433",roughness:1});
   const add=(mesh:THREE.Mesh,name:string)=>{mesh.name=name;mesh.userData.noDrape=true;mesh.castShadow=mesh.receiveShadow=true;scene.add(mesh);};
