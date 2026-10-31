@@ -190,7 +190,7 @@
    "discrepancies": [],
    "tasks": {
     "open": 3,
-    "inProgress": 2,
+    "inProgress": 3,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
@@ -1728,7 +1728,7 @@
    ],
    "tasks": {
     "open": 29,
-    "inProgress": 24,
+    "inProgress": 25,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",

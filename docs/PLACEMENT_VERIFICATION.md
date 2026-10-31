@@ -71,8 +71,9 @@ approval**. Complete the packet and add it to `data/placement_reviews.json`'s
   the independent reviewer must inspect the actual private pixels at that revision.
 - Existing, SHA-256-bound public-safe `overlay`, `comparison` and `render`
   artifacts. `render` must be a PNG/JPEG at least 320×200. A software PASS file is
-  not a render. Keep private imagery, fetched Google imagery and credentials out
-  of this public repo; link private comparisons from public-safe reports.
+  not a render. Keep private imagery and credentials out of this public repo and
+  link private comparisons from public-safe reports; Google imagery may be included
+  with credit (AGENTS.md).
 - One assessment per cited source plus `map:ground`, specifying `supports`,
   `limited` or `unusable`, capabilities and limits. Photographs need camera status
   and `consistent`, `differs` or `not-comparable` comparison. A claimed calibrated
