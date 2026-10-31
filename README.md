@@ -1,7 +1,9 @@
 # Villacana reference images
 
-Private reference material for the villacana-venture game. Not for publishing:
-these are screenshots of Apple Maps and Google Maps, used only to compare against by eye.
+Private reference material for the villacana-venture game. The Apple Maps screenshots
+and Dave's own photos are not for publishing and are compared by eye only. Google
+imagery here may be traced from and published in villacana-venture with credit
+("Imagery © Google"), per its AGENTS.md (Dave, 2026-10-31).
 
 **Agents: start from `refs/README.md` in villacana-venture**, not from this file. Every
 image here is catalogued there by area, with what it shows, its viewpoint and what it
