@@ -286,6 +286,14 @@
   "pool_decks.json:south-deck": {
    "level": "estimated",
    "why": "Fitted to the pale deck on the aerial (0.24 m pixels), 0.21 m rms on held-out points; the web photos show the same even band but have no solved camera."
+  },
+  "backdrop.json:photo-trees": {
+   "level": "estimated",
+   "why": "Direction from the solved IMG_2204-2206 camera (each top pixel); distance only from the tree's usual height (Norfolk pines 24-26 m, palms 11-14 m), so it may be tens of metres off. The models are original, not traced."
+  },
+  "backdrop.json:aerial-trees": {
+   "level": "inferred",
+   "why": "Placed where the aerial shows dark canopy outside the resort; the species are not readable from the aerial and are drawn from the mix in the photos (umbrella pines, broadleaf, palms, eucalyptus beside the west wall). Heights are capped so nothing stands above the skyline in IMG_2204-2206."
   }
  },
  "gaps": [
@@ -357,6 +365,19 @@
     "IMG_2287.jpg"
    ],
    "why": "The 0.65 m lane-edge wall stands about 0.3 m further out than the planter front in the photos; it may be the same planter continuing east."
+  },
+  {
+   "id": "gap:north-pool-west-terrace-tree",
+   "name": "North pool · spreading tree leaning over the north-west raised terrace",
+   "at": [
+    -193.0,
+    20.8
+   ],
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2206.jpg"
+   ],
+   "why": "Located through the solved IMG_2204 camera (trunk foot on the terrace floor, about -193.0, 20.8, crown about 6 m across), but its crown overlaps the protected walk across the terrace, so the route-clearance guard keeps it out. Needs a decision on whether a tree over a walk may stand there."
   }
  ]
 }

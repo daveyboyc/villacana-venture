@@ -39,6 +39,10 @@ def features(s):
         add('elena_lane_paving.json:'+f['id'],f['name'],'reference feature',f['trust'],points=r['points'],width=r['width'],evidence=f['evidence'])
     for b in s['buildings']:add('building:'+b['id'],b['id'],'building','registry',ring=b['ring'],passage=bool(b.get('passage')),**({'notStanding':True,'evidence':b['notStanding']['evidence']} if b.get('notStanding') else {}))
     for p in s['pools']:add('pool:'+p['id'],p['id']+' pool','pool','registry',ring=p['ring'])
+    # Trees beyond the resort (data/backdrop.json): picked on rays from the solved north-pool camera, and from the aerial's canopy.
+    backdrop=json.loads((ROOT/'data/backdrop.json').read_text())
+    add('backdrop.json:photo-trees','Norfolk pines and palms over the north-pool roofs','reference feature','on rays from the solved IMG_2204-2206 camera; distance from each tree\'s usual height',points=[t[1:3] for t in backdrop['trees'] if t[4]=='photo'],evidence=['IMG_2204.jpg','IMG_2205.jpg','IMG_2206.jpg'])
+    add('backdrop.json:aerial-trees','Trees beyond the resort where the aerial shows canopy','reference feature','aerial canopy; species drawn from the mix in the photos; heights capped by the photographed skyline',points=[t[1:3] for t in backdrop['trees'] if t[4]=='aerial'],evidence=['IMG_2204.jpg','IMG_2205.jpg','IMG_2206.jpg'])
     # The measured stone decks round the small pools (data/pool_decks.json; outline built into skeleton.json).
     for d in json.loads((ROOT/'data/pool_decks.json').read_text())['pools']:
         p=next(p for p in s['pools'] if p['id']==d['id'])

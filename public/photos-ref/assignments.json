@@ -6,9 +6,9 @@
   "suggested": 90,
   "needs-review": 75,
   "photos": 166,
-  "features": 383,
+  "features": 385,
   "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 129
+  "modelFeaturesWithPhotoCitations": 131
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -989,6 +989,8 @@
     }
    ],
    "citedBy": [
+    "backdrop.json:photo-trees",
+    "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
     "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace",
@@ -1024,6 +1026,8 @@
     }
    ],
    "citedBy": [
+    "backdrop.json:photo-trees",
+    "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
     "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-north-patios"
@@ -1063,6 +1067,8 @@
     }
    ],
    "citedBy": [
+    "backdrop.json:photo-trees",
+    "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
     "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace"

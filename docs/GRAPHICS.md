@@ -77,6 +77,22 @@ models of the species seen in the north-pool photos, sized to the cards in `SPRI
 model loads, keeping each card's position, turn, scale, `spriteKind` and `spriteWidth`, so the
 route-clearance guard and tests see the same footprints. Small screens keep the cards.
 
+## Trees and the backdrop (November 2026, north pool pilot step 5)
+
+`scripts/build_trees.py` builds the trees headless in Blender with the helpers of
+`build_plants.py` (`public/models/trees/`, about 730 kB, byte-identical on rebuild): umbrella
+pine, Norfolk Island pine, eucalyptus, rounded broadleaf, spreading tree and pollarded tree, with
+`-far` versions (a few lumpy clumps, no leaf cards) for the distance and a distant palm. In
+`src/sprites.ts` `MODELS` swaps them in for the `tree`, `feathery_tree`, `pollarded_tree`,
+`umbrella_pine`, `norfolk_pine` and `eucalyptus` cards; `addSprites(..., { far: true })` uses
+`FAR_MODELS`, unshadowed and hazed instead of fogged. Small screens keep the cards.
+
+`scripts/build_backdrop.py` writes `data/backdrop.json`: trees on rays from the solved north-pool
+camera, trees where the aerial shows canopy outside the resort block (heights capped by the
+photographed skyline), groves beyond the aerial, and the mountain ridge traced from IMG_2204-2206
+as bearing and elevation. `src/backdrop.ts` stands them (detailed models within 85 m of a shown
+pool, light ones beyond) and builds the ridge band 2.2 km out.
+
 ## Pool fittings and coping (November 2026, north pool pilot step 3)
 
 `scripts/build_pool_kit.py` builds the stainless pool fittings headless in Blender the same
