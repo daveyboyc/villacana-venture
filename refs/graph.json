@@ -40797,16 +40797,22 @@
    "featureId": "pool_decks.json:north-deck",
    "kind": "model-feature",
    "name": "North pool deck",
-   "verification": "unreviewed",
-   "photoVerification": "unchecked",
+   "verification": "disputed",
+   "photoVerification": "differs",
    "placement": {
-    "status": "unreviewed",
+    "status": "disputed",
     "scope": "placement only",
     "blockers": [
-     "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+     "open discrepancy photo-discrepancy:ff51326279ba4a0d",
+     "open discrepancy photo-discrepancy:70cf6dadd775a578",
+     "open discrepancy photo-discrepancy:6febefd118d6f5c9"
     ],
     "reviewIds": [],
-    "reportIds": [],
+    "reportIds": [
+     "photo-discrepancy:ff51326279ba4a0d",
+     "photo-discrepancy:70cf6dadd775a578",
+     "photo-discrepancy:6febefd118d6f5c9"
+    ],
     "modelDigest": "45e7b591ecb75554d892d5758c9a4e8648034c39f3ef340ecdf010074b1cc08b",
     "contextDigest": "e3dfca7c3734f8afb3b4e36546ab474e9c05480b2f5a5d127d902fdd3610d843"
    }
@@ -42805,9 +42811,9 @@
    "kind": "build-task",
    "name": "Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison",
    "priority": 1,
-   "status": "open",
+   "status": "in-progress",
    "verification": "not-applicable",
-   "photoVerification": "unchecked",
+   "photoVerification": "differs",
    "placement": {
     "status": "not-applicable",
     "features": []
@@ -42976,6 +42982,42 @@
    "reportedAt": null,
    "evidence": null,
    "followUp": "middle-pool-south-forecourt",
+   "resolutionReview": null
+  },
+  {
+   "id": "placement-discrepancy:photo-discrepancy:ff51326279ba4a0d",
+   "kind": "placement-discrepancy",
+   "feature": "pool_decks.json:north-deck",
+   "status": "open",
+   "notes": "Through the solved camera the pool ring, houses and lawn line up, but 40 of the 52 differences recorded in data/discrepancies.json show in it (numbered on docs/reviews/loop-discrepancies/IMG_2204-compare.jpg): the squared deck tongue and SW spur are missing from the water ring, pump box, east ladder and east life ring are misplaced, parasols, awnings, furniture, showers, the west-terrace tree and most bougainvillea are missing, the north plinth frontage sits 1.5-2.5 m too far south, hedges and facades differ, the glass fence is not built (won't fix).",
+   "reportedBy": "Claude",
+   "reportedAt": null,
+   "evidence": null,
+   "followUp": "loop-north-pool-fixes",
+   "resolutionReview": null
+  },
+  {
+   "id": "placement-discrepancy:photo-discrepancy:70cf6dadd775a578",
+   "kind": "placement-discrepancy",
+   "feature": "pool_decks.json:north-deck",
+   "status": "open",
+   "notes": "Through the solved camera the pool, lawn and north row line up; 37 recorded differences show in it, including the deck tongue, pump box, east ladder and ring positions, the big yucca 6 m from the model's, the Isabel path's line and paving, the missing iron gate and parasols, and the station building's own roof form (docs/reviews/loop-discrepancies/IMG_2205-compare.jpg).",
+   "reportedBy": "Claude",
+   "reportedAt": null,
+   "evidence": null,
+   "followUp": "loop-north-pool-fixes",
+   "resolutionReview": null
+  },
+  {
+   "id": "placement-discrepancy:photo-discrepancy:6febefd118d6f5c9",
+   "kind": "placement-discrepancy",
+   "feature": "pool_decks.json:north-deck",
+   "status": "open",
+   "notes": "Through the solved camera the pool's west side and the north-west terrace line up; 25 recorded differences show in it, including the SW deck spur, the extra strelitzia clumps o7/o8, the curved wall's south end, the west-row gates, facade and garden planting, the parasols and the station building's form (docs/reviews/loop-discrepancies/IMG_2206-compare.jpg).",
+   "reportedBy": "Claude",
+   "reportedAt": null,
+   "evidence": null,
+   "followUp": "loop-north-pool-fixes",
    "resolutionReview": null
   },
   {
@@ -43294,6 +43336,2742 @@
     5.0
    ],
    "why": "only one photo in the Picasso area"
+  },
+  {
+   "id": "photo-discrepancy:np-pool-east-tongue",
+   "kind": "photo-discrepancy",
+   "label": "D1",
+   "name": "The pool's water edge turns square round a straight-edged deck tongue that reaches into the water east of the north steps, where the pump box stands (west tip marked +). The registry water ring is a smooth curve there, so the model draws water over most of the tongue and has no square corners.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": [
+    -174.5,
+    20.2
+   ],
+   "uncertaintyM": 1.14,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.31 m",
+   "features": [
+    "pool:north",
+    "pool_decks.json:north-deck"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1040,
+      735,
+      1260,
+      935
+     ],
+     "contact": [
+      1047,
+      797
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      398,
+      732,
+      612,
+      905
+     ],
+     "contact": [
+      406,
+      824
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-pool-southwest-spur",
+   "kind": "photo-discrepancy",
+   "label": "D2",
+   "name": "On the south-west side a square-cornered deck spur carries the ladder (spur tip marked +); the model's water ring and deck curve smoothly there, so the spur and its straight sides are missing and the ladder is lost in the curve.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": [
+    -177.28,
+    22.49
+   ],
+   "uncertaintyM": 1.09,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2206; cameras agree to 0.59 m",
+   "features": [
+    "pool:north",
+    "pool_decks.json:north-deck",
+    "objects.json:o2"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      700,
+      760,
+      835,
+      885
+     ],
+     "contact": [
+      812,
+      812
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1425,
+      830,
+      1575,
+      935
+     ],
+     "contact": [
+      1550,
+      906
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-pool-north-steps",
+   "kind": "photo-discrepancy",
+   "label": "D3",
+   "name": "The north steps are a rectangular bay inset in the pool wall with three visible white-nosed treads and a stainless step handrail at each end; the render shows only a faint translucent outline of the treads and no handrails at this distance.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": [
+    -179.56,
+    17.47
+   ],
+   "uncertaintyM": 1.37,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204",
+   "features": [
+    "objects.json:o1",
+    "pool:north"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      755,
+      615,
+      895,
+      745
+     ],
+     "contact": [
+      815,
+      684
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      20,
+      650,
+      200,
+      830
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-pool-water-look",
+   "kind": "photo-discrepancy",
+   "label": "D4",
+   "name": "The photo's water is a saturated mid-blue with a dark blue tiled band along the waterline and visible floor markings; the render's water is paler and greyer with only a thin dark line at the coping.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "pool:north"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      520,
+      680,
+      1245,
+      975
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      0,
+      700,
+      600,
+      1030
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1200,
+      740,
+      1600,
+      1080
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-deck-look",
+   "kind": "photo-discrepancy",
+   "label": "D5",
+   "name": "The deck slabs are a greyer cream with dark weathering stains and fine joints, edged by rounded pale stones at the fence; the render's deck is a brighter, uniform yellow-cream with strongly drawn joints.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "pool_decks.json:north-deck"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      370,
+      640,
+      1390,
+      1060
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      0,
+      660,
+      720,
+      1130
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-glass-fence",
+   "kind": "photo-discrepancy",
+   "label": "D6",
+   "name": "A frameless glass safety fence on steel spigots, with frosted bands, runs round the deck's outer edge in all three photos; the model has none.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "wont-fix",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "pool:north",
+    "pool_decks.json:north-deck"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      365,
+      590,
+      1390,
+      1050
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      0,
+      600,
+      720,
+      1130
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1045,
+      640,
+      1600,
+      1180
+     ]
+    }
+   ],
+   "reason": "Dave, 2026-10-11: skip the glass safety fence round the pools (data/areas.json, north-pool notes). Recorded so the comparison accounts for it, not to be built.",
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-pump-box-position",
+   "kind": "photo-discrepancy",
+   "label": "D7",
+   "name": "The white pump box stands on the squared deck tongue against its outer edge by the fence (front foot marked +); the model's box (o4, -172.7, 20.2) sits about 1.5 m further west, on the curve where the photo shows the tongue's water edge.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -171.22,
+    20.1
+   ],
+   "uncertaintyM": 1.11,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.45 m",
+   "features": [
+    "objects.json:o4"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1230,
+      770,
+      1355,
+      855
+     ],
+     "contact": [
+      1295,
+      848
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      585,
+      750,
+      695,
+      835
+     ],
+     "contact": [
+      633,
+      826
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-ladder-east-position",
+   "kind": "photo-discrepancy",
+   "label": "D8",
+   "name": "The east ladder stands at the north-east corner of the tongue where it meets the curved wall (feet marked +); the model's ladder (o3, -174.0, 20.2) is about 3.5 m further south-west, on the curve below the pump box where the photo has no ladder.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -172.18,
+    17.24
+   ],
+   "uncertaintyM": 1.27,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.27 m",
+   "features": [
+    "objects.json:o3"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1205,
+      695,
+      1275,
+      765
+     ],
+     "contact": [
+      1246,
+      760
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      560,
+      685,
+      615,
+      755
+     ],
+     "contact": [
+      592,
+      748
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-life-ring-east-position",
+   "kind": "photo-discrepancy",
+   "label": "D9",
+   "name": "The east life ring hangs on a steel post at the fence north of the pump box (post foot marked +); the model's ring (o6, -170.7, 21.7) is about 5 m further south, south-east of the box.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -170.99,
+    16.46
+   ],
+   "uncertaintyM": 1.31,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.37 m",
+   "features": [
+    "objects.json:o6"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1318,
+      670,
+      1362,
+      765
+     ],
+     "contact": [
+      1332,
+      757
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      650,
+      650,
+      688,
+      742
+     ],
+     "contact": [
+      667,
+      734
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-life-ring-north-position",
+   "kind": "photo-discrepancy",
+   "label": "D10",
+   "name": "The north life ring's post stands at the fence just west of the step handrail (post foot marked +), about 1.2 m south of the model's ring (o5, -180.2, 16.4); all three cameras agree to 0.7 m.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -180.48,
+    17.57
+   ],
+   "uncertaintyM": 1.41,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205, IMG_2206; cameras agree to 0.69 m",
+   "features": [
+    "objects.json:o5"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      752,
+      585,
+      802,
+      678
+     ],
+     "contact": [
+      777,
+      672
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      28,
+      640,
+      88,
+      746
+     ],
+     "contact": [
+      58,
+      740
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1505,
+      628,
+      1566,
+      740
+     ],
+     "contact": [
+      1529,
+      734
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-pool-showers",
+   "kind": "photo-discrepancy",
+   "label": "D11",
+   "name": "Two chrome pool showers stand in front of a frosted glass screen at the north entrance to the fence (feet marked +); the model has neither the showers nor the screen.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -178.38,
+    14.75
+   ],
+   "uncertaintyM": 1.52,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.33 m",
+   "features": [
+    "proposed:north-pool-showers-and-screen"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      880,
+      575,
+      1052,
+      656
+     ],
+     "contact": [
+      936,
+      652
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      195,
+      598,
+      390,
+      694
+     ],
+     "contact": [
+      260,
+      688
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-deck-pole-east",
+   "kind": "photo-discrepancy",
+   "label": "D12",
+   "name": "A tall goose-neck stainless pole (a shower or ring post) rises from the deck edge just south of the pump box (foot marked +); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -170.73,
+    22.57
+   ],
+   "uncertaintyM": 0.98,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204",
+   "features": [
+    "proposed:north-pool-deck-pole"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1283,
+      750,
+      1328,
+      952
+     ],
+     "contact": [
+      1302,
+      948
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      632,
+      728,
+      668,
+      838
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-lawn-grate-slab",
+   "kind": "photo-discrepancy",
+   "label": "D13",
+   "name": "A rectangular stone slab with a grate is set in the lawn just outside the east fence (centre marked +); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -169.62,
+    17.97
+   ],
+   "uncertaintyM": 1.21,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.40 m",
+   "features": [
+    "proposed:north-pool-lawn-grate"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1368,
+      785,
+      1486,
+      850
+     ],
+     "contact": [
+      1430,
+      815
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      698,
+      748,
+      792,
+      792
+     ],
+     "contact": [
+      744,
+      770
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-lawn-covers",
+   "kind": "photo-discrepancy",
+   "label": "D14",
+   "name": "Small dark square inspection or irrigation covers are set in the lawn round the pool (four in IMG_2204; the one marked + is east of the pool); none in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -167.66,
+    14.71
+   ],
+   "uncertaintyM": 1.41,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204",
+   "features": [
+    "proposed:north-pool-lawn-covers"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1530,
+      752,
+      1590,
+      776
+     ],
+     "contact": [
+      1560,
+      764
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1150,
+      960,
+      1180,
+      985
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-lawn-look",
+   "kind": "photo-discrepancy",
+   "label": "D15",
+   "name": "The lawn is a dense mown sward with brown worn patches and mowing stripes, darker under the trees; the render's lawn is an even bright green scattered with dark tufts.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "proposed:north-pool-lawn-surface"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      140,
+      640,
+      1600,
+      1100
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      600,
+      620,
+      1000,
+      1000
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-strelitzia-look",
+   "kind": "photo-discrepancy",
+   "label": "D16",
+   "name": "The giant strelitzia south of the pool is two tall stems (the western one about 6 m) with long split paddle leaves over a dark mulch bed; the model's clump (calle-elena-9) is five thin stems about half as tall. Its position agrees to about 0.5 m (base marked +).",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": [
+    -178.43,
+    26.39
+   ],
+   "uncertaintyM": 0.96,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2206; cameras agree to 0.26 m",
+   "features": [
+    "objects.json:calle-elena-9"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      420,
+      450,
+      720,
+      948
+     ],
+     "contact": [
+      570,
+      930
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1095,
+      440,
+      1430,
+      980
+     ],
+     "contact": [
+      1250,
+      958
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-strelitzia-west-extra",
+   "kind": "photo-discrepancy",
+   "label": "D17",
+   "name": "The model draws two more strelitzia clumps (o7, o8) on the lawn by the west curved wall, in front of the tiled stair; both photos show open lawn there.",
+   "area": "north-pool",
+   "discrepancyKind": "extra",
+   "status": "open",
+   "at": [
+    -185.05,
+    23.2
+   ],
+   "uncertaintyM": 0.8,
+   "positionBasis": "model position of o7 and o8 (nothing in the photos to cast)",
+   "features": [
+    "objects.json:o7",
+    "objects.json:o8"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      290,
+      600,
+      420,
+      765
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      995,
+      495,
+      1210,
+      760
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-feathery-tree-position",
+   "kind": "photo-discrepancy",
+   "label": "D18",
+   "name": "The light, feathery-leaved small tree by the north-east lawn path (trunk foot marked +) stands about 3 m north-east of the model's tree o9 (-170.7, 13.1); both cameras agree to 0.5 m.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -168.29,
+    11.05
+   ],
+   "uncertaintyM": 1.69,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.46 m",
+   "features": [
+    "objects.json:o9"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1420,
+      385,
+      1600,
+      700
+     ],
+     "contact": [
+      1519,
+      688
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      700,
+      395,
+      940,
+      652
+     ],
+     "contact": [
+      800,
+      645
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-feathery-tree-look",
+   "kind": "photo-discrepancy",
+   "label": "D19",
+   "name": "The same tree is a slim trunk under an open, rounded crown of fine light-green pinnate leaves; the render draws it as a dark flat-topped umbrella crown on a thick forked trunk.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "objects.json:o9"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1420,
+      385,
+      1600,
+      700
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      700,
+      395,
+      940,
+      652
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-west-terrace-tree",
+   "kind": "photo-discrepancy",
+   "label": "D20",
+   "name": "A large spreading fine-leaved tree leans over the north-west raised terrace (trunk foot on the terrace floor marked +); the model leaves it out (known gap).",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -193.8,
+    20.21
+   ],
+   "uncertaintyM": 2.19,
+   "positionBasis": "camera ray to y = 1.82 m through IMG_2204, IMG_2206; cameras agree to 2.74 m",
+   "features": [
+    "gap:north-pool-west-terrace-tree"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      0,
+      280,
+      335,
+      585
+     ],
+     "contact": [
+      162,
+      570
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      728,
+      278,
+      1012,
+      548
+     ],
+     "contact": [
+      897,
+      540
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-pollarded-tree",
+   "kind": "photo-discrepancy",
+   "label": "D21",
+   "name": "The pollarded tree in the north patio (trunk foot on the patio floor marked +) stands about 2.4 m east of the model's o12 (-177.7, 7.1), and it is bare knobbly stumps with no leaves, where the model draws a crown in leaf.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -175.3,
+    7.01
+   ],
+   "uncertaintyM": 2.21,
+   "positionBasis": "camera ray to y = 1.2 m through IMG_2204, IMG_2205; cameras agree to 0.34 m",
+   "features": [
+    "objects.json:o12"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1140,
+      385,
+      1232,
+      575
+     ],
+     "contact": [
+      1176,
+      570
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      455,
+      395,
+      540,
+      578
+     ],
+     "contact": [
+      506,
+      572
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-yucca-position",
+   "kind": "photo-discrepancy",
+   "label": "D22",
+   "name": "A big multi-trunk yucca, 5-6 m tall, stands east of the lawn (trunks meet at the + mark); the model's yucca o13 is about 6 m further south by the camera building, and its feathery tree o10 (-163.7, 17.1) would stand inside this yucca's crown, where no such tree shows.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -164.7,
+    22.41
+   ],
+   "uncertaintyM": 1.09,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2205",
+   "features": [
+    "objects.json:o13",
+    "objects.json:o10"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      940,
+      370,
+      1392,
+      935
+     ],
+     "contact": [
+      1140,
+      915
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-north-patio-hedges",
+   "kind": "photo-discrepancy",
+   "label": "D23",
+   "name": "The north patios are fronted by tall continuous clipped hedges, about 1 m high, with red hibiscus flowers, on the low plinth walls; the render shows a row of separate small round shrubs.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "raised_terraces.json:north-pool-north-patios"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      440,
+      488,
+      1600,
+      612
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      200,
+      495,
+      1000,
+      602
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1240,
+      512,
+      1600,
+      592
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-foreground-hedges",
+   "kind": "photo-discrepancy",
+   "label": "D24",
+   "name": "The hedges below the camera are low clipped hedges (about 1 m) with a few red and pink flowers, with the crazy-paving lawn path and lawn showing between them; the model's hibiscus hedge row (o14-o25) draws mounds two to three times as tall and wide that hide the path and the lawn edge.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "a row of objects (o14-o25); no single position",
+   "features": [
+    "objects.json:o14",
+    "objects.json:o17",
+    "objects.json:o20",
+    "objects.json:o25"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      0,
+      935,
+      1600,
+      1200
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      300,
+      940,
+      1340,
+      1200
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      560,
+      740,
+      1250,
+      1200
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-bougainvillea-facades",
+   "kind": "photo-discrepancy",
+   "label": "D25",
+   "name": "Magenta bougainvillea climbs the north and north-west facades in at least five places (two in IMG_2205); the model has a single bougainvillea card, on the middle house.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "on the facades; no ground contact",
+   "features": [
+    "building:6266601UF1366N_part4",
+    "building:6165501UF1366N_part5"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      440,
+      355,
+      520,
+      470
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      590,
+      355,
+      700,
+      475
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      770,
+      335,
+      850,
+      405
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1060,
+      345,
+      1145,
+      440
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      365,
+      360,
+      455,
+      470
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      10,
+      345,
+      125,
+      435
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-bougainvillea-west-gardens",
+   "kind": "photo-discrepancy",
+   "label": "D26",
+   "name": "A large bougainvillea covers the gate piers of the west-row front gardens and another flowers in the left foreground of IMG_2204; neither is in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "proposed:north-pool-west-garden-bougainvillea"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      615,
+      628,
+      865,
+      790
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      0,
+      700,
+      150,
+      950
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-climbers-west-wall",
+   "kind": "photo-discrepancy",
+   "label": "D27",
+   "name": "A dense climbing plant covers the wall of the house beside the camera down to the garden, with blue plumbago and agapanthus in the bed below, and blue hydrangea and plumbago bushes stand on the north-west terrace; the model has bare walls and beds there.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "planting on walls and beds; no single position",
+   "features": [
+    "building:6265201UF1366N_part3",
+    "raised_terraces.json:north-pool-west-terrace"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      250,
+      728,
+      600,
+      1150
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      610,
+      875,
+      765,
+      1010
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      278,
+      330,
+      345,
+      455
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      915,
+      375,
+      1005,
+      465
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-parasol-north-patio",
+   "kind": "photo-discrepancy",
+   "label": "D28",
+   "name": "A large grey parasol shades loungers on the north patio west of the pollarded tree (pole foot on the patio floor marked +); the model has no parasol there.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -179.79,
+    7.43
+   ],
+   "uncertaintyM": 2.2,
+   "positionBasis": "camera ray to y = 1.2 m through IMG_2204, IMG_2205; cameras agree to 1.61 m",
+   "features": [
+    "proposed:north-pool-north-patio-parasol"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      930,
+      440,
+      1058,
+      560
+     ],
+     "contact": [
+      990,
+      557
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      238,
+      455,
+      378,
+      565
+     ],
+     "contact": [
+      309,
+      560
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-parasol-west-terrace",
+   "kind": "photo-discrepancy",
+   "label": "D29",
+   "name": "A folded white parasol stands beside a white table on the house patio at the top of the tiled stair (foot on the terrace floor marked +); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -193.78,
+    13.7
+   ],
+   "uncertaintyM": 2.68,
+   "positionBasis": "camera ray to y = 1.82 m through IMG_2204, IMG_2206; cameras agree to 1.97 m",
+   "features": [
+    "proposed:north-pool-west-terrace-parasol"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      365,
+      435,
+      405,
+      515
+     ],
+     "contact": [
+      385,
+      512
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1096,
+      428,
+      1128,
+      508
+     ],
+     "contact": [
+      1110,
+      505
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-parasol-west-row-patio",
+   "kind": "photo-discrepancy",
+   "label": "D30",
+   "name": "A folded white parasol and a black bistro table with chairs stand on the patio in front of the west-row house (parasol foot marked +); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -198.12,
+    24.22
+   ],
+   "uncertaintyM": 1.71,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2206",
+   "features": [
+    "proposed:north-pool-west-row-parasol"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      650,
+      475,
+      748,
+      615
+     ],
+     "contact": [
+      678,
+      570
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-parasol-lilac-west-garden",
+   "kind": "photo-discrepancy",
+   "label": "D31",
+   "name": "A lilac parasol shades a terracotta patio inside a walled front garden of the west row (canopy centre marked +, cast at an assumed 2.2 m above the garden); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -181.76,
+    32.71
+   ],
+   "uncertaintyM": 1.52,
+   "positionBasis": "camera ray to y = 3.3 m through IMG_2206",
+   "features": [
+    "proposed:north-pool-west-garden-parasol"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      528,
+      765,
+      655,
+      860
+     ],
+     "contact": [
+      590,
+      805
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-parasol-lilac-east",
+   "kind": "photo-discrepancy",
+   "label": "D32",
+   "name": "A lilac parasol stands behind the big yucca on the east side (canopy marked +, cast at an assumed 2.2 m above the ground); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -158.97,
+    16.51
+   ],
+   "uncertaintyM": 2.7,
+   "positionBasis": "camera ray to y = 3.0 m through IMG_2205",
+   "features": [
+    "proposed:north-pool-east-parasol"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      1328,
+      608,
+      1406,
+      658
+     ],
+     "contact": [
+      1370,
+      632
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-passage-canopy",
+   "kind": "photo-discrepancy",
+   "label": "D33",
+   "name": "A white arched hood shelters the entrance of the covered passage between the north-west and north rows (front edge marked +, cast at an assumed 2.4 m above the path); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -182.04,
+    9.62
+   ],
+   "uncertaintyM": 3.93,
+   "positionBasis": "camera ray to y = 3.6 m through IMG_2204, IMG_2205; cameras agree to 0.38 m",
+   "features": [
+    "proposed:north-pool-passage-canopy"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      830,
+      434,
+      920,
+      462
+     ],
+     "contact": [
+      875,
+      460
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      100,
+      452,
+      228,
+      482
+     ],
+     "contact": [
+      165,
+      478
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-awning-blue",
+   "kind": "photo-discrepancy",
+   "label": "D34",
+   "name": "A blue-and-white striped awning runs over the ground-floor doors of the north-west row's middle house (front edge marked +, cast at an assumed 2.6 m above the patio); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -186.59,
+    8.66
+   ],
+   "uncertaintyM": 4.72,
+   "positionBasis": "camera ray to y = 3.8 m through IMG_2204, IMG_2206; cameras agree to 0.56 m",
+   "features": [
+    "building:6165501UF1366N_part5"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      642,
+      408,
+      802,
+      432
+     ],
+     "contact": [
+      720,
+      428
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      1428,
+      414,
+      1600,
+      446
+     ],
+     "contact": [
+      1515,
+      440
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      0,
+      428,
+      62,
+      455
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-awnings-north-east",
+   "kind": "photo-discrepancy",
+   "label": "D35",
+   "name": "White retractable awnings run over the two north patios east of the passage (front edges marked +); the model has one shorter cream awning, further west over the middle door, and none over the eastern patio.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -174.82,
+    8.1
+   ],
+   "uncertaintyM": 3.66,
+   "positionBasis": "camera ray to y = 3.6 m through IMG_2204, IMG_2205; cameras agree to 2.68 m",
+   "features": [
+    "building:6266601UF1366N_part4"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1122,
+      408,
+      1490,
+      498
+     ],
+     "contact": [
+      1200,
+      470
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      438,
+      425,
+      760,
+      495
+     ],
+     "contact": [
+      520,
+      490
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-awning-west-extra",
+   "kind": "photo-discrepancy",
+   "label": "D36",
+   "name": "The render puts a cream awning and a wide iron balcony over the west-row house door facing the pool; the photo shows no awning there and only small iron balconies.",
+   "area": "north-pool",
+   "discrepancyKind": "extra",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "on the facade; no ground contact",
+   "features": [
+    "building:6165501UF1366N_part2"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      500,
+      425,
+      720,
+      548
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-patio-furniture",
+   "kind": "photo-discrepancy",
+   "label": "D37",
+   "name": "Garden furniture stands on every patio: a white table and six chairs on the terracotta patio of the north-west terrace (marked +), white dining sets and loungers on the north patios, and more on the north-east patio; the model has none.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -195.81,
+    17.61
+   ],
+   "uncertaintyM": 2.67,
+   "positionBasis": "camera ray to y = 1.82 m through IMG_2204, IMG_2206; cameras agree to 0.83 m",
+   "features": [
+    "proposed:north-pool-patio-furniture"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      140,
+      462,
+      272,
+      532
+     ],
+     "contact": [
+      210,
+      522
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      890,
+      468,
+      968,
+      535
+     ],
+     "contact": [
+      930,
+      528
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      985,
+      498,
+      1112,
+      548
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1155,
+      488,
+      1262,
+      552
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1362,
+      488,
+      1425,
+      548
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1530,
+      495,
+      1600,
+      558
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      505,
+      500,
+      600,
+      570
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      760,
+      500,
+      845,
+      540
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-white-post-east",
+   "kind": "photo-discrepancy",
+   "label": "D38",
+   "name": "A tall white column, probably a furled parasol in its cover, stands by the hedge east of the lawn beside the yucca (foot marked +); not in the model.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -166.34,
+    25.76
+   ],
+   "uncertaintyM": 1.04,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2205",
+   "features": [
+    "proposed:north-pool-east-white-post"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      1058,
+      862,
+      1122,
+      1068
+     ],
+     "contact": [
+      1090,
+      1062
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-west-wall-south-end",
+   "kind": "photo-discrepancy",
+   "label": "D39",
+   "name": "The curved retaining wall of the north-west terrace carries on round to the south-east, to about the + mark, before it meets the lawn path; the model's wall stops about 2 m short at (-190.45, 24.6). Further north IMG_2206 puts the wall foot within 0.3 m of the model, while IMG_2204 (base partly hidden by the hedge) puts it about 1 m east.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": [
+    -187.92,
+    26.2
+   ],
+   "uncertaintyM": 1.5,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2206; cameras agree to 1.32 m",
+   "features": [
+    "raised_terraces.json:north-pool-west-terrace"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      25,
+      585,
+      362,
+      775
+     ],
+     "contact": [
+      60,
+      752
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      780,
+      560,
+      1072,
+      712
+     ],
+     "contact": [
+      823,
+      694
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-north-plinth-frontage",
+   "kind": "photo-discrepancy",
+   "label": "D40",
+   "name": "The low white plinth walls of the north patios, their white-step openings and the lawn-edge path in front of them stand about 1.5-2.5 m further north than modelled: the middle step opening (marked +) is near (-174.6, 9.0), the model's at (-173.3, 11.1), and the lawn edge in IMG_2204 meets the path near z 10.8 where the model's path is at z 12-12.9.",
+   "area": "north-pool",
+   "discrepancyKind": "position",
+   "status": "open",
+   "at": [
+    -174.64,
+    9.02
+   ],
+   "uncertaintyM": 1.84,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2204, IMG_2205; cameras agree to 0.56 m",
+   "features": [
+    "raised_terraces.json:north-pool-north-patios",
+    "north_pool_gardens.json:north-pool-lawn-path"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1100,
+      560,
+      1460,
+      660
+     ],
+     "contact": [
+      1185,
+      608
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      300,
+      590,
+      740,
+      625
+     ],
+     "contact": [
+      522,
+      612
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-isabel-path-line",
+   "kind": "photo-discrepancy",
+   "label": "D41",
+   "name": "The crazy-paving path east of the lawn curves from the black iron gate in the north-east corner down to the lawn (centre marked +); at its north end it runs about 1.5 m east of the mapped Isabel line, which kinks where the photo path curves.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": [
+    -164.11,
+    11.02
+   ],
+   "uncertaintyM": 1.77,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2205",
+   "features": [
+    "street:isabel"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      920,
+      600,
+      1070,
+      760
+     ],
+     "contact": [
+      1000,
+      650
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-isabel-path-paving",
+   "kind": "photo-discrepancy",
+   "label": "D42",
+   "name": "That path is irregular pale crazy paving flush with the lawn; the render draws it as a terracotta-tiled path with raised red kerbs.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "see np-isabel-path-line",
+   "features": [
+    "street:isabel"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      900,
+      600,
+      1110,
+      800
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-east-gate",
+   "kind": "photo-discrepancy",
+   "label": "D43",
+   "name": "A black iron gate closes the opening in the white wall at the north-east corner of the lawn, where the path leaves (foot marked +); the model has no gate there.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": [
+    -161.87,
+    6.87
+   ],
+   "uncertaintyM": 1.86,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2205",
+   "features": [
+    "street:isabel",
+    "proposed:north-pool-east-gate"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      1028,
+      518,
+      1078,
+      610
+     ],
+     "contact": [
+      1053,
+      606
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-north-patio-paving",
+   "kind": "photo-discrepancy",
+   "label": "D44",
+   "name": "The north and north-west patios and the passage floor are pale stone and crazy paving (one small terracotta-tiled patio under the table on the north-west terrace); the render paves them in bright terracotta tiles.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "no pixel shows where it meets the ground or a known height",
+   "features": [
+    "raised_terraces.json:north-pool-north-patios",
+    "raised_terraces.json:north-pool-west-terrace"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      0,
+      505,
+      290,
+      565
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      800,
+      440,
+      965,
+      565
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      0,
+      555,
+      1000,
+      645
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      690,
+      500,
+      1050,
+      565
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-west-row-gates",
+   "kind": "photo-discrepancy",
+   "label": "D45",
+   "name": "The west-row front gardens are entered through flat-capped white rendered gate piers with brown plank doors (door foot marked +); the model has a round white arch at the gate point (-188.76, 27.5) and plain white walls.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": [
+    -183.37,
+    30.69
+   ],
+   "uncertaintyM": 1.12,
+   "positionBasis": "camera ray to the model ground (siteY) through IMG_2206",
+   "features": [
+    "proposed:north-pool-west-row-garden-gates"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      512,
+      638,
+      612,
+      772
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      672,
+      778,
+      748,
+      892
+     ],
+     "contact": [
+      712,
+      885
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-camera-building-form",
+   "kind": "photo-discrepancy",
+   "label": "D46",
+   "name": "The building the photos were taken from (6265201UF1366N_part3) rises higher: a white parapet and chimney block stands beside the lens and the camera looks over its barrel-tile roof edge; the model's building is lower, with a flat white roof, a tiled porch canopy on timber posts in front of the camera and a large shuttered window on a wall the photo shows blank.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "the station building itself; no ground contact",
+   "features": [
+    "building:6265201UF1366N_part3"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      740,
+      580,
+      1600,
+      1200
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      0,
+      330,
+      905,
+      1200
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-north-row-openings",
+   "kind": "photo-discrepancy",
+   "label": "D47",
+   "name": "The north and north-west row openings are tall rectangles with louvred brown shutters under moulded white hoods and a moulded ledge between the floors; the render gives most of them round-arched heads and plain wall.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "on the facades; no ground contact",
+   "features": [
+    "building:6266601UF1366N_part4",
+    "building:6165501UF1366N_part5"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      440,
+      280,
+      820,
+      520
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      270,
+      290,
+      590,
+      560
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-north-east-balcony",
+   "kind": "photo-discrepancy",
+   "label": "D48",
+   "name": "The north-east house has a projecting first-floor balcony with a solid white moulded front; the render has an open iron railing there with an awning below.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "on the facade; no ground contact",
+   "features": [
+    "building:6266601UF1366N_part4"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      945,
+      375,
+      1090,
+      445
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      248,
+      385,
+      395,
+      440
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-west-row-facade",
+   "kind": "photo-discrepancy",
+   "label": "D49",
+   "name": "The west-row house facing the pool has tall shuttered windows, two small iron balconies and a brown garden door; the render has two round-arched windows over one wide iron balcony.",
+   "area": "north-pool",
+   "discrepancyKind": "shape",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "on the facade; no ground contact",
+   "features": [
+    "building:6165501UF1366N_part2"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      488,
+      290,
+      745,
+      625
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-roof-equipment",
+   "kind": "photo-discrepancy",
+   "label": "D50",
+   "name": "The roofs carry two white water tanks, a black chimney flue, solar panels, a satellite dish, air-conditioning units and chimney caps; the model's roofs are bare.",
+   "area": "north-pool",
+   "discrepancyKind": "missing",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "on the roofs; no ground contact",
+   "features": [
+    "building:6266601UF1366N_part4",
+    "building:6165501UF1366N_part5"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      612,
+      182,
+      708,
+      235
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1012,
+      178,
+      1038,
+      232
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      1298,
+      252,
+      1382,
+      282
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      862,
+      266,
+      898,
+      302
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      586,
+      276,
+      656,
+      300
+     ]
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      0,
+      360,
+      345,
+      400
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-backdrop-trees",
+   "kind": "photo-discrepancy",
+   "label": "D51",
+   "name": "Over the roofs the photos show tall eucalyptus with bare trunks over the west wall, dark umbrella pines and palms; the render draws rounded dense green blobs and flat light-green umbrella crowns, brighter and smoother than the photos.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "beyond the resort; directions only",
+   "features": [
+    "backdrop.json:aerial-trees",
+    "backdrop.json:photo-trees"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2206.jpg",
+     "region": [
+      0,
+      0,
+      700,
+      265
+     ]
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      0,
+      80,
+      900,
+      230
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
+  },
+  {
+   "id": "photo-discrepancy:np-mountains",
+   "kind": "photo-discrepancy",
+   "label": "D52",
+   "name": "The mountains show nearer green foothills, a sharp peaked summit and cloud on the ridge; the render's ridge is one flat blue-grey band with a softer summit.",
+   "area": "north-pool",
+   "discrepancyKind": "look",
+   "status": "open",
+   "at": null,
+   "uncertaintyM": null,
+   "positionBasis": "distant; directions only",
+   "features": [
+    "backdrop.json:photo-trees"
+   ],
+   "photos": [
+    {
+     "photo": "IMG_2204.jpg",
+     "region": [
+      600,
+      90,
+      1600,
+      175
+     ]
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "region": [
+      0,
+      100,
+      1350,
+      230
+     ]
+    }
+   ],
+   "reason": null,
+   "fix": {
+    "evidence": [],
+    "note": ""
+   },
+   "reviewer": null,
+   "created": "2026-11-01",
+   "author": "claude:loop-discrepancies",
+   "recordPath": "data/discrepancies.json"
   },
   {
    "id": "path-route:dali",
@@ -96030,6 +98808,36 @@
    "render": "docs/reviews/beach-gate-verge/IMG_2226-after.png"
   },
   {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "checked-against",
+   "scope": "photographic diagnostic, not placement approval",
+   "result": "differs",
+   "task": "loop-discrepancies",
+   "checked": "2026-11-01",
+   "render": "docs/reviews/loop-discrepancies/IMG_2204-render.jpg"
+  },
+  {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "checked-against",
+   "scope": "photographic diagnostic, not placement approval",
+   "result": "differs",
+   "task": "loop-discrepancies",
+   "checked": "2026-11-01",
+   "render": "docs/reviews/loop-discrepancies/IMG_2205-render.jpg"
+  },
+  {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "checked-against",
+   "scope": "photographic diagnostic, not placement approval",
+   "result": "differs",
+   "task": "loop-discrepancies",
+   "checked": "2026-11-01",
+   "render": "docs/reviews/loop-discrepancies/IMG_2206-render.jpg"
+  },
+  {
    "from": "ref:IMG_2182.jpg",
    "to": "model:street:jorge",
    "relation": "looks-at",
@@ -100467,6 +103275,51 @@
    "relation": "discrepancy-source"
   },
   {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "placement-discrepancy:photo-discrepancy:ff51326279ba4a0d",
+   "relation": "has-discrepancy"
+  },
+  {
+   "from": "placement-discrepancy:photo-discrepancy:ff51326279ba4a0d",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "placement-discrepancy:photo-discrepancy:ff51326279ba4a0d",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "discrepancy-source"
+  },
+  {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "placement-discrepancy:photo-discrepancy:70cf6dadd775a578",
+   "relation": "has-discrepancy"
+  },
+  {
+   "from": "placement-discrepancy:photo-discrepancy:70cf6dadd775a578",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "placement-discrepancy:photo-discrepancy:70cf6dadd775a578",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "discrepancy-source"
+  },
+  {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "placement-discrepancy:photo-discrepancy:6febefd118d6f5c9",
+   "relation": "has-discrepancy"
+  },
+  {
+   "from": "placement-discrepancy:photo-discrepancy:6febefd118d6f5c9",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "placement-discrepancy:photo-discrepancy:6febefd118d6f5c9",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "discrepancy-source"
+  },
+  {
    "from": "task:middle-pool-south-forecourt",
    "to": "model:middle_pool_south_gate.json:middle-pool-south-gate",
    "relation": "changes-feature"
@@ -100886,6 +103739,1206 @@
    "from": "photo-request:picasso-lane",
    "to": "area:picasso",
    "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-east-tongue",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-east-tongue",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-east-tongue",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-east-tongue",
+   "to": "model:pool:north",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-east-tongue",
+   "to": "model:pool_decks.json:north-deck",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-east-tongue",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-southwest-spur",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-southwest-spur",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-southwest-spur",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-southwest-spur",
+   "to": "model:pool:north",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-southwest-spur",
+   "to": "model:pool_decks.json:north-deck",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-southwest-spur",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-north-steps",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-north-steps",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-north-steps",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-north-steps",
+   "to": "model:pool:north",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-north-steps",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-water-look",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-water-look",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-water-look",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-water-look",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-water-look",
+   "to": "model:pool:north",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-water-look",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-look",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-look",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-look",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-look",
+   "to": "model:pool_decks.json:north-deck",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-look",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-glass-fence",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-glass-fence",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-glass-fence",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-glass-fence",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-glass-fence",
+   "to": "model:pool:north",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-glass-fence",
+   "to": "model:pool_decks.json:north-deck",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-pump-box-position",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pump-box-position",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pump-box-position",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pump-box-position",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-ladder-east-position",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-ladder-east-position",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-ladder-east-position",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-ladder-east-position",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-east-position",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-east-position",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-east-position",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-east-position",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-north-position",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-north-position",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-north-position",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-north-position",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-life-ring-north-position",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-showers",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-showers",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-showers",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pool-showers",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-pole-east",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-pole-east",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-pole-east",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-deck-pole-east",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-grate-slab",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-grate-slab",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-grate-slab",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-grate-slab",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-covers",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-covers",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-covers",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-covers",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-look",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-look",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-look",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-lawn-look",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-look",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-look",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-look",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-look",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-west-extra",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-west-extra",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-west-extra",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-strelitzia-west-extra",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-position",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-position",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-position",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-position",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-look",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-look",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-look",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-feathery-tree-look",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-west-terrace-tree",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-west-terrace-tree",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-west-terrace-tree",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-west-terrace-tree",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-pollarded-tree",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-pollarded-tree",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pollarded-tree",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-pollarded-tree",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-yucca-position",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-yucca-position",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-yucca-position",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-hedges",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-hedges",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-hedges",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-hedges",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-hedges",
+   "to": "model:raised_terraces.json:north-pool-north-patios",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-hedges",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-foreground-hedges",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-foreground-hedges",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-foreground-hedges",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-foreground-hedges",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-foreground-hedges",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-facades",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-facades",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-facades",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-facades",
+   "to": "model:building:6266601UF1366N_part4",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-facades",
+   "to": "model:building:6165501UF1366N_part5",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-facades",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-west-gardens",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-west-gardens",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-west-gardens",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-bougainvillea-west-gardens",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-climbers-west-wall",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-climbers-west-wall",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-climbers-west-wall",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-climbers-west-wall",
+   "to": "model:building:6265201UF1366N_part3",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-climbers-west-wall",
+   "to": "model:raised_terraces.json:north-pool-west-terrace",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-climbers-west-wall",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-north-patio",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-north-patio",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-north-patio",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-north-patio",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-terrace",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-terrace",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-terrace",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-terrace",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-row-patio",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-row-patio",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-west-row-patio",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-lilac-west-garden",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-lilac-west-garden",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-lilac-west-garden",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-lilac-east",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-lilac-east",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-parasol-lilac-east",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-passage-canopy",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-passage-canopy",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-passage-canopy",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-passage-canopy",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-blue",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-blue",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-blue",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-blue",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-blue",
+   "to": "model:building:6165501UF1366N_part5",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-blue",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-awnings-north-east",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-awnings-north-east",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-awnings-north-east",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-awnings-north-east",
+   "to": "model:building:6266601UF1366N_part4",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-awnings-north-east",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-west-extra",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-west-extra",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-west-extra",
+   "to": "model:building:6165501UF1366N_part2",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-awning-west-extra",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-patio-furniture",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-patio-furniture",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-patio-furniture",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-patio-furniture",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-patio-furniture",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-white-post-east",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-white-post-east",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-white-post-east",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-west-wall-south-end",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-west-wall-south-end",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-west-wall-south-end",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-west-wall-south-end",
+   "to": "model:raised_terraces.json:north-pool-west-terrace",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-west-wall-south-end",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-north-plinth-frontage",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-north-plinth-frontage",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-plinth-frontage",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-plinth-frontage",
+   "to": "model:raised_terraces.json:north-pool-north-patios",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-plinth-frontage",
+   "to": "model:north_pool_gardens.json:north-pool-lawn-path",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-plinth-frontage",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-line",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-line",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-line",
+   "to": "model:street:isabel",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-line",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-paving",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-paving",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-paving",
+   "to": "model:street:isabel",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-isabel-path-paving",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-east-gate",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-east-gate",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-east-gate",
+   "to": "model:street:isabel",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-east-gate",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "model:raised_terraces.json:north-pool-north-patios",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "model:raised_terraces.json:north-pool-west-terrace",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-patio-paving",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-gates",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-gates",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-gates",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-camera-building-form",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-camera-building-form",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-camera-building-form",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-camera-building-form",
+   "to": "model:building:6265201UF1366N_part3",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-camera-building-form",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-north-row-openings",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-north-row-openings",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-row-openings",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-row-openings",
+   "to": "model:building:6266601UF1366N_part4",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-row-openings",
+   "to": "model:building:6165501UF1366N_part5",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-row-openings",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-north-east-balcony",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-north-east-balcony",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-east-balcony",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-north-east-balcony",
+   "to": "model:building:6266601UF1366N_part4",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-north-east-balcony",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-facade",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-facade",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-facade",
+   "to": "model:building:6165501UF1366N_part2",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-west-row-facade",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "model:building:6266601UF1366N_part4",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "model:building:6165501UF1366N_part5",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-roof-equipment",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-backdrop-trees",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-backdrop-trees",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-backdrop-trees",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-backdrop-trees",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-backdrop-trees",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-backdrop-trees",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "photo-discrepancy:np-mountains",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "photo-discrepancy:np-mountains",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-mountains",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "seen-in"
+  },
+  {
+   "from": "photo-discrepancy:np-mountains",
+   "to": "model:backdrop.json:photo-trees",
+   "relation": "concerns"
+  },
+  {
+   "from": "photo-discrepancy:np-mountains",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
   },
   {
    "to": "area:dali",

@@ -71,3 +71,13 @@ so photos indexed before this change rely on the solve and a loose 24 mm prior.
   (`docs/PLACEMENT_VERIFICATION.md`). The model export covers registry buildings, pool edges,
   street edges and the rendered edges of traced walls, steps, kerbs, beds and terraces; planting
   and other details are still compared by eye in the overlay.
+
+## From a pixel to the map, and recording differences
+
+`python3 scripts/pixel_to_map.py IMG_2204 1295 848` casts the ray through a pixel of a solved camera
+(same convention as `src/photo-camera.ts`) to the model ground (`siteY`, or `--ground model` for the
+exported scene ground, or `--height <y>` for a stated level) and prints the map position with an
+uncertainty from the solve's `sigma` (a conservative Monte Carlo: it ignores how the solved
+parameters are tied together). `scripts/compare_photo.py` writes the render, a 50% blend and a
+numbered side-by-side for each solved photo; every difference found goes into
+`data/discrepancies.json` (`docs/DISCREPANCIES.md`).

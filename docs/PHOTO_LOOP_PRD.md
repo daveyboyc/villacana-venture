@@ -76,6 +76,10 @@ demonstrated on the north pool.
 | `loop-camera-solving` | Semi-automatic camera solving; solve IMG_2207, IMG_2208 and every other north-pool photo that can be solved; record reasons for the rest. Re-run the comparison through the new cameras. | `loop-discrepancies` |
 | `loop-photo-intake` | One command (`scripts/photo_loop.py --area <id>`) and an agent recipe: new Drive photos are imported, tagged, solved, compared and turned into discrepancies and tasks. Documented for Dave as "upload, then ask an agent to run the loop". | all above |
 
+Delivered so far: `loop-discrepancies` (1 November 2026): `data/discrepancies.json` and
+`docs/DISCREPANCIES.md`, `scripts/pixel_to_map.py`, `scripts/compare_photo.py`, and the first
+north-pool comparison in `docs/reviews/loop-discrepancies/`.
+
 ## 5. Out of scope for now
 
 Walking and collision (paused), areas other than the north pool until the pilot loop

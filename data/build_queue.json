@@ -2346,8 +2346,10 @@
     "Standard handover checks pass"
    ],
    "dependsOn": [],
-   "status": "open",
-   "issue": 178
+   "status": "in-progress",
+   "issue": 178,
+   "owner": "Claude",
+   "notes": "Paused 1 November before verification: 52 north-pool discrepancies recorded, pixel-to-map script and test, comparison artifacts, graph/brief/scorecard/map wiring. Browser tests, CI and merge outstanding; see docs/STATUS.md."
   },
   {
    "id": "loop-measured-approval",

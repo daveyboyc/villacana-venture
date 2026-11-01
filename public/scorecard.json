@@ -165,7 +165,7 @@
     "placed": 6,
     "checks": {
      "matches": 0,
-     "differs": 0,
+     "differs": 3,
      "not-comparable": 7
     },
     "camerasSolved": 3,
@@ -185,12 +185,855 @@
    "placement": {
     "features": 9,
     "verified": 0,
-    "disputed": 0
+    "disputed": 1
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:ff51326279ba4a0d",
+     "feature": "pool_decks.json:north-deck"
+    },
+    {
+     "id": "photo-discrepancy:70cf6dadd775a578",
+     "feature": "pool_decks.json:north-deck"
+    },
+    {
+     "id": "photo-discrepancy:6febefd118d6f5c9",
+     "feature": "pool_decks.json:north-deck"
+    }
+   ],
+   "photoDiscrepancies": {
+    "open": 51,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 1,
+    "items": [
+     {
+      "id": "np-pool-east-tongue",
+      "label": "D1",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The pool's water edge turns square round a straight-edged deck tongue that reaches into the water east of the north steps, where the pump box stands (west tip marked +). The registry water ring is a smooth curve there, so the model draws water over most of the tongue and has no square corners.",
+      "at": [
+       -174.5,
+       20.2
+      ],
+      "uncertaintyM": 1.14,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-southwest-spur",
+      "label": "D2",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "On the south-west side a square-cornered deck spur carries the ladder (spur tip marked +); the model's water ring and deck curve smoothly there, so the spur and its straight sides are missing and the ladder is lost in the curve.",
+      "at": [
+       -177.28,
+       22.49
+      ],
+      "uncertaintyM": 1.09,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-north-steps",
+      "label": "D3",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The north steps are a rectangular bay inset in the pool wall with three visible white-nosed treads and a stainless step handrail at each end; the render shows only a faint translucent outline of the treads and no handrails at this distance.",
+      "at": [
+       -179.56,
+       17.47
+      ],
+      "uncertaintyM": 1.37,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-water-look",
+      "label": "D4",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The photo's water is a saturated mid-blue with a dark blue tiled band along the waterline and visible floor markings; the render's water is paler and greyer with only a thin dark line at the coping.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-deck-look",
+      "label": "D5",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The deck slabs are a greyer cream with dark weathering stains and fine joints, edged by rounded pale stones at the fence; the render's deck is a brighter, uniform yellow-cream with strongly drawn joints.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-glass-fence",
+      "label": "D6",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "wont-fix",
+      "description": "A frameless glass safety fence on steel spigots, with frosted bands, runs round the deck's outer edge in all three photos; the model has none.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pump-box-position",
+      "label": "D7",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The white pump box stands on the squared deck tongue against its outer edge by the fence (front foot marked +); the model's box (o4, -172.7, 20.2) sits about 1.5 m further west, on the curve where the photo shows the tongue's water edge.",
+      "at": [
+       -171.22,
+       20.1
+      ],
+      "uncertaintyM": 1.11,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-ladder-east-position",
+      "label": "D8",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The east ladder stands at the north-east corner of the tongue where it meets the curved wall (feet marked +); the model's ladder (o3, -174.0, 20.2) is about 3.5 m further south-west, on the curve below the pump box where the photo has no ladder.",
+      "at": [
+       -172.18,
+       17.24
+      ],
+      "uncertaintyM": 1.27,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-life-ring-east-position",
+      "label": "D9",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The east life ring hangs on a steel post at the fence north of the pump box (post foot marked +); the model's ring (o6, -170.7, 21.7) is about 5 m further south, south-east of the box.",
+      "at": [
+       -170.99,
+       16.46
+      ],
+      "uncertaintyM": 1.31,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-life-ring-north-position",
+      "label": "D10",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The north life ring's post stands at the fence just west of the step handrail (post foot marked +), about 1.2 m south of the model's ring (o5, -180.2, 16.4); all three cameras agree to 0.7 m.",
+      "at": [
+       -180.48,
+       17.57
+      ],
+      "uncertaintyM": 1.41,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-showers",
+      "label": "D11",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Two chrome pool showers stand in front of a frosted glass screen at the north entrance to the fence (feet marked +); the model has neither the showers nor the screen.",
+      "at": [
+       -178.38,
+       14.75
+      ],
+      "uncertaintyM": 1.52,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-deck-pole-east",
+      "label": "D12",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A tall goose-neck stainless pole (a shower or ring post) rises from the deck edge just south of the pump box (foot marked +); not in the model.",
+      "at": [
+       -170.73,
+       22.57
+      ],
+      "uncertaintyM": 0.98,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-lawn-grate-slab",
+      "label": "D13",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A rectangular stone slab with a grate is set in the lawn just outside the east fence (centre marked +); not in the model.",
+      "at": [
+       -169.62,
+       17.97
+      ],
+      "uncertaintyM": 1.21,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-lawn-covers",
+      "label": "D14",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Small dark square inspection or irrigation covers are set in the lawn round the pool (four in IMG_2204; the one marked + is east of the pool); none in the model.",
+      "at": [
+       -167.66,
+       14.71
+      ],
+      "uncertaintyM": 1.41,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-lawn-look",
+      "label": "D15",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The lawn is a dense mown sward with brown worn patches and mowing stripes, darker under the trees; the render's lawn is an even bright green scattered with dark tufts.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-strelitzia-look",
+      "label": "D16",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The giant strelitzia south of the pool is two tall stems (the western one about 6 m) with long split paddle leaves over a dark mulch bed; the model's clump (calle-elena-9) is five thin stems about half as tall. Its position agrees to about 0.5 m (base marked +).",
+      "at": [
+       -178.43,
+       26.39
+      ],
+      "uncertaintyM": 0.96,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-strelitzia-west-extra",
+      "label": "D17",
+      "area": "north-pool",
+      "kind": "extra",
+      "status": "open",
+      "description": "The model draws two more strelitzia clumps (o7, o8) on the lawn by the west curved wall, in front of the tiled stair; both photos show open lawn there.",
+      "at": [
+       -185.05,
+       23.2
+      ],
+      "uncertaintyM": 0.8,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-feathery-tree-position",
+      "label": "D18",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The light, feathery-leaved small tree by the north-east lawn path (trunk foot marked +) stands about 3 m north-east of the model's tree o9 (-170.7, 13.1); both cameras agree to 0.5 m.",
+      "at": [
+       -168.29,
+       11.05
+      ],
+      "uncertaintyM": 1.69,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-feathery-tree-look",
+      "label": "D19",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The same tree is a slim trunk under an open, rounded crown of fine light-green pinnate leaves; the render draws it as a dark flat-topped umbrella crown on a thick forked trunk.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-west-terrace-tree",
+      "label": "D20",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A large spreading fine-leaved tree leans over the north-west raised terrace (trunk foot on the terrace floor marked +); the model leaves it out (known gap).",
+      "at": [
+       -193.8,
+       20.21
+      ],
+      "uncertaintyM": 2.19,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pollarded-tree",
+      "label": "D21",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The pollarded tree in the north patio (trunk foot on the patio floor marked +) stands about 2.4 m east of the model's o12 (-177.7, 7.1), and it is bare knobbly stumps with no leaves, where the model draws a crown in leaf.",
+      "at": [
+       -175.3,
+       7.01
+      ],
+      "uncertaintyM": 2.21,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-yucca-position",
+      "label": "D22",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "A big multi-trunk yucca, 5-6 m tall, stands east of the lawn (trunks meet at the + mark); the model's yucca o13 is about 6 m further south by the camera building, and its feathery tree o10 (-163.7, 17.1) would stand inside this yucca's crown, where no such tree shows.",
+      "at": [
+       -164.7,
+       22.41
+      ],
+      "uncertaintyM": 1.09,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-north-patio-hedges",
+      "label": "D23",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The north patios are fronted by tall continuous clipped hedges, about 1 m high, with red hibiscus flowers, on the low plinth walls; the render shows a row of separate small round shrubs.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-foreground-hedges",
+      "label": "D24",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The hedges below the camera are low clipped hedges (about 1 m) with a few red and pink flowers, with the crazy-paving lawn path and lawn showing between them; the model's hibiscus hedge row (o14-o25) draws mounds two to three times as tall and wide that hide the path and the lawn edge.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-bougainvillea-facades",
+      "label": "D25",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Magenta bougainvillea climbs the north and north-west facades in at least five places (two in IMG_2205); the model has a single bougainvillea card, on the middle house.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-bougainvillea-west-gardens",
+      "label": "D26",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A large bougainvillea covers the gate piers of the west-row front gardens and another flowers in the left foreground of IMG_2204; neither is in the model.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-climbers-west-wall",
+      "label": "D27",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A dense climbing plant covers the wall of the house beside the camera down to the garden, with blue plumbago and agapanthus in the bed below, and blue hydrangea and plumbago bushes stand on the north-west terrace; the model has bare walls and beds there.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-north-patio",
+      "label": "D28",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A large grey parasol shades loungers on the north patio west of the pollarded tree (pole foot on the patio floor marked +); the model has no parasol there.",
+      "at": [
+       -179.79,
+       7.43
+      ],
+      "uncertaintyM": 2.2,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-west-terrace",
+      "label": "D29",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A folded white parasol stands beside a white table on the house patio at the top of the tiled stair (foot on the terrace floor marked +); not in the model.",
+      "at": [
+       -193.78,
+       13.7
+      ],
+      "uncertaintyM": 2.68,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-west-row-patio",
+      "label": "D30",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A folded white parasol and a black bistro table with chairs stand on the patio in front of the west-row house (parasol foot marked +); not in the model.",
+      "at": [
+       -198.12,
+       24.22
+      ],
+      "uncertaintyM": 1.71,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-lilac-west-garden",
+      "label": "D31",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A lilac parasol shades a terracotta patio inside a walled front garden of the west row (canopy centre marked +, cast at an assumed 2.2 m above the garden); not in the model.",
+      "at": [
+       -181.76,
+       32.71
+      ],
+      "uncertaintyM": 1.52,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-lilac-east",
+      "label": "D32",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A lilac parasol stands behind the big yucca on the east side (canopy marked +, cast at an assumed 2.2 m above the ground); not in the model.",
+      "at": [
+       -158.97,
+       16.51
+      ],
+      "uncertaintyM": 2.7,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-passage-canopy",
+      "label": "D33",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A white arched hood shelters the entrance of the covered passage between the north-west and north rows (front edge marked +, cast at an assumed 2.4 m above the path); not in the model.",
+      "at": [
+       -182.04,
+       9.62
+      ],
+      "uncertaintyM": 3.93,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-awning-blue",
+      "label": "D34",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A blue-and-white striped awning runs over the ground-floor doors of the north-west row's middle house (front edge marked +, cast at an assumed 2.6 m above the patio); not in the model.",
+      "at": [
+       -186.59,
+       8.66
+      ],
+      "uncertaintyM": 4.72,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-awnings-north-east",
+      "label": "D35",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "White retractable awnings run over the two north patios east of the passage (front edges marked +); the model has one shorter cream awning, further west over the middle door, and none over the eastern patio.",
+      "at": [
+       -174.82,
+       8.1
+      ],
+      "uncertaintyM": 3.66,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-awning-west-extra",
+      "label": "D36",
+      "area": "north-pool",
+      "kind": "extra",
+      "status": "open",
+      "description": "The render puts a cream awning and a wide iron balcony over the west-row house door facing the pool; the photo shows no awning there and only small iron balconies.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-patio-furniture",
+      "label": "D37",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Garden furniture stands on every patio: a white table and six chairs on the terracotta patio of the north-west terrace (marked +), white dining sets and loungers on the north patios, and more on the north-east patio; the model has none.",
+      "at": [
+       -195.81,
+       17.61
+      ],
+      "uncertaintyM": 2.67,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-white-post-east",
+      "label": "D38",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A tall white column, probably a furled parasol in its cover, stands by the hedge east of the lawn beside the yucca (foot marked +); not in the model.",
+      "at": [
+       -166.34,
+       25.76
+      ],
+      "uncertaintyM": 1.04,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-west-wall-south-end",
+      "label": "D39",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The curved retaining wall of the north-west terrace carries on round to the south-east, to about the + mark, before it meets the lawn path; the model's wall stops about 2 m short at (-190.45, 24.6). Further north IMG_2206 puts the wall foot within 0.3 m of the model, while IMG_2204 (base partly hidden by the hedge) puts it about 1 m east.",
+      "at": [
+       -187.92,
+       26.2
+      ],
+      "uncertaintyM": 1.5,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-north-plinth-frontage",
+      "label": "D40",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The low white plinth walls of the north patios, their white-step openings and the lawn-edge path in front of them stand about 1.5-2.5 m further north than modelled: the middle step opening (marked +) is near (-174.6, 9.0), the model's at (-173.3, 11.1), and the lawn edge in IMG_2204 meets the path near z 10.8 where the model's path is at z 12-12.9.",
+      "at": [
+       -174.64,
+       9.02
+      ],
+      "uncertaintyM": 1.84,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-isabel-path-line",
+      "label": "D41",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The crazy-paving path east of the lawn curves from the black iron gate in the north-east corner down to the lawn (centre marked +); at its north end it runs about 1.5 m east of the mapped Isabel line, which kinks where the photo path curves.",
+      "at": [
+       -164.11,
+       11.02
+      ],
+      "uncertaintyM": 1.77,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-isabel-path-paving",
+      "label": "D42",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "That path is irregular pale crazy paving flush with the lawn; the render draws it as a terracotta-tiled path with raised red kerbs.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-east-gate",
+      "label": "D43",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A black iron gate closes the opening in the white wall at the north-east corner of the lawn, where the path leaves (foot marked +); the model has no gate there.",
+      "at": [
+       -161.87,
+       6.87
+      ],
+      "uncertaintyM": 1.86,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-north-patio-paving",
+      "label": "D44",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The north and north-west patios and the passage floor are pale stone and crazy paving (one small terracotta-tiled patio under the table on the north-west terrace); the render paves them in bright terracotta tiles.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-west-row-gates",
+      "label": "D45",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The west-row front gardens are entered through flat-capped white rendered gate piers with brown plank doors (door foot marked +); the model has a round white arch at the gate point (-188.76, 27.5) and plain white walls.",
+      "at": [
+       -183.37,
+       30.69
+      ],
+      "uncertaintyM": 1.12,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-camera-building-form",
+      "label": "D46",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The building the photos were taken from (6265201UF1366N_part3) rises higher: a white parapet and chimney block stands beside the lens and the camera looks over its barrel-tile roof edge; the model's building is lower, with a flat white roof, a tiled porch canopy on timber posts in front of the camera and a large shuttered window on a wall the photo shows blank.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-north-row-openings",
+      "label": "D47",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The north and north-west row openings are tall rectangles with louvred brown shutters under moulded white hoods and a moulded ledge between the floors; the render gives most of them round-arched heads and plain wall.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-north-east-balcony",
+      "label": "D48",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The north-east house has a projecting first-floor balcony with a solid white moulded front; the render has an open iron railing there with an awning below.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-west-row-facade",
+      "label": "D49",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The west-row house facing the pool has tall shuttered windows, two small iron balconies and a brown garden door; the render has two round-arched windows over one wide iron balcony.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-roof-equipment",
+      "label": "D50",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "The roofs carry two white water tanks, a black chimney flue, solar panels, a satellite dish, air-conditioning units and chimney caps; the model's roofs are bare.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-backdrop-trees",
+      "label": "D51",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "Over the roofs the photos show tall eucalyptus with bare trunks over the west wall, dark umbrella pines and palms; the render draws rounded dense green blobs and flat light-green umbrella crowns, brighter and smoother than the photos.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-mountains",
+      "label": "D52",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The mountains show nearer green foothills, a sharp peaked summit and cloud on the ridge; the render's ridge is one flat blue-grey band with a softer summit.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     }
+    ]
+   },
    "tasks": {
-    "open": 6,
-    "inProgress": 3,
+    "open": 5,
+    "inProgress": 4,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
@@ -210,7 +1053,8 @@
     "Photos: 12, 6 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
     "How sure: 6 photographed, 2 estimated, 1 inferred, 1 known gap.",
-    "Placement: 0 of 9 features verified."
+    "Differences from the photos: 51 open, 0 fixed awaiting review, 0 closed, 1 won't fix.",
+    "Placement: 0 of 9 features verified, 3 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -316,6 +1160,13 @@
      "feature": "middle_pool_south_gate.json:middle-pool-south-forecourt"
     }
    ],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 2,
     "inProgress": 2,
@@ -403,6 +1254,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 0,
@@ -505,6 +1363,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 3,
@@ -647,6 +1512,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 6,
     "inProgress": 3,
@@ -788,6 +1660,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 3,
     "inProgress": 1,
@@ -926,6 +1805,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 0,
@@ -1010,6 +1896,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 0,
@@ -1111,6 +2004,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 0,
@@ -1227,6 +2127,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 0,
@@ -1337,6 +2244,13 @@
      "feature": "silvia_tunnel.json:silvia-tunnel-study"
     }
    ],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 2,
     "inProgress": 7,
@@ -1456,6 +2370,13 @@
      "feature": "barraka_boardwalk.json:barraka-boardwalk"
     }
    ],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 2,
     "inProgress": 1,
@@ -1554,6 +2475,13 @@
     "disputed": 0
    },
    "discrepancies": [],
+   "photoDiscrepancies": {
+    "open": 0,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 0,
+    "items": []
+   },
    "tasks": {
     "open": 1,
     "inProgress": 2,
@@ -1659,7 +2587,7 @@
     "placed": 165,
     "checks": {
      "matches": 2,
-     "differs": 2,
+     "differs": 5,
      "not-comparable": 35
     },
     "camerasSolved": 7,
@@ -1686,7 +2614,7 @@
    "placement": {
     "features": 385,
     "verified": 0,
-    "disputed": 6
+    "disputed": 7
    },
    "discrepancies": [
     {
@@ -1724,11 +2652,853 @@
     {
      "id": "photo-discrepancy:9579a59d07ca4c03",
      "feature": "middle_pool_south_gate.json:middle-pool-south-forecourt"
+    },
+    {
+     "id": "photo-discrepancy:ff51326279ba4a0d",
+     "feature": "pool_decks.json:north-deck"
+    },
+    {
+     "id": "photo-discrepancy:70cf6dadd775a578",
+     "feature": "pool_decks.json:north-deck"
+    },
+    {
+     "id": "photo-discrepancy:6febefd118d6f5c9",
+     "feature": "pool_decks.json:north-deck"
     }
    ],
+   "photoDiscrepancies": {
+    "open": 51,
+    "fixed": 0,
+    "closed": 0,
+    "wontFix": 1,
+    "items": [
+     {
+      "id": "np-pool-east-tongue",
+      "label": "D1",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The pool's water edge turns square round a straight-edged deck tongue that reaches into the water east of the north steps, where the pump box stands (west tip marked +). The registry water ring is a smooth curve there, so the model draws water over most of the tongue and has no square corners.",
+      "at": [
+       -174.5,
+       20.2
+      ],
+      "uncertaintyM": 1.14,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-southwest-spur",
+      "label": "D2",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "On the south-west side a square-cornered deck spur carries the ladder (spur tip marked +); the model's water ring and deck curve smoothly there, so the spur and its straight sides are missing and the ladder is lost in the curve.",
+      "at": [
+       -177.28,
+       22.49
+      ],
+      "uncertaintyM": 1.09,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-north-steps",
+      "label": "D3",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The north steps are a rectangular bay inset in the pool wall with three visible white-nosed treads and a stainless step handrail at each end; the render shows only a faint translucent outline of the treads and no handrails at this distance.",
+      "at": [
+       -179.56,
+       17.47
+      ],
+      "uncertaintyM": 1.37,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-water-look",
+      "label": "D4",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The photo's water is a saturated mid-blue with a dark blue tiled band along the waterline and visible floor markings; the render's water is paler and greyer with only a thin dark line at the coping.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-deck-look",
+      "label": "D5",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The deck slabs are a greyer cream with dark weathering stains and fine joints, edged by rounded pale stones at the fence; the render's deck is a brighter, uniform yellow-cream with strongly drawn joints.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-glass-fence",
+      "label": "D6",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "wont-fix",
+      "description": "A frameless glass safety fence on steel spigots, with frosted bands, runs round the deck's outer edge in all three photos; the model has none.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pump-box-position",
+      "label": "D7",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The white pump box stands on the squared deck tongue against its outer edge by the fence (front foot marked +); the model's box (o4, -172.7, 20.2) sits about 1.5 m further west, on the curve where the photo shows the tongue's water edge.",
+      "at": [
+       -171.22,
+       20.1
+      ],
+      "uncertaintyM": 1.11,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-ladder-east-position",
+      "label": "D8",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The east ladder stands at the north-east corner of the tongue where it meets the curved wall (feet marked +); the model's ladder (o3, -174.0, 20.2) is about 3.5 m further south-west, on the curve below the pump box where the photo has no ladder.",
+      "at": [
+       -172.18,
+       17.24
+      ],
+      "uncertaintyM": 1.27,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-life-ring-east-position",
+      "label": "D9",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The east life ring hangs on a steel post at the fence north of the pump box (post foot marked +); the model's ring (o6, -170.7, 21.7) is about 5 m further south, south-east of the box.",
+      "at": [
+       -170.99,
+       16.46
+      ],
+      "uncertaintyM": 1.31,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-life-ring-north-position",
+      "label": "D10",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The north life ring's post stands at the fence just west of the step handrail (post foot marked +), about 1.2 m south of the model's ring (o5, -180.2, 16.4); all three cameras agree to 0.7 m.",
+      "at": [
+       -180.48,
+       17.57
+      ],
+      "uncertaintyM": 1.41,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pool-showers",
+      "label": "D11",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Two chrome pool showers stand in front of a frosted glass screen at the north entrance to the fence (feet marked +); the model has neither the showers nor the screen.",
+      "at": [
+       -178.38,
+       14.75
+      ],
+      "uncertaintyM": 1.52,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-deck-pole-east",
+      "label": "D12",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A tall goose-neck stainless pole (a shower or ring post) rises from the deck edge just south of the pump box (foot marked +); not in the model.",
+      "at": [
+       -170.73,
+       22.57
+      ],
+      "uncertaintyM": 0.98,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-lawn-grate-slab",
+      "label": "D13",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A rectangular stone slab with a grate is set in the lawn just outside the east fence (centre marked +); not in the model.",
+      "at": [
+       -169.62,
+       17.97
+      ],
+      "uncertaintyM": 1.21,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-lawn-covers",
+      "label": "D14",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Small dark square inspection or irrigation covers are set in the lawn round the pool (four in IMG_2204; the one marked + is east of the pool); none in the model.",
+      "at": [
+       -167.66,
+       14.71
+      ],
+      "uncertaintyM": 1.41,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-lawn-look",
+      "label": "D15",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The lawn is a dense mown sward with brown worn patches and mowing stripes, darker under the trees; the render's lawn is an even bright green scattered with dark tufts.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-strelitzia-look",
+      "label": "D16",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The giant strelitzia south of the pool is two tall stems (the western one about 6 m) with long split paddle leaves over a dark mulch bed; the model's clump (calle-elena-9) is five thin stems about half as tall. Its position agrees to about 0.5 m (base marked +).",
+      "at": [
+       -178.43,
+       26.39
+      ],
+      "uncertaintyM": 0.96,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-strelitzia-west-extra",
+      "label": "D17",
+      "area": "north-pool",
+      "kind": "extra",
+      "status": "open",
+      "description": "The model draws two more strelitzia clumps (o7, o8) on the lawn by the west curved wall, in front of the tiled stair; both photos show open lawn there.",
+      "at": [
+       -185.05,
+       23.2
+      ],
+      "uncertaintyM": 0.8,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-feathery-tree-position",
+      "label": "D18",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The light, feathery-leaved small tree by the north-east lawn path (trunk foot marked +) stands about 3 m north-east of the model's tree o9 (-170.7, 13.1); both cameras agree to 0.5 m.",
+      "at": [
+       -168.29,
+       11.05
+      ],
+      "uncertaintyM": 1.69,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-feathery-tree-look",
+      "label": "D19",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The same tree is a slim trunk under an open, rounded crown of fine light-green pinnate leaves; the render draws it as a dark flat-topped umbrella crown on a thick forked trunk.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-west-terrace-tree",
+      "label": "D20",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A large spreading fine-leaved tree leans over the north-west raised terrace (trunk foot on the terrace floor marked +); the model leaves it out (known gap).",
+      "at": [
+       -193.8,
+       20.21
+      ],
+      "uncertaintyM": 2.19,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-pollarded-tree",
+      "label": "D21",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The pollarded tree in the north patio (trunk foot on the patio floor marked +) stands about 2.4 m east of the model's o12 (-177.7, 7.1), and it is bare knobbly stumps with no leaves, where the model draws a crown in leaf.",
+      "at": [
+       -175.3,
+       7.01
+      ],
+      "uncertaintyM": 2.21,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-yucca-position",
+      "label": "D22",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "A big multi-trunk yucca, 5-6 m tall, stands east of the lawn (trunks meet at the + mark); the model's yucca o13 is about 6 m further south by the camera building, and its feathery tree o10 (-163.7, 17.1) would stand inside this yucca's crown, where no such tree shows.",
+      "at": [
+       -164.7,
+       22.41
+      ],
+      "uncertaintyM": 1.09,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-north-patio-hedges",
+      "label": "D23",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The north patios are fronted by tall continuous clipped hedges, about 1 m high, with red hibiscus flowers, on the low plinth walls; the render shows a row of separate small round shrubs.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-foreground-hedges",
+      "label": "D24",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The hedges below the camera are low clipped hedges (about 1 m) with a few red and pink flowers, with the crazy-paving lawn path and lawn showing between them; the model's hibiscus hedge row (o14-o25) draws mounds two to three times as tall and wide that hide the path and the lawn edge.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-bougainvillea-facades",
+      "label": "D25",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Magenta bougainvillea climbs the north and north-west facades in at least five places (two in IMG_2205); the model has a single bougainvillea card, on the middle house.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-bougainvillea-west-gardens",
+      "label": "D26",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A large bougainvillea covers the gate piers of the west-row front gardens and another flowers in the left foreground of IMG_2204; neither is in the model.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-climbers-west-wall",
+      "label": "D27",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A dense climbing plant covers the wall of the house beside the camera down to the garden, with blue plumbago and agapanthus in the bed below, and blue hydrangea and plumbago bushes stand on the north-west terrace; the model has bare walls and beds there.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-north-patio",
+      "label": "D28",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A large grey parasol shades loungers on the north patio west of the pollarded tree (pole foot on the patio floor marked +); the model has no parasol there.",
+      "at": [
+       -179.79,
+       7.43
+      ],
+      "uncertaintyM": 2.2,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-west-terrace",
+      "label": "D29",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A folded white parasol stands beside a white table on the house patio at the top of the tiled stair (foot on the terrace floor marked +); not in the model.",
+      "at": [
+       -193.78,
+       13.7
+      ],
+      "uncertaintyM": 2.68,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-west-row-patio",
+      "label": "D30",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A folded white parasol and a black bistro table with chairs stand on the patio in front of the west-row house (parasol foot marked +); not in the model.",
+      "at": [
+       -198.12,
+       24.22
+      ],
+      "uncertaintyM": 1.71,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-lilac-west-garden",
+      "label": "D31",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A lilac parasol shades a terracotta patio inside a walled front garden of the west row (canopy centre marked +, cast at an assumed 2.2 m above the garden); not in the model.",
+      "at": [
+       -181.76,
+       32.71
+      ],
+      "uncertaintyM": 1.52,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-parasol-lilac-east",
+      "label": "D32",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A lilac parasol stands behind the big yucca on the east side (canopy marked +, cast at an assumed 2.2 m above the ground); not in the model.",
+      "at": [
+       -158.97,
+       16.51
+      ],
+      "uncertaintyM": 2.7,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-passage-canopy",
+      "label": "D33",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A white arched hood shelters the entrance of the covered passage between the north-west and north rows (front edge marked +, cast at an assumed 2.4 m above the path); not in the model.",
+      "at": [
+       -182.04,
+       9.62
+      ],
+      "uncertaintyM": 3.93,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-awning-blue",
+      "label": "D34",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A blue-and-white striped awning runs over the ground-floor doors of the north-west row's middle house (front edge marked +, cast at an assumed 2.6 m above the patio); not in the model.",
+      "at": [
+       -186.59,
+       8.66
+      ],
+      "uncertaintyM": 4.72,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-awnings-north-east",
+      "label": "D35",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "White retractable awnings run over the two north patios east of the passage (front edges marked +); the model has one shorter cream awning, further west over the middle door, and none over the eastern patio.",
+      "at": [
+       -174.82,
+       8.1
+      ],
+      "uncertaintyM": 3.66,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-awning-west-extra",
+      "label": "D36",
+      "area": "north-pool",
+      "kind": "extra",
+      "status": "open",
+      "description": "The render puts a cream awning and a wide iron balcony over the west-row house door facing the pool; the photo shows no awning there and only small iron balconies.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-patio-furniture",
+      "label": "D37",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "Garden furniture stands on every patio: a white table and six chairs on the terracotta patio of the north-west terrace (marked +), white dining sets and loungers on the north patios, and more on the north-east patio; the model has none.",
+      "at": [
+       -195.81,
+       17.61
+      ],
+      "uncertaintyM": 2.67,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-white-post-east",
+      "label": "D38",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A tall white column, probably a furled parasol in its cover, stands by the hedge east of the lawn beside the yucca (foot marked +); not in the model.",
+      "at": [
+       -166.34,
+       25.76
+      ],
+      "uncertaintyM": 1.04,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-west-wall-south-end",
+      "label": "D39",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The curved retaining wall of the north-west terrace carries on round to the south-east, to about the + mark, before it meets the lawn path; the model's wall stops about 2 m short at (-190.45, 24.6). Further north IMG_2206 puts the wall foot within 0.3 m of the model, while IMG_2204 (base partly hidden by the hedge) puts it about 1 m east.",
+      "at": [
+       -187.92,
+       26.2
+      ],
+      "uncertaintyM": 1.5,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-north-plinth-frontage",
+      "label": "D40",
+      "area": "north-pool",
+      "kind": "position",
+      "status": "open",
+      "description": "The low white plinth walls of the north patios, their white-step openings and the lawn-edge path in front of them stand about 1.5-2.5 m further north than modelled: the middle step opening (marked +) is near (-174.6, 9.0), the model's at (-173.3, 11.1), and the lawn edge in IMG_2204 meets the path near z 10.8 where the model's path is at z 12-12.9.",
+      "at": [
+       -174.64,
+       9.02
+      ],
+      "uncertaintyM": 1.84,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-isabel-path-line",
+      "label": "D41",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The crazy-paving path east of the lawn curves from the black iron gate in the north-east corner down to the lawn (centre marked +); at its north end it runs about 1.5 m east of the mapped Isabel line, which kinks where the photo path curves.",
+      "at": [
+       -164.11,
+       11.02
+      ],
+      "uncertaintyM": 1.77,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-isabel-path-paving",
+      "label": "D42",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "That path is irregular pale crazy paving flush with the lawn; the render draws it as a terracotta-tiled path with raised red kerbs.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-east-gate",
+      "label": "D43",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "A black iron gate closes the opening in the white wall at the north-east corner of the lawn, where the path leaves (foot marked +); the model has no gate there.",
+      "at": [
+       -161.87,
+       6.87
+      ],
+      "uncertaintyM": 1.86,
+      "photos": [
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-north-patio-paving",
+      "label": "D44",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The north and north-west patios and the passage floor are pale stone and crazy paving (one small terracotta-tiled patio under the table on the north-west terrace); the render paves them in bright terracotta tiles.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-west-row-gates",
+      "label": "D45",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The west-row front gardens are entered through flat-capped white rendered gate piers with brown plank doors (door foot marked +); the model has a round white arch at the gate point (-188.76, 27.5) and plain white walls.",
+      "at": [
+       -183.37,
+       30.69
+      ],
+      "uncertaintyM": 1.12,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-camera-building-form",
+      "label": "D46",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The building the photos were taken from (6265201UF1366N_part3) rises higher: a white parapet and chimney block stands beside the lens and the camera looks over its barrel-tile roof edge; the model's building is lower, with a flat white roof, a tiled porch canopy on timber posts in front of the camera and a large shuttered window on a wall the photo shows blank.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-north-row-openings",
+      "label": "D47",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The north and north-west row openings are tall rectangles with louvred brown shutters under moulded white hoods and a moulded ledge between the floors; the render gives most of them round-arched heads and plain wall.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-north-east-balcony",
+      "label": "D48",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The north-east house has a projecting first-floor balcony with a solid white moulded front; the render has an open iron railing there with an awning below.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     },
+     {
+      "id": "np-west-row-facade",
+      "label": "D49",
+      "area": "north-pool",
+      "kind": "shape",
+      "status": "open",
+      "description": "The west-row house facing the pool has tall shuttered windows, two small iron balconies and a brown garden door; the render has two round-arched windows over one wide iron balcony.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-roof-equipment",
+      "label": "D50",
+      "area": "north-pool",
+      "kind": "missing",
+      "status": "open",
+      "description": "The roofs carry two white water tanks, a black chimney flue, solar panels, a satellite dish, air-conditioning units and chimney caps; the model's roofs are bare.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-backdrop-trees",
+      "label": "D51",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "Over the roofs the photos show tall eucalyptus with bare trunks over the west wall, dark umbrella pines and palms; the render draws rounded dense green blobs and flat light-green umbrella crowns, brighter and smoother than the photos.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2206.jpg"
+      ]
+     },
+     {
+      "id": "np-mountains",
+      "label": "D52",
+      "area": "north-pool",
+      "kind": "look",
+      "status": "open",
+      "description": "The mountains show nearer green foothills, a sharp peaked summit and cloud on the ridge; the render's ridge is one flat blue-grey band with a softer summit.",
+      "at": null,
+      "uncertaintyM": null,
+      "photos": [
+       "IMG_2204.jpg",
+       "IMG_2205.jpg"
+      ]
+     }
+    ]
+   },
    "tasks": {
-    "open": 34,
-    "inProgress": 25,
+    "open": 33,
+    "inProgress": 26,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1748,7 +3518,8 @@
     "Photos: 182, 165 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 56 photographed, 87 estimated, 9 inferred, 6 known gaps.",
-    "Placement: 0 of 385 features verified, 9 open discrepancies."
+    "Differences from the photos: 51 open, 0 fixed awaiting review, 0 closed, 1 won't fix.",
+    "Placement: 0 of 385 features verified, 12 open discrepancies."
    ],
    "light": {
     "colour": "red",
