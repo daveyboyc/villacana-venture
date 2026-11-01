@@ -2326,6 +2326,116 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "Step 1 done 31 October: photo-matched plaster, terracotta, crazy paving and barrel tiles (CC0 Poly Haven, recoloured; public/textures/CREDITS.md), kit balcony tiles rebuilt in the same colour. Step 2 done 1 November: 3D Strelitzia, clipped and flowering hedges, yucca and feather palm built in Blender (scripts/build_plants.py) replace the cards on larger screens. Renders and notes in docs/reviews/north-pool-detail-pilot. Step 3 done 1 November: stainless ladders, step handrails and life-ring posts built in Blender (scripts/build_pool_kit.py), bullnose coping, handrails at the straight north and south steps, and curved middle-pool steps (o26, steps.wallAt read by eye from IMG_2195; o27 drawn as the step handrail). The deck outline is left open in pool-deck-outline. Next: step 4, Google satellite and 3D tiles as comparison views. Step 4 done 1 November: measured deck band round the three small pools (pool-deck-outline), crisp curved edge with edging stones; the 2D map draws the same outline. Step 5 done 1 November: 3D trees built in Blender (scripts/build_trees.py: umbrella, Norfolk and eucalyptus with light distant versions, broadleaf, spreading and pollarded) replace the tree cards on larger screens; the backdrop (scripts/build_backdrop.py, data/backdrop.json) has 1,145 trees from photo rays, the aerial canopy and groves beyond, and a mountain ridge traced from IMG_2204-2206 through the solved camera. The spreading tree on the north-west terrace is located but blocked by the route-clearance guard (gap). Bougainvillea is still a card."
+  },
+  {
+   "id": "loop-discrepancies",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ],
+   "build": "Slice 1 of docs/PHOTO_LOOP_PRD.md. data/discrepancies.json (schema and checks) shown in refs/graph.json, area briefs, scorecard and map; a pixel-to-map script (solved camera ray to model ground or a stated height, with uncertainty); comparison artifacts per solved camera; a full comparison of IMG_2204-2206 recording every visible difference at the north pool, including the pool shape and squared deck tongue, the pump box position, and missing parasols, plants and trees.",
+   "avoid": "Walking and collision stay paused. Do not mark looks or placement as matching without the measured or reviewed evidence the PRD requires.",
+   "accept": [
+    "Every visible north-pool difference in IMG_2204-2206 recorded with photo region, map position and artifacts",
+    "Discrepancies shown in brief, scorecard and map",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "issue": 178
+  },
+  {
+   "id": "loop-measured-approval",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Photo-to-model loop: placement gate accepts measured, agent-reviewed changes",
+   "photos": [],
+   "build": "Slice 2 of docs/PHOTO_LOOP_PRD.md. placement_verification.py and check_placement_changes.py accept the 'Measured approval' records in docs/PLACEMENT_VERIFICATION.md (two solved cameras or one plus the aerial, rms <= 0.3 m with worst and held-out points, reviewed by a different agent). Stop flagging features whose geometry is unchanged when only shared renderer code changed.",
+   "avoid": "Walking and collision stay paused. Do not mark looks or placement as matching without the measured or reviewed evidence the PRD requires.",
+   "accept": [
+    "Tests: valid record accepted; self-review, single source, over-tolerance and stale records rejected",
+    "Renderer-only edits no longer flag unchanged features",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "issue": 179
+  },
+  {
+   "id": "loop-north-pool-fixes",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "build",
+   "title": "Photo-to-model loop: close the north-pool discrepancies with measured fixes",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ],
+   "build": "Slice 3 of docs/PHOTO_LOOP_PRD.md. Fix every open north-pool discrepancy, including the pool ring and squared deck tongue (the registry ring may change under measured approval), the pump box position, and the parasols, plants and trees; close each with re-renders, residuals and a second-agent review.",
+   "avoid": "Walking and collision stay paused. Do not mark looks or placement as matching without the measured or reviewed evidence the PRD requires.",
+   "accept": [
+    "No north-pool discrepancy open without a recorded reason",
+    "Placement gate green for the measured changes",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [
+    "loop-discrepancies",
+    "loop-measured-approval"
+   ],
+   "status": "open",
+   "issue": 180
+  },
+  {
+   "id": "loop-camera-solving",
+   "area": "north-pool",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Photo-to-model loop: semi-automatic camera solving for every north-pool photo",
+   "photos": [
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ],
+   "build": "Slice 4 of docs/PHOTO_LOOP_PRD.md. Propose photo-to-model correspondences automatically (pool rings, building corners, wall edges, aerial landmarks) for the agent to confirm; solve IMG_2207, IMG_2208 and every other solvable north-pool photo with held-out residuals; record reasons for the rest; compare through the new cameras.",
+   "avoid": "Walking and collision stay paused. Do not mark looks or placement as matching without the measured or reviewed evidence the PRD requires.",
+   "accept": [
+    "All solvable north-pool photos solved with held-out residuals",
+    "Their discrepancies recorded",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [
+    "loop-discrepancies"
+   ],
+   "status": "open",
+   "issue": 181
+  },
+  {
+   "id": "loop-photo-intake",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Photo-to-model loop: upload photos, then one command runs the loop",
+   "photos": [],
+   "build": "Slice 5 of docs/PHOTO_LOOP_PRD.md. scripts/photo_loop.py --area <id> and an agent recipe taking new Drive photos through import, tagging, solving, comparison, discrepancies and queue tasks; a short note for Dave on uploading and asking an agent to run the loop.",
+   "avoid": "Walking and collision stay paused. Do not mark looks or placement as matching without the measured or reviewed evidence the PRD requires.",
+   "accept": [
+    "A fresh north-pool batch runs end to end into discrepancies and tasks",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [
+    "loop-discrepancies",
+    "loop-measured-approval",
+    "loop-north-pool-fixes",
+    "loop-camera-solving"
+   ],
+   "status": "open",
+   "issue": 182
   }
  ]
 }

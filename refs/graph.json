@@ -42801,6 +42801,76 @@
    }
   },
   {
+   "id": "task:loop-discrepancies",
+   "kind": "build-task",
+   "name": "Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   },
+   "issue": 178
+  },
+  {
+   "id": "task:loop-measured-approval",
+   "kind": "build-task",
+   "name": "Photo-to-model loop: placement gate accepts measured, agent-reviewed changes",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   },
+   "issue": 179
+  },
+  {
+   "id": "task:loop-north-pool-fixes",
+   "kind": "build-task",
+   "name": "Photo-to-model loop: close the north-pool discrepancies with measured fixes",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": []
+   },
+   "issue": 180
+  },
+  {
+   "id": "task:loop-camera-solving",
+   "kind": "build-task",
+   "name": "Photo-to-model loop: semi-automatic camera solving for every north-pool photo",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   },
+   "issue": 181
+  },
+  {
+   "id": "task:loop-photo-intake",
+   "kind": "build-task",
+   "name": "Photo-to-model loop: upload photos, then one command runs the loop",
+   "priority": 1,
+   "status": "open",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   },
+   "issue": 182
+  },
+  {
    "id": "placement-discrepancy:barraka-planter-position",
    "kind": "placement-discrepancy",
    "feature": "barraka_boardwalk.json:barraka-sign-planter",
@@ -98807,6 +98877,31 @@
    "relation": "in-area"
   },
   {
+   "from": "task:loop-discrepancies",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:loop-measured-approval",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:loop-north-pool-fixes",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:loop-camera-solving",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "task:loop-photo-intake",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -99817,6 +99912,46 @@
    "relation": "builds-from"
   },
   {
+   "from": "task:loop-discrepancies",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-discrepancies",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-discrepancies",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-north-pool-fixes",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-north-pool-fixes",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-north-pool-fixes",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-camera-solving",
+   "to": "ref:IMG_2207.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:loop-camera-solving",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "builds-from"
+  },
+  {
    "from": "task:elena-east-patios",
    "to": "task:elena-garden-door",
    "relation": "depends-on"
@@ -100094,6 +100229,41 @@
   {
    "from": "task:pool-deck-outline",
    "to": "task:pool-detail",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-north-pool-fixes",
+   "to": "task:loop-discrepancies",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-north-pool-fixes",
+   "to": "task:loop-measured-approval",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-camera-solving",
+   "to": "task:loop-discrepancies",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-photo-intake",
+   "to": "task:loop-discrepancies",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-photo-intake",
+   "to": "task:loop-measured-approval",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-photo-intake",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "depends-on"
+  },
+  {
+   "from": "task:loop-photo-intake",
+   "to": "task:loop-camera-solving",
    "relation": "depends-on"
   },
   {
