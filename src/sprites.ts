@@ -1,6 +1,7 @@
 import { asset } from "./asset";
 import * as THREE from "three";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 /**
  * Painted sprites for plants. Each kind is a small picture drawn once onto a
@@ -8,6 +9,8 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
  *
  * Palms, hedges, bougainvillea and Strelitzia use an original photo-referenced
  * atlas; the procedural painters remain immediate fallbacks and fill other kinds.
+ * On larger screens the palms, Strelitzia, yucca and hedges are then replaced by
+ * 3D plants built in Blender (MODELS below).
  */
 export type SpriteKind =
   | "tree"
@@ -74,6 +77,38 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
   mesh.userData.spriteKind=kind;mesh.userData.spriteWidth=w;
   mesh.castShadow = shadow;
   scene.add(mesh);
+  // Where a 3D plant exists it replaces the cards once loaded, at the same places and sizes.
+  // Small screens keep the cards, as they keep the flat shutters instead of the facade kit.
+  if (MODELS[kind] && !matchMedia("(max-width:700px), (max-height:500px)").matches) void plantModel(kind).then((model) => {
+    if (!model || !mesh.parent) return;
+    const parent = mesh.parent, matrix = new THREE.Matrix4();
+    model.traverse((o) => {
+      const source = o as THREE.Mesh;
+      if (!source.isMesh) return;
+      const part = new THREE.InstancedMesh(source.geometry, source.material, mesh.count);
+      for (let i = 0; i < mesh.count; i++) { mesh.getMatrixAt(i, matrix); part.setMatrixAt(i, matrix.clone().multiply(source.matrixWorld)); }
+      part.computeBoundingSphere();
+      part.userData.spriteKind = kind; part.userData.spriteWidth = w;
+      part.castShadow = shadow; part.receiveShadow = true;
+      part.name = `plant:${kind}`;
+      parent.add(part);
+    });
+    parent.remove(mesh);
+  });
+}
+
+/** 3D plants built in Blender (scripts/build_plants.py), each the size of the card it replaces. */
+const MODELS: Partial<Record<SpriteKind, string>> = {
+  bird_of_paradise: "strelitzia", palm: "palm", yucca: "yucca", hedge: "hedge", hibiscus_hedge: "hibiscus-hedge",
+};
+const models = new Map<SpriteKind, Promise<THREE.Object3D | null>>();
+function plantModel(kind: SpriteKind): Promise<THREE.Object3D | null> {
+  let model = models.get(kind);
+  if (!model) {
+    model = new GLTFLoader().loadAsync(asset(`/models/plants/${MODELS[kind]}.glb`)).then((gltf) => { gltf.scene.updateMatrixWorld(true); return gltf.scene; }, () => null);
+    models.set(kind, model);
+  }
+  return model;
 }
 
 function rand(x: number, z: number): number {

@@ -54,3 +54,32 @@ the lawn path as crazy paving and the patios as tiled. Still different: the roof
 the photographer stands on in IMG_2205-2208 is flat in the model (a roof-form
 question, not a surface); walls lack the photos' weathering and parapet copings;
 planting and the backdrop are unchanged (step 2 and later).
+
+## Step 2: 3D planting (1 November 2026)
+
+The `-after` renders now include step 2. `scripts/build_plants.py` builds five plants
+headless in Blender, seeded so a rebuild is byte-identical, each at the size of the
+painted card it replaces (`public/models/plants/`, about 0.9 MB together):
+
+- **Strelitzia** (`strelitzia.glb`, 1,146 faces): seven grey stems carrying fans of
+  broad paddle leaves on stalks, some torn into strips, as beside the pool in
+  IMG_2204 and IMG_2206.
+- **Clipped hedge** (`hedge.glb`, 1,100 faces): a boxy rounded mound slightly wider
+  than the card, so neighbours along a wall join into a continuous hedge, covered in
+  900 small leaves in three greens over a dark shell.
+- **Flowering hedge** (`hibiscus-hedge.glb`, 1,210 faces): the same with 22 red
+  five-petalled hibiscus flowers, as in the hedge in front of the camera in IMG_2204.
+- **Yucca** (`yucca.glb`, 3,470 faces): five leaning trunks, each ending in a spiky
+  rosette over a skirt of dead leaves (the yucca by the east wall in IMG_2205).
+- **Feather palm** (`palm.glb`, 5,578 faces): a diamond-scarred trunk under a dense
+  dome of 44 arching fronds.
+
+`src/sprites.ts` swaps each kind's cards for instanced copies of its model once
+loaded, at the same positions, turns and scales; small screens keep the cards, as
+they keep the flat shutters. Bougainvillea, trees and grass stay as cards.
+
+Against the photos: the hedges now read as continuous clipped hedges with depth,
+the flowering one with red flowers, and the Strelitzia clumps as clumps of paddle
+leaves. Still different: the photo hedges are darker and more finely textured; the
+large tree and bougainvillea are still cards; the yucca and Strelitzia are original
+models of the species, not traced from the actual plants.
