@@ -1,7 +1,7 @@
 import {surfaceTexture} from "./materials";
 import { pointInRing } from "./geom";
 import * as THREE from "three";
-import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
+import { mergeGeometries, mergeVertices } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import type { Vec2 } from "./types";
 
 /** How far the pool floor is below the deck, in metres. */
@@ -103,7 +103,9 @@ function wallStrip(ring: Vec2[], top: number, bottom: number): THREE.BufferGeome
 
 /**
  * Slabs about 0.6 m long laid end to end round the ring with thin joints between
- * them, standing a little proud of the deck and overhanging the water by 3 cm.
+ * them, standing a little proud of the deck and overhanging the water by 3 cm, the
+ * edge over the water rounded into a bullnose as on the photographed copings
+ * (IMG_2195, IMG_2204): a plain vertical face under a quarter-round, then the flat top.
  */
 function copingSlabs(ring: Vec2[]): THREE.BufferGeometry[] {
   const inner = outset(ring, -0.03), outer = outset(ring, COPING);
@@ -118,18 +120,56 @@ function copingSlabs(ring: Vec2[]): THREE.BufferGeometry[] {
     const f = (t - lengths[i]) / (lengths[i + 1] - lengths[i] || 1), a = path[i], b = path[(i + 1) % n];
     return [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f];
   };
+  // Profile across the slab from the lip: (distance out from the lip, height); the last
+  // distance is replaced by the slab's own width where corners stretch it.
+  const top = 0.07, bottom = -0.03, r = 0.035, nose: [number, number][] = [[0, bottom]];
+  for (let k = 0; k <= 6; k++) { const a = (Math.PI / 2) * (k / 6); nose.push([r - r * Math.cos(a), top - r + r * Math.sin(a)]); }
+  nose.push([Infinity, top]);
   const slabs: THREE.BufferGeometry[] = [];
-  const height = 0.06;
   for (let k = 0; k < count; k++) {
     const s0 = (k / count) * total + joint, s1 = ((k + 1) / count) * total - joint;
     // Follow the curve within the slab so round pools keep a smooth edge.
     const steps = Math.max(1, Math.ceil((s1 - s0) / 0.2));
-    const outline: Vec2[] = [];
-    for (let j = 0; j <= steps; j++) outline.push(at(inner, s0 + ((s1 - s0) * j) / steps));
-    for (let j = steps; j >= 0; j--) outline.push(at(outer, s0 + ((s1 - s0) * j) / steps));
-    const geometry = new THREE.ExtrudeGeometry(new THREE.Shape(outline.map(([x, z]) => new THREE.Vector2(x, -z))), { depth: height, bevelEnabled: true, bevelThickness: 0.015, bevelSize: 0.015, bevelSegments: 2 });
-    geometry.rotateX(-Math.PI / 2);
-    slabs.push(geometry);
+    const sections: { lip: Vec2; out: Vec2; width: number }[] = [];
+    for (let j = 0; j <= steps; j++) {
+      const s = s0 + ((s1 - s0) * j) / steps, lip = at(inner, s), edge = at(outer, s), width = Math.hypot(edge[0] - lip[0], edge[1] - lip[1]) || COPING;
+      sections.push({ lip, out: [(edge[0] - lip[0]) / width, (edge[1] - lip[1]) / width], width });
+    }
+    const point = (j: number, [d, y]: [number, number]) => {
+      const { lip, out, width } = sections[j], dd = Math.min(d, width);
+      return new THREE.Vector3(lip[0] + out[0] * dd, y, lip[1] + out[1] * dd);
+    };
+    const smooth: number[] = [], flat: number[] = [];
+    // Each triangle wound to face `want`, so lighting is right whichever way the ring runs.
+    const tri = (list: number[], a: THREE.Vector3, b: THREE.Vector3, c: THREE.Vector3, want: THREE.Vector3) => {
+      const facing = new THREE.Vector3().subVectors(b, a).cross(new THREE.Vector3().subVectors(c, a)).dot(want) >= 0;
+      for (const v of facing ? [a, b, c] : [a, c, b]) list.push(v.x, v.y, v.z);
+    };
+    const quads = (list: number[], profile: [number, number][]) => {
+      for (let j = 0; j < steps; j++) for (let m = 0; m < profile.length - 1; m++) {
+        const [d0, y0] = profile[m], [d1, y1] = profile[m + 1];
+        const { out } = sections[j], dd = Math.min(d1, sections[j].width) - Math.min(d0, sections[j].width);
+        const want = new THREE.Vector3(out[0] * -(y1 - y0), dd, out[1] * -(y1 - y0));
+        const a = point(j, profile[m]), b = point(j, profile[m + 1]), c = point(j + 1, profile[m + 1]), d = point(j + 1, profile[m]);
+        tri(list, a, b, c, want); tri(list, a, c, d, want);
+      }
+    };
+    quads(smooth, nose);
+    const face: [number, number][] = [[Infinity, top], [Infinity, bottom]];
+    quads(flat, face);
+    // End caps: the whole profile, fanned from the lip's foot.
+    const cap = [...nose, [Infinity, bottom] as [number, number]];
+    for (const j of [0, steps]) {
+      const along = point(Math.min(j + 1, steps), [0, 0]).sub(point(Math.max(j - 1, 0), [0, 0])).multiplyScalar(j === 0 ? -1 : 1);
+      for (let m = 1; m < cap.length - 1; m++) tri(flat, point(j, cap[0]), point(j, cap[m]), point(j, cap[m + 1]), along);
+    }
+    const part = (list: number[]) => { const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.Float32BufferAttribute(list, 3)); return g; };
+    // The nose is shaded smooth: weld it, average its normals, then unweld to merge with the flat faces.
+    const rounded = mergeVertices(part(smooth), 1e-5);
+    rounded.computeVertexNormals();
+    const plain = part(flat);
+    plain.computeVertexNormals();
+    slabs.push(mergeGeometries([rounded.toNonIndexed(), plain], false)!);
   }
   return slabs;
 }
@@ -284,42 +324,99 @@ function lightPattern(): THREE.CanvasTexture {
   return texture;
 }
 
-/**
- * Straight steps into a pool, as photographed: three white treads about 2.4 m
- * wide set square against the nearest stretch of wall, each with a dark blue
- * tile nosing. Returns meshes in metres from the wall point `at` (deck level 0),
- * or nothing when no pool wall is within 4 m.
- */
-export function poolSteps(x: number, z: number, rings: Vec2[][]): { at: Vec2; meshes: THREE.Mesh[] } | undefined {
-  let best: { d: number; q: Vec2; t: Vec2; ring: Vec2[] } | undefined;
+/** The nearest point of any pool wall to (x, z): the point, its distance, the wall's
+ * direction there and the inward normal (towards the water), on which ring and edge. */
+export type WallPoint = { d: number; q: Vec2; t: Vec2; n: Vec2; ring: Vec2[]; edge: number };
+export function nearestWall(x: number, z: number, rings: Vec2[][]): WallPoint | undefined {
+  let best: Omit<WallPoint, "n"> | undefined;
   for (const ring of rings) {
     for (let k = 0; k < ring.length; k++) {
       const [ax, az] = ring[k], [bx, bz] = ring[(k + 1) % ring.length];
       const dx = bx - ax, dz = bz - az, len = Math.hypot(dx, dz) || 1;
       const s = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (len * len)));
       const q: Vec2 = [ax + dx * s, az + dz * s], d = Math.hypot(x - q[0], z - q[1]);
-      if (!best || d < best.d) best = { d, q, t: [dx / len, dz / len], ring };
+      if (!best || d < best.d) best = { d, q, t: [dx / len, dz / len], ring, edge: k };
     }
   }
-  if (!best || best.d > 4) return undefined;
+  if (!best) return undefined;
   // Inward is the side of the wall the pool lies on: test a point just off it.
   let n: Vec2 = [-best.t[1], best.t[0]];
   if (!pointInRing(best.q[0] + n[0] * 0.3, best.q[1] + n[1] * 0.3, best.ring)) n = [-n[0], -n[1]];
-  // A right-handed basis: x along the wall, y up, z into the pool.
-  const tx = -n[1], tz = n[0];
-  const basis = new THREE.Matrix4().makeBasis(new THREE.Vector3(tx, 0, tz), new THREE.Vector3(0, 1, 0), new THREE.Vector3(n[0], 0, n[1]));
-  const width = 2.4, tread = 0.36, rise = 0.28, white: THREE.BufferGeometry[] = [], nosing: THREE.BufferGeometry[] = [];
-  for (let i = 0; i < 3; i++) {
-    const top = -rise * (i + 1), height = top + POOL_DEPTH, mid = (i + 0.5) * tread;
-    white.push(new THREE.BoxGeometry(width, height, tread).translate(0, -POOL_DEPTH + height / 2, mid).applyMatrix4(basis));
-    nosing.push(new THREE.BoxGeometry(width, 0.012, 0.06).translate(0, top + 0.006, (i + 1) * tread - 0.03).applyMatrix4(basis));
+  return { ...best, n };
+}
+
+/** How a flight of pool steps is laid: straight treads square to the wall (the default),
+ * or treads that follow the wall's curve for `length` metres, as in the middle pool
+ * (IMG_2195). `wallAt` centres them on the wall point nearest it rather than nearest the
+ * marker, where a photo shows the flight beside a fitting. Read from the steps' entry in
+ * data/objects.json. */
+export type StepsForm = { form?: "straight" | "curved"; length?: number; wallAt?: Vec2 };
+
+const TREAD = 0.36, RISE = 0.28, STEP_WIDTH = 2.4;
+
+/**
+ * Steps into a pool, as photographed: three white treads, each with a dark blue tile
+ * nosing, set against the nearest stretch of wall, straight and about 2.4 m wide or
+ * curved along the wall. Returns meshes in metres from the wall point `at` (deck level
+ * 0) and, for straight steps, where the handrails stand at either end (IMG_2204), or
+ * nothing when no pool wall is within 4 m.
+ */
+export function poolSteps(x: number, z: number, rings: Vec2[][], form: StepsForm = {}): { at: Vec2; meshes: THREE.Mesh[]; rails: { at: Vec2; n: Vec2 }[] } | undefined {
+  const marker = nearestWall(x, z, rings);
+  if (!marker || marker.d > 4) return undefined;
+  const wall = form.wallAt ? nearestWall(form.wallAt[0], form.wallAt[1], [marker.ring])! : marker;
+  const white: THREE.BufferGeometry[] = [], nosing: THREE.BufferGeometry[] = [];
+  const rails: { at: Vec2; n: Vec2 }[] = [];
+  const { q, n } = wall;
+  if (form.form === "curved") {
+    // Sample the wall either side of the nearest point and offset it inwards for each tread.
+    const ring = wall.ring, count = ring.length, lengths = [0];
+    for (let i = 0; i < count; i++) lengths.push(lengths[i] + Math.hypot(ring[(i + 1) % count][0] - ring[i][0], ring[(i + 1) % count][1] - ring[i][1]));
+    const total = lengths[count];
+    const along = (s: number): Vec2 => {
+      const t = ((s % total) + total) % total;
+      let i = 0;
+      while (i < count - 1 && lengths[i + 1] < t) i++;
+      const f = (t - lengths[i]) / (lengths[i + 1] - lengths[i] || 1), a = ring[i], b = ring[(i + 1) % count];
+      return [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f];
+    };
+    const sq = lengths[wall.edge] + Math.hypot(q[0] - ring[wall.edge][0], q[1] - ring[wall.edge][1]);
+    // The inward side relative to the ring's direction, the same all the way round.
+    const side = Math.sign(-wall.t[1] * n[0] + wall.t[0] * n[1]) || 1;
+    const length = form.length ?? STEP_WIDTH, pieces = Math.max(4, Math.ceil(length / 0.1));
+    const path = Array.from({ length: pieces + 1 }, (_, j) => {
+      const s = sq - length / 2 + (length * j) / pieces, p = along(s), a = along(s - 0.15), b = along(s + 0.15);
+      const tl = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
+      return { p, n: [(-(b[1] - a[1]) / tl) * side, ((b[0] - a[0]) / tl) * side] as Vec2 };
+    });
+    const band = (from: number, to: number, bottom: number, height: number) => {
+      const outline = [...path.map(({ p, n }) => [p[0] + n[0] * from - q[0], p[1] + n[1] * from - q[1]]), ...path.slice().reverse().map(({ p, n }) => [p[0] + n[0] * to - q[0], p[1] + n[1] * to - q[1]])];
+      const g = new THREE.ExtrudeGeometry(new THREE.Shape(outline.map(([u, v]) => new THREE.Vector2(u, -v))), { depth: height, bevelEnabled: false });
+      return g.rotateX(-Math.PI / 2).translate(0, bottom, 0);
+    };
+    for (let i = 0; i < 3; i++) {
+      const top = -RISE * (i + 1);
+      white.push(band(i * TREAD, (i + 1) * TREAD, -POOL_DEPTH, top + POOL_DEPTH));
+      nosing.push(band((i + 1) * TREAD - 0.06, (i + 1) * TREAD, top, 0.012));
+    }
+  } else {
+    // A right-handed basis: x along the wall, y up, z into the pool.
+    const tx = -n[1], tz = n[0];
+    const basis = new THREE.Matrix4().makeBasis(new THREE.Vector3(tx, 0, tz), new THREE.Vector3(0, 1, 0), new THREE.Vector3(n[0], 0, n[1]));
+    for (let i = 0; i < 3; i++) {
+      const top = -RISE * (i + 1), height = top + POOL_DEPTH, mid = (i + 0.5) * TREAD;
+      white.push(new THREE.BoxGeometry(STEP_WIDTH, height, TREAD).translate(0, -POOL_DEPTH + height / 2, mid).applyMatrix4(basis));
+      nosing.push(new THREE.BoxGeometry(STEP_WIDTH, 0.012, 0.06).translate(0, top + 0.006, (i + 1) * TREAD - 0.03).applyMatrix4(basis));
+    }
+    // A handrail stands just inside each end of the treads, as at the north pool (IMG_2204).
+    for (const end of [-1, 1]) rails.push({ at: [q[0] + tx * end * (STEP_WIDTH / 2 - 0.12), q[1] + tz * end * (STEP_WIDTH / 2 - 0.12)], n });
   }
   return {
-    at: best.q,
+    at: q,
+    rails,
     meshes: [
       new THREE.Mesh(mergeGeometries(white, false), new THREE.MeshStandardMaterial({ color: "#f3f1ea", roughness: 0.6 })),
       new THREE.Mesh(mergeGeometries(nosing, false), new THREE.MeshStandardMaterial({ color: "#1f4f8f", roughness: 0.5 })),
     ],
   };
 }
-

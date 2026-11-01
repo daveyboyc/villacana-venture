@@ -76,3 +76,21 @@ models of the species seen in the north-pool photos, sized to the cards in `SPRI
 `addSprites` (`src/sprites.ts`) replaces those kinds' crossed cards with instanced copies once a
 model loads, keeping each card's position, turn, scale, `spriteKind` and `spriteWidth`, so the
 route-clearance guard and tests see the same footprints. Small screens keep the cards.
+
+## Pool fittings and coping (November 2026, north pool pilot step 3)
+
+`scripts/build_pool_kit.py` builds the stainless pool fittings headless in Blender the same
+way (`public/models/pool/`, about 90 kB, byte-identical on rebuild): the goose-neck `ladder`
+with three treads, the `step-rail` handrail at the end of a flight of steps, and the `life-ring`
+on its hooked post. `addProps` (`src/slice.ts`) stands each prop through `addPoolFittings`
+(`src/pool-kit.ts`): instanced, a simple stand-in until the model loads, on all screen sizes as
+the models are small. Ladders stand on the nearest wall point when it is within a metre and face
+into the pool; life rings face the nearest pool; straight steps get a handrail inside each end.
+A ladder entry with `"fitting": "step-rail"` in `data/objects.json` draws the handrail instead.
+Positions and the route-clearance filter are unchanged.
+
+`src/water.ts` gives the coping slabs a bullnose: a plain face under a 3.5 cm quarter-round on
+the edge over the water, keeping the joints and three tones. `poolSteps` lays straight treads
+by default; a steps entry with `"steps": {"form": "curved", "length": ..., "wallAt": [x, z]}`
+lays treads that follow the wall's curve, centred on the wall point nearest `wallAt` (the middle
+pool's steps, IMG_2195).

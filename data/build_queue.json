@@ -2299,7 +2299,8 @@
    "dependsOn": [
     "pool-detail"
    ],
-   "status": "open"
+   "status": "open",
+   "notes": "Looked at in pilot step 3 (1 November), not traced: through the solved IMG_2204-2206 cameras the squared tongue east of the steps is an edge of the water as well as the deck (the pool wall turns square round it; the registry ring is a smooth curve there), so matching it means moving the water ring, which needs measured evidence and placement approval. The deck outer edge is mostly behind the fence's frosted bands, so points must be picked between panels. No residuals measured yet. See docs/reviews/north-pool-detail-pilot/README.md."
   },
   {
    "id": "north-pool-detail-pilot",
@@ -2324,7 +2325,7 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "Step 1 done 31 October: photo-matched plaster, terracotta, crazy paving and barrel tiles (CC0 Poly Haven, recoloured; public/textures/CREDITS.md), kit balcony tiles rebuilt in the same colour. Step 2 done 1 November: 3D Strelitzia, clipped and flowering hedges, yucca and feather palm built in Blender (scripts/build_plants.py) replace the cards on larger screens. Renders and notes in docs/reviews/north-pool-detail-pilot. Next: step 3, pool details in Blender."
+   "notes": "Step 1 done 31 October: photo-matched plaster, terracotta, crazy paving and barrel tiles (CC0 Poly Haven, recoloured; public/textures/CREDITS.md), kit balcony tiles rebuilt in the same colour. Step 2 done 1 November: 3D Strelitzia, clipped and flowering hedges, yucca and feather palm built in Blender (scripts/build_plants.py) replace the cards on larger screens. Renders and notes in docs/reviews/north-pool-detail-pilot. Step 3 done 1 November: stainless ladders, step handrails and life-ring posts built in Blender (scripts/build_pool_kit.py), bullnose coping, handrails at the straight north and south steps, and curved middle-pool steps (o26, steps.wallAt read by eye from IMG_2195; o27 drawn as the step handrail). The deck outline is left open in pool-deck-outline. Next: step 4, Google satellite and 3D tiles as comparison views."
   }
  ]
 }

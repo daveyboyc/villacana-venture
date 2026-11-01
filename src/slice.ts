@@ -40,7 +40,8 @@ import { centroid, clamp, closestOnSegment, CoastField, dampAngle, pointInRing, 
 import { Player, type MoveWorld } from "./player";
 import { addSprites, SPRITE_SIZE, type SpriteKind, type SpritePlacement } from "./sprites";
 import type { BoundaryReference, InputState, Skeleton, SkeletonBuilding, Vec2 } from "./types";
-import { addPools, POOL_STAND, poolSteps } from "./water";
+import { addPools, nearestWall, POOL_STAND, poolSteps } from "./water";
+import { addPoolFittings, type FittingPlace, type PoolFitting } from "./pool-kit";
 import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
@@ -1150,12 +1151,12 @@ function louvreTexture(): THREE.CanvasTexture {
 function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["props"]): void {
   const white = plasterMaterial(WALL);
   const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
-  const ring = new THREE.MeshStandardMaterial({ color: "#e8532b", roughness: 0.6 });
   const dark = new THREE.MeshStandardMaterial({ color: "#1d1b1a", roughness: 0.6 });
   const canvas = new THREE.MeshStandardMaterial({ color: "#efe6d2", roughness: 0.9 });
   const mesh = new THREE.MeshStandardMaterial({ color: "#6f6a64", roughness: 0.8 });
   const blueLounger = new THREE.MeshStandardMaterial({ color: "#4096d2", roughness: 0.8 });
   const sprites: Partial<Record<SpriteKind, SpritePlacement[]>> = {};
+  const fittings: Partial<Record<PoolFitting, FittingPlace[]>> = {};
   const add = (mesh: THREE.Mesh, x: number, y: number, z: number) => {
     mesh.position.set(x, y+groundY(x,z), z);
     mesh.castShadow = true;
@@ -1165,20 +1166,23 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
   for (const p of props) {
     switch (p.kind) {
       case "pool_steps": {
-        // Straight steps square to the nearest wall; round ones only if no wall is close.
-        const steps = poolSteps(p.x, p.z, poolRings);
-        if (steps) for (const mesh of steps.meshes) add(mesh, steps.at[0], 0, steps.at[1]);
-        else for (let i = 0; i < 3; i++) add(new THREE.Mesh(new THREE.CylinderGeometry(1.5 - i * 0.4, 1.5 - i * 0.4, 0.3, 20), white), p.x, -0.95 + i * 0.3, p.z);
+        // Straight steps square to the nearest wall, or curved along it where the entry says
+        // so (data/objects.json); round ones only if no wall is close.
+        const steps = poolSteps(p.x, p.z, poolRings, p.steps);
+        if (steps) {
+          for (const mesh of steps.meshes) add(mesh, steps.at[0], 0, steps.at[1]);
+          for (const r of steps.rails) (fittings["step-rail"] ??= []).push({ x: r.at[0], y: groundY(r.at[0], r.at[1]), z: r.at[1], turn: Math.atan2(r.n[0], r.n[1]) });
+        } else for (let i = 0; i < 3; i++) add(new THREE.Mesh(new THREE.CylinderGeometry(1.5 - i * 0.4, 1.5 - i * 0.4, 0.3, 20), white), p.x, -0.95 + i * 0.3, p.z);
         break;
       }
-      case "pool_ladder":
-        for (const side of [-0.25, 0.25]) {
-          const rail = add(new THREE.Mesh(new THREE.TorusGeometry(0.42, 0.03, 8, 16, Math.PI), steel), p.x + side, 0.45, p.z);
-          rail.rotation.y = Math.PI / 2;
-          add(new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 1.3, 8), steel), p.x + side, -0.2, p.z - 0.42);
-          add(new THREE.Mesh(new THREE.CylinderGeometry(0.03, 0.03, 0.5, 8), steel), p.x + side, 0.2, p.z + 0.42);
-        }
+      case "pool_ladder": {
+        // The Blender ladder (or the step handrail where the entry says so), on the wall
+        // where it is within a metre, facing into the pool.
+        const wall = nearestWall(p.x, p.z, poolRings);
+        const [x, z] = wall && wall.d <= 1 ? wall.q : [p.x, p.z];
+        (fittings[p.fitting ?? "ladder"] ??= []).push({ x, y: groundY(x, z), z, turn: wall ? Math.atan2(wall.n[0], wall.n[1]) : 0 });
         break;
+      }
       case "pump_box": {
         // White plant-room box with louvred sides and a plain lid, as by the pools.
         const sides = new THREE.MeshStandardMaterial({ color: WALL, map: louvreTexture(), roughness: 0.7 });
@@ -1186,8 +1190,9 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         break;
       }
       case "life_ring": {
-        add(new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 1.5, 8), steel), p.x, 0.75, p.z);
-        add(new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.09, 10, 20), ring), p.x, 1.35, p.z + 0.1);
+        // The ring hangs on its post facing the nearest pool.
+        const wall = nearestWall(p.x, p.z, poolRings), d = wall ? Math.hypot(wall.q[0] - p.x, wall.q[1] - p.z) : 0;
+        (fittings["life-ring"] ??= []).push({ x: p.x, y: groundY(p.x, p.z), z: p.z, turn: wall && d > 0.01 ? Math.atan2(wall.q[0] - p.x, wall.q[1] - p.z) : 0 });
         break;
       }
       case "parasol": {
@@ -1230,6 +1235,7 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
     }
   }
+  for (const [kind, places] of Object.entries(fittings)) addPoolFittings(scene, kind as PoolFitting, places, steel);
   for (const [kind, places] of Object.entries(sprites)) addSprites(scene, kind as SpriteKind, places.map(p=>({...p,y:(p.y??0)+groundY(p.x,p.z)})));
 }
 
