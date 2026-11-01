@@ -29,6 +29,7 @@ import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} fr
 import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {addPoolDecks,onPoolDeck,paintPoolDecks} from "./pool-deck";
+import {addBackdropTrees,addRidge,inResortBlock} from "./backdrop";
 import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
@@ -174,7 +175,7 @@ async function boot(): Promise<void> {
   await addGround(scene, skeleton, centre, poolRings,buildings.some(b=>b.id===SILVIA_HOST));
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
-  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;addBackdrop(backdrop,centre);scene.add(backdrop);
+  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;addBackdrop(backdrop);scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const host=buildings.find(b=>b.id===SILVIA_HOST);
   // Same level datum as the surrounding host, both taken on the lane through the tunnel so the
@@ -870,7 +871,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   // Inside the courtyard every tree is placed by hand from the photos, so the
   // scattered ones only fill in beyond it.
   const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
-  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD && !inElenaNorthReview(p.x, p.z)));
+  // Beyond the resort block the backdrop has the trees, from the aerial (src/backdrop.ts).
+  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD && !inElenaNorthReview(p.x, p.z) && inResortBlock(p.x, p.z)));
   // Tufts only near the courtyards; the painted blades cover lawns further off.
   const onDeck = onPoolDeck(skeleton.pools, 0.2);
   addSprites(scene, "grass", scatter(0.8, "lawn", RADIUS).filter((p) => fromCourt(p) < 45 && !inElenaNorthReview(p.x, p.z) && !onDeck(p.x, p.z)).map((p) => ({ ...p, scale: 0.16 + hash(p.x, p.z) * 0.14 })));
@@ -1229,7 +1231,7 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         break;
       }
       case "monkey_puzzle":
-        (sprites.pine ??= []).push({ x: p.x, z: p.z });
+        (sprites.norfolk_pine ??= []).push({ x: p.x, z: p.z });
         break;
       case "passage":
       case "gate":
@@ -1299,40 +1301,10 @@ function addGardenGates(scene: THREE.Scene, gates: Vec2[], walls: Vec2[]): void 
 }
 
 /** What you see over the rooftops looking inland: tall pines, palms, blue mountains. */
-function addBackdrop(scene: THREE.Scene, centre: { x: number; z: number }): void {
-  const pines: SpritePlacement[] = [];
-  const palms: SpritePlacement[] = [];
-  for (let i = 0; i < 46; i++) {
-    const a = -1.5 + (i / 45) * 3 + (hash(i, 3) - 0.5) * 0.05;
-    const d = RADIUS + 22 + hash(i, 9) * 30;
-    const spot = { x: centre.x + Math.sin(a) * d, z: centre.z - Math.cos(a) * d, scale: 0.8 + hash(i, 5) * 0.6 };
-    (hash(i, 1) < 0.22 ? palms : pines).push(spot);
-  }
-  addSprites(scene, "pine", pines);
-  addSprites(scene, "palm", palms);
-
-  // Two ridgelines to the north, the far one paler.
-  for (const [distance, height, colour, seed] of [[330, 62, "#8fa9c4", 1], [270, 40, "#6f8fae", 2]] as const) {
-    const positions: number[] = [];
-    const steps = 80;
-    const ridge = (i: number) => {
-      const t = i / steps;
-      const peak = Math.sin(t * 9 + seed * 2) * 0.25 + Math.sin(t * 23 + seed) * 0.12 + Math.sin(t * 4.3 + seed * 5) * 0.35;
-      return height * (0.55 + peak * 0.6);
-    };
-    for (let i = 0; i < steps; i++) {
-      const a0 = -1.9 + (i / steps) * 3.8;
-      const a1 = -1.9 + ((i + 1) / steps) * 3.8;
-      const x0 = centre.x + Math.sin(a0) * distance;
-      const z0 = centre.z - Math.cos(a0) * distance;
-      const x1 = centre.x + Math.sin(a1) * distance;
-      const z1 = centre.z - Math.cos(a1) * distance;
-      positions.push(x0, -2, z0, x1, -2, z1, x1, ridge(i + 1), z1, x0, -2, z0, x1, ridge(i + 1), z1, x0, ridge(i), z0);
-    }
-    const geometry = new THREE.BufferGeometry();
-    geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
-    scene.add(new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({ color: colour, fog: false, side: THREE.DoubleSide })));
-  }
+/** Trees beyond the resort and the mountains behind them (src/backdrop.ts, data/backdrop.json). */
+function addBackdrop(scene: THREE.Scene): void {
+  addBackdropTrees(scene, COURTS);
+  addRidge(scene);
 }
 
 function hash(x: number, z: number): number {

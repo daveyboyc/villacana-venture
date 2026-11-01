@@ -184,3 +184,65 @@ built by moving the ring with placement approval; the deck in the photos is a sl
 with wider joints; the glass fence is not built. Middle and south widths come from the 0.24 m
 aerial only. No placement packet: approval needs an independent reviewer, so the decks remain
 unapproved placements (`pool-deck-outline` stays open for the tongue).
+
+## Step 5: trees and mountains in the background (1 November 2026)
+
+Dave: "We are still lacking the trees and plants that you can see in the background in the
+photos." Over the roofs, IMG_2204-2206 show a dense skyline of trees: flat-topped umbrella pines,
+palms, Norfolk Island pines (one tall and sparse right of centre in IMG_2205, others in IMG_2204
+and IMG_2206), a belt of tall eucalyptus-like trees over the west wall (IMG_2206, running off the
+top of the frame), with the mountains and the peaked summit behind. Inside the courtyard, a
+spreading fine-leaved tree leans over the north-west terrace (left of IMG_2204) and a feathery
+tree and a pollarded stump stand by the path (right). The model had a ring of 46 painted pine and
+palm cards and two sine-wave bands of flat blue, which read as sea.
+
+**Trees built in Blender** (`scripts/build_trees.py`, `public/models/trees/`, 732 kB together,
+byte-identical on rebuild): umbrella pine, Norfolk Island pine, eucalyptus, rounded broadleaf,
+spreading tree, pollarded tree, each with lumpy crown clumps carrying leaf or needle cards,
+plus light `-far` versions (47-578 faces: a few clumps, no cards) for the distance, and a simple
+distant palm. `src/sprites.ts` swaps them in for the cards as for the plants: `tree`,
+`feathery_tree` and `pollarded_tree` now draw as 3D trees, and three new kinds (`umbrella_pine`,
+`norfolk_pine`, `eucalyptus`) have cards for small screens, which keep the cards. Far trees use
+the light models, unshadowed, a little paler instead of fogged.
+
+**Where they stand** (`scripts/build_backdrop.py`, `data/backdrop.json`, `src/backdrop.ts`):
+- *Picked in the photos:* three Norfolk pines and five palms, each on the ray through its top
+  pixel from the solved station, at the distance where a tree of its usual height reaches that
+  pixel (Norfolk pines 117-191 m out, palms 50-60 m). Direction is measured; distance is not.
+- *From the aerial:* 814 trees where the Esri aerial shows dark canopy outside the resort block and
+  inland of the beach, spaced by crown size. The aerial does not show species: they are drawn
+  from the mix in the photos, with tall eucalyptus in the belt beside the west wall. In the
+  photographed bearings no tree may stand above the line the photos show against the sky: trees
+  are lowered to it or, if hidden by the roofs anyway, left out.
+- *Beyond the aerial:* 323 trees in groves on the land side, 230-650 m out, thinning with
+  distance (filled in, not seen).
+- The scattered garden trees from the ground cover now stay inside the resort block; outside it
+  the backdrop has the trees.
+
+**Mountains:** the line between sky and mountain is found column by column in IMG_2204-2206, only
+in the stretches where mountains (not trees, roofs or cloud) meet the sky, and turned into compass
+bearing and elevation through the solved camera (57 bearings from the photos, 296°-22°,
+interpolated where trees hide it). It is built as one band 2.2 km from the station, hazy blue-grey
+at the crest, with the peak at about 356-358° (5.7°). Past the photographed bearings it falls away
+to low hills (inferred). Seen from the middle and south pools the bearings are a few degrees off.
+
+**Cost in the whole-resort Details view (1280×800):** 3.42 M → 4.06 M triangles (+0.63 M,
++19%): broadleaf +0.32 M, umbrella pines +0.11 M, eucalyptus +0.12 M, distant palms +0.07 M,
+other trees under 0.01 M. That is 1,145 backdrop trees, about 130 garden trees inside the block
+and the courtyard trees, in about 30 more instanced meshes. Trees within 85 m of a shown pool get
+the detailed models; palms in the backdrop always the light one (the detailed palm is 11,000
+triangles). Small screens keep the cards.
+
+`trees-before-after.jpg`: photo, step 4 and step 5 through IMG_2204-2206, IMG_2195 and the
+hand-placed south camera.
+
+Still different: the trees are generic models of the species, smoother and greener than the
+photos' dark, ragged masses, and only the picked Norfolk pines and palms stand where a photo shows
+a particular tree; the aerial trees' species and heights are guesses (capped by the skyline). The
+ridge is a single flat-coloured band without the nearer, greener foothills, the summit is softer
+than in the photos, and the clouds sitting on the mountains are not modelled. The spreading tree
+on the north-west terrace is located (about -193.0, 20.8, through IMG_2204) but not built: its
+crown would overhang the protected walk across the terrace, which the route-clearance guard keeps
+clear (`gap:north-pool-west-terrace-tree`). The pollarded stump right of IMG_2204 is bare in the
+photo; the model is in leaf. Bougainvillea stays a painted card: a 3D climber was not attempted in
+this step.

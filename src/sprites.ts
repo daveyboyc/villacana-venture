@@ -9,8 +9,9 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
  *
  * Palms, hedges, bougainvillea and Strelitzia use an original photo-referenced
  * atlas; the procedural painters remain immediate fallbacks and fill other kinds.
- * On larger screens the palms, Strelitzia, yucca and hedges are then replaced by
- * 3D plants built in Blender (MODELS below).
+ * On larger screens the palms, Strelitzia, yucca, hedges and trees are then replaced
+ * by 3D plants built in Blender (MODELS below); trees far beyond the resort use the
+ * lighter `-far` models (FAR_MODELS).
  */
 export type SpriteKind =
   | "tree"
@@ -18,6 +19,9 @@ export type SpriteKind =
   | "pollarded_tree"
   | "magnolia"
   | "pine"
+  | "umbrella_pine"
+  | "norfolk_pine"
+  | "eucalyptus"
   | "palm"
   | "bird_of_paradise"
   | "yucca"
@@ -35,6 +39,9 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
   pollarded_tree: { w: 2.6, h: 4.2, shadow: true },
   magnolia: { w: 2.4, h: 3.2, shadow: true },
   pine: { w: 6, h: 16, shadow: false },
+  umbrella_pine: { w: 10, h: 12, shadow: true },
+  norfolk_pine: { w: 7, h: 26, shadow: true },
+  eucalyptus: { w: 9, h: 20, shadow: true },
   palm: { w: 5, h: 10, shadow: false },
   bird_of_paradise: { w: 3.4, h: 4.6, shadow: true },
   yucca: { w: 4.2, h: 4.8, shadow: true },
@@ -48,13 +55,16 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
 
 export type SpritePlacement = { x: number; y?: number; z: number; scale?: number };
 
+/** How a set is drawn: `far` uses the lighter distant models, unshadowed and hazed instead of fogged. */
+export type SpriteOptions = { far?: boolean };
+
 /** Stand a set of sprites of one kind in the scene. */
-export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpritePlacement[]): void {
+export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpritePlacement[], options: SpriteOptions = {}): void {
   if(scene.userData.layoutOnly)return;
   const guard=scene.userData.decorationClearance as ((x:number,z:number,radius:number)=>boolean)|undefined;
   if(guard)places=places.filter(p=>guard(p.x,p.z,SPRITE_SIZE[kind].w*(p.scale??1)/2));
   if (!places.length) return;
-  const { w, h, shadow } = SPRITE_SIZE[kind];
+  const { w, h } = SPRITE_SIZE[kind], far = !!options.far && !!FAR_MODELS[kind], shadow = SPRITE_SIZE[kind].shadow && !options.far;
   const card = new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);
   const geometry = mergeGeometries([card, card.clone().rotateY(Math.PI / 2)])!;
   const material = new THREE.MeshStandardMaterial({ map: paint(kind), alphaTest: 0.4, side: THREE.DoubleSide, roughness:0.9 });
@@ -79,13 +89,13 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
   scene.add(mesh);
   // Where a 3D plant exists it replaces the cards once loaded, at the same places and sizes.
   // Small screens keep the cards, as they keep the flat shutters instead of the facade kit.
-  if (MODELS[kind] && !matchMedia("(max-width:700px), (max-height:500px)").matches) void plantModel(kind).then((model) => {
+  if (MODELS[kind] && !matchMedia("(max-width:700px), (max-height:500px)").matches) void plantModel(kind, far).then((model) => {
     if (!model || !mesh.parent) return;
     const parent = mesh.parent, matrix = new THREE.Matrix4();
     model.traverse((o) => {
       const source = o as THREE.Mesh;
       if (!source.isMesh) return;
-      const part = new THREE.InstancedMesh(source.geometry, source.material, mesh.count);
+      const part = new THREE.InstancedMesh(source.geometry, far ? hazed(source.material as THREE.MeshStandardMaterial) : source.material, mesh.count);
       for (let i = 0; i < mesh.count; i++) { mesh.getMatrixAt(i, matrix); part.setMatrixAt(i, matrix.clone().multiply(source.matrixWorld)); }
       part.computeBoundingSphere();
       part.userData.spriteKind = kind; part.userData.spriteWidth = w;
@@ -97,18 +107,42 @@ export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpriteP
   });
 }
 
-/** 3D plants built in Blender (scripts/build_plants.py), each the size of the card it replaces. */
+/**
+ * 3D plants and trees built in Blender (scripts/build_plants.py, scripts/build_trees.py), each the
+ * size of the card it replaces, under public/models/.
+ */
 const MODELS: Partial<Record<SpriteKind, string>> = {
-  bird_of_paradise: "strelitzia", palm: "palm", yucca: "yucca", hedge: "hedge", hibiscus_hedge: "hibiscus-hedge",
+  bird_of_paradise: "plants/strelitzia", palm: "plants/palm", yucca: "plants/yucca", hedge: "plants/hedge", hibiscus_hedge: "plants/hibiscus-hedge",
+  tree: "trees/broadleaf", feathery_tree: "trees/spreading-tree", pollarded_tree: "trees/pollarded-tree",
+  umbrella_pine: "trees/umbrella-pine", norfolk_pine: "trees/norfolk-pine", eucalyptus: "trees/eucalyptus",
 };
-const models = new Map<SpriteKind, Promise<THREE.Object3D | null>>();
-function plantModel(kind: SpriteKind): Promise<THREE.Object3D | null> {
-  let model = models.get(kind);
+/** Lighter versions for trees far beyond the resort: a few lumpy clumps, no leaf cards. */
+const FAR_MODELS: Partial<Record<SpriteKind, string>> = {
+  palm: "trees/palm-far", tree: "trees/broadleaf-far", umbrella_pine: "trees/umbrella-pine-far",
+  norfolk_pine: "trees/norfolk-pine-far", eucalyptus: "trees/eucalyptus-far",
+};
+const models = new Map<string, Promise<THREE.Object3D | null>>();
+function plantModel(kind: SpriteKind, far = false): Promise<THREE.Object3D | null> {
+  const name = (far && FAR_MODELS[kind]) || MODELS[kind]!;
+  let model = models.get(name);
   if (!model) {
-    model = new GLTFLoader().loadAsync(asset(`/models/plants/${MODELS[kind]}.glb`)).then((gltf) => { gltf.scene.updateMatrixWorld(true); return gltf.scene; }, () => null);
-    models.set(kind, model);
+    model = new GLTFLoader().loadAsync(asset(`/models/${name}.glb`)).then((gltf) => { gltf.scene.updateMatrixWorld(true); return gltf.scene; }, () => null);
+    models.set(name, model);
   }
   return model;
+}
+
+/** Distant trees keep their colour against the haze instead of fading into the fog: a little paler, unfogged. */
+const hazedMaterials = new Map<THREE.Material, THREE.Material>();
+function hazed(material: THREE.MeshStandardMaterial): THREE.Material {
+  let out = hazedMaterials.get(material);
+  if (!out) {
+    const m = material.clone();
+    m.fog = false;
+    m.color.lerp(new THREE.Color("#a9b8b8"), 0.18);
+    hazedMaterials.set(material, (out = m));
+  }
+  return out;
 }
 
 function rand(x: number, z: number): number {
@@ -251,6 +285,23 @@ const PAINTERS: Record<SpriteKind, (b: Brush) => void> = {
     b.stem(0.47, 0.25, 0.66, 0.48, 0.03, "#4f3a2a");
     b.foliage(0.5, 0.58, 0.46, 0.4, "#1d3a24", "#2c5531", "#4d7b45", 95);
     b.dots(0.5, 0.6, 0.4, 0.34, 26, 0.03, ["#8a5a2b", "#a0703a", "#6f4a26"]);
+  },
+  umbrella_pine(b) {
+    b.stem(0.5, 0, 0.52, 0.6, 0.035, "#6a5444");
+    b.stem(0.52, 0.55, 0.3, 0.8, 0.02, "#6a5444");
+    b.stem(0.52, 0.55, 0.74, 0.8, 0.02, "#6a5444");
+    b.foliage(0.5, 0.86, 0.48, 0.11, "#2c4424", "#3e5631", "#5a6f3e", 110);
+  },
+  norfolk_pine(b) {
+    b.stem(0.5, 0, 0.5, 1, 0.02, "#5c4a3b");
+    for (let i = 0; i < 18; i++) {
+      const y = 0.18 + i * 0.045, half = 0.42 * (1 - i / 19) + 0.04;
+      b.foliage(0.5, y, half, 0.012, "#24391f", "#34502f", "#4d6a3c", 14);
+    }
+  },
+  eucalyptus(b) {
+    b.stem(0.5, 0, 0.5, 0.5, 0.03, "#b5a891");
+    b.foliage(0.5, 0.66, 0.3, 0.3, "#3f4f35", "#5f7150", "#7f8f6a", 140);
   },
   pine(b) {
     b.stem(0.5, 0, 0.5, 0.9, 0.05, "#4a382c");

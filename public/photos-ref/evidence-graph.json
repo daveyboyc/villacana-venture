@@ -6,9 +6,9 @@
   "suggested": 90,
   "needs-review": 75,
   "photos": 166,
-  "features": 383,
+  "features": 385,
   "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 129
+  "modelFeaturesWithPhotoCitations": 131
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1801,6 +1801,28 @@
    "name": "south pool",
    "kind": "pool",
    "source": "registry"
+  },
+  {
+   "id": "backdrop.json:photo-trees",
+   "name": "Norfolk pines and palms over the north-pool roofs",
+   "kind": "reference feature",
+   "source": "on rays from the solved IMG_2204-2206 camera; distance from each tree's usual height",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ]
+  },
+  {
+   "id": "backdrop.json:aerial-trees",
+   "name": "Trees beyond the resort where the aerial shows canopy",
+   "kind": "reference feature",
+   "source": "aerial canopy; species drawn from the mix in the photos; heights capped by the photographed skyline",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ]
   },
   {
    "id": "pool_decks.json:north-deck",
@@ -5180,6 +5202,18 @@
   },
   {
    "from": "photo:IMG_2204.jpg",
+   "to": "backdrop.json:photo-trees",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "backdrop.json:aerial-trees",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
    "to": "pool_decks.json:north-deck",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5215,6 +5249,18 @@
    "relation": "possibly-in-view",
    "distance": 39.7,
    "angleOffset": 8.2
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "backdrop.json:photo-trees",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "backdrop.json:aerial-trees",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2205.jpg",
@@ -5254,6 +5300,18 @@
    "relation": "possibly-in-view",
    "distance": 35.8,
    "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "backdrop.json:photo-trees",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "backdrop.json:aerial-trees",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",

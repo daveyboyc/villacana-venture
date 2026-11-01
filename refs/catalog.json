@@ -308,8 +308,8 @@
   "looksAtFeatures": [
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "street:silvia-north",
-   "middle_pool_south_gate.json:middle-pool-south-gate",
-   "entrance_planters.json:silvia-pool-entry-hedge-kerb"
+   "backdrop.json:aerial-trees",
+   "middle_pool_south_gate.json:middle-pool-south-gate"
   ],
   "subject": "The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead"
  },
@@ -351,7 +351,9 @@
    112.9
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2191.jpg",
@@ -386,7 +388,9 @@
    115.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2192.jpg",
@@ -425,9 +429,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva",
+   "backdrop.json:aerial-trees",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
-   "street:silvia-north",
-   "entrance_planters.json:silvia-pool-entry-hedge-kerb"
+   "street:silvia-north"
   ]
  },
  {
@@ -466,6 +470,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "pool_decks.json:middle-deck",
+   "backdrop.json:aerial-trees",
    "street:eva",
    "pool:middle"
   ]
@@ -506,6 +511,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "pool_decks.json:middle-deck",
+   "backdrop.json:aerial-trees",
    "pool:middle",
    "street:eva"
   ]
@@ -547,6 +553,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "pool_decks.json:middle-deck",
+   "backdrop.json:aerial-trees",
    "pool:middle"
   ]
  },
@@ -636,9 +643,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path"
+   "street:elena-north"
   ],
   "subject": "The second hedged bed and the lane"
  },
@@ -680,9 +687,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-garden-door-path"
+   "street:elena-north"
   ],
   "subject": "The second hedged bed"
  },
@@ -727,9 +734,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-garden-wall",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "The first hedged bed"
  },
@@ -775,9 +782,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-garden-wall",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "The first hedged bed"
  },
@@ -823,9 +830,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-garden-wall",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "The first hedged bed and the lane north",
   "headingOff": 93
@@ -866,7 +873,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "elena_gated_entry.json:elena-gated-entry"
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "Private paired gates 36/34 west of the covered walkway"
  },
@@ -908,6 +916,7 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-magnolia-bed"
   ],
   "subject": "Opposite exit of the covered passage onto Calle Elena",
@@ -942,6 +951,8 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "backdrop.json:photo-trees",
+   "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
    "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-west-terrace",
@@ -954,7 +965,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "pool:north",
-   "pool_decks.json:north-deck"
+   "pool_decks.json:north-deck",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "The north pool"
  },
@@ -987,6 +999,8 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "backdrop.json:photo-trees",
+   "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
    "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-north-patios"
@@ -998,7 +1012,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "pool:north",
-   "pool_decks.json:north-deck"
+   "pool_decks.json:north-deck",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "The north pool"
  },
@@ -1029,6 +1044,8 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "backdrop.json:photo-trees",
+   "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
    "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-west-terrace"
@@ -1040,7 +1057,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "pool:north",
-   "pool_decks.json:north-deck"
+   "pool_decks.json:north-deck",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "The north pool, west side"
  },
@@ -1079,6 +1097,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck"
   ],
   "subject": "The north pool garden below the roof",
@@ -1121,6 +1140,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck"
   ],
   "subject": "The north pool garden and path below the roof"
@@ -1159,10 +1179,10 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-patio-divider",
    "elena_north.json:elena-north-visible-patio-floor",
-   "elena_north.json:elena-north-patio-east",
-   "elena_lane_paving.json:elena-north-three-column"
+   "elena_north.json:elena-north-patio-east"
   ]
  },
  {
@@ -1198,7 +1218,9 @@
    36.3
   ],
   "looksAtBasis": "estimated 12 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2216.jpg",
@@ -1234,9 +1256,9 @@
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-2",
+   "backdrop.json:aerial-trees",
    "elena_east_patios.json:elena-east-patios-west-wall",
-   "elena_east_patios.json:elena-east-patios-cervantes-wall",
-   "street:cervantes"
+   "elena_east_patios.json:elena-east-patios-cervantes-wall"
   ]
  },
  {
@@ -1275,8 +1297,8 @@
   "looksAtFeatures": [
    "cervantes_patio_walls.json:cervantes-patio-south-3",
    "street:cervantes",
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "cervantes_garden_door.json:cervantes-junction-east-planter"
+   "backdrop.json:aerial-trees",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ]
  },
  {
@@ -1313,6 +1335,7 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-middle",
    "cervantes_patio_walls.json:cervantes-patio-north-1",
    "street:cervantes"
@@ -1353,6 +1376,7 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-planter-west"
   ]
  },
@@ -1389,10 +1413,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "cervantes_patio_walls.json:cervantes-patio-south-3",
    "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south",
-   "street:cervantes"
+   "street:elena-south"
   ],
   "subject": "The Elena south lane and lawns below the roof"
  },
@@ -1888,6 +1912,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "seaward_paving.json:teodoro-octagonal-paving"
   ]
  },
@@ -1927,6 +1952,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "seaward_paving.json:teodoro-octagonal-paving",
+   "backdrop.json:aerial-trees",
    "street:teodoro-rojo"
   ]
  },
@@ -1962,7 +1988,9 @@
    130.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2239.jpg",
@@ -1997,7 +2025,9 @@
    114.6
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2240.jpg",
@@ -2032,7 +2062,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:patricia"
+   "street:patricia",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -2068,6 +2099,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:teodoro-rojo"
   ]
  },
@@ -2104,6 +2136,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:teodoro-rojo"
   ]
  },
@@ -2140,6 +2173,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:eva"
   ]
  },
@@ -2177,7 +2211,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:eva"
+   "street:eva",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -2216,7 +2251,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "pool:middle",
-   "pool_decks.json:middle-deck"
+   "pool_decks.json:middle-deck",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -2255,8 +2291,8 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "street:eva",
-   "middle_pool.json:middle-pool-west-planter"
+   "backdrop.json:aerial-trees",
+   "street:eva"
   ]
  },
  {
@@ -2295,8 +2331,8 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
-   "middle_pool.json:middle-pool-west-planter",
-   "street:eva"
+   "backdrop.json:aerial-trees",
+   "middle_pool.json:middle-pool-west-planter"
   ]
  },
  {
@@ -2334,6 +2370,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:eva"
   ]
  },
@@ -2369,7 +2406,9 @@
    103.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2250.jpg",
@@ -2403,7 +2442,9 @@
    101.7
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2251.jpg",
@@ -2436,7 +2477,9 @@
    101.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2252.jpg",
@@ -2475,7 +2518,7 @@
    "street:cervantes",
    "ramp:cervantes-elena-ramp",
    "steps:cervantes-elena-steps",
-   "elena_lane_paving.json:elena-south-three-column"
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -2514,6 +2557,7 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
+   "backdrop.json:aerial-trees",
    "frontage_divisions.json:cervantes-elena-lawn-2"
   ],
   "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage"
@@ -2552,6 +2596,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-planter-west"
@@ -2592,7 +2637,9 @@
    42.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2256.jpg",
@@ -2626,7 +2673,9 @@
    44.1
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2260.jpg",
@@ -2669,6 +2718,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ]
@@ -2715,6 +2765,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "frontage_divisions.json:cervantes-elena-lawn-1",
    "frontage_divisions.json:cervantes-lawn-door-path",
    "frontage_divisions.json:cervantes-elena-lawn-2"
@@ -2803,6 +2854,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ]
@@ -2845,6 +2897,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:cervantes",
+   "backdrop.json:aerial-trees",
    "cervantes_patio_walls.json:cervantes-patio-south-2",
    "cervantes_patio_walls.json:cervantes-patio-north-1"
   ]
@@ -2929,8 +2982,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:cervantes-parking-crossing",
    "street:cervantes",
-   "parking:Dalí car park",
-   "dali_cervantes_threshold.json:dali-bays-2"
+   "backdrop.json:aerial-trees",
+   "parking:Dalí car park"
   ]
  },
  {
@@ -2973,6 +3026,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-lawn-strip-1"
   ]
  },
@@ -3017,6 +3071,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-lawn-strip-2"
   ]
  },
@@ -3053,6 +3108,7 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-bays-1",
    "parking:Dalí car park",
+   "backdrop.json:aerial-trees",
    "street:dali"
   ]
  },
@@ -3089,6 +3145,7 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-bays-2",
    "parking:Dalí car park",
+   "backdrop.json:aerial-trees",
    "street:dali"
   ]
  },
@@ -3131,6 +3188,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:cervantes",
    "cervantes_patio_walls.json:cervantes-patio-north-1"
   ]
@@ -3175,6 +3233,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "frontage_divisions.json:cervantes-west-planting",
+   "backdrop.json:aerial-trees",
    "cervantes_patio_walls.json:cervantes-patio-north-1",
    "street:cervantes"
   ]
@@ -3225,6 +3284,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-1",
    "dali_cervantes_threshold.json:dali-lawn-strip-1"
   ]
@@ -3261,6 +3321,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
+   "backdrop.json:aerial-trees",
    "street:dali"
   ]
  },
@@ -3297,6 +3358,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
+   "backdrop.json:aerial-trees",
    "street:dali"
   ]
  },
@@ -3333,7 +3395,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
-   "street:dali"
+   "street:dali",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -3369,7 +3432,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
-   "street:dali"
+   "street:dali",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -3406,6 +3470,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:jorge",
+   "backdrop.json:aerial-trees",
    "parking:Dalí car park"
   ]
  },
@@ -3442,7 +3507,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
-   "street:dali"
+   "street:dali",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -3719,7 +3785,9 @@
    71.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2289.jpg",
@@ -3755,6 +3823,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-lawn-strip-1",
    "dali_cervantes_threshold.json:cervantes-parking-crossing"
   ]
@@ -3791,9 +3860,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "backdrop.json:aerial-trees",
    "dali_cervantes_threshold.json:dali-house-footpath-2",
-   "dali_cervantes_threshold.json:dali-bays-1",
-   "parking:Dalí car park"
+   "dali_cervantes_threshold.json:dali-bays-1"
   ]
  },
  {
@@ -3830,7 +3899,9 @@
    130.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2292.jpg",
@@ -3865,7 +3936,9 @@
    138.3
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2293.jpg",
@@ -3902,6 +3975,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:eva-west-footpath",
    "parking:Dalí car park",
    "street:patricia"
@@ -4213,9 +4287,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "cervantes_garden_door.json:cervantes-junction-north-bed",
+   "backdrop.json:aerial-trees",
    "cervantes_garden_door.json:cervantes-garden-door",
-   "cervantes_garden_door.json:cervantes-junction-north-patio",
-   "cervantes_garden_door.json:cervantes-junction-east-planter"
+   "cervantes_garden_door.json:cervantes-junction-north-patio"
   ],
   "subject": "The garden-door steps: two red treads and the threshold, the west bed's rounded end and the east planter"
  },
@@ -4302,7 +4376,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "frontage_divisions.json:cervantes-elena-lawn-1"
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -4345,6 +4420,7 @@
   "looksAtFeatures": [
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south",
+   "backdrop.json:aerial-trees",
    "frontage_divisions.json:cervantes-elena-lawn-2"
   ],
   "subject": "Calle Elena south outdoor path: three straight square-tile columns, beside lawns and planted frontage"
@@ -4387,7 +4463,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "pool_decks.json:middle-deck",
-   "pool:middle"
+   "pool:middle",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -4475,6 +4552,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:eva",
    "raised_terraces.json:middle-pool-oleander-bed"
   ]
@@ -4530,8 +4608,8 @@
   "looksAtFeatures": [
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
-   "street:silvia-north",
-   "middle_pool_south_gate.json:middle-pool-south-gate"
+   "backdrop.json:aerial-trees",
+   "street:silvia-north"
   ],
   "subject": "south gate, double iron leaves and the planter to its right"
  },
@@ -4572,10 +4650,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "middle_pool_south_gate.json:middle-pool-south-gate",
    "middle_pool_south_gate.json:middle-pool-south-forecourt",
-   "street:silvia-north",
-   "street:eva"
+   "street:silvia-north"
   ],
   "subject": "wall bench and blue/yellow tile panel in the west planter, inside the south gate"
  },
@@ -4614,6 +4692,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:eva"
   ],
   "subject": "Eva tiled lane beside lawns, clipped trees and dark lantern posts"
@@ -4652,7 +4731,9 @@
    73.7
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
   "subject": "Eva lawn beside clipped round tree and lantern post"
  },
  {
@@ -4690,6 +4771,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "eva_walled_lawn.json:eva-walled-lawn"
   ],
   "subject": "Brown Eva frontage door with yellow-flowered shrub beside lawn"
@@ -4730,6 +4812,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "eva_walled_lawn.json:eva-walled-lawn",
+   "backdrop.json:aerial-trees",
    "middle_pool.json:middle-pool-east-gateway"
   ],
   "subject": "White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard"
@@ -4771,6 +4854,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:eva",
    "middle_pool.json:middle-pool-east-gateway",
    "eva_walled_lawn.json:eva-walled-lawn"
@@ -4811,6 +4895,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "raised_terraces.json:middle-pool-curved-hedge-patio"
   ]
  },
@@ -4853,6 +4938,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "frontage_divisions.json:cervantes-elena-lawn-1",
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ]
@@ -4895,7 +4981,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:picasso"
+   "street:picasso",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -5288,6 +5375,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_east_patios.json:elena-east-patios-cervantes-wall",
+   "backdrop.json:aerial-trees",
    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
    "street:cervantes"
   ],
@@ -5336,8 +5424,8 @@
   "looksAtFeatures": [
    "cervantes_patio_walls.json:cervantes-patio-south-3",
    "street:cervantes",
-   "ramp:cervantes-elena-ramp",
-   "steps:cervantes-elena-steps"
+   "backdrop.json:aerial-trees",
+   "ramp:cervantes-elena-ramp"
   ],
   "subject": "The junction lawns south of Cervantes"
  },
@@ -5379,6 +5467,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-middle"
   ],
   "subject": "The walled patios along Cervantes"
@@ -5426,6 +5515,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_east_patios.json:elena-east-patios-cervantes-wall",
    "cervantes_east_hedge.json:cervantes-east-plumbago-kerb"
   ],
@@ -5467,7 +5557,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "elena_gated_entry.json:elena-gated-entry"
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "The gated tiled entry west of the covered walkway"
  },
@@ -5507,7 +5598,9 @@
    33.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
   "subject": "The terraces east of Elena north"
  },
  {
@@ -5554,7 +5647,7 @@
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-gateway",
-   "elena_north.json:elena-north-patio-east"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "The arched gateway at the north end of Elena"
  },
@@ -5595,9 +5688,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-magnolia-bed",
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-garden-wall",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "The magnolia bed and the lean-to roof beside it"
  },
@@ -5639,9 +5732,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "elena_north.json:elena-north-magnolia-bed",
+   "backdrop.json:aerial-trees",
    "elena_north.json:elena-north-garden-wall",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "The magnolia bed beside the Elena north lane"
  },
@@ -5688,7 +5781,7 @@
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
    "elena_east_patios.json:elena-east-patios-pergola",
-   "elena_north.json:elena-north-garden-door-path"
+   "backdrop.json:aerial-trees"
   ],
   "subject": "The private patios east of the Elena beds"
  },
@@ -5734,9 +5827,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:cervantes",
+   "backdrop.json:aerial-trees",
    "cervantes_garden_door.json:cervantes-junction-east-planter",
-   "cervantes_patio_walls.json:cervantes-patio-north-east",
-   "cervantes_patio_walls.json:cervantes-patio-south-3"
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
   ],
   "subject": "The Cervantes/Elena junction"
  },
@@ -5779,6 +5872,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-middle"
   ],
   "subject": "The walled patios north of Cervantes"
@@ -5823,6 +5917,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "cervantes_north_patios.json:cervantes-north-partition-middle"
   ],
   "subject": "The walled patios north of Cervantes"
@@ -6028,7 +6123,9 @@
    95.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
   "subject": "Narrow lane north of Teodoro Rojo"
  },
  {
@@ -6065,6 +6162,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-south-three-column",
    "street:elena-south"
   ],
@@ -6103,7 +6201,9 @@
    66.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
   "subject": "CALLE ELENA 25 covered passage into block 6265601UF1366N_part1"
  },
  {
@@ -6141,6 +6241,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north"
   ],
@@ -6181,6 +6282,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_gated_entry.json:elena-gated-entry"
   ],
   "subject": "Calle Elena covered walkway towards its west arch"
@@ -6219,7 +6321,9 @@
    50.6
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2549.jpg",
@@ -6254,7 +6358,9 @@
    106.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2559.jpg",
@@ -6290,7 +6396,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:patricia"
+   "street:patricia",
+   "backdrop.json:aerial-trees"
   ],
   "subject": "Calle Patricia looking east-north-east from its west end"
  },
@@ -6543,7 +6650,9 @@
    150.2
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
  },
  {
   "id": "IMG_2675.jpg",
@@ -6579,6 +6688,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "street:teodoro-rojo"
   ]
  },
@@ -6616,6 +6726,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-magnolia-bed"
