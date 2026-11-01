@@ -2324,7 +2324,7 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "Step 1 done 31 October: photo-matched plaster, terracotta, crazy paving and barrel tiles (CC0 Poly Haven, recoloured; public/textures/CREDITS.md), kit balcony tiles rebuilt in the same colour. Renders and notes in docs/reviews/north-pool-detail-pilot. Next: step 2, 3D planting."
+   "notes": "Step 1 done 31 October: photo-matched plaster, terracotta, crazy paving and barrel tiles (CC0 Poly Haven, recoloured; public/textures/CREDITS.md), kit balcony tiles rebuilt in the same colour. Step 2 done 1 November: 3D Strelitzia, clipped and flowering hedges, yucca and feather palm built in Blender (scripts/build_plants.py) replace the cards on larger screens. Renders and notes in docs/reviews/north-pool-detail-pilot. Next: step 3, pool details in Blender."
   }
  ]
 }

@@ -66,3 +66,13 @@ Walls listed in `data/facade_kit.json` get the parts read from the north-pool ph
 solved station camera, including two later parts: a rectangular shuttered window and a narrow
 arched window (`docs/reviews/facade-kit-traced`). The other walls are generated, one opening
 per 3.1 m as the flat shutters were.
+
+## 3D plants (November 2026, north pool pilot step 2)
+
+`scripts/build_plants.py` builds the Strelitzia, clipped hedge, flowering hedge, yucca and
+feather palm headless in Blender (`pip install bpy==5.2.3`), seeded so a rebuild is
+byte-identical, and exports them to `public/models/plants/` (about 0.9 MB). They are original
+models of the species seen in the north-pool photos, sized to the cards in `SPRITE_SIZE`.
+`addSprites` (`src/sprites.ts`) replaces those kinds' crossed cards with instanced copies once a
+model loads, keeping each card's position, turn, scale, `spriteKind` and `spriteWidth`, so the
+route-clearance guard and tests see the same footprints. Small screens keep the cards.
