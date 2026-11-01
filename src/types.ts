@@ -151,4 +151,10 @@ export type Skeleton = {
 };
 
 /** A hand-placed thing on the map. `evidence` says what it is based on: a photo, the aerial, or Dave. */
-export type MapObject = { id: string; kind: string; x: number; z: number; evidence?: string; note?: string };
+export type MapObject = {
+  id: string; kind: string; x: number; z: number; evidence?: string; note?: string;
+  /** Pool steps only: how the treads are laid (src/water.ts poolSteps); straight unless set. */
+  steps?: { form?: "straight" | "curved"; length?: number; wallAt?: Vec2 };
+  /** Pool ladders only: draw this fitting instead, where a photo shows a step handrail. */
+  fitting?: "ladder" | "step-rail";
+};

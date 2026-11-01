@@ -83,3 +83,55 @@ the flowering one with red flowers, and the Strelitzia clumps as clumps of paddl
 leaves. Still different: the photo hedges are darker and more finely textured; the
 large tree and bougainvillea are still cards; the yucca and Strelitzia are original
 models of the species, not traced from the actual plants.
+
+## Step 3: pool details (1 November 2026)
+
+The `-after` renders now include step 3. Compared first against IMG_2204-2206 (north pool),
+IMG_2195 (middle pool close-up) and the two south-pool web photos:
+
+- **Ladders, step handrails and life rings built in Blender** (`scripts/build_pool_kit.py`,
+  `public/models/pool/`, about 90 kB together, byte-identical on rebuild). The ladder is two
+  goose-neck stainless rails anchored on the deck half a metre back, arching over the coping and
+  down into the water with three treads, as on the north pool's deck tongue (IMG_2204). The step
+  handrail is a post with an upper and lower bar sloping down over the treads (IMG_2204 north
+  steps, IMG_2195). The life ring hangs from the hook of a steel post, with four white bands and
+  a grab line (IMG_2204, IMG_2195, south-pool-02). `src/pool-kit.ts` instances them at the same
+  props: ladders on the nearest wall point (all within 0.4 m, except two main-pool ladders over
+  2 m off, which stay at their markers) facing into the pool; rings facing the nearest pool.
+- **Handrails at straight steps:** one just inside each end of the north and south steps, as in
+  IMG_2204 and south-pool-01. The north and south steps stay straight, as photographed.
+- **Bullnose coping:** each slab's edge over the water is now a 3.5 cm quarter-round over a
+  plain face, as in IMG_2195 and IMG_2204; joints and the three tones are unchanged.
+- **Curved middle-pool steps:** IMG_2195 shows three treads curving round the inside of a lobe
+  end, with the double handrail at their west end. Steps can now be laid along the wall's curve
+  (`"steps": {"form": "curved"}` on the entry in `data/objects.json`). The middle pool's steps
+  (`o26`) are curved, 3.4 m along the wall, centred on the wall by the `wallAt` point
+  (-123.45, 87.74): from beside `o27` round into the north-east lobe end, read by eye from
+  IMG_2195. The `o26` marker itself, 2 m out in the water, is unchanged; centred on its nearest
+  wall the flight overlapped `o27` and ran straight. `o27` is drawn as the step handrail it is in
+  the photo (`"fitting": "step-rail"`), not a ladder.
+
+Middle and south pools were compared through hand-placed cameras only (IMG_2195 and the web
+photos are not solved), so the curved steps' place is a reading by eye, not a measurement.
+
+Still different from the photos: the rails are thinner and duller from the high north cameras
+than the bright stainless in IMG_2204, and the step handrails' posts are shorter; the glass pool
+fence, the shower posts and the waterline tile pattern are not built; the north pool deck is wider
+and stair-stepped and lacks the squared tongue east of the steps (`pool-deck-outline`, below).
+
+### Deck outline (`pool-deck-outline`): left open
+
+Looking through the solved IMG_2204-2206 cameras, the photographed deck is a band about
+1.5-2 m wide with a straight-edged tongue reaching into the water east of the steps, where the
+pump box stands; the model's deck, from the 0.25 m cover classes, is wider round the east and
+south and stair-stepped at its outer edge. Two findings stop a proper trace in this step:
+- the squared tongue is an edge of the *water*, not only of the deck: in IMG_2204-2206 the pool
+  wall itself turns square round it, while the registry water ring is a smooth curve there, so
+  matching the photo means moving the ring, which needs measured evidence and placement approval
+  (docs/PLACEMENT_VERIFICATION.md) that this step did not have;
+- the deck's outer edge is hidden behind the frosted bands of the glass fence along most of its
+  length in all three photos, so edge points would have to be picked between fence panels and
+  posts, and no deck-edge residuals were measured.
+A follow-up should pick deck-edge and tongue points in IMG_2204-2206 between the fence panels,
+solve them with `scripts/photo_pose.py` against the aerial, and record residuals before any
+outline or ring change.
