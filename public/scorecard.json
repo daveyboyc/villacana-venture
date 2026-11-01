@@ -183,7 +183,7 @@
     "generated": 89
    },
    "placement": {
-    "features": 6,
+    "features": 7,
     "verified": 0,
     "disputed": 0
    },
@@ -198,7 +198,7 @@
     ]
    },
    "confidence": {
-    "photographed": 5,
+    "photographed": 6,
     "estimated": 1,
     "inferred": 0,
     "registry": 0,
@@ -209,8 +209,8 @@
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 12, 6 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
-    "How sure: 5 photographed, 1 estimated, 0 inferred.",
-    "Placement: 0 of 6 features verified."
+    "How sure: 6 photographed, 1 estimated, 0 inferred.",
+    "Placement: 0 of 7 features verified."
    ],
    "light": {
     "colour": "red",
@@ -290,7 +290,7 @@
     "generated": 40
    },
    "placement": {
-    "features": 22,
+    "features": 23,
     "verified": 0,
     "disputed": 3
    },
@@ -327,7 +327,7 @@
    },
    "confidence": {
     "photographed": 9,
-    "estimated": 11,
+    "estimated": 12,
     "inferred": 2,
     "registry": 0,
     "gaps": 0
@@ -337,8 +337,8 @@
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 23, 16 placed; no camera solved.",
     "Facades: 0 of 40 kit parts traced from photos.",
-    "How sure: 9 photographed, 11 estimated, 2 inferred.",
-    "Placement: 0 of 22 features verified, 5 open discrepancies."
+    "How sure: 9 photographed, 12 estimated, 2 inferred.",
+    "Placement: 0 of 23 features verified, 5 open discrepancies."
    ],
    "light": {
     "colour": "amber",
@@ -398,7 +398,7 @@
     "generated": 29
    },
    "placement": {
-    "features": 1,
+    "features": 2,
     "verified": 0,
     "disputed": 0
    },
@@ -412,7 +412,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 1,
+    "estimated": 2,
     "inferred": 0,
     "registry": 0,
     "gaps": 0
@@ -422,8 +422,8 @@
     "Footprints: 98% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 6, 3 placed; no camera solved.",
     "Facades: 0 of 29 kit parts traced from photos.",
-    "How sure: 0 photographed, 1 estimated, 0 inferred.",
-    "Placement: 0 of 1 features verified."
+    "How sure: 0 photographed, 2 estimated, 0 inferred.",
+    "Placement: 0 of 2 features verified."
    ],
    "light": {
     "colour": "red",
@@ -1684,7 +1684,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 380,
+    "features": 383,
     "verified": 0,
     "disputed": 6
    },
@@ -1736,8 +1736,8 @@
     ]
    },
    "confidence": {
-    "photographed": 55,
-    "estimated": 84,
+    "photographed": 56,
+    "estimated": 86,
     "inferred": 8,
     "registry": 233,
     "gaps": 5
@@ -1747,8 +1747,8 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 182, 165 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 55 photographed, 84 estimated, 8 inferred, 5 known gaps.",
-    "Placement: 0 of 380 features verified, 9 open discrepancies."
+    "How sure: 56 photographed, 86 estimated, 8 inferred, 5 known gaps.",
+    "Placement: 0 of 383 features verified, 9 open discrepancies."
    ],
    "light": {
     "colour": "red",

@@ -411,6 +411,8 @@ async function boot(): Promise<void> {
   silviaOverlay.addEventListener('click',visitSilvia);silviaOverlay.addEventListener('keydown',event=>{if(event.key==='Enter')visitSilvia();});
   world.append(silviaOverlay);
 
+  // The measured stone decks round the small pools (data/pool_decks.json), the same outline as in 3D.
+  for (const p of skeleton.pools) if (p.deck) world.append(el("path", { d: path(p.deck), fill: skeleton.cover.classes.deck, stroke: "#c9bb9c", "stroke-width": 0.08, "data-deck-id": p.id }));
   for (const p of skeleton.pools) {
     world.append(el("path", { d: path(p.ring), fill: "#4fc3e8", stroke: "#f4eede", "stroke-width": 1, "stroke-linejoin": "round" }));
   }

@@ -465,6 +465,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "pool_decks.json:middle-deck",
    "street:eva",
    "pool:middle"
   ]
@@ -504,6 +505,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "pool_decks.json:middle-deck",
    "pool:middle",
    "street:eva"
   ]
@@ -534,6 +536,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool_decks.json:middle-deck",
    "middle_pool_north.json:middle-pool-north-door-wall",
    "middle_pool_north.json:middle-pool-north-pergola"
   ],
@@ -543,6 +546,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "pool_decks.json:middle-deck",
    "pool:middle"
   ]
  },
@@ -938,6 +942,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool_decks.json:north-deck",
    "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-west-terrace",
    "raised_terraces.json:north-pool-north-patios"
@@ -948,7 +953,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "pool:north"
+   "pool:north",
+   "pool_decks.json:north-deck"
   ],
   "subject": "The north pool"
  },
@@ -981,6 +987,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool_decks.json:north-deck",
    "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-north-patios"
   ],
@@ -990,7 +997,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "pool:north"
+   "pool:north",
+   "pool_decks.json:north-deck"
   ],
   "subject": "The north pool"
  },
@@ -1021,6 +1029,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool_decks.json:north-deck",
    "north_pool_gardens.json:north-pool-lawn-path",
    "raised_terraces.json:north-pool-west-terrace"
   ],
@@ -1030,7 +1039,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "pool:north"
+   "pool:north",
+   "pool_decks.json:north-deck"
   ],
   "subject": "The north pool, west side"
  },
@@ -1068,7 +1078,9 @@
    27.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "pool_decks.json:north-deck"
+  ],
   "subject": "The north pool garden below the roof",
   "headingOff": 60
  },
@@ -1108,7 +1120,9 @@
    26.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "pool_decks.json:north-deck"
+  ],
   "subject": "The north pool garden and path below the roof"
  },
  {
@@ -2201,7 +2215,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "pool:middle"
+   "pool:middle",
+   "pool_decks.json:middle-deck"
   ]
  },
  {
@@ -4371,6 +4386,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "pool_decks.json:middle-deck",
    "pool:middle"
   ]
  },
@@ -7136,7 +7152,9 @@
   ],
   "sourceRevision": null,
   "note": "Found on the web. Reference only, never publish.",
-  "citedBy": []
+  "citedBy": [
+   "pool_decks.json:south-deck"
+  ]
  },
  {
   "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
@@ -7155,7 +7173,9 @@
   ],
   "sourceRevision": null,
   "note": "Found on the web. Reference only, never publish.",
-  "citedBy": []
+  "citedBy": [
+   "pool_decks.json:south-deck"
+  ]
  },
  {
   "id": "ref:web/south-pool-03-lawn-from-north-west.jpg",

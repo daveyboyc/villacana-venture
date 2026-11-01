@@ -25,6 +25,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 from build_seafront import build_seafront
+from pool_deck import deck_outline
 
 ROOT = Path(__file__).resolve().parents[1]
 CATASTRO = ROOT / "data" / "catastro"
@@ -47,8 +48,8 @@ COVER_CELL = 0.25
 # The south pool's lawn runs down to a wall above the paseo instead, so its
 # ground is traced by hand in data/south_pool.json.
 COURTYARD_POOLS = ("north", "middle")
-# Courtyard rings, in metres out from the pool's rounded outline.
-DECK_WIDTH = 2.4
+# The stone deck round each small pool is a band of measured width out from its water ring
+# (data/pool_decks.json, scripts/pool_deck.py), written to pools[].deck.
 # The crazy-paving path runs round the outside of the lawn, at the foot of the garden walls.
 PATH_WIDTH = 1.5
 COURTYARD_REACH = 30.0
@@ -242,6 +243,10 @@ def build_pools() -> list[dict]:
         ring = [tuple(p) for p in pool["ring"]]
         pool["centre"] = [round(v, 2) for v in centroid(ring)]
         pool["ring"] = rounded(smooth_ring(ring))
+    decks = {d["id"]: d for d in json.loads((ROOT / "data" / "pool_decks.json").read_text())["pools"]}
+    for pool in pools:
+        if pool["id"] in decks:
+            pool["deck"] = deck_outline(pool["ring"], decks[pool["id"]])
     return pools
 
 
@@ -394,6 +399,10 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         return np.asarray(img) > 0
 
     near_pool = mask([p["ring"] for p in pools], grow=7.0)
+
+    def deck_band(pool: dict) -> np.ndarray:
+        """Inside the measured deck's outer edge (the water too, as before: the pools are cut out of the ground)."""
+        return mask([pool["deck"]])
     pale = (bright > 165) & (np.abs(r - b) < 45)
 
     cls = np.zeros((height, width), dtype=np.uint8)  # 0 paving
@@ -473,7 +482,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
                     gates.append([round(x, 2), round(z, 2)])
                 continue
             walls.append([round(x, 2), round(z, 2)])
-        cls[(dist < DECK_WIDTH) & ~built] = 3
+        cls[deck_band(pool) & ~built] = 3
 
     # The south pool: stone deck, lawn between the two terraces down to the wall
     # above the paseo, a cross path at the top and low curved walls on the lawn.
@@ -486,7 +495,7 @@ def build_cover(buildings: list[dict], pools: list[dict]) -> dict:
         ImageDraw.Draw(south_paths).line([cell(unturned(tuple(p))) for p in line], fill=255,
                                          width=round(south["pathWidth"] / COVER_CELL), joint="curve")
     cls[(np.asarray(south_paths) > 0) & ~built] = 4
-    cls[(dist < DECK_WIDTH) & ~built] = 3
+    cls[deck_band(next(p for p in pools if p["id"] == "south")) & ~built] = 3
     for line in south["walls"]:
         for a, b in zip(line, line[1:]):
             for i in range(int(math.dist(a, b) / WALL_STEP) + 1):

@@ -274,6 +274,18 @@
   "beach_verge.json:barraka-front-shrubs": {
    "level": "estimated",
    "why": "Shrub clumps placed on the dark clumps of the aerial; sizes and species unknown until close photos."
+  },
+  "pool_decks.json:north-deck": {
+   "level": "photographed",
+   "why": "Deck edge picked at 38 points in IMG_2204 and cast through its solved camera; the fitted outline is within 0.15 m rms of them (worst 0.48 m) and 0.36 m rms of the aerial edge. The squared tongue east of the steps is not built: it is also a water edge the registry ring does not follow."
+  },
+  "pool_decks.json:middle-deck": {
+   "level": "estimated",
+   "why": "Fitted to the pale deck on the aerial (0.24 m pixels), 0.31 m rms on held-out points; no solved camera, and the deck south-south-west of the pool is hidden by a tree canopy on the aerial, so the width there is interpolated."
+  },
+  "pool_decks.json:south-deck": {
+   "level": "estimated",
+   "why": "Fitted to the pale deck on the aerial (0.24 m pixels), 0.21 m rms on held-out points; the web photos show the same even band but have no solved camera."
   }
  },
  "gaps": [

@@ -28,6 +28,11 @@
       "path": "public/photos-ref/IMG_2349.jpg"
     },
     {
+      "id": "IMG_2645.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2645.jpg"
+    },
+    {
       "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
       "private": true,
       "path": "villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png"

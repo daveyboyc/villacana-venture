@@ -42,9 +42,12 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["South pool"]
-  A --> F0["South lawn above the paseo · unreviewed"]
-  F0 --> PIMG_2188_jpg(["IMG_2188"])
-  F0 --> PIMG_2349_jpg(["IMG_2349"])
+  A --> F0["South pool deck · unreviewed"]
+  F0 --> Pref_web_south_pool_01_looking_north_palm_jpg(["south-pool-01-looking-north-palm"])
+  F0 --> Pref_web_south_pool_02_looking_south_east_sea_jpg(["south-pool-02-looking-south-east-sea"])
+  A --> F1["South lawn above the paseo · unreviewed"]
+  F1 --> PIMG_2188_jpg(["IMG_2188"])
+  F1 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
 ## Placement evidence
@@ -53,6 +56,7 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `pool_decks.json:south-deck` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `south_pool.json:south-pool-seaward-level` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 **Built without complete newer photo-check records:** `south-pool-seaward-level`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
@@ -62,9 +66,9 @@ graph LR
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. _Used by: south_pool.json:south-pool-seaward-level._ |
+| `villacana-reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. _Used by: pool_decks.json:south-deck._ |
+| `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. _Used by: pool_decks.json:south-deck._ |
 | [IMG_2645.jpg](../../public/photos-ref/IMG_2645.jpg) | ground | facades, layout, planting | South pool lawn and houses |
-| `villacana-reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. |
-| `villacana-reference/web/south-pool-02-looking-south-east-sea.jpg` | ground | layout, view | South pool looking south-east: sea beyond, low white wall and fence at the seaward edge **Note:** Found on the web. Reference only, never publish. |
 | `villacana-reference/web/south-pool-03-lawn-from-north-west.jpg` | ground | layout, materials | South lawn from the north-west: curved low white wall, bollard lights, loungers **Note:** Found on the web; has people in it. Reference only, never publish. |
 | `villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |

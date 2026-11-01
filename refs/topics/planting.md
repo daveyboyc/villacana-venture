@@ -36,8 +36,8 @@ Trees, hedges, palms, climbers and beds.
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2188.jpg](../../public/photos-ref/IMG_2188.jpg) | ground | layout, view, planting | South pool from a patio: lawn, tall palm, sea beyond **Note:** Shows the glass pool fence, which Dave decided to skip. _Used by: south_pool.json:south-pool-seaward-level._ |
+| `villacana-reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. _Used by: pool_decks.json:south-deck._ |
 | [IMG_2645.jpg](../../public/photos-ref/IMG_2645.jpg) | ground | facades, layout, planting | South pool lawn and houses |
-| `villacana-reference/web/south-pool-01-looking-north-palm.jpg` | ground | facades, planting | South pool looking north: date palm, two-storey terraces, hedged patios **Note:** Found on the web. Reference only, never publish. |
 
 ## Calle Elena
 

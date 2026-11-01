@@ -23,6 +23,11 @@
       "path": "public/photos-ref/IMG_2226.jpg"
     },
     {
+      "id": "IMG_2600.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2600.jpg"
+    },
+    {
       "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
       "private": true,
       "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png"

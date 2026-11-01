@@ -135,3 +135,52 @@ south and stair-stepped at its outer edge. Two findings stop a proper trace in t
 A follow-up should pick deck-edge and tongue points in IMG_2204-2206 between the fence panels,
 solve them with `scripts/photo_pose.py` against the aerial, and record residuals before any
 outline or ring change.
+
+## Step 4: the deck band round the small pools (1 November 2026)
+
+Dave, after looking at the live site: "The border around the pool is wrong." The pale stone deck
+round the north, middle and south pools came from the 0.25 m ground cover, stamped as a 2.4 m band
+round each pool's *convex hull*: an irregular, stair-stepped blob, far too wide round the lobes. In
+the photos it is a band following the pool, with a crisp curved outer edge where the glass fence
+stands (the fence is still not modelled).
+
+**Measured, not guessed** (`scripts/measure_pool_decks.py`, data in `data/pool_decks.json`):
+- *North pool, through the solved IMG_2204 camera:* 38 pixels picked on the deck's outer edge
+  (where the paler edging stone meets the lawn, just outside the fence spigots) are cast onto the
+  deck level (0.82 m, `data/terrain.json`). They give widths from the water ring of 1.1-1.3 m
+  south-west, 1.6-1.8 m south, 2.3-2.9 m north (by the steps) and up to 3.4 m east, where the
+  pump box stands on the squared tongue. `deck-IMG_2204-north.jpg` shows the picks (magenta), the
+  fitted edge (yellow) and uniform bands of 1.2, 1.5, 1.8 and 2.2 m projected through the same
+  camera: none of the uniform widths follows the edge (best 0.67 m rms), so the width varies
+  with bearing.
+- *All three pools, on the aerial:* the Esri image is registered to each pool by sliding its blue
+  water onto the registry water ring (shifts of 0.8-1.4 m; water overlap 0.76-0.82), then the
+  pale deck's edge is found along rays every 3° (`deck-aerial-*.jpg`). Under the tree canopy
+  south-south-west of the middle pool the deck is hidden; those bearings are skipped.
+- *Fit:* the band is the ground within a width of the ring, the width set at 12 compass bearings
+  (linear between), softened with a 1 m Gaussian (1.5 m at the south pool) so the outer edge is a
+  clean curve over the bays between lobes.
+
+| Pool | Fitted on | Fit rms (worst) | Held-out check rms | Widths (m) | Best uniform width, rms |
+| --- | --- | --- | --- | --- | --- |
+| North | 38 IMG_2204 picks | 0.15 m (0.48) | aerial, 0.36 m (74/80 within 1 m) | 1.3-2.8 | 1.8-2.2 m, 0.67 m |
+| Middle | 29 aerial points | 0.26 m | other 28 aerial points, 0.31 m | 1.3-2.0 | 1.8 m, 0.72 m |
+| South | 55 aerial points | 0.20 m | other 54 aerial points, 0.21 m | 1.8-2.5 | 2.2 m, 0.36 m |
+
+**Built:** `scripts/build_skeleton.py` writes each deck's outline (`pools[].deck` in skeleton.json,
+via `scripts/pool_deck.py`) and draws that band into the cover classes instead of the hull band, so
+lawn runs up to it. The scene (`src/pool-deck.ts`) lays it as a slab deck 3 cm above the lawn with
+rounded paler edging stones along the outer edge, as at the foot of the fence in IMG_2204; the
+ground's own painted deck stops just inside it, so no pale fringe shows. The 2D map draws the same
+outline. Grass tufts keep off the deck. Walking heights are unchanged (3 cm). The main and toddler
+pools keep their surroundings: their web photos show a broad apron, not this problem.
+
+`deck-before-after.jpg`: photo, step 3 and step 4 through IMG_2204-2206 (solved cameras), IMG_2195
+and a hand-placed south-pool camera (its web photo stays in the private reference repo).
+
+Still different: the squared deck tongue east of the north steps is also an edge of the *water*
+(the pool wall turns square round it), which the registry ring does not follow, so it can only be
+built by moving the ring with placement approval; the deck in the photos is a slightly greyer cream
+with wider joints; the glass fence is not built. Middle and south widths come from the 0.24 m
+aerial only. No placement packet: approval needs an independent reviewer, so the decks remain
+unapproved placements (`pool-deck-outline` stays open for the tongue).
