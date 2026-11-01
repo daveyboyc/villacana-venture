@@ -28,6 +28,7 @@ import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
 import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
 import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
+import {addPoolDecks,onPoolDeck,paintPoolDecks} from "./pool-deck";
 import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
@@ -220,6 +221,7 @@ async function boot(): Promise<void> {
   if (seaside && mainPool) { const sd = seaside; addSeafrontFence(scene, (x, z) => sd.y(x, z)); }
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
+  addPoolDecks(scene, nearbyPools, deckSlabCanvas(), skeleton.viewRotation);
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
   addProps(scene, poolRings, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
 
@@ -684,6 +686,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   // leaves in-between colours that read as a pale halo between deck and lawn. Blur
   // each class on its own and keep the strongest: smooth curves, no mixed colours.
   smoothClassEdges(pctx, size, Object.values(skeleton.cover.classes), Math.max(3, (size / (span * 2)) * 0.5));
+  // The measured pool decks keep their clean curved edge (src/pool-deck.ts).
+  paintPoolDecks(pctx, size, [centre.x - span, centre.z - span], span * 2, skeleton.pools, skeleton.cover.classes.deck, skeleton.cover.classes.lawn);
   // Paint short blades all over the lawn so it reads as grass right to its edges.
   const painted = pctx.getImageData(0, 0, size, size).data;
   // Keep classification pixels intact, but make the rendered turf less saturated.
@@ -868,7 +872,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
   addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD && !inElenaNorthReview(p.x, p.z)));
   // Tufts only near the courtyards; the painted blades cover lawns further off.
-  addSprites(scene, "grass", scatter(0.8, "lawn", RADIUS).filter((p) => fromCourt(p) < 45 && !inElenaNorthReview(p.x, p.z)).map((p) => ({ ...p, scale: 0.16 + hash(p.x, p.z) * 0.14 })));
+  const onDeck = onPoolDeck(skeleton.pools, 0.2);
+  addSprites(scene, "grass", scatter(0.8, "lawn", RADIUS).filter((p) => fromCourt(p) < 45 && !inElenaNorthReview(p.x, p.z) && !onDeck(p.x, p.z)).map((p) => ({ ...p, scale: 0.16 + hash(p.x, p.z) * 0.14 })));
 }
 
 function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {

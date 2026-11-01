@@ -119,17 +119,19 @@ graph LR
   A --> F17["Middle pool · south-west gateway above the stone steps · unreviewed"]
   F17 --> PIMG_2332_jpg(["IMG_2332"])
   F17 --> PIMG_2333_jpg(["IMG_2333"])
-  A --> F18["Middle pool · short uncertain curved hedge patio · unreviewed"]
-  F18 --> PIMG_2341_jpg(["IMG_2341"])
-  A --> F19["Middle pool · bounded north raised patio · unreviewed"]
-  F19 --> PIMG_2193_jpg(["IMG_2193"])
-  F19 --> PIMG_2194_jpg(["IMG_2194"])
-  A --> F20["Middle pool · shallow oleander bed beside patio · unreviewed"]
-  F20 --> PIMG_2246_jpg(["IMG_2246"])
-  F20 --> PIMG_2247_jpg(["IMG_2247"])
-  A --> F21["Middle pool · stone steps up to Calle Eva · unreviewed"]
-  F21 --> PIMG_2248_jpg(["IMG_2248"])
-  F21 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F18["Middle pool deck · unreviewed"]
+  F18 --> PIMG_2195_jpg(["IMG_2195"])
+  A --> F19["Middle pool · short uncertain curved hedge patio · unreviewed"]
+  F19 --> PIMG_2341_jpg(["IMG_2341"])
+  A --> F20["Middle pool · bounded north raised patio · unreviewed"]
+  F20 --> PIMG_2193_jpg(["IMG_2193"])
+  F20 --> PIMG_2194_jpg(["IMG_2194"])
+  A --> F21["Middle pool · shallow oleander bed beside patio · unreviewed"]
+  F21 --> PIMG_2246_jpg(["IMG_2246"])
+  F21 --> PIMG_2247_jpg(["IMG_2247"])
+  A --> F22["Middle pool · stone steps up to Calle Eva · unreviewed"]
+  F22 --> PIMG_2248_jpg(["IMG_2248"])
+  F22 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Placement evidence
@@ -156,6 +158,7 @@ graph LR
 | `middle_pool_south_gate.json:middle-pool-south-forecourt` | disputed | differs | open discrepancy middle-south-forecourt-trace; open discrepancy photo-discrepancy:9579a59d07ca4c03 |
 | `middle_pool_south_gate.json:middle-pool-south-gate` | disputed | differs | open discrepancy middle-south-pool-spacing; open discrepancy photo-discrepancy:98f50a7718586a39 |
 | `middle_pool_sw_gateway.json:middle-pool-sw-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `pool_decks.json:middle-deck` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:middle-pool-curved-hedge-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:middle-pool-north-terrace` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:middle-pool-oleander-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -184,9 +187,9 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2332.jpg](../../public/photos-ref/IMG_2332.jpg) | ground | layout, levels, materials, planting | Middle pool west side: path between the deck and a raised planter wall **Note:** GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola, middle_pool_north.json:middle-pool-north-white-steps._ |
 | [IMG_2331.jpg](../../public/photos-ref/IMG_2331.jpg) | ground | layout, materials | Middle pool north: crazy-paving path opening onto the lawn and pool **Note:** GPS ±17 m. _Used by: middle_pool.json:middle-pool-west-planter, middle_pool_north.json:middle-pool-north-planter-cap, middle_pool_north.json:middle-pool-north-white-steps._ |
 | [IMG_2333.jpg](../../public/photos-ref/IMG_2333.jpg) | ground | levels, layout | Middle pool south-west: stone steps up a tiled path to a gate _Used by: middle_pool_sw_gateway.json:middle-pool-sw-gateway, middle_pool.json:middle-pool-west-planter, steps:middle-pool-sw-steps._ |
+| [IMG_2195.jpg](../../public/photos-ref/IMG_2195.jpg) | ground | materials | Middle pool close up: cream deck, ladders, life rings _Used by: pool_decks.json:middle-deck, middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola._ |
 | [IMG_2335.jpg](../../public/photos-ref/IMG_2335.jpg) | ground | layout, materials, facades | Middle pool south: raised white planter with a blue tile panel **Looks at:** wall bench and blue/yellow tile panel in the west planter, inside the south gate. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt._ |
 | [IMG_2192.jpg](../../public/photos-ref/IMG_2192.jpg) | ground | layout, materials | Crazy-paving path between hedges into the middle pool lawn _Used by: middle_pool_south_gate.json:middle-pool-south-gate, entrance_planters.json:silvia-pool-entry-hedge-kerb._ |
-| [IMG_2195.jpg](../../public/photos-ref/IMG_2195.jpg) | ground | materials | Middle pool close up: cream deck, ladders, life rings _Used by: middle_pool_north.json:middle-pool-north-door-wall, middle_pool_north.json:middle-pool-north-pergola._ |
 | [IMG_2193.jpg](../../public/photos-ref/IMG_2193.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind _Used by: raised_terraces.json:middle-pool-north-terrace._ |
 | [IMG_2194.jpg](../../public/photos-ref/IMG_2194.jpg) | ground | layout, facades | Middle pool, lawn and terraces behind (second shot) _Used by: raised_terraces.json:middle-pool-north-terrace._ |
 | [IMG_2245.jpg](../../public/photos-ref/IMG_2245.jpg) | ground | materials, layout | Middle pool lobe, deck and glass fence close up _Used by: middle_pool.json:middle-pool-west-planter._ |

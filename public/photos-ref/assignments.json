@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "ebaadfaa338674f7b337d8e95356428c2532d358635648da837d45995e32c9c8",
+ "inputDigest": "83bf13075478a1b4e9601e2a13360a295b8f871d4f46742d0914b5fe8f2d731c",
  "summary": {
   "unplaced": 1,
   "suggested": 90,
   "needs-review": 75,
   "photos": 166,
-  "features": 380,
+  "features": 383,
   "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 126
+  "modelFeaturesWithPhotoCitations": 129
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -558,6 +558,7 @@
     }
    ],
    "citedBy": [
+    "pool_decks.json:middle-deck",
     "middle_pool_north.json:middle-pool-north-door-wall",
     "middle_pool_north.json:middle-pool-north-pergola"
    ],
@@ -988,6 +989,7 @@
     }
    ],
    "citedBy": [
+    "pool_decks.json:north-deck",
     "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace",
     "raised_terraces.json:north-pool-north-patios"
@@ -1022,6 +1024,7 @@
     }
    ],
    "citedBy": [
+    "pool_decks.json:north-deck",
     "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-north-patios"
    ],
@@ -1060,6 +1063,7 @@
     }
    ],
    "citedBy": [
+    "pool_decks.json:north-deck",
     "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace"
    ],

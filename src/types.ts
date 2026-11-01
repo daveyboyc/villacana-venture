@@ -93,6 +93,8 @@ export type SkeletonPool = {
   id: string;
   kind: "small" | "main" | "toddler";
   ring: Vec2[];
+  /** Outer edge of the measured stone deck round a small pool (data/pool_decks.json). */
+  deck?: Vec2[];
 };
 
 export type Seafront = {

@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "ebaadfaa338674f7b337d8e95356428c2532d358635648da837d45995e32c9c8",
+ "inputDigest": "83bf13075478a1b4e9601e2a13360a295b8f871d4f46742d0914b5fe8f2d731c",
  "summary": {
   "unplaced": 1,
   "suggested": 90,
   "needs-review": 75,
   "photos": 166,
-  "features": 380,
+  "features": 383,
   "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 126
+  "modelFeaturesWithPhotoCitations": 129
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1801,6 +1801,36 @@
    "name": "south pool",
    "kind": "pool",
    "source": "registry"
+  },
+  {
+   "id": "pool_decks.json:north-deck",
+   "name": "North pool deck",
+   "kind": "reference feature",
+   "source": "measured band from the registry water ring; photo picks through the solved cameras",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ]
+  },
+  {
+   "id": "pool_decks.json:middle-deck",
+   "name": "Middle pool deck",
+   "kind": "reference feature",
+   "source": "measured band from the registry water ring; every other aerial edge point",
+   "evidence": [
+    "IMG_2195.jpg"
+   ]
+  },
+  {
+   "id": "pool_decks.json:south-deck",
+   "name": "South pool deck",
+   "kind": "reference feature",
+   "source": "measured band from the registry water ring; every other aerial edge point",
+   "evidence": [
+    "ref:web/south-pool-01-looking-north-palm.jpg",
+    "ref:web/south-pool-02-looking-south-east-sea.jpg"
+   ]
   },
   {
    "id": "parking:Picasso car park",
@@ -4303,6 +4333,16 @@
    "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
    "kind": "reference",
    "name": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
+  },
+  {
+   "id": "ref:web/south-pool-01-looking-north-palm.jpg",
+   "kind": "reference",
+   "name": "ref:web/south-pool-01-looking-north-palm.jpg"
+  },
+  {
+   "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
+   "kind": "reference",
+   "name": "ref:web/south-pool-02-looking-south-east-sea.jpg"
   }
  ],
  "edges": [
@@ -4675,6 +4715,12 @@
    "relation": "possibly-in-view",
    "distance": 35.6,
    "angleOffset": 28.3
+  },
+  {
+   "from": "photo:IMG_2195.jpg",
+   "to": "pool_decks.json:middle-deck",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2195.jpg",
@@ -5134,6 +5180,12 @@
   },
   {
    "from": "photo:IMG_2204.jpg",
+   "to": "pool_decks.json:north-deck",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
    "to": "north_pool_gardens.json:north-pool-lawn-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -5163,6 +5215,12 @@
    "relation": "possibly-in-view",
    "distance": 39.7,
    "angleOffset": 8.2
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "pool_decks.json:north-deck",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2205.jpg",
@@ -5196,6 +5254,12 @@
    "relation": "possibly-in-view",
    "distance": 35.8,
    "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "pool_decks.json:north-deck",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",
@@ -9802,6 +9866,18 @@
   {
    "from": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
    "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:web/south-pool-01-looking-north-palm.jpg",
+   "to": "pool_decks.json:south-deck",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:web/south-pool-02-looking-south-east-sea.jpg",
+   "to": "pool_decks.json:south-deck",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   }

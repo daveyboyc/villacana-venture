@@ -39,6 +39,10 @@ def features(s):
         add('elena_lane_paving.json:'+f['id'],f['name'],'reference feature',f['trust'],points=r['points'],width=r['width'],evidence=f['evidence'])
     for b in s['buildings']:add('building:'+b['id'],b['id'],'building','registry',ring=b['ring'],passage=bool(b.get('passage')),**({'notStanding':True,'evidence':b['notStanding']['evidence']} if b.get('notStanding') else {}))
     for p in s['pools']:add('pool:'+p['id'],p['id']+' pool','pool','registry',ring=p['ring'])
+    # The measured stone decks round the small pools (data/pool_decks.json; outline built into skeleton.json).
+    for d in json.loads((ROOT/'data/pool_decks.json').read_text())['pools']:
+        p=next(p for p in s['pools'] if p['id']==d['id'])
+        add('pool_decks.json:'+d['id']+'-deck',d['name'],'reference feature','measured band from the registry water ring; '+d['measurement']['fittedOn'],ring=p['deck'],evidence=[e for e in d['evidence'] if e!='map:ground'])
     for p in s.get('areas',[]):
         if p.get('kind')=='car_park':add('parking:'+p['name'],p['name'],'parking','map layout',ring=p['ring'])
     sf=s.get('seafront',{})

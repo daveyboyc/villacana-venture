@@ -74,15 +74,19 @@ graph LR
   F3 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F3 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F3 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F4["North pool · low northern patio plinths and white steps · unreviewed"]
+  A --> F4["North pool deck · unreviewed"]
   F4 --> PIMG_2204_jpg(["IMG_2204"])
   F4 --> PIMG_2205_jpg(["IMG_2205"])
-  F4 --> PIMG_2207_jpg(["IMG_2207"])
-  F4 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F5["North pool · north-west raised terrace and tiled stair · unreviewed"]
+  F4 --> PIMG_2206_jpg(["IMG_2206"])
+  A --> F5["North pool · low northern patio plinths and white steps · unreviewed"]
   F5 --> PIMG_2204_jpg(["IMG_2204"])
-  F5 --> PIMG_2206_jpg(["IMG_2206"])
+  F5 --> PIMG_2205_jpg(["IMG_2205"])
+  F5 --> PIMG_2207_jpg(["IMG_2207"])
   F5 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F6["North pool · north-west raised terrace and tiled stair · unreviewed"]
+  F6 --> PIMG_2204_jpg(["IMG_2204"])
+  F6 --> PIMG_2206_jpg(["IMG_2206"])
+  F6 --> PIMG_2208_jpg(["IMG_2208"])
 ```
 
 ## Placement evidence
@@ -95,6 +99,7 @@ graph LR
 | `north_west_canopies.json:north-west-balcony-canopy-1` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `north_west_canopies.json:north-west-balcony-canopy-2` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `north_west_canopies.json:north-west-balcony-canopy-3` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `pool_decks.json:north-deck` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:north-pool-north-patios` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:north-pool-west-terrace` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
@@ -127,13 +132,13 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios._ |
+| [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: pool_decks.json:north-deck, north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios._ |
+| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: pool_decks.json:north-deck, north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-north-patios._ |
+| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: pool_decks.json:north-deck, north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace._ |
 | [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios._ |
 | `villacana-reference/apple-maps/02-3d-north-pool.png` | aerial | layout, facades | Apple Maps 3D: north pool and surrounding terraces _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
 | `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
 | `villacana-reference/apple-maps/09-3d-north-pool-looking-south.png` | aerial | layout | Apple Maps 3D: north pool looking south, lawn ring, curved path, deck _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
-| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-north-patios._ |
-| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: north_pool_gardens.json:north-pool-lawn-path, raised_terraces.json:north-pool-west-terrace._ |
 | [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. **Compass:** the subject is 60° from the phone heading; trust looksAt, not the heading. _Used by: raised_terraces.json:north-pool-north-patios._ |
 | `villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg` | upper-floor | layout, facades, planting, view | North pool: the whole courtyard looking north. The best single reference for it. |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
