@@ -24,6 +24,15 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   discrepancies, and obtain independent review of actual maps/full-size photos.
   Only a current `placement-verified-by` graph edge grants scoped placement
   approval. Photo diagnostics and earlier task completion cannot grant it.
+- **Measured approval (Dave, 2026-11-01).** Agents may change geometry, including
+  registry pool rings, footprints and prop positions, when the change is measured:
+  it lines up with at least two solved photo cameras, or one solved camera plus the
+  georeferenced aerial, to within 0.3 m rms on the changed edges or points, with
+  held-out points reported; and a second agent that did not make the change
+  reviews the overlays and records its approval. That counts as independent review
+  (see "Measured approval" in `docs/PLACEMENT_VERIFICATION.md`). Do not hold back a
+  measured correction because no human reviewer exists. The photo-to-model loop
+  (`docs/PHOTO_LOOP_PRD.md`) is how discrepancies are found and closed.
 - Run `scripts/check_placement_changes.py --base origin/main` after regenerating
   references. Fix every Evidence graph failure your change can fix; a red placement
   gate does not hold up the merge (see Merging), but say in the PR what it flags.

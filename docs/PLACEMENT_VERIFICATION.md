@@ -31,6 +31,27 @@ represented only by a centre or axis, this alone does not measure their width or
 size: the comparison report and independent reviewer must assess those separately.
 Do not call an estimated-camera comparison a calibrated photographic match.
 
+## Measured approval (Dave, 2026-11-01)
+
+A change to horizontal placement, including registry pool rings, building footprints
+and prop positions, is approved without a human reviewer when all of these hold:
+
+1. **Measured through the sources.** The changed edges or points are compared with at
+   least two solved photo cameras (`data/photo_poses.json`, `solved`), or one solved
+   camera plus the georeferenced aerial (`public/map/ground.json`).
+2. **Within tolerance.** The rms residual on the changed edges or points is 0.3 m or
+   less, the worst point is reported, and held-out points (not used to make the change)
+   are reported separately. Larger residuals stay open as discrepancies.
+3. **Reviewed by a second agent.** A different agent or session from the one that made
+   the change inspects the overlays and full-size sources and records an approval in
+   `data/placement_reviews.json` with `reviewer.kind: "agent"`, the residuals and the
+   artifacts it looked at. The making agent never approves its own change.
+
+Until `scripts/placement_verification.py` accepts these records (task
+`loop-measured-approval`), the gate stays red for such changes; agents still make
+measured corrections that meet the three conditions, and say so in the PR. Hidden
+boundaries, heights and anything no source shows remain outside this approval.
+
 ## Before changing geometry
 
 1. Read the area brief and private contact sheet. Inspect each relevant source at
