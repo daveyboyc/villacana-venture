@@ -14,7 +14,8 @@ Each area is red, amber or green, from `data/photo_requests.json` and the build 
   where to stand (`at`), what to point at (`look`), what to photograph (`ask`) and what it unblocks
   (`why`).
 - **Amber: photos in, checking or building.** No request is waiting, but photos that answer one are
-  waiting for review, or build tasks or placement discrepancies are open there.
+  waiting for review, or build tasks, placement discrepancies or differences from the photos
+  (`data/discrepancies.json`, open or fixed awaiting review) are open there.
 - **Green: up to date.** Nothing open.
 
 When a new batch is indexed (`docs/PHOTO_MAP_WORKFLOW.md`), `scripts/photo_requests.py` matches each
@@ -77,6 +78,7 @@ Pintor Picasso fall outside every area and count only toward the whole resort.
 | How sure | `public/confidence.json` (`docs/CONFIDENCE.md`) | Features of the area that are photographed, estimated and inferred, and known gaps. A judgement for the game, not placement approval. |
 | Placement verified / features | `refs/graph.json` | Model features in the area with a current `placement-verified-by` approval, of all registered there (`docs/PLACEMENT_VERIFICATION.md`). |
 | Open discrepancies | the same | Unresolved placement reports on the area's features. |
+| Photo differences open / all | `data/discrepancies.json` (`docs/DISCREPANCIES.md`) | Differences between the model and the photos found through solved cameras: open of all recorded (the card also counts fixed, closed and won't fix, and lists them for the map's **Differences** layer). |
 | Tasks | `data/build_queue.json` | Open and in-progress queue tasks for the area. |
 
 ## Updating it

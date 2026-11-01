@@ -177,6 +177,7 @@ def build():
             in_area.setdefault(e['from'], set()).add(e['to'][5:])
     features = [n for n in graph['nodes'] if n['kind'] == 'model-feature']
     discrepancies = [n for n in graph['nodes'] if n['kind'] == 'placement-discrepancy' and n.get('status') != 'resolved']
+    differences = [n for n in graph['nodes'] if n['kind'] == 'photo-discrepancy']
 
     # Solved cameras, grouped by station: a station solves one position for all its photos.
     groups = {}
@@ -238,6 +239,13 @@ def build():
         card['placement'] = {'features': len(here), 'verified': sum(f['verification'] == 'verified' for f in here),
                              'disputed': sum(f['verification'] == 'disputed' for f in here)}
         card['discrepancies'] = [{'id': d['id'].split(':', 1)[1], 'feature': d['feature']} for d in discrepancies if d['feature'] in ids_here]
+        # Differences from the photos (data/discrepancies.json, docs/DISCREPANCIES.md), listed for the map.
+        mine = [d for d in differences if id == whole or d['area'] == id]
+        card['photoDiscrepancies'] = {**{k: sum(d['status'] == s for d in mine) for k, s in
+                                         (('open', 'open'), ('fixed', 'fixed'), ('closed', 'closed'), ('wontFix', 'wont-fix'))},
+                                      'items': [{'id': d['id'][len('photo-discrepancy:'):], 'label': d['label'], 'area': d['area'], 'kind': d['discrepancyKind'],
+                                                 'status': d['status'], 'description': d['name'], 'at': d['at'], 'uncertaintyM': d['uncertaintyM'],
+                                                 'photos': sorted({p['photo'] for p in d['photos']})} for d in mine]}
         card['tasks'] = {'open': sum(t['status'] == 'open' for t in tasks), 'inProgress': sum(t['status'] == 'in-progress' for t in tasks),
                          'titles': [t['title'] for t in sorted(tasks, key=lambda t: t['priority'])[:3]]}
         # How sure: each feature's level from public/confidence.json (docs/CONFIDENCE.md), and known gaps.
@@ -258,17 +266,19 @@ def light(card, requests):
     wanted = [r for r in requests if r['state'] == 'open']
     received = [r for r in requests if r['state'] == 'received']
     tasks, gaps = card['tasks']['open'] + card['tasks']['inProgress'], len(card['discrepancies'])
+    differences = card['photoDiscrepancies']['open'] + card['photoDiscrepancies']['fixed']
     keep = ('id', 'at', 'look', 'ask', 'why', 'priority', 'state', 'photos')
     listed = [{k: r.get(k) for k in keep} for r in sorted(requests, key=lambda r: (r['state'] != 'open', r['state'] != 'received', r['priority'], r['id']))
               if r['state'] != 'answered']
     if wanted:
         colour = 'red'
         headline = f"Photos needed: {len(wanted)} spot{'s' if len(wanted) != 1 else ''}"
-    elif received or tasks or gaps:
+    elif received or tasks or gaps or differences:
         colour = 'amber'
         parts = ([f"{len(received)} photo request{'s' if len(received) != 1 else ''} answered, waiting for review"] if received else []) \
             + ([f"{tasks} build task{'s' if tasks != 1 else ''} open"] if tasks else []) \
-            + ([f"{gaps} open discrepanc{'y' if gaps == 1 else 'ies'}"] if gaps else [])
+            + ([f"{gaps} open discrepanc{'y' if gaps == 1 else 'ies'}"] if gaps else []) \
+            + ([f"{differences} difference{'s' if differences != 1 else ''} from the photos to fix or review"] if differences else [])
         headline = 'Photos in: ' + ', '.join(parts)
     else:
         colour, headline = 'green', 'Up to date: no photos wanted and nothing open'
@@ -312,6 +322,9 @@ def status(card):
     if any(c.values()):
         out.append(f"How sure: {c['photographed']} photographed, {c['estimated']} estimated, {c['inferred']} inferred"
                    + (f", {c['gaps']} known gap{'s' if c['gaps'] != 1 else ''}." if c['gaps'] else '.'))
+    pd = card['photoDiscrepancies']
+    if pd['open'] + pd['fixed'] + pd['closed'] + pd['wontFix']:
+        out.append(f"Differences from the photos: {pd['open']} open, {pd['fixed']} fixed awaiting review, {pd['closed']} closed, {pd['wontFix']} won't fix.")
     pl = card['placement']
     if not pl['features']:
         out.append('Placement: no model features registered here yet.')
@@ -341,10 +354,12 @@ def table(card):
                 ', '.join(f'{m:.2f}' for m in ph['heldOutMisfitM']) or '–',
                 f"{kit['traced']} / {kit['traced'] + kit['generated']}" if kit else 'not measured',
                 f"{c['placement']['verified']} / {c['placement']['features']}",
-                str(len(c['discrepancies'])), f"{c['tasks']['open']} + {c['tasks']['inProgress']}"]
+                str(len(c['discrepancies'])),
+                f"{c['photoDiscrepancies']['open']} / {sum(v for k, v in c['photoDiscrepancies'].items() if k != 'items')}",
+                f"{c['tasks']['open']} + {c['tasks']['inProgress']}"]
     head = ['Area', 'Status', 'Open ground within 0.25 m (cells)', 'Worst street miss', 'Pool decks', 'Footprints on surveyed roof, best shift (m)',
             'Photos / placed', 'Cameras solved', 'Held-out misfit (m)', 'Kit parts traced / all', 'Placement verified / features',
-            'Open discrepancies', 'Tasks open + in progress']
+            'Open discrepancies', 'Photo differences open / all', 'Tasks open + in progress']
     rows = ['| ' + ' | '.join(head) + ' |', '|' + '---|' * len(head)] + ['| ' + ' | '.join(cell(c)) + ' |' for c in card['areas']]
     lines = ['# Area scorecard', '',
              'Generated by `scripts/build_scorecard.py`; what each column means is in [docs/SCORECARD.md](../docs/SCORECARD.md). '

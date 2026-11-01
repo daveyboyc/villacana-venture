@@ -534,6 +534,39 @@
    "render": "docs/reviews/beach-gate-verge/IMG_2226-after.png",
    "result": "not-comparable",
    "notes": "From the beach the photo shows a grass band with low shrubs in front of the white wall, gateway and railings. After, the render shows the green verge and shrub clumps along the frontage where before there was bare sand; the pin view is 50 m off and third-person, so extents, the arch position and shrub sizes cannot be compared. Rough outline pending close photos."
+  },
+  {
+   "task": "loop-discrepancies",
+   "checked": "2026-11-01",
+   "by": "Claude",
+   "feature": "pool_decks.json:north-deck",
+   "photo": "IMG_2204.jpg",
+   "render": "docs/reviews/loop-discrepancies/IMG_2204-render.jpg",
+   "result": "differs",
+   "followUp": "loop-north-pool-fixes",
+   "notes": "Through the solved camera the pool ring, houses and lawn line up, but 40 of the 52 differences recorded in data/discrepancies.json show in it (numbered on docs/reviews/loop-discrepancies/IMG_2204-compare.jpg): the squared deck tongue and SW spur are missing from the water ring, pump box, east ladder and east life ring are misplaced, parasols, awnings, furniture, showers, the west-terrace tree and most bougainvillea are missing, the north plinth frontage sits 1.5-2.5 m too far south, hedges and facades differ, the glass fence is not built (won't fix)."
+  },
+  {
+   "task": "loop-discrepancies",
+   "checked": "2026-11-01",
+   "by": "Claude",
+   "feature": "pool_decks.json:north-deck",
+   "photo": "IMG_2205.jpg",
+   "render": "docs/reviews/loop-discrepancies/IMG_2205-render.jpg",
+   "result": "differs",
+   "followUp": "loop-north-pool-fixes",
+   "notes": "Through the solved camera the pool, lawn and north row line up; 37 recorded differences show in it, including the deck tongue, pump box, east ladder and ring positions, the big yucca 6 m from the model's, the Isabel path's line and paving, the missing iron gate and parasols, and the station building's own roof form (docs/reviews/loop-discrepancies/IMG_2205-compare.jpg)."
+  },
+  {
+   "task": "loop-discrepancies",
+   "checked": "2026-11-01",
+   "by": "Claude",
+   "feature": "pool_decks.json:north-deck",
+   "photo": "IMG_2206.jpg",
+   "render": "docs/reviews/loop-discrepancies/IMG_2206-render.jpg",
+   "result": "differs",
+   "followUp": "loop-north-pool-fixes",
+   "notes": "Through the solved camera the pool's west side and the north-west terrace line up; 25 recorded differences show in it, including the SW deck spur, the extra strelitzia clumps o7/o8, the curved wall's south end, the west-row gates, facade and garden planting, the parasols and the station building's form (docs/reviews/loop-discrepancies/IMG_2206-compare.jpg)."
   }
  ],
  "legacyUnchecked": [
