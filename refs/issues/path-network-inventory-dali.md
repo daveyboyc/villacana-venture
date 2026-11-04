@@ -7,8 +7,8 @@ Task `path-network-inventory-dali` · area **Calle Pintor Dalí** · priority P2
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/dali.md` and the contact sheet `villacana-reference/contact-sheets/dali.jpg`
 - docs: `docs/DALI_CERVANTES.md`, `docs/LAYOUT_ACCURACY.md`, `docs/LEVELS.md`
-- data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`, `data/levels_survey.json`, `data/door_sills.json`
-- src: `src/coastal-gate.ts`, `src/dali-threshold.ts`, `src/door-sills.ts`
+- data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`, `data/levels_survey.json`, `data/door_sills.json`, `data/dali_street.json`
+- src: `src/coastal-gate.ts`, `src/dali-threshold.ts`, `src/door-sills.ts`, `src/dali-street.ts`
 
 ## Photos to build from
 
