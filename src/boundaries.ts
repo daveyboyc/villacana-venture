@@ -109,7 +109,34 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
       slat.position.set(foot[0]+dz/length*across,y+0.013,foot[1]-dx/length*across);slat.rotation.y=drain.rotation.y;scene.add(slat);
     }
   }
-  for(const ring of reference.parking.bayRings??[reference.parking.ring])flat(ring,"#888b8b",0.26);
+  // The marked bays sit off the asphalt ribbon, and the tiled ground shows in the
+  // gap (IMG_2269, IMG_2278: one continuous asphalt surface, white lines on it).
+  // Pull the road-side edge onto the asphalt so the two greys and the tile strip
+  // become one road. The house-side edge stays where it was.
+  const asphalt="#7f8384";
+  const daliRoad=reference.roads.find(r=>r.id==="dali");
+  const ontoRoad=(ring:Vec2[]):Vec2[]=>{
+    if(!daliRoad)return ring;
+    const dist=(p:Vec2)=>{
+      let best=Infinity, qx=p[0], qz=p[1];
+      for(let i=0;i<daliRoad.points.length-1;i++){
+        const a=daliRoad.points[i], b=daliRoad.points[i+1];
+        const hit=closestOnSegment(p[0],p[1],a[0],a[1],b[0],b[1]);
+        if(hit.d<best){best=hit.d;qx=hit.x;qz=hit.z;}
+      }
+      return {d:best,q:[qx,qz] as Vec2};
+    };
+    const nearest=ring.map((p,i)=>({i,d:dist(p).d})).sort((a,b)=>a.d-b.d).slice(0,2).map(r=>r.i);
+    const target=daliRoad.width/2-0.45;
+    return ring.map((p,i)=>{
+      if(!nearest.includes(i))return p;
+      const hit=dist(p);
+      if(hit.d<=target)return p;
+      const vx=p[0]-hit.q[0], vz=p[1]-hit.q[1], n=Math.hypot(vx,vz)||1;
+      return [hit.q[0]+vx/n*target, hit.q[1]+vz/n*target];
+    });
+  };
+  for(const ring of reference.parking.bayRings??[reference.parking.ring])flat(ontoRoad(ring),asphalt,0.275);
   const white=new THREE.MeshBasicMaterial({color:"#f6f3e8"});
   if (reference.mainParking) {
     const park = reference.mainParking;
