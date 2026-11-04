@@ -28,7 +28,7 @@ The seafront promenade between the resort's seaward walls and the beach.
 ## Coverage
 
 Layout: 17, Levels and slopes: 8, Facades and roofs: 2, Materials: 5, Planting: 2, Views: 9
-20 reviewed, 0 suggested only by camera position.
+20 reviewed, 45 suggested only by camera position.
 
 ## Open build tasks
 
@@ -151,3 +151,55 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | `villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2480.jpg](../../public/photos-ref/IMG_2480.jpg) | not reviewed | not reviewed | IMG_2480 |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | not reviewed | not reviewed | IMG_2484 |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | not reviewed | not reviewed | IMG_2485 |
+| [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | not reviewed | not reviewed | IMG_2486 |
+| [IMG_2487.jpg](../../public/photos-ref/IMG_2487.jpg) | not reviewed | not reviewed | IMG_2487 |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | not reviewed | not reviewed | IMG_2602 |
+| [IMG_2603.jpg](../../public/photos-ref/IMG_2603.jpg) | not reviewed | not reviewed | IMG_2603 |
+| [IMG_2604.jpg](../../public/photos-ref/IMG_2604.jpg) | not reviewed | not reviewed | IMG_2604 |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | not reviewed | not reviewed | IMG_2607 |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | not reviewed | not reviewed | IMG_2608 |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | not reviewed | not reviewed | IMG_2609 |
+| [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | not reviewed | not reviewed | IMG_2611 |
+| [IMG_2612.jpg](../../public/photos-ref/IMG_2612.jpg) | not reviewed | not reviewed | IMG_2612 |
+| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | not reviewed | not reviewed | IMG_2613 |
+| [IMG_2614.jpg](../../public/photos-ref/IMG_2614.jpg) | not reviewed | not reviewed | IMG_2614 |
+| [IMG_2615.jpg](../../public/photos-ref/IMG_2615.jpg) | not reviewed | not reviewed | IMG_2615 |
+| [IMG_2628.jpg](../../public/photos-ref/IMG_2628.jpg) | not reviewed | not reviewed | IMG_2628 |
+| [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | not reviewed | not reviewed | IMG_2630 |
+| [IMG_2632.jpg](../../public/photos-ref/IMG_2632.jpg) | not reviewed | not reviewed | IMG_2632 |
+| [IMG_2633.jpg](../../public/photos-ref/IMG_2633.jpg) | not reviewed | not reviewed | IMG_2633 |
+| [IMG_2634.jpg](../../public/photos-ref/IMG_2634.jpg) | not reviewed | not reviewed | IMG_2634 |
+| [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | not reviewed | not reviewed | IMG_2635 |
+| [IMG_2636.jpg](../../public/photos-ref/IMG_2636.jpg) | not reviewed | not reviewed | IMG_2636 |
+| [IMG_2637.jpg](../../public/photos-ref/IMG_2637.jpg) | not reviewed | not reviewed | IMG_2637 |
+| [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | not reviewed | not reviewed | IMG_2638 |
+| [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | not reviewed | not reviewed | IMG_2639 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | not reviewed | not reviewed | IMG_2640 |
+| [IMG_2641.jpg](../../public/photos-ref/IMG_2641.jpg) | not reviewed | not reviewed | IMG_2641 |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | not reviewed | not reviewed | IMG_2642 |
+| [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | not reviewed | not reviewed | IMG_2644 |
+| [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | not reviewed | not reviewed | IMG_2601 |
+| [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | not reviewed | not reviewed | IMG_2610 |
+| [IMG_2617.jpg](../../public/photos-ref/IMG_2617.jpg) | not reviewed | not reviewed | IMG_2617 |
+| [IMG_2618.jpg](../../public/photos-ref/IMG_2618.jpg) | not reviewed | not reviewed | IMG_2618 |
+| [IMG_2619.jpg](../../public/photos-ref/IMG_2619.jpg) | not reviewed | not reviewed | IMG_2619 |
+| [IMG_2620.jpg](../../public/photos-ref/IMG_2620.jpg) | not reviewed | not reviewed | IMG_2620 |
+| [IMG_2621.jpg](../../public/photos-ref/IMG_2621.jpg) | not reviewed | not reviewed | IMG_2621 |
+| [IMG_2622.jpg](../../public/photos-ref/IMG_2622.jpg) | not reviewed | not reviewed | IMG_2622 |
+| [IMG_2623.jpg](../../public/photos-ref/IMG_2623.jpg) | not reviewed | not reviewed | IMG_2623 |
+| [IMG_2624.jpg](../../public/photos-ref/IMG_2624.jpg) | not reviewed | not reviewed | IMG_2624 |
+| [IMG_2625.jpg](../../public/photos-ref/IMG_2625.jpg) | not reviewed | not reviewed | IMG_2625 |
+| [IMG_2626.jpg](../../public/photos-ref/IMG_2626.jpg) | not reviewed | not reviewed | IMG_2626 |
+| [IMG_2627.jpg](../../public/photos-ref/IMG_2627.jpg) | not reviewed | not reviewed | IMG_2627 |
+| [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | not reviewed | not reviewed | IMG_2631 |
+| [IMG_2771.jpg](../../public/photos-ref/IMG_2771.jpg) | not reviewed | not reviewed | IMG_2771 |

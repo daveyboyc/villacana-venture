@@ -31,7 +31,7 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 ## Coverage
 
 Layout: 25, Levels and slopes: 12, Facades and roofs: 9, Materials: 2, Planting: 12, Signs: 2, Views: 3
-29 reviewed, 0 suggested only by camera position.
+29 reviewed, 45 suggested only by camera position.
 
 ## Levels
 
@@ -264,3 +264,55 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2287.jpg](../../public/photos-ref/IMG_2287.jpg) | ground | facades, planting, levels | Elena junction: private doorway and planting **Looks at:** The brown garden door and its three-riser flight between the west hedge bed and the east planter. **Note:** Door-steps detail recheck 27 October: three white risers; the bottom step is wider than the flight with rounded ends, and the east planter's front stands about 0.2-0.3 m behind it (base lines compared with the west bed's). _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, cervantes_garden_door.json:cervantes-junction-east-planter._ |
 | [IMG_2286.jpg](../../public/photos-ref/IMG_2286.jpg) | ground | levels, layout, signage | Elena junction: side-by-side ramp and steps **Looks at:** The steps beside the Cervantes ramp. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2539.jpg](../../public/photos-ref/IMG_2539.jpg) | ground | layout, levels, planting | Elena north by the Cervantes junction: steps and tiled lane between planted beds |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2442.jpg](../../public/photos-ref/IMG_2442.jpg) | not reviewed | not reviewed | IMG_2442 |
+| [IMG_2443.jpg](../../public/photos-ref/IMG_2443.jpg) | not reviewed | not reviewed | IMG_2443 |
+| [IMG_2444.jpg](../../public/photos-ref/IMG_2444.jpg) | not reviewed | not reviewed | IMG_2444 |
+| [IMG_2445.jpg](../../public/photos-ref/IMG_2445.jpg) | not reviewed | not reviewed | IMG_2445 |
+| [IMG_2446.jpg](../../public/photos-ref/IMG_2446.jpg) | not reviewed | not reviewed | IMG_2446 |
+| [IMG_2447.jpg](../../public/photos-ref/IMG_2447.jpg) | not reviewed | not reviewed | IMG_2447 |
+| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | not reviewed | not reviewed | IMG_2448 |
+| [IMG_2450.jpg](../../public/photos-ref/IMG_2450.jpg) | not reviewed | not reviewed | IMG_2450 |
+| [IMG_2451.jpg](../../public/photos-ref/IMG_2451.jpg) | not reviewed | not reviewed | IMG_2451 |
+| [IMG_2452.jpg](../../public/photos-ref/IMG_2452.jpg) | not reviewed | not reviewed | IMG_2452 |
+| [IMG_2453.jpg](../../public/photos-ref/IMG_2453.jpg) | not reviewed | not reviewed | IMG_2453 |
+| [IMG_2454.jpg](../../public/photos-ref/IMG_2454.jpg) | not reviewed | not reviewed | IMG_2454 |
+| [IMG_2455.jpg](../../public/photos-ref/IMG_2455.jpg) | not reviewed | not reviewed | IMG_2455 |
+| [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | not reviewed | not reviewed | IMG_2462 |
+| [IMG_2463.jpg](../../public/photos-ref/IMG_2463.jpg) | not reviewed | not reviewed | IMG_2463 |
+| [IMG_2464.jpg](../../public/photos-ref/IMG_2464.jpg) | not reviewed | not reviewed | IMG_2464 |
+| [IMG_2465.jpg](../../public/photos-ref/IMG_2465.jpg) | not reviewed | not reviewed | IMG_2465 |
+| [IMG_2466.jpg](../../public/photos-ref/IMG_2466.jpg) | not reviewed | not reviewed | IMG_2466 |
+| [IMG_2467.jpg](../../public/photos-ref/IMG_2467.jpg) | not reviewed | not reviewed | IMG_2467 |
+| [IMG_2468.jpg](../../public/photos-ref/IMG_2468.jpg) | not reviewed | not reviewed | IMG_2468 |
+| [IMG_2469.jpg](../../public/photos-ref/IMG_2469.jpg) | not reviewed | not reviewed | IMG_2469 |
+| [IMG_2470.jpg](../../public/photos-ref/IMG_2470.jpg) | not reviewed | not reviewed | IMG_2470 |
+| [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | not reviewed | not reviewed | IMG_2471 |
+| [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | not reviewed | not reviewed | IMG_2472 |
+| [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | not reviewed | not reviewed | IMG_2473 |
+| [IMG_2474.jpg](../../public/photos-ref/IMG_2474.jpg) | not reviewed | not reviewed | IMG_2474 |
+| [IMG_2475.jpg](../../public/photos-ref/IMG_2475.jpg) | not reviewed | not reviewed | IMG_2475 |
+| [IMG_2512.jpg](../../public/photos-ref/IMG_2512.jpg) | not reviewed | not reviewed | IMG_2512 |
+| [IMG_2513.jpg](../../public/photos-ref/IMG_2513.jpg) | not reviewed | not reviewed | IMG_2513 |
+| [IMG_2514.jpg](../../public/photos-ref/IMG_2514.jpg) | not reviewed | not reviewed | IMG_2514 |
+| [IMG_2540.jpg](../../public/photos-ref/IMG_2540.jpg) | not reviewed | not reviewed | IMG_2540 |
+| [IMG_2541.jpg](../../public/photos-ref/IMG_2541.jpg) | not reviewed | not reviewed | IMG_2541 |
+| [IMG_2542.jpg](../../public/photos-ref/IMG_2542.jpg) | not reviewed | not reviewed | IMG_2542 |
+| [IMG_2543.jpg](../../public/photos-ref/IMG_2543.jpg) | not reviewed | not reviewed | IMG_2543 |
+| [IMG_2544.jpg](../../public/photos-ref/IMG_2544.jpg) | not reviewed | not reviewed | IMG_2544 |
+| [IMG_2545.jpg](../../public/photos-ref/IMG_2545.jpg) | not reviewed | not reviewed | IMG_2545 |
+| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | not reviewed | not reviewed | IMG_2449 |
+| [IMG_2456.jpg](../../public/photos-ref/IMG_2456.jpg) | not reviewed | not reviewed | IMG_2456 |
+| [IMG_2457.jpg](../../public/photos-ref/IMG_2457.jpg) | not reviewed | not reviewed | IMG_2457 |
+| [IMG_2458.jpg](../../public/photos-ref/IMG_2458.jpg) | not reviewed | not reviewed | IMG_2458 |
+| [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | not reviewed | not reviewed | IMG_2476 |
+| [IMG_2515.jpg](../../public/photos-ref/IMG_2515.jpg) | not reviewed | not reviewed | IMG_2515 |
+| [IMG_2537.jpg](../../public/photos-ref/IMG_2537.jpg) | not reviewed | not reviewed | IMG_2537 |
+| [IMG_2538.jpg](../../public/photos-ref/IMG_2538.jpg) | not reviewed | not reviewed | IMG_2538 |
+| [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | not reviewed | not reviewed | IMG_2686 |

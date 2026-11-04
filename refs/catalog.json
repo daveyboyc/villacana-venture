@@ -1,5 +1,25 @@
 [
  {
+  "id": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+  "title": "Beach loungers and closed parasols on dark sand with timber boardwalk strips",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "view"
+  ],
+  "note": "No GPS in the file: exact stretch of beach not confirmed.",
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Xbe-cJn7r_zL1BfHSkDqzXifnp_MDdby/view?usp=drivesdk",
+  "citedBy": []
+ },
+ {
   "id": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
@@ -5923,6 +5943,1345 @@
   "subject": "The walled patios north of Cervantes"
  },
  {
+  "id": "IMG_2442.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2442.jpg",
+  "title": "IMG_2442",
+  "shows": [
+   "cervantes",
+   "picasso"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1X4CGgcdZDf4TPoxnhvZksToACdvEaQ9m/view?usp=drivesdk",
+  "camera": {
+   "x": -88.5,
+   "z": 11.8,
+   "heading": 251,
+   "accuracy": 13.4,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -94.2,
+   13.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2443.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2443.jpg",
+  "title": "IMG_2443",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1YbEZ_tu58Isy69EPoFhmpc4Cjg4afVx1/view?usp=drivesdk",
+  "camera": {
+   "x": -89.8,
+   "z": 17.3,
+   "heading": 251,
+   "accuracy": 5.7,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -95.5,
+   19.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2444.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2444.jpg",
+  "title": "IMG_2444",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Y-oHPs21J4XS_ODUAo5IrtVz86K33M_G/view?usp=drivesdk",
+  "camera": {
+   "x": -90.0,
+   "z": 19.5,
+   "heading": 65,
+   "accuracy": 2.1,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -84.6,
+   17.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2445.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2445.jpg",
+  "title": "IMG_2445",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1JMWW2pa-nUbnAqdT2t8LxfAJP5PRyi2Z/view?usp=drivesdk",
+  "camera": {
+   "x": -99.5,
+   "z": 24.7,
+   "heading": 240,
+   "accuracy": 2.6,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -104.7,
+   27.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2446.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2446.jpg",
+  "title": "IMG_2446",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/19jutJFkdKapLs0ibzHj76manjcNFplm_/view?usp=drivesdk",
+  "camera": {
+   "x": -103.2,
+   "z": 27.2,
+   "heading": 272,
+   "accuracy": 3.4,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -109.2,
+   27.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2447.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2447.jpg",
+  "title": "IMG_2447",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1-DjRFq5RdsoHPydp6HdIlT_NTruTBJfF/view?usp=drivesdk",
+  "camera": {
+   "x": -104.7,
+   "z": 27.5,
+   "heading": 327,
+   "accuracy": 3.6,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -108.0,
+   22.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2448.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2448.jpg",
+  "title": "IMG_2448",
+  "shows": [
+   "cervantes",
+   "north-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/16_403yJna19aKqkAR_zKZ4APT1X-JWPU/view?usp=drivesdk",
+  "camera": {
+   "x": -111.2,
+   "z": 31.8,
+   "heading": 243,
+   "accuracy": 4.7,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -116.5,
+   34.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:cervantes"
+  ]
+ },
+ {
+  "id": "IMG_2449.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2449.jpg",
+  "title": "IMG_2449",
+  "shows": [
+   "north-lanes",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1FOeGacNDcQ3JFVGUUhep_s70f1fULN6l/view?usp=drivesdk",
+  "camera": {
+   "x": -112.7,
+   "z": 33.1,
+   "heading": 233,
+   "accuracy": 4.7,
+   "altitude": 8.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -117.5,
+   36.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2450.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2450.jpg",
+  "title": "IMG_2450",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/11_GW6O4RbQ5kJUGOGvQD54PHmT_vEgsy/view?usp=drivesdk",
+  "camera": {
+   "x": -121.9,
+   "z": 39.0,
+   "heading": 244,
+   "accuracy": 2.0,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -127.3,
+   41.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees",
+   "cervantes_east_south_patios.json:cervantes-east-south-wall"
+  ]
+ },
+ {
+  "id": "IMG_2451.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2451.jpg",
+  "title": "IMG_2451",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/13-SeL1tabQGZSmut4D0HzylPbUCIeTcq/view?usp=drivesdk",
+  "camera": {
+   "x": -126.6,
+   "z": 41.1,
+   "heading": 342,
+   "accuracy": 2.5,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -128.5,
+   35.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2452.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2452.jpg",
+  "title": "IMG_2452",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1XwLHxQSoa81BjAG4cAkXJipHXfH902VS/view?usp=drivesdk",
+  "camera": {
+   "x": -126.3,
+   "z": 41.7,
+   "heading": 345,
+   "accuracy": 2.5,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -127.9,
+   35.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2453.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2453.jpg",
+  "title": "IMG_2453",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1mZpFgqQuymeqjkl7TtqRDXNDKzUUD6Ax/view?usp=drivesdk",
+  "camera": {
+   "x": -129.8,
+   "z": 44.2,
+   "heading": 254,
+   "accuracy": 2.6,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -135.6,
+   45.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "street:cervantes",
+   "backdrop.json:aerial-trees",
+   "cervantes_east_south_patios.json:cervantes-east-south-wall"
+  ]
+ },
+ {
+  "id": "IMG_2454.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2454.jpg",
+  "title": "IMG_2454",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1DiOFLGzYnBjeccBSv0YaqX4f09PngW8s/view?usp=drivesdk",
+  "camera": {
+   "x": -136.0,
+   "z": 46.4,
+   "heading": 239,
+   "accuracy": 2.8,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -141.1,
+   49.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "cervantes_east_hedge.json:cervantes-east-plumbago-kerb",
+   "backdrop.json:aerial-trees",
+   "elena_east_patios.json:elena-east-patios-cervantes-wall"
+  ]
+ },
+ {
+  "id": "IMG_2455.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2455.jpg",
+  "title": "IMG_2455",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1K8KF9O8W2OU8jI9Vw_khQVKaRlN-fa1x/view?usp=drivesdk",
+  "camera": {
+   "x": -140.3,
+   "z": 48.9,
+   "heading": 258,
+   "accuracy": 2.7,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -146.2,
+   50.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-tree-bed-2"
+  ]
+ },
+ {
+  "id": "IMG_2456.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2456.jpg",
+  "title": "IMG_2456",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Kwg5yXsNlVWzcNuRoWnjIhyOaZ628hj7/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 46.7,
+   "heading": 43,
+   "accuracy": 19.8,
+   "altitude": 8.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.6,
+   42.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-magnolia-bed",
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-garden-wall",
+   "elena_lane_paving.json:elena-north-three-column"
+  ]
+ },
+ {
+  "id": "IMG_2457.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2457.jpg",
+  "title": "IMG_2457",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1AMivDN-9hKwRId-QvYC04UySp5WQvwdA/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 46.7,
+   "heading": 331,
+   "accuracy": 19.8,
+   "altitude": 8.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -155.6,
+   41.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2458.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2458.jpg",
+  "title": "IMG_2458",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1fXCPxvkQw-T_OErjvfmrMYQaWoSGNAPO/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 46.7,
+   "heading": 59,
+   "accuracy": 14.0,
+   "altitude": 8.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -147.6,
+   43.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-magnolia-bed",
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-tree-bed-1",
+   "elena_north.json:elena-north-garden-wall"
+  ]
+ },
+ {
+  "id": "IMG_2459.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2459.jpg",
+  "title": "IMG_2459",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1w3KFJg7o-M4f5ZceksB6g38JlLfkW06k/view?usp=drivesdk",
+  "camera": {
+   "x": -154.2,
+   "z": 38.7,
+   "heading": 240,
+   "accuracy": 6.2,
+   "altitude": 7.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -159.4,
+   41.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2460.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2460.jpg",
+  "title": "IMG_2460",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1C5QZQ8KzCrPQZsv2yTwJDXmSZ5WOadEl/view?usp=drivesdk",
+  "camera": {
+   "x": -152.2,
+   "z": 41.7,
+   "heading": 139,
+   "accuracy": 3.1,
+   "altitude": 8.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.3,
+   46.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-tree-bed-1"
+  ]
+ },
+ {
+  "id": "IMG_2461.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2461.jpg",
+  "title": "IMG_2461",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1nYVvTYuuL1immeGIVhHV8r-Uj-tl-xUb/view?usp=drivesdk",
+  "camera": {
+   "x": -150.0,
+   "z": 44.5,
+   "heading": 210,
+   "accuracy": 2.7,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -153.0,
+   49.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "cervantes_north_patios.json:cervantes-north-partition-east"
+  ]
+ },
+ {
+  "id": "IMG_2462.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2462.jpg",
+  "title": "IMG_2462",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1JVn8jy7zmcTI43plBPEwx3DWNusVC7vI/view?usp=drivesdk",
+  "camera": {
+   "x": -145.5,
+   "z": 53.8,
+   "heading": 289,
+   "accuracy": 3.1,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -151.2,
+   51.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_north_patios.json:cervantes-north-partition-east"
+  ]
+ },
+ {
+  "id": "IMG_2463.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2463.jpg",
+  "title": "IMG_2463",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Ie8WqwlwEdgSBNiUYbpZqsGb6a3l_dOa/view?usp=drivesdk",
+  "camera": {
+   "x": -146.0,
+   "z": 53.8,
+   "heading": 261,
+   "accuracy": 3.4,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -151.9,
+   54.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "cervantes_garden_door.json:cervantes-junction-east-planter",
+   "cervantes_garden_door.json:cervantes-garden-door",
+   "cervantes_garden_door.json:cervantes-junction-north-patio",
+   "cervantes_north_patios.json:cervantes-north-partition-east"
+  ]
+ },
+ {
+  "id": "IMG_2464.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2464.jpg",
+  "title": "IMG_2464",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/11WaoI1xffW4PrlqKUyjU68ttVe3Q5gMp/view?usp=drivesdk",
+  "camera": {
+   "x": -147.2,
+   "z": 54.4,
+   "heading": 239,
+   "accuracy": 3.7,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.3,
+   57.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees",
+   "ramp:cervantes-elena-ramp",
+   "steps:cervantes-elena-steps"
+  ]
+ },
+ {
+  "id": "IMG_2465.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2465.jpg",
+  "title": "IMG_2465",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1HwdZnYkbHEBei2rX_Sh3OmjJA2vse_Su/view?usp=drivesdk",
+  "camera": {
+   "x": -150.7,
+   "z": 56.6,
+   "heading": 195,
+   "accuracy": 4.0,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.3,
+   62.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ]
+ },
+ {
+  "id": "IMG_2466.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2466.jpg",
+  "title": "IMG_2466",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1PQqWOZt7IGvtIOz4H2RKut4gthFtemBw/view?usp=drivesdk",
+  "camera": {
+   "x": -151.5,
+   "z": 56.9,
+   "heading": 173,
+   "accuracy": 4.0,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -150.8,
+   62.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south",
+   "backdrop.json:aerial-trees",
+   "frontage_divisions.json:cervantes-elena-lawn-1"
+  ]
+ },
+ {
+  "id": "IMG_2467.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2467.jpg",
+  "title": "IMG_2467",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1V32o9UZ_MrelJ8Nzz_8fdHH4i_T2KCjM/view?usp=drivesdk",
+  "camera": {
+   "x": -154.2,
+   "z": 59.1,
+   "heading": 238,
+   "accuracy": 4.5,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -159.3,
+   62.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "backdrop.json:aerial-trees",
+   "street:cervantes",
+   "cervantes_patio_walls.json:cervantes-patio-north-1"
+  ]
+ },
+ {
+  "id": "IMG_2468.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2468.jpg",
+  "title": "IMG_2468",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1JN3OG0YkEeqSuerEw95V-1vKLxWCX8U9/view?usp=drivesdk",
+  "camera": {
+   "x": -167.1,
+   "z": 65.2,
+   "heading": 242,
+   "accuracy": 2.3,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -172.4,
+   68.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "backdrop.json:aerial-trees",
+   "street:cervantes",
+   "frontage_divisions.json:cervantes-west-planting"
+  ]
+ },
+ {
+  "id": "IMG_2469.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2469.jpg",
+  "title": "IMG_2469",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1IfOp7HzQUeVFb2EMWw7IJlRlmp7hCJvB/view?usp=drivesdk",
+  "camera": {
+   "x": -169.1,
+   "z": 67.1,
+   "heading": 201,
+   "accuracy": 2.3,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -171.3,
+   72.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2470.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2470.jpg",
+  "title": "IMG_2470",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1YxDbg0oEg_JwwQMr-Y_JqnbwQ3AMSTyW/view?usp=drivesdk",
+  "camera": {
+   "x": -171.1,
+   "z": 68.6,
+   "heading": 151,
+   "accuracy": 2.4,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -168.2,
+   73.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2471.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2471.jpg",
+  "title": "IMG_2471",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1MlX6nYkpNm560blEp8eEjhVPrhdaFenB/view?usp=drivesdk",
+  "camera": {
+   "x": -181.8,
+   "z": 73.0,
+   "heading": 242,
+   "accuracy": 3.4,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -187.1,
+   75.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "dali_cervantes_threshold.json:cervantes-parking-crossing",
+   "street:cervantes"
+  ]
+ },
+ {
+  "id": "IMG_2472.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2472.jpg",
+  "title": "IMG_2472",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1OJR5KkwiQOSQQjrzbOCFZ85MWrYTj5gr/view?usp=drivesdk",
+  "camera": {
+   "x": -185.5,
+   "z": 75.4,
+   "heading": 328,
+   "accuracy": 3.3,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -188.7,
+   70.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "backdrop.json:aerial-trees",
+   "dali_cervantes_threshold.json:dali-lawn-strip-1"
+  ]
+ },
+ {
+  "id": "IMG_2473.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2473.jpg",
+  "title": "IMG_2473",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1IUqZEenXbQTNMxO_VZxBQ3YADP8F703I/view?usp=drivesdk",
+  "camera": {
+   "x": -186.3,
+   "z": 74.8,
+   "heading": 159,
+   "accuracy": 3.2,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -184.1,
+   80.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "dali_cervantes_threshold.json:dali-house-footpath-2",
+   "dali_cervantes_threshold.json:dali-lawn-strip-2",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2474.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2474.jpg",
+  "title": "IMG_2474",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1JY1bOa1Zyj8uMh5JpNmN_XP2mShXqur0/view?usp=drivesdk",
+  "camera": {
+   "x": -188.8,
+   "z": 78.5,
+   "heading": 194,
+   "accuracy": 3.0,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -190.3,
+   84.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "backdrop.json:aerial-trees",
+   "dali_cervantes_threshold.json:dali-bays-1",
+   "street:dali"
+  ]
+ },
+ {
+  "id": "IMG_2475.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2475.jpg",
+  "title": "IMG_2475",
+  "shows": [
+   "cervantes",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1AvPsUHOAZSrT0vkj7T1T9aB3ZNmz1GDL/view?usp=drivesdk",
+  "camera": {
+   "x": -192.3,
+   "z": 81.0,
+   "heading": 156,
+   "accuracy": 2.8,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -189.9,
+   86.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees",
+   "dali_cervantes_threshold.json:dali-bays-1"
+  ]
+ },
+ {
+  "id": "IMG_2476.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2476.jpg",
+  "title": "IMG_2476",
+  "shows": [
+   "dali",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1dTDIIAOHL-NPFaFhajLqX5uqgYXT8TKQ/view?usp=drivesdk",
+  "camera": {
+   "x": -195.2,
+   "z": 80.1,
+   "heading": 333,
+   "accuracy": 2.7,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -197.9,
+   74.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2477.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2477.jpg",
+  "title": "IMG_2477",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1usI8KnsgyOBK8kAo7OAq8DF5weYlOm8V/view?usp=drivesdk",
+  "camera": {
+   "x": -196.2,
+   "z": 72.0,
+   "heading": 12,
+   "accuracy": 2.8,
+   "altitude": 8.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -195.0,
+   66.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_cervantes_threshold.json:dali-bays-2",
+   "parking:Dalí car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2478.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2478.jpg",
+  "title": "IMG_2478",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1TUwLbtOq_LsjaB_XsT2Bf4TOj64jZV1C/view?usp=drivesdk",
+  "camera": {
+   "x": -199.5,
+   "z": 64.6,
+   "heading": 61,
+   "accuracy": 2.9,
+   "altitude": 9.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -194.3,
+   61.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "dali_cervantes_threshold.json:dali-lawn-strip-1",
+   "dali_cervantes_threshold.json:dali-house-footpath-1",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2480.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2480.jpg",
+  "title": "IMG_2480",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1IL2BC85pEkilhNM7b7ou0EOlJuuPP4Wm/view?usp=drivesdk",
+  "camera": {
+   "x": -89.0,
+   "z": 218.3,
+   "heading": 47,
+   "accuracy": 3.6,
+   "altitude": 4.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -84.6,
+   214.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
+ },
+ {
   "id": "IMG_2481.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2481.jpg",
@@ -6049,6 +7408,139 @@
   "subject": "Barraka beach restaurant at the end of the paseo"
  },
  {
+  "id": "IMG_2484.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2484.jpg",
+  "title": "IMG_2484",
+  "shows": [
+   "paseo",
+   "seaward-lanes",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1tKHqlww4OrBPfeQbIzd6MlPqrkyNhaqq/view?usp=drivesdk",
+  "camera": {
+   "x": -8.5,
+   "z": 142.2,
+   "heading": 17,
+   "accuracy": 3.9,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -6.7,
+   136.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ]
+ },
+ {
+  "id": "IMG_2485.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2485.jpg",
+  "title": "IMG_2485",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Ge428UndRc50d43a2tis_WTXVgRtQjDA/view?usp=drivesdk",
+  "camera": {
+   "x": -2.5,
+   "z": 130.5,
+   "heading": 339,
+   "accuracy": 2.6,
+   "altitude": 4.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -4.7,
+   124.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2486.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2486.jpg",
+  "title": "IMG_2486",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/105M4J34sCW_p77QPR3BiVZiDQvWosj7F/view?usp=drivesdk",
+  "camera": {
+   "x": -4.0,
+   "z": 129.9,
+   "heading": 217,
+   "accuracy": 4.2,
+   "altitude": 4.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -7.6,
+   134.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "seafront_fence.json:guillermo-ramp-wall",
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2487.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2487.jpg",
+  "title": "IMG_2487",
+  "shows": [
+   "paseo",
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1r_PEdjuoxyeC5LgtaBXnbJGTgX2uDX1G/view?usp=drivesdk",
+  "camera": {
+   "x": -9.0,
+   "z": 134.5,
+   "heading": 309,
+   "accuracy": 4.7,
+   "altitude": 3.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -13.7,
+   130.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
   "id": "IMG_2488.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2488.jpg",
@@ -6091,6 +7583,142 @@
   "subject": "Calle Guillermo from its seaward end"
  },
  {
+  "id": "IMG_2489.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2489.jpg",
+  "title": "IMG_2489",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1ayM41_Uzt4fuIpk6xkjLc5QFgpszWa9V/view?usp=drivesdk",
+  "camera": {
+   "x": -48.5,
+   "z": 103.9,
+   "heading": 242,
+   "accuracy": 10.1,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -53.8,
+   106.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2491.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2491.jpg",
+  "title": "IMG_2491",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1xm84xtiRLXj77UlimTxIzEUODQ2exbZN/view?usp=drivesdk",
+  "camera": {
+   "x": -69.9,
+   "z": 104.8,
+   "heading": 239,
+   "accuracy": 3.6,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -75.0,
+   107.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:patricia",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2492.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2492.jpg",
+  "title": "IMG_2492",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1gv4uCqofBYu_4e63EPopTvfJbqNF-6xj/view?usp=drivesdk",
+  "camera": {
+   "x": -76.6,
+   "z": 107.9,
+   "heading": 278,
+   "accuracy": 4.7,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -82.5,
+   107.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:teodoro-rojo"
+  ]
+ },
+ {
+  "id": "IMG_2493.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2493.jpg",
+  "title": "IMG_2493",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1FuBbm_tker7pHQjuSCvQTsh80TCU_y9F/view?usp=drivesdk",
+  "camera": {
+   "x": -77.8,
+   "z": 108.2,
+   "heading": 333,
+   "accuracy": 4.7,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -80.5,
+   102.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:teodoro-rojo"
+  ]
+ },
+ {
   "id": "IMG_2494.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2494.jpg",
@@ -6127,6 +7755,416 @@
    "backdrop.json:aerial-trees"
   ],
   "subject": "Narrow lane north of Teodoro Rojo"
+ },
+ {
+  "id": "IMG_2495.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2495.jpg",
+  "title": "IMG_2495",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1U1Rrjkq-Ij2CxzcVxVx4dwccfcpE3Q87/view?usp=drivesdk",
+  "camera": {
+   "x": -81.3,
+   "z": 101.4,
+   "heading": 323,
+   "accuracy": 4.7,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -84.9,
+   96.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:teodoro-rojo"
+  ]
+ },
+ {
+  "id": "IMG_2496.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2496.jpg",
+  "title": "IMG_2496",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/17RchLZ_TOX6Y6G5RxFTzPwHG8eltDjDw/view?usp=drivesdk",
+  "camera": {
+   "x": -84.3,
+   "z": 97.1,
+   "heading": 288,
+   "accuracy": 2.4,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -90.0,
+   95.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:teodoro-rojo"
+  ]
+ },
+ {
+  "id": "IMG_2497.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2497.jpg",
+  "title": "IMG_2497",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Turw0M5qfDa2hOPc9Wl8QGNnU1HipuzA/view?usp=drivesdk",
+  "camera": {
+   "x": -86.6,
+   "z": 96.5,
+   "heading": 252,
+   "accuracy": 2.5,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -92.3,
+   98.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2498.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2498.jpg",
+  "title": "IMG_2498",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1cVpqyI2w6FDJLke7APyEXfujZaB-inOm/view?usp=drivesdk",
+  "camera": {
+   "x": -87.8,
+   "z": 92.5,
+   "heading": 26,
+   "accuracy": 2.5,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -85.2,
+   87.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2499.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2499.jpg",
+  "title": "IMG_2499",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1RHZ40yxsRASnfjtfbopKd376s8-JNj6C/view?usp=drivesdk",
+  "camera": {
+   "x": -88.3,
+   "z": 91.8,
+   "heading": 52,
+   "accuracy": 2.5,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -83.6,
+   88.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2500.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2500.jpg",
+  "title": "IMG_2500",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1K7nxNyi9wqPyzsVtl0DvClTAvta8Lz4Y/view?usp=drivesdk",
+  "camera": {
+   "x": -88.3,
+   "z": 91.8,
+   "heading": 54,
+   "accuracy": 2.5,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -83.4,
+   88.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2501.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2501.jpg",
+  "title": "IMG_2501",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1puc6pcnLkLObv7V4al08ebyzHXgG1kwh/view?usp=drivesdk",
+  "camera": {
+   "x": -95.3,
+   "z": 78.9,
+   "heading": 329,
+   "accuracy": 2.8,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -98.4,
+   73.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees",
+   "street:teodoro-rojo"
+  ]
+ },
+ {
+  "id": "IMG_2502.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2502.jpg",
+  "title": "IMG_2502",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1CmTzJvxsNhnBDi2u5TSmDmzAh1-lUkTq/view?usp=drivesdk",
+  "camera": {
+   "x": -97.5,
+   "z": 75.1,
+   "heading": 23,
+   "accuracy": 2.9,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -95.2,
+   69.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:eva"
+  ]
+ },
+ {
+  "id": "IMG_2503.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2503.jpg",
+  "title": "IMG_2503",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/14gBnvh8K5I0aQIMDj_KopVJBStGqvXXj/view?usp=drivesdk",
+  "camera": {
+   "x": -100.0,
+   "z": 72.0,
+   "heading": 274,
+   "accuracy": 2.8,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -106.0,
+   71.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2504.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2504.jpg",
+  "title": "IMG_2504",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1wDYwNBbuYhAaa4I_tnFovLNriHaTEIu1/view?usp=drivesdk",
+  "camera": {
+   "x": -101.5,
+   "z": 72.7,
+   "heading": 241,
+   "accuracy": 2.8,
+   "altitude": 6.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -106.7,
+   75.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:eva"
+  ]
+ },
+ {
+  "id": "IMG_2505.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2505.jpg",
+  "title": "IMG_2505",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1pydRjqomMs2lziA0yqITLdh8DHKYPIKQ/view?usp=drivesdk",
+  "camera": {
+   "x": -116.6,
+   "z": 82.3,
+   "heading": 278,
+   "accuracy": 2.8,
+   "altitude": 4.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -122.5,
+   81.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "raised_terraces.json:middle-pool-curved-hedge-patio"
+  ]
+ },
+ {
+  "id": "IMG_2506.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2506.jpg",
+  "title": "IMG_2506",
+  "shows": [
+   "elena",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1n0yuVwvVVZl1wJ8rJ1U3HvIJLXhedJEH/view?usp=drivesdk",
+  "camera": {
+   "x": -138.8,
+   "z": 78.5,
+   "heading": 331,
+   "accuracy": 2.6,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -141.7,
+   73.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ]
  },
  {
   "id": "IMG_2507.jpg",
@@ -6205,6 +8243,335 @@
    "backdrop.json:aerial-trees"
   ],
   "subject": "CALLE ELENA 25 covered passage into block 6265601UF1366N_part1"
+ },
+ {
+  "id": "IMG_2509.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2509.jpg",
+  "title": "IMG_2509",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1lVa2yicizVZiZZuHf_u1Q4opxk-rFwDJ/view?usp=drivesdk",
+  "camera": {
+   "x": -146.5,
+   "z": 68.6,
+   "heading": 331,
+   "accuracy": 2.6,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -149.4,
+   63.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south",
+   "backdrop.json:aerial-trees",
+   "frontage_divisions.json:cervantes-elena-lawn-1"
+  ]
+ },
+ {
+  "id": "IMG_2510.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2510.jpg",
+  "title": "IMG_2510",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1zjowCyed5QSiwr5zSWEJOhNAEnze6YU2/view?usp=drivesdk",
+  "camera": {
+   "x": -149.7,
+   "z": 65.2,
+   "heading": 335,
+   "accuracy": 2.6,
+   "altitude": 6.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.2,
+   59.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south",
+   "backdrop.json:aerial-trees",
+   "frontage_divisions.json:cervantes-elena-lawn-1"
+  ]
+ },
+ {
+  "id": "IMG_2511.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2511.jpg",
+  "title": "IMG_2511",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1fg0NHr8UZOfS4NKrmhhR1YjxMvWNjrs8/view?usp=drivesdk",
+  "camera": {
+   "x": -151.5,
+   "z": 62.8,
+   "heading": 307,
+   "accuracy": 2.6,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -156.3,
+   59.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees",
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "cervantes_patio_walls.json:cervantes-patio-south-2"
+  ]
+ },
+ {
+  "id": "IMG_2512.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2512.jpg",
+  "title": "IMG_2512",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1rzGKdkWFNHKFMc8_yl9YAmvHKdQWaynN/view?usp=drivesdk",
+  "camera": {
+   "x": -155.9,
+   "z": 55.7,
+   "heading": 69,
+   "accuracy": 2.5,
+   "altitude": 8.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -150.3,
+   53.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "backdrop.json:aerial-trees",
+   "street:cervantes",
+   "cervantes_garden_door.json:cervantes-junction-east-planter"
+  ]
+ },
+ {
+  "id": "IMG_2513.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2513.jpg",
+  "title": "IMG_2513",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1TqGBDQ8Cefm2eCScQ7HuW2jvJEVd7C42/view?usp=drivesdk",
+  "camera": {
+   "x": -153.5,
+   "z": 53.8,
+   "heading": 65,
+   "accuracy": 2.5,
+   "altitude": 10.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.1,
+   51.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
+  ]
+ },
+ {
+  "id": "IMG_2514.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2514.jpg",
+  "title": "IMG_2514",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1o4oiQbzSpK9y2h1XfcWObKfl24lFEDIk/view?usp=drivesdk",
+  "camera": {
+   "x": -148.7,
+   "z": 52.3,
+   "heading": 15,
+   "accuracy": 2.5,
+   "altitude": 8.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -147.1,
+   46.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-tree-bed-1",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ]
+ },
+ {
+  "id": "IMG_2515.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2515.jpg",
+  "title": "IMG_2515",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1dX9y8p-Gpg0ZjmhueKwkC0f1CQLWlguY/view?usp=drivesdk",
+  "camera": {
+   "x": -147.0,
+   "z": 48.2,
+   "heading": 330,
+   "accuracy": 2.5,
+   "altitude": 8.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -150.0,
+   43.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "elena_north.json:elena-north-magnolia-bed",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2516.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2516.jpg",
+  "title": "IMG_2516",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1q6J5so6cn4swCICWR1frgIgftHYPVSEZ/view?usp=drivesdk",
+  "camera": {
+   "x": -150.7,
+   "z": 44.2,
+   "heading": 331,
+   "accuracy": 2.5,
+   "altitude": 8.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -153.6,
+   39.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-magnolia-bed"
+  ]
+ },
+ {
+  "id": "IMG_2517.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2517.jpg",
+  "title": "IMG_2517",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/16rFJg3IY76uFHcbRGZeDeXw2UBOIIdGe/view?usp=drivesdk",
+  "camera": {
+   "x": -153.5,
+   "z": 38.7,
+   "heading": 307,
+   "accuracy": 2.5,
+   "altitude": 7.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -158.3,
+   35.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-planter-west",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ]
  },
  {
   "id": "IMG_2518.jpg",
@@ -6288,6 +8655,319 @@
   "subject": "Calle Elena covered walkway towards its west arch"
  },
  {
+  "id": "IMG_2520.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2520.jpg",
+  "title": "IMG_2520",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1awpCAcV_MAyYfeeF2MHhfnkhZ3s07Ifv/view?usp=drivesdk",
+  "camera": {
+   "x": -154.9,
+   "z": 37.4,
+   "heading": 241,
+   "accuracy": 2.6,
+   "altitude": 6.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -160.1,
+   40.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2521.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2521.jpg",
+  "title": "IMG_2521",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1tNDys7WbJNB-CV5QowgWVqWqXJxv-rLt/view?usp=drivesdk",
+  "camera": {
+   "x": -155.4,
+   "z": 38.3,
+   "heading": 238,
+   "accuracy": 2.7,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -160.5,
+   41.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2522.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2522.jpg",
+  "title": "IMG_2522",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1H4GeCnG9QA1lK3MZObMp3rTaOGuuGidV/view?usp=drivesdk",
+  "camera": {
+   "x": -156.9,
+   "z": 43.6,
+   "heading": 141,
+   "accuracy": 3.2,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -153.1,
+   48.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2523.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2523.jpg",
+  "title": "IMG_2523",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "nearest lane, 6 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1qyxPoJ_Gpck7wHIc9_9Yu4tyPhCAc0Rt/view?usp=drivesdk",
+  "camera": {
+   "x": -156.7,
+   "z": 45.8,
+   "heading": 147,
+   "accuracy": 3.5,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -153.4,
+   50.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "cervantes_north_patios.json:cervantes-north-partition-east",
+   "cervantes_garden_door.json:cervantes-junction-north-patio"
+  ]
+ },
+ {
+  "id": "IMG_2524.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2524.jpg",
+  "title": "IMG_2524",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1KamrXIs7O-yuP_AH5MZVK8sW3M2uNapT/view?usp=drivesdk",
+  "camera": {
+   "x": -187.0,
+   "z": 96.8,
+   "heading": 161,
+   "accuracy": 3.7,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -185.0,
+   102.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2525.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2525.jpg",
+  "title": "IMG_2525",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1Mu6frYaUogT2fM2mxUKzZl5qsmDyvVRT/view?usp=drivesdk",
+  "camera": {
+   "x": -187.3,
+   "z": 97.1,
+   "heading": 137,
+   "accuracy": 3.4,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -183.2,
+   101.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2526.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2526.jpg",
+  "title": "IMG_2526",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-26",
+  "originalUrl": "https://drive.google.com/file/d/1aXwQuTtg7n7EsfvGaiUWZNngfts9zV9u/view?usp=drivesdk",
+  "camera": {
+   "x": -187.0,
+   "z": 96.5,
+   "heading": 346,
+   "accuracy": 3.3,
+   "altitude": 6.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -188.5,
+   90.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees",
+   "dali_cervantes_threshold.json:dali-bays-1"
+  ]
+ },
+ {
+  "id": "IMG_2537.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2537.jpg",
+  "title": "IMG_2537",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1PsDomIPQTV0_25m8tTfb7Wkg5FRR4u1v/view?usp=drivesdk",
+  "camera": {
+   "x": -152.7,
+   "z": 48.2,
+   "heading": 328,
+   "accuracy": 19.0,
+   "altitude": 10.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -155.9,
+   43.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2538.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2538.jpg",
+  "title": "IMG_2538",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Qu2jAgrb5im9aKbFH0yN3W5waIpVFgTy/view?usp=drivesdk",
+  "camera": {
+   "x": -152.5,
+   "z": 48.2,
+   "heading": 45,
+   "accuracy": 16.7,
+   "altitude": 10.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.3,
+   44.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-magnolia-bed",
+   "elena_north.json:elena-north-tree-bed-1",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column"
+  ]
+ },
+ {
   "id": "IMG_2539.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2539.jpg",
@@ -6319,6 +8999,307 @@
   "looksAt": [
    -158.0,
    50.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2540.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2540.jpg",
+  "title": "IMG_2540",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1jMySTDlXkQyCM3Ezl4UU5m1oW7fbxmUY/view?usp=drivesdk",
+  "camera": {
+   "x": -151.0,
+   "z": 55.7,
+   "heading": 245,
+   "accuracy": 14.0,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -156.4,
+   58.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "cervantes_patio_walls.json:cervantes-patio-north-1",
+   "street:cervantes",
+   "cervantes_north_patios.json:cervantes-north-partition-middle"
+  ]
+ },
+ {
+  "id": "IMG_2541.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2541.jpg",
+  "title": "IMG_2541",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1jnUqa15HDGUMojAdlZ48A4VWoH1_nMAN/view?usp=drivesdk",
+  "camera": {
+   "x": -170.6,
+   "z": 65.2,
+   "heading": 160,
+   "accuracy": 4.7,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -168.5,
+   70.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2542.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2542.jpg",
+  "title": "IMG_2542",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1-R2QZiVqSMxuOH2KA7FRMHEsgcMQvhuR/view?usp=drivesdk",
+  "camera": {
+   "x": -170.6,
+   "z": 65.9,
+   "heading": 149,
+   "accuracy": 4.7,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -167.5,
+   71.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2543.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2543.jpg",
+  "title": "IMG_2543",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1hMLkR6gQTsjitMFiqPMk-CzLZwUbC-Gz/view?usp=drivesdk",
+  "camera": {
+   "x": -165.4,
+   "z": 70.5,
+   "heading": 147,
+   "accuracy": 6.2,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -162.1,
+   75.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2544.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2544.jpg",
+  "title": "IMG_2544",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/123w3X3_xOe8ydm7QwagmXG_o4UzcGEN9/view?usp=drivesdk",
+  "camera": {
+   "x": -165.4,
+   "z": 70.5,
+   "heading": 146,
+   "accuracy": 6.2,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -162.0,
+   75.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2545.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2545.jpg",
+  "title": "IMG_2545",
+  "shows": [
+   "cervantes"
+  ],
+  "areasBasis": "nearest lane, 16 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1aB3yRPHNnbd37RqPymsm6wXVrzqPKKym/view?usp=drivesdk",
+  "camera": {
+   "x": -164.2,
+   "z": 82.9,
+   "heading": 124,
+   "accuracy": 4.5,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -159.2,
+   86.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2546.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2546.jpg",
+  "title": "IMG_2546",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/13dVStTF6HjLYs83N9aBkpJ_j-5OLCT0R/view?usp=drivesdk",
+  "camera": {
+   "x": -155.4,
+   "z": 90.9,
+   "heading": 150,
+   "accuracy": 4.6,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.4,
+   96.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2547.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2547.jpg",
+  "title": "IMG_2547",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/19TqV8uRcJRkeE7Iy5P73QsJqOwaCf3d1/view?usp=drivesdk",
+  "camera": {
+   "x": -153.7,
+   "z": 94.6,
+   "heading": 146,
+   "accuracy": 4.5,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -150.3,
+   99.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2548.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2548.jpg",
+  "title": "IMG_2548",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1I9GRCgSbdArYf0NrSTkgp_IWi2YUcIxT/view?usp=drivesdk",
+  "camera": {
+   "x": -153.7,
+   "z": 94.6,
+   "heading": 147,
+   "accuracy": 4.5,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -150.4,
+   99.6
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
@@ -6363,6 +9344,317 @@
   ]
  },
  {
+  "id": "IMG_2550.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2550.jpg",
+  "title": "IMG_2550",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/12KDM_I3C_Yn9g4tY0vvNiHs5_BaMGT9s/view?usp=drivesdk",
+  "camera": {
+   "x": -153.2,
+   "z": 111.6,
+   "heading": 189,
+   "accuracy": 3.5,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -154.1,
+   117.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2551.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2551.jpg",
+  "title": "IMG_2551",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Bo52lej_TRpxYkaf8PkDnKnYKKICjR0O/view?usp=drivesdk",
+  "camera": {
+   "x": -154.7,
+   "z": 113.8,
+   "heading": 244,
+   "accuracy": 3.5,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -160.1,
+   116.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2552.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2552.jpg",
+  "title": "IMG_2552",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1BCv1oBwFLBCbkYJ7tcUewFtpNlQQWPT2/view?usp=drivesdk",
+  "camera": {
+   "x": -162.7,
+   "z": 117.2,
+   "heading": 242,
+   "accuracy": 3.1,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -168.0,
+   120.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees",
+   "parking:Dalí car park"
+  ]
+ },
+ {
+  "id": "IMG_2553.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2553.jpg",
+  "title": "IMG_2553",
+  "shows": [
+   "eva",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1JqQ6A20oYRZn44dxnAxCFLD34n6GqolW/view?usp=drivesdk",
+  "camera": {
+   "x": -167.9,
+   "z": 120.6,
+   "heading": 63,
+   "accuracy": 2.6,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -162.6,
+   117.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2554.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2554.jpg",
+  "title": "IMG_2554",
+  "shows": [
+   "dali",
+   "eva"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1e2YP3uarQqGGM7dbVpvEfH8z6JHfKNhC/view?usp=drivesdk",
+  "camera": {
+   "x": -168.6,
+   "z": 121.8,
+   "heading": 339,
+   "accuracy": 2.6,
+   "altitude": 8.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -170.8,
+   116.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2555.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2555.jpg",
+  "title": "IMG_2555",
+  "shows": [
+   "dali",
+   "eva"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1GFCbwPunCFUs9NECn_OyKbnrHnzidYWI/view?usp=drivesdk",
+  "camera": {
+   "x": -168.6,
+   "z": 121.8,
+   "heading": 6,
+   "accuracy": 2.6,
+   "altitude": 8.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -168.0,
+   115.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "parking:Dalí car park"
+  ]
+ },
+ {
+  "id": "IMG_2556.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2556.jpg",
+  "title": "IMG_2556",
+  "shows": [
+   "eva",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1P6T4aBQ8XZxSgrPXI_0wYpsMOdgM-FZr/view?usp=drivesdk",
+  "camera": {
+   "x": -165.9,
+   "z": 128.6,
+   "heading": 151,
+   "accuracy": 2.5,
+   "altitude": 8.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -163.0,
+   133.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva-west-footpath",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2557.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2557.jpg",
+  "title": "IMG_2557",
+  "shows": [
+   "eva",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1BSIE_c5AKkrJ-fww8hqpQniCKEwExHZ7/view?usp=drivesdk",
+  "camera": {
+   "x": -160.4,
+   "z": 139.8,
+   "heading": 69,
+   "accuracy": 2.5,
+   "altitude": 9.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -154.8,
+   137.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2558.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2558.jpg",
+  "title": "IMG_2558",
+  "shows": [
+   "eva",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1GvE4jHCQzAFQZWS1lt4hA61SEW8bvCaL/view?usp=drivesdk",
+  "camera": {
+   "x": -158.9,
+   "z": 142.6,
+   "heading": 151,
+   "accuracy": 2.6,
+   "altitude": 9.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -156.0,
+   147.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva-west-footpath",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
   "id": "IMG_2559.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2559.jpg",
@@ -6402,6 +9694,403 @@
   "subject": "Calle Patricia looking east-north-east from its west end"
  },
  {
+  "id": "IMG_2560.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2560.jpg",
+  "title": "IMG_2560",
+  "shows": [
+   "seaward-lanes",
+   "eva",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1GXrndHq6oTDCic_MQf-g4JyFthsjVPOT/view?usp=drivesdk",
+  "camera": {
+   "x": -149.2,
+   "z": 153.4,
+   "heading": 58,
+   "accuracy": 2.6,
+   "altitude": 8.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -144.1,
+   150.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:patricia",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2561.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2561.jpg",
+  "title": "IMG_2561",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1N1dFOwKDMjf7XkSSnF6smQ45J3L9bX2N/view?usp=drivesdk",
+  "camera": {
+   "x": -140.5,
+   "z": 148.1,
+   "heading": 146,
+   "accuracy": 2.5,
+   "altitude": 7.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -137.1,
+   153.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2562.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2562.jpg",
+  "title": "IMG_2562",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1rWEaB7vtARZepIjD33Jx2CLw72yRHdx6/view?usp=drivesdk",
+  "camera": {
+   "x": -139.3,
+   "z": 148.1,
+   "heading": 152,
+   "accuracy": 2.4,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -136.5,
+   153.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2563.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2563.jpg",
+  "title": "IMG_2563",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 6 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1QVx7RFHudIx3WUMIwWFPD4YXgidYa10B/view?usp=drivesdk",
+  "camera": {
+   "x": -136.5,
+   "z": 152.8,
+   "heading": 151,
+   "accuracy": 2.4,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -133.6,
+   158.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2564.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2564.jpg",
+  "title": "IMG_2564",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 7 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/17rwMJkcs9cCgez9QkYnKNCpZURno0G7e/view?usp=drivesdk",
+  "camera": {
+   "x": -136.5,
+   "z": 154.9,
+   "heading": 145,
+   "accuracy": 4.0,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -133.1,
+   159.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2565.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2565.jpg",
+  "title": "IMG_2565",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 8 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1odipiqJMj_TnLWQH46ZH4hk6g9H_YD5A/view?usp=drivesdk",
+  "camera": {
+   "x": -135.5,
+   "z": 155.5,
+   "heading": 63,
+   "accuracy": 5.1,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -130.2,
+   152.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2566.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2566.jpg",
+  "title": "IMG_2566",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 12 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1MUDPizGHAST1mmEICxmQMV-9oHycId1v/view?usp=drivesdk",
+  "camera": {
+   "x": -126.1,
+   "z": 154.6,
+   "heading": 66,
+   "accuracy": 3.6,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -120.6,
+   152.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2567.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2567.jpg",
+  "title": "IMG_2567",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 13 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1au-XaYBnBPS151136TSdy9SXM11lyQuk/view?usp=drivesdk",
+  "camera": {
+   "x": -124.6,
+   "z": 154.6,
+   "heading": 58,
+   "accuracy": 3.7,
+   "altitude": 7.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -119.5,
+   151.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2568.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2568.jpg",
+  "title": "IMG_2568",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 14 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1p1f-dmnxDkq_VOBvzY7VUJFM5fNq8dXZ/view?usp=drivesdk",
+  "camera": {
+   "x": -120.9,
+   "z": 153.4,
+   "heading": 59,
+   "accuracy": 3.7,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -115.8,
+   150.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2569.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2569.jpg",
+  "title": "IMG_2569",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 7 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1ifmetCMZCwo0AHixEyFVJcw3sShEO8pO/view?usp=drivesdk",
+  "camera": {
+   "x": -112.7,
+   "z": 151.5,
+   "heading": 61,
+   "accuracy": 3.5,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -107.5,
+   148.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:silvia-south"
+  ]
+ },
+ {
+  "id": "IMG_2570.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2570.jpg",
+  "title": "IMG_2570",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1457YrvM2QOnFA8qPqRHKrx4czXsOaH_g/view?usp=drivesdk",
+  "camera": {
+   "x": -110.7,
+   "z": 150.3,
+   "heading": 59,
+   "accuracy": 3.5,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -105.6,
+   147.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:silvia-south",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2571.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2571.jpg",
+  "title": "IMG_2571",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/12od6yul0DUrJTWl-mO02mdezMbBi8MnA/view?usp=drivesdk",
+  "camera": {
+   "x": -106.4,
+   "z": 146.0,
+   "heading": 74,
+   "accuracy": 3.7,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -100.6,
+   144.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
   "id": "IMG_2572.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2572.jpg",
@@ -6434,6 +10123,427 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2573.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2573.jpg",
+  "title": "IMG_2573",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1gcDqn9Niy1OpyGg6k7Q_2_MaajL6ylZX/view?usp=drivesdk",
+  "camera": {
+   "x": -101.2,
+   "z": 148.7,
+   "heading": 88,
+   "accuracy": 3.3,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -95.2,
+   148.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2574.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2574.jpg",
+  "title": "IMG_2574",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1tZxOdAv0YXqASWdt7n-jD3LDBpJFjDwR/view?usp=drivesdk",
+  "camera": {
+   "x": -101.7,
+   "z": 148.7,
+   "heading": 287,
+   "accuracy": 3.2,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -107.4,
+   146.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:silvia-south",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2575.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2575.jpg",
+  "title": "IMG_2575",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1tb-z0K74X61HEfZgC9uccvdLTJes6z73/view?usp=drivesdk",
+  "camera": {
+   "x": -102.2,
+   "z": 148.1,
+   "heading": 299,
+   "accuracy": 3.1,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -107.4,
+   145.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:silvia-south",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2576.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2576.jpg",
+  "title": "IMG_2576",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1oYqYfEO5u4cH7yNxSDSkE6jqH746K8Ct/view?usp=drivesdk",
+  "camera": {
+   "x": -102.2,
+   "z": 149.0,
+   "heading": 149,
+   "accuracy": 3.0,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -99.1,
+   154.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:silvia-south"
+  ]
+ },
+ {
+  "id": "IMG_2577.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2577.jpg",
+  "title": "IMG_2577",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1utM7Hp2bSOC9fgRWuyH0_uuSzWwPXq8_/view?usp=drivesdk",
+  "camera": {
+   "x": -100.7,
+   "z": 151.5,
+   "heading": 150,
+   "accuracy": 2.9,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -97.7,
+   156.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:silvia-south",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2578.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2578.jpg",
+  "title": "IMG_2578",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1xGKPuUw7jU7R4zv4EzphEXKe9iKueGMr/view?usp=drivesdk",
+  "camera": {
+   "x": -64.7,
+   "z": 147.2,
+   "heading": 60,
+   "accuracy": 4.1,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -59.5,
+   144.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:teodoro-rojo",
+   "seaward_paving.json:teodoro-octagonal-paving"
+  ]
+ },
+ {
+  "id": "IMG_2579.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2579.jpg",
+  "title": "IMG_2579",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/12mXRN1PXWpLjSqeM4dWulZc29hcTFxTM/view?usp=drivesdk",
+  "camera": {
+   "x": -61.9,
+   "z": 144.4,
+   "heading": 63,
+   "accuracy": 3.4,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -56.6,
+   141.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "seaward_paving.json:teodoro-octagonal-paving"
+  ]
+ },
+ {
+  "id": "IMG_2580.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2580.jpg",
+  "title": "IMG_2580",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Jf1kciaLcb2R0tL2BOvnE9e5aghboiaZ/view?usp=drivesdk",
+  "camera": {
+   "x": -54.5,
+   "z": 143.5,
+   "heading": 152,
+   "accuracy": 4.7,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -51.7,
+   148.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2581.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2581.jpg",
+  "title": "IMG_2581",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1UY595GBUZFXqB7qUacIQvnx-O0Ov3wxv/view?usp=drivesdk",
+  "camera": {
+   "x": -52.5,
+   "z": 150.6,
+   "heading": 176,
+   "accuracy": 4.7,
+   "altitude": 5.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -52.1,
+   156.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2582.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2582.jpg",
+  "title": "IMG_2582",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 9 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/14z80MrvsZyJdW0zrbO25T0Ox5lUDLwVN/view?usp=drivesdk",
+  "camera": {
+   "x": -51.0,
+   "z": 154.6,
+   "heading": 236,
+   "accuracy": 4.7,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -56.0,
+   158.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2583.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2583.jpg",
+  "title": "IMG_2583",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/10RFOZsI6vNSokppGcoEQAfPjcU8UcYLF/view?usp=drivesdk",
+  "camera": {
+   "x": -55.2,
+   "z": 152.8,
+   "heading": 210,
+   "accuracy": 9.7,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -58.2,
+   158.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2584.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2584.jpg",
+  "title": "IMG_2584",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1sNE0SfK31_fAGAHekIlclrikrp884Flp/view?usp=drivesdk",
+  "camera": {
+   "x": -69.1,
+   "z": 170.7,
+   "heading": 149,
+   "accuracy": 2.8,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -66.0,
+   175.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2585.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2585.jpg",
+  "title": "IMG_2585",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Xzgq8hWvCoiqINfdGBcH5INMK7KhoWDu/view?usp=drivesdk",
+  "camera": {
+   "x": -69.6,
+   "z": 171.0,
+   "heading": 327,
+   "accuracy": 2.8,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -72.9,
+   166.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "seaward_paving.json:seaward-patterned-floor"
+  ]
  },
  {
   "id": "IMG_2586.jpg",
@@ -6469,6 +10579,421 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2587.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2587.jpg",
+  "title": "IMG_2587",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 11 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/19aPmmRVlPWfBCb770_fpD0B6ZF_79gGt/view?usp=drivesdk",
+  "camera": {
+   "x": -66.9,
+   "z": 165.7,
+   "heading": 62,
+   "accuracy": 2.7,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -61.6,
+   162.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2588.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2588.jpg",
+  "title": "IMG_2588",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 12 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1nNtYWunqLUbhNGVXozOJgc3UnLzp0_BV/view?usp=drivesdk",
+  "camera": {
+   "x": -64.2,
+   "z": 165.1,
+   "heading": 53,
+   "accuracy": 2.8,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -59.4,
+   161.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2589.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2589.jpg",
+  "title": "IMG_2589",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 13 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1MKL-xT5oShAlK7Syj-EIL61tfZAb7pD2/view?usp=drivesdk",
+  "camera": {
+   "x": -61.7,
+   "z": 164.8,
+   "heading": 29,
+   "accuracy": 2.7,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -58.8,
+   159.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2590.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2590.jpg",
+  "title": "IMG_2590",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 12 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1eFg-5FMXAZJn67x0ldkf20o3acL-0aOX/view?usp=drivesdk",
+  "camera": {
+   "x": -60.2,
+   "z": 163.6,
+   "heading": 44,
+   "accuracy": 2.7,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -56.0,
+   159.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2591.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2591.jpg",
+  "title": "IMG_2591",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 11 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1v_YlVnA1ZcFZ0md4KkgJYSquoPVTGaH8/view?usp=drivesdk",
+  "camera": {
+   "x": -58.4,
+   "z": 161.4,
+   "heading": 62,
+   "accuracy": 2.8,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -53.1,
+   158.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2592.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2592.jpg",
+  "title": "IMG_2592",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 12 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1rTntZp1Yvv7_cnyTsS05g0hdyxTXXlKc/view?usp=drivesdk",
+  "camera": {
+   "x": -57.7,
+   "z": 161.7,
+   "heading": 61,
+   "accuracy": 2.9,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -52.5,
+   158.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2593.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2593.jpg",
+  "title": "IMG_2593",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 10 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1_1itBFNjJSVUH8sW3dFunCFGk6tZQYEJ/view?usp=drivesdk",
+  "camera": {
+   "x": -51.7,
+   "z": 156.2,
+   "heading": 332,
+   "accuracy": 3.6,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -54.5,
+   150.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2594.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2594.jpg",
+  "title": "IMG_2594",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 8 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1lqq_iIqFA5KdzMdo7lbmcqy1Li_Tw1il/view?usp=drivesdk",
+  "camera": {
+   "x": -53.2,
+   "z": 154.9,
+   "heading": 329,
+   "accuracy": 3.5,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -56.3,
+   149.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:jorge",
+   "street:teodoro-rojo"
+  ]
+ },
+ {
+  "id": "IMG_2595.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2595.jpg",
+  "title": "IMG_2595",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1DmoohbqdQP1XFY4kehKVdm05HGgo29Mo/view?usp=drivesdk",
+  "camera": {
+   "x": -56.2,
+   "z": 145.3,
+   "heading": 67,
+   "accuracy": 2.9,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -50.7,
+   143.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:jorge"
+  ]
+ },
+ {
+  "id": "IMG_2596.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2596.jpg",
+  "title": "IMG_2596",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/14_9Cdz10yRxw3NCEXQNcmCSzPVlTrg6v/view?usp=drivesdk",
+  "camera": {
+   "x": -38.1,
+   "z": 135.1,
+   "heading": 27,
+   "accuracy": 3.0,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -35.4,
+   129.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2597.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2597.jpg",
+  "title": "IMG_2597",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1_gsLsSebVDcwl4asCAQDZA_sWATVVnho/view?usp=drivesdk",
+  "camera": {
+   "x": -26.4,
+   "z": 127.7,
+   "heading": 35,
+   "accuracy": 2.6,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -23.0,
+   122.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:guillermo"
+  ]
+ },
+ {
+  "id": "IMG_2598.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2598.jpg",
+  "title": "IMG_2598",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1TAHe4paOIL3lQ1tbeZHrVB_ybpdKxUAh/view?usp=drivesdk",
+  "camera": {
+   "x": -17.9,
+   "z": 125.2,
+   "heading": 78,
+   "accuracy": 2.4,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -12.0,
+   124.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2599.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2599.jpg",
+  "title": "IMG_2599",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1nvcC78Wo-6NqHNmnzM3vLAG5g2o20VJN/view?usp=drivesdk",
+  "camera": {
+   "x": -13.4,
+   "z": 130.8,
+   "heading": 133,
+   "accuracy": 2.4,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -9.0,
+   134.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "seafront_fence.json:guillermo-ramp-wall",
+   "area:paseo"
+  ]
  },
  {
   "id": "IMG_2600.jpg",
@@ -6510,6 +11035,521 @@
   "headingOff": 47
  },
  {
+  "id": "IMG_2601.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2601.jpg",
+  "title": "IMG_2601",
+  "shows": [
+   "seaward-lanes",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/14xxahmRc69fyXj77Fuj2K5QqpbPmCpg-/view?usp=drivesdk",
+  "camera": {
+   "x": -10.7,
+   "z": 134.2,
+   "heading": 106,
+   "accuracy": 2.3,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -4.9,
+   135.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ]
+ },
+ {
+  "id": "IMG_2602.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2602.jpg",
+  "title": "IMG_2602",
+  "shows": [
+   "paseo",
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1e21W7M5QmgQAiOaw1tOfUKKAD9DDJETA/view?usp=drivesdk",
+  "camera": {
+   "x": -7.5,
+   "z": 135.1,
+   "heading": 50,
+   "accuracy": 2.3,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -2.9,
+   131.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2603.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2603.jpg",
+  "title": "IMG_2603",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1MORzpbFqeVzpNJEYOJ0p6RRbh8k0aRvB/view?usp=drivesdk",
+  "camera": {
+   "x": -4.7,
+   "z": 132.3,
+   "heading": 348,
+   "accuracy": 2.2,
+   "altitude": 4.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -5.9,
+   126.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2604.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2604.jpg",
+  "title": "IMG_2604",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1oH875UrcNeLj6qSV1TW6yS9P0Fis3LIG/view?usp=drivesdk",
+  "camera": {
+   "x": -1.7,
+   "z": 131.1,
+   "heading": 59,
+   "accuracy": 2.1,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   3.4,
+   128.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge"
+  ]
+ },
+ {
+  "id": "IMG_2605.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2605.jpg",
+  "title": "IMG_2605",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1GrqEaje3-U9ncrYcX37RJikQjETNQ7Qd/view?usp=drivesdk",
+  "camera": {
+   "x": 36.3,
+   "z": 120.9,
+   "heading": 158,
+   "accuracy": 4.7,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   38.5,
+   126.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2606.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2606.jpg",
+  "title": "IMG_2606",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1v2uNNJcYcLzkg5_KDmdIq254xFj4zJGC/view?usp=drivesdk",
+  "camera": {
+   "x": 35.8,
+   "z": 120.6,
+   "heading": 113,
+   "accuracy": 4.7,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   41.3,
+   122.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2607.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2607.jpg",
+  "title": "IMG_2607",
+  "shows": [
+   "paseo",
+   "barraka-beach",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1-0RK4z7mTGRLqVusJConlrj63DXc9gYP/view?usp=drivesdk",
+  "camera": {
+   "x": 10.7,
+   "z": 116.0,
+   "heading": 199,
+   "accuracy": 18.8,
+   "altitude": 5.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   8.7,
+   121.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge"
+  ]
+ },
+ {
+  "id": "IMG_2608.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2608.jpg",
+  "title": "IMG_2608",
+  "shows": [
+   "paseo",
+   "barraka-beach",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1L_jwhYmKpGe8X153a4Gl2TPYXqW9GcCJ/view?usp=drivesdk",
+  "camera": {
+   "x": 13.4,
+   "z": 114.7,
+   "heading": 223,
+   "accuracy": 12.6,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   9.3,
+   119.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge"
+  ]
+ },
+ {
+  "id": "IMG_2609.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2609.jpg",
+  "title": "IMG_2609",
+  "shows": [
+   "paseo",
+   "barraka-beach",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1K92PaSQmf7ui-8SGS3vRwb9hnzZXqgJP/view?usp=drivesdk",
+  "camera": {
+   "x": 12.7,
+   "z": 112.6,
+   "heading": 226,
+   "accuracy": 12.3,
+   "altitude": 4.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   8.4,
+   116.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2610.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2610.jpg",
+  "title": "IMG_2610",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1OJYIeHZW-G0U0OSCDVgzPiaapbQd5ZbQ/view?usp=drivesdk",
+  "camera": {
+   "x": 21.9,
+   "z": 112.6,
+   "heading": 326,
+   "accuracy": 4.2,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   18.5,
+   107.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2611.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2611.jpg",
+  "title": "IMG_2611",
+  "shows": [
+   "paseo",
+   "barraka-beach",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1yQoWdmp0pN8PtYXZiiGZaxz7Fk1qm039/view?usp=drivesdk",
+  "camera": {
+   "x": 20.6,
+   "z": 106.7,
+   "heading": 52,
+   "accuracy": 3.2,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   25.3,
+   103.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:barraka",
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2612.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2612.jpg",
+  "title": "IMG_2612",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1zF7Hurc-g5mh2-LZ6qs9tkhjGN0ntycO/view?usp=drivesdk",
+  "camera": {
+   "x": 26.1,
+   "z": 101.4,
+   "heading": 33,
+   "accuracy": 4.4,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   29.4,
+   96.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2613.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2613.jpg",
+  "title": "IMG_2613",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1sfsciVoBOlx6qZZtYtsRVSDtE3PthV01/view?usp=drivesdk",
+  "camera": {
+   "x": 31.1,
+   "z": 97.7,
+   "heading": 330,
+   "accuracy": 4.7,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   28.1,
+   92.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2614.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2614.jpg",
+  "title": "IMG_2614",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1FAUfuiBlUX_7H3Zooklawzfs6o--Q1CZ/view?usp=drivesdk",
+  "camera": {
+   "x": 32.1,
+   "z": 96.8,
+   "heading": 132,
+   "accuracy": 4.7,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   36.6,
+   100.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2615.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2615.jpg",
+  "title": "IMG_2615",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1knsRI9Os42aPwycCvOPMUdMTkMkFksu8/view?usp=drivesdk",
+  "camera": {
+   "x": 33.1,
+   "z": 96.8,
+   "heading": 168,
+   "accuracy": 4.7,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   34.3,
+   102.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach",
+   "barraka_boardwalk.json:barraka-boardwalk"
+  ]
+ },
+ {
   "id": "IMG_2616.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2616.jpg",
@@ -6543,6 +11583,416 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2617.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2617.jpg",
+  "title": "IMG_2617",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1qPVYLhK_4oWbD1xszW8TWvljuFx34Z8C/view?usp=drivesdk",
+  "camera": {
+   "x": 43.0,
+   "z": 92.1,
+   "heading": 112,
+   "accuracy": 2.7,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   48.6,
+   94.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2618.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2618.jpg",
+  "title": "IMG_2618",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1dRQGW5FJLNhpfH2WJpD97WzDGtXD98sM/view?usp=drivesdk",
+  "camera": {
+   "x": 46.0,
+   "z": 89.1,
+   "heading": 221,
+   "accuracy": 2.4,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   42.1,
+   93.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2619.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2619.jpg",
+  "title": "IMG_2619",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/141Ahaun2oqmF7BWyOhsbCcWm9OULtzlj/view?usp=drivesdk",
+  "camera": {
+   "x": 46.0,
+   "z": 88.7,
+   "heading": 192,
+   "accuracy": 2.3,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   44.8,
+   94.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2620.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2620.jpg",
+  "title": "IMG_2620",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/12Sblq6E2B9GYIHmd5cCGCZqpY556i72a/view?usp=drivesdk",
+  "camera": {
+   "x": 46.8,
+   "z": 89.1,
+   "heading": 154,
+   "accuracy": 2.3,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   49.4,
+   94.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2621.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2621.jpg",
+  "title": "IMG_2621",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1VJjEYmHlGN7rNnsE3SMqeL9HLfIk_IAA/view?usp=drivesdk",
+  "camera": {
+   "x": 49.5,
+   "z": 86.6,
+   "heading": 55,
+   "accuracy": 2.2,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   54.4,
+   83.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach"
+  ]
+ },
+ {
+  "id": "IMG_2622.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2622.jpg",
+  "title": "IMG_2622",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Z0Q7CDheWvsTQ4jTjC2Lhh8lA7cEvAqb/view?usp=drivesdk",
+  "camera": {
+   "x": 50.2,
+   "z": 85.0,
+   "heading": 41,
+   "accuracy": 2.2,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   54.1,
+   80.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:beach",
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2623.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2623.jpg",
+  "title": "IMG_2623",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1TecAQmbF2VpM8WmIhLMn9XAJ1sV1TQPH/view?usp=drivesdk",
+  "camera": {
+   "x": 53.0,
+   "z": 80.7,
+   "heading": 357,
+   "accuracy": 2.2,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   52.7,
+   74.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2624.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2624.jpg",
+  "title": "IMG_2624",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1-Bb4FK-eyJqpKBGteIi3Gdkxz1VoDVQH/view?usp=drivesdk",
+  "camera": {
+   "x": 54.0,
+   "z": 79.8,
+   "heading": 331,
+   "accuracy": 2.2,
+   "altitude": 6.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   51.1,
+   74.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2625.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2625.jpg",
+  "title": "IMG_2625",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/14Rt6wNroBOBi06GlGD7QpRzTz0kgMqQx/view?usp=drivesdk",
+  "camera": {
+   "x": 59.7,
+   "z": 73.6,
+   "heading": 253,
+   "accuracy": 2.1,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   54.0,
+   75.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2626.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2626.jpg",
+  "title": "IMG_2626",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Xn2bNfPrFvtmlwRJpSgVk3_yUg_b5o3h/view?usp=drivesdk",
+  "camera": {
+   "x": 59.7,
+   "z": 73.9,
+   "heading": 292,
+   "accuracy": 2.1,
+   "altitude": 6.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   54.1,
+   71.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2627.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2627.jpg",
+  "title": "IMG_2627",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/10MAHehoheFGIvXh4ENE5lqLgGOubpwVr/view?usp=drivesdk",
+  "camera": {
+   "x": 68.9,
+   "z": 64.9,
+   "heading": 289,
+   "accuracy": 2.1,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   63.2,
+   62.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo"
+  ]
+ },
+ {
+  "id": "IMG_2628.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2628.jpg",
+  "title": "IMG_2628",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1pOqbmpS0-TmwrJcpAD8nDYa8C32o7iP0/view?usp=drivesdk",
+  "camera": {
+   "x": 71.4,
+   "z": 61.2,
+   "heading": 43,
+   "accuracy": 2.1,
+   "altitude": 4.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   75.5,
+   56.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
    "area:beach"
   ]
  },
@@ -6584,6 +12034,517 @@
   ]
  },
  {
+  "id": "IMG_2630.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2630.jpg",
+  "title": "IMG_2630",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1r6lzal_LGkfWqFzKRoXJ_dm6uw8X4gxg/view?usp=drivesdk",
+  "camera": {
+   "x": 24.9,
+   "z": 102.7,
+   "heading": 227,
+   "accuracy": 6.8,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   20.5,
+   106.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "area:barraka"
+  ]
+ },
+ {
+  "id": "IMG_2631.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2631.jpg",
+  "title": "IMG_2631",
+  "shows": [
+   "barraka-beach",
+   "paseo",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1VWGKnOCyIZsZUNtx46cOSVzgMOpd0Cj9/view?usp=drivesdk",
+  "camera": {
+   "x": 21.1,
+   "z": 107.9,
+   "heading": 206,
+   "accuracy": 4.0,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   18.5,
+   113.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "beach_verge.json:barraka-front-verge"
+  ]
+ },
+ {
+  "id": "IMG_2632.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2632.jpg",
+  "title": "IMG_2632",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1FvLkZhlVGjfYtlvEOaHAHtvIkOIMofNJ/view?usp=drivesdk",
+  "camera": {
+   "x": -15.2,
+   "z": 147.2,
+   "heading": 228,
+   "accuracy": 2.6,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -19.7,
+   151.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
+ },
+ {
+  "id": "IMG_2633.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2633.jpg",
+  "title": "IMG_2633",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1U38af_okgfqGC_PjQ9lb5h6lV_uwrsN0/view?usp=drivesdk",
+  "camera": {
+   "x": -20.1,
+   "z": 151.2,
+   "heading": 205,
+   "accuracy": 2.4,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -22.6,
+   156.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge"
+  ]
+ },
+ {
+  "id": "IMG_2634.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2634.jpg",
+  "title": "IMG_2634",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1uOOvTxSSRMEgfTwl7831BpBMlGzw_9zJ/view?usp=drivesdk",
+  "camera": {
+   "x": -21.4,
+   "z": 152.4,
+   "heading": 216,
+   "accuracy": 2.3,
+   "altitude": 5.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -24.9,
+   157.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge"
+  ]
+ },
+ {
+  "id": "IMG_2635.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2635.jpg",
+  "title": "IMG_2635",
+  "shows": [
+   "paseo",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/160UAWdo4rVAgGq9p3B5Zuin_0LJczeyN/view?usp=drivesdk",
+  "camera": {
+   "x": -76.1,
+   "z": 183.4,
+   "heading": 267,
+   "accuracy": 15.9,
+   "altitude": 6.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -82.1,
+   183.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2636.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2636.jpg",
+  "title": "IMG_2636",
+  "shows": [
+   "paseo",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1vOwpbzfuwmbR2Gkj6qqLGlIn7oox-Ugl/view?usp=drivesdk",
+  "camera": {
+   "x": -86.6,
+   "z": 217.4,
+   "heading": 229,
+   "accuracy": 4.7,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -91.1,
+   221.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge"
+  ]
+ },
+ {
+  "id": "IMG_2637.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2637.jpg",
+  "title": "IMG_2637",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1nVEQ-ejWZwAUSSJJHu-sAuA8TZt8dt4h/view?usp=drivesdk",
+  "camera": {
+   "x": -100.5,
+   "z": 225.1,
+   "heading": 238,
+   "accuracy": 4.7,
+   "altitude": 5.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -105.6,
+   228.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_wall.json:paseo-retaining-wall"
+  ]
+ },
+ {
+  "id": "IMG_2638.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2638.jpg",
+  "title": "IMG_2638",
+  "shows": [
+   "paseo"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1zDt52sPJEiAT4GRPJP5jPNJXa0vD0v27/view?usp=drivesdk",
+  "camera": {
+   "x": -104.7,
+   "z": 227.3,
+   "heading": 245,
+   "accuracy": 2.0,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -110.1,
+   229.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "paseo_wall.json:paseo-retaining-wall",
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_details.json:paseo-west-hedge"
+  ]
+ },
+ {
+  "id": "IMG_2639.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2639.jpg",
+  "title": "IMG_2639",
+  "shows": [
+   "paseo",
+   "dali"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1sXSxBKBjonOXTlSyum-nu54AGtP57dLI/view?usp=drivesdk",
+  "camera": {
+   "x": -105.5,
+   "z": 217.1,
+   "heading": 57,
+   "accuracy": 17.8,
+   "altitude": 6.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -100.5,
+   213.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2640.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2640.jpg",
+  "title": "IMG_2640",
+  "shows": [
+   "paseo",
+   "dali",
+   "barraka-beach",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1UGzYYYw4r75sJFbZX_cgbp7HWpdmIteP/view?usp=drivesdk",
+  "camera": {
+   "x": -103.2,
+   "z": 211.5,
+   "heading": 63,
+   "accuracy": 28.6,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -97.9,
+   208.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2641.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2641.jpg",
+  "title": "IMG_2641",
+  "shows": [
+   "paseo",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1yP4QwRr4deSiB4ZU9sO4zQEj5V2zHVMJ/view?usp=drivesdk",
+  "camera": {
+   "x": -100.2,
+   "z": 208.1,
+   "heading": 64,
+   "accuracy": 15.9,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -94.8,
+   205.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2642.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2642.jpg",
+  "title": "IMG_2642",
+  "shows": [
+   "paseo",
+   "barraka-beach",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1ovvKyYgyb1AQwmocX-yPWwEg1pUAOzGt/view?usp=drivesdk",
+  "camera": {
+   "x": -95.8,
+   "z": 207.2,
+   "heading": 61,
+   "accuracy": 22.0,
+   "altitude": 5.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -90.6,
+   204.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2643.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2643.jpg",
+  "title": "IMG_2643",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Z9sUbFm0WN9rcZbgjy0qJrhixatWcReM/view?usp=drivesdk",
+  "camera": {
+   "x": -86.6,
+   "z": 198.8,
+   "heading": 66,
+   "accuracy": 4.7,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -81.1,
+   196.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2644.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2644.jpg",
+  "title": "IMG_2644",
+  "shows": [
+   "paseo",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1BLOnp04-yrkTnOcVIOnTGzO8h5J4F87l/view?usp=drivesdk",
+  "camera": {
+   "x": -77.6,
+   "z": 200.1,
+   "heading": 55,
+   "accuracy": 2.1,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -72.7,
+   196.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "area:paseo",
+   "paseo_wall.json:paseo-timber-edge",
+   "paseo_wall.json:paseo-retaining-wall",
+   "south_pool.json:south-pool-seaward-level"
+  ]
+ },
+ {
   "id": "IMG_2645.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2645.jpg",
@@ -6619,6 +12580,361 @@
   "looksAtFeatures": []
  },
  {
+  "id": "IMG_2646.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2646.jpg",
+  "title": "IMG_2646",
+  "shows": [
+   "seaward-lanes",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1mupKz19zLtzzgS9gxfFzaTMOgA8aILwR/view?usp=drivesdk",
+  "camera": {
+   "x": -92.0,
+   "z": 163.6,
+   "heading": 330,
+   "accuracy": 2.6,
+   "altitude": 9.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -95.0,
+   158.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2647.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2647.jpg",
+  "title": "IMG_2647",
+  "shows": [
+   "seaward-lanes",
+   "south-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/16jFeLGIdmclfSqhENaMpt3DKfljff6VW/view?usp=drivesdk",
+  "camera": {
+   "x": -93.5,
+   "z": 161.4,
+   "heading": 331,
+   "accuracy": 2.6,
+   "altitude": 8.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -96.4,
+   156.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2648.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2648.jpg",
+  "title": "IMG_2648",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/14jgdlfP9nEvE1304ekq9xUQrH8ZSYhlH/view?usp=drivesdk",
+  "camera": {
+   "x": -97.5,
+   "z": 154.0,
+   "heading": 11,
+   "accuracy": 2.5,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -96.4,
+   148.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2649.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2649.jpg",
+  "title": "IMG_2649",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1XFNFIfiW94fLxtl6Xeluex_MQPHhIIF8/view?usp=drivesdk",
+  "camera": {
+   "x": -99.0,
+   "z": 153.4,
+   "heading": 5,
+   "accuracy": 2.5,
+   "altitude": 8.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -98.5,
+   147.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2650.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2650.jpg",
+  "title": "IMG_2650",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1cZEiurwSwRikV8DGaK0CZaEk3GMNh7NF/view?usp=drivesdk",
+  "camera": {
+   "x": -100.0,
+   "z": 152.1,
+   "heading": 147,
+   "accuracy": 2.6,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -96.7,
+   157.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2651.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2651.jpg",
+  "title": "IMG_2651",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1NnA4R9RRffZ1C0p4VIRm_rp41e5O5SHz/view?usp=drivesdk",
+  "camera": {
+   "x": -102.5,
+   "z": 150.3,
+   "heading": 48,
+   "accuracy": 2.6,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -98.0,
+   146.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2652.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2652.jpg",
+  "title": "IMG_2652",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1BFHvJylAVVSl6ehNbyw21xRBisZMPDsL/view?usp=drivesdk",
+  "camera": {
+   "x": -102.5,
+   "z": 150.0,
+   "heading": 89,
+   "accuracy": 2.6,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -96.5,
+   149.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2653.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2653.jpg",
+  "title": "IMG_2653",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1WgBPo93x2l-Wfjm9sAjlyQHvaLhgRzzz/view?usp=drivesdk",
+  "camera": {
+   "x": -102.5,
+   "z": 150.0,
+   "heading": 24,
+   "accuracy": 2.6,
+   "altitude": 7.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -100.1,
+   144.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2654.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2654.jpg",
+  "title": "IMG_2654",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/16zvoCdIphoAmX1WtEkvSayaJKIhqYLOa/view?usp=drivesdk",
+  "camera": {
+   "x": -102.5,
+   "z": 150.0,
+   "heading": 50,
+   "accuracy": 2.6,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -97.9,
+   146.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2656.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2656.jpg",
+  "title": "IMG_2656",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1dugmqibQ5GgMsqhSObwTgjVbFFdH5VmO/view?usp=drivesdk",
+  "camera": {
+   "x": -103.7,
+   "z": 147.8,
+   "heading": 238,
+   "accuracy": 2.7,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -108.8,
+   151.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2657.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2657.jpg",
+  "title": "IMG_2657",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1Hs02F6CCWSUdy3GiyEqAt1w6qRtfc2H-/view?usp=drivesdk",
+  "camera": {
+   "x": -103.7,
+   "z": 147.8,
+   "heading": 239,
+   "accuracy": 2.9,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -108.8,
+   150.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
   "id": "IMG_2658.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2658.jpg",
@@ -6648,6 +12964,526 @@
   "looksAt": [
    -108.5,
    150.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2660.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2660.jpg",
+  "title": "IMG_2660",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1cxm8WB-TTDtOL01KLDXZVQmGjp9JQI9b/view?usp=drivesdk",
+  "camera": {
+   "x": -104.2,
+   "z": 146.0,
+   "heading": 337,
+   "accuracy": 3.2,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -106.5,
+   140.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2661.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2661.jpg",
+  "title": "IMG_2661",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1CquKyLR-QwxExNV8DRwZ7pL5k3qyjT2i/view?usp=drivesdk",
+  "camera": {
+   "x": -112.4,
+   "z": 134.5,
+   "heading": 298,
+   "accuracy": 3.5,
+   "altitude": 6.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -117.7,
+   131.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:patricia",
+   "street:silvia-south"
+  ]
+ },
+ {
+  "id": "IMG_2662.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2662.jpg",
+  "title": "IMG_2662",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1TibO_niwSvjpe6xZQRLnORmxbc_QG_mp/view?usp=drivesdk",
+  "camera": {
+   "x": -114.2,
+   "z": 132.3,
+   "heading": 243,
+   "accuracy": 3.3,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -119.5,
+   135.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:patricia",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2663.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2663.jpg",
+  "title": "IMG_2663",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1qE6wjZSLxyUxumy7nagy32IZEPdoRo2y/view?usp=drivesdk",
+  "camera": {
+   "x": -113.7,
+   "z": 131.7,
+   "heading": 37,
+   "accuracy": 3.0,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -110.1,
+   126.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:silvia-north",
+   "street:patricia"
+  ]
+ },
+ {
+  "id": "IMG_2664.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2664.jpg",
+  "title": "IMG_2664",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1pDXsUKG7loeckhEND9B0nlGoUX_dvPtj/view?usp=drivesdk",
+  "camera": {
+   "x": -111.9,
+   "z": 130.8,
+   "heading": 338,
+   "accuracy": 2.9,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -114.1,
+   125.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:silvia-north",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2665.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2665.jpg",
+  "title": "IMG_2665",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1OI_qGB8GPAm5mq9pQUkid9T3OMWqmZ5Z/view?usp=drivesdk",
+  "camera": {
+   "x": -114.4,
+   "z": 122.8,
+   "heading": 337,
+   "accuracy": 2.9,
+   "altitude": 7.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -116.7,
+   117.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:silvia-north",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "silvia_tunnel.json:silvia-tunnel-study"
+  ]
+ },
+ {
+  "id": "IMG_2666.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2666.jpg",
+  "title": "IMG_2666",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1C7RBAUCFa2mu9stUfXDMARLvTtPl5SMB/view?usp=drivesdk",
+  "camera": {
+   "x": -115.4,
+   "z": 121.8,
+   "heading": 319,
+   "accuracy": 3.0,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -119.3,
+   117.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "middle_pool_lane_frontages.json:silvia-outdoor-apron",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "street:silvia-north",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2667.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2667.jpg",
+  "title": "IMG_2667",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1_v_iudA7R3NKtF4ZouiVOgJJUmVV3zmI/view?usp=drivesdk",
+  "camera": {
+   "x": -118.4,
+   "z": 118.1,
+   "heading": 24,
+   "accuracy": 2.9,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -116.0,
+   112.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2668.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2668.jpg",
+  "title": "IMG_2668",
+  "shows": [
+   "seaward-lanes",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1X9QSblNuoKSMWM70195qv1NoTOpISTrz/view?usp=drivesdk",
+  "camera": {
+   "x": -118.9,
+   "z": 116.0,
+   "heading": 55,
+   "accuracy": 2.8,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -114.0,
+   112.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2669.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2669.jpg",
+  "title": "IMG_2669",
+  "shows": [
+   "seaward-lanes",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1cfaN7j9xDy66MazNWCR3hrTBlqSkcVxs/view?usp=drivesdk",
+  "camera": {
+   "x": -118.9,
+   "z": 116.3,
+   "heading": 242,
+   "accuracy": 2.7,
+   "altitude": 8.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -124.2,
+   119.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "silvia_tunnel.json:silvia-tunnel-study"
+  ]
+ },
+ {
+  "id": "IMG_2670.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2670.jpg",
+  "title": "IMG_2670",
+  "shows": [
+   "seaward-lanes",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1rx1Qjq6vVgYNarwdDM7DIiYm_hRgVkH3/view?usp=drivesdk",
+  "camera": {
+   "x": -118.4,
+   "z": 115.3,
+   "heading": 239,
+   "accuracy": 2.7,
+   "altitude": 8.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -123.5,
+   118.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "middle_pool_lane_frontages.json:silvia-outdoor-apron",
+   "seaward_paving.json:silvia-patterned-floor",
+   "silvia_tunnel.json:silvia-tunnel-study"
+  ]
+ },
+ {
+  "id": "IMG_2671.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2671.jpg",
+  "title": "IMG_2671",
+  "shows": [
+   "seaward-lanes",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1faa0CAjF4NXoShrg-NYc7-TuNYOV5ANb/view?usp=drivesdk",
+  "camera": {
+   "x": -118.4,
+   "z": 116.0,
+   "heading": 307,
+   "accuracy": 2.7,
+   "altitude": 8.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -123.2,
+   112.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "middle_pool_lane_frontages.json:south-lane-right-far-bed",
+   "middle_pool_lane_frontages.json:south-lane-four-column-paving",
+   "backdrop.json:aerial-trees",
+   "street:silvia-north"
+  ]
+ },
+ {
+  "id": "IMG_2672.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2672.jpg",
+  "title": "IMG_2672",
+  "shows": [
+   "seaward-lanes",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1PGA8mq00CsEVH4Q11mlUIVV4egzLzlG4/view?usp=drivesdk",
+  "camera": {
+   "x": -117.1,
+   "z": 115.0,
+   "heading": 63,
+   "accuracy": 3.0,
+   "altitude": 8.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -111.8,
+   112.3
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2673.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2673.jpg",
+  "title": "IMG_2673",
+  "shows": [
+   "seaward-lanes",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/18Fgho8skWkGcoJq4SUtD6i2X25GxvO5U/view?usp=drivesdk",
+  "camera": {
+   "x": -117.6,
+   "z": 114.1,
+   "heading": 66,
+   "accuracy": 3.9,
+   "altitude": 8.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -112.1,
+   111.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2674.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2674.jpg",
+  "title": "IMG_2674",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "nearest lane, 15 m from the camera (weak)",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1j6viNzsdVj-PJUK5R3vSkqORefbZUjUx/view?usp=drivesdk",
+  "camera": {
+   "x": -100.7,
+   "z": 105.8,
+   "heading": 59,
+   "accuracy": 4.8,
+   "altitude": 8.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -95.6,
+   102.7
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
@@ -6693,6 +13529,399 @@
   ]
  },
  {
+  "id": "IMG_2676.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2676.jpg",
+  "title": "IMG_2676",
+  "shows": [
+   "seaward-lanes",
+   "eva"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1ZXJDPsIhwdsYf4zOv4tcg6XLPGmvJfNc/view?usp=drivesdk",
+  "camera": {
+   "x": -100.2,
+   "z": 75.4,
+   "heading": 251,
+   "accuracy": 2.9,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -105.9,
+   77.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2677.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2677.jpg",
+  "title": "IMG_2677",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/194TG2bNIb7ul91wNlRSos1xoOVS98INe/view?usp=drivesdk",
+  "camera": {
+   "x": -105.7,
+   "z": 74.8,
+   "heading": 246,
+   "accuracy": 2.7,
+   "altitude": 4.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -111.2,
+   77.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "eva_walled_lawn.json:eva-walled-lawn"
+  ]
+ },
+ {
+  "id": "IMG_2678.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2678.jpg",
+  "title": "IMG_2678",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/15oTUDSkn9ymTPZ_YcNZvlDmO4d-5-S4r/view?usp=drivesdk",
+  "camera": {
+   "x": -113.4,
+   "z": 79.5,
+   "heading": 230,
+   "accuracy": 2.8,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -118.0,
+   83.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:eva"
+  ]
+ },
+ {
+  "id": "IMG_2679.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2679.jpg",
+  "title": "IMG_2679",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/19stuRdLBWZjviYCyjEC366pdcNw55ITr/view?usp=drivesdk",
+  "camera": {
+   "x": -116.4,
+   "z": 82.3,
+   "heading": 271,
+   "accuracy": 2.9,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -122.4,
+   82.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "raised_terraces.json:middle-pool-curved-hedge-patio"
+  ]
+ },
+ {
+  "id": "IMG_2680.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2680.jpg",
+  "title": "IMG_2680",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1j2FVksiwfY6r7sJTsvrMJlqEtfxNXgKY/view?usp=drivesdk",
+  "camera": {
+   "x": -128.8,
+   "z": 82.9,
+   "heading": 272,
+   "accuracy": 2.8,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -134.8,
+   82.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "raised_terraces.json:middle-pool-north-terrace",
+   "middle_pool_north.json:middle-pool-north-pergola",
+   "elena_lane_paving.json:elena-south-three-column"
+  ]
+ },
+ {
+  "id": "IMG_2681.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2681.jpg",
+  "title": "IMG_2681",
+  "shows": [
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1tdCI-VACSqIGeRZ3jb5u5iMFU6zO-Loy/view?usp=drivesdk",
+  "camera": {
+   "x": -131.6,
+   "z": 84.1,
+   "heading": 299,
+   "accuracy": 2.7,
+   "altitude": 8.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -136.8,
+   81.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ]
+ },
+ {
+  "id": "IMG_2682.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2682.jpg",
+  "title": "IMG_2682",
+  "shows": [
+   "elena",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1p40Rh4gSJrZPCXt1i5JkdwetjDziRijt/view?usp=drivesdk",
+  "camera": {
+   "x": -139.0,
+   "z": 80.1,
+   "heading": 334,
+   "accuracy": 2.6,
+   "altitude": 7.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -141.6,
+   74.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ]
+ },
+ {
+  "id": "IMG_2683.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2683.jpg",
+  "title": "IMG_2683",
+  "shows": [
+   "elena",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/16eBy7Nv0BP-zQZ6i1VceG_e4JOYlnD7D/view?usp=drivesdk",
+  "camera": {
+   "x": -141.0,
+   "z": 72.0,
+   "heading": 303,
+   "accuracy": 2.6,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -146.0,
+   68.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south",
+   "frontage_divisions.json:cervantes-elena-lawn-2"
+  ]
+ },
+ {
+  "id": "IMG_2684.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2684.jpg",
+  "title": "IMG_2684",
+  "shows": [
+   "elena",
+   "middle-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1R-Csbe6UjYIrWRj_x4Rd-Yt41Tt94Yke/view?usp=drivesdk",
+  "camera": {
+   "x": -142.3,
+   "z": 71.4,
+   "heading": 315,
+   "accuracy": 2.6,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -146.5,
+   67.2
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south",
+   "frontage_divisions.json:cervantes-lawn-door-path"
+  ]
+ },
+ {
+  "id": "IMG_2685.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2685.jpg",
+  "title": "IMG_2685",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1pSjcUkbHqyTJGiWGJ1TgwWMCoLrIfH2L/view?usp=drivesdk",
+  "camera": {
+   "x": -146.7,
+   "z": 67.4,
+   "heading": 334,
+   "accuracy": 2.7,
+   "altitude": 7.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -149.3,
+   62.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ]
+ },
+ {
+  "id": "IMG_2686.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2686.jpg",
+  "title": "IMG_2686",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1k02oCcaYU1BxRsHY6cPDPs-eG4X0zK8e/view?usp=drivesdk",
+  "camera": {
+   "x": -145.5,
+   "z": 51.0,
+   "heading": 331,
+   "accuracy": 2.5,
+   "altitude": 8.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.4,
+   45.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "elena_north.json:elena-north-tree-bed-1",
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
   "id": "IMG_2687.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2687.jpg",
@@ -6730,6 +13959,321 @@
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "elena_north.json:elena-north-magnolia-bed"
+  ]
+ },
+ {
+  "id": "IMG_2688.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2688.jpg",
+  "title": "IMG_2688",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1CNDPnmRO50Mxb6AM0gUh2S3Z0nPz_gW4/view?usp=drivesdk",
+  "camera": {
+   "x": -151.7,
+   "z": 41.1,
+   "heading": 313,
+   "accuracy": 2.5,
+   "altitude": 8.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -156.1,
+   37.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-planter-west",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ]
+ },
+ {
+  "id": "IMG_2689.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2689.jpg",
+  "title": "IMG_2689",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1qGUjAhd97xmEreGy8zekQo2vVd1gzBTR/view?usp=drivesdk",
+  "camera": {
+   "x": -153.5,
+   "z": 38.3,
+   "heading": 286,
+   "accuracy": 2.4,
+   "altitude": 8.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -159.3,
+   36.6
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-planter-west"
+  ]
+ },
+ {
+  "id": "IMG_2690.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2690.jpg",
+  "title": "IMG_2690",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/10CgaI2oe4mSWBygxB2cG-yJ9_MlSPfh7/view?usp=drivesdk",
+  "camera": {
+   "x": -154.9,
+   "z": 37.4,
+   "heading": 228,
+   "accuracy": 2.4,
+   "altitude": 8.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -159.4,
+   41.4
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2691.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2691.jpg",
+  "title": "IMG_2691",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/11LB05dKHBNmqd3nQdDvOPxaCT6YG96kK/view?usp=drivesdk",
+  "camera": {
+   "x": -155.4,
+   "z": 37.4,
+   "heading": 205,
+   "accuracy": 2.3,
+   "altitude": 8.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -157.9,
+   42.8
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2692.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2692.jpg",
+  "title": "IMG_2692",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1UlnO3EcsEtWgmzMFK_O3PCS07wTTuGwk/view?usp=drivesdk",
+  "camera": {
+   "x": -157.2,
+   "z": 35.3,
+   "heading": 158,
+   "accuracy": 2.5,
+   "altitude": 8.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -155.0,
+   40.9
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ]
+ },
+ {
+  "id": "IMG_2725.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2725.jpg",
+  "title": "IMG_2725",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-28",
+  "originalUrl": "https://drive.google.com/file/d/1wCsR1jSKUkeMn8TMEKdvm_EmK973nQJU/view?usp=drivesdk",
+  "camera": {
+   "x": -51.5,
+   "z": 70.5,
+   "heading": 55,
+   "accuracy": 4.7,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -46.6,
+   67.1
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ]
+ },
+ {
+  "id": "IMG_2771.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2771.jpg",
+  "title": "IMG_2771",
+  "shows": [
+   "seaward-lanes",
+   "paseo",
+   "barraka-beach",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/14IoKsPWVWbM5CUXDoq_SuGKD0_0uOCWF/view?usp=drivesdk",
+  "camera": {
+   "x": -9.9,
+   "z": 123.1,
+   "heading": 328,
+   "accuracy": 18.4,
+   "altitude": 5.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -13.1,
+   118.0
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": []
+ },
+ {
+  "id": "IMG_2813.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2813.jpg",
+  "title": "IMG_2813",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1IUjcKWvhlEOOb2pJP4Y2GbNtm1aDFme6/view?usp=drivesdk",
+  "camera": {
+   "x": -153.5,
+   "z": 38.7,
+   "heading": 166,
+   "accuracy": 2.5,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.0,
+   44.5
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "elena_north.json:elena-north-planter-box-1"
+  ]
+ },
+ {
+  "id": "IMG_2822.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2822.jpg",
+  "title": "IMG_2822",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "areasBasis": "camera position",
+  "viewpoint": null,
+  "useFor": [],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-04",
+  "originalUrl": "https://drive.google.com/file/d/1NwsXf3z1euZF3i6TfVQ99zYc4nCJ9XAm/view?usp=drivesdk",
+  "camera": {
+   "x": -23.9,
+   "z": 118.7,
+   "heading": 147,
+   "accuracy": 3.6,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -20.6,
+   123.7
+  ],
+  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtFeatures": [
+   "street:guillermo",
+   "street:jorge"
   ]
  },
  {

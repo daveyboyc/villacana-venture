@@ -19,7 +19,7 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 ## Coverage
 
 Layout: 7, Levels and slopes: 1, Facades and roofs: 2, Materials: 2, Planting: 3, Views: 2
-8 reviewed, 0 suggested only by camera position.
+8 reviewed, 11 suggested only by camera position.
 
 ## Levels
 
@@ -73,3 +73,21 @@ graph LR
 | `villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png` | aerial | layout | Apple Maps 3D: south pool, its lawn and the beach promenade |
 | [IMG_2349.jpg](../../public/photos-ref/IMG_2349.jpg) | ground | levels, layout, materials | From the paseo: sandstone retaining wall and fence below the south pool **Note:** Shows the retaining wall right below the south pool. _Used by: paseo_wall.json:paseo-retaining-wall, south_pool.json:south-pool-seaward-level, paseo_details.json:paseo-pool-hedge._ |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2584.jpg](../../public/photos-ref/IMG_2584.jpg) | not reviewed | not reviewed | IMG_2584 |
+| [IMG_2585.jpg](../../public/photos-ref/IMG_2585.jpg) | not reviewed | not reviewed | IMG_2585 |
+| [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | not reviewed | not reviewed | IMG_2643 |
+| [IMG_2635.jpg](../../public/photos-ref/IMG_2635.jpg) | not reviewed | not reviewed | IMG_2635 |
+| [IMG_2636.jpg](../../public/photos-ref/IMG_2636.jpg) | not reviewed | not reviewed | IMG_2636 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | not reviewed | not reviewed | IMG_2640 |
+| [IMG_2641.jpg](../../public/photos-ref/IMG_2641.jpg) | not reviewed | not reviewed | IMG_2641 |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | not reviewed | not reviewed | IMG_2642 |
+| [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | not reviewed | not reviewed | IMG_2644 |
+| [IMG_2646.jpg](../../public/photos-ref/IMG_2646.jpg) | not reviewed | not reviewed | IMG_2646 |
+| [IMG_2647.jpg](../../public/photos-ref/IMG_2647.jpg) | not reviewed | not reviewed | IMG_2647 |

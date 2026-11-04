@@ -20,7 +20,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 ## Coverage
 
 Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 4, Planting: 2, Views: 1
-25 reviewed, 0 suggested only by camera position.
+25 reviewed, 19 suggested only by camera position.
 
 ## Levels
 
@@ -148,3 +148,29 @@ graph LR
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | not reviewed | not reviewed | IMG_2476 |
+| [IMG_2477.jpg](../../public/photos-ref/IMG_2477.jpg) | not reviewed | not reviewed | IMG_2477 |
+| [IMG_2478.jpg](../../public/photos-ref/IMG_2478.jpg) | not reviewed | not reviewed | IMG_2478 |
+| [IMG_2524.jpg](../../public/photos-ref/IMG_2524.jpg) | not reviewed | not reviewed | IMG_2524 |
+| [IMG_2525.jpg](../../public/photos-ref/IMG_2525.jpg) | not reviewed | not reviewed | IMG_2525 |
+| [IMG_2526.jpg](../../public/photos-ref/IMG_2526.jpg) | not reviewed | not reviewed | IMG_2526 |
+| [IMG_2554.jpg](../../public/photos-ref/IMG_2554.jpg) | not reviewed | not reviewed | IMG_2554 |
+| [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | not reviewed | not reviewed | IMG_2555 |
+| [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | not reviewed | not reviewed | IMG_2472 |
+| [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | not reviewed | not reviewed | IMG_2473 |
+| [IMG_2474.jpg](../../public/photos-ref/IMG_2474.jpg) | not reviewed | not reviewed | IMG_2474 |
+| [IMG_2475.jpg](../../public/photos-ref/IMG_2475.jpg) | not reviewed | not reviewed | IMG_2475 |
+| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | not reviewed | not reviewed | IMG_2553 |
+| [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | not reviewed | not reviewed | IMG_2556 |
+| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | not reviewed | not reviewed | IMG_2557 |
+| [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | not reviewed | not reviewed | IMG_2558 |
+| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | not reviewed | not reviewed | IMG_2560 |
+| [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | not reviewed | not reviewed | IMG_2639 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | not reviewed | not reviewed | IMG_2640 |

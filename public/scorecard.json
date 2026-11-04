@@ -160,9 +160,9 @@
     }
    },
    "photos": {
-    "count": 12,
+    "count": 21,
     "tagged": 12,
-    "placed": 6,
+    "placed": 15,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -207,7 +207,7 @@
    "status": [
     "Ground: 85% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
-    "Photos: 12, 6 placed; 3 cameras solved, 1 station holding.",
+    "Photos: 21, 15 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
     "How sure: 6 photographed, 2 estimated, 1 inferred, 1 known gap.",
     "Placement: 0 of 9 features verified."
@@ -272,9 +272,9 @@
     }
    },
    "photos": {
-    "count": 23,
+    "count": 41,
     "tagged": 23,
-    "placed": 16,
+    "placed": 34,
     "checks": {
      "matches": 1,
      "differs": 2,
@@ -335,7 +335,7 @@
    "status": [
     "Ground: 91% of open ground within 0.25 m of the laser survey.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 23, 16 placed; no camera solved.",
+    "Photos: 41, 34 placed; no camera solved.",
     "Facades: 0 of 40 kit parts traced from photos.",
     "How sure: 9 photographed, 12 estimated, 2 inferred.",
     "Placement: 0 of 23 features verified, 5 open discrepancies."
@@ -380,9 +380,9 @@
     }
    },
    "photos": {
-    "count": 6,
+    "count": 17,
     "tagged": 6,
-    "placed": 3,
+    "placed": 14,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -420,7 +420,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 98% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 6, 3 placed; no camera solved.",
+    "Photos: 17, 14 placed; no camera solved.",
     "Facades: 0 of 29 kit parts traced from photos.",
     "How sure: 0 photographed, 2 estimated, 0 inferred.",
     "Placement: 0 of 2 features verified."
@@ -482,9 +482,9 @@
     }
    },
    "photos": {
-    "count": 2,
+    "count": 13,
     "tagged": 2,
-    "placed": 2,
+    "placed": 13,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -524,31 +524,15 @@
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 2, 2 placed; no camera solved.",
+    "Photos: 13, 13 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
     "How sure: 0 photographed, 1 estimated, 1 inferred.",
     "Placement: 0 of 2 features verified."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 2 spots",
     "requests": [
-     {
-      "id": "beach-gateway",
-      "at": [
-       -1.0,
-       137.0
-      ],
-      "look": [
-       -5.0,
-       133.4
-      ],
-      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
-      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
      {
       "id": "main-pool-lawn",
       "at": [
@@ -580,6 +564,24 @@
       "priority": 2,
       "state": "open",
       "photos": []
+     },
+     {
+      "id": "beach-gateway",
+      "at": [
+       -1.0,
+       137.0
+      ],
+      "look": [
+       -5.0,
+       133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "state": "received",
+      "photos": [
+       "IMG_2603.jpg"
+      ]
      }
     ]
    }
@@ -617,9 +619,9 @@
     }
    },
    "photos": {
-    "count": 45,
+    "count": 85,
     "tagged": 45,
-    "placed": 45,
+    "placed": 85,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -666,14 +668,14 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 45, 45 placed; 3 cameras solved, none holding.",
+    "Photos: 85, 85 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
     "How sure: 12 photographed, 18 estimated, 2 inferred, 3 known gaps.",
     "Placement: 0 of 33 features verified."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 2 spots",
     "requests": [
      {
       "id": "elena-25-far-end",
@@ -717,8 +719,11 @@
       "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
       "why": "task facade-kit-elena: a roof camera that can be solved",
       "priority": 2,
-      "state": "open",
-      "photos": []
+      "state": "received",
+      "photos": [
+       "IMG_2537.jpg",
+       "IMG_2538.jpg"
+      ]
      }
     ]
    }
@@ -759,9 +764,9 @@
     }
    },
    "photos": {
-    "count": 29,
+    "count": 74,
     "tagged": 29,
-    "placed": 29,
+    "placed": 74,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -807,14 +812,14 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 29, 29 placed; 3 cameras solved, none holding.",
+    "Photos: 74, 74 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 149 kit parts traced from photos.",
     "How sure: 12 photographed, 11 estimated, 2 inferred, 2 known gaps.",
     "Placement: 0 of 25 features verified."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 2 spots",
     "requests": [
      {
       "id": "cervantes-east-from-elena",
@@ -861,8 +866,10 @@
       "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
       "why": "levels item cervantes-junction-north-patio",
       "priority": 2,
-      "state": "open",
-      "photos": []
+      "state": "received",
+      "photos": [
+       "IMG_2538.jpg"
+      ]
      }
     ]
    }
@@ -903,9 +910,9 @@
     }
    },
    "photos": {
-    "count": 25,
+    "count": 44,
     "tagged": 25,
-    "placed": 25,
+    "placed": 44,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -943,7 +950,7 @@
    "status": [
     "Ground: 93% of open ground within 0.25 m of the laser survey; streets within 0.72 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 25, 25 placed; no camera solved.",
+    "Photos: 44, 44 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
     "How sure: 13 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
@@ -987,9 +994,9 @@
     }
    },
    "photos": {
-    "count": 1,
+    "count": 2,
     "tagged": 1,
-    "placed": 1,
+    "placed": 2,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1027,7 +1034,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.23 m.",
     "Footprints: 46% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 1, 1 placed; no camera solved.",
+    "Photos: 2, 2 placed; no camera solved.",
     "Facades: 0 of 274 kit parts traced from photos.",
     "How sure: 0 photographed, 3 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
@@ -1088,9 +1095,9 @@
     }
    },
    "photos": {
-    "count": 0,
+    "count": 2,
     "tagged": 0,
-    "placed": 0,
+    "placed": 2,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1128,7 +1135,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
-    "Photos: 0, 0 placed; no camera solved.",
+    "Photos: 2, 2 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
     "Placement: no model features registered here yet."
    ],
@@ -1204,9 +1211,9 @@
     }
    },
    "photos": {
-    "count": 12,
+    "count": 30,
     "tagged": 12,
-    "placed": 12,
+    "placed": 30,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1244,7 +1251,7 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 0.45 m.",
     "Footprints: 80% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 12, 12 placed; no camera solved.",
+    "Photos: 30, 30 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
     "How sure: 3 photographed, 0 estimated, 0 inferred.",
     "Placement: 0 of 3 features verified."
@@ -1305,9 +1312,9 @@
     }
    },
    "photos": {
-    "count": 36,
+    "count": 121,
     "tagged": 36,
-    "placed": 36,
+    "placed": 121,
     "checks": {
      "matches": 1,
      "differs": 2,
@@ -1356,7 +1363,7 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
-    "Photos: 36, 36 placed; no camera solved.",
+    "Photos: 121, 121 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
     "How sure: 1 photographed, 7 estimated, 3 inferred.",
     "Placement: 0 of 11 features verified, 2 open discrepancies."
@@ -1424,9 +1431,9 @@
     }
    },
    "photos": {
-    "count": 20,
-    "tagged": 20,
-    "placed": 19,
+    "count": 50,
+    "tagged": 21,
+    "placed": 48,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1475,7 +1482,7 @@
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
-    "Photos: 20, 19 placed; no camera solved.",
+    "Photos: 50, 48 placed; no camera solved.",
     "How sure: 0 photographed, 9 estimated, 1 inferred.",
     "Placement: 0 of 10 features verified, 2 open discrepancies."
    ],
@@ -1531,9 +1538,9 @@
     }
    },
    "photos": {
-    "count": 17,
+    "count": 62,
     "tagged": 17,
-    "placed": 16,
+    "placed": 61,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1573,7 +1580,7 @@
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 17, 16 placed; no camera solved.",
+    "Photos: 62, 61 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
     "How sure: 4 photographed, 9 estimated, 0 inferred.",
     "Placement: 0 of 13 features verified."
@@ -1654,9 +1661,9 @@
     }
    },
    "photos": {
-    "count": 182,
-    "tagged": 182,
-    "placed": 165,
+    "count": 403,
+    "tagged": 183,
+    "placed": 385,
     "checks": {
      "matches": 2,
      "differs": 2,
@@ -1745,14 +1752,14 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 182, 165 placed; 7 cameras solved, 1 station holding.",
+    "Photos: 403, 385 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 56 photographed, 87 estimated, 9 inferred, 6 known gaps.",
     "Placement: 0 of 385 features verified, 9 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 19 spots",
+    "headline": "Photos needed: 16 spots",
     "requests": [
      {
       "id": "alberto",
@@ -1766,22 +1773,6 @@
       ],
       "ask": "Calle Alberto: one photo along the lane from each end.",
       "why": "no photos at all in the north lanes",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "beach-gateway",
-      "at": [
-       -1.0,
-       137.0
-      ],
-      "look": [
-       -5.0,
-       133.4
-      ],
-      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
-      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -1899,22 +1890,6 @@
       "photos": []
      },
      {
-      "id": "cervantes-junction-patio",
-      "at": [
-       -153.5,
-       53.5
-      ],
-      "look": [
-       -150.0,
-       50.0
-      ],
-      "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
-      "why": "levels item cervantes-junction-north-patio",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
       "id": "elena-25-from-lane",
       "at": [
        -148.0,
@@ -1926,19 +1901,6 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "elena-roof-station",
-      "at": [
-       -155.7,
-       50.1
-      ],
-      "look": null,
-      "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
-      "why": "task facade-kit-elena: a roof camera that can be solved",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -2054,6 +2016,58 @@
       "priority": 2,
       "state": "open",
       "photos": []
+     },
+     {
+      "id": "beach-gateway",
+      "at": [
+       -1.0,
+       137.0
+      ],
+      "look": [
+       -5.0,
+       133.4
+      ],
+      "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+      "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+      "priority": 1,
+      "state": "received",
+      "photos": [
+       "IMG_2603.jpg"
+      ]
+     },
+     {
+      "id": "cervantes-junction-patio",
+      "at": [
+       -153.5,
+       53.5
+      ],
+      "look": [
+       -150.0,
+       50.0
+      ],
+      "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+      "why": "levels item cervantes-junction-north-patio",
+      "priority": 2,
+      "state": "received",
+      "photos": [
+       "IMG_2538.jpg"
+      ]
+     },
+     {
+      "id": "elena-roof-station",
+      "at": [
+       -155.7,
+       50.1
+      ],
+      "look": null,
+      "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+      "why": "task facade-kit-elena: a roof camera that can be solved",
+      "priority": 2,
+      "state": "received",
+      "photos": [
+       "IMG_2537.jpg",
+       "IMG_2538.jpg"
+      ]
      }
     ]
    }

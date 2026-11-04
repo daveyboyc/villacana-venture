@@ -28,7 +28,7 @@ The lanes between the middle pool and the beach.
 ## Coverage
 
 Layout: 29, Levels and slopes: 8, Facades and roofs: 6, Materials: 22, Planting: 12, Signs: 3, Views: 1
-39 reviewed, 0 suggested only by camera position.
+39 reviewed, 85 suggested only by camera position.
 
 ## Open build tasks
 
@@ -158,3 +158,95 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2489.jpg](../../public/photos-ref/IMG_2489.jpg) | not reviewed | not reviewed | IMG_2489 |
+| [IMG_2491.jpg](../../public/photos-ref/IMG_2491.jpg) | not reviewed | not reviewed | IMG_2491 |
+| [IMG_2492.jpg](../../public/photos-ref/IMG_2492.jpg) | not reviewed | not reviewed | IMG_2492 |
+| [IMG_2493.jpg](../../public/photos-ref/IMG_2493.jpg) | not reviewed | not reviewed | IMG_2493 |
+| [IMG_2495.jpg](../../public/photos-ref/IMG_2495.jpg) | not reviewed | not reviewed | IMG_2495 |
+| [IMG_2496.jpg](../../public/photos-ref/IMG_2496.jpg) | not reviewed | not reviewed | IMG_2496 |
+| [IMG_2497.jpg](../../public/photos-ref/IMG_2497.jpg) | not reviewed | not reviewed | IMG_2497 |
+| [IMG_2498.jpg](../../public/photos-ref/IMG_2498.jpg) | not reviewed | not reviewed | IMG_2498 |
+| [IMG_2499.jpg](../../public/photos-ref/IMG_2499.jpg) | not reviewed | not reviewed | IMG_2499 |
+| [IMG_2500.jpg](../../public/photos-ref/IMG_2500.jpg) | not reviewed | not reviewed | IMG_2500 |
+| [IMG_2501.jpg](../../public/photos-ref/IMG_2501.jpg) | not reviewed | not reviewed | IMG_2501 |
+| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | not reviewed | not reviewed | IMG_2560 |
+| [IMG_2561.jpg](../../public/photos-ref/IMG_2561.jpg) | not reviewed | not reviewed | IMG_2561 |
+| [IMG_2562.jpg](../../public/photos-ref/IMG_2562.jpg) | not reviewed | not reviewed | IMG_2562 |
+| [IMG_2563.jpg](../../public/photos-ref/IMG_2563.jpg) | not reviewed | not reviewed | IMG_2563 |
+| [IMG_2564.jpg](../../public/photos-ref/IMG_2564.jpg) | not reviewed | not reviewed | IMG_2564 |
+| [IMG_2565.jpg](../../public/photos-ref/IMG_2565.jpg) | not reviewed | not reviewed | IMG_2565 |
+| [IMG_2566.jpg](../../public/photos-ref/IMG_2566.jpg) | not reviewed | not reviewed | IMG_2566 |
+| [IMG_2567.jpg](../../public/photos-ref/IMG_2567.jpg) | not reviewed | not reviewed | IMG_2567 |
+| [IMG_2568.jpg](../../public/photos-ref/IMG_2568.jpg) | not reviewed | not reviewed | IMG_2568 |
+| [IMG_2569.jpg](../../public/photos-ref/IMG_2569.jpg) | not reviewed | not reviewed | IMG_2569 |
+| [IMG_2570.jpg](../../public/photos-ref/IMG_2570.jpg) | not reviewed | not reviewed | IMG_2570 |
+| [IMG_2571.jpg](../../public/photos-ref/IMG_2571.jpg) | not reviewed | not reviewed | IMG_2571 |
+| [IMG_2573.jpg](../../public/photos-ref/IMG_2573.jpg) | not reviewed | not reviewed | IMG_2573 |
+| [IMG_2574.jpg](../../public/photos-ref/IMG_2574.jpg) | not reviewed | not reviewed | IMG_2574 |
+| [IMG_2575.jpg](../../public/photos-ref/IMG_2575.jpg) | not reviewed | not reviewed | IMG_2575 |
+| [IMG_2576.jpg](../../public/photos-ref/IMG_2576.jpg) | not reviewed | not reviewed | IMG_2576 |
+| [IMG_2577.jpg](../../public/photos-ref/IMG_2577.jpg) | not reviewed | not reviewed | IMG_2577 |
+| [IMG_2578.jpg](../../public/photos-ref/IMG_2578.jpg) | not reviewed | not reviewed | IMG_2578 |
+| [IMG_2579.jpg](../../public/photos-ref/IMG_2579.jpg) | not reviewed | not reviewed | IMG_2579 |
+| [IMG_2580.jpg](../../public/photos-ref/IMG_2580.jpg) | not reviewed | not reviewed | IMG_2580 |
+| [IMG_2581.jpg](../../public/photos-ref/IMG_2581.jpg) | not reviewed | not reviewed | IMG_2581 |
+| [IMG_2582.jpg](../../public/photos-ref/IMG_2582.jpg) | not reviewed | not reviewed | IMG_2582 |
+| [IMG_2583.jpg](../../public/photos-ref/IMG_2583.jpg) | not reviewed | not reviewed | IMG_2583 |
+| [IMG_2587.jpg](../../public/photos-ref/IMG_2587.jpg) | not reviewed | not reviewed | IMG_2587 |
+| [IMG_2588.jpg](../../public/photos-ref/IMG_2588.jpg) | not reviewed | not reviewed | IMG_2588 |
+| [IMG_2589.jpg](../../public/photos-ref/IMG_2589.jpg) | not reviewed | not reviewed | IMG_2589 |
+| [IMG_2590.jpg](../../public/photos-ref/IMG_2590.jpg) | not reviewed | not reviewed | IMG_2590 |
+| [IMG_2591.jpg](../../public/photos-ref/IMG_2591.jpg) | not reviewed | not reviewed | IMG_2591 |
+| [IMG_2592.jpg](../../public/photos-ref/IMG_2592.jpg) | not reviewed | not reviewed | IMG_2592 |
+| [IMG_2593.jpg](../../public/photos-ref/IMG_2593.jpg) | not reviewed | not reviewed | IMG_2593 |
+| [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | not reviewed | not reviewed | IMG_2594 |
+| [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | not reviewed | not reviewed | IMG_2595 |
+| [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | not reviewed | not reviewed | IMG_2596 |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | not reviewed | not reviewed | IMG_2597 |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | not reviewed | not reviewed | IMG_2598 |
+| [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | not reviewed | not reviewed | IMG_2599 |
+| [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | not reviewed | not reviewed | IMG_2601 |
+| [IMG_2646.jpg](../../public/photos-ref/IMG_2646.jpg) | not reviewed | not reviewed | IMG_2646 |
+| [IMG_2647.jpg](../../public/photos-ref/IMG_2647.jpg) | not reviewed | not reviewed | IMG_2647 |
+| [IMG_2648.jpg](../../public/photos-ref/IMG_2648.jpg) | not reviewed | not reviewed | IMG_2648 |
+| [IMG_2649.jpg](../../public/photos-ref/IMG_2649.jpg) | not reviewed | not reviewed | IMG_2649 |
+| [IMG_2650.jpg](../../public/photos-ref/IMG_2650.jpg) | not reviewed | not reviewed | IMG_2650 |
+| [IMG_2651.jpg](../../public/photos-ref/IMG_2651.jpg) | not reviewed | not reviewed | IMG_2651 |
+| [IMG_2652.jpg](../../public/photos-ref/IMG_2652.jpg) | not reviewed | not reviewed | IMG_2652 |
+| [IMG_2653.jpg](../../public/photos-ref/IMG_2653.jpg) | not reviewed | not reviewed | IMG_2653 |
+| [IMG_2654.jpg](../../public/photos-ref/IMG_2654.jpg) | not reviewed | not reviewed | IMG_2654 |
+| [IMG_2656.jpg](../../public/photos-ref/IMG_2656.jpg) | not reviewed | not reviewed | IMG_2656 |
+| [IMG_2657.jpg](../../public/photos-ref/IMG_2657.jpg) | not reviewed | not reviewed | IMG_2657 |
+| [IMG_2660.jpg](../../public/photos-ref/IMG_2660.jpg) | not reviewed | not reviewed | IMG_2660 |
+| [IMG_2661.jpg](../../public/photos-ref/IMG_2661.jpg) | not reviewed | not reviewed | IMG_2661 |
+| [IMG_2662.jpg](../../public/photos-ref/IMG_2662.jpg) | not reviewed | not reviewed | IMG_2662 |
+| [IMG_2663.jpg](../../public/photos-ref/IMG_2663.jpg) | not reviewed | not reviewed | IMG_2663 |
+| [IMG_2664.jpg](../../public/photos-ref/IMG_2664.jpg) | not reviewed | not reviewed | IMG_2664 |
+| [IMG_2665.jpg](../../public/photos-ref/IMG_2665.jpg) | not reviewed | not reviewed | IMG_2665 |
+| [IMG_2666.jpg](../../public/photos-ref/IMG_2666.jpg) | not reviewed | not reviewed | IMG_2666 |
+| [IMG_2667.jpg](../../public/photos-ref/IMG_2667.jpg) | not reviewed | not reviewed | IMG_2667 |
+| [IMG_2668.jpg](../../public/photos-ref/IMG_2668.jpg) | not reviewed | not reviewed | IMG_2668 |
+| [IMG_2669.jpg](../../public/photos-ref/IMG_2669.jpg) | not reviewed | not reviewed | IMG_2669 |
+| [IMG_2670.jpg](../../public/photos-ref/IMG_2670.jpg) | not reviewed | not reviewed | IMG_2670 |
+| [IMG_2671.jpg](../../public/photos-ref/IMG_2671.jpg) | not reviewed | not reviewed | IMG_2671 |
+| [IMG_2672.jpg](../../public/photos-ref/IMG_2672.jpg) | not reviewed | not reviewed | IMG_2672 |
+| [IMG_2673.jpg](../../public/photos-ref/IMG_2673.jpg) | not reviewed | not reviewed | IMG_2673 |
+| [IMG_2674.jpg](../../public/photos-ref/IMG_2674.jpg) | not reviewed | not reviewed | IMG_2674 |
+| [IMG_2676.jpg](../../public/photos-ref/IMG_2676.jpg) | not reviewed | not reviewed | IMG_2676 |
+| [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | not reviewed | not reviewed | IMG_2725 |
+| [IMG_2771.jpg](../../public/photos-ref/IMG_2771.jpg) | not reviewed | not reviewed | IMG_2771 |
+| [IMG_2822.jpg](../../public/photos-ref/IMG_2822.jpg) | not reviewed | not reviewed | IMG_2822 |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | not reviewed | not reviewed | IMG_2484 |
+| [IMG_2487.jpg](../../public/photos-ref/IMG_2487.jpg) | not reviewed | not reviewed | IMG_2487 |
+| [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | not reviewed | not reviewed | IMG_2502 |
+| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | not reviewed | not reviewed | IMG_2503 |
+| [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | not reviewed | not reviewed | IMG_2504 |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | not reviewed | not reviewed | IMG_2602 |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | not reviewed | not reviewed | IMG_2677 |

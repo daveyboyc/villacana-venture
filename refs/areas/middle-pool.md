@@ -35,7 +35,7 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 ## Coverage
 
 Layout: 17, Levels and slopes: 3, Facades and roofs: 8, Materials: 11, Planting: 11, Signs: 1, Views: 1
-24 reviewed, 0 suggested only by camera position.
+24 reviewed, 18 suggested only by camera position.
 
 ## Levels
 
@@ -207,3 +207,28 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/web/easyjet-pool-probably-middle.jpg` | ground | planting | A small pool with bird-of-paradise, palm and pollarded tree **Note:** Probably the middle pool; not confirmed. A wall sign may read CALLE DE ISABEL. Found on the web, never publish. |
 | [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | not reviewed | not reviewed | IMG_2546 |
+| [IMG_2547.jpg](../../public/photos-ref/IMG_2547.jpg) | not reviewed | not reviewed | IMG_2547 |
+| [IMG_2548.jpg](../../public/photos-ref/IMG_2548.jpg) | not reviewed | not reviewed | IMG_2548 |
+| [IMG_2680.jpg](../../public/photos-ref/IMG_2680.jpg) | not reviewed | not reviewed | IMG_2680 |
+| [IMG_2681.jpg](../../public/photos-ref/IMG_2681.jpg) | not reviewed | not reviewed | IMG_2681 |
+| [IMG_2505.jpg](../../public/photos-ref/IMG_2505.jpg) | not reviewed | not reviewed | IMG_2505 |
+| [IMG_2506.jpg](../../public/photos-ref/IMG_2506.jpg) | not reviewed | not reviewed | IMG_2506 |
+| [IMG_2668.jpg](../../public/photos-ref/IMG_2668.jpg) | not reviewed | not reviewed | IMG_2668 |
+| [IMG_2669.jpg](../../public/photos-ref/IMG_2669.jpg) | not reviewed | not reviewed | IMG_2669 |
+| [IMG_2670.jpg](../../public/photos-ref/IMG_2670.jpg) | not reviewed | not reviewed | IMG_2670 |
+| [IMG_2671.jpg](../../public/photos-ref/IMG_2671.jpg) | not reviewed | not reviewed | IMG_2671 |
+| [IMG_2672.jpg](../../public/photos-ref/IMG_2672.jpg) | not reviewed | not reviewed | IMG_2672 |
+| [IMG_2673.jpg](../../public/photos-ref/IMG_2673.jpg) | not reviewed | not reviewed | IMG_2673 |
+| [IMG_2678.jpg](../../public/photos-ref/IMG_2678.jpg) | not reviewed | not reviewed | IMG_2678 |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | not reviewed | not reviewed | IMG_2679 |
+| [IMG_2682.jpg](../../public/photos-ref/IMG_2682.jpg) | not reviewed | not reviewed | IMG_2682 |
+| [IMG_2683.jpg](../../public/photos-ref/IMG_2683.jpg) | not reviewed | not reviewed | IMG_2683 |
+| [IMG_2684.jpg](../../public/photos-ref/IMG_2684.jpg) | not reviewed | not reviewed | IMG_2684 |

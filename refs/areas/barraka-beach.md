@@ -23,8 +23,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 
 ## Coverage
 
-Layout: 9, Levels and slopes: 4, Facades and roofs: 5, Materials: 15, Planting: 3, Signs: 2, Views: 13
-21 reviewed, 0 suggested only by camera position.
+Layout: 9, Levels and slopes: 4, Facades and roofs: 5, Materials: 16, Planting: 3, Signs: 2, Views: 14
+22 reviewed, 29 suggested only by camera position.
 
 ## Levels
 
@@ -133,6 +133,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2285.jpg](../../public/photos-ref/IMG_2285.jpg) | ground | facades, materials, view | Beach: resort and restaurant frontage _Used by: area:beach._ |
 | [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline _Used by: area:beach._ |
 | [IMG_2616.jpg](../../public/photos-ref/IMG_2616.jpg) | ground | layout, materials, planting | Barraka boardwalk and BARRAKA BEACH sign planter |
+| [253A75E4-A471-4502-9F5D-C9BAF074D664.jpg](../../public/photos-ref/253A75E4-A471-4502-9F5D-C9BAF074D664.jpg) | ground | materials, view | Beach loungers and closed parasols on dark sand with timber boardwalk strips **Note:** No GPS in the file: exact stretch of beach not confirmed. |
 | [IMG_2224.jpg](../../public/photos-ref/IMG_2224.jpg) | ground | materials, view | Open sand looking north-east along the coast to the mountains |
 | [IMG_2629.jpg](../../public/photos-ref/IMG_2629.jpg) | ground | layout, view | Beach east of Barraka from the paseo edge |
 | [6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg](../../public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg) | ground | materials | Beach: pebbles on sand at the water line **Note:** No GPS in the file: exact stretch of beach not confirmed. |
@@ -143,3 +144,39 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
 | [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo._ |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2605.jpg](../../public/photos-ref/IMG_2605.jpg) | not reviewed | not reviewed | IMG_2605 |
+| [IMG_2606.jpg](../../public/photos-ref/IMG_2606.jpg) | not reviewed | not reviewed | IMG_2606 |
+| [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | not reviewed | not reviewed | IMG_2610 |
+| [IMG_2617.jpg](../../public/photos-ref/IMG_2617.jpg) | not reviewed | not reviewed | IMG_2617 |
+| [IMG_2618.jpg](../../public/photos-ref/IMG_2618.jpg) | not reviewed | not reviewed | IMG_2618 |
+| [IMG_2619.jpg](../../public/photos-ref/IMG_2619.jpg) | not reviewed | not reviewed | IMG_2619 |
+| [IMG_2620.jpg](../../public/photos-ref/IMG_2620.jpg) | not reviewed | not reviewed | IMG_2620 |
+| [IMG_2621.jpg](../../public/photos-ref/IMG_2621.jpg) | not reviewed | not reviewed | IMG_2621 |
+| [IMG_2622.jpg](../../public/photos-ref/IMG_2622.jpg) | not reviewed | not reviewed | IMG_2622 |
+| [IMG_2623.jpg](../../public/photos-ref/IMG_2623.jpg) | not reviewed | not reviewed | IMG_2623 |
+| [IMG_2624.jpg](../../public/photos-ref/IMG_2624.jpg) | not reviewed | not reviewed | IMG_2624 |
+| [IMG_2625.jpg](../../public/photos-ref/IMG_2625.jpg) | not reviewed | not reviewed | IMG_2625 |
+| [IMG_2626.jpg](../../public/photos-ref/IMG_2626.jpg) | not reviewed | not reviewed | IMG_2626 |
+| [IMG_2627.jpg](../../public/photos-ref/IMG_2627.jpg) | not reviewed | not reviewed | IMG_2627 |
+| [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | not reviewed | not reviewed | IMG_2631 |
+| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | not reviewed | not reviewed | IMG_2484 |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | not reviewed | not reviewed | IMG_2607 |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | not reviewed | not reviewed | IMG_2608 |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | not reviewed | not reviewed | IMG_2609 |
+| [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | not reviewed | not reviewed | IMG_2611 |
+| [IMG_2612.jpg](../../public/photos-ref/IMG_2612.jpg) | not reviewed | not reviewed | IMG_2612 |
+| [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | not reviewed | not reviewed | IMG_2613 |
+| [IMG_2614.jpg](../../public/photos-ref/IMG_2614.jpg) | not reviewed | not reviewed | IMG_2614 |
+| [IMG_2615.jpg](../../public/photos-ref/IMG_2615.jpg) | not reviewed | not reviewed | IMG_2615 |
+| [IMG_2628.jpg](../../public/photos-ref/IMG_2628.jpg) | not reviewed | not reviewed | IMG_2628 |
+| [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | not reviewed | not reviewed | IMG_2630 |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | not reviewed | not reviewed | IMG_2640 |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | not reviewed | not reviewed | IMG_2642 |
+| [IMG_2771.jpg](../../public/photos-ref/IMG_2771.jpg) | not reviewed | not reviewed | IMG_2771 |

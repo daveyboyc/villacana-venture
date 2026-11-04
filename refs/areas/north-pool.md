@@ -28,7 +28,7 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 ## Coverage
 
 Layout: 11, Levels and slopes: 1, Facades and roofs: 9, Materials: 5, Planting: 6, Views: 5
-16 reviewed, 0 suggested only by camera position.
+16 reviewed, 9 suggested only by camera position.
 
 ## Levels
 
@@ -161,3 +161,19 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/photos/05-north-pool-west-side-garden-walls.jpg` | upper-floor | layout, levels | North pool west side: curved garden walls, raised patios, tiled steps |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |
 | [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting, materials | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. 26 October patio recheck: full-height lane privacy wall and timber door, gateway return meeting house, one visible cross-patio divider, and plain square first-patio tiles. Circular decorated object is a table, not a floor inset. Coordinates/heights remain model estimates; hidden joins and other partitions unresolved. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-patio-divider, elena_north.json:elena-north-planter-west, elena_north.json:elena-north-visible-patio-floor._ |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2459.jpg](../../public/photos-ref/IMG_2459.jpg) | not reviewed | not reviewed | IMG_2459 |
+| [IMG_2517.jpg](../../public/photos-ref/IMG_2517.jpg) | not reviewed | not reviewed | IMG_2517 |
+| [IMG_2520.jpg](../../public/photos-ref/IMG_2520.jpg) | not reviewed | not reviewed | IMG_2520 |
+| [IMG_2521.jpg](../../public/photos-ref/IMG_2521.jpg) | not reviewed | not reviewed | IMG_2521 |
+| [IMG_2689.jpg](../../public/photos-ref/IMG_2689.jpg) | not reviewed | not reviewed | IMG_2689 |
+| [IMG_2690.jpg](../../public/photos-ref/IMG_2690.jpg) | not reviewed | not reviewed | IMG_2690 |
+| [IMG_2691.jpg](../../public/photos-ref/IMG_2691.jpg) | not reviewed | not reviewed | IMG_2691 |
+| [IMG_2692.jpg](../../public/photos-ref/IMG_2692.jpg) | not reviewed | not reviewed | IMG_2692 |
+| [IMG_2813.jpg](../../public/photos-ref/IMG_2813.jpg) | not reviewed | not reviewed | IMG_2813 |

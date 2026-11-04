@@ -24,7 +24,7 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 ## Coverage
 
 Layout: 7, Levels and slopes: 6, Facades and roofs: 1, Materials: 1, Views: 1
-7 reviewed, 0 suggested only by camera position.
+7 reviewed, 11 suggested only by camera position.
 
 ## Open build tasks
 
@@ -87,3 +87,21 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
 | `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels | Apple Maps 3D: main pool terrace curve with the west and east steps **Note:** Dave, 2026-10-21. Nearly top-down. West: terracotta steps between the Guillermo-side wall and the terrace's curved planter wall. East: a dark narrow slot between the 90 Miles lobe and the Picasso boundary wall, the steps in shadow. |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. _Used by: beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2489.jpg](../../public/photos-ref/IMG_2489.jpg) | not reviewed | not reviewed | IMG_2489 |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | not reviewed | not reviewed | IMG_2597 |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | not reviewed | not reviewed | IMG_2598 |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | not reviewed | not reviewed | IMG_2607 |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | not reviewed | not reviewed | IMG_2608 |
+| [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | not reviewed | not reviewed | IMG_2609 |
+| [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | not reviewed | not reviewed | IMG_2611 |
+| [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | not reviewed | not reviewed | IMG_2631 |
+| [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | not reviewed | not reviewed | IMG_2725 |
+| [IMG_2771.jpg](../../public/photos-ref/IMG_2771.jpg) | not reviewed | not reviewed | IMG_2771 |
+| [IMG_2822.jpg](../../public/photos-ref/IMG_2822.jpg) | not reviewed | not reviewed | IMG_2822 |

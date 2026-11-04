@@ -20,7 +20,7 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 ## Coverage
 
 Layout: 10, Facades and roofs: 3, Materials: 4, Planting: 6, Signs: 1
-12 reviewed, 0 suggested only by camera position.
+12 reviewed, 18 suggested only by camera position.
 
 ## Open build tasks
 
@@ -78,3 +78,28 @@ graph LR
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | [IMG_2251.jpg](../../public/photos-ref/IMG_2251.jpg) | ground | layout | Narrow lane through an arch, planting both sides |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | not reviewed | not reviewed | IMG_2502 |
+| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | not reviewed | not reviewed | IMG_2503 |
+| [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | not reviewed | not reviewed | IMG_2504 |
+| [IMG_2505.jpg](../../public/photos-ref/IMG_2505.jpg) | not reviewed | not reviewed | IMG_2505 |
+| [IMG_2550.jpg](../../public/photos-ref/IMG_2550.jpg) | not reviewed | not reviewed | IMG_2550 |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | not reviewed | not reviewed | IMG_2551 |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | not reviewed | not reviewed | IMG_2552 |
+| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | not reviewed | not reviewed | IMG_2553 |
+| [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | not reviewed | not reviewed | IMG_2556 |
+| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | not reviewed | not reviewed | IMG_2557 |
+| [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | not reviewed | not reviewed | IMG_2558 |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | not reviewed | not reviewed | IMG_2677 |
+| [IMG_2678.jpg](../../public/photos-ref/IMG_2678.jpg) | not reviewed | not reviewed | IMG_2678 |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | not reviewed | not reviewed | IMG_2679 |
+| [IMG_2554.jpg](../../public/photos-ref/IMG_2554.jpg) | not reviewed | not reviewed | IMG_2554 |
+| [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | not reviewed | not reviewed | IMG_2555 |
+| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | not reviewed | not reviewed | IMG_2560 |
+| [IMG_2676.jpg](../../public/photos-ref/IMG_2676.jpg) | not reviewed | not reviewed | IMG_2676 |

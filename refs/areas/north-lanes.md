@@ -13,7 +13,7 @@ The northern boundary roads and the lanes round the north pool's upper side.
 ## Coverage
 
 No references reviewed by topic yet.
-0 reviewed, 0 suggested only by camera position.
+0 reviewed, 2 suggested only by camera position.
 
 ## Open build tasks
 
@@ -22,3 +22,12 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P2 | `path-network-inventory-north-lanes` [#133](https://github.com/daveyboyc/villacana-venture/issues/133) | Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+
+## Suggested by camera position, not yet reviewed
+
+The camera stood in or near this area. Check what the picture actually shows before relying on it.
+
+| Reference | Viewpoint | Use for | What it shows |
+| --- | --- | --- | --- |
+| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | not reviewed | not reviewed | IMG_2449 |
+| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | not reviewed | not reviewed | IMG_2448 |

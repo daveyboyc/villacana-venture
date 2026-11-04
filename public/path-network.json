@@ -17,8 +17,8 @@
   "sourceObservations": 59,
   "sourcePixelTraces": 57,
   "sourcePixelLocators": 32,
-  "sources": 197,
-  "uninspectedSources": 127,
+  "sources": 418,
+  "uninspectedSources": 348,
   "routes": 24,
   "segments": 173,
   "tracedSides": 0,
@@ -93,12 +93,52 @@
     "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
    ],
    "missingCatalogueSources": [
+    "IMG_2456.jpg",
+    "IMG_2457.jpg",
+    "IMG_2458.jpg",
+    "IMG_2459.jpg",
+    "IMG_2460.jpg",
+    "IMG_2461.jpg",
+    "IMG_2462.jpg",
+    "IMG_2463.jpg",
+    "IMG_2464.jpg",
+    "IMG_2465.jpg",
+    "IMG_2466.jpg",
+    "IMG_2467.jpg",
+    "IMG_2506.jpg",
     "IMG_2507.jpg",
     "IMG_2508.jpg",
+    "IMG_2509.jpg",
+    "IMG_2510.jpg",
+    "IMG_2511.jpg",
+    "IMG_2512.jpg",
+    "IMG_2513.jpg",
+    "IMG_2514.jpg",
+    "IMG_2515.jpg",
+    "IMG_2516.jpg",
+    "IMG_2517.jpg",
     "IMG_2518.jpg",
     "IMG_2519.jpg",
+    "IMG_2520.jpg",
+    "IMG_2521.jpg",
+    "IMG_2522.jpg",
+    "IMG_2523.jpg",
+    "IMG_2537.jpg",
+    "IMG_2538.jpg",
     "IMG_2539.jpg",
-    "IMG_2687.jpg"
+    "IMG_2540.jpg",
+    "IMG_2682.jpg",
+    "IMG_2683.jpg",
+    "IMG_2684.jpg",
+    "IMG_2685.jpg",
+    "IMG_2686.jpg",
+    "IMG_2687.jpg",
+    "IMG_2688.jpg",
+    "IMG_2689.jpg",
+    "IMG_2690.jpg",
+    "IMG_2691.jpg",
+    "IMG_2692.jpg",
+    "IMG_2813.jpg"
    ],
    "observations": [
     "elena:N01",
@@ -287,7 +327,52 @@
     "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
    ],
    "missingCatalogueSources": [
-    "IMG_2539.jpg"
+    "IMG_2442.jpg",
+    "IMG_2443.jpg",
+    "IMG_2444.jpg",
+    "IMG_2445.jpg",
+    "IMG_2446.jpg",
+    "IMG_2447.jpg",
+    "IMG_2448.jpg",
+    "IMG_2449.jpg",
+    "IMG_2450.jpg",
+    "IMG_2451.jpg",
+    "IMG_2452.jpg",
+    "IMG_2453.jpg",
+    "IMG_2454.jpg",
+    "IMG_2455.jpg",
+    "IMG_2456.jpg",
+    "IMG_2457.jpg",
+    "IMG_2458.jpg",
+    "IMG_2462.jpg",
+    "IMG_2463.jpg",
+    "IMG_2464.jpg",
+    "IMG_2465.jpg",
+    "IMG_2466.jpg",
+    "IMG_2467.jpg",
+    "IMG_2468.jpg",
+    "IMG_2469.jpg",
+    "IMG_2470.jpg",
+    "IMG_2471.jpg",
+    "IMG_2472.jpg",
+    "IMG_2473.jpg",
+    "IMG_2474.jpg",
+    "IMG_2475.jpg",
+    "IMG_2476.jpg",
+    "IMG_2512.jpg",
+    "IMG_2513.jpg",
+    "IMG_2514.jpg",
+    "IMG_2515.jpg",
+    "IMG_2537.jpg",
+    "IMG_2538.jpg",
+    "IMG_2539.jpg",
+    "IMG_2540.jpg",
+    "IMG_2541.jpg",
+    "IMG_2542.jpg",
+    "IMG_2543.jpg",
+    "IMG_2544.jpg",
+    "IMG_2545.jpg",
+    "IMG_2686.jpg"
    ],
    "observations": [
     "cervantes:W01",
@@ -41169,6 +41254,19 @@
    "inventoryRevision": "86d81d18a4490918c54129444bd3fab6317ba33b377aa45eb6b5708408fbb4f2"
   },
   {
+   "id": "path-source:253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+   "kind": "path-source-accounting",
+   "name": "Beach loungers and closed parasols on dark sand with timber boardwalk strips",
+   "sourceId": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach"
+   ]
+  },
+  {
    "id": "path-source:6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
    "kind": "path-source-accounting",
    "name": "Beach: pebbles on sand at the water line",
@@ -44616,6 +44714,518 @@
    ]
   },
   {
+   "id": "path-source:IMG_2442.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2442",
+   "sourceId": "IMG_2442.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "picasso"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2443.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2443",
+   "sourceId": "IMG_2443.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2444.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2444",
+   "sourceId": "IMG_2444.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2445.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2445",
+   "sourceId": "IMG_2445.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2446.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2446",
+   "sourceId": "IMG_2446.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2447.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2447",
+   "sourceId": "IMG_2447.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2448.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2448",
+   "sourceId": "IMG_2448.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "north-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2449.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2449",
+   "sourceId": "IMG_2449.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "north-lanes",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2450.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2450",
+   "sourceId": "IMG_2450.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2451.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2451",
+   "sourceId": "IMG_2451.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2452.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2452",
+   "sourceId": "IMG_2452.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2453.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2453",
+   "sourceId": "IMG_2453.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2454.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2454",
+   "sourceId": "IMG_2454.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2455.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2455",
+   "sourceId": "IMG_2455.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2456.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2456",
+   "sourceId": "IMG_2456.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2457.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2457",
+   "sourceId": "IMG_2457.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2458.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2458",
+   "sourceId": "IMG_2458.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2459.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2459",
+   "sourceId": "IMG_2459.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2460.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2460",
+   "sourceId": "IMG_2460.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2461.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2461",
+   "sourceId": "IMG_2461.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2462.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2462",
+   "sourceId": "IMG_2462.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2463.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2463",
+   "sourceId": "IMG_2463.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2464.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2464",
+   "sourceId": "IMG_2464.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2465.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2465",
+   "sourceId": "IMG_2465.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2466.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2466",
+   "sourceId": "IMG_2466.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2467.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2467",
+   "sourceId": "IMG_2467.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2468.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2468",
+   "sourceId": "IMG_2468.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2469.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2469",
+   "sourceId": "IMG_2469.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2470.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2470",
+   "sourceId": "IMG_2470.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2471.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2471",
+   "sourceId": "IMG_2471.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2472.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2472",
+   "sourceId": "IMG_2472.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2473.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2473",
+   "sourceId": "IMG_2473.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2474.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2474",
+   "sourceId": "IMG_2474.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2475.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2475",
+   "sourceId": "IMG_2475.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2476.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2476",
+   "sourceId": "IMG_2476.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2477.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2477",
+   "sourceId": "IMG_2477.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2478.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2478",
+   "sourceId": "IMG_2478.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2480.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2480",
+   "sourceId": "IMG_2480.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
    "id": "path-source:IMG_2481.jpg",
    "kind": "path-source-accounting",
    "name": "Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge",
@@ -44658,10 +45268,118 @@
    ]
   },
   {
+   "id": "path-source:IMG_2484.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2484",
+   "sourceId": "IMG_2484.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "seaward-lanes",
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2485.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2485",
+   "sourceId": "IMG_2485.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2486.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2486",
+   "sourceId": "IMG_2486.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2487.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2487",
+   "sourceId": "IMG_2487.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "seaward-lanes"
+   ]
+  },
+  {
    "id": "path-source:IMG_2488.jpg",
    "kind": "path-source-accounting",
    "name": "Calle Guillermo from its seaward end, looking up the lane",
    "sourceId": "IMG_2488.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2489.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2489",
+   "sourceId": "IMG_2489.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2491.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2491",
+   "sourceId": "IMG_2491.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2492.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2492",
+   "sourceId": "IMG_2492.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2493.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2493",
+   "sourceId": "IMG_2493.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -44681,6 +45399,167 @@
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
     "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2495.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2495",
+   "sourceId": "IMG_2495.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2496.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2496",
+   "sourceId": "IMG_2496.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2497.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2497",
+   "sourceId": "IMG_2497.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2498.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2498",
+   "sourceId": "IMG_2498.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2499.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2499",
+   "sourceId": "IMG_2499.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2500.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2500",
+   "sourceId": "IMG_2500.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2501.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2501",
+   "sourceId": "IMG_2501.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2502.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2502",
+   "sourceId": "IMG_2502.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2503.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2503",
+   "sourceId": "IMG_2503.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2504.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2504",
+   "sourceId": "IMG_2504.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2505.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2505",
+   "sourceId": "IMG_2505.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2506.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2506",
+   "sourceId": "IMG_2506.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "middle-pool"
    ]
   },
   {
@@ -44710,6 +45589,128 @@
    ]
   },
   {
+   "id": "path-source:IMG_2509.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2509",
+   "sourceId": "IMG_2509.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2510.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2510",
+   "sourceId": "IMG_2510.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2511.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2511",
+   "sourceId": "IMG_2511.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2512.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2512",
+   "sourceId": "IMG_2512.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2513.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2513",
+   "sourceId": "IMG_2513.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2514.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2514",
+   "sourceId": "IMG_2514.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2515.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2515",
+   "sourceId": "IMG_2515.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2516.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2516",
+   "sourceId": "IMG_2516.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2517.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2517",
+   "sourceId": "IMG_2517.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
    "id": "path-source:IMG_2518.jpg",
    "kind": "path-source-accounting",
    "name": "Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp",
@@ -44736,6 +45737,127 @@
    ]
   },
   {
+   "id": "path-source:IMG_2520.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2520",
+   "sourceId": "IMG_2520.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2521.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2521",
+   "sourceId": "IMG_2521.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2522.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2522",
+   "sourceId": "IMG_2522.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2523.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2523",
+   "sourceId": "IMG_2523.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2524.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2524",
+   "sourceId": "IMG_2524.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2525.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2525",
+   "sourceId": "IMG_2525.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2526.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2526",
+   "sourceId": "IMG_2526.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2537.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2537",
+   "sourceId": "IMG_2537.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2538.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2538",
+   "sourceId": "IMG_2538.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
    "id": "path-source:IMG_2539.jpg",
    "kind": "path-source-accounting",
    "name": "Elena north by the Cervantes junction: steps and tiled lane between planted beds",
@@ -44747,6 +45869,124 @@
    "areas": [
     "elena",
     "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2540.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2540",
+   "sourceId": "IMG_2540.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2541.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2541",
+   "sourceId": "IMG_2541.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2542.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2542",
+   "sourceId": "IMG_2542.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2543.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2543",
+   "sourceId": "IMG_2543.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2544.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2544",
+   "sourceId": "IMG_2544.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2545.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2545",
+   "sourceId": "IMG_2545.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2546.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2546",
+   "sourceId": "IMG_2546.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2547.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2547",
+   "sourceId": "IMG_2547.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2548.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2548",
+   "sourceId": "IMG_2548.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "middle-pool"
    ]
   },
   {
@@ -44763,10 +46003,291 @@
    ]
   },
   {
+   "id": "path-source:IMG_2550.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2550",
+   "sourceId": "IMG_2550.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2551.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2551",
+   "sourceId": "IMG_2551.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2552.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2552",
+   "sourceId": "IMG_2552.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2553.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2553",
+   "sourceId": "IMG_2553.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2554.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2554",
+   "sourceId": "IMG_2554.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali",
+    "eva"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2555.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2555",
+   "sourceId": "IMG_2555.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali",
+    "eva"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2556.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2556",
+   "sourceId": "IMG_2556.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2557.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2557",
+   "sourceId": "IMG_2557.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2558.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2558",
+   "sourceId": "IMG_2558.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "dali"
+   ]
+  },
+  {
    "id": "path-source:IMG_2559.jpg",
    "kind": "path-source-accounting",
    "name": "Calle Patricia from its west end, looking along the lane",
    "sourceId": "IMG_2559.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2560.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2560",
+   "sourceId": "IMG_2560.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "eva",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2561.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2561",
+   "sourceId": "IMG_2561.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2562.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2562",
+   "sourceId": "IMG_2562.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2563.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2563",
+   "sourceId": "IMG_2563.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2564.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2564",
+   "sourceId": "IMG_2564.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2565.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2565",
+   "sourceId": "IMG_2565.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2566.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2566",
+   "sourceId": "IMG_2566.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2567.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2567",
+   "sourceId": "IMG_2567.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2568.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2568",
+   "sourceId": "IMG_2568.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2569.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2569",
+   "sourceId": "IMG_2569.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2570.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2570",
+   "sourceId": "IMG_2570.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2571.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2571",
+   "sourceId": "IMG_2571.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -44789,10 +46310,350 @@
    ]
   },
   {
+   "id": "path-source:IMG_2573.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2573",
+   "sourceId": "IMG_2573.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2574.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2574",
+   "sourceId": "IMG_2574.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2575.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2575",
+   "sourceId": "IMG_2575.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2576.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2576",
+   "sourceId": "IMG_2576.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2577.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2577",
+   "sourceId": "IMG_2577.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2578.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2578",
+   "sourceId": "IMG_2578.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2579.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2579",
+   "sourceId": "IMG_2579.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2580.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2580",
+   "sourceId": "IMG_2580.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2581.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2581",
+   "sourceId": "IMG_2581.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2582.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2582",
+   "sourceId": "IMG_2582.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2583.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2583",
+   "sourceId": "IMG_2583.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2584.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2584",
+   "sourceId": "IMG_2584.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2585.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2585",
+   "sourceId": "IMG_2585.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool"
+   ]
+  },
+  {
    "id": "path-source:IMG_2586.jpg",
    "kind": "path-source-accounting",
    "name": "Courtyard with arch and patterned floor near Calle Jorge",
    "sourceId": "IMG_2586.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2587.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2587",
+   "sourceId": "IMG_2587.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2588.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2588",
+   "sourceId": "IMG_2588.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2589.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2589",
+   "sourceId": "IMG_2589.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2590.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2590",
+   "sourceId": "IMG_2590.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2591.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2591",
+   "sourceId": "IMG_2591.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2592.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2592",
+   "sourceId": "IMG_2592.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2593.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2593",
+   "sourceId": "IMG_2593.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2594.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2594",
+   "sourceId": "IMG_2594.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2595.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2595",
+   "sourceId": "IMG_2595.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2596.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2596",
+   "sourceId": "IMG_2596.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2597.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2597",
+   "sourceId": "IMG_2597.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2598.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2598",
+   "sourceId": "IMG_2598.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2599.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2599",
+   "sourceId": "IMG_2599.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -44817,6 +46678,216 @@
    ]
   },
   {
+   "id": "path-source:IMG_2601.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2601",
+   "sourceId": "IMG_2601.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2602.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2602",
+   "sourceId": "IMG_2602.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2603.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2603",
+   "sourceId": "IMG_2603.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2604.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2604",
+   "sourceId": "IMG_2604.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2605.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2605",
+   "sourceId": "IMG_2605.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2606.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2606",
+   "sourceId": "IMG_2606.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2607.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2607",
+   "sourceId": "IMG_2607.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2608.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2608",
+   "sourceId": "IMG_2608.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2609.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2609",
+   "sourceId": "IMG_2609.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2610.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2610",
+   "sourceId": "IMG_2610.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2611.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2611",
+   "sourceId": "IMG_2611.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2612.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2612",
+   "sourceId": "IMG_2612.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2613.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2613",
+   "sourceId": "IMG_2613.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2614.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2614",
+   "sourceId": "IMG_2614.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2615.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2615",
+   "sourceId": "IMG_2615.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ]
+  },
+  {
    "id": "path-source:IMG_2616.jpg",
    "kind": "path-source-accounting",
    "name": "Barraka boardwalk and BARRAKA BEACH sign planter",
@@ -44826,6 +46897,174 @@
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2617.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2617",
+   "sourceId": "IMG_2617.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2618.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2618",
+   "sourceId": "IMG_2618.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2619.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2619",
+   "sourceId": "IMG_2619.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2620.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2620",
+   "sourceId": "IMG_2620.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2621.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2621",
+   "sourceId": "IMG_2621.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2622.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2622",
+   "sourceId": "IMG_2622.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2623.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2623",
+   "sourceId": "IMG_2623.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2624.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2624",
+   "sourceId": "IMG_2624.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2625.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2625",
+   "sourceId": "IMG_2625.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2626.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2626",
+   "sourceId": "IMG_2626.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2627.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2627",
+   "sourceId": "IMG_2627.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2628.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2628",
+   "sourceId": "IMG_2628.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
     "barraka-beach"
    ]
   },
@@ -44844,6 +47083,214 @@
    ]
   },
   {
+   "id": "path-source:IMG_2630.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2630",
+   "sourceId": "IMG_2630.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2631.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2631",
+   "sourceId": "IMG_2631.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2632.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2632",
+   "sourceId": "IMG_2632.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2633.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2633",
+   "sourceId": "IMG_2633.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2634.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2634",
+   "sourceId": "IMG_2634.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2635.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2635",
+   "sourceId": "IMG_2635.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2636.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2636",
+   "sourceId": "IMG_2636.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2637.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2637",
+   "sourceId": "IMG_2637.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2638.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2638",
+   "sourceId": "IMG_2638.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2639.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2639",
+   "sourceId": "IMG_2639.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2640.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2640",
+   "sourceId": "IMG_2640.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "dali",
+    "barraka-beach",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2641.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2641",
+   "sourceId": "IMG_2641.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2642.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2642",
+   "sourceId": "IMG_2642.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "barraka-beach",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2643.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2643",
+   "sourceId": "IMG_2643.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2644.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2644",
+   "sourceId": "IMG_2644.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "paseo",
+    "south-pool"
+   ]
+  },
+  {
    "id": "path-source:IMG_2645.jpg",
    "kind": "path-source-accounting",
    "name": "South pool lawn and houses",
@@ -44857,10 +47304,356 @@
    ]
   },
   {
+   "id": "path-source:IMG_2646.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2646",
+   "sourceId": "IMG_2646.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2647.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2647",
+   "sourceId": "IMG_2647.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2648.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2648",
+   "sourceId": "IMG_2648.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2649.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2649",
+   "sourceId": "IMG_2649.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2650.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2650",
+   "sourceId": "IMG_2650.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2651.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2651",
+   "sourceId": "IMG_2651.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2652.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2652",
+   "sourceId": "IMG_2652.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2653.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2653",
+   "sourceId": "IMG_2653.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2654.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2654",
+   "sourceId": "IMG_2654.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2656.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2656",
+   "sourceId": "IMG_2656.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2657.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2657",
+   "sourceId": "IMG_2657.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
    "id": "path-source:IMG_2658.jpg",
    "kind": "path-source-accounting",
    "name": "Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp",
    "sourceId": "IMG_2658.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2660.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2660",
+   "sourceId": "IMG_2660.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2661.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2661",
+   "sourceId": "IMG_2661.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2662.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2662",
+   "sourceId": "IMG_2662.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2663.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2663",
+   "sourceId": "IMG_2663.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2664.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2664",
+   "sourceId": "IMG_2664.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2665.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2665",
+   "sourceId": "IMG_2665.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2666.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2666",
+   "sourceId": "IMG_2666.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2667.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2667",
+   "sourceId": "IMG_2667.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2668.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2668",
+   "sourceId": "IMG_2668.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2669.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2669",
+   "sourceId": "IMG_2669.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2670.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2670",
+   "sourceId": "IMG_2670.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2671.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2671",
+   "sourceId": "IMG_2671.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2672.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2672",
+   "sourceId": "IMG_2672.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2673.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2673",
+   "sourceId": "IMG_2673.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2674.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2674",
+   "sourceId": "IMG_2674.jpg",
    "disposition": "not-yet-inspected",
    "inspectionScopes": [],
    "review": null,
@@ -44883,6 +47676,157 @@
    ]
   },
   {
+   "id": "path-source:IMG_2676.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2676",
+   "sourceId": "IMG_2676.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "eva"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2677.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2677",
+   "sourceId": "IMG_2677.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2678.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2678",
+   "sourceId": "IMG_2678.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2679.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2679",
+   "sourceId": "IMG_2679.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "eva",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2680.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2680",
+   "sourceId": "IMG_2680.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2681.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2681",
+   "sourceId": "IMG_2681.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2682.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2682",
+   "sourceId": "IMG_2682.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2683.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2683",
+   "sourceId": "IMG_2683.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2684.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2684",
+   "sourceId": "IMG_2684.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "middle-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2685.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2685",
+   "sourceId": "IMG_2685.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2686.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2686",
+   "sourceId": "IMG_2686.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "cervantes"
+   ]
+  },
+  {
    "id": "path-source:IMG_2687.jpg",
    "kind": "path-source-accounting",
    "name": "Elena north: lane beside a house with window grilles, towards the lawns",
@@ -44893,6 +47837,133 @@
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
     "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2688.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2688",
+   "sourceId": "IMG_2688.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2689.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2689",
+   "sourceId": "IMG_2689.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2690.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2690",
+   "sourceId": "IMG_2690.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2691.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2691",
+   "sourceId": "IMG_2691.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2692.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2692",
+   "sourceId": "IMG_2692.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2725.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2725",
+   "sourceId": "IMG_2725.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2771.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2771",
+   "sourceId": "IMG_2771.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "paseo",
+    "barraka-beach",
+    "main-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2813.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2813",
+   "sourceId": "IMG_2813.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2822.jpg",
+   "kind": "path-source-accounting",
+   "name": "IMG_2822",
+   "sourceId": "IMG_2822.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "seaward-lanes",
+    "main-pool"
    ]
   },
   {
@@ -45966,8 +49037,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 16,
-   "uninspectedSources": 16,
+   "sourceCount": 25,
+   "uninspectedSources": 25,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -45991,8 +49062,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 24,
-   "uninspectedSources": 24,
+   "sourceCount": 42,
+   "uninspectedSources": 42,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -46016,8 +49087,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 8,
-   "uninspectedSources": 8,
+   "sourceCount": 19,
+   "uninspectedSources": 19,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -46041,8 +49112,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 7,
-   "uninspectedSources": 7,
+   "sourceCount": 18,
+   "uninspectedSources": 18,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -46066,8 +49137,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 45,
-   "uninspectedSources": 6,
+   "sourceCount": 85,
+   "uninspectedSources": 46,
    "routes": [
     "path-route:elena-north",
     "path-route:elena-south"
@@ -46143,12 +49214,52 @@
      "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
     ],
     "missingCatalogueSources": [
+     "IMG_2456.jpg",
+     "IMG_2457.jpg",
+     "IMG_2458.jpg",
+     "IMG_2459.jpg",
+     "IMG_2460.jpg",
+     "IMG_2461.jpg",
+     "IMG_2462.jpg",
+     "IMG_2463.jpg",
+     "IMG_2464.jpg",
+     "IMG_2465.jpg",
+     "IMG_2466.jpg",
+     "IMG_2467.jpg",
+     "IMG_2506.jpg",
      "IMG_2507.jpg",
      "IMG_2508.jpg",
+     "IMG_2509.jpg",
+     "IMG_2510.jpg",
+     "IMG_2511.jpg",
+     "IMG_2512.jpg",
+     "IMG_2513.jpg",
+     "IMG_2514.jpg",
+     "IMG_2515.jpg",
+     "IMG_2516.jpg",
+     "IMG_2517.jpg",
      "IMG_2518.jpg",
      "IMG_2519.jpg",
+     "IMG_2520.jpg",
+     "IMG_2521.jpg",
+     "IMG_2522.jpg",
+     "IMG_2523.jpg",
+     "IMG_2537.jpg",
+     "IMG_2538.jpg",
      "IMG_2539.jpg",
-     "IMG_2687.jpg"
+     "IMG_2540.jpg",
+     "IMG_2682.jpg",
+     "IMG_2683.jpg",
+     "IMG_2684.jpg",
+     "IMG_2685.jpg",
+     "IMG_2686.jpg",
+     "IMG_2687.jpg",
+     "IMG_2688.jpg",
+     "IMG_2689.jpg",
+     "IMG_2690.jpg",
+     "IMG_2691.jpg",
+     "IMG_2692.jpg",
+     "IMG_2813.jpg"
     ],
     "observations": [
      "elena:N01",
@@ -46299,8 +49410,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 29,
-   "uninspectedSources": 1,
+   "sourceCount": 74,
+   "uninspectedSources": 46,
    "routes": [
     "path-route:cervantes"
    ],
@@ -46365,7 +49476,52 @@
      "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg"
     ],
     "missingCatalogueSources": [
-     "IMG_2539.jpg"
+     "IMG_2442.jpg",
+     "IMG_2443.jpg",
+     "IMG_2444.jpg",
+     "IMG_2445.jpg",
+     "IMG_2446.jpg",
+     "IMG_2447.jpg",
+     "IMG_2448.jpg",
+     "IMG_2449.jpg",
+     "IMG_2450.jpg",
+     "IMG_2451.jpg",
+     "IMG_2452.jpg",
+     "IMG_2453.jpg",
+     "IMG_2454.jpg",
+     "IMG_2455.jpg",
+     "IMG_2456.jpg",
+     "IMG_2457.jpg",
+     "IMG_2458.jpg",
+     "IMG_2462.jpg",
+     "IMG_2463.jpg",
+     "IMG_2464.jpg",
+     "IMG_2465.jpg",
+     "IMG_2466.jpg",
+     "IMG_2467.jpg",
+     "IMG_2468.jpg",
+     "IMG_2469.jpg",
+     "IMG_2470.jpg",
+     "IMG_2471.jpg",
+     "IMG_2472.jpg",
+     "IMG_2473.jpg",
+     "IMG_2474.jpg",
+     "IMG_2475.jpg",
+     "IMG_2476.jpg",
+     "IMG_2512.jpg",
+     "IMG_2513.jpg",
+     "IMG_2514.jpg",
+     "IMG_2515.jpg",
+     "IMG_2537.jpg",
+     "IMG_2538.jpg",
+     "IMG_2539.jpg",
+     "IMG_2540.jpg",
+     "IMG_2541.jpg",
+     "IMG_2542.jpg",
+     "IMG_2543.jpg",
+     "IMG_2544.jpg",
+     "IMG_2545.jpg",
+     "IMG_2686.jpg"
     ],
     "observations": [
      "cervantes:W01",
@@ -46478,8 +49634,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 25,
-   "uninspectedSources": 25,
+   "sourceCount": 44,
+   "uninspectedSources": 44,
    "routes": [
     "path-route:dali",
     "path-route:dali-shared-footpath",
@@ -46507,8 +49663,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 3,
-   "uninspectedSources": 3,
+   "sourceCount": 4,
+   "uninspectedSources": 4,
    "routes": [
     "path-route:picasso",
     "path-route:picasso-access"
@@ -46528,15 +49684,15 @@
    "kind": "path-area-coverage",
    "name": "Loira, Bolivia, Alberto and Isabel",
    "states": {
-    "source": "source needed",
+    "source": "uninspected",
     "identity": "unresolved",
     "model": "absent",
     "placement": "unreviewed",
     "runtime": "unchecked"
    },
-   "sourceCoverage": "source needed",
-   "sourceCount": 0,
-   "uninspectedSources": 0,
+   "sourceCoverage": "uninspected",
+   "sourceCount": 2,
+   "uninspectedSources": 2,
    "routes": [
     "path-route:loira",
     "path-route:bolivia",
@@ -46555,7 +49711,7 @@
    "inventory": null,
    "drawing": null,
    "limits": "Catalogue association only. Full-source feature inventory, additional tunnel search and boundary traces remain outstanding.",
-   "nextAction": "Request ground views along every lane, both ends of covered connections and an aerial with independent anchors.",
+   "nextAction": "Obtain opposite-end portal photos, path-edge views and ground/roof anchors.",
    "areas": [
     "north-lanes"
    ]
@@ -46572,8 +49728,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 12,
-   "uninspectedSources": 12,
+   "sourceCount": 30,
+   "uninspectedSources": 30,
    "routes": [
     "path-route:eva",
     "path-route:eva-west-footpath"
@@ -46600,8 +49756,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 39,
-   "uninspectedSources": 39,
+   "sourceCount": 124,
+   "uninspectedSources": 124,
    "routes": [
     "path-route:patricia",
     "path-route:silvia-north",
@@ -46635,8 +49791,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 21,
-   "uninspectedSources": 21,
+   "sourceCount": 51,
+   "uninspectedSources": 51,
    "routes": [
     "path-route:barraka-boardwalk"
    ],
@@ -46662,8 +49818,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 20,
-   "uninspectedSources": 20,
+   "sourceCount": 65,
+   "uninspectedSources": 65,
    "routes": [
     "path-route:paseo-west",
     "path-route:paseo",
