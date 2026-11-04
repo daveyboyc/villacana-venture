@@ -18265,7 +18265,7 @@
   },
   {
    "id": "IMG_2442.jpg",
-   "label": "IMG_2442",
+   "label": "Cervantes east end: lane with candelabra cacti, white seat pillar and brick-edged steps",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2442.jpg",
@@ -18273,13 +18273,17 @@
    "image": "photos-ref/IMG_2442.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2442.jpg",
    "areas": [
-    "cervantes",
-    "picasso"
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is +-13 m and sits in the lawn north of the lane; the camera was most likely on the lane itself. Heading 251 follows the lane axis. looksAt is an estimate 20 m along the view.",
    "camera": {
     "x": -88.5,
     "z": 11.8,
@@ -18288,12 +18292,12 @@
     "altitude": 7.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Cervantes lane east end, white seat pillar and brick-edged steps",
    "looksAt": [
-    -94.2,
-    13.8
+    -108.0,
+    24.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2442.jpg",
@@ -18357,7 +18361,7 @@
   },
   {
    "id": "IMG_2443.jpg",
-   "label": "IMG_2443",
+   "label": "Cervantes east end: same view, a few metres on",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2443.jpg",
@@ -18367,10 +18371,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin -89.8, 17.3 +-5.7 m is on the lane edge. Use with IMG_2442 for the brick-edged step and kerb geometry (rise and nosing are visible).",
    "camera": {
     "x": -89.8,
     "z": 17.3,
@@ -18379,12 +18388,12 @@
     "altitude": 7.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Cervantes lane east end, white seat pillar and brick-edged steps",
    "looksAt": [
-    -95.5,
-    19.3
+    -108.0,
+    24.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2443.jpg",
@@ -18435,7 +18444,7 @@
   },
   {
    "id": "IMG_2444.jpg",
-   "label": "IMG_2444",
+   "label": "Cervantes east end: looking back east along the lane to the car park side",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2444.jpg",
@@ -18443,12 +18452,17 @@
    "image": "photos-ref/IMG_2444.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2444.jpg",
    "areas": [
-    "cervantes"
+    "cervantes",
+    "picasso"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Cars at the far end are probably the Picasso car park but that is not certain from the photo; the lane end is about 15 m away. looksAt is estimated along heading 65.",
    "camera": {
     "x": -90.0,
     "z": 19.5,
@@ -18457,12 +18471,12 @@
     "altitude": 7.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Lane end opening towards the car park",
    "looksAt": [
-    -84.6,
-    17.0
+    -70.0,
+    10.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2444.jpg",
@@ -18503,7 +18517,7 @@
   },
   {
    "id": "IMG_2445.jpg",
-   "label": "IMG_2445",
+   "label": "Octagonal terracotta paving close-up on Cervantes",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2445.jpg",
@@ -18513,10 +18527,12 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Camera looks down at the floor so only the pattern is usable; heading 240 (along the lane) comes from the pin metadata. Octagon pattern here (about 0.4 m octagons) differs from the square tiles used west of Elena.",
    "camera": {
     "x": -99.5,
     "z": 24.7,
@@ -18581,7 +18597,7 @@
   },
   {
    "id": "IMG_2446.jpg",
-   "label": "IMG_2446",
+   "label": "Cervantes north lawn with white two-storey house, balcony and arched garden gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2446.jpg",
@@ -18591,10 +18607,14 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin -103.2, 27.2 is on the lane; the lawn and house are about 20 m to the west-north-west. looksAt is estimated along heading 272 and not registered. Which house/frontage this is has not been matched to the registry footprint.",
    "camera": {
     "x": -103.2,
     "z": 27.2,
@@ -18603,12 +18623,12 @@
     "altitude": 6.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "North-side lawn, house and arched garden door west of the Alberto crossing",
    "looksAt": [
-    -109.2,
+    -125.0,
     27.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2446.jpg",
@@ -18659,7 +18679,7 @@
   },
   {
    "id": "IMG_2447.jpg",
-   "label": "IMG_2447",
+   "label": "Private patio behind the Cervantes lawn: banana plants and citrus tree",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2447.jpg",
@@ -18669,10 +18689,14 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "layout",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 327 from pin (-104.7, 27.5); looksAt is 15 m along the view and unregistered. Private garden, so layout here is context only.",
    "camera": {
     "x": -104.7,
     "z": 27.5,
@@ -18681,12 +18705,12 @@
     "altitude": 7.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Private patio and house rear north of the lane",
    "looksAt": [
-    -108.0,
-    22.5
+    -107.0,
+    13.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2447.jpg",
@@ -18737,7 +18761,7 @@
   },
   {
    "id": "IMG_2448.jpg",
-   "label": "IMG_2448",
+   "label": "Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2448.jpg",
@@ -18748,10 +18772,15 @@
     "cervantes",
     "north-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "layout",
+    "materials",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243.",
    "camera": {
     "x": -111.2,
     "z": 31.8,
@@ -18760,12 +18789,12 @@
     "altitude": 7.9,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Lane beyond the Alberto crossing with three white steps",
    "looksAt": [
-    -116.5,
-    34.5
+    -128.0,
+    41.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2448.jpg",
@@ -18812,7 +18841,7 @@
   },
   {
    "id": "IMG_2449.jpg",
-   "label": "IMG_2449",
+   "label": "Cervantes lane west of Alberto: 'CALLE DE MIGUEL' wall plaque and receding tiled lane",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2449.jpg",
@@ -18820,13 +18849,17 @@
    "image": "photos-ref/IMG_2449.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2449.jpg",
    "areas": [
-    "north-lanes",
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "layout",
+    "planting",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "The plaque spells the lane 'Calle de Miguel', which supports the Cervantes lane being signed Miguel (see IMG_2288 and the Miguel passage task). The exact text of the wall plaque should be checked at full size. looksAt estimated along heading 233.",
    "camera": {
     "x": -112.7,
     "z": 33.1,
@@ -18835,12 +18868,12 @@
     "altitude": 8.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Lane west of the Alberto crossing with the Calle de Miguel plaque",
    "looksAt": [
-    -117.5,
-    36.7
+    -132.0,
+    45.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2449.jpg",
@@ -18892,7 +18925,7 @@
   },
   {
    "id": "IMG_2450.jpg",
-   "label": "IMG_2450",
+   "label": "Cervantes lane: arched covered porch on the north side, bougainvillea wall opposite",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2450.jpg",
@@ -18902,10 +18935,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Camera on the lane at (-121.9, 39.0); the arch is the mouth of the covered passage seen in IMG_2451/2452 about 6 m ahead on the right (north side). Alignment between the two photos is by eye only.",
    "camera": {
     "x": -121.9,
     "z": 39.0,
@@ -18914,12 +18952,12 @@
     "altitude": 7.7,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Arched porch opening on the north side of the lane",
    "looksAt": [
-    -127.3,
-    41.6
+    -126.5,
+    42.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2450.jpg",
@@ -18965,7 +19003,7 @@
   },
   {
    "id": "IMG_2451.jpg",
-   "label": "IMG_2451",
+   "label": "Cervantes north side: covered 'Calle Miguel' passage with azulejo-inset floor and far arch",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2451.jpg",
@@ -18975,10 +19013,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin -126.6, 41.1 +-2.5 m is at the lane edge, so the camera stands at the passage mouth. Probably the Miguel passage of task cervantes-identify-miguel-passage (flat ceiling, far arch, door sets on both sides) but it is a different place from IMG_2288/2469, whose pin is at the south-west end near Dali. Two Calle Miguel plaques exist, so identity of the model portal is still open. looksAt estimated 8 m along heading 342.",
    "camera": {
     "x": -126.6,
     "z": 41.1,
@@ -18987,12 +19030,12 @@
     "altitude": 7.5,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Interior of the covered Calle Miguel passage, far arch",
    "looksAt": [
-    -128.5,
-    35.4
+    -129.0,
+    33.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2451.jpg",
@@ -19043,7 +19086,7 @@
   },
   {
    "id": "IMG_2452.jpg",
-   "label": "IMG_2452",
+   "label": "Cervantes north side: covered Calle Miguel passage, second view",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2452.jpg",
@@ -19053,10 +19096,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin -126.3, 41.7 +-2.5 m. Shows the recessed door and wall more clearly than IMG_2451; the left side is hidden by plants.",
    "camera": {
     "x": -126.3,
     "z": 41.7,
@@ -19065,12 +19113,12 @@
     "altitude": 7.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Interior of the covered Calle Miguel passage, far arch",
    "looksAt": [
-    -127.9,
-    35.9
+    -128.5,
+    33.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2452.jpg",
@@ -19121,7 +19169,7 @@
   },
   {
    "id": "IMG_2453.jpg",
-   "label": "IMG_2453",
+   "label": "Cervantes west of the passage: lane with barred shuttered window and lantana beds",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2453.jpg",
@@ -19129,12 +19177,18 @@
    "image": "photos-ref/IMG_2453.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2453.jpg",
    "areas": [
-    "cervantes"
+    "cervantes",
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "layout",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "The distant steps are probably the Elena junction steps about 25 m away, but that is read by eye from a very small area of the photo. looksAt estimated 25 m along heading 254.",
    "camera": {
     "x": -129.8,
     "z": 44.2,
@@ -19143,12 +19197,12 @@
     "altitude": 6.4,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Steps at the Elena junction at the end of the lane (probable)",
    "looksAt": [
-    -135.6,
-    45.9
+    -154.0,
+    51.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2453.jpg",
@@ -19199,7 +19253,7 @@
   },
   {
    "id": "IMG_2454.jpg",
-   "label": "IMG_2454",
+   "label": "Cervantes east of Elena: tiled lane with white-kerbed hedge bed on the north side",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2454.jpg",
@@ -19209,10 +19263,14 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "The kerb with hedge matches the cervantes-east-north-bed description (IMG_2356) but extends at least 15 m east of Elena here, longer than the 8 m bed modelled. Pin is +-2.8 m; looksAt copied from the IMG_2356 convention, approximate.",
    "camera": {
     "x": -136.0,
     "z": 46.4,
@@ -19221,12 +19279,12 @@
     "altitude": 6.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "White-kerbed hedge bed on the north side east of Elena",
    "looksAt": [
-    -141.1,
-    49.5
+    -141.0,
+    47.9
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2454.jpg",
@@ -19277,7 +19335,7 @@
   },
   {
    "id": "IMG_2455.jpg",
-   "label": "IMG_2455",
+   "label": "Cervantes at Elena: raised white bed with palms, 'CALLE DE ELENA' sign and brown door",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2455.jpg",
@@ -19285,12 +19343,18 @@
    "image": "photos-ref/IMG_2455.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2455.jpg",
    "areas": [
-    "cervantes"
+    "cervantes",
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "planting",
+    "layout",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Matches the cervantes-junction-north-bed and garden door (IMG_2196/2287). The plaque reads 'CALLE DE ELENA'. looksAt estimated from the existing door position.",
    "camera": {
     "x": -140.3,
     "z": 48.9,
@@ -19299,12 +19363,12 @@
     "altitude": 7.0,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "North-side white bed, garden door and Calle de Elena plaque at the junction",
    "looksAt": [
-    -146.2,
-    50.1
+    -152.5,
+    53.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2455.jpg",
@@ -19355,7 +19419,7 @@
   },
   {
    "id": "IMG_2456.jpg",
-   "label": "IMG_2456",
+   "label": "Calle Elena covered walkway: looking out through an arch to a courtyard with magnolia",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2456.jpg",
@@ -19363,13 +19427,17 @@
    "image": "photos-ref/IMG_2456.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2456.jpg",
    "areas": [
-    "elena",
-    "cervantes"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is only +-19.8 m (identical pin shared with IMG_2457/2458), so the camera position is unreliable. Context and plaque place it in the covered Elena walkway (object calle-elena-1 at about (-158.8, 41.2), see IMG_2255), looking out of an arch.",
    "camera": {
     "x": -152.7,
     "z": 46.7,
@@ -19448,7 +19516,7 @@
   },
   {
    "id": "IMG_2457.jpg",
-   "label": "IMG_2457",
+   "label": "Pebble mosaic panel in the terracotta floor of the Elena walkway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2457.jpg",
@@ -19456,13 +19524,14 @@
    "image": "photos-ref/IMG_2457.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2457.jpg",
    "areas": [
-    "elena",
-    "cervantes"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is the same unreliable +-19.8 m pin as IMG_2456. The pebble mosaic in the covered Elena walkway is already noted in objects.json (calle-elena-1); IMG_2288 also mentions a pebble inset in the Miguel passage, so which passage this is cannot be told from the photo alone.",
    "camera": {
     "x": -152.7,
     "z": 46.7,
@@ -19541,7 +19610,7 @@
   },
   {
    "id": "IMG_2458.jpg",
-   "label": "IMG_2458",
+   "label": "Courtyard garden bed with magnolia and arched brown door beside the Elena walkway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2458.jpg",
@@ -19549,13 +19618,17 @@
    "image": "photos-ref/IMG_2458.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2458.jpg",
    "areas": [
-    "elena",
-    "cervantes"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "facades",
+    "layout",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin shared with IMG_2456/2457 (+-14 m), unreliable. By content it resembles the north patio garden door/bed beside the covered Elena walkway, but not matched to a modelled feature.",
    "camera": {
     "x": -152.7,
     "z": 46.7,
@@ -19629,7 +19702,7 @@
   },
   {
    "id": "IMG_2459.jpg",
-   "label": "IMG_2459",
+   "label": "Elena covered walkway: three white steps beside a red studded ramp, azulejo floor, far arch",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2459.jpg",
@@ -19637,13 +19710,17 @@
    "image": "photos-ref/IMG_2459.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2459.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-154.2, 38.7) +-6 m agrees with the walkway axis (WSW-ENE, calle-elena-1) and IMG_2255. The three steps and ramp are inside the walkway mouth, not the Elena junction steps on Cervantes.",
    "camera": {
     "x": -154.2,
     "z": 38.7,
@@ -19652,12 +19729,12 @@
     "altitude": 7.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Steps and ramp at the east mouth of the covered Elena walkway",
    "looksAt": [
-    -159.4,
-    41.7
+    -156.8,
+    40.2
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2459.jpg",
@@ -19708,7 +19785,7 @@
   },
   {
    "id": "IMG_2460.jpg",
-   "label": "IMG_2460",
+   "label": "Elena north garden path: tiled path, hedge bed and magnolia, two-storey white house beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2460.jpg",
@@ -19718,10 +19795,14 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-152.2, 41.7) lies in the block west of the Elena walkway; the path and house have not been matched to a modelled footprint. Heading 139 is SE.",
    "camera": {
     "x": -152.2,
     "z": 41.7,
@@ -19776,7 +19857,7 @@
   },
   {
    "id": "IMG_2461.jpg",
-   "label": "IMG_2461",
+   "label": "Window grille detail: twisted iron bars and louvre shutters with red tile sill",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2461.jpg",
@@ -19786,10 +19867,13 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which window is not identified; pin (-150.0, 44.5) is next to the Elena walkway but heading 210 (SSW) is speculative for a close-up.",
    "camera": {
     "x": -150.0,
     "z": 44.5,
@@ -19854,7 +19938,7 @@
   },
   {
    "id": "IMG_2462.jpg",
-   "label": "IMG_2462",
+   "label": "Bougainvillea over a white wall above a plumbago and clipped hedge, Elena junction",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2462.jpg",
@@ -19865,10 +19949,12 @@
     "cervantes",
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Close planting shot at the junction; heading 289 points at the white garden wall near the brown door (IMG_2196), but the location within the junction is not established.",
    "camera": {
     "x": -145.5,
     "z": 53.8,
@@ -19939,7 +20025,7 @@
   },
   {
    "id": "IMG_2463.jpg",
-   "label": "IMG_2463",
+   "label": "Cervantes at Elena from the east: garden door, hedge bed and the three steps",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2463.jpg",
@@ -19950,10 +20036,15 @@
     "cervantes",
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "planting",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same junction as IMG_2196/2287/2327/2464; a view from the east useful for the bed length and wall coping. looksAt taken from the existing door tags; camera pin is +-3.4 m.",
    "camera": {
     "x": -146.0,
     "z": 53.8,
@@ -19962,12 +20053,12 @@
     "altitude": 7.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Garden door, hedge bed and steps at the Elena junction",
    "looksAt": [
-    -151.9,
-    54.7
+    -152.5,
+    55.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2463.jpg",
@@ -20024,7 +20115,7 @@
   },
   {
    "id": "IMG_2464.jpg",
-   "label": "IMG_2464",
+   "label": "Elena junction on Cervantes: three steps beside the ramp, drain and 'ELENA' plaque",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2464.jpg",
@@ -20035,10 +20126,15 @@
     "cervantes",
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "signage",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-147.2, 54.4) +-3.7 m is about 7 m east of the steps and the bearing (239 against about 245 expected) agrees. Good source for the cervantes-elena-steps tread and ramp check.",
    "camera": {
     "x": -147.2,
     "z": 54.4,
@@ -20047,12 +20143,12 @@
     "altitude": 7.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Elena steps and ramp at the junction",
    "looksAt": [
-    -152.3,
-    57.5
+    -153.7,
+    57.4
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2464.jpg",
@@ -20109,7 +20205,7 @@
   },
   {
    "id": "IMG_2465.jpg",
-   "label": "IMG_2465",
+   "label": "Junction lawn corner: white kerb, pollarded tree, manhole and house with balcony",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2465.jpg",
@@ -20120,10 +20216,14 @@
     "cervantes",
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Matches the near-corner pollarded tree seen in IMG_2329/2342. looksAt is approximate (about 3 m along heading 195); pin +-4 m.",
    "camera": {
     "x": -150.7,
     "z": 56.6,
@@ -20132,12 +20232,12 @@
     "altitude": 7.5,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Junction lawn corner kerb and pollarded tree",
    "looksAt": [
-    -152.3,
-    62.4
+    -151.5,
+    59.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2465.jpg",
@@ -20194,7 +20294,7 @@
   },
   {
    "id": "IMG_2466.jpg",
-   "label": "IMG_2466",
+   "label": "Elena south footpath beside the junction lawn: kerb, lawn and three clipped trees",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2466.jpg",
@@ -20202,13 +20302,17 @@
    "image": "photos-ref/IMG_2466.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2466.jpg",
    "areas": [
-    "cervantes",
-    "elena"
+    "elena",
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 173 from (-151.5, 56.9). The three clipped trees correspond to the sequence described for IMG_2358/2367. looksAt estimated 7 m along the view.",
    "camera": {
     "x": -151.5,
     "z": 56.9,
@@ -20217,12 +20321,12 @@
     "altitude": 7.5,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Elena south footpath and lawn trees beyond the junction",
    "looksAt": [
-    -150.8,
-    62.9
+    -152.0,
+    64.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2466.jpg",
@@ -20274,7 +20378,7 @@
   },
   {
    "id": "IMG_2467.jpg",
-   "label": "IMG_2467",
+   "label": "Cervantes west of Elena: lane with brown door, grilles and oleander hedge",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2467.jpg",
@@ -20282,13 +20386,16 @@
    "image": "photos-ref/IMG_2467.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2467.jpg",
    "areas": [
-    "cervantes",
-    "elena"
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-154.2, 59.1) +-4.5 m; looksAt estimated 22 m along heading 238.",
    "camera": {
     "x": -154.2,
     "z": 59.1,
@@ -20297,12 +20404,12 @@
     "altitude": 7.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Cervantes lane west of Elena",
    "looksAt": [
-    -159.3,
-    62.3
+    -175.0,
+    69.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2467.jpg",
@@ -20359,7 +20466,7 @@
   },
   {
    "id": "IMG_2468.jpg",
-   "label": "IMG_2468",
+   "label": "Cervantes west end: arcaded porch on the left, dracaena and shrub bed on the right",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2468.jpg",
@@ -20367,12 +20474,17 @@
    "image": "photos-ref/IMG_2468.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2468.jpg",
    "areas": [
-    "cervantes"
+    "cervantes",
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-167.1, 65.2) +-2.3 m. The arch is the mouth of the south-side covered passage seen in IMG_2288/2469. looksAt estimated 20 m along heading 242.",
    "camera": {
     "x": -167.1,
     "z": 65.2,
@@ -20381,12 +20493,12 @@
     "altitude": 7.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "West end of the lane towards Dali",
    "looksAt": [
-    -172.4,
-    68.0
+    -185.0,
+    72.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2468.jpg",
@@ -20427,7 +20539,7 @@
   },
   {
    "id": "IMG_2469.jpg",
-   "label": "IMG_2469",
+   "label": "Cervantes west end: inside the arch, 'CALLE MIGUEL 1 19' plaque, azulejo floor and planters",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2469.jpg",
@@ -20437,10 +20549,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "layout",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-169.1, 67.1) +-2.3 m is within a few metres of IMG_2288 (-172.6, 65.9), which shows the same passage, so this is the Miguel passage on the south side near Dali. Odd numbers 1-19 here and '10...' on the north-side passage (IMG_2451) suggest a numbered Calle Miguel with even/odd sides, an interpretation not confirmed.",
    "camera": {
     "x": -169.1,
     "z": 67.1,
@@ -20449,12 +20566,12 @@
     "altitude": 7.4,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "South-side covered passage at the lane's west end, 'Calle Miguel 1-19' plaque",
    "looksAt": [
-    -171.3,
-    72.7
+    -170.9,
+    71.8
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2469.jpg",
@@ -20505,7 +20622,7 @@
   },
   {
    "id": "IMG_2470.jpg",
-   "label": "IMG_2470",
+   "label": "Covered tiled portal with arch to a planted lane",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2470.jpg",
@@ -20515,10 +20632,14 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin sits at the west (Dalí) end of Calle Miguel de Cervantes and the view runs SE into the block; the covered portal is assumed to be the Cervantes entry but is not matched to a specific registry opening.",
    "camera": {
     "x": -171.1,
     "z": 68.6,
@@ -20578,7 +20699,7 @@
   },
   {
    "id": "IMG_2471.jpg",
-   "label": "IMG_2471",
+   "label": "Dalí footpath ramp with white mailbox pillar",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2471.jpg",
@@ -20586,10 +20707,15 @@
    "image": "photos-ref/IMG_2471.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2471.jpg",
    "areas": [
-    "cervantes"
+    "cervantes",
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -20640,7 +20766,7 @@
   },
   {
    "id": "IMG_2472.jpg",
-   "label": "IMG_2472",
+   "label": "Tiled footpath beside Dalí car park lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2472.jpg",
@@ -20648,11 +20774,14 @@
    "image": "photos-ref/IMG_2472.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2472.jpg",
    "areas": [
-    "cervantes",
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -20720,7 +20849,7 @@
   },
   {
    "id": "IMG_2473.jpg",
-   "label": "IMG_2473",
+   "label": "Dalí footpath, strelitzia lawn strip and parked cars",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2473.jpg",
@@ -20728,11 +20857,14 @@
    "image": "photos-ref/IMG_2473.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2473.jpg",
    "areas": [
-    "cervantes",
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -20800,7 +20932,7 @@
   },
   {
    "id": "IMG_2474.jpg",
-   "label": "IMG_2474",
+   "label": "Dalí car park and clipped hedge",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2474.jpg",
@@ -20808,13 +20940,16 @@
    "image": "photos-ref/IMG_2474.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2474.jpg",
    "areas": [
-    "cervantes",
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Looks south-southwest across the road; the villa beyond the hedge is outside the resort boundary (not identified).",
    "camera": {
     "x": -188.8,
     "z": 78.5,
@@ -20875,7 +21010,7 @@
   },
   {
    "id": "IMG_2475.jpg",
-   "label": "IMG_2475",
+   "label": "Calle Pintor Dalí looking south",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2475.jpg",
@@ -20883,11 +21018,14 @@
    "image": "photos-ref/IMG_2475.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2475.jpg",
    "areas": [
-    "cervantes",
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "view"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -20956,7 +21094,7 @@
   },
   {
    "id": "IMG_2476.jpg",
-   "label": "IMG_2476",
+   "label": "Calle Pintor Dalí looking north",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2476.jpg",
@@ -20964,11 +21102,13 @@
    "image": "photos-ref/IMG_2476.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2476.jpg",
    "areas": [
-    "dali",
-    "cervantes"
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -21037,7 +21177,7 @@
   },
   {
    "id": "IMG_2477.jpg",
-   "label": "IMG_2477",
+   "label": "House frontage on Dalí with arched entry and bougainvillea",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2477.jpg",
@@ -21047,10 +21187,14 @@
    "areas": [
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Subject point is an approximate 8 m offset along the phone heading, not surveyed.",
    "camera": {
     "x": -196.2,
     "z": 72.0,
@@ -21059,12 +21203,12 @@
     "altitude": 8.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "white house frontage with arched entry on the east side of Dalí",
    "looksAt": [
-    -195.0,
-    66.1
+    -194.5,
+    64.2
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2477.jpg",
@@ -21121,7 +21265,7 @@
   },
   {
    "id": "IMG_2478.jpg",
-   "label": "IMG_2478",
+   "label": "White arched gateway with lanterns into a planted passage",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2478.jpg",
@@ -21131,10 +21275,14 @@
    "areas": [
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "layout",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which registry opening this is is unidentified; GPS puts the camera on the Dalí road edge heading ENE. Subject point is a rough ~5 m offset.",
    "camera": {
     "x": -199.5,
     "z": 64.6,
@@ -21143,12 +21291,12 @@
     "altitude": 9.0,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "arched white gateway from Dalí footpath",
    "looksAt": [
-    -194.3,
-    61.7
+    -195.1,
+    62.2
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2478.jpg",
@@ -21205,7 +21353,7 @@
   },
   {
    "id": "IMG_2480.jpg",
-   "label": "IMG_2480",
+   "label": "Paseo looking east with solar lamp and sandstone wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2480.jpg",
@@ -21213,10 +21361,15 @@
    "image": "photos-ref/IMG_2480.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2480.jpg",
    "areas": [
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "view"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -21585,7 +21738,7 @@
   },
   {
    "id": "IMG_2484.jpg",
-   "label": "IMG_2484",
+   "label": "Paseo near Calle Guillermo with painted crossing",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2484.jpg",
@@ -21594,11 +21747,14 @@
    "thumbnail": "photos-ref/thumbs/IMG_2484.jpg",
    "areas": [
     "paseo",
-    "seaward-lanes",
-    "barraka-beach"
+    "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "view"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -21661,7 +21817,7 @@
   },
   {
    "id": "IMG_2485.jpg",
-   "label": "IMG_2485",
+   "label": "Comunidad Villacana gate sign at the end of Calle Guillermo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2485.jpg",
@@ -21669,12 +21825,18 @@
    "image": "photos-ref/IMG_2485.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2485.jpg",
    "areas": [
-    "paseo"
+    "paseo",
+    "seaward-lanes",
+    "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Subject offset (~2 m) from the pin is approximate.",
    "camera": {
     "x": -2.5,
     "z": 130.5,
@@ -21683,12 +21845,12 @@
     "altitude": 4.7,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Comunidad Villacana sign on the Guillermo gate wall",
    "looksAt": [
-    -4.7,
-    124.9
+    -3.3,
+    128.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2485.jpg",
@@ -21723,7 +21885,7 @@
   },
   {
    "id": "IMG_2486.jpg",
-   "label": "IMG_2486",
+   "label": "Tiled apron at the foot of Calle Guillermo with curved wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2486.jpg",
@@ -21731,12 +21893,17 @@
    "image": "photos-ref/IMG_2486.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2486.jpg",
    "areas": [
+    "seaward-lanes",
     "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin accuracy about 4 m; heading 217 points back down the seafront end of Guillermo.",
    "camera": {
     "x": -4.0,
     "z": 129.9,
@@ -21801,7 +21968,7 @@
   },
   {
    "id": "IMG_2487.jpg",
-   "label": "IMG_2487",
+   "label": "Curving tiled path beside a white house and planter wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2487.jpg",
@@ -21809,13 +21976,17 @@
    "image": "photos-ref/IMG_2487.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2487.jpg",
    "areas": [
-    "paseo",
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin accuracy about 4.7 m; on the Guillermo/Jorge frontage near the seafront end.",
    "camera": {
     "x": -9.0,
     "z": 134.5,
@@ -22020,7 +22191,7 @@
   },
   {
    "id": "IMG_2489.jpg",
-   "label": "IMG_2489",
+   "label": "Calle Patricia lane with azulejo-backed white bench",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2489.jpg",
@@ -22028,13 +22199,17 @@
    "image": "photos-ref/IMG_2489.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2489.jpg",
    "areas": [
-    "seaward-lanes",
-    "main-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin accuracy poor (about 10 m); heading 242 along Calle Patricia judged from the lane line on the aerial, identity of the lane is likely but not certain.",
    "camera": {
     "x": -48.5,
     "z": 103.9,
@@ -22107,7 +22282,7 @@
   },
   {
    "id": "IMG_2491.jpg",
-   "label": "IMG_2491",
+   "label": "Calle Patricia lane toward Teodoro Rojo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2491.jpg",
@@ -22117,8 +22292,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -22185,7 +22365,7 @@
   },
   {
    "id": "IMG_2492.jpg",
-   "label": "IMG_2492",
+   "label": "Calle de Teodoro street sign and arched wooden door",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2492.jpg",
@@ -22195,10 +22375,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Subject offset (~2 m) from the pin is approximate.",
    "camera": {
     "x": -76.6,
     "z": 107.9,
@@ -22207,12 +22391,12 @@
     "altitude": 5.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Calle de Teodoro tile street sign",
    "looksAt": [
-    -82.5,
-    107.1
+    -78.6,
+    107.6
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2492.jpg",
@@ -22264,7 +22448,7 @@
   },
   {
    "id": "IMG_2493.jpg",
-   "label": "IMG_2493",
+   "label": "Calle Teodoro Rojo narrow lane looking north",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2493.jpg",
@@ -22274,8 +22458,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -22437,7 +22626,7 @@
   },
   {
    "id": "IMG_2495.jpg",
-   "label": "IMG_2495",
+   "label": "Teodoro Rojo lane with barred window and arched doorway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2495.jpg",
@@ -22447,8 +22636,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -22515,7 +22708,7 @@
   },
   {
    "id": "IMG_2496.jpg",
-   "label": "IMG_2496",
+   "label": "Calle Teodoro 2-16 sign over stepped entrance",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2496.jpg",
@@ -22525,10 +22718,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "levels",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Subject offset (~2.5 m) is approximate.",
    "camera": {
     "x": -84.3,
     "z": 97.1,
@@ -22537,12 +22735,12 @@
     "altitude": 5.7,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Calle Teodoro 2-16 sign wall and entrance steps",
    "looksAt": [
-    -90.0,
-    95.2
+    -86.7,
+    96.3
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2496.jpg",
@@ -22583,7 +22781,7 @@
   },
   {
    "id": "IMG_2497.jpg",
-   "label": "IMG_2497",
+   "label": "Covered tiled porch with arch and potted shrubs",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2497.jpg",
@@ -22593,8 +22791,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "levels"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -22656,7 +22859,7 @@
   },
   {
    "id": "IMG_2498.jpg",
-   "label": "IMG_2498",
+   "label": "Rear gardens with timber pergolas and white houses",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2498.jpg",
@@ -22666,10 +22869,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Camera is on the Teodoro Rojo lane edge; the houses and gardens are private and further north-north-east.",
    "camera": {
     "x": -87.8,
     "z": 92.5,
@@ -22734,7 +22941,7 @@
   },
   {
    "id": "IMG_2499.jpg",
-   "label": "IMG_2499",
+   "label": "Grass path between white walls and hedges",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2499.jpg",
@@ -22744,10 +22951,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Private-garden access, not a tiled lane; same pin as IMG_2500.",
    "camera": {
     "x": -88.3,
     "z": 91.8,
@@ -22812,7 +23023,7 @@
   },
   {
    "id": "IMG_2500.jpg",
-   "label": "IMG_2500",
+   "label": "Grass garden path with wooden gates",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2500.jpg",
@@ -22822,10 +23033,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same pin as IMG_2499, slightly rotated.",
    "camera": {
     "x": -88.3,
     "z": 91.8,
@@ -22890,7 +23105,7 @@
   },
   {
    "id": "IMG_2501.jpg",
-   "label": "IMG_2501",
+   "label": "Open tiled court at the Teodoro Rojo and Eva junction",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2501.jpg",
@@ -22898,10 +23113,16 @@
    "image": "photos-ref/IMG_2501.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2501.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -22968,7 +23189,7 @@
   },
   {
    "id": "IMG_2502.jpg",
-   "label": "IMG_2502",
+   "label": "Magnolia and clipped hedge in front of a white house",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2502.jpg",
@@ -22976,13 +23197,15 @@
    "image": "photos-ref/IMG_2502.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2502.jpg",
    "areas": [
-    "eva",
-    "seaward-lanes"
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin on Calle Teodoro Rojo near its junction with Eva; the house is across the lawn to the north.",
    "camera": {
     "x": -97.5,
     "z": 75.1,
@@ -23053,7 +23276,7 @@
   },
   {
    "id": "IMG_2503.jpg",
-   "label": "IMG_2503",
+   "label": "Eva tiled footpath beside lawn with magnolia and lamp post",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2503.jpg",
@@ -23061,11 +23284,14 @@
    "image": "photos-ref/IMG_2503.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2503.jpg",
    "areas": [
-    "eva",
-    "seaward-lanes"
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -23128,7 +23354,7 @@
   },
   {
    "id": "IMG_2504.jpg",
-   "label": "IMG_2504",
+   "label": "Long tiled path to an arched iron gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2504.jpg",
@@ -23139,10 +23365,14 @@
     "eva",
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW toward a white gateway (possibly the middle pool east gateway, not confirmed).",
    "camera": {
     "x": -101.5,
     "z": 72.7,
@@ -23197,7 +23427,7 @@
   },
   {
    "id": "IMG_2505.jpg",
-   "label": "IMG_2505",
+   "label": "Middle pool lawn: flagstone path, clipped hedge and glass pool fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2505.jpg",
@@ -23205,13 +23435,16 @@
    "image": "photos-ref/IMG_2505.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2505.jpg",
    "areas": [
-    "eva",
     "middle-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on the east side of the middle pool lawn; subject extents not placed.",
    "camera": {
     "x": -116.6,
     "z": 82.3,
@@ -23271,7 +23504,7 @@
   },
   {
    "id": "IMG_2506.jpg",
-   "label": "IMG_2506",
+   "label": "Elena south lane: terracotta tiles past doors with red-tread steps",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2506.jpg",
@@ -23279,11 +23512,15 @@
    "image": "photos-ref/IMG_2506.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2506.jpg",
    "areas": [
-    "elena",
-    "middle-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -23294,12 +23531,12 @@
     "altitude": 5.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Elena south lane frontage doors with red-tread steps",
    "looksAt": [
-    -141.7,
-    73.3
+    -142.0,
+    70.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2506.jpg",
@@ -23494,7 +23731,7 @@
   },
   {
    "id": "IMG_2509.jpg",
-   "label": "IMG_2509",
+   "label": "Elena south lane: tiled path beside curved white kerb and lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2509.jpg",
@@ -23504,8 +23741,12 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -23516,12 +23757,12 @@
     "altitude": 6.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Elena lane towards the Cervantes junction",
    "looksAt": [
-    -149.4,
-    63.4
+    -148.0,
+    60.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2509.jpg",
@@ -23572,7 +23813,7 @@
   },
   {
    "id": "IMG_2510.jpg",
-   "label": "IMG_2510",
+   "label": "Elena lane: green iron-barred wall and gate beside a hedged garden",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2510.jpg",
@@ -23582,10 +23823,15 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Iron-barred wall and white coping at right are part of the Elena frontage west of the lane; not matched to a single modelled feature.",
    "camera": {
     "x": -149.7,
     "z": 65.2,
@@ -23650,7 +23896,7 @@
   },
   {
    "id": "IMG_2511.jpg",
-   "label": "IMG_2511",
+   "label": "Elena/Cervantes junction: steps beside the ramp, lawn with manhole cover",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2511.jpg",
@@ -23658,10 +23904,16 @@
    "image": "photos-ref/IMG_2511.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2511.jpg",
    "areas": [
-    "elena"
+    "elena",
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "signage",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -23672,12 +23924,12 @@
     "altitude": 7.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Steps and ramp at the Elena/Cervantes junction",
    "looksAt": [
-    -156.3,
-    59.2
+    -156.0,
+    59.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2511.jpg",
@@ -23728,7 +23980,7 @@
   },
   {
    "id": "IMG_2512.jpg",
-   "label": "IMG_2512",
+   "label": "Cervantes lane looking east: lantana hedge and white boundary wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2512.jpg",
@@ -23736,13 +23988,17 @@
    "image": "photos-ref/IMG_2512.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2512.jpg",
    "areas": [
-    "cervantes",
-    "elena"
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 69 is along Cervantes toward the north-east; long view down the lane.",
    "camera": {
     "x": -155.9,
     "z": 55.7,
@@ -23808,7 +24064,7 @@
   },
   {
    "id": "IMG_2513.jpg",
-   "label": "IMG_2513",
+   "label": "Cervantes lane: long white wall with timber door and domed coping",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2513.jpg",
@@ -23816,13 +24072,17 @@
    "image": "photos-ref/IMG_2513.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2513.jpg",
    "areas": [
-    "cervantes",
-    "elena"
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Phone altitude 10.9 m reads above-ground but the picture is plainly eye-level in the lane (path at feet); treat altitude as GPS noise. build_references --check may flag the mismatch.",
    "camera": {
     "x": -153.5,
     "z": 53.8,
@@ -23831,12 +24091,12 @@
     "altitude": 10.9,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "White boundary wall with arched timber door beside Cervantes lane",
    "looksAt": [
-    -148.1,
-    51.3
+    -148.0,
+    50.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2513.jpg",
@@ -23888,7 +24148,7 @@
   },
   {
    "id": "IMG_2514.jpg",
-   "label": "IMG_2514",
+   "label": "Elena north lane foot: hedged planting bed, red drain grating and aggregate margin",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2514.jpg",
@@ -23896,11 +24156,16 @@
    "image": "photos-ref/IMG_2514.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2514.jpg",
    "areas": [
-    "cervantes",
-    "elena"
+    "elena",
+    "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "levels"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -23911,12 +24176,12 @@
     "altitude": 8.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "First hedged bed and drain grating at the foot of Elena north",
    "looksAt": [
-    -147.1,
-    46.5
+    -147.0,
+    46.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2514.jpg",
@@ -23968,7 +24233,7 @@
   },
   {
    "id": "IMG_2515.jpg",
-   "label": "IMG_2515",
+   "label": "Elena north lane: tiled path between hedged beds towards the arched gateway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2515.jpg",
@@ -23976,11 +24241,15 @@
    "image": "photos-ref/IMG_2515.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2515.jpg",
    "areas": [
-    "elena",
-    "cervantes"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -23991,12 +24260,12 @@
     "altitude": 8.7,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Arched gateway at the north end of Elena",
    "looksAt": [
-    -150.0,
-    43.0
+    -159.0,
+    28.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2515.jpg",
@@ -24053,7 +24322,7 @@
   },
   {
    "id": "IMG_2516.jpg",
-   "label": "IMG_2516",
+   "label": "Elena north lane closer to the gateway: hedged beds, bars and lantern",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2516.jpg",
@@ -24063,8 +24332,13 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -24075,12 +24349,12 @@
     "altitude": 8.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Arched gateway at the north end of Elena",
    "looksAt": [
-    -153.6,
-    39.0
+    -159.0,
+    28.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2516.jpg",
@@ -24126,7 +24400,7 @@
   },
   {
    "id": "IMG_2517.jpg",
-   "label": "IMG_2517",
+   "label": "Elena covered walkway east portal: plaque, steps and red ribbed ramp",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2517.jpg",
@@ -24134,13 +24408,17 @@
    "image": "photos-ref/IMG_2517.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2517.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "levels",
+    "layout",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same subject as IMG_2518 from a slightly different angle.",
    "camera": {
     "x": -153.5,
     "z": 38.7,
@@ -24149,12 +24427,12 @@
     "altitude": 7.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "East portal steps, ramp and plaque of the Elena covered walkway",
    "looksAt": [
-    -158.3,
-    35.1
+    -155.5,
+    38.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2517.jpg",
@@ -24360,7 +24638,7 @@
   },
   {
    "id": "IMG_2520.jpg",
-   "label": "IMG_2520",
+   "label": "Elena covered walkway: patterned tile floor with pebble mosaic panel",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2520.jpg",
@@ -24368,11 +24646,14 @@
    "image": "photos-ref/IMG_2520.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2520.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -24383,12 +24664,12 @@
     "altitude": 6.9,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Covered walkway towards its west arch",
    "looksAt": [
-    -160.1,
-    40.3
+    -162.0,
+    43.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2520.jpg",
@@ -24439,7 +24720,7 @@
   },
   {
    "id": "IMG_2521.jpg",
-   "label": "IMG_2521",
+   "label": "Elena covered walkway: round arch to the 36/34 gates, potted shrubs",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2521.jpg",
@@ -24447,11 +24728,15 @@
    "image": "photos-ref/IMG_2521.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2521.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "signage"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -24462,12 +24747,12 @@
     "altitude": 7.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Paired private gates 36/34 beyond the walkway arch",
    "looksAt": [
-    -160.5,
-    41.5
+    -166.1,
+    45.1
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2521.jpg",
@@ -24518,7 +24803,7 @@
   },
   {
    "id": "IMG_2522.jpg",
-   "label": "IMG_2522",
+   "label": "Brown timber house door with green iron grille",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2522.jpg",
@@ -24528,10 +24813,13 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which door is not identified; likely one of the doors off the Elena covered walkway (pin is at its west end), but the door position is not established.",
    "camera": {
     "x": -156.9,
     "z": 43.6,
@@ -24586,7 +24874,7 @@
   },
   {
    "id": "IMG_2523.jpg",
-   "label": "IMG_2523",
+   "label": "Doormat with blue-and-white lion tile border on terracotta threshold",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2523.jpg",
@@ -24596,10 +24884,12 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pointed at the floor; door identity not established, probably off the Elena covered walkway.",
    "camera": {
     "x": -156.7,
     "z": 45.8,
@@ -24648,7 +24938,7 @@
   },
   {
    "id": "IMG_2524.jpg",
-   "label": "IMG_2524",
+   "label": "Dali car park looking south: white kerb, chain-link fence, houses at far end",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2524.jpg",
@@ -24658,10 +24948,14 @@
    "areas": [
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "view",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin lies on the west edge of the car park (GPS ±3.7 m); the west boundary fence runs along the right of frame.",
    "camera": {
     "x": -187.0,
     "z": 96.8,
@@ -24716,7 +25010,7 @@
   },
   {
    "id": "IMG_2525.jpg",
-   "label": "IMG_2525",
+   "label": "Dali car park bays and the white houses along its east side",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2525.jpg",
@@ -24726,8 +25020,13 @@
    "areas": [
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -24790,7 +25089,7 @@
   },
   {
    "id": "IMG_2526.jpg",
-   "label": "IMG_2526",
+   "label": "Dali car park looking north: hedge-covered fence, white kerb and parked cars",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2526.jpg",
@@ -24800,8 +25099,12 @@
    "areas": [
     "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "view"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -24864,7 +25167,7 @@
   },
   {
    "id": "IMG_2537.jpg",
-   "label": "IMG_2537",
+   "label": "House entrance porch with arched door numbered 22 and patterned tile floor",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2537.jpg",
@@ -24872,13 +25175,16 @@
    "image": "photos-ref/IMG_2537.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2537.jpg",
    "areas": [
-    "elena",
-    "cervantes"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "GPS is only +/-19 m and altitude 10.5 m, but the picture is eye-level in a porch (floor at feet): treat as ground. Same lion-tile mat as IMG_2523, so likely the Elena covered walkway/north-end entrances; exact door not identified.",
    "camera": {
     "x": -152.7,
     "z": 48.2,
@@ -24952,7 +25258,7 @@
   },
   {
    "id": "IMG_2538.jpg",
-   "label": "IMG_2538",
+   "label": "Elena covered walkway looking out of its east portal to the lane, plaque CALLE ELENA 18 36",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2538.jpg",
@@ -24960,13 +25266,17 @@
    "image": "photos-ref/IMG_2538.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2538.jpg",
    "areas": [
-    "elena",
-    "cervantes"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "GPS only +/-16.7 m and phone altitude 10.5 m, but the floor is at the camera's feet so ground. Pin is unreliable; the position inside the walkway is read from the picture (plaque, steps, ramp), as in IMG_2203.",
    "camera": {
     "x": -152.5,
     "z": 48.2,
@@ -24975,12 +25285,12 @@
     "altitude": 10.5,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "East portal of the Elena covered walkway looking out to the lane",
    "looksAt": [
-    -148.3,
-    44.0
+    -153.0,
+    40.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2538.jpg",
@@ -25142,7 +25452,7 @@
   },
   {
    "id": "IMG_2540.jpg",
-   "label": "IMG_2540",
+   "label": "Cervantes/Elena junction: steps beside the ramp, kerbs and drain",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2540.jpg",
@@ -25153,10 +25463,15 @@
     "cervantes",
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin GPS +/-14 m; heading 245 matches the direction of the steps in data/cervantes_elena_steps.json.",
    "camera": {
     "x": -151.0,
     "z": 55.7,
@@ -25165,12 +25480,12 @@
     "altitude": 7.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "The steps beside the Cervantes ramp",
    "looksAt": [
-    -156.4,
-    58.2
+    -153.9,
+    57.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2540.jpg",
@@ -25234,7 +25549,7 @@
   },
   {
    "id": "IMG_2541.jpg",
-   "label": "IMG_2541",
+   "label": "Cervantes inner walk-through: arch signed CALLE MIGUEL, benches, pebble mat",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2541.jpg",
@@ -25244,10 +25559,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "signage",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +/-4.7 m on the Cervantes street line; bearing from this pin to IMG_2547 (about 150 degrees) agrees with the photo headings, so this is the north end of the same inner passage. Reading the sign as Miguel de Cervantes is interpretation, as for IMG_2288.",
    "camera": {
     "x": -170.6,
     "z": 65.2,
@@ -25256,12 +25576,12 @@
     "altitude": 6.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Cervantes-side entrance of the inner walk-through",
    "looksAt": [
-    -168.5,
-    70.8
+    -169.0,
+    70.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2541.jpg",
@@ -25312,7 +25632,7 @@
   },
   {
    "id": "IMG_2542.jpg",
-   "label": "IMG_2542",
+   "label": "Cervantes inner walk-through: pebble mosaic and blue-and-white inset tiles",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2542.jpg",
@@ -25322,8 +25642,12 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -25334,12 +25658,12 @@
     "altitude": 7.0,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Pebble mosaic panel in the walk-through entrance",
    "looksAt": [
-    -167.5,
-    71.0
+    -165.0,
+    73.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2542.jpg",
@@ -25390,7 +25714,7 @@
   },
   {
    "id": "IMG_2543.jpg",
-   "label": "IMG_2543",
+   "label": "Inner walk-through looking south-east through a round arch",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2543.jpg",
@@ -25400,10 +25724,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +/-6.2 m is inside the block south of Cervantes; same inner passage as IMG_2541, just beyond its covered entrance.",
    "camera": {
     "x": -165.4,
     "z": 70.5,
@@ -25463,7 +25792,7 @@
   },
   {
    "id": "IMG_2544.jpg",
-   "label": "IMG_2544",
+   "label": "Inner walk-through lane: white houses, bougainvillea and a far arch",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2544.jpg",
@@ -25473,10 +25802,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +/-6.2 m.",
    "camera": {
     "x": -165.4,
     "z": 70.5,
@@ -25536,7 +25870,7 @@
   },
   {
    "id": "IMG_2545.jpg",
-   "label": "IMG_2545",
+   "label": "Inner walk-through bend: white walls, planter box, drain grating and manhole",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2545.jpg",
@@ -25546,10 +25880,15 @@
    "areas": [
     "cervantes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 124 differs from the 147-150 of the other passage photos, so this is probably a bend or branch in the inner walk-through; pin +/-4.5 m.",
    "camera": {
     "x": -164.2,
     "z": 82.9,
@@ -25598,7 +25937,7 @@
   },
   {
    "id": "IMG_2546.jpg",
-   "label": "IMG_2546",
+   "label": "Inner walk-through south end: lantern arch, monstera planting and inset tiles",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2546.jpg",
@@ -25606,12 +25945,17 @@
    "image": "photos-ref/IMG_2546.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2546.jpg",
    "areas": [
-    "middle-pool"
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is +/-4.6 m in the block between Dali and the middle pool; area attribution (eva/south end) is inferred from the continuing bearing toward the Eva corner.",
    "camera": {
     "x": -155.4,
     "z": 90.9,
@@ -25665,7 +26009,7 @@
   },
   {
    "id": "IMG_2547.jpg",
-   "label": "IMG_2547",
+   "label": "Inner walk-through covered section: double doors, pebble mat and tile inset floor",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2547.jpg",
@@ -25673,12 +26017,16 @@
    "image": "photos-ref/IMG_2547.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2547.jpg",
    "areas": [
-    "middle-pool"
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +/-4.5 m in the block between Dali and the middle pool; exit toward Eva is inferred from the bearing, not seen.",
    "camera": {
     "x": -153.7,
     "z": 94.6,
@@ -25732,7 +26080,7 @@
   },
   {
    "id": "IMG_2548.jpg",
-   "label": "IMG_2548",
+   "label": "Covered tiled passage off Calle Eva with brown double door and potted trees",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2548.jpg",
@@ -25740,12 +26088,16 @@
    "image": "photos-ref/IMG_2548.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2548.jpg",
    "areas": [
-    "middle-pool"
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Looks like the same type of passage as IMG_2249/2250 (also off Calle Eva). Pin is inside the block, so which passage it is cannot be confirmed from the picture; heading 147 runs towards Calle Eva.",
    "camera": {
     "x": -153.7,
     "z": 94.6,
@@ -25871,7 +26223,7 @@
   },
   {
    "id": "IMG_2550.jpg",
-   "label": "IMG_2550",
+   "label": "Arched timber double gate in a white wall, Calle Eva/Dali corner",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2550.jpg",
@@ -25881,10 +26233,14 @@
    "areas": [
     "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which house this gate belongs to is not established; looksAt is about 4 m along the heading from the pin and is approximate.",
    "camera": {
     "x": -153.2,
     "z": 111.6,
@@ -25893,12 +26249,12 @@
     "altitude": 6.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Arched brown timber double gate in white wall",
    "looksAt": [
-    -154.1,
-    117.5
+    -153.8,
+    115.6
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2550.jpg",
@@ -25939,7 +26295,7 @@
   },
   {
    "id": "IMG_2551.jpg",
-   "label": "IMG_2551",
+   "label": "Calle Eva west footpath at the Dali end, terracotta path beside a lawn island",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2551.jpg",
@@ -25947,12 +26303,18 @@
    "image": "photos-ref/IMG_2551.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2551.jpg",
    "areas": [
-    "eva"
+    "eva",
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "signage",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is at the Eva/Dali junction.",
    "camera": {
     "x": -154.7,
     "z": 113.8,
@@ -26001,7 +26363,7 @@
   },
   {
    "id": "IMG_2552.jpg",
-   "label": "IMG_2552",
+   "label": "Curved kerbed footpath meeting the Dali car park aisle",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2552.jpg",
@@ -26009,10 +26371,15 @@
    "image": "photos-ref/IMG_2552.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2552.jpg",
    "areas": [
-    "eva"
+    "eva",
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "levels"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -26063,7 +26430,7 @@
   },
   {
    "id": "IMG_2553.jpg",
-   "label": "IMG_2553",
+   "label": "Calle Eva west footpath looking east between white houses and a planted bed",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2553.jpg",
@@ -26071,11 +26438,15 @@
    "image": "photos-ref/IMG_2553.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2553.jpg",
    "areas": [
-    "eva",
-    "dali"
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -26138,7 +26509,7 @@
   },
   {
    "id": "IMG_2554.jpg",
-   "label": "IMG_2554",
+   "label": "Dali car park looking north with CCTV lamp post and parked cars",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2554.jpg",
@@ -26146,13 +26517,16 @@
    "image": "photos-ref/IMG_2554.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2554.jpg",
    "areas": [
-    "dali",
-    "eva"
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is at the Dali/Eva corner.",
    "camera": {
     "x": -168.6,
     "z": 121.8,
@@ -26230,7 +26604,7 @@
   },
   {
    "id": "IMG_2555.jpg",
-   "label": "IMG_2555",
+   "label": "Dali car park edge with lawn islands and white house with brown gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2555.jpg",
@@ -26241,8 +26615,12 @@
     "dali",
     "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "layout"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -26327,7 +26705,7 @@
   },
   {
    "id": "IMG_2556.jpg",
-   "label": "IMG_2556",
+   "label": "Footpath along the west side of the block, house with grilled windows",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2556.jpg",
@@ -26335,13 +26713,18 @@
    "image": "photos-ref/IMG_2556.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2556.jpg",
    "areas": [
-    "eva",
-    "dali"
+    "dali",
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on the Dali road edge; the footpath is the Calle Eva west-side footpath.",
    "camera": {
     "x": -165.9,
     "z": 128.6,
@@ -26413,7 +26796,7 @@
   },
   {
    "id": "IMG_2557.jpg",
-   "label": "IMG_2557",
+   "label": "Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2557.jpg",
@@ -26422,12 +26805,17 @@
    "thumbnail": "photos-ref/thumbs/IMG_2557.jpg",
    "areas": [
     "eva",
-    "dali"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "signage",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise).",
    "camera": {
     "x": -160.4,
     "z": 139.8,
@@ -26499,7 +26887,7 @@
   },
   {
    "id": "IMG_2558.jpg",
-   "label": "IMG_2558",
+   "label": "Terracotta footpath with kerbed planters leading to a brown gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2558.jpg",
@@ -26507,13 +26895,17 @@
    "image": "photos-ref/IMG_2558.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2558.jpg",
    "areas": [
-    "eva",
-    "dali"
+    "dali",
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise).",
    "camera": {
     "x": -158.9,
     "z": 142.6,
@@ -26679,7 +27071,7 @@
   },
   {
    "id": "IMG_2560.jpg",
-   "label": "IMG_2560",
+   "label": "Calle Patricia west end: narrow terracotta lane between high white walls",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2560.jpg",
@@ -26687,14 +27079,16 @@
    "image": "photos-ref/IMG_2560.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2560.jpg",
    "areas": [
-    "seaward-lanes",
-    "eva",
-    "dali"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Photo request 'patricia-west' is marked answered for this pin.",
    "camera": {
     "x": -149.2,
     "z": 153.4,
@@ -26771,7 +27165,7 @@
   },
   {
    "id": "IMG_2561.jpg",
-   "label": "IMG_2561",
+   "label": "Arched entrance of the Patricia covered passage with lanterns",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2561.jpg",
@@ -26781,8 +27175,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -26849,7 +27248,7 @@
   },
   {
    "id": "IMG_2562.jpg",
-   "label": "IMG_2562",
+   "label": "Arch marked 'CALLE DE PATRICIA' at the start of the covered passage",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2562.jpg",
@@ -26859,8 +27258,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "layout",
+    "facades",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -26927,7 +27331,7 @@
   },
   {
    "id": "IMG_2563.jpg",
-   "label": "IMG_2563",
+   "label": "Patricia covered passage with brown doors and a pebble mosaic mat",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2563.jpg",
@@ -26937,8 +27341,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -26988,7 +27396,7 @@
   },
   {
    "id": "IMG_2564.jpg",
-   "label": "IMG_2564",
+   "label": "Pebble mosaic with floral motif in the Patricia passage floor",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2564.jpg",
@@ -26998,8 +27406,11 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -27050,7 +27461,7 @@
   },
   {
    "id": "IMG_2565.jpg",
-   "label": "IMG_2565",
+   "label": "Patricia lane with planted beds, arched doors and a tiled-roof arch ahead",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2565.jpg",
@@ -27060,10 +27471,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Photo request 'patricia-west' is marked answered for this pin.",
    "camera": {
     "x": -135.5,
     "z": 155.5,
@@ -27122,7 +27538,7 @@
   },
   {
    "id": "IMG_2566.jpg",
-   "label": "IMG_2566",
+   "label": "Patricia lane columns, arch and bougainvillea",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2566.jpg",
@@ -27132,8 +27548,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -27194,7 +27615,7 @@
   },
   {
    "id": "IMG_2567.jpg",
-   "label": "IMG_2567",
+   "label": "Patricia lane arch with tiled eave, shutters and bougainvillea (looking up)",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2567.jpg",
@@ -27204,8 +27625,11 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -27266,7 +27690,7 @@
   },
   {
    "id": "IMG_2568.jpg",
-   "label": "IMG_2568",
+   "label": "Patricia passage: arch, doors, grilles and a green-netted garden beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2568.jpg",
@@ -27276,8 +27700,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -27338,7 +27767,7 @@
   },
   {
    "id": "IMG_2569.jpg",
-   "label": "IMG_2569",
+   "label": "Last arch of the Patricia passage with pebble mat and ramp to a lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2569.jpg",
@@ -27348,8 +27777,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "levels",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -27410,7 +27844,7 @@
   },
   {
    "id": "IMG_2570.jpg",
-   "label": "IMG_2570",
+   "label": "Passage exit with tiled steps, red ramp mat and white planter walls",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2570.jpg",
@@ -27420,10 +27854,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is approximate: steps estimated about 5 m ahead along the heading.",
    "camera": {
     "x": -110.7,
     "z": 150.3,
@@ -27432,12 +27870,12 @@
     "altitude": 7.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Tiled steps and red ramp mat at passage exit",
    "looksAt": [
-    -105.6,
-    147.2
+    -106.4,
+    147.7
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2570.jpg",
@@ -27488,7 +27926,7 @@
   },
   {
    "id": "IMG_2571.jpg",
-   "label": "IMG_2571",
+   "label": "Garden bed with oleander beside the passage exit, from behind a white pier",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2571.jpg",
@@ -27498,8 +27936,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "layout",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -27647,7 +28089,7 @@
   },
   {
    "id": "IMG_2573.jpg",
-   "label": "IMG_2573",
+   "label": "Oleander hedge, lawn and white townhouse with balcony beside the path",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2573.jpg",
@@ -27657,10 +28099,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "The sheet shows many photo pins crowded at this spot, so this pin is only a rough guess.",
    "camera": {
     "x": -101.2,
     "z": 148.7,
@@ -27725,7 +28171,7 @@
   },
   {
    "id": "IMG_2574.jpg",
-   "label": "IMG_2574",
+   "label": "Tiled steps and red studded ramp at the passage exit, planter wall to the right",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2574.jpg",
@@ -27735,10 +28181,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt approximate (about 3 m from the pin).",
    "camera": {
     "x": -101.7,
     "z": 148.7,
@@ -27747,12 +28198,12 @@
     "altitude": 6.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Three-step tiled flight with red ramp",
    "looksAt": [
-    -107.4,
-    146.9
+    -104.6,
+    147.8
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2574.jpg",
@@ -27803,7 +28254,7 @@
   },
   {
    "id": "IMG_2575.jpg",
-   "label": "IMG_2575",
+   "label": "Steps, ramp and planter wall seen from the Silvia lane side",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2575.jpg",
@@ -27813,10 +28264,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "layout",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt approximate (about 3 m from the pin).",
    "camera": {
     "x": -102.2,
     "z": 148.1,
@@ -27825,12 +28280,12 @@
     "altitude": 7.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Flight of three steps beside red ramp",
    "looksAt": [
-    -107.4,
-    145.2
+    -104.8,
+    146.6
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2575.jpg",
@@ -27881,7 +28336,7 @@
   },
   {
    "id": "IMG_2576.jpg",
-   "label": "IMG_2576",
+   "label": "Narrow lane to an open iron gate and the grass at the end, between oleander and planter",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2576.jpg",
@@ -27889,12 +28344,17 @@
    "image": "photos-ref/IMG_2576.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2576.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "signage",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which pool lies beyond the gate is not confirmed; the lawn with a lifebuoy suggests the south pool, but this is not proven. looksAt is about 14 m ahead.",
    "camera": {
     "x": -102.2,
     "z": 149.0,
@@ -27903,12 +28363,12 @@
     "altitude": 7.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Open iron gate at the end of the lane",
    "looksAt": [
-    -99.1,
-    154.1
+    -94.7,
+    161.1
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2576.jpg",
@@ -27959,7 +28419,7 @@
   },
   {
    "id": "IMG_2577.jpg",
-   "label": "IMG_2577",
+   "label": "Iron gate with notices at the end of the lane, planted wall on the right",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2577.jpg",
@@ -27967,12 +28427,17 @@
    "image": "photos-ref/IMG_2577.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2577.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same gate as IMG_2576. Beyond-gate lawn assumed to be the pool lawn; not confirmed. looksAt is about 14 m ahead along the heading.",
    "camera": {
     "x": -100.7,
     "z": 151.5,
@@ -27981,12 +28446,12 @@
     "altitude": 7.4,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Open iron gate with notices at lane end",
    "looksAt": [
-    -97.7,
-    156.7
+    -93.7,
+    163.6
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2577.jpg",
@@ -28032,7 +28497,7 @@
   },
   {
    "id": "IMG_2578.jpg",
-   "label": "IMG_2578",
+   "label": "Calle Teodoro Rojo/Silvia lane: terracotta path beside a white wall with grilles",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2578.jpg",
@@ -28042,10 +28507,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Lane name not read from a sign; area under pin is seaward-lanes, near the Silvia/Teodoro Rojo corner.",
    "camera": {
     "x": -64.7,
     "z": 147.2,
@@ -28117,7 +28587,7 @@
   },
   {
    "id": "IMG_2579.jpg",
-   "label": "IMG_2579",
+   "label": "Tiled lane with white planter walls and barred windows, looking ENE",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2579.jpg",
@@ -28127,10 +28597,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Camera is at the Teodoro Rojo / Patricia junction; the lane is read as the Teodoro Rojo run towards IMG_2595 from the aerial, not from a sign.",
    "camera": {
     "x": -61.9,
     "z": 144.4,
@@ -28202,7 +28676,7 @@
   },
   {
    "id": "IMG_2580.jpg",
-   "label": "IMG_2580",
+   "label": "Narrow tiled lane between white houses, planters and an iron gate at the end",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2580.jpg",
@@ -28212,10 +28686,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on the lawn corner next to Teodoro Rojo; the lane runs SSE along the Patricia line from the aerial.",
    "camera": {
     "x": -54.5,
     "z": 143.5,
@@ -28281,7 +28760,7 @@
   },
   {
    "id": "IMG_2581.jpg",
-   "label": "IMG_2581",
+   "label": "Arched porch entrance with three tiled steps and a street-name plaque",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2581.jpg",
@@ -28291,10 +28770,16 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "signage",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Plaque is only partly legible; 'T' suggests Teodoro Rojo but this is not confirmed.",
    "camera": {
     "x": -52.5,
     "z": 150.6,
@@ -28350,7 +28835,7 @@
   },
   {
    "id": "IMG_2582.jpg",
-   "label": "IMG_2582",
+   "label": "Covered passage with brown doors, patterned tile floor and a courtyard arch beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2582.jpg",
@@ -28360,10 +28845,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which passage this is (compare IMG_2186/2190/2191 Calle Silvia passage) is not established; pin has +/-4.7 m accuracy.",
    "camera": {
     "x": -51.0,
     "z": 154.6,
@@ -28422,7 +28912,7 @@
   },
   {
    "id": "IMG_2583.jpg",
-   "label": "IMG_2583",
+   "label": "Courtyard seen through an arch: bougainvillea, balconies and patterned tile floor",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2583.jpg",
@@ -28432,10 +28922,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin accuracy is poor (+/-9.7 m), so the courtyard position is approximate.",
    "camera": {
     "x": -55.2,
     "z": 152.8,
@@ -28507,7 +29002,7 @@
   },
   {
    "id": "IMG_2584.jpg",
-   "label": "IMG_2584",
+   "label": "Covered passage with hanging lanterns and an arched iron gate to a lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2584.jpg",
@@ -28515,12 +29010,17 @@
    "image": "photos-ref/IMG_2584.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2584.jpg",
    "areas": [
-    "south-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same spot as IMG_2585 looking the opposite way. Possibly the same passage type as IMG_2186/2190 (Calle Silvia) but identity unconfirmed.",
    "camera": {
     "x": -69.1,
     "z": 170.7,
@@ -28562,7 +29062,7 @@
   },
   {
    "id": "IMG_2585.jpg",
-   "label": "IMG_2585",
+   "label": "Covered passage looking NNW to an arch and courtyard",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2585.jpg",
@@ -28570,12 +29070,16 @@
    "image": "photos-ref/IMG_2585.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2585.jpg",
    "areas": [
-    "south-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Reverse view of IMG_2584 (pin about 0.5 m apart).",
    "camera": {
     "x": -69.6,
     "z": 171.0,
@@ -28709,7 +29213,7 @@
   },
   {
    "id": "IMG_2587.jpg",
-   "label": "IMG_2587",
+   "label": "Tile floor with blue-and-white crest inserts between raised white planters",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2587.jpg",
@@ -28719,8 +29223,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -28781,7 +29289,7 @@
   },
   {
    "id": "IMG_2588.jpg",
-   "label": "IMG_2588",
+   "label": "Tiled courtyard with raised planters and an arched covered entrance",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2588.jpg",
@@ -28791,8 +29299,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -28852,7 +29365,7 @@
   },
   {
    "id": "IMG_2589.jpg",
-   "label": "IMG_2589",
+   "label": "Arched porch with potted plants, drain grating and double door",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2589.jpg",
@@ -28862,8 +29375,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "layout"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -28923,7 +29440,7 @@
   },
   {
    "id": "IMG_2590.jpg",
-   "label": "IMG_2590",
+   "label": "Covered porch with arch, pale double door and hanging lantern",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2590.jpg",
@@ -28933,8 +29450,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "layout"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -28994,7 +29515,7 @@
   },
   {
    "id": "IMG_2591.jpg",
-   "label": "IMG_2591",
+   "label": "Covered passage with brown double doors and a doormat, arch to a white wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2591.jpg",
@@ -29004,10 +29525,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin has about 3 m accuracy and four shots (2589-2592) are within a few metres; which passage is not established.",
    "camera": {
     "x": -58.4,
     "z": 161.4,
@@ -29066,7 +29591,7 @@
   },
   {
    "id": "IMG_2592.jpg",
-   "label": "IMG_2592",
+   "label": "View out of an arch to a small white court with a ribbed ramp and step",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2592.jpg",
@@ -29076,8 +29601,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -29138,7 +29668,7 @@
   },
   {
    "id": "IMG_2593.jpg",
-   "label": "IMG_2593",
+   "label": "Narrow tiled lane between white walls, looking NNW",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2593.jpg",
@@ -29148,10 +29678,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Lane read as the Patricia line from the aerial; no street sign is visible.",
    "camera": {
     "x": -51.7,
     "z": 156.2,
@@ -29209,7 +29744,7 @@
   },
   {
    "id": "IMG_2594.jpg",
-   "label": "IMG_2594",
+   "label": "Lane between white houses with lamp post, yucca palm and Norfolk pine, looking NNW",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2594.jpg",
@@ -29219,10 +29754,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Nearly the same shot as IMG_2593.",
    "camera": {
     "x": -53.2,
     "z": 154.9,
@@ -29280,7 +29820,7 @@
   },
   {
    "id": "IMG_2595.jpg",
-   "label": "IMG_2595",
+   "label": "Tiled path along lawns towards white houses with chimneys, looking ENE",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2595.jpg",
@@ -29288,12 +29828,19 @@
    "image": "photos-ref/IMG_2595.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2595.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "whole-resort"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "view",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Camera is at the Teodoro Rojo / Patricia corner; view runs along Teodoro Rojo.",
    "camera": {
     "x": -56.2,
     "z": 145.3,
@@ -29364,7 +29911,7 @@
   },
   {
    "id": "IMG_2596.jpg",
-   "label": "IMG_2596",
+   "label": "White tiled bench, cast manhole covers and terracotta paving",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2596.jpg",
@@ -29374,10 +29921,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Appears to be the white bench seen in IMG_2182.",
    "camera": {
     "x": -38.1,
     "z": 135.1,
@@ -29386,12 +29937,12 @@
     "altitude": 5.5,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "white tiled bench and manhole covers",
    "looksAt": [
-    -35.4,
-    129.8
+    -36.5,
+    132.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2596.jpg",
@@ -29437,7 +29988,7 @@
   },
   {
    "id": "IMG_2597.jpg",
-   "label": "IMG_2597",
+   "label": "Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2597.jpg",
@@ -29446,12 +29997,18 @@
    "thumbnail": "photos-ref/thumbs/IMG_2597.jpg",
    "areas": [
     "seaward-lanes",
-    "main-pool"
+    "main-pool",
+    "whole-resort"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "view",
+    "layout",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is a rough 6 m estimate along the heading, not measured.",
    "camera": {
     "x": -26.4,
     "z": 127.7,
@@ -29460,12 +30017,12 @@
     "altitude": 5.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Calle de Jorge sign post",
    "looksAt": [
-    -23.0,
-    122.8
+    -23.5,
+    123.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2597.jpg",
@@ -29500,7 +30057,7 @@
   },
   {
    "id": "IMG_2598.jpg",
-   "label": "IMG_2598",
+   "label": "Lawn and flowering lantana border looking east to the Barraka restaurant",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2598.jpg",
@@ -29508,13 +30065,18 @@
    "image": "photos-ref/IMG_2598.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2598.jpg",
    "areas": [
-    "seaward-lanes",
-    "main-pool"
+    "main-pool",
+    "barraka-beach",
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "view",
+    "planting",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Building identified as Barraka from the matching view in IMG_2604; looksAt reused from IMG_2482.",
    "camera": {
     "x": -17.9,
     "z": 125.2,
@@ -29523,12 +30085,12 @@
     "altitude": 5.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Barraka beach restaurant",
    "looksAt": [
-    -12.0,
-    124.0
+    28.8,
+    110.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2598.jpg",
@@ -29569,7 +30131,7 @@
   },
   {
    "id": "IMG_2599.jpg",
-   "label": "IMG_2599",
+   "label": "Curved white-walled tiled descent at the foot of the lane to the beach fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2599.jpg",
@@ -29577,12 +30139,19 @@
    "image": "photos-ref/IMG_2599.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2599.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "barraka-beach",
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Foot of Calle Guillermo area, close to IMG_2600/2601.",
    "camera": {
     "x": -13.4,
     "z": 130.8,
@@ -29705,7 +30274,7 @@
   },
   {
    "id": "IMG_2601.jpg",
-   "label": "IMG_2601",
+   "label": "Tiled landing at the foot of the lane with hedge and green fence to the beach",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2601.jpg",
@@ -29714,12 +30283,18 @@
    "thumbnail": "photos-ref/thumbs/IMG_2601.jpg",
    "areas": [
     "seaward-lanes",
+    "barraka-beach",
     "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "view",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Foot of Calle Guillermo. Tile joints change to a fan pattern at the far left.",
    "camera": {
     "x": -10.7,
     "z": 134.2,
@@ -29774,7 +30349,7 @@
   },
   {
    "id": "IMG_2602.jpg",
-   "label": "IMG_2602",
+   "label": "Arched white gate pillar with iron gate, signs and bollard light at the lawn corner",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2602.jpg",
@@ -29782,13 +30357,19 @@
    "image": "photos-ref/IMG_2602.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2602.jpg",
    "areas": [
+    "main-pool",
     "paseo",
-    "seaward-lanes"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is a rough estimate of the gate position from the aerial (not measured).",
    "camera": {
     "x": -7.5,
     "z": 135.1,
@@ -29797,12 +30378,12 @@
     "altitude": 4.8,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "coastal lawn gate pier and iron gate",
    "looksAt": [
-    -2.9,
-    131.2
+    -3.0,
+    128.0
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2602.jpg",
@@ -29849,7 +30430,7 @@
   },
   {
    "id": "IMG_2603.jpg",
-   "label": "IMG_2603",
+   "label": "Pink lawn path with bollard lights and a pool-side white curved-roof building",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2603.jpg",
@@ -29857,12 +30438,18 @@
    "image": "photos-ref/IMG_2603.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2603.jpg",
    "areas": [
+    "main-pool",
     "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "view",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which pool-side building this is (Bistro Enrique's or 90 Miles) is not confirmed from the image.",
    "camera": {
     "x": -4.7,
     "z": 132.3,
@@ -29911,7 +30498,7 @@
   },
   {
    "id": "IMG_2604.jpg",
-   "label": "IMG_2604",
+   "label": "Paseo past the Barraka restaurant with lamp post and lounge seating",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2604.jpg",
@@ -29919,10 +30506,16 @@
    "image": "photos-ref/IMG_2604.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2604.jpg",
    "areas": [
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "view",
+    "facades",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -29933,12 +30526,12 @@
     "altitude": 5.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Barraka beach restaurant",
    "looksAt": [
-    3.4,
-    128.0
+    28.8,
+    110.5
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2604.jpg",
@@ -29979,7 +30572,7 @@
   },
   {
    "id": "IMG_2605.jpg",
-   "label": "IMG_2605",
+   "label": "View through the Barraka terrace rail to beach parasols and palms",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2605.jpg",
@@ -29989,10 +30582,14 @@
    "areas": [
     "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "view",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on the beach side of the restaurant building footprint.",
    "camera": {
     "x": 36.3,
     "z": 120.9,
@@ -30047,7 +30644,7 @@
   },
   {
    "id": "IMG_2606.jpg",
-   "label": "IMG_2606",
+   "label": "Barraka terrace looking ESE over the beach, parasols and boardwalk",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2606.jpg",
@@ -30057,8 +30654,11 @@
    "areas": [
     "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "view",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -30115,7 +30715,7 @@
   },
   {
    "id": "IMG_2607.jpg",
-   "label": "IMG_2607",
+   "label": "From the Barraka terrace over rattan lounge seating and the paseo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2607.jpg",
@@ -30125,12 +30725,16 @@
    "areas": [
     "paseo",
     "barraka-beach",
-    "main-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "view",
+    "layout",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera.",
    "camera": {
     "x": 10.7,
     "z": 116.0,
@@ -30202,7 +30806,7 @@
   },
   {
    "id": "IMG_2608.jpg",
-   "label": "IMG_2608",
+   "label": "From the Barraka terrace looking SW along the paseo to the white houses",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2608.jpg",
@@ -30212,12 +30816,17 @@
    "areas": [
     "paseo",
     "barraka-beach",
-    "main-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "view",
+    "facades",
+    "layout",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace.",
    "camera": {
     "x": 13.4,
     "z": 114.7,
@@ -30289,7 +30898,7 @@
   },
   {
    "id": "IMG_2609.jpg",
-   "label": "IMG_2609",
+   "label": "Barraka beach-side lounge garden looking south-west along the paseo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2609.jpg",
@@ -30297,14 +30906,19 @@
    "image": "photos-ref/IMG_2609.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2609.jpg",
    "areas": [
-    "paseo",
     "barraka-beach",
+    "paseo",
     "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "GPS +-12 m puts the pin on the lawn corner; the awnings and deck show the camera stood on Barraka's own terrace near its west corner. looksAt is read by eye from this photo and IMG_2631 (two bearings meet near [12,120]), not measured.",
    "camera": {
     "x": 12.7,
     "z": 112.6,
@@ -30313,12 +30927,12 @@
     "altitude": 4.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Roped rattan lounge set on the beach-side verge",
    "looksAt": [
-    8.4,
-    116.8
+    12,
+    120
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2609.jpg",
@@ -30376,7 +30990,7 @@
   },
   {
    "id": "IMG_2610.jpg",
-   "label": "IMG_2610",
+   "label": "Barraka terrace paving, slot drain and curved sandstone wall under green railings",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2610.jpg",
@@ -30385,12 +30999,17 @@
    "thumbnail": "photos-ref/thumbs/IMG_2610.jpg",
    "areas": [
     "barraka-beach",
-    "paseo"
+    "paseo",
+    "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +-4 m sits at Barraka's west corner; looksAt is a by-eye estimate of the curved wall about 8 m away.",
    "camera": {
     "x": 21.9,
     "z": 112.6,
@@ -30399,12 +31018,12 @@
     "altitude": 5.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Curved sandstone wall and green railing at Barraka's west corner",
    "looksAt": [
-    18.5,
-    107.6
+    17,
+    106
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2610.jpg",
@@ -30462,7 +31081,7 @@
   },
   {
    "id": "IMG_2611.jpg",
-   "label": "IMG_2611",
+   "label": "Paseo lane beside Barraka's north-west wall looking north-east",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2611.jpg",
@@ -30474,10 +31093,15 @@
     "barraka-beach",
     "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature.",
    "camera": {
     "x": 20.6,
     "z": 106.7,
@@ -30543,7 +31167,7 @@
   },
   {
    "id": "IMG_2612.jpg",
-   "label": "IMG_2612",
+   "label": "Junction at Barraka's north corner: stone planter bed, bollard and Lisa's Shop sign",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2612.jpg",
@@ -30554,10 +31178,14 @@
     "paseo",
     "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "The brick building, sign and planter lie outside the catalogued Villacana areas (neighbouring property); black sheeting and stone blocks at left are temporary.",
    "camera": {
     "x": 26.1,
     "z": 101.4,
@@ -30634,7 +31262,7 @@
   },
   {
    "id": "IMG_2613.jpg",
-   "label": "IMG_2613",
+   "label": "Service lane between the main-pool lawn walls and the neighbouring building, looking north-west",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2613.jpg",
@@ -30642,13 +31270,17 @@
    "image": "photos-ref/IMG_2613.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2613.jpg",
    "areas": [
-    "paseo",
-    "barraka-beach"
+    "main-pool",
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary.",
    "camera": {
     "x": 31.1,
     "z": 97.7,
@@ -30725,7 +31357,7 @@
   },
   {
    "id": "IMG_2614.jpg",
-   "label": "IMG_2614",
+   "label": "Seaward aisle beside Barraka's north-east wall with strelitzia pots and stacked sunloungers",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2614.jpg",
@@ -30733,13 +31365,16 @@
    "image": "photos-ref/IMG_2614.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2614.jpg",
    "areas": [
-    "paseo",
     "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is a by-eye estimate about 10 m along the heading; the aisle matches the Barraka boardwalk of IMG_2346/2347.",
    "camera": {
     "x": 32.1,
     "z": 96.8,
@@ -30748,12 +31383,12 @@
     "altitude": 6.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Seaward aisle and pots beside Barraka",
    "looksAt": [
-    36.6,
-    100.8
+    40,
+    104
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2614.jpg",
@@ -30800,7 +31435,7 @@
   },
   {
    "id": "IMG_2615.jpg",
-   "label": "IMG_2615",
+   "label": "Barraka north-east elevation with brown-framed windows, timber band and black door",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2615.jpg",
@@ -30808,13 +31443,15 @@
    "image": "photos-ref/IMG_2615.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2615.jpg",
    "areas": [
-    "paseo",
     "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +-4.7 m; looksAt by eye along the wall.",
    "camera": {
     "x": 33.1,
     "z": 96.8,
@@ -30823,12 +31460,12 @@
     "altitude": 6.0,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Barraka north-east wall",
    "looksAt": [
-    34.3,
-    102.7
+    34,
+    107
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2615.jpg",
@@ -30953,7 +31590,7 @@
   },
   {
    "id": "IMG_2617.jpg",
-   "label": "IMG_2617",
+   "label": "Beach east of Barraka with parasols and sunloungers",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2617.jpg",
@@ -30961,13 +31598,15 @@
    "image": "photos-ref/IMG_2617.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2617.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "No fixed structure visible; general beach condition.",
    "camera": {
     "x": 43.0,
     "z": 92.1,
@@ -31022,7 +31661,7 @@
   },
   {
    "id": "IMG_2618.jpg",
-   "label": "IMG_2618",
+   "label": "Barraka's north-east facade seen from the beach side of the paseo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2618.jpg",
@@ -31033,10 +31672,15 @@
     "barraka-beach",
     "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "layout",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is the building centre taken from the aerial outline (consistent with IMG_2482 looksAt [28.8,110.5]).",
    "camera": {
     "x": 46.0,
     "z": 89.1,
@@ -31045,12 +31689,12 @@
     "altitude": 6.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Barraka restaurant, north-east and north-west faces",
    "looksAt": [
-    42.1,
-    93.6
+    29,
+    110
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2618.jpg",
@@ -31097,7 +31741,7 @@
   },
   {
    "id": "IMG_2619.jpg",
-   "label": "IMG_2619",
+   "label": "Barraka thatched cooking shelter, net-covered mound and kayaks on the sand",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2619.jpg",
@@ -31105,13 +31749,16 @@
    "image": "photos-ref/IMG_2619.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2619.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is a by-eye estimate about 15 m along the heading from a +-2 m pin; shelter position is not measured.",
    "camera": {
     "x": 46.0,
     "z": 88.7,
@@ -31120,12 +31767,12 @@
     "altitude": 7.1,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Thatched cooking shelter and net-covered mound",
    "looksAt": [
-    44.8,
-    94.6
+    43,
+    104
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2619.jpg",
@@ -31172,7 +31819,7 @@
   },
   {
    "id": "IMG_2620.jpg",
-   "label": "IMG_2620",
+   "label": "Beach in front of Barraka with parasol rows and kayaks",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2620.jpg",
@@ -31180,13 +31827,16 @@
    "image": "photos-ref/IMG_2620.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2620.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "view",
+    "layout",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Parasol rows are seasonal furniture; positions not measured.",
    "camera": {
     "x": 46.8,
     "z": 89.1,
@@ -31241,7 +31891,7 @@
   },
   {
    "id": "IMG_2621.jpg",
-   "label": "IMG_2621",
+   "label": "Paseo looking north-east past the sandstone wall and beach edge",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2621.jpg",
@@ -31249,13 +31899,17 @@
    "image": "photos-ref/IMG_2621.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2621.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "The fenced garden at left is outside the catalogued Villacana areas (neighbouring property).",
    "camera": {
     "x": 49.5,
     "z": 86.6,
@@ -31310,7 +31964,7 @@
   },
   {
    "id": "IMG_2622.jpg",
-   "label": "IMG_2622",
+   "label": "Paseo north-east of Barraka with white cottage behind chain-link fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2622.jpg",
@@ -31318,13 +31972,17 @@
    "image": "photos-ref/IMG_2622.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2622.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "view",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Cottage lies outside the catalogued Villacana areas.",
    "camera": {
     "x": 50.2,
     "z": 85.0,
@@ -31379,7 +32037,7 @@
   },
   {
    "id": "IMG_2623.jpg",
-   "label": "IMG_2623",
+   "label": "Closed building with canopy roof and empty forecourt behind chain-link fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2623.jpg",
@@ -31387,13 +32045,16 @@
    "image": "photos-ref/IMG_2623.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2623.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "layout",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Neighbouring disused-looking building north-east of Barraka, outside the catalogued Villacana areas; exact identity not known.",
    "camera": {
     "x": 53.0,
     "z": 80.7,
@@ -31464,7 +32125,7 @@
   },
   {
    "id": "IMG_2624.jpg",
-   "label": "IMG_2624",
+   "label": "Disused glazed building with deep canopy and curved planter",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2624.jpg",
@@ -31472,13 +32133,16 @@
    "image": "photos-ref/IMG_2624.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2624.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "layout",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Neighbouring property outside the catalogued Villacana areas; not identified.",
    "camera": {
     "x": 54.0,
     "z": 79.8,
@@ -31544,7 +32208,7 @@
   },
   {
    "id": "IMG_2625.jpg",
-   "label": "IMG_2625",
+   "label": "Paseo looking south-west beside the sandstone wall and glazed building",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2625.jpg",
@@ -31552,13 +32216,17 @@
    "image": "photos-ref/IMG_2625.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2625.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on the paseo; the building is a neighbouring property outside the catalogued Villacana areas.",
    "camera": {
     "x": 59.7,
     "z": 73.6,
@@ -31629,7 +32297,7 @@
   },
   {
    "id": "IMG_2626.jpg",
-   "label": "IMG_2626",
+   "label": "Side of disused glazed building and forecourt with a three-storey hotel behind",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2626.jpg",
@@ -31637,13 +32305,15 @@
    "image": "photos-ref/IMG_2626.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2626.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Neighbouring property outside the catalogued Villacana areas; not identified.",
    "camera": {
     "x": 59.7,
     "z": 73.9,
@@ -31714,7 +32384,7 @@
   },
   {
    "id": "IMG_2627.jpg",
-   "label": "IMG_2627",
+   "label": "White single-storey cottage with green plinth and flagstone path behind chain link",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2627.jpg",
@@ -31722,13 +32392,16 @@
    "image": "photos-ref/IMG_2627.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2627.jpg",
    "areas": [
-    "barraka-beach",
-    "paseo"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Neighbouring property outside the catalogued Villacana areas; not identified.",
    "camera": {
     "x": 68.9,
     "z": 64.9,
@@ -31794,7 +32467,7 @@
   },
   {
    "id": "IMG_2628.jpg",
-   "label": "IMG_2628",
+   "label": "Paseo far north-east of Barraka towards lamp posts and palms",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2628.jpg",
@@ -31805,8 +32478,11 @@
     "paseo",
     "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "view"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -31957,7 +32633,7 @@
   },
   {
    "id": "IMG_2630.jpg",
-   "label": "IMG_2630",
+   "label": "Barraka's glazed north-west frontage with sandbags along the slot drain",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2630.jpg",
@@ -31965,13 +32641,19 @@
    "image": "photos-ref/IMG_2630.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2630.jpg",
    "areas": [
+    "barraka-beach",
     "paseo",
-    "barraka-beach"
+    "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "signage",
+    "materials",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin +-6.8 m is at the building corner; looksAt by eye. Sandbags are temporary.",
    "camera": {
     "x": 24.9,
     "z": 102.7,
@@ -31980,12 +32662,12 @@
     "altitude": 5.5,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Barraka north-west glazed frontage",
    "looksAt": [
-    20.5,
-    106.8
+    24,
+    107
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2630.jpg",
@@ -32032,7 +32714,7 @@
   },
   {
    "id": "IMG_2631.jpg",
-   "label": "IMG_2631",
+   "label": "Looking south-south-west from Barraka's awning across the roped lounge garden and paseo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2631.jpg",
@@ -32041,13 +32723,17 @@
    "thumbnail": "photos-ref/thumbs/IMG_2631.jpg",
    "areas": [
     "barraka-beach",
-    "paseo",
-    "main-pool"
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "looksAt is by eye (meets the IMG_2609 bearing near [12,120]); not measured.",
    "camera": {
     "x": 21.1,
     "z": 107.9,
@@ -32056,12 +32742,12 @@
     "altitude": 6.0,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "Roped rattan lounge set on the beach-side verge",
    "looksAt": [
-    18.5,
-    113.3
+    12,
+    120
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2631.jpg",
@@ -32114,7 +32800,7 @@
   },
   {
    "id": "IMG_2632.jpg",
-   "label": "IMG_2632",
+   "label": "West paseo curving south-west under the sandstone wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2632.jpg",
@@ -32124,10 +32810,15 @@
    "areas": [
     "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is in a numbered photo-request spot (11) on the aerial.",
    "camera": {
     "x": -15.2,
     "z": 147.2,
@@ -32187,7 +32878,7 @@
   },
   {
    "id": "IMG_2633.jpg",
-   "label": "IMG_2633",
+   "label": "West paseo bend with agave verge and timber edge",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2633.jpg",
@@ -32195,10 +32886,15 @@
    "image": "photos-ref/IMG_2633.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2633.jpg",
    "areas": [
-    "paseo"
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -32249,7 +32945,7 @@
   },
   {
    "id": "IMG_2634.jpg",
-   "label": "IMG_2634",
+   "label": "West paseo with agave verge, sandstone wall and white house in the distance",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2634.jpg",
@@ -32259,8 +32955,13 @@
    "areas": [
     "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "materials",
+    "view"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -32311,7 +33012,7 @@
   },
   {
    "id": "IMG_2635.jpg",
-   "label": "IMG_2635",
+   "label": "White seafront houses seen over the south-pool sandstone wall, fence and hedge",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2635.jpg",
@@ -32319,13 +33020,16 @@
    "image": "photos-ref/IMG_2635.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2635.jpg",
    "areas": [
-    "paseo",
     "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is poor (+-15.9 m) and sits on the pool/house block; the pink paving at the lower left shows the camera stood on the paseo looking inland over the wall, so the pin is suspect (likely a few metres seaward). Which houses are seen is not established.",
    "camera": {
     "x": -76.1,
     "z": 183.4,
@@ -32381,7 +33085,7 @@
   },
   {
    "id": "IMG_2636.jpg",
-   "label": "IMG_2636",
+   "label": "Paseo and sandstone wall with green shade cloth near Calle Pintor Dali",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2636.jpg",
@@ -32389,11 +33093,14 @@
    "image": "photos-ref/IMG_2636.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2636.jpg",
    "areas": [
-    "paseo",
-    "south-pool"
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -32444,7 +33151,7 @@
   },
   {
    "id": "IMG_2637.jpg",
-   "label": "IMG_2637",
+   "label": "Paseo end by the Calle Pintor Dali car park with hedge behind mesh fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2637.jpg",
@@ -32452,10 +33159,15 @@
    "image": "photos-ref/IMG_2637.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2637.jpg",
    "areas": [
-    "paseo"
+    "paseo",
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -32506,7 +33218,7 @@
   },
   {
    "id": "IMG_2638.jpg",
-   "label": "IMG_2638",
+   "label": "Paseo wall end and kerbed junction near Dali car park",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2638.jpg",
@@ -32514,10 +33226,15 @@
    "image": "photos-ref/IMG_2638.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2638.jpg",
    "areas": [
-    "paseo"
+    "paseo",
+    "dali"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -32568,7 +33285,7 @@
   },
   {
    "id": "IMG_2639.jpg",
-   "label": "IMG_2639",
+   "label": "Vaulted arcade with patterned tile floor, pebble mosaic and garden gate beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2639.jpg",
@@ -32576,13 +33293,18 @@
    "image": "photos-ref/IMG_2639.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2639.jpg",
    "areas": [
-    "paseo",
-    "dali"
+    "seaward-lanes",
+    "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved.",
    "camera": {
     "x": -105.5,
     "z": 217.1,
@@ -32638,7 +33360,7 @@
   },
   {
    "id": "IMG_2640.jpg",
-   "label": "IMG_2640",
+   "label": "Bougainvillea over a white arch, second arch and gate beyond, pebble mosaic floor panel",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2640.jpg",
@@ -32646,15 +33368,18 @@
    "image": "photos-ref/IMG_2640.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2640.jpg",
    "areas": [
-    "paseo",
-    "dali",
-    "barraka-beach",
+    "seaward-lanes",
     "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "planting",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved.",
    "camera": {
     "x": -103.2,
     "z": 211.5,
@@ -32722,7 +33447,7 @@
   },
   {
    "id": "IMG_2641.jpg",
-   "label": "IMG_2641",
+   "label": "Passage to the south pool lawn: arched iron gate and Calle de Jorge plaque",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2641.jpg",
@@ -32730,13 +33455,18 @@
    "image": "photos-ref/IMG_2641.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2641.jpg",
    "areas": [
-    "paseo",
+    "seaward-lanes",
     "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. Plaque ties this passage to Calle de Jorge.",
    "camera": {
     "x": -100.2,
     "z": 208.1,
@@ -32786,7 +33516,7 @@
   },
   {
    "id": "IMG_2642.jpg",
-   "label": "IMG_2642",
+   "label": "Open iron gate onto crazy-paving path and south pool lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2642.jpg",
@@ -32794,14 +33524,20 @@
    "image": "photos-ref/IMG_2642.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2642.jpg",
    "areas": [
-    "paseo",
-    "barraka-beach",
-    "south-pool"
+    "south-pool",
+    "seaward-lanes",
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "view",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin has +-22 m GPS. The visible pool lobe lies about 45 deg to the left of the heading whereas the south pool centre from the pin is about 17 deg, so the pin is probably roughly 10 m too far south-east; do not use it to place the gate without a camera solve. Glass pool fence is skipped by project decision.",
    "camera": {
     "x": -95.8,
     "z": 207.2,
@@ -32857,7 +33593,7 @@
   },
   {
    "id": "IMG_2643.jpg",
-   "label": "IMG_2643",
+   "label": "South lawn towards the east houses: candelabra cactus, palms and paseo fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2643.jpg",
@@ -32865,12 +33601,19 @@
    "image": "photos-ref/IMG_2643.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2643.jpg",
    "areas": [
-    "south-pool"
+    "south-pool",
+    "paseo",
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "view",
+    "facades",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Camera is on the lawn east of the pool; the lawn edge and mesh fence at the right are the seaward edge above the paseo.",
    "camera": {
     "x": -86.6,
     "z": 198.8,
@@ -32918,7 +33661,7 @@
   },
   {
    "id": "IMG_2644.jpg",
-   "label": "IMG_2644",
+   "label": "South lawn seaward edge: hedges, palms and mesh fence above the paseo",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2644.jpg",
@@ -32926,13 +33669,19 @@
    "image": "photos-ref/IMG_2644.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2644.jpg",
    "areas": [
+    "south-pool",
     "paseo",
-    "south-pool"
+    "barraka-beach"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "layout",
+    "view",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Good GPS (+-2 m) at the seaward corner of the south lawn.",
    "camera": {
     "x": -77.6,
     "z": 200.1,
@@ -33059,7 +33808,7 @@
   },
   {
    "id": "IMG_2646.jpg",
-   "label": "IMG_2646",
+   "label": "Calle Silvia lane looking NNW to an arched iron gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2646.jpg",
@@ -33067,13 +33816,17 @@
    "image": "photos-ref/IMG_2646.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2646.jpg",
    "areas": [
-    "seaward-lanes",
-    "south-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Phone altitude 9.1 m is just over the 9 m ground limit but the shot is plainly standing in the lane (neighbours read 7-8 m); keep as ground. Pin is at the south end of the lane by the south pool lawn.",
    "camera": {
     "x": -92.0,
     "z": 163.6,
@@ -33145,7 +33898,7 @@
   },
   {
    "id": "IMG_2647.jpg",
-   "label": "IMG_2647",
+   "label": "Lane arch with open iron gate leaves, terracotta paving with wide grout",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2647.jpg",
@@ -33153,13 +33906,16 @@
    "image": "photos-ref/IMG_2647.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2647.jpg",
    "areas": [
-    "seaward-lanes",
-    "south-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Lane runs about NNW along Calle Silvia south section; exact gate position unresolved.",
    "camera": {
     "x": -93.5,
     "z": 161.4,
@@ -33224,7 +33980,7 @@
   },
   {
    "id": "IMG_2648.jpg",
-   "label": "IMG_2648",
+   "label": "White cubic houses behind an oleander hedge, east of Calle Silvia",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2648.jpg",
@@ -33234,10 +33990,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Subject is the garden court east of the lane; identity of the houses within the registry footprints not established.",
    "camera": {
     "x": -97.5,
     "z": 154.0,
@@ -33302,7 +34062,7 @@
   },
   {
    "id": "IMG_2649.jpg",
-   "label": "IMG_2649",
+   "label": "House fronts behind oleander and green netting beside the lane",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2649.jpg",
@@ -33312,10 +34072,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same garden court as IMG_2648; green shading net is a temporary-looking item.",
    "camera": {
     "x": -99.0,
     "z": 153.4,
@@ -33380,7 +34144,7 @@
   },
   {
    "id": "IMG_2650.jpg",
-   "label": "IMG_2650",
+   "label": "Looking back SSE down the lane to a gate onto the south pool lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2650.jpg",
@@ -33388,12 +34152,18 @@
    "image": "photos-ref/IMG_2650.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2650.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "south-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "signage",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 147 deg: looks back SSE down the lane towards the gate onto the south pool lawn (cf. IMG_2646/2647 the other way).",
    "camera": {
     "x": -100.0,
     "z": 152.1,
@@ -33458,7 +34228,7 @@
   },
   {
    "id": "IMG_2651.jpg",
-   "label": "IMG_2651",
+   "label": "Terracotta lane beside oleander hedge, houses with bougainvillea to the east",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2651.jpg",
@@ -33468,8 +34238,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "planting",
+    "materials",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -33536,7 +34310,7 @@
   },
   {
    "id": "IMG_2652.jpg",
-   "label": "IMG_2652",
+   "label": "Lawn and patio at a white house corner with air conditioner",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2652.jpg",
@@ -33546,10 +34320,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Private-looking front garden east of the lane; extent not traced.",
    "camera": {
     "x": -102.5,
     "z": 150.0,
@@ -33614,7 +34392,7 @@
   },
   {
    "id": "IMG_2653.jpg",
-   "label": "IMG_2653",
+   "label": "House front with balcony and bougainvillea behind oleander and netting",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2653.jpg",
@@ -33624,8 +34402,11 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -33692,7 +34473,7 @@
   },
   {
    "id": "IMG_2654.jpg",
-   "label": "IMG_2654",
+   "label": "Terracotta lane paving close-up with aggregate edging and cross band",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2654.jpg",
@@ -33702,10 +34483,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pure surface detail; heading is a downward angle so subject is just beside the camera.",
    "camera": {
     "x": -102.5,
     "z": 150.0,
@@ -33770,7 +34553,7 @@
   },
   {
    "id": "IMG_2656.jpg",
-   "label": "IMG_2656",
+   "label": "Silvia 22-44 covered passage: red studded ramp and three tiled steps",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2656.jpg",
@@ -33780,10 +34563,16 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "signage",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191.",
    "camera": {
     "x": -103.7,
     "z": 147.8,
@@ -33848,7 +34637,7 @@
   },
   {
    "id": "IMG_2657.jpg",
-   "label": "IMG_2657",
+   "label": "Silvia 22-44 passage: steps with dark edge bands beside studded ramp",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2657.jpg",
@@ -33858,10 +34647,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191.",
    "camera": {
     "x": -103.7,
     "z": 147.8,
@@ -34007,7 +34801,7 @@
   },
   {
    "id": "IMG_2660.jpg",
-   "label": "IMG_2660",
+   "label": "Narrow lane between white walls and a barred house front, heading NNW",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2660.jpg",
@@ -34017,8 +34811,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -34085,7 +34883,7 @@
   },
   {
    "id": "IMG_2661.jpg",
-   "label": "IMG_2661",
+   "label": "Pavement at the Silvia / Patricia junction: slab, covers and white wall",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2661.jpg",
@@ -34095,10 +34893,13 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Junction identity is from the map: pin lies on Calle Patricia where it crosses Silvia.",
    "camera": {
     "x": -112.4,
     "z": 134.5,
@@ -34170,7 +34971,7 @@
   },
   {
    "id": "IMG_2662.jpg",
-   "label": "IMG_2662",
+   "label": "Calle Patricia lane looking WSW between white walls with brown doors",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2662.jpg",
@@ -34180,10 +34981,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin lies on the Calle Patricia axis at its crossing with Calle Silvia; lane identified from that, not from signage.",
    "camera": {
     "x": -114.2,
     "z": 132.3,
@@ -34255,7 +35061,7 @@
   },
   {
    "id": "IMG_2663.jpg",
-   "label": "IMG_2663",
+   "label": "Calle Patricia lane looking ENE: white wall with brown door, bougainvillea and defibrillator sign",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2663.jpg",
@@ -34265,10 +35071,16 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "facades",
+    "materials",
+    "planting",
+    "layout"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Identified as Patricia from the pin; heading 37 deg.",
    "camera": {
     "x": -113.7,
     "z": 131.7,
@@ -34335,7 +35147,7 @@
   },
   {
    "id": "IMG_2664.jpg",
-   "label": "IMG_2664",
+   "label": "Calle Silvia north: tiled lane looking NNW to the arch and lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2664.jpg",
@@ -34343,12 +35155,18 @@
    "image": "photos-ref/IMG_2664.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2664.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "middle-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same lane as IMG_2189 from its southern end; far arch is probably the middle pool south gateway.",
    "camera": {
     "x": -111.9,
     "z": 130.8,
@@ -34415,7 +35233,7 @@
   },
   {
    "id": "IMG_2665.jpg",
-   "label": "IMG_2665",
+   "label": "Barred shuttered window and arched openings on Calle Silvia north",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2665.jpg",
@@ -34425,8 +35243,12 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting",
+    "layout"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -34483,7 +35305,7 @@
   },
   {
    "id": "IMG_2666.jpg",
-   "label": "IMG_2666",
+   "label": "Calle Silvia north: arched recesses either side, gate arch with green lattice ahead",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2666.jpg",
@@ -34491,12 +35313,17 @@
    "image": "photos-ref/IMG_2666.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2666.jpg",
    "areas": [
-    "seaward-lanes"
+    "seaward-lanes",
+    "middle-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 319 deg; same lane and gate as IMG_2189 (322 deg).",
    "camera": {
     "x": -115.4,
     "z": 121.8,
@@ -34551,7 +35378,7 @@
   },
   {
    "id": "IMG_2667.jpg",
-   "label": "IMG_2667",
+   "label": "Recessed arched entrance with door, pots and inlaid tile floor",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2667.jpg",
@@ -34561,10 +35388,14 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Appears to be the recessed entrance beside the Silvia 1-15 passage (cf. IMG_2190); not located precisely.",
    "camera": {
     "x": -118.4,
     "z": 118.1,
@@ -34619,7 +35450,7 @@
   },
   {
    "id": "IMG_2668.jpg",
-   "label": "IMG_2668",
+   "label": "Silvia passage interior looking ENE to the arch",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2668.jpg",
@@ -34627,13 +35458,17 @@
    "image": "photos-ref/IMG_2668.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2668.jpg",
    "areas": [
-    "seaward-lanes",
-    "middle-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same viewpoint and heading (about 55 deg) as IMG_2190; it is the Silvia 1-15 passage seen from its inner side.",
    "camera": {
     "x": -118.9,
     "z": 116.0,
@@ -34693,7 +35528,7 @@
   },
   {
    "id": "IMG_2669.jpg",
-   "label": "IMG_2669",
+   "label": "Silvia 2-20 passage: red studded ramp, three steps and garden gate arch",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2669.jpg",
@@ -34701,13 +35536,18 @@
    "image": "photos-ref/IMG_2669.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2669.jpg",
    "areas": [
-    "seaward-lanes",
-    "middle-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "signage",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia).",
    "camera": {
     "x": -118.9,
     "z": 116.3,
@@ -34767,7 +35607,7 @@
   },
   {
    "id": "IMG_2670.jpg",
-   "label": "IMG_2670",
+   "label": "Silvia 2-20 passage: plaque, ramp, steps and arched gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2670.jpg",
@@ -34775,13 +35615,18 @@
    "image": "photos-ref/IMG_2670.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2670.jpg",
    "areas": [
-    "seaward-lanes",
-    "middle-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "layout",
+    "levels",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia).",
    "camera": {
     "x": -118.4,
     "z": 115.3,
@@ -34841,7 +35686,7 @@
   },
   {
    "id": "IMG_2671.jpg",
-   "label": "IMG_2671",
+   "label": "Silvia lane north of the tunnel looking NW to the middle pool south gateway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2671.jpg",
@@ -34852,10 +35697,15 @@
     "seaward-lanes",
     "middle-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same lane and gateway as IMG_2189/2334 from a closer, lower angle; pin sits on the Silvia lane at the tunnel mouth.",
    "camera": {
     "x": -118.4,
     "z": 116.0,
@@ -34864,12 +35714,12 @@
     "altitude": 8.4,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "south gateway of the middle pool at the end of the Silvia lane",
    "looksAt": [
-    -123.2,
-    112.4
+    -127,
+    105
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2671.jpg",
@@ -34904,7 +35754,7 @@
   },
   {
    "id": "IMG_2672.jpg",
-   "label": "IMG_2672",
+   "label": "Covered arched passage under the east block, looking east into a garden",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2672.jpg",
@@ -34912,13 +35762,16 @@
    "image": "photos-ref/IMG_2672.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2672.jpg",
    "areas": [
-    "seaward-lanes",
-    "middle-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Looks like the Silvia covered passage (same style as IMG_2190). Pin is at the lane mouth with +/-3 m, so the passage position is only roughly fixed.",
    "camera": {
     "x": -117.1,
     "z": 115.0,
@@ -34978,7 +35831,7 @@
   },
   {
    "id": "IMG_2673.jpg",
-   "label": "IMG_2673",
+   "label": "Courtyard path inside the east block with raised planters and a manhole",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2673.jpg",
@@ -34986,13 +35839,16 @@
    "image": "photos-ref/IMG_2673.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2673.jpg",
    "areas": [
-    "seaward-lanes",
-    "middle-pool"
+    "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin repeats IMG_2672's (-117.6,114.1) but this view is beyond the arch inside the block; indoor GPS probably froze, so the true camera is likely several metres east. Treat the position as unreliable.",
    "camera": {
     "x": -117.6,
     "z": 114.1,
@@ -35057,7 +35913,7 @@
   },
   {
    "id": "IMG_2674.jpg",
-   "label": "IMG_2674",
+   "label": "Second arched opening inside the east block with lantern and potted ficus",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2674.jpg",
@@ -35067,10 +35923,15 @@
    "areas": [
     "seaward-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin (-100.7,105.8, +/-4.8 m) sits in the middle of the large block roof, so it is an indoor/under-roof position; the passage is the Silvia/east-block covered route, but its map alignment is uncertain.",
    "camera": {
     "x": -100.7,
     "z": 105.8,
@@ -35211,7 +36072,7 @@
   },
   {
    "id": "IMG_2676.jpg",
-   "label": "IMG_2676",
+   "label": "Terracotta path between hedge and lawn at the Teodoro Rojo end of Calle Eva",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2676.jpg",
@@ -35219,13 +36080,17 @@
    "image": "photos-ref/IMG_2676.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2676.jpg",
    "areas": [
-    "seaward-lanes",
-    "eva"
+    "eva",
+    "middle-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is at the NE corner by Teodoro Rojo; view runs SW along the path past the lawn toward the middle pool entrance gateway.",
    "camera": {
     "x": -100.2,
     "z": 75.4,
@@ -35280,7 +36145,7 @@
   },
   {
    "id": "IMG_2677.jpg",
-   "label": "IMG_2677",
+   "label": "Calle Eva path to the middle pool east gateway with bougainvillea and house beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2677.jpg",
@@ -35289,12 +36154,18 @@
    "thumbnail": "photos-ref/thumbs/IMG_2677.jpg",
    "areas": [
     "eva",
-    "seaward-lanes"
+    "middle-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "signage",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Same gateway as IMG_2340/2244 and the standing point of IMG_2678.",
    "camera": {
     "x": -105.7,
     "z": 74.8,
@@ -35303,12 +36174,12 @@
     "altitude": 4.3,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "middle pool east gateway at the end of Calle Eva",
    "looksAt": [
-    -111.2,
-    77.2
+    -113,
+    79
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2677.jpg",
@@ -35349,7 +36220,7 @@
   },
   {
    "id": "IMG_2678.jpg",
-   "label": "IMG_2678",
+   "label": "Looking through the middle pool east gateway at the pool and houses beyond",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2678.jpg",
@@ -35357,13 +36228,19 @@
    "image": "photos-ref/IMG_2678.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2678.jpg",
    "areas": [
-    "eva",
-    "middle-pool"
+    "middle-pool",
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Looks SW across the clover-shaped pool; the pool shown is the middle pool by position, and glass fence matches the existing note that the fence is skipped in the model.",
    "camera": {
     "x": -113.4,
     "z": 79.5,
@@ -35412,7 +36289,7 @@
   },
   {
    "id": "IMG_2679.jpg",
-   "label": "IMG_2679",
+   "label": "Middle pool lawn with crazy-paving path and glass-fenced pool, looking west",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2679.jpg",
@@ -35420,13 +36297,19 @@
    "image": "photos-ref/IMG_2679.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2679.jpg",
    "areas": [
-    "eva",
-    "middle-pool"
+    "middle-pool",
+    "eva"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin on the lawn NE of the pool; shows the west houses on the far side of the pool.",
    "camera": {
     "x": -116.4,
     "z": 82.3,
@@ -35486,7 +36369,7 @@
   },
   {
    "id": "IMG_2680.jpg",
-   "label": "IMG_2680",
+   "label": "Middle pool west lawn: crazy-paving path, white curved wall and house frontage",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2680.jpg",
@@ -35494,12 +36377,18 @@
    "image": "photos-ref/IMG_2680.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2680.jpg",
    "areas": [
-    "middle-pool"
+    "middle-pool",
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Looks west from the NE side of the pool lawn toward the Elena side houses.",
    "camera": {
     "x": -128.8,
     "z": 82.9,
@@ -35557,7 +36446,7 @@
   },
   {
    "id": "IMG_2681.jpg",
-   "label": "IMG_2681",
+   "label": "West gate between Calle Elena and the middle pool lawn",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2681.jpg",
@@ -35565,12 +36454,18 @@
    "image": "photos-ref/IMG_2681.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2681.jpg",
    "areas": [
-    "middle-pool"
+    "middle-pool",
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Gate position is estimated from the camera heading and pin; IMG_2682 stands just beyond it on the Elena lane.",
    "camera": {
     "x": -131.6,
     "z": 84.1,
@@ -35579,12 +36474,12 @@
     "altitude": 8.2,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "west iron gate in the white wall between the Elena lane and the pool lawn",
    "looksAt": [
-    -136.8,
-    81.2
+    -139.5,
+    80
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2681.jpg",
@@ -35628,7 +36523,7 @@
   },
   {
    "id": "IMG_2682.jpg",
-   "label": "IMG_2682",
+   "label": "Calle Elena south lane looking NNW with door steps and barred gate",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2682.jpg",
@@ -35636,13 +36531,18 @@
    "image": "photos-ref/IMG_2682.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2682.jpg",
    "areas": [
-    "elena",
-    "middle-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin on the lane just west of the pool gate; view runs toward the Cervantes junction.",
    "camera": {
     "x": -139.0,
     "z": 80.1,
@@ -35702,7 +36602,7 @@
   },
   {
    "id": "IMG_2683.jpg",
-   "label": "IMG_2683",
+   "label": "Calle Elena south: lawn with clipped trees beside the lane, bougainvillea houses",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2683.jpg",
@@ -35710,13 +36610,17 @@
    "image": "photos-ref/IMG_2683.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2683.jpg",
    "areas": [
-    "elena",
-    "middle-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Looks WNW across the lawn bed on the west side of the lane.",
    "camera": {
     "x": -141.0,
     "z": 72.0,
@@ -35781,7 +36685,7 @@
   },
   {
    "id": "IMG_2684.jpg",
-   "label": "IMG_2684",
+   "label": "Calle Elena south: lane between clipped-tree lawns toward balconied houses",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2684.jpg",
@@ -35789,11 +36693,15 @@
    "image": "photos-ref/IMG_2684.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2684.jpg",
    "areas": [
-    "elena",
-    "middle-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -35855,7 +36763,7 @@
   },
   {
    "id": "IMG_2685.jpg",
-   "label": "IMG_2685",
+   "label": "Calle Elena looking north: barred wall frontage and lawn bed",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2685.jpg",
@@ -35865,8 +36773,14 @@
    "areas": [
     "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "planting",
+    "materials",
+    "signage"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -35933,7 +36847,7 @@
   },
   {
    "id": "IMG_2686.jpg",
-   "label": "IMG_2686",
+   "label": "Calle Elena north from the Cervantes junction: hedged beds and white walls",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2686.jpg",
@@ -35942,12 +36856,17 @@
    "thumbnail": "photos-ref/thumbs/IMG_2686.jpg",
    "areas": [
     "elena",
-    "cervantes"
+    "north-lanes"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door).",
    "camera": {
     "x": -145.5,
     "z": 51.0,
@@ -36095,7 +37014,7 @@
   },
   {
    "id": "IMG_2688.jpg",
-   "label": "IMG_2688",
+   "label": "Calle Elena north: arched recessed entrance and lantern, lane to the north pool gateway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2688.jpg",
@@ -36103,12 +37022,18 @@
    "image": "photos-ref/IMG_2688.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2688.jpg",
    "areas": [
-    "elena"
+    "elena",
+    "north-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "signage"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Distant arch is probably the Elena gateway to the north pool lawn; the pin has +/-2.5 m and sits at the covered-walkway mouth.",
    "camera": {
     "x": -151.7,
     "z": 41.1,
@@ -36168,7 +37093,7 @@
   },
   {
    "id": "IMG_2689.jpg",
-   "label": "IMG_2689",
+   "label": "Calle Elena covered passage: steps and studded ramp under the sign Calle Elena 18-36",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2689.jpg",
@@ -36176,13 +37101,18 @@
    "image": "photos-ref/IMG_2689.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2689.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "signage",
+    "materials",
+    "layout",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Position matches the covered walkway part5 area (see IMG_2203/2361).",
    "camera": {
     "x": -153.5,
     "z": 38.3,
@@ -36247,7 +37177,7 @@
   },
   {
    "id": "IMG_2690.jpg",
-   "label": "IMG_2690",
+   "label": "Elena covered walkway looking WSW to the paired iron gates",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2690.jpg",
@@ -36255,13 +37185,16 @@
    "image": "photos-ref/IMG_2690.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2690.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Likely the covered walkway and paired iron gateway west of Elena (issue #46); the numbered side doors suggest private entries.",
    "camera": {
     "x": -154.9,
     "z": 37.4,
@@ -36326,7 +37259,7 @@
   },
   {
    "id": "IMG_2691.jpg",
-   "label": "IMG_2691",
+   "label": "Brown double door with warning sign in the Elena covered walkway",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2691.jpg",
@@ -36334,11 +37267,14 @@
    "image": "photos-ref/IMG_2691.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2691.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "signage"
+   ],
    "observation": "",
    "note": "",
    "camera": {
@@ -36405,7 +37341,7 @@
   },
   {
    "id": "IMG_2692.jpg",
-   "label": "IMG_2692",
+   "label": "Arched brown entrance door with iron grille and doormat",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2692.jpg",
@@ -36413,13 +37349,15 @@
    "image": "photos-ref/IMG_2692.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2692.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Apartment entrance off the Elena covered walkway; the identity of the particular door is not shown.",
    "camera": {
     "x": -157.2,
     "z": 35.3,
@@ -36484,7 +37422,7 @@
   },
   {
    "id": "IMG_2725.jpg",
-   "label": "IMG_2725",
+   "label": "Barred gate view into a laundry corridor with a red studded ramp",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2725.jpg",
@@ -36495,10 +37433,14 @@
     "seaward-lanes",
     "main-pool"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "signage",
+    "levels"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin is on Calle Patricia/Guillermo beside a large white roofed block with +/-4.7 m; the heading looks into the block, but which building is not identifiable from the photo.",
    "camera": {
     "x": -51.5,
     "z": 70.5,
@@ -36558,7 +37500,7 @@
   },
   {
    "id": "IMG_2771.jpg",
-   "label": "IMG_2771",
+   "label": "Seaward lane with tall white wall and lantana, looking NW",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2771.jpg",
@@ -36567,14 +37509,18 @@
    "thumbnail": "photos-ref/thumbs/IMG_2771.jpg",
    "areas": [
     "seaward-lanes",
-    "paseo",
-    "barraka-beach",
-    "main-pool"
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "facades",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Pin has +/-18.4 m error and sits on the lawn; the lane and tile/drain match the Guillermo/Jorge lane (IMG_2822, IMG_2488), so the true camera is probably on that lane.",
    "camera": {
     "x": -9.9,
     "z": 123.1,
@@ -36653,7 +37599,7 @@
   },
   {
    "id": "IMG_2813.jpg",
-   "label": "IMG_2813",
+   "label": "Brown door with iron grille and doormat, close view",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2813.jpg",
@@ -36661,13 +37607,15 @@
    "image": "photos-ref/IMG_2813.jpg",
    "thumbnail": "photos-ref/thumbs/IMG_2813.jpg",
    "areas": [
-    "elena",
-    "north-pool"
+    "elena"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Probably the same door as IMG_2692 photographed again.",
    "camera": {
     "x": -153.5,
     "z": 38.7,
@@ -36722,7 +37670,7 @@
   },
   {
    "id": "IMG_2822.jpg",
-   "label": "IMG_2822",
+   "label": "Seaward lane descending between white curved walls to the sea fence",
    "kind": "phone-photo",
    "private": false,
    "sourcePath": "public/photos-ref/IMG_2822.jpg",
@@ -36731,12 +37679,18 @@
    "thumbnail": "photos-ref/thumbs/IMG_2822.jpg",
    "areas": [
     "seaward-lanes",
-    "main-pool"
+    "paseo"
    ],
-   "viewpoint": null,
-   "useFor": [],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "levels",
+    "materials",
+    "planting",
+    "view"
+   ],
    "observation": "",
-   "note": "",
+   "note": "Matches Calle Guillermo/Jorge lane (see IMG_2488).",
    "camera": {
     "x": -23.9,
     "z": 118.7,
@@ -36745,12 +37699,12 @@
     "altitude": 6.6,
     "trust": "phone location"
    },
-   "subject": null,
+   "subject": "lane descending toward the seaward end of Calle Guillermo",
    "looksAt": [
-    -20.6,
-    123.7
+    -18.5,
+    127
    ],
-   "looksAtBasis": "estimated 6 m along the heading",
+   "looksAtBasis": "reviewed",
    "locationBasis": null,
    "association": {
     "file": "IMG_2822.jpg",

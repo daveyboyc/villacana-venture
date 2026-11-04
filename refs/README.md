@@ -8,37 +8,37 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 
 | Area | References | Reviewed | Brief |
 | --- | --- | --- | --- |
-| North pool | 25 | 16 | [areas/north-pool.md](areas/north-pool.md) |
-| Middle pool | 42 | 24 | [areas/middle-pool.md](areas/middle-pool.md) |
-| South pool | 19 | 8 | [areas/south-pool.md](areas/south-pool.md) |
-| Main pool | 18 | 7 | [areas/main-pool.md](areas/main-pool.md) |
-| Calle Elena | 85 | 45 | [areas/elena.md](areas/elena.md) |
-| Calle Miguel de Cervantes | 74 | 29 | [areas/cervantes.md](areas/cervantes.md) |
-| Calle Pintor Dalí | 44 | 25 | [areas/dali.md](areas/dali.md) |
-| Pintor Picasso and the car park | 4 | 3 | [areas/picasso.md](areas/picasso.md) |
-| Loira, Bolivia, Alberto and Isabel | 2 | 0 | [areas/north-lanes.md](areas/north-lanes.md) |
-| Calle Eva | 30 | 12 | [areas/eva.md](areas/eva.md) |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 124 | 39 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
-| Barraka and the beach | 51 | 22 | [areas/barraka-beach.md](areas/barraka-beach.md) |
-| The paseo | 65 | 20 | [areas/paseo.md](areas/paseo.md) |
-| The whole resort | 21 | 21 | [areas/whole-resort.md](areas/whole-resort.md) |
+| North pool | 17 | 17 | [areas/north-pool.md](areas/north-pool.md) |
+| Middle pool | 34 | 34 | [areas/middle-pool.md](areas/middle-pool.md) |
+| South pool | 18 | 18 | [areas/south-pool.md](areas/south-pool.md) |
+| Main pool | 19 | 19 | [areas/main-pool.md](areas/main-pool.md) |
+| Calle Elena | 86 | 86 | [areas/elena.md](areas/elena.md) |
+| Calle Miguel de Cervantes | 63 | 63 | [areas/cervantes.md](areas/cervantes.md) |
+| Calle Pintor Dalí | 45 | 45 | [areas/dali.md](areas/dali.md) |
+| Pintor Picasso and the car park | 4 | 4 | [areas/picasso.md](areas/picasso.md) |
+| Loira, Bolivia, Alberto and Isabel | 2 | 2 | [areas/north-lanes.md](areas/north-lanes.md) |
+| Calle Eva | 31 | 31 | [areas/eva.md](areas/eva.md) |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 129 | 129 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
+| Barraka and the beach | 55 | 55 | [areas/barraka-beach.md](areas/barraka-beach.md) |
+| The paseo | 54 | 54 | [areas/paseo.md](areas/paseo.md) |
+| The whole resort | 23 | 23 | [areas/whole-resort.md](areas/whole-resort.md) |
 
 | Topic | Reviewed references | Brief |
 | --- | --- | --- |
-| Layout | 147 | [topics/layout.md](topics/layout.md) |
-| Levels and slopes | 35 | [topics/levels.md](topics/levels.md) |
-| Facades and roofs | 51 | [topics/facades.md](topics/facades.md) |
-| Materials | 86 | [topics/materials.md](topics/materials.md) |
-| Planting | 66 | [topics/planting.md](topics/planting.md) |
-| Signs | 14 | [topics/signage.md](topics/signage.md) |
-| Views | 33 | [topics/view.md](topics/view.md) |
+| Layout | 338 | [topics/layout.md](topics/layout.md) |
+| Levels and slopes | 75 | [topics/levels.md](topics/levels.md) |
+| Facades and roofs | 191 | [topics/facades.md](topics/facades.md) |
+| Materials | 263 | [topics/materials.md](topics/materials.md) |
+| Planting | 191 | [topics/planting.md](topics/planting.md) |
+| Signs | 57 | [topics/signage.md](topics/signage.md) |
+| Views | 75 | [topics/view.md](topics/view.md) |
 
 ## Find one reference
 
 Use the canonical app root (`/?view=map`) and search a photo ID, place or visible subject. The same complete index, including private and unplaced sources, is `public/reference-index.json`. Agents can run `python3 scripts/find_reference.py boat` or `python3 scripts/find_reference.py --area north-pool --json`. Each entry gives a stable map link, source path, camera uncertainty, separate subject context, citations and current checks. Open full images before editing; private pixels stay in the private repo.
 
 
-418 references: 198 reviewed, 220 with areas suggested only from the camera position.
+418 references: 418 reviewed, 0 with areas suggested only from the camera position.
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
