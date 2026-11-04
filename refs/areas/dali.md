@@ -19,8 +19,8 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 ## Coverage
 
-Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 4, Planting: 2, Views: 1
-25 reviewed, 19 suggested only by camera position.
+Layout: 42, Levels and slopes: 8, Facades and roofs: 12, Materials: 19, Planting: 15, Signs: 1, Views: 5
+45 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -134,10 +134,24 @@ graph LR
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2294.jpg](../../public/photos-ref/IMG_2294.jpg) | ground | levels, layout | Dalí seaward end: flagstone approach to arch _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2295.jpg](../../public/photos-ref/IMG_2295.jpg) | ground | layout, facades | Dalí seaward end: covered access and shutters _Used by: door_sills.json:dali-south-arch-approach._ |
+| [IMG_2525.jpg](../../public/photos-ref/IMG_2525.jpg) | ground | layout, facades, planting, materials | Dali car park bays and the white houses along its east side |
+| [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | ground | layout, facades, planting, materials | Footpath along the west side of the block, house with grilled windows **Note:** Pin is on the Dali road edge; the footpath is the Calle Eva west-side footpath. |
+| [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | ground | layout, materials, planting | Tiled footpath beside Dalí car park lawn |
+| [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | ground | layout, planting, materials | Dalí footpath, strelitzia lawn strip and parked cars |
+| [IMG_2474.jpg](../../public/photos-ref/IMG_2474.jpg) | ground | layout, materials, planting | Dalí car park and clipped hedge **Note:** Looks south-southwest across the road; the villa beyond the hedge is outside the resort boundary (not identified). |
+| [IMG_2475.jpg](../../public/photos-ref/IMG_2475.jpg) | ground | layout, planting, view | Calle Pintor Dalí looking south |
+| [IMG_2477.jpg](../../public/photos-ref/IMG_2477.jpg) | ground | facades, planting, materials | House frontage on Dalí with arched entry and bougainvillea **Looks at:** white house frontage with arched entry on the east side of Dalí. **Note:** Subject point is an approximate 8 m offset along the phone heading, not surveyed. |
+| [IMG_2478.jpg](../../public/photos-ref/IMG_2478.jpg) | ground | facades, layout, materials | White arched gateway with lanterns into a planted passage **Looks at:** arched white gateway from Dalí footpath. **Note:** Which registry opening this is is unidentified; GPS puts the camera on the Dalí road edge heading ENE. Subject point is a rough ~5 m offset. |
+| [IMG_2524.jpg](../../public/photos-ref/IMG_2524.jpg) | ground | layout, view, materials | Dali car park looking south: white kerb, chain-link fence, houses at far end **Note:** Pin lies on the west edge of the car park (GPS ±3.7 m); the west boundary fence runs along the right of frame. |
+| [IMG_2526.jpg](../../public/photos-ref/IMG_2526.jpg) | ground | layout, materials, view | Dali car park looking north: hedge-covered fence, white kerb and parked cars |
+| [IMG_2554.jpg](../../public/photos-ref/IMG_2554.jpg) | ground | layout, planting, view | Dali car park looking north with CCTV lamp post and parked cars **Note:** Pin is at the Dali/Eva corner. |
+| [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | ground | facades, planting, layout | Dali car park edge with lawn islands and white house with brown gate |
+| [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials, planting | Terracotta footpath with kerbed planters leading to a brown gate **Note:** Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise). |
 | [IMG_2277.jpg](../../public/photos-ref/IMG_2277.jpg) | ground | layout, materials | Pintor Dalí: aisle, outer fence and white curb |
 | [IMG_2278.jpg](../../public/photos-ref/IMG_2278.jpg) | ground | layout, materials | Pintor Dalí: seaward parking row and chain-link fence |
 | [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
+| [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | ground | layout, facades | Calle Pintor Dalí looking north |
 | [IMG_2269.jpg](../../public/photos-ref/IMG_2269.jpg) | ground | layout | Pintor Dalí: parking and chain-link fence looking south |
 | [IMG_2270.jpg](../../public/photos-ref/IMG_2270.jpg) | ground | layout | Pintor Dalí: parking and fence looking north |
 | [IMG_2276.jpg](../../public/photos-ref/IMG_2276.jpg) | ground | layout | Pintor Dalí: parking junction toward the sea |
@@ -145,32 +159,12 @@ graph LR
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | [IMG_2290.jpg](../../public/photos-ref/IMG_2290.jpg) | ground | layout | Pintor Dalí: grass between bays and shared footpath |
 | [IMG_2275.jpg](../../public/photos-ref/IMG_2275.jpg) | ground | levels, layout | Cervantes exit onto Pintor Dalí: slope and drain _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Note:** Pin is at the Eva/Dali junction. |
+| [IMG_2468.jpg](../../public/photos-ref/IMG_2468.jpg) | ground | layout, facades, planting | Cervantes west end: arcaded porch on the left, dracaena and shrub bed on the right **Looks at:** West end of the lane towards Dali. **Note:** Pin (-167.1, 65.2) +-2.3 m. The arch is the mouth of the south-side covered passage seen in IMG_2288/2469. looksAt estimated 20 m along heading 242. |
+| [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | ground | layout, levels, materials | Dalí footpath ramp with white mailbox pillar |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle |
+| [IMG_2637.jpg](../../public/photos-ref/IMG_2637.jpg) | ground | layout, materials, planting | Paseo end by the Calle Pintor Dali car park with hedge behind mesh fence |
+| [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
-
-## Suggested by camera position, not yet reviewed
-
-The camera stood in or near this area. Check what the picture actually shows before relying on it.
-
-| Reference | Viewpoint | Use for | What it shows |
-| --- | --- | --- | --- |
-| [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | not reviewed | not reviewed | IMG_2476 |
-| [IMG_2477.jpg](../../public/photos-ref/IMG_2477.jpg) | not reviewed | not reviewed | IMG_2477 |
-| [IMG_2478.jpg](../../public/photos-ref/IMG_2478.jpg) | not reviewed | not reviewed | IMG_2478 |
-| [IMG_2524.jpg](../../public/photos-ref/IMG_2524.jpg) | not reviewed | not reviewed | IMG_2524 |
-| [IMG_2525.jpg](../../public/photos-ref/IMG_2525.jpg) | not reviewed | not reviewed | IMG_2525 |
-| [IMG_2526.jpg](../../public/photos-ref/IMG_2526.jpg) | not reviewed | not reviewed | IMG_2526 |
-| [IMG_2554.jpg](../../public/photos-ref/IMG_2554.jpg) | not reviewed | not reviewed | IMG_2554 |
-| [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | not reviewed | not reviewed | IMG_2555 |
-| [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | not reviewed | not reviewed | IMG_2472 |
-| [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | not reviewed | not reviewed | IMG_2473 |
-| [IMG_2474.jpg](../../public/photos-ref/IMG_2474.jpg) | not reviewed | not reviewed | IMG_2474 |
-| [IMG_2475.jpg](../../public/photos-ref/IMG_2475.jpg) | not reviewed | not reviewed | IMG_2475 |
-| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | not reviewed | not reviewed | IMG_2553 |
-| [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | not reviewed | not reviewed | IMG_2556 |
-| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | not reviewed | not reviewed | IMG_2557 |
-| [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | not reviewed | not reviewed | IMG_2558 |
-| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | not reviewed | not reviewed | IMG_2560 |
-| [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | not reviewed | not reviewed | IMG_2639 |
-| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | not reviewed | not reviewed | IMG_2640 |

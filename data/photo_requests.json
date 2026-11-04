@@ -51,7 +51,8 @@
       "radius": 4,
       "since": "2026-10-27",
       "status": "open",
-      "viewpoint": "roof"
+      "viewpoint": "roof",
+      "note": "The matcher counts IMG_2537/IMG_2538 (4 Nov), but both are eye-level shots in a porch and the Elena covered walkway (phone altitude 10.5 m is GPS noise, GPS +-17-19 m). They are not roof photos: still wanted."
     },
     {
       "id": "cervantes-east-from-elena",
@@ -105,7 +106,8 @@
       "priority": 2,
       "radius": 4,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "IMG_2538 (4 Nov) looks out of the Elena covered walkway's east portal toward the lane; it does not show the patio floor against the steps. Still wanted."
     },
     {
       "id": "guillermo-lane-walk",
@@ -160,7 +162,7 @@
       "radius": 6,
       "since": "2026-10-27",
       "status": "open",
-      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo."
+      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo. IMG_2602/IMG_2603 (4 Nov) show a coastal lawn gate pier with an iron gate, signs and a pink lawn path with bollard lights; the agent read them from the reading sheet only and it is not confirmed they show this arched gateway. Check against the full-size photos before marking answered."
     },
     {
       "id": "beach-verge",

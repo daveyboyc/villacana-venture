@@ -20,8 +20,8 @@ Overviews, maps and wide views covering several areas at once, and the mountain 
 
 ## Coverage
 
-Layout: 10, Levels and slopes: 2, Facades and roofs: 17, Materials: 4, Planting: 2, Signs: 3, Views: 18
-21 reviewed, 0 suggested only by camera position.
+Layout: 12, Levels and slopes: 2, Facades and roofs: 18, Materials: 5, Planting: 4, Signs: 4, Views: 20
+23 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -70,5 +70,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | [IMG_2298.jpg](../../public/photos-ref/IMG_2298.jpg) | ground | facades, view, materials | Beach: white seaward houses and palm _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2299.jpg](../../public/photos-ref/IMG_2299.jpg) | ground | facades, view, materials | Beach: houses along the shore _Used by: area:beach, paseo_wall.json:paseo-retaining-wall._ |
 | [IMG_2362.jpg](../../public/photos-ref/IMG_2362.jpg) | roof | facades, view, materials | Roof by Elena: looking east-south-east over the terraces to the sea **Looks at:** The terraces east of Elena north. _Used by: elena_north.json:elena-north-magnolia-bed._ |
+| [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | ground | layout, facades, planting, view, materials | Tiled path along lawns towards white houses with chimneys, looking ENE **Note:** Camera is at the Teodoro Rojo / Patricia corner; view runs along Teodoro Rojo. |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. |
 | [IMG_2219.jpg](../../public/photos-ref/IMG_2219.jpg) | roof | facades, materials, view | Tiled roof terrace looking north, mountains behind |
 | `villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |

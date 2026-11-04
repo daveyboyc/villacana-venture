@@ -1,0 +1,159 @@
+# Build opportunities from newly tagged photos
+
+Raised by agents that looked at the 220 photos tagged on 4 Nov 2026 (reading sheets and photos; the model was only partly checked, so each line is something visible in a photo, not a confirmed gap). Each needs the normal photo-to-model loop before any geometry change (AGENTS.md, docs/PLACEMENT_VERIFICATION.md).
+
+- IMG_2442.jpg (cervantes): White rendered pillar-seat with tile plaque, brick-edged step and tall candelabra cacti at the east end of the lane; check whether the model has any of them (kinds.json has a generic cactus).
+- IMG_2443.jpg (cervantes): Brick-edged lane step and low white kerb wall running along the right side, with the pillar-seat; could be built as a small lane-edge detail.
+- IMG_2444.jpg (cervantes, picasso): White arched barred window and downpipe on the lane-side house wall at the east end, and the lamp-post and pollarded trees at the lane mouth.
+- IMG_2445.jpg (cervantes): The lane east of the Alberto crossing uses octagon-plus-diamond tiles rather than square tiles; this close-up gives the module size for a paving texture.
+- IMG_2446.jpg (cervantes): Garden-wall arched brown door, balcony with railing and lean-to tiled roof on the house facing the lawn.
+- IMG_2447.jpg (cervantes): Banana clump, tree and terracotta patio edge against a white house with chimney; useful for Details planting if the patio is built.
+- IMG_2448.jpg (cervantes, north-lanes): Calle Alberto plaque and the three white steps in the path ahead; paving changes from octagon to square tiles here.
+- IMG_2449.jpg (cervantes): Wall plaque 'CALLE DE MIGUEL' on the lane-side wall and the white side steps at the right edge.
+- IMG_2450.jpg (cervantes): Rounded arch with pier, lantern and barred window at the passage mouth, plus the drain strip and iron covers in the lane floor.
+- IMG_2451.jpg (cervantes): Passage interior: flat ceiling, pendant lantern, two brown door sets, azulejo-inset floor and far arch; none of this is in the model, and it could settle the Miguel passage identity.
+- IMG_2452.jpg (cervantes): Recessed brown door with step-down sill and wall number plates; use alongside IMG_2451.
+- IMG_2453.jpg (cervantes, elena): Hooded barred window with louvre shutters and the lantana bed along the lane wall.
+- IMG_2454.jpg (cervantes): The hedge-on-white-kerb bed continues further east than the bounded 8 m test and ends in a sloping kerb nose; this photo could extend or re-end it.
+- IMG_2455.jpg (cervantes, elena): Calle de Elena wall plaque and the raised bed with fan palms along the lane edge in front of the door wall.
+- IMG_2456.jpg (elena): Arch opening onto a courtyard, inset azulejo floor tiles and the Calle Elena 18-36 plaque for the covered walkway.
+- IMG_2457.jpg (elena): A roughly 1 m square pebble star mosaic inset in the passage floor; could be added as a small floor texture.
+- IMG_2458.jpg (elena): Arched brown door in a white garden wall with a hedge-edged bed and magnolia; a candidate for Details planting and wall-door tracing.
+- IMG_2459.jpg (elena): Three white steps plus the red studded ramp at the walkway mouth are a level change and ramp that the model's passage object does not have.
+- IMG_2460.jpg (elena): Hedge-bordered path with white curved wall and iron railing; could help the north patio traces on Elena.
+- IMG_2461.jpg (elena): Iron grille pattern (twisted bars with rings) and sill detail for the facade kit.
+- IMG_2462.jpg (cervantes, elena): Colour and species mix for the wall planting (bougainvillea, plumbago, clipped hedge) at the garden door.
+- IMG_2463.jpg (cervantes, elena): Compare the white curved kerb, hedge bed and door against the built door steps and north bed from this longer view.
+- IMG_2464.jpg (cervantes, elena): Check the built ramp/steps and the lawn corner kerb against this view; the 'ELENA' plaque on the left wall is not in the model.
+- IMG_2465.jpg (cervantes, elena): Rounded kerb corner and round manhole cover in the lawn; the house behind has a balcony and lean-to tiled roof not matched to the model.
+- IMG_2466.jpg (elena, cervantes): Round-topped white kerb along the lawn and the trio of clipped trees in sequence; a Details planting check.
+- IMG_2467.jpg (cervantes): Door, barred windows and lamp bracket on the lane-side facade for the frontage kit.
+- IMG_2468.jpg (cervantes, dali): Arcade arch with lantern and pier at the south side of the lane's west end.
+- IMG_2469.jpg (cervantes): Plaque 'CALLE MIGUEL 1 19', door set and arch in the south-west portal; a second portal for the Miguel passage task.
+- IMG_2470.jpg (cervantes): Covered Cervantes entry: arched far opening, lantern, paired dark doors and inset-tile floor pattern could be built as a traced passage.
+- IMG_2471.jpg (cervantes, dali): The ramped footpath entrance to Cervantes with a slot drain and white mailbox pillar (relates to dali-footpath-kerb) could be checked against the model.
+- IMG_2472.jpg (dali): Dalí-side footpath with a white curb wall edging the car-park lawn strip.
+- IMG_2477.jpg (dali): Facade detail for the Dalí-side houses: arched door recess, grilled window, balcony railing, lanterns and bougainvillea.
+- IMG_2478.jpg (dali): The arch-framed gateway with paired lanterns, stepped surround and grate could be traced as a named opening on the Dalí frontage.
+- IMG_2480.jpg (paseo, barraka-beach): Seafront promenade furniture: slim white solar lamp posts, pink stamped paving with timber edging to the verge, and the green mesh above the sandstone wall.
+- IMG_2484.jpg (paseo, main-pool): Painted red/white crossing bars on the paseo near the Guillermo foot and the mesh fence over the wall.
+- IMG_2485.jpg (paseo, seaward-lanes, main-pool): The seafront Guillermo gate: white pier with cap, wrought-iron gate, wall plaque and CCTV sign are not modelled (a Comunidad Villacana notice exists only at the middle-pool gateway).
+- IMG_2486.jpg (seaward-lanes, paseo): Perforated decorative block panel and sloped white wall at the Guillermo seaward corner, and the green bollard light.
+- IMG_2487.jpg (seaward-lanes): Curved white planter wall with lavender bed and a pergola-topped house corner.
+- IMG_2489.jpg (seaward-lanes): The white built-in bench with decorated tile back and the red-brick edging strip on Patricia are small details not in the model.
+- IMG_2491.jpg (seaward-lanes): Octagonal tile pattern with diamond inserts and the white wall tops with a small niche.
+- IMG_2492.jpg (seaward-lanes): Tiled street-name plaque (Calle de Teodoro), mailbox and arched plank door at the Patricia/Teodoro Rojo corner are not modelled.
+- IMG_2493.jpg (seaward-lanes): The short stair and planter at the lane side, and the wall-mounted utility cabinet doors.
+- IMG_2495.jpg (seaward-lanes): Barred window with sill, arched entry recess and lantern bracket on Teodoro Rojo house fronts.
+- IMG_2496.jpg (seaward-lanes): Entrance steps with a studded ramp beside them, the numbered address sign and service hatch could be added to Teodoro Rojo west-side entry.
+- IMG_2497.jpg (seaward-lanes): This is a good build source for the Teodoro Rojo covered porch: arch, tiled floor, steps and ramp, doors and lantern.
+- IMG_2498.jpg (seaward-lanes): Timber pergolas with reed roofs and terraces on the garden-side houses.
+- IMG_2501.jpg (seaward-lanes, eva): Pairs of small cabinet doors and the balcony with tiled eave on the far house.
+- IMG_2511.jpg (elena, cervantes): Compare the steps, ramp strip, kerbed lawn and manhole cover with the cervantes-elena-steps model from this new angle.
+- IMG_2520.jpg (elena): The pebble mosaic panel, blue inset tiles and offset terracotta pattern inside the walkway could be built as a floor material.
+- IMG_2540.jpg (cervantes, elena): The two grey stone inset slabs and red-capped white kerb steps at the foot of the Cervantes ramp could be checked against the cervantes-elena-steps model.
+- IMG_2541.jpg (cervantes): Registry strips 6265401UF1366N_part2 ('Walk-through from Cervantes') is only 'likely' in data/passages.json; IMG_2541-2547 photograph the passage from the Cervantes entrance to the Eva end and could upgrade it with a traced layout.
+- IMG_2542.jpg (cervantes): The pebble mosaic panel and inset decorative tile pattern in the floor could be built as a floor texture; it is not in the model.
+- IMG_2548.jpg (eva): Passage floor: offset terracotta squares with blue/white inserts and a rectangular dark pebble mat, plus the paired brown doors and recessed entrances along both sides.
+- IMG_2552.jpg (eva, dali): Curved white kerb and lawn island where the footpath meets the car-park aisle; the paving crack and drain grille are small details.
+- IMG_2553.jpg (eva): Planted bed along the right side of the lane (clipped hedge edge, bare soil, shrubs) and the house fronts with arched windows and brown doors.
+- IMG_2555.jpg (dali, eva): Wooden balcony with tiled eave and the brown gate in the white boundary wall.
+- IMG_2557.jpg (eva, seaward-lanes): Street-name plaque on the passage wall and the nested arches; the paving pattern and pebble mat match the other covered passages.
+- IMG_2561.jpg (seaward-lanes): Entrance arch with twin wall lanterns and the stepped plinth of the piers; check against the Patricia entrance arch in the model.
+- IMG_2562.jpg (seaward-lanes): Street-name sign with house numbers on the arch pier, and the receding sequence of arches.
+- IMG_2563.jpg (seaward-lanes): Doors and recessed entrances along both sides of the passage, plus the floor pattern (diagonal blue/white inserts, pebble mat).
+- IMG_2564.jpg (seaward-lanes): Pebble mosaic with flower motif and border, set flush in the terracotta floor with varied blue-and-white insert tiles.
+- IMG_2565.jpg (seaward-lanes): Recessed arched entrances with iron grilles and the raised white planters along both sides.
+- IMG_2566.jpg (seaward-lanes): Round white columns flanking the lane under the pergola, and the shuttered upper floor above the arch.
+- IMG_2567.jpg (seaward-lanes): Upper-floor loggia with its roof-tile edge, shutters and balcony rails above the lane arch.
+- IMG_2569.jpg (seaward-lanes): Short ramp with red studded mat and tiled steps at the passage exit, beside white planter walls.
+- IMG_2570.jpg (seaward-lanes): Three-ish tiled steps with a dark line edge, a studded ramp beside them and rounded planter walls; check the step count and heights against the model.
+- IMG_2574.jpg (seaward-lanes): Exact flight: three risers with dark-line tile edging, wider top landing, red studded ramp beside it.
+- IMG_2575.jpg (seaward-lanes): Capped pier at the stair end and the planter wall running along the lane.
+- IMG_2576.jpg (seaward-lanes, south-pool): Open black iron gate leaves in an arched wall opening with notices, and the raised planter with a rendered rim on the right.
+- IMG_2577.jpg (seaward-lanes, south-pool): Gate pier signs (pictograms and notice board) and the tile-capped planter wall on the right.
+- IMG_2579.jpg (seaward-lanes): Window grilles, shuttered openings and the low rendered sill walls along the lane edge could be checked against the facade kit.
+- IMG_2580.jpg (seaward-lanes): Stepped white planter walls with tiled nosing beside the lane and the arched recessed doorway could be traced.
+- IMG_2581.jpg (seaward-lanes): The three-riser tiled step, rubber ramp and thick stepped arch piers at this porch are small built details to model; plaque text could be added once read.
+- IMG_2582.jpg (seaward-lanes): Insert-tile floor pattern, ribbed ramp and recessed paired brown doors are visible; useful alongside the Silvia tunnel tasks.
+- IMG_2583.jpg (seaward-lanes): The upper balcony with shuttered double doors and arched ground-floor doors around the courtyard are facade details to compare with the model.
+- IMG_2584.jpg (seaward-lanes): Planter beds either side, fan-light arched gate and recessed doors are visible detail for a passage build.
+- IMG_2587.jpg (seaward-lanes): Good close-up source for the insert-tile paving pattern and the raised planter edges.
+- IMG_2588.jpg (seaward-lanes): The raised curved planter edge and arched entrance can be traced against the courtyard footprint.
+- IMG_2589.jpg (seaward-lanes): Arch profile with stepped piers and the slot drain across the floor are measurable details.
+- IMG_2592.jpg (seaward-lanes): The ramp and single step at this threshold show a level change that could be checked in the levels survey.
+- IMG_2593.jpg (seaward-lanes): Long straight lane view useful for lane width and wall heights; the tile-colour crossing patch and meter cabinet could be checked.
+- IMG_2595.jpg (seaward-lanes, whole-resort): Chimney pots, stepped white parapets and the sloping buttress-like wall ends on the left are distinctive facade details to compare.
+- IMG_2596.jpg (seaward-lanes): Bench with tile panel, the two cast covers and the brick-tile border strip are small details the model could add.
+- IMG_2597.jpg (seaward-lanes, main-pool, whole-resort): Street-name post with painted text, olive tree and lantana planting along the wall are visible small features.
+- IMG_2598.jpg (main-pool, barraka-beach, seaward-lanes): Pink lawn path, bollard lights and the green fence/hedge line could be checked against the lawn.
+- IMG_2599.jpg (seaward-lanes, barraka-beach, paseo): The stepped coping heights and curve of the white walls and the diagonal flagstone fan pattern are visible for the Guillermo descent.
+- IMG_2601.jpg (seaward-lanes, barraka-beach, paseo): Fence line with dark green posts and hedge could be checked against the seafront fence data.
+- IMG_2602.jpg (main-pool, paseo, barraka-beach): Gate pier with rounded hood, iron gate with ring pattern and warning signs; the model may only have a plain opening here.
+- IMG_2603.jpg (main-pool, paseo): Curved swept roofline of the pool-side building and the forked pink lawn path are details to compare with the model.
+- IMG_2604.jpg (paseo, barraka-beach): Restaurant frontage with awnings and window band, rope barriers and lounge seating could be added from this view.
+- IMG_2606.jpg (barraka-beach): Thatched parasol and lounger layout and blue boardwalk strips could be built for Barraka.
+- IMG_2607.jpg (paseo, barraka-beach, seaward-lanes): Rattan seating group, easel sign and the awning-edged terrace could be added at Barraka.
+- IMG_2608.jpg (paseo, barraka-beach, seaward-lanes): Sandstone-block wall with dark green railing along the paseo and the skyline of the white houses can be compared with the model.
+- IMG_2609.jpg (barraka-beach, paseo, main-pool): Barraka's beach-side lounge garden (rope-and-post barrier, rattan armchairs and sofa, parasol, menu stand, easel sign, terracotta pots) could be added as Details furniture on the beach verge; check data/beach_verge.json for what exists.
+- IMG_2610.jpg (barraka-beach, paseo, main-pool): Curved sandstone retaining wall with a green bar railing and the slot drain along the stamped-paving terrace edge could be traced for the paseo/Barraka corner.
+- IMG_2611.jpg (paseo, barraka-beach, main-pool): Barraka's north-west elevation (white render, dark timber cladding, awning, glazed shopfront) and the lane's slot drain can be compared with the model's Barraka footprint.
+- IMG_2613.jpg (main-pool, paseo): The lane's width, the blocked-off kerb wall and the canopy-bracketed wall give a photographic source for the untraced boundary north-east of the main-pool lawn.
+- IMG_2614.jpg (barraka-beach): Large terracotta strelitzia pots and the stacked-lounger storage along Barraka's north-east wall could be added as Details objects.
+- IMG_2615.jpg (barraka-beach): Window sizes and spacing, the brown timber band, door recess and parapet height of Barraka's north-east wall can be read here for the building facade.
+- IMG_2618.jpg (barraka-beach, paseo): Barraka's facade rhythm (three window groups per level, timber band, black door, rooftop tank) can be checked against the model's building and used for window detail.
+- IMG_2619.jpg (barraka-beach): The thatched cooking shelter, net heap, kayaks and white planter rack are listed as present at Barraka; this is a clear source for the shelter's size and roof shape.
+- IMG_2630.jpg (barraka-beach, paseo, main-pool): Barraka's glazed timber frontage with frosted lettering, awning and drain could be modelled on its north-west wall.
+- IMG_2631.jpg (barraka-beach, paseo): Rope-and-post lounge enclosure with rattan seating and menu stand on the beach verge, plus the paseo's slot drain, are not obviously modelled.
+- IMG_2635.jpg (south-pool): Facade details of the south-pool seafront houses (shutter and door positions, balcony rails, arched entry) could be compared with the model.
+- IMG_2638.jpg (paseo, dali): The stepped end of the sandstone wall and the kerbed junction to the gravel area give a photographic source for how the paseo wall terminates at the Dali end.
+- IMG_2639.jpg (seaward-lanes, south-pool): Pebble mosaic door-mat panel, offset tile-and-blue-insert floor and the bougainvillea arch/gate at the lane-to-south-lawn passage could be built if this arcade is modelled.
+- IMG_2640.jpg (seaward-lanes, south-pool): Two-arch sequence (outer arch, inner arch) with a pebble-mosaic panel and a steel drain grille at the threshold; bougainvillea as a distinct trained climber.
+- IMG_2641.jpg (seaward-lanes, south-pool): Arched iron gate with barred fanlight, tile street-name plaque and bounded low white planters either side of the gate threshold.
+- IMG_2642.jpg (south-pool, seaward-lanes, paseo): Crazy-paving path flanked by clipped hedges on white curved kerbs from the gate to the lawn; check against the model's south-lawn entrance path.
+- IMG_2643.jpg (south-pool, paseo, barraka-beach): Candelabra cactus pair, palm cluster and bollard lights on the south lawn edge, plus the hedge line against the paseo fence.
+- IMG_2644.jpg (south-pool, paseo, barraka-beach): Seaward hedge/shrub border with grey-leaved shrubs and rocks against the fence, round shuttered turret of the east house, lamp posts along the paseo fence.
+- IMG_2646.jpg (seaward-lanes): Arch with iron gate leaves and trailing bougainvillea mid-lane, and the barred window projecting over a terracotta sill on the right.
+- IMG_2647.jpg (seaward-lanes): Plain worn terracotta squares with broad grey grout, and the raised planter beside the gate.
+- IMG_2648.jpg (seaward-lanes): Cubic stepped massing with recessed windows, balcony rail and terrace parapets of these houses.
+- IMG_2649.jpg (seaward-lanes): Wall lanterns, balcony rail, plain recessed doorway and chimney tower detail on these facades; lane edge strip.
+- IMG_2650.jpg (seaward-lanes, south-pool): Signs/notices on the gate wall and the gate arch itself at the south end of Calle Silvia.
+- IMG_2652.jpg (seaward-lanes): Front garden with stepping-stone path and patio threshold, plain stucco corner with plinth stain.
+- IMG_2654.jpg (seaward-lanes): Tile size, grout width and the aggregate edge/cross band for the lane paving.
+- IMG_2656.jpg (seaward-lanes): Ramp-and-steps combination (three white-nosed risers, studded rubber ramp) and the arched exit with lanterns; model's Silvia study covers the 1-15 passage only.
+- IMG_2657.jpg (seaward-lanes): Step count (three), riser/nosing detail and dark tile border lines are readable here for the levels survey.
+- IMG_2660.jpg (seaward-lanes): Narrowest part of the lane; wall heights and gate position not measured.
+- IMG_2661.jpg (seaward-lanes): Utility covers and aggregate paving borders at the junction.
+- IMG_2662.jpg (seaward-lanes): Wall-door sequence with curved-coping door surrounds along Patricia (west part) and kerbed shrub beds.
+- IMG_2663.jpg (seaward-lanes): Stepped wall tops, brown arched doors with curved surrounds and the drain/cover set in the paving.
+- IMG_2664.jpg (seaward-lanes, middle-pool): Stepped planter wall on the left and the continuous planter run along both sides.
+- IMG_2665.jpg (seaward-lanes): Projecting grille with ring ties above terracotta sill and wall lantern; model has the window-cage reference from IMG_2189/2334.
+- IMG_2666.jpg (seaward-lanes, middle-pool): Row of arched recessed doorways on both lane frontages.
+- IMG_2667.jpg (seaward-lanes): Recessed entrance arch depth with a single brown door and inset-tile floor.
+- IMG_2668.jpg (seaward-lanes): Photo pair with IMG_2190 for the Silvia 1-15 tunnel components (doors, lanterns, ceiling).
+- IMG_2669.jpg (seaward-lanes): Ramp/steps layout and gate arch at the passage west end; levels survey could take riser heights from here.
+- IMG_2670.jpg (seaward-lanes): Closest-to-straight view of the passage floor and arch for a component pack.
+- IMG_2671.jpg (seaward-lanes, middle-pool): Barred windows with tile-capped planter walls along the west frontage and the stepped low planter edge on the left are visible side detail for the lane model.
+- IMG_2672.jpg (seaward-lanes): Pebble-mosaic rectangle, recessed shuttered window niches, lantern and arch profile could be checked against the Silvia tunnel model.
+- IMG_2673.jpg (seaward-lanes): Planter outlines, cream kerb edge and the diagonal blue-insert tile pattern beyond the Silvia arch are visible for the inner path surface.
+- IMG_2674.jpg (seaward-lanes): Two successive arches with the lantern and pot positions could add to the covered-passage reference pack.
+- IMG_2676.jpg (eva, middle-pool): Gravel/aggregate strip beside the left kerb and the white raised kerb curve on the right are details of the path edge.
+- IMG_2677.jpg (eva, middle-pool): Small notice/sign plaques beside the gateway, the bougainvillea on the wall, and the house with balcony and tiled eave behind the gate.
+- IMG_2678.jpg (middle-pool, eva): Entry paving transition from terracotta to flagstone with two cast covers, and the curved coping on the gateway wall.
+- IMG_2679.jpg (middle-pool, eva): Curved white wall with clipped hedge on top, bollard lamp and crazy-paving path edges around the lawn for the middle pool garden build.
+- IMG_2680.jpg (middle-pool, elena): Path fork and lawn wedge shape, low white retaining wall edges and dense green hedge at right.
+- IMG_2681.jpg (middle-pool, elena): Iron gate in a finite white wall with a brown door beside it, and the flagstone path curve leading to it.
+- IMG_2682.jpg (elena): Door steps with terracotta treads projecting into the lane and the tile-capped planter wall below the barred window.
+- IMG_2683.jpg (elena): Brown timber doors in white walls with small gate steps and the kerb-edged lawn bed with clipped trees are not obviously in the model.
+- IMG_2684.jpg (elena): Cross-path spur of red tile into the lawn bed, kerb curves, and house frontage detail.
+- IMG_2685.jpg (elena): Barred window bays with tile-capped sills along the east wall and the lamp post position.
+- IMG_2686.jpg (elena, north-lanes): Irrigation drip pipes, the low hedge edging and the barred windows with white framing on the west wall.
+- IMG_2688.jpg (elena, north-pool): Arched entrance recess with lantern and red-tiled step, and the numbered plaque.
+- IMG_2689.jpg (elena): Three steps with a studded ramp beside them and the Calle Elena 18 36 tile sign are unmodelled detail; levels survey could use the step heights.
+- IMG_2690.jpg (elena): Pebble mat and insert-tile paving pattern, door and lantern on the covered walkway.
+- IMG_2691.jpg (elena): Panelled brown door with two leaves for the covered walkway entries; one round knob per leaf.
+- IMG_2692.jpg (elena): Brown panelled doors with round brass knobs and a small barred grille for entry doors.
+- IMG_2725.jpg (seaward-lanes, main-pool): Interior service corridor and laundry sign could be recorded as a signage and ramp reference.
+- IMG_2771.jpg (seaward-lanes, paseo): The long white wall with a planter bed on top, rectangular tile and slot drain.
+- IMG_2813.jpg (elena): Same entrance door detail as IMG_2692.
+- IMG_2822.jpg (seaward-lanes, paseo): Octagonal paving, curved lane walls and drain/manhole positions could be used to check the seaward lane model.

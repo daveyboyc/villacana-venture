@@ -27,8 +27,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 29, Levels and slopes: 8, Facades and roofs: 6, Materials: 22, Planting: 12, Signs: 3, Views: 1
-39 reviewed, 85 suggested only by camera position.
+Layout: 109, Levels and slopes: 25, Facades and roofs: 70, Materials: 98, Planting: 66, Signs: 20, Views: 14
+129 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -127,10 +127,88 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2191.jpg](../../public/photos-ref/IMG_2191.jpg) | ground | signage | Passage plaque reading CALLE SILVIA 1-15 _Used by: silvia_tunnel.json:silvia-tunnel-study._ |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
+| [IMG_2581.jpg](../../public/photos-ref/IMG_2581.jpg) | ground | layout, levels, signage, facades, materials | Arched porch entrance with three tiled steps and a street-name plaque **Note:** Plaque is only partly legible; 'T' suggests Teodoro Rojo but this is not confirmed. |
+| [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | ground | layout, facades, planting, view, materials | Tiled path along lawns towards white houses with chimneys, looking ENE **Note:** Camera is at the Teodoro Rojo / Patricia corner; view runs along Teodoro Rojo. |
+| [IMG_2656.jpg](../../public/photos-ref/IMG_2656.jpg) | ground | layout, levels, signage, materials, facades | Silvia 22-44 covered passage: red studded ramp and three tiled steps **Note:** Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. |
+| [IMG_2663.jpg](../../public/photos-ref/IMG_2663.jpg) | ground | signage, facades, materials, planting, layout | Calle Patricia lane looking ENE: white wall with brown door, bougainvillea and defibrillator sign **Note:** Identified as Patricia from the pin; heading 37 deg. |
+| [IMG_2669.jpg](../../public/photos-ref/IMG_2669.jpg) | ground | layout, levels, signage, materials, facades | Silvia 2-20 passage: red studded ramp, three steps and garden gate arch **Note:** Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia). |
+| [IMG_2670.jpg](../../public/photos-ref/IMG_2670.jpg) | ground | signage, layout, levels, materials, facades | Silvia 2-20 passage: plaque, ramp, steps and arched gate **Note:** Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia). |
+| [IMG_2771.jpg](../../public/photos-ref/IMG_2771.jpg) | ground | layout, materials, planting, facades, view | Seaward lane with tall white wall and lantana, looking NW **Note:** Pin has +/-18.4 m error and sits on the lawn; the lane and tile/drain match the Guillermo/Jorge lane (IMG_2822, IMG_2488), so the true camera is probably on that lane. |
+| [IMG_2822.jpg](../../public/photos-ref/IMG_2822.jpg) | ground | layout, levels, materials, planting, view | Seaward lane descending between white curved walls to the sea fence **Looks at:** lane descending toward the seaward end of Calle Guillermo. **Note:** Matches Calle Guillermo/Jorge lane (see IMG_2488). |
+| [IMG_2487.jpg](../../public/photos-ref/IMG_2487.jpg) | ground | layout, facades, planting, materials | Curving tiled path beside a white house and planter wall **Note:** Pin accuracy about 4.7 m; on the Guillermo/Jorge frontage near the seafront end. |
+| [IMG_2489.jpg](../../public/photos-ref/IMG_2489.jpg) | ground | layout, materials, facades, planting | Calle Patricia lane with azulejo-backed white bench **Note:** Pin accuracy poor (about 10 m); heading 242 along Calle Patricia judged from the lane line on the aerial, identity of the lane is likely but not certain. |
+| [IMG_2491.jpg](../../public/photos-ref/IMG_2491.jpg) | ground | layout, materials, facades, planting | Calle Patricia lane toward Teodoro Rojo |
+| [IMG_2493.jpg](../../public/photos-ref/IMG_2493.jpg) | ground | layout, levels, materials, facades | Calle Teodoro Rojo narrow lane looking north |
+| [IMG_2496.jpg](../../public/photos-ref/IMG_2496.jpg) | ground | signage, levels, facades, materials | Calle Teodoro 2-16 sign over stepped entrance **Looks at:** Calle Teodoro 2-16 sign wall and entrance steps. **Note:** Subject offset (~2.5 m) is approximate. |
+| [IMG_2497.jpg](../../public/photos-ref/IMG_2497.jpg) | ground | layout, facades, materials, levels | Covered tiled porch with arch and potted shrubs |
+| [IMG_2501.jpg](../../public/photos-ref/IMG_2501.jpg) | ground | layout, facades, materials, planting | Open tiled court at the Teodoro Rojo and Eva junction |
+| [IMG_2561.jpg](../../public/photos-ref/IMG_2561.jpg) | ground | layout, facades, materials, planting | Arched entrance of the Patricia covered passage with lanterns |
+| [IMG_2562.jpg](../../public/photos-ref/IMG_2562.jpg) | ground | signage, layout, facades, materials | Arch marked 'CALLE DE PATRICIA' at the start of the covered passage |
+| [IMG_2565.jpg](../../public/photos-ref/IMG_2565.jpg) | ground | layout, facades, planting, materials | Patricia lane with planted beds, arched doors and a tiled-roof arch ahead **Note:** Photo request 'patricia-west' is marked answered for this pin. |
+| [IMG_2566.jpg](../../public/photos-ref/IMG_2566.jpg) | ground | layout, facades, planting, materials | Patricia lane columns, arch and bougainvillea |
+| [IMG_2568.jpg](../../public/photos-ref/IMG_2568.jpg) | ground | layout, facades, materials, planting | Patricia passage: arch, doors, grilles and a green-netted garden beyond |
+| [IMG_2569.jpg](../../public/photos-ref/IMG_2569.jpg) | ground | layout, materials, levels, facades | Last arch of the Patricia passage with pebble mat and ramp to a lawn |
+| [IMG_2574.jpg](../../public/photos-ref/IMG_2574.jpg) | ground | levels, layout, materials, facades | Tiled steps and red studded ramp at the passage exit, planter wall to the right **Looks at:** Three-step tiled flight with red ramp. **Note:** looksAt approximate (about 3 m from the pin). |
+| [IMG_2578.jpg](../../public/photos-ref/IMG_2578.jpg) | ground | layout, materials, planting, view | Calle Teodoro Rojo/Silvia lane: terracotta path beside a white wall with grilles **Note:** Lane name not read from a sign; area under pin is seaward-lanes, near the Silvia/Teodoro Rojo corner. |
+| [IMG_2580.jpg](../../public/photos-ref/IMG_2580.jpg) | ground | layout, materials, planting, facades | Narrow tiled lane between white houses, planters and an iron gate at the end **Note:** Pin is on the lawn corner next to Teodoro Rojo; the lane runs SSE along the Patricia line from the aerial. |
+| [IMG_2582.jpg](../../public/photos-ref/IMG_2582.jpg) | ground | layout, materials, facades, levels | Covered passage with brown doors, patterned tile floor and a courtyard arch beyond **Note:** Which passage this is (compare IMG_2186/2190/2191 Calle Silvia passage) is not established; pin has +/-4.7 m accuracy. |
+| [IMG_2583.jpg](../../public/photos-ref/IMG_2583.jpg) | ground | layout, facades, planting, materials | Courtyard seen through an arch: bougainvillea, balconies and patterned tile floor **Note:** Pin accuracy is poor (+/-9.7 m), so the courtyard position is approximate. |
+| [IMG_2584.jpg](../../public/photos-ref/IMG_2584.jpg) | ground | layout, materials, facades, planting | Covered passage with hanging lanterns and an arched iron gate to a lawn **Note:** Same spot as IMG_2585 looking the opposite way. Possibly the same passage type as IMG_2186/2190 (Calle Silvia) but identity unconfirmed. |
+| [IMG_2588.jpg](../../public/photos-ref/IMG_2588.jpg) | ground | layout, materials, planting, facades | Tiled courtyard with raised planters and an arched covered entrance |
+| [IMG_2592.jpg](../../public/photos-ref/IMG_2592.jpg) | ground | layout, levels, materials, facades | View out of an arch to a small white court with a ribbed ramp and step |
+| [IMG_2593.jpg](../../public/photos-ref/IMG_2593.jpg) | ground | layout, materials, planting, view | Narrow tiled lane between white walls, looking NNW **Note:** Lane read as the Patricia line from the aerial; no street sign is visible. |
+| [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | ground | layout, facades, planting, materials | Lane between white houses with lamp post, yucca palm and Norfolk pine, looking NNW **Note:** Nearly the same shot as IMG_2593. |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. |
+| [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | ground | layout, levels, materials, view | Curved white-walled tiled descent at the foot of the lane to the beach fence **Note:** Foot of Calle Guillermo area, close to IMG_2600/2601. |
+| [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | ground | layout, materials, view, planting | Tiled landing at the foot of the lane with hedge and green fence to the beach **Note:** Foot of Calle Guillermo. Tile joints change to a fan pattern at the far left. |
+| [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | ground | layout, materials, facades, planting | Vaulted arcade with patterned tile floor, pebble mosaic and garden gate beyond **Note:** Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. |
+| [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | ground | facades, materials, planting, layout | Bougainvillea over a white arch, second arch and gate beyond, pebble mosaic floor panel **Note:** Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. |
+| [IMG_2641.jpg](../../public/photos-ref/IMG_2641.jpg) | ground | signage, layout, materials, planting | Passage to the south pool lawn: arched iron gate and Calle de Jorge plaque **Note:** Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. Plaque ties this passage to Calle de Jorge. |
+| [IMG_2646.jpg](../../public/photos-ref/IMG_2646.jpg) | ground | layout, materials, planting, facades | Calle Silvia lane looking NNW to an arched iron gate **Note:** Phone altitude 9.1 m is just over the 9 m ground limit but the shot is plainly standing in the lane (neighbours read 7-8 m); keep as ground. Pin is at the south end of the lane by the south pool lawn. |
+| [IMG_2650.jpg](../../public/photos-ref/IMG_2650.jpg) | ground | layout, signage, materials, view | Looking back SSE down the lane to a gate onto the south pool lawn **Note:** Heading 147 deg: looks back SSE down the lane towards the gate onto the south pool lawn (cf. IMG_2646/2647 the other way). |
+| [IMG_2657.jpg](../../public/photos-ref/IMG_2657.jpg) | ground | layout, levels, materials, facades | Silvia 22-44 passage: steps with dark edge bands beside studded ramp **Note:** Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. |
+| [IMG_2662.jpg](../../public/photos-ref/IMG_2662.jpg) | ground | layout, planting, facades, materials | Calle Patricia lane looking WSW between white walls with brown doors **Note:** Pin lies on the Calle Patricia axis at its crossing with Calle Silvia; lane identified from that, not from signage. |
+| [IMG_2664.jpg](../../public/photos-ref/IMG_2664.jpg) | ground | layout, planting, facades, materials | Calle Silvia north: tiled lane looking NNW to the arch and lawn **Note:** Same lane as IMG_2189 from its southern end; far arch is probably the middle pool south gateway. |
+| [IMG_2668.jpg](../../public/photos-ref/IMG_2668.jpg) | ground | layout, materials, facades, planting | Silvia passage interior looking ENE to the arch **Note:** Same viewpoint and heading (about 55 deg) as IMG_2190; it is the Silvia 1-15 passage seen from its inner side. |
+| [IMG_2671.jpg](../../public/photos-ref/IMG_2671.jpg) | ground | layout, materials, facades, planting | Silvia lane north of the tunnel looking NW to the middle pool south gateway **Looks at:** south gateway of the middle pool at the end of the Silvia lane. **Note:** Same lane and gateway as IMG_2189/2334 from a closer, lower angle; pin sits on the Silvia lane at the tunnel mouth. |
+| [IMG_2674.jpg](../../public/photos-ref/IMG_2674.jpg) | ground | layout, materials, facades, planting | Second arched opening inside the east block with lantern and potted ficus **Note:** Pin (-100.7,105.8, +/-4.8 m) sits in the middle of the large block roof, so it is an indoor/under-roof position; the passage is the Silvia/east-block covered route, but its map alignment is uncertain. |
+| [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials, facades | Tiled apron at the foot of Calle Guillermo with curved wall **Note:** Pin accuracy about 4 m; heading 217 points back down the seafront end of Guillermo. |
+| [IMG_2492.jpg](../../public/photos-ref/IMG_2492.jpg) | ground | signage, facades, materials | Calle de Teodoro street sign and arched wooden door **Looks at:** Calle de Teodoro tile street sign. **Note:** Subject offset (~2 m) from the pin is approximate. |
 | [IMG_2494.jpg](../../public/photos-ref/IMG_2494.jpg) | ground | layout, facades, materials | Narrow lane by Teodoro Rojo: barred windows, planter, drains **Looks at:** Narrow lane north of Teodoro Rojo. **Note:** Near-duplicate viewpoint of IMG_2241. |
+| [IMG_2495.jpg](../../public/photos-ref/IMG_2495.jpg) | ground | layout, facades, materials | Teodoro Rojo lane with barred window and arched doorway |
+| [IMG_2498.jpg](../../public/photos-ref/IMG_2498.jpg) | ground | facades, planting, layout | Rear gardens with timber pergolas and white houses **Note:** Camera is on the Teodoro Rojo lane edge; the houses and gardens are private and further north-north-east. |
+| [IMG_2499.jpg](../../public/photos-ref/IMG_2499.jpg) | ground | layout, planting, materials | Grass path between white walls and hedges **Note:** Private-garden access, not a tiled lane; same pin as IMG_2500. |
+| [IMG_2500.jpg](../../public/photos-ref/IMG_2500.jpg) | ground | layout, planting, materials | Grass garden path with wooden gates **Note:** Same pin as IMG_2499, slightly rotated. |
 | [IMG_2559.jpg](../../public/photos-ref/IMG_2559.jpg) | ground | layout, materials, planting | Calle Patricia from its west end, looking along the lane **Looks at:** Calle Patricia looking east-north-east from its west end. |
+| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | ground | layout, materials, planting | Calle Patricia west end: narrow terracotta lane between high white walls **Note:** Photo request 'patricia-west' is marked answered for this pin. |
+| [IMG_2563.jpg](../../public/photos-ref/IMG_2563.jpg) | ground | layout, materials, facades | Patricia covered passage with brown doors and a pebble mosaic mat |
+| [IMG_2570.jpg](../../public/photos-ref/IMG_2570.jpg) | ground | levels, layout, materials | Passage exit with tiled steps, red ramp mat and white planter walls **Looks at:** Tiled steps and red ramp mat at passage exit. **Note:** looksAt is approximate: steps estimated about 5 m ahead along the heading. |
+| [IMG_2571.jpg](../../public/photos-ref/IMG_2571.jpg) | ground | planting, layout, facades | Garden bed with oleander beside the passage exit, from behind a white pier |
+| [IMG_2573.jpg](../../public/photos-ref/IMG_2573.jpg) | ground | planting, facades, materials | Oleander hedge, lawn and white townhouse with balcony beside the path **Note:** The sheet shows many photo pins crowded at this spot, so this pin is only a rough guess. |
+| [IMG_2575.jpg](../../public/photos-ref/IMG_2575.jpg) | ground | levels, layout, materials | Steps, ramp and planter wall seen from the Silvia lane side **Looks at:** Flight of three steps beside red ramp. **Note:** looksAt approximate (about 3 m from the pin). |
+| [IMG_2576.jpg](../../public/photos-ref/IMG_2576.jpg) | ground | layout, signage, planting | Narrow lane to an open iron gate and the grass at the end, between oleander and planter **Looks at:** Open iron gate at the end of the lane. **Note:** Which pool lies beyond the gate is not confirmed; the lawn with a lifebuoy suggests the south pool, but this is not proven. looksAt is about 14 m ahead. |
+| [IMG_2577.jpg](../../public/photos-ref/IMG_2577.jpg) | ground | layout, signage, materials | Iron gate with notices at the end of the lane, planted wall on the right **Looks at:** Open iron gate with notices at lane end. **Note:** Same gate as IMG_2576. Beyond-gate lawn assumed to be the pool lawn; not confirmed. looksAt is about 14 m ahead along the heading. |
+| [IMG_2579.jpg](../../public/photos-ref/IMG_2579.jpg) | ground | layout, materials, facades | Tiled lane with white planter walls and barred windows, looking ENE **Note:** Camera is at the Teodoro Rojo / Patricia junction; the lane is read as the Teodoro Rojo run towards IMG_2595 from the aerial, not from a sign. |
+| [IMG_2585.jpg](../../public/photos-ref/IMG_2585.jpg) | ground | layout, materials, facades | Covered passage looking NNW to an arch and courtyard **Note:** Reverse view of IMG_2584 (pin about 0.5 m apart). |
 | [IMG_2586.jpg](../../public/photos-ref/IMG_2586.jpg) | ground | facades, materials, planting | Courtyard with arch and patterned floor near Calle Jorge |
+| [IMG_2587.jpg](../../public/photos-ref/IMG_2587.jpg) | ground | materials, layout, planting | Tile floor with blue-and-white crest inserts between raised white planters |
+| [IMG_2589.jpg](../../public/photos-ref/IMG_2589.jpg) | ground | facades, materials, layout | Arched porch with potted plants, drain grating and double door |
+| [IMG_2590.jpg](../../public/photos-ref/IMG_2590.jpg) | ground | facades, materials, layout | Covered porch with arch, pale double door and hanging lantern |
+| [IMG_2591.jpg](../../public/photos-ref/IMG_2591.jpg) | ground | layout, materials, facades | Covered passage with brown double doors and a doormat, arch to a white wall **Note:** Pin has about 3 m accuracy and four shots (2589-2592) are within a few metres; which passage is not established. |
+| [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | ground | materials, layout, signage | White tiled bench, cast manhole covers and terracotta paving **Looks at:** white tiled bench and manhole covers. **Note:** Appears to be the white bench seen in IMG_2182. |
+| [IMG_2647.jpg](../../public/photos-ref/IMG_2647.jpg) | ground | layout, materials, planting | Lane arch with open iron gate leaves, terracotta paving with wide grout **Note:** Lane runs about NNW along Calle Silvia south section; exact gate position unresolved. |
+| [IMG_2648.jpg](../../public/photos-ref/IMG_2648.jpg) | ground | facades, planting, layout | White cubic houses behind an oleander hedge, east of Calle Silvia **Note:** Subject is the garden court east of the lane; identity of the houses within the registry footprints not established. |
+| [IMG_2649.jpg](../../public/photos-ref/IMG_2649.jpg) | ground | facades, planting, materials | House fronts behind oleander and green netting beside the lane **Note:** Same garden court as IMG_2648; green shading net is a temporary-looking item. |
+| [IMG_2651.jpg](../../public/photos-ref/IMG_2651.jpg) | ground | planting, materials, facades | Terracotta lane beside oleander hedge, houses with bougainvillea to the east |
+| [IMG_2652.jpg](../../public/photos-ref/IMG_2652.jpg) | ground | facades, planting, layout | Lawn and patio at a white house corner with air conditioner **Note:** Private-looking front garden east of the lane; extent not traced. |
+| [IMG_2660.jpg](../../public/photos-ref/IMG_2660.jpg) | ground | layout, materials, facades | Narrow lane between white walls and a barred house front, heading NNW |
+| [IMG_2665.jpg](../../public/photos-ref/IMG_2665.jpg) | ground | facades, planting, layout | Barred shuttered window and arched openings on Calle Silvia north |
+| [IMG_2666.jpg](../../public/photos-ref/IMG_2666.jpg) | ground | layout, facades, planting | Calle Silvia north: arched recesses either side, gate arch with green lattice ahead **Note:** Heading 319 deg; same lane and gate as IMG_2189 (322 deg). |
+| [IMG_2667.jpg](../../public/photos-ref/IMG_2667.jpg) | ground | facades, materials, planting | Recessed arched entrance with door, pots and inlaid tile floor **Note:** Appears to be the recessed entrance beside the Silvia 1-15 passage (cf. IMG_2190); not located precisely. |
+| [IMG_2672.jpg](../../public/photos-ref/IMG_2672.jpg) | ground | layout, materials, facades | Covered arched passage under the east block, looking east into a garden **Note:** Looks like the Silvia covered passage (same style as IMG_2190). Pin is at the lane mouth with +/-3 m, so the passage position is only roughly fixed. |
+| [IMG_2673.jpg](../../public/photos-ref/IMG_2673.jpg) | ground | layout, materials, planting | Courtyard path inside the east block with raised planters and a manhole **Note:** Pin repeats IMG_2672's (-117.6,114.1) but this view is beyond the arch inside the block; indoor GPS probably froze, so the true camera is likely several metres east. Treat the position as unreliable. |
 | [IMG_2675.jpg](../../public/photos-ref/IMG_2675.jpg) | ground | layout, materials, planting | Lane off Teodoro Rojo between planted walls |
+| [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | ground | layout, signage, levels | Barred gate view into a laundry corridor with a red studded ramp **Note:** Pin is on Calle Patricia/Guillermo beside a large white roofed block with +/-4.7 m; the heading looks into the block, but which building is not identifiable from the photo. |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |
@@ -141,112 +219,32 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2240.jpg](../../public/photos-ref/IMG_2240.jpg) | ground | layout, materials | Square-tiled lane between a hedge and a white wall |
 | [IMG_2241.jpg](../../public/photos-ref/IMG_2241.jpg) | ground | layout, facades | Narrow lane with window grilles and a drain |
 | [IMG_2242.jpg](../../public/photos-ref/IMG_2242.jpg) | ground | layout, materials | Covered entrance with tiled step and patterned floor |
+| [IMG_2564.jpg](../../public/photos-ref/IMG_2564.jpg) | ground | materials, layout | Pebble mosaic with floral motif in the Patricia passage floor |
+| [IMG_2567.jpg](../../public/photos-ref/IMG_2567.jpg) | ground | facades, planting | Patricia lane arch with tiled eave, shutters and bougainvillea (looking up) |
 | [IMG_2572.jpg](../../public/photos-ref/IMG_2572.jpg) | ground | layout, planting | Path between oleanders off Calle Silvia south |
+| [IMG_2653.jpg](../../public/photos-ref/IMG_2653.jpg) | ground | facades, planting | House front with balcony and bougainvillea behind oleander and netting |
 | [IMG_2658.jpg](../../public/photos-ref/IMG_2658.jpg) | ground | levels, materials | Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp |
+| [IMG_2661.jpg](../../public/photos-ref/IMG_2661.jpg) | ground | materials, layout | Pavement at the Silvia / Patricia junction: slab, covers and white wall **Note:** Junction identity is from the map: pin lies on Calle Patricia where it crosses Silvia. |
 | [IMG_2183.jpg](../../public/photos-ref/IMG_2183.jpg) | ground | planting | Lawn with a tall candelabra cactus and clipped shrubs |
 | [IMG_2186.jpg](../../public/photos-ref/IMG_2186.jpg) | ground | layout | Covered passage through the terrace with a view to the sea |
 | [IMG_2231.jpg](../../public/photos-ref/IMG_2231.jpg) | ground | materials | White tiled bench beside the lane |
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
+| [IMG_2654.jpg](../../public/photos-ref/IMG_2654.jpg) | ground | materials | Terracotta lane paving close-up with aggregate edging and cross band **Note:** Pure surface detail; heading is a downward angle so subject is just beside the camera. |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
+| [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | ground | layout, materials, planting, view, facades | Open iron gate onto crazy-paving path and south pool lawn **Note:** Pin has +-22 m GPS. The visible pool lobe lies about 45 deg to the left of the heading whereas the south pool centre from the pin is about 17 deg, so the pin is probably roughly 10 m too far south-east; do not use it to place the gate without a camera solve. Glass pool fence is skipped by project decision. |
+| [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
+| [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | view, facades, layout, materials | From the Barraka terrace looking SW along the paseo to the white houses **Note:** Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace. |
+| [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | signage, facades, planting | Comunidad Villacana gate sign at the end of Calle Guillermo **Looks at:** Comunidad Villacana sign on the Guillermo gate wall. **Note:** Subject offset (~2 m) from the pin is approximate. |
+| [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | ground | layout, materials, planting | Long tiled path to an arched iron gate **Note:** Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW toward a white gateway (possibly the middle pool east gateway, not confirmed). |
+| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | view, planting, layout | Lawn and flowering lantana border looking east to the Barraka restaurant **Looks at:** Barraka beach restaurant. **Note:** Building identified as Barraka from the matching view in IMG_2604; looksAt reused from IMG_2482. |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
+| [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | view, layout, planting | From the Barraka terrace over rattan lounge seating and the paseo **Note:** Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | `villacana-reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |
-
-## Suggested by camera position, not yet reviewed
-
-The camera stood in or near this area. Check what the picture actually shows before relying on it.
-
-| Reference | Viewpoint | Use for | What it shows |
-| --- | --- | --- | --- |
-| [IMG_2489.jpg](../../public/photos-ref/IMG_2489.jpg) | not reviewed | not reviewed | IMG_2489 |
-| [IMG_2491.jpg](../../public/photos-ref/IMG_2491.jpg) | not reviewed | not reviewed | IMG_2491 |
-| [IMG_2492.jpg](../../public/photos-ref/IMG_2492.jpg) | not reviewed | not reviewed | IMG_2492 |
-| [IMG_2493.jpg](../../public/photos-ref/IMG_2493.jpg) | not reviewed | not reviewed | IMG_2493 |
-| [IMG_2495.jpg](../../public/photos-ref/IMG_2495.jpg) | not reviewed | not reviewed | IMG_2495 |
-| [IMG_2496.jpg](../../public/photos-ref/IMG_2496.jpg) | not reviewed | not reviewed | IMG_2496 |
-| [IMG_2497.jpg](../../public/photos-ref/IMG_2497.jpg) | not reviewed | not reviewed | IMG_2497 |
-| [IMG_2498.jpg](../../public/photos-ref/IMG_2498.jpg) | not reviewed | not reviewed | IMG_2498 |
-| [IMG_2499.jpg](../../public/photos-ref/IMG_2499.jpg) | not reviewed | not reviewed | IMG_2499 |
-| [IMG_2500.jpg](../../public/photos-ref/IMG_2500.jpg) | not reviewed | not reviewed | IMG_2500 |
-| [IMG_2501.jpg](../../public/photos-ref/IMG_2501.jpg) | not reviewed | not reviewed | IMG_2501 |
-| [IMG_2560.jpg](../../public/photos-ref/IMG_2560.jpg) | not reviewed | not reviewed | IMG_2560 |
-| [IMG_2561.jpg](../../public/photos-ref/IMG_2561.jpg) | not reviewed | not reviewed | IMG_2561 |
-| [IMG_2562.jpg](../../public/photos-ref/IMG_2562.jpg) | not reviewed | not reviewed | IMG_2562 |
-| [IMG_2563.jpg](../../public/photos-ref/IMG_2563.jpg) | not reviewed | not reviewed | IMG_2563 |
-| [IMG_2564.jpg](../../public/photos-ref/IMG_2564.jpg) | not reviewed | not reviewed | IMG_2564 |
-| [IMG_2565.jpg](../../public/photos-ref/IMG_2565.jpg) | not reviewed | not reviewed | IMG_2565 |
-| [IMG_2566.jpg](../../public/photos-ref/IMG_2566.jpg) | not reviewed | not reviewed | IMG_2566 |
-| [IMG_2567.jpg](../../public/photos-ref/IMG_2567.jpg) | not reviewed | not reviewed | IMG_2567 |
-| [IMG_2568.jpg](../../public/photos-ref/IMG_2568.jpg) | not reviewed | not reviewed | IMG_2568 |
-| [IMG_2569.jpg](../../public/photos-ref/IMG_2569.jpg) | not reviewed | not reviewed | IMG_2569 |
-| [IMG_2570.jpg](../../public/photos-ref/IMG_2570.jpg) | not reviewed | not reviewed | IMG_2570 |
-| [IMG_2571.jpg](../../public/photos-ref/IMG_2571.jpg) | not reviewed | not reviewed | IMG_2571 |
-| [IMG_2573.jpg](../../public/photos-ref/IMG_2573.jpg) | not reviewed | not reviewed | IMG_2573 |
-| [IMG_2574.jpg](../../public/photos-ref/IMG_2574.jpg) | not reviewed | not reviewed | IMG_2574 |
-| [IMG_2575.jpg](../../public/photos-ref/IMG_2575.jpg) | not reviewed | not reviewed | IMG_2575 |
-| [IMG_2576.jpg](../../public/photos-ref/IMG_2576.jpg) | not reviewed | not reviewed | IMG_2576 |
-| [IMG_2577.jpg](../../public/photos-ref/IMG_2577.jpg) | not reviewed | not reviewed | IMG_2577 |
-| [IMG_2578.jpg](../../public/photos-ref/IMG_2578.jpg) | not reviewed | not reviewed | IMG_2578 |
-| [IMG_2579.jpg](../../public/photos-ref/IMG_2579.jpg) | not reviewed | not reviewed | IMG_2579 |
-| [IMG_2580.jpg](../../public/photos-ref/IMG_2580.jpg) | not reviewed | not reviewed | IMG_2580 |
-| [IMG_2581.jpg](../../public/photos-ref/IMG_2581.jpg) | not reviewed | not reviewed | IMG_2581 |
-| [IMG_2582.jpg](../../public/photos-ref/IMG_2582.jpg) | not reviewed | not reviewed | IMG_2582 |
-| [IMG_2583.jpg](../../public/photos-ref/IMG_2583.jpg) | not reviewed | not reviewed | IMG_2583 |
-| [IMG_2587.jpg](../../public/photos-ref/IMG_2587.jpg) | not reviewed | not reviewed | IMG_2587 |
-| [IMG_2588.jpg](../../public/photos-ref/IMG_2588.jpg) | not reviewed | not reviewed | IMG_2588 |
-| [IMG_2589.jpg](../../public/photos-ref/IMG_2589.jpg) | not reviewed | not reviewed | IMG_2589 |
-| [IMG_2590.jpg](../../public/photos-ref/IMG_2590.jpg) | not reviewed | not reviewed | IMG_2590 |
-| [IMG_2591.jpg](../../public/photos-ref/IMG_2591.jpg) | not reviewed | not reviewed | IMG_2591 |
-| [IMG_2592.jpg](../../public/photos-ref/IMG_2592.jpg) | not reviewed | not reviewed | IMG_2592 |
-| [IMG_2593.jpg](../../public/photos-ref/IMG_2593.jpg) | not reviewed | not reviewed | IMG_2593 |
-| [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | not reviewed | not reviewed | IMG_2594 |
-| [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | not reviewed | not reviewed | IMG_2595 |
-| [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | not reviewed | not reviewed | IMG_2596 |
-| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | not reviewed | not reviewed | IMG_2597 |
-| [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | not reviewed | not reviewed | IMG_2598 |
-| [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | not reviewed | not reviewed | IMG_2599 |
-| [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | not reviewed | not reviewed | IMG_2601 |
-| [IMG_2646.jpg](../../public/photos-ref/IMG_2646.jpg) | not reviewed | not reviewed | IMG_2646 |
-| [IMG_2647.jpg](../../public/photos-ref/IMG_2647.jpg) | not reviewed | not reviewed | IMG_2647 |
-| [IMG_2648.jpg](../../public/photos-ref/IMG_2648.jpg) | not reviewed | not reviewed | IMG_2648 |
-| [IMG_2649.jpg](../../public/photos-ref/IMG_2649.jpg) | not reviewed | not reviewed | IMG_2649 |
-| [IMG_2650.jpg](../../public/photos-ref/IMG_2650.jpg) | not reviewed | not reviewed | IMG_2650 |
-| [IMG_2651.jpg](../../public/photos-ref/IMG_2651.jpg) | not reviewed | not reviewed | IMG_2651 |
-| [IMG_2652.jpg](../../public/photos-ref/IMG_2652.jpg) | not reviewed | not reviewed | IMG_2652 |
-| [IMG_2653.jpg](../../public/photos-ref/IMG_2653.jpg) | not reviewed | not reviewed | IMG_2653 |
-| [IMG_2654.jpg](../../public/photos-ref/IMG_2654.jpg) | not reviewed | not reviewed | IMG_2654 |
-| [IMG_2656.jpg](../../public/photos-ref/IMG_2656.jpg) | not reviewed | not reviewed | IMG_2656 |
-| [IMG_2657.jpg](../../public/photos-ref/IMG_2657.jpg) | not reviewed | not reviewed | IMG_2657 |
-| [IMG_2660.jpg](../../public/photos-ref/IMG_2660.jpg) | not reviewed | not reviewed | IMG_2660 |
-| [IMG_2661.jpg](../../public/photos-ref/IMG_2661.jpg) | not reviewed | not reviewed | IMG_2661 |
-| [IMG_2662.jpg](../../public/photos-ref/IMG_2662.jpg) | not reviewed | not reviewed | IMG_2662 |
-| [IMG_2663.jpg](../../public/photos-ref/IMG_2663.jpg) | not reviewed | not reviewed | IMG_2663 |
-| [IMG_2664.jpg](../../public/photos-ref/IMG_2664.jpg) | not reviewed | not reviewed | IMG_2664 |
-| [IMG_2665.jpg](../../public/photos-ref/IMG_2665.jpg) | not reviewed | not reviewed | IMG_2665 |
-| [IMG_2666.jpg](../../public/photos-ref/IMG_2666.jpg) | not reviewed | not reviewed | IMG_2666 |
-| [IMG_2667.jpg](../../public/photos-ref/IMG_2667.jpg) | not reviewed | not reviewed | IMG_2667 |
-| [IMG_2668.jpg](../../public/photos-ref/IMG_2668.jpg) | not reviewed | not reviewed | IMG_2668 |
-| [IMG_2669.jpg](../../public/photos-ref/IMG_2669.jpg) | not reviewed | not reviewed | IMG_2669 |
-| [IMG_2670.jpg](../../public/photos-ref/IMG_2670.jpg) | not reviewed | not reviewed | IMG_2670 |
-| [IMG_2671.jpg](../../public/photos-ref/IMG_2671.jpg) | not reviewed | not reviewed | IMG_2671 |
-| [IMG_2672.jpg](../../public/photos-ref/IMG_2672.jpg) | not reviewed | not reviewed | IMG_2672 |
-| [IMG_2673.jpg](../../public/photos-ref/IMG_2673.jpg) | not reviewed | not reviewed | IMG_2673 |
-| [IMG_2674.jpg](../../public/photos-ref/IMG_2674.jpg) | not reviewed | not reviewed | IMG_2674 |
-| [IMG_2676.jpg](../../public/photos-ref/IMG_2676.jpg) | not reviewed | not reviewed | IMG_2676 |
-| [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | not reviewed | not reviewed | IMG_2725 |
-| [IMG_2771.jpg](../../public/photos-ref/IMG_2771.jpg) | not reviewed | not reviewed | IMG_2771 |
-| [IMG_2822.jpg](../../public/photos-ref/IMG_2822.jpg) | not reviewed | not reviewed | IMG_2822 |
-| [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | not reviewed | not reviewed | IMG_2484 |
-| [IMG_2487.jpg](../../public/photos-ref/IMG_2487.jpg) | not reviewed | not reviewed | IMG_2487 |
-| [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | not reviewed | not reviewed | IMG_2502 |
-| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | not reviewed | not reviewed | IMG_2503 |
-| [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | not reviewed | not reviewed | IMG_2504 |
-| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | not reviewed | not reviewed | IMG_2602 |
-| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | not reviewed | not reviewed | IMG_2677 |

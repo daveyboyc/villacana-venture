@@ -12,8 +12,8 @@ The northern boundary roads and the lanes round the north pool's upper side.
 
 ## Coverage
 
-No references reviewed by topic yet.
-0 reviewed, 2 suggested only by camera position.
+Layout: 2, Levels and slopes: 1, Facades and roofs: 1, Materials: 2, Planting: 1, Signs: 1
+2 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -23,11 +23,9 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P2 | `path-network-inventory-north-lanes` [#133](https://github.com/daveyboyc/villacana-venture/issues/133) | Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
-## Suggested by camera position, not yet reviewed
-
-The camera stood in or near this area. Check what the picture actually shows before relying on it.
+## Reviewed references
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | not reviewed | not reviewed | IMG_2449 |
-| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | not reviewed | not reviewed | IMG_2448 |
+| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. |
+| [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). |

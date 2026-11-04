@@ -122,7 +122,7 @@ def build(reference:Path):
         entry.update(subject_of(photo,tag,model))
         # Phone altitude separates the two: ground shots read 9 m or less, roof and upper-floor shots more.
         alt=photo.get('altitude')
-        if alt is not None and tag.get('viewpoint')=='ground' and alt>ALTITUDE_SPLIT:problems.append(f'{f}: tagged ground but altitude {alt} m suggests a roof or upper floor')
+        if alt is not None and tag.get('viewpoint')=='ground' and alt>ALTITUDE_SPLIT and not tag.get('altitudeChecked'):problems.append(f'{f}: tagged ground but altitude {alt} m suggests a roof or upper floor')
         if alt is not None and tag.get('viewpoint') in ('roof','upper-floor') and alt<=ALTITUDE_SPLIT:problems.append(f'{f}: tagged {tag["viewpoint"]} but altitude {alt} m suggests ground level')
         catalog.append(entry)
     files=set(reference_files(reference))
