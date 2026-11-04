@@ -79,10 +79,10 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting, materials | Pintor Dalí: houses, lamps and parking bays **Looks at:** A black lantern and the white house frontage beside the parking bays. _Used by: dali_street.json:dali-house-lanterns._ |
 | [IMG_2283.jpg](../../public/photos-ref/IMG_2283.jpg) | ground | levels, layout, facades | Pintor Dalí: raised stone approach and archway _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2295.jpg](../../public/photos-ref/IMG_2295.jpg) | ground | layout, facades | Dalí seaward end: covered access and shutters _Used by: door_sills.json:dali-south-arch-approach._ |
-| [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 
 ## Calle Eva

@@ -28,8 +28,8 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Layout | 147 | [topics/layout.md](topics/layout.md) |
 | Levels and slopes | 35 | [topics/levels.md](topics/levels.md) |
 | Facades and roofs | 51 | [topics/facades.md](topics/facades.md) |
-| Materials | 82 | [topics/materials.md](topics/materials.md) |
-| Planting | 63 | [topics/planting.md](topics/planting.md) |
+| Materials | 86 | [topics/materials.md](topics/materials.md) |
+| Planting | 66 | [topics/planting.md](topics/planting.md) |
 | Signs | 14 | [topics/signage.md](topics/signage.md) |
 | Views | 33 | [topics/view.md](topics/view.md) |
 
@@ -42,6 +42,6 @@ Use the canonical app root (`/?view=map`) and search a photo ID, place or visibl
 
 Here “reviewed references” means content/area tags were inspected; it does not certify model placement. Placement approval is separate from photo diagnostics: see [graph.json](graph.json) v2, [placement records](../data/placement_reviews.json) and [placement policy](../docs/PLACEMENT_VERIFICATION.md). Citation links and software results do not grant placement approval. Open discrepancies block it.
 
-Photo checks (`data/photo_checks.json`): 48 photo-check records, 2 match, 2 differ. 28 of 39 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
+Photo checks (`data/photo_checks.json`): 55 photo-check records, 2 match, 9 differ. 28 of 39 done tasks lack complete newer photo-check records (earlier manual reviews may exist) (QUEUE.md, verification backlog).
 
 Path-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.

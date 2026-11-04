@@ -86,7 +86,10 @@ Trees, hedges, palms, climbers and beds.
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2268.jpg](../../public/photos-ref/IMG_2268.jpg) | ground | layout, planting | Pintor Dalí: house-side footpath and parking looking south _Used by: dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
-| [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
+| [IMG_2269.jpg](../../public/photos-ref/IMG_2269.jpg) | ground | layout, materials, planting | Pintor Dalí: parking and chain-link fence looking south **Looks at:** The white curb, rusty chain-link and house-side black lanterns, looking south along Pintor Dalí. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2270.jpg](../../public/photos-ref/IMG_2270.jpg) | ground | layout, materials, planting | Pintor Dalí: parking and fence looking north **Looks at:** The same curb, hedge and a house-side lantern, looking north along Pintor Dalí. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2278.jpg](../../public/photos-ref/IMG_2278.jpg) | ground | layout, materials, planting | Pintor Dalí: seaward parking row and chain-link fence **Looks at:** Brown chain-link on a concrete plinth, the white curb, and the hedge behind. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting, materials | Pintor Dalí: houses, lamps and parking bays **Looks at:** A black lantern and the white house frontage beside the parking bays. _Used by: dali_street.json:dali-house-lanterns._ |
 
 ## Calle Eva
 

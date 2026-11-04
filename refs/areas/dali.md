@@ -7,19 +7,20 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 ## Known facts and open questions
 
 - The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.
+- The aisle fence is a white curb, a concrete plinth and rusty chain-link, with a clipped hedge outside it (IMG_2269, 2270, 2277, 2278). Black house-side lanterns repeat along the parking (IMG_2269, 2270, 2276, 2278, 2279, 2280); their stations are estimated. Still open: each house's arches, grilles and balconies, the palms and bougainvillea, and the modern lamp at the seaward turning area.
 - IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.
 - Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is not opened. Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb.
 
 ## Read first
 
 - docs: `docs/DALI_CERVANTES.md`, `docs/LAYOUT_ACCURACY.md`, `docs/LEVELS.md`
-- data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`, `data/levels_survey.json`, `data/door_sills.json`
-- src: `src/coastal-gate.ts`, `src/dali-threshold.ts`, `src/door-sills.ts`
+- data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`, `data/levels_survey.json`, `data/door_sills.json`, `data/dali_street.json`
+- src: `src/coastal-gate.ts`, `src/dali-threshold.ts`, `src/door-sills.ts`, `src/dali-street.ts`
 - contact sheet: `villacana-reference/contact-sheets/dali.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 4, Planting: 2, Views: 1
+Layout: 23, Levels and slopes: 5, Facades and roofs: 5, Materials: 8, Planting: 5, Views: 1
 25 reviewed, 19 suggested only by camera position.
 
 ## Levels
@@ -36,6 +37,8 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P1 | `dali-street-scene` | Pintor Dalí: curb, fence plinth, outer hedge and house-side lanterns | in-progress · Cursor · placement: not-verified | [IMG_2269](../../public/photos-ref/IMG_2269.jpg), [IMG_2270](../../public/photos-ref/IMG_2270.jpg), [IMG_2276](../../public/photos-ref/IMG_2276.jpg), [IMG_2277](../../public/photos-ref/IMG_2277.jpg), [IMG_2278](../../public/photos-ref/IMG_2278.jpg), [IMG_2279](../../public/photos-ref/IMG_2279.jpg), [IMG_2280](../../public/photos-ref/IMG_2280.jpg) |
+| P2 | `dali-house-fronts` | Pintor Dalí: trace the house arches, palms and the seaward lamp (after dali-street-scene) | open · placement: not-verified | [IMG_2279](../../public/photos-ref/IMG_2279.jpg), [IMG_2280](../../public/photos-ref/IMG_2280.jpg), [IMG_2281](../../public/photos-ref/IMG_2281.jpg), [IMG_2291](../../public/photos-ref/IMG_2291.jpg) |
 | P2 | `path-network-inventory-dali` [#131](https://github.com/daveyboyc/villacana-venture/issues/131) | Calle Pintor Dalí: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
 ## Built from these photos
@@ -85,18 +88,34 @@ graph LR
   F9 --> PIMG_2267_jpg(["IMG_2267"])
   F9 --> PIMG_2268_jpg(["IMG_2268"])
   F9 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F10["Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia · unreviewed"]
-  F10 --> PIMG_2291_jpg(["IMG_2291"])
-  F10 --> PIMG_2292_jpg(["IMG_2292"])
-  F10 --> PIMG_2293_jpg(["IMG_2293"])
-  A --> F11["Pintor Dalí south · flagstone approach to the arch · unreviewed"]
-  F11 --> PIMG_2283_jpg(["IMG_2283"])
-  F11 --> PIMG_2294_jpg(["IMG_2294"])
-  F11 --> PIMG_2295_jpg(["IMG_2295"])
-  A --> F12["Dalí · coastal pedestrian gate · unreviewed"]
-  F12 --> PIMG_2284_jpg(["IMG_2284"])
-  F12 --> PIMG_2296_jpg(["IMG_2296"])
-  F12 --> PIMG_2297_jpg(["IMG_2297"])
+  A --> F10["Pintor Dalí · white plinth, rusty chain-link and road curb · disputed"]
+  F10 --> PIMG_2269_jpg(["IMG_2269"])
+  F10 --> PIMG_2270_jpg(["IMG_2270"])
+  F10 --> PIMG_2277_jpg(["IMG_2277"])
+  F10 --> PIMG_2278_jpg(["IMG_2278"])
+  A --> F11["Pintor Dalí · black house-side lanterns · disputed"]
+  F11 --> PIMG_2269_jpg(["IMG_2269"])
+  F11 --> PIMG_2270_jpg(["IMG_2270"])
+  F11 --> PIMG_2276_jpg(["IMG_2276"])
+  F11 --> PIMG_2278_jpg(["IMG_2278"])
+  F11 --> PIMG_2279_jpg(["IMG_2279"])
+  F11 --> PIMG_2280_jpg(["IMG_2280"])
+  A --> F12["Pintor Dalí · clipped hedge outside the chain-link fence · unreviewed"]
+  F12 --> PIMG_2269_jpg(["IMG_2269"])
+  F12 --> PIMG_2270_jpg(["IMG_2270"])
+  F12 --> PIMG_2278_jpg(["IMG_2278"])
+  A --> F13["Pintor Dalí · kerbed lawn strip and footpath between Eva and Patricia · unreviewed"]
+  F13 --> PIMG_2291_jpg(["IMG_2291"])
+  F13 --> PIMG_2292_jpg(["IMG_2292"])
+  F13 --> PIMG_2293_jpg(["IMG_2293"])
+  A --> F14["Pintor Dalí south · flagstone approach to the arch · unreviewed"]
+  F14 --> PIMG_2283_jpg(["IMG_2283"])
+  F14 --> PIMG_2294_jpg(["IMG_2294"])
+  F14 --> PIMG_2295_jpg(["IMG_2295"])
+  A --> F15["Dalí · coastal pedestrian gate · unreviewed"]
+  F15 --> PIMG_2284_jpg(["IMG_2284"])
+  F15 --> PIMG_2296_jpg(["IMG_2296"])
+  F15 --> PIMG_2297_jpg(["IMG_2297"])
 ```
 
 ## Placement evidence
@@ -115,9 +134,26 @@ graph LR
 | `dali_cervantes_threshold.json:dali-house-footpath-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `dali_cervantes_threshold.json:dali-lawn-strip-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `dali_cervantes_threshold.json:dali-lawn-strip-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `dali_street.json:dali-fence-plinth` | disputed | differs | open discrepancy photo-discrepancy:02ab68010769bf56; open discrepancy photo-discrepancy:d3303554ff40df42; open discrepancy photo-discrepancy:a66a147d34e0a3dc; open discrepancy photo-discrepancy:bac737153ce65728 |
+| `dali_street.json:dali-house-lanterns` | disputed | differs | open discrepancy photo-discrepancy:bf4f431120b5347e; open discrepancy photo-discrepancy:52e4bd8a1c7d7182; open discrepancy photo-discrepancy:8bc5795c6b9563c7 |
+| `dali_street.json:dali-west-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:dali-footpath-kerb` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:dali-south-arch-approach` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `gate:dali-coastal-gate` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+
+## Photo checks
+
+Renders from each photo's camera compared with the photo (`data/photo_checks.json`).
+
+| Task | Photo | Result | Render | Notes |
+| --- | --- | --- | --- | --- |
+| `dali-street-scene` | [IMG_2269](../../public/photos-ref/IMG_2269.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2269-after.png) · [before](../../docs/reviews/dali-street-scene/IMG_2269-before.png) | After, the outer side has a white curb, a clipped hedge and chain-link, and a black lantern stands on the house side; before, the fence was a bare mesh with round hedge sprites and no curb or lantern. The phone pin is in the bays, so the third-person frame does not line up with the photo. The hedge is a volume, not the tree screen, and the house arches, palms and bougainvillea are still untraced. |
+| `dali-street-scene` | [IMG_2270](../../public/photos-ref/IMG_2270.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2270-after.png) | Looking north, the render shows the white curb, rusty chain-link and the hedge outside it, with a black lantern on the house side. The photo also shows tall trees over the hedge and white houses with arches; those fronts and the trees are not traced, and the GPS frame does not match the photo. |
+| `dali-street-scene` | [IMG_2276](../../public/photos-ref/IMG_2276.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2276-after.png) | A black lantern is in the house-side row the photo shows, on an estimated station. The photo's parking junction, palms and the sea at the end of the aisle are not matched from this unsolved pin. |
+| `dali-street-scene` | [IMG_2277](../../public/photos-ref/IMG_2277.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2277-after.png) | The white curb and chain-link are on the outer side of the aisle, as in the photo. The low concrete plinth is mostly hidden by the hedge volume. Tree trunks behind the mesh, and the exact curb line, are not surveyed. |
+| `dali-street-scene` | [IMG_2278](../../public/photos-ref/IMG_2278.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2278-after.png) · [before](../../docs/reviews/dali-street-scene/IMG_2278-before.png) | After, chain-link sits above a green hedge with a white curb along the asphalt; before, the mesh came down to the ground beside round hedge sprites and there was no curb. The photo's rusty mesh is in front of a dense tree screen, and the parked cars and house arches are not in the model. The pin is not a solved camera. |
+| `dali-street-scene` | [IMG_2279](../../public/photos-ref/IMG_2279.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2279-after.png) | Black lanterns stand along the house side of the bays. The photo's lantern is a glazed head among shrubs in front of a white arched house; the model head is a simple glass box on an estimated station, and the arches, palms and bougainvillea are not traced. |
+| `dali-street-scene` | [IMG_2280](../../public/photos-ref/IMG_2280.jpg) | **differs** → `dali-house-fronts` | [after](../../docs/reviews/dali-street-scene/IMG_2280-after.png) | A black lantern is near the house side of this pin. The photo is the flagstone pedestrian entrance between white houses, with shutters and flowering climbers; that entrance paving and those fronts are not built here. |
 
 ## Reviewed references
 
@@ -128,19 +164,19 @@ graph LR
 | [IMG_2284.jpg](../../public/photos-ref/IMG_2284.jpg) | ground | layout | Pintor Dalí: pedestrian gate to the paseo _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2296.jpg](../../public/photos-ref/IMG_2296.jpg) | ground | layout | Dalí seaward end: parking turn and coast boundary _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
 | [IMG_2297.jpg](../../public/photos-ref/IMG_2297.jpg) | ground | layout | Dalí seaward end: narrow pedestrian gate _Used by: coastal_gate.json:dali-coastal-mesh-base, coastal_gate.json:dali-coastal-gate-pier, coastal_gate.json:dali-coastal-solid-wall, gate:dali-coastal-gate._ |
+| [IMG_2269.jpg](../../public/photos-ref/IMG_2269.jpg) | ground | layout, materials, planting | Pintor Dalí: parking and chain-link fence looking south **Looks at:** The white curb, rusty chain-link and house-side black lanterns, looking south along Pintor Dalí. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2270.jpg](../../public/photos-ref/IMG_2270.jpg) | ground | layout, materials, planting | Pintor Dalí: parking and fence looking north **Looks at:** The same curb, hedge and a house-side lantern, looking north along Pintor Dalí. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2278.jpg](../../public/photos-ref/IMG_2278.jpg) | ground | layout, materials, planting | Pintor Dalí: seaward parking row and chain-link fence **Looks at:** Brown chain-link on a concrete plinth, the white curb, and the hedge behind. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting, materials | Pintor Dalí: houses, lamps and parking bays **Looks at:** A black lantern and the white house frontage beside the parking bays. _Used by: dali_street.json:dali-house-lanterns._ |
 | [IMG_2283.jpg](../../public/photos-ref/IMG_2283.jpg) | ground | levels, layout, facades | Pintor Dalí: raised stone approach and archway _Used by: door_sills.json:dali-south-arch-approach._ |
+| [IMG_2276.jpg](../../public/photos-ref/IMG_2276.jpg) | ground | layout, materials | Pintor Dalí: parking junction toward the sea **Looks at:** Parking bays, black lanterns and the outer fence toward the sea. _Used by: dali_street.json:dali-house-lanterns._ |
+| [IMG_2277.jpg](../../public/photos-ref/IMG_2277.jpg) | ground | layout, materials | Pintor Dalí: aisle, outer fence and white curb **Looks at:** The aisle, white curb and chain-link fence toward the sea. _Used by: dali_street.json:dali-fence-plinth._ |
+| [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance **Looks at:** The flagstone pedestrian entrance, with a black lantern and white curbs. _Used by: dali_street.json:dali-house-lanterns._ |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2292.jpg](../../public/photos-ref/IMG_2292.jpg) | ground | layout, materials | Pintor Dalí: continuous tiled footpath and lawns _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2294.jpg](../../public/photos-ref/IMG_2294.jpg) | ground | levels, layout | Dalí seaward end: flagstone approach to arch _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2295.jpg](../../public/photos-ref/IMG_2295.jpg) | ground | layout, facades | Dalí seaward end: covered access and shutters _Used by: door_sills.json:dali-south-arch-approach._ |
-| [IMG_2277.jpg](../../public/photos-ref/IMG_2277.jpg) | ground | layout, materials | Pintor Dalí: aisle, outer fence and white curb |
-| [IMG_2278.jpg](../../public/photos-ref/IMG_2278.jpg) | ground | layout, materials | Pintor Dalí: seaward parking row and chain-link fence |
-| [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting | Pintor Dalí: houses, lamps and parking bays |
-| [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance |
-| [IMG_2269.jpg](../../public/photos-ref/IMG_2269.jpg) | ground | layout | Pintor Dalí: parking and chain-link fence looking south |
-| [IMG_2270.jpg](../../public/photos-ref/IMG_2270.jpg) | ground | layout | Pintor Dalí: parking and fence looking north |
-| [IMG_2276.jpg](../../public/photos-ref/IMG_2276.jpg) | ground | layout | Pintor Dalí: parking junction toward the sea |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | [IMG_2290.jpg](../../public/photos-ref/IMG_2290.jpg) | ground | layout | Pintor Dalí: grass between bays and shared footpath |
