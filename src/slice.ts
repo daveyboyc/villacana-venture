@@ -263,6 +263,7 @@ async function boot(): Promise<void> {
   const solids = new Solids([...buildingParts.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...silviaWallRings(), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : []), ...(seaside && mainPool ? seafrontFenceRings() : [])], Object.fromEntries(buildingParts.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])), Object.fromEntries(buildingParts.map((b,i)=>[i,b.holes])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
+  let inspectAt: { x: number; z: number; distance: number; pitch: number } | null = null;
   if (seafrontFocus && skeleton.seafront) {
     const restaurant = centroid(skeleton.seafront.restaurant.ring);
     const safe = skeleton.seafront.paseo.points.filter(([x, z]) => !buildings.some((b) => nearRing(x, z, b.ring, 1.5)));
@@ -286,7 +287,8 @@ async function boot(): Promise<void> {
     }
     spawn[0] = best.x; spawn[1] = best.z;
     start.x = best.x + 5; start.z = best.z + 12;
-    document.querySelector("#title")!.textContent = "Pintor Dalí · Calle Cervantes";
+    document.querySelector("#title")!.textContent = "Pintor Dalí";
+    inspectAt = { x: best.x, z: best.z, distance: 42, pitch: 0.72 };
   }
   if (connectionFocus && skeleton.boundaryReference?.connection) {
     const road = skeleton.boundaryReference.roads.find((r) => r.id === "cervantes" || r.name === "Calle Cervantes" || r.name === "Calle Miguel de Cervantes")!;
@@ -352,7 +354,7 @@ async function boot(): Promise<void> {
   // Far enough back to take in every courtyard on show.
   let farthest = RADIUS * 2.6 * Math.max(1,innerHeight/innerWidth);
   window.addEventListener("resize",()=>{const previous=farthest;farthest=RADIUS*2.6*Math.max(1,innerHeight/innerWidth);if(overview)distance*=farthest/previous;});
-  let wasOverview = false;
+  let wasOverview = !overview;
   let savedInspection:{distance:number;pitch:number;yaw:number}|null=null;
   const overviewCentre=new THREE.Vector3(initialFocus?.[0]??centre.x,0.5,initialFocus?.[1]??centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
@@ -386,7 +388,7 @@ async function boot(): Promise<void> {
   action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest*8,distance*1.3);});
   action("#overview-left",()=>{camYaw-=Math.PI/12;});action("#overview-right",()=>{camYaw+=Math.PI/12;});
   action("#overview-top",()=>{pitch=Math.PI/2;});action("#overview-north",()=>{camYaw=0;});
-  const fitArea=()=>{overview=true;inspectionStarted=true;savedInspection=null;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest;pitch=Math.PI/2;camYaw=0;resetPointers();areaSelect.value="whole-resort";rememberArea("whole-resort");};
+  const fitArea=()=>{overview=true;inspectionStarted=true;savedInspection=null;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest*0.72;pitch=0.9;camYaw=0;resetPointers();areaSelect.value="whole-resort";rememberArea("whole-resort");};
   action("#overview-fit",fitArea);
   action(".camera-fit",fitArea);
   action(".camera-in",()=>{distance=Math.max(3.5,distance/1.3);});
@@ -398,6 +400,7 @@ async function boot(): Promise<void> {
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
   action("#overview-pan",()=>panMode(true));action("#overview-rotate",()=>panMode(false));
+  panMode(false);
   const rotation=document.querySelector<HTMLInputElement>("#overview-rotation")!;
   rotation.addEventListener("input",()=>{camYaw=-Number(rotation.value)*Math.PI/180;});
   action("#overview-check",()=>{showChecks=!showChecks;document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));});
@@ -421,8 +424,8 @@ async function boot(): Promise<void> {
   };
   const jumpToArea=(id:string)=>{
     const destination=targets.find(t=>t.id===id);if(!destination)return;
-    overview=true;inspectionStarted=true;savedInspection=null;resetPointers();panMode(true);camYaw=0;areaSelect.value=id;
-    if(id==='whole-resort'){overviewCentre.set(centre.x,.5,centre.z);distance=farthest;pitch=Math.PI/2;}
+    overview=true;inspectionStarted=true;savedInspection=null;resetPointers();camYaw=0;areaSelect.value=id;
+    if(id==='whole-resort'){overviewCentre.set(centre.x,.5,centre.z);distance=farthest*0.72;pitch=0.9;}
     else{
       const xs=destination.points.map(p=>p[0]),zs=destination.points.map(p=>p[1]);
       const x=(Math.min(...xs)+Math.max(...xs))/2,z=(Math.min(...zs)+Math.max(...zs))/2;
@@ -514,8 +517,12 @@ async function boot(): Promise<void> {
       document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
-      document.querySelector("#help")!.textContent=overview?"Drag to pan · pinch or +/− to zoom · ↶/↷ to rotate":"WASD or left thumb to walk · drag to look";
-      if(overview && !inspectionStarted){camYaw=0;distance=focusPending?Math.min(110,farthest):farthest;pitch=focusPending?Math.PI/3:Math.PI/2;inspectionStarted=true;}
+      document.querySelector("#help")!.textContent=overview?"Drag to tilt and turn · scroll or pinch to zoom":"WASD or left thumb to walk · drag to look";
+      if(overview && !inspectionStarted){
+        camYaw=0;inspectionStarted=true;
+        if(inspectAt){overviewCentre.set(inspectAt.x,0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}
+        else{distance=focusPending?Math.min(110,farthest):farthest*0.72;pitch=focusPending?Math.PI/3:0.9;}
+      }
       if(overview && savedInspection){({distance,pitch,yaw:camYaw}=savedInspection);savedInspection=null;}
       if(!overview){distance=6;pitch=.45;}focusPending=false;
     }
@@ -813,6 +820,10 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   ground.receiveShadow = true;
   ground.userData.referenceSurface=true;
   scene.add(ground);
+  scene.updateMatrixWorld(true);
+  const flatGround = ground.geometry;
+  ground.geometry = refine(flatGround, siteY, ground.matrixWorld);
+  if (ground.geometry !== flatGround) flatGround.dispose();
   // Close the exposed sides of the ground cut at its existing slab boundary.
   // This visual fill changes neither top surfaces nor walking/collision heights.
   if(cutSilvia){
@@ -1313,8 +1324,8 @@ function hash(x: number, z: number): number {
   return s - Math.floor(s);
 }
 
-let overview = new URLSearchParams(location.search).get("view") === "overview";
-let overviewPan=true, panDx=0, panDy=0;
+let overview = new URLSearchParams(location.search).get("view") !== "walk";
+let overviewPan=false, panDx=0, panDy=0;
 let walkInput:ReturnType<typeof bindWalkControls>|undefined;
 const readKeys=()=>walkInput?.read();
 let resetPointers=()=>{};
