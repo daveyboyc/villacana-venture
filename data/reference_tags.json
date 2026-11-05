@@ -981,8 +981,15 @@
   ],
   "viewpoint": "ground",
   "useFor": [
-   "layout"
-  ]
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -181.6,
+   101.1
+  ],
+  "subject": "The white curb, rusty chain-link and house-side black lanterns, looking south along Pintor Dalí"
  },
  "IMG_2270.jpg": {
   "shows": [
@@ -990,8 +997,15 @@
   ],
   "viewpoint": "ground",
   "useFor": [
-   "layout"
-  ]
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -202.4,
+   63.9
+  ],
+  "subject": "The same curb, hedge and a house-side lantern, looking north along Pintor Dalí"
  },
  "IMG_2273.jpg": {
   "shows": [
@@ -1030,8 +1044,14 @@
   ],
   "viewpoint": "ground",
   "useFor": [
-   "layout"
-  ]
+   "layout",
+   "materials"
+  ],
+  "looksAt": [
+   -169.8,
+   115.3
+  ],
+  "subject": "Parking bays, black lanterns and the outer fence toward the sea"
  },
  "IMG_2277.jpg": {
   "shows": [
@@ -1041,7 +1061,12 @@
   "useFor": [
    "layout",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -172.4,
+   118.5
+  ],
+  "subject": "The aisle, white curb and chain-link fence toward the sea"
  },
  "IMG_2278.jpg": {
   "shows": [
@@ -1050,8 +1075,14 @@
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "materials"
-  ]
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -146.0,
+   175.9
+  ],
+  "subject": "Brown chain-link on a concrete plinth, the white curb, and the hedge behind"
  },
  "IMG_2279.jpg": {
   "shows": [
@@ -1060,8 +1091,14 @@
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
-  ]
+   "planting",
+   "materials"
+  ],
+  "looksAt": [
+   -132.1,
+   184.2
+  ],
+  "subject": "A black lantern and the white house frontage beside the parking bays"
  },
  "IMG_2280.jpg": {
   "shows": [
@@ -1072,7 +1109,12 @@
   "useFor": [
    "layout",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -116.9,
+   184.0
+  ],
+  "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
  },
  "IMG_2281.jpg": {
   "shows": [

@@ -180,6 +180,11 @@ def features(s):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
 
+    dali_street=json.loads((ROOT/'data/dali_street.json').read_text())
+    dressed=next(b['points'] for b in s['boundaryReference']['barriers'] if b['id']==dali_street['fence']['barrierId'])[:-dali_street['fence']['stopBeforeLastSegments']]
+    add('dali_street.json:'+dali_street['fence']['id'],dali_street['fence']['name'],'reference feature',dali_street['fence']['trust'],points=dressed,evidence=dali_street['fence']['evidence'])
+    add('dali_street.json:'+dali_street['hedge']['id'],dali_street['hedge']['name'],'reference feature',dali_street['hedge']['trust'],points=dressed,evidence=dali_street['hedge']['evidence'])
+    add('dali_street.json:'+dali_street['lanterns']['id'],dali_street['lanterns']['name'],'reference feature',dali_street['lanterns']['trust'],points=dali_street['lanterns']['points'],evidence=dali_street['lanterns']['evidence'])
     for r in s['boundaryReference'].get('ramps',[]):add('ramp:'+r['id'],r['name'],'reference feature','authored photo/map interpretation',points=r['points'],evidence=re.findall(r'IMG_\d+\.jpg',json.dumps(r['evidence'])))
     coastal=json.loads((ROOT/'data/coastal_gate.json').read_text())['gate']
     add('gate:'+coastal['id'],coastal['name'],'reference feature','authored photo/map interpretation',points=coastal['points'],evidence=coastal['evidence'])

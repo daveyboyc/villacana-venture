@@ -294,6 +294,22 @@
   "backdrop.json:aerial-trees": {
    "level": "inferred",
    "why": "Placed where the aerial shows dark canopy outside the resort; the species are not readable from the aerial and are drawn from the mix in the photos (umbrella pines, broadleaf, palms, eucalyptus beside the west wall). Heights are capped so nothing stands above the skyline in IMG_2204-2206."
+  },
+  "dali_street.json:dali-fence-plinth": {
+   "level": "estimated",
+   "why": "White curb, concrete plinth and brown chain-link are clear along the aisle in four ground photos. Heights and the curb offset are estimated, and the run follows the mapped fence rather than a new survey."
+  },
+  "dali_street.json:dali-west-hedge": {
+   "level": "estimated",
+   "why": "A continuous clipped hedge stands outside the fence in the same photos. The volume follows the mapped fence; individual trees behind it are not placed."
+  },
+  "dali_street.json:dali-house-lanterns": {
+   "level": "estimated",
+   "why": "Black lanterns are clear on the house side in photos looking both ways and further south. The ten stations and the 18 m spacing are estimated, not counted off a survey."
+  },
+  "silvia_ramp_passages.json:silvia-ramp-passage-study": {
+   "level": "estimated",
+   "why": "Ramp, flight, doors, mat, arch and lanterns are clear in IMG_2656/2657/2669/2670/2574, but every size is estimated and the study is not placed in the map; the main map's west tunnel still shows the 1-15 passage there."
   }
  },
  "gaps": [
@@ -378,6 +394,67 @@
     "IMG_2206.jpg"
    ],
    "why": "Located through the solved IMG_2204 camera (trunk foot on the terrace floor, about -193.0, 20.8, crown about 6 m across), but its crown overlaps the protected walk across the terrace, so the route-clearance guard keeps it out. Needs a decision on whether a tree over a walk may stand there."
+  },
+  {
+   "id": "gap:dali-house-fronts",
+   "name": "Pintor Dalí · house arches, palms and the seaward modern lamp",
+   "at": [
+    -154.0,
+    160.0
+   ],
+   "photos": [
+    "IMG_2279.jpg",
+    "IMG_2280.jpg",
+    "IMG_2281.jpg",
+    "IMG_2291.jpg"
+   ],
+   "why": "The aisle curb, plinth, hedge and black lanterns are built. Each house's arches, shuttered windows, balcony grilles, palms and bougainvillea are still the generated facade kit, and the modern flat lamp at the turning area is a different fitting from the black lanterns."
+  },
+  {
+   "id": "gap:patricia-covered-passage",
+   "name": "Patricia covered passage (CALLE DE PATRICIA arch to the Silvia 22-44 mouth)",
+   "at": [
+    -140.5,
+    148.1
+   ],
+   "photos": [
+    "IMG_2561.jpg",
+    "IMG_2562.jpg",
+    "IMG_2563.jpg",
+    "IMG_2564.jpg",
+    "IMG_2565.jpg",
+    "IMG_2568.jpg",
+    "IMG_2569.jpg"
+   ],
+   "why": "A chain of arches with doors, pebble mats and a ramp is photographed but its route, bends and length are not traced (camera pins +-2.4-5 m, mostly indoors). Not modelled."
+  },
+  {
+   "id": "gap:south-block-arcade",
+   "name": "South-block arcade to the south pool lawn (Calle de Jorge plaque)",
+   "at": [
+    -103.2,
+    211.5
+   ],
+   "photos": [
+    "IMG_2639.jpg",
+    "IMG_2640.jpg",
+    "IMG_2641.jpg"
+   ],
+   "why": "Two arches, a pebble mat and an arched iron gate are photographed; GPS error is 16-29 m so the position is unknown (point is the IMG_2640 pin, not the arcade). Not modelled."
+  },
+  {
+   "id": "gap:eva-covered-passage",
+   "name": "Covered passage off Calle Eva (brown double doors, potted trees)",
+   "at": [
+    -153.7,
+    94.6
+   ],
+   "photos": [
+    "IMG_2548.jpg",
+    "IMG_2547.jpg",
+    "IMG_2557.jpg"
+   ],
+   "why": "Same passage family as the Silvia passages, seen from a pin inside the block (+-4.5 m); which passage and street is not established. Not modelled."
   }
  ]
 }

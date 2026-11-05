@@ -534,6 +534,140 @@
    "render": "docs/reviews/beach-gate-verge/IMG_2226-after.png",
    "result": "not-comparable",
    "notes": "From the beach the photo shows a grass band with low shrubs in front of the white wall, gateway and railings. After, the render shows the green verge and shrub clumps along the frontage where before there was bare sand; the pin view is 50 m off and third-person, so extents, the arch position and shrub sizes cannot be compared. Rough outline pending close photos."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2269.jpg",
+   "before": "docs/reviews/dali-street-scene/IMG_2269-before.png",
+   "render": "docs/reviews/dali-street-scene/IMG_2269-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "After, the outer side has a white curb, a clipped hedge and chain-link, and a black lantern stands on the house side; before, the fence was a bare mesh with round hedge sprites and no curb or lantern. The phone pin is in the bays, so the third-person frame does not line up with the photo. The hedge is a volume, not the tree screen, and the house arches, palms and bougainvillea are still untraced."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2270.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2270-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "Looking north, the render shows the white curb, rusty chain-link and the hedge outside it, with a black lantern on the house side. The photo also shows tall trees over the hedge and white houses with arches; those fronts and the trees are not traced, and the GPS frame does not match the photo."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-house-lanterns",
+   "photo": "IMG_2276.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2276-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "A black lantern is in the house-side row the photo shows, on an estimated station. The photo's parking junction, palms and the sea at the end of the aisle are not matched from this unsolved pin."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2277.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2277-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "The white curb and chain-link are on the outer side of the aisle, as in the photo. The low concrete plinth is mostly hidden by the hedge volume. Tree trunks behind the mesh, and the exact curb line, are not surveyed."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2278.jpg",
+   "before": "docs/reviews/dali-street-scene/IMG_2278-before.png",
+   "render": "docs/reviews/dali-street-scene/IMG_2278-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "After, chain-link sits above a green hedge with a white curb along the asphalt; before, the mesh came down to the ground beside round hedge sprites and there was no curb. The photo's rusty mesh is in front of a dense tree screen, and the parked cars and house arches are not in the model. The pin is not a solved camera."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-house-lanterns",
+   "photo": "IMG_2279.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2279-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "Black lanterns stand along the house side of the bays. The photo's lantern is a glazed head among shrubs in front of a white arched house; the model head is a simple glass box on an estimated station, and the arches, palms and bougainvillea are not traced."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-house-lanterns",
+   "photo": "IMG_2280.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2280-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "A black lantern is near the house side of this pin. The photo is the flagstone pedestrian entrance between white houses, with shutters and flowering climbers; that entrance paving and those fronts are not built here."
+  },
+  {
+   "task": "silvia-ramp-passages",
+   "feature": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "photo": "IMG_2669.jpg",
+   "before": "docs/reviews/silvia-ramp-passages/IMG_2669-before.png",
+   "render": "docs/reviews/silvia-ramp-passages/IMG_2669-after.png",
+   "checked": "2026-11-05",
+   "by": "Claude (builder agent)",
+   "result": "not-comparable",
+   "notes": "Source inspected full size beside the study render. Matches: order from the camera (ramp on the left beside two plain treads and the landing with blue insert tiles and dark edge bands on the right, brown panelled double doors with barred windows both sides, pebble mat, narrower arch, two potted plants and the black iron gate with a white central pier and lintel). Differs: ramp stud pattern, wear, lantern and plaque detail simplified; ramp slope and tread depth estimated; foliage and bougainvillea are blocky; the garden beyond is not modelled; the main-app before shows the 1-15 tunnel here. Study camera is an uncalibrated eye-height guess near the photo's pin, not a solved pose; the 'before' is the main app from the photo's pin and compass/looksAt, where the model shows the 1-15 tunnel (IMG_2669/2670/2656/2657) or a plain lane (IMG_2574), so before and after are different objects. No placement is claimed. Procedural foliage is schematic."
+  },
+  {
+   "task": "silvia-ramp-passages",
+   "feature": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "photo": "IMG_2670.jpg",
+   "before": "docs/reviews/silvia-ramp-passages/IMG_2670-before.png",
+   "render": "docs/reviews/silvia-ramp-passages/IMG_2670-after.png",
+   "checked": "2026-11-05",
+   "by": "Claude (builder agent)",
+   "result": "not-comparable",
+   "notes": "Source inspected full size. Matches: same arrangement as IMG_2669 from a slightly higher, more central view, with the begonia boxes left and right, lantern, pebble mat and gate arch. Differs: plaque ('SILVIA 2 20') is out of frame on the study camera; door and window proportions, lantern form and foliage are estimates. Study camera is an uncalibrated eye-height guess near the photo's pin, not a solved pose; the 'before' is the main app from the photo's pin and compass/looksAt, where the model shows the 1-15 tunnel (IMG_2669/2670/2656/2657) or a plain lane (IMG_2574), so before and after are different objects. No placement is claimed. Procedural foliage is schematic."
+  },
+  {
+   "task": "silvia-ramp-passages",
+   "feature": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "photo": "IMG_2656.jpg",
+   "before": "docs/reviews/silvia-ramp-passages/IMG_2656-before.png",
+   "render": "docs/reviews/silvia-ramp-passages/IMG_2656-after.png",
+   "checked": "2026-11-05",
+   "by": "Claude (builder agent)",
+   "result": "not-comparable",
+   "notes": "Source inspected full size. Matches: ramp left, two treads and landing right with blue-and-white inserts, double doors and barred windows, jade planters on both sides, two hanging lanterns, arch opening to the garden. Differs: the vertical '22 44 CALLE DE SILVIA' plaque is on the left wall out of frame; the planter walls are boxes without the curved rounded ends; the garden beyond the arch (path, oleander, houses) is not modelled. Study camera is an uncalibrated eye-height guess near the photo's pin, not a solved pose; the 'before' is the main app from the photo's pin and compass/looksAt, where the model shows the 1-15 tunnel (IMG_2669/2670/2656/2657) or a plain lane (IMG_2574), so before and after are different objects. No placement is claimed. Procedural foliage is schematic."
+  },
+  {
+   "task": "silvia-ramp-passages",
+   "feature": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "photo": "IMG_2657.jpg",
+   "before": "docs/reviews/silvia-ramp-passages/IMG_2657-before.png",
+   "render": "docs/reviews/silvia-ramp-passages/IMG_2657-after.png",
+   "checked": "2026-11-05",
+   "by": "Claude (builder agent)",
+   "result": "not-comparable",
+   "notes": "Source inspected full size. Matches: the three-riser flight with dark edge bands beside the studded ramp, the landing and mat, the doors and arch. Differs: camera is nearer and more central than the photo's; ramp joint grid and stud relief are procedural; the right-hand jade planter is taller and squarer than the photographed rounded wall. Study camera is an uncalibrated eye-height guess near the photo's pin, not a solved pose; the 'before' is the main app from the photo's pin and compass/looksAt, where the model shows the 1-15 tunnel (IMG_2669/2670/2656/2657) or a plain lane (IMG_2574), so before and after are different objects. No placement is claimed. Procedural foliage is schematic."
+  },
+  {
+   "task": "silvia-ramp-passages",
+   "feature": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "photo": "IMG_2574.jpg",
+   "before": "docs/reviews/silvia-ramp-passages/IMG_2574-before.png",
+   "render": "docs/reviews/silvia-ramp-passages/IMG_2574-after.png",
+   "checked": "2026-11-05",
+   "by": "Claude (builder agent)",
+   "result": "not-comparable",
+   "notes": "Source inspected full size. Matches: from the lane the studded ramp on the left, two plain treads with dark edge bands, the landing at the third riser, the jade planter wall above the steps, the pier with stepped plinth at the right, the lane's terracotta squares with a pale granite edge. Differs: the lane is a short flat stub with no kerb, drain cover or neighbouring planters; pier and ceiling edge are plain boxes; the planter is square-ended and the jade planting schematic. Study camera is an uncalibrated eye-height guess near the photo's pin, not a solved pose; the 'before' is the main app from the photo's pin and compass/looksAt, where the model shows the 1-15 tunnel (IMG_2669/2670/2656/2657) or a plain lane (IMG_2574), so before and after are different objects. No placement is claimed. Procedural foliage is schematic."
   }
  ],
  "legacyUnchecked": [

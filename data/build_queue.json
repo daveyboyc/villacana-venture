@@ -1521,6 +1521,60 @@
    "notes": "Declared available-source audit: 51 distinct full sources, 30 component rows, source annotations, schematic plan/sections and pinned model comparisons. Independent review completes only this inventory scope. Registration, Miguel identity/portals, concealed joins, eastern terminal, measured levels and structural corrections remain open in #156/#157/#158 and shared #148. No physical map completion or placement approval."
   },
   {
+   "id": "dali-street-scene",
+   "area": "dali",
+   "priority": 1,
+   "kind": "details",
+   "title": "Pintor Dalí: curb, fence plinth, outer hedge and house-side lanterns",
+   "photos": [
+    "IMG_2269.jpg",
+    "IMG_2270.jpg",
+    "IMG_2276.jpg",
+    "IMG_2277.jpg",
+    "IMG_2278.jpg",
+    "IMG_2279.jpg",
+    "IMG_2280.jpg"
+   ],
+   "build": "Dress the mapped outer fence with the photographed white curb, concrete plinth and rusty chain-link, a Details hedge outside it, and black house-side lanterns along the aisle. Stop the new plinth before the coastal gate.",
+   "avoid": "Do not move the fence line, close the coastal gate, or invent arches, palms and bougainvillea at guessed house fronts. Lanterns and the hedge stay off protected routes.",
+   "accept": [
+    "scripts/check_dali_street.py passes",
+    "Before/after renders from IMG_2269 and IMG_2278"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Cursor",
+   "notes": "Curb, plinth, rusty mesh, outer hedge and ten house-side lanterns are built along the mapped fence, stopping before the coastal gate. Stations and heights are estimated. Photo checks differ: the pins are not solved cameras, and the house arches, palms, bougainvillea and the modern seaward lamp stay open as dali-house-fronts. Left in progress because Calle Pintor Dalí has no solved camera, so there is no measured placement packet.",
+   "features": [
+    "dali_street.json:dali-fence-plinth",
+    "dali_street.json:dali-west-hedge",
+    "dali_street.json:dali-house-lanterns"
+   ]
+  },
+  {
+   "id": "dali-house-fronts",
+   "area": "dali",
+   "priority": 2,
+   "kind": "facades",
+   "title": "Pintor Dalí: trace the house arches, palms and the seaward lamp",
+   "photos": [
+    "IMG_2279.jpg",
+    "IMG_2280.jpg",
+    "IMG_2281.jpg",
+    "IMG_2291.jpg"
+   ],
+   "build": "The aisle curb, plinth, hedge and black lanterns are in. Trace the arches, shuttered windows, balcony grilles, palms and bougainvillea that the house-side photos actually show, and the modern flat lamp at the turning area. Leave a house plain where no photo shows its front.",
+   "avoid": "Do not repeat one porch along every house. Do not move registry footprints. Do not close the coastal pedestrian gate.",
+   "accept": [
+    "Each new front cites the photo that shows it",
+    "Untraced fronts stay listed under confidence gaps"
+   ],
+   "dependsOn": [
+    "dali-street-scene"
+   ],
+   "status": "open"
+  },
+  {
    "id": "path-network-inventory-dali",
    "area": "dali",
    "priority": 2,
