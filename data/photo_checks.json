@@ -534,6 +534,127 @@
    "render": "docs/reviews/beach-gate-verge/IMG_2226-after.png",
    "result": "not-comparable",
    "notes": "From the beach the photo shows a grass band with low shrubs in front of the white wall, gateway and railings. After, the render shows the green verge and shrub clumps along the frontage where before there was bare sand; the pin view is 50 m off and third-person, so extents, the arch position and shrub sizes cannot be compared. Rough outline pending close photos."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:barraka-lounge-garden",
+   "photo": "IMG_2604.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2604-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2604-after.png",
+   "result": "not-comparable",
+   "notes": "Looking along the paseo at Barraka. Before, the verge was bare grass beside the paving and the lawn railing was white; after, a rope-and-post line stands along the paving edge towards the restaurant with two sofas, four pods, a parasol, easel, menu stand and pots in front of it, and the railing at left is dark green as in the photo. Order and side match the photo (rope beside the paving, seating behind it in front of the restaurant). Not matched: the restaurant itself is still a low registry slab (no windows, awnings or thatch edge: task barraka-facade) and the photo's nearest lamp post at left is not modelled (no lamp station there). Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:barraka-lounge-garden",
+   "photo": "IMG_2609.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2609-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2609-after.png",
+   "result": "not-comparable",
+   "notes": "Taken from under Barraka's awning (pin +-12 m), so the camera is placed at the IMG_2631 terrace spot. After shows the rope line along the paving edge, the sofa/pod groups beyond it, the closed parasol, easel, menu stand and pots on the grass, and green bars on the lawn railing on the right, as in the photo. The photo's sandstone plinth is taller than the modelled 0.3 m, the wicker, cushions and rope swags are simplified. Position is an estimate (about 3 m); this pin alone placed nothing. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:barraka-lounge-garden",
+   "photo": "IMG_2631.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2631-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2631-after.png",
+   "result": "not-comparable",
+   "notes": "Best view of the arrangement (pin +-4 m, heading 206 gives a lounge at the photographed place within about 100 px). Posts, rope, two sofas with two pods each, closed parasol, easel, menu stand and pots appear in the photo's order from the awning; the painted crossing shows at the far bend and the railing at the right is green. Differences: the real paving widens into a terrace here (the model keeps the 3 m ribbon), the slot drain and the terrace chair/pots in the foreground are not modelled, and the paseo curves more than the model. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:barraka-lounge-garden",
+   "photo": "IMG_2607.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2607-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2607-after.png",
+   "result": "not-comparable",
+   "notes": "Under the awning (pin +-19 m), camera set to the terrace spot of IMG_2631, heading 199. The lounge, easel and rope are in the same arrangement as the photo but the exact framing cannot be recovered without a solved camera; recorded as not comparable. Not used to place anything. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:barraka-lounge-garden",
+   "photo": "IMG_2608.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2608-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2608-after.png",
+   "result": "not-comparable",
+   "notes": "Under the awning (pin +-13 m), camera set to the terrace spot of IMG_2631, heading 223. Looking along the paseo to the white houses: the green bar railing on the sandstone plinth now matches the photo (it was white); the render shows the lounge at left whereas the photo's framing does not (the compass heading and shared terrace spot are only approximate). Not comparable pixel for pixel; not used to place anything. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:paseo-painted-crossing",
+   "photo": "IMG_2484.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2484-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2484-after.png",
+   "result": "not-comparable",
+   "notes": "Looking along the paseo from near the foot of Calle Guillermo. After, eight alternating white and red bars lie across the paving beside the gate pier, about 10 m ahead, as in the photo, and the railing beyond is green bars. Differences: the model has the white arched gate and white wall where the photo shows a welded mesh panel and a plain white pier, the photo's green shade-cloth/bush stretch is not drawn, and the lamp post in the photo (right of the crossing) is not modelled. Crossing position is estimated to about 2 m. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "paseo_details.json:paseo-white-lamp-3",
+   "photo": "IMG_2480.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2480-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2480-after.png",
+   "result": "not-comparable",
+   "notes": "West paseo looking north-east. The four modelled lamps now have a slim round tube, base plate and a thin solar head at about 4 m, but none is within about 8 m of this camera in the render, whereas the photo's nearest lamp (head clearly visible) stands about 6 m ahead at the wall foot: lamp stations (estimated from IMG_2350/2352/2354) and this +-3.6 m pin do not agree, and the head shape cannot be compared at that distance. No lamp was moved or added. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "paseo_details.json:paseo-white-lamp-3",
+   "photo": "IMG_2618.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2618-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2618-after.png",
+   "result": "not-comparable",
+   "notes": "Barraka's north-east wall from the beach side (pin +-2.4 m). Cited for the lamp head design only (the pole with a solar head at the right edge). The render shows the building as the registry slab with no door, window rows or timber band, no lamp at this end of the wall, and the sign planter well left of where the photo has the pots and white planter rack, so nothing here is comparable beyond the green railing and lounge seen far off; the facade is the open task barraka-facade. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "seafront_fence.json:main-pool-lawn-railing",
+   "photo": "IMG_2610.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2610-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2610-after.png",
+   "result": "not-comparable",
+   "notes": "Terrace paving, curved sandstone wall and green bar railing seen from Barraka (pin +-4.2 m, heading 326). The green bars and sandstone plinth now match the photo's colours along the lawn edge; the curved sandstone wall is the existing straight-line paseo wall, the slot drain and terrace paving are not modelled, and the viewpoint cannot be reproduced from the pin. Not comparable pixel for pixel. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "seafront_fence.json:main-pool-lawn-railing",
+   "photo": "IMG_2630.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2630-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2630-after.png",
+   "result": "not-comparable",
+   "notes": "Glazed north-west frontage and the green railing over the curved wall (pin +-6.8 m at the building corner). The railing colour and plinth now match; the glazed frontage, awning, lettering, slot drain and the curved wall are not modelled (barraka-facade), and the pin view looks across the model's slab roof instead. Not comparable. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "barraka-frontage-paseo-furniture",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "paseo_details.json:paseo-white-lamp-1",
+   "photo": "IMG_2637.jpg",
+   "before": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2637-before.png",
+   "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2637-after.png",
+   "result": "not-comparable",
+   "notes": "Dali end of the paseo: stone wall end, bar and mesh fence, a lamp with a long solar panel beyond. Cited for the lamp head design only. The stepped wall end, service cover, paving light and apron are not built here and the lamp station beyond the wall end is not modelled; recorded as not comparable. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
   }
  ],
  "legacyUnchecked": [
