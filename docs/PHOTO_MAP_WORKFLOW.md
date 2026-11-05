@@ -2,6 +2,14 @@
 
 ## Intake for a new Drive batch
 
+**Automatic first step.** `scripts/drive_intake.py` (run every 15 minutes and on a Drive webhook by
+the workflow in `integrations/drive-webhook/`, which must be copied into `.github/workflows/`; setup in
+`integrations/drive-webhook/README.md`) does steps 1, 2
+and the pin/thumbnail half of 4 with no agent: new Drive photos appear on the map as camera pins. It
+never overwrites an existing pin when two photos share an IMG number. Steps 3 onward (look at each
+photo, tag `shows`/`viewpoint`/`useFor`, requests, notes) still need someone to look; the workflow
+log lists the untagged photos. The manual steps below remain for a hand-run batch.
+
 Every batch goes through the same steps, so any agent can pick up any area.
 
 1. Find new files in the Drive folder "Villacana" (newer than the last indexed
