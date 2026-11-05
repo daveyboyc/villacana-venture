@@ -441,14 +441,17 @@
     "data/seaward_paving.json",
     "data/reference_packs/entrance.json",
     "data/silvia_map.json",
-    "data/entrance_planters.json"
+    "data/entrance_planters.json",
+    "data/silvia_ramp_passages.json"
    ],
    "src": [
     "src/seaward-paving.ts",
     "src/silvia-map.ts",
     "src/silvia-tunnel.ts",
     "src/entrance-planters.ts",
-    "src/silvia-paving.ts"
+    "src/silvia-paving.ts",
+    "src/silvia-ramp-passage.ts",
+    "src/silvia-ramp-study.ts"
    ],
    "notes": [
     "IMG_2235/2237/2239 support octagonal terracotta with diamond infills on the photographed Teodoro Rojo run; IMG_2240 remains square. IMG_2185/2190 support cream/blue corner inserts in covered-floor tiles. Material masks use existing ground/registry strips; tile dimensions and passage extents remain estimates, and solid registry strips may still obscure the floor until separately traced as passages. No levels or geometry were changed.",
@@ -461,7 +464,9 @@
     "24 October Silvia paving correction: full2190/2191 floor reinspection identifies square terracotta units offset around small blue/cream squares, creating diagonal insert runs. Earlier clipped-corner description was imprecise. Current surface uses coherent metric UVs, varied aged tiles/grout/motifs and wall pebble bands; precise pitches/angle remain estimates. Existing floor extents, topology, level, collision and tunnel/bed positions retained. See docs/reviews/silvia-paving/.",
     "24 October outdoor Silvia path: full IMG_2189/2334 show plain worn terracotta squares, four straight columns and broad grey mortar; the decorated square-insert paving belongs inside the tunnel. Existing lane visual surface continues to the provisional side approach, with a plain overlay to the estimated arch threshold. Pool-side irregular stone/grate retained. Continuation endpoints, threshold and gate/tunnel association remain estimated; no registry, route, terrain, collision or structural placement change. See docs/reviews/silvia-outdoor-path/.",
     "Outdoor-path integration with mainPR120: the current survey ground covered previously flat lane/garden paving, so only those existing visual surfaces now follow siteY. Source outlines, collision and survey data retained. Model diagnostic: garden sample at local8.6 is about0.23m above the level tunnel slab; this is an unresolved host/garden ground transition, not a photo-measured step or smooth source match. Track with in-progress silvia-outdoor-path.",
-    "27 October batch: IMG_2488 looks up Calle Guillermo from its seaward end: plain square terracotta tiles, a slot drain across the lane, raised white planter with strelitzia; no steps in the lower lane (input for guillermo-descent-recheck, gradient not judged). IMG_2494 repeats the IMG_2241 lane near Teodoro Rojo."
+    "27 October batch: IMG_2488 looks up Calle Guillermo from its seaward end: plain square terracotta tiles, a slot drain across the lane, raised white planter with strelitzia; no steps in the lower lane (input for guillermo-descent-recheck, gradient not judged). IMG_2494 repeats the IMG_2241 lane near Teodoro Rojo.",
+    "Silvia ramp passages (task silvia-ramp-passages, 4 Nov): IMG_2656/2657/2658 (plaque '22 44 CALLE DE SILVIA') and IMG_2669/2670 (plaque '2 20') show a second passage type on the lane's west side: a porch with a red studded rubber ramp beside two plain terracotta treads and a third riser that carries the landing (white risers, dark grey edge bands), brown panelled double doors with a barred window beside each, a pebble-mosaic mat, lanterns, an arch and, in 2-20, a black iron garden gate between two large potted plants. IMG_2574/2575 show the flight from the lane (granite edge, jade planter). Built only as a photo-relative study (silvia-ramp.html, src/silvia-ramp-passage.ts; every dimension an estimate; not placed). OPEN: the main map's west Silvia tunnel (data/silvia_map.json) sits at the IMG_2669 camera and heading but is built from the 1-15 photos IMG_2190/2191/2668, taken from the same pin facing east (heading 55-56) where IMG_2672-2674 show a louvre-door passage under the east block; the 1-15 and 2-20 passages are therefore probably on opposite sides of the lane and the west tunnel shows the wrong one (task silvia-west-passage-swap). The 22-44 mouth lies on the WSW line of the Patricia passage cameras IMG_2565-2570 (task patricia-passage-reference-pack).",
+    "Patricia passage (IMG_2561-2569), not built: the arch marked 'CALLE DE PATRICIA' (IMG_2562), paired brown doors, pebble-mosaic mats with a floral border (2563/2564), planter-lined arches, a tiled-eave loggia (2565-2567) and a last arch with ramp down to a lawn (2569). Pins (2.4-5 m, mostly indoors) head SE at the west arch and ENE further on, about 20 m south-east of the mapped Calle Patricia line, so its route, length and relation to the 22-44 porch are unresolved. South-block arcade IMG_2639-2641 (two arches, pebble mat, arched iron gate onto the south pool lawn, 'Calle de Jorge' plaque) has GPS errors of 16-29 m: identity from the plaque only, position unresolved (task jorge-south-arcade-identity). IMG_2548 (Eva) and IMG_2557 ('CALLE MART...' sign) show the same passage family with the street unread."
    ]
   },
   {

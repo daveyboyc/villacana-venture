@@ -5457,7 +5457,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191."
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
+  "looksAt": [
+   -110.5,
+   152.0
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  "IMG_2657.jpg": {
   "title": "Silvia 22-44 passage: steps with dark edge bands beside studded ramp",
@@ -5471,7 +5476,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191."
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
+  "looksAt": [
+   -109.7,
+   151.4
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  "IMG_2660.jpg": {
   "title": "Narrow lane between white walls and a barred house front, heading NNW",
@@ -5607,7 +5617,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia)."
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
+  "looksAt": [
+   -126.8,
+   120.5
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  "IMG_2670.jpg": {
   "title": "Silvia 2-20 passage: plaque, ramp, steps and arched gate",
@@ -5622,7 +5637,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia)."
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
+  "looksAt": [
+   -126.1,
+   119.9
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  "IMG_2671.jpg": {
   "title": "Silvia lane north of the tunnel looking NW to the middle pool south gateway",

@@ -97,6 +97,8 @@ def features(s):
     ax,az=placement['entry'];fx,fz=placement['forward'];h=tunnel['dimensions']['width']/2;length=tunnel['dimensions']['length']
     points=[[ax+fz*x+fx*z,az-fx*x+fz*z] for x,z in [(-h,-3.65),(h,-3.65),(h,length+.35),(-h,length+.35)]]
     add('silvia_tunnel.json:'+tunnel['id'],tunnel['name'],'reference feature','approximate west registry connection; photo direction unresolved',evidence=tunnel['evidence'],points=points)
+    ramp=json.loads((ROOT/'data/silvia_ramp_passages.json').read_text()) # photo-relative study: no world transform, so no map geometry
+    add('silvia_ramp_passages.json:'+ramp['id'],ramp['name'],'reference feature','photo-relative study; not placed in the map; points are the 2-20 camera pin at the lane mouth and the 22-44 flight about 3 m ahead of IMG_2574 (GPS +-3 m), not measured geometry',evidence=ramp['evidence'],points=ramp['mouthPoints'])
     paving=json.loads((ROOT/'data/seaward_paving.json').read_text())
     for f in paving['features']:
         ring=next((b['ring'] for b in s['buildings'] if b['id']==f.get('building')),None)
