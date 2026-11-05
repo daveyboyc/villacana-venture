@@ -10,6 +10,7 @@ import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
+import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
 import {barrakaSections,barrakaSign} from "./barraka-boardwalk";
@@ -132,6 +133,11 @@ async function boot(): Promise<void> {
   for(const part of [gate.west,gate.east])titled(el("path",{d:"M"+part.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":elenaNorth.gateway.thickness,"data-elena-id":elenaNorth.gateway.id}),`${elenaNorth.gateway.name}: ${elenaNorth.gateway.trust}`);
   titled(el("path",{d:path(elenaEntryRing),fill:"#b46b48",stroke:"#d1b595","stroke-width":.06}),`${elenaEntry.name}: ${elenaEntry.trust}`);
   for(const ring of elenaEntryRings())titled(el("path",{d:path(ring),fill:"#202622"}),`${elenaEntry.name}: closed private paired gates · ${elenaEntry.evidence.join(", ")}`);
+  {const w=elenaWalkway,l=w.level,hw=w.frame.halfWidth,top=l.risers[l.risers.length-1],P=walkwayPoint,wt=`${w.name}: ${w.trust}`;
+   titled(el("path",{d:path(walkwayRing()),fill:"#b46b48","fill-opacity":.6,"data-elena-walkway-id":w.id}),wt);
+   titled(el("path",{d:path([P(0,-hw),P(top,-hw),P(top,l.stepAcross[1]),P(0,l.stepAcross[1])]),fill:"#efe3cc",stroke:"#fffdf5","stroke-width":.04,"data-elena-walkway-id":w.id}),`${w.name}: three steps, estimated`);
+   titled(el("path",{d:path([P(0,l.rampAcross[0]),P(l.rampLength,l.rampAcross[0]),P(l.rampLength,hw),P(0,hw)]),fill:"#9a3f38","data-elena-walkway-id":w.id}),`${w.name}: red studded ramp, estimated`);
+   titled(el("path",{d:path([P(w.pebbleMat.along[0],w.pebbleMat.across[0]),P(w.pebbleMat.along[1],w.pebbleMat.across[0]),P(w.pebbleMat.along[1],w.pebbleMat.across[1]),P(w.pebbleMat.along[0],w.pebbleMat.across[1])]),fill:"#5d5a52","data-elena-walkway-id":w.id}),`${w.name}: pebble mat, position estimated`);}
   titled(el("path",{d:path(elenaNorth.gardenPath.ring as Vec2[]),fill:floorGrid('elena-spur-grid',elenaLane.points[0]),"data-elena-id":elenaNorth.gardenPath.id}),`${elenaNorth.gardenPath.name}: ${elenaNorth.gardenPath.trust}`);
   for(const w of elenaNorth.walls) for(const d of w.doors) {
     const [a,b]=w.points, len=Math.hypot(b[0]-a[0],b[1]-a[1]), ux=(b[0]-a[0])/len, uz=(b[1]-a[1])/len;

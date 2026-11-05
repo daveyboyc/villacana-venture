@@ -103,6 +103,13 @@ def features(s):
         add('seaward_paving.json:'+f['id'],f['id'].replace('-',' '),'reference feature','photo-supported material; estimated extent',evidence=f['evidence'],**({'ring':ring} if ring else {'points':f['points']}))
     entry=json.loads((ROOT/'data/elena_gated_entry.json').read_text())
     add('elena_gated_entry.json:'+entry['id'],entry['name'],'reference feature','authored photo/map interpretation',evidence=entry['evidence'],ring=entry['ring'],points=entry['points'])
+    walkway=json.loads((ROOT/'data/elena_walkway.json').read_text()) # covered walkway details: steps, ramp, floor, doors
+    wf=walkway['frame'];wl=walkway['level'];hw=wf['halfWidth'];wlen=wf['length']
+    wp=lambda a,b:[round(wf['origin'][0]+wf['along'][0]*a+wf['across'][0]*b,2),round(wf['origin'][1]+wf['along'][1]*a+wf['across'][1]*b,2)]
+    top,ramp,split=wl['risers'][-1],wl['rampLength'],wl['rampAcross'][0]
+    add('elena_walkway.json:elena-walkway-floor','Calle Elena covered walkway · patterned floor and pebble mat','reference feature','photo-supported material; estimated extents and level',evidence=walkway['evidence'],ring=[wp(top,-hw),wp(wlen,-hw),wp(wlen,hw),wp(ramp,hw),wp(ramp,split),wp(top,split)])
+    add('elena_walkway.json:elena-walkway-steps-ramp','Calle Elena covered walkway · portal steps and red studded ramp','reference feature','photo-supported arrangement; estimated rise, treads and ramp length',evidence=walkway['evidence'],ring=[wp(0,-hw),wp(top,-hw),wp(top,split),wp(ramp,split),wp(ramp,hw),wp(0,hw)])
+    add('elena_walkway.json:elena-walkway-wall-details','Calle Elena covered walkway · tile signs, doors, hatch and lantern','reference feature','photo-supported details; positions along the walls estimated',evidence=walkway['evidence'],points=[wp(x['along'],x['side']*hw) for x in [*walkway['signs'],walkway['hatch'],*walkway['doors']]])
     east=json.loads((ROOT/'data/elena_east_patios.json').read_text()) # issue #38
     for f in [*east['walls'],east['pergola']]:
         add('elena_east_patios.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**{k:f[k] for k in ('ring','points') if k in f})

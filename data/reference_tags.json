@@ -2875,7 +2875,12 @@
    "materials",
    "signage"
   ],
-  "note": "Pin is only +-19.8 m (identical pin shared with IMG_2457/2458), so the camera position is unreliable. Context and plaque place it in the covered Elena walkway (object calle-elena-1 at about (-158.8, 41.2), see IMG_2255), looking out of an arch."
+  "note": "Pin is only +-19.8 m (identical pin shared with IMG_2457/2458), so the camera position is unreliable. Context and plaque place it in the covered Elena walkway (object calle-elena-1 at about (-158.8, 41.2), see IMG_2255), looking out of an arch. Looks EAST/north-east out of the walkway: the ramp and steps lie between the camera and the arch; not a view of the west courtyard. Camera hand-set about 4.5 m inside the east portal.",
+  "looksAt": [
+   -153.6,
+   37.8
+  ],
+  "subject": "The east arch of the covered Elena walkway looking out to the lane, the hedged bed and the magnolia"
  },
  "IMG_2457.jpg": {
   "title": "Pebble mosaic panel in the terracotta floor of the Elena walkway",
@@ -5815,7 +5820,12 @@
    "layout",
    "facades"
   ],
-  "note": "Position matches the covered walkway part5 area (see IMG_2203/2361)."
+  "note": "Position matches the covered walkway part5 area (see IMG_2203/2361). Camera hand-set inside the walkway frame of data/elena_walkway.json (about 1 m east of the portal, looking along it and down). Pin is the same +/-6 m phone pin as IMG_2459.",
+  "looksAt": [
+   -156.1,
+   38.1
+  ],
+  "subject": "Three steps, red studded ramp and the CALLE ELENA 18 36 tile sign at the east mouth of the covered Elena walkway"
  },
  "IMG_2690.jpg": {
   "title": "Elena covered walkway looking WSW to the paired iron gates",
@@ -5828,7 +5838,12 @@
    "materials",
    "facades"
   ],
-  "note": "Likely the covered walkway and paired iron gateway west of Elena (issue #46); the numbered side doors suggest private entries."
+  "note": "Likely the covered walkway and paired iron gateway west of Elena (issue #46); the numbered side doors suggest private entries. Camera hand-set on the walkway floor near its east end; this photo is taken from inside the walkway, above the top step.",
+  "looksAt": [
+   -159.3,
+   41.1
+  ],
+  "subject": "The covered Elena walkway looking west: floor pattern, pebble mat, doors, lantern and the west arch"
  },
  "IMG_2691.jpg": {
   "title": "Brown double door with warning sign in the Elena covered walkway",

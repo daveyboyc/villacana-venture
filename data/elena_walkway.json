@@ -1,0 +1,146 @@
+{
+ "id": "elena-walkway-details",
+ "name": "Calle Elena covered walkway: portal steps and ramp, patterned floor, signs, doors",
+ "passageId": "6265201UF1366N_part5",
+ "evidence": [
+  "IMG_2459.jpg",
+  "IMG_2518.jpg",
+  "IMG_2519.jpg",
+  "IMG_2520.jpg",
+  "IMG_2689.jpg",
+  "IMG_2690.jpg",
+  "IMG_2691.jpg",
+  "IMG_2456.jpg",
+  "IMG_2457.jpg"
+ ],
+ "frame": {
+  "about": "Map metres, +x east, +z south. origin is the middle of the east end of registry part 6265201UF1366N_part5 (the lane-side portal); along runs west-south-west down the walkway (about 240 degrees compass), across is +north (a quarter turn to its right). Both come from the registry ring's two long sides, so they inherit its roughly 1-1.5 m registry offset.",
+  "origin": [
+   -154.925,
+   38.585
+  ],
+  "along": [
+   -0.8685,
+   0.4956
+  ],
+  "across": [
+   -0.4956,
+   -0.8685
+  ],
+  "length": 9.05,
+  "halfWidth": 1.65
+ },
+ "level": {
+  "rise": 0.4,
+  "risers": [
+   0,
+   0.5,
+   1.0
+  ],
+  "stepAcross": [
+   -1.65,
+   0.12
+  ],
+  "rampAcross": [
+   0.12,
+   1.65
+  ],
+  "rampLength": 1.65,
+  "tile": 0.24,
+  "basis": "Three white-nosed risers from the lane up to the walkway floor, each about 0.13 m, treads about two tile rows (0.5 m) deep (IMG_2459, IMG_2518, IMG_2689). The earlier levels-survey note read two risers; the photos show three. A red studded rubber ramp fills the right (north) share of the portal width and meets the floor level a little beyond the top riser. The floor is flat from there to the west arch. All heights are read against 0.24 m tiles and a 2.1 m door, not measured."
+ },
+ "arches": {
+  "spring": 1.6,
+  "depthAlong": 0.3,
+  "basis": "A round arch frames each end (IMG_2456 east, IMG_2519 and IMG_2690 west). Built as a plaster spandrel plate above a semi-elliptical opening spanning the full passage, so no pier narrows the route below head height. The photographed piers are about 0.4 m wide with a stepped impost; that is not modelled."
+ },
+ "pebbleMat": {
+  "along": [
+   2.3,
+   3.4
+  ],
+  "across": [
+   -0.55,
+   0.65
+  ],
+  "basis": "Rectangular dark pebble mosaic inset between the two double doors (IMG_2519, IMG_2520, IMG_2457, IMG_2690). Roughly 1 m square; its position down the walkway is read from the floor perspective in IMG_2519 and is an estimate, and the motif is only suggested."
+ },
+ "signs": [
+  {
+   "id": "calle-elena-18-36",
+   "text": [
+    "CALLE",
+    "ELENA",
+    "18",
+    "36"
+   ],
+   "along": 1.05,
+   "width": 1.55,
+   "height": 0.17,
+   "up": 1.75,
+   "side": 1,
+   "basis": "Black glazed letter tiles on the white north wall beside the ramp (IMG_2518, IMG_2689). Letters are redrawn procedurally; size and height above the floor are estimates."
+  },
+  {
+   "id": "casa-wilkes",
+   "text": [
+    "CASA",
+    "WILKES"
+   ],
+   "along": 2.15,
+   "width": 0.27,
+   "height": 0.3,
+   "up": 1.55,
+   "side": 1,
+   "basis": "Small two-line blue-on-white tile plaque beside the north double door (IMG_2518, IMG_2689). Position along the wall estimated."
+  }
+ ],
+ "hatch": {
+  "id": "agua-potable-hatch",
+  "along": 0.65,
+  "width": 0.38,
+  "height": 0.3,
+  "up": 0.55,
+  "side": 1,
+  "basis": "White plastic AGUA POTABLE service hatch low on the north wall at the foot of the ramp (IMG_2689, IMG_2518)."
+ },
+ "doors": [
+  {
+   "id": "north-double-door",
+   "side": 1,
+   "along": 3.0,
+   "width": 1.2,
+   "height": 2.05,
+   "kind": "double",
+   "basis": "Brown panelled double door with two raised panels per leaf and small knobs, in a white reveal (IMG_2519, IMG_2691). Along-wall position from IMG_2519 perspective, estimated."
+  },
+  {
+   "id": "south-double-door",
+   "side": -1,
+   "along": 2.9,
+   "width": 1.2,
+   "height": 2.05,
+   "kind": "double",
+   "basis": "Matching brown double door on the south wall opposite the pebble mat (IMG_2519, IMG_2459, IMG_2690). Along-wall position from perspective, estimated."
+  }
+ ],
+ "lantern": {
+  "along": 2.6,
+  "across": 0.1,
+  "bottom": 1.95,
+  "basis": "One black hanging lantern from the ceiling beside the pebble mat (IMG_2519, IMG_2690)."
+ },
+ "kerb": {
+  "height": 0.1,
+  "depth": 0.14,
+  "from": 1.2,
+  "basis": "A white rendered kerb strip runs along the foot of both walls where the floor meets them (IMG_2691, IMG_2459, IMG_2519)."
+ },
+ "trust": "Photo-supported forms: the three steps and ramp at the east portal, the patterned terracotta floor with blue-and-white insert tiles, the pebble mat, the CALLE ELENA 18 36 and CASA WILKES tile signs, brown panelled doors with a lantern, and the round end arches. All dimensions and the positions of the doors, mat, lantern and signs along the walkway are estimates read from photo perspective, not measured; the camera pins in the three portal photos are about +/-6 m. The walkway footprint, its side walls and the roof above are the unchanged registry blocks. The west end beyond the arch, windows, the stepped impost piers and the inner door recesses are not modelled.",
+ "unknown": [
+  "Exact positions along the walkway of doors, mat, lantern, windows and the single door",
+  "Whether the walkway floor is perfectly flat; the model holds it at one level from the top riser to the west arch",
+  "Pier and impost detail at both arches; louvred windows and recessed door bays",
+  "The arched single brown door with a barred grille and brass knob (IMG_2692, IMG_2813) cannot be placed on a wall of the walkway from either photo, so it is not built"
+ ]
+}

@@ -15,6 +15,7 @@ import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
+import {addElenaWalkway,elenaWalkwayGroundOffset} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
 import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
@@ -238,6 +239,7 @@ async function boot(): Promise<void> {
   addMiddlePool(scene);
   addMiddleSouthGate(scene);
   addElenaGatedEntry(scene);
+  addElenaWalkway(scene,!layoutOnly); // portal steps, ramp, patterned floor, signs, doors (data/elena_walkway.json)
   addElenaEastPatios(scene);
   if(skeleton.boundaryReference)addCervantesEastSouthPatios(scene,skeleton.boundaryReference);
   addEvaLawn(scene);
@@ -325,7 +327,7 @@ async function boot(): Promise<void> {
     maxGroundStep:0.45,
     seaLevel: seaside?.seaY,
     poolFloor: (x,z) => POOL_STAND + (nearbyPools.some(p=>(p.id==="main"||p.id==="toddler")&&pointInRing(x,z,p.ring))?LOWER_POOL_Y:0),
-    groundHeight: (x,z) => host && inSilviaFloor(x,z) ? silviaY+.06 : seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + doorSillsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
+    groundHeight: (x,z) => host && inSilviaFloor(x,z) ? silviaY+.06 : seaside?.inZone(x,z) ? seaside.y(x,z) + 0.06 : siteY(x,z) + stepsGroundOffset(x,z) + elenaWalkwayGroundOffset(x,z) + raisedTerraceGroundOffset(x,z) + doorSillsGroundOffset(x,z) + gardenGroundOffset(x,z,skeleton.boundaryReference) + poolGroundY(x,z) + (skeleton.boundaryReference ? referenceGroundHeight(skeleton.boundaryReference,x,z) : 0.06),
     bounds: { minX: centre.x - RADIUS, maxX: centre.x + RADIUS, minZ: centre.z - RADIUS, maxZ: centre.z + RADIUS },
   };
 

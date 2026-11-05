@@ -581,13 +581,13 @@
       "type": "steps",
       "from": "the Calle Elena lane outside the covered walkway's east portal",
       "rise": [
-        0.25,
-        0.36
+        0.3,
+        0.4
       ],
       "confidence": "medium",
       "run": [
-        0.6,
-        0.9
+        0.9,
+        1.7
       ],
       "at": [
         -154.5,
@@ -595,13 +595,15 @@
       ],
       "atAccuracy": 2.5,
       "photos": [
+        "IMG_2254.jpg",
+        "IMG_2459.jpg",
         "IMG_2518.jpg",
         "IMG_2519.jpg",
-        "IMG_2254.jpg"
+        "IMG_2689.jpg"
       ],
-      "model": "missing",
-      "task": "elena-level-clearance-survey",
-      "note": "Two risers with white nosings up from the lane into the walkway (6265201UF1366N_part5), a red ribbed rubber ramp beside them on the north side. Floor inside is terracotta with blue-and-white inset tiles. Rise judged from two 0.15-0.18 m risers; under a roof, so the laser survey cannot check it."
+      "model": "built",
+      "task": "elena-walkway-details",
+      "note": "Three white-nosed risers (about 0.13 m each, treads about 0.5 m deep) up from the lane into the walkway (6265201UF1366N_part5), a red studded rubber ramp about 1.65 m long beside them on the north side; the floor then runs level to the west arch. Floor inside is terracotta with blue-and-white inset tiles. The first reading (two risers, 0.25-0.36 m) is replaced: IMG_2459, IMG_2518 and IMG_2689 show three risers. Built in data/elena_walkway.json at 0.40 m; under a roof, so the laser survey cannot check it."
     }
   ],
   "photosWanted": [

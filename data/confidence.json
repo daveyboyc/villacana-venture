@@ -294,6 +294,18 @@
   "backdrop.json:aerial-trees": {
    "level": "inferred",
    "why": "Placed where the aerial shows dark canopy outside the resort; the species are not readable from the aerial and are drawn from the mix in the photos (umbrella pines, broadleaf, palms, eucalyptus beside the west wall). Heights are capped so nothing stands above the skyline in IMG_2204-2206."
+  },
+  "elena_walkway.json:elena-walkway-steps-ramp": {
+   "level": "estimated",
+   "why": "Three steps and the red ramp clear in four photos (IMG_2459, 2518, 2519, 2689); rise, tread depth and ramp length read against 0.24 m tiles, not measured."
+  },
+  "elena_walkway.json:elena-walkway-floor": {
+   "level": "estimated",
+   "why": "Terracotta floor with blue-and-white inserts and the pebble mat clear in IMG_2519/2520/2690; tile pitch, insert positions and the mat position along the walkway estimated."
+  },
+  "elena_walkway.json:elena-walkway-wall-details": {
+   "level": "estimated",
+   "why": "Signs, hatch, brown double doors and lantern seen in IMG_2518/2689/2691/2519; their positions along the walls are read from photo perspective and estimated."
   }
  },
  "gaps": [

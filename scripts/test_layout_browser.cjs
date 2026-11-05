@@ -66,6 +66,7 @@ const path = require("node:path");
       import("/src/raised-terraces.ts"),
     ]);
     const sills = await import("/src/door-sills.ts"); // issue #57
+    const walkway = await import("/src/elena-walkway.ts"); // elena-walkway-details
     const s = await (await fetch("/map/skeleton.json")).json(),
       map = await (await fetch("/map/villacana.json")).json();
     const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
@@ -119,6 +120,7 @@ const path = require("node:path");
           : siteY(x, z) +
             stepsGroundOffset(x, z) +
             sills.doorSillsGroundOffset(x, z) +
+            walkway.elenaWalkwayGroundOffset(x, z) +
             raisedTerraceGroundOffset(x, z) +
             gardenGroundOffset(x,z,s.boundaryReference) +
             poolGroundY(x, z) +
@@ -416,6 +418,18 @@ const path = require("node:path");
       if(Math.hypot(out.x-at[0],out.z-at[1])<.4)throw Error("Closed garden door is not solid");
       const patio=gardenPoint(0,1);
       if(Math.abs(world.groundHeight(...patio)-world.groundHeight(...foot)-gardenDoor.rise)>.01)throw Error("Private patio is not level with garden door sill");
+    }
+    // Elena covered walkway: its visible steps, ramp and floor follow the player ground, and it stays open end to end.
+    {
+      const scene = new THREE.Scene(); walkway.addElenaWalkway(scene); scene.updateMatrixWorld(true);
+      const O = walkway.elenaWalkway.frame.origin, ray = new THREE.Raycaster(), P = walkway.walkwayPoint;
+      const top = (p, part) => { ray.set(new THREE.Vector3(p[0], 9, p[1]), new THREE.Vector3(0, -1, 0)); const hit = ray.intersectObjects(scene.children, true).find(h => h.object.name === part); if (!hit) throw Error("No visible " + part + " at " + p); return hit.point.y + siteY(O[0], O[1]) - world.groundHeight(...p); };
+      for (const [a, b, part] of [[0.25, -0.8, "walkway-step-tread-1"], [0.75, -0.8, "walkway-step-tread-2"], [0.8, 0.9, "walkway-ramp"], [4, 0, "walkway-floor"], [8, -1.2, "walkway-floor"], [5, 1.2, "walkway-floor-ramp-side"]]) {
+        if (Math.abs(top(P(a, b), part)) > 0.015) throw Error("Elena walkway " + part + " at " + a + "," + b + " disagrees with the player ground");
+      }
+      const level = world.groundHeight(...P(4, 0)) - world.groundHeight(...P(-1, 0));
+      if (level < 0.3 || level > 0.45) throw Error("Elena walkway floor is " + level.toFixed(2) + " m above the lane, outside the survey");
+      walk([P(-2, 0.9), P(4, 0), P(10, 0.5), P(4, 0), P(-2, -0.9)]);
     }
     // Issue #57: sills, the kerbed Dalí footpath and the south Dalí approach are stepped onto and off,
     // rise by the surveyed amounts, and their visible tops follow the player ground.

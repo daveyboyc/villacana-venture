@@ -2875,6 +2875,118 @@
     "f": 1109.3
    },
    "initialBasis": "phone pin; reviewed looksAt; ground eye height; assumed 24 mm-equivalent lens"
+  },
+  "IMG_2459.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -154.17,
+    "y": 2.32,
+    "z": 38.5,
+    "yaw": 242,
+    "pitch": -24,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2518.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -153.94,
+    "y": 2.27,
+    "z": 37.68,
+    "yaw": 262,
+    "pitch": -24,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2689.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -153.86,
+    "y": 2.27,
+    "z": 38.44,
+    "yaw": 268,
+    "pitch": -34,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2519.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -153.94,
+    "y": 2.27,
+    "z": 36.87,
+    "yaw": 246,
+    "pitch": -15,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2520.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -154.86,
+    "y": 2.32,
+    "z": 38.09,
+    "yaw": 240,
+    "pitch": -20,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2690.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -156.41,
+    "y": 2.72,
+    "z": 38.4,
+    "yaw": 236,
+    "pitch": -20,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2456.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "initial": {
+    "x": -158.83,
+    "y": 2.72,
+    "z": 40.82,
+    "yaw": 62,
+    "pitch": -10,
+    "roll": 0,
+    "f": 1300
+   },
+   "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
   }
  }
 }

@@ -2436,6 +2436,38 @@
    ],
    "status": "open",
    "issue": 182
+  },
+  {
+   "id": "elena-walkway-details",
+   "area": "elena",
+   "priority": 2,
+   "kind": "build",
+   "title": "Elena covered walkway: portal steps and ramp, patterned floor, tile signs, doors",
+   "photos": [
+    "IMG_2459.jpg",
+    "IMG_2518.jpg",
+    "IMG_2519.jpg",
+    "IMG_2520.jpg",
+    "IMG_2689.jpg",
+    "IMG_2690.jpg",
+    "IMG_2456.jpg"
+   ],
+   "features": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
+   "build": "Make the covered walkway under registry part 6265201UF1366N_part5 look like its photographs in Inspect: three white-nosed steps beside a red studded rubber ramp at the east portal (data/levels_survey.json item elena-walkway-east-steps), the offset terracotta floor with blue-and-white insert tiles and the pebble mat, the CALLE ELENA 18 36 and CASA WILKES tile signs, the AGUA POTABLE hatch, brown panelled double doors, round end arches and a lantern. See docs/ELENA_WALKWAY.md.",
+   "avoid": "No change to the registry footprint, side walls or roof. Do not place the arched single door of IMG_2692/IMG_2813, windows or door recesses without a photo that locates them. No other passage (Silvia, Patricia, Miguel/Cervantes inner walk-through).",
+   "accept": [
+    "before/after renders from the portal photo cameras, each recorded in data/photo_checks.json",
+    "steps and ramp walkable; walkway still open end to end",
+    "honest trust and confidence records; positions along the walls marked estimated"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "4 Nov 2026. Floor, steps, ramp, signs, doors, arches and lantern built from IMG_2456/2459/2518-2520/2689-2691; dimensions and the positions of doors, mat and lantern along the walkway are estimates from photo perspective. The levels note's two risers are corrected to three. Geometry stands inside the unchanged registry strip and nothing is solid, but the added floor and the ground offset need the measured placement packet and independent review the policy asks for, which no second agent has given: the task stays in progress and claims no placement approval. Renders are hand-set cameras (unsolved poses)."
   }
  ]
 }
