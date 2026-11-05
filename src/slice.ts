@@ -288,7 +288,15 @@ async function boot(): Promise<void> {
     spawn[0] = best.x; spawn[1] = best.z;
     start.x = best.x + 5; start.z = best.z + 12;
     document.querySelector("#title")!.textContent = "Pintor Dalí";
-    inspectAt = { x: best.x, z: best.z, distance: 18, pitch: 0.58 };
+    // Look across the house-side kerb, low enough that the 0.12 m step reads.
+    const fence = ref.barriers[0].points;
+    let fenceHit = { x: fence[0][0], z: fence[0][1], d: Infinity };
+    for (let i = 0; i < fence.length - 1; i++) {
+      const hit = closestOnSegment(best.x, best.z, fence[i][0], fence[i][1], fence[i + 1][0], fence[i + 1][1]);
+      if (hit.d < fenceHit.d) fenceHit = hit;
+    }
+    const hx = best.x - fenceHit.x, hz = best.z - fenceHit.z, hn = Math.hypot(hx, hz) || 1;
+    inspectAt = { x: best.x + hx / hn * 6, z: best.z + hz / hn * 6, distance: 8, pitch: 0.28 };
   }
   if (connectionFocus && skeleton.boundaryReference?.connection) {
     const road = skeleton.boundaryReference.roads.find((r) => r.id === "cervantes" || r.name === "Calle Cervantes" || r.name === "Calle Miguel de Cervantes")!;

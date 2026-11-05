@@ -5,6 +5,7 @@ import sills from "../data/door_sills.json";
 import skeleton from "../public/map/skeleton.json";
 import { pointInRing } from "./geom";
 import { surfaceTexture } from "./materials";
+import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
 
 const fence = layout.barriers.find((b) => b.id === street.fence.barrierId);
@@ -73,17 +74,52 @@ function insideHouse(p: Vec2): boolean {
   return skeleton.buildings.some((b) => pointInRing(p[0], p[1], b.ring as Vec2[]));
 }
 
+/** Asphalt datum shared with the Dalí road meshes and door-sills (`daliSurface`). */
+const ASPHALT = 0.272;
+/** levels_survey dali-footpath-kerb: the path stands 0.10–0.15 m above that asphalt. */
+const KERB = 0.12;
+
+function shift(p: Vec2, ox: number, oz: number, d: number): Vec2 {
+  return [p[0] + ox * d, p[1] + oz * d];
+}
+function atHeight(p: Vec2, aboveAsphalt: number): number[] {
+  return [p[0], siteY(p[0], p[1]) + ASPHALT + aboveAsphalt, p[1]];
+}
+function quad(out: number[], a: number[], b: number[], c: number[], d: number[]) {
+  out.push(...a, ...b, ...c, ...a, ...c, ...d);
+}
+function top(out: number[], a: Vec2, b: Vec2, c: Vec2, d: Vec2, h: number) {
+  quad(out, atHeight(a, h), atHeight(b, h), atHeight(c, h), atHeight(d, h));
+}
+/** Vertical face, from the asphalt up to `h`, so the step is a kerb and not a colour change. */
+function riser(out: number[], a: Vec2, b: Vec2, h: number) {
+  quad(out, atHeight(a, 0), atHeight(a, h), atHeight(b, h), atHeight(b, 0));
+}
+function solid(positions: number[], material: THREE.Material, name: string): THREE.Mesh {
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.computeVertexNormals();
+  const mesh = new THREE.Mesh(geometry, material);
+  mesh.name = name;
+  mesh.userData.noDrape = true;
+  mesh.userData.structural = true;
+  mesh.castShadow = mesh.receiveShadow = true;
+  return mesh;
+}
+
 /**
- * The house-side walk is not the asphalt. IMG_2292, IMG_2267 and IMG_2268 show a
- * white kerb, a grass strip and terracotta tiles beside the parking. The measured
- * stretch between Eva and Patricia is already in door-sills; this continues that
- * edge along the other bay runs. Widths are estimated from those photos.
+ * The house-side walk is a step up from the asphalt. IMG_2291, IMG_2292 and
+ * IMG_2293 show a white kerb, grass and terracotta tiles 0.10–0.15 m above the
+ * parking. The measured stretch between Eva and Patricia is already in
+ * door-sills; this continues that kerb along the other bay runs. Widths there
+ * are estimated from those photos.
  */
 function addSidewalk(group: THREE.Group): void {
-  const tiles = new THREE.MeshStandardMaterial({ color: "#c56b45", map: surfaceTexture("paving"), roughness: 0.92 });
-  const grass = new THREE.MeshStandardMaterial({ color: "#6d8a48", map: surfaceTexture("turf"), roughness: 1 });
-  const kerbMat = new THREE.MeshStandardMaterial({ color: "#f7f4ee", roughness: 0.7 });
+  const tiles = new THREE.MeshStandardMaterial({ color: "#c56b45", map: surfaceTexture("paving"), roughness: 0.92, side: THREE.DoubleSide });
+  const grass = new THREE.MeshStandardMaterial({ color: "#6d8a48", map: surfaceTexture("turf"), roughness: 1, side: THREE.DoubleSide });
+  const kerbMat = new THREE.MeshStandardMaterial({ color: "#f7f4ee", roughness: 0.7, side: THREE.DoubleSide });
   const kerbW = 0.16, lawnW = 0.9, pathW = 1.5;
+  const path: number[] = [], lawn: number[] = [], stone: number[] = [];
   for (const ring of layout.parking.bayRings as Vec2[][]) {
     const edge = houseEdge(ring);
     if (!edge) continue;
@@ -93,19 +129,19 @@ function addSidewalk(group: THREE.Group): void {
     const hit = roadHit(mid);
     const n = Math.hypot(mid[0] - hit.x, mid[1] - hit.z) || 1;
     const ox = (mid[0] - hit.x) / n, oz = (mid[1] - hit.z) / n;
-    const walkMid: Vec2 = [mid[0] + ox * (kerbW + lawnW + pathW / 2), mid[1] + oz * (kerbW + lawnW + pathW / 2)];
+    const walkMid = shift(mid, ox, oz, kerbW + lawnW + pathW / 2);
     if (insideHouse(walkMid)) continue;
-    const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
-    const angle = -Math.atan2(b[1] - a[1], b[0] - a[0]);
-    const place = (width: number, shift: number, height: number, y: number, material: THREE.Material, name: string) => {
-      const mesh = box(length, height, width, material, name, mid[0] + ox * shift, y, mid[1] + oz * shift, angle);
-      mesh.userData.structural = true;
-      group.add(mesh);
-    };
-    place(kerbW, kerbW / 2, 0.16, 0.42, kerbMat, "dali-sidewalk-kerb");
-    place(lawnW, kerbW + lawnW / 2, 0.05, 0.34, grass, "dali-sidewalk-lawn");
-    place(pathW, kerbW + lawnW + pathW / 2, 0.06, 0.38, tiles, "dali-sidewalk");
+    const k0 = a, k1 = b;
+    const l0 = shift(a, ox, oz, kerbW), l1 = shift(b, ox, oz, kerbW);
+    const g0 = shift(a, ox, oz, kerbW + lawnW), g1 = shift(b, ox, oz, kerbW + lawnW);
+    const p0 = shift(a, ox, oz, kerbW + lawnW + pathW), p1 = shift(b, ox, oz, kerbW + lawnW + pathW);
+    top(stone, k0, k1, l1, l0, KERB + 0.012);
+    riser(stone, k0, k1, KERB + 0.012);
+    top(lawn, l0, l1, g1, g0, KERB - 0.01);
+    top(path, g0, g1, p1, p0, KERB);
+    riser(path, g0, g1, KERB);
   }
+  if (stone.length) group.add(solid(stone, kerbMat, "dali-sidewalk-kerb"), solid(lawn, grass, "dali-sidewalk-lawn"), solid(path, tiles, "dali-sidewalk"));
 }
 
 /** Plinth, curb and the house-side sidewalk. Hedge and lanterns are Details. */
