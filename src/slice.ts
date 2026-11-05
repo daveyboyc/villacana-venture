@@ -288,7 +288,7 @@ async function boot(): Promise<void> {
     spawn[0] = best.x; spawn[1] = best.z;
     start.x = best.x + 5; start.z = best.z + 12;
     document.querySelector("#title")!.textContent = "Pintor Dalí";
-    inspectAt = { x: best.x, z: best.z, distance: 42, pitch: 0.72 };
+    inspectAt = { x: best.x, z: best.z, distance: 18, pitch: 0.58 };
   }
   if (connectionFocus && skeleton.boundaryReference?.connection) {
     const road = skeleton.boundaryReference.roads.find((r) => r.id === "cervantes" || r.name === "Calle Cervantes" || r.name === "Calle Miguel de Cervantes")!;
@@ -820,10 +820,6 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   ground.receiveShadow = true;
   ground.userData.referenceSurface=true;
   scene.add(ground);
-  scene.updateMatrixWorld(true);
-  const flatGround = ground.geometry;
-  ground.geometry = refine(flatGround, siteY, ground.matrixWorld);
-  if (ground.geometry !== flatGround) flatGround.dispose();
   // Close the exposed sides of the ground cut at its existing slab boundary.
   // This visual fill changes neither top surfaces nor walking/collision heights.
   if(cutSilvia){
