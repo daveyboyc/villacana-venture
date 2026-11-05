@@ -11,8 +11,8 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sourceObservations: 59
 - sourcePixelTraces: 57
 - sourcePixelLocators: 32
-- sources: 418
-- uninspectedSources: 348
+- sources: 1714
+- uninspectedSources: 1644
 - routes: 24
 - segments: 173
 - tracedSides: 0

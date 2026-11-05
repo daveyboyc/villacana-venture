@@ -7,8 +7,8 @@ Task `barraka-planter-placement` · area **Barraka and the beach** · priority P
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/barraka-beach.md` and the contact sheet `villacana-reference/contact-sheets/barraka-beach.jpg`
 - docs: `docs/SEAFRONT.md`, `docs/LEVELS.md`
-- data: `data/levels_survey.json`
-- src: `src/seafront.ts`, `src/seaside.ts`
+- data: `data/levels_survey.json`, `data/barraka_frontage.json`
+- src: `src/seafront.ts`, `src/seaside.ts`, `src/barraka-frontage.ts`
 
 ## Photos to build from
 

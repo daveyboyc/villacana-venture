@@ -3267,7 +3267,13 @@
    "materials",
    "layout",
    "view"
-  ]
+  ],
+  "looksAt": [
+   -84.6,
+   214.2
+  ],
+  "subject": "Solar-head lamp post at the wall foot beside the paseo",
+  "note": "looksAt is the nearest lamp, about 6 m ahead along the heading, by eye from the pin (+-3.6 m)."
  },
  "IMG_2484.jpg": {
   "title": "Paseo near Calle Guillermo with painted crossing",
@@ -3280,7 +3286,13 @@
    "layout",
    "materials",
    "view"
-  ]
+  ],
+  "looksAt": [
+   -6.7,
+   136.5
+  ],
+  "subject": "Painted crossing across the paseo beside the beach gateway",
+  "note": "looksAt is about 10 m ahead along the heading, where the red and white bars cross the paving (position read to about 2 m)."
  },
  "IMG_2485.jpg": {
   "title": "Comunidad Villacana gate sign at the end of Calle Guillermo",
@@ -4768,7 +4780,12 @@
    "layout",
    "planting"
   ],
-  "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera."
+  "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. looksAt is the seating centre of data/barraka_frontage.json (bearings of IMG_2604 and IMG_2631), by eye; the pin is not used.",
+  "looksAt": [
+   13.9,
+   121.0
+  ],
+  "subject": "Roped rattan lounge set on the beach-side verge"
  },
  "IMG_2608.jpg": {
   "title": "From the Barraka terrace looking SW along the paseo to the white houses",
@@ -4784,7 +4801,12 @@
    "layout",
    "materials"
   ],
-  "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace."
+  "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace. looksAt is 25 m along the phone heading from the terrace spot of IMG_2631 (21.1, 108.5), by eye; the +-12.6 m pin is not used.",
+  "looksAt": [
+   4.0,
+   126.7
+  ],
+  "subject": "Paseo and lawn railing towards the white houses"
  },
  "IMG_2609.jpg": {
   "title": "Barraka beach-side lounge garden looking south-west along the paseo",
@@ -5191,7 +5213,13 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -105.6,
+   228.3
+  ],
+  "subject": "Dali end of the paseo: wall end, mesh fence and lamp",
+  "note": "looksAt is the wall end about 6 m ahead along the heading, by eye from the pin (+-4.7 m)."
  },
  "IMG_2638.jpg": {
   "title": "Paseo wall end and kerbed junction near Dali car park",

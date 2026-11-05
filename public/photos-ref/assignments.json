@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 388,
-  "photosCitedByModel": 112,
-  "modelFeaturesWithPhotoCitations": 134
+  "features": 391,
+  "photosCitedByModel": 123,
+  "modelFeaturesWithPhotoCitations": 137
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1554,7 +1554,8 @@
     "beach_verge.json:barraka-front-verge",
     "beach_verge.json:barraka-front-shrubs",
     "seafront_fence.json:guillermo-beach-gate",
-    "seafront_fence.json:guillermo-ramp-wall"
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1584,7 +1585,8 @@
    "citedBy": [
     "paseo_wall.json:paseo-retaining-wall",
     "seafront_fence.json:guillermo-beach-gate",
-    "seafront_fence.json:guillermo-ramp-wall"
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -7622,7 +7624,12 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -89.0,
@@ -7766,7 +7773,13 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_frontage.json:barraka-lounge-garden",
+    "barraka_frontage.json:paseo-painted-crossing",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -8.5,
@@ -7927,7 +7940,8 @@
    ],
    "citedBy": [
     "seafront_fence.json:guillermo-beach-gate",
-    "seafront_fence.json:guillermo-ramp-wall"
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -12032,7 +12046,16 @@
      "angleOffset": 3.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4",
+    "barraka_frontage.json:barraka-lounge-garden",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -1.7,
@@ -12145,7 +12168,9 @@
      "angleOffset": 33.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_frontage.json:barraka-lounge-garden"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 10.7,
@@ -12194,7 +12219,9 @@
      "angleOffset": 16.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_frontage.json:barraka-lounge-garden"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 13.4,
@@ -12243,7 +12270,17 @@
      "angleOffset": 10.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4",
+    "barraka_frontage.json:barraka-lounge-garden",
+    "barraka_frontage.json:paseo-painted-crossing",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 12.7,
@@ -12292,7 +12329,11 @@
      "angleOffset": 5.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 21.9,
@@ -12627,7 +12668,12 @@
      "angleOffset": 2.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 46.0,
@@ -13115,7 +13161,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 24.9,
@@ -13159,7 +13209,13 @@
      "angleOffset": 25.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_frontage.json:barraka-lounge-garden",
+    "barraka_frontage.json:paseo-painted-crossing",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 21.1,
@@ -13333,7 +13389,12 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -100.5,
