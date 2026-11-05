@@ -937,7 +937,7 @@
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "backdrop.json:aerial-trees",
-   "elena_north.json:elena-north-magnolia-bed"
+   "elena_walkway.json:elena-walkway-steps-ramp"
   ],
   "subject": "Opposite exit of the covered passage onto Calle Elena",
   "headingOff": 101
@@ -1396,8 +1396,10 @@
   ],
   "looksAtBasis": "estimated 12 m along the heading",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-wall-details",
    "backdrop.json:aerial-trees",
-   "elena_north.json:elena-north-planter-west"
+   "elena_walkway.json:elena-walkway-steps-ramp"
   ]
  },
  {
@@ -2616,10 +2618,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-steps-ramp",
    "backdrop.json:aerial-trees",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-planter-west"
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "The CALLE ELENA plaque in the covered walkway"
  },
@@ -2658,7 +2660,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "elena_walkway.json:elena-walkway-floor",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-wall-details"
   ]
  },
  {
@@ -2694,7 +2698,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor"
   ]
  },
  {
@@ -3002,8 +3007,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:cervantes-parking-crossing",
    "street:cervantes",
-   "backdrop.json:aerial-trees",
-   "parking:Dalí car park"
+   "dali_street.json:dali-house-lanterns",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -3106,7 +3111,9 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials",
+   "planting"
   ],
   "note": null,
   "observation": null,
@@ -3119,18 +3126,23 @@
    "accuracy": 4.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -188.1,
-   86.5
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth",
+   "dali_street.json:dali-west-hedge",
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -181.6,
+   101.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "dali_cervantes_threshold.json:dali-bays-1",
    "parking:Dalí car park",
    "backdrop.json:aerial-trees",
-   "street:dali"
-  ]
+   "street:dali",
+   "dali_street.json:dali-house-lanterns"
+  ],
+  "subject": "The white curb, rusty chain-link and house-side black lanterns, looking south along Pintor Dalí"
  },
  {
   "id": "IMG_2270.jpg",
@@ -3143,7 +3155,9 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials",
+   "planting"
   ],
   "note": null,
   "observation": null,
@@ -3156,18 +3170,22 @@
    "accuracy": 4.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -193.2,
-   77.0
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth",
+   "dali_street.json:dali-west-hedge",
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -202.4,
+   63.9
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "dali_cervantes_threshold.json:dali-bays-2",
    "parking:Dalí car park",
-   "backdrop.json:aerial-trees",
-   "street:dali"
-  ]
+   "street:dali",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "The same curb, hedge and a house-side lantern, looking north along Pintor Dalí"
  },
  {
   "id": "IMG_2273.jpg",
@@ -3320,7 +3338,8 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials"
   ],
   "note": null,
   "observation": "Asphalt parking area opening into the narrower seaward aisle. White perpendicular bay markings and parked cars sit beside the houses, with a separate house-side footpath and traditional black lanterns. Fence and tall tree screening line the opposite side, with the sea visible at the far end.",
@@ -3333,17 +3352,20 @@
    "accuracy": 3.1,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -179.6,
-   102.7
+  "citedBy": [
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -169.8,
+   115.3
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "parking:Dalí car park",
    "backdrop.json:aerial-trees",
-   "street:dali"
-  ]
+   "parking:Dalí car park",
+   "dali_street.json:dali-house-lanterns"
+  ],
+  "subject": "Parking bays, black lanterns and the outer fence toward the sea"
  },
  {
   "id": "IMG_2277.jpg",
@@ -3370,17 +3392,21 @@
    "accuracy": 2.0,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -180.2,
-   104.5
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -172.4,
+   118.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Dalí car park",
    "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns",
    "street:dali"
-  ]
+  ],
+  "subject": "The aisle, white curb and chain-link fence toward the sea"
  },
  {
   "id": "IMG_2278.jpg",
@@ -3394,7 +3420,8 @@
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "materials"
+   "materials",
+   "planting"
   ],
   "note": null,
   "observation": "Farther down the asphalt aisle, white bay corner markings and parked cars line the house side. The opposite edge shows brown chain-link mesh above a low retaining base, a white-painted curb and dense trees and hedge screening. The boundary continues toward the seaward end.",
@@ -3407,17 +3434,22 @@
    "accuracy": 5.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -152.5,
-   161.3
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth",
+   "dali_street.json:dali-west-hedge",
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -146.0,
+   175.9
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Dalí car park",
    "street:dali",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Brown chain-link on a concrete plinth, the white curb, and the hedge behind"
  },
  {
   "id": "IMG_2279.jpg",
@@ -3431,7 +3463,8 @@
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
+   "planting",
+   "materials"
   ],
   "note": null,
   "observation": "Closer view of the house-side parking row toward the sea. A tall black lantern, white plaster frontages, projecting entrance surrounds, clipped shrubs, flowering climbers and a palm sit behind the marked bays. This photo is useful for facade and planting materials.",
@@ -3444,17 +3477,16 @@
    "accuracy": 3.4,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -144.5,
-   174.2
+  "citedBy": [
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
-   "parking:Dalí car park",
-   "street:dali",
-   "backdrop.json:aerial-trees"
-  ]
+  "looksAt": [
+   -132.1,
+   184.2
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "A black lantern and the white house frontage beside the parking bays"
  },
  {
   "id": "IMG_2280.jpg",
@@ -3482,17 +3514,19 @@
    "accuracy": 2.0,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -131.4,
-   190.8
+  "citedBy": [
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -116.9,
+   184.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:jorge",
    "backdrop.json:aerial-trees",
-   "parking:Dalí car park"
-  ]
+   "street:jorge"
+  ],
+  "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
  },
  {
   "id": "IMG_2281.jpg",
@@ -6516,7 +6550,7 @@
    "materials",
    "signage"
   ],
-  "note": "Pin is only +-19.8 m (identical pin shared with IMG_2457/2458), so the camera position is unreliable. Context and plaque place it in the covered Elena walkway (object calle-elena-1 at about (-158.8, 41.2), see IMG_2255), looking out of an arch.",
+  "note": "Pin is only +-19.8 m (identical pin shared with IMG_2457/2458), so the camera position is unreliable. Context and plaque place it in the covered Elena walkway (object calle-elena-1 at about (-158.8, 41.2), see IMG_2255), looking out of an arch. Looks EAST/north-east out of the walkway: the ramp and steps lie between the camera and the arch; not a view of the west courtyard. Camera hand-set about 4.5 m inside the east portal.",
   "observation": null,
   "taken": "2026-10-26",
   "originalUrl": "https://drive.google.com/file/d/1Kwg5yXsNlVWzcNuRoWnjIhyOaZ628hj7/view?usp=drivesdk",
@@ -6528,18 +6562,24 @@
    "altitude": 8.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -148.6,
-   42.3
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -153.6,
+   37.8
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
    "elena_north.json:elena-north-magnolia-bed",
-   "backdrop.json:aerial-trees",
-   "elena_north.json:elena-north-garden-wall",
-   "elena_lane_paving.json:elena-north-three-column"
-  ]
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "The east arch of the covered Elena walkway looking out to the lane, the hedged bed and the magnolia",
+  "headingOff": 49
  },
  {
   "id": "IMG_2457.jpg",
@@ -6566,14 +6606,21 @@
    "altitude": 8.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
   "looksAt": [
    -155.6,
    41.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-wall-details",
+   "elena_walkway.json:elena-walkway-steps-ramp"
   ]
  },
  {
@@ -6645,14 +6692,21 @@
    "altitude": 7.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
   "looksAt": [
    -156.8,
    40.2
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "elena_walkway.json:elena-walkway-floor",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-wall-details",
+   "elena_walkway.json:elena-walkway-steps-ramp"
   ],
   "subject": "Steps and ramp at the east mouth of the covered Elena walkway"
  },
@@ -8876,10 +8930,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-steps-ramp",
    "backdrop.json:aerial-trees",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north",
-   "elena_north.json:elena-north-planter-west"
+   "elena_walkway.json:elena-walkway-wall-details",
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "East portal steps, ramp and plaque of the Elena covered walkway"
  },
@@ -8911,16 +8965,21 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
   "looksAt": [
    -155.0,
    39.5
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-steps-ramp",
    "backdrop.json:aerial-trees",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_lane_paving.json:elena-north-three-column"
   ],
   "subject": "East portal steps and ramp of the Calle Elena covered walkway",
   "headingOff": 67
@@ -8952,13 +9011,18 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
   "looksAt": [
    -162.0,
    43.0
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-floor",
    "backdrop.json:aerial-trees",
    "elena_gated_entry.json:elena-gated-entry"
   ],
@@ -8991,13 +9055,18 @@
    "altitude": 6.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
   "looksAt": [
    -162.0,
    43.0
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-floor",
    "backdrop.json:aerial-trees",
    "elena_gated_entry.json:elena-gated-entry"
   ],
@@ -9152,7 +9221,8 @@
   "looksAtFeatures": [
    "parking:Dalí car park",
    "street:dali",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-fence-plinth"
   ]
  },
  {
@@ -9269,7 +9339,9 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-wall-details"
   ]
  },
  {
@@ -9310,7 +9382,7 @@
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
    "backdrop.json:aerial-trees",
-   "elena_north.json:elena-north-magnolia-bed"
+   "elena_walkway.json:elena-walkway-steps-ramp"
   ],
   "subject": "East portal of the Elena covered walkway looking out to the lane",
   "headingOff": 49
@@ -9852,7 +9924,8 @@
   "looksAtFeatures": [
    "street:eva",
    "backdrop.json:aerial-trees",
-   "parking:Dalí car park"
+   "parking:Dalí car park",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -9929,7 +10002,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -10008,7 +10082,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva-west-footpath",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -10086,7 +10161,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva-west-footpath",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -14948,7 +15024,7 @@
    "backdrop.json:aerial-trees",
    "elena_lane_paving.json:elena-north-three-column",
    "street:elena-north",
-   "elena_north.json:elena-north-magnolia-bed"
+   "elena_walkway.json:elena-walkway-steps-ramp"
   ]
  },
  {
@@ -14989,8 +15065,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-planter-west",
    "backdrop.json:aerial-trees",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
   ]
  },
  {
@@ -15010,7 +15086,7 @@
    "layout",
    "facades"
   ],
-  "note": "Position matches the covered walkway part5 area (see IMG_2203/2361).",
+  "note": "Position matches the covered walkway part5 area (see IMG_2203/2361). Camera hand-set inside the walkway frame of data/elena_walkway.json (about 1 m east of the portal, looking along it and down). Pin is the same +/-6 m phone pin as IMG_2459.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1qGUjAhd97xmEreGy8zekQo2vVd1gzBTR/view?usp=drivesdk",
@@ -15022,16 +15098,23 @@
    "altitude": 8.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -159.3,
-   36.6
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -156.1,
+   38.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-steps-ramp",
    "backdrop.json:aerial-trees",
-   "elena_north.json:elena-north-planter-west"
-  ]
+   "elena_walkway.json:elena-walkway-wall-details",
+   "elena_walkway.json:elena-walkway-floor"
+  ],
+  "subject": "Three steps, red studded ramp and the CALLE ELENA 18 36 tile sign at the east mouth of the covered Elena walkway"
  },
  {
   "id": "IMG_2690.jpg",
@@ -15048,7 +15131,7 @@
    "materials",
    "facades"
   ],
-  "note": "Likely the covered walkway and paired iron gateway west of Elena (issue #46); the numbered side doors suggest private entries.",
+  "note": "Likely the covered walkway and paired iron gateway west of Elena (issue #46); the numbered side doors suggest private entries. Camera hand-set on the walkway floor near its east end; this photo is taken from inside the walkway, above the top step.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/10CgaI2oe4mSWBygxB2cG-yJ9_MlSPfh7/view?usp=drivesdk",
@@ -15060,15 +15143,22 @@
    "altitude": 8.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -159.4,
-   41.4
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -159.3,
+   41.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
-  ]
+   "elena_walkway.json:elena-walkway-floor",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
+  "subject": "The covered Elena walkway looking west: floor pattern, pebble mat, doors, lantern and the west arch"
  },
  {
   "id": "IMG_2691.jpg",
@@ -15097,14 +15187,20 @@
    "altitude": 8.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
+  ],
   "looksAt": [
    -157.9,
    42.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-wall-details"
   ]
  },
  {
@@ -15141,8 +15237,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "elena_lane_paving.json:elena-north-three-column",
-   "street:elena-north"
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "elena_walkway.json:elena-walkway-wall-details"
   ]
  },
  {

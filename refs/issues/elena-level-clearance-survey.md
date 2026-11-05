@@ -6,20 +6,14 @@ Task `elena-level-clearance-survey` · area **Calle Elena** · priority P1 · au
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/elena.md` and the contact sheet `villacana-reference/contact-sheets/elena.jpg`
-- docs: `docs/ELENA_NORTH.md`, `docs/ELENA_EAST_PATIOS.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`, `docs/reviews/path-network-inventory-elena/README.md`, `docs/reviews/elena-patio-wall-correction/README.md`
-- data: `data/elena_north.json`, `data/elena_east_patios.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`
-- src: `src/elena-north.ts`, `src/elena-east-patios.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`
+- docs: `docs/ELENA_NORTH.md`, `docs/ELENA_EAST_PATIOS.md`, `docs/STREET_LAYOUT.md`, `docs/TERRAIN.md`, `docs/LEVELS.md`, `docs/reviews/path-network-inventory-elena/README.md`, `docs/reviews/elena-patio-wall-correction/README.md`, `docs/ELENA_WALKWAY.md`
+- data: `data/elena_north.json`, `data/elena_east_patios.json`, `data/cervantes_elena_steps.json`, `data/street_layout.json`, `proposals/calle-elena.json`, `data/terrain.json`, `data/levels_survey.json`, `data/door_sills.json`, `data/elena_walkway.json`
+- src: `src/elena-north.ts`, `src/elena-east-patios.ts`, `src/ramp-steps.ts`, `src/terrain.ts`, `src/layout-routes.ts`, `src/door-sills.ts`, `src/elena-walkway.ts`
 
 ## Photos to build from
 
 - `public/photos-ref/IMG_2518.jpg`: Elena covered walkway east portal: CALLE ELENA 18 36 plaque, two steps and ramp (ground — pin ±2.5 m; looks at East portal steps and ramp of the Calle Elena covered walkway)
 - `public/photos-ref/IMG_2519.jpg`: Elena covered walkway looking west to the arch and the 36/34 gates (ground — pin ±2.6 m; looks at Calle Elena covered walkway towards its west arch)
-
-## Levels from the photos
-
-From `data/levels_survey.json` (check with `scripts/check_levels.py`).
-
-- `elena-walkway-east-steps` (steps): 0.25-0.36 m above the Calle Elena lane outside the covered walkway's east portal, medium confidence at (-154.5, 38.5) ±2.5 m. Model: **missing**, task `elena-level-clearance-survey`. Two risers with white nosings up from the lane into the walkway (6265201UF1366N_part5), a red ribbed rubber ramp beside them on the north side. Floor inside is terracotta with blue-and-white inset tiles. Rise judged from two 0.15-0.18 m risers; under a roof, so the laser survey cannot check it. (IMG_2518.jpg, IMG_2519.jpg, IMG_2254.jpg)
 
 ## Build
 

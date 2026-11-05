@@ -23,6 +23,7 @@ import {coastalWalls,coastalGate,coastalAccess} from "./coastal-gate";
 import { pointInRing } from "./geom";
 import {cervantesPatioWalls,cervantesWallOpenings,inCervantesWallReview} from "./cervantes-walls";
 import {daliThresholdZones,daliThresholdKerbs,daliParkingApron,daliPrivateEdge,DALI_THRESHOLD_COLORS,daliBayStripeParts} from "./dali-threshold";
+import daliStreet from "../data/dali_street.json";
 import {doorSills,sillRing,footpathBandRing,footpathParkingApronRing,footpathLawnRing,footpathKerbLine,footpathDrainRing,approachRing,approachKerbLines,inDoorSillReview} from "./door-sills";
 import {frontageRegions,frontageBorders,FRONTAGE_COLORS,inReviewedFrontage} from "./frontages";
 import {elenaNorthBeds,elenaNorthPlanters,gatewayParts,inElenaNorthReview} from "./elena-north";
@@ -262,6 +263,12 @@ async function boot(): Promise<void> {
       const node = el("path", { d: line(fence.points), fill: "none", stroke: "#743e36", "stroke-width": 0.9, "stroke-dasharray": "1.5 0.5" });
       const title = el("title", {}); title.textContent = `${fence.name}: solid game boundary`; node.append(title); boundary.append(node);
     }
+    const lanterns = el("g", { id: "dali-street-lanterns" });
+    for (const [x, z] of daliStreet.lanterns.points) {
+      const lamp = el("circle", { cx: x, cy: z, r: 0.35, fill: "#1c1c1c" });
+      const title = el("title", {}); title.textContent = `${daliStreet.lanterns.name}: ${daliStreet.lanterns.trust}`; lamp.append(title); lanterns.append(lamp);
+    }
+    boundary.append(lanterns);
     const bays = ref.parking;
     for (let i = 0; i < bays.bayLine.length - 1; i++) {
       const a = bays.bayLine[i], b = bays.bayLine[i + 1];

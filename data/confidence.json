@@ -306,6 +306,18 @@
   "elena_walkway.json:elena-walkway-wall-details": {
    "level": "estimated",
    "why": "Signs, hatch, brown double doors and lantern seen in IMG_2518/2689/2691/2519; their positions along the walls are read from photo perspective and estimated."
+  },
+  "dali_street.json:dali-fence-plinth": {
+   "level": "estimated",
+   "why": "White curb, concrete plinth and brown chain-link are clear along the aisle in four ground photos. Heights and the curb offset are estimated, and the run follows the mapped fence rather than a new survey."
+  },
+  "dali_street.json:dali-west-hedge": {
+   "level": "estimated",
+   "why": "A continuous clipped hedge stands outside the fence in the same photos. The volume follows the mapped fence; individual trees behind it are not placed."
+  },
+  "dali_street.json:dali-house-lanterns": {
+   "level": "estimated",
+   "why": "Black lanterns are clear on the house side in photos looking both ways and further south. The ten stations and the 18 m spacing are estimated, not counted off a survey."
   }
  },
  "gaps": [
@@ -390,6 +402,21 @@
     "IMG_2206.jpg"
    ],
    "why": "Located through the solved IMG_2204 camera (trunk foot on the terrace floor, about -193.0, 20.8, crown about 6 m across), but its crown overlaps the protected walk across the terrace, so the route-clearance guard keeps it out. Needs a decision on whether a tree over a walk may stand there."
+  },
+  {
+   "id": "gap:dali-house-fronts",
+   "name": "Pintor Dalí · house arches, palms and the seaward modern lamp",
+   "at": [
+    -154.0,
+    160.0
+   ],
+   "photos": [
+    "IMG_2279.jpg",
+    "IMG_2280.jpg",
+    "IMG_2281.jpg",
+    "IMG_2291.jpg"
+   ],
+   "why": "The aisle curb, plinth, hedge and black lanterns are built. Each house's arches, shuttered windows, balcony grilles, palms and bougainvillea are still the generated facade kit, and the modern flat lamp at the turning area is a different fitting from the black lanterns."
   }
  ]
 }

@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 385,
-  "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 131
+  "features": 391,
+  "photosCitedByModel": 121,
+  "modelFeaturesWithPhotoCitations": 137
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3193,7 +3193,11 @@
      "angleOffset": 25.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-fence-plinth",
+    "dali_street.json:dali-west-hedge",
+    "dali_street.json:dali-house-lanterns"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -190.5,
@@ -3242,7 +3246,11 @@
      "angleOffset": 26.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-fence-plinth",
+    "dali_street.json:dali-west-hedge",
+    "dali_street.json:dali-house-lanterns"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -189.8,
@@ -3401,7 +3409,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-house-lanterns"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -183.3,
@@ -3433,7 +3443,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-fence-plinth"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -183.1,
@@ -3477,7 +3489,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-fence-plinth",
+    "dali_street.json:dali-west-hedge",
+    "dali_street.json:dali-house-lanterns"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.9,
@@ -3509,7 +3525,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-house-lanterns"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -149.2,
@@ -3547,7 +3565,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "dali_street.json:dali-house-lanterns"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -136.8,
@@ -6625,7 +6645,11 @@
      "angleOffset": 8.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -152.7,
@@ -6681,7 +6705,11 @@
      "angleOffset": 33.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -152.7,
@@ -6774,7 +6802,11 @@
      "angleOffset": 17.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.2,
@@ -9094,7 +9126,11 @@
      "angleOffset": 11.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.0,
@@ -9136,7 +9172,11 @@
      "angleOffset": 7.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.0,
@@ -9178,7 +9218,11 @@
      "angleOffset": 21.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.9,
@@ -15214,7 +15258,11 @@
      "angleOffset": 20.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -153.5,
@@ -15256,7 +15304,11 @@
      "angleOffset": 8.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.9,
@@ -15298,7 +15350,11 @@
      "angleOffset": 23.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "elena_walkway.json:elena-walkway-floor",
+    "elena_walkway.json:elena-walkway-steps-ramp",
+    "elena_walkway.json:elena-walkway-wall-details"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -155.4,

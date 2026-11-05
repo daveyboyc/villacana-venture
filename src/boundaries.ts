@@ -1,3 +1,4 @@
+import streetDressing from "../data/dali_street.json";
 import {outsideLanePaving} from "./middle-pool-lane-frontages";
 import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
@@ -108,7 +109,34 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
       slat.position.set(foot[0]+dz/length*across,y+0.013,foot[1]-dx/length*across);slat.rotation.y=drain.rotation.y;scene.add(slat);
     }
   }
-  for(const ring of reference.parking.bayRings??[reference.parking.ring])flat(ring,"#888b8b",0.26);
+  // The marked bays sit off the asphalt ribbon, and the tiled ground shows in the
+  // gap (IMG_2269, IMG_2278: one continuous asphalt surface, white lines on it).
+  // Pull the road-side edge onto the asphalt so the two greys and the tile strip
+  // become one road. The house-side edge stays where it was.
+  const asphalt="#7f8384";
+  const daliRoad=reference.roads.find(r=>r.id==="dali");
+  const ontoRoad=(ring:Vec2[]):Vec2[]=>{
+    if(!daliRoad)return ring;
+    const dist=(p:Vec2)=>{
+      let best=Infinity, qx=p[0], qz=p[1];
+      for(let i=0;i<daliRoad.points.length-1;i++){
+        const a=daliRoad.points[i], b=daliRoad.points[i+1];
+        const hit=closestOnSegment(p[0],p[1],a[0],a[1],b[0],b[1]);
+        if(hit.d<best){best=hit.d;qx=hit.x;qz=hit.z;}
+      }
+      return {d:best,q:[qx,qz] as Vec2};
+    };
+    const nearest=ring.map((p,i)=>({i,d:dist(p).d})).sort((a,b)=>a.d-b.d).slice(0,2).map(r=>r.i);
+    const target=daliRoad.width/2-0.45;
+    return ring.map((p,i)=>{
+      if(!nearest.includes(i))return p;
+      const hit=dist(p);
+      if(hit.d<=target)return p;
+      const vx=p[0]-hit.q[0], vz=p[1]-hit.q[1], n=Math.hypot(vx,vz)||1;
+      return [hit.q[0]+vx/n*target, hit.q[1]+vz/n*target];
+    });
+  };
+  for(const ring of reference.parking.bayRings??[reference.parking.ring])flat(ontoRoad(ring),asphalt,0.275);
   const white=new THREE.MeshBasicMaterial({color:"#f6f3e8"});
   if (reference.mainParking) {
     const park = reference.mainParking;
@@ -152,13 +180,19 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   for(let x=-64;x<=128;x+=16) {ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+64,64);ctx.moveTo(x,0);ctx.lineTo(x-64,64);ctx.stroke();}
   const texture=new THREE.CanvasTexture(canvas);texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
   const wire=new THREE.MeshBasicMaterial({map:texture,transparent:true,alphaTest:0.2,side:THREE.DoubleSide});
+  const rusty=wire.clone();rusty.color.set("#a56b45");
   const steel=new THREE.MeshStandardMaterial({color:"#727b72",roughness:0.85});const hedges:SpritePlacement[]=[];
   for(const fence of reference.barriers) for(let i=0;i<fence.points.length-1;i++) {
     const a=fence.points[i],b=fence.points[i+1];const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
-    const geometry=new THREE.PlaneGeometry(length,fence.height);const uv=geometry.getAttribute("uv");for(let k=0;k<uv.count;k++)uv.setXY(k,uv.getX(k)*length/0.4,uv.getY(k)*fence.height/0.4);
-    const panel=new THREE.Mesh(geometry,wire);panel.position.set((a[0]+b[0])/2,fence.height/2,(a[1]+b[1])/2);panel.rotation.y=Math.atan2(-dz,dx);scene.add(panel);
-    for(let at=0;at<=length;at+=2.5) {const post=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,fence.height+0.15,6),steel);post.position.set(a[0]+dx/length*at,fence.height/2,a[1]+dz/length*at);scene.add(post);}
-    for(let at=0;at<length;at+=1.4)hedges.push({x:a[0]+dx/length*at-dz/length*0.3,z:a[1]+dz/length*at+dx/length*0.3});
+    // The Dalí aisle fence sits on a concrete plinth (data/dali_street.json). The last
+    // segment meets the coastal gate, which already draws its own plinth and mesh.
+    const plinth=fence.id===streetDressing.fence.barrierId && i<fence.points.length-1-streetDressing.fence.stopBeforeLastSegments ? streetDressing.fence.plinthHeight : 0;
+    const meshH=fence.height-plinth;
+    const geometry=new THREE.PlaneGeometry(length,meshH);const uv=geometry.getAttribute("uv");for(let k=0;k<uv.count;k++)uv.setXY(k,uv.getX(k)*length/0.4,uv.getY(k)*meshH/0.4);
+    const panel=new THREE.Mesh(geometry,plinth?rusty:wire);panel.position.set((a[0]+b[0])/2,plinth+meshH/2,(a[1]+b[1])/2);panel.rotation.y=Math.atan2(-dz,dx);scene.add(panel);
+    const postH=fence.height-plinth+0.15;
+    for(let at=0;at<=length;at+=2.5) {const post=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,postH,6),steel);post.position.set(a[0]+dx/length*at,plinth+postH/2,a[1]+dz/length*at);scene.add(post);}
+    if(!plinth) for(let at=0;at<length;at+=1.4)hedges.push({x:a[0]+dx/length*at-dz/length*0.3,z:a[1]+dz/length*at+dx/length*0.3});
   }
   addSprites(scene,"hedge",hedges);
 }

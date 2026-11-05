@@ -86,10 +86,10 @@ export function referenceEditor(options: {
   let points: ReferencePoint[]=[];
   let loadWarning="";
   try { points=validPoints(JSON.parse(localStorage.getItem(KEY)??"[]")); } catch { loadWarning="Saved references could not be read. Export your current references before leaving."; }
-  let armed=false, selected:ReferencePoint|null=null, hidden=false;
+  let armed=false, selected:ReferencePoint|null=null, hidden=true;
   const layer=document.createElement("div");layer.className="reference-layer";document.body.append(layer);
   const tools=document.createElement("div");tools.className="reference-tools";
-  tools.innerHTML='<button id="ref-add" type="button">+ Label / reference</button><button id="ref-labels" type="button" aria-pressed="true">Labels</button><button id="ref-export" type="button">Export references</button><button id="ref-import" type="button">Import</button><input id="ref-file" type="file" accept="application/json,.json" hidden><span id="ref-status" role="status" aria-live="polite"></span>';
+  tools.innerHTML='<button id="ref-add" type="button">+ Label / reference</button><button id="ref-labels" type="button" aria-pressed="false">Labels</button><button id="ref-export" type="button">Export references</button><button id="ref-import" type="button">Import</button><input id="ref-file" type="file" accept="application/json,.json" hidden><span id="ref-status" role="status" aria-live="polite"></span>';
   document.body.append(tools);
   const confidence=confidenceOverlay({toolbar:tools,project:options.project,enabled:()=>options.enabled?.()??true});
   const dialog=document.createElement("dialog");dialog.className="reference-dialog";
