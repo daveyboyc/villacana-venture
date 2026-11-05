@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 385,
-  "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 131
+  "features": 386,
+  "photosCitedByModel": 112,
+  "modelFeaturesWithPhotoCitations": 132
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2493,6 +2493,21 @@
    "evidence": [
     "IMG_2190.jpg",
     "IMG_2191.jpg"
+   ]
+  },
+  {
+   "id": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "name": "Calle Silvia 2-20 and 22-44 ramp-and-steps covered passages: photo-relative study",
+   "kind": "reference feature",
+   "source": "photo-relative study; not placed in the map; points are the 2-20 camera pin at the lane mouth and the 22-44 flight about 3 m ahead of IMG_2574 (GPS +-3 m), not measured geometry",
+   "evidence": [
+    "IMG_2656.jpg",
+    "IMG_2657.jpg",
+    "IMG_2658.jpg",
+    "IMG_2669.jpg",
+    "IMG_2670.jpg",
+    "IMG_2574.jpg",
+    "IMG_2575.jpg"
    ]
   },
   {
@@ -13857,6 +13872,12 @@
    "angleOffset": 30.6
   },
   {
+   "from": "photo:IMG_2574.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2575.jpg",
    "to": "street:silvia-south",
    "relation": "camera-nearby",
@@ -13882,6 +13903,12 @@
    "relation": "possibly-in-view",
    "distance": 43.5,
    "angleOffset": 1.7
+  },
+  {
+   "from": "photo:IMG_2575.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2576.jpg",
@@ -15508,6 +15535,12 @@
    "angleOffset": 22.8
   },
   {
+   "from": "photo:IMG_2656.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2657.jpg",
    "to": "street:silvia-south",
    "relation": "camera-nearby",
@@ -15535,6 +15568,12 @@
    "angleOffset": 21.8
   },
   {
+   "from": "photo:IMG_2657.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2658.jpg",
    "to": "street:silvia-south",
    "relation": "camera-nearby",
@@ -15560,6 +15599,12 @@
    "relation": "possibly-in-view",
    "distance": 18.4,
    "angleOffset": 15.2
+  },
+  {
+   "from": "photo:IMG_2658.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2660.jpg",
@@ -15782,6 +15827,12 @@
    "angleOffset": 0.5
   },
   {
+   "from": "photo:IMG_2669.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2670.jpg",
    "to": "street:silvia-north",
    "relation": "camera-nearby",
@@ -15800,6 +15851,12 @@
    "relation": "possibly-in-view",
    "distance": 25.9,
    "angleOffset": 1.1
+  },
+  {
+   "from": "photo:IMG_2670.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2671.jpg",

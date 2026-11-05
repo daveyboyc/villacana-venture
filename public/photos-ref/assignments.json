@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 385,
-  "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 131
+  "features": 386,
+  "photosCitedByModel": 112,
+  "modelFeaturesWithPhotoCitations": 132
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -10930,7 +10930,9 @@
      "angleOffset": 30.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -101.7,
@@ -10972,7 +10974,9 @@
      "angleOffset": 1.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -102.2,
@@ -13993,7 +13997,9 @@
      "angleOffset": 22.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -103.7,
@@ -14035,7 +14041,9 @@
      "angleOffset": 21.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -103.7,
@@ -14077,7 +14085,9 @@
      "angleOffset": 15.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -103.0,
@@ -14475,7 +14485,9 @@
      "angleOffset": 0.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -118.9,
@@ -14512,7 +14524,9 @@
      "angleOffset": 1.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -118.4,

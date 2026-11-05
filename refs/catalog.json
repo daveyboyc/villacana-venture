@@ -10535,7 +10535,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:silvia-south",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
   "subject": "Tiled steps and red ramp mat at passage exit"
  },
@@ -10673,13 +10674,16 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
+  ],
   "looksAt": [
    -104.6,
    147.8
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study",
    "street:silvia-south",
    "backdrop.json:aerial-trees"
   ],
@@ -10712,13 +10716,16 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
+  ],
   "looksAt": [
    -104.8,
    146.6
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study",
    "backdrop.json:aerial-trees",
    "street:silvia-south"
   ],
@@ -13735,7 +13742,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191.",
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1dugmqibQ5GgMsqhSObwTgjVbFFdH5VmO/view?usp=drivesdk",
@@ -13747,15 +13754,18 @@
    "altitude": 7.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -108.8,
-   151.0
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -110.5,
+   152.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2657.jpg",
@@ -13773,7 +13783,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191.",
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1Hs02F6CCWSUdy3GiyEqAt1w6qRtfc2H-/view?usp=drivesdk",
@@ -13785,15 +13795,18 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -108.8,
-   150.9
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -109.7,
+   151.4
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2658.jpg",
@@ -13821,7 +13834,9 @@
    "altitude": 7.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
+  ],
   "looksAt": [
    -108.5,
    150.2
@@ -13865,7 +13880,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ]
  },
  {
@@ -14023,6 +14039,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:silvia-north",
+   "silvia_ramp_passages.json:silvia-ramp-passage-study",
    "backdrop.json:aerial-trees"
   ]
  },
@@ -14104,7 +14121,7 @@
    "middle_pool_lane_frontages.json:silvia-outdoor-apron",
    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
    "street:silvia-north",
-   "backdrop.json:aerial-trees"
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ]
  },
  {
@@ -14199,7 +14216,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia).",
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1cfaN7j9xDy66MazNWCR3hrTBlqSkcVxs/view?usp=drivesdk",
@@ -14211,16 +14228,19 @@
    "altitude": 8.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -124.2,
-   119.1
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -126.8,
+   120.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "silvia_tunnel.json:silvia-tunnel-study"
-  ]
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2670.jpg",
@@ -14239,7 +14259,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia).",
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1rx1Qjq6vVgYNarwdDM7DIiYm_hRgVkH3/view?usp=drivesdk",
@@ -14251,18 +14271,19 @@
    "altitude": 8.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -123.5,
-   118.4
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -126.1,
+   119.9
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "middle_pool_lane_frontages.json:silvia-outdoor-apron",
-   "seaward_paving.json:silvia-patterned-floor",
    "silvia_tunnel.json:silvia-tunnel-study"
-  ]
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2671.jpg",
