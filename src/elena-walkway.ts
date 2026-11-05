@@ -76,10 +76,10 @@ function plainTileCanvas(): HTMLCanvasElement {
 /** Red studded rubber ramp matting: a grid of square studs. */
 function studCanvas(): HTMLCanvasElement {
   return draw(256, 256, (g) => {
-    g.fillStyle = "#4e2422"; g.fillRect(0, 0, 256, 256);
+    g.fillStyle = "#5a2a28"; g.fillRect(0, 0, 256, 256);
     for (let i = 0; i < 16; i++) for (let j = 0; j < 16; j++) {
-      g.fillStyle = "#86413b"; g.fillRect(i * 16 + 2, j * 16 + 2, 12, 12);
-      g.fillStyle = "#9c5a52"; g.fillRect(i * 16 + 2, j * 16 + 2, 12, 3);
+      g.fillStyle = "#a24c44"; g.fillRect(i * 16 + 2, j * 16 + 2, 12, 12);
+      g.fillStyle = "#b8706a"; g.fillRect(i * 16 + 2, j * 16 + 2, 12, 3);
     }
   });
 }
@@ -277,7 +277,7 @@ export function addElenaWalkway(scene: THREE.Scene, details = false): THREE.Grou
     mesh(slab, frame, `${d.id}-frame`);
     const g = new THREE.PlaneGeometry(d.width, d.height);
     if (d.side === 1) g.rotateY(Math.PI);
-    g.translate(d.along, FLOOR + d.height / 2, wall - d.side * 0.03);
+    g.translate(d.along, FLOOR + d.height / 2, wall - d.side * 0.036);
     mesh(g, doorMat, d.id, false);
   }
 

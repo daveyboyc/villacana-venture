@@ -624,8 +624,8 @@
     "tagged": 86,
     "placed": 86,
     "checks": {
-     "matches": 0,
-     "differs": 0,
+     "matches": 4,
+     "differs": 2,
      "not-comparable": 16
     },
     "camerasSolved": 3,
@@ -647,9 +647,18 @@
    "placement": {
     "features": 36,
     "verified": 0,
-    "disputed": 0
+    "disputed": 2
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:f079867db62cff7d",
+     "feature": "elena_walkway.json:elena-walkway-steps-ramp"
+    },
+    {
+     "id": "photo-discrepancy:9e5aa174efadfeb8",
+     "feature": "elena_walkway.json:elena-walkway-floor"
+    }
+   ],
    "tasks": {
     "open": 6,
     "inProgress": 4,
@@ -672,7 +681,7 @@
     "Photos: 86, 86 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
     "How sure: 12 photographed, 21 estimated, 2 inferred, 3 known gaps.",
-    "Placement: 0 of 36 features verified."
+    "Placement: 0 of 36 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -1697,8 +1706,8 @@
     "tagged": 403,
     "placed": 385,
     "checks": {
-     "matches": 2,
-     "differs": 9,
+     "matches": 6,
+     "differs": 11,
      "not-comparable": 35
     },
     "camerasSolved": 7,
@@ -1725,7 +1734,7 @@
    "placement": {
     "features": 391,
     "verified": 0,
-    "disputed": 8
+    "disputed": 10
    },
    "discrepancies": [
     {
@@ -1791,6 +1800,14 @@
     {
      "id": "photo-discrepancy:8bc5795c6b9563c7",
      "feature": "dali_street.json:dali-house-lanterns"
+    },
+    {
+     "id": "photo-discrepancy:f079867db62cff7d",
+     "feature": "elena_walkway.json:elena-walkway-steps-ramp"
+    },
+    {
+     "id": "photo-discrepancy:9e5aa174efadfeb8",
+     "feature": "elena_walkway.json:elena-walkway-floor"
     }
    ],
    "tasks": {
@@ -1815,7 +1832,7 @@
     "Photos: 403, 385 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 56 photographed, 93 estimated, 9 inferred, 7 known gaps.",
-    "Placement: 0 of 391 features verified, 16 open discrepancies."
+    "Placement: 0 of 391 features verified, 18 open discrepancies."
    ],
    "light": {
     "colour": "red",

@@ -613,6 +613,74 @@
    "result": "differs",
    "followUp": "dali-house-fronts",
    "notes": "A black lantern is near the house side of this pin. The photo is the flagstone pedestrian entrance between white houses, with shutters and flowering climbers; that entrance paving and those fronts are not built here."
+  },
+  {
+   "task": "elena-walkway-details",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "elena_walkway.json:elena-walkway-steps-ramp",
+   "photo": "IMG_2459.jpg",
+   "before": "docs/reviews/elena-walkway-details/IMG_2459-before.png",
+   "render": "docs/reviews/elena-walkway-details/IMG_2459-after.png",
+   "result": "matches",
+   "notes": "From the lane at the east portal: before, a plain three-column-tile lane ran into the walkway with no level change; after, three white-nosed risers with plain terracotta treads climb on the left, the red studded ramp fills the right, the offset terracotta floor with blue-and-white inserts, the pebble mat, the round west arch, the two brown double doors and the white wall kerbs all appear in the photo order (steps, ramp, floor, mat, doors, arch). Tread depth, rise and mat position are estimates; the photo shows more stepped impost at the arch and a darker, glossier floor. Camera hand-set in the walkway frame (unsolved starting pose), so composition is comparable but not pixel-aligned."
+  },
+  {
+   "task": "elena-walkway-details",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "elena_walkway.json:elena-walkway-steps-ramp",
+   "photo": "IMG_2518.jpg",
+   "before": "docs/reviews/elena-walkway-details/IMG_2518-before.png",
+   "render": "docs/reviews/elena-walkway-details/IMG_2518-after.png",
+   "result": "matches",
+   "notes": "Looking WNW into the portal: steps left, ramp right against the north wall, CALLE ELENA 18 36 sign at the portal pier, AGUA POTABLE hatch low on the wall, brown double door beyond with CASA WILKES beside it. Before, none of these existed. Sign wording and tile colours follow the photo; the sign height and the door position along the wall are estimates, and the photo door sits in a recess that is not modelled. Camera hand-set in the walkway frame (unsolved starting pose), so composition is comparable but not pixel-aligned."
+  },
+  {
+   "task": "elena-walkway-details",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "elena_walkway.json:elena-walkway-steps-ramp",
+   "photo": "IMG_2689.jpg",
+   "before": "docs/reviews/elena-walkway-details/IMG_2689-before.png",
+   "render": "docs/reviews/elena-walkway-details/IMG_2689-after.png",
+   "result": "differs",
+   "notes": "Close view of the steps and ramp: arrangement (three white risers left, studded ramp right, sign above, hatch at the wall foot) agrees, but the model ramp wedge lacks the white sloping side wall and tiled ledge along the north wall, the treads are brighter than the photographed brick red and the sign is out of this frame at the hand-set camera. Camera hand-set in the walkway frame (unsolved starting pose), so composition is comparable but not pixel-aligned.",
+   "followUp": "elena-walkway-details"
+  },
+  {
+   "task": "elena-walkway-details",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "elena_walkway.json:elena-walkway-wall-details",
+   "photo": "IMG_2519.jpg",
+   "before": "docs/reviews/elena-walkway-details/IMG_2519-before.png",
+   "render": "docs/reviews/elena-walkway-details/IMG_2519-after.png",
+   "result": "matches",
+   "notes": "Looking west along the walkway from the lane: after, the first riser, floor pattern, pebble mat between the doors, brown double door with CASA WILKES on the right, lantern, planters and the west arch with the 36/34 gates follow the photo; before, the same view showed a plain tiled lane with big generic shutters. The south door, window niches and arch piers differ from the photo and the mat position is estimated. Camera hand-set in the walkway frame (unsolved starting pose), so composition is comparable but not pixel-aligned."
+  },
+  {
+   "task": "elena-walkway-details",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "elena_walkway.json:elena-walkway-floor",
+   "photo": "IMG_2690.jpg",
+   "before": "docs/reviews/elena-walkway-details/IMG_2690-before.png",
+   "render": "docs/reviews/elena-walkway-details/IMG_2690-after.png",
+   "result": "matches",
+   "notes": "Inside the walkway looking WSW: floor pattern, pebble mat, white wall kerb, west arch and gates agree with the photo; the generic window shutters that sat on both walls before are gone. The photographed door, lantern and recessed bays are at the frame edge in the render and the blue-and-white insert motifs are simplified. Camera hand-set in the walkway frame (unsolved starting pose), so composition is comparable but not pixel-aligned."
+  },
+  {
+   "task": "elena-walkway-details",
+   "checked": "2026-11-05",
+   "by": "Claude",
+   "feature": "elena_walkway.json:elena-walkway-floor",
+   "photo": "IMG_2456.jpg",
+   "before": "docs/reviews/elena-walkway-details/IMG_2456-before.png",
+   "render": "docs/reviews/elena-walkway-details/IMG_2456-after.png",
+   "result": "differs",
+   "notes": "Looking east out of the walkway: the round arch, CALLE ELENA 18 36 sign, AGUA POTABLE hatch, ramp and lane step are in the photographed arrangement, but the planting outside (orange trees in the render, a magnolia and trained bougainvillea with a clipped hedge in the photo) and the stepped pier at the arch are not matched; they belong to the existing north lawn and are outside this task. Camera hand-set in the walkway frame (unsolved starting pose), so composition is comparable but not pixel-aligned.",
+   "followUp": "elena-walkway-details"
   }
  ],
  "legacyUnchecked": [
