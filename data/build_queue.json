@@ -2492,6 +2492,170 @@
    "issue": 182
   },
   {
+   "id": "silvia-ramp-passages",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "build",
+   "title": "Silvia 2-20 and 22-44 covered passages: ramp, three steps, double doors (photo-relative study)",
+   "photos": [
+    "IMG_2656.jpg",
+    "IMG_2657.jpg",
+    "IMG_2669.jpg",
+    "IMG_2670.jpg",
+    "IMG_2574.jpg"
+   ],
+   "features": [
+    "silvia_ramp_passages.json:silvia-ramp-passage-study"
+   ],
+   "build": "A reusable photo-relative component (data/silvia_ramp_passages.json, src/silvia-ramp-passage.ts, standalone study page silvia-ramp.html) for the Calle de Silvia passages whose plaques read 2-20 and 22-44: studded red rubber ramp beside two plain terracotta treads and a third riser carrying the landing, white-nosed with dark edge bands, brown panelled double doors with barred windows on both walls, pebble-mosaic mat, lanterns, plaques, arch and (2-20) garden gate, with Details-only planting.",
+   "avoid": "Do not place it in the main map, do not replace the west-side 1-15 tunnel and do not move any registry footprint until the identity question (silvia-west-passage-swap) is decided and measured. No invented walls or gates beyond the arch.",
+   "accept": [
+    "Study renders from cameras near IMG_2669/2670/2656/2657/2574 show ramp, steps, doors, mat, arch and gate in the photographed order and sides",
+    "Every dimension is flagged as an estimate in the data file",
+    "Identity and unplaced status are recorded in data/areas.json"
+   ],
+   "status": "in-progress",
+   "owner": "Claude (builder agent, session 01XeootebX786RyDVHciy2sJ)",
+   "notes": "Photo-relative study only: no main-map geometry, footprint or collision changed and Walk is untouched. Finds that the main map's west Silvia tunnel sits at the IMG_2669 camera and heading (the 2-20 passage) but is built from the 1-15 photos IMG_2190/2191/2668, taken from the same pin facing the other way. No measured placement, so the task stays in progress. Study renders are uncalibrated cameras, not solved poses."
+  },
+  {
+   "id": "silvia-west-passage-swap",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "build",
+   "title": "Decide the west Silvia passage: 2-20 ramp type here, 1-15 type on the east block",
+   "photos": [
+    "IMG_2669.jpg",
+    "IMG_2670.jpg",
+    "IMG_2668.jpg",
+    "IMG_2190.jpg",
+    "IMG_2672.jpg",
+    "IMG_2673.jpg"
+   ],
+   "build": "The camera pin of IMG_2669/2670 (2-20, heading 242) coincides with the main map's west Silvia tunnel entry (data/silvia_map.json) while IMG_2190/2191/2668 (1-15, heading 55-56) look from that pin into the opposite, east block, where IMG_2672-2674 show a similar louvre-door passage. Solve the cameras (docs/PHOTO_ALIGNMENT.md), measure both mouths against the aerial, then either switch the west tunnel to the silvia-ramp-passage component and place 1-15 on the east block, or record why not. Needs a second agent's review as geometry.",
+   "avoid": "Do not decide from GPS alone, move registry footprints without the measured-approval packet, or discard the owner-approved 1-15 door and paving details.",
+   "accept": [
+    "Two solved cameras per passage with metre residuals",
+    "Placement packet independently reviewed, or the discrepancy stays open"
+   ],
+   "dependsOn": [
+    "silvia-ramp-passages"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "patricia-passage-reference-pack",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "build",
+   "title": "Patricia covered passage: trace the arch chain from the CALLE DE PATRICIA arch to the Silvia 22-44 mouth",
+   "photos": [
+    "IMG_2561.jpg",
+    "IMG_2562.jpg",
+    "IMG_2563.jpg",
+    "IMG_2564.jpg",
+    "IMG_2565.jpg",
+    "IMG_2566.jpg",
+    "IMG_2567.jpg",
+    "IMG_2568.jpg",
+    "IMG_2569.jpg",
+    "IMG_2570.jpg",
+    "IMG_2574.jpg",
+    "IMG_2656.jpg"
+   ],
+   "build": "Make a numbered reference pack (docs/REFERENCE_PACK_WORKFLOW.md) for the passage: the arch marked CALLE DE PATRICIA (IMG_2562), paired brown doors and pebble-mosaic mats (2563/2564), planter-lined arches and tiled-eave loggia (2565-2567), the last arch with ramp to a lawn (2569) and the Silvia 22-44 porch (2570/2574/2656). Decide whether it is one passage or several, how it bends (cameras head SE at the west arch, then ENE), and where it lies against the registry blocks. Pins are 2.4-5 m and mostly indoors.",
+   "avoid": "Do not assume it follows the mapped Calle Patricia line, which runs about 20 m to the north-west. Do not repeat arches to fill the length.",
+   "accept": [
+    "Each arch and door set numbered with its source photo",
+    "Order, bends and levels recorded, or marked unresolved"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "jorge-south-arcade-identity",
+   "area": "seaward-lanes",
+   "priority": 3,
+   "kind": "build",
+   "title": "South-block arcade to the south pool lawn (Calle de Jorge plaque) and the Eva-side covered passages: establish identity and position",
+   "photos": [
+    "IMG_2639.jpg",
+    "IMG_2640.jpg",
+    "IMG_2641.jpg",
+    "IMG_2548.jpg",
+    "IMG_2557.jpg"
+   ],
+   "build": "IMG_2639-2641 show a two-arch arcade with a pebble mat and an arched iron gate onto the south pool lawn, tied to Calle de Jorge only by the plaque in 2641, with GPS errors of 16-29 m. IMG_2548 (Eva) and IMG_2557 (sign cut at 'CALLE MART...') show passages of the same family whose street is unread. Solve a camera per passage and place it against the registry blocks before any build; the existing floor and pebble components in silvia-tunnel.ts apply.",
+   "avoid": "Do not use the Jorge radial fanlight gate or the 1-15 tunnel as a stand-in. Do not guess a position from the pin.",
+   "accept": [
+    "Each passage has a stated identity and position with uncertainty, or an open question"
+   ],
+   "status": "open"
+  },
+  {
+   "id": "barraka-frontage-paseo-furniture",
+   "area": "barraka-beach",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Barraka frontage and paseo furniture: roped lounge garden, green bar railing on sandstone, solar-head lamps, painted crossing",
+   "photos": [
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2631.jpg",
+    "IMG_2607.jpg",
+    "IMG_2608.jpg",
+    "IMG_2610.jpg",
+    "IMG_2630.jpg",
+    "IMG_2618.jpg",
+    "IMG_2480.jpg",
+    "IMG_2484.jpg",
+    "IMG_2637.jpg"
+   ],
+   "features": [
+    "barraka_frontage.json:barraka-lounge-garden",
+    "barraka_frontage.json:paseo-painted-crossing",
+    "seafront_fence.json:main-pool-lawn-railing",
+    "paseo_details.json:paseo-white-lamp-1",
+    "paseo_details.json:paseo-white-lamp-2",
+    "paseo_details.json:paseo-white-lamp-3",
+    "paseo_details.json:paseo-white-lamp-4"
+   ],
+   "build": "Details-only furniture and finishes read from the 4 Nov photos, on existing geometry: Barraka's roped rattan lounge (timber posts with rope swags, two cream-cushioned wicker sofas, four woven pod armchairs, table, closed parasol, menu stand, easel sign, terracotta pots) beside the paseo; the big-pool lawn railing finished as dark green bars on a sandstone plinth instead of white; the four paseo lamps redrawn with a slim round tube and a solar-panel head at about 4 m; the red and white painted crossing in front of the beach gateway. No registry footprint, wall, terrain, collision or route changes.",
+   "avoid": "Nothing positioned from the +-12-19 m pins of IMG_2607/2608/2609 alone (they were taken from under the terrace awning). No new lamps, walls, gates or repeated furniture beyond what the photos show. Do not claim photographic or placement verification: the independent reviewer step is still outstanding. Barraka's building mass, facade windows and glazed frontage are not built here (see barraka-facade).",
+   "accept": [
+    "Layout view unchanged; furniture only in Details and passing the route-clearance guard with its visible footprint",
+    "Before/after renders from the photo cameras recorded in data/photo_checks.json with honest differences",
+    "Standard handover checks and scripts/check_barraka_frontage.py pass; an independent agent reviews the renders against the full-size photos before the task can be done"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude (builder agent, session_01XeootebX786RyDVHciy2sJ)",
+   "notes": "Details-only; kept in progress because a non-tooling task cannot be done without a measured placement packet reviewed by a second agent, which the building agent cannot supply. Positions are estimates (lounge about 3 m, crossing about 2 m, lamps unchanged); heights read against people and walls in the photos."
+  },
+  {
+   "id": "barraka-facade",
+   "area": "barraka-beach",
+   "priority": 2,
+   "kind": "structure",
+   "title": "Barraka building: two-level height, north-east window rows with timber band, glazed north-west and south-west frontage, thatched edge",
+   "photos": [
+    "IMG_2615.jpg",
+    "IMG_2618.jpg",
+    "IMG_2619.jpg",
+    "IMG_2630.jpg",
+    "IMG_2604.jpg",
+    "IMG_2611.jpg"
+   ],
+   "build": "The photos show Barraka as a white two-level building: on the north-east wall a black door, two small vents and a brown timber band under three groups of brown-framed windows (3+3+3 in IMG_2618), a rooftop water tank and a thatched roof edge; on the south-west and north-west faces glazing under red awnings with frosted BARRAKA BEACH lettering above timber cladding. The registry gives one floor (3 m) and the 2014-15 laser survey a roof of about 2.9-3.7 m, while the wall in IMG_2618/2619 reads about 4.5-5 m (door about 2.1 m). Settle the height against the photos and the survey first, then add the openings and awnings with their positions on the registry ring edges.",
+   "avoid": "Do not paint windows above the current 3 m wall. Do not move the registry ring. Keep the generic facade-kit openings off Barraka's walls only where the photos show something different, and say what is estimated.",
+   "accept": [
+    "Wall height reconciled with IMG_2604/2615/2618/2619 and the survey, recorded in data/levels_survey.json or the area notes",
+    "Openings placed on the registry edges by measured position from solved cameras; independent review of overlays",
+    "Standard handover checks pass"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
    "id": "elena-walkway-details",
    "area": "elena",
    "priority": 2,

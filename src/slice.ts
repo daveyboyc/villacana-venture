@@ -20,6 +20,7 @@ import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-
 import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
+import { addBarrakaFrontage } from "./barraka-frontage";
 import { addBeachVerge } from "./beach-verge";
 import {addMiddleSouthGate,middleSouthRings} from "./middle-pool-south-gate";
 import {addCervantesGardenDoor,gardenDoorRings,gardenGroundOffset} from "./cervantes-garden-door";
@@ -218,6 +219,7 @@ async function boot(): Promise<void> {
   }
   // The paseo's sandstone retaining wall; along the south lawn it is the sea wall, drawn once.
   if (seaside) addBarrakaBoardwalk(scene, (x,z) => seaside!.y(x,z));
+  if (seaside) addBarrakaFrontage(scene, (x,z) => seaside!.y(x,z));
   if (seaside && mainPool) addBeachVerge(scene, (x,z) => seaside!.y(x,z));
   if (seaside && skeleton.seafront) { addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY); addPaseoDetails(scene, seaside, liveGroundY); }
   // The wall, gateway and railings between the big-pool lawn and the paseo.

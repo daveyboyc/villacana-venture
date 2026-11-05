@@ -31,7 +31,24 @@ const { chromium } = require('playwright');
       layout.traverse(o=>{if(!o.isMesh)return;const p=o.geometry.attributes.position;for(let i=0;i<p.count;i++){const gap=p.getY(i)-seaside.y(p.getX(i),p.getZ(i));if(Math.abs(gap-.065)>.001)throw Error('Plank does not follow existing ground');vertices++;}});
       if(vertices<300)throw Error('Missing timber access geometry');
       if(!layout.getObjectByName('barraka-boardwalk').userData.noDrape)throw Error('Ground-following geometry will be draped twice');
-      return {vertices,width:barrakaAccess.width,details:4,blocked:0,signFacesInland:true,mapMarkerAgrees:true};
+      // The roped lounge garden and the painted crossing (data/barraka_frontage.json): Details only, guarded, flush where painted.
+      const {addBarrakaFrontage,loungeCentre,crossingAt} = await import('/src/barraka-frontage.ts');
+      const paseoRoute={id:'paseo-test',name:'paseo',points:s.seafront.paseo.points,width:s.seafront.paseo.width};
+      const front=(layoutOnly,protectedRoutes)=>{const scene=new THREE.Scene();scene.userData={layoutOnly,protectedRoutes};addBarrakaFrontage(scene,(x,z)=>seaside.y(x,z));return scene;};
+      if(front(true,[paseoRoute]).getObjectByName('barraka-frontage'))throw Error('Layout contains Barraka furniture');
+      const frontage=front(false,[paseoRoute]),count=(name)=>{let n=0;frontage.traverse(o=>{if(o.name===name)n++;});return n;};
+      if(count('barraka-lounge-garden-sofa')!==2||count('barraka-lounge-garden-pod')!==4||count('barraka-lounge-garden-parasol')!==1)throw Error('Lounge seating differs from the photographed 2 sofas, 4 pods and one parasol');
+      if(count('barraka-lounge-garden-pot')!==3||count('barraka-lounge-garden-menu-stand')!==1||count('barraka-lounge-garden-easel-sign')!==1)throw Error('Lounge props missing');
+      const rope=frontage.getObjectByName('barraka-lounge-rope');
+      if(rope.children.filter(o=>o.geometry.type==='BoxGeometry').length!==7||rope.children.filter(o=>o.geometry.type==='TubeGeometry').length!==6)throw Error('Rope should have 7 posts and 6 swags');
+      const crossing=frontage.getObjectByName('paseo-painted-crossing');
+      if(!crossing.userData.flushRouteSurface||crossing.children.length!==8)throw Error('Crossing must be eight flush bars');
+      crossing.children.forEach(bar=>{const gap=bar.position.y-seaside.y(bar.position.x,bar.position.z);if(Math.abs(gap-.05)>.001)throw Error('Crossing bar is not flush on the paving');});
+      const fullyBlocked=front(false,[{id:'blocked',name:'test clearance',points:[[-20,100],[60,160]],width:200}]);
+      let blockedParts=0;fullyBlocked.traverse(o=>{if(o.name.startsWith('barraka-lounge-garden-'))blockedParts++;});
+      if(blockedParts)throw Error('Lounge furniture ignores the route guard');
+      if(Math.hypot(loungeCentre[0]-crossingAt[0],loungeCentre[1]-crossingAt[1])<5)throw Error('Anchors unexpectedly overlap');
+      return {vertices,width:barrakaAccess.width,details:4,blocked:0,signFacesInland:true,mapMarkerAgrees:true,loungeParts:{sofas:2,pods:4,posts:7},crossingBars:8};
     },threeUrl);
     console.log('Barraka browser PASS',JSON.stringify(result));
   } finally {await browser.close();await server.close();}

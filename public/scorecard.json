@@ -330,14 +330,14 @@
     "estimated": 12,
     "inferred": 2,
     "registry": 0,
-    "gaps": 0
+    "gaps": 1
    },
    "status": [
     "Ground: 91% of open ground within 0.25 m of the laser survey.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 33, 26 placed; no camera solved.",
     "Facades: 0 of 40 kit parts traced from photos.",
-    "How sure: 9 photographed, 12 estimated, 2 inferred.",
+    "How sure: 9 photographed, 12 estimated, 2 inferred, 1 known gap.",
     "Placement: 0 of 23 features verified, 5 open discrepancies."
    ],
    "light": {
@@ -488,7 +488,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 1
+     "not-comparable": 5
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -500,7 +500,7 @@
     "generated": 35
    },
    "placement": {
-    "features": 2,
+    "features": 0,
     "verified": 0,
     "disputed": 0
    },
@@ -516,8 +516,8 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 1,
-    "inferred": 1,
+    "estimated": 0,
+    "inferred": 0,
     "registry": 0,
     "gaps": 0
    },
@@ -526,8 +526,7 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 14, 14 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "How sure: 0 photographed, 1 estimated, 1 inferred.",
-    "Placement: 0 of 2 features verified."
+    "Placement: no model features registered here yet."
    ],
    "light": {
     "colour": "red",
@@ -926,7 +925,7 @@
     "checks": {
      "matches": 0,
      "differs": 7,
-     "not-comparable": 0
+     "not-comparable": 1
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1359,7 +1358,7 @@
     "checks": {
      "matches": 1,
      "differs": 3,
-     "not-comparable": 4
+     "not-comparable": 11
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1371,7 +1370,7 @@
     "generated": 599
    },
    "placement": {
-    "features": 11,
+    "features": 12,
     "verified": 0,
     "disputed": 1
    },
@@ -1386,8 +1385,8 @@
     }
    ],
    "tasks": {
-    "open": 2,
-    "inProgress": 7,
+    "open": 5,
+    "inProgress": 8,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1396,18 +1395,18 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 7,
+    "estimated": 8,
     "inferred": 3,
     "registry": 0,
-    "gaps": 0
+    "gaps": 1
    },
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 126, 126 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 7 estimated, 3 inferred.",
-    "Placement: 0 of 11 features verified, 2 open discrepancies."
+    "How sure: 1 photographed, 8 estimated, 3 inferred, 1 known gap.",
+    "Placement: 0 of 12 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -1478,7 +1477,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 6
+     "not-comparable": 15
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1490,7 +1489,7 @@
     "generated": 0
    },
    "placement": {
-    "features": 10,
+    "features": 12,
     "verified": 0,
     "disputed": 2
    },
@@ -1505,8 +1504,8 @@
     }
    ],
    "tasks": {
-    "open": 2,
-    "inProgress": 1,
+    "open": 3,
+    "inProgress": 2,
     "titles": [
      "Correct reported Barraka planter placement against registered source evidence",
      "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
@@ -1515,17 +1514,17 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 9,
+    "estimated": 11,
     "inferred": 1,
     "registry": 0,
-    "gaps": 0
+    "gaps": 3
    },
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 54, 52 placed; no camera solved.",
-    "How sure: 0 photographed, 9 estimated, 1 inferred.",
-    "Placement: 0 of 10 features verified, 2 open discrepancies."
+    "How sure: 0 photographed, 11 estimated, 1 inferred, 3 known gaps.",
+    "Placement: 0 of 12 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -1585,7 +1584,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 4
+     "not-comparable": 15
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1597,7 +1596,7 @@
     "generated": 111
    },
    "placement": {
-    "features": 13,
+    "features": 14,
     "verified": 0,
     "disputed": 0
    },
@@ -1613,18 +1612,18 @@
    },
    "confidence": {
     "photographed": 4,
-    "estimated": 9,
+    "estimated": 10,
     "inferred": 0,
     "registry": 0,
-    "gaps": 0
+    "gaps": 1
    },
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 51, 50 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
-    "How sure: 4 photographed, 9 estimated, 0 inferred.",
-    "Placement: 0 of 13 features verified."
+    "How sure: 4 photographed, 10 estimated, 0 inferred, 1 known gap.",
+    "Placement: 0 of 14 features verified."
    ],
    "light": {
     "colour": "red",
@@ -1708,7 +1707,7 @@
     "checks": {
      "matches": 6,
      "differs": 11,
-     "not-comparable": 35
+     "not-comparable": 51
     },
     "camerasSolved": 7,
     "stationsHolding": [
@@ -1732,7 +1731,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 391,
+    "features": 395,
     "verified": 0,
     "disputed": 10
    },
@@ -1811,8 +1810,8 @@
     }
    ],
    "tasks": {
-    "open": 35,
-    "inProgress": 27,
+    "open": 39,
+    "inProgress": 29,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1821,18 +1820,18 @@
    },
    "confidence": {
     "photographed": 56,
-    "estimated": 93,
+    "estimated": 97,
     "inferred": 9,
     "registry": 233,
-    "gaps": 7
+    "gaps": 13
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 403, 385 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 56 photographed, 93 estimated, 9 inferred, 7 known gaps.",
-    "Placement: 0 of 391 features verified, 18 open discrepancies."
+    "How sure: 56 photographed, 97 estimated, 9 inferred, 13 known gaps.",
+    "Placement: 0 of 395 features verified, 18 open discrepancies."
    ],
    "light": {
     "colour": "red",

@@ -1592,7 +1592,8 @@
    "beach_verge.json:barraka-front-verge",
    "beach_verge.json:barraka-front-shrubs",
    "seafront_fence.json:guillermo-beach-gate",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "looksAt": [
    0.1,
@@ -1600,6 +1601,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo"
   ],
   "subject": "big-pool lawn frontage: white railings, Guillermo gateway at left"
@@ -1637,7 +1639,8 @@
   "citedBy": [
    "paseo_wall.json:paseo-retaining-wall",
    "seafront_fence.json:guillermo-beach-gate",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "looksAt": [
    -12.1,
@@ -7487,7 +7490,7 @@
    "layout",
    "view"
   ],
-  "note": null,
+  "note": "looksAt is the nearest lamp, about 6 m ahead along the heading, by eye from the pin (+-3.6 m).",
   "observation": null,
   "taken": "2026-10-26",
   "originalUrl": "https://drive.google.com/file/d/1IL2BC85pEkilhNM7b7ou0EOlJuuPP4Wm/view?usp=drivesdk",
@@ -7499,17 +7502,23 @@
    "altitude": 4.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2",
+   "paseo_details.json:paseo-white-lamp-3",
+   "paseo_details.json:paseo-white-lamp-4"
+  ],
   "looksAt": [
    -84.6,
    214.2
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_wall.json:paseo-retaining-wall"
-  ]
+  ],
+  "subject": "Solar-head lamp post at the wall foot beside the paseo"
  },
  {
   "id": "IMG_2481.jpg",
@@ -7653,7 +7662,7 @@
    "materials",
    "view"
   ],
-  "note": null,
+  "note": "looksAt is about 10 m ahead along the heading, where the red and white bars cross the paving (position read to about 2 m).",
   "observation": null,
   "taken": "2026-10-26",
   "originalUrl": "https://drive.google.com/file/d/1tKHqlww4OrBPfeQbIzd6MlPqrkyNhaqq/view?usp=drivesdk",
@@ -7665,16 +7674,23 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_frontage.json:barraka-lounge-garden",
+   "barraka_frontage.json:paseo-painted-crossing",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    -6.7,
    136.5
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
    "seafront_fence.json:guillermo-ramp-wall"
-  ]
+  ],
+  "subject": "Painted crossing across the paseo beside the beach gateway"
  },
  {
   "id": "IMG_2485.jpg",
@@ -7712,6 +7728,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo"
   ],
   "subject": "Comunidad Villacana sign on the Guillermo gate wall"
@@ -7821,7 +7838,8 @@
   },
   "citedBy": [
    "seafront_fence.json:guillermo-beach-gate",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "looksAt": [
    -22.0,
@@ -10611,7 +10629,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:silvia-south",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
   "subject": "Tiled steps and red ramp mat at passage exit"
  },
@@ -10749,13 +10768,16 @@
    "altitude": 6.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
+  ],
   "looksAt": [
    -104.6,
    147.8
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study",
    "street:silvia-south",
    "backdrop.json:aerial-trees"
   ],
@@ -10788,13 +10810,16 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
+  ],
   "looksAt": [
    -104.8,
    146.6
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study",
    "backdrop.json:aerial-trees",
    "street:silvia-south"
   ],
@@ -11731,7 +11756,9 @@
    127.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
  },
@@ -11813,7 +11840,9 @@
    128.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "subject": "coastal lawn gate pier and iron gate"
  },
  {
@@ -11882,7 +11911,16 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2",
+   "paseo_details.json:paseo-white-lamp-3",
+   "paseo_details.json:paseo-white-lamp-4",
+   "barraka_frontage.json:barraka-lounge-garden",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    28.8,
    110.5
@@ -11984,7 +12022,7 @@
    "layout",
    "planting"
   ],
-  "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera.",
+  "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. looksAt is the seating centre of data/barraka_frontage.json (bearings of IMG_2604 and IMG_2631), by eye; the pin is not used.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1-0RK4z7mTGRLqVusJConlrj63DXc9gYP/view?usp=drivesdk",
@@ -11996,16 +12034,21 @@
    "altitude": 5.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   8.7,
-   121.7
+  "citedBy": [
+   "barraka_frontage.json:barraka-lounge-garden"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   13.9,
+   121.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo",
-   "beach_verge.json:barraka-front-verge"
-  ]
+   "beach_verge.json:barraka-front-verge",
+   "barraka_frontage.json:barraka-lounge-garden",
+   "area:beach"
+  ],
+  "subject": "Roped rattan lounge set on the beach-side verge",
+  "headingOff": 52
  },
  {
   "id": "IMG_2608.jpg",
@@ -12025,7 +12068,7 @@
    "layout",
    "materials"
   ],
-  "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace.",
+  "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace. looksAt is 25 m along the phone heading from the terrace spot of IMG_2631 (21.1, 108.5), by eye; the +-12.6 m pin is not used.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1L_jwhYmKpGe8X153a4Gl2TPYXqW9GcCJ/view?usp=drivesdk",
@@ -12037,16 +12080,20 @@
    "altitude": 5.8,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   9.3,
-   119.1
+  "citedBy": [
+   "barraka_frontage.json:barraka-lounge-garden"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   4.0,
+   126.7
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
-   "beach_verge.json:barraka-front-verge"
-  ]
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
+  "subject": "Paseo and lawn railing towards the white houses"
  },
  {
   "id": "IMG_2609.jpg",
@@ -12078,7 +12125,17 @@
    "altitude": 4.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2",
+   "paseo_details.json:paseo-white-lamp-3",
+   "paseo_details.json:paseo-white-lamp-4",
+   "barraka_frontage.json:barraka-lounge-garden",
+   "barraka_frontage.json:paseo-painted-crossing",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    12,
    120
@@ -12086,6 +12143,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "beach_verge.json:barraka-front-verge",
+   "barraka_frontage.json:barraka-lounge-garden",
    "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
@@ -12119,14 +12177,19 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    17,
    106
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Curved sandstone wall and green railing at Barraka's west corner"
  },
@@ -12426,7 +12489,12 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2",
+   "paseo_details.json:paseo-white-lamp-3",
+   "paseo_details.json:paseo-white-lamp-4"
+  ],
   "looksAt": [
    29,
    110
@@ -12880,7 +12948,11 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    24,
    107
@@ -12920,7 +12992,13 @@
    "altitude": 6.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_frontage.json:barraka-lounge-garden",
+   "barraka_frontage.json:paseo-painted-crossing",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    12,
    120
@@ -12928,6 +13006,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "beach_verge.json:barraka-front-verge",
+   "barraka_frontage.json:barraka-lounge-garden",
    "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
@@ -13139,7 +13218,7 @@
    "materials",
    "planting"
   ],
-  "note": null,
+  "note": "looksAt is the wall end about 6 m ahead along the heading, by eye from the pin (+-4.7 m).",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1nVEQ-ejWZwAUSSJJHu-sAuA8TZt8dt4h/view?usp=drivesdk",
@@ -13151,18 +13230,24 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "paseo_details.json:paseo-white-lamp-1",
+   "paseo_details.json:paseo-white-lamp-2",
+   "paseo_details.json:paseo-white-lamp-3",
+   "paseo_details.json:paseo-white-lamp-4"
+  ],
   "looksAt": [
    -105.6,
    228.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_details.json:paseo-white-lamp-1",
    "paseo_wall.json:paseo-retaining-wall"
-  ]
+  ],
+  "subject": "Dali end of the paseo: wall end, mesh fence and lamp"
  },
  {
   "id": "IMG_2638.jpg",
@@ -13811,7 +13896,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191.",
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1dugmqibQ5GgMsqhSObwTgjVbFFdH5VmO/view?usp=drivesdk",
@@ -13823,15 +13908,18 @@
    "altitude": 7.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -108.8,
-   151.0
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -110.5,
+   152.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2657.jpg",
@@ -13849,7 +13937,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191.",
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1Hs02F6CCWSUdy3GiyEqAt1w6qRtfc2H-/view?usp=drivesdk",
@@ -13861,15 +13949,18 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -108.8,
-   150.9
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -109.7,
+   151.4
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2658.jpg",
@@ -13897,7 +13988,9 @@
    "altitude": 7.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
+  ],
   "looksAt": [
    -108.5,
    150.2
@@ -13941,7 +14034,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ]
  },
  {
@@ -14099,6 +14193,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:silvia-north",
+   "silvia_ramp_passages.json:silvia-ramp-passage-study",
    "backdrop.json:aerial-trees"
   ]
  },
@@ -14180,7 +14275,7 @@
    "middle_pool_lane_frontages.json:silvia-outdoor-apron",
    "middle_pool_lane_frontages.json:south-lane-four-column-paving",
    "street:silvia-north",
-   "backdrop.json:aerial-trees"
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ]
  },
  {
@@ -14275,7 +14370,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia).",
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1cfaN7j9xDy66MazNWCR3hrTBlqSkcVxs/view?usp=drivesdk",
@@ -14287,16 +14382,19 @@
    "altitude": 8.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -124.2,
-   119.1
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -126.8,
+   120.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "silvia_tunnel.json:silvia-tunnel-study"
-  ]
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2670.jpg",
@@ -14315,7 +14413,7 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia).",
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1rx1Qjq6vVgYNarwdDM7DIiYm_hRgVkH3/view?usp=drivesdk",
@@ -14327,18 +14425,19 @@
    "altitude": 8.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -123.5,
-   118.4
+  "citedBy": [
+   "silvia_ramp_passages.json:silvia-ramp-passage-study"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -126.1,
+   119.9
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "middle_pool_lane_frontages.json:silvia-outdoor-apron",
-   "seaward_paving.json:silvia-patterned-floor",
    "silvia_tunnel.json:silvia-tunnel-study"
-  ]
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  {
   "id": "IMG_2671.jpg",
@@ -15494,7 +15593,8 @@
   "note": null,
   "citedBy": [
    "seafront_fence.json:guillermo-beach-gate",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ]
  },
  {
@@ -15616,7 +15716,8 @@
   "note": "Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh.",
   "citedBy": [
    "seafront_fence.json:guillermo-beach-gate",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ]
  },
  {

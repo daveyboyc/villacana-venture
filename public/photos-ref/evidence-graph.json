@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 391,
-  "photosCitedByModel": 121,
-  "modelFeaturesWithPhotoCitations": 137
+  "features": 395,
+  "photosCitedByModel": 139,
+  "modelFeaturesWithPhotoCitations": 141
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2270,7 +2270,12 @@
    "source": "bounded photo interpretation; wall-relative positions estimated",
    "evidence": [
     "IMG_2352.jpg",
-    "IMG_2354.jpg"
+    "IMG_2354.jpg",
+    "IMG_2480.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2618.jpg",
+    "IMG_2637.jpg"
    ]
   },
   {
@@ -2280,7 +2285,12 @@
    "source": "bounded photo interpretation; wall-relative positions estimated",
    "evidence": [
     "IMG_2352.jpg",
-    "IMG_2354.jpg"
+    "IMG_2354.jpg",
+    "IMG_2480.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2618.jpg",
+    "IMG_2637.jpg"
    ]
   },
   {
@@ -2289,7 +2299,12 @@
    "kind": "reference feature",
    "source": "bounded photo interpretation; wall-relative positions estimated",
    "evidence": [
-    "IMG_2350.jpg"
+    "IMG_2350.jpg",
+    "IMG_2480.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2618.jpg",
+    "IMG_2637.jpg"
    ]
   },
   {
@@ -2298,7 +2313,12 @@
    "kind": "reference feature",
    "source": "bounded photo interpretation; wall-relative positions estimated",
    "evidence": [
-    "IMG_2350.jpg"
+    "IMG_2350.jpg",
+    "IMG_2480.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2618.jpg",
+    "IMG_2637.jpg"
    ]
   },
   {
@@ -2493,6 +2513,21 @@
    "evidence": [
     "IMG_2190.jpg",
     "IMG_2191.jpg"
+   ]
+  },
+  {
+   "id": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "name": "Calle Silvia 2-20 and 22-44 ramp-and-steps covered passages: photo-relative study",
+   "kind": "reference feature",
+   "source": "photo-relative study; not placed in the map; points are the 2-20 camera pin at the lane mouth and the 22-44 flight about 3 m ahead of IMG_2574 (GPS +-3 m), not measured geometry",
+   "evidence": [
+    "IMG_2656.jpg",
+    "IMG_2657.jpg",
+    "IMG_2658.jpg",
+    "IMG_2669.jpg",
+    "IMG_2670.jpg",
+    "IMG_2574.jpg",
+    "IMG_2575.jpg"
    ]
   },
   {
@@ -2963,6 +2998,31 @@
    ]
   },
   {
+   "id": "barraka_frontage.json:barraka-lounge-garden",
+   "name": "Barraka roped lounge garden (rattan seating, rope-and-post barrier, menu stand, easel)",
+   "kind": "reference feature",
+   "source": "photo interpretation; seasonal furniture, position about 3 m",
+   "evidence": [
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2631.jpg",
+    "IMG_2607.jpg",
+    "IMG_2608.jpg",
+    "IMG_2484.jpg"
+   ]
+  },
+  {
+   "id": "barraka_frontage.json:paseo-painted-crossing",
+   "name": "Paseo red and white painted crossing at the beach gateway",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; flush marking, position about 2 m",
+   "evidence": [
+    "IMG_2484.jpg",
+    "IMG_2609.jpg",
+    "IMG_2631.jpg"
+   ]
+  },
+  {
    "id": "seafront_fence.json:guillermo-beach-gate",
    "name": "Beach gateway from the big-pool lawn",
    "kind": "reference feature",
@@ -2972,7 +3032,13 @@
     "IMG_2227.jpg",
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
-    "IMG_2488.jpg"
+    "IMG_2488.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2610.jpg",
+    "IMG_2630.jpg",
+    "IMG_2631.jpg",
+    "IMG_2484.jpg"
    ]
   },
   {
@@ -2985,7 +3051,32 @@
     "IMG_2227.jpg",
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
-    "IMG_2488.jpg"
+    "IMG_2488.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2610.jpg",
+    "IMG_2630.jpg",
+    "IMG_2631.jpg",
+    "IMG_2484.jpg"
+   ]
+  },
+  {
+   "id": "seafront_fence.json:main-pool-lawn-railing",
+   "name": "Green bar railing on a sandstone plinth along the big-pool lawn",
+   "kind": "reference feature",
+   "source": "photo/aerial/survey interpretation; position about 1-2 m",
+   "evidence": [
+    "IMG_2226.jpg",
+    "IMG_2227.jpg",
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+    "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+    "IMG_2488.jpg",
+    "IMG_2604.jpg",
+    "IMG_2609.jpg",
+    "IMG_2610.jpg",
+    "IMG_2630.jpg",
+    "IMG_2631.jpg",
+    "IMG_2484.jpg"
    ]
   },
   {
@@ -7272,6 +7363,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2226.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2227.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -7292,6 +7389,12 @@
   {
    "from": "photo:IMG_2227.jpg",
    "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2227.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -12118,6 +12221,30 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2480.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2480.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2480.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2480.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2481.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -12198,6 +12325,36 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 2.8
+  },
+  {
+   "from": "photo:IMG_2484.jpg",
+   "to": "barraka_frontage.json:barraka-lounge-garden",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2484.jpg",
+   "to": "barraka_frontage.json:paseo-painted-crossing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2484.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2484.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2484.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2485.jpg",
@@ -12300,6 +12457,12 @@
   {
    "from": "photo:IMG_2488.jpg",
    "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2488.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -14131,6 +14294,12 @@
    "angleOffset": 30.6
   },
   {
+   "from": "photo:IMG_2574.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2575.jpg",
    "to": "street:silvia-south",
    "relation": "camera-nearby",
@@ -14156,6 +14325,12 @@
    "relation": "possibly-in-view",
    "distance": 43.5,
    "angleOffset": 1.7
+  },
+  {
+   "from": "photo:IMG_2575.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2576.jpg",
@@ -14713,6 +14888,54 @@
    "angleOffset": 3.0
   },
   {
+   "from": "photo:IMG_2604.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "barraka_frontage.json:barraka-lounge-garden",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2605.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -14769,6 +14992,12 @@
    "angleOffset": 33.5
   },
   {
+   "from": "photo:IMG_2607.jpg",
+   "to": "barraka_frontage.json:barraka-lounge-garden",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2608.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -14799,6 +15028,12 @@
    "relation": "possibly-in-view",
    "distance": 39.7,
    "angleOffset": 16.8
+  },
+  {
+   "from": "photo:IMG_2608.jpg",
+   "to": "barraka_frontage.json:barraka-lounge-garden",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2609.jpg",
@@ -14833,6 +15068,60 @@
    "angleOffset": 10.7
   },
   {
+   "from": "photo:IMG_2609.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "barraka_frontage.json:barraka-lounge-garden",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "barraka_frontage.json:paseo-painted-crossing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2610.jpg",
    "to": "area:barraka",
    "relation": "camera-nearby",
@@ -14863,6 +15152,24 @@
    "relation": "possibly-in-view",
    "distance": 43.8,
    "angleOffset": 5.2
+  },
+  {
+   "from": "photo:IMG_2610.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2610.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2610.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2611.jpg",
@@ -15053,6 +15360,30 @@
    "relation": "possibly-in-view",
    "distance": 27.4,
    "angleOffset": 2.3
+  },
+  {
+   "from": "photo:IMG_2618.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2618.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2618.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2618.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2619.jpg",
@@ -15331,6 +15662,24 @@
    "gap": 5.8
   },
   {
+   "from": "photo:IMG_2630.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2630.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2630.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2631.jpg",
    "to": "area:barraka",
    "relation": "camera-nearby",
@@ -15354,6 +15703,36 @@
    "relation": "possibly-in-view",
    "distance": 41.8,
    "angleOffset": 25.2
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "barraka_frontage.json:barraka-lounge-garden",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "barraka_frontage.json:paseo-painted-crossing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2632.jpg",
@@ -15411,6 +15790,30 @@
    "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2637.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2637.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2637.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2637.jpg",
+   "to": "paseo_details.json:paseo-white-lamp-4",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2638.jpg",
@@ -15782,6 +16185,12 @@
    "angleOffset": 22.8
   },
   {
+   "from": "photo:IMG_2656.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2657.jpg",
    "to": "street:silvia-south",
    "relation": "camera-nearby",
@@ -15809,6 +16218,12 @@
    "angleOffset": 21.8
   },
   {
+   "from": "photo:IMG_2657.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2658.jpg",
    "to": "street:silvia-south",
    "relation": "camera-nearby",
@@ -15834,6 +16249,12 @@
    "relation": "possibly-in-view",
    "distance": 18.4,
    "angleOffset": 15.2
+  },
+  {
+   "from": "photo:IMG_2658.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2660.jpg",
@@ -16056,6 +16477,12 @@
    "angleOffset": 0.5
   },
   {
+   "from": "photo:IMG_2669.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2670.jpg",
    "to": "street:silvia-north",
    "relation": "camera-nearby",
@@ -16074,6 +16501,12 @@
    "relation": "possibly-in-view",
    "distance": 25.9,
    "angleOffset": 1.1
+  },
+  {
+   "from": "photo:IMG_2670.jpg",
+   "to": "silvia_ramp_passages.json:silvia-ramp-passage-study",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2671.jpg",
@@ -16726,6 +17159,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
    "to": "north_west_canopies.json:north-west-balcony-canopy-1",
    "relation": "cited-as-source",
@@ -16770,6 +17209,12 @@
   {
    "from": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
    "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

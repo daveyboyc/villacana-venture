@@ -214,7 +214,7 @@ async function boot(): Promise<void> {
     // The white wall, arched gateway and lawn railings between the big pool and the paseo (data/seafront_fence.json).
     const fence = el("g", { id: "seafront-fence" });
     for (const ring of seafrontFenceRings()) fence.append(el("path", { d: path(ring), fill: "#fffdf3", stroke: "#6d6a5f", "stroke-width": 0.06 }));
-    const fenceTitle = el("title", {}); fenceTitle.textContent = `White wall, arched gateway and railings: ${seafrontFence.trust} · ${seafrontFence.evidence.join(", ")}`; fence.append(fenceTitle);
+    const fenceTitle = el("title", {}); fenceTitle.textContent = `White wall, arched gateway and green bar railings on a sandstone plinth: ${seafrontFence.trust} · ${seafrontFence.evidence.join(", ")}`; fence.append(fenceTitle);
     seafront.append(fence);
     const verge=el("path",{id:"barraka-front-verge",d:path(vergeRing),fill:"#8c9a5b","fill-opacity":.85,stroke:"#5d6b3a","stroke-width":.15});
     const vergeTitle=el("title",{});vergeTitle.textContent=`Grass and planting in front of the gateway and railings: ${beachVerge.trust}`;verge.append(vergeTitle);seafront.append(verge);

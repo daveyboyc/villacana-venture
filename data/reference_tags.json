@@ -3272,7 +3272,13 @@
    "materials",
    "layout",
    "view"
-  ]
+  ],
+  "looksAt": [
+   -84.6,
+   214.2
+  ],
+  "subject": "Solar-head lamp post at the wall foot beside the paseo",
+  "note": "looksAt is the nearest lamp, about 6 m ahead along the heading, by eye from the pin (+-3.6 m)."
  },
  "IMG_2484.jpg": {
   "title": "Paseo near Calle Guillermo with painted crossing",
@@ -3285,7 +3291,13 @@
    "layout",
    "materials",
    "view"
-  ]
+  ],
+  "looksAt": [
+   -6.7,
+   136.5
+  ],
+  "subject": "Painted crossing across the paseo beside the beach gateway",
+  "note": "looksAt is about 10 m ahead along the heading, where the red and white bars cross the paving (position read to about 2 m)."
  },
  "IMG_2485.jpg": {
   "title": "Comunidad Villacana gate sign at the end of Calle Guillermo",
@@ -4773,7 +4785,12 @@
    "layout",
    "planting"
   ],
-  "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera."
+  "note": "Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. looksAt is the seating centre of data/barraka_frontage.json (bearings of IMG_2604 and IMG_2631), by eye; the pin is not used.",
+  "looksAt": [
+   13.9,
+   121.0
+  ],
+  "subject": "Roped rattan lounge set on the beach-side verge"
  },
  "IMG_2608.jpg": {
   "title": "From the Barraka terrace looking SW along the paseo to the white houses",
@@ -4789,7 +4806,12 @@
    "layout",
    "materials"
   ],
-  "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace."
+  "note": "Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace. looksAt is 25 m along the phone heading from the terrace spot of IMG_2631 (21.1, 108.5), by eye; the +-12.6 m pin is not used.",
+  "looksAt": [
+   4.0,
+   126.7
+  ],
+  "subject": "Paseo and lawn railing towards the white houses"
  },
  "IMG_2609.jpg": {
   "title": "Barraka beach-side lounge garden looking south-west along the paseo",
@@ -5196,7 +5218,13 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -105.6,
+   228.3
+  ],
+  "subject": "Dali end of the paseo: wall end, mesh fence and lamp",
+  "note": "looksAt is the wall end about 6 m ahead along the heading, by eye from the pin (+-4.7 m)."
  },
  "IMG_2638.jpg": {
   "title": "Paseo wall end and kerbed junction near Dali car park",
@@ -5434,7 +5462,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191."
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
+  "looksAt": [
+   -110.5,
+   152.0
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  "IMG_2657.jpg": {
   "title": "Silvia 22-44 passage: steps with dark edge bands beside studded ramp",
@@ -5448,7 +5481,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191."
+  "note": "Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate.",
+  "looksAt": [
+   -109.7,
+   151.4
+  ],
+  "subject": "Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps"
  },
  "IMG_2660.jpg": {
   "title": "Narrow lane between white walls and a barred house front, heading NNW",
@@ -5584,7 +5622,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia)."
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
+  "looksAt": [
+   -126.8,
+   120.5
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  "IMG_2670.jpg": {
   "title": "Silvia 2-20 passage: plaque, ramp, steps and arched gate",
@@ -5599,7 +5642,12 @@
    "materials",
    "facades"
   ],
-  "note": "Heading 242 deg, opposite to IMG_2668: the same covered passage looking WSW to its inner garden gate. Plaque shows 2 20 (Calle de Silvia)."
+  "note": "Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate.",
+  "looksAt": [
+   -126.1,
+   119.9
+  ],
+  "subject": "Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps"
  },
  "IMG_2671.jpg": {
   "title": "Silvia lane north of the tunnel looking NW to the middle pool south gateway",

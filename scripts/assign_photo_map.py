@@ -97,6 +97,8 @@ def features(s):
     ax,az=placement['entry'];fx,fz=placement['forward'];h=tunnel['dimensions']['width']/2;length=tunnel['dimensions']['length']
     points=[[ax+fz*x+fx*z,az-fx*x+fz*z] for x,z in [(-h,-3.65),(h,-3.65),(h,length+.35),(-h,length+.35)]]
     add('silvia_tunnel.json:'+tunnel['id'],tunnel['name'],'reference feature','approximate west registry connection; photo direction unresolved',evidence=tunnel['evidence'],points=points)
+    ramp=json.loads((ROOT/'data/silvia_ramp_passages.json').read_text()) # photo-relative study: no world transform, so no map geometry
+    add('silvia_ramp_passages.json:'+ramp['id'],ramp['name'],'reference feature','photo-relative study; not placed in the map; points are the 2-20 camera pin at the lane mouth and the 22-44 flight about 3 m ahead of IMG_2574 (GPS +-3 m), not measured geometry',evidence=ramp['evidence'],points=ramp['mouthPoints'])
     paving=json.loads((ROOT/'data/seaward_paving.json').read_text())
     for f in paving['features']:
         ring=next((b['ring'] for b in s['buildings'] if b['id']==f.get('building')),None)
@@ -164,9 +166,14 @@ def features(s):
     verge=json.loads((ROOT/'data/beach_verge.json').read_text())
     add('beach_verge.json:'+verge['grass']['id'],'Grass in front of the beach gateway and railings','reference feature','rough aerial/photo outline; unmeasured',evidence=verge['evidence'],ring=verge['grass']['ring'])
     add('beach_verge.json:'+verge['shrubs']['id'],'Shrubs in front of the beach gateway and railings','reference feature','rough aerial/photo outline; Details only',evidence=verge['evidence'],points=[c[:2] for c in verge['shrubs']['clumps']])
+    frontage=json.loads((ROOT/'data/barraka_frontage.json').read_text())
+    lounge=frontage['lounge']
+    add('barraka_frontage.json:'+lounge['id'],lounge['name'],'reference feature','photo interpretation; seasonal furniture, position about 3 m',evidence=lounge['evidence'],points=[lounge['centre'],*lounge['rope']['posts'],lounge['menuStand'],lounge['easel']])
+    crossing=frontage['crossing']
+    add('barraka_frontage.json:'+crossing['id'],crossing['name'],'reference feature','photo/aerial interpretation; flush marking, position about 2 m',evidence=crossing['evidence'],points=[crossing['at']])
     fence=json.loads((ROOT/'data/seafront_fence.json').read_text())
     a=math.radians(26); unturn=lambda p:[round(p[0]*math.cos(a)+p[1]*math.sin(a),2),round(-p[0]*math.sin(a)+p[1]*math.cos(a),2)]
-    for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp')):
+    for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp'),('railing','Green bar railing on a sandstone plinth along the big-pool lawn')):
         f=fence[key]
         add('seafront_fence.json:'+f['id'],name,'reference feature','photo/aerial/survey interpretation; position about 1-2 m',evidence=fence['evidence'],points=[unturn(q) for q in (f['points'] if 'points' in f else [f['at']])])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())

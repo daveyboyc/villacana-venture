@@ -7,7 +7,7 @@ Task `path-network-inventory-paseo` · area **The paseo** · priority P2 · audi
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/paseo.md` and the contact sheet `villacana-reference/contact-sheets/paseo.jpg`
 - docs: `docs/SEAFRONT.md`
-- data: `data/coastal_gate.json`, `data/paseo_wall.json`, `data/paseo_details.json`, `data/registry_corrections.json`
+- data: `data/coastal_gate.json`, `data/paseo_wall.json`, `data/paseo_details.json`, `data/registry_corrections.json`, `data/barraka_frontage.json`
 - src: `src/seafront.ts`, `src/seaside.ts`, `src/paseo-wall.ts`, `src/paseo-details.ts`
 
 ## Photos to build from
