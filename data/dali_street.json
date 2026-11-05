@@ -1,0 +1,76 @@
+{
+  "id": "dali-street-scene",
+  "name": "Pintor Dalí street scene",
+  "evidence": [
+    "IMG_2269.jpg",
+    "IMG_2270.jpg",
+    "IMG_2276.jpg",
+    "IMG_2277.jpg",
+    "IMG_2278.jpg",
+    "IMG_2279.jpg",
+    "IMG_2280.jpg"
+  ],
+  "trust": "The aisle already has asphalt, bay marks and a chain-link line. These photos add the white curb, the concrete plinth under rusty mesh, the hedge outside that fence, and the black house-side lanterns. Sizes and lantern stations are estimated. The coastal gate keeps its own plinth. Arched porches, balcony grilles, palms and bougainvillea are not placed here.",
+  "fence": {
+    "id": "dali-fence-plinth",
+    "name": "Pintor Dalí · white plinth, rusty chain-link and road curb",
+    "barrierId": "dali-west-fence",
+    "plinthHeight": 0.42,
+    "plinthThickness": 0.28,
+    "curbHeight": 0.13,
+    "curbWidth": 0.16,
+    "curbOffset": 0.5,
+    "curbBase": 0.27,
+    "stopBeforeLastSegments": 1,
+    "evidence": [
+      "IMG_2269.jpg",
+      "IMG_2270.jpg",
+      "IMG_2277.jpg",
+      "IMG_2278.jpg"
+    ],
+    "trust": "IMG_2269, IMG_2270, IMG_2277 and IMG_2278 show a white-painted curb, a low concrete plinth and brown chain-link above it on the outer side of the aisle. The plinth and curb follow the mapped fence and stop one segment short of the coastal gate, which already has its own plinth. The 0.42 m plinth and the curb offset are estimated. North of these photos the same mapped line is dressed; the aerial may put the real road 1–2 m further west by Loira."
+  },
+  "hedge": {
+    "id": "dali-west-hedge",
+    "name": "Pintor Dalí · clipped hedge outside the chain-link fence",
+    "outward": 0.9,
+    "height": 1.25,
+    "depth": 0.75,
+    "base": 0.2,
+    "step": 1,
+    "evidence": [
+      "IMG_2269.jpg",
+      "IMG_2270.jpg",
+      "IMG_2278.jpg"
+    ],
+    "trust": "The same photos show a continuous clipped hedge and a tree screen outside the fence. This is a Details volume on the outer side of the mapped fence. Individual trees are not placed, and the hedge is not a surveyed outline."
+  },
+  "lanterns": {
+    "id": "dali-house-lanterns",
+    "name": "Pintor Dalí · black house-side lanterns",
+    "height": 3.2,
+    "head": 0.55,
+    "radius": 0.32,
+    "points": [
+      [-209.69, 37.95],
+      [-201.97, 54.21],
+      [-194.25, 70.48],
+      [-186.42, 86.57],
+      [-178.4, 102.68],
+      [-170.38, 118.8],
+      [-164.08, 135.77],
+      [-155.1, 151.41],
+      [-145.91, 167.26],
+      [-137.78, 183.32]
+    ],
+    "evidence": [
+      "IMG_2269.jpg",
+      "IMG_2270.jpg",
+      "IMG_2276.jpg",
+      "IMG_2278.jpg",
+      "IMG_2279.jpg",
+      "IMG_2280.jpg"
+    ],
+    "trust": "Traditional black lanterns stand on the house side in IMG_2269 looking south, IMG_2270 looking north, and again in IMG_2276, IMG_2278, IMG_2279 and IMG_2280. Ten are placed about 18 m apart from north of that camera pair to short of the flagstone entrance. Stations are estimated: most sit 5.4 m from the road centre, just house-side of a 4.4 m bay; the one at (-164.08, 135.77) sits at 3.4 m because a house front is closer there, and the one at (-155.1, 151.41) is nudged clear of the Eva west footpath. The modern flat lamp at the seaward turning area is a different fitting and is not included. Details only, and each one keeps the protected routes clear."
+  }
+}

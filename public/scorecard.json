@@ -916,7 +916,7 @@
     "placed": 45,
     "checks": {
      "matches": 0,
-     "differs": 0,
+     "differs": 7,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -929,36 +929,67 @@
     "generated": 130
    },
    "placement": {
-    "features": 13,
+    "features": 16,
     "verified": 0,
-    "disputed": 0
+    "disputed": 2
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:02ab68010769bf56",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:d3303554ff40df42",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:bf4f431120b5347e",
+     "feature": "dali_street.json:dali-house-lanterns"
+    },
+    {
+     "id": "photo-discrepancy:a66a147d34e0a3dc",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:bac737153ce65728",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:52e4bd8a1c7d7182",
+     "feature": "dali_street.json:dali-house-lanterns"
+    },
+    {
+     "id": "photo-discrepancy:8bc5795c6b9563c7",
+     "feature": "dali_street.json:dali-house-lanterns"
+    }
+   ],
    "tasks": {
-    "open": 1,
-    "inProgress": 0,
+    "open": 2,
+    "inProgress": 1,
     "titles": [
+     "Pintor Dalí: curb, fence plinth, outer hedge and house-side lanterns",
+     "Pintor Dalí: trace the house arches, palms and the seaward lamp",
      "Calle Pintor Dalí: full-source path, tunnel and boundary inventory"
     ]
    },
    "confidence": {
     "photographed": 13,
-    "estimated": 0,
+    "estimated": 3,
     "inferred": 0,
     "registry": 0,
-    "gaps": 0
+    "gaps": 1
    },
    "status": [
     "Ground: 93% of open ground within 0.25 m of the laser survey; streets within 0.72 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 45, 45 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
-    "How sure: 13 photographed, 0 estimated, 0 inferred.",
-    "Placement: 0 of 13 features verified."
+    "How sure: 13 photographed, 3 estimated, 0 inferred, 1 known gap.",
+    "Placement: 0 of 16 features verified, 7 open discrepancies."
    ],
    "light": {
     "colour": "amber",
-    "headline": "Photos in: 1 build task open",
+    "headline": "Photos in: 3 build tasks open, 7 open discrepancies",
     "requests": []
    }
   },
@@ -1318,7 +1349,7 @@
     "placed": 126,
     "checks": {
      "matches": 1,
-     "differs": 2,
+     "differs": 3,
      "not-comparable": 4
     },
     "camerasSolved": 0,
@@ -1667,7 +1698,7 @@
     "placed": 385,
     "checks": {
      "matches": 2,
-     "differs": 2,
+     "differs": 9,
      "not-comparable": 35
     },
     "camerasSolved": 7,
@@ -1692,9 +1723,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 385,
+    "features": 388,
     "verified": 0,
-    "disputed": 6
+    "disputed": 8
    },
    "discrepancies": [
     {
@@ -1732,11 +1763,39 @@
     {
      "id": "photo-discrepancy:9579a59d07ca4c03",
      "feature": "middle_pool_south_gate.json:middle-pool-south-forecourt"
+    },
+    {
+     "id": "photo-discrepancy:02ab68010769bf56",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:d3303554ff40df42",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:bf4f431120b5347e",
+     "feature": "dali_street.json:dali-house-lanterns"
+    },
+    {
+     "id": "photo-discrepancy:a66a147d34e0a3dc",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:bac737153ce65728",
+     "feature": "dali_street.json:dali-fence-plinth"
+    },
+    {
+     "id": "photo-discrepancy:52e4bd8a1c7d7182",
+     "feature": "dali_street.json:dali-house-lanterns"
+    },
+    {
+     "id": "photo-discrepancy:8bc5795c6b9563c7",
+     "feature": "dali_street.json:dali-house-lanterns"
     }
    ],
    "tasks": {
-    "open": 34,
-    "inProgress": 25,
+    "open": 35,
+    "inProgress": 26,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1745,18 +1804,18 @@
    },
    "confidence": {
     "photographed": 56,
-    "estimated": 87,
+    "estimated": 90,
     "inferred": 9,
     "registry": 233,
-    "gaps": 6
+    "gaps": 7
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 403, 385 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 56 photographed, 87 estimated, 9 inferred, 6 known gaps.",
-    "Placement: 0 of 385 features verified, 9 open discrepancies."
+    "How sure: 56 photographed, 90 estimated, 9 inferred, 7 known gaps.",
+    "Placement: 0 of 388 features verified, 16 open discrepancies."
    ],
    "light": {
     "colour": "red",

@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 385,
-  "photosCitedByModel": 105,
-  "modelFeaturesWithPhotoCitations": 131
+  "features": 388,
+  "photosCitedByModel": 112,
+  "modelFeaturesWithPhotoCitations": 134
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3102,6 +3102,43 @@
    "evidence": [
     "IMG_2333.jpg",
     "IMG_2248.jpg"
+   ]
+  },
+  {
+   "id": "dali_street.json:dali-fence-plinth",
+   "name": "Pintor Dalí · white plinth, rusty chain-link and road curb",
+   "kind": "reference feature",
+   "source": "IMG_2269, IMG_2270, IMG_2277 and IMG_2278 show a white-painted curb, a low concrete plinth and brown chain-link above it on the outer side of the aisle. The plinth and curb follow the mapped fence and stop one segment short of the coastal gate, which already has its own plinth. The 0.42 m plinth and the curb offset are estimated. North of these photos the same mapped line is dressed; the aerial may put the real road 1–2 m further west by Loira.",
+   "evidence": [
+    "IMG_2269.jpg",
+    "IMG_2270.jpg",
+    "IMG_2277.jpg",
+    "IMG_2278.jpg"
+   ]
+  },
+  {
+   "id": "dali_street.json:dali-west-hedge",
+   "name": "Pintor Dalí · clipped hedge outside the chain-link fence",
+   "kind": "reference feature",
+   "source": "The same photos show a continuous clipped hedge and a tree screen outside the fence. This is a Details volume on the outer side of the mapped fence. Individual trees are not placed, and the hedge is not a surveyed outline.",
+   "evidence": [
+    "IMG_2269.jpg",
+    "IMG_2270.jpg",
+    "IMG_2278.jpg"
+   ]
+  },
+  {
+   "id": "dali_street.json:dali-house-lanterns",
+   "name": "Pintor Dalí · black house-side lanterns",
+   "kind": "reference feature",
+   "source": "Traditional black lanterns stand on the house side in IMG_2269 looking south, IMG_2270 looking north, and again in IMG_2276, IMG_2278, IMG_2279 and IMG_2280. Ten are placed about 18 m apart from north of that camera pair to short of the flagstone entrance. Stations are estimated: most sit 5.4 m from the road centre, just house-side of a 4.4 m bay; the one at (-164.08, 135.77) sits at 3.4 m because a house front is closer there, and the one at (-155.1, 151.41) is nudged clear of the Eva west footpath. The modern flat lamp at the seaward turning area is a different fitting and is not included. Details only, and each one keeps the protected routes clear.",
+   "evidence": [
+    "IMG_2269.jpg",
+    "IMG_2270.jpg",
+    "IMG_2276.jpg",
+    "IMG_2278.jpg",
+    "IMG_2279.jpg",
+    "IMG_2280.jpg"
    ]
   },
   {
@@ -8454,6 +8491,24 @@
    "angleOffset": 25.2
   },
   {
+   "from": "photo:IMG_2269.jpg",
+   "to": "dali_street.json:dali-fence-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2269.jpg",
+   "to": "dali_street.json:dali-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2269.jpg",
+   "to": "dali_street.json:dali-house-lanterns",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2270.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -8484,6 +8539,24 @@
    "relation": "possibly-in-view",
    "distance": 40.7,
    "angleOffset": 26.5
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "dali_street.json:dali-fence-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "dali_street.json:dali-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2270.jpg",
+   "to": "dali_street.json:dali-house-lanterns",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2273.jpg",
@@ -8688,6 +8761,12 @@
    "gap": 1.1
   },
   {
+   "from": "photo:IMG_2276.jpg",
+   "to": "dali_street.json:dali-house-lanterns",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2277.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -8698,6 +8777,12 @@
    "to": "street:dali",
    "relation": "camera-nearby",
    "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2277.jpg",
+   "to": "dali_street.json:dali-fence-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2278.jpg",
@@ -8724,6 +8809,24 @@
    "gap": 2.8
   },
   {
+   "from": "photo:IMG_2278.jpg",
+   "to": "dali_street.json:dali-fence-plinth",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2278.jpg",
+   "to": "dali_street.json:dali-west-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2278.jpg",
+   "to": "dali_street.json:dali-house-lanterns",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2279.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -8734,6 +8837,12 @@
    "to": "street:dali",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2279.jpg",
+   "to": "dali_street.json:dali-house-lanterns",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2280.jpg",
@@ -8752,6 +8861,12 @@
    "to": "street:jorge",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2280.jpg",
+   "to": "dali_street.json:dali-house-lanterns",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2281.jpg",

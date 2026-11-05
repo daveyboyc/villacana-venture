@@ -655,6 +655,85 @@
    "render": "docs/reviews/barraka-frontage-paseo-furniture/IMG_2637-after.png",
    "result": "not-comparable",
    "notes": "Dali end of the paseo: stone wall end, bar and mesh fence, a lamp with a long solar panel beyond. Cited for the lamp head design only. The stepped wall end, service cover, paving light and apron are not built here and the lamp station beyond the wall end is not modelled; recorded as not comparable. Before = origin/main, after = this branch, both through the same starting camera (pin or the shared terrace spot, phone heading, 1.6 m eye height, 26 mm EXIF lens; data/photo_poses.json, unsolved), Details on. The camera is not solved, so this is a diagnostic of what changed, not a calibrated or placement match; no placement approval claimed."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2269.jpg",
+   "before": "docs/reviews/dali-street-scene/IMG_2269-before.png",
+   "render": "docs/reviews/dali-street-scene/IMG_2269-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "After, the outer side has a white curb, a clipped hedge and chain-link, and a black lantern stands on the house side; before, the fence was a bare mesh with round hedge sprites and no curb or lantern. The phone pin is in the bays, so the third-person frame does not line up with the photo. The hedge is a volume, not the tree screen, and the house arches, palms and bougainvillea are still untraced."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2270.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2270-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "Looking north, the render shows the white curb, rusty chain-link and the hedge outside it, with a black lantern on the house side. The photo also shows tall trees over the hedge and white houses with arches; those fronts and the trees are not traced, and the GPS frame does not match the photo."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-house-lanterns",
+   "photo": "IMG_2276.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2276-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "A black lantern is in the house-side row the photo shows, on an estimated station. The photo's parking junction, palms and the sea at the end of the aisle are not matched from this unsolved pin."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2277.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2277-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "The white curb and chain-link are on the outer side of the aisle, as in the photo. The low concrete plinth is mostly hidden by the hedge volume. Tree trunks behind the mesh, and the exact curb line, are not surveyed."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-fence-plinth",
+   "photo": "IMG_2278.jpg",
+   "before": "docs/reviews/dali-street-scene/IMG_2278-before.png",
+   "render": "docs/reviews/dali-street-scene/IMG_2278-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "After, chain-link sits above a green hedge with a white curb along the asphalt; before, the mesh came down to the ground beside round hedge sprites and there was no curb. The photo's rusty mesh is in front of a dense tree screen, and the parked cars and house arches are not in the model. The pin is not a solved camera."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-house-lanterns",
+   "photo": "IMG_2279.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2279-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "Black lanterns stand along the house side of the bays. The photo's lantern is a glazed head among shrubs in front of a white arched house; the model head is a simple glass box on an estimated station, and the arches, palms and bougainvillea are not traced."
+  },
+  {
+   "task": "dali-street-scene",
+   "feature": "dali_street.json:dali-house-lanterns",
+   "photo": "IMG_2280.jpg",
+   "render": "docs/reviews/dali-street-scene/IMG_2280-after.png",
+   "checked": "2026-11-04",
+   "by": "Cursor",
+   "result": "differs",
+   "followUp": "dali-house-fronts",
+   "notes": "A black lantern is near the house side of this pin. The photo is the flagstone pedestrian entrance between white houses, with shutters and flowering climbers; that entrance paving and those fronts are not built here."
   }
  ],
  "legacyUnchecked": [

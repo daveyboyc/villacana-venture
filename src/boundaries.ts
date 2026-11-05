@@ -1,3 +1,4 @@
+import streetDressing from "../data/dali_street.json";
 import {outsideLanePaving} from "./middle-pool-lane-frontages";
 import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
@@ -152,13 +153,19 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
   for(let x=-64;x<=128;x+=16) {ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+64,64);ctx.moveTo(x,0);ctx.lineTo(x-64,64);ctx.stroke();}
   const texture=new THREE.CanvasTexture(canvas);texture.wrapS=texture.wrapT=THREE.RepeatWrapping;
   const wire=new THREE.MeshBasicMaterial({map:texture,transparent:true,alphaTest:0.2,side:THREE.DoubleSide});
+  const rusty=wire.clone();rusty.color.set("#a56b45");
   const steel=new THREE.MeshStandardMaterial({color:"#727b72",roughness:0.85});const hedges:SpritePlacement[]=[];
   for(const fence of reference.barriers) for(let i=0;i<fence.points.length-1;i++) {
     const a=fence.points[i],b=fence.points[i+1];const dx=b[0]-a[0],dz=b[1]-a[1],length=Math.hypot(dx,dz);
-    const geometry=new THREE.PlaneGeometry(length,fence.height);const uv=geometry.getAttribute("uv");for(let k=0;k<uv.count;k++)uv.setXY(k,uv.getX(k)*length/0.4,uv.getY(k)*fence.height/0.4);
-    const panel=new THREE.Mesh(geometry,wire);panel.position.set((a[0]+b[0])/2,fence.height/2,(a[1]+b[1])/2);panel.rotation.y=Math.atan2(-dz,dx);scene.add(panel);
-    for(let at=0;at<=length;at+=2.5) {const post=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,fence.height+0.15,6),steel);post.position.set(a[0]+dx/length*at,fence.height/2,a[1]+dz/length*at);scene.add(post);}
-    for(let at=0;at<length;at+=1.4)hedges.push({x:a[0]+dx/length*at-dz/length*0.3,z:a[1]+dz/length*at+dx/length*0.3});
+    // The Dalí aisle fence sits on a concrete plinth (data/dali_street.json). The last
+    // segment meets the coastal gate, which already draws its own plinth and mesh.
+    const plinth=fence.id===streetDressing.fence.barrierId && i<fence.points.length-1-streetDressing.fence.stopBeforeLastSegments ? streetDressing.fence.plinthHeight : 0;
+    const meshH=fence.height-plinth;
+    const geometry=new THREE.PlaneGeometry(length,meshH);const uv=geometry.getAttribute("uv");for(let k=0;k<uv.count;k++)uv.setXY(k,uv.getX(k)*length/0.4,uv.getY(k)*meshH/0.4);
+    const panel=new THREE.Mesh(geometry,plinth?rusty:wire);panel.position.set((a[0]+b[0])/2,plinth+meshH/2,(a[1]+b[1])/2);panel.rotation.y=Math.atan2(-dz,dx);scene.add(panel);
+    const postH=fence.height-plinth+0.15;
+    for(let at=0;at<=length;at+=2.5) {const post=new THREE.Mesh(new THREE.CylinderGeometry(0.035,0.035,postH,6),steel);post.position.set(a[0]+dx/length*at,plinth+postH/2,a[1]+dz/length*at);scene.add(post);}
+    if(!plinth) for(let at=0;at<length;at+=1.4)hedges.push({x:a[0]+dx/length*at-dz/length*0.3,z:a[1]+dz/length*at+dx/length*0.3});
   }
   addSprites(scene,"hedge",hedges);
 }

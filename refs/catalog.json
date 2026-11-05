@@ -3002,8 +3002,8 @@
   "looksAtFeatures": [
    "dali_cervantes_threshold.json:cervantes-parking-crossing",
    "street:cervantes",
-   "backdrop.json:aerial-trees",
-   "parking:Dalí car park"
+   "dali_street.json:dali-house-lanterns",
+   "backdrop.json:aerial-trees"
   ]
  },
  {
@@ -3106,7 +3106,9 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials",
+   "planting"
   ],
   "note": null,
   "observation": null,
@@ -3119,18 +3121,23 @@
    "accuracy": 4.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -188.1,
-   86.5
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth",
+   "dali_street.json:dali-west-hedge",
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -181.6,
+   101.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "dali_cervantes_threshold.json:dali-bays-1",
    "parking:Dalí car park",
    "backdrop.json:aerial-trees",
-   "street:dali"
-  ]
+   "street:dali",
+   "dali_street.json:dali-house-lanterns"
+  ],
+  "subject": "The white curb, rusty chain-link and house-side black lanterns, looking south along Pintor Dalí"
  },
  {
   "id": "IMG_2270.jpg",
@@ -3143,7 +3150,9 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials",
+   "planting"
   ],
   "note": null,
   "observation": null,
@@ -3156,18 +3165,22 @@
    "accuracy": 4.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -193.2,
-   77.0
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth",
+   "dali_street.json:dali-west-hedge",
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -202.4,
+   63.9
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "dali_cervantes_threshold.json:dali-bays-2",
    "parking:Dalí car park",
-   "backdrop.json:aerial-trees",
-   "street:dali"
-  ]
+   "street:dali",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "The same curb, hedge and a house-side lantern, looking north along Pintor Dalí"
  },
  {
   "id": "IMG_2273.jpg",
@@ -3320,7 +3333,8 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "layout"
+   "layout",
+   "materials"
   ],
   "note": null,
   "observation": "Asphalt parking area opening into the narrower seaward aisle. White perpendicular bay markings and parked cars sit beside the houses, with a separate house-side footpath and traditional black lanterns. Fence and tall tree screening line the opposite side, with the sea visible at the far end.",
@@ -3333,17 +3347,20 @@
    "accuracy": 3.1,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -179.6,
-   102.7
+  "citedBy": [
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -169.8,
+   115.3
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "parking:Dalí car park",
    "backdrop.json:aerial-trees",
-   "street:dali"
-  ]
+   "parking:Dalí car park",
+   "dali_street.json:dali-house-lanterns"
+  ],
+  "subject": "Parking bays, black lanterns and the outer fence toward the sea"
  },
  {
   "id": "IMG_2277.jpg",
@@ -3370,17 +3387,21 @@
    "accuracy": 2.0,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -180.2,
-   104.5
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -172.4,
+   118.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Dalí car park",
    "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns",
    "street:dali"
-  ]
+  ],
+  "subject": "The aisle, white curb and chain-link fence toward the sea"
  },
  {
   "id": "IMG_2278.jpg",
@@ -3394,7 +3415,8 @@
   "viewpoint": "ground",
   "useFor": [
    "layout",
-   "materials"
+   "materials",
+   "planting"
   ],
   "note": null,
   "observation": "Farther down the asphalt aisle, white bay corner markings and parked cars line the house side. The opposite edge shows brown chain-link mesh above a low retaining base, a white-painted curb and dense trees and hedge screening. The boundary continues toward the seaward end.",
@@ -3407,17 +3429,22 @@
    "accuracy": 5.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -152.5,
-   161.3
+  "citedBy": [
+   "dali_street.json:dali-fence-plinth",
+   "dali_street.json:dali-west-hedge",
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -146.0,
+   175.9
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "parking:Dalí car park",
    "street:dali",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Brown chain-link on a concrete plinth, the white curb, and the hedge behind"
  },
  {
   "id": "IMG_2279.jpg",
@@ -3431,7 +3458,8 @@
   "viewpoint": "ground",
   "useFor": [
    "facades",
-   "planting"
+   "planting",
+   "materials"
   ],
   "note": null,
   "observation": "Closer view of the house-side parking row toward the sea. A tall black lantern, white plaster frontages, projecting entrance surrounds, clipped shrubs, flowering climbers and a palm sit behind the marked bays. This photo is useful for facade and planting materials.",
@@ -3444,17 +3472,16 @@
    "accuracy": 3.4,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -144.5,
-   174.2
+  "citedBy": [
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
-   "parking:Dalí car park",
-   "street:dali",
-   "backdrop.json:aerial-trees"
-  ]
+  "looksAt": [
+   -132.1,
+   184.2
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "A black lantern and the white house frontage beside the parking bays"
  },
  {
   "id": "IMG_2280.jpg",
@@ -3482,17 +3509,19 @@
    "accuracy": 2.0,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -131.4,
-   190.8
+  "citedBy": [
+   "dali_street.json:dali-house-lanterns"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -116.9,
+   184.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:jorge",
    "backdrop.json:aerial-trees",
-   "parking:Dalí car park"
-  ]
+   "street:jorge"
+  ],
+  "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
  },
  {
   "id": "IMG_2281.jpg",
@@ -9152,7 +9181,8 @@
   "looksAtFeatures": [
    "parking:Dalí car park",
    "street:dali",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-fence-plinth"
   ]
  },
  {
@@ -9852,7 +9882,8 @@
   "looksAtFeatures": [
    "street:eva",
    "backdrop.json:aerial-trees",
-   "parking:Dalí car park"
+   "parking:Dalí car park",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -9929,7 +9960,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "parking:Dalí car park",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -10008,7 +10040,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva-west-footpath",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {
@@ -10086,7 +10119,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:eva-west-footpath",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-house-lanterns"
   ]
  },
  {

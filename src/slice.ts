@@ -28,6 +28,7 @@ import {addLayoutRoutes} from "./layout-routes";
 import {protectedRoutes,routeClearance,propRadius} from "./route-clearance";
 import {addCervantesPatioWalls,cervantesPatioWallRings,inCervantesWallReview} from "./cervantes-walls";
 import {addDaliThreshold,inDaliThreshold} from "./dali-threshold";
+import {addDaliStreet} from "./dali-street";
 import {addFrontageDivisions,inReviewedFrontage} from "./frontages";
 import {addPoolDecks,onPoolDeck,paintPoolDecks} from "./pool-deck";
 import {addBackdropTrees,addRidge,inResortBlock} from "./backdrop";
@@ -235,7 +236,7 @@ async function boot(): Promise<void> {
   addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
-  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
+  if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
   addMiddlePool(scene);
   addMiddleSouthGate(scene);
