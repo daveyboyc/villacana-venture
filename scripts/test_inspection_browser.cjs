@@ -41,25 +41,24 @@ const fs = require('node:fs');
     assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
     assert.notEqual(await controls.getAttribute('data-centre'), west);
     console.log('Named camera jumps without iframe reload or character movement PASS');
-    // Pointer drag pans in inspection; it never moves the walking character.
-    const beforePan = await controls.getAttribute('data-centre');
-    await page.mouse.move(900, 750); await page.mouse.down(); await page.mouse.move(1020, 700, {steps:5}); await page.mouse.up();
-    await page.waitForFunction(before => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre !== before, beforePan);
-    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
-    await scene.locator('#overview-rotate').click();
+    // Drag tilts and turns. Pan is still there, and neither moves the shelved walker.
     const pitch = Number(await controls.getAttribute('data-pitch'));
     await page.mouse.move(900,750); await page.mouse.down(); await page.mouse.move(980,680,{steps:5}); await page.mouse.up();
     await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.pitch) < before, pitch);
     assert.notEqual(await controls.getAttribute('data-bearing'), '0');
-    console.log('Mouse pan/orbit PASS');
-    // Direct links survive reload, and Walk remains independently available.
+    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
+    await scene.locator('#overview-pan').click();
+    const beforePan = await controls.getAttribute('data-centre');
+    await page.mouse.move(900, 750); await page.mouse.down(); await page.mouse.move(1020, 700, {steps:5}); await page.mouse.up();
+    await page.waitForFunction(before => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre !== before, beforePan);
+    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
+    console.log('Mouse orbit/pan PASS');
+    // Direct links survive reload. Walk is shelved: the nav button is not offered.
     await scene.locator('#inspection-area').selectOption('barraka-beach');
     await page.waitForURL(/area=barraka-beach/);
     await page.reload(); await scene.locator('#scene[data-ready="true"]').waitFor();
     assert.equal(await scene.locator('#inspection-area').inputValue(), 'barraka-beach');
-    await page.locator('#view-walk').click();
-    await scene.locator('#walk-camera').waitFor();
-    assert.notEqual(await canvas.getAttribute('data-camera-view'), 'overview');
+    assert.equal(await page.locator('#view-walk').isHidden(), true, 'Walk stays shelved');
     await scene.locator('#inspection-area').selectOption('coastal-gate');
     await page.waitForURL(/view=overview.*area=coastal-gate|area=coastal-gate.*view=overview/);
     await controls.waitFor(); await waitArea('coastal-gate');

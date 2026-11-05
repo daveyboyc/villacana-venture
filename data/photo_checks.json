@@ -666,7 +666,7 @@
    "by": "Cursor",
    "result": "differs",
    "followUp": "dali-house-fronts",
-   "notes": "After, the outer side has a white curb, a clipped hedge and chain-link, and a black lantern stands on the house side; before, the fence was a bare mesh with round hedge sprites and no curb or lantern. The phone pin is in the bays, so the third-person frame does not line up with the photo. The hedge is a volume, not the tree screen, and the house arches, palms and bougainvillea are still untraced."
+   "notes": "The outer side has a white curb, chain-link and hedge, and a black lantern stands on the house side. The lane and parking bays are one asphalt surface; an earlier render let the terracotta ground show between them. The phone pin is in the bays, so the frame does not line up with the photo. The tree screen, house arches, palms and bougainvillea are still untraced."
   },
   {
    "task": "dali-street-scene",
@@ -711,7 +711,7 @@
    "by": "Cursor",
    "result": "differs",
    "followUp": "dali-house-fronts",
-   "notes": "After, chain-link sits above a green hedge with a white curb along the asphalt; before, the mesh came down to the ground beside round hedge sprites and there was no curb. The photo's rusty mesh is in front of a dense tree screen, and the parked cars and house arches are not in the model. The pin is not a solved camera."
+   "notes": "The lane and the parking bays are now one asphalt surface. The earlier render left a gap between them and the terracotta ground showed through it. A white curb, chain-link and hedge are on the outer side. The phone pin is not a solved camera, so the frame does not line up with the photo. The tree screen, parked cars and house arches are still not in the model."
   },
   {
    "task": "dali-street-scene",
