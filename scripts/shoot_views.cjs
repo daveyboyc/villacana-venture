@@ -1,5 +1,6 @@
 // Render the game from where reference photos were taken, to compare by eye.
 //   node scripts/shoot_views.cjs IMG_2365 IMG_2286 [--pool=north,middle] [--details] [--high] [--pose [--initial]] [--task=<id> --as=before|after]
+//   --query=a=b   adds &a=b to the page address (with --pose), e.g. --query=walkway=off for a before render
 //   node scripts/shoot_views.cjs --model     only writes layout-checks.local/model.json (scripts/lidar_check.py)
 //   node scripts/shoot_views.cjs --kit       only writes layout-checks.local/kit.json, the facade kit as placed (scripts/build_scorecard.py)
 // Stands the player at each photo's camera pin, facing its compass heading, and writes
@@ -65,8 +66,8 @@ const path = require("node:path");
       const page = await browser.newPage({ viewport: { width: record.image[0], height: record.image[1] } }), errors = [];
       page.setDefaultTimeout(240000); // software GL at photo size is slow, especially when other renders share the machine
       page.on("pageerror", (e) => errors.push(e.message));
-      await page.goto(`${site}/slice.html?pool=${pool}&photocam=${photo.file}&overlay=0&ao=1${flags.includes("--initial") ? "&pose=initial" : ""}${flags.includes("--details") ? "&details=1" : ""}`);
-      try { await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 60000 }); }
+      await page.goto(`${site}/slice.html?pool=${pool}&photocam=${photo.file}&overlay=0&ao=1${flags.includes("--initial") ? "&pose=initial" : ""}${flags.find((f) => f.startsWith("--query="))?.replace("--query=", "&") ?? ""}${flags.includes("--details") ? "&details=1" : ""}`);
+      try { await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 240000 }); }
       catch (error) { throw new Error(`${name}: the scene did not finish loading. ${errors.join(" | ")}`); }
       await page.waitForTimeout(3000);
       fs.writeFileSync(path.join("layout-checks.local", "model.json"), JSON.stringify(await page.evaluate(() => window.villacanaModel)));

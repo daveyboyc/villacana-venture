@@ -15,7 +15,7 @@ import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
-import {addElenaWalkway,elenaWalkwayGroundOffset} from "./elena-walkway";
+import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
 import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
@@ -955,7 +955,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         for (let f = 0; f < b.floors; f++) {
           if(b.id===SILVIA_HOST && f===0 && silviaCloseCamera(x,z))continue;
-          if(f===0 && replacesLaneGroundOpening(x,z))continue;
+          if(f===0 && (replacesLaneGroundOpening(x,z)||inElenaWalkway(x,z)))continue; // the walkway's own doors are in src/elena-walkway.ts
           const door = f === 0 && hash(x, z) < 0.3;
           const y = f * floorHeight + (door ? 1.05 : 1.3);
           (door ? doors : windows).push(new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), turn, new THREE.Vector3(1, 1, 1)));

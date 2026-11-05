@@ -3,6 +3,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { asset } from "./asset";
 import { pointInRing } from "./geom";
 import { replacesLaneGroundOpening } from "./middle-pool-lane-frontages";
+import { inElenaWalkway } from "./elena-walkway";
 import { SILVIA_HOST, silviaCloseCamera } from "./silvia-map";
 import type { SkeletonBuilding, Vec2 } from "./types";
 import traced from "../data/facade_kit.json";
@@ -95,7 +96,7 @@ export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[
         if (houses.some((o) => o !== b && pointInRing(p.x + nx * 0.5, p.z + nz * 0.5, o.ring))) continue;
         for (let f = 0; f < b.floors; f++) {
           // The same ground-floor openings the flat shutters leave out (Silvia passage, traced lane frontages).
-          if (f === 0 && ((b.id === SILVIA_HOST && silviaCloseCamera(p.x, p.z)) || replacesLaneGroundOpening(p.x, p.z))) continue;
+          if (f === 0 && ((b.id === SILVIA_HOST && silviaCloseCamera(p.x, p.z)) || replacesLaneGroundOpening(p.x, p.z) || inElenaWalkway(p.x, p.z))) continue;
           const h = hash(p.x + f * 7.1, p.z), place = (part: (typeof PARTS)[number]) => kit[part].push(new THREE.Matrix4().compose(at(t, f * floorHeight), turn, one));
           if (f === 0) place(h < 0.35 ? "shutter-door" : h < 0.75 ? "shutter-window" : "arched-window");
           else if (f === 1 && ((wooden && Math.abs(t - 0.5) * length < 1.6) || underPorch(t))) place("shutter-door");
