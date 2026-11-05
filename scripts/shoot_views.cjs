@@ -63,6 +63,7 @@ const path = require("node:path");
       if (!record) { console.log(name, "no camera in data/photo_poses.json: run python3 scripts/photo_pose.py init", name); continue; }
       if (!record.solved && !flags.includes("--initial")) console.log(name, "WARNING: not solved yet; rendering its starting pose");
       const page = await browser.newPage({ viewport: { width: record.image[0], height: record.image[1] } }), errors = [];
+      page.setDefaultTimeout(120000);
       page.on("pageerror", (e) => errors.push(e.message));
       await page.goto(`${site}/slice.html?pool=${pool}&photocam=${photo.file}&overlay=0&ao=1${flags.includes("--initial") ? "&pose=initial" : ""}${flags.includes("--details") ? "&details=1" : ""}`);
       try { await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 60000 }); }

@@ -109,11 +109,11 @@
   },
   "paseo_details.json:paseo-white-lamp-1": {
    "level": "photographed",
-   "why": "Seen standing on the paseo in two photos; position read by perspective to about 1-2 m."
+   "why": "Seen standing on the paseo in two photos; position read by perspective to about 1-2 m. Head and height redrawn 4 Nov from IMG_2480/2604/2609/2618/2637: slim tube, solar panel over an LED housing, about 4 m (3.7-4.4 m)."
   },
   "paseo_details.json:paseo-white-lamp-2": {
    "level": "photographed",
-   "why": "Seen in two photos; spacing estimated to about 2 m."
+   "why": "Seen in two photos; spacing estimated to about 2 m. Head and height redrawn 4 Nov from IMG_2480/2604/2609/2618/2637: slim tube, solar panel over an LED housing, about 4 m (3.7-4.4 m)."
   },
   "elena_north.json:elena-north-garden-wall": {
    "level": "photographed",
@@ -294,6 +294,26 @@
   "backdrop.json:aerial-trees": {
    "level": "inferred",
    "why": "Placed where the aerial shows dark canopy outside the resort; the species are not readable from the aerial and are drawn from the mix in the photos (umbrella pines, broadleaf, palms, eucalyptus beside the west wall). Heights are capped so nothing stands above the skyline in IMG_2204-2206."
+  },
+  "barraka_frontage.json:barraka-lounge-garden": {
+   "level": "estimated",
+   "why": "Arrangement clear in IMG_2609/2631 and from the front in IMG_2604 (pin +-2.1 m): rope-and-post line, two sofas, four pods, parasol, menu stand, easel and pots. Position about 3 m (bearings of IMG_2604 and IMG_2631 cross near the seating); seasonal furniture, heights read against people, details simplified."
+  },
+  "barraka_frontage.json:paseo-painted-crossing": {
+   "level": "estimated",
+   "why": "Eight red and white bars across the paving seen in IMG_2484 (and far off in IMG_2609/2631); placed where the paseo passes the beach gateway read from the aerial, agreeing with the 10 m read from IMG_2484 to about 2 m; depth 1.2 m uncertain to about 0.3 m."
+  },
+  "seafront_fence.json:main-pool-lawn-railing": {
+   "level": "estimated",
+   "why": "Dark green bars and square posts on a sandstone plinth read from close photos (IMG_2604, 2609, 2610, 2630, 2631); line from the paseo and aerial, heights by eye (plinth probably nearer 0.5 m than the modelled 0.3 m)."
+  },
+  "paseo_details.json:paseo-white-lamp-3": {
+   "level": "estimated",
+   "why": "Seen in IMG_2350 beside the south-pool frontage; position estimated; head and height drawn from IMG_2480/2604/2609/2618/2637 (slim tube, solar panel over an LED housing, about 4 m)."
+  },
+  "paseo_details.json:paseo-white-lamp-4": {
+   "level": "estimated",
+   "why": "Seen in IMG_2350 beside the south-pool frontage; position estimated; head and height drawn from IMG_2480/2604/2609/2618/2637 (slim tube, solar panel over an LED housing, about 4 m)."
   }
  },
  "gaps": [
@@ -378,6 +398,50 @@
     "IMG_2206.jpg"
    ],
    "why": "Located through the solved IMG_2204 camera (trunk foot on the terrace floor, about -193.0, 20.8, crown about 6 m across), but its crown overlaps the protected walk across the terrace, so the route-clearance guard keeps it out. Needs a decision on whether a tree over a walk may stand there."
+  },
+  {
+   "id": "gap:barraka-facade",
+   "name": "Barraka building facade: north-east window rows and timber band, glazed frontage with red awnings and lettering, thatched edge",
+   "at": [
+    30.0,
+    112.0
+   ],
+   "photos": [
+    "IMG_2604.jpg",
+    "IMG_2615.jpg",
+    "IMG_2618.jpg",
+    "IMG_2619.jpg",
+    "IMG_2630.jpg"
+   ],
+   "why": "Registry floors 1 (3 m) and the laser survey roof 2.9-3.7 m disagree with the two-level wall seen in the photos (about 4.5-5 m); the building mass is unchanged and none of the openings, awnings or lettering are modelled until the height is settled (task barraka-facade)."
+  },
+  {
+   "id": "gap:barraka-cooking-shelter",
+   "name": "Barraka thatched cooking shelter, net-covered mound and kayaks on the sand",
+   "at": [
+    40.0,
+    105.0
+   ],
+   "photos": [
+    "IMG_2619.jpg",
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
+   "why": "Clear in IMG_2619 (open timber shelter with a thatched pitched roof and white board walls) but its footprint depends on the camera pin and the disputed aisle position; no second bearing, so it is not placed (see barraka-barbecue-boat)."
+  },
+  {
+   "id": "gap:barraka-slot-drains",
+   "name": "Barraka slot drains along the glazed wall and across the terrace paving",
+   "at": [
+    22.0,
+    108.0
+   ],
+   "photos": [
+    "IMG_2610.jpg",
+    "IMG_2630.jpg",
+    "IMG_2631.jpg"
+   ],
+   "why": "Black grating strips are visible in three photos from weak pins (+-4 to +-7 m) under the awning; their lines are not fixed, so none is drawn."
   }
  ]
 }

@@ -27,6 +27,7 @@ export function addPaseoDetails(scene: THREE.Scene, seaside: Seaside, inlandY: (
   const group = new THREE.Group(); group.name = "paseo-photo-details"; group.userData.noDrape = true;
   const material = (color: string) => new THREE.MeshStandardMaterial({ color, roughness: .9 });
   const green = material("#40543a"), cloth = material("#456d60"), white = material("#e6e5db"), lid = material("#716a61");
+  const solar = new THREE.MeshStandardMaterial({ color: "#d9dad4", roughness: .5, metalness: .1 }), lampDark = material("#2b2c2d");
   const box = (w: number, h: number, d: number, mat: THREE.Material, name: string, x: number, y: number, z: number, angle: number) => {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
     mesh.name = name; mesh.position.set(x, y, z); mesh.rotation.y = angle; mesh.castShadow = mesh.receiveShadow = true; return mesh;
@@ -49,9 +50,14 @@ export function addPaseoDetails(scene: THREE.Scene, seaside: Seaside, inlandY: (
       // Head reaches .45 m seaward; use its furthest corner from the shaft.
       const radius = Math.hypot(.45, .18);
       if (!clear(p.x, p.z, radius)) continue;
-      const y = seaside.y(p.x, p.z) + .04;
-      feature.add(box(.16, f.height, .16, white, f.id + "-shaft", p.x, y + f.height / 2, p.z, 0));
-      feature.add(box(.32, .065, .65, white, f.id + "-head", p.x - p.tz * .125, y + f.height, p.z + p.tx * .125, -Math.atan2(p.tz, p.tx)));
+      const y = seaside.y(p.x, p.z) + .04, angle = -Math.atan2(p.tz, p.tx);
+      // Slim round white tube on a low square base plate; the solar head is a thin panel over a dark LED housing (IMG_2480, 2604, 2609, 2618, 2637).
+      const tube = new THREE.Mesh(new THREE.CylinderGeometry(.045, .055, f.height, 12), white);
+      tube.name = f.id + "-shaft"; tube.position.set(p.x, y + f.height / 2, p.z); tube.castShadow = tube.receiveShadow = true; feature.add(tube);
+      feature.add(box(.26, .03, .26, white, f.id + "-base", p.x, y + .015, p.z, angle));
+      const headX = p.x - p.tz * .125, headZ = p.z + p.tx * .125;
+      feature.add(box(.32, .03, .65, solar, f.id + "-head", headX, y + f.height + .02, headZ, angle));
+      feature.add(box(.2, .05, .5, lampDark, f.id + "-led", headX, y + f.height - .03, headZ, angle));
     } else {
       // A flush horizontal surface is not an obstructing prop: it intentionally lies
       // within the photographed walk. No vertical volume, sprite or solid is added.

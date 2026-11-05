@@ -157,9 +157,14 @@ def features(s):
     verge=json.loads((ROOT/'data/beach_verge.json').read_text())
     add('beach_verge.json:'+verge['grass']['id'],'Grass in front of the beach gateway and railings','reference feature','rough aerial/photo outline; unmeasured',evidence=verge['evidence'],ring=verge['grass']['ring'])
     add('beach_verge.json:'+verge['shrubs']['id'],'Shrubs in front of the beach gateway and railings','reference feature','rough aerial/photo outline; Details only',evidence=verge['evidence'],points=[c[:2] for c in verge['shrubs']['clumps']])
+    frontage=json.loads((ROOT/'data/barraka_frontage.json').read_text())
+    lounge=frontage['lounge']
+    add('barraka_frontage.json:'+lounge['id'],lounge['name'],'reference feature','photo interpretation; seasonal furniture, position about 3 m',evidence=lounge['evidence'],points=[lounge['centre'],*lounge['rope']['posts'],lounge['menuStand'],lounge['easel']])
+    crossing=frontage['crossing']
+    add('barraka_frontage.json:'+crossing['id'],crossing['name'],'reference feature','photo/aerial interpretation; flush marking, position about 2 m',evidence=crossing['evidence'],points=[crossing['at']])
     fence=json.loads((ROOT/'data/seafront_fence.json').read_text())
     a=math.radians(26); unturn=lambda p:[round(p[0]*math.cos(a)+p[1]*math.sin(a),2),round(-p[0]*math.sin(a)+p[1]*math.cos(a),2)]
-    for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp')):
+    for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp'),('railing','Green bar railing on a sandstone plinth along the big-pool lawn')):
         f=fence[key]
         add('seafront_fence.json:'+f['id'],name,'reference feature','photo/aerial/survey interpretation; position about 1-2 m',evidence=fence['evidence'],points=[unturn(q) for q in (f['points'] if 'points' in f else [f['at']])])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())

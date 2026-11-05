@@ -4,7 +4,8 @@ import { poolLevelPoint } from "./pool-levels";
 import data from "../data/seafront_fence.json";
 import type { Vec2 } from "./types";
 
-/** The white wall, arched gateway and railings between the big-pool lawn and the paseo (data/seafront_fence.json). */
+/** The white wall, arched gateway and railings between the big-pool lawn and the paseo (data/seafront_fence.json).
+ * The railings are dark green bars on a low sandstone plinth, not white (IMG_2604, 2609, 2610, 2630, 2631). */
 const line = (points: number[][]): Vec2[] => points.map(poolLevelPoint).filter((p, i, all) => !i || Math.hypot(p[0] - all[i - 1][0], p[1] - all[i - 1][1]) > 0.05);
 const pieces = [data.wall, data.rampWall, data.stub, data.railing].map((f) => ({ ...f, line: line(f.points) }));
 const gateAt = poolLevelPoint(data.gate.at), gateAlong = (() => { const [x, z] = poolLevelPoint(data.gate.along); const n = Math.hypot(x, z); return [x / n, z / n] as Vec2; })();
@@ -27,7 +28,8 @@ export function seafrontFenceRings(): Vec2[][] {
 
 /** Built on the paseo's ground: `groundAt` gives its height (the seaside heights). */
 export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: number) => number): void {
-  const group = new THREE.Group(), white = plasterMaterial("#fbf8f0"), paint = new THREE.MeshStandardMaterial({ color: "#f7f6f1", roughness: 0.6 });
+  const group = new THREE.Group(), white = plasterMaterial("#fbf8f0"), paint = new THREE.MeshStandardMaterial({ color: data.railing.paint, roughness: 0.6 });
+  const plinth = plasterMaterial(data.railing.plinthFinish);
   group.name = "seafront-fence"; group.userData.noDrape = true; group.userData.structural = true;
   const beam = (a: Vec2, b: Vec2, y: number, height: number, thickness: number, material: THREE.Material) => {
     const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
@@ -37,11 +39,11 @@ export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: nu
   };
   const base = (a: Vec2, b: Vec2) => Math.min(groundAt(...a), groundAt(...b));
   for (const f of [pieces[0], pieces[1], pieces[2]]) f.line.slice(1).forEach((b, i) => { const a = f.line[i]; beam(a, b, base(a, b) - 0.2, f.height + 0.2, f.thickness, white); });
-  // Railings: a low white plinth, square posts, a top rail and close vertical bars between them.
+  // Railings: a low sandstone plinth, square posts, a top rail and close vertical bars between them, all dark green.
   const rail = pieces[3], bars: THREE.Matrix4[] = [];
   rail.line.slice(1).forEach((b, i) => {
     const a = rail.line[i], y = base(a, b), length = Math.hypot(b[0] - a[0], b[1] - a[1]), yaw = -Math.atan2(b[1] - a[1], b[0] - a[0]);
-    beam(a, b, y - 0.2, data.railing.plinth + 0.2, rail.thickness, white);
+    beam(a, b, y - 0.2, data.railing.plinth + 0.2, rail.thickness, plinth);
     beam(a, b, y + rail.height - 0.05, 0.05, 0.08, paint);
     for (let s = 0; s <= length; s += data.railing.post) {
       const p: Vec2 = [a[0] + (b[0] - a[0]) * s / length, a[1] + (b[1] - a[1]) * s / length];

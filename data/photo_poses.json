@@ -2875,6 +2875,193 @@
     "f": 1109.3
    },
    "initialBasis": "phone pin; reviewed looksAt; ground eye height; assumed 24 mm-equivalent lens"
+  },
+  "IMG_2631.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 21.1,
+    "y": 1.6,
+    "z": 107.9,
+    "yaw": 206,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-4 m, phone heading 206; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2604.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -1.7,
+    "y": 1.6,
+    "z": 131.1,
+    "yaw": 59,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-2.1 m, phone heading 59; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2484.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -8.5,
+    "y": 1.6,
+    "z": 142.2,
+    "yaw": 17,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-3.9 m, phone heading 17; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2480.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -89.0,
+    "y": 1.6,
+    "z": 218.3,
+    "yaw": 47,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-3.6 m, phone heading 47; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2618.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 46.0,
+    "y": 1.6,
+    "z": 89.1,
+    "yaw": 221,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-2.4 m, phone heading 221; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2607.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 21.1,
+    "y": 1.6,
+    "z": 108.5,
+    "yaw": 199,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: camera moved from the +-19 m pin to the terrace spot of IMG_2631; phone heading 199; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2608.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 21.1,
+    "y": 1.6,
+    "z": 108.5,
+    "yaw": 223,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: camera moved from the +-13 m pin to the terrace spot of IMG_2631; phone heading 223; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2609.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 21.1,
+    "y": 1.6,
+    "z": 108.5,
+    "yaw": 226,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: camera moved from the +-12 m pin to the terrace spot of IMG_2631 (same sitting, under the awning); phone heading 226; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2610.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 21.9,
+    "y": 1.6,
+    "z": 112.6,
+    "yaw": 326,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-4.2 m, phone heading 326; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2630.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": 24.9,
+    "y": 1.6,
+    "z": 102.7,
+    "yaw": 227,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-6.8 m, phone heading 227; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
+  },
+  "IMG_2637.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -100.5,
+    "y": 1.6,
+    "z": 225.1,
+    "yaw": 238,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "barraka-frontage-paseo-furniture: pin +-4.7 m, phone heading 238; ground eye height; 26 mm-equivalent lens from EXIF; starting pose only, not solved"
   }
  }
 }
