@@ -429,7 +429,7 @@ const path = require("node:path");
       }
       const level = world.groundHeight(...P(4, 0)) - world.groundHeight(...P(-1, 0));
       if (level < 0.3 || level > 0.45) throw Error("Elena walkway floor is " + level.toFixed(2) + " m above the lane, outside the survey");
-      walk([P(-2, 0.9), P(4, 0), P(10, 0.5), P(4, 0), P(-2, -0.9)]);
+      walk([P(-1, 0.3), P(4, 0), P(10, 0.5), P(4, 0), P(-1, -0.3)]);
     }
     // Issue #57: sills, the kerbed Dalí footpath and the south Dalí approach are stepped onto and off,
     // rise by the surveyed amounts, and their visible tops follow the player ground.
