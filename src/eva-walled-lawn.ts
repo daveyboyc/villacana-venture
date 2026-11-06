@@ -3,6 +3,7 @@ import data from "../data/eva_walled_lawn.json";
 import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
+import { clippedHedge, roundClippedTree } from "./clipped-plants";
 
 export const evaLawn = data;
 export const evaLawnRings = [data.lawn.ring, data.evaLawn.ring] as Vec2[][];
@@ -69,13 +70,14 @@ export function addEvaLawn(scene: THREE.Scene): void {
   }
   const h=data.hedge,mid=[(h.from[0]+h.to[0])/2,(h.from[1]+h.to[1])/2],length=Math.hypot(h.to[0]-h.from[0],h.to[1]-h.from[1]);
   if(clear(mid,Math.hypot(length,h.depth)/2)) {
-    const hedge=mesh(new THREE.BoxGeometry(length,h.height,h.depth),new THREE.MeshStandardMaterial({color:"#496c38",map:surfaceTexture("turf"),roughness:1}),mid[0],h.height/2,mid[1]);
-    hedge.rotation.y=-Math.atan2(h.to[1]-h.from[1],h.to[0]-h.from[0]);scene.add(hedge);
+    // Crisply clipped box in front of the espaliered wall (IMG_2677, IMG_2339): leafy, not a plain box.
+    const hedge=clippedHedge({length,depth:h.depth,height:h.height,seed:7,clip:6,leafSize:[0.05,0.034],greens:["#3a5a2e","#476a35","#55773d"]});
+    hedge.position.set(mid[0],0,mid[1]);hedge.rotation.y=-Math.atan2(h.to[1]-h.from[1],h.to[0]-h.from[0]);hedge.name=data.id;scene.add(hedge);
   }
   const tree=data.evaLawn.tree;
-  if(clear(tree,1.05)) {
-    scene.add(mesh(new THREE.CylinderGeometry(.1,.14,1.8,9),new THREE.MeshStandardMaterial({color:"#8b8066",roughness:1}),tree[0],.9,tree[1]));
-    const crown=mesh(new THREE.SphereGeometry(1,16,12),new THREE.MeshStandardMaterial({color:"#46563a",roughness:1}),tree[0],2.35,tree[1]);crown.scale.set(1,.85,1);scene.add(crown);
+  if(clear(tree,1.1)) {
+    // Round clipped tree (IMG_2336, IMG_2503): pale trunk, a domed crown of small glossy leaves.
+    const crown=roundClippedTree({trunk:2.0,crown:2.2,crownHeight:1.75,seed:3});crown.position.set(tree[0],0,tree[1]);crown.name=data.id;scene.add(crown);
   }
   const lamp=data.evaLawn.lamp;
   if(clear(lamp,.25)) scene.add(mesh(new THREE.CylinderGeometry(.035,.05,2.8,8),green,lamp[0],1.4,lamp[1]),mesh(new THREE.CylinderGeometry(.16,.1,.35,4),opal,lamp[0],2.9,lamp[1]),mesh(new THREE.ConeGeometry(.23,.2,4),green,lamp[0],3.16,lamp[1]));

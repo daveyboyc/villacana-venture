@@ -957,6 +957,62 @@
    "render": "docs/reviews/eva-lane-details/IMG_2549-after.png",
    "result": "matches",
    "notes": "Looking south-west between the houses: the south-east house wall beside the camera, the raised white planter against the north-west house and the hedged bed opening up ahead on the left agree with the photo. The planter's flowers are left out because they sit inside the protected route (gap:eva-west-planter-plants). Camera: hand-set starting pose on the path at the pin's distance (data/photo_poses.json initialBasis), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "eva-planting-shapes",
+   "checked": "2026-11-06",
+   "by": "Claude",
+   "feature": "eva_lane.json:eva-lane-east-edges",
+   "photo": "IMG_2503.jpg",
+   "before": "docs/reviews/eva-planting-shapes/IMG_2503-before.png",
+   "render": "docs/reviews/eva-planting-shapes/IMG_2503-after.png",
+   "result": "matches",
+   "notes": "The north-east bed now holds a leafy clipped block of narrow oleander leaves instead of a cube, and the round clipped tree stands on about 2 m of pale trunk with a domed crown of small leaves, as in the photo. The real crown spreads wider and less evenly than the model's. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "eva-planting-shapes",
+   "checked": "2026-11-06",
+   "by": "Claude",
+   "feature": "eva_lane.json:eva-lane-east-edges",
+   "photo": "IMG_2504.jpg",
+   "before": "docs/reviews/eva-planting-shapes/IMG_2504-before.png",
+   "render": "docs/reviews/eva-planting-shapes/IMG_2504-after.png",
+   "result": "matches",
+   "notes": "The east bed hedge is now leafy and slightly irregular, and the jasmine and shrub mass with white flowers grows up the house wall behind it, as in the photo; before, a smooth green box and a bare wall. The real wall planting is taller and looser near the camera. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "eva-planting-shapes",
+   "checked": "2026-11-06",
+   "by": "Claude",
+   "feature": "eva_lane.json:eva-lane-east-edges",
+   "photo": "IMG_2677.jpg",
+   "before": "docs/reviews/eva-planting-shapes/IMG_2677-before.png",
+   "render": "docs/reviews/eva-planting-shapes/IMG_2677-after.png",
+   "result": "matches",
+   "notes": "Leafy hedge and wall planting on the left, and the clipped box hedge in front of the espaliered wall, follow the photo; before, boxes and a bare wall. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "eva-planting-shapes",
+   "checked": "2026-11-06",
+   "by": "Claude",
+   "feature": "eva_lane.json:eva-lane-west-edges",
+   "photo": "IMG_2553.jpg",
+   "before": "docs/reviews/eva-planting-shapes/IMG_2553-before.png",
+   "render": "docs/reviews/eva-planting-shapes/IMG_2553-after.png",
+   "result": "matches",
+   "notes": "The west bed now has low leafy box edging behind the kerb and pink-flowering shrubs standing in the soil behind it, as in the photo; the climbers on the far house walls are still missing (eva-west-planting). Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "eva-planting-shapes",
+   "checked": "2026-11-06",
+   "by": "Claude",
+   "feature": "eva_lane.json:eva-lane-west-edges",
+   "photo": "IMG_2549.jpg",
+   "before": "docs/reviews/eva-planting-shapes/IMG_2549-before.png",
+   "render": "docs/reviews/eva-planting-shapes/IMG_2549-after.png",
+   "result": "differs",
+   "notes": "The low edging in the bed ahead is now leafy, but the photo's lush raised-planter planting (shrubs, lilies, pink periwinkle) and the climbers on the right-hand wall are still absent: the planter plants sit inside the protected walking route, and the west wall climbers are not built. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval.",
+   "followUp": "eva-west-planting"
   }
  ],
  "legacyUnchecked": [

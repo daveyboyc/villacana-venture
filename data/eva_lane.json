@@ -128,7 +128,12 @@
       "c": 1.45,
       "height": 0.85,
       "depth": 0.5,
-      "kind": "clipped"
+      "kind": "clipped",
+      "evidence": [
+       "IMG_2504.jpg",
+       "IMG_2677.jpg",
+       "IMG_2676.jpg"
+      ]
      }
     },
     {
@@ -153,7 +158,10 @@
       "c": -2.0,
       "height": 1.3,
       "depth": 0.9,
-      "kind": "oleander"
+      "kind": "oleander",
+      "evidence": [
+       "IMG_2503.jpg"
+      ]
      }
     }
    ],
@@ -203,7 +211,25 @@
    "planters": [],
    "drains": [],
    "lamps": [],
-   "plants": []
+   "plants": [],
+   "shrubs": [],
+   "climbers": [
+    {
+     "id": "eva-east-wall-climbers",
+     "wallC": 1.86,
+     "s": [
+      0.4,
+      11.9
+     ],
+     "height": 2.8,
+     "depth": 0.4,
+     "evidence": [
+      "IMG_2504.jpg",
+      "IMG_2677.jpg"
+     ],
+     "note": "Jasmine and tall shrubs grown up the house wall behind the bed; ragged top and density illustrative."
+    }
+   ]
   },
   {
    "id": "eva-lane-west",
@@ -324,7 +350,12 @@
       "c": 1.3,
       "height": 0.35,
       "depth": 0.3,
-      "kind": "clipped"
+      "kind": "edging",
+      "evidence": [
+       "IMG_2553.jpg",
+       "IMG_2551.jpg",
+       "IMG_2549.jpg"
+      ]
      }
     },
     {
@@ -348,7 +379,12 @@
       "c": 1.3,
       "height": 0.35,
       "depth": 0.3,
-      "kind": "clipped"
+      "kind": "edging",
+      "evidence": [
+       "IMG_2553.jpg",
+       "IMG_2551.jpg",
+       "IMG_2549.jpg"
+      ]
      }
     }
    ],
@@ -422,7 +458,32 @@
      ],
      "scale": 0.6
     }
-   ]
+   ],
+   "shrubs": [
+    {
+     "id": "eva-west-roses",
+     "kind": "rose",
+     "c": 2.35,
+     "s": [
+      [
+       1.6,
+       14.6
+      ],
+      [
+       16.0,
+       23.6
+      ]
+     ],
+     "spacing": 1.7,
+     "evidence": [
+      "IMG_2553.jpg",
+      "IMG_2551.jpg"
+     ],
+     "note": "Rose and small flowering shrubs standing in the bare soil behind the low edging; spacing and sizes estimated."
+    }
+   ],
+   "climbers": []
   }
- ]
+ ],
+ "plantsTrust": "Plant types, heights and placement in the beds follow the photos: clipped hedge about 0.85 m in the east bed, low box edging about 0.35 m with roses behind it in the west beds, a clipped oleander about 1.3 m at the north-east end, jasmine and shrubs up the east house wall. The leaves and hulls are original procedural models (src/clipped-plants.ts), not scans; shapes and counts are illustrative."
 }

@@ -83,6 +83,17 @@ for run in d['runs']:
         q = ax.at(sa, (c0 + c1) / 2)
         near = min(seg_distance(q, a, b) for a, b in zip(eva['points'], eva['points'][1:]))
         assert near <= (c1 - c0) / 2 - eva['width'] / 2 + .2, f"{run['id']}: mapped Eva route leaves the cut band at s={sa}"
+    # Roses stand inside a bed; climbers grow from inside the bed back to its house edge, in the run.
+    for sh in run.get('shrubs', []):
+        assert all(p in photos for p in sh['evidence'])
+        for s0, s1 in sh['s']:
+            assert any(b['s'][0] <= s0 and s1 <= b['s'][1] and b['c'][0] < sh['c'] < b['c'][1] for b in run['beds']), f"{sh['id']} leaves its beds"
+    for cl in run.get('climbers', []):
+        assert all(p in photos for p in cl['evidence']) and 1.5 <= cl['height'] <= 3.5 and cl['depth'] <= .6
+        assert any(b['s'][0] <= cl['s'][0] and cl['s'][1] <= b['s'][1] and abs(b['c'][1] - cl['wallC']) < .1 for b in run['beds']), f"{cl['id']} is not at the back of a bed"
+        for i in range(21):
+            p = ax.at(cl['s'][0] + (cl['s'][1] - cl['s'][0]) * i / 20, cl['wallC'] - .05)
+            assert not any(inside(*p, b['ring']) for b in houses), f"{cl['id']} grows inside a house"
     for lamp in run['lamps']: assert all(p in photos for p in lamp['evidence'])
     for plant in run['plants']: assert all(p in photos for p in plant['evidence']) and plant['kind'] in ('bird_of_paradise',)
 
@@ -95,6 +106,7 @@ for c in (-d['bandHalf'] - d['margin'], d['bandHalf'] + d['margin']):
     assert min(seg_distance(east.at(east.length, c), a, b) for a, b in zip(tr['points'], tr['points'][1:])) >= tr['width'] / 2 - .05, 'East band runs into Teodoro Rojo'
 
 src = (ROOT / 'src/eva-lane.ts').read_text()
+assert 'clippedHedge(' in src and 'wallClimber(' in src and 'userData.footprint' in src
 assert 'if (scene.userData.layoutOnly) return;' in src and 'decorationClearance' in src and 'refine(geometry, siteY' in src
 assert 'addEvaLane(scene)' in (ROOT / 'src/slice.ts').read_text() and 'suppressInEvaLane(skeleton)' in (ROOT / 'src/slice.ts').read_text()
 assert 'flatMap(outsideEvaLane)' in (ROOT / 'src/boundaries.ts').read_text()

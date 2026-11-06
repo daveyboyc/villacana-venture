@@ -365,13 +365,15 @@ const path = require("node:path");
         const hit=new THREE.Raycaster(new THREE.Vector3(c[0],6,c[1]),new THREE.Vector3(0,-1,0)).intersectObjects(details.children,true).find(h=>h.object.name===run.id+'-paving');
         if(!hit||Math.abs(hit.point.y-world.groundHeight(...c))>.05)throw Error('Eva paving is not a flush visual ground layer: '+run.id);
       }
-      let hedges=0;const corner=new THREE.Vector3();
+      const plants={hedge:0,shrub:0,climber:0};
       details.traverse(m=>{
-        if(!m.isMesh||!m.name.endsWith('-hedge'))return;hedges++;
-        const g=m.geometry.parameters;for(const sx of [-1,1])for(const sz of [-1,1]){corner.set(sx*g.width/2,0,sz*g.depth/2).applyMatrix4(m.matrixWorld);if(!routeClearance(routes,corner.x,corner.z,0))throw Error('Eva hedge footprint blocks a route: '+m.name);}
+        const kind=m.name.split('-').pop();if(!m.userData.footprint||!(kind in plants))return;plants[kind]++;
+        let leaves=0;m.traverse(o=>{if(o.isInstancedMesh&&o.name.includes('-leaves-'))leaves+=o.count;});
+        if(leaves<40)throw Error('Eva plant has no leaves: '+m.name);
+        for(const [x,z] of m.userData.footprint)if(!routeClearance(routes,x,z,0))throw Error('Eva plant footprint blocks a route: '+m.name);
       });
-      if(hedges<20)throw Error('Eva bed hedges are missing');
-      details.traverse(mesh=>{if(!mesh.isInstancedMesh)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),rot=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,rot,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error('Eva plant footprint blocks a route');}});
+      if(plants.hedge<20||plants.shrub<6||plants.climber<5)throw Error('Eva bed planting is missing: '+JSON.stringify(plants));
+      details.traverse(mesh=>{if(!mesh.isInstancedMesh||!mesh.userData.spriteKind)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),rot=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,rot,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error('Eva plant footprint blocks a route');}});
     }
     {
       const {addSouthBenchPlanting}=await import('/src/middle-south-planting.ts');
