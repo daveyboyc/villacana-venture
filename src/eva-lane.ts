@@ -115,7 +115,9 @@ const clipQuads: Vec2[][] = data.runs.flatMap((run) => {
 /** Cut the generic lane ribbon and its white edging out of the photographed Eva stretches. */
 export function outsideEvaLane(ring: Vec2[]): Vec2[][] {
   const xs = ring.map((p) => p[0]), zs = ring.map((p) => p[1]);
-  const near = clipQuads.filter((q) => q.some((p) => p[0] > Math.min(...xs) - 1 && p[0] < Math.max(...xs) + 1 && p[1] > Math.min(...zs) - 1 && p[1] < Math.max(...zs) + 1));
+  const [x0, x1, z0, z1] = [Math.min(...xs), Math.max(...xs), Math.min(...zs), Math.max(...zs)];
+  // Bounding boxes overlap: a long quad can cross a small ring with all four corners far away.
+  const near = clipQuads.filter((q) => Math.max(...q.map((p) => p[0])) > x0 && Math.min(...q.map((p) => p[0])) < x1 && Math.max(...q.map((p) => p[1])) > z0 && Math.min(...q.map((p) => p[1])) < z1);
   if (!near.length) return [ring];
   const area = (poly: Vec2[]) => Math.abs(poly.reduce((sum, p, i) => { const q = poly[(i + 1) % poly.length]; return sum + p[0] * q[1] - q[0] * p[1]; }, 0)) / 2;
   const clip = (poly: Vec2[], a: Vec2, b: Vec2, sign: number): Vec2[] => {

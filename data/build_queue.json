@@ -2701,7 +2701,8 @@
     "IMG_2553.jpg",
     "IMG_2551.jpg",
     "IMG_2552.jpg",
-    "IMG_2549.jpg"
+    "IMG_2549.jpg",
+    "IMG_2503.jpg"
    ],
    "build": "Along the photographed stretches of Calle Eva (east gateway to the Teodoro Rojo junction, and the west stretch from the middle pool corner to the Dali car park), dress the lane as the photos show it: four large square terracotta tiles across with pale grey joints, a grey exposed-aggregate margin each side, a white rounded raised kerb where a bed or lawn is kerbed, flush lawn where it is not, planted beds against the houses, and in Details the clipped hedges, round trees and black lantern posts. Measure the lane against the east gateway and the house fronts from solved cameras.",
    "avoid": "Do not build Eva east of the Teodoro Rojo junction (no photos; photo request eva-east). Do not model the covered passage off Eva (gap:eva-covered-passage). Do not move registry footprints or the middle pool east gateway. Do not start walking or collision work.",
@@ -2712,7 +2713,38 @@
    ],
    "dependsOn": [],
    "status": "in-progress",
-   "owner": "Claude"
+   "owner": "Claude",
+   "features": [
+    "eva_lane.json:eva-lane-east",
+    "eva_lane.json:eva-lane-east-edges",
+    "eva_lane.json:eva-lane-west",
+    "eva_lane.json:eva-lane-west-edges",
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ]
+  },
+  {
+   "id": "eva-planting-shapes",
+   "area": "eva",
+   "priority": 3,
+   "kind": "planting",
+   "title": "Calle Eva: clipped shrub and tree shapes, climbers on the house walls",
+   "photos": [
+    "IMG_2503.jpg",
+    "IMG_2504.jpg",
+    "IMG_2677.jpg",
+    "IMG_2549.jpg",
+    "IMG_2553.jpg"
+   ],
+   "build": "Replace the box hedges in the Eva beds with clipped, rounded shrub shapes of the photographed heights (low box edging on the west bed, about 0.8 m shrubs on the east bed, the rounded oleander at the north-east end), give the round clipped tree a less spherical crown, and add the jasmine and bougainvillea climbers on the house walls behind the beds as flat wall-aligned planes.",
+   "avoid": "Keep every plant footprint clear of the protected routes; do not move the lane, kerbs or beds (eva-lane-details).",
+   "accept": [
+    "IMG_2503 render no longer shows a cube hedge",
+    "Climbers cite the photos that show them"
+   ],
+   "dependsOn": [
+    "eva-lane-details"
+   ],
+   "status": "open"
   }
  ]
 }

@@ -8393,13 +8393,17 @@
    "eva_lane.json:eva-lane-east-edges"
   ],
   "looksAt": [
-   -106.0,
-   71.6
+   -104.4,
+   74.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-east-edges",
+   "eva_lane.json:eva-lane-east",
+   "street:eva"
+  ],
+  "subject": "North-east end of the Eva lawn: the kerbed bed with a clipped oleander, the lantern and the round clipped tree, looking west across the lawn to the walled corner"
  },
  {
   "id": "IMG_2504.jpg",

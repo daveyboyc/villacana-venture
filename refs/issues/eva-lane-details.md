@@ -20,6 +20,7 @@ Task `eva-lane-details` · area **Calle Eva** · priority P2 · materials
 - `public/photos-ref/IMG_2551.jpg`: Calle Eva west footpath at the Dali end, terracotta path beside a lawn island (ground — pin ±3.5 m; looks at Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right)
 - `public/photos-ref/IMG_2552.jpg`: Curved kerbed footpath meeting the Dali car park aisle (ground — pin ±3.1 m; looks at Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern)
 - `public/photos-ref/IMG_2549.jpg`: Calle Eva: lane between a white wall and planted beds, towards the middle pool (ground — pin ±3.8 m; looks at Eva west stretch looking south-west between a white wall and a raised planted bed)
+- `public/photos-ref/IMG_2503.jpg`: Eva tiled footpath beside lawn with magnolia and lamp post (ground — pin ±2.8 m; looks at North-east end of the Eva lawn: the kerbed bed with a clipped oleander, the lantern and the round clipped tree, looking west across the lawn to the walled corner)
 
 ## Build
 

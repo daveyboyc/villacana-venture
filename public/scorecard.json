@@ -276,7 +276,7 @@
     "tagged": 33,
     "placed": 26,
     "checks": {
-     "matches": 1,
+     "matches": 3,
      "differs": 2,
      "not-comparable": 7
     },
@@ -923,7 +923,7 @@
     "tagged": 45,
     "placed": 45,
     "checks": {
-     "matches": 0,
+     "matches": 2,
      "differs": 7,
      "not-comparable": 1
     },
@@ -1255,8 +1255,8 @@
     "tagged": 31,
     "placed": 31,
     "checks": {
-     "matches": 0,
-     "differs": 0,
+     "matches": 8,
+     "differs": 1,
      "not-comparable": 0
     },
     "camerasSolved": 0,
@@ -1271,15 +1271,21 @@
    "placement": {
     "features": 7,
     "verified": 0,
-    "disputed": 0
+    "disputed": 1
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:ce33b7d08fa2ed9c",
+     "feature": "eva_lane.json:eva-lane-east-edges"
+    }
+   ],
    "tasks": {
-    "open": 1,
+    "open": 2,
     "inProgress": 1,
     "titles": [
      "Calle Eva: full-source path, tunnel and boundary inventory",
-     "Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns"
+     "Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns",
+     "Calle Eva: clipped shrub and tree shapes, climbers on the house walls"
     ]
    },
    "confidence": {
@@ -1295,7 +1301,7 @@
     "Photos: 31, 31 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
     "How sure: 4 photographed, 3 estimated, 0 inferred, 2 known gaps.",
-    "Placement: 0 of 7 features verified."
+    "Placement: 0 of 7 features verified, 1 open discrepancy."
    ],
    "light": {
     "colour": "red",
@@ -1357,7 +1363,7 @@
     "tagged": 126,
     "placed": 126,
     "checks": {
-     "matches": 1,
+     "matches": 2,
      "differs": 3,
      "not-comparable": 11
     },
@@ -1706,8 +1712,8 @@
     "tagged": 403,
     "placed": 385,
     "checks": {
-     "matches": 6,
-     "differs": 11,
+     "matches": 14,
+     "differs": 12,
      "not-comparable": 51
     },
     "camerasSolved": 7,
@@ -1734,7 +1740,7 @@
    "placement": {
     "features": 399,
     "verified": 0,
-    "disputed": 10
+    "disputed": 11
    },
    "discrepancies": [
     {
@@ -1808,10 +1814,14 @@
     {
      "id": "photo-discrepancy:9e5aa174efadfeb8",
      "feature": "elena_walkway.json:elena-walkway-floor"
+    },
+    {
+     "id": "photo-discrepancy:ce33b7d08fa2ed9c",
+     "feature": "eva_lane.json:eva-lane-east-edges"
     }
    ],
    "tasks": {
-    "open": 39,
+    "open": 40,
     "inProgress": 30,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -1832,7 +1842,7 @@
     "Photos: 403, 385 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 57 photographed, 100 estimated, 9 inferred, 15 known gaps.",
-    "Placement: 0 of 399 features verified, 18 open discrepancies."
+    "Placement: 0 of 399 features verified, 19 open discrepancies."
    ],
    "light": {
     "colour": "red",

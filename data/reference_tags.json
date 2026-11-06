@@ -3529,7 +3529,12 @@
    "layout",
    "planting",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -104.4,
+   74.3
+  ],
+  "subject": "North-east end of the Eva lawn: the kerbed bed with a clipped oleander, the lantern and the round clipped tree, looking west across the lawn to the walled corner"
  },
  "IMG_2504.jpg": {
   "title": "Long tiled path to an arched iron gate",
