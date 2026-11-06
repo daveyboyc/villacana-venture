@@ -105,8 +105,8 @@ How the ground rises and falls: slopes, ramps, steps, raised patios, retaining w
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2294.jpg](../../public/photos-ref/IMG_2294.jpg) | ground | levels, layout | Dalí seaward end: flagstone approach to arch _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2275.jpg](../../public/photos-ref/IMG_2275.jpg) | ground | levels, layout | Cervantes exit onto Pintor Dalí: slope and drain _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, dali_cervantes_threshold.json:dali-bays-1, dali_cervantes_threshold.json:dali-bays-2, dali_cervantes_threshold.json:dali-lawn-strip-1, dali_cervantes_threshold.json:dali-lawn-strip-2, dali_cervantes_threshold.json:dali-house-footpath-1, dali_cervantes_threshold.json:dali-house-footpath-2, dali_cervantes_threshold.json:cervantes-parking-crossing._ |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle **Looks at:** Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 | [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | ground | layout, levels, materials | Dalí footpath ramp with white mailbox pillar |
-| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle |
 | [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 
@@ -127,7 +127,7 @@ How the ground rises and falls: slopes, ramps, steps, raised patios, retaining w
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle **Looks at:** Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo
 

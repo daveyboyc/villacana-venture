@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 395,
-  "photosCitedByModel": 139,
-  "modelFeaturesWithPhotoCitations": 141
+  "features": 399,
+  "photosCitedByModel": 147,
+  "modelFeaturesWithPhotoCitations": 145
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -4865,7 +4865,9 @@
     }
    ],
    "citedBy": [
-    "eva_walled_lawn.json:eva-walled-lawn"
+    "eva_walled_lawn.json:eva-walled-lawn",
+    "eva_lane.json:eva-lane-east",
+    "eva_lane.json:eva-lane-east-edges"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -4948,7 +4950,8 @@
     }
    ],
    "citedBy": [
-    "eva_walled_lawn.json:eva-walled-lawn"
+    "eva_walled_lawn.json:eva-walled-lawn",
+    "eva_lane.json:eva-lane-east-edges"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -8551,7 +8554,11 @@
      "angleOffset": 26.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_walled_lawn.json:eva-walled-lawn",
+    "eva_lane.json:eva-lane-east",
+    "eva_lane.json:eva-lane-east-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -100.0,
@@ -8583,7 +8590,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-east",
+    "eva_lane.json:eva-lane-east-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -101.5,
@@ -9971,7 +9981,10 @@
      "angleOffset": 25.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west",
+    "eva_lane.json:eva-lane-west-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -149.2,
@@ -10029,7 +10042,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west",
+    "eva_lane.json:eva-lane-west-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -154.7,
@@ -10055,7 +10071,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west",
+    "eva_lane.json:eva-lane-west-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -162.7,
@@ -10093,7 +10112,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-west",
+    "eva_lane.json:eva-lane-west-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -167.9,
@@ -14846,7 +14868,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-east",
+    "eva_lane.json:eva-lane-east-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -100.2,
@@ -14878,7 +14903,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "eva_lane.json:eva-lane-east",
+    "eva_lane.json:eva-lane-east-edges"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -105.7,

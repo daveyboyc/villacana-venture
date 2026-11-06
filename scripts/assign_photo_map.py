@@ -158,6 +158,17 @@ def features(s):
     result[-1]['points']=[north['steps']['foot'],north['steps']['toward']]
     eva=json.loads((ROOT/'data/eva_walled_lawn.json').read_text())
     add('eva_walled_lawn.json:'+eva['id'],eva['name'],'reference feature','authored photo/map interpretation',ring=eva['lawn']['ring'],evidence=eva['evidence']+eva['evaLawn']['evidence'])
+    lane=json.loads((ROOT/'data/eva_lane.json').read_text())
+    for run in lane['runs']:
+        axis=run['axis'];cum=[0.0]
+        for a,b in zip(axis,axis[1:]):cum.append(cum[-1]+math.dist(a,b))
+        def at(sv,c,axis=axis,cum=cum):
+            i=max(0,min(len(axis)-2,next((k for k in range(len(axis)-1) if sv<=cum[k+1]),len(axis)-2)));a,b=axis[i],axis[i+1];l=math.dist(a,b);t=(sv-cum[i])/l
+            return [round(a[0]+(b[0]-a[0])*t-(b[1]-a[1])/l*c,2),round(a[1]+(b[1]-a[1])*t+(b[0]-a[0])/l*c,2)]
+        half=lane['bandHalf']+lane['margin'];st=cum
+        add('eva_lane.json:'+run['id'],run['name']+' · tiled band and aggregate margins','reference feature','photo-supported material and arrangement; widths read from tile proportions; '+run['axisBasis'],evidence=run['evidence'],ring=[at(v,-half) for v in st]+[at(v,half) for v in reversed(st)])
+        edges=run['beds']+run['lawns']+run['spurs']+run['planters']
+        add('eva_lane.json:'+run['id']+'-edges',run['name']+' · kerbs, beds and lawn edges','reference feature','photo-supported kerbs and edge types; bed depths and lawn extents estimated',evidence=sorted({e for f in edges for e in f.get('evidence',run['evidence'])}|{e for k in run['kerbs'] for e in k['evidence']}),points=[at((f['s'][0]+f['s'][1])/2,(f['c'][0]+f['c'][1])/2) for f in edges])
     barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
     for key in ('boardwalk','sign','seating'):
         f=barraka[key]

@@ -2686,6 +2686,33 @@
    "status": "in-progress",
    "owner": "Claude",
    "notes": "4 Nov 2026. Floor, steps, ramp, signs, doors, arches and lantern built from IMG_2456/2459/2518-2520/2689-2691; dimensions and the positions of doors, mat and lantern along the walkway are estimates from photo perspective. The levels note's two risers are corrected to three. Geometry stands inside the unchanged registry strip and nothing is solid, but the added floor and the ground offset need the measured placement packet and independent review the policy asks for, which no second agent has given: the task stays in progress and claims no placement approval. Renders are hand-set cameras (unsolved poses)."
+  },
+  {
+   "id": "eva-lane-details",
+   "area": "eva",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns",
+   "photos": [
+    "IMG_2336.jpg",
+    "IMG_2504.jpg",
+    "IMG_2677.jpg",
+    "IMG_2676.jpg",
+    "IMG_2553.jpg",
+    "IMG_2551.jpg",
+    "IMG_2552.jpg",
+    "IMG_2549.jpg"
+   ],
+   "build": "Along the photographed stretches of Calle Eva (east gateway to the Teodoro Rojo junction, and the west stretch from the middle pool corner to the Dali car park), dress the lane as the photos show it: four large square terracotta tiles across with pale grey joints, a grey exposed-aggregate margin each side, a white rounded raised kerb where a bed or lawn is kerbed, flush lawn where it is not, planted beds against the houses, and in Details the clipped hedges, round trees and black lantern posts. Measure the lane against the east gateway and the house fronts from solved cameras.",
+   "avoid": "Do not build Eva east of the Teodoro Rojo junction (no photos; photo request eva-east). Do not model the covered passage off Eva (gap:eva-covered-passage). Do not move registry footprints or the middle pool east gateway. Do not start walking or collision work.",
+   "accept": [
+    "Before/after renders through each photo's camera, recorded in data/photo_checks.json",
+    "Kerb, lawn and bed extents graded estimated or inferred in data/confidence.json",
+    "Lane offset against the east gateway measured, not guessed"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

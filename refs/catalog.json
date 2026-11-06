@@ -2198,8 +2198,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-east",
    "backdrop.json:aerial-trees",
-   "street:eva"
+   "street:eva",
+   "eva_lane.json:eva-lane-east-edges"
   ]
  },
  {
@@ -2395,6 +2397,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-west",
    "backdrop.json:aerial-trees",
    "street:eva"
   ]
@@ -4611,7 +4614,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "street:eva",
-   "raised_terraces.json:middle-pool-oleander-bed"
+   "raised_terraces.json:middle-pool-oleander-bed",
+   "eva_lane.json:eva-lane-west"
   ]
  },
  {
@@ -4741,7 +4745,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "eva_walled_lawn.json:eva-walled-lawn"
+   "eva_walled_lawn.json:eva-walled-lawn",
+   "eva_lane.json:eva-lane-east",
+   "eva_lane.json:eva-lane-east-edges"
   ],
   "looksAt": [
    -105.4,
@@ -4749,7 +4755,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-east-edges",
    "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-east",
    "street:eva"
   ],
   "subject": "Eva tiled lane beside lawns, clipped trees and dark lantern posts"
@@ -4789,7 +4797,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-east-edges"
   ],
   "subject": "Eva lawn beside clipped round tree and lantern post"
  },
@@ -4820,7 +4829,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "eva_walled_lawn.json:eva-walled-lawn"
+   "eva_walled_lawn.json:eva-walled-lawn",
+   "eva_lane.json:eva-lane-east-edges"
   ],
   "looksAt": [
    -112.8,
@@ -8377,7 +8387,11 @@
    "altitude": 6.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "eva_walled_lawn.json:eva-walled-lawn",
+   "eva_lane.json:eva-lane-east",
+   "eva_lane.json:eva-lane-east-edges"
+  ],
   "looksAt": [
    -106.0,
    71.6
@@ -8403,7 +8417,7 @@
    "materials",
    "planting"
   ],
-  "note": "Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW toward a white gateway (possibly the middle pool east gateway, not confirmed).",
+  "note": "Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW along Eva to the middle pool east gateway (same gateway, notice boards and espaliered bougainvillea wall as IMG_2677 and IMG_2340).",
   "observation": null,
   "taken": "2026-10-26",
   "originalUrl": "https://drive.google.com/file/d/1wDYwNBbuYhAaa4I_tnFovLNriHaTEIu1/view?usp=drivesdk",
@@ -8415,16 +8429,22 @@
    "altitude": 6.5,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -106.7,
-   75.6
+  "citedBy": [
+   "eva_lane.json:eva-lane-east",
+   "eva_lane.json:eva-lane-east-edges"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -107.3,
+   78.6
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-east",
+   "street:eva",
    "backdrop.json:aerial-trees",
-   "street:eva"
-  ]
+   "eva_lane.json:eva-lane-east-edges"
+  ],
+  "subject": "Eva tiled lane looking south-west to the middle pool east gateway: white rounded kerb and hedge on the left, lawn on the right"
  },
  {
   "id": "IMG_2505.jpg",
@@ -9817,15 +9837,22 @@
    "altitude": 6.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -154.7,
-   106.8
+  "citedBy": [
+   "eva_lane.json:eva-lane-west",
+   "eva_lane.json:eva-lane-west-edges"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -154.2,
+   111.7
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-west",
+   "street:eva",
+   "eva_lane.json:eva-lane-west-edges",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "Eva west stretch looking south-west between a white wall and a raised planted bed"
  },
  {
   "id": "IMG_2550.jpg",
@@ -9861,7 +9888,9 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "eva_lane.json:eva-lane-west-edges",
+   "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-west"
   ],
   "subject": "Arched brown timber double gate in white wall"
  },
@@ -9894,16 +9923,22 @@
    "altitude": 7.1,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -160.1,
-   116.4
+  "citedBy": [
+   "eva_lane.json:eva-lane-west",
+   "eva_lane.json:eva-lane-west-edges"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -161.5,
+   116.1
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-west",
    "street:eva",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-west-edges"
+  ],
+  "subject": "Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right"
  },
  {
   "id": "IMG_2552.jpg",
@@ -9933,18 +9968,22 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "eva_lane.json:eva-lane-west",
+   "eva_lane.json:eva-lane-west-edges"
+  ],
   "looksAt": [
    -168.0,
    120.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:eva",
    "backdrop.json:aerial-trees",
    "parking:Dalí car park",
-   "dali_street.json:dali-house-lanterns"
-  ]
+   "eva_lane.json:eva-lane-west"
+  ],
+  "subject": "Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern"
  },
  {
   "id": "IMG_2553.jpg",
@@ -9974,16 +10013,22 @@
    "altitude": 7.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -162.6,
-   117.9
+  "citedBy": [
+   "eva_lane.json:eva-lane-west",
+   "eva_lane.json:eva-lane-west-edges"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -161.4,
+   116.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-west",
    "street:eva",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-west-edges"
+  ],
+  "subject": "Eva west stretch looking north-east from the Dali end: kerbed lawn left, kerbed planted bed right"
  },
  {
   "id": "IMG_2554.jpg",
@@ -14660,16 +14705,22 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -105.9,
-   77.4
+  "citedBy": [
+   "eva_lane.json:eva-lane-east",
+   "eva_lane.json:eva-lane-east-edges"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -106.7,
+   78.2
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "eva_lane.json:eva-lane-east",
    "street:eva",
-   "backdrop.json:aerial-trees"
-  ]
+   "backdrop.json:aerial-trees",
+   "eva_lane.json:eva-lane-east-edges"
+  ],
+  "subject": "Eva tiled lane looking south-west: grey aggregate margins, white raised kerb and hedge on the left, lawn on the right"
  },
  {
   "id": "IMG_2677.jpg",
@@ -14701,18 +14752,22 @@
    "altitude": 4.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "eva_lane.json:eva-lane-east",
+   "eva_lane.json:eva-lane-east-edges"
+  ],
   "looksAt": [
-   -113,
-   79
+   -110.5,
+   80.4
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "eva_walled_lawn.json:eva-walled-lawn",
+   "eva_lane.json:eva-lane-east",
+   "street:eva",
    "backdrop.json:aerial-trees",
-   "street:eva"
+   "eva_lane.json:eva-lane-east-edges"
   ],
-  "subject": "middle pool east gateway at the end of Calle Eva"
+  "subject": "Eva tiled lane at the middle pool east gateway: kerbed bed on the left, lawn with a tiled spur and clipped hedge on the right"
  },
  {
   "id": "IMG_2678.jpg",

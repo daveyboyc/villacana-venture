@@ -9,12 +9,15 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 - IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.
 - Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m.
 - IMG_2339 corner reuses the unchanged middle gateway NW wing and adds only a 4.2 m return, with a bounded lawn. Two wall-aligned single planes replace the crossed bougainvillea there; bollard, clipped hedge, nearby rounded tree and lantern are Details-only and route guarded. Lengths, heights and adjacent lawn extent remain estimates; no surveyed enclosure closure or new level change is asserted.
+- Eva lane as photographed (2026-11-06, docs/EVA_LANE.md): four big square terracotta tiles across with pale grey joints (about 1.72 m), a grey exposed-aggregate margin each side, white rounded kerbs where a bed or lawn is kerbed, flush lawn where it is not. The middle pool east gateway opening is centred on the mapped Eva line, and the photos show the path centred on the opening, so the east stretch keeps the mapped line.
+- Eva west: the registry house north-west of the lane stands only 0.6 m from the mapped centreline (0.9 m further on), with a raised planter in front of it in IMG_2549, so the photographed tile band is drawn 0.9 m south-east of the mapped line. The walking route still follows the mapped line along the planter face; moving it is walking work and is left open.
+- IMG_2336 and IMG_2503 put the one lantern and the round clipped tree on the north-west lawn at its north-east end, in a kerbed bed beside the Teodoro Rojo junction; the eva-walled-lawn lamp and tree were moved there. Open: where the tiled door spur north-west of the lane ends, and what paves the open court at the Teodoro Rojo junction (IMG_2501).
 
 ## Read first
 
-- docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`
-- data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`
-- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`
+- docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`, `docs/EVA_LANE.md`
+- data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`, `data/eva_lane.json`
+- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`
 - contact sheet: `villacana-reference/contact-sheets/eva.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -28,6 +31,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P2 | `eva-lane-details` | Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns | in-progress · Claude · placement: not-verified | [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2504](../../public/photos-ref/IMG_2504.jpg), [IMG_2677](../../public/photos-ref/IMG_2677.jpg), [IMG_2676](../../public/photos-ref/IMG_2676.jpg), [IMG_2553](../../public/photos-ref/IMG_2553.jpg), [IMG_2551](../../public/photos-ref/IMG_2551.jpg), [IMG_2552](../../public/photos-ref/IMG_2552.jpg), [IMG_2549](../../public/photos-ref/IMG_2549.jpg) |
 | P2 | `path-network-inventory-eva` [#134](https://github.com/daveyboyc/villacana-venture/issues/134) | Calle Eva: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
 ## Built from these photos
@@ -37,17 +41,41 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Eva"]
-  A --> F0["Calle Eva · walled lawn and espalier corner · unreviewed"]
+  A --> F0["Calle Eva east: gateway to the Teodoro Rojo junction · tiled band and aggregate margins · unreviewed"]
   F0 --> PIMG_2336_jpg(["IMG_2336"])
-  F0 --> PIMG_2337_jpg(["IMG_2337"])
-  F0 --> PIMG_2338_jpg(["IMG_2338"])
-  F0 --> PIMG_2339_jpg(["IMG_2339"])
-  A --> F1["Middle pool · east gateway from Calle Eva · unreviewed"]
-  F1 --> PIMG_2244_jpg(["IMG_2244"])
-  F1 --> PIMG_2340_jpg(["IMG_2340"])
-  A --> F2["Middle pool · stone steps up to Calle Eva · unreviewed"]
-  F2 --> PIMG_2248_jpg(["IMG_2248"])
-  F2 --> PIMG_2333_jpg(["IMG_2333"])
+  F0 --> PIMG_2503_jpg(["IMG_2503"])
+  F0 --> PIMG_2504_jpg(["IMG_2504"])
+  F0 --> PIMG_2676_jpg(["IMG_2676"])
+  F0 --> PIMG_2677_jpg(["IMG_2677"])
+  A --> F1["Calle Eva east: gateway to the Teodoro Rojo junction · kerbs, beds and lawn edges · unreviewed"]
+  F1 --> PIMG_2336_jpg(["IMG_2336"])
+  F1 --> PIMG_2338_jpg(["IMG_2338"])
+  F1 --> PIMG_2503_jpg(["IMG_2503"])
+  F1 --> PIMG_2504_jpg(["IMG_2504"])
+  F1 --> PIMG_2676_jpg(["IMG_2676"])
+  F1 --> PIMG_2677_jpg(["IMG_2677"])
+  A --> F2["Calle Eva west: Dali car park to the middle pool corner · tiled band and aggregate margins · unreviewed"]
+  F2 --> PIMG_2549_jpg(["IMG_2549"])
+  F2 --> PIMG_2551_jpg(["IMG_2551"])
+  F2 --> PIMG_2552_jpg(["IMG_2552"])
+  F2 --> PIMG_2553_jpg(["IMG_2553"])
+  A --> F3["Calle Eva west: Dali car park to the middle pool corner · kerbs, beds and lawn edges · unreviewed"]
+  F3 --> PIMG_2549_jpg(["IMG_2549"])
+  F3 --> PIMG_2551_jpg(["IMG_2551"])
+  F3 --> PIMG_2552_jpg(["IMG_2552"])
+  F3 --> PIMG_2553_jpg(["IMG_2553"])
+  A --> F4["Calle Eva · walled lawn and espalier corner · unreviewed"]
+  F4 --> PIMG_2336_jpg(["IMG_2336"])
+  F4 --> PIMG_2337_jpg(["IMG_2337"])
+  F4 --> PIMG_2338_jpg(["IMG_2338"])
+  F4 --> PIMG_2339_jpg(["IMG_2339"])
+  F4 --> PIMG_2503_jpg(["IMG_2503"])
+  A --> F5["Middle pool · east gateway from Calle Eva · unreviewed"]
+  F5 --> PIMG_2244_jpg(["IMG_2244"])
+  F5 --> PIMG_2340_jpg(["IMG_2340"])
+  A --> F6["Middle pool · stone steps up to Calle Eva · unreviewed"]
+  F6 --> PIMG_2248_jpg(["IMG_2248"])
+  F6 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Placement evidence
@@ -56,6 +84,10 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `eva_lane.json:eva-lane-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `eva_lane.json:eva-lane-east-edges` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `eva_lane.json:eva-lane-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `eva_lane.json:eva-lane-west-edges` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `eva_walled_lawn.json:eva-walled-lawn` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool.json:middle-pool-east-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `steps:middle-pool-sw-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -66,25 +98,25 @@ graph LR
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | ground | layout, planting, materials | Eva tiled footpath beside lawn with magnolia and lamp post _Used by: eva_walled_lawn.json:eva-walled-lawn, eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2336.jpg](../../public/photos-ref/IMG_2336.jpg) | ground | layout, planting | Calle Eva east of the middle pool: tiled path between lawns **Looks at:** Eva tiled lane beside lawns, clipped trees and dark lantern posts. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn, eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** Eva tiled lane at the middle pool east gateway: kerbed bed on the left, lawn with a tiled spur and clipped hedge on the right. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Looks at:** Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right. **Note:** Pin is at the Eva/Dali junction. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
+| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | ground | layout, planting, facades, materials | Calle Eva west footpath looking east between white houses and a planted bed **Looks at:** Eva west stretch looking north-east from the Dali end: kerbed lawn left, kerbed planted bed right. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
+| [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | ground | layout, materials, planting | Long tiled path to an arched iron gate **Looks at:** Eva tiled lane looking south-west to the middle pool east gateway: white rounded kerb and hedge on the left, lawn on the right. **Note:** Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW along Eva to the middle pool east gateway (same gateway, notice boards and espaliered bougainvillea wall as IMG_2677 and IMG_2340). _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2549.jpg](../../public/photos-ref/IMG_2549.jpg) | ground | layout, materials, planting | Calle Eva: lane between a white wall and planted beds, towards the middle pool **Looks at:** Eva west stretch looking south-west between a white wall and a raised planted bed. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
+| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle **Looks at:** Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
+| [IMG_2676.jpg](../../public/photos-ref/IMG_2676.jpg) | ground | layout, materials, planting | Terracotta path between hedge and lawn at the Teodoro Rojo end of Calle Eva **Looks at:** Eva tiled lane looking south-west: grey aggregate margins, white raised kerb and hedge on the left, lawn on the right. **Note:** Pin is at the NE corner by Teodoro Rojo; view runs SW along the path past the lawn toward the middle pool entrance gateway. _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn **Looks at:** Brown Eva frontage door with yellow-flowered shrub beside lawn. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn, eva_lane.json:eva-lane-east-edges._ |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva _Used by: steps:middle-pool-sw-steps._ |
-| [IMG_2336.jpg](../../public/photos-ref/IMG_2336.jpg) | ground | layout, planting | Calle Eva east of the middle pool: tiled path between lawns **Looks at:** Eva tiled lane beside lawns, clipped trees and dark lantern posts. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp **Looks at:** Eva lawn beside clipped round tree and lantern post. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
-| [IMG_2338.jpg](../../public/photos-ref/IMG_2338.jpg) | ground | planting, facades | Calle Eva: brown door, yellow-flowered shrub, lawn **Looks at:** Brown Eva frontage door with yellow-flowered shrub beside lawn. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
-| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** middle pool east gateway at the end of Calle Eva. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. |
 | [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | ground | layout, facades, planting, materials | Inner walk-through south end: lantern arch, monstera planting and inset tiles **Note:** Pin is +/-4.6 m in the block between Dali and the middle pool; area attribution (eva/south end) is inferred from the continuing bearing toward the Eva corner. |
-| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Note:** Pin is at the Eva/Dali junction. |
-| [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | ground | layout, planting, facades, materials | Calle Eva west footpath looking east between white houses and a planted bed |
 | [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
-| [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | ground | layout, planting, materials | Eva tiled footpath beside lawn with magnolia and lamp post |
-| [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | ground | layout, materials, planting | Long tiled path to an arched iron gate **Note:** Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW toward a white gateway (possibly the middle pool east gateway, not confirmed). |
 | [IMG_2547.jpg](../../public/photos-ref/IMG_2547.jpg) | ground | layout, facades, materials | Inner walk-through covered section: double doors, pebble mat and tile inset floor **Note:** Pin +/-4.5 m in the block between Dali and the middle pool; exit toward Eva is inferred from the bearing, not seen. |
 | [IMG_2548.jpg](../../public/photos-ref/IMG_2548.jpg) | ground | layout, materials, facades | Covered tiled passage off Calle Eva with brown double door and potted trees **Note:** Looks like the same type of passage as IMG_2249/2250 (also off Calle Eva). Pin is inside the block, so which passage it is cannot be confirmed from the picture; heading 147 runs towards Calle Eva. |
-| [IMG_2549.jpg](../../public/photos-ref/IMG_2549.jpg) | ground | layout, materials, planting | Calle Eva: lane between a white wall and planted beds, towards the middle pool |
 | [IMG_2550.jpg](../../public/photos-ref/IMG_2550.jpg) | ground | facades, materials, planting | Arched timber double gate in a white wall, Calle Eva/Dali corner **Looks at:** Arched brown timber double gate in white wall. **Note:** Which house this gate belongs to is not established; looksAt is about 4 m along the heading from the pin and is approximate. |
-| [IMG_2552.jpg](../../public/photos-ref/IMG_2552.jpg) | ground | layout, materials, levels | Curved kerbed footpath meeting the Dali car park aisle |
-| [IMG_2676.jpg](../../public/photos-ref/IMG_2676.jpg) | ground | layout, materials, planting | Terracotta path between hedge and lawn at the Teodoro Rojo end of Calle Eva **Note:** Pin is at the NE corner by Teodoro Rojo; view runs SW along the path past the lawn toward the middle pool entrance gateway. |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
 | [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | ground | planting, facades | Magnolia and clipped hedge in front of a white house **Note:** Pin on Calle Teodoro Rojo near its junction with Eva; the house is across the lawn to the north. |

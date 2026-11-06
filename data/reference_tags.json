@@ -2503,7 +2503,12 @@
    "materials",
    "planting"
   ],
-  "title": "Calle Eva: lane between a white wall and planted beds, towards the middle pool"
+  "title": "Calle Eva: lane between a white wall and planted beds, towards the middle pool",
+  "looksAt": [
+   -154.2,
+   111.7
+  ],
+  "subject": "Eva west stretch looking south-west between a white wall and a raised planted bed"
  },
  "IMG_2559.jpg": {
   "shows": [
@@ -3538,7 +3543,12 @@
    "materials",
    "planting"
   ],
-  "note": "Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW toward a white gateway (possibly the middle pool east gateway, not confirmed)."
+  "note": "Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW along Eva to the middle pool east gateway (same gateway, notice boards and espaliered bougainvillea wall as IMG_2677 and IMG_2340).",
+  "looksAt": [
+   -107.3,
+   78.6
+  ],
+  "subject": "Eva tiled lane looking south-west to the middle pool east gateway: white rounded kerb and hedge on the left, lawn on the right"
  },
  "IMG_2505.jpg": {
   "title": "Middle pool lawn: flagstone path, clipped hedge and glass pool fence",
@@ -4028,7 +4038,12 @@
    "signage",
    "planting"
   ],
-  "note": "Pin is at the Eva/Dali junction."
+  "note": "Pin is at the Eva/Dali junction.",
+  "looksAt": [
+   -161.5,
+   116.1
+  ],
+  "subject": "Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right"
  },
  "IMG_2552.jpg": {
   "title": "Curved kerbed footpath meeting the Dali car park aisle",
@@ -4041,7 +4056,12 @@
    "layout",
    "materials",
    "levels"
-  ]
+  ],
+  "looksAt": [
+   -168.0,
+   120.0
+  ],
+  "subject": "Eva west end: the tiled path curving onto the Dali footpath between white kerbs, slot drain, lawn and lantern"
  },
  "IMG_2553.jpg": {
   "title": "Calle Eva west footpath looking east between white houses and a planted bed",
@@ -4054,7 +4074,12 @@
    "planting",
    "facades",
    "materials"
-  ]
+  ],
+  "looksAt": [
+   -161.4,
+   116.0
+  ],
+  "subject": "Eva west stretch looking north-east from the Dali end: kerbed lawn left, kerbed planted bed right"
  },
  "IMG_2554.jpg": {
   "title": "Dali car park looking north with CCTV lamp post and parked cars",
@@ -5721,7 +5746,12 @@
    "materials",
    "planting"
   ],
-  "note": "Pin is at the NE corner by Teodoro Rojo; view runs SW along the path past the lawn toward the middle pool entrance gateway."
+  "note": "Pin is at the NE corner by Teodoro Rojo; view runs SW along the path past the lawn toward the middle pool entrance gateway.",
+  "looksAt": [
+   -106.7,
+   78.2
+  ],
+  "subject": "Eva tiled lane looking south-west: grey aggregate margins, white raised kerb and hedge on the left, lawn on the right"
  },
  "IMG_2677.jpg": {
   "title": "Calle Eva path to the middle pool east gateway with bougainvillea and house beyond",
@@ -5738,10 +5768,10 @@
    "materials"
   ],
   "looksAt": [
-   -113,
-   79
+   -110.5,
+   80.4
   ],
-  "subject": "middle pool east gateway at the end of Calle Eva",
+  "subject": "Eva tiled lane at the middle pool east gateway: kerbed bed on the left, lawn with a tiled spur and clipped hedge on the right",
   "note": "Same gateway as IMG_2340/2244 and the standing point of IMG_2678."
  },
  "IMG_2678.jpg": {

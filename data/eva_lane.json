@@ -1,0 +1,428 @@
+{
+ "id": "eva-lane",
+ "name": "Calle Eva · tiled lane, aggregate margins, white kerbs, beds and lawn edges",
+ "evidence": [
+  "IMG_2336.jpg",
+  "IMG_2504.jpg",
+  "IMG_2677.jpg",
+  "IMG_2676.jpg",
+  "IMG_2503.jpg",
+  "IMG_2553.jpg",
+  "IMG_2551.jpg",
+  "IMG_2552.jpg",
+  "IMG_2549.jpg"
+ ],
+ "trust": "Photographed along the two stretches: four large square terracotta tiles across with pale grey joints, a grey exposed-aggregate margin either side, white rounded kerbs where a bed or lawn is kerbed, flush lawn where it is not (IMG_2336, IMG_2504, IMG_2676, IMG_2677, IMG_2549, IMG_2551, IMG_2552, IMG_2553). Widths are estimates: 0.40 m tiles with 0.03 m joints (four across, 1.72 m), 0.14 m margins and 0.12 m kerbs read from the tile proportions, not surveyed. Bed depths and lawn extents are estimates bounded by the registry fronts. The mapped Eva centreline and its walking width are unchanged.",
+ "about": "s is metres along a run's axis from its first point; c is metres across it, positive to the right (south-east on both runs). Every surface is laid on the surveyed ground (siteY).",
+ "tile": {
+  "size": 0.4,
+  "joint": 0.03,
+  "columns": 4
+ },
+ "bandHalf": 0.86,
+ "margin": 0.14,
+ "kerb": {
+  "width": 0.12,
+  "height": 0.12
+ },
+ "levels": {
+  "paving": 0.09,
+  "margin": 0.085,
+  "lawn": 0.075,
+  "soil": 0.12,
+  "planterHeight": 0.35
+ },
+ "runs": [
+  {
+   "id": "eva-lane-east",
+   "name": "Calle Eva east: gateway to the Teodoro Rojo junction",
+   "axis": [
+    [
+     -114.401,
+     82.731
+    ],
+    [
+     -100.968,
+     74.858
+    ]
+   ],
+   "axisBasis": "The mapped Eva centreline from the north-east face of the middle pool east gateway (the opening is centred on it, as IMG_2677, IMG_2504 and IMG_2676 show the path centred on the opening) to the edge of the Calle Teodoro Rojo ribbon.",
+   "evidence": [
+    "IMG_2336.jpg",
+    "IMG_2504.jpg",
+    "IMG_2677.jpg",
+    "IMG_2676.jpg",
+    "IMG_2503.jpg"
+   ],
+   "clip": [
+    -1.0,
+    1.0
+   ],
+   "kerbs": [
+    {
+     "id": "eva-east-bed-kerb",
+     "line": [
+      [
+       0.12,
+       1.06
+      ],
+      [
+       15.21,
+       1.06
+      ],
+      [
+       15.21,
+       1.95
+      ]
+     ],
+     "evidence": [
+      "IMG_2504.jpg",
+      "IMG_2677.jpg",
+      "IMG_2676.jpg",
+      "IMG_2336.jpg"
+     ]
+    },
+    {
+     "id": "eva-east-ne-bed-kerb",
+     "line": [
+      [
+       15.57,
+       -1.06
+      ],
+      [
+       14.23,
+       -1.06
+      ],
+      [
+       14.23,
+       -2.6
+      ]
+     ],
+     "evidence": [
+      "IMG_2503.jpg",
+      "IMG_2676.jpg"
+     ]
+    }
+   ],
+   "beds": [
+    {
+     "id": "eva-east-house-bed",
+     "s": [
+      0.12,
+      15.15
+     ],
+     "c": [
+      1.12,
+      1.95
+     ],
+     "evidence": [
+      "IMG_2504.jpg",
+      "IMG_2677.jpg",
+      "IMG_2676.jpg"
+     ],
+     "hedge": {
+      "s": [
+       0.45,
+       14.85
+      ],
+      "c": 1.45,
+      "height": 0.85,
+      "depth": 0.5,
+      "kind": "clipped"
+     }
+    },
+    {
+     "id": "eva-east-ne-bed",
+     "s": [
+      14.29,
+      15.57
+     ],
+     "c": [
+      -2.6,
+      -1.12
+     ],
+     "evidence": [
+      "IMG_2503.jpg",
+      "IMG_2676.jpg"
+     ],
+     "hedge": {
+      "s": [
+       14.45,
+       15.45
+      ],
+      "c": -2.0,
+      "height": 1.3,
+      "depth": 0.9,
+      "kind": "oleander"
+     }
+    }
+   ],
+   "lawns": [
+    {
+     "id": "eva-east-lawn-edge-a",
+     "s": [
+      0.12,
+      3.87
+     ],
+     "c": [
+      -2.0,
+      -1.0
+     ]
+    },
+    {
+     "id": "eva-east-lawn-edge-b",
+     "s": [
+      4.73,
+      14.23
+     ],
+     "c": [
+      -2.0,
+      -1.0
+     ]
+    }
+   ],
+   "spurs": [
+    {
+     "id": "eva-east-door-spur",
+     "s": [
+      3.87,
+      4.73
+     ],
+     "c": [
+      -4.45,
+      -1.0
+     ],
+     "evidence": [
+      "IMG_2677.jpg",
+      "IMG_2504.jpg",
+      "IMG_2338.jpg"
+     ],
+     "note": "Two tiles wide towards the brown door north-west of the lane; it stops at the end of the photographed lawn, not at a traced door."
+    }
+   ],
+   "planters": [],
+   "drains": [],
+   "lamps": [],
+   "plants": []
+  },
+  {
+   "id": "eva-lane-west",
+   "name": "Calle Eva west: Dali car park to the middle pool corner",
+   "axis": [
+    [
+     -166.987,
+     121.602
+    ],
+    [
+     -166.266,
+     120.402
+    ],
+    [
+     -166.133,
+     120.199
+    ],
+    [
+     -165.983,
+     120.008
+    ],
+    [
+     -165.819,
+     119.829
+    ],
+    [
+     -165.641,
+     119.664
+    ],
+    [
+     -165.45,
+     119.514
+    ],
+    [
+     -165.247,
+     119.38
+    ],
+    [
+     -139.549,
+     103.835
+    ]
+   ],
+   "axisBasis": "0.9 m south-east of the mapped Eva centreline, so the photographed band and the raised planter fit between the registry fronts (north-west house 0.6 m from the mapped line, south-east house 1.9 m); a 3 m fillet into the Dali stub as IMG_2552 shows the path curving, stopping at the edge of the mapped Dali parking bay. It ends where the photographed stretch ends; the mapped 1.2 m ribbon carries on from there.",
+   "evidence": [
+    "IMG_2553.jpg",
+    "IMG_2551.jpg",
+    "IMG_2552.jpg",
+    "IMG_2549.jpg"
+   ],
+   "clip": [
+    -1.7,
+    1.0
+   ],
+   "kerbs": [
+    {
+     "id": "eva-west-lawn-kerb",
+     "line": [
+      [
+       0,
+       -1.06
+      ],
+      [
+       11.49,
+       -1.06
+      ],
+      [
+       11.49,
+       -3.6
+      ]
+     ],
+     "evidence": [
+      "IMG_2553.jpg",
+      "IMG_2551.jpg",
+      "IMG_2552.jpg"
+     ]
+    },
+    {
+     "id": "eva-west-bed-kerb",
+     "line": [
+      [
+       0,
+       1.06
+      ],
+      [
+       24.05,
+       1.06
+      ]
+     ],
+     "evidence": [
+      "IMG_2553.jpg",
+      "IMG_2551.jpg",
+      "IMG_2552.jpg",
+      "IMG_2549.jpg"
+     ]
+    }
+   ],
+   "beds": [
+    {
+     "id": "eva-west-bed-dali",
+     "s": [
+      0,
+      15.19
+     ],
+     "c": [
+      1.12,
+      3.6
+     ],
+     "evidence": [
+      "IMG_2553.jpg",
+      "IMG_2551.jpg",
+      "IMG_2552.jpg"
+     ],
+     "hedge": {
+      "s": [
+       0.3,
+       15.1
+      ],
+      "c": 1.3,
+      "height": 0.35,
+      "depth": 0.3,
+      "kind": "clipped"
+     }
+    },
+    {
+     "id": "eva-west-bed-recess",
+     "s": [
+      15.19,
+      24.05
+     ],
+     "c": [
+      1.12,
+      4.7
+     ],
+     "evidence": [
+      "IMG_2549.jpg"
+     ],
+     "hedge": {
+      "s": [
+       15.25,
+       23.9
+      ],
+      "c": 1.3,
+      "height": 0.35,
+      "depth": 0.3,
+      "kind": "clipped"
+     }
+    }
+   ],
+   "lawns": [
+    {
+     "id": "eva-west-lawn-island",
+     "s": [
+      1.4,
+      11.43
+     ],
+     "c": [
+      -3.6,
+      -1.12
+     ],
+     "evidence": [
+      "IMG_2553.jpg",
+      "IMG_2551.jpg",
+      "IMG_2552.jpg"
+     ]
+    }
+   ],
+   "spurs": [],
+   "planters": [
+    {
+     "id": "eva-west-raised-planter",
+     "s": [
+      16.45,
+      29.4
+     ],
+     "c": [
+      -1.42,
+      -1.0
+     ],
+     "wall": 0.08,
+     "evidence": [
+      "IMG_2549.jpg"
+     ],
+     "note": "Raised white planter against the north-west house; its plants fall inside the protected route and are left out."
+    }
+   ],
+   "drains": [
+    {
+     "id": "eva-west-slot-drain",
+     "s": 0.45,
+     "width": 0.14,
+     "evidence": [
+      "IMG_2552.jpg"
+     ]
+    }
+   ],
+   "lamps": [
+    {
+     "id": "eva-west-lantern",
+     "s": 1.6,
+     "c": -1.8,
+     "evidence": [
+      "IMG_2552.jpg",
+      "IMG_2551.jpg"
+     ]
+    }
+   ],
+   "plants": [
+    {
+     "id": "eva-west-strelitzia",
+     "kind": "bird_of_paradise",
+     "s": 10.4,
+     "c": -3.0,
+     "evidence": [
+      "IMG_2551.jpg",
+      "IMG_2553.jpg"
+     ],
+     "scale": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -103,18 +103,19 @@
    ]
   ],
   "tree": [
-   -109.787,
-   76.143
+   -103.779,
+   73.029
   ],
   "lamp": [
-   -108.058,
-   76.521
+   -102.556,
+   74.225
   ],
   "evidence": [
    "IMG_2336.jpg",
    "IMG_2337.jpg",
-   "IMG_2338.jpg"
+   "IMG_2338.jpg",
+   "IMG_2503.jpg"
   ],
-  "trust": "Photographs support the lawn beside Eva, a round clipped tree and a slender dark lantern post. This is a bounded visible lawn fragment, not a traced private enclosure; extent, tree crown and post positions are estimated relative to the protected lane. Brown doors and yellow shrubs remain in frontage-specific work."
+  "trust": "Photographs support the lawn beside Eva, a round clipped tree and a slender dark lantern post. This is a bounded visible lawn fragment, not a traced private enclosure; extent, tree crown and post positions are estimated relative to the protected lane. Brown doors and yellow shrubs remain in frontage-specific work. Moved 2026-11-06 (eva-lane-details): IMG_2336 puts the one lantern about 9-10 m (16 tile rows) ahead of a camera at the start of the lawn, and IMG_2503 shows that lantern and the round clipped tree just behind it at the kerbed bed at the north-east end of the lawn, by the Teodoro Rojo junction; neither photo shows a second lantern or tree further south-west. New positions are photo-content estimates (about 1 m), not solved-camera measurements."
  }
 }
