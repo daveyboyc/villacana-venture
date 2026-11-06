@@ -166,12 +166,12 @@ function tileTexture(): THREE.CanvasTexture {
     g.fillStyle = "#8e877d"; g.fillRect(0, 0, size, size);
     for (let i = 0; i < 4; i++) for (let j = 0; j < 4; j++) {
       const k = i * 4 + j, x = i * pitch + joint / 2, y = j * pitch + joint / 2, w = pitch - joint;
-      const r = 138 + hash(k) * 22, gg = 86 + hash(k + 40) * 14, b = 72 + hash(k + 80) * 12;
+      const r = 150 + hash(k) * 20, gg = 104 + hash(k + 40) * 14, b = 82 + hash(k + 80) * 10;
       g.fillStyle = `rgb(${r | 0},${gg | 0},${b | 0})`; g.fillRect(x, y, w, w);
       for (let d = 0; d < 160; d++) {
-        const px = x + hash(k * 999 + d) * w, py = y + hash(k * 777 + d * 3) * w, a = .03 + hash(d + k) * .05;
+        const px = x + hash(k * 999 + d) * w, py = y + hash(k * 777 + d * 3) * w, a = .015 + hash(d + k) * .03;
         g.fillStyle = hash(d * 7 + k) > .5 ? `rgba(240,190,160,${a})` : `rgba(90,40,25,${a})`;
-        g.beginPath(); g.arc(px, py, 2 + hash(d * 13 + k) * 7, 0, Math.PI * 2); g.fill();
+        g.beginPath(); g.arc(px, py, 1 + hash(d * 13 + k) * 3, 0, Math.PI * 2); g.fill();
       }
     }
   });

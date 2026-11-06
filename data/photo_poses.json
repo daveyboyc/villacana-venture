@@ -3301,15 +3301,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -146.91,
+    "x": -143.83,
     "y": 1.6,
-    "z": 108.29,
+    "z": 106.42,
     "yaw": 238.8,
     "pitch": -5.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 4.4 m to the side, within its ±3.8 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+   "initialBasis": "photo content (eva-lane-details): the south-east house wall runs right beside the camera before the bed opens up, so the camera stands on the path about 26 m from the Dali end (registry front ends at 22.3 m), 3.6 m further along than the pin and within its ±3.8 m; facing along the lane; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
   },
   "IMG_2503.jpg": {
    "image": [
