@@ -342,6 +342,22 @@
   "elena_walkway.json:elena-walkway-wall-details": {
    "level": "estimated",
    "why": "Signs, hatch, brown double doors and lantern seen in IMG_2518/2689/2691/2519; their positions along the walls are read from photo perspective and estimated."
+  },
+  "eva_lane.json:eva-lane-east": {
+   "level": "photographed",
+   "why": "Four tile columns, grey aggregate margins and the path centred on the east gateway are clear in IMG_2504, IMG_2677, IMG_2676 and IMG_2336; widths read from the tile proportions."
+  },
+  "eva_lane.json:eva-lane-east-edges": {
+   "level": "estimated",
+   "why": "Kerbed bed against the house, flush lawn, door spur and the kerbed bed at the north-east end are photographed; bed depth, spur length and lawn edges estimated."
+  },
+  "eva_lane.json:eva-lane-west": {
+   "level": "estimated",
+   "why": "Tiles, margins and the curve onto the Dali car park seen in IMG_2549, IMG_2551, IMG_2552 and IMG_2553; the line is set 0.9 m off the mapped centreline to fit between the registry fronts, not measured."
+  },
+  "eva_lane.json:eva-lane-west-edges": {
+   "level": "estimated",
+   "why": "Kerbed lawn island, kerbed beds and the raised planter are photographed; their depths and ends are estimated against the registry fronts."
   }
  },
  "gaps": [
@@ -531,6 +547,33 @@
     "IMG_2557.jpg"
    ],
    "why": "Same passage family as the Silvia passages, seen from a pin inside the block (+-4.5 m); which passage and street is not established. Not modelled."
+  },
+  {
+   "id": "gap:eva-west-planter-plants",
+   "name": "Plants in the raised planter on Calle Eva west",
+   "at": [
+    -148.7,
+    108.0
+   ],
+   "photos": [
+    "IMG_2549.jpg"
+   ],
+   "why": "The planter is built, but its shrubs and flowers sit inside the protected walking route (the mapped Eva line runs along the planter), so the Details guard leaves them out."
+  },
+  {
+   "id": "gap:eva-wall-climbers",
+   "name": "Climbers and shrubs against the house walls along Calle Eva",
+   "at": [
+    -108.0,
+    81.5
+   ],
+   "photos": [
+    "IMG_2504.jpg",
+    "IMG_2677.jpg",
+    "IMG_2549.jpg",
+    "IMG_2553.jpg"
+   ],
+   "why": "Jasmine, bougainvillea and tall shrubs grow up the house walls behind the kerbed beds; only the clipped hedges in the beds are modelled."
   }
  ]
 }

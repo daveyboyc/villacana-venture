@@ -351,6 +351,28 @@ const path = require("node:path");
         const ring=laneGrilleRing(o);if(!ring.every(p=>routeClearance(routes,...p,0)))throw Error('Projecting grille crosses route');
       }
     }
+    // Calle Eva as photographed: tiled band, margins, kerbs, beds and lawn edges on map and scene; Details guarded; flush with the walk.
+    {
+      const {evaLane,evaLaneSurfaces,outsideEvaLane,evaRect,addEvaLane}=await import('/src/eva-lane.ts');
+      for(const surface of evaLaneSurfaces())if(!document.querySelector(`[data-eva-lane-id="${surface.id}"]`))throw Error('Eva lane surface missing from map: '+surface.id);
+      const layout=new THREE.Scene();layout.userData.layoutOnly=true;addEvaLane(layout);layout.updateMatrixWorld(true);
+      if(layout.getObjectByName(evaLane.id+'-details'))throw Error('Eva lane planting leaked into Layout');
+      const routes=protectedRoutes(s.boundaryReference),details=new THREE.Scene();details.userData.decorationClearance=(x,z,r)=>routeClearance(routes,x,z,r);addEvaLane(details);details.updateMatrixWorld(true);
+      for(const run of evaLane.runs){
+        if(!details.getObjectByName(run.id+'-paving'))throw Error('Eva paving missing: '+run.id);
+        const patch=evaRect(run,6,7,-.3,.3),c=patch.reduce((a,p)=>[a[0]+p[0]/patch.length,a[1]+p[1]/patch.length],[0,0]);
+        if(outsideEvaLane(patch).length)throw Error('Generic ribbon still covers the photographed Eva lane: '+run.id);
+        const hit=new THREE.Raycaster(new THREE.Vector3(c[0],6,c[1]),new THREE.Vector3(0,-1,0)).intersectObjects(details.children,true).find(h=>h.object.name===run.id+'-paving');
+        if(!hit||Math.abs(hit.point.y-world.groundHeight(...c))>.05)throw Error('Eva paving is not a flush visual ground layer: '+run.id);
+      }
+      let hedges=0;const corner=new THREE.Vector3();
+      details.traverse(m=>{
+        if(!m.isMesh||!m.name.endsWith('-hedge'))return;hedges++;
+        const g=m.geometry.parameters;for(const sx of [-1,1])for(const sz of [-1,1]){corner.set(sx*g.width/2,0,sz*g.depth/2).applyMatrix4(m.matrixWorld);if(!routeClearance(routes,corner.x,corner.z,0))throw Error('Eva hedge footprint blocks a route: '+m.name);}
+      });
+      if(hedges<20)throw Error('Eva bed hedges are missing');
+      details.traverse(mesh=>{if(!mesh.isInstancedMesh)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),rot=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,rot,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error('Eva plant footprint blocks a route');}});
+    }
     {
       const {addSouthBenchPlanting}=await import('/src/middle-south-planting.ts');
       const scene=new THREE.Scene();scene.userData.protectedRoutes=routes;

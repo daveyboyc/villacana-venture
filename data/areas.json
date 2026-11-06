@@ -405,21 +405,27 @@
    "docs": [
     "docs/STREET_LAYOUT.md",
     "docs/MIDDLE_POOL.md",
-    "docs/EVA_WALLED_LAWN.md"
+    "docs/EVA_WALLED_LAWN.md",
+    "docs/EVA_LANE.md"
    ],
    "data": [
     "data/street_layout.json",
     "data/middle_pool.json",
-    "data/eva_walled_lawn.json"
+    "data/eva_walled_lawn.json",
+    "data/eva_lane.json"
    ],
    "src": [
     "src/middle-pool.ts",
-    "src/eva-walled-lawn.ts"
+    "src/eva-walled-lawn.ts",
+    "src/eva-lane.ts"
    ],
    "notes": [
     "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.",
     "Calle Eva ends at the middle pool east gateway (built 2026-10-14, docs/MIDDLE_POOL.md), level with the corner of the house on its south-east side; the lawn wall north-west of it steps down to about 1.45 m.",
-    "IMG_2339 corner reuses the unchanged middle gateway NW wing and adds only a 4.2 m return, with a bounded lawn. Two wall-aligned single planes replace the crossed bougainvillea there; bollard, clipped hedge, nearby rounded tree and lantern are Details-only and route guarded. Lengths, heights and adjacent lawn extent remain estimates; no surveyed enclosure closure or new level change is asserted."
+    "IMG_2339 corner reuses the unchanged middle gateway NW wing and adds only a 4.2 m return, with a bounded lawn. Two wall-aligned single planes replace the crossed bougainvillea there; bollard, clipped hedge, nearby rounded tree and lantern are Details-only and route guarded. Lengths, heights and adjacent lawn extent remain estimates; no surveyed enclosure closure or new level change is asserted.",
+    "Eva lane as photographed (2026-11-06, docs/EVA_LANE.md): four big square terracotta tiles across with pale grey joints (about 1.72 m), a grey exposed-aggregate margin each side, white rounded kerbs where a bed or lawn is kerbed, flush lawn where it is not. The middle pool east gateway opening is centred on the mapped Eva line, and the photos show the path centred on the opening, so the east stretch keeps the mapped line.",
+    "Eva west: the registry house north-west of the lane stands only 0.6 m from the mapped centreline (0.9 m further on), with a raised planter in front of it in IMG_2549, so the photographed tile band is drawn 0.9 m south-east of the mapped line. The walking route still follows the mapped line along the planter face; moving it is walking work and is left open.",
+    "IMG_2336 and IMG_2503 put the one lantern and the round clipped tree on the north-west lawn at its north-east end, in a kerbed bed beside the Teodoro Rojo junction; the eva-walled-lawn lamp and tree were moved there. Open: where the tiled door spur north-west of the lane ends, and what paves the open court at the Teodoro Rojo junction (IMG_2501)."
    ]
   },
   {

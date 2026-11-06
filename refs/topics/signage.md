@@ -14,8 +14,8 @@ Street-name plaques, house numbers and other readable signs.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** Eva tiled lane at the middle pool east gateway: kerbed bed on the left, lawn with a tiled spur and clipped hedge on the right. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
-| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** middle pool east gateway at the end of Calle Eva. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. |
 
 ## South pool
 
@@ -80,7 +80,7 @@ Street-name plaques, house numbers and other readable signs.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Note:** Pin is at the Eva/Dali junction. |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Looks at:** Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right. **Note:** Pin is at the Eva/Dali junction. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 
 ## Loira, Bolivia, Alberto and Isabel
 
@@ -92,9 +92,9 @@ Street-name plaques, house numbers and other readable signs.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** Eva tiled lane at the middle pool east gateway: kerbed bed on the left, lawn with a tiled spur and clipped hedge on the right. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Looks at:** Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right. **Note:** Pin is at the Eva/Dali junction. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. _Used by: middle_pool.json:middle-pool-east-gateway._ |
-| [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** middle pool east gateway at the end of Calle Eva. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. |
-| [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Note:** Pin is at the Eva/Dali junction. |
 | [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo

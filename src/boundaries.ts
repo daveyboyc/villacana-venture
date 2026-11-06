@@ -1,5 +1,6 @@
 import streetDressing from "../data/dali_street.json";
 import {outsideLanePaving} from "./middle-pool-lane-frontages";
+import {outsideEvaLane} from "./eva-lane";
 import {seawardRoadTexture} from "./seaward-paving";
 import {daliBayStripeParts} from "./dali-threshold";
 import {elenaPavingFor,elenaPavingTexture,applyElenaPavingUv} from "./elena-lane-paving";
@@ -46,7 +47,7 @@ export function referenceGroundHeight(reference: BoundaryReference, x: number, z
 export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryReference): void {
   const tiles=surfaceTexture("paving");
   const flat=(ring:Vec2[],color:string,y:number,map?:THREE.Texture,road?:BoundaryReference["roads"][number]) => {
-   for(const part of outsideMiddleSouthForecourt(ring).flatMap(outsideLanePaving)) {
+   for(const part of outsideMiddleSouthForecourt(ring).flatMap(outsideLanePaving).flatMap(outsideEvaLane)) {
     const shape=new THREE.Shape(part.map(([x,z])=>new THREE.Vector2(x,-z)));
     const mesh=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color,map,roughness:1}));
     if(road){applyElenaPavingUv(mesh.geometry,road);mesh.name=elenaPavingFor(road)!.id;mesh.userData.elenaPaving=true;}

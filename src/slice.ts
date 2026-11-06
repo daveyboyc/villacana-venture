@@ -14,6 +14,7 @@ import {paintElenaPaving,elenaSurfaceSamples} from "./elena-lane-paving";
 import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
+import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
@@ -110,6 +111,7 @@ async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   if (skeleton.boundaryReference) lowered = loweredRoads(skeleton.boundaryReference);
   suppressInEvaLawn(skeleton);
+  suppressInEvaLane(skeleton); // the photographed Eva lane, kerbs and beds replace generated walls there
   suppressInMiddlePoolReview(skeleton); // the traced middle pool gateway and planter replace generated walls there
   suppressInRaisedTerraces(skeleton); // traced raised terraces replace generated walls there
   const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
@@ -246,6 +248,7 @@ async function boot(): Promise<void> {
   addElenaEastPatios(scene);
   if(skeleton.boundaryReference)addCervantesEastSouthPatios(scene,skeleton.boundaryReference);
   addEvaLawn(scene);
+  addEvaLane(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addNorthPoolGardenPath(scene);
@@ -881,7 +884,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
         const jz = z + (hash(z, x) - 0.5) * step * 0.9;
         // Nothing grows on the sand.
         if (seaside?.inZone(jx, jz)) continue;
-        if (inMiddlePoolReview(jx, jz) || inEvaLawn(jx, jz)) continue;
+        if (inMiddlePoolReview(jx, jz) || inEvaLawn(jx, jz) || inEvaLane(jx, jz)) continue;
         if (coverAt(jx, jz) === wanted) out.push({ x: jx, y:poolGroundY(jx,jz), z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
       }
     }

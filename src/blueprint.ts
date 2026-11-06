@@ -9,6 +9,7 @@ import {raisedTerraceBlueprint,suppressInRaisedTerraces} from "./raised-terraces
 import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
+import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -80,6 +81,7 @@ function loadEdits(): Edits {
 async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   suppressInEvaLawn(skeleton);
+  suppressInEvaLane(skeleton);
   suppressInMiddlePoolReview(skeleton);
   suppressInRaisedTerraces(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
@@ -170,6 +172,9 @@ async function boot(): Promise<void> {
   for(const ring of middlePoolNorthRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.06,"data-middle-id":"middle-pool-north"}),"Photo-backed north cap, brown-door wall and open pergola; extents estimated");
   mtitled(el("path",{d:path(middlePoolNorthStepRing()),fill:"#fff7e7",stroke:"#84766c","stroke-width":.08,"data-middle-id":middlePoolNorth.steps.id}),middlePoolNorth.steps.trust);
   line(middlePoolNorth.pergola.points as Vec2[],"#8a8172",.1,middlePoolNorth.pergola.id,middlePoolNorth.pergola.trust);
+  // Calle Eva as photographed: tiled band, aggregate margins, white kerbs, beds and lawn edges (data/eva_lane.json).
+  const evaFill={paving:"#c27a5a",margin:"#8f8b84",kerb:"#fffdf5",bed:"#5a4634",lawn:"#6d8a48",planter:"#fffdf5",drain:"#3a1f15"} as const;
+  for(const surface of evaLaneSurfaces())mtitled(el("path",{d:path(surface.ring),fill:evaFill[surface.kind],...(surface.kind==="planter"?{stroke:"#8a8172","stroke-width":.04}:{}),"data-eva-lane-id":surface.id}),`${evaLane.name} · ${surface.text}`);
   for(const ring of evaLawnRings)mtitled(el("path",{d:path(ring),fill:"#668448","data-eva-id":evaLawn.id}),evaLawn.trust);
   for(const ring of evaWallRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.04,"data-eva-id":evaLawn.id}),evaLawn.trust);
   mtitled(el("path",{d:path(middleSouthRect(...middleSouth.forecourt.along as [number,number],...middleSouth.forecourt.across as [number,number])),fill:"#b2a793","data-middle-id":middleSouth.forecourt.id}),middleSouth.forecourt.trust);

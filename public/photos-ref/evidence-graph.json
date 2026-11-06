@@ -6,9 +6,9 @@
   "suggested": 207,
   "needs-review": 178,
   "photos": 387,
-  "features": 395,
-  "photosCitedByModel": 139,
-  "modelFeaturesWithPhotoCitations": 141
+  "features": 399,
+  "photosCitedByModel": 147,
+  "modelFeaturesWithPhotoCitations": 145
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2943,7 +2943,59 @@
     "IMG_2339.jpg",
     "IMG_2336.jpg",
     "IMG_2337.jpg",
-    "IMG_2338.jpg"
+    "IMG_2338.jpg",
+    "IMG_2503.jpg"
+   ]
+  },
+  {
+   "id": "eva_lane.json:eva-lane-east",
+   "name": "Calle Eva east: gateway to the Teodoro Rojo junction · tiled band and aggregate margins",
+   "kind": "reference feature",
+   "source": "photo-supported material and arrangement; widths read from tile proportions; The mapped Eva centreline from the north-east face of the middle pool east gateway (the opening is centred on it, as IMG_2677, IMG_2504 and IMG_2676 show the path centred on the opening) to the edge of the Calle Teodoro Rojo ribbon.",
+   "evidence": [
+    "IMG_2336.jpg",
+    "IMG_2504.jpg",
+    "IMG_2677.jpg",
+    "IMG_2676.jpg",
+    "IMG_2503.jpg"
+   ]
+  },
+  {
+   "id": "eva_lane.json:eva-lane-east-edges",
+   "name": "Calle Eva east: gateway to the Teodoro Rojo junction · kerbs, beds and lawn edges",
+   "kind": "reference feature",
+   "source": "photo-supported kerbs and edge types; bed depths and lawn extents estimated",
+   "evidence": [
+    "IMG_2336.jpg",
+    "IMG_2338.jpg",
+    "IMG_2503.jpg",
+    "IMG_2504.jpg",
+    "IMG_2676.jpg",
+    "IMG_2677.jpg"
+   ]
+  },
+  {
+   "id": "eva_lane.json:eva-lane-west",
+   "name": "Calle Eva west: Dali car park to the middle pool corner · tiled band and aggregate margins",
+   "kind": "reference feature",
+   "source": "photo-supported material and arrangement; widths read from tile proportions; 0.9 m south-east of the mapped Eva centreline, so the photographed band and the raised planter fit between the registry fronts (north-west house 0.6 m from the mapped line, south-east house 1.9 m); a 3 m fillet into the Dali stub as IMG_2552 shows the path curving, stopping at the edge of the mapped Dali parking bay. It ends where the photographed stretch ends; the mapped 1.2 m ribbon carries on from there.",
+   "evidence": [
+    "IMG_2553.jpg",
+    "IMG_2551.jpg",
+    "IMG_2552.jpg",
+    "IMG_2549.jpg"
+   ]
+  },
+  {
+   "id": "eva_lane.json:eva-lane-west-edges",
+   "name": "Calle Eva west: Dali car park to the middle pool corner · kerbs, beds and lawn edges",
+   "kind": "reference feature",
+   "source": "photo-supported kerbs and edge types; bed depths and lawn extents estimated",
+   "evidence": [
+    "IMG_2549.jpg",
+    "IMG_2551.jpg",
+    "IMG_2552.jpg",
+    "IMG_2553.jpg"
    ]
   },
   {
@@ -10101,6 +10153,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2336.jpg",
+   "to": "eva_lane.json:eva-lane-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2336.jpg",
+   "to": "eva_lane.json:eva-lane-east-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2337.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -10156,6 +10220,12 @@
   {
    "from": "photo:IMG_2338.jpg",
    "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2338.jpg",
+   "to": "eva_lane.json:eva-lane-east-edges",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -12839,6 +12909,24 @@
    "angleOffset": 26.4
   },
   {
+   "from": "photo:IMG_2503.jpg",
+   "to": "eva_walled_lawn.json:eva-walled-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2503.jpg",
+   "to": "eva_lane.json:eva-lane-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2503.jpg",
+   "to": "eva_lane.json:eva-lane-east-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2504.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -12849,6 +12937,18 @@
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
    "gap": 1.5
+  },
+  {
+   "from": "photo:IMG_2504.jpg",
+   "to": "eva_lane.json:eva-lane-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2504.jpg",
+   "to": "eva_lane.json:eva-lane-east-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2505.jpg",
@@ -13686,6 +13786,18 @@
    "angleOffset": 25.7
   },
   {
+   "from": "photo:IMG_2549.jpg",
+   "to": "eva_lane.json:eva-lane-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2549.jpg",
+   "to": "eva_lane.json:eva-lane-west-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2550.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -13705,10 +13817,34 @@
    "gap": 1.0
   },
   {
+   "from": "photo:IMG_2551.jpg",
+   "to": "eva_lane.json:eva-lane-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2551.jpg",
+   "to": "eva_lane.json:eva-lane-west-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2552.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
    "gap": 0
+  },
+  {
+   "from": "photo:IMG_2552.jpg",
+   "to": "eva_lane.json:eva-lane-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2552.jpg",
+   "to": "eva_lane.json:eva-lane-west-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2553.jpg",
@@ -13727,6 +13863,18 @@
    "to": "street:eva-west-footpath",
    "relation": "camera-nearby",
    "gap": 3.0
+  },
+  {
+   "from": "photo:IMG_2553.jpg",
+   "to": "eva_lane.json:eva-lane-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2553.jpg",
+   "to": "eva_lane.json:eva-lane-west-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2554.jpg",
@@ -16622,6 +16770,18 @@
    "gap": 0.3
   },
   {
+   "from": "photo:IMG_2676.jpg",
+   "to": "eva_lane.json:eva-lane-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2676.jpg",
+   "to": "eva_lane.json:eva-lane-east-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2677.jpg",
    "to": "street:eva",
    "relation": "camera-nearby",
@@ -16632,6 +16792,18 @@
    "to": "street:teodoro-rojo",
    "relation": "camera-nearby",
    "gap": 4.6
+  },
+  {
+   "from": "photo:IMG_2677.jpg",
+   "to": "eva_lane.json:eva-lane-east",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2677.jpg",
+   "to": "eva_lane.json:eva-lane-east-edges",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2678.jpg",

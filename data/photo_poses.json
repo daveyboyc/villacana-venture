@@ -3174,6 +3174,159 @@
     "f": 1300
    },
    "initialBasis": "hand-set from the photo content in the walkway frame (data/elena_walkway.json); not solved from matched points, so renders only resemble the photo"
+  },
+  "IMG_2336.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -110.14,
+    "y": 1.6,
+    "z": 80.24,
+    "yaw": 59.6,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 0.5 m to the side, within its ±3.3 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2504.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -100.42,
+    "y": 1.6,
+    "z": 74.54,
+    "yaw": 239.6,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 2.1 m to the side, within its ±2.8 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2677.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -104.46,
+    "y": 1.6,
+    "z": 76.91,
+    "yaw": 239.6,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 2.4 m to the side, within its ±2.7 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2676.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -100.63,
+    "y": 1.6,
+    "z": 74.66,
+    "yaw": 239.6,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 0.9 m to the side, within its ±2.9 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2553.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -165.3,
+    "y": 1.6,
+    "z": 119.41,
+    "yaw": 58.8,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 0.3 m to the side, within its ±2.6 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2551.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -155.05,
+    "y": 1.6,
+    "z": 113.21,
+    "yaw": 238.8,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 0.7 m to the side, within its ±3.5 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2552.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -162.42,
+    "y": 1.6,
+    "z": 117.67,
+    "yaw": 238.8,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 0.5 m to the side, within its ±3.1 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2549.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -143.83,
+    "y": 1.6,
+    "z": 106.42,
+    "yaw": 238.8,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): the south-east house wall runs right beside the camera before the bed opens up, so the camera stands on the path about 26 m from the Dali end (registry front ends at 22.3 m), 3.6 m further along than the pin and within its ±3.8 m; facing along the lane; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2503.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -99.15,
+    "y": 1.6,
+    "z": 73.45,
+    "yaw": 274.0,
+    "pitch": -9.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 1.7 m to the side, within its ±2.8 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
   }
  }
 }
