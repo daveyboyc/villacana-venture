@@ -8,7 +8,7 @@ Task `eva-planting-shapes` · area **Calle Eva** · priority P3 · planting
 - `refs/areas/eva.md` and the contact sheet `villacana-reference/contact-sheets/eva.jpg`
 - docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`, `docs/EVA_LANE.md`
 - data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`, `data/eva_lane.json`
-- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`
+- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`, `src/clipped-plants.ts`
 
 ## Photos to build from
 
@@ -20,7 +20,7 @@ Task `eva-planting-shapes` · area **Calle Eva** · priority P3 · planting
 
 ## Build
 
-Replace the box hedges in the Eva beds with clipped, rounded shrub shapes of the photographed heights (low box edging on the west bed, about 0.8 m shrubs on the east bed, the rounded oleander at the north-east end), give the round clipped tree a less spherical crown, and add the jasmine and bougainvillea climbers on the house walls behind the beds as flat wall-aligned planes.
+Replace the box hedges in the Eva beds with clipped, rounded shrub shapes of the photographed heights (low box edging on the west bed, about 0.8 m shrubs on the east bed, the rounded oleander at the north-east end), give the round clipped tree a less spherical crown, add the jasmine and shrubs up the east house wall behind the bed, and roses in the west beds.
 
 ## Do not
 

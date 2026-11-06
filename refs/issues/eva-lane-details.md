@@ -8,7 +8,7 @@ Task `eva-lane-details` · area **Calle Eva** · priority P2 · materials
 - `refs/areas/eva.md` and the contact sheet `villacana-reference/contact-sheets/eva.jpg`
 - docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`, `docs/EVA_LANE.md`
 - data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`, `data/eva_lane.json`
-- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`
+- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`, `src/clipped-plants.ts`
 
 ## Photos to build from
 

@@ -34,7 +34,12 @@ Each run has an axis; `s` is metres along it and `c` metres to its right (south-
 - **Door spur:** the two-tile spur across the east lawn.
 - **Slot drain:** across the west end.
 - **Details only, guarded against the walking routes:**
-  - clipped hedges in the beds, and the oleander at the north-east end
+  - leafy plants from `src/clipped-plants.ts` (task `eva-planting-shapes`): each is a lumpy clipped hull covered in thousands of small leaf cards in several greens, seeded so it is the same on every load
+    - clipped hedge in the east house bed (about 0.85 m)
+    - low box edging (about 0.35 m) with pink-flowering roses behind it in the west beds
+    - a clipped narrow-leaved oleander at the north-east end
+    - jasmine and shrubs up the east house wall, with white flowers
+    - the round clipped tree on the lawn, on a 2 m pale trunk (in `src/eva-walled-lawn.ts`)
   - the west lantern and the strelitzia
 - **Clipping:** the generic ribbon and its white edge are cut out over both runs (`outsideEvaLane`).
   Generated garden walls, gates and clutter inside the dressed area are suppressed.
@@ -68,8 +73,10 @@ they sit inside the route. Moving the route is walking work, which is paused.
   - pins 0.4-3.5 m to the side, within their GPS accuracy
 
   They are photographic diagnostics, not measurements or placement approval.
+- The plants are original illustrative models of the photographed plant types, not scans. Their
+  shapes, leaf counts and flower counts are estimated.
 - Not modelled, and listed under `gaps` in `data/confidence.json`:
-  - climbers and tall shrubs against the house walls
+  - climbers against the west house walls
   - the plants in the west planter
 - The covered passage off Eva remains `gap:eva-covered-passage`.
 - Eva east of the Teodoro Rojo junction has no photos (photo request `eva-east`) and keeps the

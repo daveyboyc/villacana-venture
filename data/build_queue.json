@@ -2735,7 +2735,7 @@
     "IMG_2549.jpg",
     "IMG_2553.jpg"
    ],
-   "build": "Replace the box hedges in the Eva beds with clipped, rounded shrub shapes of the photographed heights (low box edging on the west bed, about 0.8 m shrubs on the east bed, the rounded oleander at the north-east end), give the round clipped tree a less spherical crown, and add the jasmine and bougainvillea climbers on the house walls behind the beds as flat wall-aligned planes.",
+   "build": "Replace the box hedges in the Eva beds with clipped, rounded shrub shapes of the photographed heights (low box edging on the west bed, about 0.8 m shrubs on the east bed, the rounded oleander at the north-east end), give the round clipped tree a less spherical crown, add the jasmine and shrubs up the east house wall behind the bed, and roses in the west beds.",
    "avoid": "Keep every plant footprint clear of the protected routes; do not move the lane, kerbs or beds (eva-lane-details).",
    "accept": [
     "IMG_2503 render no longer shows a cube hedge",
@@ -2743,6 +2743,34 @@
    ],
    "dependsOn": [
     "eva-lane-details"
+   ],
+   "status": "in-progress",
+   "owner": "Claude",
+   "features": [
+    "eva_lane.json:eva-lane-east-edges",
+    "eva_lane.json:eva-lane-west-edges",
+    "eva_walled_lawn.json:eva-walled-lawn"
+   ]
+  },
+  {
+   "id": "eva-west-planting",
+   "area": "eva",
+   "priority": 3,
+   "kind": "planting",
+   "title": "Calle Eva west: climbers on the house walls and the raised planter's plants",
+   "photos": [
+    "IMG_2549.jpg",
+    "IMG_2553.jpg",
+    "IMG_2551.jpg"
+   ],
+   "build": "Grow the bougainvillea and jasmine up the house walls behind the west beds (IMG_2553, IMG_2551) and the shrubs, lilies and pink periwinkle in the raised planter (IMG_2549). The planter's plants sit inside the protected walking route because the mapped Eva line runs along the planter face; they need the route moved onto the photographed path (0.9 m south-east) first, which is walking work.",
+   "avoid": "Do not let plant footprints into a protected route; do not move the lane or planter.",
+   "accept": [
+    "IMG_2549 render shows the planter planted",
+    "West wall climbers cite the photos that show them"
+   ],
+   "dependsOn": [
+    "eva-planting-shapes"
    ],
    "status": "open"
   }

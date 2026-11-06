@@ -4,6 +4,7 @@ import { pointInRing } from "./geom";
 import { surfaceTexture } from "./materials";
 import { addSprites, type SpriteKind } from "./sprites";
 import { refine, siteY } from "./terrain";
+import { clippedHedge, looseShrub, wallClimber } from "./clipped-plants";
 import type { Vec2 } from "./types";
 
 /**
@@ -265,9 +266,18 @@ export function addEvaLane(scene: THREE.Scene): void {
   if (scene.userData.layoutOnly) return;
   const guard = scene.userData.decorationClearance as ((x: number, z: number, radius: number) => boolean) | undefined;
   const clear = (p: Vec2, r: number) => !guard || guard(p[0], p[1], r);
-  const hedgeMat = { clipped: new THREE.MeshStandardMaterial({ color: "#3f6633", map: surfaceTexture("turf"), roughness: 1 }), oleander: new THREE.MeshStandardMaterial({ color: "#35512e", map: surfaceTexture("turf"), roughness: 1 }) };
   const green = new THREE.MeshStandardMaterial({ color: "#203f31", roughness: .7 }), opal = new THREE.MeshStandardMaterial({ color: "#e3dfb8", roughness: .45 });
   const details = new THREE.Group(); details.name = data.id + "-details"; details.userData.noDrape = true;
+  /** Stand a plant built in local x (along) / z (across) at s, c of a run; records its footprint for the route checks. */
+  const place = (plant: THREE.Group, axis: Axis, s0: number, s1: number, c: number, depth: number, name: string, y: number) => {
+    const a = axis.at(s0, c), z = axis.at(s1, c), mid: Vec2 = [(a[0] + z[0]) / 2, (a[1] + z[1]) / 2], ang = Math.atan2(z[1] - a[1], z[0] - a[0]);
+    plant.position.set(mid[0], siteY(...mid) + y, mid[1]); plant.rotation.y = -ang; plant.name = name;
+    const len = Math.hypot(z[0] - a[0], z[1] - a[1]), ux = Math.cos(ang), uz = Math.sin(ang);
+    plant.userData.footprint = [[-1, -1], [1, -1], [1, 1], [-1, 1]].map(([i, k]) => [mid[0] + ux * i * len / 2 - uz * k * depth / 2, mid[1] + uz * i * len / 2 + ux * k * depth / 2]);
+    plant.traverse((o) => { o.userData.noDrape = true; });
+    details.add(plant);
+  };
+  let seed = 101;
   for (const run of data.runs) {
     const axis = axisOf(run);
     for (const b of run.beds) {
@@ -275,11 +285,33 @@ export function addEvaLane(scene: THREE.Scene): void {
       // Pieces no longer than 1.2 m, each guarded with its whole visible footprint.
       const pieces = Math.max(1, Math.ceil((hd.s[1] - hd.s[0]) / 1.2)), step = (hd.s[1] - hd.s[0]) / pieces;
       for (let i = 0; i < pieces; i++) {
-        const a = axis.at(hd.s[0] + i * step, hd.c), z = axis.at(hd.s[0] + (i + 1) * step, hd.c), mid: Vec2 = [(a[0] + z[0]) / 2, (a[1] + z[1]) / 2], len = Math.hypot(z[0] - a[0], z[1] - a[1]);
+        const s0 = hd.s[0] + i * step, s1 = s0 + step, a = axis.at(s0, hd.c), z = axis.at(s1, hd.c), mid: Vec2 = [(a[0] + z[0]) / 2, (a[1] + z[1]) / 2], len = Math.hypot(z[0] - a[0], z[1] - a[1]);
         if (!clear(mid, Math.hypot(len, hd.depth) / 2)) continue;
-        const box = new THREE.Mesh(new THREE.BoxGeometry(len + .02, hd.height, hd.depth), hedgeMat[hd.kind as "clipped" | "oleander"]);
-        box.position.set(mid[0], siteY(...mid) + L.soil + hd.height / 2 - .02, mid[1]); box.rotation.y = -Math.atan2(z[1] - a[1], z[0] - a[0]);
-        box.name = b.id + "-hedge"; box.castShadow = box.receiveShadow = true; details.add(box);
+        const h = hd.height * (0.92 + ((seed * 37) % 17) / 100);
+        const plant = hd.kind === "oleander"
+          ? clippedHedge({ length: len, depth: hd.depth, height: h, seed: seed++, clip: 3.2, density: 520, leaf: "narrow", leafSize: [0.16, 0.045], greens: ["#2f4528", "#3d5733", "#4a6638"], inside: "#1d2c19" })
+          : hd.kind === "edging"
+            ? clippedHedge({ length: len, depth: hd.depth, height: h, seed: seed++, clip: 5.5, leafSize: [0.045, 0.03], greens: ["#45632f", "#557539", "#628143"] })
+            : clippedHedge({ length: len, depth: hd.depth, height: h, seed: seed++, greens: ["#344f2b", "#425f33", "#52713b"] });
+        place(plant, axis, s0, s1, hd.c, hd.depth, b.id + "-hedge", L.soil - .02);
+      }
+    }
+    for (const sh of run.shrubs) for (const [from, to] of sh.s) for (let s = from; s <= to + 1e-6; s += sh.spacing) {
+      const jitter = (((seed * 53) % 11) - 5) * .06, p = axis.at(s + jitter, sh.c);
+      if (!clear(p, .35)) { seed++; continue; }
+      const plant = looseShrub({ width: .6, depth: .55, height: .55 + ((seed * 29) % 7) * .03, seed: seed++, leaf: "small", leafSize: [0.06, 0.04], greens: ["#3f5a30", "#4c6a37", "#5d7a42"], stems: 5, flowers: { count: 14, colour: "#d9547a" } });
+      place(plant, axis, s + jitter - .3, s + jitter + .3, sh.c, .55, sh.id + "-shrub", L.soil - .02);
+    }
+    for (const cl of run.climbers) {
+      // Pieces up to 1.5 m, grown from the wall face back towards the lane; each guarded.
+      const pieces = Math.ceil((cl.s[1] - cl.s[0]) / 1.5), step = (cl.s[1] - cl.s[0]) / pieces;
+      for (let i = 0; i < pieces; i++) {
+        const s0 = cl.s[0] + i * step, s1 = s0 + step, c = cl.wallC - cl.depth / 2, a = axis.at(s0, c), z = axis.at(s1, c), mid: Vec2 = [(a[0] + z[0]) / 2, (a[1] + z[1]) / 2];
+        if (!clear(mid, Math.hypot(Math.hypot(z[0] - a[0], z[1] - a[1]), cl.depth) / 2)) continue;
+        const plant = wallClimber({ length: step, height: cl.height * (0.85 + ((seed * 13) % 9) * .03), depth: cl.depth, seed: seed++, flowers: Math.round(step * 45) });
+        // Local z grows out from the wall: the wall is on the run's right, so turn the climber to face left.
+        const inner = new THREE.Group(); plant.position.set(-step / 2, 0, cl.depth / 2); plant.rotation.y = Math.PI; plant.position.x = step / 2; inner.add(plant);
+        place(inner, axis, s0, s1, c, cl.depth, cl.id + "-climber", L.soil - .02);
       }
     }
     for (const lamp of run.lamps) {
