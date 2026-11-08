@@ -29,8 +29,8 @@ The seafront promenade between the resort's seaward walls and the beach.
 
 ## Coverage
 
-Layout: 50, Levels and slopes: 13, Facades and roofs: 17, Materials: 32, Planting: 18, Signs: 6, Views: 29
-54 reviewed, 0 suggested only by camera position.
+Layout: 57, Levels and slopes: 13, Facades and roofs: 17, Materials: 38, Planting: 20, Signs: 6, Views: 34
+61 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -186,7 +186,11 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2633.jpg](../../public/photos-ref/IMG_2633.jpg) | ground | layout, planting, materials | West paseo bend with agave verge and timber edge |
 | [IMG_2636.jpg](../../public/photos-ref/IMG_2636.jpg) | ground | layout, materials, planting | Paseo and sandstone wall with green shade cloth near Calle Pintor Dali |
 | [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
+| [IMG_2766.jpg](../../public/photos-ref/IMG_2766.jpg) | ground | layout, materials, planting | Painted crossing and blue plumbago at a gated wall |
+| [IMG_2767.jpg](../../public/photos-ref/IMG_2767.jpg) | ground | layout, materials, planting | Painted crossing at the gated wall, looking south-west |
+| [IMG_2769.jpg](../../public/photos-ref/IMG_2769.jpg) | ground | layout, materials, view | Paseo towards Barraka beside the railing |
 | [IMG_2628.jpg](../../public/photos-ref/IMG_2628.jpg) | ground | layout, view | Paseo far north-east of Barraka towards lamp posts and palms |
+| [IMG_2770.jpg](../../public/photos-ref/IMG_2770.jpg) | ground | layout, view | Paseo edge and grass verge towards Barraka |
 | [IMG_2609.jpg](../../public/photos-ref/IMG_2609.jpg) | ground | layout, planting, materials, view | Barraka beach-side lounge garden looking south-west along the paseo **Looks at:** Roped rattan lounge set on the beach-side verge. **Note:** GPS +-12 m puts the pin on the lawn corner; the awnings and deck show the camera stood on Barraka's own terrace near its west corner. looksAt is read by eye from this photo and IMG_2631 (two bearings meet near [12,120]), not measured. _Used by: paseo_details.json:paseo-white-lamp-1, paseo_details.json:paseo-white-lamp-2, paseo_details.json:paseo-white-lamp-3, paseo_details.json:paseo-white-lamp-4, barraka_frontage.json:barraka-lounge-garden, barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2226.jpg](../../public/photos-ref/IMG_2226.jpg) | ground | view, facades, layout, levels | From the beach looking back at the resort frontage **Looks at:** big-pool lawn frontage: white railings, Guillermo gateway at left. **Note:** Read 2026-10-21 at full size. West to east (left to right): corner houses with a white wall and tiled panel, a white round-arched gateway at paseo level (the foot of Calle Guillermo), a short white wall, then white railings along the big-pool lawn up to Barraka's raised deck at right; the restaurant's blue awnings behind. The lawn and the gateway's foot are about level with the paseo. Built as data/seafront_fence.json. _Used by: beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2631.jpg](../../public/photos-ref/IMG_2631.jpg) | ground | layout, planting, materials, view | Looking south-south-west from Barraka's awning across the roped lounge garden and paseo **Looks at:** Roped rattan lounge set on the beach-side verge. **Note:** looksAt is by eye (meets the IMG_2609 bearing near [12,120]); not measured. _Used by: barraka_frontage.json:barraka-lounge-garden, barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
@@ -210,6 +214,9 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | planting, layout, view, facades | South lawn seaward edge: hedges, palms and mesh fence above the paseo **Note:** Good GPS (+-2 m) at the seaward corner of the south lawn. |
 | [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials, facades | Tiled apron at the foot of Calle Guillermo with curved wall **Note:** Pin accuracy about 4 m; heading 217 points back down the seafront end of Guillermo. |
 | [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. |
+| [IMG_2759.jpg](../../public/photos-ref/IMG_2759.jpg) | ground | layout, materials, view | Lawn path to a white gateway towards the sea **Note:** Pin is vague (+/-18.5 m); the view across the large lawn to the sea gateway places it on the main pool lawn. |
+| [IMG_2761.jpg](../../public/photos-ref/IMG_2761.jpg) | ground | layout, materials, view | Lawn and pink path towards the seafront railing |
+| [IMG_2763.jpg](../../public/photos-ref/IMG_2763.jpg) | ground | layout, materials, view | Pink path curving round a white wall to the sea fence |
 | [IMG_2629.jpg](../../public/photos-ref/IMG_2629.jpg) | ground | layout, view | Beach east of Barraka from the paseo edge |
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |

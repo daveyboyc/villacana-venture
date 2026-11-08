@@ -6056,5 +6056,928 @@
   ],
   "subject": "lane descending toward the seaward end of Calle Guillermo",
   "note": "Matches Calle Guillermo/Jorge lane (see IMG_2488)."
+ },
+ "IMG_2655.jpg": {
+  "title": "Red studded ramp beside tiled steps at a passage mouth",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "levels"
+  ]
+ },
+ "IMG_2659.jpg": {
+  "title": "Narrow tiled lane between a raised planter and a green-screened wall",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2696.jpg": {
+  "title": "Crazy-paving path from the Dali parking into a garden lane",
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2697.jpg": {
+  "title": "Crazy-paving path from the Dali parking, wider view",
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2698.jpg": {
+  "title": "Crazy-paving path and lantern beyond parked cars",
+  "shows": [
+   "dali",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2699.jpg": {
+  "title": "Dali car park aisle with marked bays, looking north",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ]
+ },
+ "IMG_2700.jpg": {
+  "title": "Dali car park aisle with white kerbs and frontage planters",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2701.jpg": {
+  "title": "Small tiled forecourt at the Dali kerb with a lantern",
+  "shows": [
+   "dali",
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2702.jpg": {
+  "title": "Narrow lane between walls with a street plaque and slot drain",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "signage"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2703.jpg": {
+  "title": "Eva west footpath beside the Dali road, looking north",
+  "shows": [
+   "eva",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2704.jpg": {
+  "title": "Eva west footpath with kerbed grass strip, looking north",
+  "shows": [
+   "eva",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2705.jpg": {
+  "title": "Eva west end: lawn island with strelitzia and the curving path",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2706.jpg": {
+  "title": "Eva west stretch from the Dali end, looking north-east",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2707.jpg": {
+  "title": "Eva west stretch: kerbed rose bed and house fronts",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2708.jpg": {
+  "title": "Eva west stretch towards the middle pool gate, slot drain",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "signage"
+  ],
+  "note": "The plaque reads ...NA 23 (as in IMG_2549); the same stretch of Eva west."
+ },
+ "IMG_2710.jpg": {
+  "title": "Middle pool south-west gate at the end of Calle Eva west",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "signage",
+   "planting"
+  ],
+  "note": "Same middle pool south-west gateway as IMG_2333; seen here from Calle Eva west."
+ },
+ "IMG_2711.jpg": {
+  "title": "Through the gate: tiled path into the middle pool garden",
+  "shows": [
+   "middle-pool",
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2712.jpg": {
+  "title": "Where the terracotta path meets the crazy paving",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2713.jpg": {
+  "title": "Crazy-paving path round the glass-fenced middle pool",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2714.jpg": {
+  "title": "Crazy-paving fork and lawn wedge beside the pool fence",
+  "shows": [
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2715.jpg": {
+  "title": "Crazy-paving path to an arched gateway, hedged lawn",
+  "shows": [
+   "middle-pool",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ]
+ },
+ "IMG_2721.jpg": {
+  "title": "Narrow seaward lane with barred windows and tile sills",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ]
+ },
+ "IMG_2723.jpg": {
+  "title": "Espaliered bougainvillea and window grille in a seaward lane",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2724.jpg": {
+  "title": "Espaliered bougainvillea over a white planter",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2727.jpg": {
+  "title": "Calle Eva east: octagonal paving, lantern and tiled bench",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2728.jpg": {
+  "title": "Side garden with brick-edged steps off Calle Eva east",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ]
+ },
+ "IMG_2729.jpg": {
+  "title": "Side garden with brick-edged steps, wider view",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ]
+ },
+ "IMG_2730.jpg": {
+  "title": "White rendered bench with an azulejo panel on Calle Eva east",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "facades",
+   "layout"
+  ]
+ },
+ "IMG_2732.jpg": {
+  "title": "Calle Eva east: bench, lantern and octagonal paving",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2759.jpg": {
+  "title": "Lawn path to a white gateway towards the sea",
+  "shows": [
+   "main-pool",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "Pin is vague (+/-18.5 m); the view across the large lawn to the sea gateway places it on the main pool lawn."
+ },
+ "IMG_2760.jpg": {
+  "title": "Large lawn towards the Barraka building",
+  "shows": [
+   "main-pool",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ],
+  "note": "Pin is vague (+/-10.8 m); the lawn and the Barraka building beyond place it on the main pool lawn."
+ },
+ "IMG_2761.jpg": {
+  "title": "Lawn and pink path towards the seafront railing",
+  "shows": [
+   "main-pool",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ]
+ },
+ "IMG_2762.jpg": {
+  "title": "Strelitzia in a white walled corner on the lawn",
+  "shows": [
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2763.jpg": {
+  "title": "Pink path curving round a white wall to the sea fence",
+  "shows": [
+   "main-pool",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ]
+ },
+ "IMG_2764.jpg": {
+  "title": "Main pool lawn and the wave-roofed building",
+  "shows": [
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ]
+ },
+ "IMG_2765.jpg": {
+  "title": "Main pool lawn and wave-roofed building, second view",
+  "shows": [
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "view"
+  ]
+ },
+ "IMG_2766.jpg": {
+  "title": "Painted crossing and blue plumbago at a gated wall",
+  "shows": [
+   "paseo",
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2767.jpg": {
+  "title": "Painted crossing at the gated wall, looking south-west",
+  "shows": [
+   "paseo",
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2769.jpg": {
+  "title": "Paseo towards Barraka beside the railing",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ]
+ },
+ "IMG_2770.jpg": {
+  "title": "Paseo edge and grass verge towards Barraka",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "view"
+  ]
+ },
+ "IMG_2773.jpg": {
+  "title": "Lane beside the main pool with a lantana planter wall",
+  "shows": [
+   "main-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2774.jpg": {
+  "title": "Octagonal-paved lane beside the lantana planter",
+  "shows": [
+   "main-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "levels"
+  ]
+ },
+ "IMG_2775.jpg": {
+  "title": "Lane down to the pool building with slot drains",
+  "shows": [
+   "main-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ]
+ },
+ "IMG_2776.jpg": {
+  "title": "Steps and ramp at the foot of the lane by the pool building",
+  "shows": [
+   "main-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels"
+  ]
+ },
+ "IMG_2777.jpg": {
+  "title": "Marble-edged steps down to the main pool deck",
+  "shows": [
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials",
+   "layout"
+  ]
+ },
+ "IMG_2778.jpg": {
+  "title": "Strelitzias and clipped hedge at a lane plaque",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "signage"
+  ]
+ },
+ "IMG_2779.jpg": {
+  "title": "Strelitzia clump and clipped shrubs on a lawn",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ]
+ },
+ "IMG_2780.jpg": {
+  "title": "Private lawn and patio of a corner house",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2781.jpg": {
+  "title": "Narrow lane with espaliered bougainvillea and a wall lantern",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "materials"
+  ]
+ },
+ "IMG_2782.jpg": {
+  "title": "Espaliered bougainvillea over a planter, close",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting"
+  ]
+ },
+ "IMG_2783.jpg": {
+  "title": "Narrow lane with wall lantern and planters, looking north",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2784.jpg": {
+  "title": "Tiled lane with drain beside a raised planter",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2785.jpg": {
+  "title": "Calle Eva east: octagonal paving between hedged planters",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2786.jpg": {
+  "title": "Eva east: strelitzia, azulejo bench and lantern",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "facades"
+  ]
+ },
+ "IMG_2787.jpg": {
+  "title": "Eva east: strelitzia and azulejo bench, closer",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ]
+ },
+ "IMG_2788.jpg": {
+  "title": "Eva east looking west: square tiles between hedged planters",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2789.jpg": {
+  "title": "Eva tiled lane beside a hedge planter",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials"
+  ]
+ },
+ "IMG_2790.jpg": {
+  "title": "Eva tiled lane with hedge planter and bougainvillea",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ]
+ },
+ "IMG_2791.jpg": {
+  "title": "Tiled lane with grille windows and a raised planter",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ]
+ },
+ "IMG_2792.jpg": {
+  "title": "Passage mouth with a CALLE ALBERTO 22-40 sign",
+  "shows": [
+   "eva",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "layout"
+  ],
+  "note": "Pin is near Calle Eva east and Teodoro Rojo (+/-4.7 m), but the plaque reads CALLE ALBERTO 22 40 and Calle Alberto is in the north lanes; which passage this is is not established."
+ },
+ "IMG_2794.jpg": {
+  "title": "Lane with bougainvillea and grille windows, looking south-west",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2795.jpg": {
+  "title": "Lane between a white wall and flowering shrubs",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2796.jpg": {
+  "title": "Lane beside a brown door and flowering beds",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2797.jpg": {
+  "title": "Lane through flowering beds towards a white wall",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2798.jpg": {
+  "title": "Lane between flowering hedges, looking south-west",
+  "shows": [
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2799.jpg": {
+  "title": "Lane with a kerbed bed and a CALLE plaque ahead",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "signage"
+  ]
+ },
+ "IMG_2800.jpg": {
+  "title": "Fan palm bed and street plaque at a lane corner",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "signage"
+  ]
+ },
+ "IMG_2801.jpg": {
+  "title": "Lane between a raised planter and a rose bed",
+  "shows": [
+   "elena",
+   "cervantes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2802.jpg": {
+  "title": "Calle Elena north: lane past hedged beds and trees",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2803.jpg": {
+  "title": "Calle Elena north: lane with low hedge beds",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting"
+  ]
+ },
+ "IMG_2804.jpg": {
+  "title": "Calle Elena north: lane with spider-plant beds",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades"
+  ]
+ },
+ "IMG_2805.jpg": {
+  "title": "Calle Elena north: arched porch beside the lane",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades"
+  ]
+ },
+ "IMG_2806.jpg": {
+  "title": "CALLE ELENA 18 36 plaque at the covered walkway mouth",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "facades",
+   "levels"
+  ]
+ },
+ "IMG_2810.jpg": {
+  "title": "Inside the Elena covered walkway: pebble mosaic and inserts",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "facades",
+   "layout"
+  ],
+  "altitudeChecked": true,
+  "note": "Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise)."
+ },
+ "IMG_2823.jpg": {
+  "title": "Octagonal-paved lane with a lantana planter wall",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "view"
+  ]
  }
 }

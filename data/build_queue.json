@@ -2773,6 +2773,33 @@
     "eva-planting-shapes"
    ],
    "status": "open"
+  },
+  {
+   "id": "eva-east-lane",
+   "area": "eva",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Eva east: octagonal paving, azulejo benches, hedged planters and lanterns",
+   "photos": [
+    "IMG_2727.jpg",
+    "IMG_2732.jpg",
+    "IMG_2730.jpg",
+    "IMG_2785.jpg",
+    "IMG_2786.jpg",
+    "IMG_2787.jpg",
+    "IMG_2788.jpg",
+    "IMG_2728.jpg",
+    "IMG_2729.jpg"
+   ],
+   "build": "Extend the photographed Eva lane east of the Teodoro Rojo junction: octagonal terracotta paving with square inserts, cast covers and drains, hedged white planters, white rendered benches with azulejo panels, lanterns and strelitzias on the lawns, and the walled side garden with brick-nosed steps; find where the octagonal paving changes to the square tiles (IMG_2788-2790).",
+   "avoid": "Do not move the mapped Eva line or registry footprints; keep plant footprints out of the routes.",
+   "accept": [
+    "Before/after renders through each photo's camera recorded in data/photo_checks.json"
+   ],
+   "dependsOn": [
+    "eva-lane-details"
+   ],
+   "status": "open"
   }
  ]
 }
