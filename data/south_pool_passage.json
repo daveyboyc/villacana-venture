@@ -1,0 +1,20 @@
+{
+  "id": "south-pool-dali-passage",
+  "name": "Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí",
+  "hostBuilding": "6263501UF1366S_part1",
+  "length": 20.4,
+  "halfWidth": 1.05,
+  "overrun": 1.2,
+  "arch": { "pier": 0.22, "spring": 2.05, "crown": 2.48, "thickness": 0.32 },
+  "evidence": [
+    "IMG_2283.jpg",
+    "IMG_2294.jpg",
+    "IMG_2295.jpg",
+    "IMG_2639.jpg",
+    "IMG_2640.jpg",
+    "IMG_2641.jpg",
+    "IMG_2642.jpg",
+    "IMG_2645.jpg"
+  ],
+  "trust": "The Dalí mouth is the placed arch in door_sills.json (IMG_2283/2294/2295). The passage runs inward along that arch's axis and leaves the east face of 6263501UF1366S_part1 at 20.4 m, where IMG_2645 looks at the iron gate. Clear width 2.1 m carries the built approach. Three bays of equal length: covered, open court (IMG_2640), covered. Flat ceilings, not a vault. Arch spring, crown and the 20.4 m depth are estimates, good to about 2 m; the indoor cameras are not solved. The 67 39 CALLE DE JORGE plaque is on the right wall of the lawn portal (IMG_2641). Spec: docs/reviews/south-pool-dali-passage/."
+}

@@ -16,6 +16,7 @@ import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road"
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
+import {addSouthPoolPassage,inSouthPoolPassage,SOUTH_POOL_HOST,southPoolGroundParts,southPoolUpperParts} from "./south-pool-passage";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
@@ -237,7 +238,7 @@ async function boot(): Promise<void> {
   const player = new Player();
   player.group.userData.noDrape = true;
   scene.add(player.group);
-  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,.6));
+  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && !inSouthPoolPassage(x,z) && canPlaceDecoration(x,z,.6));
   addGardenWalls(scene, walls, skeleton.boundaryReference);
   addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
   // Generated wall details are illustrative; only source-traced walls affect collision.
@@ -252,6 +253,7 @@ async function boot(): Promise<void> {
   addEvaLawn(scene);
   addEvaLane(scene);
   addAlbertoPassage(scene);
+  addSouthPoolPassage(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addNorthPoolGardenPath(scene);
@@ -269,7 +271,7 @@ async function boot(): Promise<void> {
   fenceRings.push(...middleSwRings(),...middleSouthRings(),...middlePoolRings()); // traced middle pool gateway and planter are solid
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
-  const buildingParts=solidBuildings.flatMap(b=>silviaGroundParts(b).map(p=>({...p,id:b.id})));
+  const buildingParts=solidBuildings.flatMap(b=>southPoolGroundParts(b,silviaGroundParts(b)).map(p=>({...p,id:b.id})));
   const solids = new Solids([...buildingParts.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...silviaWallRings(), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : []), ...(seaside && mainPool ? seafrontFenceRings() : [])], Object.fromEntries(buildingParts.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])), Object.fromEntries(buildingParts.map((b,i)=>[i,b.holes])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
@@ -924,6 +926,22 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     // A covered walk-through is only the storey above; the lane runs under it.
     const lift = b.id===SILVIA_HOST?3.35:b.id===SILVIA_CANOPY?2.98:b.passage ? PASSAGE_HEADROOM : 0;
     const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
+    if (b.id === SOUTH_POOL_HOST) {
+      const base: Vec2 = [c.x, c.z];
+      const storey = (part: { ring: Vec2[]; holes: Vec2[][] }, y: number, depth: number, name: string) => {
+        const geo = new THREE.ExtrudeGeometry(shapeOf(part.ring, part.holes), { depth, bevelEnabled: false });
+        geo.rotateX(-Math.PI / 2);
+        const mesh = new THREE.Mesh(geo, [cap, wall]);
+        mesh.position.y = y; mesh.castShadow = mesh.receiveShadow = true;
+        mesh.userData.base = base; mesh.userData.structural = true; mesh.name = name;
+        scene.add(mesh);
+      };
+      for (const part of southPoolGroundParts(b, [{ ring: b.ring, holes: b.holes ?? [] }])) storey(part, 0, floorHeight, "south-pool-passage-ground");
+      for (const part of southPoolUpperParts(b)) storey(part, floorHeight, Math.max(floorHeight, height - floorHeight), "south-pool-passage-upper");
+      const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height+.012,z))),new THREE.LineBasicMaterial({color:"#59564e"}));
+      outline.userData.base=base;scene.add(outline);
+      continue;
+    }
     const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height - lift, bevelEnabled: false });
     geometry.rotateX(-Math.PI / 2);
     const mesh = new THREE.Mesh(geometry, [cap, wall]);
@@ -978,6 +996,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         // A wall shared with the next house has no openings.
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         if (inAlbertoPorch(x + nx * 0.3, z + nz * 0.3)) continue; // the porch's own back wall: plaque and hatch in src/alberto-passage.ts
+        if (inSouthPoolPassage(x, z)) continue; // the Jorge passage mouths keep their own arches
         for (let f = 0; f < b.floors; f++) {
           if(b.id===SILVIA_HOST && f===0 && silviaCloseCamera(x,z))continue;
           if(f===0 && (replacesLaneGroundOpening(x,z)||inElenaWalkway(x,z)))continue; // the walkway's own doors are in src/elena-walkway.ts
@@ -1087,6 +1106,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const x = ax + (bx - ax) * t;
         const z = az + (bz - az) * t;
         if(b.id===SILVIA_HOST && silviaCloseCamera(x,z))continue;
+        if(inSouthPoolPassage(x,z))continue;
         if(inLaneFrontageBand(x,z))continue;
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;

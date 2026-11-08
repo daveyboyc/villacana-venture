@@ -1,6 +1,6 @@
 # South pool: the passage into Pintor Dalí
 
-Evaluated 8 November 2026 from the full photos, the placed Dalí arch, the registry footprint and the Esri aerial (`public/map/ground.jpg`, zoom 19). No geometry was changed. This is the spec for opening the passage. It is not measured placement approval: the lawn mouth is good to about 2 m, and the cameras are not solved.
+Evaluated 8 November 2026 from the full photos, the placed Dalí arch, the registry footprint and the Esri aerial (`public/map/ground.jpg`, zoom 19). The void is now in the model (`data/south_pool_passage.json`, `src/south-pool-passage.ts`): 20.4 m along this axis, 2.1 m clear, flat ceilings, an open middle bay, the iron gate and the plaque. It is not measured placement approval: the lawn mouth is good to about 2 m, and the cameras are not solved.
 
 Map metres: +x east, +z south. Heading 0 points north (−z).
 

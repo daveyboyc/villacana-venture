@@ -11,6 +11,7 @@ import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
 import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
 import {albertoPassage,albertoRect,suppressInAlbertoPorch} from "./alberto-passage";
+import {passageCorridor,SOUTH_POOL_PASSAGE} from "./south-pool-passage";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -425,6 +426,10 @@ async function boot(): Promise<void> {
     }
   };
   paintRoofs(false);
+  const jorge = el("path", { d: path(passageCorridor()), fill: "#c98463", "fill-opacity": 0.72, stroke: "#7a4a2a", "stroke-width": 0.28 });
+  jorge.setAttribute("data-passage-id", SOUTH_POOL_PASSAGE.id);
+  const jorgeTitle = el("title", {}); jorgeTitle.textContent = `${SOUTH_POOL_PASSAGE.name}: ${SOUTH_POOL_PASSAGE.trust}`;
+  jorge.append(jorgeTitle); world.append(jorge);
   const silviaOverlay=el('g',{id:'silvia-main-map',role:'button',tabindex:'0','aria-label':'Walk through the Silvia tunnel (approximate map position)',cursor:'pointer'});
   const silviaTitle=el('title',{});silviaTitle.textContent='Silvia tunnel · approximate position · click to walk';silviaOverlay.append(silviaTitle);
   silviaOverlay.append(el('path',{d:path(silviaFloor),fill:'#cfaa83',stroke:'#a86e38','stroke-width':.2,'stroke-dasharray':'.6 .4'}));

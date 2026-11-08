@@ -7,8 +7,8 @@ Task `south-pool-dali-passage` · area **South pool** · priority P2 · structur
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/south-pool.md` and the contact sheet `villacana-reference/contact-sheets/south-pool.jpg`
 - docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`, `docs/LEVELS.md`, `docs/reviews/south-pool-dali-passage/README.md`
-- data: `data/south_pool.json`, `proposals/south-pool.json`, `data/levels_survey.json`
-- src: `src/south-pool.ts`
+- data: `data/south_pool.json`, `data/south_pool_passage.json`, `proposals/south-pool.json`, `data/levels_survey.json`
+- src: `src/south-pool.ts`, `src/south-pool-passage.ts`
 
 ## Photos to build from
 
@@ -23,7 +23,7 @@ Task `south-pool-dali-passage` · area **South pool** · priority P2 · structur
 
 ## Build
 
-Cut the passage specified in docs/reviews/south-pool-dali-passage/ through 6263501UF1366S_part1, from the placed Dalí arch at (-114.15, 212.45) to the east face at (-96.9, 201.6). Flat ceilings, one open middle court, the photographed double doors, the iron gate and the 67 39 CALLE DE JORGE plaque. Carry the built 2.1 m approach width. Grade it estimated, about 2 m.
+The estimated void is in the model (data/south_pool_passage.json, src/south-pool-passage.ts): from the placed Dalí arch through 6263501UF1366S_part1, 20.4 m to the lawn face, 2.1 m wide, flat ceilings, open middle court, iron gate and plaque. Still open: a solved-camera comparison. The indoor pins are not solved, so this stays in progress until those renders are checked.
 
 ## Do not
 

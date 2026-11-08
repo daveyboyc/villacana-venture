@@ -2587,14 +2587,18 @@
     "IMG_2642.jpg",
     "IMG_2645.jpg"
    ],
-   "build": "Cut the passage specified in docs/reviews/south-pool-dali-passage/ through 6263501UF1366S_part1, from the placed Dalí arch at (-114.15, 212.45) to the east face at (-96.9, 201.6). Flat ceilings, one open middle court, the photographed double doors, the iron gate and the 67 39 CALLE DE JORGE plaque. Carry the built 2.1 m approach width. Grade it estimated, about 2 m.",
+   "build": "The estimated void is in the model (data/south_pool_passage.json, src/south-pool-passage.ts): from the placed Dalí arch through 6263501UF1366S_part1, 20.4 m to the lawn face, 2.1 m wide, flat ceilings, open middle court, iron gate and plaque. Still open: a solved-camera comparison. The indoor pins are not solved, so this stays in progress until those renders are checked.",
    "avoid": "Add the glass pool fence, move the mapped Calle Jorge centreline, or join IMG_2650, IMG_2576 or IMG_2586 to this passage. Copy the Silvia tunnel, its single-door rule or the Jorge radial fanlight, or draw a barrel vault. Place the mouth from the IMG_2639-2641 pins.",
    "accept": [
     "The void follows the stated axis and the feature trust records the 2 m limit",
     "gap:south-block-arcade closes once the void is in the model"
    ],
    "dependsOn": [],
-   "status": "open"
+   "status": "in-progress",
+   "owner": "Cursor",
+   "features": [
+    "south_pool_passage.json:south-pool-dali-passage"
+   ]
   },
   {
    "id": "jorge-south-arcade-identity",

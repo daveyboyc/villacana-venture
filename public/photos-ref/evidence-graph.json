@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 401,
-  "photosCitedByModel": 148,
-  "modelFeaturesWithPhotoCitations": 147
+  "features": 402,
+  "photosCitedByModel": 153,
+  "modelFeaturesWithPhotoCitations": 148
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2996,6 +2996,22 @@
     "IMG_2551.jpg",
     "IMG_2552.jpg",
     "IMG_2553.jpg"
+   ]
+  },
+  {
+   "id": "south_pool_passage.json:south-pool-dali-passage",
+   "name": "Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí",
+   "kind": "reference feature",
+   "source": "The Dalí mouth is the placed arch in door_sills.json (IMG_2283/2294/2295). The passage runs inward along that arch's axis and leaves the east face of 6263501UF1366S_part1 at 20.4 m, where IMG_2645 looks at the iron gate. Clear width 2.1 m carries the built approach. Three bays of equal length: covered, open court (IMG_2640), covered. Flat ceilings, not a vault. Arch spring, crown and the 20.4 m depth are estimates, good to about 2 m; the indoor cameras are not solved. The 67 39 CALLE DE JORGE plaque is on the right wall of the lawn portal (IMG_2641). Spec: docs/reviews/south-pool-dali-passage/.",
+   "evidence": [
+    "IMG_2283.jpg",
+    "IMG_2294.jpg",
+    "IMG_2295.jpg",
+    "IMG_2639.jpg",
+    "IMG_2640.jpg",
+    "IMG_2641.jpg",
+    "IMG_2642.jpg",
+    "IMG_2645.jpg"
    ]
   },
   {
@@ -9662,6 +9678,12 @@
   },
   {
    "from": "photo:IMG_2283.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2283.jpg",
    "to": "door_sills.json:dali-south-arch-approach",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -10038,6 +10060,12 @@
   },
   {
    "from": "photo:IMG_2294.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2294.jpg",
    "to": "door_sills.json:dali-south-arch-approach",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -10060,6 +10088,12 @@
    "relation": "possibly-in-view",
    "distance": 19.5,
    "angleOffset": 15.1
+  },
+  {
+   "from": "photo:IMG_2295.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2295.jpg",
@@ -16525,6 +16559,12 @@
    "gap": 13.5
   },
   {
+   "from": "photo:IMG_2639.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2640.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -16549,10 +16589,22 @@
    "gap": 24.7
   },
   {
+   "from": "photo:IMG_2640.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2641.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
    "gap": 12.3
+  },
+  {
+   "from": "photo:IMG_2641.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2642.jpg",
@@ -16565,6 +16617,12 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 21.5
+  },
+  {
+   "from": "photo:IMG_2642.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2643.jpg",
@@ -16598,6 +16656,12 @@
    "relation": "possibly-in-view",
    "distance": 34.8,
    "angleOffset": 5.5
+  },
+  {
+   "from": "photo:IMG_2645.jpg",
+   "to": "south_pool_passage.json:south-pool-dali-passage",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2646.jpg",

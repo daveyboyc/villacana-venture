@@ -9,7 +9,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 - The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.
 - The aisle fence is a white curb, a concrete plinth and rusty chain-link, with a clipped hedge outside it (IMG_2269, 2270, 2277, 2278). Black house-side lanterns repeat along the parking (IMG_2269, 2270, 2276, 2278, 2279, 2280); their stations are estimated. Still open: each house's arches, grilles and balconies, the palms and bougainvillea, and the modern lamp at the seaward turning area.
 - IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.
-- Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is the Calle de Jorge 39-67 arcade onto the south pool lawn and is not opened (docs/reviews/south-pool-dali-passage/). Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb.
+- Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is opened as the Calle de Jorge 39-67 arcade onto the south pool lawn (data/south_pool_passage.json, estimated to about 2 m). Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb.
 
 ## Read first
 
@@ -116,6 +116,15 @@ graph LR
   F15 --> PIMG_2284_jpg(["IMG_2284"])
   F15 --> PIMG_2296_jpg(["IMG_2296"])
   F15 --> PIMG_2297_jpg(["IMG_2297"])
+  A --> F16["Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí · unreviewed"]
+  F16 --> PIMG_2283_jpg(["IMG_2283"])
+  F16 --> PIMG_2294_jpg(["IMG_2294"])
+  F16 --> PIMG_2295_jpg(["IMG_2295"])
+  F16 --> PIMG_2639_jpg(["IMG_2639"])
+  F16 --> PIMG_2640_jpg(["IMG_2640"])
+  F16 --> PIMG_2641_jpg(["IMG_2641"])
+  F16 --> PIMG_2642_jpg(["IMG_2642"])
+  F16 --> PIMG_2645_jpg(["IMG_2645"])
 ```
 
 ## Placement evidence
@@ -140,6 +149,7 @@ graph LR
 | `door_sills.json:dali-footpath-kerb` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:dali-south-arch-approach` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `gate:dali-coastal-gate` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `south_pool_passage.json:south-pool-dali-passage` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
 
@@ -167,16 +177,16 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2269.jpg](../../public/photos-ref/IMG_2269.jpg) | ground | layout, materials, planting | Pintor Dalí: parking and chain-link fence looking south **Looks at:** The white curb, rusty chain-link and house-side black lanterns, looking south along Pintor Dalí. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
 | [IMG_2270.jpg](../../public/photos-ref/IMG_2270.jpg) | ground | layout, materials, planting | Pintor Dalí: parking and fence looking north **Looks at:** The same curb, hedge and a house-side lantern, looking north along Pintor Dalí. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
 | [IMG_2278.jpg](../../public/photos-ref/IMG_2278.jpg) | ground | layout, materials, planting | Pintor Dalí: seaward parking row and chain-link fence **Looks at:** Brown chain-link on a concrete plinth, the white curb, and the hedge behind. _Used by: dali_street.json:dali-fence-plinth, dali_street.json:dali-west-hedge, dali_street.json:dali-house-lanterns._ |
+| [IMG_2283.jpg](../../public/photos-ref/IMG_2283.jpg) | ground | levels, layout, facades | Pintor Dalí: raised stone approach and archway _Used by: south_pool_passage.json:south-pool-dali-passage, door_sills.json:dali-south-arch-approach._ |
+| [IMG_2294.jpg](../../public/photos-ref/IMG_2294.jpg) | ground | levels, layout | Dalí seaward end: flagstone approach to arch _Used by: south_pool_passage.json:south-pool-dali-passage, door_sills.json:dali-south-arch-approach._ |
+| [IMG_2295.jpg](../../public/photos-ref/IMG_2295.jpg) | ground | layout, facades | Dalí seaward end: covered access and shutters _Used by: south_pool_passage.json:south-pool-dali-passage, door_sills.json:dali-south-arch-approach._ |
 | [IMG_2279.jpg](../../public/photos-ref/IMG_2279.jpg) | ground | facades, planting, materials | Pintor Dalí: houses, lamps and parking bays **Looks at:** A black lantern and the white house frontage beside the parking bays. _Used by: dali_street.json:dali-house-lanterns._ |
-| [IMG_2283.jpg](../../public/photos-ref/IMG_2283.jpg) | ground | levels, layout, facades | Pintor Dalí: raised stone approach and archway _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2276.jpg](../../public/photos-ref/IMG_2276.jpg) | ground | layout, materials | Pintor Dalí: parking junction toward the sea **Looks at:** Parking bays, black lanterns and the outer fence toward the sea. _Used by: dali_street.json:dali-house-lanterns._ |
 | [IMG_2277.jpg](../../public/photos-ref/IMG_2277.jpg) | ground | layout, materials | Pintor Dalí: aisle, outer fence and white curb **Looks at:** The aisle, white curb and chain-link fence toward the sea. _Used by: dali_street.json:dali-fence-plinth._ |
 | [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance **Looks at:** The flagstone pedestrian entrance, with a black lantern and white curbs. _Used by: dali_street.json:dali-house-lanterns._ |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2292.jpg](../../public/photos-ref/IMG_2292.jpg) | ground | layout, materials | Pintor Dalí: continuous tiled footpath and lawns _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
-| [IMG_2294.jpg](../../public/photos-ref/IMG_2294.jpg) | ground | levels, layout | Dalí seaward end: flagstone approach to arch _Used by: door_sills.json:dali-south-arch-approach._ |
-| [IMG_2295.jpg](../../public/photos-ref/IMG_2295.jpg) | ground | layout, facades | Dalí seaward end: covered access and shutters _Used by: door_sills.json:dali-south-arch-approach._ |
 | [IMG_2525.jpg](../../public/photos-ref/IMG_2525.jpg) | ground | layout, facades, planting, materials | Dali car park bays and the white houses along its east side |
 | [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | ground | layout, facades, planting, materials | Footpath along the west side of the block, house with grilled windows **Note:** Pin is on the Dali road edge; the footpath is the Calle Eva west-side footpath. |
 | [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | ground | layout, materials, planting | Tiled footpath beside Dalí car park lawn |
