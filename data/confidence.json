@@ -530,17 +530,22 @@
   },
   {
    "id": "gap:south-block-arcade",
-   "name": "South-block arcade to the south pool lawn (Calle de Jorge plaque)",
+   "name": "Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí",
    "at": [
-    -103.2,
-    211.5
+    -96.9,
+    201.6
    ],
    "photos": [
+    "IMG_2283.jpg",
+    "IMG_2294.jpg",
+    "IMG_2295.jpg",
     "IMG_2639.jpg",
     "IMG_2640.jpg",
-    "IMG_2641.jpg"
+    "IMG_2641.jpg",
+    "IMG_2642.jpg",
+    "IMG_2645.jpg"
    ],
-   "why": "Two arches, a pebble mat and an arched iron gate are photographed; GPS error is 16-29 m so the position is unknown (point is the IMG_2640 pin, not the arcade). Not modelled."
+   "why": "One passage, still solid. The Dalí mouth is the placed arch at (-114.15, 212.45); the lawn mouth is where that 58° axis leaves the east face, (-96.9, 201.6), and IMG_2645 looks at the iron gate there. The 67 39 CALLE DE JORGE plaque is on the lawn portal. Good to about 2 m; cameras are not solved. Spec: docs/reviews/south-pool-dali-passage/. The old point was the IMG_2640 pin."
   },
   {
    "id": "gap:eva-covered-passage",

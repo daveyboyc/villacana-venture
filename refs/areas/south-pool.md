@@ -8,10 +8,11 @@ The clover-shaped south pool, its lawn, the date palm and the low seaward wall.
 
 - IMG_2349 and IMG_2188: the south lawn and level pool stand about 1 m above the paseo behind the sandstone wall and mesh fence. Existing paseo profile supplies that difference; south pool stays at datum 0. The legacy seaward white wall is omitted wherever sandstone replaces it in map, 3D and collision. Short end returns remain approximate, not photographed endpoints.
 - Laser survey ground 2026-10-24: the south pool deck is +0.12 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo.
+- 8 November 2026: the arcade in IMG_2639-2642, signed 67 39 CALLE DE JORGE, is the far end of the Pintor Dalí arch (IMG_2283/2294/2295). The axis leaves the east face of 6263501UF1366S_part1 at about (-96.9, 201.6), south of the pool, where IMG_2645 sees the iron gate. The passage is not opened. The mapped Calle Jorge centreline is 28 m off this arch. Spec: docs/reviews/south-pool-dali-passage/.
 
 ## Read first
 
-- docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`, `docs/LEVELS.md`
+- docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`, `docs/LEVELS.md`, `docs/reviews/south-pool-dali-passage/README.md`
 - data: `data/south_pool.json`, `proposals/south-pool.json`, `data/levels_survey.json`
 - src: `src/south-pool.ts`
 - contact sheet: `villacana-reference/contact-sheets/south-pool.jpg` (thumbnails of everything below, numbered in this order)
@@ -34,6 +35,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
 | P2 | `path-network-inventory-south-pool` [#127](https://github.com/daveyboyc/villacana-venture/issues/127) | South pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P2 | `south-pool-dali-passage` | Open the Calle de Jorge 39–67 passage from the south-pool lawn into Pintor Dalí | open · placement: not-verified | [IMG_2283](../../public/photos-ref/IMG_2283.jpg), [IMG_2294](../../public/photos-ref/IMG_2294.jpg), [IMG_2295](../../public/photos-ref/IMG_2295.jpg), [IMG_2639](../../public/photos-ref/IMG_2639.jpg), [IMG_2640](../../public/photos-ref/IMG_2640.jpg), [IMG_2641](../../public/photos-ref/IMG_2641.jpg), [IMG_2642](../../public/photos-ref/IMG_2642.jpg), [IMG_2645](../../public/photos-ref/IMG_2645.jpg) |
 
 ## Built from these photos
 

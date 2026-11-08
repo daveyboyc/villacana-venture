@@ -2572,20 +2572,42 @@
    "status": "open"
   },
   {
+   "id": "south-pool-dali-passage",
+   "area": "south-pool",
+   "priority": 2,
+   "kind": "structure",
+   "title": "Open the Calle de Jorge 39–67 passage from the south-pool lawn into Pintor Dalí",
+   "photos": [
+    "IMG_2283.jpg",
+    "IMG_2294.jpg",
+    "IMG_2295.jpg",
+    "IMG_2639.jpg",
+    "IMG_2640.jpg",
+    "IMG_2641.jpg",
+    "IMG_2642.jpg",
+    "IMG_2645.jpg"
+   ],
+   "build": "Cut the passage specified in docs/reviews/south-pool-dali-passage/ through 6263501UF1366S_part1, from the placed Dalí arch at (-114.15, 212.45) to the east face at (-96.9, 201.6). Flat ceilings, one open middle court, the photographed double doors, the iron gate and the 67 39 CALLE DE JORGE plaque. Carry the built 2.1 m approach width. Grade it estimated, about 2 m.",
+   "avoid": "Add the glass pool fence, move the mapped Calle Jorge centreline, or join IMG_2650, IMG_2576 or IMG_2586 to this passage. Copy the Silvia tunnel, its single-door rule or the Jorge radial fanlight, or draw a barrel vault. Place the mouth from the IMG_2639-2641 pins.",
+   "accept": [
+    "The void follows the stated axis and the feature trust records the 2 m limit",
+    "gap:south-block-arcade closes once the void is in the model"
+   ],
+   "dependsOn": [],
+   "status": "open"
+  },
+  {
    "id": "jorge-south-arcade-identity",
    "area": "seaward-lanes",
    "priority": 3,
    "kind": "build",
-   "title": "South-block arcade to the south pool lawn (Calle de Jorge plaque) and the Eva-side covered passages: establish identity and position",
+   "title": "Eva-side covered passages: establish identity and position",
    "photos": [
-    "IMG_2639.jpg",
-    "IMG_2640.jpg",
-    "IMG_2641.jpg",
     "IMG_2548.jpg",
     "IMG_2557.jpg"
    ],
-   "build": "IMG_2639-2641 show a two-arch arcade with a pebble mat and an arched iron gate onto the south pool lawn, tied to Calle de Jorge only by the plaque in 2641, with GPS errors of 16-29 m. IMG_2548 (Eva) and IMG_2557 (sign cut at 'CALLE MART...') show passages of the same family whose street is unread. Solve a camera per passage and place it against the registry blocks before any build; the existing floor and pebble components in silvia-tunnel.ts apply.",
-   "avoid": "Do not use the Jorge radial fanlight gate or the 1-15 tunnel as a stand-in. Do not guess a position from the pin.",
+   "build": "The south-pool arcade (IMG_2639-2641) is specified separately as the Calle de Jorge passage into Pintor Dalí (docs/reviews/south-pool-dali-passage/, task south-pool-dali-passage). IMG_2548 (Eva) and IMG_2557 (sign cut at 'CALLE MART...') are still unread passages of the same family. Solve a camera for each and place it against the registry blocks before any build.",
+   "avoid": "Do not use the Jorge radial fanlight gate, the 1-15 tunnel, or the south-pool Dalí passage as a stand-in. Do not guess a position from the pin.",
    "accept": [
     "Each passage has a stated identity and position with uncertainty, or an open question"
    ],

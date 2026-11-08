@@ -45907,9 +45907,22 @@
    }
   },
   {
+   "id": "task:south-pool-dali-passage",
+   "kind": "build-task",
+   "name": "Open the Calle de Jorge 39–67 passage from the south-pool lawn into Pintor Dalí",
+   "priority": 2,
+   "status": "open",
+   "verification": "not-verified",
+   "photoVerification": "unchecked",
+   "placement": {
+    "status": "not-verified",
+    "features": []
+   }
+  },
+  {
    "id": "task:jorge-south-arcade-identity",
    "kind": "build-task",
-   "name": "South-block arcade to the south pool lawn (Calle de Jorge plaque) and the Eva-side covered passages: establish identity and position",
+   "name": "Eva-side covered passages: establish identity and position",
    "priority": 3,
    "status": "open",
    "verification": "not-verified",
@@ -118433,6 +118446,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:south-pool-dali-passage",
+   "to": "area:south-pool",
+   "relation": "in-area"
+  },
+  {
    "from": "task:jorge-south-arcade-identity",
    "to": "area:seaward-lanes",
    "relation": "in-area"
@@ -119698,18 +119716,43 @@
    "relation": "builds-from"
   },
   {
-   "from": "task:jorge-south-arcade-identity",
+   "from": "task:south-pool-dali-passage",
+   "to": "ref:IMG_2283.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-dali-passage",
+   "to": "ref:IMG_2294.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-dali-passage",
+   "to": "ref:IMG_2295.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-dali-passage",
    "to": "ref:IMG_2639.jpg",
    "relation": "builds-from"
   },
   {
-   "from": "task:jorge-south-arcade-identity",
+   "from": "task:south-pool-dali-passage",
    "to": "ref:IMG_2640.jpg",
    "relation": "builds-from"
   },
   {
-   "from": "task:jorge-south-arcade-identity",
+   "from": "task:south-pool-dali-passage",
    "to": "ref:IMG_2641.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-dali-passage",
+   "to": "ref:IMG_2642.jpg",
+   "relation": "builds-from"
+  },
+  {
+   "from": "task:south-pool-dali-passage",
+   "to": "ref:IMG_2645.jpg",
    "relation": "builds-from"
   },
   {

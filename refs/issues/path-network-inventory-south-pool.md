@@ -6,7 +6,7 @@ Task `path-network-inventory-south-pool` · area **South pool** · priority P2 �
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/south-pool.md` and the contact sheet `villacana-reference/contact-sheets/south-pool.jpg`
-- docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`, `docs/LEVELS.md`
+- docs: `docs/SOUTH_POOL.md`, `docs/HANDOVER_SOUTH_POOL.md`, `docs/LEVELS.md`, `docs/reviews/south-pool-dali-passage/README.md`
 - data: `data/south_pool.json`, `proposals/south-pool.json`, `data/levels_survey.json`
 - src: `src/south-pool.ts`
 
