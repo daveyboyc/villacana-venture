@@ -375,6 +375,16 @@ const path = require("node:path");
       if(plants.hedge<20||plants.shrub<6||plants.climber<5)throw Error('Eva bed planting is missing: '+JSON.stringify(plants));
       details.traverse(mesh=>{if(!mesh.isInstancedMesh||!mesh.userData.spriteKind)return;const matrix=new THREE.Matrix4();for(let i=0;i<mesh.count;i++){mesh.getMatrixAt(i,matrix);const pos=new THREE.Vector3(),rot=new THREE.Quaternion(),scale=new THREE.Vector3();matrix.decompose(pos,rot,scale);if(!routeClearance(routes,pos.x,pos.z,mesh.userData.spriteWidth*scale.x/2))throw Error('Eva plant footprint blocks a route');}});
     }
+    // CALLE ALBERTO 22 40 porch (IMG_2792): on the map, plaque and ramp in the scene, plants only in Details and clear of routes.
+    {
+      const {albertoPassage,addAlbertoPassage}=await import('/src/alberto-passage.ts');
+      for(const id of [albertoPassage.id,albertoPassage.id+'-route'])if(!document.querySelector(`[data-alberto-id="${id}"]`))throw Error('Alberto porch missing from map: '+id);
+      const layout=new THREE.Scene();layout.userData.layoutOnly=true;addAlbertoPassage(layout);layout.updateMatrixWorld(true);
+      for(const name of ['-plaque','-ramp','-platform','-arch','-house-over'])if(!layout.getObjectByName(albertoPassage.id+name))throw Error('Alberto porch part missing: '+name);
+      if(albertoPassage.plants.some(p=>layout.getObjectByName(p.id)))throw Error('Alberto porch plants leaked into Layout');
+      const routes=protectedRoutes(s.boundaryReference),details=new THREE.Scene();details.userData.decorationClearance=(x,z,r)=>routeClearance(routes,x,z,r);addAlbertoPassage(details);details.updateMatrixWorld(true);
+      for(const p of albertoPassage.plants){const m=details.getObjectByName(p.id);if(m)for(const [x,z] of m.userData.footprint)if(!routeClearance(routes,x,z,0))throw Error('Alberto plant blocks a route');}
+    }
     {
       const {addSouthBenchPlanting}=await import('/src/middle-south-planting.ts');
       const scene=new THREE.Scene();scene.userData.protectedRoutes=routes;

@@ -4,6 +4,7 @@ import { asset } from "./asset";
 import { pointInRing } from "./geom";
 import { replacesLaneGroundOpening } from "./middle-pool-lane-frontages";
 import { inElenaWalkway } from "./elena-walkway";
+import { inAlbertoPorch } from "./alberto-passage";
 import { SILVIA_HOST, silviaCloseCamera } from "./silvia-map";
 import type { SkeletonBuilding, Vec2 } from "./types";
 import traced from "../data/facade_kit.json";
@@ -94,6 +95,7 @@ export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[
         const t = (k + 0.5) / count, p = at(t, 0);
         // A wall shared with the next house has no openings.
         if (houses.some((o) => o !== b && pointInRing(p.x + nx * 0.5, p.z + nz * 0.5, o.ring))) continue;
+        if (inAlbertoPorch(p.x + nx * 0.3, p.z + nz * 0.3)) continue; // the porch's own back wall (src/alberto-passage.ts)
         for (let f = 0; f < b.floors; f++) {
           // The same ground-floor openings the flat shutters leave out (Silvia passage, traced lane frontages).
           if (f === 0 && ((b.id === SILVIA_HOST && silviaCloseCamera(p.x, p.z)) || replacesLaneGroundOpening(p.x, p.z) || inElenaWalkway(p.x, p.z))) continue;

@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 399,
-  "photosCitedByModel": 147,
-  "modelFeaturesWithPhotoCitations": 145
+  "features": 401,
+  "photosCitedByModel": 148,
+  "modelFeaturesWithPhotoCitations": 147
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2996,6 +2996,24 @@
     "IMG_2551.jpg",
     "IMG_2552.jpg",
     "IMG_2553.jpg"
+   ]
+  },
+  {
+   "id": "alberto_passage.json:calle-alberto-22-40-porch",
+   "name": "Calle Alberto 22-40 · covered porch off Calle Eva east",
+   "kind": "reference feature",
+   "source": "photo-supported porch in the registry recess; sizes and furniture positions estimated",
+   "evidence": [
+    "IMG_2792.jpg"
+   ]
+  },
+  {
+   "id": "alberto_passage.json:calle-alberto-22-40-route",
+   "name": "Calle Alberto 22-40 · likely passage to the inner courtyard",
+   "kind": "reference feature",
+   "source": "inferred from the registry courtyard and the porch; not seen",
+   "evidence": [
+    "IMG_2792.jpg"
    ]
   },
   {
@@ -19181,6 +19199,18 @@
    "relation": "possibly-in-view",
    "distance": 43.1,
    "angleOffset": 25.5
+  },
+  {
+   "from": "photo:IMG_2792.jpg",
+   "to": "alberto_passage.json:calle-alberto-22-40-porch",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2792.jpg",
+   "to": "alberto_passage.json:calle-alberto-22-40-route",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2794.jpg",

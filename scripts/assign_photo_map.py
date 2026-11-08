@@ -169,6 +169,10 @@ def features(s):
         add('eva_lane.json:'+run['id'],run['name']+' · tiled band and aggregate margins','reference feature','photo-supported material and arrangement; widths read from tile proportions; '+run['axisBasis'],evidence=run['evidence'],ring=[at(v,-half) for v in st]+[at(v,half) for v in reversed(st)])
         edges=run['beds']+run['lawns']+run['spurs']+run['planters']
         add('eva_lane.json:'+run['id']+'-edges',run['name']+' · kerbs, beds and lawn edges','reference feature','photo-supported kerbs and edge types; bed depths and lawn extents estimated',evidence=sorted({e for f in edges for e in f.get('evidence',run['evidence'])}|{e for k in run['kerbs'] for e in k['evidence']}),points=[at((f['s'][0]+f['s'][1])/2,(f['c'][0]+f['c'][1])/2) for f in edges])
+    alberto=json.loads((ROOT/'data/alberto_passage.json').read_text());af=alberto['frame']
+    aat=lambda a,d:[round(af['origin'][0]+af['along'][0]*a+af['in'][0]*d,2),round(af['origin'][1]+af['along'][1]*a+af['in'][1]*d,2)]
+    add('alberto_passage.json:'+alberto['id']+'-porch',alberto['name'],'reference feature','photo-supported porch in the registry recess; sizes and furniture positions estimated',evidence=alberto['evidence'],ring=[aat(0,alberto['platform']['step']['from']),aat(af['width'],alberto['platform']['step']['from']),aat(af['width'],af['depth']),aat(0,af['depth'])])
+    add('alberto_passage.json:'+alberto['id']+'-route','Calle Alberto 22-40 · likely passage to the inner courtyard','reference feature','inferred from the registry courtyard and the porch; not seen',evidence=alberto['evidence'],points=alberto['route']['points'])
     barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
     for key in ('boardwalk','sign','seating'):
         f=barraka[key]

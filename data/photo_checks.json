@@ -1013,6 +1013,17 @@
    "result": "differs",
    "notes": "The low edging in the bed ahead is now leafy, but the photo's lush raised-planter planting (shrubs, lilies, pink periwinkle) and the climbers on the right-hand wall are still absent: the planter plants sit inside the protected walking route, and the west wall climbers are not built. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval.",
    "followUp": "eva-west-planting"
+  },
+  {
+   "task": "alberto-passage-porch",
+   "checked": "2026-11-08",
+   "by": "Claude",
+   "feature": "alberto_passage.json:calle-alberto-22-40-porch",
+   "photo": "IMG_2792.jpg",
+   "before": "docs/reviews/alberto-passage-porch/IMG_2792-before.png",
+   "render": "docs/reviews/alberto-passage-porch/IMG_2792-after.png",
+   "result": "matches",
+   "notes": "Looking into the porch: the square pier on the right, the red studded ramp beside it running in to the back wall, the tiled step platform with the potted jade on the left, the CALLE ALBERTO 22 40 letter tiles and the AGUA POTABLE hatch on the plain back wall all follow the photo; before, the recess was an open notch in the house with a generic window shutter on its back wall. The photographed porch is a little deeper (about 2 m against the registry's 1 m), the arch is out of frame at this pitch, and the big-leaved plant is simplified. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; the phone compass disagrees by about 50 degrees. A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

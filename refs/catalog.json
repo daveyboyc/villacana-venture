@@ -17716,10 +17716,13 @@
   "areasBasis": "reviewed",
   "viewpoint": "ground",
   "useFor": [
-   "signage",
-   "layout"
+   "facades",
+   "layout",
+   "levels",
+   "materials",
+   "signage"
   ],
-  "note": "Pin is near Calle Eva east and Teodoro Rojo (+/-4.7 m), but the plaque reads CALLE ALBERTO 22 40 and Calle Alberto is in the north lanes; which passage this is is not established.",
+  "note": "Pin (+/-4.7 m) is just east of registry block 6265601UF1366N_part1, facing the only recess in its facade (3.1 m wide, 1 m deep); the porch is built there. The plaque names houses 22-40 of Calle Alberto, reached through this porch off Calle Eva east, so the map's Calle Alberto label in the north lanes covers at most part of the street.",
   "observation": null,
   "taken": "2026-11-03",
   "originalUrl": "https://drive.google.com/file/d/1OG_f1slXAqk2g49cxLxiTw-wrODD_ynR/view?usp=drivesdk",
@@ -17731,15 +17734,21 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -107.9,
-   45.9
+  "citedBy": [
+   "alberto_passage.json:calle-alberto-22-40-porch",
+   "alberto_passage.json:calle-alberto-22-40-route"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -106.98,
+   48.89
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "alberto_passage.json:calle-alberto-22-40-porch",
+   "alberto_passage.json:calle-alberto-22-40-route",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "The CALLE ALBERTO 22 40 covered porch: arch, red studded ramp, tiled step, plaque and AGUA POTABLE hatch on the back wall"
  },
  {
   "id": "IMG_2794.jpg",

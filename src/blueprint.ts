@@ -10,6 +10,7 @@ import {picassoFeatures,picassoRamp,picassoStrip} from "./picasso-service-road";
 import { middlePoolNorth, middlePoolNorthRings, middlePoolNorthStepRing } from "./middle-pool-north";
 import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-lawn";
 import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
+import {albertoPassage,albertoRect,suppressInAlbertoPorch} from "./alberto-passage";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -82,6 +83,7 @@ async function boot(): Promise<void> {
   const skeleton = (await (await fetch(asset("/map/skeleton.json"))).json()) as Skeleton;
   suppressInEvaLawn(skeleton);
   suppressInEvaLane(skeleton);
+  suppressInAlbertoPorch(skeleton);
   suppressInMiddlePoolReview(skeleton);
   suppressInRaisedTerraces(skeleton);
   const ground = (await (await fetch(asset("/map/ground.json"))).json()) as Skeleton["cover"];
@@ -175,6 +177,11 @@ async function boot(): Promise<void> {
   // Calle Eva as photographed: tiled band, aggregate margins, white kerbs, beds and lawn edges (data/eva_lane.json).
   const evaFill={paving:"#c27a5a",margin:"#8f8b84",kerb:"#fffdf5",bed:"#5a4634",lawn:"#6d8a48",planter:"#fffdf5",drain:"#3a1f15"} as const;
   for(const surface of evaLaneSurfaces())mtitled(el("path",{d:path(surface.ring),fill:evaFill[surface.kind],...(surface.kind==="planter"?{stroke:"#8a8172","stroke-width":.04}:{}),"data-eva-lane-id":surface.id}),`${evaLane.name} · ${surface.text}`);
+  // CALLE ALBERTO 22 40 porch (IMG_2792) in its registry recess, and its likely passage to the courtyard (inferred, map only).
+  {const ap=albertoPassage,W=ap.frame.width,D=ap.frame.depth;
+  mtitled(el("path",{d:path(albertoRect(0,W,ap.platform.step.from,D)),fill:"#b4553d",stroke:"#fffdf5","stroke-width":.08,"data-alberto-id":ap.id}),`${ap.name}: ${ap.trust} · ${ap.evidence.join(", ")}`);
+  for(const [a0,a1] of [[0,ap.arch.pier],[W-ap.arch.pier,W]])mtitled(el("path",{d:path(albertoRect(a0,a1,-ap.arch.proud,.2)),fill:"#fffdf5","data-alberto-id":ap.id+"-pier"}),ap.name+" · pier");
+  mtitled(el("path",{d:"M"+ap.route.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#e08a2c","stroke-width":.9,"stroke-dasharray":"1 .6","data-alberto-id":ap.id+"-route"}),`Inferred: ${ap.route.why}`);}
   for(const ring of evaLawnRings)mtitled(el("path",{d:path(ring),fill:"#668448","data-eva-id":evaLawn.id}),evaLawn.trust);
   for(const ring of evaWallRings())mtitled(el("path",{d:path(ring),fill:"#fffdf5",stroke:"#8a8172","stroke-width":.04,"data-eva-id":evaLawn.id}),evaLawn.trust);
   mtitled(el("path",{d:path(middleSouthRect(...middleSouth.forecourt.along as [number,number],...middleSouth.forecourt.across as [number,number])),fill:"#b2a793","data-middle-id":middleSouth.forecourt.id}),middleSouth.forecourt.trust);
