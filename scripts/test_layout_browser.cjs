@@ -71,7 +71,8 @@ const path = require("node:path");
       map = await (await fetch("/map/villacana.json")).json();
     const buildings = s.buildings.filter((b) => b.floors > 0 && !b.passage);
     const silvia=await import("/src/silvia-map.ts");
-    const parts=buildings.flatMap(b=>silvia.silviaGroundParts(b).map(p=>({...p,id:b.id})));
+    const jorge=await import("/src/south-pool-passage.ts");
+    const parts=buildings.flatMap(b=>jorge.southPoolGroundParts(b, silvia.silviaGroundParts(b)).map(p=>({...p,id:b.id})));
     const base = new Solids(
       [
         ...parts.map((b) =>

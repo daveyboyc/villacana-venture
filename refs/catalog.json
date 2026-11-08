@@ -3633,6 +3633,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage",
    "door_sills.json:dali-south-arch-approach"
   ],
   "looksAt": [
@@ -4067,6 +4068,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage",
    "door_sills.json:dali-south-arch-approach"
   ],
   "looksAt": [
@@ -4102,6 +4104,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage",
    "door_sills.json:dali-south-arch-approach"
   ],
   "looksAt": [
@@ -13368,7 +13371,9 @@
    "altitude": 6.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage"
+  ],
   "looksAt": [
    -100.5,
    213.8
@@ -13405,7 +13410,9 @@
    "altitude": 5.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage"
+  ],
   "looksAt": [
    -97.9,
    208.8
@@ -13442,7 +13449,9 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage"
+  ],
   "looksAt": [
    -94.8,
    205.5
@@ -13481,7 +13490,9 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage"
+  ],
   "looksAt": [
    -90.6,
    204.3
@@ -13597,7 +13608,9 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "south_pool_passage.json:south-pool-dali-passage"
+  ],
   "looksAt": [
    -81.1,
    200.8

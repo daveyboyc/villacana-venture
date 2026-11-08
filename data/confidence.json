@@ -35,6 +35,10 @@
    "level": "inferred",
    "why": "The roof photos show a tiled patio behind the door; its outline and level are inferred from the door sill (levels survey: low confidence)."
   },
+  "south_pool_passage.json:south-pool-dali-passage": {
+   "level": "estimated",
+   "why": "Both mouths are photographed and the axis meets IMG_2645's gate, but the cameras are not solved. The 20.4 m depth, 2.1 m width and arch heights are estimates, good to about 2 m."
+  },
   "silvia_tunnel.json:silvia-tunnel-study": {
    "level": "inferred",
    "why": "Approximate west registry connection; the direction of the photographed tunnel is unresolved."
@@ -527,25 +531,6 @@
     "IMG_2569.jpg"
    ],
    "why": "A chain of arches with doors, pebble mats and a ramp is photographed but its route, bends and length are not traced (camera pins +-2.4-5 m, mostly indoors). Not modelled."
-  },
-  {
-   "id": "gap:south-block-arcade",
-   "name": "Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí",
-   "at": [
-    -96.9,
-    201.6
-   ],
-   "photos": [
-    "IMG_2283.jpg",
-    "IMG_2294.jpg",
-    "IMG_2295.jpg",
-    "IMG_2639.jpg",
-    "IMG_2640.jpg",
-    "IMG_2641.jpg",
-    "IMG_2642.jpg",
-    "IMG_2645.jpg"
-   ],
-   "why": "One passage, still solid. The Dalí mouth is the placed arch at (-114.15, 212.45); the lawn mouth is where that 58° axis leaves the east face, (-96.9, 201.6), and IMG_2645 looks at the iron gate there. The 67 39 CALLE DE JORGE plaque is on the lawn portal. Good to about 2 m; cameras are not solved. Spec: docs/reviews/south-pool-dali-passage/. The old point was the IMG_2640 pin."
   },
   {
    "id": "gap:eva-covered-passage",
