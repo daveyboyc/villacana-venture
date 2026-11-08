@@ -1,4 +1,4 @@
-# South-block arcade to the south pool lawn (Calle de Jorge plaque) and the Eva-side covered passages: establish identity and position
+# Eva-side covered passages: establish identity and position
 
 Task `jorge-south-arcade-identity` · area **Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo** · priority P3 · build
 
@@ -12,19 +12,16 @@ Task `jorge-south-arcade-identity` · area **Patricia, Silvia, Jorge, Teodoro Ro
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2639.jpg`: Vaulted arcade with patterned tile floor, pebble mosaic and garden gate beyond (ground — pin ±17.8 m)
-- `public/photos-ref/IMG_2640.jpg`: Bougainvillea over a white arch, second arch and gate beyond, pebble mosaic floor panel (ground — pin ±28.6 m)
-- `public/photos-ref/IMG_2641.jpg`: Passage to the south pool lawn: arched iron gate and Calle de Jorge plaque (ground — pin ±15.9 m)
 - `public/photos-ref/IMG_2548.jpg`: Covered tiled passage off Calle Eva with brown double door and potted trees (ground — pin ±4.5 m)
 - `public/photos-ref/IMG_2557.jpg`: Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign (ground — pin ±2.5 m)
 
 ## Build
 
-IMG_2639-2641 show a two-arch arcade with a pebble mat and an arched iron gate onto the south pool lawn, tied to Calle de Jorge only by the plaque in 2641, with GPS errors of 16-29 m. IMG_2548 (Eva) and IMG_2557 (sign cut at 'CALLE MART...') show passages of the same family whose street is unread. Solve a camera per passage and place it against the registry blocks before any build; the existing floor and pebble components in silvia-tunnel.ts apply.
+The south-pool arcade (IMG_2639-2641) is specified separately as the Calle de Jorge passage into Pintor Dalí (docs/reviews/south-pool-dali-passage/, task south-pool-dali-passage). IMG_2548 (Eva) and IMG_2557 (sign cut at 'CALLE MART...') are still unread passages of the same family. Solve a camera for each and place it against the registry blocks before any build.
 
 ## Do not
 
-Do not use the Jorge radial fanlight gate or the 1-15 tunnel as a stand-in. Do not guess a position from the pin.
+Do not use the Jorge radial fanlight gate, the 1-15 tunnel, or the south-pool Dalí passage as a stand-in. Do not guess a position from the pin.
 
 ## Done when
 

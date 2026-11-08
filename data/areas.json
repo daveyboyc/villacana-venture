@@ -125,7 +125,8 @@
    "docs": [
     "docs/SOUTH_POOL.md",
     "docs/HANDOVER_SOUTH_POOL.md",
-    "docs/LEVELS.md"
+    "docs/LEVELS.md",
+    "docs/reviews/south-pool-dali-passage/README.md"
    ],
    "data": [
     "data/south_pool.json",
@@ -137,7 +138,8 @@
    ],
    "notes": [
     "IMG_2349 and IMG_2188: the south lawn and level pool stand about 1 m above the paseo behind the sandstone wall and mesh fence. Existing paseo profile supplies that difference; south pool stays at datum 0. The legacy seaward white wall is omitted wherever sandstone replaces it in map, 3D and collision. Short end returns remain approximate, not photographed endpoints.",
-    "Laser survey ground 2026-10-24: the south pool deck is +0.12 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo."
+    "Laser survey ground 2026-10-24: the south pool deck is +0.12 m (survey +0.11) and its lawn rises with the survey to about +0.6 m towards Dalí; the seaward edge stays about 1 m above the paseo.",
+    "8 November 2026: the arcade in IMG_2639-2642, signed 67 39 CALLE DE JORGE, is the far end of the Pintor Dalí arch (IMG_2283/2294/2295). The axis leaves the east face of 6263501UF1366S_part1 at about (-96.9, 201.6), south of the pool, where IMG_2645 sees the iron gate. The passage is not opened. The mapped Calle Jorge centreline is 28 m off this arch. Spec: docs/reviews/south-pool-dali-passage/."
    ]
   },
   {
@@ -343,7 +345,7 @@
     "The seaward boundary has a narrow pedestrian gate (IMG_2284, 2296, 2297): never close it off with a continuous fence.",
     "The aisle fence is a white curb, a concrete plinth and rusty chain-link, with a clipped hedge outside it (IMG_2269, 2270, 2277, 2278). Black house-side lanterns repeat along the parking (IMG_2269, 2270, 2276, 2278, 2279, 2280); their stations are estimated. Still open: each house's arches, grilles and balconies, the palms and bougainvillea, and the modern lamp at the seaward turning area.",
     "IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.",
-    "Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is not opened. Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb."
+    "Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is the Calle de Jorge 39-67 arcade onto the south pool lawn and is not opened (docs/reviews/south-pool-dali-passage/). Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb."
    ]
   },
   {
@@ -488,7 +490,7 @@
     "Outdoor-path integration with mainPR120: the current survey ground covered previously flat lane/garden paving, so only those existing visual surfaces now follow siteY. Source outlines, collision and survey data retained. Model diagnostic: garden sample at local8.6 is about0.23m above the level tunnel slab; this is an unresolved host/garden ground transition, not a photo-measured step or smooth source match. Track with in-progress silvia-outdoor-path.",
     "27 October batch: IMG_2488 looks up Calle Guillermo from its seaward end: plain square terracotta tiles, a slot drain across the lane, raised white planter with strelitzia; no steps in the lower lane (input for guillermo-descent-recheck, gradient not judged). IMG_2494 repeats the IMG_2241 lane near Teodoro Rojo.",
     "Silvia ramp passages (task silvia-ramp-passages, 4 Nov): IMG_2656/2657/2658 (plaque '22 44 CALLE DE SILVIA') and IMG_2669/2670 (plaque '2 20') show a second passage type on the lane's west side: a porch with a red studded rubber ramp beside two plain terracotta treads and a third riser that carries the landing (white risers, dark grey edge bands), brown panelled double doors with a barred window beside each, a pebble-mosaic mat, lanterns, an arch and, in 2-20, a black iron garden gate between two large potted plants. IMG_2574/2575 show the flight from the lane (granite edge, jade planter). Built only as a photo-relative study (silvia-ramp.html, src/silvia-ramp-passage.ts; every dimension an estimate; not placed). OPEN: the main map's west Silvia tunnel (data/silvia_map.json) sits at the IMG_2669 camera and heading but is built from the 1-15 photos IMG_2190/2191/2668, taken from the same pin facing east (heading 55-56) where IMG_2672-2674 show a louvre-door passage under the east block; the 1-15 and 2-20 passages are therefore probably on opposite sides of the lane and the west tunnel shows the wrong one (task silvia-west-passage-swap). The 22-44 mouth lies on the WSW line of the Patricia passage cameras IMG_2565-2570 (task patricia-passage-reference-pack).",
-    "Patricia passage (IMG_2561-2569), not built: the arch marked 'CALLE DE PATRICIA' (IMG_2562), paired brown doors, pebble-mosaic mats with a floral border (2563/2564), planter-lined arches, a tiled-eave loggia (2565-2567) and a last arch with ramp down to a lawn (2569). Pins (2.4-5 m, mostly indoors) head SE at the west arch and ENE further on, about 20 m south-east of the mapped Calle Patricia line, so its route, length and relation to the 22-44 porch are unresolved. South-block arcade IMG_2639-2641 (two arches, pebble mat, arched iron gate onto the south pool lawn, 'Calle de Jorge' plaque) has GPS errors of 16-29 m: identity from the plaque only, position unresolved (task jorge-south-arcade-identity). IMG_2548 (Eva) and IMG_2557 ('CALLE MART...' sign) show the same passage family with the street unread."
+    "Patricia passage (IMG_2561-2569), not built: the arch marked 'CALLE DE PATRICIA' (IMG_2562), paired brown doors, pebble-mosaic mats with a floral border (2563/2564), planter-lined arches, a tiled-eave loggia (2565-2567) and a last arch with ramp down to a lawn (2569). Pins (2.4-5 m, mostly indoors) head SE at the west arch and ENE further on, about 20 m south-east of the mapped Calle Patricia line, so its route, length and relation to the 22-44 porch are unresolved. South-block arcade IMG_2639-2641 is the Calle de Jorge 39-67 passage from the south-pool lawn into Pintor Dalí; its position is the placed Dalí arch and the lawn mouth at about (-96.9, 201.6), good to about 2 m (docs/reviews/south-pool-dali-passage/, task south-pool-dali-passage). The IMG_2639-2641 pins stay unused. IMG_2548 (Eva) and IMG_2557 ('CALLE MART...' sign) show the same passage family with the street unread."
    ]
   },
   {
