@@ -3327,6 +3327,23 @@
     "f": 1201.8
    },
    "initialBasis": "photo content (eva-lane-details): standing on the photographed tiled path at the pin's distance along Calle Eva, facing along the lane; the phone pin is 1.7 m to the side, within its ±2.8 m; ground eye height; 26 mm-equivalent lens from EXIF. A starting pose, not a solved camera."
+  },
+  "IMG_2792.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -104.95,
+    "y": 1.6,
+    "z": 46.06,
+    "yaw": 215.2,
+    "pitch": -18.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (alberto-passage-porch): about 2.2 m in front of the porch recess beside its south pier (right in the photo), looking at the plaque on the back wall and down at the ramp and step; the pin (+/-4.7 m) is about 4 m further east. A starting pose, not a solved camera."
   }
  }
 }

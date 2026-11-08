@@ -15,17 +15,18 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 - Eva planting (eva-planting-shapes, 2026-11-06): leafy procedural plants replace the box hedges and sphere tree: clipped hedge in the east house bed, low box edging with pink-flowering roses behind it in the west beds (IMG_2553), a clipped narrow-leaved oleander at the north-east end (IMG_2503), the round clipped tree on a 2 m pale trunk, and jasmine and shrubs up the east house wall with white flowers (IMG_2504). Shapes and leaf counts are illustrative; the west wall climbers are still missing.
 - 8 Nov photos (IMG_2727-2732, IMG_2785-2790): Eva east of the Teodoro Rojo junction is paved in octagonal terracotta with small square inserts (like the seaward lanes), not the big square tiles of the west part; it has white rendered benches with azulejo panels, hedged white planters, lanterns on lawns and strelitzia clumps, and a walled side garden with brick-nosed steps (IMG_2728/2729). Square tiles with aggregate margins resume further west (IMG_2788-2790). Not built yet (task eva-east-lane).
 - 8 Nov photos IMG_2705-2712 walk Eva west from the Dali car park to the middle pool south-west gateway (IMG_2710) and on into the garden (IMG_2711, IMG_2712): the square-tiled band with aggregate margins carries through the gate and meets the crazy paving at the lawn.
+- IMG_2792 (8 Nov): a covered porch with the plaque CALLE ALBERTO 22 40 opens off the path north of Calle Eva east, in the only recess of registry block 6265601UF1366N_part1 (3.1 m wide, 1 m deep). Built as photographed (alberto_passage.json). The block has an inner courtyard about 7 m behind the porch; the passage to it is drawn on the map as inferred but not cut in 3D. Open: which way it turns and where it comes out.
 
 ## Read first
 
-- docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`, `docs/EVA_LANE.md`
-- data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`, `data/eva_lane.json`
-- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`, `src/clipped-plants.ts`
+- docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`, `docs/EVA_LANE.md`, `docs/ALBERTO_PASSAGE.md`
+- data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`, `data/eva_lane.json`, `data/alberto_passage.json`
+- src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`, `src/clipped-plants.ts`, `src/alberto-passage.ts`
 - contact sheet: `villacana-reference/contact-sheets/eva.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 48, Levels and slopes: 3, Facades and roofs: 20, Materials: 42, Planting: 35, Signs: 8, Views: 2
+Layout: 48, Levels and slopes: 4, Facades and roofs: 21, Materials: 43, Planting: 35, Signs: 8, Views: 2
 54 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
@@ -34,6 +35,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P2 | `alberto-passage-porch` | Calle Alberto 22-40: the covered porch off Calle Eva east, and its likely passage | in-progress · Claude · placement: not-verified | [IMG_2792](../../public/photos-ref/IMG_2792.jpg) |
 | P2 | `eva-east-lane` | Calle Eva east: octagonal paving, azulejo benches, hedged planters and lanterns (after eva-lane-details) | open · placement: not-verified | [IMG_2727](../../public/photos-ref/IMG_2727.jpg), [IMG_2732](../../public/photos-ref/IMG_2732.jpg), [IMG_2730](../../public/photos-ref/IMG_2730.jpg), [IMG_2785](../../public/photos-ref/IMG_2785.jpg), [IMG_2786](../../public/photos-ref/IMG_2786.jpg), [IMG_2787](../../public/photos-ref/IMG_2787.jpg), [IMG_2788](../../public/photos-ref/IMG_2788.jpg), [IMG_2728](../../public/photos-ref/IMG_2728.jpg), [IMG_2729](../../public/photos-ref/IMG_2729.jpg) |
 | P2 | `eva-lane-details` | Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns | in-progress · Claude · placement: not-verified | [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2504](../../public/photos-ref/IMG_2504.jpg), [IMG_2677](../../public/photos-ref/IMG_2677.jpg), [IMG_2676](../../public/photos-ref/IMG_2676.jpg), [IMG_2553](../../public/photos-ref/IMG_2553.jpg), [IMG_2551](../../public/photos-ref/IMG_2551.jpg), [IMG_2552](../../public/photos-ref/IMG_2552.jpg), [IMG_2549](../../public/photos-ref/IMG_2549.jpg), [IMG_2503](../../public/photos-ref/IMG_2503.jpg) |
 | P2 | `path-network-inventory-eva` [#134](https://github.com/daveyboyc/villacana-venture/issues/134) | Calle Eva: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
@@ -47,41 +49,45 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Calle Eva"]
-  A --> F0["Calle Eva east: gateway to the Teodoro Rojo junction · tiled band and aggregate margins · unreviewed"]
-  F0 --> PIMG_2336_jpg(["IMG_2336"])
-  F0 --> PIMG_2503_jpg(["IMG_2503"])
-  F0 --> PIMG_2504_jpg(["IMG_2504"])
-  F0 --> PIMG_2676_jpg(["IMG_2676"])
-  F0 --> PIMG_2677_jpg(["IMG_2677"])
-  A --> F1["Calle Eva east: gateway to the Teodoro Rojo junction · kerbs, beds and lawn edges · disputed"]
-  F1 --> PIMG_2336_jpg(["IMG_2336"])
-  F1 --> PIMG_2338_jpg(["IMG_2338"])
-  F1 --> PIMG_2503_jpg(["IMG_2503"])
-  F1 --> PIMG_2504_jpg(["IMG_2504"])
-  F1 --> PIMG_2676_jpg(["IMG_2676"])
-  F1 --> PIMG_2677_jpg(["IMG_2677"])
-  A --> F2["Calle Eva west: Dali car park to the middle pool corner · tiled band and aggregate margins · unreviewed"]
-  F2 --> PIMG_2549_jpg(["IMG_2549"])
-  F2 --> PIMG_2551_jpg(["IMG_2551"])
-  F2 --> PIMG_2552_jpg(["IMG_2552"])
-  F2 --> PIMG_2553_jpg(["IMG_2553"])
-  A --> F3["Calle Eva west: Dali car park to the middle pool corner · kerbs, beds and lawn edges · disputed"]
-  F3 --> PIMG_2549_jpg(["IMG_2549"])
-  F3 --> PIMG_2551_jpg(["IMG_2551"])
-  F3 --> PIMG_2552_jpg(["IMG_2552"])
-  F3 --> PIMG_2553_jpg(["IMG_2553"])
-  A --> F4["Calle Eva · walled lawn and espalier corner · unreviewed"]
-  F4 --> PIMG_2336_jpg(["IMG_2336"])
-  F4 --> PIMG_2337_jpg(["IMG_2337"])
-  F4 --> PIMG_2338_jpg(["IMG_2338"])
-  F4 --> PIMG_2339_jpg(["IMG_2339"])
-  F4 --> PIMG_2503_jpg(["IMG_2503"])
-  A --> F5["Middle pool · east gateway from Calle Eva · unreviewed"]
-  F5 --> PIMG_2244_jpg(["IMG_2244"])
-  F5 --> PIMG_2340_jpg(["IMG_2340"])
-  A --> F6["Middle pool · stone steps up to Calle Eva · unreviewed"]
-  F6 --> PIMG_2248_jpg(["IMG_2248"])
-  F6 --> PIMG_2333_jpg(["IMG_2333"])
+  A --> F0["Calle Alberto 22-40 · covered porch off Calle Eva east · unreviewed"]
+  F0 --> PIMG_2792_jpg(["IMG_2792"])
+  A --> F1["Calle Alberto 22-40 · likely passage to the inner courtyard · unreviewed"]
+  F1 --> PIMG_2792_jpg(["IMG_2792"])
+  A --> F2["Calle Eva east: gateway to the Teodoro Rojo junction · tiled band and aggregate margins · unreviewed"]
+  F2 --> PIMG_2336_jpg(["IMG_2336"])
+  F2 --> PIMG_2503_jpg(["IMG_2503"])
+  F2 --> PIMG_2504_jpg(["IMG_2504"])
+  F2 --> PIMG_2676_jpg(["IMG_2676"])
+  F2 --> PIMG_2677_jpg(["IMG_2677"])
+  A --> F3["Calle Eva east: gateway to the Teodoro Rojo junction · kerbs, beds and lawn edges · disputed"]
+  F3 --> PIMG_2336_jpg(["IMG_2336"])
+  F3 --> PIMG_2338_jpg(["IMG_2338"])
+  F3 --> PIMG_2503_jpg(["IMG_2503"])
+  F3 --> PIMG_2504_jpg(["IMG_2504"])
+  F3 --> PIMG_2676_jpg(["IMG_2676"])
+  F3 --> PIMG_2677_jpg(["IMG_2677"])
+  A --> F4["Calle Eva west: Dali car park to the middle pool corner · tiled band and aggregate margins · unreviewed"]
+  F4 --> PIMG_2549_jpg(["IMG_2549"])
+  F4 --> PIMG_2551_jpg(["IMG_2551"])
+  F4 --> PIMG_2552_jpg(["IMG_2552"])
+  F4 --> PIMG_2553_jpg(["IMG_2553"])
+  A --> F5["Calle Eva west: Dali car park to the middle pool corner · kerbs, beds and lawn edges · disputed"]
+  F5 --> PIMG_2549_jpg(["IMG_2549"])
+  F5 --> PIMG_2551_jpg(["IMG_2551"])
+  F5 --> PIMG_2552_jpg(["IMG_2552"])
+  F5 --> PIMG_2553_jpg(["IMG_2553"])
+  A --> F6["Calle Eva · walled lawn and espalier corner · unreviewed"]
+  F6 --> PIMG_2336_jpg(["IMG_2336"])
+  F6 --> PIMG_2337_jpg(["IMG_2337"])
+  F6 --> PIMG_2338_jpg(["IMG_2338"])
+  F6 --> PIMG_2339_jpg(["IMG_2339"])
+  F6 --> PIMG_2503_jpg(["IMG_2503"])
+  A --> F7["Middle pool · east gateway from Calle Eva · unreviewed"]
+  F7 --> PIMG_2244_jpg(["IMG_2244"])
+  F7 --> PIMG_2340_jpg(["IMG_2340"])
+  A --> F8["Middle pool · stone steps up to Calle Eva · unreviewed"]
+  F8 --> PIMG_2248_jpg(["IMG_2248"])
+  F8 --> PIMG_2333_jpg(["IMG_2333"])
 ```
 
 ## Placement evidence
@@ -90,6 +96,8 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `alberto_passage.json:calle-alberto-22-40-porch` | unreviewed | matches | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `alberto_passage.json:calle-alberto-22-40-route` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `eva_lane.json:eva-lane-east` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `eva_lane.json:eva-lane-east-edges` | disputed | differs | open discrepancy photo-discrepancy:ce33b7d08fa2ed9c |
 | `eva_lane.json:eva-lane-west` | unreviewed | matches | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -118,6 +126,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `eva-planting-shapes` | [IMG_2677](../../public/photos-ref/IMG_2677.jpg) | **matches** | [after](../../docs/reviews/eva-planting-shapes/IMG_2677-after.png) · [before](../../docs/reviews/eva-planting-shapes/IMG_2677-before.png) | Leafy hedge and wall planting on the left, and the clipped box hedge in front of the espaliered wall, follow the photo; before, boxes and a bare wall. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
 | `eva-planting-shapes` | [IMG_2553](../../public/photos-ref/IMG_2553.jpg) | **matches** | [after](../../docs/reviews/eva-planting-shapes/IMG_2553-after.png) · [before](../../docs/reviews/eva-planting-shapes/IMG_2553-before.png) | The west bed now has low leafy box edging behind the kerb and pink-flowering shrubs standing in the soil behind it, as in the photo; the climbers on the far house walls are still missing (eva-west-planting). Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
 | `eva-planting-shapes` | [IMG_2549](../../public/photos-ref/IMG_2549.jpg) | **differs** → `eva-west-planting` | [after](../../docs/reviews/eva-planting-shapes/IMG_2549-after.png) · [before](../../docs/reviews/eva-planting-shapes/IMG_2549-before.png) | The low edging in the bed ahead is now leafy, but the photo's lush raised-planter planting (shrubs, lilies, pink periwinkle) and the climbers on the right-hand wall are still absent: the planter plants sit inside the protected walking route, and the west wall climbers are not built. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
+| `alberto-passage-porch` | [IMG_2792](../../public/photos-ref/IMG_2792.jpg) | **matches** | [after](../../docs/reviews/alberto-passage-porch/IMG_2792-after.png) · [before](../../docs/reviews/alberto-passage-porch/IMG_2792-before.png) | Looking into the porch: the square pier on the right, the red studded ramp beside it running in to the back wall, the tiled step platform with the potted jade on the left, the CALLE ALBERTO 22 40 letter tiles and the AGUA POTABLE hatch on the plain back wall all follow the photo; before, the recess was an open notch in the house with a generic window shutter on its back wall. The photographed porch is a little deeper (about 2 m against the registry's 1 m), the arch is out of frame at this pitch, and the big-leaved plant is simplified. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; the phone compass disagrees by about 50 degrees. A photographic diagnostic, not placement approval. |
 
 **Built without complete newer photo-check records:** `eva-walled-lawn`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
@@ -128,6 +137,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2503.jpg](../../public/photos-ref/IMG_2503.jpg) | ground | layout, planting, materials | Eva tiled footpath beside lawn with magnolia and lamp post **Looks at:** North-east end of the Eva lawn: the kerbed bed with a clipped oleander, the lantern and the round clipped tree, looking west across the lawn to the walled corner. _Used by: eva_walled_lawn.json:eva-walled-lawn, eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
 | [IMG_2336.jpg](../../public/photos-ref/IMG_2336.jpg) | ground | layout, planting | Calle Eva east of the middle pool: tiled path between lawns **Looks at:** Eva tiled lane beside lawns, clipped trees and dark lantern posts. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn, eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
 | [IMG_2677.jpg](../../public/photos-ref/IMG_2677.jpg) | ground | layout, facades, planting, signage, materials | Calle Eva path to the middle pool east gateway with bougainvillea and house beyond **Looks at:** Eva tiled lane at the middle pool east gateway: kerbed bed on the left, lawn with a tiled spur and clipped hedge on the right. **Note:** Same gateway as IMG_2340/2244 and the standing point of IMG_2678. _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
+| [IMG_2792.jpg](../../public/photos-ref/IMG_2792.jpg) | ground | facades, layout, levels, materials, signage | Passage mouth with a CALLE ALBERTO 22-40 sign **Looks at:** The CALLE ALBERTO 22 40 covered porch: arch, red studded ramp, tiled step, plaque and AGUA POTABLE hatch on the back wall. **Note:** Pin (+/-4.7 m) is just east of registry block 6265601UF1366N_part1, facing the only recess in its facade (3.1 m wide, 1 m deep); the porch is built there. The plaque names houses 22-40 of Calle Alberto, reached through this porch off Calle Eva east, so the map's Calle Alberto label in the north lanes covers at most part of the street. _Used by: alberto_passage.json:calle-alberto-22-40-porch, alberto_passage.json:calle-alberto-22-40-route._ |
 | [IMG_2551.jpg](../../public/photos-ref/IMG_2551.jpg) | ground | layout, materials, signage, planting | Calle Eva west footpath at the Dali end, terracotta path beside a lawn island **Looks at:** Eva west stretch looking south-west to the Dali car park: kerbed bed left, kerbed lawn island and lantern right. **Note:** Pin is at the Eva/Dali junction. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 | [IMG_2553.jpg](../../public/photos-ref/IMG_2553.jpg) | ground | layout, planting, facades, materials | Calle Eva west footpath looking east between white houses and a planted bed **Looks at:** Eva west stretch looking north-east from the Dali end: kerbed lawn left, kerbed planted bed right. _Used by: eva_lane.json:eva-lane-west, eva_lane.json:eva-lane-west-edges._ |
 | [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | ground | layout, materials, planting | Long tiled path to an arched iron gate **Looks at:** Eva tiled lane looking south-west to the middle pool east gateway: white rounded kerb and hedge on the left, lawn on the right. **Note:** Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW along Eva to the middle pool east gateway (same gateway, notice boards and espaliered bougainvillea wall as IMG_2677 and IMG_2340). _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
@@ -167,7 +177,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2732.jpg](../../public/photos-ref/IMG_2732.jpg) | ground | layout, materials | Calle Eva east: bench, lantern and octagonal paving |
 | [IMG_2787.jpg](../../public/photos-ref/IMG_2787.jpg) | ground | planting, materials | Eva east: strelitzia and azulejo bench, closer |
 | [IMG_2789.jpg](../../public/photos-ref/IMG_2789.jpg) | ground | layout, materials | Eva tiled lane beside a hedge planter |
-| [IMG_2792.jpg](../../public/photos-ref/IMG_2792.jpg) | ground | signage, layout | Passage mouth with a CALLE ALBERTO 22-40 sign **Note:** Pin is near Calle Eva east and Teodoro Rojo (+/-4.7 m), but the plaque reads CALLE ALBERTO 22 40 and Calle Alberto is in the north lanes; which passage this is is not established. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | [IMG_2251.jpg](../../public/photos-ref/IMG_2251.jpg) | ground | layout | Narrow lane through an arch, planting both sides |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |

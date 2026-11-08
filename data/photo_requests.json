@@ -385,6 +385,24 @@
       "radius": 12,
       "since": "2026-10-27",
       "status": "open"
+    },
+    {
+      "id": "calle-alberto-22-40-inside",
+      "area": "eva",
+      "at": [
+        -104.84,
+        47.6
+      ],
+      "look": [
+        -106.98,
+        48.89
+      ],
+      "ask": "Step into the CALLE ALBERTO 22 40 porch off Calle Eva east (IMG_2792) and photograph the way the passage turns, then one photo along it, and one from where it comes out (the inner courtyard, if that is where it goes).",
+      "why": "Only the porch is photographed; the passage beyond it is not built (gap:calle-alberto-22-40-tunnel)",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-11-08",
+      "status": "open"
     }
   ]
 }

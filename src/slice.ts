@@ -15,6 +15,7 @@ import {paintSeawardPaving} from "./seaward-paving";
 import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road";
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
+import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
@@ -112,6 +113,7 @@ async function boot(): Promise<void> {
   if (skeleton.boundaryReference) lowered = loweredRoads(skeleton.boundaryReference);
   suppressInEvaLawn(skeleton);
   suppressInEvaLane(skeleton); // the photographed Eva lane, kerbs and beds replace generated walls there
+  suppressInAlbertoPorch(skeleton); // the CALLE ALBERTO 22 40 porch fills its registry recess
   suppressInMiddlePoolReview(skeleton); // the traced middle pool gateway and planter replace generated walls there
   suppressInRaisedTerraces(skeleton); // traced raised terraces replace generated walls there
   const chosen = skeleton.pools.filter((p) => POOL_IDS.includes(p.id) || (POOL_IDS.includes("main") && p.id === "toddler"));
@@ -249,6 +251,7 @@ async function boot(): Promise<void> {
   if(skeleton.boundaryReference)addCervantesEastSouthPatios(scene,skeleton.boundaryReference);
   addEvaLawn(scene);
   addEvaLane(scene);
+  addAlbertoPassage(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
   addNorthPoolGardenPath(scene);
@@ -974,6 +977,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         const z = az + (bz - az) * t + nz * 0.04;
         // A wall shared with the next house has no openings.
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
+        if (inAlbertoPorch(x + nx * 0.3, z + nz * 0.3)) continue; // the porch's own back wall: plaque and hatch in src/alberto-passage.ts
         for (let f = 0; f < b.floors; f++) {
           if(b.id===SILVIA_HOST && f===0 && silviaCloseCamera(x,z))continue;
           if(f===0 && (replacesLaneGroundOpening(x,z)||inElenaWalkway(x,z)))continue; // the walkway's own doors are in src/elena-walkway.ts

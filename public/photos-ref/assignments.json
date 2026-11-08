@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 399,
-  "photosCitedByModel": 147,
-  "modelFeaturesWithPhotoCitations": 145
+  "features": 401,
+  "photosCitedByModel": 148,
+  "modelFeaturesWithPhotoCitations": 147
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -17990,7 +17990,10 @@
      "angleOffset": 25.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "alberto_passage.json:calle-alberto-22-40-porch",
+    "alberto_passage.json:calle-alberto-22-40-route"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -102.2,

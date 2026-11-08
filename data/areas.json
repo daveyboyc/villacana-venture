@@ -391,7 +391,10 @@
    "data": [
     "data/street_layout.json"
    ],
-   "src": []
+   "src": [],
+   "notes": [
+    "Open question (8 Nov): the CALLE ALBERTO 22 40 plaque is on a porch off Calle Eva east (IMG_2792), far from the street labelled Calle Alberto here (Google layout, 12 Oct). Either the name covers more than this lane or the label is misplaced; not resolved."
+   ]
   },
   {
    "id": "eva",
@@ -407,19 +410,22 @@
     "docs/STREET_LAYOUT.md",
     "docs/MIDDLE_POOL.md",
     "docs/EVA_WALLED_LAWN.md",
-    "docs/EVA_LANE.md"
+    "docs/EVA_LANE.md",
+    "docs/ALBERTO_PASSAGE.md"
    ],
    "data": [
     "data/street_layout.json",
     "data/middle_pool.json",
     "data/eva_walled_lawn.json",
-    "data/eva_lane.json"
+    "data/eva_lane.json",
+    "data/alberto_passage.json"
    ],
    "src": [
     "src/middle-pool.ts",
     "src/eva-walled-lawn.ts",
     "src/eva-lane.ts",
-    "src/clipped-plants.ts"
+    "src/clipped-plants.ts",
+    "src/alberto-passage.ts"
    ],
    "notes": [
     "IMG_2339: walled lawn corners with bougainvillea trained flat along the walls and green bollard lights.",
@@ -430,7 +436,8 @@
     "IMG_2336 and IMG_2503 put the one lantern and the round clipped tree on the north-west lawn at its north-east end, in a kerbed bed beside the Teodoro Rojo junction; the eva-walled-lawn lamp and tree were moved there. Open: where the tiled door spur north-west of the lane ends, and what paves the open court at the Teodoro Rojo junction (IMG_2501).",
     "Eva planting (eva-planting-shapes, 2026-11-06): leafy procedural plants replace the box hedges and sphere tree: clipped hedge in the east house bed, low box edging with pink-flowering roses behind it in the west beds (IMG_2553), a clipped narrow-leaved oleander at the north-east end (IMG_2503), the round clipped tree on a 2 m pale trunk, and jasmine and shrubs up the east house wall with white flowers (IMG_2504). Shapes and leaf counts are illustrative; the west wall climbers are still missing.",
     "8 Nov photos (IMG_2727-2732, IMG_2785-2790): Eva east of the Teodoro Rojo junction is paved in octagonal terracotta with small square inserts (like the seaward lanes), not the big square tiles of the west part; it has white rendered benches with azulejo panels, hedged white planters, lanterns on lawns and strelitzia clumps, and a walled side garden with brick-nosed steps (IMG_2728/2729). Square tiles with aggregate margins resume further west (IMG_2788-2790). Not built yet (task eva-east-lane).",
-    "8 Nov photos IMG_2705-2712 walk Eva west from the Dali car park to the middle pool south-west gateway (IMG_2710) and on into the garden (IMG_2711, IMG_2712): the square-tiled band with aggregate margins carries through the gate and meets the crazy paving at the lawn."
+    "8 Nov photos IMG_2705-2712 walk Eva west from the Dali car park to the middle pool south-west gateway (IMG_2710) and on into the garden (IMG_2711, IMG_2712): the square-tiled band with aggregate margins carries through the gate and meets the crazy paving at the lawn.",
+    "IMG_2792 (8 Nov): a covered porch with the plaque CALLE ALBERTO 22 40 opens off the path north of Calle Eva east, in the only recess of registry block 6265601UF1366N_part1 (3.1 m wide, 1 m deep). Built as photographed (alberto_passage.json). The block has an inner courtyard about 7 m behind the porch; the passage to it is drawn on the map as inferred but not cut in 3D. Open: which way it turns and where it comes out."
    ]
   },
   {

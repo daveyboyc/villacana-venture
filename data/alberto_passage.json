@@ -1,0 +1,111 @@
+{
+ "id": "calle-alberto-22-40",
+ "name": "Calle Alberto 22-40 · covered porch off Calle Eva east",
+ "hostBuilding": "6265601UF1366N_part1",
+ "evidence": [
+  "IMG_2792.jpg"
+ ],
+ "trust": "IMG_2792 shows the porch: an arch on square piers with a stepped impost, a red studded ramp running in beside the south pier (right in the photo), a tiled step platform with a potted jade and a big-leaved plant to the north (left), and a plain white back wall about 1-2 m in carrying black letter tiles CALLE ALBERTO 22 40 and a white AGUA POTABLE hatch; the passage must turn out of view. The camera pin (+/-4.7 m) faces the only recess in this registry facade, 3.1 m wide and 1.0 m deep, so the porch is placed in it; its exact width, depth, arch span, step heights and furniture positions are estimates. The phone compass reads 289 degrees, about 50 degrees west of the direction into this recess (239); compass error beside walls is common in this set, but it is why the placement stays an estimate.",
+ "frame": {
+  "about": "origin is the south corner of the recess on the facade line; along runs north-north-east along the facade; in runs into the house (west-north-west). Both inherit the registry's roughly 1-1.5 m offset.",
+  "origin": [
+   -106.94,
+   47.03
+  ],
+  "along": [
+   0.51823,
+   0.85524
+  ],
+  "in": [
+   -0.85524,
+   0.51823
+  ],
+  "width": 3.145,
+  "depth": 1.0
+ },
+ "arch": {
+  "pier": 0.35,
+  "proud": 0.15,
+  "spring": 1.9,
+  "crown": 2.55,
+  "ceiling": 2.65
+ },
+ "ramp": {
+  "along": [
+   0.35,
+   1.5
+  ],
+  "from": -0.5,
+  "rise": 0.12
+ },
+ "platform": {
+  "along": [
+   1.5,
+   3.145
+  ],
+  "from": -0.3,
+  "height": 0.3,
+  "step": {
+   "from": -0.55,
+   "height": 0.15
+  }
+ },
+ "plaque": {
+  "text": [
+   "CALLE",
+   "ALBERTO",
+   "22",
+   "40"
+  ],
+  "along": [
+   1.05,
+   2.4
+  ],
+  "up": 1.7,
+  "height": 0.17
+ },
+ "hatch": {
+  "along": [
+   1.55,
+   1.9
+  ],
+  "up": [
+   0.3,
+   0.6
+  ]
+ },
+ "plants": [
+  {
+   "id": "alberto-jade",
+   "kind": "jade",
+   "along": 2.3,
+   "in": 0.15,
+   "evidence": [
+    "IMG_2792.jpg"
+   ]
+  },
+  {
+   "id": "alberto-big-leaf",
+   "kind": "big-leaf",
+   "along": 2.8,
+   "in": 0.62,
+   "evidence": [
+    "IMG_2792.jpg"
+   ]
+  }
+ ],
+ "route": {
+  "trust": "inferred",
+  "points": [
+   [
+    -106.98,
+    48.89
+   ],
+   [
+    -113.36,
+    52.67
+   ]
+  ],
+  "why": "The registry footprint of this block has an inner courtyard whose east edge is about 7.4 m beyond the porch's back wall; the porch is the only recess in the facade and its plaque names the houses 22-40, so a covered passage most likely links it to the courtyard. Which way it turns behind the back wall, its width, height and line are not seen; drawn on the map only, not cut through the house in 3D."
+ }
+}

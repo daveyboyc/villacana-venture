@@ -358,6 +358,14 @@
   "eva_lane.json:eva-lane-west-edges": {
    "level": "estimated",
    "why": "Kerbed lawn island, kerbed beds and the raised planter are photographed; their depths and ends are estimated against the registry fronts."
+  },
+  "alberto_passage.json:calle-alberto-22-40-porch": {
+   "level": "estimated",
+   "why": "Arch, studded ramp, tiled step, plaque and hatch are clear in IMG_2792, but from one oblique photo; placed in the only recess of the facade the pin (+/-4.7 m) faces, with sizes estimated."
+  },
+  "alberto_passage.json:calle-alberto-22-40-route": {
+   "level": "inferred",
+   "why": "Not seen: the registry courtyard behind the porch and the CALLE ALBERTO 22 40 plaque make a covered passage to it likely; drawn on the map only."
   }
  },
  "gaps": [
@@ -572,6 +580,18 @@
     "IMG_2553.jpg"
    ],
    "why": "The bougainvillea and jasmine up the house walls behind the west beds are not modelled; the east wall climbers are (eva-planting-shapes)."
+  },
+  {
+   "id": "gap:calle-alberto-22-40-tunnel",
+   "name": "Covered passage from the Calle Alberto 22-40 porch to the inner courtyard",
+   "at": [
+    -113.36,
+    52.67
+   ],
+   "photos": [
+    "IMG_2792.jpg"
+   ],
+   "why": "IMG_2792 shows only the porch; which way the passage turns behind the back wall, and its width, height and line through the house, are unseen, so it is not cut through the registry house in 3D (photo request calle-alberto-22-40-inside)."
   }
  ]
 }
