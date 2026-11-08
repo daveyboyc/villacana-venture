@@ -272,9 +272,9 @@
     }
    },
    "photos": {
-    "count": 33,
-    "tagged": 33,
-    "placed": 26,
+    "count": 40,
+    "tagged": 40,
+    "placed": 33,
     "checks": {
      "matches": 4,
      "differs": 2,
@@ -335,7 +335,7 @@
    "status": [
     "Ground: 91% of open ground within 0.25 m of the laser survey.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 33, 26 placed; no camera solved.",
+    "Photos: 40, 33 placed; no camera solved.",
     "Facades: 0 of 40 kit parts traced from photos.",
     "How sure: 9 photographed, 12 estimated, 2 inferred, 1 known gap.",
     "Placement: 0 of 23 features verified, 5 open discrepancies."
@@ -482,9 +482,9 @@
     }
    },
    "photos": {
-    "count": 14,
-    "tagged": 14,
-    "placed": 14,
+    "count": 29,
+    "tagged": 29,
+    "placed": 29,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -524,46 +524,14 @@
    "status": [
     "Ground: 95% of open ground within 0.25 m of the laser survey.",
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
-    "Photos: 14, 14 placed; no camera solved.",
+    "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
     "Placement: no model features registered here yet."
    ],
    "light": {
-    "colour": "red",
-    "headline": "Photos needed: 2 spots",
+    "colour": "amber",
+    "headline": "Photos in: 2 photo requests answered, waiting for review, 4 build tasks open",
     "requests": [
-     {
-      "id": "main-pool-lawn",
-      "at": [
-       -12.0,
-       108.0
-      ],
-      "look": [
-       -18.0,
-       91.0
-      ],
-      "ask": "From the big-pool lawn: the pool and the terraces behind it; then turn round to the gateway and the railings.",
-      "why": "the main pool has only one placed photo",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "guillermo-lawn-edge",
-      "at": [
-       -12.0,
-       124.0
-      ],
-      "look": [
-       -18.0,
-       129.0
-      ],
-      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
-      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
      {
       "id": "beach-gateway",
       "at": [
@@ -580,7 +548,28 @@
       "state": "received",
       "photos": [
        "IMG_2602.jpg",
-       "IMG_2603.jpg"
+       "IMG_2603.jpg",
+       "IMG_2764.jpg",
+       "IMG_2765.jpg"
+      ]
+     },
+     {
+      "id": "guillermo-lawn-edge",
+      "at": [
+       -12.0,
+       124.0
+      ],
+      "look": [
+       -18.0,
+       129.0
+      ],
+      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+      "priority": 2,
+      "state": "received",
+      "photos": [
+       "IMG_2762.jpg",
+       "IMG_2763.jpg"
       ]
      }
     ]
@@ -619,9 +608,9 @@
     }
    },
    "photos": {
-    "count": 86,
-    "tagged": 86,
-    "placed": 86,
+    "count": 96,
+    "tagged": 96,
+    "placed": 96,
     "checks": {
      "matches": 4,
      "differs": 2,
@@ -677,7 +666,7 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 86, 86 placed; 3 cameras solved, none holding.",
+    "Photos: 96, 96 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
     "How sure: 12 photographed, 21 estimated, 2 inferred, 3 known gaps.",
     "Placement: 0 of 36 features verified, 2 open discrepancies."
@@ -773,9 +762,9 @@
     }
    },
    "photos": {
-    "count": 63,
-    "tagged": 63,
-    "placed": 63,
+    "count": 71,
+    "tagged": 71,
+    "placed": 71,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -821,7 +810,7 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 63, 63 placed; 3 cameras solved, none holding.",
+    "Photos: 71, 71 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 149 kit parts traced from photos.",
     "How sure: 12 photographed, 11 estimated, 2 inferred, 2 known gaps.",
     "Placement: 0 of 25 features verified."
@@ -919,9 +908,9 @@
     }
    },
    "photos": {
-    "count": 45,
-    "tagged": 45,
-    "placed": 45,
+    "count": 53,
+    "tagged": 53,
+    "placed": 53,
     "checks": {
      "matches": 2,
      "differs": 7,
@@ -990,7 +979,7 @@
    "status": [
     "Ground: 93% of open ground within 0.25 m of the laser survey; streets within 0.72 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 45, 45 placed; no camera solved.",
+    "Photos: 53, 53 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
     "How sure: 13 photographed, 3 estimated, 0 inferred, 1 known gap.",
     "Placement: 0 of 16 features verified, 7 open discrepancies."
@@ -1251,9 +1240,9 @@
     }
    },
    "photos": {
-    "count": 31,
-    "tagged": 31,
-    "placed": 31,
+    "count": 54,
+    "tagged": 54,
+    "placed": 54,
     "checks": {
      "matches": 12,
      "differs": 2,
@@ -1284,12 +1273,12 @@
     }
    ],
    "tasks": {
-    "open": 2,
+    "open": 3,
     "inProgress": 2,
     "titles": [
      "Calle Eva: full-source path, tunnel and boundary inventory",
      "Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns",
-     "Calle Eva: clipped shrub and tree shapes, climbers on the house walls"
+     "Calle Eva east: octagonal paving, azulejo benches, hedged planters and lanterns"
     ]
    },
    "confidence": {
@@ -1302,32 +1291,15 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 0.45 m.",
     "Footprints: 80% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 31, 31 placed; no camera solved.",
+    "Photos: 54, 54 placed; no camera solved.",
     "Facades: 0 of 146 kit parts traced from photos.",
     "How sure: 4 photographed, 3 estimated, 0 inferred, 2 known gaps.",
     "Placement: 0 of 7 features verified, 2 open discrepancies."
    ],
    "light": {
-    "colour": "red",
-    "headline": "Photos needed: 1 spot",
-    "requests": [
-     {
-      "id": "eva-east",
-      "at": [
-       -60.0,
-       51.0
-      ],
-      "look": [
-       -85.0,
-       66.0
-      ],
-      "ask": "Calle Eva's east stretch from the Guillermo end, looking west along it.",
-      "why": "no photo covers Eva east of the middle pool",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     }
-    ]
+    "colour": "amber",
+    "headline": "Photos in: 5 build tasks open, 2 open discrepancies",
+    "requests": []
    }
   },
   {
@@ -1363,9 +1335,9 @@
     }
    },
    "photos": {
-    "count": 126,
-    "tagged": 126,
-    "placed": 126,
+    "count": 149,
+    "tagged": 149,
+    "placed": 149,
     "checks": {
      "matches": 3,
      "differs": 3,
@@ -1414,14 +1386,14 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
-    "Photos: 126, 126 placed; no camera solved.",
+    "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
     "How sure: 1 photographed, 8 estimated, 3 inferred, 1 known gap.",
     "Placement: 0 of 12 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 2 spots",
+    "headline": "Photos needed: 1 spot",
     "requests": [
      {
       "id": "guillermo-lane-walk",
@@ -1452,8 +1424,11 @@
       "ask": "Calle Patricia from its east end, looking along the lane.",
       "why": "no photo covers most of Calle Patricia",
       "priority": 2,
-      "state": "open",
-      "photos": []
+      "state": "received",
+      "photos": [
+       "IMG_2779.jpg",
+       "IMG_2780.jpg"
+      ]
      }
     ]
    }
@@ -1482,9 +1457,9 @@
     }
    },
    "photos": {
-    "count": 54,
-    "tagged": 54,
-    "placed": 52,
+    "count": 57,
+    "tagged": 57,
+    "placed": 55,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1533,13 +1508,13 @@
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
-    "Photos: 54, 52 placed; no camera solved.",
+    "Photos: 57, 55 placed; no camera solved.",
     "How sure: 0 photographed, 11 estimated, 1 inferred, 3 known gaps.",
     "Placement: 0 of 12 features verified, 2 open discrepancies."
    ],
    "light": {
-    "colour": "red",
-    "headline": "Photos needed: 1 spot",
+    "colour": "amber",
+    "headline": "Photos in: 1 photo request answered, waiting for review, 5 build tasks open, 2 open discrepancies",
     "requests": [
      {
       "id": "beach-verge",
@@ -1554,8 +1529,11 @@
       "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
       "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
       "priority": 1,
-      "state": "open",
-      "photos": []
+      "state": "received",
+      "photos": [
+       "IMG_2764.jpg",
+       "IMG_2770.jpg"
+      ]
      }
     ]
    }
@@ -1589,9 +1567,9 @@
     }
    },
    "photos": {
-    "count": 51,
-    "tagged": 51,
-    "placed": 50,
+    "count": 58,
+    "tagged": 58,
+    "placed": 57,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1631,7 +1609,7 @@
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 51, 50 placed; no camera solved.",
+    "Photos: 58, 57 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
     "How sure: 4 photographed, 10 estimated, 0 inferred, 1 known gap.",
     "Placement: 0 of 14 features verified."
@@ -1712,9 +1690,9 @@
     }
    },
    "photos": {
-    "count": 403,
-    "tagged": 403,
-    "placed": 385,
+    "count": 478,
+    "tagged": 478,
+    "placed": 460,
     "checks": {
      "matches": 18,
      "differs": 13,
@@ -1829,7 +1807,7 @@
     }
    ],
    "tasks": {
-    "open": 40,
+    "open": 41,
     "inProgress": 31,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -1847,14 +1825,14 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 403, 385 placed; 7 cameras solved, 1 station holding.",
+    "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 57 photographed, 100 estimated, 9 inferred, 15 known gaps.",
     "Placement: 0 of 399 features verified, 20 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 16 spots",
+    "headline": "Photos needed: 11 spots",
     "requests": [
      {
       "id": "alberto",
@@ -1868,22 +1846,6 @@
       ],
       "ask": "Calle Alberto: one photo along the lane from each end.",
       "why": "no photos at all in the north lanes",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "beach-verge",
-      "at": [
-       2.0,
-       141.0
-      ],
-      "look": [
-       14.0,
-       128.0
-      ],
-      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
-      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -1969,22 +1931,6 @@
       "photos": []
      },
      {
-      "id": "main-pool-lawn",
-      "at": [
-       -12.0,
-       108.0
-      ],
-      "look": [
-       -18.0,
-       91.0
-      ],
-      "ask": "From the big-pool lawn: the pool and the terraces behind it; then turn round to the gateway and the railings.",
-      "why": "the main pool has only one placed photo",
-      "priority": 1,
-      "state": "open",
-      "photos": []
-     },
-     {
       "id": "elena-25-from-lane",
       "at": [
        -148.0,
@@ -1996,38 +1942,6 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "eva-east",
-      "at": [
-       -60.0,
-       51.0
-      ],
-      "look": [
-       -85.0,
-       66.0
-      ],
-      "ask": "Calle Eva's east stretch from the Guillermo end, looking west along it.",
-      "why": "no photo covers Eva east of the middle pool",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "guillermo-lawn-edge",
-      "at": [
-       -12.0,
-       124.0
-      ],
-      "look": [
-       -18.0,
-       129.0
-      ],
-      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
-      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -2060,22 +1974,6 @@
       ],
       "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
       "why": "levels item paseo-east-end-height; the survey shows little or no step there",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "patricia-east",
-      "at": [
-       -45.0,
-       90.0
-      ],
-      "look": [
-       -70.0,
-       105.0
-      ],
-      "ask": "Calle Patricia from its east end, looking along the lane.",
-      "why": "no photo covers most of Calle Patricia",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -2128,7 +2026,28 @@
       "state": "received",
       "photos": [
        "IMG_2602.jpg",
-       "IMG_2603.jpg"
+       "IMG_2603.jpg",
+       "IMG_2764.jpg",
+       "IMG_2765.jpg"
+      ]
+     },
+     {
+      "id": "beach-verge",
+      "at": [
+       2.0,
+       141.0
+      ],
+      "look": [
+       14.0,
+       128.0
+      ],
+      "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+      "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+      "priority": 1,
+      "state": "received",
+      "photos": [
+       "IMG_2764.jpg",
+       "IMG_2770.jpg"
       ]
      },
      {
@@ -2163,6 +2082,44 @@
       "photos": [
        "IMG_2537.jpg",
        "IMG_2538.jpg"
+      ]
+     },
+     {
+      "id": "guillermo-lawn-edge",
+      "at": [
+       -12.0,
+       124.0
+      ],
+      "look": [
+       -18.0,
+       129.0
+      ],
+      "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+      "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+      "priority": 2,
+      "state": "received",
+      "photos": [
+       "IMG_2762.jpg",
+       "IMG_2763.jpg"
+      ]
+     },
+     {
+      "id": "patricia-east",
+      "at": [
+       -45.0,
+       90.0
+      ],
+      "look": [
+       -70.0,
+       105.0
+      ],
+      "ask": "Calle Patricia from its east end, looking along the lane.",
+      "why": "no photo covers most of Calle Patricia",
+      "priority": 2,
+      "state": "received",
+      "photos": [
+       "IMG_2779.jpg",
+       "IMG_2780.jpg"
       ]
      }
     ]

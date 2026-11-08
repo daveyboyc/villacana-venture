@@ -11,8 +11,8 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 - sourceObservations: 59
 - sourcePixelTraces: 57
 - sourcePixelLocators: 32
-- sources: 418
-- uninspectedSources: 348
+- sources: 493
+- uninspectedSources: 423
 - routes: 24
 - segments: 173
 - tracedSides: 0
@@ -25,18 +25,18 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Area | Sources / uninspected | Routes | Tunnel candidates | Coverage |
 | --- | --- | --- | --- | --- |
 | North pool | 17 / 17 | 0 | 0 | uninspected |
-| Middle pool | 34 / 34 | 0 | 0 | uninspected |
+| Middle pool | 41 / 41 | 0 | 0 | uninspected |
 | South pool | 18 / 18 | 0 | 0 | uninspected |
-| Main pool | 19 / 19 | 0 | 0 | uninspected |
-| Calle Elena | 86 / 47 | 2 | 2 | partial |
-| Calle Miguel de Cervantes | 63 / 35 | 1 | 1 | partial |
-| Calle Pintor Dalí | 45 / 45 | 3 | 0 | uninspected |
+| Main pool | 34 / 34 | 0 | 0 | uninspected |
+| Calle Elena | 96 / 57 | 2 | 2 | partial |
+| Calle Miguel de Cervantes | 71 / 43 | 1 | 1 | partial |
+| Calle Pintor Dalí | 53 / 53 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 4 / 4 | 2 | 0 | uninspected |
 | Loira, Bolivia, Alberto and Isabel | 2 / 2 | 4 | 6 | uninspected |
-| Calle Eva | 31 / 31 | 2 | 0 | uninspected |
-| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 129 / 129 | 6 | 2 | uninspected |
-| Barraka and the beach | 55 / 55 | 1 | 0 | uninspected |
-| The paseo | 54 / 54 | 4 | 0 | uninspected |
+| Calle Eva | 54 / 54 | 2 | 0 | uninspected |
+| Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 152 / 152 | 6 | 2 | uninspected |
+| Barraka and the beach | 58 / 58 | 1 | 0 | uninspected |
+| The paseo | 61 / 61 | 4 | 0 | uninspected |
 | The whole resort | 23 / 23 | 0 | 0 | uninspected |
 
 Inspection is scoped to its named area; inspecting a shared source for Elena does not complete another area. Source-pixel traces remain separate from registered map edges. Source totals deduplicate IDs globally; area totals overlap. Unknown intervals are not traced sides. Tunnel candidates may overlap; this is not a count of unique real tunnels. All portal positions and physical widths remain unresolved.

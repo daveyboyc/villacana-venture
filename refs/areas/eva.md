@@ -13,6 +13,8 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 - Eva west: the registry house north-west of the lane stands only 0.6 m from the mapped centreline (0.9 m further on), with a raised planter in front of it in IMG_2549, so the photographed tile band is drawn 0.9 m south-east of the mapped line. The walking route still follows the mapped line along the planter face; moving it is walking work and is left open.
 - IMG_2336 and IMG_2503 put the one lantern and the round clipped tree on the north-west lawn at its north-east end, in a kerbed bed beside the Teodoro Rojo junction; the eva-walled-lawn lamp and tree were moved there. Open: where the tiled door spur north-west of the lane ends, and what paves the open court at the Teodoro Rojo junction (IMG_2501).
 - Eva planting (eva-planting-shapes, 2026-11-06): leafy procedural plants replace the box hedges and sphere tree: clipped hedge in the east house bed, low box edging with pink-flowering roses behind it in the west beds (IMG_2553), a clipped narrow-leaved oleander at the north-east end (IMG_2503), the round clipped tree on a 2 m pale trunk, and jasmine and shrubs up the east house wall with white flowers (IMG_2504). Shapes and leaf counts are illustrative; the west wall climbers are still missing.
+- 8 Nov photos (IMG_2727-2732, IMG_2785-2790): Eva east of the Teodoro Rojo junction is paved in octagonal terracotta with small square inserts (like the seaward lanes), not the big square tiles of the west part; it has white rendered benches with azulejo panels, hedged white planters, lanterns on lawns and strelitzia clumps, and a walled side garden with brick-nosed steps (IMG_2728/2729). Square tiles with aggregate margins resume further west (IMG_2788-2790). Not built yet (task eva-east-lane).
+- 8 Nov photos IMG_2705-2712 walk Eva west from the Dali car park to the middle pool south-west gateway (IMG_2710) and on into the garden (IMG_2711, IMG_2712): the square-tiled band with aggregate margins carries through the gate and meets the crazy paving at the lawn.
 
 ## Read first
 
@@ -23,8 +25,8 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 
 ## Coverage
 
-Layout: 27, Levels and slopes: 1, Facades and roofs: 16, Materials: 21, Planting: 21, Signs: 4, Views: 2
-31 reviewed, 0 suggested only by camera position.
+Layout: 48, Levels and slopes: 3, Facades and roofs: 20, Materials: 42, Planting: 35, Signs: 8, Views: 2
+54 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -32,6 +34,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P2 | `eva-east-lane` | Calle Eva east: octagonal paving, azulejo benches, hedged planters and lanterns (after eva-lane-details) | open · placement: not-verified | [IMG_2727](../../public/photos-ref/IMG_2727.jpg), [IMG_2732](../../public/photos-ref/IMG_2732.jpg), [IMG_2730](../../public/photos-ref/IMG_2730.jpg), [IMG_2785](../../public/photos-ref/IMG_2785.jpg), [IMG_2786](../../public/photos-ref/IMG_2786.jpg), [IMG_2787](../../public/photos-ref/IMG_2787.jpg), [IMG_2788](../../public/photos-ref/IMG_2788.jpg), [IMG_2728](../../public/photos-ref/IMG_2728.jpg), [IMG_2729](../../public/photos-ref/IMG_2729.jpg) |
 | P2 | `eva-lane-details` | Calle Eva: the tiled lane with aggregate margins, white kerbs, lawns, beds and lanterns | in-progress · Claude · placement: not-verified | [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2504](../../public/photos-ref/IMG_2504.jpg), [IMG_2677](../../public/photos-ref/IMG_2677.jpg), [IMG_2676](../../public/photos-ref/IMG_2676.jpg), [IMG_2553](../../public/photos-ref/IMG_2553.jpg), [IMG_2551](../../public/photos-ref/IMG_2551.jpg), [IMG_2552](../../public/photos-ref/IMG_2552.jpg), [IMG_2549](../../public/photos-ref/IMG_2549.jpg), [IMG_2503](../../public/photos-ref/IMG_2503.jpg) |
 | P2 | `path-network-inventory-eva` [#134](https://github.com/daveyboyc/villacana-venture/issues/134) | Calle Eva: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P3 | `eva-planting-shapes` | Calle Eva: clipped shrub and tree shapes, climbers on the house walls (after eva-lane-details) | in-progress · Claude · placement: not-verified | [IMG_2503](../../public/photos-ref/IMG_2503.jpg), [IMG_2504](../../public/photos-ref/IMG_2504.jpg), [IMG_2677](../../public/photos-ref/IMG_2677.jpg), [IMG_2549](../../public/photos-ref/IMG_2549.jpg), [IMG_2553](../../public/photos-ref/IMG_2553.jpg) |
@@ -138,12 +141,33 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | ground | layout, facades, planting, materials | Inner walk-through south end: lantern arch, monstera planting and inset tiles **Note:** Pin is +/-4.6 m in the block between Dali and the middle pool; area attribution (eva/south end) is inferred from the continuing bearing toward the Eva corner. |
 | [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
+| [IMG_2710.jpg](../../public/photos-ref/IMG_2710.jpg) | ground | layout, facades, signage, planting | Middle pool south-west gate at the end of Calle Eva west **Note:** Same middle pool south-west gateway as IMG_2333; seen here from Calle Eva west. |
 | [IMG_2547.jpg](../../public/photos-ref/IMG_2547.jpg) | ground | layout, facades, materials | Inner walk-through covered section: double doors, pebble mat and tile inset floor **Note:** Pin +/-4.5 m in the block between Dali and the middle pool; exit toward Eva is inferred from the bearing, not seen. |
 | [IMG_2548.jpg](../../public/photos-ref/IMG_2548.jpg) | ground | layout, materials, facades | Covered tiled passage off Calle Eva with brown double door and potted trees **Note:** Looks like the same type of passage as IMG_2249/2250 (also off Calle Eva). Pin is inside the block, so which passage it is cannot be confirmed from the picture; heading 147 runs towards Calle Eva. |
 | [IMG_2550.jpg](../../public/photos-ref/IMG_2550.jpg) | ground | facades, materials, planting | Arched timber double gate in a white wall, Calle Eva/Dali corner **Looks at:** Arched brown timber double gate in white wall. **Note:** Which house this gate belongs to is not established; looksAt is about 4 m along the heading from the pin and is approximate. |
+| [IMG_2702.jpg](../../public/photos-ref/IMG_2702.jpg) | ground | layout, materials, signage | Narrow lane between walls with a street plaque and slot drain **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2703.jpg](../../public/photos-ref/IMG_2703.jpg) | ground | layout, materials, planting | Eva west footpath beside the Dali road, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2704.jpg](../../public/photos-ref/IMG_2704.jpg) | ground | layout, materials, planting | Eva west footpath with kerbed grass strip, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2705.jpg](../../public/photos-ref/IMG_2705.jpg) | ground | layout, materials, planting | Eva west end: lawn island with strelitzia and the curving path **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2706.jpg](../../public/photos-ref/IMG_2706.jpg) | ground | layout, materials, planting | Eva west stretch from the Dali end, looking north-east **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2707.jpg](../../public/photos-ref/IMG_2707.jpg) | ground | layout, materials, planting | Eva west stretch: kerbed rose bed and house fronts |
+| [IMG_2708.jpg](../../public/photos-ref/IMG_2708.jpg) | ground | layout, materials, signage | Eva west stretch towards the middle pool gate, slot drain **Note:** The plaque reads ...NA 23 (as in IMG_2549); the same stretch of Eva west. |
+| [IMG_2727.jpg](../../public/photos-ref/IMG_2727.jpg) | ground | layout, materials, planting | Calle Eva east: octagonal paving, lantern and tiled bench |
+| [IMG_2728.jpg](../../public/photos-ref/IMG_2728.jpg) | ground | layout, levels, materials | Side garden with brick-edged steps off Calle Eva east |
+| [IMG_2729.jpg](../../public/photos-ref/IMG_2729.jpg) | ground | layout, levels, materials | Side garden with brick-edged steps, wider view |
+| [IMG_2730.jpg](../../public/photos-ref/IMG_2730.jpg) | ground | materials, facades, layout | White rendered bench with an azulejo panel on Calle Eva east |
+| [IMG_2785.jpg](../../public/photos-ref/IMG_2785.jpg) | ground | layout, materials, planting | Calle Eva east: octagonal paving between hedged planters |
+| [IMG_2786.jpg](../../public/photos-ref/IMG_2786.jpg) | ground | planting, materials, facades | Eva east: strelitzia, azulejo bench and lantern |
+| [IMG_2788.jpg](../../public/photos-ref/IMG_2788.jpg) | ground | layout, materials, planting | Eva east looking west: square tiles between hedged planters |
+| [IMG_2790.jpg](../../public/photos-ref/IMG_2790.jpg) | ground | layout, materials, planting | Eva tiled lane with hedge planter and bougainvillea |
+| [IMG_2791.jpg](../../public/photos-ref/IMG_2791.jpg) | ground | layout, materials, facades | Tiled lane with grille windows and a raised planter |
 | [IMG_2249.jpg](../../public/photos-ref/IMG_2249.jpg) | ground | layout, materials | Covered passage with patterned tiles off Calle Eva |
 | [IMG_2250.jpg](../../public/photos-ref/IMG_2250.jpg) | ground | layout, materials | Covered arched passage, lantern, patterned tiles |
 | [IMG_2502.jpg](../../public/photos-ref/IMG_2502.jpg) | ground | planting, facades | Magnolia and clipped hedge in front of a white house **Note:** Pin on Calle Teodoro Rojo near its junction with Eva; the house is across the lawn to the north. |
+| [IMG_2732.jpg](../../public/photos-ref/IMG_2732.jpg) | ground | layout, materials | Calle Eva east: bench, lantern and octagonal paving |
+| [IMG_2787.jpg](../../public/photos-ref/IMG_2787.jpg) | ground | planting, materials | Eva east: strelitzia and azulejo bench, closer |
+| [IMG_2789.jpg](../../public/photos-ref/IMG_2789.jpg) | ground | layout, materials | Eva tiled lane beside a hedge planter |
+| [IMG_2792.jpg](../../public/photos-ref/IMG_2792.jpg) | ground | signage, layout | Passage mouth with a CALLE ALBERTO 22-40 sign **Note:** Pin is near Calle Eva east and Teodoro Rojo (+/-4.7 m), but the plaque reads CALLE ALBERTO 22 40 and Calle Alberto is in the north lanes; which passage this is is not established. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | [IMG_2251.jpg](../../public/photos-ref/IMG_2251.jpg) | ground | layout | Narrow lane through an arch, planting both sides |
 | [IMG_2291.jpg](../../public/photos-ref/IMG_2291.jpg) | ground | facades, layout | Pintor Dalí: arched entrance and white facade _Used by: door_sills.json:dali-footpath-kerb._ |
@@ -153,3 +177,5 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | ground | layout, facades, planting, materials | Footpath along the west side of the block, house with grilled windows **Note:** Pin is on the Dali road edge; the footpath is the Calle Eva west-side footpath. |
 | [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | ground | facades, planting, layout | Dali car park edge with lawn islands and white house with brown gate |
 | [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials, planting | Terracotta footpath with kerbed planters leading to a brown gate **Note:** Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise). |
+| [IMG_2701.jpg](../../public/photos-ref/IMG_2701.jpg) | ground | layout, materials, planting | Small tiled forecourt at the Dali kerb with a lantern **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2711.jpg](../../public/photos-ref/IMG_2711.jpg) | ground | layout, materials, planting | Through the gate: tiled path into the middle pool garden |

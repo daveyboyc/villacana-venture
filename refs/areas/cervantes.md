@@ -30,8 +30,8 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 
 ## Coverage
 
-Layout: 57, Levels and slopes: 24, Facades and roofs: 28, Materials: 24, Planting: 34, Signs: 12, Views: 5
-63 reviewed, 0 suggested only by camera position.
+Layout: 65, Levels and slopes: 24, Facades and roofs: 30, Materials: 24, Planting: 42, Signs: 14, Views: 5
+71 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -283,9 +283,16 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2470.jpg](../../public/photos-ref/IMG_2470.jpg) | ground | layout, facades, materials | Covered tiled portal with arch to a planted lane **Note:** Pin sits at the west (Dalí) end of Calle Miguel de Cervantes and the view runs SE into the block; the covered portal is assumed to be the Cervantes entry but is not matched to a specific registry opening. |
 | [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | ground | layout, levels, materials | Dalí footpath ramp with white mailbox pillar |
 | [IMG_2542.jpg](../../public/photos-ref/IMG_2542.jpg) | ground | materials, layout, facades | Cervantes inner walk-through: pebble mosaic and blue-and-white inset tiles **Looks at:** Pebble mosaic panel in the walk-through entrance. |
+| [IMG_2794.jpg](../../public/photos-ref/IMG_2794.jpg) | ground | layout, planting, facades | Lane with bougainvillea and grille windows, looking south-west |
+| [IMG_2796.jpg](../../public/photos-ref/IMG_2796.jpg) | ground | layout, planting, facades | Lane beside a brown door and flowering beds |
+| [IMG_2799.jpg](../../public/photos-ref/IMG_2799.jpg) | ground | layout, planting, signage | Lane with a kerbed bed and a CALLE plaque ahead |
+| [IMG_2800.jpg](../../public/photos-ref/IMG_2800.jpg) | ground | layout, planting, signage | Fan palm bed and street plaque at a lane corner |
 | [IMG_2252.jpg](../../public/photos-ref/IMG_2252.jpg) | ground | levels, layout | Cervantes near Elena: tiled lane with a central sloping strip **Note:** Shows a ramp strip in the lane. |
 | [IMG_2288.jpg](../../public/photos-ref/IMG_2288.jpg) | ground | signage, layout | Cervantes area: passage signed Calle Miguel |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
+| [IMG_2795.jpg](../../public/photos-ref/IMG_2795.jpg) | ground | layout, planting | Lane between a white wall and flowering shrubs |
+| [IMG_2797.jpg](../../public/photos-ref/IMG_2797.jpg) | ground | layout, planting | Lane through flowering beds towards a white wall |
+| [IMG_2798.jpg](../../public/photos-ref/IMG_2798.jpg) | ground | layout, planting | Lane between flowering hedges, looking south-west |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
 | [IMG_2445.jpg](../../public/photos-ref/IMG_2445.jpg) | ground | materials | Octagonal terracotta paving close-up on Cervantes **Note:** Camera looks down at the floor so only the pattern is usable; heading 240 (along the lane) comes from the pin metadata. Octagon pattern here (about 0.4 m octagons) differs from the square tiles used west of Elena. |
 | [IMG_2462.jpg](../../public/photos-ref/IMG_2462.jpg) | ground | planting | Bougainvillea over a white wall above a plumbago and clipped hedge, Elena junction **Note:** Close planting shot at the junction; heading 289 points at the white garden wall near the brown door (IMG_2196), but the location within the junction is not established. |
@@ -298,3 +305,4 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2514.jpg](../../public/photos-ref/IMG_2514.jpg) | ground | layout, materials, planting, levels | Elena north lane foot: hedged planting bed, red drain grating and aggregate margin **Looks at:** First hedged bed and drain grating at the foot of Elena north. |
 | [IMG_2466.jpg](../../public/photos-ref/IMG_2466.jpg) | ground | layout, planting, materials | Elena south footpath beside the junction lawn: kerb, lawn and three clipped trees **Looks at:** Elena south footpath and lawn trees beyond the junction. **Note:** Heading 173 from (-151.5, 56.9). The three clipped trees correspond to the sequence described for IMG_2358/2367. looksAt estimated 7 m along the view. |
 | [IMG_2539.jpg](../../public/photos-ref/IMG_2539.jpg) | ground | layout, levels, planting | Elena north by the Cervantes junction: steps and tiled lane between planted beds |
+| [IMG_2801.jpg](../../public/photos-ref/IMG_2801.jpg) | ground | layout, planting | Lane between a raised planter and a rose bed |

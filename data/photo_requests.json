@@ -125,7 +125,8 @@
       "priority": 1,
       "radius": 10,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "8 Nov: IMG_2773-2776 and IMG_2823 cover the lower lane beside the main pool (octagonal paving, lantana planter wall, steps at the pool building); the stretch from Jorge down to there is still unphotographed."
     },
     {
       "id": "guillermo-lawn-edge",
@@ -143,7 +144,8 @@
       "priority": 2,
       "radius": 6,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "8 Nov: IMG_2762/2763 show the strelitzia corner and the pink path round a white wall on the lawn side, not the wall side-on with the lane edge in frame; still wanted."
     },
     {
       "id": "beach-gateway",
@@ -162,7 +164,7 @@
       "radius": 6,
       "since": "2026-10-27",
       "status": "open",
-      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo. IMG_2602/IMG_2603 (4 Nov) show a coastal lawn gate pier with an iron gate, signs and a pink lawn path with bollard lights; the agent read them from the reading sheet only and it is not confirmed they show this arched gateway. Check against the full-size photos before marking answered."
+      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo. IMG_2602/IMG_2603 (4 Nov) show a coastal lawn gate pier with an iron gate, signs and a pink lawn path with bollard lights; the agent read them from the reading sheet only and it is not confirmed they show this arched gateway. Check against the full-size photos before marking answered. 8 Nov: IMG_2766/2767 show the arched gate with plumbago and the green railing from the painted crossing, but obliquely and close; a square-on view and the wall down the ramp are still wanted."
     },
     {
       "id": "beach-verge",
@@ -180,7 +182,8 @@
       "priority": 1,
       "radius": 8,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "8 Nov: IMG_2769/2770 look along the paseo edge and the sandy grass verge towards Barraka; the view from the sand back at the grass and shrubs is still missing."
     },
     {
       "id": "paseo-wall-east-end",
@@ -216,7 +219,14 @@
       "priority": 1,
       "radius": 10,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "answered",
+      "answeredBy": [
+        "IMG_2764.jpg",
+        "IMG_2765.jpg",
+        "IMG_2759.jpg",
+        "IMG_2761.jpg"
+      ],
+      "note": "8 Nov batch: IMG_2764/2765 from the lawn to the pool and the wave-roofed building; IMG_2759 to the sea gateway and IMG_2761 to the railings. IMG_2759 and IMG_2760 pins are vague (+/-11-19 m)."
     },
     {
       "id": "south-lane-walk",
@@ -292,7 +302,8 @@
       "priority": 2,
       "radius": 8,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "open",
+      "note": "8 Nov: IMG_2779/2780 are a garden and private lawn near the east end, not views along Calle Patricia; still wanted."
     },
     {
       "id": "eva-east",
@@ -310,7 +321,16 @@
       "priority": 2,
       "radius": 8,
       "since": "2026-10-27",
-      "status": "open"
+      "status": "answered",
+      "answeredBy": [
+        "IMG_2727.jpg",
+        "IMG_2785.jpg",
+        "IMG_2732.jpg",
+        "IMG_2730.jpg",
+        "IMG_2786.jpg",
+        "IMG_2788.jpg"
+      ],
+      "note": "8 Nov batch: IMG_2727 looks west along Eva east from about 7 m short of the Guillermo end, and IMG_2785-2788 and IMG_2730/2732 cover the stretch to the Teodoro Rojo junction: octagonal paving, hedged white planters, azulejo benches, lanterns and strelitzias."
     },
     {
       "id": "alberto",

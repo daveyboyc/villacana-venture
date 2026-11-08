@@ -20,8 +20,8 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 ## Coverage
 
-Layout: 42, Levels and slopes: 8, Facades and roofs: 12, Materials: 23, Planting: 18, Signs: 1, Views: 5
-45 reviewed, 0 suggested only by camera position.
+Layout: 50, Levels and slopes: 8, Facades and roofs: 12, Materials: 30, Planting: 25, Signs: 1, Views: 6
+53 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -190,7 +190,13 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2554.jpg](../../public/photos-ref/IMG_2554.jpg) | ground | layout, planting, view | Dali car park looking north with CCTV lamp post and parked cars **Note:** Pin is at the Dali/Eva corner. |
 | [IMG_2555.jpg](../../public/photos-ref/IMG_2555.jpg) | ground | facades, planting, layout | Dali car park edge with lawn islands and white house with brown gate |
 | [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials, planting | Terracotta footpath with kerbed planters leading to a brown gate **Note:** Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise). |
+| [IMG_2696.jpg](../../public/photos-ref/IMG_2696.jpg) | ground | layout, materials, planting | Crazy-paving path from the Dali parking into a garden lane |
+| [IMG_2697.jpg](../../public/photos-ref/IMG_2697.jpg) | ground | layout, materials, planting | Crazy-paving path from the Dali parking, wider view |
+| [IMG_2698.jpg](../../public/photos-ref/IMG_2698.jpg) | ground | layout, materials, planting | Crazy-paving path and lantern beyond parked cars |
+| [IMG_2699.jpg](../../public/photos-ref/IMG_2699.jpg) | ground | layout, materials, view | Dali car park aisle with marked bays, looking north |
+| [IMG_2701.jpg](../../public/photos-ref/IMG_2701.jpg) | ground | layout, materials, planting | Small tiled forecourt at the Dali kerb with a lantern **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | ground | layout, facades | Calle Pintor Dalí looking north |
+| [IMG_2700.jpg](../../public/photos-ref/IMG_2700.jpg) | ground | layout, planting | Dali car park aisle with white kerbs and frontage planters |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | [IMG_2290.jpg](../../public/photos-ref/IMG_2290.jpg) | ground | layout | Pintor Dalí: grass between bays and shared footpath |
@@ -201,6 +207,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2468.jpg](../../public/photos-ref/IMG_2468.jpg) | ground | layout, facades, planting | Cervantes west end: arcaded porch on the left, dracaena and shrub bed on the right **Looks at:** West end of the lane towards Dali. **Note:** Pin (-167.1, 65.2) +-2.3 m. The arch is the mouth of the south-side covered passage seen in IMG_2288/2469. looksAt estimated 20 m along heading 242. |
 | [IMG_2471.jpg](../../public/photos-ref/IMG_2471.jpg) | ground | layout, levels, materials | Dalí footpath ramp with white mailbox pillar |
 | [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
+| [IMG_2703.jpg](../../public/photos-ref/IMG_2703.jpg) | ground | layout, materials, planting | Eva west footpath beside the Dali road, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2704.jpg](../../public/photos-ref/IMG_2704.jpg) | ground | layout, materials, planting | Eva west footpath with kerbed grass strip, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |
