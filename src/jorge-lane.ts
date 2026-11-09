@@ -8,7 +8,7 @@ import type { Vec2 } from "./types";
 /** Calle Jorge: grass, the house-side hedge wall, the white benches, the street sign and its lamp. */
 export const jorgeLane = data;
 const sign = data.sign, lamp = data.lamp;
-const BENCH_LENGTH = 1.45, BENCH_DEPTH = 0.7;
+const BENCH_LENGTH = 1.45;
 const road = skeleton.streets.find((s) => s.id === "jorge")!;
 const line = road.points as Vec2[];
 type Frame = { p: Vec2; lawn: Vec2; hedge: Vec2; along: Vec2 };
@@ -45,21 +45,36 @@ export function jorgeBenchSpots(): { at: Vec2; face: Vec2 }[] {
 function yawOf(face: Vec2): number {
   return Math.atan2(face[0], face[1]);
 }
+/** Schematic of the blue, yellow and green azulejo on IMG_2232. Not a copy of the tile. */
 function tile(): THREE.CanvasTexture {
-  const c = document.createElement("canvas"); c.width = c.height = 256;
-  const g = c.getContext("2d")!;
-  g.fillStyle = "#f4efe4"; g.fillRect(0, 0, 256, 256);
-  g.strokeStyle = "#1d4e89"; g.lineWidth = 10; g.strokeRect(18, 18, 220, 220);
-  g.strokeStyle = "#c9a227"; g.lineWidth = 6; g.strokeRect(36, 36, 184, 184);
-  g.fillStyle = "#1d4e89";
+  const s = 512, g = document.createElement("canvas"); g.width = g.height = s;
+  const c = g.getContext("2d")!;
+  c.fillStyle = "#f6f1e4"; c.fillRect(0, 0, s, s);
+  c.strokeStyle = "#1a4e86"; c.lineWidth = 22; c.strokeRect(14, 14, s - 28, s - 28);
+  c.strokeStyle = "#d7a31a"; c.lineWidth = 8; c.strokeRect(42, 42, s - 84, s - 84);
+  c.save(); c.translate(s / 2, s / 2);
   for (let i = 0; i < 4; i++) {
-    g.save(); g.translate(128, 128); g.rotate(i * Math.PI / 2);
-    g.beginPath(); g.ellipse(0, -48, 22, 40, 0, 0, Math.PI * 2); g.fill();
-    g.fillStyle = "#2f6b3a"; g.beginPath(); g.ellipse(-28, -20, 14, 22, 0.6, 0, Math.PI * 2); g.fill();
-    g.fillStyle = "#1d4e89"; g.restore();
+    c.rotate(Math.PI / 2);
+    c.strokeStyle = "#1a4e86"; c.lineWidth = 16; c.lineCap = "round";
+    c.beginPath(); c.arc(78, -70, 46, 0.4, Math.PI * 1.55); c.stroke();
+    c.beginPath(); c.arc(86, -78, 18, 0, Math.PI * 2); c.stroke();
+    c.fillStyle = "#e2b423"; c.beginPath(); c.ellipse(0, -86, 18, 40, 0, 0, Math.PI * 2); c.fill();
+    c.fillStyle = "#2c6b3c"; c.beginPath(); c.ellipse(46, -40, 14, 26, 0.9, 0, Math.PI * 2); c.fill();
+    c.fillStyle = "#1a4e86"; c.beginPath(); c.ellipse(36, -96, 10, 16, 0.4, 0, Math.PI * 2); c.fill();
   }
-  g.fillStyle = "#c9a227"; g.beginPath(); g.arc(128, 128, 16, 0, Math.PI * 2); g.fill();
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+  c.fillStyle = "#1a4e86"; c.beginPath(); c.arc(0, 0, 26, 0, Math.PI * 2); c.fill();
+  c.fillStyle = "#e2b423"; c.beginPath(); c.arc(0, 0, 11, 0, Math.PI * 2); c.fill();
+  c.restore();
+  const t = new THREE.CanvasTexture(g); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+/** Broad centre arch with a lower rounded hump each side. IMG_2232, not a zigzag. */
+function crest(t: number): number {
+  const u = Math.min(1, Math.max(0, (t - 0.06) / 0.88));
+  const centre = Math.pow(Math.sin(Math.PI * u), 0.72) * 0.32;
+  const leftU = (t - 0.2) / 0.11, rightU = (t - 0.8) / 0.11;
+  const left = Math.exp(-leftU * leftU) * 0.07;
+  const right = Math.exp(-rightU * rightU) * 0.07;
+  return 0.7 + centre + left + right;
 }
 function letters(text: string): THREE.CanvasTexture {
   const c = document.createElement("canvas"); c.width = 720; c.height = 128;
@@ -80,28 +95,26 @@ function letters(text: string): THREE.CanvasTexture {
 
 function benchMesh(): THREE.Group {
   const g = new THREE.Group(); g.name = "jorge-bench";
-  const white = plasterMaterial("#fbfaf4");
-  const blue = new THREE.MeshStandardMaterial({ color: "#1a3f78", roughness: 0.55 });
-  const L = BENCH_LENGTH, D = BENCH_DEPTH;
+  // Painted render, not the mottled wall plaster. IMG_2231/2232 are bright white.
+  const white = new THREE.MeshStandardMaterial({ color: "#f7f5f0", roughness: 0.82 });
+  const blue = new THREE.MeshStandardMaterial({ color: "#1a3c6e", roughness: 0.45 });
+  const L = BENCH_LENGTH;
+  const backD = 0.4, seatD = 0.42;
   const back = new THREE.Shape();
-  back.moveTo(-L / 2, 0); back.lineTo(-L / 2, 0.7);
-  for (let i = 0; i <= 28; i++) {
-    const t = i / 28, x = -L / 2 + t * L;
-    back.lineTo(x, 0.78 + 0.16 * Math.sin(t * Math.PI * 3));
-  }
+  back.moveTo(-L / 2, 0); back.lineTo(-L / 2, 0.62);
+  for (let i = 0; i <= 48; i++) back.lineTo(-L / 2 + (i / 48) * L, crest(i / 48));
   back.lineTo(L / 2, 0); back.closePath();
-  const slab = new THREE.Mesh(new THREE.ExtrudeGeometry(back, { depth: 0.14, bevelEnabled: false }), white);
-  slab.position.set(0, 0, -D / 2); slab.name = "jorge-bench-back"; slab.castShadow = true;
-  g.add(slab);
-  const seat = new THREE.Mesh(new THREE.BoxGeometry(L - 0.08, 0.16, D - 0.22), white);
-  seat.position.set(0, 0.38, 0.04); seat.castShadow = seat.receiveShadow = true; seat.name = "jorge-bench-seat";
+  const slab = new THREE.Mesh(new THREE.ExtrudeGeometry(back, { depth: backD, bevelEnabled: false }), white);
+  slab.name = "jorge-bench-back"; slab.castShadow = true; g.add(slab);
+  const seat = new THREE.Mesh(new THREE.BoxGeometry(L - 0.04, 0.38, seatD), white);
+  seat.position.set(0, 0.25, backD + seatD / 2 - 0.06); seat.castShadow = seat.receiveShadow = true; seat.name = "jorge-bench-seat";
   g.add(seat);
-  const skirt = new THREE.Mesh(new THREE.BoxGeometry(L + 0.02, 0.07, D + 0.02), blue);
-  skirt.position.set(0, 0.035, 0); skirt.name = "jorge-bench-skirting"; g.add(skirt);
-  const hatch = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.28, 0.36), new THREE.MeshStandardMaterial({ color: "#e7e4dc", roughness: 0.8 }));
-  hatch.position.set(-L / 2 - 0.01, 0.55, -0.08); hatch.name = "jorge-bench-hatch"; g.add(hatch);
-  const azulejo = new THREE.Mesh(new THREE.PlaneGeometry(0.36, 0.36), new THREE.MeshStandardMaterial({ map: tile(), roughness: 0.4 }));
-  azulejo.position.set(0, 0.78, -D / 2 + 0.15); azulejo.name = "jorge-bench-tile"; g.add(azulejo);
+  const skirt = new THREE.Mesh(new THREE.BoxGeometry(L + 0.02, 0.055, backD + seatD), blue);
+  skirt.position.set(0, 0.028, (backD + seatD) / 2); skirt.name = "jorge-bench-skirting"; g.add(skirt);
+  const hatch = new THREE.Mesh(new THREE.BoxGeometry(0.012, 0.22, 0.34), new THREE.MeshStandardMaterial({ color: "#eceae4", roughness: 0.7 }));
+  hatch.position.set(-L / 2 - 0.004, 0.72, backD * 0.45); hatch.name = "jorge-bench-hatch"; g.add(hatch);
+  const azulejo = new THREE.Mesh(new THREE.PlaneGeometry(0.34, 0.34), new THREE.MeshStandardMaterial({ map: tile(), roughness: 0.35 }));
+  azulejo.position.set(0, 0.74, backD + 0.012); azulejo.name = "jorge-bench-tile"; g.add(azulejo);
   return g;
 }
 
