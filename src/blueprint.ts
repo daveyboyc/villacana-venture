@@ -12,6 +12,7 @@ import {evaLawn,evaLawnRings,evaWallRings,suppressInEvaLawn} from "./eva-walled-
 import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
 import {albertoPassage,albertoRect,suppressInAlbertoPorch} from "./alberto-passage";
 import {passageCorridor,SOUTH_POOL_PASSAGE} from "./south-pool-passage";
+import jorgeLane from "../data/jorge_lane.json";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -430,6 +431,10 @@ async function boot(): Promise<void> {
   jorge.setAttribute("data-passage-id", SOUTH_POOL_PASSAGE.id);
   const jorgeTitle = el("title", {}); jorgeTitle.textContent = `${SOUTH_POOL_PASSAGE.name}: ${SOUTH_POOL_PASSAGE.trust}`;
   jorge.append(jorgeTitle); world.append(jorge);
+  for (const item of [jorgeLane.bench, jorgeLane.sign] as const) {
+    const node = el("rect", { x: item.at[0] - 0.7, y: item.at[1] - 0.35, width: 1.4, height: 0.7, fill: "#fffdf8", stroke: "#5c564c", "stroke-width": 0.08, transform: `rotate(${Math.atan2(item.face[0], item.face[1]) * 180 / Math.PI} ${item.at[0]} ${item.at[1]})` });
+    const title = el("title", {}); title.textContent = `${jorgeLane.name}: ${jorgeLane.trust}`; node.append(title); world.append(node);
+  }
   const silviaOverlay=el('g',{id:'silvia-main-map',role:'button',tabindex:'0','aria-label':'Walk through the Silvia tunnel (approximate map position)',cursor:'pointer'});
   const silviaTitle=el('title',{});silviaTitle.textContent='Silvia tunnel · approximate position · click to walk';silviaOverlay.append(silviaTitle);
   silviaOverlay.append(el('path',{d:path(silviaFloor),fill:'#cfaa83',stroke:'#a86e38','stroke-width':.2,'stroke-dasharray':'.6 .4'}));
