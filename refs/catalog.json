@@ -65,7 +65,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "jorge_lane.json:jorge-lane-bench"
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
    -44.2,
@@ -248,7 +249,10 @@
    164.3
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-bench"
+  ]
  },
  {
   "id": "IMG_2188.jpg",
@@ -1684,7 +1688,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "jorge_lane.json:jorge-lane-bench"
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
    -41.8,
@@ -1692,6 +1697,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-bench",
    "street:jorge"
   ]
  },
@@ -1721,7 +1727,10 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
+  ],
   "looksAt": [
    -45.5,
    139.3
@@ -1757,7 +1766,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "jorge_lane.json:jorge-lane-bench"
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
    -45.4,
@@ -1765,6 +1775,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-bench",
    "street:jorge"
   ]
  },
@@ -1794,7 +1805,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "jorge_lane.json:jorge-lane-bench"
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
    -42.6,
@@ -1871,7 +1883,8 @@
   "looksAtFeatures": [
    "street:jorge",
    "seaward_paving.json:teodoro-octagonal-paving",
-   "street:teodoro-rojo"
+   "street:teodoro-rojo",
+   "jorge_lane.json:jorge-lane-bench"
   ]
  },
  {
@@ -3538,6 +3551,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-bench",
    "street:jorge"
   ],
   "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
@@ -11074,7 +11089,9 @@
    148.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-verge"
+  ]
  },
  {
   "id": "IMG_2581.jpg",
@@ -11576,6 +11593,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-bench",
    "street:jorge",
    "street:teodoro-rojo"
   ]
@@ -11617,7 +11636,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:jorge"
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-bench"
   ]
  },
  {
@@ -11648,7 +11668,8 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "jorge_lane.json:jorge-lane-bench"
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
    -36.5,
@@ -11691,6 +11712,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-sign"
   ],
   "looksAt": [

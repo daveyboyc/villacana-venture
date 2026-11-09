@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 404,
-  "photosCitedByModel": 159,
-  "modelFeaturesWithPhotoCitations": 150
+  "features": 405,
+  "photosCitedByModel": 160,
+  "modelFeaturesWithPhotoCitations": 151
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3016,22 +3016,38 @@
   },
   {
    "id": "jorge_lane.json:jorge-lane-bench",
-   "name": "Calle Jorge white tiled bench",
+   "name": "Calle Jorge white tiled benches",
    "kind": "reference feature",
-   "source": "One white masonry bench with a scalloped back and an azulejo panel stands on the lawn side of Calle Jorge, on the left of IMG_2182 and IMG_2229 (looking back toward Dalí, headings 240 and 222). IMG_2231, IMG_2232 and IMG_2596 are that bench close up: blue tile skirting, a small hatch in the side, and a blue-yellow-green tile in the back. The pin cluster is ±2 to ±5 m, so the station (-40.72, 139.24), 1.55 m off the mapped centreline, is estimated. IMG_2597 shows the CALLE DE JORGE plinth and a black lamp on the opposite lawn edge at the east end; the plinth is placed 1.2 m off the centreline beside that pin (±2.6 m). Apple Maps 3D frames of this lane show the same pale path and white seats; they are not used to add further benches. Sizes are read by eye from the tiles.",
+   "source": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
    "evidence": [
     "IMG_2182.jpg",
     "IMG_2229.jpg",
+    "IMG_2230.jpg",
     "IMG_2231.jpg",
     "IMG_2232.jpg",
     "IMG_2596.jpg"
    ]
   },
   {
+   "id": "jorge_lane.json:jorge-lane-verge",
+   "name": "Calle Jorge grass verges and hedge wall",
+   "kind": "reference feature",
+   "source": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
+   "evidence": [
+    "IMG_2182.jpg",
+    "IMG_2229.jpg",
+    "IMG_2230.jpg",
+    "IMG_2231.jpg",
+    "IMG_2232.jpg",
+    "IMG_2596.jpg",
+    "IMG_2597.jpg"
+   ]
+  },
+  {
    "id": "jorge_lane.json:jorge-lane-sign",
    "name": "Calle de Jorge sign and lamp",
    "kind": "reference feature",
-   "source": "One white masonry bench with a scalloped back and an azulejo panel stands on the lawn side of Calle Jorge, on the left of IMG_2182 and IMG_2229 (looking back toward Dalí, headings 240 and 222). IMG_2231, IMG_2232 and IMG_2596 are that bench close up: blue tile skirting, a small hatch in the side, and a blue-yellow-green tile in the back. The pin cluster is ±2 to ±5 m, so the station (-40.72, 139.24), 1.55 m off the mapped centreline, is estimated. IMG_2597 shows the CALLE DE JORGE plinth and a black lamp on the opposite lawn edge at the east end; the plinth is placed 1.2 m off the centreline beside that pin (±2.6 m). Apple Maps 3D frames of this lane show the same pale path and white seats; they are not used to add further benches. Sizes are read by eye from the tiles.",
+   "source": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
    "evidence": [
     "IMG_2597.jpg"
    ]
@@ -6761,6 +6777,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2182.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2183.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -8071,6 +8093,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2229.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2230.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -8096,6 +8124,18 @@
    "relation": "possibly-in-view",
    "distance": 33.3,
    "angleOffset": 11.4
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2231.jpg",
@@ -8131,6 +8171,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2231.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2232.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -8153,6 +8199,12 @@
   {
    "from": "photo:IMG_2232.jpg",
    "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2232.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -15578,10 +15630,22 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2596.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2597.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
    "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2597.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2597.jpg",
