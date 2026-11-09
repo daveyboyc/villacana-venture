@@ -1,11 +1,46 @@
 import * as THREE from "three";
 import data from "../data/jorge_lane.json";
-import { plasterMaterial } from "./materials";
+import skeleton from "../public/map/skeleton.json";
+import { pointInRing } from "./geom";
+import { plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
 
-/** Calle Jorge east: the photographed white bench, the street-name plinth and its lamp. */
+/** Calle Jorge: grass, the house-side hedge wall, the white benches, the street sign and its lamp. */
 export const jorgeLane = data;
-const bench = data.bench, sign = data.sign, lamp = data.lamp;
+const sign = data.sign, lamp = data.lamp;
+const BENCH_LENGTH = 1.45, BENCH_DEPTH = 0.7;
+const road = skeleton.streets.find((s) => s.id === "jorge")!;
+const line = road.points as Vec2[];
+type Frame = { p: Vec2; lawn: Vec2; hedge: Vec2; along: Vec2 };
+function lengthOf(): number {
+  let n = 0;
+  for (let i = 1; i < line.length; i++) n += Math.hypot(line[i][0] - line[i - 1][0], line[i][1] - line[i - 1][1]);
+  return n;
+}
+export function jorgeAt(dist: number): Frame {
+  let left = dist;
+  for (let i = 0; i < line.length - 1; i++) {
+    const a = line[i], b = line[i + 1];
+    const dx = b[0] - a[0], dz = b[1] - a[1], len = Math.hypot(dx, dz);
+    if (left <= len || i === line.length - 2) {
+      const along: Vec2 = [dx / len, dz / len], travelled = Math.min(left, len);
+      const lawn: Vec2 = [-along[1], along[0]];
+      return { p: [a[0] + along[0] * travelled, a[1] + along[1] * travelled], lawn, hedge: [-lawn[0], -lawn[1]], along };
+    }
+    left -= len;
+  }
+  return jorgeAt(0);
+}
+function inHouse(x: number, z: number): boolean {
+  return skeleton.buildings.some((b) => b.floors > 0 && pointInRing(x, z, b.ring as Vec2[]));
+}
+export function jorgeBenchSpots(): { at: Vec2; face: Vec2 }[] {
+  return data.benches.along.map((dist) => {
+    const f = jorgeAt(dist);
+    const at: Vec2 = [f.p[0] + f.lawn[0] * data.benches.offset, f.p[1] + f.lawn[1] * data.benches.offset];
+    return { at, face: f.hedge };
+  }).filter((b) => !inHouse(b.at[0], b.at[1]));
+}
 
 function yawOf(face: Vec2): number {
   return Math.atan2(face[0], face[1]);
@@ -47,7 +82,7 @@ function benchMesh(): THREE.Group {
   const g = new THREE.Group(); g.name = "jorge-bench";
   const white = plasterMaterial("#fbfaf4");
   const blue = new THREE.MeshStandardMaterial({ color: "#1a3f78", roughness: 0.55 });
-  const L = bench.length, D = bench.depth;
+  const L = BENCH_LENGTH, D = BENCH_DEPTH;
   const back = new THREE.Shape();
   back.moveTo(-L / 2, 0); back.lineTo(-L / 2, 0.7);
   for (let i = 0; i <= 28; i++) {
@@ -99,9 +134,56 @@ function place(group: THREE.Group, at: Vec2, face: Vec2): THREE.Group {
   return group;
 }
 
-/** Off the walking line. Shown in Layout: these are the photographed street fittings, not scatter. */
+function verge(side: "lawn" | "hedge"): THREE.Mesh {
+  const inner = data.verges.inner, outer = side === "lawn" ? data.verges.lawnOuter : data.verges.hedgeOuter;
+  const pos: number[] = [], uv: number[] = [], idx: number[] = [];
+  const total = lengthOf();
+  for (let s = 0; s < total - 0.5; s += 2) {
+    const a = jorgeAt(s), b = jorgeAt(Math.min(total, s + 2));
+    const pick = (f: Frame, d: number): Vec2 => {
+      const n = side === "lawn" ? f.lawn : f.hedge;
+      return [f.p[0] + n[0] * d, f.p[1] + n[1] * d];
+    };
+    const corners = [pick(a, inner), pick(a, outer), pick(b, outer), pick(b, inner)];
+    if (corners.some((p) => inHouse(p[0], p[1]))) continue;
+    const base = pos.length / 3;
+    corners.forEach((p, i) => { pos.push(p[0], 0.025, p[1]); uv.push(i % 2, s / 4); });
+    idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  geo.setIndex(idx); geo.computeVertexNormals();
+  const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: surfaceTexture("turf"), color: "#5f8a45", roughness: 1, side: THREE.DoubleSide }));
+  mesh.name = `jorge-grass-${side}`; mesh.receiveShadow = true;
+  return mesh;
+}
+
+/** Grass both sides, the white hedge wall, benches, shrubs, the street sign and the lamp. */
 export function addJorgeLane(scene: THREE.Scene): void {
-  scene.add(place(benchMesh(), bench.at as Vec2, bench.face as Vec2));
+  scene.add(verge("lawn"), verge("hedge"));
+  const white = plasterMaterial("#f7f4ee"), green = new THREE.MeshStandardMaterial({ color: "#2f6a34", roughness: 0.9 });
+  const wallRun = data.boundary;
+  for (let s = wallRun.from; s <= wallRun.to; s += wallRun.every) {
+    const f = jorgeAt(s);
+    const p: Vec2 = [f.p[0] + f.hedge[0] * wallRun.offset, f.p[1] + f.hedge[1] * wallRun.offset];
+    if (inHouse(p[0], p[1]) || inHouse(p[0] + f.along[0] * 1.4, p[1] + f.along[1] * 1.4)) continue;
+    const yaw = Math.atan2(f.along[0], f.along[1]);
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(wallRun.length, 0.58, 0.4), white);
+    wall.position.set(p[0], 0.29, p[1]); wall.rotation.y = yaw; wall.userData.base = p; wall.castShadow = true; wall.name = "jorge-wall";
+    const hedge = new THREE.Mesh(new THREE.BoxGeometry(wallRun.length - 0.08, 0.72, 0.72), green);
+    hedge.position.set(p[0], 0.9, p[1]); hedge.rotation.y = yaw; hedge.userData.base = p; hedge.castShadow = true; hedge.name = "jorge-hedge";
+    scene.add(wall, hedge);
+  }
+  for (const spot of jorgeBenchSpots()) scene.add(place(benchMesh(), spot.at, spot.face));
+  for (const dist of data.plants.along) {
+    const f = jorgeAt(dist);
+    const p: Vec2 = [f.p[0] + f.lawn[0] * data.plants.offset, f.p[1] + f.lawn[1] * data.plants.offset];
+    if (inHouse(p[0], p[1])) continue;
+    const shrub = new THREE.Mesh(new THREE.SphereGeometry(0.55, 8, 6), green);
+    shrub.position.set(p[0], 0.5, p[1]); shrub.userData.base = p; shrub.castShadow = true; shrub.name = "jorge-shrub";
+    scene.add(shrub);
+  }
   scene.add(place(signMesh(), sign.at as Vec2, sign.face as Vec2));
   const light = lampMesh();
   light.position.set(lamp.at[0], 0, lamp.at[1]);

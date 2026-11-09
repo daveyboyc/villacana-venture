@@ -177,7 +177,16 @@ def features(s):
         return [round(ja[0]+fwd[0]*ss+right[0]*q,2), round(ja[1]+fwd[1]*ss+right[1]*q,2)]
     add('south_pool_passage.json:'+jorge['id'],jorge['name'],'reference feature',jorge['trust'],evidence=jorge['evidence'],ring=[jat(0,-jorge['halfWidth']),jat(jorge['length'],-jorge['halfWidth']),jat(jorge['length'],jorge['halfWidth']),jat(0,jorge['halfWidth'])])
     lane=json.loads((ROOT/'data/jorge_lane.json').read_text())
-    add('jorge_lane.json:'+lane['id']+'-bench','Calle Jorge white tiled bench','reference feature',lane['trust'],evidence=[p for p in lane['evidence'] if p!='IMG_2597.jpg'],points=[lane['bench']['at']])
+    def jorge_spot(dist, offset, side):
+        pts=next(s['points'] for s in s['streets'] if s['id']=='jorge'); left=dist
+        for i in range(len(pts)-1):
+            a,b=pts[i],pts[i+1]; dx,dz=b[0]-a[0],b[1]-a[1]; length=math.hypot(dx,dz)
+            if left<=length or i==len(pts)-2:
+                d=(dx/length,dz/length); lawn=(-d[1],d[0]); n=lawn if side=='lawn' else (-lawn[0],-lawn[1])
+                t=min(left,length); return [round(a[0]+d[0]*t+n[0]*offset,2), round(a[1]+d[1]*t+n[1]*offset,2)]
+            left-=length
+    add('jorge_lane.json:'+lane['id']+'-bench','Calle Jorge white tiled benches','reference feature',lane['trust'],evidence=[p for p in lane['evidence'] if p!='IMG_2597.jpg'],points=[jorge_spot(dist,lane['benches']['offset'],'lawn') for dist in lane['benches']['along']])
+    add('jorge_lane.json:'+lane['id']+'-verge','Calle Jorge grass verges and hedge wall','reference feature',lane['trust'],evidence=lane['evidence'],points=[jorge_spot(dist,2,'lawn') for dist in (20,60,100)])
     add('jorge_lane.json:'+lane['id']+'-sign','Calle de Jorge sign and lamp','reference feature',lane['trust'],evidence=['IMG_2597.jpg'],points=[lane['sign']['at'],lane['lamp']['at']])
     alberto=json.loads((ROOT/'data/alberto_passage.json').read_text());af=alberto['frame']
     aat=lambda a,d:[round(af['origin'][0]+af['along'][0]*a+af['in'][0]*d,2),round(af['origin'][1]+af['along'][1]*a+af['in'][1]*d,2)]

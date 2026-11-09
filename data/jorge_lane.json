@@ -1,27 +1,20 @@
 {
   "id": "jorge-lane",
-  "name": "Calle Jorge east: white bench, street sign and lamp",
+  "name": "Calle Jorge: grass verges, hedge wall, benches, sign and lamp",
   "evidence": [
     "IMG_2182.jpg",
     "IMG_2229.jpg",
+    "IMG_2230.jpg",
     "IMG_2231.jpg",
     "IMG_2232.jpg",
     "IMG_2596.jpg",
     "IMG_2597.jpg"
   ],
-  "trust": "One white masonry bench with a scalloped back and an azulejo panel stands on the lawn side of Calle Jorge, on the left of IMG_2182 and IMG_2229 (looking back toward Dalí, headings 240 and 222). IMG_2231, IMG_2232 and IMG_2596 are that bench close up: blue tile skirting, a small hatch in the side, and a blue-yellow-green tile in the back. The pin cluster is ±2 to ±5 m, so the station (-40.72, 139.24), 1.55 m off the mapped centreline, is estimated. IMG_2597 shows the CALLE DE JORGE plinth and a black lamp on the opposite lawn edge at the east end; the plinth is placed 1.2 m off the centreline beside that pin (±2.6 m). Apple Maps 3D frames of this lane show the same pale path and white seats; they are not used to add further benches. Sizes are read by eye from the tiles.",
-  "bench": {
-    "at": [-40.72, 139.24],
-    "face": [-0.501, -0.865],
-    "length": 1.45,
-    "depth": 0.7
-  },
-  "sign": {
-    "at": [-26.37, 127.75],
-    "face": [0.501, 0.865],
-    "text": "CALLE DE JORGE"
-  },
-  "lamp": {
-    "at": [-25.25, 127.1]
-  }
+  "trust": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
+  "verges": { "inner": 0.85, "lawnOuter": 3.4, "hedgeOuter": 2.7 },
+  "boundary": { "from": 8, "to": 128, "offset": 1.7, "every": 3.5, "length": 3.15 },
+  "benches": { "offset": 1.75, "along": [24, 40, 56, 72, 104, 112, 124] },
+  "plants": { "offset": 2.5, "along": [36, 68, 100, 116] },
+  "sign": { "at": [-26.37, 127.75], "face": [0.501, 0.865], "text": "CALLE DE JORGE" },
+  "lamp": { "at": [-25.25, 127.1] }
 }
