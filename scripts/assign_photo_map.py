@@ -176,6 +176,9 @@ def features(s):
     def jat(ss,q):
         return [round(ja[0]+fwd[0]*ss+right[0]*q,2), round(ja[1]+fwd[1]*ss+right[1]*q,2)]
     add('south_pool_passage.json:'+jorge['id'],jorge['name'],'reference feature',jorge['trust'],evidence=jorge['evidence'],ring=[jat(0,-jorge['halfWidth']),jat(jorge['length'],-jorge['halfWidth']),jat(jorge['length'],jorge['halfWidth']),jat(0,jorge['halfWidth'])])
+    lane=json.loads((ROOT/'data/jorge_lane.json').read_text())
+    add('jorge_lane.json:'+lane['id']+'-bench','Calle Jorge white tiled bench','reference feature',lane['trust'],evidence=[p for p in lane['evidence'] if p!='IMG_2597.jpg'],points=[lane['bench']['at']])
+    add('jorge_lane.json:'+lane['id']+'-sign','Calle de Jorge sign and lamp','reference feature',lane['trust'],evidence=['IMG_2597.jpg'],points=[lane['sign']['at'],lane['lamp']['at']])
     alberto=json.loads((ROOT/'data/alberto_passage.json').read_text());af=alberto['frame']
     aat=lambda a,d:[round(af['origin'][0]+af['along'][0]*a+af['in'][0]*d,2),round(af['origin'][1]+af['along'][1]*a+af['in'][1]*d,2)]
     add('alberto_passage.json:'+alberto['id']+'-porch',alberto['name'],'reference feature','photo-supported porch in the registry recess; sizes and furniture positions estimated',evidence=alberto['evidence'],ring=[aat(0,alberto['platform']['step']['from']),aat(af['width'],alberto['platform']['step']['from']),aat(af['width'],af['depth']),aat(0,af['depth'])])

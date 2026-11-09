@@ -18,13 +18,14 @@ The lanes between the middle pool and the beach.
 - Outdoor-path integration with mainPR120: the current survey ground covered previously flat lane/garden paving, so only those existing visual surfaces now follow siteY. Source outlines, collision and survey data retained. Model diagnostic: garden sample at local8.6 is about0.23m above the level tunnel slab; this is an unresolved host/garden ground transition, not a photo-measured step or smooth source match. Track with in-progress silvia-outdoor-path.
 - 27 October batch: IMG_2488 looks up Calle Guillermo from its seaward end: plain square terracotta tiles, a slot drain across the lane, raised white planter with strelitzia; no steps in the lower lane (input for guillermo-descent-recheck, gradient not judged). IMG_2494 repeats the IMG_2241 lane near Teodoro Rojo.
 - Silvia ramp passages (task silvia-ramp-passages, 4 Nov): IMG_2656/2657/2658 (plaque '22 44 CALLE DE SILVIA') and IMG_2669/2670 (plaque '2 20') show a second passage type on the lane's west side: a porch with a red studded rubber ramp beside two plain terracotta treads and a third riser that carries the landing (white risers, dark grey edge bands), brown panelled double doors with a barred window beside each, a pebble-mosaic mat, lanterns, an arch and, in 2-20, a black iron garden gate between two large potted plants. IMG_2574/2575 show the flight from the lane (granite edge, jade planter). Built only as a photo-relative study (silvia-ramp.html, src/silvia-ramp-passage.ts; every dimension an estimate; not placed). OPEN: the main map's west Silvia tunnel (data/silvia_map.json) sits at the IMG_2669 camera and heading but is built from the 1-15 photos IMG_2190/2191/2668, taken from the same pin facing east (heading 55-56) where IMG_2672-2674 show a louvre-door passage under the east block; the 1-15 and 2-20 passages are therefore probably on opposite sides of the lane and the west tunnel shows the wrong one (task silvia-west-passage-swap). The 22-44 mouth lies on the WSW line of the Patricia passage cameras IMG_2565-2570 (task patricia-passage-reference-pack).
+- 9 November 2026: Calle Jorge's east end has the photographed white scalloped bench with an azulejo back (IMG_2182, IMG_2229, IMG_2231, IMG_2232, IMG_2596), on the lawn side 1.55 m off the centreline, and the CALLE DE JORGE plinth with a black lamp (IMG_2597) on the opposite edge. Stations are the pin cluster, estimated. Apple Maps 3D of this lane shows the same pale path and white seats; no further benches were added from that mesh. See data/jorge_lane.json.
 - Patricia passage (IMG_2561-2569), not built: the arch marked 'CALLE DE PATRICIA' (IMG_2562), paired brown doors, pebble-mosaic mats with a floral border (2563/2564), planter-lined arches, a tiled-eave loggia (2565-2567) and a last arch with ramp down to a lawn (2569). Pins (2.4-5 m, mostly indoors) head SE at the west arch and ENE further on, about 20 m south-east of the mapped Calle Patricia line, so its route, length and relation to the 22-44 porch are unresolved. South-block arcade IMG_2639-2641 is the Calle de Jorge 39-67 passage from the south-pool lawn into Pintor Dalí, now opened on the placed Dalí arch axis (20.4 m, about 2 m estimated; data/south_pool_passage.json). The IMG_2639-2641 pins stay unused. IMG_2548 (Eva) and IMG_2557 ('CALLE MART...' sign) show the same passage family with the street unread.
 
 ## Read first
 
 - docs: `docs/STREET_LAYOUT.md`, `docs/REFERENCE_PACK_WORKFLOW.md`
-- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`, `data/silvia_map.json`, `data/entrance_planters.json`, `data/silvia_ramp_passages.json`
-- src: `src/seaward-paving.ts`, `src/silvia-map.ts`, `src/silvia-tunnel.ts`, `src/entrance-planters.ts`, `src/silvia-paving.ts`, `src/silvia-ramp-passage.ts`, `src/silvia-ramp-study.ts`
+- data: `data/street_layout.json`, `data/seaward_paving.json`, `data/reference_packs/entrance.json`, `data/silvia_map.json`, `data/entrance_planters.json`, `data/silvia_ramp_passages.json`, `data/jorge_lane.json`
+- src: `src/seaward-paving.ts`, `src/silvia-map.ts`, `src/silvia-tunnel.ts`, `src/entrance-planters.ts`, `src/silvia-paving.ts`, `src/silvia-ramp-passage.ts`, `src/silvia-ramp-study.ts`, `src/jorge-lane.ts`
 - contact sheet: `villacana-reference/contact-sheets/seaward-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -65,46 +66,54 @@ graph LR
   F1 --> PIMG_2190_jpg(["IMG_2190"])
   A --> F2["Silvia garden arch · low angled right planter fragment · unreviewed"]
   F2 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F3["Silvia · plain tiled outdoor approach to estimated arch threshold · unreviewed"]
-  F3 --> PIMG_2189_jpg(["IMG_2189"])
-  F3 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F4["Entrance lane · four-column terracotta paving · unreviewed"]
-  F4 --> PIMG_2189_jpg(["IMG_2189"])
-  F4 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F5["Entrance lane · bounded farther shuttered grille · unreviewed"]
+  A --> F3["Calle Jorge white tiled bench · unreviewed"]
+  F3 --> PIMG_2182_jpg(["IMG_2182"])
+  F3 --> PIMG_2229_jpg(["IMG_2229"])
+  F3 --> PIMG_2231_jpg(["IMG_2231"])
+  F3 --> PIMG_2232_jpg(["IMG_2232"])
+  F3 --> PIMG_2596_jpg(["IMG_2596"])
+  A --> F4["Calle de Jorge sign and lamp · unreviewed"]
+  F4 --> PIMG_2597_jpg(["IMG_2597"])
+  A --> F5["Silvia · plain tiled outdoor approach to estimated arch threshold · unreviewed"]
   F5 --> PIMG_2189_jpg(["IMG_2189"])
   F5 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F6["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
+  A --> F6["Entrance lane · four-column terracotta paving · unreviewed"]
   F6 --> PIMG_2189_jpg(["IMG_2189"])
   F6 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F7["seaward patterned floor · unreviewed"]
-  F7 --> PIMG_2185_jpg(["IMG_2185"])
-  A --> F8["silvia patterned floor · unreviewed"]
-  F8 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F9["teodoro octagonal paving · unreviewed"]
-  F9 --> PIMG_2235_jpg(["IMG_2235"])
-  F9 --> PIMG_2237_jpg(["IMG_2237"])
-  F9 --> PIMG_2239_jpg(["IMG_2239"])
-  A --> F10["Calle Silvia 2-20 and 22-44 ramp-and-steps covered passages: photo-relative study · unreviewed"]
-  F10 --> PIMG_2574_jpg(["IMG_2574"])
-  F10 --> PIMG_2575_jpg(["IMG_2575"])
-  F10 --> PIMG_2656_jpg(["IMG_2656"])
-  F10 --> PIMG_2657_jpg(["IMG_2657"])
-  F10 --> PIMG_2658_jpg(["IMG_2658"])
-  F10 --> PIMG_2669_jpg(["IMG_2669"])
-  F10 --> PIMG_2670_jpg(["IMG_2670"])
-  A --> F11["Calle Silvia 1–15 covered entrance — photo-relative study · disputed"]
-  F11 --> PIMG_2190_jpg(["IMG_2190"])
-  F11 --> PIMG_2191_jpg(["IMG_2191"])
-  A --> F12["Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí · unreviewed"]
-  F12 --> PIMG_2283_jpg(["IMG_2283"])
-  F12 --> PIMG_2294_jpg(["IMG_2294"])
-  F12 --> PIMG_2295_jpg(["IMG_2295"])
-  F12 --> PIMG_2639_jpg(["IMG_2639"])
-  F12 --> PIMG_2640_jpg(["IMG_2640"])
-  F12 --> PIMG_2641_jpg(["IMG_2641"])
-  F12 --> PIMG_2642_jpg(["IMG_2642"])
-  F12 --> PIMG_2645_jpg(["IMG_2645"])
+  A --> F7["Entrance lane · bounded farther shuttered grille · unreviewed"]
+  F7 --> PIMG_2189_jpg(["IMG_2189"])
+  F7 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F8["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
+  F8 --> PIMG_2189_jpg(["IMG_2189"])
+  F8 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F9["seaward patterned floor · unreviewed"]
+  F9 --> PIMG_2185_jpg(["IMG_2185"])
+  A --> F10["silvia patterned floor · unreviewed"]
+  F10 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F11["teodoro octagonal paving · unreviewed"]
+  F11 --> PIMG_2235_jpg(["IMG_2235"])
+  F11 --> PIMG_2237_jpg(["IMG_2237"])
+  F11 --> PIMG_2239_jpg(["IMG_2239"])
+  A --> F12["Calle Silvia 2-20 and 22-44 ramp-and-steps covered passages: photo-relative study · unreviewed"]
+  F12 --> PIMG_2574_jpg(["IMG_2574"])
+  F12 --> PIMG_2575_jpg(["IMG_2575"])
+  F12 --> PIMG_2656_jpg(["IMG_2656"])
+  F12 --> PIMG_2657_jpg(["IMG_2657"])
+  F12 --> PIMG_2658_jpg(["IMG_2658"])
+  F12 --> PIMG_2669_jpg(["IMG_2669"])
+  F12 --> PIMG_2670_jpg(["IMG_2670"])
+  A --> F13["Calle Silvia 1–15 covered entrance — photo-relative study · disputed"]
+  F13 --> PIMG_2190_jpg(["IMG_2190"])
+  F13 --> PIMG_2191_jpg(["IMG_2191"])
+  A --> F14["Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí · unreviewed"]
+  F14 --> PIMG_2283_jpg(["IMG_2283"])
+  F14 --> PIMG_2294_jpg(["IMG_2294"])
+  F14 --> PIMG_2295_jpg(["IMG_2295"])
+  F14 --> PIMG_2639_jpg(["IMG_2639"])
+  F14 --> PIMG_2640_jpg(["IMG_2640"])
+  F14 --> PIMG_2641_jpg(["IMG_2641"])
+  F14 --> PIMG_2642_jpg(["IMG_2642"])
+  F14 --> PIMG_2645_jpg(["IMG_2645"])
 ```
 
 ## Placement evidence
@@ -116,6 +125,8 @@ graph LR
 | `entrance_planters.json:silvia-exit-left-planting-fragment` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `entrance_planters.json:silvia-exit-path-fragment` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `entrance_planters.json:silvia-exit-right-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `jorge_lane.json:jorge-lane-bench` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `jorge_lane.json:jorge-lane-sign` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:silvia-outdoor-apron` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-four-column-paving` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-right-far-grille` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -156,16 +167,22 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2669.jpg](../../public/photos-ref/IMG_2669.jpg) | ground | layout, levels, signage, materials, facades | Silvia 2-20 passage: red studded ramp, three steps and garden gate arch **Looks at:** Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps. **Note:** Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate. _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
 | [IMG_2670.jpg](../../public/photos-ref/IMG_2670.jpg) | ground | signage, layout, levels, materials, facades | Silvia 2-20 passage: plaque, ramp, steps and arched gate **Looks at:** Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps. **Note:** Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate. _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
 | [IMG_2574.jpg](../../public/photos-ref/IMG_2574.jpg) | ground | levels, layout, materials, facades | Tiled steps and red studded ramp at the passage exit, planter wall to the right **Looks at:** Three-step tiled flight with red ramp. **Note:** looksAt approximate (about 3 m from the pin). _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. _Used by: jorge_lane.json:jorge-lane-sign._ |
 | [IMG_2639.jpg](../../public/photos-ref/IMG_2639.jpg) | ground | layout, materials, facades, planting | Vaulted arcade with patterned tile floor, pebble mosaic and garden gate beyond **Note:** Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. _Used by: south_pool_passage.json:south-pool-dali-passage._ |
 | [IMG_2640.jpg](../../public/photos-ref/IMG_2640.jpg) | ground | facades, materials, planting, layout | Bougainvillea over a white arch, second arch and gate beyond, pebble mosaic floor panel **Note:** Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. _Used by: south_pool_passage.json:south-pool-dali-passage._ |
 | [IMG_2641.jpg](../../public/photos-ref/IMG_2641.jpg) | ground | signage, layout, materials, planting | Passage to the south pool lawn: arched iron gate and Calle de Jorge plaque **Note:** Pin is vague (about +-16-29 m) and sits over the south block / paseo; the place is identified from the picture (arcade ending in a gate onto the south pool lawn, Calle de Jorge plaque in IMG_2641), not from GPS. Passage extent and which Jorge house numbers it serves are unresolved. Plaque ties this passage to Calle de Jorge. _Used by: south_pool_passage.json:south-pool-dali-passage._ |
 | [IMG_2657.jpg](../../public/photos-ref/IMG_2657.jpg) | ground | layout, levels, materials, facades | Silvia 22-44 passage: steps with dark edge bands beside studded ramp **Looks at:** Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps. **Note:** Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate. _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
 | [IMG_2575.jpg](../../public/photos-ref/IMG_2575.jpg) | ground | levels, layout, materials | Steps, ramp and planter wall seen from the Silvia lane side **Looks at:** Flight of three steps beside red ramp. **Note:** looksAt approximate (about 3 m from the pin). _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
+| [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | ground | materials, layout, signage | White tiled bench, cast manhole covers and terracotta paving **Looks at:** white tiled bench and manhole covers. **Note:** Appears to be the white bench seen in IMG_2182. _Used by: jorge_lane.json:jorge-lane-bench._ |
+| [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench _Used by: jorge_lane.json:jorge-lane-bench._ |
 | [IMG_2185.jpg](../../public/photos-ref/IMG_2185.jpg) | ground | layout, materials | Covered arched passage, patterned terracotta tiles, sea at the far end _Used by: seaward_paving.json:seaward-patterned-floor._ |
+| [IMG_2229.jpg](../../public/photos-ref/IMG_2229.jpg) | ground | layout, materials | Tiled lane between lawns with a white tiled bench _Used by: jorge_lane.json:jorge-lane-bench._ |
 | [IMG_2235.jpg](../../public/photos-ref/IMG_2235.jpg) | ground | materials, layout | Lane paved in octagonal tiles between a white wall and lawn **Note:** Octagonal paving here, not square tiles. _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2237.jpg](../../public/photos-ref/IMG_2237.jpg) | ground | materials, layout | Octagonal-tiled lane with lantern and hedges _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2658.jpg](../../public/photos-ref/IMG_2658.jpg) | ground | levels, materials | Covered entrance off Calle Silvia south: three tiled steps beside a red ribbed ramp _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
 | [IMG_2191.jpg](../../public/photos-ref/IMG_2191.jpg) | ground | signage | Passage plaque reading CALLE SILVIA 1-15 _Used by: silvia_tunnel.json:silvia-tunnel-study._ |
+| [IMG_2231.jpg](../../public/photos-ref/IMG_2231.jpg) | ground | materials | White tiled bench beside the lane _Used by: jorge_lane.json:jorge-lane-bench._ |
+| [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back _Used by: jorge_lane.json:jorge-lane-bench._ |
 | [IMG_2239.jpg](../../public/photos-ref/IMG_2239.jpg) | ground | planting | Yuccas and palms beside an octagonal-tiled lane _Used by: seaward_paving.json:teodoro-octagonal-paving._ |
 | [IMG_2581.jpg](../../public/photos-ref/IMG_2581.jpg) | ground | layout, levels, signage, facades, materials | Arched porch entrance with three tiled steps and a street-name plaque **Note:** Plaque is only partly legible; 'T' suggests Teodoro Rojo but this is not confirmed. |
 | [IMG_2595.jpg](../../public/photos-ref/IMG_2595.jpg) | ground | layout, facades, planting, view, materials | Tiled path along lawns towards white houses with chimneys, looking ENE **Note:** Camera is at the Teodoro Rojo / Patricia corner; view runs along Teodoro Rojo. |
@@ -194,7 +211,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2592.jpg](../../public/photos-ref/IMG_2592.jpg) | ground | layout, levels, materials, facades | View out of an arch to a small white court with a ribbed ramp and step |
 | [IMG_2593.jpg](../../public/photos-ref/IMG_2593.jpg) | ground | layout, materials, planting, view | Narrow tiled lane between white walls, looking NNW **Note:** Lane read as the Patricia line from the aerial; no street sign is visible. |
 | [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | ground | layout, facades, planting, materials | Lane between white houses with lamp post, yucca palm and Norfolk pine, looking NNW **Note:** Nearly the same shot as IMG_2593. |
-| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. |
 | [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | ground | layout, levels, materials, view | Curved white-walled tiled descent at the foot of the lane to the beach fence **Note:** Foot of Calle Guillermo area, close to IMG_2600/2601. |
 | [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | ground | layout, materials, view, planting | Tiled landing at the foot of the lane with hedge and green fence to the beach **Note:** Foot of Calle Guillermo. Tile joints change to a fan pattern at the far left. |
 | [IMG_2646.jpg](../../public/photos-ref/IMG_2646.jpg) | ground | layout, materials, planting, facades | Calle Silvia lane looking NNW to an arched iron gate **Note:** Phone altitude 9.1 m is just over the 9 m ground limit but the shot is plainly standing in the lane (neighbours read 7-8 m); keep as ground. Pin is at the south end of the lane by the south pool lawn. |
@@ -227,7 +243,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2589.jpg](../../public/photos-ref/IMG_2589.jpg) | ground | facades, materials, layout | Arched porch with potted plants, drain grating and double door |
 | [IMG_2590.jpg](../../public/photos-ref/IMG_2590.jpg) | ground | facades, materials, layout | Covered porch with arch, pale double door and hanging lantern |
 | [IMG_2591.jpg](../../public/photos-ref/IMG_2591.jpg) | ground | layout, materials, facades | Covered passage with brown double doors and a doormat, arch to a white wall **Note:** Pin has about 3 m accuracy and four shots (2589-2592) are within a few metres; which passage is not established. |
-| [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | ground | materials, layout, signage | White tiled bench, cast manhole covers and terracotta paving **Looks at:** white tiled bench and manhole covers. **Note:** Appears to be the white bench seen in IMG_2182. |
 | [IMG_2647.jpg](../../public/photos-ref/IMG_2647.jpg) | ground | layout, materials, planting | Lane arch with open iron gate leaves, terracotta paving with wide grout **Note:** Lane runs about NNW along Calle Silvia south section; exact gate position unresolved. |
 | [IMG_2648.jpg](../../public/photos-ref/IMG_2648.jpg) | ground | facades, planting, layout | White cubic houses behind an oleander hedge, east of Calle Silvia **Note:** Subject is the garden court east of the lane; identity of the houses within the registry footprints not established. |
 | [IMG_2649.jpg](../../public/photos-ref/IMG_2649.jpg) | ground | facades, planting, materials | House fronts behind oleander and green netting beside the lane **Note:** Same garden court as IMG_2648; green shading net is a temporary-looking item. |
@@ -245,10 +260,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2721.jpg](../../public/photos-ref/IMG_2721.jpg) | ground | layout, facades, materials | Narrow seaward lane with barred windows and tile sills |
 | [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | ground | layout, signage, levels | Barred gate view into a laundry corridor with a red studded ramp **Note:** Pin is on Calle Patricia/Guillermo beside a large white roofed block with +/-4.7 m; the heading looks into the block, but which building is not identifiable from the photo. |
 | [IMG_2781.jpg](../../public/photos-ref/IMG_2781.jpg) | ground | layout, planting, materials | Narrow lane with espaliered bougainvillea and a wall lantern |
-| [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds |
 | [IMG_2187.jpg](../../public/photos-ref/IMG_2187.jpg) | ground | signage, layout | Arched passage with a street and house-number plaque |
-| [IMG_2229.jpg](../../public/photos-ref/IMG_2229.jpg) | ground | layout, materials | Tiled lane between lawns with a white tiled bench |
 | [IMG_2230.jpg](../../public/photos-ref/IMG_2230.jpg) | ground | layout, materials | Tiled lane beside hedges and a patio wall |
 | [IMG_2234.jpg](../../public/photos-ref/IMG_2234.jpg) | ground | layout, signage | Tiled lane with a wall plaque, lamp post and lawn |
 | [IMG_2238.jpg](../../public/photos-ref/IMG_2238.jpg) | ground | layout, planting | Tall hedges along a lane edge |
@@ -268,8 +281,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2784.jpg](../../public/photos-ref/IMG_2784.jpg) | ground | layout, materials | Tiled lane with drain beside a raised planter |
 | [IMG_2183.jpg](../../public/photos-ref/IMG_2183.jpg) | ground | planting | Lawn with a tall candelabra cactus and clipped shrubs |
 | [IMG_2186.jpg](../../public/photos-ref/IMG_2186.jpg) | ground | layout | Covered passage through the terrace with a view to the sea |
-| [IMG_2231.jpg](../../public/photos-ref/IMG_2231.jpg) | ground | materials | White tiled bench beside the lane |
-| [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs |
 | [IMG_2236.jpg](../../public/photos-ref/IMG_2236.jpg) | ground | planting | Tall Norfolk pine over the terraces |
 | [IMG_2654.jpg](../../public/photos-ref/IMG_2654.jpg) | ground | materials | Terracotta lane paving close-up with aggregate edging and cross band **Note:** Pure surface detail; heading is a downward angle so subject is just beside the camera. |

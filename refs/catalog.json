@@ -64,7 +64,9 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench"
+  ],
   "looksAt": [
    -44.2,
    136.0
@@ -1681,7 +1683,9 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench"
+  ],
   "looksAt": [
    -41.8,
    139.6
@@ -1752,7 +1756,9 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench"
+  ],
   "looksAt": [
    -45.4,
    142.5
@@ -1787,7 +1793,9 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench"
+  ],
   "looksAt": [
    -42.6,
    145.1
@@ -11639,7 +11647,9 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench"
+  ],
   "looksAt": [
    -36.5,
    132.0
@@ -11680,7 +11690,9 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-sign"
+  ],
   "looksAt": [
    -23.5,
    123.0

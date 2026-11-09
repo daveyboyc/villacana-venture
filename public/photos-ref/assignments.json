@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 402,
-  "photosCitedByModel": 153,
-  "modelFeaturesWithPhotoCitations": 148
+  "features": 404,
+  "photosCitedByModel": 159,
+  "modelFeaturesWithPhotoCitations": 150
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -65,7 +65,9 @@
      "angleOffset": 7.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -39.0,
@@ -1629,7 +1631,9 @@
      "angleOffset": 30.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -37.8,
@@ -1713,7 +1717,9 @@
      "angleOffset": 10.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -41.5,
@@ -1750,7 +1756,9 @@
      "angleOffset": 31.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -43.0,
@@ -11855,7 +11863,9 @@
      "angleOffset": 32.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -38.1,
@@ -11881,7 +11891,9 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-sign"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -26.4,
