@@ -188,6 +188,9 @@ def features(s):
     add('jorge_lane.json:'+lane['id']+'-bench','Calle Jorge white tiled benches','reference feature',lane['trust'],evidence=[p for p in lane['evidence'] if p!='IMG_2597.jpg'],points=[jorge_spot(dist,lane['benches']['offset'],'lawn') for dist in lane['benches']['along']])
     add('jorge_lane.json:'+lane['id']+'-verge','Calle Jorge grass verges and hedge wall','reference feature',lane['trust'],evidence=lane['evidence'],points=[jorge_spot(dist,2,'lawn') for dist in (20,60,100)])
     add('jorge_lane.json:'+lane['id']+'-sign','Calle de Jorge sign and lamp','reference feature',lane['trust'],evidence=['IMG_2597.jpg'],points=[lane['sign']['at'],lane['lamp']['at']])
+    def fitting(item):
+        return jorge_spot(item['along'], item['offset'], item['side'])
+    add('jorge_lane.json:'+lane['id']+'-fittings','Calle Jorge tiles, covers, yucca, cactus, plaques and lamps','reference feature',lane['trust'],evidence=['IMG_2183.jpg','IMG_2230.jpg','IMG_2231.jpg','IMG_2233.jpg','IMG_2234.jpg','IMG_2596.jpg'],points=[fitting(lane['yucca']),fitting(lane['cactus'])]+[fitting(p) for p in lane['plaques']]+[jorge_spot(d,lane['lamps']['offset'],lane['lamps']['side']) for d in lane['lamps']['along']])
     alberto=json.loads((ROOT/'data/alberto_passage.json').read_text());af=alberto['frame']
     aat=lambda a,d:[round(af['origin'][0]+af['along'][0]*a+af['in'][0]*d,2),round(af['origin'][1]+af['along'][1]*a+af['in'][1]*d,2)]
     add('alberto_passage.json:'+alberto['id']+'-porch',alberto['name'],'reference feature','photo-supported porch in the registry recess; sizes and furniture positions estimated',evidence=alberto['evidence'],ring=[aat(0,alberto['platform']['step']['from']),aat(af['width'],alberto['platform']['step']['from']),aat(af['width'],af['depth']),aat(0,af['depth'])])

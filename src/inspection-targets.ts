@@ -20,5 +20,12 @@ export function inspectionTargets(skeleton: Skeleton): InspectionTarget[] {
     const section = road.id === 'elena-north' || road.id === 'silvia-north' ? ' · north' : road.id === 'elena-south' || road.id === 'silvia-south' ? ' · south' : road.id === 'eva-west-footpath' ? ' · west footpath' : '';
     targets.push({ id: road.id, name: road.name + section, group: 'Lanes & roads', points: road.points });
   }
+  // The full Calle Jorge line is too long for the fittings to read. This frames the photographed east end.
+  const jorge = skeleton.streets.find((s) => s.id === 'jorge');
+  if (jorge?.points && jorge.points.length >= 2) {
+    const [a, b] = jorge.points;
+    const at = (t: number): Vec2 => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
+    targets.push({ id: 'jorge-detail', name: 'Calle Jorge · east detail', group: 'Lanes & roads', points: [at(0.72), at(0.98)] });
+  }
   return targets;
 }

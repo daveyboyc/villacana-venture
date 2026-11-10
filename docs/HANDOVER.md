@@ -1,9 +1,12 @@
 # Handover: building Villacana like the real place
 
 This is the working spec for any agent (Claude, Codex or a person) continuing the
-game build. It assumes the rules in `AGENTS.md`. The goal is a walkable Villacana
-that someone who knows it recognises: structure first (lanes, walls, openings,
-levels), then materials, then planting and small details.
+model. It assumes the rules in `AGENTS.md`. The goal is a 3D model with detailed
+assets that matches the map and the reference photos when looked at in Inspect
+(Dave, 2026-11-10). Walk is not being worked on: do not start walking, Walk-camera
+or collision-for-its-own-sake tasks, and do not use a Walk view as the check.
+Structure first (lanes, walls, openings, levels), then materials, then planting
+and small details, and the result has to be visible in Layout and with Show details.
 
 ## What is already in place
 
@@ -134,9 +137,9 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
   (orange in the Sure / unsure overlay, `docs/CONFIDENCE.md`). Never fill gaps with
   repeated walls, gates or scenery. Set every feature's level in `data/confidence.json`
   and list what you leave out under `gaps`.
-- Keep every lane walkable: walls keep each route's half-width clear; openings
-  stay open unless a photo shows them shut. The browser test walks all routes
-  both ways.
+- Keep mapped routes clear in the model: walls keep each route's half-width
+  clear, and openings stay open unless a photo shows them shut. That is so the
+  model matches the paths, not so Walk can be extended.
 - Map, 3D and collision use the same outlines.
 - Registry house and pool footprints stay as they are unless a photo-backed
   correction is the point of the task.
@@ -144,8 +147,9 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
   `check_terrain.py` updated; steps give the player stepped ground. Heights come
   from `data/levels_survey.json` (`docs/LEVELS.md`): houses stay at lane level,
   patios and terraces are what is raised.
-- Layout view shows structure; plants, hedges and props are Details only and
-  must pass the route-clearance guard.
+- Layout shows structure. Photo-backed fittings (benches, planting, covers,
+  plaques, lamps) must show in Inspect with Show details, and must pass the
+  route-clearance guard. Generic clutter stays off Layout.
 - This repo is public: no API keys, signed URLs or photo metadata blobs. Google
   imagery may be published with credit (AGENTS.md). Other private reference images
   stay in `villacana-reference`.

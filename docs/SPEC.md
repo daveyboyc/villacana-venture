@@ -1,6 +1,12 @@
 # Villacana Roam: rebuild spec
 
-Status: draft for Dave's review. Nothing here is built yet.
+Status: historical draft. The goal below is out of date.
+
+## Current direction (Dave, 2026-11-10)
+
+The work is a 3D model with detailed assets, matched to the map and the
+reference photos, and reviewed in Inspect (Layout, and Show details). Walk is
+not being built. See `AGENTS.md`.
 
 ## Goal
 

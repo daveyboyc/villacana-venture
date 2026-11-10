@@ -1,15 +1,18 @@
 # Villacana project direction
 
-## Current focus (Dave, 2026-10-31)
+## Current focus (Dave, 2026-11-10)
 
-The goal for now is a good, detailed 3D model of Villacana that looks like the
-photos when inspected, not a walkable game. Prefer work that makes what you see in
-Inspect closer to the photos: pools, materials and surfaces, facades, planting and
-small built details. Walking is paused: do not start work whose purpose is
-walking, collision, route connectivity or Walk-scene integration, and leave Walk
-working as it is. The path, tunnel and boundary inventories still matter where they
-fix what the model shows, but they no longer come first. Detail still goes on
-geometry the evidence supports; it no longer waits for every route to be mapped.
+The work is a 3D model with detailed assets, matched to the map and the reference
+photos, and judged in **Inspect**. Walk is not being worked on. Do not build or
+tune walking, the Walk camera, collision for its own sake, or route connectivity,
+and leave Walk as it is. A change is not done until it can be seen in Inspect,
+in Layout and with **Show details**, without switching to Walk.
+
+Prefer work that makes Inspect closer to the photos: pools, materials and
+surfaces, facades, planting and small built details. The path, tunnel and
+boundary inventories still matter where they fix what the model shows, but they
+no longer come first. Detail still goes on geometry the evidence supports; it no
+longer waits for every route to be mapped.
 
 Prioritise structural accuracy alongside photo-matched detail. Read
 `docs/LAYOUT_ACCURACY.md` for the current layout view, sources and remaining
@@ -48,8 +51,10 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
   may be built as `inferred` (orange) instead of being left out; never grade it
   photographed. Record anything left out under `gaps`. Respect Dave's decisions there:
   `accepted` means leave it alone, `needs-photos` means improve it when photos arrive.
-- Default to the clear Layout view. Decorative objects must respect the shared
-  route-clearance guard, including their visible footprint. Keep Details optional.
+- Check the model in Inspect. Layout is the clear structural view; **Show details**
+  is where photo-backed fittings must be visible. Generic clutter stays off Layout.
+  Decorative objects must respect the shared route-clearance guard, including
+  their visible footprint. Do not treat a Walk view as the check.
 - Buildings keep a level datum, opaque materials and extrusion material groups.
   Terrain refinement is for ground surfaces and must preserve drawable groups.
 - For geometry/collision/terrain changes, run relevant source and route checks,
