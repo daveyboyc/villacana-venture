@@ -1,6 +1,8 @@
 # Handover: build out the South pool
 
 Written 2026-10-12. For an agent picking this up with no prior context.
+The walkable-courtyard requirement below is superseded: Walk is not the current
+work (Dave, 2026-11-10, `AGENTS.md`). Match the map and the photos in Inspect.
 
 ## The job
 

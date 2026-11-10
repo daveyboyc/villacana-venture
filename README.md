@@ -1,6 +1,9 @@
 # Villacana
 
-One resort map with **Inspect**, **Map & photos** and **Walk** modes.
+A 3D model of the resort, matched to the map and the reference photos, and
+looked at in **Inspect**. **Walk is not the current work.** Layout is the clear
+structural view. **Show details** is where the photo-backed fittings have to be
+visible. Map & photos is the registry layout and the reference index.
 
 ```bash
 npm install
@@ -9,11 +12,13 @@ npm run dev
 
 Open `http://localhost:4731/`. **Inspect** opens the 3D resort without a character.
 Use **Jump to inspect** to start at any pool, named lane, the coastal gate,
-Barraka or the west paseo. [Start at the west paseo](https://daveyboyc.github.io/villacana-venture/?view=overview&area=paseo-west)
+Barraka or the west paseo. **Calle Jorge · east detail** frames the photographed
+fittings on that lane. [Start at the west paseo](https://daveyboyc.github.io/villacana-venture/?view=overview&area=paseo-west)
 to review the recent stamped-paving section. Area links survive refresh.
 **Map & photos** (`?view=map`) shows the detailed registry layout and photo IDs.
-Inspect and Walk use the same current geometry across all four pool areas and
-the seafront. `blueprint.html` and `photos.html` redirect here and
+Inspect uses the current geometry across all four pool areas and the seafront.
+Walk is left as it is and is not part of this work. `blueprint.html` and
+`photos.html` redirect here and
 preserve selected-photo links. `slice.html` is the underlying 3D renderer.
 
 ## Find a reference
@@ -67,8 +72,8 @@ missing and unverified features; the programme is not yet complete.
 In Inspect, drag to pan and scroll, pinch or use +/− to zoom. Choose **Orbit**
 and drag to rotate/tilt; **Pan** restores dragging across the map. **Whole resort**
 resets the camera, and **More** contains Top down, North, photo labels and map checks.
-Walking is available separately through **Walk**: use WASD/arrows or touch controls;
-Shift runs and Space jumps. The main navigation changes mode.
+Walk is still on the page and is left unchanged. It is not part of the current
+model work.
 
 Map labels/references, draft photo labels and camera reviews persist in this
 browser. **Export references**, **Send changes** and **Send checks** share the

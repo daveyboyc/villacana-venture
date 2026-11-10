@@ -1,9 +1,11 @@
-# Layout accuracy before decorative detail
+# Layout accuracy, then the detailed model
 
-The working priority is structural layout: Calle axes and usable paths, registry
-house footprints, patio/enclosure boundaries, photo-backed walls, openings and
-changes in level. Default **Layout** views omit decorative clutter. **Show details**
-is optional and is not a claim that every procedural object matches a photograph.
+The model is judged in Inspect, not in Walk (Dave, 2026-11-10). Structural
+layout still comes first: Calle axes and paths, registry house footprints,
+patio and enclosure boundaries, photo-backed walls, openings and changes in
+level. Photo-backed fittings then have to be visible with **Show details**.
+Default **Layout** still omits generic decorative clutter. Show details is not
+a claim that every procedural object matches a photograph.
 
 ## Corrections in this pass
 
