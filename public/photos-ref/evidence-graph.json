@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 405,
-  "photosCitedByModel": 160,
-  "modelFeaturesWithPhotoCitations": 151
+  "features": 406,
+  "photosCitedByModel": 163,
+  "modelFeaturesWithPhotoCitations": 152
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3018,13 +3018,16 @@
    "id": "jorge_lane.json:jorge-lane-bench",
    "name": "Calle Jorge white tiled benches",
    "kind": "reference feature",
-   "source": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
+   "source": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across, a pale concrete edge, then grass both sides, a white wall with a clipped hedge on the hedge side, and white scalloped benches on the lawn side. IMG_2596 is the path beside that bench, with a round red SANEA cover and a square grate in the tiles. IMG_2231 and IMG_2232 are the bench, and IMG_2231 also shows house number 20 and the CALLE DE TEODORO plaque on the lawn-side house wall. IMG_2230 shows a yucca in the hedge-side grass and black lamps along the lane; IMG_2183 and IMG_2233 are the candelabra cactus in the garden behind that wall. The close-up bench is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m. Covers, the yucca, the cactus, the plaques and the extra lamps are stations read from those pins, and their exact gaps are estimated. Grass starts outside the concrete edge wherever a house does not occupy it. The hedge wall is continued along the open lane and stopped at buildings, with a gap for the yucca. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end. Pins are ±2 to ±5 m.",
    "evidence": [
     "IMG_2182.jpg",
+    "IMG_2183.jpg",
     "IMG_2229.jpg",
     "IMG_2230.jpg",
     "IMG_2231.jpg",
     "IMG_2232.jpg",
+    "IMG_2233.jpg",
+    "IMG_2234.jpg",
     "IMG_2596.jpg"
    ]
   },
@@ -3032,13 +3035,16 @@
    "id": "jorge_lane.json:jorge-lane-verge",
    "name": "Calle Jorge grass verges and hedge wall",
    "kind": "reference feature",
-   "source": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
+   "source": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across, a pale concrete edge, then grass both sides, a white wall with a clipped hedge on the hedge side, and white scalloped benches on the lawn side. IMG_2596 is the path beside that bench, with a round red SANEA cover and a square grate in the tiles. IMG_2231 and IMG_2232 are the bench, and IMG_2231 also shows house number 20 and the CALLE DE TEODORO plaque on the lawn-side house wall. IMG_2230 shows a yucca in the hedge-side grass and black lamps along the lane; IMG_2183 and IMG_2233 are the candelabra cactus in the garden behind that wall. The close-up bench is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m. Covers, the yucca, the cactus, the plaques and the extra lamps are stations read from those pins, and their exact gaps are estimated. Grass starts outside the concrete edge wherever a house does not occupy it. The hedge wall is continued along the open lane and stopped at buildings, with a gap for the yucca. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end. Pins are ±2 to ±5 m.",
    "evidence": [
     "IMG_2182.jpg",
+    "IMG_2183.jpg",
     "IMG_2229.jpg",
     "IMG_2230.jpg",
     "IMG_2231.jpg",
     "IMG_2232.jpg",
+    "IMG_2233.jpg",
+    "IMG_2234.jpg",
     "IMG_2596.jpg",
     "IMG_2597.jpg"
    ]
@@ -3047,9 +3053,23 @@
    "id": "jorge_lane.json:jorge-lane-sign",
    "name": "Calle de Jorge sign and lamp",
    "kind": "reference feature",
-   "source": "IMG_2182, IMG_2229 and IMG_2230 look along Calle Jorge: square terracotta between grass both sides, a white wall with a clipped hedge on the house side, and white scalloped benches on the lawn side. IMG_2231, IMG_2232 and IMG_2596 are that bench. The close-up pin is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m on the same lawn edge, which is what those lane views and the Apple Maps frames of the street show, and their exact gaps are estimated. Grass runs both sides of the 1.2 m path wherever a house does not occupy it. The hedge wall is the house-side boundary in those photos, continued along the open lane and stopped at buildings. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, 1.2 m off the opposite edge. Pins are ±2 to ±5 m.",
+   "source": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across, a pale concrete edge, then grass both sides, a white wall with a clipped hedge on the hedge side, and white scalloped benches on the lawn side. IMG_2596 is the path beside that bench, with a round red SANEA cover and a square grate in the tiles. IMG_2231 and IMG_2232 are the bench, and IMG_2231 also shows house number 20 and the CALLE DE TEODORO plaque on the lawn-side house wall. IMG_2230 shows a yucca in the hedge-side grass and black lamps along the lane; IMG_2183 and IMG_2233 are the candelabra cactus in the garden behind that wall. The close-up bench is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m. Covers, the yucca, the cactus, the plaques and the extra lamps are stations read from those pins, and their exact gaps are estimated. Grass starts outside the concrete edge wherever a house does not occupy it. The hedge wall is continued along the open lane and stopped at buildings, with a gap for the yucca. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end. Pins are ±2 to ±5 m.",
    "evidence": [
     "IMG_2597.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-fittings",
+   "name": "Calle Jorge tiles, covers, yucca, cactus, plaques and lamps",
+   "kind": "reference feature",
+   "source": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across, a pale concrete edge, then grass both sides, a white wall with a clipped hedge on the hedge side, and white scalloped benches on the lawn side. IMG_2596 is the path beside that bench, with a round red SANEA cover and a square grate in the tiles. IMG_2231 and IMG_2232 are the bench, and IMG_2231 also shows house number 20 and the CALLE DE TEODORO plaque on the lawn-side house wall. IMG_2230 shows a yucca in the hedge-side grass and black lamps along the lane; IMG_2183 and IMG_2233 are the candelabra cactus in the garden behind that wall. The close-up bench is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m. Covers, the yucca, the cactus, the plaques and the extra lamps are stations read from those pins, and their exact gaps are estimated. Grass starts outside the concrete edge wherever a house does not occupy it. The hedge wall is continued along the open lane and stopped at buildings, with a gap for the yucca. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end. Pins are ±2 to ±5 m.",
+   "evidence": [
+    "IMG_2183.jpg",
+    "IMG_2230.jpg",
+    "IMG_2231.jpg",
+    "IMG_2233.jpg",
+    "IMG_2234.jpg",
+    "IMG_2596.jpg"
    ]
   },
   {
@@ -6810,6 +6830,24 @@
    "angleOffset": 33.9
   },
   {
+   "from": "photo:IMG_2183.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2183.jpg",
+   "to": "jorge_lane.json:jorge-lane-fittings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2184.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -8138,6 +8176,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2230.jpg",
+   "to": "jorge_lane.json:jorge-lane-fittings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2231.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -8173,6 +8217,12 @@
   {
    "from": "photo:IMG_2231.jpg",
    "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2231.jpg",
+   "to": "jorge_lane.json:jorge-lane-fittings",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8236,6 +8286,24 @@
    "angleOffset": 33.2
   },
   {
+   "from": "photo:IMG_2233.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2233.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2233.jpg",
+   "to": "jorge_lane.json:jorge-lane-fittings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2234.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -8261,6 +8329,24 @@
    "relation": "possibly-in-view",
    "distance": 22.3,
    "angleOffset": 33.8
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
+   "to": "jorge_lane.json:jorge-lane-fittings",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2235.jpg",
@@ -15632,6 +15718,12 @@
   {
    "from": "photo:IMG_2596.jpg",
    "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2596.jpg",
+   "to": "jorge_lane.json:jorge-lane-fittings",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

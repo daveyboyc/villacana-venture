@@ -13,7 +13,7 @@ import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
 import {albertoPassage,albertoRect,suppressInAlbertoPorch} from "./alberto-passage";
 import {passageCorridor,SOUTH_POOL_PASSAGE} from "./south-pool-passage";
 import jorgeLane from "../data/jorge_lane.json";
-import { jorgeBenchSpots } from "./jorge-lane";
+import { jorgeBenchSpots, jorgeSide } from "./jorge-lane";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -434,6 +434,10 @@ async function boot(): Promise<void> {
   jorge.append(jorgeTitle); world.append(jorge);
   for (const item of [...jorgeBenchSpots(), jorgeLane.sign]) {
     const node = el("rect", { x: item.at[0] - 0.7, y: item.at[1] - 0.35, width: 1.4, height: 0.7, fill: "#fffdf8", stroke: "#5c564c", "stroke-width": 0.08, transform: `rotate(${Math.atan2(item.face[0], item.face[1]) * 180 / Math.PI} ${item.at[0]} ${item.at[1]})` });
+    const title = el("title", {}); title.textContent = `${jorgeLane.name}: ${jorgeLane.trust}`; node.append(title); world.append(node);
+  }
+  for (const plant of [jorgeSide(jorgeLane.yucca.along, jorgeLane.yucca.offset, jorgeLane.yucca.side), jorgeSide(jorgeLane.cactus.along, jorgeLane.cactus.offset, jorgeLane.cactus.side)]) {
+    const node = el("circle", { cx: plant.at[0], cy: plant.at[1], r: 0.45, fill: "#3f6b34" });
     const title = el("title", {}); title.textContent = `${jorgeLane.name}: ${jorgeLane.trust}`; node.append(title); world.append(node);
   }
   const silviaOverlay=el('g',{id:'silvia-main-map',role:'button',tabindex:'0','aria-label':'Walk through the Silvia tunnel (approximate map position)',cursor:'pointer'});

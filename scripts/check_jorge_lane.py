@@ -1,4 +1,4 @@
-"""Calle Jorge: benches, walls and verges stay off the path and out of houses."""
+"""Calle Jorge: benches, walls, plants and plaques stay off the walking line; covers stay in the tiles."""
 import json, math
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,5 +40,21 @@ assert len(benches) >= 6
 for p in benches + [tuple(lane['sign']['at']), tuple(lane['lamp']['at'])]:
     assert off_path(p) > jorge['width'] / 2 + 0.4, p
     assert not housed(p), p
-assert 'verge(' in (ROOT / 'src/jorge-lane.ts').read_text() and 'jorge-hedge' in (ROOT / 'src/jorge-lane.ts').read_text()
-print(f'Calle Jorge: {len(benches)} benches, grass and hedge wall off the path PASS')
+assert lane['verges']['inner'] > lane['path']['edgeHalf'] > lane['path']['tileHalf'] > jorge['width'] / 2
+covers = [spot(c['along'], abs(c['offset']), 'lawn' if c['offset'] >= 0 else 'hedge') for c in lane['covers']]
+assert len(covers) >= 4
+for p in covers:
+    assert off_path(p) < lane['path']['tileHalf'] - 0.05, p
+    assert not housed(p), p
+fittings = [spot(lane['yucca']['along'], lane['yucca']['offset'], lane['yucca']['side']),
+            spot(lane['cactus']['along'], lane['cactus']['offset'], lane['cactus']['side'])]
+fittings += [spot(p['along'], p['offset'], p['side']) for p in lane['plaques']]
+fittings += [spot(d, lane['lamps']['offset'], lane['lamps']['side']) for d in lane['lamps']['along']]
+for p in fittings:
+    assert off_path(p) > jorge['width'] / 2 + 0.3, p
+    assert not housed(p), p
+assert off_path(fittings[1]) > lane['boundary']['offset'] + 0.4
+src = (ROOT / 'src/jorge-lane.ts').read_text()
+for name in ('verge(', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA'):
+    assert name in src, name
+print(f'Calle Jorge: {len(benches)} benches, {len(covers)} covers, yucca, cactus, plaques and lamps PASS')

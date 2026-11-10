@@ -2,10 +2,10 @@ import * as THREE from "three";
 import data from "../data/jorge_lane.json";
 import skeleton from "../public/map/skeleton.json";
 import { pointInRing } from "./geom";
-import { plasterMaterial, surfaceTexture } from "./materials";
+import { photoTexture, plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
 
-/** Calle Jorge: grass, the house-side hedge wall, the white benches, the street sign and its lamp. */
+/** Calle Jorge: square tiles, covers, grass, the hedge wall, benches, the yucca and cactus, plaques, the sign and lamps. */
 export const jorgeLane = data;
 const sign = data.sign, lamp = data.lamp;
 const BENCH_LENGTH = 1.45;
@@ -40,6 +40,14 @@ export function jorgeBenchSpots(): { at: Vec2; face: Vec2 }[] {
     const at: Vec2 = [f.p[0] + f.lawn[0] * data.benches.offset, f.p[1] + f.lawn[1] * data.benches.offset];
     return { at, face: f.hedge };
   }).filter((b) => !inHouse(b.at[0], b.at[1]));
+}
+/** A point off the centreline. `face` points back toward the path. */
+export function jorgeSide(dist: number, offset: number, side: string): { at: Vec2; face: Vec2 } {
+  const f = jorgeAt(dist);
+  const lawnSide = side !== "hedge";
+  const n = lawnSide ? f.lawn : f.hedge;
+  const at: Vec2 = [f.p[0] + n[0] * offset, f.p[1] + n[1] * offset];
+  return { at, face: lawnSide ? f.hedge : f.lawn };
 }
 
 function yawOf(face: Vec2): number {
@@ -172,12 +180,137 @@ function verge(side: "lawn" | "hedge"): THREE.Mesh {
   return mesh;
 }
 
-/** Grass both sides, the white hedge wall, benches, shrubs, the street sign and the lamp. */
+/** Square terracotta, UVs in metres, sitting just above the grass. IMG_2182, IMG_2230, IMG_2234. */
+function pathRibbon(half: number, y: number, material: THREE.Material, name: string): THREE.Mesh {
+  const pos: number[] = [], uv: number[] = [], idx: number[] = [];
+  const total = lengthOf();
+  for (let s = 0; s < total - 0.4; s += 2) {
+    const a = jorgeAt(s), b = jorgeAt(Math.min(total, s + 2));
+    const corner = (f: Frame, side: number): Vec2 => [f.p[0] + f.lawn[0] * side * half, f.p[1] + f.lawn[1] * side * half];
+    const corners = [corner(a, -1), corner(a, 1), corner(b, 1), corner(b, -1)];
+    if (corners.filter((p) => inHouse(p[0], p[1])).length >= 3) continue;
+    const base = pos.length / 3;
+    for (const p of corners) { pos.push(p[0], y, p[1]); uv.push(p[0], p[1]); }
+    idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  geo.setIndex(idx); geo.computeVertexNormals();
+  const mesh = new THREE.Mesh(geo, material);
+  mesh.name = name; mesh.receiveShadow = true; mesh.renderOrder = 1;
+  return mesh;
+}
+
+/** Round red SANEA cover and the square grate beside the bench. Schematic, not a copy of the casting. */
+function coverTexture(kind: "round" | "square"): THREE.CanvasTexture {
+  const s = 256, c = document.createElement("canvas"); c.width = c.height = s;
+  const g = c.getContext("2d")!;
+  g.clearRect(0, 0, s, s);
+  g.fillStyle = "#7a3030";
+  if (kind === "round") {
+    g.beginPath(); g.arc(s / 2, s / 2, s * 0.46, 0, Math.PI * 2); g.fill();
+    g.strokeStyle = "#c4a48a"; g.lineWidth = 3;
+    for (const r of [0.16, 0.28, 0.38]) { g.beginPath(); g.arc(s / 2, s / 2, s * r, 0, Math.PI * 2); g.stroke(); }
+    g.strokeStyle = "#e8d7c4"; g.lineWidth = 1.2;
+    for (let i = 0; i < 18; i++) {
+      const a = (i / 18) * Math.PI * 2;
+      g.beginPath(); g.moveTo(s / 2 + Math.cos(a) * s * 0.18, s / 2 + Math.sin(a) * s * 0.18);
+      g.lineTo(s / 2 + Math.cos(a) * s * 0.36, s / 2 + Math.sin(a) * s * 0.36); g.stroke();
+    }
+    g.fillStyle = "#f3e6d4"; g.font = "bold 22px Arial, sans-serif"; g.textAlign = "center";
+    g.save(); g.translate(s / 2, s / 2); g.rotate(-0.6); g.fillText("SANEA", 0, -s * 0.3); g.restore();
+  } else {
+    g.fillRect(8, 8, s - 16, s - 16);
+    g.strokeStyle = "#2a1818"; g.lineWidth = 3;
+    for (let i = 1; i < 8; i++) {
+      const p = 8 + ((s - 16) * i) / 8;
+      g.beginPath(); g.moveTo(p, 14); g.lineTo(p, s - 14); g.moveTo(14, p); g.lineTo(s - 14, p); g.stroke();
+    }
+    g.strokeStyle = "#e7d3c0"; g.lineWidth = 4; g.beginPath(); g.ellipse(s / 2, s / 2, 28, 14, 0.4, 0, Math.PI * 2); g.stroke();
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function coverMesh(kind: string): THREE.Group {
+  const round = kind !== "square";
+  const g = new THREE.Group(); g.name = `jorge-cover-${round ? "round" : "square"}`;
+  const geo = round ? new THREE.CylinderGeometry(0.3, 0.3, 0.06, 20) : new THREE.BoxGeometry(0.46, 0.06, 0.46);
+  const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
+    color: "#9a3830", map: coverTexture(round ? "round" : "square"), roughness: 0.5, metalness: 0.35,
+    polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -4,
+  }));
+  mesh.position.y = 0.36; mesh.receiveShadow = true; mesh.renderOrder = 4; g.add(mesh);
+  return g;
+}
+
+/** Trunk and a fan of blades. IMG_2230, in the grass on the hedge side. */
+function yuccaMesh(): THREE.Group {
+  const g = new THREE.Group(); g.name = "jorge-yucca";
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.09, 1.15, 6), new THREE.MeshStandardMaterial({ color: "#6d5842", roughness: 0.9 }));
+  trunk.position.y = 0.58; trunk.castShadow = true; g.add(trunk);
+  const leaf = new THREE.MeshStandardMaterial({ color: "#2c5830", roughness: 0.8, side: THREE.DoubleSide });
+  for (let i = 0; i < 12; i++) {
+    const spin = new THREE.Group(); spin.position.y = 1.15; spin.rotation.y = (i / 12) * Math.PI * 2;
+    const blade = new THREE.Mesh(new THREE.BoxGeometry(0.06, 0.85, 0.018), leaf);
+    blade.geometry.translate(0, 0.4, 0); blade.rotation.z = 0.95; blade.castShadow = true; spin.add(blade); g.add(spin);
+  }
+  return g;
+}
+
+/** Candelabra cactus behind the hedge wall: a short trunk and a crown of upright stems. IMG_2183 and IMG_2233. */
+function cactusMesh(): THREE.Group {
+  const g = new THREE.Group(); g.name = "jorge-cactus";
+  const green = new THREE.MeshStandardMaterial({ color: "#6f8b58", roughness: 0.7 });
+  const bark = new THREE.MeshStandardMaterial({ color: "#8a8e72", roughness: 0.85 });
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.22, 0.9, 7), bark);
+  trunk.position.y = 0.45; trunk.castShadow = true; g.add(trunk);
+  const stems: [number, number, number][] = [[0, 0, 2.7], [-0.28, 0.08, 2.45], [0.26, -0.06, 2.55], [0.08, 0.3, 2.2], [-0.06, -0.28, 2.3], [-0.42, -0.16, 1.9], [0.4, 0.18, 2.0], [0.18, -0.38, 1.75], [-0.34, 0.28, 1.85], [0.46, -0.22, 1.6]];
+  for (const [x, z, h] of stems) {
+    const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.055, h, 5), green);
+    arm.position.set(x, 0.7 + h / 2, z); arm.castShadow = true; g.add(arm);
+  }
+  return g;
+}
+
+/** Black letter tiles on a white plate. House 20 and CALLE DE TEODORO, IMG_2231 and IMG_2234. */
+function plaqueTexture(lines: string[]): THREE.CanvasTexture {
+  const c = document.createElement("canvas"); c.width = 280; c.height = 360;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#f7f4ee"; g.fillRect(0, 0, 280, 360);
+  g.strokeStyle = "#1c1c1c"; g.lineWidth = 6; g.strokeRect(6, 6, 268, 348);
+  g.font = "bold 36px Arial, sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+  const gap = 300 / lines.length;
+  lines.forEach((line, i) => {
+    const y = 40 + gap * (i + 0.5);
+    const tile = 34, width = line.length * tile;
+    let x = (280 - width) / 2;
+    for (const ch of line) {
+      g.fillStyle = "#161616"; g.fillRect(x + 2, y - 22, tile - 4, 44);
+      g.fillStyle = "#f7f4ee"; g.fillText(ch, x + tile / 2, y);
+      x += tile;
+    }
+  });
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function plaqueMesh(lines: string[]): THREE.Group {
+  const g = new THREE.Group(); g.name = "jorge-plaque";
+  const tall = lines.length > 1;
+  const plate = new THREE.Mesh(new THREE.PlaneGeometry(tall ? 0.62 : 0.28, tall ? 0.48 : 0.22), new THREE.MeshStandardMaterial({ map: plaqueTexture(lines), roughness: 0.55 }));
+  plate.position.y = tall ? 1.45 : 1.7; g.add(plate);
+  return g;
+}
+
+/** Grass both sides, square tiles, covers, the white hedge wall, benches, shrubs, the yucca, the cactus, plaques, the sign and the lamps. */
 export function addJorgeLane(scene: THREE.Scene): void {
+  const edge = new THREE.MeshStandardMaterial({ color: "#d9d3c6", roughness: 0.95 });
+  const tiles = new THREE.MeshStandardMaterial({ map: photoTexture("terracotta"), roughness: 0.9 });
+  // The mapped street ribbon already sits at 0.27 m (src/boundaries.ts). These sit on it.
+  scene.add(pathRibbon(data.path.edgeHalf, 0.3, edge, "jorge-path-edge"), pathRibbon(data.path.tileHalf, 0.32, tiles, "jorge-path"));
   scene.add(verge("lawn"), verge("hedge"));
   const white = plasterMaterial("#f7f4ee"), green = new THREE.MeshStandardMaterial({ color: "#2f6a34", roughness: 0.9 });
   const wallRun = data.boundary;
   for (let s = wallRun.from; s <= wallRun.to; s += wallRun.every) {
+    if (Math.abs(s - data.yucca.along) < 2) continue;
     const f = jorgeAt(s);
     const p: Vec2 = [f.p[0] + f.hedge[0] * wallRun.offset, f.p[1] + f.hedge[1] * wallRun.offset];
     if (inHouse(p[0], p[1]) || inHouse(p[0] + f.along[0] * 1.4, p[1] + f.along[1] * 1.4)) continue;
@@ -188,6 +321,11 @@ export function addJorgeLane(scene: THREE.Scene): void {
     hedge.position.set(p[0], 0.9, p[1]); hedge.rotation.y = yaw; hedge.userData.base = p; hedge.castShadow = true; hedge.name = "jorge-hedge";
     scene.add(wall, hedge);
   }
+  for (const cover of data.covers) {
+    const spot = jorgeSide(cover.along, Math.abs(cover.offset), cover.offset >= 0 ? "lawn" : "hedge");
+    if (inHouse(spot.at[0], spot.at[1])) continue;
+    scene.add(place(coverMesh(cover.kind), spot.at, spot.face));
+  }
   for (const spot of jorgeBenchSpots()) scene.add(place(benchMesh(), spot.at, spot.face));
   for (const dist of data.plants.along) {
     const f = jorgeAt(dist);
@@ -197,9 +335,20 @@ export function addJorgeLane(scene: THREE.Scene): void {
     shrub.position.set(p[0], 0.5, p[1]); shrub.userData.base = p; shrub.castShadow = true; shrub.name = "jorge-shrub";
     scene.add(shrub);
   }
+  for (const plant of [data.yucca, data.cactus] as const) {
+    const spot = jorgeSide(plant.along, plant.offset, plant.side);
+    if (inHouse(spot.at[0], spot.at[1])) continue;
+    scene.add(place(plant === data.yucca ? yuccaMesh() : cactusMesh(), spot.at, spot.face));
+  }
+  for (const plaque of data.plaques) {
+    const spot = jorgeSide(plaque.along, plaque.offset, plaque.side);
+    if (inHouse(spot.at[0], spot.at[1])) continue;
+    scene.add(place(plaqueMesh(plaque.lines), spot.at, spot.face));
+  }
   scene.add(place(signMesh(), sign.at as Vec2, sign.face as Vec2));
-  const light = lampMesh();
-  light.position.set(lamp.at[0], 0, lamp.at[1]);
-  light.userData.base = lamp.at as Vec2;
-  scene.add(light);
+  for (const at of [lamp.at as Vec2, ...data.lamps.along.map((dist) => jorgeSide(dist, data.lamps.offset, data.lamps.side).at)]) {
+    if (inHouse(at[0], at[1])) continue;
+    const light = lampMesh();
+    light.position.set(at[0], 0, at[1]); light.userData.base = at; scene.add(light);
+  }
 }

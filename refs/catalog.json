@@ -52,7 +52,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "Read 2026-11-10. Four worn terracotta squares across, a pale concrete margin, grass both sides. The bench is on the lawn side.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -74,8 +74,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-fittings",
    "street:jorge"
-  ]
+  ],
+  "subject": "square terracotta path, concrete edge and the lawn-side bench"
  },
  {
   "id": "IMG_2183.jpg",
@@ -90,7 +92,7 @@
   "useFor": [
    "planting"
   ],
-  "note": null,
+  "note": "Read 2026-11-10. The cactus stands in a private lawn behind a white wall, with a flowering shrub at its base. The same crown shows over the hedge in IMG_2230. Station estimated from the pin.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -102,13 +104,20 @@
    "altitude": 6.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
+  ],
   "looksAt": [
    -52.8,
    139.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-fittings"
+  ],
+  "subject": "candelabra cactus in the garden behind the hedge wall"
  },
  {
   "id": "IMG_2184.jpg",
@@ -1698,7 +1707,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-bench",
-   "street:jorge"
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-fittings"
   ]
  },
  {
@@ -1715,7 +1725,7 @@
    "layout",
    "materials"
   ],
-  "note": null,
+  "note": "Read 2026-11-10. Square tiles with a pale edge, a yucca in the grass where the hedge breaks, black lamps further along, and the candelabra cactus behind the right-hand wall. House 20 is on the left.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1729,7 +1739,8 @@
   },
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
-   "jorge_lane.json:jorge-lane-verge"
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
    -45.5,
@@ -1737,8 +1748,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "street:jorge"
-  ]
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-fittings"
+  ],
+  "subject": "Jorge path, hedge-side yucca and the cactus crown"
  },
  {
   "id": "IMG_2231.jpg",
@@ -1753,7 +1766,7 @@
   "useFor": [
    "materials"
   ],
-  "note": null,
+  "note": "Read 2026-11-10. The bench sits on the lawn edge of the square-tile path. Number 20 and CALLE DE TEODORO are on the house wall behind it.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1767,7 +1780,8 @@
   },
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
-   "jorge_lane.json:jorge-lane-verge"
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
    -45.4,
@@ -1777,7 +1791,8 @@
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-bench",
    "street:jorge"
-  ]
+  ],
+  "subject": "white bench, house number 20 and the Teodoro plaque"
  },
  {
   "id": "IMG_2232.jpg",
@@ -1813,7 +1828,9 @@
    145.1
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-fittings"
+  ]
  },
  {
   "id": "IMG_2233.jpg",
@@ -1828,7 +1845,7 @@
   "useFor": [
    "planting"
   ],
-  "note": null,
+  "note": "Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1840,13 +1857,20 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
+  ],
   "looksAt": [
    -52.1,
    138.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-fittings"
+  ],
+  "subject": "candelabra cactus behind the Jorge hedge wall"
  },
  {
   "id": "IMG_2234.jpg",
@@ -1862,7 +1886,7 @@
    "layout",
    "signage"
   ],
-  "note": null,
+  "note": "Read 2026-11-10. Four or five terracotta squares across, a pale concrete edge, a black lamp on the hedge side, and the stacked CALLE DE TEODORO tiles on the left house wall. A green cover sits in the grass, not in the path.",
   "observation": null,
   "taken": "2026-10-12",
   "originalUrl": null,
@@ -1874,7 +1898,11 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
+  ],
   "looksAt": [
    -55.7,
    146.2
@@ -1883,9 +1911,10 @@
   "looksAtFeatures": [
    "street:jorge",
    "seaward_paving.json:teodoro-octagonal-paving",
-   "street:teodoro-rojo",
-   "jorge_lane.json:jorge-lane-bench"
-  ]
+   "jorge_lane.json:jorge-lane-fittings",
+   "street:teodoro-rojo"
+  ],
+  "subject": "square tile path, CALLE DE TEODORO plaque and a black lamp"
  },
  {
   "id": "IMG_2235.jpg",
@@ -11090,6 +11119,7 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-fittings",
    "jorge_lane.json:jorge-lane-verge"
   ]
  },
@@ -11595,8 +11625,8 @@
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-bench",
-   "street:jorge",
-   "street:teodoro-rojo"
+   "jorge_lane.json:jorge-lane-fittings",
+   "street:jorge"
   ]
  },
  {
@@ -11637,6 +11667,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:jorge",
+   "jorge_lane.json:jorge-lane-fittings",
    "jorge_lane.json:jorge-lane-bench"
   ]
  },
@@ -11655,7 +11686,7 @@
    "layout",
    "signage"
   ],
-  "note": "Appears to be the white bench seen in IMG_2182.",
+  "note": "Read 2026-11-10. The bench is the lawn-side station. A round red SANEA cover and a square grate sit in the terracotta squares beside it.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/14_9Cdz10yRxw3NCEXQNcmCSzPVlTrg6v/view?usp=drivesdk",
@@ -11669,7 +11700,8 @@
   },
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
-   "jorge_lane.json:jorge-lane-verge"
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
    -36.5,
@@ -11677,9 +11709,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-fittings",
    "street:jorge"
   ],
-  "subject": "white tiled bench and manhole covers"
+  "subject": "white tiled bench, SANEA cover and square grate"
  },
  {
   "id": "IMG_2597.jpg",

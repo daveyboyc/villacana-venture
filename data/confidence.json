@@ -43,6 +43,10 @@
    "level": "estimated",
    "why": "IMG_2597 shows the CALLE DE JORGE plinth and the black lamp beside the path. The pin is ±2.6 m, so the plinth is estimated 1.2 m off the centreline."
   },
+  "jorge_lane.json:jorge-lane-fittings": {
+   "level": "estimated",
+   "why": "Square tiles, the SANEA cover and grate, the yucca, the candelabra cactus, house 20, the CALLE DE TEODORO plaque and the extra lamps are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234 and IMG_2596. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated."
+  },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",
    "why": "Both mouths are photographed and the axis meets IMG_2645's gate, but the cameras are not solved. The 20.4 m depth, 2.1 m width and arch heights are estimates, good to about 2 m."
