@@ -22,8 +22,12 @@
    "planting"
   ],
   "title": "Lawn with a tall candelabra cactus and clipped shrubs",
-  "subject": "candelabra cactus in the garden behind the hedge wall",
-  "note": "Read 2026-11-10. The cactus stands in a private lawn behind a white wall, with a flowering shrub at its base. The same crown shows over the hedge in IMG_2230. Station estimated from the pin."
+  "subject": "the candelabra tree in the garden behind the Calle Jorge wall",
+  "note": "Read 2026-11-10. The cactus stands in a private lawn behind a white wall, with a flowering shrub at its base. The same crown shows over the hedge in IMG_2230. Station estimated from the pin.",
+  "looksAt": [
+   -52.6,
+   138.6
+  ]
  },
  "IMG_2184.jpg": {
   "shows": [
@@ -630,11 +634,11 @@
    "planting"
   ],
   "title": "Lawn with candelabra cactus and shrubs",
-  "subject": "candelabra cactus behind the Jorge hedge wall",
+  "subject": "the candelabra tree in the garden behind the Calle Jorge wall",
   "note": "Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge.",
   "looksAt": [
-   -49.5,
-   139.8
+   -52.6,
+   138.6
   ]
  },
  "IMG_2234.jpg": {
