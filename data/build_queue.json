@@ -2849,6 +2849,35 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "jorge-lane-review",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Jorge: keep only what the photos show, and make it look like them",
+   "photos": [
+    "IMG_2229.jpg",
+    "IMG_2230.jpg",
+    "IMG_2231.jpg",
+    "IMG_2233.jpg",
+    "IMG_2234.jpg",
+    "IMG_2597.jpg"
+   ],
+   "build": "Review of the 9-10 November Calle Jorge work (jorge_lane.json). Remove the six benches repeated every 16 m and the grass, hedge wall and shrubs continued along 120 m without photos; dress only the photographed east stretch. Make the planter wall continuous with a leafy clipped hedge, the covers flush, the grass unstretched, the shrubs leafy, the yucca the resort's 3D model behind the wall, the cactus the candelabra of IMG_2233, the plinth facing the path; planting in Details behind the route guard.",
+   "avoid": "Do not repeat fittings beyond the photographs; do not move the mapped lane or registry houses.",
+   "accept": [
+    "Before/after renders through the photo cameras recorded in data/photo_checks.json"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-fittings",
+    "jorge_lane.json:jorge-lane-bench",
+    "jorge_lane.json:jorge-lane-sign",
+    "jorge_lane.json:jorge-lane-verge"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

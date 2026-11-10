@@ -258,10 +258,7 @@
    164.3
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
-   "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-bench"
-  ]
+  "looksAtFeatures": []
  },
  {
   "id": "IMG_2188.jpg",
@@ -1701,15 +1698,15 @@
    "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
-   -41.8,
-   139.6
+   -44.7,
+   139.1
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "jorge_lane.json:jorge-lane-bench",
    "street:jorge",
    "jorge_lane.json:jorge-lane-fittings"
-  ]
+  ],
+  "subject": "Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other"
  },
  {
   "id": "IMG_2230.jpg",
@@ -1743,13 +1740,14 @@
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
-   -45.5,
-   139.3
+   -46.7,
+   141.3
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:jorge",
-   "jorge_lane.json:jorge-lane-fittings"
+   "jorge_lane.json:jorge-lane-fittings",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "subject": "Jorge path, hedge-side yucca and the cactus crown"
  },
@@ -1784,13 +1782,14 @@
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
-   -45.4,
-   142.5
+   -43.1,
+   139.8
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "jorge_lane.json:jorge-lane-bench",
-   "street:jorge"
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-fittings"
   ],
   "subject": "white bench, house number 20 and the Teodoro plaque"
  },
@@ -1863,12 +1862,13 @@
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
-   -52.1,
-   138.8
+   -49.5,
+   139.8
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "jorge_lane.json:jorge-lane-fittings"
+   "jorge_lane.json:jorge-lane-fittings",
+   "street:jorge"
   ],
   "subject": "candelabra cactus behind the Jorge hedge wall"
  },
@@ -1904,15 +1904,15 @@
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
-   -55.7,
-   146.2
+   -57.4,
+   147.2
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:jorge",
-   "seaward_paving.json:teodoro-octagonal-paving",
+   "street:teodoro-rojo",
    "jorge_lane.json:jorge-lane-fittings",
-   "street:teodoro-rojo"
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "subject": "square tile path, CALLE DE TEODORO plaque and a black lamp"
  },
@@ -3580,8 +3580,6 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-bench",
    "street:jorge"
   ],
   "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
@@ -11624,9 +11622,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-fittings",
-   "street:jorge"
+   "street:jorge",
+   "street:teodoro-rojo"
   ]
  },
  {
@@ -11668,7 +11666,7 @@
   "looksAtFeatures": [
    "street:jorge",
    "jorge_lane.json:jorge-lane-fittings",
-   "jorge_lane.json:jorge-lane-bench"
+   "jorge_lane.json:jorge-lane-verge"
   ]
  },
  {

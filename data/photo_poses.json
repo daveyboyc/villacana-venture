@@ -3344,6 +3344,108 @@
     "f": 1201.8
    },
    "initialBasis": "photo content (alberto-passage-porch): about 2.2 m in front of the porch recess beside its south pier (right in the photo), looking at the plaque on the back wall and down at the ramp and step; the pin (+/-4.7 m) is about 4 m further east. A starting pose, not a solved camera."
+  },
+  "IMG_2229.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -37.8,
+    "y": 1.6,
+    "z": 135.1,
+    "yaw": 240.0,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "photo content (jorge-lane-review): standing on the Jorge path at the pin, facing along the lane (240 degrees), slightly down; not solved."
+  },
+  "IMG_2230.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -39.8,
+    "y": 1.6,
+    "z": 137.3,
+    "yaw": 240.0,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "photo content (jorge-lane-review): standing on the Jorge path at the pin, facing along the lane (240 degrees), slightly down; not solved."
+  },
+  "IMG_2234.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -50.5,
+    "y": 1.6,
+    "z": 143.2,
+    "yaw": 240.0,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "photo content (jorge-lane-review): standing on the Jorge path at the pin, facing along the lane (240 degrees), slightly down; not solved."
+  },
+  "IMG_2597.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -28.21,
+    "y": 1.6,
+    "z": 130.37,
+    "yaw": 35.0,
+    "pitch": -8.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (jorge-lane-review): the pin lies on the CALLE DE JORGE plinth itself, so the camera is set about 3 m south-west of it, facing the phone heading (35 degrees) at the plinth and lamp; not solved."
+  },
+  "IMG_2231.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -41.5,
+    "y": 1.6,
+    "z": 137.9,
+    "yaw": 220,
+    "pitch": -14.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; phone heading; ground eye height; assumed 24 mm-equivalent lens"
+  },
+  "IMG_2233.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -46.5,
+    "y": 1.6,
+    "z": 141.0,
+    "yaw": 291,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "phone pin; phone heading; ground eye height; assumed 24 mm-equivalent lens"
   }
  }
 }

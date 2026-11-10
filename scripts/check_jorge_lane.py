@@ -36,7 +36,11 @@ def housed(p):
     return any(b['floors'] > 0 and inside(p[0], p[1], b['ring']) for b in skeleton['buildings'])
 assert all(p in photos for p in lane['evidence'])
 benches = [spot(d, lane['benches']['offset'], 'lawn') for d in lane['benches']['along']]
-assert len(benches) >= 6
+# Only what a photo shows: one bench, and dressing only along the photographed stretch.
+shown = lane['photographed']
+assert len(benches) == 1 and shown['from'] <= lane['benches']['along'][0] <= shown['to'], 'benches must be the photographed one, not repeats'
+assert shown['from'] <= lane['boundary']['from'] < lane['boundary']['to'] <= shown['to'], 'wall runs outside the photographed stretch'
+assert all(shown['from'] <= d <= shown['to'] for d in lane['plants']['along'] + lane['lamps']['along'] + [c['along'] for c in lane['covers']])
 for p in benches + [tuple(lane['sign']['at']), tuple(lane['lamp']['at'])]:
     assert off_path(p) > jorge['width'] / 2 + 0.4, p
     assert not housed(p), p
@@ -55,6 +59,6 @@ for p in fittings:
     assert not housed(p), p
 assert off_path(fittings[1]) > lane['boundary']['offset'] + 0.4
 src = (ROOT / 'src/jorge-lane.ts').read_text()
-for name in ('verge(', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA'):
+for name in ('verge(', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
     assert name in src, name
-print(f'Calle Jorge: {len(benches)} benches, {len(covers)} covers, yucca, cactus, plaques and lamps PASS')
+print(f'Calle Jorge: {len(benches)} photographed bench, dressing {shown["from"]}-{shown["to"]} m only, planting in Details behind the route guard, {len(covers)} covers, yucca, cactus, plaques and lamps PASS')

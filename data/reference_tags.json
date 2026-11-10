@@ -571,7 +571,12 @@
    "layout",
    "materials"
   ],
-  "title": "Tiled lane between lawns with a white tiled bench"
+  "title": "Tiled lane between lawns with a white tiled bench",
+  "looksAt": [
+   -44.7,
+   139.1
+  ],
+  "subject": "Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other"
  },
  "IMG_2230.jpg": {
   "shows": [
@@ -584,7 +589,11 @@
   ],
   "title": "Tiled lane beside hedges and a patio wall",
   "subject": "Jorge path, hedge-side yucca and the cactus crown",
-  "note": "Read 2026-11-10. Square tiles with a pale edge, a yucca in the grass where the hedge breaks, black lamps further along, and the candelabra cactus behind the right-hand wall. House 20 is on the left."
+  "note": "Read 2026-11-10. Square tiles with a pale edge, a yucca in the grass where the hedge breaks, black lamps further along, and the candelabra cactus behind the right-hand wall. House 20 is on the left.",
+  "looksAt": [
+   -46.7,
+   141.3
+  ]
  },
  "IMG_2231.jpg": {
   "shows": [
@@ -596,7 +605,11 @@
   ],
   "title": "White tiled bench beside the lane",
   "subject": "white bench, house number 20 and the Teodoro plaque",
-  "note": "Read 2026-11-10. The bench sits on the lawn edge of the square-tile path. Number 20 and CALLE DE TEODORO are on the house wall behind it."
+  "note": "Read 2026-11-10. The bench sits on the lawn edge of the square-tile path. Number 20 and CALLE DE TEODORO are on the house wall behind it.",
+  "looksAt": [
+   -43.1,
+   139.8
+  ]
  },
  "IMG_2232.jpg": {
   "shows": [
@@ -618,7 +631,11 @@
   ],
   "title": "Lawn with candelabra cactus and shrubs",
   "subject": "candelabra cactus behind the Jorge hedge wall",
-  "note": "Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge."
+  "note": "Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge.",
+  "looksAt": [
+   -49.5,
+   139.8
+  ]
  },
  "IMG_2234.jpg": {
   "shows": [
@@ -631,7 +648,11 @@
   ],
   "title": "Tiled lane with a wall plaque, lamp post and lawn",
   "subject": "square tile path, CALLE DE TEODORO plaque and a black lamp",
-  "note": "Read 2026-11-10. Four or five terracotta squares across, a pale concrete edge, a black lamp on the hedge side, and the stacked CALLE DE TEODORO tiles on the left house wall. A green cover sits in the grass, not in the path."
+  "note": "Read 2026-11-10. Four or five terracotta squares across, a pale concrete edge, a black lamp on the hedge side, and the stacked CALLE DE TEODORO tiles on the left house wall. A green cover sits in the grass, not in the path.",
+  "looksAt": [
+   -57.4,
+   147.2
+  ]
  },
  "IMG_2235.jpg": {
   "shows": [

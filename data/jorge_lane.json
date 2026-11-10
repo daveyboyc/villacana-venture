@@ -13,7 +13,7 @@
     "IMG_2596.jpg",
     "IMG_2597.jpg"
   ],
-  "trust": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across, joints running with the path and not on the diagonal, a pale concrete edge, then grass both sides, a white wall with a clipped hedge on the hedge side, and white scalloped benches on the lawn side. IMG_2596 is the path beside that bench, with a round red SANEA cover and a square grate in the tiles. IMG_2231 and IMG_2232 are the bench, and IMG_2231 also shows house number 20 and the CALLE DE TEODORO plaque on the lawn-side house wall. IMG_2230 shows a yucca in the hedge-side grass and black lamps along the lane; IMG_2183 and IMG_2233 are the candelabra cactus in the garden behind that wall. The close-up bench is the station at 112 m along the mapped centreline; the other benches repeat that fitting every 16 m. Covers, the yucca, the cactus, the plaques and the extra lamps are stations read from those pins, and their exact gaps are estimated. Grass starts outside the concrete edge wherever a house does not occupy it. The hedge wall is continued along the open lane and stopped at buildings, with a gap for the yucca. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end. Pins are ±2 to ±5 m.",
+  "trust": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across, joints running with the path and not on the diagonal, a pale concrete edge, then grass both sides, a white wall with a clipped hedge on the hedge side, and white scalloped benches on the lawn side. IMG_2596 is the path beside that bench, with a round red SANEA cover and a square grate in the tiles. IMG_2231 and IMG_2232 are the bench, and IMG_2231 also shows house number 20 and the CALLE DE TEODORO plaque on the lawn-side house wall. IMG_2230 shows a yucca rising behind the hedge wall, in the garden beyond it, and black lamps along the lane; IMG_2183 and IMG_2233 are the candelabra cactus in the garden behind that wall. The one photographed bench is the station at 112 m along the mapped centreline; no photo shows a second bench, so none is repeated. Covers, the yucca, the cactus, the plaques and the extra lamps are stations read from those pins, and their exact gaps are estimated. Grass starts outside the concrete edge wherever a house does not occupy it. The low white planter wall with its clipped hedge is built where the photos show it, from about 86 m to the east end, as continuous runs stopped at buildings; grass, wall and planting are not continued west of the photographed stretch. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end. Pins are ±2 to ±5 m. IMG_2597 shows the plinth's lettered face turned towards the path and the camera (south-west), not along the lane.",
   "verges": { "inner": 0.98, "lawnOuter": 3.4, "hedgeOuter": 2.7 },
   "path": { "tileHalf": 0.72, "edgeHalf": 0.92 },
   "covers": [
@@ -23,16 +23,21 @@
     { "along": 113.6, "kind": "square", "offset": -0.22 },
     { "along": 122, "kind": "round", "offset": 0.1 }
   ],
-  "yucca": { "along": 100, "side": "hedge", "offset": 1.15 },
+  "yucca": { "along": 100, "side": "hedge", "offset": 2.4 },
   "cactus": { "along": 103, "side": "hedge", "offset": 2.55 },
   "plaques": [
     { "along": 99.2, "side": "lawn", "offset": 4.45, "lines": ["CALLE", "DE", "TEODORO"] },
     { "along": 114, "side": "lawn", "offset": 7.7, "lines": ["20"] }
   ],
   "lamps": { "offset": 1.05, "side": "hedge", "along": [88, 92, 118] },
-  "boundary": { "from": 8, "to": 128, "offset": 1.7, "every": 3.5, "length": 3.15 },
-  "benches": { "offset": 1.75, "along": [24, 40, 56, 72, 104, 112, 124] },
-  "plants": { "offset": 2.5, "along": [36, 68, 100, 116] },
-  "sign": { "at": [-26.37, 127.75], "face": [0.501, 0.865], "text": "CALLE DE JORGE" },
-  "lamp": { "at": [-25.25, 127.1] }
+  "boundary": { "from": 86, "to": 128, "offset": 1.7, "every": 3.5, "length": 3.15 },
+  "benches": { "offset": 1.75, "along": [112] },
+  "plants": { "offset": 2.5, "along": [100, 116] },
+  "sign": { "at": [-26.37, 127.75], "face": [-0.419, 0.908], "text": "CALLE DE JORGE" },
+  "lamp": { "at": [-25.25, 127.1] },
+  "photographed": {
+    "from": 86,
+    "to": 136.3,
+    "basis": "Every Calle Jorge photo was taken between 101 and 130 m along the mapped centreline (IMG_2182-2234, IMG_2596, IMG_2597); IMG_2234 looks about 15 m further west. West of about 86 m nothing is photographed, so the lane keeps the generic ribbon there (gap:jorge-west, photo request jorge-west-walk)."
+  }
 }
