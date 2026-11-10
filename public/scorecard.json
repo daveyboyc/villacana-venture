@@ -1357,7 +1357,7 @@
     "tagged": 149,
     "placed": 149,
     "checks": {
-     "matches": 10,
+     "matches": 13,
      "differs": 3,
      "not-comparable": 11
     },
@@ -1387,7 +1387,7 @@
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 9,
+    "inProgress": 10,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1728,7 +1728,7 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 25,
+     "matches": 28,
      "differs": 13,
      "not-comparable": 51
     },
@@ -1842,7 +1842,7 @@
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 34,
+    "inProgress": 35,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",

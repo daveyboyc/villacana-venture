@@ -38,12 +38,30 @@ about 86 m to the east end. The rest of the lane keeps the generic ribbon, recor
 - **Shrubs:** spheres became leafy round shrubs. The yucca is now the resort's 3D yucca, set
   behind the wall where IMG_2230 shows it.
 - **Cactus:** a column of thin sticks became a two-trunk candelabra with leaning-then-upright
-  stems, with a round shrub at its foot.
+  stems, with a round shrub at its foot. It was then rebuilt again; see below.
 - **Plinth:** it faced about 60° away from the photo. It now faces the path.
 
 **Layout and Details.** Planting now appears only with Details on, and every plant passes the
 route guard. The bench, plinth, lamps, plaques, covers and walls are photo-backed fittings and
 show in Layout too.
+
+## The candelabra tree (task `jorge-cactus-smooth`)
+
+The first two versions were built from straight cylinders and looked clunky. The tree is now
+`src/candelabra-cactus.ts`, following IMG_2183 and IMG_2233:
+
+- four pale woody trunks rising close together and leaning apart;
+- arms that sweep outward and curve up into a broad domed crown;
+- each stem a single smooth tube along a curve, with four wings, scalloped wing edges, growth
+  constrictions and a rounded tip;
+- grey-green colouring, darker in the grooves and paler on the wing edges, greying to bark on
+  the old wood;
+- a bed of lantana and a lighter shrub at its foot, on the lane side.
+
+It is one mesh of about 130 stems (65,000 vertices), shown only with Details on. It stands 5 m
+behind the lane, in the open garden the registry leaves there, so its whole crown clears the
+walking line. That distance, its 5.6 m height and 4.2 m spread are estimates: the photos show it
+about twice the height of the garden wall behind it, but no camera is solved.
 
 ## Limits
 

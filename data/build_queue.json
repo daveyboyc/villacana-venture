@@ -2878,6 +2878,30 @@
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "jorge-cactus-smooth",
+   "area": "seaward-lanes",
+   "priority": 3,
+   "kind": "planting",
+   "title": "Calle Jorge: a smooth, realistic candelabra tree",
+   "photos": [
+    "IMG_2183.jpg",
+    "IMG_2233.jpg"
+   ],
+   "build": "Replace the stick-and-cylinder cactus with a candelabra tree (Euphorbia) as IMG_2183 and IMG_2233 show it: four pale trunks, arms that sweep out and curve up into a broad domed crown, each stem a smooth four-winged tube with scalloped edges, growth constrictions and a rounded tip (src/candelabra-cactus.ts). Stand it 5 m behind the lane in the open garden, over a lantana bed.",
+   "avoid": "Keep its whole crown clear of the route guard; do not move the lane or registry houses.",
+   "accept": [
+    "Before/after renders from both photos recorded in data/photo_checks.json"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-fittings"
+   ],
+   "dependsOn": [
+    "jorge-lane-review"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

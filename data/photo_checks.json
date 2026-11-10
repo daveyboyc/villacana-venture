@@ -1090,6 +1090,39 @@
    "render": "docs/reviews/jorge-lane-review/IMG_2233-after.png",
    "result": "matches",
    "notes": "The candelabra cactus now has the photographed two-trunk vase shape, stems leaning out then rising, about 4 m tall; before, a narrow column of thin sticks on a funnel. The camera stands behind the hedge wall in the model, so the round shrub at the cactus's foot is hidden by the hedge here. Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-cactus-smooth",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2183.jpg",
+   "before": "docs/reviews/jorge-cactus-smooth/IMG_2183-before.png",
+   "render": "docs/reviews/jorge-cactus-smooth/IMG_2183-after.png",
+   "result": "matches",
+   "notes": "The candelabra tree now has pale trunks rising close together, smooth winged arms sweeping out and curving up, and a broad domed crown, as in the photo; before, straight six-sided cylinders with sharp elbows. The lantana bed is at its foot. The real crown is denser and fuller, and the model camera looks over the lane hedge where the photo stands on the garden lawn. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-cactus-smooth",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2233.jpg",
+   "before": "docs/reviews/jorge-cactus-smooth/IMG_2233-before.png",
+   "render": "docs/reviews/jorge-cactus-smooth/IMG_2233-after.png",
+   "result": "matches",
+   "notes": "Closer view: trunks, curved arms and the flowering bed in front agree with the photo; before, an angular fan of sticks. The white garden wall and bougainvillea behind the tree in the photo are generic houses in the model. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-cactus-smooth",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2230.jpg",
+   "before": "docs/reviews/jorge-cactus-smooth/IMG_2230-before.png",
+   "render": "docs/reviews/jorge-cactus-smooth/IMG_2230-after.png",
+   "result": "matches",
+   "notes": "From the lane looking west, the crown now shows above the houses on the right as a dense head of stems, as in the photo; before, a narrow column of sticks beside the path. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

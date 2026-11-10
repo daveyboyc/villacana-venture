@@ -3437,15 +3437,32 @@
    ],
    "points": [],
    "initial": {
-    "x": -46.5,
+    "x": -46.58,
     "y": 1.6,
-    "z": 141.0,
-    "yaw": 291,
-    "pitch": 0.0,
+    "z": 140.9,
+    "yaw": 291.0,
+    "pitch": 14.0,
     "roll": 0.0,
     "f": 1109.3
    },
-   "initialBasis": "phone pin; phone heading; ground eye height; assumed 24 mm-equivalent lens"
+   "initialBasis": "photo content (jorge-cactus-smooth): the pin lies on the lane, but the photo is taken from the garden lawn; the camera is set 6.5 m from the candelabra tree along the phone heading (291 degrees), tilted up at its crown. A starting pose, not a solved camera."
+  },
+  "IMG_2183.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -44.88,
+    "y": 1.6,
+    "z": 142.03,
+    "yaw": 294.0,
+    "pitch": 8.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "photo content (jorge-cactus-smooth): the pin lies on the lane, but the photo is taken from the garden lawn; the camera is set 8.5 m from the candelabra tree along the phone heading (294 degrees), tilted up at its crown. A starting pose, not a solved camera."
   }
  }
 }

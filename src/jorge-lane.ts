@@ -5,6 +5,7 @@ import { pointInRing } from "./geom";
 import { photoTexture, plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
 import { clippedHedge, looseShrub } from "./clipped-plants";
+import { candelabraCactus } from "./candelabra-cactus";
 import { addSprites } from "./sprites";
 
 /** Calle Jorge: square tiles, covers, grass, the hedge wall, benches, the yucca and cactus, plaques, the sign and lamps. */
@@ -253,38 +254,6 @@ function coverMesh(kind: string): THREE.Group {
   return g;
 }
 
-/**
- * Candelabra cactus (Euphorbia) behind the hedge wall, IMG_2183 and IMG_2233: a short pale trunk that
- * branches into a dense crown of thick ribbed upright stems, about 4 m tall. Seeded, not a scan.
- */
-function cactusMesh(): THREE.Group {
-  const g = new THREE.Group(); g.name = "jorge-cactus";
-  const greens = ["#5c7650", "#677f57", "#52694a"].map((c) => new THREE.MeshStandardMaterial({ color: c, roughness: 0.65, flatShading: true }));
-  const bark = new THREE.MeshStandardMaterial({ color: "#9a9a84", roughness: 0.85 });
-  const up = new THREE.Vector3(0, 1, 0);
-  /** A ribbed segment from a to b. */
-  const segment = (a: THREE.Vector3, b: THREE.Vector3, r0: number, r1: number, m: THREE.Material) => {
-    const len = a.distanceTo(b), seg = new THREE.Mesh(new THREE.CylinderGeometry(r1, r0, len, 6), m);
-    seg.position.copy(a).add(b).multiplyScalar(0.5); seg.quaternion.setFromUnitVectors(up, b.clone().sub(a).normalize()); seg.castShadow = true; g.add(seg);
-  };
-  // Two pale trunks diverging from the ground (IMG_2233), then the crown of stems.
-  const forks = [new THREE.Vector3(-0.25, 1.4, 0.05), new THREE.Vector3(0.22, 1.3, -0.08)];
-  for (const f of forks) segment(new THREE.Vector3(0, 0, 0), f, 0.17, 0.12, bark);
-  let r = 7;
-  const rand = () => { r = (r * 16807) % 2147483647; return r / 2147483647; };
-  for (let i = 0; i < 20; i++) {
-    const f = forks[i % 2], a = rand() * Math.PI * 2, d = 0.25 + rand() * 1.05, rise = 0.35 + rand() * 0.6, rad = 0.065 + rand() * 0.03;
-    // Each stem leans out from its fork, then turns upright: the candelabra vase.
-    const elbow = new THREE.Vector3(f.x + Math.cos(a) * d, f.y + rise, f.z + Math.sin(a) * d);
-    segment(f, elbow, rad * 1.15, rad, greens[(i + 1) % 3]);
-    const top = elbow.clone().add(new THREE.Vector3(0, 1.0 + rand() * 1.6 + (1.3 - d) * 0.6, 0));
-    segment(elbow, top, rad, rad * 0.85, greens[i % 3]);
-    const tip = new THREE.Mesh(new THREE.SphereGeometry(rad * 0.85, 6, 4, 0, Math.PI * 2, 0, Math.PI / 2), greens[i % 3]);
-    tip.position.copy(top); g.add(tip);
-  }
-  return g;
-}
-
 /** Black letter tiles on a white plate. House 20 and CALLE DE TEODORO, IMG_2231 and IMG_2234. */
 function plaqueTexture(lines: string[]): THREE.CanvasTexture {
   const c = document.createElement("canvas"); c.width = 280; c.height = 360;
@@ -385,12 +354,17 @@ export function addJorgeLane(scene: THREE.Scene): void {
     if (!inHouse(spot.at[0], spot.at[1])) addSprites(holder, "yucca", [{ x: spot.at[0], z: spot.at[1], scale: 0.6 }]);
     for (const child of [...holder.children]) { child.name = "jorge-yucca"; scene.add(child); }
   }
-  // The candelabra cactus with the round shrub at its foot (IMG_2183, IMG_2233).
+  // The candelabra tree in the garden behind the wall, with the lantana bed at its foot (IMG_2183, IMG_2233).
   {
-    const spot = jorgeSide(data.cactus.along, data.cactus.offset, data.cactus.side);
-    if (!inHouse(spot.at[0], spot.at[1]) && clear(spot.at, 1.45)) {
-      scene.add(place(cactusMesh(), spot.at, spot.face));
-      stand(looseShrub({ width: 1.3, depth: 1.2, height: 0.75, seed: seed++, leaf: "small", leafSize: [0.07, 0.045], greens: ["#466a35", "#557a3e", "#3a5a2c"], stems: 5 }), spot.at, 0, 0.03, "jorge-cactus-shrub");
+    const spot = jorgeSide(data.cactus.along, data.cactus.offset, data.cactus.side), cd = data.cactus;
+    if (!inHouse(spot.at[0], spot.at[1]) && clear(spot.at, cd.spread / 2 + 0.15)) {
+      stand(candelabraCactus({ height: cd.height, spread: cd.spread, seed: 19, trunks: 4 }), spot.at, 0.6, 0.03, "jorge-cactus");
+      const f = jorgeAt(cd.along);
+      for (const [da, dc, w, h, greens, flowers] of [[0.5, 0.9, 1.9, 0.85, ["#3f5f33", "#4d6e3a", "#35522c"], { count: 60, colour: "#e79ab8" }], [-0.9, 0.7, 1.3, 0.7, ["#6d8f45", "#7c9c4e", "#5f8140"], undefined]] as const) {
+        // The bed lies on the lane side of the trunks, where the photos look at it from.
+        const at: Vec2 = [spot.at[0] + f.along[0] * da + f.lawn[0] * dc, spot.at[1] + f.along[1] * da + f.lawn[1] * dc];
+        stand(looseShrub({ width: w, depth: w * 0.85, height: h, seed: seed++, leaf: "small", leafSize: [0.07, 0.045], greens: [...greens], stems: 6, flowers: flowers ? { ...flowers } : undefined }), at, 0, 0.03, "jorge-cactus-shrub");
+      }
     }
   }
 }

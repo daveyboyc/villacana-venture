@@ -110,14 +110,14 @@
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
-   -52.8,
-   139.8
+   -52.6,
+   138.6
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-fittings"
   ],
-  "subject": "candelabra cactus in the garden behind the hedge wall"
+  "subject": "the candelabra tree in the garden behind the Calle Jorge wall"
  },
  {
   "id": "IMG_2184.jpg",
@@ -1862,15 +1862,14 @@
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
-   -49.5,
-   139.8
+   -52.6,
+   138.6
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "jorge_lane.json:jorge-lane-fittings",
-   "street:jorge"
+   "jorge_lane.json:jorge-lane-fittings"
   ],
-  "subject": "candelabra cactus behind the Jorge hedge wall"
+  "subject": "the candelabra tree in the garden behind the Calle Jorge wall"
  },
  {
   "id": "IMG_2234.jpg",
