@@ -1024,6 +1024,72 @@
    "render": "docs/reviews/alberto-passage-porch/IMG_2792-after.png",
    "result": "matches",
    "notes": "Looking into the porch: the square pier on the right, the red studded ramp beside it running in to the back wall, the tiled step platform with the potted jade on the left, the CALLE ALBERTO 22 40 letter tiles and the AGUA POTABLE hatch on the plain back wall all follow the photo; before, the recess was an open notch in the house with a generic window shutter on its back wall. The photographed porch is a little deeper (about 2 m against the registry's 1 m), the arch is out of frame at this pitch, and the big-leaved plant is simplified. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; the phone compass disagrees by about 50 degrees. A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-review",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-verge",
+   "photo": "IMG_2229.jpg",
+   "before": "docs/reviews/jorge-lane-review/IMG_2229-before.png",
+   "render": "docs/reviews/jorge-lane-review/IMG_2229-after.png",
+   "result": "matches",
+   "notes": "Looking west: tiled path with a pale edge, grass both sides, the one white azulejo bench on the lawn side and the white planter wall with a leafy clipped hedge on the other follow the photo; before, a second bench and a row of saturated green hedge boxes with gaps stood further along. The tiled cross-paths to the houses on the left are not built. Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-review",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2230.jpg",
+   "before": "docs/reviews/jorge-lane-review/IMG_2230-before.png",
+   "render": "docs/reviews/jorge-lane-review/IMG_2230-after.png",
+   "result": "matches",
+   "notes": "Path, continuous planter wall with its clipped hedge on the right and the bench on the left agree; before, segmented green boxes and a sphere shrub. The patio walls with vents and the awning on the right are the generic houses. Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-review",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2234.jpg",
+   "before": "docs/reviews/jorge-lane-review/IMG_2234-before.png",
+   "render": "docs/reviews/jorge-lane-review/IMG_2234-after.png",
+   "result": "matches",
+   "notes": "From about 101 m: the hedge on the planter wall, a lamp and the tiled path with flush covers agree; before, the covers stood proud as discs and the grass was streaked. The path beyond 86 m in the photo continues where the model now keeps the generic ribbon (gap:jorge-west). Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-review",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-bench",
+   "photo": "IMG_2231.jpg",
+   "before": "docs/reviews/jorge-lane-review/IMG_2231-before.png",
+   "render": "docs/reviews/jorge-lane-review/IMG_2231-after.png",
+   "result": "matches",
+   "notes": "The white bench with the crested back and azulejo tile on the lawn beside the path agrees with the photo, unchanged by this review apart from the calmer grass. Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-review",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-sign",
+   "photo": "IMG_2597.jpg",
+   "before": "docs/reviews/jorge-lane-review/IMG_2597-before.png",
+   "render": "docs/reviews/jorge-lane-review/IMG_2597-after.png",
+   "result": "matches",
+   "notes": "From about 3 m south-west of the plinth: the CALLE DE JORGE lettering now faces the camera and the path, with the lamp behind, as in the photo; before, the plinth's face was turned about 60 degrees away. The olive tree and the lawn-edge wall beyond are not modelled. Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-review",
+   "checked": "2026-11-10",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2233.jpg",
+   "before": "docs/reviews/jorge-lane-review/IMG_2233-before.png",
+   "render": "docs/reviews/jorge-lane-review/IMG_2233-after.png",
+   "result": "matches",
+   "notes": "The candelabra cactus now has the photographed two-trunk vase shape, stems leaning out then rising, about 4 m tall; before, a narrow column of thin sticks on a funnel. The camera stands behind the hedge wall in the model, so the round shrub at the cactus's foot is hidden by the hedge here. Camera: hand-set starting pose from the pin and photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

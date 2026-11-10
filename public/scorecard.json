@@ -487,7 +487,7 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 0,
+     "matches": 1,
      "differs": 0,
      "not-comparable": 5
     },
@@ -1357,7 +1357,7 @@
     "tagged": 149,
     "placed": 149,
     "checks": {
-     "matches": 4,
+     "matches": 10,
      "differs": 3,
      "not-comparable": 11
     },
@@ -1387,7 +1387,7 @@
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 8,
+    "inProgress": 9,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1399,19 +1399,19 @@
     "estimated": 13,
     "inferred": 3,
     "registry": 0,
-    "gaps": 1
+    "gaps": 2
    },
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 13 estimated, 3 inferred, 1 known gap.",
+    "How sure: 1 photographed, 13 estimated, 3 inferred, 2 known gaps.",
     "Placement: 0 of 17 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 1 spot",
+    "headline": "Photos needed: 2 spots",
     "requests": [
      {
       "id": "guillermo-lane-walk",
@@ -1426,6 +1426,22 @@
       "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
       "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
       "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-west-walk",
+      "at": [
+       -73.5,
+       156.5
+      ],
+      "look": [
+       -103.0,
+       173.5
+      ],
+      "ask": "Walk Calle Jorge west from the bench (about 30 m from the east end) to its far end, one photo along the lane every 15 m, and one of each side garden wall.",
+      "why": "Only the east 35 m of Calle Jorge is photographed; the rest keeps the generic ribbon (gap:jorge-west)",
+      "priority": 2,
       "state": "open",
       "photos": []
      },
@@ -1712,7 +1728,7 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 19,
+     "matches": 25,
      "differs": 13,
      "not-comparable": 51
     },
@@ -1826,7 +1842,7 @@
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 33,
+    "inProgress": 34,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1838,19 +1854,19 @@
     "estimated": 106,
     "inferred": 10,
     "registry": 233,
-    "gaps": 15
+    "gaps": 16
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 106 estimated, 10 inferred, 15 known gaps.",
+    "How sure: 57 photographed, 106 estimated, 10 inferred, 16 known gaps.",
     "Placement: 0 of 406 features verified, 20 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 12 spots",
+    "headline": "Photos needed: 13 spots",
     "requests": [
      {
       "id": "alberto",
@@ -1976,6 +1992,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-west-walk",
+      "at": [
+       -73.5,
+       156.5
+      ],
+      "look": [
+       -103.0,
+       173.5
+      ],
+      "ask": "Walk Calle Jorge west from the bench (about 30 m from the east end) to its far end, one photo along the lane every 15 m, and one of each side garden wall.",
+      "why": "Only the east 35 m of Calle Jorge is photographed; the rest keeps the generic ribbon (gap:jorge-west)",
       "priority": 2,
       "state": "open",
       "photos": []

@@ -45,7 +45,7 @@
   },
   "jorge_lane.json:jorge-lane-fittings": {
    "level": "estimated",
-   "why": "Square tiles, the SANEA cover and grate, the yucca, the candelabra cactus, house 20, the CALLE DE TEODORO plaque and the extra lamps are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234 and IMG_2596. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated."
+   "why": "Square tiles, the SANEA cover and grate, the yucca, the candelabra cactus, house 20, the CALLE DE TEODORO plaque and the extra lamps are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234 and IMG_2596. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated. Since 10 November the path, grass, planter wall and hedge cover only the photographed stretch (from about 86 m), and there is one bench, the photographed one."
   },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",
@@ -594,6 +594,18 @@
     "IMG_2792.jpg"
    ],
    "why": "IMG_2792 shows only the porch; which way the passage turns behind the back wall, and its width, height and line through the house, are unseen, so it is not cut through the registry house in 3D (photo request calle-alberto-22-40-inside)."
+  },
+  {
+   "id": "gap:jorge-west",
+   "name": "Calle Jorge west of about 86 m: path, edges, walls and planting",
+   "at": [
+    -103.0,
+    173.5
+   ],
+   "photos": [
+    "IMG_2234.jpg"
+   ],
+   "why": "No photo covers Calle Jorge west of about 86 m along its centreline (all are between 101 and 130 m; IMG_2234 only looks about 15 m beyond), so the photographed dressing is not repeated there; the lane keeps the generic ribbon (photo request jorge-west-walk)."
   }
  ]
 }
