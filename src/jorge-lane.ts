@@ -180,17 +180,20 @@ function verge(side: "lawn" | "hedge"): THREE.Mesh {
   return mesh;
 }
 
-/** Square terracotta, UVs in metres, sitting just above the grass. IMG_2182, IMG_2230, IMG_2234. */
+/** Square terracotta with joints along and across the path. IMG_2182, IMG_2230, IMG_2234. World-aligned UVs put the grid on the diagonal. */
 function pathRibbon(half: number, y: number, material: THREE.Material, name: string): THREE.Mesh {
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
   const total = lengthOf();
   for (let s = 0; s < total - 0.4; s += 2) {
-    const a = jorgeAt(s), b = jorgeAt(Math.min(total, s + 2));
-    const corner = (f: Frame, side: number): Vec2 => [f.p[0] + f.lawn[0] * side * half, f.p[1] + f.lawn[1] * side * half];
-    const corners = [corner(a, -1), corner(a, 1), corner(b, 1), corner(b, -1)];
-    if (corners.filter((p) => inHouse(p[0], p[1])).length >= 3) continue;
+    const a = jorgeAt(s), b = jorgeAt(Math.min(total, s + 2)), end = Math.min(total, s + 2);
+    const corner = (f: Frame, side: number, along: number): { p: Vec2; uv: [number, number] } => {
+      const across = side * half;
+      return { p: [f.p[0] + f.lawn[0] * across, f.p[1] + f.lawn[1] * across], uv: [along, across] };
+    };
+    const corners = [corner(a, -1, s), corner(a, 1, s), corner(b, 1, end), corner(b, -1, end)];
+    if (corners.filter((c) => inHouse(c.p[0], c.p[1])).length >= 3) continue;
     const base = pos.length / 3;
-    for (const p of corners) { pos.push(p[0], y, p[1]); uv.push(p[0], p[1]); }
+    for (const c of corners) { pos.push(c.p[0], y, c.p[1]); uv.push(c.uv[0], c.uv[1]); }
     idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
   }
   const geo = new THREE.BufferGeometry();
