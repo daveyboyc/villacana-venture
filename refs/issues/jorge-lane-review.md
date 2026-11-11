@@ -15,7 +15,7 @@ Task `jorge-lane-review` · area **Patricia, Silvia, Jorge, Teodoro Rojo and Gui
 - `public/photos-ref/IMG_2229.jpg`: Tiled lane between lawns with a white tiled bench (ground — pin ±3.8 m; looks at Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other)
 - `public/photos-ref/IMG_2230.jpg`: Tiled lane beside hedges and a patio wall (ground — pin ±2.0 m; looks at Jorge path, hedge-side yucca and the cactus crown)
 - `public/photos-ref/IMG_2231.jpg`: White tiled bench beside the lane (ground — pin ±2.1 m; looks at white bench, house number 20 and the Teodoro plaque)
-- `public/photos-ref/IMG_2233.jpg`: Lawn with candelabra cactus and shrubs (ground — pin ±2.7 m; looks at the candelabra tree in the garden behind the Calle Jorge wall)
+- `public/photos-ref/IMG_2233.jpg`: Lawn with candelabra cactus and shrubs (ground — pin ±2.7 m; looks at the candelabra tree on the open garden lawn north of Calle Jorge)
 - `public/photos-ref/IMG_2234.jpg`: Tiled lane with a wall plaque, lamp post and lawn (ground — pin ±3.1 m; looks at square tile path, CALLE DE TEODORO plaque and a black lamp)
 - `public/photos-ref/IMG_2597.jpg`: Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond (ground — pin ±2.6 m; looks at Calle de Jorge sign post)
 

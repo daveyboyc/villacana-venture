@@ -4,15 +4,17 @@ import skeleton from "../public/map/skeleton.json";
 import { pointInRing } from "./geom";
 import { photoTexture, plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
-import { clippedHedge, looseShrub } from "./clipped-plants";
+import { clippedHedge, looseShrub, wallClimber } from "./clipped-plants";
 import { candelabraCactus } from "./candelabra-cactus";
 import { lanternPost } from "./lantern-post";
 import { addSprites } from "./sprites";
 
-/** Calle Jorge: square tiles, covers, grass, the hedge wall, benches, the yucca and cactus, plaques, the sign and lamps. */
+/** Calle Jorge: square tiles and cross-paths, covers, lawns and kerbs, planter walls, the bench, beds, the dragon tree and cactus, plaques, the sign and lamps. */
 export const jorgeLane = data;
 const sign = data.sign, lamp = data.lamp;
 const BENCH_LENGTH = 1.45;
+/** The tiled path stands this far above the modelled ground (the street ribbon, src/boundaries.ts); walls and kerbs are measured from it. */
+const PATH_Y = 0.3;
 /** Only the stretch the photos show is dressed; the rest keeps the generic ribbon (gap:jorge-west). */
 const SHOWN = data.photographed;
 const road = skeleton.streets.find((s) => s.id === "jorge")!;
@@ -54,6 +56,31 @@ export function jorgeSide(dist: number, offset: number, side: string): { at: Vec
   const n = lawnSide ? f.lawn : f.hedge;
   const at: Vec2 = [f.p[0] + n[0] * offset, f.p[1] + n[1] * offset];
   return { at, face: lawnSide ? f.hedge : f.lawn };
+}
+/** Station along the lane and signed offset: + is the lawn side, - the hedge side. */
+function at(s: number, d: number): Vec2 {
+  const f = jorgeAt(s);
+  return [f.p[0] + f.lawn[0] * d, f.p[1] + f.lawn[1] * d];
+}
+/** Walls the photos show plain or planted (IMG_2183, IMG_2229, IMG_2233): the generic tiled porches and awnings are left off them. */
+export function inJorgePlainFront(x: number, z: number): boolean {
+  const f = jorgeAt(0), dx = x - f.p[0], dz = z - f.p[1];
+  const s = dx * f.along[0] + dz * f.along[1], d = dx * f.lawn[0] + dz * f.lawn[1];
+  return data.plainFronts.some((zone) => {
+    const o = zone.side === "lawn" ? d : -d;
+    return s >= zone.along[0] && s <= zone.along[1] && o >= zone.offset[0] && o <= zone.offset[1];
+  });
+}
+/** The planter-wall runs on the hedge side: open stretches of the boundary, less houses and the photographed gaps. */
+export function jorgeWallRuns(): [number, number][] {
+  const w = data.boundary, step = 0.1, runs: [number, number][] = [];
+  const gap = (s: number) => w.gaps.some((g) => s >= g.from - 1e-6 && s < g.to - 1e-6);
+  for (let s = w.from; s < w.to - 1e-6; s += step) {
+    const p = at(s + step / 2, -w.offset), open = !gap(s + step / 2) && !inHouse(p[0], p[1]);
+    const last = runs[runs.length - 1];
+    if (open && last && Math.abs(last[1] - s) < 1e-6) last[1] = s + step; else if (open) runs.push([s, s + step]);
+  }
+  return runs.map(([a, b]) => [Math.round(a * 10) / 10, Math.round(b * 10) / 10] as [number, number]).filter(([a, b]) => b - a >= 0.8);
 }
 
 function yawOf(face: Vec2): number {
@@ -151,23 +178,21 @@ function place(group: THREE.Group, at: Vec2, face: Vec2): THREE.Group {
   return group;
 }
 
-function verge(side: "lawn" | "hedge"): THREE.Mesh {
-  const inner = data.verges.inner, outer = side === "lawn" ? data.verges.lawnOuter : data.verges.hedgeOuter;
+/** Lawn in one-metre cells, skipping any cell that touches a house. Turf is laid in metres so it is not stretched. */
+function grass(side: "lawn" | "hedge"): THREE.Mesh {
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
-  const total = lengthOf();
-  for (let s = SHOWN.from; s < Math.min(total, SHOWN.to) - 0.5; s += 2) {
-    const a = jorgeAt(s), b = jorgeAt(Math.min(total, s + 2));
-    const pick = (f: Frame, d: number): Vec2 => {
-      const n = side === "lawn" ? f.lawn : f.hedge;
-      return [f.p[0] + n[0] * d, f.p[1] + n[1] * d];
-    };
-    const corners = [pick(a, inner), pick(a, outer), pick(b, outer), pick(b, inner)];
-    if (corners.some((p) => inHouse(p[0], p[1]))) continue;
-    const base = pos.length / 3;
-    // Turf in metres (1.6 m swatch), across and along, so it is not stretched into stripes.
-    const across = [inner, outer, outer, inner], along = [s, s, s + 2, s + 2];
-    corners.forEach((p, i) => { pos.push(p[0], 0.025, p[1]); uv.push(across[i] / 1.6, along[i] / 1.6); });
-    idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+  const total = lengthOf(), sign = side === "lawn" ? 1 : -1;
+  for (const patch of data.grass.filter((g) => g.side === side)) {
+    const inner = (patch as { inner?: number }).inner ?? data.verges.inner, to = Math.min(total, patch.to);
+    for (let s = patch.from; s < to - 1e-6; s += 1) for (let d = inner; d < patch.outer - 1e-6; d += 1) {
+      const s2 = Math.min(to, s + 1), d2 = Math.min(patch.outer, d + 1);
+      const cell: [number, number][] = [[s, d], [s, d2], [s2, d2], [s2, d]];
+      const corners = cell.map(([cs, cd]) => at(cs, cd * sign));
+      if (corners.some((p) => inHouse(p[0], p[1]))) continue;
+      const base = pos.length / 3;
+      corners.forEach((p, i) => { pos.push(p[0], 0.025, p[1]); uv.push(cell[i][1] / 1.6, cell[i][0] / 1.6); });
+      idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+    }
   }
   const geo = new THREE.BufferGeometry();
   geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
@@ -176,6 +201,63 @@ function verge(side: "lawn" | "hedge"): THREE.Mesh {
   const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: surfaceTexture("turf"), color: "#6d8f4c", roughness: 1, side: THREE.DoubleSide }));
   mesh.name = `jorge-grass-${side}`; mesh.receiveShadow = true;
   return mesh;
+}
+
+/** A tiled strip along a line of [station, offset] points, mitred at its bends, with tile joints along and across it. */
+function strip(points: number[][], half: number, y: number, material: THREE.Material, name: string): THREE.Mesh {
+  const pts = points.map(([s, d]) => at(s, d)), pos: number[] = [], uv: number[] = [], idx: number[] = [];
+  let run = 0;
+  const dir = (i: number): Vec2 => { const a = pts[i], b = pts[i + 1], l = Math.hypot(b[0] - a[0], b[1] - a[1]); return [(b[0] - a[0]) / l, (b[1] - a[1]) / l]; };
+  pts.forEach((p, i) => {
+    const before = i > 0 ? dir(i - 1) : dir(i), after = i < pts.length - 1 ? dir(i) : dir(i - 1);
+    if (i > 0) run += Math.hypot(p[0] - pts[i - 1][0], p[1] - pts[i - 1][1]);
+    // Mitre: the offset direction is the bisector of the two side normals, lengthened to keep the width.
+    const n: Vec2 = [-(before[1] + after[1]), before[0] + after[0]], l = Math.hypot(n[0], n[1]);
+    const k = half / (l / 2) / l;
+    for (const side of [-1, 1]) { pos.push(p[0] + n[0] * k * side, y, p[1] + n[1] * k * side); uv.push(run, side * half); }
+    if (i > 0) { const b = (i - 1) * 2; idx.push(b, b + 3, b + 2, b, b + 1, b + 3); }
+  });
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  geo.setIndex(idx); geo.computeVertexNormals();
+  const mesh = new THREE.Mesh(geo, material);
+  mesh.name = name; mesh.receiveShadow = true; mesh.renderOrder = 1;
+  return mesh;
+}
+/** A box along the lane frame between two [station, offset] points, standing on the ground. */
+function bar(a: number[], b: number[], width: number, height: number, material: THREE.Material, name: string): THREE.Mesh {
+  const p = at(a[0], a[1]), q = at(b[0], b[1]), len = Math.hypot(q[0] - p[0], q[1] - p[1]);
+  const mesh = new THREE.Mesh(new THREE.BoxGeometry(width, height, len), material);
+  const mid: Vec2 = [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+  mesh.position.set(mid[0], height / 2, mid[1]); mesh.rotation.y = Math.atan2(q[0] - p[0], q[1] - p[1]);
+  mesh.userData.base = mid; mesh.castShadow = mesh.receiveShadow = true; mesh.name = name;
+  return mesh;
+}
+/** Red brick laid in rows across the patio thresholds (IMG_2230, IMG_2182). Schematic. */
+function brickTexture(): THREE.CanvasTexture {
+  const s = 256, c = document.createElement("canvas"); c.width = c.height = s;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#a89684"; g.fillRect(0, 0, s, s);
+  const rows = 8, h = s / rows, w = s / 2;
+  for (let r = 0; r < rows; r++) for (let i = -1; i < 3; i++) {
+    const tone = 118 + ((r * 37 + i * 61) % 30);
+    g.fillStyle = `rgb(${tone + 22},${Math.round(tone * 0.46)},${Math.round(tone * 0.34)})`;
+    g.fillRect(i * w + (r % 2 ? w / 2 : 0) + 2, r * h + 2, w - 4, h - 4);
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; return t;
+}
+/** The small recess near a planter end with a blue-and-white house-number tile in its foot (IMG_2230, IMG_2182). The digits are not legible, so none are drawn. */
+function nicheTexture(): THREE.CanvasTexture {
+  const c = document.createElement("canvas"); c.width = 128; c.height = 240;
+  const g = c.getContext("2d")!;
+  const shade = g.createLinearGradient(0, 0, 128, 0); shade.addColorStop(0, "#8d887d"); shade.addColorStop(0.4, "#b9b4a8"); shade.addColorStop(1, "#cfcabe");
+  g.fillStyle = shade; g.fillRect(0, 0, 128, 240);
+  g.fillStyle = "#77736a"; g.fillRect(0, 0, 128, 22);
+  g.fillStyle = "#eeece6"; g.fillRect(22, 168, 84, 64);
+  g.strokeStyle = "#27478c"; g.lineWidth = 5; g.strokeRect(27, 173, 74, 54);
+  g.fillStyle = "#27478c"; g.beginPath(); g.moveTo(64, 186); g.lineTo(76, 200); g.lineTo(64, 214); g.lineTo(52, 200); g.closePath(); g.fill();
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 
 /** Square terracotta with joints along and across the path. IMG_2182, IMG_2230, IMG_2234. World-aligned UVs put the grid on the diagonal. */
@@ -204,14 +286,19 @@ function pathRibbon(half: number, y: number, material: THREE.Material, name: str
 }
 
 /** Round red SANEA cover and the square grate beside the bench. Schematic, not a copy of the casting. */
-function coverTexture(kind: "round" | "square"): THREE.CanvasTexture {
+function coverTexture(kind: "round" | "square" | "channel" | "green"): THREE.CanvasTexture {
   const s = 256, c = document.createElement("canvas"); c.width = c.height = s;
   const g = c.getContext("2d")!;
   g.clearRect(0, 0, s, s);
-  g.fillStyle = "#7a3030";
-  if (kind === "round") {
+  g.fillStyle = kind === "green" ? "#2f5a3c" : "#7a3030";
+  if (kind === "channel") {
+    // Slot drain across the path at the Teodoro junction (IMG_2234): dark slots in a red frame.
+    g.fillRect(0, 0, s, s);
+    g.fillStyle = "#2a1515";
+    for (let i = 0; i < 14; i++) g.fillRect(10 + i * 17, 26, 8, s - 52);
+  } else if (kind === "round" || kind === "green") {
     g.beginPath(); g.arc(s / 2, s / 2, s * 0.46, 0, Math.PI * 2); g.fill();
-    g.strokeStyle = "#c4a48a"; g.lineWidth = 3;
+    g.strokeStyle = kind === "green" ? "#6f9a78" : "#c4a48a"; g.lineWidth = 3;
     for (const r of [0.16, 0.28, 0.38]) { g.beginPath(); g.arc(s / 2, s / 2, s * r, 0, Math.PI * 2); g.stroke(); }
     g.strokeStyle = "#e8d7c4"; g.lineWidth = 1.2;
     for (let i = 0; i < 18; i++) {
@@ -219,8 +306,10 @@ function coverTexture(kind: "round" | "square"): THREE.CanvasTexture {
       g.beginPath(); g.moveTo(s / 2 + Math.cos(a) * s * 0.18, s / 2 + Math.sin(a) * s * 0.18);
       g.lineTo(s / 2 + Math.cos(a) * s * 0.36, s / 2 + Math.sin(a) * s * 0.36); g.stroke();
     }
-    g.fillStyle = "#f3e6d4"; g.font = "bold 22px Arial, sans-serif"; g.textAlign = "center";
-    g.save(); g.translate(s / 2, s / 2); g.rotate(-0.6); g.fillText("SANEA", 0, -s * 0.3); g.restore();
+    if (kind === "round") {
+      g.fillStyle = "#f3e6d4"; g.font = "bold 22px Arial, sans-serif"; g.textAlign = "center";
+      g.save(); g.translate(s / 2, s / 2); g.rotate(-0.6); g.fillText("SANEA", 0, -s * 0.3); g.restore();
+    }
   } else {
     g.fillRect(8, 8, s - 16, s - 16);
     g.strokeStyle = "#2a1818"; g.lineWidth = 3;
@@ -233,15 +322,18 @@ function coverTexture(kind: "round" | "square"): THREE.CanvasTexture {
   const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 function coverMesh(kind: string): THREE.Group {
-  const round = kind !== "square";
-  const g = new THREE.Group(); g.name = `jorge-cover-${round ? "round" : "square"}`;
+  const shape = kind === "square" || kind === "channel" || kind === "green" ? kind : "round";
+  const g = new THREE.Group(); g.name = `jorge-cover-${shape}`;
   // Flush with the tiles (IMG_2596): a thin plate whose top is a few millimetres above the path at 0.32 m.
-  const geo = round ? new THREE.CylinderGeometry(0.3, 0.3, 0.02, 24) : new THREE.BoxGeometry(0.46, 0.02, 0.46);
+  // The channel lies across the path; the green cover lies in the grass (IMG_2234).
+  const r = data.grassCover.radius;
+  const geo = shape === "round" ? new THREE.CylinderGeometry(0.3, 0.3, 0.02, 24) : shape === "green" ? new THREE.CylinderGeometry(r, r, 0.03, 28)
+    : shape === "channel" ? new THREE.BoxGeometry(0.62, 0.02, 0.13) : new THREE.BoxGeometry(0.46, 0.02, 0.46);
   const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
-    color: "#9a3830", map: coverTexture(round ? "round" : "square"), roughness: 0.5, metalness: 0.35,
+    color: shape === "green" ? "#4f7f5c" : "#9a3830", map: coverTexture(shape), roughness: 0.5, metalness: 0.35,
     polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -4,
   }));
-  mesh.position.y = 0.315; mesh.receiveShadow = true; mesh.renderOrder = 4; g.add(mesh);
+  mesh.position.y = shape === "green" ? 0.045 : 0.315; mesh.receiveShadow = true; mesh.renderOrder = 4; g.add(mesh);
   return g;
 }
 
@@ -273,35 +365,58 @@ function plaqueMesh(lines: string[]): THREE.Group {
   return g;
 }
 
-/** Grass both sides, square tiles, covers, the white hedge wall, benches, shrubs, the yucca, the cactus, plaques, the sign and the lamps. */
+/** Lawns, square tiles and cross-paths, covers, kerbs, planter walls, the bench, beds, planting, plaques, the sign and the lamps. */
 export function addJorgeLane(scene: THREE.Scene): void {
   const edge = new THREE.MeshStandardMaterial({ color: "#d9d3c6", roughness: 0.95 });
   const tiles = new THREE.MeshStandardMaterial({ map: photoTexture("terracotta"), roughness: 0.9 });
   // The mapped street ribbon already sits at 0.27 m (src/boundaries.ts). These sit on it.
   scene.add(pathRibbon(data.path.edgeHalf, 0.3, edge, "jorge-path-edge"), pathRibbon(data.path.tileHalf, 0.32, tiles, "jorge-path"));
-  scene.add(verge("lawn"), verge("hedge"));
-  const white = plasterMaterial("#f7f4ee");
-  // The low white planter wall (IMG_2230, IMG_2234): continuous runs where the photographed stretch is open, stopped at houses.
-  const wallRun = data.boundary, step = 0.5, runs: [number, number][] = [];
-  for (let s = wallRun.from; s < wallRun.to; s += step) {
-    const f = jorgeAt(s), p: Vec2 = [f.p[0] + f.hedge[0] * wallRun.offset, f.p[1] + f.hedge[1] * wallRun.offset];
-    const open = !inHouse(p[0], p[1]) && !inHouse(p[0] + f.along[0] * step, p[1] + f.along[1] * step);
-    const last = runs[runs.length - 1];
-    if (open && last && Math.abs(last[1] - s) < 1e-6) last[1] = s + step; else if (open) runs.push([s, s + step]);
+  scene.add(grass("lawn"), grass("hedge"));
+  // Two-tile cross-paths over the lawn to the house fronts (IMG_2182, IMG_2229, IMG_2231), level with the lane.
+  const cross = data.crossPaths;
+  for (const path of cross.lines) {
+    scene.add(strip(path.points, cross.edgeHalf, 0.29, edge, "jorge-cross-path-edge"), strip(path.points, cross.tileHalf, 0.31, tiles, "jorge-cross-path"));
   }
-  const wallRuns = runs.filter(([a, b]) => b - a >= 0.8);
-  for (const [a, b] of wallRuns) {
-    const mid = jorgeAt((a + b) / 2), len = b - a;
-    const p: Vec2 = [mid.p[0] + mid.hedge[0] * wallRun.offset, mid.p[1] + mid.hedge[1] * wallRun.offset];
-    const yaw = Math.atan2(mid.along[0], mid.along[1]);
-    const wall = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.55, len), white);
-    wall.position.set(p[0], 0.275, p[1]); wall.rotation.y = yaw; wall.userData.base = p; wall.castShadow = wall.receiveShadow = true; wall.name = "jorge-wall";
-    scene.add(wall);
+  const white = plasterMaterial("#f7f4ee");
+  // The low white planter walls (IMG_2182, IMG_2230, IMG_2234): runs stopped at houses, at the open garden and at the patio thresholds.
+  const wallRun = data.boundary, wallRuns = jorgeWallRuns();
+  for (const [a, b] of wallRuns) scene.add(bar([a, -wallRun.offset], [b, -wallRun.offset], wallRun.thickness, wallRun.height + PATH_Y, white, "jorge-wall"));
+  // Brick thresholds through the gaps into the patios, and the number niches at the planter ends.
+  const brick = new THREE.MeshStandardMaterial({ map: brickTexture(), color: "#d9c4b8", roughness: 0.92 });
+  for (const gap of wallRun.gaps.filter((g) => g.kind === "threshold")) {
+    const mid = (data.path.edgeHalf + wallRun.thresholdOuter) / 2;
+    const sill = strip([[gap.from, -mid], [gap.to, -mid]], (wallRun.thresholdOuter - data.path.edgeHalf) / 2, 0.3, brick, "jorge-threshold");
+    const uv = sill.geometry.getAttribute("uv"); for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) / 0.5, uv.getY(i) / 0.5);
+    scene.add(sill);
+  }
+  const face = wallRun.offset - wallRun.thickness / 2, niche = new THREE.MeshStandardMaterial({ map: nicheTexture(), roughness: 0.9 });
+  for (const n of wallRun.niches) {
+    const end = n.on === "end", f = jorgeAt(n.along);
+    // On an end face the niche looks east along the lane, near the lane-side corner; on the long face it looks across the path.
+    const p = end ? at(n.along + 0.006, -(face + 0.16)) : at(n.along, -(face - 0.006));
+    const plate = new THREE.Mesh(new THREE.PlaneGeometry(0.13, 0.26), niche);
+    plate.position.set(p[0], PATH_Y + wallRun.height * 0.5, p[1]); plate.rotation.y = yawOf(end ? f.along : f.lawn); plate.userData.base = p; plate.name = "jorge-wall-niche";
+    scene.add(plate);
+  }
+  // The white-painted kerb round the open garden lawn (IMG_2230, IMG_2234, IMG_2235): along the lane and back along the octagon-tiled lane.
+  const kerb = data.kerb;
+  scene.add(bar([kerb.from - kerb.width / 2, -kerb.offset], [kerb.to, -kerb.offset], kerb.width, kerb.height + PATH_Y, white, "jorge-kerb"),
+    bar([kerb.from, -kerb.offset], [kerb.from, -kerb.returnTo], kerb.width, kerb.height + PATH_Y, white, "jorge-kerb"));
+  // Kerbed beds against the house fronts (IMG_2229).
+  for (const bed of data.beds) {
+    const [s0, s1] = bed.along, [d0, d1] = bed.offset;
+    for (const [a, b] of [[[s0, d0], [s1, d0]], [[s1, d0], [s1, d1]], [[s1, d1], [s0, d1]], [[s0, d1], [s0, d0]]]) scene.add(bar(a, b, 0.1, 0.14, white, "jorge-bed-kerb"));
+    const soil = strip([[s0, (d0 + d1) / 2], [s1, (d0 + d1) / 2]], (d1 - d0) / 2, 0.06, new THREE.MeshStandardMaterial({ color: "#5b4636", roughness: 1 }), "jorge-bed-soil");
+    scene.add(soil);
   }
   for (const cover of data.covers) {
     const spot = jorgeSide(cover.along, Math.abs(cover.offset), cover.offset >= 0 ? "lawn" : "hedge");
     if (inHouse(spot.at[0], spot.at[1])) continue;
     scene.add(place(coverMesh(cover.kind), spot.at, spot.face));
+  }
+  {
+    const spot = jorgeSide(data.grassCover.along, data.grassCover.offset, data.grassCover.side);
+    scene.add(place(coverMesh("green"), spot.at, spot.face));
   }
   for (const spot of jorgeBenchSpots()) scene.add(place(benchMesh(), spot.at, spot.face));
   for (const plaque of data.plaques) {
@@ -312,7 +427,7 @@ export function addJorgeLane(scene: THREE.Scene): void {
   scene.add(place(signMesh(), sign.at as Vec2, sign.face as Vec2));
   for (const at of [lamp.at as Vec2, ...data.lamps.along.map((dist) => jorgeSide(dist, data.lamps.offset, data.lamps.side).at)]) {
     if (inHouse(at[0], at[1])) continue;
-    // The resort's lantern post (src/lantern-post.ts), as beside the CALLE DE JORGE plinth in IMG_2597 and in IMG_2234.
+    // The resort's lantern post (src/lantern-post.ts), as beside the CALLE DE JORGE plinth in IMG_2597 and on the kerb corner in IMG_2234.
     const light = lanternPost({ name: "jorge-lamp" });
     light.position.set(at[0], 0.03, at[1]); light.rotation.y = Math.atan2(line[1][0] - line[0][0], line[1][1] - line[0][1]); light.userData.base = at; scene.add(light);
   }
@@ -323,30 +438,59 @@ export function addJorgeLane(scene: THREE.Scene): void {
   const stand = (plant: THREE.Object3D, at: Vec2, yaw: number, y: number, name: string) => {
     plant.position.set(at[0], y, at[1]); plant.rotation.y = yaw; plant.name = name; plant.userData.base = at; scene.add(plant);
   };
+  const sprite = (kind: "yucca" | "bird_of_paradise" | "tree", p: Vec2, scale: number, name: string) => {
+    const holder = new THREE.Scene(); holder.userData = { ...scene.userData };
+    if (!inHouse(p[0], p[1])) addSprites(holder, kind, [{ x: p[0], z: p[1], scale }]);
+    for (const child of [...holder.children]) { child.name = name; scene.add(child); }
+  };
+  const hedgeYaw = (f: Frame) => Math.atan2(f.along[1], f.along[0]) * -1;
+  const hedgeGreens = ["#36522c", "#446233", "#53713b"], shrubGreens = ["#3e5c30", "#4c6b38", "#5b7a42"];
   let seed = 401;
-  // A leafy clipped hedge along the top of each wall run, in pieces up to 1.4 m.
+  // A leafy clipped hedge in each planter.
   for (const [a, b] of wallRuns) {
-    const n = Math.ceil((b - a) / 1.4), piece = (b - a) / n;
+    // Short pieces, so each one's whole footprint clears the walking line from a planter that stands at the path edge.
+    const n = Math.ceil((b - a) / 0.9), piece = (b - a) / n;
     for (let i = 0; i < n; i++) {
-      const f = jorgeAt(a + (i + 0.5) * piece), p: Vec2 = [f.p[0] + f.hedge[0] * wallRun.offset, f.p[1] + f.hedge[1] * wallRun.offset];
-      if (!clear(p, Math.hypot(piece, 0.6) / 2)) continue;
-      const hedge = clippedHedge({ length: piece, depth: 0.6, height: 0.62, seed: seed++, clip: 4.5, greens: ["#36522c", "#446233", "#53713b"] });
-      stand(hedge, p, Math.atan2(f.along[1], f.along[0]) * -1, 0.53, "jorge-hedge");
+      const f = jorgeAt(a + (i + 0.5) * piece), p = at(a + (i + 0.5) * piece, -(wallRun.offset + 0.12));
+      if (!clear(p, Math.hypot(piece, 0.5) / 2)) continue;
+      const hedge = clippedHedge({ length: piece + 0.06, depth: 0.5, height: 0.72, seed: seed++, clip: 4.5, greens: hedgeGreens });
+      stand(hedge, p, hedgeYaw(f), PATH_Y + wallRun.height - 0.04, "jorge-hedge");
     }
   }
-  // Round clipped shrubs on the lawn side (IMG_2229, IMG_2182).
-  for (const dist of data.plants.along) {
-    const f = jorgeAt(dist), p: Vec2 = [f.p[0] + f.lawn[0] * data.plants.offset, f.p[1] + f.lawn[1] * data.plants.offset];
-    if (inHouse(p[0], p[1]) || !clear(p, 0.55)) continue;
-    stand(looseShrub({ width: 1.05, depth: 1.0, height: 0.95, seed: seed++, leaf: "small", leafSize: [0.07, 0.045], greens: ["#3e5c30", "#4c6b38", "#5b7a42"], stems: 5 }), p, 0, 0.03, "jorge-shrub");
-  }
-  // The yucca rising behind the wall (IMG_2230): the resort's 3D yucca, smaller than its default size.
+  // The tall clipped hedge on the lawn in front of the CALLE DE TEODORO wall (IMG_2229, IMG_2234), with yellow lantana behind it.
   {
-    const spot = jorgeSide(data.yucca.along, data.yucca.offset, data.yucca.side), holder = new THREE.Scene(); holder.userData = { ...scene.userData };
-    if (!inHouse(spot.at[0], spot.at[1])) addSprites(holder, "yucca", [{ x: spot.at[0], z: spot.at[1], scale: 0.6 }]);
-    for (const child of [...holder.children]) { child.name = "jorge-yucca"; scene.add(child); }
+    const h = data.plaqueHedge, n = Math.ceil(h.length / 1.2), piece = h.length / n;
+    for (let i = 0; i < n; i++) {
+      const s = h.along - h.length / 2 + (i + 0.5) * piece, p = at(s, h.offset);
+      if (inHouse(p[0], p[1]) || !clear(p, Math.hypot(piece, h.depth) / 2)) continue;
+      stand(clippedHedge({ length: piece, depth: h.depth, height: h.height, seed: seed++, clip: 4.5, greens: hedgeGreens }), p, hedgeYaw(jorgeAt(s)), 0.03, "jorge-plaque-hedge");
+    }
+    const p = at(data.lantana.along, data.lantana.offset);
+    if (!inHouse(p[0], p[1]) && clear(p, 0.6)) stand(looseShrub({ width: 1.3, depth: 1.1, height: 0.95, seed: seed++, leaf: "small", leafSize: [0.07, 0.045], greens: ["#55773a", "#638543", "#496a33"], stems: 5, flowers: { count: 55, colour: "#e9c224" } }), p, 0, 0.03, "jorge-lantana");
   }
-  // The candelabra tree in the garden behind the wall, with the lantana bed at its foot (IMG_2183, IMG_2233).
+  // Round clipped shrubs and the strelitzia in the kerbed beds by the houses (IMG_2229).
+  for (const bed of data.beds) {
+    for (const [s, d] of bed.shrubs) {
+      const p = at(s, d);
+      if (inHouse(p[0], p[1]) || !clear(p, 0.5)) continue;
+      stand(looseShrub({ width: 0.95, depth: 0.95, height: 0.85, seed: seed++, leaf: "small", leafSize: [0.06, 0.04], greens: shrubGreens, stems: 5 }), p, 0, 0.08, "jorge-shrub");
+    }
+    const tall = (bed as { strelitzia?: number[] }).strelitzia;
+    if (tall) sprite("bird_of_paradise", at(tall[0], tall[1]), 0.5, "jorge-strelitzia");
+  }
+  // Climbers trained on the walls: the bougainvilleas by house 23 and over the plaque (IMG_2229, IMG_2234) and along the garden wall behind the cactus (IMG_2183, IMG_2233).
+  for (const c of data.climbers) {
+    const lawnSide = c.side === "lawn", f = jorgeAt(c.from), out = lawnSide ? f.hedge : f.lawn;
+    // Leaves grow along local x: westwards on a lawn-side wall, eastwards on a hedge-side one.
+    const p = at(c.from, lawnSide ? c.offset : -c.offset), far = at(c.from + (lawnSide ? -c.length : c.length), lawnSide ? c.offset : -c.offset);
+    if (inHouse(p[0], p[1]) || inHouse(far[0], far[1])) continue;
+    stand(wallClimber({ length: c.length, height: c.height, depth: 0.4, seed: seed++, flowers: c.flowers, flowerColour: c.colour }), p, yawOf(out), 0.03, "jorge-climber");
+  }
+  // The dragon tree on the kerbed lawn (IMG_2230, IMG_2234): the resort's 3D yucca, smaller than its default size.
+  sprite("yucca", jorgeSide(data.yucca.along, data.yucca.offset, data.yucca.side).at, 0.6, "jorge-yucca");
+  // The old olive on the east lawn beside the CALLE DE JORGE plinth (IMG_2597).
+  sprite("tree", jorgeSide(data.olive.along, data.olive.offset, data.olive.side).at, 0.5, "jorge-olive");
+  // The candelabra tree on the open garden lawn, with the lantana bed at its foot (IMG_2183, IMG_2233).
   {
     const spot = jorgeSide(data.cactus.along, data.cactus.offset, data.cactus.side), cd = data.cactus;
     if (!inHouse(spot.at[0], spot.at[1]) && clear(spot.at, cd.spread / 2 + 0.15)) {

@@ -13,7 +13,7 @@ import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
 import {albertoPassage,albertoRect,suppressInAlbertoPorch} from "./alberto-passage";
 import {passageCorridor,SOUTH_POOL_PASSAGE} from "./south-pool-passage";
 import jorgeLane from "../data/jorge_lane.json";
-import { jorgeBenchSpots, jorgeSide } from "./jorge-lane";
+import { jorgeBenchSpots, jorgeSide, jorgeWallRuns } from "./jorge-lane";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -436,7 +436,22 @@ async function boot(): Promise<void> {
     const node = el("rect", { x: item.at[0] - 0.7, y: item.at[1] - 0.35, width: 1.4, height: 0.7, fill: "#fffdf8", stroke: "#5c564c", "stroke-width": 0.08, transform: `rotate(${Math.atan2(item.face[0], item.face[1]) * 180 / Math.PI} ${item.at[0]} ${item.at[1]})` });
     const title = el("title", {}); title.textContent = `${jorgeLane.name}: ${jorgeLane.trust}`; node.append(title); world.append(node);
   }
-  for (const plant of [jorgeSide(jorgeLane.yucca.along, jorgeLane.yucca.offset, jorgeLane.yucca.side), jorgeSide(jorgeLane.cactus.along, jorgeLane.cactus.offset, jorgeLane.cactus.side)]) {
+  // Calle Jorge cross-paths, kerbed beds and planter walls (data/jorge_lane.json), in station and offset along the lane.
+  {
+    const spot = (s: number, d: number) => jorgeSide(s, Math.abs(d), d >= 0 ? "lawn" : "hedge").at;
+    const d = (pts: number[][]) => pts.map(([s, o], i) => `${i ? "L" : "M"}${spot(s, o).join(" ")}`).join(" ");
+    const titled = (node: SVGElement) => { const title = el("title", {}); title.textContent = `${jorgeLane.name}: ${jorgeLane.trust}`; node.append(title); world.append(node); };
+    for (const line of jorgeLane.crossPaths.lines) titled(el("path", { d: d(line.points), fill: "none", stroke: "#c98463", "stroke-width": jorgeLane.crossPaths.edgeHalf * 2, "stroke-linejoin": "round" }));
+    for (const bed of jorgeLane.beds) {
+      const [s0, s1] = bed.along, [d0, d1] = bed.offset;
+      titled(el("path", { d: d([[s0, d0], [s1, d0], [s1, d1], [s0, d1]]) + "Z", fill: "#6f8f55", stroke: "#fffdf8", "stroke-width": 0.1 }));
+    }
+    const wall = jorgeLane.boundary;
+    for (const [a, b] of jorgeWallRuns()) titled(el("path", { d: d([[a, -wall.offset], [b, -wall.offset]]), fill: "none", stroke: "#fffdf8", "stroke-width": wall.thickness }));
+    const kerb = jorgeLane.kerb;
+    titled(el("path", { d: d([[kerb.to, -kerb.offset], [kerb.from, -kerb.offset], [kerb.from, -kerb.returnTo]]), fill: "none", stroke: "#fffdf8", "stroke-width": kerb.width }));
+  }
+  for (const plant of [jorgeSide(jorgeLane.yucca.along, jorgeLane.yucca.offset, jorgeLane.yucca.side), jorgeSide(jorgeLane.cactus.along, jorgeLane.cactus.offset, jorgeLane.cactus.side), jorgeSide(jorgeLane.olive.along, jorgeLane.olive.offset, jorgeLane.olive.side)]) {
     const node = el("circle", { cx: plant.at[0], cy: plant.at[1], r: 0.45, fill: "#3f6b34" });
     const title = el("title", {}); title.textContent = `${jorgeLane.name}: ${jorgeLane.trust}`; node.append(title); world.append(node);
   }

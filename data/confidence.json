@@ -45,7 +45,15 @@
   },
   "jorge_lane.json:jorge-lane-fittings": {
    "level": "estimated",
-   "why": "Square tiles, the SANEA cover and grate, the yucca, the candelabra cactus, house 20, the CALLE DE TEODORO plaque and the extra lamps are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234 and IMG_2596. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated. Since 10 November the path, grass, planter wall and hedge cover only the photographed stretch (from about 86 m), and there is one bench, the photographed one. The candelabra tree (IMG_2183, IMG_2233) stands 5 m behind the lane in the open garden; its distance, 5.6 m height and 4.2 m spread are estimates."
+   "why": "Square tiles, the SANEA cover and grate, slot drains at the Teodoro junction, the green cover in the grass, the dragon tree, the candelabra tree, house 20, the CALLE DE TEODORO plaque, the one lamp post on the kerb corner and the olive by the plinth are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234, IMG_2596 and IMG_2597. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated. The candelabra tree stands on the open garden lawn about 6.8 m back from the lane; that distance, its 5.6 m height and 4.2 m spread are estimates."
+  },
+  "jorge_lane.json:jorge-lane-verge": {
+   "level": "estimated",
+   "why": "IMG_2182, IMG_2229, IMG_2230, IMG_2233 and IMG_2234 show lawn from the path to the house fronts on the south side, an open garden lawn with a white-painted kerb on the north side, and white planters about 0.7 m high with clipped hedges, two brick thresholds and number niches in front of the patios. The lawn outlines follow the registry houses and the aerial; kerb, planter and threshold stations are read from the pins, good to about 2 m. The digits on the niche tiles are not legible and are not modelled."
+  },
+  "jorge_lane.json:jorge-lane-paths": {
+   "level": "estimated",
+   "why": "IMG_2182, IMG_2229 and IMG_2231 show a two-tile cross-path about 1.9 m east of the bench, a second path leaving the lane west of the bench and running behind it along the house front, and a white-kerbed bed with round clipped shrubs and a strelitzia. Their distances from the bench are read from tile rows; how far back they run and where they end are estimated to about 1 m, and no camera is solved."
   },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",
