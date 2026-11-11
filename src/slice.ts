@@ -418,7 +418,9 @@ async function boot(): Promise<void> {
   action(".camera-out",()=>{distance=Math.min(farthest*3,distance*1.3);});
   const panMode=(pan:boolean)=>{
     overviewPan=pan;
-    document.querySelector("#inspection-jump span")!.textContent=`Drag to ${pan?"pan":"orbit"} · scroll or pinch to zoom`;
+    document.querySelector("#inspection-jump span")!.textContent=pan
+      ?"Drag or trackpad-scroll to pan · pinch or wheel to zoom"
+      :"Drag to orbit · trackpad-scroll to pan · pinch or wheel to zoom";
     document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
@@ -540,7 +542,7 @@ async function boot(): Promise<void> {
       document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
-      document.querySelector("#help")!.textContent=overview?"Drag to tilt and turn · scroll or pinch to zoom":"WASD or left thumb to walk · drag to look";
+      document.querySelector("#help")!.textContent=overview?"Drag to orbit · trackpad-scroll to pan · pinch or wheel to zoom":"WASD or left thumb to walk · drag to look";
       if(overview && !inspectionStarted){
         camYaw=0;inspectionStarted=true;
         if(inspectAt){overviewCentre.set(inspectAt.x,0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}

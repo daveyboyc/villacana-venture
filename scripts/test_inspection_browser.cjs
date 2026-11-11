@@ -53,6 +53,51 @@ const fs = require('node:fs');
     await page.waitForFunction(before => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre !== before, beforePan);
     assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
     console.log('Mouse orbit/pan PASS');
+    // Pan is still selected, so a left-drag gives the grab direction. Orbit is then
+    // selected and the trackpad has to pan, pinch and zoom without that button.
+    const centreOf = async () => (await controls.getAttribute('data-centre')).split(',').map(Number);
+    const dragStart = await centreOf();
+    await page.mouse.move(880, 620); await page.mouse.down(); await page.mouse.move(1040, 620, {steps:4}); await page.mouse.up();
+    await page.waitForFunction(before => {
+      const [x, z] = document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre.split(',').map(Number);
+      return Math.hypot(x - before[0], z - before[1]) > 1;
+    }, dragStart);
+    const dragEnd = await centreOf();
+    await scene.locator('#overview-rotate').click();
+    const scrollStart = await centreOf();
+    const distanceBeforeScroll = Number(await controls.getAttribute('data-distance'));
+    await scene.locator('#scene').evaluate(node => {
+      for (let i = 0; i < 4; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaX: 60, deltaY: 0, deltaMode: 0, clientX: 700, clientY: 500 }));
+    });
+    await page.waitForFunction(before => {
+      const [x, z] = document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre.split(',').map(Number);
+      return Math.hypot(x - before[0], z - before[1]) > 1;
+    }, scrollStart);
+    const scrollEnd = await centreOf();
+    const scrollDot = (dragEnd[0] - dragStart[0]) * (scrollEnd[0] - scrollStart[0]) + (dragEnd[1] - dragStart[1]) * (scrollEnd[1] - scrollStart[1]);
+    assert(scrollDot > 0, 'trackpad scroll pans the same way as a drag');
+    assert(Math.abs(Number(await controls.getAttribute('data-distance')) - distanceBeforeScroll) < 0.5, 'trackpad scroll does not zoom');
+    const beforeTrackpadPinch = Number(await controls.getAttribute('data-distance'));
+    await scene.locator('#scene').evaluate(node => {
+      for (let i = 0; i < 8; i++) node.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -12, deltaMode: 0, ctrlKey: true, clientX: 700, clientY: 500 }));
+    });
+    await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.distance) < before * 0.85, beforeTrackpadPinch);
+    const centreBeforeNotch = await controls.getAttribute('data-centre');
+    const distanceBeforeNotch = Number(await controls.getAttribute('data-distance'));
+    await page.mouse.move(900, 620);
+    await page.mouse.wheel(0, 100);
+    await page.waitForFunction(before => Number(document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.distance) > before, distanceBeforeNotch);
+    assert.equal(await controls.getAttribute('data-centre'), centreBeforeNotch, 'a mouse-wheel notch zooms without panning');
+    const bearing = await controls.getAttribute('data-bearing');
+    const beforeRight = await controls.getAttribute('data-centre');
+    await page.mouse.move(860, 640);
+    await page.mouse.down({ button: 'right' });
+    await page.mouse.move(1040, 640, { steps: 5 });
+    await page.mouse.up({ button: 'right' });
+    await page.waitForFunction(before => document.querySelector('#resort-scene').contentDocument.querySelector('#overview-controls').dataset.centre !== before, beforeRight);
+    assert.equal(await controls.getAttribute('data-bearing'), bearing, 'right-drag pans without orbiting');
+    assert.equal(await canvas.getAttribute('data-player'), beforePlayer);
+    console.log('Trackpad pan, pinch zoom, mouse-wheel zoom and right-drag pan PASS');
     // Direct links survive reload. Walk is shelved: the nav button is not offered.
     await scene.locator('#inspection-area').selectOption('barraka-beach');
     await page.waitForURL(/area=barraka-beach/);
