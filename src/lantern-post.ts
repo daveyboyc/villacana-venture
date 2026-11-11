@@ -4,16 +4,16 @@ import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js
 /**
  * The resort's traditional lantern post, as in IMG_2552, IMG_2336, IMG_2597 and IMG_2503: a bottle-green
  * tapered steel post with a thicker base sleeve on a bolted square plate; a collar and ball under four
- * curved cradle arms; a four-sided black lantern, wider at the top, with clouded glass and a pale lamp
- * inside; and a weathered flared square roof with a vent cap and finial.
+ * curved cradle arms; a four-sided black lantern, taller than wide and wider at the top, with frosted
+ * glass and a pale lamp inside; and a weathered straight-sided pyramid roof with a vent cap and finial.
  * One set of geometry and materials is shared by every post. Local frame: y up, standing on y = 0.
  * An original model of the fitting, built from numbers; no photo pixels are used.
  */
-export const LANTERN_HEIGHT = 3.72;
+export const LANTERN_HEIGHT = 3.82;
 /** Half-width of the roof, the widest part: the footprint a route guard should keep clear. */
-export const LANTERN_RADIUS = 0.24;
+export const LANTERN_RADIUS = 0.22;
 
-const POST_TOP = 2.93, BODY = [3.01, 3.4] as const, HALF = [0.095, 0.185] as const, BAR = 0.016;
+const POST_TOP = 2.93, BODY = [3.01, 3.47] as const, HALF = [0.092, 0.168] as const, BAR = 0.016;
 
 function texture(w: number, h: number, paint: (g: CanvasRenderingContext2D) => void, repeat = false): THREE.CanvasTexture {
   const c = document.createElement("canvas"); c.width = w; c.height = h; paint(c.getContext("2d")!);
@@ -43,13 +43,13 @@ function roofTexture(): THREE.CanvasTexture {
     g.fillStyle = "#2a2e30"; g.fillRect(0, 0, 256, 256);
     for (let i = 0; i < 260; i++) {
       const x = noise(i * 1.3) * 256, y = noise(i * 2.9) * 256, r = 10 + noise(i * 4.1) * 38;
-      const blot = g.createRadialGradient(x, y, 0, x, y, r); const a = 0.05 + noise(i * 5.7) * 0.12;
+      const blot = g.createRadialGradient(x, y, 0, x, y, r); const a = 0.07 + noise(i * 5.7) * 0.16;
       blot.addColorStop(0, `rgba(${noise(i) > 0.35 ? "128,132,130" : "12,14,15"},${a})`); blot.addColorStop(1, "rgba(0,0,0,0)");
       g.fillStyle = blot; g.fillRect(x - r, y - r, r * 2, r * 2);
     }
-    for (let i = 0; i < 22; i++) {
+    for (let i = 0; i < 14; i++) {
       const x = noise(i * 7.7) * 256;
-      g.strokeStyle = `rgba(150,154,150,${0.03 + noise(i * 3.3) * 0.05})`; g.lineWidth = 2 + noise(i) * 5;
+      g.strokeStyle = `rgba(170,174,168,${0.03 + noise(i * 3.3) * 0.06})`; g.lineWidth = 3 + noise(i) * 9;
       g.beginPath(); g.moveTo(x, noise(i * 9.1) * 120); g.lineTo(x + (noise(i * 2.1) - 0.5) * 8, 256); g.stroke();
     }
   });
@@ -58,9 +58,9 @@ function roofTexture(): THREE.CanvasTexture {
 function glassTexture(): THREE.CanvasTexture {
   return texture(128, 256, (g) => {
     g.clearRect(0, 0, 128, 256);
-    const haze = g.createLinearGradient(0, 0, 0, 256); haze.addColorStop(0, "rgba(226,232,228,0.16)"); haze.addColorStop(0.55, "rgba(226,230,224,0.3)"); haze.addColorStop(1, "rgba(214,216,204,0.55)");
+    const haze = g.createLinearGradient(0, 0, 0, 256); haze.addColorStop(0, "rgba(232,236,230,0.42)"); haze.addColorStop(0.5, "rgba(232,234,226,0.58)"); haze.addColorStop(1, "rgba(222,222,208,0.8)");
     g.fillStyle = haze; g.fillRect(0, 0, 128, 256);
-    for (const x of [0, 128]) { const edge = g.createLinearGradient(x, 0, x === 0 ? 26 : 102, 0); edge.addColorStop(0, "rgba(200,204,196,0.4)"); edge.addColorStop(1, "rgba(200,204,196,0)"); g.fillStyle = edge; g.fillRect(x === 0 ? 0 : 102, 0, 26, 256); }
+    for (const x of [0, 128]) { const edge = g.createLinearGradient(x, 0, x === 0 ? 26 : 102, 0); edge.addColorStop(0, "rgba(205,208,198,0.55)"); edge.addColorStop(1, "rgba(200,204,196,0)"); g.fillStyle = edge; g.fillRect(x === 0 ? 0 : 102, 0, 26, 256); }
     for (let i = 0; i < 26; i++) {
       const x = noise(i * 3.7) * 128, y = 40 + noise(i * 5.3) * 120;
       g.strokeStyle = `rgba(240,242,236,${0.06 + noise(i * 1.9) * 0.1})`; g.lineWidth = 1 + noise(i * 2.3) * 2;
@@ -141,13 +141,16 @@ function build(): Kit {
     pane.computeVertexNormals(); glass.push(pane.rotateY((k * Math.PI) / 2));
   }
   // ---- The lamp: a pale tube with a rounded end, on its holder.
-  const bulb = new THREE.CapsuleGeometry(0.03, 0.13, 6, 16).translate(0, BODY[0] + 0.16, 0);
+  const bulb = new THREE.CapsuleGeometry(0.032, 0.16, 6, 16).translate(0, BODY[0] + 0.19, 0);
   // ---- Roof: underside plate, flared square canopy with a drip edge, vent, cap and finial.
   const y0 = BODY[1] + 0.012;
   const roof: THREE.BufferGeometry[] = [
-    new THREE.BoxGeometry(0.44, 0.012, 0.44).translate(0, y0 - 0.006, 0),
-    squareLoft([[0.232, y0 - 0.012], [0.24, y0 - 0.004], [0.236, y0 + 0.01], [0.214, y0 + 0.028], [0.178, y0 + 0.058], [0.138, y0 + 0.098], [0.104, y0 + 0.138], [0.08, y0 + 0.172], [0.066, y0 + 0.196], [0.06, y0 + 0.206]]),
-    lathe([[0, y0 + 0.2], [0.052, y0 + 0.2], [0.052, y0 + 0.232], [0.046, y0 + 0.236], [0.046, y0 + 0.246], [0.07, y0 + 0.25], [0.072, y0 + 0.258], [0.06, y0 + 0.268], [0.03, y0 + 0.28], [0.014, y0 + 0.286], [0.012, y0 + 0.294], [0.02, y0 + 0.3], [0.022, y0 + 0.308], [0.012, y0 + 0.316], [0, y0 + 0.32]], 24),
+    new THREE.BoxGeometry(0.39, 0.012, 0.39).translate(0, y0 - 0.006, 0),
+    // A cornice band, then straight sloping sides to a flat top: steeper than a pagoda, with a small overhang.
+    squareLoft([[0.196, y0 - 0.014], [0.204, y0 - 0.008], [0.204, y0 + 0.012], [0.196, y0 + 0.022], [0.176, y0 + 0.05], [0.118, y0 + 0.19], [0.108, y0 + 0.212], [0.1, y0 + 0.218]]),
+    new THREE.BoxGeometry(0.2, 0.01, 0.2).translate(0, y0 + 0.216, 0),
+    // Vent chimney, its wider cap and the finial.
+    lathe([[0, y0 + 0.21], [0.058, y0 + 0.21], [0.058, y0 + 0.262], [0.05, y0 + 0.268], [0.05, y0 + 0.28], [0.08, y0 + 0.284], [0.083, y0 + 0.294], [0.07, y0 + 0.306], [0.036, y0 + 0.322], [0.016, y0 + 0.33], [0.013, y0 + 0.338], [0.021, y0 + 0.343], [0.023, y0 + 0.351], [0.012, y0 + 0.358], [0, y0 + 0.362]], 24),
   ];
   const steelMat = new THREE.MeshStandardMaterial({ color: "#27473a", map: paintTexture(), roughness: 0.46, metalness: 0.55 });
   const frameMat = new THREE.MeshStandardMaterial({ color: "#16191a", roughness: 0.5, metalness: 0.55 });
