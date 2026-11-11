@@ -29,6 +29,12 @@ in (`data-details` reads `loading`, then `done`), so automated checks wait for t
 whole scene. Photo renders (`?photocam=`) and exports build everything before the
 first frame.
 
+Once built, static pieces that draw alike are merged into one mesh per material and
+64 m square (`src/static-batch.ts`), which cuts the draw calls about sixfold. The
+originals stay in the scene hidden, so names and clicks still find them. Anything
+that moves or shows and hides is marked `userData.dynamic` and left as it is. Photo
+renders and exports are not merged; `?batch=0` turns merging off to compare.
+
 ## Find a reference
 
 Search an ID (`IMG_2206`), place (`north-pool`) or subject (`boat`) in **Map & photos**.
