@@ -9,7 +9,7 @@ underlying renderer for diagnostic tools. See [UNIFIED_REFERENCE_MAP.md](UNIFIED
 
 The map has zoom buttons, wheel/pinch zoom, rotation buttons, two-finger rotation, North and Fit whole resort. Drag to pan. Keyboard +/− zoom and Q/E rotate. Street labels stay upright and keep a readable screen size; overlapping labels are hidden until there is room at a closer zoom. User annotations, pools and the principal connecting streets receive priority.
 
-The 3D overview freezes walking and has zoom/rotate buttons, North, Top down and Fit area. Drag orbits; two fingers pan, with forward and back following the fingers, and twist to turn. Right-drag, Shift-drag or a trackpad scroll also pans; the mouse wheel and a pinch zoom. Pan and Orbit choose the left-drag and one-finger gesture. On a phone the camera buttons are hidden, the view opens on the whole resort in details, and place and photo labels are on. WASD pans in overview. Decorative distant mountains are hidden in overview. Return with the main Walk button.
+The 3D overview freezes walking and has zoom/rotate buttons, North, Top down and Fit area. Drag orbits; two fingers pan, with forward and back following the fingers, and twist to turn. Right-drag, Shift-drag or a trackpad scroll also pans; the mouse wheel and a pinch zoom. Pan and Orbit choose the left-drag and one-finger gesture. On a phone the camera buttons are hidden, the view opens on the whole resort in details, and place and photo labels stay off. WASD pans in overview. Decorative distant mountains are hidden in overview. Return with the main Walk button.
 
 ## Labels and references
 

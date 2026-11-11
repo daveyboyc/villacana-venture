@@ -386,7 +386,7 @@ async function boot(): Promise<void> {
   let savedInspection:{distance:number;pitch:number;yaw:number}|null=null;
   const overviewCentre=new THREE.Vector3(initialFocus?.[0]??centre.x,0.5,initialFocus?.[1]??centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
-  const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),showLabels:phoneInspect,enabled:()=>overview,
+  const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
     project:(x,z)=>{const p=new THREE.Vector3(x,liveGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
       const areas=document.querySelector("#areas")!.getBoundingClientRect();
       const tools=document.querySelector(".reference-tools")?.getBoundingClientRect();
@@ -487,7 +487,7 @@ async function boot(): Promise<void> {
     photoButtons.sort((a,b)=>Number(b.selected)-Number(a.selected));
   });
   const photoToggle=document.createElement("button");photoToggle.id="overview-photo-labels";photoToggle.textContent="Photo labels";photoToggle.setAttribute("aria-pressed",String(!!selectedPhoto));document.querySelector("#overview-advanced")!.append(photoToggle);
-  let showPhotoLabels=!!selectedPhoto||phoneInspect;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
+  let showPhotoLabels=!!selectedPhoto;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
   const updatePhotoLabels=()=>{
     photoLabels.hidden=!overview||!showPhotoLabels;
     if(!overview||!showPhotoLabels)return;
