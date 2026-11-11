@@ -78,7 +78,7 @@ function validPoints(value: unknown): ReferencePoint[] {
 
 /** Same references, coordinates and persistence in the 2D map and 3D overview. */
 export function referenceEditor(options: {
-  surface: HTMLElement | SVGSVGElement; labels: ReferencePoint[];
+  surface: HTMLElement | SVGSVGElement; labels: ReferencePoint[]; showLabels?: boolean;
   project: (x:number,z:number)=>ScreenPoint;
   unproject: (x:number,y:number)=>Vec2 | null;
   enabled?: ()=>boolean; onArm?: ()=>void;
@@ -86,7 +86,7 @@ export function referenceEditor(options: {
   let points: ReferencePoint[]=[];
   let loadWarning="";
   try { points=validPoints(JSON.parse(localStorage.getItem(KEY)??"[]")); } catch { loadWarning="Saved references could not be read. Export your current references before leaving."; }
-  let armed=false, selected:ReferencePoint|null=null, hidden=true;
+  let armed=false, selected:ReferencePoint|null=null, hidden=!options.showLabels;
   const layer=document.createElement("div");layer.className="reference-layer";document.body.append(layer);
   const tools=document.createElement("div");tools.className="reference-tools";
   tools.innerHTML='<button id="ref-add" type="button">+ Label / reference</button><button id="ref-labels" type="button" aria-pressed="false">Labels</button><button id="ref-export" type="button">Export references</button><button id="ref-import" type="button">Import</button><input id="ref-file" type="file" accept="application/json,.json" hidden><span id="ref-status" role="status" aria-live="polite"></span>';
@@ -117,6 +117,7 @@ export function referenceEditor(options: {
   };
   const arm=(moving=false)=>{options.onArm?.();armed=!armed;layer.classList.toggle("placing",armed);get("ref-add").textContent=armed?"Cancel placement":"+ Label / reference";get("ref-add").setAttribute("aria-pressed",String(armed));status.textContent=armed?(moving?"Tap the new pin position.":"Tap the map to place a label or reference."):"";};
   get("ref-add").addEventListener("click",()=>{selected=null;arm();});
+  get("ref-labels").setAttribute("aria-pressed",String(!hidden));
   get("ref-labels").addEventListener("click",()=>{hidden=!hidden;get("ref-labels").setAttribute("aria-pressed",String(!hidden));});
   get("ref-close").addEventListener("click",()=>dialog.close());
   get("ref-move").addEventListener("click",()=>{if(selected)selected={...selected,label:name.value,note:note.value,url:url.value,photo:photo.value};dialog.close();arm(true);});

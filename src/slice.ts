@@ -76,8 +76,17 @@ if(embedded) {
   document.body.classList.add("embedded");
   const style=document.createElement("style");style.textContent="body.embedded #areas,body.embedded #back,body.embedded #title,body.embedded #overview {display:none!important}";document.head.append(style);
 }
-const layoutOnly=new URLSearchParams(location.search).get("details")!=="1";
-const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
+/** A phone: touch, and a short or narrow screen. A resized desktop window keeps the buttons. */
+const phoneInspect=navigator.maxTouchPoints>0&&matchMedia("(max-width:900px), (max-height:500px)").matches;
+if(phoneInspect)document.body.classList.add("mobile-inspect");
+const pageQuery=new URLSearchParams(location.search);
+const detailMode=pageQuery.get("details");
+const layoutOnly=detailMode==="1"?false:detailMode==="0"?true:!phoneInspect;
+document.body.dataset.details=layoutOnly?"0":"1";
+// A bare overview link, and the phone, mean the whole resort. A named pool link stays that pool.
+const askedPool=pageQuery.get("pool");
+const wholeResort=!askedPool&&(pageQuery.get("area")==="whole-resort"||pageQuery.get("view")==="overview"||phoneInspect);
+const POOL_IDS=(askedPool??(wholeResort?"north,middle,south,main":"north")).split(",");
 /** How far the walkable area reaches from its centre. Grows to take in every pool asked for. */
 let RADIUS = 60;
 /** Centres of the pool courtyards on show. */
@@ -401,8 +410,10 @@ async function boot(): Promise<void> {
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
     project:(x,z)=>{const p=new THREE.Vector3(x,liveGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
-      const top=document.querySelector("#areas")!.getBoundingClientRect().bottom+8;
-      const bottom=document.querySelector(".reference-tools")?.getBoundingClientRect().top??innerHeight-180;
+      const areas=document.querySelector("#areas")!.getBoundingClientRect();
+      const tools=document.querySelector(".reference-tools")?.getBoundingClientRect();
+      const top=(areas.height>0?areas.bottom:8)+8;
+      const bottom=tools&&tools.height>0?tools.top:innerHeight-16;
       return {x:(p.x+1)*innerWidth/2,y,visible:p.z>-1&&p.z<1&&p.x>-1&&p.x<1&&y>top&&y<bottom-12};},
     unproject:(x,y)=>{raycaster.setFromCamera(new THREE.Vector2(x/innerWidth*2-1,1-y/innerHeight*2),camera);const hit=raycaster.intersectObjects(scene.children,true).find(h=>h.object.userData.referenceSurface);const p=hit?.point??raycaster.ray.intersectPlane(refPlane,new THREE.Vector3());return p&&Math.abs(p.x)<500&&Math.abs(p.z)<500?[p.x,p.z]:null;}
   });
@@ -437,8 +448,8 @@ async function boot(): Promise<void> {
   const panMode=(pan:boolean)=>{
     overviewPan=pan;
     document.querySelector("#inspection-jump span")!.textContent=pan
-      ?"Drag or trackpad-scroll to pan · pinch or wheel to zoom"
-      :"Drag to orbit · trackpad-scroll to pan · pinch or wheel to zoom";
+      ?"Drag or two fingers to pan · pinch or wheel to zoom"
+      :"Drag to orbit · two fingers pan · twist to turn";
     document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
@@ -452,7 +463,8 @@ async function boot(): Promise<void> {
   action("#alignment-coast",()=>{if(skeleton.seafront)focus(skeleton.seafront.coast);});
   document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
   const areaSelect=document.querySelector<HTMLSelectElement>('#inspection-area')!;
-  const targets=inspectionTargets(skeleton).filter(t=>t.id==='whole-resort'||t.points.some(([x,z])=>Math.hypot(x-centre.x,z-centre.z)<RADIUS-20));
+  const resortWide=POOL_IDS.filter(id=>id!=="toddler").length>1;
+  const targets=inspectionTargets(skeleton).filter(t=>resortWide||t.id==='whole-resort'||t.points.some(([x,z])=>Math.hypot(x-centre.x,z-centre.z)<RADIUS-20));
   if(seaside)targets.push({id:'coastal-gate',name:'Coastal gate',group:'Coast',points:coastalAccess.points});
   for(const group of [...new Set(targets.map(t=>t.group))]){
     const options=document.createElement('optgroup');options.label=group;
@@ -498,7 +510,7 @@ async function boot(): Promise<void> {
     photoButtons.sort((a,b)=>Number(b.selected)-Number(a.selected));
   });
   const photoToggle=document.createElement("button");photoToggle.id="overview-photo-labels";photoToggle.textContent="Photo labels";photoToggle.setAttribute("aria-pressed",String(!!selectedPhoto));document.querySelector("#overview-advanced")!.append(photoToggle);
-  let showPhotoLabels=!!selectedPhoto;photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
+  let showPhotoLabels=!!selectedPhoto;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
   const updatePhotoLabels=()=>{
     photoLabels.hidden=!overview||!showPhotoLabels;
     if(!overview||!showPhotoLabels)return;
@@ -573,7 +585,7 @@ async function boot(): Promise<void> {
       document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
-      document.querySelector("#help")!.textContent=overview?"Drag to orbit · trackpad-scroll to pan · pinch or wheel to zoom":"WASD or left thumb to walk · drag to look";
+      document.querySelector("#help")!.textContent=overview?"Drag to orbit · two fingers pan · twist to turn":"WASD or left thumb to walk · drag to look";
       if(overview && !inspectionStarted){
         camYaw=0;inspectionStarted=true;
         if(inspectAt){overviewCentre.set(inspectAt.x,0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}
