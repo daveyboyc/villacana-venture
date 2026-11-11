@@ -2936,6 +2936,30 @@
    "owner": "Claude"
   },
   {
+   "id": "jorge-more-benches",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Jorge: the other benches, placed from the aerial",
+   "photos": [],
+   "build": "Dave, 2026-11-11: there is more than one bench on Calle Jorge; reuse the asset. No photo shows the others, so place the photographed bench (src/jorge-lane.ts) at the bench-sized white marks the aerial shows on the grass beside the path, at about 64.3 and 79.2 m (north side) and 122.3 m (south side), each facing the path, graded inferred. Move the small kerbed shrub bed to the 106.5 m mark, which IMG_2229 and IMG_2230 show is a bed and not a bench.",
+   "avoid": "Do not repeat benches at a regular spacing or anywhere the aerial shows no mark. Do not move the photographed bench without a solved camera.",
+   "accept": [
+    "Benches visible in Inspect, in Layout and with Show details",
+    "scripts/check_jorge_lane.py passes",
+    "Marked aerial crops saved in docs/reviews/jorge-benches-aerial/"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-benches-aerial",
+    "jorge_lane.json:jorge-lane-paths"
+   ],
+   "dependsOn": [
+    "jorge-lane-surroundings"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,

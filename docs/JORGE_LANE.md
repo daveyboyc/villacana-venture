@@ -1,8 +1,8 @@
 # Calle Jorge
 
 `data/jorge_lane.json`, drawn by `src/jorge-lane.ts`. Built on 9 and 10 November 2026 (PRs #193-196),
-reviewed on 10 November (task `jorge-lane-review`), and given its surroundings on 11 November
-(task `jorge-lane-surroundings`).
+reviewed on 10 November (task `jorge-lane-review`), given its surroundings on 11 November
+(task `jorge-lane-surroundings`), and its other benches the same day (task `jorge-more-benches`).
 
 ## What the photos show
 
@@ -79,7 +79,8 @@ IMG_2183, IMG_2233 and IMG_2234 show open to the lane.
 - A second path leaving the lane about 4 m west of the bench, running behind it and along the
   house front (IMG_2229, IMG_2231).
 - A white-kerbed bed with three round clipped shrubs and a strelitzia, a climber on the wall
-  behind it, a bougainvillea and a smaller kerbed shrub by door 23 (IMG_2229).
+  behind it and a bougainvillea by door 23 (IMG_2229); a smaller kerbed shrub on the lawn west
+  of the bench.
 - At the CALLE DE TEODORO wall: a tall clipped hedge on the lawn, yellow lantana behind it, a
   bougainvillea over the plaque, and a green round cover in the grass (IMG_2234).
 
@@ -102,6 +103,32 @@ shrubs that stood alone on the lawn went too; the photos show shrubs only in the
 Lawns, paths, kerbs, planters, thresholds, niches, covers and the lamp show in Layout. Hedges,
 shrubs, climbers and trees show with Details on, behind the route guard.
 
+## The other benches (11 November, task `jorge-more-benches`)
+
+Dave: there is more than one bench on Calle Jorge. Only one is photographed, so the others are
+placed from the aerial (Esri World Imagery, 0.24 m a pixel), which shows white marks the size of
+the bench, with a shadow, on the grass 1.6 to 1.9 m off the path:
+
+| Along the lane | Side | Built as |
+| --- | --- | --- |
+| 64.3 m | north | bench, inferred |
+| 79.2 m | north | bench, inferred |
+| 106.5 m | south | the small white-kerbed shrub bed (IMG_2229 and IMG_2230 look along this lawn and show a bed, not a second bench) |
+| 122.3 m | south | bench, inferred |
+
+The marked crops are in `docs/reviews/jorge-benches-aerial/`. The three benches reuse the
+photographed bench and face the path; they show orange (inferred) on the Sure / unsure overlay.
+
+Open: the aerial shows nothing at 112 m, where the photo pins put the photographed bench. That
+bench may really be the 106.5 m mark, with the pins about 5 m too far east. No camera is solved,
+so it stays at 112 m; photo request `jorge-benches` asks for a photo of each bench.
+
+A second agent that did not make the change checked it on 11 November: the lane check, type-check,
+reference check and build pass, the four bench spots are clear of houses, paths and thresholds, and
+each faces the path. Reading the aerial crops itself, it found the 79.2 m and 122.3 m marks clear,
+the 64.3 m mark fainter, and agreed that the 106.5 m mark looks like the bench marks while nothing
+shows at 112 m. That is the open question above; it is not placement approval.
+
 ## Limits
 
 - Positions are read from the photo pins, which are good to ±2-5 m. No camera is solved.
@@ -119,7 +146,7 @@ shrubs, climbers and trees show with Details on, behind the route guard.
 ## Checks
 
 - `python3 scripts/check_jorge_lane.py` checks:
-  - one photographed bench;
+  - one photographed bench, and others only at recorded aerial marks;
   - the dressing stays within the photographed stretch;
   - fittings stay off the walking line and out of houses;
   - covers sit in the tiles;

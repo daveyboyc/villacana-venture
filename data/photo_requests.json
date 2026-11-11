@@ -421,6 +421,24 @@
       "radius": 10,
       "since": "2026-11-10",
       "status": "open"
+    },
+    {
+      "id": "jorge-benches",
+      "area": "seaward-lanes",
+      "at": [
+        -70.7,
+        152.9
+      ],
+      "look": [
+        -83.6,
+        160.3
+      ],
+      "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
+      "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
+      "priority": 2,
+      "radius": 10,
+      "since": "2026-11-11",
+      "status": "open"
     }
   ]
 }

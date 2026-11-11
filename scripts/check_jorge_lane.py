@@ -38,7 +38,14 @@ assert all(p in photos for p in lane['evidence'])
 benches = [spot(d, lane['benches']['offset'], 'lawn') for d in lane['benches']['along']]
 # Only what a photo shows: one bench, and dressing only along the photographed stretch.
 shown = lane['photographed']
-assert len(benches) == 1 and shown['from'] <= lane['benches']['along'][0] <= shown['to'], 'benches must be the photographed one, not repeats'
+assert len(benches) == 1 and shown['from'] <= lane['benches']['along'][0] <= shown['to'], 'one photographed bench'
+# Further benches come only from marks on the aerial, each recorded with its basis; never a regular repeat.
+aerial = lane['benches']['aerial']
+assert lane['benches']['aerialBasis'] and all(b['side'] in ('lawn', 'hedge') for b in aerial)
+stations = sorted(b['along'] for b in aerial) + lane['benches']['along']
+assert all(abs(p - q) > 3 for i, p in enumerate(stations) for q in stations[i + 1:]), 'two benches on one spot'
+benches += [spot(b['along'], b['offset'], b['side']) for b in aerial]
+assert not any(g['from'] - 1 < b['along'] < g['to'] + 1 and g['kind'] == 'threshold' for b in aerial if b['side'] == 'hedge' for g in lane['boundary']['gaps']), 'bench in a patio threshold'
 assert shown['from'] <= lane['boundary']['from'] < lane['boundary']['to'] <= shown['to'], 'wall runs outside the photographed stretch'
 assert all(shown['from'] <= d <= shown['to'] for d in lane['lamps']['along'] + [c['along'] for c in lane['covers']])
 # One lamp post is photographed along the lane (IMG_2234, on the kerb corner); the other stands by the plinth.
@@ -120,4 +127,4 @@ assert off_path(fittings[1]) > lane['boundary']['offset'] + 0.4
 src = (ROOT / 'src/jorge-lane.ts').read_text()
 for name in ('grass(', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
     assert name in src, name
-print(f'Calle Jorge: {len(benches)} photographed bench, dressing {shown["from"]}-{shown["to"]} m only, {len(cross["lines"])} cross-paths, {len(lane["beds"])} beds, kerbed garden lawn, {len(gaps)} wall gaps, planting in Details behind the route guard, {len(covers)} covers, dragon tree, cactus, plaques and lamp PASS')
+print(f'Calle Jorge: 1 photographed bench and {len(aerial)} from the aerial, dressing {shown["from"]}-{shown["to"]} m only, {len(cross["lines"])} cross-paths, {len(lane["beds"])} beds, kerbed garden lawn, {len(gaps)} wall gaps, planting in Details behind the route guard, {len(covers)} covers, dragon tree, cactus, plaques and lamp PASS')

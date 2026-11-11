@@ -77,8 +77,8 @@
   "looksAtFeatures": [
    "street:jorge",
    "jorge_lane.json:jorge-lane-fittings",
-   "jorge_lane.json:jorge-lane-paths",
-   "jorge_lane.json:jorge-lane-verge"
+   "jorge_lane.json:jorge-lane-benches-aerial",
+   "jorge_lane.json:jorge-lane-paths"
   ],
   "subject": "Calle Jorge looking west: the cross-path beside the bench, planters with brick thresholds and number niches, the kerbed garden lawn beyond"
  },
@@ -1712,6 +1712,7 @@
   "looksAtFeatures": [
    "street:jorge",
    "jorge_lane.json:jorge-lane-fittings",
+   "jorge_lane.json:jorge-lane-benches-aerial",
    "jorge_lane.json:jorge-lane-paths"
   ],
   "subject": "Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other"
@@ -1754,9 +1755,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:jorge",
+   "jorge_lane.json:jorge-lane-benches-aerial",
    "jorge_lane.json:jorge-lane-fittings",
-   "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-paths"
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "subject": "Jorge path, hedge-side yucca and the cactus crown"
  },
@@ -1787,6 +1788,7 @@
   },
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-benches-aerial",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-paths",
    "jorge_lane.json:jorge-lane-fittings"
@@ -1797,10 +1799,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-benches-aerial",
    "street:jorge",
    "jorge_lane.json:jorge-lane-fittings",
-   "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-paths"
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "subject": "white bench, house number 20 and the Teodoro plaque"
  },
@@ -1831,6 +1833,7 @@
   },
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-benches-aerial",
    "jorge_lane.json:jorge-lane-verge"
   ],
   "looksAt": [
@@ -1922,8 +1925,8 @@
   "looksAtFeatures": [
    "street:jorge",
    "street:teodoro-rojo",
-   "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-fittings"
+   "jorge_lane.json:jorge-lane-benches-aerial",
+   "jorge_lane.json:jorge-lane-verge"
   ],
   "subject": "square tile path, CALLE DE TEODORO plaque and a black lamp"
  },
@@ -11679,6 +11682,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:jorge",
+   "jorge_lane.json:jorge-lane-benches-aerial",
    "jorge_lane.json:jorge-lane-fittings",
    "jorge_lane.json:jorge-lane-verge"
   ]
