@@ -10,12 +10,13 @@ Overviews, maps and wide views covering several areas at once, and the mountain 
 - Plants and small details should eventually be textures and sprites, not 3D shapes. The player should be able to get into the pools.
 - GPS locates the camera, not the subject. A roof or upper-floor photo's pin is inside a building and its subject can be 50+ m away.
 - Laser survey ground 2026-10-24 (terrain-from-lidar, docs/reviews/terrain-from-lidar): the ground now follows a 2 m PNOA-LiDAR grid instead of one 0.5 m rise; 92% of open ground near houses is within 0.25 m of the survey. Houses keep one floor datum at the ground under their middle. Open: the seafront strip behind the paseo wall keeps the old zero (survey 0.1-0.6 m higher), the Guillermo cut, and whether house floors follow the survey or the lanes.
+- 11 November 2026: the resort's traditional lamp post is one shared model, src/lantern-post.ts (docs/LANTERN_POST.md): a bottle-green tapered post on a bolted plate, four cradle arms, a frosted four-sided black lantern and a weathered pyramid roof (IMG_2552, IMG_2336, IMG_2597, IMG_2503). Use it wherever a photo shows this fitting; the passage hanging lanterns, wall lanterns, bollards and the paseo's solar lamps are different fittings.
 
 ## Read first
 
-- docs: `docs/OVERVIEW.md`, `docs/LAYOUT_ACCURACY.md`, `docs/TERRAIN.md`, `docs/SPEC.md`, `docs/LEVELS.md`
+- docs: `docs/OVERVIEW.md`, `docs/LAYOUT_ACCURACY.md`, `docs/TERRAIN.md`, `docs/SPEC.md`, `docs/LEVELS.md`, `docs/LANTERN_POST.md`
 - data: `data/terrain.json`, `data/levels_survey.json`
-- src: `src/world.ts`, `src/terrain.ts`
+- src: `src/world.ts`, `src/terrain.ts`, `src/lantern-post.ts`
 - contact sheet: `villacana-reference/contact-sheets/whole-resort.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -42,8 +43,20 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P1 | `pool-detail` | Pools: photo-matched water, waterline tiles, jointed coping, straight steps and slab decks | in-progress · Claude · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg) |
 | P1 | `retexture-surfaces` | Retexture plaster, terracotta and crazy paving from the photos | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2263](../../public/photos-ref/IMG_2263.jpg), [IMG_2237](../../public/photos-ref/IMG_2237.jpg) |
 | P1 | `terrain-from-lidar` | Ground levels: follow the laser survey instead of one 0.5 m rise | in-progress · Claude · placement: not-verified |  |
+| P2 | `lantern-post-asset` | A realistic lantern post, replacing the stand-in lamps | in-progress · Claude · placement: not-verified | [IMG_2552](../../public/photos-ref/IMG_2552.jpg), [IMG_2597](../../public/photos-ref/IMG_2597.jpg), [IMG_2336](../../public/photos-ref/IMG_2336.jpg), [IMG_2234](../../public/photos-ref/IMG_2234.jpg) |
 | P2 | `path-network-inventory-whole-resort` [#138](https://github.com/daveyboyc/villacana-venture/issues/138) | The whole resort: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P3 | `north-pool-roof-heights` | Storey heights: match roof heights to the laser survey (after photo-camera-alignment, terrain-from-lidar) | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
+
+## Photo checks
+
+Renders from each photo's camera compared with the photo (`data/photo_checks.json`).
+
+| Task | Photo | Result | Render | Notes |
+| --- | --- | --- | --- | --- |
+| `lantern-post-asset` | [IMG_2552](../../public/photos-ref/IMG_2552.jpg) | **matches** | [after](../../docs/reviews/lantern-post-asset/IMG_2552-after.png) · [before](../../docs/reviews/lantern-post-asset/IMG_2552-before.png) | The lamp on the lawn island is now the traditional lantern on a green tapered post, as in the photo; before, a green stick with a cream four-sided head. A Pintor Dali lantern behind it at the car park is the same asset; before, a glowing yellow box. The security camera clamped to the real post is not modelled. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
+| `lantern-post-asset` | [IMG_2597](../../public/photos-ref/IMG_2597.jpg) | **matches** | [after](../../docs/reviews/lantern-post-asset/IMG_2597-after.png) · [before](../../docs/reviews/lantern-post-asset/IMG_2597-before.png) | The lamp beside the CALLE DE JORGE plinth is now the black lantern on a green post, as in the photo; before, a grey box on a thin post. The real head is cut off by the top of the photo, so only the post and its position compare directly. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
+| `lantern-post-asset` | [IMG_2336](../../public/photos-ref/IMG_2336.jpg) | **matches** | [after](../../docs/reviews/lantern-post-asset/IMG_2336-after.png) · [before](../../docs/reviews/lantern-post-asset/IMG_2336-before.png) | The lantern at the far end of the Eva lawn now has the photographed lantern shape against the sky; before, a small cream head with a cone. It is small in the frame at this distance. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
+| `lantern-post-asset` | [IMG_2234](../../public/photos-ref/IMG_2234.jpg) | **matches** | [after](../../docs/reviews/lantern-post-asset/IMG_2234-after.png) · [before](../../docs/reviews/lantern-post-asset/IMG_2234-before.png) | The lamps along Calle Jorge are now lanterns on green posts, as the lamp in the photo; before, grey boxes on posts. The photographed lamp stands close on the right; the model's nearest one is further along the lane. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
 
 **Built without complete newer photo-check records:** `door-sills`, `path-network-prd`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
