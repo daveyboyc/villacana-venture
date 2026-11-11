@@ -66,6 +66,14 @@
         #help { display:none; }
       }
       @media (pointer:coarse) and (max-height:450px) { #walk-pad{width:112px;height:112px}.walk-thumb{left:34px;top:34px}#walk-camera{bottom:auto;top:12px;left:12px}#walk-touch-help{bottom:76px}#layout-details{top:12px!important} }
+      body.mobile-inspect #overview-controls,
+      body.mobile-inspect #layout-details,
+      body.mobile-inspect #scorecard,
+      body.mobile-inspect .reference-tools,
+      body.mobile-inspect #inspection-jump span,
+      body.mobile-inspect #help { display:none !important; }
+      body.mobile-inspect #inspection-jump { top:8px; right:auto; max-width:min(240px, calc(100vw - 16px)); background:transparent; border:0; padding:0; }
+      body.embedded.mobile-inspect #inspection-jump { top:8px; }
     </style>
   </head>
   <body>

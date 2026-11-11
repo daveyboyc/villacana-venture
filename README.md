@@ -72,7 +72,9 @@ missing and unverified features; the programme is not yet complete.
 In Inspect, drag to orbit. Slide two fingers to pan — forward and back follow
 the fingers — and twist them to turn. Right-drag, Shift-drag or a trackpad
 scroll also pans, and a pinch or the mouse wheel zooms. **Pan** and **Orbit**
-choose what a left-drag or one finger does. **Whole resort**
+choose what a left-drag or one finger does. On a phone those buttons are hidden:
+the resort opens in details with place and photo labels, one finger orbits, and
+two fingers pan. **Whole resort**
 resets the camera, and **More** contains Top down, North, photo labels and map checks.
 Walk is still on the page and is left unchanged. It is not part of the current
 model work.
