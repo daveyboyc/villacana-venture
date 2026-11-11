@@ -2904,6 +2904,38 @@
    "owner": "Claude"
   },
   {
+   "id": "jorge-lane-surroundings",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Jorge: cross-paths, lawns to the house fronts, the open kerbed garden, planters with thresholds, beds and wall planting",
+   "photos": [
+    "IMG_2182.jpg",
+    "IMG_2229.jpg",
+    "IMG_2230.jpg",
+    "IMG_2233.jpg",
+    "IMG_2234.jpg",
+    "IMG_2597.jpg"
+   ],
+   "build": "Add what the Calle Jorge photos show beside the path (data/jorge_lane.json). South side: lawn to the house fronts, the two-tile cross-path beside the bench and the path behind it along the house front, a kerbed bed with round shrubs and a strelitzia, a climber on the wall, the tall hedge, lantana and bougainvillea at the CALLE DE TEODORO wall, a green cover in the grass. North side: open the garden with the candelabra tree to the lane (it was walled off by a hedge the photos do not show) as a lawn with a white-painted kerb, the dragon tree, one lamp post on the kerb corner and a bougainvillea on the back wall; planters 0.7 m high at the path edge with two brick thresholds, number niches and hedges; slot drains at the Teodoro junction; lawn and the old olive by the CALLE DE JORGE plinth. Remove the three lamp posts no photo shows.",
+   "avoid": "Do not move the mapped lane or registry houses, repeat fittings beyond the photographed stretch, or model the unreadable niche numbers. Leave Walk alone.",
+   "accept": [
+    "Visible in Inspect, in Layout and with Show details",
+    "Before/after renders through the photo cameras recorded in data/photo_checks.json",
+    "scripts/check_jorge_lane.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-paths",
+    "jorge_lane.json:jorge-lane-fittings"
+   ],
+   "dependsOn": [
+    "jorge-lane-review"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,

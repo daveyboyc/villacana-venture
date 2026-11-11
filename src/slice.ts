@@ -18,7 +18,7 @@ import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
 import {lanternPost} from "./lantern-post";
 import {addSouthPoolPassage,inSouthPoolPassage,SOUTH_POOL_HOST,southPoolGroundParts,southPoolUpperParts} from "./south-pool-passage";
-import {addJorgeLane} from "./jorge-lane";
+import {addJorgeLane,inJorgePlainFront} from "./jorge-lane";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
@@ -1158,6 +1158,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const z = az + (bz - az) * t;
         if(b.id===SILVIA_HOST && silviaCloseCamera(x,z))continue;
         if(inSouthPoolPassage(x,z))continue;
+        if(inJorgePlainFront(x,z))continue;
         if(inLaneFrontageBand(x,z))continue;
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;

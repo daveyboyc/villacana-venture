@@ -182,9 +182,9 @@ export function roundClippedTree(o: { trunk: number; crown: number; crownHeight:
 
 /**
  * Shrubs and climbers grown up against a wall: leaves in a shallow layer over the face with a ragged top,
- * and white star flowers (jasmine). x along the wall, z out from it (0 at the wall), y up.
+ * and white star flowers (jasmine), or bracts in `flowerColour` (bougainvillea). x along the wall, z out from it (0 at the wall), y up.
  */
-export function wallClimber(o: { length: number; height: number; depth: number; seed: number; flowers: number }): THREE.Group {
+export function wallClimber(o: { length: number; height: number; depth: number; seed: number; flowers: number; flowerColour?: string }): THREE.Group {
   const rng = seeded(o.seed), f = new Foliage(rng);
   const top = Array.from({ length: Math.max(3, Math.ceil(o.length / 0.6)) + 1 }, () => o.height * (0.7 + rng() * 0.3));
   const topAt = (x: number) => { const t = (x / o.length) * (top.length - 1), i = Math.min(top.length - 2, Math.floor(t)), k = t - i; return top[i] * (1 - k) + top[i + 1] * k; };
@@ -201,7 +201,7 @@ export function wallClimber(o: { length: number; height: number; depth: number; 
   }
   for (let i = 0; i < o.flowers; i++) {
     const x = rng() * o.length, y = (0.35 + rng() * 0.65) * topAt(x), z = 0.06 + rng() * o.depth * 0.7;
-    f.leaf("star", new THREE.Vector3(x, y, z + 0.02), new THREE.Vector3((rng() - 0.5) * 0.6, (rng() - 0.5) * 0.6, 1), [0.035, 0.035], "#f7f5ee");
+    f.leaf("star", new THREE.Vector3(x, y, z + 0.02), new THREE.Vector3((rng() - 0.5) * 0.6, (rng() - 0.5) * 0.6, 1), o.flowerColour ? [0.06, 0.06] : [0.035, 0.035], o.flowerColour ?? "#f7f5ee");
   }
   return f.build("wall-climber");
 }

@@ -10,8 +10,12 @@
    "materials"
   ],
   "title": "Tiled lane between lawns, white tiled bench",
-  "subject": "square terracotta path, concrete edge and the lawn-side bench",
-  "note": "Read 2026-11-10. Four worn terracotta squares across, a pale concrete margin, grass both sides. The bench is on the lawn side."
+  "subject": "Calle Jorge looking west: the cross-path beside the bench, planters with brick thresholds and number niches, the kerbed garden lawn beyond",
+  "note": "Read 2026-11-10 and 2026-11-11. Four worn terracotta squares across, a pale concrete margin. Lawn side: a two-tile cross-path leaves the lane about 1.9 m before the bench. Hedge side: white planters with clipped hedges, two brick thresholds with a short planter between, a recess with a blue number tile by each; further on a white kerb, lawn, the dragon tree and one lamp post.",
+  "looksAt": [
+   -43.5,
+   139.4
+  ]
  },
  "IMG_2183.jpg": {
   "shows": [
@@ -22,11 +26,11 @@
    "planting"
   ],
   "title": "Lawn with a tall candelabra cactus and clipped shrubs",
-  "subject": "the candelabra tree in the garden behind the Calle Jorge wall",
+  "subject": "the candelabra tree on the open garden lawn north of Calle Jorge",
   "note": "Read 2026-11-10. The cactus stands in a private lawn behind a white wall, with a flowering shrub at its base. The same crown shows over the hedge in IMG_2230. Station estimated from the pin.",
   "looksAt": [
-   -52.6,
-   138.6
+   -54.9,
+   137.8
   ]
  },
  "IMG_2184.jpg": {
@@ -580,7 +584,8 @@
    -44.7,
    139.1
   ],
-  "subject": "Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other"
+  "subject": "Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other",
+  "note": "Read 2026-11-11. The cross-path meets the lane in the foreground, about 1.9 m east of the bench. Behind the bench a second path runs along the house front past a white-kerbed bed with three round clipped shrubs and a strelitzia; a climber is trained on the wall behind, and a bougainvillea by door 23. Far end: the CALLE DE TEODORO wall with a tall clipped hedge and yellow lantana in front."
  },
  "IMG_2230.jpg": {
   "shows": [
@@ -634,11 +639,11 @@
    "planting"
   ],
   "title": "Lawn with candelabra cactus and shrubs",
-  "subject": "the candelabra tree in the garden behind the Calle Jorge wall",
-  "note": "Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge.",
+  "subject": "the candelabra tree on the open garden lawn north of Calle Jorge",
+  "note": "Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge. Read again 2026-11-11: the lawn is open to the lane (white kerb at the bottom-left corner), with no wall or hedge between; a bougainvillea is trained along the garden wall behind the tree, and the tall wall on the left is across the octagon-tiled lane.",
   "looksAt": [
-   -52.6,
-   138.6
+   -54.9,
+   137.8
   ]
  },
  "IMG_2234.jpg": {
@@ -652,7 +657,7 @@
   ],
   "title": "Tiled lane with a wall plaque, lamp post and lawn",
   "subject": "square tile path, CALLE DE TEODORO plaque and a black lamp",
-  "note": "Read 2026-11-10. Four or five terracotta squares across, a pale concrete edge, a black lamp on the hedge side, and the stacked CALLE DE TEODORO tiles on the left house wall. A green cover sits in the grass, not in the path.",
+  "note": "Read 2026-11-10. Four or five terracotta squares across, a pale concrete edge, a black lamp on the hedge side, and the stacked CALLE DE TEODORO tiles on the left house wall. A green cover sits in the grass, not in the path. Read again 2026-11-11: the lawn on the right has a white-painted kerb that turns the corner at the lamp post, where an octagon-tiled lane (IMG_2235) joins; slot drains and square grates lie across the path there; beyond it a white planter with a clipped hedge stands at the path edge. Left: a tall clipped hedge in front of the plaque wall, lantana behind it, a bougainvillea over the plaque. No lamp posts further west, only wall lanterns.",
   "looksAt": [
    -57.4,
    147.2
@@ -668,7 +673,8 @@
    "layout"
   ],
   "title": "Lane paved in octagonal tiles between a white wall and lawn",
-  "note": "Octagonal paving here, not square tiles."
+  "note": "Octagonal paving here, not square tiles. Read 2026-11-11: this is the lane that joins Calle Jorge from the north at the lamp-post corner of IMG_2234 (the mapped Teodoro Rojo line); a white-painted kerb edges the garden lawn on its east side.",
+  "subject": "octagon-tiled lane north of Calle Jorge with the kerbed garden lawn on its east side"
  },
  "IMG_2236.jpg": {
   "shows": [
@@ -4706,7 +4712,7 @@
    123.0
   ],
   "subject": "Calle de Jorge sign post",
-  "note": "looksAt is a rough 6 m estimate along the heading, not measured."
+  "note": "looksAt is a rough 6 m estimate along the heading, not measured. Read 2026-11-11: the plinth stands on a lawn with an old olive tree to its left; a low white wall with orange lantana closes the lawn behind."
  },
  "IMG_2598.jpg": {
   "title": "Lawn and flowering lantana border looking east to the Barraka restaurant",

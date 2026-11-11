@@ -12,8 +12,8 @@ Task `jorge-cactus-smooth` · area **Patricia, Silvia, Jorge, Teodoro Rojo and G
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2183.jpg`: Lawn with a tall candelabra cactus and clipped shrubs (ground — pin ±3.8 m; looks at the candelabra tree in the garden behind the Calle Jorge wall)
-- `public/photos-ref/IMG_2233.jpg`: Lawn with candelabra cactus and shrubs (ground — pin ±2.7 m; looks at the candelabra tree in the garden behind the Calle Jorge wall)
+- `public/photos-ref/IMG_2183.jpg`: Lawn with a tall candelabra cactus and clipped shrubs (ground — pin ±3.8 m; looks at the candelabra tree on the open garden lawn north of Calle Jorge)
+- `public/photos-ref/IMG_2233.jpg`: Lawn with candelabra cactus and shrubs (ground — pin ±2.7 m; looks at the candelabra tree on the open garden lawn north of Calle Jorge)
 
 ## Build
 

@@ -1167,6 +1167,72 @@
    "render": "docs/reviews/lantern-post-asset/IMG_2234-after.png",
    "result": "matches",
    "notes": "The lamps along Calle Jorge are now lanterns on green posts, as the lamp in the photo; before, grey boxes on posts. The photographed lamp stands close on the right; the model's nearest one is further along the lane. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-surroundings",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-paths",
+   "photo": "IMG_2182.jpg",
+   "before": "docs/reviews/jorge-lane-surroundings/IMG_2182-before.png",
+   "render": "docs/reviews/jorge-lane-surroundings/IMG_2182-after.png",
+   "result": "matches",
+   "notes": "The two-tile cross-path now leaves the lane just before the bench and the second path runs behind it along the house front, as in the photo; before, plain lawn and bare plaza. On the right the planters stand at the path edge about 0.7 m high with hedges, two brick thresholds and the tile niches, then the white kerb, lawn, dragon tree and lamp post; before, one continuous low hedge wall. The real hedges are taller and the patio walls behind them are generic houses in the model. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-surroundings",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-paths",
+   "photo": "IMG_2229.jpg",
+   "before": "docs/reviews/jorge-lane-surroundings/IMG_2229-before.png",
+   "render": "docs/reviews/jorge-lane-surroundings/IMG_2229-after.png",
+   "result": "matches",
+   "notes": "The bench, the cross-path joining the lane beside it and the lawn running to the house fronts agree with the photo, with the tall hedge and lantana at the far end by the plaque wall; before, a 2.4 m grass strip against bare plaza. The starting pose faces along the lane, so the house-23 bed, climber and bougainvillea that fill the left of the photo are out of frame here; they are checked in the Inspect views (docs/reviews/jorge-lane-surroundings/inspect-details.png). Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-surroundings",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-verge",
+   "photo": "IMG_2230.jpg",
+   "before": "docs/reviews/jorge-lane-surroundings/IMG_2230-before.png",
+   "render": "docs/reviews/jorge-lane-surroundings/IMG_2230-after.png",
+   "result": "matches",
+   "notes": "Right side now reads as the photo: a short planter with a niche in the foreground, a brick threshold, the hedged planter, then the white kerb, lawn and dragon tree with the lamp post beside the path; before, a continuous low wall and hedge to the far end. The patio wall with its awning, lantern and meter box is a generic house wall, and the candelabra crown shows lower above it than in the photo. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-surroundings",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-verge",
+   "photo": "IMG_2233.jpg",
+   "before": "docs/reviews/jorge-lane-surroundings/IMG_2233-before.png",
+   "render": "docs/reviews/jorge-lane-surroundings/IMG_2233-after.png",
+   "result": "matches",
+   "notes": "The garden is now an open lawn from the kerb to the candelabra tree, with the lantana bed at its foot and a climber on the wall behind, as photographed; before, the camera looked over a hedge wall the photo does not show, with a generic tiled porch in the foreground. The real back wall is a lower scalloped garden wall with the house behind; here it is the registry house wall. The before render used the previous starting pose, 2.6 m further east. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-surroundings",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-verge",
+   "photo": "IMG_2234.jpg",
+   "before": "docs/reviews/jorge-lane-surroundings/IMG_2234-before.png",
+   "render": "docs/reviews/jorge-lane-surroundings/IMG_2234-after.png",
+   "result": "matches",
+   "notes": "The white-kerbed lawn on the right with the lamp post on its corner, the planter and hedge beyond the side lane, the slot drains and grate across the path, and the tall hedge on the left agree with the photo; before, a hedge wall ran the whole right side with two lamp posts beyond that the photo does not show. The side lane keeps square tiles where the photo shows octagons, the green cover is just out of frame, and the left house with its grilles and the plaque wall is generic. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-lane-surroundings",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-verge",
+   "photo": "IMG_2597.jpg",
+   "before": "docs/reviews/jorge-lane-surroundings/IMG_2597-before.png",
+   "render": "docs/reviews/jorge-lane-surroundings/IMG_2597-after.png",
+   "result": "matches",
+   "notes": "The plinth and lamp now stand on a lawn with the olive to their left, as in the photo; before, bare ground with a short strip of grass. The low white wall with lantana behind the lawn is not built, and the olive is the generic tree model, not a gnarled trunk. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

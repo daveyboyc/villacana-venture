@@ -3437,15 +3437,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -46.58,
+    "x": -48.98,
     "y": 1.6,
-    "z": 140.9,
+    "z": 139.92,
     "yaw": 291.0,
     "pitch": 14.0,
     "roll": 0.0,
     "f": 1109.3
    },
-   "initialBasis": "photo content (jorge-cactus-smooth): the pin lies on the lane, but the photo is taken from the garden lawn; the camera is set 6.5 m from the candelabra tree along the phone heading (291 degrees), tilted up at its crown. A starting pose, not a solved camera."
+   "initialBasis": "photo content (jorge-lane-surroundings): the pin lies on the lane, but the photo is taken from the garden lawn just inside its kerb (the kerb is in the bottom-left corner); the camera is set about 6 m from the candelabra tree, facing it on the phone heading (291 degrees); not solved."
   },
   "IMG_2183.jpg": {
    "image": [
@@ -3454,15 +3454,32 @@
    ],
    "points": [],
    "initial": {
-    "x": -44.88,
+    "x": -47.07,
     "y": 1.6,
-    "z": 142.03,
-    "yaw": 294.0,
+    "z": 139.62,
+    "yaw": 288.0,
     "pitch": 8.0,
     "roll": 0.0,
     "f": 1109.3
    },
-   "initialBasis": "photo content (jorge-cactus-smooth): the pin lies on the lane, but the photo is taken from the garden lawn; the camera is set 8.5 m from the candelabra tree along the phone heading (294 degrees), tilted up at its crown. A starting pose, not a solved camera."
+   "initialBasis": "photo content (jorge-lane-surroundings): taken from the lane edge of the garden lawn (the kerb is in the bottom-left corner), about 8 m from the candelabra tree, facing it; the phone heading is 294 degrees; not solved."
+  },
+  "IMG_2182.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -36.2,
+    "y": 1.6,
+    "z": 135.2,
+    "yaw": 240.0,
+    "pitch": -8.0,
+    "roll": 0.0,
+    "f": 1109.3
+   },
+   "initialBasis": "photo content (jorge-lane-surroundings): standing on the Jorge path about 4 m east of the cross-path beside the bench, facing along the lane (240 degrees), slightly down; not solved."
   }
  }
 }
