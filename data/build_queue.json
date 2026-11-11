@@ -2960,6 +2960,34 @@
    "owner": "Claude"
   },
   {
+   "id": "jorge-west-entrance",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Jorge: the flagged west entrance from the Dalí car park, and the lantana planter at the east end",
+   "photos": [
+    "IMG_2697.jpg",
+    "IMG_2773.jpg"
+   ],
+   "build": "IMG_2280 and IMG_2696-2698 look along the mapped Calle Jorge line from the Pintor Dalí car park, so the lane's west end is photographed after all. Build it (data/jorge_lane.json, west): sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays, a lamp post at the end of the north kerb, lawn both sides to about 31 m, two round clipped trees on the north lawn, a shrub border and a bougainvillea along the house on the south side. At the east end add the waist-high lantana planter wall along Calle Guillermo behind the plinth lawn (IMG_2597, IMG_2773). Move the dragon tree next to the lamp post on the kerb corner (IMG_2594).",
+   "avoid": "Do not build the white gateway at about 28 m (too small in the photos), continue flags or lawn east of it, or change the Dalí parking bays. Leave Walk alone.",
+   "accept": [
+    "Visible in Inspect, in Layout and with Show details (jump target Calle Jorge · west entrance)",
+    "Before/after renders through the photo cameras recorded in data/photo_checks.json",
+    "scripts/check_jorge_lane.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-west",
+    "jorge_lane.json:jorge-lane-guillermo-planter",
+    "jorge_lane.json:jorge-lane-fittings"
+   ],
+   "dependsOn": [
+    "jorge-lane-surroundings"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,

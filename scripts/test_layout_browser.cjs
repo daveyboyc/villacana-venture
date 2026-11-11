@@ -393,16 +393,16 @@ const path = require("node:path");
       const layout=new THREE.Scene();layout.userData.layoutOnly=true;addJorgeLane(layout);layout.updateMatrixWorld(true);
       const runs=jorgeWallRuns(),thresholds=jorgeLane.boundary.gaps.filter(g=>g.kind==='threshold').length;
       if(runs.length<4)throw Error('Calle Jorge planter runs missing: '+JSON.stringify(runs));
-      for(const [name,n] of [['jorge-cross-path',jorgeLane.crossPaths.lines.length],['jorge-wall',runs.length],['jorge-threshold',thresholds],['jorge-wall-niche',jorgeLane.boundary.niches.length],['jorge-kerb',2],['jorge-bed-kerb',jorgeLane.beds.length*4],['jorge-lamp',2],['jorge-bench',1+jorgeLane.benches.aerial.length],['jorge-grass-lawn',1],['jorge-grass-hedge',1]])
+      for(const [name,n] of [['jorge-cross-path',jorgeLane.crossPaths.lines.length],['jorge-wall',runs.length],['jorge-threshold',thresholds],['jorge-wall-niche',jorgeLane.boundary.niches.length],['jorge-kerb',2],['jorge-bed-kerb',jorgeLane.beds.length*4],['jorge-lamp',3],['jorge-west-flags',1],['jorge-west-kerb',4],['jorge-guillermo-planter',3],['jorge-bench',1+jorgeLane.benches.aerial.length],['jorge-grass-lawn',1],['jorge-grass-hedge',1]])
         if(count(layout,name)!==n)throw Error(`Calle Jorge Layout has ${count(layout,name)} ${name}, expected ${n}`);
-      for(const name of ['jorge-hedge','jorge-plaque-hedge','jorge-shrub','jorge-climber','jorge-cactus','jorge-lantana'])if(count(layout,name))throw Error('Calle Jorge planting leaked into Layout: '+name);
+      for(const name of ['jorge-west-tree','jorge-west-shrub','jorge-guillermo-lantana','jorge-hedge','jorge-plaque-hedge','jorge-shrub','jorge-climber','jorge-cactus','jorge-lantana'])if(count(layout,name))throw Error('Calle Jorge planting leaked into Layout: '+name);
       for(const side of ['lawn','hedge']){const g=layout.getObjectByName('jorge-grass-'+side).geometry;if(g.index.count<300)throw Error('Calle Jorge '+side+' lawn is too small: '+g.index.count);}
       const routes=protectedRoutes(s.boundaryReference),details=new THREE.Scene();details.userData.decorationClearance=(x,z,r)=>routeClearance(routes,x,z,r);addJorgeLane(details);details.updateMatrixWorld(true);
       // Every planter keeps its hedge: the route guard must not strip a planter bare.
       const hedges=[];details.traverse(o=>{if(o.name==='jorge-hedge')hedges.push(o.userData.base);});
       const [a,b]=s.streets.find(r=>r.id==='jorge').points,len=Math.hypot(b[0]-a[0],b[1]-a[1]),station=p=>((p[0]-a[0])*(b[0]-a[0])+(p[1]-a[1])*(b[1]-a[1]))/len;
       for(const [from,to] of runs)if(!hedges.some(p=>station(p)>=from&&station(p)<=to))throw Error(`Calle Jorge planter ${from}-${to} m has no hedge`);
-      for(const [name,n] of [['jorge-plaque-hedge',2],['jorge-shrub',3],['jorge-climber',2],['jorge-cactus',1],['jorge-lantana',1]])if(count(details,name)<n)throw Error(`Calle Jorge Details has ${count(details,name)} ${name}, expected at least ${n}`);
+      for(const [name,n] of [['jorge-plaque-hedge',2],['jorge-shrub',3],['jorge-climber',2],['jorge-west-tree',2],['jorge-west-shrub',8],['jorge-guillermo-lantana',8],['jorge-cactus',1],['jorge-lantana',1]])if(count(details,name)<n)throw Error(`Calle Jorge Details has ${count(details,name)} ${name}, expected at least ${n}`);
     }
     {
       const {addSouthBenchPlanting}=await import('/src/middle-south-planting.ts');

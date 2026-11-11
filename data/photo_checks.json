@@ -1233,6 +1233,28 @@
    "render": "docs/reviews/jorge-lane-surroundings/IMG_2597-after.png",
    "result": "matches",
    "notes": "The plinth and lamp now stand on a lawn with the olive to their left, as in the photo; before, bare ground with a short strip of grass. The low white wall with lantana behind the lawn is not built, and the olive is the generic tree model, not a gnarled trunk. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-west-entrance",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-west",
+   "photo": "IMG_2697.jpg",
+   "before": "docs/reviews/jorge-west-entrance/IMG_2697-before.png",
+   "render": "docs/reviews/jorge-west-entrance/IMG_2697-after.png",
+   "result": "matches",
+   "notes": "The flagged path between two white kerbs, the lamp post at the left kerb's end, lawn both sides, a round clipped tree on the left and the shrub border and climber along the right-hand house agree with the photo; before, a narrow terracotta ribbon over bare ground. Differences: a stub of the generic terracotta ribbon still shows on the asphalt in front of the flags, there are no parked cars, the bougainvillea is a green climber with few bracts where the photo has a mass of purple at first-floor height, the white gateway at the far end is not built, and a generic palm stands in the lane beyond. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-west-entrance",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-guillermo-planter",
+   "photo": "IMG_2773.jpg",
+   "before": "docs/reviews/jorge-west-entrance/IMG_2773-before.png",
+   "render": "docs/reviews/jorge-west-entrance/IMG_2773-after.png",
+   "result": "matches",
+   "notes": "A waist-high white planter wall with lantana now runs along the right of the lane with the plinth lawn on the left, as in the photo; before, open ground to the pool. The lane keeps the generic square tiles where the photo shows octagons and squares with a round cover, and the real wall runs on further than the 19.5 m built. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

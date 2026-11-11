@@ -6,8 +6,8 @@ reviewed on 10 November (task `jorge-lane-review`), given its surroundings on 11
 
 ## What the photos show
 
-All Calle Jorge photos were taken between 101 and 130 m along the 136 m mapped centreline, at its
-east end. IMG_2234 looks about 15 m further west.
+The east-end photos were taken between 101 and 130 m along the 136 m mapped centreline; IMG_2234
+looks about 15 m further west. The west entrance has its own photos (IMG_2280, IMG_2696-2698).
 
 | Photo | Shows |
 | --- | --- |
@@ -128,6 +128,38 @@ reference check and build pass, the four bench spots are clear of houses, paths 
 each faces the path. Reading the aerial crops itself, it found the 79.2 m and 122.3 m marks clear,
 the 64.3 m mark fainter, and agreed that the 106.5 m mark looks like the bench marks while nothing
 shows at 112 m. That is the open question above; it is not placement approval.
+
+## The west entrance and the east planter (11 November, task `jorge-west-entrance`)
+
+Earlier notes said nothing west of 86 m was photographed. That was wrong for the lane's west end:
+IMG_2280 and IMG_2696-2698 stand in the Pintor Dalí car park on the mapped Calle Jorge line and
+look along it. Built from them (`west` in the data), from 0.3 to 28 m:
+
+- a path of sandstone flags about 2 m wide (the resort's crazy-paving surface), not terracotta;
+- two white-painted kerbs the length of the parking bays, each with a short return at its end;
+- a lamp post at the end of the north kerb (the camera on it is not modelled);
+- lawn both sides, 9 m deep on the north and a narrow strip on the south, as the aerial shows;
+- two round clipped trees on the north lawn (Details);
+- a border of clipped and yellow-flowering shrubs and a bougainvillea along the house on the
+  south side (Details).
+
+The white gateway at the far end (about 28 m, where the aerial shows a white mark on the line) is
+too small in the photos to build, and what the path is made of beyond it is not known. Jump to it
+in Inspect with **Calle Jorge · west entrance**.
+
+At the east end, IMG_2773 looks up Calle Guillermo from the junction and shows a waist-high white
+planter wall full of lantana along its east side; IMG_2597 shows the same wall behind the plinth
+lawn. It is built for 19.5 m at the edge of the mapped Guillermo line (`guillermoPlanter`).
+
+A second agent that did not make the change checked it: the lane check, type-check, reference check
+and build pass, the west fittings and the planter are clear of houses and on the right sides, and
+the records agree with the data. Comparing the renders with the photos itself, it found the layout
+right but simplified: the kerbs read heavier than the photographed edging, the bougainvillea shows
+little purple from the car park, a stub of the generic terracotta ribbon still shows in front of
+the flags, and the lantana is sparser than the real planting. That is not placement approval.
+
+IMG_2594 looks up the lane from the south towards the junction and shows the dragon tree right
+beside the lamp post on the kerb corner, so the tree moved 1.4 m west to stand there.
 
 ## Limits
 

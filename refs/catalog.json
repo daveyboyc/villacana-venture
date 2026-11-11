@@ -3588,6 +3588,9 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-west",
    "dali_street.json:dali-house-lanterns"
   ],
   "looksAt": [
@@ -3597,7 +3600,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:jorge"
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-west"
   ],
   "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
  },
@@ -7927,6 +7931,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-guillermo-planter",
    "street:guillermo"
   ],
   "subject": "Calle Guillermo from its seaward end"
@@ -11096,8 +11101,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "seaward_paving.json:teodoro-octagonal-paving",
-   "jorge_lane.json:jorge-lane-fittings"
+   "jorge_lane.json:jorge-lane-fittings",
+   "seaward_paving.json:teodoro-octagonal-paving"
   ]
  },
  {
@@ -11620,7 +11625,7 @@
    "planting",
    "materials"
   ],
-  "note": "Nearly the same shot as IMG_2593.",
+  "note": "Nearly the same shot as IMG_2593. Read 2026-11-11: the lamp post and the dragon tree at the end stand together on the kerbed lawn corner where this lane meets Calle Jorge.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1lqq_iIqFA5KdzMdo7lbmcqy1Li_Tw1il/view?usp=drivesdk",
@@ -11632,7 +11637,10 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge"
+  ],
   "looksAt": [
    -56.3,
    149.8
@@ -11763,6 +11771,7 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-sign",
+   "jorge_lane.json:jorge-lane-guillermo-planter",
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
@@ -15602,15 +15611,21 @@
    "altitude": 8.0,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -130.5,
-   184.4
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-west"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -125.4,
+   186.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
-  ]
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-west"
+  ],
+  "subject": "the flagged west entrance of Calle Jorge from the Dalí car park"
  },
  {
   "id": "IMG_2697.jpg",
@@ -15628,7 +15643,7 @@
    "materials",
    "planting"
   ],
-  "note": null,
+  "note": "Read 2026-11-11. Sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays; a black lamp post with a camera at the end of the left kerb; lawn both sides beyond, two round clipped trees on the left, a shrub border and a house with purple bougainvillea on the right; a white gateway at the far end.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1WF1ONaeLW6zSQEIKHzXWfo3F4ptLrl3B/view?usp=drivesdk",
@@ -15640,15 +15655,21 @@
    "altitude": 8.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -130.8,
-   184.3
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-west"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -125.4,
+   186.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
-  ]
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-west"
+  ],
+  "subject": "the flagged west entrance of Calle Jorge from the Dalí car park: white kerbs, lamp post, lawns, round trees and the house with the bougainvillea"
  },
  {
   "id": "IMG_2698.jpg",
@@ -15678,15 +15699,21 @@
    "altitude": 8.3,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -130.8,
-   184.4
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-west"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -125.4,
+   186.5
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
-  ]
+   "street:jorge",
+   "jorge_lane.json:jorge-lane-west"
+  ],
+  "subject": "the flagged west entrance of Calle Jorge from the Dalí car park"
  },
  {
   "id": "IMG_2699.jpg",
@@ -17114,7 +17141,7 @@
    "materials",
    "planting"
   ],
-  "note": null,
+  "note": "Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left.",
   "observation": null,
   "taken": "2026-11-03",
   "originalUrl": "https://drive.google.com/file/d/1_fEuT3UwjGDnb9yhFuKJWDLyJTpYUeMs/view?usp=drivesdk",
@@ -17126,15 +17153,21 @@
    "altitude": 5.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -20.3,
-   122.6
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-guillermo-planter"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -26.5,
+   115.3
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:guillermo"
-  ]
+   "street:guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-planter"
+  ],
+  "subject": "Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side"
  },
  {
   "id": "IMG_2774.jpg",
@@ -17170,7 +17203,9 @@
    112.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-guillermo-planter"
+  ]
  },
  {
   "id": "IMG_2775.jpg",

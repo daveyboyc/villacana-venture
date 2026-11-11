@@ -3480,6 +3480,40 @@
     "f": 1109.3
    },
    "initialBasis": "photo content (jorge-lane-surroundings): standing on the Jorge path about 4 m east of the cross-path beside the bench, facing along the lane (240 degrees), slightly down; not solved."
+  },
+  "IMG_2697.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -141.44,
+    "y": 1.6,
+    "z": 195.76,
+    "yaw": 60.0,
+    "pitch": -6.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (jorge-west-entrance): standing in the Pintor Dalí car park about 5 m short of the kerbs, on the mapped Calle Jorge line, facing along it (60 degrees), slightly down; not solved."
+  },
+  "IMG_2773.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -19.62,
+    "y": 1.6,
+    "z": 126.96,
+    "yaw": 328.0,
+    "pitch": -8.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (jorge-west-entrance): standing on Calle Guillermo at the Jorge junction, facing up the lane (328 degrees), slightly down; not solved."
   }
  }
 }

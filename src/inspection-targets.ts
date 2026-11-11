@@ -26,6 +26,8 @@ export function inspectionTargets(skeleton: Skeleton): InspectionTarget[] {
     const [a, b] = jorge.points;
     const at = (t: number): Vec2 => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
     targets.push({ id: 'jorge-detail', name: 'Calle Jorge · east detail', group: 'Lanes & roads', points: [at(0.72), at(0.98)] });
+    // The flagged entrance from the Pintor Dalí car park (IMG_2696-2698).
+    targets.push({ id: 'jorge-west', name: 'Calle Jorge · west entrance', group: 'Lanes & roads', points: [at(0.0), at(0.22)] });
   }
   return targets;
 }
