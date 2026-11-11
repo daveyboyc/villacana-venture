@@ -75,7 +75,8 @@ computed. Legacy headings can be approximate and carry an unknown-calibration no
 
 The canonical app root opens **Inspect** for camera-only review. Use **Jump to
 inspect** to go directly to a pool, named lane, the west paseo or Barraka; drag to
-pan, scroll/pinch to zoom, and choose **Orbit** to view the model at an angle.
+orbit, scroll a trackpad to pan, and pinch or roll the wheel to zoom. **Pan**
+makes a left-drag or one finger pan instead.
 **Walk** remains a separate mode. **Map & photos** (or `?view=map`) opens the
 reference map. Photo IDs are on by default;
 zoom reveals overlapping IDs, and the list always includes every catalogue entry.

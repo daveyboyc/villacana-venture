@@ -69,8 +69,9 @@ missing and unverified features; the programme is not yet complete.
 
 ## Controls and local edits
 
-In Inspect, drag to pan and scroll, pinch or use +/− to zoom. Choose **Orbit**
-and drag to rotate/tilt; **Pan** restores dragging across the map. **Whole resort**
+In Inspect, drag to orbit. Right-drag, Shift-drag or a trackpad scroll pans, and
+a pinch or the mouse wheel zooms. **Pan** and **Orbit** choose what a left-drag
+or one finger does. **Whole resort**
 resets the camera, and **More** contains Top down, North, photo labels and map checks.
 Walk is still on the page and is left unchanged. It is not part of the current
 model work.
