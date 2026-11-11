@@ -419,8 +419,8 @@ async function boot(): Promise<void> {
   const panMode=(pan:boolean)=>{
     overviewPan=pan;
     document.querySelector("#inspection-jump span")!.textContent=pan
-      ?"Drag or trackpad-scroll to pan · pinch or wheel to zoom"
-      :"Drag to orbit · trackpad-scroll to pan · pinch or wheel to zoom";
+      ?"Drag or two fingers to pan · pinch or wheel to zoom"
+      :"Drag to orbit · two fingers pan · twist to turn";
     document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
@@ -542,7 +542,7 @@ async function boot(): Promise<void> {
       document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
-      document.querySelector("#help")!.textContent=overview?"Drag to orbit · trackpad-scroll to pan · pinch or wheel to zoom":"WASD or left thumb to walk · drag to look";
+      document.querySelector("#help")!.textContent=overview?"Drag to orbit · two fingers pan · twist to turn":"WASD or left thumb to walk · drag to look";
       if(overview && !inspectionStarted){
         camYaw=0;inspectionStarted=true;
         if(inspectAt){overviewCentre.set(inspectAt.x,0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}

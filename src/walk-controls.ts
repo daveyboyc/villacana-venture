@@ -9,7 +9,8 @@ type WheelLike=Pick<WheelEvent,'deltaX'|'deltaY'|'deltaMode'|'ctrlKey'|'metaKey'
  * Inspect gestures, in the same arrangement as a map and a 3D viewer:
  * left-drag orbits, right-drag / Shift-drag / the Pan button pans,
  * a mouse wheel zooms, a trackpad scroll pans, and a pinch zooms.
- * Walk is unchanged: every wheel still zooms.
+ * On a phone, two fingers pan and twist to orbit. Forward and back follow
+ * the fingers, opposite a one-finger pan. Walk is unchanged.
  */
 const PINCH_GAIN=5;
 
@@ -85,6 +86,9 @@ export function bindWalkControls({canvas,pad,input,isOverview,isPan,pan,toggleOv
    if(before>5&&after>5){input.zoom+=Math.log(before/after)/.08;
     if(isOverview()){const turn=Math.atan2(e.clientY-other.y,e.clientX-other.x)-Math.atan2(prev.y-other.y,prev.x-other.x);input.lookDx+=Math.atan2(Math.sin(turn),Math.cos(turn))/.0045;}
    }
+   // The midpoint grabs the ground. Each finger event owns half of that move.
+   // Forward/back is reversed from a one-finger drag so the model follows the pair.
+   if(isOverview())pan((e.clientX-prev.x)/2,-(e.clientY-prev.y)/2);
   }else if(looks.size<=2){
    if(stick&&e.pointerId===stick.id){touch.x=clamp((e.clientX-stick.x)/50,-1,1);touch.z=clamp(-(e.clientY-stick.y)/50,-1,1);read();}
    else if(isOverview()&&dragPans(e,isPan()))pan(e.clientX-prev.x,e.clientY-prev.y);
