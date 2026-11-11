@@ -43,6 +43,7 @@ import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
 import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview} from "./middle-pool";
 import {smoothClassEdges} from "./class-edges";
+import {batchStatic} from "./static-batch";
 import {pavingCanvas,plasterMaterial,groundMaterial,photoMetres,photoTexture,surfaceTexture} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
@@ -196,6 +197,10 @@ async function boot(): Promise<void> {
   // frame, the planting and props nearest the camera first; photo renders and exports, which
   // need the whole scene at once, build them before the first frame.
   const deferDetails=!layoutOnly&&!photoView&&!new URLSearchParams(location.search).has("export");
+  // Static pieces that look alike are merged into one draw per material and 64 m square once
+  // built (src/static-batch.ts). Photo renders and exports keep every piece as built; ?batch=0
+  // turns it off to compare.
+  const batching=!photoView&&!new URLSearchParams(location.search).has("export")&&new URLSearchParams(location.search).get("batch")!=="0";
   const detailSteps:{build:DetailBuild;spatial?:boolean}[]=[];
   const planting=await addGround(scene, skeleton, centre, poolRings,buildings.some(b=>b.id===SILVIA_HOST));
   if(planting)detailSteps.push({build:planting,spatial:true});
@@ -263,6 +268,7 @@ async function boot(): Promise<void> {
 
   const player = new Player();
   player.group.userData.noDrape = true;
+  player.group.userData.dynamic = true;
   scene.add(player.group);
   const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && !inSouthPoolPassage(x,z) && canPlaceDecoration(x,z,.6));
   const gates = (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8));
@@ -419,7 +425,7 @@ async function boot(): Promise<void> {
   });
   // Map targets stay in the same world coordinates at every zoom and bearing.
   const checks = new THREE.Group();
-  checks.name="map-alignment-checks"; checks.userData.noDrape=true;
+  checks.name="map-alignment-checks"; checks.userData.noDrape=true; checks.userData.dynamic=true;
   const checkLine=(points:Vec2[],closed=false,dashed=false)=>{
     const material=dashed?new THREE.LineDashedMaterial({color:0xe22222,depthTest:false,dashSize:2,gapSize:1}):new THREE.LineBasicMaterial({color:0xe22222,depthTest:false});
     const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints((closed?[...points,points[0]]:points).map(([x,z])=>new THREE.Vector3(x,liveGroundY(x,z)+.2,z))),material);
@@ -531,6 +537,7 @@ async function boot(): Promise<void> {
     into.userData={decorationClearance:scene.userData.decorationClearance,protectedRoutes:scene.userData.protectedRoutes,layoutOnly};
     step.build(into,keep);
     drapeScene(into,buildings);
+    if(batching)batchStatic(into);
     into.userData.noDrape=true;
     if(into.children.length)scene.add(into);
   };
@@ -551,6 +558,7 @@ async function boot(): Promise<void> {
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
 
+  if(batching)batchStatic(scene);
   const scorecard=areaScorecard(scene,liveGroundY);
   const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
