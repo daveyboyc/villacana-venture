@@ -95,6 +95,7 @@ export function addCoastalGate(
   pivot.name = coastalGate.id;
   pivot.position.set(a[0], base, a[1]);
   pivot.userData.noDrape = true;
+  pivot.userData.dynamic = true; // swings open: never merged into a static batch
   const leaf = (x: number, y: number, w: number, h: number) => {
     const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, 0.05), steel);
     m.position.set(x, y, 0);
