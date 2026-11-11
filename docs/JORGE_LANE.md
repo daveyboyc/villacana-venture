@@ -123,6 +123,12 @@ Open: the aerial shows nothing at 112 m, where the photo pins put the photograph
 bench may really be the 106.5 m mark, with the pins about 5 m too far east. No camera is solved,
 so it stays at 112 m; photo request `jorge-benches` asks for a photo of each bench.
 
+A second agent that did not make the change checked it on 11 November: the lane check, type-check,
+reference check and build pass, the four bench spots are clear of houses, paths and thresholds, and
+each faces the path. Reading the aerial crops itself, it found the 79.2 m and 122.3 m marks clear,
+the 64.3 m mark fainter, and agreed that the 106.5 m mark looks like the bench marks while nothing
+shows at 112 m. That is the open question above; it is not placement approval.
+
 ## Limits
 
 - Positions are read from the photo pins, which are good to ±2-5 m. No camera is solved.
