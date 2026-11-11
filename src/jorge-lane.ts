@@ -6,6 +6,7 @@ import { photoTexture, plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { candelabraCactus } from "./candelabra-cactus";
+import { lanternPost } from "./lantern-post";
 import { addSprites } from "./sprites";
 
 /** Calle Jorge: square tiles, covers, grass, the hedge wall, benches, the yucca and cactus, plaques, the sign and lamps. */
@@ -140,16 +141,6 @@ function signMesh(): THREE.Group {
   cap.position.y = 0.95; g.add(cap);
   const plaque = new THREE.Mesh(new THREE.PlaneGeometry(0.82, 0.16), new THREE.MeshStandardMaterial({ map: letters(sign.text), transparent: true, roughness: 0.45 }));
   plaque.position.set(0, 0.62, 0.12); plaque.name = "jorge-sign-letters"; g.add(plaque);
-  return g;
-}
-
-function lampMesh(): THREE.Group {
-  const g = new THREE.Group(); g.name = "jorge-lamp";
-  const dark = new THREE.MeshStandardMaterial({ color: "#1c2420", roughness: 0.5, metalness: 0.25 });
-  const post = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.06, 2.7, 8), dark);
-  post.position.y = 1.35; post.castShadow = true; g.add(post);
-  const head = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.36, 0.28), new THREE.MeshStandardMaterial({ color: "#d9dde2", roughness: 0.25, metalness: 0.1 }));
-  head.position.y = 2.75; g.add(head);
   return g;
 }
 
@@ -321,8 +312,9 @@ export function addJorgeLane(scene: THREE.Scene): void {
   scene.add(place(signMesh(), sign.at as Vec2, sign.face as Vec2));
   for (const at of [lamp.at as Vec2, ...data.lamps.along.map((dist) => jorgeSide(dist, data.lamps.offset, data.lamps.side).at)]) {
     if (inHouse(at[0], at[1])) continue;
-    const light = lampMesh();
-    light.position.set(at[0], 0, at[1]); light.userData.base = at; scene.add(light);
+    // The resort's lantern post (src/lantern-post.ts), as beside the CALLE DE JORGE plinth in IMG_2597 and in IMG_2234.
+    const light = lanternPost({ name: "jorge-lamp" });
+    light.position.set(at[0], 0.03, at[1]); light.rotation.y = Math.atan2(line[1][0] - line[0][0], line[1][1] - line[0][1]); light.userData.base = at; scene.add(light);
   }
   // Planting is Details only and keeps every route clear with its whole footprint.
   if (scene.userData.layoutOnly) return;

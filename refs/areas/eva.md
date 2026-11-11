@@ -102,7 +102,7 @@ graph LR
 | `eva_lane.json:eva-lane-east-edges` | disputed | differs | open discrepancy photo-discrepancy:ce33b7d08fa2ed9c |
 | `eva_lane.json:eva-lane-west` | unreviewed | matches | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `eva_lane.json:eva-lane-west-edges` | disputed | differs | open discrepancy photo-discrepancy:144ccc942e819053 |
-| `eva_walled_lawn.json:eva-walled-lawn` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `eva_walled_lawn.json:eva-walled-lawn` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool.json:middle-pool-east-gateway` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `steps:middle-pool-sw-steps` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 

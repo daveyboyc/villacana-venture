@@ -16,6 +16,7 @@ import {addPicassoServiceRoad,picassoServiceRings} from "./picasso-service-road"
 import {addEvaLawn,evaWallRings,inEvaLawn,suppressInEvaLawn} from "./eva-walled-lawn";
 import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
+import {lanternPost} from "./lantern-post";
 import {addSouthPoolPassage,inSouthPoolPassage,SOUTH_POOL_HOST,southPoolGroundParts,southPoolUpperParts} from "./south-pool-passage";
 import {addJorgeLane} from "./jorge-lane";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
@@ -1207,7 +1208,6 @@ function louvreTexture(): THREE.CanvasTexture {
 function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["props"]): void {
   const white = plasterMaterial(WALL);
   const steel = new THREE.MeshStandardMaterial({ color: "#c9d1d6", roughness: 0.25, metalness: 0.8 });
-  const dark = new THREE.MeshStandardMaterial({ color: "#1d1b1a", roughness: 0.6 });
   const canvas = new THREE.MeshStandardMaterial({ color: "#efe6d2", roughness: 0.9 });
   const mesh = new THREE.MeshStandardMaterial({ color: "#6f6a64", roughness: 0.8 });
   const blueLounger = new THREE.MeshStandardMaterial({ color: "#4096d2", roughness: 0.8 });
@@ -1270,8 +1270,7 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         break;
       }
       case "lamp_post": {
-        add(new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.07, 2.8, 8), dark), p.x, 1.4, p.z);
-        add(new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.4, 0.3), new THREE.MeshBasicMaterial({ color: "#ffe9b0" })), p.x, 3.0, p.z);
+        { const post = lanternPost(); post.position.set(p.x, groundY(p.x, p.z), p.z); scene.add(post); }
         break;
       }
       case "plant_pot": {

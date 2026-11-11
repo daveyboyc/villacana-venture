@@ -6,6 +6,7 @@ import skeleton from "../public/map/skeleton.json";
 import { pointInRing } from "./geom";
 import { surfaceTexture } from "./materials";
 import { siteY } from "./terrain";
+import { lanternPost } from "./lantern-post";
 import type { Vec2 } from "./types";
 
 const fence = layout.barriers.find((b) => b.id === street.fence.barrierId);
@@ -187,31 +188,15 @@ export function addDaliStreet(scene: THREE.Scene): void {
   }
   if (hedgeGroup.children.length) group.add(hedgeGroup);
 
-  const black = new THREE.MeshStandardMaterial({ color: "#161616", roughness: 0.4, metalness: 0.4 });
-  const glass = new THREE.MeshStandardMaterial({ color: "#ffe7a3", roughness: 0.2, emissive: "#c48a2a", emissiveIntensity: 0.85 });
+  // The house-side lanterns are the resort's lantern post (src/lantern-post.ts), turned square to the road.
   const lamps = new THREE.Group();
   lamps.name = street.lanterns.id;
-  const h = street.lanterns.height, head = street.lanterns.head;
   for (const [x, z] of street.lanterns.points) {
     if (!clear(x, z, street.lanterns.radius)) continue;
-    const lamp = new THREE.Group();
-    lamp.name = street.lanterns.id;
+    const lamp = lanternPost({ height: street.lanterns.height, name: street.lanterns.id });
+    const hit = roadHit([x, z]);
     lamp.position.set(x, 0, z);
-    const post = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.055, h - head, 8), black);
-    post.position.y = (h - head) / 2;
-    post.castShadow = true;
-    const bodyY = h - head * 0.62;
-    const body = new THREE.Mesh(new THREE.BoxGeometry(head * 0.7, head * 0.62, head * 0.7), glass);
-    body.position.y = bodyY;
-    const cap = new THREE.Mesh(new THREE.ConeGeometry(head * 0.62, head * 0.42, 4), black);
-    cap.position.y = h - head * 0.16;
-    cap.rotation.y = Math.PI / 4;
-    lamp.add(post, body, cap);
-    for (const sx of [-1, 1]) for (const sz of [-1, 1]) {
-      const frame = new THREE.Mesh(new THREE.BoxGeometry(0.035, head * 0.62, 0.035), black);
-      frame.position.set(sx * head * 0.34, bodyY, sz * head * 0.34);
-      lamp.add(frame);
-    }
+    lamp.rotation.y = Math.atan2(hit.x - x, hit.z - z);
     lamps.add(lamp);
   }
   if (lamps.children.length) group.add(lamps);

@@ -4,6 +4,7 @@ import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import type { Vec2 } from "./types";
 import { clippedHedge, roundClippedTree } from "./clipped-plants";
+import { lanternPost, LANTERN_RADIUS } from "./lantern-post";
 
 export const evaLawn = data;
 export const evaLawnRings = [data.lawn.ring, data.evaLawn.ring] as Vec2[][];
@@ -80,5 +81,6 @@ export function addEvaLawn(scene: THREE.Scene): void {
     const crown=roundClippedTree({trunk:2.0,crown:2.2,crownHeight:1.75,seed:3});crown.position.set(tree[0],0,tree[1]);crown.name=data.id;scene.add(crown);
   }
   const lamp=data.evaLawn.lamp;
-  if(clear(lamp,.25)) scene.add(mesh(new THREE.CylinderGeometry(.035,.05,2.8,8),green,lamp[0],1.4,lamp[1]),mesh(new THREE.CylinderGeometry(.16,.1,.35,4),opal,lamp[0],2.9,lamp[1]),mesh(new THREE.ConeGeometry(.23,.2,4),green,lamp[0],3.16,lamp[1]));
+  // The lawn's lantern post (IMG_2336, IMG_2503): the shared asset in src/lantern-post.ts.
+  if(clear(lamp,LANTERN_RADIUS)){const post=lanternPost({name:data.id+"-lantern"});post.position.set(lamp[0],.025,lamp[1]);post.rotation.y=.52;post.userData.base=lamp;scene.add(post);}
 }

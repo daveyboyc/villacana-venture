@@ -2902,6 +2902,36 @@
    ],
    "status": "in-progress",
    "owner": "Claude"
+  },
+  {
+   "id": "lantern-post-asset",
+   "area": "whole-resort",
+   "priority": 2,
+   "kind": "materials",
+   "title": "A realistic lantern post, replacing the stand-in lamps",
+   "photos": [
+    "IMG_2552.jpg",
+    "IMG_2597.jpg",
+    "IMG_2336.jpg",
+    "IMG_2234.jpg"
+   ],
+   "build": "Model the resort's traditional lamp post once (src/lantern-post.ts) from IMG_2552, IMG_2336, IMG_2597 and IMG_2503: tapered green post on a bolted plate, collar, ball and four cradle arms, a frosted four-sided lantern taller than wide, a weathered pyramid roof with vent cap and finial. Use it for the Calle Jorge lamps, the two Calle Eva lamps, the ten Pintor Dali lanterns and the generic lamp_post prop. Positions do not change.",
+   "avoid": "Do not move any lamp. Leave the passage hanging lanterns, wall lanterns, bollard lights and the paseo's solar lamps: they are different fittings.",
+   "accept": [
+    "Asset sheet beside the photo crops",
+    "Before/after renders recorded in data/photo_checks.json",
+    "scripts/check_lantern_post.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-sign",
+    "jorge_lane.json:jorge-lane-fittings",
+    "eva_lane.json:eva-lane-west-edges",
+    "eva_walled_lawn.json:eva-walled-lawn",
+    "dali_street.json:dali-house-lanterns"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

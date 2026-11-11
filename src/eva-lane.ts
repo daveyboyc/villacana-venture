@@ -5,6 +5,7 @@ import { surfaceTexture } from "./materials";
 import { addSprites, type SpriteKind } from "./sprites";
 import { refine, siteY } from "./terrain";
 import { clippedHedge, looseShrub, wallClimber } from "./clipped-plants";
+import { lanternPost, LANTERN_RADIUS } from "./lantern-post";
 import type { Vec2 } from "./types";
 
 /**
@@ -266,7 +267,6 @@ export function addEvaLane(scene: THREE.Scene): void {
   if (scene.userData.layoutOnly) return;
   const guard = scene.userData.decorationClearance as ((x: number, z: number, radius: number) => boolean) | undefined;
   const clear = (p: Vec2, r: number) => !guard || guard(p[0], p[1], r);
-  const green = new THREE.MeshStandardMaterial({ color: "#203f31", roughness: .7 }), opal = new THREE.MeshStandardMaterial({ color: "#e3dfb8", roughness: .45 });
   const details = new THREE.Group(); details.name = data.id + "-details"; details.userData.noDrape = true;
   /** Stand a plant built in local x (along) / z (across) at s, c of a run; records its footprint for the route checks. */
   const place = (plant: THREE.Group, axis: Axis, s0: number, s1: number, c: number, depth: number, name: string, y: number) => {
@@ -315,12 +315,10 @@ export function addEvaLane(scene: THREE.Scene): void {
       }
     }
     for (const lamp of run.lamps) {
-      const p = axis.at(lamp.s, lamp.c); if (!clear(p, .25)) continue;
-      const y = siteY(...p) + L.lawn, post = new THREE.Mesh(new THREE.CylinderGeometry(.035, .05, 2.8, 8), green);
-      post.position.set(p[0], y + 1.4, p[1]);
-      const head = new THREE.Mesh(new THREE.CylinderGeometry(.16, .1, .35, 4), opal); head.position.set(p[0], y + 2.9, p[1]);
-      const cap = new THREE.Mesh(new THREE.ConeGeometry(.23, .2, 4), green); cap.position.set(p[0], y + 3.16, p[1]);
-      for (const o of [post, head, cap]) { o.name = lamp.id; o.castShadow = true; details.add(o); }
+      const p = axis.at(lamp.s, lamp.c); if (!clear(p, LANTERN_RADIUS)) continue;
+      const post = lanternPost({ name: lamp.id });
+      post.position.set(p[0], siteY(...p) + L.lawn, p[1]); post.rotation.y = -Math.atan2(axis.points[1][1] - axis.points[0][1], axis.points[1][0] - axis.points[0][0]);
+      post.traverse((o) => { o.userData.noDrape = true; }); details.add(post);
     }
     for (const plant of run.plants) {
       const p = axis.at(plant.s, plant.c), holder = new THREE.Scene(); holder.userData = { ...scene.userData };

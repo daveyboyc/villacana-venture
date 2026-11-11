@@ -1123,6 +1123,50 @@
    "render": "docs/reviews/jorge-cactus-smooth/IMG_2230-after.png",
    "result": "matches",
    "notes": "From the lane looking west, the crown now shows above the houses on the right as a dense head of stems, as in the photo; before, a narrow column of sticks beside the path. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "lantern-post-asset",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "eva_lane.json:eva-lane-west-edges",
+   "photo": "IMG_2552.jpg",
+   "before": "docs/reviews/lantern-post-asset/IMG_2552-before.png",
+   "render": "docs/reviews/lantern-post-asset/IMG_2552-after.png",
+   "result": "matches",
+   "notes": "The lamp on the lawn island is now the traditional lantern on a green tapered post, as in the photo; before, a green stick with a cream four-sided head. A Pintor Dali lantern behind it at the car park is the same asset; before, a glowing yellow box. The security camera clamped to the real post is not modelled. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "lantern-post-asset",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-sign",
+   "photo": "IMG_2597.jpg",
+   "before": "docs/reviews/lantern-post-asset/IMG_2597-before.png",
+   "render": "docs/reviews/lantern-post-asset/IMG_2597-after.png",
+   "result": "matches",
+   "notes": "The lamp beside the CALLE DE JORGE plinth is now the black lantern on a green post, as in the photo; before, a grey box on a thin post. The real head is cut off by the top of the photo, so only the post and its position compare directly. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "lantern-post-asset",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "eva_walled_lawn.json:eva-walled-lawn",
+   "photo": "IMG_2336.jpg",
+   "before": "docs/reviews/lantern-post-asset/IMG_2336-before.png",
+   "render": "docs/reviews/lantern-post-asset/IMG_2336-after.png",
+   "result": "matches",
+   "notes": "The lantern at the far end of the Eva lawn now has the photographed lantern shape against the sky; before, a small cream head with a cone. It is small in the frame at this distance. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "lantern-post-asset",
+   "checked": "2026-11-11",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2234.jpg",
+   "before": "docs/reviews/lantern-post-asset/IMG_2234-before.png",
+   "render": "docs/reviews/lantern-post-asset/IMG_2234-after.png",
+   "result": "matches",
+   "notes": "The lamps along Calle Jorge are now lanterns on green posts, as the lamp in the photo; before, grey boxes on posts. The photographed lamp stands close on the right; the model's nearest one is further along the lane. Camera: hand-set starting pose (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [
