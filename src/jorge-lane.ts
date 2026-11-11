@@ -59,6 +59,7 @@ export function jorgeSide(dist: number, offset: number, side: string): { at: Vec
 /** Station along the lane and signed offset: + is the lawn side, - the hedge side. */
 function at(s: number, d: number): Vec2 {
   // The mapped lane is one straight segment, so this also holds a little beyond its ends (the Guillermo planter).
+  if (line.length !== 2) throw new Error("jorge-lane: stations assume the mapped Calle Jorge line is one straight segment");
   const f = jorgeAt(0);
   return [f.p[0] + f.along[0] * s + f.lawn[0] * d, f.p[1] + f.along[1] * s + f.lawn[1] * d];
 }
