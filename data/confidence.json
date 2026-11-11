@@ -39,6 +39,10 @@
    "level": "estimated",
    "why": "The bench shape is clear in IMG_2231, IMG_2232 and IMG_2596, and IMG_2182/2229 show it on the lawn side of the lane. The station is the pin cluster, ±2 to ±5 m, set 1.55 m off the centreline."
   },
+  "jorge_lane.json:jorge-lane-benches-aerial": {
+   "level": "inferred",
+   "why": "Dave said on 11 November 2026 that Calle Jorge has more than one bench. No photo shows the others. The aerial shows white marks the size of the photographed bench on the grass 1.6 to 1.9 m off the path at about 64.3, 79.2 and 122.3 m (docs/reviews/jorge-benches-aerial/), and the photographed bench is reused there. That each mark is a bench, and which way it faces, is inferred. Open: a similar mark at 106.5 m is built as the kerbed shrub bed, and the aerial shows nothing at 112 m where the pins put the photographed bench."
+  },
   "jorge_lane.json:jorge-lane-sign": {
    "level": "estimated",
    "why": "IMG_2597 shows the CALLE DE JORGE plinth and the black lamp beside the path. The pin is ±2.6 m, so the plinth is estimated 1.2 m off the centreline."

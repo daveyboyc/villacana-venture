@@ -186,6 +186,7 @@ def features(s):
                 t=min(left,length); return [round(a[0]+d[0]*t+n[0]*offset,2), round(a[1]+d[1]*t+n[1]*offset,2)]
             left-=length
     add('jorge_lane.json:'+lane['id']+'-bench','Calle Jorge white tiled benches','reference feature',lane['trust'],evidence=[p for p in lane['evidence'] if p!='IMG_2597.jpg'],points=[jorge_spot(dist,lane['benches']['offset'],'lawn') for dist in lane['benches']['along']])
+    add('jorge_lane.json:'+lane['id']+'-benches-aerial','Calle Jorge benches placed from the aerial (not photographed)','reference feature',lane['benches']['aerialBasis'],evidence=['IMG_2231.jpg','IMG_2232.jpg'],points=[jorge_spot(b['along'],b['offset'],b['side']) for b in lane['benches']['aerial']])
     add('jorge_lane.json:'+lane['id']+'-verge','Calle Jorge lawns, garden kerb, planter walls with thresholds, hedges and wall planting (photographed east stretch)','reference feature',lane['trust'],evidence=lane['evidence'],points=[jorge_spot(dist,2,'lawn') for dist in (lane['photographed']['from']+4,110,lane['photographed']['to']-4)])
     add('jorge_lane.json:'+lane['id']+'-sign','Calle de Jorge sign and lamp','reference feature',lane['trust'],evidence=['IMG_2597.jpg'],points=[lane['sign']['at'],lane['lamp']['at']])
     def fitting(item):

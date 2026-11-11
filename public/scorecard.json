@@ -1371,7 +1371,7 @@
     "generated": 599
    },
    "placement": {
-    "features": 18,
+    "features": 19,
     "verified": 0,
     "disputed": 1
    },
@@ -1387,7 +1387,7 @@
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 11,
+    "inProgress": 12,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1397,7 +1397,7 @@
    "confidence": {
     "photographed": 1,
     "estimated": 14,
-    "inferred": 3,
+    "inferred": 4,
     "registry": 0,
     "gaps": 2
    },
@@ -1406,12 +1406,12 @@
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 14 estimated, 3 inferred, 2 known gaps.",
-    "Placement: 0 of 18 features verified, 2 open discrepancies."
+    "How sure: 1 photographed, 14 estimated, 4 inferred, 2 known gaps.",
+    "Placement: 0 of 19 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 2 spots",
+    "headline": "Photos needed: 3 spots",
     "requests": [
      {
       "id": "guillermo-lane-walk",
@@ -1426,6 +1426,22 @@
       "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
       "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
       "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-benches",
+      "at": [
+       -70.7,
+       152.9
+      ],
+      "look": [
+       -83.6,
+       160.3
+      ],
+      "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
+      "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
+      "priority": 2,
       "state": "open",
       "photos": []
      },
@@ -1754,7 +1770,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 407,
+    "features": 408,
     "verified": 0,
     "disputed": 12
    },
@@ -1842,7 +1858,7 @@
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 37,
+    "inProgress": 38,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1852,7 +1868,7 @@
    "confidence": {
     "photographed": 57,
     "estimated": 107,
-    "inferred": 10,
+    "inferred": 11,
     "registry": 233,
     "gaps": 16
    },
@@ -1861,12 +1877,12 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 107 estimated, 10 inferred, 16 known gaps.",
-    "Placement: 0 of 407 features verified, 20 open discrepancies."
+    "How sure: 57 photographed, 107 estimated, 11 inferred, 16 known gaps.",
+    "Placement: 0 of 408 features verified, 20 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 13 spots",
+    "headline": "Photos needed: 14 spots",
     "requests": [
      {
       "id": "alberto",
@@ -1992,6 +2008,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-benches",
+      "at": [
+       -70.7,
+       152.9
+      ],
+      "look": [
+       -83.6,
+       160.3
+      ],
+      "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
+      "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
       "priority": 2,
       "state": "open",
       "photos": []

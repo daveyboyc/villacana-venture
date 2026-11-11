@@ -42,12 +42,11 @@ export function jorgeAt(dist: number): Frame {
 function inHouse(x: number, z: number): boolean {
   return skeleton.buildings.some((b) => b.floors > 0 && pointInRing(x, z, b.ring as Vec2[]));
 }
-export function jorgeBenchSpots(): { at: Vec2; face: Vec2 }[] {
-  return data.benches.along.map((dist) => {
-    const f = jorgeAt(dist);
-    const at: Vec2 = [f.p[0] + f.lawn[0] * data.benches.offset, f.p[1] + f.lawn[1] * data.benches.offset];
-    return { at, face: f.hedge };
-  }).filter((b) => !inHouse(b.at[0], b.at[1]));
+/** The photographed bench, then the benches placed from the aerial (data.benches.aerial). Each faces the path. */
+export function jorgeBenchSpots(): { at: Vec2; face: Vec2; inferred: boolean }[] {
+  const seen = data.benches.along.map((dist) => ({ ...jorgeSide(dist, data.benches.offset, "lawn"), inferred: false }));
+  const aerial = data.benches.aerial.map((b) => ({ ...jorgeSide(b.along, b.offset, b.side), inferred: true }));
+  return [...seen, ...aerial].filter((b) => !inHouse(b.at[0], b.at[1]));
 }
 /** A point off the centreline. `face` points back toward the path. */
 export function jorgeSide(dist: number, offset: number, side: string): { at: Vec2; face: Vec2 } {
