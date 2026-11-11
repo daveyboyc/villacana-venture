@@ -578,7 +578,7 @@ export function addJorgeLane(scene: THREE.Scene): void {
   // The dragon tree on the kerbed lawn beside the lamp post (IMG_2230, IMG_2594): a stout forked trunk with a ball of sword leaves on each limb.
   {
     const p = jorgeSide(data.yucca.along, data.yucca.offset, data.yucca.side).at;
-    if (!inHouse(p[0], p[1]) && clear(p, 1.2)) stand(dragonTree({ height: data.yucca.height, heads: 12, seed: 31, fork: 0.52, leaf: 1.05 }), p, 0.4, 0.03, "jorge-yucca");
+    if (!inHouse(p[0], p[1]) && clear(p, 1.2)) stand(dragonTree({ height: data.yucca.height, heads: 16, seed: 31, fork: 0.55, leaf: 1.15 }), p, 0.4, 0.03, "jorge-yucca");
   }
   // The old olive on the east lawn beside the CALLE DE JORGE plinth (IMG_2597).
   sprite("tree", jorgeSide(data.olive.along, data.olive.offset, data.olive.side).at, 0.5, "jorge-olive");

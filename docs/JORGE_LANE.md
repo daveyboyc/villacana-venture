@@ -147,16 +147,10 @@ The white gateway at the far end (about 28 m, where the aerial shows a white mar
 too small in the photos to build, and what the path is made of beyond it is not known. Jump to it
 in Inspect with **Calle Jorge · west entrance**.
 
-At the east end, IMG_2773 looks up Calle Guillermo from the junction and shows a waist-high white
-planter wall full of lantana along its east side; IMG_2597 shows the same wall behind the plinth
-lawn. It is built for 19.5 m at the edge of the mapped Guillermo line (`guillermoPlanter`).
-
-A second agent that did not make the change checked it: the lane check, type-check, reference check
-and build pass, the west fittings and the planter are clear of houses and on the right sides, and
-the records agree with the data. Comparing the renders with the photos itself, it found the layout
-right but simplified: the kerbs read heavier than the photographed edging, the bougainvillea shows
-little purple from the car park, a stub of the generic terracotta ribbon still shows in front of
-the flags, and the lantana is sparser than the real planting. That is not placement approval.
+At the east end, IMG_2773 looks up Calle Guillermo from the junction and shows a white planter wall
+full of lantana along its east side; IMG_2597 shows the same wall behind the plinth lawn. It is
+built at the edge of the mapped Guillermo line (`guillermoPlanter`); its height and length were
+corrected on 12 November, see below.
 
 IMG_2594 looks up the lane from the south towards the junction and shows the dragon tree right
 beside the lamp post on the kerb corner, so the tree moved 1.4 m west to stand there.
@@ -176,6 +170,14 @@ inaccurate. Checked against IMG_2773, IMG_2774, IMG_2764, IMG_2765, IMG_2230 and
   IMG_2764 and IMG_2765 show the nearest one.
 - **Dragon tree:** the tree on the kerb corner beside the lamp post is now a dragon tree with a
   stout trunk and a dense head of sword leaves (IMG_2230, IMG_2594), not the yucca stand-in.
+
+A second agent that did not make the change checked it: the lane check, map check, type-check,
+reference check and build pass, the two removed palms are gone from the object list and the map,
+and the records agree with the data. Comparing renders with photos itself, it found the planter
+straight, neat and about waist high with no palm beside it, and asked for a stouter palm trunk,
+a fuller crown and a darker, denser dragon tree, which were then made. Still off: the lantana is
+thinner than the real carpet, and the model's wall stands a grass strip back from the lane where
+the photo's rises straight from the paving. That is not placement approval.
 
 Not done: the planter's continuation south of the junction towards the sea (IMG_2822, IMG_2823),
 the second, farther palm, and the other generic palms round the main pool.
