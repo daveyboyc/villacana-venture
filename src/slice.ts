@@ -78,10 +78,14 @@ if(embedded) {
 /** A phone: touch, and a short or narrow screen. A resized desktop window keeps the buttons. */
 const phoneInspect=navigator.maxTouchPoints>0&&matchMedia("(max-width:900px), (max-height:500px)").matches;
 if(phoneInspect)document.body.classList.add("mobile-inspect");
-const detailMode=new URLSearchParams(location.search).get("details");
+const pageQuery=new URLSearchParams(location.search);
+const detailMode=pageQuery.get("details");
 const layoutOnly=detailMode==="1"?false:detailMode==="0"?true:!phoneInspect;
 document.body.dataset.details=layoutOnly?"0":"1";
-const POOL_IDS = (new URLSearchParams(location.search).get("pool") ?? "north").split(",");
+// A bare overview link, and the phone, mean the whole resort. A named pool link stays that pool.
+const askedPool=pageQuery.get("pool");
+const wholeResort=!askedPool&&(pageQuery.get("area")==="whole-resort"||pageQuery.get("view")==="overview"||phoneInspect);
+const POOL_IDS=(askedPool??(wholeResort?"north,middle,south,main":"north")).split(",");
 /** How far the walkable area reaches from its centre. Grows to take in every pool asked for. */
 let RADIUS = 60;
 /** Centres of the pool courtyards on show. */
@@ -441,7 +445,8 @@ async function boot(): Promise<void> {
   action("#alignment-coast",()=>{if(skeleton.seafront)focus(skeleton.seafront.coast);});
   document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
   const areaSelect=document.querySelector<HTMLSelectElement>('#inspection-area')!;
-  const targets=inspectionTargets(skeleton).filter(t=>t.id==='whole-resort'||t.points.some(([x,z])=>Math.hypot(x-centre.x,z-centre.z)<RADIUS-20));
+  const resortWide=POOL_IDS.filter(id=>id!=="toddler").length>1;
+  const targets=inspectionTargets(skeleton).filter(t=>resortWide||t.id==='whole-resort'||t.points.some(([x,z])=>Math.hypot(x-centre.x,z-centre.z)<RADIUS-20));
   if(seaside)targets.push({id:'coastal-gate',name:'Coastal gate',group:'Coast',points:coastalAccess.points});
   for(const group of [...new Set(targets.map(t=>t.group))]){
     const options=document.createElement('optgroup');options.label=group;
