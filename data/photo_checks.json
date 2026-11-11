@@ -1255,6 +1255,38 @@
    "render": "docs/reviews/jorge-west-entrance/IMG_2773-after.png",
    "result": "matches",
    "notes": "A waist-high white planter wall with lantana now runs along the right of the lane with the plinth lawn on the left, as in the photo; before, open ground to the pool. The lane keeps the generic square tiles where the photo shows octagons and squares with a round cover, and the real wall runs on further than the 19.5 m built. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-planter-palms",
+   "checked": "2026-11-12",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-guillermo-planter",
+   "photo": "IMG_2773.jpg",
+   "before": "docs/reviews/jorge-planter-palms/IMG_2773-before.png",
+   "render": "docs/reviews/jorge-planter-palms/IMG_2773-after.png",
+   "result": "matches",
+   "notes": "The planter is now one straight, slim white wall about a metre above the lane with a low carpet of orange and yellow lantana along its top and a clump of spiky heads rising behind it, as in the photo; before, a wall well over waist height in three blocks, sparse dark lantana and a thick palm beside it that the photo does not show. Differences: the lane and lawn in the model stand on a ridge, so the wall's near end shows more of its pool-side face than the photo; the lantana is thinner than the real carpet; the lane keeps square tiles. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-planter-palms",
+   "checked": "2026-11-12",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-fittings",
+   "photo": "IMG_2230.jpg",
+   "before": "docs/reviews/jorge-planter-palms/IMG_2230-before.png",
+   "render": "docs/reviews/jorge-planter-palms/IMG_2230-after.png",
+   "result": "matches",
+   "notes": "The tree beside the lamp post is now a dragon tree with a stout trunk and a dense rounded head of sword leaves, as in the photo; before, a thin low yucca. The real crown is darker and fuller and stands a little taller against the houses. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-planter-palms",
+   "checked": "2026-11-12",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-lawn-palm",
+   "photo": "IMG_2764.jpg",
+   "render": "docs/reviews/jorge-planter-palms/IMG_2764-after.png",
+   "result": "matches",
+   "notes": "A tall slender palm with a compact crown stands on the lawn left of centre with the pool behind it, as in the photo; the short thick generic palm that stood 5 m in front of this camera is gone. Differences: the real crown is denser, the second, farther palm is not built, and the red path, bollard lights and bin on the lawn are not modelled. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

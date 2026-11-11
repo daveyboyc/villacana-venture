@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "18f58e561209277ee40f6f818b7c7b7e50fdd13cef2e35b2c026eda04cde8531",
+ "inputDigest": "c937b14d75661c47ee4bc1a32b75349bb81dd12b3b733844b47f2881609f38a9",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 410,
-  "photosCitedByModel": 169,
-  "modelFeaturesWithPhotoCitations": 156
+  "features": 411,
+  "photosCitedByModel": 172,
+  "modelFeaturesWithPhotoCitations": 157
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3036,7 +3036,10 @@
     "IMG_2696.jpg",
     "IMG_2697.jpg",
     "IMG_2698.jpg",
-    "IMG_2773.jpg"
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2773.jpg",
+    "IMG_2774.jpg"
    ]
   },
   {
@@ -3072,7 +3075,10 @@
     "IMG_2696.jpg",
     "IMG_2697.jpg",
     "IMG_2698.jpg",
-    "IMG_2773.jpg"
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2773.jpg",
+    "IMG_2774.jpg"
    ]
   },
   {
@@ -3100,10 +3106,21 @@
    "id": "jorge_lane.json:jorge-lane-guillermo-planter",
    "name": "Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth",
    "kind": "reference feature",
-   "source": "IMG_2773 looks up Calle Guillermo from the Jorge junction: a white planter wall about waist high, full of orange and yellow lantana, runs along the lane's east side towards the main pool. IMG_2597 shows the same wall behind the lawn of the CALLE DE JORGE plinth. It is set at the east edge of the mapped Guillermo line; its 19.5 m length is as far as IMG_2773 shows it clearly and its far end is not known.",
+   "source": "IMG_2773 looks up Calle Guillermo from the Jorge junction and IMG_2774 from 9 m further on: a neat, straight white planter wall about a metre high (waist height beside the lane), about 0.45 m thick, with a low dense carpet of orange and yellow lantana along its top, runs along the lane's east side to the steps of the pool building. A clump of spiky yucca or dragon-tree heads rises from behind it about a third of the way along; there is no palm beside it. IMG_2597 shows the same wall behind the lawn of the CALLE DE JORGE plinth. The wall's top is set one metre above the lane surface beside it. It is built from 3 to 25 m north of the Jorge line; IMG_2822 and IMG_2823 show it also continues south past the junction and round towards the sea, which is not built.",
    "evidence": [
     "IMG_2597.jpg",
-    "IMG_2773.jpg"
+    "IMG_2773.jpg",
+    "IMG_2774.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-lawn-palm",
+   "name": "Tall slender palm on the main-pool lawn below Calle Jorge",
+   "kind": "reference feature",
+   "source": "IMG_2764 and IMG_2765 look across the main-pool lawn from below Calle Jorge: tall slender palms, the trunk three to four times the height of a compact crown, stand on the lawn towards the pool, the nearest about 19 m from the camera on a bearing of about 330 degrees (it is left of centre in IMG_2764 and just right of centre in IMG_2765; the distance is read from where its foot meets the lawn). It replaces two short, thick generic palms: one that stood against the Guillermo planter (object enrique-steps-4), where IMG_2773 shows a yucca clump and no palm, and one 5 m in front of this camera (main-pool-2), where IMG_2764, IMG_2765 and IMG_2598 show open lawn. Position is good to about 4 m; the 15 m height follows from that distance.",
+   "evidence": [
+    "IMG_2764.jpg",
+    "IMG_2765.jpg"
    ]
   },
   {
@@ -19055,6 +19072,24 @@
    "gap": 5.6
   },
   {
+   "from": "photo:IMG_2764.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2764.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2764.jpg",
+   "to": "jorge_lane.json:jorge-lane-lawn-palm",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2765.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -19079,6 +19114,24 @@
    "relation": "possibly-in-view",
    "distance": 44.0,
    "angleOffset": 33.0
+  },
+  {
+   "from": "photo:IMG_2765.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2765.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2765.jpg",
+   "to": "jorge_lane.json:jorge-lane-lawn-palm",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2766.jpg",
@@ -19281,6 +19334,24 @@
    "relation": "possibly-in-view",
    "distance": 44.1,
    "angleOffset": 17.7
+  },
+  {
+   "from": "photo:IMG_2774.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2774.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2774.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2775.jpg",

@@ -8,6 +8,9 @@ import { clippedHedge, looseShrub, roundClippedTree, wallClimber } from "./clipp
 import { candelabraCactus } from "./candelabra-cactus";
 import { lanternPost } from "./lantern-post";
 import { addSprites } from "./sprites";
+import { dragonTree, tallPalm } from "./spiky-trees";
+import { siteY } from "./terrain";
+import { poolGroundY } from "./pool-levels";
 
 /** Calle Jorge: square tiles and cross-paths, covers, lawns and kerbs, planter walls, the bench, beds, the dragon tree and cactus, plaques, the sign and lamps. */
 export const jorgeLane = data;
@@ -366,6 +369,47 @@ function plaqueMesh(lines: string[]): THREE.Group {
   return g;
 }
 
+/** Height of the Guillermo planter's top at `d` metres north of the Jorge line: a metre above the lane beside it, smoothed so the top runs straight. */
+function guillermoPlanterTop(): (d: number) => number {
+  const gp = data.guillermoPlanter;
+  const lane = (d: number) => { const p = at(gp.along - gp.laneOffset, -d); return siteY(p[0], p[1]) + 0.27; };
+  return (d: number) => { let sum = 0; for (let k = -3; k <= 3; k++) sum += lane(Math.min(gp.to, Math.max(gp.from, d + k))); return sum / 7 + gp.height; };
+}
+/**
+ * The white planter wall along Calle Guillermo (IMG_2773, IMG_2774): one straight, neat wall a metre above the lane.
+ * Its heights are set here from the lane surface, not draped, because the ground under it is the bank down to the main pool;
+ * the pool-side face is carried down to that lower ground as the retaining wall it is.
+ */
+function guillermoPlanter(top: (d: number) => number, material: THREE.Material): THREE.Mesh {
+  const gp = data.guillermoPlanter, half = gp.thickness / 2, pos: number[] = [], uv: number[] = [], idx: number[] = [];
+  const ring = (d: number): [number, number, number][] => {
+    const w = at(gp.along - half, -d), e = at(gp.along + half, -d), out = at(gp.along + half + 0.4, -d), y = top(d);
+    const westFoot = y - gp.height - 0.35, eastFoot = Math.min(westFoot, siteY(out[0], out[1]) + poolGroundY(out[0], out[1]) - 0.2);
+    return [[w[0], westFoot, w[1]], [w[0], y, w[1]], [e[0], y, e[1]], [e[0], eastFoot, e[1]]];
+  };
+  const quad = (a: [number, number, number], b: [number, number, number], c: [number, number, number], e: [number, number, number], u0: number, u1: number) => {
+    const base = pos.length / 3;
+    for (const [v, u] of [[a, u0], [b, u0], [c, u1], [e, u1]] as const) { pos.push(...v); uv.push(u, v[1]); }
+    idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+  };
+  const stations: number[] = []; for (let d = gp.from; d < gp.to - 1e-6; d += 0.5) stations.push(d); stations.push(gp.to);
+  for (let i = 0; i < stations.length - 1; i++) {
+    const a = ring(stations[i]), b = ring(stations[i + 1]), u0 = stations[i], u1 = stations[i + 1];
+    quad(a[0], a[1], b[1], b[0], u0, u1); // lane face
+    quad(a[1], a[2], b[2], b[1], u0, u1); // top
+    quad(a[2], a[3], b[3], b[2], u0, u1); // pool face
+  }
+  const first = ring(gp.from), last = ring(gp.to);
+  quad(first[3], first[2], first[1], first[0], 0, gp.thickness); quad(last[0], last[1], last[2], last[3], 0, gp.thickness);
+  const g = new THREE.BufferGeometry();
+  g.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3)); g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx); g.computeVertexNormals();
+  const mesh = new THREE.Mesh(g, material.clone());
+  (mesh.material as THREE.MeshStandardMaterial).side = THREE.DoubleSide;
+  mesh.name = "jorge-guillermo-planter"; mesh.userData.noDrape = true; mesh.castShadow = mesh.receiveShadow = true;
+  return mesh;
+}
+
 /** Lawns, square tiles and cross-paths, covers, kerbs, planter walls, the bench, beds, planting, plaques, the sign and the lamps. */
 export function addJorgeLane(scene: THREE.Scene): void {
   const edge = new THREE.MeshStandardMaterial({ color: "#d9d3c6", roughness: 0.95 });
@@ -421,15 +465,8 @@ export function addJorgeLane(scene: THREE.Scene): void {
   }
   // The lantana planter wall along Calle Guillermo behind the plinth lawn (IMG_2597, IMG_2773).
   const gp = data.guillermoPlanter;
-  // The ground under it is a rough bank down to the pool, so each of three level lengths takes its height from the lane beside it
-  // (a base point 1.2 m towards the lane) and is carried 1.2 m below that, where the bank falls away.
-  const planterBases: { from: number; to: number; base: Vec2 }[] = [];
-  for (let k = 0; k < 3; k++) {
-    const from = gp.from + ((gp.to - gp.from) * k) / 3, to = gp.from + ((gp.to - gp.from) * (k + 1)) / 3;
-    const piece = bar([gp.along, -from], [gp.along, -to], gp.thickness, gp.height + PATH_Y + 1.2, white, "jorge-guillermo-planter");
-    piece.position.y -= 1.2; piece.userData.base = at(gp.along - 1.2, -(from + to) / 2);
-    planterBases.push({ from, to, base: piece.userData.base }); scene.add(piece);
-  }
+  const planterTop = guillermoPlanterTop();
+  scene.add(guillermoPlanter(planterTop, white));
   for (const cover of data.covers) {
     const spot = jorgeSide(cover.along, Math.abs(cover.offset), cover.offset >= 0 ? "lawn" : "hedge");
     if (inHouse(spot.at[0], spot.at[1])) continue;
@@ -459,7 +496,7 @@ export function addJorgeLane(scene: THREE.Scene): void {
   const stand = (plant: THREE.Object3D, at: Vec2, yaw: number, y: number, name: string) => {
     plant.position.set(at[0], y, at[1]); plant.rotation.y = yaw; plant.name = name; plant.userData.base = at; scene.add(plant);
   };
-  const sprite = (kind: "yucca" | "bird_of_paradise" | "tree", p: Vec2, scale: number, name: string) => {
+  const sprite = (kind: "bird_of_paradise" | "tree", p: Vec2, scale: number, name: string) => {
     const holder = new THREE.Scene(); holder.userData = { ...scene.userData };
     if (!inHouse(p[0], p[1])) addSprites(holder, kind, [{ x: p[0], z: p[1], scale }]);
     for (const child of [...holder.children]) { child.name = name; scene.add(child); }
@@ -518,16 +555,31 @@ export function addJorgeLane(scene: THREE.Scene): void {
     const flowering = i % 2 === 1;
     stand(looseShrub({ width: flowering ? 1.1 : 0.9, depth: 0.9, height: flowering ? 0.95 : 0.8, seed: seed++, leaf: "small", leafSize: [0.06, 0.04], greens: flowering ? ["#55773a", "#638543", "#496a33"] : shrubGreens, stems: 5, flowers: flowering ? { count: 45, colour: "#e9c224" } : undefined }), p, 0, 0.03, "jorge-west-shrub");
   }
-  // Lantana along the Guillermo planter.
-  for (let d = gp.from + 0.7; d < gp.to; d += 1.35) {
+  // A low, dense carpet of lantana along the top of the Guillermo planter, and the spiky clump that rises from it (IMG_2773, IMG_2774).
+  const level = (plant: THREE.Object3D, p: Vec2, y: number, name: string) => {
+    plant.position.set(p[0], y, p[1]); plant.name = name; plant.userData.noDrape = true; scene.add(plant);
+  };
+  for (let d = gp.from + 0.6; d < gp.to - 0.3; d += 1.15) {
     const p = at(gp.along, -d);
     if (!clear(p, 0.3)) continue;
-    const lantana = looseShrub({ width: 1.3, depth: 0.6, height: 0.55, seed: seed++, leaf: "small", leafSize: [0.06, 0.04], greens: ["#55773a", "#638543", "#496a33"], stems: 5, flowers: { count: 50, colour: seed % 2 ? "#e9a21c" : "#e9c224" } });
-    stand(lantana, p, yawOf(jorgeAt(0).along), PATH_Y + gp.height - 0.05, "jorge-guillermo-lantana");
-    lantana.userData.base = (planterBases.find((b) => d >= b.from && d <= b.to) ?? planterBases[0]).base; // level with its length of wall
+    const lantana = looseShrub({ width: 1.3, depth: 0.6, height: 0.36, seed: seed++, leaf: "small", leafSize: [0.055, 0.035], greens: ["#55773a", "#638543", "#496a33"], stems: 4, flowers: { count: 120, colour: seed % 3 ? "#f0b320" : "#ee9418" } });
+    lantana.rotation.y = yawOf(jorgeAt(0).along);
+    level(lantana, p, planterTop(d) - 0.08, "jorge-guillermo-lantana");
   }
-  // The dragon tree on the kerbed lawn (IMG_2230, IMG_2234): the resort's 3D yucca, smaller than its default size.
-  sprite("yucca", jorgeSide(data.yucca.along, data.yucca.offset, data.yucca.side).at, 0.6, "jorge-yucca");
+  {
+    const p = at(gp.along + gp.yucca.behind, -gp.yucca.along);
+    if (clear(p, 0.9)) level(dragonTree({ height: gp.yucca.height, heads: 9, seed: 77, fork: 0.14, leaf: 1.15 }), p, planterTop(gp.yucca.along) - 0.75, "jorge-guillermo-yucca");
+  }
+  // One of the tall slender palms on the main-pool lawn below the lane (IMG_2764, IMG_2765).
+  {
+    const p = data.lawnPalm.at as Vec2;
+    if (clear(p, 0.5)) stand(tallPalm({ height: data.lawnPalm.height, seed: 5 }), p, 0, poolGroundY(p[0], p[1]), "jorge-lawn-palm");
+  }
+  // The dragon tree on the kerbed lawn beside the lamp post (IMG_2230, IMG_2594): a stout forked trunk with a ball of sword leaves on each limb.
+  {
+    const p = jorgeSide(data.yucca.along, data.yucca.offset, data.yucca.side).at;
+    if (!inHouse(p[0], p[1]) && clear(p, 1.2)) stand(dragonTree({ height: data.yucca.height, heads: 16, seed: 31, fork: 0.55, leaf: 1.15 }), p, 0.4, 0.03, "jorge-yucca");
+  }
   // The old olive on the east lawn beside the CALLE DE JORGE plinth (IMG_2597).
   sprite("tree", jorgeSide(data.olive.along, data.olive.offset, data.olive.side).at, 0.5, "jorge-olive");
   // The candelabra tree on the open garden lawn, with the lantana bed at its foot (IMG_2183, IMG_2233).

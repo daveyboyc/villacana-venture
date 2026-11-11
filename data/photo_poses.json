@@ -3514,6 +3514,23 @@
     "f": 1201.8
    },
    "initialBasis": "photo content (jorge-west-entrance): standing on Calle Guillermo at the Jorge junction, facing up the lane (328 degrees), slightly down; not solved."
+  },
+  "IMG_2764.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -3.5,
+    "y": 1.6,
+    "z": 132.3,
+    "yaw": 343.0,
+    "pitch": 6.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content (jorge-planter-palms): at the pin on the main-pool lawn path, on the phone heading (343 degrees), tilted up to take in the palm; not solved."
   }
  }
 }

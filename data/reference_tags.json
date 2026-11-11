@@ -6558,7 +6558,12 @@
    "layout",
    "facades",
    "view"
-  ]
+  ],
+  "looksAt": [
+   -13,
+   115.8
+  ],
+  "subject": "tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond"
  },
  "IMG_2765.jpg": {
   "title": "Main pool lawn and wave-roofed building, second view",
@@ -6653,7 +6658,12 @@
    "layout",
    "materials",
    "levels"
-  ]
+  ],
+  "looksAt": [
+   -27.5,
+   109.0
+  ],
+  "subject": "the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it"
  },
  "IMG_2775.jpg": {
   "title": "Lane down to the pool building with slot drains",

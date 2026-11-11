@@ -49,7 +49,7 @@
   },
   "jorge_lane.json:jorge-lane-fittings": {
    "level": "estimated",
-   "why": "Square tiles, the SANEA cover and grate, slot drains at the Teodoro junction, the green cover in the grass, the dragon tree, the candelabra tree, house 20, the CALLE DE TEODORO plaque, the one lamp post on the kerb corner and the olive by the plinth are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234, IMG_2596 and IMG_2597. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated. The candelabra tree stands on the open garden lawn about 6.8 m back from the lane; that distance, its 5.6 m height and 4.2 m spread are estimates."
+   "why": "Square tiles, the SANEA cover and grate, slot drains at the Teodoro junction, the green cover in the grass, the dragon tree (a stout forked trunk with a ball of sword leaves on each limb, IMG_2230 and IMG_2594), the candelabra tree, house 20, the CALLE DE TEODORO plaque, the one lamp post on the kerb corner and the olive by the plinth are photographed in IMG_2183, IMG_2230, IMG_2231, IMG_2233, IMG_2234, IMG_2596 and IMG_2597. Stations are read from those pins, ±2 to ±5 m, so the positions are estimated. The candelabra tree stands on the open garden lawn about 6.8 m back from the lane; that distance, its 5.6 m height and 4.2 m spread are estimates."
   },
   "jorge_lane.json:jorge-lane-verge": {
    "level": "estimated",
@@ -65,7 +65,11 @@
   },
   "jorge_lane.json:jorge-lane-guillermo-planter": {
    "level": "estimated",
-   "why": "IMG_2773 shows a waist-high white planter wall full of lantana along the east side of Calle Guillermo north of the Jorge junction, and IMG_2597 shows it behind the plinth lawn. It is set at the east edge of the mapped Guillermo line; its 19.5 m length is as far as the photo shows it clearly."
+   "why": "IMG_2773 and IMG_2774 show a neat, straight white planter wall about a metre high along the east side of Calle Guillermo north of the Jorge junction, with a low carpet of lantana on top and a clump of yucca heads behind it; IMG_2597 shows it behind the plinth lawn. Its top is set one metre above the lane beside it (Dave, 2026-11-12: about one metre). It is set at the east edge of the mapped Guillermo line, 22 m long; its ends are not measured."
+  },
+  "jorge_lane.json:jorge-lane-lawn-palm": {
+   "level": "estimated",
+   "why": "IMG_2764 and IMG_2765 show tall slender palms on the main-pool lawn, the nearest about 19 m from the camera on a bearing of about 330 degrees. One is built there, 15 m tall; position good to about 4 m. Two short thick generic palms the photos contradict were removed (Dave, 2026-11-12: the palm is inaccurate)."
   },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",

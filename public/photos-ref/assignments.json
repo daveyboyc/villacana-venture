@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "18f58e561209277ee40f6f818b7c7b7e50fdd13cef2e35b2c026eda04cde8531",
+ "inputDigest": "c937b14d75661c47ee4bc1a32b75349bb81dd12b3b733844b47f2881609f38a9",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 410,
-  "photosCitedByModel": 169,
-  "modelFeaturesWithPhotoCitations": 156
+  "features": 411,
+  "photosCitedByModel": 172,
+  "modelFeaturesWithPhotoCitations": 157
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -17019,7 +17019,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench",
+    "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-lawn-palm"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -3.5,
@@ -17062,7 +17066,11 @@
      "angleOffset": 33.0
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench",
+    "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-lawn-palm"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -3.5,
@@ -17366,7 +17374,11 @@
      "angleOffset": 17.7
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "jorge_lane.json:jorge-lane-bench",
+    "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-guillermo-planter"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -21.9,

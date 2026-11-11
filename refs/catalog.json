@@ -16887,13 +16887,18 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -5.3,
-   126.6
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-lawn-palm"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAt": [
+   -13,
+   115.8
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond"
  },
  {
   "id": "IMG_2765.jpg",
@@ -16922,7 +16927,11 @@
    "altitude": 5.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-lawn-palm"
+  ],
   "looksAt": [
    -6.9,
    127.3
@@ -17197,15 +17206,21 @@
    "altitude": 6.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -24.1,
-   112.8
-  ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-guillermo-planter"
-  ]
+  ],
+  "looksAt": [
+   -27.5,
+   109.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "jorge_lane.json:jorge-lane-guillermo-planter",
+   "street:guillermo"
+  ],
+  "subject": "the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it"
  },
  {
   "id": "IMG_2775.jpg",
