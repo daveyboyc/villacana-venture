@@ -2988,6 +2988,35 @@
    "owner": "Claude"
   },
   {
+   "id": "jorge-planter-palms",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Jorge east end: a neat one-metre planter wall, and palms and spiky trees that match the photos",
+   "photos": [
+    "IMG_2773.jpg",
+    "IMG_2230.jpg",
+    "IMG_2764.jpg"
+   ],
+   "build": "Dave, 2026-11-12: the Guillermo planter is too high and should be neater, about one metre; the palm is inaccurate, check the photos. Rebuild the planter as one straight wall whose top is a metre above the lane (IMG_2773, IMG_2774), 0.45 m thick, with a low dense lantana carpet and the yucca clump behind it. Remove the short thick generic palm that stood against it (the photos show none) and the one in front of the IMG_2764 camera; build one tall slender palm on the main-pool lawn where IMG_2764/2765 show it. Replace the yucca stand-in on the Jorge kerb corner with a dragon tree as in IMG_2230 and IMG_2594 (src/spiky-trees.ts).",
+   "avoid": "Do not change the lane line, ground levels or the pool. Leave Walk alone.",
+   "accept": [
+    "Visible in Inspect with Show details; the wall also in Layout",
+    "Renders through the photo cameras recorded in data/photo_checks.json",
+    "scripts/check_jorge_lane.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-guillermo-planter",
+    "jorge_lane.json:jorge-lane-lawn-palm",
+    "jorge_lane.json:jorge-lane-fittings"
+   ],
+   "dependsOn": [
+    "jorge-west-entrance"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,

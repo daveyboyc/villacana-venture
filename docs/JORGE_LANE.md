@@ -161,6 +161,25 @@ the flags, and the lantana is sparser than the real planting. That is not placem
 IMG_2594 looks up the lane from the south towards the junction and shows the dragon tree right
 beside the lamp post on the kerb corner, so the tree moved 1.4 m west to stand there.
 
+## The planter height and the palms (12 November, task `jorge-planter-palms`)
+
+Dave: the Guillermo planter was too high and should be neater, about one metre; the palm was
+inaccurate. Checked against IMG_2773, IMG_2774, IMG_2764, IMG_2765, IMG_2230 and IMG_2594:
+
+- **Planter:** one straight wall, 0.45 m thick, its top one metre above the lane beside it, 22 m
+  long. Its heights come from the lane surface (it is not draped), because the ground under it is
+  the bank down to the main pool. A low dense carpet of lantana lies along the top and a clump of
+  yucca heads rises behind it, as the photos show.
+- **Palms:** the short, thick generic palm that stood against the planter is removed (the photos
+  show none there), and so is the one 5 m in front of the IMG_2764 camera, where the photos show
+  open lawn. One tall slender palm (`src/spiky-trees.ts`, 15 m) stands on the main-pool lawn where
+  IMG_2764 and IMG_2765 show the nearest one.
+- **Dragon tree:** the tree on the kerb corner beside the lamp post is now a dragon tree with a
+  stout trunk and a dense head of sword leaves (IMG_2230, IMG_2594), not the yucca stand-in.
+
+Not done: the planter's continuation south of the junction towards the sea (IMG_2822, IMG_2823),
+the second, farther palm, and the other generic palms round the main pool.
+
 ## Limits
 
 - Positions are read from the photo pins, which are good to ±2-5 m. No camera is solved.
