@@ -42,6 +42,7 @@ import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
 import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview} from "./middle-pool";
+import {smoothClassEdges} from "./class-edges";
 import {pavingCanvas,plasterMaterial,groundMaterial,photoMetres,photoTexture,surfaceTexture} from "./materials";
 import { mapLabels, referenceEditor } from "./references";
 import * as THREE from "three";
@@ -191,10 +192,16 @@ async function boot(): Promise<void> {
   const poolRings = skeleton.pools.filter((p) => near(p.ring)).map((p) => p.ring);
   // Where the sea is on show, the ground seaward of the paseo follows the seaside heights.
   if ((mainPool || shown.some((p) => p.id === "south")) && skeleton.seafront) seaside = makeSeaside(skeleton.seafront, skeleton.viewRotation);
-  await addGround(scene, skeleton, centre, poolRings,buildings.some(b=>b.id===SILVIA_HOST));
+  // Show details: the pieces Layout leaves out. They are built after Layout has drawn, a step a
+  // frame, the planting and props nearest the camera first; photo renders and exports, which
+  // need the whole scene at once, build them before the first frame.
+  const deferDetails=!layoutOnly&&!photoView&&!new URLSearchParams(location.search).has("export");
+  const detailSteps:{build:DetailBuild;spatial?:boolean}[]=[];
+  const planting=await addGround(scene, skeleton, centre, poolRings,buildings.some(b=>b.id===SILVIA_HOST));
+  if(planting)detailSteps.push({build:planting,spatial:true});
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
-  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;addBackdrop(backdrop);scene.add(backdrop);
+  const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
   const host=buildings.find(b=>b.id===SILVIA_HOST);
   // Same level datum as the surrounding host, both taken on the lane through the tunnel so the
@@ -218,7 +225,12 @@ async function boot(): Promise<void> {
   // The Blender-built facade kit dresses the house walls (src/facade-kit.ts); small screens keep
   // the flat shutters except on the walls traced from photos.
   const kitWalls = layoutOnly ? new Set<string>() : facadeKitWalls(houses, matchMedia("(max-width:700px), (max-height:500px)").matches);
-  if(!layoutOnly){addShutters(scene, houses, skeleton.floorHeight, kitWalls);addPorches(scene, houses, skeleton.floorHeight);}
+  let kitReady:(parts:Awaited<ReturnType<typeof addFacadeKit>>)=>void=()=>{};
+  const kitParts=new Promise<Awaited<ReturnType<typeof addFacadeKit>>>(resolve=>{kitReady=resolve;});
+  // The facade kit takes each house's floor level as draped (src/facade-kit.ts), so it starts once
+  // the scene is draped; it loads its models and appears when they arrive.
+  const startKit=()=>{if(kitWalls.size)void addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight).then(kitReady);else kitReady([]);};
+  if(!layoutOnly)detailSteps.push({build:(into)=>{addShutters(into, houses, skeleton.floorHeight, kitWalls);addPorches(into, houses, skeleton.floorHeight);}});
   let coast = new CoastField([[-5000, 9000], [5000, 9000]], [0, 0]);
   if (mainPool) {
     addMainPoolTerraces(scene, buildings.filter((b) => terraceIds.has(b.id)), centroid(pool.ring));
@@ -244,14 +256,20 @@ async function boot(): Promise<void> {
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   addPoolDecks(scene, nearbyPools, deckSlabCanvas(), skeleton.viewRotation);
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
-  addProps(scene, poolRings, skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && (!layoutOnly||p.kind==="pool_steps"||p.kind==="pool_ladder") && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind))));
+  const props=skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind)));
+  const inLayout=(p:Skeleton["props"][number])=>p.kind==="pool_steps"||p.kind==="pool_ladder";
+  addProps(scene, poolRings, props.filter(inLayout));
+  if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addProps(into, poolRings, props.filter(p=>!inLayout(p)&&keep(p.x,p.z)))});
 
   const player = new Player();
   player.group.userData.noDrape = true;
   scene.add(player.group);
   const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && !inSouthPoolPassage(x,z) && canPlaceDecoration(x,z,.6));
-  addGardenWalls(scene, walls, skeleton.boundaryReference);
-  addGardenGates(scene, (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8)), walls);
+  const gates = (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8));
+  // Joined up neighbour to neighbour, so the walls go in as one piece, not by distance.
+  if(!layoutOnly)detailSteps.push({build:(into)=>{addGardenWalls(into, walls, skeleton.boundaryReference);addGardenGates(into, gates, walls);}});
+  // The trees and hills beyond the resort show only on a walk with details on.
+  if(!layoutOnly)detailSteps.push({build:()=>addBackdrop(backdrop)});
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
@@ -507,9 +525,22 @@ async function boot(): Promise<void> {
   const target = new THREE.Vector3();
   const clock = new THREE.Clock();
 
+  /** Build a detail step into its own group, lift it onto the ground like the rest, and show it. */
+  const runDetail=(step:(typeof detailSteps)[number],keep:(x:number,z:number)=>boolean)=>{
+    const into=new THREE.Scene();
+    into.userData={decorationClearance:scene.userData.decorationClearance,protectedRoutes:scene.userData.protectedRoutes,layoutOnly};
+    step.build(into,keep);
+    drapeScene(into,buildings);
+    into.userData.noDrape=true;
+    if(into.children.length)scene.add(into);
+  };
+  // Nearest first: rings of distance from where the camera looks when the details start.
+  const RINGS=[60,140,Infinity];
+  const pendingDetails:(()=>void)[]=[];
+  if(!deferDetails){for(const step of detailSteps)runDetail(step,()=>true);detailSteps.length=0;}
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
-  const kitParts = kitWalls.size ? addFacadeKit(scene, houses, kitWalls, skeleton.floorHeight) : Promise.resolve([]);
+  if(!deferDetails)startKit();
   if (new URLSearchParams(location.search).get("export") === "kit") void kitParts.then((parts) => { (window as unknown as { villacanaKit: unknown }).villacanaKit = parts; });
   // Keep the existing finite garden paving visible on the newly surveyed ground.
   const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
@@ -614,7 +645,19 @@ async function boot(): Promise<void> {
     controls.dataset.centre=`${target.x.toFixed(2)},${target.z.toFixed(2)}`;
     references.update();updatePhotoLabels();
     finish.render();
-    canvas.dataset.ready="true";canvas.dataset.player=`${player.x.toFixed(3)},${player.z.toFixed(3)}`;canvas.dataset.closeCamera=String(closeCamera);canvas.dataset.cameraView=overview?"overview":firstPerson?"first":"third";canvas.dataset.move=`${input.moveX.toFixed(2)},${input.moveZ.toFixed(2)}`;canvas.dataset.yaw=camYaw.toFixed(4);
+    if(deferDetails&&detailSteps.length&&!pendingDetails.length){
+      const [fx,fz]=overview?[overviewCentre.x,overviewCentre.z]:[player.x,player.z];
+      const ring=(x:number,z:number)=>RINGS.findIndex(r=>Math.hypot(x-fx,z-fz)<r);
+      for(let r=0;r<RINGS.length;r++){
+        for(const step of detailSteps)if(step.spatial)pendingDetails.push(()=>runDetail(step,(x,z)=>ring(x,z)===r));
+        // The pieces that cannot be split by place go in after the nearest ring.
+        if(r===0){for(const step of detailSteps)if(!step.spatial)pendingDetails.push(()=>runDetail(step,()=>true));pendingDetails.push(startKit);}
+      }
+      detailSteps.length=0;
+    }else if(pendingDetails.length)pendingDetails.shift()!();
+    // Ready for checks and photo renders once the details (if shown) are all in.
+    canvas.dataset.details=layoutOnly?"off":pendingDetails.length||detailSteps.length?"loading":"done";
+    if(!pendingDetails.length&&!detailSteps.length)canvas.dataset.ready="true";canvas.dataset.player=`${player.x.toFixed(3)},${player.z.toFixed(3)}`;canvas.dataset.closeCamera=String(closeCamera);canvas.dataset.cameraView=overview?"overview":firstPerson?"first":"third";canvas.dataset.move=`${input.moveX.toFixed(2)},${input.moveZ.toFixed(2)}`;canvas.dataset.yaw=camYaw.toFixed(4);
 
     input.jump = false;
     input.lookDx = 0;
@@ -639,37 +682,6 @@ function findSpawn(centre: { x: number; z: number }, pool: Vec2[], buildings: Sk
 function nearRing(x: number, z: number, ring: Vec2[], margin: number): boolean {
   if (pointInRing(x, z, ring)) return true;
   return ring.some((p) => Math.hypot(p[0] - x, p[1] - z) < margin);
-}
-
-/**
- * Round off class boundaries without blending colours: each class's own mask is
- * blurred, and every pixel takes the class whose blurred mask is strongest there.
- */
-function smoothClassEdges(ctx: CanvasRenderingContext2D, size: number, classes: string[], blurPx: number): void {
-  const rgb = classes.map((hex) => [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)]);
-  const image = ctx.getImageData(0, 0, size, size), d = image.data;
-  const best = new Uint8Array(d.length / 4), strength = new Uint8Array(d.length / 4);
-  const mask = document.createElement("canvas"), soft = document.createElement("canvas");
-  mask.width = mask.height = soft.width = soft.height = size;
-  const mctx = mask.getContext("2d")!, sctx = soft.getContext("2d", { willReadFrequently: true })!;
-  sctx.filter = `blur(${blurPx}px)`;
-  for (const [index, c] of rgb.entries()) {
-    const own = mctx.createImageData(size, size);
-    let any = false;
-    for (let k = 0; k < d.length; k += 4) if (d[k] === c[0] && d[k + 1] === c[1] && d[k + 2] === c[2]) { own.data[k + 3] = 255; any = true; }
-    if (!any) continue;
-    mctx.putImageData(own, 0, 0);
-    sctx.clearRect(0, 0, size, size);
-    sctx.drawImage(mask, 0, 0);
-    const blurred = sctx.getImageData(0, 0, size, size).data;
-    for (let p = 0; p < best.length; p++) if (blurred[p * 4 + 3] > strength[p]) { strength[p] = blurred[p * 4 + 3]; best[p] = index; }
-  }
-  for (let p = 0; p < best.length; p++) {
-    if (!strength[p]) continue;
-    const c = rgb[best[p]];
-    d[p * 4] = c[0]; d[p * 4 + 1] = c[1]; d[p * 4 + 2] = c[2];
-  }
-  ctx.putImageData(image, 0, 0);
 }
 
 /**
@@ -698,7 +710,10 @@ export function deckSlabCanvas(): HTMLCanvasElement {
   return c;
 }
 
-async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }, pools: Vec2[][],hasSilvia:boolean): Promise<void> {
+/** A Show-details piece: adds to `into` whatever of it stands where `keep` says. */
+type DetailBuild = (into: THREE.Scene, keep: (x: number, z: number) => boolean) => void;
+
+async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: number; z: number }, pools: Vec2[][],hasSilvia:boolean): Promise<DetailBuild | undefined> {
   const cover = skeleton.cover;
   const image = await new THREE.ImageLoader().loadAsync(asset(cover.image));
   const w = cover.maxX - cover.minX;
@@ -904,23 +919,34 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
       for (let z = centre.z - reach; z <= centre.z + reach; z += step) {
         const jx = x + (hash(x, z) - 0.5) * step * 0.9;
         const jz = z + (hash(z, x) - 0.5) * step * 0.9;
+        // The cover test is cheap and rules out most points, so it goes first.
+        if (coverAt(jx, jz) !== wanted) continue;
         // Nothing grows on the sand.
         if (seaside?.inZone(jx, jz)) continue;
         if (inMiddlePoolReview(jx, jz) || inEvaLawn(jx, jz) || inEvaLane(jx, jz)) continue;
-        if (coverAt(jx, jz) === wanted) out.push({ x: jx, y:poolGroundY(jx,jz), z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
+        out.push({ x: jx, y:poolGroundY(jx,jz), z: jz, scale: 0.75 + hash(x + 7, z) * 0.5 });
       }
     }
     return out;
   };
-  if(layoutOnly)return;
-  // Inside the courtyard every tree is placed by hand from the photos, so the
-  // scattered ones only fill in beyond it.
-  const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
-  // Beyond the resort block the backdrop has the trees, from the aerial (src/backdrop.ts).
-  addSprites(scene, "tree", scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD && !inElenaNorthReview(p.x, p.z) && inResortBlock(p.x, p.z)));
-  // Tufts only near the courtyards; the painted blades cover lawns further off.
-  const onDeck = onPoolDeck(skeleton.pools, 0.2);
-  addSprites(scene, "grass", scatter(0.8, "lawn", RADIUS).filter((p) => fromCourt(p) < 45 && !inElenaNorthReview(p.x, p.z) && !onDeck(p.x, p.z)).map((p) => ({ ...p, scale: 0.16 + hash(p.x, p.z) * 0.14 })));
+  if(layoutOnly)return undefined;
+  // The planting is a Show-details piece, added with the others once Layout is on screen
+  // (see detailSteps in boot): scattered once, then added a ring of distance at a time.
+  let trees: SpritePlacement[] | undefined, grass: SpritePlacement[] = [];
+  return (into, keep) => {
+    if (!trees) {
+      // Inside the courtyard every tree is placed by hand from the photos, so the
+      // scattered ones only fill in beyond it.
+      const fromCourt = (p: SpritePlacement) => Math.min(...COURTS.map((c) => Math.hypot(p.x - c.x, p.z - c.z)));
+      // Beyond the resort block the backdrop has the trees, from the aerial (src/backdrop.ts).
+      trees = scatter(3.6, "planting", RADIUS).filter((p) => fromCourt(p) > COURTYARD && !inElenaNorthReview(p.x, p.z) && inResortBlock(p.x, p.z));
+      // Tufts only near the courtyards; the painted blades cover lawns further off.
+      const onDeck = onPoolDeck(skeleton.pools, 0.2);
+      grass = scatter(0.8, "lawn", RADIUS).filter((p) => fromCourt(p) < 45 && !inElenaNorthReview(p.x, p.z) && !onDeck(p.x, p.z)).map((p) => ({ ...p, scale: 0.16 + hash(p.x, p.z) * 0.14 }));
+    }
+    addSprites(into, "tree", trees.filter((p) => keep(p.x, p.z)));
+    addSprites(into, "grass", grass.filter((p) => keep(p.x, p.z)));
+  };
 }
 
 function shapeOf(ring: Vec2[], holes: Vec2[][] = []): THREE.Shape {

@@ -248,19 +248,30 @@ function waterMaterial(ring: Vec2[], deep: THREE.Color, shallow: THREE.Color): T
 function shadeMap(ring: Vec2[], minX: number, minZ: number, sizeX: number, sizeZ: number): THREE.DataTexture {
   const w = Math.min(512, Math.ceil(sizeX / 0.12)), h = Math.min(512, Math.ceil(sizeZ / 0.12));
   const data = new Uint8Array(w * h * 4);
-  for (let j = 0; j < h; j++) {
-    for (let i = 0; i < w; i++) {
-      const x = minX + ((i + 0.5) / w) * sizeX, z = minZ + ((j + 0.5) / h) * sizeZ;
-      let best = Infinity;
-      for (let k = 0; k < ring.length; k++) {
-        const [ax, az] = ring[k], [bx, bz] = ring[(k + 1) % ring.length];
-        const dx = bx - ax, dz = bz - az, t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz || 1)));
-        best = Math.min(best, Math.hypot(x - ax - dx * t, z - az - dz * t));
+  // Anything 2.5 m or more from every edge is full depth, so each edge only needs the
+  // samples within 2.5 m of it: the nearest edge to every shallower sample is among them.
+  const REACH = 2.5;
+  const nearest = new Float64Array(w * h).fill(REACH);
+  for (let k = 0; k < ring.length; k++) {
+    const [ax, az] = ring[k], [bx, bz] = ring[(k + 1) % ring.length];
+    const dx = bx - ax, dz = bz - az;
+    const i0 = Math.max(0, Math.floor(((Math.min(ax, bx) - REACH - minX) / sizeX) * w - 0.5));
+    const i1 = Math.min(w - 1, Math.ceil(((Math.max(ax, bx) + REACH - minX) / sizeX) * w - 0.5));
+    const j0 = Math.max(0, Math.floor(((Math.min(az, bz) - REACH - minZ) / sizeZ) * h - 0.5));
+    const j1 = Math.min(h - 1, Math.ceil(((Math.max(az, bz) + REACH - minZ) / sizeZ) * h - 0.5));
+    for (let j = j0; j <= j1; j++) {
+      for (let i = i0; i <= i1; i++) {
+        const x = minX + ((i + 0.5) / w) * sizeX, z = minZ + ((j + 0.5) / h) * sizeZ;
+        const t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz || 1)));
+        const d = Math.hypot(x - ax - dx * t, z - az - dz * t);
+        if (d < nearest[j * w + i]) nearest[j * w + i] = d;
       }
-      const v = Math.round(255 * Math.min(1, best / 2.5) ** 0.8), at = (j * w + i) * 4;
-      data[at] = data[at + 1] = data[at + 2] = v;
-      data[at + 3] = 255;
     }
+  }
+  for (let p = 0; p < w * h; p++) {
+    const v = Math.round(255 * Math.min(1, nearest[p] / REACH) ** 0.8), at = p * 4;
+    data[at] = data[at + 1] = data[at + 2] = v;
+    data[at + 3] = 255;
   }
   const texture = new THREE.DataTexture(data, w, h);
   texture.magFilter = texture.minFilter = THREE.LinearFilter;

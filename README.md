@@ -21,6 +21,14 @@ Walk is left as it is and is not part of this work. `blueprint.html` and
 `photos.html` redirect here and
 preserve selected-photo links. `slice.html` is the underlying 3D renderer.
 
+Inspect draws the Layout pieces first. With **Show details**, the detail pieces
+(planting, props, shutters and porches, garden walls, the facade kit) are added over
+the next frames, nearest where the camera is looking first, so the model is on
+screen before they are all in. `#scene` gets `data-ready="true"` once they are all
+in (`data-details` reads `loading`, then `done`), so automated checks wait for the
+whole scene. Photo renders (`?photocam=`) and exports build everything before the
+first frame.
+
 ## Find a reference
 
 Search an ID (`IMG_2206`), place (`north-pool`) or subject (`boat`) in **Map & photos**.
