@@ -415,8 +415,8 @@
         -103.0,
         173.5
       ],
-      "ask": "Walk Calle Jorge west from the bench (about 30 m from the east end) to its far end, one photo along the lane every 15 m, and one of each side garden wall.",
-      "why": "Only the east 35 m of Calle Jorge is photographed; the rest keeps the generic ribbon (gap:jorge-west)",
+      "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
+      "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
       "priority": 2,
       "radius": 10,
       "since": "2026-11-10",

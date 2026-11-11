@@ -1,6 +1,6 @@
 {
   "id": "jorge-lane",
-  "name": "Calle Jorge: tiled path and cross-paths, lawns and kerbs, planter walls, benches, beds, planting, plaques, sign and lamp",
+  "name": "Calle Jorge: flagged west entrance, tiled path and cross-paths, lawns and kerbs, planter walls, benches, beds, planting, plaques, sign and lamp",
   "evidence": [
     "IMG_2182.jpg",
     "IMG_2183.jpg",
@@ -12,8 +12,14 @@
     "IMG_2233.jpg",
     "IMG_2234.jpg",
     "IMG_2235.jpg",
+    "IMG_2280.jpg",
+    "IMG_2594.jpg",
     "IMG_2596.jpg",
-    "IMG_2597.jpg"
+    "IMG_2597.jpg",
+    "IMG_2696.jpg",
+    "IMG_2697.jpg",
+    "IMG_2698.jpg",
+    "IMG_2773.jpg"
   ],
   "trust": "IMG_2182, IMG_2229, IMG_2230 and IMG_2234 look along Calle Jorge: about four square terracotta tiles across (0.36 m each), joints running with the path and not on the diagonal, a pale concrete edge, then lawn. Lawn side: the lawn runs from the path to the house fronts (the aerial shows it from about 95 to 127 m). IMG_2182 and IMG_2229 show a two-tile cross-path with the same pale edge leaving the lane about 1.9 m east of the bench (read from the tile rows and the horizon in both photos), and IMG_2229 and IMG_2231 show a second path that leaves the lane about 4 m west of the bench, runs diagonally behind it and on along the house front past a white-kerbed bed with three round clipped shrubs and a strelitzia, with a climber trained on the wall behind; a smaller kerbed shrub stands on the lawn west of the bench (the aerial shows its white kerb at about 106.5 m). Where the paths run between the lane and the houses is estimated to about 1 m. IMG_2231 and IMG_2232 are the bench, IMG_2596 the path beside it with a round red SANEA cover and a square grate; IMG_2231 also shows house number 20. The one photographed bench is the station at 112 m; no photo shows a second bench, and three more are placed from the aerial (see benches.aerialBasis). IMG_2234 shows the CALLE DE TEODORO plaque on the lawn-side wall with a bougainvillea over it, a tall clipped hedge on the lawn in front, yellow lantana behind the hedge, a green round cover in the grass, and slot drains and square grates across the path where the octagon-tiled lane of IMG_2235 joins from the hedge side. Hedge side, from west to east: a white planter wall with a clipped hedge standing at the path edge (IMG_2234); the octagon-tiled lane (the mapped Teodoro Rojo line at 93.4 m); then an open garden lawn edged by a white-painted kerb that turns back along that lane, with one black lamp post on the kerb corner (IMG_2234, IMG_2235) and a dragon tree on the lawn near the lane (IMG_2230, IMG_2182). IMG_2183 and IMG_2233 are taken across that lawn, which is open to the lane with no wall or hedge in front: the candelabra tree stands towards the back, a few pale trunks and a broad crown of curved, winged stems about twice the height of the garden wall behind it, over a bed of lantana, with a bougainvillea trained along that wall. Its 5.6 m height, 4.2 m spread and place on the lawn are estimates. East of the garden the planters resume in front of the patios (IMG_2182, IMG_2230): about 0.7 m high, a clipped hedge in each, broken by two brick-paved thresholds about 1.1 m wide with a short planter between them; a small recess with a blue-and-white number tile sits by each threshold (the digits are not legible, so none are modelled). Gap stations are read from the pins and are good to about 2 m. Only one lamp post is seen along the lane (the kerb corner); IMG_2234 shows wall lanterns, not posts, further west, so the posts formerly at 88, 92 and 118 m were removed. IMG_2597 is the CALLE DE JORGE plinth and black lamp at the east end, standing on a lawn with an old olive beside it; the plinth's lettered face is turned towards the path and the camera (south-west), not along the lane. Lawn, wall and planting are not continued west of the photographed stretch. Pins are ±2 to ±5 m and no camera is solved, so every station here is an estimate.",
   "verges": { "inner": 0.98, "lawnOuter": 3.4, "hedgeOuter": 2.7 },
@@ -62,7 +68,7 @@
     { "along": 113.6, "kind": "square", "offset": -0.22 },
     { "along": 122, "kind": "round", "offset": 0.1 }
   ],
-  "yucca": { "along": 98, "side": "hedge", "offset": 2.4 },
+  "yucca": { "along": 96.6, "side": "hedge", "offset": 2.6 },
   "cactus": { "along": 100.5, "side": "hedge", "offset": 6.8, "height": 5.6, "spread": 4.2 },
   "plaques": [
     { "along": 99.2, "side": "lawn", "offset": 4.45, "lines": ["CALLE", "DE", "TEODORO"] },
@@ -94,9 +100,33 @@
   },
   "sign": { "at": [-26.37, 127.75], "face": [-0.419, 0.908], "text": "CALLE DE JORGE" },
   "lamp": { "at": [-25.25, 127.1] },
+  "west": {
+    "evidence": ["IMG_2280.jpg", "IMG_2696.jpg", "IMG_2697.jpg", "IMG_2698.jpg"],
+    "from": 0.3,
+    "to": 28,
+    "pathHalf": 0.95,
+    "kerbs": { "from": 1.8, "to": 6.8, "offset": 1.12, "return": 0.8, "width": 0.14, "height": 0.13 },
+    "lamp": { "along": 7, "side": "hedge", "offset": 1.6 },
+    "grass": [
+      { "side": "hedge", "from": 7, "to": 31, "inner": 1, "outer": 9 },
+      { "side": "lawn", "from": 7, "to": 31, "inner": 1, "outer": 3.4 }
+    ],
+    "trees": [
+      { "along": 15.5, "side": "hedge", "offset": 3.2 },
+      { "along": 19.5, "side": "hedge", "offset": 3.8 }
+    ],
+    "border": { "side": "lawn", "offset": 2.7, "from": 9, "to": 27, "every": 2.2 },
+    "climber": { "id": "west-house-bougainvillea", "side": "lawn", "offset": 3.3, "from": 19, "length": 6, "height": 4.4, "flowers": 150, "colour": "#a8358f" },
+    "basis": "IMG_2280 and IMG_2696-2698 stand in the Pintor Dalí car park at the west end of the mapped Calle Jorge line and look east-north-east along it (headings 56 to 65 degrees; the line runs 60). They show a path of irregular sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays, the left kerb ending in a short return beside a black lamp post that carries a camera, then lawn on both sides with the flagged path running on to a white gateway. Two round clipped trees stand on the left (north) lawn; on the right a border of clipped and yellow-flowering shrubs runs along a house with a purple bougainvillea over its first floor. The aerial agrees: parked cars to about 7 m, a 9 m deep lawn with two tree crowns on the north side, a house 3.4 m off on the south side, and a white mark on the line at about 28 m read as the gateway. The flags are built to 28 m; the gateway itself, and whether flags or terracotta lie beyond it, are not known. Kerb length, path width and plant positions are estimated to about 1 m; no camera is solved."
+  },
+  "guillermoPlanter": {
+    "along": 137.7, "from": 3, "to": 22.5, "thickness": 0.6, "height": 0.9,
+    "evidence": ["IMG_2597.jpg", "IMG_2773.jpg"],
+    "basis": "IMG_2773 looks up Calle Guillermo from the Jorge junction: a white planter wall about waist high, full of orange and yellow lantana, runs along the lane's east side towards the main pool. IMG_2597 shows the same wall behind the lawn of the CALLE DE JORGE plinth. It is set at the east edge of the mapped Guillermo line; its 19.5 m length is as far as IMG_2773 shows it clearly and its far end is not known."
+  },
   "photographed": {
     "from": 86,
     "to": 136.3,
-    "basis": "Every Calle Jorge photo was taken between 101 and 130 m along the mapped centreline (IMG_2182-2234, IMG_2596, IMG_2597); IMG_2234 looks about 15 m further west. West of about 86 m nothing is photographed, so the lane keeps the generic ribbon there (gap:jorge-west, photo request jorge-west-walk)."
+    "basis": "Every Calle Jorge photo was taken between 101 and 130 m along the mapped centreline (IMG_2182-2234, IMG_2596, IMG_2597); IMG_2234 looks about 15 m further west. West of about 86 m nothing is photographed, so the lane keeps the generic ribbon there (gap:jorge-west, photo request jorge-west-walk), except the west entrance from the Dalí car park, which has its own photos (see west)."
   }
 }

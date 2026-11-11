@@ -103,6 +103,31 @@ for c in lane['climbers']:
     assert c['side'] in ('lawn', 'hedge') and shown['from'] <= c['from'] <= shown['to'] and c['offset'] > 3
 for zone in lane['plainFronts']:
     assert shown['from'] <= zone['along'][0] < zone['along'][1] <= shown['to'] and all(e in photos for e in zone['evidence']), zone
+# The west entrance (IMG_2280, IMG_2696-2698) and the Guillermo planter (IMG_2597, IMG_2773) have their own photos and ranges.
+west = lane['west']
+assert all(e in photos for e in west['evidence'] + lane['guillermoPlanter']['evidence']) and west['basis'] and lane['guillermoPlanter']['basis']
+assert 0 <= west['from'] < west['to'] < shown['from'], 'west entrance overlaps the east stretch'
+wk = west['kerbs']
+assert west['from'] <= wk['from'] < wk['to'] < west['to'] and wk['offset'] - wk['width'] / 2 >= west['pathHalf'], 'kerbs stand on the flags'
+for g in west['grass']:
+    assert g['side'] in ('lawn', 'hedge') and wk['to'] <= g['from'] < g['to'] <= west['to'] + 5 and g['inner'] >= west['pathHalf'], g
+west_spots = [spot(west['lamp']['along'], west['lamp']['offset'], west['lamp']['side'])] + [spot(t['along'], t['offset'], t['side']) for t in west['trees']]
+west_spots += [spot(s_, west['border']['offset'], west['border']['side']) for s_ in (west['border']['from'], west['border']['to'])]
+for p in west_spots:
+    assert off_path(p) > west['pathHalf'] + 0.5 and not housed(p), p
+gp = lane['guillermoPlanter']
+guillermo = next(s for s in skeleton['streets'] if s['id'] == 'guillermo')
+def to_segment(p, a, b):
+    dx, dz = b[0] - a[0], b[1] - a[1]
+    t = max(0, min(1, ((p[0] - a[0]) * dx + (p[1] - a[1]) * dz) / (dx * dx + dz * dz)))
+    return math.hypot(p[0] - (a[0] + t * dx), p[1] - (a[1] + t * dz))
+A, B = pts
+ux, uz = (B[0] - A[0]) / math.hypot(B[0] - A[0], B[1] - A[1]), (B[1] - A[1]) / math.hypot(B[0] - A[0], B[1] - A[1])
+for d_ in (gp['from'], (gp['from'] + gp['to']) / 2, gp['to']):
+    p = (A[0] + ux * gp['along'] + uz * d_, A[1] + uz * gp['along'] - ux * d_)
+    near = min(to_segment(p, a, b) for a, b in zip(guillermo['points'], guillermo['points'][1:]))
+    assert guillermo['width'] / 2 + gp['thickness'] / 2 <= near < 2.5, ('Guillermo planter is not at the lane edge', d_, round(near, 2))
+    assert not housed(p), p
 loose = [spot(lane[k]['along'], lane[k]['offset'], lane[k]['side']) for k in ('plaqueHedge', 'lantana', 'grassCover', 'olive')]
 for p in loose:
     assert off_path(p) > jorge['width'] / 2 + 0.3 and not housed(p), p
@@ -125,6 +150,6 @@ for p in fittings:
     assert not housed(p), p
 assert off_path(fittings[1]) > lane['boundary']['offset'] + 0.4
 src = (ROOT / 'src/jorge-lane.ts').read_text()
-for name in ('grass(', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
+for name in ('grass(', 'jorge-west-flags', 'jorge-west-kerb', 'jorge-west-tree', 'jorge-guillermo-planter', 'crazy-paving', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
     assert name in src, name
-print(f'Calle Jorge: 1 photographed bench and {len(aerial)} from the aerial, dressing {shown["from"]}-{shown["to"]} m only, {len(cross["lines"])} cross-paths, {len(lane["beds"])} beds, kerbed garden lawn, {len(gaps)} wall gaps, planting in Details behind the route guard, {len(covers)} covers, dragon tree, cactus, plaques and lamp PASS')
+print(f'Calle Jorge: flagged west entrance {west["from"]}-{west["to"]} m, Guillermo planter, 1 photographed bench and {len(aerial)} from the aerial, dressing {shown["from"]}-{shown["to"]} m only, {len(cross["lines"])} cross-paths, {len(lane["beds"])} beds, kerbed garden lawn, {len(gaps)} wall gaps, planting in Details behind the route guard, {len(covers)} covers, dragon tree, cactus, plaques and lamp PASS')

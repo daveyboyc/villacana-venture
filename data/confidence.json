@@ -59,6 +59,14 @@
    "level": "estimated",
    "why": "IMG_2182, IMG_2229 and IMG_2231 show a two-tile cross-path about 1.9 m east of the bench, a second path leaving the lane west of the bench and running behind it along the house front, and a white-kerbed bed with round clipped shrubs and a strelitzia. Their distances from the bench are read from tile rows; how far back they run and where they end are estimated to about 1 m, and no camera is solved."
   },
+  "jorge_lane.json:jorge-lane-west": {
+   "level": "estimated",
+   "why": "IMG_2280 and IMG_2696-2698 show the west entrance from the Pintor Dalí car park: sandstone flags about 2 m wide between two white-painted kerbs, a lamp post at the end of the left kerb, lawn both sides, two round clipped trees on the north lawn, a shrub border and a house with bougainvillea on the south side, a white gateway at the far end. The aerial agrees on the lawns, tree crowns and house. Kerb length, path width and plant positions are estimated to about 1 m; the flags are built to 28 m, where the aerial shows a white mark read as the gateway."
+  },
+  "jorge_lane.json:jorge-lane-guillermo-planter": {
+   "level": "estimated",
+   "why": "IMG_2773 shows a waist-high white planter wall full of lantana along the east side of Calle Guillermo north of the Jorge junction, and IMG_2597 shows it behind the plinth lawn. It is set at the east edge of the mapped Guillermo line; its 19.5 m length is as far as the photo shows it clearly."
+  },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",
    "why": "Both mouths are photographed and the axis meets IMG_2645's gate, but the cameras are not solved. The 20.4 m depth, 2.1 m width and arch heights are estimates, good to about 2 m."
@@ -609,7 +617,7 @@
   },
   {
    "id": "gap:jorge-west",
-   "name": "Calle Jorge west of about 86 m: path, edges, walls and planting",
+   "name": "Calle Jorge from about 28 to 86 m: path, edges, walls and planting",
    "at": [
     -103.0,
     173.5
@@ -617,7 +625,7 @@
    "photos": [
     "IMG_2234.jpg"
    ],
-   "why": "No photo covers Calle Jorge west of about 86 m along its centreline (all are between 101 and 130 m; IMG_2234 only looks about 15 m beyond), so the photographed dressing is not repeated there; the lane keeps the generic ribbon (photo request jorge-west-walk)."
+   "why": "No photo looks along Calle Jorge between the white gateway at about 28 m (far end of IMG_2696-2698) and about 86 m (IMG_2234 looks that far from the east), so nothing photographed is repeated there; the lane keeps the generic ribbon, with two benches placed from the aerial (photo request jorge-west-walk). The gateway itself is too small in the photos to build."
   }
  ]
 }

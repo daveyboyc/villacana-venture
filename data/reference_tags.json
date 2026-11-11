@@ -4657,7 +4657,7 @@
    "planting",
    "materials"
   ],
-  "note": "Nearly the same shot as IMG_2593."
+  "note": "Nearly the same shot as IMG_2593. Read 2026-11-11: the lamp post and the dragon tree at the end stand together on the kerbed lawn corner where this lane meets Calle Jorge."
  },
  "IMG_2595.jpg": {
   "title": "Tiled path along lawns towards white houses with chimneys, looking ENE",
@@ -6135,7 +6135,12 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -125.4,
+   186.5
+  ],
+  "subject": "the flagged west entrance of Calle Jorge from the Dalí car park"
  },
  "IMG_2697.jpg": {
   "title": "Crazy-paving path from the Dali parking, wider view",
@@ -6148,7 +6153,13 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -125.4,
+   186.5
+  ],
+  "subject": "the flagged west entrance of Calle Jorge from the Dalí car park: white kerbs, lamp post, lawns, round trees and the house with the bougainvillea",
+  "note": "Read 2026-11-11. Sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays; a black lamp post with a camera at the end of the left kerb; lawn both sides beyond, two round clipped trees on the left, a shrub border and a house with purple bougainvillea on the right; a white gateway at the far end."
  },
  "IMG_2698.jpg": {
   "title": "Crazy-paving path and lantern beyond parked cars",
@@ -6161,7 +6172,12 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -125.4,
+   186.5
+  ],
+  "subject": "the flagged west entrance of Calle Jorge from the Dalí car park"
  },
  "IMG_2699.jpg": {
   "title": "Dali car park aisle with marked bays, looking north",
@@ -6618,7 +6634,13 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -26.5,
+   115.3
+  ],
+  "subject": "Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side",
+  "note": "Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left."
  },
  "IMG_2774.jpg": {
   "title": "Octagonal-paved lane beside the lantana planter",

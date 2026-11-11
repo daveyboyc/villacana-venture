@@ -487,7 +487,7 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 3,
+     "matches": 4,
      "differs": 0,
      "not-comparable": 5
     },
@@ -501,7 +501,7 @@
     "generated": 35
    },
    "placement": {
-    "features": 0,
+    "features": 1,
     "verified": 0,
     "disputed": 0
    },
@@ -517,7 +517,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 0,
+    "estimated": 1,
     "inferred": 0,
     "registry": 0,
     "gaps": 0
@@ -527,7 +527,8 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "Placement: no model features registered here yet."
+    "How sure: 0 photographed, 1 estimated, 0 inferred.",
+    "Placement: 0 of 1 features verified."
    ],
    "light": {
     "colour": "amber",
@@ -913,7 +914,7 @@
     "tagged": 53,
     "placed": 53,
     "checks": {
-     "matches": 3,
+     "matches": 4,
      "differs": 7,
      "not-comparable": 1
     },
@@ -927,7 +928,7 @@
     "generated": 130
    },
    "placement": {
-    "features": 17,
+    "features": 18,
     "verified": 0,
     "disputed": 2
    },
@@ -972,7 +973,7 @@
    },
    "confidence": {
     "photographed": 13,
-    "estimated": 4,
+    "estimated": 5,
     "inferred": 0,
     "registry": 0,
     "gaps": 1
@@ -982,8 +983,8 @@
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 53, 53 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
-    "How sure: 13 photographed, 4 estimated, 0 inferred, 1 known gap.",
-    "Placement: 0 of 17 features verified, 7 open discrepancies."
+    "How sure: 13 photographed, 5 estimated, 0 inferred, 1 known gap.",
+    "Placement: 0 of 18 features verified, 7 open discrepancies."
    ],
    "light": {
     "colour": "amber",
@@ -1357,7 +1358,7 @@
     "tagged": 149,
     "placed": 149,
     "checks": {
-     "matches": 21,
+     "matches": 23,
      "differs": 3,
      "not-comparable": 11
     },
@@ -1371,7 +1372,7 @@
     "generated": 599
    },
    "placement": {
-    "features": 19,
+    "features": 20,
     "verified": 0,
     "disputed": 1
    },
@@ -1387,7 +1388,7 @@
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 12,
+    "inProgress": 13,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1396,7 +1397,7 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 14,
+    "estimated": 15,
     "inferred": 4,
     "registry": 0,
     "gaps": 2
@@ -1406,8 +1407,8 @@
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 14 estimated, 4 inferred, 2 known gaps.",
-    "Placement: 0 of 19 features verified, 2 open discrepancies."
+    "How sure: 1 photographed, 15 estimated, 4 inferred, 2 known gaps.",
+    "Placement: 0 of 20 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -1455,8 +1456,8 @@
        -103.0,
        173.5
       ],
-      "ask": "Walk Calle Jorge west from the bench (about 30 m from the east end) to its far end, one photo along the lane every 15 m, and one of each side garden wall.",
-      "why": "Only the east 35 m of Calle Jorge is photographed; the rest keeps the generic ribbon (gap:jorge-west)",
+      "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
+      "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -1744,7 +1745,7 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 38,
+     "matches": 40,
      "differs": 13,
      "not-comparable": 51
     },
@@ -1770,7 +1771,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 408,
+    "features": 410,
     "verified": 0,
     "disputed": 12
    },
@@ -1858,7 +1859,7 @@
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 38,
+    "inProgress": 39,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1867,7 +1868,7 @@
    },
    "confidence": {
     "photographed": 57,
-    "estimated": 107,
+    "estimated": 109,
     "inferred": 11,
     "registry": 233,
     "gaps": 16
@@ -1877,8 +1878,8 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 107 estimated, 11 inferred, 16 known gaps.",
-    "Placement: 0 of 408 features verified, 20 open discrepancies."
+    "How sure: 57 photographed, 109 estimated, 11 inferred, 16 known gaps.",
+    "Placement: 0 of 410 features verified, 20 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -2038,8 +2039,8 @@
        -103.0,
        173.5
       ],
-      "ask": "Walk Calle Jorge west from the bench (about 30 m from the east end) to its far end, one photo along the lane every 15 m, and one of each side garden wall.",
-      "why": "Only the east 35 m of Calle Jorge is photographed; the rest keeps the generic ribbon (gap:jorge-west)",
+      "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
+      "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
       "priority": 2,
       "state": "open",
       "photos": []

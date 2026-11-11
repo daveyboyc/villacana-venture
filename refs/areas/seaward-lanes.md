@@ -25,6 +25,7 @@ The lanes between the middle pool and the beach.
 - 10 November 2026: the candelabra tree behind the Calle Jorge wall (IMG_2183, IMG_2233) is a Euphorbia with four pale trunks and a broad domed crown of curved, winged stems, about twice the height of the garden wall behind it, over a lantana bed. Modelled in src/candelabra-cactus.ts, 5 m behind the lane; exact position in the garden is not measured.
 - 11 November 2026 (jorge-lane-surroundings): beside Calle Jorge the photos show more than the path. South side: lawn to the house fronts, a two-tile cross-path about 1.9 m east of the bench, a second path behind the bench along the house front, a white-kerbed bed with three round shrubs and a strelitzia (IMG_2182, IMG_2229, IMG_2231). North side: the garden with the candelabra tree is an open lawn with a white-painted kerb, not walled off from the lane (IMG_2183, IMG_2233, IMG_2234); an octagon-tiled lane joins at its west corner beside the one lamp post (IMG_2234, IMG_2235, the mapped Teodoro Rojo line); the planters in front of the patios are about 0.7 m high with two brick thresholds and number niches (IMG_2182, IMG_2230). The generic porches are left off the garden walls and the house-23 front, which the photos show plain or planted. Open: door 23 and its arched recess are not modelled; the octagon-tiled lane still has the generic square-tile ribbon; the niche numbers are not legible; the low wall and lantana behind the olive (IMG_2597) are not built.
 - 11 November 2026 (jorge-more-benches): Dave says Calle Jorge has more than one bench. Only one is photographed (112 m by its pins). The aerial shows bench-sized white marks on the grass beside the path at about 64.3 and 79.2 m (north side) and 122.3 m (south side); the bench asset is reused there, graded inferred (docs/reviews/jorge-benches-aerial/). A similar mark at 106.5 m is built as the white-kerbed shrub bed of IMG_2229/IMG_2230. Open: the aerial shows nothing at 112 m, so the photographed bench may really be the 106.5 m mark with the pins about 5 m too far east; photo request jorge-benches asks for a photo of each bench.
+- 11 November 2026 (jorge-west-entrance): the west end of Calle Jorge is photographed. IMG_2280 and IMG_2696-2698 stand in the Pintor Dalí car park on the mapped Jorge line and look along it: sandstone flags about 2 m wide between white-painted kerbs the length of the parking bays, a lamp post with a camera, then lawns with two round clipped trees on the north side and a shrub border and bougainvillea house on the south, to a white gateway at about 28 m. So this end is flagged, not terracotta. IMG_2773 and IMG_2597 show a waist-high lantana planter wall along the east side of Calle Guillermo behind the CALLE DE JORGE plinth; IMG_2594 shows the dragon tree beside the lamp post on the kerb corner. Open: the gateway at about 28 m, and what the path is made of between there and 86 m; the CALLE JORGE 27 35 passage of IMG_2185-2187 (pins at about 68 m on the line, looking towards the sea) is still not placed.
 
 ## Read first
 
@@ -54,6 +55,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P2 | `jorge-lane-review` | Calle Jorge: keep only what the photos show, and make it look like them | in-progress · Claude · placement: not-verified | [IMG_2229](../../public/photos-ref/IMG_2229.jpg), [IMG_2230](../../public/photos-ref/IMG_2230.jpg), [IMG_2231](../../public/photos-ref/IMG_2231.jpg), [IMG_2233](../../public/photos-ref/IMG_2233.jpg), [IMG_2234](../../public/photos-ref/IMG_2234.jpg), [IMG_2597](../../public/photos-ref/IMG_2597.jpg) |
 | P2 | `jorge-lane-surroundings` | Calle Jorge: cross-paths, lawns to the house fronts, the open kerbed garden, planters with thresholds, beds and wall planting (after jorge-lane-review) | in-progress · Claude · placement: not-verified | [IMG_2182](../../public/photos-ref/IMG_2182.jpg), [IMG_2229](../../public/photos-ref/IMG_2229.jpg), [IMG_2230](../../public/photos-ref/IMG_2230.jpg), [IMG_2233](../../public/photos-ref/IMG_2233.jpg), [IMG_2234](../../public/photos-ref/IMG_2234.jpg), [IMG_2597](../../public/photos-ref/IMG_2597.jpg) |
 | P2 | `jorge-more-benches` | Calle Jorge: the other benches, placed from the aerial (after jorge-lane-surroundings) | in-progress · Claude · placement: not-verified |  |
+| P2 | `jorge-west-entrance` | Calle Jorge: the flagged west entrance from the Dalí car park, and the lantana planter at the east end (after jorge-lane-surroundings) | in-progress · Claude · placement: not-verified | [IMG_2697](../../public/photos-ref/IMG_2697.jpg), [IMG_2773](../../public/photos-ref/IMG_2773.jpg) |
 | P2 | `path-network-inventory-seaward-lanes` [#135](https://github.com/daveyboyc/villacana-venture/issues/135) | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `patricia-passage-reference-pack` | Patricia covered passage: trace the arch chain from the CALLE DE PATRICIA arch to the Silvia 22-44 mouth | open · placement: not-verified | [IMG_2561](../../public/photos-ref/IMG_2561.jpg), [IMG_2562](../../public/photos-ref/IMG_2562.jpg), [IMG_2563](../../public/photos-ref/IMG_2563.jpg), [IMG_2564](../../public/photos-ref/IMG_2564.jpg), [IMG_2565](../../public/photos-ref/IMG_2565.jpg), [IMG_2566](../../public/photos-ref/IMG_2566.jpg), [IMG_2567](../../public/photos-ref/IMG_2567.jpg), [IMG_2568](../../public/photos-ref/IMG_2568.jpg), [IMG_2569](../../public/photos-ref/IMG_2569.jpg), [IMG_2570](../../public/photos-ref/IMG_2570.jpg), [IMG_2574](../../public/photos-ref/IMG_2574.jpg), [IMG_2656](../../public/photos-ref/IMG_2656.jpg) |
 | P2 | `silvia-ramp-passages` | Silvia 2-20 and 22-44 covered passages: ramp, three steps, double doors (photo-relative study) | in-progress · Claude (builder agent, session 01XeootebX786RyDVHciy2sJ) · placement: not-verified | [IMG_2656](../../public/photos-ref/IMG_2656.jpg), [IMG_2657](../../public/photos-ref/IMG_2657.jpg), [IMG_2669](../../public/photos-ref/IMG_2669.jpg), [IMG_2670](../../public/photos-ref/IMG_2670.jpg), [IMG_2574](../../public/photos-ref/IMG_2574.jpg) |
@@ -86,7 +88,13 @@ graph LR
   F3 --> PIMG_2233_jpg(["IMG_2233"])
   F3 --> PIMG_2234_jpg(["IMG_2234"])
   F3 --> PIMG_2235_jpg(["IMG_2235"])
+  F3 --> PIMG_2280_jpg(["IMG_2280"])
+  F3 --> PIMG_2594_jpg(["IMG_2594"])
   F3 --> PIMG_2596_jpg(["IMG_2596"])
+  F3 --> PIMG_2696_jpg(["IMG_2696"])
+  F3 --> PIMG_2697_jpg(["IMG_2697"])
+  F3 --> PIMG_2698_jpg(["IMG_2698"])
+  F3 --> PIMG_2773_jpg(["IMG_2773"])
   A --> F4["Calle Jorge benches placed from the aerial (not photographed) · unreviewed"]
   F4 --> PIMG_2231_jpg(["IMG_2231"])
   F4 --> PIMG_2232_jpg(["IMG_2232"])
@@ -98,65 +106,74 @@ graph LR
   F5 --> PIMG_2234_jpg(["IMG_2234"])
   F5 --> PIMG_2596_jpg(["IMG_2596"])
   F5 --> PIMG_2597_jpg(["IMG_2597"])
-  A --> F6["Calle Jorge cross-paths to the house fronts and kerbed beds · unreviewed"]
-  F6 --> PIMG_2182_jpg(["IMG_2182"])
-  F6 --> PIMG_2229_jpg(["IMG_2229"])
-  F6 --> PIMG_2231_jpg(["IMG_2231"])
-  A --> F7["Calle de Jorge sign and lamp · unreviewed"]
-  F7 --> PIMG_2597_jpg(["IMG_2597"])
-  A --> F8["Calle Jorge lawns, garden kerb, planter walls with thresholds, hedges and wall planting (photographed east stretch) · unreviewed"]
-  F8 --> PIMG_2182_jpg(["IMG_2182"])
-  F8 --> PIMG_2183_jpg(["IMG_2183"])
-  F8 --> PIMG_2184_jpg(["IMG_2184"])
-  F8 --> PIMG_2229_jpg(["IMG_2229"])
-  F8 --> PIMG_2230_jpg(["IMG_2230"])
-  F8 --> PIMG_2231_jpg(["IMG_2231"])
-  F8 --> PIMG_2232_jpg(["IMG_2232"])
-  F8 --> PIMG_2233_jpg(["IMG_2233"])
-  F8 --> PIMG_2234_jpg(["IMG_2234"])
-  F8 --> PIMG_2235_jpg(["IMG_2235"])
-  F8 --> PIMG_2596_jpg(["IMG_2596"])
+  A --> F6["Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth · unreviewed"]
+  F6 --> PIMG_2597_jpg(["IMG_2597"])
+  F6 --> PIMG_2773_jpg(["IMG_2773"])
+  A --> F7["Calle Jorge cross-paths to the house fronts and kerbed beds · unreviewed"]
+  F7 --> PIMG_2182_jpg(["IMG_2182"])
+  F7 --> PIMG_2229_jpg(["IMG_2229"])
+  F7 --> PIMG_2231_jpg(["IMG_2231"])
+  A --> F8["Calle de Jorge sign and lamp · unreviewed"]
   F8 --> PIMG_2597_jpg(["IMG_2597"])
-  A --> F9["Silvia · plain tiled outdoor approach to estimated arch threshold · unreviewed"]
-  F9 --> PIMG_2189_jpg(["IMG_2189"])
-  F9 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F10["Entrance lane · four-column terracotta paving · unreviewed"]
+  A --> F9["Calle Jorge lawns, garden kerb, planter walls with thresholds, hedges and wall planting (photographed east stretch) · unreviewed"]
+  F9 --> PIMG_2182_jpg(["IMG_2182"])
+  F9 --> PIMG_2183_jpg(["IMG_2183"])
+  F9 --> PIMG_2184_jpg(["IMG_2184"])
+  F9 --> PIMG_2229_jpg(["IMG_2229"])
+  F9 --> PIMG_2230_jpg(["IMG_2230"])
+  F9 --> PIMG_2231_jpg(["IMG_2231"])
+  F9 --> PIMG_2232_jpg(["IMG_2232"])
+  F9 --> PIMG_2233_jpg(["IMG_2233"])
+  F9 --> PIMG_2234_jpg(["IMG_2234"])
+  F9 --> PIMG_2235_jpg(["IMG_2235"])
+  F9 --> PIMG_2280_jpg(["IMG_2280"])
+  F9 --> PIMG_2594_jpg(["IMG_2594"])
+  F9 --> PIMG_2596_jpg(["IMG_2596"])
+  F9 --> PIMG_2597_jpg(["IMG_2597"])
+  F9 --> PIMG_2696_jpg(["IMG_2696"])
+  F9 --> PIMG_2697_jpg(["IMG_2697"])
+  F9 --> PIMG_2698_jpg(["IMG_2698"])
+  F9 --> PIMG_2773_jpg(["IMG_2773"])
+  A --> F10["Silvia · plain tiled outdoor approach to estimated arch threshold · unreviewed"]
   F10 --> PIMG_2189_jpg(["IMG_2189"])
   F10 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F11["Entrance lane · bounded farther shuttered grille · unreviewed"]
+  A --> F11["Entrance lane · four-column terracotta paving · unreviewed"]
   F11 --> PIMG_2189_jpg(["IMG_2189"])
   F11 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F12["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
+  A --> F12["Entrance lane · bounded farther shuttered grille · unreviewed"]
   F12 --> PIMG_2189_jpg(["IMG_2189"])
   F12 --> PIMG_2334_jpg(["IMG_2334"])
-  A --> F13["seaward patterned floor · unreviewed"]
-  F13 --> PIMG_2185_jpg(["IMG_2185"])
-  A --> F14["silvia patterned floor · unreviewed"]
-  F14 --> PIMG_2190_jpg(["IMG_2190"])
-  A --> F15["teodoro octagonal paving · unreviewed"]
-  F15 --> PIMG_2235_jpg(["IMG_2235"])
-  F15 --> PIMG_2237_jpg(["IMG_2237"])
-  F15 --> PIMG_2239_jpg(["IMG_2239"])
-  A --> F16["Calle Silvia 2-20 and 22-44 ramp-and-steps covered passages: photo-relative study · unreviewed"]
-  F16 --> PIMG_2574_jpg(["IMG_2574"])
-  F16 --> PIMG_2575_jpg(["IMG_2575"])
-  F16 --> PIMG_2656_jpg(["IMG_2656"])
-  F16 --> PIMG_2657_jpg(["IMG_2657"])
-  F16 --> PIMG_2658_jpg(["IMG_2658"])
-  F16 --> PIMG_2669_jpg(["IMG_2669"])
-  F16 --> PIMG_2670_jpg(["IMG_2670"])
-  A --> F17["Calle Silvia 1–15 covered entrance — photo-relative study · disputed"]
-  F17 --> PIMG_2190_jpg(["IMG_2190"])
-  F17 --> PIMG_2191_jpg(["IMG_2191"])
-  A --> F18["Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí · unreviewed"]
-  F18 --> PIMG_2283_jpg(["IMG_2283"])
-  F18 --> PIMG_2294_jpg(["IMG_2294"])
-  F18 --> PIMG_2295_jpg(["IMG_2295"])
-  F18 --> PIMG_2639_jpg(["IMG_2639"])
-  F18 --> PIMG_2640_jpg(["IMG_2640"])
-  F18 --> PIMG_2641_jpg(["IMG_2641"])
-  F18 --> PIMG_2642_jpg(["IMG_2642"])
-  F18 --> PIMG_2645_jpg(["IMG_2645"])
+  A --> F13["Entrance lane · projecting near window grille and brown shutters · unreviewed"]
+  F13 --> PIMG_2189_jpg(["IMG_2189"])
+  F13 --> PIMG_2334_jpg(["IMG_2334"])
+  A --> F14["seaward patterned floor · unreviewed"]
+  F14 --> PIMG_2185_jpg(["IMG_2185"])
+  A --> F15["silvia patterned floor · unreviewed"]
+  F15 --> PIMG_2190_jpg(["IMG_2190"])
+  A --> F16["teodoro octagonal paving · unreviewed"]
+  F16 --> PIMG_2235_jpg(["IMG_2235"])
+  F16 --> PIMG_2237_jpg(["IMG_2237"])
+  F16 --> PIMG_2239_jpg(["IMG_2239"])
+  A --> F17["Calle Silvia 2-20 and 22-44 ramp-and-steps covered passages: photo-relative study · unreviewed"]
+  F17 --> PIMG_2574_jpg(["IMG_2574"])
+  F17 --> PIMG_2575_jpg(["IMG_2575"])
+  F17 --> PIMG_2656_jpg(["IMG_2656"])
+  F17 --> PIMG_2657_jpg(["IMG_2657"])
+  F17 --> PIMG_2658_jpg(["IMG_2658"])
+  F17 --> PIMG_2669_jpg(["IMG_2669"])
+  F17 --> PIMG_2670_jpg(["IMG_2670"])
+  A --> F18["Calle Silvia 1–15 covered entrance — photo-relative study · disputed"]
+  F18 --> PIMG_2190_jpg(["IMG_2190"])
+  F18 --> PIMG_2191_jpg(["IMG_2191"])
+  A --> F19["Calle de Jorge 39–67 passage, from the south-pool lawn into Pintor Dalí · unreviewed"]
+  F19 --> PIMG_2283_jpg(["IMG_2283"])
+  F19 --> PIMG_2294_jpg(["IMG_2294"])
+  F19 --> PIMG_2295_jpg(["IMG_2295"])
+  F19 --> PIMG_2639_jpg(["IMG_2639"])
+  F19 --> PIMG_2640_jpg(["IMG_2640"])
+  F19 --> PIMG_2641_jpg(["IMG_2641"])
+  F19 --> PIMG_2642_jpg(["IMG_2642"])
+  F19 --> PIMG_2645_jpg(["IMG_2645"])
 ```
 
 ## Placement evidence
@@ -171,6 +188,7 @@ graph LR
 | `jorge_lane.json:jorge-lane-bench` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-benches-aerial` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-fittings` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `jorge_lane.json:jorge-lane-guillermo-planter` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-paths` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-sign` | unreviewed | matches | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -215,6 +233,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `jorge-lane-surroundings` | [IMG_2233](../../public/photos-ref/IMG_2233.jpg) | **matches** | [after](../../docs/reviews/jorge-lane-surroundings/IMG_2233-after.png) · [before](../../docs/reviews/jorge-lane-surroundings/IMG_2233-before.png) | The garden is now an open lawn from the kerb to the candelabra tree, with the lantana bed at its foot and a climber on the wall behind, as photographed; before, the camera looked over a hedge wall the photo does not show, with a generic tiled porch in the foreground. The real back wall is a lower scalloped garden wall with the house behind; here it is the registry house wall. The before render used the previous starting pose, 2.6 m further east. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
 | `jorge-lane-surroundings` | [IMG_2234](../../public/photos-ref/IMG_2234.jpg) | **matches** | [after](../../docs/reviews/jorge-lane-surroundings/IMG_2234-after.png) · [before](../../docs/reviews/jorge-lane-surroundings/IMG_2234-before.png) | The white-kerbed lawn on the right with the lamp post on its corner, the planter and hedge beyond the side lane, the slot drains and grate across the path, and the tall hedge on the left agree with the photo; before, a hedge wall ran the whole right side with two lamp posts beyond that the photo does not show. The side lane keeps square tiles where the photo shows octagons, the green cover is just out of frame, and the left house with its grilles and the plaque wall is generic. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
 | `jorge-lane-surroundings` | [IMG_2597](../../public/photos-ref/IMG_2597.jpg) | **matches** | [after](../../docs/reviews/jorge-lane-surroundings/IMG_2597-after.png) · [before](../../docs/reviews/jorge-lane-surroundings/IMG_2597-before.png) | The plinth and lamp now stand on a lawn with the olive to their left, as in the photo; before, bare ground with a short strip of grass. The low white wall with lantana behind the lawn is not built, and the olive is the generic tree model, not a gnarled trunk. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
+| `jorge-west-entrance` | [IMG_2697](../../public/photos-ref/IMG_2697.jpg) | **matches** | [after](../../docs/reviews/jorge-west-entrance/IMG_2697-after.png) · [before](../../docs/reviews/jorge-west-entrance/IMG_2697-before.png) | The flagged path between two white kerbs, the lamp post at the left kerb's end, lawn both sides, a round clipped tree on the left and the shrub border and climber along the right-hand house agree with the photo; before, a narrow terracotta ribbon over bare ground. Differences: a stub of the generic terracotta ribbon still shows on the asphalt in front of the flags, there are no parked cars, the bougainvillea is a green climber with few bracts where the photo has a mass of purple at first-floor height, the white gateway at the far end is not built, and a generic palm stands in the lane beyond. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
+| `jorge-west-entrance` | [IMG_2773](../../public/photos-ref/IMG_2773.jpg) | **matches** | [after](../../docs/reviews/jorge-west-entrance/IMG_2773-after.png) · [before](../../docs/reviews/jorge-west-entrance/IMG_2773-before.png) | A waist-high white planter wall with lantana now runs along the right of the lane with the plinth lawn on the left, as in the photo; before, open ground to the pool. The lane keeps the generic square tiles where the photo shows octagons and squares with a round cover, and the real wall runs on further than the 19.5 m built. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. |
 
 **Built without complete newer photo-check records:** `seaward-lanes-paving`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
@@ -225,8 +245,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2190.jpg](../../public/photos-ref/IMG_2190.jpg) | ground | layout, materials | Covered arched passage with potted plants, patterned tiles **Note:** 24 October full-source paving reinspection: square red terracotta tiles in an offset square-and-dot/hopscotch layout; smaller blue/cream inserts step diagonally. Broad large-tile edge alignment follows walls/pebble rectangle; a uniform octagon field or global45degree rotation is unsupported. Worn/mottled tiles, pale grout and narrow wall-side pebble strips visible. Earlier clipped-corner shorthand retained as interpretation history, superseded for this floor. _Used by: silvia_tunnel.json:silvia-tunnel-study, seaward_paving.json:silvia-patterned-floor, entrance_planters.json:silvia-exit-right-planter, entrance_planters.json:silvia-exit-left-planting-fragment, entrance_planters.json:silvia-exit-path-fragment._ |
 | [IMG_2231.jpg](../../public/photos-ref/IMG_2231.jpg) | ground | materials | White tiled bench beside the lane **Looks at:** white bench, house number 20 and the Teodoro plaque. **Note:** Read 2026-11-10. The bench sits on the lawn edge of the square-tile path. Number 20 and CALLE DE TEODORO are on the house wall behind it. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-benches-aerial, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-paths, jorge_lane.json:jorge-lane-fittings._ |
 | [IMG_2189.jpg](../../public/photos-ref/IMG_2189.jpg) | ground | layout, materials, planting, facades | Calle Silvia north: tiled lane looking to the middle pool south gateway **Looks at:** The middle pool south gateway at the end of Calle Silvia north, about 28 m ahead. **Note:** Dave (2026-10-15): Looks down to the middle pool down called Silvia; 21 October source review: its distant gateway/sign pair resembles IMG_2340/2244. Correspondence with the curved double gate in IMG_2334 is unresolved; earlier street name, pin and look-at are retained as history, not proof that these are opposite views of the same gate. Window-grille style reference: projecting/bowed black metal cages over shuttered ground-floor openings on both sides, directly above planted borders; separate from balcony rails. _Used by: middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
+| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. Read 2026-11-11: the plinth stands on a lawn with an old olive tree to its left; a low white wall with orange lantana closes the lawn behind. _Used by: jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-sign, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-fittings._ |
 | [IMG_2488.jpg](../../public/photos-ref/IMG_2488.jpg) | ground | layout, levels, materials, planting | Calle Guillermo from its seaward end, looking up the lane **Looks at:** Calle Guillermo from its seaward end. **Note:** Looks up Guillermo (heading 334, the street runs 328). Relevant to guillermo-descent-recheck: no steps in the lower lane; gradient not judged from this photo. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
-| [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. Read 2026-11-11: the plinth stands on a lawn with an old olive tree to its left; a low white wall with orange lantana closes the lawn behind. _Used by: jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-sign, jorge_lane.json:jorge-lane-fittings._ |
 | [IMG_2596.jpg](../../public/photos-ref/IMG_2596.jpg) | ground | materials, layout, signage | White tiled bench, cast manhole covers and terracotta paving **Looks at:** white tiled bench, SANEA cover and square grate. **Note:** Read 2026-11-10. The bench is the lawn-side station. A round red SANEA cover and a square grate sit in the terracotta squares beside it. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-fittings._ |
 | [IMG_2182.jpg](../../public/photos-ref/IMG_2182.jpg) | ground | layout, materials | Tiled lane between lawns, white tiled bench **Looks at:** Calle Jorge looking west: the cross-path beside the bench, planters with brick thresholds and number niches, the kerbed garden lawn beyond. **Note:** Read 2026-11-10 and 2026-11-11. Four worn terracotta squares across, a pale concrete margin. Lawn side: a two-tile cross-path leaves the lane about 1.9 m before the bench. Hedge side: white planters with clipped hedges, two brick thresholds with a short planter between, a recess with a blue number tile by each; further on a white kerb, lawn, the dragon tree and one lamp post. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-paths._ |
 | [IMG_2229.jpg](../../public/photos-ref/IMG_2229.jpg) | ground | layout, materials | Tiled lane between lawns with a white tiled bench **Looks at:** Calle Jorge looking west: tiled path, the white azulejo bench on the lawn side, planter wall and hedge on the other. **Note:** Read 2026-11-11. The cross-path meets the lane in the foreground, about 1.9 m east of the bench. Behind the bench a second path runs along the house front past a white-kerbed bed with three round clipped shrubs and a strelitzia; a climber is trained on the wall behind, and a bougainvillea by door 23. Far end: the CALLE DE TEODORO wall with a tall clipped hedge and yellow lantana in front. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-paths._ |
@@ -236,6 +256,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2183.jpg](../../public/photos-ref/IMG_2183.jpg) | ground | planting | Lawn with a tall candelabra cactus and clipped shrubs **Looks at:** the candelabra tree on the open garden lawn north of Calle Jorge. **Note:** Read 2026-11-10. The cactus stands in a private lawn behind a white wall, with a flowering shrub at its base. The same crown shows over the hedge in IMG_2230. Station estimated from the pin. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-fittings._ |
 | [IMG_2232.jpg](../../public/photos-ref/IMG_2232.jpg) | ground | materials | Bench close up: decorative tile in the white bench back _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-benches-aerial, jorge_lane.json:jorge-lane-verge._ |
 | [IMG_2233.jpg](../../public/photos-ref/IMG_2233.jpg) | ground | planting | Lawn with candelabra cactus and shrubs **Looks at:** the candelabra tree on the open garden lawn north of Calle Jorge. **Note:** Read 2026-11-10. Same cactus as IMG_2183, closer. It is in the garden, not in the street verge. Read again 2026-11-11: the lawn is open to the lane (white kerb at the bottom-left corner), with no wall or hedge between; a bougainvillea is trained along the garden wall behind the tree, and the tall wall on the left is across the octagon-tiled lane. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-fittings._ |
+| [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | ground | layout, facades, planting, materials | Lane between white houses with lamp post, yucca palm and Norfolk pine, looking NNW **Note:** Nearly the same shot as IMG_2593. Read 2026-11-11: the lamp post and the dragon tree at the end stand together on the kerbed lawn corner where this lane meets Calle Jorge. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge._ |
 | [IMG_2184.jpg](../../public/photos-ref/IMG_2184.jpg) | ground | layout, materials | Narrow tiled lane between white walls and planting beds _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge._ |
 | [IMG_2656.jpg](../../public/photos-ref/IMG_2656.jpg) | ground | layout, levels, signage, materials, facades | Silvia 22-44 covered passage: red studded ramp and three tiled steps **Looks at:** Arch and garden at the far end of the Silvia 22-44 passage, past the ramp and three steps. **Note:** Heading 238 deg: the passage enters the building from the lane's west side. Pin +-2.7 m. Plaque reads 22 44 CALLE DE SILVIA, so this is a separate west-side passage from the 1-15 one in IMG_2190/2191. Same WSW line as the Patricia passage cameras IMG_2565-2570 (probably its lane-end mouth; the arch chain between is untraced). Subject coordinate about 8 m along the heading, approximate. _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
 | [IMG_2669.jpg](../../public/photos-ref/IMG_2669.jpg) | ground | layout, levels, signage, materials, facades | Silvia 2-20 passage: red studded ramp, three steps and garden gate arch **Looks at:** Garden-gate arch at the far end of the Silvia 2-20 passage, past the ramp and three steps. **Note:** Read 4 Nov 2026 against IMG_2190/2191/2668: this west-side passage (plaque 2 20, brown panelled double doors, ramp, three steps, garden-gate arch) is NOT the 1-15 passage, which the same pin shows facing the opposite way (heading 55-56, louvred doors). The main map's west Silvia tunnel sits at this pin and heading but is built from the 1-15 photos (task silvia-west-passage-swap). Subject coordinate is about 9 m along the heading, approximate. _Used by: silvia_ramp_passages.json:silvia-ramp-passage-study._ |
@@ -277,7 +298,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2588.jpg](../../public/photos-ref/IMG_2588.jpg) | ground | layout, materials, planting, facades | Tiled courtyard with raised planters and an arched covered entrance |
 | [IMG_2592.jpg](../../public/photos-ref/IMG_2592.jpg) | ground | layout, levels, materials, facades | View out of an arch to a small white court with a ribbed ramp and step |
 | [IMG_2593.jpg](../../public/photos-ref/IMG_2593.jpg) | ground | layout, materials, planting, view | Narrow tiled lane between white walls, looking NNW **Note:** Lane read as the Patricia line from the aerial; no street sign is visible. |
-| [IMG_2594.jpg](../../public/photos-ref/IMG_2594.jpg) | ground | layout, facades, planting, materials | Lane between white houses with lamp post, yucca palm and Norfolk pine, looking NNW **Note:** Nearly the same shot as IMG_2593. |
 | [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | ground | layout, levels, materials, view | Curved white-walled tiled descent at the foot of the lane to the beach fence **Note:** Foot of Calle Guillermo area, close to IMG_2600/2601. |
 | [IMG_2601.jpg](../../public/photos-ref/IMG_2601.jpg) | ground | layout, materials, view, planting | Tiled landing at the foot of the lane with hedge and green fence to the beach **Note:** Foot of Calle Guillermo. Tile joints change to a fan pattern at the far left. |
 | [IMG_2646.jpg](../../public/photos-ref/IMG_2646.jpg) | ground | layout, materials, planting, facades | Calle Silvia lane looking NNW to an arched iron gate **Note:** Phone altitude 9.1 m is just over the 9 m ground limit but the shot is plainly standing in the lane (neighbours read 7-8 m); keep as ground. Pin is at the south end of the lane by the south pool lawn. |
@@ -350,23 +370,23 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2782.jpg](../../public/photos-ref/IMG_2782.jpg) | ground | planting | Espaliered bougainvillea over a planter, close |
 | [IMG_2334.jpg](../../public/photos-ref/IMG_2334.jpg) | ground | layout, levels, materials, planting, facades | Middle pool south: iron gate in a pergola frame onto a lane **Looks at:** south gate, double iron leaves and the planter to its right. **Note:** User clarification, 21 October 2026: planted frontage strips run along both sides of the tiled lane BEYOND the gate, distinct from the courtyard bench planter and hedge. Photo-left has a low pale kerb with mixed planting, partly occluded by leaf/ladder/cart; photo-right has raised white planter sections under barred openings, interrupted at a recessed doorway. Source-pixel mapping: docs/reviews/middle-pool-south-forecourt/lane-planters/. Exact endpoints and global placement remain unresolved. User also identifies window bars: a projecting black grille with upright bars and horizontal ties is visible over the brown shutter above the right frontage planter, separate from the foreground gate leaf. _Used by: middle_pool_south_gate.json:middle-pool-south-gate, middle_pool_south_gate.json:middle-pool-south-forecourt, middle_pool_south_gate.json:middle-pool-south-east-hedge, entrance_planters.json:silvia-pool-entry-hedge-kerb, middle_pool_lane_frontages.json:south-lane-four-column-paving, middle_pool_lane_frontages.json:silvia-outdoor-apron, middle_pool_lane_frontages.json:south-lane-left-border, middle_pool_lane_frontages.json:south-lane-right-near-bed, middle_pool_lane_frontages.json:south-lane-right-far-bed, middle_pool_lane_frontages.json:south-lane-right-near-grille, middle_pool_lane_frontages.json:south-lane-right-far-grille._ |
 | [IMG_2227.jpg](../../public/photos-ref/IMG_2227.jpg) | ground | view, facades, levels | From the beach looking west along the white seafront houses **Looks at:** east end of the sandstone wall and the corner house by Calle Guillermo. **Note:** Read 2026-10-21 at full size. The sandstone wall with mesh fence is low (under 1 m above the sand) all the way to its east end, where a white wall with a tiled panel takes over; the corner house there stands about 1 m above the beach, not 3 m. _Used by: paseo_wall.json:paseo-retaining-wall, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
+| [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance **Looks at:** The flagstone pedestrian entrance, with a black lantern and white curbs. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-west, dali_street.json:dali-house-lanterns._ |
+| [IMG_2696.jpg](../../public/photos-ref/IMG_2696.jpg) | ground | layout, materials, planting | Crazy-paving path from the Dali parking into a garden lane **Looks at:** the flagged west entrance of Calle Jorge from the Dalí car park. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-west._ |
+| [IMG_2697.jpg](../../public/photos-ref/IMG_2697.jpg) | ground | layout, materials, planting | Crazy-paving path from the Dali parking, wider view **Looks at:** the flagged west entrance of Calle Jorge from the Dalí car park: white kerbs, lamp post, lawns, round trees and the house with the bougainvillea. **Note:** Read 2026-11-11. Sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays; a black lamp post with a camera at the end of the left kerb; lawn both sides beyond, two round clipped trees on the left, a shrub border and a house with purple bougainvillea on the right; a white gateway at the far end. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-west._ |
+| [IMG_2698.jpg](../../public/photos-ref/IMG_2698.jpg) | ground | layout, materials, planting | Crazy-paving path and lantern beyond parked cars **Looks at:** the flagged west entrance of Calle Jorge from the Dalí car park. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-west._ |
+| [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2792.jpg](../../public/photos-ref/IMG_2792.jpg) | ground | facades, layout, levels, materials, signage | Passage mouth with a CALLE ALBERTO 22-40 sign **Looks at:** The CALLE ALBERTO 22 40 covered porch: arch, red studded ramp, tiled step, plaque and AGUA POTABLE hatch on the back wall. **Note:** Pin (+/-4.7 m) is just east of registry block 6265601UF1366N_part1, facing the only recess in its facade (3.1 m wide, 1 m deep); the porch is built there. The plaque names houses 22-40 of Calle Alberto, reached through this porch off Calle Eva east, so the map's Calle Alberto label in the north lanes covers at most part of the street. _Used by: alberto_passage.json:calle-alberto-22-40-porch, alberto_passage.json:calle-alberto-22-40-route._ |
 | [IMG_2504.jpg](../../public/photos-ref/IMG_2504.jpg) | ground | layout, materials, planting | Long tiled path to an arched iron gate **Looks at:** Eva tiled lane looking south-west to the middle pool east gateway: white rounded kerb and hedge on the left, lawn on the right. **Note:** Pin at the Teodoro Rojo/Eva edge; heading 241 looks SW along Eva to the middle pool east gateway (same gateway, notice boards and espaliered bougainvillea wall as IMG_2677 and IMG_2340). _Used by: eva_lane.json:eva-lane-east, eva_lane.json:eva-lane-east-edges._ |
 | [IMG_2642.jpg](../../public/photos-ref/IMG_2642.jpg) | ground | layout, materials, planting, view, facades | Open iron gate onto crazy-paving path and south pool lawn **Note:** Pin has +-22 m GPS. The visible pool lobe lies about 45 deg to the left of the heading whereas the south pool centre from the pin is about 17 deg, so the pin is probably roughly 10 m too far south-east; do not use it to place the gate without a camera solve. Glass pool fence is skipped by project decision. _Used by: south_pool_passage.json:south-pool-dali-passage._ |
 | [IMG_2608.jpg](../../public/photos-ref/IMG_2608.jpg) | ground | view, facades, layout, materials | From the Barraka terrace looking SW along the paseo to the white houses **Looks at:** Paseo and lawn railing towards the white houses. **Note:** Pin (+/-12.6 m) on the lawn; camera is really on the restaurant terrace. looksAt is 25 m along the phone heading from the terrace spot of IMG_2631 (21.1, 108.5), by eye; the +-12.6 m pin is not used. _Used by: barraka_frontage.json:barraka-lounge-garden._ |
 | [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | view, layout, planting | From the Barraka terrace over rattan lounge seating and the paseo **Looks at:** Roped rattan lounge set on the beach-side verge. **Note:** Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. looksAt is the seating centre of data/barraka_frontage.json (bearings of IMG_2604 and IMG_2631), by eye; the pin is not used. **Compass:** the subject is 52° from the phone heading; trust looksAt, not the heading. _Used by: barraka_frontage.json:barraka-lounge-garden._ |
-| [IMG_2280.jpg](../../public/photos-ref/IMG_2280.jpg) | ground | layout, materials | Pintor Dalí: flagstone pedestrian entrance **Looks at:** The flagstone pedestrian entrance, with a black lantern and white curbs. _Used by: dali_street.json:dali-house-lanterns._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
 | [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | signage, facades, planting | Comunidad Villacana gate sign at the end of Calle Guillermo **Looks at:** Comunidad Villacana sign on the Guillermo gate wall. **Note:** Subject offset (~2 m) from the pin is approximate. |
 | [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | view, planting, layout | Lawn and flowering lantana border looking east to the Barraka restaurant **Looks at:** Barraka beach restaurant. **Note:** Building identified as Barraka from the matching view in IMG_2604; looksAt reused from IMG_2482. |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
-| [IMG_2696.jpg](../../public/photos-ref/IMG_2696.jpg) | ground | layout, materials, planting | Crazy-paving path from the Dali parking into a garden lane |
-| [IMG_2697.jpg](../../public/photos-ref/IMG_2697.jpg) | ground | layout, materials, planting | Crazy-paving path from the Dali parking, wider view |
-| [IMG_2698.jpg](../../public/photos-ref/IMG_2698.jpg) | ground | layout, materials, planting | Crazy-paving path and lantern beyond parked cars |
 | [IMG_2702.jpg](../../public/photos-ref/IMG_2702.jpg) | ground | layout, materials, signage | Narrow lane between walls with a street plaque and slot drain **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
-| [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall |
 | [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter |
 | [IMG_2775.jpg](../../public/photos-ref/IMG_2775.jpg) | ground | layout, levels, materials | Lane down to the pool building with slot drains |
 | [IMG_2791.jpg](../../public/photos-ref/IMG_2791.jpg) | ground | layout, materials, facades | Tiled lane with grille windows and a raised planter |
