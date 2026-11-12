@@ -1287,6 +1287,17 @@
    "render": "docs/reviews/jorge-planter-palms/IMG_2764-after.png",
    "result": "matches",
    "notes": "A tall slender palm with a compact crown stands on the lawn left of centre with the pool behind it, as in the photo; the short thick generic palm that stood 5 m in front of this camera is gone. Differences: the real crown is denser, the second, farther palm is not built, and the red path, bollard lights and bin on the lawn are not modelled. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "jorge-guillermo-paving",
+   "checked": "2026-11-12",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-guillermo-paving",
+   "photo": "IMG_2773.jpg",
+   "before": "docs/reviews/jorge-guillermo-paving/IMG_2773-before.png",
+   "render": "docs/reviews/jorge-guillermo-paving/IMG_2773-after.png",
+   "result": "matches",
+   "notes": "The lane is now paved from the plinth lawn to the planter's face, in large squares near the camera and octagons with square insets beyond, with a round cover and grates, and the wall rises straight from the paving as in the photo; before, a narrow ribbon in tilted pieces with grass between it and the wall. Measured in the photo, not the render: at the foreground wall foot one square tile spans about 260 px and the wall about 655 px at the same depth, so the wall is 2.5 tiles high: 0.9 m if the tiles are 0.36 m, 1.25 m if they are 0.5 m. The tile size there is not known, so this supports about a metre but does not fix it. Differences: the model's foreground squares are smaller than the photo's, the paving undulates slightly near the camera, the left edge has no brick-on-edge border, and the lantana is thinner. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

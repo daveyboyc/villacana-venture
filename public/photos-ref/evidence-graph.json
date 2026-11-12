@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 411,
-  "photosCitedByModel": 172,
-  "modelFeaturesWithPhotoCitations": 157
+  "features": 412,
+  "photosCitedByModel": 174,
+  "modelFeaturesWithPhotoCitations": 158
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3039,7 +3039,9 @@
     "IMG_2764.jpg",
     "IMG_2765.jpg",
     "IMG_2773.jpg",
-    "IMG_2774.jpg"
+    "IMG_2774.jpg",
+    "IMG_2822.jpg",
+    "IMG_2823.jpg"
    ]
   },
   {
@@ -3078,7 +3080,9 @@
     "IMG_2764.jpg",
     "IMG_2765.jpg",
     "IMG_2773.jpg",
-    "IMG_2774.jpg"
+    "IMG_2774.jpg",
+    "IMG_2822.jpg",
+    "IMG_2823.jpg"
    ]
   },
   {
@@ -3121,6 +3125,18 @@
    "evidence": [
     "IMG_2764.jpg",
     "IMG_2765.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-guillermo-paving",
+   "name": "Calle Guillermo paving beside the planter: squares at the junction, octagons beyond, covers",
+   "kind": "reference feature",
+   "source": "IMG_2773 and IMG_2774 look up Calle Guillermo from the Jorge junction: the lane is paved wall to wall, about 2.3 m wide between the plinth lawn and the planter, in large terracotta squares at the junction and then, from about 3 m north, in terracotta octagons with small square insets (about six across), up to the steps of the pool building. A round cast cover and two rectangular grates lie in the octagons. IMG_2822 and IMG_2823 show the same octagons south of the junction. The paving is laid from 7 m south to 25 m north of the Jorge line on the mapped Guillermo line, against the planter's lane face, which closes the grass strip the model had between wall and lane. Width and cover positions are estimated to about 0.5 m.",
+   "evidence": [
+    "IMG_2773.jpg",
+    "IMG_2774.jpg",
+    "IMG_2822.jpg",
+    "IMG_2823.jpg"
    ]
   },
   {
@@ -19309,6 +19325,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2773.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2774.jpg",
    "to": "street:guillermo",
    "relation": "camera-nearby",
@@ -19350,6 +19372,12 @@
   {
    "from": "photo:IMG_2774.jpg",
    "to": "jorge_lane.json:jorge-lane-guillermo-planter",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2774.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-paving",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -20176,6 +20204,24 @@
    "angleOffset": 32.4
   },
   {
+   "from": "photo:IMG_2822.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2822.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2822.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2823.jpg",
    "to": "street:guillermo",
    "relation": "camera-nearby",
@@ -20207,6 +20253,24 @@
    "relation": "possibly-in-view",
    "distance": 22.1,
    "angleOffset": 31.8
+  },
+  {
+   "from": "photo:IMG_2823.jpg",
+   "to": "jorge_lane.json:jorge-lane-bench",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2823.jpg",
+   "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2823.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "ref:apple-maps/02-3d-north-pool.png",

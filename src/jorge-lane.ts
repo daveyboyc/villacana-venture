@@ -11,6 +11,7 @@ import { addSprites } from "./sprites";
 import { dragonTree, tallPalm } from "./spiky-trees";
 import { siteY } from "./terrain";
 import { poolGroundY } from "./pool-levels";
+import { seawardPavingCanvas } from "./seaward-paving";
 
 /** Calle Jorge: square tiles and cross-paths, covers, lawns and kerbs, planter walls, the bench, beds, the dragon tree and cactus, plaques, the sign and lamps. */
 export const jorgeLane = data;
@@ -369,11 +370,34 @@ function plaqueMesh(lines: string[]): THREE.Group {
   return g;
 }
 
-/** Height of the Guillermo planter's top at `d` metres north of the Jorge line: a metre above the lane beside it, smoothed so the top runs straight. */
-function guillermoPlanterTop(): (d: number) => number {
+/** Height of the Calle Guillermo paving `d` metres north of the Jorge line: the surveyed ground on the mapped lane, smoothed so the surface runs straight. */
+function guillermoLaneY(d: number): number {
   const gp = data.guillermoPlanter;
-  const lane = (d: number) => { const p = at(gp.along - gp.laneOffset, -d); return siteY(p[0], p[1]) + 0.27; };
-  return (d: number) => { let sum = 0; for (let k = -3; k <= 3; k++) sum += lane(Math.min(gp.to, Math.max(gp.from, d + k))); return sum / 7 + gp.height; };
+  // The highest ground across the generic 1.2 m ribbon near each station, so this paving covers it, then averaged along the lane.
+  const crest = (q: number) => { let top = -Infinity; for (const along of [-1, 0, 1]) for (const across of [-0.7, 0, 0.7]) { const p = at(gp.along - gp.laneOffset + across, -(q + along)); top = Math.max(top, siteY(p[0], p[1])); } return top; };
+  let sum = 0;
+  for (let k = -2; k <= 2; k++) sum += crest(d + k);
+  return sum / 5 + 0.36;
+}
+/** Height of the Guillermo planter's top: one metre (its `height`) above the paving beside it. */
+function guillermoPlanterTop(): (d: number) => number {
+  return (d: number) => guillermoLaneY(d) + data.guillermoPlanter.height;
+}
+/** Paving across Calle Guillermo from `from` to `to` metres north of the Jorge line, level across its width at the lane's own height (not draped: its east edge lies over the bank to the pool). */
+function guillermoPaving(from: number, to: number, material: THREE.Material, name: string): THREE.Mesh {
+  const pave = data.guillermoPaving, pos: number[] = [], uv: number[] = [], idx: number[] = [];
+  const stations: number[] = []; for (let d = from; d < to - 1e-6; d += 0.5) stations.push(d); stations.push(to);
+  stations.forEach((d, i) => {
+    const y = guillermoLaneY(d);
+    for (const side of [-1, 1]) { const p = at(pave.along + side * pave.half, -d); pos.push(p[0], y, p[1]); uv.push(d, side * pave.half); }
+    if (i) { const b = (i - 1) * 2; idx.push(b, b + 1, b + 3, b, b + 3, b + 2); }
+  });
+  const g = new THREE.BufferGeometry();
+  g.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3)); g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx); g.computeVertexNormals();
+  const mesh = new THREE.Mesh(g, material); (material as THREE.MeshStandardMaterial).side = THREE.DoubleSide;
+  mesh.name = name; mesh.userData.noDrape = true; mesh.receiveShadow = true; mesh.renderOrder = 1;
+  return mesh;
 }
 /**
  * The white planter wall along Calle Guillermo (IMG_2773, IMG_2774): one straight, neat wall a metre above the lane.
@@ -465,6 +489,21 @@ export function addJorgeLane(scene: THREE.Scene): void {
   }
   // The lantana planter wall along Calle Guillermo behind the plinth lawn (IMG_2597, IMG_2773).
   const gp = data.guillermoPlanter;
+  // Calle Guillermo beside the planter (IMG_2773, IMG_2774, IMG_2822): paved wall to wall, large squares at the junction, octagons with square insets beyond.
+  const pave = data.guillermoPaving;
+  {
+    const octagons = new THREE.CanvasTexture(seawardPavingCanvas("octagonal"));
+    octagons.colorSpace = THREE.SRGBColorSpace; octagons.wrapS = octagons.wrapT = THREE.RepeatWrapping; octagons.repeat.setScalar(1 / (pave.tile * 4)); octagons.anisotropy = 8;
+    const squares = new THREE.MeshStandardMaterial({ map: photoTexture("terracotta"), roughness: 0.9 });
+    scene.add(guillermoPaving(pave.from, pave.octagonsFrom - 6, new THREE.MeshStandardMaterial({ map: octagons, roughness: 0.9 }), "jorge-guillermo-octagons"),
+      guillermoPaving(pave.octagonsFrom - 6, pave.octagonsFrom, squares, "jorge-guillermo-squares"),
+      guillermoPaving(pave.octagonsFrom, pave.to, new THREE.MeshStandardMaterial({ map: octagons, roughness: 0.9 }), "jorge-guillermo-octagons"));
+    for (const cover of pave.covers) {
+      const p = at(cover.at[0], -cover.at[1]), mesh = coverMesh(cover.kind);
+      mesh.children[0].position.y = 0.012; mesh.position.set(p[0], guillermoLaneY(cover.at[1]), p[1]); mesh.rotation.y = yawOf(jorgeAt(0).along); mesh.userData.noDrape = true;
+      scene.add(mesh);
+    }
+  }
   const planterTop = guillermoPlanterTop();
   scene.add(guillermoPlanter(planterTop, white));
   for (const cover of data.covers) {

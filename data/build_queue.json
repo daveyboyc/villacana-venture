@@ -3017,6 +3017,32 @@
    "owner": "Claude"
   },
   {
+   "id": "jorge-guillermo-paving",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Calle Guillermo at the Jorge junction: wall-to-wall octagonal paving and covers",
+   "photos": [
+    "IMG_2773.jpg"
+   ],
+   "build": "IMG_2773 and IMG_2774 show Calle Guillermo paved wall to wall beside the lantana planter: large terracotta squares at the Jorge junction, then octagons with small square insets, a round cover and two grates. Lay that paving 2.3 m wide against the planter's lane face (the model had a grass strip and a narrow generic ribbon that broke into tilted pieces over the bank), level across at the lane's surveyed height, and keep the planter's top one metre above it.",
+   "avoid": "Do not change the mapped Guillermo line, the terrain or the pool. Leave Walk alone.",
+   "accept": [
+    "Visible in Inspect, in Layout and with Show details",
+    "Render through the IMG_2773 camera recorded in data/photo_checks.json",
+    "scripts/check_jorge_lane.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-guillermo-paving",
+    "jorge_lane.json:jorge-lane-guillermo-planter"
+   ],
+   "dependsOn": [
+    "jorge-planter-palms"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,

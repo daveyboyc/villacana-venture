@@ -45,13 +45,18 @@ Model features that cite photos of this area, from `public/photos-ref/evidence-g
 ```mermaid
 graph LR
   A["Main pool"]
-  A --> F0["Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth · unreviewed"]
-  F0 --> PIMG_2597_jpg(["IMG_2597"])
+  A --> F0["Calle Guillermo paving beside the planter: squares at the junction, octagons beyond, covers · unreviewed"]
   F0 --> PIMG_2773_jpg(["IMG_2773"])
   F0 --> PIMG_2774_jpg(["IMG_2774"])
-  A --> F1["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
-  F1 --> PIMG_2764_jpg(["IMG_2764"])
-  F1 --> PIMG_2765_jpg(["IMG_2765"])
+  F0 --> PIMG_2822_jpg(["IMG_2822"])
+  F0 --> PIMG_2823_jpg(["IMG_2823"])
+  A --> F1["Lantana planter wall along Calle Guillermo behind the Calle de Jorge plinth · unreviewed"]
+  F1 --> PIMG_2597_jpg(["IMG_2597"])
+  F1 --> PIMG_2773_jpg(["IMG_2773"])
+  F1 --> PIMG_2774_jpg(["IMG_2774"])
+  A --> F2["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
+  F2 --> PIMG_2764_jpg(["IMG_2764"])
+  F2 --> PIMG_2765_jpg(["IMG_2765"])
 ```
 
 ## Placement evidence
@@ -60,6 +65,7 @@ graph LR
 
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
+| `jorge_lane.json:jorge-lane-guillermo-paving` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-planter` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-lawn-palm` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
@@ -76,10 +82,10 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving._ |
+| [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter **Looks at:** the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving._ |
 | [IMG_2764.jpg](../../public/photos-ref/IMG_2764.jpg) | ground | layout, facades, view | Main pool lawn and the wave-roofed building **Looks at:** tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm._ |
 | [IMG_2765.jpg](../../public/photos-ref/IMG_2765.jpg) | ground | layout, facades, view | Main pool lawn and wave-roofed building, second view _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm._ |
-| [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter._ |
-| [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter **Looks at:** the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, facades, signage, materials | Arched white gate pillar with iron gate, signs and bollard light at the lawn corner **Looks at:** coastal lawn gate pier and iron gate. **Note:** looksAt is a rough estimate of the gate position from the aerial (not measured). |
@@ -103,9 +109,9 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2484.jpg](../../public/photos-ref/IMG_2484.jpg) | ground | layout, materials, view | Paseo near Calle Guillermo with painted crossing **Looks at:** Painted crossing across the paseo beside the beach gateway. **Note:** looksAt is about 10 m ahead along the heading, where the red and white bars cross the paving (position read to about 2 m). _Used by: barraka_frontage.json:barraka-lounge-garden, barraka_frontage.json:paseo-painted-crossing, seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. Read 2026-11-11: the plinth stands on a lawn with an old olive tree to its left; a low white wall with orange lantana closes the lawn behind. _Used by: jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-sign, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-fittings._ |
 | [IMG_2630.jpg](../../public/photos-ref/IMG_2630.jpg) | ground | facades, signage, materials, layout | Barraka's glazed north-west frontage with sandbags along the slot drain **Looks at:** Barraka north-west glazed frontage. **Note:** Pin +-6.8 m is at the building corner; looksAt by eye. Sandbags are temporary. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
+| [IMG_2823.jpg](../../public/photos-ref/IMG_2823.jpg) | ground | layout, materials, planting, view | Octagonal-paved lane with a lantana planter wall _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-paving._ |
 | [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | ground | materials, layout, levels | Barraka terrace paving, slot drain and curved sandstone wall under green railings **Looks at:** Curved sandstone wall and green railing at Barraka's west corner. **Note:** Pin +-4 m sits at Barraka's west corner; looksAt is a by-eye estimate of the curved wall about 8 m away. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials, facades, signage | Paseo lane beside Barraka's north-west wall looking north-east **Note:** Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. |
-| [IMG_2823.jpg](../../public/photos-ref/IMG_2823.jpg) | ground | layout, materials, planting, view | Octagonal-paved lane with a lantana planter wall |
 | [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | signage, facades, planting | Comunidad Villacana gate sign at the end of Calle Guillermo **Looks at:** Comunidad Villacana sign on the Guillermo gate wall. **Note:** Subject offset (~2 m) from the pin is approximate. |
 | [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | ground | layout, signage, levels | Barred gate view into a laundry corridor with a red studded ramp **Note:** Pin is on Calle Patricia/Guillermo beside a large white roofed block with +/-4.7 m; the heading looks into the block, but which building is not identifiable from the photo. |
 | [IMG_2766.jpg](../../public/photos-ref/IMG_2766.jpg) | ground | layout, materials, planting | Painted crossing and blue plumbago at a gated wall |

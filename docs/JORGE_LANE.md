@@ -182,6 +182,29 @@ the photo's rises straight from the paving. That is not placement approval.
 Not done: the planter's continuation south of the junction towards the sea (IMG_2822, IMG_2823),
 the second, farther palm, and the other generic palms round the main pool.
 
+## Calle Guillermo paving (12 November, task `jorge-guillermo-paving`)
+
+IMG_2773 and IMG_2774 show the lane beside the planter paved wall to wall: large terracotta squares
+at the Jorge junction, then octagons with small square insets, a round cover and two grates. That
+is now laid 2.3 m wide against the planter's lane face (`guillermoPaving`), level across at the
+lane's surveyed height, with the planter's top one metre above it. It replaces a grass strip and
+the narrow generic ribbon, which broke into tilted pieces over the bank to the pool.
+
+## How these builds were checked, and what that is worth
+
+- Each change is rendered from the photo's position and compared with the photo by eye, by the
+  agent that made it and then by a second agent. "Matches" in `data/photo_checks.json` is that
+  judgement; no camera on this lane is solved, so nothing lines up pixel for pixel and no size is
+  measured by the render.
+- That let the planter through at the wrong height until Dave corrected it. Where a size matters,
+  measure it in the photo against something of known size and write the figure in the check. For
+  the planter: in IMG_2773 the wall is 2.5 tile-widths high at the same depth, so 0.9 m with
+  0.36 m tiles or 1.25 m with 0.5 m tiles. The tile size there is not known, so this supports
+  "about a metre" and no more.
+- Solving the IMG_2773 camera (`docs/PHOTO_ALIGNMENT.md`) was tried and abandoned: the registry
+  corners in view are too distant and cluttered to match with confidence. A photo taken square-on
+  to a house corner on this lane would make a solve possible.
+
 ## Limits
 
 - Positions are read from the photo pins, which are good to ±2-5 m. No camera is solved.
