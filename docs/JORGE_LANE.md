@@ -220,6 +220,14 @@ ask for. The lawn wall is therefore one wall from the west block's corner to the
 from 3.9 m to 2.6 m, and the patio's other sides are walled at 2.1 m on the registry lines.
 Where the roofed part really ends is not seen in any photo.
 
+A second agent checked the correction: the map rebuilds from the registry source unchanged, the
+roofed part and the patio add up to the registry ring (42.9 + 42.2 = 85.1 m2) without overlap,
+and no other building changed. It found the fall of the wall still reads shallower from the photo's
+viewpoint than in the photo (far-left to lane-end height about 1.1 against 1.5), and that a
+post-validation tweak had dropped lane hedges below the browser test's count; the hedges now
+check their own narrow footprint against the route guard. Known side effect: the path-network
+outline for this part now follows the roofed part only.
+
 Not done:
 
 - The houses further up the lane keep generic fronts; the gateways have no gates.

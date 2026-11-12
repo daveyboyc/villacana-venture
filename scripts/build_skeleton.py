@@ -188,6 +188,16 @@ def read_features(name: str, tag: str) -> list[dict]:
     return out
 
 
+def inside_ring(p, ring) -> bool:
+    x, z = p
+    hit = False
+    for i, (x1, z1) in enumerate(ring):
+        x2, z2 = ring[(i + 1) % len(ring)]
+        if (z1 > z) != (z2 > z) and x < (x2 - x1) * (z - z1) / (z2 - z1) + x1:
+            hit = not hit
+    return hit
+
+
 def rounded(ring: list[tuple[float, float]]) -> list[list[float]]:
     return [[round(x, 2), round(z, 2)] for x, z in ring]
 
@@ -220,6 +230,9 @@ def build_buildings() -> list[dict]:
             registry = {tuple(p) for p in entry["ring"]}
             for name in ("standing", "patio"):
                 assert sum(tuple(p) in registry for p in fix[name]) >= len(fix[name]) - 1, f"{part['id']}: {name} ring must follow the registry ring but for the cut"
+            assert "holes" not in entry and "passage" not in entry, f"{part['id']}: an open-patio correction on a part with holes or a passage is not supported"
+            cut = [tuple(p) for p in fix["standing"] if tuple(p) not in registry]
+            assert cut == [tuple(p) for p in fix["patio"] if tuple(p) not in registry] and all(inside_ring(p, entry["ring"]) for p in cut), f"{part['id']}: standing and patio must share the same cut point inside the registry ring"
             assert abs(area([tuple(p) for p in fix["standing"]]) + area([tuple(p) for p in fix["patio"]]) - area(ring)) < 0.5, f"{part['id']}: standing and patio must add up to the registry ring"
             entry["openPatio"] = {"registryRing": entry["ring"], "ring": fix["patio"], "trust": fix["trust"], "evidence": fix["evidence"]}
             entry["ring"] = fix["standing"]

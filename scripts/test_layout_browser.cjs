@@ -402,7 +402,7 @@ const path = require("node:path");
       const hedges=[];details.traverse(o=>{if(o.name==='jorge-hedge')hedges.push(o.userData.base);});
       const [a,b]=s.streets.find(r=>r.id==='jorge').points,len=Math.hypot(b[0]-a[0],b[1]-a[1]),station=p=>((p[0]-a[0])*(b[0]-a[0])+(p[1]-a[1])*(b[1]-a[1]))/len;
       for(const [from,to] of runs)if(!hedges.some(p=>station(p)>=from&&station(p)<=to))throw Error(`Calle Jorge planter ${from}-${to} m has no hedge`);
-      for(const [name,n] of [['jorge-plaque-hedge',2],['jorge-shrub',3],['jorge-climber',3],['jorge-west-tree',2],['jorge-west-shrub',8],['jorge-guillermo-lantana',12],['jorge-yucca',1],['jorge-guillermo-west-hedge',9],['jorge-guillermo-yucca',1],['jorge-lawn-palm',1],['jorge-cactus',1],['jorge-lantana',1]])if(count(details,name)<n)throw Error(`Calle Jorge Details has ${count(details,name)} ${name}, expected at least ${n}`);
+      for(const [name,n] of [['jorge-plaque-hedge',2],['jorge-shrub',3],['jorge-climber',3],['jorge-west-tree',2],['jorge-west-shrub',8],['jorge-guillermo-lantana',12],['jorge-yucca',1],['jorge-guillermo-west-hedge',12],['jorge-guillermo-yucca',1],['jorge-lawn-palm',1],['jorge-cactus',1],['jorge-lantana',1]])if(count(details,name)<n)throw Error(`Calle Jorge Details has ${count(details,name)} ${name}, expected at least ${n}`);
     }
     {
       const {addSouthBenchPlanting}=await import('/src/middle-south-planting.ts');

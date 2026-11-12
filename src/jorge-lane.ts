@@ -689,7 +689,8 @@ export function addJorgeLane(scene: THREE.Scene): void {
       const n = Math.ceil((to - from - 0.5) / 0.9), piece = (to - from - 0.5) / n;
       for (let i = 0; i < n; i++) {
         const d = from + 0.25 + (i + 0.5) * piece, p = at(pl.along - 0.04, -d);
-        if (!clear(p, Math.hypot(piece, 0.45) / 2)) continue;
+        // The guard is asked about the hedge's own narrow footprint (three circles along it), not one circle round its length.
+        if (![-1, 0, 1].every((k) => clear(at(pl.along - 0.04, -(d + (k * piece) / 3)), 0.2))) continue;
         const hedge = clippedHedge({ length: piece + 0.06, depth: 0.38, height: pl.hedge, seed: seed++, clip: 4.5, greens: hedgeGreens });
         hedge.rotation.y = yawOf(jorgeAt(0).along) + Math.PI / 2;
         level(hedge, p, guillermoGround(d) + pl.height + 0.02, "jorge-guillermo-west-hedge");
