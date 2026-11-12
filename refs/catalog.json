@@ -1619,6 +1619,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-sea-hedge",
    "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo"
   ],
@@ -7772,7 +7773,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "seafront_fence.json:guillermo-ramp-wall",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-pink-paths"
   ],
   "subject": "Painted crossing across the paseo beside the beach gateway"
  },
@@ -7812,6 +7815,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-sea-hedge",
    "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo"
   ],
@@ -7852,8 +7857,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:guillermo-ramp-wall",
-   "area:paseo"
+   "main_pool_lawn.json:lawn-white-rooms"
   ]
  },
  {
@@ -7890,7 +7897,9 @@
    130.7
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-white-rooms"
+  ]
  },
  {
   "id": "IMG_2488.jpg",
@@ -11864,8 +11873,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "seafront_fence.json:guillermo-ramp-wall",
-   "area:paseo"
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "seafront_fence.json:guillermo-ramp-wall"
   ]
  },
  {
@@ -11904,6 +11915,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
@@ -11947,8 +11960,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "area:paseo",
-   "beach_verge.json:barraka-front-verge",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "beach_verge.json:barraka-front-verge"
   ]
  },
  {
@@ -11981,13 +11995,20 @@
    "altitude": 4.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing",
+   "main_pool_lawn.json:lawn-flagstone-apron"
+  ],
   "looksAt": [
    -3.0,
    128.0
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "coastal lawn gate pier and iron gate"
@@ -12021,13 +12042,20 @@
    "altitude": 4.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:main-pool-glass"
+  ],
   "looksAt": [
    -5.9,
    126.4
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins"
+  ]
  },
  {
   "id": "IMG_2604.jpg",
@@ -16707,7 +16735,15 @@
    "altitude": 5.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-sea-hedge"
+  ],
   "looksAt": [
    9.1,
    113.8
@@ -16781,13 +16817,20 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-sea-hedge"
+  ],
   "looksAt": [
    -7.0,
    119.8
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins"
+  ]
  },
  {
   "id": "IMG_2762.jpg",
@@ -16815,13 +16858,17 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-white-rooms"
+  ],
   "looksAt": [
    -11.7,
    128.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-white-rooms"
+  ]
  },
  {
   "id": "IMG_2763.jpg",
@@ -16851,13 +16898,20 @@
    "altitude": 5.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-sea-hedge"
+  ],
   "looksAt": [
    -6.3,
    134.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:guillermo-ramp-wall",
    "area:paseo"
   ]
@@ -16892,14 +16946,21 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-lawn-palm"
+   "jorge_lane.json:jorge-lane-lawn-palm",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:main-pool-glass",
+   "main_pool_lawn.json:main-pool-deck-tiles"
   ],
   "looksAt": [
    -13,
    115.8
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins"
+  ],
   "subject": "tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond"
  },
  {
@@ -16932,14 +16993,21 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-lawn-palm"
+   "jorge_lane.json:jorge-lane-lawn-palm",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:main-pool-glass"
   ],
   "looksAt": [
    -6.9,
    127.3
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-pink-paths"
+  ]
  },
  {
   "id": "IMG_2766.jpg",
@@ -16976,7 +17044,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins"
   ]
  },
  {
@@ -17015,8 +17086,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "area:paseo",
-   "seafront_fence.json:guillermo-ramp-wall",
-   "beach_verge.json:barraka-front-verge"
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-flagstone-apron"
   ]
  },
  {
@@ -17134,7 +17206,9 @@
    118.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-pink-paths"
+  ]
  },
  {
   "id": "IMG_2773.jpg",
@@ -17259,13 +17333,17 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:enrique-shop-front"
+  ],
   "looksAt": [
    -33.1,
    99.5
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "main_pool_lawn.json:enrique-step-finish",
    "backdrop.json:aerial-trees",
    "street:guillermo"
   ]
@@ -17297,7 +17375,11 @@
    "altitude": 6.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:enrique-step-finish",
+   "main_pool_lawn.json:enrique-shop-front"
+  ],
   "looksAt": [
    -34.6,
    97.6
@@ -17305,6 +17387,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
+   "main_pool_lawn.json:enrique-step-finish",
    "street:guillermo"
   ]
  },
@@ -17335,14 +17418,19 @@
    "altitude": 7.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "main_pool_lawn.json:main-pool-glass",
+   "main_pool_lawn.json:main-pool-deck-tiles",
+   "main_pool_lawn.json:enrique-step-finish"
+  ],
   "looksAt": [
    -27.9,
    100.2
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "main_pool_lawn.json:main-pool-glass"
   ]
  },
  {

@@ -173,13 +173,15 @@
    "data": [
     "data/main_pool.json",
     "data/guillermo_slope.json",
-    "data/seafront_fence.json"
+    "data/seafront_fence.json",
+    "data/main_pool_lawn.json"
    ],
    "src": [
     "src/main-pool.ts",
     "src/pool-levels.ts",
     "src/lowered-lanes.ts",
-    "src/seafront-fence.ts"
+    "src/seafront-fence.ts",
+    "src/main-pool-lawn.ts"
    ],
    "notes": [
     "Villacana has one large main pool with a round toddler pool beside it (Dave, 2026-10-11).",
@@ -189,7 +191,8 @@
     "Laser survey 2026-10-24 (docs/reviews/lidar-levels): main pool deck -2.87 m (model -3.00). Calle Guillermo stays at about -0.2 to -0.4 m along the mapped street with the pool lawn 2.5 m lower behind a sharp edge; the fall to the paseo starts south of the mapped end, not over its last 15 m as modelled (guillermo-descent-recheck).",
     "27 Oct (docs/reviews/beach-gate-verge): the beach gateway is at the lawn's south-west corner beside the paseo ramp, not at the foot of Calle Guillermo (Dave; aerial; IMG_2226). Calle Guillermo is level to the paseo (survey, IMG_2488); the paseo ramps 1.7 m down east of the lane's foot to lawn level. The 21 Oct 3 m lane ramp is removed.",
     "27 Oct, IMG_2600 from beside the kiosk: an inner tiled path runs down east-south-east from the foot of Calle Guillermo behind a white wall topped with green rigid mesh, to grass, a hedge and a green rigid-mesh fence with the beach beyond. The model draws white railings there (read from IMG_2226 at 50 m); the fence's material and where mesh turns to railings are open. A tall white pier at the left edge may be the beach gateway.",
-    "8 Nov photos: IMG_2764/2765 from the lawn show the main pool and the white wave-roofed building; IMG_2773-2777 and IMG_2823 the lane beside it (octagonal paving, lantana planter wall, slot drains, steps and ramp at the shops, marble-nosed steps with blue tile risers down to the deck)."
+    "8 Nov photos: IMG_2764/2765 from the lawn show the main pool and the white wave-roofed building; IMG_2773-2777 and IMG_2823 the lane beside it (octagonal paving, lantana planter wall, slot drains, steps and ramp at the shops, marble-nosed steps with blue tile risers down to the deck).",
+    "12 Nov: the lawn photos are built as pink resin paths, a flagstone apron at the existing arched gate, bollards and bins, short white walls with a strelitzia bed, a hedge and shower in front of the sea railing, a glass fence and terracotta deck on the main pool, and marble nosings on Enrique's steps (data/main_pool_lawn.json). Positions are estimated from the camera pins, good to about 4 m. The sea fence stays the green bars from the closer paseo photos; the lawn photos read that fence as mesh. The iron leaf in the arch is drawn open."
    ]
   },
   {
