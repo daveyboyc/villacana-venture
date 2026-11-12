@@ -1,20 +1,144 @@
 {
  "checkedAt": "2026-10-16",
- "about": "Registry building parts that the aerial shows are not standing. The ring stays exactly as the registry gives it (map outline, dashed); only the storey count is set to 0, so the part is neither extruded nor solid. Read by scripts/build_skeleton.py; checked by scripts/check_seafront.py. Issue #41.",
+ "about": "Registry building parts that the aerial shows are not standing. The ring stays exactly as the registry gives it (map outline, dashed); only the storey count is set to 0, so the part is neither extruded nor solid. Read by scripts/build_skeleton.py; checked by scripts/check_seafront.py. Issue #41. openPatios (Dave, 2026-11-12) are registry parts of which only a portion is roofed: `standing` is the ring that is still built as a house and `patio` the open, walled remainder; the two together are exactly the registry ring.",
  "notStanding": [
   {
    "id": "6465801UF1366N_part5",
    "registryFloors": 1,
-   "evidence": ["IMG_2346.jpg", "IMG_2347.jpg"],
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
    "trust": "Aerial (public/map/ground.jpg, Esri, date unknown): the pink stamped paseo, about 3.5 m wide, crosses this part from its north-west to its north-east side, and the rest of the part is open sand and the pale beach-access strip beside the Barraka roof; no roof, roof edge or shadow lies anywhere inside the ring. The roofs either side (Barraka 6364501UF1366S_part8 and this parcel's parts 2-4) match their registry rings within about 1 m in the same image, so this is not a registration offset. IMG_2346/IMG_2347 (pins about 4 m accuracy, the latter inside the ring) show only sand, the Barraka sign planter, a timber walkway and a small thatched kiosk where they stand, with no building. The registry parcel (retail, built 1967, record version 2009) still includes the part; why is not known. The footprint is kept as a dashed registry outline, not deleted, and nothing is built in its place.",
-   "aerialPaving": [[34.3, 98.5], [35.7, 97.1], [37.1, 95.7], [38.5, 94.3]]
+   "aerialPaving": [
+    [
+     34.3,
+     98.5
+    ],
+    [
+     35.7,
+     97.1
+    ],
+    [
+     37.1,
+     95.7
+    ],
+    [
+     38.5,
+     94.3
+    ]
+   ]
   },
   {
    "id": "6465801UF1366N_part6",
    "registryFloors": 1,
-   "evidence": ["IMG_2346.jpg", "IMG_2347.jpg"],
+   "evidence": [
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ],
    "trust": "Thin registry strip wrapping the north-east side of part 5. On the aerial the same pink paseo crosses it with no wall, edge or shadow across the paving, and its seaward end lies on open sand. Kept as a dashed registry outline; nothing built in its place.",
-   "aerialPaving": [[38.9, 93.9], [39.2, 93.6]]
+   "aerialPaving": [
+    [
+     38.9,
+     93.9
+    ],
+    [
+     39.2,
+     93.6
+    ]
+   ]
+  }
+ ],
+ "openPatios": [
+  {
+   "id": "6364401UF1366S_part7",
+   "registryFloors": 1,
+   "standing": [
+    [
+     -38.18,
+     132.39
+    ],
+    [
+     -40.01,
+     129.08
+    ],
+    [
+     -40.24,
+     128.69
+    ],
+    [
+     -37.4,
+     126.99
+    ],
+    [
+     -39.66,
+     123.19
+    ],
+    [
+     -37.72,
+     122.01
+    ],
+    [
+     -36.77,
+     121.47
+    ],
+    [
+     -35.17,
+     124.21
+    ],
+    [
+     -32.44,
+     128.93
+    ]
+   ],
+   "patio": [
+    [
+     -37.72,
+     122.01
+    ],
+    [
+     -38.96,
+     119.93
+    ],
+    [
+     -35.31,
+     117.66
+    ],
+    [
+     -37.01,
+     114.56
+    ],
+    [
+     -36.02,
+     114.03
+    ],
+    [
+     -33.32,
+     112.56
+    ],
+    [
+     -33.01,
+     113.09
+    ],
+    [
+     -29.94,
+     118.27
+    ],
+    [
+     -36.34,
+     122.2
+    ],
+    [
+     -36.77,
+     121.47
+    ]
+   ],
+   "evidence": [
+    "IMG_2773.jpg",
+    "IMG_2774.jpg"
+   ],
+   "decidedBy": "Dave, 2026-11-12: asked to turn the block behind the lawn wall into an open patio on the photo evidence alone, without the measured check.",
+   "trust": "IMG_2773 looks across the plinth lawn at this part's south-east face: a plain garden wall with no door or window, its top falling towards the lane, with climbers and shrubs showing above it; the chimneys and white volumes seen over it are read as houses standing further back, not as a roof directly behind the wall. The aerial (public/map/ground.jpg, Esri, date unknown) shows the east portion pale and crossed by dark lines, which is read as a court with wall shadows, more like the ground the registry leaves empty just north of it than the tan roofs of parts 10 and 11; at 0.24 m a pixel that reading is a judgement. So the east portion (about 7.5 by 6.7 m, with the 4.3 by 2.5 m neck that joins it to the west block) is treated as an open walled patio and only the west block stays a one-storey house. Where the roofed part ends is not seen in any photo: the cut is placed on the line of the west block's own east face. No camera is solved, so this is a photo-and-aerial judgement, not a measured correction."
   }
  ]
 }

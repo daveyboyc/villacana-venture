@@ -87,6 +87,8 @@ export type SkeletonBuilding = {
   passage?: { name: string; trust: "photo" | "likely"; evidence: string };
   /** A registry part the aerial shows is not standing (data/registry_corrections.json): outline only, floors 0. */
   notStanding?: { registryFloors: number; trust: string; evidence: string[] };
+  /** A registry part of which only a portion is roofed (data/registry_corrections.json, openPatios): `ring` above is the roofed part, this holds the registry ring and the open patio. */
+  openPatio?: { registryRing: Vec2[]; ring: Vec2[]; trust: string; evidence: string[] };
 };
 
 export type SkeletonPool = {

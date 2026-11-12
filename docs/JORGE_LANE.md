@@ -203,18 +203,33 @@ plain garden wall and hedged planters with the houses standing back; the model d
 blocks as houses with generic doors, shutters and porches at the lane, and open plaza where the
 registry is empty. Built from IMG_2773 and IMG_2774 (`guillermoWest`):
 
-- The wall along the north side of the plinth lawn is plain: generic openings and porches are kept
-  off it (`plainWalls`, read by the shutters, the porches and the facade kit).
-- It is carried 3 m on to the lane with a falling top, ending in a pier with a no-dogs sign.
+- The wall along the north side of the plinth lawn is plain, with no door, window or porch. (A
+  `plainWalls` list, read by the shutters, the porches and the facade kit, can keep generic openings
+  off any registry wall a photo shows plain; it is empty now that this wall is a garden wall.)
+- It runs on to the lane with a falling top, ending in a pier with a no-dogs sign near its top.
 - Along the lane: white planters with clipped hedges between piers, two gateways, a taller patio
   wall behind with strelitzia above it, two lamp posts, and a brick-on-edge border.
 - The lawn now reaches the wall foot, with a small tree and a rose (Details).
 
-Not done, and why:
+**The patio behind the wall (Dave's decision, 12 November).** Plants show above the lawn wall in
+the photo and the aerial shows a pale court there, so the east portion of registry part
+`6364401UF1366S_part7` is now an open walled patio and only its west block stays a house
+(`data/registry_corrections.json`, `openPatios`; the registry ring is kept beside it in the map
+data). Dave agreed to this on the photo evidence, without the measured check the rules normally
+ask for. The lawn wall is therefore one wall from the west block's corner to the lane, falling
+from 3.9 m to 2.6 m, and the patio's other sides are walled at 2.1 m on the registry lines.
+Where the roofed part really ends is not seen in any photo.
 
-- Plants show above the lawn wall in the photo, so the registry block behind it (east part of
-  `6364401UF1366S_part7`) is probably an open patio. It is still a one-storey block: changing a
-  registry footprint needs a measured check. So the wall top is level there where the photo's falls.
+A second agent checked the correction: the map rebuilds from the registry source unchanged, the
+roofed part and the patio add up to the registry ring (42.9 + 42.2 = 85.1 m2) without overlap,
+and no other building changed. It found the fall of the wall still reads shallower from the photo's
+viewpoint than in the photo (far-left to lane-end height about 1.1 against 1.5), and that a
+post-validation tweak had dropped lane hedges below the browser test's count; the hedges now
+check their own narrow footprint against the route guard. Known side effect: the path-network
+outline for this part now follows the roofed part only.
+
+Not done:
+
 - The houses further up the lane keep generic fronts; the gateways have no gates.
 
 A second agent inventoried and measured both views: the first build's wall end was about 0.7 m too
