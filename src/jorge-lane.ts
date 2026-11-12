@@ -193,7 +193,7 @@ function place(group: THREE.Group, at: Vec2, face: Vec2): THREE.Group {
 function grass(side: "lawn" | "hedge"): THREE.Mesh {
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
   const total = lengthOf(), sign = side === "lawn" ? 1 : -1;
-  for (const patch of [...data.grass, ...data.west.grass].filter((g) => g.side === side)) {
+  for (const patch of [...data.grass, ...data.west.grass, ...data.middle.grass].filter((g) => g.side === side)) {
     const inner = (patch as { inner?: number }).inner ?? data.verges.inner, to = Math.min(total, patch.to);
     for (let s = patch.from; s < to - 1e-6; s += 1) for (let d = inner; d < patch.outer - 1e-6; d += 1) {
       const s2 = Math.min(to, s + 1), d2 = Math.min(patch.outer, d + 1);
@@ -272,10 +272,10 @@ function nicheTexture(): THREE.CanvasTexture {
 }
 
 /** Square terracotta with joints along and across the path. IMG_2182, IMG_2230, IMG_2234. World-aligned UVs put the grid on the diagonal. */
-function pathRibbon(half: number, y: number, material: THREE.Material, name: string): THREE.Mesh {
+function pathRibbon(half: number, y: number, material: THREE.Material, name: string, from = SHOWN.from, to = SHOWN.to): THREE.Mesh {
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
   const total = lengthOf();
-  for (let s = SHOWN.from; s < Math.min(total, SHOWN.to) - 0.4; s += 2) {
+  for (let s = from; s < Math.min(total, to) - 0.4; s += 2) {
     const a = jorgeAt(s), b = jorgeAt(Math.min(total, s + 2)), end = Math.min(total, s + 2);
     const corner = (f: Frame, side: number, along: number): { p: Vec2; uv: [number, number] } => {
       const across = side * half;
@@ -531,7 +531,34 @@ export function addJorgeLane(scene: THREE.Scene): void {
   const west = data.west, wk = west.kerbs;
   // Laid in half-metre pieces a little above the generic street ribbon and the car-park asphalt, so they follow the ground and stay on top of both.
   const flagLine: number[][] = []; for (let s = west.from; s < west.to; s += 0.5) flagLine.push([s, 0]); flagLine.push([west.to, 0]);
-  scene.add(strip(flagLine, west.pathHalf, 0.38, new THREE.MeshStandardMaterial({ map: photoTexture("crazy-paving"), roughness: 0.95 }), "jorge-west-flags"));
+  const flags = new THREE.MeshStandardMaterial({ map: photoTexture("crazy-paving"), roughness: 0.95 });
+  scene.add(strip(flagLine, west.pathHalf, 0.38, flags, "jorge-west-flags"));
+  // The gateway at the end of the flags (IMG_2280, IMG_2697): white piers and a flat capped lintel, green iron leaves standing open, a wall each side,
+  // and the flagged cross-path in front of it.
+  const gate = data.gateway, mid = data.middle;
+  const portal = (o: { along: number; opening: number; pier: number; height: number; lintel: number }, name: string) => {
+    const half = o.opening / 2 + o.pier / 2;
+    for (const side of [-1, 1]) scene.add(bar([o.along - o.pier / 2, side * half], [o.along + o.pier / 2, side * half], o.pier, o.height + PATH_Y, white, name));
+    for (const [h, w, y] of [[o.lintel, o.pier, o.height - o.lintel / 2], [0.07, o.pier + 0.14, o.height + 0.035]]) {
+      const top = bar([o.along, -(half + o.pier / 2 + 0.06)], [o.along, half + o.pier / 2 + 0.06], w, h, white, name);
+      top.position.y = PATH_Y + y; scene.add(top);
+    }
+  };
+  portal(gate, "jorge-gateway");
+  const iron = new THREE.MeshStandardMaterial({ color: "#1f3b2c", roughness: 0.6, metalness: 0.3 });
+  for (const side of [-1, 1]) {
+    const leaf = bar([gate.along + gate.pier / 2, side * (gate.opening / 2 - 0.03)], [gate.along + gate.pier / 2 + gate.opening / 2 - 0.1, side * (gate.opening / 2 + 0.12)], 0.04, 1.95, iron, "jorge-gateway-leaf");
+    leaf.position.y += PATH_Y + 0.05; scene.add(leaf);
+  }
+  for (const w of gate.walls) {
+    const sign = w.side === "lawn" ? 1 : -1, from = gate.opening / 2 + gate.pier;
+    scene.add(bar([gate.along, sign * from], [gate.along, sign * w.to], 0.25, w.height + PATH_Y, white, "jorge-gateway-wall"));
+  }
+  const cf = gate.crossFlags;
+  scene.add(strip([[cf.along, -(west.pathHalf - 0.05)], [cf.along, -cf.north]], cf.half, 0.375, flags, "jorge-west-cross-flags"), strip([[cf.along, west.pathHalf - 0.05], [cf.along, cf.south]], cf.half, 0.375, flags, "jorge-west-cross-flags"));
+  // Between the gateway and the photographed east stretch (inferred, data.middle): the square-tile path carried through, and the second portal seen through the gateway.
+  scene.add(pathRibbon(data.path.edgeHalf, 0.3, edge, "jorge-middle-path-edge", mid.from, mid.to), pathRibbon(data.path.tileHalf, 0.32, tiles, "jorge-middle-path", mid.from, mid.to));
+  portal(mid.portal, "jorge-middle-portal");
   for (const side of [-1, 1]) {
     scene.add(bar([wk.from, side * wk.offset], [wk.to, side * wk.offset], wk.width, wk.height + PATH_Y, white, "jorge-west-kerb"),
       bar([wk.to, side * wk.offset], [wk.to, side * (wk.offset + wk.return)], wk.width, wk.height + PATH_Y, white, "jorge-west-kerb"));
@@ -667,12 +694,29 @@ export function addJorgeLane(scene: THREE.Scene): void {
     if (inHouse(p[0], p[1]) || inHouse(far[0], far[1])) continue;
     stand(wallClimber({ length: c.length, height: c.height, depth: (c as { sparse?: boolean }).sparse ? 0.18 : 0.4, seed: seed++, flowers: c.flowers, flowerColour: c.colour, sparse: (c as { sparse?: boolean }).sparse }), p, yawOf(out), 0.03, "jorge-climber");
   }
+  // The two trees the aerial shows on the middle lawn, as round-crowned trees (inferred), and bougainvillea over the gateway (IMG_2697).
+  for (const t of data.middle.trees) {
+    const p = at(t.at[0], t.at[1]);
+    if (!inHouse(p[0], p[1]) && clear(p, 0.4)) stand(roundClippedTree({ trunk: t.height - t.crown * 0.7, crown: t.crown, crownHeight: t.crown * 0.85, seed: seed++ }), p, 0, 0.03, "jorge-middle-tree");
+  }
+  {
+    const g = data.gateway, p = at(g.along - 0.05, g.opening / 2 + g.pier + 0.2);
+    const over = looseShrub({ width: 2.8, depth: 0.8, height: 0.45, seed: seed++, leaf: "small", leafSize: [0.07, 0.05], greens: ["#3d5a2f", "#4a6936", "#35502a"], stems: 0, flowers: { count: 150, colour: "#96508a", size: 0.12 } });
+    over.rotation.y = yawOf(jorgeAt(0).lawn);
+    stand(over, at(g.along, 0.5), over.rotation.y, PATH_Y + g.height - 0.02, "jorge-gateway-bougainvillea");
+    for (let i = 0; i < 3; i++) {
+      const q = at(g.along - 0.75, -(g.opening / 2 + g.pier + 0.7 + i * 1.3));
+      if (clear(q, 0.4)) stand(clippedHedge({ length: 1.3, depth: 0.6, height: 1.1, seed: seed++, clip: 4.5, greens: hedgeGreens }), q, yawOf(jorgeAt(0).along) + Math.PI / 2, 0.03, "jorge-gateway-hedge");
+    }
+    void p;
+  }
   // West entrance planting: two round clipped trees on the north lawn, a shrub border along the house on the south side.
   for (const t of west.trees) {
     const p = jorgeSide(t.along, t.offset, t.side).at;
     if (!inHouse(p[0], p[1]) && clear(p, 1.2)) stand(roundClippedTree({ trunk: 1.7, crown: 2.3, crownHeight: 1.9, seed: seed++ }), p, 0, 0.03, "jorge-west-tree");
   }
   for (let s = west.border.from, i = 0; s <= west.border.to; s += west.border.every, i++) {
+    if (Math.abs(s - data.gateway.crossFlags.along) < 0.95) continue; // the flagged cross-path to the house
     const p = jorgeSide(s, west.border.offset, west.border.side).at;
     if (inHouse(p[0], p[1]) || !clear(p, 0.5)) continue;
     const flowering = i % 2 === 1;

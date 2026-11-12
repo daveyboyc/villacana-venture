@@ -1919,6 +1919,7 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-middle",
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
@@ -3595,6 +3596,8 @@
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-west",
+   "jorge_lane.json:jorge-lane-gateway",
+   "jorge_lane.json:jorge-lane-middle",
    "dali_street.json:dali-house-lanterns"
   ],
   "looksAt": [
@@ -3605,6 +3608,7 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "street:jorge",
+   "jorge_lane.json:jorge-lane-gateway",
    "jorge_lane.json:jorge-lane-west"
   ],
   "subject": "The flagstone pedestrian entrance, with a black lantern and white curbs"
@@ -15647,7 +15651,8 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-west"
+   "jorge_lane.json:jorge-lane-west",
+   "jorge_lane.json:jorge-lane-gateway"
   ],
   "looksAt": [
    -125.4,
@@ -15692,7 +15697,9 @@
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-west",
-   "jorge_lane.json:jorge-lane-planting"
+   "jorge_lane.json:jorge-lane-planting",
+   "jorge_lane.json:jorge-lane-gateway",
+   "jorge_lane.json:jorge-lane-middle"
   ],
   "looksAt": [
    -125.4,

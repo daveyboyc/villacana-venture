@@ -924,7 +924,7 @@
     "placed": 53,
     "checks": {
      "matches": 4,
-     "differs": 8,
+     "differs": 9,
      "not-comparable": 1
     },
     "camerasSolved": 0,
@@ -937,9 +937,9 @@
     "generated": 130
    },
    "placement": {
-    "features": 18,
+    "features": 20,
     "verified": 0,
-    "disputed": 2
+    "disputed": 3
    },
    "discrepancies": [
     {
@@ -969,6 +969,10 @@
     {
      "id": "photo-discrepancy:8bc5795c6b9563c7",
      "feature": "dali_street.json:dali-house-lanterns"
+    },
+    {
+     "id": "photo-discrepancy:d9aa2b2456ecf4d4",
+     "feature": "jorge_lane.json:jorge-lane-gateway"
     }
    ],
    "tasks": {
@@ -982,8 +986,8 @@
    },
    "confidence": {
     "photographed": 13,
-    "estimated": 5,
-    "inferred": 0,
+    "estimated": 6,
+    "inferred": 1,
     "registry": 0,
     "gaps": 1
    },
@@ -992,12 +996,12 @@
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 53, 53 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
-    "How sure: 13 photographed, 5 estimated, 0 inferred, 1 known gap.",
-    "Placement: 0 of 18 features verified, 7 open discrepancies."
+    "How sure: 13 photographed, 6 estimated, 1 inferred, 1 known gap.",
+    "Placement: 0 of 20 features verified, 8 open discrepancies."
    ],
    "light": {
     "colour": "amber",
-    "headline": "Photos in: 3 build tasks open, 7 open discrepancies",
+    "headline": "Photos in: 3 build tasks open, 8 open discrepancies",
     "requests": []
    }
   },
@@ -1368,7 +1372,7 @@
     "placed": 149,
     "checks": {
      "matches": 26,
-     "differs": 7,
+     "differs": 8,
      "not-comparable": 11
     },
     "camerasSolved": 0,
@@ -1405,7 +1409,7 @@
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 17,
+    "inProgress": 18,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1429,7 +1433,7 @@
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 13 spots",
     "requests": [
      {
       "id": "guillermo-lane-walk",
@@ -1444,6 +1448,118 @@
       "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
       "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
       "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-27-35-passage",
+      "at": [
+       -80.1,
+       159.1
+      ],
+      "look": [
+       -76.6,
+       165.1
+      ],
+      "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
+      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-gateway",
+      "at": [
+       -117.6,
+       182.0
+      ],
+      "look": [
+       -114.2,
+       180.0
+      ],
+      "ask": "The white gateway at the end of the flagged path from the Dalí car park: one photo square-on from 4 m in front, one from the far side looking back, and one of the wall and hedge to its left.",
+      "why": "The gateway is built from two distant photos; its size, gate leaves and what the path is made of beyond it are estimated",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-houses-56-86",
+      "at": [
+       -88.2,
+       164.9
+      ],
+      "look": [
+       -73.5,
+       156.4
+      ],
+      "ask": "Between the house rows (about 30 m): one photo along the lane every 10 m in each direction, and one square-on to each side showing doors, house numbers, planters, lamps and the strip of ground on the north side.",
+      "why": "Nothing along this stretch is photographed; only the path and a grass verge are built, with no walls, planters, doors or numbers",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-middle-lawn",
+      "at": [
+       -112.4,
+       179.0
+      ],
+      "look": [
+       -99.5,
+       171.5
+      ],
+      "ask": "Standing just through the gateway, one photo along the lane; then from the middle of the lawns one photo to each side (north and south), showing the trees, any beds and where the lawn ends.",
+      "why": "Lawns and one tree here come from the aerial only; path material and edges are assumed",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-silvia-junction",
+      "at": [
+       -95.1,
+       169.0
+      ],
+      "look": [
+       -89.9,
+       165.9
+      ],
+      "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
+      "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "guillermo-patio-behind-wall",
+      "at": [
+       -29.3,
+       117.0
+      ],
+      "look": [
+       -34.7,
+       117.8
+      ],
+      "ask": "From Calle Guillermo beside the no-dogs sign, hold the camera up over the wall (or use a gateway) to photograph the patio behind the lawn wall: where the roofed part ends and what is planted.",
+      "why": "Dave agreed to open this patio on photo evidence; where the roofed block really ends is not seen",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-86-100",
+      "at": [
+       -62.3,
+       149.9
+      ],
+      "look": [
+       -55.3,
+       145.9
+      ],
+      "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+      "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+      "priority": 2,
       "state": "open",
       "photos": []
      },
@@ -1464,6 +1580,22 @@
       "photos": []
      },
      {
+      "id": "jorge-east-square-on",
+      "at": [
+       -39.8,
+       136.9
+      ],
+      "look": [
+       -35.7,
+       143.8
+      ],
+      "ask": "Near the bench at the east end: one photo square-on to the house front on the south side and one square-on to the patio wall on the north side, each including a house corner from ground to roof.",
+      "why": "A square-on view of a registry house corner would let a camera be solved, turning the east-end positions (now good to 2-5 m) into measurements",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "jorge-west-walk",
       "at": [
        -73.5,
@@ -1476,6 +1608,38 @@
       "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
       "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
       "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-east-house-fronts",
+      "at": [
+       -31.1,
+       131.9
+      ],
+      "look": [
+       -27.6,
+       129.9
+      ],
+      "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+      "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+      "priority": 3,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-west-house-front",
+      "at": [
+       -127.3,
+       185.3
+      ],
+      "look": [
+       -119.1,
+       187.4
+      ],
+      "ask": "From the flagged path at the west entrance: one photo square-on to the house on the south side, showing its porch, doors and the full spread of the bougainvillea.",
+      "why": "The bougainvillea and house front there are built from an oblique view",
+      "priority": 3,
       "state": "open",
       "photos": []
      },
@@ -1763,7 +1927,7 @@
     "placed": 460,
     "checks": {
      "matches": 44,
-     "differs": 17,
+     "differs": 18,
      "not-comparable": 51
     },
     "camerasSolved": 7,
@@ -1788,9 +1952,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 422,
+    "features": 424,
     "verified": 0,
-    "disputed": 14
+    "disputed": 15
    },
    "discrepancies": [
     {
@@ -1888,11 +2052,15 @@
     {
      "id": "photo-discrepancy:cde52ab571c82c77",
      "feature": "jorge_lane.json:jorge-lane-planting"
+    },
+    {
+     "id": "photo-discrepancy:d9aa2b2456ecf4d4",
+     "feature": "jorge_lane.json:jorge-lane-gateway"
     }
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 44,
+    "inProgress": 45,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1901,8 +2069,8 @@
    },
    "confidence": {
     "photographed": 57,
-    "estimated": 121,
-    "inferred": 11,
+    "estimated": 122,
+    "inferred": 12,
     "registry": 233,
     "gaps": 17
    },
@@ -1911,12 +2079,12 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 121 estimated, 11 inferred, 17 known gaps.",
-    "Placement: 0 of 422 features verified, 24 open discrepancies."
+    "How sure: 57 photographed, 122 estimated, 12 inferred, 17 known gaps.",
+    "Placement: 0 of 424 features verified, 25 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 14 spots",
+    "headline": "Photos needed: 24 spots",
     "requests": [
      {
       "id": "alberto",
@@ -2015,6 +2183,86 @@
       "photos": []
      },
      {
+      "id": "jorge-27-35-passage",
+      "at": [
+       -80.1,
+       159.1
+      ],
+      "look": [
+       -76.6,
+       165.1
+      ],
+      "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
+      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-gateway",
+      "at": [
+       -117.6,
+       182.0
+      ],
+      "look": [
+       -114.2,
+       180.0
+      ],
+      "ask": "The white gateway at the end of the flagged path from the Dalí car park: one photo square-on from 4 m in front, one from the far side looking back, and one of the wall and hedge to its left.",
+      "why": "The gateway is built from two distant photos; its size, gate leaves and what the path is made of beyond it are estimated",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-houses-56-86",
+      "at": [
+       -88.2,
+       164.9
+      ],
+      "look": [
+       -73.5,
+       156.4
+      ],
+      "ask": "Between the house rows (about 30 m): one photo along the lane every 10 m in each direction, and one square-on to each side showing doors, house numbers, planters, lamps and the strip of ground on the north side.",
+      "why": "Nothing along this stretch is photographed; only the path and a grass verge are built, with no walls, planters, doors or numbers",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-middle-lawn",
+      "at": [
+       -112.4,
+       179.0
+      ],
+      "look": [
+       -99.5,
+       171.5
+      ],
+      "ask": "Standing just through the gateway, one photo along the lane; then from the middle of the lawns one photo to each side (north and south), showing the trees, any beds and where the lawn ends.",
+      "why": "Lawns and one tree here come from the aerial only; path material and edges are assumed",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-silvia-junction",
+      "at": [
+       -95.1,
+       169.0
+      ],
+      "look": [
+       -89.9,
+       165.9
+      ],
+      "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
+      "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "calle-alberto-22-40-inside",
       "at": [
        -104.84,
@@ -2047,6 +2295,38 @@
       "photos": []
      },
      {
+      "id": "guillermo-patio-behind-wall",
+      "at": [
+       -29.3,
+       117.0
+      ],
+      "look": [
+       -34.7,
+       117.8
+      ],
+      "ask": "From Calle Guillermo beside the no-dogs sign, hold the camera up over the wall (or use a gateway) to photograph the patio behind the lawn wall: where the roofed part ends and what is planted.",
+      "why": "Dave agreed to open this patio on photo evidence; where the roofed block really ends is not seen",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-86-100",
+      "at": [
+       -62.3,
+       149.9
+      ],
+      "look": [
+       -55.3,
+       145.9
+      ],
+      "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+      "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "jorge-benches",
       "at": [
        -70.7,
@@ -2058,6 +2338,22 @@
       ],
       "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
       "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-east-square-on",
+      "at": [
+       -39.8,
+       136.9
+      ],
+      "look": [
+       -35.7,
+       143.8
+      ],
+      "ask": "Near the bench at the east end: one photo square-on to the house front on the south side and one square-on to the patio wall on the north side, each including a house corner from ground to roof.",
+      "why": "A square-on view of a registry house corner would let a camera be solved, turning the east-end positions (now good to 2-5 m) into measurements",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -2139,6 +2435,38 @@
       "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
       "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
       "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-east-house-fronts",
+      "at": [
+       -31.1,
+       131.9
+      ],
+      "look": [
+       -27.6,
+       129.9
+      ],
+      "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+      "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+      "priority": 3,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-west-house-front",
+      "at": [
+       -127.3,
+       185.3
+      ],
+      "look": [
+       -119.1,
+       187.4
+      ],
+      "ask": "From the flagged path at the west entrance: one photo square-on to the house on the south side, showing its porch, doors and the full spread of the bougainvillea.",
+      "why": "The bougainvillea and house front there are built from an oblique view",
+      "priority": 3,
       "state": "open",
       "photos": []
      },
