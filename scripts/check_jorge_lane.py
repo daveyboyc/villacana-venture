@@ -164,7 +164,7 @@ assert all(a_ < b_ for a_, b_ in runs_) and all(runs_[i][1] + 0.9 <= runs_[i + 1
 for d_ in [x for r in runs_ for x in r] + [pw_['from'] + 0.5, pw_['to']]:
     for s_ in (pl_['along'], pw_['along']):
         assert not housed(north(s_, d_)), ('west-side wall inside a house', s_, d_)
-for s_, d_ in gw['lamps'] + gw['strelitzia'] + [gw['tree'], gw['rose']]:
+for s_, d_ in gw['lamps'] + gw['strelitzia'] + [gw['rose']]:
     assert not housed(north(s_, d_)), (s_, d_)
 assert all(pw_['along'] < s_ < pave['along'] - pave['half'] for s_, d_ in gw['lamps'])
 # The patio behind the lawn wall (Dave, 2026-11-12): an open-patio registry correction, walled on the registry lines.
@@ -179,6 +179,18 @@ assert inside(*north(128, 14), fix['patio']) and not housed(north(128, 14)), 'th
 for zone in gw['plainWalls']:
     mid = north(sum(zone['along']) / 2, sum(zone['offset']) / 2)
     assert any(b['floors'] > 0 and min(math.hypot(mid[0] - (p[0] + q[0]) / 2, mid[1] - (p[1] + q[1]) / 2) for p, q in zip(b['ring'], b['ring'][1:] + b['ring'][:1])) < 4.5 for b in skeleton['buildings']), zone['id']
+plants_ = lane['planting']
+assert all(e in photos for e in plants_['evidence']) and plants_['basis']
+def signed(s_, o_): return (A[0] + ux * s_ - uz * o_, A[1] + uz * s_ + ux * o_)
+for item in plants_['trees'] + plants_['bougainvilleas']:
+    q = signed(*item['at'])
+    assert not housed(q), (item['id'], 'inside a house')
+    if 0 <= item['at'][0] <= 136.3:
+        assert off_path(q) > lane['path']['edgeHalf'] + 0.5, (item['id'], 'on the path')
+for row in plants_['shrubs']:
+    for s_ in row['along']:
+        q = spot(s_, row['offset'], row['side'])
+        assert not housed(q) and off_path(q) > lane['west']['pathHalf'] + row['width'] / 2 - 0.05, (row['id'], s_)
 loose = [spot(lane[k]['along'], lane[k]['offset'], lane[k]['side']) for k in ('plaqueHedge', 'lantana', 'grassCover', 'olive')]
 for p in loose:
     assert off_path(p) > jorge['width'] / 2 + 0.3 and not housed(p), p
@@ -203,6 +215,6 @@ assert off_path(fittings[1]) > lane['boundary']['offset'] + 0.4
 src = (ROOT / 'src/jorge-lane.ts').read_text()
 for f_ in ('src/slice.ts', 'src/facade-kit.ts'):
     assert 'inJorgePlainWall' in (ROOT / f_).read_text(), f_ + ' still puts generic openings on the plain walls'
-for name in ('grass(', 'jorge-west-flags', 'jorge-west-kerb', 'jorge-west-tree', 'jorge-guillermo-planter', 'jorge-guillermo-west-wall', 'jorge-guillermo-patio-wall', 'jorge-guillermo-west-planter', 'inJorgePlainWall', 'jorge-guillermo-octagons', 'seawardPavingCanvas', 'crazy-paving', 'dragonTree(', 'tallPalm(', 'guillermoPlanterTop', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
+for name in ('grass(', 'jorge-west-flags', 'jorge-west-kerb', 'jorge-west-tree', 'jorge-guillermo-planter', 'jorge-small-tree', 'jorge-bougainvillea', 'jorge-border-shrub', 'jorge-guillermo-west-wall', 'jorge-guillermo-patio-wall', 'jorge-guillermo-west-planter', 'inJorgePlainWall', 'jorge-guillermo-octagons', 'seawardPavingCanvas', 'crazy-paving', 'dragonTree(', 'tallPalm(', 'guillermoPlanterTop', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
     assert name in src, name
 print(f'Calle Jorge: flagged west entrance {west["from"]}-{west["to"]} m, Guillermo planter, 1 photographed bench and {len(aerial)} from the aerial, dressing {shown["from"]}-{shown["to"]} m only, {len(cross["lines"])} cross-paths, {len(lane["beds"])} beds, kerbed garden lawn, {len(gaps)} wall gaps, planting in Details behind the route guard, {len(covers)} covers, dragon tree, cactus, plaques and lamp PASS')

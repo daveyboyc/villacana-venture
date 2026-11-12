@@ -240,6 +240,23 @@ generic door, balcony and shutter on the two-storey block behind the wall, which
 The task stays in progress until Dave says the view is fine. The `plainWalls` list is the general
 tool: wherever a photo shows a garden wall where the model draws a house front, add the wall there.
 
+## Planting and lawns (13 November, task `jorge-planting`)
+
+From IMG_2229, IMG_2230, IMG_2697 and IMG_2773 (`planting` in the data), all Details:
+
+- Bougainvilleas are masses of purple bract, not green climbers: the wall climbers now carry
+  clusters of bracts (`wallClimber` in `src/clipped-plants.ts`). This changes the ones on the
+  house-23 front, over the CALLE DE TEODORO plaque, on the cactus-garden wall and on the south
+  house at the west entrance, which is now covered to first-floor height.
+- A tall bougainvillea at the house-23 corner and a small grey-green tree beside the bed.
+- A light-green broad-leaved tree on the plinth lawn, replacing the dark generic tree.
+- Bougainvillea spilling over the top of the lawn wall.
+- A row of low clipped shrubs along the north edge of the flagged west path.
+- The lawns are a darker, duller green.
+
+The house-23 group is checked in the Inspect view only (`docs/reviews/jorge-planting/`): no photo
+camera on record faces it.
+
 ## How these builds were checked, and what that is worth
 
 - Each change is rendered from the photo's position and compared with the photo by eye, by the

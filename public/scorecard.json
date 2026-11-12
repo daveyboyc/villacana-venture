@@ -487,7 +487,7 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 7,
+     "matches": 8,
      "differs": 2,
      "not-comparable": 5
     },
@@ -923,7 +923,7 @@
     "tagged": 53,
     "placed": 53,
     "checks": {
-     "matches": 4,
+     "matches": 5,
      "differs": 7,
      "not-comparable": 1
     },
@@ -1367,7 +1367,7 @@
     "tagged": 149,
     "placed": 149,
     "checks": {
-     "matches": 26,
+     "matches": 28,
      "differs": 5,
      "not-comparable": 11
     },
@@ -1381,7 +1381,7 @@
     "generated": 599
    },
    "placement": {
-    "features": 20,
+    "features": 21,
     "verified": 0,
     "disputed": 1
    },
@@ -1397,7 +1397,7 @@
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 16,
+    "inProgress": 17,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1406,7 +1406,7 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 15,
+    "estimated": 16,
     "inferred": 4,
     "registry": 0,
     "gaps": 2
@@ -1416,8 +1416,8 @@
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 15 estimated, 4 inferred, 2 known gaps.",
-    "Placement: 0 of 20 features verified, 2 open discrepancies."
+    "How sure: 1 photographed, 16 estimated, 4 inferred, 2 known gaps.",
+    "Placement: 0 of 21 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -1754,7 +1754,7 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 44,
+     "matches": 46,
      "differs": 15,
      "not-comparable": 51
     },
@@ -1780,7 +1780,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 413,
+    "features": 414,
     "verified": 0,
     "disputed": 13
    },
@@ -1876,7 +1876,7 @@
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 42,
+    "inProgress": 43,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1885,7 +1885,7 @@
    },
    "confidence": {
     "photographed": 57,
-    "estimated": 112,
+    "estimated": 113,
     "inferred": 11,
     "registry": 233,
     "gaps": 16
@@ -1895,8 +1895,8 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 112 estimated, 11 inferred, 16 known gaps.",
-    "Placement: 0 of 413 features verified, 22 open discrepancies."
+    "How sure: 57 photographed, 113 estimated, 11 inferred, 16 known gaps.",
+    "Placement: 0 of 414 features verified, 22 open discrepancies."
    ],
    "light": {
     "colour": "red",

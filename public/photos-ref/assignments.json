@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 413,
+  "features": 414,
   "photosCitedByModel": 174,
-  "modelFeaturesWithPhotoCitations": 159
+  "modelFeaturesWithPhotoCitations": 160
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1643,6 +1643,7 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-planting",
     "jorge_lane.json:jorge-lane-paths"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -1689,6 +1690,7 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-planting",
     "jorge_lane.json:jorge-lane-fittings"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -15760,7 +15762,8 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
-    "jorge_lane.json:jorge-lane-west"
+    "jorge_lane.json:jorge-lane-west",
+    "jorge_lane.json:jorge-lane-planting"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -17333,7 +17336,8 @@
     "jorge_lane.json:jorge-lane-verge",
     "jorge_lane.json:jorge-lane-guillermo-planter",
     "jorge_lane.json:jorge-lane-guillermo-paving",
-    "jorge_lane.json:jorge-lane-guillermo-west"
+    "jorge_lane.json:jorge-lane-guillermo-west",
+    "jorge_lane.json:jorge-lane-planting"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

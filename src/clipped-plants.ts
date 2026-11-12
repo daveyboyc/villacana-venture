@@ -127,7 +127,7 @@ export function clippedHedge(o: ClippedHedgeOptions): THREE.Group {
 }
 
 /** A loose shrub: rounder, airier, leaves sticking out further; woody stems at the base. */
-export function looseShrub(o: { width: number; depth: number; height: number; seed: number; leaf: LeafKind; leafSize: [number, number]; greens: string[]; stems?: number; flowers?: { count: number; colour: string } }): THREE.Group {
+export function looseShrub(o: { width: number; depth: number; height: number; seed: number; leaf: LeafKind; leafSize: [number, number]; greens: string[]; stems?: number; flowers?: { count: number; colour: string; size?: number } }): THREE.Group {
   const rng = seeded(o.seed), f = new Foliage(rng);
   const lift = o.height * 0.18, { mesh, surface } = hull(o.width * 0.46, o.height - lift, o.depth * 0.46, 2.6, rng, "#22341d", 0.09);
   mesh.position.y = lift; f.add(mesh);
@@ -149,7 +149,7 @@ export function looseShrub(o: { width: number; depth: number; height: number; se
   if (o.flowers) for (let i = 0; i < o.flowers.count; i++) {
     const [u, v] = sampleUV(rng, 0.2), { q, n } = surface(u, v, 1.08);
     q.y += lift;
-    f.leaf("petal", q, n, [0.07, 0.07], tone(o.flowers.colour, rng, 0.08));
+    f.leaf("petal", q, n, [o.flowers.size ?? 0.07, o.flowers.size ?? 0.07], tone(o.flowers.colour, rng, 0.08));
   }
   return f.build("loose-shrub");
 }
@@ -200,9 +200,20 @@ export function wallClimber(o: { length: number; height: number; depth: number; 
     const nn = new THREE.Vector3((rng() - 0.5) * 1.4, (rng() - 0.3) * 1.0, 1).normalize(), k = 0.8 + rng() * 0.5;
     f.leaf(rng() < 0.35 ? "glossy" : "small", new THREE.Vector3(x, y, z), nn, [0.11 * k, 0.07 * k], tone(greens[Math.floor(rng() * greens.length)], rng));
   }
-  for (let i = 0; i < o.flowers; i++) {
+  if (o.flowerColour) {
+    // Bougainvillea: papery bracts in clusters on the outside of the mass, thickest towards the top (IMG_2229, IMG_2697).
+    for (let made = 0; made < o.flowers;) {
+      const cx = rng() * o.length, cy = (0.3 + rng() ** 0.6 * 0.7) * topAt(cx), size = 5 + Math.floor(rng() * 6);
+      for (let k = 0; k < size && made < o.flowers; k++, made++) {
+        const x = Math.min(o.length, Math.max(0, cx + (rng() - 0.5) * 0.45)), y = Math.max(0.1, cy + (rng() - 0.5) * 0.4);
+        const z = 0.08 + o.depth * (0.55 + rng() * 0.55) * (0.4 + 0.6 * (1 - y / o.height));
+        const b = 0.8 + rng() * 0.5;
+        f.leaf("petal", new THREE.Vector3(x, y, z + 0.03), new THREE.Vector3((rng() - 0.5) * 1.2, (rng() - 0.3) * 1.0, 1), [0.12 * b, 0.1 * b], tone(o.flowerColour, rng, 0.14));
+      }
+    }
+  } else for (let i = 0; i < o.flowers; i++) {
     const x = rng() * o.length, y = (0.35 + rng() * 0.65) * topAt(x), z = 0.06 + rng() * o.depth * 0.7;
-    f.leaf("star", new THREE.Vector3(x, y, z + 0.02), new THREE.Vector3((rng() - 0.5) * 0.6, (rng() - 0.5) * 0.6, 1), o.flowerColour ? [0.06, 0.06] : [0.035, 0.035], o.flowerColour ?? "#f7f5ee");
+    f.leaf("star", new THREE.Vector3(x, y, z + 0.02), new THREE.Vector3((rng() - 0.5) * 0.6, (rng() - 0.5) * 0.6, 1), [0.035, 0.035], "#f7f5ee");
   }
   return f.build("wall-climber");
 }

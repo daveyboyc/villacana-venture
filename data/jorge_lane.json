@@ -51,15 +51,32 @@
   ],
   "climbers": [
     { "id": "house-23-tree", "side": "lawn", "offset": 7.75, "from": 117, "length": 3.2, "height": 3.2, "flowers": 14, "colour": "#f3c9dc" },
-    { "id": "house-23-bougainvillea", "side": "lawn", "offset": 7.75, "from": 112.6, "length": 2.4, "height": 3.6, "flowers": 70, "colour": "#b0478f" },
-    { "id": "teodoro-plaque-climber", "side": "lawn", "offset": 4.45, "from": 98.5, "length": 2.6, "height": 2.5, "flowers": 14, "colour": "#b0478f" },
+    { "id": "house-23-bougainvillea", "side": "lawn", "offset": 7.75, "from": 112.6, "length": 2.4, "height": 3.6, "flowers": 260, "colour": "#b0478f" },
+    { "id": "teodoro-plaque-climber", "side": "lawn", "offset": 4.45, "from": 98.5, "length": 2.6, "height": 2.5, "flowers": 60, "colour": "#b0478f" },
     { "id": "guillermo-lawn-wall-bougainvillea", "side": "hedge", "offset": 10.85, "from": 124.7, "length": 6.9, "height": 2.2, "flowers": 45, "colour": "#a8358f", "sparse": true },
-    { "id": "garden-wall-bougainvillea", "side": "hedge", "offset": 10.45, "from": 98.6, "length": 5.6, "height": 2.4, "flowers": 26, "colour": "#b0478f" }
+    { "id": "garden-wall-bougainvillea", "side": "hedge", "offset": 10.45, "from": 98.6, "length": 5.6, "height": 2.4, "flowers": 220, "colour": "#b0478f" }
   ],
   "plainFronts": [
     { "id": "cactus-garden-walls", "side": "hedge", "along": [94.6, 107], "offset": [1, 11.5], "evidence": ["IMG_2183.jpg", "IMG_2233.jpg"] },
     { "id": "house-23-front", "side": "lawn", "along": [107, 118.5], "offset": [6.5, 9.5], "evidence": ["IMG_2229.jpg"] }
   ],
+  "planting": {
+    "evidence": ["IMG_2229.jpg", "IMG_2230.jpg", "IMG_2697.jpg", "IMG_2773.jpg"],
+    "turf": "#5f8044",
+    "trees": [
+      { "id": "house-23-small-tree", "at": [111.4, 6.5], "height": 3.4, "crown": 2.3, "kind": "olive" },
+      { "id": "plinth-lawn-tree", "at": [130.3, -8.4], "height": 2.5, "crown": 1.8, "kind": "broadleaf" }
+    ],
+    "bougainvilleas": [
+      { "id": "house-23-pillar", "at": [108.9, 7.1], "width": 1.5, "height": 3.6, "flowers": 320, "colour": "#a43a8d" },
+      { "id": "patio-wall-spill", "at": [127.6, -11.35], "width": 3.2, "height": 1.1, "lift": 2.9, "flowers": 150, "colour": "#a8358f" },
+      { "id": "patio-corner-pink", "at": [130.6, -12.6], "width": 1.6, "height": 1.3, "lift": 2.7, "flowers": 90, "colour": "#c2507f" }
+    ],
+    "shrubs": [
+      { "id": "west-lawn-border", "side": "hedge", "offset": 1.9, "along": [9.5, 11.3, 13.1, 20.8, 22.6, 24.4], "width": 0.95, "height": 0.75 }
+    ],
+    "basis": "Read 2026-11-13. IMG_2229 and IMG_2230 show, against the house-23 front on the lawn side, a small grey-green tree about 3.5 m high beside the kerbed bed and a tall bougainvillea in full purple bract at the house corner; the bougainvilleas on these walls are masses of colour, not green climbers. IMG_2697 shows the house on the south side of the west entrance covered to first-floor height in purple bougainvillea, and a row of low clipped shrubs along the north edge of the flagged path under the round trees. IMG_2773 shows a small light-green broad-leaved tree on the plinth lawn (replacing the dark generic tree first put there) and climbers spilling over the top of the lawn wall. The lawns in all of these are a darker, duller green than first modelled. Positions are read from the photos and good to about 1.5 m; trees and shrubs are Details."
+  },
   "plaqueHedge": { "along": 96.9, "side": "lawn", "offset": 2, "length": 3.4, "depth": 1, "height": 1.25 },
   "lantana": { "along": 99.3, "side": "lawn", "offset": 3.3 },
   "grassCover": { "along": 99.6, "side": "lawn", "offset": 1.6, "radius": 0.4 },
@@ -123,7 +140,7 @@
       { "along": 19.5, "side": "hedge", "offset": 3.8 }
     ],
     "border": { "side": "lawn", "offset": 2.7, "from": 8.4, "to": 27, "every": 1.55 },
-    "climber": { "id": "west-house-bougainvillea", "side": "lawn", "offset": 3.3, "from": 19, "length": 6, "height": 4.6, "flowers": 520, "colour": "#a8358f" },
+    "climber": { "id": "west-house-bougainvillea", "side": "lawn", "offset": 3.3, "from": 19, "length": 6, "height": 4.8, "flowers": 900, "colour": "#a8358f" },
     "basis": "IMG_2280 and IMG_2696-2698 stand in the Pintor Dalí car park at the west end of the mapped Calle Jorge line and look east-north-east along it (headings 56 to 65 degrees; the line runs 60). They show a path of irregular sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays, the left kerb ending in a short return beside a black lamp post that carries a camera, then lawn on both sides with the flagged path running on to a white gateway. Two round clipped trees stand on the left (north) lawn; on the right a border of clipped and yellow-flowering shrubs runs along a house with a purple bougainvillea over its first floor. The aerial agrees: parked cars to about 7 m, a 9 m deep lawn with two tree crowns on the north side, a house 3.4 m off on the south side, and a white mark on the line at about 28 m read as the gateway. The flags are built to 28 m; the gateway itself, and whether flags or terracotta lie beyond it, are not known. Kerb length, path width and plant positions are estimated to about 1 m; no camera is solved."
   },
   "guillermoPlanter": {
@@ -153,7 +170,6 @@
     "lamps": [[134.2, 11.9], [134.2, 21.6]],
     "border": { "along": 134.93, "half": 0.06, "from": -5, "to": 25 },
     "strelitzia": [[132.6, 13.5], [132.4, 18], [132.6, 24], [126.4, 12.6], [129.8, 13.2]],
-    "tree": [130.3, 8.4],
     "rose": [131.9, 6.3],
     "basis": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from well over a storey high on the left to about 2.6 m at the lane (6.6 times the 0.4 m sign plate, and 2.8 m against the 3.8 m lamp post), where it ends in a pier carrying a no-dogs sign near its top; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11 m north of the Jorge line). Dave agreed on 12 November to treat that part's east portion as an open walled patio on the photo evidence (data/registry_corrections.json, openPatios), so the lawn wall is now one wall from the west block's corner to the lane, its top falling from 3.9 m to 2.6 m (a one-photo estimate: the wall is about 3.9 m at the left of the frame if the sign plate is 0.4 m and the lamp post 3.8 m), with the patio's other sides walled at 2.1 m on the registry lines and strelitzia showing above. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Where the roofed west block ends is not seen in any photo. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m."
   },

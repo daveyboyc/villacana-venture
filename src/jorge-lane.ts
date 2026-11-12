@@ -209,7 +209,7 @@ function grass(side: "lawn" | "hedge"): THREE.Mesh {
   geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
   geo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
   geo.setIndex(idx); geo.computeVertexNormals();
-  const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: surfaceTexture("turf"), color: "#6d8f4c", roughness: 1, side: THREE.DoubleSide }));
+  const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ map: surfaceTexture("turf"), color: data.planting.turf, roughness: 1, side: THREE.DoubleSide }));
   mesh.name = `jorge-grass-${side}`; mesh.receiveShadow = true;
   return mesh;
 }
@@ -442,6 +442,17 @@ function guillermoPlanter(top: (d: number) => number, material: THREE.Material):
   return mesh;
 }
 
+/** A small garden tree: a slim leaning trunk and a loose leafy crown. "olive" is grey-green with small leaves, "broadleaf" light green with large ones (IMG_2229, IMG_2773). */
+function leafyTree(o: { height: number; crown: number; kind: string; seed: number }): THREE.Group {
+  const g = new THREE.Group(), olive = o.kind === "olive", crownH = o.crown * 0.85, top = o.height - crownH * 0.75;
+  const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.085, top + 0.3, 8), new THREE.MeshStandardMaterial({ color: olive ? "#6d6356" : "#7a6a55", roughness: 1 }));
+  trunk.position.set(0.05, (top + 0.3) / 2 - 0.15, 0); trunk.rotation.z = -0.05; trunk.castShadow = true; g.add(trunk);
+  const crown = looseShrub({ width: o.crown, depth: o.crown * 0.9, height: crownH, seed: o.seed, leaf: olive ? "narrow" : "glossy", leafSize: olive ? [0.09, 0.03] : [0.24, 0.13],
+    greens: olive ? ["#6f8061", "#7d8d6c", "#5f7154"] : ["#5f8f3a", "#70a044", "#528034"], stems: 3 });
+  crown.position.y = top - crownH * 0.25; g.add(crown);
+  g.name = "leafy-tree";
+  return g;
+}
 /** Ground level beside the Calle Guillermo paving `d` metres north of the Jorge line. */
 const guillermoGround = (d: number) => guillermoLaneY(d) - 0.33;
 /** A box beside Calle Guillermo between two [station, metres north] points, standing on the lane's own ground (not draped) and carried 0.4 m below it. */
@@ -697,9 +708,29 @@ export function addJorgeLane(scene: THREE.Scene): void {
       }
     }
     for (const [s, d] of gw.strelitzia) { const p = at(s, -d); sprite("bird_of_paradise", p, 0.75, "jorge-guillermo-strelitzia"); }
-    sprite("tree", at(gw.tree[0], -gw.tree[1]), 0.42, "jorge-guillermo-lawn-tree");
     const rose = at(gw.rose[0], -gw.rose[1]);
     if (clear(rose, 0.5)) stand(looseShrub({ width: 0.9, depth: 0.8, height: 0.8, seed: seed++, leaf: "small", leafSize: [0.05, 0.035], greens: ["#3f5a30", "#4a6636"], stems: 6, flowers: { count: 14, colour: "#d2476b" } }), rose, 0, 0.03, "jorge-guillermo-rose");
+  }
+  // Garden planting read from the photos (data.planting): small trees, bougainvillea in full bract, the shrub border at the west entrance.
+  {
+    const pl = data.planting;
+    for (const t of pl.trees) {
+      const p = at(t.at[0], t.at[1]);
+      if (!inHouse(p[0], p[1]) && clear(p, 0.35)) stand(leafyTree({ height: t.height, crown: t.crown, kind: t.kind, seed: seed++ }), p, seed, 0.03, "jorge-small-tree");
+    }
+    for (const b of pl.bougainvilleas) {
+      const p = at(b.at[0], b.at[1]), lift = (b as { lift?: number }).lift;
+      if (inHouse(p[0], p[1]) || !clear(p, 0.4)) continue;
+      const mass = looseShrub({ width: b.width, depth: b.width * 0.7, height: b.height, seed: seed++, leaf: "small", leafSize: [0.07, 0.05], greens: ["#3d5a2f", "#4a6936", "#35502a"], stems: lift ? 0 : 5, flowers: { count: b.flowers, colour: b.colour, size: 0.12 } });
+      mass.rotation.y = yawOf(jorgeAt(0).along);
+      // A mass spilling over a wall top sits level with the wall, on the lane's own ground; a free-standing one stands on its own.
+      if (lift) level(mass, p, guillermoGround(-b.at[1]) + lift, "jorge-bougainvillea"); else stand(mass, p, mass.rotation.y, 0.03, "jorge-bougainvillea");
+    }
+    for (const row of pl.shrubs) for (const s of row.along) {
+      const p = jorgeSide(s, row.offset, row.side).at;
+      if (inHouse(p[0], p[1]) || !clear(p, 0.3)) continue;
+      stand(looseShrub({ width: row.width, depth: row.width, height: row.height, seed: seed++, leaf: "small", leafSize: [0.06, 0.04], greens: shrubGreens, stems: 5 }), p, 0, 0.03, "jorge-border-shrub");
+    }
   }
   // One of the tall slender palms on the main-pool lawn below the lane (IMG_2764, IMG_2765).
   {
