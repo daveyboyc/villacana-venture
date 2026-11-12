@@ -189,3 +189,18 @@ as they were; instead the garden behind the wall's east end now falls from stree
 level at the house fronts to 1 m above the paseo at the wall (`levels.gardenFall` in
 `data/main_pool.json`, see docs/MAIN_POOL.md). `check_paseo_wall.py` now expects
 0.3-1.3 m all along. The fall's shape is estimated; IMG_2227 calls it a planted slope.
+
+## Barraka facade (12 November 2026)
+
+The registry part `6364501UF1366S_part8` stays one floor and its ring is unchanged.
+The wall is 4.8 m, from the black door in IMG_2618 (about 2.05 m, and about 2.4
+times shorter than the parapet). The 2014-15 laser survey still has this roof at
+a median of 2.89 m and a high point of 3.67 m; that figure is recorded in the
+feature's trust note and is not used to put the clerestory inside the old 3 m
+wall. `data/barraka_facade.json` and `src/barraka-facade.ts` put two groups of
+three windows, a timber band, the door and two vents on the north-east wall,
+eight clerestory windows, two red awnings and the glazed lettering on the
+south-west front, and a glazed awning bay plus one small window on the
+north-west corner, with a thatched eaves and a rooftop tank. Stations along the
+walls are estimates of about a metre. The cooking shelter and the slot drains
+are still gaps.

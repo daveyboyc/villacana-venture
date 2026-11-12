@@ -220,6 +220,9 @@ def features(s):
     add('barraka_frontage.json:'+lounge['id'],lounge['name'],'reference feature','photo interpretation; seasonal furniture, position about 3 m',evidence=lounge['evidence'],points=[lounge['centre'],*lounge['rope']['posts'],lounge['menuStand'],lounge['easel']])
     crossing=frontage['crossing']
     add('barraka_frontage.json:'+crossing['id'],crossing['name'],'reference feature','photo/aerial interpretation; flush marking, position about 2 m',evidence=crossing['evidence'],points=[crossing['at']])
+    barraka_facade=json.loads((ROOT/'data/barraka_facade.json').read_text())
+    facade=barraka_facade['facade']
+    add('barraka_facade.json:'+facade['id'],facade['name'],'reference feature',facade['trust'],evidence=facade['evidence'],ring=next(b['ring'] for b in s['buildings'] if b['id']==barraka_facade['buildingId']))
     fence=json.loads((ROOT/'data/seafront_fence.json').read_text())
     a=math.radians(26); unturn=lambda p:[round(p[0]*math.cos(a)+p[1]*math.sin(a),2),round(-p[0]*math.sin(a)+p[1]*math.cos(a),2)]
     for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp'),('railing','Green bar railing on a sandstone plinth along the big-pool lawn')):

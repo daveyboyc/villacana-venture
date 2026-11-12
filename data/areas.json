@@ -533,12 +533,14 @@
    ],
    "data": [
     "data/levels_survey.json",
-    "data/barraka_frontage.json"
+    "data/barraka_frontage.json",
+    "data/barraka_facade.json"
    ],
    "src": [
     "src/seafront.ts",
     "src/seaside.ts",
-    "src/barraka-frontage.ts"
+    "src/barraka-frontage.ts",
+    "src/barraka-facade.ts"
    ],
    "notes": [
     "The beach is mixed sand, stones and rounded pebbles, not uniform pale sand (IMG_2300).",
@@ -549,7 +551,7 @@
     "The old 25m GPS conflict was computed against the wrong southwest aisle and is retracted as evidence of a camera error. Raw pins remain unchanged; IMG_2347 lies roughly 6.5m from the tentative NE-axis landward end. Registry parts6465801UF1366N_part5/part6 remain non-standing dashed outlines; their photo citations legitimately support absence of a building, not cooking-hut identity.",
     "27 Oct: grass and shrubs on the beach side of the paseo in front of the gateway and railings up to Barraka (Dave: Barraka used to sit inside Villacana and the grass went further out). Rough outline from the aerial and IMG_2226 in data/beach_verge.json; close photos wanted for edges and shrub sizes.",
     "4 Nov (barraka-frontage-paseo-furniture): IMG_2604 (pin +-2.1 m), IMG_2609, IMG_2631, IMG_2607/2608 show Barraka's roped lounge on the grass beside the paseo: timber posts with white rope swags along the paving edge from the restaurant's west corner, two cream-cushioned wicker sofas with dark woven pod armchairs facing the restaurant around a low table and a closed cream parasol, a black wrought-iron menu stand, an easel sign and terracotta pots. Built as Details furniture (data/barraka_frontage.json): arrangement as photographed, position estimated to about 3 m from the bearings of IMG_2604 and IMG_2631; IMG_2607/2608/2609 were taken from under the terrace awning, so their pins (+-12-19 m) are not used. The same photos show the big-pool lawn railing is dark green bars on a sandstone plinth, not white: only its finish changed (data/seafront_fence.json).",
-    "Open (barraka-facade): the registry gives Barraka one floor (3 m) and the 2014-15 laser survey a roof of about 2.9-3.7 m, but IMG_2604/2618/2619 show a white two-level building: a black door, two vents and a brown timber band under three groups of brown-framed windows (3+3+3) on the north-east wall, a thatched roof edge and a rooftop tank, and glazing under red awnings with frosted BARRAKA BEACH lettering on the south-west and north-west faces; the wall reads about 4.5-5 m against a 2.1 m door. The mass, openings and awnings are not built until the height is settled. The thatched cooking shelter, net-covered mound and kayaks (IMG_2619) and the slot drains along the glazed wall and across the terrace (IMG_2610, 2630, 2631) are also unbuilt; the sandbags are temporary."
+    "12 Nov (barraka-facade): the parapet is 4.8 m. IMG_2618's black door, taken as 2.05 m, is about 2.4 times shorter than the wall, so the wall reads about 4.9 m; the model uses 4.8 m. The 2014-15 laser survey still records this roof at a median of 2.89 m and a high point of 3.67 m, below that parapet, and is kept as the roof deck or an older roof rather than a reason to put the windows inside the registry's 3 m storey. The registry ring is unchanged. The north-east wall has two groups of three brown-framed windows (IMG_2618 square-on; the task brief's 3+3+3 over-counted the same photo, and IMG_2615 is that wall seen obliquely), a timber band, a black door under the landward group, a louvred vent between the groups and a small slot vent below the band. The south-west front (IMG_2604) has eight clerestory windows, two red scalloped awnings, glazing with frosted BARRAKA BEACH lettering, a thatched eaves and a rooftop tank. The north-west corner (IMG_2630, IMG_2611) is glazed under one awning for about 5.5 m, then plain with one small window. Stations along the walls are estimates of about a metre from unsolved cameras. Still unbuilt: the thatched cooking shelter, net-covered mound and kayaks (IMG_2619) and the slot drains (IMG_2610, 2630, 2631). The sandbags are temporary and left out."
    ]
   },
   {

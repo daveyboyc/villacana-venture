@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 424,
-  "photosCitedByModel": 183,
-  "modelFeaturesWithPhotoCitations": 170
+  "features": 425,
+  "photosCitedByModel": 186,
+  "modelFeaturesWithPhotoCitations": 171
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3301,6 +3301,20 @@
     "IMG_2484.jpg",
     "IMG_2609.jpg",
     "IMG_2631.jpg"
+   ]
+  },
+  {
+   "id": "barraka_facade.json:barraka-facade",
+   "name": "Barraka restaurant: parapet, clerestory windows, door, glazed awnings and thatched edge",
+   "kind": "reference feature",
+   "source": "Wall height: on IMG_2618 the parapet is about 2.4 times the black door. Taking the door as 2.05 m gives a wall of about 4.9 m; the model uses 4.8 m. The 2014-15 laser survey records this roof at a median of 2.89 m and a high point of 3.67 m (docs/reviews/lidar-levels, 6364501UF1366S_part8), below the photographed parapet. That survey figure is kept as the roof deck or an older roof, not as a reason to squash the clerestory into the registry's 3 m storey. The ring is not moved. North-east openings are read from the square-on IMG_2618 (pin +-2.4 m, camera not solved): two groups of three brown-framed windows, not the three groups of three the task brief counted; IMG_2615 is the same wall seen obliquely. The door is under the landward group. The louvred vent sits in the parapet between the groups; the small slot vent below the timber band is the second vent in IMG_2615 and its station is the less certain of the two. South-west: IMG_2604 shows eight clerestory windows, two red scalloped awnings, glazing, frosted BARRAKA BEACH lettering, a thatched eaves and a rooftop tank. North-west: IMG_2630 and IMG_2611 show glazing and one awning on the west corner, then a plain wall with one small window. Stations along the walls are estimates of about a metre. Lettering, scallops and the tank are simplified. Not built: the cooking shelter, net mound and kayaks (IMG_2619), the slot drains (IMG_2610, IMG_2630, IMG_2631), and the temporary sandbags.",
+   "evidence": [
+    "IMG_2615.jpg",
+    "IMG_2618.jpg",
+    "IMG_2619.jpg",
+    "IMG_2630.jpg",
+    "IMG_2604.jpg",
+    "IMG_2611.jpg"
    ]
   },
   {
@@ -16255,6 +16269,12 @@
   },
   {
    "from": "photo:IMG_2604.jpg",
+   "to": "barraka_facade.json:barraka-facade",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2604.jpg",
    "to": "seafront_fence.json:guillermo-beach-gate",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -16534,6 +16554,12 @@
    "angleOffset": 29.3
   },
   {
+   "from": "photo:IMG_2611.jpg",
+   "to": "barraka_facade.json:barraka-facade",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2612.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -16655,6 +16681,12 @@
    "angleOffset": 29.2
   },
   {
+   "from": "photo:IMG_2615.jpg",
+   "to": "barraka_facade.json:barraka-facade",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2616.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -16722,6 +16754,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2618.jpg",
+   "to": "barraka_facade.json:barraka-facade",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2619.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -16739,6 +16777,12 @@
    "relation": "possibly-in-view",
    "distance": 27.8,
    "angleOffset": 26.2
+  },
+  {
+   "from": "photo:IMG_2619.jpg",
+   "to": "barraka_facade.json:barraka-facade",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2620.jpg",
@@ -16996,6 +17040,12 @@
    "to": "area:beach",
    "relation": "camera-nearby",
    "gap": 5.8
+  },
+  {
+   "from": "photo:IMG_2630.jpg",
+   "to": "barraka_facade.json:barraka-facade",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2630.jpg",

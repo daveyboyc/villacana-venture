@@ -489,7 +489,7 @@
     "checks": {
      "matches": 7,
      "differs": 3,
-     "not-comparable": 5
+     "not-comparable": 7
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1695,7 +1695,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 15
+     "not-comparable": 21
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1707,7 +1707,7 @@
     "generated": 0
    },
    "placement": {
-    "features": 12,
+    "features": 13,
     "verified": 0,
     "disputed": 2
    },
@@ -1722,8 +1722,8 @@
     }
    ],
    "tasks": {
-    "open": 3,
-    "inProgress": 2,
+    "open": 2,
+    "inProgress": 3,
     "titles": [
      "Correct reported Barraka planter placement against registered source evidence",
      "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
@@ -1732,17 +1732,17 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 11,
+    "estimated": 12,
     "inferred": 1,
     "registry": 0,
-    "gaps": 3
+    "gaps": 5
    },
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 57, 55 placed; no camera solved.",
-    "How sure: 0 photographed, 11 estimated, 1 inferred, 3 known gaps.",
-    "Placement: 0 of 12 features verified, 2 open discrepancies."
+    "How sure: 0 photographed, 12 estimated, 1 inferred, 5 known gaps.",
+    "Placement: 0 of 13 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "amber",
@@ -1805,7 +1805,7 @@
     "checks": {
      "matches": 0,
      "differs": 0,
-     "not-comparable": 15
+     "not-comparable": 19
     },
     "camerasSolved": 0,
     "stationsHolding": [],
@@ -1928,7 +1928,7 @@
     "checks": {
      "matches": 44,
      "differs": 18,
-     "not-comparable": 51
+     "not-comparable": 57
     },
     "camerasSolved": 7,
     "stationsHolding": [
@@ -1952,7 +1952,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 424,
+    "features": 425,
     "verified": 0,
     "disputed": 15
    },
@@ -2059,8 +2059,8 @@
     }
    ],
    "tasks": {
-    "open": 42,
-    "inProgress": 46,
+    "open": 41,
+    "inProgress": 47,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -2069,18 +2069,18 @@
    },
    "confidence": {
     "photographed": 57,
-    "estimated": 122,
+    "estimated": 123,
     "inferred": 12,
     "registry": 233,
-    "gaps": 19
+    "gaps": 21
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 122 estimated, 12 inferred, 19 known gaps.",
-    "Placement: 0 of 424 features verified, 25 open discrepancies."
+    "How sure: 57 photographed, 123 estimated, 12 inferred, 21 known gaps.",
+    "Placement: 0 of 425 features verified, 25 open discrepancies."
    ],
    "light": {
     "colour": "red",

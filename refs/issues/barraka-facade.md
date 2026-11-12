@@ -7,8 +7,8 @@ Task `barraka-facade` · area **Barraka and the beach** · priority P2 · struct
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/barraka-beach.md` and the contact sheet `villacana-reference/contact-sheets/barraka-beach.jpg`
 - docs: `docs/SEAFRONT.md`, `docs/LEVELS.md`
-- data: `data/levels_survey.json`, `data/barraka_frontage.json`
-- src: `src/seafront.ts`, `src/seaside.ts`, `src/barraka-frontage.ts`
+- data: `data/levels_survey.json`, `data/barraka_frontage.json`, `data/barraka_facade.json`
+- src: `src/seafront.ts`, `src/seaside.ts`, `src/barraka-frontage.ts`, `src/barraka-facade.ts`
 
 ## Photos to build from
 
@@ -17,7 +17,7 @@ Task `barraka-facade` · area **Barraka and the beach** · priority P2 · struct
 - `public/photos-ref/IMG_2619.jpg`: Barraka thatched cooking shelter, net-covered mound and kayaks on the sand (ground — pin ±2.3 m; looks at Thatched cooking shelter and net-covered mound)
 - `public/photos-ref/IMG_2630.jpg`: Barraka's glazed north-west frontage with sandbags along the slot drain (ground — pin ±6.8 m; looks at Barraka north-west glazed frontage)
 - `public/photos-ref/IMG_2604.jpg`: Paseo past the Barraka restaurant with lamp post and lounge seating (ground — pin ±2.1 m; looks at Barraka beach restaurant)
-- `public/photos-ref/IMG_2611.jpg`: Paseo lane beside Barraka's north-west wall looking north-east (ground — pin ±3.2 m)
+- `public/photos-ref/IMG_2611.jpg`: Paseo lane beside Barraka's north-west wall looking north-east (ground — pin ±3.2 m; looks at Barraka north-west wall)
 
 ## Build
 

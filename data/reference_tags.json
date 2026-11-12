@@ -4941,7 +4941,9 @@
    "facades",
    "signage"
   ],
-  "note": "Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature."
+  "looksAt": [25.3, 103.0],
+  "subject": "Barraka north-west wall",
+  "note": "Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. looksAt is the point 6 m along the phone heading from the pin at the west corner, beside the north-west wall; the same point the unsolved render already aimed at. Not a solved camera."
  },
  "IMG_2612.jpg": {
   "title": "Junction at Barraka's north corner: stone planter bed, bollard and Lisa's Shop sign",
