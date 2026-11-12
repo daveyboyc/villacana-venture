@@ -253,6 +253,32 @@ def features(s):
     k,a=sills['footpathKerb'],sills['approach']
     add('door_sills.json:'+k['id'],k['name'],'reference feature','photo-supported kerb on the mapped car park edge; extent estimated',evidence=k['evidence'],points=[[k['origin'][i]+k['along'][i]*t for i in range(2)] for t in (0,k['length'])])
     add('door_sills.json:'+a['id'],a['name'],'reference feature','photo-supported approach square to the registry arch recess; length estimated',evidence=a['evidence'],points=[[a['arch'][i]+a['outward'][i]*t for i in range(2)] for t in (0,a['foot'])])
+    lawn=json.loads((ROOT/'data/main_pool_lawn.json').read_text())
+    half=lawn['paths']['width']/2
+    def ribbon(points):
+        left,right=[],[]
+        for i,p in enumerate(points):
+            b=points[i-1] if i else p; a=points[i+1] if i<len(points)-1 else p
+            dx,dz=a[0]-b[0],a[1]-b[1]; n=math.hypot(dx,dz) or 1
+            left.append([round(p[0]+dz/n*half,2),round(p[1]-dx/n*half,2)])
+            right.append([round(p[0]-dz/n*half,2),round(p[1]+dx/n*half,2)])
+        return left+right[::-1]
+    add('main_pool_lawn.json:'+lawn['paths']['id'],lawn['paths']['name'],'reference feature',lawn['trust'],evidence=lawn['paths']['evidence'],ring=ribbon(lawn['paths']['lines'][0]))
+    add('main_pool_lawn.json:'+lawn['apron']['id'],lawn['apron']['name'],'reference feature',lawn['trust'],evidence=lawn['apron']['evidence'],ring=lawn['apron']['ring'])
+    fit=lawn['fittings']
+    add('main_pool_lawn.json:'+fit['id'],fit['name'],'reference feature',lawn['trust'],evidence=fit['evidence'],points=fit['bollards']+fit['bins'])
+    rooms=lawn['rooms']
+    add('main_pool_lawn.json:'+rooms['id'],rooms['name'],'reference feature',lawn['trust'],evidence=rooms['evidence'],points=[p for w in rooms['walls'] for p in w['points']]+[q['at'] for q in rooms['plants']])
+    hedge=lawn['hedge']
+    add('main_pool_lawn.json:'+hedge['id'],hedge['name'],'reference feature',lawn['trust'],evidence=hedge['evidence'],points=hedge['points']+[hedge['shower']])
+    glass=lawn['glass']
+    add('main_pool_lawn.json:'+glass['id'],glass['name'],'reference feature',lawn['trust'],evidence=glass['evidence'],points=glass['gaps'])
+    deck=lawn['deck']
+    add('main_pool_lawn.json:'+deck['id'],deck['name'],'reference feature',lawn['trust'],evidence=deck['evidence'],points=[[-16.6,102.0],[-29.2,90.5]])
+    steps=lawn['steps']
+    add('main_pool_lawn.json:'+steps['id'],steps['name'],'reference feature',lawn['trust'],evidence=steps['evidence'],points=[[-35.0,97.51],[-31.04,104.82]])
+    shop=lawn['shop']
+    add('main_pool_lawn.json:'+shop['id'],shop['name'],'reference feature',lawn['trust'],evidence=shop['evidence'],points=[shop['at']])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

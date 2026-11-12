@@ -37,6 +37,7 @@ import {paseoWallCovers, paseoWallOutline} from "./paseo-wall";
 import paseoWall from "../data/paseo_wall.json";
 import seafrontFence from "../data/seafront_fence.json";
 import { seafrontFenceRings } from "./seafront-fence";
+import { lawnGroundRings, lawnSolidRings } from "./main-pool-lawn";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
 import middlePool from "../data/middle_pool.json";
@@ -231,6 +232,15 @@ async function boot(): Promise<void> {
     for (const ring of seafrontFenceRings()) fence.append(el("path", { d: path(ring), fill: "#fffdf3", stroke: "#6d6a5f", "stroke-width": 0.06 }));
     const fenceTitle = el("title", {}); fenceTitle.textContent = `White wall, arched gateway and green bar railings on a sandstone plinth: ${seafrontFence.trust} · ${seafrontFence.evidence.join(", ")}`; fence.append(fenceTitle);
     seafront.append(fence);
+    const mainPoolRing = skeleton.pools.find((p) => p.id === "main")?.ring;
+    const toddlerPoolRing = skeleton.pools.find((p) => p.id === "toddler")?.ring;
+    if (mainPoolRing && toddlerPoolRing) {
+      const lawn = el("g", { id: "main-pool-lawn" });
+      for (const ring of lawnGroundRings()) lawn.append(el("path", { d: path(ring), fill: "#d7a394", stroke: "#b88878", "stroke-width": 0.08 }));
+      for (const ring of lawnSolidRings(mainPoolRing, toddlerPoolRing)) lawn.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#8aa0a6", "stroke-width": 0.04 }));
+      const lawnTitle = el("title", {}); lawnTitle.textContent = "Main-pool lawn paths, walls and glass fence, estimated from the November photos"; lawn.append(lawnTitle);
+      seafront.append(lawn);
+    }
     const verge=el("path",{id:"barraka-front-verge",d:path(vergeRing),fill:"#8c9a5b","fill-opacity":.85,stroke:"#5d6b3a","stroke-width":.15});
     const vergeTitle=el("title",{});vergeTitle.textContent=`Grass and planting in front of the gateway and railings: ${beachVerge.trust}`;verge.append(vergeTitle);seafront.append(verge);
     for(const [x,z,r] of vergeClumps) seafront.append(el("circle",{cx:x,cy:z,r,fill:"#4f6b3a",stroke:"#33452a","stroke-width":.1}));

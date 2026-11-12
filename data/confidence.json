@@ -83,6 +83,42 @@
    "level": "estimated",
    "why": "IMG_2764 and IMG_2765 show tall slender palms on the main-pool lawn, the nearest about 19 m from the camera on a bearing of about 330 degrees. One is built there, 15 m tall; position good to about 4 m. Two short thick generic palms the photos contradict were removed (Dave, 2026-11-12: the palm is inaccurate)."
   },
+  "main_pool_lawn.json:lawn-pink-paths": {
+   "level": "estimated",
+   "why": "IMG_2764, IMG_2765, IMG_2603, IMG_2761 and IMG_2763 show wide pink resin paths across the lawn. The lines are set from those camera pins and headings, good to about 4 m, and the 2.4 m width is by eye."
+  },
+  "main_pool_lawn.json:lawn-flagstone-apron": {
+   "level": "estimated",
+   "why": "IMG_2602 and IMG_2763 show irregular pink-beige slabs in front of the arched lawn gate. The apron is placed between that camera and the existing gateway, good to about 3 m."
+  },
+  "main_pool_lawn.json:lawn-bollards-bins": {
+   "level": "estimated",
+   "why": "The same lawn photos show short green bollard lights and dark slatted bins along the pink paths, and IMG_2775 shows a slot drain. Counts and exact spots are estimated."
+  },
+  "main_pool_lawn.json:lawn-white-rooms": {
+   "level": "estimated",
+   "why": "IMG_2762 shows a white door wall and a strelitzia over a silver bush; IMG_2763 shows a curved white wall. The runs stop where each photo stops. Positions are good to about 4 m."
+  },
+  "main_pool_lawn.json:lawn-sea-hedge": {
+   "level": "estimated",
+   "why": "IMG_2761 and IMG_2763 show a clipped hedge in front of the sea fence and a shower on the white wall. The hedge follows the inland side of the existing railing for the stretch those photos see. The fence itself stays the green bars from the closer paseo photos."
+  },
+  "main_pool_lawn.json:main-pool-glass": {
+   "level": "estimated",
+   "why": "IMG_2764, IMG_2765, IMG_2603 and IMG_2777 show a glass fence on stainless posts around the main pool, with gates. Dave's 12 Oct note had left it off. The line is the registry water ring plus 0.45 m, with two openings; post spacing is by eye."
+  },
+  "main_pool_lawn.json:main-pool-deck-tiles": {
+   "level": "estimated",
+   "why": "IMG_2777 shows terracotta squares on the deck and a green mat at the water, on the south and west sides the photo sees. The band is 1.7 m, estimated, and stops short of the toddler pool."
+  },
+  "main_pool_lawn.json:enrique-step-finish": {
+   "level": "estimated",
+   "why": "IMG_2777, taken on the existing flight, shows pale marble nosings, blue patterned risers and a black handrail. The flight is unchanged; only the finish is added. The fan palm and lantana in the curved bed are the planting in that photo and IMG_2776."
+  },
+  "main_pool_lawn.json:enrique-shop-front": {
+   "level": "estimated",
+   "why": "IMG_2775 and IMG_2776 show a blue signed awning, a menu board and wall lanterns at the head of the steps. One of each is placed there; the lettering is the shop name, not a copy of the menu."
+  },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",
    "why": "Both mouths are photographed and the axis meets IMG_2645's gate, but the cameras are not solved. The 20.4 m depth, 2.1 m width and arch heights are estimates, good to about 2 m."

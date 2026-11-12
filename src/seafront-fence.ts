@@ -66,5 +66,23 @@ export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: nu
   const arch = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth: g.depth, bevelEnabled: false }).translate(0, 0, -g.depth / 2), white);
   arch.position.set(gateAt[0], groundAt(...gateAt), gateAt[1]); arch.rotation.y = -Math.atan2(gateAlong[1], gateAlong[0]);
   arch.name = g.id; arch.castShadow = arch.receiveShadow = true; group.add(arch);
+  // IMG_2602 and IMG_2759 show a dark iron leaf in the arch. It is swung open so the way through stays clear.
+  const iron = new THREE.MeshStandardMaterial({ color: "#1c2420", roughness: 0.45, metalness: 0.55 });
+  const leaf = new THREE.Group(); leaf.name = "guillermo-beach-gate-leaf";
+  leaf.position.set(-r + 0.06, 0, 0); leaf.rotation.y = 1.15;
+  const span = g.opening - 0.14;
+  for (let i = 0; i < 7; i++) {
+    const bar = new THREE.Mesh(new THREE.BoxGeometry(0.014, g.spring - 0.2, 0.014), iron);
+    bar.position.set(((i + 0.5) / 7) * span, g.spring / 2, 0); leaf.add(bar);
+  }
+  for (const y of [0.16, g.spring - 0.12]) {
+    const rail = new THREE.Mesh(new THREE.BoxGeometry(span, 0.02, 0.02), iron);
+    rail.position.set(span / 2, y, 0); leaf.add(rail);
+  }
+  for (const [x, y] of [[span * 0.35, g.spring * 0.55], [span * 0.65, g.spring * 0.42]] as [number, number][]) {
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(0.075, 0.008, 6, 14), iron);
+    ring.position.set(x, y, 0); leaf.add(ring);
+  }
+  arch.add(leaf);
   scene.add(group);
 }

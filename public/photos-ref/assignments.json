@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 414,
-  "photosCitedByModel": 174,
-  "modelFeaturesWithPhotoCitations": 160
+  "features": 423,
+  "photosCitedByModel": 183,
+  "modelFeaturesWithPhotoCitations": 169
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -12097,7 +12097,12 @@
      "angleOffset": 5.9
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing",
+    "main_pool_lawn.json:lawn-flagstone-apron"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -7.5,
@@ -12123,7 +12128,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:main-pool-glass"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -4.7,
@@ -16891,7 +16900,15 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing",
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-flagstone-apron",
+    "main_pool_lawn.json:lawn-white-rooms",
+    "main_pool_lawn.json:lawn-sea-hedge"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 5.2,
@@ -16936,7 +16953,11 @@
    ],
    "nearby": [],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:lawn-sea-hedge"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -12.4,
@@ -16971,7 +16992,9 @@
      "angleOffset": 18.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-white-rooms"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -9.9,
@@ -16990,7 +17013,12 @@
    ],
    "nearby": [],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-flagstone-apron",
+    "main_pool_lawn.json:lawn-white-rooms",
+    "main_pool_lawn.json:lawn-sea-hedge"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -7.2,
@@ -17025,7 +17053,11 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
-    "jorge_lane.json:jorge-lane-lawn-palm"
+    "jorge_lane.json:jorge-lane-lawn-palm",
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:main-pool-glass",
+    "main_pool_lawn.json:main-pool-deck-tiles"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -17072,7 +17104,11 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
-    "jorge_lane.json:jorge-lane-lawn-palm"
+    "jorge_lane.json:jorge-lane-lawn-palm",
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:lawn-white-rooms",
+    "main_pool_lawn.json:main-pool-glass"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -17428,7 +17464,10 @@
      "angleOffset": 23.8
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:enrique-shop-front"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -32.1,
@@ -17470,7 +17509,11 @@
      "angleOffset": 33.1
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:enrique-step-finish",
+    "main_pool_lawn.json:enrique-shop-front"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -32.8,
@@ -17496,7 +17539,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "main_pool_lawn.json:main-pool-glass",
+    "main_pool_lawn.json:main-pool-deck-tiles",
+    "main_pool_lawn.json:enrique-step-finish"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -33.8,

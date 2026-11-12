@@ -62,6 +62,7 @@ import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
 import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
+import { addMainPoolLawn, lawnSolidRings } from "./main-pool-lawn";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -257,6 +258,9 @@ async function boot(): Promise<void> {
   if (seaside && skeleton.seafront) { addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY); addPaseoDetails(scene, seaside, liveGroundY); }
   // The wall, gateway and railings between the big-pool lawn and the paseo.
   if (seaside && mainPool) { const sd = seaside; addSeafrontFence(scene, (x, z) => sd.y(x, z)); }
+  const mainRing = skeleton.pools.find((p) => p.id === "main")?.ring;
+  const toddlerRing = skeleton.pools.find((p) => p.id === "toddler")?.ring;
+  if (mainPool && mainRing && toddlerRing) addMainPoolLawn(scene, mainRing, toddlerRing, !layoutOnly);
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   addPoolDecks(scene, nearbyPools, deckSlabCanvas(), skeleton.viewRotation);
@@ -308,7 +312,7 @@ async function boot(): Promise<void> {
   // Covered walk-throughs remain open; traced patio walls use their own rings.
   const solidBuildings = buildings.filter((b) => !b.passage && b.floors>0);
   const buildingParts=solidBuildings.flatMap(b=>southPoolGroundParts(b,silviaGroundParts(b)).map(p=>({...p,id:b.id})));
-  const solids = new Solids([...buildingParts.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...silviaWallRings(), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : []), ...(seaside && mainPool ? seafrontFenceRings() : [])], Object.fromEntries(buildingParts.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])), Object.fromEntries(buildingParts.map((b,i)=>[i,b.holes])));
+  const solids = new Solids([...buildingParts.map((b) => b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring), ...silviaWallRings(), ...fenceRings, ...cervantesPatioWallRings(),...cervantesNorthPartitionRings(),...gardenDoorRings(),...elenaNorthRings(),...coastalWallRings(), ...accessWallRings(), ...seaWallRings(skeleton.seaWall?.points ?? [], seaside ? paseoWallCovers : undefined), ...(seaside ? paseoWallRings() : []), ...(seaside && mainPool ? seafrontFenceRings() : []), ...(mainPool && mainRing && toddlerRing ? lawnSolidRings(mainRing, toddlerRing) : [])], Object.fromEntries(buildingParts.flatMap((b,i)=>b.id===POOL_TERRACE_ID?[[i,-0.5]]:[])), Object.fromEntries(buildingParts.map((b,i)=>[i,b.holes])));
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   let inspectAt: { x: number; z: number; distance: number; pitch: number } | null = null;

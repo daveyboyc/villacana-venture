@@ -14,12 +14,13 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 - 27 Oct (docs/reviews/beach-gate-verge): the beach gateway is at the lawn's south-west corner beside the paseo ramp, not at the foot of Calle Guillermo (Dave; aerial; IMG_2226). Calle Guillermo is level to the paseo (survey, IMG_2488); the paseo ramps 1.7 m down east of the lane's foot to lawn level. The 21 Oct 3 m lane ramp is removed.
 - 27 Oct, IMG_2600 from beside the kiosk: an inner tiled path runs down east-south-east from the foot of Calle Guillermo behind a white wall topped with green rigid mesh, to grass, a hedge and a green rigid-mesh fence with the beach beyond. The model draws white railings there (read from IMG_2226 at 50 m); the fence's material and where mesh turns to railings are open. A tall white pier at the left edge may be the beach gateway.
 - 8 Nov photos: IMG_2764/2765 from the lawn show the main pool and the white wave-roofed building; IMG_2773-2777 and IMG_2823 the lane beside it (octagonal paving, lantana planter wall, slot drains, steps and ramp at the shops, marble-nosed steps with blue tile risers down to the deck).
+- 12 Nov: the lawn photos are built as pink resin paths, a flagstone apron at the existing arched gate, bollards and bins, short white walls with a strelitzia bed, a hedge and shower in front of the sea railing, a glass fence and terracotta deck on the main pool, and marble nosings on Enrique's steps (data/main_pool_lawn.json). Positions are estimated from the camera pins, good to about 4 m. The sea fence stays the green bars from the closer paseo photos; the lawn photos read that fence as mesh. The iron leaf in the arch is drawn open.
 
 ## Read first
 
 - docs: `docs/MAIN_POOL.md`
-- data: `data/main_pool.json`, `data/guillermo_slope.json`, `data/seafront_fence.json`
-- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`, `src/seafront-fence.ts`
+- data: `data/main_pool.json`, `data/guillermo_slope.json`, `data/seafront_fence.json`, `data/main_pool_lawn.json`
+- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`, `src/seafront-fence.ts`, `src/main-pool-lawn.ts`
 - contact sheet: `villacana-reference/contact-sheets/main-pool.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
@@ -36,6 +37,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P1 | `beach-gate-verge` | Beach gateway beside the paseo ramp, survey paseo levels, grass and shrubs in front of the railings | in-progress · Claude · placement: not-verified | [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2488](../../public/photos-ref/IMG_2488.jpg) |
 | P1 | `guillermo-descent-recheck` | Calle Guillermo: put the fall to the paseo where the survey has it | in-progress · Claude · placement: not-verified | [IMG_2488](../../public/photos-ref/IMG_2488.jpg), [IMG_2226](../../public/photos-ref/IMG_2226.jpg) |
 | P1 | `guillermo-slope-east-steps` | Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall | in-progress · Claude · placement: not-verified | `apple-maps/11-3d-guillermo-slope-to-paseo.png`, `apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png`, `apple-maps/12-3d-main-pool-east-steps-picasso.png`, `apple-maps/13-3d-main-pool-terrace-both-stairs.png`, [IMG_2226](../../public/photos-ref/IMG_2226.jpg), [IMG_2227](../../public/photos-ref/IMG_2227.jpg) |
+| P1 | `main-pool-lawn-details` | Main pool lawn: pink paths, glass fence, deck and step finish | in-progress · Cursor · placement: not-verified | [IMG_2764](../../public/photos-ref/IMG_2764.jpg), [IMG_2765](../../public/photos-ref/IMG_2765.jpg), [IMG_2603](../../public/photos-ref/IMG_2603.jpg), [IMG_2761](../../public/photos-ref/IMG_2761.jpg), [IMG_2762](../../public/photos-ref/IMG_2762.jpg), [IMG_2763](../../public/photos-ref/IMG_2763.jpg), [IMG_2602](../../public/photos-ref/IMG_2602.jpg), [IMG_2775](../../public/photos-ref/IMG_2775.jpg), [IMG_2776](../../public/photos-ref/IMG_2776.jpg), [IMG_2777](../../public/photos-ref/IMG_2777.jpg) |
 | P2 | `path-network-inventory-main-pool` [#128](https://github.com/daveyboyc/villacana-venture/issues/128) | Main pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
 ## Built from these photos
@@ -60,6 +62,47 @@ graph LR
   A --> F3["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
   F3 --> PIMG_2764_jpg(["IMG_2764"])
   F3 --> PIMG_2765_jpg(["IMG_2765"])
+  A --> F4["Signed awning, menu board and wall lantern at the head of Enrique's steps · unreviewed"]
+  F4 --> PIMG_2775_jpg(["IMG_2775"])
+  F4 --> PIMG_2776_jpg(["IMG_2776"])
+  A --> F5["Marble nosings, blue tile risers and handrail on the steps to Enrique's · unreviewed"]
+  F5 --> PIMG_2776_jpg(["IMG_2776"])
+  F5 --> PIMG_2777_jpg(["IMG_2777"])
+  A --> F6["Bollard lights, slatted bins and slot drains on the main-pool lawn · unreviewed"]
+  F6 --> PIMG_2603_jpg(["IMG_2603"])
+  F6 --> PIMG_2761_jpg(["IMG_2761"])
+  F6 --> PIMG_2764_jpg(["IMG_2764"])
+  F6 --> PIMG_2765_jpg(["IMG_2765"])
+  F6 --> PIMG_2775_jpg(["IMG_2775"])
+  F6 --> PIMG_2776_jpg(["IMG_2776"])
+  A --> F7["Flagstone apron in front of the lawn's arched gate · unreviewed"]
+  F7 --> PIMG_2602_jpg(["IMG_2602"])
+  F7 --> PIMG_2759_jpg(["IMG_2759"])
+  F7 --> PIMG_2763_jpg(["IMG_2763"])
+  A --> F8["Pink resin paths across the main-pool lawn · unreviewed"]
+  F8 --> PIMG_2603_jpg(["IMG_2603"])
+  F8 --> PIMG_2759_jpg(["IMG_2759"])
+  F8 --> PIMG_2761_jpg(["IMG_2761"])
+  F8 --> PIMG_2763_jpg(["IMG_2763"])
+  F8 --> PIMG_2764_jpg(["IMG_2764"])
+  F8 --> PIMG_2765_jpg(["IMG_2765"])
+  A --> F9["Clipped hedge and shower along the sea side of the main-pool lawn · unreviewed"]
+  F9 --> PIMG_2759_jpg(["IMG_2759"])
+  F9 --> PIMG_2761_jpg(["IMG_2761"])
+  F9 --> PIMG_2763_jpg(["IMG_2763"])
+  A --> F10["White walls, door and strelitzia bed on the main-pool lawn · unreviewed"]
+  F10 --> PIMG_2759_jpg(["IMG_2759"])
+  F10 --> PIMG_2762_jpg(["IMG_2762"])
+  F10 --> PIMG_2763_jpg(["IMG_2763"])
+  F10 --> PIMG_2765_jpg(["IMG_2765"])
+  A --> F11["Terracotta deck and green edge mat on the south and west of the main pool · unreviewed"]
+  F11 --> PIMG_2764_jpg(["IMG_2764"])
+  F11 --> PIMG_2777_jpg(["IMG_2777"])
+  A --> F12["Glass fence around the main pool · unreviewed"]
+  F12 --> PIMG_2603_jpg(["IMG_2603"])
+  F12 --> PIMG_2764_jpg(["IMG_2764"])
+  F12 --> PIMG_2765_jpg(["IMG_2765"])
+  F12 --> PIMG_2777_jpg(["IMG_2777"])
 ```
 
 ## Placement evidence
@@ -72,6 +115,15 @@ graph LR
 | `jorge_lane.json:jorge-lane-guillermo-planter` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-west` | disputed | differs | open discrepancy photo-discrepancy:74cead97dc4c963c; open discrepancy photo-discrepancy:f89b5484edc8b5c0 |
 | `jorge_lane.json:jorge-lane-lawn-palm` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:enrique-shop-front` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:enrique-step-finish` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:lawn-bollards-bins` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:lawn-flagstone-apron` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:lawn-pink-paths` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:lawn-sea-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:lawn-white-rooms` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:main-pool-deck-tiles` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `main_pool_lawn.json:main-pool-glass` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
 
@@ -86,25 +138,25 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2759.jpg](../../public/photos-ref/IMG_2759.jpg) | ground | layout, materials, view | Lawn path to a white gateway towards the sea **Note:** Pin is vague (+/-18.5 m); the view across the large lawn to the sea gateway places it on the main pool lawn. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, main_pool_lawn.json:lawn-pink-paths, main_pool_lawn.json:lawn-flagstone-apron, main_pool_lawn.json:lawn-white-rooms, main_pool_lawn.json:lawn-sea-hedge._ |
+| [IMG_2764.jpg](../../public/photos-ref/IMG_2764.jpg) | ground | layout, facades, view | Main pool lawn and the wave-roofed building **Looks at:** tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm, main_pool_lawn.json:lawn-pink-paths, main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:main-pool-glass, main_pool_lawn.json:main-pool-deck-tiles._ |
+| [IMG_2765.jpg](../../public/photos-ref/IMG_2765.jpg) | ground | layout, facades, view | Main pool lawn and wave-roofed building, second view _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm, main_pool_lawn.json:lawn-pink-paths, main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:lawn-white-rooms, main_pool_lawn.json:main-pool-glass._ |
 | [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. Read 2026-11-12: the wall along the lawn is plain, with no door or window, bougainvillea trained along it and plants showing above it; its top falls to about 1.9 m at the lane, where a no-dogs sign hangs; a small broad-leaved tree and a rose stand on the lawn. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving, jorge_lane.json:jorge-lane-guillermo-west, jorge_lane.json:jorge-lane-planting._ |
 | [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter **Looks at:** the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it. **Note:**  Read 2026-11-12: left of the lane, low white planters with clipped hedges between battered piers, a gateway with a dark iron gate, a taller white patio wall behind with strelitzia above it, two lamp posts; a row of bricks on edge borders the lane. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving, jorge_lane.json:jorge-lane-guillermo-west._ |
-| [IMG_2764.jpg](../../public/photos-ref/IMG_2764.jpg) | ground | layout, facades, view | Main pool lawn and the wave-roofed building **Looks at:** tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm._ |
-| [IMG_2765.jpg](../../public/photos-ref/IMG_2765.jpg) | ground | layout, facades, view | Main pool lawn and wave-roofed building, second view _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm._ |
+| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, facades, signage, materials | Arched white gate pillar with iron gate, signs and bollard light at the lawn corner **Looks at:** coastal lawn gate pier and iron gate. **Note:** looksAt is a rough estimate of the gate position from the aerial (not measured). _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing, main_pool_lawn.json:lawn-flagstone-apron._ |
+| [IMG_2763.jpg](../../public/photos-ref/IMG_2763.jpg) | ground | layout, materials, view | Pink path curving round a white wall to the sea fence _Used by: main_pool_lawn.json:lawn-pink-paths, main_pool_lawn.json:lawn-flagstone-apron, main_pool_lawn.json:lawn-white-rooms, main_pool_lawn.json:lawn-sea-hedge._ |
+| [IMG_2603.jpg](../../public/photos-ref/IMG_2603.jpg) | ground | layout, view, facades, planting | Pink lawn path with bollard lights and a pool-side white curved-roof building **Note:** Which pool-side building this is (Bistro Enrique's or 90 Miles) is not confirmed from the image. _Used by: main_pool_lawn.json:lawn-pink-paths, main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:main-pool-glass._ |
+| [IMG_2761.jpg](../../public/photos-ref/IMG_2761.jpg) | ground | layout, materials, view | Lawn and pink path towards the seafront railing _Used by: main_pool_lawn.json:lawn-pink-paths, main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:lawn-sea-hedge._ |
+| [IMG_2777.jpg](../../public/photos-ref/IMG_2777.jpg) | ground | levels, materials, layout | Marble-edged steps down to the main pool deck _Used by: main_pool_lawn.json:main-pool-glass, main_pool_lawn.json:main-pool-deck-tiles, main_pool_lawn.json:enrique-step-finish._ |
+| [IMG_2776.jpg](../../public/photos-ref/IMG_2776.jpg) | ground | layout, levels | Steps and ramp at the foot of the lane by the pool building _Used by: main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:enrique-step-finish, main_pool_lawn.json:enrique-shop-front._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
-| [IMG_2602.jpg](../../public/photos-ref/IMG_2602.jpg) | ground | layout, facades, signage, materials | Arched white gate pillar with iron gate, signs and bollard light at the lawn corner **Looks at:** coastal lawn gate pier and iron gate. **Note:** looksAt is a rough estimate of the gate position from the aerial (not measured). |
-| [IMG_2603.jpg](../../public/photos-ref/IMG_2603.jpg) | ground | layout, view, facades, planting | Pink lawn path with bollard lights and a pool-side white curved-roof building **Note:** Which pool-side building this is (Bistro Enrique's or 90 Miles) is not confirmed from the image. |
+| [IMG_2775.jpg](../../public/photos-ref/IMG_2775.jpg) | ground | layout, levels, materials | Lane down to the pool building with slot drains _Used by: main_pool_lawn.json:lawn-bollards-bins, main_pool_lawn.json:enrique-shop-front._ |
+| [IMG_2762.jpg](../../public/photos-ref/IMG_2762.jpg) | ground | planting, facades | Strelitzia in a white walled corner on the lawn _Used by: main_pool_lawn.json:lawn-white-rooms._ |
 | [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | view, planting, layout | Lawn and flowering lantana border looking east to the Barraka restaurant **Looks at:** Barraka beach restaurant. **Note:** Building identified as Barraka from the matching view in IMG_2604; looksAt reused from IMG_2482. |
 | [IMG_2600.jpg](../../public/photos-ref/IMG_2600.jpg) | ground | layout, levels, materials | From the foot of Calle Guillermo: tiled path down past the white wall towards the beach **Looks at:** The lawn corner and fence at the foot of the path. **Compass:** the subject is 47° from the phone heading; trust looksAt, not the heading. |
 | [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. |
-| [IMG_2759.jpg](../../public/photos-ref/IMG_2759.jpg) | ground | layout, materials, view | Lawn path to a white gateway towards the sea **Note:** Pin is vague (+/-18.5 m); the view across the large lawn to the sea gateway places it on the main pool lawn. |
-| [IMG_2761.jpg](../../public/photos-ref/IMG_2761.jpg) | ground | layout, materials, view | Lawn and pink path towards the seafront railing |
-| [IMG_2763.jpg](../../public/photos-ref/IMG_2763.jpg) | ground | layout, materials, view | Pink path curving round a white wall to the sea fence |
-| [IMG_2775.jpg](../../public/photos-ref/IMG_2775.jpg) | ground | layout, levels, materials | Lane down to the pool building with slot drains |
-| [IMG_2777.jpg](../../public/photos-ref/IMG_2777.jpg) | ground | levels, materials, layout | Marble-edged steps down to the main pool deck |
 | [IMG_2760.jpg](../../public/photos-ref/IMG_2760.jpg) | ground | layout, view | Large lawn towards the Barraka building **Note:** Pin is vague (+/-10.8 m); the lawn and the Barraka building beyond place it on the main pool lawn. |
-| [IMG_2762.jpg](../../public/photos-ref/IMG_2762.jpg) | ground | planting, facades | Strelitzia in a white walled corner on the lawn |
-| [IMG_2776.jpg](../../public/photos-ref/IMG_2776.jpg) | ground | layout, levels | Steps and ramp at the foot of the lane by the pool building |
 | `villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | `villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png` | aerial | layout, levels | Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps **Note:** Dave, 2026-10-21. A narrow flight of steps comes down from an opening in the white wall along Calle Pintor Picasso, between the curved 90 Miles terrace and the east lawn, to the paving north-east of the toddler pool. Not a wide flight off the restaurant roof. |
 | `villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png` | aerial | layout, levels | Apple Maps 3D: main pool terrace curve with the west and east steps **Note:** Dave, 2026-10-21. Nearly top-down. West: terracotta steps between the Guillermo-side wall and the terrace's curved planter wall. East: a dark narrow slot between the 90 Miles lobe and the Picasso boundary wall, the steps in shadow. |
