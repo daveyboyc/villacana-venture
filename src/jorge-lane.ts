@@ -373,23 +373,25 @@ function plaqueMesh(lines: string[]): THREE.Group {
 /** Height of the Calle Guillermo paving `d` metres north of the Jorge line: the surveyed ground on the mapped lane, smoothed so the surface runs straight. */
 function guillermoLaneY(d: number): number {
   const gp = data.guillermoPlanter;
-  // The highest ground across the generic 1.2 m ribbon near each station, so this paving covers it, then averaged along the lane.
-  const crest = (q: number) => { let top = -Infinity; for (const along of [-1, 0, 1]) for (const across of [-0.7, 0, 0.7]) { const p = at(gp.along - gp.laneOffset + across, -(q + along)); top = Math.max(top, siteY(p[0], p[1])); } return top; };
+  // A smooth upper envelope of the ground under the generic 1.2 m ribbon, so this paving covers it and runs straight:
+  // the highest ground within 3 m each way, then averaged over 9 m along the lane.
+  const crest = (q: number) => { let top = -Infinity; for (const across of [-0.7, 0, 0.7]) { const p = at(gp.along - gp.laneOffset + across, -q); top = Math.max(top, siteY(p[0], p[1])); } return top; };
+  const envelope = (q: number) => { let top = -Infinity; for (let k = -3; k <= 3; k++) top = Math.max(top, crest(q + k)); return top; };
   let sum = 0;
-  for (let k = -2; k <= 2; k++) sum += crest(d + k);
-  return sum / 5 + 0.36;
+  for (let k = -4; k <= 4; k++) sum += envelope(d + k);
+  return sum / 9 + 0.33;
 }
 /** Height of the Guillermo planter's top: one metre (its `height`) above the paving beside it. */
 function guillermoPlanterTop(): (d: number) => number {
   return (d: number) => guillermoLaneY(d) + data.guillermoPlanter.height;
 }
 /** Paving across Calle Guillermo from `from` to `to` metres north of the Jorge line, level across its width at the lane's own height (not draped: its east edge lies over the bank to the pool). */
-function guillermoPaving(from: number, to: number, material: THREE.Material, name: string): THREE.Mesh {
+function guillermoPaving(from: number, to: number, material: THREE.Material, name: string, uvScale = 1): THREE.Mesh {
   const pave = data.guillermoPaving, pos: number[] = [], uv: number[] = [], idx: number[] = [];
   const stations: number[] = []; for (let d = from; d < to - 1e-6; d += 0.5) stations.push(d); stations.push(to);
   stations.forEach((d, i) => {
     const y = guillermoLaneY(d);
-    for (const side of [-1, 1]) { const p = at(pave.along + side * pave.half, -d); pos.push(p[0], y, p[1]); uv.push(d, side * pave.half); }
+    for (const side of [-1, 1]) { const p = at(pave.along + side * pave.half, -d); pos.push(p[0], y, p[1]); uv.push(d * uvScale, side * pave.half * uvScale); }
     if (i) { const b = (i - 1) * 2; idx.push(b, b + 1, b + 3, b, b + 3, b + 2); }
   });
   const g = new THREE.BufferGeometry();
@@ -496,10 +498,16 @@ export function addJorgeLane(scene: THREE.Scene): void {
     octagons.colorSpace = THREE.SRGBColorSpace; octagons.wrapS = octagons.wrapT = THREE.RepeatWrapping; octagons.repeat.setScalar(1 / (pave.tile * 4)); octagons.anisotropy = 8;
     const squares = new THREE.MeshStandardMaterial({ map: photoTexture("terracotta"), roughness: 0.9 });
     scene.add(guillermoPaving(pave.from, pave.octagonsFrom - 6, new THREE.MeshStandardMaterial({ map: octagons, roughness: 0.9 }), "jorge-guillermo-octagons"),
-      guillermoPaving(pave.octagonsFrom - 6, pave.octagonsFrom, squares, "jorge-guillermo-squares"),
+      // The junction squares are about 1.4 times the octagon pitch in IMG_2773; the terracotta image holds nine 0.356 m tiles.
+      guillermoPaving(pave.octagonsFrom - 6, pave.octagonsFrom, squares, "jorge-guillermo-squares", 0.356 / pave.square),
       guillermoPaving(pave.octagonsFrom, pave.to, new THREE.MeshStandardMaterial({ map: octagons, roughness: 0.9 }), "jorge-guillermo-octagons"));
     for (const cover of pave.covers) {
       const p = at(cover.at[0], -cover.at[1]), mesh = coverMesh(cover.kind);
+      if (cover.kind === "square") {
+        // Small grey metal grates (IMG_2773), not the red cast covers of the Jorge path.
+        const plate = mesh.children[0] as THREE.Mesh; plate.scale.set(0.75, 1, 0.5);
+        plate.material = new THREE.MeshStandardMaterial({ color: "#8a8a86", roughness: 0.6, metalness: 0.5 });
+      }
       mesh.children[0].position.y = 0.012; mesh.position.set(p[0], guillermoLaneY(cover.at[1]), p[1]); mesh.rotation.y = yawOf(jorgeAt(0).along); mesh.userData.noDrape = true;
       scene.add(mesh);
     }

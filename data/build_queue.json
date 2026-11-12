@@ -3043,6 +3043,29 @@
    "owner": "Claude"
   },
   {
+   "id": "guillermo-west-walls",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "structure",
+   "title": "Calle Guillermo west side: garden walls, not house fronts (Dave: the houses on the left don't match the photo)",
+   "photos": [
+    "IMG_2773.jpg",
+    "IMG_2774.jpg"
+   ],
+   "build": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. The photo shows, left of the lane: the plinth lawn with a small tree; a plain white garden wall about 2 m high, stepping up towards the lane, with bougainvillea trained along it and a no-dogs sign; then low white planter walls with clipped hedges and a lamp post along the lane; the houses themselves stand back behind these, with chimneys showing above. The model shows registry blocks extruded as one- and two-storey houses with arched doors, shutters and tiled porches right at the lawn and lane. Inventory the walls, openings and heights from IMG_2773, IMG_2774 and IMG_2597 first (docs/REFERENCE_PACK_WORKFLOW.md); decide which registry parts are patios enclosed by garden walls and not roofed rooms; then build those as walls of the photographed height with no generic doors, shutters or porches, and the planters and hedges along the lane.",
+   "avoid": "Do not change registry footprints without evidence; record what cannot be seen. Leave Walk alone.",
+   "accept": [
+    "Dave says the IMG_2773 view is fine",
+    "Render through the photo camera recorded in data/photo_checks.json with every remaining difference listed",
+    "Visible in Inspect, in Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "jorge-guillermo-paving"
+   ],
+   "status": "open"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,

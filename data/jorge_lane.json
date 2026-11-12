@@ -131,14 +131,14 @@
     "basis": "IMG_2773 looks up Calle Guillermo from the Jorge junction and IMG_2774 from 9 m further on: a neat, straight white planter wall about a metre high (waist height beside the lane), about 0.45 m thick, with a low dense carpet of orange and yellow lantana along its top, runs along the lane's east side to the steps of the pool building. A clump of spiky yucca or dragon-tree heads rises from behind it about a third of the way along; there is no palm beside it. IMG_2597 shows the same wall behind the lawn of the CALLE DE JORGE plinth. The wall's top is set one metre above the lane surface beside it. It is built from 3 to 25 m north of the Jorge line; IMG_2822 and IMG_2823 show it also continues south past the junction and round towards the sea, which is not built."
   },
   "guillermoPaving": {
-    "along": 136.15, "half": 1.15, "from": -7, "to": 25, "octagonsFrom": 3.2, "tile": 0.4,
+    "along": 136.16, "half": 1.17, "from": -5, "to": 25, "octagonsFrom": 3, "tile": 0.4, "square": 0.56,
     "covers": [
       { "kind": "round", "at": [135.75, 4.6] },
       { "kind": "square", "at": [136.45, 6.6] },
       { "kind": "square", "at": [136.3, 12.5] }
     ],
     "evidence": ["IMG_2773.jpg", "IMG_2774.jpg", "IMG_2822.jpg", "IMG_2823.jpg"],
-    "basis": "IMG_2773 and IMG_2774 look up Calle Guillermo from the Jorge junction: the lane is paved wall to wall, about 2.3 m wide between the plinth lawn and the planter, in large terracotta squares at the junction and then, from about 3 m north, in terracotta octagons with small square insets (about six across), up to the steps of the pool building. A round cast cover and two rectangular grates lie in the octagons. IMG_2822 and IMG_2823 show the same octagons south of the junction. The paving is laid from 7 m south to 25 m north of the Jorge line on the mapped Guillermo line, against the planter's lane face, which closes the grass strip the model had between wall and lane. Width and cover positions are estimated to about 0.5 m."
+    "basis": "IMG_2773 and IMG_2774 look up Calle Guillermo from the Jorge junction: the lane is paved wall to wall, about 2.3 m wide between the plinth lawn and the planter, in large terracotta squares at the junction and then, from about 3 m north, in terracotta octagons with small square insets (five or six across), on towards the steps of the pool building. A round cast cover and two rectangular grates lie in the octagons. IMG_2822 and IMG_2823 show the same octagons south of the junction. In IMG_2773 the squares are about 1.4 times the octagon pitch, so they are drawn 0.56 m against 0.4 m octagons; the real sizes are not known. The paving is laid from 5 m south to 25 m north of the Jorge line (squares for the 6 m up to 3 m north) on the mapped Guillermo line, against the planter's lane face, which closes the grass strip the model had between wall and lane. Width and cover positions are estimated to about 0.5 m."
   },
   "lawnPalm": {
     "at": [-13, 115.8], "height": 15,

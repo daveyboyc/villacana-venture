@@ -1387,7 +1387,7 @@
     }
    ],
    "tasks": {
-    "open": 5,
+    "open": 6,
     "inProgress": 15,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
@@ -1858,7 +1858,7 @@
     }
    ],
    "tasks": {
-    "open": 41,
+    "open": 42,
     "inProgress": 41,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",

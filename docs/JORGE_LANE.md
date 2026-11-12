@@ -186,9 +186,15 @@ the second, farther palm, and the other generic palms round the main pool.
 
 IMG_2773 and IMG_2774 show the lane beside the planter paved wall to wall: large terracotta squares
 at the Jorge junction, then octagons with small square insets, a round cover and two grates. That
-is now laid 2.3 m wide against the planter's lane face (`guillermoPaving`), level across at the
+is now laid 2.3 m wide (squares 0.56 m, octagons 0.4 m, as their ratio in the photo) against the planter's lane face (`guillermoPaving`), level across at the
 lane's surveyed height, with the planter's top one metre above it. It replaces a grass strip and
 the narrow generic ribbon, which broke into tilted pieces over the bank to the pool.
+
+A second agent measured this change: the wall-to-tile ratio agrees between photo and render, the
+squares were too small against the octagons and the surface bowed. The squares were enlarged, the
+surface straightened and the grates made grey afterwards; those fixes were re-rendered but not
+re-validated. Open (Dave): the houses left of the lane do not match the photo, task
+`guillermo-west-walls`.
 
 ## How these builds were checked, and what that is worth
 
@@ -199,8 +205,9 @@ the narrow generic ribbon, which broke into tilted pieces over the bank to the p
 - That let the planter through at the wrong height until Dave corrected it. Where a size matters,
   measure it in the photo against something of known size and write the figure in the check. For
   the planter: in IMG_2773 the wall is 2.5 tile-widths high at the same depth, so 0.9 m with
-  0.36 m tiles or 1.25 m with 0.5 m tiles. The tile size there is not known, so this supports
-  "about a metre" and no more.
+  0.36 m tiles or 1.25 m with 0.5 m tiles. A second agent measured 2.3 to 2.9 in the photo and
+  2.3 to 2.8 in the render. The tile size there is not known, so the photo allows roughly 0.85 to
+  1.2 m: one metre is plausible, and the measurement does not say whether it is high or low.
 - Solving the IMG_2773 camera (`docs/PHOTO_ALIGNMENT.md`) was tried and abandoned: the registry
   corners in view are too distant and cluttered to match with confidence. A photo taken square-on
   to a house corner on this lane would make a solve possible.
