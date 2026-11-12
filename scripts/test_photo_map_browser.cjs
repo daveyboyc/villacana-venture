@@ -94,6 +94,13 @@ const fs = require('node:fs');
       assert.ok(box.x>=0&&box.y>=52&&box.x+box.width<=viewport.width&&box.y+box.height<=viewport.height,'library within viewport');
       if(viewport.width<=760)assert.equal(await page.locator('body>.reference-tools').isVisible(),false,'photo card gets priority over annotation tools');
       await page.click('#openPhoto'); await page.locator('#photo-full button').click();
+      const close = await page.locator('#photo-deselect').boundingBox();
+      const detailBox = await page.locator('#photo-detail').boundingBox();
+      assert.ok(close && detailBox && close.y < detailBox.y + 24, 'close stays at the top of the photo card');
+      await page.click('#photo-deselect');
+      await page.waitForFunction(() => !document.querySelector('#photo-library').classList.contains('has-selection') && document.querySelector('#photo-detail').childElementCount === 0);
+      await page.locator('.photo-map-pin').first().dispatchEvent('click');
+      await page.waitForSelector('#photo-detail h2');
       await page.screenshot({path:`layout-checks.local/unified-map-${viewport.width}x${viewport.height}.png`});
     }
     assert.deepEqual(errors,[]);

@@ -83,9 +83,15 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
       if (cam) context.append(svgNode("path", { d: `M${cam.x} ${cam.z}L${x} ${z}`, stroke: "#bd356a", "stroke-width": .25, "stroke-dasharray": ".7 .7" }));
     }
   }
+  function clearSelection() {
+    selected = undefined; panel.classList.remove("has-selection"); detail.replaceChildren(); context.replaceChildren();
+    const u = new URL(location.href); u.searchParams.delete("photo"); history.pushState(null, "", u);
+    renderResults(); window.dispatchEvent(new CustomEvent("reference-selected", { detail: { id: "", label: "", point: null, camera: null } }));
+  }
   function showDetail(r: Reference) {
     detail.replaceChildren(); panel.classList.add("has-selection");
-    const back = button("Close selection", detail, () => { selected = undefined; panel.classList.remove("has-selection"); detail.replaceChildren(); context.replaceChildren(); const u = new URL(location.href); u.searchParams.delete("photo"); history.pushState(null, "", u); renderResults(); window.dispatchEvent(new CustomEvent("reference-selected", { detail: { id: "", label: "", point: null, camera: null } })); }); back.id = "photo-deselect";
+    const bar = make("div", "", detail); bar.className = "photo-detail-bar";
+    const back = button("Close", bar, clearSelection); back.id = "photo-deselect"; back.setAttribute("aria-label", "Close photo details");
     make("small", r.id, detail); make("h2", caption(r), detail);
     if (r.image) {
       const img = make("img", "", detail); img.src = asset("/" + r.image); img.alt = caption(r); img.tabIndex = 0;
