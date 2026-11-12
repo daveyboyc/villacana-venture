@@ -184,16 +184,17 @@ export function roundClippedTree(o: { trunk: number; crown: number; crownHeight:
  * Shrubs and climbers grown up against a wall: leaves in a shallow layer over the face with a ragged top,
  * and white star flowers (jasmine), or bracts in `flowerColour` (bougainvillea). x along the wall, z out from it (0 at the wall), y up.
  */
-export function wallClimber(o: { length: number; height: number; depth: number; seed: number; flowers: number; flowerColour?: string }): THREE.Group {
+export function wallClimber(o: { length: number; height: number; depth: number; seed: number; flowers: number; flowerColour?: string; sparse?: boolean }): THREE.Group {
   const rng = seeded(o.seed), f = new Foliage(rng);
   const top = Array.from({ length: Math.max(3, Math.ceil(o.length / 0.6)) + 1 }, () => o.height * (0.7 + rng() * 0.3));
   const topAt = (x: number) => { const t = (x / o.length) * (top.length - 1), i = Math.min(top.length - 2, Math.floor(t)), k = t - i; return top[i] * (1 - k) + top[i + 1] * k; };
   const back = new THREE.Shape([new THREE.Vector2(0, 0), ...top.map((h, i) => new THREE.Vector2(o.length * i / (top.length - 1), h * 0.92)), new THREE.Vector2(o.length, 0)]);
   const backing = new THREE.Mesh(new THREE.ShapeGeometry(back), new THREE.MeshStandardMaterial({ color: "#22361e", roughness: 1, side: THREE.DoubleSide }));
-  backing.position.z = 0.03; f.add(backing);
-  const mid = backing.clone(); mid.position.z = o.depth * 0.45; mid.scale.set(1, 0.75, 1); f.add(mid);
+  // A sparse climber is trained flat on the wall and lets the wall show through: no dark backing, a third of the leaves.
+  backing.position.z = 0.03; if (!o.sparse) f.add(backing);
+  const mid = backing.clone(); mid.position.z = o.depth * 0.45; mid.scale.set(1, 0.75, 1); if (!o.sparse) f.add(mid);
   const greens = ["#365a2c", "#4a6d36", "#5b7c3f", "#2f4a28"];
-  for (let i = 0, n = Math.round(o.length * o.height * 560); i < n; i++) {
+  for (let i = 0, n = Math.round(o.length * o.height * (o.sparse ? 190 : 560)); i < n; i++) {
     // A bushy mass: deepest low down, thinning to a ragged top.
     const x = rng() * o.length, y = rng() ** 0.7 * topAt(x), z = 0.05 + rng() ** 0.8 * o.depth * (0.35 + 0.65 * (1 - y / o.height));
     const nn = new THREE.Vector3((rng() - 0.5) * 1.4, (rng() - 0.3) * 1.0, 1).normalize(), k = 0.8 + rng() * 0.5;

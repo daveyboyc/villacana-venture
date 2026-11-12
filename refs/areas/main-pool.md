@@ -54,9 +54,12 @@ graph LR
   F1 --> PIMG_2597_jpg(["IMG_2597"])
   F1 --> PIMG_2773_jpg(["IMG_2773"])
   F1 --> PIMG_2774_jpg(["IMG_2774"])
-  A --> F2["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
-  F2 --> PIMG_2764_jpg(["IMG_2764"])
-  F2 --> PIMG_2765_jpg(["IMG_2765"])
+  A --> F2["West of Calle Guillermo: plain lawn wall, patio wall, hedged planters, lamp posts and brick border · disputed"]
+  F2 --> PIMG_2773_jpg(["IMG_2773"])
+  F2 --> PIMG_2774_jpg(["IMG_2774"])
+  A --> F3["Tall slender palm on the main-pool lawn below Calle Jorge · unreviewed"]
+  F3 --> PIMG_2764_jpg(["IMG_2764"])
+  F3 --> PIMG_2765_jpg(["IMG_2765"])
 ```
 
 ## Placement evidence
@@ -67,6 +70,7 @@ graph LR
 | --- | --- | --- | --- |
 | `jorge_lane.json:jorge-lane-guillermo-paving` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-guillermo-planter` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `jorge_lane.json:jorge-lane-guillermo-west` | disputed | differs | open discrepancy photo-discrepancy:74cead97dc4c963c; open discrepancy photo-discrepancy:f89b5484edc8b5c0 |
 | `jorge_lane.json:jorge-lane-lawn-palm` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 
 ## Photo checks
@@ -82,8 +86,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving._ |
-| [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter **Looks at:** the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving._ |
+| [IMG_2773.jpg](../../public/photos-ref/IMG_2773.jpg) | ground | layout, materials, planting | Lane beside the main pool with a lantana planter wall **Looks at:** Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side. **Note:** Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. Read 2026-11-12: the wall along the lawn is plain, with no door or window, bougainvillea trained along it and plants showing above it; its top falls to about 1.9 m at the lane, where a no-dogs sign hangs; a small broad-leaved tree and a rose stand on the lawn. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving, jorge_lane.json:jorge-lane-guillermo-west._ |
+| [IMG_2774.jpg](../../public/photos-ref/IMG_2774.jpg) | ground | layout, materials, levels | Octagonal-paved lane beside the lantana planter **Looks at:** the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it. **Note:**  Read 2026-11-12: left of the lane, low white planters with clipped hedges between battered piers, a gateway with a dark iron gate, a taller white patio wall behind with strelitzia above it, two lamp posts; a row of bricks on edge borders the lane. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-guillermo-paving, jorge_lane.json:jorge-lane-guillermo-west._ |
 | [IMG_2764.jpg](../../public/photos-ref/IMG_2764.jpg) | ground | layout, facades, view | Main pool lawn and the wave-roofed building **Looks at:** tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond. _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm._ |
 | [IMG_2765.jpg](../../public/photos-ref/IMG_2765.jpg) | ground | layout, facades, view | Main pool lawn and wave-roofed building, second view _Used by: jorge_lane.json:jorge-lane-bench, jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-lawn-palm._ |
 | `villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png` | aerial | layout, levels | Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo **Note:** Dave, 2026-10-21. The lane runs down continuously from the restaurant's west end to the paseo between the house gardens and a long white wall on the pool-lawn side; the wall's lawn face gets lower towards the sea. Calle Jorge joins part-way down with no visible steps. The single-storey white kiosk at the foot stands at lawn and paseo level; the lane passes west of it to the beach gate and zebra crossing. Heights are not measurable from the mesh. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |

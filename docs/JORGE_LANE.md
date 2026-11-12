@@ -196,6 +196,35 @@ surface straightened and the grates made grey afterwards; those fixes were re-re
 re-validated. Open (Dave): the houses left of the lane do not match the photo, task
 `guillermo-west-walls`.
 
+## West of Calle Guillermo: garden walls, not house fronts (12 November, task `guillermo-west-walls`)
+
+Dave: from the IMG_2773 viewpoint the houses on the left do not match the photo. The photo has a
+plain garden wall and hedged planters with the houses standing back; the model drew registry
+blocks as houses with generic doors, shutters and porches at the lane, and open plaza where the
+registry is empty. Built from IMG_2773 and IMG_2774 (`guillermoWest`):
+
+- The wall along the north side of the plinth lawn is plain: generic openings and porches are kept
+  off it (`plainWalls`, read by the shutters, the porches and the facade kit).
+- It is carried 3 m on to the lane with a falling top, ending in a pier with a no-dogs sign.
+- Along the lane: white planters with clipped hedges between piers, two gateways, a taller patio
+  wall behind with strelitzia above it, two lamp posts, and a brick-on-edge border.
+- The lawn now reaches the wall foot, with a small tree and a rose (Details).
+
+Not done, and why:
+
+- Plants show above the lawn wall in the photo, so the registry block behind it (east part of
+  `6364401UF1366S_part7`) is probably an open patio. It is still a one-storey block: changing a
+  registry footprint needs a measured check. So the wall top is level there where the photo's falls.
+- The houses further up the lane keep generic fronts; the gateways have no gates.
+
+A second agent inventoried and measured both views: the first build's wall end was about 0.7 m too
+low and its sign too low, the climber read as a solid hedge, and the planters and hedges were a
+little low. Those were corrected afterwards (re-rendered, not re-validated). It also noted the
+generic door, balcony and shutter on the two-storey block behind the wall, which remain.
+
+The task stays in progress until Dave says the view is fine. The `plainWalls` list is the general
+tool: wherever a photo shows a garden wall where the model draws a house front, add the wall there.
+
 ## How these builds were checked, and what that is worth
 
 - Each change is rendered from the photo's position and compared with the photo by eye, by the

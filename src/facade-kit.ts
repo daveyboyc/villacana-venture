@@ -6,6 +6,7 @@ import { replacesLaneGroundOpening } from "./middle-pool-lane-frontages";
 import { inElenaWalkway } from "./elena-walkway";
 import { inAlbertoPorch } from "./alberto-passage";
 import { inSouthPoolPassage } from "./south-pool-passage";
+import { inJorgePlainWall } from "./jorge-lane";
 import { SILVIA_HOST, silviaCloseCamera } from "./silvia-map";
 import type { SkeletonBuilding, Vec2 } from "./types";
 import traced from "../data/facade_kit.json";
@@ -98,6 +99,7 @@ export async function addFacadeKit(scene: THREE.Scene, houses: SkeletonBuilding[
         if (houses.some((o) => o !== b && pointInRing(p.x + nx * 0.5, p.z + nz * 0.5, o.ring))) continue;
         if (inAlbertoPorch(p.x + nx * 0.3, p.z + nz * 0.3)) continue; // the porch's own back wall (src/alberto-passage.ts)
         if (inSouthPoolPassage(p.x, p.z)) continue; // Calle de Jorge passage mouths (src/south-pool-passage.ts)
+        if (inJorgePlainWall(p.x, p.z)) continue; // plain garden walls west of Calle Guillermo (src/jorge-lane.ts)
         for (let f = 0; f < b.floors; f++) {
           // The same ground-floor openings the flat shutters leave out (Silvia passage, traced lane frontages).
           if (f === 0 && ((b.id === SILVIA_HOST && silviaCloseCamera(p.x, p.z)) || replacesLaneGroundOpening(p.x, p.z) || inElenaWalkway(p.x, p.z))) continue;

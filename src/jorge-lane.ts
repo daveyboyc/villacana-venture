@@ -76,6 +76,12 @@ export function inJorgePlainFront(x: number, z: number): boolean {
     return s >= zone.along[0] && s <= zone.along[1] && o >= zone.offset[0] && o <= zone.offset[1];
   });
 }
+/** Walls the photos show as plain garden walls (IMG_2773): no generic doors, shutters, balconies or porches on them. */
+export function inJorgePlainWall(x: number, z: number): boolean {
+  const f = jorgeAt(0), dx = x - f.p[0], dz = z - f.p[1];
+  const s = dx * f.along[0] + dz * f.along[1], north = -(dx * f.lawn[0] + dz * f.lawn[1]);
+  return data.guillermoWest.plainWalls.some((w) => s >= w.along[0] && s <= w.along[1] && north >= w.offset[0] && north <= w.offset[1]);
+}
 /** The planter-wall runs on the hedge side: open stretches of the boundary, less houses and the photographed gaps. */
 export function jorgeWallRuns(): [number, number][] {
   const w = data.boundary, step = 0.1, runs: [number, number][] = [];
@@ -386,12 +392,12 @@ function guillermoPlanterTop(): (d: number) => number {
   return (d: number) => guillermoLaneY(d) + data.guillermoPlanter.height;
 }
 /** Paving across Calle Guillermo from `from` to `to` metres north of the Jorge line, level across its width at the lane's own height (not draped: its east edge lies over the bank to the pool). */
-function guillermoPaving(from: number, to: number, material: THREE.Material, name: string, uvScale = 1): THREE.Mesh {
-  const pave = data.guillermoPaving, pos: number[] = [], uv: number[] = [], idx: number[] = [];
+function guillermoPaving(from: number, to: number, material: THREE.Material, name: string, uvScale = 1, along = data.guillermoPaving.along, half = data.guillermoPaving.half): THREE.Mesh {
+  const pos: number[] = [], uv: number[] = [], idx: number[] = [];
   const stations: number[] = []; for (let d = from; d < to - 1e-6; d += 0.5) stations.push(d); stations.push(to);
   stations.forEach((d, i) => {
     const y = guillermoLaneY(d);
-    for (const side of [-1, 1]) { const p = at(pave.along + side * pave.half, -d); pos.push(p[0], y, p[1]); uv.push(d * uvScale, side * pave.half * uvScale); }
+    for (const side of [-1, 1]) { const p = at(along + side * half, -d); pos.push(p[0], y, p[1]); uv.push(d * uvScale, side * half * uvScale); }
     if (i) { const b = (i - 1) * 2; idx.push(b, b + 1, b + 3, b, b + 3, b + 2); }
   });
   const g = new THREE.BufferGeometry();
@@ -434,6 +440,36 @@ function guillermoPlanter(top: (d: number) => number, material: THREE.Material):
   (mesh.material as THREE.MeshStandardMaterial).side = THREE.DoubleSide;
   mesh.name = "jorge-guillermo-planter"; mesh.userData.noDrape = true; mesh.castShadow = mesh.receiveShadow = true;
   return mesh;
+}
+
+/** Ground level beside the Calle Guillermo paving `d` metres north of the Jorge line. */
+const guillermoGround = (d: number) => guillermoLaneY(d) - 0.33;
+/** A box beside Calle Guillermo between two [station, metres north] points, standing on the lane's own ground (not draped) and carried 0.4 m below it. */
+function laneBox(a: number[], b: number[], width: number, height: number, material: THREE.Material, name: string): THREE.Mesh {
+  const mesh = bar([a[0], -a[1]], [b[0], -b[1]], width, height + 0.4, material, name);
+  mesh.position.y = guillermoGround((a[1] + b[1]) / 2) + (height - 0.4) / 2;
+  delete mesh.userData.base; mesh.userData.noDrape = true;
+  return mesh;
+}
+/** A wall whose top falls evenly from `h0` at `a` to `h1` at `b` (IMG_2773), on the lane's own ground. */
+function fallingWall(a: number[], b: number[], thickness: number, h0: number, h1: number, material: THREE.Material, name: string): THREE.Mesh {
+  const p = at(a[0], -a[1]), q = at(b[0], -b[1]), len = Math.hypot(q[0] - p[0], q[1] - p[1]);
+  const shape = new THREE.Shape([new THREE.Vector2(0, -0.4), new THREE.Vector2(len, -0.4), new THREE.Vector2(len, h1), new THREE.Vector2(0, h0)]);
+  const g = new THREE.ExtrudeGeometry(shape, { depth: thickness, bevelEnabled: false }).translate(0, 0, -thickness / 2);
+  const mesh = new THREE.Mesh(g, material);
+  mesh.position.set(p[0], guillermoGround((a[1] + b[1]) / 2), p[1]); mesh.rotation.y = -Math.atan2(q[1] - p[1], q[0] - p[0]);
+  mesh.name = name; mesh.userData.noDrape = true; mesh.castShadow = mesh.receiveShadow = true;
+  return mesh;
+}
+/** The no-dogs sign on the wall end (IMG_2773): a red ring and bar over a dark dog shape on a white plate. Schematic. */
+function noDogsTexture(): THREE.CanvasTexture {
+  const c = document.createElement("canvas"); c.width = c.height = 128;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#f4f2ee"; g.fillRect(0, 0, 128, 128);
+  g.fillStyle = "#2b2b2b"; g.fillRect(40, 60, 44, 18); g.fillRect(78, 50, 14, 14); g.fillRect(42, 76, 7, 16); g.fillRect(74, 76, 7, 16); g.fillRect(34, 54, 8, 6);
+  g.strokeStyle = "#c62828"; g.lineWidth = 9; g.beginPath(); g.arc(64, 64, 46, 0, Math.PI * 2); g.stroke();
+  g.beginPath(); g.moveTo(32, 32); g.lineTo(96, 96); g.stroke();
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 
 /** Lawns, square tiles and cross-paths, covers, kerbs, planter walls, the bench, beds, planting, plaques, the sign and the lamps. */
@@ -510,6 +546,32 @@ export function addJorgeLane(scene: THREE.Scene): void {
       }
       mesh.children[0].position.y = 0.012; mesh.position.set(p[0], guillermoLaneY(cover.at[1]), p[1]); mesh.rotation.y = yawOf(jorgeAt(0).along); mesh.userData.noDrape = true;
       scene.add(mesh);
+    }
+  }
+  // West of Calle Guillermo (IMG_2773, IMG_2774): the lawn wall carried on to the lane with a falling top, the patio wall and hedged planters along the lane,
+  // two lamp posts and the brick-on-edge border. The houses stand back behind these.
+  const gw = data.guillermoWest;
+  {
+    const w = gw.wall, pw = gw.patioWall, pl = gw.planters;
+    scene.add(fallingWall(w.from, w.to, w.thickness, w.heightFrom, w.heightTo, white, "jorge-guillermo-west-wall"));
+    // The battered pier that ends the wall at the lane.
+    scene.add(laneBox([w.to[0] - 0.05, w.to[1] - 0.3], [w.to[0] - 0.05, w.to[1] + 0.3], 0.5, w.heightTo + 0.08, white, "jorge-guillermo-west-pier"));
+    scene.add(laneBox([pw.along, pw.from], [pw.along, pw.to], pw.thickness, pw.height, white, "jorge-guillermo-patio-wall"));
+    for (const [from, to] of pl.runs) {
+      scene.add(laneBox([pl.along, from], [pl.along, to], pl.thickness, pl.height, white, "jorge-guillermo-west-planter"));
+      // A pier at each end of a planter, where the gateways are.
+      for (const d of [from, to]) scene.add(laneBox([pl.along - 0.35, d], [pl.along + 0.3, d], 0.4, pl.height + 0.55, white, "jorge-guillermo-west-pier"));
+    }
+    const signAt = at(gw.sign.along, -(w.from[1] - w.thickness / 2 - 0.012));
+    const plate = new THREE.Mesh(new THREE.PlaneGeometry(0.4, 0.4), new THREE.MeshStandardMaterial({ map: noDogsTexture(), roughness: 0.6 }));
+    plate.position.set(signAt[0], guillermoGround(w.from[1]) + gw.sign.height, signAt[1]); plate.rotation.y = yawOf(jorgeAt(0).lawn);
+    plate.name = "jorge-guillermo-no-dogs"; plate.userData.noDrape = true; scene.add(plate);
+    const b = gw.border, bricks = new THREE.MeshStandardMaterial({ map: brickTexture(), color: "#c9a898", roughness: 0.92 });
+    const edgeMesh = guillermoPaving(b.from, b.to, bricks, "jorge-guillermo-brick-border", 4, b.along, b.half);
+    edgeMesh.position.y += 0.006; scene.add(edgeMesh);
+    for (const [s, d] of gw.lamps) {
+      const p = at(s, -d), post = lanternPost({ name: "jorge-lamp" });
+      post.position.set(p[0], guillermoGround(d), p[1]); post.rotation.y = yawOf(jorgeAt(0).along); post.userData.noDrape = true; scene.add(post);
     }
   }
   const planterTop = guillermoPlanterTop();
@@ -589,7 +651,7 @@ export function addJorgeLane(scene: THREE.Scene): void {
     // Leaves grow along local x: westwards on a lawn-side wall, eastwards on a hedge-side one.
     const p = at(c.from, lawnSide ? c.offset : -c.offset), far = at(c.from + (lawnSide ? -c.length : c.length), lawnSide ? c.offset : -c.offset);
     if (inHouse(p[0], p[1]) || inHouse(far[0], far[1])) continue;
-    stand(wallClimber({ length: c.length, height: c.height, depth: 0.4, seed: seed++, flowers: c.flowers, flowerColour: c.colour }), p, yawOf(out), 0.03, "jorge-climber");
+    stand(wallClimber({ length: c.length, height: c.height, depth: (c as { sparse?: boolean }).sparse ? 0.18 : 0.4, seed: seed++, flowers: c.flowers, flowerColour: c.colour, sparse: (c as { sparse?: boolean }).sparse }), p, yawOf(out), 0.03, "jorge-climber");
   }
   // West entrance planting: two round clipped trees on the north lawn, a shrub border along the house on the south side.
   for (const t of west.trees) {
@@ -616,6 +678,24 @@ export function addJorgeLane(scene: THREE.Scene): void {
   {
     const p = at(gp.along + gp.yucca.behind, -gp.yucca.along);
     if (clear(p, 0.9)) level(dragonTree({ height: gp.yucca.height, heads: 9, seed: 77, fork: 0.14, leaf: 1.15 }), p, planterTop(gp.yucca.along) - 0.75, "jorge-guillermo-yucca");
+  }
+  // West of Calle Guillermo: hedges in the lane planters, strelitzia behind the patio wall, the small tree and rose on the plinth lawn (IMG_2773, IMG_2774).
+  {
+    const pl = gw.planters;
+    for (const [from, to] of pl.runs) {
+      const n = Math.ceil((to - from - 0.5) / 0.9), piece = (to - from - 0.5) / n;
+      for (let i = 0; i < n; i++) {
+        const d = from + 0.25 + (i + 0.5) * piece, p = at(pl.along - 0.04, -d);
+        if (!clear(p, Math.hypot(piece, 0.45) / 2)) continue;
+        const hedge = clippedHedge({ length: piece + 0.06, depth: 0.38, height: pl.hedge, seed: seed++, clip: 4.5, greens: hedgeGreens });
+        hedge.rotation.y = yawOf(jorgeAt(0).along) + Math.PI / 2;
+        level(hedge, p, guillermoGround(d) + pl.height + 0.02, "jorge-guillermo-west-hedge");
+      }
+    }
+    for (const [s, d] of gw.strelitzia) { const p = at(s, -d); sprite("bird_of_paradise", p, 0.75, "jorge-guillermo-strelitzia"); }
+    sprite("tree", at(gw.tree[0], -gw.tree[1]), 0.42, "jorge-guillermo-lawn-tree");
+    const rose = at(gw.rose[0], -gw.rose[1]);
+    if (clear(rose, 0.5)) stand(looseShrub({ width: 0.9, depth: 0.8, height: 0.8, seed: seed++, leaf: "small", leafSize: [0.05, 0.035], greens: ["#3f5a30", "#4a6636"], stems: 6, flowers: { count: 14, colour: "#d2476b" } }), rose, 0, 0.03, "jorge-guillermo-rose");
   }
   // One of the tall slender palms on the main-pool lawn below the lane (IMG_2764, IMG_2765).
   {

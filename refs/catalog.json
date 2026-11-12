@@ -17152,7 +17152,7 @@
    "materials",
    "planting"
   ],
-  "note": "Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left.",
+  "note": "Read 2026-11-11. A white planter wall about waist high with orange and yellow lantana runs along the east side; the lawn of the CALLE DE JORGE plinth and a lamp post are on the left. Read 2026-11-12: the wall along the lawn is plain, with no door or window, bougainvillea trained along it and plants showing above it; its top falls to about 1.9 m at the lane, where a no-dogs sign hangs; a small broad-leaved tree and a rose stand on the lawn.",
   "observation": null,
   "taken": "2026-11-03",
   "originalUrl": "https://drive.google.com/file/d/1_fEuT3UwjGDnb9yhFuKJWDLyJTpYUeMs/view?usp=drivesdk",
@@ -17168,7 +17168,8 @@
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-guillermo-planter",
-   "jorge_lane.json:jorge-lane-guillermo-paving"
+   "jorge_lane.json:jorge-lane-guillermo-paving",
+   "jorge_lane.json:jorge-lane-guillermo-west"
   ],
   "looksAt": [
    -26.5,
@@ -17178,7 +17179,8 @@
   "looksAtFeatures": [
    "street:guillermo",
    "jorge_lane.json:jorge-lane-guillermo-paving",
-   "jorge_lane.json:jorge-lane-guillermo-planter"
+   "jorge_lane.json:jorge-lane-guillermo-planter",
+   "jorge_lane.json:jorge-lane-guillermo-west"
   ],
   "subject": "Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side"
  },
@@ -17198,7 +17200,7 @@
    "materials",
    "levels"
   ],
-  "note": null,
+  "note": " Read 2026-11-12: left of the lane, low white planters with clipped hedges between battered piers, a gateway with a dark iron gate, a taller white patio wall behind with strelitzia above it, two lamp posts; a row of bricks on edge borders the lane.",
   "observation": null,
   "taken": "2026-11-03",
   "originalUrl": "https://drive.google.com/file/d/1phkJP-t7aJlhmStcyGSBaXSryR5EpO-X/view?usp=drivesdk",
@@ -17214,7 +17216,8 @@
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-guillermo-planter",
-   "jorge_lane.json:jorge-lane-guillermo-paving"
+   "jorge_lane.json:jorge-lane-guillermo-paving",
+   "jorge_lane.json:jorge-lane-guillermo-west"
   ],
   "looksAt": [
    -27.5,

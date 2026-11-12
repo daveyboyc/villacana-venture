@@ -18,7 +18,7 @@ import {addEvaLane,inEvaLane,suppressInEvaLane} from "./eva-lane";
 import {addAlbertoPassage,inAlbertoPorch,suppressInAlbertoPorch} from "./alberto-passage";
 import {lanternPost} from "./lantern-post";
 import {addSouthPoolPassage,inSouthPoolPassage,SOUTH_POOL_HOST,southPoolGroundParts,southPoolUpperParts} from "./south-pool-passage";
-import {addJorgeLane,inJorgePlainFront} from "./jorge-lane";
+import {addJorgeLane,inJorgePlainFront,inJorgePlainWall} from "./jorge-lane";
 import {addElenaGatedEntry,elenaEntryRings} from "./elena-gated-entry";
 import {addElenaWalkway,elenaWalkwayGroundOffset,inElenaWalkway} from "./elena-walkway";
 import {addElenaEastPatios,elenaEastPatioRings,inElenaEastPatios} from "./elena-east-patios";
@@ -1057,6 +1057,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         if (houses.some((o) => o !== b && pointInRing(x + nx * 0.5, z + nz * 0.5, o.ring))) continue;
         if (inAlbertoPorch(x + nx * 0.3, z + nz * 0.3)) continue; // the porch's own back wall: plaque and hatch in src/alberto-passage.ts
         if (inSouthPoolPassage(x, z)) continue; // the Jorge passage mouths keep their own arches
+        if (inJorgePlainWall(x, z)) continue; // plain garden walls west of Calle Guillermo (IMG_2773)
         for (let f = 0; f < b.floors; f++) {
           if(b.id===SILVIA_HOST && f===0 && silviaCloseCamera(x,z))continue;
           if(f===0 && (replacesLaneGroundOpening(x,z)||inElenaWalkway(x,z)))continue; // the walkway's own doors are in src/elena-walkway.ts
@@ -1167,7 +1168,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         const z = az + (bz - az) * t;
         if(b.id===SILVIA_HOST && silviaCloseCamera(x,z))continue;
         if(inSouthPoolPassage(x,z))continue;
-        if(inJorgePlainFront(x,z))continue;
+        if(inJorgePlainFront(x,z)||inJorgePlainWall(x,z))continue;
         if(inLaneFrontageBand(x,z))continue;
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
