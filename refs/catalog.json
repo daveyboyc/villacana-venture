@@ -7932,7 +7932,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-guillermo-planter",
-   "street:guillermo"
+   "street:guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
   ],
   "subject": "Calle Guillermo from its seaward end"
  },
@@ -11780,7 +11781,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "street:guillermo"
+   "street:guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
   ],
   "subject": "Calle de Jorge sign post"
  },
@@ -17165,7 +17167,8 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-guillermo-planter"
+   "jorge_lane.json:jorge-lane-guillermo-planter",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
   ],
   "looksAt": [
    -26.5,
@@ -17174,6 +17177,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-paving",
    "jorge_lane.json:jorge-lane-guillermo-planter"
   ],
   "subject": "Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side"
@@ -17209,7 +17213,8 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-guillermo-planter"
+   "jorge_lane.json:jorge-lane-guillermo-planter",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
   ],
   "looksAt": [
    -27.5,
@@ -17218,7 +17223,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-guillermo-planter",
-   "street:guillermo"
+   "street:guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
   ],
   "subject": "the lantana planter wall along Calle Guillermo, about a metre high, with the yucca clump behind it"
  },
@@ -18520,7 +18526,11 @@
    "altitude": 6.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
+  ],
   "looksAt": [
    -18.5,
    127
@@ -18561,7 +18571,11 @@
    "altitude": 6.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "jorge_lane.json:jorge-lane-bench",
+   "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
+  ],
   "looksAt": [
    -19.7,
    125.5

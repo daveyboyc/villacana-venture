@@ -36,7 +36,7 @@ export function photoTexture(name:PhotoSurface,normal=false):THREE.Texture {
 /** The metres one image of a photo surface covers, for geometry whose UVs are not in metres. */
 export function photoMetres(name:PhotoSurface):number {return PHOTO_METRES[name];}
 const cache=new Map<string,THREE.Texture>();
-/** Shared surfaces. "paving" is the terracotta photo surface: 0.4 m tiles, 8 to an image 3.2 m across. */
+/** Shared surfaces. "paving" is the terracotta photo surface: 0.356 m tiles, 9 to an image 3.2 m across. */
 export function surfaceTexture(kind:"plaster"|"paving"|"mosaic"|"turf"):THREE.Texture {
   if(kind==="paving")return photoTexture("terracotta");
   const saved=cache.get(kind);if(saved)return saved;
