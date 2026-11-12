@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 422,
+  "features": 423,
   "photosCitedByModel": 183,
-  "modelFeaturesWithPhotoCitations": 168
+  "modelFeaturesWithPhotoCitations": 169
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3147,6 +3147,18 @@
    "evidence": [
     "IMG_2773.jpg",
     "IMG_2774.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-planting",
+   "name": "Calle Jorge garden planting: small trees, bougainvillea in bract, west-entrance shrub border, lawn colour",
+   "kind": "reference feature",
+   "source": "Read 2026-11-13. IMG_2229 and IMG_2230 show, against the house-23 front on the lawn side, a small grey-green tree about 3.5 m high beside the kerbed bed and a tall bougainvillea in full purple bract at the house corner; the bougainvilleas on these walls are masses of colour, not green climbers. IMG_2697 shows the house on the south side of the west entrance covered to first-floor height in purple bougainvillea, and a row of low clipped shrubs along the north edge of the flagged path under the round trees. IMG_2773 shows a small light-green broad-leaved tree on the plinth lawn (replacing the dark generic tree first put there) and climbers spilling over the top of the lawn wall. The lawns in all of these are a darker, more olive green than first modelled (sampled about RGB 105,110,66 in the overcast photos), and the bracts a duller violet-pink than pure magenta. Positions are read from the photos and good to about 1.5 m; trees and shrubs are Details.",
+   "evidence": [
+    "IMG_2229.jpg",
+    "IMG_2230.jpg",
+    "IMG_2697.jpg",
+    "IMG_2773.jpg"
    ]
   },
   {
@@ -8369,6 +8381,12 @@
   },
   {
    "from": "photo:IMG_2229.jpg",
+   "to": "jorge_lane.json:jorge-lane-planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2229.jpg",
    "to": "jorge_lane.json:jorge-lane-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8409,6 +8427,12 @@
   {
    "from": "photo:IMG_2230.jpg",
    "to": "jorge_lane.json:jorge-lane-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2230.jpg",
+   "to": "jorge_lane.json:jorge-lane-planting",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -18536,6 +18560,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2697.jpg",
+   "to": "jorge_lane.json:jorge-lane-planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2698.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -19633,6 +19663,12 @@
   {
    "from": "photo:IMG_2773.jpg",
    "to": "jorge_lane.json:jorge-lane-guillermo-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2773.jpg",
+   "to": "jorge_lane.json:jorge-lane-planting",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

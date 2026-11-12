@@ -75,6 +75,10 @@
    "level": "estimated",
    "why": "IMG_2773 and IMG_2774 show a plain white wall along the north side of the plinth lawn, its top falling from about 3.9 m to about 2.6 m at the lane, a no-dogs sign near its end, then hedged planters with gateways, a taller patio wall behind, two lamp posts and a brick border along the lane. On 12 November Dave agreed to treat the east portion of registry part 6364401UF1366S_part7, behind that wall, as an open walled patio on the photo evidence, without a measured check (data/registry_corrections.json). Positions are good to about 1 to 1.5 m; where the roofed west block ends is not seen in any photo. Dave has not yet looked at the result."
   },
+  "jorge_lane.json:jorge-lane-planting": {
+   "level": "estimated",
+   "why": "IMG_2229, IMG_2230, IMG_2697 and IMG_2773 show bougainvillea in full purple bract on the house fronts and spilling over the lawn wall, a small grey-green tree by the house-23 bed, a light-green broad-leaved tree on the plinth lawn, a row of low clipped shrubs along the flagged west path, and lawns of a darker, duller green than first modelled. What each plant is and roughly where is photographed; positions are good to about 1.5 m and sizes are estimated. Dave has not yet looked at the result."
+  },
   "jorge_lane.json:jorge-lane-lawn-palm": {
    "level": "estimated",
    "why": "IMG_2764 and IMG_2765 show tall slender palms on the main-pool lawn, the nearest about 19 m from the camera on a bearing of about 330 degrees. One is built there, 15 m tall; position good to about 4 m. Two short thick generic palms the photos contradict were removed (Dave, 2026-11-12: the palm is inaccurate)."

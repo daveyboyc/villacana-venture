@@ -1703,6 +1703,7 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-planting",
    "jorge_lane.json:jorge-lane-paths"
   ],
   "looksAt": [
@@ -1747,6 +1748,7 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
+   "jorge_lane.json:jorge-lane-planting",
    "jorge_lane.json:jorge-lane-fittings"
   ],
   "looksAt": [
@@ -1844,6 +1846,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-fittings",
+   "jorge_lane.json:jorge-lane-planting",
    "jorge_lane.json:jorge-lane-paths"
   ]
  },
@@ -11744,6 +11747,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "jorge_lane.json:jorge-lane-fittings",
+   "jorge_lane.json:jorge-lane-planting",
    "street:jorge"
   ],
   "subject": "white tiled bench, SANEA cover and square grate"
@@ -15688,7 +15692,8 @@
   "citedBy": [
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
-   "jorge_lane.json:jorge-lane-west"
+   "jorge_lane.json:jorge-lane-west",
+   "jorge_lane.json:jorge-lane-planting"
   ],
   "looksAt": [
    -125.4,
@@ -17243,7 +17248,8 @@
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-guillermo-planter",
    "jorge_lane.json:jorge-lane-guillermo-paving",
-   "jorge_lane.json:jorge-lane-guillermo-west"
+   "jorge_lane.json:jorge-lane-guillermo-west",
+   "jorge_lane.json:jorge-lane-planting"
   ],
   "looksAt": [
    -26.5,

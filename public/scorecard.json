@@ -488,7 +488,7 @@
     "placed": 29,
     "checks": {
      "matches": 7,
-     "differs": 2,
+     "differs": 3,
      "not-comparable": 5
     },
     "camerasSolved": 0,
@@ -924,7 +924,7 @@
     "placed": 53,
     "checks": {
      "matches": 4,
-     "differs": 7,
+     "differs": 8,
      "not-comparable": 1
     },
     "camerasSolved": 0,
@@ -1368,7 +1368,7 @@
     "placed": 149,
     "checks": {
      "matches": 26,
-     "differs": 5,
+     "differs": 7,
      "not-comparable": 11
     },
     "camerasSolved": 0,
@@ -1381,9 +1381,9 @@
     "generated": 599
    },
    "placement": {
-    "features": 20,
+    "features": 21,
     "verified": 0,
-    "disputed": 1
+    "disputed": 2
    },
    "discrepancies": [
     {
@@ -1393,11 +1393,19 @@
     {
      "id": "silvia-main-map-west-candidate",
      "feature": "silvia_tunnel.json:silvia-tunnel-study"
+    },
+    {
+     "id": "photo-discrepancy:6e469e5db375d843",
+     "feature": "jorge_lane.json:jorge-lane-planting"
+    },
+    {
+     "id": "photo-discrepancy:cde52ab571c82c77",
+     "feature": "jorge_lane.json:jorge-lane-planting"
     }
    ],
    "tasks": {
     "open": 5,
-    "inProgress": 16,
+    "inProgress": 17,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
      "Build the Silvia tunnel with recessed brown entrance doors and photo details",
@@ -1406,7 +1414,7 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 15,
+    "estimated": 16,
     "inferred": 4,
     "registry": 0,
     "gaps": 2
@@ -1416,8 +1424,8 @@
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 15 estimated, 4 inferred, 2 known gaps.",
-    "Placement: 0 of 20 features verified, 2 open discrepancies."
+    "How sure: 1 photographed, 16 estimated, 4 inferred, 2 known gaps.",
+    "Placement: 0 of 21 features verified, 4 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -1755,7 +1763,7 @@
     "placed": 460,
     "checks": {
      "matches": 44,
-     "differs": 15,
+     "differs": 17,
      "not-comparable": 51
     },
     "camerasSolved": 7,
@@ -1780,9 +1788,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 422,
+    "features": 423,
     "verified": 0,
-    "disputed": 13
+    "disputed": 14
    },
    "discrepancies": [
     {
@@ -1872,11 +1880,19 @@
     {
      "id": "photo-discrepancy:f89b5484edc8b5c0",
      "feature": "jorge_lane.json:jorge-lane-guillermo-west"
+    },
+    {
+     "id": "photo-discrepancy:6e469e5db375d843",
+     "feature": "jorge_lane.json:jorge-lane-planting"
+    },
+    {
+     "id": "photo-discrepancy:cde52ab571c82c77",
+     "feature": "jorge_lane.json:jorge-lane-planting"
     }
    ],
    "tasks": {
     "open": 41,
-    "inProgress": 43,
+    "inProgress": 44,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -1885,7 +1901,7 @@
    },
    "confidence": {
     "photographed": 57,
-    "estimated": 121,
+    "estimated": 122,
     "inferred": 11,
     "registry": 233,
     "gaps": 16
@@ -1895,8 +1911,8 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 121 estimated, 11 inferred, 16 known gaps.",
-    "Placement: 0 of 422 features verified, 22 open discrepancies."
+    "How sure: 57 photographed, 122 estimated, 11 inferred, 16 known gaps.",
+    "Placement: 0 of 423 features verified, 24 open discrepancies."
    ],
    "light": {
     "colour": "red",

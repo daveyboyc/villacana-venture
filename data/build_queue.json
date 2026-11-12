@@ -3070,6 +3070,34 @@
    "notes": "12 November: built the plain lawn wall with its falling extension to the lane, the no-dogs sign, the patio wall, hedged planters with gateways, two lamp posts, the brick border, lawn to the wall foot, a small tree and a rose; generic doors, shutters and porches are kept off the lawn wall. 12 November, later: Dave agreed to turn the block behind the lawn wall into an open patio on the photo evidence; the east portion of 6364401UF1366S_part7 is now an open walled patio (data/registry_corrections.json, openPatios) and the lawn wall is one wall falling from 3.9 m to 2.6 m. Not done: the houses further up the lane keep generic fronts; gates in the gateways. Stays in progress until Dave says the IMG_2773 view is fine."
   },
   {
+   "id": "jorge-planting",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "planting",
+   "title": "Calle Jorge: bougainvillea in bract, small trees, shrub border and lawn colour",
+   "photos": [
+    "IMG_2697.jpg",
+    "IMG_2773.jpg"
+   ],
+   "build": "Dave, 2026-11-13: keep adding details, grass and plants. From IMG_2229, IMG_2230, IMG_2697 and IMG_2773: make the bougainvilleas masses of purple bract instead of green climbers (clusters of bracts in src/clipped-plants.ts); add the tall bougainvillea at the house-23 corner and the small grey-green tree beside the bed; cover the south house at the west entrance in bougainvillea to first-floor height and add the row of low clipped shrubs along the flagged path; replace the dark generic tree on the plinth lawn with a light-green broad-leaved one; spill bougainvillea over the lawn wall; tone the Calle Jorge lawns to the darker green of the photos.",
+   "avoid": "Planting stays in Details behind the route guard. Do not move walls, paths or houses. Leave Walk alone.",
+   "accept": [
+    "Visible in Inspect with Show details",
+    "Renders through the photo cameras recorded in data/photo_checks.json",
+    "scripts/check_jorge_lane.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-planting",
+    "jorge_lane.json:jorge-lane-west",
+    "jorge_lane.json:jorge-lane-guillermo-west"
+   ],
+   "dependsOn": [
+    "guillermo-west-walls"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,
