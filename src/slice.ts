@@ -492,7 +492,16 @@ async function boot(): Promise<void> {
     photoButtons.sort((a,b)=>Number(b.selected)-Number(a.selected));
   });
   const photoToggle=document.createElement("button");photoToggle.id="overview-photo-labels";photoToggle.textContent="Photo labels";photoToggle.setAttribute("aria-pressed",String(!!selectedPhoto));document.querySelector("#overview-advanced")!.append(photoToggle);
-  let showPhotoLabels=!!selectedPhoto;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));photoToggle.addEventListener("click",()=>{showPhotoLabels=!showPhotoLabels;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));});
+  let showPhotoLabels=!!selectedPhoto;photoToggle.setAttribute("aria-pressed",String(showPhotoLabels));
+  const mobilePhotos=document.querySelector<HTMLButtonElement>("#mobile-photos")!;
+  const setPhotoLabels=(on:boolean)=>{showPhotoLabels=on;photoToggle.setAttribute("aria-pressed",String(on));mobilePhotos.setAttribute("aria-pressed",String(on));};
+  setPhotoLabels(showPhotoLabels);
+  photoToggle.addEventListener("click",()=>setPhotoLabels(!showPhotoLabels));
+  mobilePhotos.addEventListener("click",()=>setPhotoLabels(!showPhotoLabels));
+  document.querySelector("#mobile-map")!.addEventListener("click",()=>{
+    if(embedded)parent.postMessage({type:"villacana-map"},location.origin);
+    else location.href=asset("/")+"?view=map";
+  });
   const updatePhotoLabels=()=>{
     photoLabels.hidden=!overview||!showPhotoLabels;
     if(!overview||!showPhotoLabels)return;
