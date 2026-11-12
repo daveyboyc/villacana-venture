@@ -225,7 +225,7 @@ async function boot(): Promise<void> {
     for(const along of [1,6]){const light=new THREE.PointLight('#fff0d4',1.5,7,2);const p=silviaWorld(0,along);light.position.set(p[0],silviaY+2.35,p[1]);scene.add(light);}
   }
   // No deck wall where the lawn meets the paseo, or along a lowered lane (its own walls stand there).
-  if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z));
+  if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z), liveGroundY);
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   // The Blender-built facade kit dresses the house walls (src/facade-kit.ts); small screens keep
@@ -260,7 +260,7 @@ async function boot(): Promise<void> {
   if (seaside && mainPool) { const sd = seaside; addSeafrontFence(scene, (x, z) => sd.y(x, z)); }
   const mainRing = skeleton.pools.find((p) => p.id === "main")?.ring;
   const toddlerRing = skeleton.pools.find((p) => p.id === "toddler")?.ring;
-  if (mainPool && mainRing && toddlerRing) addMainPoolLawn(scene, mainRing, toddlerRing, !layoutOnly);
+  if (mainPool && mainRing && toddlerRing) addMainPoolLawn(scene, mainRing, toddlerRing, !layoutOnly, liveGroundY);
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   addPoolDecks(scene, nearbyPools, deckSlabCanvas(), skeleton.viewRotation);
@@ -316,6 +316,13 @@ async function boot(): Promise<void> {
   const start = centroid(pool.ring);
   const spawn = findSpawn(start, pool.ring, buildings, poolRings);
   let inspectAt: { x: number; z: number; distance: number; pitch: number } | null = null;
+  // &inspect=x,z[,distance,pitchDeg,bearingDeg] opens Inspect looking at a turned-frame point, for scripted Inspect renders.
+  const inspectQuery=new URLSearchParams(location.search).get("inspect")?.split(",").map(Number);
+  let inspectYaw=0;
+  if(inspectQuery&&inspectQuery.length>=2&&inspectQuery.every(Number.isFinite)){
+    inspectAt={x:inspectQuery[0],z:inspectQuery[1],distance:inspectQuery[2]??40,pitch:(inspectQuery[3]??50)*Math.PI/180};
+    inspectYaw=-(inspectQuery[4]??0)*Math.PI/180;
+  }
   if (seafrontFocus && skeleton.seafront) {
     const restaurant = centroid(skeleton.seafront.restaurant.ring);
     const safe = skeleton.seafront.paseo.points.filter(([x, z]) => !buildings.some((b) => nearRing(x, z, b.ring, 1.5)));
@@ -609,7 +616,7 @@ async function boot(): Promise<void> {
       document.querySelector("#help")!.textContent=overview?"Drag to orbit · two fingers pan · twist to turn":"WASD or left thumb to walk · drag to look";
       if(overview && !inspectionStarted){
         camYaw=0;inspectionStarted=true;
-        if(inspectAt){overviewCentre.set(inspectAt.x,0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}
+        if(inspectAt){camYaw=inspectYaw;overviewCentre.set(inspectAt.x,inspectQuery?liveGroundY(inspectAt.x,inspectAt.z)+0.5:0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}
         else{distance=focusPending?Math.min(110,farthest):farthest*0.72;pitch=focusPending?Math.PI/3:0.9;}
       }
       if(overview && savedInspection){({distance,pitch,yaw:camYaw}=savedInspection);savedInspection=null;}
