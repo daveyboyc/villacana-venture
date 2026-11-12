@@ -1433,7 +1433,7 @@
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 11 spots",
+    "headline": "Photos needed: 13 spots",
     "requests": [
      {
       "id": "guillermo-lane-walk",
@@ -1462,7 +1462,7 @@
        165.1
       ],
       "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
-      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built",
+      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -1548,6 +1548,22 @@
       "photos": []
      },
      {
+      "id": "jorge-86-100",
+      "at": [
+       -62.3,
+       149.9
+      ],
+      "look": [
+       -55.3,
+       145.9
+      ],
+      "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+      "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "jorge-benches",
       "at": [
        -70.7,
@@ -1592,6 +1608,22 @@
       "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
       "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
       "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-east-house-fronts",
+      "at": [
+       -31.1,
+       131.9
+      ],
+      "look": [
+       -27.6,
+       129.9
+      ],
+      "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+      "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+      "priority": 3,
       "state": "open",
       "photos": []
      },
@@ -2052,7 +2084,7 @@
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 22 spots",
+    "headline": "Photos needed: 24 spots",
     "requests": [
      {
       "id": "alberto",
@@ -2161,7 +2193,7 @@
        165.1
       ],
       "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
-      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built",
+      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -2279,6 +2311,22 @@
       "photos": []
      },
      {
+      "id": "jorge-86-100",
+      "at": [
+       -62.3,
+       149.9
+      ],
+      "look": [
+       -55.3,
+       145.9
+      ],
+      "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+      "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "jorge-benches",
       "at": [
        -70.7,
@@ -2387,6 +2435,22 @@
       "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
       "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
       "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "jorge-east-house-fronts",
+      "at": [
+       -31.1,
+       131.9
+      ],
+      "look": [
+       -27.6,
+       129.9
+      ],
+      "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+      "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+      "priority": 3,
       "state": "open",
       "photos": []
      },

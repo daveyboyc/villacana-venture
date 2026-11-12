@@ -525,7 +525,7 @@
         165.1
       ],
       "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
-      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built",
+      "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
       "priority": 1,
       "radius": 8,
       "since": "2026-11-14",
@@ -581,6 +581,42 @@
       "ask": "From Calle Guillermo beside the no-dogs sign, hold the camera up over the wall (or use a gateway) to photograph the patio behind the lawn wall: where the roofed part ends and what is planted.",
       "why": "Dave agreed to open this patio on photo evidence; where the roofed block really ends is not seen",
       "priority": 2,
+      "radius": 8,
+      "since": "2026-11-14",
+      "status": "open"
+    },
+    {
+      "id": "jorge-86-100",
+      "area": "seaward-lanes",
+      "at": [
+        -62.3,
+        149.9
+      ],
+      "look": [
+        -55.3,
+        145.9
+      ],
+      "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+      "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+      "priority": 2,
+      "radius": 8,
+      "since": "2026-11-14",
+      "status": "open"
+    },
+    {
+      "id": "jorge-east-house-fronts",
+      "area": "seaward-lanes",
+      "at": [
+        -31.1,
+        131.9
+      ],
+      "look": [
+        -27.6,
+        129.9
+      ],
+      "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+      "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+      "priority": 3,
       "radius": 8,
       "since": "2026-11-14",
       "status": "open"

@@ -195,7 +195,7 @@ for row in plants_['shrubs']:
 gate, mid = lane['gateway'], lane['middle']
 assert all(e in photos for e in gate['evidence'] + mid['evidence']) and gate['basis'] and mid['basis'].startswith('Inferred')
 assert abs(gate['along'] - west['to']) < 0.5 and mid['from'] >= gate['along'] and mid['to'] == shown['from'], 'flags, gateway, middle path and east stretch must join end to end'
-assert gate['opening'] / 2 > lane['path']['edgeHalf'] - 0.1 and mid['portal']['opening'] / 2 > lane['path']['edgeHalf'] - 0.1, 'a portal narrower than the path'
+assert 1.0 <= gate['opening'] <= 1.8 and 1.0 <= mid['portal']['opening'] <= 1.8 and 1.8 <= gate['height'] <= 2.5, 'portal size outside what the photos allow'
 for o in (gate, mid['portal']):
     for side in ('lawn', 'hedge'):
         assert not housed(spot(o['along'], o['opening'] / 2 + o['pier'] / 2, side)), ('portal pier in a house', o['along'])
@@ -210,7 +210,7 @@ for t in mid['trees']:
 assert all(any(g['side'] == b['side'] and g['from'] <= b['along'] <= g['to'] and g['inner'] <= b['offset'] <= g['outer'] for g in mid['grass']) for b in aerial if b['along'] < shown['from'])
 # Every photo the lane still needs is on the request list.
 requests = {r['id']: r for r in json.loads((ROOT / 'data/photo_requests.json').read_text())['requests']}
-for rid in ('jorge-gateway', 'jorge-middle-lawn', 'jorge-silvia-junction', 'jorge-houses-56-86', 'jorge-27-35-passage', 'jorge-benches', 'jorge-east-square-on', 'jorge-west-house-front', 'guillermo-patio-behind-wall'):
+for rid in ('jorge-gateway', 'jorge-middle-lawn', 'jorge-silvia-junction', 'jorge-houses-56-86', 'jorge-27-35-passage', 'jorge-benches', 'jorge-east-square-on', 'jorge-west-house-front', 'guillermo-patio-behind-wall', 'jorge-86-100', 'jorge-east-house-fronts'):
     assert requests[rid]['status'] == 'open' and requests[rid]['area'] == 'seaward-lanes', rid
 loose = [spot(lane[k]['along'], lane[k]['offset'], lane[k]['side']) for k in ('plaqueHedge', 'lantana', 'grassCover', 'olive')]
 for p in loose:

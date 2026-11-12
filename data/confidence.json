@@ -65,11 +65,11 @@
   },
   "jorge_lane.json:jorge-lane-gateway": {
    "level": "estimated",
-   "why": "IMG_2280 and IMG_2697, enlarged, show a white gateway with a flat capped lintel, open green iron leaves, bougainvillea over it, a white wall with a hedge to its left and a flagged cross-path in front. It is seen only from 25 m away, so its width, height and station (the aerial's white mark at about 28 m) are estimated to about 1 m."
+   "why": "IMG_2280 and IMG_2697, enlarged, show a white gateway with a flat capped lintel, open green iron leaves, bougainvillea over it, a white wall with a hedge to its left and a flagged cross-path in front. It is seen only from 25 m away, so its size (built 1.25 m wide by 2.1 m high, measured against the round tree to about a quarter) and station (the aerial's white mark at 28 to 29 m) are estimates."
   },
   "jorge_lane.json:jorge-lane-middle": {
    "level": "inferred",
-   "why": "No photo is taken between the gateway at 28 m and about 86 m. The square-tile path is carried through because the photos at both ends show a terracotta path; the lawns and one tree are placed from the aerial; the second white portal is seen through the gateway but where it stands (put at 56 m, where the house rows begin) is a guess. Walls, planters, doors and the CALLE JORGE 27 35 passage along 56 to 86 m are not built. Photo requests jorge-middle-lawn, jorge-silvia-junction, jorge-houses-56-86 and jorge-27-35-passage."
+   "why": "No photo is taken between the gateway at 28 m and about 86 m. The square-tile path is assumed to continue from the east stretch, where IMG_2234 shows it; neither the aerial nor the west photos show the path surface here. The lawns and one tree are placed from the aerial, and the north strip from 58 to 86 m, drawn as grass, reads khaki and may be bare ground or paving; the second white portal is seen through the gateway but where it stands (put at 56 m, where the house rows begin) is a guess. Walls, planters, doors and the CALLE JORGE 27 35 passage along 56 to 86 m are not built. Photo requests jorge-middle-lawn, jorge-silvia-junction, jorge-houses-56-86 and jorge-27-35-passage."
   },
   "jorge_lane.json:jorge-lane-guillermo-planter": {
    "level": "estimated",
