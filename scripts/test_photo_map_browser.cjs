@@ -82,6 +82,12 @@ const fs = require('node:fs');
     // Mobile portrait and small landscape: search, card, full image, mode controls.
     for (const viewport of [{width:390,height:844},{width:320,height:568},{width:844,height:390}]) {
       await page.setViewportSize(viewport);
+      if (viewport.width <= 760) {
+        await page.click('#photo-finder-toggle');
+        await page.waitForFunction(() => document.querySelector('#photo-library').classList.contains('finder-collapsed') && document.querySelector('#photo-search').getClientRects().length === 0);
+        await page.click('#photo-finder-toggle');
+        await page.waitForFunction(() => !document.querySelector('#photo-library').classList.contains('finder-collapsed'));
+      }
       await page.fill('#photo-search','boat'); await page.locator('.photo-result').first().click();
       const nav=await page.locator('#app-nav button').evaluateAll(buttons=>buttons.map(b=>({left:b.getBoundingClientRect().left,right:b.getBoundingClientRect().right})));
       assert.ok(nav.every(b=>b.left>=0&&b.right<=viewport.width),'every mode and Find photo remain reachable on narrow screens');

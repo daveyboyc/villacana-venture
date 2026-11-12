@@ -26,6 +26,9 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
   const refs = data.references, reviews = stored<Record<string, Review>>(STORE, {});
   const draftLabels=stored<{labels?:Record<string,string>}>("villacana-map-edits",{}).labels??{};
   const panel = make("aside", "", document.querySelector("#map-page")!); panel.id = "photo-library"; panel.setAttribute("aria-label", "Photo references");
+  const finder = make("button", "Hide find photos", panel); finder.type = "button"; finder.id = "photo-finder-toggle"; finder.setAttribute("aria-expanded", "true");
+  const setFinder = (open: boolean) => { panel.classList.toggle("finder-collapsed", !open); finder.textContent = open ? "Hide find photos" : "Find photos"; finder.setAttribute("aria-expanded", String(open)); finder.setAttribute("aria-label", open ? "Hide the find photo list" : "Show the find photo list"); };
+  finder.addEventListener("click", () => setFinder(panel.classList.contains("finder-collapsed")));
   const head = make("div", "", panel); head.className = "photo-library-head";
   make("h1", "Photo references", head);
   const search = make("input", "", head); search.id = "photo-search"; search.type = "search"; search.placeholder = "Find photo ID, place or subject…"; search.setAttribute("aria-label", "Search photo references");
@@ -147,6 +150,7 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     update();
   }
   function select(r: Reference, push = true, locate = true) {
+    setFinder(true);
     selected = r; moving = false; movePoints = []; showDetail(r); showContext();
     { const u = new URL(location.href); u.searchParams.set("photo", r.id); if(push)history.pushState(null,"",u);else history.replaceState(null,"",u); }
     if (locate && points(r).length) options.focus(points(r));
