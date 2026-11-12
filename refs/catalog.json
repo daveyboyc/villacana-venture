@@ -7693,7 +7693,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:barraka",
-   "area:beach"
+   "area:beach",
+   "barraka_facade.json:barraka-facade"
   ],
   "subject": "Barraka beach restaurant at the end of the paseo"
  },
@@ -7734,7 +7735,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:barraka",
-   "area:beach"
+   "area:beach",
+   "barraka_facade.json:barraka-facade"
   ],
   "subject": "Barraka beach restaurant at the end of the paseo"
  },
@@ -11840,7 +11842,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:barraka",
-   "area:beach"
+   "area:beach",
+   "barraka_facade.json:barraka-facade"
   ],
   "subject": "Barraka beach restaurant"
  },
@@ -12099,6 +12102,7 @@
    "paseo_details.json:paseo-white-lamp-3",
    "paseo_details.json:paseo-white-lamp-4",
    "barraka_frontage.json:barraka-lounge-garden",
+   "barraka_facade.json:barraka-facade",
    "seafront_fence.json:guillermo-beach-gate",
    "seafront_fence.json:guillermo-ramp-wall",
    "seafront_fence.json:main-pool-lawn-railing"
@@ -12110,7 +12114,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:barraka",
-   "area:beach"
+   "area:beach",
+   "barraka_facade.json:barraka-facade"
   ],
   "subject": "Barraka beach restaurant"
  },
@@ -12393,7 +12398,7 @@
    "facades",
    "signage"
   ],
-  "note": "Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature.",
+  "note": "Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. looksAt is the point 6 m along the phone heading from the pin at the west corner, beside the north-west wall; the same point the unsolved render already aimed at. Not a solved camera.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1yQoWdmp0pN8PtYXZiiGZaxz7Fk1qm039/view?usp=drivesdk",
@@ -12405,16 +12410,20 @@
    "altitude": 5.8,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_facade.json:barraka-facade"
+  ],
   "looksAt": [
    25.3,
    103.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:barraka",
+   "barraka_facade.json:barraka-facade",
    "area:paseo"
-  ]
+  ],
+  "subject": "Barraka north-west wall"
  },
  {
   "id": "IMG_2612.jpg",
@@ -12556,7 +12565,9 @@
    "altitude": 6.0,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_facade.json:barraka-facade"
+  ],
   "looksAt": [
    34,
    107
@@ -12565,6 +12576,7 @@
   "looksAtFeatures": [
    "area:barraka",
    "area:beach",
+   "barraka_facade.json:barraka-facade",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Barraka north-east wall"
@@ -12675,7 +12687,8 @@
    "paseo_details.json:paseo-white-lamp-1",
    "paseo_details.json:paseo-white-lamp-2",
    "paseo_details.json:paseo-white-lamp-3",
-   "paseo_details.json:paseo-white-lamp-4"
+   "paseo_details.json:paseo-white-lamp-4",
+   "barraka_facade.json:barraka-facade"
   ],
   "looksAt": [
    29,
@@ -12684,7 +12697,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:barraka",
-   "area:beach"
+   "area:beach",
+   "barraka_facade.json:barraka-facade"
   ],
   "subject": "Barraka restaurant, north-east and north-west faces"
  },
@@ -12715,7 +12729,9 @@
    "altitude": 7.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "barraka_facade.json:barraka-facade"
+  ],
   "looksAt": [
    43,
    104
@@ -13131,6 +13147,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "barraka_facade.json:barraka-facade",
    "seafront_fence.json:guillermo-beach-gate",
    "seafront_fence.json:guillermo-ramp-wall",
    "seafront_fence.json:main-pool-lawn-railing"
@@ -13141,7 +13158,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:barraka"
+   "area:barraka",
+   "barraka_facade.json:barraka-facade"
   ],
   "subject": "Barraka north-west glazed frontage"
  },

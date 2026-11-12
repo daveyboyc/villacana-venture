@@ -458,6 +458,10 @@
   "alberto_passage.json:calle-alberto-22-40-route": {
    "level": "inferred",
    "why": "Not seen: the registry courtyard behind the porch and the CALLE ALBERTO 22 40 plaque make a covered passage to it likely; drawn on the map only."
+  },
+  "barraka_facade.json:barraka-facade": {
+   "level": "estimated",
+   "why": "The parapet, two groups of three north-east windows, the door, the south-west row of eight, the red awnings and the thatched edge are clear in IMG_2615/2618/2604/2630. The wall is 4.8 m from the door proportion, against a 2014-15 lidar roof of 2.89-3.67 m. Stations along the walls are read from unsolved photos and may be a metre out."
   }
  },
  "gaps": [
@@ -697,6 +701,32 @@
     "IMG_2234.jpg"
    ],
    "why": "Since 14 November the path, lawns, a tree and a portal are built from the aerial between the gateway and 86 m (inferred). What is still left out because nothing shows it: the house fronts, garden walls, planters, lamps and house numbers between the house rows from 56 to 86 m, and the mouth of the CALLE JORGE 27 35 passage (IMG_2185-2187 show it only from inside)."
+  },
+  {
+   "id": "gap:barraka-cooking-shelter",
+   "name": "Barraka thatched cooking shelter, net-covered mound and kayaks",
+   "at": [
+    43.0,
+    104.0
+   ],
+   "photos": [
+    "IMG_2619.jpg"
+   ],
+   "why": "IMG_2619 shows a thatched shelter, a net-covered mound and kayaks on the sand left of the green aisle. The shelter's footprint is not measured, so it is not built (see also barraka-barbecue-boat)."
+  },
+  {
+   "id": "gap:barraka-slot-drains",
+   "name": "Slot drains along Barraka's glazed wall and across the terrace",
+   "at": [
+    22.0,
+    108.0
+   ],
+   "photos": [
+    "IMG_2610.jpg",
+    "IMG_2630.jpg",
+    "IMG_2631.jpg"
+   ],
+   "why": "A slot drain runs along the glazed wall and across the terrace paving. The paving widening and the drain line are not traced, so they are not built. The sandbags on the drain are temporary."
   }
  ]
 }

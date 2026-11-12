@@ -1,0 +1,46 @@
+{
+  "buildingId": "6364501UF1366S_part8",
+  "wallHeight": 4.8,
+  "registryRing": [[24.87, 105.57], [29.42, 101.56], [31.95, 104.46], [38.72, 112.21], [29.15, 120.64], [27.92, 119.23], [19.85, 109.99]],
+  "note": "Barraka's photographed walls on the unchanged registry ring of 6364501UF1366S_part8. Distances are metres along each face from its start corner (north-east and north-west from their shared north corner's neighbour: north-east starts at the north-west end of that wall; south-west starts at its south-east end; north-west starts at the west corner). Heights are metres above the beach at the building's centre.",
+  "facade": {
+    "id": "barraka-facade",
+    "name": "Barraka restaurant: parapet, clerestory windows, door, glazed awnings and thatched edge",
+    "evidence": ["IMG_2615.jpg", "IMG_2618.jpg", "IMG_2619.jpg", "IMG_2630.jpg", "IMG_2604.jpg", "IMG_2611.jpg"],
+    "trust": "Wall height: on IMG_2618 the parapet is about 2.4 times the black door. Taking the door as 2.05 m gives a wall of about 4.9 m; the model uses 4.8 m. The 2014-15 laser survey records this roof at a median of 2.89 m and a high point of 3.67 m (docs/reviews/lidar-levels, 6364501UF1366S_part8), below the photographed parapet. That survey figure is kept as the roof deck or an older roof, not as a reason to squash the clerestory into the registry's 3 m storey. The ring is not moved. North-east openings are read from the square-on IMG_2618 (pin +-2.4 m, camera not solved): two groups of three brown-framed windows, not the three groups of three the task brief counted; IMG_2615 is the same wall seen obliquely. The door is under the landward group. The louvred vent sits in the parapet between the groups; the small slot vent below the timber band is the second vent in IMG_2615 and its station is the less certain of the two. South-west: IMG_2604 shows eight clerestory windows, two red scalloped awnings, glazing, frosted BARRAKA BEACH lettering, a thatched eaves and a rooftop tank. North-west: IMG_2630 and IMG_2611 show glazing and one awning on the west corner, then a plain wall with one small window. Stations along the walls are estimates of about a metre. Lettering, scallops and the tank are simplified. Not built: the cooking shelter, net mound and kayaks (IMG_2619), the slot drains (IMG_2610, IMG_2630, IMG_2631), and the temporary sandbags."
+  },
+  "faces": {
+    "ne": { "start": 1, "count": 2 },
+    "sw": { "start": 4, "count": 2 },
+    "nw": { "start": 6, "count": 2 }
+  },
+  "ne": {
+    "windows": { "width": 1.2, "height": 0.5, "sill": 3.2, "groups": [[2.85, 4.5, 6.15], [8.95, 10.45, 12.0]] },
+    "band": { "y": 2.55, "height": 0.38 },
+    "door": { "at": 3.9, "width": 0.92, "height": 2.05 },
+    "louvre": { "at": 7.55, "y": 4.15, "width": 0.5, "height": 0.42 },
+    "slot": { "at": 9.3, "y": 1.85, "width": 0.48, "height": 0.18 }
+  },
+  "sw": {
+    "windows": { "width": 1.05, "height": 0.48, "sill": 3.22, "at": [0.9, 2.66, 4.43, 6.19, 7.95, 9.72, 11.48, 13.24] },
+    "band": { "y": 2.88, "height": 0.28 },
+    "awnings": [[0.45, 6.95], [7.2, 13.7]],
+    "glazing": { "sill": 0.95, "head": 2.42 },
+    "timber": { "sill": 0.12, "head": 1.02 }
+  },
+  "nw": {
+    "glazedTo": 5.5,
+    "awning": [0.35, 5.35],
+    "window": { "at": 8.6, "y": 1.45, "width": 0.42, "height": 0.42 }
+  },
+  "roof": {
+    "thatchDepth": 0.72,
+    "thatchHeight": 0.26,
+    "neReturn": 2.4,
+    "tankAt": 7.1,
+    "tankInset": 1.2,
+    "tankLength": 2.1,
+    "tankRadius": 0.36
+  },
+  "awning": { "depth": 1.45, "y": 2.58 }
+}

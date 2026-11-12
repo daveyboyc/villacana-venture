@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 424,
-  "photosCitedByModel": 183,
-  "modelFeaturesWithPhotoCitations": 170
+  "features": 425,
+  "photosCitedByModel": 186,
+  "modelFeaturesWithPhotoCitations": 171
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -12172,6 +12172,7 @@
     "paseo_details.json:paseo-white-lamp-3",
     "paseo_details.json:paseo-white-lamp-4",
     "barraka_frontage.json:barraka-lounge-garden",
+    "barraka_facade.json:barraka-facade",
     "seafront_fence.json:guillermo-beach-gate",
     "seafront_fence.json:guillermo-ramp-wall",
     "seafront_fence.json:main-pool-lawn-railing"
@@ -12496,7 +12497,9 @@
      "angleOffset": 29.3
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_facade.json:barraka-facade"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 20.6,
@@ -12686,7 +12689,9 @@
      "angleOffset": 29.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_facade.json:barraka-facade"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 33.1,
@@ -12792,7 +12797,8 @@
     "paseo_details.json:paseo-white-lamp-1",
     "paseo_details.json:paseo-white-lamp-2",
     "paseo_details.json:paseo-white-lamp-3",
-    "paseo_details.json:paseo-white-lamp-4"
+    "paseo_details.json:paseo-white-lamp-4",
+    "barraka_facade.json:barraka-facade"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -12831,7 +12837,9 @@
      "angleOffset": 26.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_facade.json:barraka-facade"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 46.0,
@@ -13282,6 +13290,7 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
+    "barraka_facade.json:barraka-facade",
     "seafront_fence.json:guillermo-beach-gate",
     "seafront_fence.json:guillermo-ramp-wall",
     "seafront_fence.json:main-pool-lawn-railing"

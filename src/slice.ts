@@ -26,6 +26,7 @@ import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPat
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
 import { addBarrakaFrontage } from "./barraka-frontage";
+import { addBarrakaFacade, BARRAKA_BUILDING, barrakaWallHeight } from "./barraka-facade";
 import { addBeachVerge } from "./beach-verge";
 import {addMiddleSouthGate,middleSouthRings} from "./middle-pool-south-gate";
 import {addCervantesGardenDoor,gardenDoorRings,gardenGroundOffset} from "./cervantes-garden-door";
@@ -227,7 +228,7 @@ async function boot(): Promise<void> {
   // No deck wall where the lawn meets the paseo, or along a lowered lane (its own walls stand there).
   if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z));
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
-  const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
+  const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && b.id !== skeleton.seafront?.restaurant.buildingId);
   // The Blender-built facade kit dresses the house walls (src/facade-kit.ts); small screens keep
   // the flat shutters except on the walls traced from photos.
   const kitWalls = layoutOnly ? new Set<string>() : facadeKitWalls(houses, matchMedia("(max-width:700px), (max-height:500px)").matches);
@@ -254,6 +255,11 @@ async function boot(): Promise<void> {
   // The paseo's sandstone retaining wall; along the south lawn it is the sea wall, drawn once.
   if (seaside) addBarrakaBoardwalk(scene, (x,z) => seaside!.y(x,z));
   if (seaside) addBarrakaFrontage(scene, (x,z) => seaside!.y(x,z));
+  if (skeleton.seafront && buildings.some((b) => b.id === BARRAKA_BUILDING)) {
+    const ring = skeleton.seafront.restaurant.ring;
+    const c = centroid(ring);
+    addBarrakaFacade(scene, ring, seaside?.inZone(c.x, c.z) ? seaside.y(c.x, c.z) : 0);
+  }
   if (seaside && mainPool) addBeachVerge(scene, (x,z) => seaside!.y(x,z));
   if (seaside && skeleton.seafront) { addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY); addPaseoDetails(scene, seaside, liveGroundY); }
   // The wall, gateway and railings between the big-pool lawn and the paseo.
@@ -986,7 +992,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     if (b.notStanding) continue; // registry outline only: the aerial shows open paseo and sand there (issue #41)
     const c = centroid(b.ring);
     // A zero-storey enclosure is not evidence of a solid house or measured walls.
-    const height = b.floors > 0 ? b.floors * floorHeight : .035;
+    const height = b.id === BARRAKA_BUILDING ? barrakaWallHeight : b.floors > 0 ? b.floors * floorHeight : .035;
     // A covered walk-through is only the storey above; the lane runs under it.
     const lift = b.id===SILVIA_HOST?3.35:b.id===SILVIA_CANOPY?2.98:b.passage ? PASSAGE_HEADROOM : 0;
     const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
@@ -1008,7 +1014,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     }
     const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height - lift, bevelEnabled: false });
     geometry.rotateX(-Math.PI / 2);
-    const mesh = new THREE.Mesh(geometry, [cap, wall]);
+    const mesh = new THREE.Mesh(geometry, b.id === BARRAKA_BUILDING ? [wall, wall] : [cap, wall]);
     mesh.position.y = lift;
     if(b.id===POOL_TERRACE_ID) {mesh.position.y=LOWER_POOL_Y;mesh.userData.referenceSurface=true;}
     // A building on the lowered lawn stands on it.

@@ -2679,7 +2679,12 @@
     "Standard handover checks pass"
    ],
    "dependsOn": [],
-   "status": "open"
+   "features": [
+    "barraka_facade.json:barraka-facade"
+   ],
+   "status": "in-progress",
+   "owner": "Cursor",
+   "notes": "12 Nov. Parapet raised to 4.8 m from the IMG_2618 door proportion (about 4.9 m) and recorded in the area notes; the levels survey's 3 m rise cap is for ground, not this wall, and the 2014-15 lidar roof (median 2.89 m, high 3.67 m) is left as a disagreement rather than averaged in. Openings are on the registry edges at stations read from the unsolved photos, about a metre, so the solved-camera measurement and independent review the accept line asks for are still outstanding. The task stays in progress and claims no placement approval."
   },
   {
    "id": "elena-walkway-details",
