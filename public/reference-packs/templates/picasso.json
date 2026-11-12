@@ -23,6 +23,11 @@
       "path": "public/photos-ref/IMG_2345.jpg"
     },
     {
+      "id": "IMG_2444.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2444.jpg"
+    },
+    {
       "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
       "private": true,
       "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png"

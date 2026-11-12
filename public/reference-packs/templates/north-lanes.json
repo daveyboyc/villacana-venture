@@ -14,9 +14,20 @@
     "Model state and placement approval kept separate"
   ],
   "name": "Loira, Bolivia, Alberto and Isabel",
-  "status": "source-needed",
+  "status": "not-started",
   "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
-  "candidateSources": [],
+  "candidateSources": [
+    {
+      "id": "IMG_2448.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2448.jpg"
+    },
+    {
+      "id": "IMG_2686.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2686.jpg"
+    }
+  ],
   "features": [],
   "observations": [],
   "placementStatus": "unapproved"
