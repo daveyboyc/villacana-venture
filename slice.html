@@ -75,16 +75,20 @@
       body.mobile-inspect #title,
       body.mobile-inspect #inspection-jump span,
       body.mobile-inspect #inspection-jump label,
-      body.mobile-inspect .reference-layer,
+      body.mobile-inspect .reference-layer:not(.photo-overview-labels),
       body.mobile-inspect #help { display:none !important; }
-      body.mobile-inspect #inspection-jump { top:8px; right:auto; max-width:min(240px, calc(100vw - 16px)); background:transparent; border:0; padding:0; }
+      body.mobile-inspect #inspection-jump { top:8px; right:8px; max-width:calc(100vw - 16px); background:transparent; border:0; padding:0; }
+      #mobile-views { display:none; }
+      body.mobile-inspect #mobile-views { display:flex; gap:6px; }
+      body.mobile-inspect #mobile-views button { min-height:44px; border:1px solid #c9bfae; background:#fffdf8; border-radius:8px; padding:8px 12px; font:14px system-ui; color:#263b32; }
+      body.mobile-inspect #mobile-views button[aria-pressed="true"] { background:#235f94; color:white; border-color:#235f94; }
       body.embedded.mobile-inspect #inspection-jump { top:8px; }
     </style>
   </head>
   <body>
     <canvas id="scene"></canvas>
     <div class="chip" id="title">Pool</div>
-    <div id="inspection-jump"><label for="inspection-area">Jump to inspect</label><select id="inspection-area" aria-label="Jump to inspect an area"></select><span>Drag to orbit · two fingers pan · twist to turn</span></div>
+    <div id="inspection-jump"><label for="inspection-area">Jump to inspect</label><select id="inspection-area" aria-label="Jump to inspect an area"></select><span>Drag to orbit · two fingers pan · twist to turn</span><div id="mobile-views"><button type="button" id="mobile-map">Map</button><button type="button" id="mobile-photos" aria-pressed="false">Photos</button></div></div>
     <div class="chip" id="current-route" style="top:100px;left:12px;max-width:65vw" hidden></div>
     <div id="areas"><a class="chip" href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=36.4544655,-5.0511079&amp;zoom=18&amp;basemap=satellite" target="_blank" rel="noopener noreferrer">Google satellite</a><a class="chip" href="https://www.google.com/maps/@?api=1&amp;map_action=map&amp;center=36.4544655,-5.0511079&amp;zoom=18&amp;basemap=roadmap" target="_blank" rel="noopener noreferrer">Google street map</a><a class="chip" href="?pool=north,middle,south,main&amp;view=coastal-gate">Coastal gate</a><a class="chip" href="?pool=main">Main pool</a><a class="chip" href="?pool=main&amp;view=seafront">Seafront</a><a class="chip" href="?pool=north">North pool</a><a class="chip" href="?pool=middle">Middle pool</a><a class="chip" href="?pool=south">South pool</a><a class="chip" href="?pool=north,middle,south,main">Whole resort</a><a class="chip" href="./photos.html">Photo map</a><a class="chip" href="?pool=north,middle&amp;view=dali">Pintor Dalí</a><a class="chip" href="?pool=north,middle&amp;view=cervantes">Cervantes · two car parks</a></div>
     <a class="chip" id="layout-details" style="top:100px;right:12px" href="?details=1">Show details</a>

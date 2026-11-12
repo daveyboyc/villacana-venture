@@ -37,8 +37,14 @@ const fs = require('node:fs');
     assert.equal(await mobile.locator('#walk-camera').isHidden(), true, 'walk controls stay shelved');
     assert.equal(await mobile.evaluate(() => document.body.dataset.details), '1', 'a phone opens in details');
     assert.equal(await mobile.locator('#inspection-area').inputValue(), 'whole-resort');
-    assert.equal(await mobile.locator('.reference-layer').first().isHidden(), true, 'place and photo labels stay off on a phone');
+    assert.equal(await mobile.locator('.reference-layer').first().isHidden(), true, 'place labels stay off on a phone');
+    assert.equal(await mobile.locator('#mobile-map').isVisible(), true, 'map is available on a phone');
+    assert.equal(await mobile.locator('#mobile-photos').isVisible(), true, 'photo references are available on a phone');
     assert.equal(await mobile.locator('#overview-photo-labels').getAttribute('aria-pressed'), 'false', 'photo labels stay off');
+    await mobile.locator('#mobile-photos').tap();
+    await mobile.waitForFunction(() => document.querySelector('#mobile-photos').getAttribute('aria-pressed') === 'true' && !document.querySelector('.photo-overview-labels').hidden);
+    await mobile.locator('#mobile-photos').tap();
+    await mobile.waitForFunction(() => document.querySelector('.photo-overview-labels').hidden);
     const resort = async () => {
       await mobile.locator('#inspection-area').selectOption('north-pool');
       await mobile.locator('#inspection-area').selectOption('whole-resort');
