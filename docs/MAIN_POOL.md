@@ -167,3 +167,39 @@ lawn and the paseo above: still no step, but a fence.
 
 No ground photo shows the slope of Calle Guillermo itself. IMG_2226 and IMG_2227 show
 its foot: the gateway at paseo level and the corner house about 1 m above the beach.
+
+## The lawn on the surveyed ground, the lowered edge and the lawn kit (2026-11-12)
+
+Task `main-pool-lawn-ground`, found by looking at the lawn in Inspect
+(`scripts/shoot_inspect.cjs` renders Inspect from a fixed orbit camera; `&inspect=x,z,distance,pitch,bearing`
+opens Inspect there).
+
+- **Buried lawn work.** `src/main-pool-lawn.ts` built the pink paths, flagstone apron, white walls,
+  hedge, shower and bollards at the old flat deck (-3 m) and opted out of the terrain drape, while
+  the lawn now follows the laser survey at about -2.2 to -2.8 m. Only the bin tops showed. Every
+  piece is now laid on the game's live ground (`liveGroundY`): paths and apron vertex by vertex,
+  walls with a level top above their higher end, the step nosings, risers and rail with the same
+  survey offset as the flight they sit on.
+- **The lowered edge east of the lawn.** The survey grid holds the survey plus the 3 m drop at
+  nodes inside the lowered area and the survey alone outside, so a 2 m cell across the edge mixed
+  two datums. Where the survey has a real step (Calle Guillermo) that hardly shows; east of the
+  lawn, where the ground beyond the edge is at lawn level (-2.1 m against -2.3 m), the draped
+  retaining face became a jagged 3 m sliver of beige triangles and the ground sheets bent into a lip.
+  `src/terrain.ts` now reads a node across the edge on the querying side's datum when that brings it
+  nearer that side's own corners of the cell (the generator holds the pool deck level across both
+  sides, so near the restaurant nothing changes). The lawn and street sheets are draped each on their
+  own side (`siteYLowered`, `siteYStreet`), and each retaining face runs between the two, left out
+  where they meet within 5 cm. The grid file is unchanged.
+- **Path end and apron at the gateway.** The first pink path ran 3 m out onto the paseo through
+  the gateway, the apron straddled the wall line and one bollard stood on the paseo side. They now
+  stop on the lawn side (IMG_2759 shows the path running straight into the gate across the apron).
+  The gateway threshold still stands about 0.8 m above the lawn just inland of it, where the
+  seafront heights meet the survey (open in `beach-gate-verge`).
+- **Lawn kit.** `scripts/build_lawn_kit.py` builds the bollard light (green body on a concrete
+  collar, cream diffuser), the slatted wooden bin and a square grey service lid in Blender
+  (`public/models/lawn/`, byte-identical rebuilds, 40 kB together), from IMG_2759-2765 and IMG_2603.
+  `src/pool-kit.ts` `addKitModel` instances any kit model with a stand-in until it loads. One lid is
+  placed from IMG_2761; IMG_2759/2760 show more that their pins cannot place.
+- **Enrique's awnings.** One two-sided panel (its lettering read mirrored from the lane side) is
+  now the three lettered box awnings IMG_2775 shows, with menu boards and a lantern. The storey they
+  hang on is not modelled, so they stand in the air (gap and task `enrique-shop-storey`).

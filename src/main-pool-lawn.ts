@@ -5,7 +5,9 @@ import { clippedHedge, looseShrub } from "./clipped-plants";
 import { centroid, closestOnSegment, pointInRing } from "./geom";
 import { plasterMaterial } from "./materials";
 import { accessSection, LOWER_POOL_Y, poolGroundY, poolLevelPoint } from "./pool-levels";
+import { addKitModel } from "./pool-kit";
 import { addSprites } from "./sprites";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import type { Vec2 } from "./types";
 
 /** Pink paths, flagstones, lawn walls and the step finish (data/main_pool_lawn.json).
@@ -236,21 +238,57 @@ function addSteps(group: THREE.Group, details: boolean, ground: Ground): void {
   palm.position.set(at[0], Y + lift(at) + 0.35, at[1]); palm.name = "enrique-fan-palm"; group.add(palm);
 }
 
+/** One blue box awning: a sloping canvas top, a lettered valance in front and plain sides and back. */
+function boxAwning(text: string, width: number): THREE.Group {
+  const c = document.createElement("canvas"); c.width = 512; c.height = 48;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#1d4e86"; g.fillRect(0, 0, 512, 48);
+  g.fillStyle = "#f4f7fb"; g.font = "bold 24px sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+  g.fillText(text, 256, 25, 492);
+  const map = new THREE.CanvasTexture(c); map.colorSpace = THREE.SRGBColorSpace;
+  const cloth = new THREE.MeshStandardMaterial({ color: "#1d4e86", roughness: 0.9, side: THREE.DoubleSide });
+  const lettered = new THREE.MeshStandardMaterial({ map, roughness: 0.9 });
+  const awning = new THREE.Group();
+  const depth = 0.75, drop = 0.28;
+  const top = new THREE.Mesh(new THREE.PlaneGeometry(width, Math.hypot(depth, 0.3)), cloth);
+  top.rotation.x = -Math.PI / 2 + Math.atan2(0.3, depth); top.position.set(0, 0.15, depth / 2); awning.add(top);
+  // Lettering faces out from the wall only; seen from behind the valance is plain cloth.
+  const valance = new THREE.Mesh(new THREE.PlaneGeometry(width, drop), lettered);
+  valance.position.set(0, -drop / 2, depth); awning.add(valance);
+  const back = new THREE.Mesh(new THREE.PlaneGeometry(width, drop), cloth);
+  back.rotation.y = Math.PI; back.position.set(0, -drop / 2, depth - 0.002); awning.add(back);
+  for (const side of [-1, 1]) {
+    const cheek = new THREE.Mesh(new THREE.PlaneGeometry(depth, drop + 0.3), cloth);
+    cheek.rotation.y = Math.PI / 2; cheek.position.set(side * width / 2, 0, depth / 2); awning.add(cheek);
+  }
+  return awning;
+}
+
+/**
+ * The shop front at the head of Enrique's steps (IMG_2775, IMG_2776): three blue box awnings in a row
+ * along the facade, lettered as photographed, a wall lantern above the first, menu boards to its left.
+ * The facade faces the lane (south), as the lane photos look north at it; the anchor is estimated.
+ */
 function addShop(group: THREE.Group, ground: Ground): void {
   const at = data.shop.at as Vec2, base = ground(at[0], at[1]);
-  const c = document.createElement("canvas"); c.width = 256; c.height = 64;
-  const g = c.getContext("2d")!;
-  g.fillStyle = "#1d4e86"; g.fillRect(0, 0, 256, 64);
-  g.fillStyle = "#f4f7fb"; g.font = "22px sans-serif"; g.fillText("BAR & RESTAURANTE", 16, 40);
-  const cloth = new THREE.MeshStandardMaterial({ map: new THREE.CanvasTexture(c), roughness: 0.9, side: THREE.DoubleSide });
-  (cloth.map as THREE.CanvasTexture).colorSpace = THREE.SRGBColorSpace;
-  const awning = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 0.7), cloth);
-  awning.name = "enrique-awning"; awning.position.set(at[0], base + 2.35, at[1]); awning.rotation.x = -0.15;
-  group.add(awning);
-  const board = box("enrique-menu", 0.7, 0.9, 0.04, plasterMaterial("#f7f4ee"), [at[0] - 1.4, at[1] + 0.4], base + 1.7);
-  group.add(board);
-  const lamp = box("enrique-lantern", 0.22, 0.36, 0.22, new THREE.MeshStandardMaterial({ color: "#d9d3c4", roughness: 0.4 }), [at[0] + 1.3, at[1] - 0.2], base + 2.5);
-  group.add(lamp);
+  const front = new THREE.Group(); front.name = "enrique-shop-front"; front.position.set(at[0], base, at[1]);
+  const awnings: [string, number][] = [["FISH PORTIONS · MEATS · PUBLIC PEOPLE", 2.1], ["RACIONES · PESCADOS · CARNES · PIZZAS", 2.1], ["BAR & RESTAURANTE ENRIQUE", 2.3]];
+  const span = awnings.reduce((t, [, w]) => t + w, 0) + 0.5 * (awnings.length - 1);
+  let x = -span / 2;
+  for (const [text, width] of awnings) {
+    const awning = boxAwning(text, width); awning.name = "enrique-awning";
+    awning.position.set(x + width / 2, 2.45, 0); front.add(awning);
+    x += width + 0.5;
+  }
+  const board = plasterMaterial("#f7f4ee");
+  for (const [dx, w] of [[-span / 2 - 0.9, 0.6], [-span / 2 - 0.3, 0.3]] as const) front.add(box("enrique-menu", w, 0.8, 0.03, board, [dx, 0.03], 1.65));
+  const lamp = new THREE.MeshStandardMaterial({ color: "#2b2b28", roughness: 0.5, metalness: 0.4 });
+  const glass = new THREE.MeshStandardMaterial({ color: "#f1ead8", emissive: "#5a5040", roughness: 0.3 });
+  const lx = -span / 2 + 1.0;
+  front.add(box("enrique-lantern-arm", 0.04, 0.04, 0.35, lamp, [lx, 0.18], 3.15));
+  front.add(box("enrique-lantern", 0.2, 0.3, 0.2, glass, [lx, 0.35], 3.0));
+  front.add(box("enrique-lantern-cap", 0.26, 0.06, 0.26, lamp, [lx, 0.35], 3.18));
+  group.add(front);
 }
 
 function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[], ground: Ground): void {
@@ -315,21 +353,13 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
   addSteps(group, details, ground);
   if (details) {
     addShop(group, ground);
-    const cap = new THREE.MeshStandardMaterial({ color: "#f3efe4", roughness: 0.5 });
-    const body = new THREE.MeshStandardMaterial({ color: "#2c4638", roughness: 0.7 });
-    for (const at of data.fittings.bollards as Vec2[]) {
-      const bollard = new THREE.Group();
-      const post = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.09, 0.48, 8), body);
-      post.position.y = 0.24; bollard.add(post);
-      const top = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.08, 0.12, 8), cap);
-      top.position.y = 0.52; bollard.add(top);
-      bollard.position.set(at[0], on(at), at[1]); bollard.name = "lawn-bollard"; group.add(bollard);
-    }
-    const slats = new THREE.MeshStandardMaterial({ color: "#2a2e30", roughness: 0.6, metalness: 0.3 });
-    for (const at of data.fittings.bins as Vec2[]) {
-      const bin = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.2, 0.72, 10), slats);
-      bin.position.set(at[0], on(at) + 0.36, at[1]); bin.name = "lawn-bin"; group.add(bin);
-    }
+    // The Blender-built lawn kit (scripts/build_lawn_kit.py, public/models/lawn): bollard lights,
+    // slatted bins and the square service lid; simple shapes stand in until each model loads.
+    const place = (at: Vec2) => ({ x: at[0], y: on(at), z: at[1], turn: 0 });
+    const bollardStandIn = mergeGeometries([new THREE.CylinderGeometry(0.09, 0.09, 0.44, 8).translate(0, 0.22, 0), new THREE.CylinderGeometry(0.08, 0.08, 0.14, 8).translate(0, 0.51, 0)])!;
+    addKitModel(group, "/models/lawn/bollard.glb", bollardStandIn, (data.fittings.bollards as Vec2[]).map(place), new THREE.MeshStandardMaterial({ color: "#2c4a3a", roughness: 0.6 }), "lawn-bollard");
+    addKitModel(group, "/models/lawn/bin.glb", new THREE.CylinderGeometry(0.23, 0.23, 0.68, 12).translate(0, 0.42, 0), (data.fittings.bins as Vec2[]).map(place), new THREE.MeshStandardMaterial({ color: "#5b3b27", roughness: 0.85 }), "lawn-bin");
+    addKitModel(group, "/models/lawn/cover.glb", new THREE.BoxGeometry(0.63, 0.012, 0.63).translate(0, 0.006, 0), (data.fittings.covers as Vec2[]).map(place), new THREE.MeshStandardMaterial({ color: "#73766f", roughness: 0.6 }), "lawn-service-cover");
     const grate = new THREE.MeshStandardMaterial({ color: "#3a3e40", roughness: 0.45, metalness: 0.5 });
     for (const drain of data.fittings.drains) {
       const along = drain.along as Vec2, n = Math.hypot(along[0], along[1]) || 1;

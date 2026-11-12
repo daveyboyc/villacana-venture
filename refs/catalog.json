@@ -7781,8 +7781,7 @@
   "looksAtFeatures": [
    "area:paseo",
    "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-flagstone-apron",
-   "main_pool_lawn.json:lawn-pink-paths"
+   "main_pool_lawn.json:lawn-flagstone-apron"
   ],
   "subject": "Painted crossing across the paseo beside the beach gateway"
  },
@@ -7822,10 +7821,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-sea-hedge",
-   "seafront_fence.json:main-pool-lawn-railing",
-   "main_pool_lawn.json:lawn-bollards-bins"
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Comunidad Villacana sign on the Guillermo gate wall"
  },
@@ -11882,8 +11881,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-white-rooms",
-   "main_pool_lawn.json:lawn-flagstone-apron",
    "seafront_fence.json:guillermo-ramp-wall",
+   "main_pool_lawn.json:lawn-flagstone-apron",
    "area:paseo"
   ]
  },
@@ -11968,9 +11967,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "area:paseo",
-   "main_pool_lawn.json:lawn-pink-paths",
-   "main_pool_lawn.json:lawn-flagstone-apron",
-   "beach_verge.json:barraka-front-verge"
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "main_pool_lawn.json:lawn-flagstone-apron"
   ]
  },
  {
@@ -12015,8 +12014,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "coastal lawn gate pier and iron gate"
@@ -17052,8 +17051,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-pink-paths",
    "area:paseo",
+   "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-flagstone-apron",
    "main_pool_lawn.json:lawn-bollards-bins"
   ]
@@ -17096,7 +17095,7 @@
    "area:paseo",
    "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-flagstone-apron",
-   "main_pool_lawn.json:lawn-bollards-bins"
+   "seafront_fence.json:guillermo-ramp-wall"
   ]
  },
  {

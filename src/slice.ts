@@ -57,7 +57,7 @@ import { addPoolFittings, type FittingPlace, type PoolFitting } from "./pool-kit
 import { addMainPoolTerraces, addRoofFins, addSeafront } from "./main-pool";
 import { addSeafrontOutlines } from "./seafront";
 import { addSeaside, makeSeaside, type Seaside } from "./seaside";
-import { drapeScene, groundSheet, refine, siteY } from "./terrain";
+import { drapeScene, groundSheet, refine, siteY, siteYLowered, siteYStreet } from "./terrain";
 import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
@@ -225,7 +225,7 @@ async function boot(): Promise<void> {
     for(const along of [1,6]){const light=new THREE.PointLight('#fff0d4',1.5,7,2);const p=silviaWorld(0,along);light.position.set(p[0],silviaY+2.35,p[1]);scene.add(light);}
   }
   // No deck wall where the lawn meets the paseo, or along a lowered lane (its own walls stand there).
-  if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z), liveGroundY);
+  if(mainPool) addPoolAccess(scene, (x,z) => !!seaside?.inZone(x,z) || onLoweredLane(lowered,x,z), {street:siteYStreet,lowered:siteYLowered});
   const terraceIds = new Set(mainPool ? mainPoolLayout.terraceBuildingIds : []);
   const houses = buildings.filter((b) => !b.passage && b.id!==SILVIA_CANOPY && !terraceIds.has(b.id) && (!mainPool || b.id !== skeleton.seafront?.restaurant.buildingId));
   // The Blender-built facade kit dresses the house walls (src/facade-kit.ts); small screens keep
@@ -888,7 +888,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const lowerUv:number[]=[];const lowerAt=lowerGeometry.getAttribute("position");
   for(let i=0;i<lowerAt.count;i++) lowerUv.push((lowerAt.getX(i)-(centre.x-span))/(span*2),1-(lowerAt.getZ(i)-(centre.z-span))/(span*2));
   lowerGeometry.setAttribute("uv",new THREE.Float32BufferAttribute(lowerUv,2));
-  const lowerGround=new THREE.Mesh(lowerGeometry,material);lowerGround.receiveShadow=true;lowerGround.userData.referenceSurface=true;scene.add(lowerGround);
+  const lowerGround=new THREE.Mesh(lowerGeometry,material);lowerGround.receiveShadow=true;lowerGround.userData.referenceSurface=true;lowerGround.userData.siteSide="lowered";scene.add(lowerGround);
   // The garden falling to the low end of the paseo wall, cut out of the sheet with the lowered lawn.
   const gardenGeometry=gardenFallSurface(),gardenUv:number[]=[],gardenAt=gardenGeometry.getAttribute("position");
   for(let i=0;i<gardenAt.count;i++) gardenUv.push((gardenAt.getX(i)-(centre.x-span))/(span*2),1-(gardenAt.getZ(i)-(centre.z-span))/(span*2));
@@ -899,6 +899,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   const ground = new THREE.Mesh(geometry, material);
   ground.receiveShadow = true;
   ground.userData.referenceSurface=true;
+  if(showLowerDeck)ground.userData.siteSide="street";
   scene.add(ground);
   // Close the exposed sides of the ground cut at its existing slab boundary.
   // This visual fill changes neither top surfaces nor walking/collision heights.

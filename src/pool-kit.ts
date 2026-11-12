@@ -13,12 +13,12 @@ import { asset } from "./asset";
 export type PoolFitting = "ladder" | "step-rail" | "life-ring";
 export type FittingPlace = { x: number; y: number; z: number; turn: number };
 
-const models = new Map<PoolFitting, Promise<THREE.Object3D | null>>();
-function fittingModel(kind: PoolFitting): Promise<THREE.Object3D | null> {
-  let model = models.get(kind);
+const models = new Map<string, Promise<THREE.Object3D | null>>();
+function kitModel(url: string): Promise<THREE.Object3D | null> {
+  let model = models.get(url);
   if (!model) {
-    model = new GLTFLoader().loadAsync(asset(`/models/pool/${kind}.glb`)).then((gltf) => { gltf.scene.updateMatrixWorld(true); return gltf.scene; }, () => null);
-    models.set(kind, model);
+    model = new GLTFLoader().loadAsync(asset(url)).then((gltf) => { gltf.scene.updateMatrixWorld(true); return gltf.scene; }, () => null);
+    models.set(url, model);
   }
   return model;
 }
@@ -42,14 +42,22 @@ function standIn(kind: PoolFitting): THREE.BufferGeometry {
 }
 
 export function addPoolFittings(scene: THREE.Scene, kind: PoolFitting, places: FittingPlace[], material: THREE.Material): void {
+  addKitModel(scene, `/models/pool/${kind}.glb`, standIn(kind), places, material, `pool-fitting:${kind}`);
+}
+
+/**
+ * Instances of a Blender-built kit model (public/models/...glb) at each place: `standIn` is drawn at
+ * once in `material` and swapped for the model when it has loaded (or kept if it cannot load).
+ */
+export function addKitModel(scene: THREE.Object3D, url: string, standInGeometry: THREE.BufferGeometry, places: FittingPlace[], material: THREE.Material, name: string): void {
   if (!places.length) return;
   const matrices = places.map(({ x, y, z, turn }) => new THREE.Matrix4().compose(new THREE.Vector3(x, y, z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), turn), new THREE.Vector3(1, 1, 1)));
-  const rough = new THREE.InstancedMesh(standIn(kind), material, places.length);
+  const rough = new THREE.InstancedMesh(standInGeometry, material, places.length);
   matrices.forEach((m, i) => rough.setMatrixAt(i, m));
   rough.castShadow = true;
-  rough.name = `pool-fitting:${kind}`;
+  rough.name = name;
   scene.add(rough);
-  void fittingModel(kind).then((model) => {
+  void kitModel(url).then((model) => {
     if (!model || !rough.parent) return;
     const parent = rough.parent;
     model.traverse((o) => {
@@ -60,7 +68,7 @@ export function addPoolFittings(scene: THREE.Scene, kind: PoolFitting, places: F
       part.computeBoundingSphere();
       part.castShadow = true;
       part.receiveShadow = true;
-      part.name = `pool-fitting:${kind}`;
+      part.name = name;
       parent.add(part);
     });
     parent.remove(rough);

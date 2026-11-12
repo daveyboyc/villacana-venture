@@ -93,15 +93,15 @@
   },
   "main_pool_lawn.json:lawn-pink-paths": {
    "level": "estimated",
-   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m."
+   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m. 12 Nov: now laid on the surveyed lawn (it was buried under it), and the first line ends at the gateway instead of on the paseo."
   },
   "main_pool_lawn.json:lawn-flagstone-apron": {
    "level": "estimated",
-   "why": "IMG_2602 and IMG_2763 show irregular pink-beige slabs in front of the arched lawn gate. The apron is placed between that camera and the existing gateway, good to about 3 m."
+   "why": "IMG_2602, IMG_2759 and IMG_2763 show irregular pink-beige slabs in front of the arched lawn gate. Redrawn 12 Nov on the lawn side of the gateway (it straddled the wall line); extent by eye, good to about 3 m."
   },
   "main_pool_lawn.json:lawn-bollards-bins": {
    "level": "estimated",
-   "why": "The same lawn photos show short green bollard lights and dark slatted bins along the pink paths, and IMG_2775 shows a slot drain. Counts and exact spots are estimated."
+   "why": "The lawn photos show short green bollard lights with cream diffusers and dark slatted wooden bins along the pink paths, IMG_2775 a slot drain, and IMG_2761 a square grey service lid on the lawn; built from the Blender lawn kit (scripts/build_lawn_kit.py), sizes by eye. Counts and exact spots are estimated; IMG_2759/2760 show one or two more lids that cannot be placed from their vague pins."
   },
   "main_pool_lawn.json:lawn-white-rooms": {
    "level": "estimated",
@@ -121,7 +121,7 @@
   },
   "main_pool_lawn.json:enrique-shop-front": {
    "level": "estimated",
-   "why": "IMG_2775 and IMG_2776 show a blue signed awning, a menu board and wall lanterns at the head of the steps. One of each is placed there; the lettering is the shop name, not a copy of the menu."
+   "why": "IMG_2775 and IMG_2776 show three blue box awnings lettered FISH PORTIONS · MEATS · PUBLIC PEOPLE, RACIONES · PESCADOS · CARNES · PIZZAS and BAR & RESTAURANTE ENRIQUE, a wall lantern and menu boards at the head of the steps. They are built in that order, but the storey they hang on is not modelled (gap:enrique-shop-storey), so they stand in the air at an estimated spot."
   },
   "south_pool_passage.json:south-pool-dali-passage": {
    "level": "estimated",
@@ -697,6 +697,32 @@
     "IMG_2234.jpg"
    ],
    "why": "Since 14 November the path, lawns, a tree and a portal are built from the aerial between the gateway and 86 m (inferred). What is still left out because nothing shows it: the house fronts, garden walls, planters, lamps and house numbers between the house rows from 56 to 86 m, and the mouth of the CALLE JORGE 27 35 passage (IMG_2185-2187 show it only from inside)."
+  },
+  {
+   "id": "gap:enrique-shop-storey",
+   "name": "Shop storey at the head of Enrique's steps",
+   "at": [
+    -35.7,
+    96.2
+   ],
+   "photos": [
+    "IMG_2775.jpg",
+    "IMG_2776.jpg"
+   ],
+   "why": "The photos show a white storey with glazed shop fronts and a curved fin wall on the street-level terrace; the model has only the terrace roof, so the shop awnings have no wall behind them. Task enrique-shop-storey."
+  },
+  {
+   "id": "gap:main-pool-lawn-service-lids",
+   "name": "Further service lids on the main-pool lawn",
+   "at": [
+    -1.0,
+    115.6
+   ],
+   "photos": [
+    "IMG_2759.jpg",
+    "IMG_2760.jpg"
+   ],
+   "why": "One or two more square grey lids show in photos whose pins are 10-18 m vague, so only the IMG_2761 lid is built."
   }
  ]
 }

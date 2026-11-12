@@ -7,12 +7,12 @@
     "lines": [
       [
         [
-          -4.0,
-          136.8
+          -5.3,
+          133.0
         ],
         [
-          -3.5,
-          132.0
+          -5.2,
+          129.6
         ],
         [
           -6.0,
@@ -49,46 +49,44 @@
       "IMG_2761.jpg",
       "IMG_2759.jpg",
       "IMG_2763.jpg"
-    ]
+    ],
+    "note": "2026-11-12 (pool-area-errors-details): the first line ends at the inland face of the arched gateway (seafront_fence.json gate at about [-5.0, 133.4]) instead of 3 m out on the paseo, and the apron is redrawn inland of the gateway; IMG_2759 shows the path running straight into the gate across the apron."
   },
   "apron": {
     "id": "lawn-flagstone-apron",
     "name": "Flagstone apron in front of the lawn's arched gate",
     "ring": [
       [
-        -8.4,
-        136.0
+        -6.7,
+        134.83
       ],
       [
-        -5.4,
-        134.8
+        -3.76,
+        131.85
       ],
       [
-        -4.0,
-        132.8
+        -5.6,
+        130.59
       ],
       [
-        -6.6,
-        132.2
-      ],
-      [
-        -8.0,
-        133.6
+        -8.13,
+        132.87
       ]
     ],
     "evidence": [
       "IMG_2602.jpg",
       "IMG_2759.jpg",
       "IMG_2763.jpg"
-    ]
+    ],
+    "note": "Redrawn 2026-11-12 inland of the gateway: the earlier ring straddled the wall line. Extent by eye from IMG_2759 and IMG_2602."
   },
   "fittings": {
     "id": "lawn-bollards-bins",
     "name": "Bollard lights, slatted bins and slot drains on the main-pool lawn",
     "bollards": [
       [
-        -2.15,
-        133.98
+        -3.9,
+        131.0
       ],
       [
         -6.16,
@@ -150,6 +148,13 @@
       "IMG_2761.jpg",
       "IMG_2775.jpg",
       "IMG_2776.jpg"
+    ],
+    "note": "The gate-side bollard was on the paseo side of the wall line; moved inland beside the stub wall at the path edge (IMG_2759), 2026-11-12. The square grey service lid on the lawn (IMG_2761, best pin +-2.9 m) is placed about 2.5 m east of the path where that photo shows it; IMG_2760 (pin +-10.8 m) and IMG_2759 (+-18.5 m) show one or two more lids that cannot be placed from their pins, so only one is built.",
+    "covers": [
+      [
+        -5.6,
+        116.0
+      ]
     ]
   },
   "rooms": {

@@ -99,11 +99,13 @@ export function accessWallRings():Vec2[][] {
 }
 
 /**
- * `ground`, when given, is the live (surveyed) ground: a retaining piece is left out where the ground
- * a metre and a half either side of it differs by less than half a metre, because the laser survey
- * shows no drop there (east of the main-pool lawn) and the draped 3 m face would stand as a jagged sliver.
+ * `site`, when given, is the surveyed ground offset on each side of the lowered edge (src/terrain.ts):
+ * each retaining face then runs from the street-level ground down to the lawn on the survey, and is
+ * left out where the two meet within 5 cm. Without it the faces are draped like other meshes, which
+ * across a 2 m survey cell mixing both datums left a jagged 3 m sliver east of the lawn, where the
+ * survey has no drop at all.
  */
-export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolean=()=>false,ground?:(x:number,z:number)=>number):void {
+export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolean=()=>false,site?:{street:(x:number,z:number)=>number;lowered:(x:number,z:number)=>number}):void {
   const stone=plasterMaterial("#fff7e7");stone.side=THREE.DoubleSide;
   const tile=new THREE.MeshStandardMaterial({color:"#ffffff",map:surfaceTexture("paving"),roughness:0.9,side:THREE.DoubleSide});
   // Retain the elevated streets beside the lowered pool and lawn.
@@ -113,14 +115,13 @@ export function addPoolAccess(scene:THREE.Scene,open:(x:number,z:number)=>boolea
       const a:Vec2=[start[0]+(end[0]-start[0])*k/pieces,start[1]+(end[1]-start[1])*k/pieces],b:Vec2=[start[0]+(end[0]-start[0])*(k+1)/pieces,start[1]+(end[1]-start[1])*(k+1)/pieces];
       // No wall where the lawn runs out level onto the paseo and beach.
       if(open((a[0]+b[0])/2,(a[1]+b[1])/2)) continue;
-      if(ground) {
-        const mx=(a[0]+b[0])/2,mz=(a[1]+b[1])/2,len=Math.hypot(b[0]-a[0],b[1]-a[1])||1,nx=(b[1]-a[1])/len*1.5,nz=-(b[0]-a[0])/len*1.5;
-        if(Math.abs(ground(mx+nx,mz+nz)-ground(mx-nx,mz-nz))<0.5) continue;
-      }
-      const ay=lowerTerrainY(a[0],a[1]),by=lowerTerrainY(b[0],b[1]);
+      const at=site?site.street(a[0],a[1]):0,bt=site?site.street(b[0],b[1]):0;
+      const ay=lowerTerrainY(a[0],a[1])+(site?site.lowered(a[0],a[1]):0),by=lowerTerrainY(b[0],b[1])+(site?site.lowered(b[0],b[1]):0);
+      if(site&&at-ay<0.05&&bt-by<0.05) continue;
       const g=new THREE.BufferGeometry();g.setAttribute("position",new THREE.Float32BufferAttribute([
-        a[0],0,a[1],b[0],by,b[1],a[0],ay,a[1],a[0],0,a[1],b[0],0,b[1],b[0],by,b[1]
-      ],3));const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));g.computeVertexNormals();scene.add(new THREE.Mesh(g,stone));
+        a[0],at,a[1],b[0],by,b[1],a[0],ay,a[1],a[0],at,a[1],b[0],bt,b[1],b[0],by,b[1]
+      ],3));const positions=g.getAttribute("position"),uvs:number[]=[];for(let v=0;v<positions.count;v++)uvs.push(positions.getX(v)+positions.getY(v),positions.getZ(v)+positions.getY(v));g.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2));g.computeVertexNormals();
+      const face=new THREE.Mesh(g,stone);face.userData.noDrape=!!site;scene.add(face);
     }
   }
   for(const access of poolAccess) {
