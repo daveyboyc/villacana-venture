@@ -158,7 +158,7 @@ for k in range(1, 10):
     assert not housed(north(s_, w_['from'][1])), 'wall extension inside a house'
 pw_, pl_ = gw['patioWall'], gw['planters']
 assert pw_['along'] < pl_['along'] - 0.8 and pl_['along'] + pl_['thickness'] / 2 <= pave['along'] - pave['half'] + 0.02, 'planters stand on the paving'
-assert 0.6 <= pl_['height'] <= 1 and 1.8 <= pw_['height'] <= 2.4
+assert 0.6 <= pl_['height'] <= 1 and w_['heightTo'] - 0.6 < gw['sign']['height'] < w_['heightTo'] - 0.25 and 1.8 <= pw_['height'] <= 2.4
 runs_ = pl_['runs']
 assert all(a_ < b_ for a_, b_ in runs_) and all(runs_[i][1] + 0.9 <= runs_[i + 1][0] for i in range(len(runs_) - 1)), 'planter gateways'
 for d_ in [x for r in runs_ for x in r] + [pw_['from'] + 0.5, pw_['to']]:

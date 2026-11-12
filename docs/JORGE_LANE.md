@@ -217,6 +217,11 @@ Not done, and why:
   registry footprint needs a measured check. So the wall top is level there where the photo's falls.
 - The houses further up the lane keep generic fronts; the gateways have no gates.
 
+A second agent inventoried and measured both views: the first build's wall end was about 0.7 m too
+low and its sign too low, the climber read as a solid hedge, and the planters and hedges were a
+little low. Those were corrected afterwards (re-rendered, not re-validated). It also noted the
+generic door, balcony and shutter on the two-storey block behind the wall, which remain.
+
 The task stays in progress until Dave says the view is fine. The `plainWalls` list is the general
 tool: wherever a photo shows a garden wall where the model draws a house front, add the wall there.
 

@@ -53,7 +53,7 @@
     { "id": "house-23-tree", "side": "lawn", "offset": 7.75, "from": 117, "length": 3.2, "height": 3.2, "flowers": 14, "colour": "#f3c9dc" },
     { "id": "house-23-bougainvillea", "side": "lawn", "offset": 7.75, "from": 112.6, "length": 2.4, "height": 3.6, "flowers": 70, "colour": "#b0478f" },
     { "id": "teodoro-plaque-climber", "side": "lawn", "offset": 4.45, "from": 98.5, "length": 2.6, "height": 2.5, "flowers": 14, "colour": "#b0478f" },
-    { "id": "guillermo-lawn-wall-bougainvillea", "side": "hedge", "offset": 10.85, "from": 124.7, "length": 6.9, "height": 2.4, "flowers": 60, "colour": "#a8358f" },
+    { "id": "guillermo-lawn-wall-bougainvillea", "side": "hedge", "offset": 10.85, "from": 124.7, "length": 6.9, "height": 2.2, "flowers": 45, "colour": "#a8358f", "sparse": true },
     { "id": "garden-wall-bougainvillea", "side": "hedge", "offset": 10.45, "from": 98.6, "length": 5.6, "height": 2.4, "flowers": 26, "colour": "#b0478f" }
   ],
   "plainFronts": [
@@ -148,16 +148,16 @@
       { "id": "lawn-wall-face", "along": [124, 132.3], "offset": [10.5, 11.7] },
       { "id": "lawn-wall-return", "along": [131.3, 132.3], "offset": [10.5, 18.3] }
     ],
-    "wall": { "from": [131.8, 11.2], "to": [134.85, 11.2], "thickness": 0.3, "heightFrom": 3, "heightTo": 1.9 },
-    "sign": { "along": 133.9, "height": 1.35 },
+    "wall": { "from": [131.8, 11.2], "to": [134.85, 11.2], "thickness": 0.3, "heightFrom": 3, "heightTo": 2.6 },
+    "sign": { "along": 133.9, "height": 2.1 },
     "patioWall": { "along": 133.4, "from": 11.2, "to": 28, "thickness": 0.3, "height": 2.1 },
-    "planters": { "along": 134.6, "thickness": 0.5, "height": 0.8, "runs": [[12.3, 15], [16.1, 21], [22.1, 27.6]] },
+    "planters": { "along": 134.6, "thickness": 0.5, "height": 0.9, "hedge": 0.9, "runs": [[12.3, 15], [16.1, 21], [22.1, 27.6]] },
     "lamps": [[134.2, 11.9], [134.2, 21.6]],
     "border": { "along": 134.93, "half": 0.06, "from": -5, "to": 25 },
     "strelitzia": [[132.6, 13.5], [132.4, 18], [132.6, 24]],
     "tree": [130.3, 8.4],
     "rose": [131.9, 6.3],
-    "basis": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from about a storey high on the left to about 1.9 m at the lane, where it ends in a pier carrying a no-dogs sign; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11.2 m north of the Jorge line), so that face and its return are kept clear of the generic doors, shutters and porches, and the wall is continued 3 m east to the lane with a falling top. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Open: plants show above the lawn wall in the photo, so the east part of part7 is probably an open patio and not a roofed room; the registry block is left as it is (a footprint change needs a measured check), which makes the wall top level where the photo's falls. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m."
+    "basis": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from well over a storey high on the left to about 2.6 m at the lane (6.6 times the 0.4 m sign plate, and 2.8 m against the 3.8 m lamp post), where it ends in a pier carrying a no-dogs sign near its top; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11.2 m north of the Jorge line), so that face and its return are kept clear of the generic doors, shutters and porches, and the wall is continued 3 m east to the lane with a falling top. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Open: plants show above the lawn wall in the photo, so the east part of part7 is probably an open patio and not a roofed room; the registry block is left as it is (a footprint change needs a measured check), which makes the wall top level where the photo's falls. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m."
   },
   "lawnPalm": {
     "at": [-13, 115.8], "height": 15,

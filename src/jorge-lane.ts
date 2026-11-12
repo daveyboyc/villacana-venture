@@ -651,7 +651,7 @@ export function addJorgeLane(scene: THREE.Scene): void {
     // Leaves grow along local x: westwards on a lawn-side wall, eastwards on a hedge-side one.
     const p = at(c.from, lawnSide ? c.offset : -c.offset), far = at(c.from + (lawnSide ? -c.length : c.length), lawnSide ? c.offset : -c.offset);
     if (inHouse(p[0], p[1]) || inHouse(far[0], far[1])) continue;
-    stand(wallClimber({ length: c.length, height: c.height, depth: 0.4, seed: seed++, flowers: c.flowers, flowerColour: c.colour }), p, yawOf(out), 0.03, "jorge-climber");
+    stand(wallClimber({ length: c.length, height: c.height, depth: (c as { sparse?: boolean }).sparse ? 0.18 : 0.4, seed: seed++, flowers: c.flowers, flowerColour: c.colour, sparse: (c as { sparse?: boolean }).sparse }), p, yawOf(out), 0.03, "jorge-climber");
   }
   // West entrance planting: two round clipped trees on the north lawn, a shrub border along the house on the south side.
   for (const t of west.trees) {
@@ -685,11 +685,11 @@ export function addJorgeLane(scene: THREE.Scene): void {
     for (const [from, to] of pl.runs) {
       const n = Math.ceil((to - from - 0.5) / 0.9), piece = (to - from - 0.5) / n;
       for (let i = 0; i < n; i++) {
-        const d = from + 0.25 + (i + 0.5) * piece, p = at(pl.along - 0.05, -d);
+        const d = from + 0.25 + (i + 0.5) * piece, p = at(pl.along - 0.04, -d);
         if (!clear(p, Math.hypot(piece, 0.45) / 2)) continue;
-        const hedge = clippedHedge({ length: piece + 0.06, depth: 0.45, height: 0.75, seed: seed++, clip: 4.5, greens: hedgeGreens });
+        const hedge = clippedHedge({ length: piece + 0.06, depth: 0.38, height: pl.hedge, seed: seed++, clip: 4.5, greens: hedgeGreens });
         hedge.rotation.y = yawOf(jorgeAt(0).along) + Math.PI / 2;
-        level(hedge, p, guillermoGround(d) + pl.height - 0.04, "jorge-guillermo-west-hedge");
+        level(hedge, p, guillermoGround(d) + pl.height + 0.02, "jorge-guillermo-west-hedge");
       }
     }
     for (const [s, d] of gw.strelitzia) { const p = at(s, -d); sprite("bird_of_paradise", p, 0.75, "jorge-guillermo-strelitzia"); }
