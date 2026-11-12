@@ -13,6 +13,7 @@
 #map-controls {top:64px !important;right:378px !important;max-width:calc(100vw - 410px);flex-wrap:wrap;}
 body[data-app-view="overview"]>.reference-tools,body[data-app-view="overview"]>.reference-layer,body[data-app-view="walk"]>.reference-tools,body[data-app-view="walk"]>.reference-layer {display:none;}
 #photo-library {position:fixed;top:64px;right:10px;bottom:70px;width:348px;z-index:6;background:#fffdf8;border:1px solid #c9bfae;border-radius:12px;display:flex;flex-direction:column;box-shadow:0 3px 15px #0002;overflow:hidden;color:#26352e;}
+#photo-finder-toggle {display:none;}
 .photo-library-head {padding:12px;border-bottom:1px solid #ded7cb;display:grid;gap:8px;}
 .photo-library-head h1 {margin:0;font-size:18px;}
 .photo-library-head input,.photo-library-head select {min-width:0;width:100%;font:inherit;border:1px solid #bdb5a6;border-radius:7px;padding:8px;background:white;color:#26352e;box-sizing:border-box;}
@@ -53,6 +54,10 @@ body[data-app-view="overview"]>.reference-tools,body[data-app-view="overview"]>.
  #photo-library.has-selection {height:55dvh;}
  #photo-library.has-selection #photo-results {max-height:50px;min-height:0;flex:none;}
  #photo-library.has-selection #photo-detail {max-height:none;flex:1;}
+ #photo-finder-toggle {display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;border:0;border-bottom:1px solid #ded7cb;background:#fffdf8;color:#214d40;font:600 14px system-ui;cursor:pointer;}
+ #photo-library.finder-collapsed, #photo-library.finder-collapsed.has-selection {height:auto;min-height:0;}
+ #photo-library.finder-collapsed > :not(#photo-finder-toggle) {display:none !important;}
+ #photo-library.finder-collapsed #photo-finder-toggle {border-bottom:0;}
  body:has(#photo-library.has-selection)>.reference-tools {display:none;}
  .photo-result {padding:6px 3px;}.photo-result img {width:42px;height:34px;}.photo-result span {font-size:12px;}
 }
