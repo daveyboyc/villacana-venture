@@ -36,7 +36,7 @@ roads = [r["points"] for r in skeleton["boundaryReference"]["roads"]]
 
 assert "estimated" in lawn["trust"] and "4 m" in lawn["trust"]
 cited = []
-for key in ("paths", "apron", "fittings", "rooms", "hedge", "glass", "deck", "steps", "shop"):
+for key in ("paths", "apron", "fittings", "rooms", "hedge", "deck", "steps", "shop"):
     for photo in lawn[key]["evidence"]:
         assert photo in manifest and photo in tags, photo
         cited.append(photo)
@@ -48,10 +48,6 @@ for line in lawn["paths"]["lines"]:
     for p in line:
         assert not inside(p, main) and not inside(p, toddler), p
         assert dist_line(p, main, closed=True) > 0.4
-
-assert not inside(lawn["glass"]["gaps"][0], main)
-assert dist_line(lawn["glass"]["gaps"][0], main, closed=True) < 3
-assert lawn["glass"]["offset"] < 0.6 and len(lawn["glass"]["gaps"]) >= 2
 
 for wall in lawn["rooms"]["walls"]:
     length = sum(math.dist(a, b) for a, b in zip(wall["points"], wall["points"][1:]))
@@ -66,5 +62,5 @@ for p in lawn["fittings"]["bollards"] + lawn["fittings"]["bins"]:
     assert 0.6 < near < lawn["paths"]["width"], p
 
 print(f"Main-pool lawn: {len(lawn['paths']['lines'])} pink paths, flagstone apron, "
-      f"{len(lawn['rooms']['walls'])} white wall runs, hedge, glass fence with {len(lawn['glass']['gaps'])} gates, "
+      f"{len(lawn['rooms']['walls'])} white wall runs, hedge, no pool fence, "
       f"deck band and Enrique step finish PASS")

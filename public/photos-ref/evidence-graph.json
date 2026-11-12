@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 423,
+  "features": 422,
   "photosCitedByModel": 183,
-  "modelFeaturesWithPhotoCitations": 169
+  "modelFeaturesWithPhotoCitations": 168
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3617,7 +3617,7 @@
    "id": "main_pool_lawn.json:lawn-pink-paths",
    "name": "Pink resin paths across the main-pool lawn",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2764.jpg",
     "IMG_2765.jpg",
@@ -3631,7 +3631,7 @@
    "id": "main_pool_lawn.json:lawn-flagstone-apron",
    "name": "Flagstone apron in front of the lawn's arched gate",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2602.jpg",
     "IMG_2759.jpg",
@@ -3642,7 +3642,7 @@
    "id": "main_pool_lawn.json:lawn-bollards-bins",
    "name": "Bollard lights, slatted bins and slot drains on the main-pool lawn",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2764.jpg",
     "IMG_2765.jpg",
@@ -3656,7 +3656,7 @@
    "id": "main_pool_lawn.json:lawn-white-rooms",
    "name": "White walls, door and strelitzia bed on the main-pool lawn",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2762.jpg",
     "IMG_2763.jpg",
@@ -3668,7 +3668,7 @@
    "id": "main_pool_lawn.json:lawn-sea-hedge",
    "name": "Clipped hedge and shower along the sea side of the main-pool lawn",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2761.jpg",
     "IMG_2763.jpg",
@@ -3676,22 +3676,10 @@
    ]
   },
   {
-   "id": "main_pool_lawn.json:main-pool-glass",
-   "name": "Glass fence around the main pool",
-   "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
-   "evidence": [
-    "IMG_2764.jpg",
-    "IMG_2765.jpg",
-    "IMG_2603.jpg",
-    "IMG_2777.jpg"
-   ]
-  },
-  {
    "id": "main_pool_lawn.json:main-pool-deck-tiles",
-   "name": "Terracotta deck and green edge mat on the south and west of the main pool",
+   "name": "Terracotta paving and green mat at the foot of the steps to Enrique's",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2777.jpg",
     "IMG_2764.jpg"
@@ -3701,7 +3689,7 @@
    "id": "main_pool_lawn.json:enrique-step-finish",
    "name": "Marble nosings, blue tile risers and handrail on the steps to Enrique's",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2777.jpg",
     "IMG_2776.jpg"
@@ -3711,7 +3699,7 @@
    "id": "main_pool_lawn.json:enrique-shop-front",
    "name": "Signed awning, menu board and wall lantern at the head of Enrique's steps",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence follows those photos. Dave's 12 Oct note had left the pool unfenced.",
+   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
    "evidence": [
     "IMG_2775.jpg",
     "IMG_2776.jpg"
@@ -16183,12 +16171,6 @@
    "visualValidation": "not established by citation"
   },
   {
-   "from": "photo:IMG_2603.jpg",
-   "to": "main_pool_lawn.json:main-pool-glass",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
    "from": "photo:IMG_2604.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -19401,12 +19383,6 @@
   },
   {
    "from": "photo:IMG_2764.jpg",
-   "to": "main_pool_lawn.json:main-pool-glass",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2764.jpg",
    "to": "main_pool_lawn.json:main-pool-deck-tiles",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19470,12 +19446,6 @@
   {
    "from": "photo:IMG_2765.jpg",
    "to": "main_pool_lawn.json:lawn-white-rooms",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2765.jpg",
-   "to": "main_pool_lawn.json:main-pool-glass",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19818,12 +19788,6 @@
    "to": "street:guillermo",
    "relation": "camera-nearby",
    "gap": 1.9
-  },
-  {
-   "from": "photo:IMG_2777.jpg",
-   "to": "main_pool_lawn.json:main-pool-glass",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2777.jpg",

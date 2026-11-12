@@ -91,7 +91,7 @@ const path = require("node:path");
         ...raisedTerraceRings(),
         ...coastalWallRings(),
         ...(await import("/src/seafront-fence.ts")).seafrontFenceRings(),
-        ...(await import("/src/main-pool-lawn.ts")).lawnSolidRings(s.pools.find((p) => p.id === "main").ring, s.pools.find((p) => p.id === "toddler").ring),
+        ...(await import("/src/main-pool-lawn.ts")).lawnSolidRings(),
       ],
       Object.fromEntries(
         parts.flatMap((b, i) =>

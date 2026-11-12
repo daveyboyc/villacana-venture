@@ -85,7 +85,7 @@
   },
   "main_pool_lawn.json:lawn-pink-paths": {
    "level": "estimated",
-   "why": "IMG_2764, IMG_2765, IMG_2603, IMG_2761 and IMG_2763 show wide pink resin paths across the lawn. The lines are set from those camera pins and headings, good to about 4 m, and the 2.4 m width is by eye."
+   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m."
   },
   "main_pool_lawn.json:lawn-flagstone-apron": {
    "level": "estimated",
@@ -103,13 +103,9 @@
    "level": "estimated",
    "why": "IMG_2761 and IMG_2763 show a clipped hedge in front of the sea fence and a shower on the white wall. The hedge follows the inland side of the existing railing for the stretch those photos see. The fence itself stays the green bars from the closer paseo photos."
   },
-  "main_pool_lawn.json:main-pool-glass": {
-   "level": "estimated",
-   "why": "IMG_2764, IMG_2765, IMG_2603 and IMG_2777 show a glass fence on stainless posts around the main pool, with gates. Dave's 12 Oct note had left it off. The line is the registry water ring plus 0.45 m, with two openings; post spacing is by eye."
-  },
   "main_pool_lawn.json:main-pool-deck-tiles": {
    "level": "estimated",
-   "why": "IMG_2777 shows terracotta squares on the deck and a green mat at the water, on the south and west sides the photo sees. The band is 1.7 m, estimated, and stops short of the toddler pool."
+   "why": "IMG_2764 and IMG_2765 show a pale deck from the lawn, so the wide terracotta band was removed. IMG_2777 shows terracotta squares and a green mat only at the foot of Enrique's steps; that patch is about 8 m across, estimated."
   },
   "main_pool_lawn.json:enrique-step-finish": {
    "level": "estimated",
@@ -457,6 +453,21 @@
   }
  },
  "gaps": [
+  {
+   "id": "gap:main-pool-glass-fence",
+   "name": "Glass fence around the main pool",
+   "at": [
+    -17.8,
+    90.5
+   ],
+   "photos": [
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2603.jpg",
+    "IMG_2777.jpg"
+   ],
+   "why": "The November photos show a glass fence on stainless posts. Dave, 2026-10-11, and again 2026-11-12, said to leave the pools unfenced, so it is not built."
+  },
   {
    "id": "gap:elena-south-west-wall",
    "name": "Elena south · white wall with two brown doors west of the junction lawns",
