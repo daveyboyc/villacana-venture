@@ -25,8 +25,12 @@ class PathNetwork(unittest.TestCase):
         sources = [r['sourceId'] for r in self.rows if r['kind']=='path-source-accounting']
         self.assertEqual(len(sources), len(set(sources)))
         self.assertEqual(set(sources), {r['id'] for r in read('refs/catalog.json')})
+        # North-lanes has two catalogued photos (IMG_2448 at Alberto, IMG_2686 at Elena).
+        # Neither has been source-inspected, so coverage is uninspected rather than "no sources".
         north = self.ids['path-coverage:north-lanes']
-        self.assertEqual(north['sourceCoverage'], 'source needed')
+        self.assertEqual(north['sourceCoverage'], 'uninspected')
+        self.assertEqual(north['sourceCount'], 2)
+        self.assertEqual(north['uninspectedSources'], 2)
         self.assertFalse(north['inventoryComplete'])
 
     def test_no_invented_physical_edges_or_portals(self):

@@ -8,7 +8,8 @@ import { accessSection, LOWER_POOL_Y, poolLevelPoint } from "./pool-levels";
 import { addSprites } from "./sprites";
 import type { Vec2 } from "./types";
 
-/** Pink paths, flagstones, lawn walls, the glass pool fence and the step finish (data/main_pool_lawn.json).
+/** Pink paths, flagstones, lawn walls and the step finish (data/main_pool_lawn.json).
+ * The glass fence the November photos show stays out: Dave, 2026-10-11, and again 2026-11-12.
  * World metres, the same frame as the camera pins. The lawn surface is the lowered pool deck, so
  * every piece is built at that height and not draped again. */
 
@@ -46,10 +47,6 @@ function pushOut(ring: Vec2[], dist: number): Vec2[] {
   });
 }
 
-function nearGap(p: Vec2): boolean {
-  return data.glass.gaps.some((g) => Math.hypot(p[0] - g[0], p[1] - g[1]) < data.glass.gapWidth);
-}
-
 function nearRing(p: Vec2, ring: Vec2[], dist: number): boolean {
   if (pointInRing(p[0], p[1], ring)) return true;
   for (let i = 0; i < ring.length; i++) {
@@ -57,20 +54,6 @@ function nearRing(p: Vec2, ring: Vec2[], dist: number): boolean {
     if (closestOnSegment(p[0], p[1], a[0], a[1], b[0], b[1]).d < dist) return true;
   }
   return false;
-}
-
-/** Posts of the glass fence, outside the water and clear of the two gates and the toddler pool. */
-export function lawnGlassPosts(mainRing: Vec2[], toddlerRing: Vec2[]): Vec2[] {
-  return pushOut(resample(mainRing, data.glass.post), data.glass.offset).filter((p) => !nearGap(p) && !nearRing(p, toddlerRing, 0.35));
-}
-
-function panels(posts: Vec2[]): [Vec2, Vec2][] {
-  const out: [Vec2, Vec2][] = [];
-  for (let i = 0; i < posts.length; i++) {
-    const a = posts[i], b = posts[(i + 1) % posts.length];
-    if (Math.hypot(b[0] - a[0], b[1] - a[1]) < data.glass.post * 1.6) out.push([a, b]);
-  }
-  return out;
 }
 
 function stripRing(a: Vec2, b: Vec2, half: number): Vec2[] {
@@ -108,9 +91,9 @@ function wallRings(): Vec2[][] {
   return rings;
 }
 
-/** Walls, the shower pier and the glass panels. Openings stay open. */
-export function lawnSolidRings(mainRing: Vec2[], toddlerRing: Vec2[]): Vec2[][] {
-  return [...wallRings(), ...panels(lawnGlassPosts(mainRing, toddlerRing)).map(([a, b]) => stripRing(a, b, 0.04))];
+/** The white lawn walls and the shower pier. The pool stays unfenced. */
+export function lawnSolidRings(): Vec2[][] {
+  return wallRings();
 }
 
 function ribbonMesh(points: Vec2[], half: number, y: number, material: THREE.Material, name: string): THREE.Mesh {
@@ -233,28 +216,6 @@ function addShop(group: THREE.Group): void {
   group.add(lamp);
 }
 
-function addGlass(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): void {
-  const posts = lawnGlassPosts(mainRing, toddlerRing);
-  const metal = new THREE.MeshStandardMaterial({ color: "#c5ccd0", roughness: 0.35, metalness: 0.6 });
-  const glass = new THREE.MeshStandardMaterial({ color: "#d5e6ea", roughness: 0.05, metalness: 0.1, transparent: true, opacity: 0.35, side: THREE.DoubleSide });
-  const postMesh = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.028, 0.028, data.glass.height, 6), metal, posts.length);
-  posts.forEach((p, i) => postMesh.setMatrixAt(i, new THREE.Matrix4().makeTranslation(p[0], Y + data.glass.height / 2, p[1])));
-  postMesh.name = "main-pool-glass-posts"; group.add(postMesh);
-  const runs = panels(posts);
-  if (!runs.length) return;
-  const pane = new THREE.InstancedMesh(new THREE.BoxGeometry(1, data.glass.height - 0.18, 0.012), glass, runs.length);
-  const rail = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 0.08, 0.06), metal, runs.length);
-  runs.forEach(([a, b], i) => {
-    const len = Math.hypot(b[0] - a[0], b[1] - a[1]);
-    const mid = new THREE.Vector3((a[0] + b[0]) / 2, Y + data.glass.height / 2, (a[1] + b[1]) / 2);
-    const q = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), Math.atan2(b[0] - a[0], b[1] - a[1]));
-    pane.setMatrixAt(i, new THREE.Matrix4().compose(mid, q, new THREE.Vector3(len, 1, 1)));
-    rail.setMatrixAt(i, new THREE.Matrix4().compose(new THREE.Vector3(mid.x, Y + data.glass.height - 0.02, mid.z), q, new THREE.Vector3(len, 1, 1)));
-  });
-  pane.name = "main-pool-glass"; rail.name = "main-pool-glass-rail";
-  group.add(pane, rail);
-}
-
 function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): void {
   const c = centroid(mainRing);
   const terracotta = new THREE.MeshStandardMaterial({ color: "#c4745a", roughness: 0.92, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
@@ -267,7 +228,9 @@ function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): voi
     const j = (i + 1) % samples.length;
     const mid: Vec2 = [(outer[i][0] + outer[j][0]) / 2, (outer[i][1] + outer[j][1]) / 2];
     const dx = mid[0] - c.x, dz = mid[1] - c.z, n = Math.hypot(dx, dz) || 1;
-    if (dx / n > -0.15 && dz / n < 0.15) continue;
+    // IMG_2764 and IMG_2765 show a pale deck from the lawn. Terracotta squares are only
+    // the paving at the foot of Enrique's steps (IMG_2777), not a band around the pool.
+    if (Math.hypot(mid[0] + 31, mid[1] - 105) > 8) continue;
     if (nearRing(mid, toddlerRing, 0.8)) continue;
     const b = pos.length / 3;
     for (const p of [inner[i], outer[i], outer[j], inner[j]]) pos.push(p[0], Y + 0.025, p[1]);
@@ -291,7 +254,7 @@ function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): voi
 export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRing: Vec2[], details: boolean): void {
   const group = new THREE.Group();
   group.name = "main-pool-lawn"; group.userData.noDrape = true;
-  const pink = new THREE.MeshStandardMaterial({ color: "#d7a394", roughness: 0.85, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+  const pink = new THREE.MeshStandardMaterial({ color: "#c47468", roughness: 0.82, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   const flags = new THREE.MeshStandardMaterial({ map: flagstoneTexture(), roughness: 0.95, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   flags.map!.repeat.set(1.4, 1.4);
   for (const line of data.paths.lines) group.add(ribbonMesh(line as Vec2[], data.paths.width / 2, Y + 0.05, pink, "lawn-pink-path"));
@@ -308,7 +271,6 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
   }
   const showerAt = data.hedge.shower as Vec2;
   group.add(box("lawn-shower-wall", 0.9, 1.9, 0.18, white, showerAt, Y + 0.95));
-  addGlass(group, mainRing, toddlerRing);
   addDeck(group, mainRing, toddlerRing);
   addSteps(group, details);
   if (details) {

@@ -1,14 +1,14 @@
 {
   "about": "Area counts overlap. Pilot source annotation is distinct from complete area inventory or placement approval. Templates are uninspected candidates.",
-  "uniqueReferences": 197,
-  "uniquePublicPhotos": 166,
+  "uniqueReferences": 493,
+  "uniquePublicPhotos": 462,
   "annotatedSources": 6,
   "areas": [
     {
       "id": "middle-pool",
       "name": "Middle pool",
-      "references": 24,
-      "publicPhotos": 16,
+      "references": 41,
+      "publicPhotos": 33,
       "privateReferences": 8,
       "annotatedSources": [
         "IMG_2189.jpg",
@@ -20,8 +20,8 @@
     {
       "id": "seaward-lanes",
       "name": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo",
-      "references": 39,
-      "publicPhotos": 36,
+      "references": 152,
+      "publicPhotos": 149,
       "privateReferences": 3,
       "annotatedSources": [
         "IMG_2185.jpg",
@@ -37,8 +37,8 @@
     {
       "id": "cervantes",
       "name": "Calle Miguel de Cervantes",
-      "references": 29,
-      "publicPhotos": 29,
+      "references": 71,
+      "publicPhotos": 71,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -47,8 +47,8 @@
     {
       "id": "dali",
       "name": "Calle Pintor Dalí",
-      "references": 25,
-      "publicPhotos": 25,
+      "references": 53,
+      "publicPhotos": 53,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -57,8 +57,8 @@
     {
       "id": "elena",
       "name": "Calle Elena",
-      "references": 45,
-      "publicPhotos": 45,
+      "references": 96,
+      "publicPhotos": 96,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -67,8 +67,8 @@
     {
       "id": "barraka-beach",
       "name": "Barraka and the beach",
-      "references": 21,
-      "publicPhotos": 20,
+      "references": 58,
+      "publicPhotos": 57,
       "privateReferences": 1,
       "annotatedSources": [],
       "status": "not-started",
@@ -77,8 +77,8 @@
     {
       "id": "main-pool",
       "name": "Main pool",
-      "references": 7,
-      "publicPhotos": 2,
+      "references": 34,
+      "publicPhotos": 29,
       "privateReferences": 5,
       "annotatedSources": [],
       "status": "not-started",
@@ -87,8 +87,8 @@
     {
       "id": "north-pool",
       "name": "North pool",
-      "references": 16,
-      "publicPhotos": 6,
+      "references": 17,
+      "publicPhotos": 7,
       "privateReferences": 10,
       "annotatedSources": [],
       "status": "not-started",
@@ -97,8 +97,8 @@
     {
       "id": "paseo",
       "name": "The paseo",
-      "references": 20,
-      "publicPhotos": 16,
+      "references": 61,
+      "publicPhotos": 57,
       "privateReferences": 4,
       "annotatedSources": [],
       "status": "not-started",
@@ -107,8 +107,8 @@
     {
       "id": "eva",
       "name": "Calle Eva",
-      "references": 12,
-      "publicPhotos": 12,
+      "references": 54,
+      "publicPhotos": 54,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -117,18 +117,18 @@
     {
       "id": "north-lanes",
       "name": "Loira, Bolivia, Alberto and Isabel",
-      "references": 0,
-      "publicPhotos": 0,
+      "references": 2,
+      "publicPhotos": 2,
       "privateReferences": 0,
       "annotatedSources": [],
-      "status": "source-needed",
+      "status": "not-started",
       "wave": 4
     },
     {
       "id": "picasso",
       "name": "Pintor Picasso and the car park",
-      "references": 3,
-      "publicPhotos": 1,
+      "references": 4,
+      "publicPhotos": 2,
       "privateReferences": 2,
       "annotatedSources": [],
       "status": "not-started",
@@ -137,8 +137,8 @@
     {
       "id": "south-pool",
       "name": "South pool",
-      "references": 8,
-      "publicPhotos": 3,
+      "references": 18,
+      "publicPhotos": 13,
       "privateReferences": 5,
       "annotatedSources": [],
       "status": "not-started",
@@ -147,8 +147,8 @@
     {
       "id": "whole-resort",
       "name": "The whole resort",
-      "references": 21,
-      "publicPhotos": 16,
+      "references": 23,
+      "publicPhotos": 18,
       "privateReferences": 5,
       "annotatedSources": [],
       "status": "not-started",

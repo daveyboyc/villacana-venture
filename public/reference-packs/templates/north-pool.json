@@ -48,6 +48,11 @@
       "path": "public/photos-ref/IMG_2363.jpg"
     },
     {
+      "id": "IMG_2688.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2688.jpg"
+    },
+    {
       "id": "ref:apple-maps/02-3d-north-pool.png",
       "private": true,
       "path": "villacana-reference/apple-maps/02-3d-north-pool.png"

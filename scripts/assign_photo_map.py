@@ -273,10 +273,8 @@ def features(s):
     add('main_pool_lawn.json:'+rooms['id'],rooms['name'],'reference feature',lawn['trust'],evidence=rooms['evidence'],points=[p for w in rooms['walls'] for p in w['points']]+[q['at'] for q in rooms['plants']])
     hedge=lawn['hedge']
     add('main_pool_lawn.json:'+hedge['id'],hedge['name'],'reference feature',lawn['trust'],evidence=hedge['evidence'],points=hedge['points']+[hedge['shower']])
-    glass=lawn['glass']
-    add('main_pool_lawn.json:'+glass['id'],glass['name'],'reference feature',lawn['trust'],evidence=glass['evidence'],points=glass['gaps'])
     deck=lawn['deck']
-    add('main_pool_lawn.json:'+deck['id'],deck['name'],'reference feature',lawn['trust'],evidence=deck['evidence'],points=[[-16.6,102.0],[-29.2,90.5]])
+    add('main_pool_lawn.json:'+deck['id'],deck['name'],'reference feature',lawn['trust'],evidence=deck['evidence'],points=[[-31.0,105.0],[-28.0,102.0]])
     steps=lawn['steps']
     add('main_pool_lawn.json:'+steps['id'],steps['name'],'reference feature',lawn['trust'],evidence=steps['evidence'],points=[[-35.0,97.51],[-31.04,104.82]])
     shop=lawn['shop']

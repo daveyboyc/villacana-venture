@@ -1,4 +1,4 @@
-# Main pool lawn: pink paths, glass fence, deck and step finish
+# Main pool lawn: pink paths, deck and step finish
 
 Task `main-pool-lawn-details` · area **Main pool** · priority P1 · detail
 
@@ -25,7 +25,7 @@ Task `main-pool-lawn-details` · area **Main pool** · priority P1 · detail
 
 ## Build
 
-From the November lawn and step photos: pink resin paths, the flagstone apron at the existing arched gate, bollard lights and slatted bins, the short white walls and strelitzia bed, a hedge and shower in front of the sea railing, a glass fence and terracotta deck around the main pool, and marble nosings, blue risers, a handrail, lantana and a fan palm on Enrique's steps, plus the shop awning at their head. The iron leaf on the beach gateway is drawn open.
+From the November lawn and step photos: pink resin paths, the flagstone apron at the existing arched gate, bollard lights and slatted bins, the short white walls and strelitzia bed, a hedge and shower in front of the sea railing, a terracotta patch at the foot of the steps (the lawn views show a pale deck), and marble nosings, blue risers, a handrail, lantana and a fan palm on Enrique's steps, plus the shop awning at their head. The iron leaf on the beach gateway is drawn open.
 
 ## Do not
 

@@ -233,12 +233,11 @@ async function boot(): Promise<void> {
     const fenceTitle = el("title", {}); fenceTitle.textContent = `White wall, arched gateway and green bar railings on a sandstone plinth: ${seafrontFence.trust} · ${seafrontFence.evidence.join(", ")}`; fence.append(fenceTitle);
     seafront.append(fence);
     const mainPoolRing = skeleton.pools.find((p) => p.id === "main")?.ring;
-    const toddlerPoolRing = skeleton.pools.find((p) => p.id === "toddler")?.ring;
-    if (mainPoolRing && toddlerPoolRing) {
+    if (mainPoolRing) {
       const lawn = el("g", { id: "main-pool-lawn" });
-      for (const ring of lawnGroundRings()) lawn.append(el("path", { d: path(ring), fill: "#d7a394", stroke: "#b88878", "stroke-width": 0.08 }));
-      for (const ring of lawnSolidRings(mainPoolRing, toddlerPoolRing)) lawn.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#8aa0a6", "stroke-width": 0.04 }));
-      const lawnTitle = el("title", {}); lawnTitle.textContent = "Main-pool lawn paths, walls and glass fence, estimated from the November photos"; lawn.append(lawnTitle);
+      for (const ring of lawnGroundRings()) lawn.append(el("path", { d: path(ring), fill: "#c47468", stroke: "#a86858", "stroke-width": 0.08 }));
+      for (const ring of lawnSolidRings()) lawn.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#8aa0a6", "stroke-width": 0.04 }));
+      const lawnTitle = el("title", {}); lawnTitle.textContent = "Main-pool lawn paths and walls, estimated from the November photos. The pool stays unfenced."; lawn.append(lawnTitle);
       seafront.append(lawn);
     }
     const verge=el("path",{id:"barraka-front-verge",d:path(vergeRing),fill:"#8c9a5b","fill-opacity":.85,stroke:"#5d6b3a","stroke-width":.15});

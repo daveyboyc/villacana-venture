@@ -18,6 +18,11 @@
   "instructions": "Inspect full sources before adding features. Split distinct views/places. Create observed pixel locators and uncertainties. Never infer world placement from camera GPS.",
   "candidateSources": [
     {
+      "id": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+      "private": false,
+      "path": "public/photos-ref/253A75E4-A471-4502-9F5D-C9BAF074D664.jpg"
+    },
+    {
       "id": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
       "private": false,
       "path": "public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg"
@@ -88,6 +93,11 @@
       "path": "public/photos-ref/IMG_2351.jpg"
     },
     {
+      "id": "IMG_2480.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2480.jpg"
+    },
+    {
       "id": "IMG_2481.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2481.jpg"
@@ -103,9 +113,84 @@
       "path": "public/photos-ref/IMG_2483.jpg"
     },
     {
+      "id": "IMG_2598.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2598.jpg"
+    },
+    {
+      "id": "IMG_2599.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2599.jpg"
+    },
+    {
       "id": "IMG_2600.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2600.jpg"
+    },
+    {
+      "id": "IMG_2601.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2601.jpg"
+    },
+    {
+      "id": "IMG_2602.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2602.jpg"
+    },
+    {
+      "id": "IMG_2604.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2604.jpg"
+    },
+    {
+      "id": "IMG_2605.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2605.jpg"
+    },
+    {
+      "id": "IMG_2606.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2606.jpg"
+    },
+    {
+      "id": "IMG_2607.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2607.jpg"
+    },
+    {
+      "id": "IMG_2608.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2608.jpg"
+    },
+    {
+      "id": "IMG_2609.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2609.jpg"
+    },
+    {
+      "id": "IMG_2610.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2610.jpg"
+    },
+    {
+      "id": "IMG_2611.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2611.jpg"
+    },
+    {
+      "id": "IMG_2612.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2612.jpg"
+    },
+    {
+      "id": "IMG_2614.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2614.jpg"
+    },
+    {
+      "id": "IMG_2615.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2615.jpg"
     },
     {
       "id": "IMG_2616.jpg",
@@ -113,9 +198,109 @@
       "path": "public/photos-ref/IMG_2616.jpg"
     },
     {
+      "id": "IMG_2617.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2617.jpg"
+    },
+    {
+      "id": "IMG_2618.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2618.jpg"
+    },
+    {
+      "id": "IMG_2619.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2619.jpg"
+    },
+    {
+      "id": "IMG_2620.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2620.jpg"
+    },
+    {
+      "id": "IMG_2621.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2621.jpg"
+    },
+    {
+      "id": "IMG_2622.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2622.jpg"
+    },
+    {
+      "id": "IMG_2623.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2623.jpg"
+    },
+    {
+      "id": "IMG_2624.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2624.jpg"
+    },
+    {
+      "id": "IMG_2625.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2625.jpg"
+    },
+    {
+      "id": "IMG_2626.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2626.jpg"
+    },
+    {
+      "id": "IMG_2627.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2627.jpg"
+    },
+    {
+      "id": "IMG_2628.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2628.jpg"
+    },
+    {
       "id": "IMG_2629.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2629.jpg"
+    },
+    {
+      "id": "IMG_2630.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2630.jpg"
+    },
+    {
+      "id": "IMG_2631.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2631.jpg"
+    },
+    {
+      "id": "IMG_2633.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2633.jpg"
+    },
+    {
+      "id": "IMG_2643.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2643.jpg"
+    },
+    {
+      "id": "IMG_2644.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2644.jpg"
+    },
+    {
+      "id": "IMG_2760.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2760.jpg"
+    },
+    {
+      "id": "IMG_2769.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2769.jpg"
+    },
+    {
+      "id": "IMG_2770.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2770.jpg"
     },
     {
       "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
