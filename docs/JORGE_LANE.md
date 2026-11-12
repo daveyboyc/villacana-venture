@@ -247,12 +247,19 @@ From IMG_2229, IMG_2230, IMG_2697 and IMG_2773 (`planting` in the data), all Det
 - Bougainvilleas are masses of purple bract, not green climbers: the wall climbers now carry
   clusters of bracts (`wallClimber` in `src/clipped-plants.ts`). This changes the ones on the
   house-23 front, over the CALLE DE TEODORO plaque, on the cactus-garden wall and on the south
-  house at the west entrance, which is now covered to first-floor height.
+  house at the west entrance, which now carries a 10 m run to first-floor height.
 - A tall bougainvillea at the house-23 corner and a small grey-green tree beside the bed.
 - A light-green broad-leaved tree on the plinth lawn, replacing the dark generic tree.
 - Bougainvillea spilling over the top of the lawn wall.
 - A row of low clipped shrubs along the north edge of the flagged west path.
-- The lawns are a darker, duller green.
+- The lawns are a darker, more olive green (sampled from the overcast photos).
+
+A second agent inventoried the plants in each photo and sampled colours. Its findings on the first
+build (lawn too green and bright, bracts too saturated, a floating mass behind the lawn wall, dark
+balls showing inside the small trees) were corrected and re-rendered, not re-validated. Both photo
+checks are recorded as differs: the real bougainvilleas are wider and looser, an agave, the
+gateway bougainvillea and the strelitzia above the wall are missing, and IMG_2230's red
+bougainvillea behind the cactus and the purple one by the patio door are not built.
 
 The house-23 group is checked in the Inspect view only (`docs/reviews/jorge-planting/`): no photo
 camera on record faces it.

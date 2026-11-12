@@ -444,11 +444,11 @@ function guillermoPlanter(top: (d: number) => number, material: THREE.Material):
 
 /** A small garden tree: a slim leaning trunk and a loose leafy crown. "olive" is grey-green with small leaves, "broadleaf" light green with large ones (IMG_2229, IMG_2773). */
 function leafyTree(o: { height: number; crown: number; kind: string; seed: number }): THREE.Group {
-  const g = new THREE.Group(), olive = o.kind === "olive", crownH = o.crown * 0.85, top = o.height - crownH * 0.75;
+  const g = new THREE.Group(), olive = o.kind === "olive", crownH = o.crown * 0.7, top = o.height - crownH * 0.75;
   const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.085, top + 0.3, 8), new THREE.MeshStandardMaterial({ color: olive ? "#6d6356" : "#7a6a55", roughness: 1 }));
   trunk.position.set(0.05, (top + 0.3) / 2 - 0.15, 0); trunk.rotation.z = -0.05; trunk.castShadow = true; g.add(trunk);
   const crown = looseShrub({ width: o.crown, depth: o.crown * 0.9, height: crownH, seed: o.seed, leaf: olive ? "narrow" : "glossy", leafSize: olive ? [0.09, 0.03] : [0.24, 0.13],
-    greens: olive ? ["#6f8061", "#7d8d6c", "#5f7154"] : ["#5f8f3a", "#70a044", "#528034"], stems: 3 });
+    greens: olive ? ["#6f8061", "#7d8d6c", "#5f7154"] : ["#5f8f3a", "#70a044", "#528034"], stems: 3, inside: olive ? "#55634a" : "#44702c" });
   crown.position.y = top - crownH * 0.25; g.add(crown);
   g.name = "leafy-tree";
   return g;
@@ -716,7 +716,7 @@ export function addJorgeLane(scene: THREE.Scene): void {
     const pl = data.planting;
     for (const t of pl.trees) {
       const p = at(t.at[0], t.at[1]);
-      if (!inHouse(p[0], p[1]) && clear(p, 0.35)) stand(leafyTree({ height: t.height, crown: t.crown, kind: t.kind, seed: seed++ }), p, seed, 0.03, "jorge-small-tree");
+      if (!inHouse(p[0], p[1]) && clear(p, 0.35)) stand(leafyTree({ height: t.height, crown: t.crown, kind: t.kind, seed: seed++ }), p, (seed * 2.4) % (Math.PI * 2), 0.03, "jorge-small-tree");
     }
     for (const b of pl.bougainvilleas) {
       const p = at(b.at[0], b.at[1]), lift = (b as { lift?: number }).lift;

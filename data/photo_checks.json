@@ -1330,8 +1330,9 @@
    "photo": "IMG_2697.jpg",
    "before": "docs/reviews/jorge-planting/IMG_2697-before.png",
    "render": "docs/reviews/jorge-planting/IMG_2697-after.png",
-   "result": "matches",
-   "notes": "The house on the right now carries a mass of purple bougainvillea to first-floor height, as in the photo, where it was a green column; the lawns are a duller green. The row of low shrubs on the left of the path is hidden by the kerb from this low starting pose (it shows in Inspect). Still different: the photo's bougainvillea spreads wider along the house and over its porch, the second round tree is hidden, there are no parked cars, and a generic palm stands beyond. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine."
+   "result": "differs",
+   "notes": "The house on the right now carries a mass of purple bougainvillea to first-floor height, as in the photo, where it was a green column; the lawns are a duller green. The row of low shrubs on the left of the path is hidden by the kerb from this low starting pose (it shows in Inspect). A second agent sampled the first build's lawn as too green and bright (render about RGB 104,136,72 against the photo's 105,110,66) and the bracts as too saturated; the lawn colour, bract palette and the climber's length were changed afterwards and re-rendered, not re-validated. Still different: the spiky agave at the end of the shrub row and the bougainvillea on the far gateway are missing, the photo's bougainvillea spreads wider along the house and over its porch, the second round tree is hidden, there are no parked cars, and a generic palm stands beyond. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine.",
+   "followUp": "jorge-planting"
   },
   {
    "task": "jorge-planting",
@@ -1341,8 +1342,9 @@
    "photo": "IMG_2773.jpg",
    "before": "docs/reviews/jorge-planting/IMG_2773-before.png",
    "render": "docs/reviews/jorge-planting/IMG_2773-after.png",
-   "result": "matches",
-   "notes": "Bougainvillea now spills over the top of the lawn wall at its left and a lighter small tree stands on the lawn, as in the photo; before, a bare wall top and a dark bulky bush. Still different: the photo's climber runs along most of the wall face and its tree has large drooping leaves; the model's is sparser and rounder. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine."
+   "result": "differs",
+   "notes": "Bougainvillea now spills over the top of the lawn wall at its left and a lighter small tree stands on the lawn, as in the photo; before, a bare wall top and a dark bulky bush. A second agent found the first build's spill a flat-bottomed dome on the wall top and a second mass floating behind the wall; the floating one was removed and the spill flattened, the tree's dark inner ball lightened. Still different: the strelitzia above the wall and the tall tree behind the houses are missing, the photo's climber runs along most of the wall face and its tree has large drooping leaves; the model's is sparser and rounder. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine.",
+   "followUp": "jorge-planting"
   }
  ],
  "legacyUnchecked": [

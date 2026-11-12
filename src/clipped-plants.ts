@@ -127,9 +127,9 @@ export function clippedHedge(o: ClippedHedgeOptions): THREE.Group {
 }
 
 /** A loose shrub: rounder, airier, leaves sticking out further; woody stems at the base. */
-export function looseShrub(o: { width: number; depth: number; height: number; seed: number; leaf: LeafKind; leafSize: [number, number]; greens: string[]; stems?: number; flowers?: { count: number; colour: string; size?: number } }): THREE.Group {
+export function looseShrub(o: { width: number; depth: number; height: number; seed: number; leaf: LeafKind; leafSize: [number, number]; greens: string[]; stems?: number; flowers?: { count: number; colour: string; size?: number }; inside?: string }): THREE.Group {
   const rng = seeded(o.seed), f = new Foliage(rng);
-  const lift = o.height * 0.18, { mesh, surface } = hull(o.width * 0.46, o.height - lift, o.depth * 0.46, 2.6, rng, "#22341d", 0.09);
+  const lift = o.height * 0.18, { mesh, surface } = hull(o.width * 0.46, o.height - lift, o.depth * 0.46, 2.6, rng, o.inside ?? "#22341d", 0.09);
   mesh.position.y = lift; f.add(mesh);
   const wood = new THREE.MeshStandardMaterial({ color: "#5b4a38", roughness: 1 });
   for (let i = 0; i < (o.stems ?? 7); i++) {
@@ -202,13 +202,15 @@ export function wallClimber(o: { length: number; height: number; depth: number; 
   }
   if (o.flowerColour) {
     // Bougainvillea: papery bracts in clusters on the outside of the mass, thickest towards the top (IMG_2229, IMG_2697).
+    // A duller, varied palette, as the bracts are in the photos: the given colour, a paler pink and a dark shaded purple.
+    const base = new THREE.Color(o.flowerColour), bractTones = [base, base.clone().lerp(new THREE.Color("#c79ab0"), 0.4), base.clone().lerp(new THREE.Color("#3a1d3a"), 0.4)];
     for (let made = 0; made < o.flowers;) {
-      const cx = rng() * o.length, cy = (0.3 + rng() ** 0.6 * 0.7) * topAt(cx), size = 5 + Math.floor(rng() * 6);
+      const cx = rng() * o.length, cy = (0.3 + rng() ** 0.6 * 0.7) * topAt(cx), size = 5 + Math.floor(rng() * 6), shade = bractTones[Math.floor(rng() * bractTones.length)];
       for (let k = 0; k < size && made < o.flowers; k++, made++) {
         const x = Math.min(o.length, Math.max(0, cx + (rng() - 0.5) * 0.45)), y = Math.max(0.1, cy + (rng() - 0.5) * 0.4);
         const z = 0.08 + o.depth * (0.55 + rng() * 0.55) * (0.4 + 0.6 * (1 - y / o.height));
         const b = 0.8 + rng() * 0.5;
-        f.leaf("petal", new THREE.Vector3(x, y, z + 0.03), new THREE.Vector3((rng() - 0.5) * 1.2, (rng() - 0.3) * 1.0, 1), [0.12 * b, 0.1 * b], tone(o.flowerColour, rng, 0.14));
+        f.leaf("petal", new THREE.Vector3(x, y, z + 0.03), new THREE.Vector3((rng() - 0.5) * 1.2, (rng() - 0.3) * 1.0, 1), [0.12 * b, 0.1 * b], shade.clone().offsetHSL((rng() - 0.5) * 0.03, (rng() - 0.5) * 0.1, (rng() - 0.5) * 0.12));
       }
     }
   } else for (let i = 0; i < o.flowers; i++) {
