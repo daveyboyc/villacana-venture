@@ -3067,7 +3067,7 @@
    ],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "12 November: built the plain lawn wall with its falling extension to the lane, the no-dogs sign, the patio wall, hedged planters with gateways, two lamp posts, the brick border, lawn to the wall foot, a small tree and a rose; generic doors, shutters and porches are kept off the lawn wall. Not done: the registry block behind the lawn wall is probably an open patio and is still drawn as a one-storey block; the houses further up the lane keep generic fronts; gates in the gateways. Stays in progress until Dave says the IMG_2773 view is fine."
+   "notes": "12 November: built the plain lawn wall with its falling extension to the lane, the no-dogs sign, the patio wall, hedged planters with gateways, two lamp posts, the brick border, lawn to the wall foot, a small tree and a rose; generic doors, shutters and porches are kept off the lawn wall. 12 November, later: Dave agreed to turn the block behind the lawn wall into an open patio on the photo evidence; the east portion of 6364401UF1366S_part7 is now an open walled patio (data/registry_corrections.json, openPatios) and the lawn wall is one wall falling from 3.9 m to 2.6 m. Not done: the houses further up the lane keep generic fronts; gates in the gateways. Stays in progress until Dave says the IMG_2773 view is fine."
   },
   {
    "id": "lantern-post-asset",

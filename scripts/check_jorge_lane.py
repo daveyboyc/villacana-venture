@@ -151,11 +151,11 @@ gw = lane['guillermoWest']
 assert all(e in photos for e in gw['evidence']) and gw['basis']
 def north(s_, d_): return (A[0] + ux * s_ + uz * d_, A[1] + uz * s_ - ux * d_)
 w_ = gw['wall']
-assert w_['from'][1] == w_['to'][1] and w_['heightFrom'] > w_['heightTo'] >= 1.6, 'the lawn wall falls towards the lane'
+assert abs(w_['from'][1] - w_['to'][1]) < 0.3 and w_['heightFrom'] > w_['heightTo'] >= 1.6, 'the lawn wall falls towards the lane'
 assert abs(w_['to'][0] + 0.05 + 0.25 - (pave['along'] - pave['half'])) < 0.35, 'the lawn wall does not reach the lane'
 for k in range(1, 10):
     s_ = w_['from'][0] + 0.2 + (w_['to'][0] - w_['from'][0] - 0.2) * k / 10
-    assert not housed(north(s_, w_['from'][1])), 'wall extension inside a house'
+    assert not housed(north(s_, w_['from'][1] + (w_['to'][1] - w_['from'][1]) * k / 10 + 0.05)), 'lawn wall inside a house'
 pw_, pl_ = gw['patioWall'], gw['planters']
 assert pw_['along'] < pl_['along'] - 0.8 and pl_['along'] + pl_['thickness'] / 2 <= pave['along'] - pave['half'] + 0.02, 'planters stand on the paving'
 assert 0.6 <= pl_['height'] <= 1 and w_['heightTo'] - 0.6 < gw['sign']['height'] < w_['heightTo'] - 0.25 and 1.8 <= pw_['height'] <= 2.4
@@ -167,6 +167,14 @@ for d_ in [x for r in runs_ for x in r] + [pw_['from'] + 0.5, pw_['to']]:
 for s_, d_ in gw['lamps'] + gw['strelitzia'] + [gw['tree'], gw['rose']]:
     assert not housed(north(s_, d_)), (s_, d_)
 assert all(pw_['along'] < s_ < pave['along'] - pave['half'] for s_, d_ in gw['lamps'])
+# The patio behind the lawn wall (Dave, 2026-11-12): an open-patio registry correction, walled on the registry lines.
+fix = next(c for c in json.loads((ROOT / 'data/registry_corrections.json').read_text())['openPatios'] if c['id'] == '6364401UF1366S_part7')
+part7 = next(b for b in skeleton['buildings'] if b['id'] == fix['id'])
+assert part7['ring'] == fix['standing'] and part7['openPatio']['ring'] == fix['patio'] and fix['decidedBy'], 'map skeleton is out of date with the patio correction'
+for s_, d_ in gw['patio']['line']:
+    q = north(s_, d_)
+    assert min(math.hypot(q[0] - v[0], q[1] - v[1]) for v in fix['patio']) < 0.15, ('patio wall off the registry line', s_, d_)
+assert inside(*north(128, 14), fix['patio']) and not housed(north(128, 14)), 'the patio is still drawn as a house'
 # Each plain-wall zone covers a registry wall, so it only removes generic openings from walls that exist.
 for zone in gw['plainWalls']:
     mid = north(sum(zone['along']) / 2, sum(zone['offset']) / 2)

@@ -144,20 +144,18 @@
   },
   "guillermoWest": {
     "evidence": ["IMG_2773.jpg", "IMG_2774.jpg"],
-    "plainWalls": [
-      { "id": "lawn-wall-face", "along": [124, 132.3], "offset": [10.5, 11.7] },
-      { "id": "lawn-wall-return", "along": [131.3, 132.3], "offset": [10.5, 18.3] }
-    ],
-    "wall": { "from": [131.8, 11.2], "to": [134.85, 11.2], "thickness": 0.3, "heightFrom": 3, "heightTo": 2.6 },
+    "plainWalls": [],
+    "wall": { "from": [124.31, 11], "to": [134.85, 11.2], "thickness": 0.3, "heightFrom": 3.9, "heightTo": 2.6 },
+    "patio": { "height": 2.1, "thickness": 0.25, "line": [[123.22, 11.85], [123.18, 14.28], [127.48, 14.41], [127.56, 17.95], [131.76, 17.83], [131.82, 11.19]] },
     "sign": { "along": 133.9, "height": 2.1 },
     "patioWall": { "along": 133.4, "from": 11.2, "to": 28, "thickness": 0.3, "height": 2.1 },
     "planters": { "along": 134.6, "thickness": 0.5, "height": 0.9, "hedge": 0.9, "runs": [[12.3, 15], [16.1, 21], [22.1, 27.6]] },
     "lamps": [[134.2, 11.9], [134.2, 21.6]],
     "border": { "along": 134.93, "half": 0.06, "from": -5, "to": 25 },
-    "strelitzia": [[132.6, 13.5], [132.4, 18], [132.6, 24]],
+    "strelitzia": [[132.6, 13.5], [132.4, 18], [132.6, 24], [126.4, 12.6], [129.8, 13.2]],
     "tree": [130.3, 8.4],
     "rose": [131.9, 6.3],
-    "basis": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from well over a storey high on the left to about 2.6 m at the lane (6.6 times the 0.4 m sign plate, and 2.8 m against the 3.8 m lamp post), where it ends in a pier carrying a no-dogs sign near its top; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11.2 m north of the Jorge line), so that face and its return are kept clear of the generic doors, shutters and porches, and the wall is continued 3 m east to the lane with a falling top. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Open: plants show above the lawn wall in the photo, so the east part of part7 is probably an open patio and not a roofed room; the registry block is left as it is (a footprint change needs a measured check), which makes the wall top level where the photo's falls. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m."
+    "basis": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from well over a storey high on the left to about 2.6 m at the lane (6.6 times the 0.4 m sign plate, and 2.8 m against the 3.8 m lamp post), where it ends in a pier carrying a no-dogs sign near its top; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11 m north of the Jorge line). Dave agreed on 12 November to treat that part's east portion as an open walled patio on the photo evidence (data/registry_corrections.json, openPatios), so the lawn wall is now one wall from the west block's corner to the lane, its top falling from 3.9 m to 2.6 m (the photo's wall measures about 3.9 m at the left of the frame against the sign and lamp post), with the patio's other sides walled at 2.1 m on the registry lines and strelitzia showing above. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Where the roofed west block ends is not seen in any photo. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m."
   },
   "lawnPalm": {
     "at": [-13, 115.8], "height": 15,

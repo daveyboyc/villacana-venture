@@ -80,7 +80,7 @@ export function inJorgePlainFront(x: number, z: number): boolean {
 export function inJorgePlainWall(x: number, z: number): boolean {
   const f = jorgeAt(0), dx = x - f.p[0], dz = z - f.p[1];
   const s = dx * f.along[0] + dz * f.along[1], north = -(dx * f.lawn[0] + dz * f.lawn[1]);
-  return data.guillermoWest.plainWalls.some((w) => s >= w.along[0] && s <= w.along[1] && north >= w.offset[0] && north <= w.offset[1]);
+  return (data.guillermoWest.plainWalls as { along: number[]; offset: number[] }[]).some((w) => s >= w.along[0] && s <= w.along[1] && north >= w.offset[0] && north <= w.offset[1]);
 }
 /** The planter-wall runs on the hedge side: open stretches of the boundary, less houses and the photographed gaps. */
 export function jorgeWallRuns(): [number, number][] {
@@ -562,7 +562,10 @@ export function addJorgeLane(scene: THREE.Scene): void {
       // A pier at each end of a planter, where the gateways are.
       for (const d of [from, to]) scene.add(laneBox([pl.along - 0.35, d], [pl.along + 0.3, d], 0.4, pl.height + 0.55, white, "jorge-guillermo-west-pier"));
     }
-    const signAt = at(gw.sign.along, -(w.from[1] - w.thickness / 2 - 0.012));
+    // The other sides of the open patio behind the lawn wall, on the registry lines (data/registry_corrections.json, openPatios).
+    for (let i = 0; i < gw.patio.line.length - 1; i++) scene.add(laneBox(gw.patio.line[i], gw.patio.line[i + 1], gw.patio.thickness, gw.patio.height, white, "jorge-guillermo-patio-wall"));
+    const wallNorth = w.from[1] + ((w.to[1] - w.from[1]) * (gw.sign.along - w.from[0])) / (w.to[0] - w.from[0]);
+    const signAt = at(gw.sign.along, -(wallNorth - w.thickness / 2 - 0.012));
     const plate = new THREE.Mesh(new THREE.PlaneGeometry(0.4, 0.4), new THREE.MeshStandardMaterial({ map: noDogsTexture(), roughness: 0.6 }));
     plate.position.set(signAt[0], guillermoGround(w.from[1]) + gw.sign.height, signAt[1]); plate.rotation.y = yawOf(jorgeAt(0).lawn);
     plate.name = "jorge-guillermo-no-dogs"; plate.userData.noDrape = true; scene.add(plate);

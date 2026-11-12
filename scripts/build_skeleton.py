@@ -197,6 +197,7 @@ def build_buildings() -> list[dict]:
     # Parts that bridge a lane at first-floor level; the ground under them is open.
     passages = {p["id"]: p for p in json.loads((ROOT / "data" / "passages.json").read_text())["passages"]}
     gone = {p["id"]: p for p in json.loads((ROOT / "data" / "registry_corrections.json").read_text())["notStanding"]}
+    patios = {p["id"]: p for p in json.loads((ROOT / "data" / "registry_corrections.json").read_text()).get("openPatios", [])}
     for part in read_features("buildingpart.gml.gz", "BuildingPart"):
         ring = part["rings"][0]
         if not inside(AREA, centroid(ring)):
@@ -211,8 +212,19 @@ def build_buildings() -> list[dict]:
             assert part["floors"] == gone[part["id"]]["registryFloors"], part["id"]
             entry["floors"] = 0
             entry["notStanding"] = {k: gone[part["id"]][k] for k in ("registryFloors", "trust", "evidence")}
+        # Registry parts of which only a portion is roofed (Dave, 2026-11-12): the house keeps the `standing` ring and
+        # the registry ring is kept beside it with the open patio, so the two can always be compared.
+        if part["id"] in patios:
+            fix = patios[part["id"]]
+            assert part["floors"] == fix["registryFloors"], part["id"]
+            registry = {tuple(p) for p in entry["ring"]}
+            for name in ("standing", "patio"):
+                assert sum(tuple(p) in registry for p in fix[name]) >= len(fix[name]) - 1, f"{part['id']}: {name} ring must follow the registry ring but for the cut"
+            assert abs(area([tuple(p) for p in fix["standing"]]) + area([tuple(p) for p in fix["patio"]]) - area(ring)) < 0.5, f"{part['id']}: standing and patio must add up to the registry ring"
+            entry["openPatio"] = {"registryRing": entry["ring"], "ring": fix["patio"], "trust": fix["trust"], "evidence": fix["evidence"]}
+            entry["ring"] = fix["standing"]
         buildings.append(entry)
-    assert {b["id"] for b in buildings} >= set(gone), "Registry correction names a missing part"
+    assert {b["id"] for b in buildings} >= set(gone) | set(patios), "Registry correction names a missing part"
     return buildings
 
 

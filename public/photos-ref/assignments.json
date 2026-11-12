@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "c937b14d75661c47ee4bc1a32b75349bb81dd12b3b733844b47f2881609f38a9",
+ "inputDigest": "d50abbfa22058ec95497990bd5fac1985bf3c5b7e5f1756e72f184d554066038",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
@@ -7946,8 +7946,8 @@
     },
     {
      "id": "building:6364401UF1366S_part7",
-     "distance": 30.1,
-     "angleOffset": 13.9
+     "distance": 29.7,
+     "angleOffset": 23.0
     },
     {
      "id": "building:6364401UF1366S_part10",
@@ -11859,8 +11859,8 @@
     },
     {
      "id": "building:6364401UF1366S_part7",
-     "distance": 30.8,
-     "angleOffset": 26.8
+     "distance": 26.6,
+     "angleOffset": 22.4
     }
    ],
    "citedBy": [],
@@ -11891,8 +11891,8 @@
    "inViewCandidates": [
     {
      "id": "building:6364401UF1366S_part7",
-     "distance": 13.5,
-     "angleOffset": 19.3
+     "distance": 8.8,
+     "angleOffset": 23.2
     },
     {
      "id": "building:6364401UF1366S_part11",
