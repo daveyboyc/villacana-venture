@@ -264,6 +264,45 @@ bougainvillea behind the cactus and the purple one by the patio door are not bui
 The house-23 group is checked in the Inspect view only (`docs/reviews/jorge-planting/`): no photo
 camera on record faces it.
 
+## End to end, and the photos still needed (14 November, task `jorge-complete`)
+
+Dave: complete Jorge all the way to the car park and note which photos are missing. The lane now
+has a built path for its whole 136 m:
+
+| Stretch | What is built | From | Grade |
+| --- | --- | --- | --- |
+| 0 to 28 m | flagged path, kerbs, lamp, lawns, trees, shrub borders, bougainvillea house | IMG_2280, IMG_2696-2698 | estimated |
+| 28 m | white gateway, open iron leaves, walls, hedge, bougainvillea; flagged cross-path at 22 m | the same photos, enlarged | estimated |
+| 28 to 56 m | square-tile path, lawns both sides, one small tree; the Canary palm was already there | aerial only | inferred |
+| 56 m | second white portal | seen through the gateway; position guessed | inferred |
+| 56 to 86 m | square-tile path, grass verge on the north side, two benches | aerial only | inferred |
+| 86 to 136 m | the photographed east stretch | IMG_2182-2234, IMG_2596, IMG_2597 | estimated |
+
+Left out between 56 and 86 m because nothing shows them: house fronts, garden walls, planters,
+lamps, doors and house numbers, and the mouth of the CALLE JORGE 27 35 passage.
+
+### Photos needed
+
+In `data/photo_requests.json` (red on the scorecard). Most useful first:
+
+1. **`jorge-houses-56-86`**: between the house rows, one photo along the lane every 10 m each
+   way and one square-on to each side. Nothing here is photographed.
+2. **`jorge-middle-lawn`**: just through the gateway, one photo along the lane and one to each
+   side across the lawns. Path material, lawn edges and trees are from the aerial.
+3. **`jorge-gateway`**: the gateway square-on from 4 m, from the far side, and its left-hand wall.
+4. **`jorge-silvia-junction`**: where Calle Silvia crosses, towards the sea and down each arm; this
+   fixes the second portal.
+5. **`jorge-27-35-passage`**: the archway signed CALLE JORGE 27 35 from 5 m back in the lane, and
+   from inside looking out. It cannot be placed from the inside views alone.
+6. **`jorge-benches`**: one photo of every bench; three are placed from aerial marks, and it is
+   not certain which mark is the photographed bench.
+7. **`jorge-east-square-on`**: square-on to a house front and to the patio wall near the bench,
+   each with a house corner from ground to roof. This would let a camera be solved, so the
+   east-end positions (good to 2 to 5 m now) could be measured.
+8. **`guillermo-patio-behind-wall`**: over the lawn wall on Calle Guillermo, to see where the
+   roofed part ends.
+9. **`jorge-west-house-front`**: square-on to the bougainvillea house at the west entrance.
+
 ## How these builds were checked, and what that is worth
 
 - Each change is rendered from the photo's position and compared with the photo by eye, by the

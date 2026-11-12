@@ -1345,6 +1345,18 @@
    "result": "differs",
    "notes": "Bougainvillea now spills over the top of the lawn wall at its left and a lighter small tree stands on the lawn, as in the photo; before, a bare wall top and a dark bulky bush. A second agent found the first build's spill a flat-bottomed dome on the wall top and a second mass floating behind the wall; the floating one was removed and the spill flattened, the tree's dark inner ball lightened. Still different: the strelitzia above the wall and the tall tree behind the houses are missing, the photo's climber runs along most of the wall face and its tree has large drooping leaves; the model's is sparser and rounder. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine.",
    "followUp": "jorge-planting"
+  },
+  {
+   "task": "jorge-complete",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-gateway",
+   "photo": "IMG_2697.jpg",
+   "before": "docs/reviews/jorge-complete/IMG_2697-before.png",
+   "render": "docs/reviews/jorge-complete/IMG_2697-after.png",
+   "result": "differs",
+   "followUp": "jorge-complete",
+   "notes": "The flagged path now ends at a white gateway with a flat lintel and bougainvillea over it, a white wall and hedge to its left, and a second portal showing through it, as in the photo; before, the flags ran out on open ground with nothing beyond. Still different: the photo's gateway has a moulded cap, slimmer piers and tall open iron leaves that read clearly, and its bougainvillea is trained from the house across the lintel; the model's is a low mass on top. The cross-path in front is hidden from this low pose. A generic palm stands behind the round tree where the photo shows none in view. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine."
   }
  ],
  "legacyUnchecked": [

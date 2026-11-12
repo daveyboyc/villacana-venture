@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 423,
+  "features": 425,
   "photosCitedByModel": 183,
-  "modelFeaturesWithPhotoCitations": 169
+  "modelFeaturesWithPhotoCitations": 171
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1872,6 +1872,7 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
+    "jorge_lane.json:jorge-lane-middle",
     "jorge_lane.json:jorge-lane-fittings"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -3612,6 +3613,8 @@
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
     "jorge_lane.json:jorge-lane-west",
+    "jorge_lane.json:jorge-lane-gateway",
+    "jorge_lane.json:jorge-lane-middle",
     "dali_street.json:dali-house-lanterns"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -15713,7 +15716,8 @@
    "citedBy": [
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
-    "jorge_lane.json:jorge-lane-west"
+    "jorge_lane.json:jorge-lane-west",
+    "jorge_lane.json:jorge-lane-gateway"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -15772,7 +15776,9 @@
     "jorge_lane.json:jorge-lane-bench",
     "jorge_lane.json:jorge-lane-verge",
     "jorge_lane.json:jorge-lane-west",
-    "jorge_lane.json:jorge-lane-planting"
+    "jorge_lane.json:jorge-lane-planting",
+    "jorge_lane.json:jorge-lane-gateway",
+    "jorge_lane.json:jorge-lane-middle"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

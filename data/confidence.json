@@ -63,6 +63,14 @@
    "level": "estimated",
    "why": "IMG_2280 and IMG_2696-2698 show the west entrance from the Pintor Dalí car park: sandstone flags about 2 m wide between two white-painted kerbs, a lamp post at the end of the left kerb, lawn both sides, two round clipped trees on the north lawn, a shrub border and a house with bougainvillea on the south side, a white gateway at the far end. The aerial agrees on the lawns, tree crowns and house. Kerb length, path width and plant positions are estimated to about 1 m; the flags are built to 28 m, where the aerial shows a white mark read as the gateway."
   },
+  "jorge_lane.json:jorge-lane-gateway": {
+   "level": "estimated",
+   "why": "IMG_2280 and IMG_2697, enlarged, show a white gateway with a flat capped lintel, open green iron leaves, bougainvillea over it, a white wall with a hedge to its left and a flagged cross-path in front. It is seen only from 25 m away, so its width, height and station (the aerial's white mark at about 28 m) are estimated to about 1 m."
+  },
+  "jorge_lane.json:jorge-lane-middle": {
+   "level": "inferred",
+   "why": "No photo is taken between the gateway at 28 m and about 86 m. The square-tile path is carried through because the photos at both ends show a terracotta path; the lawns and one tree are placed from the aerial; the second white portal is seen through the gateway but where it stands (put at 56 m, where the house rows begin) is a guess. Walls, planters, doors and the CALLE JORGE 27 35 passage along 56 to 86 m are not built. Photo requests jorge-middle-lawn, jorge-silvia-junction, jorge-houses-56-86 and jorge-27-35-passage."
+  },
   "jorge_lane.json:jorge-lane-guillermo-planter": {
    "level": "estimated",
    "why": "IMG_2773 and IMG_2774 show a neat, straight white planter wall about a metre high along the east side of Calle Guillermo north of the Jorge junction, with a low carpet of lantana on top and a clump of yucca heads behind it; IMG_2597 shows it behind the plinth lawn. Its top is set one metre above the lane beside it (Dave, 2026-11-12: about one metre). It is set at the east edge of the mapped Guillermo line, 22 m long; its ends are not measured."
@@ -669,15 +677,15 @@
   },
   {
    "id": "gap:jorge-west",
-   "name": "Calle Jorge from about 28 to 86 m: path, edges, walls and planting",
+   "name": "Calle Jorge 56 to 86 m: house fronts, walls, planters, doors and the CALLE JORGE 27 35 passage",
    "at": [
-    -103.0,
-    173.5
+    -77.8,
+    158.9
    ],
    "photos": [
     "IMG_2234.jpg"
    ],
-   "why": "No photo looks along Calle Jorge between the white gateway at about 28 m (far end of IMG_2696-2698) and about 86 m (IMG_2234 looks that far from the east), so nothing photographed is repeated there; the lane keeps the generic ribbon, with two benches placed from the aerial (photo request jorge-west-walk). The gateway itself is too small in the photos to build."
+   "why": "Since 14 November the path, lawns, a tree and a portal are built from the aerial between the gateway and 86 m (inferred). What is still left out because nothing shows it: the house fronts, garden walls, planters, lamps and house numbers between the house rows from 56 to 86 m, and the mouth of the CALLE JORGE 27 35 passage (IMG_2185-2187 show it only from inside)."
   }
  ]
 }

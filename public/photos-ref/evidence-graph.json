@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 423,
+  "features": 425,
   "photosCitedByModel": 183,
-  "modelFeaturesWithPhotoCitations": 169
+  "modelFeaturesWithPhotoCitations": 171
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3159,6 +3159,28 @@
     "IMG_2230.jpg",
     "IMG_2697.jpg",
     "IMG_2773.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-gateway",
+   "name": "Calle Jorge gateway at the end of the flagged path, with its walls and cross-path",
+   "kind": "reference feature",
+   "source": "Enlarged, IMG_2280 and IMG_2697 show the far end of the flagged path: a white gateway with a flat lintel and a moulded cap, dark green iron gate leaves standing open, bougainvillea trained over it from the house on the right, and a white wall with a clipped hedge running off to the left. A few metres in front of it a flagged cross-path branches left across the lawn and right to the house. Through the gateway a second, similar white portal shows further along, with a reddish (terracotta) path between and beyond. The aerial puts the gateway at the white mark on the lane line at about 28 m. Its width, height and the cross-path's station are estimated from the photos to about 1 m.",
+   "evidence": [
+    "IMG_2280.jpg",
+    "IMG_2696.jpg",
+    "IMG_2697.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-middle",
+   "name": "Calle Jorge from the gateway to 86 m: path, lawns, tree and second portal (inferred from the aerial)",
+   "kind": "reference feature",
+   "source": "Inferred, 2026-11-14 (Dave: complete Calle Jorge all the way to the car park). No photo is taken between the gateway at 28 m and about 86 m. What is known: through the gateway IMG_2280 and IMG_2697 show a reddish paved path and a second white portal; IMG_2234 looks west from the east stretch along a terracotta path of the same square tiles; the aerial shows lawn on both sides of the line from about 29 to 55 m with one large dark crown at about 33 m on the north lawn (the big Canary palm already placed there from the south-pool photos, object south-pool-9) and a small tree crown at about 44 m, the Calle Silvia lane crossing at 51 m, and from 56 to 86 m the lane running between house rows with a strip of open ground about 4.5 m deep on its north side (the two benches already placed from the aerial stand on it). So the square-tile path with its pale edge is continued from the gateway to 86 m, the lawns and the small tree are placed from the aerial, and the second portal is stood where the house rows begin at about 56 m, which is a guess: the photos show that it exists, not where it is. Not built, because nothing shows them: walls, planters, hedges, lamps, house numbers and doors along 56 to 86 m, and the CALLE JORGE 27 35 passage of IMG_2185-2187.",
+   "evidence": [
+    "IMG_2280.jpg",
+    "IMG_2697.jpg",
+    "IMG_2234.jpg"
    ]
   },
   {
@@ -8623,6 +8645,12 @@
   },
   {
    "from": "photo:IMG_2234.jpg",
+   "to": "jorge_lane.json:jorge-lane-middle",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2234.jpg",
    "to": "jorge_lane.json:jorge-lane-fittings",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -10117,6 +10145,18 @@
   {
    "from": "photo:IMG_2280.jpg",
    "to": "jorge_lane.json:jorge-lane-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2280.jpg",
+   "to": "jorge_lane.json:jorge-lane-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2280.jpg",
+   "to": "jorge_lane.json:jorge-lane-middle",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -18503,6 +18543,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2696.jpg",
+   "to": "jorge_lane.json:jorge-lane-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2697.jpg",
    "to": "parking:Dalí car park",
    "relation": "camera-nearby",
@@ -18562,6 +18608,18 @@
   {
    "from": "photo:IMG_2697.jpg",
    "to": "jorge_lane.json:jorge-lane-planting",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2697.jpg",
+   "to": "jorge_lane.json:jorge-lane-gateway",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2697.jpg",
+   "to": "jorge_lane.json:jorge-lane-middle",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

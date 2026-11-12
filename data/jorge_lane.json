@@ -72,7 +72,7 @@
       { "id": "patio-wall-spill", "at": [127.2, -11.3], "width": 3.4, "height": 0.75, "lift": 3.2, "flowers": 130, "colour": "#96508a" }
     ],
     "shrubs": [
-      { "id": "west-lawn-border", "side": "hedge", "offset": 1.9, "along": [9.5, 11.3, 13.1, 20.8, 22.6, 24.4], "width": 0.95, "height": 0.75 }
+      { "id": "west-lawn-border", "side": "hedge", "offset": 1.9, "along": [9.5, 11.3, 13.1, 20.3, 23.6, 25.4], "width": 0.95, "height": 0.75 }
     ],
     "basis": "Read 2026-11-13. IMG_2229 and IMG_2230 show, against the house-23 front on the lawn side, a small grey-green tree about 3.5 m high beside the kerbed bed and a tall bougainvillea in full purple bract at the house corner; the bougainvilleas on these walls are masses of colour, not green climbers. IMG_2697 shows the house on the south side of the west entrance covered to first-floor height in purple bougainvillea, and a row of low clipped shrubs along the north edge of the flagged path under the round trees. IMG_2773 shows a small light-green broad-leaved tree on the plinth lawn (replacing the dark generic tree first put there) and climbers spilling over the top of the lawn wall. The lawns in all of these are a darker, more olive green than first modelled (sampled about RGB 105,110,66 in the overcast photos), and the bracts a duller violet-pink than pure magenta. Positions are read from the photos and good to about 1.5 m; trees and shrubs are Details."
   },
@@ -142,6 +142,27 @@
     "climber": { "id": "west-house-bougainvillea", "side": "lawn", "offset": 3.3, "from": 22, "length": 10, "height": 4.8, "flowers": 1500, "colour": "#96508a" },
     "basis": "IMG_2280 and IMG_2696-2698 stand in the Pintor Dalí car park at the west end of the mapped Calle Jorge line and look east-north-east along it (headings 56 to 65 degrees; the line runs 60). They show a path of irregular sandstone flags about 2 m wide between two white-painted kerbs the length of the parking bays, the left kerb ending in a short return beside a black lamp post that carries a camera, then lawn on both sides with the flagged path running on to a white gateway. Two round clipped trees stand on the left (north) lawn; on the right a border of clipped and yellow-flowering shrubs runs along a house with a purple bougainvillea over its first floor. The aerial agrees: parked cars to about 7 m, a 9 m deep lawn with two tree crowns on the north side, a house 3.4 m off on the south side, and a white mark on the line at about 28 m read as the gateway. The flags are built to 28 m; the gateway itself, and whether flags or terracotta lie beyond it, are not known. Kerb length, path width and plant positions are estimated to about 1 m; no camera is solved."
   },
+  "gateway": {
+    "evidence": ["IMG_2280.jpg", "IMG_2696.jpg", "IMG_2697.jpg"],
+    "along": 28, "opening": 1.7, "pier": 0.42, "height": 2.45, "lintel": 0.34,
+    "walls": [{ "side": "hedge", "to": 5.6, "height": 1.7 }, { "side": "lawn", "to": 3.2, "height": 1.7 }],
+    "crossFlags": { "along": 22, "half": 0.6, "north": 5, "south": 2.5 },
+    "basis": "Enlarged, IMG_2280 and IMG_2697 show the far end of the flagged path: a white gateway with a flat lintel and a moulded cap, dark green iron gate leaves standing open, bougainvillea trained over it from the house on the right, and a white wall with a clipped hedge running off to the left. A few metres in front of it a flagged cross-path branches left across the lawn and right to the house. Through the gateway a second, similar white portal shows further along, with a reddish (terracotta) path between and beyond. The aerial puts the gateway at the white mark on the lane line at about 28 m. Its width, height and the cross-path's station are estimated from the photos to about 1 m."
+  },
+  "middle": {
+    "from": 28.4, "to": 86,
+    "evidence": ["IMG_2280.jpg", "IMG_2697.jpg", "IMG_2234.jpg"],
+    "grass": [
+      { "side": "hedge", "from": 29, "to": 50, "inner": 1, "outer": 9.4 },
+      { "side": "lawn", "from": 33, "to": 55.5, "inner": 1, "outer": 4.5 },
+      { "side": "hedge", "from": 58, "to": 86, "inner": 1, "outer": 4.6 }
+    ],
+    "trees": [
+      { "id": "middle-lawn-small-tree", "at": [44.2, -4.2], "kind": "round", "crown": 2.4, "height": 3.4 }
+    ],
+    "portal": { "along": 55.8, "opening": 1.7, "pier": 0.42, "height": 2.3, "lintel": 0.3 },
+    "basis": "Inferred, 2026-11-14 (Dave: complete Calle Jorge all the way to the car park). No photo is taken between the gateway at 28 m and about 86 m. What is known: through the gateway IMG_2280 and IMG_2697 show a reddish paved path and a second white portal; IMG_2234 looks west from the east stretch along a terracotta path of the same square tiles; the aerial shows lawn on both sides of the line from about 29 to 55 m with one large dark crown at about 33 m on the north lawn (the big Canary palm already placed there from the south-pool photos, object south-pool-9) and a small tree crown at about 44 m, the Calle Silvia lane crossing at 51 m, and from 56 to 86 m the lane running between house rows with a strip of open ground about 4.5 m deep on its north side (the two benches already placed from the aerial stand on it). So the square-tile path with its pale edge is continued from the gateway to 86 m, the lawns and the small tree are placed from the aerial, and the second portal is stood where the house rows begin at about 56 m, which is a guess: the photos show that it exists, not where it is. Not built, because nothing shows them: walls, planters, hedges, lamps, house numbers and doors along 56 to 86 m, and the CALLE JORGE 27 35 passage of IMG_2185-2187."
+  },
   "guillermoPlanter": {
     "along": 137.55, "from": 3, "to": 25, "thickness": 0.45, "height": 1, "laneOffset": 1.3,
     "yucca": { "along": 12.5, "behind": 0.75, "height": 2.7 },
@@ -180,6 +201,6 @@
   "photographed": {
     "from": 86,
     "to": 136.3,
-    "basis": "Every Calle Jorge photo was taken between 101 and 130 m along the mapped centreline (IMG_2182-2234, IMG_2596, IMG_2597); IMG_2234 looks about 15 m further west. West of about 86 m nothing is photographed, so the lane keeps the generic ribbon there (gap:jorge-west, photo request jorge-west-walk), except the west entrance from the Dalí car park, which has its own photos (see west)."
+    "basis": "Every Calle Jorge photo was taken between 101 and 130 m along the mapped centreline (IMG_2182-2234, IMG_2596, IMG_2597); IMG_2234 looks about 15 m further west. West of about 86 m nothing is photographed, so between the west entrance (see west and gateway) and 86 m the lane is built from the aerial and graded inferred (see middle)."
   }
 }

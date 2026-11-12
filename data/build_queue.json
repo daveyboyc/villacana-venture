@@ -3098,6 +3098,34 @@
    "owner": "Claude"
   },
   {
+   "id": "jorge-complete",
+   "area": "seaward-lanes",
+   "priority": 1,
+   "kind": "structure",
+   "title": "Calle Jorge end to end: the gateway, the middle of the lane from the aerial, and the list of photos still needed",
+   "photos": [
+    "IMG_2697.jpg"
+   ],
+   "build": "Dave, 2026-11-14: complete Jorge all the way to the car park and note which photos are missing. Build the white gateway at the end of the flagged path (IMG_2280, IMG_2697 enlarged) with its walls, open iron leaves, bougainvillea and the flagged cross-path in front. Between the gateway and the photographed east stretch (28 to 86 m), where no photo exists, carry the square-tile path through, lay the lawns and the small tree the aerial shows, and stand the second portal seen through the gateway where the house rows begin; grade all of that inferred. List every photo the lane still needs in data/photo_requests.json and docs/JORGE_LANE.md.",
+   "avoid": "Do not invent walls, planters, lamps, doors or house numbers along 56 to 86 m, or place the CALLE JORGE 27 35 passage. Leave Walk alone.",
+   "accept": [
+    "The lane has a built path from the car park to Calle Guillermo, visible in Inspect in Layout and with Show details",
+    "Inferred parts are graded inferred and listed",
+    "Photo requests recorded",
+    "scripts/check_jorge_lane.py passes"
+   ],
+   "features": [
+    "jorge_lane.json:jorge-lane-gateway",
+    "jorge_lane.json:jorge-lane-middle",
+    "jorge_lane.json:jorge-lane-west"
+   ],
+   "dependsOn": [
+    "jorge-planting"
+   ],
+   "status": "in-progress",
+   "owner": "Claude"
+  },
+  {
    "id": "lantern-post-asset",
    "area": "whole-resort",
    "priority": 2,
