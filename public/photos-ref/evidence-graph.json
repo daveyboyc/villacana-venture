@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 412,
+  "features": 413,
   "photosCitedByModel": 174,
-  "modelFeaturesWithPhotoCitations": 158
+  "modelFeaturesWithPhotoCitations": 159
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3137,6 +3137,16 @@
     "IMG_2774.jpg",
     "IMG_2822.jpg",
     "IMG_2823.jpg"
+   ]
+  },
+  {
+   "id": "jorge_lane.json:jorge-lane-guillermo-west",
+   "name": "West of Calle Guillermo: plain lawn wall, patio wall, hedged planters, lamp posts and brick border",
+   "kind": "reference feature",
+   "source": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from about a storey high on the left to about 1.9 m at the lane, where it ends in a pier carrying a no-dogs sign; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11.2 m north of the Jorge line), so that face and its return are kept clear of the generic doors, shutters and porches, and the wall is continued 3 m east to the lane with a falling top. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Open: plants show above the lawn wall in the photo, so the east part of part7 is probably an open patio and not a roofed room; the registry block is left as it is (a footprint change needs a measured check), which makes the wall top level where the photo's falls. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m.",
+   "evidence": [
+    "IMG_2773.jpg",
+    "IMG_2774.jpg"
    ]
   },
   {
@@ -19331,6 +19341,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2773.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2774.jpg",
    "to": "street:guillermo",
    "relation": "camera-nearby",
@@ -19378,6 +19394,12 @@
   {
    "from": "photo:IMG_2774.jpg",
    "to": "jorge_lane.json:jorge-lane-guillermo-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2774.jpg",
+   "to": "jorge_lane.json:jorge-lane-guillermo-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

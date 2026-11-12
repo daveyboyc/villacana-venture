@@ -33,7 +33,8 @@
     { "side": "lawn", "from": 94.6, "to": 127, "outer": 11 },
     { "side": "lawn", "from": 127, "to": 136.3, "outer": 3.4 },
     { "side": "hedge", "from": 94.6, "to": 108.4, "inner": 1.12, "outer": 10.4 },
-    { "side": "hedge", "from": 126.2, "to": 134.5, "outer": 7 }
+    { "side": "hedge", "from": 126.2, "to": 134.5, "outer": 7 },
+    { "side": "hedge", "from": 124.6, "to": 134.6, "inner": 7, "outer": 11.05 }
   ],
   "kerb": { "side": "hedge", "from": 94.5, "to": 108.4, "offset": 1.05, "returnTo": 8, "width": 0.14, "height": 0.13 },
   "crossPaths": {
@@ -52,6 +53,7 @@
     { "id": "house-23-tree", "side": "lawn", "offset": 7.75, "from": 117, "length": 3.2, "height": 3.2, "flowers": 14, "colour": "#f3c9dc" },
     { "id": "house-23-bougainvillea", "side": "lawn", "offset": 7.75, "from": 112.6, "length": 2.4, "height": 3.6, "flowers": 70, "colour": "#b0478f" },
     { "id": "teodoro-plaque-climber", "side": "lawn", "offset": 4.45, "from": 98.5, "length": 2.6, "height": 2.5, "flowers": 14, "colour": "#b0478f" },
+    { "id": "guillermo-lawn-wall-bougainvillea", "side": "hedge", "offset": 10.85, "from": 124.7, "length": 6.9, "height": 2.4, "flowers": 60, "colour": "#a8358f" },
     { "id": "garden-wall-bougainvillea", "side": "hedge", "offset": 10.45, "from": 98.6, "length": 5.6, "height": 2.4, "flowers": 26, "colour": "#b0478f" }
   ],
   "plainFronts": [
@@ -139,6 +141,23 @@
     ],
     "evidence": ["IMG_2773.jpg", "IMG_2774.jpg", "IMG_2822.jpg", "IMG_2823.jpg"],
     "basis": "IMG_2773 and IMG_2774 look up Calle Guillermo from the Jorge junction: the lane is paved wall to wall, about 2.3 m wide between the plinth lawn and the planter, in large terracotta squares at the junction and then, from about 3 m north, in terracotta octagons with small square insets (five or six across), on towards the steps of the pool building. A round cast cover and two rectangular grates lie in the octagons. IMG_2822 and IMG_2823 show the same octagons south of the junction. In IMG_2773 the squares are about 1.4 times the octagon pitch, so they are drawn 0.56 m against 0.4 m octagons; the real sizes are not known. The paving is laid from 5 m south to 25 m north of the Jorge line (squares for the 6 m up to 3 m north) on the mapped Guillermo line, against the planter's lane face, which closes the grass strip the model had between wall and lane. Width and cover positions are estimated to about 0.5 m."
+  },
+  "guillermoWest": {
+    "evidence": ["IMG_2773.jpg", "IMG_2774.jpg"],
+    "plainWalls": [
+      { "id": "lawn-wall-face", "along": [124, 132.3], "offset": [10.5, 11.7] },
+      { "id": "lawn-wall-return", "along": [131.3, 132.3], "offset": [10.5, 18.3] }
+    ],
+    "wall": { "from": [131.8, 11.2], "to": [134.85, 11.2], "thickness": 0.3, "heightFrom": 3, "heightTo": 1.9 },
+    "sign": { "along": 133.9, "height": 1.35 },
+    "patioWall": { "along": 133.4, "from": 11.2, "to": 28, "thickness": 0.3, "height": 2.1 },
+    "planters": { "along": 134.6, "thickness": 0.5, "height": 0.8, "runs": [[12.3, 15], [16.1, 21], [22.1, 27.6]] },
+    "lamps": [[134.2, 11.9], [134.2, 21.6]],
+    "border": { "along": 134.93, "half": 0.06, "from": -5, "to": 25 },
+    "strelitzia": [[132.6, 13.5], [132.4, 18], [132.6, 24]],
+    "tree": [130.3, 8.4],
+    "rose": [131.9, 6.3],
+    "basis": "Dave, 2026-11-12: from the IMG_2773 viewpoint the houses on the left do not match the photo. IMG_2773 and IMG_2774 show, west of Calle Guillermo: the plinth lawn with a small broad-leaved tree and a rose bush; along the lawn's north side a plain white wall with no door or window, bougainvillea trained along it, its top falling from about a storey high on the left to about 1.9 m at the lane, where it ends in a pier carrying a no-dogs sign; then, along the lane, low white planters with clipped hedges, broken by gateways, with a taller white patio wall behind them, strelitzia leaves showing above it and two lamp posts; a row of bricks on edge borders the lane. The houses stand back behind these walls, with chimneys showing. The wall along the lawn lies on the registry edge of part 6364401UF1366S_part7 (11.2 m north of the Jorge line), so that face and its return are kept clear of the generic doors, shutters and porches, and the wall is continued 3 m east to the lane with a falling top. The planters, patio wall and lamp posts stand on ground the registry leaves empty, where the aerial shows walled patios. Open: plants show above the lawn wall in the photo, so the east part of part7 is probably an open patio and not a roofed room; the registry block is left as it is (a footprint change needs a measured check), which makes the wall top level where the photo's falls. Planter, gateway and lamp positions are read from the two photos and good to about 1.5 m; the patio wall's position is good to about 1 m."
   },
   "lawnPalm": {
     "at": [-13, 115.8], "height": 15,

@@ -146,6 +146,31 @@ for d_ in range(int(pave['from']), int(pave['to']) + 1, 2):
         assert not housed((A[0] + ux * (pave['along'] + e) + uz * d_, A[1] + uz * (pave['along'] + e) - ux * d_)), ('Guillermo paving in a house', d_)
 for c in pave['covers']:
     assert abs(c['at'][0] - pave['along']) < pave['half'] - 0.3 and pave['from'] < c['at'][1] < pave['to'], c
+# West of Calle Guillermo (Dave, 2026-11-12): garden walls, planters and lamps on open ground; the plain wall lies on a registry edge.
+gw = lane['guillermoWest']
+assert all(e in photos for e in gw['evidence']) and gw['basis']
+def north(s_, d_): return (A[0] + ux * s_ + uz * d_, A[1] + uz * s_ - ux * d_)
+w_ = gw['wall']
+assert w_['from'][1] == w_['to'][1] and w_['heightFrom'] > w_['heightTo'] >= 1.6, 'the lawn wall falls towards the lane'
+assert abs(w_['to'][0] + 0.05 + 0.25 - (pave['along'] - pave['half'])) < 0.35, 'the lawn wall does not reach the lane'
+for k in range(1, 10):
+    s_ = w_['from'][0] + 0.2 + (w_['to'][0] - w_['from'][0] - 0.2) * k / 10
+    assert not housed(north(s_, w_['from'][1])), 'wall extension inside a house'
+pw_, pl_ = gw['patioWall'], gw['planters']
+assert pw_['along'] < pl_['along'] - 0.8 and pl_['along'] + pl_['thickness'] / 2 <= pave['along'] - pave['half'] + 0.02, 'planters stand on the paving'
+assert 0.6 <= pl_['height'] <= 1 and 1.8 <= pw_['height'] <= 2.4
+runs_ = pl_['runs']
+assert all(a_ < b_ for a_, b_ in runs_) and all(runs_[i][1] + 0.9 <= runs_[i + 1][0] for i in range(len(runs_) - 1)), 'planter gateways'
+for d_ in [x for r in runs_ for x in r] + [pw_['from'] + 0.5, pw_['to']]:
+    for s_ in (pl_['along'], pw_['along']):
+        assert not housed(north(s_, d_)), ('west-side wall inside a house', s_, d_)
+for s_, d_ in gw['lamps'] + gw['strelitzia'] + [gw['tree'], gw['rose']]:
+    assert not housed(north(s_, d_)), (s_, d_)
+assert all(pw_['along'] < s_ < pave['along'] - pave['half'] for s_, d_ in gw['lamps'])
+# Each plain-wall zone covers a registry wall, so it only removes generic openings from walls that exist.
+for zone in gw['plainWalls']:
+    mid = north(sum(zone['along']) / 2, sum(zone['offset']) / 2)
+    assert any(b['floors'] > 0 and min(math.hypot(mid[0] - (p[0] + q[0]) / 2, mid[1] - (p[1] + q[1]) / 2) for p, q in zip(b['ring'], b['ring'][1:] + b['ring'][:1])) < 4.5 for b in skeleton['buildings']), zone['id']
 loose = [spot(lane[k]['along'], lane[k]['offset'], lane[k]['side']) for k in ('plaqueHedge', 'lantana', 'grassCover', 'olive')]
 for p in loose:
     assert off_path(p) > jorge['width'] / 2 + 0.3 and not housed(p), p
@@ -168,6 +193,8 @@ for p in fittings:
     assert not housed(p), p
 assert off_path(fittings[1]) > lane['boundary']['offset'] + 0.4
 src = (ROOT / 'src/jorge-lane.ts').read_text()
-for name in ('grass(', 'jorge-west-flags', 'jorge-west-kerb', 'jorge-west-tree', 'jorge-guillermo-planter', 'jorge-guillermo-octagons', 'seawardPavingCanvas', 'crazy-paving', 'dragonTree(', 'tallPalm(', 'guillermoPlanterTop', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
+for f_ in ('src/slice.ts', 'src/facade-kit.ts'):
+    assert 'inJorgePlainWall' in (ROOT / f_).read_text(), f_ + ' still puts generic openings on the plain walls'
+for name in ('grass(', 'jorge-west-flags', 'jorge-west-kerb', 'jorge-west-tree', 'jorge-guillermo-planter', 'jorge-guillermo-west-wall', 'jorge-guillermo-patio-wall', 'jorge-guillermo-west-planter', 'inJorgePlainWall', 'jorge-guillermo-octagons', 'seawardPavingCanvas', 'crazy-paving', 'dragonTree(', 'tallPalm(', 'guillermoPlanterTop', 'jorge-cross-path', 'jorge-threshold', 'jorge-wall-niche', 'jorge-kerb', 'jorge-bed-kerb', 'jorge-climber', 'jorge-plaque-hedge', 'jorge-olive', 'jorgeWallRuns', 'inJorgePlainFront', 'jorge-hedge', 'jorge-path', 'jorge-yucca', 'jorge-cactus', 'jorge-plaque', 'SANEA', 'SHOWN.from', 'if (scene.userData.layoutOnly) return;', 'decorationClearance', 'clippedHedge('):
     assert name in src, name
 print(f'Calle Jorge: flagged west entrance {west["from"]}-{west["to"]} m, Guillermo planter, 1 photographed bench and {len(aerial)} from the aerial, dressing {shown["from"]}-{shown["to"]} m only, {len(cross["lines"])} cross-paths, {len(lane["beds"])} beds, kerbed garden lawn, {len(gaps)} wall gaps, planting in Details behind the route guard, {len(covers)} covers, dragon tree, cactus, plaques and lamp PASS')

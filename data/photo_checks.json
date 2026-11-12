@@ -1298,6 +1298,29 @@
    "render": "docs/reviews/jorge-guillermo-paving/IMG_2773-after.png",
    "result": "matches",
    "notes": "The lane is now paved from the plinth lawn to the planter's face, in large squares near the camera and octagons with square insets beyond, with a round cover and grates, and the wall's foot meets the paving with no grass between, as in the photo; before, a narrow ribbon in tilted pieces with grass between it and the wall. Measured in the photo, not the render: at the foreground wall foot one square tile spans about 260 px and the wall about 655 px at the same depth, so the wall is 2.5 tiles high: 0.9 m if the tiles are 0.36 m, 1.25 m if they are 0.5 m. The tile size there is not known, so this supports about a metre but does not fix it. A second agent measured the same ratio as 2.3 to 2.9 in the photo and 2.3 to 2.8 in the render, so the render neither confirms nor contradicts one metre. Differences: the wall starts 3 m north of the junction where the photo's runs on to the camera and beyond, the model's terracotta is paler than the photo's red-brown, the left edge has no brick-on-edge border and meets the lawn raggedly, the round cover is smaller and plainer, and the lantana is thinner. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "guillermo-west-walls",
+   "checked": "2026-11-12",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-guillermo-west",
+   "photo": "IMG_2773.jpg",
+   "before": "docs/reviews/guillermo-west-walls/IMG_2773-before.png",
+   "render": "docs/reviews/guillermo-west-walls/IMG_2773-after.png",
+   "result": "differs",
+   "followUp": "guillermo-west-walls",
+   "notes": "Now as the photo: a plain white wall on the left with its top falling to the lane and a no-dogs sign near its end, two lamp posts, hedged planters along the lane beyond, a brick border, and no generic door, shutters or porch on the wall; before, an open plaza and a house front with an arched door and tiled porch. Still different: the photo's wall falls along its whole length and has plants showing above it, where the model keeps the level registry block west of the extension; the bougainvillea is denser and mostly green in the photo; the houses standing back show chimneys and stepped white volumes, where the model has plain blocks with generic fronts; the model's wall end is taller and plainer than the photographed battered pier. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine."
+  },
+  {
+   "task": "guillermo-west-walls",
+   "checked": "2026-11-12",
+   "by": "Claude",
+   "feature": "jorge_lane.json:jorge-lane-guillermo-west",
+   "photo": "IMG_2774.jpg",
+   "render": "docs/reviews/guillermo-west-walls/IMG_2774-after.png",
+   "result": "differs",
+   "followUp": "guillermo-west-walls",
+   "notes": "The left side now has white planters with clipped hedges between piers, a gateway, a lamp post and a taller white wall behind, as in the photo. Still different: the photo's planters are lower and rougher with rounded tops and a dark iron gate in the gateway, the hedges are taller and stand on the planters, large strelitzia leaves rise behind the wall, and a second lamp post and stepped white houses show beyond. The starting pose stands too close to the right-hand planter. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only: Dave has not yet said this view is fine."
   }
  ],
  "legacyUnchecked": [
