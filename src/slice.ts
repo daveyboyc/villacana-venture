@@ -63,7 +63,7 @@ import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
 import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
-import { addMainPoolLawn, lawnSolidRings } from "./main-pool-lawn";
+import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings } from "./main-pool-lawn";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -1196,6 +1196,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         if(inSouthPoolPassage(x,z))continue;
         if(inJorgePlainFront(x,z)||inJorgePlainWall(x,z))continue;
         if(inLaneFrontageBand(x,z))continue;
+        if(inLawnPlainFront(x,z,nz))continue;
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         // Only where the house looks out over a lane or garden.
