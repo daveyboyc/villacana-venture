@@ -93,7 +93,7 @@
   },
   "main_pool_lawn.json:lawn-pink-paths": {
    "level": "estimated",
-   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m. 12 Nov: now laid on the surveyed lawn (it was buried under it), and the first line ends at the gateway instead of on the paseo. 13 Nov: the branch to the shower leaves at the IMG_2764 camera and a second branch forks west two metres on (IMG_2603), as the photos show; checked through the photo cameras."
+   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m. 12 Nov: now laid on the surveyed lawn (it was buried under it), and the first line ends at the gateway instead of on the paseo. 13 Nov: the branch to the shower leaves at the IMG_2764 camera and a second branch forks west two metres on (IMG_2603), as the photos show; checked through the photo cameras. 13 Nov: the main path is moved onto the 2.5 m brown strip the georeferenced aerial shows from the gate to the pool's south-west corner (it ran 5-6 m further east)."
   },
   "main_pool_lawn.json:lawn-flagstone-apron": {
    "level": "estimated",
@@ -353,7 +353,7 @@
   },
   "seafront_fence.json:guillermo-beach-gate": {
    "level": "estimated",
-   "why": "Position from the aerial (a gateway at the lawn's south-west corner) and the arch's bearing in IMG_2226, confirmed in words by Dave (27 Oct); no close photo, so opening and heights are by eye."
+   "why": "IMG_2602, IMG_2766 and IMG_2485 show the gate's square piers, rectangular opening, moulded lintel, segmental hood, ring-pattern leaf and sign; widths and heights are by eye against the leaf (request beach-gateway for a square-on view). The slope beside it is closed (Dave, 13 Nov)."
   },
   "seafront_fence.json:guillermo-ramp-wall": {
    "level": "inferred",
@@ -392,8 +392,8 @@
    "why": "Arrangement clear in IMG_2609/2631 and from the front in IMG_2604 (pin +-2.1 m): rope-and-post line, two sofas, four pods, parasol, menu stand, easel and pots. Position about 3 m (bearings of IMG_2604 and IMG_2631 cross near the seating); seasonal furniture, heights read against people, details simplified."
   },
   "barraka_frontage.json:paseo-painted-crossing": {
-   "level": "estimated",
-   "why": "Eight red and white bars across the paving seen in IMG_2484 (and far off in IMG_2609/2631); placed where the paseo passes the beach gateway read from the aerial, agreeing with the 10 m read from IMG_2484 to about 2 m; depth 1.2 m uncertain to about 0.3 m."
+   "level": "photographed",
+   "why": "IMG_2766 and IMG_2767 show the bars starting at the gate threshold and running straight across the paseo, centred on the opening; Dave (13 Nov) confirms it is right outside the gate."
   },
   "seafront_fence.json:main-pool-lawn-railing": {
    "level": "estimated",
@@ -462,6 +462,14 @@
   "barraka_facade.json:barraka-facade": {
    "level": "estimated",
    "why": "The parapet, two groups of three north-east windows, the door, the south-west row of eight, the red awnings and the thatched edge are clear in IMG_2615/2618/2604/2630. The wall is 4.8 m from the door proportion, against a 2014-15 lidar roof of 2.89-3.67 m. Stations along the walls are read from unsolved photos and may be a metre out."
+  },
+  "main_pool_lawn.json:lawn-inner-path": {
+   "level": "estimated",
+   "why": "IMG_2600, IMG_2601, IMG_2602 and IMG_2763 show a tiled path from the foot of Calle Guillermo along the inside of the boundary to the gate; Dave (13 Nov) confirms the only way out is the gate. Its line between the kiosk and the wall, and where it meets the gate, are by eye (photo request guillermo-foot-closure)."
+  },
+  "main_pool_lawn.json:lawn-kiosk-plain": {
+   "level": "photographed",
+   "why": "IMG_2759, IMG_2762 and IMG_2763 show the kiosk as plain white walls, and the aerial shows its pale flat roof on the registry outline; its louvred doors are a gap."
   }
  },
  "gaps": [
@@ -753,6 +761,46 @@
     "IMG_2760.jpg"
    ],
    "why": "One or two more square grey lids show in photos whose pins are 10-18 m vague, so only the IMG_2761 lid is built."
+  },
+  {
+   "id": "gap:beach-gate-plumbago",
+   "name": "Plumbago either side of the beach gate",
+   "at": [
+    -4.4,
+    134.3
+   ],
+   "photos": [
+    "IMG_2766.jpg",
+    "IMG_2767.jpg",
+    "IMG_2485.jpg"
+   ],
+   "why": "Blue plumbago spills over the white walls either side of the gate on the paseo side; not modelled yet (task main-pool-gate-corner)."
+  },
+  {
+   "id": "gap:slope-fence-sandstone-mesh",
+   "name": "Sandstone-faced wall with green mesh down the slope",
+   "at": [
+    -7.5,
+    136.4
+   ],
+   "photos": [
+    "IMG_2766.jpg",
+    "IMG_2484.jpg",
+    "IMG_2600.jpg"
+   ],
+   "why": "From the paseo the boundary south-west of the gate is a sandstone-faced wall topped with green rigid mesh; the model draws a plain white wall there (task main-pool-gate-corner)."
+  },
+  {
+   "id": "gap:kiosk-louvred-doors",
+   "name": "Louvred service doors on the lawn kiosk",
+   "at": [
+    -12.5,
+    129.6
+   ],
+   "photos": [
+    "IMG_2762.jpg"
+   ],
+   "why": "White louvred double doors on the kiosk's lawn side; the kiosk is built plain without them (request kiosk-faces)."
   }
  ]
 }

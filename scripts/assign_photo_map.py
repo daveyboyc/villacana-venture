@@ -282,6 +282,10 @@ def features(s):
     add('main_pool_lawn.json:'+steps['id'],steps['name'],'reference feature',lawn['trust'],evidence=steps['evidence'],points=[[-35.0,97.51],[-31.04,104.82]])
     shop=lawn['shop']
     add('main_pool_lawn.json:'+shop['id'],shop['name'],'reference feature',lawn['trust'],evidence=shop['evidence'],points=[shop['at']])
+    inner=lawn['innerPath']
+    add('main_pool_lawn.json:'+inner['id'],inner['name'],'reference feature',lawn['trust'],evidence=inner['evidence'],ring=ribbon(inner['points']))
+    plain=lawn['plainBuildings']
+    add('main_pool_lawn.json:'+plain['id'],plain['name'],'reference feature',lawn['trust'],evidence=plain['evidence'],points=[[-11.6,128.9],[-8.7,134.0],[-16.0,131.3]])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

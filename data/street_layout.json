@@ -379,12 +379,8 @@
           135.8
         ],
         [
-          -10.85,
-          138.36
-        ],
-        [
-          -9.12,
-          140.06
+          -12.2,
+          137.4
         ]
       ],
       "surface": "terracotta",
@@ -394,10 +390,10 @@
         0.27,
         0.27,
         0.27,
-        0.27,
         0.27
       ],
-      "maxGrade": 0.2
+      "maxGrade": 0.2,
+      "end": "Dave, 2026-11-13: the foot of the lane is closed by the seafront wall; the only way out is the beach gateway. The lane ends inside the wall and the inner tiled path (IMG_2600, IMG_2601; data/main_pool_lawn.json innerPath) runs on to the gate."
     },
     {
       "id": "eva-west-footpath",

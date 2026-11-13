@@ -1429,75 +1429,11 @@
    "checked": "2026-11-13",
    "by": "Claude",
    "feature": "main_pool_lawn.json:lawn-pink-paths",
-   "photo": "IMG_2603.jpg",
-   "render": "docs/reviews/main-pool-lawn-ground/IMG_2603-after.png",
-   "result": "matches",
-   "notes": "The pink path runs from the camera to the main pool with the tall palm on its left at the pool end, a branch forking left about 2 m ahead, the nearest bollard on the right at about 4 m and a bin with a bollard on the right further on, bollards on both sides towards the pool, as in the photo. Before this check the branch went right from 7 m ahead and the bin and bollard stood left of the path. The photo's path bends in a gentle S; the model's is straighter. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
-  },
-  {
-   "task": "main-pool-lawn-ground",
-   "checked": "2026-11-13",
-   "by": "Claude",
-   "feature": "main_pool_lawn.json:lawn-bollards-bins",
-   "photo": "IMG_2764.jpg",
-   "render": "docs/reviews/main-pool-lawn-ground/IMG_2764-after.png",
-   "result": "matches",
-   "notes": "From the path: bollard on the right a few metres ahead, bin on the right further on, small bollards on the left towards the pool, the palm by the path's far end and the pool and wave-roofed building beyond, as in the photo. The pin (+-3.8 m) stood inside the stub wall by the gateway; the camera is moved onto the path. Distances are by eye; the photo's bin stands a little nearer the path. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
-  },
-  {
-   "task": "main-pool-lawn-ground",
-   "checked": "2026-11-13",
-   "by": "Claude",
-   "feature": "main_pool_lawn.json:lawn-pink-paths",
    "photo": "IMG_2765.jpg",
    "render": "docs/reviews/main-pool-lawn-ground/IMG_2765-after.png",
    "result": "differs",
    "followUp": "main-pool-lawn-cameras",
-   "notes": "Same spot as IMG_2764. The starting heading (326 degrees, the phone's) turns the render about 15 degrees left of the photo, so the Guillermo wall and two summer loungers fill the left where the photo shows the path ahead with its bin on the right. Not tuned by eye; to be solved. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
-  },
-  {
-   "task": "main-pool-lawn-ground",
-   "checked": "2026-11-13",
-   "by": "Claude",
-   "feature": "main_pool_lawn.json:lawn-flagstone-apron",
-   "photo": "IMG_2759.jpg",
-   "render": "docs/reviews/main-pool-lawn-ground/IMG_2759-after.png",
-   "result": "differs",
-   "followUp": "main-pool-lawn-cameras",
-   "notes": "The path now runs straight to the arched gateway with the bin and bollard beside it and a white block to the right, as in the photo; before, the first path ran 3 m out onto the paseo and the apron straddled the wall. Still different: the pin is +-18.5 m and the camera is set from content, so the second bin shows near left where the photo has a service lid; the seafront ground folds up to the gateway threshold on the right (beach-gate-verge); the photo's block right of the gate has a flat roof and plain walls. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
-  },
-  {
-   "task": "main-pool-lawn-ground",
-   "checked": "2026-11-13",
-   "by": "Claude",
-   "feature": "main_pool_lawn.json:lawn-bollards-bins",
-   "photo": "IMG_2761.jpg",
-   "render": "docs/reviews/main-pool-lawn-ground/IMG_2761-after.png",
-   "result": "differs",
-   "followUp": "main-pool-lawn-cameras",
-   "notes": "Camera moved onto the path (the photo stands on it). The lawn, the hedge along the sea railing and the paseo beyond line up; the gateway building and its bin with a bollard, at the photo's right edge, fall just out of the render's frame, and the service lid is at the foot of the frame rather than lower left. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
-  },
-  {
-   "task": "main-pool-lawn-ground",
-   "checked": "2026-11-13",
-   "by": "Claude",
-   "feature": "main_pool_lawn.json:lawn-white-rooms",
-   "photo": "IMG_2763.jpg",
-   "render": "docs/reviews/main-pool-lawn-ground/IMG_2763-after.png",
-   "result": "differs",
-   "followUp": "beach-gate-verge",
-   "notes": "Camera moved about 2 m west so the gateway is out of frame, as the photo has it. The photo shows the pink path, a flagstone path curving between the hedge and a round white wall, a bollard and the mesh sea fence; the render shows the seafront zone's terracotta ground rising in folds into this corner of the lawn and the white walls beyond. The corner's ground is the beach-gate-verge work. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
-  },
-  {
-   "task": "main-pool-lawn-ground",
-   "checked": "2026-11-13",
-   "by": "Claude",
-   "feature": "main_pool_lawn.json:lawn-white-rooms",
-   "photo": "IMG_2762.jpg",
-   "render": "docs/reviews/main-pool-lawn-ground/IMG_2762-after.png",
-   "result": "differs",
-   "followUp": "main-pool-lawn-cameras",
-   "notes": "The kiosk now reads as plain white walls, as photographed (the generic shutters, arched door and tiled porch roofs are off it). Still different: the photo has lawn up to the walls, louvred white service doors and the strelitzia over a silver bush in the corner; the render has the seafront zone's terracotta paving and the planting small in front of the building. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "notes": "Same spot as IMG_2764, on the path moved onto the aerial strip. The starting heading (326 degrees, the phone's) turns the render about 15 degrees left of the photo, so the Guillermo wall and two summer loungers fill the left where the photo shows the path ahead with its bin on the right. Not tuned by eye; to be solved. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
   },
   {
    "task": "main-pool-lawn-ground",
@@ -1531,6 +1467,134 @@
    "result": "differs",
    "followUp": "main-pool-lawn-cameras",
    "notes": "Looking down the flight onto the deck: nosings, the bed of palms and yuccas, the pale deck and the pool beyond, as in the photo, but the photo's wide landing tread with one long marble nosing and blue riser, the black handrail on its white cheek and the green mat are not lined up; the camera is a rough starting pose 35 degrees down. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-pink-paths",
+   "photo": "IMG_2764.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2764-after.png",
+   "result": "matches",
+   "notes": "With the path moved onto the aerial's brown strip: from the gate end it runs to the pool's south-west corner with the tall palm on its left at the far end, the big lawn on the right and the planted strip by the Guillermo wall on the left, a bollard on the right a few metres ahead and a bin on the right further on, as in the photo. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-bollards-bins",
+   "photo": "IMG_2603.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2603-after.png",
+   "result": "matches",
+   "notes": "Bollard on the right about 4 m ahead, bin with a bollard on the right further on, bollards on the left towards the pool and the palm by the path's far end, as in the photo. The photo's left fork is just behind the render's lower edge. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-pink-paths",
+   "photo": "IMG_2759.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2759-after.png",
+   "result": "matches",
+   "notes": "Looking down the path to the beach gate: the path runs straight to the gateway with its hood, a bin and a bollard just left of it by the gate and the white kiosk to the right, as in the photo. The camera is set from content (pin +-18.5 m); the photo's flat-roofed kiosk front and the hedge behind the gate are not lined up exactly. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-bollards-bins",
+   "photo": "IMG_2761.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2761-after.png",
+   "result": "differs",
+   "followUp": "main-pool-lawn-cameras",
+   "notes": "From the phone pin, which falls on the path where the aerial shows it: lawn, the hedge along the railing and the paseo beyond line up, and the service lid sits on the lawn to the left of the path; the gateway, its bin and bollard at the photo's right edge fall just outside the render. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-white-rooms",
+   "photo": "IMG_2762.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2762-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "The kiosk's north corner, plain white with a pale roof, and the strelitzia over a silver bush in front of it, as photographed; still different: the ground texture paints terracotta paving round the kiosk where the photo has lawn up to its walls, and its louvred doors are not modelled. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-white-rooms",
+   "photo": "IMG_2763.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2763-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "Looking south past the kiosk's round end towards the fence; the corner's ground is drawn as terracotta paving and the inner path where the photo shows the pink path, a flagstone path curving between the hedge and the round wall, and a bollard. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:paseo-painted-crossing",
+   "photo": "IMG_2766.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2766-after.png",
+   "result": "matches",
+   "notes": "Dave, 13 Nov: the crossing is immediately outside the gate. The red and white bars now start at the gate threshold and run straight across the paseo, centred on the opening, as in the photo; before, the band was offset 0.7 m along the paseo and only 1.2 m deep. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "seafront_fence.json:guillermo-beach-gate",
+   "photo": "IMG_2767.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2767-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "The gateway's square pier, moulded lintel and segmental hood and the crossing in front of it read as photographed (it was a round-arched slab). Still different: the plumbago spilling over the walls either side, and the sandstone-faced wall with green mesh south-west of the gate, which the model draws as a plain white wall. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "seafront_fence.json:guillermo-beach-gate",
+   "photo": "IMG_2485.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2485-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "The COMUNIDAD VILLACANA sign on the paseo face of the wall beside the pier, the pier and the ring-pattern iron leaf as photographed; the plumbago in front of the sign and the camera box on the pier are not modelled. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-flagstone-apron",
+   "photo": "IMG_2602.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2602-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "From inside by the gate: the gateway, its hood and the lawn beyond line up, but the iron leaf is drawn swung open towards the camera (the photo has it shut) and the photo's flagstones run on along the inside of the fence where the render has the pink path and the inner path. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-inner-path",
+   "photo": "IMG_2600.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2600-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "Dave, 13 Nov: the slope has no opening. The inner path now runs from the foot of Calle Guillermo down between the white boundary wall and the kiosk side, as in the photo, instead of the lane running out through a gap onto the paseo. Still different: the render shows the gateway ahead where the photo shows a lawn strip, the hedge and the mesh fence; where the path meets the gate needs the requested photos (guillermo-foot-closure). Camera faces the reviewed looksAt; the phone compass is about 47 degrees off. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "main_pool_lawn.json:lawn-inner-path",
+   "photo": "IMG_2601.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2601-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "Further down the inner path: the terracotta squares between a white wall and a planted bed lead on towards the corner, as in the photo, but the render shows the gateway and the railing ahead where the photo shows a hedge and mesh fence with the beach beyond. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [

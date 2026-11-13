@@ -3,7 +3,7 @@ import layout from "../data/main_pool.json";
 import data from "../data/main_pool_lawn.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { centroid, closestOnSegment, pointInRing } from "./geom";
-import { plasterMaterial } from "./materials";
+import { plasterMaterial, surfaceTexture } from "./materials";
 import { accessSection, LOWER_POOL_Y, poolGroundY, poolLevelPoint } from "./pool-levels";
 import { addKitModel } from "./pool-kit";
 import { addSprites } from "./sprites";
@@ -86,13 +86,16 @@ function ribbonRing(points: Vec2[], half: number): Vec2[] {
   return [...left, ...right.reverse()];
 }
 
+/** The inner tiled path from the foot of Calle Guillermo to the beach gate, the only way out (data/main_pool_lawn.json). */
+export const INNER_PATH = data.innerPath.points as Vec2[];
+
 /** Registry buildings the lawn photos show as plain white walls: no generated shutters, kit openings or porches. */
 export const PLAIN_LAWN_BUILDINGS = new Set<string>(data.plainBuildings.ids);
 
 /** Pink paths and the flagstone apron, for the map. */
 export function lawnGroundRings(): Vec2[][] {
   const half = data.paths.width / 2;
-  return [...data.paths.lines.map((line) => ribbonRing(line as Vec2[], half)), data.apron.ring as Vec2[]];
+  return [...data.paths.lines.map((line) => ribbonRing(line as Vec2[], half)), ribbonRing(data.innerPath.points as Vec2[], data.innerPath.width / 2), data.apron.ring as Vec2[]];
 }
 
 function wallRings(): Vec2[][] {
@@ -358,6 +361,12 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
   const flags = new THREE.MeshStandardMaterial({ map: flagstoneTexture(), roughness: 0.95, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   flags.map!.repeat.set(1.4, 1.4);
   for (const line of data.paths.lines) group.add(ribbonMesh(line as Vec2[], data.paths.width / 2, ground, 0.05, pink, "lawn-pink-path"));
+  // The inner tiled path from the foot of Calle Guillermo along the inside of the boundary to the gate (IMG_2600-2602, IMG_2763).
+  // IMG_2600 and IMG_2601 show large terracotta squares, about 0.4 m: the terracotta photo texture holds
+  // eight tiles a repeat; the ribbon's u runs 1 per 2.4 m along and v in metres across.
+  const quarry = surfaceTexture("paving").clone(); quarry.repeat.set(2.4 / 3.2, 1 / 3.2); quarry.needsUpdate = true;
+  const terracotta = new THREE.MeshStandardMaterial({ color: "#d48a6a", map: quarry, roughness: 0.9, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+  group.add(ribbonMesh(data.innerPath.points as Vec2[], data.innerPath.width / 2, ground, 0.05, terracotta, "lawn-inner-path"));
   const apron = new THREE.Shape((data.apron.ring as Vec2[]).map(([x, z]) => new THREE.Vector2(x, -z)));
   const apronMesh = new THREE.Mesh(layOnGround(new THREE.ShapeGeometry(apron).rotateX(-Math.PI / 2), ground, 0.04, 3), flags);
   apronMesh.name = "lawn-flagstone-apron"; apronMesh.receiveShadow = true; group.add(apronMesh);
