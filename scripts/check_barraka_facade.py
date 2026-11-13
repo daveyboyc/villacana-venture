@@ -74,10 +74,11 @@ src = (ROOT / "src/slice.ts").read_text()
 assert "barrakaWallHeight" in src and "BARRAKA_BUILDING" in src
 assert "b.id === BARRAKA_BUILDING ? barrakaWallHeight" in src
 assert "barrakaLowerHead" in src and "skirt" in src, "the white mass is only the upper storey"
+assert "BARRAKA_BUILDING) mesh.userData.noDrape = true" in src, "Barraka is already at beach height and must not be dropped by the survey grid"
 assert "b.id !== skeleton.seafront?.restaurant.buildingId" in src, "generic shutters and porches stay off Barraka"
 facade = (ROOT / "src/barraka-facade.ts").read_text()
 assert facade.count("layoutOnly") == 1 and facade.index("barraka-lower-floor") < facade.index("layoutOnly"), "Layout keeps the glazed lower storey; only the chairs wait for Show details"
-assert "userData.base" in facade
+assert "noDrape = true" in facade, "the openings stay at the beach height with the walls"
 sea = (ROOT / "src/seafront.ts").read_text()
 assert "4.7" not in sea, "the old pyramidal thatch is gone"
 assert "addBarrakaRoof" not in sea

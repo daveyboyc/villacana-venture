@@ -1036,6 +1036,9 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     // A house keeps one floor level: the ground height at its middle (the tunnel's host, on its lane).
     const base:Vec2 = b.id===SILVIA_HOST ? [SILVIA_DATUM.x,SILVIA_DATUM.z] : [c.x, c.z];
     mesh.userData.base = base;
+    // The beach height is already in position.y. Adding the survey height as well
+    // buried Barraka about 2.1 m, so the white storey sat on the sand.
+    if (b.id === BARRAKA_BUILDING) mesh.userData.noDrape = true;
     mesh.name=`building:${b.id}`;mesh.userData.structural=true;
     scene.add(mesh);
     if(b.id===SILVIA_HOST){for(const part of silviaGroundParts(b)){
@@ -1043,7 +1046,9 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
       const lower=new THREE.Mesh(lowerGeo,[cap,wall]);lower.castShadow=lower.receiveShadow=true;lower.userData.base=base;lower.userData.structural=true;lower.name='silvia-host-ground';scene.add(lower);
     }}
     const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height-skirt+lift+.012,z))),new THREE.LineBasicMaterial({color:b.floors>0?"#59564e":"#936347"}));
-    outline.position.y=mesh.position.y-lift;outline.userData.base=base;scene.add(outline);
+    outline.position.y=mesh.position.y-lift;outline.userData.base=base;
+    if (b.id === BARRAKA_BUILDING) outline.userData.noDrape = true;
+    scene.add(outline);
   }
 }
 

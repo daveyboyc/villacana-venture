@@ -92,15 +92,15 @@ function letterTexture(): THREE.CanvasTexture {
 
 /**
  * Barraka's photographed walls (data/barraka_facade.json). The registry footprint
- * stays where it is. The group shares the building's floor datum, so draping lifts
- * the openings with the walls. Visible in Layout and with Show details.
+ * stays where it is. The group is already at the beach height, the same height as
+ * the sand, so it is not draped again. Visible in Layout and with Show details.
  */
 export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number, terrace: Vec2[] = []): void {
   const c = centroid(ring);
   const group = new THREE.Group();
   group.name = "barraka-facade";
   group.position.y = baseY;
-  group.userData.base = [c.x, c.z] as Vec2;
+  group.userData.noDrape = true;
   group.userData.evidence = data.facade.evidence;
   scene.add(group);
 

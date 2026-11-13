@@ -9,9 +9,9 @@ function flat(scene: THREE.Scene, ring: Vec2[], color: string, height: number, n
   mesh.position.y = height; mesh.receiveShadow = true; mesh.userData.noDrape = noDrape; scene.add(mesh);
 }
 
-function outline(scene: THREE.Scene, points: Vec2[], color: string, height: number, closed = false): void {
+function outline(scene: THREE.Scene, points: Vec2[], color: string, height: number, closed = false, noDrape = false): void {
   const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints((closed ? [...points, points[0]] : points).map(([x, z]) => new THREE.Vector3(x, height, z))), new THREE.LineBasicMaterial({ color }));
-  scene.add(line);
+  line.userData.noDrape = noDrape; scene.add(line);
 }
 
 /** Shared seaside geometry: the blueprint and walk use the same outlines. */
@@ -35,8 +35,9 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   }
   if (!restaurant) return;
   // The restaurant stands on the sand, at whatever height the beach has there.
+  // That height is final: the survey grid is not added again, or the pad sinks.
   const c = centroid(sf.restaurant.ring), base = seaside ? seaside.y(c.x, c.z) : 0;
-  flat(scene,sf.restaurant.terrace,"#b89c7b",base+0.22);
-  outline(scene,sf.restaurant.terrace,"#784f3b",base+0.24,true);
+  flat(scene,sf.restaurant.terrace,"#b89c7b",base+0.22, !!seaside);
+  outline(scene,sf.restaurant.terrace,"#784f3b",base+0.24,true, !!seaside);
   // The parapet, clerestory, awnings and thatched eaves are the building itself (src/barraka-facade.ts).
 }
