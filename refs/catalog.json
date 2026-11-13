@@ -11938,7 +11938,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-sea-hedge",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "seafront_fence.json:main-pool-lawn-railing",
+   "area:paseo"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
@@ -12248,7 +12249,8 @@
   "looksAtFeatures": [
    "beach_verge.json:barraka-front-verge",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:beach"
+   "area:beach",
+   "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge",
   "headingOff": 52
@@ -12345,9 +12347,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "beach_verge.json:barraka-front-verge",
+   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:paseo"
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -12391,8 +12394,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "area:paseo"
   ],
   "subject": "Curved sandstone wall and green railing at Barraka's west corner"
  },
@@ -13221,9 +13223,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "beach_verge.json:barraka-front-verge",
+   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:paseo"
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -16831,7 +16834,11 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    -0.0,
    114.2
@@ -17190,8 +17197,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "area:paseo",
-   "beach_verge.json:barraka-front-verge",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "beach_verge.json:barraka-front-verge"
   ]
  },
  {

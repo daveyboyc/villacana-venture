@@ -87,7 +87,7 @@
    "..........gggggggggggffbbbbbbbbbbbbbkkkkkkkkkkkkkkkkkddddddddddddmmmmmmmllllllllllllllll",
    "...........ggggggggggfjjbbbbbbbbbbbbkkkkkkkkkkkkkkkkkddddddddddddmmmmmmlllllllllllllllll",
    "...........ggggggggggjjjjjjjbbbbbbbbkkkkkkkkkkkkkkkkkkddddddddddmmmmmlllllllllllllllllll",
-   "............gggggggggjjjjjjjbbkkbbbbkkkkkkkkkkkkkkkkkkkddddddddmmmmmllllllllllllllllllll",
+   "............gggggggggjjjjjjjbbkkbbbbkkkkkkkkkkkkkkkkkkkdddddddddmmmmllllllllllllllllllll",
    "............gggggggggjjjjjjjbkkkkkkkkkkkkkkkkkkkkkkkkkkddddddddmmmmlllllllllllllllllllll",
    ".............gggggggjjjjjjjjbkkkkkkkkkkkkkkkkkkkkkkkkkkkkdddddmmmmmlllllllllllllllllllll",
    ".............gggggggjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkdddmmmmmllllllllllllllllllllll",
@@ -501,9 +501,9 @@
     "generated": 35
    },
    "placement": {
-    "features": 14,
+    "features": 17,
     "verified": 0,
-    "disputed": 8
+    "disputed": 9
    },
    "discrepancies": [
     {
@@ -543,6 +543,14 @@
      "feature": "main_pool_lawn.json:lawn-white-rooms"
     },
     {
+     "id": "photo-discrepancy:58170dc8a5dd3aaa",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
+     "id": "photo-discrepancy:4d29ca0cdc7d5d41",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
      "id": "photo-discrepancy:38c5293e530b2fe3",
      "feature": "main_pool_lawn.json:lawn-flagstone-apron"
     },
@@ -566,8 +574,8 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 13,
-    "inferred": 0,
+    "estimated": 15,
+    "inferred": 1,
     "registry": 0,
     "gaps": 2
    },
@@ -576,8 +584,8 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "How sure: 1 photographed, 13 estimated, 0 inferred, 2 known gaps.",
-    "Placement: 0 of 14 features verified, 12 open discrepancies."
+    "How sure: 1 photographed, 15 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 17 features verified, 14 open discrepancies."
    ],
    "light": {
     "colour": "red",

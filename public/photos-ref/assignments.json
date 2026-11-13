@@ -1,13 +1,13 @@
 {
  "version": 1,
- "inputDigest": "dd3090961d5d97d559488e1ba4e5353dcc4061ba0931510f0f5a7275aa211f07",
+ "inputDigest": "13242a8a0bc28bdc50a1e9fae2b58d98276226a3c7935973b2ac7792b874afd4",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
   "features": 427,
-  "photosCitedByModel": 191,
+  "photosCitedByModel": 192,
   "modelFeaturesWithPhotoCitations": 173
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
@@ -12271,7 +12271,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0
+     "gap": 1.9
     },
     {
      "id": "area:beach",
@@ -12322,7 +12322,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0
+     "gap": 0.9
     },
     {
      "id": "area:beach",
@@ -12373,7 +12373,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0
+     "gap": 2.4
     },
     {
      "id": "area:barraka",
@@ -12444,7 +12444,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 5.1
+     "gap": 3.5
     }
    ],
    "inViewCandidates": [
@@ -12485,7 +12485,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0.7
+     "gap": 0.2
     },
     {
      "id": "area:barraka",
@@ -13331,7 +13331,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 1.8
+     "gap": 1.1
     },
     {
      "id": "area:beach",
@@ -16907,7 +16907,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 7.6
+     "gap": 10.5
     },
     {
      "id": "area:barraka",
@@ -16958,7 +16958,11 @@
      "angleOffset": 9.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -6.0,
@@ -17334,7 +17338,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 11.0
+     "gap": 10.6
     },
     {
      "id": "area:beach",

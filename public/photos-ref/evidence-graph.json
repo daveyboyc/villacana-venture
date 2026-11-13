@@ -1,13 +1,13 @@
 {
  "version": 1,
- "inputDigest": "dd3090961d5d97d559488e1ba4e5353dcc4061ba0931510f0f5a7275aa211f07",
+ "inputDigest": "13242a8a0bc28bdc50a1e9fae2b58d98276226a3c7935973b2ac7792b874afd4",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
   "features": 427,
-  "photosCitedByModel": 191,
+  "photosCitedByModel": 192,
   "modelFeaturesWithPhotoCitations": 173
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
@@ -3339,6 +3339,7 @@
     "IMG_2630.jpg",
     "IMG_2631.jpg",
     "IMG_2759.jpg",
+    "IMG_2760.jpg",
     "IMG_2766.jpg",
     "IMG_2767.jpg",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
@@ -3365,6 +3366,7 @@
     "IMG_2630.jpg",
     "IMG_2631.jpg",
     "IMG_2759.jpg",
+    "IMG_2760.jpg",
     "IMG_2766.jpg",
     "IMG_2767.jpg",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
@@ -3391,6 +3393,7 @@
     "IMG_2630.jpg",
     "IMG_2631.jpg",
     "IMG_2759.jpg",
+    "IMG_2760.jpg",
     "IMG_2766.jpg",
     "IMG_2767.jpg",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
@@ -16426,7 +16429,7 @@
    "from": "photo:IMG_2607.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 1.9
   },
   {
    "from": "photo:IMG_2607.jpg",
@@ -16464,7 +16467,7 @@
    "from": "photo:IMG_2608.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 0.9
   },
   {
    "from": "photo:IMG_2608.jpg",
@@ -16502,7 +16505,7 @@
    "from": "photo:IMG_2609.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0
+   "gap": 2.4
   },
   {
    "from": "photo:IMG_2609.jpg",
@@ -16600,7 +16603,7 @@
    "from": "photo:IMG_2610.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 5.1
+   "gap": 3.5
   },
   {
    "from": "photo:IMG_2610.jpg",
@@ -16638,7 +16641,7 @@
    "from": "photo:IMG_2611.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 0.7
+   "gap": 0.2
   },
   {
    "from": "photo:IMG_2611.jpg",
@@ -17182,7 +17185,7 @@
    "from": "photo:IMG_2631.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 1.8
+   "gap": 1.1
   },
   {
    "from": "photo:IMG_2631.jpg",
@@ -19422,7 +19425,7 @@
    "from": "photo:IMG_2759.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 7.6
+   "gap": 10.5
   },
   {
    "from": "photo:IMG_2759.jpg",
@@ -19490,6 +19493,24 @@
    "relation": "possibly-in-view",
    "distance": 35.0,
    "angleOffset": 9.4
+  },
+  {
+   "from": "photo:IMG_2760.jpg",
+   "to": "seafront_fence.json:guillermo-beach-gate",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2760.jpg",
+   "to": "seafront_fence.json:guillermo-ramp-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2760.jpg",
+   "to": "seafront_fence.json:main-pool-lawn-railing",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2761.jpg",
@@ -19844,7 +19865,7 @@
    "from": "photo:IMG_2771.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
-   "gap": 11.0
+   "gap": 10.6
   },
   {
    "from": "photo:IMG_2771.jpg",
