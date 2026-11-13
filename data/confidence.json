@@ -397,7 +397,7 @@
   },
   "seafront_fence.json:main-pool-lawn-railing": {
    "level": "estimated",
-   "why": "Dark green bars and square posts on a sandstone plinth read from close photos (IMG_2604, 2609, 2610, 2630, 2631); line from the paseo and aerial, heights by eye (plinth probably nearer 0.5 m than the modelled 0.3 m)."
+   "why": "Dark green bars and square posts on a sandstone plinth read from close photos (IMG_2604, 2609, 2610, 2630, 2631). IMG_2760 shows the fence at the far edge of the open lawn, so the line follows the path around the private lawn (aerial) instead of a chord across the grass. Heights by eye (plinth probably nearer 0.5 m than the modelled 0.3 m)."
   },
   "paseo_details.json:paseo-white-lamp-3": {
    "level": "estimated",

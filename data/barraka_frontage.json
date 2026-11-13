@@ -20,14 +20,14 @@
    "IMG_2608.jpg",
    "IMG_2484.jpg"
   ],
-  "trust": "Arrangement read from IMG_2631 and IMG_2609 (close, full size) and IMG_2604 (pin +-2.1 m, the best camera, looking along the paseo at Barraka's front): a straight line of timber posts with a white rope swag stands on the grass beside the paving's seaward edge from the restaurant's west corner towards the south-west; beyond it, on the grass, two cream-cushioned wicker sofas with dark grey woven pod armchairs in front of them face the restaurant around a low table with a closed cream parasol; a black wrought-iron menu stand, an easel sign and large terracotta pots stand at the restaurant end of the rope. Position: the bearings of IMG_2604 (pin +-2.1 m) and IMG_2631 (pin +-4 m) cross about 2 m from the seating centre used here; the rope follows the paseo centre line at 2.15 m, the seating sits 5 m off it. IMG_2607/2608/2609 have +-12-19 m pins (taken from under the terrace awning) and place nothing alone. Heights are read against the sofas and the people in IMG_2604 (about 0.4 m seat, 0.8 m back, 1.0 m posts). Positions good to about 3 m; seasonal furniture that moves, not measured; the pod and sofa counts are as photographed (4 and 2), not repeated beyond what the photos show. Wicker pattern, cushion shape and the menu-stand scrolls are simplified.",
+  "trust": "Arrangement read from IMG_2631 and IMG_2609 (close, full size) and IMG_2604 (pin +-2.1 m, the best camera, looking along the paseo at Barraka's front): a straight line of timber posts with a white rope swag stands on the grass beside the paving's seaward edge from the restaurant's west corner towards the south-west; beyond it, on the grass, two cream-cushioned wicker sofas with dark grey woven pod armchairs in front of them face the restaurant around a low table with a closed cream parasol; a black wrought-iron menu stand, an easel sign and large terracotta pots stand at the restaurant end of the rope. Position: the bearings of IMG_2604 (pin +-2.1 m) and IMG_2631 (pin +-4 m) cross about 2 m from the seating centre used here; the rope follows the paseo centre line at 2.15 m, the seating sits 5 m off it. IMG_2607/2608/2609 have +-12-19 m pins (taken from under the terrace awning) and place nothing alone. Heights are read against the sofas and the people in IMG_2604 (about 0.4 m seat, 0.8 m back, 1.0 m posts). Positions good to about 3 m; seasonal furniture that moves, not measured. 13 Nov: shifted with the paseo, which now follows the path around the lawn, so the rope stays 2.15 m off the paving and the seats stay on the grass. the pod and sofa counts are as photographed (4 and 2), not repeated beyond what the photos show. Wicker pattern, cushion shape and the menu-stand scrolls are simplified.",
   "centre": [
-   13.94,
-   121.03
+   15.54,
+   122.89
   ],
   "along": [
-   0.605,
-   -0.796
+   0.768,
+   -0.64
   ],
   "sofaU": -0.55,
   "sofaSpacing": 2.5,
@@ -36,62 +36,41 @@
   "rope": {
    "id": "barraka-lounge-rope",
    "posts": [
-    [
-     16.76,
-     112.33
-    ],
-    [
-     15.49,
-     114.25
-    ],
-    [
-     14.03,
-     116.2
-    ],
-    [
-     12.64,
-     118.03
-    ],
-    [
-     11.25,
-     119.87
-    ],
-    [
-     9.86,
-     121.7
-    ],
-    [
-     8.46,
-     123.53
-    ]
+    [18.88, 112.87],
+    [18.27, 115.08],
+    [17.22, 117.13],
+    [15.72, 118.86],
+    [14.04, 120.43],
+    [12.27, 121.89],
+    [10.44, 123.29]
    ],
    "height": 1.0,
    "sag": 0.2
   },
   "menuStand": [
-   17.94,
-   112.63
+   19.33,
+   112.94
   ],
   "easel": [
-   18.14,
-   114.68
+   18.99,
+   115.3
   ],
   "pots": [
    [
-    18.13,
-    112.16,
+    19.53,
+    112.55,
     0.3,
     "terracotta"
    ],
    [
-    15.94,
-    115.77,
+    18.01,
+    116.81,
     0.28,
     "terracotta"
    ],
    [
-    11.9,
-    120.74,
+    12.85,
+    122.14,
     0.3,
     "terracotta"
    ]
