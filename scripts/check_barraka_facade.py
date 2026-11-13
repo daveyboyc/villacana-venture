@@ -53,18 +53,30 @@ assert len(d["sw"]["windows"]["at"]) == 8, "IMG_2604 shows eight windows on the 
 for at in d["sw"]["windows"]["at"]:
     inside(at, sw, "SW window")
 assert d["sw"]["windows"]["at"] == sorted(d["sw"]["windows"]["at"])
+assert d["sw"]["glazing"]["sill"] <= 0.5, "the glazed lower storey has to reach the ground, not sit on a solid wall"
+assert d["awning"]["y"] < d["wallHeight"] - 1.5
+assert len(d["seating"]["alongSw"]) >= 4 and len(d["seating"]["alongNw"]) >= 4 and 1.4 <= d["seating"]["out"] <= 3.5
+for at in d["seating"]["alongSw"]:
+    inside(at, sw, "outside table")
+se_len = length_of(d["faces"]["se"]["start"], d["faces"]["se"]["count"])
+assert 10 < se_len < 16, se_len
 for a, b in d["sw"]["awnings"]:
     assert 0 <= a < b <= sw + 0.05
-assert d["nw"]["glazedTo"] < nw and d["nw"]["window"]["at"] > d["nw"]["glazedTo"]
+assert d["nw"]["glazedTo"] > nw - 1.2, "the paseo front is glazed for its length"
+for at in d["nw"]["windows"]["at"]:
+    inside(at, nw, "NW window")
+for at in d["seating"]["alongNw"]:
+    inside(at, nw, "paseo-side table")
 assert 1.2 <= d["awning"]["depth"] <= 1.6, "awning must stay short of the paseo, which is about 1.9 m from the wall at the closest point"
 assert 0 < d["roof"]["neReturn"] < 4
 
 src = (ROOT / "src/slice.ts").read_text()
 assert "barrakaWallHeight" in src and "BARRAKA_BUILDING" in src
 assert "b.id === BARRAKA_BUILDING ? barrakaWallHeight" in src
+assert "barrakaLowerHead" in src and "skirt" in src, "the white mass is only the upper storey"
 assert "b.id !== skeleton.seafront?.restaurant.buildingId" in src, "generic shutters and porches stay off Barraka"
 facade = (ROOT / "src/barraka-facade.ts").read_text()
-assert "layoutOnly" not in facade, "the facade is the building, so Layout shows it"
+assert facade.count("layoutOnly") == 1 and facade.index("barraka-lower-floor") < facade.index("layoutOnly"), "Layout keeps the glazed lower storey; only the chairs wait for Show details"
 assert "userData.base" in facade
 sea = (ROOT / "src/seafront.ts").read_text()
 assert "4.7" not in sea, "the old pyramidal thatch is gone"

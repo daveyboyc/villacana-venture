@@ -26,7 +26,7 @@ import {addCervantesNorthPatios,cervantesNorthPartitionRings,inCervantesNorthPat
 import {addCervantesEastHedge} from "./cervantes-east-hedge";
 import {addBarrakaBoardwalk,barrakaAccess} from "./barraka-boardwalk";
 import { addBarrakaFrontage } from "./barraka-frontage";
-import { addBarrakaFacade, BARRAKA_BUILDING, barrakaWallHeight } from "./barraka-facade";
+import { addBarrakaFacade, BARRAKA_BUILDING, barrakaLowerHead, barrakaWallHeight } from "./barraka-facade";
 import { addBeachVerge } from "./beach-verge";
 import {addMiddleSouthGate,middleSouthRings} from "./middle-pool-south-gate";
 import {addCervantesGardenDoor,gardenDoorRings,gardenGroundOffset} from "./cervantes-garden-door";
@@ -258,7 +258,7 @@ async function boot(): Promise<void> {
   if (skeleton.seafront && buildings.some((b) => b.id === BARRAKA_BUILDING)) {
     const ring = skeleton.seafront.restaurant.ring;
     const c = centroid(ring);
-    addBarrakaFacade(scene, ring, seaside?.inZone(c.x, c.z) ? seaside.y(c.x, c.z) : 0);
+    addBarrakaFacade(scene, ring, seaside?.inZone(c.x, c.z) ? seaside.y(c.x, c.z) : 0, skeleton.seafront.restaurant.terrace);
   }
   if (seaside && mainPool) addBeachVerge(scene, (x,z) => seaside!.y(x,z));
   if (seaside && skeleton.seafront) { addPaseoWall(scene, skeleton.seafront, seaside, liveGroundY); addPaseoDetails(scene, seaside, liveGroundY); }
@@ -1020,7 +1020,9 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
       outline.userData.base=base;scene.add(outline);
       continue;
     }
-    const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height - lift, bevelEnabled: false });
+    // Barraka's white mass is only the upper storey. The glazed lower restaurant is drawn with the facade.
+    const skirt = b.id === BARRAKA_BUILDING ? barrakaLowerHead : 0;
+    const geometry = new THREE.ExtrudeGeometry(shapeOf(b.id===POOL_TERRACE_ID?poolTerraceRing:b.ring, b.holes), { depth: height - lift - skirt, bevelEnabled: false });
     geometry.rotateX(-Math.PI / 2);
     const mesh = new THREE.Mesh(geometry, b.id === BARRAKA_BUILDING ? [wall, wall] : [cap, wall]);
     mesh.position.y = lift;
@@ -1029,6 +1031,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     else if(pointInRing(c.x,c.z,lowerPoolRing)) mesh.position.y=LOWER_POOL_Y;
     // A building out on the sand stands at the beach's height.
     else if(seaside?.inZone(c.x,c.z)) mesh.position.y=seaside.y(c.x,c.z);
+    if (skirt) mesh.position.y += skirt;
     mesh.castShadow = mesh.receiveShadow = true;
     // A house keeps one floor level: the ground height at its middle (the tunnel's host, on its lane).
     const base:Vec2 = b.id===SILVIA_HOST ? [SILVIA_DATUM.x,SILVIA_DATUM.z] : [c.x, c.z];
@@ -1039,7 +1042,7 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
       const lowerGeo=new THREE.ExtrudeGeometry(shapeOf(part.ring,part.holes),{depth:3.35,bevelEnabled:false});lowerGeo.rotateX(-Math.PI/2);
       const lower=new THREE.Mesh(lowerGeo,[cap,wall]);lower.castShadow=lower.receiveShadow=true;lower.userData.base=base;lower.userData.structural=true;lower.name='silvia-host-ground';scene.add(lower);
     }}
-    const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height+lift+.012,z))),new THREE.LineBasicMaterial({color:b.floors>0?"#59564e":"#936347"}));
+    const outline=new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(b.ring.map(([x,z])=>new THREE.Vector3(x,height-skirt+lift+.012,z))),new THREE.LineBasicMaterial({color:b.floors>0?"#59564e":"#936347"}));
     outline.position.y=mesh.position.y-lift;outline.userData.base=base;scene.add(outline);
   }
 }
