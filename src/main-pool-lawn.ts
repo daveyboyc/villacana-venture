@@ -86,6 +86,9 @@ function ribbonRing(points: Vec2[], half: number): Vec2[] {
   return [...left, ...right.reverse()];
 }
 
+/** Registry buildings the lawn photos show as plain white walls: no generated shutters, kit openings or porches. */
+export const PLAIN_LAWN_BUILDINGS = new Set<string>(data.plainBuildings.ids);
+
 /** Pink paths and the flagstone apron, for the map. */
 export function lawnGroundRings(): Vec2[][] {
   const half = data.paths.width / 2;
@@ -143,10 +146,12 @@ function ribbonMesh(line: Vec2[], half: number, ground: Ground, lift: number, ma
   const points = densify(line, 0.6);
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
   let run = 0;
+  // Direction along the line at each point, always forward: at the first point the old code took it
+  // backward, which flipped that cross-section and twisted the ribbon into a bow-tie (a wedge where
+  // the branch path leaves the main one, and at the gateway end).
   const at = (i: number): Vec2 => {
-    const p = points[Math.max(0, Math.min(points.length - 1, i))];
-    const q = points[Math.max(0, Math.min(points.length - 1, i + (i === 0 ? 1 : -1)))];
-    return i === 0 || i === points.length - 1 ? [p[0] - q[0], p[1] - q[1]] : [points[i + 1][0] - points[i - 1][0], points[i + 1][1] - points[i - 1][1]];
+    const a = points[Math.max(0, i - 1)], b = points[Math.min(points.length - 1, i + 1)];
+    return [b[0] - a[0], b[1] - a[1]];
   };
   points.forEach((p, i) => {
     if (i) run += Math.hypot(p[0] - points[i - 1][0], p[1] - points[i - 1][1]);
@@ -185,13 +190,22 @@ function flagstoneTexture(): THREE.CanvasTexture {
   return t;
 }
 
+/**
+ * The riser tiles (IMG_2776, IMG_2777): a row of square Andalusian tiles, deep cobalt with a white
+ * four-petal motif and small ochre centres, read as a dark blue band under each pale nosing. One
+ * canvas is one tile; the material repeats it along each riser.
+ */
 function riserTexture(): THREE.CanvasTexture {
-  const c = document.createElement("canvas"); c.width = 64; c.height = 32;
+  const c = document.createElement("canvas"); c.width = c.height = 64;
   const g = c.getContext("2d")!;
-  g.fillStyle = "#f4efe6"; g.fillRect(0, 0, 64, 32);
-  g.strokeStyle = "#2a4f86"; g.lineWidth = 2;
-  for (let x = 4; x < 64; x += 12) { g.strokeRect(x, 4, 8, 24); }
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace;
+  g.fillStyle = "#1f3c8c"; g.fillRect(0, 0, 64, 64);
+  g.fillStyle = "#f2efe6";
+  for (const [x, y] of [[32, 14], [50, 32], [32, 50], [14, 32]]) { g.beginPath(); g.ellipse(x, y, 7, 7, 0, 0, Math.PI * 2); g.fill(); }
+  g.fillStyle = "#d9a531"; g.beginPath(); g.arc(32, 32, 6, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = "#f2efe6"; g.lineWidth = 2;
+  for (const [x, y] of [[0, 0], [64, 0], [0, 64], [64, 64]]) { g.beginPath(); g.arc(x, y, 12, 0, Math.PI * 2); g.stroke(); }
+  g.strokeStyle = "#e8e3d6"; g.lineWidth = 1; g.strokeRect(0.5, 0.5, 63, 63);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = THREE.RepeatWrapping;
   return t;
 }
 
@@ -211,7 +225,8 @@ function fanPalm(): THREE.Group {
 function addSteps(group: THREE.Group, details: boolean, ground: Ground): void {
   // The flight is draped onto the survey like the rest of the pool level: follow the same offset.
   const lift = (p: Vec2): number => ground(p[0], p[1]) - poolGroundY(p[0], p[1]);
-  const tile = new THREE.MeshStandardMaterial({ map: riserTexture(), roughness: 0.8 });
+  const tile = new THREE.MeshStandardMaterial({ map: riserTexture(), roughness: 0.6 });
+  tile.map!.repeat.set(Math.max(1, Math.round(flight.width / 0.15)), 1); // 15 cm tiles across the flight
   const marble = new THREE.MeshStandardMaterial({ color: "#f7f4ee", roughness: 0.35 });
   const iron = new THREE.MeshStandardMaterial({ color: "#1c2420", roughness: 0.4, metalness: 0.55 });
   for (let i = 0; i < stepCount; i++) {
