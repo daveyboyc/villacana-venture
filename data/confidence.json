@@ -93,7 +93,7 @@
   },
   "main_pool_lawn.json:lawn-pink-paths": {
    "level": "estimated",
-   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m. 12 Nov: now laid on the surveyed lawn (it was buried under it), and the first line ends at the gateway instead of on the paseo. 13 Nov: the branch to the shower leaves at the IMG_2764 camera and a second branch forks west two metres on (IMG_2603), as the photos show; checked through the photo cameras. 13 Nov: the main path is moved onto the 2.5 m brown strip the georeferenced aerial shows from the gate to the pool's south-west corner (it ran 5-6 m further east)."
+   "why": "IMG_2764, IMG_2765 and IMG_2603 show a wide pink path under the camera running toward the pool, with lawn to the right. The line now passes through the IMG_2764 pin. Width 2.4 m is by eye; the line is good to about 4 m. 12 Nov: now laid on the surveyed lawn (it was buried under it), and the first line ends at the gateway instead of on the paseo. 13 Nov: the branch to the shower leaves at the IMG_2764 camera and a second branch forks west two metres on (IMG_2603), as the photos show; checked through the photo cameras. 13 Nov: the main path is moved onto the 2.5 m brown strip the georeferenced aerial shows from the gate to the pool's south-west corner (it ran 5-6 m further east). Drawn as one smooth network with rounded joins (src/smooth-path.ts, docs/SMOOTH_PATHS.md)."
   },
   "main_pool_lawn.json:lawn-flagstone-apron": {
    "level": "estimated",
@@ -393,7 +393,7 @@
   },
   "barraka_frontage.json:paseo-painted-crossing": {
    "level": "photographed",
-   "why": "IMG_2766 and IMG_2767 show the bars starting at the gate threshold and running straight across the paseo, centred on the opening; Dave (13 Nov) confirms it is right outside the gate."
+   "why": "IMG_2484 shows a zebra the usual way round: eight bars side by side across the full paving, each along the walk; IMG_2766 and IMG_2767 show the band right outside the gate. Dave (13 Nov) confirms it is immediately outside the gate. Bar sizes by eye."
   },
   "seafront_fence.json:main-pool-lawn-railing": {
    "level": "estimated",

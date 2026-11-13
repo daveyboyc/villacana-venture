@@ -234,3 +234,12 @@ immediately outside the gate.
 
 Photo requests for what is still by eye: `guillermo-foot-closure`, `lawn-palm-foot`, `kiosk-faces`,
 `enrique-shop-front-square`, and the open `beach-gateway`.
+
+## Smooth paths and the crossing the right way round (2026-11-13)
+
+Dave: the crossing is the wrong way round, and the paths are clunky. The crossing is a zebra the usual
+way round (IMG_2484): eight bars side by side across the paseo, each running along the walk, in a band
+centred on the gate. The lawn's pink paths are drawn as one smooth network (`src/smooth-path.ts`): a
+curve through the traced points, constant width, branches joining with rounded fillets, laid on the
+surveyed ground as one mesh; the inner tiled path and the flagstone apron likewise. The model-wide plan
+for smooth paths, patios and green spaces with their edges and boundaries is `docs/SMOOTH_PATHS.md`.

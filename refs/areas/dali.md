@@ -39,6 +39,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P1 | `dali-street-scene` | Pintor Dalí: curb, fence plinth, outer hedge and house-side lanterns | in-progress · Cursor · placement: not-verified | [IMG_2269](../../public/photos-ref/IMG_2269.jpg), [IMG_2270](../../public/photos-ref/IMG_2270.jpg), [IMG_2276](../../public/photos-ref/IMG_2276.jpg), [IMG_2277](../../public/photos-ref/IMG_2277.jpg), [IMG_2278](../../public/photos-ref/IMG_2278.jpg), [IMG_2279](../../public/photos-ref/IMG_2279.jpg), [IMG_2280](../../public/photos-ref/IMG_2280.jpg) |
 | P2 | `dali-house-fronts` | Pintor Dalí: trace the house arches, palms and the seaward lamp (after dali-street-scene) | open · placement: not-verified | [IMG_2279](../../public/photos-ref/IMG_2279.jpg), [IMG_2280](../../public/photos-ref/IMG_2280.jpg), [IMG_2281](../../public/photos-ref/IMG_2281.jpg), [IMG_2291](../../public/photos-ref/IMG_2291.jpg) |
+| P2 | `ground-plan-dali` | Calle Pintor Dalí: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | open · placement: not-verified |  |
 | P2 | `path-network-inventory-dali` [#131](https://github.com/daveyboyc/villacana-venture/issues/131) | Calle Pintor Dalí: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 
 ## Built from these photos

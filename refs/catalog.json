@@ -7641,7 +7641,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "area:paseo"
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
   ],
   "looksAt": [
    -50.0,
@@ -12335,6 +12337,8 @@
    "paseo_details.json:paseo-white-lamp-2",
    "paseo_details.json:paseo-white-lamp-3",
    "paseo_details.json:paseo-white-lamp-4",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs",
    "barraka_frontage.json:barraka-lounge-garden",
    "barraka_frontage.json:paseo-painted-crossing",
    "seafront_fence.json:guillermo-beach-gate",
@@ -13211,6 +13215,8 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs",
    "barraka_frontage.json:barraka-lounge-garden",
    "barraka_frontage.json:paseo-painted-crossing",
    "seafront_fence.json:guillermo-beach-gate",

@@ -22,7 +22,7 @@ const path = require("node:path");
     fs.mkdirSync(out, { recursive: true });
     for (const details of modes) for (let i = 0; i < rest.length; i += 2) {
       const [name, at] = [rest[i], rest[i + 1]];
-      await page.goto(`http://127.0.0.1:${server.httpServer.address().port}/slice.html?pool=${pool}&view=overview&inspect=${at}${details ? "&details=1" : ""}`);
+      await page.goto(`http://127.0.0.1:${server.httpServer.address().port}/slice.html?pool=${pool}&view=overview&inspect=${at}${details ? "&details=1" : ""}`, { timeout: 180000 });
       await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 300000 });
       await page.addStyleTag({ content: "body > *:not(canvas):not(#scene):not(:has(#scene)){visibility:hidden !important}" });
       await page.waitForTimeout(1500);

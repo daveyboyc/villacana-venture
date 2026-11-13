@@ -1476,7 +1476,7 @@
    "photo": "IMG_2764.jpg",
    "render": "docs/reviews/main-pool-lawn-ground/IMG_2764-after.png",
    "result": "matches",
-   "notes": "With the path moved onto the aerial's brown strip: from the gate end it runs to the pool's south-west corner with the tall palm on its left at the far end, the big lawn on the right and the planted strip by the Guillermo wall on the left, a bollard on the right a few metres ahead and a bin on the right further on, as in the photo. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "notes": "With the path moved onto the aerial's brown strip: from the gate end it runs to the pool's south-west corner with the tall palm on its left at the far end, the big lawn on the right and the planted strip by the Guillermo wall on the left, a bollard on the right a few metres ahead and a bin on the right further on, as in the photo. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only. 13 Nov: the paths are now drawn as one smooth network (src/smooth-path.ts): the path curves through its traced points and its branches join with rounded fillets, where it used to kink at every point and its branches overlapped as square-ended strips."
   },
   {
    "task": "main-pool-lawn-ground",
@@ -1539,7 +1539,7 @@
    "photo": "IMG_2766.jpg",
    "render": "docs/reviews/main-pool-lawn-ground/IMG_2766-after.png",
    "result": "matches",
-   "notes": "Dave, 13 Nov: the crossing is immediately outside the gate. The red and white bars now start at the gate threshold and run straight across the paseo, centred on the opening, as in the photo; before, the band was offset 0.7 m along the paseo and only 1.2 m deep. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "notes": "Dave, 13 Nov: the crossing is immediately outside the gate, and a zebra the usual way round. The eight bars sit side by side across the paseo, each running along the walk, in a band centred on the gate opening, as the photo and IMG_2484 show; an intermediate build turned the bars to point out from the gate, which was wrong. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
   },
   {
    "task": "main-pool-lawn-ground",
@@ -1595,6 +1595,16 @@
    "result": "differs",
    "followUp": "main-pool-gate-corner",
    "notes": "Further down the inner path: the terracotta squares between a white wall and a planted bed lead on towards the corner, as in the photo, but the render shows the gateway and the railing ahead where the photo shows a hedge and mesh fence with the beach beyond. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "main-pool-lawn-ground",
+   "checked": "2026-11-13",
+   "by": "Claude",
+   "feature": "barraka_frontage.json:paseo-painted-crossing",
+   "photo": "IMG_2484.jpg",
+   "render": "docs/reviews/main-pool-lawn-ground/IMG_2484-after.png",
+   "result": "matches",
+   "notes": "Looking along the paseo towards the gate: the red and white band crosses the full paving with its bars along the walk, in front of the gateway, as in the photo. The photo's sandstone-faced wall with green mesh along the slope is drawn as a plain white wall (gap:slope-fence-sandstone-mesh). Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [

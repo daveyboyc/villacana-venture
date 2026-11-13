@@ -34,6 +34,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Priority | Task | What | Status | Photos |
 | --- | --- | --- | --- | --- |
+| P2 | `ground-plan-south-pool` | South pool: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | open · placement: not-verified |  |
 | P2 | `path-network-inventory-south-pool` [#127](https://github.com/daveyboyc/villacana-venture/issues/127) | South pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
 | P2 | `south-pool-dali-passage` | Open the Calle de Jorge 39–67 passage from the south-pool lawn into Pintor Dalí | in-progress · Cursor · placement: not-verified | [IMG_2283](../../public/photos-ref/IMG_2283.jpg), [IMG_2294](../../public/photos-ref/IMG_2294.jpg), [IMG_2295](../../public/photos-ref/IMG_2295.jpg), [IMG_2639](../../public/photos-ref/IMG_2639.jpg), [IMG_2640](../../public/photos-ref/IMG_2640.jpg), [IMG_2641](../../public/photos-ref/IMG_2641.jpg), [IMG_2642](../../public/photos-ref/IMG_2642.jpg), [IMG_2645](../../public/photos-ref/IMG_2645.jpg) |
 

@@ -7721,7 +7721,9 @@
    ],
    "inViewCandidates": [],
    "citedBy": [
-    "area:paseo"
+    "area:paseo",
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -12405,6 +12407,8 @@
     "paseo_details.json:paseo-white-lamp-2",
     "paseo_details.json:paseo-white-lamp-3",
     "paseo_details.json:paseo-white-lamp-4",
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs",
     "barraka_frontage.json:barraka-lounge-garden",
     "barraka_frontage.json:paseo-painted-crossing",
     "seafront_fence.json:guillermo-beach-gate",
@@ -13348,6 +13352,8 @@
     }
    ],
    "citedBy": [
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs",
     "barraka_frontage.json:barraka-lounge-garden",
     "barraka_frontage.json:paseo-painted-crossing",
     "seafront_fence.json:guillermo-beach-gate",

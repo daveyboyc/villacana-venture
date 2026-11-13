@@ -98,14 +98,14 @@ export function addBarrakaFrontage(scene: THREE.Scene, groundY: (x: number, z: n
     plant.position.y = .48; g.add(plant);
   }));
 
-  // The red and white painted crossing right outside the beach gateway (IMG_2766, IMG_2767): eight bars side by
-  // side along the walk, each running straight across the paving from the gate threshold; flush, so no obstruction.
+  // The red and white painted crossing right outside the beach gateway (IMG_2484, IMG_2766, IMG_2767): eight bars
+  // side by side across the paving, each running along the walk; flush on the paving, so no obstruction.
   const c = data.crossing, [ax, az] = c.along, [px, pz] = c.at as Vec2;
   const crossing = new THREE.Group(); crossing.name = c.id; crossing.userData.evidence = c.evidence; crossing.userData.flushRouteSurface = true;
-  const barWidth = c.span / c.bars;
+  const barWidth = c.width / c.bars;
   for (let i = 0; i < c.bars; i++) {
-    const along = (i + .5) * barWidth - c.span / 2, x = px + ax * along, z = pz + az * along;
-    const bar = new THREE.Mesh(new THREE.PlaneGeometry(barWidth * .96, c.length), new THREE.MeshStandardMaterial({ color: i % 2 ? "#b0433d" : "#e9e6dd", roughness: .95, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 }));
+    const across = (i + .5) * barWidth - c.width / 2, x = px - az * across, z = pz + ax * across;
+    const bar = new THREE.Mesh(new THREE.PlaneGeometry(c.depth, barWidth * .96), new THREE.MeshStandardMaterial({ color: i % 2 ? "#b0433d" : "#e9e6dd", roughness: .95, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 }));
     bar.rotation.set(-Math.PI / 2, 0, Math.atan2(-az, ax)); bar.position.set(x, groundY(x, z) + .05, z); bar.receiveShadow = true; bar.name = c.id + "-bar"; crossing.add(bar);
   }
   group.add(crossing);

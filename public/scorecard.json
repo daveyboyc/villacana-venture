@@ -189,7 +189,7 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 6,
+    "open": 7,
     "inProgress": 3,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -317,7 +317,7 @@
     }
    ],
    "tasks": {
-    "open": 2,
+    "open": 3,
     "inProgress": 2,
     "titles": [
      "Check pool-to-gate spacing and build photo-supported tunnel entrance context",
@@ -342,7 +342,7 @@
    ],
    "light": {
     "colour": "amber",
-    "headline": "Photos in: 4 build tasks open, 5 open discrepancies",
+    "headline": "Photos in: 5 build tasks open, 5 open discrepancies",
     "requests": []
    }
   },
@@ -404,11 +404,12 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 1,
+    "open": 2,
     "inProgress": 1,
     "titles": [
      "South pool: full-source path, tunnel and boundary inventory",
-     "Open the Calle de Jorge 39–67 passage from the south-pool lawn into Pintor Dalí"
+     "Open the Calle de Jorge 39–67 passage from the south-pool lawn into Pintor Dalí",
+     "South pool: smooth paths, patios and green spaces with their edges and boundaries"
     ]
    },
    "confidence": {
@@ -487,7 +488,7 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 11,
+     "matches": 12,
      "differs": 14,
      "not-comparable": 7
     },
@@ -773,7 +774,7 @@
     }
    ],
    "tasks": {
-    "open": 6,
+    "open": 7,
     "inProgress": 4,
     "titles": [
      "Elena: register both physical path edges and finite ground boundaries",
@@ -917,7 +918,7 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 3,
+    "open": 4,
     "inProgress": 1,
     "titles": [
      "Cervantes: register finite path sides, wall ends and eastern terminal",
@@ -1090,7 +1091,7 @@
     }
    ],
    "tasks": {
-    "open": 2,
+    "open": 3,
     "inProgress": 1,
     "titles": [
      "Pintor Dalí: curb, fence plinth, outer hedge and house-side lanterns",
@@ -1115,7 +1116,7 @@
    ],
    "light": {
     "colour": "amber",
-    "headline": "Photos in: 3 build tasks open, 8 open discrepancies",
+    "headline": "Photos in: 4 build tasks open, 8 open discrepancies",
     "requests": []
    }
   },
@@ -1176,10 +1177,11 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 1,
+    "open": 2,
     "inProgress": 0,
     "titles": [
-     "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory"
+     "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
+     "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries"
     ]
    },
    "confidence": {
@@ -1277,10 +1279,11 @@
    },
    "discrepancies": [],
    "tasks": {
-    "open": 1,
+    "open": 2,
     "inProgress": 0,
     "titles": [
-     "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory"
+     "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory",
+     "Loira, Bolivia, Alberto and Isabel: smooth paths, patios and green spaces with their edges and boundaries"
     ]
    },
    "confidence": {
@@ -1402,7 +1405,7 @@
     }
    ],
    "tasks": {
-    "open": 3,
+    "open": 4,
     "inProgress": 3,
     "titles": [
      "Calle Eva: full-source path, tunnel and boundary inventory",
@@ -1522,7 +1525,7 @@
     }
    ],
    "tasks": {
-    "open": 5,
+    "open": 6,
     "inProgress": 18,
     "titles": [
      "Resolve the Silvia tunnel entrance, its components and connection to the lane",
@@ -1925,7 +1928,7 @@
     "tagged": 58,
     "placed": 57,
     "checks": {
-     "matches": 3,
+     "matches": 4,
      "differs": 6,
      "not-comparable": 19
     },
@@ -2048,7 +2051,7 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 48,
+     "matches": 49,
      "differs": 30,
      "not-comparable": 57
     },
@@ -2229,7 +2232,7 @@
     }
    ],
    "tasks": {
-    "open": 43,
+    "open": 54,
     "inProgress": 47,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
