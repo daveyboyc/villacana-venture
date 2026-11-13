@@ -67,7 +67,7 @@ class Scorecard(unittest.TestCase):
         done = photo_requests.states([{**request, 'status': 'answered', 'answeredBy': ['IMG_1.jpg']}], [], {})[0]
         self.assertEqual((done['state'], done['photos']), ('answered', ['IMG_1.jpg']))
         for r in photo_requests.load():
-            self.assertTrue(r['ask'] and r['why'] and len(r['at']) == 2 and r['status'] in ('open', 'answered'), r['id'])
+            self.assertTrue(r['ask'] and r['why'] and len(r['at']) == 2 and r['status'] in ('open', 'answered', 'superseded'), r['id'])
 
 
 if __name__ == '__main__':

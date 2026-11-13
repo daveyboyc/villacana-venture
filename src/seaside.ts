@@ -100,8 +100,10 @@ export function addSeaside(scene: THREE.Scene, sf: Seafront, seaside: Seaside, c
   for (let j = 0; j <= n; j++) for (let i = 0; i <= n; i++) {
     const x = x0 + i * cell, z = z0 + j * cell;
     inside[j * (n + 1) + i] = seaside.inZone(x, z) ? 1 : 0;
-    // Corners just inland of the zone dip well below the ground there, so the two never flicker.
-    heights[j * (n + 1) + i] = seaside.y(x, z) - (inside[j * (n + 1) + i] ? 0.03 : 0.6);
+    // Corners just inland of the zone dip well below the ground there, so the two never flicker. Behind the
+    // big-pool lawn the land inland is lower than the paseo (the lawn about 0.8 m below the gateway), so they
+    // also stay under that ground; otherwise the sand pokes up through the lawn inside the gate.
+    heights[j * (n + 1) + i] = inside[j * (n + 1) + i] ? seaside.y(x, z) - 0.03 : Math.min(seaside.y(x, z) - 0.6, inlandY(x, z) - 0.15);
   }
   const sand: number[] = [];
   for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {

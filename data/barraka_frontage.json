@@ -82,19 +82,21 @@
   "evidence": [
    "IMG_2484.jpg",
    "IMG_2609.jpg",
-   "IMG_2631.jpg"
+   "IMG_2631.jpg",
+   "IMG_2766.jpg",
+   "IMG_2767.jpg"
   ],
-  "trust": "IMG_2484 (pin +-3.9 m, looking along the paseo from near the foot of Calle Guillermo) shows eight alternating white and red bars (the first white one partly hidden), each about 0.4 m wide and running along the walk, painted across the full pink paving about 10 m ahead, level with the green railing where the stone wall changes to bars; IMG_2609 and IMG_2631 show the same white bars far along the paseo. It sits where the mapped paseo passes the beach gateway (the gateway was read from the aerial at about -6, 131.5, apple-maps/11 shows the crossing in front of it), which agrees with the 10 m read from IMG_2484 to about 2 m. Width equals the 3 m paving; the 1.2 m depth is read from the foreshortened bars and is uncertain to about 0.3 m. A flush surface marking: it adds no height and no obstruction.",
+  "trust": "Dave, 2026-11-13: the crossing is immediately outside the gate. IMG_2766 and IMG_2767, taken beside it on the paseo, show eight alternating white and red bars about 0.42 m wide side by side along the walk, each running straight out from the gate threshold across the full pink paving, the band centred on the gate opening; IMG_2484 shows the same bars from 10 m along the paseo. The band is centred where the gateway's centre meets the mapped paseo line (the gateway stands 1.75 m inland of it). Bar widths are read by eye. A flush surface marking: it adds no height and no obstruction.",
   "at": [
-   -3.27,
-   134.14
+   -3.78,
+   134.64
   ],
   "along": [
    0.702,
    -0.712
   ],
-  "width": 3.0,
-  "depth": 1.2,
-  "bars": 8
+  "bars": 8,
+  "span": 3.4,
+  "length": 3
  }
 }

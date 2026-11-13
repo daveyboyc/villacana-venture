@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "2c734dee1faec750fefd03e421212093f57a4002b982df82686644634a8ba9d5",
+ "inputDigest": "13242a8a0bc28bdc50a1e9fae2b58d98276226a3c7935973b2ac7792b874afd4",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 425,
-  "photosCitedByModel": 186,
-  "modelFeaturesWithPhotoCitations": 171
+  "features": 427,
+  "photosCitedByModel": 192,
+  "modelFeaturesWithPhotoCitations": 173
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -7825,16 +7825,16 @@
      "gap": 0.4
     },
     {
-     "id": "street:guillermo",
-     "name": "Calle Guillermo",
-     "kind": "street",
-     "gap": 1.6
-    },
-    {
      "id": "area:beach",
      "name": "Villacana beach",
      "kind": "area",
      "gap": 2.8
+    },
+    {
+     "id": "street:guillermo",
+     "name": "Calle Guillermo",
+     "kind": "street",
+     "gap": 5.5
     }
    ],
    "inViewCandidates": [],
@@ -7870,7 +7870,11 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -2.5,
@@ -7940,7 +7944,7 @@
      "id": "street:guillermo",
      "name": "Calle Guillermo",
      "kind": "street",
-     "gap": 3.6
+     "gap": 3.7
     }
    ],
    "inViewCandidates": [
@@ -12030,7 +12034,12 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing",
+    "main_pool_lawn.json:lawn-inner-path"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -12.7,
@@ -12052,7 +12061,7 @@
      "id": "street:guillermo",
      "name": "Calle Guillermo",
      "kind": "street",
-     "gap": 2.8
+     "gap": 2.9
     },
     {
      "id": "area:paseo",
@@ -12062,7 +12071,12 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing",
+    "main_pool_lawn.json:lawn-inner-path"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -10.7,
@@ -12085,12 +12099,6 @@
      "name": "Paseo · Senda Litoral",
      "kind": "area",
      "gap": 0.8
-    },
-    {
-     "id": "street:guillermo",
-     "name": "Calle Guillermo",
-     "kind": "street",
-     "gap": 4.1
     }
    ],
    "inViewCandidates": [
@@ -12104,7 +12112,8 @@
     "seafront_fence.json:guillermo-beach-gate",
     "seafront_fence.json:guillermo-ramp-wall",
     "seafront_fence.json:main-pool-lawn-railing",
-    "main_pool_lawn.json:lawn-flagstone-apron"
+    "main_pool_lawn.json:lawn-flagstone-apron",
+    "main_pool_lawn.json:lawn-inner-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -12262,7 +12271,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0
+     "gap": 1.9
     },
     {
      "id": "area:beach",
@@ -12313,7 +12322,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0
+     "gap": 0.9
     },
     {
      "id": "area:beach",
@@ -12364,7 +12373,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0
+     "gap": 2.4
     },
     {
      "id": "area:barraka",
@@ -12435,7 +12444,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 5.1
+     "gap": 3.5
     }
    ],
    "inViewCandidates": [
@@ -12476,7 +12485,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 0.7
+     "gap": 0.2
     },
     {
      "id": "area:barraka",
@@ -13322,7 +13331,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 1.8
+     "gap": 1.1
     },
     {
      "id": "area:beach",
@@ -16898,7 +16907,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 7.6
+     "gap": 10.5
     },
     {
      "id": "area:barraka",
@@ -16921,7 +16930,8 @@
     "main_pool_lawn.json:lawn-pink-paths",
     "main_pool_lawn.json:lawn-flagstone-apron",
     "main_pool_lawn.json:lawn-white-rooms",
-    "main_pool_lawn.json:lawn-sea-hedge"
+    "main_pool_lawn.json:lawn-sea-hedge",
+    "main_pool_lawn.json:lawn-kiosk-plain"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -16948,7 +16958,11 @@
      "angleOffset": 9.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -6.0,
@@ -17008,7 +17022,8 @@
    ],
    "citedBy": [
     "main_pool_lawn.json:lawn-pink-paths",
-    "main_pool_lawn.json:lawn-white-rooms"
+    "main_pool_lawn.json:lawn-white-rooms",
+    "main_pool_lawn.json:lawn-kiosk-plain"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -17032,7 +17047,9 @@
     "main_pool_lawn.json:lawn-pink-paths",
     "main_pool_lawn.json:lawn-flagstone-apron",
     "main_pool_lawn.json:lawn-white-rooms",
-    "main_pool_lawn.json:lawn-sea-hedge"
+    "main_pool_lawn.json:lawn-sea-hedge",
+    "main_pool_lawn.json:lawn-inner-path",
+    "main_pool_lawn.json:lawn-kiosk-plain"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -17170,7 +17187,12 @@
      "angleOffset": 8.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_frontage.json:paseo-painted-crossing",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 1.0,
@@ -17212,7 +17234,12 @@
      "angleOffset": 19.5
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "barraka_frontage.json:paseo-painted-crossing",
+    "seafront_fence.json:guillermo-beach-gate",
+    "seafront_fence.json:guillermo-ramp-wall",
+    "seafront_fence.json:main-pool-lawn-railing"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": 0.2,
@@ -17311,7 +17338,7 @@
      "id": "area:paseo",
      "name": "Paseo · Senda Litoral",
      "kind": "area",
-     "gap": 11.0
+     "gap": 10.6
     },
     {
      "id": "area:beach",

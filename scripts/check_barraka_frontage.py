@@ -56,7 +56,13 @@ assert clear(lounge['menuStand'], .3) and clear(lounge['easel'], .55)
 
 # Crossing: flush on the paving, spanning its width, on the paseo centre line.
 assert abs(to_paseo(crossing['at'])) < .3, 'crossing sits on the mapped paseo line'
-assert abs(crossing['width'] - sk['seafront']['paseo']['width']) < .2 and .8 <= crossing['depth'] <= 1.6
+assert abs(crossing['length'] - sk['seafront']['paseo']['width']) < .2 and 2.8 <= crossing['span'] <= 4.0, 'bars run across the full paving'
+# Immediately outside the gate (Dave, 2026-11-13): the band is centred on the gateway opening.
+fence = json.loads((ROOT / 'data/seafront_fence.json').read_text())
+_t = math.radians(26)
+_gate = (fence['gate']['at'][0] * math.cos(_t) + fence['gate']['at'][1] * math.sin(_t), -fence['gate']['at'][0] * math.sin(_t) + fence['gate']['at'][1] * math.cos(_t))
+_off = ((_gate[0] - crossing['at'][0]) * crossing['along'][0] + (_gate[1] - crossing['at'][1]) * crossing['along'][1])
+assert abs(_off) < .2 and math.dist(_gate, crossing['at']) < 2.0, f'crossing is not right outside the gate ({_off:.2f} m along)'
 assert crossing['bars'] == 8
 assert abs(math.hypot(*crossing['along']) - 1) < .01
 

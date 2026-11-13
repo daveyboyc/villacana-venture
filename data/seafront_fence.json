@@ -3,18 +3,23 @@
   "evidence": [
     "IMG_2226.jpg",
     "IMG_2227.jpg",
-    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
-    "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+    "IMG_2484.jpg",
+    "IMG_2485.jpg",
     "IMG_2488.jpg",
+    "IMG_2600.jpg",
+    "IMG_2601.jpg",
+    "IMG_2602.jpg",
     "IMG_2604.jpg",
     "IMG_2609.jpg",
     "IMG_2610.jpg",
     "IMG_2630.jpg",
     "IMG_2631.jpg",
-    "IMG_2484.jpg",
-    "IMG_2602.jpg",
     "IMG_2759.jpg",
-    "IMG_2760.jpg"
+    "IMG_2760.jpg",
+    "IMG_2766.jpg",
+    "IMG_2767.jpg",
+    "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
+    "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
   ],
   "trust": "Dave, 2026-10-21: a fence and a coastal gate run in front of the slope, separating Villacana from Barraka beach. IMG_2226 (from the beach, looking north-west) shows, west to east, a white wall with a tiled panel, a white arched gateway at paseo level, a short white wall and white railings along the lawn up to Barraka's raised deck; IMG_2227 shows the white tiled wall where the sandstone wall ends; apple-maps/11 shows the gateway at the bottom of the lane with the zebra crossing in front. Positions follow the paseo line (plan about 1-2 m); the gateway sits where the lane meets it. Heights (wall 1.5 m, railings 1.1 m, arch 2.4 m), the 1.4 m opening and the bar spacing are read by eye, not measured. The gateway opening stays clear. IMG_2602 and IMG_2759 show a dark iron leaf, drawn swung open. Dave, 2026-10-27: the beach entrance is not at the end of the slope but to its left looking at the beach. Moved 7.5 m north-east along the same line to the dark gateway the aerial shows at the lawn's south-west corner (about scene -6, 131.5), which also agrees within compass error with the arch's bearing in IMG_2226; the wall is split into 1.5 m runs so it steps down the ramp. Ground there from the laser survey (main_pool.json seafront profile). 2026-11-04 (barraka-frontage-paseo-furniture): close photos from the paseo (IMG_2604, 2609, 2610, 2630, 2631; also IMG_2484 for the mesh-panel stretch near the gateway) show the lawn railing as dark green vertical bars with square posts on a low sandstone-block plinth, not the white railings read from the beach at 50 m in IMG_2226 (the pale line there is probably the white pool-side building). Only the finish changed (bars, posts and rail now dark green, plinth sandstone); heights (railing 1.1 m, plinth 0.3 m; the photos suggest the plinth is nearer 0.5 m) and collision are unchanged. 13 Nov: the railing had been a straight chord from the gateway to Barraka's corner, across the grass, so the wall enclosed the pool and cut the private lawn in two. IMG_2760 looks across that lawn to a fence at the far edge, with Barraka beyond; IMG_2604, IMG_2611, IMG_2630 and IMG_2610 show the same green fence following the path. The line now follows the path's lawn edge, traced from the aerial, and the pool stays open to the lawn.",
   "wall": {
@@ -40,6 +45,10 @@
     "id": "guillermo-ramp-wall",
     "points": [
       [
+        -71.17,
+        120.59
+      ],
+      [
         -69.0,
         119.83
       ],
@@ -56,12 +65,13 @@
         118.53
       ],
       [
-        -64.08,
-        118.09
+        -64.014,
+        118.067
       ]
     ],
     "height": 1.5,
-    "thickness": 0.25
+    "thickness": 0.25,
+    "note": "Dave, 2026-11-13: the slope down has no opening; the only way out is the gate. The ramp wall now starts where the corner wall ends, closing the 2.3 m gap the foot of Calle Guillermo ran out through. IMG_2600 and IMG_2601 show the inner tiled path from the lane's foot ending at a hedge and a mesh fence, not at an opening."
   },
   "gate": {
     "id": "guillermo-beach-gate",
@@ -73,18 +83,24 @@
       0.943,
       -0.332
     ],
-    "opening": 1.4,
+    "opening": 1.25,
     "pier": 0.45,
-    "depth": 0.35,
-    "spring": 1.7,
-    "height": 2.6
+    "depth": 0.45,
+    "spring": 2.1,
+    "height": 2.85,
+    "hood": {
+      "rise": 0.32,
+      "lintel": 0.22,
+      "cornice": 0.07
+    },
+    "note": "Shape from IMG_2602 (inside), IMG_2766 (paseo) and IMG_2485 (close): two square white piers, a rectangular opening about 1.25 m wide and 2.1 m high with a black iron leaf with ring motifs, a flat moulded lintel and above it a shallow segmental hood with a projecting cornice, about 2.85 m at its crown; the COMUNIDAD VILLACANA sign is on the paseo face of the wall beside it. Sizes by eye against the 2 m leaf (2026-11-13); it replaces a round-arched slab."
   },
   "stub": {
     "id": "guillermo-gate-east-wall",
     "points": [
       [
-        -61.91,
-        117.33
+        -61.986,
+        117.353
       ],
       [
         -59.08,
@@ -97,20 +113,62 @@
   "railing": {
     "id": "main-pool-lawn-railing",
     "points": [
-      [-59.08, 116.33],
-      [-57.19, 115.61],
-      [-55.97, 113.92],
-      [-53.21, 113.52],
-      [-51.48, 113.4],
-      [-49.22, 112.46],
-      [-46.21, 111.58],
-      [-44.53, 111.23],
-      [-42.95, 110.91],
-      [-40.08, 110.21],
-      [-37.93, 109.35],
-      [-36.56, 108.29],
-      [-35.05, 106.45],
-      [-33.49, 104.63]
+      [
+        -59.08,
+        116.33
+      ],
+      [
+        -57.19,
+        115.61
+      ],
+      [
+        -55.97,
+        113.92
+      ],
+      [
+        -53.21,
+        113.52
+      ],
+      [
+        -51.48,
+        113.4
+      ],
+      [
+        -49.22,
+        112.46
+      ],
+      [
+        -46.21,
+        111.58
+      ],
+      [
+        -44.53,
+        111.23
+      ],
+      [
+        -42.95,
+        110.91
+      ],
+      [
+        -40.08,
+        110.21
+      ],
+      [
+        -37.93,
+        109.35
+      ],
+      [
+        -36.56,
+        108.29
+      ],
+      [
+        -35.05,
+        106.45
+      ],
+      [
+        -33.49,
+        104.63
+      ]
     ],
     "height": 1.1,
     "plinth": 0.3,

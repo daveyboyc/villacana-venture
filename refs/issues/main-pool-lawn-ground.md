@@ -12,15 +12,21 @@ Task `main-pool-lawn-ground` · area **Main pool** · priority P1 · detail
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2764.jpg`: Main pool lawn and the wave-roofed building (ground — pin ±3.8 m; looks at tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond)
-- `public/photos-ref/IMG_2765.jpg`: Main pool lawn and wave-roofed building, second view (ground — pin ±3.9 m; looks at pink path to the main pool, the tall palm at the pool corner and the wave-roofed building)
+- `public/photos-ref/IMG_2485.jpg`: Comunidad Villacana gate sign at the end of Calle Guillermo (ground — pin ±2.6 m; looks at Comunidad Villacana sign on the Guillermo gate wall)
+- `public/photos-ref/IMG_2600.jpg`: From the foot of Calle Guillermo: tiled path down past the white wall towards the beach (ground — pin ±2.3 m; looks at The lawn corner and fence at the foot of the path)
+- `public/photos-ref/IMG_2601.jpg`: Tiled landing at the foot of the lane with hedge and green fence to the beach (ground — pin ±2.3 m; looks at the inner tiled path ending at a lawn strip, the hedge and the mesh fence)
+- `public/photos-ref/IMG_2602.jpg`: Arched white gate pillar with iron gate, signs and bollard light at the lawn corner (ground — pin ±2.3 m; looks at coastal lawn gate pier and iron gate)
+- `public/photos-ref/IMG_2603.jpg`: Pink lawn path with bollard lights and a pool-side white curved-roof building (ground — pin ±2.2 m; looks at pink lawn path to the main pool with bollards and a slatted bin beside it)
 - `public/photos-ref/IMG_2759.jpg`: Lawn path to a white gateway towards the sea (ground — pin ±18.5 m; looks at arched beach gateway at the end of the pink path, bin and bollard beside it)
 - `public/photos-ref/IMG_2761.jpg`: Lawn and pink path towards the seafront railing (ground — pin ±2.9 m; looks at lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing)
-- `public/photos-ref/IMG_2603.jpg`: Pink lawn path with bollard lights and a pool-side white curved-roof building (ground — pin ±2.2 m; looks at pink lawn path to the main pool with bollards and a slatted bin beside it)
+- `public/photos-ref/IMG_2762.jpg`: Strelitzia in a white walled corner on the lawn (ground — pin ±2.6 m; looks at strelitzia and silver bush in a white walled corner on the lawn)
+- `public/photos-ref/IMG_2763.jpg`: Pink path curving round a white wall to the sea fence (ground — pin ±2.9 m; looks at flagstone path between the hedge and the round white wall, mesh sea fence beyond)
+- `public/photos-ref/IMG_2764.jpg`: Main pool lawn and the wave-roofed building (ground — pin ±3.8 m; looks at tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond)
+- `public/photos-ref/IMG_2765.jpg`: Main pool lawn and wave-roofed building, second view (ground — pin ±3.9 m; looks at pink path to the main pool, the tall palm at the pool corner and the wave-roofed building)
+- `public/photos-ref/IMG_2766.jpg`: Painted crossing and blue plumbago at a gated wall (ground — pin ±2.8 m; looks at the beach gateway with plumbago either side and the painted crossing in front of it)
+- `public/photos-ref/IMG_2767.jpg`: Painted crossing at the gated wall, looking south-west (ground — pin ±2.5 m; looks at the painted crossing right outside the beach gateway, the paseo running on south-west)
 - `public/photos-ref/IMG_2775.jpg`: Lane down to the pool building with slot drains (ground — pin ±4.7 m; looks at Enrique's shop front with three blue awnings at the head of the steps)
 - `public/photos-ref/IMG_2776.jpg`: Steps and ramp at the foot of the lane by the pool building (ground — pin ±4.7 m; looks at marble-nosed blue-tiled steps up to Enrique's shop beside the lantana planter)
-- `public/photos-ref/IMG_2763.jpg`: Pink path curving round a white wall to the sea fence (ground — pin ±2.9 m; looks at flagstone path between the hedge and the round white wall, mesh sea fence beyond)
-- `public/photos-ref/IMG_2762.jpg`: Strelitzia in a white walled corner on the lawn (ground — pin ±2.6 m; looks at strelitzia and silver bush in a white walled corner on the lawn)
 - `public/photos-ref/IMG_2777.jpg`: Marble-edged steps down to the main pool deck (ground — pin ±2.0 m; looks at marble nosing and blue risers at the top of Enrique's steps, terracotta paving and the pool below)
 
 ## Build

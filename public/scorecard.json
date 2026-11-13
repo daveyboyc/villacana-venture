@@ -95,7 +95,7 @@
    "..............gggggjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmmmllllllllllllllllllllllll",
    "...............gggggjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmmlllllllllllllllllllllllll",
    "...............ggggggjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmmllllllllllllllllllllllllll",
-   "................gggggjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmlllllllllllllllllllllllllll",
+   "................gggggjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmlllllllllllllllllllllllllll",
    "................ggggggjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmmmmllllllllllllllllllllllllllll",
    ".................gggggjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmmmmlllllllllllllllllllllllllllll",
    ".................ggggggjkkkkkkkkkkkkkkkkkkkkkkkkkkkkmmmmmmllllllllllllllllllllllllllllll",
@@ -487,8 +487,8 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 9,
-     "differs": 11,
+     "matches": 11,
+     "differs": 14,
      "not-comparable": 7
     },
     "camerasSolved": 0,
@@ -501,9 +501,9 @@
     "generated": 35
    },
    "placement": {
-    "features": 12,
+    "features": 17,
     "verified": 0,
-    "disputed": 7
+    "disputed": 9
    },
    "discrepancies": [
     {
@@ -519,22 +519,6 @@
      "feature": "main_pool_lawn.json:lawn-pink-paths"
     },
     {
-     "id": "photo-discrepancy:f1d1806b8b78bea2",
-     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
-    },
-    {
-     "id": "photo-discrepancy:58d14a627ceb2ff9",
-     "feature": "main_pool_lawn.json:lawn-bollards-bins"
-    },
-    {
-     "id": "photo-discrepancy:4187d7425a4ae65c",
-     "feature": "main_pool_lawn.json:lawn-white-rooms"
-    },
-    {
-     "id": "photo-discrepancy:f0c43f8955aabe66",
-     "feature": "main_pool_lawn.json:lawn-white-rooms"
-    },
-    {
      "id": "photo-discrepancy:22a1de7708736762",
      "feature": "main_pool_lawn.json:enrique-shop-front"
     },
@@ -545,10 +529,42 @@
     {
      "id": "photo-discrepancy:a8b13c9a85961a47",
      "feature": "main_pool_lawn.json:enrique-step-finish"
+    },
+    {
+     "id": "photo-discrepancy:58d14a627ceb2ff9",
+     "feature": "main_pool_lawn.json:lawn-bollards-bins"
+    },
+    {
+     "id": "photo-discrepancy:f0c43f8955aabe66",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:4187d7425a4ae65c",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:58170dc8a5dd3aaa",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
+     "id": "photo-discrepancy:4d29ca0cdc7d5d41",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
+     "id": "photo-discrepancy:38c5293e530b2fe3",
+     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
+    },
+    {
+     "id": "photo-discrepancy:10853d8a9aaafed0",
+     "feature": "main_pool_lawn.json:lawn-inner-path"
+    },
+    {
+     "id": "photo-discrepancy:eafe6b00d7e07594",
+     "feature": "main_pool_lawn.json:lawn-inner-path"
     }
    ],
    "tasks": {
-    "open": 3,
+    "open": 4,
     "inProgress": 5,
     "titles": [
      "Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall",
@@ -557,9 +573,9 @@
     ]
    },
    "confidence": {
-    "photographed": 0,
-    "estimated": 12,
-    "inferred": 0,
+    "photographed": 1,
+    "estimated": 15,
+    "inferred": 1,
     "registry": 0,
     "gaps": 2
    },
@@ -568,13 +584,77 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "How sure: 0 photographed, 12 estimated, 0 inferred, 2 known gaps.",
-    "Placement: 0 of 12 features verified, 10 open discrepancies."
+    "How sure: 1 photographed, 15 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 17 features verified, 14 open discrepancies."
    ],
    "light": {
-    "colour": "amber",
-    "headline": "Photos in: 2 photo requests answered, waiting for review, 8 build tasks open, 10 open discrepancies",
+    "colour": "red",
+    "headline": "Photos needed: 4 spots",
     "requests": [
+     {
+      "id": "guillermo-foot-closure",
+      "at": [
+       -12.3,
+       137.4
+      ],
+      "look": [
+       -10.3,
+       139.0
+      ],
+      "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
+      "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "enrique-shop-front-square",
+      "at": [
+       -34.5,
+       104.0
+      ],
+      "look": [
+       -35.7,
+       96.2
+      ],
+      "ask": "From Calle Guillermo by the slot drain: Enrique's shop front square-on with its three awnings, and the short marble-nosed flight up to it, then the top of the long flight down to the pool deck.",
+      "why": "Task enrique-shop-storey: the storey the awnings hang on is not modelled, and the lane photos are oblique",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "kiosk-faces",
+      "at": [
+       -7.5,
+       126.5
+      ],
+      "look": [
+       -11.0,
+       131.0
+      ],
+      "ask": "The white kiosk at the lawn's sea corner from the lawn: its north-east face square-on (doors, and where the short path from the lawn ends), its north corner with the strelitzia, and its round south-east end with the passage to the gate.",
+      "why": "The kiosk is now plain white as photographed, but its doors are not modelled and the strelitzia corner and the short left path are placed by eye against its registry outline",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "lawn-palm-foot",
+      "at": [
+       -19.5,
+       108.0
+      ],
+      "look": [
+       -23.4,
+       106.0
+      ],
+      "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
+      "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
      {
       "id": "beach-gateway",
       "at": [
@@ -593,7 +673,9 @@
        "IMG_2602.jpg",
        "IMG_2603.jpg",
        "IMG_2764.jpg",
-       "IMG_2765.jpg"
+       "IMG_2765.jpg",
+       "IMG_2766.jpg",
+       "IMG_2767.jpg"
       ]
      },
      {
@@ -1386,9 +1468,9 @@
      "over50cm": 0.01
     },
     "streets": {
-     "measured": 5,
-     "worstMiss": 1.92,
-     "worstStreet": "Calle Guillermo"
+     "measured": 4,
+     "worstMiss": 0.25,
+     "worstStreet": "Calle Jorge"
     },
     "poolDecks": [],
     "photoSteps": null,
@@ -1404,7 +1486,7 @@
     "placed": 149,
     "checks": {
      "matches": 26,
-     "differs": 10,
+     "differs": 13,
      "not-comparable": 11
     },
     "camerasSolved": 0,
@@ -1453,14 +1535,14 @@
     "estimated": 16,
     "inferred": 4,
     "registry": 0,
-    "gaps": 2
+    "gaps": 3
    },
    "status": [
-    "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
+    "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.25 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
     "Photos: 149, 149 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
-    "How sure: 1 photographed, 16 estimated, 4 inferred, 2 known gaps.",
+    "How sure: 1 photographed, 16 estimated, 4 inferred, 3 known gaps.",
     "Placement: 0 of 21 features verified, 4 open discrepancies."
    ],
    "light": {
@@ -1726,7 +1808,7 @@
     "placed": 55,
     "checks": {
      "matches": 0,
-     "differs": 0,
+     "differs": 3,
      "not-comparable": 21
     },
     "camerasSolved": 0,
@@ -1739,9 +1821,9 @@
     "generated": 0
    },
    "placement": {
-    "features": 13,
+    "features": 12,
     "verified": 0,
-    "disputed": 2
+    "disputed": 3
    },
    "discrepancies": [
     {
@@ -1751,6 +1833,14 @@
     {
      "id": "barraka-boardwalk-flank",
      "feature": "barraka_boardwalk.json:barraka-boardwalk"
+    },
+    {
+     "id": "photo-discrepancy:58170dc8a5dd3aaa",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
+     "id": "photo-discrepancy:4d29ca0cdc7d5d41",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
     }
    ],
    "tasks": {
@@ -1764,7 +1854,7 @@
    },
    "confidence": {
     "photographed": 0,
-    "estimated": 12,
+    "estimated": 11,
     "inferred": 1,
     "registry": 0,
     "gaps": 5
@@ -1773,12 +1863,12 @@
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 57, 55 placed; no camera solved.",
-    "How sure: 0 photographed, 12 estimated, 1 inferred, 5 known gaps.",
-    "Placement: 0 of 13 features verified, 2 open discrepancies."
+    "How sure: 0 photographed, 11 estimated, 1 inferred, 5 known gaps.",
+    "Placement: 0 of 12 features verified, 4 open discrepancies."
    ],
    "light": {
     "colour": "amber",
-    "headline": "Photos in: 1 photo request answered, waiting for review, 5 build tasks open, 2 open discrepancies",
+    "headline": "Photos in: 1 photo request answered, waiting for review, 5 build tasks open, 4 open discrepancies",
     "requests": [
      {
       "id": "beach-verge",
@@ -1835,8 +1925,8 @@
     "tagged": 58,
     "placed": 57,
     "checks": {
-     "matches": 1,
-     "differs": 3,
+     "matches": 3,
+     "differs": 6,
      "not-comparable": 19
     },
     "camerasSolved": 0,
@@ -1849,7 +1939,7 @@
     "generated": 111
    },
    "placement": {
-    "features": 14,
+    "features": 15,
     "verified": 0,
     "disputed": 0
    },
@@ -1864,19 +1954,19 @@
     ]
    },
    "confidence": {
-    "photographed": 4,
+    "photographed": 5,
     "estimated": 10,
     "inferred": 0,
     "registry": 0,
-    "gaps": 1
+    "gaps": 3
    },
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
     "Photos: 58, 57 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
-    "How sure: 4 photographed, 10 estimated, 0 inferred, 1 known gap.",
-    "Placement: 0 of 14 features verified."
+    "How sure: 5 photographed, 10 estimated, 0 inferred, 3 known gaps.",
+    "Placement: 0 of 15 features verified."
    ],
    "light": {
     "colour": "red",
@@ -1958,8 +2048,8 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 46,
-     "differs": 26,
+     "matches": 48,
+     "differs": 30,
      "not-comparable": 57
     },
     "camerasSolved": 7,
@@ -1984,9 +2074,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 425,
+    "features": 427,
     "verified": 0,
-    "disputed": 21
+    "disputed": 23
    },
    "discrepancies": [
     {
@@ -2094,22 +2184,6 @@
      "feature": "main_pool_lawn.json:lawn-pink-paths"
     },
     {
-     "id": "photo-discrepancy:f1d1806b8b78bea2",
-     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
-    },
-    {
-     "id": "photo-discrepancy:58d14a627ceb2ff9",
-     "feature": "main_pool_lawn.json:lawn-bollards-bins"
-    },
-    {
-     "id": "photo-discrepancy:4187d7425a4ae65c",
-     "feature": "main_pool_lawn.json:lawn-white-rooms"
-    },
-    {
-     "id": "photo-discrepancy:f0c43f8955aabe66",
-     "feature": "main_pool_lawn.json:lawn-white-rooms"
-    },
-    {
      "id": "photo-discrepancy:22a1de7708736762",
      "feature": "main_pool_lawn.json:enrique-shop-front"
     },
@@ -2120,10 +2194,42 @@
     {
      "id": "photo-discrepancy:a8b13c9a85961a47",
      "feature": "main_pool_lawn.json:enrique-step-finish"
+    },
+    {
+     "id": "photo-discrepancy:58d14a627ceb2ff9",
+     "feature": "main_pool_lawn.json:lawn-bollards-bins"
+    },
+    {
+     "id": "photo-discrepancy:f0c43f8955aabe66",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:4187d7425a4ae65c",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:58170dc8a5dd3aaa",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
+     "id": "photo-discrepancy:4d29ca0cdc7d5d41",
+     "feature": "seafront_fence.json:guillermo-beach-gate"
+    },
+    {
+     "id": "photo-discrepancy:38c5293e530b2fe3",
+     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
+    },
+    {
+     "id": "photo-discrepancy:10853d8a9aaafed0",
+     "feature": "main_pool_lawn.json:lawn-inner-path"
+    },
+    {
+     "id": "photo-discrepancy:eafe6b00d7e07594",
+     "feature": "main_pool_lawn.json:lawn-inner-path"
     }
    ],
    "tasks": {
-    "open": 42,
+    "open": 43,
     "inProgress": 47,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -2132,23 +2238,23 @@
     ]
    },
    "confidence": {
-    "photographed": 57,
+    "photographed": 59,
     "estimated": 123,
     "inferred": 12,
     "registry": 233,
-    "gaps": 21
+    "gaps": 24
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 57 photographed, 123 estimated, 12 inferred, 21 known gaps.",
-    "Placement: 0 of 425 features verified, 33 open discrepancies."
+    "How sure: 59 photographed, 123 estimated, 12 inferred, 24 known gaps.",
+    "Placement: 0 of 427 features verified, 37 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 24 spots",
+    "headline": "Photos needed: 28 spots",
     "requests": [
      {
       "id": "alberto",
@@ -2210,6 +2316,22 @@
       ],
       "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
       "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "guillermo-foot-closure",
+      "at": [
+       -12.3,
+       137.4
+      ],
+      "look": [
+       -10.3,
+       139.0
+      ],
+      "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
+      "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -2359,6 +2481,22 @@
       "photos": []
      },
      {
+      "id": "enrique-shop-front-square",
+      "at": [
+       -34.5,
+       104.0
+      ],
+      "look": [
+       -35.7,
+       96.2
+      ],
+      "ask": "From Calle Guillermo by the slot drain: Enrique's shop front square-on with its three awnings, and the short marble-nosed flight up to it, then the top of the long flight down to the pool deck.",
+      "why": "Task enrique-shop-storey: the storey the awnings hang on is not modelled, and the lane photos are oblique",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
       "id": "guillermo-patio-behind-wall",
       "at": [
        -29.3,
@@ -2434,6 +2572,38 @@
       ],
       "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
       "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "kiosk-faces",
+      "at": [
+       -7.5,
+       126.5
+      ],
+      "look": [
+       -11.0,
+       131.0
+      ],
+      "ask": "The white kiosk at the lawn's sea corner from the lawn: its north-east face square-on (doors, and where the short path from the lawn ends), its north corner with the strelitzia, and its round south-east end with the passage to the gate.",
+      "why": "The kiosk is now plain white as photographed, but its doors are not modelled and the strelitzia corner and the short left path are placed by eye against its registry outline",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "lawn-palm-foot",
+      "at": [
+       -19.5,
+       108.0
+      ],
+      "look": [
+       -23.4,
+       106.0
+      ],
+      "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
+      "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -2552,7 +2722,9 @@
        "IMG_2602.jpg",
        "IMG_2603.jpg",
        "IMG_2764.jpg",
-       "IMG_2765.jpg"
+       "IMG_2765.jpg",
+       "IMG_2766.jpg",
+       "IMG_2767.jpg"
       ]
      },
      {

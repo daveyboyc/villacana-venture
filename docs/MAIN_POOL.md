@@ -203,3 +203,34 @@ opens Inspect there).
 - **Enrique's awnings.** One two-sided panel (its lettering read mirrored from the lane side) is
   now the three lettered box awnings IMG_2775 shows, with menu boards and a lantern. The storey they
   hang on is not modelled, so they stand in the air (gap and task `enrique-shop-storey`).
+
+## The gate corner closed, the gate and crossing, the path on the aerial (2026-11-13)
+
+Dave: the slope down has no opening, you can only leave through the gate, and the zebra crossing is
+immediately outside the gate.
+
+- **Closed slope.** The corner wall ran to (-11.1, 139.6) and the ramp wall started at (-9.5, 138.0);
+  Calle Guillermo ran out through that 2.3 m gap onto the paseo. The ramp wall now starts where the
+  corner wall ends, Calle Guillermo ends inside at (-12.2, 137.4) (`data/street_layout.json`, patched
+  into `public/map/skeleton.json`), and the inner tiled path IMG_2600 and IMG_2601 show runs from its
+  foot along the inside of the wall to the gate (`main_pool_lawn.json` innerPath, terracotta squares).
+  `check_seafront_fence.py` now requires the closed boundary instead of the open lane foot, and the
+  layout browser test walks down the lane, along the inner path and out through the gate.
+- **Gate.** IMG_2602, IMG_2766 and IMG_2485 show square white piers, a rectangular opening with a
+  ring-pattern iron leaf, a moulded lintel and a shallow segmental hood with a cornice, and the
+  COMUNIDAD VILLACANA sign on the paseo face beside it; this replaces the round-arched slab. Opening
+  1.25 m, crown 2.85 m, by eye.
+- **Crossing.** The eight bars sit side by side along the paseo and each runs straight across it from
+  the gate threshold, centred on the opening (IMG_2766, IMG_2767); they were lengthwise and 0.7 m off.
+- **Path and palm against the aerial.** The georeferenced aerial shows the pink path as a 2.5 m brown
+  strip running straight from the gate to the pool's south-west corner; the model's line ran 5-6 m
+  further east. The tall palm's crown is just west of the path's end, so the path passes on the
+  palm's right seen from the gate, as the photos show; it moves there from 10 m away.
+- **Kiosk.** Its registry outline matches its pale flat roof on the aerial; the strelitzia and silver
+  bush that stood inside it are moved in front of its north corner (IMG_2762), the short left branch
+  ends at its north-east wall, and its roof is no longer a tiled terrace.
+- **Sand under the lawn.** Behind the lawn the land is lower than the paseo, so the seaside sand's
+  inland cells now also stay under the inland ground; they poked up through the lawn inside the gate.
+
+Photo requests for what is still by eye: `guillermo-foot-closure`, `lawn-palm-foot`, `kiosk-faces`,
+`enrique-shop-front-square`, and the open `beach-gateway`.

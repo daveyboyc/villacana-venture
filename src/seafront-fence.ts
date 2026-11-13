@@ -4,11 +4,13 @@ import { poolLevelPoint } from "./pool-levels";
 import data from "../data/seafront_fence.json";
 import type { Vec2 } from "./types";
 
-/** The white wall, arched gateway and railings between the big-pool lawn and the paseo (data/seafront_fence.json).
+/** The white wall, the gateway and railings between the big-pool lawn and the paseo (data/seafront_fence.json).
  * The railings are dark green bars on a low sandstone plinth, not white (IMG_2604, 2609, 2610, 2630, 2631). */
 const line = (points: number[][]): Vec2[] => points.map(poolLevelPoint).filter((p, i, all) => !i || Math.hypot(p[0] - all[i - 1][0], p[1] - all[i - 1][1]) > 0.05);
 const pieces = [data.wall, data.rampWall, data.stub, data.railing].map((f) => ({ ...f, line: line(f.points) }));
 const gateAt = poolLevelPoint(data.gate.at), gateAlong = (() => { const [x, z] = poolLevelPoint(data.gate.along); const n = Math.hypot(x, z); return [x / n, z / n] as Vec2; })();
+/** The beach gateway in world metres: its centre and the direction along the boundary (the sea is to the right of it). */
+export const beachGate = { at: gateAt, along: gateAlong };
 
 function strip(a: Vec2, b: Vec2, thickness: number): Vec2[] {
   const length = Math.hypot(b[0] - a[0], b[1] - a[1]), nx = (b[1] - a[1]) / length * thickness / 2, nz = -(b[0] - a[0]) / length * thickness / 2;
@@ -57,32 +59,56 @@ export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: nu
   });
   const barMesh = new THREE.InstancedMesh(new THREE.BoxGeometry(0.025, 1, 0.025), paint, bars.length);
   bars.forEach((m, i) => barMesh.setMatrixAt(i, m)); barMesh.castShadow = true; group.add(barMesh);
-  // The arched gateway: one white slab with a round-headed opening, at paseo level.
-  const g = data.gate, outer = g.opening / 2 + g.pier, r = g.opening / 2;
-  // The slab runs 0.2 m into the ground so the opening's foot never shares an edge with its outline.
-  const shape = new THREE.Shape([new THREE.Vector2(-outer, -0.2), new THREE.Vector2(outer, -0.2), new THREE.Vector2(outer, g.height), new THREE.Vector2(-outer, g.height)]);
-  const hole = new THREE.Path(); hole.moveTo(-r, -0.1); hole.lineTo(-r, g.spring); hole.absarc(0, g.spring, r, Math.PI, 0, true); hole.lineTo(r, -0.1); hole.lineTo(-r, -0.1);
-  shape.holes.push(hole);
-  const arch = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth: g.depth, bevelEnabled: false }).translate(0, 0, -g.depth / 2), white);
+  // The gateway (IMG_2602, IMG_2766, IMG_2485): two square white piers either side of a rectangular
+  // opening, a flat moulded lintel over it and a shallow segmental hood with a projecting cornice above.
+  const g = data.gate, hood = g.hood, r = g.opening / 2, outer = r + g.pier;
+  const arch = new THREE.Group(); arch.name = g.id;
   arch.position.set(gateAt[0], groundAt(...gateAt), gateAt[1]); arch.rotation.y = -Math.atan2(gateAlong[1], gateAlong[0]);
-  arch.name = g.id; arch.castShadow = arch.receiveShadow = true; group.add(arch);
-  // IMG_2602 and IMG_2759 show a dark iron leaf in the arch. It is swung open so the way through stays clear.
+  const part = (geometry: THREE.BufferGeometry, x: number, y: number, z = 0) => {
+    const mesh = new THREE.Mesh(geometry, white); mesh.position.set(x, y, z); mesh.castShadow = mesh.receiveShadow = true; arch.add(mesh); return mesh;
+  };
+  // Piers run 0.2 m into the ground so their feet never show an edge on sloping paving.
+  for (const side of [-1, 1]) part(new THREE.BoxGeometry(g.pier, g.spring + 0.2, g.depth), side * (r + g.pier / 2), (g.spring - 0.2) / 2);
+  part(new THREE.BoxGeometry(2 * outer, hood.lintel, g.depth), 0, g.spring + hood.lintel / 2);
+  part(new THREE.BoxGeometry(2 * outer + 2 * hood.cornice, 0.06, g.depth + 2 * hood.cornice), 0, g.spring + hood.lintel + 0.03);
+  // The hood: a segment of a circle through both ends of the cornice, rising `rise` at the middle.
+  const span = outer + hood.cornice, chord = span, sag = hood.rise, radius = (chord * chord + sag * sag) / (2 * sag), hoodBase = g.spring + hood.lintel + 0.06;
+  const sweep = Math.asin(chord / radius), seg = new THREE.Shape();
+  seg.moveTo(-span, 0); seg.absarc(0, sag - radius, radius, Math.PI / 2 + sweep, Math.PI / 2 - sweep, true); seg.lineTo(-span, 0);
+  part(new THREE.ExtrudeGeometry(seg, { depth: g.depth, bevelEnabled: false }).translate(0, 0, -g.depth / 2), 0, hoodBase);
+  const lip = new THREE.Shape(), out = span + 0.05, lipR = radius + 0.05;
+  lip.absarc(0, sag - radius, lipR, Math.PI / 2 + Math.asin(out / lipR), Math.PI / 2 - Math.asin(out / lipR), true);
+  lip.absarc(0, sag - radius, radius - 0.02, Math.PI / 2 - sweep, Math.PI / 2 + sweep, false);
+  part(new THREE.ExtrudeGeometry(lip, { depth: g.depth + 0.1, bevelEnabled: false }).translate(0, 0, -(g.depth + 0.1) / 2), 0, hoodBase);
+  group.add(arch);
+  // IMG_2602 and IMG_2766 show a black iron leaf of vertical bars with ring motifs. It is swung open so the way through stays clear.
   const iron = new THREE.MeshStandardMaterial({ color: "#1c2420", roughness: 0.45, metalness: 0.55 });
   const leaf = new THREE.Group(); leaf.name = "guillermo-beach-gate-leaf";
-  leaf.position.set(-r + 0.06, 0, 0); leaf.rotation.y = 1.15;
-  const span = g.opening - 0.14;
+  leaf.position.set(-r + 0.04, 0, 0); leaf.rotation.y = 1.15;
+  const width = g.opening - 0.08, tall = g.spring - 0.06;
   for (let i = 0; i < 7; i++) {
-    const bar = new THREE.Mesh(new THREE.BoxGeometry(0.014, g.spring - 0.2, 0.014), iron);
-    bar.position.set(((i + 0.5) / 7) * span, g.spring / 2, 0); leaf.add(bar);
+    const bar = new THREE.Mesh(new THREE.BoxGeometry(0.014, tall - 0.1, 0.014), iron);
+    bar.position.set(((i + 0.5) / 7) * width, tall / 2, 0); leaf.add(bar);
   }
-  for (const y of [0.16, g.spring - 0.12]) {
-    const rail = new THREE.Mesh(new THREE.BoxGeometry(span, 0.02, 0.02), iron);
-    rail.position.set(span / 2, y, 0); leaf.add(rail);
+  for (const y of [0.08, tall * 0.5, tall - 0.04]) {
+    const rail = new THREE.Mesh(new THREE.BoxGeometry(width, 0.025, 0.025), iron);
+    rail.position.set(width / 2, y, 0); leaf.add(rail);
   }
-  for (const [x, y] of [[span * 0.35, g.spring * 0.55], [span * 0.65, g.spring * 0.42]] as [number, number][]) {
-    const ring = new THREE.Mesh(new THREE.TorusGeometry(0.075, 0.008, 6, 14), iron);
-    ring.position.set(x, y, 0); leaf.add(ring);
+  for (const [x, y] of [[0.3, 0.72], [0.7, 0.72], [0.5, 0.85], [0.3, 0.28], [0.7, 0.28]] as [number, number][]) {
+    const ring = new THREE.Mesh(new THREE.TorusGeometry(0.07, 0.008, 6, 14), iron);
+    ring.position.set(x * width, y * tall, 0); leaf.add(ring);
   }
+  // The COMUNIDAD VILLACANA ZONA PRIVADA sign on the paseo face of the wall beside the gate (IMG_2485).
+  const c = document.createElement("canvas"); c.width = 256; c.height = 160;
+  const ctx = c.getContext("2d")!;
+  ctx.fillStyle = "#f6f6f2"; ctx.fillRect(0, 0, 256, 160);
+  ctx.fillStyle = "#c8303a"; ctx.beginPath(); ctx.moveTo(196, 14); ctx.lineTo(214, 40); ctx.lineTo(178, 40); ctx.fill();
+  ctx.fillStyle = "#1b1b1b"; ctx.font = "bold 26px serif"; ctx.textAlign = "center";
+  ctx.fillText("COMUNIDAD", 128, 76); ctx.fillText("VILLACANA", 128, 108); ctx.font = "16px serif"; ctx.fillText("ZONA PRIVADA", 128, 136);
+  const sign = new THREE.Mesh(new THREE.PlaneGeometry(0.75, 0.47), new THREE.MeshStandardMaterial({ map: Object.assign(new THREE.CanvasTexture(c), { colorSpace: THREE.SRGBColorSpace }), roughness: 0.5 }));
+  // The paseo face is the side away from the lawn: +z in the gateway's frame points to the sea.
+  sign.position.set(outer + 0.75, 1.0, data.stub.thickness / 2 + 0.012); sign.name = "comunidad-villacana-sign";
+  arch.add(sign);
   arch.add(leaf);
   scene.add(group);
 }

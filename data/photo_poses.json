@@ -3522,15 +3522,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -5.3,
+    "x": -6.28,
     "y": -0.73,
-    "z": 130.6,
+    "z": 130.7,
     "yaw": 343.0,
     "pitch": 6.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "photo content: standing on the pink path just inland of the slot drain (bottom right), the pin (+-3.8 m) fell inside the stub wall by the gateway; heading kept; eye 1.5 m above the surveyed ground (-2.23 m), 2026-11-13."
+   "initialBasis": "photo content: on the pink path (now on the aerial strip) about 2.5 m in from the gateway, the slot drain at the bottom right; eye 1.5 m above the ground there (-2.23 m), 2026-11-13."
   },
   "IMG_2774.jpg": {
    "image": [
@@ -3556,15 +3556,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -5.3,
+    "x": -6.28,
     "y": -0.73,
-    "z": 130.6,
+    "z": 130.7,
     "yaw": 326,
     "pitch": 0.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "photo content: the same spot on the pink path as IMG_2764 (same pin, inside the stub wall); heading kept; eye 1.5 m above the surveyed ground (-2.23 m), 2026-11-13."
+   "initialBasis": "photo content: the same spot as IMG_2764; eye 1.5 m above the ground there (-2.23 m), 2026-11-13."
   },
   "IMG_2603.jpg": {
    "image": [
@@ -3573,15 +3573,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -5.2,
+    "x": -6.62,
     "y": -0.73,
-    "z": 130.0,
+    "z": 129.98,
     "yaw": 348,
     "pitch": 0.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "photo content: standing on the pink path a step north of IMG_2764, where a branch forks off; heading kept; eye 1.5 m above the surveyed ground (-2.23 m), 2026-11-13."
+   "initialBasis": "photo content: on the pink path a step on from IMG_2764, where the left branch forks off; eye 1.5 m above the ground there (-2.23 m), 2026-11-13."
   },
   "IMG_2759.jpg": {
    "image": [
@@ -3590,15 +3590,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -8.0,
-    "y": -0.73,
-    "z": 118.5,
-    "yaw": 168.7,
+    "x": -12.56,
+    "y": -0.76,
+    "z": 119.9,
+    "yaw": 150.8,
     "pitch": 0.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "photo content: on the pink lawn path about 15 m short of the arched beach gateway, which is straight ahead (the pin is +-18.5 m and lies off the path); facing the gateway; eye 1.5 m above the surveyed ground (-2.23 m) there, 2026-11-13."
+   "initialBasis": "photo content: on the pink path about 15 m from the gateway, looking straight down it to the gate (pin +-18.5 m); eye 1.5 m above the ground there (-2.26 m), 2026-11-13."
   },
   "IMG_2761.jpg": {
    "image": [
@@ -3607,15 +3607,15 @@
    ],
    "points": [],
    "initial": {
-    "x": -9.6,
-    "y": -0.75,
-    "z": 116.2,
+    "x": -12.4,
+    "y": -0.79,
+    "z": 117.2,
     "yaw": 116,
     "pitch": 0.0,
     "roll": 0.0,
     "f": 1201.8
    },
-   "initialBasis": "photo content: standing on the pink path, which runs away to the right towards the gateway; the pin (+-2.9 m) is 3 m west on the lawn; heading kept; eye 1.5 m above the surveyed ground (-2.25 m), 2026-11-13."
+   "initialBasis": "phone pin (+-2.9 m), which falls on the pink path where the aerial shows it; eye 1.5 m above the ground there (-2.29 m), 2026-11-13."
   },
   "IMG_2763.jpg": {
    "image": [
@@ -3701,6 +3701,108 @@
     "f": 1201.8
    },
    "initialBasis": "phone pin; phone heading; ground eye height; 26 mm-equivalent lens from EXIF; eye 1.5 m above the surveyed ground (-2.24 m) there, 2026-11-13."
+  },
+  "IMG_2766.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -2.06,
+    "y": -0.1,
+    "z": 131.83,
+    "yaw": 233,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content: on the paseo about 3 m north-east of the gateway, which stands close on the right (pin +-2.8 m is 7 m away); eye 1.5 m above the ground there (-1.60 m), 2026-11-13."
+  },
+  "IMG_2767.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -2.48,
+    "y": -0.04,
+    "z": 132.83,
+    "yaw": 223,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content: on the paseo about 2 m north-east of the gateway, its pier at the right edge; eye 1.5 m above the ground there (-1.54 m), 2026-11-13."
+  },
+  "IMG_2602.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -7.5,
+    "y": 0.5,
+    "z": 135.1,
+    "yaw": 32.4,
+    "pitch": 0.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF Eye 1.5 m above the ground there (-1.00 m), 2026-11-13."
+  },
+  "IMG_2485.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -2.24,
+    "y": 0.1,
+    "z": 133.58,
+    "yaw": 314.4,
+    "pitch": -5.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content: on the paseo about 2 m in front of the COMUNIDAD VILLACANA sign beside the gate pier, facing it (pin +-2.6 m is inland of the wall); eye 1.5 m above the ground there (-1.40 m), 2026-11-13."
+  },
+  "IMG_2600.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -12.3,
+    "y": 1.51,
+    "z": 137.5,
+    "yaw": 65.0,
+    "pitch": -8.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content: at the foot of Calle Guillermo where the inner tiled path starts, looking down it east-south-east with the white boundary wall on the right (the pin, +-2.3 m, falls inside the kiosk); facing the reviewed looksAt (the phone compass is about 47 degrees off, refs catalogue); tilted 8 degrees down onto the tiles; eye 1.5 m above the ground there (0.01 m), 2026-11-13."
+  },
+  "IMG_2601.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -9.8,
+    "y": 1.24,
+    "z": 136.6,
+    "yaw": 60.0,
+    "pitch": -8.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content: partway down the inner tiled path, the hedge and mesh fence ahead (the pin, +-2.3 m, falls inside the kiosk); facing the reviewed looksAt (the phone compass is about 47 degrees off, refs catalogue); tilted 8 degrees down onto the tiles; eye 1.5 m above the ground there (-0.26 m), 2026-11-13."
   }
  }
 }

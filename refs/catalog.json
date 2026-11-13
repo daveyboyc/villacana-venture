@@ -1670,7 +1670,7 @@
    "area:paseo",
    "paseo_wall.json:paseo-timber-edge",
    "paseo_wall.json:paseo-retaining-wall",
-   "street:guillermo"
+   "seafront_fence.json:guillermo-ramp-wall"
   ],
   "subject": "east end of the sandstone wall and the corner house by Calle Guillermo"
  },
@@ -7782,9 +7782,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
+   "main_pool_lawn.json:lawn-inner-path",
    "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-flagstone-apron",
-   "beach_verge.json:barraka-front-verge"
+   "main_pool_lawn.json:lawn-flagstone-apron"
   ],
   "subject": "Painted crossing across the paseo beside the beach gateway"
  },
@@ -7805,7 +7805,7 @@
    "facades",
    "planting"
   ],
-  "note": "Subject offset (~2 m) from the pin is approximate.",
+  "note": "13 Nov: looksAt moved onto the sign beside the gate pier as now modelled. Subject offset (~2 m) from the pin is approximate.",
   "observation": null,
   "taken": "2026-10-26",
   "originalUrl": "https://drive.google.com/file/d/1Ge428UndRc50d43a2tis_WTXVgRtQjDA/view?usp=drivesdk",
@@ -7817,19 +7817,24 @@
    "altitude": 4.7,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
-   -3.3,
-   128.5
+   -3.8,
+   132.1
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-sea-hedge",
-   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "area:paseo",
    "main_pool_lawn.json:lawn-pink-paths",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "main_pool_lawn.json:lawn-bollards-bins"
   ],
-  "subject": "Comunidad Villacana sign on the Guillermo gate wall"
+  "subject": "Comunidad Villacana sign on the Guillermo gate wall",
+  "headingOff": 120
  },
  {
   "id": "IMG_2486.jpg",
@@ -7866,10 +7871,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-inner-path",
    "main_pool_lawn.json:lawn-flagstone-apron",
    "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-white-rooms",
-   "area:paseo"
+   "main_pool_lawn.json:lawn-white-rooms"
   ]
  },
  {
@@ -7907,7 +7912,8 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-white-rooms"
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-kiosk-plain"
   ]
  },
  {
@@ -11884,10 +11890,10 @@
   ],
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-inner-path",
    "main_pool_lawn.json:lawn-white-rooms",
-   "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-flagstone-apron",
-   "area:paseo"
+   "main_pool_lawn.json:lawn-kiosk-plain",
+   "seafront_fence.json:guillermo-ramp-wall"
   ]
  },
  {
@@ -11919,7 +11925,12 @@
    "altitude": 5.4,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing",
+   "main_pool_lawn.json:lawn-inner-path"
+  ],
   "looksAt": [
    -2.0,
    127.0
@@ -11928,8 +11939,7 @@
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-sea-hedge",
    "seafront_fence.json:main-pool-lawn-railing",
-   "area:paseo",
-   "main_pool_lawn.json:lawn-bollards-bins"
+   "area:paseo"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
@@ -11964,18 +11974,24 @@
    "altitude": 4.8,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -4.9,
-   135.9
-  ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": [
-   "area:paseo",
-   "beach_verge.json:barraka-front-verge",
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
    "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-flagstone-apron"
-  ]
+   "seafront_fence.json:main-pool-lawn-railing",
+   "main_pool_lawn.json:lawn-inner-path"
+  ],
+  "looksAt": [
+   -4.0,
+   131.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "area:paseo"
+  ],
+  "subject": "the inner tiled path ending at a lawn strip, the hedge and the mesh fence"
  },
  {
   "id": "IMG_2602.jpg",
@@ -11995,7 +12011,7 @@
    "signage",
    "materials"
   ],
-  "note": "looksAt is a rough estimate of the gate position from the aerial (not measured).",
+  "note": "13 Nov: looksAt moved onto the gateway as now modelled (it was a rough 5 m inland estimate). looksAt is a rough estimate of the gate position from the aerial (not measured).",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1e21W7M5QmgQAiOaw1tOfUKKAD9DDJETA/view?usp=drivesdk",
@@ -12011,18 +12027,19 @@
    "seafront_fence.json:guillermo-beach-gate",
    "seafront_fence.json:guillermo-ramp-wall",
    "seafront_fence.json:main-pool-lawn-railing",
-   "main_pool_lawn.json:lawn-flagstone-apron"
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-inner-path"
   ],
   "looksAt": [
-   -3.0,
-   128.0
+   -5.0,
+   133.4
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-sea-hedge",
-   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "area:paseo",
    "main_pool_lawn.json:lawn-pink-paths",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "seafront_fence.json:guillermo-ramp-wall"
   ],
   "subject": "coastal lawn gate pier and iron gate"
  },
@@ -12064,10 +12081,7 @@
    110.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-bollards-bins",
-   "main_pool_lawn.json:lawn-pink-paths"
-  ],
+  "looksAtFeatures": [],
   "subject": "pink lawn path to the main pool with bollards and a slatted bin beside it"
  },
  {
@@ -16776,7 +16790,8 @@
    "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-flagstone-apron",
    "main_pool_lawn.json:lawn-white-rooms",
-   "main_pool_lawn.json:lawn-sea-hedge"
+   "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool_lawn.json:lawn-kiosk-plain"
   ],
   "looksAt": [
    -5.0,
@@ -16819,7 +16834,11 @@
    "altitude": 5.6,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
   "looksAt": [
    -0.0,
    114.2
@@ -16865,10 +16884,7 @@
    121.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-bollards-bins",
-   "main_pool_lawn.json:lawn-pink-paths"
-  ],
+  "looksAtFeatures": [],
   "subject": "lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing"
  },
  {
@@ -16899,7 +16915,8 @@
   },
   "citedBy": [
    "main_pool_lawn.json:lawn-pink-paths",
-   "main_pool_lawn.json:lawn-white-rooms"
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-kiosk-plain"
   ],
   "looksAt": [
    -12.7,
@@ -16907,7 +16924,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-white-rooms"
+   "main_pool_lawn.json:lawn-white-rooms",
+   "main_pool_lawn.json:lawn-kiosk-plain"
   ],
   "subject": "strelitzia and silver bush in a white walled corner on the lawn"
  },
@@ -16943,7 +16961,9 @@
    "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-flagstone-apron",
    "main_pool_lawn.json:lawn-white-rooms",
-   "main_pool_lawn.json:lawn-sea-hedge"
+   "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool_lawn.json:lawn-inner-path",
+   "main_pool_lawn.json:lawn-kiosk-plain"
   ],
   "looksAt": [
    -8.5,
@@ -16951,10 +16971,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-inner-path",
    "main_pool_lawn.json:lawn-white-rooms",
-   "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-flagstone-apron",
-   "area:paseo"
+   "main_pool_lawn.json:lawn-kiosk-plain",
+   "seafront_fence.json:guillermo-ramp-wall"
   ],
   "subject": "flagstone path between the hedge and the round white wall, mesh sea fence beyond"
  },
@@ -16999,6 +17019,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-pink-paths"
   ],
   "subject": "tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond"
@@ -17043,10 +17064,7 @@
    108.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-bollards-bins",
-   "main_pool_lawn.json:lawn-pink-paths"
-  ],
+  "looksAtFeatures": [],
   "subject": "pink path to the main pool, the tall palm at the pool corner and the wave-roofed building"
  },
  {
@@ -17077,18 +17095,24 @@
    "altitude": 4.7,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -3.8,
-   132.5
+  "citedBy": [
+   "barraka_frontage.json:paseo-painted-crossing",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -5.0,
+   133.4
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-flagstone-apron",
    "area:paseo",
    "main_pool_lawn.json:lawn-pink-paths",
-   "main_pool_lawn.json:lawn-flagstone-apron",
-   "main_pool_lawn.json:lawn-bollards-bins"
-  ]
+   "seafront_fence.json:guillermo-ramp-wall"
+  ],
+  "subject": "the beach gateway with plumbago either side and the painted crossing in front of it"
  },
  {
   "id": "IMG_2767.jpg",
@@ -17118,18 +17142,24 @@
    "altitude": 4.8,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -3.9,
-   134.3
+  "citedBy": [
+   "barraka_frontage.json:paseo-painted-crossing",
+   "seafront_fence.json:guillermo-beach-gate",
+   "seafront_fence.json:guillermo-ramp-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -5.4,
+   134.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
-   "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-flagstone-apron",
-   "beach_verge.json:barraka-front-verge"
-  ]
+   "seafront_fence.json:guillermo-ramp-wall",
+   "main_pool_lawn.json:lawn-inner-path"
+  ],
+  "subject": "the painted crossing right outside the beach gateway, the paseo running on south-west"
  },
  {
   "id": "IMG_2769.jpg",
@@ -17245,7 +17275,10 @@
    118.0
   ],
   "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-pink-paths",
+   "main_pool_lawn.json:lawn-bollards-bins"
+  ]
  },
  {
   "id": "IMG_2773.jpg",

@@ -3360,12 +3360,9 @@
    "facades",
    "planting"
   ],
-  "looksAt": [
-   -3.3,
-   128.5
-  ],
+  "looksAt": [-3.8, 132.1],
   "subject": "Comunidad Villacana sign on the Guillermo gate wall",
-  "note": "Subject offset (~2 m) from the pin is approximate."
+  "note": "13 Nov: looksAt moved onto the sign beside the gate pier as now modelled. Subject offset (~2 m) from the pin is approximate."
  },
  "IMG_2486.jpg": {
   "title": "Tiled apron at the foot of Calle Guillermo with curved wall",
@@ -4751,6 +4748,8 @@
   "note": "Foot of Calle Guillermo area, close to IMG_2600/2601."
  },
  "IMG_2601.jpg": {
+  "looksAt": [-4.0, 131.0],
+  "subject": "the inner tiled path ending at a lawn strip, the hedge and the mesh fence",
   "title": "Tiled landing at the foot of the lane with hedge and green fence to the beach",
   "shows": [
    "seaward-lanes",
@@ -4780,12 +4779,9 @@
    "signage",
    "materials"
   ],
-  "looksAt": [
-   -3.0,
-   128.0
-  ],
+  "looksAt": [-5.0, 133.4],
   "subject": "coastal lawn gate pier and iron gate",
-  "note": "looksAt is a rough estimate of the gate position from the aerial (not measured)."
+  "note": "13 Nov: looksAt moved onto the gateway as now modelled (it was a rough 5 m inland estimate). looksAt is a rough estimate of the gate position from the aerial (not measured)."
  },
  "IMG_2603.jpg": {
   "looksAt": [-10.0, 110.0],
@@ -6592,6 +6588,8 @@
   ]
  },
  "IMG_2766.jpg": {
+  "looksAt": [-5.0, 133.4],
+  "subject": "the beach gateway with plumbago either side and the painted crossing in front of it",
   "title": "Painted crossing and blue plumbago at a gated wall",
   "shows": [
    "paseo",
@@ -6605,6 +6603,8 @@
   ]
  },
  "IMG_2767.jpg": {
+  "looksAt": [-5.4, 134.0],
+  "subject": "the painted crossing right outside the beach gateway, the paseo running on south-west",
   "title": "Painted crossing at the gated wall, looking south-west",
   "shows": [
    "paseo",

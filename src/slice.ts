@@ -580,6 +580,8 @@ async function boot(): Promise<void> {
   const gardenPaving=scene.getObjectByName('silvia-exit-path-fragment') as THREE.Mesh|undefined;
   if(gardenPaving){scene.updateMatrixWorld(true);const old=gardenPaving.geometry;gardenPaving.geometry=refine(old,(x,z)=>Math.max(0,siteY(x,z)-silviaY),gardenPaving.matrixWorld);if(gardenPaving.geometry!==old)old.dispose();}
   if(new URLSearchParams(location.search).get("checkSurface")==="elena")(window as unknown as {villacanaElenaSurfaces:unknown}).villacanaElenaSurfaces=elenaSurfaceSamples(scene,skeleton.boundaryReference?.roads??[],world.groundHeight??liveGroundY);
+  // &debugScene=1 exposes the scene for scripted probes (scripts/probe_ground.cjs).
+  if (new URLSearchParams(location.search).has("debugScene")) (window as unknown as { villacanaScene: THREE.Scene }).villacanaScene = scene;
   if (photoView || new URLSearchParams(location.search).get("export") === "model") exportModel(scene, skeleton, liveGroundY, world.groundHeight ?? liveGroundY);
   const cameraBlockers:THREE.Object3D[]=[];
   scene.traverse(o=>{if((o as THREE.Mesh).isMesh&&(o.userData.structural||/^(T01-|T02-|T03-|T04-)/.test(o.name)))cameraBlockers.push(o);});
@@ -1004,7 +1006,8 @@ function addBuildings(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHe
     const height = b.id === BARRAKA_BUILDING ? barrakaWallHeight : b.floors > 0 ? b.floors * floorHeight : .035;
     // A covered walk-through is only the storey above; the lane runs under it.
     const lift = b.id===SILVIA_HOST?3.35:b.id===SILVIA_CANOPY?2.98:b.passage ? PASSAGE_HEADROOM : 0;
-    const cap = b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
+    // The plain kiosk on the main-pool lawn has a pale flat roof on the aerial, not a tiled terrace.
+    const cap = PLAIN_LAWN_BUILDINGS.has(b.id) ? grey : b.floors === 0 || hash(c.x, c.z) < 0.22 ? terrace : grey;
     if (b.id === SOUTH_POOL_HOST) {
       const base: Vec2 = [c.x, c.z];
       const storey = (part: { ring: Vec2[]; holes: Vec2[][] }, y: number, depth: number, name: string) => {
