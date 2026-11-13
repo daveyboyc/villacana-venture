@@ -499,6 +499,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "middle_pool.json:middle-pool-shower",
    "raised_terraces.json:middle-pool-north-terrace"
   ],
   "looksAt": [
@@ -540,6 +541,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "middle_pool.json:middle-pool-shower",
    "raised_terraces.json:middle-pool-north-terrace"
   ],
   "looksAt": [
@@ -4640,6 +4642,8 @@
   "citedBy": [
    "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
    "middle_pool.json:middle-pool-west-planter",
+   "middle_pool.json:middle-pool-west-path-drain",
+   "middle_pool.json:middle-pool-west-deck-cap",
    "middle_pool_north.json:middle-pool-north-planter-cap",
    "middle_pool_north.json:middle-pool-north-door-wall",
    "middle_pool_north.json:middle-pool-north-pergola",
@@ -15081,7 +15085,9 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-shower"
+  ],
   "looksAt": [
    -122.4,
    82.2
@@ -16311,7 +16317,10 @@
    "altitude": 5.9,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-path-drain",
+   "middle_pool.json:middle-pool-west-deck-cap"
+  ],
   "looksAt": [
    -133.0,
    89.3

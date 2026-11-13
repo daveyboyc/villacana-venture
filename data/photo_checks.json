@@ -1423,8 +1423,74 @@
    "by": "Cursor",
    "result": "not-comparable",
    "notes": "Looking along the north-west wall. Inspect shows the glazed awning bay at the west corner and the plain wall beyond it. looksAt is the point 6 m along the phone heading, now reviewed, and both renders used that aim. The slot drain and the sandbags are not built. Not a solved camera."
-  }
- ],
+  },
+    {
+      "task": "middle-pool-photo-details",
+      "feature": "middle_pool.json:middle-pool-shower",
+      "photo": "IMG_2193.jpg",
+      "before": "docs/reviews/middle-pool-photo-details/east-before.png",
+      "render": "docs/reviews/middle-pool-photo-details/east-after.png",
+      "checked": "2026-11-13",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+    },
+    {
+      "task": "middle-pool-photo-details",
+      "feature": "middle_pool.json:middle-pool-shower",
+      "photo": "IMG_2194.jpg",
+      "before": "docs/reviews/middle-pool-photo-details/east-before.png",
+      "render": "docs/reviews/middle-pool-photo-details/east-after.png",
+      "checked": "2026-11-13",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+    },
+    {
+      "task": "middle-pool-photo-details",
+      "feature": "middle_pool.json:middle-pool-shower",
+      "photo": "IMG_2679.jpg",
+      "before": "docs/reviews/middle-pool-photo-details/east-before.png",
+      "render": "docs/reviews/middle-pool-photo-details/east-after.png",
+      "checked": "2026-11-13",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+    },
+    {
+      "task": "middle-pool-photo-details",
+      "feature": "middle_pool.json:middle-pool-west-path-drain",
+      "photo": "IMG_2332.jpg",
+      "before": "docs/reviews/middle-pool-photo-details/west-before.png",
+      "render": "docs/reviews/middle-pool-photo-details/west-after.png",
+      "checked": "2026-11-13",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+    },
+    {
+      "task": "middle-pool-photo-details",
+      "feature": "middle_pool.json:middle-pool-west-deck-cap",
+      "photo": "IMG_2713.jpg",
+      "before": "docs/reviews/middle-pool-photo-details/west-before.png",
+      "render": "docs/reviews/middle-pool-photo-details/west-after.png",
+      "checked": "2026-11-13",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+    },
+    {
+      "task": "middle-pool-photo-details",
+      "feature": "middle_pool.json:middle-pool-east-gateway",
+      "photo": "IMG_2340.jpg",
+      "before": "docs/reviews/middle-pool-photo-details/gate-before.png",
+      "render": "docs/reviews/middle-pool-photo-details/gate-after.png",
+      "checked": "2026-11-13",
+      "by": "Codex",
+      "result": "not-comparable",
+      "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+    }
+  ],
  "legacyUnchecked": [
   "barraka-boardwalk",
   "cervantes-door-steps",

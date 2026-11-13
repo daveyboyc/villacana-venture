@@ -71,7 +71,8 @@
    "hinge": "south-east",
    "openDegrees": 92,
    "height": 1.95,
-   "thickness": 0.04
+   "thickness": 0.04,
+   "scrollwork": {"evidence": ["IMG_2340.jpg"], "trust": "Paired slender curled iron motifs visible in the lower-middle panel of the open east leaf. Curvature and rod diameter estimated; existing hinge, opening, width, height and open angle retained."}
   },
   "signs": [
    {
@@ -145,5 +146,58 @@
   "ref:photos/09-middle-pool-through-iron-gate.jpg",
   "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
   "ref:photos/02-pool-from-upper-floor-2020-12.png"
- ]
+ ],
+ "details": [
+ {
+  "id": "middle-pool-shower",
+  "name": "Middle pool · paired curved stainless showers",
+  "kind": "shower",
+  "at": [
+   -121.7,
+   90.4
+  ],
+  "height": 2.15,
+  "turn": -90,
+  "radius": 0.72,
+  "evidence": [
+   "IMG_2193.jpg",
+   "IMG_2194.jpg",
+   "IMG_2679.jpg"
+  ],
+  "trust": "Two parallel stainless posts (0.38 m separation estimated) with inclined swan-necks, small downward head and push control, visible beside the east-lobe life ring in all three photos. Height 2.15 m, 48 mm pipe and ground anchor are estimates (about 1 m placement uncertainty); no solved camera, measured placement approval or underground plumbing inferred."
+ },
+ {
+  "id": "middle-pool-west-path-drain",
+  "name": "Middle pool · round slotted cover on west stone path",
+  "kind": "drain",
+  "at": [
+   -136.5,
+   93.0
+  ],
+  "diameter": 0.3,
+  "y": 0.065,
+  "radius": 0.18,
+  "evidence": [
+   "IMG_2332.jpg",
+   "IMG_2713.jpg"
+  ],
+  "trust": "Dark concentric slotted cover with solid centre and pale square surround, in crazy paving OUTSIDE the deck between west planter and pool. Diameter 0.30 m and path anchor estimated (about 1 m uncertainty). Flush fitting follows existing terrain; no path or deck outline changed."
+ },
+ {
+  "id": "middle-pool-west-deck-cap",
+  "name": "Middle pool · pale flush deck access lid",
+  "kind": "cap",
+  "at": [
+   -135.1,
+   93.7
+  ],
+  "diameter": 0.28,
+  "radius": 0.15,
+  "evidence": [
+   "IMG_2332.jpg",
+   "IMG_2713.jpg"
+  ],
+  "trust": "Pale circular inspection lid with small lifting hole on cream slab deck, distinct from the darker slotted path cover. Diameter 0.28 m and anchor estimated (about 1 m uncertainty). Existing deck and pool rings retained."
+ }
+]
 }

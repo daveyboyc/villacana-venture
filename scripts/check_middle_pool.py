@@ -192,3 +192,26 @@ for along in (hedge['along'][0]+hedge['spacing']*i for i in range(1+round((hedge
   gap=min(distance(pt,a,b) for a,b in zip(road['points'],road['points'][1:]))
   assert gap>=road['width']/2+radius+.15,f'Visible hedge footprint blocks {road["id"]}'
 print('Middle pool south forecourt: bounded photo-cited stone avoids registry solids; Details hedge footprint clears Eva/Silvia PASS')
+
+# Newly photographed surface fittings: keep upright objects off paths and out of the water.
+middle = next(p for p in s['pools'] if p['id'] == 'middle')
+for fitting in d['details']:
+ assert fitting['evidence'] and set(fitting['evidence']) <= photos, f"Missing source for {fitting['id']}"
+ at = fitting['at']
+ assert not inside(*at, middle['ring']), f"{fitting['id']} is inside the water"
+ if fitting['kind'] == 'shower':
+  # Fittings sit on the deck, outside the older gateway/planter suppression bands.
+  for road in roads.values():
+   gap=min(distance(at,a,b) for a,b in zip(road['points'],road['points'][1:]))
+   assert gap >= road['width']/2 + fitting['radius'] + .15, 'Shower footprint intrudes into a protected route'
+  for building in s['buildings']:
+   if building['floors']>0:assert not inside(*at,building['ring']), 'Shower foot enters a house'
+  assert inside(*at, middle['deck']), 'Shower foot must stand on the deck'
+ elif fitting['kind'] == 'drain':
+  assert not inside(*at, middle['deck']), 'Dark drain belongs on the path, outside the deck'
+  assert not inside(*at, d['planter']['ring']), 'Path drain must not enter the raised planter'
+ else:
+  assert inside(*at, middle['deck']), 'Pale access lid belongs on the slab deck'
+ assert 'estimated' in fitting['trust'] and 'uncertainty' in fitting['trust'], 'Keep anchor uncertainty explicit'
+assert d['gateway']['leaf']['openDegrees'] == 92, 'Detail must retain the original open leaf angle'
+print('Middle pool details: twin-shower anchor clears routes/water; dark path drain and pale deck cap on distinct existing surfaces PASS')

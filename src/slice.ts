@@ -289,7 +289,7 @@ async function boot(): Promise<void> {
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
-  addMiddlePool(scene);
+  addMiddlePool(scene, canPlaceDecoration);
   addMiddleSouthGate(scene);
   addElenaGatedEntry(scene);
   addElenaWalkway(scene,!layoutOnly); // portal steps, ramp, patterned floor, signs, doors (data/elena_walkway.json)

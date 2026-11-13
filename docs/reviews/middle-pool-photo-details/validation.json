@@ -1,0 +1,99 @@
+{
+  "sourceChecks": [
+    {
+      "check": "scripts/test_photo_assignment.py",
+      "exit": 0,
+      "output": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.140s\n\nOK\n"
+    },
+    {
+      "check": "scripts/test_reference_index.py",
+      "exit": 1,
+      "output": "................F\n======================================================================\nFAIL: test_matcher_picks_up_new_photos (test_scorecard.Scorecard.test_matcher_picks_up_new_photos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/villacana-venture/scripts/test_scorecard.py\", line 70, in test_matcher_picks_up_new_photos\n    self.assertTrue(r['ask'] and r['why'] and len(r['at']) == 2 and r['status'] in ('open', 'answered'), r['id'])\nAssertionError: False is not true : jorge-west-walk\n\n----------------------------------------------------------------------\nRan 17 tests in 17.290s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "check": "scripts/test_placement_verification.py",
+      "exit": 0,
+      "output": "...............................\n----------------------------------------------------------------------\nRan 31 tests in 0.310s\n\nOK\n"
+    },
+    {
+      "check": "scripts/check_map.py",
+      "exit": 0,
+      "output": "115 objects checked, 0 problems\n"
+    },
+    {
+      "check": "scripts/check_street_layout.py",
+      "exit": 0,
+      "output": "18 Google/photo-checked street segments, house/player clearances, 25 joins, canonical names, original registry frontages and key-free reference links PASS\n"
+    },
+    {
+      "check": "scripts/check_boundary_reference.py",
+      "exit": 0,
+      "output": "Both mapped car parks include their matching Cervantes entrances PASS\nCervantes endpoint connectivity: Dal\u00ed centreline and the unnamed Picasso car-park access PASS\nBoundary references: clear street routes, solid fence, 11 positioned/heading/accuracy references, stripped embedded metadata PASS\nPhoto-backed ramp endpoints, shared heights and walkable slope PASS\nStraight, Google-checked Cervantes axis and original registry frontages PASS\n"
+    },
+    {
+      "check": "scripts/check_terrain.py",
+      "exit": 0,
+      "output": "Terrain: laser-survey grid (attributed), pools level at surveyed decks, photographed flights exact, Dal\u00ed side up, lanes walkable PASS\n"
+    },
+    {
+      "check": "scripts/check_dali_threshold.py",
+      "exit": 0,
+      "output": "Cervantes photo-linked walls: checked Calle clearances, open approaches, original houses/pools and bounded test scope PASS\nDal\u00ed threshold: distinct photo-linked bays, grass, shared path and crossing; facade/wall clearances and open kerbs PASS\n"
+    },
+    {
+      "check": "scripts/check_cervantes_patio_walls.py",
+      "exit": 0,
+      "output": "Cervantes photo-linked walls: checked Calle clearances, open approaches, original houses/pools and bounded test scope PASS\n"
+    },
+    {
+      "check": "scripts/check_elena_north.py",
+      "exit": 0,
+      "output": "Elena north: photo-linked gateway, patio wall and beds keep the lanes clear, gateway open and walkable, houses and pools untouched PASS\n"
+    },
+    {
+      "check": "scripts/check_middle_pool.py",
+      "exit": 0,
+      "output": "Middle pool: photo-linked east gateway and west planter keep the lanes clear, gateway open and walkable, houses and pools untouched PASS\nMiddle pool southwest: photo-backed open gateway above the steps clears houses, pools and route PASS\nMiddle pool southwest: steps footprint avoids unchanged planter, houses and pools PASS\nMiddle pool north: independently corrected pins, bounded cap/door wall, open pergola and matching stepped ground PASS\nMiddle pool south: separate open double gate, planter, wall bench past the leaf and tiled panel preserve routes and registry PASS\nMiddle pool south forecourt: bounded photo-cited stone avoids registry solids; Details hedge footprint clears Eva/Silvia PASS\nMiddle pool details: twin-shower anchor clears routes/water; dark path drain and pale deck cap on distinct existing surfaces PASS\n"
+    },
+    {
+      "check": "scripts/check_paseo_wall.py",
+      "exit": 0,
+      "output": "Paseo wall: 59 points, 134 m, photo-linked; paseo, lanes and gate connector clear; houses and pools untouched; openings kept; heights 0.3-1.0 m, about 1 m by the south lawn and at the east end PASS\n"
+    },
+    {
+      "check": "scripts/check_seafront.py",
+      "exit": 0,
+      "output": "Seafront: simple polygons, no pool overlaps, clear paseo route, exact registry restaurant footprint PASS\nPaseo retrace: photographed run, coastal access and eastern boardwalk joins preserved PASS\nPaseo clearance: 1676 samples keep 1.5 m from every standing registry house; 2 registry parts on the aerial paseo kept as outlines PASS\n"
+    },
+    {
+      "check": "scripts/check_pool_levels.py",
+      "exit": 0,
+      "output": "Lower main/children\u2019s pools, unchanged other pools and street centre lines, stair rise and ramp width PASS\n"
+    },
+    {
+      "check": "scripts/check_levels.py",
+      "exit": 0,
+      "output": "  cervantes-elena-ramp         photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-elena-steps        photo 0.40-0.50 m  model 0.50 m  ok\n  cervantes-upper-lane         photo 0.00-0.15 m  model 0.09 m  ok\n  dali-cervantes-apron         photo 0.00-0.15 m  model 0.20 m  ok\n  middle-pool-sw-rise          photo 0.45-0.55 m  model 0.53 m  ok\n  middle-pool-nw-rise          photo 0.30-0.55 m  model 0.52 m  ok\n  middle-pool-gates-level      photo 0.00-0.05 m  model 0.03 m  ok\nLevels survey: 23 items, 0 level changes queued, built items match the terrain PASS\n"
+    },
+    {
+      "check": "scripts/check_lowered_lanes.py",
+      "exit": 0,
+      "output": "Lowered lanes: Guillermo level at street level to the paseo (survey), Jorge level, ground cut along it, kiosk on the slope above the lawn; east steps 1.1 m wide from street level onto the deck PASS\n"
+    },
+    {
+      "check": "scripts/check_seafront_fence.py",
+      "exit": 0,
+      "output": "Seafront fence: corner wall from the sandstone wall's end, 1.4 m arched gateway beside the foot of the paseo ramp, 29 m of railings to the lawn's east edge, all beside the paseo and clear of lanes, houses and pools PASS\n"
+    },
+    {
+      "check": "scripts/check_beach_verge.py",
+      "exit": 0,
+      "output": "Beach verge: 577 m2 of grass off the paseo and buildings, 17 shrub clumps clear of the walks PASS (rough outline, unmeasured)\n"
+    }
+  ],
+  "baselineFailures": {
+    "test_reference_index.py": "................F\n======================================================================\nFAIL: test_matcher_picks_up_new_photos (test_scorecard.Scorecard.test_matcher_picks_up_new_photos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/villacana-venture-baseline/scripts/test_scorecard.py\", line 70, in test_matcher_picks_up_new_photos\n    self.assertTrue(r['ask'] and r['why'] and len(r['at']) == 2 and r['status'] in ('open', 'answered'), r['id'])\nAssertionError: False is not true : jorge-west-walk\n\n----------------------------------------------------------------------\nRan 17 tests in 24.595s\n\nFAILED (failures=1)\n",
+    "test_layout_browser.cjs": "page.evaluate: Error: South Dal\u00ed approach has a reachable step at 0.00\n    at eval (eval at evaluate (:370:30), <anonymous>:490:82)\n    at async <anonymous>:396:30\n    at /workspace/villacana-venture-baseline/scripts/test_layout_browser.cjs:31:21 {\n  log: []\n}\n"
+  },
+  "scope": "Pool/deck footprints, terrain, original gate transform and collision unchanged. New fitting anchors estimated, placement unapproved."
+}

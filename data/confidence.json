@@ -462,6 +462,18 @@
   "barraka_facade.json:barraka-facade": {
    "level": "estimated",
    "why": "The parapet, two groups of three north-east windows, the door, the south-west row of eight, the red awnings and the thatched edge are clear in IMG_2615/2618/2604/2630. The wall is 4.8 m from the door proportion, against a 2014-15 lidar roof of 2.89-3.67 m. Stations along the walls are read from unsolved photos and may be a metre out."
+  },
+  "middle_pool.json:middle-pool-shower": {
+   "level": "estimated",
+   "why": "Two parallel stainless posts (0.38 m separation estimated) with inclined swan-necks, small downward head and push control, visible beside the east-lobe life ring in all three photos. Height 2.15 m, 48 mm pipe and ground anchor are estimates (about 1 m placement uncertainty); no solved camera, measured placement approval or underground plumbing inferred."
+  },
+  "middle_pool.json:middle-pool-west-path-drain": {
+   "level": "estimated",
+   "why": "Dark concentric slotted cover with solid centre and pale square surround, in crazy paving OUTSIDE the deck between west planter and pool. Diameter 0.30 m and path anchor estimated (about 1 m uncertainty). Flush fitting follows existing terrain; no path or deck outline changed."
+  },
+  "middle_pool.json:middle-pool-west-deck-cap": {
+   "level": "estimated",
+   "why": "Pale circular inspection lid with small lifting hole on cream slab deck, distinct from the darker slotted path cover. Diameter 0.28 m and anchor estimated (about 1 m uncertainty). Existing deck and pool rings retained."
   }
  },
  "gaps": [

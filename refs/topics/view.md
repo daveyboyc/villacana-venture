@@ -18,8 +18,8 @@ Long views, the backdrop, how areas look from above or from afar.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting, facades, materials, view | Middle pool lawn with crazy-paving path and glass-fenced pool, looking west **Note:** Pin on the lawn NE of the pool; shows the west houses on the far side of the pool. _Used by: middle_pool.json:middle-pool-shower._ |
 | [IMG_2678.jpg](../../public/photos-ref/IMG_2678.jpg) | ground | layout, facades, materials, planting, view | Looking through the middle pool east gateway at the pool and houses beyond **Note:** Looks SW across the clover-shaped pool; the pool shown is the middle pool by position, and glass fence matches the existing note that the fence is skipped in the model. |
-| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting, facades, materials, view | Middle pool lawn with crazy-paving path and glass-fenced pool, looking west **Note:** Pin on the lawn NE of the pool; shows the west houses on the far side of the pool. |
 | `villacana-reference/photos/02-pool-from-upper-floor-2020-12.png` | upper-floor | layout, facades, materials, view | Middle pool from an upper floor, December 2020 **Note:** Shows a glass safety fence; Dave decided to skip it. |
 
 ## South pool
@@ -93,8 +93,8 @@ Long views, the backdrop, how areas look from above or from afar.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting, facades, materials, view | Middle pool lawn with crazy-paving path and glass-fenced pool, looking west **Note:** Pin on the lawn NE of the pool; shows the west houses on the far side of the pool. _Used by: middle_pool.json:middle-pool-shower._ |
 | [IMG_2678.jpg](../../public/photos-ref/IMG_2678.jpg) | ground | layout, facades, materials, planting, view | Looking through the middle pool east gateway at the pool and houses beyond **Note:** Looks SW across the clover-shaped pool; the pool shown is the middle pool by position, and glass fence matches the existing note that the fence is skipped in the model. |
-| [IMG_2679.jpg](../../public/photos-ref/IMG_2679.jpg) | ground | layout, planting, facades, materials, view | Middle pool lawn with crazy-paving path and glass-fenced pool, looking west **Note:** Pin on the lawn NE of the pool; shows the west houses on the far side of the pool. |
 
 ## Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo
 

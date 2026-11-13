@@ -3253,6 +3253,38 @@
    "dependsOn": [],
    "status": "open",
    "owner": null
+  },
+  {
+   "id": "middle-pool-photo-details",
+   "area": "middle-pool",
+   "priority": 1,
+   "kind": "structure",
+   "title": "Middle pool: photo-backed shower, flush covers and east-gate scrollwork",
+   "photos": [
+    "IMG_2193.jpg",
+    "IMG_2194.jpg",
+    "IMG_2679.jpg",
+    "IMG_2332.jpg",
+    "IMG_2713.jpg",
+    "IMG_2340.jpg"
+   ],
+   "build": "Add the observed curved stainless shower beside the east life ring, dark concentric slotted west-path cover, distinct pale deck access cap and curled iron motifs within the existing east gateway leaf. Compare Inspect Layout and Details with the full photos.",
+   "avoid": "Retain pool/house/deck footprints, terrain and all existing gate transforms. No safety fence. Estimated fitting anchors are not calibrated placement approval.",
+   "accept": [
+    "Photo observations and before/after Inspect renders recorded",
+    "Pool level, deck outline, route clearance and gate opening retained",
+    "Source and form independently reviewed; uncertain placement explicitly retained"
+   ],
+   "features": [
+    "middle_pool.json:middle-pool-shower",
+    "middle_pool.json:middle-pool-west-path-drain",
+    "middle_pool.json:middle-pool-west-deck-cap",
+    "middle_pool.json:middle-pool-east-gateway"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Requested by owner 2026-11-13. Placement remains unapproved because sources lack solved photo cameras; source/form review does not grant placement approval."
   }
  ]
 }
