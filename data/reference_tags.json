@@ -4788,6 +4788,8 @@
   "note": "looksAt is a rough estimate of the gate position from the aerial (not measured)."
  },
  "IMG_2603.jpg": {
+  "looksAt": [-10.0, 110.0],
+  "subject": "pink lawn path to the main pool with bollards and a slatted bin beside it",
   "title": "Pink lawn path with bollard lights and a pool-side white curved-roof building",
   "shows": [
    "main-pool",
@@ -6487,6 +6489,8 @@
   ]
  },
  "IMG_2759.jpg": {
+  "looksAt": [-5.0, 133.4],
+  "subject": "arched beach gateway at the end of the pink path, bin and bollard beside it",
   "title": "Lawn path to a white gateway towards the sea",
   "shows": [
    "main-pool",
@@ -6514,6 +6518,8 @@
   "note": "Pin is vague (+/-10.8 m); the lawn and the Barraka building beyond place it on the main pool lawn."
  },
  "IMG_2761.jpg": {
+  "looksAt": [-4.0, 121.0],
+  "subject": "lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing",
   "title": "Lawn and pink path towards the seafront railing",
   "shows": [
    "main-pool",
@@ -6527,6 +6533,8 @@
   ]
  },
  "IMG_2762.jpg": {
+  "looksAt": [-12.7, 131.4],
+  "subject": "strelitzia and silver bush in a white walled corner on the lawn",
   "title": "Strelitzia in a white walled corner on the lawn",
   "shows": [
    "main-pool"
@@ -6538,6 +6546,8 @@
   ]
  },
  "IMG_2763.jpg": {
+  "looksAt": [-8.5, 135.0],
+  "subject": "flagstone path between the hedge and the round white wall, mesh sea fence beyond",
   "title": "Pink path curving round a white wall to the sea fence",
   "shows": [
    "main-pool",
@@ -6568,6 +6578,8 @@
   "subject": "tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond"
  },
  "IMG_2765.jpg": {
+  "looksAt": [-12.0, 108.0],
+  "subject": "pink path to the main pool, the tall palm at the pool corner and the wave-roofed building",
   "title": "Main pool lawn and wave-roofed building, second view",
   "shows": [
    "main-pool"
@@ -6669,6 +6681,8 @@
   "note": " Read 2026-11-12: left of the lane, low white planters with clipped hedges between battered piers, a gateway with a dark iron gate, a taller white patio wall behind with strelitzia above it, two lamp posts; a row of bricks on edge borders the lane."
  },
  "IMG_2775.jpg": {
+  "looksAt": [-35.7, 96.2],
+  "subject": "Enrique's shop front with three blue awnings at the head of the steps",
   "title": "Lane down to the pool building with slot drains",
   "shows": [
    "main-pool",
@@ -6682,6 +6696,8 @@
   ]
  },
  "IMG_2776.jpg": {
+  "looksAt": [-34.5, 98.5],
+  "subject": "marble-nosed blue-tiled steps up to Enrique's shop beside the lantana planter",
   "title": "Steps and ramp at the foot of the lane by the pool building",
   "shows": [
    "main-pool",
@@ -6694,6 +6710,8 @@
   ]
  },
  "IMG_2777.jpg": {
+  "looksAt": [-31.0, 104.0],
+  "subject": "marble nosing and blue risers at the top of Enrique's steps, terracotta paving and the pool below",
   "title": "Marble-edged steps down to the main pool deck",
   "shows": [
    "main-pool"

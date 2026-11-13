@@ -63,7 +63,7 @@ import mainPoolLayout from "../data/main_pool.json";
 import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHoles, poolTerraceRing, lowerPoolSurface, gardenFallSurface, sheetCutRing, LOWER_POOL_Y, POOL_TERRACE_ID } from "./pool-levels";
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
 import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
-import { addMainPoolLawn, lawnSolidRings } from "./main-pool-lawn";
+import { addMainPoolLawn, lawnSolidRings, PLAIN_LAWN_BUILDINGS } from "./main-pool-lawn";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -232,6 +232,7 @@ async function boot(): Promise<void> {
   // The Blender-built facade kit dresses the house walls (src/facade-kit.ts); small screens keep
   // the flat shutters except on the walls traced from photos.
   const kitWalls = layoutOnly ? new Set<string>() : facadeKitWalls(houses, matchMedia("(max-width:700px), (max-height:500px)").matches);
+  for (const wall of [...kitWalls]) if (PLAIN_LAWN_BUILDINGS.has(wall.slice(0, wall.lastIndexOf(":")))) kitWalls.delete(wall); // plain kiosk (data/main_pool_lawn.json)
   let kitReady:(parts:Awaited<ReturnType<typeof addFacadeKit>>)=>void=()=>{};
   const kitParts=new Promise<Awaited<ReturnType<typeof addFacadeKit>>>(resolve=>{kitReady=resolve;});
   // The facade kit takes each house's floor level as draped (src/facade-kit.ts), so it starts once
@@ -1064,7 +1065,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
       const [ax, az] = ring[i];
       const [bx, bz] = ring[(i + 1) % ring.length];
       const length = Math.hypot(bx - ax, bz - az);
-      if (length < 2.6 || kitWalls.has(`${b.id}:${i}`)) continue;
+      if (length < 2.6 || kitWalls.has(`${b.id}:${i}`) || PLAIN_LAWN_BUILDINGS.has(b.id)) continue;
       let nx = (bz - az) / length;
       let nz = -(bx - ax) / length;
       const mx = (ax + bx) / 2;
@@ -1171,6 +1172,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
   const DEPTH = 1.5;
 
   for (const b of houses) {
+    if (PLAIN_LAWN_BUILDINGS.has(b.id)) continue; // the plain kiosk on the main-pool lawn
     const ring = b.ring;
     for (let i = 0; i < ring.length; i++) {
       const [ax, az] = ring[i];

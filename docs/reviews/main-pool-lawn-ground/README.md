@@ -18,6 +18,17 @@ Rendered in Inspect with Show details by `scripts/shoot_inspect.cjs` (fixed orbi
 - `shop-awnings-after.jpg`: the three lettered awnings at the head of Enrique's steps, which still
   have no storey behind them (`enrique-shop-storey`).
 
-`scripts/shoot_views.cjs` without `--pose` currently renders the whole-resort Overview rather than
-the photo camera (the page now opens in Inspect by default), so no photo checks were recorded for
-this task; it stays in progress until they are.
+`scripts/shoot_views.cjs` without `--pose` now renders the whole-resort Overview rather than the
+photo camera (the page opens in Inspect by default), so the photo checks below go through `--pose`.
+
+## Photo-camera check, 2026-11-13
+
+`IMG_xxxx-after.png` are renders through each photo's own camera (`shoot_views.cjs --pose --initial
+--query=details=1`), a hand-set starting pose from photo content in `data/photo_poses.json` (eye
+1.5 m above the surveyed ground), not a solved camera. The comparison found and fixed: a twist at the
+start of each pink-path ribbon (the first cross-section was built backwards); the near bin and
+bollard on the wrong side of the path and the branches in the wrong places (IMG_2603, IMG_2764);
+a missing bin by the gate bollard (IMG_2759, IMG_2761); generic shutters, an arched door and tiled
+porch roofs on the plain white kiosk (IMG_2759, IMG_2762, IMG_2763); white riser tiles where the
+photos show cobalt patterned ones (IMG_2776, IMG_2777); eight summer loungers in the gate corner and
+out beyond the railing. Results and what still differs are in `data/photo_checks.json`.
