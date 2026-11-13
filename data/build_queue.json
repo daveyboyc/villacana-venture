@@ -3208,11 +3208,13 @@
     "IMG_2764.jpg",
     "IMG_2765.jpg",
     "IMG_2759.jpg",
-    "IMG_2760.jpg",
     "IMG_2761.jpg",
     "IMG_2603.jpg",
     "IMG_2775.jpg",
-    "IMG_2776.jpg"
+    "IMG_2776.jpg",
+    "IMG_2763.jpg",
+    "IMG_2762.jpg",
+    "IMG_2777.jpg"
    ],
    "build": "Inspect showed the lawn work from main-pool-lawn-details buried: paths, apron, white walls, hedge, shower and bollards were built at the old flat -3 m deck while the lawn follows the laser survey at about -2.2 to -2.8 m, so only the bin tops showed. Build every lawn piece on the live ground. East of the lawn the lowered area's retaining face stood as a jagged 3 m sliver (beige triangles in Inspect) because the survey grid mixes the lowered and street datums across the edge where the survey has no drop; read each side's nodes on its own datum, drape the lawn and street sheets each on their own side and build the retaining faces between them. End the first pink path and the apron on the lawn side of the beach gateway (they ran 3 m out onto the paseo; one bollard stood there). Replace the cylinder bollards and bins with Blender-built models from the photos and add the square service lid IMG_2761 shows (scripts/build_lawn_kit.py). Letter the three shop awnings IMG_2775 shows, one-sided, in place of one two-sided panel.",
    "avoid": "Do not move the registry pool rings or the gateway. Do not change the survey grid file. Leave Walk alone.",
@@ -3229,7 +3231,38 @@
    ],
    "dependsOn": [],
    "status": "in-progress",
-   "owner": "Claude"
+   "owner": "Claude",
+   "notes": "2026-11-13: checked through ten photo cameras (starting poses from photo content); two match, the rest differ with open follow-ups main-pool-lawn-cameras, beach-gate-verge and enrique-shop-storey. Stays in progress until a measured placement packet is independently approved. IMG_2760 is left out: its pin is 10.8 m vague."
+  },
+  {
+   "id": "main-pool-lawn-cameras",
+   "area": "main-pool",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Main pool lawn and Enrique's steps: solve the photo cameras and close what still differs",
+   "photos": [
+    "IMG_2765.jpg",
+    "IMG_2759.jpg",
+    "IMG_2761.jpg",
+    "IMG_2762.jpg",
+    "IMG_2776.jpg",
+    "IMG_2777.jpg"
+   ],
+   "build": "The lawn and steps photos were rendered through hand-set starting cameras (data/photo_poses.json, 2026-11-13) and still differ: IMG_2765 faces about 15 degrees left of the photo; IMG_2759 is vague (pin +-18.5 m) and its camera is set from content, so the nearer bin shows where the photo has a service lid; IMG_2761 frames the hedge and fence but the gateway and its bin fall just out of frame; IMG_2762 shows the plain kiosk but the photo's louvred service doors and lawn up to the walls are not modelled; IMG_2776 and IMG_2777 stand in the long flight from their pins, while the photos stand on Calle Guillermo with the short marble-nosed flight on the right. Mark control points (path edges, pool edge, gate pier, building corners) and solve each camera with scripts/photo_pose.py, then move the paths, fittings and step finish by measurement.",
+   "avoid": "Do not move registry footprints, the pool rings or the gateway without a measured correction. Leave Walk alone.",
+   "accept": [
+    "Each photo has a solved camera with held-out checks",
+    "Photo checks re-recorded through the solved cameras"
+   ],
+   "features": [
+    "main_pool_lawn.json:lawn-pink-paths",
+    "main_pool_lawn.json:lawn-bollards-bins",
+    "main_pool_lawn.json:lawn-white-rooms",
+    "main_pool_lawn.json:enrique-step-finish"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
   },
   {
    "id": "enrique-shop-storey",
@@ -3285,6 +3318,29 @@
    "status": "in-progress",
    "owner": "Codex",
    "notes": "Requested by owner 2026-11-13. Placement remains unapproved because sources lack solved photo cameras; source/form review does not grant placement approval."
+  },
+  {
+   "id": "middle-pool-west-path-material",
+   "area": "middle-pool",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach",
+   "photos": [
+    "IMG_2332.jpg",
+    "IMG_2713.jpg"
+   ],
+   "build": "A high Inspect render shows a tiled Elena route band over the west pool path where both source photos show irregular stone paving. Trace the bounded transition from at least two source views and the aerial before replacing that local material; do not change the entire Elena lane. New round drain follows the currently drawn surface height so it remains visible while this discrepancy stays open.",
+   "avoid": "Do not move pool/deck rings, route axes, planter or terrain, or infer hidden path edges.",
+   "accept": [
+    "Bounded material transition established from source content",
+    "Inspect from west path and pool side matches photographed paving ordering"
+   ],
+   "features": [
+    "street:elena-south"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
   }
  ]
 }

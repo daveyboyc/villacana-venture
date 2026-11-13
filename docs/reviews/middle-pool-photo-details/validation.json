@@ -95,5 +95,31 @@
     "test_reference_index.py": "................F\n======================================================================\nFAIL: test_matcher_picks_up_new_photos (test_scorecard.Scorecard.test_matcher_picks_up_new_photos)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/villacana-venture-baseline/scripts/test_scorecard.py\", line 70, in test_matcher_picks_up_new_photos\n    self.assertTrue(r['ask'] and r['why'] and len(r['at']) == 2 and r['status'] in ('open', 'answered'), r['id'])\nAssertionError: False is not true : jorge-west-walk\n\n----------------------------------------------------------------------\nRan 17 tests in 24.595s\n\nFAILED (failures=1)\n",
     "test_layout_browser.cjs": "page.evaluate: Error: South Dal\u00ed approach has a reachable step at 0.00\n    at eval (eval at evaluate (:370:30), <anonymous>:490:82)\n    at async <anonymous>:396:30\n    at /workspace/villacana-venture-baseline/scripts/test_layout_browser.cjs:31:21 {\n  log: []\n}\n"
   },
-  "scope": "Pool/deck footprints, terrain, original gate transform and collision unchanged. New fitting anchors estimated, placement unapproved."
+  "scope": "Pool/deck footprints, terrain, original gate transform and collision unchanged. New fitting anchors estimated, placement unapproved.",
+  "productionBuild": {
+    "command": "npm run build",
+    "exit": 0,
+    "note": "Reference generation, TypeScript and Vite production build passed on integration source."
+  },
+  "placementGate": {
+    "command": "python3 scripts/check_placement_changes.py --base origin/main",
+    "exit": 1,
+    "failureCount": 263,
+    "note": "New estimated additions lack calibrated packets; shared renderer fingerprints also invalidate historical building/feature packets. No footprints or terrain were changed to make this gate green. Full log retained in placement-gate.txt."
+  },
+  "baselineCommit": "866e166ee1fabee68b6ba4bc2fc9bba325f90b61",
+  "integratedMain": "f76e92c9fc3049826cb9863e25ed6398ceb641f7",
+  "inspectChecks": {
+    "exit": 0,
+    "views": [
+      "courtyard before/after",
+      "west context before/after",
+      "east before/after",
+      "gate context before/after",
+      "Layout",
+      "gate face",
+      "final path/deck surfaces"
+    ],
+    "note": "Final surface check follows actual rendered pavement after draping; initial buried-cover attempts were superseded. No calibrated photographic match claimed."
+  }
 }

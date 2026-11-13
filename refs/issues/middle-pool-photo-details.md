@@ -12,12 +12,12 @@ Task `middle-pool-photo-details` · area **Middle pool** · priority P1 · struc
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2193.jpg`: Middle pool, lawn and terraces behind (ground — pin ±4.7 m)
-- `public/photos-ref/IMG_2194.jpg`: Middle pool, lawn and terraces behind (second shot) (ground — pin ±4.7 m)
-- `public/photos-ref/IMG_2679.jpg`: Middle pool lawn with crazy-paving path and glass-fenced pool, looking west (ground — pin ±2.9 m)
-- `public/photos-ref/IMG_2332.jpg`: Middle pool west side: path between the deck and a raised planter wall (ground — pin ±2.0 m)
-- `public/photos-ref/IMG_2713.jpg`: Crazy-paving path round the glass-fenced middle pool (ground — pin ±2.4 m)
-- `public/photos-ref/IMG_2340.jpg`: Calle Eva: east gateway into the middle pool courtyard (ground — pin ±4.7 m)
+- `public/photos-ref/IMG_2193.jpg`: Middle pool, lawn and terraces behind (ground — pin ±4.7 m; looks at Middle pool, lawn, north patios and twin showers on east lobe)
+- `public/photos-ref/IMG_2194.jpg`: Middle pool, lawn and terraces behind (second shot) (ground — pin ±4.7 m; looks at Middle pool deck and lawn, with overlapping twin shower posts)
+- `public/photos-ref/IMG_2679.jpg`: Middle pool lawn with crazy-paving path and glass-fenced pool, looking west (ground — pin ±2.9 m; looks at Middle pool and east-lobe twin showers beside the life ring)
+- `public/photos-ref/IMG_2332.jpg`: Middle pool west side: path between the deck and a raised planter wall (ground — pin ±2.0 m; looks at Middle pool west stone path, round drain, planter and separate deck lid)
+- `public/photos-ref/IMG_2713.jpg`: Crazy-paving path round the glass-fenced middle pool (ground — pin ±2.4 m; looks at Middle pool west path, drain and deck lid looking towards northwest entrance)
+- `public/photos-ref/IMG_2340.jpg`: Calle Eva: east gateway into the middle pool courtyard (ground — pin ±4.7 m; looks at Middle pool east gateway from Calle Eva, open iron leaf and notices)
 
 ## Build
 

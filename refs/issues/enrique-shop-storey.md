@@ -12,8 +12,8 @@ Task `enrique-shop-storey` · area **Main pool** · priority P2 · structure
 
 ## Photos to build from
 
-- `public/photos-ref/IMG_2775.jpg`: Lane down to the pool building with slot drains (ground — pin ±4.7 m)
-- `public/photos-ref/IMG_2776.jpg`: Steps and ramp at the foot of the lane by the pool building (ground — pin ±4.7 m)
+- `public/photos-ref/IMG_2775.jpg`: Lane down to the pool building with slot drains (ground — pin ±4.7 m; looks at Enrique's shop front with three blue awnings at the head of the steps)
+- `public/photos-ref/IMG_2776.jpg`: Steps and ramp at the foot of the lane by the pool building (ground — pin ±4.7 m; looks at marble-nosed blue-tiled steps up to Enrique's shop beside the lantana planter)
 
 ## Build
 

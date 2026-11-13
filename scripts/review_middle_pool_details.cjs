@@ -7,7 +7,7 @@ const assert = require('node:assert/strict');
 (async () => {
   const before = process.argv.includes('--before'), out = 'docs/reviews/middle-pool-photo-details';
   const { createServer } = await import('vite');
-  const original = before ? execFileSync('git', ['show', '866e166ee1fabee68b6ba4bc2fc9bba325f90b61:src/middle-pool.ts'], { encoding: 'utf8' }) : null;
+  const original = before ? execFileSync('git', ['show', '866e166ee1fabee68b6ba4bc2fc9bba325f90b61:src/middle-pool.ts'], { encoding: 'utf8' }) + '\nexport function settleMiddlePoolPathCover() {}\n' : null;
   const server = await createServer({ server: { host: '127.0.0.1', port: 20000 + Math.floor(Math.random() * 20000), strictPort: false }, logLevel: 'error', plugins: before ? [{ name: 'original-middle-pool-review', enforce: 'pre', load(id) { if (id.endsWith('/src/middle-pool.ts')) return original; } }] : [] });
   await server.listen();
   const site = 'http://127.0.0.1:' + server.httpServer.address().port;
@@ -19,6 +19,7 @@ const assert = require('node:assert/strict');
     page.setDefaultTimeout(180000);
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     const views = before ? [['surfaces', '-136,93,8,65,80', 1], ['inspect', '-129,92,27,45,130', 1], ['west', '-136,93,8,35,260', 1], ['east', '-121.7,90.4,8,25,90', 1], ['gate', '-115.5,81.5,8,20,120', 1]] : [['surfaces', '-136,93,8,65,80', 1], ['inspect', '-129,92,27,45,130', 1], ['west', '-136,93,8,35,260', 1], ['east', '-121.7,90.4,8,25,90', 1], ['gate', '-115.5,81.5,8,20,120', 1], ['layout', '-129,92,27,45,130', 0]];
+    views.push(['gate-face', '-114.984,83.996,6,25,32', 1]);
     for (const [name, inspect, details] of views) {
       const selected = process.argv.find(a => a.startsWith('--views='))?.slice(8).split(',');
       if (selected && !selected.includes(name)) continue;

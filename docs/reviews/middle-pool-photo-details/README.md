@@ -24,7 +24,7 @@ estimated scale there to make their forms legible. Independent source review ide
 two overlapping shower posts and corrected the drain's formerly undersized solid centre.
 It also caught an initially floating deck cap: its final top is now derived from the actual
 asset bounding box and shared `DECK_TOP`, 3 mm above the slab surface. Shower feet sit on
-that same deck top. The path cover follows the existing path datum independently.
+that same deck top. The path cover follows the currently rendered paving surface independently. The first high view exposed an existing tiled Elena ribbon at y=0.27 over this photographed stone-path band; the initial drain was hidden below it. The final drain raycasts onto the actual paving mesh after terrain/house-datum draping, rather than assuming a generic 0.06 m path offset or the undraped road datum. It uses that face's world normal and finishes only 2–3 mm above the surface. This matters because the renderer can move an entire nearby road onto a house datum rather than sample terrain at each point; a centre lift or terrain-only normal left the cover partly buried. Pavement metadata is added only to locate that existing face; no road geometry moves. No lane material or footprint is changed here; the photo/model material discrepancy is retained as open task `middle-pool-west-path-material`.
 
 ## Elevation check
 
@@ -50,9 +50,11 @@ shared route-clearance guard including its full footprint; covers are flush pavi
 Before/after Inspect captures use exactly the same scripted camera per pair:
 
 - `inspect-before.png` / `inspect-after.png`: courtyard context.
-- `west-before.png` / `west-after.png`: path cover and separate deck cap.
+- `west-before.png` / `west-after.png`: retained west context; the planter occludes the covers from this angle.
+- `surfaces-after.png`: higher pool-side Inspect view showing the distinct dark path cover and pale deck cap.
 - `east-before.png` / `east-after.png`: twin shower posts beside the life ring.
-- `gate-before.png` / `gate-after.png`: original open east leaf and added curls.
+- `gate-before.png` / `gate-after.png`: original open east leaf and added curls; this context view is edge-on.
+- `gate-face-after.png`: a face-on Inspect view of the existing leaf, with curls visible and some existing planting occlusion.
 - `layout-after.png`: structural view without the new freestanding Details fittings.
 
 Run `node scripts/review_middle_pool_details.cjs --before` and then without `--before`.

@@ -28,18 +28,18 @@ export function roundPathDrain(diameter: number): THREE.Group {
   const surround = new THREE.Mesh(new THREE.BoxGeometry(diameter * 1.18, .012, diameter * 1.18), new THREE.MeshStandardMaterial({ color: "#b5ad98", roughness: .95 }));
   surround.position.y = -.004; group.add(surround);
   const recess = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, .013, 48), new THREE.MeshStandardMaterial({ color: "#252a28", roughness: .9 }));
-  recess.position.y = .004; group.add(recess);
+  recess.position.y = -.005; group.add(recess);
   const metal = new THREE.MeshStandardMaterial({ color: "#737a70", metalness: .45, roughness: .7 });
   for (const [inner, outer] of [[.86, 1], [.62, .73]]) {
     const ring = new THREE.Mesh(new THREE.RingGeometry(radius * inner, radius * outer, 48), metal);
-    ring.rotation.x = -Math.PI / 2; ring.position.y = .012; group.add(ring);
+    ring.rotation.x = -Math.PI / 2; ring.position.y = .003; group.add(ring);
   }
   const centre = new THREE.Mesh(new THREE.CircleGeometry(radius * .48, 32), metal);
-  centre.rotation.x = -Math.PI / 2; centre.position.y = .012; group.add(centre);
+  centre.rotation.x = -Math.PI / 2; centre.position.y = .003; group.add(centre);
   for (let i = 0; i < 4; i++) {
-    const bridge = new THREE.Mesh(new THREE.BoxGeometry(radius * .52, .008, .016), metal);
+    const bridge = new THREE.Mesh(new THREE.BoxGeometry(radius * .52, .004, .016), metal);
     const a = i * Math.PI / 2;
-    bridge.position.set(Math.cos(a) * radius * .74, .01, Math.sin(a) * radius * .74);
+    bridge.position.set(Math.cos(a) * radius * .74, 0, Math.sin(a) * radius * .74);
     bridge.rotation.y = -a; group.add(bridge);
   }
   return group;

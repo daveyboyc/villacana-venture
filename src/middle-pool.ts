@@ -178,7 +178,7 @@ function addMiddlePoolDetails(scene: THREE.Scene, canPlace: (x: number, z: numbe
       // IMG_2679 resolves two parallel posts that overlap in IMG_2193/2194.
       for (const x of [-.19, .19]) { const post = poolShower(fitting.height!); post.position.x = x; group.add(post); }
     } else group = fitting.kind === "drain" ? roundPathDrain(fitting.diameter!) : poolAccessCap(fitting.diameter!);
-    const y = fitting.kind === "shower" ? DECK_TOP : fitting.kind === "cap" ? DECK_TOP + .003 - new THREE.Box3().setFromObject(group).max.y : fitting.y ?? 0;
+    const y = fitting.kind === "shower" ? DECK_TOP : fitting.kind === "cap" ? DECK_TOP + .003 - new THREE.Box3().setFromObject(group).max.y : .06;
     group.position.set(x, y, z);
     group.rotation.y = (fitting.turn ?? 0) * Math.PI / 180;
     group.name = fitting.id;
@@ -186,6 +186,24 @@ function addMiddlePoolDetails(scene: THREE.Scene, canPlace: (x: number, z: numbe
     group.traverse(o => { if (o instanceof THREE.Mesh) o.castShadow = o.receiveShadow = true; });
     scene.add(group);
   }
+}
+
+/** Settle the path cover onto the actual drawn lane, after terrain/house-datum draping. */
+export function settleMiddlePoolPathCover(scene: THREE.Scene): void {
+  const cover = scene.getObjectByName("middle-pool-west-path-drain");
+  if (!cover) return; // Layout omits the fitting.
+  scene.updateMatrixWorld(true);
+  const surfaces: THREE.Object3D[] = [];
+  scene.traverse(o => { if (o.userData.pavingSurface) surfaces.push(o); });
+  const ray = new THREE.Raycaster(new THREE.Vector3(cover.position.x, 100, cover.position.z), new THREE.Vector3(0,-1,0));
+  const hit = ray.intersectObjects(surfaces, false)[0];
+  if (!hit?.face) return;
+  const normal = hit.face.normal.clone().applyNormalMatrix(new THREE.Matrix3().getNormalMatrix(hit.object.matrixWorld));
+  if (normal.y < 0) normal.negate();
+  cover.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), normal);
+  cover.position.y = hit.point.y; // Asset's rim/top is 2–3 mm above its origin.
+  cover.userData.noDrape = true;
+  cover.userData.pavingSettled = true;
 }
 
 /** A ring shrunk inward by `d`, each edge moved parallel and neighbours re-intersected. */
