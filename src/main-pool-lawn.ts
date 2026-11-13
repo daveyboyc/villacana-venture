@@ -17,6 +17,15 @@ import type { Vec2 } from "./types";
  * ground height, and the group is not draped again. */
 
 const Y = LOWER_POOL_Y;
+
+/**
+ * South faces of the houses behind the main-pool lawn, the row seen from Barraka's
+ * awning (IMG_2609, IMG_2607). Those fronts are plain white. The generated tiled
+ * porch roofs were reading as a brown awning on every bay.
+ */
+export function inLawnPlainFront(x: number, z: number, nz: number): boolean {
+  return nz > 0.35 && x > -48 && x < 58 && z > 30 && z < 100;
+}
 const flight = {
   points: layout.levels.enriqueSteps.points.map(poolLevelPoint),
   width: layout.levels.enriqueSteps.width,
