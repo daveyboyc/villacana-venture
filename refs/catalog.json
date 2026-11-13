@@ -7825,8 +7825,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-sea-hedge",
-   "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Comunidad Villacana sign on the Guillermo gate wall"
@@ -11929,7 +11929,7 @@
    "main_pool_lawn.json:lawn-sea-hedge",
    "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo",
-   "main_pool_lawn.json:lawn-pink-paths"
+   "main_pool_lawn.json:lawn-bollards-bins"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
@@ -12020,6 +12020,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-sea-hedge",
+   "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-pink-paths",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
@@ -12059,14 +12060,15 @@
    "main_pool_lawn.json:lawn-bollards-bins"
   ],
   "looksAt": [
-   -5.9,
-   126.4
+   -10.0,
+   110.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-pink-paths",
-   "main_pool_lawn.json:lawn-bollards-bins"
-  ]
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-pink-paths"
+  ],
+  "subject": "pink lawn path to the main pool with bollards and a slatted bin beside it"
  },
  {
   "id": "IMG_2604.jpg",
@@ -16777,11 +16779,18 @@
    "main_pool_lawn.json:lawn-sea-hedge"
   ],
   "looksAt": [
-   9.1,
-   113.8
+   -5.0,
+   133.4
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "area:paseo",
+   "main_pool_lawn.json:lawn-pink-paths",
+   "seafront_fence.json:guillermo-ramp-wall"
+  ],
+  "subject": "arched beach gateway at the end of the pink path, bin and bollard beside it",
+  "headingOff": 63
  },
  {
   "id": "IMG_2760.jpg",
@@ -16852,14 +16861,15 @@
    "main_pool_lawn.json:lawn-sea-hedge"
   ],
   "looksAt": [
-   -7.0,
-   119.8
+   -4.0,
+   121.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-pink-paths",
-   "main_pool_lawn.json:lawn-bollards-bins"
-  ]
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "main_pool_lawn.json:lawn-pink-paths"
+  ],
+  "subject": "lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing"
  },
  {
   "id": "IMG_2762.jpg",
@@ -16888,16 +16898,18 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-white-rooms"
   ],
   "looksAt": [
-   -11.7,
-   128.5
+   -12.7,
+   131.4
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-white-rooms"
-  ]
+  ],
+  "subject": "strelitzia and silver bush in a white walled corner on the lawn"
  },
  {
   "id": "IMG_2763.jpg",
@@ -16934,16 +16946,17 @@
    "main_pool_lawn.json:lawn-sea-hedge"
   ],
   "looksAt": [
-   -6.3,
-   134.5
+   -8.5,
+   135.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-flagstone-apron",
+   "main_pool_lawn.json:lawn-white-rooms",
    "seafront_fence.json:guillermo-ramp-wall",
-   "area:paseo",
-   "main_pool_lawn.json:lawn-pink-paths"
-  ]
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "area:paseo"
+  ],
+  "subject": "flagstone path between the hedge and the round white wall, mesh sea fence beyond"
  },
  {
   "id": "IMG_2764.jpg",
@@ -17026,14 +17039,15 @@
    "main_pool_lawn.json:lawn-white-rooms"
   ],
   "looksAt": [
-   -6.9,
-   127.3
+   -12.0,
+   108.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-pink-paths"
-  ]
+  ],
+  "subject": "pink path to the main pool, the tall palm at the pool corner and the wave-roofed building"
  },
  {
   "id": "IMG_2766.jpg",
@@ -17362,15 +17376,16 @@
    "main_pool_lawn.json:enrique-shop-front"
   ],
   "looksAt": [
-   -33.1,
-   99.5
+   -35.7,
+   96.2
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:enrique-step-finish",
    "backdrop.json:aerial-trees",
+   "main_pool_lawn.json:enrique-step-finish",
    "street:guillermo"
-  ]
+  ],
+  "subject": "Enrique's shop front with three blue awnings at the head of the steps"
  },
  {
   "id": "IMG_2776.jpg",
@@ -17405,15 +17420,16 @@
    "main_pool_lawn.json:enrique-shop-front"
   ],
   "looksAt": [
-   -34.6,
-   97.6
+   -34.5,
+   98.5
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
    "main_pool_lawn.json:enrique-step-finish",
+   "backdrop.json:aerial-trees",
    "street:guillermo"
-  ]
+  ],
+  "subject": "marble-nosed blue-tiled steps up to Enrique's shop beside the lantana planter"
  },
  {
   "id": "IMG_2777.jpg",
@@ -17447,14 +17463,18 @@
    "main_pool_lawn.json:enrique-step-finish"
   ],
   "looksAt": [
-   -27.9,
-   100.2
+   -31.0,
+   104.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "main_pool_lawn.json:enrique-step-finish",
+   "jorge_lane.json:jorge-lane-guillermo-planter",
    "main_pool_lawn.json:main-pool-deck-tiles",
    "backdrop.json:aerial-trees"
-  ]
+  ],
+  "subject": "marble nosing and blue risers at the top of Enrique's steps, terracotta paving and the pool below",
+  "headingOff": 49
  },
  {
   "id": "IMG_2778.jpg",

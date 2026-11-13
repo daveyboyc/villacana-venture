@@ -487,8 +487,8 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 7,
-     "differs": 3,
+     "matches": 9,
+     "differs": 11,
      "not-comparable": 7
     },
     "camerasSolved": 0,
@@ -503,7 +503,7 @@
    "placement": {
     "features": 12,
     "verified": 0,
-    "disputed": 1
+    "disputed": 7
    },
    "discrepancies": [
     {
@@ -513,10 +513,42 @@
     {
      "id": "photo-discrepancy:f89b5484edc8b5c0",
      "feature": "jorge_lane.json:jorge-lane-guillermo-west"
+    },
+    {
+     "id": "photo-discrepancy:6e71d316ef8e6f5c",
+     "feature": "main_pool_lawn.json:lawn-pink-paths"
+    },
+    {
+     "id": "photo-discrepancy:f1d1806b8b78bea2",
+     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
+    },
+    {
+     "id": "photo-discrepancy:58d14a627ceb2ff9",
+     "feature": "main_pool_lawn.json:lawn-bollards-bins"
+    },
+    {
+     "id": "photo-discrepancy:4187d7425a4ae65c",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:f0c43f8955aabe66",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:22a1de7708736762",
+     "feature": "main_pool_lawn.json:enrique-shop-front"
+    },
+    {
+     "id": "photo-discrepancy:06e6a5e24465d688",
+     "feature": "main_pool_lawn.json:enrique-step-finish"
+    },
+    {
+     "id": "photo-discrepancy:a8b13c9a85961a47",
+     "feature": "main_pool_lawn.json:enrique-step-finish"
     }
    ],
    "tasks": {
-    "open": 2,
+    "open": 3,
     "inProgress": 5,
     "titles": [
      "Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall",
@@ -537,11 +569,11 @@
     "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
     "How sure: 0 photographed, 12 estimated, 0 inferred, 2 known gaps.",
-    "Placement: 0 of 12 features verified, 2 open discrepancies."
+    "Placement: 0 of 12 features verified, 10 open discrepancies."
    ],
    "light": {
     "colour": "amber",
-    "headline": "Photos in: 2 photo requests answered, waiting for review, 7 build tasks open, 2 open discrepancies",
+    "headline": "Photos in: 2 photo requests answered, waiting for review, 8 build tasks open, 10 open discrepancies",
     "requests": [
      {
       "id": "beach-gateway",
@@ -1372,7 +1404,7 @@
     "placed": 149,
     "checks": {
      "matches": 26,
-     "differs": 8,
+     "differs": 10,
      "not-comparable": 11
     },
     "camerasSolved": 0,
@@ -1803,8 +1835,8 @@
     "tagged": 58,
     "placed": 57,
     "checks": {
-     "matches": 0,
-     "differs": 0,
+     "matches": 1,
+     "differs": 3,
      "not-comparable": 19
     },
     "camerasSolved": 0,
@@ -1926,8 +1958,8 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 44,
-     "differs": 18,
+     "matches": 46,
+     "differs": 26,
      "not-comparable": 57
     },
     "camerasSolved": 7,
@@ -1954,7 +1986,7 @@
    "placement": {
     "features": 425,
     "verified": 0,
-    "disputed": 15
+    "disputed": 21
    },
    "discrepancies": [
     {
@@ -2056,10 +2088,42 @@
     {
      "id": "photo-discrepancy:d9aa2b2456ecf4d4",
      "feature": "jorge_lane.json:jorge-lane-gateway"
+    },
+    {
+     "id": "photo-discrepancy:6e71d316ef8e6f5c",
+     "feature": "main_pool_lawn.json:lawn-pink-paths"
+    },
+    {
+     "id": "photo-discrepancy:f1d1806b8b78bea2",
+     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
+    },
+    {
+     "id": "photo-discrepancy:58d14a627ceb2ff9",
+     "feature": "main_pool_lawn.json:lawn-bollards-bins"
+    },
+    {
+     "id": "photo-discrepancy:4187d7425a4ae65c",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:f0c43f8955aabe66",
+     "feature": "main_pool_lawn.json:lawn-white-rooms"
+    },
+    {
+     "id": "photo-discrepancy:22a1de7708736762",
+     "feature": "main_pool_lawn.json:enrique-shop-front"
+    },
+    {
+     "id": "photo-discrepancy:06e6a5e24465d688",
+     "feature": "main_pool_lawn.json:enrique-step-finish"
+    },
+    {
+     "id": "photo-discrepancy:a8b13c9a85961a47",
+     "feature": "main_pool_lawn.json:enrique-step-finish"
     }
    ],
    "tasks": {
-    "open": 41,
+    "open": 42,
     "inProgress": 47,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -2080,7 +2144,7 @@
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 57 photographed, 123 estimated, 12 inferred, 21 known gaps.",
-    "Placement: 0 of 425 features verified, 25 open discrepancies."
+    "Placement: 0 of 425 features verified, 33 open discrepancies."
    ],
    "light": {
     "colour": "red",
