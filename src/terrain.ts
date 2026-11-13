@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import data from "../data/terrain.json";
+import mainPool from "../data/main_pool.json";
 import { centroid, clamp, closestOnSegment, pointInRing } from "./geom";
 import type { Vec2 } from "./types";
 
@@ -18,10 +19,46 @@ const RAMP_BLEND = 3;
  * The surveyed ground: each 2 m cell is split into two flat triangles along its diagonal
  * (from its low-x, low-z corner), so every draped surface cut along the same lines lies exactly on it.
  */
-function surveyed(x: number, z: number): number {
+/**
+ * The lowered main-pool area (data/main_pool.json lowerArea, less its holes, in world metres). Its
+ * grid nodes hold the survey plus the drop (scripts/lidar_check.py grid, `sunk`), the nodes round it
+ * the survey alone, so a cell across its edge mixes two datums 3 m apart. Each side reads the other
+ * side's nodes on its own datum instead, so the ground meets the edge cleanly from both sides: a real
+ * step where the survey has one (Calle Guillermo), next to none where it has none (east of the lawn).
+ */
+const turned = ([x, z]: number[]): Vec2 => [x * COS + z * SIN, -x * SIN + z * COS];
+const loweredRing = mainPool.levels.lowerArea.map(turned), loweredHoles = (mainPool.levels.lowerHoles as number[][][]).map((r) => r.map(turned));
+const loweredBox = { minX: Math.min(...loweredRing.map((p) => p[0])), maxX: Math.max(...loweredRing.map((p) => p[0])), minZ: Math.min(...loweredRing.map((p) => p[1])), maxZ: Math.max(...loweredRing.map((p) => p[1])) };
+const DROP_CM = Math.round(((data as { loweredDrop?: number }).loweredDrop ?? mainPool.levels.drop) * 100);
+/** Whether a point is in the lowered main-pool area (the same test as poolGroundY). */
+export function inLoweredArea(x: number, z: number): boolean {
+  if (x < loweredBox.minX || x > loweredBox.maxX || z < loweredBox.minZ || z > loweredBox.maxZ) return false;
+  return pointInRing(x, z, loweredRing) && !loweredHoles.some((r) => pointInRing(x, z, r));
+}
+const sunkNode = new Map<number, boolean>();
+const nodeSunk = (i: number, j: number): boolean => {
+  const key = j * grid.nx + i;
+  let sunk = sunkNode.get(key);
+  if (sunk === undefined) { sunk = inLoweredArea(grid.x0 + i * grid.step, grid.z0 + j * grid.step); sunkNode.set(key, sunk); }
+  return sunk;
+};
+
+function surveyed(x: number, z: number, sunk = inLoweredArea(x, z)): number {
   const u = clamp((x - grid.x0) / grid.step, 0, grid.nx - 1.001), v = clamp((z - grid.z0) / grid.step, 0, grid.nz - 1.001);
-  const i = Math.floor(u), j = Math.floor(v), fu = u - i, fv = v - j, row = grid.cm[j], next = grid.cm[j + 1];
-  const y = fu >= fv ? row[i] + fu * (row[i + 1] - row[i]) + fv * (next[i + 1] - row[i + 1]) : row[i] + fv * (next[i] - row[i]) + fu * (next[i + 1] - next[i]);
+  const i = Math.floor(u), j = Math.floor(v), fu = u - i, fv = v - j;
+  const near = grid.x0 + i * grid.step >= loweredBox.minX - grid.step && grid.x0 + i * grid.step <= loweredBox.maxX + grid.step && grid.z0 + j * grid.step >= loweredBox.minZ - grid.step && grid.z0 + j * grid.step <= loweredBox.maxZ + grid.step;
+  // A node on the other side of the lowered edge is read on this side's datum when that brings it
+  // nearer this side's corners of the cell. The generator holds pool decks level across both sides,
+  // so a node beside the deck can already be on this side's datum; then it is left as it is.
+  const corners = [[i, j], [i + 1, j], [i, j + 1], [i + 1, j + 1]], own = near ? corners.filter(([a, b]) => nodeSunk(a, b) === sunk) : corners;
+  const ref = own.length && own.length < 4 ? own.reduce((t, [a, b]) => t + grid.cm[b][a], 0) / own.length : NaN;
+  const at = (a: number, b: number): number => {
+    const v = grid.cm[b][a];
+    if (!near || nodeSunk(a, b) === sunk) return v;
+    const moved = v + (sunk ? DROP_CM : -DROP_CM);
+    return Number.isNaN(ref) || Math.abs(moved - ref) < Math.abs(v - ref) ? moved : v;
+  };
+  const y = fu >= fv ? at(i, j) + fu * (at(i + 1, j) - at(i, j)) + fv * (at(i + 1, j + 1) - at(i + 1, j)) : at(i, j) + fv * (at(i, j + 1) - at(i, j)) + fu * (at(i + 1, j + 1) - at(i, j + 1));
   return y / 100;
 }
 
@@ -47,10 +84,24 @@ function facetted(minX: number, maxX: number, minZ: number, maxZ: number): boole
  * line the seafront heights take over.
  */
 export function siteY(x: number, z: number): number {
+  return siteOn(x, z, inLoweredArea(x, z));
+}
+/** siteY for a surface known to lie in the lowered area (the lawn), even on its edge. */
+export function siteYLowered(x: number, z: number): number {
+  return siteOn(x, z, true);
+}
+/** siteY for a surface known to lie outside the lowered area (the street-level sheet), even on its edge. */
+export function siteYStreet(x: number, z: number): number {
+  return siteOn(x, z, false);
+}
+/** The draping functions whose ground lies on the survey's flat facets. */
+const facetGround = new Set<(x: number, z: number) => number>([siteY, siteYLowered, siteYStreet]);
+
+function siteOn(x: number, z: number, sunk: boolean): number {
   const tz = x * SIN + z * COS;
   const seaward = 1 - clamp((tz - grid.fade[0]) / (grid.fade[1] - grid.fade[0]), 0, 1);
   if (!seaward) return 0;
-  let y = surveyed(x, z);
+  let y = surveyed(x, z, sunk);
   for (const r of ramps) {
     const dx = x - r.foot[0], dz = z - r.foot[1], along = dx * r.up[0] + dz * r.up[1], across = Math.abs(dz * r.up[0] - dx * r.up[1]);
     const below = Math.max(-1 - along, 0) / r.behind, beyond = Math.max(along - (r.run + 1.5), 0) / RAMP_BLEND, aside = Math.max(across - r.halfWidth, 0) / RAMP_BLEND;
@@ -148,11 +199,11 @@ export function refine(geometry: THREE.BufferGeometry, heightAt: (x: number, z: 
     poly.forEach((q, k) => { const r = poly[(k + 1) % poly.length].p; normal[0] += (q.p[1] - r[1]) * (q.p[2] + r[2]); normal[1] += (q.p[2] - r[2]) * (q.p[0] + r[0]); normal[2] += (q.p[0] - r[0]) * (q.p[1] + r[1]); });
     if (Math.hypot(...normal) < 1e-6) return;
     const xs = poly.map((q) => q.w[0]), zs = poly.map((q) => q.w[1]);
-    const exact = heightAt === siteY && facetted(Math.min(...xs), Math.max(...xs), Math.min(...zs), Math.max(...zs));
+    const exact = facetGround.has(heightAt) && facetted(Math.min(...xs), Math.max(...xs), Math.min(...zs), Math.max(...zs));
     for (let k = 1; k < poly.length - 1; k++) emit(poly[0], poly[k], poly[k + 1], exact ? 0 : 8);
   };
   const cut = (a: P, b: P, c: P): void => {
-    if (heightAt !== siteY) { emit(a, b, c, 8); return; }
+    if (!facetGround.has(heightAt)) { emit(a, b, c, 8); return; }
     const xs = [a.w[0], b.w[0], c.w[0]], zs = [a.w[1], b.w[1], c.w[1]];
     // Seaward of the fade the ground is the seafront's own: siteY is zero there.
     if (Math.min(...xs.map((x, k) => x * SIN + zs[k] * COS)) >= grid.fade[1]) { emit(a, b, c, 0); return; }
@@ -254,7 +305,9 @@ export function drapeScene(scene: THREE.Scene, buildings: { ring: Vec2[] }[]): v
     if (mesh.isMesh && (Math.max(size.x, size.z) > 45 || uneven)) {
       // Long, or on sloping ground away from a house: bend it over the ground.
       const old = mesh.geometry;
-      mesh.geometry = refine(old, siteY, mesh.matrixWorld);
+      // The lawn and the street sheet meet on the lowered edge: each is draped on its own side.
+      const side = object.userData.siteSide === "lowered" ? siteYLowered : object.userData.siteSide === "street" ? siteYStreet : siteY;
+      mesh.geometry = refine(old, side, mesh.matrixWorld);
       if (mesh.geometry !== old) old.dispose();
       continue;
     }

@@ -4,14 +4,17 @@ import data from "../data/main_pool_lawn.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { centroid, closestOnSegment, pointInRing } from "./geom";
 import { plasterMaterial } from "./materials";
-import { accessSection, LOWER_POOL_Y, poolLevelPoint } from "./pool-levels";
+import { accessSection, LOWER_POOL_Y, poolGroundY, poolLevelPoint } from "./pool-levels";
+import { addKitModel } from "./pool-kit";
 import { addSprites } from "./sprites";
+import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import type { Vec2 } from "./types";
 
 /** Pink paths, flagstones, lawn walls and the step finish (data/main_pool_lawn.json).
  * The glass fence the November photos show stays out: Dave, 2026-10-11, and again 2026-11-12.
- * World metres, the same frame as the camera pins. The lawn surface is the lowered pool deck, so
- * every piece is built at that height and not draped again. */
+ * World metres, the same frame as the camera pins. The lawn follows the laser-survey ground (about
+ * -2.2 to -2.8 m, not the old flat -3 m deck), so every piece stands on `ground`, the game's live
+ * ground height, and the group is not draped again. */
 
 const Y = LOWER_POOL_Y;
 const flight = {
@@ -96,7 +99,39 @@ export function lawnSolidRings(): Vec2[][] {
   return wallRings();
 }
 
-function ribbonMesh(points: Vec2[], half: number, y: number, material: THREE.Material, name: string): THREE.Mesh {
+type Ground = (x: number, z: number) => number;
+
+/** The same line with a point at least every `step` metres, so a surface laid on it follows the ground. */
+function densify(points: Vec2[], step: number): Vec2[] {
+  const out: Vec2[] = [points[0]];
+  for (let i = 1; i < points.length; i++) {
+    const a = points[i - 1], b = points[i], n = Math.max(1, Math.ceil(Math.hypot(b[0] - a[0], b[1] - a[1]) / step));
+    for (let k = 1; k <= n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]);
+  }
+  return out;
+}
+
+/** Split every triangle into four, `levels` times, then lay each vertex on the ground. */
+function layOnGround(geometry: THREE.BufferGeometry, ground: Ground, lift: number, levels: number): THREE.BufferGeometry {
+  let g = geometry.index ? geometry.toNonIndexed() : geometry;
+  for (let l = 0; l < levels; l++) {
+    const p = g.getAttribute("position"), out: number[] = [];
+    for (let t = 0; t < p.count; t += 3) {
+      const v = [0, 1, 2].map((k) => new THREE.Vector3().fromBufferAttribute(p, t + k));
+      const m = [[0, 1], [1, 2], [2, 0]].map(([a, b]) => v[a].clone().add(v[b]).multiplyScalar(0.5));
+      for (const tri of [[v[0], m[0], m[2]], [m[0], v[1], m[1]], [m[2], m[1], v[2]], [m[0], m[1], m[2]]]) for (const q of tri) out.push(q.x, q.y, q.z);
+    }
+    g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.Float32BufferAttribute(out, 3));
+  }
+  const p = g.getAttribute("position"), uv: number[] = [];
+  for (let i = 0; i < p.count; i++) { p.setY(i, ground(p.getX(i), p.getZ(i)) + lift); uv.push(p.getX(i), p.getZ(i)); }
+  g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
+  g.computeVertexNormals();
+  return g;
+}
+
+function ribbonMesh(line: Vec2[], half: number, ground: Ground, lift: number, material: THREE.Material, name: string): THREE.Mesh {
+  const points = densify(line, 0.6);
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
   let run = 0;
   const at = (i: number): Vec2 => {
@@ -108,7 +143,7 @@ function ribbonMesh(points: Vec2[], half: number, y: number, material: THREE.Mat
     if (i) run += Math.hypot(p[0] - points[i - 1][0], p[1] - points[i - 1][1]);
     const d = at(i), n = Math.hypot(d[0], d[1]) || 1;
     const nx = (d[1] / n) * half, nz = (-d[0] / n) * half;
-    for (const side of [-1, 1]) { pos.push(p[0] + nx * side, y, p[1] + nz * side); uv.push(run / 2.4, side * half); }
+    for (const side of [-1, 1]) { const x = p[0] + nx * side, z = p[1] + nz * side; pos.push(x, ground(x, z) + lift, z); uv.push(run / 2.4, side * half); }
     if (i) { const b = (i - 1) * 2; idx.push(b, b + 1, b + 2, b + 1, b + 3, b + 2); }
   });
   const geo = new THREE.BufferGeometry();
@@ -164,7 +199,9 @@ function fanPalm(): THREE.Group {
   return g;
 }
 
-function addSteps(group: THREE.Group, details: boolean): void {
+function addSteps(group: THREE.Group, details: boolean, ground: Ground): void {
+  // The flight is draped onto the survey like the rest of the pool level: follow the same offset.
+  const lift = (p: Vec2): number => ground(p[0], p[1]) - poolGroundY(p[0], p[1]);
   const tile = new THREE.MeshStandardMaterial({ map: riserTexture(), roughness: 0.8 });
   const marble = new THREE.MeshStandardMaterial({ color: "#f7f4ee", roughness: 0.35 });
   const iron = new THREE.MeshStandardMaterial({ color: "#1c2420", roughness: 0.4, metalness: 0.55 });
@@ -175,15 +212,17 @@ function addSteps(group: THREE.Group, details: boolean): void {
     const dx = B.r[0] - B.l[0], dz = B.r[1] - B.l[1], len = Math.hypot(dx, dz) || 1;
     const yaw = -Math.atan2(dz, dx) + Math.PI / 2;
     const mid: Vec2 = [(B.l[0] + B.r[0]) / 2, (B.l[1] + B.r[1]) / 2];
-    const nose = box("enrique-nosing", 0.09, 0.025, len, marble, mid, top + 0.02, yaw);
+    const shift = lift(mid);
+    const nose = box("enrique-nosing", 0.09, 0.025, len, marble, mid, top + shift + 0.02, yaw);
     group.add(nose);
-    const riser = box("enrique-riser", 0.02, Math.max(0.08, top - foot), len, tile, mid, (top + foot) / 2, yaw);
+    const riser = box("enrique-riser", 0.02, Math.max(0.08, top - foot), len, tile, mid, (top + foot) / 2 + shift, yaw);
     group.add(riser);
     if (details) {
       const rail = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, Math.hypot(B.r[0] - A.r[0], B.r[1] - A.r[1]) || 0.2, 6), iron);
       rail.name = "enrique-handrail";
-      rail.position.set((A.r[0] + B.r[0]) / 2, top + 0.9, (A.r[1] + B.r[1]) / 2);
-      rail.lookAt(B.r[0], top + 0.9, B.r[1]); rail.rotateX(Math.PI / 2);
+      const railY = top + lift(A.r) + 0.9;
+      rail.position.set((A.r[0] + B.r[0]) / 2, railY, (A.r[1] + B.r[1]) / 2);
+      rail.lookAt(B.r[0], railY, B.r[1]); rail.rotateX(Math.PI / 2);
       group.add(rail);
     }
   }
@@ -192,31 +231,67 @@ function addSteps(group: THREE.Group, details: boolean): void {
   bed.forEach((p, i) => {
     if (i % 2) return;
     const shrub = looseShrub({ width: 1.15, depth: 0.7, height: 0.42, seed: 80 + i, leaf: "small", leafSize: [0.05, 0.035], greens: ["#4f7038", "#5d8242", "#3f5c2e"], stems: 4, flowers: { count: 70, colour: i % 4 ? "#f0b320" : "#ee7a18" } });
-    shrub.position.set(p[0], Y + 0.4, p[1]); shrub.name = "enrique-lantana"; group.add(shrub);
+    shrub.position.set(p[0], Y + lift(p) + 0.4, p[1]); shrub.name = "enrique-lantana"; group.add(shrub);
   });
   const palm = fanPalm();
   const at = bed[Math.floor(bed.length / 2)];
-  palm.position.set(at[0], Y + 0.35, at[1]); palm.name = "enrique-fan-palm"; group.add(palm);
+  palm.position.set(at[0], Y + lift(at) + 0.35, at[1]); palm.name = "enrique-fan-palm"; group.add(palm);
 }
 
-function addShop(group: THREE.Group): void {
-  const at = data.shop.at as Vec2;
-  const c = document.createElement("canvas"); c.width = 256; c.height = 64;
+/** One blue box awning: a sloping canvas top, a lettered valance in front and plain sides and back. */
+function boxAwning(text: string, width: number): THREE.Group {
+  const c = document.createElement("canvas"); c.width = 512; c.height = 48;
   const g = c.getContext("2d")!;
-  g.fillStyle = "#1d4e86"; g.fillRect(0, 0, 256, 64);
-  g.fillStyle = "#f4f7fb"; g.font = "22px sans-serif"; g.fillText("BAR & RESTAURANTE", 16, 40);
-  const cloth = new THREE.MeshStandardMaterial({ map: new THREE.CanvasTexture(c), roughness: 0.9, side: THREE.DoubleSide });
-  (cloth.map as THREE.CanvasTexture).colorSpace = THREE.SRGBColorSpace;
-  const awning = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 0.7), cloth);
-  awning.name = "enrique-awning"; awning.position.set(at[0], 2.35, at[1]); awning.rotation.x = -0.15;
-  group.add(awning);
-  const board = box("enrique-menu", 0.7, 0.9, 0.04, plasterMaterial("#f7f4ee"), [at[0] - 1.4, at[1] + 0.4], 1.7);
-  group.add(board);
-  const lamp = box("enrique-lantern", 0.22, 0.36, 0.22, new THREE.MeshStandardMaterial({ color: "#d9d3c4", roughness: 0.4 }), [at[0] + 1.3, at[1] - 0.2], 2.5);
-  group.add(lamp);
+  g.fillStyle = "#1d4e86"; g.fillRect(0, 0, 512, 48);
+  g.fillStyle = "#f4f7fb"; g.font = "bold 24px sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+  g.fillText(text, 256, 25, 492);
+  const map = new THREE.CanvasTexture(c); map.colorSpace = THREE.SRGBColorSpace;
+  const cloth = new THREE.MeshStandardMaterial({ color: "#1d4e86", roughness: 0.9, side: THREE.DoubleSide });
+  const lettered = new THREE.MeshStandardMaterial({ map, roughness: 0.9 });
+  const awning = new THREE.Group();
+  const depth = 0.75, drop = 0.28;
+  const top = new THREE.Mesh(new THREE.PlaneGeometry(width, Math.hypot(depth, 0.3)), cloth);
+  top.rotation.x = -Math.PI / 2 + Math.atan2(0.3, depth); top.position.set(0, 0.15, depth / 2); awning.add(top);
+  // Lettering faces out from the wall only; seen from behind the valance is plain cloth.
+  const valance = new THREE.Mesh(new THREE.PlaneGeometry(width, drop), lettered);
+  valance.position.set(0, -drop / 2, depth); awning.add(valance);
+  const back = new THREE.Mesh(new THREE.PlaneGeometry(width, drop), cloth);
+  back.rotation.y = Math.PI; back.position.set(0, -drop / 2, depth - 0.002); awning.add(back);
+  for (const side of [-1, 1]) {
+    const cheek = new THREE.Mesh(new THREE.PlaneGeometry(depth, drop + 0.3), cloth);
+    cheek.rotation.y = Math.PI / 2; cheek.position.set(side * width / 2, 0, depth / 2); awning.add(cheek);
+  }
+  return awning;
 }
 
-function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): void {
+/**
+ * The shop front at the head of Enrique's steps (IMG_2775, IMG_2776): three blue box awnings in a row
+ * along the facade, lettered as photographed, a wall lantern above the first, menu boards to its left.
+ * The facade faces the lane (south), as the lane photos look north at it; the anchor is estimated.
+ */
+function addShop(group: THREE.Group, ground: Ground): void {
+  const at = data.shop.at as Vec2, base = ground(at[0], at[1]);
+  const front = new THREE.Group(); front.name = "enrique-shop-front"; front.position.set(at[0], base, at[1]);
+  const awnings: [string, number][] = [["FISH PORTIONS · MEATS · PUBLIC PEOPLE", 2.1], ["RACIONES · PESCADOS · CARNES · PIZZAS", 2.1], ["BAR & RESTAURANTE ENRIQUE", 2.3]];
+  const span = awnings.reduce((t, [, w]) => t + w, 0) + 0.5 * (awnings.length - 1);
+  let x = -span / 2;
+  for (const [text, width] of awnings) {
+    const awning = boxAwning(text, width); awning.name = "enrique-awning";
+    awning.position.set(x + width / 2, 2.45, 0); front.add(awning);
+    x += width + 0.5;
+  }
+  const board = plasterMaterial("#f7f4ee");
+  for (const [dx, w] of [[-span / 2 - 0.9, 0.6], [-span / 2 - 0.3, 0.3]] as const) front.add(box("enrique-menu", w, 0.8, 0.03, board, [dx, 0.03], 1.65));
+  const lamp = new THREE.MeshStandardMaterial({ color: "#2b2b28", roughness: 0.5, metalness: 0.4 });
+  const glass = new THREE.MeshStandardMaterial({ color: "#f1ead8", emissive: "#5a5040", roughness: 0.3 });
+  const lx = -span / 2 + 1.0;
+  front.add(box("enrique-lantern-arm", 0.04, 0.04, 0.35, lamp, [lx, 0.18], 3.15));
+  front.add(box("enrique-lantern", 0.2, 0.3, 0.2, glass, [lx, 0.35], 3.0));
+  front.add(box("enrique-lantern-cap", 0.26, 0.06, 0.26, lamp, [lx, 0.35], 3.18));
+  group.add(front);
+}
+
+function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[], ground: Ground): void {
   const c = centroid(mainRing);
   const terracotta = new THREE.MeshStandardMaterial({ color: "#c4745a", roughness: 0.92, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   const mat = new THREE.MeshStandardMaterial({ color: "#3f8f62", roughness: 0.85, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -3, polygonOffsetUnits: -3 });
@@ -233,9 +308,9 @@ function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): voi
     if (Math.hypot(mid[0] + 31, mid[1] - 105) > 8) continue;
     if (nearRing(mid, toddlerRing, 0.8)) continue;
     const b = pos.length / 3;
-    for (const p of [inner[i], outer[i], outer[j], inner[j]]) pos.push(p[0], Y + 0.025, p[1]);
+    for (const p of [inner[i], outer[i], outer[j], inner[j]]) pos.push(p[0], ground(p[0], p[1]) + 0.025, p[1]);
     idx.push(b, b + 1, b + 2, b, b + 2, b + 3);
-    if (dz / n > 0.45) for (const p of [inner[i], pushOut([samples[i]], 0.55)[0], pushOut([samples[j]], 0.55)[0], inner[j]]) matPos.push(p[0], Y + 0.03, p[1]);
+    if (dz / n > 0.45) for (const p of [inner[i], pushOut([samples[i]], 0.55)[0], pushOut([samples[j]], 0.55)[0], inner[j]]) matPos.push(p[0], ground(p[0], p[1]) + 0.03, p[1]);
   }
   const geo = new THREE.BufferGeometry();
   geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
@@ -251,59 +326,55 @@ function addDeck(group: THREE.Group, mainRing: Vec2[], toddlerRing: Vec2[]): voi
   }
 }
 
-export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRing: Vec2[], details: boolean): void {
+export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRing: Vec2[], details: boolean, ground: Ground): void {
+  const on = (p: Vec2): number => ground(p[0], p[1]);
   const group = new THREE.Group();
   group.name = "main-pool-lawn"; group.userData.noDrape = true;
   const pink = new THREE.MeshStandardMaterial({ color: "#c47468", roughness: 0.82, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   const flags = new THREE.MeshStandardMaterial({ map: flagstoneTexture(), roughness: 0.95, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   flags.map!.repeat.set(1.4, 1.4);
-  for (const line of data.paths.lines) group.add(ribbonMesh(line as Vec2[], data.paths.width / 2, Y + 0.05, pink, "lawn-pink-path"));
+  for (const line of data.paths.lines) group.add(ribbonMesh(line as Vec2[], data.paths.width / 2, ground, 0.05, pink, "lawn-pink-path"));
   const apron = new THREE.Shape((data.apron.ring as Vec2[]).map(([x, z]) => new THREE.Vector2(x, -z)));
-  const apronMesh = new THREE.Mesh(new THREE.ShapeGeometry(apron).rotateX(-Math.PI / 2), flags);
-  apronMesh.position.y = Y + 0.04; apronMesh.name = "lawn-flagstone-apron"; apronMesh.receiveShadow = true; group.add(apronMesh);
+  const apronMesh = new THREE.Mesh(layOnGround(new THREE.ShapeGeometry(apron).rotateX(-Math.PI / 2), ground, 0.04, 3), flags);
+  apronMesh.name = "lawn-flagstone-apron"; apronMesh.receiveShadow = true; group.add(apronMesh);
   const white = plasterMaterial("#fbf8f0");
   for (const wall of data.rooms.walls) {
     const pts = wall.points as Vec2[];
     for (let i = 0; i < pts.length - 1; i++) {
       const a = pts[i], b = pts[i + 1], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
-      group.add(box("lawn-white-wall", len, wall.height, 0.22, white, [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2], Y + wall.height / 2, -Math.atan2(b[1] - a[1], b[0] - a[0])));
+      // Level top at its height above the higher end; the foot goes into the ground at the lower end.
+      const foot = Math.min(on(a), on(b)) - 0.1, top = Math.max(on(a), on(b)) + wall.height;
+      group.add(box("lawn-white-wall", len, top - foot, 0.22, white, [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2], (top + foot) / 2, -Math.atan2(b[1] - a[1], b[0] - a[0])));
     }
   }
   const showerAt = data.hedge.shower as Vec2;
-  group.add(box("lawn-shower-wall", 0.9, 1.9, 0.18, white, showerAt, Y + 0.95));
-  addDeck(group, mainRing, toddlerRing);
-  addSteps(group, details);
+  group.add(box("lawn-shower-wall", 0.9, 1.9, 0.18, white, showerAt, on(showerAt) + 0.95));
+  addDeck(group, mainRing, toddlerRing, ground);
+  addSteps(group, details, ground);
   if (details) {
-    addShop(group);
-    const cap = new THREE.MeshStandardMaterial({ color: "#f3efe4", roughness: 0.5 });
-    const body = new THREE.MeshStandardMaterial({ color: "#2c4638", roughness: 0.7 });
-    for (const at of data.fittings.bollards as Vec2[]) {
-      const bollard = new THREE.Group();
-      const post = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.09, 0.48, 8), body);
-      post.position.y = 0.24; bollard.add(post);
-      const top = new THREE.Mesh(new THREE.CylinderGeometry(0.09, 0.08, 0.12, 8), cap);
-      top.position.y = 0.52; bollard.add(top);
-      bollard.position.set(at[0], Y, at[1]); bollard.name = "lawn-bollard"; group.add(bollard);
-    }
-    const slats = new THREE.MeshStandardMaterial({ color: "#2a2e30", roughness: 0.6, metalness: 0.3 });
-    for (const at of data.fittings.bins as Vec2[]) {
-      const bin = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.2, 0.72, 10), slats);
-      bin.position.set(at[0], Y + 0.36, at[1]); bin.name = "lawn-bin"; group.add(bin);
-    }
+    addShop(group, ground);
+    // The Blender-built lawn kit (scripts/build_lawn_kit.py, public/models/lawn): bollard lights,
+    // slatted bins and the square service lid; simple shapes stand in until each model loads.
+    const place = (at: Vec2) => ({ x: at[0], y: on(at), z: at[1], turn: 0 });
+    const bollardStandIn = mergeGeometries([new THREE.CylinderGeometry(0.09, 0.09, 0.44, 8).translate(0, 0.22, 0), new THREE.CylinderGeometry(0.08, 0.08, 0.14, 8).translate(0, 0.51, 0)])!;
+    addKitModel(group, "/models/lawn/bollard.glb", bollardStandIn, (data.fittings.bollards as Vec2[]).map(place), new THREE.MeshStandardMaterial({ color: "#2c4a3a", roughness: 0.6 }), "lawn-bollard");
+    addKitModel(group, "/models/lawn/bin.glb", new THREE.CylinderGeometry(0.23, 0.23, 0.68, 12).translate(0, 0.42, 0), (data.fittings.bins as Vec2[]).map(place), new THREE.MeshStandardMaterial({ color: "#5b3b27", roughness: 0.85 }), "lawn-bin");
+    addKitModel(group, "/models/lawn/cover.glb", new THREE.BoxGeometry(0.63, 0.012, 0.63).translate(0, 0.006, 0), (data.fittings.covers as Vec2[]).map(place), new THREE.MeshStandardMaterial({ color: "#73766f", roughness: 0.6 }), "lawn-service-cover");
     const grate = new THREE.MeshStandardMaterial({ color: "#3a3e40", roughness: 0.45, metalness: 0.5 });
     for (const drain of data.fittings.drains) {
       const along = drain.along as Vec2, n = Math.hypot(along[0], along[1]) || 1;
-      group.add(box("lawn-slot-drain", 1.6, 0.02, 0.22, grate, drain.at as Vec2, Y + 0.055, -Math.atan2(along[1] / n, along[0] / n)));
+      group.add(box("lawn-slot-drain", 1.6, 0.02, 0.22, grate, drain.at as Vec2, on(drain.at as Vec2) + 0.055, -Math.atan2(along[1] / n, along[0] / n)));
     }
     const head = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 6), new THREE.MeshStandardMaterial({ color: "#d5d8dc", metalness: 0.8, roughness: 0.25 }));
-    head.position.set(showerAt[0], Y + 1.7, showerAt[1] + 0.12); head.name = "lawn-shower"; group.add(head);
+    head.position.set(showerAt[0], on(showerAt) + 1.7, showerAt[1] + 0.12); head.name = "lawn-shower"; group.add(head);
     const [h0, h1] = data.hedge.points as Vec2[];
     const hlen = Math.hypot(h1[0] - h0[0], h1[1] - h0[1]);
     const pieces = Math.ceil(hlen / 1.3);
     for (let i = 0; i < pieces; i++) {
       const t = (i + 0.5) / pieces;
       const hedge = clippedHedge({ length: hlen / pieces + 0.05, depth: 0.55, height: 0.7, seed: 30 + i, clip: 4.2, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"] });
-      hedge.position.set(h0[0] + (h1[0] - h0[0]) * t, Y, h0[1] + (h1[1] - h0[1]) * t);
+      const hx = h0[0] + (h1[0] - h0[0]) * t, hz = h0[1] + (h1[1] - h0[1]) * t;
+      hedge.position.set(hx, ground(hx, hz), hz);
       hedge.rotation.y = Math.atan2(h1[0] - h0[0], h1[1] - h0[1]);
       hedge.name = "lawn-sea-hedge"; group.add(hedge);
     }
@@ -311,11 +382,11 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
       const at = plant.at as Vec2;
       if (plant.kind === "strelitzia") {
         const holder = new THREE.Scene(); holder.userData = { ...scene.userData, layoutOnly: false };
-        addSprites(holder, "bird_of_paradise", [{ x: at[0], y: Y, z: at[1], scale: 0.55 }]);
-        for (const child of holder.children) { child.name = "lawn-strelitzia"; scene.add(child); }
+        addSprites(holder, "bird_of_paradise", [{ x: at[0], y: on(at), z: at[1], scale: 0.55 }]);
+        for (const child of [...holder.children]) { child.name = "lawn-strelitzia"; child.userData.noDrape = true; scene.add(child); }
       } else {
         const shrub = looseShrub({ width: 1.5, depth: 1.1, height: 0.45, seed: 17, leaf: "small", leafSize: [0.04, 0.03], greens: ["#b7b8b0", "#9aa096", "#c8c9c2"], stems: 6 });
-        shrub.position.set(at[0], Y, at[1]); shrub.name = "lawn-silver-bush"; group.add(shrub);
+        shrub.position.set(at[0], on(at), at[1]); shrub.name = "lawn-silver-bush"; group.add(shrub);
       }
     }
   }

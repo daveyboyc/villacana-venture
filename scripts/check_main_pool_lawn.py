@@ -61,6 +61,26 @@ for p in lawn["fittings"]["bollards"] + lawn["fittings"]["bins"]:
     near = min(dist_line(p, line) for line in lawn["paths"]["lines"])
     assert 0.6 < near < lawn["paths"]["width"], p
 
+# Nothing on the lawn reaches past the beach gateway's wall line onto the paseo (the first path
+# once ended 3 m out on the paseo and a bollard stood there); the gateway is data/seafront_fence.json.
+fence = json.loads((ROOT / "data/seafront_fence.json").read_text())
+turn = math.radians(26)
+world = lambda q: (q[0] * math.cos(turn) + q[1] * math.sin(turn), -q[0] * math.sin(turn) + q[1] * math.cos(turn))
+gate, along = world(fence["gate"]["at"]), world(fence["gate"]["along"])
+seaward = (-along[1], along[0]) if (-along[1]) + along[0] > 0 else (along[1], -along[0])  # +x+z is toward the sea
+past = lambda q: (q[0] - gate[0]) * seaward[0] + (q[1] - gate[1]) * seaward[1]
+near_gate = lambda q: math.dist(q, gate) < 6
+for q in [p for line in lawn["paths"]["lines"] for p in line] + lawn["apron"]["ring"] + lawn["fittings"]["bollards"] + lawn["fittings"]["bins"]:
+    assert not near_gate(q) or past(q) < 0.05, ("past the gateway", q)
+
+# The lawn kit is built (scripts/build_lawn_kit.py) and its service lids lie on open lawn.
+for name in ("bollard", "bin", "cover"):
+    assert (ROOT / f"public/models/lawn/{name}.glb").stat().st_size < 60_000, name
+assert lawn["fittings"]["covers"]
+for q in lawn["fittings"]["covers"]:
+    assert not inside(q, main) and not inside(q, toddler)
+    assert min(dist_line(q, line) for line in lawn["paths"]["lines"]) > lawn["paths"]["width"] / 2 + 0.5, q
+
 print(f"Main-pool lawn: {len(lawn['paths']['lines'])} pink paths, flagstone apron, "
       f"{len(lawn['rooms']['walls'])} white wall runs, hedge, no pool fence, "
       f"deck band and Enrique step finish PASS")
