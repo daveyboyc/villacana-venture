@@ -16,6 +16,7 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 - 4 Nov (barraka-frontage-paseo-furniture): IMG_2604 (pin +-2.1 m), IMG_2609, IMG_2631, IMG_2607/2608 show Barraka's roped lounge on the grass beside the paseo: timber posts with white rope swags along the paving edge from the restaurant's west corner, two cream-cushioned wicker sofas with dark woven pod armchairs facing the restaurant around a low table and a closed cream parasol, a black wrought-iron menu stand, an easel sign and terracotta pots. Built as Details furniture (data/barraka_frontage.json): arrangement as photographed, position estimated to about 3 m from the bearings of IMG_2604 and IMG_2631; IMG_2607/2608/2609 were taken from under the terrace awning, so their pins (+-12-19 m) are not used. The same photos show the big-pool lawn railing is dark green bars on a sandstone plinth, not white: only its finish changed (data/seafront_fence.json).
 - 13 Nov: the floor was also being dropped by the survey height (about 2.1 m) on top of the beach height, so the walls sat in the sand and the white storey almost touched the ground. The floor is the beach height under the building, about 0.16 m below the paseo here, and is not draped again.
 - 12 Nov follow-up: the white mass starts at the awning line (2.58 m). Below that, the south-west and north-west fronts are glass, so the lower restaurant is a storey rather than a solid wall, and white tables and chairs stand outside those awnings and on the beach terrace (IMG_2604, IMG_2606). The chair count and the terrace rail are estimates. The roped lounge further along the paseo is unchanged.
+- 13 Nov: the beach verge plants are the ones in the close photos. IMG_2631 and IMG_2226 show round leafy bushes on the grass, not plain balls; IMG_2481 and IMG_2631 show young agaves on that grass; IMG_2226 and IMG_2481 show palms just seaward of it. The pots by the rope (IMG_2609, IMG_2631) have leaves, one of them upright. Positions of the added plants are by eye, about 3 m. The thatched cooking shelter, kayaks and slot drains stay unbuilt.
 - 12 Nov (barraka-facade): the parapet is 4.8 m. IMG_2618's black door, taken as 2.05 m, is about 2.4 times shorter than the wall, so the wall reads about 4.9 m; the model uses 4.8 m. The 2014-15 laser survey still records this roof at a median of 2.89 m and a high point of 3.67 m, below that parapet, and is kept as the roof deck or an older roof rather than a reason to put the windows inside the registry's 3 m storey. The registry ring is unchanged. The north-east wall has two groups of three brown-framed windows (IMG_2618 square-on; the task brief's 3+3+3 over-counted the same photo, and IMG_2615 is that wall seen obliquely), a timber band, a black door under the landward group, a louvred vent between the groups and a small slot vent below the band. The south-west front (IMG_2604) has eight clerestory windows, two red scalloped awnings, glazing with frosted BARRAKA BEACH lettering, a thatched eaves and a rooftop tank. The north-west corner (IMG_2630, IMG_2611) is glazed under one awning for about 5.5 m, then plain with one small window. Stations along the walls are estimates of about a metre from unsolved cameras. Still unbuilt: the thatched cooking shelter, net-covered mound and kayaks (IMG_2619) and the slot drains (IMG_2610, 2630, 2631). The sandbags are temporary and left out.
 
 ## Read first
@@ -81,8 +82,14 @@ graph LR
   F4 --> PIMG_2630_jpg(["IMG_2630"])
   A --> F5["Shrubs in front of the beach gateway and railings · unreviewed"]
   F5 --> PIMG_2226_jpg(["IMG_2226"])
+  F5 --> PIMG_2481_jpg(["IMG_2481"])
+  F5 --> PIMG_2609_jpg(["IMG_2609"])
+  F5 --> PIMG_2631_jpg(["IMG_2631"])
   A --> F6["Grass in front of the beach gateway and railings · unreviewed"]
   F6 --> PIMG_2226_jpg(["IMG_2226"])
+  F6 --> PIMG_2481_jpg(["IMG_2481"])
+  F6 --> PIMG_2609_jpg(["IMG_2609"])
+  F6 --> PIMG_2631_jpg(["IMG_2631"])
   A --> F7["6465801UF1366N_part5 · unreviewed"]
   F7 --> PIMG_2346_jpg(["IMG_2346"])
   F7 --> PIMG_2347_jpg(["IMG_2347"])
@@ -163,7 +170,7 @@ graph LR
 | `barraka_boardwalk.json:barraka-sign-planter` | disputed | not-comparable | open discrepancy barraka-planter-position |
 | `barraka_facade.json:barraka-facade` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `beach_verge.json:barraka-front-shrubs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `beach_verge.json:barraka-front-verge` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `beach_verge.json:barraka-front-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `building:6465801UF1366N_part5` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `building:6465801UF1366N_part6` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seafront_fence.json:guillermo-beach-gate` | disputed | differs | open discrepancy photo-discrepancy:58170dc8a5dd3aaa; open discrepancy photo-discrepancy:4d29ca0cdc7d5d41 |

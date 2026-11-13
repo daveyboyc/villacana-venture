@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { looseShrub } from "./clipped-plants";
 import data from "../data/barraka_boardwalk.json";
 import { routeClearance, type ProtectedRoute } from "./route-clearance";
 import type { Vec2 } from "./types";
@@ -48,10 +49,11 @@ export function addBarrakaBoardwalk(scene: THREE.Scene, groundY: (x: number, z: 
     const ctx = canvas.getContext("2d")!; ctx.fillStyle = "#e9e7d9"; ctx.fillRect(0, 0, 512, 192); ctx.fillStyle = "#24271e"; ctx.textAlign = "center"; ctx.font = "bold 62px serif"; ctx.fillText("BARRAKA", 256, 77); ctx.fillText("BEACH", 300, 151);
     const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace;
     const face = new THREE.Mesh(new THREE.PlaneGeometry(2.05, .77), new THREE.MeshStandardMaterial({ map: texture, roughness: 1, side: THREE.DoubleSide })); face.position.set(0, .8, .001); sign.add(face);
-    for (let i = 0; i < 14; i++) {
-      const shrub = new THREE.Mesh(new THREE.IcosahedronGeometry(.28, 1), new THREE.MeshStandardMaterial({ color: i % 2 ? "#768444" : "#a2aa61", roughness: 1 }));
-      shrub.position.set((i % 7 - 3) * .29, i < 7 ? .5 : 1.35, i < 7 ? .3 : -.1); shrub.scale.set(1, .75, 1); shrub.castShadow = true; sign.add(shrub);
-    }
+    const greens = ["#5a7a3c", "#6d8a48", "#4e6c36"];
+    const lower = looseShrub({ width: 1.7, depth: 0.45, height: 0.42, seed: 4, leaf: "small", leafSize: [0.055, 0.032], greens });
+    lower.position.set(0, 0.42, 0.22); sign.add(lower);
+    const upper = looseShrub({ width: 1.5, depth: 0.32, height: 0.36, seed: 8, leaf: "glossy", leafSize: [0.05, 0.03], greens: ["#3f6230", "#54743c", "#6a8a44"] });
+    upper.position.set(0, 1.22, -0.02); sign.add(upper);
   }
   for (const [x, z] of data.seating.parasols) {
     // Includes the visible thatch fringe (larger than the pole) and the full paired beds.

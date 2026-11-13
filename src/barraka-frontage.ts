@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import data from "../data/barraka_frontage.json";
+import { Foliage, seeded } from "./clipped-plants";
 import { routeClearance, type ProtectedRoute } from "./route-clearance";
 import type { Vec2 } from "./types";
 
@@ -25,7 +26,7 @@ export function addBarrakaFrontage(scene: THREE.Scene, groundY: (x: number, z: n
   const clear = (x: number, z: number, radius: number) => routeClearance(routes, x, z, radius);
   const group = new THREE.Group(); group.name = "barraka-frontage"; group.userData.noDrape = true; scene.add(group);
   const std = (color: string, roughness = .9) => new THREE.MeshStandardMaterial({ color, roughness });
-  const timber = std("#7a4c2c"), cream = std("#ece0c4"), black = std("#1e1d1b", .6), terracotta = std("#b4623e"), leaf = std("#5c7a3e"), tan = std("#c9a872"), rope = std("#f1ecdf", 1);
+  const timber = std("#7a4c2c"), cream = std("#ece0c4"), black = std("#1e1d1b", .6), terracotta = std("#b4623e"), tan = std("#c9a872"), rope = std("#f1ecdf", 1);
   const wicker = wickerMaterial();
   const box = (parent: THREE.Object3D, w: number, h: number, d: number, x: number, y: number, z: number, mat: THREE.Material) => {
     const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat); mesh.position.set(x, y, z); mesh.castShadow = mesh.receiveShadow = true; parent.add(mesh); return mesh;
@@ -91,10 +92,11 @@ export function addBarrakaFrontage(scene: THREE.Scene, groundY: (x: number, z: n
     box(g, .04, 1.7, .035, 0, .84, -.3, timber).rotation.x = .2;
     box(g, .78, .98, .02, 0, 1.0, .06, tan);
   });
-  for (const [x, z, r] of lounge.pots as number[][]) place(seating, x, z, 0, r + .05, lounge.id + "-pot", g => {
-    const bowl = new THREE.Mesh(new THREE.CylinderGeometry(r, r * .62, .5, 16), terracotta); bowl.position.y = .25; bowl.castShadow = true; g.add(bowl);
-    const plant = new THREE.Mesh(new THREE.IcosahedronGeometry(1, 1), leaf); plant.scale.set(r * 1.05, r * .75, r * 1.05); plant.position.y = .62; plant.castShadow = true; g.add(plant);
-  });
+  (lounge.pots as number[][]).forEach(([x, z, r], i) => place(seating, x, z, 0, r + .05, lounge.id + "-pot", g => {
+    const bowl = new THREE.Mesh(new THREE.CylinderGeometry(r, r * .62, .5, 16), i === 2 ? std("#f4f1ea") : terracotta); bowl.position.y = .25; bowl.castShadow = true; g.add(bowl);
+    const plant = potPlant(i === 1 ? "spike" : "round", 12 + i, r);
+    plant.position.y = .48; g.add(plant);
+  }));
 
   // The red and white painted crossing right outside the beach gateway (IMG_2766, IMG_2767): eight bars side by
   // side along the walk, each running straight across the paving from the gate threshold; flush, so no obstruction.
@@ -107,4 +109,16 @@ export function addBarrakaFrontage(scene: THREE.Scene, groundY: (x: number, z: n
     bar.rotation.set(-Math.PI / 2, 0, Math.atan2(-az, ax)); bar.position.set(x, groundY(x, z) + .05, z); bar.receiveShadow = true; bar.name = c.id + "-bar"; crossing.add(bar);
   }
   group.add(crossing);
+}
+
+/** Leaves in a pot: a round glossy bush, or a few upright blades (IMG_2609, IMG_2631). */
+function potPlant(kind: "round" | "spike", seed: number, r: number): THREE.Group {
+  const rng = seeded(seed), f = new Foliage(rng), n = kind === "spike" ? 12 : 28;
+  for (let i = 0; i < n; i++) {
+    const a = rng() * Math.PI * 2, up = kind === "spike" ? 0.55 + rng() * 0.4 : 0.15 + rng() * 0.7;
+    const dir = new THREE.Vector3(Math.cos(a) * (1 - up * 0.4), up, Math.sin(a) * (1 - up * 0.4)).normalize();
+    const at = dir.clone().multiplyScalar(r * (kind === "spike" ? 0.7 : 0.45) * (0.4 + rng() * 0.7));
+    f.leaf(kind === "spike" ? "narrow" : "glossy", at, dir, kind === "spike" ? [r * 1.3, r * 0.22] : [r * 0.7, r * 0.45], kind === "spike" ? "#6d8b58" : (i % 2 ? "#3f6a32" : "#5a8a40"));
+  }
+  return f.build("pot-plant");
 }
