@@ -105,6 +105,7 @@ graph LR
   F10 --> PIMG_2630_jpg(["IMG_2630"])
   F10 --> PIMG_2631_jpg(["IMG_2631"])
   F10 --> PIMG_2759_jpg(["IMG_2759"])
+  F10 --> PIMG_2760_jpg(["IMG_2760"])
   F10 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F10 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
   A --> F11["White wall beside the paseo ramp · unreviewed"]
@@ -119,6 +120,7 @@ graph LR
   F11 --> PIMG_2630_jpg(["IMG_2630"])
   F11 --> PIMG_2631_jpg(["IMG_2631"])
   F11 --> PIMG_2759_jpg(["IMG_2759"])
+  F11 --> PIMG_2760_jpg(["IMG_2760"])
   F11 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F11 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
   A --> F12["Green bar railing on a sandstone plinth along the big-pool lawn · unreviewed"]
@@ -133,6 +135,7 @@ graph LR
   F12 --> PIMG_2630_jpg(["IMG_2630"])
   F12 --> PIMG_2631_jpg(["IMG_2631"])
   F12 --> PIMG_2759_jpg(["IMG_2759"])
+  F12 --> PIMG_2760_jpg(["IMG_2760"])
   F12 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F12 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
 ```

@@ -7783,7 +7783,8 @@
   "looksAtFeatures": [
    "area:paseo",
    "seafront_fence.json:guillermo-ramp-wall",
-   "main_pool_lawn.json:lawn-flagstone-apron"
+   "main_pool_lawn.json:lawn-flagstone-apron",
+   "beach_verge.json:barraka-front-verge"
   ],
   "subject": "Painted crossing across the paseo beside the beach gateway"
  },
@@ -11926,9 +11927,9 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "main_pool_lawn.json:lawn-sea-hedge",
-   "main_pool_lawn.json:lawn-bollards-bins",
-   "main_pool_lawn.json:lawn-pink-paths",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "seafront_fence.json:main-pool-lawn-railing",
+   "area:paseo",
+   "main_pool_lawn.json:lawn-bollards-bins"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
   "headingOff": 47
@@ -12234,7 +12235,8 @@
   "looksAtFeatures": [
    "beach_verge.json:barraka-front-verge",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:beach"
+   "area:beach",
+   "area:paseo"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge",
   "headingOff": 52
@@ -12331,9 +12333,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "beach_verge.json:barraka-front-verge",
+   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:paseo"
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -12377,8 +12380,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "area:paseo"
   ],
   "subject": "Curved sandstone wall and green railing at Barraka's west corner"
  },
@@ -13207,9 +13209,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "beach_verge.json:barraka-front-verge",
+   "area:paseo",
    "barraka_frontage.json:barraka-lounge-garden",
-   "area:paseo"
+   "beach_verge.json:barraka-front-verge",
+   "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "Roped rattan lounge set on the beach-side verge"
  },
@@ -17125,7 +17128,7 @@
    "area:paseo",
    "main_pool_lawn.json:lawn-pink-paths",
    "main_pool_lawn.json:lawn-flagstone-apron",
-   "seafront_fence.json:guillermo-ramp-wall"
+   "beach_verge.json:barraka-front-verge"
   ]
  },
  {
@@ -17164,8 +17167,7 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "area:paseo",
-   "beach_verge.json:barraka-front-verge",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "beach_verge.json:barraka-front-verge"
   ]
  },
  {

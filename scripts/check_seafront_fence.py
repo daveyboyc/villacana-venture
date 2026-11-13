@@ -72,8 +72,10 @@ profile = levels['seafront']['profile']
 paseo_y = lambda x: next(a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0]) for a, b in zip(profile, profile[1:]) if a[0] <= x <= b[0])
 assert paseo_y(gate['at'][0]) < paseo_y(g[-1][0]) - 0.5, 'Gateway is not below the top of the paseo ramp'
 assert gate['opening'] >= 2 * PLAYER + 0.4 and gate['spring'] + gate['opening'] / 2 >= 2.2, 'Gateway too narrow or too low to walk through'
-# Railings end at the lawn's east edge, and nothing crosses a house, pool or lane.
-assert to_line(d['railing']['points'][-1], [[-32, 88], [-34, 110]]) < 0.3, 'Railings do not reach the lawn east edge'
+# Railings follow the path around the lawn and end on its east edge, beside Barraka's west corner, not on a chord across the grass.
+end = (d['railing']['points'][-1][0] * math.cos(angle) + d['railing']['points'][-1][1] * math.sin(angle),
+       -d['railing']['points'][-1][0] * math.sin(angle) + d['railing']['points'][-1][1] * math.cos(angle))
+assert math.dist(end, (15.76, 108.72)) < 0.4, 'Railings do not reach the lawn edge beside Barraka'
 houses = [[turned(p) for p in b['ring']] for b in skeleton['buildings'] if b['floors'] > 0 and not b.get('passage')]
 pools = [[turned(p) for p in p_['ring']] for p_ in skeleton['pools']]
 roads = [[turned(p) for p in r['points']] for r in skeleton['boundaryReference']['roads']]
