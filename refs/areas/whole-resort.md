@@ -38,6 +38,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | --- | --- | --- | --- | --- |
 | P1 | `3d-browser-regression-reliability` [#143](https://github.com/daveyboyc/villacana-venture/issues/143) | Diagnose and stabilise 3D browser regressions before geometry releases | open · placement: not-applicable |  |
 | P1 | `facade-kit-resort` | Facade kit on every house: Blender doors, windows and balconies resort-wide (after facade-kit-traced) | in-progress · Claude · placement: not-verified |  |
+| P1 | `ground-plan-framework` | Smooth ground plan: shared vector paths, patios and green spaces with their edges and boundaries | open · placement: not-applicable |  |
 | P1 | `loop-measured-approval` [#179](https://github.com/daveyboyc/villacana-venture/issues/179) | Photo-to-model loop: placement gate accepts measured, agent-reviewed changes | open · placement: not-applicable |  |
 | P1 | `loop-photo-intake` [#182](https://github.com/daveyboyc/villacana-venture/issues/182) | Photo-to-model loop: upload photos, then one command runs the loop (after loop-discrepancies, loop-measured-approval, loop-north-pool-fixes, loop-camera-solving) | open · placement: not-applicable |  |
 | P1 | `pool-detail` | Pools: photo-matched water, waterline tiles, jointed coping, straight steps and slab decks | in-progress · Claude · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg) |

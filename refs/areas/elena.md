@@ -59,6 +59,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P2 | `elena-25-passage` | Elena south: register the CALLE ELENA 25 covered passage and where it leads | open · placement: not-applicable | [IMG_2507](../../public/photos-ref/IMG_2507.jpg), [IMG_2508](../../public/photos-ref/IMG_2508.jpg) |
 | P2 | `elena-walkway-details` | Elena covered walkway: portal steps and ramp, patterned floor, tile signs, doors | in-progress · Claude · placement: not-verified | [IMG_2459](../../public/photos-ref/IMG_2459.jpg), [IMG_2518](../../public/photos-ref/IMG_2518.jpg), [IMG_2519](../../public/photos-ref/IMG_2519.jpg), [IMG_2520](../../public/photos-ref/IMG_2520.jpg), [IMG_2689](../../public/photos-ref/IMG_2689.jpg), [IMG_2690](../../public/photos-ref/IMG_2690.jpg), [IMG_2456](../../public/photos-ref/IMG_2456.jpg) |
 | P2 | `facade-kit-elena` | Elena roof station: make the camera solvable, then trace its facades | in-progress · Claude · placement: not-applicable |  |
+| P2 | `ground-plan-elena` | Calle Elena: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | open · placement: not-verified |  |
 
 ## Built from these photos
 

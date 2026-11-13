@@ -56,7 +56,8 @@ assert clear(lounge['menuStand'], .3) and clear(lounge['easel'], .55)
 
 # Crossing: flush on the paving, spanning its width, on the paseo centre line.
 assert abs(to_paseo(crossing['at'])) < .3, 'crossing sits on the mapped paseo line'
-assert abs(crossing['length'] - sk['seafront']['paseo']['width']) < .2 and 2.8 <= crossing['span'] <= 4.0, 'bars run across the full paving'
+# A zebra the usual way round (IMG_2484): the bars sit side by side across the full paving, each running along the walk.
+assert abs(crossing['width'] - sk['seafront']['paseo']['width']) < .2 and 1.0 <= crossing['depth'] <= 1.8, 'bars span the paving, each along the walk'
 # Immediately outside the gate (Dave, 2026-11-13): the band is centred on the gateway opening.
 fence = json.loads((ROOT / 'data/seafront_fence.json').read_text())
 _t = math.radians(26)
