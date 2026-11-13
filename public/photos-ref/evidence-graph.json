@@ -3266,7 +3266,10 @@
    "kind": "reference feature",
    "source": "rough aerial/photo outline; unmeasured",
    "evidence": [
-    "IMG_2226.jpg"
+    "IMG_2226.jpg",
+    "IMG_2481.jpg",
+    "IMG_2609.jpg",
+    "IMG_2631.jpg"
    ]
   },
   {
@@ -3275,7 +3278,10 @@
    "kind": "reference feature",
    "source": "rough aerial/photo outline; Details only",
    "evidence": [
-    "IMG_2226.jpg"
+    "IMG_2226.jpg",
+    "IMG_2481.jpg",
+    "IMG_2609.jpg",
+    "IMG_2631.jpg"
    ]
   },
   {
@@ -13483,6 +13489,18 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2481.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2481.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2482.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -16559,6 +16577,18 @@
   },
   {
    "from": "photo:IMG_2609.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2609.jpg",
    "to": "barraka_frontage.json:barraka-lounge-garden",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -17199,6 +17229,18 @@
    "relation": "possibly-in-view",
    "distance": 41.8,
    "angleOffset": 25.2
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2631.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2631.jpg",

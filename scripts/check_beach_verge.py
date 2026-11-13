@@ -44,4 +44,11 @@ assert not any(inside(p, h) for p in cells for h in houses), 'Grass runs into a 
 for x, z, r in d['shrubs']['clumps']:
     assert inside((x, z), ring), f'Shrub at {x}, {z} is off the grass'
     assert to_line((x, z), paseo['points']) - r >= half and to_line((x, z), barraka['points']) - r >= barraka['width'] / 2, f'Shrub at {x}, {z} blocks a walk'
-print(f"Beach verge: {len(cells) / 4:.0f} m2 of grass off the paseo and buildings, {len(d['shrubs']['clumps'])} shrub clumps clear of the walks PASS (rough outline, unmeasured)")
+for x, z, r in d['agaves']:
+    assert inside((x, z), ring), f'Agave at {x}, {z} is off the grass'
+    assert to_line((x, z), paseo['points']) - r >= half and to_line((x, z), barraka['points']) - r >= barraka['width'] / 2, f'Agave at {x}, {z} blocks a walk'
+for palm in d['palms']:
+    p = palm['at']
+    assert to_line(p, paseo['points']) - 0.6 >= half and to_line(p, barraka['points']) - 0.6 >= barraka['width'] / 2, f"Palm at {p} blocks a walk"
+    assert 4 <= palm['height'] <= 12
+print(f"Beach verge: {len(cells) / 4:.0f} m2 of grass off the paseo and buildings, {len(d['shrubs']['clumps'])} leafy shrubs, {len(d['agaves'])} agaves, {len(d['palms'])} palms clear of the walks PASS (rough outline, unmeasured)")

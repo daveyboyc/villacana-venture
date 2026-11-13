@@ -1,6 +1,8 @@
 import * as THREE from "three";
 import data from "../data/beach_verge.json";
+import { looseShrub } from "./clipped-plants";
 import { routeClearance, type ProtectedRoute } from "./route-clearance";
+import { tallPalm } from "./spiky-trees";
 import type { Vec2 } from "./types";
 
 /** The grass verge on the beach side of the paseo in front of the gateway and the lawn railings (data/beach_verge.json). */
@@ -23,17 +25,41 @@ export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number
     }
   }
   const geometry = new THREE.BufferGeometry(); geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3)); geometry.computeVertexNormals();
-  const grass = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ color: "#8c9a5b", roughness: 1, side: THREE.DoubleSide }));
+  const grass = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ color: "#9aa36a", roughness: 1, side: THREE.DoubleSide }));
   grass.name = data.grass.id; grass.receiveShadow = true; group.add(grass);
   if (scene.userData.layoutOnly) return;
   const details = new THREE.Group(); details.name = data.shrubs.id; group.add(details);
   const routes = scene.userData.protectedRoutes as ProtectedRoute[] ?? [];
-  const leaves = ["#4f6b3a", "#5f7a43", "#476236"].map((color) => new THREE.MeshStandardMaterial({ color, roughness: 1 }));
+  const greens = ["#4a6a34", "#5c7c40", "#3e5a2e", "#6d8750"];
   vergeClumps.forEach(([x, z, r], i) => {
-    // The clump's visible footprint is its radius.
+    // The clump's visible footprint is its radius. IMG_2631 and IMG_2226: round leafy bushes, not a bare ball.
     if (!routeClearance(routes, x, z, r)) return;
-    const shrub = new THREE.Mesh(new THREE.IcosahedronGeometry(1, 1), leaves[i % leaves.length]);
-    shrub.scale.set(r, data.shrubs.height / 2, r); shrub.position.set(x, groundY(x, z) + data.shrubs.height / 2, z);
-    shrub.castShadow = shrub.receiveShadow = true; details.add(shrub);
+    const shrub = looseShrub({ width: r * 2, depth: r * 1.6, height: data.shrubs.height * (0.75 + (i % 4) * 0.1), seed: 40 + i, leaf: "small", leafSize: [0.08, 0.045], greens });
+    shrub.position.set(x, groundY(x, z), z); shrub.rotation.y = i * 0.9; details.add(shrub);
   });
+  (data.agaves as [number, number, number][]).forEach(([x, z, r], i) => {
+    if (!routeClearance(routes, x, z, r)) return;
+    const plant = agave(80 + i, r * 2);
+    plant.position.set(x, groundY(x, z), z); plant.rotation.y = i * 1.3; details.add(plant);
+  });
+  (data.palms as { at: [number, number]; height: number; seed: number }[]).forEach((palm) => {
+    const [x, z] = palm.at;
+    if (!routeClearance(routes, x, z, 0.6)) return;
+    const tree = tallPalm({ height: palm.height, seed: palm.seed });
+    tree.position.set(x, groundY(x, z), z); details.add(tree);
+  });
+}
+
+/** A young agave: a low rosette of stiff blue-green blades (IMG_2481, IMG_2631). */
+function agave(seed: number, spread: number): THREE.Group {
+  const group = new THREE.Group(); group.name = "beach-agave";
+  const blade = new THREE.MeshStandardMaterial({ color: "#6e8a62", roughness: 0.85, side: THREE.DoubleSide });
+  for (let i = 0; i < 14; i++) {
+    const a = (i / 14) * Math.PI * 2 + (seed % 7) * 0.04;
+    const len = spread * (0.55 + ((seed + i) % 5) * 0.08);
+    const leaf = new THREE.Mesh(new THREE.PlaneGeometry(0.07, len), blade);
+    leaf.position.set(Math.cos(a) * len * 0.28, len * 0.22, Math.sin(a) * len * 0.28);
+    leaf.rotation.y = -a; leaf.rotation.x = 1.05 + (i % 3) * 0.12; leaf.castShadow = true; group.add(leaf);
+  }
+  return group;
 }
