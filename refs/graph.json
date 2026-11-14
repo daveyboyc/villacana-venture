@@ -48703,7 +48703,7 @@
    "kind": "build-task",
    "name": "Continuous model development: tracked discrepancies, scoped photo/map requests and current acceptance",
    "priority": 1,
-   "status": "in-progress",
+   "status": "done",
    "verification": "not-applicable",
    "photoVerification": "not-applicable (tooling)",
    "placement": {

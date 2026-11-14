@@ -19,3 +19,10 @@ Policy checks cover scoped blockers, photo receipt versus review, absent source
 access, dependencies/ownership, self-review, changed source/camera/model/artifact
 bytes, explicit height uncertainty, placement tolerance and retained history.
 Existing placement packets remain the authority for horizontal placement.
+
+Validation completed on 14 November 2026: production build; 13 loop-policy,
+17 reference/scorecard/confidence, 31 placement-policy and 12 photo-assignment
+tests; placement-change gate; desktop/phone scorecard browser checks; the full
+Inspect integration test and the unified photo-map browser regression.
+The integration tests used the actual renderer with software raster density 0.5;
+photo evidence rendering and acceptance measurements are not rescaled by that setting.
