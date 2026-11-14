@@ -82,6 +82,26 @@ export function inJorgePlainWall(x: number, z: number): boolean {
   const s = dx * f.along[0] + dz * f.along[1], north = -(dx * f.lawn[0] + dz * f.lawn[1]);
   return (data.guillermoWest.plainWalls as { along: number[]; offset: number[] }[]).some((w) => s >= w.along[0] && s <= w.along[1] && north >= w.offset[0] && north <= w.offset[1]);
 }
+/** The pool-side walls built beside Calle Guillermo, in world metres, the same lines the model extrudes. */
+export function guillermoPoolWallLines(): { name: string; points: Vec2[]; thickness: number }[] {
+  const gp = data.guillermoPlanter, gw = data.guillermoWest, out: { name: string; points: Vec2[]; thickness: number }[] = [];
+  const planter: Vec2[] = [];
+  for (let d = gp.from; d <= gp.to + 1e-6; d += 2) planter.push(at(gp.along, -d));
+  out.push({ name: "Calle Guillermo planter, the pool side of the lane", points: planter, thickness: gp.thickness });
+  const w = gw.wall;
+  out.push({ name: "Lawn wall west of Calle Guillermo", points: [at(w.from[0], -w.from[1]), at(w.to[0], -w.to[1])], thickness: w.thickness });
+  const pw = gw.patioWall;
+  out.push({ name: "Patio wall west of Calle Guillermo", points: [at(pw.along, -pw.from), at(pw.along, -pw.to)], thickness: pw.thickness });
+  for (let i = 0; i < gw.patio.line.length - 1; i++) {
+    const a = gw.patio.line[i], b = gw.patio.line[i + 1];
+    out.push({ name: "Open patio wall west of Calle Guillermo", points: [at(a[0], -a[1]), at(b[0], -b[1])], thickness: gw.patio.thickness });
+  }
+  for (const [from, to] of gw.planters.runs) {
+    out.push({ name: "Hedge planter west of Calle Guillermo", points: [at(gw.planters.along, -from), at(gw.planters.along, -to)], thickness: gw.planters.thickness });
+  }
+  return out;
+}
+
 /** The planter-wall runs on the hedge side: open stretches of the boundary, less houses and the photographed gaps. */
 export function jorgeWallRuns(): [number, number][] {
   const w = data.boundary, step = 0.1, runs: [number, number][] = [];
