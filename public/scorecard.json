@@ -165,7 +165,7 @@
     "placed": 7,
     "checks": {
      "matches": 0,
-     "differs": 2,
+     "differs": 3,
      "not-comparable": 7
     },
     "camerasSolved": 3,
@@ -185,20 +185,24 @@
    "placement": {
     "features": 11,
     "verified": 0,
-    "disputed": 4
+    "disputed": 5
    },
    "discrepancies": [
     {
-     "id": "photo-discrepancy:654412bf9c4b9e5a",
-     "feature": "ground_plan_north_pool.json:north-pool-lawn-path"
+     "id": "photo-discrepancy:a87a62d5f7242721",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn"
     },
     {
      "id": "photo-discrepancy:24c7e38657a29f74",
      "feature": "ground_plan_north_pool.json:calle-isabel-crazy-paving"
+    },
+    {
+     "id": "photo-discrepancy:ae3ea6e043c500ce",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn-path"
     }
    ],
    "tasks": {
-    "open": 6,
+    "open": 7,
     "inProgress": 4,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -211,15 +215,15 @@
     "estimated": 4,
     "inferred": 1,
     "registry": 0,
-    "gaps": 1
+    "gaps": 2
    },
    "status": [
     "Ground: 85% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 13, 7 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
-    "How sure: 6 photographed, 4 estimated, 1 inferred, 1 known gap.",
-    "Placement: 0 of 11 features verified, 2 open discrepancies.",
+    "How sure: 6 photographed, 4 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 11 features verified, 3 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 4 still open; 2 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -264,7 +268,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 3
+    "readyTasks": 4
    },
    "light": {
     "colour": "red",
@@ -2838,7 +2842,7 @@
     "placed": 460,
     "checks": {
      "matches": 51,
-     "differs": 35,
+     "differs": 36,
      "not-comparable": 63
     },
     "camerasSolved": 7,
@@ -2865,7 +2869,7 @@
    "placement": {
     "features": 437,
     "verified": 0,
-    "disputed": 28
+    "disputed": 29
    },
    "discrepancies": [
     {
@@ -3029,16 +3033,20 @@
      "feature": "ground_plan_main_pool.json:lawn-strip-guillermo"
     },
     {
-     "id": "photo-discrepancy:654412bf9c4b9e5a",
-     "feature": "ground_plan_north_pool.json:north-pool-lawn-path"
+     "id": "photo-discrepancy:a87a62d5f7242721",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn"
     },
     {
      "id": "photo-discrepancy:24c7e38657a29f74",
      "feature": "ground_plan_north_pool.json:calle-isabel-crazy-paving"
+    },
+    {
+     "id": "photo-discrepancy:ae3ea6e043c500ce",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn-path"
     }
    ],
    "tasks": {
-    "open": 53,
+    "open": 54,
     "inProgress": 50,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
@@ -3051,15 +3059,15 @@
     "estimated": 132,
     "inferred": 13,
     "registry": 233,
-    "gaps": 25
+    "gaps": 26
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 59 photographed, 132 estimated, 13 inferred, 25 known gaps.",
-    "Placement: 0 of 437 features verified, 42 open discrepancies.",
+    "How sure: 59 photographed, 132 estimated, 13 inferred, 26 known gaps.",
+    "Placement: 0 of 437 features verified, 43 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 4 still open; 39 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -3606,7 +3614,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 40
+    "readyTasks": 41
    },
    "light": {
     "colour": "red",

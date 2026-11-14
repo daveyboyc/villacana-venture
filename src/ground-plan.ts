@@ -28,7 +28,7 @@ import type { Vec2 } from "./types";
  */
 export const GROUND_PLANS = [mainPool, northPool] as unknown as GroundPlan[];
 
-type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; openings?: { at: number; width: number }[] };
+type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; flowers?: { colour: string; perMetre: number }; openings?: { at: number; width: number }[] };
 type Surface = {
   id: string; name: string; kind: "path" | "patio" | "apron" | "green"; finish: Finish;
   width?: number; lines?: number[][][]; ends?: ("square" | "round")[][]; joins?: number;
@@ -114,7 +114,7 @@ export function groundPathLine(id: string): Vec2[] {
 }
 
 /** Each edge as the smooth lines it is drawn along, with its kind and size, gaps left for openings. */
-export function groundEdges(): { surface: string; kind: EdgeKind; height: number; width: number; planting?: string; runs: Vec2[][] }[] {
+export function groundEdges(): { surface: string; kind: EdgeKind; height: number; width: number; planting?: string; flowers?: { colour: string; perMetre: number }; runs: Vec2[][] }[] {
   const out: ReturnType<typeof groundEdges> = [];
   for (const b of groundSurfaces) for (const e of b.surface.edges ?? []) {
     if (e.kind === "none") continue;
@@ -137,7 +137,7 @@ export function groundEdges(): { surface: string; kind: EdgeKind; height: number
       const inward = pointInRing(probe[0], probe[1], ring) ? 1 : -1;
       lines = [mid ? offsetLine(line, -inward * width / 2) : line];
     }
-    out.push({ surface: b.surface.id, kind: e.kind, height, width, planting: e.planting, runs: lines.flatMap((l) => cutOpenings(resample(l, 0.4), e.openings ?? [])) });
+    out.push({ surface: b.surface.id, kind: e.kind, height, width, planting: e.planting, flowers: e.flowers, runs: lines.flatMap((l) => cutOpenings(resample(l, 0.4), e.openings ?? [])) });
   }
   return out;
 }
@@ -309,7 +309,7 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
         for (let i = 0; i < run.length - 1; i += 3) {
           const a = run[i], b = run[Math.min(run.length - 1, i + 3)], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
           if (len < 0.2) continue;
-          const h = clippedHedge({ length: len + 0.25, depth: e.width, height: e.height, seed: seed++, clip: 4.2, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"] });
+          const h = clippedHedge({ length: len + 0.25, depth: e.width, height: e.height, seed: seed++, clip: 4.2, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"], ...(e.flowers ? { flowers: { count: Math.round(len * e.flowers.perMetre), colour: e.flowers.colour, size: [0.1, 0.1] as [number, number] } } : {}) });
           const mx = (a[0] + b[0]) / 2, mz = (a[1] + b[1]) / 2;
           h.position.set(mx, ground(mx, mz), mz); h.rotation.y = Math.atan2(b[0] - a[0], b[1] - a[1]); h.name = `${e.surface}-hedge`; group.add(h);
         }

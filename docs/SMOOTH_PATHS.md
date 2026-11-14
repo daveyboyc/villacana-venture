@@ -76,7 +76,8 @@ are `ground_plan_<area>.json:<surface id>`. World metres: x east, z south.
 - **edges** (`EDGES`): `none`, `kerb`, `brick-border` (flush, not solid), `planter-wall`, `wall`,
   `hedge`, `fence` (solid: collision and map walls). On a path an edge runs along `side` (`left` of the
   direction of travel, `right` or `both`), over `span` metres if given; on an outline over vertices
-  `from`..`to`. `openings` leave gaps; edges with planting carry it on top in Show details. Clipped
+  `from`..`to`. `openings` leave gaps; edges with planting carry it on top in Show details; a hedge's `flowers`
+  ({colour, perMetre}) dots it with blooms (the north pool's hibiscus). Clipped
   hedge leaves show with Show details, a plain hedge mass in Layout.
 - **evidence** lists catalogued photos; `traced: "map:ground"` says the shape was traced from the georeferenced
   aerial (a surface seen only on the aerial has no photo evidence and is graded `inferred`).
@@ -121,7 +122,9 @@ fit, and no undeclared overlaps.
 - **Main pool (14 Nov):** the big lawn traced from the aerial, with the hedge along the sea railing as
   its edge; the lawn strip by the Guillermo planter; a texture-only deck band for a clean deck edge; and
   the pale north-east path (inferred).
-- **North pool (14 Nov, in progress):** the crazy-paving path moved in as a smooth centreline and the lawn
+- **North pool (14-15 Nov, done for the ground plan):** traced by casting photo pixels through the solved
+  station camera onto the surveyed ground (hedge tops at their height, kerbs and paving at ground level);
+  hedges are lawn edges, with `flowers` on the hibiscus. Earlier: the crazy-paving path moved in as a smooth centreline and the lawn
   added round the measured deck. The aerial's green fails on shaded, worn lawn: bound it by known edges there.
 - **Next:** one task per area,
   `ground-plan-<area>`, traces paths, patios and green spaces with their edges and brings the area's

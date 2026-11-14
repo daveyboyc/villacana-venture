@@ -3414,7 +3414,29 @@
    ],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "14 Nov: the crazy-paving path moved from data/north_pool_gardens.json into data/ground_plan_north_pool.json as a smooth centreline; the lawn added round the deck (deck cut out with the new `cut`). The aerial cannot trace the shaded north lawn, so the lawn is bounded by known edges. Still to do: the crazy paving down the west side along the curved white wall and along the south behind the hedges (IMG_2204), Calle Isabel's crazy-paving surface and curve (IMG_2205), the hedges and planter walls as edges. 15 Nov: the path's west side re-traced through the solved IMG_2204 camera onto the paving at the foot of the curved wall, with a south stretch behind the hedges; Calle Isabel's crazy-paving surface added (IMG_2205). Open: the north stretch casts 1-3 m north of the model through the same camera (kept against the patio fronts); the hedges and planter walls as edges; the yucca by Isabel."
+   "notes": "14 Nov: the crazy-paving path moved from data/north_pool_gardens.json into data/ground_plan_north_pool.json as a smooth centreline; the lawn added round the deck (deck cut out with the new `cut`). The aerial cannot trace the shaded north lawn, so the lawn is bounded by known edges. Still to do: the crazy paving down the west side along the curved white wall and along the south behind the hedges (IMG_2204), Calle Isabel's crazy-paving surface and curve (IMG_2205), the hedges and planter walls as edges. 15 Nov: the path's west side re-traced through the solved IMG_2204 camera onto the paving at the foot of the curved wall, with a south stretch behind the hedges; Calle Isabel's crazy-paving surface added (IMG_2205). Open: the north stretch casts 1-3 m north of the model through the same camera (kept against the patio fronts); the hedges and planter walls as edges; the yucca by Isabel. 15 Nov (complete for the ground plan): the hedges cast through the solved camera, the long south hedge and the hibiscus hedge with its white kerb, are the lawn's south edge (the aerial trace had put it 3-5 m too far south, reading the hedges as grass); the south-west path along the hibiscus hedge and the gap path through the south hedges replace the east-west guess; the lawn's west side follows the moved path; the twelve hibiscus hedge objects (o14-o25) are replaced by these hedges; the feathery tree (o9) and yucca (o13) moved to their photo positions; Calle Isabel's south bend clears the yucca. Open: the north stretch discrepancy; south of the hedges (gap:north-pool-south-gardens); the station's foreground buildings (north-pool-station-foreground). Stays in progress only for placement approval."
+  },
+  {
+   "id": "north-pool-station-foreground",
+   "area": "north-pool",
+   "priority": 2,
+   "kind": "structure",
+   "title": "North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view",
+   "photos": [
+    "IMG_2206.jpg",
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ],
+   "build": "Through the solved station camera (data/photo_poses.json) the model's buildings next to the camera, a white block and a tiled pergola south-west of it, fill the left half of IMG_2206 where the photo looks over the west gardens: white garden walls with bougainvillea, a gateway, the curved white wall and the stair. In IMG_2205 the model's pergola roof covers the yucca where the photo's foreground is only a few roof tiles. Check which registry parts and generated porches stand there, against the photo and the aerial, and correct what is generated rather than registry.",
+   "avoid": "Do not move registry footprints without a measured correction. Leave Walk alone.",
+   "accept": [
+    "IMG_2206 rendered through the solved camera shows the west gardens",
+    "Photo checks re-recorded"
+   ],
+   "features": [],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
   },
   {
    "id": "ground-plan-middle-pool",

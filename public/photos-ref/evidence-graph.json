@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "4eecdf315390b86880bb7e4d381394ba9642113fe9a20dcdaf73742b0ddfd36f",
+ "inputDigest": "712f343aabf9e9426f6f9cd8ce8177d797a17099802905172dc37ec45025ae9b",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 436,
+  "features": 437,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 181
+  "modelFeaturesWithPhotoCitations": 182
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3440,6 +3440,16 @@
    ]
   },
   {
+   "id": "picasso_lawn_wall.json:picasso-lawn-wall",
+   "name": "White wall along Calle Pintor Picasso enclosing the big-pool lawn",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; the lawn edge, about 1 m",
+   "evidence": [
+    "IMG_2764.jpg",
+    "IMG_2765.jpg"
+   ]
+  },
+  {
    "id": "cervantes_garden_door.json:cervantes-garden-door",
    "name": "Cervantes junction · raised garden door and private patio",
    "kind": "reference feature",
@@ -3858,7 +3868,7 @@
    "id": "ground_plan_north_pool.json:north-pool-lawn",
    "name": "North pool lawn",
    "kind": "reference feature",
-   "source": "IMG_2204 and IMG_2205 (upper-floor views over the courtyard) show lawn all round the pool deck, from the crazy-paving path on the north and west to the hedges on the south and the paved lane on the east. Its north and west sides are the path's pool-side edge, its east side Calle Isabel's lawn-side edge, its south side the dark hedge line traced from the aerial (scripts/trace_ground.py lawn; the aerial reads the shaded, worn north lawn as not green, so only the south edge is traced). The measured deck is cut out. Good to about a metre.",
+   "source": "IMG_2204 and IMG_2205 (solved station camera) show lawn all round the pool deck. Its north and west sides follow the crazy-paving path's pool-side edge, its east side Calle Isabel, its south side the two hedges, both cast through the camera (2026-11-15). The aerial's dark band south of these hedges was the hedges themselves, read as grass, so the earlier aerial trace ran 3-5 m too far south. What lies south of the hedges is not seen. The measured deck is cut out. Good to about half a metre near the camera, a metre on the north side.",
    "evidence": [
     "IMG_2204.jpg",
     "IMG_2205.jpg",
@@ -3869,7 +3879,7 @@
    "id": "ground_plan_north_pool.json:north-pool-lawn-path",
    "name": "North pool · crazy-paving lawn-edge path",
    "kind": "reference feature",
-   "source": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool). 2026-11-15: the west side and a south stretch are re-traced through the solved IMG_2204 camera (pixels on the paving's centre cast onto the surveyed ground): the paving runs at the foot of the curved white wall, about 1.4 m east of the earlier band, which projected onto the wall top, then turns east along the south side behind the hedges for about 10 m (to x -175.8, where the hedges hide it). The north stretch is kept against the north patio fronts: cast through the same camera it lands 1-3 m further north (2-3 m at its east end, where 10 pixels move it a metre), which would put it inside the patios, so it is an open discrepancy, not a correction.",
+   "source": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool). 2026-11-15, through the solved IMG_2204 camera (pixels on the paving cast onto the surveyed ground): the west side runs at the foot of the curved white wall, about 1.4 m east of the earlier band (which projected onto the wall top); at the south-west corner it runs east to the tip of the hibiscus hedge and turns south along the hedge's west side out of view (stones at the photo's lower left); a second short path leaves the lawn south through the gap between the hibiscus hedge and the long south hedge. The north stretch is kept against the north patio fronts: cast through the same camera it lands 1-3 m further north, which would put it inside the patios (and the tree beside it casts 2 m north of where it stands against the paving), so the camera's far casts are taken as off and this is an open discrepancy, not a correction.",
    "evidence": [
     "IMG_2204.jpg",
     "IMG_2205.jpg",
@@ -3881,7 +3891,7 @@
    "id": "ground_plan_north_pool.json:calle-isabel-crazy-paving",
    "name": "Calle Isabel's crazy-paving surface beside the north pool lawn",
    "kind": "reference feature",
-   "source": "IMG_2205 (solved station camera) shows the lane down the east side of the lawn paved in the same irregular stone as the lawn-edge path, not terracotta tiles: its west edge, cast through the camera onto the surveyed ground, runs at x -165.9 from z 9.5 to 18 (within 0.3-0.6 m of the mapped lane's west edge), and it reappears beyond the yucca bending south-east (about -163.8, 21.8 to -163.3, 22.6). The east edge is hidden by the yucca, so the surface takes the mapped lane's paved width with its margin (1.32 m), raised 0.21 m to lie just over the lane's own tiles (lanes are drawn 0.27 m over the ground). The lane's line and level stay those of data/street_layout.json; this is its surface.",
+   "source": "IMG_2205 (solved station camera) shows the lane down the east side of the lawn paved in the same irregular stone as the lawn-edge path, not terracotta tiles: its west edge, cast through the camera onto the surveyed ground, runs at x -165.9 from z 9.5 to 18 (within 0.3-0.6 m of the mapped lane's west edge), and it reappears beyond the yucca bending south-east (about -163.8, 21.8 to -163.3, 22.6). The east edge is hidden by the yucca, so the surface takes the mapped lane's paved width with its margin (1.32 m), raised 0.21 m to lie just over the lane's own tiles (lanes are drawn 0.27 m over the ground). The lane's line and level stay those of data/street_layout.json; this is its surface. 15 Nov: the south bend moved about 0.5 m east so the yucca, whose trunk base casts to (-164.2, 22.5), stands on the lawn at the lane's edge as in IMG_2205.",
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"
@@ -19901,6 +19911,12 @@
   },
   {
    "from": "photo:IMG_2764.jpg",
+   "to": "picasso_lawn_wall.json:picasso-lawn-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2764.jpg",
    "to": "main_pool_lawn.json:lawn-bollards-bins",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19970,6 +19986,12 @@
   {
    "from": "photo:IMG_2765.jpg",
    "to": "jorge_lane.json:jorge-lane-lawn-palm",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2765.jpg",
+   "to": "picasso_lawn_wall.json:picasso-lawn-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
