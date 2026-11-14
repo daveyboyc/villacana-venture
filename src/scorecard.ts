@@ -60,12 +60,14 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     #scorecard .why { color:#666; font-size:11px; }
     #scorecard details.more > summary { cursor:pointer; color:#235f94; margin:4px 0; }
     body.embedded #scorecard { top:100px; }
+    body.mobile-inspect #scorecard[data-requested="true"] { display:block !important; }
     @media (pointer:coarse) { #scorecard { max-height:max(120px, calc(100dvh - 370px)); } }
     @media (pointer:coarse) and (max-height:450px) { #scorecard { top:64px; left:auto; right:max(12px, env(safe-area-inset-right)); max-height:60dvh; } }
   `;
   document.head.append(style);
   const panel = document.createElement("details");
   panel.id = "scorecard";
+  panel.dataset.requested = String(wanted === "1");
   panel.setAttribute("aria-label", "Area scorecard");
   const summary = document.createElement("summary"), body = document.createElement("div");
   body.className = "body";

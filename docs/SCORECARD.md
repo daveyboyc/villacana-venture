@@ -4,6 +4,8 @@ The model loop adds tracked-finding acceptance counts and scoped missing
 photo/map/measurement requests. See [CONTINUOUS_LOOP.md](CONTINUOUS_LOOP.md) and
 `refs/LOOP.md`. These are separate from the red/amber/green work light: green
 means up to date, never whole-area photographic or dimensional acceptance.
+On the compact phone Inspect view, `?scorecard=1` explicitly opens access to this
+panel; its normal compact view still hides it.
 
 One card per area of `data/areas.json`, saying what has been measured there and what has not.
 The game shows the card for the area the player stands in (or, in Overview, the area at the

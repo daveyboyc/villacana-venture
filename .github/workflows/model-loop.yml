@@ -29,8 +29,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: model-loop
-  cancel-in-progress: false
+  group: model-loop-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   validate:
@@ -58,6 +58,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: node scripts/test_inspection_browser.cjs
       - run: node scripts/test_scorecard_browser.cjs
+      - run: node scripts/test_photo_map_browser.cjs
       - name: Work and missing evidence
         if: always()
         run: cat refs/LOOP.md >> "$GITHUB_STEP_SUMMARY"

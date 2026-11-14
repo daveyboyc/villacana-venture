@@ -250,7 +250,12 @@
       "id": "north-pool-ground-boundaries",
       "area": "north-pool",
       "kind": "map",
-      "ask": "A dated georeferenced plan or clear aerial with identifiable ground-wall corners and unobscured Isabel-side access edges. Record scale, registration controls, held-out landmarks and uncertainty. If roof/vegetation cover prevents tracing ground edges, request ground photos instead.",
+      "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
+      "requirements": [
+       "Georeference the source with scale and registration controls",
+       "Report held-out landmarks and uncertainty",
+       "Distinguish ground walls from projecting roofs"
+      ],
       "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
       "features": [],
       "tasks": [],
@@ -2998,7 +3003,12 @@
       "id": "north-pool-ground-boundaries",
       "area": "north-pool",
       "kind": "map",
-      "ask": "A dated georeferenced plan or clear aerial with identifiable ground-wall corners and unobscured Isabel-side access edges. Record scale, registration controls, held-out landmarks and uncertainty. If roof/vegetation cover prevents tracing ground edges, request ground photos instead.",
+      "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
+      "requirements": [
+       "Georeference the source with scale and registration controls",
+       "Report held-out landmarks and uncertainty",
+       "Distinguish ground walls from projecting roofs"
+      ],
       "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
       "features": [],
       "tasks": [],

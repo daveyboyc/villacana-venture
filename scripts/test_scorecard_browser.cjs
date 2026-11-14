@@ -1,6 +1,6 @@
 // Inspect scorecard: area selection, scoped evidence flags, desktop/phone layout.
-// Exercise the widget in Layout; detailed geometry is outside this scorecard data/UI check.
-// Reuse one scene per device to avoid repeating software WebGL startup.
+// Exercise the real scorecard module in the actual slice shell. Stub the renderer host;
+// rendering the whole scene is covered separately by test_inspection_browser.cjs.
 const { chromium, devices } = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -13,16 +13,36 @@ const path = require('node:path');
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,
     args: ['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   const site = `http://127.0.0.1:${server.httpServer.address().port}`;
-  const out = path.join('docs', 'reviews', 'area-scorecard');
-  fs.mkdirSync(out, { recursive: true });
+  const harnessOut = path.join('layout-checks.local', 'loop-scorecard');
+  fs.mkdirSync(harnessOut, { recursive: true });
+  const skeleton = JSON.parse(fs.readFileSync('public/map/skeleton.json', 'utf8'));
+  const ring = skeleton.pools.find(p => p.id === 'north').ring;
+  const points = { 'north-pool': [ring.reduce((sum, p) => sum + p[0], 0) / ring.length + 9,
+    ring.reduce((sum, p) => sum + p[1], 0) / ring.length], 'elena-north': [-158.8, 41.2] };
   try {
     for (const [device, options] of [['desktop', { viewport: { width: 1280, height: 800 } }], ['phone', { ...devices['iPhone 13'], deviceScaleFactor: 1 }]]) {
       const context = await browser.newContext(options);
       const page = await context.newPage(), errors = [];
-      page.setDefaultTimeout(240000);
+      page.setDefaultTimeout(30000);
       page.on('pageerror', e => errors.push(e.message));
+      await page.route('**/src/slice.ts*', route => route.fulfill({ contentType: 'application/javascript', body: `
+        import { areaScorecard } from '/src/scorecard.ts';
+        const positions = ${JSON.stringify(points)};
+        if (navigator.maxTouchPoints > 0) document.body.classList.add('mobile-inspect');
+        document.body.dataset.details = '0';
+        const selector = document.querySelector('#inspection-area');
+        for (const id of Object.keys(positions)) selector.append(new Option(id, id));
+        selector.value = 'north-pool';
+        const card = areaScorecard();
+        const update = () => card.update(...positions[selector.value]);
+        selector.addEventListener('change', update);
+        setInterval(update, 50);
+        document.querySelector('#scene').dataset.ready = 'true';
+        window.loopScorecardHarness = true;
+      ` }));
       await page.goto(`${site}/slice.html?pool=north&view=overview&area=north-pool&scorecard=1&details=0`);
       await page.locator('#scene[data-ready="true"]').waitFor();
+      assert.equal(await page.evaluate(() => window.loopScorecardHarness), true, 'renderer isolation is explicit');
       for (const [target, area] of [['north-pool', 'north-pool'], ['elena-north', 'elena']]) {
         await page.selectOption('#inspection-area', target);
         await page.waitForFunction(id => document.querySelector('#scorecard')?.dataset.area === id, area);
@@ -42,10 +62,10 @@ const path = require('node:path');
           return box.left >= 0 && box.right <= innerWidth && (!jump?.height || box.top >= jump.bottom || box.bottom <= jump.top);
         });
         assert(fits, `${device}: panel fits viewport without covering Inspect selector`);
-        await page.screenshot({ path: path.join(out, `${device}-${area}.png`) });
+        await page.screenshot({ path: path.join(harnessOut, `${device}-${area}.png`) });
         await panel.locator(':scope > summary').click();
         assert.equal(await panel.evaluate(d => d.open), false, `${device}: panel collapses`);
-        console.log(`${device} ${area}: Inspect selection, evidence flags, acceptance scope and layout PASS`);
+        console.log(`${device} ${area}: scorecard selection, evidence flags, acceptance scope and layout PASS`);
       }
       assert.deepEqual(errors, []);
       await context.close();
