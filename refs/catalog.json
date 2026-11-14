@@ -997,7 +997,8 @@
    "raised_terraces.json:north-pool-west-terrace",
    "raised_terraces.json:north-pool-north-patios",
    "ground_plan_north_pool.json:north-pool-lawn",
-   "ground_plan_north_pool.json:north-pool-lawn-path"
+   "ground_plan_north_pool.json:north-pool-lawn-path",
+   "ground_plan_north_pool.json:calle-isabel-crazy-paving"
   ],
   "looksAt": [
    -176.7,
@@ -1046,7 +1047,8 @@
    "pool_decks.json:north-deck",
    "raised_terraces.json:north-pool-north-patios",
    "ground_plan_north_pool.json:north-pool-lawn",
-   "ground_plan_north_pool.json:north-pool-lawn-path"
+   "ground_plan_north_pool.json:north-pool-lawn-path",
+   "ground_plan_north_pool.json:calle-isabel-crazy-paving"
   ],
   "looksAt": [
    -176.7,

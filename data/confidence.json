@@ -501,11 +501,15 @@
   },
   "ground_plan_north_pool.json:north-pool-lawn-path": {
    "level": "estimated",
-   "why": "Photo-supported paving; width and plan curve estimated (about 2 m)."
+   "why": "Photo-supported paving; width and plan curve estimated (about 2 m). West side re-traced through the solved IMG_2204 camera (15 Nov); the south stretch behind the hedges is partly seen."
   },
   "ground_plan_north_pool.json:north-pool-lawn": {
    "level": "estimated",
    "why": "IMG_2204 and IMG_2205 show lawn all round the deck; bounded by the path, Calle Isabel and the aerial's south hedge line, good to about a metre. The aerial cannot trace the shaded north lawn."
+  },
+  "ground_plan_north_pool.json:calle-isabel-crazy-paving": {
+   "level": "estimated",
+   "why": "IMG_2205 shows crazy paving on the lane; its west edge cast through the solved camera agrees with the mapped lane to about half a metre. The east edge is hidden by the yucca; width estimated."
   }
  },
  "gaps": [
@@ -625,8 +629,13 @@
   {
    "id": "gap:barraka-beach-pergola",
    "name": "White framed shelter on the sand beside Barraka's deck",
-   "at": [22.0, 124.0],
-   "photos": ["IMG_2631.jpg"],
+   "at": [
+    22.0,
+    124.0
+   ],
+   "photos": [
+    "IMG_2631.jpg"
+   ],
    "why": "IMG_2631, from under the awning, shows a white timber frame with a roof on the sand west of the lounge. One oblique view does not fix its footprint, so it is not built."
   },
   {

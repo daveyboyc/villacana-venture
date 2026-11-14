@@ -1727,25 +1727,25 @@
   },
   {
    "task": "ground-plan-north-pool",
-   "checked": "2026-11-14",
+   "checked": "2026-11-15",
    "by": "Claude",
-   "feature": "ground_plan_north_pool.json:north-pool-lawn",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn-path",
    "photo": "IMG_2204.jpg",
    "render": "docs/reviews/ground-plan-north-pool/IMG_2204-after.png",
    "result": "differs",
    "followUp": "ground-plan-north-pool",
-   "notes": "The lawn now runs all round the deck with a clean edge, as in the photo, and the crazy-paving band runs along the north frontage. Still different: the photo's crazy paving continues down the west side along the curved white wall and along the south side behind the hedges, which are not traced yet; the hedges and planting in the foreground differ in size and place. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "notes": "The crazy paving now runs down the west side at the foot of the curved white wall, re-traced through this camera (it had been drawn on the wall top), and turns east along the south behind the hedges; the lawn and deck line up. Still different: projected through this camera the modelled north stretch sits 1-3 m south of the paving the photo shows (kept against the patio fronts, open discrepancy); the foreground hedges and planting differ in size and place. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
   },
   {
    "task": "ground-plan-north-pool",
-   "checked": "2026-11-14",
+   "checked": "2026-11-15",
    "by": "Claude",
-   "feature": "ground_plan_north_pool.json:north-pool-lawn",
+   "feature": "ground_plan_north_pool.json:calle-isabel-crazy-paving",
    "photo": "IMG_2205.jpg",
    "render": "docs/reviews/ground-plan-north-pool/IMG_2205-after.png",
    "result": "differs",
    "followUp": "ground-plan-north-pool",
-   "notes": "The lawn and deck line up with the photo. Different: on the right the photo shows crazy-paving stones curving down from the north frontage past the tree towards the camera, where the model draws Calle Isabel as a straight terracotta lane; the lane's surface and line there need tracing. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "notes": "Calle Isabel beside the lawn is now crazy-paving stone along the line the photo shows (its west edge cast through this camera runs within about half a metre of the mapped lane), where it was terracotta tiles. Still different: the large yucca in front of it and the tree by the north hedge are not where the photo has them, and the lane's east edge is hidden. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [

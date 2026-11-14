@@ -6,3 +6,4 @@
 - `lawn-top-details.jpg`: Inspect with the lawn round the measured deck and the crazy-paving band.
 - `IMG_2204-after.png`, `IMG_2205-after.png`: through the solved station camera; recorded in
   `data/photo_checks.json` (the west/south paving continuations and Calle Isabel's surface differ).
+- `IMG_2204-path-projection.jpg`: the re-traced path projected through the solved camera onto the photo (magenta line, yellow traced points).
