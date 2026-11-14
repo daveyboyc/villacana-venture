@@ -165,7 +165,7 @@
     "placed": 7,
     "checks": {
      "matches": 0,
-     "differs": 0,
+     "differs": 2,
      "not-comparable": 7
     },
     "camerasSolved": 3,
@@ -183,14 +183,23 @@
     "generated": 89
    },
    "placement": {
-    "features": 9,
+    "features": 10,
     "verified": 0,
-    "disputed": 0
+    "disputed": 1
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "photo-discrepancy:a87a62d5f7242721",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn"
+    },
+    {
+     "id": "photo-discrepancy:805d1961f0ae2fa9",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn"
+    }
+   ],
    "tasks": {
-    "open": 7,
-    "inProgress": 3,
+    "open": 6,
+    "inProgress": 4,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
@@ -199,7 +208,7 @@
    },
    "confidence": {
     "photographed": 6,
-    "estimated": 2,
+    "estimated": 3,
     "inferred": 1,
     "registry": 0,
     "gaps": 1
@@ -209,8 +218,8 @@
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 13, 7 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
-    "How sure: 6 photographed, 2 estimated, 1 inferred, 1 known gap.",
-    "Placement: 0 of 9 features verified."
+    "How sure: 6 photographed, 3 estimated, 1 inferred, 1 known gap.",
+    "Placement: 0 of 10 features verified, 2 open discrepancies."
    ],
    "light": {
     "colour": "red",
@@ -2080,7 +2089,7 @@
     "placed": 460,
     "checks": {
      "matches": 51,
-     "differs": 33,
+     "differs": 35,
      "not-comparable": 63
     },
     "camerasSolved": 7,
@@ -2105,9 +2114,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 434,
+    "features": 435,
     "verified": 0,
-    "disputed": 24
+    "disputed": 25
    },
    "discrepancies": [
     {
@@ -2269,11 +2278,19 @@
     {
      "id": "photo-discrepancy:57684c9d7786277b",
      "feature": "ground_plan_main_pool.json:lawn-strip-guillermo"
+    },
+    {
+     "id": "photo-discrepancy:a87a62d5f7242721",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn"
+    },
+    {
+     "id": "photo-discrepancy:805d1961f0ae2fa9",
+     "feature": "ground_plan_north_pool.json:north-pool-lawn"
     }
    ],
    "tasks": {
-    "open": 54,
-    "inProgress": 49,
+    "open": 53,
+    "inProgress": 50,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -2282,7 +2299,7 @@
    },
    "confidence": {
     "photographed": 59,
-    "estimated": 129,
+    "estimated": 130,
     "inferred": 13,
     "registry": 233,
     "gaps": 24
@@ -2292,8 +2309,8 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 59 photographed, 129 estimated, 13 inferred, 24 known gaps.",
-    "Placement: 0 of 434 features verified, 40 open discrepancies."
+    "How sure: 59 photographed, 130 estimated, 13 inferred, 24 known gaps.",
+    "Placement: 0 of 435 features verified, 42 open discrepancies."
    ],
    "light": {
     "colour": "red",

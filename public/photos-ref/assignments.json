@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 434,
+  "features": 435,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 179
+  "modelFeaturesWithPhotoCitations": 180
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1016,9 +1016,10 @@
     "backdrop.json:photo-trees",
     "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
-    "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace",
-    "raised_terraces.json:north-pool-north-patios"
+    "raised_terraces.json:north-pool-north-patios",
+    "ground_plan_north_pool.json:north-pool-lawn",
+    "ground_plan_north_pool.json:north-pool-lawn-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1053,8 +1054,9 @@
     "backdrop.json:photo-trees",
     "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
-    "north_pool_gardens.json:north-pool-lawn-path",
-    "raised_terraces.json:north-pool-north-patios"
+    "raised_terraces.json:north-pool-north-patios",
+    "ground_plan_north_pool.json:north-pool-lawn",
+    "ground_plan_north_pool.json:north-pool-lawn-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1094,8 +1096,9 @@
     "backdrop.json:photo-trees",
     "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
-    "north_pool_gardens.json:north-pool-lawn-path",
-    "raised_terraces.json:north-pool-west-terrace"
+    "raised_terraces.json:north-pool-west-terrace",
+    "ground_plan_north_pool.json:north-pool-lawn",
+    "ground_plan_north_pool.json:north-pool-lawn-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1169,9 +1172,9 @@
     }
    ],
    "citedBy": [
-    "north_pool_gardens.json:north-pool-lawn-path",
     "raised_terraces.json:north-pool-west-terrace",
-    "raised_terraces.json:north-pool-north-patios"
+    "raised_terraces.json:north-pool-north-patios",
+    "ground_plan_north_pool.json:north-pool-lawn-path"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

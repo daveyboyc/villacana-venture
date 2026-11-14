@@ -3391,7 +3391,12 @@
    "priority": 2,
    "kind": "detail",
    "title": "North pool: smooth paths, patios and green spaces with their edges and boundaries",
-   "photos": [],
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ],
    "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (north_pool_gardens.json, raised_terraces.json, north_west_canopies.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
    "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
    "accept": [
@@ -3399,12 +3404,16 @@
     "Photo checks recorded",
     "Visible in Inspect Layout and with Show details"
    ],
-   "features": [],
+   "features": [
+    "ground_plan_north_pool.json:north-pool-lawn",
+    "ground_plan_north_pool.json:north-pool-lawn-path"
+   ],
    "dependsOn": [
     "ground-plan-framework"
    ],
-   "status": "open",
-   "owner": null
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "14 Nov: the crazy-paving path moved from data/north_pool_gardens.json into data/ground_plan_north_pool.json as a smooth centreline; the lawn added round the deck (deck cut out with the new `cut`). The aerial cannot trace the shaded north lawn, so the lawn is bounded by known edges. Still to do: the crazy paving down the west side along the curved white wall and along the south behind the hedges (IMG_2204), Calle Isabel's crazy-paving surface and curve (IMG_2205), the hedges and planter walls as edges."
   },
   {
    "id": "ground-plan-middle-pool",
