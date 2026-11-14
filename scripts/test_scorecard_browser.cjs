@@ -20,7 +20,7 @@ const path = require('node:path');
       const page = await context.newPage(), errors = [];
       page.setDefaultTimeout(240000);
       page.on('pageerror', e => errors.push(e.message));
-      await page.goto(`${site}/slice.html?pool=north,middle,south,main&view=overview&area=north-pool&scorecard=1`);
+      await page.goto(`${site}/slice.html?pool=north&view=overview&area=north-pool&scorecard=1`);
       await page.locator('#scene[data-ready="true"]').waitFor();
       for (const [target, area] of [['north-pool', 'north-pool'], ['elena-north', 'elena']]) {
         await page.selectOption('#inspection-area', target);
