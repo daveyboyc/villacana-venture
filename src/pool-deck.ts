@@ -3,7 +3,7 @@ import { pointInRing } from "./geom";
 import type { SkeletonPool, Vec2 } from "./types";
 
 /** Height of the deck's top above the lawn: the photos show a low step down at its outer edge. */
-const DECK_TOP = 0.03;
+export const DECK_TOP = 0.03;
 /** Width of the rounded edging stones along the outer edge (IMG_2204: a paler strip under the fence spigots). */
 const EDGING = 0.12;
 /** One deck-slab image covers this many metres, as on the ground (src/materials.ts). */
