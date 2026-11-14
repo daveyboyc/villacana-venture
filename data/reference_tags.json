@@ -6534,6 +6534,8 @@
   "note": "Pin is vague (+/-18.5 m); the view across the large lawn to the sea gateway places it on the main pool lawn."
  },
  "IMG_2760.jpg": {
+  "looksAt": [8.0, 116.0],
+  "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid",
   "title": "Large lawn towards the Barraka building",
   "shows": [
    "main-pool",

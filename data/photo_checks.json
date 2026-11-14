@@ -1671,6 +1671,37 @@
    "by": "Codex",
    "result": "not-comparable",
    "notes": "Full source and before/after Inspect view inspected for fitting form and surface ordering. Camera is an explicit Inspect review view, not a solved photographic pose. Calibrated pixel/metric match cannot be assessed; anchors/dimensions remain estimated. IMG_2679 resolves two separate shower posts; the dark path drain and pale deck cap are distinct. No placement approval inferred."
+  },
+  {
+   "task": "ground-plan-main-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_main_pool.json:main-lawn",
+   "photo": "IMG_2760.jpg",
+   "render": "docs/reviews/ground-plan-main-pool/IMG_2760-after.png",
+   "result": "matches",
+   "notes": "Looking east across the big lawn from the pink path: open lawn to the clipped hedge along the sea railing, Barraka and its palms beyond, as in the photo. The lawn's edge is now traced from the aerial and the hedge runs the whole railing. The photo's service lid sits further right than the render's. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-main-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_main_pool.json:lawn-strip-guillermo",
+   "photo": "IMG_2598.jpg",
+   "render": "docs/reviews/ground-plan-main-pool/IMG_2598-after.png",
+   "result": "differs",
+   "followUp": "main-pool-lawn-cameras",
+   "notes": "From the Calle Jorge plinth over the lantana planter: the lawn strip, the pink path, the bin and bollard beyond it, the big lawn, the hedge and railing and Barraka line up with the photo. Different: a blue lounger from the October web photos (objects main-pool-18 to -25) stands on the strip, where this November photo shows open lawn; loungers are seasonal. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-main-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_main_pool.json:lawn-pink-paths",
+   "photo": "IMG_2603.jpg",
+   "render": "docs/reviews/ground-plan-main-pool/IMG_2603-after.png",
+   "result": "matches",
+   "notes": "Unchanged by the lawn tracing: the path, its fork, the fittings either side and the palm at the pool end, as in the photo. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [

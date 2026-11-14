@@ -1621,7 +1621,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-sea-hedge",
+   "ground_plan_main_pool.json:main-lawn",
    "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo"
   ],
@@ -7965,6 +7965,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
    "jorge_lane.json:jorge-lane-guillermo-planter",
    "street:guillermo",
    "jorge_lane.json:jorge-lane-guillermo-paving"
@@ -11850,7 +11851,10 @@
    "altitude": 5.3,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "ground_plan_main_pool.json:main-lawn",
+   "ground_plan_main_pool.json:lawn-strip-guillermo"
+  ],
   "looksAt": [
    28.8,
    110.5
@@ -11947,7 +11951,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "main_pool_lawn.json:lawn-sea-hedge",
+   "ground_plan_main_pool.json:main-lawn",
    "seafront_fence.json:main-pool-lawn-railing",
    "area:paseo"
   ],
@@ -12084,6 +12088,7 @@
   },
   "citedBy": [
    "main_pool_lawn.json:lawn-bollards-bins",
+   "ground_plan_main_pool.json:main-lawn",
    "ground_plan_main_pool.json:lawn-pink-paths"
   ],
   "looksAt": [
@@ -12091,7 +12096,9 @@
    110.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn"
+  ],
   "subject": "pink lawn path to the main pool with bollards and a slatted bin beside it"
  },
  {
@@ -12406,7 +12413,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:paseo"
+   "area:paseo",
+   "ground_plan_main_pool.json:main-lawn"
   ],
   "subject": "Curved sandstone wall and green railing at Barraka's west corner"
  },
@@ -16860,14 +16868,18 @@
   "citedBy": [
    "seafront_fence.json:guillermo-beach-gate",
    "seafront_fence.json:guillermo-ramp-wall",
-   "seafront_fence.json:main-pool-lawn-railing"
+   "seafront_fence.json:main-pool-lawn-railing",
+   "ground_plan_main_pool.json:main-lawn"
   ],
   "looksAt": [
-   -0.0,
-   114.2
+   8.0,
+   116.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
-  "looksAtFeatures": []
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn"
+  ],
+  "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid"
  },
  {
   "id": "IMG_2761.jpg",
@@ -16900,6 +16912,7 @@
   "citedBy": [
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-sea-hedge",
+   "ground_plan_main_pool.json:main-lawn",
    "ground_plan_main_pool.json:lawn-pink-paths"
   ],
   "looksAt": [
@@ -16907,7 +16920,9 @@
    121.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn"
+  ],
   "subject": "lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing"
  },
  {
@@ -17034,6 +17049,8 @@
    "jorge_lane.json:jorge-lane-lawn-palm",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:main-pool-deck-tiles",
+   "ground_plan_main_pool.json:main-pool-deck-band",
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
    "ground_plan_main_pool.json:lawn-pink-paths"
   ],
   "looksAt": [
@@ -17042,6 +17059,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn",
    "main_pool_lawn.json:lawn-bollards-bins",
    "ground_plan_main_pool.json:lawn-pink-paths"
   ],
@@ -17080,6 +17098,8 @@
    "jorge_lane.json:jorge-lane-lawn-palm",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-white-rooms",
+   "ground_plan_main_pool.json:main-pool-deck-band",
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
    "ground_plan_main_pool.json:lawn-pink-paths"
   ],
   "looksAt": [
@@ -17087,7 +17107,10 @@
    108.0
   ],
   "looksAtBasis": "reviewed",
-  "looksAtFeatures": [],
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn",
+   "ground_plan_main_pool.json:main-pool-deck-band"
+  ],
   "subject": "pink path to the main pool, the tall palm at the pool corner and the wave-roofed building"
  },
  {
@@ -17300,7 +17323,9 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:lawn-pink-paths",
-   "main_pool_lawn.json:lawn-bollards-bins"
+   "ground_plan_main_pool.json:main-lawn",
+   "main_pool_lawn.json:lawn-bollards-bins",
+   "ground_plan_main_pool.json:lawn-strip-guillermo"
   ]
  },
  {
@@ -17348,7 +17373,7 @@
    "street:guillermo",
    "jorge_lane.json:jorge-lane-guillermo-paving",
    "jorge_lane.json:jorge-lane-guillermo-planter",
-   "jorge_lane.json:jorge-lane-guillermo-west"
+   "ground_plan_main_pool.json:lawn-strip-guillermo"
   ],
   "subject": "Calle Guillermo north of the Jorge junction: octagon and square tiles, the lantana planter wall on the east side"
  },
@@ -17393,6 +17418,7 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
    "jorge_lane.json:jorge-lane-guillermo-planter",
    "street:guillermo",
    "jorge_lane.json:jorge-lane-guillermo-paving"
@@ -17524,10 +17550,10 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
    "main_pool_lawn.json:enrique-step-finish",
    "jorge_lane.json:jorge-lane-guillermo-planter",
-   "main_pool_lawn.json:main-pool-deck-tiles",
-   "backdrop.json:aerial-trees"
+   "main_pool_lawn.json:main-pool-deck-tiles"
   ],
   "subject": "marble nosing and blue risers at the top of Enrique's steps, terracotta paving and the pool below",
   "headingOff": 49
@@ -18728,6 +18754,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "street:guillermo",
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
    "street:jorge"
   ],
   "subject": "lane descending toward the seaward end of Calle Guillermo"
@@ -18773,7 +18800,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "street:guillermo",
-   "street:jorge"
+   "street:jorge",
+   "ground_plan_main_pool.json:lawn-strip-guillermo"
   ]
  },
  {

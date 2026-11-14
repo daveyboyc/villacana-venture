@@ -792,7 +792,7 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   // The measured pool decks keep their clean curved edge (src/pool-deck.ts).
   paintPoolDecks(pctx, size, [centre.x - span, centre.z - span], span * 2, skeleton.pools, skeleton.cover.classes.deck, skeleton.cover.classes.lawn);
   // Where the ground plan is traced its clean edges replace the raster classes' wobbly ones.
-  paintGroundPlan(pctx, (x, z) => [(x - (centre.x - span)) / (span * 2) * size, (z - (centre.z - span)) / (span * 2) * size], skeleton.cover.classes.lawn);
+  paintGroundPlan(pctx, (x, z) => [(x - (centre.x - span)) / (span * 2) * size, (z - (centre.z - span)) / (span * 2) * size], { ...skeleton.cover.classes, lawn: skeleton.cover.classes.lawn, deck: skeleton.cover.classes.deck });
   // Paint short blades all over the lawn so it reads as grass right to its edges.
   const painted = pctx.getImageData(0, 0, size, size).data;
   // Keep classification pixels intact, but make the rendered turf less saturated.

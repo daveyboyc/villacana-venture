@@ -3803,6 +3803,40 @@
     "f": 1201.8
    },
    "initialBasis": "photo content: partway down the inner tiled path, the hedge and mesh fence ahead (the pin, +-2.3 m, falls inside the kiosk); facing the reviewed looksAt (the phone compass is about 47 degrees off, refs catalogue); tilted 8 degrees down onto the tiles; eye 1.5 m above the ground there (-0.26 m), 2026-11-13."
+  },
+  "IMG_2598.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -17.9,
+    "y": -0.64,
+    "z": 125.2,
+    "yaw": 72.5,
+    "pitch": -10.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "phone pin; reviewed looksAt; ground eye height; 26 mm-equivalent lens from EXIF Standing on the Calle Jorge plinth by the lantana planter (the planter top fills the foreground), eye about 1.6 m above the ground there, tilted 10 degrees down; 2026-11-14."
+  },
+  "IMG_2760.jpg": {
+   "image": [
+    1200,
+    1600
+   ],
+   "points": [],
+   "initial": {
+    "x": -7.6,
+    "y": -0.72,
+    "z": 121.6,
+    "yaw": 94,
+    "pitch": -12.0,
+    "roll": 0.0,
+    "f": 1201.8
+   },
+   "initialBasis": "photo content: on the pink path (its edge and a bollard in the foreground, the service lid at right), looking east across the big lawn to Barraka; the pin (+-10.8 m) is on the lawn. Heading kept, tilted 12 degrees down, eye 1.5 m above the ground; 2026-11-14."
   }
  }
 }

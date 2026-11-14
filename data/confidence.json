@@ -471,9 +471,34 @@
    "level": "photographed",
    "why": "IMG_2759, IMG_2762 and IMG_2763 show the kiosk as plain white walls, and the aerial shows its pale flat roof on the registry outline; its louvred doors are a gap."
   },
-  "middle_pool.json:middle-pool-shower": {"level": "estimated", "why": "Two parallel stainless posts (0.38 m separation estimated) with inclined swan-necks, small downward head and push control, visible beside the east-lobe life ring in all three photos. Height 2.15 m, 48 mm pipe and ground anchor are estimates (about 1 m placement uncertainty); no solved camera, measured placement approval or underground plumbing inferred."},
-  "middle_pool.json:middle-pool-west-path-drain": {"level": "estimated", "why": "Dark concentric slotted cover with solid centre and pale square surround, in crazy paving OUTSIDE the deck between west planter and pool. Diameter 0.30 m and path anchor estimated (about 1 m uncertainty). Flush fitting follows existing terrain; no path or deck outline changed."},
-  "middle_pool.json:middle-pool-west-deck-cap": {"level": "estimated", "why": "Pale circular inspection lid with small lifting hole on cream slab deck, distinct from the darker slotted path cover. Diameter 0.28 m and anchor estimated (about 1 m uncertainty). Existing deck and pool rings retained."}
+  "middle_pool.json:middle-pool-shower": {
+   "level": "estimated",
+   "why": "Two parallel stainless posts (0.38 m separation estimated) with inclined swan-necks, small downward head and push control, visible beside the east-lobe life ring in all three photos. Height 2.15 m, 48 mm pipe and ground anchor are estimates (about 1 m placement uncertainty); no solved camera, measured placement approval or underground plumbing inferred."
+  },
+  "middle_pool.json:middle-pool-west-path-drain": {
+   "level": "estimated",
+   "why": "Dark concentric slotted cover with solid centre and pale square surround, in crazy paving OUTSIDE the deck between west planter and pool. Diameter 0.30 m and path anchor estimated (about 1 m uncertainty). Flush fitting follows existing terrain; no path or deck outline changed."
+  },
+  "middle_pool.json:middle-pool-west-deck-cap": {
+   "level": "estimated",
+   "why": "Pale circular inspection lid with small lifting hole on cream slab deck, distinct from the darker slotted path cover. Diameter 0.28 m and anchor estimated (about 1 m uncertainty). Existing deck and pool rings retained."
+  },
+  "ground_plan_main_pool.json:main-pool-deck-band": {
+   "level": "estimated",
+   "why": "Traced from the aerial's lawn edge, good to about a metre; texture only. The deck's own outline is not traced."
+  },
+  "ground_plan_main_pool.json:main-lawn": {
+   "level": "estimated",
+   "why": "Traced from the georeferenced aerial's green and matched against IMG_2760, IMG_2761, IMG_2603 and IMG_2598; edges good to about a metre. The hedge along the sea railing is seen in IMG_2760, IMG_2598, IMG_2761 and IMG_2763; its size is by eye."
+  },
+  "ground_plan_main_pool.json:lawn-strip-guillermo": {
+   "level": "estimated",
+   "why": "IMG_2598 and IMG_2765 show lawn between the lantana planter and the path; the aerial's brown band is read as worn grass. The south end by the kiosk is estimated."
+  },
+  "ground_plan_main_pool.json:lawn-east-path": {
+   "level": "inferred",
+   "why": "Seen only on the aerial as a pale line; no ground photo. Built so the lawn shows it; what it is and where it ends are open (photo request lawn-east-path)."
+  }
  },
  "gaps": [
   {

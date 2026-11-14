@@ -167,17 +167,7 @@
   },
   "hedge": {
     "id": "lawn-sea-hedge",
-    "name": "Clipped hedge and shower along the sea side of the main-pool lawn",
-    "points": [
-      [
-        -3.02,
-        129.75
-      ],
-      [
-        4.38,
-        120.31
-      ]
-    ],
+    "name": "Shower on the sea side of the main-pool lawn (the hedge along the railing is in the ground plan)",
     "shower": [
       -3.5,
       129.3
@@ -186,7 +176,8 @@
       "IMG_2761.jpg",
       "IMG_2763.jpg",
       "IMG_2759.jpg"
-    ]
+    ],
+    "note": "2026-11-14: the hedge moved to data/ground_plan_main_pool.json as the main lawn's edge along the whole sea railing; the shower stays here."
   },
   "deck": {
     "id": "main-pool-deck-tiles",

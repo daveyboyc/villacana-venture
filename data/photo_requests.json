@@ -692,6 +692,24 @@
       "radius": 5,
       "since": "2026-11-13",
       "status": "open"
+    },
+    {
+      "id": "lawn-east-path",
+      "area": "main-pool",
+      "at": [
+        2.0,
+        92.0
+      ],
+      "look": [
+        8.5,
+        82.5
+      ],
+      "ask": "From the deck's east corner, along the thin pale line across the north-east corner of the big lawn to the Picasso-side wall: what it is (path, stepping stones, a service trench) and where it meets the wall.",
+      "why": "The aerial shows a pale line about 0.7 m wide there; no ground photo does, so it is built as inferred concrete (ground_plan_main_pool.json lawn-east-path)",
+      "priority": 3,
+      "radius": 6,
+      "since": "2026-11-14",
+      "status": "open"
     }
   ]
 }

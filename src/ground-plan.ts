@@ -41,6 +41,8 @@ export const FINISHES = {
   "gravel": { colour: "#c9bea8", lift: 0.04, paved: true },
   "lawn": { colour: "#6b8a4e", lift: 0, paved: false },
   "planted-bed": { colour: "#4b3a2c", lift: 0.03, paved: false },
+  // Texture only: the pool deck's stone, painted with the ground's deck class so its edge is clean.
+  "pool-deck": { colour: "#e8dcc2", lift: 0, paved: false },
 } as const;
 type Finish = keyof typeof FINISHES;
 
@@ -113,9 +115,22 @@ export function groundEdges(): { surface: string; kind: EdgeKind; height: number
       const ring = b.surface.outline as Vec2[], n = ring.length, from = e.from ?? 0, to = e.to ?? n;
       const pts: Vec2[] = [];
       for (let k = from; k <= (to < from ? to + n : to); k++) pts.push(ring[k % n]);
-      lines = [roundPolyline(pts, b.surface.corners ?? 0.3)];
+      // An outline's edge stands just outside it, so it bounds the surface instead of covering its rim.
+      const line = roundPolyline(pts, b.surface.corners ?? 0.3), mid = line[Math.floor(line.length / 2)], probe = offsetLine(line, 0.05)[Math.floor(line.length / 2)];
+      const inward = pointInRing(probe[0], probe[1], ring) ? 1 : -1;
+      lines = [mid ? offsetLine(line, -inward * width / 2) : line];
     }
-    out.push({ surface: b.surface.id, kind: e.kind, height, width, planting: e.planting, runs: lines.flatMap((l) => cutOpenings(l, e.openings ?? [])) });
+    out.push({ surface: b.surface.id, kind: e.kind, height, width, planting: e.planting, runs: lines.flatMap((l) => cutOpenings(resample(l, 0.4), e.openings ?? [])) });
+  }
+  return out;
+}
+
+/** The line with a point every `step` metres or less along it, corners kept. */
+function resample(line: Vec2[], step: number): Vec2[] {
+  const out: Vec2[] = [line[0]];
+  for (let i = 1; i < line.length; i++) {
+    const a = line[i - 1], b = line[i], n = Math.max(1, Math.ceil(Math.hypot(b[0] - a[0], b[1] - a[1]) / step));
+    for (let k = 1; k <= n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]);
   }
   return out;
 }
@@ -164,16 +179,37 @@ export function onGroundPlanPaving(x: number, z: number): boolean {
  * give way to the clean vector edge there. Paved surfaces are not painted: their mesh covers the ground,
  * and a painted edge under it leaves an anti-aliased fringe just outside the mesh.
  */
-export function paintGroundPlan(ctx: CanvasRenderingContext2D, toPixel: (x: number, z: number) => [number, number], lawn: string): void {
-  for (const b of groundSurfaces) {
-    if (FINISHES[b.surface.finish].paved) continue;
-    ctx.fillStyle = b.surface.finish === "lawn" ? lawn : FINISHES[b.surface.finish].colour;
+export function paintGroundPlan(ctx: CanvasRenderingContext2D, toPixel: (x: number, z: number) => [number, number], classes: { lawn: string; deck: string; [name: string]: string }): void {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  // A surface listing others as `above` is painted after them, so it wins where they meet.
+  const order = [...groundSurfaces].sort((a, b) => (a.surface.above?.includes(b.surface.id) ? 1 : 0) - (b.surface.above?.includes(a.surface.id) ? 1 : 0));
+  for (const b of order) {
+    const finish = b.surface.finish;
+    if (FINISHES[finish].paved) continue;
+    ctx.fillStyle = finish === "lawn" ? classes.lawn : finish === "pool-deck" ? classes.deck : FINISHES[finish].colour;
     for (const poly of b.polys) {
       ctx.beginPath();
-      for (const ring of poly) ring.forEach((p, i) => (i ? ctx.lineTo(...toPixel(...p)) : ctx.moveTo(...toPixel(...p))));
+      for (const ring of poly) ring.forEach((p, i) => {
+        const [x, y] = toPixel(...p);
+        x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y);
+        if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y);
+      });
       ctx.fill("evenodd");
     }
   }
+  // The texture passes after this key on the ground classes' exact colours (the turf, the tiles), and
+  // anti-aliased edge pixels in between would show as a pale fringe: snap them to the nearest class.
+  const left = Math.max(0, Math.floor(x0) - 2), top = Math.max(0, Math.floor(y0) - 2);
+  const w = Math.min(ctx.canvas.width, Math.ceil(x1) + 2) - left, h = Math.min(ctx.canvas.height, Math.ceil(y1) + 2) - top;
+  if (w <= 0 || h <= 0) return;
+  const palette = Object.values(classes).map((hex) => [1, 3, 5].map((k) => parseInt(hex.slice(k, k + 2), 16)));
+  const image = ctx.getImageData(left, top, w, h), px = image.data;
+  for (let k = 0; k < px.length; k += 4) {
+    let best = palette[0], dist = Infinity;
+    for (const c of palette) { const d = Math.abs(px[k] - c[0]) + Math.abs(px[k + 1] - c[1]) + Math.abs(px[k + 2] - c[2]); if (d < dist) { dist = d; best = c; } }
+    if (dist) { px[k] = best[0]; px[k + 1] = best[1]; px[k + 2] = best[2]; }
+  }
+  ctx.putImageData(image, left, top);
 }
 
 function flagstoneTexture(): THREE.CanvasTexture {
@@ -238,7 +274,8 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
   const material = (key: string, make: () => THREE.Material) => { if (!materials.has(key)) materials.set(key, make()); return materials.get(key)!; };
   const inScene = (b: Built) => b.polys.some((poly) => poly[0].some(([x, z]) => near(x, z)));
   for (const b of groundSurfaces) {
-    if (!inScene(b) || !FINISHES[b.surface.finish].paved && b.surface.finish === "lawn") continue;
+    // Lawn and pool deck are painted into the ground texture (paintGroundPlan); paved finishes and planted beds are meshes.
+    if (!inScene(b) || b.surface.finish === "lawn" || b.surface.finish === "pool-deck") continue;
     const mesh = new THREE.Mesh(surfaceGeometry(b.polys, ground, FINISHES[b.surface.finish].lift + (b.surface.raise ?? 0), 2), material(b.surface.finish, () => finishMaterial(b.surface.finish)));
     mesh.name = b.surface.id; mesh.receiveShadow = true; mesh.userData.groundPlan = b.plan.area; group.add(mesh);
   }
@@ -249,11 +286,12 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
     const spec = EDGES[e.kind];
     for (const run of runs) {
       if (e.kind === "hedge" && details) {
-        // Clipped hedge pieces about 1.3 m long along the line.
-        for (let i = 1; i < run.length; i += 4) {
-          const a = run[i - 1], b = run[Math.min(run.length - 1, i + 3)], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+        // Clipped hedge pieces about 1.2 m long along the resampled line (points every 0.4 m), overlapping
+        // a little so the hedge reads as one row round its bends.
+        for (let i = 0; i < run.length - 1; i += 3) {
+          const a = run[i], b = run[Math.min(run.length - 1, i + 3)], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
           if (len < 0.2) continue;
-          const h = clippedHedge({ length: len + 0.05, depth: e.width, height: e.height, seed: seed++, clip: 4.2, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"] });
+          const h = clippedHedge({ length: len + 0.25, depth: e.width, height: e.height, seed: seed++, clip: 4.2, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"] });
           const mx = (a[0] + b[0]) / 2, mz = (a[1] + b[1]) / 2;
           h.position.set(mx, ground(mx, mz), mz); h.rotation.y = Math.atan2(b[0] - a[0], b[1] - a[1]); h.name = `${e.surface}-hedge`; group.add(h);
         }
@@ -264,7 +302,7 @@ export function addGroundPlan(scene: THREE.Scene, ground: (x: number, z: number)
       mesh.name = `${e.surface}-${e.kind}`; mesh.castShadow = mesh.receiveShadow = true; group.add(mesh);
       if (e.planting && details) {
         // Planting in a planter: low shrubs along the top every metre or so.
-        for (let i = 0; i < run.length; i += 4) {
+        for (let i = 0; i < run.length; i += 3) {
           const [x, z] = run[i], lavender = e.planting === "lavender";
           const shrub = looseShrub({ width: 0.8, depth: 0.5, height: 0.45, seed: seed++, leaf: "small", leafSize: [0.05, 0.02], greens: lavender ? ["#8f9f86", "#a3b09a", "#7f9076"] : ["#4f7038", "#5d8242", "#3f5c2e"], stems: 4, ...(lavender ? { flowers: { count: 30, colour: "#9a8cc4" } } : {}) });
           shrub.position.set(x, ground(x, z) + e.height - 0.05, z); shrub.name = `${e.surface}-planting`; group.add(shrub);

@@ -6,9 +6,9 @@ Task `main-pool-gate-corner` · area **Main pool** · priority P1 · detail
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/main-pool.md` and the contact sheet `villacana-reference/contact-sheets/main-pool.jpg`
-- docs: `docs/MAIN_POOL.md`
-- data: `data/main_pool.json`, `data/guillermo_slope.json`, `data/seafront_fence.json`, `data/main_pool_lawn.json`
-- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`, `src/seafront-fence.ts`, `src/main-pool-lawn.ts`
+- docs: `docs/MAIN_POOL.md`, `docs/SMOOTH_PATHS.md`
+- data: `data/main_pool.json`, `data/guillermo_slope.json`, `data/seafront_fence.json`, `data/main_pool_lawn.json`, `data/ground_plan_main_pool.json`
+- src: `src/main-pool.ts`, `src/pool-levels.ts`, `src/lowered-lanes.ts`, `src/seafront-fence.ts`, `src/main-pool-lawn.ts`, `src/ground-plan.ts`
 
 ## Photos to build from
 

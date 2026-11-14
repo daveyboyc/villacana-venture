@@ -488,8 +488,8 @@
     "tagged": 29,
     "placed": 29,
     "checks": {
-     "matches": 12,
-     "differs": 14,
+     "matches": 14,
+     "differs": 15,
      "not-comparable": 7
     },
     "camerasSolved": 0,
@@ -502,9 +502,9 @@
     "generated": 35
    },
    "placement": {
-    "features": 17,
+    "features": 20,
     "verified": 0,
-    "disputed": 9
+    "disputed": 10
    },
    "discrepancies": [
     {
@@ -562,11 +562,15 @@
     {
      "id": "photo-discrepancy:b0699681a986d829",
      "feature": "ground_plan_main_pool.json:lawn-inner-path"
+    },
+    {
+     "id": "photo-discrepancy:c6145e80226c59a5",
+     "feature": "ground_plan_main_pool.json:lawn-strip-guillermo"
     }
    ],
    "tasks": {
-    "open": 5,
-    "inProgress": 5,
+    "open": 4,
+    "inProgress": 6,
     "titles": [
      "Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall",
      "Calle Guillermo: put the fall to the paseo where the survey has it",
@@ -575,7 +579,7 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 15,
+    "estimated": 18,
     "inferred": 1,
     "registry": 0,
     "gaps": 2
@@ -585,12 +589,12 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "How sure: 1 photographed, 15 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 17 features verified, 14 open discrepancies."
+    "How sure: 1 photographed, 18 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 20 features verified, 15 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 4 spots",
+    "headline": "Photos needed: 5 spots",
     "requests": [
      {
       "id": "guillermo-foot-closure",
@@ -653,6 +657,22 @@
       "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
       "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
       "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "lawn-east-path",
+      "at": [
+       2.0,
+       92.0
+      ],
+      "look": [
+       8.5,
+       82.5
+      ],
+      "ask": "From the deck's east corner, along the thin pale line across the north-east corner of the big lawn to the Picasso-side wall: what it is (path, stepping stones, a service trench) and where it meets the wall.",
+      "why": "The aerial shows a pale line about 0.7 m wide there; no ground photo does, so it is built as inferred concrete (ground_plan_main_pool.json lawn-east-path)",
+      "priority": 3,
       "state": "open",
       "photos": []
      },
@@ -1489,7 +1509,7 @@
     "placed": 149,
     "checks": {
      "matches": 26,
-     "differs": 13,
+     "differs": 14,
      "not-comparable": 11
     },
     "camerasSolved": 0,
@@ -1810,8 +1830,8 @@
     "tagged": 57,
     "placed": 55,
     "checks": {
-     "matches": 0,
-     "differs": 3,
+     "matches": 1,
+     "differs": 4,
      "not-comparable": 21
     },
     "camerasSolved": 0,
@@ -1928,7 +1948,7 @@
     "tagged": 58,
     "placed": 57,
     "checks": {
-     "matches": 4,
+     "matches": 5,
      "differs": 6,
      "not-comparable": 19
     },
@@ -2051,8 +2071,8 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 49,
-     "differs": 30,
+     "matches": 51,
+     "differs": 31,
      "not-comparable": 63
     },
     "camerasSolved": 7,
@@ -2077,9 +2097,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 430,
+    "features": 434,
     "verified": 0,
-    "disputed": 23
+    "disputed": 24
    },
    "discrepancies": [
     {
@@ -2229,11 +2249,15 @@
     {
      "id": "photo-discrepancy:b0699681a986d829",
      "feature": "ground_plan_main_pool.json:lawn-inner-path"
+    },
+    {
+     "id": "photo-discrepancy:c6145e80226c59a5",
+     "feature": "ground_plan_main_pool.json:lawn-strip-guillermo"
     }
    ],
    "tasks": {
-    "open": 55,
-    "inProgress": 48,
+    "open": 54,
+    "inProgress": 49,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -2242,8 +2266,8 @@
    },
    "confidence": {
     "photographed": 59,
-    "estimated": 126,
-    "inferred": 12,
+    "estimated": 129,
+    "inferred": 13,
     "registry": 233,
     "gaps": 24
    },
@@ -2252,12 +2276,12 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 59 photographed, 126 estimated, 12 inferred, 24 known gaps.",
-    "Placement: 0 of 430 features verified, 37 open discrepancies."
+    "How sure: 59 photographed, 129 estimated, 13 inferred, 24 known gaps.",
+    "Placement: 0 of 434 features verified, 38 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 28 spots",
+    "headline": "Photos needed: 29 spots",
     "requests": [
      {
       "id": "alberto",
@@ -2703,6 +2727,22 @@
       ],
       "ask": "From the flagged path at the west entrance: one photo square-on to the house on the south side, showing its porch, doors and the full spread of the bougainvillea.",
       "why": "The bougainvillea and house front there are built from an oblique view",
+      "priority": 3,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "lawn-east-path",
+      "at": [
+       2.0,
+       92.0
+      ],
+      "look": [
+       8.5,
+       82.5
+      ],
+      "ask": "From the deck's east corner, along the thin pale line across the north-east corner of the big lawn to the Picasso-side wall: what it is (path, stepping stones, a service trench) and where it meets the wall.",
+      "why": "The aerial shows a pale line about 0.7 m wide there; no ground photo does, so it is built as inferred concrete (ground_plan_main_pool.json lawn-east-path)",
       "priority": 3,
       "state": "open",
       "photos": []

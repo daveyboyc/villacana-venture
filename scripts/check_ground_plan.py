@@ -106,9 +106,11 @@ for path in files:
         assert f['kind'] in ('path', 'patio', 'apron', 'green'), f'{name}: kind'
         assert f['finish'] in FINISHES, f'{name}: unknown finish {f["finish"]}'
         assert f.get('name') and (f.get('note') or plan['trust']), f'{name}: name and note'
-        assert f['evidence'], f'{name}: no evidence'
+        # Photos in `evidence`; a surface traced from the georeferenced aerial says so with traced: map:ground.
+        assert f['evidence'] or f.get('traced') == 'map:ground', f'{name}: no evidence'
+        assert f.get('traced') in (None, 'map:ground'), f'{name}: traced must be map:ground'
         for e in f['evidence']:
-            assert e in manifest or e in tags or e.startswith('aerial') or e.startswith('ref:'), f'{name}: evidence {e} is not a known source'
+            assert e in manifest or e in tags or e.startswith('ref:'), f'{name}: evidence {e} is not a known source'
         assert name in confidence, f'{name}: no confidence entry in data/confidence.json'
         if f['kind'] == 'path':
             assert 0.6 <= f['width'] <= 6, f'{name}: width'
