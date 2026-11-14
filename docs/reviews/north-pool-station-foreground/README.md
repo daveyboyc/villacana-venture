@@ -44,3 +44,11 @@ Reverted.
 
 These are photographic diagnostics through a solved camera, agent-reviewed only. They are not placement
 approval.
+
+## Inspect
+
+`station-layout.png` and `station-details.png` (`node scripts/shoot_inspect.cjs station
+-177,31,28,35,160 --both --pool=north`). Layout shows the structure only. Show details shows the station
+row's north face without porches, the patio walls south of the west path without the hedge mass, and
+the narrower hibiscus hedge. Still open: a generated tiled porch roof on part2, at the top left of
+IMG_2206, where the photo shows a plain wall with a climber. It is in `north-pool-station-details`.
