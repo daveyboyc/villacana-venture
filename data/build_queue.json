@@ -3405,6 +3405,7 @@
     "Visible in Inspect Layout and with Show details"
    ],
    "features": [
+    "ground_plan_north_pool.json:calle-isabel-crazy-paving",
     "ground_plan_north_pool.json:north-pool-lawn",
     "ground_plan_north_pool.json:north-pool-lawn-path"
    ],
@@ -3413,7 +3414,7 @@
    ],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "14 Nov: the crazy-paving path moved from data/north_pool_gardens.json into data/ground_plan_north_pool.json as a smooth centreline; the lawn added round the deck (deck cut out with the new `cut`). The aerial cannot trace the shaded north lawn, so the lawn is bounded by known edges. Still to do: the crazy paving down the west side along the curved white wall and along the south behind the hedges (IMG_2204), Calle Isabel's crazy-paving surface and curve (IMG_2205), the hedges and planter walls as edges."
+   "notes": "14 Nov: the crazy-paving path moved from data/north_pool_gardens.json into data/ground_plan_north_pool.json as a smooth centreline; the lawn added round the deck (deck cut out with the new `cut`). The aerial cannot trace the shaded north lawn, so the lawn is bounded by known edges. Still to do: the crazy paving down the west side along the curved white wall and along the south behind the hedges (IMG_2204), Calle Isabel's crazy-paving surface and curve (IMG_2205), the hedges and planter walls as edges. 15 Nov: the path's west side re-traced through the solved IMG_2204 camera onto the paving at the foot of the curved wall, with a south stretch behind the hedges; Calle Isabel's crazy-paving surface added (IMG_2205). Open: the north stretch casts 1-3 m north of the model through the same camera (kept against the patio fronts); the hedges and planter walls as edges; the yucca by Isabel."
   },
   {
    "id": "ground-plan-middle-pool",

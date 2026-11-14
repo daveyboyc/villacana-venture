@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "13242a8a0bc28bdc50a1e9fae2b58d98276226a3c7935973b2ac7792b874afd4",
+ "inputDigest": "4eecdf315390b86880bb7e4d381394ba9642113fe9a20dcdaf73742b0ddfd36f",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 435,
+  "features": 436,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 180
+  "modelFeaturesWithPhotoCitations": 181
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1019,7 +1019,8 @@
     "raised_terraces.json:north-pool-west-terrace",
     "raised_terraces.json:north-pool-north-patios",
     "ground_plan_north_pool.json:north-pool-lawn",
-    "ground_plan_north_pool.json:north-pool-lawn-path"
+    "ground_plan_north_pool.json:north-pool-lawn-path",
+    "ground_plan_north_pool.json:calle-isabel-crazy-paving"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1056,7 +1057,8 @@
     "pool_decks.json:north-deck",
     "raised_terraces.json:north-pool-north-patios",
     "ground_plan_north_pool.json:north-pool-lawn",
-    "ground_plan_north_pool.json:north-pool-lawn-path"
+    "ground_plan_north_pool.json:north-pool-lawn-path",
+    "ground_plan_north_pool.json:calle-isabel-crazy-paving"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

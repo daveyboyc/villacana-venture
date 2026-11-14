@@ -152,28 +152,60 @@
       "lines": [
         [
           [
-            -189.5,
-            24.5
+            -175.8,
+            29.1
           ],
           [
-            -189.25,
-            22.2
+            -176.9,
+            28.9
           ],
           [
-            -188.95,
-            20.0
+            -178.0,
+            28.5
           ],
           [
-            -188.55,
-            18.4
+            -179.8,
+            28.4
+          ],
+          [
+            -181.4,
+            28.3
+          ],
+          [
+            -184.0,
+            28.0
+          ],
+          [
+            -185.7,
+            26.5
+          ],
+          [
+            -186.5,
+            25.4
+          ],
+          [
+            -187.4,
+            24.2
           ],
           [
             -187.8,
-            17.1
+            22.9
           ],
           [
-            -186.4,
-            15.8
+            -187.8,
+            21.7
+          ],
+          [
+            -187.7,
+            20.6
+          ],
+          [
+            -187.3,
+            19.2
+          ],
+          [
+            -185.8,
+            16.9
           ],
           [
             -184.2,
@@ -222,7 +254,7 @@
       "above": [
         "north-pool-lawn"
       ],
-      "note": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool).",
+      "note": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool). 2026-11-15: the west side and a south stretch are re-traced through the solved IMG_2204 camera (pixels on the paving's centre cast onto the surveyed ground): the paving runs at the foot of the curved white wall, about 1.4 m east of the earlier band, which projected onto the wall top, then turns east along the south side behind the hedges for about 10 m (to x -175.8, where the hedges hide it). The north stretch is kept against the north patio fronts: cast through the same camera it lands 1-3 m further north (2-3 m at its east end, where 10 pixels move it a metre), which would put it inside the patios, so it is an open discrepancy, not a correction.",
       "evidence": [
         "IMG_2204.jpg",
         "IMG_2205.jpg",
@@ -230,6 +262,61 @@
         "IMG_2208.jpg"
       ],
       "edges": []
+    },
+    {
+      "id": "calle-isabel-crazy-paving",
+      "name": "Calle Isabel's crazy-paving surface beside the north pool lawn",
+      "kind": "path",
+      "finish": "crazy-paving",
+      "width": 1.32,
+      "lines": [
+        [
+          [
+            -165.1,
+            9.4
+          ],
+          [
+            -165.1,
+            12.0
+          ],
+          [
+            -165.05,
+            15.0
+          ],
+          [
+            -164.95,
+            17.6
+          ],
+          [
+            -164.5,
+            19.9
+          ],
+          [
+            -163.8,
+            21.6
+          ],
+          [
+            -163.1,
+            22.8
+          ]
+        ]
+      ],
+      "ends": [
+        [
+          "square",
+          "square"
+        ]
+      ],
+      "above": [
+        "north-pool-lawn"
+      ],
+      "note": "IMG_2205 (solved station camera) shows the lane down the east side of the lawn paved in the same irregular stone as the lawn-edge path, not terracotta tiles: its west edge, cast through the camera onto the surveyed ground, runs at x -165.9 from z 9.5 to 18 (within 0.3-0.6 m of the mapped lane's west edge), and it reappears beyond the yucca bending south-east (about -163.8, 21.8 to -163.3, 22.6). The east edge is hidden by the yucca, so the surface takes the mapped lane's paved width with its margin (1.32 m), raised 0.21 m to lie just over the lane's own tiles (lanes are drawn 0.27 m over the ground). The lane's line and level stay those of data/street_layout.json; this is its surface.",
+      "evidence": [
+        "IMG_2205.jpg",
+        "IMG_2204.jpg"
+      ],
+      "edges": [],
+      "raise": 0.21
     }
   ]
 }
