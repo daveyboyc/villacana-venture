@@ -108,7 +108,7 @@
     "note": "New estimated additions lack calibrated packets; shared renderer fingerprints also invalidate historical building/feature packets. No footprints or terrain were changed to make this gate green. Full log retained in placement-gate.txt."
   },
   "baselineCommit": "866e166ee1fabee68b6ba4bc2fc9bba325f90b61",
-  "integratedMain": "f76e92c9fc3049826cb9863e25ed6398ceb641f7",
+  "integratedMain": "847b8a5ae8a50b65500ebe13902564922fc0f99f",
   "inspectChecks": {
     "exit": 0,
     "views": [
@@ -121,5 +121,19 @@
       "final path/deck surfaces"
     ],
     "note": "Final surface check follows actual rendered pavement after draping; initial buried-cover attempts were superseded. No calibrated photographic match claimed."
+  },
+  "latestReferenceIndex": {
+    "exit": 0,
+    "tests": 17,
+    "output": ".................\n----------------------------------------------------------------------\nRan 17 tests in 10.195s\n\nOK\n"
+  },
+  "latestLayoutBrowser": {
+    "exit": 1,
+    "output": "page.evaluate: Error: South Dal\u00ed approach has a reachable step at 0.00\n    at eval (eval at evaluate (:370:30), <anonymous>:499:82)\n    at async <anonymous>:396:30\n    at /workspace/villacana-venture-baseline/scripts/test_layout_browser.cjs:31:21 {\n  log: []\n}\n",
+    "note": "Same South Dal\u00ed failure reproduced on unchanged starting base; this pass changes no South Dal\u00ed terrain, route or collision."
+  },
+  "wideOverviewAndPhotoMap": {
+    "status": "incomplete",
+    "note": "Full photo-map discovery/local-review portion passed; subsequent full-resort rendering exceeded default timeouts. Wide overview attempts were stopped after sustained software-GL rendering cost, including a longer-timeout attempt; no assertion failure observed there. Scoped full-resolution Inspect before/after and Layout checks passed."
   }
 }

@@ -63,17 +63,23 @@ wall_end = turned(paseo_wall['face'][-1])
 assert math.dist(d['wall']['points'][0], wall_end) < 0.6, 'Corner wall does not start where the sandstone wall ends'
 assert abs(math.dist(d['rampWall']['points'][-1], gate['at']) - half) < 0.05 and abs(math.dist(d['stub']['points'][0], gate['at']) - half) < 0.05, 'Gateway not between the two walls'
 assert math.dist(d['stub']['points'][-1], d['railing']['points'][0]) < 0.01
-# Calle Guillermo meets the paseo at the top of its ramp; the gateway is beside the ramp's foot, on
-# the lawn side (Dave, 2026-10-27: to the left of the slope looking at the beach), and lower down it.
+# No opening but the gate (Dave, 2026-11-13: "the slope down should not have an opening, you can only
+# leave through the gate"): the corner wall runs straight into the ramp wall, and Calle Guillermo ends
+# inside the boundary (the inner tiled path, IMG_2600/2601, goes on to the gate). The gateway is beside
+# the paseo ramp's foot, on the lawn side (Dave, 2026-10-27), and lower down it.
+assert math.dist(d['wall']['points'][-1], d['rampWall']['points'][0]) < 0.01, 'Gap between the corner wall and the ramp wall'
 g = [turned(p) for p in next(r for r in skeleton['boundaryReference']['roads'] if r['id'] == 'guillermo')['points']]
-assert to_line(g[-1], paseo) < 0.1, 'Calle Guillermo does not reach the paseo'
+boundary = [q for i, q in enumerate(d['wall']['points'] + d['rampWall']['points']) if i == 0 or math.dist(q, (d['wall']['points'] + d['rampWall']['points'])[i - 1]) > 0.05]
+assert to_line(g[-1], paseo) > 2.5 and to_line(g[-1], boundary) > 1.5, 'Calle Guillermo runs out to the paseo past the wall'
 assert 5 <= gate['at'][0] - g[-1][0] <= 12, 'Gateway is not beside the foot of the paseo ramp, north-east of Calle Guillermo'
 profile = levels['seafront']['profile']
 paseo_y = lambda x: next(a[1] + (b[1] - a[1]) * (x - a[0]) / (b[0] - a[0]) for a, b in zip(profile, profile[1:]) if a[0] <= x <= b[0])
 assert paseo_y(gate['at'][0]) < paseo_y(g[-1][0]) - 0.5, 'Gateway is not below the top of the paseo ramp'
 assert gate['opening'] >= 2 * PLAYER + 0.4 and gate['spring'] + gate['opening'] / 2 >= 2.2, 'Gateway too narrow or too low to walk through'
-# Railings end at the lawn's east edge, and nothing crosses a house, pool or lane.
-assert to_line(d['railing']['points'][-1], [[-32, 88], [-34, 110]]) < 0.3, 'Railings do not reach the lawn east edge'
+# Railings follow the path around the lawn and end on its east edge, beside Barraka's west corner, not on a chord across the grass.
+end = (d['railing']['points'][-1][0] * math.cos(angle) + d['railing']['points'][-1][1] * math.sin(angle),
+       -d['railing']['points'][-1][0] * math.sin(angle) + d['railing']['points'][-1][1] * math.cos(angle))
+assert math.dist(end, (15.76, 108.72)) < 0.4, 'Railings do not reach the lawn edge beside Barraka'
 houses = [[turned(p) for p in b['ring']] for b in skeleton['buildings'] if b['floors'] > 0 and not b.get('passage')]
 pools = [[turned(p) for p in p_['ring']] for p_ in skeleton['pools']]
 roads = [[turned(p) for p in r['points']] for r in skeleton['boundaryReference']['roads']]
@@ -81,6 +87,6 @@ for f in pieces:
     for p in along(f['points']):
         assert not any(inside(p, r) for r in houses + pools), f"{f['id']} crosses a house or pool"
         assert all(to_line(p, r) >= 0.6 + f['thickness'] / 2 for r in roads), f"{f['id']} runs into a lane"
-print(f"Seafront fence: corner wall from the sandstone wall's end, {gate['opening']} m arched gateway beside the foot of the paseo ramp, "
+print(f"Seafront fence: corner wall from the sandstone wall's end, closed down the slope, {gate['opening']} m gateway beside the foot of the paseo ramp, "
       f"{sum(math.dist(a, b) for a, b in zip(d['railing']['points'], d['railing']['points'][1:])):.0f} m of railings to the lawn's east edge, "
       f"all beside the paseo and clear of lanes, houses and pools PASS")

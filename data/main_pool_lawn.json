@@ -11,30 +11,38 @@
           133.0
         ],
         [
-          -5.2,
-          129.6
+          -6.5,
+          130.2
         ],
         [
-          -6.0,
-          123.5
+          -9.0,
+          125.6
         ],
         [
-          -10.5,
-          114.0
+          -13.0,
+          119.2
         ],
         [
-          -15.5,
-          104.5
+          -17.0,
+          112.8
+        ],
+        [
+          -20.2,
+          107.6
+        ],
+        [
+          -21.4,
+          105.6
         ]
       ],
       [
         [
-          -5.2,
-          130.2
+          -6.32,
+          130.61
         ],
         [
-          -4.0,
-          129.4
+          -4.2,
+          129.6
         ],
         [
           -2.6,
@@ -43,16 +51,16 @@
       ],
       [
         [
-          -5.4,
-          128.3
+          -7.24,
+          128.83
         ],
         [
-          -8.0,
-          129.1
+          -8.3,
+          129.4
         ],
         [
-          -10.6,
-          129.8
+          -9.3,
+          130.0
         ]
       ]
     ],
@@ -65,7 +73,7 @@
       "IMG_2764.jpg",
       "IMG_2765.jpg"
     ],
-    "note": "2026-11-12 (pool-area-errors-details): the first line ends at the inland face of the arched gateway (seafront_fence.json gate at about [-5.0, 133.4]) instead of 3 m out on the paseo, and the apron is redrawn inland of the gateway; IMG_2759 shows the path running straight into the gate across the apron. 2026-11-13, checked through the photo cameras: IMG_2764 shows the branch to the shower and hedge leaving at the camera's feet (bottom right), not 7 m further on, and IMG_2603 shows a second branch forking left about 2 m ahead, which runs west towards the white wall runs; IMG_2763 stands on it. Its far end is estimated and stops short of the strelitzia corner. Both by eye, good to about 2 m."
+    "note": "2026-11-13, against the georeferenced aerial (public/map/ground.jpg, Esri): the main path is the 2.5 m brown strip running straight from the gate to the pool's south-west corner, with the narrower planted strip, loungers and palms on its left by the Guillermo wall and the big lawn on its right, as IMG_2764, IMG_2765 and IMG_2603 show; the model's line ran 5-6 m further east through the middle of the lawn and is moved onto the strip (read to about 1 m on the aerial, whose registration is good to 1-2 m). IMG_2764 shows the branch to the shower and hedge leaving at the camera's feet, and IMG_2603 a second branch forking left about 2 m ahead towards the white wall runs (IMG_2763 stands on it); its far end is estimated and stops short of the strelitzia corner."
   },
   "apron": {
     "id": "lawn-flagstone-apron",
@@ -104,24 +112,24 @@
         131.0
       ],
       [
-        -4.0,
-        127.6
+        -6.27,
+        127.28
       ],
       [
-        -4.6,
-        124.3
+        -8.72,
+        123.4
       ],
       [
-        -8.39,
-        122.07
+        -13.92,
+        120.75
       ],
       [
-        -8.59,
-        114.42
+        -18.69,
+        113.11
       ],
       [
-        -11.83,
-        108.14
+        -15.96,
+        111.43
       ]
     ],
     "bins": [
@@ -130,16 +138,12 @@
         131.6
       ],
       [
-        -4.1,
-        123.9
+        -8.53,
+        122.57
       ],
       [
-        -8.0,
-        114.14
-      ],
-      [
-        -11.26,
-        107.84
+        -17.28,
+        108.72
       ]
     ],
     "drains": [
@@ -172,11 +176,11 @@
       "IMG_2775.jpg",
       "IMG_2776.jpg"
     ],
-    "note": "The gate-side bollard was on the paseo side of the wall line; moved inland beside the stub wall at the path edge (IMG_2759), 2026-11-12. The square grey service lid on the lawn (IMG_2761, best pin +-2.9 m) is placed about 2.5 m east of the path where that photo shows it; IMG_2760 (pin +-10.8 m) and IMG_2759 (+-18.5 m) show one or two more lids that cannot be placed from their pins, so only one is built. 2026-11-13: IMG_2764 and IMG_2603 both show the nearest bollard about 3 m ahead and the first bin, with a bollard beside it, about 7 m ahead on the right (east) of the path; the data had that pair 1-1.5 m to its left, so they are moved across. A bin beside the gate bollard, just before the apron, as IMG_2759 and IMG_2761 show it (2026-11-13).",
+    "note": "Bins and bollards stand where IMG_2764 and IMG_2603 put them along the path (nearest bollard about 3 m from the camera on the right, a bin with a bollard on the right at about 7-9 m, bollards on the left further on, a bollard and a bin by the palm at the pool end), placed by distance along the path and side, moved with the path onto the aerial strip (2026-11-13). The gate pair (IMG_2759, IMG_2761) stays by the gate. The square grey service lid (IMG_2761, whose pin falls on the aerial path) is about 3.5 m east of the path; IMG_2760 and IMG_2759 show one or two more lids their pins cannot place.",
     "covers": [
       [
-        -5.6,
-        116.0
+        -8.9,
+        117.6
       ]
     ]
   },
@@ -244,15 +248,15 @@
       {
         "kind": "strelitzia",
         "at": [
-          -12.7,
-          131.4
+          -11.6,
+          128.4
         ]
       },
       {
         "kind": "silver",
         "at": [
-          -12.4,
-          130.8
+          -11.1,
+          127.8
         ]
       }
     ],
@@ -261,7 +265,8 @@
       "IMG_2763.jpg",
       "IMG_2765.jpg",
       "IMG_2759.jpg"
-    ]
+    ],
+    "note": "2026-11-13: the strelitzia and silver bush stood inside the kiosk's registry footprint (6364501UF1366S_part2, which matches its white roof on the aerial); IMG_2762, whose camera looks straight at the kiosk's north corner, shows them in front of it on the lawn, so they are moved just outside that corner."
   },
   "hedge": {
     "id": "lawn-sea-hedge",
@@ -325,6 +330,36 @@
     "evidence": [
       "IMG_2759.jpg",
       "IMG_2762.jpg",
+      "IMG_2763.jpg"
+    ]
+  },
+  "innerPath": {
+    "id": "lawn-inner-path",
+    "name": "Inner tiled path from the foot of Calle Guillermo to the beach gate",
+    "width": 1.6,
+    "points": [
+      [
+        -12.2,
+        137.4
+      ],
+      [
+        -10.0,
+        136.9
+      ],
+      [
+        -8.0,
+        135.3
+      ],
+      [
+        -6.6,
+        134.0
+      ]
+    ],
+    "note": "IMG_2600 and IMG_2601, from the foot of Calle Guillermo, show a tiled path running down east-south-east between lavender and a white wall to a lawn strip, a hedge and the mesh fence; IMG_2763 shows flagstones curving between the hedge and the round white wall, and IMG_2602 the flagstones running on to the gate. It joins the lane's end to the apron inside the boundary (Dave, 2026-11-13: the only way out is the gate). Line by eye between the round wall and the fence, about 1.6 m wide.",
+    "evidence": [
+      "IMG_2600.jpg",
+      "IMG_2601.jpg",
+      "IMG_2602.jpg",
       "IMG_2763.jpg"
     ]
   }

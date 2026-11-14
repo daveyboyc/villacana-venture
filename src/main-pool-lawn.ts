@@ -3,9 +3,10 @@ import layout from "../data/main_pool.json";
 import data from "../data/main_pool_lawn.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { centroid, closestOnSegment, pointInRing } from "./geom";
-import { plasterMaterial } from "./materials";
+import { plasterMaterial, surfaceTexture } from "./materials";
 import { accessSection, LOWER_POOL_Y, poolGroundY, poolLevelPoint } from "./pool-levels";
 import { addKitModel } from "./pool-kit";
+import { outlineRing, roundCorners, smoothLine, smoothUnion, surfaceGeometry } from "./smooth-path";
 import { addSprites } from "./sprites";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import type { Vec2 } from "./types";
@@ -74,25 +75,25 @@ function stripRing(a: Vec2, b: Vec2, half: number): Vec2[] {
   return [[a[0] + nx, a[1] + nz], [b[0] + nx, b[1] + nz], [b[0] - nx, b[1] - nz], [a[0] - nx, a[1] - nz]];
 }
 
-function ribbonRing(points: Vec2[], half: number): Vec2[] {
-  const left: Vec2[] = [], right: Vec2[] = [];
-  points.forEach((p, i) => {
-    const before = i > 0 ? points[i - 1] : p, after = i < points.length - 1 ? points[i + 1] : p;
-    const dx = after[0] - before[0], dz = after[1] - before[1], n = Math.hypot(dx, dz) || 1;
-    const nx = (dz / n) * half, nz = (-dx / n) * half;
-    left.push([p[0] + nx, p[1] + nz]);
-    right.push([p[0] - nx, p[1] - nz]);
-  });
-  return [...left, ...right.reverse()];
-}
+
+/** The inner tiled path from the foot of Calle Guillermo to the beach gate, the only way out (data/main_pool_lawn.json). */
+export const INNER_PATH = data.innerPath.points as Vec2[];
 
 /** Registry buildings the lawn photos show as plain white walls: no generated shutters, kit openings or porches. */
 export const PLAIN_LAWN_BUILDINGS = new Set<string>(data.plainBuildings.ids);
 
-/** Pink paths and the flagstone apron, for the map. */
+/**
+ * The lawn's paved surfaces as smooth outlines (src/smooth-path.ts): the pink paths unioned into one
+ * network with rounded joins, the inner tiled path, and the flagstone apron with softened corners.
+ * The traced centrelines in data/main_pool_lawn.json stay the data; only the drawing is smoothed.
+ */
+const smoothPaths = smoothUnion(data.paths.lines.map((line, i) => outlineRing(smoothLine(line as Vec2[]), data.paths.width / 2, [false, i === 1])), 1.2, 0.2);
+const smoothInner = smoothUnion([outlineRing(smoothLine(data.innerPath.points as Vec2[]), data.innerPath.width / 2)], 0.8, 0.2);
+const smoothApron = [[roundCorners(data.apron.ring as Vec2[], true, 0.6, 0.6)]];
+
+/** Pink paths, the inner path and the flagstone apron, for the map. */
 export function lawnGroundRings(): Vec2[][] {
-  const half = data.paths.width / 2;
-  return [...data.paths.lines.map((line) => ribbonRing(line as Vec2[], half)), data.apron.ring as Vec2[]];
+  return [...smoothPaths, ...smoothInner, ...smoothApron].map((poly) => poly[0]);
 }
 
 function wallRings(): Vec2[][] {
@@ -113,61 +114,8 @@ export function lawnSolidRings(): Vec2[][] {
 
 type Ground = (x: number, z: number) => number;
 
-/** The same line with a point at least every `step` metres, so a surface laid on it follows the ground. */
-function densify(points: Vec2[], step: number): Vec2[] {
-  const out: Vec2[] = [points[0]];
-  for (let i = 1; i < points.length; i++) {
-    const a = points[i - 1], b = points[i], n = Math.max(1, Math.ceil(Math.hypot(b[0] - a[0], b[1] - a[1]) / step));
-    for (let k = 1; k <= n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]);
-  }
-  return out;
-}
 
-/** Split every triangle into four, `levels` times, then lay each vertex on the ground. */
-function layOnGround(geometry: THREE.BufferGeometry, ground: Ground, lift: number, levels: number): THREE.BufferGeometry {
-  let g = geometry.index ? geometry.toNonIndexed() : geometry;
-  for (let l = 0; l < levels; l++) {
-    const p = g.getAttribute("position"), out: number[] = [];
-    for (let t = 0; t < p.count; t += 3) {
-      const v = [0, 1, 2].map((k) => new THREE.Vector3().fromBufferAttribute(p, t + k));
-      const m = [[0, 1], [1, 2], [2, 0]].map(([a, b]) => v[a].clone().add(v[b]).multiplyScalar(0.5));
-      for (const tri of [[v[0], m[0], m[2]], [m[0], v[1], m[1]], [m[2], m[1], v[2]], [m[0], m[1], m[2]]]) for (const q of tri) out.push(q.x, q.y, q.z);
-    }
-    g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.Float32BufferAttribute(out, 3));
-  }
-  const p = g.getAttribute("position"), uv: number[] = [];
-  for (let i = 0; i < p.count; i++) { p.setY(i, ground(p.getX(i), p.getZ(i)) + lift); uv.push(p.getX(i), p.getZ(i)); }
-  g.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
-  g.computeVertexNormals();
-  return g;
-}
 
-function ribbonMesh(line: Vec2[], half: number, ground: Ground, lift: number, material: THREE.Material, name: string): THREE.Mesh {
-  const points = densify(line, 0.6);
-  const pos: number[] = [], uv: number[] = [], idx: number[] = [];
-  let run = 0;
-  // Direction along the line at each point, always forward: at the first point the old code took it
-  // backward, which flipped that cross-section and twisted the ribbon into a bow-tie (a wedge where
-  // the branch path leaves the main one, and at the gateway end).
-  const at = (i: number): Vec2 => {
-    const a = points[Math.max(0, i - 1)], b = points[Math.min(points.length - 1, i + 1)];
-    return [b[0] - a[0], b[1] - a[1]];
-  };
-  points.forEach((p, i) => {
-    if (i) run += Math.hypot(p[0] - points[i - 1][0], p[1] - points[i - 1][1]);
-    const d = at(i), n = Math.hypot(d[0], d[1]) || 1;
-    const nx = (d[1] / n) * half, nz = (-d[0] / n) * half;
-    for (const side of [-1, 1]) { const x = p[0] + nx * side, z = p[1] + nz * side; pos.push(x, ground(x, z) + lift, z); uv.push(run / 2.4, side * half); }
-    if (i) { const b = (i - 1) * 2; idx.push(b, b + 1, b + 2, b + 1, b + 3, b + 2); }
-  });
-  const geo = new THREE.BufferGeometry();
-  geo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
-  geo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2));
-  geo.setIndex(idx); geo.computeVertexNormals();
-  const mesh = new THREE.Mesh(geo, material);
-  mesh.name = name; mesh.receiveShadow = true;
-  return mesh;
-}
 
 function box(name: string, w: number, h: number, d: number, material: THREE.Material, at: Vec2, y: number, yaw = 0): THREE.Mesh {
   const mesh = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), material);
@@ -357,10 +305,17 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
   const pink = new THREE.MeshStandardMaterial({ color: "#c47468", roughness: 0.82, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   const flags = new THREE.MeshStandardMaterial({ map: flagstoneTexture(), roughness: 0.95, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
   flags.map!.repeat.set(1.4, 1.4);
-  for (const line of data.paths.lines) group.add(ribbonMesh(line as Vec2[], data.paths.width / 2, ground, 0.05, pink, "lawn-pink-path"));
-  const apron = new THREE.Shape((data.apron.ring as Vec2[]).map(([x, z]) => new THREE.Vector2(x, -z)));
-  const apronMesh = new THREE.Mesh(layOnGround(new THREE.ShapeGeometry(apron).rotateX(-Math.PI / 2), ground, 0.04, 3), flags);
-  apronMesh.name = "lawn-flagstone-apron"; apronMesh.receiveShadow = true; group.add(apronMesh);
+  const surface = (polys: Vec2[][][], lift: number, material: THREE.Material, name: string) => {
+    const mesh = new THREE.Mesh(surfaceGeometry(polys, ground, lift, 2), material); mesh.name = name; mesh.receiveShadow = true; group.add(mesh);
+  };
+  surface(smoothPaths, 0.05, pink, "lawn-pink-path");
+  // The inner tiled path from the foot of Calle Guillermo along the inside of the boundary to the gate (IMG_2600-2602, IMG_2763).
+  // IMG_2600 and IMG_2601 show large terracotta squares, about 0.4 m: the terracotta photo texture holds
+  // eight tiles a repeat; the surface's UVs are world metres.
+  const quarry = surfaceTexture("paving").clone(); quarry.repeat.set(1 / 3.2, 1 / 3.2); quarry.needsUpdate = true;
+  const terracotta = new THREE.MeshStandardMaterial({ color: "#d48a6a", map: quarry, roughness: 0.9, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
+  surface(smoothInner, 0.055, terracotta, "lawn-inner-path");
+  surface(smoothApron, 0.06, flags, "lawn-flagstone-apron");
   const white = plasterMaterial("#fbf8f0");
   for (const wall of data.rooms.walls) {
     const pts = wall.points as Vec2[];

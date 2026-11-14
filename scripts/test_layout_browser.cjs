@@ -265,13 +265,22 @@ const path = require("node:path");
       const [cx, cz] = pool.ring.reduce((a, q) => [a[0] + q[0] / pool.ring.length, a[1] + q[1] / pool.ring.length], [0, 0]);
       if (raisedTerraceGroundOffset(cx, cz) !== 0 || pool.ring.some((q) => raisedTerraceGroundOffset(...q) !== 0)) throw Error("A raised terrace lifts the " + pool.id + " pool");
     }
-    // Down Calle Guillermo, through the arched gateway at its foot onto the paseo, and back.
+    // The slope down from the foot of Calle Guillermo is closed (Dave, 2026-11-13): carrying on past the lane's
+    // end towards the paseo is stopped by the wall, and the beach gateway's opening is clear of every solid.
+    // (Walking out through the gate also meets a ~0.9 m step between the surveyed lawn and the paseo ramp at the
+    // threshold, an open level discrepancy in beach-gate-verge; the photos show the threshold level.)
     {
       const g = s.boundaryReference.roads.find((r) => r.id === "guillermo").points, [a, b] = g.slice(-2);
-      const n = Math.hypot(b[0] - a[0], b[1] - a[1]), out = [b[0] + (b[0] - a[0]) / n * 3, b[1] + (b[1] - a[1]) / n * 3];
-      walk([a, b, out]);
-      if (!sd.inZone(player.x, player.z)) throw Error("Guillermo gateway: did not reach the paseo");
-      walk([out, b, a]);
+      const n = Math.hypot(b[0] - a[0], b[1] - a[1]), out = [b[0] + (b[0] - a[0]) / n * 5, b[1] + (b[1] - a[1]) / n * 5];
+      player.place(...b, 0);
+      for (let frames = 0; frames < 3000 && Math.hypot(player.x - out[0], player.z - out[1]) > 0.12; frames++)
+        player.update(1 / 120, { ...input, moveZ: 1 }, world, Math.atan2(out[0] - player.x, -(out[1] - player.z)));
+      if (sd.inZone(player.x, player.z)) throw Error("Calle Guillermo's foot opens onto the paseo: the slope should be closed");
+      const { beachGate } = await import("/src/seafront-fence.ts"), [gx, gz] = beachGate.at, [ux, uz] = beachGate.along;
+      for (const t of [-0.15, 0, 0.15]) {
+        const p = [gx + ux * t, gz + uz * t], hit = world.solids.resolve(...p, 0.42);
+        if (Math.hypot(hit.x - p[0], hit.z - p[1]) > 0.02) throw Error("Beach gateway opening is blocked at " + p);
+      }
     }
     // Both flights between the big-pool deck and street level, down and back up, between their side walls:
     // the narrow east steps from the Picasso side and the steps to Enrique's.

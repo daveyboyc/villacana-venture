@@ -55,6 +55,7 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P1 | `cervantes-identify-miguel-passage` [#157](https://github.com/daveyboyc/villacana-venture/issues/157) | Cervantes/Miguel: identify signed passage and both world portals (after path-network-inventory-cervantes) | open · placement: not-applicable |  |
 | P1 | `cervantes-register-edges` [#156](https://github.com/daveyboyc/villacana-venture/issues/156) | Cervantes: register finite path sides, wall ends and eastern terminal (after path-network-inventory-cervantes) | open · placement: not-applicable |  |
 | P2 | `cervantes-door-steps-detail` | Cervantes/Elena garden door (Elena 24 patio): three-riser flight, framing beds and door frame (after cervantes-door-steps) | in-progress · claude · placement: not-verified | [IMG_2196](../../public/photos-ref/IMG_2196.jpg), [IMG_2287](../../public/photos-ref/IMG_2287.jpg), [IMG_2327](../../public/photos-ref/IMG_2327.jpg), [IMG_2328](../../public/photos-ref/IMG_2328.jpg) |
+| P2 | `ground-plan-cervantes` | Calle Miguel de Cervantes: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | open · placement: not-verified |  |
 
 ## Built from these photos
 

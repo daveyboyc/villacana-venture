@@ -3205,15 +3205,21 @@
    "kind": "detail",
    "title": "Main pool lawn: stand the paths and fittings on the surveyed ground, close the lowered edge, lawn kit models",
    "photos": [
-    "IMG_2764.jpg",
-    "IMG_2765.jpg",
+    "IMG_2485.jpg",
+    "IMG_2600.jpg",
+    "IMG_2601.jpg",
+    "IMG_2602.jpg",
+    "IMG_2603.jpg",
     "IMG_2759.jpg",
     "IMG_2761.jpg",
-    "IMG_2603.jpg",
+    "IMG_2762.jpg",
+    "IMG_2763.jpg",
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2766.jpg",
+    "IMG_2767.jpg",
     "IMG_2775.jpg",
     "IMG_2776.jpg",
-    "IMG_2763.jpg",
-    "IMG_2762.jpg",
     "IMG_2777.jpg"
    ],
    "build": "Inspect showed the lawn work from main-pool-lawn-details buried: paths, apron, white walls, hedge, shower and bollards were built at the old flat -3 m deck while the lawn follows the laser survey at about -2.2 to -2.8 m, so only the bin tops showed. Build every lawn piece on the live ground. East of the lawn the lowered area's retaining face stood as a jagged 3 m sliver (beige triangles in Inspect) because the survey grid mixes the lowered and street datums across the edge where the survey has no drop; read each side's nodes on its own datum, drape the lawn and street sheets each on their own side and build the retaining faces between them. End the first pink path and the apron on the lawn side of the beach gateway (they ran 3 m out onto the paseo; one bollard stood there). Replace the cylinder bollards and bins with Blender-built models from the photos and add the square service lid IMG_2761 shows (scripts/build_lawn_kit.py). Letter the three shop awnings IMG_2775 shows, one-sided, in place of one two-sided panel.",
@@ -3224,15 +3230,20 @@
     "Visible in Inspect Layout and with Show details"
    ],
    "features": [
-    "main_pool_lawn.json:lawn-pink-paths",
-    "main_pool_lawn.json:lawn-flagstone-apron",
+    "barraka_frontage.json:paseo-painted-crossing",
+    "jorge_lane.json:jorge-lane-lawn-palm",
+    "main_pool_lawn.json:enrique-shop-front",
     "main_pool_lawn.json:lawn-bollards-bins",
-    "main_pool_lawn.json:enrique-shop-front"
+    "main_pool_lawn.json:lawn-flagstone-apron",
+    "main_pool_lawn.json:lawn-inner-path",
+    "main_pool_lawn.json:lawn-kiosk-plain",
+    "main_pool_lawn.json:lawn-pink-paths",
+    "seafront_fence.json:guillermo-beach-gate"
    ],
    "dependsOn": [],
    "status": "in-progress",
    "owner": "Claude",
-   "notes": "2026-11-13: checked through ten photo cameras (starting poses from photo content); two match, the rest differ with open follow-ups main-pool-lawn-cameras, beach-gate-verge and enrique-shop-storey. Stays in progress until a measured placement packet is independently approved. IMG_2760 is left out: its pin is 10.8 m vague."
+   "notes": "2026-11-13: checked through ten photo cameras (starting poses from photo content); two match, the rest differ with open follow-ups main-pool-lawn-cameras, beach-gate-verge and enrique-shop-storey. Stays in progress until a measured placement packet is independently approved. IMG_2760 is left out: its pin is 10.8 m vague. 13 Nov (Dave): slope closed, Calle Guillermo ends inside the wall, inner path to the gate, gate rebuilt, crossing centred outside it; pink path and palm moved onto the aerial."
   },
   {
    "id": "main-pool-lawn-cameras",
@@ -3265,6 +3276,37 @@
    "owner": null
   },
   {
+   "id": "main-pool-gate-corner",
+   "area": "main-pool",
+   "priority": 1,
+   "kind": "detail",
+   "title": "Main pool lawn's sea corner: inner path, gate surround and kiosk ground from new photos",
+   "photos": [
+    "IMG_2600.jpg",
+    "IMG_2601.jpg",
+    "IMG_2602.jpg",
+    "IMG_2763.jpg",
+    "IMG_2766.jpg",
+    "IMG_2767.jpg",
+    "IMG_2485.jpg",
+    "IMG_2762.jpg"
+   ],
+   "build": "Dave (13 Nov): the slope down has no opening; the only way out is the gate, with the crossing right outside it. Built: the boundary closed, Calle Guillermo ending inside it, the inner tiled path from the lane's foot along the inside of the wall to the gate, the gate rebuilt as photographed and the crossing centred in front of it. Still to do when the requested photos (guillermo-foot-closure, kiosk-faces, beach-gateway) arrive: where exactly the inner path meets the gate (IMG_2600/2601 show hedge and mesh fence ahead, not the gate); the paving the ground texture draws round the kiosk where IMG_2762/2763 show lawn up to its walls; the plumbago either side of the gate and the sandstone-and-mesh face of the fence south-west of it (IMG_2766, IMG_2767, IMG_2484); the kiosk's louvred doors. Also: the surveyed lawn just inside the gate is about 0.9 m below the paseo ramp outside it (lawn about -2.1, paseo about -1.2 at the gate on the seafront profile), so the model has a step at the threshold where IMG_2602 and IMG_2766 show it level; check the levels with scripts/lidar_check.py and grade the apron or the paseo through data/terrain.json, with beach-gate-verge.",
+   "avoid": "Do not reopen the slope onto the paseo. Do not move the registry kiosk footprint or the gateway without a measured correction. Leave Walk alone.",
+   "accept": [
+    "Photo checks from IMG_2600, IMG_2601, IMG_2763 and IMG_2766 match",
+    "Visible in Inspect with Show details"
+   ],
+   "features": [
+    "main_pool_lawn.json:lawn-inner-path",
+    "seafront_fence.json:guillermo-beach-gate",
+    "main_pool_lawn.json:lawn-kiosk-plain"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
+  },
+  {
    "id": "enrique-shop-storey",
    "area": "main-pool",
    "priority": 2,
@@ -3284,6 +3326,235 @@
     "main_pool_lawn.json:enrique-shop-front"
    ],
    "dependsOn": [],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-framework",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Smooth ground plan: shared vector paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Dave (13 Nov): the paths are clunky and should be smooth throughout the model, with the correct walls and boundaries for patios and green spaces. Turn the main-pool pilot (src/smooth-path.ts) into a shared ground plan, as docs/SMOOTH_PATHS.md describes: a data file per area of paths (centreline, width, finish), patios and green spaces (outline, finish, raised height) and their edges (none, kerb or brick border, planter wall, hedge, patio wall with height and openings, fence), each with evidence and confidence; a renderer drawing smooth unioned surfaces with rounded joins (hard corners where a shape says so) laid on the surveyed ground, edges along the same outlines, and the ground texture mask painted from the same polygons where an area is traced; scripts/check_ground_plan.py. Move the main-pool lawn onto it first.",
+   "avoid": "Do not move registry footprints or pool rings. Keep protected routes clear and openings open unless a photo shows them shut. Do not invent walls or gates to fill untraced edges: record them as gaps or build them as inferred. Leave Walk alone.",
+   "accept": [
+    "The main-pool lawn draws from the ground plan with no visible change",
+    "check_ground_plan.py passes",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-north-pool",
+   "area": "north-pool",
+   "priority": 2,
+   "kind": "detail",
+   "title": "North pool: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (north_pool_gardens.json, raised_terraces.json, north_west_canopies.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-middle-pool",
+   "area": "middle-pool",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Middle pool: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (middle_pool.json, middle_pool_lane_frontages.json, middle_pool_south_gate.json, middle_pool_sw_gateway.json, junction_lawns.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-south-pool",
+   "area": "south-pool",
+   "priority": 2,
+   "kind": "detail",
+   "title": "South pool: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (south_pool_passage.json and the south lawn in seafront data). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-elena",
+   "area": "elena",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Calle Elena: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (elena_east_patios.json, elena_lane_paving.json, entrance_planters.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-cervantes",
+   "area": "cervantes",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Calle Miguel de Cervantes: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (cervantes_patio_walls.json, cervantes_north_patios.json, cervantes_east_south_patios.json, cervantes_east_hedge.json, cervantes_garden_door.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-seaward-lanes",
+   "area": "seaward-lanes",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (jorge_lane.json, seaward_paving.json, frontage_divisions.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-eva",
+   "area": "eva",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Calle Eva: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (eva_walled_lawn.json, the Eva lane strips (src/eva-lane.ts)). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-north-lanes",
+   "area": "north-lanes",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Loira, Bolivia, Alberto and Isabel: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (the Alberto passage and lane frontages). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-dali",
+   "area": "dali",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Calle Pintor Dalí: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (dali threshold zones (data/dali_threshold.json)). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
+   "status": "open",
+   "owner": null
+  },
+  {
+   "id": "ground-plan-picasso",
+   "area": "picasso",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
+   "photos": [],
+   "build": "Trace the area's paths, patios and green spaces as smooth vector shapes from the georeferenced aerial and the photos, with what bounds each (kerb, brick border, planter wall, hedge, patio wall with openings, fence), and bring the existing features under the ground plan (picasso_service_road.json). The raster ground classes give way to the traced shapes. Photo-check from the area's best cameras.",
+   "avoid": "Do not move registry footprints or pool rings without a measured correction. Keep lanes and openings clear. Untraced edges become gaps or inferred, never repeated invented walls. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes for the area",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
    "status": "open",
    "owner": null
   },

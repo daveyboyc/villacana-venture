@@ -164,7 +164,7 @@
       "radius": 6,
       "since": "2026-10-27",
       "status": "open",
-      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo. IMG_2602/IMG_2603 (4 Nov) show a coastal lawn gate pier with an iron gate, signs and a pink lawn path with bollard lights; the agent read them from the reading sheet only and it is not confirmed they show this arched gateway. Check against the full-size photos before marking answered. 8 Nov: IMG_2766/2767 show the arched gate with plumbago and the green railing from the painted crossing, but obliquely and close; a square-on view and the wall down the ramp are still wanted."
+      "note": "IMG_2600 (27 Oct) looks down the inner path from the foot of Guillermo: a tall white pier at its left edge may be the gateway; the fence ahead is green rigid mesh. Still wanted: the gateway square-on from the paseo. IMG_2602/IMG_2603 (4 Nov) show a coastal lawn gate pier with an iron gate, signs and a pink lawn path with bollard lights; the agent read them from the reading sheet only and it is not confirmed they show this arched gateway. Check against the full-size photos before marking answered. 8 Nov: IMG_2766/2767 show the arched gate with plumbago and the green railing from the painted crossing, but obliquely and close; a square-on view and the wall down the ramp are still wanted. 13 Nov: the gate is rebuilt from IMG_2602, IMG_2766 and IMG_2485 (square piers, rectangular opening, moulded lintel and segmental hood, ring-pattern leaf) and the crossing centred in front of it; a square-on view from the paseo would fix its width and height, still wanted."
     },
     {
       "id": "beach-verge",
@@ -619,6 +619,78 @@
       "priority": 3,
       "radius": 8,
       "since": "2026-11-14",
+      "status": "open"
+    },
+    {
+      "id": "guillermo-foot-closure",
+      "area": "main-pool",
+      "at": [
+        -12.3,
+        137.4
+      ],
+      "look": [
+        -10.3,
+        139.0
+      ],
+      "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
+      "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
+      "priority": 1,
+      "radius": 5,
+      "since": "2026-11-13",
+      "status": "open"
+    },
+    {
+      "id": "lawn-palm-foot",
+      "area": "main-pool",
+      "at": [
+        -19.5,
+        108.0
+      ],
+      "look": [
+        -23.4,
+        106.0
+      ],
+      "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
+      "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
+      "priority": 2,
+      "radius": 5,
+      "since": "2026-11-13",
+      "status": "open"
+    },
+    {
+      "id": "kiosk-faces",
+      "area": "main-pool",
+      "at": [
+        -7.5,
+        126.5
+      ],
+      "look": [
+        -11.0,
+        131.0
+      ],
+      "ask": "The white kiosk at the lawn's sea corner from the lawn: its north-east face square-on (doors, and where the short path from the lawn ends), its north corner with the strelitzia, and its round south-east end with the passage to the gate.",
+      "why": "The kiosk is now plain white as photographed, but its doors are not modelled and the strelitzia corner and the short left path are placed by eye against its registry outline",
+      "priority": 2,
+      "radius": 5,
+      "since": "2026-11-13",
+      "status": "open"
+    },
+    {
+      "id": "enrique-shop-front-square",
+      "area": "main-pool",
+      "at": [
+        -34.5,
+        104.0
+      ],
+      "look": [
+        -35.7,
+        96.2
+      ],
+      "ask": "From Calle Guillermo by the slot drain: Enrique's shop front square-on with its three awnings, and the short marble-nosed flight up to it, then the top of the long flight down to the pool deck.",
+      "why": "Task enrique-shop-storey: the storey the awnings hang on is not modelled, and the lane photos are oblique",
+      "priority": 2,
+      "radius": 5,
+      "since": "2026-11-13",
       "status": "open"
     }
   ]

@@ -79,10 +79,7 @@ radius, and does not enter a house; the dark and pale covers occupy distinct sur
 The Inspect capture script checks that all three new fitting IDs exist in Details, are absent
 from the original and Layout views, and that the avatar remains hidden.
 
-Two unrelated checks were found during the full handover run and checked on the unchanged
-base commit separately: the reference-index suite rejects `jorge-west-walk`'s existing photo
-request status, and the layout browser traversal reports `South Dalí approach has a reachable
-step at 0.00`. Their inputs and affected terrain were not changed here. The strict placement
+The starting base had an unrelated reference-index failure for `jorge-west-walk`; newer main fixes that status and the final integrated reference-index suite passes all 17 tests. The layout browser traversal still reports `South Dalí approach has a reachable step at 0.00`, also reproduced on the unchanged starting base. This pass changes no South Dalí terrain, route or collision. Full-resort overview/photo-map browser runs were constrained by sustained software rendering cost; photo-map discovery/local reviews passed, but the wide overview runs were stopped before completing. The scoped full-resolution Inspect before/after and Layout checks completed. The strict placement
 gate also remains red for the declared estimated additions, because no calibrated independent
 placement packet exists. This is recorded explicitly rather than weakening the gate or
 claiming the whole courtyard is verified. See `validation.json` for command outcomes and
