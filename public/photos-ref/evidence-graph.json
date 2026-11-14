@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "ef85dc65cfed199fb680fb32fffaf362e983ec033cfc0ed9f06d2995a36320a6",
+ "inputDigest": "712f343aabf9e9426f6f9cd8ce8177d797a17099802905172dc37ec45025ae9b",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 436,
+  "features": 437,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 181
+  "modelFeaturesWithPhotoCitations": 182
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3437,6 +3437,16 @@
     "IMG_2767.jpg",
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
+   ]
+  },
+  {
+   "id": "picasso_lawn_wall.json:picasso-lawn-wall",
+   "name": "White wall along Calle Pintor Picasso enclosing the big-pool lawn",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; the lawn edge, about 1 m",
+   "evidence": [
+    "IMG_2764.jpg",
+    "IMG_2765.jpg"
    ]
   },
   {
@@ -19901,6 +19911,12 @@
   },
   {
    "from": "photo:IMG_2764.jpg",
+   "to": "picasso_lawn_wall.json:picasso-lawn-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2764.jpg",
    "to": "main_pool_lawn.json:lawn-bollards-bins",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19970,6 +19986,12 @@
   {
    "from": "photo:IMG_2765.jpg",
    "to": "jorge_lane.json:jorge-lane-lawn-palm",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2765.jpg",
+   "to": "picasso_lawn_wall.json:picasso-lawn-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

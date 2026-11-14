@@ -87,7 +87,11 @@ for house in skeleton['buildings']:
     if house['floors'] > 0 and not house.get('passage'):
         gap = min(-1 if inside(*p, house['ring']) else edge_gap(p, house['ring']) for p in samples)
         assert gap >= half, f'Paseo enters house {house["id"]}' if gap < 0 else f'Paseo passes {gap:.2f} m from house {house["id"]}; needs {half} m'
-corrections = json.loads((root / 'data/registry_corrections.json').read_text())['notStanding']
+registry = json.loads((root / 'data/registry_corrections.json').read_text())
+corrections = registry['notStanding']
+for wall in registry.get('boundaryWalls', []):
+    house = next(b for b in skeleton['buildings'] if b['id'] == wall['id'])
+    assert house['floors'] == 0 and not house.get('notStanding'), f'{wall["id"]} is a boundary wall, not a roofed block or a paseo outline'
 assert {b['id'] for b in skeleton['buildings'] if b.get('notStanding')} == {c['id'] for c in corrections}
 photo = Image.open(root / 'public/map/ground.jpg').convert('RGB')
 for c in corrections:

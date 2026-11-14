@@ -746,6 +746,19 @@
      "features": [],
      "tasks": [],
      "state": "open"
+    },
+    {
+     "id": "photo-picasso-lawn-wall",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
+     "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
+     "photoRequest": "picasso-lawn-wall",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
@@ -5019,6 +5032,19 @@
      "ask": "From the sand in front of Barraka, the whole timber deck in one frame: the white rail, the plank floor, how far it comes out from the wall, and where it meets the sand. Then one from each end along the rail.",
      "why": "The deck outline is the tan rectangle on the aerial, about 6.5 m out, and IMG_2606 shows the planks and rail from a seat. Nothing shows the whole deck square-on, so the depth is good to about 1 m.",
      "photoRequest": "barraka-deck-from-sand",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-picasso-lawn-wall",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
+     "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
+     "photoRequest": "picasso-lawn-wall",
      "status": "open",
      "sources": [],
      "features": [],

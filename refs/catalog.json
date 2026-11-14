@@ -1633,7 +1633,8 @@
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
    "seafront_fence.json:main-pool-lawn-railing",
-   "area:paseo"
+   "area:paseo",
+   "picasso_lawn_wall.json:picasso-lawn-wall"
   ],
   "subject": "big-pool lawn frontage: white railings, Guillermo gateway at left"
  },
@@ -11964,6 +11965,7 @@
   "looksAtFeatures": [
    "seafront_fence.json:main-pool-lawn-railing",
    "ground_plan_main_pool.json:main-lawn",
+   "picasso_lawn_wall.json:picasso-lawn-wall",
    "area:paseo"
   ],
   "subject": "The lawn corner and fence at the foot of the path",
@@ -12423,7 +12425,8 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:paseo",
-   "ground_plan_main_pool.json:main-lawn"
+   "ground_plan_main_pool.json:main-lawn",
+   "picasso_lawn_wall.json:picasso-lawn-wall"
   ],
   "subject": "Curved sandstone wall and green railing at Barraka's west corner"
  },
@@ -16886,6 +16889,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "ground_plan_main_pool.json:main-lawn",
+   "picasso_lawn_wall.json:picasso-lawn-wall",
    "seafront_fence.json:main-pool-lawn-railing"
   ],
   "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid"
@@ -17059,6 +17063,7 @@
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-lawn-palm",
+   "picasso_lawn_wall.json:picasso-lawn-wall",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:main-pool-deck-tiles",
    "ground_plan_main_pool.json:main-pool-deck-band",
@@ -17108,6 +17113,7 @@
    "jorge_lane.json:jorge-lane-bench",
    "jorge_lane.json:jorge-lane-verge",
    "jorge_lane.json:jorge-lane-lawn-palm",
+   "picasso_lawn_wall.json:picasso-lawn-wall",
    "main_pool_lawn.json:lawn-bollards-bins",
    "main_pool_lawn.json:lawn-white-rooms",
    "ground_plan_main_pool.json:main-pool-deck-band",
