@@ -13,7 +13,7 @@ export const vergeClumps = data.shrubs.clumps as [number, number, number][];
 export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number) => number): void {
   const group = new THREE.Group(); group.name = "beach-verge"; group.userData.noDrape = true; scene.add(group);
   // Triangulate the outline, then split each triangle into pieces under about 1 m so the grass follows the ground.
-  const positions: number[] = [], at = (p: Vec2) => [p[0], groundY(p[0], p[1]) + .05, p[1]];
+  const positions: number[] = [], uvs: number[] = [], at = (p: Vec2) => { uvs.push(p[0] / 8, p[1] / 8); return [p[0], groundY(p[0], p[1]) + .05, p[1]]; };
   const contour = vergeRing.map(([x, z]) => new THREE.Vector2(x, z));
   for (const [i, j, k] of THREE.ShapeUtils.triangulateShape(contour, [])) {
     const [a, b, c] = [vergeRing[i], vergeRing[j], vergeRing[k]];
@@ -24,8 +24,11 @@ export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number
       if (u + v < n - 1) positions.push(...at(p(u + 1, v)), ...at(p(u + 1, v + 1)), ...at(p(u, v + 1)));
     }
   }
-  const geometry = new THREE.BufferGeometry(); geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3)); geometry.computeVertexNormals();
-  const grass = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ color: "#9aa36a", roughness: 1, side: THREE.DoubleSide }));
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+  geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
+  geometry.computeVertexNormals();
+  const grass = new THREE.Mesh(geometry, dryGrass());
   grass.name = data.grass.id; grass.receiveShadow = true; group.add(grass);
   if (scene.userData.layoutOnly) return;
   const details = new THREE.Group(); details.name = data.shrubs.id; group.add(details);
@@ -48,6 +51,23 @@ export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number
     const tree = tallPalm({ height: palm.height, seed: palm.seed });
     tree.position.set(x, groundY(x, z), z); details.add(tree);
   });
+}
+
+/** Dry, patchy turf: straw with dull green tufts and bare sand, as IMG_2482 and IMG_2604 show the verge. */
+function dryGrass(): THREE.MeshStandardMaterial {
+  const canvas = document.createElement("canvas"); canvas.width = canvas.height = 256;
+  const g = canvas.getContext("2d")!;
+  g.fillStyle = "#cbb892"; g.fillRect(0, 0, 256, 256);
+  const blot = (color: string, n: number, r: number) => {
+    g.fillStyle = color;
+    for (let i = 0; i < n; i++) {
+      const x = (i * 97 + 13) % 256, y = (i * 61 + 29) % 256;
+      g.beginPath(); g.ellipse(x, y, r + (i * 3) % 11, (r * 0.7) + (i % 4), (i * 0.7) % Math.PI, 0, Math.PI * 2); g.fill();
+    }
+  };
+  blot("#e2d3ae", 18, 36); blot("#a89870", 14, 28); blot("#7f9358", 20, 16); blot("#5f7344", 12, 10);
+  const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace; texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+  return new THREE.MeshStandardMaterial({ map: texture, roughness: 1, side: THREE.DoubleSide });
 }
 
 /** A young agave: a fleshy rosette, outer blades longer and lower (IMG_2482). */
