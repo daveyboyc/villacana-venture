@@ -516,8 +516,8 @@
      "feature": "jorge_lane.json:jorge-lane-guillermo-west"
     },
     {
-     "id": "photo-discrepancy:6e71d316ef8e6f5c",
-     "feature": "main_pool_lawn.json:lawn-pink-paths"
+     "id": "photo-discrepancy:4fd6ed9df8230cc8",
+     "feature": "ground_plan_main_pool.json:lawn-pink-paths"
     },
     {
      "id": "photo-discrepancy:22a1de7708736762",
@@ -552,20 +552,20 @@
      "feature": "seafront_fence.json:guillermo-beach-gate"
     },
     {
-     "id": "photo-discrepancy:38c5293e530b2fe3",
-     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
+     "id": "photo-discrepancy:d69d98b4d1829198",
+     "feature": "ground_plan_main_pool.json:lawn-flagstone-apron"
     },
     {
-     "id": "photo-discrepancy:10853d8a9aaafed0",
-     "feature": "main_pool_lawn.json:lawn-inner-path"
+     "id": "photo-discrepancy:579edecb7212af87",
+     "feature": "ground_plan_main_pool.json:lawn-inner-path"
     },
     {
-     "id": "photo-discrepancy:eafe6b00d7e07594",
-     "feature": "main_pool_lawn.json:lawn-inner-path"
+     "id": "photo-discrepancy:b0699681a986d829",
+     "feature": "ground_plan_main_pool.json:lawn-inner-path"
     }
    ],
    "tasks": {
-    "open": 4,
+    "open": 5,
     "inProgress": 5,
     "titles": [
      "Calle Guillermo slopes down to the paseo; east pool steps come down from the Picasso wall",
@@ -2183,8 +2183,8 @@
      "feature": "jorge_lane.json:jorge-lane-gateway"
     },
     {
-     "id": "photo-discrepancy:6e71d316ef8e6f5c",
-     "feature": "main_pool_lawn.json:lawn-pink-paths"
+     "id": "photo-discrepancy:4fd6ed9df8230cc8",
+     "feature": "ground_plan_main_pool.json:lawn-pink-paths"
     },
     {
      "id": "photo-discrepancy:22a1de7708736762",
@@ -2219,16 +2219,16 @@
      "feature": "seafront_fence.json:guillermo-beach-gate"
     },
     {
-     "id": "photo-discrepancy:38c5293e530b2fe3",
-     "feature": "main_pool_lawn.json:lawn-flagstone-apron"
+     "id": "photo-discrepancy:d69d98b4d1829198",
+     "feature": "ground_plan_main_pool.json:lawn-flagstone-apron"
     },
     {
-     "id": "photo-discrepancy:10853d8a9aaafed0",
-     "feature": "main_pool_lawn.json:lawn-inner-path"
+     "id": "photo-discrepancy:579edecb7212af87",
+     "feature": "ground_plan_main_pool.json:lawn-inner-path"
     },
     {
-     "id": "photo-discrepancy:eafe6b00d7e07594",
-     "feature": "main_pool_lawn.json:lawn-inner-path"
+     "id": "photo-discrepancy:b0699681a986d829",
+     "feature": "ground_plan_main_pool.json:lawn-inner-path"
     }
    ],
    "tasks": {

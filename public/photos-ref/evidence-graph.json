@@ -3676,32 +3676,6 @@
    ]
   },
   {
-   "id": "main_pool_lawn.json:lawn-pink-paths",
-   "name": "Pink resin paths across the main-pool lawn",
-   "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
-   "evidence": [
-    "IMG_2603.jpg",
-    "IMG_2759.jpg",
-    "IMG_2761.jpg",
-    "IMG_2762.jpg",
-    "IMG_2763.jpg",
-    "IMG_2764.jpg",
-    "IMG_2765.jpg"
-   ]
-  },
-  {
-   "id": "main_pool_lawn.json:lawn-flagstone-apron",
-   "name": "Flagstone apron in front of the lawn's arched gate",
-   "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
-   "evidence": [
-    "IMG_2602.jpg",
-    "IMG_2759.jpg",
-    "IMG_2763.jpg"
-   ]
-  },
-  {
    "id": "main_pool_lawn.json:lawn-bollards-bins",
    "name": "Bollard lights, slatted bins and slot drains on the main-pool lawn",
    "kind": "reference feature",
@@ -3769,10 +3743,36 @@
    ]
   },
   {
-   "id": "main_pool_lawn.json:lawn-inner-path",
-   "name": "Inner tiled path from the foot of Calle Guillermo to the beach gate",
+   "id": "main_pool_lawn.json:lawn-kiosk-plain",
+   "name": "Plain white kiosk at the lawn's sea corner",
    "kind": "reference feature",
    "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
+   "evidence": [
+    "IMG_2759.jpg",
+    "IMG_2762.jpg",
+    "IMG_2763.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_main_pool.json:lawn-pink-paths",
+   "name": "Pink resin paths across the main-pool lawn",
+   "kind": "reference feature",
+   "source": "2026-11-13, against the georeferenced aerial (public/map/ground.jpg, Esri): the main path is the 2.5 m brown strip running straight from the gate to the pool's south-west corner, with the narrower planted strip, loungers and palms on its left by the Guillermo wall and the big lawn on its right, as IMG_2764, IMG_2765 and IMG_2603 show; the model's line ran 5-6 m further east through the middle of the lawn and is moved onto the strip (read to about 1 m on the aerial, whose registration is good to 1-2 m). IMG_2764 shows the branch to the shower and hedge leaving at the camera's feet, and IMG_2603 a second branch forking left about 2 m ahead towards the white wall runs (IMG_2763 stands on it); its far end is estimated and stops short of the strelitzia corner.",
+   "evidence": [
+    "IMG_2603.jpg",
+    "IMG_2759.jpg",
+    "IMG_2761.jpg",
+    "IMG_2762.jpg",
+    "IMG_2763.jpg",
+    "IMG_2764.jpg",
+    "IMG_2765.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_main_pool.json:lawn-inner-path",
+   "name": "Inner tiled path from the foot of Calle Guillermo to the beach gate",
+   "kind": "reference feature",
+   "source": "IMG_2600 and IMG_2601, from the foot of Calle Guillermo, show a tiled path running down east-south-east between lavender and a white wall to a lawn strip, a hedge and the mesh fence; IMG_2763 shows flagstones curving between the hedge and the round white wall, and IMG_2602 the flagstones running on to the gate. It joins the lane's end to the apron inside the boundary (Dave, 2026-11-13: the only way out is the gate). Line by eye between the round wall and the fence, about 1.6 m wide.",
    "evidence": [
     "IMG_2600.jpg",
     "IMG_2601.jpg",
@@ -3781,13 +3781,13 @@
    ]
   },
   {
-   "id": "main_pool_lawn.json:lawn-kiosk-plain",
-   "name": "Plain white kiosk at the lawn's sea corner",
+   "id": "ground_plan_main_pool.json:lawn-flagstone-apron",
+   "name": "Flagstone apron in front of the lawn's arched gate",
    "kind": "reference feature",
-   "source": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
+   "source": "Redrawn 2026-11-12 inland of the gateway: the earlier ring straddled the wall line. Extent by eye from IMG_2759 and IMG_2602.",
    "evidence": [
+    "IMG_2602.jpg",
     "IMG_2759.jpg",
-    "IMG_2762.jpg",
     "IMG_2763.jpg"
    ]
   },
@@ -16251,7 +16251,7 @@
   },
   {
    "from": "photo:IMG_2600.jpg",
-   "to": "main_pool_lawn.json:lawn-inner-path",
+   "to": "ground_plan_main_pool.json:lawn-inner-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -16287,7 +16287,7 @@
   },
   {
    "from": "photo:IMG_2601.jpg",
-   "to": "main_pool_lawn.json:lawn-inner-path",
+   "to": "ground_plan_main_pool.json:lawn-inner-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -16324,13 +16324,13 @@
   },
   {
    "from": "photo:IMG_2602.jpg",
-   "to": "main_pool_lawn.json:lawn-flagstone-apron",
+   "to": "ground_plan_main_pool.json:lawn-inner-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2602.jpg",
-   "to": "main_pool_lawn.json:lawn-inner-path",
+   "to": "ground_plan_main_pool.json:lawn-flagstone-apron",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -16342,13 +16342,13 @@
   },
   {
    "from": "photo:IMG_2603.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
+   "to": "main_pool_lawn.json:lawn-bollards-bins",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2603.jpg",
-   "to": "main_pool_lawn.json:lawn-bollards-bins",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19501,18 +19501,6 @@
   },
   {
    "from": "photo:IMG_2759.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2759.jpg",
-   "to": "main_pool_lawn.json:lawn-flagstone-apron",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2759.jpg",
    "to": "main_pool_lawn.json:lawn-white-rooms",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19526,6 +19514,18 @@
   {
    "from": "photo:IMG_2759.jpg",
    "to": "main_pool_lawn.json:lawn-kiosk-plain",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2759.jpg",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2759.jpg",
+   "to": "ground_plan_main_pool.json:lawn-flagstone-apron",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19556,12 +19556,6 @@
   },
   {
    "from": "photo:IMG_2761.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2761.jpg",
    "to": "main_pool_lawn.json:lawn-bollards-bins",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19569,6 +19563,12 @@
   {
    "from": "photo:IMG_2761.jpg",
    "to": "main_pool_lawn.json:lawn-sea-hedge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2761.jpg",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19595,12 +19595,6 @@
   },
   {
    "from": "photo:IMG_2762.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2762.jpg",
    "to": "main_pool_lawn.json:lawn-white-rooms",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19612,14 +19606,8 @@
    "visualValidation": "not established by citation"
   },
   {
-   "from": "photo:IMG_2763.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2763.jpg",
-   "to": "main_pool_lawn.json:lawn-flagstone-apron",
+   "from": "photo:IMG_2762.jpg",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19637,13 +19625,25 @@
   },
   {
    "from": "photo:IMG_2763.jpg",
-   "to": "main_pool_lawn.json:lawn-inner-path",
+   "to": "main_pool_lawn.json:lawn-kiosk-plain",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2763.jpg",
-   "to": "main_pool_lawn.json:lawn-kiosk-plain",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2763.jpg",
+   "to": "ground_plan_main_pool.json:lawn-inner-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2763.jpg",
+   "to": "ground_plan_main_pool.json:lawn-flagstone-apron",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19679,12 +19679,6 @@
   },
   {
    "from": "photo:IMG_2764.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2764.jpg",
    "to": "main_pool_lawn.json:lawn-bollards-bins",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19692,6 +19686,12 @@
   {
    "from": "photo:IMG_2764.jpg",
    "to": "main_pool_lawn.json:main-pool-deck-tiles",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2764.jpg",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -19741,12 +19741,6 @@
   },
   {
    "from": "photo:IMG_2765.jpg",
-   "to": "main_pool_lawn.json:lawn-pink-paths",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2765.jpg",
    "to": "main_pool_lawn.json:lawn-bollards-bins",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19754,6 +19748,12 @@
   {
    "from": "photo:IMG_2765.jpg",
    "to": "main_pool_lawn.json:lawn-white-rooms",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2765.jpg",
+   "to": "ground_plan_main_pool.json:lawn-pink-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

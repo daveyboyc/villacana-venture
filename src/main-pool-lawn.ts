@@ -3,10 +3,9 @@ import layout from "../data/main_pool.json";
 import data from "../data/main_pool_lawn.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { centroid, closestOnSegment, pointInRing } from "./geom";
-import { plasterMaterial, surfaceTexture } from "./materials";
+import { plasterMaterial } from "./materials";
 import { accessSection, LOWER_POOL_Y, poolGroundY, poolLevelPoint } from "./pool-levels";
 import { addKitModel } from "./pool-kit";
-import { outlineRing, roundCorners, smoothLine, smoothUnion, surfaceGeometry } from "./smooth-path";
 import { addSprites } from "./sprites";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 import type { Vec2 } from "./types";
@@ -76,25 +75,8 @@ function stripRing(a: Vec2, b: Vec2, half: number): Vec2[] {
 }
 
 
-/** The inner tiled path from the foot of Calle Guillermo to the beach gate, the only way out (data/main_pool_lawn.json). */
-export const INNER_PATH = data.innerPath.points as Vec2[];
-
 /** Registry buildings the lawn photos show as plain white walls: no generated shutters, kit openings or porches. */
 export const PLAIN_LAWN_BUILDINGS = new Set<string>(data.plainBuildings.ids);
-
-/**
- * The lawn's paved surfaces as smooth outlines (src/smooth-path.ts): the pink paths unioned into one
- * network with rounded joins, the inner tiled path, and the flagstone apron with softened corners.
- * The traced centrelines in data/main_pool_lawn.json stay the data; only the drawing is smoothed.
- */
-const smoothPaths = smoothUnion(data.paths.lines.map((line, i) => outlineRing(smoothLine(line as Vec2[]), data.paths.width / 2, [false, i === 1])), 1.2, 0.2);
-const smoothInner = smoothUnion([outlineRing(smoothLine(data.innerPath.points as Vec2[]), data.innerPath.width / 2)], 0.8, 0.2);
-const smoothApron = [[roundCorners(data.apron.ring as Vec2[], true, 0.6, 0.6)]];
-
-/** Pink paths, the inner path and the flagstone apron, for the map. */
-export function lawnGroundRings(): Vec2[][] {
-  return [...smoothPaths, ...smoothInner, ...smoothApron].map((poly) => poly[0]);
-}
 
 function wallRings(): Vec2[][] {
   const rings: Vec2[][] = [];
@@ -122,20 +104,6 @@ function box(name: string, w: number, h: number, d: number, material: THREE.Mate
   mesh.name = name; mesh.position.set(at[0], y, at[1]); mesh.rotation.y = yaw;
   mesh.castShadow = mesh.receiveShadow = true;
   return mesh;
-}
-
-function flagstoneTexture(): THREE.CanvasTexture {
-  const c = document.createElement("canvas"); c.width = c.height = 256;
-  const g = c.getContext("2d")!;
-  g.fillStyle = "#c9a898"; g.fillRect(0, 0, 256, 256);
-  g.strokeStyle = "#a88878"; g.lineWidth = 3;
-  for (let i = 0; i < 18; i++) {
-    g.beginPath();
-    const x = (i * 47) % 240 + 8, y = (i * 83) % 240 + 8;
-    g.moveTo(x, y); g.lineTo(x + 40, y + 8); g.lineTo(x + 28, y + 46); g.lineTo(x - 6, y + 30); g.closePath(); g.stroke();
-  }
-  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping;
-  return t;
 }
 
 /**
@@ -302,20 +270,7 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
   const on = (p: Vec2): number => ground(p[0], p[1]);
   const group = new THREE.Group();
   group.name = "main-pool-lawn"; group.userData.noDrape = true;
-  const pink = new THREE.MeshStandardMaterial({ color: "#c47468", roughness: 0.82, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-  const flags = new THREE.MeshStandardMaterial({ map: flagstoneTexture(), roughness: 0.95, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-  flags.map!.repeat.set(1.4, 1.4);
-  const surface = (polys: Vec2[][][], lift: number, material: THREE.Material, name: string) => {
-    const mesh = new THREE.Mesh(surfaceGeometry(polys, ground, lift, 2), material); mesh.name = name; mesh.receiveShadow = true; group.add(mesh);
-  };
-  surface(smoothPaths, 0.05, pink, "lawn-pink-path");
-  // The inner tiled path from the foot of Calle Guillermo along the inside of the boundary to the gate (IMG_2600-2602, IMG_2763).
-  // IMG_2600 and IMG_2601 show large terracotta squares, about 0.4 m: the terracotta photo texture holds
-  // eight tiles a repeat; the surface's UVs are world metres.
-  const quarry = surfaceTexture("paving").clone(); quarry.repeat.set(1 / 3.2, 1 / 3.2); quarry.needsUpdate = true;
-  const terracotta = new THREE.MeshStandardMaterial({ color: "#d48a6a", map: quarry, roughness: 0.9, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -2, polygonOffsetUnits: -2 });
-  surface(smoothInner, 0.055, terracotta, "lawn-inner-path");
-  surface(smoothApron, 0.06, flags, "lawn-flagstone-apron");
+  // The paths, the inner tiled path and the flagstone apron are in the ground plan (data/ground_plan_main_pool.json, src/ground-plan.ts).
   const white = plasterMaterial("#fbf8f0");
   for (const wall of data.rooms.walls) {
     const pts = wall.points as Vec2[];

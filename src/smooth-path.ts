@@ -156,3 +156,29 @@ export function surfaceGeometry(polys: Polygon[], ground: (x: number, z: number)
   g.setAttribute("normal", new THREE.Float32BufferAttribute(new Float32Array(pos.length).map((_, k) => (k % 3 === 1 ? 1 : 0)), 3));
   return g;
 }
+
+/** The line `d` metres to its left (negative: right), offset along the true normal at every sample. */
+export function offsetLine(line: Vec2[], d: number): Vec2[] {
+  return line.map((p, i) => {
+    const a = line[Math.max(0, i - 1)], b = line[Math.min(line.length - 1, i + 1)], n = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1;
+    const dx = (b[0] - a[0]) / n, dz = (b[1] - a[1]) / n;
+    return [p[0] + dz * d, p[1] - dx * d] as Vec2;
+  });
+}
+
+/** An open polyline with its inner corners rounded by quadratic curves of radius `r` (as roundCorners does for rings). */
+export function roundPolyline(points: Vec2[], r: number): Vec2[] {
+  if (points.length < 3 || r <= 0) return points;
+  const out: Vec2[] = [points[0]];
+  for (let i = 1; i < points.length - 1; i++) {
+    const prev = points[i - 1], p = points[i], next = points[i + 1];
+    const ax = p[0] - prev[0], az = p[1] - prev[1], bx = next[0] - p[0], bz = next[1] - p[1];
+    const la = Math.hypot(ax, az), lb = Math.hypot(bx, bz);
+    if (!la || !lb) continue;
+    const rr = Math.min(r, la * 0.45, lb * 0.45);
+    const s: Vec2 = [p[0] - ax / la * rr, p[1] - az / la * rr], e: Vec2 = [p[0] + bx / lb * rr, p[1] + bz / lb * rr];
+    for (let k = 0; k <= 6; k++) { const t = k / 6, u = 1 - t; out.push([u * u * s[0] + 2 * u * t * p[0] + t * t * e[0], u * u * s[1] + 2 * u * t * p[1] + t * t * e[1]]); }
+  }
+  out.push(points[points.length - 1]);
+  return out;
+}

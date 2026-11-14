@@ -43,12 +43,68 @@ Three different things draw the ground, and each leaves its own kind of roughnes
   evidence and a confidence level; Inspect renders before and after; photo checks through the solved or
   starting cameras.
 
+## The ground plan files
+
+One file per area, `data/ground_plan_<area>.json` (the area id with `_` for `-`), imported by name in
+`src/ground-plan.ts` so the placement tooling ties each surface to its data and renderer. Feature ids
+are `ground_plan_<area>.json:<surface id>`. World metres: x east, z south.
+
+```json
+{
+  "about": "...", "area": "main-pool", "trust": "how sure the area's tracing is, in a sentence",
+  "surfaces": [
+    { "id": "lawn-pink-paths", "name": "...", "kind": "path", "finish": "pink-resin",
+      "width": 2.4, "lines": [[[x, z], ...], ...], "ends": [["square", "round"], ...], "joins": 1.2,
+      "note": "what the photos show and what is estimated", "evidence": ["IMG_2764.jpg", ...],
+      "edges": [ { "kind": "planter-wall", "side": "left", "span": [1.5, 8], "height": 0.35,
+                   "planting": "lavender", "openings": [{ "at": 3.0, "width": 1.2 }],
+                   "note": "...", "evidence": ["IMG_2600.jpg"] } ] },
+    { "id": "lawn-flagstone-apron", "kind": "apron", "finish": "flagstone",
+      "outline": [[x, z], ...], "corners": 0.6, "hard": [0, 3], "above": ["lawn-pink-paths"], ... }
+  ]
+}
+```
+
+- **kind**: `path` (centrelines and a width; several lines in one surface are unioned with rounded
+  `joins`), or `patio`, `apron`, `green` (an outline; corners rounded by `corners` metres except the
+  vertex indices in `hard`). `raise` lifts a raised patio's floor.
+- **finish** (`FINISHES` in `src/ground-plan.ts`): `pink-resin`, `terracotta-squares`, `flagstone`,
+  `octagon-tiles`, `concrete`, `gravel`, `planted-bed`, and `lawn` (drawn by the ground texture, not a
+  mesh). Green spaces and planted beds are painted into the ground texture, so the raster's wobbly class
+  edge gives way to the traced one; paved surfaces are meshes over it.
+- **edges** (`EDGES`): `none`, `kerb`, `brick-border` (flush, not solid), `planter-wall`, `wall`,
+  `hedge`, `fence` (solid: collision and map walls). On a path an edge runs along `side` (`left` of the
+  direction of travel, `right` or `both`), over `span` metres if given; on an outline over vertices
+  `from`..`to`. `openings` leave gaps; edges with planting carry it on top in Show details. Clipped
+  hedge leaves show with Show details, a plain hedge mass in Layout.
+- **above**: surfaces this one deliberately lies over (an apron over a path's end). Any other overlap
+  between finishes fails the check.
+
+`scripts/check_ground_plan.py` checks every file: kinds and finishes known, evidence that exists, a
+confidence entry for every surface, paths without hairpins, simple outlines, nothing in pool water or
+inside a standing house, solid edges clear of the mapped lanes, edge heights in range, openings that
+fit, and no undeclared overlaps.
+
+### Adding an area
+
+1. Create `data/ground_plan_<area>.json` and add its import to `GROUND_PLANS` in `src/ground-plan.ts`.
+2. Trace each path's centreline and each patio and green space's outline from the georeferenced aerial
+   (`public/map/ground.jpg`) and the photos; give each a finish, `evidence`, a `note` saying what is
+   photographed and what is estimated, and its edges. Where an edge is not seen, leave it out and record
+   a gap in `data/confidence.json`, or build it with an `inferred` level if it is plainly there.
+3. Move the area's existing path, patio and planter data into the file where it fits, and update the
+   features that cite it (photo checks, confidence, build queue).
+4. Add each surface to `data/confidence.json`, run `check_ground_plan.py`, render Inspect before and
+   after (`scripts/shoot_inspect.cjs`), and photo-check through the photo cameras.
+
 ## Status
 
 - **Pilot (done, 13 Nov):** the main-pool lawn. Its pink paths are one smooth network with rounded joins;
   the inner tiled path and the flagstone apron are smooth surfaces (`src/main-pool-lawn.ts`).
-- **Next:** task `ground-plan-framework` turns the pilot into the shared ground plan (data file per
-  area, renderer, texture mask, check) and moves the main-pool lawn onto it. Then one task per area,
+- **Framework (done, 14 Nov):** `src/ground-plan.ts`, `data/ground_plan_main_pool.json`,
+  `scripts/check_ground_plan.py`. The main-pool lawn's paths, inner path and apron moved onto it, and the
+  inner path gained its first edge (the lavender planter IMG_2600/2601 show).
+- **Next:** one task per area,
   `ground-plan-<area>`, traces paths, patios and green spaces with their edges and brings the area's
   existing patio, wall and planter modules under it. Order: main pool, north pool, middle pool, south
   pool, Elena, Cervantes, seaward lanes, Eva, north lanes, Dalí and Picasso (most photographed first).

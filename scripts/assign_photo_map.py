@@ -259,8 +259,7 @@ def features(s):
     add('door_sills.json:'+k['id'],k['name'],'reference feature','photo-supported kerb on the mapped car park edge; extent estimated',evidence=k['evidence'],points=[[k['origin'][i]+k['along'][i]*t for i in range(2)] for t in (0,k['length'])])
     add('door_sills.json:'+a['id'],a['name'],'reference feature','photo-supported approach square to the registry arch recess; length estimated',evidence=a['evidence'],points=[[a['arch'][i]+a['outward'][i]*t for i in range(2)] for t in (0,a['foot'])])
     lawn=json.loads((ROOT/'data/main_pool_lawn.json').read_text())
-    half=lawn['paths']['width']/2
-    def ribbon(points):
+    def ribbon(points,half):
         left,right=[],[]
         for i,p in enumerate(points):
             b=points[i-1] if i else p; a=points[i+1] if i<len(points)-1 else p
@@ -268,8 +267,6 @@ def features(s):
             left.append([round(p[0]+dz/n*half,2),round(p[1]-dx/n*half,2)])
             right.append([round(p[0]-dz/n*half,2),round(p[1]+dx/n*half,2)])
         return left+right[::-1]
-    add('main_pool_lawn.json:'+lawn['paths']['id'],lawn['paths']['name'],'reference feature',lawn['trust'],evidence=lawn['paths']['evidence'],ring=ribbon(lawn['paths']['lines'][0]))
-    add('main_pool_lawn.json:'+lawn['apron']['id'],lawn['apron']['name'],'reference feature',lawn['trust'],evidence=lawn['apron']['evidence'],ring=lawn['apron']['ring'])
     fit=lawn['fittings']
     add('main_pool_lawn.json:'+fit['id'],fit['name'],'reference feature',lawn['trust'],evidence=fit['evidence'],points=fit['bollards']+fit['bins'])
     rooms=lawn['rooms']
@@ -282,10 +279,14 @@ def features(s):
     add('main_pool_lawn.json:'+steps['id'],steps['name'],'reference feature',lawn['trust'],evidence=steps['evidence'],points=[[-35.0,97.51],[-31.04,104.82]])
     shop=lawn['shop']
     add('main_pool_lawn.json:'+shop['id'],shop['name'],'reference feature',lawn['trust'],evidence=shop['evidence'],points=[shop['at']])
-    inner=lawn['innerPath']
-    add('main_pool_lawn.json:'+inner['id'],inner['name'],'reference feature',lawn['trust'],evidence=inner['evidence'],ring=ribbon(inner['points']))
     plain=lawn['plainBuildings']
     add('main_pool_lawn.json:'+plain['id'],plain['name'],'reference feature',lawn['trust'],evidence=plain['evidence'],points=[[-11.6,128.9],[-8.7,134.0],[-16.0,131.3]])
+    # The ground plan (docs/SMOOTH_PATHS.md): every traced path, patio, apron and green space, one file per area.
+    for plan_file in sorted((ROOT/'data').glob('ground_plan_*.json')):
+        plan=json.loads(plan_file.read_text())
+        for f in plan['surfaces']:
+            shape=ribbon(f['lines'][0],f['width']/2) if f['kind']=='path' else f['outline']
+            add(plan_file.name+':'+f['id'],f['name'],'reference feature',f.get('note') or plan['trust'],evidence=f['evidence'],ring=shape)
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 
