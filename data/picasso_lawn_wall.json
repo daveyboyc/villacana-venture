@@ -1,0 +1,10 @@
+{
+  "id": "picasso-lawn-wall",
+  "name": "White wall along Calle Pintor Picasso enclosing the big-pool lawn",
+  "points": [[5.41, 78.23], [14.99, 86.22], [24.5, 96.17], [23.45, 97.78], [13.77, 105.81], [11.48, 111.87], [7.89, 117.78], [-4.93, 127.76]],
+  "height": 1.75,
+  "thickness": 0.28,
+  "hedge": { "height": 1.05, "depth": 0.7, "inset": 0.7 },
+  "evidence": ["IMG_2764.jpg", "IMG_2765.jpg"],
+  "trust": "IMG_2764 looks north from the coastal end of the big-pool lawn (pin about 4 m, heading 343) and shows a plain white wall along the right, the east side, running from the foreground back to the pool building. IMG_2765 is the same lawn. The line is the east edge of the lawn on the Esri aerial, from beside the pool building to the coastal path, about 70 m. Imagery © Google, photorealistic 3D, 14 Nov 2026, shows that wall as a thin white boundary with a hedge on the lawn side, enclosing the pool, not the registry block that was extruded there (6465801UF1366N_part2). Height about 1.75 m by eye against the people and the pool-building storey in IMG_2764; thickness 0.28 m is a guess. The hedge is the dark strip on the aerial and in the Google view, not measured. Estimated to about 1 m."
+}

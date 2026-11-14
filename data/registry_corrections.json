@@ -49,6 +49,14 @@
    ]
   }
  ],
+ "boundaryWalls": [
+  {
+   "id": "6465801UF1366N_part2",
+   "registryFloors": 1,
+   "evidence": ["IMG_2764.jpg", "IMG_2765.jpg"],
+   "trust": "This long registry strip is the lawn edge beside Calle Pintor Picasso, not a roofed block. IMG_2764, from the coastal end of the lawn, shows a plain white wall there, and the aerial shows no roof inside the ring. The ring stays as an outline. The wall is data/picasso_lawn_wall.json."
+  }
+ ],
  "openPatios": [
   {
    "id": "6364401UF1366S_part7",

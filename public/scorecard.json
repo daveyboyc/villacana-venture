@@ -81,7 +81,7 @@
    ".......ggggggggffffffffeeeeeebbbbjjjjjjjjjjjjkkkkkkkddddddddddddddmmmmmmmmmmmmllllllllll",
    "........gggggggffffffffeeeeebbbbbjjjjjjjjjjjjkkkkkkkddddddddddddddmmmmmmmmmmmlllllllllll",
    "........gggggggfffffffeeeeeebbbbbjjjjkkkjjjkkkkkkkkkddddddddddddddmmmmmmmmmmllllllllllll",
-   ".........ggggfgggffffffeeeeebbbbbjjjkkkkkkkkkkkkkkkkdddddddddddddddmmmmmmmmlllllllllllll",
+   ".........ggggfgggffffffeeeeebbbbbjjjkkkkkkkkkkkkkkkkddddddddddddddmmmmmmmmmlllllllllllll",
    ".........gggggggggggfffbbbbbbbbbbbjjkkkkkkkkkkkkkkkkddddddddddddddmmmmmmmmllllllllllllll",
    "..........ggggggggggfffbbbbbbbbbbbbbkkkkkkkkkkkkkkkkdddddddddddddmmmmmmmmlllllllllllllll",
    "..........gggggggggggffbbbbbbbbbbbbbkkkkkkkkkkkkkkkkkddddddddddddmmmmmmmllllllllllllllll",
@@ -570,9 +570,9 @@
     ],
     "photoSteps": null,
     "roofs": {
-     "measured": 7,
+     "measured": 6,
      "medianMiss": 0.65,
-     "offOver1m": 4
+     "offOver1m": 3
     }
    },
    "photos": {
@@ -594,7 +594,7 @@
     "generated": 35
    },
    "placement": {
-    "features": 20,
+    "features": 21,
     "verified": 0,
     "disputed": 10
    },
@@ -679,7 +679,7 @@
    },
    "confidence": {
     "photographed": 1,
-    "estimated": 18,
+    "estimated": 19,
     "inferred": 1,
     "registry": 0,
     "gaps": 2
@@ -689,9 +689,9 @@
     "Footprints: 24% stand on surveyed roof; they barely correlate with the surveyed roofs, so no shift is measured.",
     "Photos: 29, 29 placed; no camera solved.",
     "Facades: 0 of 35 kit parts traced from photos.",
-    "How sure: 1 photographed, 18 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 20 features verified, 17 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 0 still open; 7 evidence requests. This is not whole-area acceptance."
+    "How sure: 1 photographed, 19 estimated, 1 inferred, 2 known gaps.",
+    "Placement: 0 of 21 features verified, 17 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 0 still open; 8 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -802,13 +802,26 @@
       "features": [],
       "tasks": [],
       "state": "open"
+     },
+     {
+      "id": "photo-picasso-lawn-wall",
+      "area": "main-pool",
+      "kind": "photo",
+      "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
+      "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
+      "photoRequest": "picasso-lawn-wall",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 4
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 5 spots",
+    "headline": "Photos needed: 6 spots",
     "requests": [
      {
       "id": "guillermo-foot-closure",
@@ -822,6 +835,22 @@
       ],
       "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
       "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-lawn-wall",
+      "at": [
+       8.0,
+       110.0
+      ],
+      "look": [
+       16.0,
+       100.0
+      ],
+      "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
+      "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
       "priority": 1,
       "state": "open",
       "photos": []
@@ -2834,7 +2863,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 435,
+    "features": 436,
     "verified": 0,
     "disputed": 27
    },
@@ -3019,7 +3048,7 @@
    },
    "confidence": {
     "photographed": 59,
-    "estimated": 130,
+    "estimated": 131,
     "inferred": 13,
     "registry": 233,
     "gaps": 25
@@ -3029,9 +3058,9 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 59 photographed, 130 estimated, 13 inferred, 25 known gaps.",
-    "Placement: 0 of 435 features verified, 42 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 4 still open; 38 evidence requests. This is not whole-area acceptance."
+    "How sure: 59 photographed, 131 estimated, 13 inferred, 25 known gaps.",
+    "Placement: 0 of 436 features verified, 42 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 4 still open; 39 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
@@ -3551,6 +3580,19 @@
       "state": "open"
      },
      {
+      "id": "photo-picasso-lawn-wall",
+      "area": "main-pool",
+      "kind": "photo",
+      "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
+      "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
+      "photoRequest": "picasso-lawn-wall",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
+     },
+     {
       "id": "photo-barraka-approach-wall",
       "area": "barraka-beach",
       "kind": "photo",
@@ -3568,7 +3610,7 @@
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 31 spots",
+    "headline": "Photos needed: 32 spots",
     "requests": [
      {
       "id": "alberto",
@@ -3790,6 +3832,22 @@
       ],
       "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
       "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "picasso-lawn-wall",
+      "at": [
+       8.0,
+       110.0
+      ],
+      "look": [
+       16.0,
+       100.0
+      ],
+      "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
+      "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
       "priority": 1,
       "state": "open",
       "photos": []
