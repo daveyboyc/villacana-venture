@@ -3810,13 +3810,15 @@
   },
   {
    "id": "ground_plan_main_pool.json:lawn-strip-guillermo",
-   "name": "Lawn strip between the pink path and the Guillermo planter",
+   "name": "Lawn strip between the pink path and the Guillermo planter, round the kiosk",
    "kind": "reference feature",
-   "source": "IMG_2598 (from the planter top) and IMG_2765 show lawn from the lantana planter wall to the pink path, with palms and loungers on it. The aerial shows a brown band beside the path and the loungers' blue; the photos are taken as right and the band as worn or dry grass and palm shadow. Bounded by the modelled planter (data/jorge_lane.json guillermoPlanter), whose wall is its edge already; the south end by the kiosk's white walls is estimated.",
+   "source": "IMG_2598 (from the planter top) and IMG_2765 show lawn from the lantana planter wall to the pink path, with palms and loungers on it. The aerial shows a brown band beside the path and the loungers' blue; the photos are taken as right and the band as worn or dry grass and palm shadow. Bounded by the modelled planter (data/jorge_lane.json guillermoPlanter), whose wall is its edge already; the south end by the kiosk's white walls is estimated. 2026-11-14: extended south round the kiosk's north side to its walls, 0.2 m off its registry outline: IMG_2762 and IMG_2763 show lawn up to the kiosk and the strelitzia corner where the ground texture had terracotta paving.",
    "evidence": [
     "IMG_2598.jpg",
-    "IMG_2765.jpg",
-    "IMG_2764.jpg"
+    "IMG_2762.jpg",
+    "IMG_2763.jpg",
+    "IMG_2764.jpg",
+    "IMG_2765.jpg"
    ]
   },
   {
@@ -19764,6 +19766,12 @@
   },
   {
    "from": "photo:IMG_2762.jpg",
+   "to": "ground_plan_main_pool.json:lawn-strip-guillermo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2762.jpg",
    "to": "ground_plan_main_pool.json:lawn-pink-paths",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -19783,6 +19791,12 @@
   {
    "from": "photo:IMG_2763.jpg",
    "to": "main_pool_lawn.json:lawn-kiosk-plain",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2763.jpg",
+   "to": "ground_plan_main_pool.json:lawn-strip-guillermo",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
