@@ -94,6 +94,7 @@ def main():
             shutil.copyfile(overlay, directory / f'{Path(name).stem}-{args.phase}-overlay.jpg')
         print('Renders and overlays created. Inspect them against the photos and record findings; no automatic match is claimed.')
     if args.validate:
+        os.environ.setdefault('VILLACANA_TEST_DEVICE_SCALE', '0.5')
         if Path('/usr/bin/chromium').exists():
             os.environ.setdefault('PLAYWRIGHT_CHROMIUM_EXECUTABLE', '/usr/bin/chromium')
         for script in ('test_model_loop.py', 'test_photo_assignment.py', 'test_reference_index.py', 'test_placement_verification.py'):

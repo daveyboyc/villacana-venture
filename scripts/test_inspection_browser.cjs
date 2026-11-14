@@ -7,7 +7,7 @@ const fs = require('node:fs');
   const server = await preview({ preview: { host: '127.0.0.1', port: 0, strictPort: false }, logLevel: 'error' });
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE, args: ['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   try {
-    const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } });
+    const page = await browser.newPage({ viewport: { width: 1400, height: 1000 }, deviceScaleFactor: Number(process.env.VILLACANA_TEST_DEVICE_SCALE || 1) });
     page.setDefaultTimeout(240000); // Full detail startup on software WebGL, as in shoot_views.cjs.
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     const site = `http://127.0.0.1:${server.httpServer.address().port}`;

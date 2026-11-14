@@ -97,6 +97,9 @@ answered through their existing review process. Map/measurement requests use
 The PR/push/daily/manual **Continuous evidence loop** Action builds the current app,
 checks the graph and Inspect, and uploads the current work list with outstanding
 requests. Missing evidence is reported rather than treated as a failed build.
+The UI integration checks use `VILLACANA_TEST_DEVICE_SCALE=0.5` in CI and through
+`--validate` to reduce software WebGL raster cost while retaining the same CSS
+viewports, pointer coordinates and actual renderer. Direct test runs default to 1.
 It does not run a model-editing agent or invent visual judgments. Continuous
 geometry improvements are performed by the agent recipe above; unattended
 model-editing requires an agent runner beyond deterministic CI.

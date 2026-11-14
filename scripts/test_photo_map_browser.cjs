@@ -11,7 +11,7 @@ const fs = require('node:fs');
   const site = `http://127.0.0.1:${server.httpServer.address().port}`;
   fs.mkdirSync('layout-checks.local', { recursive: true });
   try {
-    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, permissions: ['clipboard-read', 'clipboard-write'] });
+    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: Number(process.env.VILLACANA_TEST_DEVICE_SCALE || 1), permissions: ['clipboard-read', 'clipboard-write'] });
     const page = await context.newPage(); page.setDefaultTimeout(45000);
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     const index = JSON.parse(fs.readFileSync('public/reference-index.json'));
