@@ -1702,6 +1702,28 @@
    "render": "docs/reviews/ground-plan-main-pool/IMG_2603-after.png",
    "result": "matches",
    "notes": "Unchanged by the lawn tracing: the path, its fork, the fittings either side and the palm at the pool end, as in the photo. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-main-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_main_pool.json:lawn-strip-guillermo",
+   "photo": "IMG_2762.jpg",
+   "render": "docs/reviews/ground-plan-main-pool/IMG_2762-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "The lawn now runs up to the kiosk's north-east wall and round the strelitzia over its silver bush, as in the photo, where before the ground texture had terracotta paving there. Still different: at the kiosk's north corner the street-level ground (about -1.2 m) meets the lowered lawn (about -2.3 m), so a terracotta pad and step show where the photo has level lawn (the lowered area's edge, data/main_pool.json lowerArea, cuts across there); the kiosk's louvred doors are not modelled. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-main-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_main_pool.json:lawn-strip-guillermo",
+   "photo": "IMG_2763.jpg",
+   "render": "docs/reviews/ground-plan-main-pool/IMG_2763-after.png",
+   "result": "differs",
+   "followUp": "main-pool-gate-corner",
+   "notes": "Past the kiosk's round end towards the fence: the lawn by the kiosk is now lawn, but the corner ahead is still the seafront zone's ground and the inner path where the photo shows the pink path, a flagstone path between the hedge and the round wall, and a bollard. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [

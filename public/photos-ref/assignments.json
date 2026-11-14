@@ -17046,6 +17046,7 @@
    "citedBy": [
     "main_pool_lawn.json:lawn-white-rooms",
     "main_pool_lawn.json:lawn-kiosk-plain",
+    "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -17070,6 +17071,7 @@
     "main_pool_lawn.json:lawn-white-rooms",
     "main_pool_lawn.json:lawn-sea-hedge",
     "main_pool_lawn.json:lawn-kiosk-plain",
+    "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths",
     "ground_plan_main_pool.json:lawn-inner-path",
     "ground_plan_main_pool.json:lawn-flagstone-apron"

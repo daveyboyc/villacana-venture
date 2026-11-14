@@ -11,3 +11,4 @@
   strip and the anti-aliased green fringe are gone); the inferred pale path.
 - `hedge-details.jpg`: the hedge as one clipped row along the railing.
 - `IMG_*-after.png`: renders through the photo cameras, recorded in `data/photo_checks.json`.
+- `kiosk-lawn-details.jpg`: the lawn strip extended round the kiosk's north side to its walls (IMG_2762, IMG_2763).
