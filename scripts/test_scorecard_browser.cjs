@@ -15,7 +15,7 @@ const path = require('node:path');
   const out = path.join('docs', 'reviews', 'area-scorecard');
   fs.mkdirSync(out, { recursive: true });
   try {
-    for (const [device, options] of [['desktop', { viewport: { width: 1280, height: 800 } }], ['phone', { ...devices['iPhone 13'] }]]) {
+    for (const [device, options] of [['desktop', { viewport: { width: 1280, height: 800 } }], ['phone', { ...devices['iPhone 13'], deviceScaleFactor: 1 }]]) {
       const context = await browser.newContext(options);
       const page = await context.newPage(), errors = [];
       page.setDefaultTimeout(240000);

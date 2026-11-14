@@ -1,6 +1,14 @@
 name: Continuous evidence loop
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/map/**'
+      - '.github/workflows/model-loop.yml'
   schedule:
     - cron: '20 6 * * *'
   workflow_dispatch:

@@ -93,7 +93,7 @@ and rerun the command. Linked photo requests progress from open to received to
 answered through their existing review process. Map/measurement requests use
 `sources`, `reviewer` and `note` before `status: answered`.
 
-The daily/manual **Continuous evidence loop** Action builds the current app,
+The push/daily/manual **Continuous evidence loop** Action builds the current app,
 checks the graph and Inspect, and uploads the current work list with outstanding
 requests. Missing evidence is reported rather than treated as a failed build.
 It does not run a model-editing agent or invent visual judgments. Continuous
