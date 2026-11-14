@@ -1,9 +1,10 @@
 {
   "note": "Grass and planting on the beach side of the paseo, from the foot of Calle Guillermo to Barraka, in front of the beach gateway and the lawn railings. Scene metres (x east, z south). The grass follows the beach ground; the shrubs are Details only and keep clear of the paseo, the Barraka walk and the coastal access.",
-  "trust": "Rough outline. Dave, 2026-10-27: there is grass and plants in front of the gate and the fence alongside Barraka; Barraka used to sit inside Villacana and the grass used to go further out. The extent is read off the Esri aerial (a grey-green patch with dark shrub clumps seaward of the paseo, ending at a long dark shrub strip and the sand) and IMG_2226 from the beach (low shrubs and a grass band in front of the white wall, gateway and railings). Not measured; edges good to about 2-3 m. Dave will take closer photos. 13 Nov: the inner edge follows the path around the lawn, so the grass stays off the paving. The clumps are leafy bushes (IMG_2631, IMG_2226), with a few young agaves on the grass (IMG_2481, IMG_2631) and two palms on the sand just seaward of it (IMG_2226, IMG_2481). The added plants are placed by eye, good to about 3 m.",
+  "trust": "Rough outline. Dave, 2026-10-27: there is grass and plants in front of the gate and the fence alongside Barraka; Barraka used to sit inside Villacana and the grass used to go further out. The extent is read off the Esri aerial (a grey-green patch with dark shrub clumps seaward of the paseo, ending at a long dark shrub strip and the sand) and IMG_2226 from the beach (low shrubs and a grass band in front of the white wall, gateway and railings). Not measured; edges good to about 2-3 m. Dave will take closer photos. 13 Nov: the inner edge follows the path around the lawn, so the grass stays off the paving. The clumps are leafy bushes (IMG_2631, IMG_2226), with a few young agaves on the grass (IMG_2481, IMG_2631) and two palms on the sand just seaward of it (IMG_2226, IMG_2481). The added plants are placed by eye, good to about 3 m. IMG_2482 shows the agaves as a loose row on the grass beside the paving, and a group of palms on the sand in front of the restaurant; more of both are placed along that verge.",
   "evidence": [
     "IMG_2226.jpg",
     "IMG_2481.jpg",
+    "IMG_2482.jpg",
     "IMG_2609.jpg",
     "IMG_2631.jpg"
   ],
@@ -154,7 +155,9 @@
       [21.0, 124.2, 0.9],
       [16.0, 131.2, 1.0],
       [13.4, 132.4, 0.9],
-      [23.2, 122.2, 0.8]
+      [23.2, 122.2, 0.8],
+      [3.36, 136.67, 0.85],
+      [16.26, 124.24, 0.85]
     ],
     "height": 1.1
   },
@@ -163,10 +166,23 @@
     [15.4, 130.2, 0.4],
     [18.6, 127.6, 0.4],
     [21.8, 124.8, 0.4],
-    [8.4, 136.8, 0.35]
+    [8.4, 136.8, 0.35],
+    [-9.44, 144.23, 0.4],
+    [-6.07, 140.82, 0.4],
+    [-2.71, 137.41, 0.4],
+    [0.65, 134.0, 0.4],
+    [7.12, 127.23, 0.4],
+    [10.14, 124.25, 0.4],
+    [13.83, 121.32, 0.4],
+    [17.81, 117.21, 0.4],
+    [19.61, 112.18, 0.4]
   ],
   "palms": [
     { "at": [26.2, 121.5], "height": 7.5, "seed": 3 },
-    { "at": [23.6, 126.8], "height": 6.2, "seed": 9 }
+    { "at": [23.6, 126.8], "height": 6.2, "seed": 9 },
+    { "at": [-4.61, 155.54], "height": 8.4, "seed": 20 },
+    { "at": [5.33, 145.34], "height": 9.2, "seed": 23 },
+    { "at": [15.52, 134.79], "height": 7.1, "seed": 26 },
+    { "at": [27.92, 122.26], "height": 6.4, "seed": 29 }
   ]
 }

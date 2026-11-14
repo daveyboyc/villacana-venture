@@ -50,16 +50,25 @@ export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number
   });
 }
 
-/** A young agave: a low rosette of stiff blue-green blades (IMG_2481, IMG_2631). */
+/** A young agave: a fleshy rosette, outer blades longer and lower (IMG_2482). */
 function agave(seed: number, spread: number): THREE.Group {
   const group = new THREE.Group(); group.name = "beach-agave";
-  const blade = new THREE.MeshStandardMaterial({ color: "#6e8a62", roughness: 0.85, side: THREE.DoubleSide });
-  for (let i = 0; i < 14; i++) {
-    const a = (i / 14) * Math.PI * 2 + (seed % 7) * 0.04;
-    const len = spread * (0.55 + ((seed + i) % 5) * 0.08);
-    const leaf = new THREE.Mesh(new THREE.PlaneGeometry(0.07, len), blade);
-    leaf.position.set(Math.cos(a) * len * 0.28, len * 0.22, Math.sin(a) * len * 0.28);
-    leaf.rotation.y = -a; leaf.rotation.x = 1.05 + (i % 3) * 0.12; leaf.castShadow = true; group.add(leaf);
+  const outer = new THREE.MeshStandardMaterial({ color: "#6a8a58", roughness: 0.8, side: THREE.DoubleSide });
+  const inner = new THREE.MeshStandardMaterial({ color: "#8faf6e", roughness: 0.75, side: THREE.DoubleSide });
+  const blade = (len: number, width: number, mat: THREE.Material) => new THREE.Mesh(new THREE.PlaneGeometry(width, len), mat);
+  for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2 + (seed % 5) * 0.05;
+    const len = spread * (0.7 + (i % 3) * 0.1);
+    const leaf = blade(len, 0.11, outer);
+    leaf.position.set(Math.cos(a) * len * 0.32, len * 0.16, Math.sin(a) * len * 0.32);
+    leaf.rotation.y = -a; leaf.rotation.x = 1.15; leaf.castShadow = true; group.add(leaf);
+  }
+  for (let i = 0; i < 8; i++) {
+    const a = (i / 8) * Math.PI * 2 + 0.3;
+    const len = spread * 0.45;
+    const leaf = blade(len, 0.08, inner);
+    leaf.position.set(Math.cos(a) * len * 0.2, len * 0.32, Math.sin(a) * len * 0.2);
+    leaf.rotation.y = -a; leaf.rotation.x = 0.7; group.add(leaf);
   }
   return group;
 }
