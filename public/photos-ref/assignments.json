@@ -7766,7 +7766,9 @@
     }
    ],
    "citedBy": [
-    "area:paseo"
+    "area:paseo",
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

@@ -7692,7 +7692,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "area:paseo"
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
   ],
   "looksAt": [
    28.8,

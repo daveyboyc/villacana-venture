@@ -3299,6 +3299,7 @@
    "evidence": [
     "IMG_2226.jpg",
     "IMG_2481.jpg",
+    "IMG_2482.jpg",
     "IMG_2609.jpg",
     "IMG_2631.jpg"
    ]
@@ -3311,6 +3312,7 @@
    "evidence": [
     "IMG_2226.jpg",
     "IMG_2481.jpg",
+    "IMG_2482.jpg",
     "IMG_2609.jpg",
     "IMG_2631.jpg"
    ]
@@ -13578,6 +13580,18 @@
   {
    "from": "photo:IMG_2482.jpg",
    "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
