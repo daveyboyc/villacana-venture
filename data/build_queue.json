@@ -3658,6 +3658,25 @@
    "dependsOn": [],
    "status": "open",
    "owner": null
+  },
+  {
+   "id": "continuous-evidence-loop",
+   "area": "whole-resort",
+   "priority": 1,
+   "kind": "tooling",
+   "title": "Continuous model development: tracked discrepancies, scoped photo/map requests and current acceptance",
+   "photos": [],
+   "build": "Extend the graph with persistent discrepancies and scoped evidence requests. Provide an area command, acceptance packets, generated work reports, scorecard flags and recurring validation. Continue supported work while specific evidence is missing.",
+   "avoid": "No geometry changes, invented photographic matches, automatic approvals, or closure of the original five loop tasks without completing their definitions.",
+   "accept": [
+    "Adversarial acceptance and scoped blocker tests pass",
+    "Graph, scorecard and work report regenerate consistently",
+    "Production build and Inspect/map browser checks pass"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex",
+   "issue": 235
   }
  ]
 }

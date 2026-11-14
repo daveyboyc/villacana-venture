@@ -22,6 +22,18 @@ def change_errors(before, after, changed):
     new_nodes={n['id']:n for n in after.get('nodes',[])}
     for id,node in old_nodes.items():
         kind=node.get('kind');current=new_nodes.get(id)
+        if kind=='model-discrepancy':
+            if current is None:
+                errors.append(f'{id}: model discrepancy history cannot be deleted')
+            else:
+                if not set(node.get('sources',[]))<=set(current.get('sources',[])) or not set(node.get('features',[]))<=set(current.get('features',[])):
+                    errors.append(f'{id}: original discrepancy sources and feature scope cannot be removed')
+                if current.get('area')!=node.get('area') or current.get('discrepancyKind')!=node.get('discrepancyKind'):
+                    errors.append(f'{id}: discrepancy area and kind cannot be reassigned')
+                old_review=node.get('review')
+                if old_review and old_review!=current.get('review') and old_review not in current.get('reviewHistory',[]):
+                    errors.append(f'{id}: preserve the previous review in reviewHistory before re-reviewing')
+            continue
         if kind not in ('placement-review','placement-discrepancy'):continue
         if current is None:
             errors.append(f'{id}: evidence/discrepancy history cannot be deleted; retain and explicitly supersede or resolve it')

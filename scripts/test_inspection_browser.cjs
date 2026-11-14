@@ -8,7 +8,7 @@ const fs = require('node:fs');
   const browser = await chromium.launch({ executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE, args: ['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
   try {
     const page = await browser.newPage({ viewport: { width: 1400, height: 1000 } });
-    page.setDefaultTimeout(90000);
+    page.setDefaultTimeout(240000); // Full detail startup on software WebGL, as in shoot_views.cjs.
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     const site = `http://127.0.0.1:${server.httpServer.address().port}`;
     await page.goto(site + '/');

@@ -1,0 +1,56 @@
+name: Continuous evidence loop
+
+on:
+  schedule:
+    - cron: '20 6 * * *'
+  workflow_dispatch:
+    inputs:
+      area:
+        description: Area to report
+        default: north-pool
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: model-loop
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: python3 -m pip install Pillow==11.3.0
+      - run: npm ci
+      - name: Refresh work and evidence requests
+        env:
+          LOOP_AREA: ${{ inputs.area || 'north-pool' }}
+        run: python3 scripts/photo_loop.py --area "$LOOP_AREA"
+      - run: python3 scripts/test_model_loop.py
+      - run: python3 scripts/test_reference_index.py
+      - run: python3 scripts/test_placement_verification.py
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test_inspection_browser.cjs
+      - run: node scripts/test_scorecard_browser.cjs
+      - name: Work and missing evidence
+        if: always()
+        run: cat refs/LOOP.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: model-loop-evidence
+          path: |
+            refs/LOOP.md
+            public/photo-loop.json
+            layout-checks.local/inspection-*.png
