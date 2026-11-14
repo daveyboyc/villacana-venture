@@ -5,6 +5,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 lawn = json.loads((ROOT / "data/main_pool_lawn.json").read_text())
+# The paths, inner path and apron live in the ground plan (data/ground_plan_main_pool.json, checked in full
+# by scripts/check_ground_plan.py); this check keeps the lawn's own rules for them.
+_plan = {f["id"]: f for f in json.loads((ROOT / "data/ground_plan_main_pool.json").read_text())["surfaces"]}
+lawn["paths"] = {**_plan["lawn-pink-paths"], "lines": _plan["lawn-pink-paths"]["lines"]}
+lawn["apron"] = {**_plan["lawn-flagstone-apron"], "ring": _plan["lawn-flagstone-apron"]["outline"]}
+lawn["innerPath"] = {**_plan["lawn-inner-path"], "points": _plan["lawn-inner-path"]["lines"][0]}
 skeleton = json.loads((ROOT / "public/map/skeleton.json").read_text())
 manifest = {p["file"] for p in json.loads((ROOT / "public/photos-ref/manifest.json").read_text())}
 tags = json.loads((ROOT / "data/reference_tags.json").read_text())

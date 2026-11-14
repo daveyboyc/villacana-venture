@@ -92,6 +92,7 @@ const path = require("node:path");
         ...coastalWallRings(),
         ...(await import("/src/seafront-fence.ts")).seafrontFenceRings(),
         ...(await import("/src/main-pool-lawn.ts")).lawnSolidRings(),
+        ...(await import("/src/ground-plan.ts")).groundPlanSolidRings(),
       ],
       Object.fromEntries(
         parts.flatMap((b, i) =>

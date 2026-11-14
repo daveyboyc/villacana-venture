@@ -64,6 +64,7 @@ import { accessWallRings, addPoolAccess, poolGroundY, lowerPoolRing, lowerPoolHo
 import { addLoweredLanes, laneDrop, loweredRoads, onLoweredLane } from "./lowered-lanes";
 import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
 import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings, PLAIN_LAWN_BUILDINGS } from "./main-pool-lawn";
+import { addGroundPlan, groundPlanSolidRings, paintGroundPlan } from "./ground-plan";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -268,6 +269,8 @@ async function boot(): Promise<void> {
   const mainRing = skeleton.pools.find((p) => p.id === "main")?.ring;
   const toddlerRing = skeleton.pools.find((p) => p.id === "toddler")?.ring;
   if (mainPool && mainRing && toddlerRing) addMainPoolLawn(scene, mainRing, toddlerRing, !layoutOnly, liveGroundY);
+  // The ground plan: traced paths, patios and green spaces with their edges, drawn smooth (docs/SMOOTH_PATHS.md).
+  addGroundPlan(scene, liveGroundY, !layoutOnly, (x, z) => Math.hypot(x - centre.x, z - centre.z) < RADIUS + 25);
   if (skeleton.seaWall) addSeaWall(scene, skeleton.seaWall.points, seaside ? paseoWallCovers : undefined);
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   addPoolDecks(scene, nearbyPools, deckSlabCanvas(), skeleton.viewRotation);
@@ -310,6 +313,7 @@ async function boot(): Promise<void> {
   if(layoutOnly&&skeleton.boundaryReference)addLayoutRoutes(scene,routes,skeleton.boundaryReference,liveGroundY);
   const fenceRings = barrierRings(skeleton.boundaryReference?.barriers ?? []);
   fenceRings.push(...elenaEntryRings());
+  fenceRings.push(...groundPlanSolidRings()); // ground-plan planter walls, walls, hedges and fences
   fenceRings.push(...cervantesEastSouthRings()); // issue #89: solid closed south patio frontage
   fenceRings.push(...elenaEastPatioRings()); // issue #38: photographed patio enclosure walls are solid
   fenceRings.push(...evaWallRings());
@@ -787,6 +791,8 @@ async function addGround(scene: THREE.Scene, skeleton: Skeleton, centre: { x: nu
   smoothClassEdges(pctx, size, Object.values(skeleton.cover.classes), Math.max(3, (size / (span * 2)) * 0.5));
   // The measured pool decks keep their clean curved edge (src/pool-deck.ts).
   paintPoolDecks(pctx, size, [centre.x - span, centre.z - span], span * 2, skeleton.pools, skeleton.cover.classes.deck, skeleton.cover.classes.lawn);
+  // Where the ground plan is traced its clean edges replace the raster classes' wobbly ones.
+  paintGroundPlan(pctx, (x, z) => [(x - (centre.x - span)) / (span * 2) * size, (z - (centre.z - span)) / (span * 2) * size], skeleton.cover.classes.lawn);
   // Paint short blades all over the lawn so it reads as grass right to its edges.
   const painted = pctx.getImageData(0, 0, size, size).data;
   // Keep classification pixels intact, but make the rendered turf less saturated.

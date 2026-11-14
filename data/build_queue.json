@@ -3185,8 +3185,8 @@
     "Visible in Inspect Layout and with Show details"
    ],
    "features": [
-    "main_pool_lawn.json:lawn-pink-paths",
-    "main_pool_lawn.json:lawn-flagstone-apron",
+    "ground_plan_main_pool.json:lawn-pink-paths",
+    "ground_plan_main_pool.json:lawn-flagstone-apron",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:lawn-white-rooms",
     "main_pool_lawn.json:lawn-sea-hedge",
@@ -3234,10 +3234,10 @@
     "jorge_lane.json:jorge-lane-lawn-palm",
     "main_pool_lawn.json:enrique-shop-front",
     "main_pool_lawn.json:lawn-bollards-bins",
-    "main_pool_lawn.json:lawn-flagstone-apron",
-    "main_pool_lawn.json:lawn-inner-path",
+    "ground_plan_main_pool.json:lawn-flagstone-apron",
+    "ground_plan_main_pool.json:lawn-inner-path",
     "main_pool_lawn.json:lawn-kiosk-plain",
-    "main_pool_lawn.json:lawn-pink-paths",
+    "ground_plan_main_pool.json:lawn-pink-paths",
     "seafront_fence.json:guillermo-beach-gate"
    ],
    "dependsOn": [],
@@ -3266,7 +3266,7 @@
     "Photo checks re-recorded through the solved cameras"
    ],
    "features": [
-    "main_pool_lawn.json:lawn-pink-paths",
+    "ground_plan_main_pool.json:lawn-pink-paths",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:lawn-white-rooms",
     "main_pool_lawn.json:enrique-step-finish"
@@ -3298,7 +3298,7 @@
     "Visible in Inspect with Show details"
    ],
    "features": [
-    "main_pool_lawn.json:lawn-inner-path",
+    "ground_plan_main_pool.json:lawn-inner-path",
     "seafront_fence.json:guillermo-beach-gate",
     "main_pool_lawn.json:lawn-kiosk-plain"
    ],
@@ -3345,6 +3345,35 @@
    ],
    "features": [],
    "dependsOn": [],
+   "status": "done",
+   "owner": "Claude",
+   "notes": "Done 2026-11-14: src/ground-plan.ts (surfaces drawn smooth on the surveyed ground, edges along the same lines, solid edges in collision and on the map, the ground texture painted from the same shapes), data/ground_plan_main_pool.json (the main-pool lawn's paths, inner path and apron moved from main_pool_lawn.json; feature ids now ground_plan_main_pool.json:*), scripts/check_ground_plan.py (schema, evidence, confidence, clearances, overlaps; fails on an unknown finish, a wall onto a lane or an undeclared overlap), docs/SMOOTH_PATHS.md (format and how to add an area). The inner path gained its first edge, the lavender planter of IMG_2600/2601."
+  },
+  {
+   "id": "ground-plan-main-pool",
+   "area": "main-pool",
+   "priority": 2,
+   "kind": "detail",
+   "title": "Main pool: the rest of the ground plan (lawn outline, planted strip, terraces and deck edges)",
+   "photos": [
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2603.jpg",
+    "IMG_2773.jpg",
+    "IMG_2774.jpg",
+    "IMG_2777.jpg"
+   ],
+   "build": "The lawn's paths, inner path and apron are in data/ground_plan_main_pool.json. Trace the rest of the area the same way from the aerial and the photos: the big lawn's outline, the planted strip with palms and loungers by the Guillermo wall (IMG_2765) and its edge, the east path from the toddler pool (the pale line on the aerial), the paving round the kiosk where IMG_2762/2763 show lawn, and the pool deck's outer edge; move the lawn walls, hedge and white rooms (main_pool_lawn.json rooms, hedge) into the plan as edges where they bound a surface.",
+   "avoid": "Do not move the registry pool rings or the kiosk footprint without a measured correction. Leave Walk alone.",
+   "accept": [
+    "check_ground_plan.py passes",
+    "Photo checks recorded",
+    "Visible in Inspect Layout and with Show details"
+   ],
+   "features": [],
+   "dependsOn": [
+    "ground-plan-framework"
+   ],
    "status": "open",
    "owner": null
   },

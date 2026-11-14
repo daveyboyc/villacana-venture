@@ -37,7 +37,8 @@ import {paseoWallCovers, paseoWallOutline} from "./paseo-wall";
 import paseoWall from "../data/paseo_wall.json";
 import seafrontFence from "../data/seafront_fence.json";
 import { seafrontFenceRings } from "./seafront-fence";
-import { lawnGroundRings, lawnSolidRings } from "./main-pool-lawn";
+import { lawnSolidRings } from "./main-pool-lawn";
+import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
 import middlePool from "../data/middle_pool.json";
@@ -235,9 +236,8 @@ async function boot(): Promise<void> {
     const mainPoolRing = skeleton.pools.find((p) => p.id === "main")?.ring;
     if (mainPoolRing) {
       const lawn = el("g", { id: "main-pool-lawn" });
-      for (const ring of lawnGroundRings()) lawn.append(el("path", { d: path(ring), fill: "#c47468", stroke: "#a86858", "stroke-width": 0.08 }));
       for (const ring of lawnSolidRings()) lawn.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#8aa0a6", "stroke-width": 0.04 }));
-      const lawnTitle = el("title", {}); lawnTitle.textContent = "Main-pool lawn paths and walls, estimated from the November photos. The pool stays unfenced."; lawn.append(lawnTitle);
+      const lawnTitle = el("title", {}); lawnTitle.textContent = "Main-pool lawn walls, estimated from the November photos. The pool stays unfenced."; lawn.append(lawnTitle);
       seafront.append(lawn);
     }
     const verge=el("path",{id:"barraka-front-verge",d:path(vergeRing),fill:"#8c9a5b","fill-opacity":.85,stroke:"#5d6b3a","stroke-width":.15});
@@ -248,6 +248,16 @@ async function boot(): Promise<void> {
     const planterTitle=el("title",{});planterTitle.textContent=`${barrakaSign.name} · estimated position; marker, not footprint`;planter.append(planterTitle);seafront.append(planter);
   }
   world.append(seafront);
+  // The ground plan (docs/SMOOTH_PATHS.md): traced paths, patios and green spaces with their edges.
+  const plan = el("g", { id: "ground-plan" });
+  for (const b of groundSurfaces) for (const poly of b.polys) {
+    const d = poly.map((ring) => path(ring)).join(" ");
+    const shape = el("path", { d, fill: FINISHES[b.surface.finish].colour, "fill-rule": "evenodd", stroke: "#8a6a5a", "stroke-width": 0.05 });
+    const title = el("title", {}); title.textContent = `${b.surface.name} (${b.surface.finish})`; shape.append(title); plan.append(shape);
+  }
+  for (const e of groundEdges()) if (!EDGES[e.kind].solid) for (const run of e.runs) plan.append(el("polyline", { points: run.map((p) => p.join(",")).join(" "), fill: "none", stroke: EDGES[e.kind].colour, "stroke-width": e.width }));
+  for (const ring of groundPlanSolidRings()) plan.append(el("path", { d: path(ring), fill: "#f4f0e6", stroke: "#6d6a5f", "stroke-width": 0.03 }));
+  world.append(plan);
 
   // Traced open ground: the car park, its bays and planters.
   const areaFill: Record<string, string> = { car_park: "#b9b4ab", planter: "#6ea854" };

@@ -1,0 +1,188 @@
+{
+  "about": "Ground plan for the main-pool area (docs/SMOOTH_PATHS.md, drawn by src/ground-plan.ts, checked by scripts/check_ground_plan.py). Paths are centrelines with a width; patios, aprons and green spaces are outlines. Each surface has a finish, evidence and what bounds it (edges). World metres: x east, z south, the frame of public/map/skeleton.json. The traced points are the data; the drawing smooths them.",
+  "area": "main-pool",
+  "trust": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
+  "surfaces": [
+    {
+      "id": "lawn-pink-paths",
+      "name": "Pink resin paths across the main-pool lawn",
+      "kind": "path",
+      "finish": "pink-resin",
+      "width": 2.4,
+      "lines": [
+        [
+          [
+            -5.3,
+            133.0
+          ],
+          [
+            -6.5,
+            130.2
+          ],
+          [
+            -9.0,
+            125.6
+          ],
+          [
+            -13.0,
+            119.2
+          ],
+          [
+            -17.0,
+            112.8
+          ],
+          [
+            -20.2,
+            107.6
+          ],
+          [
+            -21.4,
+            105.6
+          ]
+        ],
+        [
+          [
+            -6.32,
+            130.61
+          ],
+          [
+            -4.2,
+            129.6
+          ],
+          [
+            -2.6,
+            129.2
+          ]
+        ],
+        [
+          [
+            -7.24,
+            128.83
+          ],
+          [
+            -8.3,
+            129.4
+          ],
+          [
+            -9.3,
+            130.0
+          ]
+        ]
+      ],
+      "ends": [
+        [
+          "square",
+          "square"
+        ],
+        [
+          "square",
+          "round"
+        ],
+        [
+          "square",
+          "square"
+        ]
+      ],
+      "joins": 1.2,
+      "note": "2026-11-13, against the georeferenced aerial (public/map/ground.jpg, Esri): the main path is the 2.5 m brown strip running straight from the gate to the pool's south-west corner, with the narrower planted strip, loungers and palms on its left by the Guillermo wall and the big lawn on its right, as IMG_2764, IMG_2765 and IMG_2603 show; the model's line ran 5-6 m further east through the middle of the lawn and is moved onto the strip (read to about 1 m on the aerial, whose registration is good to 1-2 m). IMG_2764 shows the branch to the shower and hedge leaving at the camera's feet, and IMG_2603 a second branch forking left about 2 m ahead towards the white wall runs (IMG_2763 stands on it); its far end is estimated and stops short of the strelitzia corner.",
+      "evidence": [
+        "IMG_2603.jpg",
+        "IMG_2759.jpg",
+        "IMG_2761.jpg",
+        "IMG_2762.jpg",
+        "IMG_2763.jpg",
+        "IMG_2764.jpg",
+        "IMG_2765.jpg"
+      ],
+      "edges": []
+    },
+    {
+      "id": "lawn-inner-path",
+      "name": "Inner tiled path from the foot of Calle Guillermo to the beach gate",
+      "kind": "path",
+      "finish": "terracotta-squares",
+      "width": 1.6,
+      "lines": [
+        [
+          [
+            -12.2,
+            137.4
+          ],
+          [
+            -10.0,
+            136.9
+          ],
+          [
+            -8.0,
+            135.3
+          ],
+          [
+            -6.6,
+            134.0
+          ]
+        ]
+      ],
+      "joins": 0.8,
+      "note": "IMG_2600 and IMG_2601, from the foot of Calle Guillermo, show a tiled path running down east-south-east between lavender and a white wall to a lawn strip, a hedge and the mesh fence; IMG_2763 shows flagstones curving between the hedge and the round white wall, and IMG_2602 the flagstones running on to the gate. It joins the lane's end to the apron inside the boundary (Dave, 2026-11-13: the only way out is the gate). Line by eye between the round wall and the fence, about 1.6 m wide.",
+      "evidence": [
+        "IMG_2600.jpg",
+        "IMG_2601.jpg",
+        "IMG_2602.jpg",
+        "IMG_2763.jpg"
+      ],
+      "edges": [
+        {
+          "kind": "planter-wall",
+          "side": "left",
+          "height": 0.35,
+          "planting": "lavender",
+          "note": "IMG_2600 shows lavender in a bed edged by a low white wall along the kiosk side of the path, and IMG_2601 a white planter with lavender further down; height by eye, and which stretch each bed covers is estimated (photo request guillermo-foot-closure).",
+          "evidence": [
+            "IMG_2600.jpg",
+            "IMG_2601.jpg"
+          ],
+          "span": [
+            1.5,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lawn-flagstone-apron",
+      "name": "Flagstone apron in front of the lawn's arched gate",
+      "kind": "apron",
+      "finish": "flagstone",
+      "outline": [
+        [
+          -6.7,
+          134.83
+        ],
+        [
+          -3.76,
+          131.85
+        ],
+        [
+          -5.6,
+          130.59
+        ],
+        [
+          -8.13,
+          132.87
+        ]
+      ],
+      "corners": 0.6,
+      "above": [
+        "lawn-pink-paths",
+        "lawn-inner-path"
+      ],
+      "note": "Redrawn 2026-11-12 inland of the gateway: the earlier ring straddled the wall line. Extent by eye from IMG_2759 and IMG_2602.",
+      "evidence": [
+        "IMG_2602.jpg",
+        "IMG_2759.jpg",
+        "IMG_2763.jpg"
+      ],
+      "edges": []
+    }
+  ]
+}
