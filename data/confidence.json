@@ -397,7 +397,7 @@
   },
   "seafront_fence.json:main-pool-lawn-railing": {
    "level": "estimated",
-   "why": "Dark green bars and square posts on a sandstone plinth read from close photos (IMG_2604, 2609, 2610, 2630, 2631). IMG_2760 shows the fence at the far edge of the open lawn, so the line follows the path around the private lawn (aerial) instead of a chord across the grass. Heights by eye (plinth probably nearer 0.5 m than the modelled 0.3 m)."
+   "why": "Dark green bars on a sandstone plinth (IMG_2604, 2609, 2610, 2630, 2631). The run toward Barraka is the lawn edge of the widened pink terrace, 2 to 3 m inland of the old line that sat on the beach side of that paving. The stone rises toward the restaurant, by eye from IMG_2610. Not a surveyed fit."
   },
   "paseo_details.json:paseo-white-lamp-3": {
    "level": "estimated",
@@ -613,6 +613,13 @@
     "IMG_2630.jpg"
    ],
    "why": "Registry floors 1 (3 m) and the laser survey roof 2.9-3.7 m disagree with the two-level wall seen in the photos (about 4.5-5 m); the building mass is unchanged and none of the openings, awnings or lettering are modelled until the height is settled (task barraka-facade)."
+  },
+  {
+   "id": "gap:barraka-beach-pergola",
+   "name": "White framed shelter on the sand beside Barraka's deck",
+   "at": [22.0, 124.0],
+   "photos": ["IMG_2631.jpg"],
+   "why": "IMG_2631, from under the awning, shows a white timber frame with a roof on the sand west of the lounge. One oblique view does not fix its footprint, so it is not built."
   },
   {
    "id": "gap:barraka-cooking-shelter",

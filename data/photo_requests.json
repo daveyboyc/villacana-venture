@@ -710,6 +710,42 @@
       "radius": 6,
       "since": "2026-11-14",
       "status": "open"
+    },
+    {
+      "id": "barraka-deck-from-sand",
+      "area": "barraka-beach",
+      "at": [
+        40.0,
+        132.0
+      ],
+      "look": [
+        36.0,
+        120.0
+      ],
+      "ask": "From the sand in front of Barraka, the whole timber deck in one frame: the white rail, the plank floor, how far it comes out from the wall, and where it meets the sand. Then one from each end along the rail.",
+      "why": "The deck outline is the tan rectangle on the aerial, about 6.5 m out, and IMG_2606 shows the planks and rail from a seat. Nothing shows the whole deck square-on, so the depth is good to about 1 m.",
+      "priority": 1,
+      "radius": 8,
+      "since": "2026-11-14",
+      "status": "open"
+    },
+    {
+      "id": "barraka-approach-wall",
+      "area": "barraka-beach",
+      "at": [
+        6.0,
+        116.0
+      ],
+      "look": [
+        12.0,
+        112.0
+      ],
+      "ask": "From the lawn, the sandstone wall and green bars that lead to Barraka, with a person beside the wall for height. Then walk the paving and photograph the same wall from the terrace side, including where it curves at the restaurant.",
+      "why": "The line is the lawn edge on the aerial. IMG_2610 and IMG_2630 show the stone and the bars at the restaurant end only, so the height change along the run is by eye.",
+      "priority": 1,
+      "radius": 8,
+      "since": "2026-11-14",
+      "status": "open"
     }
   ]
 }

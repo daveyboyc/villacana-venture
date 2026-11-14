@@ -1888,19 +1888,51 @@
     "estimated": 11,
     "inferred": 1,
     "registry": 0,
-    "gaps": 5
+    "gaps": 6
    },
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
     "Photos: 57, 55 placed; no camera solved.",
-    "How sure: 0 photographed, 11 estimated, 1 inferred, 5 known gaps.",
+    "How sure: 0 photographed, 11 estimated, 1 inferred, 6 known gaps.",
     "Placement: 0 of 12 features verified, 4 open discrepancies."
    ],
    "light": {
-    "colour": "amber",
-    "headline": "Photos in: 1 photo request answered, waiting for review, 5 build tasks open, 4 open discrepancies",
+    "colour": "red",
+    "headline": "Photos needed: 2 spots",
     "requests": [
+     {
+      "id": "barraka-approach-wall",
+      "at": [
+       6.0,
+       116.0
+      ],
+      "look": [
+       12.0,
+       112.0
+      ],
+      "ask": "From the lawn, the sandstone wall and green bars that lead to Barraka, with a person beside the wall for height. Then walk the paving and photograph the same wall from the terrace side, including where it curves at the restaurant.",
+      "why": "The line is the lawn edge on the aerial. IMG_2610 and IMG_2630 show the stone and the bars at the restaurant end only, so the height change along the run is by eye.",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "barraka-deck-from-sand",
+      "at": [
+       40.0,
+       132.0
+      ],
+      "look": [
+       36.0,
+       120.0
+      ],
+      "ask": "From the sand in front of Barraka, the whole timber deck in one frame: the white rail, the plank floor, how far it comes out from the wall, and where it meets the sand. Then one from each end along the rail.",
+      "why": "The deck outline is the tan rectangle on the aerial, about 6.5 m out, and IMG_2606 shows the planks and rail from a seat. Nothing shows the whole deck square-on, so the depth is good to about 1 m.",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
      {
       "id": "beach-verge",
       "at": [
@@ -2285,19 +2317,19 @@
     "estimated": 129,
     "inferred": 13,
     "registry": 233,
-    "gaps": 24
+    "gaps": 25
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 59 photographed, 129 estimated, 13 inferred, 24 known gaps.",
+    "How sure: 59 photographed, 129 estimated, 13 inferred, 25 known gaps.",
     "Placement: 0 of 434 features verified, 40 open discrepancies."
    ],
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 29 spots",
+    "headline": "Photos needed: 31 spots",
     "requests": [
      {
       "id": "alberto",
@@ -2311,6 +2343,38 @@
       ],
       "ask": "Calle Alberto: one photo along the lane from each end.",
       "why": "no photos at all in the north lanes",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "barraka-approach-wall",
+      "at": [
+       6.0,
+       116.0
+      ],
+      "look": [
+       12.0,
+       112.0
+      ],
+      "ask": "From the lawn, the sandstone wall and green bars that lead to Barraka, with a person beside the wall for height. Then walk the paving and photograph the same wall from the terrace side, including where it curves at the restaurant.",
+      "why": "The line is the lawn edge on the aerial. IMG_2610 and IMG_2630 show the stone and the bars at the restaurant end only, so the height change along the run is by eye.",
+      "priority": 1,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "barraka-deck-from-sand",
+      "at": [
+       40.0,
+       132.0
+      ],
+      "look": [
+       36.0,
+       120.0
+      ],
+      "ask": "From the sand in front of Barraka, the whole timber deck in one frame: the white rail, the plank floor, how far it comes out from the wall, and where it meets the sand. Then one from each end along the rail.",
+      "why": "The deck outline is the tan rectangle on the aerial, about 6.5 m out, and IMG_2606 shows the planks and rail from a seat. Nothing shows the whole deck square-on, so the depth is good to about 1 m.",
       "priority": 1,
       "state": "open",
       "photos": []

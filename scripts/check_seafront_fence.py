@@ -53,11 +53,13 @@ half = gate['opening'] / 2 + gate['pier']
 piers = [(gate['at'][0] + gate['along'][0] * s * (gate['opening'] / 2 + gate['pier'] / 2),
           gate['at'][1] + gate['along'][1] * s * (gate['opening'] / 2 + gate['pier'] / 2)) for s in (-1, 1)]
 
-# Off the paving, beside it: every piece stands just inland of the 3 m paseo.
+# Off the paving, beside it. The gate walls stay within 2.2 m of the paseo centre. The railing
+# follows the lawn edge, and that paving widens to about 5 m toward Barraka (IMG_2610, IMG_2630).
 for f in pieces:
+    limit = 5.2 if f['id'] == 'main-pool-lawn-railing' else 2.2
     for p in along(f['points']):
         dist = to_line(p, paseo)
-        assert skeleton['seafront']['paseo']['width'] / 2 + 0.1 <= dist - f['thickness'] / 2 and dist < 2.2, f"{f['id']} not beside the paseo at {p}"
+        assert skeleton['seafront']['paseo']['width'] / 2 + 0.1 <= dist - f['thickness'] / 2 and dist < limit, f"{f['id']} not beside the paseo at {p}"
 # Sandstone wall end, corner wall, the open foot of Calle Guillermo, the wall down the ramp, gateway, short wall, railings.
 wall_end = turned(paseo_wall['face'][-1])
 assert math.dist(d['wall']['points'][0], wall_end) < 0.6, 'Corner wall does not start where the sandstone wall ends'
@@ -79,7 +81,7 @@ assert gate['opening'] >= 2 * PLAYER + 0.4 and gate['spring'] + gate['opening'] 
 # Railings follow the path around the lawn and end on its east edge, beside Barraka's west corner, not on a chord across the grass.
 end = (d['railing']['points'][-1][0] * math.cos(angle) + d['railing']['points'][-1][1] * math.sin(angle),
        -d['railing']['points'][-1][0] * math.sin(angle) + d['railing']['points'][-1][1] * math.cos(angle))
-assert math.dist(end, (15.76, 108.72)) < 0.4, 'Railings do not reach the lawn edge beside Barraka'
+assert math.dist(end, (13.78, 108.21)) < 0.4, 'Railings do not reach the lawn edge beside Barraka'
 houses = [[turned(p) for p in b['ring']] for b in skeleton['buildings'] if b['floors'] > 0 and not b.get('passage')]
 pools = [[turned(p) for p in p_['ring']] for p_ in skeleton['pools']]
 roads = [[turned(p) for p in r['points']] for r in skeleton['boundaryReference']['roads']]

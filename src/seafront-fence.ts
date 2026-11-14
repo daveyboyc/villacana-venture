@@ -43,17 +43,24 @@ export function addSeafrontFence(scene: THREE.Scene, groundAt: (x: number, z: nu
   for (const f of [pieces[0], pieces[1], pieces[2]]) f.line.slice(1).forEach((b, i) => { const a = f.line[i]; beam(a, b, base(a, b) - 0.2, f.height + 0.2, f.thickness, white); });
   // Railings: a low sandstone plinth, square posts, a top rail and close vertical bars between them, all dark green.
   const rail = pieces[3], bars: THREE.Matrix4[] = [];
+  const railLen = rail.line.slice(1).reduce((n, b, i) => n + Math.hypot(b[0] - rail.line[i][0], b[1] - rail.line[i][1]), 0);
+  let walked = 0;
   rail.line.slice(1).forEach((b, i) => {
     const a = rail.line[i], y = base(a, b), length = Math.hypot(b[0] - a[0], b[1] - a[1]), yaw = -Math.atan2(b[1] - a[1], b[0] - a[0]);
-    beam(a, b, y - 0.2, data.railing.plinth + 0.2, rail.thickness, plinth);
-    beam(a, b, y + rail.height - 0.05, 0.05, 0.08, paint);
+    // The stone wall is low by the gate and about waist height where the terrace widens at Barraka (IMG_2610).
+    const t = railLen ? (walked + length / 2) / railLen : 1;
+    walked += length;
+    const plinthH = data.railing.plinth + (data.railing.plinthAtEnd - data.railing.plinth) * t;
+    const top = data.railing.height + (data.railing.heightAtEnd - data.railing.height) * t;
+    beam(a, b, y - 0.2, plinthH + 0.2, rail.thickness, plinth);
+    beam(a, b, y + top - 0.05, 0.05, 0.08, paint);
     for (let s = 0; s <= length; s += data.railing.post) {
       const p: Vec2 = [a[0] + (b[0] - a[0]) * s / length, a[1] + (b[1] - a[1]) * s / length];
-      beam([p[0] - (b[0] - a[0]) / length * 0.06, p[1] - (b[1] - a[1]) / length * 0.06], [p[0] + (b[0] - a[0]) / length * 0.06, p[1] + (b[1] - a[1]) / length * 0.06], y, rail.height + 0.05, 0.12, paint);
+      beam([p[0] - (b[0] - a[0]) / length * 0.06, p[1] - (b[1] - a[1]) / length * 0.06], [p[0] + (b[0] - a[0]) / length * 0.06, p[1] + (b[1] - a[1]) / length * 0.06], y, top + 0.05, 0.12, paint);
     }
     for (let s = data.railing.bar / 2; s < length; s += data.railing.bar) {
-      const m = new THREE.Matrix4().compose(new THREE.Vector3(a[0] + (b[0] - a[0]) * s / length, y + (data.railing.plinth + rail.height) / 2, a[1] + (b[1] - a[1]) * s / length),
-        new THREE.Quaternion().setFromEuler(new THREE.Euler(0, yaw, 0)), new THREE.Vector3(1, rail.height - data.railing.plinth, 1));
+      const m = new THREE.Matrix4().compose(new THREE.Vector3(a[0] + (b[0] - a[0]) * s / length, y + (plinthH + top) / 2, a[1] + (b[1] - a[1]) * s / length),
+        new THREE.Quaternion().setFromEuler(new THREE.Euler(0, yaw, 0)), new THREE.Vector3(1, top - plinthH, 1));
       bars.push(m);
     }
   });

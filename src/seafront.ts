@@ -9,6 +9,20 @@ function flat(scene: THREE.Scene, ring: Vec2[], color: string, height: number, n
   mesh.position.y = height; mesh.receiveShadow = true; mesh.userData.noDrape = noDrape; scene.add(mesh);
 }
 
+/** Weathered deck boards, running across the terrace. Schematic, from IMG_2606. */
+function plankTexture(): THREE.CanvasTexture {
+  const c = document.createElement("canvas"); c.width = 256; c.height = 128;
+  const g = c.getContext("2d")!;
+  g.fillStyle = "#b08968"; g.fillRect(0, 0, 256, 128);
+  for (let x = 0; x < 256; x += 32) {
+    g.fillStyle = x % 64 ? "#c4a27a" : "#9a7352";
+    g.fillRect(x + 1, 0, 28, 128);
+    g.strokeStyle = "#6e5340"; g.lineWidth = 2; g.strokeRect(x + 1, 0, 28, 128);
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(0.35, 0.35);
+  return t;
+}
+
 function outline(scene: THREE.Scene, points: Vec2[], color: string, height: number, closed = false, noDrape = false): void {
   const line = new THREE.Line(new THREE.BufferGeometry().setFromPoints((closed ? [...points, points[0]] : points).map(([x, z]) => new THREE.Vector3(x, height, z))), new THREE.LineBasicMaterial({ color }));
   line.userData.noDrape = noDrape; scene.add(line);
@@ -37,7 +51,9 @@ export function addSeafrontOutlines(scene: THREE.Scene, sf: Seafront, restaurant
   // The restaurant stands on the sand, at whatever height the beach has there.
   // That height is final: the survey grid is not added again, or the pad sinks.
   const c = centroid(sf.restaurant.ring), base = seaside ? seaside.y(c.x, c.z) : 0;
-  flat(scene,sf.restaurant.terrace,"#b89c7b",base+0.22, !!seaside);
-  outline(scene,sf.restaurant.terrace,"#784f3b",base+0.24,true, !!seaside);
+  // Timber deck along the seaward wall (IMG_2606): weathered planks, not the old pad that ran out over the sand.
+  const deck = new THREE.Mesh(new THREE.ShapeGeometry(new THREE.Shape(sf.restaurant.terrace.map(([x, z]) => new THREE.Vector2(x, -z)))).rotateX(-Math.PI / 2), new THREE.MeshStandardMaterial({ map: plankTexture(), roughness: 0.9 }));
+  deck.position.y = base + 0.28; deck.receiveShadow = true; deck.userData.noDrape = !!seaside; deck.name = "barraka-deck"; scene.add(deck);
+  outline(scene,sf.restaurant.terrace,"#6d5a42",base+0.3,true, !!seaside);
   // The parapet, clerestory, awnings and thatched eaves are the building itself (src/barraka-facade.ts).
 }
