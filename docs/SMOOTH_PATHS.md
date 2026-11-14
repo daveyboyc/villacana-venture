@@ -55,7 +55,7 @@ are `ground_plan_<area>.json:<surface id>`. World metres: x east, z south.
   "surfaces": [
     { "id": "lawn-pink-paths", "name": "...", "kind": "path", "finish": "pink-resin",
       "width": 2.4, "lines": [[[x, z], ...], ...], "ends": [["square", "round"], ...], "joins": 1.2,
-      "note": "what the photos show and what is estimated", "evidence": ["IMG_2764.jpg", ...],
+      "note": "what the photos show and what is estimated", "evidence": ["IMG_2764.jpg", ...], "traced": "map:ground",
       "edges": [ { "kind": "planter-wall", "side": "left", "span": [1.5, 8], "height": 0.35,
                    "planting": "lavender", "openings": [{ "at": 3.0, "width": 1.2 }],
                    "note": "...", "evidence": ["IMG_2600.jpg"] } ] },
@@ -69,16 +69,29 @@ are `ground_plan_<area>.json:<surface id>`. World metres: x east, z south.
   `joins`), or `patio`, `apron`, `green` (an outline; corners rounded by `corners` metres except the
   vertex indices in `hard`). `raise` lifts a raised patio's floor.
 - **finish** (`FINISHES` in `src/ground-plan.ts`): `pink-resin`, `terracotta-squares`, `flagstone`,
-  `octagon-tiles`, `concrete`, `gravel`, `planted-bed`, and `lawn` (drawn by the ground texture, not a
-  mesh). Green spaces and planted beds are painted into the ground texture, so the raster's wobbly class
+  `octagon-tiles`, `concrete`, `gravel`, `planted-bed`, and two texture-only finishes drawn by the ground
+  texture, not a mesh: `lawn`, and `pool-deck` (the deck's stone, for a pool without a measured deck). Green spaces and planted beds are painted into the ground texture, so the raster's wobbly class
   edge gives way to the traced one; paved surfaces are meshes over it.
 - **edges** (`EDGES`): `none`, `kerb`, `brick-border` (flush, not solid), `planter-wall`, `wall`,
   `hedge`, `fence` (solid: collision and map walls). On a path an edge runs along `side` (`left` of the
   direction of travel, `right` or `both`), over `span` metres if given; on an outline over vertices
   `from`..`to`. `openings` leave gaps; edges with planting carry it on top in Show details. Clipped
   hedge leaves show with Show details, a plain hedge mass in Layout.
-- **above**: surfaces this one deliberately lies over (an apron over a path's end). Any other overlap
-  between finishes fails the check.
+- **evidence** lists catalogued photos; `traced: "map:ground"` says the shape was traced from the georeferenced
+  aerial (a surface seen only on the aerial has no photo evidence and is graded `inferred`).
+- **above**: surfaces this one deliberately lies over (an apron over a path's end, a path over the lawn).
+  Any other overlap between finishes fails the check. Texture painting follows the same order.
+- Edges on an outline stand just outside it (offset by half their width), so a hedge bounds a lawn
+  instead of covering its rim.
+
+### Tracing from the aerial
+
+`scripts/trace_ground.py lawn|pale|warm --within "x,z x,z ..." --overlay out.png` classifies the
+georeferenced aerial inside a rough polygon, cleans the mask, keeps the largest region and prints its
+outline in world metres, simplified (default 0.4 m). Draw the polygon a little outside the area and
+close it along an edge you already have (a path's edge, a wall). The aerial is 0.24 m a pixel and
+registered to 1-2 m; where it and the photos disagree (a brown band that the photos show as lawn),
+the photos win and the note says so. Registry footprints win over the aerial too.
 
 `scripts/check_ground_plan.py` checks every file: kinds and finishes known, evidence that exists, a
 confidence entry for every surface, paths without hairpins, simple outlines, nothing in pool water or
@@ -104,6 +117,9 @@ fit, and no undeclared overlaps.
 - **Framework (done, 14 Nov):** `src/ground-plan.ts`, `data/ground_plan_main_pool.json`,
   `scripts/check_ground_plan.py`. The main-pool lawn's paths, inner path and apron moved onto it, and the
   inner path gained its first edge (the lavender planter IMG_2600/2601 show).
+- **Main pool (14 Nov):** the big lawn traced from the aerial, with the hedge along the sea railing as
+  its edge; the lawn strip by the Guillermo planter; a texture-only deck band for a clean deck edge; and
+  the pale north-east path (inferred).
 - **Next:** one task per area,
   `ground-plan-<area>`, traces paths, patios and green spaces with their edges and brings the area's
   existing patio, wall and planter modules under it. Order: main pool, north pool, middle pool, south

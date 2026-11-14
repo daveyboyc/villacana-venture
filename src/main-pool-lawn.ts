@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import layout from "../data/main_pool.json";
 import data from "../data/main_pool_lawn.json";
-import { clippedHedge, looseShrub } from "./clipped-plants";
+import { looseShrub } from "./clipped-plants";
 import { centroid, closestOnSegment, pointInRing } from "./geom";
 import { plasterMaterial } from "./materials";
 import { accessSection, LOWER_POOL_Y, poolGroundY, poolLevelPoint } from "./pool-levels";
@@ -301,17 +301,7 @@ export function addMainPoolLawn(scene: THREE.Scene, mainRing: Vec2[], toddlerRin
     }
     const head = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 6), new THREE.MeshStandardMaterial({ color: "#d5d8dc", metalness: 0.8, roughness: 0.25 }));
     head.position.set(showerAt[0], on(showerAt) + 1.7, showerAt[1] + 0.12); head.name = "lawn-shower"; group.add(head);
-    const [h0, h1] = data.hedge.points as Vec2[];
-    const hlen = Math.hypot(h1[0] - h0[0], h1[1] - h0[1]);
-    const pieces = Math.ceil(hlen / 1.3);
-    for (let i = 0; i < pieces; i++) {
-      const t = (i + 0.5) / pieces;
-      const hedge = clippedHedge({ length: hlen / pieces + 0.05, depth: 0.55, height: 0.7, seed: 30 + i, clip: 4.2, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"] });
-      const hx = h0[0] + (h1[0] - h0[0]) * t, hz = h0[1] + (h1[1] - h0[1]) * t;
-      hedge.position.set(hx, ground(hx, hz), hz);
-      hedge.rotation.y = Math.atan2(h1[0] - h0[0], h1[1] - h0[1]);
-      hedge.name = "lawn-sea-hedge"; group.add(hedge);
-    }
+    // The hedge along the sea railing is the main lawn's edge in the ground plan (data/ground_plan_main_pool.json).
     for (const plant of data.rooms.plants) {
       const at = plant.at as Vec2;
       if (plant.kind === "strelitzia") {

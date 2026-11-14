@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 430,
-  "photosCitedByModel": 194,
-  "modelFeaturesWithPhotoCitations": 176
+  "features": 434,
+  "photosCitedByModel": 195,
+  "modelFeaturesWithPhotoCitations": 179
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -11984,7 +11984,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "ground_plan_main_pool.json:main-lawn",
+    "ground_plan_main_pool.json:lawn-strip-guillermo"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -17.9,
@@ -12150,6 +12153,7 @@
    "inViewCandidates": [],
    "citedBy": [
     "main_pool_lawn.json:lawn-bollards-bins",
+    "ground_plan_main_pool.json:main-lawn",
     "ground_plan_main_pool.json:lawn-pink-paths"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -16978,7 +16982,8 @@
    "citedBy": [
     "seafront_fence.json:guillermo-beach-gate",
     "seafront_fence.json:guillermo-ramp-wall",
-    "seafront_fence.json:main-pool-lawn-railing"
+    "seafront_fence.json:main-pool-lawn-railing",
+    "ground_plan_main_pool.json:main-lawn"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -17001,6 +17006,7 @@
    "citedBy": [
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:lawn-sea-hedge",
+    "ground_plan_main_pool.json:main-lawn",
     "ground_plan_main_pool.json:lawn-pink-paths"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -17105,6 +17111,8 @@
     "jorge_lane.json:jorge-lane-lawn-palm",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:main-pool-deck-tiles",
+    "ground_plan_main_pool.json:main-pool-deck-band",
+    "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -17155,6 +17163,8 @@
     "jorge_lane.json:jorge-lane-lawn-palm",
     "main_pool_lawn.json:lawn-bollards-bins",
     "main_pool_lawn.json:lawn-white-rooms",
+    "ground_plan_main_pool.json:main-pool-deck-band",
+    "ground_plan_main_pool.json:lawn-strip-guillermo",
     "ground_plan_main_pool.json:lawn-pink-paths"
    ],
    "geometryReview": "No recorded photo-to-model comparison",

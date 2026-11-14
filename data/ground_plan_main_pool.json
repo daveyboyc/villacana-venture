@@ -4,6 +4,324 @@
   "trust": "November ground photos of the big-pool lawn and the steps to Enrique's. Lines are estimated from the camera pins and headings, good to about 4 m; widths and heights are read by eye. The glass fence those photos show is left out (Dave, 2026-10-11, confirmed 2026-11-12).",
   "surfaces": [
     {
+      "id": "main-pool-deck-band",
+      "name": "Main pool deck: its outer edge towards the lawn",
+      "kind": "path",
+      "finish": "pool-deck",
+      "width": 2.0,
+      "lines": [
+        [
+          [
+            -15.16,
+            106.21
+          ],
+          [
+            -9.52,
+            102.47
+          ],
+          [
+            -3.97,
+            95.47
+          ],
+          [
+            0.11,
+            94.13
+          ],
+          [
+            0.94,
+            93.57
+          ],
+          [
+            0.8,
+            92.44
+          ],
+          [
+            -2.63,
+            88.73
+          ],
+          [
+            -2.47,
+            85.26
+          ],
+          [
+            -2.9,
+            82.67
+          ],
+          [
+            -4.4,
+            80.31
+          ],
+          [
+            -8.17,
+            77.02
+          ]
+        ]
+      ],
+      "note": "Texture only: a 2 m band of the deck's stone along the lawn's traced edge, 0.1 m under it, traced from the aerial (scripts/trace_ground.py lawn, 2026-11-14), so the ground texture's deck meets the lawn along a clean curve instead of the raster's 25 cm cells. The deck itself is not traced: the main pool has no measured deck outline. Edge good to about a metre.",
+      "evidence": [
+        "IMG_2764.jpg",
+        "IMG_2765.jpg"
+      ],
+      "edges": [],
+      "traced": "map:ground"
+    },
+    {
+      "id": "main-lawn",
+      "name": "Main pool lawn",
+      "kind": "green",
+      "finish": "lawn",
+      "outline": [
+        [
+          -5.43,
+          129.66
+        ],
+        [
+          -7.97,
+          124.99
+        ],
+        [
+          -11.98,
+          118.56
+        ],
+        [
+          -15.98,
+          112.17
+        ],
+        [
+          -19.18,
+          106.97
+        ],
+        [
+          -14.66,
+          106.96
+        ],
+        [
+          -8.9,
+          103.12
+        ],
+        [
+          -3.38,
+          96.15
+        ],
+        [
+          0.47,
+          94.95
+        ],
+        [
+          1.79,
+          93.87
+        ],
+        [
+          1.55,
+          91.95
+        ],
+        [
+          -1.81,
+          88.35
+        ],
+        [
+          -1.57,
+          85.22
+        ],
+        [
+          -2.06,
+          82.34
+        ],
+        [
+          -3.74,
+          79.7
+        ],
+        [
+          -7.58,
+          76.34
+        ],
+        [
+          -8.06,
+          74.9
+        ],
+        [
+          -7.22,
+          73.34
+        ],
+        [
+          -5.3,
+          72.6
+        ],
+        [
+          -0.8,
+          76.2
+        ],
+        [
+          6.6,
+          83.4
+        ],
+        [
+          9.5,
+          80.6
+        ],
+        [
+          12.47,
+          83.9
+        ],
+        [
+          24.6,
+          96.51
+        ],
+        [
+          22.8,
+          99.03
+        ],
+        [
+          19.92,
+          100.23
+        ],
+        [
+          17.52,
+          103.36
+        ],
+        [
+          14.52,
+          105.4
+        ],
+        [
+          11.39,
+          112.6
+        ],
+        [
+          8.27,
+          117.65
+        ],
+        [
+          3.83,
+          122.09
+        ],
+        [
+          1.19,
+          123.53
+        ],
+        [
+          -0.01,
+          125.21
+        ],
+        [
+          -3.38,
+          126.41
+        ]
+      ],
+      "corners": 0.8,
+      "above": [
+        "main-pool-deck-band"
+      ],
+      "note": "The big lawn between the pool deck, the Picasso-side wall, the hedge along the sea railing and the pink path, traced from the georeferenced aerial's green (scripts/trace_ground.py lawn, closing 0.7 m, simplified to 0.35 m; 2026-11-14); its west side is the pink path's east edge. IMG_2760, IMG_2761 and IMG_2603 show open lawn to the hedge. Edges good to about a metre (aerial 0.24 m a pixel, registered to 1-2 m). The lawn stops 0.2 m off the one-storey registry building along its north-east side (6364501UF1366S_part3), whose footprint the aerial's green reaches under.",
+      "evidence": [
+        "IMG_2760.jpg",
+        "IMG_2761.jpg",
+        "IMG_2603.jpg",
+        "IMG_2598.jpg"
+      ],
+      "edges": [
+        {
+          "kind": "hedge",
+          "from": 23,
+          "to": 33,
+          "height": 0.8,
+          "width": 0.7,
+          "note": "A clipped hedge runs along the inland side of the sea railing the whole way from the gate to Barraka's corner (IMG_2760 and IMG_2598 look along it; IMG_2761 and IMG_2763 show it close by the gate); the aerial shows the dark row between the lawn and the railing. Height and width by eye.",
+          "evidence": [
+            "IMG_2760.jpg",
+            "IMG_2598.jpg",
+            "IMG_2761.jpg",
+            "IMG_2763.jpg"
+          ]
+        }
+      ],
+      "traced": "map:ground"
+    },
+    {
+      "id": "lawn-strip-guillermo",
+      "name": "Lawn strip between the pink path and the Guillermo planter",
+      "kind": "green",
+      "finish": "lawn",
+      "outline": [
+        [
+          -10.03,
+          126.21
+        ],
+        [
+          -14.02,
+          119.84
+        ],
+        [
+          -18.02,
+          113.43
+        ],
+        [
+          -21.22,
+          108.23
+        ],
+        [
+          -22.43,
+          106.22
+        ],
+        [
+          -26.7,
+          105.4
+        ],
+        [
+          -30.9,
+          104.3
+        ],
+        [
+          -29.83,
+          106.37
+        ],
+        [
+          -28.33,
+          108.96
+        ],
+        [
+          -26.83,
+          111.56
+        ],
+        [
+          -25.32,
+          114.16
+        ],
+        [
+          -23.82,
+          116.75
+        ],
+        [
+          -22.32,
+          119.35
+        ],
+        [
+          -20.81,
+          121.94
+        ],
+        [
+          -18.6,
+          124.6
+        ],
+        [
+          -15.9,
+          127.4
+        ],
+        [
+          -12.8,
+          127.9
+        ]
+      ],
+      "corners": 0.6,
+      "note": "IMG_2598 (from the planter top) and IMG_2765 show lawn from the lantana planter wall to the pink path, with palms and loungers on it. The aerial shows a brown band beside the path and the loungers' blue; the photos are taken as right and the band as worn or dry grass and palm shadow. Bounded by the modelled planter (data/jorge_lane.json guillermoPlanter), whose wall is its edge already; the south end by the kiosk's white walls is estimated.",
+      "evidence": [
+        "IMG_2598.jpg",
+        "IMG_2765.jpg",
+        "IMG_2764.jpg"
+      ],
+      "edges": []
+    },
+    {
       "id": "lawn-pink-paths",
       "name": "Pink resin paths across the main-pool lawn",
       "kind": "path",
@@ -94,7 +412,12 @@
         "IMG_2764.jpg",
         "IMG_2765.jpg"
       ],
-      "edges": []
+      "edges": [],
+      "above": [
+        "main-lawn",
+        "lawn-strip-guillermo",
+        "main-pool-deck-band"
+      ]
     },
     {
       "id": "lawn-inner-path",
@@ -146,6 +469,9 @@
             8.0
           ]
         }
+      ],
+      "above": [
+        "lawn-strip-guillermo"
       ]
     },
     {
@@ -174,7 +500,8 @@
       "corners": 0.6,
       "above": [
         "lawn-pink-paths",
-        "lawn-inner-path"
+        "lawn-inner-path",
+        "main-lawn"
       ],
       "note": "Redrawn 2026-11-12 inland of the gateway: the earlier ring straddled the wall line. Extent by eye from IMG_2759 and IMG_2602.",
       "evidence": [
@@ -183,6 +510,55 @@
         "IMG_2763.jpg"
       ],
       "edges": []
+    },
+    {
+      "id": "lawn-east-path",
+      "name": "Narrow pale path across the lawn's north-east corner",
+      "kind": "path",
+      "finish": "concrete",
+      "width": 0.7,
+      "lines": [
+        [
+          [
+            1.4,
+            93.4
+          ],
+          [
+            1.9,
+            90.8
+          ],
+          [
+            3.1,
+            86.9
+          ],
+          [
+            5.0,
+            84.5
+          ],
+          [
+            7.4,
+            83.1
+          ],
+          [
+            9.2,
+            82.4
+          ]
+        ]
+      ],
+      "ends": [
+        [
+          "square",
+          "square"
+        ]
+      ],
+      "note": "Inferred from the aerial only: a pale line about 0.7 m wide runs from the deck's east corner north-east across the lawn to the Picasso-side wall. No ground photo shows it; what it is (a path, stepping stones, a service trench) and where it ends at the wall are unknown (photo request lawn-east-path).",
+      "evidence": [],
+      "edges": [],
+      "above": [
+        "main-lawn",
+        "main-pool-deck-band"
+      ],
+      "traced": "map:ground"
     }
   ]
 }
