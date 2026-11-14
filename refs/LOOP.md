@@ -18,6 +18,7 @@ ready: 2, needs-evidence: 2, needs-source-access: 0, awaiting-review: 0, accepte
 - **map open** `north-pool-ground-boundaries`: A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead. Why: Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.
 - Ready task: `loop-discrepancies` — Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison
 - Ready task: `north-pool-unresolved-plan` — North pool: resolve concealed ground edges, lane widths and remaining roof projections
+- Ready task: `north-pool-station-foreground` — North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view
 - Ready task: `path-network-inventory-north-pool` — North pool: full-source path, tunnel and boundary inventory
 
 ## Middle pool
@@ -221,6 +222,7 @@ ready: 2, needs-evidence: 2, needs-source-access: 0, awaiting-review: 0, accepte
 - Ready task: `ground-plan-south-pool` — South pool: smooth paths, patios and green spaces with their edges and boundaries
 - Ready task: `main-pool-lawn-cameras` — Main pool lawn and Enrique's steps: solve the photo cameras and close what still differs
 - Ready task: `middle-pool-west-path-material` — Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach
+- Ready task: `north-pool-station-foreground` — North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view
 - Ready task: `path-network-inventory-barraka-beach` — Barraka and the beach: full-source path, tunnel and boundary inventory
 - Ready task: `path-network-inventory-dali` — Calle Pintor Dalí: full-source path, tunnel and boundary inventory
 - Ready task: `path-network-inventory-eva` — Calle Eva: full-source path, tunnel and boundary inventory

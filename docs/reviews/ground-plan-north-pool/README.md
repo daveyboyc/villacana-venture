@@ -1,9 +1,10 @@
 # ground-plan-north-pool
 
-- `aerial-lawn-trace.jpg`: `scripts/trace_ground.py lawn` on the north courtyard. The aerial reads the
-  shaded, worn north lawn as not green, so only its south edge is used; the rest is bounded by the
-  crazy-paving path and Calle Isabel.
-- `lawn-top-details.jpg`: Inspect with the lawn round the measured deck and the crazy-paving band.
-- `IMG_2204-after.png`, `IMG_2205-after.png`: through the solved station camera; recorded in
-  `data/photo_checks.json` (the west/south paving continuations and Calle Isabel's surface differ).
-- `IMG_2204-path-projection.jpg`: the re-traced path projected through the solved camera onto the photo (magenta line, yellow traced points).
+- `IMG_2204-ground-projection.jpg`: the ground plan projected back through the solved station camera
+  onto IMG_2204: crazy-paving path (magenta), lawn outline (green), hedge edges (yellow), and the
+  strelitzia, tree and yucca bases (red circles). Lines were traced by casting photo pixels onto the
+  surveyed ground (hedge tops at 0.9 m, the white kerb and paving at ground level).
+- `aerial-lawn-trace.jpg`: the earlier aerial trace. Its south edge followed the hedges, read as grass,
+  3-5 m too far south; superseded by the camera casts.
+- `lawn-top-layout.jpg` / `lawn-top-details.jpg`: Inspect with the finished north-pool ground plan.
+- `IMG_2204/2205/2206-after.png`: renders through the solved camera, recorded in `data/photo_checks.json`.

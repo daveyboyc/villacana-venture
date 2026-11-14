@@ -214,6 +214,13 @@
      "requests": []
     },
     {
+     "id": "north-pool-station-foreground",
+     "title": "North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
      "id": "path-network-inventory-north-pool",
      "title": "North pool: full-source path, tunnel and boundary inventory",
      "priority": 2,
@@ -7603,6 +7610,13 @@
     {
      "id": "middle-pool-west-path-material",
      "title": "Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "north-pool-station-foreground",
+     "title": "North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view",
      "priority": 2,
      "dependencies": [],
      "requests": []

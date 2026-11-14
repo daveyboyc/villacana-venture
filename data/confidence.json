@@ -501,11 +501,11 @@
   },
   "ground_plan_north_pool.json:north-pool-lawn-path": {
    "level": "estimated",
-   "why": "Photo-supported paving; width and plan curve estimated (about 2 m). West side re-traced through the solved IMG_2204 camera (15 Nov); the south stretch behind the hedges is partly seen."
+   "why": "Photo-supported paving. The west side, the south-west branch along the hibiscus hedge and the gap path through the south hedges are cast through the solved IMG_2204 camera (about half a metre). The north stretch keeps the earlier trace against the patio fronts; the camera casts it 1-3 m north (open discrepancy). Width estimated."
   },
   "ground_plan_north_pool.json:north-pool-lawn": {
    "level": "estimated",
-   "why": "IMG_2204 and IMG_2205 show lawn all round the deck; bounded by the path, Calle Isabel and the aerial's south hedge line, good to about a metre. The aerial cannot trace the shaded north lawn."
+   "why": "IMG_2204 and IMG_2205 show lawn all round the deck; its south side is the two hedges cast through the solved camera (good to about half a metre), its north and west sides the crazy-paving path. South of the hedges is not seen."
   },
   "ground_plan_north_pool.json:calle-isabel-crazy-paving": {
    "level": "estimated",
@@ -853,6 +853,18 @@
     "IMG_2762.jpg"
    ],
    "why": "White louvred double doors on the kiosk's lawn side; the kiosk is built plain without them (request kiosk-faces)."
+  },
+  {
+   "id": "gap:north-pool-south-gardens",
+   "name": "What lies south of the north pool's hedges",
+   "at": [
+    -174.0,
+    31.5
+   ],
+   "photos": [
+    "IMG_2204.jpg"
+   ],
+   "why": "The station camera stands on the roof south of the hedges and cannot see between them and the south row; the two paths that leave the lawn south (one along the hibiscus hedge, one through the gap) run out of view. Not modelled."
   }
  ]
 }

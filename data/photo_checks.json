@@ -1729,12 +1729,12 @@
    "task": "ground-plan-north-pool",
    "checked": "2026-11-15",
    "by": "Claude",
-   "feature": "ground_plan_north_pool.json:north-pool-lawn-path",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn",
    "photo": "IMG_2204.jpg",
    "render": "docs/reviews/ground-plan-north-pool/IMG_2204-after.png",
    "result": "differs",
    "followUp": "ground-plan-north-pool",
-   "notes": "The crazy paving now runs down the west side at the foot of the curved white wall, re-traced through this camera (it had been drawn on the wall top), and turns east along the south behind the hedges; the lawn and deck line up. Still different: projected through this camera the modelled north stretch sits 1-3 m south of the paving the photo shows (kept against the patio fronts, open discrepancy); the foreground hedges and planting differ in size and place. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "notes": "The lawn now ends at the two hedges as in the photo (it ran 3-5 m past them), the crazy paving runs at the foot of the curved west wall and down beside the hibiscus hedge, a short path leaves through the gap in the south hedges, and the giant strelitzia stands at its photographed base. Projected back through this camera every new line falls on its feature in the photo (docs/reviews/ground-plan-north-pool/IMG_2204-ground-projection.jpg). Still different: the modelled north paving and the tree beside it sit 1-3 m south of where this camera casts them (open discrepancy, kept against the patio fronts); the hedges' leaf texture is coarser. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
   },
   {
    "task": "ground-plan-north-pool",
@@ -1744,8 +1744,19 @@
    "photo": "IMG_2205.jpg",
    "render": "docs/reviews/ground-plan-north-pool/IMG_2205-after.png",
    "result": "differs",
-   "followUp": "ground-plan-north-pool",
-   "notes": "Calle Isabel beside the lawn is now crazy-paving stone along the line the photo shows (its west edge cast through this camera runs within about half a metre of the mapped lane), where it was terracotta tiles. Still different: the large yucca in front of it and the tree by the north hedge are not where the photo has them, and the lane's east edge is hidden. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
+   "followUp": "north-pool-station-foreground",
+   "notes": "Calle Isabel beside the lawn is crazy paving along the line the photo shows, the lawn and deck line up and the yucca now stands at the lane's lawn edge behind the white post. Different: the model's pergola roof next to the camera covers the yucca and the lower right of the view (north-pool-station-foreground). Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-north-pool",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn-path",
+   "photo": "IMG_2206.jpg",
+   "render": "docs/reviews/ground-plan-north-pool/IMG_2206-after.png",
+   "result": "differs",
+   "followUp": "north-pool-station-foreground",
+   "notes": "The lawn, the crazy paving at the foot of the curved wall and the hedges show at the right of the view as in the photo; the left half is filled by the model's white block and tiled pergola next to the camera where the photo looks over the west gardens, the bougainvillea and the gateway (north-pool-station-foreground). Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [
