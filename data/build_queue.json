@@ -3433,8 +3433,42 @@
     "IMG_2206 rendered through the solved camera shows the west gardens",
     "Photo checks re-recorded"
    ],
-   "features": [],
+   "features": [
+    "plain_fronts.json:north-pool-station-row",
+    "plain_fronts.json:north-pool-station-near",
+    "plain_fronts.json:north-pool-station-notch-west-face",
+    "plain_fronts.json:north-pool-station-parapet",
+    "plain_fronts.json:north-pool-gated-patio-walls"
+   ],
    "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "15 Nov: what blocked the station camera was generated, not registry. Rays through the solved IMG_2204-2208 cameras showed (1) generated wooden balconies and tiled porch roofs standing out from the plain north face of the south row (removed: data/plain_fronts.json fronts, src/plain-fronts.ts); (2) the barrel tiles at the camera's feet are a parapet coping on the roof edge part3 shares with part1, its line and 8.0-8.3 m height measured by rays through the tile ends (src/station-parapet.ts), not a pergola; (3) a generated shutter window on the notch face and kit openings on the near block, removed; (4) hashed hedge runs on the skeleton garden walls south of the west path, where IMG_2206 and IMG_2208 show white patio walls with brown gates (bareWalls). A storeys correction for part1 from the 2 m lidar was tried and reverted: the photos show garden beyond the parapet. The hibiscus hedge is narrowed to 1.0 m. Renders and notes: docs/reviews/north-pool-station-foreground. Still open (north-pool-station-details): the gated patio walls' height, cappings and doors; the near block's notch corner about 0.4-0.5 m east of the photo and its top about 1 m low (one camera only, not a measured correction); the yucca dropped by the route guard. Left in-progress: as a structure task it can be marked done only with verified placement for its features, which needs a second-agent review of the parapet's measurement."
+  },
+  {
+   "id": "north-pool-station-details",
+   "area": "north-pool",
+   "priority": 3,
+   "kind": "detail",
+   "title": "North pool: gated patio walls, near block and yucca round the station camera",
+   "photos": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg",
+    "IMG_2205.jpg"
+   ],
+   "build": "Through the solved station camera, IMG_2206 and IMG_2208 show two white patio walls about 1.8 m high with curved cappings and brown plank doors south of the west path, with bougainvillea and plumbago over them and a terracotta patio with a parasol behind (floor casts to about -184, 31.8). The model has generated 1 m garden walls in the right place (skeleton gardenWalls) but not their height, cappings or doors. Build them as photographed where the casts allow; door positions need a ground-level photo (evidence request north-pool-gated-patio-gates). Also: registry part3's notch corner (-179.4, 33.7) projects about 0.4-0.5 m east of the photo's edge and the near block reads about 1 m taller in IMG_2206 (one camera; needs a second camera or lidar before a measured correction); the yucca o13 is dropped by the route-clearance guard (gap:north-pool-station-yucca).",
+   "avoid": "Do not move registry footprints without a measured correction (two solved cameras, or one plus the aerial, within 0.3 m rms, and a second-agent review). Do not bypass the route-clearance guard. Leave Walk alone.",
+   "accept": [
+    "IMG_2206 and IMG_2208 rendered through the solved camera show the gated patio walls",
+    "Photo checks re-recorded",
+    "Visible in Inspect with Show details"
+   ],
+   "features": [
+    "plain_fronts.json:north-pool-gated-patio-walls"
+   ],
+   "dependsOn": [
+    "north-pool-station-foreground"
+   ],
    "status": "open",
    "owner": null
   },

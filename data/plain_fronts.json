@@ -1,0 +1,108 @@
+{
+ "about": "Faces of registry buildings that photos show plain: no generated porches (balconies, porch roofs) and, where `noOpenings`, no generated windows or doors. Each front is a box in world metres (x0, z0, x1, z1) and a facing; a wall is plain when its midpoint lies in the box and its outward normal points that way. Applied by src/plain-fronts.ts to the porches, the flat shutters and the facade kit. `bareWalls` are boxes where the photos show the generated low garden walls bare (white patio walls with gates and climbers), so the hashed hedge runs laid on those walls are left out (src/slice.ts addGardenWalls).",
+ "fronts": [
+  {
+   "id": "north-pool-station-row",
+   "box": [
+    -188.5,
+    30.5,
+    -164.0,
+    40.5
+   ],
+   "facing": [
+    0,
+    -1
+   ],
+   "noPorches": true,
+   "noOpenings": false,
+   "trust": "IMG_2206 looks west along the north side of the south row from its roof and IMG_2205 east: white walls, patio walls with brown gates, bougainvillea and the paths below, and no projecting balconies or porch roofs anywhere on that face; IMG_2207 and IMG_2208 look straight down it onto barrel tiles and the hedges. The generated wooden balconies and tiled porch roofs stood out from this face into those views. Ground-floor openings behind the patio walls are not seen and are left as generated.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "north-pool-station-near",
+   "box": [
+    -178.0,
+    31.5,
+    -164.0,
+    38.5
+   ],
+   "facing": [
+    0,
+    -1
+   ],
+   "noPorches": true,
+   "noOpenings": true,
+   "trust": "Next to the station the faces in view are plain white: the white parapet block at the left of IMG_2206, the parapet at the right of IMG_2207 and the tiled roof edge below the camera (IMG_2207, IMG_2208). No windows, doors or shutters show on them; the generated shutter window that filled the left of the IMG_2206 view is left off.",
+   "evidence": [
+    "IMG_2206.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "north-pool-station-notch-west-face",
+   "box": [
+    -179.8,
+    33.4,
+    -177.2,
+    37.0
+   ],
+   "facing": [
+    0.857,
+    -0.514
+   ],
+   "noPorches": true,
+   "noOpenings": true,
+   "trust": "The wall of the south row that faces east-north-east across the notch beside the IMG_2204-2206 station is the plain white block at the left of IMG_2206; a ray through it (pixel 400, 800) meets the model's generated first-floor shutter window at (-178.5, 35.2), which the photo does not have.",
+   "evidence": [
+    "IMG_2206.jpg"
+   ]
+  }
+ ],
+ "parapets": [
+  {
+   "id": "north-pool-station-parapet",
+   "building": "6265201UF1366N_part3",
+   "from": [
+    -169.82,
+    35.79
+   ],
+   "to": [
+    -171.06,
+    36.59
+   ],
+   "outerTop": 8.02,
+   "innerTop": 8.3,
+   "coping": 0.6,
+   "thickness": 0.3,
+   "trust": "IMG_2205, IMG_2206 (solved station camera), IMG_2207 and IMG_2208 look over a short parapet capped with old barrel tiles, at the camera's chest, between two taller white blocks. The rays through the tile ends meet the registry edge this block shares with the one-storey part in front at 8.01-8.15 m above datum (five pixels in IMG_2205, three in IMG_2206), 0.7-1.0 m from the camera, which stands on the roof terrace at about 7.0 m (eye 8.55 m); the white blocks' feet bound it from (-169.8, 35.8) to (-171.1, 36.6). Beyond it the rays pass well above the one-storey part and reach the garden, as the photos show. The tiles' inner height and the coping width are by eye.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2207.jpg",
+    "IMG_2208.jpg"
+   ]
+  }
+ ],
+ "bareWalls": [
+  {
+   "id": "north-pool-gated-patio-walls",
+   "box": [
+    -188.2,
+    28.6,
+    -179.0,
+    33.0
+   ],
+   "trust": "Rays through the solved IMG_2206 station camera: the skeleton garden-wall points (-182.5, 31.25) and (-187.0, 31.0) project onto the two white patio walls with brown gates (full-size pixels about 702, 918 and 583, 776), and the terracotta patio floor under the umbrella casts to about (-184, 31.8). The photo shows those walls bare white with curved cappings, bougainvillea and plumbago over them, not the 1.7 m hedge sprites the generator laid there; IMG_2208 shows the same walls from above.",
+   "evidence": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ]
+  }
+ ]
+}

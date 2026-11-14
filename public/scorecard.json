@@ -164,8 +164,8 @@
     "tagged": 13,
     "placed": 7,
     "checks": {
-     "matches": 0,
-     "differs": 3,
+     "matches": 1,
+     "differs": 5,
      "not-comparable": 7
     },
     "camerasSolved": 3,
@@ -183,9 +183,9 @@
     "generated": 89
    },
    "placement": {
-    "features": 11,
+    "features": 16,
     "verified": 0,
-    "disputed": 5
+    "disputed": 8
    },
    "discrepancies": [
     {
@@ -199,11 +199,19 @@
     {
      "id": "photo-discrepancy:ae3ea6e043c500ce",
      "feature": "ground_plan_north_pool.json:north-pool-lawn-path"
+    },
+    {
+     "id": "photo-discrepancy:dce4fba3c75700e6",
+     "feature": "plain_fronts.json:north-pool-station-row"
+    },
+    {
+     "id": "photo-discrepancy:c1458fda90bbd4a7",
+     "feature": "plain_fronts.json:north-pool-station-parapet"
     }
    ],
    "tasks": {
     "open": 7,
-    "inProgress": 4,
+    "inProgress": 5,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
@@ -211,25 +219,25 @@
     ]
    },
    "confidence": {
-    "photographed": 6,
+    "photographed": 11,
     "estimated": 4,
     "inferred": 1,
     "registry": 0,
-    "gaps": 2
+    "gaps": 4
    },
    "status": [
     "Ground: 85% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 13, 7 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
-    "How sure: 6 photographed, 4 estimated, 1 inferred, 2 known gaps.",
-    "Placement: 0 of 11 features verified, 3 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 4 still open; 2 evidence requests. This is not whole-area acceptance."
+    "How sure: 11 photographed, 4 estimated, 1 inferred, 4 known gaps.",
+    "Placement: 0 of 16 features verified, 5 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 6 still open; 3 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 2,
-     "needs-evidence": 2,
+     "ready": 3,
+     "needs-evidence": 3,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -266,9 +274,33 @@
       "status": "open",
       "sources": [],
       "state": "open"
+     },
+     {
+      "id": "north-pool-gated-patio-gates",
+      "area": "north-pool",
+      "kind": "photo",
+      "ask": "Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf.",
+      "requirements": [
+       "Wall feet and door sills visible",
+       "One photo square to each wall",
+       "Note which house each patio belongs to"
+      ],
+      "why": "From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.",
+      "features": [
+       "plain_fronts.json:north-pool-gated-patio-walls"
+      ],
+      "tasks": [
+       "north-pool-station-details"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_2206.jpg",
+       "IMG_2208.jpg"
+      ],
+      "state": "open"
      }
     ],
-    "readyTasks": 4
+    "readyTasks": 3
    },
    "light": {
     "colour": "red",
@@ -2841,8 +2873,8 @@
     "tagged": 478,
     "placed": 460,
     "checks": {
-     "matches": 51,
-     "differs": 36,
+     "matches": 52,
+     "differs": 38,
      "not-comparable": 63
     },
     "camerasSolved": 7,
@@ -2867,9 +2899,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 437,
+    "features": 442,
     "verified": 0,
-    "disputed": 29
+    "disputed": 32
    },
    "discrepancies": [
     {
@@ -3043,11 +3075,19 @@
     {
      "id": "photo-discrepancy:ae3ea6e043c500ce",
      "feature": "ground_plan_north_pool.json:north-pool-lawn-path"
+    },
+    {
+     "id": "photo-discrepancy:dce4fba3c75700e6",
+     "feature": "plain_fronts.json:north-pool-station-row"
+    },
+    {
+     "id": "photo-discrepancy:c1458fda90bbd4a7",
+     "feature": "plain_fronts.json:north-pool-station-parapet"
     }
    ],
    "tasks": {
     "open": 54,
-    "inProgress": 50,
+    "inProgress": 51,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3055,25 +3095,25 @@
     ]
    },
    "confidence": {
-    "photographed": 59,
+    "photographed": 64,
     "estimated": 132,
     "inferred": 13,
     "registry": 233,
-    "gaps": 26
+    "gaps": 28
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 59 photographed, 132 estimated, 13 inferred, 26 known gaps.",
-    "Placement: 0 of 437 features verified, 43 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 4 still open; 39 evidence requests. This is not whole-area acceptance."
+    "How sure: 64 photographed, 132 estimated, 13 inferred, 28 known gaps.",
+    "Placement: 0 of 442 features verified, 45 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 6 still open; 40 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 2,
-     "needs-evidence": 2,
+     "ready": 3,
+     "needs-evidence": 3,
      "needs-source-access": 0,
      "awaiting-review": 0,
      "accepted": 0
@@ -3109,6 +3149,30 @@
       "tasks": [],
       "status": "open",
       "sources": [],
+      "state": "open"
+     },
+     {
+      "id": "north-pool-gated-patio-gates",
+      "area": "north-pool",
+      "kind": "photo",
+      "ask": "Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf.",
+      "requirements": [
+       "Wall feet and door sills visible",
+       "One photo square to each wall",
+       "Note which house each patio belongs to"
+      ],
+      "why": "From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.",
+      "features": [
+       "plain_fronts.json:north-pool-gated-patio-walls"
+      ],
+      "tasks": [
+       "north-pool-station-details"
+      ],
+      "status": "open",
+      "sources": [
+       "IMG_2206.jpg",
+       "IMG_2208.jpg"
+      ],
       "state": "open"
      },
      {
@@ -3614,7 +3678,7 @@
       "state": "open"
      }
     ],
-    "readyTasks": 41
+    "readyTasks": 40
    },
    "light": {
     "colour": "red",

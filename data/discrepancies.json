@@ -44,6 +44,28 @@
       "task": "north-pool-unresolved-plan",
       "status": "open",
       "requests": ["north-pool-ground-boundaries"]
+    },
+    {
+      "id": "north-pool-station-notch-corner",
+      "area": "north-pool",
+      "kind": "placement",
+      "description": "Registry part3's notch corner (-179.4, 33.7) projects about 40 px (0.4-0.5 m at 12 m) east of the near block's edge in IMG_2206 through the solved station camera, and the block's top reads about 1 m higher in the photo than the two-storey model. One camera only: not a measured correction until a second solved camera or the lidar confirms it.",
+      "sources": ["IMG_2206.jpg"],
+      "features": [],
+      "task": "north-pool-station-details",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "north-pool-gated-patio-walls",
+      "area": "north-pool",
+      "kind": "completeness",
+      "description": "IMG_2206 and IMG_2208 show white patio walls about 1.8 m high with curved cappings and brown plank doors south of the west path; the model has 1 m generated garden walls there, in the right place but without height, cappings or doors. Door feet are hidden by planting.",
+      "sources": ["IMG_2206.jpg", "IMG_2208.jpg"],
+      "features": ["plain_fronts.json:north-pool-gated-patio-walls"],
+      "task": "north-pool-station-details",
+      "status": "open",
+      "requests": ["north-pool-gated-patio-gates"]
     }
   ]
 }

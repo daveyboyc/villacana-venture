@@ -2,9 +2,11 @@
 // it meets, top first, with its height and the names of it and its parents. For finding which module
 // draws a stray surface seen in Inspect.
 //   node scripts/probe_ground.cjs x,z [x,z ...] [--pool=main] [--details]
+//   node scripts/probe_ground.cjs ray:x,y,z,dx,dy,dz [...]   casts from a point along a direction instead
+//   (for example from a solved photo camera through a pixel, to name what blocks the view).
 const { chromium } = require("playwright");
 (async () => {
-  const args = process.argv.slice(2), flags = args.filter((a) => a.startsWith("--")), pts = args.filter((a) => !a.startsWith("--")).map((p) => p.split(",").map(Number));
+  const args = process.argv.slice(2), flags = args.filter((a) => a.startsWith("--")), pts = args.filter((a) => !a.startsWith("--")).map((p) => p.replace(/^ray:/, "").split(",").map(Number));
   const pool = (flags.find((f) => f.startsWith("--pool=")) ?? "--pool=main").slice(7);
   const { createServer } = await import("vite");
   const server = await createServer({ cacheDir: `node_modules/.vite-probe-${process.pid}`, server: { host: "127.0.0.1", port: 0, strictPort: false }, logLevel: "error" });
@@ -21,12 +23,15 @@ const { chromium } = require("playwright");
       const name = (o) => { const n = []; for (let p = o; p; p = p.parent) if (p.name) n.push(p.name); return n.join(" < ") || `${o.type}#${o.id}`; };
       scene.updateMatrixWorld(true);
       const R = THREE ? new THREE.Raycaster() : null;
-      return pts.map(([x, z]) => {
-        R.set(new THREE.Vector3(x, 60, z), new THREE.Vector3(0, -1, 0)); R.far = 120;
+      return pts.map((p) => {
+        const [x, z] = p;
+        if (p.length === 6) R.set(new THREE.Vector3(p[0], p[1], p[2]), new THREE.Vector3(p[3], p[4], p[5]).normalize());
+        else R.set(new THREE.Vector3(x, 60, z), new THREE.Vector3(0, -1, 0));
+        R.far = 120;
         const hits = R.intersectObjects(scene.children, true).filter((h) => h.object.visible && h.object.isMesh);
-        return { at: [x, z], hits: hits.slice(0, 6).map((h) => ({ y: +h.point.y.toFixed(2), mesh: name(h.object), material: h.object.material?.color?.getHexString?.() })) };
+        return { at: p, hits: hits.slice(0, 6).map((h) => ({ y: +h.point.y.toFixed(2), mesh: name(h.object) + (h.object.isInstancedMesh ? ` [instanced x${h.object.count}]` : '') + (h.object.userData && Object.keys(h.object.userData).length ? ' ' + JSON.stringify(h.object.userData).slice(0, 80) : ''), at: [+h.point.x.toFixed(2), +h.point.z.toFixed(2)], material: h.object.material?.color?.getHexString?.() })) };
       });
     }, pts);
-    for (const p of out) { console.log(p.at.join(",")); for (const h of p.hits) console.log("   ", h.y, h.mesh, h.material ?? ""); }
+    for (const p of out) { console.log(p.at.join(",")); for (const h of p.hits) console.log("   ", h.y, h.at.join(","), h.mesh, h.material ?? ""); }
   } finally { await browser.close(); await server.close(); }
 })().catch((e) => { console.error(e); process.exit(1); });

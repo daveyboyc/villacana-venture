@@ -24,6 +24,18 @@
       "tasks": [],
       "status": "open",
       "sources": []
+    },
+    {
+      "id": "north-pool-gated-patio-gates",
+      "area": "north-pool",
+      "kind": "photo",
+      "ask": "Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf.",
+      "requirements": ["Wall feet and door sills visible", "One photo square to each wall", "Note which house each patio belongs to"],
+      "why": "From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.",
+      "features": ["plain_fronts.json:north-pool-gated-patio-walls"],
+      "tasks": ["north-pool-station-details"],
+      "status": "open",
+      "sources": ["IMG_2206.jpg", "IMG_2208.jpg"]
     }
   ]
 }

@@ -8,17 +8,19 @@ Run `python3 scripts/photo_loop.py --area north-pool`. Missing evidence blocks i
 
 ## North pool
 
-ready: 2, needs-evidence: 2, needs-source-access: 0, awaiting-review: 0, accepted: 0
+ready: 3, needs-evidence: 3, needs-source-access: 0, awaiting-review: 0, accepted: 0
 
 - **ready** `north-deck-shape`: Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.
 - **ready** `north-pool-fittings`: Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.
 - **needs-evidence** `north-west-terrace-extents`: Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.
 - **needs-evidence** `north-pool-hidden-ground-boundaries`: Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.
+- **ready** `north-pool-station-notch-corner`: Registry part3's notch corner (-179.4, 33.7) projects about 40 px (0.4-0.5 m at 12 m) east of the near block's edge in IMG_2206 through the solved station camera, and the block's top reads about 1 m higher in the photo than the two-storey model. One camera only: not a measured correction until a second solved camera or the lidar confirms it.
+- **needs-evidence** `north-pool-gated-patio-walls`: IMG_2206 and IMG_2208 show white patio walls about 1.8 m high with curved cappings and brown plank doors south of the west path; the model has 1 m generated garden walls there, in the right place but without height, cappings or doors. Door feet are hidden by planting.
 - **photo open** `north-west-stair-views`: Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends. Why: Resolve the stair/terrace position and height transition without guessing concealed limits.
 - **map open** `north-pool-ground-boundaries`: A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead. Why: Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.
+- **photo open** `north-pool-gated-patio-gates`: Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf. Why: From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.
 - Ready task: `loop-discrepancies` — Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison
 - Ready task: `north-pool-unresolved-plan` — North pool: resolve concealed ground edges, lane widths and remaining roof projections
-- Ready task: `north-pool-station-foreground` — North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view
 - Ready task: `path-network-inventory-north-pool` — North pool: full-source path, tunnel and boundary inventory
 
 ## Middle pool
@@ -153,14 +155,17 @@ ready: 0, needs-evidence: 0, needs-source-access: 0, awaiting-review: 0, accepte
 
 ## The whole resort
 
-ready: 2, needs-evidence: 2, needs-source-access: 0, awaiting-review: 0, accepted: 0
+ready: 3, needs-evidence: 3, needs-source-access: 0, awaiting-review: 0, accepted: 0
 
 - **ready** `north-deck-shape`: Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.
 - **ready** `north-pool-fittings`: Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.
 - **needs-evidence** `north-west-terrace-extents`: Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.
 - **needs-evidence** `north-pool-hidden-ground-boundaries`: Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.
+- **ready** `north-pool-station-notch-corner`: Registry part3's notch corner (-179.4, 33.7) projects about 40 px (0.4-0.5 m at 12 m) east of the near block's edge in IMG_2206 through the solved station camera, and the block's top reads about 1 m higher in the photo than the two-storey model. One camera only: not a measured correction until a second solved camera or the lidar confirms it.
+- **needs-evidence** `north-pool-gated-patio-walls`: IMG_2206 and IMG_2208 show white patio walls about 1.8 m high with curved cappings and brown plank doors south of the west path; the model has 1 m generated garden walls there, in the right place but without height, cappings or doors. Door feet are hidden by planting.
 - **photo open** `north-west-stair-views`: Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends. Why: Resolve the stair/terrace position and height transition without guessing concealed limits.
 - **map open** `north-pool-ground-boundaries`: A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead. Why: Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.
+- **photo open** `north-pool-gated-patio-gates`: Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf. Why: From the roof the door feet are hidden by planting, so the gates' positions along the walls and the walls' heights cannot be cast through the solved station camera.
 - **photo open** `photo-elena-25-far-end`: Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena. Why: task elena-25-passage: where the passage leads and whether the block has a courtyard
 - **photo open** `photo-elena-25-from-lane`: From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame. Why: task elena-25-passage: register the portal on the lane
 - **photo received** `photo-elena-roof-station`: On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood. Why: task facade-kit-elena: a roof camera that can be solved
@@ -224,7 +229,6 @@ ready: 2, needs-evidence: 2, needs-source-access: 0, awaiting-review: 0, accepte
 - Ready task: `ground-plan-south-pool` — South pool: smooth paths, patios and green spaces with their edges and boundaries
 - Ready task: `main-pool-lawn-cameras` — Main pool lawn and Enrique's steps: solve the photo cameras and close what still differs
 - Ready task: `middle-pool-west-path-material` — Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach
-- Ready task: `north-pool-station-foreground` — North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view
 - Ready task: `path-network-inventory-barraka-beach` — Barraka and the beach: full-source path, tunnel and boundary inventory
 - Ready task: `path-network-inventory-dali` — Calle Pintor Dalí: full-source path, tunnel and boundary inventory
 - Ready task: `path-network-inventory-eva` — Calle Eva: full-source path, tunnel and boundary inventory
