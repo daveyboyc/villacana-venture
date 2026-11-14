@@ -13,7 +13,7 @@ import {evaLane,evaLaneSurfaces,suppressInEvaLane} from "./eva-lane";
 import {albertoPassage,albertoRect,suppressInAlbertoPorch} from "./alberto-passage";
 import {passageCorridor,SOUTH_POOL_PASSAGE} from "./south-pool-passage";
 import jorgeLane from "../data/jorge_lane.json";
-import { jorgeBenchSpots, jorgeSide, jorgeWallRuns } from "./jorge-lane";
+import { guillermoPoolWallLines, jorgeBenchSpots, jorgeSide, jorgeWallRuns } from "./jorge-lane";
 import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
@@ -467,6 +467,10 @@ async function boot(): Promise<void> {
     }
     const wall = jorgeLane.boundary;
     for (const [a, b] of jorgeWallRuns()) titled(el("path", { d: d([[a, -wall.offset], [b, -wall.offset]]), fill: "none", stroke: "#fffdf8", "stroke-width": wall.thickness }));
+    for (const poolWall of guillermoPoolWallLines()) {
+      const node = el("path", { d: "M" + poolWall.points.map((p) => p.join(" ")).join("L"), fill: "none", stroke: "#fffdf8", "stroke-width": poolWall.thickness });
+      const title = el("title", {}); title.textContent = `${poolWall.name}: the same line the model builds`; node.append(title); world.append(node);
+    }
     const kerb = jorgeLane.kerb;
     titled(el("path", { d: d([[kerb.to, -kerb.offset], [kerb.from, -kerb.offset], [kerb.from, -kerb.returnTo]]), fill: "none", stroke: "#fffdf8", "stroke-width": kerb.width }));
   }
