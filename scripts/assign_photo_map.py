@@ -236,8 +236,6 @@ def features(s):
     for part in ('patio','bed','eastPlanter'):
         f=garden[part]
         add('cervantes_garden_door.json:'+f['id'],f['id'],'reference feature','authored photo/levels interpretation',ring=f['ring'],evidence=f['evidence'])
-    north_path=json.loads((ROOT/'data/north_pool_gardens.json').read_text())
-    add('north_pool_gardens.json:'+north_path['id'],north_path['name'],'reference feature','authored photo/map interpretation',ring=north_path['ring'],evidence=north_path['evidence'])
     for roof in json.loads((ROOT/'data/north_west_canopies.json').read_text())['canopies']:
         add('north_west_canopies.json:'+roof['id'],roof['name'],'reference feature','individually observed upper balcony roof; aerial trace estimated',ring=roof['ring'],evidence=roof['evidence'])
     for t in json.loads((ROOT/'data/raised_terraces.json').read_text())['terraces']:

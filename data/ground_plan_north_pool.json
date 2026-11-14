@@ -1,0 +1,235 @@
+{
+  "about": "Ground plan for the north-pool area (docs/SMOOTH_PATHS.md, drawn by src/ground-plan.ts, checked by scripts/check_ground_plan.py). World metres: x east, z south.",
+  "area": "north-pool",
+  "trust": "The crazy-paving path is the photo-traced band from data/north_pool_gardens.json (IMG_2204-2206, 2208), now a smooth centreline. The lawn is bounded by that path, Calle Isabel and the dark hedge line the aerial shows on the south; the deck is cut out of it. Edges good to about a metre.",
+  "surfaces": [
+    {
+      "id": "north-pool-lawn",
+      "name": "North pool lawn",
+      "kind": "green",
+      "finish": "lawn",
+      "outline": [
+        [
+          -189.02,
+          24.55
+        ],
+        [
+          -188.77,
+          22.26
+        ],
+        [
+          -188.48,
+          20.09
+        ],
+        [
+          -188.1,
+          18.58
+        ],
+        [
+          -187.43,
+          17.41
+        ],
+        [
+          -186.1,
+          16.17
+        ],
+        [
+          -183.93,
+          14.6
+        ],
+        [
+          -181.66,
+          13.17
+        ],
+        [
+          -180.03,
+          12.35
+        ],
+        [
+          -178.82,
+          12.03
+        ],
+        [
+          -176.06,
+          12.58
+        ],
+        [
+          -172.02,
+          12.88
+        ],
+        [
+          -166.99,
+          12.98
+        ],
+        [
+          -166.35,
+          13.6
+        ],
+        [
+          -165.55,
+          19.4
+        ],
+        [
+          -163.3,
+          23.3
+        ],
+        [
+          -165.84,
+          26.86
+        ],
+        [
+          -166.32,
+          28.31
+        ],
+        [
+          -167.16,
+          28.91
+        ],
+        [
+          -168.6,
+          28.91
+        ],
+        [
+          -169.44,
+          29.99
+        ],
+        [
+          -169.2,
+          31.91
+        ],
+        [
+          -174.37,
+          35.15
+        ],
+        [
+          -177.25,
+          34.43
+        ],
+        [
+          -178.93,
+          32.75
+        ],
+        [
+          -183.49,
+          32.27
+        ],
+        [
+          -184.33,
+          29.03
+        ],
+        [
+          -185.65,
+          27.95
+        ],
+        [
+          -187.34,
+          28.19
+        ],
+        [
+          -188.9,
+          26.14
+        ]
+      ],
+      "corners": 0.8,
+      "cut": [
+        "deck:north"
+      ],
+      "note": "IMG_2204 and IMG_2205 (upper-floor views over the courtyard) show lawn all round the pool deck, from the crazy-paving path on the north and west to the hedges on the south and the paved lane on the east. Its north and west sides are the path's pool-side edge, its east side Calle Isabel's lawn-side edge, its south side the dark hedge line traced from the aerial (scripts/trace_ground.py lawn; the aerial reads the shaded, worn north lawn as not green, so only the south edge is traced). The measured deck is cut out. Good to about a metre.",
+      "evidence": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2206.jpg"
+      ],
+      "traced": "map:ground",
+      "edges": []
+    },
+    {
+      "id": "north-pool-lawn-path",
+      "name": "North pool · crazy-paving lawn-edge path",
+      "kind": "path",
+      "finish": "crazy-paving",
+      "width": 0.96,
+      "lines": [
+        [
+          [
+            -189.5,
+            24.5
+          ],
+          [
+            -189.25,
+            22.2
+          ],
+          [
+            -188.95,
+            20.0
+          ],
+          [
+            -188.55,
+            18.4
+          ],
+          [
+            -187.8,
+            17.1
+          ],
+          [
+            -186.4,
+            15.8
+          ],
+          [
+            -184.2,
+            14.2
+          ],
+          [
+            -181.9,
+            12.75
+          ],
+          [
+            -180.2,
+            11.9
+          ],
+          [
+            -178.8,
+            11.55
+          ],
+          [
+            -176.0,
+            12.1
+          ],
+          [
+            -172.0,
+            12.4
+          ],
+          [
+            -167.0,
+            12.5
+          ],
+          [
+            -162.0,
+            12.1
+          ],
+          [
+            -160.1,
+            11.2
+          ]
+        ]
+      ],
+      "ends": [
+        [
+          "square",
+          "square"
+        ]
+      ],
+      "above": [
+        "north-pool-lawn"
+      ],
+      "note": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool).",
+      "evidence": [
+        "IMG_2204.jpg",
+        "IMG_2205.jpg",
+        "IMG_2206.jpg",
+        "IMG_2208.jpg"
+      ],
+      "edges": []
+    }
+  ]
+}

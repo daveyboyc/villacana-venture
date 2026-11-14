@@ -1,10 +1,6 @@
 import * as THREE from "three";
-import data from "../data/north_pool_gardens.json";
-import { siteY } from "./terrain";
-import type { Vec2 } from "./types";
 
-/** Only the visible ground-level arc is traced; its unknown continuation stays open. */
-export const northPoolGardenPath = data;
+/** The north pool's crazy paving, for the ground plan's crazy-paving finish (src/ground-plan.ts) and the raised terraces. */
 export function crazyPavingTexture(): THREE.CanvasTexture {
   const canvas = document.createElement("canvas"); canvas.width = canvas.height = 512;
   const g = canvas.getContext("2d")!;
@@ -23,22 +19,4 @@ export function crazyPavingTexture(): THREE.CanvasTexture {
   const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace;
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping; texture.repeat.setScalar(.65);
   return texture;
-}
-
-export function addNorthPoolGardenPath(scene: THREE.Scene): void {
-  const ring = data.ring as Vec2[];
-  const shape = new THREE.Shape(ring.map(([x, z]) => new THREE.Vector2(x, -z)));
-  const geometry = new THREE.ShapeGeometry(shape).rotateX(-Math.PI / 2);
-  const positions = geometry.getAttribute("position"), uv = geometry.getAttribute("uv");
-  for (let i = 0; i < positions.count; i++) {
-    const x = positions.getX(i), z = positions.getZ(i);
-    positions.setY(i, siteY(x, z) + .073); uv.setXY(i, x, z);
-  }
-  geometry.computeVertexNormals();
-  const mesh = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ map: crazyPavingTexture(), color: "#d8cfb9", roughness: 1 }));
-  mesh.name = data.id; mesh.userData.noDrape = true; mesh.userData.referenceSurface = true; mesh.receiveShadow = true; scene.add(mesh);
-}
-
-export function northPoolGardenPathBlueprint(): { id: string; points: Vec2[]; closed: boolean; fill?: string; stroke?: string; width?: number; dash?: string; title: string } {
-  return { id: data.id, points: data.ring as Vec2[], closed: true, fill: "#c8bfa9", title: `${data.name}: ${data.trust} · ${data.evidence.join(", ")}` };
 }

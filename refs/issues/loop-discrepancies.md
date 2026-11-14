@@ -6,9 +6,9 @@ Task `loop-discrepancies` · area **North pool** · priority P1 · tooling
 
 - `AGENTS.md`, `docs/HANDOVER.md`
 - `refs/areas/north-pool.md` and the contact sheet `villacana-reference/contact-sheets/north-pool.jpg`
-- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`, `docs/RAISED_TERRACES.md`, `docs/NORTH_WEST_CANOPIES.md`, `docs/reviews/north-pool-alignment-audit/README.md`
-- data: `data/objects.json`, `data/levels_survey.json`, `data/raised_terraces.json`, `data/north_pool_gardens.json`, `data/north_west_canopies.json`
-- src: `src/world.ts`, `src/water.ts`, `src/raised-terraces.ts`, `src/north-pool-gardens.ts`, `src/north-west-canopies.ts`
+- docs: `docs/LEVELS.md`, `docs/NORTH_POOL_REVIEW.md`, `docs/RAISED_TERRACES.md`, `docs/NORTH_WEST_CANOPIES.md`, `docs/reviews/north-pool-alignment-audit/README.md`, `docs/SMOOTH_PATHS.md`
+- data: `data/objects.json`, `data/levels_survey.json`, `data/raised_terraces.json`, `data/ground_plan_north_pool.json`, `data/north_west_canopies.json`
+- src: `src/world.ts`, `src/water.ts`, `src/raised-terraces.ts`, `src/north-pool-gardens.ts`, `src/north-west-canopies.ts`, `src/ground-plan.ts`
 
 ## Photos to build from
 

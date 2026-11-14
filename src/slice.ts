@@ -5,7 +5,6 @@ import {createSilviaTunnel} from "./silvia-tunnel";
 import {outdoorPavingMaterial,outdoorPavingUv} from './silvia-outdoor-paving';
 import laneFrontages from '../data/middle_pool_lane_frontages.json';
 import {SILVIA_HOST,SILVIA_CANOPY,silviaFloor,silviaSlabFloor,silviaWorld,silviaRotation,silviaGroundParts,silviaWallRings,inSilviaFloor,silviaCloseCamera,silviaRect} from "./silvia-map";
-import {addNorthPoolGardenPath} from "./north-pool-gardens";
 import {addNorthWestCanopies,inNorthWestCanopy} from "./north-west-canopies";
 import {addCervantesEastSouthPatios,cervantesEastSouthRings,inCervantesEastSouthPatios} from "./cervantes-east-south-patios";
 import {addMiddleSwGateway,middleSwRings} from "./middle-pool-sw-gateway";
@@ -306,7 +305,6 @@ async function boot(): Promise<void> {
   addJorgeLane(scene);
   addPicassoServiceRoad(scene,!layoutOnly,canPlaceDecoration);
   addMiddleSwGateway(scene);
-  addNorthPoolGardenPath(scene);
   addNorthWestCanopies(scene,skeleton.buildings);
   addRaisedTerraces(scene);
   const gate=addCoastalGate(scene,liveGroundY);

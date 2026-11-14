@@ -67,9 +67,10 @@ are `ground_plan_<area>.json:<surface id>`. World metres: x east, z south.
 
 - **kind**: `path` (centrelines and a width; several lines in one surface are unioned with rounded
   `joins`), or `patio`, `apron`, `green` (an outline; corners rounded by `corners` metres except the
-  vertex indices in `hard`). `raise` lifts a raised patio's floor.
+  vertex indices in `hard`). `cut` takes holes out of an outline: `"deck:<pool>"` (a measured deck) or
+  `"pool:<pool>"` (the water). `raise` lifts a raised patio's floor.
 - **finish** (`FINISHES` in `src/ground-plan.ts`): `pink-resin`, `terracotta-squares`, `flagstone`,
-  `octagon-tiles`, `concrete`, `gravel`, `planted-bed`, and two texture-only finishes drawn by the ground
+  `octagon-tiles`, `concrete`, `gravel`, `crazy-paving`, `planted-bed`, and two texture-only finishes drawn by the ground
   texture, not a mesh: `lawn`, and `pool-deck` (the deck's stone, for a pool without a measured deck). Green spaces and planted beds are painted into the ground texture, so the raster's wobbly class
   edge gives way to the traced one; paved surfaces are meshes over it.
 - **edges** (`EDGES`): `none`, `kerb`, `brick-border` (flush, not solid), `planter-wall`, `wall`,
@@ -120,6 +121,8 @@ fit, and no undeclared overlaps.
 - **Main pool (14 Nov):** the big lawn traced from the aerial, with the hedge along the sea railing as
   its edge; the lawn strip by the Guillermo planter; a texture-only deck band for a clean deck edge; and
   the pale north-east path (inferred).
+- **North pool (14 Nov, in progress):** the crazy-paving path moved in as a smooth centreline and the lawn
+  added round the measured deck. The aerial's green fails on shaded, worn lawn: bound it by known edges there.
 - **Next:** one task per area,
   `ground-plan-<area>`, traces paths, patios and green spaces with their edges and brings the area's
   existing patio, wall and planter modules under it. Order: main pool, north pool, middle pool, south
