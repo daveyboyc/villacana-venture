@@ -206,8 +206,10 @@ def build_buildings() -> list[dict]:
     buildings = []
     # Parts that bridge a lane at first-floor level; the ground under them is open.
     passages = {p["id"]: p for p in json.loads((ROOT / "data" / "passages.json").read_text())["passages"]}
-    gone = {p["id"]: p for p in json.loads((ROOT / "data" / "registry_corrections.json").read_text())["notStanding"]}
-    patios = {p["id"]: p for p in json.loads((ROOT / "data" / "registry_corrections.json").read_text()).get("openPatios", [])}
+    corrections = json.loads((ROOT / "data" / "registry_corrections.json").read_text())
+    gone = {p["id"]: p for p in corrections["notStanding"]}
+    patios = {p["id"]: p for p in corrections.get("openPatios", [])}
+    walls = {p["id"]: p for p in corrections.get("boundaryWalls", [])}
     for part in read_features("buildingpart.gml.gz", "BuildingPart"):
         ring = part["rings"][0]
         if not inside(AREA, centroid(ring)):
@@ -222,6 +224,11 @@ def build_buildings() -> list[dict]:
             assert part["floors"] == gone[part["id"]]["registryFloors"], part["id"]
             entry["floors"] = 0
             entry["notStanding"] = {k: gone[part["id"]][k] for k in ("registryFloors", "trust", "evidence")}
+        # A registry strip that is a boundary wall, not a roofed block. The ring stays; the wall is built separately.
+        if part["id"] in walls:
+            assert part["floors"] == walls[part["id"]]["registryFloors"], part["id"]
+            entry["floors"] = 0
+            entry["boundaryWall"] = {k: walls[part["id"]][k] for k in ("registryFloors", "trust", "evidence")}
         # Registry parts of which only a portion is roofed (Dave, 2026-11-12): the house keeps the `standing` ring and
         # the registry ring is kept beside it with the open patio, so the two can always be compared.
         if part["id"] in patios:

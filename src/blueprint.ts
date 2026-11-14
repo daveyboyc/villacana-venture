@@ -37,6 +37,7 @@ import paseoWall from "../data/paseo_wall.json";
 import seafrontFence from "../data/seafront_fence.json";
 import { seafrontFenceRings } from "./seafront-fence";
 import { lawnSolidRings } from "./main-pool-lawn";
+import { picassoLawnWallRings } from "./picasso-lawn-wall";
 import { EDGES, FINISHES, groundEdges, groundPlanSolidRings, groundSurfaces } from "./ground-plan";
 import elenaNorth from "../data/elena_north.json";
 import {middleGatewayFrame,middleGatewayLeaf,middlePoolPlanter,suppressInMiddlePoolReview} from "./middle-pool";
@@ -237,6 +238,7 @@ async function boot(): Promise<void> {
       const lawn = el("g", { id: "main-pool-lawn" });
       for (const ring of lawnSolidRings()) lawn.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#8aa0a6", "stroke-width": 0.04 }));
       const lawnTitle = el("title", {}); lawnTitle.textContent = "Main-pool lawn walls, estimated from the November photos. The pool stays unfenced."; lawn.append(lawnTitle);
+      for (const ring of picassoLawnWallRings()) lawn.append(el("path", { d: path(ring), fill: "#f7f4ee", stroke: "#8a8478", "stroke-width": 0.04 }));
       seafront.append(lawn);
     }
     const verge=el("path",{id:"barraka-front-verge",d:path(vergeRing),fill:"#8c9a5b","fill-opacity":.85,stroke:"#5d6b3a","stroke-width":.15});
