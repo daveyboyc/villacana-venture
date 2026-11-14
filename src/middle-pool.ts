@@ -5,6 +5,8 @@ import { pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import { addSprites, type SpritePlacement } from "./sprites";
 import type { Vec2 } from "./types";
+import { gateScrollwork, poolShower, roundPathDrain, poolAccessCap } from "./pool-detail-assets";
+import { DECK_TOP } from "./pool-deck";
 
 /** The middle pool courtyard: east gateway from Calle Eva and the west planter wall (data/middle_pool.json). */
 const gateway = layout.gateway;
@@ -115,10 +117,11 @@ function leaf(width: number, height: number, iron: THREE.Material): THREE.Group 
   group.add(box(0.05, height, t, iron, 0.025, 0.05), box(0.05, height, t, iron, width - 0.025, 0.05));
   for (const y of [0.05, 0.95, height]) group.add(box(width, 0.045, t, iron, width / 2, y));
   for (let x = 0.14; x < width - 0.08; x += 0.12) group.add(box(0.018, height - 0.05, t * 0.6, iron, x, 0.07));
+  group.add(gateScrollwork(width, iron));
   return group;
 }
 
-export function addMiddlePool(scene: THREE.Scene): void {
+export function addMiddlePool(scene: THREE.Scene, canPlace: (x: number, z: number, radius: number) => boolean): void {
   const plaster = plasterMaterial("#fffdf5");
   const iron = new THREE.MeshStandardMaterial({ color: "#1f2a22", roughness: 0.55, metalness: 0.4 });
   const { nw, at, inward } = middleGatewayFrame();
@@ -160,6 +163,47 @@ export function addMiddlePool(scene: THREE.Scene): void {
   addMiddlePoolNorth(scene);
   addPlanter(scene, plaster);
   addMiddlePoolPlanting(scene);
+  if (!scene.userData.layoutOnly) addMiddlePoolDetails(scene, canPlace);
+}
+
+/** Photo-observed fittings on existing surfaces. They introduce no terrain or collision. */
+function addMiddlePoolDetails(scene: THREE.Scene, canPlace: (x: number, z: number, radius: number) => boolean): void {
+  for (const fitting of layout.details) {
+    const [x, z] = fitting.at;
+    // The upright shower must clear the complete protected route. Flush covers are part of paving.
+    if (fitting.kind === "shower" && !canPlace(x, z, fitting.radius)) continue;
+    let group: THREE.Group;
+    if (fitting.kind === "shower") {
+      group = new THREE.Group();
+      // IMG_2679 resolves two parallel posts that overlap in IMG_2193/2194.
+      for (const x of [-.19, .19]) { const post = poolShower(fitting.height!); post.position.x = x; group.add(post); }
+    } else group = fitting.kind === "drain" ? roundPathDrain(fitting.diameter!) : poolAccessCap(fitting.diameter!);
+    const y = fitting.kind === "shower" ? DECK_TOP : fitting.kind === "cap" ? DECK_TOP + .003 - new THREE.Box3().setFromObject(group).max.y : .06;
+    group.position.set(x, y, z);
+    group.rotation.y = (fitting.turn ?? 0) * Math.PI / 180;
+    group.name = fitting.id;
+    group.userData.base = [x, z]; // Ground the post at its foot, not at the overhanging head's centre.
+    group.traverse(o => { if (o instanceof THREE.Mesh) o.castShadow = o.receiveShadow = true; });
+    scene.add(group);
+  }
+}
+
+/** Settle the path cover onto the actual drawn lane, after terrain/house-datum draping. */
+export function settleMiddlePoolPathCover(scene: THREE.Scene): void {
+  const cover = scene.getObjectByName("middle-pool-west-path-drain");
+  if (!cover) return; // Layout omits the fitting.
+  scene.updateMatrixWorld(true);
+  const surfaces: THREE.Object3D[] = [];
+  scene.traverse(o => { if (o.userData.pavingSurface) surfaces.push(o); });
+  const ray = new THREE.Raycaster(new THREE.Vector3(cover.position.x, 100, cover.position.z), new THREE.Vector3(0,-1,0));
+  const hit = ray.intersectObjects(surfaces, false)[0];
+  if (!hit?.face) return;
+  const normal = hit.face.normal.clone().applyNormalMatrix(new THREE.Matrix3().getNormalMatrix(hit.object.matrixWorld));
+  if (normal.y < 0) normal.negate();
+  cover.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), normal);
+  cover.position.y = hit.point.y; // Asset's rim/top is 2–3 mm above its origin.
+  cover.userData.noDrape = true;
+  cover.userData.pavingSettled = true;
 }
 
 /** A ring shrunk inward by `d`, each edge moved parallel and neighbours re-intersected. */

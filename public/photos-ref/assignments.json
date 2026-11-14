@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 427,
-  "photosCitedByModel": 192,
-  "modelFeaturesWithPhotoCitations": 173
+  "features": 430,
+  "photosCitedByModel": 194,
+  "modelFeaturesWithPhotoCitations": 176
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -501,6 +501,7 @@
     }
    ],
    "citedBy": [
+    "middle_pool.json:middle-pool-shower",
     "raised_terraces.json:middle-pool-north-terrace"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -541,6 +542,7 @@
     }
    ],
    "citedBy": [
+    "middle_pool.json:middle-pool-shower",
     "raised_terraces.json:middle-pool-north-terrace"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -4721,6 +4723,8 @@
    "citedBy": [
     "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
     "middle_pool.json:middle-pool-west-planter",
+    "middle_pool.json:middle-pool-west-path-drain",
+    "middle_pool.json:middle-pool-west-deck-cap",
     "middle_pool_north.json:middle-pool-north-planter-cap",
     "middle_pool_north.json:middle-pool-north-door-wall",
     "middle_pool_north.json:middle-pool-north-pergola",
@@ -7762,7 +7766,9 @@
     }
    ],
    "citedBy": [
-    "area:paseo"
+    "area:paseo",
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -15157,7 +15163,9 @@
      "angleOffset": 8.2
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-shower"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -116.4,
@@ -16454,7 +16462,10 @@
      "angleOffset": 27.6
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "middle_pool.json:middle-pool-west-path-drain",
+    "middle_pool.json:middle-pool-west-deck-cap"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -131.8,

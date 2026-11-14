@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 427,
-  "photosCitedByModel": 192,
-  "modelFeaturesWithPhotoCitations": 173
+  "features": 430,
+  "photosCitedByModel": 194,
+  "modelFeaturesWithPhotoCitations": 176
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2868,6 +2868,37 @@
    ]
   },
   {
+   "id": "middle_pool.json:middle-pool-shower",
+   "name": "Middle pool · paired curved stainless showers",
+   "kind": "reference feature",
+   "source": "photo-observed fitting; dimensions and ground anchor estimated, placement unverified",
+   "evidence": [
+    "IMG_2193.jpg",
+    "IMG_2194.jpg",
+    "IMG_2679.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool.json:middle-pool-west-path-drain",
+   "name": "Middle pool · round slotted cover on west stone path",
+   "kind": "reference feature",
+   "source": "photo-observed fitting; dimensions and ground anchor estimated, placement unverified",
+   "evidence": [
+    "IMG_2332.jpg",
+    "IMG_2713.jpg"
+   ]
+  },
+  {
+   "id": "middle_pool.json:middle-pool-west-deck-cap",
+   "name": "Middle pool · pale flush deck access lid",
+   "kind": "reference feature",
+   "source": "photo-observed fitting; dimensions and ground anchor estimated, placement unverified",
+   "evidence": [
+    "IMG_2332.jpg",
+    "IMG_2713.jpg"
+   ]
+  },
+  {
    "id": "picasso_service_road.json:picasso-utility-front",
    "name": "picasso utility front",
    "kind": "reference feature",
@@ -3268,6 +3299,7 @@
    "evidence": [
     "IMG_2226.jpg",
     "IMG_2481.jpg",
+    "IMG_2482.jpg",
     "IMG_2609.jpg",
     "IMG_2631.jpg"
    ]
@@ -3280,6 +3312,7 @@
    "evidence": [
     "IMG_2226.jpg",
     "IMG_2481.jpg",
+    "IMG_2482.jpg",
     "IMG_2609.jpg",
     "IMG_2631.jpg"
    ]
@@ -7431,6 +7464,12 @@
   },
   {
    "from": "photo:IMG_2193.jpg",
+   "to": "middle_pool.json:middle-pool-shower",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2193.jpg",
    "to": "raised_terraces.json:middle-pool-north-terrace",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -7453,6 +7492,12 @@
    "relation": "possibly-in-view",
    "distance": 43.0,
    "angleOffset": 6.5
+  },
+  {
+   "from": "photo:IMG_2194.jpg",
+   "to": "middle_pool.json:middle-pool-shower",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2194.jpg",
@@ -11093,6 +11138,18 @@
   },
   {
    "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool.json:middle-pool-west-path-drain",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
+   "to": "middle_pool.json:middle-pool-west-deck-cap",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2332.jpg",
    "to": "middle_pool_north.json:middle-pool-north-planter-cap",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -13523,6 +13580,18 @@
   {
    "from": "photo:IMG_2482.jpg",
    "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2482.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -18306,6 +18375,12 @@
    "angleOffset": 8.2
   },
   {
+   "from": "photo:IMG_2679.jpg",
+   "to": "middle_pool.json:middle-pool-shower",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2680.jpg",
    "to": "building:6265801UF1366N_part1",
    "relation": "possibly-in-view",
@@ -19210,6 +19285,18 @@
    "relation": "possibly-in-view",
    "distance": 37.3,
    "angleOffset": 27.6
+  },
+  {
+   "from": "photo:IMG_2713.jpg",
+   "to": "middle_pool.json:middle-pool-west-path-drain",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2713.jpg",
+   "to": "middle_pool.json:middle-pool-west-deck-cap",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2714.jpg",

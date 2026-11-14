@@ -3557,6 +3557,61 @@
    ],
    "status": "open",
    "owner": null
+  },
+  {
+   "id": "middle-pool-photo-details",
+   "area": "middle-pool",
+   "priority": 1,
+   "kind": "structure",
+   "title": "Middle pool: photo-backed shower, flush covers and east-gate scrollwork",
+   "photos": [
+    "IMG_2193.jpg",
+    "IMG_2194.jpg",
+    "IMG_2679.jpg",
+    "IMG_2332.jpg",
+    "IMG_2713.jpg",
+    "IMG_2340.jpg"
+   ],
+   "build": "Add the observed curved stainless shower beside the east life ring, dark concentric slotted west-path cover, distinct pale deck access cap and curled iron motifs within the existing east gateway leaf. Compare Inspect Layout and Details with the full photos.",
+   "avoid": "Retain pool/house/deck footprints, terrain and all existing gate transforms. No safety fence. Estimated fitting anchors are not calibrated placement approval.",
+   "accept": [
+    "Photo observations and before/after Inspect renders recorded",
+    "Pool level, deck outline, route clearance and gate opening retained",
+    "Source and form independently reviewed; uncertain placement explicitly retained"
+   ],
+   "features": [
+    "middle_pool.json:middle-pool-shower",
+    "middle_pool.json:middle-pool-west-path-drain",
+    "middle_pool.json:middle-pool-west-deck-cap",
+    "middle_pool.json:middle-pool-east-gateway"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Codex",
+   "notes": "Requested by owner 2026-11-13. Placement remains unapproved because sources lack solved photo cameras; source/form review does not grant placement approval."
+  },
+  {
+   "id": "middle-pool-west-path-material",
+   "area": "middle-pool",
+   "priority": 2,
+   "kind": "materials",
+   "title": "Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach",
+   "photos": [
+    "IMG_2332.jpg",
+    "IMG_2713.jpg"
+   ],
+   "build": "A high Inspect render shows a tiled Elena route band over the west pool path where both source photos show irregular stone paving. Trace the bounded transition from at least two source views and the aerial before replacing that local material; do not change the entire Elena lane. New round drain follows the currently drawn surface height so it remains visible while this discrepancy stays open.",
+   "avoid": "Do not move pool/deck rings, route axes, planter or terrain, or infer hidden path edges.",
+   "accept": [
+    "Bounded material transition established from source content",
+    "Inspect from west path and pool side matches photographed paving ordering"
+   ],
+   "features": [
+    "street:elena-south"
+   ],
+   "dependsOn": [],
+   "status": "open",
+   "owner": null
   }
  ]
 }

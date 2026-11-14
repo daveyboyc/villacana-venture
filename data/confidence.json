@@ -470,7 +470,10 @@
   "main_pool_lawn.json:lawn-kiosk-plain": {
    "level": "photographed",
    "why": "IMG_2759, IMG_2762 and IMG_2763 show the kiosk as plain white walls, and the aerial shows its pale flat roof on the registry outline; its louvred doors are a gap."
-  }
+  },
+  "middle_pool.json:middle-pool-shower": {"level": "estimated", "why": "Two parallel stainless posts (0.38 m separation estimated) with inclined swan-necks, small downward head and push control, visible beside the east-lobe life ring in all three photos. Height 2.15 m, 48 mm pipe and ground anchor are estimates (about 1 m placement uncertainty); no solved camera, measured placement approval or underground plumbing inferred."},
+  "middle_pool.json:middle-pool-west-path-drain": {"level": "estimated", "why": "Dark concentric slotted cover with solid centre and pale square surround, in crazy paving OUTSIDE the deck between west planter and pool. Diameter 0.30 m and path anchor estimated (about 1 m uncertainty). Flush fitting follows existing terrain; no path or deck outline changed."},
+  "middle_pool.json:middle-pool-west-deck-cap": {"level": "estimated", "why": "Pale circular inspection lid with small lifting hole on cream slab deck, distinct from the darker slotted path cover. Diameter 0.28 m and anchor estimated (about 1 m uncertainty). Existing deck and pool rings retained."}
  },
  "gaps": [
   {

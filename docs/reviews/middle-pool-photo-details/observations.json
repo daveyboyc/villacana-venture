@@ -1,0 +1,70 @@
+[
+  {
+    "id": "S01",
+    "photo": "IMG_2679.jpg",
+    "locator": [
+      305,
+      610,
+      425,
+      810
+    ],
+    "observed": "Two stainless swan-neck shower posts, downward heads, small mid-height controls.",
+    "estimated": "height 2.15 m; separation 0.38 m; shaft diameter 0.048 m; anchors about 1 m uncertainty",
+    "sourceSize": [
+      1200,
+      1600
+    ],
+    "sourceSha256": "293560ec211c641d58afe6ddc340185d3a226e8f9c1b320552c67d50f8ffc1be"
+  },
+  {
+    "id": "D01",
+    "photo": "IMG_2332.jpg",
+    "locator": [
+      235,
+      1120,
+      330,
+      1215
+    ],
+    "observed": "Concentric dark slotted cover, solid centre, square surround on west crazy paving OUTSIDE deck.",
+    "estimated": "diameter 0.30 m; path anchor about 1 m uncertainty",
+    "sourceSize": [
+      1200,
+      1600
+    ],
+    "sourceSha256": "59c69e145430b93c71e8445df7b5c0b6aa632bb19c70510c17e140351d080f4c"
+  },
+  {
+    "id": "C01",
+    "photo": "IMG_2332.jpg",
+    "locator": [
+      725,
+      1170,
+      820,
+      1235
+    ],
+    "observed": "Separate pale circular deck access lid.",
+    "estimated": "diameter 0.28 m; deck anchor about 1 m uncertainty",
+    "sourceSize": [
+      1200,
+      1600
+    ],
+    "sourceSha256": "59c69e145430b93c71e8445df7b5c0b6aa632bb19c70510c17e140351d080f4c"
+  },
+  {
+    "id": "G01",
+    "photo": "IMG_2340.jpg",
+    "locator": [
+      395,
+      350,
+      500,
+      955
+    ],
+    "observed": "Paired curled motifs inside open east iron leaf.",
+    "estimated": "rod diameter and exact curvature; original leaf transform retained",
+    "sourceSize": [
+      1200,
+      1600
+    ],
+    "sourceSha256": "7401dd45a949aaf546d4c3124221d3452cb3e58cafd38d654297a9ce355cdb4b"
+  }
+]

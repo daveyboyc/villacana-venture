@@ -486,7 +486,7 @@
    "layout",
    "facades"
   ],
-  "note": null,
+  "note": "Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -499,19 +499,20 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "middle_pool.json:middle-pool-shower",
    "raised_terraces.json:middle-pool-north-terrace"
   ],
   "looksAt": [
-   -124.5,
-   96.7
+   -128.5,
+   92.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "pool:middle",
    "pool_decks.json:middle-deck",
-   "backdrop.json:aerial-trees",
-   "street:eva",
-   "pool:middle"
-  ]
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Middle pool, lawn, north patios and twin showers on east lobe"
  },
  {
   "id": "IMG_2194.jpg",
@@ -527,7 +528,7 @@
    "layout",
    "facades"
   ],
-  "note": null,
+  "note": "Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
   "observation": null,
   "taken": "2026-10-11",
   "originalUrl": null,
@@ -540,19 +541,20 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "middle_pool.json:middle-pool-shower",
    "raised_terraces.json:middle-pool-north-terrace"
   ],
   "looksAt": [
-   -125.3,
-   96.2
+   -128.5,
+   92.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "pool_decks.json:middle-deck",
-   "backdrop.json:aerial-trees",
    "pool:middle",
-   "street:eva"
-  ]
+   "pool_decks.json:middle-deck",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Middle pool deck and lawn, with overlapping twin shower posts"
  },
  {
   "id": "IMG_2195.jpg",
@@ -4625,7 +4627,7 @@
    "materials",
    "planting"
   ],
-  "note": "GPS ±14 m. Shows the glass pool fence, which Dave decided to skip.",
+  "note": "GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
   "observation": "Looking north-north-west along the middle pool. A grey-brown crazy-paving path with a drain cover runs between the cream pool deck (behind the glass fence) and a raised white planter wall about 0.8 m high topped by a dense hedge with red flowers. Beyond: a lawn inside the glass fence, a white garden wall with a brown arched-top door, a small pergola entrance, clipped hedges and two-storey white houses with bougainvillea. GPS ±14 m, so the pin alone does not fix which lobe.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1KwI5Jbq64mdQOeLCbWBBAFY_9Mpvjfz4/view?usp=drivesdk",
@@ -4640,22 +4642,25 @@
   "citedBy": [
    "middle_pool_sw_gateway.json:middle-pool-sw-gateway",
    "middle_pool.json:middle-pool-west-planter",
+   "middle_pool.json:middle-pool-west-path-drain",
+   "middle_pool.json:middle-pool-west-deck-cap",
    "middle_pool_north.json:middle-pool-north-planter-cap",
    "middle_pool_north.json:middle-pool-north-door-wall",
    "middle_pool_north.json:middle-pool-north-pergola",
    "middle_pool_north.json:middle-pool-north-white-steps"
   ],
   "looksAt": [
-   -137.5,
-   90.0
+   -136.0,
+   91.0
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "pool_decks.json:middle-deck",
    "elena_lane_paving.json:elena-south-three-column",
-   "street:elena-south",
-   "middle_pool.json:middle-pool-west-planter",
-   "middle_pool_north.json:middle-pool-north-planter-cap"
-  ]
+   "street:elena-south"
+  ],
+  "subject": "Middle pool west stone path, round drain, planter and separate deck lid"
  },
  {
   "id": "IMG_2333.jpg",
@@ -4982,7 +4987,7 @@
    "facades",
    "signage"
   ],
-  "note": "The middle pool east gate from Calle Eva; IMG_2244 shows it from inside.",
+  "note": "The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
   "observation": "A white gateway with square piers and a gently curved coping over a flat head, an open black iron gate, and a terracotta path with a drain leading through to the middle pool (glass fence, bird-of-paradise, hedges). A Comunidad Villacana notice and two blue dog-rule signs are on the right pier; white walls with planting run either side. Matches the gate seen from inside in IMG_2244.",
   "taken": "2026-10-14",
   "originalUrl": "https://drive.google.com/file/d/1lgeErR2x4OEcK6WOLIdHNuFPitdrihkW/view?usp=drivesdk",
@@ -4998,16 +5003,17 @@
    "middle_pool.json:middle-pool-east-gateway"
   ],
   "looksAt": [
-   -117.2,
-   82.2
+   -115.7,
+   81.8
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
-   "street:eva",
    "middle_pool.json:middle-pool-east-gateway",
-   "eva_walled_lawn.json:eva-walled-lawn"
-  ]
+   "eva_walled_lawn.json:eva-walled-lawn",
+   "eva_lane.json:eva-lane-east"
+  ],
+  "subject": "Middle pool east gateway from Calle Eva, open iron leaf and notices"
  },
  {
   "id": "IMG_2341.jpg",
@@ -7686,7 +7692,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "area:paseo"
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
   ],
   "looksAt": [
    28.8,
@@ -15095,7 +15103,7 @@
    "materials",
    "view"
   ],
-  "note": "Pin on the lawn NE of the pool; shows the west houses on the far side of the pool.",
+  "note": "Pin on the lawn NE of the pool; shows the west houses on the far side of the pool. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/19stuRdLBWZjviYCyjEC366pdcNw55ITr/view?usp=drivesdk",
@@ -15107,16 +15115,20 @@
    "altitude": 7.2,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -122.4,
-   82.2
+  "citedBy": [
+   "middle_pool.json:middle-pool-shower"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -128.5,
+   92.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "backdrop.json:aerial-trees",
-   "raised_terraces.json:middle-pool-curved-hedge-patio"
-  ]
+   "pool:middle",
+   "pool_decks.json:middle-deck",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Middle pool and east-lobe twin showers beside the life ring"
  },
  {
   "id": "IMG_2680.jpg",
@@ -16325,7 +16337,7 @@
    "materials",
    "planting"
   ],
-  "note": null,
+  "note": "Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
   "observation": null,
   "taken": "2026-10-27",
   "originalUrl": "https://drive.google.com/file/d/1Cdn4hO_NQJdqIKHZNSzVpnLOga7Dahyu/view?usp=drivesdk",
@@ -16337,17 +16349,22 @@
    "altitude": 5.9,
    "trust": "phone location"
   },
-  "citedBy": [],
-  "looksAt": [
-   -133.0,
-   89.3
+  "citedBy": [
+   "middle_pool.json:middle-pool-west-path-drain",
+   "middle_pool.json:middle-pool-west-deck-cap"
   ],
-  "looksAtBasis": "estimated 6 m along the heading",
+  "looksAt": [
+   -136.0,
+   91.0
+  ],
+  "looksAtBasis": "reviewed",
   "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
    "pool_decks.json:middle-deck",
-   "pool:middle",
-   "backdrop.json:aerial-trees"
-  ]
+   "elena_lane_paving.json:elena-south-three-column",
+   "street:elena-south"
+  ],
+  "subject": "Middle pool west path, drain and deck lid looking towards northwest entrance"
  },
  {
   "id": "IMG_2714.jpg",

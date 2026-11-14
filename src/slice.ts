@@ -42,7 +42,7 @@ import {addBackdropTrees,addRidge,inResortBlock} from "./backdrop";
 import {addElenaNorth,elenaNorthRings,inElenaNorthReview} from "./elena-north";
 import {addRampSteps,stepsGroundOffset} from "./ramp-steps";
 import {addDoorSills,doorSillsGroundOffset,inDoorSillReview} from "./door-sills";
-import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview} from "./middle-pool";
+import {addMiddlePool,inMiddlePoolReview,middlePoolRings,suppressInMiddlePoolReview,settleMiddlePoolPathCover} from "./middle-pool";
 import {smoothClassEdges} from "./class-edges";
 import {batchStatic} from "./static-batch";
 import {pavingCanvas,plasterMaterial,groundMaterial,photoMetres,photoTexture,surfaceTexture} from "./materials";
@@ -290,7 +290,7 @@ async function boot(): Promise<void> {
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
-  addMiddlePool(scene);
+  addMiddlePool(scene, canPlaceDecoration);
   addMiddleSouthGate(scene);
   addElenaGatedEntry(scene);
   addElenaWalkway(scene,!layoutOnly); // portal steps, ramp, patterned floor, signs, doors (data/elena_walkway.json)
@@ -574,6 +574,7 @@ async function boot(): Promise<void> {
   if(!deferDetails){for(const step of detailSteps)runDetail(step,()=>true);detailSteps.length=0;}
   // Everything is built on the flat; now lift it onto the ground heights.
   drapeScene(scene, buildings);
+  settleMiddlePoolPathCover(scene);
   if(!deferDetails)startKit();
   if (new URLSearchParams(location.search).get("export") === "kit") void kitParts.then((parts) => { (window as unknown as { villacanaKit: unknown }).villacanaKit = parts; });
   // Keep the existing finite garden paving visible on the newly surveyed ground.

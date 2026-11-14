@@ -151,7 +151,13 @@
    "layout",
    "facades"
   ],
-  "title": "Middle pool, lawn and terraces behind"
+  "title": "Middle pool, lawn and terraces behind",
+  "looksAt": [
+   -128.5,
+   92.0
+  ],
+  "subject": "Middle pool, lawn, north patios and twin showers on east lobe",
+  "note": "Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor."
  },
  "IMG_2194.jpg": {
   "shows": [
@@ -162,7 +168,13 @@
    "layout",
    "facades"
   ],
-  "title": "Middle pool, lawn and terraces behind (second shot)"
+  "title": "Middle pool, lawn and terraces behind (second shot)",
+  "looksAt": [
+   -128.5,
+   92.0
+  ],
+  "subject": "Middle pool deck and lawn, with overlapping twin shower posts",
+  "note": "Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor."
  },
  "IMG_2195.jpg": {
   "shows": [
@@ -1911,7 +1923,12 @@
    "materials",
    "planting"
   ],
-  "note": "GPS ±14 m. Shows the glass pool fence, which Dave decided to skip."
+  "note": "GPS ±14 m. Shows the glass pool fence, which Dave decided to skip. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
+  "looksAt": [
+   -136.0,
+   91.0
+  ],
+  "subject": "Middle pool west stone path, round drain, planter and separate deck lid"
  },
  "IMG_2339.jpg": {
   "shows": [
@@ -1940,7 +1957,12 @@
    "facades",
    "signage"
   ],
-  "note": "The middle pool east gate from Calle Eva; IMG_2244 shows it from inside."
+  "note": "The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
+  "looksAt": [
+   -115.7,
+   81.8
+  ],
+  "subject": "Middle pool east gateway from Calle Eva, open iron leaf and notices"
  },
  "IMG_2350.jpg": {
   "shows": [
@@ -5852,7 +5874,12 @@
    "materials",
    "view"
   ],
-  "note": "Pin on the lawn NE of the pool; shows the west houses on the far side of the pool."
+  "note": "Pin on the lawn NE of the pool; shows the west houses on the far side of the pool. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor.",
+  "looksAt": [
+   -128.5,
+   92.0
+  ],
+  "subject": "Middle pool and east-lobe twin showers beside the life ring"
  },
  "IMG_2680.jpg": {
   "title": "Middle pool west lawn: crazy-paving path, white curved wall and house frontage",
@@ -6365,7 +6392,13 @@
    "layout",
    "materials",
    "planting"
-  ]
+  ],
+  "looksAt": [
+   -136.0,
+   91.0
+  ],
+  "subject": "Middle pool west path, drain and deck lid looking towards northwest entrance",
+  "note": "Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor."
  },
  "IMG_2714.jpg": {
   "title": "Crazy-paving fork and lawn wedge beside the pool fence",

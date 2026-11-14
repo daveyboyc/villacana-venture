@@ -51,7 +51,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
     const shape=new THREE.Shape(part.map(([x,z])=>new THREE.Vector2(x,-z)));
     const mesh=new THREE.Mesh(new THREE.ShapeGeometry(shape).rotateX(-Math.PI/2),new THREE.MeshStandardMaterial({color,map,roughness:1}));
     if(road){applyElenaPavingUv(mesh.geometry,road);mesh.name=elenaPavingFor(road)!.id;mesh.userData.elenaPaving=true;}
-    mesh.position.y=y;mesh.receiveShadow=true;scene.add(mesh);
+    mesh.position.y=y;mesh.receiveShadow=true;mesh.userData.pavingSurface=true;scene.add(mesh);
    }
   };
   const ribbon=(points:Vec2[],width:number):Vec2[] => {
@@ -83,7 +83,7 @@ export function addBoundaryReference(scene: THREE.Scene, reference: BoundaryRefe
       geometry.setAttribute("position",new THREE.Float32BufferAttribute(positions,3));
       geometry.setAttribute("uv",new THREE.Float32BufferAttribute(uvs,2)); geometry.setIndex(indices); geometry.computeVertexNormals();
       const mesh = new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({color,map,roughness:1,side:THREE.DoubleSide}));
-      mesh.receiveShadow = true; scene.add(mesh);
+      mesh.receiveShadow = true; mesh.userData.pavingSurface = true; scene.add(mesh);
       return ring;
     };
     const edge = strip(road.width+(road.surface==="terracotta"?0.12:0.35),"#f4f0e5",-0.015);
