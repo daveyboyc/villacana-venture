@@ -277,9 +277,9 @@ export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number
     if (length < 1 || nearRing(mx, mz) || !clear(mx, mz, 0.2)) continue;
     const yaw = Math.atan2(b[0] - a[0], b[1] - a[1]);
     const rail = new THREE.Group(); rail.name = "barraka-terrace-rail"; rail.position.set(mx, 0, mz); rail.rotation.y = yaw; group.add(rail);
-    putBox(rail, length, 0.06, 0.06, 0, 0.9, 0, plaster);
-    putBox(rail, 0.06, 0.9, 0.06, -length / 2 + 0.04, 0.45, 0, plaster);
-    putBox(rail, 0.06, 0.9, 0.06, length / 2 - 0.04, 0.45, 0, plaster);
+    putBox(rail, length, 0.08, 0.08, 0, 0.92, 0, plaster);
+    putBox(rail, length, 0.08, 0.06, 0, 0.48, 0, plaster);
+    for (let s = 0.2; s < length; s += 1.5) putBox(rail, 0.07, 0.92, 0.07, -length / 2 + s, 0.46, 0, plaster);
   }
 }
 
