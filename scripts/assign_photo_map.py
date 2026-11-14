@@ -289,6 +289,13 @@ def features(s):
         for f in plan['surfaces']:
             shape=ribbon(f['lines'][0],f['width']/2) if f['kind']=='path' else f['outline']
             add(plan_file.name+':'+f['id'],f['name'],'reference feature',f.get('note') or plan['trust'],evidence=f['evidence'],ring=shape)
+    # Photo-plain fronts, measured parapets and bare garden walls (data/plain_fronts.json, src/plain-fronts.ts, src/station-parapet.ts).
+    plain_fronts=json.loads((ROOT/'data/plain_fronts.json').read_text())
+    box=lambda b:[[b[0],b[1]],[b[2],b[1]],[b[2],b[3]],[b[0],b[3]]]
+    for f in plain_fronts['fronts']+plain_fronts.get('bareWalls',[]):
+        add('plain_fronts.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['trust'],evidence=f['evidence'],ring=box(f['box']))
+    for f in plain_fronts.get('parapets',[]):
+        add('plain_fronts.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['trust'],evidence=f['evidence'],points=[f['from'],f['to']])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

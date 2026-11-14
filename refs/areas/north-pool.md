@@ -20,6 +20,7 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 - 14 Nov (ground-plan-north-pool): the crazy-paving path is now in data/ground_plan_north_pool.json (smooth centreline) with the lawn round the deck. Through the solved station camera the lawn and deck line up with IMG_2204/2205. Open: IMG_2204 shows the paving continuing down the west side and along the south behind the hedges; IMG_2205 shows Calle Isabel there as crazy-paving stones curving down past the tree, not a straight terracotta lane.
 - 15 Nov: through the solved IMG_2204 camera the crazy paving runs at the foot of the curved west wall (it had been drawn on the wall top) and on along the south behind the hedges; Calle Isabel beside the lawn is crazy paving, not terracotta (IMG_2205). Open discrepancy: pixels on the north paving cast 1-3 m north of the modelled north stretch, which would put it inside the patios.
 - 15 Nov (ground plan complete): through the solved station camera the lawn's south edge is the long south hedge and the hibiscus hedge with its white kerb, 3-5 m north of the earlier aerial trace (the aerial read the hedges as grass); a path runs south beside the hibiscus hedge from the west paving and another through the gap in the south hedges; the twelve hibiscus hedge objects are replaced by these hedges; the feathery tree by the north paving and the yucca by Calle Isabel are moved to their photo positions; the giant strelitzia already matched. Open: the north paving discrepancy, south of the hedges (unseen), and the buildings next to the camera that block IMG_2206 (north-pool-station-foreground).
+- 15 Nov (north-pool-station-foreground): the station camera (IMG_2204-2208) stands on the south row's roof half a metre south of the edge it shares with the one-storey part1; the barrel tiles at its feet are a parapet coping on that edge at about 8.0-8.3 m (rays through the tile ends), and beyond it the photos look straight down into the gardens. The row's north face has no projecting balconies or porch roofs, and the near block and notch face are plain. South of the west path two white patio walls about 1.8 m high with curved cappings and brown doors enclose a terracotta patio with a parasol (floor casts to about -184, 31.8); the generated 1 m garden walls stand in the right place but without height, cappings or doors. Open: the gates' positions (feet hidden from the roof; request north-pool-gated-patio-gates), the near block's notch corner about 0.4-0.5 m east and its top about 1 m low in IMG_2206, and the yucca by Calle Isabel, dropped by the route-clearance guard (north-pool-station-details).
 
 ## Read first
 
@@ -55,8 +56,9 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 | P1 | `north-pool-unresolved-plan` [#98](https://github.com/daveyboyc/villacana-venture/issues/98) | North pool: resolve concealed ground edges, lane widths and remaining roof projections (after north-pool-alignment-audit) | open · placement: not-applicable | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2207](../../public/photos-ref/IMG_2207.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2363](../../public/photos-ref/IMG_2363.jpg) |
 | P1 | `pool-deck-outline` | North pool: trace the deck outline and squared deck tongue from the solved cameras (after pool-detail) | open · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg) |
 | P2 | `ground-plan-north-pool` | North pool: smooth paths, patios and green spaces with their edges and boundaries (after ground-plan-framework) | in-progress · Claude · placement: not-verified | [IMG_2204](../../public/photos-ref/IMG_2204.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg) |
-| P2 | `north-pool-station-foreground` | North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view | open · placement: not-verified | [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2204](../../public/photos-ref/IMG_2204.jpg) |
+| P2 | `north-pool-station-foreground` | North pool: the buildings round the IMG_2204-2206 station that block the solved camera's view | in-progress · Claude · placement: not-verified | [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg), [IMG_2204](../../public/photos-ref/IMG_2204.jpg) |
 | P2 | `path-network-inventory-north-pool` [#125](https://github.com/daveyboyc/villacana-venture/issues/125) | North pool: full-source path, tunnel and boundary inventory (after path-network-baseline) | open · placement: not-applicable |  |
+| P3 | `north-pool-station-details` | North pool: gated patio walls, near block and yucca round the station camera (after north-pool-station-foreground) | open · placement: not-verified | [IMG_2206](../../public/photos-ref/IMG_2206.jpg), [IMG_2208](../../public/photos-ref/IMG_2208.jpg), [IMG_2205](../../public/photos-ref/IMG_2205.jpg) |
 
 ## Built from these photos
 
@@ -97,19 +99,38 @@ graph LR
   F7 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F7 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F7 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F8["North pool deck · disputed"]
-  F8 --> PIMG_2204_jpg(["IMG_2204"])
-  F8 --> PIMG_2205_jpg(["IMG_2205"])
+  A --> F8["north pool gated patio walls · disputed"]
   F8 --> PIMG_2206_jpg(["IMG_2206"])
-  A --> F9["North pool · low northern patio plinths and white steps · unreviewed"]
-  F9 --> PIMG_2204_jpg(["IMG_2204"])
-  F9 --> PIMG_2205_jpg(["IMG_2205"])
+  F8 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F9["north pool station near · unreviewed"]
+  F9 --> PIMG_2206_jpg(["IMG_2206"])
   F9 --> PIMG_2207_jpg(["IMG_2207"])
   F9 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F10["North pool · north-west raised terrace and tiled stair · disputed"]
-  F10 --> PIMG_2204_jpg(["IMG_2204"])
+  A --> F10["north pool station notch west face · unreviewed"]
   F10 --> PIMG_2206_jpg(["IMG_2206"])
-  F10 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F11["north pool station parapet · disputed"]
+  F11 --> PIMG_2205_jpg(["IMG_2205"])
+  F11 --> PIMG_2206_jpg(["IMG_2206"])
+  F11 --> PIMG_2207_jpg(["IMG_2207"])
+  F11 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F12["north pool station row · disputed"]
+  F12 --> PIMG_2205_jpg(["IMG_2205"])
+  F12 --> PIMG_2206_jpg(["IMG_2206"])
+  F12 --> PIMG_2207_jpg(["IMG_2207"])
+  F12 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F13["North pool deck · disputed"]
+  F13 --> PIMG_2204_jpg(["IMG_2204"])
+  F13 --> PIMG_2205_jpg(["IMG_2205"])
+  F13 --> PIMG_2206_jpg(["IMG_2206"])
+  A --> F14["North pool · low northern patio plinths and white steps · unreviewed"]
+  F14 --> PIMG_2204_jpg(["IMG_2204"])
+  F14 --> PIMG_2205_jpg(["IMG_2205"])
+  F14 --> PIMG_2207_jpg(["IMG_2207"])
+  F14 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F15["North pool · north-west raised terrace and tiled stair · disputed"]
+  F15 --> PIMG_2204_jpg(["IMG_2204"])
+  F15 --> PIMG_2206_jpg(["IMG_2206"])
+  F15 --> PIMG_2208_jpg(["IMG_2208"])
 ```
 
 ## Placement evidence
@@ -126,6 +147,11 @@ graph LR
 | `north_west_canopies.json:north-west-balcony-canopy-1` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `north_west_canopies.json:north-west-balcony-canopy-2` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `north_west_canopies.json:north-west-balcony-canopy-3` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `plain_fronts.json:north-pool-gated-patio-walls` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy north-pool-gated-patio-walls |
+| `plain_fronts.json:north-pool-station-near` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `plain_fronts.json:north-pool-station-notch-west-face` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `plain_fronts.json:north-pool-station-parapet` | disputed | differs | open discrepancy photo-discrepancy:c1458fda90bbd4a7 |
+| `plain_fronts.json:north-pool-station-row` | disputed | differs | open discrepancy photo-discrepancy:dce4fba3c75700e6 |
 | `pool_decks.json:north-deck` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy north-deck-shape |
 | `raised_terraces.json:north-pool-north-patios` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `raised_terraces.json:north-pool-west-terrace` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy north-west-terrace-extents |
@@ -155,6 +181,9 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `ground-plan-north-pool` | [IMG_2204](../../public/photos-ref/IMG_2204.jpg) | **differs** → `ground-plan-north-pool` | [after](../../docs/reviews/ground-plan-north-pool/IMG_2204-after.png) | The lawn now ends at the two hedges as in the photo (it ran 3-5 m past them), the crazy paving runs at the foot of the curved west wall and down beside the hibiscus hedge, a short path leaves through the gap in the south hedges, and the giant strelitzia stands at its photographed base. Projected back through this camera every new line falls on its feature in the photo (docs/reviews/ground-plan-north-pool/IMG_2204-ground-projection.jpg). Still different: the modelled north paving and the tree beside it sit 1-3 m south of where this camera casts them (open discrepancy, kept against the patio fronts); the hedges' leaf texture is coarser. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only. |
 | `ground-plan-north-pool` | [IMG_2205](../../public/photos-ref/IMG_2205.jpg) | **differs** → `north-pool-station-foreground` | [after](../../docs/reviews/ground-plan-north-pool/IMG_2205-after.png) | Calle Isabel beside the lawn is crazy paving along the line the photo shows, the lawn and deck line up and the yucca now stands at the lane's lawn edge behind the white post. Different: the model's pergola roof next to the camera covers the yucca and the lower right of the view (north-pool-station-foreground). Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only. |
 | `ground-plan-north-pool` | [IMG_2206](../../public/photos-ref/IMG_2206.jpg) | **differs** → `north-pool-station-foreground` | [after](../../docs/reviews/ground-plan-north-pool/IMG_2206-after.png) | The lawn, the crazy paving at the foot of the curved wall and the hedges show at the right of the view as in the photo; the left half is filled by the model's white block and tiled pergola next to the camera where the photo looks over the west gardens, the bougainvillea and the gateway (north-pool-station-foreground). Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only. |
+| `north-pool-station-foreground` | [IMG_2206](../../public/photos-ref/IMG_2206.jpg) | **differs** → `north-pool-station-details` | [after](../../docs/reviews/north-pool-station-foreground/IMG_2206-after.png) | The west gardens now show: the curved white wall, the lawn and crazy paving, the hibiscus hedge, the gated patio walls (bare, without the generated hedge mass) and the terracotta patio behind them; no balconies or porch roofs on the row's north face, and the near block is plain. Still different: the patio walls are 1 m generated walls without the photo's 1.8 m height, curved cappings and brown doors; the near block's notch corner sits about 0.4-0.5 m east of the photo's edge and its top about 1 m low; the bougainvillea is not modelled. Camera: the solved station pose (data/photo_poses.json); a photographic diagnostic, not placement approval. Agent-reviewed only. |
+| `north-pool-station-foreground` | [IMG_2205](../../public/photos-ref/IMG_2205.jpg) | **differs** → `north-pool-station-details` | [after](../../docs/reviews/north-pool-station-foreground/IMG_2205-after.png) | The foreground is now the barrel-tile parapet coping and the white block at the right, as in the photo, instead of the generated pergola roof; the pool, lawn, hedges and the row behind line up. Still different: the yucca in the middle of the view is not drawn (the route-clearance guard drops it, gap:north-pool-station-yucca), the white post in front of it is not modelled, and the near right block reads taller in the photo. Camera: the solved station pose (data/photo_poses.json); a photographic diagnostic, not placement approval. Agent-reviewed only. |
+| `north-pool-station-foreground` | [IMG_2204](../../public/photos-ref/IMG_2204.jpg) | **matches** | [after](../../docs/reviews/north-pool-station-foreground/IMG_2204-after.png) | Nothing next to the camera blocks the view any more: the hedges below the station, the lawn, the pool and its deck and the north row line up with the photo. The generic plant shapes and the missing parasols and glass fence are detail differences outside this task. Camera: the solved station pose (data/photo_poses.json); a photographic diagnostic, not placement approval. Agent-reviewed only. |
 
 **Built without complete newer photo-check records:** `north-pool-garden-walls`, `raised-terraces`. Earlier manual reviews may exist; this record does not establish photographic fidelity. See the verification backlog in `refs/QUEUE.md`.
 
@@ -162,14 +191,14 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-west-terrace, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-near, plain_fronts.json:north-pool-station-notch-west-face, plain_fronts.json:north-pool-gated-patio-walls, plain_fronts.json:north-pool-station-parapet._ |
+| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:calle-isabel-crazy-paving, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-parapet._ |
 | [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:calle-isabel-crazy-paving._ |
-| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:calle-isabel-crazy-paving._ |
-| [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-west-terrace, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path._ |
-| [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. _Used by: raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn-path._ |
+| [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. _Used by: raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn-path, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-near, plain_fronts.json:north-pool-gated-patio-walls, plain_fronts.json:north-pool-station-parapet._ |
+| [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. **Compass:** the subject is 60° from the phone heading; trust looksAt, not the heading. _Used by: raised_terraces.json:north-pool-north-patios, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-near, plain_fronts.json:north-pool-station-parapet._ |
 | `villacana-reference/apple-maps/02-3d-north-pool.png` | aerial | layout, facades | Apple Maps 3D: north pool and surrounding terraces _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
 | `villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png` | aerial | facades | Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
 | `villacana-reference/apple-maps/09-3d-north-pool-looking-south.png` | aerial | layout | Apple Maps 3D: north pool looking south, lawn ring, curved path, deck _Used by: north_west_canopies.json:north-west-balcony-canopy-1, north_west_canopies.json:north-west-balcony-canopy-2, north_west_canopies.json:north-west-balcony-canopy-3._ |
-| [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. **Compass:** the subject is 60° from the phone heading; trust looksAt, not the heading. _Used by: raised_terraces.json:north-pool-north-patios._ |
 | `villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg` | upper-floor | layout, facades, planting, view | North pool: the whole courtyard looking north. The best single reference for it. |
 | `villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png` | ground | facades, materials, planting | North pool lawn at ground level, April 2021. The key style reference. |
 | `villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg` | upper-floor | layout, materials, planting | North pool looking down over barrel roof tiles: hedges, gates, crazy paving |

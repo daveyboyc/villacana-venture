@@ -514,6 +514,26 @@
   "ground_plan_north_pool.json:calle-isabel-crazy-paving": {
    "level": "estimated",
    "why": "IMG_2205 shows crazy paving on the lane; its west edge cast through the solved camera agrees with the mapped lane to about half a metre. The east edge is hidden by the yucca; width estimated."
+  },
+  "plain_fronts.json:north-pool-station-row": {
+   "level": "photographed",
+   "why": "IMG_2205-2208 show the north face of the south row plain, with no projecting balconies or porch roofs; the generated porches there are removed. Ground-floor openings behind the patio walls are unseen and left as generated."
+  },
+  "plain_fronts.json:north-pool-station-near": {
+   "level": "photographed",
+   "why": "IMG_2206 and IMG_2207 show the white block beside the station camera plain, with no windows, doors or shutters."
+  },
+  "plain_fronts.json:north-pool-station-notch-west-face": {
+   "level": "photographed",
+   "why": "IMG_2206 shows the notch face west of the camera as plain white wall; the generated shutter window at (-178.5, 35.2) is removed."
+  },
+  "plain_fronts.json:north-pool-station-parapet": {
+   "level": "photographed",
+   "why": "Barrel-tile coping seen at the camera in IMG_2205-2208; rays through the tile ends meet the shared roof edge at 8.01-8.15 m, so its line and height are measured through the solved station camera."
+  },
+  "plain_fronts.json:north-pool-gated-patio-walls": {
+   "level": "photographed",
+   "why": "IMG_2206 and IMG_2208 show the low garden walls here as white patio walls with gates and climbers, not hedge; the generated hedge runs on them are left out. The walls' own height, cappings and doors are not yet modelled as photographed (gap:north-pool-gated-patio-walls)."
   }
  },
  "gaps": [
@@ -869,6 +889,32 @@
     "IMG_2204.jpg"
    ],
    "why": "The station camera stands on the roof south of the hedges and cannot see between them and the south row; the two paths that leave the lawn south (one along the hibiscus hedge, one through the gap) run out of view. Not modelled."
+  },
+  {
+   "id": "gap:north-pool-gated-patio-walls",
+   "name": "Gated patio walls south of the north pool's west path",
+   "at": [
+    -184.0,
+    31.5
+   ],
+   "photos": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ],
+   "why": "Two white patio walls about 1.8 m high with curved cappings and brown plank doors, bougainvillea and plumbago over them, and a terracotta patio with a parasol behind. The model has the generated 1 m garden walls in the right place (rays through the solved IMG_2206 camera) but not their height, cappings or doors; the door feet are hidden by planting, so their positions along the walls are not measured."
+  },
+  {
+   "id": "gap:north-pool-station-yucca",
+   "name": "Yucca by Calle Isabel not drawn",
+   "at": [
+    -164.2,
+    22.45
+   ],
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg"
+   ],
+   "why": "The yucca (o13) is placed where its trunk casts through the solved IMG_2205 camera, but the route-clearance guard drops its sprite: its 4.2 m visible canopy needs 2.85 m from the Calle Elena protected route's centreline and the trunk stands 1.3 m from it. Left out rather than bypassing the guard; needs a decision on the guard there or a narrower yucca model."
   }
  ]
 }

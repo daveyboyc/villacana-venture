@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 437,
+  "features": 442,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 182
+  "modelFeaturesWithPhotoCitations": 187
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1058,7 +1058,9 @@
     "raised_terraces.json:north-pool-north-patios",
     "ground_plan_north_pool.json:north-pool-lawn",
     "ground_plan_north_pool.json:north-pool-lawn-path",
-    "ground_plan_north_pool.json:calle-isabel-crazy-paving"
+    "ground_plan_north_pool.json:calle-isabel-crazy-paving",
+    "plain_fronts.json:north-pool-station-row",
+    "plain_fronts.json:north-pool-station-parapet"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1100,7 +1102,12 @@
     "pool_decks.json:north-deck",
     "raised_terraces.json:north-pool-west-terrace",
     "ground_plan_north_pool.json:north-pool-lawn",
-    "ground_plan_north_pool.json:north-pool-lawn-path"
+    "ground_plan_north_pool.json:north-pool-lawn-path",
+    "plain_fronts.json:north-pool-station-row",
+    "plain_fronts.json:north-pool-station-near",
+    "plain_fronts.json:north-pool-station-notch-west-face",
+    "plain_fronts.json:north-pool-gated-patio-walls",
+    "plain_fronts.json:north-pool-station-parapet"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1137,7 +1144,10 @@
     }
    ],
    "citedBy": [
-    "raised_terraces.json:north-pool-north-patios"
+    "raised_terraces.json:north-pool-north-patios",
+    "plain_fronts.json:north-pool-station-row",
+    "plain_fronts.json:north-pool-station-near",
+    "plain_fronts.json:north-pool-station-parapet"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -1176,7 +1186,11 @@
    "citedBy": [
     "raised_terraces.json:north-pool-west-terrace",
     "raised_terraces.json:north-pool-north-patios",
-    "ground_plan_north_pool.json:north-pool-lawn-path"
+    "ground_plan_north_pool.json:north-pool-lawn-path",
+    "plain_fronts.json:north-pool-station-row",
+    "plain_fronts.json:north-pool-station-near",
+    "plain_fronts.json:north-pool-gated-patio-walls",
+    "plain_fronts.json:north-pool-station-parapet"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

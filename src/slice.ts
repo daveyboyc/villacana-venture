@@ -65,6 +65,8 @@ import { addSeafrontFence, seafrontFenceRings } from "./seafront-fence";
 import { addPicassoLawnWall, picassoLawnWallRings } from "./picasso-lawn-wall";
 import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings, PLAIN_LAWN_BUILDINGS } from "./main-pool-lawn";
 import { addGroundPlan, groundPlanSolidRings, paintGroundPlan } from "./ground-plan";
+import { bareGardenWall, plainForOpenings, plainForPorches } from "./plain-fronts";
+import { addStationParapets } from "./station-parapet";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -211,6 +213,8 @@ async function boot(): Promise<void> {
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;scene.add(backdrop);
   addBuildings(scene, buildings, skeleton.floorHeight);
+  // Tiled roof-edge parapets measured through solved photo cameras (data/plain_fronts.json parapets).
+  addStationParapets(scene, (id) => { const b = buildings.find((x) => x.id === id); if (!b) return undefined; const c = centroid(b.ring); return siteY(c.x, c.z) + b.floors * skeleton.floorHeight; });
   const host=buildings.find(b=>b.id===SILVIA_HOST);
   // Same level datum as the surrounding host, both taken on the lane through the tunnel so the
   // floor meets Calle Silvia at either end on sloping ground; the model is not terrain-draped.
@@ -234,6 +238,13 @@ async function boot(): Promise<void> {
   // the flat shutters except on the walls traced from photos.
   const kitWalls = layoutOnly ? new Set<string>() : facadeKitWalls(houses, matchMedia("(max-width:700px), (max-height:500px)").matches);
   for (const wall of [...kitWalls]) if (PLAIN_LAWN_BUILDINGS.has(wall.slice(0, wall.lastIndexOf(":")))) kitWalls.delete(wall); // plain kiosk (data/main_pool_lawn.json)
+  // Faces the photos show plain carry no generated kit openings (data/plain_fronts.json).
+  for (const b of houses) b.ring.forEach(([ax, az], i) => {
+    const [bx, bz] = b.ring[(i + 1) % b.ring.length], length = Math.hypot(bx - ax, bz - az) || 1, mx = (ax + bx) / 2, mz = (az + bz) / 2;
+    let nx = (bz - az) / length, nz = -(bx - ax) / length;
+    if (pointInRing(mx + nx * 0.3, mz + nz * 0.3, b.ring)) { nx = -nx; nz = -nz; }
+    if (plainForOpenings(mx, mz, nx, nz)) kitWalls.delete(`${b.id}:${i}`);
+  });
   let kitReady:(parts:Awaited<ReturnType<typeof addFacadeKit>>)=>void=()=>{};
   const kitParts=new Promise<Awaited<ReturnType<typeof addFacadeKit>>>(resolve=>{kitReady=resolve;});
   // The facade kit takes each house's floor level as draped (src/facade-kit.ts), so it starts once
@@ -1084,6 +1095,7 @@ function addShutters(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHei
         nx = -nx;
         nz = -nz;
       }
+      if (plainForOpenings(mx, mz, nx, nz)) continue; // photo-plain faces (data/plain_fronts.json)
       const count = Math.max(1, Math.floor(length / 3.1));
       const turn = new THREE.Quaternion().setFromAxisAngle(up, Math.atan2(nx, nz));
       for (let k = 0; k < count; k++) {
@@ -1152,7 +1164,7 @@ function addGardenWalls(scene: THREE.Scene, walls: Vec2[], reference?: BoundaryR
   scene.add(blocks, lengths);
 
   // Hedges come in runs: a few metres of hedge, then bare wall.
-  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5 && !reference?.roads.some((road) => road.surface === "terracotta" && roadHeight(road,x,z).distance < road.width/2 + 1.5));
+  const hedged = walls.filter(([x, z]) => hash(Math.floor(x / 4), Math.floor(z / 4)) < 0.5 && !bareGardenWall(x, z) && !reference?.roads.some((road) => road.surface === "terracotta" && roadHeight(road,x,z).distance < road.width/2 + 1.5));
   const place = ([x, z]: Vec2): SpritePlacement => ({ x, y: 0.55, z, scale: 0.9 + hash(x, z) * 0.3 });
   const flowering = (p: Vec2) => hash(Math.floor(p[0] / 8), Math.floor(p[1] / 8)) < 0.5;
   addSprites(scene, "hibiscus_hedge", hedged.filter(flowering).map(place));
@@ -1209,6 +1221,7 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         if(inJorgePlainFront(x,z)||inJorgePlainWall(x,z))continue;
         if(inLaneFrontageBand(x,z))continue;
         if(inLawnPlainFront(x,z,nz))continue;
+        if(plainForPorches(x,z,nx,nz))continue; // photo-plain faces (data/plain_fronts.json)
         if(inNorthWestCanopy(x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         if(!routeClearance(protectedRoutesForPorches,x+nx*1.3,z+nz*1.3,WIDTH/2))continue;
         // Only where the house looks out over a lane or garden.
