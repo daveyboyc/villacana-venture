@@ -46,6 +46,8 @@ def main():
     queue = read(ROOT, 'data/build_queue.json')['tasks']
     if args.render and (not args.task or args.task not in {t['id'] for t in queue}):
         parser.error('--render requires --task with an existing queue task ID')
+    if args.render and next(t for t in queue if t['id'] == args.task)['area'] not in (args.area, 'whole-resort'):
+        parser.error('--task must belong to the selected area or be a whole-resort task')
     # New intake can be present before its sources have been tagged. Report schema errors, but do
     # not let this command treat a broken evidence graph as successful validation.
     result = subprocess.run([sys.executable, 'scripts/build_references.py', '--check'], cwd=ROOT,
@@ -97,6 +99,7 @@ def main():
         for script in ('test_model_loop.py', 'test_photo_assignment.py', 'test_reference_index.py', 'test_placement_verification.py'):
             run([sys.executable, 'scripts/' + script])
         run(['npm', 'run', 'build'])
+        run(['node', 'scripts/test_scorecard_browser.cjs'])
         run(['node', 'scripts/test_inspection_browser.cjs'])
         run(['node', 'scripts/test_photo_map_browser.cjs'])
         print('Software validation passed. Evidence gaps remain work items; software results do not grant visual or placement acceptance.')

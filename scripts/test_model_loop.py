@@ -176,6 +176,15 @@ class ModelLoop(unittest.TestCase):
         node['sources'] = []
         self.assertTrue(change_errors(before, after, []))
 
+    def test_accepted_review_history_cannot_be_removed(self):
+        self.item['review'] = self.review()
+        self.item['status'] = 'closed'
+        _, nodes, edges, errors = self.build()
+        self.assertEqual(errors, [])
+        before = {'nodes': nodes, 'edges': edges}
+        after = {'nodes': [n for n in nodes if n['kind'] != 'loop-review'], 'edges': edges}
+        self.assertTrue(any('historical loop review' in e for e in change_errors(before, after, [])))
+
     def test_workflow_records_are_not_geometry(self):
         for name in ('acceptance_standard', 'discrepancies', 'evidence_requests'):
             self.assertFalse(geometry_path(f'data/{name}.json'))

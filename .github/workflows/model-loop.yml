@@ -1,6 +1,13 @@
 name: Continuous evidence loop
 
 on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/map/**'
+      - '.github/workflows/model-loop.yml'
   push:
     branches: [main]
     paths:

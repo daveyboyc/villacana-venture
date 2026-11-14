@@ -22,6 +22,10 @@ def change_errors(before, after, changed):
     new_nodes={n['id']:n for n in after.get('nodes',[])}
     for id,node in old_nodes.items():
         kind=node.get('kind');current=new_nodes.get(id)
+        if kind=='loop-review':
+            if current is None or current!=node:
+                errors.append(f'{id}: historical loop review cannot be deleted or rewritten; retain it in reviewHistory')
+            continue
         if kind=='model-discrepancy':
             if current is None:
                 errors.append(f'{id}: model discrepancy history cannot be deleted')

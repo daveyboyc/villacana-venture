@@ -1,5 +1,6 @@
 // Inspect scorecard: area selection, scoped evidence flags, desktop/phone layout.
-// Software WebGL is expensive: reuse one scene per device and allow full detail startup.
+// Exercise the widget in Layout; detailed geometry is outside this scorecard data/UI check.
+// Reuse one scene per device to avoid repeating software WebGL startup.
 const { chromium, devices } = require('playwright');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -20,7 +21,7 @@ const path = require('node:path');
       const page = await context.newPage(), errors = [];
       page.setDefaultTimeout(240000);
       page.on('pageerror', e => errors.push(e.message));
-      await page.goto(`${site}/slice.html?pool=north&view=overview&area=north-pool&scorecard=1`);
+      await page.goto(`${site}/slice.html?pool=north&view=overview&area=north-pool&scorecard=1&details=0`);
       await page.locator('#scene[data-ready="true"]').waitFor();
       for (const [target, area] of [['north-pool', 'north-pool'], ['elena-north', 'elena']]) {
         await page.selectOption('#inspection-area', target);

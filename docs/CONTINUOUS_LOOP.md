@@ -42,7 +42,8 @@ flowchart TD
    python3 scripts/photo_loop.py --area north-pool --render --task loop-discrepancies --as before
    ```
 
-   This also makes overlays. Inspect every relevant source and record each
+   This also makes overlays. Overlay rendering uses Pillow, NumPy and SciPy, as
+   the existing `photo_pose.py` workflow does. Inspect every relevant source and record each
    difference in `data/discrepancies.json`: stable ID, area, kind, description,
    source IDs, affected feature IDs, follow-up task, status and request IDs.
    Split broad inventory findings into individual corrections. Keep original
@@ -93,7 +94,7 @@ and rerun the command. Linked photo requests progress from open to received to
 answered through their existing review process. Map/measurement requests use
 `sources`, `reviewer` and `note` before `status: answered`.
 
-The push/daily/manual **Continuous evidence loop** Action builds the current app,
+The PR/push/daily/manual **Continuous evidence loop** Action builds the current app,
 checks the graph and Inspect, and uploads the current work list with outstanding
 requests. Missing evidence is reported rather than treated as a failed build.
 It does not run a model-editing agent or invent visual judgments. Continuous
