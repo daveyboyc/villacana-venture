@@ -16,6 +16,10 @@
   "confirmedUniqueTunnels": null,
   "registryOutlines": 230
  },
+ "modelLoop": {
+  "standard": "villacana-evidence-v1",
+  "report": "public/photo-loop.json"
+ },
  "modelState": {
   "alberto_passage.json:calle-alberto-22-40-porch": {
    "modelDigest": "18d48630eb015cfafe922f3280c80ce0e321c16eb277aa6c02cc116ebabfd6a6",
@@ -45852,13 +45856,14 @@
    "featureId": "pool_decks.json:north-deck",
    "kind": "model-feature",
    "name": "North pool deck",
-   "verification": "unreviewed",
+   "verification": "disputed",
    "photoVerification": "unchecked",
    "placement": {
-    "status": "unreviewed",
+    "status": "disputed",
     "scope": "placement only",
     "blockers": [
-     "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+     "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+     "open model-loop discrepancy north-deck-shape"
     ],
     "reviewIds": [],
     "reportIds": [],
@@ -45966,13 +45971,14 @@
    "featureId": "raised_terraces.json:north-pool-west-terrace",
    "kind": "model-feature",
    "name": "North pool · north-west raised terrace and tiled stair",
-   "verification": "unreviewed",
+   "verification": "disputed",
    "photoVerification": "incomplete",
    "placement": {
-    "status": "unreviewed",
+    "status": "disputed",
     "scope": "placement only",
     "blockers": [
-     "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+     "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+     "open model-loop discrepancy north-west-terrace-extents"
     ],
     "reviewIds": [],
     "reportIds": [],
@@ -48691,6 +48697,20 @@
      "street:elena-south"
     ]
    }
+  },
+  {
+   "id": "task:continuous-evidence-loop",
+   "kind": "build-task",
+   "name": "Continuous model development: tracked discrepancies, scoped photo/map requests and current acceptance",
+   "priority": 1,
+   "status": "done",
+   "verification": "not-applicable",
+   "photoVerification": "not-applicable (tooling)",
+   "placement": {
+    "status": "not-applicable",
+    "features": []
+   },
+   "issue": 235
   },
   {
    "id": "placement-discrepancy:barraka-planter-position",
@@ -101527,6 +101547,696 @@
    "areas": [
     "whole-resort"
    ]
+  },
+  {
+   "id": "standard:villacana-evidence-v1",
+   "placementRmsM": 0.3,
+   "appearanceChecklist": [
+    "presence",
+    "shape",
+    "materials",
+    "visible-details"
+   ],
+   "scope": "Tracked discrepancies and declared feature placement, judged in Inspect. Acceptance does not certify hidden boundaries or the whole area. Heights require an explicit source-backed tolerance.",
+   "kind": "acceptance-standard"
+  },
+  {
+   "id": "evidence-request:north-west-stair-views",
+   "area": "north-pool",
+   "kind": "evidence-request",
+   "ask": "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends.",
+   "why": "Resolve the stair/terrace position and height transition without guessing concealed limits.",
+   "photoRequest": "north-pool-west-stair",
+   "features": [
+    "raised_terraces.json:north-pool-west-terrace"
+   ],
+   "tasks": [],
+   "status": "open",
+   "sources": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:north-pool-ground-boundaries",
+   "area": "north-pool",
+   "kind": "evidence-request",
+   "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
+   "requirements": [
+    "Georeference the source with scale and registration controls",
+    "Report held-out landmarks and uncertainty",
+    "Distinguish ground walls from projecting roofs"
+   ],
+   "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
+   "features": [],
+   "tasks": [],
+   "status": "open",
+   "sources": [],
+   "state": "open",
+   "evidenceKind": "map"
+  },
+  {
+   "id": "evidence-request:photo-elena-25-far-end",
+   "area": "elena",
+   "kind": "evidence-request",
+   "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
+   "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+   "photoRequest": "elena-25-far-end",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-elena-25-from-lane",
+   "area": "elena",
+   "kind": "evidence-request",
+   "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
+   "why": "task elena-25-passage: register the portal on the lane",
+   "photoRequest": "elena-25-from-lane",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-elena-roof-station",
+   "area": "elena",
+   "kind": "evidence-request",
+   "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+   "why": "task facade-kit-elena: a roof camera that can be solved",
+   "photoRequest": "elena-roof-station",
+   "status": "open",
+   "sources": [
+    "IMG_2537.jpg",
+    "IMG_2538.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "received",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-cervantes-east-from-elena",
+   "area": "cervantes",
+   "kind": "evidence-request",
+   "ask": "Cervantes east of Elena: stand at the Elena end and photograph along the lane towards Pintor Picasso.",
+   "why": "no photo covers this half of Cervantes (levels item cervantes-east-north-bed)",
+   "photoRequest": "cervantes-east-from-elena",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-cervantes-east-from-picasso",
+   "area": "cervantes",
+   "kind": "evidence-request",
+   "ask": "Cervantes from the Pintor Picasso end, looking west along the lane; then one side-on to the white kerb wall and plumbago hedge.",
+   "why": "no photo covers this half of Cervantes",
+   "photoRequest": "cervantes-east-from-picasso",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-cervantes-junction-patio",
+   "area": "cervantes",
+   "kind": "evidence-request",
+   "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+   "why": "levels item cervantes-junction-north-patio",
+   "photoRequest": "cervantes-junction-patio",
+   "status": "open",
+   "sources": [
+    "IMG_2538.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "received",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-guillermo-lane-walk",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
+   "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
+   "photoRequest": "guillermo-lane-walk",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-guillermo-lawn-edge",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+   "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+   "photoRequest": "guillermo-lawn-edge",
+   "status": "open",
+   "sources": [
+    "IMG_2762.jpg",
+    "IMG_2763.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "received",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-beach-gateway",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+   "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+   "photoRequest": "beach-gateway",
+   "status": "open",
+   "sources": [
+    "IMG_2602.jpg",
+    "IMG_2603.jpg",
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2766.jpg",
+    "IMG_2767.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "received",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-beach-verge",
+   "area": "barraka-beach",
+   "kind": "evidence-request",
+   "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+   "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+   "photoRequest": "beach-verge",
+   "status": "open",
+   "sources": [
+    "IMG_2764.jpg",
+    "IMG_2770.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "received",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-paseo-wall-east-end",
+   "area": "paseo",
+   "kind": "evidence-request",
+   "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
+   "why": "levels item paseo-east-end-height; the survey shows little or no step there",
+   "photoRequest": "paseo-wall-east-end",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-main-pool-lawn",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "From the big-pool lawn: the pool and the terraces behind it; then turn round to the gateway and the railings.",
+   "why": "the main pool has only one placed photo",
+   "photoRequest": "main-pool-lawn",
+   "status": "open",
+   "sources": [
+    "IMG_2759.jpg",
+    "IMG_2761.jpg",
+    "IMG_2764.jpg",
+    "IMG_2765.jpg",
+    "IMG_2774.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "answered",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-south-lane-walk",
+   "area": "south-pool",
+   "kind": "evidence-request",
+   "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
+   "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
+   "photoRequest": "south-lane-walk",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-patricia-west",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Calle Patricia from its west end, looking along the lane.",
+   "why": "no photo covers most of Calle Patricia",
+   "photoRequest": "patricia-west",
+   "status": "open",
+   "sources": [
+    "IMG_2559.jpg",
+    "IMG_2560.jpg",
+    "IMG_2565.jpg",
+    "IMG_2702.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "answered",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-patricia-east",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Calle Patricia from its east end, looking along the lane.",
+   "why": "no photo covers most of Calle Patricia",
+   "photoRequest": "patricia-east",
+   "status": "open",
+   "sources": [
+    "IMG_2779.jpg",
+    "IMG_2780.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "received",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-eva-east",
+   "area": "eva",
+   "kind": "evidence-request",
+   "ask": "Calle Eva's east stretch from the Guillermo end, looking west along it.",
+   "why": "no photo covers Eva east of the middle pool",
+   "photoRequest": "eva-east",
+   "status": "open",
+   "sources": [
+    "IMG_2727.jpg",
+    "IMG_2730.jpg",
+    "IMG_2732.jpg",
+    "IMG_2785.jpg",
+    "IMG_2786.jpg",
+    "IMG_2788.jpg"
+   ],
+   "features": [],
+   "tasks": [],
+   "state": "answered",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-alberto",
+   "area": "north-lanes",
+   "kind": "evidence-request",
+   "ask": "Calle Alberto: one photo along the lane from each end.",
+   "why": "no photos at all in the north lanes",
+   "photoRequest": "alberto",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-isabel",
+   "area": "north-lanes",
+   "kind": "evidence-request",
+   "ask": "Calle Isabel: one photo along the lane from the Elena end.",
+   "why": "no photos at all in the north lanes",
+   "photoRequest": "isabel",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-picasso-lane",
+   "area": "picasso",
+   "kind": "evidence-request",
+   "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
+   "why": "only one photo in the Picasso area",
+   "photoRequest": "picasso-lane",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-calle-alberto-22-40-inside",
+   "area": "eva",
+   "kind": "evidence-request",
+   "ask": "Step into the CALLE ALBERTO 22 40 porch off Calle Eva east (IMG_2792) and photograph the way the passage turns, then one photo along it, and one from where it comes out (the inner courtyard, if that is where it goes).",
+   "why": "Only the porch is photographed; the passage beyond it is not built (gap:calle-alberto-22-40-tunnel)",
+   "photoRequest": "calle-alberto-22-40-inside",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-west-walk",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
+   "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
+   "photoRequest": "jorge-west-walk",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-benches",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
+   "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
+   "photoRequest": "jorge-benches",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-gateway",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "The white gateway at the end of the flagged path from the Dalí car park: one photo square-on from 4 m in front, one from the far side looking back, and one of the wall and hedge to its left.",
+   "why": "The gateway is built from two distant photos; its size, gate leaves and what the path is made of beyond it are estimated",
+   "photoRequest": "jorge-gateway",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-middle-lawn",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Standing just through the gateway, one photo along the lane; then from the middle of the lawns one photo to each side (north and south), showing the trees, any beds and where the lawn ends.",
+   "why": "Lawns and one tree here come from the aerial only; path material and edges are assumed",
+   "photoRequest": "jorge-middle-lawn",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-silvia-junction",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
+   "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+   "photoRequest": "jorge-silvia-junction",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-houses-56-86",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Between the house rows (about 30 m): one photo along the lane every 10 m in each direction, and one square-on to each side showing doors, house numbers, planters, lamps and the strip of ground on the north side.",
+   "why": "Nothing along this stretch is photographed; only the path and a grass verge are built, with no walls, planters, doors or numbers",
+   "photoRequest": "jorge-houses-56-86",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-27-35-passage",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
+   "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
+   "photoRequest": "jorge-27-35-passage",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-east-square-on",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Near the bench at the east end: one photo square-on to the house front on the south side and one square-on to the patio wall on the north side, each including a house corner from ground to roof.",
+   "why": "A square-on view of a registry house corner would let a camera be solved, turning the east-end positions (now good to 2-5 m) into measurements",
+   "photoRequest": "jorge-east-square-on",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-west-house-front",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "From the flagged path at the west entrance: one photo square-on to the house on the south side, showing its porch, doors and the full spread of the bougainvillea.",
+   "why": "The bougainvillea and house front there are built from an oblique view",
+   "photoRequest": "jorge-west-house-front",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-guillermo-patio-behind-wall",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "From Calle Guillermo beside the no-dogs sign, hold the camera up over the wall (or use a gateway) to photograph the patio behind the lawn wall: where the roofed part ends and what is planted.",
+   "why": "Dave agreed to open this patio on photo evidence; where the roofed block really ends is not seen",
+   "photoRequest": "guillermo-patio-behind-wall",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-86-100",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+   "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+   "photoRequest": "jorge-86-100",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-jorge-east-house-fronts",
+   "area": "seaward-lanes",
+   "kind": "evidence-request",
+   "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+   "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+   "photoRequest": "jorge-east-house-fronts",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-guillermo-foot-closure",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
+   "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
+   "photoRequest": "guillermo-foot-closure",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-lawn-palm-foot",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
+   "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
+   "photoRequest": "lawn-palm-foot",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-kiosk-faces",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "The white kiosk at the lawn's sea corner from the lawn: its north-east face square-on (doors, and where the short path from the lawn ends), its north corner with the strelitzia, and its round south-east end with the passage to the gate.",
+   "why": "The kiosk is now plain white as photographed, but its doors are not modelled and the strelitzia corner and the short left path are placed by eye against its registry outline",
+   "photoRequest": "kiosk-faces",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-enrique-shop-front-square",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "From Calle Guillermo by the slot drain: Enrique's shop front square-on with its three awnings, and the short marble-nosed flight up to it, then the top of the long flight down to the pool deck.",
+   "why": "Task enrique-shop-storey: the storey the awnings hang on is not modelled, and the lane photos are oblique",
+   "photoRequest": "enrique-shop-front-square",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "evidence-request:photo-lawn-east-path",
+   "area": "main-pool",
+   "kind": "evidence-request",
+   "ask": "From the deck's east corner, along the thin pale line across the north-east corner of the big lawn to the Picasso-side wall: what it is (path, stepping stones, a service trench) and where it meets the wall.",
+   "why": "The aerial shows a pale line about 0.7 m wide there; no ground photo does, so it is built as inferred concrete (ground_plan_main_pool.json lawn-east-path)",
+   "photoRequest": "lawn-east-path",
+   "status": "open",
+   "sources": [],
+   "features": [],
+   "tasks": [],
+   "state": "open",
+   "evidenceKind": "photo"
+  },
+  {
+   "id": "discrepancy:north-deck-shape",
+   "area": "north-pool",
+   "kind": "model-discrepancy",
+   "description": "Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.",
+   "sources": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "map:ground"
+   ],
+   "features": [
+    "pool_decks.json:north-deck"
+   ],
+   "task": "pool-deck-outline",
+   "status": "open",
+   "requests": [],
+   "state": "ready",
+   "blockers": [],
+   "discrepancyKind": "placement"
+  },
+  {
+   "id": "discrepancy:north-pool-fittings",
+   "area": "north-pool",
+   "kind": "model-discrepancy",
+   "description": "Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.",
+   "sources": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ],
+   "features": [],
+   "task": "loop-north-pool-fixes",
+   "status": "open",
+   "requests": [],
+   "state": "ready",
+   "blockers": [],
+   "discrepancyKind": "completeness"
+  },
+  {
+   "id": "discrepancy:north-west-terrace-extents",
+   "area": "north-pool",
+   "kind": "model-discrepancy",
+   "description": "Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.",
+   "sources": [
+    "IMG_2204.jpg",
+    "IMG_2206.jpg",
+    "IMG_2208.jpg",
+    "map:ground"
+   ],
+   "features": [
+    "raised_terraces.json:north-pool-west-terrace"
+   ],
+   "task": "north-pool-unresolved-plan",
+   "status": "open",
+   "requests": [
+    "north-west-stair-views"
+   ],
+   "state": "needs-evidence",
+   "blockers": [
+    "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends."
+   ],
+   "discrepancyKind": "placement"
+  },
+  {
+   "id": "discrepancy:north-pool-hidden-ground-boundaries",
+   "area": "north-pool",
+   "kind": "model-discrepancy",
+   "description": "Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.",
+   "sources": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2363.jpg",
+    "map:ground"
+   ],
+   "features": [],
+   "task": "north-pool-unresolved-plan",
+   "status": "open",
+   "requests": [
+    "north-pool-ground-boundaries"
+   ],
+   "state": "needs-evidence",
+   "blockers": [
+    "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead."
+   ],
+   "discrepancyKind": "placement"
   }
  ],
  "edges": [
@@ -125291,6 +126001,11 @@
    "relation": "in-area"
   },
   {
+   "from": "task:continuous-evidence-loop",
+   "to": "area:whole-resort",
+   "relation": "in-area"
+  },
+  {
    "from": "task:elena-garden-door",
    "to": "ref:IMG_2199.jpg",
    "relation": "builds-from"
@@ -144824,6 +145539,701 @@
    "to": "task:path-network-inventory-whole-resort",
    "relation": "follow-up",
    "from": "path-coverage:whole-resort"
+  },
+  {
+   "from": "evidence-request:north-west-stair-views",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:north-west-stair-views",
+   "to": "photo-request:north-pool-west-stair",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:north-west-stair-views",
+   "to": "model:raised_terraces.json:north-pool-west-terrace",
+   "relation": "needed-for"
+  },
+  {
+   "from": "evidence-request:north-pool-ground-boundaries",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-elena-25-far-end",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-elena-25-far-end",
+   "to": "photo-request:elena-25-far-end",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-elena-25-from-lane",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-elena-25-from-lane",
+   "to": "photo-request:elena-25-from-lane",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-elena-roof-station",
+   "to": "area:elena",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-elena-roof-station",
+   "to": "photo-request:elena-roof-station",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2537.jpg",
+   "to": "evidence-request:photo-elena-roof-station",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2538.jpg",
+   "to": "evidence-request:photo-elena-roof-station",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-cervantes-east-from-elena",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-cervantes-east-from-elena",
+   "to": "photo-request:cervantes-east-from-elena",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-cervantes-east-from-picasso",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-cervantes-east-from-picasso",
+   "to": "photo-request:cervantes-east-from-picasso",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-cervantes-junction-patio",
+   "to": "area:cervantes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-cervantes-junction-patio",
+   "to": "photo-request:cervantes-junction-patio",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2538.jpg",
+   "to": "evidence-request:photo-cervantes-junction-patio",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-lane-walk",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-lane-walk",
+   "to": "photo-request:guillermo-lane-walk",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-lawn-edge",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-lawn-edge",
+   "to": "photo-request:guillermo-lawn-edge",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2762.jpg",
+   "to": "evidence-request:photo-guillermo-lawn-edge",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2763.jpg",
+   "to": "evidence-request:photo-guillermo-lawn-edge",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-beach-gateway",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-beach-gateway",
+   "to": "photo-request:beach-gateway",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2602.jpg",
+   "to": "evidence-request:photo-beach-gateway",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2603.jpg",
+   "to": "evidence-request:photo-beach-gateway",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2764.jpg",
+   "to": "evidence-request:photo-beach-gateway",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2765.jpg",
+   "to": "evidence-request:photo-beach-gateway",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2766.jpg",
+   "to": "evidence-request:photo-beach-gateway",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2767.jpg",
+   "to": "evidence-request:photo-beach-gateway",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-beach-verge",
+   "to": "area:barraka-beach",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-beach-verge",
+   "to": "photo-request:beach-verge",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2764.jpg",
+   "to": "evidence-request:photo-beach-verge",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2770.jpg",
+   "to": "evidence-request:photo-beach-verge",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-paseo-wall-east-end",
+   "to": "area:paseo",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-paseo-wall-east-end",
+   "to": "photo-request:paseo-wall-east-end",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-main-pool-lawn",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-main-pool-lawn",
+   "to": "photo-request:main-pool-lawn",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2759.jpg",
+   "to": "evidence-request:photo-main-pool-lawn",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2761.jpg",
+   "to": "evidence-request:photo-main-pool-lawn",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2764.jpg",
+   "to": "evidence-request:photo-main-pool-lawn",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2765.jpg",
+   "to": "evidence-request:photo-main-pool-lawn",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2774.jpg",
+   "to": "evidence-request:photo-main-pool-lawn",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-south-lane-walk",
+   "to": "area:south-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-south-lane-walk",
+   "to": "photo-request:south-lane-walk",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-patricia-west",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-patricia-west",
+   "to": "photo-request:patricia-west",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2559.jpg",
+   "to": "evidence-request:photo-patricia-west",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2560.jpg",
+   "to": "evidence-request:photo-patricia-west",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2565.jpg",
+   "to": "evidence-request:photo-patricia-west",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2702.jpg",
+   "to": "evidence-request:photo-patricia-west",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-patricia-east",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-patricia-east",
+   "to": "photo-request:patricia-east",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2779.jpg",
+   "to": "evidence-request:photo-patricia-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2780.jpg",
+   "to": "evidence-request:photo-patricia-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-eva-east",
+   "to": "area:eva",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-eva-east",
+   "to": "photo-request:eva-east",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2727.jpg",
+   "to": "evidence-request:photo-eva-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2730.jpg",
+   "to": "evidence-request:photo-eva-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2732.jpg",
+   "to": "evidence-request:photo-eva-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2785.jpg",
+   "to": "evidence-request:photo-eva-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2786.jpg",
+   "to": "evidence-request:photo-eva-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "ref:IMG_2788.jpg",
+   "to": "evidence-request:photo-eva-east",
+   "relation": "supplies-evidence"
+  },
+  {
+   "from": "evidence-request:photo-alberto",
+   "to": "area:north-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-alberto",
+   "to": "photo-request:alberto",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-isabel",
+   "to": "area:north-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-isabel",
+   "to": "photo-request:isabel",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-picasso-lane",
+   "to": "area:picasso",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-picasso-lane",
+   "to": "photo-request:picasso-lane",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-calle-alberto-22-40-inside",
+   "to": "area:eva",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-calle-alberto-22-40-inside",
+   "to": "photo-request:calle-alberto-22-40-inside",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-west-walk",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-west-walk",
+   "to": "photo-request:jorge-west-walk",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-benches",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-benches",
+   "to": "photo-request:jorge-benches",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-gateway",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-gateway",
+   "to": "photo-request:jorge-gateway",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-middle-lawn",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-middle-lawn",
+   "to": "photo-request:jorge-middle-lawn",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-silvia-junction",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-silvia-junction",
+   "to": "photo-request:jorge-silvia-junction",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-houses-56-86",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-houses-56-86",
+   "to": "photo-request:jorge-houses-56-86",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-27-35-passage",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-27-35-passage",
+   "to": "photo-request:jorge-27-35-passage",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-east-square-on",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-east-square-on",
+   "to": "photo-request:jorge-east-square-on",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-west-house-front",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-west-house-front",
+   "to": "photo-request:jorge-west-house-front",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-patio-behind-wall",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-patio-behind-wall",
+   "to": "photo-request:guillermo-patio-behind-wall",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-86-100",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-86-100",
+   "to": "photo-request:jorge-86-100",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-jorge-east-house-fronts",
+   "to": "area:seaward-lanes",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-jorge-east-house-fronts",
+   "to": "photo-request:jorge-east-house-fronts",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-foot-closure",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-guillermo-foot-closure",
+   "to": "photo-request:guillermo-foot-closure",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-lawn-palm-foot",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-lawn-palm-foot",
+   "to": "photo-request:lawn-palm-foot",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-kiosk-faces",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-kiosk-faces",
+   "to": "photo-request:kiosk-faces",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-enrique-shop-front-square",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-enrique-shop-front-square",
+   "to": "photo-request:enrique-shop-front-square",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "evidence-request:photo-lawn-east-path",
+   "to": "area:main-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "evidence-request:photo-lawn-east-path",
+   "to": "photo-request:lawn-east-path",
+   "relation": "requests-photo"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "standard:villacana-evidence-v1",
+   "relation": "judged-against"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "task:pool-deck-outline",
+   "relation": "follow-up"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-deck-shape",
+   "to": "map:ground",
+   "relation": "observed-in"
+  },
+  {
+   "from": "model:pool_decks.json:north-deck",
+   "to": "discrepancy:north-deck-shape",
+   "relation": "has-discrepancy"
+  },
+  {
+   "from": "discrepancy:north-pool-fittings",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "discrepancy:north-pool-fittings",
+   "to": "standard:villacana-evidence-v1",
+   "relation": "judged-against"
+  },
+  {
+   "from": "discrepancy:north-pool-fittings",
+   "to": "task:loop-north-pool-fixes",
+   "relation": "follow-up"
+  },
+  {
+   "from": "discrepancy:north-pool-fittings",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-pool-fittings",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-pool-fittings",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "standard:villacana-evidence-v1",
+   "relation": "judged-against"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "task:north-pool-unresolved-plan",
+   "relation": "follow-up"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "ref:IMG_2206.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "ref:IMG_2208.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "map:ground",
+   "relation": "observed-in"
+  },
+  {
+   "from": "model:raised_terraces.json:north-pool-west-terrace",
+   "to": "discrepancy:north-west-terrace-extents",
+   "relation": "has-discrepancy"
+  },
+  {
+   "from": "discrepancy:north-west-terrace-extents",
+   "to": "evidence-request:north-west-stair-views",
+   "relation": "needs-evidence"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "area:north-pool",
+   "relation": "in-area"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "standard:villacana-evidence-v1",
+   "relation": "judged-against"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "task:north-pool-unresolved-plan",
+   "relation": "follow-up"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "ref:IMG_2204.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "ref:IMG_2205.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "ref:IMG_2363.jpg",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "map:ground",
+   "relation": "observed-in"
+  },
+  {
+   "from": "discrepancy:north-pool-hidden-ground-boundaries",
+   "to": "evidence-request:north-pool-ground-boundaries",
+   "relation": "needs-evidence"
   }
  ]
 }

@@ -3353,13 +3353,14 @@
     {
      "id": "pool_decks.json:north-deck",
      "name": "North pool deck",
-     "verification": "unreviewed",
+     "verification": "disputed",
      "photoVerification": "unchecked",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy north-deck-shape"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -3387,13 +3388,14 @@
     {
      "id": "raised_terraces.json:north-pool-west-terrace",
      "name": "North pool · north-west raised terrace and tiled stair",
-     "verification": "unreviewed",
+     "verification": "disputed",
      "photoVerification": "incomplete",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy north-west-terrace-extents"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -3577,13 +3579,14 @@
     {
      "id": "pool_decks.json:north-deck",
      "name": "North pool deck",
-     "verification": "unreviewed",
+     "verification": "disputed",
      "photoVerification": "unchecked",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy north-deck-shape"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -3787,13 +3790,14 @@
     {
      "id": "pool_decks.json:north-deck",
      "name": "North pool deck",
-     "verification": "unreviewed",
+     "verification": "disputed",
      "photoVerification": "unchecked",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy north-deck-shape"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -3804,13 +3808,14 @@
     {
      "id": "raised_terraces.json:north-pool-west-terrace",
      "name": "North pool · north-west raised terrace and tiled stair",
-     "verification": "unreviewed",
+     "verification": "disputed",
      "photoVerification": "incomplete",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy north-west-terrace-extents"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -4050,13 +4055,14 @@
     {
      "id": "raised_terraces.json:north-pool-west-terrace",
      "name": "North pool · north-west raised terrace and tiled stair",
-     "verification": "unreviewed",
+     "verification": "disputed",
      "photoVerification": "incomplete",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy north-west-terrace-extents"
       ],
       "reviewIds": [],
       "reportIds": [],

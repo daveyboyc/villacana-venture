@@ -19,6 +19,7 @@ type Card = {
   placement: { features: number; verified: number; disputed: number };
   discrepancies: { id: string; feature: string }[];
   tasks: { open: number; inProgress: number; titles: string[] };
+  loop?: { counts: Record<string, number>; readyTasks: number; requests: { id: string; kind: string; state: string; ask: string; why: string; photoRequest?: string }[] };
   light: { colour: "red" | "amber" | "green"; headline: string; requests: Request[] };
 };
 type Request = { id: string; at: [number, number]; look: [number, number] | null; ask: string; why: string; priority: number; state: "open" | "received"; photos: string[] };
@@ -59,12 +60,14 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     #scorecard .why { color:#666; font-size:11px; }
     #scorecard details.more > summary { cursor:pointer; color:#235f94; margin:4px 0; }
     body.embedded #scorecard { top:100px; }
+    body.mobile-inspect #scorecard[data-requested="true"] { display:block !important; }
     @media (pointer:coarse) { #scorecard { max-height:max(120px, calc(100dvh - 370px)); } }
     @media (pointer:coarse) and (max-height:450px) { #scorecard { top:64px; left:auto; right:max(12px, env(safe-area-inset-right)); max-height:60dvh; } }
   `;
   document.head.append(style);
   const panel = document.createElement("details");
   panel.id = "scorecard";
+  panel.dataset.requested = String(wanted === "1");
   panel.setAttribute("aria-label", "Area scorecard");
   const summary = document.createElement("summary"), body = document.createElement("div");
   body.className = "body";
@@ -133,6 +136,14 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
       why.className = "why"; why.textContent = r.state === "received" ? `Photos in (${r.photos.join(", ")}), waiting for review. For: ${r.why}` : `For: ${r.why}`;
       li.append(where, ": ", r.ask, why); asks.append(li);
     }
+    const evidence = document.createElement("ul");
+    evidence.className = "evidence-needed";
+    for (const r of c.loop?.requests ?? []) {
+      if (r.photoRequest) continue; // Existing photo spots already give the shooting instructions.
+      const li = document.createElement("li");
+      li.textContent = `Needed ${r.kind} (${r.state}): ${r.ask}`;
+      evidence.append(li);
+    }
     const more = document.createElement("details"); more.className = "more";
     const moreSummary = document.createElement("summary"); moreSummary.textContent = "Measurements";
     const list = document.createElement("ul");
@@ -151,7 +162,7 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     more.append(moreSummary, list, table);
     const links = document.createElement("div");
     links.className = "links";
-    for (const [text, href] of [["Photo spots on the map", asset("/") + "?view=map"], ["Area brief", c.brief], ["All areas", TABLE]]) {
+    for (const [text, href] of [["Photo spots on the map", asset("/") + "?view=map"], ["Area brief", c.brief], ["All areas", TABLE], ["Build and evidence loop", "https://github.com/daveyboyc/villacana-venture/blob/main/refs/LOOP.md"]]) {
       const a = document.createElement("a");
       a.textContent = text; a.href = href; if (!href.startsWith(asset("/"))) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
       links.append(a);
@@ -159,7 +170,7 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
     const note = document.createElement("div");
     note.className = "note";
     note.textContent = `Numbered beacons mark the photo spots; the arrow shows what to photograph. Survey measured ${data?.measuredAt ?? "never"}; see docs/SCORECARD.md.`;
-    body.replaceChildren(headline, ...(c.light.requests.length ? [asks] : []), more, links, note);
+    body.replaceChildren(headline, ...(c.light.requests.length ? [asks] : []), ...(evidence.children.length ? [evidence] : []), more, links, note);
   }
   const showBeacons = () => { beacons.visible = panel.open; };
   panel.addEventListener("toggle", showBeacons);

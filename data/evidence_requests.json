@@ -1,0 +1,29 @@
+{
+  "about": "Scoped missing evidence. kind is photo, map or measurement. Received evidence requires source inspection before it is answered. These requests do not block unrelated work.",
+  "requests": [
+    {
+      "id": "north-west-stair-views",
+      "area": "north-pool",
+      "kind": "photo",
+      "ask": "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends.",
+      "why": "Resolve the stair/terrace position and height transition without guessing concealed limits.",
+      "photoRequest": "north-pool-west-stair",
+      "features": ["raised_terraces.json:north-pool-west-terrace"],
+      "tasks": [],
+      "status": "open",
+      "sources": []
+    },
+    {
+      "id": "north-pool-ground-boundaries",
+      "area": "north-pool",
+      "kind": "map",
+      "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
+      "requirements": ["Georeference the source with scale and registration controls", "Report held-out landmarks and uncertainty", "Distinguish ground walls from projecting roofs"],
+      "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
+      "features": [],
+      "tasks": [],
+      "status": "open",
+      "sources": []
+    }
+  ]
+}

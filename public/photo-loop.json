@@ -1,0 +1,7784 @@
+{
+ "standard": "villacana-evidence-v1",
+ "scope": "Tracked discrepancies and declared feature placement, judged in Inspect. Acceptance does not certify hidden boundaries or the whole area. Heights require an explicit source-backed tolerance.",
+ "areas": [
+  {
+   "id": "north-pool",
+   "name": "North pool",
+   "counts": {
+    "ready": 2,
+    "needs-evidence": 2,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [
+    {
+     "id": "north-deck-shape",
+     "area": "north-pool",
+     "kind": "placement",
+     "description": "Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg",
+      "IMG_2206.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "pool_decks.json:north-deck"
+     ],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-pool-fittings",
+     "area": "north-pool",
+     "kind": "completeness",
+     "description": "Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg",
+      "IMG_2206.jpg"
+     ],
+     "features": [],
+     "task": "loop-north-pool-fixes",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-west-terrace-extents",
+     "area": "north-pool",
+     "kind": "placement",
+     "description": "Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg",
+      "IMG_2208.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "raised_terraces.json:north-pool-west-terrace"
+     ],
+     "task": "north-pool-unresolved-plan",
+     "status": "open",
+     "requests": [
+      "north-west-stair-views"
+     ],
+     "state": "needs-evidence",
+     "blockers": [
+      "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends."
+     ]
+    },
+    {
+     "id": "north-pool-hidden-ground-boundaries",
+     "area": "north-pool",
+     "kind": "placement",
+     "description": "Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg",
+      "IMG_2363.jpg",
+      "map:ground"
+     ],
+     "features": [],
+     "task": "north-pool-unresolved-plan",
+     "status": "open",
+     "requests": [
+      "north-pool-ground-boundaries"
+     ],
+     "state": "needs-evidence",
+     "blockers": [
+      "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead."
+     ]
+    }
+   ],
+   "requests": [
+    {
+     "id": "north-west-stair-views",
+     "area": "north-pool",
+     "kind": "photo",
+     "ask": "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends.",
+     "why": "Resolve the stair/terrace position and height transition without guessing concealed limits.",
+     "photoRequest": "north-pool-west-stair",
+     "features": [
+      "raised_terraces.json:north-pool-west-terrace"
+     ],
+     "tasks": [],
+     "status": "open",
+     "sources": [],
+     "state": "open"
+    },
+    {
+     "id": "north-pool-ground-boundaries",
+     "area": "north-pool",
+     "kind": "map",
+     "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
+     "requirements": [
+      "Georeference the source with scale and registration controls",
+      "Report held-out landmarks and uncertainty",
+      "Distinguish ground walls from projecting roofs"
+     ],
+     "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
+     "features": [],
+     "tasks": [],
+     "status": "open",
+     "sources": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2204.jpg",
+     "state": "solved",
+     "station": "north-pool-south-upper"
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "state": "solved",
+     "station": "north-pool-south-upper"
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "state": "solved",
+     "station": "north-pool-south-upper"
+    },
+    {
+     "photo": "IMG_2207.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2208.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2363.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2688.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "loop-discrepancies",
+     "title": "Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "north-pool-unresolved-plan",
+     "title": "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-north-pool",
+     "title": "North pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "pool-deck-outline",
+     "title": "North pool: trace the deck outline and squared deck tongue from the solved cameras",
+     "priority": 1,
+     "dependencies": [
+      "pool-detail"
+     ],
+     "requests": []
+    },
+    {
+     "id": "loop-north-pool-fixes",
+     "title": "Photo-to-model loop: close the north-pool discrepancies with measured fixes",
+     "priority": 1,
+     "dependencies": [
+      "loop-discrepancies",
+      "loop-measured-approval"
+     ],
+     "requests": []
+    },
+    {
+     "id": "loop-camera-solving",
+     "title": "Photo-to-model loop: semi-automatic camera solving for every north-pool photo",
+     "priority": 1,
+     "dependencies": [
+      "loop-discrepancies"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "middle-pool",
+   "name": "Middle pool",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [],
+   "cameras": [
+    {
+     "photo": "IMG_2189.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2192.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2193.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2194.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2195.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2244.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2245.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2246.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2247.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2331.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2332.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2333.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2334.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2335.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2340.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2341.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2505.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2666.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2671.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2676.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2677.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2678.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2679.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2680.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2681.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2708.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2710.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2711.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2712.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2713.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2714.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2715.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/02-pool-from-upper-floor-2020-12.png",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/09-middle-pool-through-iron-gate.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/easyjet-pool-probably-middle.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "ground-plan-middle-pool",
+     "title": "Middle pool: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "middle-pool-west-path-material",
+     "title": "Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-middle-pool",
+     "title": "Middle pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "middle-pool-south-lane-planters",
+     "title": "South entrance lane: planted frontage borders and projecting window grilles",
+     "priority": 2,
+     "dependencies": [
+      "middle-pool-south-forecourt"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "south-pool",
+   "name": "South pool",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-south-lane-walk",
+     "area": "south-pool",
+     "kind": "photo",
+     "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
+     "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
+     "photoRequest": "south-lane-walk",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2188.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2349.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2576.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2577.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2635.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2639.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2640.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2641.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2642.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2643.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2644.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2645.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2650.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-01-looking-north-palm.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-02-looking-south-east-sea.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-03-lawn-from-north-west.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "ground-plan-south-pool",
+     "title": "South pool: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-south-pool",
+     "title": "South pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": []
+  },
+  {
+   "id": "main-pool",
+   "name": "Main pool",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-guillermo-lawn-edge",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+     "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+     "photoRequest": "guillermo-lawn-edge",
+     "status": "open",
+     "sources": [
+      "IMG_2762.jpg",
+      "IMG_2763.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-beach-gateway",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+     "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+     "photoRequest": "beach-gateway",
+     "status": "open",
+     "sources": [
+      "IMG_2602.jpg",
+      "IMG_2603.jpg",
+      "IMG_2764.jpg",
+      "IMG_2765.jpg",
+      "IMG_2766.jpg",
+      "IMG_2767.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-guillermo-foot-closure",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
+     "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
+     "photoRequest": "guillermo-foot-closure",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-lawn-palm-foot",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
+     "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
+     "photoRequest": "lawn-palm-foot",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-kiosk-faces",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "The white kiosk at the lawn's sea corner from the lawn: its north-east face square-on (doors, and where the short path from the lawn ends), its north corner with the strelitzia, and its round south-east end with the passage to the gate.",
+     "why": "The kiosk is now plain white as photographed, but its doors are not modelled and the strelitzia corner and the short left path are placed by eye against its registry outline",
+     "photoRequest": "kiosk-faces",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-enrique-shop-front-square",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From Calle Guillermo by the slot drain: Enrique's shop front square-on with its three awnings, and the short marble-nosed flight up to it, then the top of the long flight down to the pool deck.",
+     "why": "Task enrique-shop-storey: the storey the awnings hang on is not modelled, and the lane photos are oblique",
+     "photoRequest": "enrique-shop-front-square",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-lawn-east-path",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the deck's east corner, along the thin pale line across the north-east corner of the big lawn to the Picasso-side wall: what it is (path, stepping stones, a service trench) and where it meets the wall.",
+     "why": "The aerial shows a pale line about 0.7 m wide there; no ground photo does, so it is built as inferred concrete (ground_plan_main_pool.json lawn-east-path)",
+     "photoRequest": "lawn-east-path",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2226.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2484.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2485.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2597.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2598.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2600.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2602.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2603.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2609.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2610.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2611.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2613.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2630.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2725.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2759.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2760.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2761.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2762.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2763.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2764.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2765.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2766.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2767.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2773.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2774.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2775.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2776.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2777.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2823.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "main-pool-gate-corner",
+     "title": "Main pool lawn's sea corner: inner path, gate surround and kiosk ground from new photos",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "enrique-shop-storey",
+     "title": "Enrique's: the shop storey above the street-level terrace at the head of the steps",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "main-pool-lawn-cameras",
+     "title": "Main pool lawn and Enrique's steps: solve the photo cameras and close what still differs",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-main-pool",
+     "title": "Main pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": []
+  },
+  {
+   "id": "elena",
+   "name": "Calle Elena",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-elena-25-far-end",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
+     "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+     "photoRequest": "elena-25-far-end",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-25-from-lane",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
+     "why": "task elena-25-passage: register the portal on the lane",
+     "photoRequest": "elena-25-from-lane",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-roof-station",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+     "why": "task facade-kit-elena: a roof camera that can be solved",
+     "photoRequest": "elena-roof-station",
+     "status": "open",
+     "sources": [
+      "IMG_2537.jpg",
+      "IMG_2538.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2196.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2197.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2198.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2199.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2200.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2201.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2202.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2203.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2214.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2215.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2219.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2220.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2252.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2253.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2254.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2255.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2256.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2260.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2261.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2262.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2263.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2265.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2286.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2287.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2327.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2328.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2329.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2330.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2342.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2355.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2358.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2360.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2361.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2362.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2363.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2364.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2365.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2366.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2367.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2453.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2455.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2456.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2457.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2458.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2459.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2460.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2461.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2462.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2463.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2464.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2465.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2466.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2506.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2507.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2508.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2509.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2510.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2511.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2514.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2515.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2516.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2517.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2518.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2519.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2520.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2521.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2522.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2523.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2537.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2538.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2539.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2540.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2680.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2681.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2682.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2683.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2684.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2685.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2686.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2687.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2688.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2689.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2690.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2691.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2692.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2715.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2799.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2800.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2801.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2802.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2803.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2804.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2805.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2806.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2810.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2813.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "elena-level-clearance-survey",
+     "title": "Elena: resolve path/threshold levels and usable clearance uncertainty",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-register-path-edges",
+     "title": "Elena: register both physical path edges and finite ground boundaries",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-register-tunnel-portals",
+     "title": "Elena: register both portals and reconcile second tunnel candidate",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-south-terminal-identify",
+     "title": "Elena south: identify terminal frame and adjoining wall/door connections",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-25-passage",
+     "title": "Elena south: register the CALLE ELENA 25 covered passage and where it leads",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-elena",
+     "title": "Calle Elena: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "elena-tunnel-structure-correction",
+     "title": "Elena: correct covered passage structural omissions after registration",
+     "priority": 1,
+     "dependencies": [
+      "elena-register-tunnel-portals",
+      "3d-browser-regression-reliability"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "cervantes",
+   "name": "Calle Miguel de Cervantes",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-cervantes-east-from-elena",
+     "area": "cervantes",
+     "kind": "photo",
+     "ask": "Cervantes east of Elena: stand at the Elena end and photograph along the lane towards Pintor Picasso.",
+     "why": "no photo covers this half of Cervantes (levels item cervantes-east-north-bed)",
+     "photoRequest": "cervantes-east-from-elena",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-cervantes-east-from-picasso",
+     "area": "cervantes",
+     "kind": "photo",
+     "ask": "Cervantes from the Pintor Picasso end, looking west along the lane; then one side-on to the white kerb wall and plumbago hedge.",
+     "why": "no photo covers this half of Cervantes",
+     "photoRequest": "cervantes-east-from-picasso",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-cervantes-junction-patio",
+     "area": "cervantes",
+     "kind": "photo",
+     "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+     "why": "levels item cervantes-junction-north-patio",
+     "photoRequest": "cervantes-junction-patio",
+     "status": "open",
+     "sources": [
+      "IMG_2538.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2196.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2252.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2260.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2261.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2262.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2263.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2264.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2265.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2266.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2273.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2274.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2275.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2286.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2287.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2288.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2289.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2327.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2328.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2329.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2342.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2355.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2356.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2358.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2359.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2360.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2367.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2368.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2369.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2442.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2443.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2444.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2445.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2446.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2447.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2448.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2449.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2450.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2451.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2452.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2453.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2454.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2455.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2462.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2463.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2464.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2465.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2466.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2467.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2468.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2469.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2470.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2471.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2511.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2512.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2513.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2514.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2539.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2540.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2541.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2542.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2543.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2544.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2545.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2794.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2795.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2796.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2797.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2798.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2799.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2800.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2801.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "cervantes-identify-miguel-passage",
+     "title": "Cervantes/Miguel: identify signed passage and both world portals",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "cervantes-register-edges",
+     "title": "Cervantes: register finite path sides, wall ends and eastern terminal",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-cervantes",
+     "title": "Calle Miguel de Cervantes: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "cervantes-bounded-structure",
+     "title": "Cervantes: correct supported boundary and passage omissions after registration",
+     "priority": 1,
+     "dependencies": [
+      "cervantes-register-edges",
+      "3d-browser-regression-reliability"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "dali",
+   "name": "Calle Pintor Dalí",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [],
+   "cameras": [
+    {
+     "photo": "IMG_2218.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2266.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2267.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2268.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2269.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2270.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2275.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2276.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2277.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2278.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2279.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2280.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2281.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2282.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2283.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2284.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2289.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2290.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2291.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2292.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2293.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2294.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2295.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2296.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2297.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2468.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2471.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2472.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2473.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2474.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2475.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2476.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2477.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2478.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2524.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2525.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2526.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2551.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2552.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2554.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2555.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2556.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2558.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2637.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2638.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2696.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2697.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2698.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2699.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2700.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2701.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2703.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2704.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "ground-plan-dali",
+     "title": "Calle Pintor Dalí: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-dali",
+     "title": "Calle Pintor Dalí: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "dali-house-fronts",
+     "title": "Pintor Dalí: trace the house arches, palms and the seaward lamp",
+     "priority": 2,
+     "dependencies": [
+      "dali-street-scene"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "picasso",
+   "name": "Pintor Picasso and the car park",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-picasso-lane",
+     "area": "picasso",
+     "kind": "photo",
+     "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
+     "why": "only one photo in the Picasso area",
+     "photoRequest": "picasso-lane",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2345.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2444.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "ground-plan-picasso",
+     "title": "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-picasso",
+     "title": "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": []
+  },
+  {
+   "id": "north-lanes",
+   "name": "Loira, Bolivia, Alberto and Isabel",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-alberto",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "Calle Alberto: one photo along the lane from each end.",
+     "why": "no photos at all in the north lanes",
+     "photoRequest": "alberto",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-isabel",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "Calle Isabel: one photo along the lane from the Elena end.",
+     "why": "no photos at all in the north lanes",
+     "photoRequest": "isabel",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2448.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2686.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "ground-plan-north-lanes",
+     "title": "Loira, Bolivia, Alberto and Isabel: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-north-lanes",
+     "title": "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": []
+  },
+  {
+   "id": "eva",
+   "name": "Calle Eva",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-calle-alberto-22-40-inside",
+     "area": "eva",
+     "kind": "photo",
+     "ask": "Step into the CALLE ALBERTO 22 40 porch off Calle Eva east (IMG_2792) and photograph the way the passage turns, then one photo along it, and one from where it comes out (the inner courtyard, if that is where it goes).",
+     "why": "Only the porch is photographed; the passage beyond it is not built (gap:calle-alberto-22-40-tunnel)",
+     "photoRequest": "calle-alberto-22-40-inside",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2243.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2248.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2249.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2250.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2251.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2291.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2336.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2337.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2338.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2339.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2340.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2501.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2502.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2503.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2504.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2546.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2547.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2548.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2549.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2550.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2551.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2552.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2553.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2555.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2556.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2557.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2558.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2676.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2677.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2678.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2679.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2701.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2702.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2703.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2704.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2705.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2706.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2707.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2708.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2710.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2711.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2727.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2728.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2729.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2730.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2732.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2785.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2786.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2787.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2788.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2789.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2790.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2791.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2792.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "ground-plan-eva",
+     "title": "Calle Eva: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-eva",
+     "title": "Calle Eva: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "eva-west-planting",
+     "title": "Calle Eva west: climbers on the house walls and the raised planter's plants",
+     "priority": 3,
+     "dependencies": [
+      "eva-planting-shapes"
+     ],
+     "requests": []
+    },
+    {
+     "id": "eva-east-lane",
+     "title": "Calle Eva east: octagonal paving, azulejo benches, hedged planters and lanterns",
+     "priority": 2,
+     "dependencies": [
+      "eva-lane-details"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "seaward-lanes",
+   "name": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-guillermo-lane-walk",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
+     "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
+     "photoRequest": "guillermo-lane-walk",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-patricia-east",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Calle Patricia from its east end, looking along the lane.",
+     "why": "no photo covers most of Calle Patricia",
+     "photoRequest": "patricia-east",
+     "status": "open",
+     "sources": [
+      "IMG_2779.jpg",
+      "IMG_2780.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-jorge-west-walk",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
+     "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
+     "photoRequest": "jorge-west-walk",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-benches",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
+     "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
+     "photoRequest": "jorge-benches",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-gateway",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "The white gateway at the end of the flagged path from the Dalí car park: one photo square-on from 4 m in front, one from the far side looking back, and one of the wall and hedge to its left.",
+     "why": "The gateway is built from two distant photos; its size, gate leaves and what the path is made of beyond it are estimated",
+     "photoRequest": "jorge-gateway",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-middle-lawn",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Standing just through the gateway, one photo along the lane; then from the middle of the lawns one photo to each side (north and south), showing the trees, any beds and where the lawn ends.",
+     "why": "Lawns and one tree here come from the aerial only; path material and edges are assumed",
+     "photoRequest": "jorge-middle-lawn",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-silvia-junction",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
+     "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+     "photoRequest": "jorge-silvia-junction",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-houses-56-86",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Between the house rows (about 30 m): one photo along the lane every 10 m in each direction, and one square-on to each side showing doors, house numbers, planters, lamps and the strip of ground on the north side.",
+     "why": "Nothing along this stretch is photographed; only the path and a grass verge are built, with no walls, planters, doors or numbers",
+     "photoRequest": "jorge-houses-56-86",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-27-35-passage",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
+     "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
+     "photoRequest": "jorge-27-35-passage",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-east-square-on",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Near the bench at the east end: one photo square-on to the house front on the south side and one square-on to the patio wall on the north side, each including a house corner from ground to roof.",
+     "why": "A square-on view of a registry house corner would let a camera be solved, turning the east-end positions (now good to 2-5 m) into measurements",
+     "photoRequest": "jorge-east-square-on",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-west-house-front",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "From the flagged path at the west entrance: one photo square-on to the house on the south side, showing its porch, doors and the full spread of the bougainvillea.",
+     "why": "The bougainvillea and house front there are built from an oblique view",
+     "photoRequest": "jorge-west-house-front",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-guillermo-patio-behind-wall",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "From Calle Guillermo beside the no-dogs sign, hold the camera up over the wall (or use a gateway) to photograph the patio behind the lawn wall: where the roofed part ends and what is planted.",
+     "why": "Dave agreed to open this patio on photo evidence; where the roofed block really ends is not seen",
+     "photoRequest": "guillermo-patio-behind-wall",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-86-100",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+     "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+     "photoRequest": "jorge-86-100",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-east-house-fronts",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+     "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+     "photoRequest": "jorge-east-house-fronts",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2182.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2183.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2184.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2185.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2186.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2187.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2189.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2190.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2191.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2227.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2229.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2230.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2231.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2232.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2233.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2234.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2235.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2236.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2237.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2238.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2239.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2240.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2241.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2242.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2243.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2280.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2293.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2334.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2485.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2486.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2487.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2488.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2489.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2491.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2492.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2493.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2494.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2495.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2496.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2497.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2498.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2499.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2500.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2501.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2504.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2557.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2559.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2560.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2561.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2562.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2563.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2564.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2565.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2566.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2567.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2568.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2569.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2570.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2571.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2572.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2573.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2574.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2575.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2576.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2577.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2578.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2579.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2580.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2581.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2582.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2583.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2584.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2585.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2586.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2587.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2588.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2589.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2590.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2591.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2592.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2593.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2594.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2595.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2596.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2597.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2598.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2599.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2600.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2601.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2607.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2608.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2639.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2640.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2641.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2642.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2646.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2647.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2648.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2649.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2650.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2651.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2652.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2653.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2654.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2655.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2656.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2657.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2658.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2659.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2660.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2661.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2662.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2663.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2665.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2666.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2667.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2668.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2669.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2670.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2671.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2672.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2673.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2674.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2675.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2696.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2697.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2698.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2702.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2721.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2723.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2724.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2725.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2773.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2774.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2775.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2776.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2778.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2779.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2780.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2781.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2782.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2783.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2784.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2791.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2792.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2822.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2823.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "silvia-covered-passage-reference-audit",
+     "title": "Resolve the Silvia tunnel entrance, its components and connection to the lane",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-seaward-lanes",
+     "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-seaward-lanes",
+     "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "patricia-passage-reference-pack",
+     "title": "Patricia covered passage: trace the arch chain from the CALLE DE PATRICIA arch to the Silvia 22-44 mouth",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "jorge-south-arcade-identity",
+     "title": "Eva-side covered passages: establish identity and position",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "silvia-west-passage-swap",
+     "title": "Decide the west Silvia passage: 2-20 ramp type here, 1-15 type on the east block",
+     "priority": 2,
+     "dependencies": [
+      "silvia-ramp-passages"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "barraka-beach",
+   "name": "Barraka and the beach",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-beach-verge",
+     "area": "barraka-beach",
+     "kind": "photo",
+     "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+     "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+     "photoRequest": "beach-verge",
+     "status": "open",
+     "sources": [
+      "IMG_2764.jpg",
+      "IMG_2770.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2223.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2224.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2225.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2226.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2227.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2285.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2298.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2299.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2300.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2346.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2347.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2350.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2351.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2480.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2481.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2482.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2483.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2598.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2599.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2600.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2601.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2602.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2604.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2605.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2606.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2607.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2608.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2609.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2610.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2611.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2612.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2614.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2615.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2616.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2617.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2618.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2619.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2620.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2621.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2622.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2623.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2624.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2625.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2626.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2627.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2628.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2629.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2630.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2631.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2633.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2643.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2644.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2760.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2769.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2770.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "path-network-inventory-barraka-beach",
+     "title": "Barraka and the beach: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "barraka-barbecue-boat",
+     "title": "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
+     "priority": 2,
+     "dependencies": [
+      "barraka-planter-placement"
+     ],
+     "requests": []
+    }
+   ]
+  },
+  {
+   "id": "paseo",
+   "name": "The paseo",
+   "counts": {
+    "ready": 0,
+    "needs-evidence": 0,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [],
+   "requests": [
+    {
+     "id": "photo-paseo-wall-east-end",
+     "area": "paseo",
+     "kind": "photo",
+     "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
+     "why": "levels item paseo-east-end-height; the survey shows little or no step there",
+     "photoRequest": "paseo-wall-east-end",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "IMG_2226.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2227.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2281.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2282.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2284.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2296.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2297.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2349.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2350.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2351.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2352.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2354.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2480.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2481.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2482.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2483.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2484.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2485.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2486.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2599.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2601.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2602.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2603.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2604.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2607.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2608.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2609.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2610.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2611.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2612.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2613.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2618.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2621.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2622.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2625.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2628.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2629.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2630.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2631.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2632.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2633.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2634.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2636.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2637.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2638.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2642.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2643.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2644.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2759.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2761.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2763.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2766.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2767.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2769.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2770.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2822.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-02-looking-south-east-sea.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "path-network-inventory-paseo",
+     "title": "The paseo: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": []
+  },
+  {
+   "id": "whole-resort",
+   "name": "The whole resort",
+   "counts": {
+    "ready": 2,
+    "needs-evidence": 2,
+    "needs-source-access": 0,
+    "awaiting-review": 0,
+    "accepted": 0
+   },
+   "discrepancies": [
+    {
+     "id": "north-deck-shape",
+     "area": "north-pool",
+     "kind": "placement",
+     "description": "Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg",
+      "IMG_2206.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "pool_decks.json:north-deck"
+     ],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-pool-fittings",
+     "area": "north-pool",
+     "kind": "completeness",
+     "description": "Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg",
+      "IMG_2206.jpg"
+     ],
+     "features": [],
+     "task": "loop-north-pool-fixes",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-west-terrace-extents",
+     "area": "north-pool",
+     "kind": "placement",
+     "description": "Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2206.jpg",
+      "IMG_2208.jpg",
+      "map:ground"
+     ],
+     "features": [
+      "raised_terraces.json:north-pool-west-terrace"
+     ],
+     "task": "north-pool-unresolved-plan",
+     "status": "open",
+     "requests": [
+      "north-west-stair-views"
+     ],
+     "state": "needs-evidence",
+     "blockers": [
+      "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends."
+     ]
+    },
+    {
+     "id": "north-pool-hidden-ground-boundaries",
+     "area": "north-pool",
+     "kind": "placement",
+     "description": "Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg",
+      "IMG_2363.jpg",
+      "map:ground"
+     ],
+     "features": [],
+     "task": "north-pool-unresolved-plan",
+     "status": "open",
+     "requests": [
+      "north-pool-ground-boundaries"
+     ],
+     "state": "needs-evidence",
+     "blockers": [
+      "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead."
+     ]
+    }
+   ],
+   "requests": [
+    {
+     "id": "north-west-stair-views",
+     "area": "north-pool",
+     "kind": "photo",
+     "ask": "Side-on photo from the lawn path of the northwest tiled stair and curved wall, plus a view from the top looking down, showing the floor joins and stair ends.",
+     "why": "Resolve the stair/terrace position and height transition without guessing concealed limits.",
+     "photoRequest": "north-pool-west-stair",
+     "features": [
+      "raised_terraces.json:north-pool-west-terrace"
+     ],
+     "tasks": [],
+     "status": "open",
+     "sources": [],
+     "state": "open"
+    },
+    {
+     "id": "north-pool-ground-boundaries",
+     "area": "north-pool",
+     "kind": "map",
+     "ask": "A dated, scaled plan or clear aerial showing ground-wall corners and the Isabel-side access edges. Where roofs or vegetation hide the ground, we need ground-level photos instead.",
+     "requirements": [
+      "Georeference the source with scale and registration controls",
+      "Report held-out landmarks and uncertainty",
+      "Distinguish ground walls from projecting roofs"
+     ],
+     "why": "Existing aerials and elevated photos do not establish every concealed patio boundary or access width. This flags those limits only; visible pool and facade work can continue.",
+     "features": [],
+     "tasks": [],
+     "status": "open",
+     "sources": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-25-far-end",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "Walk through the CALLE ELENA 25 passage to its far arch. One photo through the garden gate into the courtyard, then turn round and photograph back towards Calle Elena.",
+     "why": "task elena-25-passage: where the passage leads and whether the block has a courtyard",
+     "photoRequest": "elena-25-far-end",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-25-from-lane",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
+     "why": "task elena-25-passage: register the portal on the lane",
+     "photoRequest": "elena-25-from-lane",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-roof-station",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "On the Elena 24 roof: four photos from one spot (north, east, south, west), each with distant building corners and both lane edges in frame. Say where you stood.",
+     "why": "task facade-kit-elena: a roof camera that can be solved",
+     "photoRequest": "elena-roof-station",
+     "status": "open",
+     "sources": [
+      "IMG_2537.jpg",
+      "IMG_2538.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-cervantes-east-from-elena",
+     "area": "cervantes",
+     "kind": "photo",
+     "ask": "Cervantes east of Elena: stand at the Elena end and photograph along the lane towards Pintor Picasso.",
+     "why": "no photo covers this half of Cervantes (levels item cervantes-east-north-bed)",
+     "photoRequest": "cervantes-east-from-elena",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-cervantes-east-from-picasso",
+     "area": "cervantes",
+     "kind": "photo",
+     "ask": "Cervantes from the Pintor Picasso end, looking west along the lane; then one side-on to the white kerb wall and plumbago hedge.",
+     "why": "no photo covers this half of Cervantes",
+     "photoRequest": "cervantes-east-from-picasso",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-cervantes-junction-patio",
+     "area": "cervantes",
+     "kind": "photo",
+     "ask": "Through the curved-coping door at the Cervantes/Elena junction, or over its wall: the patio floor against the steps.",
+     "why": "levels item cervantes-junction-north-patio",
+     "photoRequest": "cervantes-junction-patio",
+     "status": "open",
+     "sources": [
+      "IMG_2538.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-guillermo-lane-walk",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Walk down Calle Guillermo from Calle Jorge to the paseo, one photo along the lane every 15 m.",
+     "why": "Guillermo's walls, gardens and lane edges between Jorge and the paseo (no photos there)",
+     "photoRequest": "guillermo-lane-walk",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-guillermo-lawn-edge",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "Side-on at the big-pool lawn's edge beside Calle Guillermo, near the kiosk: the wall between the lane and the lawn, with the lane edge in frame.",
+     "why": "the lane may be mapped up to 1 m too far east (docs/reviews/beach-gate-verge)",
+     "photoRequest": "guillermo-lawn-edge",
+     "status": "open",
+     "sources": [
+      "IMG_2762.jpg",
+      "IMG_2763.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-beach-gateway",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the paseo, the arched beach gateway square-on; then the wall that runs down the ramp beside it.",
+     "why": "task beach-gate-verge: the gateway's position, opening and wall heights are by eye",
+     "photoRequest": "beach-gateway",
+     "status": "open",
+     "sources": [
+      "IMG_2602.jpg",
+      "IMG_2603.jpg",
+      "IMG_2764.jpg",
+      "IMG_2765.jpg",
+      "IMG_2766.jpg",
+      "IMG_2767.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-beach-verge",
+     "area": "barraka-beach",
+     "kind": "photo",
+     "ask": "From the paseo in front of the gateway, looking along the grass and shrubs towards Barraka; then one from the sand looking back at them.",
+     "why": "the grass and shrub outline in front of Barraka is rough (data/beach_verge.json)",
+     "photoRequest": "beach-verge",
+     "status": "open",
+     "sources": [
+      "IMG_2764.jpg",
+      "IMG_2770.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-paseo-wall-east-end",
+     "area": "paseo",
+     "kind": "photo",
+     "ask": "At the east end of the sandstone wall by Calle Guillermo, side-on: paseo surface, wall foot, top and the garden behind, with a person beside the wall for scale.",
+     "why": "levels item paseo-east-end-height; the survey shows little or no step there",
+     "photoRequest": "paseo-wall-east-end",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-south-lane-walk",
+     "area": "south-pool",
+     "kind": "photo",
+     "ask": "Walk the lane from the middle pool's south gate to the south pool: one photo at every step, ramp or drain, pointing along the lane.",
+     "why": "levels item south-lawn-over-paseo: whether the south pool sits lower",
+     "photoRequest": "south-lane-walk",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-patricia-east",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Calle Patricia from its east end, looking along the lane.",
+     "why": "no photo covers most of Calle Patricia",
+     "photoRequest": "patricia-east",
+     "status": "open",
+     "sources": [
+      "IMG_2779.jpg",
+      "IMG_2780.jpg"
+     ],
+     "features": [],
+     "tasks": [],
+     "state": "received"
+    },
+    {
+     "id": "photo-alberto",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "Calle Alberto: one photo along the lane from each end.",
+     "why": "no photos at all in the north lanes",
+     "photoRequest": "alberto",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-isabel",
+     "area": "north-lanes",
+     "kind": "photo",
+     "ask": "Calle Isabel: one photo along the lane from the Elena end.",
+     "why": "no photos at all in the north lanes",
+     "photoRequest": "isabel",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-picasso-lane",
+     "area": "picasso",
+     "kind": "photo",
+     "ask": "Calle Pintor Picasso beside the resort: one photo along the street from each end, with the resort walls and gates in frame.",
+     "why": "only one photo in the Picasso area",
+     "photoRequest": "picasso-lane",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-calle-alberto-22-40-inside",
+     "area": "eva",
+     "kind": "photo",
+     "ask": "Step into the CALLE ALBERTO 22 40 porch off Calle Eva east (IMG_2792) and photograph the way the passage turns, then one photo along it, and one from where it comes out (the inner courtyard, if that is where it goes).",
+     "why": "Only the porch is photographed; the passage beyond it is not built (gap:calle-alberto-22-40-tunnel)",
+     "photoRequest": "calle-alberto-22-40-inside",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-west-walk",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Walk Calle Jorge from the white gateway near the Dalí car park to the bench near the east end, one photo along the lane every 15 m, one of the gateway itself from each side, and one of each side garden wall.",
+     "why": "The lane is photographed from the Dalí car park to the gateway (about 28 m) and over its east 50 m; between them it keeps the generic ribbon (gap:jorge-west)",
+     "photoRequest": "jorge-west-walk",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-benches",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "One photo of every bench on Calle Jorge, each taken from the path with a house number or plaque in view, and one looking along the lane from the east end that shows how many benches there are.",
+     "why": "Only one bench is photographed; three more are placed from white marks on the aerial, and it is not certain which mark is the photographed bench",
+     "photoRequest": "jorge-benches",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-gateway",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "The white gateway at the end of the flagged path from the Dalí car park: one photo square-on from 4 m in front, one from the far side looking back, and one of the wall and hedge to its left.",
+     "why": "The gateway is built from two distant photos; its size, gate leaves and what the path is made of beyond it are estimated",
+     "photoRequest": "jorge-gateway",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-middle-lawn",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Standing just through the gateway, one photo along the lane; then from the middle of the lawns one photo to each side (north and south), showing the trees, any beds and where the lawn ends.",
+     "why": "Lawns and one tree here come from the aerial only; path material and edges are assumed",
+     "photoRequest": "jorge-middle-lawn",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-silvia-junction",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Where the Calle Silvia lane crosses: one photo along Calle Jorge towards the sea showing the second white portal seen through the gateway, and one down each arm of the cross lane.",
+     "why": "The second portal is photographed only through the gateway; where it stands is a guess",
+     "photoRequest": "jorge-silvia-junction",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-houses-56-86",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Between the house rows (about 30 m): one photo along the lane every 10 m in each direction, and one square-on to each side showing doors, house numbers, planters, lamps and the strip of ground on the north side.",
+     "why": "Nothing along this stretch is photographed; only the path and a grass verge are built, with no walls, planters, doors or numbers",
+     "photoRequest": "jorge-houses-56-86",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-27-35-passage",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Stand in Calle Jorge facing the archway signed CALLE JORGE 27 35 from 5 m back, so the arch and the houses each side are in one frame; then one photo from inside looking back out to the lane.",
+     "why": "IMG_2185-2187 show the passage from inside but not where its mouth is on the lane, so it is not built. The standing point is the pin of the inside photos (good to 3 m), so look for the arch on either side of it",
+     "photoRequest": "jorge-27-35-passage",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-east-square-on",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Near the bench at the east end: one photo square-on to the house front on the south side and one square-on to the patio wall on the north side, each including a house corner from ground to roof.",
+     "why": "A square-on view of a registry house corner would let a camera be solved, turning the east-end positions (now good to 2-5 m) into measurements",
+     "photoRequest": "jorge-east-square-on",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-west-house-front",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "From the flagged path at the west entrance: one photo square-on to the house on the south side, showing its porch, doors and the full spread of the bougainvillea.",
+     "why": "The bougainvillea and house front there are built from an oblique view",
+     "photoRequest": "jorge-west-house-front",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-guillermo-patio-behind-wall",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "From Calle Guillermo beside the no-dogs sign, hold the camera up over the wall (or use a gateway) to photograph the patio behind the lawn wall: where the roofed part ends and what is planted.",
+     "why": "Dave agreed to open this patio on photo evidence; where the roofed block really ends is not seen",
+     "photoRequest": "guillermo-patio-behind-wall",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-86-100",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "From the end of the house rows, one photo along the lane towards the sea and one back; at the junction with the octagon-tiled lane, one photo down that lane and one of each corner.",
+     "why": "No photo is taken between 86 and 100 m; IMG_2234 only looks along it from the east, and the junction at 93 m is seen from one side",
+     "photoRequest": "jorge-86-100",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-jorge-east-house-fronts",
+     "area": "seaward-lanes",
+     "kind": "photo",
+     "ask": "Square-on photos of the house fronts on the south side of the lane between the bench and the CALLE DE JORGE plinth, and of the patio walls opposite.",
+     "why": "The house fronts east of house 23 keep generic doors and shutters; only oblique views exist",
+     "photoRequest": "jorge-east-house-fronts",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-guillermo-foot-closure",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "At the very end of Calle Guillermo: one photo along the lane to where it meets the seafront wall, one turning left down the inner tiled path towards the gate, and one of the wall there from the lane side.",
+     "why": "Dave (13 Nov): the slope down has no opening and the only way out is the gate. The lane now ends inside the wall and the inner path is drawn from IMG_2600/2601; where the lane stops, how the path turns and how far it falls are by eye",
+     "photoRequest": "guillermo-foot-closure",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-lawn-palm-foot",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the end of the pink path at the pool deck: the tall palm's foot and the path's last few metres in one frame, then one from the lawn side-on to both.",
+     "why": "The palm is placed from its crown on the aerial (about -23.4, 106), which can sit a metre or two off its foot; the path end by it is read from the aerial",
+     "photoRequest": "lawn-palm-foot",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-kiosk-faces",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "The white kiosk at the lawn's sea corner from the lawn: its north-east face square-on (doors, and where the short path from the lawn ends), its north corner with the strelitzia, and its round south-east end with the passage to the gate.",
+     "why": "The kiosk is now plain white as photographed, but its doors are not modelled and the strelitzia corner and the short left path are placed by eye against its registry outline",
+     "photoRequest": "kiosk-faces",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-enrique-shop-front-square",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From Calle Guillermo by the slot drain: Enrique's shop front square-on with its three awnings, and the short marble-nosed flight up to it, then the top of the long flight down to the pool deck.",
+     "why": "Task enrique-shop-storey: the storey the awnings hang on is not modelled, and the lane photos are oblique",
+     "photoRequest": "enrique-shop-front-square",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-lawn-east-path",
+     "area": "main-pool",
+     "kind": "photo",
+     "ask": "From the deck's east corner, along the thin pale line across the north-east corner of the big lawn to the Picasso-side wall: what it is (path, stepping stones, a service trench) and where it meets the wall.",
+     "why": "The aerial shows a pale line about 0.7 m wide there; no ground photo does, so it is built as inferred concrete (ground_plan_main_pool.json lawn-east-path)",
+     "photoRequest": "lawn-east-path",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    }
+   ],
+   "cameras": [
+    {
+     "photo": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2182.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2183.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2184.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2185.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2186.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2187.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2188.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2189.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2190.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2191.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2192.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2193.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2194.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2195.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2196.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2197.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2198.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2199.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2200.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2201.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2202.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2203.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "state": "solved",
+     "station": "north-pool-south-upper"
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "state": "solved",
+     "station": "north-pool-south-upper"
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "state": "solved",
+     "station": "north-pool-south-upper"
+    },
+    {
+     "photo": "IMG_2207.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2208.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2214.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2215.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2216.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2217.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2218.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2219.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2220.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2223.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2224.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2225.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2226.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2227.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2229.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2230.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2231.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2232.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2233.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2234.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2235.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2236.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2237.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2238.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2239.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2240.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2241.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2242.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2243.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2244.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2245.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2246.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2247.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2248.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2249.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2250.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2251.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2252.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2253.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2254.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2255.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2256.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2260.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2261.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2262.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2263.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2264.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2265.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2266.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2267.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2268.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2269.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2270.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2273.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2274.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2275.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2276.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2277.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2278.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2279.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2280.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2281.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2282.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2283.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2284.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2285.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2286.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2287.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2288.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2289.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2290.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2291.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2292.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2293.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2294.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2295.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2296.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2297.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2298.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2299.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2300.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2327.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2328.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2329.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2330.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2331.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2332.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2333.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2334.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2335.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2336.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2337.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2338.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2339.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2340.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2341.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2342.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2345.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2346.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2347.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2349.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2350.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2351.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2352.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2354.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2355.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2356.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2358.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2359.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2360.jpg",
+     "state": "solved",
+     "station": null
+    },
+    {
+     "photo": "IMG_2361.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2362.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2363.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2364.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2365.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2366.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2367.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2368.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2369.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2442.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2443.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2444.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2445.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2446.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2447.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2448.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2449.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2450.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2451.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2452.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2453.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2454.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2455.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2456.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2457.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2458.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2459.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2460.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2461.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2462.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2463.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2464.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2465.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2466.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2467.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2468.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2469.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2470.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2471.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2472.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2473.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2474.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2475.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2476.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2477.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2478.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2480.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2481.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2482.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2483.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2484.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2485.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2486.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2487.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2488.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2489.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2491.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2492.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2493.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2494.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2495.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2496.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2497.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2498.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2499.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2500.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2501.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2502.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2503.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2504.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2505.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2506.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2507.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2508.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2509.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2510.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2511.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2512.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2513.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2514.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2515.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2516.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2517.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2518.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2519.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2520.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2521.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2522.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2523.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2524.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2525.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2526.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2537.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2538.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2539.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2540.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2541.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2542.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2543.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2544.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2545.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2546.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2547.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2548.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2549.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2550.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2551.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2552.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2553.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2554.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2555.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2556.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2557.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2558.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2559.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2560.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2561.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2562.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2563.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2564.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2565.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2566.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2567.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2568.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2569.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2570.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2571.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2572.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2573.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2574.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2575.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2576.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2577.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2578.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2579.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2580.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2581.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2582.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2583.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2584.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2585.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2586.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2587.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2588.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2589.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2590.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2591.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2592.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2593.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2594.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2595.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2596.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2597.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2598.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2599.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2600.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2601.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2602.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2603.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2604.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2605.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2606.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2607.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2608.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2609.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2610.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2611.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2612.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2613.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2614.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2615.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2616.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2617.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2618.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2619.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2620.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2621.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2622.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2623.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2624.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2625.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2626.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2627.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2628.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2629.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2630.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2631.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2632.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2633.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2634.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2635.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2636.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2637.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2638.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2639.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2640.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2641.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2642.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2643.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2644.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2645.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2646.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2647.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2648.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2649.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2650.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2651.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2652.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2653.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2654.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2655.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2656.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2657.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2658.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2659.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2660.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2661.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2662.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2663.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2665.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2666.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2667.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2668.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2669.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2670.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2671.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2672.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2673.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2674.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2675.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2676.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2677.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2678.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2679.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2680.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2681.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2682.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2683.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2684.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2685.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2686.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2687.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2688.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2689.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2690.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2691.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2692.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2696.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2697.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2698.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2699.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2700.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2701.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2702.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2703.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2704.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2705.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2706.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2707.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2708.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2710.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2711.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2712.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2713.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2714.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2715.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2721.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2723.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2724.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2725.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2727.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2728.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2729.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2730.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2732.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2759.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2760.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2761.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2762.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2763.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2764.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2765.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2766.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2767.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2769.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2770.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2773.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2774.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2775.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2776.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2777.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2778.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2779.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2780.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2781.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2782.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2783.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2784.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2785.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2786.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2787.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2788.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2789.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2790.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2791.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2792.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2794.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2795.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2796.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2797.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2798.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2799.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2800.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2801.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2802.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2803.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2804.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2805.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2806.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2810.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2813.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2822.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2823.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/02-pool-from-upper-floor-2020-12.png",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/09-middle-pool-through-iron-gate.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-01-looking-north-palm.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-02-looking-south-east-sea.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/south-pool-03-lawn-from-north-west.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "ref:web/easyjet-pool-probably-middle.jpg",
+     "state": "needs-solving",
+     "station": null
+    }
+   ],
+   "readyTasks": [
+    {
+     "id": "3d-browser-regression-reliability",
+     "title": "Diagnose and stabilise 3D browser regressions before geometry releases",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "cervantes-identify-miguel-passage",
+     "title": "Cervantes/Miguel: identify signed passage and both world portals",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "cervantes-register-edges",
+     "title": "Cervantes: register finite path sides, wall ends and eastern terminal",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-level-clearance-survey",
+     "title": "Elena: resolve path/threshold levels and usable clearance uncertainty",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-register-path-edges",
+     "title": "Elena: register both physical path edges and finite ground boundaries",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-register-tunnel-portals",
+     "title": "Elena: register both portals and reconcile second tunnel candidate",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-south-terminal-identify",
+     "title": "Elena south: identify terminal frame and adjoining wall/door connections",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "loop-discrepancies",
+     "title": "Photo-to-model loop: discrepancy records, pixel-to-map projection and the first north-pool comparison",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "loop-measured-approval",
+     "title": "Photo-to-model loop: placement gate accepts measured, agent-reviewed changes",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "main-pool-gate-corner",
+     "title": "Main pool lawn's sea corner: inner path, gate surround and kiosk ground from new photos",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "north-pool-unresolved-plan",
+     "title": "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "retexture-surfaces",
+     "title": "Retexture plaster, terracotta and crazy paving from the photos",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "silvia-covered-passage-reference-audit",
+     "title": "Resolve the Silvia tunnel entrance, its components and connection to the lane",
+     "priority": 1,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "elena-25-passage",
+     "title": "Elena south: register the CALLE ELENA 25 covered passage and where it leads",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "enrique-shop-storey",
+     "title": "Enrique's: the shop storey above the street-level terrace at the head of the steps",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-cervantes",
+     "title": "Calle Miguel de Cervantes: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-dali",
+     "title": "Calle Pintor Dalí: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-elena",
+     "title": "Calle Elena: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-eva",
+     "title": "Calle Eva: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-middle-pool",
+     "title": "Middle pool: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-north-lanes",
+     "title": "Loira, Bolivia, Alberto and Isabel: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-picasso",
+     "title": "Pintor Picasso and the car park: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-seaward-lanes",
+     "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "ground-plan-south-pool",
+     "title": "South pool: smooth paths, patios and green spaces with their edges and boundaries",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "main-pool-lawn-cameras",
+     "title": "Main pool lawn and Enrique's steps: solve the photo cameras and close what still differs",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "middle-pool-west-path-material",
+     "title": "Middle pool west: distinguish the crazy-paved pool path from the tiled Elena approach",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-barraka-beach",
+     "title": "Barraka and the beach: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-dali",
+     "title": "Calle Pintor Dalí: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-eva",
+     "title": "Calle Eva: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-main-pool",
+     "title": "Main pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-middle-pool",
+     "title": "Middle pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-north-lanes",
+     "title": "Loira, Bolivia, Alberto and Isabel: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-north-pool",
+     "title": "North pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-paseo",
+     "title": "The paseo: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-picasso",
+     "title": "Pintor Picasso and the car park: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-seaward-lanes",
+     "title": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-south-pool",
+     "title": "South pool: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "path-network-inventory-whole-resort",
+     "title": "The whole resort: full-source path, tunnel and boundary inventory",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "patricia-passage-reference-pack",
+     "title": "Patricia covered passage: trace the arch chain from the CALLE DE PATRICIA arch to the Silvia 22-44 mouth",
+     "priority": 2,
+     "dependencies": [],
+     "requests": []
+    },
+    {
+     "id": "jorge-south-arcade-identity",
+     "title": "Eva-side covered passages: establish identity and position",
+     "priority": 3,
+     "dependencies": [],
+     "requests": []
+    }
+   ],
+   "waitingTasks": [
+    {
+     "id": "barraka-barbecue-boat",
+     "title": "Barraka sand-filled barbecue boat: establish placement and add shared geometry",
+     "priority": 2,
+     "dependencies": [
+      "barraka-planter-placement"
+     ],
+     "requests": []
+    },
+    {
+     "id": "middle-pool-south-lane-planters",
+     "title": "South entrance lane: planted frontage borders and projecting window grilles",
+     "priority": 2,
+     "dependencies": [
+      "middle-pool-south-forecourt"
+     ],
+     "requests": []
+    },
+    {
+     "id": "north-pool-roof-heights",
+     "title": "Storey heights: match roof heights to the laser survey",
+     "priority": 3,
+     "dependencies": [
+      "terrain-from-lidar"
+     ],
+     "requests": []
+    },
+    {
+     "id": "dali-house-fronts",
+     "title": "Pintor Dalí: trace the house arches, palms and the seaward lamp",
+     "priority": 2,
+     "dependencies": [
+      "dali-street-scene"
+     ],
+     "requests": []
+    },
+    {
+     "id": "elena-tunnel-structure-correction",
+     "title": "Elena: correct covered passage structural omissions after registration",
+     "priority": 1,
+     "dependencies": [
+      "elena-register-tunnel-portals",
+      "3d-browser-regression-reliability"
+     ],
+     "requests": []
+    },
+    {
+     "id": "cervantes-bounded-structure",
+     "title": "Cervantes: correct supported boundary and passage omissions after registration",
+     "priority": 1,
+     "dependencies": [
+      "cervantes-register-edges",
+      "3d-browser-regression-reliability"
+     ],
+     "requests": []
+    },
+    {
+     "id": "pool-deck-outline",
+     "title": "North pool: trace the deck outline and squared deck tongue from the solved cameras",
+     "priority": 1,
+     "dependencies": [
+      "pool-detail"
+     ],
+     "requests": []
+    },
+    {
+     "id": "loop-north-pool-fixes",
+     "title": "Photo-to-model loop: close the north-pool discrepancies with measured fixes",
+     "priority": 1,
+     "dependencies": [
+      "loop-discrepancies",
+      "loop-measured-approval"
+     ],
+     "requests": []
+    },
+    {
+     "id": "loop-camera-solving",
+     "title": "Photo-to-model loop: semi-automatic camera solving for every north-pool photo",
+     "priority": 1,
+     "dependencies": [
+      "loop-discrepancies"
+     ],
+     "requests": []
+    },
+    {
+     "id": "loop-photo-intake",
+     "title": "Photo-to-model loop: upload photos, then one command runs the loop",
+     "priority": 1,
+     "dependencies": [
+      "loop-discrepancies",
+      "loop-measured-approval",
+      "loop-north-pool-fixes",
+      "loop-camera-solving"
+     ],
+     "requests": []
+    },
+    {
+     "id": "silvia-west-passage-swap",
+     "title": "Decide the west Silvia passage: 2-20 ramp type here, 1-15 type on the east block",
+     "priority": 2,
+     "dependencies": [
+      "silvia-ramp-passages"
+     ],
+     "requests": []
+    },
+    {
+     "id": "eva-west-planting",
+     "title": "Calle Eva west: climbers on the house walls and the raised planter's plants",
+     "priority": 3,
+     "dependencies": [
+      "eva-planting-shapes"
+     ],
+     "requests": []
+    },
+    {
+     "id": "eva-east-lane",
+     "title": "Calle Eva east: octagonal paving, azulejo benches, hedged planters and lanterns",
+     "priority": 2,
+     "dependencies": [
+      "eva-lane-details"
+     ],
+     "requests": []
+    }
+   ]
+  }
+ ]
+}

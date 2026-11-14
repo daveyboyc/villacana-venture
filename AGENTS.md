@@ -78,6 +78,13 @@ comment what failed and why.
 
 ## Build queue
 
+Start an area run with `python3 scripts/photo_loop.py --area <id>` and follow
+`docs/CONTINUOUS_LOOP.md`. Record findings in `data/discrepancies.json`; flag
+specific missing photos/maps/measurements in `data/evidence_requests.json`.
+Missing evidence blocks only its declared scope: keep working on other supported
+features. Acceptance follows `docs/ACCEPTANCE_STANDARD.md`, with independent
+review and current evidence; an empty queue or green work light is not approval.
+
 Work is split into tasks in `data/build_queue.json` (shown by priority in
 `refs/QUEUE.md`, one issue body per task in `refs/issues/`). Follow
 `docs/HANDOVER.md` to take one: one task per branch and PR, and its

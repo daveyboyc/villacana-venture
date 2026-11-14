@@ -91,7 +91,7 @@ graph LR
   F6 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F6 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F6 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F7["North pool deck · unreviewed"]
+  A --> F7["North pool deck · disputed"]
   F7 --> PIMG_2204_jpg(["IMG_2204"])
   F7 --> PIMG_2205_jpg(["IMG_2205"])
   F7 --> PIMG_2206_jpg(["IMG_2206"])
@@ -100,7 +100,7 @@ graph LR
   F8 --> PIMG_2205_jpg(["IMG_2205"])
   F8 --> PIMG_2207_jpg(["IMG_2207"])
   F8 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F9["North pool · north-west raised terrace and tiled stair · unreviewed"]
+  A --> F9["North pool · north-west raised terrace and tiled stair · disputed"]
   F9 --> PIMG_2204_jpg(["IMG_2204"])
   F9 --> PIMG_2206_jpg(["IMG_2206"])
   F9 --> PIMG_2208_jpg(["IMG_2208"])
@@ -119,9 +119,9 @@ graph LR
 | `north_west_canopies.json:north-west-balcony-canopy-1` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `north_west_canopies.json:north-west-balcony-canopy-2` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `north_west_canopies.json:north-west-balcony-canopy-3` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `pool_decks.json:north-deck` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `pool_decks.json:north-deck` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy north-deck-shape |
 | `raised_terraces.json:north-pool-north-patios` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `raised_terraces.json:north-pool-west-terrace` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `raised_terraces.json:north-pool-west-terrace` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy north-west-terrace-extents |
 
 ## Photo checks
 
