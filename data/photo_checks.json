@@ -135,7 +135,7 @@
   },
   {
    "task": "north-pool-alignment-audit",
-   "feature": "north_pool_gardens.json:north-pool-lawn-path",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn-path",
    "photo": "IMG_2204.jpg",
    "render": "docs/reviews/north-pool-alignment-audit/IMG_2204-after.png",
    "checked": "2026-10-18",
@@ -145,7 +145,7 @@
   },
   {
    "task": "north-pool-alignment-audit",
-   "feature": "north_pool_gardens.json:north-pool-lawn-path",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn-path",
    "photo": "IMG_2205.jpg",
    "render": "docs/reviews/north-pool-alignment-audit/IMG_2205-after.png",
    "checked": "2026-10-18",
@@ -175,7 +175,7 @@
   },
   {
    "task": "north-pool-alignment-audit",
-   "feature": "north_pool_gardens.json:north-pool-lawn-path",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn-path",
    "photo": "IMG_2208.jpg",
    "render": "docs/reviews/north-pool-alignment-audit/IMG_2208-after.png",
    "checked": "2026-10-18",
@@ -1724,6 +1724,28 @@
    "result": "differs",
    "followUp": "main-pool-gate-corner",
    "notes": "Past the kiosk's round end towards the fence: the lawn by the kiosk is now lawn, but the corner ahead is still the seafront zone's ground and the inner path where the photo shows the pink path, a flagstone path between the hedge and the round wall, and a bollard. Camera: hand-set starting pose from photo content (data/photo_poses.json), not solved; a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-north-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn",
+   "photo": "IMG_2204.jpg",
+   "render": "docs/reviews/ground-plan-north-pool/IMG_2204-after.png",
+   "result": "differs",
+   "followUp": "ground-plan-north-pool",
+   "notes": "The lawn now runs all round the deck with a clean edge, as in the photo, and the crazy-paving band runs along the north frontage. Still different: the photo's crazy paving continues down the west side along the curved white wall and along the south side behind the hedges, which are not traced yet; the hedges and planting in the foreground differ in size and place. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "ground-plan-north-pool",
+   "checked": "2026-11-14",
+   "by": "Claude",
+   "feature": "ground_plan_north_pool.json:north-pool-lawn",
+   "photo": "IMG_2205.jpg",
+   "render": "docs/reviews/ground-plan-north-pool/IMG_2205-after.png",
+   "result": "differs",
+   "followUp": "ground-plan-north-pool",
+   "notes": "The lawn and deck line up with the photo. Different: on the right the photo shows crazy-paving stones curving down from the north frontage past the tree towards the camera, where the model draws Calle Isabel as a straight terracotta lane; the lane's surface and line there need tracing. Camera: the solved station pose (data/photo_poses.json, IMG_2204-2206 one upper-floor station); a photographic diagnostic, not placement approval. Agent-reviewed only."
   }
  ],
  "legacyUnchecked": [

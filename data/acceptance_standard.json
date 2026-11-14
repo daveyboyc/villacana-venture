@@ -1,0 +1,6 @@
+{
+  "id": "villacana-evidence-v1",
+  "placementRmsM": 0.3,
+  "appearanceChecklist": ["presence", "shape", "materials", "visible-details"],
+  "scope": "Tracked discrepancies and declared feature placement, judged in Inspect. Acceptance does not certify hidden boundaries or the whole area. Heights require an explicit source-backed tolerance."
+}

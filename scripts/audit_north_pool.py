@@ -122,10 +122,11 @@ def draw_features(ax,project,box,label=True):
         # Label in view, near centre of the visible line.
         visible=[p for p in st['points'] if box[0]<p[0]<box[2] and box[1]<p[1]<box[3]]
         p=project(visible[len(visible)//2]);ax.text(*p,st['id'],fontsize=6,color='#6e4b00',bbox=dict(facecolor='white',alpha=.8,pad=1,edgecolor='none'))
-    for filename,key,col in [('north_west_canopies.json','canopies','#e6a52c'),('raised_terraces.json','terraces','#77b536'),('north_pool_gardens.json',None,'#309a73')]:
+    for filename,key,col in [('north_west_canopies.json','canopies','#e6a52c'),('raised_terraces.json','terraces','#77b536'),('ground_plan_north_pool.json','surfaces','#309a73')]:
         data=json.loads((ROOT/'data'/filename).read_text());data=data[key] if key else [data]
         for item in data:
             ring=item.get('ring',item.get('outline'))
+            if ring is None:continue
             ax.add_patch(Polygon([project(p) for p in ring],closed=True,fill=False,ec=col,lw=1.1))
     for name,coords,col in [('Lawn arch',np.mean(json.loads((ROOT/'data/elena_north.json').read_text())['gateway']['points'],axis=0),'#0356ab'),('Private 36/34',np.mean(json.loads((ROOT/'data/elena_gated_entry.json').read_text())['points'],axis=0),'#0356ab')]:
         p=project(coords);ax.plot(*p,'o',color=col,ms=3);ax.annotate(name,p,xytext=(4,4),textcoords='offset points',fontsize=7,color=col,bbox=dict(facecolor='white',alpha=.8,pad=1,edgecolor='none'))

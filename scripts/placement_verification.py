@@ -28,7 +28,7 @@ north-pool-alignment-audit unified-reference-map'''.split())
 UI_MODULES = {'app.ts', 'photo-library.ts', 'references.ts', 'asset.ts', 'photo-camera.ts', 'scorecard.ts', 'confidence.ts'}
 WORKFLOW_DATA = {'areas.json', 'build_queue.json', 'photo_checks.json', 'photo_positions.json',
                  'photo_annotations.json', 'reference_tags.json', 'placement_reviews.json', 'photo_poses.json',
-                 'confidence.json'}
+                 'confidence.json', 'acceptance_standard.json', 'discrepancies.json', 'evidence_requests.json'}
 
 
 def digest(value):

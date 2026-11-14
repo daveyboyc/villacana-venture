@@ -102,6 +102,16 @@ Existing browser storage keys are retained. Use `scripts/apply_map_edits.py` and
 
 ## Checks
 
+Continuous build/validation work and scoped missing photo/map requests:
+
+```bash
+python3 scripts/photo_loop.py --area north-pool
+```
+
+See [the agent loop](docs/CONTINUOUS_LOOP.md), [acceptance standard](docs/ACCEPTANCE_STANDARD.md)
+and [current work/evidence flags](refs/LOOP.md). Missing evidence blocks only the
+declared feature; it does not stop supported work elsewhere.
+
 ```bash
 python3 scripts/build_references.py --check
 python3 scripts/test_photo_assignment.py

@@ -70,6 +70,7 @@ const path = require("node:path");
       try { await page.waitForFunction(() => document.querySelector("#scene")?.dataset.ready === "true", null, { timeout: 240000 }); }
       catch (error) { throw new Error(`${name}: the scene did not finish loading. ${errors.join(" | ")}`); }
       await page.waitForTimeout(3000);
+      if (errors.length) throw new Error(`${name}: ${errors.join(" | ")}`);
       fs.writeFileSync(path.join("layout-checks.local", "model.json"), JSON.stringify(await page.evaluate(() => window.villacanaModel)));
       const file = path.join(out, photo.file.replace(/\.jpg$/, ".png"));
       await page.screenshot({ path: file });

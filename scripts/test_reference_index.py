@@ -27,7 +27,7 @@ class ReferenceDiscovery(unittest.TestCase):
             if r['private']:
                 self.assertIsNone(r['image'])
                 self.assertIsNone(r['thumbnail'])
-                self.assertTrue(r['sourceUrl'].startswith('https://github.com/daveyboyc/villacana-reference/blob/main/'))
+                self.assertRegex(r['sourceUrl'], r'^https://github\.com/daveyboyc/villacana-reference/blob/(?:main|[0-9a-f]{40})/')
             else:
                 self.assertTrue((ROOT / 'public' / r['image']).is_file(), r['id'])
                 self.assertTrue((ROOT / 'public' / r['thumbnail']).is_file(), r['id'])

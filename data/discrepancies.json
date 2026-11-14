@@ -1,0 +1,49 @@
+{
+  "about": "Persistent photo-to-model findings. Open findings are comparison work, not permission to move geometry. Never delete history or close from a software pass. See docs/CONTINUOUS_LOOP.md.",
+  "discrepancies": [
+    {
+      "id": "north-deck-shape",
+      "area": "north-pool",
+      "kind": "placement",
+      "description": "Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.",
+      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2206.jpg", "map:ground"],
+      "features": ["pool_decks.json:north-deck"],
+      "task": "pool-deck-outline",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "north-pool-fittings",
+      "area": "north-pool",
+      "kind": "completeness",
+      "description": "Inventory and compare the white pool-side box, parasols, plants and trees against the current Inspect Details render. Record individual missing or misplaced items before building; split this finding by feature as needed.",
+      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2206.jpg"],
+      "features": [],
+      "task": "loop-north-pool-fixes",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "north-west-terrace-extents",
+      "area": "north-pool",
+      "kind": "placement",
+      "description": "Resolve the northwest terrace/stair position and visible floor limits. Existing records flag uncertain concealed ends and a possible eastward offset; do not treat these as a measured correction.",
+      "sources": ["IMG_2204.jpg", "IMG_2206.jpg", "IMG_2208.jpg", "map:ground"],
+      "features": ["raised_terraces.json:north-pool-west-terrace"],
+      "task": "north-pool-unresolved-plan",
+      "status": "open",
+      "requests": ["north-west-stair-views"]
+    },
+    {
+      "id": "north-pool-hidden-ground-boundaries",
+      "area": "north-pool",
+      "kind": "placement",
+      "description": "Keep concealed patio ground edges and Isabel-side access widths unresolved until ground corners can be identified independently. This does not block visible pool, deck or facade corrections.",
+      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2363.jpg", "map:ground"],
+      "features": [],
+      "task": "north-pool-unresolved-plan",
+      "status": "open",
+      "requests": ["north-pool-ground-boundaries"]
+    }
+  ]
+}

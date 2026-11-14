@@ -1,8 +1,12 @@
 import * as THREE from "three";
+import clipping from "polygon-clipping";
+import skeleton from "../public/map/skeleton.json";
 import mainPool from "../data/ground_plan_main_pool.json";
+import northPool from "../data/ground_plan_north_pool.json";
 import { clippedHedge, looseShrub } from "./clipped-plants";
 import { closestOnSegment, pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
+import { crazyPavingTexture } from "./north-pool-gardens";
 import { offsetLine, outlineRing, roundCorners, roundPolyline, smoothLine, smoothUnion, surfaceGeometry } from "./smooth-path";
 import type { Vec2 } from "./types";
 
@@ -15,19 +19,20 @@ import type { Vec2 } from "./types";
  * - A path is one or more centrelines with a width. Paths of one surface are unioned into a single
  *   shape with rounded fillets where they meet (`joins`, metres), and each end is square or round.
  * - A patio, apron or green space is an outline; its corners are rounded by `corners` metres, or kept
- *   hard where `hard` lists their indices (a patio against a house).
+ *   hard where `hard` lists their indices (a patio against a house); `cut` takes holes out of it
+ *   ("deck:<pool>" or "pool:<pool>", from the skeleton).
  * - Edges bound a surface: none, kerb, brick border, planter wall, wall, hedge or fence. On a path an
  *   edge runs along one side or both (over `span`, metres along the path, if given); on an outline it runs over vertices `from`..`to` (all of it if
  *   omitted). `openings` leave gaps ({at: metres along the edge, width}). Edges follow the same smooth
  *   line as the surface, so the floor, its edge and the ground beside it agree.
  */
-export const GROUND_PLANS = [mainPool] as unknown as GroundPlan[];
+export const GROUND_PLANS = [mainPool, northPool] as unknown as GroundPlan[];
 
 type Edge = { kind: EdgeKind; side?: "left" | "right" | "both"; span?: number[]; from?: number; to?: number; height?: number; width?: number; planting?: string; openings?: { at: number; width: number }[] };
 type Surface = {
   id: string; name: string; kind: "path" | "patio" | "apron" | "green"; finish: Finish;
   width?: number; lines?: number[][][]; ends?: ("square" | "round")[][]; joins?: number;
-  outline?: number[][]; corners?: number; hard?: number[]; raise?: number; above?: string[]; edges?: Edge[];
+  outline?: number[][]; corners?: number; hard?: number[]; cut?: string[]; raise?: number; above?: string[]; edges?: Edge[];
 };
 type GroundPlan = { area: string; surfaces: Surface[] };
 
@@ -39,6 +44,7 @@ export const FINISHES = {
   "octagon-tiles": { colour: "#c6765a", lift: 0.05, paved: true },
   "concrete": { colour: "#cfc8ba", lift: 0.05, paved: true },
   "gravel": { colour: "#c9bea8", lift: 0.04, paved: true },
+  "crazy-paving": { colour: "#d8cfb9", lift: 0.073, paved: true },
   "lawn": { colour: "#6b8a4e", lift: 0, paved: false },
   "planted-bed": { colour: "#4b3a2c", lift: 0.03, paved: false },
   // Texture only: the pool deck's stone, painted with the ground's deck class so its edge is clean.
@@ -67,9 +73,20 @@ export const groundSurfaces: Built[] = GROUND_PLANS.flatMap((plan) => plan.surfa
     const rings = lines.map((l, i) => outlineRing(l, half, [surface.ends?.[i]?.[0] === "round", surface.ends?.[i]?.[1] === "round"]));
     return { plan, surface, polys: smoothUnion(rings, surface.joins ?? 1.0, 0.2), centrelines: lines };
   }
-  const ring = surface.outline as Vec2[];
-  return { plan, surface, polys: [[hardRound(ring, surface.corners ?? 0.3, surface.hard ?? [])]], centrelines: [] };
+  const ring = hardRound(surface.outline as Vec2[], surface.corners ?? 0.3, surface.hard ?? []);
+  if (!surface.cut?.length) return { plan, surface, polys: [[ring]], centrelines: [] };
+  // Holes: "deck:<pool>" (the measured deck's outer edge) or "pool:<pool>" (the water), from the skeleton.
+  const holes = surface.cut.map(cutRing).map((r) => [[...r, r[0]]] as clipping.Polygon);
+  const rest = clipping.difference([[...ring, ring[0]]] as clipping.Polygon, ...holes) as unknown as Vec2[][][];
+  return { plan, surface, polys: rest.map((poly) => poly.map((r) => r.slice(0, -1))), centrelines: [] };
 }));
+
+function cutRing(ref: string): Vec2[] {
+  const [kind, id] = ref.split(":"), pool = (skeleton.pools as { id: string; ring: number[][]; deck?: number[][] }[]).find((p) => p.id === id);
+  const ring = kind === "deck" ? pool?.deck : kind === "pool" ? pool?.ring : undefined;
+  if (!ring) throw new Error(`ground plan: unknown cut ${ref}`);
+  return ring as Vec2[];
+}
 
 /** Round an outline's corners except the ones listed as hard. */
 function hardRound(ring: Vec2[], r: number, hard: number[]): Vec2[] {
@@ -233,6 +250,7 @@ function finishMaterial(finish: Finish): THREE.Material {
     const map = surfaceTexture("paving").clone(); map.repeat.set(1 / 3.2, 1 / 3.2); map.needsUpdate = true;
     return new THREE.MeshStandardMaterial({ ...base, color: FINISHES[finish].colour, map });
   }
+  if (finish === "crazy-paving") return new THREE.MeshStandardMaterial({ ...base, map: crazyPavingTexture(), color: FINISHES[finish].colour, roughness: 1 });
   if (finish === "flagstone") {
     const map = flagstoneTexture(); map.repeat.set(1.4, 1.4);
     return new THREE.MeshStandardMaterial({ ...base, map, roughness: 0.95 });

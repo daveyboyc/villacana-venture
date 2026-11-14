@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 434,
+  "features": 435,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 179
+  "modelFeaturesWithPhotoCitations": 180
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3488,18 +3488,6 @@
    ]
   },
   {
-   "id": "north_pool_gardens.json:north-pool-lawn-path",
-   "name": "North pool · visible crazy-paving lawn-edge path",
-   "kind": "reference feature",
-   "source": "authored photo/map interpretation",
-   "evidence": [
-    "IMG_2204.jpg",
-    "IMG_2205.jpg",
-    "IMG_2206.jpg",
-    "IMG_2208.jpg"
-   ]
-  },
-  {
    "id": "north_west_canopies.json:north-west-balcony-canopy-1",
    "name": "North pool west · observed upper balcony canopy 1",
    "kind": "reference feature",
@@ -3865,6 +3853,29 @@
    "kind": "reference feature",
    "source": "Inferred from the aerial only: a pale line about 0.7 m wide runs from the deck's east corner north-east across the lawn to the Picasso-side wall. No ground photo shows it; what it is (a path, stepping stones, a service trench) and where it ends at the wall are unknown (photo request lawn-east-path).",
    "evidence": []
+  },
+  {
+   "id": "ground_plan_north_pool.json:north-pool-lawn",
+   "name": "North pool lawn",
+   "kind": "reference feature",
+   "source": "IMG_2204 and IMG_2205 (upper-floor views over the courtyard) show lawn all round the pool deck, from the crazy-paving path on the north and west to the hedges on the south and the paved lane on the east. Its north and west sides are the path's pool-side edge, its east side Calle Isabel's lawn-side edge, its south side the dark hedge line traced from the aerial (scripts/trace_ground.py lawn; the aerial reads the shaded, worn north lawn as not green, so only the south edge is traced). The measured deck is cut out. Good to about a metre.",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_north_pool.json:north-pool-lawn-path",
+   "name": "North pool · crazy-paving lawn-edge path",
+   "kind": "reference feature",
+   "source": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool).",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ]
   },
   {
    "id": "photo:253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
@@ -8049,12 +8060,6 @@
   },
   {
    "from": "photo:IMG_2204.jpg",
-   "to": "north_pool_gardens.json:north-pool-lawn-path",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2204.jpg",
    "to": "raised_terraces.json:north-pool-west-terrace",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8062,6 +8067,18 @@
   {
    "from": "photo:IMG_2204.jpg",
    "to": "raised_terraces.json:north-pool-north-patios",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-lawn-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8099,13 +8116,19 @@
   },
   {
    "from": "photo:IMG_2205.jpg",
-   "to": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "raised_terraces.json:north-pool-north-patios",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2205.jpg",
-   "to": "raised_terraces.json:north-pool-north-patios",
+   "to": "ground_plan_north_pool.json:north-pool-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-lawn-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8150,13 +8173,19 @@
   },
   {
    "from": "photo:IMG_2206.jpg",
-   "to": "north_pool_gardens.json:north-pool-lawn-path",
+   "to": "raised_terraces.json:north-pool-west-terrace",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",
-   "to": "raised_terraces.json:north-pool-west-terrace",
+   "to": "ground_plan_north_pool.json:north-pool-lawn",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-lawn-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8210,12 +8239,6 @@
   },
   {
    "from": "photo:IMG_2208.jpg",
-   "to": "north_pool_gardens.json:north-pool-lawn-path",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
-  },
-  {
-   "from": "photo:IMG_2208.jpg",
    "to": "raised_terraces.json:north-pool-west-terrace",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8223,6 +8246,12 @@
   {
    "from": "photo:IMG_2208.jpg",
    "to": "raised_terraces.json:north-pool-north-patios",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-lawn-path",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

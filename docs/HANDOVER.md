@@ -54,6 +54,11 @@ measured placement gate and never grants placement approval.
 
 ## Taking a task
 
+Start with `python3 scripts/photo_loop.py --area <id>` and follow
+[CONTINUOUS_LOOP.md](CONTINUOUS_LOOP.md). Keep missing photos, maps and measurements
+as scoped requests. Continue supported features while those requests wait. Acceptance
+follows [ACCEPTANCE_STANDARD.md](ACCEPTANCE_STANDARD.md), not task completion alone.
+
 1. Pick an `open` task from `refs/QUEUE.md` whose `dependsOn` tasks are `done`.
    Highest priority first (P1, then P2, P3).
 2. Branch `task/<task-id>` from `main`. Set the task's `status` to `in-progress`

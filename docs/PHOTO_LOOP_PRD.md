@@ -3,6 +3,13 @@
 **Status:** approved by Dave, 1 November 2026. Pilot area: the north pool.
 **Owner:** Dave. **Delivery:** agents, one slice per task and PR (`data/build_queue.json`).
 
+Implementation update (14 November): [CONTINUOUS_LOOP.md](CONTINUOUS_LOOP.md)
+documents the area command, persistent findings, scoped photo/map/measurement
+requests, acceptance packets and recurring validation. The original slices below
+remain open until each complete definition is met, including camera solving and
+the north-pool corrections. [ACCEPTANCE_STANDARD.md](ACCEPTANCE_STANDARD.md)
+defines the current stopping rules.
+
 ## 1. Intent
 
 Dave should only have to upload photos. An agent then finds where the model differs

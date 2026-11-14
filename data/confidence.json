@@ -498,6 +498,14 @@
   "ground_plan_main_pool.json:lawn-east-path": {
    "level": "inferred",
    "why": "Seen only on the aerial as a pale line; no ground photo. Built so the lawn shows it; what it is and where it ends are open (photo request lawn-east-path)."
+  },
+  "ground_plan_north_pool.json:north-pool-lawn-path": {
+   "level": "estimated",
+   "why": "Photo-supported paving; width and plan curve estimated (about 2 m)."
+  },
+  "ground_plan_north_pool.json:north-pool-lawn": {
+   "level": "estimated",
+   "why": "IMG_2204 and IMG_2205 show lawn all round the deck; bounded by the path, Calle Isabel and the aerial's south hedge line, good to about a metre. The aerial cannot trace the shaded north lawn."
   }
  },
  "gaps": [
