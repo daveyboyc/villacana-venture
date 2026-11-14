@@ -96,6 +96,9 @@ export function guillermoPoolWallLines(): { name: string; points: Vec2[]; thickn
     const a = gw.patio.line[i], b = gw.patio.line[i + 1];
     out.push({ name: "Open patio wall west of Calle Guillermo", points: [at(a[0], -a[1]), at(b[0], -b[1])], thickness: gw.patio.thickness });
   }
+  for (const [from, to] of gw.planters.runs) {
+    out.push({ name: "Hedge planter west of Calle Guillermo", points: [at(gw.planters.along, -from), at(gw.planters.along, -to)], thickness: gw.planters.thickness });
+  }
   return out;
 }
 

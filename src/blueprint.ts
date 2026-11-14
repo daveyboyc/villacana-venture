@@ -468,7 +468,9 @@ async function boot(): Promise<void> {
     const wall = jorgeLane.boundary;
     for (const [a, b] of jorgeWallRuns()) titled(el("path", { d: d([[a, -wall.offset], [b, -wall.offset]]), fill: "none", stroke: "#fffdf8", "stroke-width": wall.thickness }));
     for (const poolWall of guillermoPoolWallLines()) {
-      const node = el("path", { d: "M" + poolWall.points.map((p) => p.join(" ")).join("L"), fill: "none", stroke: "#fffdf8", "stroke-width": poolWall.thickness });
+      const a = poolWall.points[0], b = poolWall.points[poolWall.points.length - 1];
+      const len = Math.hypot(b[0] - a[0], b[1] - a[1]) || 1, nx = -(b[1] - a[1]) / len * poolWall.thickness / 2, nz = (b[0] - a[0]) / len * poolWall.thickness / 2;
+      const node = el("path", { d: path([[a[0] + nx, a[1] + nz], [b[0] + nx, b[1] + nz], [b[0] - nx, b[1] - nz], [a[0] - nx, a[1] - nz]]), fill: "#fffdf8", stroke: "#6d6a5f", "stroke-width": 0.06 });
       const title = el("title", {}); title.textContent = `${poolWall.name}: the same line the model builds`; node.append(title); world.append(node);
     }
     const kerb = jorgeLane.kerb;
