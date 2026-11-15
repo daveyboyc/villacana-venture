@@ -74,7 +74,7 @@ export function addBarrakaBoardwalk(scene: THREE.Scene, groundY: (x: number, z: 
   if (clear(bx, bz, 1.70)) addBarbecueBoat(details, groundY, bx, bz);
 }
 
-/** One open metal hull filled with sand, a few logs and a static flame. No smoke and no copied mesh. */
+/** One open metal hull filled with sand, a few logs, a flickering flame and a little smoke. No copied mesh. */
 function addBarbecueBoat(parent: THREE.Group, groundY: (x: number, z: number) => number, bx: number, bz: number): void {
   const boat = new THREE.Group(); boat.name = "barraka-barbecue-boat"; boat.position.set(bx, groundY(bx, bz), bz); parent.add(boat);
   const local = (p: Vec2): [number, number] => [p[0] - bx, p[1] - bz];
@@ -109,9 +109,51 @@ function addBarbecueBoat(parent: THREE.Group, groundY: (x: number, z: number) =>
     log.castShadow = true; boat.add(log);
   }
   const flame = new THREE.Group();
-  flame.position.set(stern[0] + (bow[0] - stern[0]) * 0.52, 0.5, stern[1] + (bow[1] - stern[1]) * 0.52);
-  const core = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.22, 6), new THREE.MeshStandardMaterial({ color: "#ff7a22", emissive: "#ff5a00", emissiveIntensity: 0.85, roughness: 0.45 }));
-  core.position.y = 0.11; flame.add(core);
-  const tongue = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.16, 6), new THREE.MeshStandardMaterial({ color: "#ffb020", emissive: "#ff8a00", emissiveIntensity: 0.6, roughness: 0.4, transparent: true, opacity: 0.85 }));
-  tongue.position.y = 0.08; flame.add(tongue); boat.add(flame);
+  flame.name = "barraka-barbecue-fire";
+  // Left out of the static batch: the tongues and the smoke move every frame.
+  flame.userData.dynamic = true;
+  flame.position.set(stern[0] + (bow[0] - stern[0]) * 0.52, 0.48, stern[1] + (bow[1] - stern[1]) * 0.52);
+  const tongueMat = (color: string, emissive: string, intensity: number) => new THREE.MeshStandardMaterial({ color, emissive, emissiveIntensity: intensity, roughness: 0.45, transparent: true, opacity: 0.9, depthWrite: false });
+  const tongues = [
+    { mesh: new THREE.Mesh(new THREE.ConeGeometry(0.055, 0.26, 6), tongueMat("#ffd27a", "#ff9a1a", 1.1)), rate: 11, lean: 0.04 },
+    { mesh: new THREE.Mesh(new THREE.ConeGeometry(0.09, 0.2, 6), tongueMat("#ff7a22", "#ff4d00", 0.85)), rate: 7.5, lean: 0.07 },
+    { mesh: new THREE.Mesh(new THREE.ConeGeometry(0.13, 0.14, 5), tongueMat("#ffb020", "#ff6a00", 0.55)), rate: 5.2, lean: 0.05 },
+  ];
+  tongues.forEach((t, i) => { t.mesh.position.y = 0.08 + i * 0.02; flame.add(t.mesh); });
+  // Groups are not drawn, so the callback has to sit on a mesh that is.
+  const smokeMap = smokePuff();
+  const puffs = Array.from({ length: 7 }, (_, i) => {
+    const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: smokeMap, transparent: true, depthWrite: false, opacity: 0.3, color: "#8a8680" }));
+    sprite.center.set(0.5, 0.15); flame.add(sprite);
+    return { sprite, seed: i * 0.37 };
+  });
+  tongues[0].mesh.onBeforeRender = () => {
+    const t = performance.now() * 0.001;
+    tongues.forEach((part, i) => {
+      const flick = Math.sin(t * part.rate + i) * 0.22 + Math.sin(t * part.rate * 1.7 + i * 2) * 0.1;
+      part.mesh.scale.set(1 + flick * 0.35, 0.72 + flick, 1);
+      part.mesh.position.x = Math.sin(t * part.rate * 0.6 + i) * part.lean;
+      part.mesh.rotation.y = t * (1.4 + i * 0.3);
+      (part.mesh.material as THREE.MeshStandardMaterial).emissiveIntensity = 0.55 + Math.abs(flick) * 1.4;
+    });
+    for (const puff of puffs) {
+      const life = 2.6, u = ((t * 0.42 + puff.seed) % life) / life;
+      const rise = u * u;
+      puff.sprite.position.set(Math.sin(puff.seed * 5 + t * 0.7) * 0.06 * (0.4 + u), 0.18 + rise * 1.35, Math.cos(puff.seed * 4 + t * 0.5) * 0.05 * (0.4 + u));
+      const width = 0.16 + rise * 0.55;
+      puff.sprite.scale.set(width, width * 1.35, 1);
+      (puff.sprite.material as THREE.SpriteMaterial).opacity = Math.sin(u * Math.PI) * 0.28;
+    }
+  };
+  boat.add(flame);
+}
+
+/** A soft grey puff. Schematic, not a photograph of smoke. */
+function smokePuff(): THREE.CanvasTexture {
+  const size = 64, canvas = document.createElement("canvas"); canvas.width = canvas.height = size;
+  const g = canvas.getContext("2d")!, shade = g.createRadialGradient(32, 34, 2, 32, 30, 30);
+  shade.addColorStop(0, "rgba(70,68,64,0.85)"); shade.addColorStop(0.45, "rgba(120,116,110,0.35)"); shade.addColorStop(1, "rgba(160,156,150,0)");
+  g.fillStyle = shade; g.fillRect(0, 0, size, size);
+  const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace;
+  return texture;
 }
