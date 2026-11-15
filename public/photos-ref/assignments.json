@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 442,
-  "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 188
+  "features": 443,
+  "photosCitedByModel": 197,
+  "modelFeaturesWithPhotoCitations": 189
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1503,7 +1503,8 @@
    "inViewCandidates": [],
    "citedBy": [
     "barraka_boardwalk.json:barraka-boardwalk",
-    "barraka_boardwalk.json:barraka-beach-seating"
+    "barraka_boardwalk.json:barraka-beach-seating",
+    "barraka_boardwalk.json:barraka-barbecue-boat"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -5285,7 +5286,8 @@
     "building:6465801UF1366N_part5",
     "building:6465801UF1366N_part6",
     "barraka_boardwalk.json:barraka-boardwalk",
-    "barraka_boardwalk.json:barraka-sign-planter"
+    "barraka_boardwalk.json:barraka-sign-planter",
+    "barraka_boardwalk.json:barraka-barbecue-boat"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -5323,7 +5325,8 @@
     "building:6465801UF1366N_part6",
     "barraka_boardwalk.json:barraka-boardwalk",
     "barraka_boardwalk.json:barraka-sign-planter",
-    "barraka_boardwalk.json:barraka-beach-seating"
+    "barraka_boardwalk.json:barraka-beach-seating",
+    "barraka_boardwalk.json:barraka-barbecue-boat"
    ],
    "geometryReview": "observed; geometry comparison pending",
    "camera": {
@@ -7829,7 +7832,9 @@
     }
    ],
    "citedBy": [
-    "area:paseo"
+    "area:paseo",
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -13454,7 +13459,10 @@
     }
    ],
    "inViewCandidates": [],
-   "citedBy": [],
+   "citedBy": [
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -20.1,
@@ -17356,7 +17364,10 @@
      "angleOffset": 18.4
     }
    ],
-   "citedBy": [],
+   "citedBy": [
+    "beach_verge.json:barraka-front-verge",
+    "beach_verge.json:barraka-front-shrubs"
+   ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
     "x": -1.2,

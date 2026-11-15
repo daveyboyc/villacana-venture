@@ -215,10 +215,10 @@ def features(s):
     add('alberto_passage.json:'+alberto['id']+'-porch',alberto['name'],'reference feature','photo-supported porch in the registry recess; sizes and furniture positions estimated',evidence=alberto['evidence'],ring=[aat(0,alberto['platform']['step']['from']),aat(af['width'],alberto['platform']['step']['from']),aat(af['width'],af['depth']),aat(0,af['depth'])])
     add('alberto_passage.json:'+alberto['id']+'-route','Calle Alberto 22-40 · likely passage to the inner courtyard','reference feature','inferred from the registry courtyard and the porch; not seen',evidence=alberto['evidence'],points=alberto['route']['points'])
     barraka=json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
-    for key in ('boardwalk','sign','seating'):
+    for key in ('boardwalk','sign','seating','boat'):
         f=barraka[key]
-        points=f.get('points') or ([f['point']] if 'point' in f else f['parasols'])
-        add('barraka_boardwalk.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],points=points)
+        geom={'ring':f['ring']} if 'ring' in f else {'points':f.get('points') or ([f['point']] if 'point' in f else f['parasols'])}
+        add('barraka_boardwalk.json:'+f['id'],f['name'],'reference feature','authored photo/map interpretation',evidence=f['evidence'],**geom)
     verge=json.loads((ROOT/'data/beach_verge.json').read_text())
     add('beach_verge.json:'+verge['grass']['id'],'Grass in front of the beach gateway and railings','reference feature','rough aerial/photo outline; unmeasured',evidence=verge['evidence'],ring=verge['grass']['ring'])
     add('beach_verge.json:'+verge['shrubs']['id'],'Shrubs in front of the beach gateway and railings','reference feature','rough aerial/photo outline; Details only',evidence=verge['evidence'],points=[c[:2] for c in verge['shrubs']['clumps']])

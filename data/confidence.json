@@ -361,7 +361,11 @@
   },
   "beach_verge.json:barraka-front-verge": {
    "level": "estimated",
-   "why": "Grass outline read off the aerial and IMG_2226 from the beach; Dave confirms grass and plants there. Edges good to about 2-3 m. IMG_2482 and IMG_2604 show it dry and patchy, straw with dull green tufts."
+   "why": "Grass outline read off the aerial and IMG_2226 from the beach; Dave confirms grass and plants there. Edges good to about 2-3 m. IMG_2482 and IMG_2604 show it dry and patchy, straw with dull green tufts. The long verge is dry grey-brown thatch, and dull olive shows only within about 4 m of the paving beside the restaurant."
+  },
+  "barraka_boardwalk.json:barraka-barbecue-boat": {
+   "level": "estimated",
+   "why": "IMG_2223, IMG_2346 and IMG_2347 show a sand-filled metal boat with logs and a flame left of the green aisle; the hull is a schematic about 3.2 m long and the position is estimated to ±3 m. The thatched cooking shelter, net mound and kayaks stay unbuilt."
   },
   "beach_verge.json:barraka-front-shrubs": {
    "level": "estimated",

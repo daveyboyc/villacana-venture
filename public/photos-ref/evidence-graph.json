@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 442,
-  "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 188
+  "features": 443,
+  "photosCitedByModel": 197,
+  "modelFeaturesWithPhotoCitations": 189
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3297,6 +3297,17 @@
    ]
   },
   {
+   "id": "barraka_boardwalk.json:barraka-barbecue-boat",
+   "name": "Sand-filled barbecue boat",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2223.jpg",
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ]
+  },
+  {
    "id": "beach_verge.json:barraka-front-verge",
    "name": "Grass in front of the beach gateway and railings",
    "kind": "reference feature",
@@ -3305,8 +3316,11 @@
     "IMG_2226.jpg",
     "IMG_2481.jpg",
     "IMG_2482.jpg",
+    "IMG_2483.jpg",
     "IMG_2609.jpg",
-    "IMG_2631.jpg"
+    "IMG_2631.jpg",
+    "IMG_2633.jpg",
+    "IMG_2770.jpg"
    ]
   },
   {
@@ -3318,8 +3332,11 @@
     "IMG_2226.jpg",
     "IMG_2481.jpg",
     "IMG_2482.jpg",
+    "IMG_2483.jpg",
     "IMG_2609.jpg",
-    "IMG_2631.jpg"
+    "IMG_2631.jpg",
+    "IMG_2633.jpg",
+    "IMG_2770.jpg"
    ]
   },
   {
@@ -8634,6 +8651,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-barbecue-boat",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2224.jpg",
    "to": "area:beach",
    "relation": "camera-nearby",
@@ -11916,6 +11939,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-barbecue-boat",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2347.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -11954,6 +11983,12 @@
   {
    "from": "photo:IMG_2347.jpg",
    "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-barbecue-boat",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -13882,6 +13917,18 @@
   {
    "from": "photo:IMG_2483.jpg",
    "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -17650,6 +17697,18 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2633.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2633.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2634.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -20319,6 +20378,18 @@
    "relation": "possibly-in-view",
    "distance": 36.4,
    "angleOffset": 18.4
+  },
+  {
+   "from": "photo:IMG_2770.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2770.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2771.jpg",

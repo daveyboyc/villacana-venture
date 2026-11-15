@@ -1516,7 +1516,8 @@
   },
   "citedBy": [
    "barraka_boardwalk.json:barraka-boardwalk",
-   "barraka_boardwalk.json:barraka-beach-seating"
+   "barraka_boardwalk.json:barraka-beach-seating",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "looksAt": [
    38,
@@ -1525,6 +1526,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
@@ -5198,7 +5200,8 @@
    "building:6465801UF1366N_part5",
    "building:6465801UF1366N_part6",
    "barraka_boardwalk.json:barraka-boardwalk",
-   "barraka_boardwalk.json:barraka-sign-planter"
+   "barraka_boardwalk.json:barraka-sign-planter",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "looksAt": [
    38,
@@ -5207,6 +5210,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
@@ -5244,7 +5248,8 @@
    "building:6465801UF1366N_part6",
    "barraka_boardwalk.json:barraka-boardwalk",
    "barraka_boardwalk.json:barraka-sign-planter",
-   "barraka_boardwalk.json:barraka-beach-seating"
+   "barraka_boardwalk.json:barraka-beach-seating",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "looksAt": [
    38,
@@ -5253,6 +5258,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk"
@@ -7764,7 +7770,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "area:paseo"
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
   ],
   "looksAt": [
    28.8,
@@ -12602,7 +12610,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:beach"
+   "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "subject": "Seaward aisle and pots beside Barraka"
  },
@@ -13348,7 +13357,10 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
+  ],
   "looksAt": [
    -22.6,
    156.6
@@ -17308,7 +17320,10 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
+  ],
   "looksAt": [
    4.6,
    129.4
