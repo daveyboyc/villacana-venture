@@ -80,135 +80,137 @@ graph LR
   A --> F2["Calle Isabel's crazy-paving surface beside the north pool lawn · disputed"]
   F2 --> PIMG_2204_jpg(["IMG_2204"])
   F2 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F3["North pool lawn · disputed"]
-  F3 --> PIMG_2204_jpg(["IMG_2204"])
+  A --> F3["Calle Isabel · crazy paving from the lawn to the iron gate and the east block · unreviewed"]
   F3 --> PIMG_2205_jpg(["IMG_2205"])
-  F3 --> PIMG_2206_jpg(["IMG_2206"])
-  A --> F4["North pool · crazy-paving lawn-edge path · disputed"]
+  A --> F4["North pool lawn · disputed"]
   F4 --> PIMG_2204_jpg(["IMG_2204"])
   F4 --> PIMG_2205_jpg(["IMG_2205"])
   F4 --> PIMG_2206_jpg(["IMG_2206"])
-  F4 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F5["North pool · walled patio with two brown gates south of the west path · disputed"]
+  A --> F5["North pool · crazy-paving lawn-edge path · disputed"]
+  F5 --> PIMG_2204_jpg(["IMG_2204"])
+  F5 --> PIMG_2205_jpg(["IMG_2205"])
   F5 --> PIMG_2206_jpg(["IMG_2206"])
   F5 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F6["np alley arch · unreviewed"]
-  F6 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F7["np awning blue stripes · disputed"]
+  A --> F6["North pool · walled patio with two brown gates south of the west path · disputed"]
+  F6 --> PIMG_2206_jpg(["IMG_2206"])
+  F6 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F7["np alley arch · unreviewed"]
   F7 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F8["np awning grey · unreviewed"]
+  A --> F8["np awning blue stripes · disputed"]
   F8 --> PIMG_2204_jpg(["IMG_2204"])
-  F8 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F9["np awning white · unreviewed"]
+  A --> F9["np awning grey · unreviewed"]
   F9 --> PIMG_2204_jpg(["IMG_2204"])
   F9 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F10["np bougainvillea 1 · unreviewed"]
+  A --> F10["np awning white · unreviewed"]
   F10 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F11["np bougainvillea 2 · unreviewed"]
+  F10 --> PIMG_2205_jpg(["IMG_2205"])
+  A --> F11["np bougainvillea 1 · unreviewed"]
   F11 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F12["np bougainvillea 3 · unreviewed"]
+  A --> F12["np bougainvillea 2 · unreviewed"]
   F12 --> PIMG_2204_jpg(["IMG_2204"])
-  F12 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F13["np patio armchair · unreviewed"]
+  A --> F13["np bougainvillea 3 · unreviewed"]
   F13 --> PIMG_2204_jpg(["IMG_2204"])
   F13 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F14["np patio dining a · unreviewed"]
+  A --> F14["np patio armchair · unreviewed"]
   F14 --> PIMG_2204_jpg(["IMG_2204"])
   F14 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F15["np patio loungers · unreviewed"]
+  A --> F15["np patio dining a · unreviewed"]
   F15 --> PIMG_2204_jpg(["IMG_2204"])
   F15 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F16["np patio parasol · unreviewed"]
+  A --> F16["np patio loungers · unreviewed"]
   F16 --> PIMG_2204_jpg(["IMG_2204"])
   F16 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F17["np patio side table · unreviewed"]
+  A --> F17["np patio parasol · unreviewed"]
+  F17 --> PIMG_2204_jpg(["IMG_2204"])
   F17 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F18["np porch armchairs b · unreviewed"]
-  F18 --> PIMG_2204_jpg(["IMG_2204"])
+  A --> F18["np patio side table · unreviewed"]
   F18 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F19["np porch dining d · unreviewed"]
+  A --> F19["np porch armchairs b · unreviewed"]
   F19 --> PIMG_2204_jpg(["IMG_2204"])
   F19 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F20["np porch lounger c · unreviewed"]
+  A --> F20["np porch dining d · unreviewed"]
+  F20 --> PIMG_2204_jpg(["IMG_2204"])
   F20 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F21["nw terrace bistro · unreviewed"]
-  F21 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F22["nw terrace dining · unreviewed"]
+  A --> F21["np porch lounger c · unreviewed"]
+  F21 --> PIMG_2205_jpg(["IMG_2205"])
+  A --> F22["nw terrace bistro · unreviewed"]
   F22 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F23["nw terrace folded parasol · unreviewed"]
+  A --> F23["nw terrace dining · unreviewed"]
   F23 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F24["nw terrace table · unreviewed"]
+  A --> F24["nw terrace folded parasol · unreviewed"]
   F24 --> PIMG_2204_jpg(["IMG_2204"])
-  A --> F25["west patio bougainvillea · unreviewed"]
-  F25 --> PIMG_2206_jpg(["IMG_2206"])
-  F25 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F26["west patio gate 1 · unreviewed"]
+  A --> F25["nw terrace table · unreviewed"]
+  F25 --> PIMG_2204_jpg(["IMG_2204"])
+  A --> F26["west patio bougainvillea · unreviewed"]
   F26 --> PIMG_2206_jpg(["IMG_2206"])
   F26 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F27["west patio gate 2 · unreviewed"]
+  A --> F27["west patio gate 1 · unreviewed"]
   F27 --> PIMG_2206_jpg(["IMG_2206"])
   F27 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F28["west patio parasol · unreviewed"]
+  A --> F28["west patio gate 2 · unreviewed"]
   F28 --> PIMG_2206_jpg(["IMG_2206"])
-  A --> F29["North pool west · observed upper balcony canopy 1 · unreviewed"]
-  F29 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
-  F29 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
-  F29 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F30["North pool west · observed upper balcony canopy 2 · unreviewed"]
+  F28 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F29["west patio parasol · unreviewed"]
+  F29 --> PIMG_2206_jpg(["IMG_2206"])
+  A --> F30["North pool west · observed upper balcony canopy 1 · unreviewed"]
   F30 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F30 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F30 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F31["North pool west · observed upper balcony canopy 3 · unreviewed"]
+  A --> F31["North pool west · observed upper balcony canopy 2 · unreviewed"]
   F31 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
   F31 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
   F31 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
-  A --> F32["north pool gated patio walls · disputed"]
-  F32 --> PIMG_2206_jpg(["IMG_2206"])
-  F32 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F33["north pool isabel east block · disputed"]
-  F33 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F34["north pool north row recess · unreviewed"]
-  F34 --> PIMG_2204_jpg(["IMG_2204"])
+  A --> F32["North pool west · observed upper balcony canopy 3 · unreviewed"]
+  F32 --> Pref_apple_maps_02_3d_north_pool_png(["02-3d-north-pool"])
+  F32 --> Pref_apple_maps_08_3d_north_pool_looking_west_porches_png(["08-3d-north-pool-looking-west-porches"])
+  F32 --> Pref_apple_maps_09_3d_north_pool_looking_south_png(["09-3d-north-pool-looking-south"])
+  A --> F33["north pool gated patio walls · disputed"]
+  F33 --> PIMG_2206_jpg(["IMG_2206"])
+  F33 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F34["north pool isabel east block · disputed"]
   F34 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F35["north pool north row return · unreviewed"]
+  A --> F35["north pool north row recess · unreviewed"]
   F35 --> PIMG_2204_jpg(["IMG_2204"])
   F35 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F36["north pool parasol house · unreviewed"]
+  A --> F36["north pool north row return · unreviewed"]
   F36 --> PIMG_2204_jpg(["IMG_2204"])
   F36 --> PIMG_2205_jpg(["IMG_2205"])
-  A --> F37["north pool station near · unreviewed"]
-  F37 --> PIMG_2206_jpg(["IMG_2206"])
-  F37 --> PIMG_2207_jpg(["IMG_2207"])
-  F37 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F38["north pool station notch west face · unreviewed"]
+  A --> F37["north pool parasol house · unreviewed"]
+  F37 --> PIMG_2204_jpg(["IMG_2204"])
+  F37 --> PIMG_2205_jpg(["IMG_2205"])
+  A --> F38["north pool station near · unreviewed"]
   F38 --> PIMG_2206_jpg(["IMG_2206"])
-  A --> F39["north pool station parapet · disputed"]
-  F39 --> PIMG_2205_jpg(["IMG_2205"])
+  F38 --> PIMG_2207_jpg(["IMG_2207"])
+  F38 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F39["north pool station notch west face · unreviewed"]
   F39 --> PIMG_2206_jpg(["IMG_2206"])
-  F39 --> PIMG_2207_jpg(["IMG_2207"])
-  F39 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F40["north pool station row · disputed"]
+  A --> F40["north pool station parapet · disputed"]
   F40 --> PIMG_2205_jpg(["IMG_2205"])
   F40 --> PIMG_2206_jpg(["IMG_2206"])
   F40 --> PIMG_2207_jpg(["IMG_2207"])
   F40 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F41["north pool · disputed"]
-  F41 --> PIMG_2204_jpg(["IMG_2204"])
+  A --> F41["north pool station row · disputed"]
   F41 --> PIMG_2205_jpg(["IMG_2205"])
   F41 --> PIMG_2206_jpg(["IMG_2206"])
-  A --> F42["North pool deck · unreviewed"]
+  F41 --> PIMG_2207_jpg(["IMG_2207"])
+  F41 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F42["north pool · disputed"]
   F42 --> PIMG_2204_jpg(["IMG_2204"])
   F42 --> PIMG_2205_jpg(["IMG_2205"])
   F42 --> PIMG_2206_jpg(["IMG_2206"])
-  A --> F43["North pool · low northern patio plinths and white steps · disputed"]
+  A --> F43["North pool deck · unreviewed"]
   F43 --> PIMG_2204_jpg(["IMG_2204"])
   F43 --> PIMG_2205_jpg(["IMG_2205"])
-  F43 --> PIMG_2207_jpg(["IMG_2207"])
-  F43 --> PIMG_2208_jpg(["IMG_2208"])
-  A --> F44["North pool · north-west raised terrace and tiled stair · disputed"]
+  F43 --> PIMG_2206_jpg(["IMG_2206"])
+  A --> F44["North pool · low northern patio plinths and white steps · disputed"]
   F44 --> PIMG_2204_jpg(["IMG_2204"])
-  F44 --> PIMG_2206_jpg(["IMG_2206"])
+  F44 --> PIMG_2205_jpg(["IMG_2205"])
+  F44 --> PIMG_2207_jpg(["IMG_2207"])
   F44 --> PIMG_2208_jpg(["IMG_2208"])
+  A --> F45["North pool · north-west raised terrace and tiled stair · disputed"]
+  F45 --> PIMG_2204_jpg(["IMG_2204"])
+  F45 --> PIMG_2206_jpg(["IMG_2206"])
+  F45 --> PIMG_2208_jpg(["IMG_2208"])
 ```
 
 ## Placement evidence
@@ -220,6 +222,7 @@ graph LR
 | `backdrop.json:aerial-trees` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `backdrop.json:photo-trees` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_north_pool.json:calle-isabel-crazy-paving` | disputed | differs | open discrepancy photo-discrepancy:24c7e38657a29f74 |
+| `ground_plan_north_pool.json:calle-isabel-east-paving` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `ground_plan_north_pool.json:north-pool-lawn` | disputed | differs | open discrepancy photo-discrepancy:a87a62d5f7242721 |
 | `ground_plan_north_pool.json:north-pool-lawn-path` | disputed | differs | open discrepancy photo-discrepancy:ae3ea6e043c500ce |
 | `ground_plan_north_pool.json:north-pool-west-gated-patio` | disputed | differs | open discrepancy photo-discrepancy:777dafc70a50ada7 |
@@ -306,7 +309,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
 | [IMG_2204.jpg](../../public/photos-ref/IMG_2204.jpg) | upper-floor | layout, facades, view | North pool from above: whole courtyard, terraces, mountains behind **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: pool:north, backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:calle-isabel-crazy-paving, plain_fronts.json:north-pool-north-row-recess, plain_fronts.json:north-pool-north-row-return, plain_fronts.json:north-pool-parasol-house, north_pool_frontages.json:np-patio-parasol, north_pool_frontages.json:np-patio-loungers, north_pool_frontages.json:np-patio-armchair, north_pool_frontages.json:np-patio-dining-a, north_pool_frontages.json:np-porch-armchairs-b, north_pool_frontages.json:np-porch-dining-d, north_pool_frontages.json:nw-terrace-dining, north_pool_frontages.json:nw-terrace-table, north_pool_frontages.json:nw-terrace-folded-parasol, north_pool_frontages.json:nw-terrace-bistro, north_pool_frontages.json:np-bougainvillea-1, north_pool_frontages.json:np-bougainvillea-2, north_pool_frontages.json:np-bougainvillea-3, north_pool_frontages.json:np-awning-blue-stripes, north_pool_frontages.json:np-awning-grey, north_pool_frontages.json:np-awning-white, north_pool_frontages.json:np-alley-arch._ |
-| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: pool:north, backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:calle-isabel-crazy-paving, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-north-row-recess, plain_fronts.json:north-pool-north-row-return, plain_fronts.json:north-pool-parasol-house, plain_fronts.json:north-pool-isabel-east-block, plain_fronts.json:north-pool-station-parapet, north_pool_frontages.json:np-patio-parasol, north_pool_frontages.json:np-patio-loungers, north_pool_frontages.json:np-patio-side-table, north_pool_frontages.json:np-patio-armchair, north_pool_frontages.json:np-patio-dining-a, north_pool_frontages.json:np-porch-armchairs-b, north_pool_frontages.json:np-porch-lounger-c, north_pool_frontages.json:np-porch-dining-d, north_pool_frontages.json:np-bougainvillea-3, north_pool_frontages.json:np-awning-grey, north_pool_frontages.json:np-awning-white._ |
+| [IMG_2205.jpg](../../public/photos-ref/IMG_2205.jpg) | upper-floor | layout, facades, view | North pool from above, looking north to the mountains **Looks at:** The north pool. **Note:** Taken from an upper floor; the camera pin is inside a building. _Used by: pool:north, backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:calle-isabel-crazy-paving, ground_plan_north_pool.json:calle-isabel-east-paving, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-north-row-recess, plain_fronts.json:north-pool-north-row-return, plain_fronts.json:north-pool-parasol-house, plain_fronts.json:north-pool-isabel-east-block, plain_fronts.json:north-pool-station-parapet, north_pool_frontages.json:np-patio-parasol, north_pool_frontages.json:np-patio-loungers, north_pool_frontages.json:np-patio-side-table, north_pool_frontages.json:np-patio-armchair, north_pool_frontages.json:np-patio-dining-a, north_pool_frontages.json:np-porch-armchairs-b, north_pool_frontages.json:np-porch-lounger-c, north_pool_frontages.json:np-porch-dining-d, north_pool_frontages.json:np-bougainvillea-3, north_pool_frontages.json:np-awning-grey, north_pool_frontages.json:np-awning-white._ |
 | [IMG_2206.jpg](../../public/photos-ref/IMG_2206.jpg) | upper-floor | layout, facades | North pool from above, west side terraces **Looks at:** The north pool, west side. _Used by: pool:north, backdrop.json:photo-trees, backdrop.json:aerial-trees, pool_decks.json:north-deck, raised_terraces.json:north-pool-west-terrace, ground_plan_north_pool.json:north-pool-lawn, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:north-pool-west-gated-patio, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-near, plain_fronts.json:north-pool-station-notch-west-face, plain_fronts.json:north-pool-gated-patio-walls, plain_fronts.json:north-pool-station-parapet, north_pool_frontages.json:west-patio-parasol, north_pool_frontages.json:west-patio-bougainvillea, north_pool_frontages.json:west-patio-gate-1, north_pool_frontages.json:west-patio-gate-2._ |
 | [IMG_2208.jpg](../../public/photos-ref/IMG_2208.jpg) | upper-floor | materials, layout | Barrel roof tiles, curved hedges and path below, pool edge **Looks at:** The north pool garden and path below the roof. _Used by: raised_terraces.json:north-pool-west-terrace, raised_terraces.json:north-pool-north-patios, ground_plan_north_pool.json:north-pool-lawn-path, ground_plan_north_pool.json:north-pool-west-gated-patio, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-near, plain_fronts.json:north-pool-gated-patio-walls, plain_fronts.json:north-pool-station-parapet, north_pool_frontages.json:west-patio-bougainvillea, north_pool_frontages.json:west-patio-gate-1, north_pool_frontages.json:west-patio-gate-2._ |
 | [IMG_2207.jpg](../../public/photos-ref/IMG_2207.jpg) | upper-floor | materials, planting | Looking down over lichen-mottled barrel roof tiles to the north pool garden **Looks at:** The north pool garden below the roof. **Compass:** the subject is 60° from the phone heading; trust looksAt, not the heading. _Used by: raised_terraces.json:north-pool-north-patios, plain_fronts.json:north-pool-station-row, plain_fronts.json:north-pool-station-near, plain_fronts.json:north-pool-station-parapet._ |

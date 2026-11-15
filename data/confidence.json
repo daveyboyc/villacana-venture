@@ -537,7 +537,7 @@
   },
   "plain_fronts.json:north-pool-gated-patio-walls": {
    "level": "photographed",
-   "why": "IMG_2206 and IMG_2208 show the low garden walls here as white patio walls with gates and climbers, not hedge; the generated hedge runs on them are left out. The walls' own height, cappings and doors are not yet modelled as photographed (gap:north-pool-gated-patio-walls)."
+   "why": "IMG_2206 and IMG_2208 show these walls bare; the generated hedge runs are left out, and the walls themselves are now the photographed patio walls (ground_plan_north_pool.json north-pool-west-gated-patio)."
   },
   "pool:north": {
    "level": "photographed",
@@ -644,8 +644,8 @@
    "why": "Gate and raised capping in the west patio wall, measured on the wall plane through the solved IMG_2206 camera (1.0 m wide, top about 1.6 m)."
   },
   "north_pool_frontages.json:west-patio-gate-2": {
-   "level": "estimated",
-   "why": "Gate beside the white pier in IMG_2206; its wall's direction is uncertain from the roof station, so its width is a usual 0.9 m."
+   "level": "photographed",
+   "why": "Gate in the east patio wall, measured 0.88 m wide on the wall plane through the solved IMG_2206 camera."
   },
   "north_pool_frontages.json:west-patio-bougainvillea": {
    "level": "estimated",
@@ -654,6 +654,10 @@
   "north_pool_frontages.json:west-patio-parasol": {
    "level": "estimated",
    "why": "Parasol over the terracotta patio in IMG_2206; its pole foot is hidden."
+  },
+  "ground_plan_north_pool.json:calle-isabel-east-paving": {
+   "level": "photographed",
+   "why": "Continuous crazy paving in IMG_2205 from the lawn to the iron gate and along the east block; its south end is hidden and estimated."
   }
  },
  "gaps": [
@@ -1009,19 +1013,6 @@
     "IMG_2204.jpg"
    ],
    "why": "The station camera stands on the roof south of the hedges and cannot see between them and the south row; the two paths that leave the lawn south (one along the hibiscus hedge, one through the gap) run out of view. Not modelled."
-  },
-  {
-   "id": "gap:north-pool-gated-patio-walls",
-   "name": "Gated patio walls south of the north pool's west path",
-   "at": [
-    -184.0,
-    31.5
-   ],
-   "photos": [
-    "IMG_2206.jpg",
-    "IMG_2208.jpg"
-   ],
-   "why": "Two white patio walls about 1.8 m high with curved cappings and brown plank doors, bougainvillea and plumbago over them, and a terracotta patio with a parasol behind. The model has the generated 1 m garden walls in the right place (rays through the solved IMG_2206 camera) but not their height, cappings or doors; the door feet are hidden by planting, so their positions along the walls are not measured."
   },
   {
    "id": "gap:north-pool-station-yucca",

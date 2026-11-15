@@ -12,10 +12,11 @@ vertical plane:
 
 - **West wall (x -187):** cap 1.9 m above the ground. The gate is 1.0 m wide, centred at z 31.1, and its
   top is about 1.6 m up. This wall faces the camera, so these numbers are reliable.
-- **South-east wall:** from the white pier at (-181.6, 30.75) towards (-184.5, 32.5), with its cap 1.7 m
-  above the ground. The gate is beside the pier and its foot is at ground level. The roof station can't
-  fix this wall's direction; taken literally, the gate would be 0.56 m wide. The gate is drawn at a usual
-  0.9 m, and the direction is marked estimated.
+- **East wall (re-traced after review):** it runs south-south-east from about (-183.1, 30.1), through its
+  gate centred at (-182.37, 31.22), towards the block by the camera. On this direction the gate measures a
+  usual 0.88 m wide, its foot is at the ground, and the wall top falls towards the camera as photographed;
+  IMG_2208 shows the same wall. The first trace had the wall running west-north-west, which gave an
+  impossible 0.56 m gate.
 
 Built as `north-pool-west-gated-patio` in `data/ground_plan_north_pool.json`: a terracotta patio whose
 wall edges are solid and appear on the map, with openings for the gates. The gates and their raised
@@ -48,3 +49,21 @@ box give way (`replacesGardenWalls`).
   through the solved cameras with Show details. The "before" renders are of `main`.
 - `west-gardens-layout.png`, `west-gardens-details.png`: Inspect views of the gated patio.
 - `isabel-layout.png`, `isabel-details.png`: Inspect views of the Calle Isabel side.
+
+## Independent review and fixes
+
+A second agent found the first version not satisfactory (`REVIEW.md`). This was fixed:
+- **Gate openings:** they were off by half a gate, because the ground plan reads `at` as the opening's
+  centre. They are now centred on the measured gates, so collision and the map change with them.
+- **East wall:** re-traced south-south-east, as described above. The patio's outline follows it.
+- **Parasol:** it hid the west gate. It now stands inside the re-traced wall, lilac-grey (`#b4b0c6`),
+  with its canopy at 2.1 m.
+- **Leftover generated wall:** a stub of generated wall east of the patio is gone; the replacement box
+  now reaches x -179.
+- **Calle Isabel paving:** it now runs continuously from the lawn up to the iron gate and along the east
+  block (`calle-isabel-east-paving`, raised over the lane mesh). This covers the green patch and the
+  lane's terracotta squares.
+- **Map:** it now leaves out the replaced generated walls too (`src/blueprint.ts`).
+- **Confidence:** the stale entries for the gated walls are updated.
+- **Not changed:** a generated wall stub at about (-159.6, 18) behind the yucca stays, because the photo
+  can't show whether a wall is there.

@@ -422,24 +422,24 @@
       "finish": "terracotta-squares",
       "outline": [
         [
-          -181.6,
-          30.75
+          -183.14,
+          30.06
         ],
         [
-          -184.5,
-          32.5
+          -181.2,
+          32.96
         ],
         [
           -187.0,
-          32.5
+          33.0
         ],
         [
           -187.0,
           29.3
         ],
         [
-          -183.5,
-          29.4
+          -184.0,
+          29.45
         ]
       ],
       "corners": 0.05,
@@ -450,7 +450,7 @@
         3,
         4
       ],
-      "note": "Photo-supported (IMG_2206, IMG_2208): a terracotta-tiled patio with a parasol, held by two white walls about 1.7-1.9 m high with curved cappings and brown plank gates, bougainvillea and plumbago over them. Measured through the solved IMG_2206 camera on the wall planes given by the generated garden-wall points (which project onto the photographed walls): the west wall (x -187) stands 1.9 m, its gate about 1.0 m wide centred at z 31.1; the south-east wall rises to 1.7 m with its gate beside the white pier at (-181.6, 30.75). Estimated: the south-east wall's direction (the single roof station leaves it uncertain), its continuation to the west wall behind the climber, and the patio's north and east sides, which are unseen.",
+      "note": "Photo-supported (IMG_2206, IMG_2208): a terracotta-tiled patio with a parasol, held by two white walls about 1.7-1.9 m high with curved cappings and brown plank gates, bougainvillea and plumbago over them. Measured through the solved IMG_2206 camera on vertical wall planes: the west wall (x -187, the generated garden-wall line, which projects onto it) stands 1.9 m with a 1.0 m gate centred at z 31.1; the east wall runs from about (-183.1, 30.1) south-south-east past its gate (centred at (-182.37, 31.22)) towards the block by the camera, the direction on which that gate measures a usual 0.88 m wide and the wall top falls towards the camera as photographed (IMG_2208 shows the same wall). Estimated: the walls' ends and the patio's north and south sides, which are unseen.",
       "evidence": [
         "IMG_2206.jpg",
         "IMG_2208.jpg"
@@ -464,24 +464,14 @@
           "width": 0.25,
           "openings": [
             {
-              "at": 0.45,
+              "at": 1.4,
               "width": 0.9
             }
           ],
-          "note": "South-east wall with the second brown gate next to the white pier (IMG_2206 x 695-735); cap 1.7 m above the ground through the solved camera; its direction is estimated.",
+          "note": "East wall with the second brown gate (IMG_2206 x 695-735), running south-south-east from about (-183.1, 30.1); direction measured from the gate's width and the wall top's fall in IMG_2206, matching IMG_2208; its ends are estimated.",
           "evidence": [
-            "IMG_2206.jpg"
-          ]
-        },
-        {
-          "kind": "wall",
-          "from": 1,
-          "to": 2,
-          "height": 1.7,
-          "width": 0.25,
-          "note": "Its continuation to the west wall, hidden behind the climber: inferred.",
-          "evidence": [
-            "IMG_2206.jpg"
+            "IMG_2206.jpg",
+            "IMG_2208.jpg"
           ]
         },
         {
@@ -492,15 +482,61 @@
           "width": 0.25,
           "openings": [
             {
-              "at": 0.92,
+              "at": 1.92,
               "width": 1.0
             }
           ],
-          "note": "West wall with the first brown gate (IMG_2206 x 540-605): cap 1.9 m, gate 1.0 m wide and about 1.6 m high, measured on the wall plane x -187 through the solved camera.",
+          "note": "West wall with the first brown gate (IMG_2206 x 540-605): cap 1.9 m, gate 1.0 m wide centred at z 31.08, measured on the wall plane x -187 through the solved camera.",
           "evidence": [
             "IMG_2206.jpg"
           ]
         }
+      ]
+    },
+    {
+      "id": "calle-isabel-east-paving",
+      "name": "Calle Isabel · crazy paving from the lawn to the iron gate and the east block",
+      "kind": "apron",
+      "finish": "crazy-paving",
+      "outline": [
+        [
+          -164.9,
+          9.2
+        ],
+        [
+          -164.4,
+          8.3
+        ],
+        [
+          -162.6,
+          7.1
+        ],
+        [
+          -160.95,
+          8.95
+        ],
+        [
+          -156.7,
+          16.0
+        ],
+        [
+          -164.7,
+          16.0
+        ]
+      ],
+      "corners": 0.3,
+      "hard": [
+        3,
+        4
+      ],
+      "raise": 0.21,
+      "above": [
+        "calle-isabel-crazy-paving",
+        "north-pool-lawn"
+      ],
+      "note": "Photo-supported (IMG_2205 x 850-1200, y 600-700): continuous irregular pale stone paving from the lawn's east edge right up to the iron gate's foot (cast at about (-162.55..-161.8, 7.2-7.5)) and along the east block's face, where the model had the lane's terracotta squares and a generated wall and hedge. Raised over the lane mesh as the Calle Isabel paving is. Estimated: its south end, hidden by the yucca and the tree.",
+      "evidence": [
+        "IMG_2205.jpg"
       ]
     }
   ]

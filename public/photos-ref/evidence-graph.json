@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 471,
+  "features": 472,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 217
+  "modelFeaturesWithPhotoCitations": 218
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3923,10 +3923,19 @@
    "id": "ground_plan_north_pool.json:north-pool-west-gated-patio",
    "name": "North pool · walled patio with two brown gates south of the west path",
    "kind": "reference feature",
-   "source": "Photo-supported (IMG_2206, IMG_2208): a terracotta-tiled patio with a parasol, held by two white walls about 1.7-1.9 m high with curved cappings and brown plank gates, bougainvillea and plumbago over them. Measured through the solved IMG_2206 camera on the wall planes given by the generated garden-wall points (which project onto the photographed walls): the west wall (x -187) stands 1.9 m, its gate about 1.0 m wide centred at z 31.1; the south-east wall rises to 1.7 m with its gate beside the white pier at (-181.6, 30.75). Estimated: the south-east wall's direction (the single roof station leaves it uncertain), its continuation to the west wall behind the climber, and the patio's north and east sides, which are unseen.",
+   "source": "Photo-supported (IMG_2206, IMG_2208): a terracotta-tiled patio with a parasol, held by two white walls about 1.7-1.9 m high with curved cappings and brown plank gates, bougainvillea and plumbago over them. Measured through the solved IMG_2206 camera on vertical wall planes: the west wall (x -187, the generated garden-wall line, which projects onto it) stands 1.9 m with a 1.0 m gate centred at z 31.1; the east wall runs from about (-183.1, 30.1) south-south-east past its gate (centred at (-182.37, 31.22)) towards the block by the camera, the direction on which that gate measures a usual 0.88 m wide and the wall top falls towards the camera as photographed (IMG_2208 shows the same wall). Estimated: the walls' ends and the patio's north and south sides, which are unseen.",
    "evidence": [
     "IMG_2206.jpg",
     "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_north_pool.json:calle-isabel-east-paving",
+   "name": "Calle Isabel · crazy paving from the lawn to the iron gate and the east block",
+   "kind": "reference feature",
+   "source": "Photo-supported (IMG_2205 x 850-1200, y 600-700): continuous irregular pale stone paving from the lawn's east edge right up to the iron gate's foot (cast at about (-162.55..-161.8, 7.2-7.5)) and along the east block's face, where the model had the lane's terracotta squares and a generated wall and hedge. Raised over the lane mesh as the Calle Isabel paving is. Estimated: its south end, hidden by the yucca and the tree.",
+   "evidence": [
+    "IMG_2205.jpg"
    ]
   },
   {
@@ -4140,7 +4149,7 @@
    "id": "north_pool_frontages.json:west-patio-parasol",
    "name": "west patio parasol",
    "kind": "reference feature",
-   "source": "Pale grey parasol over the terracotta patio behind the south-east wall (IMG_2206 x 530-650, y 770-850); its pole foot is hidden.",
+   "source": "Lilac-grey parasol over the terracotta patio behind the east wall (IMG_2206 x 530-650, y 770-855); its canopy about 2.1 m up; the pole foot is hidden.",
    "evidence": [
     "IMG_2206.jpg"
    ]
@@ -4235,7 +4244,7 @@
    "id": "north_pool_frontages.json:west-patio-gate-2",
    "name": "west patio gate 2",
    "kind": "reference feature",
-   "source": "Brown plank gate in the south-east wall beside the white pier (IMG_2206 x 695-735), under a raised capping; its width is drawn at a usual 0.9 m because the wall's direction is uncertain from the roof station.",
+   "source": "Brown plank gate in the east patio wall (IMG_2206 x 695-735), under a raised capping; on the wall's plane through the solved camera it measures 0.88 m wide with its foot at the ground.",
    "evidence": [
     "IMG_2206.jpg",
     "IMG_2208.jpg"
@@ -8637,6 +8646,12 @@
   {
    "from": "photo:IMG_2205.jpg",
    "to": "ground_plan_north_pool.json:calle-isabel-crazy-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "ground_plan_north_pool.json:calle-isabel-east-paving",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
