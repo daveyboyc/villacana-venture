@@ -301,6 +301,14 @@ def features(s):
         add('plain_fronts.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['trust'],evidence=f['evidence'],ring=box(f['box']))
     for f in plain_fronts.get('parapets',[]):
         add('plain_fronts.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['trust'],evidence=f['evidence'],points=[f['from'],f['to']])
+    # Front gardens and facade details across the north pool (data/north_pool_frontages.json, src/north-pool-frontages.ts).
+    fr=json.loads((ROOT/'data/north_pool_frontages.json').read_text())
+    for f in fr['furniture']+fr['climbers']:
+        add('north_pool_frontages.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['note'],evidence=f['evidence'],points=[f['at']])
+    for f in fr['awnings']:
+        add('north_pool_frontages.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['note'],evidence=f['evidence'],points=f['wall'])
+    for f in fr['arches']:
+        add('north_pool_frontages.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['note'],evidence=f['evidence'],points=[f['from'],f['to']])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

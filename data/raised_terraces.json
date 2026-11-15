@@ -109,11 +109,8 @@
    "area": "north-pool",
    "survey": "north-pool-north-patios",
    "walkable": true,
-   "base": [
-    -176.749,
-    10.7525
-   ],
-   "rise": 0.325,
+   "base": [-178.4439, 9.9851],
+   "rise": 0.4,
    "floor": "crazy-paving",
    "face": {
     "finish": "render",
@@ -124,70 +121,89 @@
     }
    },
    "outline": [
-    [
-     -179.3,
-     10.25
-    ],
-    [
-     -176,
-     10.9
-    ],
-    [
-     -172,
-     11.2
-    ],
-    [
-     -167.1,
-     11.3
-    ],
-    [
-     -166.1,
-     8.2
-    ],
-    [
-     -171,
-     7.6
-    ],
-    [
-     -177.5,
-     7.4
-    ]
+    [-181.35, 8.43],
+    [-180.27, 9.34],
+    [-179.38, 9.9],
+    [-176.3, 10.18],
+    [-173.6, 9.93],
+    [-169.0, 9.2],
+    [-167.21, 8.97],
+    [-164.8, 8.4],
+    [-163.9, 3.39],
+    [-164.15, 3.54],
+    [-165.5, 1.3],
+    [-167.3, 3.8],
+    [-171.0, 3.9],
+    [-174.62, 3.86],
+    [-181.78, 8.14]
    ],
    "edges": [
     {
      "kind": "face",
-     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+     "note": "low plinth wall, curving back towards the north row alley (IMG_2205, IMG_2204)"
     },
     {
      "kind": "face",
-     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+     "note": "low plinth wall"
     },
     {
      "kind": "face",
-     "note": "Photo-traced low plinth frontage, interrupted by a shallow white-step opening"
+     "note": "low plinth wall with the first white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "low plinth wall with the second white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "low plinth wall with the third white-step opening"
+    },
+    {
+     "kind": "face",
+     "note": "low plinth wall"
+    },
+    {
+     "kind": "face",
+     "note": "low plinth wall towards its east end; the last metre by the iron gate is left clear of the mapped Calle Isabel lane"
     },
     {
      "kind": "end",
-     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+     "note": "east end, about 1 m short of the wall's photographed end by the step and iron gate (IMG_2205), kept clear of the mapped Calle Isabel lane: estimated"
+    },
+    {
+     "kind": "house",
+     "building": "6266601UF1366N_part4"
+    },
+    {
+     "kind": "house",
+     "building": "6266601UF1366N_part4"
     },
     {
      "kind": "end",
-     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+     "note": "in front of the porch fronts, which stand higher (laser survey ground 1.3-1.5 m against the 1.22 m patio floor): a step up, not seen, estimated"
     },
     {
      "kind": "end",
-     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+     "note": "in front of the porch fronts, which stand higher (laser survey ground 1.3-1.5 m against the 1.22 m patio floor): a step up, not seen, estimated"
     },
     {
      "kind": "end",
-     "note": "Unseen side/back floor limit, estimated; no property division asserted"
+     "note": "in front of the porch fronts, which stand higher (laser survey ground 1.3-1.5 m against the 1.22 m patio floor): a step up, not seen, estimated"
+    },
+    {
+     "kind": "house",
+     "building": "6266601UF1366N_part4"
+    },
+    {
+     "kind": "end",
+     "note": "west end where the plinth wall meets the house corner by the alley: estimated"
     }
    ],
    "openings": [
     {
      "id": "north-pool-low-patio-step-1",
-     "edge": 0,
-     "at": 2.0,
+     "edge": 2,
+     "at": 0.34,
      "width": 1.2,
      "stair": {
       "risers": 2,
@@ -201,9 +217,9 @@
     },
     {
      "id": "north-pool-low-patio-step-2",
-     "edge": 1,
-     "at": 2.7,
-     "width": 1.25,
+     "edge": 3,
+     "at": 1.125,
+     "width": 1.15,
      "stair": {
       "risers": 2,
       "tread": 0.3,
@@ -216,9 +232,9 @@
     },
     {
      "id": "north-pool-low-patio-step-3",
-     "edge": 2,
-     "at": 3.4,
-     "width": 1.3,
+     "edge": 4,
+     "at": 2.805,
+     "width": 1.15,
      "stair": {
       "risers": 2,
       "tread": 0.3,
@@ -232,69 +248,48 @@
    ],
    "walks": [
     [
-     [
-      -175.5,
-      9.4
-     ],
-     [
-      -171,
-      9.4
-     ],
-     [
-      -168.1,
-      9.5
-     ]
+     [-178.3, 9.2],
+     [-178.1, 7.4]
+    ],
+    [
+     [-174.6, 9.2],
+     [-174.5, 5.2]
+    ],
+    [
+     [-170.3, 8.6],
+     [-170.0, 5.0]
     ]
    ],
    "planting": {
-    "edges": [
-     0,
-     1,
-     2
-    ],
-    "inset": 0.65,
-    "kind": "hedge"
+    "edges": [0, 1, 2, 3, 4, 5, 6],
+    "inset": 0.42,
+    "kind": "hedge",
+    "form": "clipped",
+    "height": 1.15,
+    "depth": 0.8
    },
-   "evidence": [
-    "IMG_2204.jpg",
-    "IMG_2205.jpg",
-    "IMG_2207.jpg",
-    "IMG_2208.jpg"
-   ],
+   "evidence": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2207.jpg", "IMG_2208.jpg"],
    "trace": {
     "method": "IMG_2204 north-pool ring camera fit from issue 54 (camera about -173.5,36.6, elevation 7.8 m, yaw 342, pitch 17, horizontal field 72 degrees). Inverse ground rays through individually visible plinth toes and shallow openings checked against Esri ground.jpg and unchanged registry. IMG_2205 extends the visible frontage to the east return. Rear floor cut deliberately stops short of registry houses because garden divisions are concealed.",
     "frontPixels2204": [
-     [
-      935,
-      592
-     ],
-     [
-      1035,
-      604
-     ],
-     [
-      1170,
-      618
-     ],
-     [
-      1200,
-      623
-     ],
-     [
-      1395,
-      641
-     ],
-     [
-      1430,
-      646
-     ],
-     [
-      1580,
-      658
-     ]
+     [935, 592],
+     [1035, 604],
+     [1170, 618],
+     [1200, 623],
+     [1395, 641],
+     [1430, 646],
+     [1580, 658]
     ]
    },
-   "trust": "Photo-supported: the lower white plinth frontage east of the central alley, its gentle curve, three separate shallow openings with white noses and stone treads (IMG_2204/2205), and hedges above the plinth. Rise 0.325 m, within the survey 0.25-0.4 m range, represented as two 0.1625 m risers. Estimated: exact opening widths (1.2-1.3 m), individual plan coordinates (about +-2 m from oblique camera registration), the floor depth. The rear floor stops at a conservative visible patio band, 2.5-3 m behind the plinth; all unseen side/back limits are explicitly untraced ends, not asserted property walls, and no concealed garden partitions or house level changes are invented. Three openings belong to distinct patios but their hidden divisions are not known; the supported floor band is continuous. The 1.0 m northwest terrace and six-riser flight remain a separate structure owned by issue 54. The band stops west of Calle Isabel and its pool-side gate; the further eastern garden opening visible in IMG_2205 is outside this north-front trace and is not repeated across the lane."
+   "trust": "Photo-supported: the lower white plinth frontage east of the central alley, its gentle curve, three separate shallow openings with white noses and stone treads, continuous clipped hedges above the plinth, and patios running back to the house walls with tables, awnings and planting against them (IMG_2204/2205). Re-traced 2026-11-15 through the solved IMG_2205 camera (IMG_2204 as cross-check): the front is 0.2-2.3 m north of the earlier trace, the openings within 0.3 m along the wall in both cameras. Rise 0.4 m, the top of the surveyed 0.25-0.4 m range, so the floor stays above the laser-survey ground to the house fronts; two 0.2 m risers. Estimated: depth along the view (about +-0.5 m west to +-0.8 m east), opening widths, the step up to the higher porch fronts between x -167 and -174.6, and the east end, which stops about 1 m short of the wall's end by the gate to stay clear of the mapped Calle Isabel lane. No hidden garden partitions are asserted: the three openings belong to distinct patios but their divisions are not seen, so the floor is one continuous band. The 1.0 m northwest terrace and six-riser flight remain a separate structure.",
+   "retrace": {
+    "date": "2026-11-15",
+    "method": "Plinth-wall foot, step openings and the grass edge picked on 2-4x zooms of IMG_2205 and cast through its solved camera (data/photo_poses.json) onto the path level, 0.87 m (laser survey); IMG_2204 from the same roof station casts the same openings to within 0.3 m along the wall and 0.6-1.6 m further north (that camera reads 0.35 m north on the unchanged pool edges), and the aerial shows the hedge line north of the old front. The back now meets the registry house fronts (0.08 m clear), where both photos show tables, awnings and planting against the walls.",
+    "change": "Front moved 0.2 m (west) to 2.3 m (east) north of the earlier trace, which used an older camera fit; floor extended back to the houses and east to the wall's end by the iron gate.",
+    "limits": "Depth along the view is the least certain direction (the two cameras share a station): about +-0.5 m at the west, +-0.8 m at the east. The houses' own registry fronts may sit about 1.5 m south of the surveyed roofs (lidar plan fit), which this does not change.",
+    "hedges": "Continuous clipped hedges about 0.95 m high behind the wall, broken at the three openings (IMG_2204, IMG_2205).",
+    "floor": "Floor 0.4 m above the path (top of the surveyed 0.25-0.4 m range) so it stays above the laser-survey ground up to the house fronts; the porch fronts between x -167 and -174.6 stand higher and are left as an estimated step."
+   }
   },
   {
    "id": "middle-pool-north-terrace",

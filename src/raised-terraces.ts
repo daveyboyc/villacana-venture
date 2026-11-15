@@ -4,6 +4,7 @@ import data from "../data/raised_terraces.json";
 import { closestOnSegment, pointInRing } from "./geom";
 import { plasterMaterial, surfaceTexture } from "./materials";
 import { addSprites, type SpriteKind, type SpritePlacement } from "./sprites";
+import { clippedHedge } from "./clipped-plants";
 import { siteY } from "./terrain";
 import type { Vec2 } from "./types";
 
@@ -23,7 +24,7 @@ export type RaisedTerrace = {
   id: string; name: string; area: string; survey?: string; walkable: boolean;
   base: Vec2; rise: number; floor: string; face: TerraceFace;
   outline: Vec2[]; edges: { kind: EdgeKind; finish?: "render" | "sandstone"; note?: string; building?: string }[];
-  openings: TerraceOpening[]; walks?: Vec2[][]; planting?: { edges: number[]; inset: number; kind: string };
+  openings: TerraceOpening[]; walks?: Vec2[][]; planting?: { edges: number[]; inset: number; kind: string; form?: "sprites" | "clipped"; height?: number; depth?: number };
   evidence: string[]; trust: string;
 };
 
@@ -126,7 +127,8 @@ export function inRaisedTerrace(x: number, z: number, margin = 0): boolean {
 export function suppressInRaisedTerraces<T extends { gardenWalls: Vec2[]; gardenGates: Vec2[]; props: { x: number; z: number }[] }>(skeleton: T): void {
   skeleton.gardenWalls = skeleton.gardenWalls.filter(([x, z]) => !inRaisedTerrace(x, z, 1.5));
   skeleton.gardenGates = skeleton.gardenGates.filter(([x, z]) => !inRaisedTerrace(x, z, 1.5));
-  skeleton.props = skeleton.props.filter((p) => !inRaisedTerrace(p.x, p.z, 0.5));
+  // A photographed object marked `onTerrace` (data/objects.json) stands on the terrace floor and stays.
+  skeleton.props = skeleton.props.filter((p) => (p as { onTerrace?: boolean }).onTerrace || !inRaisedTerrace(p.x, p.z, 0.5));
 }
 
 /** Extra ground height over siteY: the terrace floor, or the tread underfoot on a stair. */
@@ -241,7 +243,51 @@ export function addRaisedTerraces(scene: THREE.Scene): void {
       }
     }
     // The planted bank behind the retaining wall: clipped shrubs on the floor (Details only).
-    if (t.planting) {
+    if (t.planting?.form === "clipped") {
+      // A continuous clipped hedge behind the face, broken only at its openings (Details only). The planted
+      // edges are joined into one line set `inset` inside the face, resampled every 0.3 m, and overlapping
+      // pieces about 1 m long are laid along it, so the row runs unbroken round the face's bends.
+      if (!scene.userData.layoutOnly) {
+        const height = t.planting.height ?? 0.9, depth = t.planting.depth ?? 0.7, inset = t.planting.inset;
+        const order = [...t.planting.edges].sort((a, b) => a - b), chains: number[][] = [];
+        for (const i of order) { const c = chains[chains.length - 1]; if (c && c[c.length - 1] === i - 1) c.push(i); else chains.push([i]); }
+        let seed = 900 + t.id.length;
+        for (const chain of chains) {
+          const pts: Vec2[] = [], at: number[] = [], cuts: number[][] = [];
+          let acc = 0;
+          for (const i of chain) {
+            const e = terraceEdge(t, i), a = along(e.a, e.u, 0, e.n, inset), b = along(e.a, e.u, e.length, e.n, inset);
+            if (!pts.length) { pts.push(a); at.push(0); } else { const l = pts[pts.length - 1]; pts[pts.length - 1] = [(l[0] + a[0]) / 2, (l[1] + a[1]) / 2]; }
+            pts.push(b); at.push(acc + e.length);
+            for (const o of t.openings.filter((o) => o.edge === i)) cuts.push([acc + o.at - 0.05, acc + o.at + o.width + 0.05]);
+            acc += e.length;
+          }
+          // Samples every 0.3 m along the chain, grouped into runs between the cuts.
+          const point = (d: number): Vec2 => {
+            let k = 1; while (k < at.length - 1 && at[k] < d) k++;
+            const f = (d - at[k - 1]) / ((at[k] - at[k - 1]) || 1);
+            return [pts[k - 1][0] + (pts[k][0] - pts[k - 1][0]) * f, pts[k - 1][1] + (pts[k][1] - pts[k - 1][1]) * f];
+          };
+          const runs: Vec2[][] = [];
+          let current: Vec2[] = [];
+          for (let d = 0; d <= acc + 1e-6; d += 0.3) {
+            if (cuts.some(([a, b]) => d > a && d < b)) { if (current.length) runs.push(current); current = []; continue; }
+            current.push(point(Math.min(d, acc)));
+          }
+          if (current.length) runs.push(current);
+          for (const run of runs) {
+            if (run.length < 3) continue; // a scrap between a corner and a step: the photos show the hedge ending at the corner
+            for (let k = 0; k < run.length - 1; k += 2) {
+              const a = run[k], b = run[Math.min(run.length - 1, k + 3)], len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+              if (len < 0.2) continue;
+              const h = clippedHedge({ length: len + 0.3, depth, height, seed: seed++, clip: 6, greens: ["#2f4a28", "#3d5c32", "#4c6b3c"] });
+              h.position.set((a[0] + b[0]) / 2, floor, (a[1] + b[1]) / 2); h.rotation.y = Math.atan2(b[0] - a[0], b[1] - a[1]);
+              h.name = `${t.id}-hedge`; h.userData.noDrape = true; scene.add(h);
+            }
+          }
+        }
+      }
+    } else if (t.planting) {
       const places: SpritePlacement[] = [], stairs = terraceStairs(t);
       for (const i of t.planting.edges) {
         const e = terraceEdge(t, i);

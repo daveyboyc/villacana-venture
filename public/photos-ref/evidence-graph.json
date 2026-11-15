@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "ef827872f547aae55feffff11b690b8d12d8672e9bfba43defcc640032970427",
+ "inputDigest": "0cae09e558589d8c9dd0b2b56b18c833e23553af42c1997b1942718fadeb9114",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 443,
+  "features": 465,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 189
+  "modelFeaturesWithPhotoCitations": 211
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3890,7 +3890,7 @@
    "id": "ground_plan_north_pool.json:north-pool-lawn",
    "name": "North pool lawn",
    "kind": "reference feature",
-   "source": "IMG_2204 and IMG_2205 (solved station camera) show lawn all round the pool deck. Its north and west sides follow the crazy-paving path's pool-side edge, its east side Calle Isabel, its south side the two hedges, both cast through the camera (2026-11-15). The aerial's dark band south of these hedges was the hedges themselves, read as grass, so the earlier aerial trace ran 3-5 m too far south. What lies south of the hedges is not seen. The measured deck is cut out. Good to about half a metre near the camera, a metre on the north side.",
+   "source": "IMG_2204 and IMG_2205 (solved station camera) show lawn all round the pool deck. Its north and west sides follow the crazy-paving path's pool-side edge, its east side Calle Isabel, its south side the two hedges, both cast through the camera (2026-11-15). The aerial's dark band south of these hedges was the hedges themselves, read as grass, so the earlier aerial trace ran 3-5 m too far south. What lies south of the hedges is not seen. The measured deck is cut out. Good to about half a metre near the camera, a metre on the north side. 2026-11-15: the north edge moved 0.8-2.7 m north to the grass edge photographed in IMG_2205 (cast through its solved camera), between the deck and the path.",
    "evidence": [
     "IMG_2204.jpg",
     "IMG_2205.jpg",
@@ -3901,7 +3901,7 @@
    "id": "ground_plan_north_pool.json:north-pool-lawn-path",
    "name": "North pool · crazy-paving lawn-edge path",
    "kind": "reference feature",
-   "source": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool). 2026-11-15, through the solved IMG_2204 camera (pixels on the paving cast onto the surveyed ground): the west side runs at the foot of the curved white wall, about 1.4 m east of the earlier band (which projected onto the wall top); at the south-west corner it runs east to the tip of the hibiscus hedge and turns south along the hedge's west side out of view (stones at the photo's lower left); a second short path leaves the lawn south through the gap between the hibiscus hedge and the long south hedge. The north stretch is kept against the north patio fronts: cast through the same camera it lands 1-3 m further north, which would put it inside the patios (and the tree beside it casts 2 m north of where it stands against the paving), so the camera's far casts are taken as off and this is an open discrepancy, not a correction.",
+   "source": "Photo-supported: irregular pale stone paving follows the curved retaining frontage at the northwest and the lower plinths across the north side, flush with the lawn (IMG_2204-2206, 2208). Estimated: 0.96 m width and exact plan curve (about +-2 m registration). Moved 2026-11-14 from data/north_pool_gardens.json as the centreline of its traced band. IMG_2204 shows the paving continuing down the west side along the curved white wall and along the south side behind the hedges; those continuations are not traced yet (task ground-plan-north-pool). 2026-11-15, through the solved IMG_2204 camera (pixels on the paving cast onto the surveyed ground): the west side runs at the foot of the curved white wall, about 1.4 m east of the earlier band (which projected onto the wall top); at the south-west corner it runs east to the tip of the hibiscus hedge and turns south along the hedge's west side out of view (stones at the photo's lower left); a second short path leaves the lawn south through the gap between the hibiscus hedge and the long south hedge. The north stretch is kept against the north patio fronts: cast through the same camera it lands 1-3 m further north, which would put it inside the patios (and the tree beside it casts 2 m north of where it stands against the paving), so the camera's far casts are taken as off and this is an open discrepancy, not a correction. 2026-11-15, re-traced with the north patios through the solved IMG_2205 camera (IMG_2204 as cross-check): the north stretch runs at the foot of the plinth wall, 0.7-2.4 m north of where it was, with the lawn's north edge at the photographed grass edge; this resolves the earlier north discrepancy (the patio fronts it was kept against were themselves traced too far south). Width 1.3 m for the whole path (the north side measures about 1.1-1.7 m between wall foot and grass).",
    "evidence": [
     "IMG_2204.jpg",
     "IMG_2205.jpg",
@@ -3952,6 +3952,36 @@
    ]
   },
   {
+   "id": "plain_fronts.json:north-pool-north-row-recess",
+   "name": "north pool north row recess",
+   "kind": "reference feature",
+   "source": "The recessed front east of the porch house, between registry corners (-170.69, 1.45) and (-166.83, -0.9): IMG_2205 (x 700-850) and IMG_2204 (x 1480-1600) show shuttered windows and the feathery tree's canopy there; the generated iron railing and awning on it are left out. The photographed porch balcony is on the next face west, above the white awning.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "plain_fronts.json:north-pool-north-row-return",
+   "name": "north pool north row return",
+   "kind": "reference feature",
+   "source": "The return face of the east block, from (-166.83, -0.9) to (-164.15, 3.54), facing the recess: IMG_2205 (x 808-940, y 330-440) and IMG_2204 (x 1550-1600) show plain wall with windows there, no wooden balcony or tiled porch roof; the generated wooden balcony stood out from it (found by the independent review).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "plain_fronts.json:north-pool-parasol-house",
+   "name": "north pool parasol house",
+   "kind": "reference feature",
+   "source": "The pool-facing front of the parasol house, from (-174.06, 3.53) to (-181.78, 8.14): IMG_2205 (x 343-485, y 398-438) and IMG_2204 (x 1028-1165, y 392-430) show a moulded white sill and bougainvillea, not an iron balcony; the generated balcony is left out. Its grey awning is in data/north_pool_frontages.json.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
    "id": "plain_fronts.json:north-pool-gated-patio-walls",
    "name": "north pool gated patio walls",
    "kind": "reference feature",
@@ -3971,6 +4001,186 @@
     "IMG_2206.jpg",
     "IMG_2207.jpg",
     "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-patio-parasol",
+   "name": "np patio parasol",
+   "kind": "reference feature",
+   "source": "Large grey-white square parasol over the loungers in front of the west house of the north patios (IMG_2205 x 245-370, IMG_2204 x 935-1050); its pole foot is hidden and estimated below the canopy, about 1 m out from the wall.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-patio-loungers",
+   "name": "np patio loungers",
+   "kind": "reference feature",
+   "source": "Two white loungers under the parasol, angled towards the pool (IMG_2205, IMG_2204).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-patio-side-table",
+   "name": "np patio side table",
+   "kind": "reference feature",
+   "source": "Small round white side table in front of the loungers (IMG_2205 x 348).",
+   "evidence": [
+    "IMG_2205.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-patio-armchair",
+   "name": "np patio armchair",
+   "kind": "reference feature",
+   "source": "White armchair against the wall right of the parasol (IMG_2205 x 407-440, IMG_2204 x 1080-1110).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-patio-dining-a",
+   "name": "np patio dining a",
+   "kind": "reference feature",
+   "source": "White dining table with six chairs under the grey awning (IMG_2205 x 510-560, IMG_2204 x 1180-1265).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-porch-armchairs-b",
+   "name": "np porch armchairs b",
+   "kind": "reference feature",
+   "source": "Two white chairs in front of the porch house under the white awning (IMG_2205 x 687-707, IMG_2204 x 1375-1410); the porch front stands higher than the patio, so they stand on the surveyed ground.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-porch-lounger-c",
+   "name": "np porch lounger c",
+   "kind": "reference feature",
+   "source": "A low white lounger (IMG_2205 x 767-787).",
+   "evidence": [
+    "IMG_2205.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-porch-dining-d",
+   "name": "np porch dining d",
+   "kind": "reference feature",
+   "source": "White dining table and chairs at the east end of the north row (IMG_2205 x 813-847, IMG_2204 x 1485-1600).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:nw-terrace-dining",
+   "name": "nw terrace dining",
+   "kind": "reference feature",
+   "source": "White table with four chairs at the west end of the north-west terrace (IMG_2204 x 150-220); cast through the solved camera onto the 1.93 m terrace floor it lands at about (-194.7, 18.7), at the terrace's untraced west end, so it is kept just inside.",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:nw-terrace-table",
+   "name": "nw terrace table",
+   "kind": "reference feature",
+   "source": "Square white metal table with a chair (IMG_2204 x 315-370), cast onto the terrace floor.",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:nw-terrace-folded-parasol",
+   "name": "nw terrace folded parasol",
+   "kind": "reference feature",
+   "source": "Folded white parasol by the house wall (IMG_2204 x 375-395); its cast foot falls just inside the registry house, so it stands against the wall.",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:nw-terrace-bistro",
+   "name": "nw terrace bistro",
+   "kind": "reference feature",
+   "source": "Small table and chairs in front of the house with the blue striped awning (IMG_2204 x 700-750).",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-bougainvillea-1",
+   "name": "np bougainvillea 1",
+   "kind": "reference feature",
+   "source": "Magenta bougainvillea climbing the west end of the blue-awning house (IMG_2204 x 585-670). Moved after review: the photographed plant casts to about (-187.6, 11.3), 4.1-5.75 m up, above the blue awning.",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-bougainvillea-2",
+   "name": "np bougainvillea 2",
+   "kind": "reference feature",
+   "source": "Bougainvillea up to the first floor at the alley corner (IMG_2204 x 770-850).",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-bougainvillea-3",
+   "name": "np bougainvillea 3",
+   "kind": "reference feature",
+   "source": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150). Moved 0.6 m east after review: both cameras cast the photographed plant here (IMG_2205 x 370-467).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-awning-blue-stripes",
+   "name": "np awning blue stripes",
+   "kind": "reference feature",
+   "source": "Blue and white striped awning over the ground-floor doors of the house facing the north-west terrace (IMG_2204 x 645-800): that registry front projects onto x 631-795 through the solved camera.",
+   "evidence": [
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-awning-grey",
+   "name": "np awning grey",
+   "kind": "reference feature",
+   "source": "Grey retractable awning over the dining set (IMG_2205 x 440-560); its wall projects onto x 448-562.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-awning-white",
+   "name": "np awning white",
+   "kind": "reference feature",
+   "source": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689. The photographed awning runs about 0.7 m further east, past the end of this face; it is drawn on the face only.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:np-alley-arch",
+   "name": "np alley arch",
+   "kind": "reference feature",
+   "source": "Thin white curved canopy on slim posts over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-922); both station cameras put its west end about 0.8 m east of the terrace house corner, its top at about 3.8 m. Its east post stands at the patio house corner.",
+   "evidence": [
+    "IMG_2204.jpg"
    ]
   },
   {
@@ -8191,6 +8401,126 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2204.jpg",
+   "to": "plain_fronts.json:north-pool-north-row-recess",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "plain_fronts.json:north-pool-north-row-return",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "plain_fronts.json:north-pool-parasol-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-patio-parasol",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-patio-loungers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-patio-armchair",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-patio-dining-a",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-porch-armchairs-b",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-porch-dining-d",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:nw-terrace-dining",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:nw-terrace-table",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:nw-terrace-folded-parasol",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:nw-terrace-bistro",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-bougainvillea-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-bougainvillea-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-bougainvillea-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-awning-blue-stripes",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-awning-grey",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-awning-white",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "north_pool_frontages.json:np-alley-arch",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2205.jpg",
    "to": "building:6266601UF1366N_part3",
    "relation": "possibly-in-view",
@@ -8260,7 +8590,91 @@
   },
   {
    "from": "photo:IMG_2205.jpg",
+   "to": "plain_fronts.json:north-pool-north-row-recess",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "plain_fronts.json:north-pool-north-row-return",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "plain_fronts.json:north-pool-parasol-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
    "to": "plain_fronts.json:north-pool-station-parapet",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-patio-parasol",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-patio-loungers",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-patio-side-table",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-patio-armchair",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-patio-dining-a",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-porch-armchairs-b",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-porch-lounger-c",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-porch-dining-d",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-bougainvillea-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-awning-grey",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "north_pool_frontages.json:np-awning-white",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
