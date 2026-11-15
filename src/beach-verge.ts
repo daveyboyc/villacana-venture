@@ -76,22 +76,21 @@ function dryGrass(): THREE.MeshStandardMaterial {
   const canvas = document.createElement("canvas"); canvas.width = canvas.height = size;
   const g = canvas.getContext("2d")!;
   g.fillStyle = "#8a7864"; g.fillRect(0, 0, size, size);
-  const blot = (color: string, n: number, r: number, alpha: number) => {
-    g.fillStyle = color; g.globalAlpha = alpha;
-    for (let i = 0; i < n; i++) {
-      const x = (i * 97 + 13) % size, y = (i * 61 + 29) % size;
-      g.beginPath(); g.ellipse(x, y, r + (i * 5) % 22, r * 0.62 + (i % 9), (i * 0.4) % Math.PI, 0, Math.PI * 2); g.fill();
-    }
-  };
-  blot("#a8947b", 36, 48, 0.22); blot("#6a5c48", 28, 36, 0.18);
-  // Several thousand short strokes, one direction, mostly the tans. The last two colours are the dull olive tufts.
+  // Short strokes only, one direction, mostly the tans. No large blotches: those tiled as oval scales.
   const colours = ["#75654f", "#97846c", "#8f8660", "#75654f", "#97846c", "#8f8660", "#6e6f46", "#7b795a"];
   const ang = Math.atan2(-19.3, 16.6), ca = Math.cos(ang), sa = Math.sin(ang);
-  g.lineCap = "round"; g.lineWidth = 1.15;
-  for (let i = 0; i < 4600; i++) {
-    g.strokeStyle = colours[i % colours.length]; g.globalAlpha = 0.28 + (i % 5) * 0.07;
-    const len = 2 + (i % 6), x = (i * 73 + (i % 17) * 3) % size, y = (i * 41 + (i % 13) * 5) % size;
+  g.lineCap = "round"; g.lineWidth = 1.2;
+  for (let i = 0; i < 5200; i++) {
+    g.strokeStyle = colours[i % colours.length]; g.globalAlpha = 0.45 + (i % 8) * 0.05;
+    const len = 3 + (i % 7), x = (i * 73 + (i % 17) * 3) % size, y = (i * 41 + (i % 13) * 5) % size;
     g.beginPath(); g.moveTo(x, y); g.lineTo(x + ca * len, y + sa * len); g.stroke();
+  }
+  // A few dozen bare scars, each well under 14 px, so the fill shows through without a repeating oval.
+  g.globalAlpha = 0.55;
+  for (let i = 0; i < 36; i++) {
+    g.fillStyle = i % 2 ? "#a8947b" : "#6a5c48";
+    const w = 4 + (i % 5), h = 2 + (i % 3);
+    g.fillRect((i * 89 + 17) % size, (i * 53 + 11) % size, w, h);
   }
   g.globalAlpha = 1;
   const texture = new THREE.CanvasTexture(canvas);
