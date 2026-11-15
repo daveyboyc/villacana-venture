@@ -277,7 +277,7 @@
   },
   "raised_terraces.json:north-pool-north-patios": {
    "level": "photographed",
-   "why": "Plinth frontage and its three openings clear in IMG_2204/2205; plan about 2 m."
+   "why": "Re-traced 2026-11-15 through the solved IMG_2205 camera (IMG_2204 cross-check): plinth wall foot and its three white-step openings, continuous clipped hedges, patios running back to the house walls. Depth along the view is good to about 0.5-0.8 m; the step up to the porch fronts and the east end are estimated."
   },
   "steps:cervantes-elena-steps": {
    "level": "photographed",
@@ -542,6 +542,82 @@
   "pool:north": {
    "level": "photographed",
    "why": "Registry water ring with the two deck tongues corrected through the solved IMG_2204-2206 cameras (data/pool_ring_corrections.json): changed edges 0.14 m rms on 39 picks, 0.18 m rms on 9 held-out picks; the rest of the ring agrees with the photos at 0.25 m rms. The south-west tongue's west foot is hidden by planting and estimated."
+  },
+  "north_pool_frontages.json:np-patio-parasol": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-patio-loungers": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-patio-side-table": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-patio-armchair": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-patio-dining-a": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-porch-armchairs-b": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-porch-lounger-c": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-porch-dining-d": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:nw-terrace-dining": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:nw-terrace-table": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:nw-terrace-folded-parasol": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:nw-terrace-bistro": {
+   "level": "estimated",
+   "why": "Photographed piece; its place along the wall is read from the photo, its distance from the wall from the arrangement the photo shows (the roof station fixes depth near the house fronts only to 1-2 m)."
+  },
+  "north_pool_frontages.json:np-awning-blue-stripes": {
+   "level": "photographed",
+   "why": "The registry wall it hangs on projects through the solved station camera onto the photographed awning's span; depth and height estimated from the photo."
+  },
+  "north_pool_frontages.json:np-awning-grey": {
+   "level": "photographed",
+   "why": "The registry wall it hangs on projects through the solved station camera onto the photographed awning's span; depth and height estimated from the photo."
+  },
+  "north_pool_frontages.json:np-awning-white": {
+   "level": "photographed",
+   "why": "The registry wall it hangs on projects through the solved station camera onto the photographed awning's span; depth and height estimated from the photo."
+  },
+  "north_pool_frontages.json:np-bougainvillea-1": {
+   "level": "estimated",
+   "why": "Bougainvillea photographed on this wall; its spread and height drawn from the photo by eye."
+  },
+  "north_pool_frontages.json:np-bougainvillea-2": {
+   "level": "estimated",
+   "why": "Bougainvillea photographed on this wall; its spread and height drawn from the photo by eye."
+  },
+  "north_pool_frontages.json:np-bougainvillea-3": {
+   "level": "estimated",
+   "why": "Bougainvillea photographed on this wall; its spread and height drawn from the photo by eye."
+  },
+  "north_pool_frontages.json:np-alley-arch": {
+   "level": "photographed",
+   "why": "White arched canopy over the alley mouth in IMG_2204, spanning between the two registry house corners; its height and curve are estimated."
   }
  },
  "gaps": [
@@ -923,6 +999,32 @@
     "IMG_2205.jpg"
    ],
    "why": "The yucca (o13) is placed where its trunk casts through the solved IMG_2205 camera, but the route-clearance guard drops its sprite: its 4.2 m visible canopy needs 2.85 m from the Calle Elena protected route's centreline and the trunk stands 1.3 m from it. Left out rather than bypassing the guard; needs a decision on the guard there or a narrower yucca model."
+  },
+  {
+   "id": "gap:north-pool-lawn-tree",
+   "name": "Feathery tree on the north lawn not drawn",
+   "at": [
+    -168.46,
+    11.7
+   ],
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg"
+   ],
+   "why": "The tree (o9) is placed where its trunk casts through the solved IMG_2205 camera, but its 5.6 m visible canopy needs 3.55 m from the Calle Isabel route centreline and the trunk stands about 2.9 m from it, so the route-clearance guard drops the sprite (as with the yucca, gap:north-pool-station-yucca). Needs a decision on the guard for trees whose canopy overhangs a lane."
+  },
+  {
+   "id": "gap:north-pool-window-mouldings",
+   "name": "Moulded window surrounds on the north row",
+   "at": [
+    -176.0,
+    3.0
+   ],
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg"
+   ],
+   "why": "The north row's windows have raised white surrounds with cornices and ornamental crests over the ground-floor doors (IMG_2204 x 470-570, 955-1075; IMG_2205 x 250-390); the facade kit draws plain generated openings. Task facade-kit-traced."
   }
  ]
 }

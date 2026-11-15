@@ -2362,6 +2362,54 @@
    "owner": "Claude"
   },
   {
+   "id": "north-pool-north-frontage",
+   "area": "north-pool",
+   "priority": 2,
+   "kind": "detail",
+   "title": "North pool: the north row's front gardens, patios and facade details",
+   "photos": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg"
+   ],
+   "build": "Re-trace the north patios (plinth wall, white-step openings, clipped hedges) and the path and lawn edge in front of them through the solved station cameras, run the patio floors back to the house walls, and add the photographed patio furniture, parasols, awnings, bougainvillea, trees and the arch over the alley mouth.",
+   "avoid": "Do not move registry house footprints: the roof station cannot fix depth near the house fronts. Respect the route-clearance guard. Leave Walk alone.",
+   "accept": [
+    "IMG_2204 and IMG_2205 rendered through their solved cameras show the patios, hedges, furniture and awnings in the photographed places",
+    "Visible in Inspect with Show details; the arch and patios in Layout",
+    "check_raised_terraces, check_north_pool_gardens, check_north_pool_frontages and check_ground_plan pass"
+   ],
+   "features": [
+    "raised_terraces.json:north-pool-north-patios",
+    "ground_plan_north_pool.json:north-pool-lawn-path",
+    "ground_plan_north_pool.json:north-pool-lawn",
+    "north_pool_frontages.json:np-patio-parasol",
+    "north_pool_frontages.json:np-patio-loungers",
+    "north_pool_frontages.json:np-patio-side-table",
+    "north_pool_frontages.json:np-patio-armchair",
+    "north_pool_frontages.json:np-patio-dining-a",
+    "north_pool_frontages.json:np-porch-armchairs-b",
+    "north_pool_frontages.json:np-porch-lounger-c",
+    "north_pool_frontages.json:np-porch-dining-d",
+    "north_pool_frontages.json:nw-terrace-dining",
+    "north_pool_frontages.json:nw-terrace-table",
+    "north_pool_frontages.json:nw-terrace-folded-parasol",
+    "north_pool_frontages.json:nw-terrace-bistro",
+    "north_pool_frontages.json:np-awning-blue-stripes",
+    "north_pool_frontages.json:np-awning-grey",
+    "north_pool_frontages.json:np-awning-white",
+    "north_pool_frontages.json:np-bougainvillea-1",
+    "north_pool_frontages.json:np-bougainvillea-2",
+    "north_pool_frontages.json:np-bougainvillea-3",
+    "north_pool_frontages.json:np-alley-arch"
+   ],
+   "dependsOn": [
+    "pool-deck-outline"
+   ],
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "15 Nov: patios re-traced through the solved IMG_2205 camera (front 0.2-2.3 m north of the old trace, openings within 0.3 m in both cameras), floor at 0.4 m running to the house walls except the higher porch fronts; north path (1.3 m) and lawn edge moved with them; clipped hedges; 12 furniture pieces, 3 awnings, 3 bougainvillea, the alley arch, pollarded tree o12 moved 2.3 m east; generated awnings and climbers left out on the photographed fronts, and the generated balcony on the recessed front removed. Open: north-row-front-depth (a ground-level station is requested), the lawn tree dropped by the route guard (gap:north-pool-lawn-tree), window mouldings (facade-kit-traced). Renders: docs/reviews/north-pool-north-frontage."
+  },
+  {
    "id": "north-pool-detail-pilot",
    "area": "north-pool",
    "priority": 1,

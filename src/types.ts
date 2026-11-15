@@ -163,4 +163,6 @@ export type MapObject = {
   fitting?: "ladder" | "step-rail";
   /** Pump boxes only: degrees turned anticlockwise seen from above, where a photo shows the box set at an angle. */
   turn?: number;
+  /** Photographed on a raised terrace or patio floor: kept there instead of giving way to the terrace. */
+  onTerrace?: boolean;
 };

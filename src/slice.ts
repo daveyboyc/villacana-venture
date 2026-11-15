@@ -67,6 +67,7 @@ import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings, PLAIN_LAWN_BUILDINGS
 import { addGroundPlan, groundPlanSolidRings, paintGroundPlan } from "./ground-plan";
 import { bareGardenWall, plainForOpenings, plainForPorches } from "./plain-fronts";
 import { addStationParapets } from "./station-parapet";
+import { addNorthPoolFrontageDetails, addNorthPoolFrontageStructure, inPhotographedFrontage } from "./north-pool-frontages";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -303,6 +304,9 @@ async function boot(): Promise<void> {
   if(!layoutOnly)detailSteps.push({build:(into)=>{addGardenWalls(into, walls, skeleton.boundaryReference);addGardenGates(into, gates, walls);}});
   // The trees and hills beyond the resort show only on a walk with details on.
   if(!layoutOnly)detailSteps.push({build:()=>addBackdrop(backdrop)});
+  // Front gardens and facade details across the north pool (data/north_pool_frontages.json).
+  addNorthPoolFrontageStructure(scene);
+  if(!layoutOnly)detailSteps.push({build:(into)=>addNorthPoolFrontageDetails(into)});
   // Generated wall details are illustrative; only source-traced walls affect collision.
   if (skeleton.boundaryReference) {addBoundaryReference(scene, skeleton.boundaryReference);addDaliStreet(scene);addLoweredLanes(scene,skeleton.boundaryReference,(x,z)=>seaside?.inZone(x,z)?seaside.y(x,z):poolGroundY(x,z));addDaliThreshold(scene);addCervantesPatioWalls(scene,skeleton.boundaryReference);addCervantesEastHedge(scene,skeleton.boundaryReference);addRampSteps(scene,skeleton.boundaryReference);addCervantesGardenDoor(scene,skeleton.boundaryReference);addElenaNorth(scene);addCervantesNorthPatios(scene,skeleton.boundaryReference);}
   addDoorSills(scene); // issue #57: door sills, Dalí footpath kerb, south Dalí arch approach
@@ -1241,9 +1245,9 @@ function addPorches(scene: THREE.Scene, buildings: SkeletonBuilding[], floorHeig
         }
         if (!wooden) {
           // Plain fronts get a patio: sometimes an awning and a climber.
-          const pick = hash(x * 0.7, z * 2.3);
-          if (pick < 0.45) box(parts.canvas, 0, 2.55, 1.0, WIDTH, 0.05, 2.1, 0.32);
-          if (pick > 0.6) climbers.push({ x: x + tx * (WIDTH / 2) + nx * 0.25, y: 1.2, z: z + tz * (WIDTH / 2) + nz * 0.25 });
+          const pick = hash(x * 0.7, z * 2.3), photographed = inPhotographedFrontage(x, z, nx, nz);
+          if (pick < 0.45 && !photographed) box(parts.canvas, 0, 2.55, 1.0, WIDTH, 0.05, 2.1, 0.32);
+          if (pick > 0.6 && !photographed) climbers.push({ x: x + tx * (WIDTH / 2) + nx * 0.25, y: 1.2, z: z + tz * (WIDTH / 2) + nz * 0.25 });
         }
         if (b.floors >= 2) {
           const rail = wooden ? parts.wood : parts.iron;

@@ -1822,6 +1822,30 @@
    "before": "docs/reviews/pool-deck-outline/IMG_2206-before.png",
    "result": "matches",
    "notes": "The south-west tongue is square with the ladder over its north edge, as photographed; its tip draws about 20 px (0.25 m) from the photo's, which is this camera's disagreement with the other two station cameras and shows on unchanged edges too. Rendered with Show details through the solved station camera (data/photo_poses.json); measurement in docs/reviews/pool-deck-outline. A photographic diagnostic; approval is the measured-approval review."
+  },
+  {
+   "task": "north-pool-north-frontage",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "raised_terraces.json:north-pool-north-patios",
+   "photo": "IMG_2205.jpg",
+   "render": "docs/reviews/north-pool-north-frontage/IMG_2205-after.png",
+   "before": "docs/reviews/north-pool-north-frontage/IMG_2205-before.png",
+   "result": "differs",
+   "followUp": "north-pool-north-frontage",
+   "notes": "The plinth wall, its three white steps and the path at its foot now fall on the photographed ones, the lawn reaches the path, and the patios run back to the houses with continuous clipped hedges, the parasol over two loungers, the dining sets, the grey and white awnings, the pollarded tree and the arch over the alley mouth where the photo has them. Still different: the feathery tree on the lawn is not drawn (route guard, gap:north-pool-lawn-tree), the hedges are a little lower and more regular than the photo's, the window surrounds and crests are plain, and the planting inside the patios (shrubs, pots, topiary) is not modelled. Rendered with Show details through the solved station camera (data/photo_poses.json). A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "north-pool-north-frontage",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "north_pool_frontages.json:np-awning-blue-stripes",
+   "photo": "IMG_2204.jpg",
+   "render": "docs/reviews/north-pool-north-frontage/IMG_2204-after.png",
+   "before": "docs/reviews/north-pool-north-frontage/IMG_2204-before.png",
+   "result": "differs",
+   "followUp": "north-pool-north-frontage",
+   "notes": "The blue striped awning, the bougainvillea on the terrace house, the alley arch, the patio furniture and awnings and the clipped hedges now show as photographed. Still different: the north-west terrace's planting is still generic round shrubs where the photo has a dense mixed bed with oleander and a strelitzia, the big feathery tree at the left of the terrace and the one on the lawn are not drawn (route guard), and the window surrounds are plain. Rendered with Show details through the solved station camera (data/photo_poses.json). A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

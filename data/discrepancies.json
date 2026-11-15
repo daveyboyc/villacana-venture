@@ -100,6 +100,17 @@
       "task": "pool-deck-outline",
       "status": "open",
       "requests": []
+    },
+    {
+      "id": "north-row-front-depth",
+      "area": "north-pool",
+      "kind": "placement",
+      "description": "Near the north row's house fronts the roof station cannot fix depth: furniture, door feet and awning attachments cast 1-3 m from the registry fronts (some behind them), and the two station cameras differ by 0.6-1.6 m in depth at the patio front. The laser survey's roof fit moves the resort's footprints about 1.5 m north, but barely improves. The re-traced north patios, path and lawn edge use IMG_2205; furniture and awnings are placed relative to the registry fronts. A second camera station (ground level, from the lawn) would allow a measured correction of the patio front and test the registry fronts.",
+      "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "map:ground"],
+      "features": ["raised_terraces.json:north-pool-north-patios"],
+      "task": "north-pool-north-frontage",
+      "status": "open",
+      "requests": ["north-pool-north-row-ground"]
     }
   ]
 }

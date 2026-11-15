@@ -1,0 +1,195 @@
+{
+ "about": "Front-garden and facade details of the houses across the north pool from the roof station (IMG_2204, IMG_2205, IMG_2207), built by src/north-pool-frontages.ts. World metres, x east, z south. Positions along a wall come from projecting the registry house fronts through the solved station cameras (data/photo_poses.json), which put each awning's wall exactly on the photographed span; depth from the wall follows the arrangement the photos show (under an awning, against the wall, mid-patio), because the single roof station cannot fix depth near the house fronts to better than 1-2 m. Furniture stands on the floor below it (terrace or patio floor, else the surveyed ground). Trees stay in data/objects.json.",
+ "area": "north-pool",
+ "furniture": [
+  {
+   "id": "np-patio-parasol",
+   "kind": "parasol",
+   "open": true,
+   "at": [-179.6, 7.9],
+   "turn": 30,
+   "note": "Large grey-white square parasol over the loungers in front of the west house of the north patios (IMG_2205 x 245-370, IMG_2204 x 935-1050); its pole foot is hidden and estimated below the canopy, about 1 m out from the wall.",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "np-patio-loungers",
+   "kind": "loungers",
+   "count": 2,
+   "at": [-179.3, 8.6],
+   "turn": 120,
+   "note": "Two white loungers under the parasol, angled towards the pool (IMG_2205, IMG_2204).",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "np-patio-side-table",
+   "kind": "side-table",
+   "at": [-178.85, 9.2],
+   "note": "Small round white side table in front of the loungers (IMG_2205 x 348).",
+   "evidence": ["IMG_2205.jpg"]
+  },
+  {
+   "id": "np-patio-armchair",
+   "kind": "armchair",
+   "count": 1,
+   "at": [-178.0, 6.5],
+   "turn": 30,
+   "note": "White armchair against the wall right of the parasol (IMG_2205 x 407-440, IMG_2204 x 1080-1110).",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "np-patio-dining-a",
+   "kind": "dining-set",
+   "seats": 6,
+   "at": [-175.2, 5.4],
+   "turn": 30,
+   "note": "White dining table with six chairs under the grey awning (IMG_2205 x 510-560, IMG_2204 x 1180-1265).",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "np-porch-armchairs-b",
+   "kind": "armchair",
+   "count": 2,
+   "at": [-171.0, 2.6],
+   "turn": 30,
+   "note": "Two white chairs in front of the porch house under the white awning (IMG_2205 x 687-707, IMG_2204 x 1375-1410); the porch front stands higher than the patio, so they stand on the surveyed ground.",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "np-porch-lounger-c",
+   "kind": "loungers",
+   "count": 1,
+   "at": [-168.7, 2.4],
+   "turn": 30,
+   "note": "A low white lounger (IMG_2205 x 767-787).",
+   "evidence": ["IMG_2205.jpg"]
+  },
+  {
+   "id": "np-porch-dining-d",
+   "kind": "dining-set",
+   "seats": 6,
+   "at": [-167.4, 2.1],
+   "turn": 30,
+   "note": "White dining table and chairs at the east end of the north row (IMG_2205 x 813-847, IMG_2204 x 1485-1600).",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "nw-terrace-dining",
+   "kind": "dining-set",
+   "seats": 4,
+   "at": [-194.2, 18.7],
+   "turn": 30,
+   "note": "White table with four chairs at the west end of the north-west terrace (IMG_2204 x 150-220); cast through the solved camera onto the 1.93 m terrace floor it lands at about (-194.7, 18.7), at the terrace's untraced west end, so it is kept just inside.",
+   "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "nw-terrace-table",
+   "kind": "bistro-set",
+   "at": [-192.36, 16.38],
+   "turn": 30,
+   "note": "Square white metal table with a chair (IMG_2204 x 315-370), cast onto the terrace floor.",
+   "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "nw-terrace-folded-parasol",
+   "kind": "parasol",
+   "open": false,
+   "at": [-192.3, 15.9],
+   "note": "Folded white parasol by the house wall (IMG_2204 x 375-395); its cast foot falls just inside the registry house, so it stands against the wall.",
+   "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "nw-terrace-bistro",
+   "kind": "bistro-set",
+   "at": [-185.6, 11.0],
+   "turn": 30,
+   "note": "Small table and chairs in front of the house with the blue striped awning (IMG_2204 x 700-750).",
+   "evidence": ["IMG_2204.jpg"]
+  }
+ ],
+ "awnings": [
+  {
+   "id": "np-awning-blue-stripes",
+   "wall": [
+    [-184.55, 9.48],
+    [-187.45, 11.22]
+   ],
+   "out": [0.515, 0.857],
+   "height": 2.45,
+   "depth": 1.1,
+   "colour": "#1f4e8c",
+   "stripes": "#f4f1e8",
+   "note": "Blue and white striped awning over the ground-floor doors of the house facing the north-west terrace (IMG_2204 x 645-800): that registry front projects onto x 631-795 through the solved camera.",
+   "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "np-awning-grey",
+   "wall": [
+    [-177.1, 5.35],
+    [-174.5, 3.79]
+   ],
+   "out": [0.513, 0.858],
+   "height": 2.5,
+   "depth": 2.4,
+   "colour": "#c4c3bb",
+   "note": "Grey retractable awning over the dining set (IMG_2205 x 440-560); its wall projects onto x 448-562.",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  },
+  {
+   "id": "np-awning-white",
+   "wall": [
+    [-173.7, 1.95],
+    [-171.27, 0.53]
+   ],
+   "out": [0.505, 0.864],
+   "height": 2.5,
+   "depth": 2.6,
+   "colour": "#efece2",
+   "note": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689.",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  }
+ ],
+ "climbers": [
+  {
+   "id": "np-bougainvillea-1",
+   "at": [-187.2, 11.1],
+   "height": 3.4,
+   "spread": 1.6,
+   "note": "Magenta bougainvillea climbing the west end of the blue-awning house (IMG_2204 x 585-670).",
+   "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "np-bougainvillea-2",
+   "at": [-184.5, 9.42],
+   "height": 4.6,
+   "spread": 1.4,
+   "note": "Bougainvillea up to the first floor at the alley corner (IMG_2204 x 770-850).",
+   "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "np-bougainvillea-3",
+   "at": [-178.4, 6.15],
+   "height": 4.2,
+   "spread": 1.5,
+   "note": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150).",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+  }
+ ],
+ "arches": [
+  {
+   "id": "np-alley-arch",
+   "from": [-184.28, 9.32],
+   "to": [-181.78, 8.14],
+   "height": 2.6,
+   "rise": 0.35,
+   "depth": 0.7,
+   "note": "White arched canopy over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-915), spanning between the two registry house corners.",
+   "evidence": ["IMG_2204.jpg"]
+  }
+ ],
+ "photographedFrontage": {
+  "box": [-188.5, -1.5, -163.5, 12.0],
+  "facing": [0.5, 0.866],
+  "note": "Pool-facing house fronts of the north row and the north-west terrace house, photographed from the roof station (IMG_2204, IMG_2205): the awnings and climbers there are the ones listed here, so the generated awnings and climbers are left out on these walls; generated balconies and porch roofs stay.",
+  "evidence": ["IMG_2204.jpg", "IMG_2205.jpg"]
+ }
+}

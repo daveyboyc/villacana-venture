@@ -732,8 +732,14 @@
     {
       "id": "picasso-lawn-wall",
       "area": "main-pool",
-      "at": [8.0, 110.0],
-      "look": [16.0, 100.0],
+      "at": [
+        8.0,
+        110.0
+      ],
+      "look": [
+        16.0,
+        100.0
+      ],
       "ask": "From the big-pool lawn, the long white wall on the Calle Pintor Picasso side, square-on, with a person beside it for height. Then from the street, the same wall, and any gate or opening in it down to the coastal path.",
       "why": "IMG_2764 shows the wall along the lawn but not square-on, and not from the street. The line is the aerial edge, good to about 1 m.",
       "priority": 1,
@@ -757,6 +763,24 @@
       "priority": 1,
       "radius": 8,
       "since": "2026-11-14",
+      "status": "open"
+    },
+    {
+      "id": "north-pool-north-row-ground",
+      "area": "north-pool",
+      "at": [
+        -172.0,
+        12.5
+      ],
+      "look": [
+        -172.0,
+        5.0
+      ],
+      "ask": "From the lawn, 3-5 m south of the north path, looking north at the north row patios (plinth wall, three white steps, hedges, house fronts and awnings); two or three positions from the alley arch to the iron gate.",
+      "why": "discrepancy north-row-front-depth: a second camera station for the north patios and house fronts",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-11-15",
       "status": "open"
     }
   ]
