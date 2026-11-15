@@ -70,64 +70,82 @@ graph LR
   F2 --> PIMG_2631_jpg(["IMG_2631"])
   F2 --> PIMG_2766_jpg(["IMG_2766"])
   F2 --> PIMG_2767_jpg(["IMG_2767"])
-  A --> F3["Paseo · east green windbreak · unreviewed"]
-  F3 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F4["Paseo · south-pool clipped hedge · unreviewed"]
-  F4 --> PIMG_2349_jpg(["IMG_2349"])
-  F4 --> PIMG_2350_jpg(["IMG_2350"])
-  A --> F5["Paseo · flush square service cover · unreviewed"]
-  F5 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F6["Paseo · west clipped hedge · unreviewed"]
-  F6 --> PIMG_2352_jpg(["IMG_2352"])
-  F6 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F7["Paseo · west green windbreak · unreviewed"]
-  F7 --> PIMG_2352_jpg(["IMG_2352"])
-  A --> F8["Paseo · white lamp 1 · unreviewed"]
+  A --> F3["Shrubs in front of the beach gateway and railings · unreviewed"]
+  F3 --> PIMG_2226_jpg(["IMG_2226"])
+  F3 --> PIMG_2481_jpg(["IMG_2481"])
+  F3 --> PIMG_2482_jpg(["IMG_2482"])
+  F3 --> PIMG_2483_jpg(["IMG_2483"])
+  F3 --> PIMG_2609_jpg(["IMG_2609"])
+  F3 --> PIMG_2631_jpg(["IMG_2631"])
+  F3 --> PIMG_2633_jpg(["IMG_2633"])
+  F3 --> PIMG_2770_jpg(["IMG_2770"])
+  A --> F4["Grass in front of the beach gateway and railings · unreviewed"]
+  F4 --> PIMG_2226_jpg(["IMG_2226"])
+  F4 --> PIMG_2481_jpg(["IMG_2481"])
+  F4 --> PIMG_2482_jpg(["IMG_2482"])
+  F4 --> PIMG_2483_jpg(["IMG_2483"])
+  F4 --> PIMG_2609_jpg(["IMG_2609"])
+  F4 --> PIMG_2631_jpg(["IMG_2631"])
+  F4 --> PIMG_2633_jpg(["IMG_2633"])
+  F4 --> PIMG_2770_jpg(["IMG_2770"])
+  A --> F5["Paseo · east green windbreak · unreviewed"]
+  F5 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F6["Paseo · south-pool clipped hedge · unreviewed"]
+  F6 --> PIMG_2349_jpg(["IMG_2349"])
+  F6 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F7["Paseo · flush square service cover · unreviewed"]
+  F7 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F8["Paseo · west clipped hedge · unreviewed"]
   F8 --> PIMG_2352_jpg(["IMG_2352"])
   F8 --> PIMG_2354_jpg(["IMG_2354"])
-  F8 --> PIMG_2480_jpg(["IMG_2480"])
-  F8 --> PIMG_2604_jpg(["IMG_2604"])
-  F8 --> PIMG_2609_jpg(["IMG_2609"])
-  F8 --> PIMG_2618_jpg(["IMG_2618"])
-  F8 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F9["Paseo · white lamp 2 · unreviewed"]
+  A --> F9["Paseo · west green windbreak · unreviewed"]
   F9 --> PIMG_2352_jpg(["IMG_2352"])
-  F9 --> PIMG_2354_jpg(["IMG_2354"])
-  F9 --> PIMG_2480_jpg(["IMG_2480"])
-  F9 --> PIMG_2604_jpg(["IMG_2604"])
-  F9 --> PIMG_2609_jpg(["IMG_2609"])
-  F9 --> PIMG_2618_jpg(["IMG_2618"])
-  F9 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F10["Paseo · white lamp 3 · unreviewed"]
-  F10 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F10["Paseo · white lamp 1 · unreviewed"]
+  F10 --> PIMG_2352_jpg(["IMG_2352"])
+  F10 --> PIMG_2354_jpg(["IMG_2354"])
   F10 --> PIMG_2480_jpg(["IMG_2480"])
   F10 --> PIMG_2604_jpg(["IMG_2604"])
   F10 --> PIMG_2609_jpg(["IMG_2609"])
   F10 --> PIMG_2618_jpg(["IMG_2618"])
   F10 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F11["Paseo · white lamp 4 · unreviewed"]
-  F11 --> PIMG_2350_jpg(["IMG_2350"])
+  A --> F11["Paseo · white lamp 2 · unreviewed"]
+  F11 --> PIMG_2352_jpg(["IMG_2352"])
+  F11 --> PIMG_2354_jpg(["IMG_2354"])
   F11 --> PIMG_2480_jpg(["IMG_2480"])
   F11 --> PIMG_2604_jpg(["IMG_2604"])
   F11 --> PIMG_2609_jpg(["IMG_2609"])
   F11 --> PIMG_2618_jpg(["IMG_2618"])
   F11 --> PIMG_2637_jpg(["IMG_2637"])
-  A --> F12["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
-  F12 --> PIMG_2227_jpg(["IMG_2227"])
-  F12 --> PIMG_2298_jpg(["IMG_2298"])
-  F12 --> PIMG_2299_jpg(["IMG_2299"])
-  F12 --> PIMG_2349_jpg(["IMG_2349"])
+  A --> F12["Paseo · white lamp 3 · unreviewed"]
   F12 --> PIMG_2350_jpg(["IMG_2350"])
-  F12 --> PIMG_2352_jpg(["IMG_2352"])
-  F12 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F13["Paseo · timber edge onto the beach · unreviewed"]
+  F12 --> PIMG_2480_jpg(["IMG_2480"])
+  F12 --> PIMG_2604_jpg(["IMG_2604"])
+  F12 --> PIMG_2609_jpg(["IMG_2609"])
+  F12 --> PIMG_2618_jpg(["IMG_2618"])
+  F12 --> PIMG_2637_jpg(["IMG_2637"])
+  A --> F13["Paseo · white lamp 4 · unreviewed"]
   F13 --> PIMG_2350_jpg(["IMG_2350"])
-  F13 --> PIMG_2351_jpg(["IMG_2351"])
-  F13 --> PIMG_2352_jpg(["IMG_2352"])
-  F13 --> PIMG_2354_jpg(["IMG_2354"])
-  A --> F14["South lawn above the paseo · unreviewed"]
-  F14 --> PIMG_2188_jpg(["IMG_2188"])
+  F13 --> PIMG_2480_jpg(["IMG_2480"])
+  F13 --> PIMG_2604_jpg(["IMG_2604"])
+  F13 --> PIMG_2609_jpg(["IMG_2609"])
+  F13 --> PIMG_2618_jpg(["IMG_2618"])
+  F13 --> PIMG_2637_jpg(["IMG_2637"])
+  A --> F14["Paseo · sandstone retaining wall and mesh fence · unreviewed"]
+  F14 --> PIMG_2227_jpg(["IMG_2227"])
+  F14 --> PIMG_2298_jpg(["IMG_2298"])
+  F14 --> PIMG_2299_jpg(["IMG_2299"])
   F14 --> PIMG_2349_jpg(["IMG_2349"])
+  F14 --> PIMG_2350_jpg(["IMG_2350"])
+  F14 --> PIMG_2352_jpg(["IMG_2352"])
+  F14 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F15["Paseo · timber edge onto the beach · unreviewed"]
+  F15 --> PIMG_2350_jpg(["IMG_2350"])
+  F15 --> PIMG_2351_jpg(["IMG_2351"])
+  F15 --> PIMG_2352_jpg(["IMG_2352"])
+  F15 --> PIMG_2354_jpg(["IMG_2354"])
+  A --> F16["South lawn above the paseo · unreviewed"]
+  F16 --> PIMG_2188_jpg(["IMG_2188"])
+  F16 --> PIMG_2349_jpg(["IMG_2349"])
 ```
 
 ## Placement evidence
@@ -139,6 +157,8 @@ graph LR
 | `area:paseo` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `barraka_frontage.json:barraka-lounge-garden` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `barraka_frontage.json:paseo-painted-crossing` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `beach_verge.json:barraka-front-shrubs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `beach_verge.json:barraka-front-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-east-windbreak` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-pool-hedge` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `paseo_details.json:paseo-service-cover` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

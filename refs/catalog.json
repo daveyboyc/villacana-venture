@@ -1522,6 +1522,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
@@ -5204,6 +5205,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk",
@@ -5250,6 +5252,7 @@
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
    "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat",
    "barraka_boardwalk.json:barraka-boardwalk"
   ],
   "subject": "Sand-filled barbecue boat beside the Barraka boardwalk"
@@ -12599,7 +12602,8 @@
   ],
   "looksAtBasis": "reviewed",
   "looksAtFeatures": [
-   "area:beach"
+   "area:beach",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "subject": "Seaward aisle and pots beside Barraka"
  },

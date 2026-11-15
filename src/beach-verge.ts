@@ -13,20 +13,37 @@ export const vergeClumps = data.shrubs.clumps as [number, number, number][];
 export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number) => number): void {
   const group = new THREE.Group(); group.name = "beach-verge"; group.userData.noDrape = true; scene.add(group);
   // Triangulate the outline, then split each triangle into pieces under about 1 m so the grass follows the ground.
-  const positions: number[] = [], uvs: number[] = [], at = (p: Vec2) => { uvs.push(p[0] / 8, p[1] / 8); return [p[0], groundY(p[0], p[1]) + .05, p[1]]; };
+  // UVs and vertex colours are written together: the thatch repeats every 2 m, and the olive tint is only a colour.
+  const positions: number[] = [], uvs: number[] = [], colors: number[] = [];
+  const olive = new THREE.Color("#c4d4a4");
+  const paveA: Vec2 = [3, 130], paveB: Vec2 = [19.6, 110.7];
+  const pdx = paveB[0] - paveA[0], pdz = paveB[1] - paveA[1], plen2 = pdx * pdx + pdz * pdz || 1;
+  const push = (p: Vec2) => {
+    const t = ((p[0] - paveA[0]) * pdx + (p[1] - paveA[1]) * pdz) / plen2;
+    const tc = Math.max(0, Math.min(1, t));
+    const dist = Math.hypot(p[0] - (paveA[0] + pdx * tc), p[1] - (paveA[1] + pdz * tc));
+    const across = dist >= 8 ? 0 : dist <= 4 ? 1 : (8 - dist) / 4;
+    const smooth = across * across * (3 - 2 * across);
+    // White on the dry half. Toward the restaurant, #c4d4a4 within about 4 m of that paving edge, gone by 8 m and southwest of (3, 130).
+    const m = t > 0 ? smooth : 0;
+    positions.push(p[0], groundY(p[0], p[1]) + .05, p[1]);
+    uvs.push(p[0] / 2, p[1] / 2);
+    colors.push(1 + (olive.r - 1) * m, 1 + (olive.g - 1) * m, 1 + (olive.b - 1) * m);
+  };
   const contour = vergeRing.map(([x, z]) => new THREE.Vector2(x, z));
   for (const [i, j, k] of THREE.ShapeUtils.triangulateShape(contour, [])) {
     const [a, b, c] = [vergeRing[i], vergeRing[j], vergeRing[k]];
     const n = Math.max(1, Math.ceil(Math.max(Math.hypot(b[0] - a[0], b[1] - a[1]), Math.hypot(c[0] - b[0], c[1] - b[1]), Math.hypot(a[0] - c[0], a[1] - c[1]))));
     const p = (u: number, v: number): Vec2 => [a[0] + (b[0] - a[0]) * u / n + (c[0] - a[0]) * v / n, a[1] + (b[1] - a[1]) * u / n + (c[1] - a[1]) * v / n];
     for (let u = 0; u < n; u++) for (let v = 0; v < n - u; v++) {
-      positions.push(...at(p(u, v)), ...at(p(u + 1, v)), ...at(p(u, v + 1)));
-      if (u + v < n - 1) positions.push(...at(p(u + 1, v)), ...at(p(u + 1, v + 1)), ...at(p(u, v + 1)));
+      push(p(u, v)); push(p(u + 1, v)); push(p(u, v + 1));
+      if (u + v < n - 1) { push(p(u + 1, v)); push(p(u + 1, v + 1)); push(p(u, v + 1)); }
     }
   }
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
   geometry.setAttribute("uv", new THREE.Float32BufferAttribute(uvs, 2));
+  geometry.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
   geometry.computeVertexNormals();
   const grass = new THREE.Mesh(geometry, dryGrass());
   grass.name = data.grass.id; grass.receiveShadow = true; group.add(grass);
@@ -53,21 +70,33 @@ export function addBeachVerge(scene: THREE.Scene, groundY: (x: number, z: number
   });
 }
 
-/** Dry, patchy turf: straw with dull green tufts and bare sand, as IMG_2482 and IMG_2604 show the verge. */
+/** Dry grey-brown thatch (IMG_2481, IMG_2482). Dull olive is a vertex tint near the restaurant paving, not a watered lawn. */
 function dryGrass(): THREE.MeshStandardMaterial {
-  const canvas = document.createElement("canvas"); canvas.width = canvas.height = 256;
+  const size = 512;
+  const canvas = document.createElement("canvas"); canvas.width = canvas.height = size;
   const g = canvas.getContext("2d")!;
-  g.fillStyle = "#cbb892"; g.fillRect(0, 0, 256, 256);
-  const blot = (color: string, n: number, r: number) => {
-    g.fillStyle = color;
+  g.fillStyle = "#8a7864"; g.fillRect(0, 0, size, size);
+  const blot = (color: string, n: number, r: number, alpha: number) => {
+    g.fillStyle = color; g.globalAlpha = alpha;
     for (let i = 0; i < n; i++) {
-      const x = (i * 97 + 13) % 256, y = (i * 61 + 29) % 256;
-      g.beginPath(); g.ellipse(x, y, r + (i * 3) % 11, (r * 0.7) + (i % 4), (i * 0.7) % Math.PI, 0, Math.PI * 2); g.fill();
+      const x = (i * 97 + 13) % size, y = (i * 61 + 29) % size;
+      g.beginPath(); g.ellipse(x, y, r + (i * 5) % 22, r * 0.62 + (i % 9), (i * 0.4) % Math.PI, 0, Math.PI * 2); g.fill();
     }
   };
-  blot("#e2d3ae", 18, 36); blot("#a89870", 14, 28); blot("#7f9358", 20, 16); blot("#5f7344", 12, 10);
-  const texture = new THREE.CanvasTexture(canvas); texture.colorSpace = THREE.SRGBColorSpace; texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-  return new THREE.MeshStandardMaterial({ map: texture, roughness: 1, side: THREE.DoubleSide });
+  blot("#a8947b", 36, 48, 0.22); blot("#6a5c48", 28, 36, 0.18);
+  // Several thousand short strokes, one direction, mostly the tans. The last two colours are the dull olive tufts.
+  const colours = ["#75654f", "#97846c", "#8f8660", "#75654f", "#97846c", "#8f8660", "#6e6f46", "#7b795a"];
+  const ang = Math.atan2(-19.3, 16.6), ca = Math.cos(ang), sa = Math.sin(ang);
+  g.lineCap = "round"; g.lineWidth = 1.15;
+  for (let i = 0; i < 4600; i++) {
+    g.strokeStyle = colours[i % colours.length]; g.globalAlpha = 0.28 + (i % 5) * 0.07;
+    const len = 2 + (i % 6), x = (i * 73 + (i % 17) * 3) % size, y = (i * 41 + (i % 13) * 5) % size;
+    g.beginPath(); g.moveTo(x, y); g.lineTo(x + ca * len, y + sa * len); g.stroke();
+  }
+  g.globalAlpha = 1;
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace; texture.wrapS = texture.wrapT = THREE.RepeatWrapping; texture.anisotropy = 8;
+  return new THREE.MeshStandardMaterial({ map: texture, roughness: 1, vertexColors: true, side: THREE.DoubleSide });
 }
 
 /** A young agave: a fleshy rosette, outer blades longer and lower (IMG_2482). */

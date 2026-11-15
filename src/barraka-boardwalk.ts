@@ -6,6 +6,8 @@ import type { Vec2 } from "./types";
 
 /** Shared map/3D access; protects the whole walk from optional furniture. */
 export const barrakaAccess: ProtectedRoute = { id: data.boardwalk.id, name: data.boardwalk.name, points: data.boardwalk.points as Vec2[], width: data.boardwalk.width };
+/** Hull of the sand-filled barbecue boat, shared by the map, the model and collision. */
+export const barrakaBarbecueBoat = data.boat.ring as Vec2[];
 /** The sign spans the aisle; its lettering faces back towards the inland approach. */
 export const barrakaSign = { point: data.sign.point as Vec2, name: data.sign.name,
   yaw: Math.atan2(barrakaAccess.points[1][0]-barrakaAccess.points[0][0], barrakaAccess.points[1][1]-barrakaAccess.points[0][1])+Math.PI };
@@ -68,4 +70,48 @@ export function addBarrakaBoardwalk(scene: THREE.Scene, groundY: (x: number, z: 
       for (const dx of [-.3, .3]) for (const dz of [-.76, .76]) box(seating, .09, .3, .1, side * .61 + dx, .15, .35 + dz, wood);
     }
   }
+  const [bx, bz] = data.boat.centre as Vec2;
+  if (clear(bx, bz, 1.70)) addBarbecueBoat(details, groundY, bx, bz);
+}
+
+/** One open metal hull filled with sand, a few logs and a static flame. No smoke and no copied mesh. */
+function addBarbecueBoat(parent: THREE.Group, groundY: (x: number, z: number) => number, bx: number, bz: number): void {
+  const boat = new THREE.Group(); boat.name = "barraka-barbecue-boat"; boat.position.set(bx, groundY(bx, bz), bz); parent.add(boat);
+  const local = (p: Vec2): [number, number] => [p[0] - bx, p[1] - bz];
+  const hull = barrakaBarbecueBoat.map(local);
+  const metal = new THREE.MeshStandardMaterial({ color: "#c5cbcf", roughness: 0.45, metalness: 0.55 });
+  const sandMat = new THREE.MeshStandardMaterial({ color: "#d9c4a0", roughness: 1 });
+  const logMat = new THREE.MeshStandardMaterial({ color: "#6b4428", roughness: 0.9 });
+  for (let i = 0; i < hull.length; i++) {
+    const a = hull[i], b = hull[(i + 1) % hull.length];
+    const dx = b[0] - a[0], dz = b[1] - a[1], length = Math.hypot(dx, dz) || 1;
+    const wall = new THREE.Mesh(new THREE.BoxGeometry(length, 0.45, 0.05), metal);
+    wall.position.set((a[0] + b[0]) / 2, 0.225, (a[1] + b[1]) / 2);
+    wall.rotation.y = Math.atan2(-dz, dx); wall.castShadow = wall.receiveShadow = true; boat.add(wall);
+  }
+  const cx = hull.reduce((s, p) => s + p[0], 0) / hull.length, cz = hull.reduce((s, p) => s + p[1], 0) / hull.length;
+  const sandPts = hull.map(([x, z]) => {
+    const dx = cx - x, dz = cz - z, len = Math.hypot(dx, dz) || 1;
+    return [x + dx / len * 0.08, z + dz / len * 0.08] as [number, number];
+  });
+  const sandGeo = new THREE.ExtrudeGeometry(new THREE.Shape(sandPts.map(([x, z]) => new THREE.Vector2(x, -z))), { depth: 0.28, bevelEnabled: false });
+  sandGeo.rotateX(-Math.PI / 2);
+  const sand = new THREE.Mesh(sandGeo, sandMat); sand.position.y = 0.02; sand.receiveShadow = true; sand.name = "barraka-barbecue-sand"; boat.add(sand);
+  const stern: [number, number] = [(hull[0][0] + hull[1][0]) / 2, (hull[0][1] + hull[1][1]) / 2];
+  const bow = hull[2];
+  const across = Math.atan2(-(bow[1] - stern[1]), bow[0] - stern[0]) + Math.PI / 2;
+  const logGeo = new THREE.CylinderGeometry(0.055, 0.06, 0.78, 6); logGeo.rotateZ(Math.PI / 2);
+  for (let i = 0; i < 6; i++) {
+    const t = 0.32 + i * 0.08;
+    const log = new THREE.Mesh(logGeo, logMat);
+    log.rotation.y = across + (i % 2) * 0.12;
+    log.position.set(stern[0] + (bow[0] - stern[0]) * t, 0.36 + (i % 3) * 0.035, stern[1] + (bow[1] - stern[1]) * t);
+    log.castShadow = true; boat.add(log);
+  }
+  const flame = new THREE.Group();
+  flame.position.set(stern[0] + (bow[0] - stern[0]) * 0.52, 0.5, stern[1] + (bow[1] - stern[1]) * 0.52);
+  const core = new THREE.Mesh(new THREE.ConeGeometry(0.07, 0.22, 6), new THREE.MeshStandardMaterial({ color: "#ff7a22", emissive: "#ff5a00", emissiveIntensity: 0.85, roughness: 0.45 }));
+  core.position.y = 0.11; flame.add(core);
+  const tongue = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.16, 6), new THREE.MeshStandardMaterial({ color: "#ffb020", emissive: "#ff8a00", emissiveIntensity: 0.6, roughness: 0.4, transparent: true, opacity: 0.85 }));
+  tongue.position.y = 0.08; flame.add(tongue); boat.add(flame);
 }

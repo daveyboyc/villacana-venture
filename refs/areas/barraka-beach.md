@@ -20,6 +20,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 - 13 Nov: the beach verge plants are the ones in the close photos. IMG_2631 and IMG_2226 show round leafy bushes on the grass, not plain balls; IMG_2481 and IMG_2631 show young agaves on that grass; IMG_2226 and IMG_2481 show palms just seaward of it. The pots by the rope (IMG_2609, IMG_2631) have leaves, one of them upright. Positions of the added plants are by eye, about 3 m. The thatched cooking shelter, kayaks and slot drains stay unbuilt.
 - 14 Nov: the wall on the side that leads to Barraka is the sandstone and green bars on the lawn edge of the pink terrace (IMG_2610, IMG_2630, the Esri aerial, Imagery © Google photorealistic 3D viewed 14 Nov 2026). It had been drawn on the beach side of that paving. The timber deck is the tan rectangle along the seaward wall, about 6.5 m out, with a white rail and white chairs (IMG_2606). Still wanted: the deck from the sand, and the wall from the lawn with a person for height. The white framed shelter on the sand in IMG_2631 is not built.
 - 12 Nov (barraka-facade): the parapet is 4.8 m. IMG_2618's black door, taken as 2.05 m, is about 2.4 times shorter than the wall, so the wall reads about 4.9 m; the model uses 4.8 m. The 2014-15 laser survey still records this roof at a median of 2.89 m and a high point of 3.67 m, below that parapet, and is kept as the roof deck or an older roof rather than a reason to put the windows inside the registry's 3 m storey. The registry ring is unchanged. The north-east wall has two groups of three brown-framed windows (IMG_2618 square-on; the task brief's 3+3+3 over-counted the same photo, and IMG_2615 is that wall seen obliquely), a timber band, a black door under the landward group, a louvred vent between the groups and a small slot vent below the band. The south-west front (IMG_2604) has eight clerestory windows, two red scalloped awnings, glazing with frosted BARRAKA BEACH lettering, a thatched eaves and a rooftop tank. The north-west corner (IMG_2630, IMG_2611) is glazed under one awning for about 5.5 m, then plain with one small window. Stations along the walls are estimates of about a metre from unsolved cameras. Still unbuilt: the thatched cooking shelter, net-covered mound and kayaks (IMG_2619) and the slot drains (IMG_2610, 2630, 2631). The sandbags are temporary and left out.
+- 15 Nov: the beach verge is dry grey-brown thatch on the long stretch (IMG_2481, IMG_2482, IMG_2483), with short dull olive only within about 4 m of the paving from (3, 130) to the tip by Barraka (IMG_2604, IMG_2770, IMG_2609, IMG_2631, IMG_2633) and the same thatch toward the sand. The outline is unchanged and still estimated.
+- 15 Nov: a schematic sand-filled barbecue boat, pale metal with logs and a small flame, sits left of the green aisle at about (39.0, 105.7), estimated ±3 m (IMG_2223, IMG_2346, IMG_2347). The thatched cooking shelter, net-covered mound and kayaks stay unbuilt.
 
 ## Read first
 
@@ -63,44 +65,56 @@ graph LR
   F0 --> PIMG_2298_jpg(["IMG_2298"])
   F0 --> PIMG_2299_jpg(["IMG_2299"])
   F0 --> PIMG_2300_jpg(["IMG_2300"])
-  A --> F1["Thatched parasols and wooden cream-cushion loungers · unreviewed"]
+  A --> F1["Sand-filled barbecue boat · unreviewed"]
   F1 --> PIMG_2223_jpg(["IMG_2223"])
-  F1 --> PIMG_2225_jpg(["IMG_2225"])
+  F1 --> PIMG_2346_jpg(["IMG_2346"])
   F1 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F2["Barraka weathered timber boardwalk · disputed"]
+  A --> F2["Thatched parasols and wooden cream-cushion loungers · unreviewed"]
   F2 --> PIMG_2223_jpg(["IMG_2223"])
   F2 --> PIMG_2225_jpg(["IMG_2225"])
-  F2 --> PIMG_2346_jpg(["IMG_2346"])
   F2 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F3["BARRAKA BEACH two-tier white planted sign · disputed"]
+  A --> F3["Barraka weathered timber boardwalk · disputed"]
+  F3 --> PIMG_2223_jpg(["IMG_2223"])
+  F3 --> PIMG_2225_jpg(["IMG_2225"])
   F3 --> PIMG_2346_jpg(["IMG_2346"])
   F3 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F4["Barraka restaurant: parapet, clerestory windows, door, glazed awnings and thatched edge · unreviewed"]
-  F4 --> PIMG_2604_jpg(["IMG_2604"])
-  F4 --> PIMG_2611_jpg(["IMG_2611"])
-  F4 --> PIMG_2615_jpg(["IMG_2615"])
-  F4 --> PIMG_2618_jpg(["IMG_2618"])
-  F4 --> PIMG_2619_jpg(["IMG_2619"])
-  F4 --> PIMG_2630_jpg(["IMG_2630"])
-  A --> F5["Shrubs in front of the beach gateway and railings · unreviewed"]
-  F5 --> PIMG_2226_jpg(["IMG_2226"])
-  F5 --> PIMG_2481_jpg(["IMG_2481"])
-  F5 --> PIMG_2482_jpg(["IMG_2482"])
-  F5 --> PIMG_2609_jpg(["IMG_2609"])
-  F5 --> PIMG_2631_jpg(["IMG_2631"])
-  A --> F6["Grass in front of the beach gateway and railings · unreviewed"]
-  F6 --> PIMG_2226_jpg(["IMG_2226"])
-  F6 --> PIMG_2481_jpg(["IMG_2481"])
-  F6 --> PIMG_2482_jpg(["IMG_2482"])
-  F6 --> PIMG_2609_jpg(["IMG_2609"])
-  F6 --> PIMG_2631_jpg(["IMG_2631"])
-  A --> F7["6465801UF1366N_part5 · unreviewed"]
+  A --> F4["BARRAKA BEACH two-tier white planted sign · disputed"]
+  F4 --> PIMG_2346_jpg(["IMG_2346"])
+  F4 --> PIMG_2347_jpg(["IMG_2347"])
+  A --> F5["Barraka restaurant: parapet, clerestory windows, door, glazed awnings and thatched edge · unreviewed"]
+  F5 --> PIMG_2604_jpg(["IMG_2604"])
+  F5 --> PIMG_2611_jpg(["IMG_2611"])
+  F5 --> PIMG_2615_jpg(["IMG_2615"])
+  F5 --> PIMG_2618_jpg(["IMG_2618"])
+  F5 --> PIMG_2619_jpg(["IMG_2619"])
+  F5 --> PIMG_2630_jpg(["IMG_2630"])
+  A --> F6["6465801UF1366N_part5 · unreviewed"]
+  F6 --> PIMG_2346_jpg(["IMG_2346"])
+  F6 --> PIMG_2347_jpg(["IMG_2347"])
+  A --> F7["6465801UF1366N_part6 · unreviewed"]
   F7 --> PIMG_2346_jpg(["IMG_2346"])
   F7 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F8["6465801UF1366N_part6 · unreviewed"]
-  F8 --> PIMG_2346_jpg(["IMG_2346"])
-  F8 --> PIMG_2347_jpg(["IMG_2347"])
-  A --> F9["Beach gateway from the big-pool lawn · disputed"]
+  A --> F8["Beach gateway from the big-pool lawn · disputed"]
+  F8 --> PIMG_2226_jpg(["IMG_2226"])
+  F8 --> PIMG_2227_jpg(["IMG_2227"])
+  F8 --> PIMG_2484_jpg(["IMG_2484"])
+  F8 --> PIMG_2485_jpg(["IMG_2485"])
+  F8 --> PIMG_2488_jpg(["IMG_2488"])
+  F8 --> PIMG_2600_jpg(["IMG_2600"])
+  F8 --> PIMG_2601_jpg(["IMG_2601"])
+  F8 --> PIMG_2602_jpg(["IMG_2602"])
+  F8 --> PIMG_2604_jpg(["IMG_2604"])
+  F8 --> PIMG_2609_jpg(["IMG_2609"])
+  F8 --> PIMG_2610_jpg(["IMG_2610"])
+  F8 --> PIMG_2630_jpg(["IMG_2630"])
+  F8 --> PIMG_2631_jpg(["IMG_2631"])
+  F8 --> PIMG_2759_jpg(["IMG_2759"])
+  F8 --> PIMG_2760_jpg(["IMG_2760"])
+  F8 --> PIMG_2766_jpg(["IMG_2766"])
+  F8 --> PIMG_2767_jpg(["IMG_2767"])
+  F8 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
+  F8 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
+  A --> F9["White wall beside the paseo ramp · unreviewed"]
   F9 --> PIMG_2226_jpg(["IMG_2226"])
   F9 --> PIMG_2227_jpg(["IMG_2227"])
   F9 --> PIMG_2484_jpg(["IMG_2484"])
@@ -120,7 +134,7 @@ graph LR
   F9 --> PIMG_2767_jpg(["IMG_2767"])
   F9 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F9 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
-  A --> F10["White wall beside the paseo ramp · unreviewed"]
+  A --> F10["Green bar railing on a sandstone plinth along the big-pool lawn · unreviewed"]
   F10 --> PIMG_2226_jpg(["IMG_2226"])
   F10 --> PIMG_2227_jpg(["IMG_2227"])
   F10 --> PIMG_2484_jpg(["IMG_2484"])
@@ -140,26 +154,6 @@ graph LR
   F10 --> PIMG_2767_jpg(["IMG_2767"])
   F10 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
   F10 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
-  A --> F11["Green bar railing on a sandstone plinth along the big-pool lawn · unreviewed"]
-  F11 --> PIMG_2226_jpg(["IMG_2226"])
-  F11 --> PIMG_2227_jpg(["IMG_2227"])
-  F11 --> PIMG_2484_jpg(["IMG_2484"])
-  F11 --> PIMG_2485_jpg(["IMG_2485"])
-  F11 --> PIMG_2488_jpg(["IMG_2488"])
-  F11 --> PIMG_2600_jpg(["IMG_2600"])
-  F11 --> PIMG_2601_jpg(["IMG_2601"])
-  F11 --> PIMG_2602_jpg(["IMG_2602"])
-  F11 --> PIMG_2604_jpg(["IMG_2604"])
-  F11 --> PIMG_2609_jpg(["IMG_2609"])
-  F11 --> PIMG_2610_jpg(["IMG_2610"])
-  F11 --> PIMG_2630_jpg(["IMG_2630"])
-  F11 --> PIMG_2631_jpg(["IMG_2631"])
-  F11 --> PIMG_2759_jpg(["IMG_2759"])
-  F11 --> PIMG_2760_jpg(["IMG_2760"])
-  F11 --> PIMG_2766_jpg(["IMG_2766"])
-  F11 --> PIMG_2767_jpg(["IMG_2767"])
-  F11 --> Pref_apple_maps_05_top_down_main_pool_and_lawn_png(["05-top-down-main-pool-and-lawn"])
-  F11 --> Pref_apple_maps_11_3d_guillermo_slope_to_paseo_png(["11-3d-guillermo-slope-to-paseo"])
 ```
 
 ## Placement evidence
@@ -169,12 +163,11 @@ graph LR
 | Feature | Placement | Photo diagnostics | Blockers |
 | --- | --- | --- | --- |
 | `area:beach` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `barraka_boardwalk.json:barraka-barbecue-boat` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `barraka_boardwalk.json:barraka-beach-seating` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `barraka_boardwalk.json:barraka-boardwalk` | disputed | unchecked | open discrepancy barraka-boardwalk-flank |
 | `barraka_boardwalk.json:barraka-sign-planter` | disputed | not-comparable | open discrepancy barraka-planter-position |
 | `barraka_facade.json:barraka-facade` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `beach_verge.json:barraka-front-shrubs` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `beach_verge.json:barraka-front-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `building:6465801UF1366N_part5` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `building:6465801UF1366N_part6` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `seafront_fence.json:guillermo-beach-gate` | disputed | differs | open discrepancy photo-discrepancy:58170dc8a5dd3aaa; open discrepancy photo-discrepancy:4d29ca0cdc7d5d41 |
