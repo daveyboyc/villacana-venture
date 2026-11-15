@@ -17,7 +17,7 @@ import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
-import {barrakaBarbecueBoat,barrakaSections,barrakaSign} from "./barraka-boardwalk";
+import {barrakaBarbecueBoat,barrakaBoatMapRing,barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import { vergeClumps, vergeRing } from "./beach-verge";
 import beachVerge from "../data/beach_verge.json";
 import middleSouth from "../data/middle_pool_south_gate.json";
@@ -247,7 +247,7 @@ async function boot(): Promise<void> {
     for(const section of barrakaSections()) seafront.append(el("path",{d:path([section.left,section.right,section.endRight,section.endLeft]),fill:"#80917b",stroke:"#635a47","stroke-width":.1}));
     const planter=el("circle",{id:"barraka-sign-planter-marker",cx:barrakaSign.point[0],cy:barrakaSign.point[1],r:.6,fill:"#a6bc68",stroke:"#455833","stroke-width":.15});
     const planterTitle=el("title",{});planterTitle.textContent=`${barrakaSign.name} · estimated position; marker, not footprint`;planter.append(planterTitle);seafront.append(planter);
-    const boat=el("path",{id:"barraka-barbecue-boat",d:path(barrakaBarbecueBoat),fill:"#c8ced2",stroke:"#6d7378","stroke-width":.08});
+    const boat=el("path",{id:"barraka-barbecue-boat",d:path(barrakaBoatMapRing(barrakaBarbecueBoat)),fill:"#cfc5b6",stroke:"#6e665c","stroke-width":.09});
     const boatTitle=el("title",{});boatTitle.textContent="Sand-filled barbecue boat, estimated ±3 m";boat.append(boatTitle);seafront.append(boat);
   }
   world.append(seafront);
