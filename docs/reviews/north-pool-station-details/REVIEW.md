@@ -138,3 +138,82 @@ these against the photo:
 - the parasol canopy at x 530-650, y 770-855;
 - the south-east wall top falling to (595, 885);
 - a continuous white wall from x 735 to 830 east of gate 2.
+
+## Re-check after the fixes (2026-11-15)
+
+I compared the new `IMG_2206-after.png`, `IMG_2205-after.png`, `west-gardens-*` and `isabel-*` with the
+full-size photos. Before and after differ only in the suppressed areas.
+
+**Verdict: `satisfactory-with-notes`.** One small fix is still required (R1). The rest are notes.
+
+What is now right:
+- **East wall (west gardens):**
+  - West of gate 2, its top falls towards the camera as photographed: render (680, 845) to (592, 865),
+    photo (650, 840) to (595, 885). That is within about 20 px, roughly 0.25 m.
+  - Its north-north-west part to the gate's right covers render x 757-848 at its top, against photo
+    x 750-825. The re-trace explains that white face, so I withdraw my earlier item 4.
+  - Both gates sit on their photographed spans. The 1 m stub east of the patio is gone.
+- **Openings:** both are now centred on their gates (west wall 1.92 m, east wall 1.40 m along the edge).
+- **Layout and Show details:** Layout shows walls, gates, cappings and floor. The parasol and the
+  bougainvillea appear only with details. The bougainvillea's bare trunk no longer shows.
+- **Data:** the map (`blueprint.ts`) now filters `replacedGardenWall`. The stale gap and
+  `plain_fronts` entries are updated.
+- **Calle Isabel:** the green bed patch and the terracotta squares in front of the iron gate are
+  covered. The east block's face stays plain as photographed.
+
+### Still to fix
+
+**R1. Slivers beside both gates (required).**
+- `cutOpenings` in `src/ground-plan.ts` drops the resampled points (about 0.39 m apart) that fall inside
+  an opening. Each wall run therefore stops at the last point outside the opening, and the gap is wider
+  than `width`:
+  - **East wall:** the gap is about 0.78-1.94 m against the gate's 0.95-1.85 m, leaving about 0.17 m
+    open on the north-north-west side and 0.09 m on the south-south-east side.
+  - **West wall:** the gap is about 1.11-2.59 m against 1.42-2.42 m, leaving about 0.31 m open south of
+    gate 1 and 0.17 m north of it.
+- **Where it shows:**
+  - In IMG_2206, terracotta floor shows between gate 2 and its wall (render x 737-757, y 800-900).
+    The photo has a white pier there (x 735-752, down to y≈960).
+  - In `west-gardens-layout.png`, a gap shows between gate 1's jamb and the next wall piece (around
+    x 985-995, y 400-480).
+- **Fix:** make `cutOpenings` cut each run exactly at `at ± width/2`, interpolating the end points.
+  Alternatively, give the gates jambs that fill the slivers. The same fix also gives the white pier
+  beside gate 2.
+
+### Notes (not blocking)
+
+**N1. Parasol: better, still too high and too big.**
+- The canopy renders at x 555-725, y 730-830. The photo's is at x 530-650, y 770-855.
+- It is about 40% too wide and 30-40 px too high. It still covers the bottom of gate 1 (y 730-772),
+  which the photo shows clear.
+- Suggestion: a canopy of about 1.6 m (cone radius about 1.1 instead of 1.55), with the pole about
+  0.4 m further south-west, near (-183.5, 32.5).
+
+**N2. Bougainvillea is too narrow on the right.**
+- The crown spans render x 630-775. The photo's mass reaches x 865, draping over the wall to the right
+  of gate 2 (x 775-865, y 680-790).
+- The plumbago is still missing (photo x 610-690, y 690-790).
+
+**N3. The patio's south and north sides are open.**
+- With edge 1→2 dropped, Layout shows two freestanding walls with an open patio between them.
+- Those sides are unseen, so either draw an `inferred` wall along z≈33 or record a gap. Do not leave it
+  silent.
+- The patio's confidence `why` still talks of the "south-east wall's direction" and the "north and east
+  sides". Update it to the re-trace.
+
+**N4. Calle Isabel finish.**
+- The new `calle-isabel-east-paving` renders as an even beige, nearly the same as the sandstone path.
+  The neighbouring `calle-isabel-crazy-paving` is grey and stony, so a visible seam runs between them
+  (IMG_2205 render around y 720-760; `isabel-layout.png` around x 880-1200, y 380-480).
+- The photo shows one continuous pale paving. Match the two finishes.
+
+**N5. The iron gate and its wall are missing.**
+- They are at photo x 1000-1140, y 520-600, cast to about (-162.5..-161.8, 7.2). The render shows an
+  open passage of terracotta squares there.
+- This was already so before the change. Record a gap such as `gap:north-pool-isabel-iron-gate`.
+
+**N6. Stub behind the yucca.** The white stub at IMG_2205 render x 1325-1370, y 700-760 stays; the
+photo cannot show what is behind the yucca. Accepted, but say so in the area notes or the gaps.
+
+Unchanged and out of scope: the near block's corner and height, the dropped trees and yucca, the
+creeper, the east block's archway, generic plants, and the glass fence.

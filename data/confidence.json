@@ -633,7 +633,7 @@
   },
   "ground_plan_north_pool.json:north-pool-west-gated-patio": {
    "level": "photographed",
-   "why": "The walls, gates and terracotta patio are photographed in IMG_2206 and IMG_2208 and measured on the wall planes through the solved camera; the south-east wall's direction and the patio's north and east sides are estimated."
+   "why": "The walls, gates and terracotta patio are photographed in IMG_2206 and IMG_2208 and measured on the wall planes through the solved camera: the west wall (x -187) with its 1.0 m gate, and the east wall running south-south-east through its 0.88 m gate. The walls' ends and the patio's north and south sides are estimated."
   },
   "plain_fronts.json:north-pool-isabel-east-block": {
    "level": "photographed",
@@ -1076,6 +1076,43 @@
     "IMG_2206.jpg"
    ],
    "why": "IMG_2206 (x 250-580, y 730-1100) shows a big leafy evergreen creeper covering the lower west face of the near block; not modelled."
+  },
+  {
+   "id": "gap:north-pool-gated-patio-sides",
+   "name": "North and south sides of the walled patio",
+   "at": [
+    -184.5,
+    33.0
+   ],
+   "photos": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ],
+   "why": "The roof station sees only the patio's west and east walls; what closes it on the north (towards the west path) and the south (towards the block by the camera) is hidden, so those sides are left open rather than walled by guess."
+  },
+  {
+   "id": "gap:north-pool-isabel-iron-gate",
+   "name": "Iron gate and its wall at the head of Calle Isabel",
+   "at": [
+    -162.2,
+    7.3
+   ],
+   "photos": [
+    "IMG_2205.jpg"
+   ],
+   "why": "IMG_2205 (x 1000-1140, y 520-600) shows a black iron gate between white walls where Calle Isabel leaves the lawn, at about (-162.55..-161.8, 7.2-7.5); not modelled, so an open passage shows there."
+  },
+  {
+   "id": "gap:north-pool-isabel-hidden-wall",
+   "name": "Generated low wall behind the yucca on Calle Isabel",
+   "at": [
+    -159.6,
+    18.0
+   ],
+   "photos": [
+    "IMG_2205.jpg"
+   ],
+   "why": "A generated low wall and gate stand at about (-159.8..-159.5, 17.5-19.0); the yucca hides that ground in IMG_2205, so whether a wall is there is unknown and the generated one is left."
   }
  ]
 }

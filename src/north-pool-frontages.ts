@@ -13,7 +13,7 @@ import type { Vec2 } from "./types";
  * in Layout; the rest is detail and shows with Show details.
  */
 
-type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean; colour?: string; height?: number };
+type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean; colour?: string; height?: number; size?: number };
 type Awning = { id: string; wall: number[][]; out: number[]; height: number; depth: number; colour: string; stripes?: string; drop?: number };
 type Climber = { id: string; at: number[]; height: number; spread: number; from?: number };
 type Gate = { id: string; at: number[]; along: number[]; width: number; height: number; wall: number; rise: number; colour: string };
@@ -102,7 +102,7 @@ function piece(f: Furniture, m: THREE.Material, canvas: THREE.Material): THREE.G
     const base = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.28, 0.08, 16), steel); base.position.y = 0.04; g.add(base);
     if (f.open) {
       // A square canopy (four sides), shallow and pale, as photographed.
-      const top = new THREE.Mesh(new THREE.ConeGeometry(1.55, 0.45, 4, 1, true), canvas); top.position.y = pole + 0.05; top.rotation.y = Math.PI / 4; top.castShadow = true; g.add(top);
+      const top = new THREE.Mesh(new THREE.ConeGeometry(f.size ?? 1.55, 0.45 * (f.size ?? 1.55) / 1.55, 4, 1, true), canvas); top.position.y = pole + 0.05; top.rotation.y = Math.PI / 4; top.castShadow = true; g.add(top);
     } else {
       const furled = new THREE.Mesh(new THREE.ConeGeometry(0.16, 1.5, 8), canvas); furled.position.y = 1.85; furled.rotation.x = Math.PI; furled.castShadow = true; g.add(furled);
     }

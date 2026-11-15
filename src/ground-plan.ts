@@ -163,12 +163,25 @@ function trim(line: Vec2[], from: number, to: number): Vec2[] {
 /** Split a line where openings leave gaps. */
 function cutOpenings(line: Vec2[], openings: { at: number; width: number }[]): Vec2[][] {
   if (!openings.length) return [line];
+  // Cut exactly at each opening's two edges (at ± width / 2), interpolating the end points, so a wall
+  // stops at the gate's jambs rather than at the nearest resampled point.
+  const gaps = openings.map((o) => [o.at - o.width / 2, o.at + o.width / 2]).sort((a, b) => a[0] - b[0]);
+  const inGap = (d: number) => gaps.some(([a, b]) => d > a && d < b);
   const runs: Vec2[][] = [];
   let run: Vec2[] = [], s = 0;
-  const open = (d: number) => openings.some((o) => Math.abs(d - o.at) < o.width / 2);
+  const lerp = (a: Vec2, b: Vec2, t: number): Vec2 => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t];
   line.forEach((p, i) => {
-    if (i) s += Math.hypot(p[0] - line[i - 1][0], p[1] - line[i - 1][1]);
-    if (open(s)) { if (run.length > 1) runs.push(run); run = []; } else run.push(p);
+    if (i === 0) { if (!inGap(0)) run.push(p); return; }
+    const a = line[i - 1], len = Math.hypot(p[0] - a[0], p[1] - a[1]), s0 = s, s1 = s + len;
+    // Gap edges crossed inside this segment, in order.
+    const cuts = gaps.flat().filter((d) => d > s0 && d < s1).sort((x, y) => x - y);
+    for (const d of cuts) {
+      const q = lerp(a, p, (d - s0) / (len || 1));
+      if (inGap(d + 1e-6)) { run.push(q); if (run.length > 1) runs.push(run); run = []; }
+      else run = [q];
+    }
+    if (!inGap(s1)) run.push(p);
+    s = s1;
   });
   if (run.length > 1) runs.push(run);
   return runs;

@@ -67,3 +67,17 @@ A second agent found the first version not satisfactory (`REVIEW.md`). This was 
 - **Confidence:** the stale entries for the gated walls are updated.
 - **Not changed:** a generated wall stub at about (-159.6, 18) behind the yucca stays, because the photo
   can't show whether a wall is there.
+
+### After the re-check (satisfactory-with-notes)
+
+- **Wall openings:** they are now cut exactly at each gate's edges. `cutOpenings` in `src/ground-plan.ts`
+  interpolates the run ends instead of stopping at the nearest 0.39 m sample, so no slivers of gap are
+  left beside the gates. Collision and the map follow, since they use the same runs.
+- **Parasol:** it is smaller, with a 1.1 m canopy at 2.0 m, and stands at (-183.5, 32.5).
+- **Gaps recorded:**
+  - the patio's unseen north and south sides (`gap:north-pool-gated-patio-sides`);
+  - the iron gate at the head of Calle Isabel (`gap:north-pool-isabel-iron-gate`);
+  - the generated wall left behind the yucca (`gap:north-pool-isabel-hidden-wall`).
+- **Left as notes:**
+  - the plumbago and the bougainvillea's width over the east wall;
+  - the seam between the new paving and the older grey crazy paving.

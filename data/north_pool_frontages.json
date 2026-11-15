@@ -111,11 +111,12 @@
    "kind": "parasol",
    "open": true,
    "colour": "#b4b0c6",
-   "at": [-183.2, 32.2],
+   "at": [-183.5, 32.5],
    "turn": 20,
    "note": "Lilac-grey parasol over the terracotta patio behind the east wall (IMG_2206 x 530-650, y 770-855); its canopy about 2.1 m up; the pole foot is hidden.",
    "evidence": ["IMG_2206.jpg"],
-   "height": 2.1
+   "height": 2.0,
+   "size": 1.1
   }
  ],
  "awnings": [
