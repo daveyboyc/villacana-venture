@@ -1846,6 +1846,30 @@
    "result": "differs",
    "followUp": "north-pool-north-frontage",
    "notes": "The blue striped awning, the bougainvillea on the terrace house, the alley arch, the patio furniture and awnings and the clipped hedges now show as photographed. Still different: the north-west terrace's planting is still generic round shrubs where the photo has a dense mixed bed with oleander and a strelitzia, the big feathery tree at the left of the terrace and the one on the lawn are not drawn (route guard), and the window surrounds are plain. Rendered with Show details through the solved station camera (data/photo_poses.json). A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "north-pool-station-details",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "ground_plan_north_pool.json:north-pool-west-gated-patio",
+   "photo": "IMG_2206.jpg",
+   "render": "docs/reviews/north-pool-station-details/IMG_2206-after.png",
+   "before": "docs/reviews/north-pool-station-details/IMG_2206-before.png",
+   "result": "differs",
+   "followUp": "north-pool-station-details",
+   "notes": "The two white patio walls now stand at their photographed heights with brown gates under raised cappings (the south-east gate and its capping land within about 20 px of the photo's), with the terracotta patio and its parasol behind and the bougainvillea above the wall. Still different: the near block beside the camera covers more of the left of the view than the photo (its corner about 0.4-0.5 m off, north-pool-station-notch-corner) and lacks the big creeper on its face; the plumbago and other planting round the walls are not modelled. Rendered with Show details through the solved station camera (data/photo_poses.json). A photographic diagnostic, not placement approval."
+  },
+  {
+   "task": "north-pool-station-details",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "plain_fronts.json:north-pool-isabel-east-block",
+   "photo": "IMG_2205.jpg",
+   "render": "docs/reviews/north-pool-station-details/IMG_2205-after.png",
+   "before": "docs/reviews/north-pool-station-details/IMG_2205-before.png",
+   "result": "differs",
+   "followUp": "north-pool-station-details",
+   "notes": "The east block's face along Calle Isabel is now plain as photographed, and the paving runs up to the iron gate without the generated low wall, hedge and arched gate. Still different: the feathery tree and the yucca in front of it are not drawn (route-clearance guard), and the archway into the block is a generated opening. Rendered with Show details through the solved station camera (data/photo_poses.json). A photographic diagnostic, not placement approval."
   }
  ],
  "legacyUnchecked": [

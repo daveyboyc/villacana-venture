@@ -26,7 +26,7 @@ s = json.loads((ROOT / 'public/map/skeleton.json').read_text())
 photos = {p['file'] for p in json.loads((ROOT / 'public/photos-ref/manifest.json').read_text())}
 houses = [b for b in s['buildings'] if b['floors'] > 0]
 lanes = s['boundaryReference']['roads']
-ids = [x['id'] for k in ('furniture', 'awnings', 'climbers', 'arches') for x in d[k]]
+ids = [x['id'] for k in ('furniture', 'awnings', 'climbers', 'arches', 'gates') for x in d[k]]
 assert len(ids) == len(set(ids)), 'duplicate ids'
 KINDS = {'dining-set', 'bistro-set', 'armchair', 'loungers', 'side-table', 'parasol'}
 
@@ -35,7 +35,7 @@ def on_front(p, tol=0.1):
     return min(ring_gap(p, b['ring']) for b in houses) < tol
 
 
-for k in ('furniture', 'awnings', 'climbers', 'arches'):
+for k in ('furniture', 'awnings', 'climbers', 'arches', 'gates'):
     for x in d[k]:
         assert x['evidence'] and all(e in photos for e in x['evidence']) and len(x['note']) > 40, f"{x['id']}: evidence and a note"
 for f in d['furniture']:
@@ -53,11 +53,15 @@ for a in d['awnings']:
     mid = ((ax + bx) / 2 + a['out'][0] * 0.3, (az + bz) / 2 + a['out'][1] * 0.3)
     assert not any(inside(*mid, b['ring']) for b in houses), f"{a['id']}: out points into the house"
 for c in d['climbers']:
-    assert on_front(c['at']), f"{c['id']}: not on a registry front"
+    assert c.get('on') == 'patio-wall' or on_front(c['at']), f"{c['id']}: not on a registry front"
 for a in d['arches']:
     tol = 1.0 if a.get('style') == 'canopy' else 0.1  # a canopy's posts may stand off the walls
     assert on_front(a['from'], tol) and on_front(a['to'], tol), f"{a['id']}: ends are not at registry house corners"
     assert 1.5 <= math.dist(a['from'], a['to']) <= 4.5, a['id']
+for g in d['gates']:
+    assert abs(math.hypot(*g['along']) - 1) < 0.01 and 0.7 <= g['width'] <= 1.4 and 1.2 <= g['height'] < g['wall'] <= 2.4, g['id']
+for r in d['replacesGardenWalls']:
+    assert r['evidence'] and all(e in photos for e in r['evidence']) and r['box'][0] < r['box'][2] and r['box'][1] < r['box'][3], r['id']
 f = d['photographedFrontage']
 assert all(e in photos for e in f['evidence']) and abs(math.hypot(*f['facing']) - 1) < 0.01
-print(f"North pool frontages: {len(d['furniture'])} furniture, {len(d['awnings'])} awnings, {len(d['climbers'])} climbers, {len(d['arches'])} arch, on floors and house fronts, clear of houses and lanes PASS")
+print(f"North pool frontages: {len(d['furniture'])} furniture, {len(d['awnings'])} awnings, {len(d['climbers'])} climbers, {len(d['arches'])} arch, {len(d['gates'])} gates, on floors and house fronts, clear of houses and lanes PASS")

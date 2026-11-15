@@ -13,9 +13,10 @@ import type { Vec2 } from "./types";
  * in Layout; the rest is detail and shows with Show details.
  */
 
-type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean; colour?: string };
+type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean; colour?: string; height?: number; size?: number };
 type Awning = { id: string; wall: number[][]; out: number[]; height: number; depth: number; colour: string; stripes?: string; drop?: number };
 type Climber = { id: string; at: number[]; height: number; spread: number; from?: number };
+type Gate = { id: string; at: number[]; along: number[]; width: number; height: number; wall: number; rise: number; colour: string };
 type Arch = { id: string; from: number[]; to: number[]; height: number; rise: number; depth: number; style?: "arch" | "canopy" };
 
 /**
@@ -25,6 +26,20 @@ type Arch = { id: string; from: number[]; to: number[]; height: number; rise: nu
 export function inPhotographedFrontage(x: number, z: number, nx: number, nz: number): boolean {
   const f = data.photographedFrontage;
   return x >= f.box[0] && z >= f.box[1] && x <= f.box[2] && z <= f.box[3] && nx * f.facing[0] + nz * f.facing[1] > 0.5;
+}
+
+/** A generated garden wall or gate that gives way to what the photos show there (`replacesGardenWalls`). */
+export function replacedGardenWall(x: number, z: number): boolean {
+  return data.replacesGardenWalls.some(({ box: b }) => x >= b[0] && z >= b[1] && x <= b[2] && z <= b[3]);
+}
+
+function plankTexture(colour: string): THREE.CanvasTexture {
+  const c = document.createElement("canvas"); c.width = 64; c.height = 64;
+  const ctx = c.getContext("2d")!;
+  ctx.fillStyle = colour; ctx.fillRect(0, 0, 64, 64);
+  ctx.fillStyle = "rgba(0,0,0,0.28)";
+  for (let x = 0; x < 64; x += 9) ctx.fillRect(x, 0, 1.5, 64);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
 }
 
 /** The floor under a point: a raised terrace or patio floor where there is one, else the surveyed ground. */
@@ -82,11 +97,12 @@ function piece(f: Furniture, m: THREE.Material, canvas: THREE.Material): THREE.G
     g.add(box(0.04, 0.5, 0.04, m, 0, 0.25, 0));
   } else if (f.kind === "parasol") {
     const steel = new THREE.MeshStandardMaterial({ color: "#d7d7d2", roughness: 0.4, metalness: 0.5 });
-    g.add(box(0.05, 2.5, 0.05, steel, 0, 1.25, 0));
+    const pole = (f.height ?? 2.55) - 0.05;
+    g.add(box(0.05, pole, 0.05, steel, 0, pole / 2, 0));
     const base = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.28, 0.08, 16), steel); base.position.y = 0.04; g.add(base);
     if (f.open) {
       // A square canopy (four sides), shallow and pale, as photographed.
-      const top = new THREE.Mesh(new THREE.ConeGeometry(1.55, 0.45, 4, 1, true), canvas); top.position.y = 2.55; top.rotation.y = Math.PI / 4; top.castShadow = true; g.add(top);
+      const top = new THREE.Mesh(new THREE.ConeGeometry(f.size ?? 1.55, 0.45 * (f.size ?? 1.55) / 1.55, 4, 1, true), canvas); top.position.y = pole + 0.05; top.rotation.y = Math.PI / 4; top.castShadow = true; g.add(top);
     } else {
       const furled = new THREE.Mesh(new THREE.ConeGeometry(0.16, 1.5, 8), canvas); furled.position.y = 1.85; furled.rotation.x = Math.PI; furled.castShadow = true; g.add(furled);
     }
@@ -123,9 +139,24 @@ function awning(a: Awning): THREE.Group {
   return g;
 }
 
-/** Structure: the white arch over the alley mouth (Layout and Show details). */
+/** Structure: the white arch over the alley mouth and the patio gates (Layout and Show details). */
 export function addNorthPoolFrontageStructure(scene: THREE.Scene): void {
   const plaster = plasterMaterial("#fbf8ef");
+  // Brown plank gates in the patio walls' openings, each under a white capping that rises over it.
+  for (const g of data.gates as Gate[]) {
+    const [x, z] = g.at, base = siteY(x, z);
+    const group = new THREE.Group(); group.name = g.id; group.userData.noDrape = true; group.userData.structural = true;
+    const door = new THREE.Mesh(new THREE.BoxGeometry(g.width - 0.04, g.height, 0.05), new THREE.MeshStandardMaterial({ map: plankTexture(g.colour), roughness: 0.8 }));
+    door.position.y = g.height / 2; door.castShadow = true; group.add(door);
+    // Infill above the door up to the wall's top, then a segmental hump over the opening.
+    const head = box(g.width + 0.02, g.wall - g.height, 0.26, plaster, 0, (g.wall + g.height) / 2, 0); group.add(head);
+    const half = g.width / 2 + 0.25, shape = new THREE.Shape();
+    shape.moveTo(-half, 0); shape.quadraticCurveTo(0, g.rise * 2, half, 0); shape.lineTo(-half, 0);
+    const hump = new THREE.Mesh(new THREE.ExtrudeGeometry(shape, { depth: 0.3, bevelEnabled: false }).translate(0, 0, -0.15), plaster);
+    hump.position.y = g.wall; hump.castShadow = true; group.add(hump);
+    group.position.set(x, base, z); group.rotation.y = -Math.atan2(g.along[1], g.along[0]);
+    scene.add(group);
+  }
   for (const a of data.arches as Arch[]) {
     const [ax, az] = a.from, [bx, bz] = a.to, span = Math.hypot(bx - ax, bz - az);
     const g = new THREE.Group(); g.name = a.id; g.userData.noDrape = true; g.userData.structural = true;

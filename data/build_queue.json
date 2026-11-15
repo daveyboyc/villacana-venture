@@ -3517,13 +3517,19 @@
     "Visible in Inspect with Show details"
    ],
    "features": [
-    "plain_fronts.json:north-pool-gated-patio-walls"
+    "ground_plan_north_pool.json:north-pool-west-gated-patio",
+    "north_pool_frontages.json:west-patio-gate-1",
+    "north_pool_frontages.json:west-patio-gate-2",
+    "north_pool_frontages.json:west-patio-bougainvillea",
+    "north_pool_frontages.json:west-patio-parasol",
+    "plain_fronts.json:north-pool-isabel-east-block"
    ],
    "dependsOn": [
     "north-pool-station-foreground"
    ],
-   "status": "open",
-   "owner": null
+   "status": "in-progress",
+   "owner": "Claude",
+   "notes": "15 Nov: the gated patio is built from IMG_2206 (data/ground_plan_north_pool.json north-pool-west-gated-patio): the two white walls (west 1.9 m with a 1.0 m gate at z 31.1, measured on the wall plane x -187; south-east 1.7 m with its gate beside the white pier, direction estimated), raised cappings over the gates, the terracotta floor, its parasol and the bougainvillea behind the wall; the generated low walls and gates there give way. On the east side (IMG_2205) the east block's west face is photo-plain (no generated balcony or awning) and the generated low wall, hedge and arched gate along Calle Isabel give way to the photographed paving. Open: the near block's corner and height (north-pool-station-notch-corner), the trees and yucca beside Calle Isabel dropped by the route guard (gap:north-pool-lawn-tree, gap:north-pool-station-yucca), the archway into the east block (gap:north-pool-isabel-archway), the creeper on the near block (gap:north-pool-station-creeper), the gate positions from ground level (north-pool-gated-patio-gates). Renders: docs/reviews/north-pool-station-details."
   },
   {
    "id": "ground-plan-middle-pool",

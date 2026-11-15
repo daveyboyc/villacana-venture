@@ -309,6 +309,8 @@ def features(s):
         add('north_pool_frontages.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['note'],evidence=f['evidence'],points=f['wall'])
     for f in fr['arches']:
         add('north_pool_frontages.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['note'],evidence=f['evidence'],points=[f['from'],f['to']])
+    for f in fr.get('gates',[]):
+        add('north_pool_frontages.json:'+f['id'],f['id'].replace('-',' '),'reference feature',f['note'],evidence=f['evidence'],points=[f['at']])
     assert len({f['id'] for f in result})==len(result),'Duplicate map feature IDs'
     return result
 

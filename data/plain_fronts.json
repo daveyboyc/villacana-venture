@@ -122,6 +122,25 @@
     "IMG_2205.jpg",
     "IMG_2204.jpg"
    ]
+  },
+  {
+   "id": "north-pool-isabel-east-block",
+   "box": [
+    -161.5,
+    8.0,
+    -155.5,
+    17.5
+   ],
+   "facing": [
+    -0.857,
+    0.515
+   ],
+   "noPorches": true,
+   "noOpenings": false,
+   "trust": "The west face of the east block across Calle Isabel, from (-160.67, 8.75) to (-156.05, 16.44): IMG_2205 (x 1150-1600, y 350-630) shows plain white wall with two shuttered first-floor windows and a ground-floor archway, with no balcony or awning; the generated iron balcony and awning are left out.",
+   "evidence": [
+    "IMG_2205.jpg"
+   ]
   }
  ],
  "parapets": [

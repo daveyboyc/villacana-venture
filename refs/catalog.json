@@ -1071,10 +1071,12 @@
    "ground_plan_north_pool.json:north-pool-lawn",
    "ground_plan_north_pool.json:north-pool-lawn-path",
    "ground_plan_north_pool.json:calle-isabel-crazy-paving",
+   "ground_plan_north_pool.json:calle-isabel-east-paving",
    "plain_fronts.json:north-pool-station-row",
    "plain_fronts.json:north-pool-north-row-recess",
    "plain_fronts.json:north-pool-north-row-return",
    "plain_fronts.json:north-pool-parasol-house",
+   "plain_fronts.json:north-pool-isabel-east-block",
    "plain_fronts.json:north-pool-station-parapet",
    "north_pool_frontages.json:np-patio-parasol",
    "north_pool_frontages.json:np-patio-loungers",
@@ -1135,11 +1137,16 @@
    "raised_terraces.json:north-pool-west-terrace",
    "ground_plan_north_pool.json:north-pool-lawn",
    "ground_plan_north_pool.json:north-pool-lawn-path",
+   "ground_plan_north_pool.json:north-pool-west-gated-patio",
    "plain_fronts.json:north-pool-station-row",
    "plain_fronts.json:north-pool-station-near",
    "plain_fronts.json:north-pool-station-notch-west-face",
    "plain_fronts.json:north-pool-gated-patio-walls",
-   "plain_fronts.json:north-pool-station-parapet"
+   "plain_fronts.json:north-pool-station-parapet",
+   "north_pool_frontages.json:west-patio-parasol",
+   "north_pool_frontages.json:west-patio-bougainvillea",
+   "north_pool_frontages.json:west-patio-gate-1",
+   "north_pool_frontages.json:west-patio-gate-2"
   ],
   "looksAt": [
    -178.5,
@@ -1229,10 +1236,14 @@
    "raised_terraces.json:north-pool-west-terrace",
    "raised_terraces.json:north-pool-north-patios",
    "ground_plan_north_pool.json:north-pool-lawn-path",
+   "ground_plan_north_pool.json:north-pool-west-gated-patio",
    "plain_fronts.json:north-pool-station-row",
    "plain_fronts.json:north-pool-station-near",
    "plain_fronts.json:north-pool-gated-patio-walls",
-   "plain_fronts.json:north-pool-station-parapet"
+   "plain_fronts.json:north-pool-station-parapet",
+   "north_pool_frontages.json:west-patio-bougainvillea",
+   "north_pool_frontages.json:west-patio-gate-1",
+   "north_pool_frontages.json:west-patio-gate-2"
   ],
   "looksAt": [
    -171.5,

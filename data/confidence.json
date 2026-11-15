@@ -537,7 +537,7 @@
   },
   "plain_fronts.json:north-pool-gated-patio-walls": {
    "level": "photographed",
-   "why": "IMG_2206 and IMG_2208 show the low garden walls here as white patio walls with gates and climbers, not hedge; the generated hedge runs on them are left out. The walls' own height, cappings and doors are not yet modelled as photographed (gap:north-pool-gated-patio-walls)."
+   "why": "IMG_2206 and IMG_2208 show these walls bare; the generated hedge runs are left out, and the walls themselves are now the photographed patio walls (ground_plan_north_pool.json north-pool-west-gated-patio)."
   },
   "pool:north": {
    "level": "photographed",
@@ -630,6 +630,34 @@
   "plain_fronts.json:north-pool-north-row-recess": {
    "level": "photographed",
    "why": "IMG_2205 and IMG_2204 show shuttered windows on the recessed front, no balcony or awning."
+  },
+  "ground_plan_north_pool.json:north-pool-west-gated-patio": {
+   "level": "photographed",
+   "why": "The walls, gates and terracotta patio are photographed in IMG_2206 and IMG_2208 and measured on the wall planes through the solved camera: the west wall (x -187) with its 1.0 m gate, and the east wall running south-south-east through its 0.88 m gate. The walls' ends and the patio's north and south sides are estimated."
+  },
+  "plain_fronts.json:north-pool-isabel-east-block": {
+   "level": "photographed",
+   "why": "IMG_2205 shows this face plain: shuttered windows and an archway, no balcony or awning."
+  },
+  "north_pool_frontages.json:west-patio-gate-1": {
+   "level": "photographed",
+   "why": "Gate and raised capping in the west patio wall, measured on the wall plane through the solved IMG_2206 camera (1.0 m wide, top about 1.6 m)."
+  },
+  "north_pool_frontages.json:west-patio-gate-2": {
+   "level": "photographed",
+   "why": "Gate in the east patio wall, measured 0.88 m wide on the wall plane through the solved IMG_2206 camera."
+  },
+  "north_pool_frontages.json:west-patio-bougainvillea": {
+   "level": "estimated",
+   "why": "Photographed above the south-east patio wall; placed inside the patio behind the wall because it rises above the wall top."
+  },
+  "north_pool_frontages.json:west-patio-parasol": {
+   "level": "estimated",
+   "why": "Parasol over the terracotta patio in IMG_2206; its pole foot is hidden."
+  },
+  "ground_plan_north_pool.json:calle-isabel-east-paving": {
+   "level": "photographed",
+   "why": "Continuous crazy paving in IMG_2205 from the lawn to the iron gate and along the east block; its south end is hidden and estimated."
   }
  },
  "gaps": [
@@ -987,19 +1015,6 @@
    "why": "The station camera stands on the roof south of the hedges and cannot see between them and the south row; the two paths that leave the lawn south (one along the hibiscus hedge, one through the gap) run out of view. Not modelled."
   },
   {
-   "id": "gap:north-pool-gated-patio-walls",
-   "name": "Gated patio walls south of the north pool's west path",
-   "at": [
-    -184.0,
-    31.5
-   ],
-   "photos": [
-    "IMG_2206.jpg",
-    "IMG_2208.jpg"
-   ],
-   "why": "Two white patio walls about 1.8 m high with curved cappings and brown plank doors, bougainvillea and plumbago over them, and a terracotta patio with a parasol behind. The model has the generated 1 m garden walls in the right place (rays through the solved IMG_2206 camera) but not their height, cappings or doors; the door feet are hidden by planting, so their positions along the walls are not measured."
-  },
-  {
    "id": "gap:north-pool-station-yucca",
    "name": "Yucca by Calle Isabel not drawn",
    "at": [
@@ -1014,7 +1029,7 @@
   },
   {
    "id": "gap:north-pool-lawn-tree",
-   "name": "Feathery tree on the north lawn not drawn",
+   "name": "Trees beside Calle Isabel not drawn (north lawn and east side)",
    "at": [
     -168.46,
     11.7
@@ -1023,7 +1038,7 @@
     "IMG_2204.jpg",
     "IMG_2205.jpg"
    ],
-   "why": "The tree (o9) is placed where its trunk casts through the solved IMG_2205 camera, but its 5.6 m visible canopy needs 3.55 m from the Calle Isabel route centreline and the trunk stands about 2.9 m from it, so the route-clearance guard drops the sprite (as with the yucca, gap:north-pool-station-yucca). Needs a decision on the guard for trees whose canopy overhangs a lane."
+   "why": "The tree (o9) is placed where its trunk casts through the solved IMG_2205 camera, but its 5.6 m visible canopy needs 3.55 m from the Calle Isabel route centreline and the trunk stands about 2.9 m from it, so the route-clearance guard drops the sprite (as with the yucca, gap:north-pool-station-yucca). Needs a decision on the guard for trees whose canopy overhangs a lane. The same guard drops the feathery tree o10 at (-163.66, 17.09) beside Calle Isabel (IMG_2205 x 1030-1420), which with the yucca leaves the east side looking bare."
   },
   {
    "id": "gap:north-pool-window-mouldings",
@@ -1037,6 +1052,67 @@
     "IMG_2205.jpg"
    ],
    "why": "The north row's windows have raised white surrounds with cornices and ornamental crests over the ground-floor doors (IMG_2204 x 470-570, 955-1075; IMG_2205 x 250-390); the facade kit draws plain generated openings. Task facade-kit-traced."
+  },
+  {
+   "id": "gap:north-pool-isabel-archway",
+   "name": "Archway into the east block from Calle Isabel",
+   "at": [
+    -158.6,
+    12.2
+   ],
+   "photos": [
+    "IMG_2205.jpg"
+   ],
+   "why": "IMG_2205 (x 1330-1440, y 580-630) shows a wide arched opening in the east block's ground floor onto Calle Isabel, with a grey parasol in the covered space behind; the facade kit draws generated openings there."
+  },
+  {
+   "id": "gap:north-pool-station-creeper",
+   "name": "Large creeper on the block beside the station camera",
+   "at": [
+    -178.5,
+    35.2
+   ],
+   "photos": [
+    "IMG_2206.jpg"
+   ],
+   "why": "IMG_2206 (x 250-580, y 730-1100) shows a big leafy evergreen creeper covering the lower west face of the near block; not modelled."
+  },
+  {
+   "id": "gap:north-pool-gated-patio-sides",
+   "name": "North and south sides of the walled patio",
+   "at": [
+    -184.5,
+    33.0
+   ],
+   "photos": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ],
+   "why": "The roof station sees only the patio's west and east walls; what closes it on the north (towards the west path) and the south (towards the block by the camera) is hidden, so those sides are left open rather than walled by guess."
+  },
+  {
+   "id": "gap:north-pool-isabel-iron-gate",
+   "name": "Iron gate and its wall at the head of Calle Isabel",
+   "at": [
+    -162.2,
+    7.3
+   ],
+   "photos": [
+    "IMG_2205.jpg"
+   ],
+   "why": "IMG_2205 (x 1000-1140, y 520-600) shows a black iron gate between white walls where Calle Isabel leaves the lawn, at about (-162.55..-161.8, 7.2-7.5); not modelled, so an open passage shows there."
+  },
+  {
+   "id": "gap:north-pool-isabel-hidden-wall",
+   "name": "Generated low wall behind the yucca on Calle Isabel",
+   "at": [
+    -159.6,
+    18.0
+   ],
+   "photos": [
+    "IMG_2205.jpg"
+   ],
+   "why": "A generated low wall and gate stand at about (-159.8..-159.5, 17.5-19.0); the yucca hides that ground in IMG_2205, so whether a wall is there is unknown and the generated one is left."
   }
  ]
 }

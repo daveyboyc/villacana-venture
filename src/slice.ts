@@ -67,7 +67,7 @@ import { addMainPoolLawn, inLawnPlainFront, lawnSolidRings, PLAIN_LAWN_BUILDINGS
 import { addGroundPlan, groundPlanSolidRings, paintGroundPlan } from "./ground-plan";
 import { bareGardenWall, plainForOpenings, plainForPorches } from "./plain-fronts";
 import { addStationParapets } from "./station-parapet";
-import { addNorthPoolFrontageDetails, addNorthPoolFrontageStructure, inPhotographedFrontage } from "./north-pool-frontages";
+import { addNorthPoolFrontageDetails, addNorthPoolFrontageStructure, inPhotographedFrontage, replacedGardenWall } from "./north-pool-frontages";
 import { addSeaWall, seaWallRings } from "./south-pool";
 import { addPaseoDetails } from "./paseo-details";
 import { addPaseoWall, paseoWallCovers, paseoWallRings } from "./paseo-wall";
@@ -298,8 +298,8 @@ async function boot(): Promise<void> {
   player.group.userData.noDrape = true;
   player.group.userData.dynamic = true;
   scene.add(player.group);
-  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && !inSouthPoolPassage(x,z) && canPlaceDecoration(x,z,.6));
-  const gates = (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && canPlaceDecoration(x,z,1.8));
+  const walls = (layoutOnly?[]:skeleton.gardenWalls).filter(([x, z]) => Math.hypot(x - centre.x, z - centre.z) < RADIUS && !inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && !inSouthPoolPassage(x,z) && !replacedGardenWall(x,z) && canPlaceDecoration(x,z,.6));
+  const gates = (layoutOnly?[]:skeleton.gardenGates).filter(([x,z])=>!inReviewedFrontage(x,z) && !inCervantesWallReview(x,z) && !inCervantesNorthPatios(x,z) && !inElenaNorthReview(x,z) && !inElenaEastPatios(x,z) && !inCervantesEastSouthPatios(x,z) && !inDoorSillReview(x,z) && !replacedGardenWall(x,z) && canPlaceDecoration(x,z,1.8));
   // Joined up neighbour to neighbour, so the walls go in as one piece, not by distance.
   if(!layoutOnly)detailSteps.push({build:(into)=>{addGardenWalls(into, walls, skeleton.boundaryReference);addGardenGates(into, gates, walls);}});
   // The trees and hills beyond the resort show only on a walk with details on.

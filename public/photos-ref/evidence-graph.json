@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 465,
+  "features": 472,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 211
+  "modelFeaturesWithPhotoCitations": 218
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3920,6 +3920,25 @@
    ]
   },
   {
+   "id": "ground_plan_north_pool.json:north-pool-west-gated-patio",
+   "name": "North pool · walled patio with two brown gates south of the west path",
+   "kind": "reference feature",
+   "source": "Photo-supported (IMG_2206, IMG_2208): a terracotta-tiled patio with a parasol, held by two white walls about 1.7-1.9 m high with curved cappings and brown plank gates, bougainvillea and plumbago over them. Measured through the solved IMG_2206 camera on vertical wall planes: the west wall (x -187, the generated garden-wall line, which projects onto it) stands 1.9 m with a 1.0 m gate centred at z 31.1; the east wall runs from about (-183.1, 30.1) south-south-east past its gate (centred at (-182.37, 31.22)) towards the block by the camera, the direction on which that gate measures a usual 0.88 m wide and the wall top falls towards the camera as photographed (IMG_2208 shows the same wall). Estimated: the walls' ends and the patio's north and south sides, which are unseen.",
+   "evidence": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "ground_plan_north_pool.json:calle-isabel-east-paving",
+   "name": "Calle Isabel · crazy paving from the lawn to the iron gate and the east block",
+   "kind": "reference feature",
+   "source": "Photo-supported (IMG_2205 x 850-1200, y 600-700): continuous irregular pale stone paving from the lawn's east edge right up to the iron gate's foot (cast at about (-162.55..-161.8, 7.2-7.5)) and along the east block's face, where the model had the lane's terracotta squares and a generated wall and hedge. Raised over the lane mesh as the Calle Isabel paving is. Estimated: its south end, hidden by the yucca and the tree.",
+   "evidence": [
+    "IMG_2205.jpg"
+   ]
+  },
+  {
    "id": "plain_fronts.json:north-pool-station-row",
    "name": "north pool station row",
    "kind": "reference feature",
@@ -3979,6 +3998,15 @@
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "plain_fronts.json:north-pool-isabel-east-block",
+   "name": "north pool isabel east block",
+   "kind": "reference feature",
+   "source": "The west face of the east block across Calle Isabel, from (-160.67, 8.75) to (-156.05, 16.44): IMG_2205 (x 1150-1600, y 350-630) shows plain white wall with two shuttered first-floor windows and a ground-floor archway, with no balcony or awning; the generated iron balcony and awning are left out.",
+   "evidence": [
+    "IMG_2205.jpg"
    ]
   },
   {
@@ -4118,6 +4146,15 @@
    ]
   },
   {
+   "id": "north_pool_frontages.json:west-patio-parasol",
+   "name": "west patio parasol",
+   "kind": "reference feature",
+   "source": "Lilac-grey parasol over the terracotta patio behind the east wall (IMG_2206 x 530-650, y 770-855); its canopy about 2.1 m up; the pole foot is hidden.",
+   "evidence": [
+    "IMG_2206.jpg"
+   ]
+  },
+  {
    "id": "north_pool_frontages.json:np-bougainvillea-1",
    "name": "np bougainvillea 1",
    "kind": "reference feature",
@@ -4143,6 +4180,16 @@
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:west-patio-bougainvillea",
+   "name": "west patio bougainvillea",
+   "kind": "reference feature",
+   "source": "Magenta bougainvillea rising above the south-east patio wall near its white pier (IMG_2206 x 640-860, y 670-780): on the wall's plane through the solved camera it stands 3.0-4.4 m up, above the 2.9 m wall top, so it grows inside the patio behind the wall.",
+   "evidence": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
    ]
   },
   {
@@ -4181,6 +4228,26 @@
    "source": "Thin white curved canopy on slim posts over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-922); both station cameras put its west end about 0.8 m east of the terrace house corner, its top at about 3.8 m. Its east post stands at the patio house corner.",
    "evidence": [
     "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:west-patio-gate-1",
+   "name": "west patio gate 1",
+   "kind": "reference feature",
+   "source": "Brown plank gate in the west wall of the walled patio (IMG_2206 x 540-605), under a capping that rises over it; 1.0 m wide, top about 1.6 m above the ground, measured on the wall plane through the solved camera.",
+   "evidence": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
+   ]
+  },
+  {
+   "id": "north_pool_frontages.json:west-patio-gate-2",
+   "name": "west patio gate 2",
+   "kind": "reference feature",
+   "source": "Brown plank gate in the east patio wall (IMG_2206 x 695-735), under a raised capping; on the wall's plane through the solved camera it measures 0.88 m wide with its foot at the ground.",
+   "evidence": [
+    "IMG_2206.jpg",
+    "IMG_2208.jpg"
    ]
   },
   {
@@ -8584,6 +8651,12 @@
   },
   {
    "from": "photo:IMG_2205.jpg",
+   "to": "ground_plan_north_pool.json:calle-isabel-east-paving",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
    "to": "plain_fronts.json:north-pool-station-row",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8603,6 +8676,12 @@
   {
    "from": "photo:IMG_2205.jpg",
    "to": "plain_fronts.json:north-pool-parasol-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "plain_fronts.json:north-pool-isabel-east-block",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8743,6 +8822,12 @@
   },
   {
    "from": "photo:IMG_2206.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-west-gated-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
    "to": "plain_fronts.json:north-pool-station-row",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8768,6 +8853,30 @@
   {
    "from": "photo:IMG_2206.jpg",
    "to": "plain_fronts.json:north-pool-station-parapet",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "north_pool_frontages.json:west-patio-parasol",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "north_pool_frontages.json:west-patio-bougainvillea",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "north_pool_frontages.json:west-patio-gate-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "north_pool_frontages.json:west-patio-gate-2",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -8857,6 +8966,12 @@
   },
   {
    "from": "photo:IMG_2208.jpg",
+   "to": "ground_plan_north_pool.json:north-pool-west-gated-patio",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
    "to": "plain_fronts.json:north-pool-station-row",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8876,6 +8991,24 @@
   {
    "from": "photo:IMG_2208.jpg",
    "to": "plain_fronts.json:north-pool-station-parapet",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "north_pool_frontages.json:west-patio-bougainvillea",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "north_pool_frontages.json:west-patio-gate-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2208.jpg",
+   "to": "north_pool_frontages.json:west-patio-gate-2",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

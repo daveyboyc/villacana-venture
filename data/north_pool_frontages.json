@@ -105,6 +105,18 @@
    "turn": 30,
    "note": "Small table and chairs in front of the house with the blue striped awning (IMG_2204 x 700-750).",
    "evidence": ["IMG_2204.jpg"]
+  },
+  {
+   "id": "west-patio-parasol",
+   "kind": "parasol",
+   "open": true,
+   "colour": "#b4b0c6",
+   "at": [-183.5, 32.5],
+   "turn": 20,
+   "note": "Lilac-grey parasol over the terracotta patio behind the east wall (IMG_2206 x 530-650, y 770-855); its canopy about 2.1 m up; the pole foot is hidden.",
+   "evidence": ["IMG_2206.jpg"],
+   "height": 2.0,
+   "size": 1.1
   }
  ],
  "awnings": [
@@ -178,6 +190,16 @@
    "note": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150). Moved 0.6 m east after review: both cameras cast the photographed plant here (IMG_2205 x 370-467).",
    "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"],
    "from": 1.6
+  },
+  {
+   "id": "west-patio-bougainvillea",
+   "at": [-183.3, 30.7],
+   "on": "patio-wall",
+   "from": 0.9,
+   "height": 3.2,
+   "spread": 2.6,
+   "note": "Magenta bougainvillea rising above the south-east patio wall near its white pier (IMG_2206 x 640-860, y 670-780): on the wall's plane through the solved camera it stands 3.0-4.4 m up, above the 2.9 m wall top, so it grows inside the patio behind the wall.",
+   "evidence": ["IMG_2206.jpg", "IMG_2208.jpg"]
   }
  ],
  "arches": [
@@ -198,5 +220,45 @@
   "facing": [0.5, 0.866],
   "note": "Pool-facing house fronts of the north row and the north-west terrace house, photographed from the roof station (IMG_2204, IMG_2205): the awnings and climbers there are the ones listed here, so the generated awnings and climbers are left out on these walls; generated balconies and porch roofs stay.",
   "evidence": ["IMG_2204.jpg", "IMG_2205.jpg"]
- }
+ },
+ "gates": [
+  {
+   "id": "west-patio-gate-1",
+   "at": [-187.0, 31.08],
+   "along": [0.0, -1.0],
+   "width": 1.0,
+   "height": 1.6,
+   "wall": 1.9,
+   "rise": 0.22,
+   "colour": "#5b3a22",
+   "note": "Brown plank gate in the west wall of the walled patio (IMG_2206 x 540-605), under a capping that rises over it; 1.0 m wide, top about 1.6 m above the ground, measured on the wall plane through the solved camera.",
+   "evidence": ["IMG_2206.jpg", "IMG_2208.jpg"]
+  },
+  {
+   "id": "west-patio-gate-2",
+   "at": [-182.37, 31.22],
+   "along": [0.5524, 0.8336],
+   "width": 0.9,
+   "height": 1.45,
+   "wall": 1.7,
+   "rise": 0.25,
+   "colour": "#5b3a22",
+   "note": "Brown plank gate in the east patio wall (IMG_2206 x 695-735), under a raised capping; on the wall's plane through the solved camera it measures 0.88 m wide with its foot at the ground.",
+   "evidence": ["IMG_2206.jpg", "IMG_2208.jpg"]
+  }
+ ],
+ "replacesGardenWalls": [
+  {
+   "box": [-188.2, 28.6, -179.0, 33.2],
+   "note": "The generated low garden walls and gates here give way to the photographed patio walls (data/ground_plan_north_pool.json north-pool-west-gated-patio) and gates above.",
+   "evidence": ["IMG_2206.jpg"],
+   "id": "west-gated-patio"
+  },
+  {
+   "id": "calle-isabel-paving",
+   "box": [-163.6, 11.5, -160.4, 16.5],
+   "note": "IMG_2205 (x 900-1100, y 600-660) shows open crazy paving here along Calle Isabel up to the iron gate, with the feathery tree's trunk and the yucca: the generated low wall, its hedge and white arched gate are left out.",
+   "evidence": ["IMG_2205.jpg"]
+  }
+ ]
 }
