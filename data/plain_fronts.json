@@ -77,7 +77,47 @@
    ],
    "noPorches": true,
    "noOpenings": false,
-   "trust": "The recessed front east of the porch house, between registry corners (-170.69, 1.45) and (-166.83, -0.9): IMG_2205 (x 700-850) and IMG_2204 (x 1480-1600) show shuttered windows and the feathery tree's canopy there, with no balcony or porch roof; the generated wooden balcony stood out from it. The photographed porch balcony is on the next face west, above the white awning.",
+   "trust": "The recessed front east of the porch house, between registry corners (-170.69, 1.45) and (-166.83, -0.9): IMG_2205 (x 700-850) and IMG_2204 (x 1480-1600) show shuttered windows and the feathery tree's canopy there; the generated iron railing and awning on it are left out. The photographed porch balcony is on the next face west, above the white awning.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north-pool-north-row-return",
+   "box": [
+    -167.3,
+    -1.3,
+    -163.7,
+    3.9
+   ],
+   "facing": [
+    -0.856,
+    0.517
+   ],
+   "noPorches": true,
+   "noOpenings": false,
+   "trust": "The return face of the east block, from (-166.83, -0.9) to (-164.15, 3.54), facing the recess: IMG_2205 (x 808-940, y 330-440) and IMG_2204 (x 1550-1600) show plain wall with windows there, no wooden balcony or tiled porch roof; the generated wooden balcony stood out from it (found by the independent review).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "north-pool-parasol-house",
+   "box": [
+    -182.0,
+    3.3,
+    -173.9,
+    8.4
+   ],
+   "facing": [
+    0.513,
+    0.858
+   ],
+   "noPorches": true,
+   "noOpenings": false,
+   "trust": "The pool-facing front of the parasol house, from (-174.06, 3.53) to (-181.78, 8.14): IMG_2205 (x 343-485, y 398-438) and IMG_2204 (x 1028-1165, y 392-430) show a moulded white sill and bougainvillea, not an iron balcony; the generated balcony is left out. Its grey awning is in data/north_pool_frontages.json.",
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"

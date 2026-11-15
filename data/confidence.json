@@ -618,6 +618,18 @@
   "north_pool_frontages.json:np-alley-arch": {
    "level": "photographed",
    "why": "White arched canopy over the alley mouth in IMG_2204, spanning between the two registry house corners; its height and curve are estimated."
+  },
+  "plain_fronts.json:north-pool-north-row-return": {
+   "level": "photographed",
+   "why": "IMG_2205 and IMG_2204 show this return face plain, with windows and no balcony."
+  },
+  "plain_fronts.json:north-pool-parasol-house": {
+   "level": "photographed",
+   "why": "IMG_2205 and IMG_2204 show a moulded sill and bougainvillea on this front, no iron balcony."
+  },
+  "plain_fronts.json:north-pool-north-row-recess": {
+   "level": "photographed",
+   "why": "IMG_2205 and IMG_2204 show shuttered windows on the recessed front, no balcony or awning."
   }
  },
  "gaps": [

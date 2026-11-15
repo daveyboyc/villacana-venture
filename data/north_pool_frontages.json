@@ -9,7 +9,8 @@
    "at": [-179.6, 7.9],
    "turn": 30,
    "note": "Large grey-white square parasol over the loungers in front of the west house of the north patios (IMG_2205 x 245-370, IMG_2204 x 935-1050); its pole foot is hidden and estimated below the canopy, about 1 m out from the wall.",
-   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"],
+   "colour": "#9da3a9"
   },
   {
    "id": "np-patio-loungers",
@@ -40,7 +41,7 @@
    "id": "np-patio-dining-a",
    "kind": "dining-set",
    "seats": 6,
-   "at": [-175.2, 5.4],
+   "at": [-174.6, 5.3],
    "turn": 30,
    "note": "White dining table with six chairs under the grey awning (IMG_2205 x 510-560, IMG_2204 x 1180-1265).",
    "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
@@ -93,7 +94,7 @@
    "id": "nw-terrace-folded-parasol",
    "kind": "parasol",
    "open": false,
-   "at": [-192.3, 15.9],
+   "at": [-191.7, 15.9],
    "note": "Folded white parasol by the house wall (IMG_2204 x 375-395); its cast foot falls just inside the registry house, so it stands against the wall.",
    "evidence": ["IMG_2204.jpg"]
   },
@@ -119,7 +120,8 @@
    "colour": "#1f4e8c",
    "stripes": "#f4f1e8",
    "note": "Blue and white striped awning over the ground-floor doors of the house facing the north-west terrace (IMG_2204 x 645-800): that registry front projects onto x 631-795 through the solved camera.",
-   "evidence": ["IMG_2204.jpg"]
+   "evidence": ["IMG_2204.jpg"],
+   "drop": 0.95
   },
   {
    "id": "np-awning-grey",
@@ -130,9 +132,10 @@
    "out": [0.513, 0.858],
    "height": 2.5,
    "depth": 2.4,
-   "colour": "#c4c3bb",
+   "colour": "#8e8e8a",
    "note": "Grey retractable awning over the dining set (IMG_2205 x 440-560); its wall projects onto x 448-562.",
-   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"],
+   "drop": 0.95
   },
   {
    "id": "np-awning-white",
@@ -144,8 +147,9 @@
    "height": 2.5,
    "depth": 2.6,
    "colour": "#efece2",
-   "note": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689.",
-   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+   "note": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689. The photographed awning runs about 0.7 m further east, past the end of this face; it is drawn on the face only.",
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"],
+   "drop": 0.95
   }
  ],
  "climbers": [
@@ -153,7 +157,7 @@
    "id": "np-bougainvillea-1",
    "at": [-187.2, 11.1],
    "height": 3.4,
-   "spread": 1.6,
+   "spread": 2.4,
    "note": "Magenta bougainvillea climbing the west end of the blue-awning house (IMG_2204 x 585-670).",
    "evidence": ["IMG_2204.jpg"]
   },
@@ -161,29 +165,30 @@
    "id": "np-bougainvillea-2",
    "at": [-184.5, 9.42],
    "height": 4.6,
-   "spread": 1.4,
+   "spread": 2.4,
    "note": "Bougainvillea up to the first floor at the alley corner (IMG_2204 x 770-850).",
    "evidence": ["IMG_2204.jpg"]
   },
   {
    "id": "np-bougainvillea-3",
-   "at": [-178.4, 6.15],
+   "at": [-177.8, 5.76],
    "height": 4.2,
-   "spread": 1.5,
-   "note": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150).",
+   "spread": 2.4,
+   "note": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150). Moved 0.6 m east after review: both cameras cast the photographed plant here (IMG_2205 x 370-467).",
    "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
   }
  ],
  "arches": [
   {
    "id": "np-alley-arch",
-   "from": [-184.28, 9.32],
+   "from": [-183.45, 8.93],
    "to": [-181.78, 8.14],
-   "height": 2.6,
-   "rise": 0.35,
-   "depth": 0.7,
-   "note": "White arched canopy over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-915), spanning between the two registry house corners.",
-   "evidence": ["IMG_2204.jpg"]
+   "height": 3.4,
+   "rise": 0.4,
+   "depth": 0.9,
+   "note": "Thin white curved canopy on slim posts over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-922); both station cameras put its west end about 0.8 m east of the terrace house corner, its top at about 3.8 m. Its east post stands at the patio house corner.",
+   "evidence": ["IMG_2204.jpg"],
+   "style": "canopy"
   }
  ],
  "photographedFrontage": {

@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 463,
+  "features": 465,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 209
+  "modelFeaturesWithPhotoCitations": 211
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1023,6 +1023,8 @@
     "ground_plan_north_pool.json:north-pool-lawn-path",
     "ground_plan_north_pool.json:calle-isabel-crazy-paving",
     "plain_fronts.json:north-pool-north-row-recess",
+    "plain_fronts.json:north-pool-north-row-return",
+    "plain_fronts.json:north-pool-parasol-house",
     "north_pool_frontages.json:np-patio-parasol",
     "north_pool_frontages.json:np-patio-loungers",
     "north_pool_frontages.json:np-patio-armchair",
@@ -1081,6 +1083,8 @@
     "ground_plan_north_pool.json:calle-isabel-crazy-paving",
     "plain_fronts.json:north-pool-station-row",
     "plain_fronts.json:north-pool-north-row-recess",
+    "plain_fronts.json:north-pool-north-row-return",
+    "plain_fronts.json:north-pool-parasol-house",
     "plain_fronts.json:north-pool-station-parapet",
     "north_pool_frontages.json:np-patio-parasol",
     "north_pool_frontages.json:np-patio-loungers",

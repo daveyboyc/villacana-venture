@@ -55,7 +55,8 @@ for a in d['awnings']:
 for c in d['climbers']:
     assert on_front(c['at']), f"{c['id']}: not on a registry front"
 for a in d['arches']:
-    assert on_front(a['from']) and on_front(a['to']), f"{a['id']}: ends are not on registry corners"
+    tol = 1.0 if a.get('style') == 'canopy' else 0.1  # a canopy's posts may stand off the walls
+    assert on_front(a['from'], tol) and on_front(a['to'], tol), f"{a['id']}: ends are not at registry house corners"
     assert 1.5 <= math.dist(a['from'], a['to']) <= 4.5, a['id']
 f = d['photographedFrontage']
 assert all(e in photos for e in f['evidence']) and abs(math.hypot(*f['facing']) - 1) < 0.01

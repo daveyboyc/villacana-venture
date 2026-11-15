@@ -13,10 +13,10 @@ import type { Vec2 } from "./types";
  * in Layout; the rest is detail and shows with Show details.
  */
 
-type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean };
-type Awning = { id: string; wall: number[][]; out: number[]; height: number; depth: number; colour: string; stripes?: string };
+type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean; colour?: string };
+type Awning = { id: string; wall: number[][]; out: number[]; height: number; depth: number; colour: string; stripes?: string; drop?: number };
 type Climber = { id: string; at: number[]; height: number; spread: number };
-type Arch = { id: string; from: number[]; to: number[]; height: number; rise: number; depth: number };
+type Arch = { id: string; from: number[]; to: number[]; height: number; rise: number; depth: number; style?: "arch" | "canopy" };
 
 /**
  * A pool-facing wall in the photographed north frontage (data/north_pool_frontages.json): its awnings and
@@ -106,7 +106,7 @@ function stripedTexture(colour: string, stripe: string): THREE.CanvasTexture {
 function awning(a: Awning): THREE.Group {
   const g = new THREE.Group(); g.name = a.id;
   const [ax, az] = a.wall[0], [bx, bz] = a.wall[1];
-  const width = Math.hypot(bx - ax, bz - az), drop = 0.45;
+  const width = Math.hypot(bx - ax, bz - az), drop = a.drop ?? 0.45;
   const mat = new THREE.MeshStandardMaterial({ color: a.stripes ? "#ffffff" : a.colour, roughness: 0.85, side: THREE.DoubleSide });
   if (a.stripes) { const t = stripedTexture(a.colour, a.stripes); t.repeat.set(width / 1.2, 1); mat.map = t; }
   const slope = Math.hypot(a.depth, drop);
@@ -130,6 +130,19 @@ export function addNorthPoolFrontageStructure(scene: THREE.Scene): void {
     const [ax, az] = a.from, [bx, bz] = a.to, span = Math.hypot(bx - ax, bz - az);
     const g = new THREE.Group(); g.name = a.id; g.userData.noDrape = true; g.userData.structural = true;
     const base = Math.min(floorY(ax, az), floorY(bx, bz));
+    if (a.style === "canopy") {
+      // A thin curved white canopy on two slim posts, as photographed over the alley mouth.
+      const half = span / 2, r = (half * half + a.rise * a.rise) / (2 * a.rise), th = Math.asin(half / r);
+      const shell = new THREE.Mesh(new THREE.CylinderGeometry(r, r, a.depth, 24, 1, true, -th, 2 * th), plaster);
+      shell.material = plaster.clone(); (shell.material as THREE.MeshStandardMaterial).side = THREE.DoubleSide;
+      shell.rotation.z = Math.PI / 2; shell.rotation.x = Math.PI / 2; shell.position.y = a.height + a.rise - r;
+      const ring = new THREE.Group(); ring.add(shell); ring.rotation.y = Math.PI / 2; g.add(ring);
+      for (const s of [-1, 1]) g.add(box(0.09, a.height, 0.09, plaster, s * (half - 0.05), a.height / 2, 0));
+      g.position.set((ax + bx) / 2, base, (az + bz) / 2);
+      g.rotation.y = -Math.atan2(bz - az, bx - ax);
+      scene.add(g);
+      continue;
+    }
     // An arched band: a flat-topped slab with a segmental arch cut from its underside.
     const shape = new THREE.Shape();
     const top = a.height + a.rise + 0.25, half = span / 2;
@@ -153,11 +166,14 @@ export function addNorthPoolFrontageStructure(scene: THREE.Scene): void {
 export function addNorthPoolFrontageDetails(scene: THREE.Scene): void {
   const m = white(), canvas = new THREE.MeshStandardMaterial({ color: "#e9e7df", roughness: 0.9, side: THREE.DoubleSide });
   for (const f of data.furniture as Furniture[]) {
-    const g = piece(f, m, canvas);
+    const g = piece(f, m, f.colour ? new THREE.MeshStandardMaterial({ color: f.colour, roughness: 0.9, side: THREE.DoubleSide }) : canvas);
     const [x, z] = f.at as Vec2;
     g.position.set(x, floorY(x, z), z); g.rotation.y = ((f.turn ?? 0) * Math.PI) / 180;
     g.name = f.id; g.userData.noDrape = true; scene.add(g);
   }
   for (const a of data.awnings as Awning[]) { const g = awning(a); g.userData.noDrape = true; scene.add(g); }
-  addSprites(scene, "bougainvillea", (data.climbers as Climber[]).map((c) => ({ x: c.at[0], z: c.at[1], y: floorY(c.at[0], c.at[1]) + c.height - 1.3, scale: c.spread / 2.6 })));
+  // The bougainvillea sprite is 2.6 m square: each climber runs from about 1 m above its floor up to its photographed height.
+  const before = scene.children.length;
+  addSprites(scene, "bougainvillea", (data.climbers as Climber[]).map((c) => ({ x: c.at[0], z: c.at[1], y: floorY(c.at[0], c.at[1]) + 1.0, scale: Math.max(c.spread, c.height - 1.0) / 2.6 })));
+  for (const child of scene.children.slice(before)) child.userData.noDrape = true;
 }

@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 463,
+  "features": 465,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 209
+  "modelFeaturesWithPhotoCitations": 211
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3955,7 +3955,27 @@
    "id": "plain_fronts.json:north-pool-north-row-recess",
    "name": "north pool north row recess",
    "kind": "reference feature",
-   "source": "The recessed front east of the porch house, between registry corners (-170.69, 1.45) and (-166.83, -0.9): IMG_2205 (x 700-850) and IMG_2204 (x 1480-1600) show shuttered windows and the feathery tree's canopy there, with no balcony or porch roof; the generated wooden balcony stood out from it. The photographed porch balcony is on the next face west, above the white awning.",
+   "source": "The recessed front east of the porch house, between registry corners (-170.69, 1.45) and (-166.83, -0.9): IMG_2205 (x 700-850) and IMG_2204 (x 1480-1600) show shuttered windows and the feathery tree's canopy there; the generated iron railing and awning on it are left out. The photographed porch balcony is on the next face west, above the white awning.",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "plain_fronts.json:north-pool-north-row-return",
+   "name": "north pool north row return",
+   "kind": "reference feature",
+   "source": "The return face of the east block, from (-166.83, -0.9) to (-164.15, 3.54), facing the recess: IMG_2205 (x 808-940, y 330-440) and IMG_2204 (x 1550-1600) show plain wall with windows there, no wooden balcony or tiled porch roof; the generated wooden balcony stood out from it (found by the independent review).",
+   "evidence": [
+    "IMG_2205.jpg",
+    "IMG_2204.jpg"
+   ]
+  },
+  {
+   "id": "plain_fronts.json:north-pool-parasol-house",
+   "name": "north pool parasol house",
+   "kind": "reference feature",
+   "source": "The pool-facing front of the parasol house, from (-174.06, 3.53) to (-181.78, 8.14): IMG_2205 (x 343-485, y 398-438) and IMG_2204 (x 1028-1165, y 392-430) show a moulded white sill and bougainvillea, not an iron balcony; the generated balcony is left out. Its grey awning is in data/north_pool_frontages.json.",
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"
@@ -4119,7 +4139,7 @@
    "id": "north_pool_frontages.json:np-bougainvillea-3",
    "name": "np bougainvillea 3",
    "kind": "reference feature",
-   "source": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150).",
+   "source": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150). Moved 0.6 m east after review: both cameras cast the photographed plant here (IMG_2205 x 370-467).",
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"
@@ -4148,7 +4168,7 @@
    "id": "north_pool_frontages.json:np-awning-white",
    "name": "np awning white",
    "kind": "reference feature",
-   "source": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689.",
+   "source": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689. The photographed awning runs about 0.7 m further east, past the end of this face; it is drawn on the face only.",
    "evidence": [
     "IMG_2205.jpg",
     "IMG_2204.jpg"
@@ -4158,7 +4178,7 @@
    "id": "north_pool_frontages.json:np-alley-arch",
    "name": "np alley arch",
    "kind": "reference feature",
-   "source": "White arched canopy over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-915), spanning between the two registry house corners.",
+   "source": "Thin white curved canopy on slim posts over the mouth of the alley between the north-west terrace house and the north patios (IMG_2204 x 835-922); both station cameras put its west end about 0.8 m east of the terrace house corner, its top at about 3.8 m. Its east post stands at the patio house corner.",
    "evidence": [
     "IMG_2204.jpg"
    ]
@@ -8388,6 +8408,18 @@
   },
   {
    "from": "photo:IMG_2204.jpg",
+   "to": "plain_fronts.json:north-pool-north-row-return",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
+   "to": "plain_fronts.json:north-pool-parasol-house",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
    "to": "north_pool_frontages.json:np-patio-parasol",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8559,6 +8591,18 @@
   {
    "from": "photo:IMG_2205.jpg",
    "to": "plain_fronts.json:north-pool-north-row-recess",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "plain_fronts.json:north-pool-north-row-return",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "plain_fronts.json:north-pool-parasol-house",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

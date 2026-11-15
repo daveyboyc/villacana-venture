@@ -42,8 +42,10 @@ station (IMG_2204, IMG_2205) looks straight at.
     the solved camera: x 631-795 for the blue awning, 448-562 for the grey and 600-689 for the white.
   - Furniture is placed along the wall from the photo, at the distance from the wall the photo shows.
   - Generated awnings and climbers are left out on these photographed fronts.
-- **`data/plain_fronts.json`:** the recessed front east of the porch house is now plain; its generated
-  balcony is gone.
+- **`data/plain_fronts.json`:** three fronts are now photo-plain.
+  - The recessed front east of the porch house loses its generated iron railing and awning.
+  - The east block's return face facing the recess loses its generated wooden balcony with tiled roof.
+  - The parasol house's pool front loses its generated iron balcony; the photos show a moulded sill there.
 - **`data/objects.json`:** the pollarded tree o12 moves 2.3 m east, where both cameras put its trunk. It
   stands on the patio (new `onTerrace` flag). The feathery lawn tree o9 moves to its cast position, but
   the route-clearance guard still drops it (`gap:north-pool-lawn-tree`).
@@ -66,3 +68,22 @@ station (IMG_2204, IMG_2205) looks straight at.
   rendered through the solved cameras with Show details. The "before" renders are of `main` before this
   change.
 - `north-row-layout.png`, `north-row-details.png`: Inspect, Layout and Show details, from the pool.
+
+## Independent review and fixes
+
+A second agent reviewed the first renders and found them not satisfactory (`REVIEW.md`). This was fixed
+afterwards:
+- **Balconies:** the wooden balcony was on the return face, not the face first made plain. The parasol
+  house's front also had a generated iron balcony. Both are now photo-plain.
+- **Hedges:** they were blocky cushions that broke at every corner and ran past the first step. They are
+  now laid along one polyline through the planted edges, broken only at the steps. They are about 0.85 m
+  high and sit right behind the wall.
+- **Bougainvillea:** it was small and too high. It now climbs from about 1 m above the floor to its
+  photographed height, and the third plant moves 0.6 m east to where both cameras cast it.
+- **Colours:** the grey awning (`#8e8e8a`) and the parasol (`#9da3a9`) are now grey, as photographed.
+- **Alley arch:** it was a solid masonry arch. It is now a thin curved canopy on slim posts, about 3.8 m
+  high, with its west post about 0.8 m east of the terrace house corner.
+- **Small moves:** dining set A moves 0.6 m east, the folded parasol 0.6 m east, and the awnings drop
+  further (0.95 m).
+- **Not changed:** the white awning still runs only along its face; the photo shows about 0.7 m more to
+  the east.
