@@ -1,0 +1,1196 @@
+{
+ "about": "Coping water-edge picks cast through the solved cameras onto the deck level; distances in metres to the registry ring (before) and the corrected ring (after). Written by scripts/measure_pool_ring.py.",
+ "pools": {
+  "north": {
+   "level": 0.82,
+   "summary": {
+    "excluded": {
+     "IMG_2206.jpg": {
+      "before": {
+       "n": 1,
+       "rms": 0.441,
+       "worst": 0.441
+      },
+      "after": {
+       "n": 1,
+       "rms": 0.407,
+       "worst": 0.407
+      }
+     },
+     "all": {
+      "before": {
+       "n": 1,
+       "rms": 0.441,
+       "worst": 0.441
+      },
+      "after": {
+       "n": 1,
+       "rms": 0.407,
+       "worst": 0.407
+      }
+     }
+    },
+    "fit": {
+     "IMG_2204.jpg": {
+      "before": {
+       "n": 18,
+       "rms": 0.736,
+       "worst": 1.431
+      },
+      "after": {
+       "n": 18,
+       "rms": 0.159,
+       "worst": 0.292
+      }
+     },
+     "IMG_2205.jpg": {
+      "before": {
+       "n": 12,
+       "rms": 0.551,
+       "worst": 0.86
+      },
+      "after": {
+       "n": 12,
+       "rms": 0.09,
+       "worst": 0.186
+      }
+     },
+     "IMG_2206.jpg": {
+      "before": {
+       "n": 9,
+       "rms": 0.614,
+       "worst": 1.184
+      },
+      "after": {
+       "n": 9,
+       "rms": 0.163,
+       "worst": 0.283
+      }
+     },
+     "all": {
+      "before": {
+       "n": 39,
+       "rms": 0.656,
+       "worst": 1.431
+      },
+      "after": {
+       "n": 39,
+       "rms": 0.142,
+       "worst": 0.292
+      }
+     }
+    },
+    "held-out": {
+     "IMG_2204.jpg": {
+      "before": {
+       "n": 4,
+       "rms": 0.565,
+       "worst": 0.983
+      },
+      "after": {
+       "n": 4,
+       "rms": 0.206,
+       "worst": 0.259
+      }
+     },
+     "IMG_2205.jpg": {
+      "before": {
+       "n": 4,
+       "rms": 0.431,
+       "worst": 0.825
+      },
+      "after": {
+       "n": 4,
+       "rms": 0.088,
+       "worst": 0.135
+      }
+     },
+     "IMG_2206.jpg": {
+      "before": {
+       "n": 1,
+       "rms": 0.705,
+       "worst": 0.705
+      },
+      "after": {
+       "n": 1,
+       "rms": 0.277,
+       "worst": 0.277
+      }
+     },
+     "all": {
+      "before": {
+       "n": 9,
+       "rms": 0.529,
+       "worst": 0.983
+      },
+      "after": {
+       "n": 9,
+       "rms": 0.176,
+       "worst": 0.277
+      }
+     }
+    },
+    "unchanged": {
+     "IMG_2204.jpg": {
+      "before": {
+       "n": 9,
+       "rms": 0.352,
+       "worst": 0.449
+      },
+      "after": {
+       "n": 9,
+       "rms": 0.351,
+       "worst": 0.428
+      }
+     },
+     "IMG_2205.jpg": {
+      "before": {
+       "n": 10,
+       "rms": 0.126,
+       "worst": 0.201
+      },
+      "after": {
+       "n": 10,
+       "rms": 0.107,
+       "worst": 0.201
+      }
+     },
+     "all": {
+      "before": {
+       "n": 19,
+       "rms": 0.259,
+       "worst": 0.449
+      },
+      "after": {
+       "n": 19,
+       "rms": 0.254,
+       "worst": 0.428
+      }
+     }
+    }
+   },
+   "picks": [
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "east tongue corner",
+     "pixel": [
+      404.25,
+      820
+     ],
+     "point": [
+      -174.58,
+      20.24
+     ],
+     "before": 0.721,
+     "after": 0.089
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "east tongue corner",
+     "pixel": [
+      409,
+      826
+     ],
+     "point": [
+      -174.47,
+      20.42
+     ],
+     "before": 0.655,
+     "after": 0.137
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "east tongue north end",
+     "pixel": [
+      550,
+      739.5
+     ],
+     "point": [
+      -172.99,
+      17.03
+     ],
+     "before": 0.577,
+     "after": 0.186
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "east tongue north end",
+     "pixel": [
+      557.5,
+      741
+     ],
+     "point": [
+      -172.86,
+      17.09
+     ],
+     "before": 0.501,
+     "after": 0.043
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      586,
+      724
+     ],
+     "point": [
+      -172.48,
+      16.26
+     ],
+     "before": 0.094,
+     "after": 0.165
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      589,
+      733
+     ],
+     "point": [
+      -172.38,
+      16.69
+     ],
+     "before": 0.006,
+     "after": 0.044
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      560,
+      742
+     ],
+     "point": [
+      -172.81,
+      17.13
+     ],
+     "before": 0.453,
+     "after": 0.018
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      137,
+      896.25
+     ],
+     "point": [
+      -177.2,
+      22.53
+     ],
+     "before": 0.86,
+     "after": 0.021
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      107.5,
+      895
+     ],
+     "point": [
+      -177.56,
+      22.51
+     ],
+     "before": 0.854,
+     "after": 0.026
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      130,
+      907.5
+     ],
+     "point": [
+      -177.16,
+      22.8
+     ],
+     "before": 0.615,
+     "after": 0.033
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      110,
+      927.5
+     ],
+     "point": [
+      -177.17,
+      23.27
+     ],
+     "before": 0.211,
+     "after": 0.001
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      96,
+      940
+     ],
+     "point": [
+      -177.2,
+      23.55
+     ],
+     "before": 0.041,
+     "after": 0.042
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "held-out",
+     "label": "east tongue edge",
+     "pixel": [
+      450,
+      796.25
+     ],
+     "point": [
+      -174.13,
+      19.4
+     ],
+     "before": 0.212,
+     "after": 0.003
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "held-out",
+     "label": "east tongue edge",
+     "pixel": [
+      500,
+      767.5
+     ],
+     "point": [
+      -173.6,
+      18.27
+     ],
+     "before": 0.043,
+     "after": 0.098
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "held-out",
+     "label": "east tongue edge",
+     "pixel": [
+      530,
+      751.25
+     ],
+     "point": [
+      -173.24,
+      17.57
+     ],
+     "before": 0.121,
+     "after": 0.135
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "held-out",
+     "label": "south-west tongue north edge",
+     "pixel": [
+      82.5,
+      897.5
+     ],
+     "point": [
+      -177.82,
+      22.58
+     ],
+     "before": 0.825,
+     "after": 0.055
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      480,
+      698
+     ],
+     "point": [
+      -174.51,
+      15.09
+     ],
+     "before": 0.078,
+     "after": 0.078
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      520,
+      703
+     ],
+     "point": [
+      -173.76,
+      15.3
+     ],
+     "before": 0.076,
+     "after": 0.076
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      550,
+      708
+     ],
+     "point": [
+      -173.2,
+      15.51
+     ],
+     "before": 0.133,
+     "after": 0.133
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      570,
+      713
+     ],
+     "point": [
+      -172.82,
+      15.74
+     ],
+     "before": 0.192,
+     "after": 0.115
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the east tongue",
+     "pixel": [
+      450,
+      832.5
+     ],
+     "point": [
+      -173.87,
+      20.6
+     ],
+     "before": 0.149,
+     "after": 0.058
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the east tongue",
+     "pixel": [
+      477.5,
+      842.5
+     ],
+     "point": [
+      -173.44,
+      20.89
+     ],
+     "before": 0.091,
+     "after": 0.099
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the east tongue",
+     "pixel": [
+      495,
+      852.5
+     ],
+     "point": [
+      -173.15,
+      21.18
+     ],
+     "before": 0.201,
+     "after": 0.201
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the south-west tongue",
+     "pixel": [
+      93.75,
+      960
+     ],
+     "point": [
+      -177.02,
+      23.96
+     ],
+     "before": 0.09,
+     "after": 0.071
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the south-west tongue",
+     "pixel": [
+      100,
+      980
+     ],
+     "point": [
+      -176.77,
+      24.36
+     ],
+     "before": 0.103,
+     "after": 0.103
+    },
+    {
+     "photo": "IMG_2205.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the south-west tongue",
+     "pixel": [
+      115,
+      997.5
+     ],
+     "point": [
+      -176.47,
+      24.68
+     ],
+     "before": 0.058,
+     "after": 0.058
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "east tongue corner",
+     "pixel": [
+      1046.25,
+      796.25
+     ],
+     "point": [
+      -174.5,
+      20.03
+     ],
+     "before": 0.611,
+     "after": 0.017
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "east tongue corner",
+     "pixel": [
+      1051.25,
+      802.5
+     ],
+     "point": [
+      -174.38,
+      20.21
+     ],
+     "before": 0.52,
+     "after": 0.091
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "east tongue north end",
+     "pixel": [
+      1200,
+      742.5
+     ],
+     "point": [
+      -172.89,
+      16.75
+     ],
+     "before": 0.498,
+     "after": 0.266
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "east tongue north end",
+     "pixel": [
+      1210,
+      747
+     ],
+     "point": [
+      -172.71,
+      16.86
+     ],
+     "before": 0.369,
+     "after": 0.06
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      1236.7,
+      730
+     ],
+     "point": [
+      -172.44,
+      15.87
+     ],
+     "before": 0.375,
+     "after": 0.109
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      1243,
+      738
+     ],
+     "point": [
+      -172.29,
+      16.18
+     ],
+     "before": 0.294,
+     "after": 0.036
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      1240.8,
+      743.3
+     ],
+     "point": [
+      -172.29,
+      16.44
+     ],
+     "before": 0.17,
+     "after": 0.015
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "ladder pocket",
+     "pixel": [
+      1210,
+      747.5
+     ],
+     "point": [
+      -172.71,
+      16.89
+     ],
+     "before": 0.372,
+     "after": 0.042
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      817,
+      817
+     ],
+     "point": [
+      -177.12,
+      22.31
+     ],
+     "before": 1.088,
+     "after": 0.247
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      798,
+      810
+     ],
+     "point": [
+      -177.46,
+      22.25
+     ],
+     "before": 1.113,
+     "after": 0.291
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      812,
+      823
+     ],
+     "point": [
+      -177.1,
+      22.52
+     ],
+     "before": 0.903,
+     "after": 0.104
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      802,
+      836
+     ],
+     "point": [
+      -177.04,
+      22.93
+     ],
+     "before": 0.563,
+     "after": 0.145
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      788,
+      844
+     ],
+     "point": [
+      -177.1,
+      23.23
+     ],
+     "before": 0.288,
+     "after": 0.076
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      781,
+      854
+     ],
+     "point": [
+      -177.05,
+      23.53
+     ],
+     "before": 0.186,
+     "after": 0.107
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      688,
+      828
+     ],
+     "point": [
+      -178.51,
+      23.49
+     ],
+     "before": 0.607,
+     "after": 0.153
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      713,
+      811
+     ],
+     "point": [
+      -178.48,
+      22.87
+     ],
+     "before": 0.921,
+     "after": 0.141
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      738,
+      794
+     ],
+     "point": [
+      -178.45,
+      22.21
+     ],
+     "before": 1.431,
+     "after": 0.292
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      754,
+      802
+     ],
+     "point": [
+      -178.12,
+      22.33
+     ],
+     "before": 1.177,
+     "after": 0.186
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "held-out",
+     "label": "east tongue edge",
+     "pixel": [
+      1095,
+      775
+     ],
+     "point": [
+      -174.07,
+      18.91
+     ],
+     "before": 0.234,
+     "after": 0.191
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "held-out",
+     "label": "east tongue edge",
+     "pixel": [
+      1145,
+      758.75
+     ],
+     "point": [
+      -173.53,
+      17.89
+     ],
+     "before": 0.039,
+     "after": 0.232
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "held-out",
+     "label": "east tongue edge",
+     "pixel": [
+      1180,
+      747.5
+     ],
+     "point": [
+      -173.13,
+      17.13
+     ],
+     "before": 0.506,
+     "after": 0.259
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "held-out",
+     "label": "south-west tongue north edge",
+     "pixel": [
+      770,
+      809
+     ],
+     "point": [
+      -177.82,
+      22.42
+     ],
+     "before": 0.983,
+     "after": 0.11
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      1150,
+      695
+     ],
+     "point": [
+      -174.09,
+      14.9
+     ],
+     "before": 0.357,
+     "after": 0.357
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      1180,
+      702.5
+     ],
+     "point": [
+      -173.53,
+      15.01
+     ],
+     "before": 0.428,
+     "after": 0.428
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      1200,
+      710
+     ],
+     "point": [
+      -173.15,
+      15.21
+     ],
+     "before": 0.415,
+     "after": 0.415
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "north lobe",
+     "pixel": [
+      1220,
+      718
+     ],
+     "point": [
+      -172.78,
+      15.43
+     ],
+     "before": 0.449,
+     "after": 0.418
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the east tongue",
+     "pixel": [
+      1100,
+      820
+     ],
+     "point": [
+      -173.62,
+      20.42
+     ],
+     "before": 0.153,
+     "after": 0.238
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the east tongue",
+     "pixel": [
+      1130,
+      840
+     ],
+     "point": [
+      -173.11,
+      20.83
+     ],
+     "before": 0.413,
+     "after": 0.418
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the south-west tongue",
+     "pixel": [
+      780,
+      866
+     ],
+     "point": [
+      -176.91,
+      23.82
+     ],
+     "before": 0.247,
+     "after": 0.215
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the south-west tongue",
+     "pixel": [
+      783,
+      880
+     ],
+     "point": [
+      -176.71,
+      24.12
+     ],
+     "before": 0.297,
+     "after": 0.295
+    },
+    {
+     "photo": "IMG_2204.jpg",
+     "role": "unchanged",
+     "label": "south lobe by the south-west tongue",
+     "pixel": [
+      790,
+      894
+     ],
+     "point": [
+      -176.47,
+      24.39
+     ],
+     "before": 0.294,
+     "after": 0.294
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1551.25,
+      907.5
+     ],
+     "point": [
+      -177.28,
+      22.82
+     ],
+     "before": 0.559,
+     "after": 0.092
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1520,
+      895
+     ],
+     "point": [
+      -177.65,
+      22.82
+     ],
+     "before": 0.557,
+     "after": 0.283
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1470,
+      871
+     ],
+     "point": [
+      -178.33,
+      22.72
+     ],
+     "before": 0.948,
+     "after": 0.209
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1380,
+      887.5
+     ],
+     "point": [
+      -178.72,
+      23.93
+     ],
+     "before": 0.628,
+     "after": 0.024
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1440,
+      860
+     ],
+     "point": [
+      -178.72,
+      22.74
+     ],
+     "before": 1.184,
+     "after": 0.102
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1530,
+      918.75
+     ],
+     "point": [
+      -177.28,
+      23.25
+     ],
+     "before": 0.168,
+     "after": 0.107
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1505,
+      928.75
+     ],
+     "point": [
+      -177.32,
+      23.67
+     ],
+     "before": 0.111,
+     "after": 0.175
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1495,
+      935
+     ],
+     "point": [
+      -177.31,
+      23.88
+     ],
+     "before": 0.152,
+     "after": 0.189
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "fit",
+     "label": "south-west tongue",
+     "pixel": [
+      1493.75,
+      945
+     ],
+     "point": [
+      -177.2,
+      24.09
+     ],
+     "before": 0.121,
+     "after": 0.136
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "held-out",
+     "label": "south-west tongue north edge",
+     "pixel": [
+      1491.7,
+      883
+     ],
+     "point": [
+      -178.01,
+      22.8
+     ],
+     "before": 0.705,
+     "after": 0.277
+    },
+    {
+     "photo": "IMG_2206.jpg",
+     "role": "excluded",
+     "label": "ladder recess",
+     "pixel": [
+      1512.5,
+      897.5
+     ],
+     "point": [
+      -177.67,
+      22.94
+     ],
+     "before": 0.441,
+     "after": 0.407
+    }
+   ]
+  }
+ }
+}

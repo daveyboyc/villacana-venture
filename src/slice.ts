@@ -1353,7 +1353,9 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
       case "pump_box": {
         // White plant-room box with louvred sides and a plain lid, as by the pools.
         const sides = new THREE.MeshStandardMaterial({ color: WALL, map: louvreTexture(), roughness: 0.7 });
-        add(new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.5, 0.9), [sides, sides, white, white, sides, sides]), p.x, 0.32, p.z);
+        const box = new THREE.Mesh(new THREE.BoxGeometry(1.1, 0.5, 0.9), [sides, sides, white, white, sides, sides]);
+        box.rotation.y = ((p.turn ?? 0) * Math.PI) / 180;
+        add(box, p.x, 0.32, p.z);
         break;
       }
       case "life_ring": {

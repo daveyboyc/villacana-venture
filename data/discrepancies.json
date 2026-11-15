@@ -7,10 +7,11 @@
       "kind": "placement",
       "description": "Compare the current water/construction/deck edges separately, including the squared deck tongue east of the steps. The approved loop PRD records this difference; measure the current model before correcting it.",
       "sources": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2206.jpg", "map:ground"],
-      "features": ["pool_decks.json:north-deck"],
+      "features": ["pool_decks.json:north-deck", "pool:north"],
       "task": "pool-deck-outline",
-      "status": "open",
-      "requests": []
+      "status": "fixed",
+      "requests": [],
+      "resolution": "15 Nov: both deck tongues corrected as a measured change (data/pool_ring_corrections.json): changed edges 0.14 m rms on 39 picks and 0.18 m rms on 9 held-out picks through IMG_2204-2206, reviewed and approved with notes by a second agent (data/placement_reviews.json measuredApprovals measured-north-pool-ring-tongues; docs/reviews/pool-deck-outline/REVIEW.md)."
     },
     {
       "id": "north-pool-fittings",
@@ -66,6 +67,39 @@
       "task": "north-pool-station-details",
       "status": "open",
       "requests": ["north-pool-gated-patio-gates"]
+    },
+    {
+      "id": "north-pool-ladder-recess",
+      "area": "north-pool",
+      "kind": "completeness",
+      "description": "The south-west deck tongue's north edge has a recess about 0.5-0.6 m wide where the ladder stands (IMG_2205 x 48-100, IMG_2206 x 1475-1510); the corrected ring runs straight across it. Two held-out picks in the ring measurement were interpolated across it (without them held-out is 0.17 m rms, n=7).",
+      "sources": ["IMG_2205.jpg", "IMG_2206.jpg"],
+      "features": ["pool:north"],
+      "task": "pool-deck-outline",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "north-pool-ladder-look",
+      "area": "north-pool",
+      "kind": "appearance",
+      "description": "The pool ladders render as small arcs barely above the coping; IMG_2204 and IMG_2205 show tall goose-neck stainless rails anchored on the deck. Positions now match the photos; the fitting's size or height (pool_ladder in src/slice.ts and src/pool-kit.ts) does not.",
+      "sources": ["IMG_2204.jpg", "IMG_2205.jpg"],
+      "features": ["pool:north"],
+      "task": "pool-deck-outline",
+      "status": "open",
+      "requests": []
+    },
+    {
+      "id": "north-pool-pump-box-look",
+      "area": "north-pool",
+      "kind": "appearance",
+      "description": "The pump box (o4) is now placed and turned as photographed, but the model draws louvres on all four sides where IMG_2204 and IMG_2205 show them on the front-right face only, and it is 1.1 m long against about 1.2 m. The shower post beside it is not modelled.",
+      "sources": ["IMG_2204.jpg", "IMG_2205.jpg"],
+      "features": [],
+      "task": "pool-deck-outline",
+      "status": "open",
+      "requests": []
     }
   ]
 }

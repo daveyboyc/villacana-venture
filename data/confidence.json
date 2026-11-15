@@ -534,6 +534,10 @@
   "plain_fronts.json:north-pool-gated-patio-walls": {
    "level": "photographed",
    "why": "IMG_2206 and IMG_2208 show the low garden walls here as white patio walls with gates and climbers, not hedge; the generated hedge runs on them are left out. The walls' own height, cappings and doors are not yet modelled as photographed (gap:north-pool-gated-patio-walls)."
+  },
+  "pool:north": {
+   "level": "photographed",
+   "why": "Registry water ring with the two deck tongues corrected through the solved IMG_2204-2206 cameras (data/pool_ring_corrections.json): changed edges 0.14 m rms on 39 picks, 0.18 m rms on 9 held-out picks; the rest of the ring agrees with the photos at 0.25 m rms. The south-west tongue's west foot is hidden by planting and estimated."
   }
  },
  "gaps": [

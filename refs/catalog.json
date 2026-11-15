@@ -991,6 +991,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool:north",
    "backdrop.json:photo-trees",
    "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
@@ -1042,6 +1043,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool:north",
    "backdrop.json:photo-trees",
    "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
@@ -1092,6 +1094,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool:north",
    "backdrop.json:photo-trees",
    "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",

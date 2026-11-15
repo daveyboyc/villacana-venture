@@ -161,4 +161,6 @@ export type MapObject = {
   steps?: { form?: "straight" | "curved"; length?: number; wallAt?: Vec2 };
   /** Pool ladders only: draw this fitting instead, where a photo shows a step handrail. */
   fitting?: "ladder" | "step-rail";
+  /** Pump boxes only: degrees turned anticlockwise seen from above, where a photo shows the box set at an angle. */
+  turn?: number;
 };

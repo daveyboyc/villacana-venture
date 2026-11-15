@@ -1,0 +1,31 @@
+{
+ "about": "Measured corrections to registry pool water rings (Dave's measured approval, 2026-11-01; docs/PLACEMENT_VERIFICATION.md). Each correction replaces a run of registry vertices (`from`..`to`, inclusive, in the registry ring's own order, wrapping round) with the points in `with`, in world metres (x east, z south). `hard` lists indices into `with` of corners the photos show square: build_skeleton.py keeps them sharp when it rounds the ring. The water ring's centre stays the registry's. Picks and residuals: scripts/measure_pool_ring.py, docs/reviews/pool-deck-outline.",
+ "pools": [
+  {
+   "id": "north",
+   "registryVertices": 42,
+   "corrections": [
+    {
+     "id": "north-east-tongue",
+     "name": "Deck tongue east of the steps (pump box) and the ladder pocket north of it",
+     "from": 40,
+     "to": 4,
+     "with": [[-172.42, 15.95], [-172.3, 16.25], [-172.31, 16.55], [-172.76, 17.0], [-174.54, 20.13], [-174.42, 20.33], [-173.8, 20.52]],
+     "hard": [2, 3, 4],
+     "trust": "The tongue's water edge is one straight coping run from the ladder pocket's south-west corner to a square corner at about (-174.54, 20.13), seen in IMG_2204 and IMG_2205 through their solved cameras (coping picks cast onto the deck plane at 0.82 m); the two cameras put the corner 0.22 m apart and the pocket corners within 0.25 m. The registry ring stopped the tongue about 0.6 m short with a rounded nose and drew the pocket about 0.5 m too far south.",
+     "evidence": ["IMG_2204.jpg", "IMG_2205.jpg"]
+    },
+    {
+     "id": "north-south-west-tongue",
+     "name": "Deck tongue with the ladder, south-west of the steps",
+     "from": 14,
+     "to": 16,
+     "with": [[-177.18, 23.3], [-177.2, 22.55], [-178.6, 22.5]],
+     "hard": [1, 2],
+     "trust": "A square tongue about 1.4 m wide whose north edge is at z 22.25-22.82 in IMG_2204, IMG_2205 and IMG_2206 (the three solved cameras differ by about 0.25 m each in z; the mean is used), east face at x -177.04 to -177.32 and west face at x -178.45 to -178.72. The registry ring drew a 0.7 m rounded nose ending near z 23.4, about 0.9 m short. The west face's foot, where it meets the west lobe's south wall, is hidden by the strelitzias and keeps the registry vertex (-178.73, 24.72); the small ladder recess in the north edge is not modelled.",
+     "evidence": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2206.jpg"]
+    }
+   ]
+  }
+ ]
+}

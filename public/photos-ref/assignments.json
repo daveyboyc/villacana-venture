@@ -1,6 +1,6 @@
 {
  "version": 1,
- "inputDigest": "712f343aabf9e9426f6f9cd8ce8177d797a17099802905172dc37ec45025ae9b",
+ "inputDigest": "ef827872f547aae55feffff11b690b8d12d8672e9bfba43defcc640032970427",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
@@ -8,7 +8,7 @@
   "photos": 462,
   "features": 442,
   "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 187
+  "modelFeaturesWithPhotoCitations": 188
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -1013,6 +1013,7 @@
     }
    ],
    "citedBy": [
+    "pool:north",
     "backdrop.json:photo-trees",
     "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
@@ -1052,6 +1053,7 @@
     }
    ],
    "citedBy": [
+    "pool:north",
     "backdrop.json:photo-trees",
     "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",
@@ -1097,6 +1099,7 @@
     }
    ],
    "citedBy": [
+    "pool:north",
     "backdrop.json:photo-trees",
     "backdrop.json:aerial-trees",
     "pool_decks.json:north-deck",

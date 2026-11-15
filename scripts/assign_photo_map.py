@@ -38,7 +38,12 @@ def features(s):
         r=next(r for r in s['boundaryReference']['roads'] if r['id']==f['roadId'])
         add('elena_lane_paving.json:'+f['id'],f['name'],'reference feature',f['trust'],points=r['points'],width=r['width'],evidence=f['evidence'])
     for b in s['buildings']:add('building:'+b['id'],b['id'],'building','registry',ring=b['ring'],passage=bool(b.get('passage')),**({'notStanding':True,'evidence':b['notStanding']['evidence']} if b.get('notStanding') else {}))
-    for p in s['pools']:add('pool:'+p['id'],p['id']+' pool','pool','registry',ring=p['ring'])
+    # Pool water rings: the registry's, with measured corrections where photos show it wrong (data/pool_ring_corrections.json).
+    ring_fixes={q['id']:q for q in json.loads((ROOT/'data/pool_ring_corrections.json').read_text())['pools']}
+    for p in s['pools']:
+        fix=ring_fixes.get(p['id'])
+        if fix:add('pool:'+p['id'],p['id']+' pool','pool','registry ring with measured corrections: '+'; '.join(c['name'] for c in fix['corrections']),ring=p['ring'],evidence=sorted({e for c in fix['corrections'] for e in c['evidence']}))
+        else:add('pool:'+p['id'],p['id']+' pool','pool','registry',ring=p['ring'])
     # Trees beyond the resort (data/backdrop.json): picked on rays from the solved north-pool camera, and from the aerial's canopy.
     backdrop=json.loads((ROOT/'data/backdrop.json').read_text())
     add('backdrop.json:photo-trees','Norfolk pines and palms over the north-pool roofs','reference feature','on rays from the solved IMG_2204-2206 camera; distance from each tree\'s usual height',points=[t[1:3] for t in backdrop['trees'] if t[4]=='photo'],evidence=['IMG_2204.jpg','IMG_2205.jpg','IMG_2206.jpg'])

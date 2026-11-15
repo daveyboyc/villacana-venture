@@ -6,10 +6,10 @@
    "id": "north-pool",
    "name": "North pool",
    "counts": {
-    "ready": 3,
+    "ready": 5,
     "needs-evidence": 3,
     "needs-source-access": 0,
-    "awaiting-review": 0,
+    "awaiting-review": 1,
     "accepted": 0
    },
    "discrepancies": [
@@ -25,13 +25,30 @@
       "map:ground"
      ],
      "features": [
-      "pool_decks.json:north-deck"
+      "pool_decks.json:north-deck",
+      "pool:north"
      ],
      "task": "pool-deck-outline",
-     "status": "open",
+     "status": "fixed",
      "requests": [],
-     "state": "ready",
-     "blockers": []
+     "resolution": "15 Nov: both deck tongues corrected as a measured change (data/pool_ring_corrections.json): changed edges 0.14 m rms on 39 picks and 0.18 m rms on 9 held-out picks through IMG_2204-2206, reviewed and approved with notes by a second agent (data/placement_reviews.json measuredApprovals measured-north-pool-ring-tongues; docs/reviews/pool-deck-outline/REVIEW.md).",
+     "state": "awaiting-review",
+     "blockers": [
+      "a different reviewer must inspect the actual sources and comparisons",
+      "review needs date, accepted decision and notes",
+      "review packet digest missing or changed; independent reviewer must attest this exact packet",
+      "review must inspect every declared source at full size",
+      "acceptance snapshot missing or stale; re-render and re-review",
+      "render: file paths must be relative to the public repository",
+      "comparison: file paths must be relative to the public repository",
+      "overlay: file paths must be relative to the public repository",
+      "pool_decks.json:north-deck: current placement approval is required",
+      "pool_decks.json:north-deck: no placement review IDs",
+      "pool:north: current placement approval is required",
+      "pool:north: no placement review IDs",
+      "pool_decks.json:north-deck: placement tolerance exceeds 0.3 m or is absent",
+      "pool:north: placement tolerance exceeds 0.3 m or is absent"
+     ]
     },
     {
      "id": "north-pool-fittings",
@@ -132,6 +149,58 @@
      "blockers": [
       "Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf."
      ]
+    },
+    {
+     "id": "north-pool-ladder-recess",
+     "area": "north-pool",
+     "kind": "completeness",
+     "description": "The south-west deck tongue's north edge has a recess about 0.5-0.6 m wide where the ladder stands (IMG_2205 x 48-100, IMG_2206 x 1475-1510); the corrected ring runs straight across it. Two held-out picks in the ring measurement were interpolated across it (without them held-out is 0.17 m rms, n=7).",
+     "sources": [
+      "IMG_2205.jpg",
+      "IMG_2206.jpg"
+     ],
+     "features": [
+      "pool:north"
+     ],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-pool-ladder-look",
+     "area": "north-pool",
+     "kind": "appearance",
+     "description": "The pool ladders render as small arcs barely above the coping; IMG_2204 and IMG_2205 show tall goose-neck stainless rails anchored on the deck. Positions now match the photos; the fitting's size or height (pool_ladder in src/slice.ts and src/pool-kit.ts) does not.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ],
+     "features": [
+      "pool:north"
+     ],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-pool-pump-box-look",
+     "area": "north-pool",
+     "kind": "appearance",
+     "description": "The pump box (o4) is now placed and turned as photographed, but the model draws louvres on all four sides where IMG_2204 and IMG_2205 show them on the front-right face only, and it is 1.1 m long against about 1.2 m. The shower post beside it is not modelled.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ],
+     "features": [],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -283,15 +352,6 @@
     }
    ],
    "waitingTasks": [
-    {
-     "id": "pool-deck-outline",
-     "title": "North pool: trace the deck outline and squared deck tongue from the solved cameras",
-     "priority": 1,
-     "dependencies": [
-      "pool-detail"
-     ],
-     "requests": []
-    },
     {
      "id": "loop-north-pool-fixes",
      "title": "Photo-to-model loop: close the north-pool discrepancies with measured fixes",
@@ -4503,10 +4563,10 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 3,
+    "ready": 5,
     "needs-evidence": 3,
     "needs-source-access": 0,
-    "awaiting-review": 0,
+    "awaiting-review": 1,
     "accepted": 0
    },
    "discrepancies": [
@@ -4522,13 +4582,30 @@
       "map:ground"
      ],
      "features": [
-      "pool_decks.json:north-deck"
+      "pool_decks.json:north-deck",
+      "pool:north"
      ],
      "task": "pool-deck-outline",
-     "status": "open",
+     "status": "fixed",
      "requests": [],
-     "state": "ready",
-     "blockers": []
+     "resolution": "15 Nov: both deck tongues corrected as a measured change (data/pool_ring_corrections.json): changed edges 0.14 m rms on 39 picks and 0.18 m rms on 9 held-out picks through IMG_2204-2206, reviewed and approved with notes by a second agent (data/placement_reviews.json measuredApprovals measured-north-pool-ring-tongues; docs/reviews/pool-deck-outline/REVIEW.md).",
+     "state": "awaiting-review",
+     "blockers": [
+      "a different reviewer must inspect the actual sources and comparisons",
+      "review needs date, accepted decision and notes",
+      "review packet digest missing or changed; independent reviewer must attest this exact packet",
+      "review must inspect every declared source at full size",
+      "acceptance snapshot missing or stale; re-render and re-review",
+      "render: file paths must be relative to the public repository",
+      "comparison: file paths must be relative to the public repository",
+      "overlay: file paths must be relative to the public repository",
+      "pool_decks.json:north-deck: current placement approval is required",
+      "pool_decks.json:north-deck: no placement review IDs",
+      "pool:north: current placement approval is required",
+      "pool:north: no placement review IDs",
+      "pool_decks.json:north-deck: placement tolerance exceeds 0.3 m or is absent",
+      "pool:north: placement tolerance exceeds 0.3 m or is absent"
+     ]
     },
     {
      "id": "north-pool-fittings",
@@ -4629,6 +4706,58 @@
      "blockers": [
       "Ground-level photos from the north pool's west path looking south at the two white patio walls with brown gates (south of the hibiscus hedge, west of the station roof), showing each gate's foot, the wall ends and a known width such as a door leaf."
      ]
+    },
+    {
+     "id": "north-pool-ladder-recess",
+     "area": "north-pool",
+     "kind": "completeness",
+     "description": "The south-west deck tongue's north edge has a recess about 0.5-0.6 m wide where the ladder stands (IMG_2205 x 48-100, IMG_2206 x 1475-1510); the corrected ring runs straight across it. Two held-out picks in the ring measurement were interpolated across it (without them held-out is 0.17 m rms, n=7).",
+     "sources": [
+      "IMG_2205.jpg",
+      "IMG_2206.jpg"
+     ],
+     "features": [
+      "pool:north"
+     ],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-pool-ladder-look",
+     "area": "north-pool",
+     "kind": "appearance",
+     "description": "The pool ladders render as small arcs barely above the coping; IMG_2204 and IMG_2205 show tall goose-neck stainless rails anchored on the deck. Positions now match the photos; the fitting's size or height (pool_ladder in src/slice.ts and src/pool-kit.ts) does not.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ],
+     "features": [
+      "pool:north"
+     ],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "north-pool-pump-box-look",
+     "area": "north-pool",
+     "kind": "appearance",
+     "description": "The pump box (o4) is now placed and turned as photographed, but the model draws louvres on all four sides where IMG_2204 and IMG_2205 show them on the front-right face only, and it is 1.1 m long against about 1.2 m. The shower post beside it is not modelled.",
+     "sources": [
+      "IMG_2204.jpg",
+      "IMG_2205.jpg"
+     ],
+     "features": [],
+     "task": "pool-deck-outline",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -7919,15 +8048,6 @@
      "dependencies": [
       "cervantes-register-edges",
       "3d-browser-regression-reliability"
-     ],
-     "requests": []
-    },
-    {
-     "id": "pool-deck-outline",
-     "title": "North pool: trace the deck outline and squared deck tongue from the solved cameras",
-     "priority": 1,
-     "dependencies": [
-      "pool-detail"
      ],
      "requests": []
     },
