@@ -15,7 +15,7 @@ import type { Vec2 } from "./types";
 
 type Furniture = { id: string; kind: string; at: number[]; turn?: number; count?: number; seats?: number; open?: boolean; colour?: string };
 type Awning = { id: string; wall: number[][]; out: number[]; height: number; depth: number; colour: string; stripes?: string; drop?: number };
-type Climber = { id: string; at: number[]; height: number; spread: number };
+type Climber = { id: string; at: number[]; height: number; spread: number; from?: number };
 type Arch = { id: string; from: number[]; to: number[]; height: number; rise: number; depth: number; style?: "arch" | "canopy" };
 
 /**
@@ -135,7 +135,7 @@ export function addNorthPoolFrontageStructure(scene: THREE.Scene): void {
       const half = span / 2, r = (half * half + a.rise * a.rise) / (2 * a.rise), th = Math.asin(half / r);
       const shell = new THREE.Mesh(new THREE.CylinderGeometry(r, r, a.depth, 24, 1, true, -th, 2 * th), plaster);
       shell.material = plaster.clone(); (shell.material as THREE.MeshStandardMaterial).side = THREE.DoubleSide;
-      shell.rotation.z = Math.PI / 2; shell.rotation.x = Math.PI / 2; shell.position.y = a.height + a.rise - r;
+      shell.rotation.z = Math.PI / 2; shell.rotation.x = -Math.PI / 2; shell.position.y = a.height + a.rise - r;
       const ring = new THREE.Group(); ring.add(shell); ring.rotation.y = Math.PI / 2; g.add(ring);
       for (const s of [-1, 1]) g.add(box(0.09, a.height, 0.09, plaster, s * (half - 0.05), a.height / 2, 0));
       g.position.set((ax + bx) / 2, base, (az + bz) / 2);
@@ -172,8 +172,8 @@ export function addNorthPoolFrontageDetails(scene: THREE.Scene): void {
     g.name = f.id; g.userData.noDrape = true; scene.add(g);
   }
   for (const a of data.awnings as Awning[]) { const g = awning(a); g.userData.noDrape = true; scene.add(g); }
-  // The bougainvillea sprite is 2.6 m square: each climber runs from about 1 m above its floor up to its photographed height.
+  // The bougainvillea sprite is 2.6 m square: each climber runs from `from` (about 1 m) above its floor up to its photographed height.
   const before = scene.children.length;
-  addSprites(scene, "bougainvillea", (data.climbers as Climber[]).map((c) => ({ x: c.at[0], z: c.at[1], y: floorY(c.at[0], c.at[1]) + 1.0, scale: Math.max(c.spread, c.height - 1.0) / 2.6 })));
+  addSprites(scene, "bougainvillea", (data.climbers as Climber[]).map((c) => ({ x: c.at[0], z: c.at[1], y: floorY(c.at[0], c.at[1]) + (c.from ?? 1.0), scale: Math.max(c.spread, c.height - (c.from ?? 1.0)) / 2.6 })));
   for (const child of scene.children.slice(before)) child.userData.noDrape = true;
 }

@@ -115,13 +115,13 @@
     [-187.45, 11.22]
    ],
    "out": [0.515, 0.857],
-   "height": 2.45,
+   "height": 2.25,
    "depth": 1.1,
    "colour": "#1f4e8c",
    "stripes": "#f4f1e8",
    "note": "Blue and white striped awning over the ground-floor doors of the house facing the north-west terrace (IMG_2204 x 645-800): that registry front projects onto x 631-795 through the solved camera.",
    "evidence": ["IMG_2204.jpg"],
-   "drop": 0.95
+   "drop": 0.35
   },
   {
    "id": "np-awning-grey",
@@ -130,7 +130,7 @@
     [-174.5, 3.79]
    ],
    "out": [0.513, 0.858],
-   "height": 2.5,
+   "height": 2.1,
    "depth": 2.4,
    "colour": "#8e8e8a",
    "note": "Grey retractable awning over the dining set (IMG_2205 x 440-560); its wall projects onto x 448-562.",
@@ -144,7 +144,7 @@
     [-171.27, 0.53]
    ],
    "out": [0.505, 0.864],
-   "height": 2.5,
+   "height": 1.75,
    "depth": 2.6,
    "colour": "#efece2",
    "note": "White retractable awning under the porch balcony (IMG_2205 x 580-757, IMG_2204 x 1270-1485); its wall projects onto x 600-689. The photographed awning runs about 0.7 m further east, past the end of this face; it is drawn on the face only.",
@@ -155,11 +155,12 @@
  "climbers": [
   {
    "id": "np-bougainvillea-1",
-   "at": [-187.2, 11.1],
-   "height": 3.4,
-   "spread": 2.4,
-   "note": "Magenta bougainvillea climbing the west end of the blue-awning house (IMG_2204 x 585-670).",
-   "evidence": ["IMG_2204.jpg"]
+   "at": [-187.6, 11.31],
+   "height": 4.0,
+   "spread": 2.0,
+   "note": "Magenta bougainvillea climbing the west end of the blue-awning house (IMG_2204 x 585-670). Moved after review: the photographed plant casts to about (-187.6, 11.3), 4.1-5.75 m up, above the blue awning.",
+   "evidence": ["IMG_2204.jpg"],
+   "from": 2.0
   },
   {
    "id": "np-bougainvillea-2",
@@ -172,10 +173,11 @@
   {
    "id": "np-bougainvillea-3",
    "at": [-177.8, 5.76],
-   "height": 4.2,
+   "height": 4.8,
    "spread": 2.4,
    "note": "Bougainvillea beside the parasol house's first-floor window (IMG_2205 x 290-330, IMG_2204 x 1070-1150). Moved 0.6 m east after review: both cameras cast the photographed plant here (IMG_2205 x 370-467).",
-   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"]
+   "evidence": ["IMG_2205.jpg", "IMG_2204.jpg"],
+   "from": 1.6
   }
  ],
  "arches": [

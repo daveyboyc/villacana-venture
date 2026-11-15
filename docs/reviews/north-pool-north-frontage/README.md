@@ -87,3 +87,13 @@ afterwards:
   further (0.95 m).
 - **Not changed:** the white awning still runs only along its face; the photo shows about 0.7 m more to
   the east.
+
+### Second round (after the re-check)
+
+- **Alley canopy:** it was flipped, hanging like a hammock below its posts. It now arches up, with its top
+  at about 3.8 m.
+- **Awnings:** lowered, so their tops sit where the photos put them: blue 2.25 m with a 0.35 m drop,
+  grey 2.1 m and white 1.75 m above their floors.
+- **Bougainvillea:** the blue-awning house's plant moves to (-187.6, 11.3) and climbs from 2 m above the
+  terrace, above the awning. The parasol house's plant reaches 4.8 m.
+- **Hedges:** 1.15 m high, to match the photo's tops.

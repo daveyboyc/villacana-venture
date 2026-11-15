@@ -47,7 +47,7 @@ for f in d['furniture']:
         assert min(seg(p, a, q) for a, q in zip(r['points'], r['points'][1:])) > r['width'] / 2 + 0.5, f"{f['id']}: on lane {r.get('id')}"
 for a in d['awnings']:
     assert all(on_front(p) for p in a['wall']), f"{a['id']}: wall ends are not on a registry front"
-    assert abs(math.hypot(*a['out']) - 1) < 0.01 and 0.6 <= a['depth'] <= 3.5 and 2.0 <= a['height'] <= 3.2, a['id']
+    assert abs(math.hypot(*a['out']) - 1) < 0.01 and 0.6 <= a['depth'] <= 3.5 and 1.6 <= a['height'] <= 3.2, a['id']
     (ax, az), (bx, bz) = a['wall']
     assert abs((bx - ax) * a['out'][0] + (bz - az) * a['out'][1]) < 0.1 * math.hypot(bx - ax, bz - az), f"{a['id']}: out is not square to the wall"
     mid = ((ax + bx) / 2 + a['out'][0] * 0.3, (az + bz) / 2 + a['out'][1] * 0.3)

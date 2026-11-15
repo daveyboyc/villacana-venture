@@ -265,7 +265,7 @@
     "inset": 0.42,
     "kind": "hedge",
     "form": "clipped",
-    "height": 0.85,
+    "height": 1.15,
     "depth": 0.8
    },
    "evidence": ["IMG_2204.jpg", "IMG_2205.jpg", "IMG_2207.jpg", "IMG_2208.jpg"],

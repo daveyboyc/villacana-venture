@@ -112,3 +112,91 @@ The structural re-trace is good, and I would accept it on its own: the plinth, s
    - Move nw-terrace-folded-parasol about 0.6 m east.
 
 After these fixes, re-render both cameras, and re-review the hedges, the climbers and the balcony faces.
+
+## Re-check after the fixes (commit 11cb12e)
+
+I compared the re-rendered `IMG_2204-after.png`, `IMG_2205-after.png`, `north-row-layout.png` and
+`north-row-details.png` with the photos in the same way as before: stacked crops zoomed 1.45-3x,
+projections through the solved poses, and photo pixels cast onto the wall planes. Pixel coordinates are
+full-size photo pixels.
+
+### Fixed
+
+- **Wooden balcony on the return face.** It is gone from both renders: IMG_2205 x 808-940 and IMG_2204
+  x 1550-1600 now show plain wall with arched windows, as the photos do.
+- **Iron balcony on the parasol-house front.** It is gone.
+- **Colours.** The parasol and the grey awning now read grey. The parasol is at x 255-366, against the
+  photo's 245-375.
+- **Hedge continuity.** The hedges are now continuous and flat-topped, broken only at the steps.
+- **Hedge ends.**
+  - The west run ends before step 1: at x 338 against the photo's 315 in IMG_2205, and at 1005 against
+    990 in IMG_2204. Part of a lounger now shows in IMG_2205.
+  - Between steps 2 and 3 the run reaches the steps.
+- **Dining set A.** It matches in both cameras: x 514-593 against 510-600, and 1180-1265 against
+  1180-1275.
+- **np-bougainvillea-2.** It now spans IMG_2204 x 750-840, y 380-510, against the photo's 770-850,
+  345-480. Good.
+- **np-bougainvillea-3.** It is close: x 414-469, y 401-525 in IMG_2205, against 372-462, 362-500. Its
+  top is about 0.6 m low and it reads narrower than the photo's.
+
+### New or remaining problems
+
+1. **The alley canopy is drawn upside down. This must be fixed.** In both photo renders and in
+   `north-row-layout.png` it shows as a sagging white hammock between two 3.4 m posts that stand up past
+   it. It hangs at IMG_2205 y 515-540 and IMG_2204 y 490-510. The photo's canopy is at IMG_2205 y 462-479
+   and IMG_2204 y 425-445. A 3.4-3.8 m canopy should project to IMG_2205 y 460-480.
+
+   The cause is in `src/north-pool-frontages.ts`, at the `style === "canopy"` branch. The cylinder arc
+   is centred on +z. After `rotation.z = π/2` and then `rotation.x = +π/2`, a vertex lands at
+   y = −r·cosθ. The arc's lowest point is then at `height + rise − 2r`. With span 1.85 m and rise 0.4,
+   r is 1.26 m, so the shell sits at about 1.3-1.7 m above the floor, not 3.4-3.8 m.
+
+   Use `shell.rotation.x = -Math.PI / 2`. The apex is then at `height + rise` and the ends at `height`.
+   Check it in Layout.
+2. **Awnings now hang too high.** This is a regression from raising `drop` to 0.95 without lowering
+   `height`. Cast on their walls, the awning tops are:
+
+   | Awning | Render top | Photo top | Too high by |
+   |---|---|---|---|
+   | Blue (IMG_2204) | 5.37 m | 4.52 m | 0.85 m |
+   | White (IMG_2205 / IMG_2204) | 4.56 / 4.52 m | 3.83 / 4.25 m | 0.3-0.7 m |
+   | Grey (IMG_2205) | 4.55 m | 4.19 m | 0.36 m |
+
+   The blue awning now rises into the first-floor balcony. In the render it covers x 640-785,
+   y 375-435; the photo shows a thin valance at y 415-427, directly under the balcony slab. The white
+   awning's top overlaps its balcony railing.
+
+   Suggested values:
+   - np-awning-blue-stripes: `height` about 2.25, `drop` about 0.35. Its top is then about 2.6 m above
+     the 1.93 m terrace floor.
+   - np-awning-grey: `height` about 2.1.
+   - np-awning-white: `height` about 2.0.
+3. **np-bougainvillea-1 is low and hidden.** It is now a small clump at IMG_2204 x 645-700, y 430-470,
+   below and behind the oversized blue awning. The photo's climber is at x 580-690, y 358-425. Cast, that
+   is world height 4.1-5.75 m and about 2.5 m wide, centred near (-187.6, 11.3), on and above the
+   first-floor balcony. Move it there, raise its `height` to about 3.9 (top about 5.8 m), and start the
+   sprite at about the terrace floor + 2 m.
+4. **Hedges read low.** At 0.85 m their tops are at IMG_2205 y 550, against the photo's 534-540. In
+   IMG_2204 they are at y 540, against 520. A `height` of about 1.15 m matches the photos, as the first
+   version did.
+5. **Minor.**
+   - np-bougainvillea-3: raise `height` to about 4.8. The photo's top is about 6.0 m world.
+   - The loungers under the parasol are still not visible in IMG_2204, at x 980-1025.
+
+The out-of-scope items in the first review are unchanged.
+
+### Layout and Show details
+
+Layout shows the patios, the plinth, the steps and the canopy. The canopy shows as the inverted hammock
+described in problem 1. Furniture, awnings, hedges and climbers show only with Show details. The split is
+correct.
+
+### Updated verdict: **not-satisfactory**
+
+The fixes for the balconies, colours, hedge continuity, the west hedge end and dining set A worked. But
+the alley canopy is now visibly broken, upside down, in Layout and in both cameras. The deeper `drop` has
+also lifted all three awnings 0.4-0.85 m above the photographed position, and the blue one now runs into
+the balcony.
+
+All four fixes are small: the canopy rotation sign, the awning `height` values, np-bougainvillea-1, and
+the hedge height. After them I would expect `satisfactory-with-notes`.
