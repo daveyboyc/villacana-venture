@@ -165,7 +165,7 @@
     "placed": 7,
     "checks": {
      "matches": 4,
-     "differs": 7,
+     "differs": 9,
      "not-comparable": 7
     },
     "camerasSolved": 3,
@@ -183,9 +183,9 @@
     "generated": 89
    },
    "placement": {
-    "features": 39,
+    "features": 45,
     "verified": 0,
-    "disputed": 10
+    "disputed": 12
    },
    "discrepancies": [
     {
@@ -215,11 +215,19 @@
     {
      "id": "photo-discrepancy:7a704589cd416b16",
      "feature": "north_pool_frontages.json:np-awning-blue-stripes"
+    },
+    {
+     "id": "photo-discrepancy:777dafc70a50ada7",
+     "feature": "ground_plan_north_pool.json:north-pool-west-gated-patio"
+    },
+    {
+     "id": "photo-discrepancy:0ba723fbc4929bdf",
+     "feature": "plain_fronts.json:north-pool-isabel-east-block"
     }
    ],
    "tasks": {
-    "open": 6,
-    "inProgress": 7,
+    "open": 5,
+    "inProgress": 8,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Graphics pilot: image-based lighting, ambient occlusion and a Blender-built facade kit in the north-pool courtyard",
@@ -227,19 +235,19 @@
     ]
    },
    "confidence": {
-    "photographed": 19,
-    "estimated": 19,
+    "photographed": 22,
+    "estimated": 22,
     "inferred": 1,
     "registry": 0,
-    "gaps": 6
+    "gaps": 7
    },
    "status": [
     "Ground: 85% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 13, 7 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
-    "How sure: 19 photographed, 19 estimated, 1 inferred, 6 known gaps.",
-    "Placement: 0 of 39 features verified, 7 open discrepancies.",
+    "How sure: 22 photographed, 22 estimated, 1 inferred, 7 known gaps.",
+    "Placement: 0 of 45 features verified, 9 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 10 still open; 5 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
@@ -1798,13 +1806,14 @@
     "estimated": 0,
     "inferred": 0,
     "registry": 0,
-    "gaps": 0
+    "gaps": 1
    },
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey; streets within 0.46 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.8 m.",
     "Photos: 2, 2 placed; no camera solved.",
     "Facades: 4 of 253 kit parts traced from photos.",
+    "How sure: 0 photographed, 0 estimated, 0 inferred, 1 known gap.",
     "Placement: no model features registered here yet.",
     "Model loop: 0 tracked findings accepted, 0 still open; 2 evidence requests. This is not whole-area acceptance."
    ],
@@ -2935,7 +2944,7 @@
     "placed": 460,
     "checks": {
      "matches": 55,
-     "differs": 40,
+     "differs": 42,
      "not-comparable": 63
     },
     "camerasSolved": 7,
@@ -2960,9 +2969,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 465,
+    "features": 471,
     "verified": 0,
-    "disputed": 34
+    "disputed": 36
    },
    "discrepancies": [
     {
@@ -3152,11 +3161,19 @@
     {
      "id": "photo-discrepancy:7a704589cd416b16",
      "feature": "north_pool_frontages.json:np-awning-blue-stripes"
+    },
+    {
+     "id": "photo-discrepancy:777dafc70a50ada7",
+     "feature": "ground_plan_north_pool.json:north-pool-west-gated-patio"
+    },
+    {
+     "id": "photo-discrepancy:0ba723fbc4929bdf",
+     "feature": "plain_fronts.json:north-pool-isabel-east-block"
     }
    ],
    "tasks": {
-    "open": 53,
-    "inProgress": 53,
+    "open": 52,
+    "inProgress": 54,
     "titles": [
      "North pool: resolve concealed ground edges, lane widths and remaining roof projections",
      "Correct reported Barraka planter placement against registered source evidence",
@@ -3164,19 +3181,19 @@
     ]
    },
    "confidence": {
-    "photographed": 72,
-    "estimated": 148,
+    "photographed": 75,
+    "estimated": 151,
     "inferred": 13,
     "registry": 232,
-    "gaps": 30
+    "gaps": 32
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 478, 460 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 72 photographed, 148 estimated, 13 inferred, 30 known gaps.",
-    "Placement: 0 of 465 features verified, 47 open discrepancies.",
+    "How sure: 75 photographed, 151 estimated, 13 inferred, 32 known gaps.",
+    "Placement: 0 of 471 features verified, 49 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 10 still open; 42 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {

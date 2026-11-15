@@ -430,17 +430,6 @@
       "loop-discrepancies"
      ],
      "requests": []
-    },
-    {
-     "id": "north-pool-station-details",
-     "title": "North pool: gated patio walls, near block and yucca round the station camera",
-     "priority": 3,
-     "dependencies": [
-      "north-pool-station-foreground"
-     ],
-     "requests": [
-      "north-pool-gated-patio-gates"
-     ]
     }
    ]
   },
@@ -8228,17 +8217,6 @@
       "eva-lane-details"
      ],
      "requests": []
-    },
-    {
-     "id": "north-pool-station-details",
-     "title": "North pool: gated patio walls, near block and yucca round the station camera",
-     "priority": 3,
-     "dependencies": [
-      "north-pool-station-foreground"
-     ],
-     "requests": [
-      "north-pool-gated-patio-gates"
-     ]
     }
    ]
   }
