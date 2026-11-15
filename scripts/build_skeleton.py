@@ -270,11 +270,14 @@ def build_pools() -> list[dict]:
         raise SystemExit(f"Expected 3 small pools in the block, found {len(small)}.")
     for name, ring in zip(names, small):
         pools.append({"id": name, "kind": "small", "ring": rounded(ring)})
-    # The registry draws curves as short straight runs; round them off.
+    # The registry draws curves as short straight runs; round them off. Measured corrections
+    # (data/pool_ring_corrections.json) replace runs of registry vertices first, and the corners
+    # the photos show square stay sharp.
     for pool in pools:
         ring = [tuple(p) for p in pool["ring"]]
         pool["centre"] = [round(v, 2) for v in centroid(ring)]
-        pool["ring"] = rounded(smooth_ring(ring))
+        ring, hard = correct_pool_ring(pool["id"], ring)
+        pool["ring"] = rounded(smooth_ring(ring, hard=hard))
     decks = {d["id"]: d for d in json.loads((ROOT / "data" / "pool_decks.json").read_text())["pools"]}
     for pool in pools:
         if pool["id"] in decks:
@@ -370,16 +373,43 @@ def build_streets() -> list[dict]:
     return streets
 
 
-def smooth_ring(ring: list[tuple[float, float]], passes: int = 2) -> list[tuple[float, float]]:
-    """Round a ring's corners by cutting each one off; the outline keeps its shape."""
+def smooth_ring(ring: list[tuple[float, float]], passes: int = 2, hard: set[int] | None = None) -> list[tuple[float, float]]:
+    """Round a ring's corners by cutting each one off; the outline keeps its shape.
+
+    Vertices whose indices are in `hard` are corners the photos show square: each is kept,
+    between the two cut points beside it, so it stays sharp through every pass.
+    """
+    hard = set(hard or ())
     for _ in range(passes):
-        out = []
+        out, kept = [], set()
         for i in range(len(ring)):
             (ax, az), (bx, bz) = ring[i], ring[(i + 1) % len(ring)]
+            if i in hard:
+                kept.add(len(out))
+                out.append((ax, az))
             out.append((ax * 0.75 + bx * 0.25, az * 0.75 + bz * 0.25))
             out.append((ax * 0.25 + bx * 0.75, az * 0.25 + bz * 0.75))
-        ring = out
+        ring, hard = out, kept
     return ring
+
+
+def correct_pool_ring(pool_id: str, ring: list[tuple[float, float]]) -> tuple[list[tuple[float, float]], set[int]]:
+    """Apply data/pool_ring_corrections.json to a registry water ring; returns the ring and its hard corners."""
+    entry = next((p for p in json.loads((ROOT / "data" / "pool_ring_corrections.json").read_text())["pools"] if p["id"] == pool_id), None)
+    if not entry:
+        return ring, set()
+    assert len(ring) == entry["registryVertices"], f"{pool_id}: registry ring has {len(ring)} vertices, corrections expect {entry['registryVertices']}"
+    n = len(ring)
+    # Each registry vertex either stays, or the first of a replaced run carries the new points.
+    slots: list[list[tuple[tuple[float, float], bool]]] = [[(p, False)] for p in ring]
+    for fix in entry["corrections"]:
+        run = [(fix["from"] + k) % n for k in range((fix["to"] - fix["from"]) % n + 1)]
+        assert all(len(slots[i]) == 1 and slots[i][0][0] == ring[i] for i in run), f"{fix['id']}: overlaps another correction"
+        for i in run:
+            slots[i] = []
+        slots[run[0]] = [(tuple(p), k in fix["hard"]) for k, p in enumerate(fix["with"])]
+    out = [q for slot in slots for q in slot]
+    return [p for p, _ in out], {k for k, (_, h) in enumerate(out) if h}
 
 
 def build_props() -> list[dict]:

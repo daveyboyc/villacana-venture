@@ -991,6 +991,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool:north",
    "backdrop.json:photo-trees",
    "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
@@ -1042,6 +1043,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool:north",
    "backdrop.json:photo-trees",
    "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
@@ -1092,6 +1094,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "pool:north",
    "backdrop.json:photo-trees",
    "backdrop.json:aerial-trees",
    "pool_decks.json:north-deck",
@@ -1513,7 +1516,8 @@
   },
   "citedBy": [
    "barraka_boardwalk.json:barraka-boardwalk",
-   "barraka_boardwalk.json:barraka-beach-seating"
+   "barraka_boardwalk.json:barraka-beach-seating",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "looksAt": [
    38,
@@ -5196,7 +5200,8 @@
    "building:6465801UF1366N_part5",
    "building:6465801UF1366N_part6",
    "barraka_boardwalk.json:barraka-boardwalk",
-   "barraka_boardwalk.json:barraka-sign-planter"
+   "barraka_boardwalk.json:barraka-sign-planter",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "looksAt": [
    38,
@@ -5243,7 +5248,8 @@
    "building:6465801UF1366N_part6",
    "barraka_boardwalk.json:barraka-boardwalk",
    "barraka_boardwalk.json:barraka-sign-planter",
-   "barraka_boardwalk.json:barraka-beach-seating"
+   "barraka_boardwalk.json:barraka-beach-seating",
+   "barraka_boardwalk.json:barraka-barbecue-boat"
   ],
   "looksAt": [
    38,
@@ -7764,7 +7770,9 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "area:paseo"
+   "area:paseo",
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
   ],
   "looksAt": [
    28.8,
@@ -13349,7 +13357,10 @@
    "altitude": 5.1,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
+  ],
   "looksAt": [
    -22.6,
    156.6
@@ -17309,7 +17320,10 @@
    "altitude": 5.5,
    "trust": "phone location"
   },
-  "citedBy": [],
+  "citedBy": [
+   "beach_verge.json:barraka-front-verge",
+   "beach_verge.json:barraka-front-shrubs"
+  ],
   "looksAt": [
    4.6,
    129.4

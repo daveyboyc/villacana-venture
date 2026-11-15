@@ -107,5 +107,382 @@
    "evidence": "docs/reviews/tunnel-entrance-context/independent-review.md",
    "followUp": "tunnel-entrance-context"
   }
+ ],
+ "measuredApprovals": [
+  {
+   "id": "measured-north-pool-ring-tongues",
+   "feature": "pool:north",
+   "alsoAffects": [
+    "pool_decks.json:north-deck",
+    "objects.json:o2",
+    "objects.json:o3"
+   ],
+   "task": "pool-deck-outline",
+   "author": {
+    "kind": "agent",
+    "id": "claude-session-01Qg1RhPCFAV2eDbCtb2vdtj"
+   },
+   "date": "2026-11-15",
+   "frame": "map-metres-east-south",
+   "rule": "Measured approval (Dave, 2026-11-01): changed edges against at least two solved photo cameras, rms 0.3 m or less, worst and held-out reported, reviewed by a second agent.",
+   "tolerance": 0.3,
+   "change": "data/pool_ring_corrections.json (north-east-tongue, north-south-west-tongue); deck widths refitted in data/pool_decks.json; ladders o2, o3 moved",
+   "cameras": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ],
+   "residuals": {
+    "excluded": {
+     "IMG_2206.jpg": {
+      "n": 1,
+      "rms": 0.407,
+      "worst": 0.407
+     },
+     "all": {
+      "n": 1,
+      "rms": 0.407,
+      "worst": 0.407
+     }
+    },
+    "fit": {
+     "IMG_2204.jpg": {
+      "n": 18,
+      "rms": 0.159,
+      "worst": 0.292
+     },
+     "IMG_2205.jpg": {
+      "n": 12,
+      "rms": 0.09,
+      "worst": 0.186
+     },
+     "IMG_2206.jpg": {
+      "n": 9,
+      "rms": 0.163,
+      "worst": 0.283
+     },
+     "all": {
+      "n": 39,
+      "rms": 0.142,
+      "worst": 0.292
+     }
+    },
+    "held-out": {
+     "IMG_2204.jpg": {
+      "n": 4,
+      "rms": 0.206,
+      "worst": 0.259
+     },
+     "IMG_2205.jpg": {
+      "n": 4,
+      "rms": 0.088,
+      "worst": 0.135
+     },
+     "IMG_2206.jpg": {
+      "n": 1,
+      "rms": 0.277,
+      "worst": 0.277
+     },
+     "all": {
+      "n": 9,
+      "rms": 0.176,
+      "worst": 0.277
+     }
+    },
+    "unchanged": {
+     "IMG_2204.jpg": {
+      "n": 9,
+      "rms": 0.351,
+      "worst": 0.428
+     },
+     "IMG_2205.jpg": {
+      "n": 10,
+      "rms": 0.107,
+      "worst": 0.201
+     },
+     "all": {
+      "n": 19,
+      "rms": 0.254,
+      "worst": 0.428
+     }
+    }
+   },
+   "residualsBefore": {
+    "excluded": {
+     "IMG_2206.jpg": {
+      "n": 1,
+      "rms": 0.441,
+      "worst": 0.441
+     },
+     "all": {
+      "n": 1,
+      "rms": 0.441,
+      "worst": 0.441
+     }
+    },
+    "fit": {
+     "IMG_2204.jpg": {
+      "n": 18,
+      "rms": 0.736,
+      "worst": 1.431
+     },
+     "IMG_2205.jpg": {
+      "n": 12,
+      "rms": 0.551,
+      "worst": 0.86
+     },
+     "IMG_2206.jpg": {
+      "n": 9,
+      "rms": 0.614,
+      "worst": 1.184
+     },
+     "all": {
+      "n": 39,
+      "rms": 0.656,
+      "worst": 1.431
+     }
+    },
+    "held-out": {
+     "IMG_2204.jpg": {
+      "n": 4,
+      "rms": 0.565,
+      "worst": 0.983
+     },
+     "IMG_2205.jpg": {
+      "n": 4,
+      "rms": 0.431,
+      "worst": 0.825
+     },
+     "IMG_2206.jpg": {
+      "n": 1,
+      "rms": 0.705,
+      "worst": 0.705
+     },
+     "all": {
+      "n": 9,
+      "rms": 0.529,
+      "worst": 0.983
+     }
+    },
+    "unchanged": {
+     "IMG_2204.jpg": {
+      "n": 9,
+      "rms": 0.352,
+      "worst": 0.449
+     },
+     "IMG_2205.jpg": {
+      "n": 10,
+      "rms": 0.126,
+      "worst": 0.201
+     },
+     "all": {
+      "n": 19,
+      "rms": 0.259,
+      "worst": 0.449
+     }
+    }
+   },
+   "limitations": "The three cameras share one roof station (solved separately) and disagree by about 0.25 m from one to the next in z; IMG_2204 sits 0.35 m rms from the unchanged registry edges. The aerial cannot resolve the tongues. The south-west tongue's west foot is hidden and keeps the registry vertex; the ladder recess is not modelled. Not a survey.",
+   "artifacts": [
+    {
+     "path": "docs/reviews/pool-deck-outline/ring-IMG_2204.jpg",
+     "sha256": "bf0afdf5ad9d06ea534253189ed69fd1831503a02fb078db81b863f146238dd8"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/ring-IMG_2205.jpg",
+     "sha256": "e365c49d105559202931299dc6b4f980ce2e0d61efdfcde477eceb4b2c1d8917"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/ring-IMG_2206.jpg",
+     "sha256": "fb96e61997a2566e437380723faf7c6cd2680a224a918846d2ce52bbe8322f6e"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/ring-residuals.json",
+     "sha256": "2186241ec200fbc5928a1dccfdd131ef5c04220740f95992fd5a40aa2bb3870d"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2204-before.png",
+     "sha256": "19cded15df39910100e848247845929f39545c7fd5b22a3b0abb5636fb3bb38a"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2204-after.png",
+     "sha256": "8c9f4f3d9c4b76db817ecf6156672aeecf65208a120c51717fd169f002655419"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2205-before.png",
+     "sha256": "d4a65baa7a626cdcaad678903c181d48ab1d5b141e283a1493544b1b39acb412"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2205-after.png",
+     "sha256": "3826d5ce41765427df6ba8eb0d711e1cdda6d8551b27d7eb1466e4057c2d4ae7"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2206-before.png",
+     "sha256": "94e4279c53295aa30407ec954a634cb21d017e1103c95bae2dcceea3c8217342"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2206-after.png",
+     "sha256": "e94037fa4d699a453dc4b6e28b57c7ea5e5c6ccdd3ee2777934a1cd2d4ba7a9b"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/README.md",
+     "sha256": "d2b8c84d5155276ae45e89c5b82823897b694b1d284b2278774cbd4a363ed43e"
+    },
+    {
+     "path": "data/pool_ring_corrections.json",
+     "sha256": "5fff717ba218ae0859fe80297df8218c9f2dc3401d9a22662338337e1fa203bf"
+    },
+    {
+     "path": "scripts/measure_pool_ring.py",
+     "sha256": "701c0ea8e4a7f96e3c7ccfde6247c2c11bf72c246fc9bfe602c84df81cf40759"
+    }
+   ],
+   "reviewer": {
+    "kind": "agent",
+    "id": "reviewer-subagent-rv7k2p",
+    "date": "2026-11-15",
+    "verdict": "approved-with-notes",
+    "sourcesInspected": [
+     "public/photos-ref/IMG_2204.jpg",
+     "public/photos-ref/IMG_2205.jpg",
+     "public/photos-ref/IMG_2206.jpg",
+     "docs/reviews/pool-deck-outline/ring-IMG_2204.jpg",
+     "docs/reviews/pool-deck-outline/ring-IMG_2205.jpg",
+     "docs/reviews/pool-deck-outline/ring-IMG_2206.jpg",
+     "docs/reviews/pool-deck-outline/IMG_2204-before.png",
+     "docs/reviews/pool-deck-outline/IMG_2204-after.png",
+     "docs/reviews/pool-deck-outline/IMG_2205-before.png",
+     "docs/reviews/pool-deck-outline/IMG_2205-after.png",
+     "docs/reviews/pool-deck-outline/IMG_2206-before.png",
+     "docs/reviews/pool-deck-outline/IMG_2206-after.png",
+     "docs/reviews/pool-deck-outline/ring-residuals.json",
+     "docs/reviews/pool-deck-outline/README.md",
+     "data/pool_ring_corrections.json",
+     "data/objects.json",
+     "public/map/skeleton.json",
+     "scripts/measure_pool_ring.py"
+    ],
+    "residualsConfirmed": true,
+    "notes": "Re-run of measure_pool_ring.py matches the record exactly (fit 0.14 m rms, worst 0.29; held-out 0.18, worst 0.28). 16 picks spot-checked at 8x: all on the coping water edge except held-out 2205 (82.5,897.5) and 2206 (1491.7,883), which are interpolated over the unmodelled ladder recess (about 0.5-0.6 m wide). Without them held-out is 0.17 m rms (n=7). Yellow is on the edge and far better than red at both tongues and the pocket. The renders show square tongues with no corner artefacts, and o2 and o3 are where the photos show the ladders. Limits: one station, and the cameras put the SW north edge at z 22.25, 22.55 and 22.8 (the mean is used). Already wrong before this change and out of scope: pump box o4 sits about 1 m west of its photographed position, and the ladder fitting renders low or small against the photo's tall rails.",
+    "review": "docs/reviews/pool-deck-outline/REVIEW.md"
+   }
+  },
+  {
+   "id": "measured-north-pool-pump-box",
+   "feature": "objects.json:o4",
+   "task": "pool-deck-outline",
+   "author": {
+    "kind": "agent",
+    "id": "claude-session-01Qg1RhPCFAV2eDbCtb2vdtj"
+   },
+   "date": "2026-11-15",
+   "frame": "map-metres-east-south",
+   "rule": "Measured approval (Dave, 2026-11-01): changed points against at least two solved photo cameras, rms 0.3 m or less, worst and held-out reported, reviewed by a second agent.",
+   "tolerance": 0.3,
+   "change": "Pump box o4 moved from (-172.66, 20.19) to (-171.28, 19.60) and turned 40.1 degrees (new optional `turn` on pump boxes in src/slice.ts); refitted after the first review found one base pick was a glass panel's edge, not the box's corner.",
+   "measurements": {
+    "method": "scripts/fit_pump_box.py: a 1.1 x 0.9 x 0.57 m box on the 0.82 m deck fitted by centre and turn to visible corners in two solved cameras",
+    "picks": {
+     "IMG_2205.jpg": [
+      "base left (591,805)",
+      "base front (629,826)",
+      "top left (593,769)",
+      "top front (630,790)",
+      "top right (686,779)"
+     ],
+     "IMG_2204.jpg": [
+      "top left (1243,781)",
+      "top front (1280,816)",
+      "top right (1342,808)"
+     ]
+    },
+    "missesPx": {
+     "IMG_2205.jpg": [
+      3.4,
+      1.7,
+      1.8,
+      1.2,
+      10.0
+     ],
+     "IMG_2204.jpg": [
+      10.2,
+      8.6,
+      2.3
+     ]
+    },
+    "pxPerMetre": {
+     "IMG_2205.jpg": 68,
+     "IMG_2204.jpg": 79
+    },
+    "residualM": {
+     "rms": 0.08,
+     "worst": 0.15
+    },
+    "heldOut": "None separate: every visible corner is used in the fit (8 corners, 3 parameters). The reviewer's independent picks of the same corners are the check."
+   },
+   "limitations": "All visible corners are used to fit; no separate held-out corner exists. The model box is 1.1 m long against about 1.2 m in the photo, and has louvres on all four sides where the photo shows them on one face.",
+   "artifacts": [
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2204-pumpbox.png",
+     "sha256": "1d8f59bdab881927f446833796ba8cd4da8f9e011b74204c7704c274af47a993"
+    },
+    {
+     "path": "docs/reviews/pool-deck-outline/IMG_2205-pumpbox.png",
+     "sha256": "df43a8e81f8e0a42a9d5ca26424c2a37ea8f874784ae91b5a1e8cfb7a308bc1c"
+    },
+    {
+     "path": "data/objects.json",
+     "sha256": "b4ad152fe871859dadd94cc491acd653fd7cfc761b235485497db6d50bd7ca28"
+    },
+    {
+     "path": "scripts/fit_pump_box.py",
+     "sha256": "968b15c273c3074ab92b9377add5eecfef3c2682869ceab6c4a21670021f52cd"
+    }
+   ],
+   "reviewer": {
+    "kind": "agent",
+    "id": "reviewer-subagent-rv7k2p",
+    "date": "2026-11-15",
+    "verdict": "approved",
+    "sourcesInspected": [
+     "public/photos-ref/IMG_2204.jpg",
+     "public/photos-ref/IMG_2205.jpg",
+     "docs/reviews/pool-deck-outline/IMG_2204-pumpbox.png",
+     "docs/reviews/pool-deck-outline/IMG_2205-pumpbox.png",
+     "data/objects.json",
+     "public/map/skeleton.json",
+     "scripts/fit_pump_box.py",
+     "data/photo_poses.json"
+    ],
+    "residualsConfirmed": true,
+    "notes": "Refit confirmed. fit_pump_box.py reproduces centre (-171.28, 19.60) and turn 40.1 degrees, with misses of 1.2-10.2 px (0.08 m rms, worst 0.15 m). Projected through both cameras, the refit box lies on the photographed lid and base: within 2 px in IMG_2205 except the top-right corner at 10 px, and a steady 8-10 px left in IMG_2204 (that camera's lean). Reviewer held-out check: the IMG_2204 base front (about 1275,852) and base left (about 1237,819) corners, not used in the fit, miss by about 9 px each (about 0.11 m). The renders match both photos in position and turn. Remaining limits, left to follow-ups: the model box is 1.1 m long against about 1.2 m measured, and it has louvres on all four sides.",
+    "review": "docs/reviews/pool-deck-outline/REVIEW.md"
+   },
+   "previousReviews": [
+    {
+     "kind": "agent",
+     "id": "reviewer-subagent-rv7k2p",
+     "date": "2026-11-15",
+     "verdict": "approved-with-notes",
+     "sourcesInspected": [
+      "public/photos-ref/IMG_2204.jpg",
+      "public/photos-ref/IMG_2205.jpg",
+      "docs/reviews/pool-deck-outline/IMG_2204-pumpbox.png",
+      "docs/reviews/pool-deck-outline/IMG_2205-pumpbox.png",
+      "docs/reviews/pool-deck-outline/IMG_2204-after.png",
+      "docs/reviews/pool-deck-outline/IMG_2205-after.png",
+      "data/objects.json",
+      "public/map/skeleton.json",
+      "src/slice.ts",
+      "src/types.ts",
+      "data/photo_poses.json"
+     ],
+     "residualsConfirmed": true,
+     "notes": "Box now sits where both photos show it, about 1.4 m east of the old spot. The model box projected through both solved cameras misses my independent corner picks (IMG_2205 base left/front, top left/front/right; IMG_2204 top left/front/right) by 0.14 m rms, worst 0.23 m, inside the 0.3 m tolerance. But fit pick (684,799) in IMG_2205 is not the base corner: it is where the glass panel edge crosses the box's right vertical edge, about halfway up. The hidden base is at about (684,813), which casts to (-170.67,19.80), about 0.5 m from the recorded (-170.69,19.30). IMG_2205's own top-right corner misses by 16 px, so the residual is not only IMG_2204's lean. A joint fit to both cameras gives centre (-171.28,19.62) and a turn of about 40 degrees. Recommend refitting and re-checking before merge; the current placement passes as it is. The model puts louvres on all four sides, but the photo shows them on one face only.",
+     "review": "docs/reviews/pool-deck-outline/REVIEW.md",
+     "ofChange": "Pump box o4 moved from (-172.66, 20.19) to (-171.37, 19.45) and turned 52.6 degrees (new optional `turn` on pump boxes in src/slice.ts)."
+    }
+   ]
+  }
  ]
 }

@@ -1789,6 +1789,39 @@
    "render": "docs/reviews/north-pool-station-foreground/IMG_2204-after.png",
    "result": "matches",
    "notes": "Nothing next to the camera blocks the view any more: the hedges below the station, the lawn, the pool and its deck and the north row line up with the photo. The generic plant shapes and the missing parasols and glass fence are detail differences outside this task. Camera: the solved station pose (data/photo_poses.json); a photographic diagnostic, not placement approval. Agent-reviewed only."
+  },
+  {
+   "task": "pool-deck-outline",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "pool:north",
+   "photo": "IMG_2204.jpg",
+   "render": "docs/reviews/pool-deck-outline/IMG_2204-after.png",
+   "before": "docs/reviews/pool-deck-outline/IMG_2204-before.png",
+   "result": "matches",
+   "notes": "The east tongue now ends in the photo's square corner by the pump box, and the ladder hangs into the pocket north of it; the south-west tongue is square with its ladder on the north edge, though the strelitzias hide most of it here. The glass fence is left out by Dave's decision, and the model's strelitzias stand a little east of the photo's. Rendered with Show details through the solved station camera (data/photo_poses.json); measurement in docs/reviews/pool-deck-outline. A photographic diagnostic; approval is the measured-approval review."
+  },
+  {
+   "task": "pool-deck-outline",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "pool:north",
+   "photo": "IMG_2205.jpg",
+   "render": "docs/reviews/pool-deck-outline/IMG_2205-after.png",
+   "before": "docs/reviews/pool-deck-outline/IMG_2205-before.png",
+   "result": "matches",
+   "notes": "Both tongues follow the photo: the east tongue's straight edge and square corner, the pocket with its ladder, and the square south-west tongue at the left edge. The corrected ring lies on the photographed water edge at 0.09 m rms through this camera. Rendered with Show details through the solved station camera (data/photo_poses.json); measurement in docs/reviews/pool-deck-outline. A photographic diagnostic; approval is the measured-approval review."
+  },
+  {
+   "task": "pool-deck-outline",
+   "checked": "2026-11-15",
+   "by": "Claude",
+   "feature": "pool:north",
+   "photo": "IMG_2206.jpg",
+   "render": "docs/reviews/pool-deck-outline/IMG_2206-after.png",
+   "before": "docs/reviews/pool-deck-outline/IMG_2206-before.png",
+   "result": "matches",
+   "notes": "The south-west tongue is square with the ladder over its north edge, as photographed; its tip draws about 20 px (0.25 m) from the photo's, which is this camera's disagreement with the other two station cameras and shows on unchanged edges too. Rendered with Show details through the solved station camera (data/photo_poses.json); measurement in docs/reviews/pool-deck-outline. A photographic diagnostic; approval is the measured-approval review."
   }
  ],
  "legacyUnchecked": [

@@ -1,14 +1,14 @@
 {
  "version": 1,
- "inputDigest": "712f343aabf9e9426f6f9cd8ce8177d797a17099802905172dc37ec45025ae9b",
+ "inputDigest": "ef827872f547aae55feffff11b690b8d12d8672e9bfba43defcc640032970427",
  "summary": {
   "unplaced": 2,
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 442,
-  "photosCitedByModel": 195,
-  "modelFeaturesWithPhotoCitations": 187
+  "features": 443,
+  "photosCitedByModel": 197,
+  "modelFeaturesWithPhotoCitations": 189
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -1788,7 +1788,12 @@
    "id": "pool:north",
    "name": "north pool",
    "kind": "pool",
-   "source": "registry"
+   "source": "registry ring with measured corrections: Deck tongue east of the steps (pump box) and the ladder pocket north of it; Deck tongue with the ladder, south-west of the steps",
+   "evidence": [
+    "IMG_2204.jpg",
+    "IMG_2205.jpg",
+    "IMG_2206.jpg"
+   ]
   },
   {
    "id": "pool:middle",
@@ -3292,6 +3297,17 @@
    ]
   },
   {
+   "id": "barraka_boardwalk.json:barraka-barbecue-boat",
+   "name": "Sand-filled barbecue boat",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2223.jpg",
+    "IMG_2346.jpg",
+    "IMG_2347.jpg"
+   ]
+  },
+  {
    "id": "beach_verge.json:barraka-front-verge",
    "name": "Grass in front of the beach gateway and railings",
    "kind": "reference feature",
@@ -3300,8 +3316,11 @@
     "IMG_2226.jpg",
     "IMG_2481.jpg",
     "IMG_2482.jpg",
+    "IMG_2483.jpg",
     "IMG_2609.jpg",
-    "IMG_2631.jpg"
+    "IMG_2631.jpg",
+    "IMG_2633.jpg",
+    "IMG_2770.jpg"
    ]
   },
   {
@@ -3313,8 +3332,11 @@
     "IMG_2226.jpg",
     "IMG_2481.jpg",
     "IMG_2482.jpg",
+    "IMG_2483.jpg",
     "IMG_2609.jpg",
-    "IMG_2631.jpg"
+    "IMG_2631.jpg",
+    "IMG_2633.jpg",
+    "IMG_2770.jpg"
    ]
   },
   {
@@ -8116,6 +8138,12 @@
   },
   {
    "from": "photo:IMG_2204.jpg",
+   "to": "pool:north",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2204.jpg",
    "to": "backdrop.json:photo-trees",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -8175,6 +8203,12 @@
    "relation": "possibly-in-view",
    "distance": 39.7,
    "angleOffset": 8.2
+  },
+  {
+   "from": "photo:IMG_2205.jpg",
+   "to": "pool:north",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2205.jpg",
@@ -8250,6 +8284,12 @@
    "relation": "possibly-in-view",
    "distance": 35.8,
    "angleOffset": 3.7
+  },
+  {
+   "from": "photo:IMG_2206.jpg",
+   "to": "pool:north",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2206.jpg",
@@ -8607,6 +8647,12 @@
   {
    "from": "photo:IMG_2223.jpg",
    "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2223.jpg",
+   "to": "barraka_boardwalk.json:barraka-barbecue-boat",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -11893,6 +11939,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2346.jpg",
+   "to": "barraka_boardwalk.json:barraka-barbecue-boat",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2347.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -11931,6 +11983,12 @@
   {
    "from": "photo:IMG_2347.jpg",
    "to": "barraka_boardwalk.json:barraka-beach-seating",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2347.jpg",
+   "to": "barraka_boardwalk.json:barraka-barbecue-boat",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -13859,6 +13917,18 @@
   {
    "from": "photo:IMG_2483.jpg",
    "to": "area:paseo",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2483.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -17627,6 +17697,18 @@
    "gap": 0
   },
   {
+   "from": "photo:IMG_2633.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2633.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2634.jpg",
    "to": "area:paseo",
    "relation": "camera-nearby",
@@ -20296,6 +20378,18 @@
    "relation": "possibly-in-view",
    "distance": 36.4,
    "angleOffset": 18.4
+  },
+  {
+   "from": "photo:IMG_2770.jpg",
+   "to": "beach_verge.json:barraka-front-verge",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2770.jpg",
+   "to": "beach_verge.json:barraka-front-shrubs",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2771.jpg",

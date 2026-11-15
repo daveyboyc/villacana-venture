@@ -1,8 +1,8 @@
 [
  {"id": "o1", "kind": "pool_steps", "x": -179.26, "z": 17.59, "evidence": "photo:reference/03-07 (north pool, sent in chat)"},
- {"id": "o2", "kind": "pool_ladder", "x": -177.61, "z": 23.49, "evidence": "photo:reference/03-07 (north pool, sent in chat)"},
- {"id": "o3", "kind": "pool_ladder", "x": -173.96, "z": 20.19, "evidence": "photo:reference/03-07 (north pool, sent in chat)"},
- {"id": "o4", "kind": "pump_box", "x": -172.66, "z": 20.19, "evidence": "photo:reference/03-07 (north pool, sent in chat)"},
+ {"id": "o2", "kind": "pool_ladder", "x": -177.88, "z": 22.53, "evidence": "photo:IMG_2205.jpg, IMG_2206.jpg (solved station camera)", "note": "Moved 2026-11-15 with the corrected water ring (data/pool_ring_corrections.json): its rails' deck anchors cast through the solved IMG_2205 camera to (-178.11, 23.3) and (-177.61, 23.28), and it descends over the south-west tongue's north edge into the west lobe; it stood on the old rounded nose."},
+ {"id": "o3", "kind": "pool_ladder", "x": -172.62, "z": 16.88, "evidence": "photo:IMG_2205.jpg, IMG_2204.jpg (solved station camera)", "note": "Moved 2026-11-15 with the corrected water ring: the east ladder descends into the ladder pocket north of the deck tongue (deck anchors cast through the solved IMG_2205 camera to (-172.45, 17.46) and (-172.0, 17.43)); no ladder stands at the tongue's tip, where it was."},
+ {"id": "o4", "kind": "pump_box", "x": -171.28, "z": 19.6, "evidence": "photo:IMG_2205.jpg, IMG_2204.jpg (solved station camera)", "turn": 40.1, "note": "Moved 2026-11-15 and refitted after review: the box (model size 1.1 by 0.9 by 0.57 m) fitted jointly to its visible corners in the solved IMG_2205 (base left and front, top left, front and right) and IMG_2204 (top left, front and right) cameras: centre (-171.28, 19.60), turned 40 degrees; corners within 1-10 px, about 0.08 m rms, worst 0.15 m. It stood about 1.4 m west, crowding the corrected deck tongue's coping."},
  {"id": "o5", "kind": "life_ring", "x": -180.2, "z": 16.4, "evidence": "photo:IMG_2204.jpg"},
  {"id": "o6", "kind": "life_ring", "x": -170.66, "z": 21.69, "evidence": "photo:reference/03-07 (north pool, sent in chat)"},
  {"id": "o7", "kind": "bird_of_paradise", "x": -185.26, "z": 22.49, "evidence": "photo:reference/03-07 (north pool, sent in chat)"},
