@@ -97,3 +97,16 @@ afterwards:
 - **Bougainvillea:** the blue-awning house's plant moves to (-187.6, 11.3) and climbs from 2 m above the
   terrace, above the awning. The parasol house's plant reaches 4.8 m.
 - **Hedges:** 1.15 m high, to match the photo's tops.
+
+### Final check
+
+The reviewer's final verdict is satisfactory-with-notes. Its two last numbers are applied:
+- the alley canopy is lowered to a 2.5 m springing above the alley ground, giving a top of about 3.75 m;
+- the blue-awning house's bougainvillea runs from 3.1 m to 4.9 m above the ground at its wall.
+
+The remaining notes are known follow-ups:
+- the east end of the plinth is left 1 m short for the lane;
+- the pollarded tree uses a generic leafy model, where the photo shows bare knuckles;
+- the window mouldings and the planting inside the patios are not modelled;
+- the lawn tree is dropped by the route guard;
+- the porch roofs are drawn as pergolas, where the photos show tiled roofs.

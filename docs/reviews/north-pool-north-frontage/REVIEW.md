@@ -200,3 +200,55 @@ the balcony.
 
 All four fixes are small: the canopy rotation sign, the awning `height` values, np-bougainvillea-1, and
 the hedge height. After them I would expect `satisfactory-with-notes`.
+
+## Final check (round two of fixes)
+
+I compared the re-rendered `IMG_2204-after.png`, `IMG_2205-after.png`, `north-row-layout.png` and
+`north-row-details.png` with the photos, as before. Pixel coordinates are full-size photo pixels.
+
+1. **Canopy.** The orientation is fixed. It now arches upward over the alley mouth on two posts, in
+   Layout and in both cameras, and its span is right.
+
+   It is still about 0.9 m too high.
+   - The render's springing is at IMG_2204 y 425 and IMG_2205 y 440. The photo's canopy is at
+     IMG_2204 y 440-455 and IMG_2205 y 462-478.
+   - Cast onto the arch line, the render's springing and apex are at about 4.2-4.3 m and 4.7 m world.
+     The photo's canopy is at 3.76-3.86 m.
+
+   The cause is that `height` (3.4) is added to the alley ground, which is about 0.85 m. It is not a
+   world height. Set `height` to about 2.5 with `rise` 0.4. That gives a top of about 3.75 m.
+2. **Awnings.** These now match.
+   - The white awning is at IMG_2205 x 609-732, y 430-476, against the photo's 595-755, 432-482.
+   - The grey awning's front edge is at y 492, against 486. o12's canopy still hides its top, which is a
+     known issue with the generic plant model.
+   - The blue awning's top is at IMG_2204 y 409, against about 412, and it no longer enters the
+     balcony. Its striped face reaches about 15 px lower than the photo's thin valance (y 443 against
+     428). This is minor.
+3. **Bougainvillea.**
+   - np-bougainvillea-3 now matches: IMG_2205 y 378-501 against 368-491, and IMG_2204 y 374-497 against
+     350-468. It is still a little narrow.
+   - np-bougainvillea-1 is still about 1 m low and narrow. It renders at IMG_2204 x 607-657,
+     y 400-475, straddling the awning. The photo's is at x 580-682, y 355-415, on and above the
+     balcony. `floorY` at (-187.6, 11.31) appears to be the ground, about 0.9 m, not the 1.93 m
+     terrace. Use `from` about 3.1 and `height` about 4.9, or place it inside the terrace. This is minor.
+4. **Hedges.** At 1.15 m their tops now match: IMG_2205 y 537 against 536, and IMG_2204 y 525 against
+   518.
+
+Layout vs Show details is unchanged and correct.
+
+### Final verdict: **satisfactory-with-notes**
+
+All the blocking problems from the first review and the re-check are fixed:
+- the wrong balconies are removed;
+- the colours are right;
+- the hedges are continuous, end correctly and are the right height;
+- the awnings are at the photographed heights;
+- the canopy is the right way up.
+
+Notes to carry, none blocking:
+- Set the alley canopy's `height` to about 2.5. It is 0.9 m too high. It is a one-value data fix, and I
+  recommend making it before merging.
+- np-bougainvillea-1 is about 1 m low.
+- The east end of the plinth is left 1 m short for the lane.
+- The out-of-scope items listed in the first review remain: the generic o12 canopy, the window
+  mouldings, the planting inside the patios, the lawn tree o9 and the pergola porch roofs.
