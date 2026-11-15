@@ -67,5 +67,24 @@
    "IMG_2223.jpg"
   ],
   "trust": "IMG_2225 supports straw parasols and paired low wooden cream-cushion beds on the right of the aisle in IMG_2347. Three representative pairs follow the southwest seating patch visible on the aerial (not a complete seasonal row or count). Dimensions and individual positions are estimates. Blue/white plastic loungers on the other side in IMG_2223 are a different type and are not replaced by wooden beds."
+ },
+ "boat": {
+  "id": "barraka-barbecue-boat",
+  "name": "Sand-filled barbecue boat",
+  "centre": [39.0, 105.7],
+  "ring": [
+   [37.53, 104.89],
+   [38.40, 104.14],
+   [40.05, 106.94]
+  ],
+  "length": 3.2,
+  "beam": 1.15,
+  "gunwale": 0.45,
+  "evidence": [
+   "IMG_2223.jpg",
+   "IMG_2346.jpg",
+   "IMG_2347.jpg"
+  ],
+  "trust": "Estimated schematic of the sand-filled metal cooking boat left of the green aisle in IMG_2223, IMG_2346 and IMG_2347; position ±3 m, not a surveyed placement. The thatched cooking shelter, net-covered mound and kayaks stay unbuilt."
  }
 }

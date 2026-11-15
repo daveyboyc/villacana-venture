@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 d = json.loads((ROOT/'data/barraka_boardwalk.json').read_text())
 s = json.loads((ROOT/'public/map/skeleton.json').read_text())
 photos = {p['file'] for p in json.loads((ROOT/'public/photos-ref/manifest.json').read_text())}
-for f in (d['boardwalk'], d['sign'], d['seating']):
+for f in (d['boardwalk'], d['sign'], d['seating'], d['boat']):
  assert f['evidence'] and set(f['evidence']) <= photos
  assert 'estimat' in f['trust'].lower() or 'unknown' in f['trust'].lower()
 def distance(p,a,b):
@@ -43,5 +43,13 @@ def left(point):return ((b[1]-a[1])*(point[0]-a[0])-(b[0]-a[0])*(point[1]-a[1]))
 roof=s['seafront']['restaurant']['ring'];centre=[sum(p[j] for p in roof)/len(roof) for j in (0,1)]
 assert left(centre)<-w['width']/2,'Restaurant must be right of the seaward aisle, per owner identification'
 assert left(d['sign']['point'])>w['width']/2+1.25,'Planter must be left of the aisle, clear of its full width'
+boat=d['boat']
+assert boat['id']=='barraka-barbecue-boat' and '±3' in boat['trust']
+assert left(boat['centre'])>w['width']/2 and all(left(p)>w['width']/2 for p in boat['ring']),'Boat must stay left of the aisle'
+boat_gap=min(distance(boat['centre'],a,b) for a,b in zip(w['points'],w['points'][1:]))
+assert boat_gap>=w['width']/2+1.70+.15,f'Boat does not clear the boardwalk at radius 1.70 ({boat_gap:.2f} m)'
+src=(ROOT/'src/barraka-boardwalk.ts').read_text()
+assert 'barrakaBarbecueBoat' in src and 'barraka-barbecue-boat' in src and '1.70' in src
+assert 'barrakaBarbecueBoat' in (ROOT/'src/blueprint.ts').read_text() and 'barrakaBarbecueBoat' in (ROOT/'src/slice.ts').read_text()
 assert math.dist(a,min(roof,key=lambda p:math.dist(p,a)))<4,'Landward aisle context must remain beside actual Barraka'
 print('Barraka: source-supported flank/side relations, estimated finite access and full prop clearance PASS; metre placement remains unapproved')

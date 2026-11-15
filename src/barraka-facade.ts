@@ -95,7 +95,7 @@ function letterTexture(): THREE.CanvasTexture {
  * stays where it is. The group is already at the beach height, the same height as
  * the sand, so it is not draped again. Visible in Layout and with Show details.
  */
-export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number, terrace: Vec2[] = []): void {
+export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number, terrace: Vec2[] = [], deckY: (x: number, z: number) => number = () => baseY): void {
   const c = centroid(ring);
   const group = new THREE.Group();
   group.name = "barraka-facade";
@@ -231,13 +231,12 @@ export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number
   const panel = new THREE.Mesh(new THREE.BoxGeometry(1.6, 0.06, 0.9), std("#243044", 0.4));
   panel.position.set(0, 0.45, -0.55); panel.rotation.x = -0.7; panel.castShadow = true; tank.add(panel);
 
-  if (scene.userData.layoutOnly) return;
   const routes = [...(scene.userData.protectedRoutes as ProtectedRoute[] ?? [])];
   const clear = (x: number, z: number, radius: number) => routeClearance(routes, x, z, radius);
   const nearRing = (x: number, z: number) => ring.some((a, i) => closestOnSegment(x, z, a[0], a[1], ring[(i + 1) % ring.length][0], ring[(i + 1) % ring.length][1]).d < 1.2);
-  const placeSeat = (x: number, z: number, yaw: number, radius: number, make: (g: THREE.Group) => void, name: string) => {
+  const placeSeat = (x: number, z: number, yaw: number, radius: number, make: (g: THREE.Group) => void, name: string, y = 0) => {
     if (nearRing(x, z) || !clear(x, z, radius)) return;
-    const g = new THREE.Group(); g.name = name; g.position.set(x, 0, z); g.rotation.y = yaw; make(g); group.add(g);
+    const g = new THREE.Group(); g.name = name; g.position.set(x, y, z); g.rotation.y = yaw; make(g); group.add(g);
   };
   const table = (g: THREE.Group) => {
     putBox(g, 0.72, 0.05, 0.72, 0, 0.74, 0, std("#2a2622", 0.6));
@@ -248,6 +247,25 @@ export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number
     putBox(g, 0.46, 0.42, 0.05, 0, 0.7, -0.2, chairMat);
     for (const x of [-0.18, 0.18]) putBox(g, 0.05, 0.46, 0.05, x, 0.23, 0, chairMat);
   };
+  // The beach-terrace chairs and the white rail sit on the deck, in Layout and with Show details.
+  for (const [x, z] of data.seating.terrace as Vec2[]) {
+    placeSeat(x, z, 0.6, 0.55, table, "barraka-seat-table", deckY(x, z) - baseY);
+    placeSeat(x + 0.7, z, 0.6, 0.35, chair, "barraka-seat-chair", deckY(x + 0.7, z) - baseY);
+    placeSeat(x - 0.7, z, 0.6 + Math.PI, 0.35, chair, "barraka-seat-chair", deckY(x - 0.7, z) - baseY);
+  }
+  // White rail around the beach terrace, except where it meets the building or a path (IMG_2606).
+  for (let i = 0; i < terrace.length; i++) {
+    const a = terrace[i], b = terrace[(i + 1) % terrace.length];
+    const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    const mx = (a[0] + b[0]) / 2, mz = (a[1] + b[1]) / 2;
+    if (length < 1 || nearRing(mx, mz) || !clear(mx, mz, 0.2)) continue;
+    const yaw = Math.atan2(-(b[1] - a[1]), b[0] - a[0]);
+    const rail = new THREE.Group(); rail.name = "barraka-terrace-rail"; rail.position.set(mx, deckY(mx, mz) - baseY, mz); rail.rotation.y = yaw; group.add(rail);
+    putBox(rail, length, 0.08, 0.08, 0, 0.92, 0, plaster);
+    putBox(rail, length, 0.08, 0.06, 0, 0.48, 0, plaster);
+    for (let s = 0.2; s < length; s += 1.5) putBox(rail, 0.07, 0.92, 0.07, -length / 2 + s, 0.46, 0, plaster);
+  }
+  if (scene.userData.layoutOnly) return;
   const dine = (pts: Vec2[], at: number) => {
     const s = on(pts, at, data.seating.out);
     placeSeat(s.x, s.z, s.yaw, 0.55, table, "barraka-seat-table");
@@ -264,23 +282,6 @@ export function addBarrakaFacade(scene: THREE.Scene, ring: Vec2[], baseY: number
     const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 2.2, 8), std("#cfc8b8")); pole.position.y = 1.1; g.add(pole);
     const furled = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.18, 0.9, 10), std("#f3efe4")); furled.position.y = 1.7; g.add(furled);
   }, "barraka-seat-parasol");
-  for (const [x, z] of data.seating.terrace as Vec2[]) {
-    placeSeat(x, z, 0.6, 0.55, table, "barraka-seat-table");
-    placeSeat(x + 0.7, z, 0.6, 0.35, chair, "barraka-seat-chair");
-    placeSeat(x - 0.7, z, 0.6 + Math.PI, 0.35, chair, "barraka-seat-chair");
-  }
-  // White rail around the beach terrace, except where it meets the building or a path (IMG_2606).
-  for (let i = 0; i < terrace.length; i++) {
-    const a = terrace[i], b = terrace[(i + 1) % terrace.length];
-    const length = Math.hypot(b[0] - a[0], b[1] - a[1]);
-    const mx = (a[0] + b[0]) / 2, mz = (a[1] + b[1]) / 2;
-    if (length < 1 || nearRing(mx, mz) || !clear(mx, mz, 0.2)) continue;
-    const yaw = Math.atan2(b[0] - a[0], b[1] - a[1]);
-    const rail = new THREE.Group(); rail.name = "barraka-terrace-rail"; rail.position.set(mx, 0, mz); rail.rotation.y = yaw; group.add(rail);
-    putBox(rail, length, 0.08, 0.08, 0, 0.92, 0, plaster);
-    putBox(rail, length, 0.08, 0.06, 0, 0.48, 0, plaster);
-    for (let s = 0.2; s < length; s += 1.5) putBox(rail, 0.07, 0.92, 0.07, -length / 2 + s, 0.46, 0, plaster);
-  }
 }
 
 function putBox(parent: THREE.Object3D, w: number, h: number, d: number, x: number, y: number, z: number, mat: THREE.Material): void {
