@@ -6,9 +6,9 @@
   "suggested": 259,
   "needs-review": 220,
   "photos": 482,
-  "features": 472,
+  "features": 473,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 218
+  "modelFeaturesWithPhotoCitations": 219
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -802,6 +802,7 @@
     "elena_north.json:elena-north-tree-bed-1",
     "elena_north.json:elena-north-garden-door-path",
     "elena_east_patios.json:elena-east-patios-west-wall",
+    "elena_east_patios.json:elena-east-patios-divider-south",
     "elena_east_patios.json:elena-east-patios-pergola"
    ],
    "geometryReview": "No recorded photo-to-model comparison",

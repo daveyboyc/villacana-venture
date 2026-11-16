@@ -1127,7 +1127,7 @@
     "generated": 75
    },
    "placement": {
-    "features": 36,
+    "features": 37,
     "verified": 0,
     "disputed": 2
    },
@@ -1153,22 +1153,22 @@
    "confidence": {
     "photographed": 12,
     "estimated": 21,
-    "inferred": 2,
+    "inferred": 3,
     "registry": 1,
-    "gaps": 4
+    "gaps": 5
    },
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 108, 108 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
-    "How sure: 12 photographed, 21 estimated, 2 inferred, 4 known gaps.",
-    "Placement: 0 of 36 features verified, 2 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 0 still open; 3 evidence requests. This is not whole-area acceptance."
+    "How sure: 12 photographed, 21 estimated, 3 inferred, 5 known gaps.",
+    "Placement: 0 of 37 features verified, 2 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 1 still open; 4 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 0,
+     "ready": 1,
      "needs-evidence": 0,
      "needs-source-access": 0,
      "awaiting-review": 0,
@@ -1216,13 +1216,26 @@
       "features": [],
       "tasks": [],
       "state": "received"
+     },
+     {
+      "id": "photo-elena-east-patios-inside",
+      "area": "elena",
+      "kind": "photo",
+      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+      "photoRequest": "elena-east-patios-inside",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 6
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 2 spots",
+    "headline": "Photos needed: 3 spots",
     "requests": [
      {
       "id": "elena-25-far-end",
@@ -1252,6 +1265,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-east-patios-inside",
+      "at": [
+       -141.0,
+       40.0
+      ],
+      "look": [
+       -145.0,
+       40.0
+      ],
+      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -2969,7 +2998,7 @@
     "generated": 2480
    },
    "placement": {
-    "features": 472,
+    "features": 473,
     "verified": 0,
     "disputed": 36
    },
@@ -3183,22 +3212,22 @@
    "confidence": {
     "photographed": 77,
     "estimated": 150,
-    "inferred": 13,
+    "inferred": 14,
     "registry": 232,
-    "gaps": 32
+    "gaps": 33
    },
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 498, 479 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 77 photographed, 150 estimated, 13 inferred, 32 known gaps.",
-    "Placement: 0 of 472 features verified, 49 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 10 still open; 42 evidence requests. This is not whole-area acceptance."
+    "How sure: 77 photographed, 150 estimated, 14 inferred, 33 known gaps.",
+    "Placement: 0 of 473 features verified, 49 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 11 still open; 43 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 5,
+     "ready": 6,
      "needs-evidence": 4,
      "needs-source-access": 0,
      "awaiting-review": 1,
@@ -3799,13 +3828,26 @@
       "features": [],
       "tasks": [],
       "state": "open"
+     },
+     {
+      "id": "photo-elena-east-patios-inside",
+      "area": "elena",
+      "kind": "photo",
+      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+      "photoRequest": "elena-east-patios-inside",
+      "status": "open",
+      "sources": [],
+      "features": [],
+      "tasks": [],
+      "state": "open"
      }
     ],
     "readyTasks": 40
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 33 spots",
+    "headline": "Photos needed: 34 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4075,6 +4117,22 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
+      "priority": 2,
+      "state": "open",
+      "photos": []
+     },
+     {
+      "id": "elena-east-patios-inside",
+      "at": [
+       -141.0,
+       40.0
+      ],
+      "look": [
+       -145.0,
+       40.0
+      ],
+      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
       "priority": 2,
       "state": "open",
       "photos": []

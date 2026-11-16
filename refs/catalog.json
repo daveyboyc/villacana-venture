@@ -786,6 +786,7 @@
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-door-path",
    "elena_east_patios.json:elena-east-patios-west-wall",
+   "elena_east_patios.json:elena-east-patios-divider-south",
    "elena_east_patios.json:elena-east-patios-pergola"
   ],
   "looksAt": [
@@ -6035,8 +6036,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
-   "elena_east_patios.json:elena-east-patios-pergola",
-   "backdrop.json:aerial-trees"
+   "elena_east_patios.json:elena-east-patios-divider-south",
+   "elena_east_patios.json:elena-east-patios-pergola"
   ],
   "subject": "The private patios east of the Elena beds"
  },

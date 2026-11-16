@@ -111,6 +111,17 @@
       "task": "north-pool-north-frontage",
       "status": "open",
       "requests": ["north-pool-north-row-ground"]
+    },
+    {
+      "id": "elena-east-pergola-divider",
+      "area": "elena",
+      "kind": "placement",
+      "description": "IMG_2199 shows the patio pergola's beam on the garden wall starting at the closed door's raised coping, which puts the beam end at or just south of the aerial-inferred dividing wall; the pergola is drawn against the north side of that wall. Which patio the pergola belongs to, and whether the divider meets the garden wall where inferred, needs a view from inside the patios.",
+      "sources": ["IMG_2199.jpg", "IMG_2200.jpg"],
+      "features": [],
+      "task": "elena-east-patios",
+      "status": "open",
+      "requests": []
     }
   ]
 }
