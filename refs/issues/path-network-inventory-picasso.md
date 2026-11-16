@@ -5,7 +5,7 @@ Task `path-network-inventory-picasso` · area **Pintor Picasso and the car park*
 ## Read first
 
 - `AGENTS.md`, `docs/HANDOVER.md`
-- `refs/areas/picasso.md` and the contact sheet `villacana-reference/contact-sheets/picasso.jpg`
+- `refs/areas/picasso.md` and the contact sheet `reference/contact-sheets/picasso.jpg`
 - docs: `docs/STREET_LAYOUT.md`
 - data: `data/street_layout.json`, `data/picasso_service_road.json`
 - src: `src/picasso-service-road.ts`

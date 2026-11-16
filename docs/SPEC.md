@@ -160,7 +160,7 @@ like one picture.
 | Lane names and positions | Catastro `AD.ADDRESS` | Official names, each tied to door positions |
 | Lanes and lawns | Derived: the space inside the block that is not building or pool, split using the aerial photo | The registry does not record them as shapes |
 | Coast, beach, surrounding roads | OpenStreetMap (`data/villacana.osm.gz`) | Good outside the block, poor inside it |
-| Look and detail | Dave's reference images (private `villacana-reference` repo) | Compared by eye only, never traced |
+| Look and detail | Dave's reference images (`reference/` directory) | Compared by eye only, never traced |
 
 Apple imagery is reference only; no geometry is copied from it. Google imagery may be
 traced from and published with credit (Dave, 2026-10-31; see AGENTS.md).

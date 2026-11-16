@@ -118,6 +118,8 @@ let seaside: Seaside | undefined;
 /** The ramp at the foot of Calle Guillermo, cut below street level (src/lowered-lanes.ts). */
 let lowered: ReturnType<typeof loweredRoads> = [];
 /** Ground height for anything standing on the ground. */
+/** A photographed tree whose canopy overhangs a route keeps only its trunk clear of it (data/objects.json canopyOverhangs). */
+const TRUNK_CLEARANCE = 0.3;
 const groundY = (x: number, z: number): number => seaside?.inZone(x, z) ? seaside.y(x, z) : poolGroundY(x, z) + laneDrop(lowered, x, z);
 /** The same, with the lie of the land added: for things placed after the scene is built. */
 const liveGroundY = (x: number, z: number): number => groundY(x, z) + (seaside?.inZone(x, z) ? 0 : siteY(x, z));
@@ -300,7 +302,7 @@ async function boot(): Promise<void> {
   const nearbyPools = skeleton.pools.filter((p) => near(p.ring));
   addPoolDecks(scene, nearbyPools, deckSlabCanvas(), skeleton.viewRotation);
   const pools = addPools(scene, poolRings, nearbyPools.map((p) => p.kind === "toddler" ? { color: "#2346ab", tileColor: "#4563bf", deckY: LOWER_POOL_Y } : p.kind === "main" ? { color: "#35d5dc", tileColor: "#b8f2ef", deckY: LOWER_POOL_Y } : {}));
-  const props=skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,propRadius(p.kind)));
+  const props=skeleton.props.filter((p) => Math.hypot(p.x - centre.x, p.z - centre.z) < RADIUS && !inElenaNorthReview(p.x,p.z) && !inElenaEastPatios(p.x,p.z) && !inCervantesEastSouthPatios(p.x,p.z) && canPlaceDecoration(p.x,p.z,p.canopyOverhangs?TRUNK_CLEARANCE:propRadius(p.kind)));
   const inLayout=(p:Skeleton["props"][number])=>p.kind==="pool_steps"||p.kind==="pool_ladder";
   addProps(scene, poolRings, props.filter(inLayout));
   if(!layoutOnly)detailSteps.push({spatial:true,build:(into,keep)=>addProps(into, poolRings, props.filter(p=>!inLayout(p)&&keep(p.x,p.z)))});
@@ -1528,7 +1530,7 @@ function addProps(scene: THREE.Scene, poolRings: Vec2[][], props: Skeleton["prop
         // Shown on the master map; not yet built in 3D.
         break;
       default:
-        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z });
+        if (p.kind in SPRITE_SIZE) (sprites[p.kind as SpriteKind] ??= []).push({ x: p.x, z: p.z, ...(p.canopyOverhangs ? { clearance: TRUNK_CLEARANCE } : {}) });
     }
   }
   for (const [kind, places] of Object.entries(fittings)) addPoolFittings(scene, kind as PoolFitting, places, steel);

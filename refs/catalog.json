@@ -20,6 +20,27 @@
   "citedBy": []
  },
  {
+  "id": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+  "title": "Wooden boardwalk and rope-lined sand path to the sea",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "No EXIF GPS; camera unplaced.",
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1AfTPbU1Jh0JyM5coWOWU2x5UYkAsJ2z5/view?usp=drivesdk",
+  "citedBy": []
+ },
+ {
   "id": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
@@ -16294,6 +16315,46 @@
   ]
  },
  {
+  "id": "IMG_2709.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2709.jpg",
+  "title": "Calle Eva west: porch with red ramp, tiles and middle pool gate ahead",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "levels",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-27",
+  "originalUrl": "https://drive.google.com/file/d/1r6QQhnQYPG3qhfDUcovqjGWbPqlQdPv3/view?usp=drivesdk",
+  "camera": {
+   "x": -149.2,
+   "z": 105.8,
+   "heading": 39,
+   "accuracy": 2.6,
+   "altitude": 7.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -141.0,
+   96.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Calle Eva west looking north-east past an arched porch and red studded ramp toward the middle pool south-west gateway"
+ },
+ {
   "id": "IMG_2710.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2710.jpg",
@@ -16575,6 +16636,45 @@
   ]
  },
  {
+  "id": "IMG_2722.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2722.jpg",
+  "title": "Calle Guillermo: barred windows with tiled sills and bougainvillea",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-28",
+  "originalUrl": "https://drive.google.com/file/d/1Ndp-QK8nOr4tsLzNMRJESkNmD5JApUwf/view?usp=drivesdk",
+  "camera": {
+   "x": -40.3,
+   "z": 87.5,
+   "heading": 345,
+   "accuracy": 2.7,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -43.0,
+   77.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "East-side house windows with black grilles, tiled sills and bougainvillea along Calle Guillermo"
+ },
+ {
   "id": "IMG_2723.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2723.jpg",
@@ -16683,6 +16783,45 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees"
   ]
+ },
+ {
+  "id": "IMG_2726.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2726.jpg",
+  "title": "Calle Eva east: octagonal paving, white bench and hedged planters",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-28",
+  "originalUrl": "https://drive.google.com/file/d/1Df7_vz4cpzzZJITbm88bBTSfvOxrTH1G/view?usp=drivesdk",
+  "camera": {
+   "x": -62.2,
+   "z": 52.6,
+   "heading": 241,
+   "accuracy": 2.2,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -72.0,
+   58.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "street:eva",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Calle Eva east looking west-south-west past the white bench, lantern post and hedged planter walls"
  },
  {
   "id": "IMG_2727.jpg",
@@ -16833,6 +16972,46 @@
    "backdrop.json:aerial-trees",
    "street:eva"
   ]
+ },
+ {
+  "id": "IMG_2731.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2731.jpg",
+  "title": "Calle Eva east: octagonal tiles, white wall with arched hood and strelitzia",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-10-28",
+  "originalUrl": "https://drive.google.com/file/d/1ChDSNm0cLsBGHxmRdfst5eNosKbn4FKo/view?usp=drivesdk",
+  "camera": {
+   "x": -75.9,
+   "z": 59.1,
+   "heading": 245,
+   "accuracy": 2.1,
+   "altitude": 7.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -86.0,
+   64.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "street:eva"
+  ],
+  "subject": "Calle Eva east looking west-south-west toward the Teodoro Rojo junction"
  },
  {
   "id": "IMG_2732.jpg",
@@ -17300,6 +17479,48 @@
   "subject": "the painted crossing right outside the beach gateway, the paseo running on south-west"
  },
  {
+  "id": "IMG_2768.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2768.jpg",
+  "title": "Paseo towards Barraka beside the green bar fence and solar lamp",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "view"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1xUkriaHy7ArFk0ski2kj_uLMivQPRiBw/view?usp=drivesdk",
+  "camera": {
+   "x": -1.5,
+   "z": 131.1,
+   "heading": 31,
+   "accuracy": 2.2,
+   "altitude": 5.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   9.0,
+   114.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:main-lawn",
+   "picasso_lawn_wall.json:picasso-lawn-wall",
+   "seafront_fence.json:main-pool-lawn-railing"
+  ],
+  "subject": "The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead"
+ },
+ {
   "id": "IMG_2769.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2769.jpg",
@@ -17422,6 +17643,49 @@
    "main_pool_lawn.json:lawn-bollards-bins",
    "ground_plan_main_pool.json:lawn-strip-guillermo"
   ]
+ },
+ {
+  "id": "IMG_2772.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2772.jpg",
+  "title": "Calle Guillermo looking north-north-west past the kiosk and lantana planter",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1prTFqILS8Ixe5Jne8B-QfsQrNfeYgyaH/view?usp=drivesdk",
+  "camera": {
+   "x": -14.9,
+   "z": 129.9,
+   "heading": 327,
+   "accuracy": 3.3,
+   "altitude": 5.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -23.0,
+   117.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "ground_plan_main_pool.json:lawn-strip-guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-planter",
+   "street:guillermo",
+   "jorge_lane.json:jorge-lane-guillermo-paving"
+  ],
+  "subject": "Calle Guillermo looking north-north-west past the kiosk, Calle de Jorge plinth corner and lantana planter wall toward the main pool building"
  },
  {
   "id": "IMG_2773.jpg",
@@ -18215,6 +18479,46 @@
   "subject": "The CALLE ALBERTO 22 40 covered porch: arch, red studded ramp, tiled step, plaque and AGUA POTABLE hatch on the back wall"
  },
  {
+  "id": "IMG_2793.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2793.jpg",
+  "title": "Inside the CALLE ALBERTO 22 40 covered passage looking through to the garden arch",
+  "shows": [
+   "eva"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "levels",
+   "signage"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/14m5TmOboDQaX5c9xWKbLuvtpBtOaS6yc/view?usp=drivesdk",
+  "camera": {
+   "x": -103.7,
+   "z": 46.4,
+   "heading": 255,
+   "accuracy": 2.7,
+   "altitude": 7.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -113.0,
+   49.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "The CALLE ALBERTO 22 40 covered passage looking west-south-west from its ramp and plaque through the far arch to the garden path beyond"
+ },
+ {
   "id": "IMG_2794.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2794.jpg",
@@ -18730,6 +19034,128 @@
   ]
  },
  {
+  "id": "IMG_2807.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2807.jpg",
+  "title": "CALLE ELENA 18 36 walkway mouth: steps, red ramp, CASA WILKES sign and hatch",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials",
+   "signage",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1IKMtULmaorVyTtzIRbbtOmdI9rQdIacK/view?usp=drivesdk",
+  "camera": {
+   "x": -151.5,
+   "z": 38.7,
+   "heading": 287,
+   "accuracy": 2.3,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -155.5,
+   39.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_walkway.json:elena-walkway-steps-ramp",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor",
+   "elena_lane_paving.json:elena-north-three-column"
+  ],
+  "subject": "East mouth of the Calle Elena 18 36 covered walkway: steps, red studded ramp and wall plaques"
+ },
+ {
+  "id": "IMG_2808.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2808.jpg",
+  "title": "Inside the Calle Elena 18 36 covered walkway: patterned floor and far gates",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1Ao7fvqARbSDffwWfCYAYQ9J9fr5681IS/view?usp=drivesdk",
+  "camera": {
+   "x": -153.0,
+   "z": 37.4,
+   "heading": 239,
+   "accuracy": 2.3,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor"
+  ],
+  "subject": "Calle Elena 18 36 covered walkway looking west-south-west over the patterned floor and pebble mat toward the twin iron gates"
+ },
+ {
+  "id": "IMG_2809.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2809.jpg",
+  "title": "Calle Elena 18 36 covered walkway: pebble mat, hanging lantern and far arch",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1NV_EFAQa1kHjWHKnBWBIF8Jjdnb9ps7A/view?usp=drivesdk",
+  "camera": {
+   "x": -153.7,
+   "z": 37.7,
+   "heading": 235,
+   "accuracy": 2.3,
+   "altitude": 8.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor"
+  ],
+  "subject": "Calle Elena 18 36 covered walkway looking west-south-west past the pebble mat and hanging lantern toward the iron gates"
+ },
+ {
   "id": "IMG_2810.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2810.jpg",
@@ -18767,6 +19193,88 @@
    "backdrop.json:aerial-trees",
    "elena_walkway.json:elena-walkway-wall-details"
   ]
+ },
+ {
+  "id": "IMG_2811.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2811.jpg",
+  "title": "West end of the Calle Elena 18 36 walkway looking through to the twin iron gates",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "note": "Altitude reads above 9 m, but the picture is at eye level inside the covered walkway (GPS height noise).",
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1XzMqFRIUpgQPDFNSrEnnnIeWjxMaB6Sv/view?usp=drivesdk",
+  "camera": {
+   "x": -154.0,
+   "z": 38.3,
+   "heading": 235,
+   "accuracy": 2.2,
+   "altitude": 10.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor"
+  ],
+  "subject": "West arch of the Calle Elena 18 36 covered walkway and the hedged path to the twin iron gates"
+ },
+ {
+  "id": "IMG_2812.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2812.jpg",
+  "title": "Calle Elena 18 36 covered walkway: barred window, potted shrubs and far gates",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-03",
+  "originalUrl": "https://drive.google.com/file/d/1kBCfEyhkiZoX4FXXIgab3OpxNX7FMCSp/view?usp=drivesdk",
+  "camera": {
+   "x": -153.7,
+   "z": 38.3,
+   "heading": 237,
+   "accuracy": 2.2,
+   "altitude": 8.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor"
+  ],
+  "subject": "West arch of the Calle Elena 18 36 covered walkway looking out to the twin iron gates"
  },
  {
   "id": "IMG_2813.jpg",
@@ -18900,9 +19408,301 @@
   ]
  },
  {
+  "id": "IMG_2965.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2965.jpg",
+  "title": "Cervantes east of Elena looking west-south-west toward the Elena junction",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades",
+   "signage"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1_hZhp8BrwT2DG281eVH63yYXLxShfS-c/view?usp=drivesdk",
+  "camera": {
+   "x": -136.5,
+   "z": 49.2,
+   "heading": 242,
+   "accuracy": 4.2,
+   "altitude": 6.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.0,
+   56.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "street:cervantes",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
+  ],
+  "subject": "Calle Miguel de Cervantes east of Elena looking west-south-west toward the Calle Elena junction"
+ },
+ {
+  "id": "IMG_2966.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2966.jpg",
+  "title": "CALLE DE ELENA corner plaque, fan-palm planter and garden doorway on Cervantes",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "planting",
+   "facades",
+   "layout"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/19ug5o1fWtJCb7Ussv-E4ITBxkJLXSW2K/view?usp=drivesdk",
+  "camera": {
+   "x": -139.0,
+   "z": 50.1,
+   "heading": 249,
+   "accuracy": 4.1,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -148.0,
+   55.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "street:cervantes",
+   "backdrop.json:aerial-trees",
+   "cervantes_patio_walls.json:cervantes-patio-south-3",
+   "cervantes_patio_walls.json:cervantes-patio-north-east"
+  ],
+  "subject": "CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction"
+ },
+ {
+  "id": "IMG_2970.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2970.jpg",
+  "title": "Calle Elena north: projecting barred window with moulded cornice on west facade",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1fD2j8HoS2IEjqOsd2_46yZGGQfFGB9oz/view?usp=drivesdk",
+  "camera": {
+   "x": -146.2,
+   "z": 48.2,
+   "heading": 280,
+   "accuracy": 3.3,
+   "altitude": 7.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -151.0,
+   47.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-planter-box-1",
+   "elena_north.json:elena-north-planter-box-2",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column"
+  ],
+  "subject": "Projecting barred window with moulded cornice and shutters on the west facade of Calle Elena north"
+ },
+ {
+  "id": "IMG_2971.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2971.jpg",
+  "title": "Calle Elena north: west house facades with projecting barred windows and balconies",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "planting"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/10hpBh0edUh_VloFbrW1YA5bTAnCA7uxF/view?usp=drivesdk",
+  "camera": {
+   "x": -147.0,
+   "z": 47.6,
+   "heading": 305,
+   "accuracy": 3.3,
+   "altitude": 7.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.0,
+   44.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "elena_north.json:elena-north-planter-box-1"
+  ],
+  "subject": "West house facades along Calle Elena north with projecting barred windows and upper balconies"
+ },
+ {
+  "id": "IMG_2972.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2972.jpg",
+  "title": "Calle Elena north looking north-north-west past spider-plant bed to north pool gate",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1dtsnMKvSLy2gbMCCDb2rsvMeyWH15EWh/view?usp=drivesdk",
+  "camera": {
+   "x": -147.7,
+   "z": 46.4,
+   "heading": 329,
+   "accuracy": 3.2,
+   "altitude": 7.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -153.5,
+   36.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-magnolia-bed",
+   "elena_north.json:elena-north-window-return",
+   "backdrop.json:aerial-trees",
+   "elena_north.json:elena-north-patio-east"
+  ],
+  "subject": "Calle Elena north looking north-north-west past the spider-plant bed and pollarded tree toward the north pool arched gateway"
+ },
+ {
+  "id": "IMG_2974.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2974.jpg",
+  "title": "Calle Elena north from walkway mouth looking north-north-west to north pool gate",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1UZlqDhgdFp1vhShXaX4LFqCBxMkQg-yI/view?usp=drivesdk",
+  "camera": {
+   "x": -151.2,
+   "z": 39.9,
+   "heading": 327,
+   "accuracy": 3.2,
+   "altitude": 8.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -155.5,
+   32.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-visible-patio-floor",
+   "elena_north.json:elena-north-patio-divider",
+   "elena_north.json:elena-north-patio-east",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "Calle Elena north from the covered walkway mouth looking north-north-west toward the north pool arched gateway"
+ },
+ {
+  "id": "IMG_2975.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2975.jpg",
+  "title": "Inside the Calle Elena 18 36 covered walkway looking toward the twin iron gates",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "note": null,
+  "observation": null,
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1Nsy3v5NiGER0Tj6quPFeeqxjKeGDD_D0/view?usp=drivesdk",
+  "camera": {
+   "x": -153.5,
+   "z": 39.6,
+   "heading": 238,
+   "accuracy": 3.1,
+   "altitude": 8.9,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_gated_entry.json:elena-gated-entry",
+   "backdrop.json:aerial-trees",
+   "elena_walkway.json:elena-walkway-floor"
+  ],
+  "subject": "Calle Elena 18 36 covered walkway looking west-south-west through the far arch to the twin iron gates"
+ },
+ {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/01-3d-overview-from-north.png",
+  "path": "reference/apple-maps/01-3d-overview-from-north.png",
   "title": "Apple Maps 3D: the whole block looking south to the sea",
   "shows": [
    "whole-resort"
@@ -18920,7 +19720,7 @@
  {
   "id": "ref:apple-maps/02-3d-north-pool.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/02-3d-north-pool.png",
+  "path": "reference/apple-maps/02-3d-north-pool.png",
   "title": "Apple Maps 3D: north pool and surrounding terraces",
   "shows": [
    "north-pool"
@@ -18942,7 +19742,7 @@
  {
   "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png",
+  "path": "reference/apple-maps/03-3d-south-pool-and-promenade.png",
   "title": "Apple Maps 3D: south pool, its lawn and the beach promenade",
   "shows": [
    "south-pool",
@@ -18960,7 +19760,7 @@
  {
   "id": "ref:apple-maps/04-top-down-south-half.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/04-top-down-south-half.png",
+  "path": "reference/apple-maps/04-top-down-south-half.png",
   "title": "Apple Maps top-down: southern half, middle and south pools, tiled-roof block",
   "shows": [
    "middle-pool",
@@ -18979,7 +19779,7 @@
  {
   "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png",
+  "path": "reference/apple-maps/05-top-down-main-pool-and-lawn.png",
   "title": "Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach",
   "shows": [
    "main-pool",
@@ -19001,7 +19801,7 @@
  {
   "id": "ref:apple-maps/06-top-down-whole-block.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/06-top-down-whole-block.png",
+  "path": "reference/apple-maps/06-top-down-whole-block.png",
   "title": "Apple Maps top-down: whole block with surrounding street names",
   "shows": [
    "whole-resort"
@@ -19019,7 +19819,7 @@
  {
   "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+  "path": "reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
   "title": "Apple Maps 3D: north pool looking east towards the Picasso car park",
   "shows": [
    "north-pool",
@@ -19038,7 +19838,7 @@
  {
   "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png",
+  "path": "reference/apple-maps/08-3d-north-pool-looking-west-porches.png",
   "title": "Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies",
   "shows": [
    "north-pool"
@@ -19059,7 +19859,7 @@
  {
   "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/09-3d-north-pool-looking-south.png",
+  "path": "reference/apple-maps/09-3d-north-pool-looking-south.png",
   "title": "Apple Maps 3D: north pool looking south, lawn ring, curved path, deck",
   "shows": [
    "north-pool"
@@ -19080,7 +19880,7 @@
  {
   "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+  "path": "reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
   "title": "Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west",
   "shows": [
    "main-pool",
@@ -19100,7 +19900,7 @@
  {
   "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png",
+  "path": "reference/apple-maps/11-3d-guillermo-slope-to-paseo.png",
   "title": "Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo",
   "shows": [
    "main-pool",
@@ -19124,7 +19924,7 @@
  {
   "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png",
+  "path": "reference/apple-maps/12-3d-main-pool-east-steps-picasso.png",
   "title": "Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps",
   "shows": [
    "main-pool",
@@ -19143,7 +19943,7 @@
  {
   "id": "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+  "path": "reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png",
   "title": "Apple Maps 3D: main pool terrace curve with the west and east steps",
   "shows": [
    "main-pool"
@@ -19161,7 +19961,7 @@
  {
   "id": "ref:google-maps/01-street-map-lane-names.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/google-maps/01-street-map-lane-names.png",
+  "path": "reference/google-maps/01-street-map-lane-names.png",
   "title": "Google street map with inner lane names",
   "shows": [
    "whole-resort"
@@ -19179,7 +19979,7 @@
  {
   "id": "ref:google-maps/02-satellite-lane-names.png",
   "kind": "map-screenshot",
-  "path": "villacana-reference/google-maps/02-satellite-lane-names.png",
+  "path": "reference/google-maps/02-satellite-lane-names.png",
   "title": "Google satellite with inner lane names",
   "shows": [
    "whole-resort"
@@ -19197,7 +19997,7 @@
  {
   "id": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png",
+  "path": "reference/photos/01-north-pool-lawn-ground-level-2021-04.png",
   "title": "North pool lawn at ground level, April 2021. The key style reference.",
   "shows": [
    "north-pool"
@@ -19216,7 +20016,7 @@
  {
   "id": "ref:photos/02-pool-from-upper-floor-2020-12.png",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/02-pool-from-upper-floor-2020-12.png",
+  "path": "reference/photos/02-pool-from-upper-floor-2020-12.png",
   "title": "Middle pool from an upper floor, December 2020",
   "shows": [
    "middle-pool"
@@ -19236,7 +20036,7 @@
  {
   "id": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+  "path": "reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
   "title": "North pool looking down over barrel roof tiles: hedges, gates, crazy paving",
   "shows": [
    "north-pool"
@@ -19255,7 +20055,7 @@
  {
   "id": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+  "path": "reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg",
   "title": "North pool: roof tiles, a yucca, a patio behind a hedge",
   "shows": [
    "north-pool"
@@ -19273,7 +20073,7 @@
  {
   "id": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/05-north-pool-west-side-garden-walls.jpg",
+  "path": "reference/photos/05-north-pool-west-side-garden-walls.jpg",
   "title": "North pool west side: curved garden walls, raised patios, tiled steps",
   "shows": [
    "north-pool"
@@ -19291,7 +20091,7 @@
  {
   "id": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg",
+  "path": "reference/photos/06-north-pool-looking-north-east-mountains.jpg",
   "title": "North pool looking north-east: terraces, mountains behind",
   "shows": [
    "north-pool",
@@ -19310,7 +20110,7 @@
  {
   "id": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg",
+  "path": "reference/photos/07-north-pool-whole-courtyard-looking-north.jpg",
   "title": "North pool: the whole courtyard looking north. The best single reference for it.",
   "shows": [
    "north-pool"
@@ -19330,7 +20130,7 @@
  {
   "id": "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg",
+  "path": "reference/photos/08-middle-pool-deck-bird-of-paradise.jpg",
   "title": "Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk",
   "shows": [
    "middle-pool"
@@ -19348,7 +20148,7 @@
  {
   "id": "ref:photos/09-middle-pool-through-iron-gate.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/09-middle-pool-through-iron-gate.jpg",
+  "path": "reference/photos/09-middle-pool-through-iron-gate.jpg",
   "title": "Middle pool through an iron gate from a tiled lane",
   "shows": [
    "middle-pool"
@@ -19367,7 +20167,7 @@
  {
   "id": "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+  "path": "reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
   "title": "Patio beside the middle pool: oleander bed, pollarded tree",
   "shows": [
    "middle-pool"
@@ -19384,7 +20184,7 @@
  {
   "id": "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+  "path": "reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
   "title": "Patio beside the middle pool: oleander bed, two feathery trees",
   "shows": [
    "middle-pool"
@@ -19401,7 +20201,7 @@
  {
   "id": "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
   "kind": "own-photo",
-  "path": "villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+  "path": "reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
   "title": "Terracotta-tiled lane to an arched white gateway into the middle pool courtyard",
   "shows": [
    "middle-pool"
@@ -19419,7 +20219,7 @@
  {
   "id": "ref:web/south-pool-01-looking-north-palm.jpg",
   "kind": "web-photo",
-  "path": "villacana-reference/web/south-pool-01-looking-north-palm.jpg",
+  "path": "reference/web/south-pool-01-looking-north-palm.jpg",
   "title": "South pool looking north: date palm, two-storey terraces, hedged patios",
   "shows": [
    "south-pool"
@@ -19439,7 +20239,7 @@
  {
   "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
   "kind": "web-photo",
-  "path": "villacana-reference/web/south-pool-02-looking-south-east-sea.jpg",
+  "path": "reference/web/south-pool-02-looking-south-east-sea.jpg",
   "title": "South pool looking south-east: sea beyond, low white wall and fence at the seaward edge",
   "shows": [
    "south-pool",
@@ -19460,7 +20260,7 @@
  {
   "id": "ref:web/south-pool-03-lawn-from-north-west.jpg",
   "kind": "web-photo",
-  "path": "villacana-reference/web/south-pool-03-lawn-from-north-west.jpg",
+  "path": "reference/web/south-pool-03-lawn-from-north-west.jpg",
   "title": "South lawn from the north-west: curved low white wall, bollard lights, loungers",
   "shows": [
    "south-pool"
@@ -19478,7 +20278,7 @@
  {
   "id": "ref:web/easyjet-pool-probably-middle.jpg",
   "kind": "web-photo",
-  "path": "villacana-reference/web/easyjet-pool-probably-middle.jpg",
+  "path": "reference/web/easyjet-pool-probably-middle.jpg",
   "title": "A small pool with bird-of-paradise, palm and pollarded tree",
   "shows": [
    "middle-pool"

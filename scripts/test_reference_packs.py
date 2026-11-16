@@ -25,7 +25,7 @@ class ReferencePacks(unittest.TestCase):
         self.pack['sources'][0]['sha256']='0'*64
         with self.assertRaisesRegex(AssertionError,'Stale source'):validate(self.pack)
     def test_private_or_traversed_pixels_rejected(self):
-        self.pack['sources'][0]['path']='../villacana-reference/photos/drive/IMG_2334.jpg'
+        self.pack['sources'][0]['path']='reference/photos/drive/IMG_2334.jpg'
         with self.assertRaisesRegex(AssertionError,'public phone'):validate(self.pack)
     def test_bad_pixel_locator_rejected(self):
         self.pack['sources'][0]['observations'][0]['bbox']=[-1,0,1200,1600]

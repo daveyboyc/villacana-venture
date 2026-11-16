@@ -165,4 +165,6 @@ export type MapObject = {
   turn?: number;
   /** Photographed on a raised terrace or patio floor: kept there instead of giving way to the terrace. */
   onTerrace?: boolean;
+  /** A photographed tree or tall plant whose canopy hangs over a route: only its trunk keeps the route clearance (Dave, 2026-11-16). */
+  canopyOverhangs?: boolean;
 };

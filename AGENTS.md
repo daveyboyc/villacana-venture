@@ -1,6 +1,6 @@
 # Villacana project direction
 
-## Current focus (Dave, 2026-11-10)
+## Current focus (Dave, 2026-11-10; structure first 2026-11-16)
 
 The work is a 3D model with detailed assets, matched to the map and the reference
 photos, and judged in **Inspect**. Walk is not being worked on. Do not build or
@@ -8,14 +8,29 @@ tune walking, the Walk camera, collision for its own sake, or route connectivity
 and leave Walk as it is. A change is not done until it can be seen in Inspect,
 in Layout and with **Show details**, without switching to Walk.
 
-Prefer work that makes Inspect closer to the photos: pools, materials and
-surfaces, facades, planting and small built details. The path, tunnel and
-boundary inventories still matter where they fix what the model shows, but they
-no longer come first. Detail still goes on geometry the evidence supports; it no
-longer waits for every route to be mapped.
+**Structure first (Dave, 2026-11-16).** In each area, get the layout and levels
+right before adding detail. Work in this order and have a reviewer subagent sign
+off each stage in Inspect (Layout) against the full-size photos before the next:
 
-Prioritise structural accuracy alongside photo-matched detail. Read
-`docs/LAYOUT_ACCURACY.md` for the current layout view, sources and remaining
+1. **Photo coverage.** List the area's solved cameras and what they can and
+   cannot fix; one camera position fixes direction, not depth. Request missing
+   ground-level viewpoints (`data/photo_requests.json`) before building.
+2. **Layout.** House fronts, pool rings, paths (centreline and width), walls and
+   boundaries with their openings, patio and lawn outlines. Measure them through
+   solved cameras on known planes and against the aerial.
+3. **Levels.** Floors, steps, ramps and stairs, checked against the laser survey
+   (`scripts/lidar_check.py`) and `data/levels_survey.json`.
+4. **Generated filler.** Switch off generated hedges, awnings, balconies, garden
+   walls and gates where the photos show something else, with a photo-backed record.
+5. **Detail.** Photographed fittings, furniture, planting and facade ornament,
+   reviewed with **Show details**.
+
+Detail goes only on structure that has passed its review. Read
+`docs/WORKFLOW_LESSONS.md` for why: most rework in the north-pool sessions was
+detail sitting on wrong structure. The aim stays an Inspect view close to the
+photos: pools, materials and surfaces, facades, planting and small built details.
+
+Read `docs/LAYOUT_ACCURACY.md` for the current layout view, sources and remaining
 uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 
 - Keep map, 3D geometry and collision consistent. Preserve original registry
@@ -54,7 +69,10 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 - Check the model in Inspect. Layout is the clear structural view; **Show details**
   is where photo-backed fittings must be visible. Generic clutter stays off Layout.
   Decorative objects must respect the shared route-clearance guard, including
-  their visible footprint. Do not treat a Walk view as the check.
+  their visible footprint. Exception (Dave, 2026-11-16): a photographed tree or
+  tall plant whose canopy overhangs a route may stand where the photo shows it;
+  mark it `canopyOverhangs` in `data/objects.json` and only its trunk (0.3 m)
+  keeps the clearance. Do not treat a Walk view as the check.
 - Buildings keep a level datum, opaque materials and extrusion material groups.
   Terrain refinement is for ground surfaces and must preserve drawable groups.
 - For geometry/collision/terrain changes, run relevant source and route checks,
@@ -107,8 +125,7 @@ does not account for an entire structure. Update an existing pack when applicabl
 
 All reference material is catalogued by area. Before changing anything in an
 area, read `refs/README.md`, then that area's brief in `refs/areas/<id>.md`, and
-look at its contact sheet in the private `villacana-reference` repo
-(`contact-sheets/<id>.jpg`). The brief lists the area's photos, map
+look at its contact sheet in `reference/contact-sheets/<id>.jpg`. The brief lists the area's photos, map
 screenshots, docs, data and source files, known facts and open questions.
 For cross-cutting work (slopes, paving, planting) use `refs/topics/<id>.md`.
 Heights (slopes, steps, raised patios) are in `data/levels_survey.json`, read
@@ -140,6 +157,6 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
   laser survey (`scripts/lidar_check.py`, docs/reviews/lidar-levels). Check a level or
   height change there before building it.
 - `refs/` is generated. Rebuild with `python3 scripts/build_references.py
-  --sheets` and commit both repos. `--check` must pass before a PR.
+  --sheets` and commit the updated `refs/`, `public/` indexes and `reference/contact-sheets/`. `--check` must pass before a PR.
 - New photos: follow "Intake for a new Drive batch" in
   `docs/PHOTO_MAP_WORKFLOW.md`.

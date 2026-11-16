@@ -23,6 +23,11 @@
       "path": "public/photos-ref/253A75E4-A471-4502-9F5D-C9BAF074D664.jpg"
     },
     {
+      "id": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+      "private": false,
+      "path": "public/photos-ref/2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg"
+    },
+    {
       "id": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
       "private": false,
       "path": "public/photos-ref/6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg"
@@ -293,6 +298,11 @@
       "path": "public/photos-ref/IMG_2760.jpg"
     },
     {
+      "id": "IMG_2768.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2768.jpg"
+    },
+    {
       "id": "IMG_2769.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2769.jpg"
@@ -305,7 +315,7 @@
     {
       "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png"
+      "path": "reference/apple-maps/05-top-down-main-pool-and-lawn.png"
     }
   ],
   "features": [],
