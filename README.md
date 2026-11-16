@@ -41,7 +41,8 @@ Search an ID (`IMG_2206`), place (`north-pool`) or subject (`boat`) in **Map & p
 Choose a result to read its label, open the full photo, see camera uncertainty and
 reviewed subject context, or **Copy agent reference**. **Copy photo link** reopens
 that specific source. Overlapping pin labels appear as you zoom; all references
-remain in the searchable list. Private sources link to the private repository;
+remain in the searchable list. Reference images under `reference/` link to the
+repository rather than being bundled into the deployed site;
 unplaced references stay searchable without invented coordinates.
 
 For an agent working in the repository:
@@ -55,7 +56,9 @@ python3 scripts/find_reference.py IMG_2206 --json
 Read [AGENTS.md](AGENTS.md), [docs/HANDOVER.md](docs/HANDOVER.md) and the area's
 brief in [refs/README.md](refs/README.md). Inspect full images before editing.
 The complete generated discovery index is `public/reference-index.json`.
-Private imagery stays in `daveyboyc/villacana-reference`.
+Additional reference images (Apple Maps screenshots, Google screenshots, Dave's
+photos, contact sheets and web references) live in `reference/` and are excluded
+from the deployed GitHub Pages bundle.
 
 ## Sources and limits
 

@@ -310,22 +310,22 @@
     {
       "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png"
+      "path": "reference/apple-maps/03-3d-south-pool-and-promenade.png"
     },
     {
       "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png"
+      "path": "reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png"
     },
     {
       "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png"
+      "path": "reference/apple-maps/11-3d-guillermo-slope-to-paseo.png"
     },
     {
       "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
       "private": true,
-      "path": "villacana-reference/web/south-pool-02-looking-south-east-sea.jpg"
+      "path": "reference/web/south-pool-02-looking-south-east-sea.jpg"
     }
   ],
   "features": [],

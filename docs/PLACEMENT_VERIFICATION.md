@@ -54,7 +54,7 @@ boundaries, heights and anything no source shows remain outside this approval.
 
 ## Before changing geometry
 
-1. Read the area brief and private contact sheet. Inspect each relevant source at
+1. Read the area brief and contact sheet (`reference/contact-sheets/<area>.jpg`). Inspect each relevant source at
    full size. Identify the subject from content; GPS locates the camera. Record
    blur, cropping, obstruction, uncertain identification and what each source can
    and cannot establish. Add relevant sources to the feature's evidence.

@@ -84,7 +84,7 @@ evidence. They carry no position data, so place what they show from the aerial.
 Phone positions are good to 5–10 m and worse under archways. Compass headings are
 reliable.
 
-**Private** (`daveyboyc/villacana-reference`, needs access to that repo):
+**Reference folder** (`reference/` in this repo):
 
 - `web/south-pool-01-looking-north-palm.jpg`: the pool from the south lawn looking
   north. Shows the pool's shape, a cream stone deck, a tall date palm just north of

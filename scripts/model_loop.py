@@ -185,7 +185,7 @@ def extend(root, spec, catalog, features, queue, inventory, nodes, edges, proble
             if request not in by_request:
                 problems.append(f'{iid}: unknown evidence request {request}')
         blocked = [r for r in item.get('requests', []) if r in by_request and by_request[r]['state'] != 'answered']
-        missing = [s for s in item['sources'] if s in by_source and not (root.parent / by_source[s]['path'] if s.startswith('ref:') else root / by_source[s]['path']).is_file()]
+        missing = [s for s in item['sources'] if s in by_source and not ((root / by_source[s]['path']).is_file() or (s.startswith('ref:') and (root.parent / by_source[s]['path']).is_file()))]
         state = 'needs-evidence' if blocked else 'needs-source-access' if missing else 'ready'
         reasons = [by_request[r]['ask'] for r in blocked] + [f'Open the existing source: {s}' for s in missing]
         if item.get('status') in ('fixed', 'closed'):

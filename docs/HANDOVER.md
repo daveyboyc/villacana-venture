@@ -23,8 +23,8 @@ and small details, and the result has to be visible in Layout and with Show deta
     Open discrepancies override positive checks. Read `docs/PLACEMENT_VERIFICATION.md`.
     `refs/QUEUE.md` lists gaps in newer photo-check records; earlier manual reviews
     may exist and are not erased by this backlog.
-  - Contact sheets of numbered thumbnails per area are in the private
-    `villacana-reference` repo (`contact-sheets/<area>.jpg`).
+  - Contact sheets of numbered thumbnails per area live in
+    `reference/contact-sheets/<area>.jpg`.
 - **Photo metadata you can trust to a stated degree.** `public/photos-ref/manifest.json`
   has each camera pin with GPS accuracy and altitude. Ground shots read 9 m altitude
   or less, roof and upper-floor shots more. Pins worse than about ±8 m are corrected
@@ -156,8 +156,8 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
   plaques, lamps) must show in Inspect with Show details, and must pass the
   route-clearance guard. Generic clutter stays off Layout.
 - This repo is public: no API keys, signed URLs or photo metadata blobs. Google
-  imagery may be published with credit (AGENTS.md). Other private reference images
-  stay in `villacana-reference`.
+  imagery may be published with credit (AGENTS.md). Other unbundled reference
+  images stay in `reference/` (not copied into the deployed site).
 
 ## Working alongside other agents
 
@@ -168,13 +168,13 @@ Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE` if Playwright cannot find a browser.
   `public/photos-ref/evidence-graph.json` and everything in `refs/`. Never
   hand-merge them; take either side and regenerate with `assign_photo_map.py`
   and `build_references.py`.
-- Contact sheets live in the private repo; rebuild them with
-  `build_references.py --sheets` only when you can commit to that repo too.
+- Contact sheets live in `reference/contact-sheets/`; rebuild them with
+  `build_references.py --sheets` and commit them in this repo.
 
 ## New photos
 
 Originals go in Google Drive (folder "Villacana") or in
-`villacana-reference/uploads/`. Follow "Intake for a new Drive batch" in
+`reference/uploads/`. Follow "Intake for a new Drive batch" in
 `docs/PHOTO_MAP_WORKFLOW.md`: index, describe, tag (`shows`, `viewpoint`,
 `useFor`, and `looksAt`/`subject` for roof shots and build sources), check
 altitude against viewpoint, correct vague pins from photo content, rebuild.

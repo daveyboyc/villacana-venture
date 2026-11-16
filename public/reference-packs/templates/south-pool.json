@@ -85,27 +85,27 @@
     {
       "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png"
+      "path": "reference/apple-maps/03-3d-south-pool-and-promenade.png"
     },
     {
       "id": "ref:apple-maps/04-top-down-south-half.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/04-top-down-south-half.png"
+      "path": "reference/apple-maps/04-top-down-south-half.png"
     },
     {
       "id": "ref:web/south-pool-01-looking-north-palm.jpg",
       "private": true,
-      "path": "villacana-reference/web/south-pool-01-looking-north-palm.jpg"
+      "path": "reference/web/south-pool-01-looking-north-palm.jpg"
     },
     {
       "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
       "private": true,
-      "path": "villacana-reference/web/south-pool-02-looking-south-east-sea.jpg"
+      "path": "reference/web/south-pool-02-looking-south-east-sea.jpg"
     },
     {
       "id": "ref:web/south-pool-03-lawn-from-north-west.jpg",
       "private": true,
-      "path": "villacana-reference/web/south-pool-03-lawn-from-north-west.jpg"
+      "path": "reference/web/south-pool-03-lawn-from-north-west.jpg"
     }
   ],
   "features": [],
