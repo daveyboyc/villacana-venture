@@ -5999,6 +5999,7 @@
    "trust": "phone location"
   },
   "citedBy": [
+   "elena_east_patios.json:elena-east-patios-divider-south",
    "cervantes_east_south_patios.json:cervantes-east-south-wall",
    "cervantes_east_south_patios.json:cervantes-east-south-door",
    "cervantes_east_south_patios.json:cervantes-east-south-pergola",
@@ -6014,8 +6015,8 @@
   "looksAtFeatures": [
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-wall",
-   "elena_east_patios.json:elena-east-patios-pergola",
-   "backdrop.json:aerial-trees"
+   "elena_east_patios.json:elena-east-patios-divider-south",
+   "elena_east_patios.json:elena-east-patios-pergola"
   ],
   "subject": "The private patios east of the Elena beds"
  },

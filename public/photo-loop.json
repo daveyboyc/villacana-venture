@@ -1167,6 +1167,19 @@
      "features": [],
      "tasks": [],
      "state": "received"
+    },
+    {
+     "id": "photo-elena-east-patios-inside",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio.",
+     "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+     "photoRequest": "elena-east-patios-inside",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
@@ -5422,6 +5435,19 @@
      "ask": "From the lawn, 3-5 m south of the north path, looking north at the north row patios (plinth wall, three white steps, hedges, house fronts and awnings); two or three positions from the alley arch to the iron gate.",
      "why": "discrepancy north-row-front-depth: a second camera station for the north patios and house fronts",
      "photoRequest": "north-pool-north-row-ground",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
+    },
+    {
+     "id": "photo-elena-east-patios-inside",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio.",
+     "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+     "photoRequest": "elena-east-patios-inside",
      "status": "open",
      "sources": [],
      "features": [],

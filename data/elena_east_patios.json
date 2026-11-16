@@ -1,6 +1,6 @@
 {
  "checkedAt": "2026-10-16",
- "scope": "The private patios behind the Elena north garden wall, between the hedged beds and the east terrace (registry 6265401UF1366N_part3), where they meet Cervantes. Only the enclosure walls and the pergola beam that ground photos show are built; the patios' internal partitions, floors and levels are not visible in any photo and are not modelled.",
+ "scope": "The private patios behind the Elena north garden wall, between the hedged beds and the east terrace (registry 6265401UF1366N_part3), where they meet Cervantes. Only the enclosure walls and the pergola beam that ground photos show are built; the patios' internal partitions, floors and levels are not visible in any photo and are not modelled. 2026-11-16: the dividing wall the aerial shows nearest Cervantes is added; further dividers along the band lie under the magnolia canopy and are not built (gap:elena-east-patio-dividers).",
  "trust": "The roof shots listed for the task (IMG_2366, IMG_2360) look along Cervantes east of the junction: their paved strip, trained-trunk white wall, curved-coping door and cane-roofed pergola are on the Cervantes side (compare IMG_2197). From every roof camera the patios behind the garden wall are under the magnolia canopy (IMG_2362, IMG_2364). The enclosure walls and pergola here come from ground photos; positions are anchored to the existing garden wall, hedged bed, Cervantes axis and registry face, about 0.5-1 m in plan. Heights and the pergola's extent are estimated.",
  "review": {
   "ring": [
@@ -95,6 +95,27 @@
     "IMG_2197.jpg"
    ],
    "trust": "IMG_2356 shows a continuous white wall standing behind the raised plumbago bed on the north side of Cervantes east of Elena, with bougainvillea over it and no gate; IMG_2197 shows unbroken planting and white walls along that frontage. Drawn 2.0 m north of the Cervantes axis, behind the existing kerb and hedge, from the garden wall corner to the registry face of 6265401UF1366N_part3, where the house front takes over. Line and height estimated; no opening is photographed, so it is solid."
+  },
+  {
+   "id": "elena-east-patios-divider-south",
+   "name": "Elena east patios · dividing wall between the Cervantes patio and the pergola patio",
+   "points": [
+    [
+     -140.604,
+     42.782
+    ],
+    [
+     -145.328,
+     45.597
+    ]
+   ],
+   "height": 1.85,
+   "thickness": 0.2,
+   "solid": true,
+   "evidence": [
+    "IMG_2366.jpg"
+   ],
+   "trust": "The georeferenced aerial shows a white wall top with its shadow just north of it across the patio band, from the party-wall jog in the registry face of 6265401UF1366N_part3 at (-140.2, 42.8) to the garden wall about 1.6 m north of its closed door; brightness profiles across the line put it within about 0.2 m of the jog line once the aerial's usual ~1 m registration offset is allowed for. IMG_2366, from a roof by the Elena junction, shows the patio nearest Cervantes walled off from the patios north of it (artificial grass and a table south, tiled bench, bougainvillea and a cane pergola north). The wall's line is from the aerial and its height is estimated to match the garden wall; it is inferred, not measured through a solved camera, and no door in it is seen."
   }
  ],
  "pergola": {
@@ -102,20 +123,20 @@
   "name": "Elena east patios · timber pergola behind the garden door",
   "ring": [
    [
-    -144.664,
-    45.941
+    -145.278,
+    44.91
    ],
    [
-    -142.504,
-    44.682
+    -143.118,
+    43.651
    ],
    [
-    -143.864,
-    42.35
+    -144.478,
+    41.319
    ],
    [
-    -146.024,
-    43.609
+    -146.638,
+    42.578
    ]
   ],
   "height": 2.35,
@@ -126,7 +147,7 @@
    "IMG_2199.jpg",
    "IMG_2200.jpg"
   ],
-  "trust": "A dark timber pergola beam shows above the garden wall just north of the closed door in IMG_2199, and again over the wall near the door in IMG_2200, with bougainvillea on it. Only that edge is visible: the 2.7 x 2.5 m extent, the four posts, rafters and 2.35 m height are estimates. It stands inside the walled patio, out of reach of the player."
+  "trust": "A dark timber pergola beam shows above the garden wall just north of the closed door in IMG_2199, and again over the wall near the door in IMG_2200, with bougainvillea on it. Only that edge is visible: the 2.7 x 2.5 m extent, the four posts, rafters and 2.35 m height are estimates. It stands inside the walled patio, out of reach of the player. 2026-11-16: moved 1.2 m north into the patio north of the new dividing wall, which the aerial shows crossing its first position; the aerial's pale block north of that wall is taken as its cane roof (IMG_2366 shows a cane-roofed pergola in these patios)."
  },
  "planting": [
   {

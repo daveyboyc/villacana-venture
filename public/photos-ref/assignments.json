@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 472,
+  "features": 473,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 218
+  "modelFeaturesWithPhotoCitations": 219
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -5989,6 +5989,7 @@
     }
    ],
    "citedBy": [
+    "elena_east_patios.json:elena-east-patios-divider-south",
     "cervantes_east_south_patios.json:cervantes-east-south-wall",
     "cervantes_east_south_patios.json:cervantes-east-south-door",
     "cervantes_east_south_patios.json:cervantes-east-south-pergola",

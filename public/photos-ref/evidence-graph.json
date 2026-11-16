@@ -6,9 +6,9 @@
   "suggested": 247,
   "needs-review": 213,
   "photos": 462,
-  "features": 472,
+  "features": 473,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 218
+  "modelFeaturesWithPhotoCitations": 219
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2644,6 +2644,15 @@
    "evidence": [
     "IMG_2356.jpg",
     "IMG_2197.jpg"
+   ]
+  },
+  {
+   "id": "elena_east_patios.json:elena-east-patios-divider-south",
+   "name": "Elena east patios · dividing wall between the Cervantes patio and the pergola patio",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2366.jpg"
    ]
   },
   {
@@ -13126,6 +13135,12 @@
    "relation": "possibly-in-view",
    "distance": 24.3,
    "angleOffset": 5.6
+  },
+  {
+   "from": "photo:IMG_2366.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-divider-south",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2366.jpg",
