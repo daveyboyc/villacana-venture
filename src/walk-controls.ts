@@ -97,7 +97,8 @@ export function bindWalkControls({canvas,pad,input,isOverview,isPan,pan,toggleOv
    if(isOverview())input.lookDy+=(e.clientY-prev.y)/2;
   }else if(looks.size<=2){
    if(stick&&e.pointerId===stick.id){touch.x=clamp((e.clientX-stick.x)/50,-1,1);touch.z=clamp(-(e.clientY-stick.y)/50,-1,1);read();}
-   else if(isOverview()&&dragPans(e,isPan()))pan(e.clientX-prev.x,e.clientY-prev.y);
+   // A finger on a phone moves forward and back the opposite way to a mouse, as the two-finger pan did.
+   else if(isOverview()&&dragPans(e,isPan()))pan(e.clientX-prev.x,(e.pointerType==='touch'?-1:1)*(e.clientY-prev.y));
    else{input.lookDx+=e.clientX-prev.x;input.lookDy+=e.clientY-prev.y;}
   }
   looks.set(e.pointerId,{x:e.clientX,y:e.clientY});
