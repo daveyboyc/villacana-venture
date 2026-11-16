@@ -35,8 +35,8 @@ The clover-shaped middle pool courtyard, entered through arched white gateways o
 
 ## Coverage
 
-Layout: 34, Levels and slopes: 3, Facades and roofs: 18, Materials: 26, Planting: 24, Signs: 4, Views: 3
-41 reviewed, 0 suggested only by camera position.
+Layout: 35, Levels and slopes: 4, Facades and roofs: 19, Materials: 27, Planting: 24, Signs: 4, Views: 3
+42 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -244,6 +244,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2340.jpg](../../public/photos-ref/IMG_2340.jpg) | ground | layout, facades, signage | Calle Eva: east gateway into the middle pool courtyard **Looks at:** Middle pool east gateway from Calle Eva, open iron leaf and notices. **Note:** The middle pool east gate from Calle Eva; IMG_2244 shows it from inside. Subject reviewed from pixels 2026-11-13; look-at marker is approximate, not a solved camera or measured fitting anchor. _Used by: middle_pool.json:middle-pool-east-gateway._ |
 | [IMG_2664.jpg](../../public/photos-ref/IMG_2664.jpg) | ground | layout, planting, facades, materials | Calle Silvia north: tiled lane looking NNW to the arch and lawn **Note:** Same lane as IMG_2189 from its southern end; far arch is probably the middle pool south gateway. |
 | [IMG_2671.jpg](../../public/photos-ref/IMG_2671.jpg) | ground | layout, materials, facades, planting | Silvia lane north of the tunnel looking NW to the middle pool south gateway **Looks at:** south gateway of the middle pool at the end of the Silvia lane. **Note:** Same lane and gateway as IMG_2189/2334 from a closer, lower angle; pin sits on the Silvia lane at the tunnel mouth. |
+| [IMG_2709.jpg](../../public/photos-ref/IMG_2709.jpg) | ground | layout, materials, levels, facades | Calle Eva west: porch with red ramp, tiles and middle pool gate ahead **Looks at:** Calle Eva west looking north-east past an arched porch and red studded ramp toward the middle pool south-west gateway. |
 | [IMG_2710.jpg](../../public/photos-ref/IMG_2710.jpg) | ground | layout, facades, signage, planting | Middle pool south-west gate at the end of Calle Eva west **Note:** Same middle pool south-west gateway as IMG_2333; seen here from Calle Eva west. |
 | [IMG_2666.jpg](../../public/photos-ref/IMG_2666.jpg) | ground | layout, facades, planting | Calle Silvia north: arched recesses either side, gate arch with green lattice ahead **Note:** Heading 319 deg; same lane and gate as IMG_2189 (322 deg). |
 | [IMG_2708.jpg](../../public/photos-ref/IMG_2708.jpg) | ground | layout, materials, signage | Eva west stretch towards the middle pool gate, slot drain **Note:** The plaque reads ...NA 23 (as in IMG_2549); the same stretch of Eva west. |

@@ -109,6 +109,47 @@
    "checks": []
   },
   {
+   "id": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+   "label": "Wooden boardwalk and rope-lined sand path to the sea",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+   "thumbnail": "photos-ref/thumbs/2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+   "areas": [
+    "barraka-beach"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "view"
+   ],
+   "observation": "",
+   "note": "No EXIF GPS; camera unplaced.",
+   "camera": null,
+   "subject": null,
+   "looksAt": null,
+   "looksAtBasis": null,
+   "locationBasis": null,
+   "association": {
+    "file": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+    "status": "unplaced",
+    "reasons": [
+     "No usable camera coordinates"
+    ],
+    "nearby": [],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison"
+   },
+   "originalUrl": "https://drive.google.com/file/d/1AfTPbU1Jh0JyM5coWOWU2x5UYkAsJ2z5/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "6E090F77-BFAF-46F8-A753-0388F6BD1DB5.jpg",
    "label": "Beach: pebbles on sand at the water line",
    "kind": "phone-photo",
@@ -45260,6 +45301,74 @@
    "checks": []
   },
   {
+   "id": "IMG_2709.jpg",
+   "label": "Calle Eva west: porch with red ramp, tiles and middle pool gate ahead",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2709.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2709.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2709.jpg",
+   "areas": [
+    "eva",
+    "middle-pool"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "levels",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -149.2,
+    "z": 105.8,
+    "heading": 39,
+    "accuracy": 2.6,
+    "altitude": 7.2,
+    "trust": "phone location"
+   },
+   "subject": "Calle Eva west looking north-east past an arched porch and red studded ramp toward the middle pool south-west gateway",
+   "looksAt": [
+    -141.0,
+    96.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2709.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [
+     {
+      "id": "street:eva",
+      "name": "Calle Eva",
+      "kind": "street",
+      "gap": 1.8
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -149.2,
+     "z": 105.8,
+     "basis": "phone location",
+     "reportedAccuracy": 2.6,
+     "heading": 39,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1r6QQhnQYPG3qhfDUcovqjGWbPqlQdPv3/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2709.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "IMG_2710.jpg",
    "label": "Middle pool south-west gate at the end of Calle Eva west",
    "kind": "phone-photo",
@@ -45845,6 +45954,80 @@
    "checks": []
   },
   {
+   "id": "IMG_2722.jpg",
+   "label": "Calle Guillermo: barred windows with tiled sills and bougainvillea",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2722.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2722.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2722.jpg",
+   "areas": [
+    "seaward-lanes"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "materials",
+    "layout",
+    "planting"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -40.3,
+    "z": 87.5,
+    "heading": 345,
+    "accuracy": 2.7,
+    "altitude": 6.4,
+    "trust": "phone location"
+   },
+   "subject": "East-side house windows with black grilles, tiled sills and bougainvillea along Calle Guillermo",
+   "looksAt": [
+    -43.0,
+    77.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2722.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street",
+     "Camera overlaps a solid registry footprint; check GPS drift or footprint alignment"
+    ],
+    "nearby": [
+     {
+      "id": "street:guillermo",
+      "name": "Calle Guillermo",
+      "kind": "street",
+      "gap": 2.3
+     },
+     {
+      "id": "street:patricia",
+      "name": "Calle Patricia",
+      "kind": "street",
+      "gap": 2.3
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -40.3,
+     "z": 87.5,
+     "basis": "phone location",
+     "reportedAccuracy": 2.7,
+     "heading": 345,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Ndp-QK8nOr4tsLzNMRJESkNmD5JApUwf/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2722.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "IMG_2723.jpg",
    "label": "Espaliered bougainvillea and window grille in a seaward lane",
    "kind": "phone-photo",
@@ -46088,6 +46271,94 @@
    },
    "originalUrl": "https://drive.google.com/file/d/1wCsR1jSKUkeMn8TMEKdvm_EmK973nQJU/view?usp=drivesdk",
    "mapUrl": "./?view=map&photo=IMG_2725.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2726.jpg",
+   "label": "Calle Eva east: octagonal paving, white bench and hedged planters",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2726.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2726.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2726.jpg",
+   "areas": [
+    "eva"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -62.2,
+    "z": 52.6,
+    "heading": 241,
+    "accuracy": 2.2,
+    "altitude": 7.9,
+    "trust": "phone location"
+   },
+   "subject": "Calle Eva east looking west-south-west past the white bench, lantern post and hedged planter walls",
+   "looksAt": [
+    -72.0,
+    58.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2726.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:eva",
+      "name": "Calle Eva",
+      "kind": "street",
+      "gap": 0
+     },
+     {
+      "id": "street:guillermo",
+      "name": "Calle Guillermo",
+      "kind": "street",
+      "gap": 1.8
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6365201UF1366N_part5",
+      "distance": 22.1,
+      "angleOffset": 19.7
+     },
+     {
+      "id": "building:6365201UF1366N_part14",
+      "distance": 25.3,
+      "angleOffset": 24.9
+     },
+     {
+      "id": "building:6365101UF1366N_part9",
+      "distance": 26.1,
+      "angleOffset": 23.4
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -62.2,
+     "z": 52.6,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 241,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Df7_vz4cpzzZJITbm88bBTSfvOxrTH1G/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2726.jpg",
    "features": [],
    "checks": []
   },
@@ -46422,6 +46693,84 @@
    },
    "originalUrl": "https://drive.google.com/file/d/1_8Fjt_IK2jZ2dqRhwKAh2Jx7PQ1VMdmY/view?usp=drivesdk",
    "mapUrl": "./?view=map&photo=IMG_2730.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2731.jpg",
+   "label": "Calle Eva east: octagonal tiles, white wall with arched hood and strelitzia",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2731.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2731.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2731.jpg",
+   "areas": [
+    "eva"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "planting"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -75.9,
+    "z": 59.1,
+    "heading": 245,
+    "accuracy": 2.1,
+    "altitude": 7.6,
+    "trust": "phone location"
+   },
+   "subject": "Calle Eva east looking west-south-west toward the Teodoro Rojo junction",
+   "looksAt": [
+    -86.0,
+    64.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2731.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:eva",
+      "name": "Calle Eva",
+      "kind": "street",
+      "gap": 0.3
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6365201UF1366N_part1",
+      "distance": 12.3,
+      "angleOffset": 9.6
+     },
+     {
+      "id": "building:6264501UF1366S_part2",
+      "distance": 39.6,
+      "angleOffset": 16.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -75.9,
+     "z": 59.1,
+     "basis": "phone location",
+     "reportedAccuracy": 2.1,
+     "heading": 245,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1ChDSNm0cLsBGHxmRdfst5eNosKbn4FKo/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2731.jpg",
    "features": [],
    "checks": []
   },
@@ -48353,6 +48702,80 @@
    ]
   },
   {
+   "id": "IMG_2768.jpg",
+   "label": "Paseo towards Barraka beside the green bar fence and solar lamp",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2768.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2768.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2768.jpg",
+   "areas": [
+    "paseo",
+    "barraka-beach"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades",
+    "view"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -1.5,
+    "z": 131.1,
+    "heading": 31,
+    "accuracy": 2.2,
+    "altitude": 5.0,
+    "trust": "phone location"
+   },
+   "subject": "The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead",
+   "looksAt": [
+    9.0,
+    114.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2768.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "area:paseo",
+      "name": "Paseo · Senda Litoral",
+      "kind": "area",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6364501UF1366S_part8",
+      "distance": 36.7,
+      "angleOffset": 24.9
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -1.5,
+     "z": 131.1,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 31,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1xUkriaHy7ArFk0ski2kj_uLMivQPRiBw/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2768.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "IMG_2769.jpg",
    "label": "Paseo towards Barraka beside the railing",
    "kind": "phone-photo",
@@ -48631,6 +49054,90 @@
    },
    "originalUrl": "https://drive.google.com/file/d/14IoKsPWVWbM5CUXDoq_SuGKD0_0uOCWF/view?usp=drivesdk",
    "mapUrl": "./?view=map&photo=IMG_2771.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2772.jpg",
+   "label": "Calle Guillermo looking north-north-west past the kiosk and lantana planter",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2772.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2772.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2772.jpg",
+   "areas": [
+    "seaward-lanes",
+    "main-pool"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -14.9,
+    "z": 129.9,
+    "heading": 327,
+    "accuracy": 3.3,
+    "altitude": 5.3,
+    "trust": "phone location"
+   },
+   "subject": "Calle Guillermo looking north-north-west past the kiosk, Calle de Jorge plinth corner and lantana planter wall toward the main pool building",
+   "looksAt": [
+    -23.0,
+    117.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2772.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:guillermo",
+      "name": "Calle Guillermo",
+      "kind": "street",
+      "gap": 2.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6364401UF1366S_part11",
+      "distance": 30.7,
+      "angleOffset": 22.6
+     },
+     {
+      "id": "building:6364401UF1366S_part5",
+      "distance": 32.7,
+      "angleOffset": 30.1
+     },
+     {
+      "id": "building:6364401UF1366S_part6",
+      "distance": 40.5,
+      "angleOffset": 18.9
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -14.9,
+     "z": 129.9,
+     "basis": "phone location",
+     "reportedAccuracy": 3.3,
+     "heading": 327,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1prTFqILS8Ixe5Jne8B-QfsQrNfeYgyaH/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2772.jpg",
    "features": [],
    "checks": []
   },
@@ -50747,6 +51254,78 @@
    ]
   },
   {
+   "id": "IMG_2793.jpg",
+   "label": "Inside the CALLE ALBERTO 22 40 covered passage looking through to the garden arch",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2793.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2793.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2793.jpg",
+   "areas": [
+    "eva"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "levels",
+    "signage"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -103.7,
+    "z": 46.4,
+    "heading": 255,
+    "accuracy": 2.7,
+    "altitude": 7.1,
+    "trust": "phone location"
+   },
+   "subject": "The CALLE ALBERTO 22 40 covered passage looking west-south-west from its ramp and plaque through the far arch to the garden path beyond",
+   "looksAt": [
+    -113.0,
+    49.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2793.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "No mapped street/area within the uncertainty range"
+    ],
+    "nearby": [],
+    "inViewCandidates": [
+     {
+      "id": "building:6265601UF1366N_part1",
+      "distance": 22.2,
+      "angleOffset": 20.5
+     },
+     {
+      "id": "building:6265401UF1366N_part2",
+      "distance": 26.8,
+      "angleOffset": 30.9
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -103.7,
+     "z": 46.4,
+     "basis": "phone location",
+     "reportedAccuracy": 2.7,
+     "heading": 255,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/14m5TmOboDQaX5c9xWKbLuvtpBtOaS6yc/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2793.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "IMG_2794.jpg",
    "label": "Lane with bougainvillea and grille windows, looking south-west",
    "kind": "phone-photo",
@@ -51794,6 +52373,253 @@
    "checks": []
   },
   {
+   "id": "IMG_2807.jpg",
+   "label": "CALLE ELENA 18 36 walkway mouth: steps, red ramp, CASA WILKES sign and hatch",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2807.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2807.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2807.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "levels",
+    "materials",
+    "signage",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -151.5,
+    "z": 38.7,
+    "heading": 287,
+    "accuracy": 2.3,
+    "altitude": 7.7,
+    "trust": "phone location"
+   },
+   "subject": "East mouth of the Calle Elena 18 36 covered walkway: steps, red studded ramp and wall plaques",
+   "looksAt": [
+    -155.5,
+    39.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2807.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.9
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 6.1,
+      "angleOffset": 30.0
+     },
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 19.5,
+      "angleOffset": 6.7
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 27.6,
+      "angleOffset": 28.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -151.5,
+     "z": 38.7,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 287,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1IKMtULmaorVyTtzIRbbtOmdI9rQdIacK/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2807.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2808.jpg",
+   "label": "Inside the Calle Elena 18 36 covered walkway: patterned floor and far gates",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2808.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2808.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2808.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -153.0,
+    "z": 37.4,
+    "heading": 239,
+    "accuracy": 2.3,
+    "altitude": 7.7,
+    "trust": "phone location"
+   },
+   "subject": "Calle Elena 18 36 covered walkway looking west-south-west over the patterned floor and pebble mat toward the twin iron gates",
+   "looksAt": [
+    -163.0,
+    43.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2808.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.3
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 5.2,
+      "angleOffset": 0.0
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 26.0,
+      "angleOffset": 16.4
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 26.4,
+      "angleOffset": 16.5
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -153.0,
+     "z": 37.4,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 239,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Ao7fvqARbSDffwWfCYAYQ9J9fr5681IS/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2808.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2809.jpg",
+   "label": "Calle Elena 18 36 covered walkway: pebble mat, hanging lantern and far arch",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2809.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2809.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2809.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "materials",
+    "layout",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -153.7,
+    "z": 37.7,
+    "heading": 235,
+    "accuracy": 2.3,
+    "altitude": 8.0,
+    "trust": "phone location"
+   },
+   "subject": "Calle Elena 18 36 covered walkway looking west-south-west past the pebble mat and hanging lantern toward the iron gates",
+   "looksAt": [
+    -163.0,
+    43.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2809.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 4.4,
+      "angleOffset": 2.7
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 25.3,
+      "angleOffset": 13.1
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 25.7,
+      "angleOffset": 20.8
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -153.7,
+     "z": 37.7,
+     "basis": "phone location",
+     "reportedAccuracy": 2.3,
+     "heading": 235,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1NV_EFAQa1kHjWHKnBWBIF8Jjdnb9ps7A/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2809.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
    "id": "IMG_2810.jpg",
    "label": "Inside the Elena covered walkway: pebble mosaic and inserts",
    "kind": "phone-photo",
@@ -51872,6 +52698,172 @@
    },
    "originalUrl": "https://drive.google.com/file/d/13dFhjSx5T4M9uNxfczJ3D4xjnQnXTmWS/view?usp=drivesdk",
    "mapUrl": "./?view=map&photo=IMG_2810.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2811.jpg",
+   "label": "West end of the Calle Elena 18 36 walkway looking through to the twin iron gates",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2811.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2811.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2811.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
+   "observation": "",
+   "note": "Altitude reads above 9 m, but the picture is at eye level inside the covered walkway (GPS height noise).",
+   "camera": {
+    "x": -154.0,
+    "z": 38.3,
+    "heading": 235,
+    "accuracy": 2.2,
+    "altitude": 10.0,
+    "trust": "phone location"
+   },
+   "subject": "West arch of the Calle Elena 18 36 covered walkway and the hedged path to the twin iron gates",
+   "looksAt": [
+    -163.0,
+    43.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2811.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 3.9,
+      "angleOffset": 7.8
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 24.7,
+      "angleOffset": 12.7
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 25.2,
+      "angleOffset": 22.0
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -154.0,
+     "z": 38.3,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 235,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1XzMqFRIUpgQPDFNSrEnnnIeWjxMaB6Sv/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2811.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2812.jpg",
+   "label": "Calle Elena 18 36 covered walkway: barred window, potted shrubs and far gates",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2812.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2812.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2812.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials",
+    "planting"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -153.7,
+    "z": 38.3,
+    "heading": 237,
+    "accuracy": 2.2,
+    "altitude": 8.9,
+    "trust": "phone location"
+   },
+   "subject": "West arch of the Calle Elena 18 36 covered walkway looking out to the twin iron gates",
+   "looksAt": [
+    -163.0,
+    43.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2812.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 4.1,
+      "angleOffset": 7.7
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 24.9,
+      "angleOffset": 14.2
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 25.5,
+      "angleOffset": 20.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -153.7,
+     "z": 38.3,
+     "basis": "phone location",
+     "reportedAccuracy": 2.2,
+     "heading": 237,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1kBCfEyhkiZoX4FXXIgab3OpxNX7FMCSp/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2812.jpg",
    "features": [],
    "checks": []
   },
@@ -52231,6 +53223,588 @@
      }
     }
    ],
+   "checks": []
+  },
+  {
+   "id": "IMG_2965.jpg",
+   "label": "Cervantes east of Elena looking west-south-west toward the Elena junction",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2965.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2965.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2965.jpg",
+   "areas": [
+    "cervantes",
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "planting",
+    "facades",
+    "signage"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -136.5,
+    "z": 49.2,
+    "heading": 242,
+    "accuracy": 4.2,
+    "altitude": 6.5,
+    "trust": "phone location"
+   },
+   "subject": "Calle Miguel de Cervantes east of Elena looking west-south-west toward the Calle Elena junction",
+   "looksAt": [
+    -148.0,
+    56.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2965.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 0.8
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265801UF1366N_part1",
+      "distance": 31.2,
+      "angleOffset": 22.6
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 34.9,
+      "angleOffset": 15.8
+     },
+     {
+      "id": "building:6265801UF1366N_part4",
+      "distance": 40.5,
+      "angleOffset": 2.6
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -136.5,
+     "z": 49.2,
+     "basis": "phone location",
+     "reportedAccuracy": 4.2,
+     "heading": 242,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1_hZhp8BrwT2DG281eVH63yYXLxShfS-c/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2965.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2966.jpg",
+   "label": "CALLE DE ELENA corner plaque, fan-palm planter and garden doorway on Cervantes",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2966.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2966.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2966.jpg",
+   "areas": [
+    "cervantes",
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "signage",
+    "planting",
+    "facades",
+    "layout"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -139.0,
+    "z": 50.1,
+    "heading": 249,
+    "accuracy": 4.1,
+    "altitude": 6.8,
+    "trust": "phone location"
+   },
+   "subject": "CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction",
+   "looksAt": [
+    -148.0,
+    55.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2966.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 0.3
+     },
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 6.0
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265801UF1366N_part1",
+      "distance": 28.9,
+      "angleOffset": 32.3
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 32.3,
+      "angleOffset": 9.5
+     },
+     {
+      "id": "building:6265801UF1366N_part4",
+      "distance": 37.9,
+      "angleOffset": 10.3
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -139.0,
+     "z": 50.1,
+     "basis": "phone location",
+     "reportedAccuracy": 4.1,
+     "heading": 249,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/19ug5o1fWtJCb7Ussv-E4ITBxkJLXSW2K/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2966.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2970.jpg",
+   "label": "Calle Elena north: projecting barred window with moulded cornice on west facade",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2970.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2970.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2970.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "planting"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -146.2,
+    "z": 48.2,
+    "heading": 280,
+    "accuracy": 3.3,
+    "altitude": 7.3,
+    "trust": "phone location"
+   },
+   "subject": "Projecting barred window with moulded cornice and shutters on the west facade of Calle Elena north",
+   "looksAt": [
+    -151.0,
+    47.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2970.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.7
+     },
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 3.8
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 13.9,
+      "angleOffset": 25.9
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 25.8,
+      "angleOffset": 28.9
+     },
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 27.7,
+      "angleOffset": 17.9
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -146.2,
+     "z": 48.2,
+     "basis": "phone location",
+     "reportedAccuracy": 3.3,
+     "heading": 280,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1fD2j8HoS2IEjqOsd2_46yZGGQfFGB9oz/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2970.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2971.jpg",
+   "label": "Calle Elena north: west house facades with projecting barred windows and balconies",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2971.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2971.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2971.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "facades",
+    "layout",
+    "planting"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -147.0,
+    "z": 47.6,
+    "heading": 305,
+    "accuracy": 3.3,
+    "altitude": 7.7,
+    "trust": "phone location"
+   },
+   "subject": "West house facades along Calle Elena north with projecting barred windows and upper balconies",
+   "looksAt": [
+    -152.0,
+    44.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2971.jpg",
+    "status": "needs-review",
+    "reasons": [
+     "Uncertainty reaches more than one named street"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.3
+     },
+     {
+      "id": "street:cervantes",
+      "name": "Calle Miguel de Cervantes",
+      "kind": "street",
+      "gap": 4.8
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 12.9,
+      "angleOffset": 0.8
+     },
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 26.7,
+      "angleOffset": 7.4
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 31.8,
+      "angleOffset": 28.5
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -147.0,
+     "z": 47.6,
+     "basis": "phone location",
+     "reportedAccuracy": 3.3,
+     "heading": 305,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/10hpBh0edUh_VloFbrW1YA5bTAnCA7uxF/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2971.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2972.jpg",
+   "label": "Calle Elena north looking north-north-west past spider-plant bed to north pool gate",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2972.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2972.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2972.jpg",
+   "areas": [
+    "elena",
+    "north-pool"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "planting",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -147.7,
+    "z": 46.4,
+    "heading": 329,
+    "accuracy": 3.2,
+    "altitude": 7.9,
+    "trust": "phone location"
+   },
+   "subject": "Calle Elena north looking north-north-west past the spider-plant bed and pollarded tree toward the north pool arched gateway",
+   "looksAt": [
+    -153.5,
+    36.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2972.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.3
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 11.6,
+      "angleOffset": 26.0
+     },
+     {
+      "id": "building:6265201UF1366N_part1",
+      "distance": 25.6,
+      "angleOffset": 33.1
+     },
+     {
+      "id": "building:6265401UF1366N_part1",
+      "distance": 40.9,
+      "angleOffset": 28.2
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -147.7,
+     "z": 46.4,
+     "basis": "phone location",
+     "reportedAccuracy": 3.2,
+     "heading": 329,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1dtsnMKvSLy2gbMCCDb2rsvMeyWH15EWh/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2972.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2974.jpg",
+   "label": "Calle Elena north from walkway mouth looking north-north-west to north pool gate",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2974.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2974.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2974.jpg",
+   "areas": [
+    "elena",
+    "north-pool"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "facades",
+    "materials"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -151.2,
+    "z": 39.9,
+    "heading": 327,
+    "accuracy": 3.2,
+    "altitude": 8.8,
+    "trust": "phone location"
+   },
+   "subject": "Calle Elena north from the covered walkway mouth looking north-north-west toward the north pool arched gateway",
+   "looksAt": [
+    -155.5,
+    32.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2974.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.6
+     }
+    ],
+    "inViewCandidates": [],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -151.2,
+     "z": 39.9,
+     "basis": "phone location",
+     "reportedAccuracy": 3.2,
+     "heading": 327,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1UZlqDhgdFp1vhShXaX4LFqCBxMkQg-yI/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2974.jpg",
+   "features": [],
+   "checks": []
+  },
+  {
+   "id": "IMG_2975.jpg",
+   "label": "Inside the Calle Elena 18 36 covered walkway looking toward the twin iron gates",
+   "kind": "phone-photo",
+   "private": false,
+   "sourcePath": "public/photos-ref/IMG_2975.jpg",
+   "sourceUrl": null,
+   "image": "photos-ref/IMG_2975.jpg",
+   "thumbnail": "photos-ref/thumbs/IMG_2975.jpg",
+   "areas": [
+    "elena"
+   ],
+   "viewpoint": "ground",
+   "useFor": [
+    "layout",
+    "materials",
+    "facades"
+   ],
+   "observation": "",
+   "note": "",
+   "camera": {
+    "x": -153.5,
+    "z": 39.6,
+    "heading": 238,
+    "accuracy": 3.1,
+    "altitude": 8.9,
+    "trust": "phone location"
+   },
+   "subject": "Calle Elena 18 36 covered walkway looking west-south-west through the far arch to the twin iron gates",
+   "looksAt": [
+    -163.0,
+    43.0
+   ],
+   "looksAtBasis": "reviewed",
+   "locationBasis": null,
+   "association": {
+    "file": "IMG_2975.jpg",
+    "status": "suggested",
+    "reasons": [
+     "Compatible map context; metadata association remains a suggestion"
+    ],
+    "nearby": [
+     {
+      "id": "street:elena-north",
+      "name": "Calle Elena",
+      "kind": "street",
+      "gap": 0.1
+     }
+    ],
+    "inViewCandidates": [
+     {
+      "id": "building:6265201UF1366N_part5",
+      "distance": 4.0,
+      "angleOffset": 25.2
+     },
+     {
+      "id": "building:6265201UF1366N_part4",
+      "distance": 24.1,
+      "angleOffset": 12.7
+     },
+     {
+      "id": "building:6265201UF1366N_part3",
+      "distance": 25.5,
+      "angleOffset": 22.1
+     }
+    ],
+    "citedBy": [],
+    "geometryReview": "No recorded photo-to-model comparison",
+    "camera": {
+     "x": -153.5,
+     "z": 39.6,
+     "basis": "phone location",
+     "reportedAccuracy": 3.1,
+     "heading": 238,
+     "headingBasis": "EXIF true north"
+    }
+   },
+   "originalUrl": "https://drive.google.com/file/d/1Nsy3v5NiGER0Tj6quPFeeqxjKeGDD_D0/view?usp=drivesdk",
+   "mapUrl": "./?view=map&photo=IMG_2975.jpg",
+   "features": [],
    "checks": []
   },
   {

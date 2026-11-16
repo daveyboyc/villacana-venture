@@ -668,6 +668,11 @@
       "path": "public/photos-ref/IMG_2721.jpg"
     },
     {
+      "id": "IMG_2722.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2722.jpg"
+    },
+    {
       "id": "IMG_2723.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2723.jpg"
@@ -686,6 +691,11 @@
       "id": "IMG_2771.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2771.jpg"
+    },
+    {
+      "id": "IMG_2772.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2772.jpg"
     },
     {
       "id": "IMG_2773.jpg",
