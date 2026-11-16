@@ -358,6 +358,16 @@
      "station": null
     },
     {
+     "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2974.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
      "state": "needs-solving",
      "station": null
@@ -578,6 +588,11 @@
     },
     {
      "photo": "IMG_2708.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2709.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -1048,6 +1063,11 @@
     },
     {
      "photo": "IMG_2767.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2772.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -1641,12 +1661,72 @@
      "station": null
     },
     {
+     "photo": "IMG_2807.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2808.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2809.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2810.jpg",
      "state": "needs-solving",
      "station": null
     },
     {
+     "photo": "IMG_2811.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2812.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2813.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2965.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2966.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2970.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2971.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2974.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2975.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -2117,6 +2197,16 @@
      "photo": "IMG_2801.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_2965.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2966.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -2567,6 +2657,11 @@
      "photo": "IMG_2686.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_2793.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -2810,12 +2905,22 @@
      "station": null
     },
     {
+     "photo": "IMG_2709.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2710.jpg",
      "state": "needs-solving",
      "station": null
     },
     {
      "photo": "IMG_2711.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2726.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -2836,6 +2941,11 @@
     },
     {
      "photo": "IMG_2730.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2731.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -2881,6 +2991,11 @@
     },
     {
      "photo": "IMG_2792.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2793.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -3772,6 +3887,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2722.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2723.jpg",
      "state": "needs-solving",
      "station": null
@@ -3788,6 +3908,11 @@
     },
     {
      "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2772.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -3974,6 +4099,11 @@
    "cameras": [
     {
      "photo": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -4244,6 +4374,11 @@
     },
     {
      "photo": "IMG_2760.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2768.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -4568,6 +4703,11 @@
     },
     {
      "photo": "IMG_2767.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2768.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -5432,6 +5572,11 @@
    "cameras": [
     {
      "photo": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7421,6 +7566,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2709.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2710.jpg",
      "state": "needs-solving",
      "station": null
@@ -7456,6 +7606,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2722.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2723.jpg",
      "state": "needs-solving",
      "station": null
@@ -7467,6 +7622,11 @@
     },
     {
      "photo": "IMG_2725.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2726.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7487,6 +7647,11 @@
     },
     {
      "photo": "IMG_2730.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2731.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7541,6 +7706,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2768.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2769.jpg",
      "state": "needs-solving",
      "station": null
@@ -7552,6 +7722,11 @@
     },
     {
      "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2772.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7656,6 +7831,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2793.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2794.jpg",
      "state": "needs-solving",
      "station": null
@@ -7721,7 +7901,32 @@
      "station": null
     },
     {
+     "photo": "IMG_2807.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2808.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2809.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2810.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2811.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2812.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7737,6 +7942,41 @@
     },
     {
      "photo": "IMG_2823.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2965.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2966.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2970.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2971.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2974.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2975.jpg",
      "state": "needs-solving",
      "station": null
     },

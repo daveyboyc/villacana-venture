@@ -43,8 +43,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 126, Levels and slopes: 30, Facades and roofs: 76, Materials: 114, Planting: 79, Signs: 23, Views: 15
-152 reviewed, 0 suggested only by camera position.
+Layout: 128, Levels and slopes: 30, Facades and roofs: 78, Materials: 116, Planting: 81, Signs: 23, Views: 15
+154 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -348,6 +348,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2668.jpg](../../public/photos-ref/IMG_2668.jpg) | ground | layout, materials, facades, planting | Silvia passage interior looking ENE to the arch **Note:** Same viewpoint and heading (about 55 deg) as IMG_2190; it is the Silvia 1-15 passage seen from its inner side. |
 | [IMG_2671.jpg](../../public/photos-ref/IMG_2671.jpg) | ground | layout, materials, facades, planting | Silvia lane north of the tunnel looking NW to the middle pool south gateway **Looks at:** south gateway of the middle pool at the end of the Silvia lane. **Note:** Same lane and gateway as IMG_2189/2334 from a closer, lower angle; pin sits on the Silvia lane at the tunnel mouth. |
 | [IMG_2674.jpg](../../public/photos-ref/IMG_2674.jpg) | ground | layout, materials, facades, planting | Second arched opening inside the east block with lantern and potted ficus **Note:** Pin (-100.7,105.8, +/-4.8 m) sits in the middle of the large block roof, so it is an indoor/under-roof position; the passage is the Silvia/east-block covered route, but its map alignment is uncertain. |
+| [IMG_2722.jpg](../../public/photos-ref/IMG_2722.jpg) | ground | facades, materials, layout, planting | Calle Guillermo: barred windows with tiled sills and bougainvillea **Looks at:** East-side house windows with black grilles, tiled sills and bougainvillea along Calle Guillermo. |
+| [IMG_2772.jpg](../../public/photos-ref/IMG_2772.jpg) | ground | layout, materials, planting, facades | Calle Guillermo looking north-north-west past the kiosk and lantana planter **Looks at:** Calle Guillermo looking north-north-west past the kiosk, Calle de Jorge plinth corner and lantana planter wall toward the main pool building. |
 | [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials, facades | Tiled apron at the foot of Calle Guillermo with curved wall **Note:** Pin accuracy about 4 m; heading 217 points back down the seafront end of Guillermo. |
 | [IMG_2492.jpg](../../public/photos-ref/IMG_2492.jpg) | ground | signage, facades, materials | Calle de Teodoro street sign and arched wooden door **Looks at:** Calle de Teodoro tile street sign. **Note:** Subject offset (~2 m) from the pin is approximate. |
 | [IMG_2494.jpg](../../public/photos-ref/IMG_2494.jpg) | ground | layout, facades, materials | Narrow lane by Teodoro Rojo: barred windows, planter, drains **Looks at:** Narrow lane north of Teodoro Rojo. **Note:** Near-duplicate viewpoint of IMG_2241. |

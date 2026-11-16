@@ -32,8 +32,8 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 
 ## Coverage
 
-Layout: 39, Levels and slopes: 6, Facades and roofs: 20, Materials: 40, Planting: 14, Signs: 7, Views: 40
-58 reviewed, 0 suggested only by camera position.
+Layout: 41, Levels and slopes: 6, Facades and roofs: 21, Materials: 42, Planting: 14, Signs: 7, Views: 42
+60 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -223,6 +223,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2619.jpg](../../public/photos-ref/IMG_2619.jpg) | ground | layout, materials, facades | Barraka thatched cooking shelter, net-covered mound and kayaks on the sand **Looks at:** Thatched cooking shelter and net-covered mound. **Note:** looksAt is a by-eye estimate about 15 m along the heading from a +-2 m pin; shelter position is not measured. _Used by: barraka_facade.json:barraka-facade._ |
 | [IMG_2300.jpg](../../public/photos-ref/IMG_2300.jpg) | ground | materials, view | Beach: pebbles, sand and distant coastline _Used by: area:beach._ |
 | [IMG_2615.jpg](../../public/photos-ref/IMG_2615.jpg) | ground | facades, materials | Barraka north-east elevation with brown-framed windows, timber band and black door **Looks at:** Barraka north-east wall. **Note:** Pin +-4.7 m; looksAt by eye along the wall. _Used by: barraka_facade.json:barraka-facade._ |
+| [2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg](../../public/photos-ref/2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg) | ground | layout, materials, view | Wooden boardwalk and rope-lined sand path to the sea **Note:** No EXIF GPS; camera unplaced. |
 | [IMG_2605.jpg](../../public/photos-ref/IMG_2605.jpg) | ground | view, materials, planting | View through the Barraka terrace rail to beach parasols and palms **Note:** Pin is on the beach side of the restaurant building footprint. |
 | [IMG_2614.jpg](../../public/photos-ref/IMG_2614.jpg) | ground | layout, planting, materials | Seaward aisle beside Barraka's north-east wall with strelitzia pots and stacked sunloungers **Looks at:** Seaward aisle and pots beside Barraka. **Note:** looksAt is a by-eye estimate about 10 m along the heading; the aisle matches the Barraka boardwalk of IMG_2346/2347. |
 | [IMG_2616.jpg](../../public/photos-ref/IMG_2616.jpg) | ground | layout, materials, planting | Barraka boardwalk and BARRAKA BEACH sign planter |
@@ -258,6 +259,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | ground | layout, levels, materials, view | Curved white-walled tiled descent at the foot of the lane to the beach fence **Note:** Foot of Calle Guillermo area, close to IMG_2600/2601. |
 | [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | planting, view, facades, layout | South lawn towards the east houses: candelabra cactus, palms and paseo fence **Note:** Camera is on the lawn east of the pool; the lawn edge and mesh fence at the right are the seaward edge above the paseo. |
 | [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | planting, layout, view, facades | South lawn seaward edge: hedges, palms and mesh fence above the paseo **Note:** Good GPS (+-2 m) at the seaward corner of the south lawn. |
+| [IMG_2768.jpg](../../public/photos-ref/IMG_2768.jpg) | ground | layout, materials, facades, view | Paseo towards Barraka beside the green bar fence and solar lamp **Looks at:** The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead. |
 | [IMG_2612.jpg](../../public/photos-ref/IMG_2612.jpg) | ground | layout, signage, materials | Junction at Barraka's north corner: stone planter bed, bollard and Lisa's Shop sign **Note:** The brick building, sign and planter lie outside the catalogued Villacana areas (neighbouring property); black sheeting and stone blocks at left are temporary. |
 | [IMG_2621.jpg](../../public/photos-ref/IMG_2621.jpg) | ground | layout, materials, view | Paseo looking north-east past the sandstone wall and beach edge **Note:** The fenced garden at left is outside the catalogued Villacana areas (neighbouring property). |
 | [IMG_2622.jpg](../../public/photos-ref/IMG_2622.jpg) | ground | layout, view, facades | Paseo north-east of Barraka with white cottage behind chain-link fence **Note:** Cottage lies outside the catalogued Villacana areas. |

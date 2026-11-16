@@ -33,8 +33,8 @@ The large main pool, the round toddler pool, the deck and lawn, Bistro Enrique's
 
 ## Coverage
 
-Layout: 32, Levels and slopes: 12, Facades and roofs: 10, Materials: 18, Planting: 10, Signs: 6, Views: 13
-34 reviewed, 0 suggested only by camera position.
+Layout: 33, Levels and slopes: 12, Facades and roofs: 11, Materials: 19, Planting: 11, Signs: 6, Views: 13
+35 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -296,4 +296,5 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2485.jpg](../../public/photos-ref/IMG_2485.jpg) | ground | signage, facades, planting | Comunidad Villacana gate sign at the end of Calle Guillermo **Looks at:** Comunidad Villacana sign on the Guillermo gate wall. **Note:** 13 Nov: looksAt moved onto the sign beside the gate pier as now modelled. Subject offset (~2 m) from the pin is approximate. **Compass:** the subject is 120° from the phone heading; trust looksAt, not the heading. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2610.jpg](../../public/photos-ref/IMG_2610.jpg) | ground | materials, layout, levels | Barraka terrace paving, slot drain and curved sandstone wall under green railings **Looks at:** Curved sandstone wall and green railing at Barraka's west corner. **Note:** Pin +-4 m sits at Barraka's west corner; looksAt is a by-eye estimate of the curved wall about 8 m away. _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2611.jpg](../../public/photos-ref/IMG_2611.jpg) | ground | layout, materials, facades, signage | Paseo lane beside Barraka's north-west wall looking north-east **Looks at:** Barraka north-west wall. **Note:** Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. looksAt is the point 6 m along the phone heading from the pin at the west corner, beside the north-west wall; the same point the unsolved render already aimed at. Not a solved camera. _Used by: barraka_facade.json:barraka-facade._ |
+| [IMG_2772.jpg](../../public/photos-ref/IMG_2772.jpg) | ground | layout, materials, planting, facades | Calle Guillermo looking north-north-west past the kiosk and lantana planter **Looks at:** Calle Guillermo looking north-north-west past the kiosk, Calle de Jorge plinth corner and lantana planter wall toward the main pool building. |
 | [IMG_2725.jpg](../../public/photos-ref/IMG_2725.jpg) | ground | layout, signage, levels | Barred gate view into a laundry corridor with a red studded ramp **Note:** Pin is on Calle Patricia/Guillermo beside a large white roofed block with +/-4.7 m; the heading looks into the block, but which building is not identifiable from the photo. |

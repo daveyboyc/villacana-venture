@@ -16,8 +16,8 @@ The northern boundary roads and the lanes round the north pool's upper side.
 
 ## Coverage
 
-Layout: 2, Levels and slopes: 1, Facades and roofs: 1, Materials: 2, Planting: 1, Signs: 1
-2 reviewed, 0 suggested only by camera position.
+Layout: 3, Levels and slopes: 2, Facades and roofs: 2, Materials: 3, Planting: 1, Signs: 2
+3 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -32,5 +32,6 @@ From `data/build_queue.json`; issue bodies in `refs/issues/`.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
+| [IMG_2793.jpg](../../public/photos-ref/IMG_2793.jpg) | ground | layout, facades, materials, levels, signage | Inside the CALLE ALBERTO 22 40 covered passage looking through to the garden arch **Looks at:** The CALLE ALBERTO 22 40 covered passage looking west-south-west from its ramp and plaque through the far arch to the garden path beyond. |
 | [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. |
 | [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). |
