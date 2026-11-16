@@ -1,5 +1,5 @@
 {
- "about": "Hand-reviewed tags for every reference. Keys are a phone photo's file in public/photos-ref, or 'ref:<path>' for a file in the private villacana-reference repo. shows: area ids from data/areas.json (what the picture shows, not where the camera stood). viewpoint: ground, upper-floor, roof, aerial or map. useFor: topic ids from data/areas.json. looksAt: [x, z] map metres of the picture's main subject, and subject: a few words naming it (set them for roof shots and for photos you build from; otherwise the builder estimates a point along the heading). note: anything an agent must know before using it. Do not put API keys, signed URLs or photo metadata here: this repo is public. altitudeChecked: true means the viewpoint was confirmed from the picture although the phone altitude reads above 9 m (phone GPS altitude is often several metres out); use it only after looking at the photo.",
+ "about": "Hand-reviewed tags for every reference. Keys are a phone photo's file in public/photos-ref, or 'ref:<path>' for a file under reference/. shows: area ids from data/areas.json (what the picture shows, not where the camera stood). viewpoint: ground, upper-floor, roof, aerial or map. useFor: topic ids from data/areas.json. looksAt: [x, z] map metres of the picture's main subject, and subject: a few words naming it (set them for roof shots and for photos you build from; otherwise the builder estimates a point along the heading). note: anything an agent must know before using it. Do not put API keys, signed URLs or photo metadata here: this repo is public. altitudeChecked: true means the viewpoint was confirmed from the picture although the phone altitude reads above 9 m (phone GPS altitude is often several metres out); use it only after looking at the photo.",
  "IMG_2182.jpg": {
   "shows": [
    "seaward-lanes"
@@ -3382,7 +3382,10 @@
    "facades",
    "planting"
   ],
-  "looksAt": [-3.8, 132.1],
+  "looksAt": [
+   -3.8,
+   132.1
+  ],
   "subject": "Comunidad Villacana sign on the Guillermo gate wall",
   "note": "13 Nov: looksAt moved onto the sign beside the gate pier as now modelled. Subject offset (~2 m) from the pin is approximate."
  },
@@ -4770,7 +4773,10 @@
   "note": "Foot of Calle Guillermo area, close to IMG_2600/2601."
  },
  "IMG_2601.jpg": {
-  "looksAt": [-4.0, 131.0],
+  "looksAt": [
+   -4.0,
+   131.0
+  ],
   "subject": "the inner tiled path ending at a lawn strip, the hedge and the mesh fence",
   "title": "Tiled landing at the foot of the lane with hedge and green fence to the beach",
   "shows": [
@@ -4801,12 +4807,18 @@
    "signage",
    "materials"
   ],
-  "looksAt": [-5.0, 133.4],
+  "looksAt": [
+   -5.0,
+   133.4
+  ],
   "subject": "coastal lawn gate pier and iron gate",
   "note": "13 Nov: looksAt moved onto the gateway as now modelled (it was a rough 5 m inland estimate). looksAt is a rough estimate of the gate position from the aerial (not measured)."
  },
  "IMG_2603.jpg": {
-  "looksAt": [-10.0, 110.0],
+  "looksAt": [
+   -10.0,
+   110.0
+  ],
   "subject": "pink lawn path to the main pool with bollards and a slatted bin beside it",
   "title": "Pink lawn path with bollard lights and a pool-side white curved-roof building",
   "shows": [
@@ -4961,7 +4973,10 @@
    "facades",
    "signage"
   ],
-  "looksAt": [25.3, 103.0],
+  "looksAt": [
+   25.3,
+   103.0
+  ],
   "subject": "Barraka north-west wall",
   "note": "Sandbags on black sheeting along the drain look temporary (flood protection), not a permanent feature. looksAt is the point 6 m along the phone heading from the pin at the west corner, beside the north-west wall; the same point the unsolved render already aimed at. Not a solved camera."
  },
@@ -6518,7 +6533,10 @@
   ]
  },
  "IMG_2759.jpg": {
-  "looksAt": [-5.0, 133.4],
+  "looksAt": [
+   -5.0,
+   133.4
+  ],
   "subject": "arched beach gateway at the end of the pink path, bin and bollard beside it",
   "title": "Lawn path to a white gateway towards the sea",
   "shows": [
@@ -6534,7 +6552,10 @@
   "note": "Pin is vague (+/-18.5 m); the view across the large lawn to the sea gateway places it on the main pool lawn."
  },
  "IMG_2760.jpg": {
-  "looksAt": [8.0, 116.0],
+  "looksAt": [
+   8.0,
+   116.0
+  ],
   "subject": "the big lawn towards Barraka, the hedge along the sea railing and the service lid",
   "title": "Large lawn towards the Barraka building",
   "shows": [
@@ -6549,7 +6570,10 @@
   "note": "Pin is vague (+/-10.8 m); the lawn and the Barraka building beyond place it on the main pool lawn."
  },
  "IMG_2761.jpg": {
-  "looksAt": [-4.0, 121.0],
+  "looksAt": [
+   -4.0,
+   121.0
+  ],
   "subject": "lawn beside the pink path: square service lid, bin and bollard, the hedge along the sea railing",
   "title": "Lawn and pink path towards the seafront railing",
   "shows": [
@@ -6564,7 +6588,10 @@
   ]
  },
  "IMG_2762.jpg": {
-  "looksAt": [-12.7, 131.4],
+  "looksAt": [
+   -12.7,
+   131.4
+  ],
   "subject": "strelitzia and silver bush in a white walled corner on the lawn",
   "title": "Strelitzia in a white walled corner on the lawn",
   "shows": [
@@ -6577,7 +6604,10 @@
   ]
  },
  "IMG_2763.jpg": {
-  "looksAt": [-8.5, 135.0],
+  "looksAt": [
+   -8.5,
+   135.0
+  ],
   "subject": "flagstone path between the hedge and the round white wall, mesh sea fence beyond",
   "title": "Pink path curving round a white wall to the sea fence",
   "shows": [
@@ -6609,7 +6639,10 @@
   "subject": "tall slender palm on the main-pool lawn, the pool and the wave-roofed building beyond"
  },
  "IMG_2765.jpg": {
-  "looksAt": [-12.0, 108.0],
+  "looksAt": [
+   -12.0,
+   108.0
+  ],
   "subject": "pink path to the main pool, the tall palm at the pool corner and the wave-roofed building",
   "title": "Main pool lawn and wave-roofed building, second view",
   "shows": [
@@ -6623,7 +6656,10 @@
   ]
  },
  "IMG_2766.jpg": {
-  "looksAt": [-5.0, 133.4],
+  "looksAt": [
+   -5.0,
+   133.4
+  ],
   "subject": "the beach gateway with plumbago either side and the painted crossing in front of it",
   "title": "Painted crossing and blue plumbago at a gated wall",
   "shows": [
@@ -6638,7 +6674,10 @@
   ]
  },
  "IMG_2767.jpg": {
-  "looksAt": [-5.4, 134.0],
+  "looksAt": [
+   -5.4,
+   134.0
+  ],
   "subject": "the painted crossing right outside the beach gateway, the paseo running on south-west",
   "title": "Painted crossing at the gated wall, looking south-west",
   "shows": [
@@ -6716,7 +6755,10 @@
   "note": " Read 2026-11-12: left of the lane, low white planters with clipped hedges between battered piers, a gateway with a dark iron gate, a taller white patio wall behind with strelitzia above it, two lamp posts; a row of bricks on edge borders the lane."
  },
  "IMG_2775.jpg": {
-  "looksAt": [-35.7, 96.2],
+  "looksAt": [
+   -35.7,
+   96.2
+  ],
   "subject": "Enrique's shop front with three blue awnings at the head of the steps",
   "title": "Lane down to the pool building with slot drains",
   "shows": [
@@ -6731,7 +6773,10 @@
   ]
  },
  "IMG_2776.jpg": {
-  "looksAt": [-34.5, 98.5],
+  "looksAt": [
+   -34.5,
+   98.5
+  ],
   "subject": "marble-nosed blue-tiled steps up to Enrique's shop beside the lantana planter",
   "title": "Steps and ramp at the foot of the lane by the pool building",
   "shows": [
@@ -6745,7 +6790,10 @@
   ]
  },
  "IMG_2777.jpg": {
-  "looksAt": [-31.0, 104.0],
+  "looksAt": [
+   -31.0,
+   104.0
+  ],
   "subject": "marble nosing and blue risers at the top of Enrique's steps, terracotta paving and the pool below",
   "title": "Marble-edged steps down to the main pool deck",
   "shows": [
@@ -7118,5 +7166,362 @@
    "planting",
    "view"
   ]
+ },
+ "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg": {
+  "title": "Wooden boardwalk and rope-lined sand path to the sea",
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "view"
+  ],
+  "note": "No EXIF GPS; camera unplaced."
+ },
+ "IMG_2709.jpg": {
+  "title": "Calle Eva west: porch with red ramp, tiles and middle pool gate ahead",
+  "shows": [
+   "eva",
+   "middle-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "levels",
+   "facades"
+  ],
+  "looksAt": [
+   -141.0,
+   96.0
+  ],
+  "subject": "Calle Eva west looking north-east past an arched porch and red studded ramp toward the middle pool south-west gateway"
+ },
+ "IMG_2722.jpg": {
+  "title": "Calle Guillermo: barred windows with tiled sills and bougainvillea",
+  "shows": [
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "layout",
+   "planting"
+  ],
+  "looksAt": [
+   -43.0,
+   77.0
+  ],
+  "subject": "East-side house windows with black grilles, tiled sills and bougainvillea along Calle Guillermo"
+ },
+ "IMG_2726.jpg": {
+  "title": "Calle Eva east: octagonal paving, white bench and hedged planters",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -72.0,
+   58.0
+  ],
+  "subject": "Calle Eva east looking west-south-west past the white bench, lantern post and hedged planter walls"
+ },
+ "IMG_2731.jpg": {
+  "title": "Calle Eva east: octagonal tiles, white wall with arched hood and strelitzia",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "looksAt": [
+   -86.0,
+   64.0
+  ],
+  "subject": "Calle Eva east looking west-south-west toward the Teodoro Rojo junction"
+ },
+ "IMG_2768.jpg": {
+  "title": "Paseo towards Barraka beside the green bar fence and solar lamp",
+  "shows": [
+   "paseo",
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "view"
+  ],
+  "looksAt": [
+   9.0,
+   114.0
+  ],
+  "subject": "The paseo, sandstone wall with green bar fence, white solar lamp and Barraka Beach frontage ahead"
+ },
+ "IMG_2772.jpg": {
+  "title": "Calle Guillermo looking north-north-west past the kiosk and lantana planter",
+  "shows": [
+   "seaward-lanes",
+   "main-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "looksAt": [
+   -23.0,
+   117.0
+  ],
+  "subject": "Calle Guillermo looking north-north-west past the kiosk, Calle de Jorge plinth corner and lantana planter wall toward the main pool building"
+ },
+ "IMG_2793.jpg": {
+  "title": "Inside the CALLE ALBERTO 22 40 covered passage looking through to the garden arch",
+  "shows": [
+   "eva"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "levels",
+   "signage"
+  ],
+  "looksAt": [
+   -113.0,
+   49.0
+  ],
+  "subject": "The CALLE ALBERTO 22 40 covered passage looking west-south-west from its ramp and plaque through the far arch to the garden path beyond"
+ },
+ "IMG_2807.jpg": {
+  "title": "CALLE ELENA 18 36 walkway mouth: steps, red ramp, CASA WILKES sign and hatch",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials",
+   "signage",
+   "facades"
+  ],
+  "looksAt": [
+   -155.5,
+   39.0
+  ],
+  "subject": "East mouth of the Calle Elena 18 36 covered walkway: steps, red studded ramp and wall plaques"
+ },
+ "IMG_2808.jpg": {
+  "title": "Inside the Calle Elena 18 36 covered walkway: patterned floor and far gates",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout",
+   "facades"
+  ],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "subject": "Calle Elena 18 36 covered walkway looking west-south-west over the patterned floor and pebble mat toward the twin iron gates"
+ },
+ "IMG_2809.jpg": {
+  "title": "Calle Elena 18 36 covered walkway: pebble mat, hanging lantern and far arch",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "layout",
+   "facades"
+  ],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "subject": "Calle Elena 18 36 covered walkway looking west-south-west past the pebble mat and hanging lantern toward the iron gates"
+ },
+ "IMG_2811.jpg": {
+  "title": "West end of the Calle Elena 18 36 walkway looking through to the twin iron gates",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "subject": "West arch of the Calle Elena 18 36 covered walkway and the hedged path to the twin iron gates",
+  "note": "Altitude reads above 9 m, but the picture is at eye level inside the covered walkway (GPS height noise).",
+  "altitudeChecked": true
+ },
+ "IMG_2812.jpg": {
+  "title": "Calle Elena 18 36 covered walkway: barred window, potted shrubs and far gates",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials",
+   "planting"
+  ],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "subject": "West arch of the Calle Elena 18 36 covered walkway looking out to the twin iron gates"
+ },
+ "IMG_2965.jpg": {
+  "title": "Cervantes east of Elena looking west-south-west toward the Elena junction",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "planting",
+   "facades",
+   "signage"
+  ],
+  "looksAt": [
+   -148.0,
+   56.0
+  ],
+  "subject": "Calle Miguel de Cervantes east of Elena looking west-south-west toward the Calle Elena junction"
+ },
+ "IMG_2966.jpg": {
+  "title": "CALLE DE ELENA corner plaque, fan-palm planter and garden doorway on Cervantes",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "signage",
+   "planting",
+   "facades",
+   "layout"
+  ],
+  "looksAt": [
+   -148.0,
+   55.0
+  ],
+  "subject": "CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction"
+ },
+ "IMG_2970.jpg": {
+  "title": "Calle Elena north: projecting barred window with moulded cornice on west facade",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "planting"
+  ],
+  "looksAt": [
+   -151.0,
+   47.0
+  ],
+  "subject": "Projecting barred window with moulded cornice and shutters on the west facade of Calle Elena north"
+ },
+ "IMG_2971.jpg": {
+  "title": "Calle Elena north: west house facades with projecting barred windows and balconies",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "layout",
+   "planting"
+  ],
+  "looksAt": [
+   -152.0,
+   44.0
+  ],
+  "subject": "West house facades along Calle Elena north with projecting barred windows and upper balconies"
+ },
+ "IMG_2972.jpg": {
+  "title": "Calle Elena north looking north-north-west past spider-plant bed to north pool gate",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "looksAt": [
+   -153.5,
+   36.0
+  ],
+  "subject": "Calle Elena north looking north-north-west past the spider-plant bed and pollarded tree toward the north pool arched gateway"
+ },
+ "IMG_2974.jpg": {
+  "title": "Calle Elena north from walkway mouth looking north-north-west to north pool gate",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "facades",
+   "materials"
+  ],
+  "looksAt": [
+   -155.5,
+   32.0
+  ],
+  "subject": "Calle Elena north from the covered walkway mouth looking north-north-west toward the north pool arched gateway"
+ },
+ "IMG_2975.jpg": {
+  "title": "Inside the Calle Elena 18 36 covered walkway looking toward the twin iron gates",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "looksAt": [
+   -163.0,
+   43.0
+  ],
+  "subject": "Calle Elena 18 36 covered walkway looking west-south-west through the far arch to the twin iron gates"
  }
 }

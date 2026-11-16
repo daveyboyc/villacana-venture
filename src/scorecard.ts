@@ -30,7 +30,7 @@ type Scorecard = { measuredAt: string | null; grid: { x0: number; z0: number; st
 const TABLE = "https://github.com/daveyboyc/villacana-venture/blob/main/refs/SCORECARD.md";
 const WHOLE = "whole-resort";
 
-export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: number) => number): { update(x: number, z: number): void } {
+export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: number) => number, onAreaChange?: (areaId: string) => void): { update(x: number, z: number): void } {
   const params = new URLSearchParams(location.search);
   const wanted = params.get("scorecard");
   if (wanted === "0" || (wanted !== "1" && (params.has("photocam") || navigator.webdriver))) return { update() {} };
@@ -195,6 +195,7 @@ export function areaScorecard(scene?: THREE.Scene, groundY?: (x: number, z: numb
       const id = code === "." ? WHOLE : g.areas[code.charCodeAt(0) - 97];
       if (id === shown && card) return;
       shown = id;
+      onAreaChange?.(id);
       const found = data.areas.find((a) => a.id === id);
       if (found) render(found, id === WHOLE);
     },

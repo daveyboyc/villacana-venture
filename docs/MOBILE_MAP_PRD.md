@@ -34,8 +34,8 @@ Run the production build, reference consistency, photo assignment, structural
 source checks, layout browser regression and overview regression.
 
 ## Scope and limits
-The private villacana-reference repository supplies the existing photo evidence;
-no source images need changing or publishing. The public villacana-venture
-repository owns controls and materials. This work changes presentation and input,
+The `reference/` directory supplies the existing reference imagery;
+no source images need changing or bundling into the deployed site. The main app
+owns controls and materials. This work changes presentation and input,
 not surveyed geometry, collision or claims of photographic accuracy. Tiny grass
 blades should naturally blend at whole-resort distances through mipmapping.

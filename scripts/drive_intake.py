@@ -54,7 +54,7 @@ class Drive:
         token = None
         while True:
             params = {'q': f"'{self.folder}' in parents and trashed=false", 'pageSize': 1000,
-                      'fields': 'nextPageToken,files(id,name,createdTime)',
+                      'fields': 'nextPageToken,files(id,name,createdTime,mimeType)',
                       'supportsAllDrives': 'true', 'includeItemsFromAllDrives': 'true'}
             if token:
                 params['pageToken'] = token
@@ -72,7 +72,15 @@ class Drive:
             r.raise_for_status()
             with open(dest, 'wb') as f:
                 for chunk in r.iter_content(1 << 20):
-                    f.write(chunk)
+                    if chunk:
+                        f.write(chunk)
+
+
+def parse_folder_id(value: str) -> str:
+    folder = value.strip()
+    if '/folders/' in folder:
+        folder = folder.split('/folders/', 1)[1].split('?', 1)[0].strip('/')
+    return folder
 
 
 def drive_id(entry: dict) -> str | None:
@@ -80,11 +88,25 @@ def drive_id(entry: dict) -> str | None:
     return url.split('/d/')[1].split('/')[0] if '/d/' in url else None
 
 
-def find_new(listing, manifest: list[dict]) -> list[dict]:
+def find_new(listing, manifest: list[dict], annotations: dict | None = None) -> list[dict]:
     """Photos in the listing whose Drive id is not on the map, oldest first, one per id."""
     known = {drive_id(e) for e in manifest} - {None}
+    if annotations:
+        by_stem = {}
+        for key, ann in annotations.items():
+            if isinstance(ann, dict) and '.' in key:
+                fid = drive_id(ann)
+                if fid:
+                    by_stem.setdefault(key.rsplit('.', 1)[0].casefold(), fid)
+        for e in manifest:
+            if not e.get('originalUrl'):
+                fid = by_stem.get(e['file'].rsplit('.', 1)[0].casefold())
+                if fid:
+                    known.add(fid)
     seen, new = set(), []
-    for f in sorted(listing, key=lambda f: (f['createdTime'], f['name'])):
+    for f in sorted(listing, key=lambda f: (f.get('createdTime', ''), f['name'])):
+        if f.get('mimeType', '').startswith('application/vnd.google-apps.'):
+            continue
         if f['name'].lower().endswith(PHOTO_SUFFIXES) and f['id'] not in known and f['id'] not in seen:
             seen.add(f['id'])
             new.append(f)
@@ -93,29 +115,56 @@ def find_new(listing, manifest: list[dict]) -> list[dict]:
 
 def same_photo(fresh: dict, existing: dict) -> bool:
     """Capture date, camera pin and heading all equal: the same picture uploaded again."""
-    return all(fresh.get(k) == existing.get(k) for k in ('taken', 'x', 'z', 'heading', 'focal35'))
+    gps = existing.get('gps') or {}
+    ex_x = gps.get('x', existing.get('x'))
+    ex_z = gps.get('z', existing.get('z'))
+    if (fresh.get('taken'), fresh.get('x'), fresh.get('z'), fresh.get('heading')) != (
+        existing.get('taken'), ex_x, ex_z, existing.get('heading')
+    ):
+        return False
+    # Older manifest entries predate focal35; only compare when both sides recorded it.
+    if fresh.get('focal35') is not None and existing.get('focal35') is not None:
+        return fresh.get('focal35') == existing.get('focal35')
+    return True
+
+
+def _annotation_key(annotations: dict, name: str) -> str:
+    if name in annotations:
+        return name
+    jpg = f'{Path(name).stem}.jpg'
+    return jpg if jpg in annotations else name
 
 
 def intake(drive, manifest: list[dict], work: Path, annotations: dict) -> tuple[list[str], list[str]]:
     """Download the new photos into `work`; returns (staged file names, notes). Updates annotations."""
     by_stem = {e['file'].rsplit('.', 1)[0].casefold(): e for e in manifest}
     staged, notes = [], []
-    for f in find_new(drive.list(), manifest):
+    for f in find_new(drive.list(), manifest, annotations):
         name = Path(f['name']).name
+        if '.' not in name or name.startswith('.'):
+            continue
         stem, suffix = name.rsplit('.', 1)
-        dest = work / name
-        drive.download(f['id'], dest)
+        url = f'https://drive.google.com/file/d/{f["id"]}/view?usp=drivesdk'
+        tmp = work / f'.dl-{f["id"]}.{suffix}'
+        drive.download(f['id'], tmp)
+        fresh = index_photos.metadata(tmp)
         existing = by_stem.get(stem.casefold())
         if existing:
-            if same_photo(index_photos.metadata(dest), existing):
-                dest.unlink()
+            if same_photo(fresh, existing):
+                tmp.unlink()
+                if not existing.get('originalUrl'):
+                    existing['originalUrl'] = url
+                    annotations.setdefault(_annotation_key(annotations, existing['file']), {})['originalUrl'] = url
                 notes.append(f'{name}: re-upload of a photo already on the map, skipped')
                 continue
             renamed = f'{stem}-{f["id"][:6]}.{suffix}'
-            dest = dest.rename(work / renamed)
+            if Path(renamed).stem.casefold() in by_stem:
+                renamed = f'{stem}-{f["id"]}.{suffix}'
             notes.append(f'{name}: different photo with an existing name, indexed as {renamed}')
             name = renamed
-        annotations.setdefault(name, {})['originalUrl'] = f'https://drive.google.com/file/d/{f["id"]}/view?usp=drivesdk'
+        dest = tmp.rename(work / name)
+        by_stem[dest.stem.casefold()] = {**fresh, 'originalUrl': url}
+        annotations.setdefault(_annotation_key(annotations, name), {})['originalUrl'] = url
         staged.append(name)
     return staged, notes
 
@@ -130,31 +179,37 @@ def main():
     parser.add_argument('--dry-run', action='store_true', help='list what is new, download nothing')
     parser.add_argument('--keep', type=Path, help='keep the downloaded originals in this private folder')
     args = parser.parse_args()
-    key, folder = os.environ.get('GOOGLE_SERVICE_ACCOUNT_JSON'), os.environ.get('VILLACANA_DRIVE_FOLDER')
+    key = (os.environ.get('GOOGLE_SERVICE_ACCOUNT_JSON') or '').strip()
+    folder = parse_folder_id(os.environ.get('VILLACANA_DRIVE_FOLDER') or '')
     if not key or not folder:
         raise SystemExit('Set GOOGLE_SERVICE_ACCOUNT_JSON and VILLACANA_DRIVE_FOLDER (see this script\'s docstring).')
     drive = Drive(key, folder)
     manifest = json.loads(MANIFEST.read_text())
+    annotations = json.loads(ANNOTATIONS.read_text())
     if args.dry_run:
-        for f in find_new(drive.list(), manifest):
-            print('new', f['name'], f['createdTime'])
+        for f in find_new(drive.list(), manifest, annotations):
+            print('new', f['name'], f.get('createdTime', ''))
         return
+    before_urls = [e.get('originalUrl') for e in manifest]
     work = args.keep or Path(tempfile.mkdtemp(prefix='villacana-originals-'))
     work.mkdir(parents=True, exist_ok=True)
     try:
-        annotations = json.loads(ANNOTATIONS.read_text())
         staged, notes = intake(drive, manifest, work, annotations)
         for n in notes:
             print(n)
-        if not staged:
+        backfilled = [e.get('originalUrl') for e in manifest] != before_urls
+        if not staged and not backfilled:
             print('No new photos.')
             return
         ANNOTATIONS.write_text(json.dumps(annotations, indent=2, ensure_ascii=False) + '\n')
-        # index_photos reads every photo in the folder: stage only the new ones
-        run(sys.executable, 'scripts/index_photos.py', str(work), 'public/photos-ref', '--annotations', 'data/photo_annotations.json')
+        if backfilled:
+            MANIFEST.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + '\n')
+        if staged:
+            # index_photos reads every photo in the folder: stage only the new ones
+            run(sys.executable, 'scripts/index_photos.py', str(work), 'public/photos-ref', '--annotations', 'data/photo_annotations.json')
         run(sys.executable, 'scripts/assign_photo_map.py')
         run(sys.executable, 'scripts/build_references.py')
-        run(sys.executable, 'scripts/build_photo_map.py', '--thumbs')
+        run(sys.executable, 'scripts/build_photo_map.py', *(['--thumbs'] if staged else []))
     finally:
         if not args.keep:
             shutil.rmtree(work, ignore_errors=True)

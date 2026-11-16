@@ -70,7 +70,7 @@ class InventoryValidation(unittest.TestCase):
     def test_private_pixel_annotations_are_rejected(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);path,data,entry,catalog=self.fixture(root)
-            catalog[0]['path']='villacana-reference/private.jpg'
+            catalog[0]['path']='reference/private.jpg'
             self.assertTrue(any('private pixel annotations' in p for p in self.project(root,entry,catalog)[3]))
             public=json.loads((root/'public/path-network/elena/inventory.json').read_text())
             self.assertIsNone(public['sources'][0]['image'])

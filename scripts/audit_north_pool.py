@@ -2,7 +2,7 @@
 """Reproduce the north-pool audit without editing runtime geometry.
 
 Public output contains only vector plans, measurements and source hashes.
---reference ../villacana-reference --private-out <outside-public-repo>
+--reference reference --private-out <outside-public-repo>
 adds source-image overlays. Never publish those private comparisons here.
 Requires numpy, Pillow, matplotlib (same Python environment as map tooling).
 """
@@ -197,7 +197,7 @@ def validate_water_landmarks(reference):
     return result
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--reference',type=Path,default=ROOT.parent/'villacana-reference');p.add_argument('--private-out',type=Path);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--reference',type=Path,default=ROOT/'reference');p.add_argument('--private-out',type=Path);a=p.parse_args()
     d=measurements();d['reproducedWaterLandmarks']=validate_water_landmarks(a.reference);public_plan();residual_plot(d)
     for svg in (OUT/'layout.svg',OUT/'alignment-residuals.svg'):
         svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
