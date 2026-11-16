@@ -5,7 +5,7 @@ Task `ground-plan-north-lanes` · area **Loira, Bolivia, Alberto and Isabel** ·
 ## Read first
 
 - `AGENTS.md`, `docs/HANDOVER.md`
-- `refs/areas/north-lanes.md` and the contact sheet `villacana-reference/contact-sheets/north-lanes.jpg`
+- `refs/areas/north-lanes.md` and the contact sheet `reference/contact-sheets/north-lanes.jpg`
 - docs: `docs/STREET_LAYOUT.md`
 - data: `data/street_layout.json`
 

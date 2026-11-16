@@ -32,7 +32,7 @@ def main() -> None:
         print(f"  Source: {r['sourcePath']}")
         print(f"  Map: https://daveyboyc.github.io/villacana-venture/?view=map&photo={quote(r['id'], safe='')}")
         if r.get('sourceUrl'):
-            print(f"  Private source: {r['sourceUrl']}")
+            print(f"  Reference source: {r['sourceUrl']}")
         print(f"  Areas: {', '.join(r['areas'])}; viewpoint: {r.get('viewpoint') or 'unknown'}")
         camera = r.get('camera')
         if camera:

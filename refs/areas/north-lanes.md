@@ -12,7 +12,7 @@ The northern boundary roads and the lanes round the north pool's upper side.
 
 - docs: `docs/STREET_LAYOUT.md`
 - data: `data/street_layout.json`
-- contact sheet: `villacana-reference/contact-sheets/north-lanes.jpg` (thumbnails of everything below, numbered in this order)
+- contact sheet: `reference/contact-sheets/north-lanes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 

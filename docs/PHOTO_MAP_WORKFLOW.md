@@ -42,8 +42,8 @@ Every batch goes through the same steps, so any agent can pick up any area.
    answer. Look at them: set the request `answered` with `answeredBy` and a `note`, or leave it
    open and say in its `note` what is still missing. Add requests for anything the batch shows is
    still unphotographed. Then `python3 scripts/build_references.py --sheets --check`.
-5. Commit the web copies, tags and `refs/` here, and the contact sheets in
-   `villacana-reference`. Write a short dated note (`docs/PHOTOS_<date>.md`)
+5. Commit the web copies, tags, `refs/` and the contact sheets in
+   `reference/contact-sheets/`. Write a short dated note (`docs/PHOTOS_<date>.md`)
    only for findings that change what we know about an area; also add those
    findings to the area's `notes` in `data/areas.json`.
 
@@ -85,8 +85,8 @@ Search by ID, area or visible subject. Selecting a photo shows its full label,
 image, camera uncertainty and reviewed look-at context. Dots locate cameras;
 pink crosses locate reviewed subjects approximately. A dashed radius without
 reported accuracy is a 10 m search heuristic. **Photo evidence** under Layers
-controls this selected-photo context. Private and unplaced sources stay listed;
-private pixels are never copied to the public website.
+controls this selected-photo context. Unbundled (`reference/`) and unplaced sources stay listed;
+images in `reference/` are never copied into the deployed website.
 
 **Copy photo link** gives a stable `?view=map&photo=<ID>` URL. **Copy agent
 reference** supplies the source path, published caption, local draft caption if

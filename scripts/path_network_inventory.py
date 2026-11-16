@@ -1,7 +1,7 @@
 """Validate scoped source inventories and project safe observations into the reference graph.
 
 A pixel trace is never converted to map metres. Inventory review cannot grant
-placement approval. Private source pixels and annotations stay in the private repo.
+placement approval. Non-public reference pixels and annotations stay out of published assets.
 """
 import hashlib
 import json
@@ -94,7 +94,7 @@ def load_inventories(root, authored, catalog, features, problems):
                 problems.append('path inventory: unknown source '+id); continue
             original = root / known[id]['path']
             is_public = known[id]['path'].startswith('public/')
-            if not is_public: original = root.parent / known[id]['path']
+            if not is_public and not original.is_file(): original = root.parent / known[id]['path']
             if (is_public or original.is_file()) and (not original.is_file() or source.get('sha256') != sha(original)):
                 problems.append('path inventory: source bytes stale '+id)
             if original.is_file():

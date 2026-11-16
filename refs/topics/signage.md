@@ -163,7 +163,7 @@ Street-name plaques, house numbers and other readable signs.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| `villacana-reference/apple-maps/06-top-down-whole-block.png` | map | layout, signage | Apple Maps top-down: whole block with surrounding street names |
-| `villacana-reference/google-maps/01-street-map-lane-names.png` | map | layout, signage | Google street map with inner lane names |
-| `villacana-reference/google-maps/02-satellite-lane-names.png` | aerial | layout, signage | Google satellite with inner lane names |
+| `reference/apple-maps/06-top-down-whole-block.png` | map | layout, signage | Apple Maps top-down: whole block with surrounding street names |
+| `reference/google-maps/01-street-map-lane-names.png` | map | layout, signage | Google street map with inner lane names |
+| `reference/google-maps/02-satellite-lane-names.png` | aerial | layout, signage | Google satellite with inner lane names |
 | [IMG_2597.jpg](../../public/photos-ref/IMG_2597.jpg) | ground | signage, view, layout, planting | Calle de Jorge sign post beside the lawn wall and tiled path, mountain beyond **Looks at:** Calle de Jorge sign post. **Note:** looksAt is a rough 6 m estimate along the heading, not measured. Read 2026-11-11: the plinth stands on a lawn with an old olive tree to its left; a low white wall with orange lantana closes the lawn behind. _Used by: jorge_lane.json:jorge-lane-verge, jorge_lane.json:jorge-lane-sign, jorge_lane.json:jorge-lane-guillermo-planter, jorge_lane.json:jorge-lane-fittings._ |

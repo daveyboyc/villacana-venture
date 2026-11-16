@@ -20,7 +20,7 @@ def main():
         print(json.dumps(nodes,indent=2,ensure_ascii=False));return
     if args.command=='digest':
         print(packet_digest(json.loads(args.packet.read_text())));return
-    _,catalog,problems=build(ROOT.parent/'villacana-reference')
+    _,catalog,problems=build(ROOT/'reference')
     if problems:raise SystemExit('\n'.join(problems))
     features=model_features(catalog);feature=next((f for f in features if f['id']==args.feature),None)
     if feature is None:raise SystemExit('Unknown model feature')

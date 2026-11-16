@@ -39056,217 +39056,217 @@
    "id": "ref:apple-maps/01-3d-overview-from-north.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: the whole block looking south to the sea",
-   "path": "villacana-reference/apple-maps/01-3d-overview-from-north.png",
+   "path": "reference/apple-maps/01-3d-overview-from-north.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/02-3d-north-pool.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: north pool and surrounding terraces",
-   "path": "villacana-reference/apple-maps/02-3d-north-pool.png",
+   "path": "reference/apple-maps/02-3d-north-pool.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: south pool, its lawn and the beach promenade",
-   "path": "villacana-reference/apple-maps/03-3d-south-pool-and-promenade.png",
+   "path": "reference/apple-maps/03-3d-south-pool-and-promenade.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/04-top-down-south-half.png",
    "kind": "map-screenshot",
    "name": "Apple Maps top-down: southern half, middle and south pools, tiled-roof block",
-   "path": "villacana-reference/apple-maps/04-top-down-south-half.png",
+   "path": "reference/apple-maps/04-top-down-south-half.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
    "kind": "map-screenshot",
    "name": "Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach",
-   "path": "villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png",
+   "path": "reference/apple-maps/05-top-down-main-pool-and-lawn.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/06-top-down-whole-block.png",
    "kind": "map-screenshot",
    "name": "Apple Maps top-down: whole block with surrounding street names",
-   "path": "villacana-reference/apple-maps/06-top-down-whole-block.png",
+   "path": "reference/apple-maps/06-top-down-whole-block.png",
    "viewpoint": "map"
   },
   {
    "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: north pool looking east towards the Picasso car park",
-   "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
+   "path": "reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/08-3d-north-pool-looking-west-porches.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: north pool looking west, front porches, tiled canopies, balconies",
-   "path": "villacana-reference/apple-maps/08-3d-north-pool-looking-west-porches.png",
+   "path": "reference/apple-maps/08-3d-north-pool-looking-west-porches.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/09-3d-north-pool-looking-south.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: north pool looking south, lawn ring, curved path, deck",
-   "path": "villacana-reference/apple-maps/09-3d-north-pool-looking-south.png",
+   "path": "reference/apple-maps/09-3d-north-pool-looking-south.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west",
-   "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
+   "path": "reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: Calle Guillermo sloping down beside the pool lawn to the paseo",
-   "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png",
+   "path": "reference/apple-maps/11-3d-guillermo-slope-to-paseo.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: main pool looking north-east, 90 Miles terrace and the east steps",
-   "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png",
+   "path": "reference/apple-maps/12-3d-main-pool-east-steps-picasso.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:apple-maps/13-3d-main-pool-terrace-both-stairs.png",
    "kind": "map-screenshot",
    "name": "Apple Maps 3D: main pool terrace curve with the west and east steps",
-   "path": "villacana-reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png",
+   "path": "reference/apple-maps/13-3d-main-pool-terrace-both-stairs.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:google-maps/01-street-map-lane-names.png",
    "kind": "map-screenshot",
    "name": "Google street map with inner lane names",
-   "path": "villacana-reference/google-maps/01-street-map-lane-names.png",
+   "path": "reference/google-maps/01-street-map-lane-names.png",
    "viewpoint": "map"
   },
   {
    "id": "ref:google-maps/02-satellite-lane-names.png",
    "kind": "map-screenshot",
    "name": "Google satellite with inner lane names",
-   "path": "villacana-reference/google-maps/02-satellite-lane-names.png",
+   "path": "reference/google-maps/02-satellite-lane-names.png",
    "viewpoint": "aerial"
   },
   {
    "id": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
    "kind": "own-photo",
    "name": "North pool lawn at ground level, April 2021. The key style reference.",
-   "path": "villacana-reference/photos/01-north-pool-lawn-ground-level-2021-04.png",
+   "path": "reference/photos/01-north-pool-lawn-ground-level-2021-04.png",
    "viewpoint": "ground"
   },
   {
    "id": "ref:photos/02-pool-from-upper-floor-2020-12.png",
    "kind": "own-photo",
    "name": "Middle pool from an upper floor, December 2020",
-   "path": "villacana-reference/photos/02-pool-from-upper-floor-2020-12.png",
+   "path": "reference/photos/02-pool-from-upper-floor-2020-12.png",
    "viewpoint": "upper-floor"
   },
   {
    "id": "ref:photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
    "kind": "own-photo",
    "name": "North pool looking down over barrel roof tiles: hedges, gates, crazy paving",
-   "path": "villacana-reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
+   "path": "reference/photos/03-north-pool-down-over-roof-tiles-hedges.jpg",
    "viewpoint": "upper-floor"
   },
   {
    "id": "ref:photos/04-north-pool-roof-tiles-yucca-patio.jpg",
    "kind": "own-photo",
    "name": "North pool: roof tiles, a yucca, a patio behind a hedge",
-   "path": "villacana-reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg",
+   "path": "reference/photos/04-north-pool-roof-tiles-yucca-patio.jpg",
    "viewpoint": "upper-floor"
   },
   {
    "id": "ref:photos/05-north-pool-west-side-garden-walls.jpg",
    "kind": "own-photo",
    "name": "North pool west side: curved garden walls, raised patios, tiled steps",
-   "path": "villacana-reference/photos/05-north-pool-west-side-garden-walls.jpg",
+   "path": "reference/photos/05-north-pool-west-side-garden-walls.jpg",
    "viewpoint": "upper-floor"
   },
   {
    "id": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
    "kind": "own-photo",
    "name": "North pool looking north-east: terraces, mountains behind",
-   "path": "villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg",
+   "path": "reference/photos/06-north-pool-looking-north-east-mountains.jpg",
    "viewpoint": "upper-floor"
   },
   {
    "id": "ref:photos/07-north-pool-whole-courtyard-looking-north.jpg",
    "kind": "own-photo",
    "name": "North pool: the whole courtyard looking north. The best single reference for it.",
-   "path": "villacana-reference/photos/07-north-pool-whole-courtyard-looking-north.jpg",
+   "path": "reference/photos/07-north-pool-whole-courtyard-looking-north.jpg",
    "viewpoint": "upper-floor"
   },
   {
    "id": "ref:photos/08-middle-pool-deck-bird-of-paradise.jpg",
    "kind": "own-photo",
    "name": "Middle pool deck: bird-of-paradise, ladder, wooden balcony house, palm trunk",
-   "path": "villacana-reference/photos/08-middle-pool-deck-bird-of-paradise.jpg",
+   "path": "reference/photos/08-middle-pool-deck-bird-of-paradise.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:photos/09-middle-pool-through-iron-gate.jpg",
    "kind": "own-photo",
    "name": "Middle pool through an iron gate from a tiled lane",
-   "path": "villacana-reference/photos/09-middle-pool-through-iron-gate.jpg",
+   "path": "reference/photos/09-middle-pool-through-iron-gate.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
    "kind": "own-photo",
    "name": "Patio beside the middle pool: oleander bed, pollarded tree",
-   "path": "villacana-reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
+   "path": "reference/photos/10-middle-pool-patio-oleander-pollarded-tree.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
    "kind": "own-photo",
    "name": "Patio beside the middle pool: oleander bed, two feathery trees",
-   "path": "villacana-reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
+   "path": "reference/photos/11-middle-pool-patio-oleander-feathery-trees.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
    "kind": "own-photo",
    "name": "Terracotta-tiled lane to an arched white gateway into the middle pool courtyard",
-   "path": "villacana-reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
+   "path": "reference/photos/12-middle-pool-tiled-lane-to-arched-gate.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:web/south-pool-01-looking-north-palm.jpg",
    "kind": "web-photo",
    "name": "South pool looking north: date palm, two-storey terraces, hedged patios",
-   "path": "villacana-reference/web/south-pool-01-looking-north-palm.jpg",
+   "path": "reference/web/south-pool-01-looking-north-palm.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:web/south-pool-02-looking-south-east-sea.jpg",
    "kind": "web-photo",
    "name": "South pool looking south-east: sea beyond, low white wall and fence at the seaward edge",
-   "path": "villacana-reference/web/south-pool-02-looking-south-east-sea.jpg",
+   "path": "reference/web/south-pool-02-looking-south-east-sea.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:web/south-pool-03-lawn-from-north-west.jpg",
    "kind": "web-photo",
    "name": "South lawn from the north-west: curved low white wall, bollard lights, loungers",
-   "path": "villacana-reference/web/south-pool-03-lawn-from-north-west.jpg",
+   "path": "reference/web/south-pool-03-lawn-from-north-west.jpg",
    "viewpoint": "ground"
   },
   {
    "id": "ref:web/easyjet-pool-probably-middle.jpg",
    "kind": "web-photo",
    "name": "A small pool with bird-of-paradise, palm and pollarded tree",
-   "path": "villacana-reference/web/easyjet-pool-probably-middle.jpg",
+   "path": "reference/web/easyjet-pool-probably-middle.jpg",
    "viewpoint": "ground"
   },
   {
