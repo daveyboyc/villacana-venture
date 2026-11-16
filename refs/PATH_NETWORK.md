@@ -32,7 +32,7 @@ Canonical inspector: `/?view=map&network=1`. Source content tags, citations and 
 | Calle Miguel de Cervantes | 73 / 45 | 1 | 1 | partial |
 | Calle Pintor Dalí | 53 / 53 | 3 | 0 | uninspected |
 | Pintor Picasso and the car park | 4 / 4 | 2 | 0 | uninspected |
-| Loira, Bolivia, Alberto and Isabel | 3 / 3 | 4 | 6 | uninspected |
+| Loira, Bolivia, Alberto and Isabel | 2 / 2 | 4 | 6 | uninspected |
 | Calle Eva | 58 / 58 | 2 | 0 | uninspected |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 154 / 154 | 6 | 2 | uninspected |
 | Barraka and the beach | 60 / 60 | 1 | 0 | uninspected |

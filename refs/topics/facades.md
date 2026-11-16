@@ -201,7 +201,6 @@ House fronts, shutters, balconies, porches, roofs, chimneys, arches.
 
 | Reference | Viewpoint | Use for | What it shows |
 | --- | --- | --- | --- |
-| [IMG_2793.jpg](../../public/photos-ref/IMG_2793.jpg) | ground | layout, facades, materials, levels, signage | Inside the CALLE ALBERTO 22 40 covered passage looking through to the garden arch **Looks at:** The CALLE ALBERTO 22 40 covered passage looking west-south-west from its ramp and plaque through the far arch to the garden path beyond. |
 | [IMG_2686.jpg](../../public/photos-ref/IMG_2686.jpg) | ground | layout, planting, facades, materials | Calle Elena north from the Cervantes junction: hedged beds and white walls **Note:** Matches the existing Elena north bed and spur description (hedged beds, white wall with window/door). |
 
 ## Calle Eva

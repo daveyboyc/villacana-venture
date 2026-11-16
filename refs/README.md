@@ -16,7 +16,7 @@ Work to do: [QUEUE.md](QUEUE.md) lists the build tasks by priority; `docs/HANDOV
 | Calle Miguel de Cervantes | 73 | 73 | [areas/cervantes.md](areas/cervantes.md) |
 | Calle Pintor Dalí | 53 | 53 | [areas/dali.md](areas/dali.md) |
 | Pintor Picasso and the car park | 4 | 4 | [areas/picasso.md](areas/picasso.md) |
-| Loira, Bolivia, Alberto and Isabel | 3 | 3 | [areas/north-lanes.md](areas/north-lanes.md) |
+| Loira, Bolivia, Alberto and Isabel | 2 | 2 | [areas/north-lanes.md](areas/north-lanes.md) |
 | Calle Eva | 58 | 58 | [areas/eva.md](areas/eva.md) |
 | Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo | 154 | 154 | [areas/seaward-lanes.md](areas/seaward-lanes.md) |
 | Barraka and the beach | 60 | 60 | [areas/barraka-beach.md](areas/barraka-beach.md) |

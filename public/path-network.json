@@ -50422,8 +50422,7 @@
    "review": null,
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
-    "eva",
-    "north-lanes"
+    "eva"
    ]
   },
   {
@@ -52559,8 +52558,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 3,
-   "uninspectedSources": 3,
+   "sourceCount": 2,
+   "uninspectedSources": 2,
    "routes": [
     "path-route:loira",
     "path-route:bolivia",
