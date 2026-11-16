@@ -54,7 +54,10 @@ uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 - Check the model in Inspect. Layout is the clear structural view; **Show details**
   is where photo-backed fittings must be visible. Generic clutter stays off Layout.
   Decorative objects must respect the shared route-clearance guard, including
-  their visible footprint. Do not treat a Walk view as the check.
+  their visible footprint. Exception (Dave, 2026-11-16): a photographed tree or
+  tall plant whose canopy overhangs a route may stand where the photo shows it;
+  mark it `canopyOverhangs` in `data/objects.json` and only its trunk (0.3 m)
+  keeps the clearance. Do not treat a Walk view as the check.
 - Buildings keep a level datum, opaque materials and extrusion material groups.
   Terrain refinement is for ground surfaces and must preserve drawable groups.
 - For geometry/collision/terrain changes, run relevant source and route checks,
