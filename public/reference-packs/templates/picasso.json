@@ -30,12 +30,12 @@
     {
       "id": "ref:apple-maps/07-3d-north-pool-looking-east-to-picasso.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png"
+      "path": "reference/apple-maps/07-3d-north-pool-looking-east-to-picasso.png"
     },
     {
       "id": "ref:apple-maps/12-3d-main-pool-east-steps-picasso.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/12-3d-main-pool-east-steps-picasso.png"
+      "path": "reference/apple-maps/12-3d-main-pool-east-steps-picasso.png"
     }
   ],
   "features": [],

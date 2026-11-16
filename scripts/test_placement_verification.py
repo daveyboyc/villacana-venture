@@ -180,7 +180,7 @@ class PlacementPolicy(unittest.TestCase):
 
     def test_private_sources_require_immutable_version(self):
         self.features[0]['photos'].append('ref:photos/private.png')
-        self.catalog.append({'id':'ref:photos/private.png','path':'villacana-reference/photos/private.png'})
+        self.catalog.append({'id':'ref:photos/private.png','path':'reference/photos/private.png'})
         self.assert_rejected(self.review(),'immutable sourceRevision')
 
     def test_open_discrepancy_overrides_positive_packet(self):

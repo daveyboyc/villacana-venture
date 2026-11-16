@@ -71,7 +71,7 @@ const fs = require('node:fs');
     const privateRef=index.references.find(r=>r.private);
     await page.fill('#photo-search',privateRef.id); await page.locator('.photo-result').click();
     assert.equal(await page.locator('#photo-detail img').count(),0);
-    assert.ok(await page.locator('#photo-detail a').getAttribute('href').then(h=>h.includes('villacana-reference')));
+    assert.ok(await page.locator('#photo-detail a').getAttribute('href').then(h=>h.includes('villacana-venture/blob/')&&h.includes('/reference/')));
     assert.equal(await page.locator('.photo-map-pin[display=""]').count(),0);
     const unplaced=index.references.find(r=>!r.private&&!r.camera);
     await page.fill('#photo-search',unplaced.id); await page.locator('.photo-result').click();

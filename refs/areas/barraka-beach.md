@@ -28,7 +28,7 @@ The beach in front of Villacana, the Barraka beach restaurant and the sea.
 - docs: `docs/SEAFRONT.md`, `docs/LEVELS.md`
 - data: `data/levels_survey.json`, `data/barraka_frontage.json`, `data/barraka_facade.json`
 - src: `src/seafront.ts`, `src/seaside.ts`, `src/barraka-frontage.ts`, `src/barraka-facade.ts`
-- contact sheet: `villacana-reference/contact-sheets/barraka-beach.jpg` (thumbnails of everything below, numbered in this order)
+- contact sheet: `reference/contact-sheets/barraka-beach.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
@@ -247,7 +247,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2481.jpg](../../public/photos-ref/IMG_2481.jpg) | ground | layout, materials, view | Paseo looking north-east towards Barraka: curving pink walk, sandstone wall, dry verge **Looks at:** Paseo curve and verge towards Barraka. _Used by: area:paseo, beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs._ |
 | [IMG_2482.jpg](../../public/photos-ref/IMG_2482.jpg) | ground | layout, planting, view | Paseo looking north-east: agave verge and Barraka restaurant **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo, beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs._ |
 | [IMG_2483.jpg](../../public/photos-ref/IMG_2483.jpg) | ground | planting, view | Paseo looking north-east, second shot: agave verge to Barraka **Looks at:** Barraka beach restaurant at the end of the paseo. _Used by: area:paseo, beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs._ |
-| `villacana-reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
+| `reference/apple-maps/05-top-down-main-pool-and-lawn.png` | aerial | layout | Apple Maps top-down: main pool, toddler pool, deck, lawn, Barraka beach _Used by: seafront_fence.json:guillermo-beach-gate, seafront_fence.json:guillermo-ramp-wall, seafront_fence.json:main-pool-lawn-railing._ |
 | [IMG_2598.jpg](../../public/photos-ref/IMG_2598.jpg) | ground | view, planting, layout | Lawn and flowering lantana border looking east to the Barraka restaurant **Looks at:** Barraka beach restaurant. **Note:** Building identified as Barraka from the matching view in IMG_2604; looksAt reused from IMG_2482. _Used by: ground_plan_main_pool.json:main-lawn, ground_plan_main_pool.json:lawn-strip-guillermo._ |
 | [IMG_2633.jpg](../../public/photos-ref/IMG_2633.jpg) | ground | layout, planting, materials | West paseo bend with agave verge and timber edge _Used by: beach_verge.json:barraka-front-verge, beach_verge.json:barraka-front-shrubs._ |
 | [IMG_2351.jpg](../../public/photos-ref/IMG_2351.jpg) | ground | materials, view | Paseo looking south: stamped walk, timber edge, beach and sea _Used by: area:paseo, paseo_wall.json:paseo-timber-edge._ |

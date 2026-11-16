@@ -54,7 +54,7 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
   const agentText = (r: Reference) => [
     `Photo: ${r.id}`, `Published label: ${r.label}`, ...(localLabel(r) ? [`Local draft label (not published): ${localLabel(r)}`] : []),
     `Map: ${new URL(`?view=map&photo=${encodeURIComponent(r.id)}`, location.href).href}`, `Source: ${r.sourcePath}`,
-    ...(r.sourceUrl ? [`Private source link: ${r.sourceUrl}`] : []), `Areas: ${r.areas.join(", ")}`, `Viewpoint: ${r.viewpoint ?? "unknown"}`,
+    ...(r.sourceUrl ? [`Reference source link: ${r.sourceUrl}`] : []), `Areas: ${r.areas.join(", ")}`, `Viewpoint: ${r.viewpoint ?? "unknown"}`,
     r.camera ? `Camera: [${r.camera.x}, ${r.camera.z}] m; GPS uncertainty ${r.camera.accuracy === undefined ? "unknown" : `±${r.camera.accuracy} m`}; ${r.camera.trust ?? "recorded position"}. Camera is not subject.` : "No camera coordinates. Find using area and visible landmarks; do not infer a pin.",
     `Subject: ${r.subject ?? "not separately located"}`, ...(r.looksAt ? [`Subject/look-at: ${JSON.stringify(r.looksAt)}; basis: ${r.looksAtBasis}. Not a surveyed boundary.`] : []),
     ...(r.locationBasis ? [`Location basis: ${r.locationBasis}`] : []), `Observed: ${r.observation || "See source image."}`, `Notes: ${r.note || "none recorded"}`,
@@ -102,8 +102,8 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
       img.addEventListener("click", open); img.addEventListener("keydown", e => { if (e.key === "Enter") open(); });
       button("Open full photo", detail, open).id = "openPhoto";
     } else {
-      make("p", "Private reference — open the source in the private repository.", detail).className = "photo-state";
-      if (r.sourceUrl) { const link = make("a", "Open private image", detail); link.href = r.sourceUrl; link.target = "_blank"; link.rel = "noopener noreferrer"; }
+      make("p", "Reference image (not bundled in the web app) — open the source in the repository.", detail).className = "photo-state";
+      if (r.sourceUrl) { const link = make("a", "Open reference image", detail); link.href = r.sourceUrl; link.target = "_blank"; link.rel = "noopener noreferrer"; }
     }
     make("p", r.observation || r.subject || r.label, detail);
     const cameraText = r.camera ? `Camera [${r.camera.x}, ${r.camera.z}] m · ${r.camera.accuracy === undefined ? "uncertainty unknown; dashed 10 m search radius" : `GPS ±${r.camera.accuracy} m`}.` : "No camera position recorded; this reference stays in the list.";
@@ -166,7 +166,7 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
       const row = make("button", "", results); row.className = "photo-result"; row.setAttribute("data-reference-id", r.id); row.setAttribute("aria-current", String(selected?.id === r.id));
       if (r.thumbnail) { const img = make("img", "", row); img.src = asset("/" + r.thumbnail); img.alt = ""; img.loading = "lazy"; }
       const span = make("span", "", row); make("small", r.id.replace(/\.jpg$/, ""), span); make("strong", caption(r), span);
-      if (r.private || !r.camera) make("small", r.private ? "Private source · area reference" : "No camera position", span);
+      if (r.private || !r.camera) make("small", r.private ? "Reference source · area reference" : "No camera position", span);
       row.addEventListener("click", () => select(r));
     }
     update();

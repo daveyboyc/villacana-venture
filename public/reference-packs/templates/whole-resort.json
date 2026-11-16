@@ -110,27 +110,27 @@
     {
       "id": "ref:apple-maps/01-3d-overview-from-north.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/01-3d-overview-from-north.png"
+      "path": "reference/apple-maps/01-3d-overview-from-north.png"
     },
     {
       "id": "ref:apple-maps/06-top-down-whole-block.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/06-top-down-whole-block.png"
+      "path": "reference/apple-maps/06-top-down-whole-block.png"
     },
     {
       "id": "ref:google-maps/01-street-map-lane-names.png",
       "private": true,
-      "path": "villacana-reference/google-maps/01-street-map-lane-names.png"
+      "path": "reference/google-maps/01-street-map-lane-names.png"
     },
     {
       "id": "ref:google-maps/02-satellite-lane-names.png",
       "private": true,
-      "path": "villacana-reference/google-maps/02-satellite-lane-names.png"
+      "path": "reference/google-maps/02-satellite-lane-names.png"
     },
     {
       "id": "ref:photos/06-north-pool-looking-north-east-mountains.jpg",
       "private": true,
-      "path": "villacana-reference/photos/06-north-pool-looking-north-east-mountains.jpg"
+      "path": "reference/photos/06-north-pool-looking-north-east-mountains.jpg"
     }
   ],
   "features": [],

@@ -103,7 +103,7 @@ show only with "Show details" on.
 
 ## Calle Guillermo runs down to the paseo; the east steps (2026-10-21)
 
-Dave's Apple Maps 3D screenshots (private `villacana-reference`, apple-maps/10 to 13)
+Dave's Apple Maps 3D screenshots (`reference/apple-maps/10` to `13`)
 showed two things the model had wrong.
 
 - **Calle Guillermo ends in a ramp down to the paseo, not on a bank.** The lane runs

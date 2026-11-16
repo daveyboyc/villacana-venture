@@ -16,7 +16,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 - docs: `docs/DALI_CERVANTES.md`, `docs/LAYOUT_ACCURACY.md`, `docs/LEVELS.md`
 - data: `data/dali_cervantes.json`, `data/dali_photo_reference.json`, `data/coastal_gate.json`, `data/levels_survey.json`, `data/door_sills.json`, `data/dali_street.json`
 - src: `src/coastal-gate.ts`, `src/dali-threshold.ts`, `src/door-sills.ts`, `src/dali-street.ts`
-- contact sheet: `villacana-reference/contact-sheets/dali.jpg` (thumbnails of everything below, numbered in this order)
+- contact sheet: `reference/contact-sheets/dali.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
