@@ -1,6 +1,6 @@
 # Villacana project direction
 
-## Current focus (Dave, 2026-11-10)
+## Current focus (Dave, 2026-11-10; structure first 2026-11-16)
 
 The work is a 3D model with detailed assets, matched to the map and the reference
 photos, and judged in **Inspect**. Walk is not being worked on. Do not build or
@@ -8,14 +8,29 @@ tune walking, the Walk camera, collision for its own sake, or route connectivity
 and leave Walk as it is. A change is not done until it can be seen in Inspect,
 in Layout and with **Show details**, without switching to Walk.
 
-Prefer work that makes Inspect closer to the photos: pools, materials and
-surfaces, facades, planting and small built details. The path, tunnel and
-boundary inventories still matter where they fix what the model shows, but they
-no longer come first. Detail still goes on geometry the evidence supports; it no
-longer waits for every route to be mapped.
+**Structure first (Dave, 2026-11-16).** In each area, get the layout and levels
+right before adding detail. Work in this order and have a reviewer subagent sign
+off each stage in Inspect (Layout) against the full-size photos before the next:
 
-Prioritise structural accuracy alongside photo-matched detail. Read
-`docs/LAYOUT_ACCURACY.md` for the current layout view, sources and remaining
+1. **Photo coverage.** List the area's solved cameras and what they can and
+   cannot fix; one camera position fixes direction, not depth. Request missing
+   ground-level viewpoints (`data/photo_requests.json`) before building.
+2. **Layout.** House fronts, pool rings, paths (centreline and width), walls and
+   boundaries with their openings, patio and lawn outlines. Measure them through
+   solved cameras on known planes and against the aerial.
+3. **Levels.** Floors, steps, ramps and stairs, checked against the laser survey
+   (`scripts/lidar_check.py`) and `data/levels_survey.json`.
+4. **Generated filler.** Switch off generated hedges, awnings, balconies, garden
+   walls and gates where the photos show something else, with a photo-backed record.
+5. **Detail.** Photographed fittings, furniture, planting and facade ornament,
+   reviewed with **Show details**.
+
+Detail goes only on structure that has passed its review. Read
+`docs/WORKFLOW_LESSONS.md` for why: most rework in the north-pool sessions was
+detail sitting on wrong structure. The aim stays an Inspect view close to the
+photos: pools, materials and surfaces, facades, planting and small built details.
+
+Read `docs/LAYOUT_ACCURACY.md` for the current layout view, sources and remaining
 uncertainties; `docs/PHOTO_MAP_WORKFLOW.md` explains camera pins and evidence.
 
 - Keep map, 3D geometry and collision consistent. Preserve original registry
