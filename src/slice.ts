@@ -506,14 +506,13 @@ async function boot(): Promise<void> {
   action(".camera-out",()=>{distance=Math.min(farthest*3,distance*1.3);});
   const panMode=(pan:boolean)=>{
     overviewPan=pan;
-    document.querySelector("#inspection-jump span")!.textContent=pan
-      ?"Drag or two fingers to pan · pinch or wheel to zoom"
-      :"Drag to orbit · two fingers pan · twist to turn";
+    document.querySelector("#inspection-jump span")!.textContent=inspectHelp();
     document.querySelector("#overview-pan")!.setAttribute("aria-pressed",String(pan));
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
   action("#overview-pan",()=>panMode(true));action("#overview-rotate",()=>panMode(false));
-  panMode(false);
+  // A phone drags the map like a map app; a desktop drag orbits.
+  panMode(phoneInspect);
   const rotation=document.querySelector<HTMLInputElement>("#overview-rotation")!;
   rotation.addEventListener("input",()=>{camYaw=-Number(rotation.value)*Math.PI/180;});
   action("#overview-check",()=>{showChecks=!showChecks;document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));});
@@ -769,7 +768,7 @@ async function boot(): Promise<void> {
       document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
       document.querySelector<HTMLElement>("#help")!.hidden=overview;
       backdrop.visible=!overview&&!layoutOnly;
-      document.querySelector("#help")!.textContent=overview?"Drag to orbit · two fingers pan · twist to turn":"WASD or left thumb to walk · drag to look";
+      document.querySelector("#help")!.textContent=overview?inspectHelp():"WASD or left thumb to walk · drag to look";
       if(overview && !inspectionStarted){
         camYaw=0;inspectionStarted=true;
         if(inspectAt){camYaw=inspectYaw;overviewCentre.set(inspectAt.x,inspectQuery?liveGroundY(inspectAt.x,inspectAt.z)+0.5:0.5,inspectAt.z);distance=inspectAt.distance;pitch=inspectAt.pitch;}
@@ -779,7 +778,18 @@ async function boot(): Promise<void> {
       if(!overview){distance=6;pitch=.45;}focusPending=false;
     }
     pitch = clamp(pitch + input.lookDy * 0.0035, firstPerson ? -.65 : .15, overview ? Math.PI/2 : firstPerson ? 1.55 : 1.45);
+    const zoomedFrom=distance;
     distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, (overview?farthest*8:farthest*3));
+    if(overview&&zoomAnchor&&distance!==zoomedFrom){
+      // Keep the ground under the pinch where it is: move the centre toward it as the camera closes in.
+      raycaster.setFromCamera(new THREE.Vector2(zoomAnchor.x/innerWidth*2-1,-(zoomAnchor.y/innerHeight)*2+1),camera);
+      const ground=new THREE.Plane(new THREE.Vector3(0,1,0),-overviewCentre.y),hit=new THREE.Vector3();
+      if(raycaster.ray.intersectPlane(ground,hit)&&Math.hypot(hit.x-overviewCentre.x,hit.z-overviewCentre.z)<zoomedFrom*3){
+        const pull=1-distance/zoomedFrom;
+        overviewCentre.x+=(hit.x-overviewCentre.x)*pull;overviewCentre.z+=(hit.z-overviewCentre.z)*pull;
+      }
+    }
+    zoomAnchor=null;
     // Push the haze back as the camera rises, so the layout stays clear from above.
     fog.near = 90 + distance * 1.5;
     fog.far = 260 + distance * 3;
@@ -1605,12 +1615,18 @@ function hash(x: number, z: number): number {
 
 let overview = new URLSearchParams(location.search).get("view") !== "walk";
 let overviewPan=false, panDx=0, panDy=0;
+/** Client point the last pinch zoomed towards; used once per frame. */
+let zoomAnchor:{x:number;y:number}|null=null;
+/** The gesture hint for Inspect, by device and Pan/Orbit switch. */
+const inspectHelp=()=>phoneInspect
+  ?`${overviewPan?"Drag to pan":"Drag to orbit"} · two fingers twist to turn, slide to tilt · pinch to zoom`
+  :overviewPan?"Drag or two fingers to pan · pinch or wheel to zoom":"Drag to orbit · two fingers pan · twist to turn";
 let walkInput:ReturnType<typeof bindWalkControls>|undefined;
 const readKeys=()=>walkInput?.read();
 let resetPointers=()=>{};
 function bindInput():void{
   walkInput=bindWalkControls({canvas,pad:document.querySelector<HTMLButtonElement>('#walk-pad')!,input,
-    isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},
+    isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},zoomAt:(x,y)=>{zoomAnchor={x,y};},
     toggleOverview:()=>{
       const fromView = overview ? "overview" : "walk";
       overview=!overview;

@@ -86,12 +86,12 @@ missing and unverified features; the programme is not yet complete.
 
 ## Controls and local edits
 
-In Inspect, drag to orbit. Slide two fingers to pan — forward and back follow
-the fingers — and twist them to turn. Right-drag, Shift-drag or a trackpad
-scroll also pans, and a pinch or the mouse wheel zooms. **Pan** and **Orbit**
-choose what a left-drag or one finger does. On a phone those buttons are hidden:
-the resort opens in details without place or photo labels, one finger orbits, and
-two fingers pan. **Map** opens the reference map and **Photos** shows the photo
+In Inspect, drag to orbit. Right-drag, Shift-drag or a trackpad scroll pans,
+and a pinch or the mouse wheel zooms. **Pan** and **Orbit** choose what a
+left-drag does. On a phone those buttons are hidden and the controls work like a
+map app: the resort opens in details without place or photo labels, one finger
+pans, two fingers twist to turn and slide up or down to tilt, and a pinch zooms
+towards the point between your fingers. **Map** opens the reference map and **Photos** shows the photo
 pins. **Whole resort**
 resets the camera, and **More** contains Top down, North, photo labels and map checks.
 Walk is still on the page and is left unchanged. It is not part of the current
