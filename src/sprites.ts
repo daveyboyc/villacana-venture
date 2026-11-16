@@ -53,7 +53,8 @@ export const SPRITE_SIZE: Record<SpriteKind, { w: number; h: number; shadow: boo
   grass: { w: 0.55, h: 0.34, shadow: false },
 };
 
-export type SpritePlacement = { x: number; y?: number; z: number; scale?: number };
+/** `clearance`: the radius the route-clearance guard checks, when it is the trunk rather than the whole sprite (a canopy that overhangs a route). */
+export type SpritePlacement = { x: number; y?: number; z: number; scale?: number; clearance?: number };
 
 /** How a set is drawn: `far` uses the lighter distant models, unshadowed and hazed instead of fogged. */
 export type SpriteOptions = { far?: boolean };
@@ -62,7 +63,7 @@ export type SpriteOptions = { far?: boolean };
 export function addSprites(scene: THREE.Scene, kind: SpriteKind, places: SpritePlacement[], options: SpriteOptions = {}): void {
   if(scene.userData.layoutOnly)return;
   const guard=scene.userData.decorationClearance as ((x:number,z:number,radius:number)=>boolean)|undefined;
-  if(guard)places=places.filter(p=>guard(p.x,p.z,SPRITE_SIZE[kind].w*(p.scale??1)/2));
+  if(guard)places=places.filter(p=>guard(p.x,p.z,p.clearance??SPRITE_SIZE[kind].w*(p.scale??1)/2));
   if (!places.length) return;
   const { w, h } = SPRITE_SIZE[kind], far = !!options.far && !!FAR_MODELS[kind], shadow = SPRITE_SIZE[kind].shadow && !options.far;
   const card = new THREE.PlaneGeometry(w, h).translate(0, h / 2, 0);

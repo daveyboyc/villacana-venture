@@ -1015,32 +1015,6 @@
    "why": "The station camera stands on the roof south of the hedges and cannot see between them and the south row; the two paths that leave the lawn south (one along the hibiscus hedge, one through the gap) run out of view. Not modelled."
   },
   {
-   "id": "gap:north-pool-station-yucca",
-   "name": "Yucca by Calle Isabel not drawn",
-   "at": [
-    -164.2,
-    22.45
-   ],
-   "photos": [
-    "IMG_2204.jpg",
-    "IMG_2205.jpg"
-   ],
-   "why": "The yucca (o13) is placed where its trunk casts through the solved IMG_2205 camera, but the route-clearance guard drops its sprite: its 4.2 m visible canopy needs 2.85 m from the Calle Elena protected route's centreline and the trunk stands 1.3 m from it. Left out rather than bypassing the guard; needs a decision on the guard there or a narrower yucca model."
-  },
-  {
-   "id": "gap:north-pool-lawn-tree",
-   "name": "Trees beside Calle Isabel not drawn (north lawn and east side)",
-   "at": [
-    -168.46,
-    11.7
-   ],
-   "photos": [
-    "IMG_2204.jpg",
-    "IMG_2205.jpg"
-   ],
-   "why": "The tree (o9) is placed where its trunk casts through the solved IMG_2205 camera, but its 5.6 m visible canopy needs 3.55 m from the Calle Isabel route centreline and the trunk stands about 2.9 m from it, so the route-clearance guard drops the sprite (as with the yucca, gap:north-pool-station-yucca). Needs a decision on the guard for trees whose canopy overhangs a lane. The same guard drops the feathery tree o10 at (-163.66, 17.09) beside Calle Isabel (IMG_2205 x 1030-1420), which with the yucca leaves the east side looking bare."
-  },
-  {
    "id": "gap:north-pool-window-mouldings",
    "name": "Moulded window surrounds on the north row",
    "at": [
