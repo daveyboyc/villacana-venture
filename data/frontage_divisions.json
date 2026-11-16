@@ -67,8 +67,8 @@
      69.847
     ],
     [
-     -153.0,
-     71.9
+     -152.39,
+     71.58
     ]
    ],
    "evidence": [
@@ -79,7 +79,7 @@
     "IMG_2358.jpg",
     "IMG_2367.jpg"
    ],
-   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace",
+   "trust": "Surface type and white edging supported by listed ground photos; extent traced approximately from satellite/registry context, not a property survey; reviewed against IMG_2358/2367 roof views on 2026-10-15: lane, white kerb and door-approach relationships corroborated, existing approximate outline retained without a calibrated retrace 16 November 2026 (data/lane_walls.json): the north-west corner was moved 0.7 m east, from (-153.0, 71.9) to (-152.39, 71.58), to sit 0.45 m inside the photographed west wall whose doors stand on the built sills; IMG_2260 and IMG_2261 show this lawn edge running straight along that wall behind a bed.",
    "status": "photo-backed type; approximate extent"
   },
   {
@@ -378,8 +378,8 @@
      69.847
     ],
     [
-     -153.0,
-     71.9
+     -152.39,
+     71.58
     ],
     [
      -149.1,

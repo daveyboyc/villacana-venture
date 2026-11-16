@@ -312,6 +312,25 @@ tree and that a second portal shows through the gateway; found the first gateway
 tall (now 1.25 by 2.1 m); and pointed out that nothing shows the path surface between 28 and
 86 m, which is why the path there is marked assumed.
 
+## The garden's east wall and the patio walls (16 November, task `lane-walls-jorge-elena`)
+
+Dave: the walls need adding around Calle Jorge and Elena. Strips of the Esri and Google aerials cut
+along the centreline (stations read straight off them) were compared with the Inspect Layout view and
+the photos. Full account in `docs/LANE_WALLS.md`; the walls are in `data/lane_walls.json`.
+
+- The tall white wall with a lantern and meter box in IMG_2230 is the **east side of the cactus
+  garden**, at 104.3 m: its lane end lies about 10 degrees right of the lane's vanishing point from the
+  camera pin, and the Esri aerial has the wall there, from the lane edge to the house corner, with the
+  garden lawn ending against it. So the open garden gap in the planter now ends at 104.4 m (was 108.4 m,
+  from the pins) and the garden kerb and lawn at 104.1 m; the hedged planter runs on from the wall, as in
+  the photo. Built 2.6 m above the path, estimated.
+- Where the north-side houses step back at 111.1, 117.7 and 124.3 m the aerials show white walls square
+  to the lane from the house corners to the planters; the model left those strips open. Built, inferred.
+- From 56 to 86 m the aerial shows open front lawns with Y-shaped paths to the house doors, not walls;
+  nothing was added there. The white wall round the south-pool lawn corner at Calle Silvia and the
+  south-side house recesses are recorded as gaps (`gap:jorge-silvia-lawn-wall`,
+  `gap:jorge-south-recesses`).
+
 ## How these builds were checked, and what that is worth
 
 - Each change is rendered from the photo's position and compared with the photo by eye, by the
@@ -340,7 +359,7 @@ tall (now 1.25 by 2.1 m); and pointed out that nothing shows the path surface be
   walls. Door 23 itself and the arched recess above it are not modelled.
 - Not built: the octagonal tiles of the lane that joins from the north (it keeps the generic
   ribbon), the patio floors and furniture behind the planters, the wall lantern and meter box on
-  the patio wall (IMG_2230), and the low wall with lantana behind the olive (IMG_2597).
+  the garden's east wall (IMG_2230; the wall itself is built, `docs/LANE_WALLS.md`), and the low wall with lantana behind the olive (IMG_2597).
 
 ## Checks
 

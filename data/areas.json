@@ -233,7 +233,8 @@
     "docs/LEVELS.md",
     "docs/reviews/path-network-inventory-elena/README.md",
     "docs/reviews/elena-patio-wall-correction/README.md",
-    "docs/ELENA_WALKWAY.md"
+    "docs/ELENA_WALKWAY.md",
+    "docs/LANE_WALLS.md"
    ],
    "data": [
     "data/elena_north.json",
@@ -244,7 +245,8 @@
     "data/terrain.json",
     "data/levels_survey.json",
     "data/door_sills.json",
-    "data/elena_walkway.json"
+    "data/elena_walkway.json",
+    "data/lane_walls.json"
    ],
    "src": [
     "src/elena-north.ts",
@@ -253,7 +255,8 @@
     "src/terrain.ts",
     "src/layout-routes.ts",
     "src/door-sills.ts",
-    "src/elena-walkway.ts"
+    "src/elena-walkway.ts",
+    "src/lane-walls.ts"
    ],
    "notes": [
     "IMG_2254 shows the sign CALLE ELENA 18-30.",
@@ -273,7 +276,8 @@
     "27 October batch (docs/PHOTOS_2026-10-27.md): the walkway plaque reads CALLE ELENA 18 36 (IMG_2518; IMG_2254 had it cropped, earlier read as 18-30). The walkway floor is two risers (about 0.3 m) above the lane at its east portal, with a red ribbed ramp beside the steps (IMG_2518/2519, level item elena-walkway-east-steps, not modelled). IMG_2519 looks the whole walkway to the west arch and the 36/34 gates, the both-end view #145 asked for together with IMG_2203.",
     "27 October batch: a second covered passage, signed CALLE ELENA 25, opens off Elena south through a moulded street arch into block 6265601UF1366N_part1 (IMG_2507/2508): doors both sides, flush floor of terracotta with blue inset tiles, far arch to a red-tiled path and an iron garden gate. The registry and the game draw the block solid; the aerial shows a courtyard inside. Task elena-25-passage.",
     "4 Nov 2026 (task elena-walkway-details, docs/ELENA_WALKWAY.md): the covered walkway under part5 now has its east-portal steps (three white risers, not two) and red studded ramp, a 0.40 m raised patterned floor with the pebble mat, CALLE ELENA 18 36 / CASA WILKES tile signs, AGUA POTABLE hatch, two brown double doors, round end arches and a lantern, from IMG_2456/2459/2518-2520/2689-2691. Positions along the walls and all dimensions are estimates; the single arched door with grille (IMG_2692/2813) is not placed. The Elena/Cervantes junction details of IMG_2540/2511 (grey stone inset slabs, the CALLE ELENA tile sign on the lawn kerb wall) and IMG_2541-2547 (Cervantes to Eva inner walk-through) are not built.",
-    "16 November 2026: IMG_2968 looks north-north-west up Calle Elena: square terracotta tiles between white kerbs and hedged beds, two pollarded trees, a white wall with a louvred door and an arch at the north end. IMG_2973 shows a clivia and monstera bed at the foot of the garden wall, seen from the garden side."
+    "16 November 2026: IMG_2968 looks north-north-west up Calle Elena: square terracotta tiles between white kerbs and hedged beds, two pollarded trees, a white wall with a louvred door and an arch at the north end. IMG_2973 shows a clivia and monstera bed at the foot of the garden wall, seen from the garden side.",
+    "16 November 2026 (lane-walls-jorge-elena): the white wall with two brown doors along the west side of the Elena south lawns is built (IMG_2261, IMG_2260, IMG_2330, IMG_2358), its doors on the existing sills, 2.2 m high, from the Cervantes south wall to the cypress wall; so is the low patio wall on the east side of the lane mouth (IMG_2358). Lawn 2's traced north-west corner moved 0.7 m east to sit inside the wall. See docs/LANE_WALLS.md."
    ]
   },
   {
@@ -485,7 +489,8 @@
    },
    "docs": [
     "docs/STREET_LAYOUT.md",
-    "docs/REFERENCE_PACK_WORKFLOW.md"
+    "docs/REFERENCE_PACK_WORKFLOW.md",
+    "docs/LANE_WALLS.md"
    ],
    "data": [
     "data/street_layout.json",
@@ -494,7 +499,8 @@
     "data/silvia_map.json",
     "data/entrance_planters.json",
     "data/silvia_ramp_passages.json",
-    "data/jorge_lane.json"
+    "data/jorge_lane.json",
+    "data/lane_walls.json"
    ],
    "src": [
     "src/seaward-paving.ts",
@@ -505,7 +511,8 @@
     "src/silvia-ramp-passage.ts",
     "src/silvia-ramp-study.ts",
     "src/jorge-lane.ts",
-    "src/candelabra-cactus.ts"
+    "src/candelabra-cactus.ts",
+    "src/lane-walls.ts"
    ],
    "notes": [
     "IMG_2235/2237/2239 support octagonal terracotta with diamond infills on the photographed Teodoro Rojo run; IMG_2240 remains square. IMG_2185/2190 support cream/blue corner inserts in covered-floor tiles. Material masks use existing ground/registry strips; tile dimensions and passage extents remain estimates, and solid registry strips may still obscure the floor until separately traced as passages. No levels or geometry were changed.",
@@ -534,7 +541,8 @@
     "12 November 2026 (guillermo-west-walls): built the photographed west side of Calle Guillermo north of the Jorge junction: the plain lawn wall carried to the lane, patio wall, hedged planters with gateways, lamp posts and brick border; generic openings are now kept off walls listed as plain (guillermoWest.plainWalls in data/jorge_lane.json, used by the shutters, porches and facade kit). Open: registry part 6364401UF1366S_part7's east portion is probably an open patio (plants show above the wall in IMG_2773); changing it needs a measured check. The same 'plain wall' list can be used wherever a photo shows a garden wall where the model draws a house front.",
     "12 November 2026 (Dave): the east portion of registry part 6364401UF1366S_part7, behind the plinth-lawn wall, is treated as an open walled patio on the evidence of IMG_2773 and the aerial, without a measured check (data/registry_corrections.json, openPatios; scripts/build_skeleton.py keeps the registry ring beside the roofed part). The same correction can be used for other registry parts that photos show are walled patios.",
     "13 November 2026 (jorge-planting): the bougainvilleas on and beside Calle Jorge are in full purple bract in the photos (IMG_2229, IMG_2230, IMG_2697), so the wall climbers now carry clusters of bracts; small trees stand by the house-23 bed and on the plinth lawn; a row of low shrubs edges the flagged west path; the lawns are a darker green. The house-23 group is seen in Inspect only: no starting pose faces it.",
-    "14 November 2026 (jorge-complete, Dave): Calle Jorge now has a built path from the Dalí car park to Calle Guillermo. Enlarging IMG_2280 and IMG_2697 shows the far end of the flags: a white flat-lintelled gateway with green iron leaves and bougainvillea, a wall and hedge to its left, a flagged cross-path in front, and through it a terracotta path and a second white portal. From the gateway (28 m) to 86 m nothing is photographed, so the path, lawns, one tree and that second portal are built from the aerial and graded inferred; house fronts, walls and planters along 56 to 86 m and the CALLE JORGE 27 35 passage are left out. The big dark crown on the north lawn at about 33 m is the Canary palm already placed from the south-pool photos. Photos needed are listed in docs/JORGE_LANE.md and data/photo_requests.json."
+    "14 November 2026 (jorge-complete, Dave): Calle Jorge now has a built path from the Dalí car park to Calle Guillermo. Enlarging IMG_2280 and IMG_2697 shows the far end of the flags: a white flat-lintelled gateway with green iron leaves and bougainvillea, a wall and hedge to its left, a flagged cross-path in front, and through it a terracotta path and a second white portal. From the gateway (28 m) to 86 m nothing is photographed, so the path, lawns, one tree and that second portal are built from the aerial and graded inferred; house fronts, walls and planters along 56 to 86 m and the CALLE JORGE 27 35 passage are left out. The big dark crown on the north lawn at about 33 m is the Canary palm already placed from the south-pool photos. Photos needed are listed in docs/JORGE_LANE.md and data/photo_requests.json.",
+    "16 November 2026 (lane-walls-jorge-elena): the tall patio wall with lantern and meter box in IMG_2230 is the east side of the Calle Jorge cactus garden, at 104.3 m on the Esri aerial, so the open garden ends there (not 108.4 m) and the hedged planter runs on from it; patio walls from the north-side house corners to the planters at 111, 117.5 and 124.5 m are built from the aerial (inferred). Open: the white wall round the south-pool lawn corner at Calle Silvia and the south-side house recesses (gap:jorge-silvia-lawn-wall, gap:jorge-south-recesses). See docs/LANE_WALLS.md."
    ]
   },
   {
