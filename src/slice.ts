@@ -190,7 +190,7 @@ async function boot(): Promise<void> {
   const resize = () => {
     renderer.setSize(window.innerWidth, window.innerHeight, false);
     camera.aspect = window.innerWidth / window.innerHeight;
-    camera.far=Math.max(1500,RADIUS*48*Math.max(1,innerHeight/innerWidth));
+    camera.far=Math.max(6000,RADIUS*48*Math.max(1,innerHeight/innerWidth));
     camera.updateProjectionMatrix();
   };
   window.addEventListener("resize", resize);
@@ -226,6 +226,7 @@ async function boot(): Promise<void> {
   addFrontageDivisions(scene);
   if (seaside && skeleton.seafront) addSeaside(scene, skeleton.seafront, seaside, centre, RADIUS + 25, (x, z) => siteY(x, z) + poolGroundY(x, z) + laneDrop(lowered, x, z));
   const backdrop=new THREE.Scene();backdrop.visible=!layoutOnly;backdrop.userData.noDrape=true;backdrop.userData.noOcclusion=true;scene.add(backdrop);
+  addRidge(scene);
   addBuildings(scene, buildings, skeleton.floorHeight);
   // Tiled roof-edge parapets measured through solved photo cameras (data/plain_fronts.json parapets).
   addStationParapets(scene, (id) => { const b = buildings.find((x) => x.id === id); if (!b) return undefined; const c = centroid(b.ring); return siteY(c.x, c.z) + b.floors * skeleton.floorHeight; });
@@ -1592,10 +1593,9 @@ function addGardenGates(scene: THREE.Scene, gates: Vec2[], walls: Vec2[]): void 
 }
 
 /** What you see over the rooftops looking inland: tall pines, palms, blue mountains. */
-/** Trees beyond the resort and the mountains behind them (src/backdrop.ts, data/backdrop.json). */
+/** Trees beyond the resort (src/backdrop.ts, data/backdrop.json). */
 function addBackdrop(scene: THREE.Scene): void {
   addBackdropTrees(scene, COURTS);
-  addRidge(scene);
 }
 
 function hash(x: number, z: number): number {
