@@ -765,6 +765,7 @@
    "elena_north.json:elena-north-tree-bed-1",
    "elena_north.json:elena-north-garden-door-path",
    "elena_east_patios.json:elena-east-patios-west-wall",
+   "elena_east_patios.json:elena-east-patios-divider-south",
    "elena_east_patios.json:elena-east-patios-pergola"
   ],
   "looksAt": [
@@ -5999,7 +6000,6 @@
    "trust": "phone location"
   },
   "citedBy": [
-   "elena_east_patios.json:elena-east-patios-divider-south",
    "cervantes_east_south_patios.json:cervantes-east-south-wall",
    "cervantes_east_south_patios.json:cervantes-east-south-door",
    "cervantes_east_south_patios.json:cervantes-east-south-pergola",

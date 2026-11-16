@@ -661,7 +661,7 @@
   },
   "elena_east_patios.json:elena-east-patios-divider-south": {
    "level": "inferred",
-   "why": "Line traced from the georeferenced aerial (white wall top and shadow) between the registry party-wall jog and the garden wall; IMG_2366 shows the Cervantes patio walled off, but no solved camera places the wall."
+   "why": "Line from the georeferenced aerial (white wall top and shadow) agreeing to about 0.15 m with the registry party-wall jog; no photo shows the wall and no solved camera places it."
   }
  },
  "gaps": [
@@ -707,7 +707,7 @@
     "IMG_2197.jpg",
     "IMG_2199.jpg"
    ],
-   "why": "The garden wall, door and pergola are built; the patios behind them (partitions, floors, levels) are hidden under the magnolia canopy in every roof photo, so they are empty in the model."
+   "why": "The garden wall, door, pergola and one dividing wall (inferred from the aerial) are built; the rest of the patios behind them (further partitions, floors, levels) is hidden under the magnolia canopy in the roof photos, so it is empty in the model."
   },
   {
    "id": "gap:elena-25-courtyard",
@@ -1100,11 +1100,10 @@
     38.5
    ],
    "photos": [
-    "IMG_2366.jpg",
     "IMG_2362.jpg",
     "IMG_2364.jpg"
    ],
-   "why": "The registry face of 6265401UF1366N_part3 jogs at two more party walls (about z 38.5 and 35), where patio dividers would normally run to the garden wall, but the magnolia canopy hides that ground on the aerial and in every roof photo; not built rather than guessed (photo request elena-east-patios-inside)."
+   "why": "The registry face of 6265401UF1366N_part3 jogs at two more party walls (about z 38.5 and 35), where patio dividers would normally run to the garden wall, but the magnolia canopy hides that ground on the aerial and in the roof photos (IMG_2366 looks south of Cervantes, not into these patios); not built rather than guessed (photo request elena-east-patios-inside)."
   }
  ]
 }

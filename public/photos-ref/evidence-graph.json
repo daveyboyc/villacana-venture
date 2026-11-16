@@ -2652,7 +2652,7 @@
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
-    "IMG_2366.jpg"
+    "IMG_2199.jpg"
    ]
   },
   {
@@ -8195,6 +8195,12 @@
   },
   {
    "from": "photo:IMG_2199.jpg",
+   "to": "elena_east_patios.json:elena-east-patios-divider-south",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2199.jpg",
    "to": "elena_east_patios.json:elena-east-patios-pergola",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -13135,12 +13141,6 @@
    "relation": "possibly-in-view",
    "distance": 24.3,
    "angleOffset": 5.6
-  },
-  {
-   "from": "photo:IMG_2366.jpg",
-   "to": "elena_east_patios.json:elena-east-patios-divider-south",
-   "relation": "cited-as-source",
-   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2366.jpg",
