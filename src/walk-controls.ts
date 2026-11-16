@@ -1,7 +1,9 @@
 import {clamp} from './geom';
 import type {InputState} from './types';
 
-type Options={canvas:HTMLCanvasElement;pad:HTMLButtonElement;input:InputState;isOverview:()=>boolean;isPan:()=>boolean;pan:(x:number,y:number)=>void;toggleOverview:()=>void};
+type Options={canvas:HTMLCanvasElement;pad:HTMLButtonElement;input:InputState;isOverview:()=>boolean;isPan:()=>boolean;pan:(x:number,y:number)=>void;toggleOverview:()=>void;
+ /** Screen point a pinch zooms towards, in client pixels. */
+ zoomAt?:(x:number,y:number)=>void};
 
 type WheelLike=Pick<WheelEvent,'deltaX'|'deltaY'|'deltaMode'|'ctrlKey'|'metaKey'>&{wheelDeltaX?:number;wheelDeltaY?:number};
 
@@ -9,8 +11,9 @@ type WheelLike=Pick<WheelEvent,'deltaX'|'deltaY'|'deltaMode'|'ctrlKey'|'metaKey'
  * Inspect gestures, in the same arrangement as a map and a 3D viewer:
  * left-drag orbits, right-drag / Shift-drag / the Pan button pans,
  * a mouse wheel zooms, a trackpad scroll pans, and a pinch zooms.
- * On a phone, two fingers pan and twist to orbit. Forward and back follow
- * the fingers, opposite a one-finger pan. Walk is unchanged.
+ * On a phone, like a map app: one finger pans (the Pan/Orbit switch still
+ * applies), two fingers twist to turn and slide up or down to tilt, and a
+ * pinch zooms towards the point between the fingers. Walk is unchanged.
  */
 const PINCH_GAIN=5;
 
@@ -43,7 +46,7 @@ export function inspectWheel(e:WheelLike,overview:boolean):{kind:'pan';x:number;
 }
 
 /** Keep held touch axes independent of keyboard polling and allow a second thumb to look. */
-export function bindWalkControls({canvas,pad,input,isOverview,isPan,pan,toggleOverview}:Options){
+export function bindWalkControls({canvas,pad,input,isOverview,isPan,pan,toggleOverview,zoomAt}:Options){
  const keys=new Set<string>(),looks=new Map<number,{x:number;y:number}>();
  let stick:{id:number;x:number;y:number}|null=null,padPointer:number|null=null;
  const touch={x:0,z:0},thumb=pad.querySelector<HTMLElement>('.walk-thumb')!;
@@ -83,12 +86,15 @@ export function bindWalkControls({canvas,pad,input,isOverview,isPan,pan,toggleOv
   if(looks.size===2&&(isOverview()||(!stick&&padPointer===null))){
    const other=[...looks.entries()].find(([id])=>id!==e.pointerId)![1];
    const before=Math.hypot(prev.x-other.x,prev.y-other.y),after=Math.hypot(e.clientX-other.x,e.clientY-other.y);
-   if(before>5&&after>5){input.zoom+=Math.log(before/after)/.08;
-    if(isOverview()){const turn=Math.atan2(e.clientY-other.y,e.clientX-other.x)-Math.atan2(prev.y-other.y,prev.x-other.x);input.lookDx+=Math.atan2(Math.sin(turn),Math.cos(turn))/.0045;}
+   if(before>5&&after>5){
+    const pinch=Math.log(before/after)/.08;input.zoom+=pinch;
+    if(isOverview()){
+     if(Math.abs(pinch)>.05)zoomAt?.((e.clientX+other.x)/2,(e.clientY+other.y)/2);
+     const turn=Math.atan2(e.clientY-other.y,e.clientX-other.x)-Math.atan2(prev.y-other.y,prev.x-other.x);input.lookDx+=Math.atan2(Math.sin(turn),Math.cos(turn))/.0045;
+    }
    }
-   // The midpoint grabs the ground. Each finger event owns half of that move.
-   // Forward/back is reversed from a one-finger drag so the model follows the pair.
-   if(isOverview())pan((e.clientX-prev.x)/2,-(e.clientY-prev.y)/2);
+   // Sliding the pair up or down tilts the view. Each finger event owns half of that move.
+   if(isOverview())input.lookDy+=(e.clientY-prev.y)/2;
   }else if(looks.size<=2){
    if(stick&&e.pointerId===stick.id){touch.x=clamp((e.clientX-stick.x)/50,-1,1);touch.z=clamp(-(e.clientY-stick.y)/50,-1,1);read();}
    else if(isOverview()&&dragPans(e,isPan()))pan(e.clientX-prev.x,e.clientY-prev.y);
