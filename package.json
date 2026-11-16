@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "polygon-clipping": "^0.15.7",
+    "posthog-js": "^1.450.0",
     "three": "^0.170.0"
   },
   "devDependencies": {

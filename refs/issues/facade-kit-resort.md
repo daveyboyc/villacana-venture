@@ -5,7 +5,7 @@ Task `facade-kit-resort` · area **The whole resort** · priority P1 · material
 ## Read first
 
 - `AGENTS.md`, `docs/HANDOVER.md`
-- `refs/areas/whole-resort.md` and the contact sheet `villacana-reference/contact-sheets/whole-resort.jpg`
+- `refs/areas/whole-resort.md` and the contact sheet `reference/contact-sheets/whole-resort.jpg`
 - docs: `docs/OVERVIEW.md`, `docs/LAYOUT_ACCURACY.md`, `docs/TERRAIN.md`, `docs/SPEC.md`, `docs/LEVELS.md`, `docs/LANTERN_POST.md`
 - data: `data/terrain.json`, `data/levels_survey.json`
 - src: `src/world.ts`, `src/terrain.ts`, `src/lantern-post.ts`

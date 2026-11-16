@@ -22,12 +22,12 @@ Calle Eva round the middle pool, and its west-side footpath to Patricia.
 - docs: `docs/STREET_LAYOUT.md`, `docs/MIDDLE_POOL.md`, `docs/EVA_WALLED_LAWN.md`, `docs/EVA_LANE.md`, `docs/ALBERTO_PASSAGE.md`
 - data: `data/street_layout.json`, `data/middle_pool.json`, `data/eva_walled_lawn.json`, `data/eva_lane.json`, `data/alberto_passage.json`
 - src: `src/middle-pool.ts`, `src/eva-walled-lawn.ts`, `src/eva-lane.ts`, `src/clipped-plants.ts`, `src/alberto-passage.ts`
-- contact sheet: `villacana-reference/contact-sheets/eva.jpg` (thumbnails of everything below, numbered in this order)
+- contact sheet: `reference/contact-sheets/eva.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 48, Levels and slopes: 4, Facades and roofs: 21, Materials: 43, Planting: 35, Signs: 8, Views: 2
-54 reviewed, 0 suggested only by camera position.
+Layout: 52, Levels and slopes: 6, Facades and roofs: 24, Materials: 47, Planting: 37, Signs: 9, Views: 2
+58 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -150,9 +150,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2248.jpg](../../public/photos-ref/IMG_2248.jpg) | ground | layout, planting | Narrow lane with bougainvillea off Calle Eva _Used by: steps:middle-pool-sw-steps._ |
 | [IMG_2337.jpg](../../public/photos-ref/IMG_2337.jpg) | ground | layout, planting | Calle Eva east of the middle pool: lawn, round trees, lamp **Looks at:** Eva lawn beside clipped round tree and lantern post. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
 | [IMG_2339.jpg](../../public/photos-ref/IMG_2339.jpg) | ground | planting, materials | Calle Eva: walled lawn corner with espaliered bougainvillea **Looks at:** White-walled lawn corner northwest of middle pool east gateway; trained bougainvillea and green bollard. **Note:** Subject coordinate is an approximate photo-content interpretation, not a surveyed location. _Used by: eva_walled_lawn.json:eva-walled-lawn._ |
+| [IMG_2793.jpg](../../public/photos-ref/IMG_2793.jpg) | ground | layout, facades, materials, levels, signage | Inside the CALLE ALBERTO 22 40 covered passage looking through to the garden arch **Looks at:** The CALLE ALBERTO 22 40 covered passage looking west-south-west from its ramp and plaque through the far arch to the garden path beyond. |
 | [IMG_2546.jpg](../../public/photos-ref/IMG_2546.jpg) | ground | layout, facades, planting, materials | Inner walk-through south end: lantern arch, monstera planting and inset tiles **Note:** Pin is +/-4.6 m in the block between Dali and the middle pool; area attribution (eva/south end) is inferred from the continuing bearing toward the Eva corner. |
 | [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
+| [IMG_2709.jpg](../../public/photos-ref/IMG_2709.jpg) | ground | layout, materials, levels, facades | Calle Eva west: porch with red ramp, tiles and middle pool gate ahead **Looks at:** Calle Eva west looking north-east past an arched porch and red studded ramp toward the middle pool south-west gateway. |
 | [IMG_2710.jpg](../../public/photos-ref/IMG_2710.jpg) | ground | layout, facades, signage, planting | Middle pool south-west gate at the end of Calle Eva west **Note:** Same middle pool south-west gateway as IMG_2333; seen here from Calle Eva west. |
+| [IMG_2731.jpg](../../public/photos-ref/IMG_2731.jpg) | ground | layout, materials, facades, planting | Calle Eva east: octagonal tiles, white wall with arched hood and strelitzia **Looks at:** Calle Eva east looking west-south-west toward the Teodoro Rojo junction. |
 | [IMG_2547.jpg](../../public/photos-ref/IMG_2547.jpg) | ground | layout, facades, materials | Inner walk-through covered section: double doors, pebble mat and tile inset floor **Note:** Pin +/-4.5 m in the block between Dali and the middle pool; exit toward Eva is inferred from the bearing, not seen. |
 | [IMG_2548.jpg](../../public/photos-ref/IMG_2548.jpg) | ground | layout, materials, facades | Covered tiled passage off Calle Eva with brown double door and potted trees **Note:** Looks like the same type of passage as IMG_2249/2250 (also off Calle Eva). Pin is inside the block, so which passage it is cannot be confirmed from the picture; heading 147 runs towards Calle Eva. |
 | [IMG_2550.jpg](../../public/photos-ref/IMG_2550.jpg) | ground | facades, materials, planting | Arched timber double gate in a white wall, Calle Eva/Dali corner **Looks at:** Arched brown timber double gate in white wall. **Note:** Which house this gate belongs to is not established; looksAt is about 4 m along the heading from the pin and is approximate. |
@@ -163,6 +166,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2706.jpg](../../public/photos-ref/IMG_2706.jpg) | ground | layout, materials, planting | Eva west stretch from the Dali end, looking north-east **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2707.jpg](../../public/photos-ref/IMG_2707.jpg) | ground | layout, materials, planting | Eva west stretch: kerbed rose bed and house fronts |
 | [IMG_2708.jpg](../../public/photos-ref/IMG_2708.jpg) | ground | layout, materials, signage | Eva west stretch towards the middle pool gate, slot drain **Note:** The plaque reads ...NA 23 (as in IMG_2549); the same stretch of Eva west. |
+| [IMG_2726.jpg](../../public/photos-ref/IMG_2726.jpg) | ground | layout, materials, planting | Calle Eva east: octagonal paving, white bench and hedged planters **Looks at:** Calle Eva east looking west-south-west past the white bench, lantern post and hedged planter walls. |
 | [IMG_2727.jpg](../../public/photos-ref/IMG_2727.jpg) | ground | layout, materials, planting | Calle Eva east: octagonal paving, lantern and tiled bench |
 | [IMG_2728.jpg](../../public/photos-ref/IMG_2728.jpg) | ground | layout, levels, materials | Side garden with brick-edged steps off Calle Eva east |
 | [IMG_2729.jpg](../../public/photos-ref/IMG_2729.jpg) | ground | layout, levels, materials | Side garden with brick-edged steps, wider view |

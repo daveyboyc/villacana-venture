@@ -402,7 +402,8 @@
       "priority": 2,
       "radius": 6,
       "since": "2026-11-08",
-      "status": "open"
+      "status": "open",
+      "note": "IMG_2793 (3 Nov, before since) looks straight through the CALLE ALBERTO 22 40 covered passage: it runs straight to a far round arch and garden path (not turning into a tunnel), though where that garden path exits into the courtyard is still unseen."
     },
     {
       "id": "jorge-west-walk",
@@ -781,6 +782,24 @@
       "priority": 2,
       "radius": 6,
       "since": "2026-11-15",
+      "status": "open"
+    },
+    {
+      "id": "elena-east-patios-inside",
+      "area": "elena",
+      "at": [
+        -141.0,
+        40.0
+      ],
+      "look": [
+        -145.0,
+        40.0
+      ],
+      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+      "priority": 2,
+      "radius": 6,
+      "since": "2026-11-16",
       "status": "open"
     }
   ]

@@ -15,7 +15,7 @@ while redirecting to the root. Diagnostic `slice.html` links remain usable.
   More enables them; inspecting a selected photo enables them automatically. Labels
   declutter at crowded zoom levels; every source remains available in the list.
   Selecting an inspection ID opens its photo card in Map & photos.
-- The card opens the full public JPEG or links to the private repository. Private
+- The card opens the full public JPEG or links to the source file under `reference/`. Reference
   and unplaced sources are searchable; neither receives an invented camera pin.
 - Copy photo link reopens the chosen ID. Copy agent reference includes the source
   path, published caption, local draft if any, camera uncertainty, separate subject
@@ -75,8 +75,8 @@ retained. New caption saves update the map's editing state so a later object sav
 does not overwrite them. Correct/unsure/moved camera proposals and notes retain
 the original export format accepted by `apply_photo_reviews.py`. Saving locally
 does not publish a correction. Clipboard failure exposes text for manual copying.
-Public source links are stable by ID rather than array position. Private access
-still requires membership in the private repository.
+Public source links are stable by ID rather than array position. Reference files
+under `reference/` are linked in the repository rather than bundled into the deployed site.
 
 ## Review artifacts and validation
 

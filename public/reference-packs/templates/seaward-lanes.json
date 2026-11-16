@@ -668,6 +668,11 @@
       "path": "public/photos-ref/IMG_2721.jpg"
     },
     {
+      "id": "IMG_2722.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2722.jpg"
+    },
+    {
       "id": "IMG_2723.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2723.jpg"
@@ -686,6 +691,11 @@
       "id": "IMG_2771.jpg",
       "private": false,
       "path": "public/photos-ref/IMG_2771.jpg"
+    },
+    {
+      "id": "IMG_2772.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2772.jpg"
     },
     {
       "id": "IMG_2773.jpg",
@@ -765,17 +775,17 @@
     {
       "id": "ref:apple-maps/04-top-down-south-half.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/04-top-down-south-half.png"
+      "path": "reference/apple-maps/04-top-down-south-half.png"
     },
     {
       "id": "ref:apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png"
+      "path": "reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png"
     },
     {
       "id": "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png",
       "private": true,
-      "path": "villacana-reference/apple-maps/11-3d-guillermo-slope-to-paseo.png"
+      "path": "reference/apple-maps/11-3d-guillermo-slope-to-paseo.png"
     }
   ],
   "features": [],

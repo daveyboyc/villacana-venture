@@ -30,7 +30,7 @@ jobs:
       - name: Drive access configured?
         id: gate
         run: |
-          if [ -n "$GOOGLE_SERVICE_ACCOUNT_JSON" ] && [ -n "$VILLACANA_DRIVE_FOLDER" ]; then
+          if [ -n "${GOOGLE_SERVICE_ACCOUNT_JSON//[[:space:]]/}" ] && [ -n "${VILLACANA_DRIVE_FOLDER//[[:space:]]/}" ]; then
             echo "on=true" >> "$GITHUB_OUTPUT"
           else
             echo "on=false" >> "$GITHUB_OUTPUT"
@@ -49,12 +49,15 @@ jobs:
         run: python3 -m pip install Pillow==11.3.0 pillow-heif==0.22.0 google-auth==2.40.3 requests==2.32.4
       - name: Index new photos
         if: steps.gate.outputs.on == 'true'
-        run: python3 scripts/drive_intake.py | tee "$RUNNER_TEMP/intake.log"
+        run: |
+          set -o pipefail
+          python3 scripts/drive_intake.py | tee "$RUNNER_TEMP/intake.log"
       - name: Checks
         id: checks
         if: steps.gate.outputs.on == 'true'
         run: |
           if git status --porcelain | grep -q .; then
+            python3 scripts/test_drive_intake.py
             python3 scripts/test_photo_assignment.py
             python3 scripts/test_reference_index.py
             python3 scripts/test_placement_verification.py
@@ -69,7 +72,16 @@ jobs:
           git config user.email "drive-intake@users.noreply.github.com"
           git add -A public refs data
           git commit -m "Index new Drive photos (automatic intake)" -m "Camera pins only: what each photo shows is still untagged."
-          git pull --rebase origin main
+          if ! git pull --rebase origin main; then
+            git rebase --abort || true
+            git reset --hard origin/main
+            set -o pipefail
+            python3 scripts/drive_intake.py | tee "$RUNNER_TEMP/intake.log"
+            if git status --porcelain | grep -q .; then
+              git add -A public refs data
+              git commit -m "Index new Drive photos (automatic intake)" -m "Camera pins only: what each photo shows is still untagged."
+            fi
+          fi
           git push origin HEAD:main
       - name: Redeploy the site
         if: steps.checks.outputs.changed == 'true'

@@ -76,6 +76,10 @@ import { exportModel, photoCamera } from "./photo-camera";
 import { setupLook } from "./look";
 import { addFacadeKit, facadeKitWalls } from "./facade-kit";
 import { areaScorecard } from "./scorecard";
+import { detectDeviceType, initAnalytics, trackEvent } from "./analytics";
+
+initAnalytics();
+const bootStartMs = performance.now();
 
 /** The pools whose courtyards this page shows, joined by the lanes between them. */
 const embedded = new URLSearchParams(location.search).get("embedded") === "1";
@@ -124,8 +128,15 @@ const canvas = document.querySelector<HTMLCanvasElement>("#scene")!;
 const input: InputState = { moveX: 0, moveZ: 0, run: false, jump: false, lookDx: 0, lookDy: 0, zoom: 0, interact: false };
 
 if(new URLSearchParams(location.search).get('study')==='silvia'){
+  if(!embedded)trackEvent('session_started',{entry:'silvia_study',initial_view:'study',device_type:detectDeviceType(),viewport_width:innerWidth,viewport_height:innerHeight});
   void import('./silvia-study').then(m=>m.bootSilviaStudy());
-}else void boot();
+}else{
+  if(!embedded){
+    const p=new URLSearchParams(location.search);
+    trackEvent('session_started',{entry:'slice',initial_view:p.get('view')==='walk'?'walk':'overview',device_type:detectDeviceType(),viewport_width:innerWidth,viewport_height:innerHeight,initial_area:p.get('area'),initial_photo:p.get('photo')});
+  }
+  void boot();
+}
 
 async function boot(): Promise<void> {
   const photoView = photoCamera();
@@ -487,7 +498,8 @@ async function boot(): Promise<void> {
   action("#overview-in",()=>{distance=Math.max(8,distance/1.3);});action("#overview-out",()=>{distance=Math.min(farthest*8,distance*1.3);});
   action("#overview-left",()=>{camYaw-=Math.PI/12;});action("#overview-right",()=>{camYaw+=Math.PI/12;});
   action("#overview-top",()=>{pitch=Math.PI/2;});action("#overview-north",()=>{camYaw=0;});
-  const fitArea=()=>{overview=true;inspectionStarted=true;savedInspection=null;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest*0.72;pitch=0.9;camYaw=0;resetPointers();areaSelect.value="whole-resort";rememberArea("whole-resort");};
+  let resetInspectAnchor: () => void = () => {};
+  const fitArea=()=>{overview=true;inspectionStarted=true;savedInspection=null;overviewCentre.set(centre.x,0.5,centre.z);distance=farthest*0.72;pitch=0.9;camYaw=0;resetPointers();resetInspectAnchor();areaSelect.value="whole-resort";rememberArea("whole-resort");trackEvent("area_jumped",{area_id:"whole-resort",area_name:"Whole resort",source:"fit_button"});};
   action("#overview-fit",fitArea);
   action(".camera-fit",fitArea);
   action(".camera-in",()=>{distance=Math.max(3.5,distance/1.3);});
@@ -505,7 +517,7 @@ async function boot(): Promise<void> {
   const rotation=document.querySelector<HTMLInputElement>("#overview-rotation")!;
   rotation.addEventListener("input",()=>{camYaw=-Number(rotation.value)*Math.PI/180;});
   action("#overview-check",()=>{showChecks=!showChecks;document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));});
-  const focus=(points:Vec2[])=>{const at=centroid(points);overviewCentre.set(at.x,.5,at.z);distance=Math.min(farthest,85);pitch=Math.PI/2;};
+  const focus=(points:Vec2[])=>{const at=centroid(points);overviewCentre.set(at.x,.5,at.z);distance=Math.min(farthest,85);pitch=Math.PI/2;resetInspectAnchor();};
   action("#alignment-platform",()=>{if(platform)focus(platform.ring);});
   action("#alignment-coast",()=>{if(skeleton.seafront)focus(skeleton.seafront.coast);});
   document.querySelector("#overview")!.textContent=overview?"Walk":"Inspect";
@@ -524,9 +536,9 @@ async function boot(): Promise<void> {
     const detailUrl=new URL(url);if(layoutOnly)detailUrl.searchParams.set('details','1');else detailUrl.searchParams.delete('details');detailLink.href=detailUrl.pathname+detailUrl.search;
     if(embedded)parent.postMessage({type:'villacana-inspect-area',area:id},location.origin);
   };
-  const jumpToArea=(id:string)=>{
+  const jumpToArea=(id:string, track = true)=>{
     const destination=targets.find(t=>t.id===id);if(!destination)return;
-    overview=true;inspectionStarted=true;savedInspection=null;resetPointers();camYaw=0;areaSelect.value=id;
+    overview=true;inspectionStarted=true;savedInspection=null;resetPointers();resetInspectAnchor();camYaw=0;areaSelect.value=id;
     if(id==='whole-resort'){overviewCentre.set(centre.x,.5,centre.z);distance=farthest*0.72;pitch=0.9;}
     else{
       const xs=destination.points.map(p=>p[0]),zs=destination.points.map(p=>p[1]);
@@ -537,10 +549,11 @@ async function boot(): Promise<void> {
       distance=Math.max(55,halfWidth/(tan*camera.aspect),halfDepth/(tan*Math.sin(pitch)))*1.25;
     }
     rememberArea(id);
+    if(track)trackEvent("area_jumped",{area_id:id,area_name:destination.name,source:"dropdown"});
   };
   areaSelect.addEventListener('change',()=>jumpToArea(areaSelect.value));
   const initialArea=new URLSearchParams(location.search).get('area');
-  if(initialArea && overview)jumpToArea(initialArea);
+  if(initialArea && overview)jumpToArea(initialArea,false);
   // Photo labels share the canonical index and always reopen the same selected source.
   const photoLabels=document.createElement("div");photoLabels.className="reference-layer photo-overview-labels";document.body.append(photoLabels);
   const photoButtons:{button:HTMLButtonElement;x:number;z:number;selected:boolean}[]=[];
@@ -612,12 +625,121 @@ async function boot(): Promise<void> {
   const walkCameraRay=new THREE.Raycaster(),walkCameraDirection=new THREE.Vector3();
 
   if(batching)batchStatic(scene);
-  const scorecard=areaScorecard(scene,liveGroundY);
+  const stroll = (() => {
+    let totalWalkDistanceM = 0;
+    let totalInspectPanM = 0;
+    let totalWalkSeconds = 0;
+    let totalInspectSeconds = 0;
+    let lastSummaryWalkDistanceM = 0;
+    let lastSummaryInspectPanM = 0;
+    let lastSummaryWalkSeconds = 0;
+    let lastSummaryInspectSeconds = 0;
+    let lastSummaryAreasCount = 0;
+    let lastSampleMs = performance.now();
+    let lastFlushMs = performance.now();
+    let lastPlayerPos: [number, number] | null = null;
+    let lastInspectPos: [number, number] | null = null;
+    let wasPaused = false;
+    let currentNamedArea: string | null = initialArea && initialArea !== "whole-resort" ? initialArea : null;
+    const areasVisited = new Set<string>(currentNamedArea ? [currentNamedArea] : []);
+    return {
+      resetInspectAnchor() { lastInspectPos = null; },
+      pause() {
+        wasPaused = true;
+        lastPlayerPos = null;
+        lastInspectPos = null;
+      },
+      visitArea(id: string) {
+        if (id && id !== "whole-resort") {
+          currentNamedArea = id;
+          areasVisited.add(id);
+        } else {
+          currentNamedArea = null;
+        }
+      },
+      sample(now: number, isOverview: boolean, px: number, pz: number, ox: number, oz: number) {
+        if (wasPaused) {
+          wasPaused = false;
+          lastSampleMs = now;
+          lastPlayerPos = isOverview ? null : [px, pz];
+          lastInspectPos = isOverview ? [ox, oz] : null;
+          return;
+        }
+        if (now - lastSampleMs < 500) return;
+        const elapsedSec = Math.min((now - lastSampleMs) / 1000, 1);
+        lastSampleMs = now;
+        if (isOverview) {
+          totalInspectSeconds += elapsedSec;
+          if (lastInspectPos) {
+            const d = Math.hypot(ox - lastInspectPos[0], oz - lastInspectPos[1]);
+            if (d < 40) totalInspectPanM += d;
+          }
+          lastInspectPos = [ox, oz];
+          lastPlayerPos = null;
+        } else {
+          totalWalkSeconds += elapsedSec;
+          if (lastPlayerPos) {
+            const d = Math.hypot(px - lastPlayerPos[0], pz - lastPlayerPos[1]);
+            if (d < 20) totalWalkDistanceM += d;
+          }
+          lastPlayerPos = [px, pz];
+          lastInspectPos = null;
+        }
+        if (now - lastFlushMs >= 60_000) this.flush("periodic", isOverview);
+      },
+      flush(reason: "periodic" | "hidden" | "pagehide", isOverview: boolean) {
+        const deltaSeconds = (totalWalkSeconds - lastSummaryWalkSeconds) + (totalInspectSeconds - lastSummaryInspectSeconds);
+        const deltaWalkM = totalWalkDistanceM - lastSummaryWalkDistanceM;
+        const deltaInspectM = totalInspectPanM - lastSummaryInspectPanM;
+        if (deltaSeconds < 5 && deltaWalkM < 1 && deltaInspectM < 1 && areasVisited.size === lastSummaryAreasCount) return;
+        lastSummaryWalkSeconds = totalWalkSeconds;
+        lastSummaryInspectSeconds = totalInspectSeconds;
+        lastSummaryWalkDistanceM = totalWalkDistanceM;
+        lastSummaryInspectPanM = totalInspectPanM;
+        lastSummaryAreasCount = areasVisited.size;
+        lastFlushMs = performance.now();
+        trackEvent("stroll_summary", {
+          trigger: reason,
+          active_seconds: Math.round(totalWalkSeconds + totalInspectSeconds),
+          walk_seconds: Math.round(totalWalkSeconds),
+          inspect_seconds: Math.round(totalInspectSeconds),
+          walk_distance_m: Math.round(totalWalkDistanceM * 10) / 10,
+          inspect_pan_m: Math.round(totalInspectPanM * 10) / 10,
+          delta_seconds: Math.round(deltaSeconds),
+          delta_walk_distance_m: Math.round(deltaWalkM * 10) / 10,
+          delta_inspect_pan_m: Math.round(deltaInspectM * 10) / 10,
+          areas_visited: [...areasVisited],
+          areas_count: areasVisited.size,
+          current_area: currentNamedArea,
+          current_view: isOverview ? "overview" : "walk",
+        });
+      },
+    };
+  })();
+  resetInspectAnchor = () => stroll.resetInspectAnchor();
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") stroll.flush("hidden", overview);
+  });
+  window.addEventListener("pagehide", () => stroll.flush("pagehide", overview));
+  const scorecard=areaScorecard(scene,liveGroundY,(id)=>stroll.visitArea(id));
   const gateButton=document.querySelector<HTMLButtonElement>("#gate-control")!;
   gateButton.addEventListener("click",()=>{gate.setOpen(!gate.open);gateButton.textContent=gate.open?"Close coastal gate":"Open coastal gate";});
+  trackEvent("scene_loaded", {
+    view: overview ? "overview" : "walk",
+    device_type: detectDeviceType(),
+    render_tier: layoutOnly ? "layout" : finish.occlusion ? "high" : "medium",
+    details_enabled: !layoutOnly,
+    ambient_occlusion: finish.occlusion,
+    pixel_ratio: renderer.getPixelRatio(),
+    static_batching: batching,
+    pools: POOL_IDS.join(","),
+    initial_area: initialArea ?? "whole-resort",
+    embedded,
+    load_ms: Math.round(performance.now() - bootStartMs),
+  });
   renderer.setAnimationLoop(() => {
     const dt = Math.min(clock.getDelta(), 0.05);
-    if(embedded && parent.document.body.dataset.appView === "map")return;
+    if(embedded && parent.document.body.dataset.appView === "map"){stroll.pause();return;}
     readKeys();
     const currentRoute=document.querySelector<HTMLElement>("#current-route")!;
     const nearbyNames=routes.map(r=>({name:r.name,d:Math.min(...r.points.slice(1).map((b,i)=>closestOnSegment(player.x,player.z,...r.points[i],...b).d)),width:r.width})).filter(r=>r.d<r.width/2+.7).sort((a,b)=>a.d-b.d);
@@ -625,6 +747,7 @@ async function boot(): Promise<void> {
     gateButton.hidden=overview||Math.hypot(player.x-gate.at[0],player.z-gate.at[1])>6;
     if(!overview && !references.active()) player.update(dt, input, world, camYaw);
     scorecard.update(overview?overviewCentre.x:player.x,overview?overviewCentre.z:player.z);
+    stroll.sample(performance.now(), overview, player.x, player.z, overviewCentre.x, overviewCentre.z);
 
     const inCloseSpace=!!host && (silviaCloseCamera(player.x,player.z)||(host.holes??[]).some(r=>pointInRing(player.x,player.z,r)));
     const firstPerson=!overview && (walkingView==='first'||(walkingView===null&&inCloseSpace));
@@ -1488,7 +1611,12 @@ let resetPointers=()=>{};
 function bindInput():void{
   walkInput=bindWalkControls({canvas,pad:document.querySelector<HTMLButtonElement>('#walk-pad')!,input,
     isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},
-    toggleOverview:()=>{overview=!overview;document.querySelector('#overview')!.textContent=overview?'Walk':'Inspect';}
+    toggleOverview:()=>{
+      const fromView = overview ? "overview" : "walk";
+      overview=!overview;
+      document.querySelector('#overview')!.textContent=overview?'Walk':'Inspect';
+      if (!embedded) trackEvent("view_switched", { from_view: fromView, to_view: overview ? "overview" : "walk", area: new URLSearchParams(location.search).get("area"), photo: new URLSearchParams(location.search).get("photo") });
+    }
   });
   resetPointers=()=>{walkInput!.reset();panDx=panDy=0;};
 }

@@ -358,6 +358,16 @@
      "station": null
     },
     {
+     "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2974.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "ref:photos/01-north-pool-lawn-ground-level-2021-04.png",
      "state": "needs-solving",
      "station": null
@@ -578,6 +588,11 @@
     },
     {
      "photo": "IMG_2708.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2709.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -1052,6 +1067,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2772.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2773.jpg",
      "state": "needs-solving",
      "station": null
@@ -1118,13 +1138,30 @@
    "id": "elena",
    "name": "Calle Elena",
    "counts": {
-    "ready": 0,
+    "ready": 1,
     "needs-evidence": 0,
     "needs-source-access": 0,
     "awaiting-review": 0,
     "accepted": 0
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "elena-east-pergola-divider",
+     "area": "elena",
+     "kind": "placement",
+     "description": "IMG_2199 shows the patio pergola's beam on the garden wall starting at the closed door's raised coping, which puts the beam end at or just south of the aerial-inferred dividing wall; the pergola is drawn against the north side of that wall. Which patio the pergola belongs to, and whether the divider meets the garden wall where inferred, needs a view from inside the patios.",
+     "sources": [
+      "IMG_2199.jpg",
+      "IMG_2200.jpg"
+     ],
+     "features": [],
+     "task": "elena-east-patios",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    }
+   ],
    "requests": [
     {
      "id": "photo-elena-25-far-end",
@@ -1167,6 +1204,19 @@
      "features": [],
      "tasks": [],
      "state": "received"
+    },
+    {
+     "id": "photo-elena-east-patios-inside",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+     "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+     "photoRequest": "elena-east-patios-inside",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
@@ -1641,12 +1691,72 @@
      "station": null
     },
     {
+     "photo": "IMG_2807.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2808.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2809.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2810.jpg",
      "state": "needs-solving",
      "station": null
     },
     {
+     "photo": "IMG_2811.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2812.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2813.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2965.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2966.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2970.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2971.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2974.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2975.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -2115,6 +2225,16 @@
     },
     {
      "photo": "IMG_2801.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2965.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2966.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -2810,12 +2930,22 @@
      "station": null
     },
     {
+     "photo": "IMG_2709.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2710.jpg",
      "state": "needs-solving",
      "station": null
     },
     {
      "photo": "IMG_2711.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2726.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -2836,6 +2966,11 @@
     },
     {
      "photo": "IMG_2730.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2731.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -2881,6 +3016,11 @@
     },
     {
      "photo": "IMG_2792.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2793.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -3772,6 +3912,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2722.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2723.jpg",
      "state": "needs-solving",
      "station": null
@@ -3788,6 +3933,11 @@
     },
     {
      "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2772.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -3974,6 +4124,11 @@
    "cameras": [
     {
      "photo": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -4244,6 +4399,11 @@
     },
     {
      "photo": "IMG_2760.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2768.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -4572,6 +4732,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2768.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2769.jpg",
      "state": "needs-solving",
      "station": null
@@ -4612,7 +4777,7 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 5,
+    "ready": 6,
     "needs-evidence": 4,
     "needs-source-access": 0,
     "awaiting-review": 1,
@@ -4830,6 +4995,22 @@
      "blockers": [
       "Two or three photos from the north pool lawn, standing on the grass about 3-5 m from the north path, looking north at the north row's patios: the white plinth wall with its three white steps, the hedges, and the house fronts with the awnings behind. Include the whole width from the alley arch (west) to the iron gate by Calle Isabel (east)."
      ]
+    },
+    {
+     "id": "elena-east-pergola-divider",
+     "area": "elena",
+     "kind": "placement",
+     "description": "IMG_2199 shows the patio pergola's beam on the garden wall starting at the closed door's raised coping, which puts the beam end at or just south of the aerial-inferred dividing wall; the pergola is drawn against the north side of that wall. Which patio the pergola belongs to, and whether the divider meets the garden wall where inferred, needs a view from inside the patios.",
+     "sources": [
+      "IMG_2199.jpg",
+      "IMG_2200.jpg"
+     ],
+     "features": [],
+     "task": "elena-east-patios",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
     }
    ],
    "requests": [
@@ -5427,11 +5608,29 @@
      "features": [],
      "tasks": [],
      "state": "open"
+    },
+    {
+     "id": "photo-elena-east-patios-inside",
+     "area": "elena",
+     "kind": "photo",
+     "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+     "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+     "photoRequest": "elena-east-patios-inside",
+     "status": "open",
+     "sources": [],
+     "features": [],
+     "tasks": [],
+     "state": "open"
     }
    ],
    "cameras": [
     {
      "photo": "253A75E4-A471-4502-9F5D-C9BAF074D664.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "2F75D14F-5193-48C2-8937-5E2EC82F5FF3.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7421,6 +7620,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2709.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2710.jpg",
      "state": "needs-solving",
      "station": null
@@ -7456,6 +7660,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2722.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2723.jpg",
      "state": "needs-solving",
      "station": null
@@ -7467,6 +7676,11 @@
     },
     {
      "photo": "IMG_2725.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2726.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7487,6 +7701,11 @@
     },
     {
      "photo": "IMG_2730.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2731.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7541,6 +7760,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2768.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2769.jpg",
      "state": "needs-solving",
      "station": null
@@ -7552,6 +7776,11 @@
     },
     {
      "photo": "IMG_2771.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2772.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7656,6 +7885,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2793.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2794.jpg",
      "state": "needs-solving",
      "station": null
@@ -7721,7 +7955,32 @@
      "station": null
     },
     {
+     "photo": "IMG_2807.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2808.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2809.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2810.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2811.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2812.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -7737,6 +7996,41 @@
     },
     {
      "photo": "IMG_2823.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2965.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2966.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2970.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2971.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2974.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2975.jpg",
      "state": "needs-solving",
      "station": null
     },

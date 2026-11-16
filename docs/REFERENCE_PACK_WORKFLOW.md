@@ -52,9 +52,9 @@ only explicit polylines are source **traces**. Hidden edges stay dashed/unresolv
    locator/trace, requirements, model state, unknowns and follow-up. Inspect every
    visible opening before finishes or plants. Record transient equipment as an
    exclusion rather than silently ignoring it.
-5. Bind source dimensions and SHA-256 to the inspected public file. Private
-   reference templates expose metadata only. Inspect/annotate private images in
-   `villacana-reference`; keep their pixels out of public packs. The public builder
+5. Bind source dimensions and SHA-256 to the inspected public file. Unbundled
+   reference templates expose metadata only. Inspect/annotate reference images in
+   `reference/`; keep their pixels out of public packs. The public builder
    accepts only existing `public/photos-ref/<id>.jpg` sources.
 6. Compare every component to the actual model. “Unassessed”, “material only”,
    “structure unmapped”, “draft partial” and “identity unresolved” are useful

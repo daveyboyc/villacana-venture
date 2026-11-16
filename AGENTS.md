@@ -125,8 +125,7 @@ does not account for an entire structure. Update an existing pack when applicabl
 
 All reference material is catalogued by area. Before changing anything in an
 area, read `refs/README.md`, then that area's brief in `refs/areas/<id>.md`, and
-look at its contact sheet in the private `villacana-reference` repo
-(`contact-sheets/<id>.jpg`). The brief lists the area's photos, map
+look at its contact sheet in `reference/contact-sheets/<id>.jpg`. The brief lists the area's photos, map
 screenshots, docs, data and source files, known facts and open questions.
 For cross-cutting work (slopes, paving, planting) use `refs/topics/<id>.md`.
 Heights (slopes, steps, raised patios) are in `data/levels_survey.json`, read
@@ -158,6 +157,6 @@ from the photos; see `docs/LEVELS.md` and check with `scripts/check_levels.py`.
   laser survey (`scripts/lidar_check.py`, docs/reviews/lidar-levels). Check a level or
   height change there before building it.
 - `refs/` is generated. Rebuild with `python3 scripts/build_references.py
-  --sheets` and commit both repos. `--check` must pass before a PR.
+  --sheets` and commit the updated `refs/`, `public/` indexes and `reference/contact-sheets/`. `--check` must pass before a PR.
 - New photos: follow "Intake for a new Drive batch" in
   `docs/PHOTO_MAP_WORKFLOW.md`.

@@ -1,3 +1,4 @@
+import { trackEvent } from "./analytics";
 import { asset } from "./asset";
 import type { Vec2 } from "./types";
 
@@ -54,7 +55,7 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
   const agentText = (r: Reference) => [
     `Photo: ${r.id}`, `Published label: ${r.label}`, ...(localLabel(r) ? [`Local draft label (not published): ${localLabel(r)}`] : []),
     `Map: ${new URL(`?view=map&photo=${encodeURIComponent(r.id)}`, location.href).href}`, `Source: ${r.sourcePath}`,
-    ...(r.sourceUrl ? [`Private source link: ${r.sourceUrl}`] : []), `Areas: ${r.areas.join(", ")}`, `Viewpoint: ${r.viewpoint ?? "unknown"}`,
+    ...(r.sourceUrl ? [`Reference source link: ${r.sourceUrl}`] : []), `Areas: ${r.areas.join(", ")}`, `Viewpoint: ${r.viewpoint ?? "unknown"}`,
     r.camera ? `Camera: [${r.camera.x}, ${r.camera.z}] m; GPS uncertainty ${r.camera.accuracy === undefined ? "unknown" : `±${r.camera.accuracy} m`}; ${r.camera.trust ?? "recorded position"}. Camera is not subject.` : "No camera coordinates. Find using area and visible landmarks; do not infer a pin.",
     `Subject: ${r.subject ?? "not separately located"}`, ...(r.looksAt ? [`Subject/look-at: ${JSON.stringify(r.looksAt)}; basis: ${r.looksAtBasis}. Not a surveyed boundary.`] : []),
     ...(r.locationBasis ? [`Location basis: ${r.locationBasis}`] : []), `Observed: ${r.observation || "See source image."}`, `Notes: ${r.note || "none recorded"}`,
@@ -98,12 +99,12 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     make("small", r.id, detail); make("h2", caption(r), detail);
     if (r.image) {
       const img = make("img", "", detail); img.src = asset("/" + r.image); img.alt = caption(r); img.tabIndex = 0;
-      const open = () => { fullImage.src = img.src; fullImage.alt = caption(r); full.showModal(); };
+      const open = () => { fullImage.src = img.src; fullImage.alt = caption(r); full.showModal(); trackEvent("photo_full_viewed", { photo_id: r.id, areas: r.areas }); };
       img.addEventListener("click", open); img.addEventListener("keydown", e => { if (e.key === "Enter") open(); });
       button("Open full photo", detail, open).id = "openPhoto";
     } else {
-      make("p", "Private reference — open the source in the private repository.", detail).className = "photo-state";
-      if (r.sourceUrl) { const link = make("a", "Open private image", detail); link.href = r.sourceUrl; link.target = "_blank"; link.rel = "noopener noreferrer"; }
+      make("p", "Reference image (not bundled in the web app) — open the source in the repository.", detail).className = "photo-state";
+      if (r.sourceUrl) { const link = make("a", "Open reference image", detail); link.href = r.sourceUrl; link.target = "_blank"; link.rel = "noopener noreferrer"; }
     }
     make("p", r.observation || r.subject || r.label, detail);
     const cameraText = r.camera ? `Camera [${r.camera.x}, ${r.camera.z}] m · ${r.camera.accuracy === undefined ? "uncertainty unknown; dashed 10 m search radius" : `GPS ±${r.camera.accuracy} m`}.` : "No camera position recorded; this reference stays in the list.";
@@ -149,12 +150,22 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     detail.scrollTop = 0;
     update();
   }
-  function select(r: Reference, push = true, locate = true) {
+  function select(r: Reference, push = true, locate = true, source: "url" | "search_list" | "map_pin" | "3d_label" | "history" = "search_list") {
+    const changed = selected?.id !== r.id;
     setFinder(true);
     selected = r; moving = false; movePoints = []; showDetail(r); showContext();
     { const u = new URL(location.href); u.searchParams.set("photo", r.id); if(push)history.pushState(null,"",u);else history.replaceState(null,"",u); }
     if (locate && points(r).length) options.focus(points(r));
     renderResults();
+    if (changed) {
+      trackEvent("photo_opened", {
+        photo_id: r.id,
+        areas: r.areas,
+        has_camera: Boolean(r.camera),
+        is_private: r.private,
+        source,
+      });
+    }
     window.dispatchEvent(new CustomEvent("reference-selected", { detail: { id: r.id, label: caption(r), camera:r.camera?[r.camera.x,r.camera.z]:null, point: r.looksAtBasis === "reviewed" && r.looksAt ? r.looksAt : r.camera ? [r.camera.x, r.camera.z] : null } }));
   }
   function renderResults() {
@@ -166,8 +177,8 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
       const row = make("button", "", results); row.className = "photo-result"; row.setAttribute("data-reference-id", r.id); row.setAttribute("aria-current", String(selected?.id === r.id));
       if (r.thumbnail) { const img = make("img", "", row); img.src = asset("/" + r.thumbnail); img.alt = ""; img.loading = "lazy"; }
       const span = make("span", "", row); make("small", r.id.replace(/\.jpg$/, ""), span); make("strong", caption(r), span);
-      if (r.private || !r.camera) make("small", r.private ? "Private source · area reference" : "No camera position", span);
-      row.addEventListener("click", () => select(r));
+      if (r.private || !r.camera) make("small", r.private ? "Reference source · area reference" : "No camera position", span);
+      row.addEventListener("click", () => select(r, true, true, "search_list"));
     }
     update();
   }
@@ -177,8 +188,8 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     const title = svgNode("title", {}); title.textContent = `${r.id} · ${r.label}`; g.append(title);
     g.append(svgNode("circle", { r: 4, fill: "#28614d", stroke: "white", "stroke-width": 1.5 }));
     const text = svgNode("text", { x: 7, y: -5, "font-size": 11 }); text.textContent = r.id.replace(/\.jpg$/, ""); g.append(text);
-    g.addEventListener("pointerdown", e => e.stopPropagation()); g.addEventListener("click", e => { e.stopPropagation(); select(r); });
-    g.addEventListener("keydown", e => { if ((e as KeyboardEvent).key === "Enter") select(r); }); pins.set(r.id, g); layer.append(g);
+    g.addEventListener("pointerdown", e => e.stopPropagation()); g.addEventListener("click", e => { e.stopPropagation(); select(r, true, true, "map_pin"); });
+    g.addEventListener("keydown", e => { if ((e as KeyboardEvent).key === "Enter") select(r, true, true, "map_pin"); }); pins.set(r.id, g); layer.append(g);
   }
   function update() {
     if (!options.svg.clientWidth || !options.svg.clientHeight) return;
@@ -208,12 +219,12 @@ export async function photoLibrary(options: { svg: SVGSVGElement; world: SVGGEle
     if (movePoints.length > 2) movePoints = [[p.x, p.y]];
     document.querySelector("#photo-copy-status")!.textContent = movePoints.length === 1 ? "Camera chosen. Tap a point in the direction it faced." : "Camera and facing chosen. Press Save moved camera.";
   }, true);
-  const fromUrl = (locate = true) => {
+  const fromUrl = (locate = true, source: "url" | "history" = "url") => {
     const id = new URL(location.href).searchParams.get("photo"); if (!id) return;
-    const r = refs.find(r => r.id === id || r.id.replace(/\.jpg$/, "") === id); if (r) select(r, false, locate);else {search.value=id;area.value="";renderResults();count.textContent=`Reference ${id} was not found. Search another ID or subject.`;}
+    const r = refs.find(r => r.id === id || r.id.replace(/\.jpg$/, "") === id); if (r) select(r, false, locate, source);else {search.value=id;area.value="";renderResults();count.textContent=`Reference ${id} was not found. Search another ID or subject.`;}
   };
-  window.addEventListener("popstate", () => { if(new URL(location.href).searchParams.has("photo"))fromUrl();else {selected=undefined;detail.replaceChildren();panel.classList.remove("has-selection");showContext();renderResults();window.dispatchEvent(new CustomEvent("reference-selected",{detail:{id:"",label:"",point:null,camera:null}}));} });
-  window.addEventListener("reference-open", ((event:CustomEvent<string>)=>{const r=refs.find(r=>r.id===event.detail);if(r)select(r);}) as EventListener);
+  window.addEventListener("popstate", () => { if(new URL(location.href).searchParams.has("photo"))fromUrl(true, "history");else {selected=undefined;detail.replaceChildren();panel.classList.remove("has-selection");showContext();renderResults();window.dispatchEvent(new CustomEvent("reference-selected",{detail:{id:"",label:"",point:null,camera:null}}));} });
+  window.addEventListener("reference-open", ((event:CustomEvent<string>)=>{const r=refs.find(r=>r.id===event.detail);if(r)select(r, true, true, "3d_label");}) as EventListener);
   renderResults(); fromUrl();
   return { update, active: () => moving, setVisible(on: boolean) { visible = on; layer.setAttribute("display", on ? "" : "none"); }, setEvidence(on: boolean) { evidence = on; showContext(); } };
 }

@@ -26,12 +26,12 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 - docs: `docs/DALI_CERVANTES.md`, `docs/STREET_LAYOUT.md`, `docs/FRONTAGE_DIVISIONS.md`, `docs/ELENA_NORTH.md`, `docs/CERVANTES_NORTH_PATIOS.md`, `docs/LEVELS.md`, `docs/CERVANTES_DOOR_STEPS_REVIEW.md`, `docs/CERVANTES_EAST_SOUTH_PATIOS.md`, `docs/reviews/path-network-inventory-cervantes/README.md`
 - data: `data/dali_cervantes.json`, `data/dali_cervantes_threshold.json`, `data/cervantes_patio_walls.json`, `data/passages.json`, `data/frontage_divisions.json`, `data/cervantes_elena_steps.json`, `data/levels_survey.json`, `data/cervantes_garden_door.json`, `data/cervantes_north_patios.json`, `data/junction_lawns.json`, `data/cervantes_east_south_patios.json`
 - src: `src/cervantes-walls.ts`, `src/dali-threshold.ts`, `src/frontages.ts`, `src/ramp-steps.ts`, `src/cervantes-garden-door.ts`, `src/cervantes-north-patios.ts`, `src/junction-lawns.ts`, `src/cervantes-east-south-patios.ts`
-- contact sheet: `villacana-reference/contact-sheets/cervantes.jpg` (thumbnails of everything below, numbered in this order)
+- contact sheet: `reference/contact-sheets/cervantes.jpg` (thumbnails of everything below, numbered in this order)
 
 ## Coverage
 
-Layout: 65, Levels and slopes: 24, Facades and roofs: 30, Materials: 24, Planting: 42, Signs: 14, Views: 5
-71 reviewed, 0 suggested only by camera position.
+Layout: 67, Levels and slopes: 24, Facades and roofs: 32, Materials: 24, Planting: 44, Signs: 16, Views: 5
+73 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -274,6 +274,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2543.jpg](../../public/photos-ref/IMG_2543.jpg) | ground | layout, facades, planting, materials | Inner walk-through looking south-east through a round arch **Note:** Pin +/-6.2 m is inside the block south of Cervantes; same inner passage as IMG_2541, just beyond its covered entrance. |
 | [IMG_2544.jpg](../../public/photos-ref/IMG_2544.jpg) | ground | layout, facades, planting, materials | Inner walk-through lane: white houses, bougainvillea and a far arch **Note:** Pin +/-6.2 m. |
 | [IMG_2545.jpg](../../public/photos-ref/IMG_2545.jpg) | ground | layout, facades, planting, materials | Inner walk-through bend: white walls, planter box, drain grating and manhole **Note:** Heading 124 differs from the 147-150 of the other passage photos, so this is probably a bend or branch in the inner walk-through; pin +/-4.5 m. |
+| [IMG_2965.jpg](../../public/photos-ref/IMG_2965.jpg) | ground | layout, planting, facades, signage | Cervantes east of Elena looking west-south-west toward the Elena junction **Looks at:** Calle Miguel de Cervantes east of Elena looking west-south-west toward the Calle Elena junction. |
+| [IMG_2966.jpg](../../public/photos-ref/IMG_2966.jpg) | ground | signage, planting, facades, layout | CALLE DE ELENA corner plaque, fan-palm planter and garden doorway on Cervantes **Looks at:** CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction. |
 | [IMG_2444.jpg](../../public/photos-ref/IMG_2444.jpg) | ground | layout, facades, view | Cervantes east end: looking back east along the lane to the car park side **Looks at:** Lane end opening towards the car park. **Note:** Cars at the far end are probably the Picasso car park but that is not certain from the photo; the lane end is about 15 m away. looksAt is estimated along heading 65. |
 | [IMG_2446.jpg](../../public/photos-ref/IMG_2446.jpg) | ground | layout, facades, planting | Cervantes north lawn with white two-storey house, balcony and arched garden gate **Looks at:** North-side lawn, house and arched garden door west of the Alberto crossing. **Note:** Pin -103.2, 27.2 is on the lane; the lawn and house are about 20 m to the west-north-west. looksAt is estimated along heading 272 and not registered. Which house/frontage this is has not been matched to the registry footprint. |
 | [IMG_2447.jpg](../../public/photos-ref/IMG_2447.jpg) | ground | planting, layout, facades | Private patio behind the Cervantes lawn: banana plants and citrus tree **Looks at:** Private patio and house rear north of the lane. **Note:** Heading 327 from pin (-104.7, 27.5); looksAt is 15 m along the view and unregistered. Private garden, so layout here is context only. |
