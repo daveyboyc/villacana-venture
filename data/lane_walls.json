@@ -8,76 +8,150 @@
       "id": "elena-south-lawn-west-wall",
       "name": "Elena south · white wall with two brown doors west of the junction lawns",
       "area": "elena",
-      "points": [[-159.09, 62.06], [-157.42, 64.88], [-155.22, 66.36], [-153.3, 69.98], [-153.65, 70.17], [-149.94, 77.13]],
+      "points": [
+        [
+          -159.09,
+          62.06
+        ],
+        [
+          -157.42,
+          64.88
+        ],
+        [
+          -155.22,
+          66.36
+        ],
+        [
+          -153.3,
+          69.98
+        ],
+        [
+          -153.65,
+          70.17
+        ],
+        [
+          -149.94,
+          77.13
+        ]
+      ],
       "height": 2.2,
       "thickness": 0.25,
       "raise": 0,
       "doors": [
-        {"id": "elena-south-bed-door", "at": [-154.22, 67.98], "width": 0.95, "height": 2.0},
-        {"id": "elena-south-lawn-door", "at": [-153.26, 70.64], "width": 1.05, "height": 2.0}
+        {
+          "id": "elena-south-bed-door",
+          "at": [
+            -154.22,
+            67.98
+          ],
+          "width": 0.95,
+          "height": 2.0
+        },
+        {
+          "id": "elena-south-lawn-door",
+          "at": [
+            -153.26,
+            70.64
+          ],
+          "width": 1.05,
+          "height": 2.0
+        }
       ],
-      "evidence": ["IMG_2261.jpg", "IMG_2358.jpg", "IMG_2260.jpg", "IMG_2330.jpg"],
+      "evidence": [
+        "IMG_2261.jpg",
+        "IMG_2358.jpg",
+        "IMG_2260.jpg",
+        "IMG_2330.jpg"
+      ],
       "basis": "IMG_2261 and IMG_2260 look south down the Elena lawns and IMG_2358 looks down on them from a roof north of Cervantes: a plain white wall about 2.2 m high, a little taller than its two brown doors, runs along the whole west side of both lawns behind a narrow bed with trained bougainvillea, from the Cervantes corner to the wall with the cypresses at the far end, which the model draws as the north face of registry 6265801UF1366N_part5. One door is at the end of the tiled cross-path between the lawns and the other in the bed a few metres north; IMG_2330 shows both from the lane. The doors stand where the red-tread sills of data/door_sills.json already are (elena-lawn-door-sill, elena-bed-door-sill), and the wall's outer face runs through them, with the lawn door about 0.4 m further back as the far door in IMG_2261 is set in. North of the bed door the wall keeps about 0.6 m outside the traced edge of lawn 1 (data/frontage_divisions.json) and meets the existing Cervantes south patio wall (data/cervantes_patio_walls.json, cervantes-patio-south-2). Heights by eye against the doors; the line is about 1 m."
     },
     {
       "id": "elena-south-mouth-patio-wall",
       "name": "Elena south · low patio wall on the east side of the lane mouth",
       "area": "elena",
-      "points": [[-152.03, 57.86], [-149.7, 61.55]],
+      "points": [
+        [
+          -152.03,
+          57.86
+        ],
+        [
+          -149.7,
+          61.55
+        ]
+      ],
       "height": 1.1,
       "thickness": 0.22,
       "raise": 0,
       "doors": [],
-      "evidence": ["IMG_2358.jpg"],
-      "basis": "IMG_2358, from the roof north of Cervantes looking south-south-east down Calle Elena, shows on the left of the lane mouth a paved patio in front of a house door hung with bougainvillea, closed off from the lane by a low white wall about waist high with a hedge and the lamp post outside it. Built from the end of the existing Cervantes south wall east of Elena (data/cervantes_patio_walls.json, cervantes-patio-south-3) to the north-west corner of registry 6265601UF1366N_part1, about 1.4 m east of the lane centreline. Height by eye; whether it has a gate is not visible."
+      "evidence": [
+        "IMG_2358.jpg"
+      ],
+      "basis": "IMG_2358, from the roof north of Cervantes looking south-south-east down Calle Elena, shows on the left of the lane mouth a paved patio in front of a house door hung with bougainvillea, closed off from the lane by a low white wall about waist high with a hedge and the lamp post outside it. Built from the end of the existing Cervantes south wall east of Elena (data/cervantes_patio_walls.json, cervantes-patio-south-3) to the north-west corner of registry 6265601UF1366N_part1, about 1.4 m east of the lane centreline. Height by eye; whether it has a gate is not visible. The Google satellite view (Imagery © Google 2026, zoom 21, fetched 16 November 2026) shows a white line along the west edge of the red-tiled patio, which supports the lane-side line; in IMG_2358 the wall that shows clearly is the one across the patio's north side."
     },
     {
       "id": "jorge-garden-east-wall",
       "name": "Calle Jorge · tall patio wall with lantern and meter box at the east side of the cactus garden",
       "area": "seaward-lanes",
-      "points": [[-49.69, 139.17], [-48.76, 140.77]],
+      "points": [
+        [
+          -49.69,
+          139.17
+        ],
+        [
+          -48.76,
+          140.77
+        ]
+      ],
       "height": 2.6,
       "thickness": 0.3,
       "raise": 0.3,
       "doors": [],
-      "evidence": ["IMG_2230.jpg"],
+      "evidence": [
+        "IMG_2230.jpg"
+      ],
       "basis": "IMG_2230, from about 114 m along the lane looking west, shows behind the hedged planters and a patio with a chair a tall white wall facing east with a wall lantern and a meter box on it, the candelabra tree rising behind it. Its lane end is about 10 degrees right of the lane's vanishing point, which with the camera pin puts it about 103 to 106 m along. The Esri aerial shows a white wall there, at 104.3 m, from the lane edge back to the house corner of 6364401UF1366S_part2, with the garden lawn ending against it and its shadow falling on the lawn. So the open garden ends here, not at 108.4 m as first estimated from the pins: the planter now runs from this wall (data/jorge_lane.json boundary gap, kerb and lawn end at 104.4 m). Built from the house corner to the lane edge just behind the garden kerb, 2.6 m above the path by eye against the 0.7 m planter and hedge in front of it."
-    },
-    {
-      "id": "jorge-patio-wall-111",
-      "name": "Calle Jorge · patio wall from the house corner to the planter at 111 m",
-      "area": "seaward-lanes",
-      "points": [[-43.72, 135.43], [-42.89, 136.85]],
-      "height": 2.2,
-      "thickness": 0.25,
-      "raise": 0.3,
-      "doors": [],
-      "evidence": [],
-      "basis": "Inferred from the aerial. Esri and Google show white walls at right angles to the lane on the north side where the registry houses step back (111.1, 117.7 and 124.3 m), each running from the house corner forward to the planters at the lane edge and enclosing the patios behind them; between 111 and 118 m is a planted patio with an L-shaped hedge. The model drew the houses but left the strip between their corners and the planters open. Height taken from the photographed patio wall at 104.3 m (IMG_2230), less a little; no photo shows this one."
     },
     {
       "id": "jorge-patio-wall-117",
       "name": "Calle Jorge · patio wall from the house corner to the planter at 117.5 m",
       "area": "seaward-lanes",
-      "points": [[-38.36, 132.38], [-37.55, 133.76]],
+      "points": [
+        [
+          -38.36,
+          132.38
+        ],
+        [
+          -37.55,
+          133.76
+        ]
+      ],
       "height": 2.2,
       "thickness": 0.25,
       "raise": 0.3,
       "doors": [],
       "evidence": [],
-      "basis": "Inferred from the aerial, as jorge-patio-wall-111: the east side of the planted patio between the house rows, from the corner of 6364401UF1366S_part7 to the planter."
+      "basis": "Inferred from the aerial. Esri and Google show white walls at right angles to the lane on the north side where the registry houses step back (111.1, 117.7 and 124.3 m), each from the house corner forward to the planters at the lane edge. This one is the east side of the planted patio between the house rows, from the corner of 6364401UF1366S_part7 to the planter. Height taken from the photographed patio wall at 104.3 m (IMG_2230), less a little; no photo shows it. The one at 111.1 m is not built: the brick entrances in the planter, placed from photo pins, would put it between the first entrance and its patio (see discrepancy jorge-planter-gaps-vs-aerial)."
     },
     {
       "id": "jorge-patio-wall-124",
       "name": "Calle Jorge · patio wall between the last patio and the plinth lawn at 124.5 m",
       "area": "seaward-lanes",
-      "points": [[-32.35, 128.78], [-31.5, 130.26]],
+      "points": [
+        [
+          -32.35,
+          128.78
+        ],
+        [
+          -31.5,
+          130.26
+        ]
+      ],
       "height": 2.2,
       "thickness": 0.25,
       "raise": 0.3,
       "doors": [],
       "evidence": [],
-      "basis": "Inferred from the aerial: a white wall on the line of the east face of 6364401UF1366S_part7 runs from the lane edge back to the plain lawn wall (guillermoWest in data/jorge_lane.json), the west side of the plinth lawn. Only the stretch from the house corner to the planter is missing in the model; the rest is the house face."
+      "basis": "Inferred from the aerial: a white wall on the line of the east face of 6364401UF1366S_part7 runs from the lane edge back to the plain lawn wall (guillermoWest in data/jorge_lane.json), the west side of the plinth lawn. Only the stretch from the house corner to the planter is missing in the model; the rest is the house face. Height as jorge-patio-wall-117."
     }
   ]
 }

@@ -108,13 +108,21 @@ lawn_strip = next(g for g in jorge['grass'] if g['side'] == 'hedge' and g['from'
 assert lawn_strip['to'] <= s0[0] - garden['thickness'] / 2, 'the garden lawn runs through the wall'
 assert min(s0[1], s1[1]) >= jorge['kerb']['offset'] + jorge['kerb']['width'] / 2, 'garden wall on the kerb'
 houses = [b for b in skeleton['buildings'] if b['floors'] > 0]
-for wid in ('jorge-patio-wall-111', 'jorge-patio-wall-117', 'jorge-patio-wall-124'):
+for wid in ('jorge-patio-wall-117', 'jorge-patio-wall-124'):
     a, b = [station(p) for p in walls[wid]['points']]
     assert abs(a[0] - b[0]) < 0.05, f'{wid}: not square to the lane'
     front = min(a[1], b[1]) - walls[wid]['thickness'] / 2
     planter_back = jorge['boundary']['offset'] + jorge['boundary']['thickness'] / 2
     assert abs(min(a[1], b[1]) - planter_back) < 0.05, f'{wid}: must reach the back of the planter'
     assert jorge['boundary']['from'] <= a[0] <= jorge['boundary']['to'], f'{wid}: no planter in front of it'
+# No patio wall may cut a brick entrance off from the patio behind the planter west of it (IMG_2230; review of 16 November).
+for w in data['walls']:
+    if w['area'] != 'seaward-lanes' or w['id'] == 'jorge-garden-east-wall':
+        continue
+    s_wall = station(w['points'][0])[0]
+    for g in jorge['boundary']['gaps']:
+        if g['kind'] == 'threshold':
+            assert not (g['from'] - 2.5 <= s_wall <= g['to']), f"{w['id']}: stands between the entrance at {g['from']} m and its patio"
 
 src = (ROOT / 'src/slice.ts').read_text()
 assert 'addLaneWalls(scene)' in src and 'laneWallRings()' in src, 'slice.ts: lane walls not drawn or not solid'

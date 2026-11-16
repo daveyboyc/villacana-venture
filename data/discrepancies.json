@@ -122,6 +122,22 @@
       "task": "elena-east-patios",
       "status": "open",
       "requests": []
+    },
+    {
+      "id": "jorge-planter-gaps-vs-aerial",
+      "area": "seaward-lanes",
+      "kind": "placement",
+      "description": "On the north side of Calle Jorge the Esri and Google aerials show a white patio wall square to the lane at about 111.1 m, from the house corner of 6364401UF1366S_part2 to the planters, and the first brick entrance about 2 m west of it. The model's planter entrances (data/jorge_lane.json boundary gaps 112.4-113.5 and 114.7-115.8 m, with their number niches) were placed from photo pins (±2-5 m), and the garden end placed the same way proved 4 m too far east. Built as they are, a wall at 111.1 m would stand between the first entrance and the patio IMG_2230 shows it leading into, so that wall is left out (independent review, docs/reviews/lane-walls/). Needs the planter entrances re-placed against the aerial or a square-on photo (photo request jorge-east-square-on); walls at 117.5 and 124.5 m should be re-checked against them then.",
+      "sources": [
+        "IMG_2230.jpg"
+      ],
+      "features": [
+        "jorge_lane.json:jorge-lane-verge",
+        "lane_walls.json:jorge-patio-wall-117"
+      ],
+      "task": "lane-walls-jorge-elena",
+      "status": "open",
+      "requests": []
     }
   ]
 }

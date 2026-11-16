@@ -669,15 +669,11 @@
   },
   "lane_walls.json:elena-south-mouth-patio-wall": {
    "level": "estimated",
-   "why": "IMG_2358 shows a low white patio wall with a hedge outside it on the east side of the Elena south lane mouth, seen from a roof. Its ends are the existing Cervantes south wall and the registry house corner; height (about 1.1 m) by eye; whether it has a gate is not visible."
+   "why": "IMG_2358 shows, from a roof, a patio with a hedge and the lamp post outside it on the east side of the Elena south lane mouth; the Google satellite view shows a white line along the patio's lane side. Ends are the existing Cervantes south wall and the registry house corner; height (about 1.1 m) by eye; whether it has a gate is not visible."
   },
   "lane_walls.json:jorge-garden-east-wall": {
    "level": "estimated",
    "why": "IMG_2230 shows a tall white patio wall with a lantern and a meter box facing east behind the hedged planters, the candelabra tree behind it; the Esri aerial shows the wall at 104.3 m from the house corner to the lane edge, where the garden lawn ends. Station from the aerial and the photo angle (about 103-106 m), height about 2.6 m by eye. No camera is solved."
-  },
-  "lane_walls.json:jorge-patio-wall-111": {
-   "level": "inferred",
-   "why": "Not photographed. The Esri and Google aerials show a white wall here, at right angles to the lane, from the registry house corner forward to the planters at the lane edge. Height is taken from the photographed patio wall at 104.3 m (IMG_2230)."
   },
   "lane_walls.json:jorge-patio-wall-117": {
    "level": "inferred",

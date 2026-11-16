@@ -33,7 +33,7 @@ The lanes between the middle pool and the beach.
 - 12 November 2026 (Dave): the east portion of registry part 6364401UF1366S_part7, behind the plinth-lawn wall, is treated as an open walled patio on the evidence of IMG_2773 and the aerial, without a measured check (data/registry_corrections.json, openPatios; scripts/build_skeleton.py keeps the registry ring beside the roofed part). The same correction can be used for other registry parts that photos show are walled patios.
 - 13 November 2026 (jorge-planting): the bougainvilleas on and beside Calle Jorge are in full purple bract in the photos (IMG_2229, IMG_2230, IMG_2697), so the wall climbers now carry clusters of bracts; small trees stand by the house-23 bed and on the plinth lawn; a row of low shrubs edges the flagged west path; the lawns are a darker green. The house-23 group is seen in Inspect only: no starting pose faces it.
 - 14 November 2026 (jorge-complete, Dave): Calle Jorge now has a built path from the Dalí car park to Calle Guillermo. Enlarging IMG_2280 and IMG_2697 shows the far end of the flags: a white flat-lintelled gateway with green iron leaves and bougainvillea, a wall and hedge to its left, a flagged cross-path in front, and through it a terracotta path and a second white portal. From the gateway (28 m) to 86 m nothing is photographed, so the path, lawns, one tree and that second portal are built from the aerial and graded inferred; house fronts, walls and planters along 56 to 86 m and the CALLE JORGE 27 35 passage are left out. The big dark crown on the north lawn at about 33 m is the Canary palm already placed from the south-pool photos. Photos needed are listed in docs/JORGE_LANE.md and data/photo_requests.json.
-- 16 November 2026 (lane-walls-jorge-elena): the tall patio wall with lantern and meter box in IMG_2230 is the east side of the Calle Jorge cactus garden, at 104.3 m on the Esri aerial, so the open garden ends there (not 108.4 m) and the hedged planter runs on from it; patio walls from the north-side house corners to the planters at 111, 117.5 and 124.5 m are built from the aerial (inferred). Open: the white wall round the south-pool lawn corner at Calle Silvia and the south-side house recesses (gap:jorge-silvia-lawn-wall, gap:jorge-south-recesses). See docs/LANE_WALLS.md.
+- 16 November 2026 (lane-walls-jorge-elena): the tall patio wall with lantern and meter box in IMG_2230 is the east side of the Calle Jorge cactus garden, at 104.3 m on the Esri aerial, so the open garden ends there (not 108.4 m) and the hedged planter runs on from it; patio walls from the north-side house corners to the planters at 117.5 and 124.5 m are built from the aerial (inferred); the one at 111 m is left out because the pin-placed planter entrances would put it across the first entrance (discrepancy jorge-planter-gaps-vs-aerial). Open: the white wall round the south-pool lawn corner at Calle Silvia and the south-side house recesses (gap:jorge-silvia-lawn-wall, gap:jorge-south-recesses). See docs/LANE_WALLS.md.
 
 ## Read first
 
@@ -141,7 +141,7 @@ graph LR
   F8 --> PIMG_2773_jpg(["IMG_2773"])
   A --> F9["Calle de Jorge sign and lamp · unreviewed"]
   F9 --> PIMG_2597_jpg(["IMG_2597"])
-  A --> F10["Calle Jorge lawns, garden kerb, planter walls with thresholds, hedges and wall planting (photographed east stretch) · unreviewed"]
+  A --> F10["Calle Jorge lawns, garden kerb, planter walls with thresholds, hedges and wall planting (photographed east stretch) · disputed"]
   F10 --> PIMG_2182_jpg(["IMG_2182"])
   F10 --> PIMG_2183_jpg(["IMG_2183"])
   F10 --> PIMG_2184_jpg(["IMG_2184"])
@@ -225,7 +225,7 @@ graph LR
 | `jorge_lane.json:jorge-lane-paths` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `jorge_lane.json:jorge-lane-planting` | disputed | differs | open discrepancy photo-discrepancy:6e469e5db375d843; open discrepancy photo-discrepancy:cde52ab571c82c77 |
 | `jorge_lane.json:jorge-lane-sign` | unreviewed | matches | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `jorge_lane.json:jorge-lane-verge` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `jorge_lane.json:jorge-lane-verge` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy jorge-planter-gaps-vs-aerial |
 | `lane_walls.json:jorge-garden-east-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:silvia-outdoor-apron` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `middle_pool_lane_frontages.json:south-lane-four-column-paving` | unreviewed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

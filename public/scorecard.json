@@ -2118,7 +2118,7 @@
    "placement": {
     "features": 22,
     "verified": 0,
-    "disputed": 2
+    "disputed": 3
    },
    "discrepancies": [
     {
@@ -2161,11 +2161,11 @@
     "Facades: 0 of 599 kit parts traced from photos.",
     "How sure: 1 photographed, 17 estimated, 4 inferred, 5 known gaps.",
     "Placement: 0 of 22 features verified, 4 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 0 still open; 14 evidence requests. This is not whole-area acceptance."
+    "Model loop: 0 tracked findings accepted, 1 still open; 14 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 0,
+     "ready": 1,
      "needs-evidence": 0,
      "needs-source-access": 0,
      "awaiting-review": 0,
@@ -3002,9 +3002,9 @@
     "generated": 2480
    },
    "placement": {
-    "features": 479,
+    "features": 478,
     "verified": 0,
-    "disputed": 36
+    "disputed": 38
    },
    "discrepancies": [
     {
@@ -3216,7 +3216,7 @@
    "confidence": {
     "photographed": 77,
     "estimated": 153,
-    "inferred": 17,
+    "inferred": 16,
     "registry": 232,
     "gaps": 34
    },
@@ -3225,13 +3225,13 @@
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
     "Photos: 517, 498 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
-    "How sure: 77 photographed, 153 estimated, 17 inferred, 34 known gaps.",
-    "Placement: 0 of 479 features verified, 49 open discrepancies.",
-    "Model loop: 0 tracked findings accepted, 11 still open; 43 evidence requests. This is not whole-area acceptance."
+    "How sure: 77 photographed, 153 estimated, 16 inferred, 34 known gaps.",
+    "Placement: 0 of 478 features verified, 49 open discrepancies.",
+    "Model loop: 0 tracked findings accepted, 12 still open; 43 evidence requests. This is not whole-area acceptance."
    ],
    "loop": {
     "counts": {
-     "ready": 6,
+     "ready": 7,
      "needs-evidence": 4,
      "needs-source-access": 0,
      "awaiting-review": 1,

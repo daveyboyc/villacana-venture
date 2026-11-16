@@ -21,16 +21,16 @@ and offsets read straight off it.
 | Wall | Where | From | Level |
 | --- | --- | --- | --- |
 | `elena-south-lawn-west-wall` | the whole west side of the two Elena south lawns, 2.2 m, two closed brown doors | IMG_2261, IMG_2260, IMG_2330 from the lane, IMG_2358 from a roof; the doors stand on the sills already built in `data/door_sills.json` | estimated |
-| `elena-south-mouth-patio-wall` | east side of the Elena south lane mouth, 1.1 m, from the Cervantes south wall to the house corner | IMG_2358 | estimated |
+| `elena-south-mouth-patio-wall` | east side of the Elena south lane mouth, 1.1 m, from the Cervantes south wall to the house corner | IMG_2358; the Google satellite view for its lane-side line | estimated |
 | `jorge-garden-east-wall` | Calle Jorge at 104.3 m, north side, 2.6 m above the path, house corner to lane edge | IMG_2230 (the wall with lantern and meter box) and the Esri aerial | estimated |
-| `jorge-patio-wall-111`, `-117`, `-124` | Calle Jorge at 111.3, 117.5 and 124.5 m, north side, house corner to the back of the planters, 2.2 m | Esri and Google aerials | inferred |
+| `jorge-patio-wall-117`, `-124` | Calle Jorge at 117.5 and 124.5 m, north side, house corner to the back of the planters, 2.2 m | Esri and Google aerials | inferred |
 
 **Elena.** The photos show one continuous plain white wall along the west side of both lawns, a little
 taller than its two doors, behind a bed of trained bougainvillea; the far end is the wall with the
 cypresses, which the model draws as the north face of registry 6265801UF1366N_part5, and the north end
 meets the existing Cervantes south patio wall. The wall's outer face runs through the two built sills;
 the far door is set about 0.4 m back, as it is in IMG_2261. The traced north-west corner of lawn 2
-(`data/frontage_divisions.json`) poked 0.24 m through that line, so it was moved 0.7 m east to sit
+(`data/frontage_divisions.json`) poked 0.24 m through that line, so it was moved 0.69 m (0.61 m east, 0.32 m north) to sit
 0.45 m inside the wall, as the photos show the lawn edge running straight along it.
 
 **Jorge.** In IMG_2230 the tall white wall with a lantern and meter box stands at the west end of the
@@ -42,8 +42,12 @@ not 108.4 m as first estimated from the pins: in `data/jorge_lane.json` the plan
 at 104.4 m and the garden kerb and lawn at 104.1 m, and the hedged planter runs on from the wall as in
 the photo. Further east the aerials show a white wall square to the lane at each place the north-side
 houses step back (111.1, 117.7 and 124.3 m), each from the house corner to the planters. The model had
-the houses but left the strip between their corners and the planters open; those three walls are built
-as inferred, as tall as the photographed one less a little.
+the houses but left the strip between their corners and the planters open. The walls at 117.7 and 124.3 m are built as
+inferred, as tall as the photographed one less a little. The one at 111.1 m is not: the brick entrances
+in the planter were placed from photo pins (112.4 and 114.7 m) and probably sit as far east of the
+truth as the garden end did, so a wall at 111.1 m would cut the first entrance off from the patio
+IMG_2230 shows it leading into. Which is wrong is recorded as discrepancy `jorge-planter-gaps-vs-aerial`
+(photo request `jorge-east-square-on`).
 
 ## What was looked at and not built
 

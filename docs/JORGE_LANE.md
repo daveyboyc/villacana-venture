@@ -325,7 +325,10 @@ the photos. Full account in `docs/LANE_WALLS.md`; the walls are in `data/lane_wa
   from the pins) and the garden kerb and lawn at 104.1 m; the hedged planter runs on from the wall, as in
   the photo. Built 2.6 m above the path, estimated.
 - Where the north-side houses step back at 111.1, 117.7 and 124.3 m the aerials show white walls square
-  to the lane from the house corners to the planters; the model left those strips open. Built, inferred.
+  to the lane from the house corners to the planters; the model left those strips open. The two at 117.7
+  and 124.3 m are built, inferred. The one at 111.1 m is left out: with the brick entrances where the pins
+  put them it would cut the first entrance off from its patio, and the entrances are probably as far east
+  of the truth as the garden end was (discrepancy `jorge-planter-gaps-vs-aerial`).
 - From 56 to 86 m the aerial shows open front lawns with Y-shaped paths to the house doors, not walls;
   nothing was added there. The white wall round the south-pool lawn corner at Calle Silvia and the
   south-side house recesses are recorded as gaps (`gap:jorge-silvia-lawn-wall`,

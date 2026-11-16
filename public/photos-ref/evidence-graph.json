@@ -6,7 +6,7 @@
   "suggested": 267,
   "needs-review": 231,
   "photos": 501,
-  "features": 479,
+  "features": 478,
   "photosCitedByModel": 197,
   "modelFeaturesWithPhotoCitations": 222
  },
@@ -3499,13 +3499,6 @@
    "evidence": [
     "IMG_2230.jpg"
    ]
-  },
-  {
-   "id": "lane_walls.json:jorge-patio-wall-111",
-   "name": "Calle Jorge · patio wall from the house corner to the planter at 111 m",
-   "kind": "reference feature",
-   "source": "inferred from the aerial and the registry; about 1 m",
-   "evidence": []
   },
   {
    "id": "lane_walls.json:jorge-patio-wall-117",
