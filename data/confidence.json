@@ -662,6 +662,26 @@
   "elena_east_patios.json:elena-east-patios-divider-south": {
    "level": "inferred",
    "why": "Line from the georeferenced aerial (white wall top and shadow) agreeing to about 0.15 m with the registry party-wall jog; no photo shows the wall and no solved camera places it."
+  },
+  "lane_walls.json:elena-south-lawn-west-wall": {
+   "level": "estimated",
+   "why": "IMG_2261, IMG_2260 and IMG_2330 from the lane and IMG_2358 from a roof show a plain white wall about 2.2 m high with two brown doors along the whole west side of the Elena south lawns, behind a bed of trained bougainvillea. The doors stand on the existing sills (data/door_sills.json); the line between them and the north end at the Cervantes wall follow the traced lawn edge and are good to about 1 m. Height by eye against the doors. No camera is solved."
+  },
+  "lane_walls.json:elena-south-mouth-patio-wall": {
+   "level": "estimated",
+   "why": "IMG_2358 shows, from a roof, a patio with a hedge and the lamp post outside it on the east side of the Elena south lane mouth; the Google satellite view shows a white line along the patio's lane side. Ends are the existing Cervantes south wall and the registry house corner; height (about 1.1 m) by eye; whether it has a gate is not visible."
+  },
+  "lane_walls.json:jorge-garden-east-wall": {
+   "level": "estimated",
+   "why": "IMG_2230 shows a tall white patio wall with a lantern and a meter box facing east behind the hedged planters, the candelabra tree behind it; the Esri aerial shows the wall at 104.3 m from the house corner to the lane edge, where the garden lawn ends. Station from the aerial and the photo angle (about 103-106 m), height about 2.6 m by eye. No camera is solved."
+  },
+  "lane_walls.json:jorge-patio-wall-117": {
+   "level": "inferred",
+   "why": "Not photographed. The Esri and Google aerials show a white wall here, at right angles to the lane, from the registry house corner forward to the planters at the lane edge. Height is taken from the photographed patio wall at 104.3 m (IMG_2230)."
+  },
+  "lane_walls.json:jorge-patio-wall-124": {
+   "level": "inferred",
+   "why": "Not photographed. The Esri and Google aerials show a white wall here, at right angles to the lane, from the registry house corner forward to the planters at the lane edge. Height is taken from the photographed patio wall at 104.3 m (IMG_2230)."
   }
  },
  "gaps": [
@@ -679,20 +699,6 @@
     "IMG_2777.jpg"
    ],
    "why": "The November photos show a glass fence on stainless posts. Dave, 2026-10-11, and again 2026-11-12, said to leave the pools unfenced, so it is not built."
-  },
-  {
-   "id": "gap:elena-south-west-wall",
-   "name": "Elena south · white wall with two brown doors west of the junction lawns",
-   "at": [
-    -153.74,
-    69.31
-   ],
-   "photos": [
-    "IMG_2260.jpg",
-    "IMG_2261.jpg",
-    "IMG_2330.jpg"
-   ],
-   "why": "The two door sills are built (data/door_sills.json); the white wall and the doors themselves are not modelled."
   },
   {
    "id": "gap:elena-east-patios",
@@ -1104,6 +1110,32 @@
     "IMG_2364.jpg"
    ],
    "why": "The registry face of 6265401UF1366N_part3 jogs at two more party walls (about z 38.5 and 35), where patio dividers would normally run to the garden wall, but the magnolia canopy hides that ground on the aerial and in the roof photos (IMG_2366 looks south of Cervantes, not into these patios); not built rather than guessed (photo request elena-east-patios-inside)."
+  },
+  {
+   "id": "gap:jorge-silvia-lawn-wall",
+   "name": "Calle Jorge at Calle Silvia · white wall round the north-east corner of the south-pool lawn",
+   "at": [
+    -91.04,
+    170.05
+   ],
+   "photos": [
+    "IMG_2280.jpg",
+    "IMG_2697.jpg"
+   ],
+   "why": "The Esri and Google aerials show a white wall with a curved corner where the south-pool lawn meets Calle Jorge at Calle Silvia (about 51-55 m along Jorge), running south along the lawn's east side. IMG_2280 and IMG_2697 see this stretch only through the gateway from about 25 m and show the second white portal, not the wall. Not built: its line, height and how it meets the portal are not known (photo request jorge-silvia-junction)."
+  },
+  {
+   "id": "gap:jorge-south-recesses",
+   "name": "Calle Jorge east stretch · gaps between the south-side house blocks",
+   "at": [
+    -43.03,
+    149.18
+   ],
+   "photos": [
+    "IMG_2229.jpg",
+    "IMG_2182.jpg"
+   ],
+   "why": "The registry house fronts on the lawn side step back to about 11 m at 101-108 m and 121-125 m. The aerials show these recesses in deep shadow and do not show whether a wall closes them at the house-front line, so the lawn and open ground run into them in the model (photo request jorge-east-house-fronts)."
   }
  ]
 }

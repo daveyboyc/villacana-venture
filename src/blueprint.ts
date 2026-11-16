@@ -18,6 +18,7 @@ import {elenaEntry,elenaEntryRing,elenaEntryRings} from "./elena-gated-entry";
 import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
+import {laneWalls,laneWallDoorSpans} from "./lane-walls";
 import {barrakaBarbecueBoat,barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import { vergeClumps, vergeRing } from "./beach-verge";
 import beachVerge from "../data/beach_verge.json";
@@ -166,6 +167,14 @@ async function boot(): Promise<void> {
   etitled(el("circle",{cx:cervantesEastSouthDoor.at[0],cy:cervantesEastSouthDoor.at[1],r:.23,fill:"#62432d","data-cervantes-east-south-id":cervantesEastSouthDoor.id}),`${cervantesEastSouthDoor.name}: ${cervantesEastSouthDoor.trust}`);
   for(const wall of elenaEastPatioWalls)etitled(el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"data-elena-east-id":wall.id}),`${wall.name}: ${wall.trust} · ${wall.evidence.join(", ")}`);
   frontages.append(eastPatios);
+  // Garden and patio walls along Calle Elena and Calle Jorge (data/lane_walls.json), with their closed doors.
+  const laneWallGroup=el("g",{id:"lane-walls"});
+  for(const wall of laneWalls){
+    const node=el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"stroke-linejoin":"round","data-lane-wall-id":wall.id});
+    const title=el("title",{});title.textContent=`${wall.name}: ${wall.basis}${wall.evidence.length?" · "+wall.evidence.join(", "):""}`;node.append(title);laneWallGroup.append(node);
+    for(const span of laneWallDoorSpans(wall)){const door=el("circle",{cx:span.door.at[0],cy:span.door.at[1],r:span.door.width/2.2,fill:"#5a3420","data-lane-wall-id":span.door.id});const dt=el("title",{});dt.textContent=`${wall.name}: closed door`;door.append(dt);laneWallGroup.append(door);}
+  }
+  frontages.append(laneWallGroup);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.
   const middle=el("g",{id:"middle-pool-features"});
   const mtitled=(node:SVGElement,text:string)=>{const title=el("title",{});title.textContent=text;node.append(title);middle.append(node);};

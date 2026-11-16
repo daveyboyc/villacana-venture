@@ -6,9 +6,9 @@
   "suggested": 267,
   "needs-review": 231,
   "photos": 501,
-  "features": 473,
+  "features": 478,
   "photosCitedByModel": 197,
-  "modelFeaturesWithPhotoCitations": 219
+  "modelFeaturesWithPhotoCitations": 222
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3469,6 +3469,50 @@
     "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
     "ref:apple-maps/11-3d-guillermo-slope-to-paseo.png"
    ]
+  },
+  {
+   "id": "lane_walls.json:elena-south-lawn-west-wall",
+   "name": "Elena south · white wall with two brown doors west of the junction lawns",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_2261.jpg",
+    "IMG_2358.jpg",
+    "IMG_2260.jpg",
+    "IMG_2330.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:elena-south-mouth-patio-wall",
+   "name": "Elena south · low patio wall on the east side of the lane mouth",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_2358.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:jorge-garden-east-wall",
+   "name": "Calle Jorge · tall patio wall with lantern and meter box at the east side of the cactus garden",
+   "kind": "reference feature",
+   "source": "photo/aerial interpretation; about 1 m",
+   "evidence": [
+    "IMG_2230.jpg"
+   ]
+  },
+  {
+   "id": "lane_walls.json:jorge-patio-wall-117",
+   "name": "Calle Jorge · patio wall from the house corner to the planter at 117.5 m",
+   "kind": "reference feature",
+   "source": "inferred from the aerial and the registry; about 1 m",
+   "evidence": []
+  },
+  {
+   "id": "lane_walls.json:jorge-patio-wall-124",
+   "name": "Calle Jorge · patio wall between the last patio and the plinth lawn at 124.5 m",
+   "kind": "reference feature",
+   "source": "inferred from the aerial and the registry; about 1 m",
+   "evidence": []
   },
   {
    "id": "picasso_lawn_wall.json:picasso-lawn-wall",
@@ -9684,6 +9728,12 @@
    "visualValidation": "not established by citation"
   },
   {
+   "from": "photo:IMG_2230.jpg",
+   "to": "lane_walls.json:jorge-garden-east-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
    "from": "photo:IMG_2231.jpg",
    "to": "street:jorge",
    "relation": "camera-nearby",
@@ -10507,6 +10557,12 @@
   },
   {
    "from": "photo:IMG_2260.jpg",
+   "to": "lane_walls.json:elena-south-lawn-west-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2260.jpg",
    "to": "door_sills.json:elena-lawn-door-sill",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -10558,6 +10614,12 @@
   {
    "from": "photo:IMG_2261.jpg",
    "to": "frontage_divisions.json:cervantes-lawn-door-path",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2261.jpg",
+   "to": "lane_walls.json:elena-south-lawn-west-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -12172,6 +12234,12 @@
   },
   {
    "from": "photo:IMG_2330.jpg",
+   "to": "lane_walls.json:elena-south-lawn-west-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2330.jpg",
    "to": "door_sills.json:elena-lawn-door-sill",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -13157,6 +13225,18 @@
   {
    "from": "photo:IMG_2358.jpg",
    "to": "junction_lawns.json:junction-pollarded-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "lane_walls.json:elena-south-lawn-west-wall",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2358.jpg",
+   "to": "lane_walls.json:elena-south-mouth-patio-wall",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

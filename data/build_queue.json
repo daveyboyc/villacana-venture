@@ -3794,6 +3794,39 @@
    "status": "done",
    "owner": "Codex",
    "issue": 235
+  },
+  {
+   "id": "lane-walls-jorge-elena",
+   "area": "elena",
+   "priority": 2,
+   "kind": "layout",
+   "title": "Calle Elena and Calle Jorge: the missing garden and patio walls",
+   "photos": [
+    "IMG_2261.jpg",
+    "IMG_2358.jpg",
+    "IMG_2260.jpg",
+    "IMG_2330.jpg",
+    "IMG_2230.jpg"
+   ],
+   "build": "Dave, 2026-11-16: the walls need adding around Calle Jorge and Elena. Survey both lanes in Inspect (Layout) against the photos and the aerial and build the walls that close gardens and patios off from the lanes where the model leaves them open: the photographed white wall with two brown doors west of the Elena south lawns (on the built sills), the low patio wall at the Elena south mouth, the tall patio wall with lantern at the east side of the Jorge cactus garden (so the garden ends there), and the patio walls from the north-side house corners to the planters (inferred from the aerial). Record what the aerial suggests but does not settle as gaps.",
+   "avoid": "Do not invent walls the photos or aerial do not show; keep the lanes' walking lines clear; leave Walk alone.",
+   "accept": [
+    "Visible in Inspect in Layout and with Show details",
+    "scripts/check_lane_walls.py, check_jorge_lane.py, check_door_sills.py and check_junction_lawns.py pass",
+    "Second-agent review of the Inspect renders against the full-size photos and the aerial"
+   ],
+   "features": [
+    "lane_walls.json:elena-south-lawn-west-wall",
+    "lane_walls.json:elena-south-mouth-patio-wall",
+    "lane_walls.json:jorge-garden-east-wall",
+    "lane_walls.json:jorge-patio-wall-117",
+    "lane_walls.json:jorge-patio-wall-124",
+    "jorge_lane.json:jorge-lane-verge",
+    "frontage_divisions.json:cervantes-elena-lawn-2"
+   ],
+   "dependsOn": [],
+   "status": "in-progress",
+   "owner": "Claude"
   }
  ]
 }

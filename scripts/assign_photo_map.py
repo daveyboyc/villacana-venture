@@ -235,6 +235,9 @@ def features(s):
     for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp'),('railing','Green bar railing on a sandstone plinth along the big-pool lawn')):
         f=fence[key]
         add('seafront_fence.json:'+f['id'],name,'reference feature','photo/aerial/survey interpretation; position about 1-2 m',evidence=fence['evidence'],points=[unturn(q) for q in (f['points'] if 'points' in f else [f['at']])])
+    lane_walls=json.loads((ROOT/'data/lane_walls.json').read_text()) # garden and patio walls along Calle Elena and Calle Jorge
+    for w in lane_walls['walls']:
+        add('lane_walls.json:'+w['id'],w['name'],'reference feature','photo/aerial interpretation; about 1 m' if w['evidence'] else 'inferred from the aerial and the registry; about 1 m',evidence=w['evidence'],points=w['points'])
     picasso_wall=json.loads((ROOT/'data/picasso_lawn_wall.json').read_text())
     add('picasso_lawn_wall.json:'+picasso_wall['id'],picasso_wall['name'],'reference feature','photo/aerial interpretation; the lawn edge, about 1 m',evidence=picasso_wall['evidence'],points=picasso_wall['points'])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
