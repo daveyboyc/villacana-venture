@@ -22,13 +22,15 @@ def photo(path: Path, lat: float, lon: float, taken: str = '2026:11:05 10:00:00'
 
 
 class StubDrive:
-    def __init__(self, files: dict[str, Path]):
+    def __init__(self, files: dict[str, Path], extra_entries: list[dict] | None = None):
         self.files = files  # drive id -> local fixture
+        self.extra_entries = extra_entries or []
 
     def list(self):
         for i, (fid, p) in enumerate(self.files.items()):
             yield {'id': fid, 'name': p.name, 'createdTime': f'2026-11-05T10:00:0{i}Z'}
         yield {'id': 'doc1', 'name': 'notes.txt', 'createdTime': '2026-11-05T09:00:00Z'}
+        yield from self.extra_entries
 
     def download(self, file_id, dest):
         dest.write_bytes(self.files[file_id].read_bytes())
@@ -45,13 +47,40 @@ class DriveIntake(unittest.TestCase):
         photo(p, **kw)
         return p
 
+    def test_parse_folder_id(self):
+        self.assertEqual(drive_intake.parse_folder_id(' 1y7ry8rugG_qdLqrmMuBfJdJv6VJPgELQ \n'),
+                         '1y7ry8rugG_qdLqrmMuBfJdJv6VJPgELQ')
+        self.assertEqual(
+            drive_intake.parse_folder_id('https://drive.google.com/drive/folders/1y7ry8rugG_qdLqrmMuBfJdJv6VJPgELQ?usp=sharing'),
+            '1y7ry8rugG_qdLqrmMuBfJdJv6VJPgELQ',
+        )
+
     def test_find_new_skips_known_ids_non_photos_and_repeats(self):
-        manifest = [{'file': 'IMG_1.jpg', 'originalUrl': 'https://drive.google.com/file/d/known/view?usp=drivesdk'}]
+        manifest = [{'file': 'IMG_1.jpg', 'originalUrl': 'https://drive.google.com/file/d/known/view?usp=drivesdk'},
+                    {'file': 'IMG_3.jpg'}]
+        annotations = {'IMG_3.HEIC': {'originalUrl': 'https://drive.google.com/file/d/ann_known/view?usp=drivesdk'}}
         listing = [{'id': 'known', 'name': 'IMG_1.HEIC', 'createdTime': 'a'},
+                   {'id': 'ann_known', 'name': 'IMG_3.HEIC', 'createdTime': 'a'},
+                   {'id': 'folder1', 'name': 'album.jpg', 'createdTime': 'a',
+                    'mimeType': 'application/vnd.google-apps.folder'},
                    {'id': 'n1', 'name': 'IMG_2.HEIC', 'createdTime': 'b'},
                    {'id': 'n1', 'name': 'IMG_2.HEIC', 'createdTime': 'b'},
                    {'id': 'd', 'name': 'notes.txt', 'createdTime': 'c'}]
-        self.assertEqual([f['id'] for f in drive_intake.find_new(listing, manifest)], ['n1'])
+        self.assertEqual([f['id'] for f in drive_intake.find_new(listing, manifest, annotations)], ['n1'])
+
+    def test_same_photo_handles_moved_pins_and_missing_focal35(self):
+        existing = {
+            'file': 'IMG_2252.jpg',
+            'x': -159.5, 'z': 61.3,  # moved pin
+            'gps': {'x': -161.2, 'z': 58.4, 'accuracy': 13.3},  # original GPS retained
+            'heading': 61,
+            'taken': '2026-10-12',
+            # no focal35 on older manifest entry
+        }
+        fresh = {'file': 'IMG_2252.jpg', 'x': -161.2, 'z': 58.4, 'heading': 61, 'taken': '2026-10-12', 'focal35': 26.0}
+        self.assertTrue(drive_intake.same_photo(fresh, existing))
+        other = {**fresh, 'taken': '2026-11-16'}
+        self.assertFalse(drive_intake.same_photo(other, existing))
 
     def test_new_reupload_and_name_clash(self):
         existing = self.make('IMG_9001.jpg', lat=36.4552, lon=-5.0500)
@@ -82,6 +111,29 @@ class DriveIntake(unittest.TestCase):
         entries = index_photos.index(self.tmp / 'work', out, notes_ann)
         self.assertEqual(sorted(e['file'] for e in entries), ['IMG_9001-clash2.jpg', 'IMG_9002.jpg'])
         self.assertTrue(all('x' in e and 'z' in e for e in entries))
+
+    def test_backfill_missing_url_and_same_batch_stem_collisions(self):
+        old_file = self.make('IMG_2182.jpg', lat=36.4552, lon=-5.0500)
+        old_meta = index_photos.metadata(old_file)
+        manifest = [old_meta]  # no originalUrl on older manifest entry
+        (self.tmp / 'batch_dup').mkdir()
+        (self.tmp / 'batch_clash').mkdir()
+        p1 = self.make('IMG_2830.jpg', lat=36.4554, lon=-5.0502)
+        p2 = self.tmp / 'batch_dup' / 'IMG_2830.jpeg'
+        photo(p2, lat=36.4554, lon=-5.0502)  # same shot uploaded twice in one batch
+        p3 = self.tmp / 'batch_clash' / 'IMG_2830.jpg'
+        photo(p3, lat=36.4560, lon=-5.0510, taken='2026:11:16 12:00:00')  # different shot, same name in one batch
+        files = {'old_drive_id': old_file, 'id1111aa': p1, 'id2222bb': p2, 'id3333cc': p3}
+        ann = {'IMG_2182.jpg': {'title': 'Lane view'}}
+        staged, notes = drive_intake.intake(StubDrive(files), manifest, self.tmp / 'work', ann)
+        self.assertEqual(sorted(staged), ['IMG_2830-id3333.jpg', 'IMG_2830.jpg'])
+        self.assertTrue(manifest[0]['originalUrl'].endswith('/d/old_drive_id/view?usp=drivesdk'))
+        self.assertTrue(ann['IMG_2182.jpg']['originalUrl'].endswith('/d/old_drive_id/view?usp=drivesdk'))
+        self.assertEqual(ann['IMG_2182.jpg']['title'], 'Lane view')
+        self.assertEqual(sum('re-upload' in n for n in notes), 2)
+        out = self.tmp / 'out'
+        entries = index_photos.index(self.tmp / 'work', out, ann)
+        self.assertEqual(sorted(e['file'] for e in entries), ['IMG_2830-id3333.jpg', 'IMG_2830.jpg'])
 
 
 if __name__ == '__main__':

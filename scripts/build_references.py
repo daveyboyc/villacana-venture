@@ -147,7 +147,8 @@ def build(reference:Path):
         if tag.get('viewpoint') not in (None,*VIEWPOINTS):problems.append(f'{key}: unknown viewpoint {tag["viewpoint"]!r}')
         if 'looksAt' in tag and not (isinstance(tag['looksAt'],list) and len(tag['looksAt'])==2 and all(isinstance(v,(int,float)) for v in tag['looksAt'])):problems.append(f'{key}: looksAt must be [x, z] in map metres')
     for e in catalog:
-        if not e['shows']:problems.append(f'{e["id"]}: no area (tag it in data/reference_tags.json)')
+        if not e['shows'] and (e['kind']!='phone-photo' or e['id'] in tags):
+            problems.append(f'{e["id"]}: no area (tag it in data/reference_tags.json)')
     return spec,catalog,problems
 
 ALTITUDE_SPLIT=9.0
@@ -590,7 +591,9 @@ def main():
          'pathNetwork':path_totals,'modelLoop':{'standard':loop.get('standard'),'report':'public/photo-loop.json'},'modelState':inventory,'nodes':nodes,'edges':edges},indent=1,ensure_ascii=False)+'\n')
     for t in spec['topics']:
         (refs/'topics'/f'{t["id"]}.md').write_text(topic_brief(t,[e for e in catalog if t['id'] in e['useFor']],spec))
-    (refs/'README.md').write_text(index(spec,catalog,problems,queue,checks)+'\nContinuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).\n\nPath-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.\n')
+    tags={k:v for k,v in load(ROOT/'data/reference_tags.json',{}).items() if k!='about'}
+    untagged_no_area=[f'{e["id"]}: no area yet (untagged phone photo; tag it in data/reference_tags.json)' for e in catalog if not e['shows'] and e['kind']=='phone-photo' and e['id'] not in tags]
+    (refs/'README.md').write_text(index(spec,catalog,problems+untagged_no_area,queue,checks)+'\nContinuous build/validation work and scoped evidence requests: [LOOP.md](LOOP.md).\n\nPath-network baseline and per-area gaps: [PATH_NETWORK.md](PATH_NETWORK.md). Canonical inspector: `/?view=map&network=1`.\n')
     (ROOT/'public/reference-index.json').write_text(json.dumps(public_reference_index(catalog,features,checks,spec),indent=1,ensure_ascii=False)+'\n')
     if args.sheets:sheets(spec,catalog,args.reference)
     import build_confidence;problems+=build_confidence.write()  # public/confidence.json: the 'Sure / unsure' overlay
@@ -598,5 +601,6 @@ def main():
     reviewed=sum(e['areasBasis']=='reviewed' for e in catalog)
     print(f'{len(catalog)} references, {reviewed} reviewed, {len(problems)} problems')
     for p in problems:print(' -',p)
+    for w in untagged_no_area:print(' - warning:',w)
     if args.check and problems:sys.exit(1)
 if __name__=='__main__':main()
