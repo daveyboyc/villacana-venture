@@ -32,8 +32,8 @@ The clover-shaped north pool, its lawn ring, crazy-paving path, curved garden wa
 
 ## Coverage
 
-Layout: 14, Levels and slopes: 1, Facades and roofs: 12, Materials: 8, Planting: 7, Signs: 1, Views: 5
-19 reviewed, 0 suggested only by camera position.
+Layout: 15, Levels and slopes: 1, Facades and roofs: 13, Materials: 9, Planting: 8, Signs: 1, Views: 5
+20 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -325,5 +325,6 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | `reference/photos/06-north-pool-looking-north-east-mountains.jpg` | upper-floor | facades, view | North pool looking north-east: terraces, mountains behind |
 | [IMG_2363.jpg](../../public/photos-ref/IMG_2363.jpg) | roof | layout, planting, materials | Roof by Elena: looking down the lane to the north pool lawn gate **Looks at:** The arched gateway at the north end of Elena. **Note:** Overhead view of where the Elena north lane meets the north pool lawn gate. Audit 2026-10-18: shallow garden arch directly onto crazy paving/lawn, with timber patio door beside it. Different from the covered-building arch and private 36/34 entry in IMG_2202/2361. 26 October patio recheck: full-height lane privacy wall and timber door, gateway return meeting house, one visible cross-patio divider, and plain square first-patio tiles. Circular decorated object is a table, not a floor inset. Coordinates/heights remain model estimates; hidden joins and other partitions unresolved. _Used by: elena_north.json:elena-north-gateway, elena_north.json:elena-north-patio-east, elena_north.json:elena-north-patio-divider, elena_north.json:elena-north-planter-west, elena_north.json:elena-north-visible-patio-floor._ |
 | [IMG_2688.jpg](../../public/photos-ref/IMG_2688.jpg) | ground | layout, facades, materials, signage | Calle Elena north: arched recessed entrance and lantern, lane to the north pool gateway **Note:** Distant arch is probably the Elena gateway to the north pool lawn; the pin has +/-2.5 m and sits at the covered-walkway mouth. |
+| [IMG_2968.jpg](../../public/photos-ref/IMG_2968.jpg) | ground | layout, materials, planting, facades | Calle Elena north: terracotta path between hedged beds toward the north pool gate **Looks at:** Calle Elena north looking north-north-west along the tiled path to the arch at the north pool end. |
 | [IMG_2972.jpg](../../public/photos-ref/IMG_2972.jpg) | ground | layout, materials, planting, facades | Calle Elena north looking north-north-west past spider-plant bed to north pool gate **Looks at:** Calle Elena north looking north-north-west past the spider-plant bed and pollarded tree toward the north pool arched gateway. |
 | [IMG_2974.jpg](../../public/photos-ref/IMG_2974.jpg) | ground | layout, facades, materials | Calle Elena north from walkway mouth looking north-north-west to north pool gate **Looks at:** Calle Elena north from the covered walkway mouth looking north-north-west toward the north pool arched gateway. |

@@ -358,6 +358,11 @@
      "station": null
     },
     {
+     "photo": "IMG_2968.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2972.jpg",
      "state": "needs-solving",
      "station": null
@@ -790,6 +795,46 @@
      "station": null
     },
     {
+     "photo": "IMG_2977.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2978.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2979.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2980.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2981.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2982.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2983.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2984.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "ref:web/south-pool-01-looking-north-palm.jpg",
      "state": "needs-solving",
      "station": null
@@ -1213,10 +1258,12 @@
      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
      "photoRequest": "elena-east-patios-inside",
      "status": "open",
-     "sources": [],
+     "sources": [
+      "IMG_2973.jpg"
+     ],
      "features": [],
      "tasks": [],
-     "state": "open"
+     "state": "received"
     }
    ],
    "cameras": [
@@ -1736,6 +1783,21 @@
      "station": null
     },
     {
+     "photo": "IMG_2967.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2968.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2969.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2970.jpg",
      "state": "needs-solving",
      "station": null
@@ -1747,6 +1809,11 @@
     },
     {
      "photo": "IMG_2972.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2973.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -2237,6 +2304,11 @@
      "photo": "IMG_2966.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_2967.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -2550,6 +2622,41 @@
     },
     {
      "photo": "IMG_2704.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2983.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2984.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2985.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2986.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2987.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2988.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2989.jpg",
      "state": "needs-solving",
      "station": null
     }
@@ -4015,6 +4122,41 @@
      "photo": "IMG_2823.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_2978.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2979.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2980.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2981.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2982.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2983.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2984.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -4416,6 +4558,16 @@
      "photo": "IMG_2770.jpg",
      "state": "needs-solving",
      "station": null
+    },
+    {
+     "photo": "IMG_2990.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2991.jpg",
+     "state": "needs-solving",
+     "station": null
     }
    ],
    "readyTasks": [
@@ -4753,6 +4905,16 @@
     },
     {
      "photo": "IMG_2822.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2989.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2990.jpg",
      "state": "needs-solving",
      "station": null
     },
@@ -5617,10 +5779,12 @@
      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
      "photoRequest": "elena-east-patios-inside",
      "status": "open",
-     "sources": [],
+     "sources": [
+      "IMG_2973.jpg"
+     ],
      "features": [],
      "tasks": [],
-     "state": "open"
+     "state": "received"
     }
    ],
    "cameras": [
@@ -8010,6 +8174,21 @@
      "station": null
     },
     {
+     "photo": "IMG_2967.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2968.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2969.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2970.jpg",
      "state": "needs-solving",
      "station": null
@@ -8025,12 +8204,92 @@
      "station": null
     },
     {
+     "photo": "IMG_2973.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
      "photo": "IMG_2974.jpg",
      "state": "needs-solving",
      "station": null
     },
     {
      "photo": "IMG_2975.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2977.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2978.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2979.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2980.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2981.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2982.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2983.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2984.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2985.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2986.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2987.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2988.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2989.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2990.jpg",
+     "state": "needs-solving",
+     "station": null
+    },
+    {
+     "photo": "IMG_2991.jpg",
      "state": "needs-solving",
      "station": null
     },

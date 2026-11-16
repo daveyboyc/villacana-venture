@@ -160,9 +160,9 @@
     }
    },
    "photos": {
-    "count": 15,
-    "tagged": 15,
-    "placed": 9,
+    "count": 16,
+    "tagged": 16,
+    "placed": 10,
     "checks": {
      "matches": 4,
      "differs": 9,
@@ -244,7 +244,7 @@
    "status": [
     "Ground: 85% of open ground within 0.25 m of the laser survey.",
     "Footprints: 92% stand on surveyed roof; best fit moves them 1.8 m.",
-    "Photos: 15, 9 placed; 3 cameras solved, 1 station holding.",
+    "Photos: 16, 10 placed; 3 cameras solved, 1 station holding.",
     "Facades: 26 of 115 kit parts traced from photos.",
     "How sure: 24 photographed, 21 estimated, 1 inferred, 5 known gaps.",
     "Placement: 0 of 46 features verified, 9 open discrepancies.",
@@ -551,9 +551,9 @@
     }
    },
    "photos": {
-    "count": 16,
-    "tagged": 16,
-    "placed": 13,
+    "count": 24,
+    "tagged": 24,
+    "placed": 21,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -593,7 +593,7 @@
    "status": [
     "Ground: 100% of open ground within 0.25 m of the laser survey.",
     "Footprints: 98% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 16, 13 placed; no camera solved.",
+    "Photos: 24, 21 placed; no camera solved.",
     "Facades: 0 of 29 kit parts traced from photos.",
     "How sure: 0 photographed, 2 estimated, 0 inferred.",
     "Placement: 0 of 2 features verified.",
@@ -1102,9 +1102,9 @@
     }
    },
    "photos": {
-    "count": 108,
-    "tagged": 108,
-    "placed": 108,
+    "count": 112,
+    "tagged": 112,
+    "placed": 112,
     "checks": {
      "matches": 4,
      "differs": 2,
@@ -1160,7 +1160,7 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 97% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 108, 108 placed; 3 cameras solved, none holding.",
+    "Photos: 112, 112 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 75 kit parts traced from photos.",
     "How sure: 12 photographed, 21 estimated, 3 inferred, 5 known gaps.",
     "Placement: 0 of 37 features verified, 2 open discrepancies.",
@@ -1225,17 +1225,19 @@
       "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
       "photoRequest": "elena-east-patios-inside",
       "status": "open",
-      "sources": [],
+      "sources": [
+       "IMG_2973.jpg"
+      ],
       "features": [],
       "tasks": [],
-      "state": "open"
+      "state": "received"
      }
     ],
     "readyTasks": 6
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 3 spots",
+    "headline": "Photos needed: 2 spots",
     "requests": [
      {
       "id": "elena-25-far-end",
@@ -1282,8 +1284,10 @@
       "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
       "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
       "priority": 2,
-      "state": "open",
-      "photos": []
+      "state": "received",
+      "photos": [
+       "IMG_2973.jpg"
+      ]
      },
      {
       "id": "elena-roof-station",
@@ -1340,9 +1344,9 @@
     }
    },
    "photos": {
-    "count": 73,
-    "tagged": 73,
-    "placed": 73,
+    "count": 74,
+    "tagged": 74,
+    "placed": 74,
     "checks": {
      "matches": 0,
      "differs": 0,
@@ -1388,7 +1392,7 @@
    "status": [
     "Ground: 99% of open ground within 0.25 m of the laser survey; streets within 0.39 m.",
     "Footprints: 96% stand on surveyed roof; best fit moves them 1.2 m.",
-    "Photos: 73, 73 placed; 3 cameras solved, none holding.",
+    "Photos: 74, 74 placed; 3 cameras solved, none holding.",
     "Facades: 0 of 149 kit parts traced from photos.",
     "How sure: 12 photographed, 11 estimated, 2 inferred, 3 known gaps.",
     "Placement: 0 of 25 features verified.",
@@ -1540,9 +1544,9 @@
     }
    },
    "photos": {
-    "count": 53,
-    "tagged": 53,
-    "placed": 53,
+    "count": 60,
+    "tagged": 60,
+    "placed": 60,
     "checks": {
      "matches": 4,
      "differs": 9,
@@ -1615,7 +1619,7 @@
    "status": [
     "Ground: 93% of open ground within 0.25 m of the laser survey; streets within 0.72 m.",
     "Footprints: 95% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 53, 53 placed; no camera solved.",
+    "Photos: 60, 60 placed; no camera solved.",
     "Facades: 0 of 130 kit parts traced from photos.",
     "How sure: 13 photographed, 6 estimated, 1 inferred, 1 known gap.",
     "Placement: 0 of 20 features verified, 8 open discrepancies.",
@@ -2094,9 +2098,9 @@
     }
    },
    "photos": {
-    "count": 151,
-    "tagged": 151,
-    "placed": 151,
+    "count": 158,
+    "tagged": 158,
+    "placed": 158,
     "checks": {
      "matches": 26,
      "differs": 14,
@@ -2153,7 +2157,7 @@
    "status": [
     "Ground: 98% of open ground within 0.25 m of the laser survey; streets within 0.25 m.",
     "Footprints: 86% stand on surveyed roof; best fit moves them 1.6 m.",
-    "Photos: 151, 151 placed; no camera solved.",
+    "Photos: 158, 158 placed; no camera solved.",
     "Facades: 0 of 599 kit parts traced from photos.",
     "How sure: 1 photographed, 16 estimated, 4 inferred, 3 known gaps.",
     "Placement: 0 of 21 features verified, 4 open discrepancies.",
@@ -2614,9 +2618,9 @@
     }
    },
    "photos": {
-    "count": 59,
-    "tagged": 59,
-    "placed": 56,
+    "count": 61,
+    "tagged": 61,
+    "placed": 58,
     "checks": {
      "matches": 1,
      "differs": 4,
@@ -2673,7 +2677,7 @@
    "status": [
     "Ground: 41% of open ground within 0.25 m of the laser survey.",
     "Footprints: one house, too few to fit against the survey.",
-    "Photos: 59, 56 placed; no camera solved.",
+    "Photos: 61, 58 placed; no camera solved.",
     "How sure: 0 photographed, 10 estimated, 1 inferred, 6 known gaps.",
     "Placement: 0 of 11 features verified, 4 open discrepancies.",
     "Model loop: 0 tracked findings accepted, 0 still open; 3 evidence requests. This is not whole-area acceptance."
@@ -2819,9 +2823,9 @@
     }
    },
    "photos": {
-    "count": 59,
-    "tagged": 59,
-    "placed": 58,
+    "count": 61,
+    "tagged": 61,
+    "placed": 60,
     "checks": {
      "matches": 5,
      "differs": 7,
@@ -2861,7 +2865,7 @@
    "status": [
     "Ground: 78% of open ground within 0.25 m of the laser survey.",
     "Footprints: 75% stand on surveyed roof; best fit moves them 1.5 m.",
-    "Photos: 59, 58 placed; no camera solved.",
+    "Photos: 61, 60 placed; no camera solved.",
     "Facades: 0 of 111 kit parts traced from photos.",
     "How sure: 5 photographed, 12 estimated, 0 inferred, 3 known gaps.",
     "Placement: 0 of 17 features verified.",
@@ -2968,9 +2972,9 @@
     }
    },
    "photos": {
-    "count": 498,
-    "tagged": 498,
-    "placed": 479,
+    "count": 517,
+    "tagged": 517,
+    "placed": 498,
     "checks": {
      "matches": 55,
      "differs": 42,
@@ -3219,7 +3223,7 @@
    "status": [
     "Ground: 94% of open ground within 0.25 m of the laser survey; streets within 1.92 m.",
     "Footprints: 83% stand on surveyed roof; best fit moves them 1.3 m.",
-    "Photos: 498, 479 placed; 7 cameras solved, 1 station holding.",
+    "Photos: 517, 498 placed; 7 cameras solved, 1 station holding.",
     "Facades: 30 of 2510 kit parts traced from photos.",
     "How sure: 77 photographed, 150 estimated, 14 inferred, 33 known gaps.",
     "Placement: 0 of 473 features verified, 49 open discrepancies.",
@@ -3837,17 +3841,19 @@
       "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
       "photoRequest": "elena-east-patios-inside",
       "status": "open",
-      "sources": [],
+      "sources": [
+       "IMG_2973.jpg"
+      ],
       "features": [],
       "tasks": [],
-      "state": "open"
+      "state": "received"
      }
     ],
     "readyTasks": 40
    },
    "light": {
     "colour": "red",
-    "headline": "Photos needed: 34 spots",
+    "headline": "Photos needed: 33 spots",
     "requests": [
      {
       "id": "alberto",
@@ -4117,22 +4123,6 @@
       ],
       "ask": "From about 8 m back on Calle Elena south, the arch of the CALLE ELENA 25 passage with the doors either side in frame.",
       "why": "task elena-25-passage: register the portal on the lane",
-      "priority": 2,
-      "state": "open",
-      "photos": []
-     },
-     {
-      "id": "elena-east-patios-inside",
-      "at": [
-       -141.0,
-       40.0
-      ],
-      "look": [
-       -145.0,
-       40.0
-      ],
-      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
-      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
       "priority": 2,
       "state": "open",
       "photos": []
@@ -4451,6 +4441,24 @@
       "state": "received",
       "photos": [
        "IMG_2538.jpg"
+      ]
+     },
+     {
+      "id": "elena-east-patios-inside",
+      "at": [
+       -141.0,
+       40.0
+      ],
+      "look": [
+       -145.0,
+       40.0
+      ],
+      "ask": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
+      "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
+      "priority": 2,
+      "state": "received",
+      "photos": [
+       "IMG_2973.jpg"
       ]
      },
      {

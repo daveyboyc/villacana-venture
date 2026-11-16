@@ -43,8 +43,8 @@ The lanes between the middle pool and the beach.
 
 ## Coverage
 
-Layout: 128, Levels and slopes: 30, Facades and roofs: 78, Materials: 116, Planting: 81, Signs: 23, Views: 15
-154 reviewed, 0 suggested only by camera position.
+Layout: 135, Levels and slopes: 31, Facades and roofs: 84, Materials: 123, Planting: 85, Signs: 23, Views: 15
+161 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -431,8 +431,15 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2607.jpg](../../public/photos-ref/IMG_2607.jpg) | ground | view, layout, planting | From the Barraka terrace over rattan lounge seating and the paseo **Looks at:** Roped rattan lounge set on the beach-side verge. **Note:** Pin (+/-18.8 m) is on the lawn but the photo is taken from under the Barraka terrace awning; the pin looks displaced several metres from the real camera. looksAt is the seating centre of data/barraka_frontage.json (bearings of IMG_2604 and IMG_2631), by eye; the pin is not used. **Compass:** the subject is 52° from the phone heading; trust looksAt, not the heading. _Used by: barraka_frontage.json:barraka-lounge-garden._ |
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2557.jpg](../../public/photos-ref/IMG_2557.jpg) | ground | layout, materials, signage, facades | Arched covered passage with blue-and-white tiled floor and a 'CALLE MART...' sign **Note:** Street name is cut off, so which lane this is cannot be established. Pin altitude 9.3 m reads 'above ground', but the picture is clearly at floor level (GPS height noise). |
+| [IMG_2978.jpg](../../public/photos-ref/IMG_2978.jpg) | ground | layout, materials, facades, planting | Arched green iron gate from the south pool lawn into the Calle de Jorge arcade **Looks at:** lawn-side gate of the Calle de Jorge 39-67 arcade (south pool to Pintor Dalí passage). |
+| [IMG_2980.jpg](../../public/photos-ref/IMG_2980.jpg) | ground | layout, materials, facades, planting | Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel **Looks at:** open middle bay of the Calle de Jorge 39-67 arcade. |
+| [IMG_2981.jpg](../../public/photos-ref/IMG_2981.jpg) | ground | facades, materials, planting, layout | Side court off the arcade: door 57, barred windows and planters **Looks at:** house 57 front on the side court off the arcade's open bay. |
+| [IMG_2982.jpg](../../public/photos-ref/IMG_2982.jpg) | ground | layout, materials, facades, planting | Tiled side lane north from the arcade between houses 55 and 57 **Looks at:** tiled side lane running north-north-west from the arcade's open bay. **Note:** New: a tiled side lane leaves the open middle bay of the arcade toward Calle Jorge/Silvia. Not in data/south_pool_passage.json; where it runs is not measured. |
 | [IMG_2702.jpg](../../public/photos-ref/IMG_2702.jpg) | ground | layout, materials, signage | Narrow lane between walls with a street plaque and slot drain **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2791.jpg](../../public/photos-ref/IMG_2791.jpg) | ground | layout, materials, facades | Tiled lane with grille windows and a raised planter |
+| [IMG_2979.jpg](../../public/photos-ref/IMG_2979.jpg) | ground | layout, materials, facades | Through the open gate: the tiled arcade with lantern, mat and arches **Looks at:** Calle de Jorge 39-67 arcade from the lawn-side gate looking toward Pintor Dalí. |
+| [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. |
+| [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. |
 | `reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2243.jpg](../../public/photos-ref/IMG_2243.jpg) | ground | layout | Tiled lane beside a lawn to an arched gateway |
 | `reference/apple-maps/04-top-down-south-half.png` | aerial | layout | Apple Maps top-down: southern half, middle and south pools, tiled-roof block |

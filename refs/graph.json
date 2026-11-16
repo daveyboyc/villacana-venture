@@ -7,8 +7,8 @@
   "sourceObservations": 59,
   "sourcePixelTraces": 57,
   "sourcePixelLocators": 32,
-  "sources": 513,
-  "uninspectedSources": 443,
+  "sources": 532,
+  "uninspectedSources": 462,
   "routes": 24,
   "segments": 181,
   "tracedSides": 0,
@@ -39178,6 +39178,27 @@
    "viewpoint": "ground"
   },
   {
+   "id": "ref:IMG_2967.jpg",
+   "kind": "phone-photo",
+   "name": "Fan-palm corner planter under the CALLE DE ELENA plaque, terracotta path running west",
+   "path": "public/photos-ref/IMG_2967.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2968.jpg",
+   "kind": "phone-photo",
+   "name": "Calle Elena north: terracotta path between hedged beds toward the north pool gate",
+   "path": "public/photos-ref/IMG_2968.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2969.jpg",
+   "kind": "phone-photo",
+   "name": "Old trained climber on a white wall with a stone shelf, Calle Elena",
+   "path": "public/photos-ref/IMG_2969.jpg",
+   "viewpoint": "ground"
+  },
+  {
    "id": "ref:IMG_2970.jpg",
    "kind": "phone-photo",
    "name": "Calle Elena north: projecting barred window with moulded cornice on west facade",
@@ -39199,6 +39220,13 @@
    "viewpoint": "ground"
   },
   {
+   "id": "ref:IMG_2973.jpg",
+   "kind": "phone-photo",
+   "name": "Clivia and monstera bed under the bougainvillea-draped Elena garden wall",
+   "path": "public/photos-ref/IMG_2973.jpg",
+   "viewpoint": "ground"
+  },
+  {
    "id": "ref:IMG_2974.jpg",
    "kind": "phone-photo",
    "name": "Calle Elena north from walkway mouth looking north-north-west to north pool gate",
@@ -39210,6 +39238,111 @@
    "kind": "phone-photo",
    "name": "Inside the Calle Elena 18 36 covered walkway looking toward the twin iron gates",
    "path": "public/photos-ref/IMG_2975.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2977.jpg",
+   "kind": "phone-photo",
+   "name": "Stepped crazy-paving path and white kerb beside the south pool lawn",
+   "path": "public/photos-ref/IMG_2977.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2978.jpg",
+   "kind": "phone-photo",
+   "name": "Arched green iron gate from the south pool lawn into the Calle de Jorge arcade",
+   "path": "public/photos-ref/IMG_2978.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2979.jpg",
+   "kind": "phone-photo",
+   "name": "Through the open gate: the tiled arcade with lantern, mat and arches",
+   "path": "public/photos-ref/IMG_2979.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2980.jpg",
+   "kind": "phone-photo",
+   "name": "Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel",
+   "path": "public/photos-ref/IMG_2980.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2981.jpg",
+   "kind": "phone-photo",
+   "name": "Side court off the arcade: door 57, barred windows and planters",
+   "path": "public/photos-ref/IMG_2981.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2982.jpg",
+   "kind": "phone-photo",
+   "name": "Tiled side lane north from the arcade between houses 55 and 57",
+   "path": "public/photos-ref/IMG_2982.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2983.jpg",
+   "kind": "phone-photo",
+   "name": "Arcade west half: covered tiled walk to the arch onto Pintor Dalí",
+   "path": "public/photos-ref/IMG_2983.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2984.jpg",
+   "kind": "phone-photo",
+   "name": "West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí",
+   "path": "public/photos-ref/IMG_2984.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2985.jpg",
+   "kind": "phone-photo",
+   "name": "Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí",
+   "path": "public/photos-ref/IMG_2985.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2986.jpg",
+   "kind": "phone-photo",
+   "name": "Grooved concrete threshold between the flagstone ramp and the Dalí asphalt",
+   "path": "public/photos-ref/IMG_2986.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2987.jpg",
+   "kind": "phone-photo",
+   "name": "Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond",
+   "path": "public/photos-ref/IMG_2987.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2988.jpg",
+   "kind": "phone-photo",
+   "name": "Ivy hedge and white kerb along the west side of Pintor Dalí",
+   "path": "public/photos-ref/IMG_2988.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2989.jpg",
+   "kind": "phone-photo",
+   "name": "Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea",
+   "path": "public/photos-ref/IMG_2989.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2990.jpg",
+   "kind": "phone-photo",
+   "name": "From the beach grass west of the paseo end, looking along the paseo toward La Concha",
+   "path": "public/photos-ref/IMG_2990.jpg",
+   "viewpoint": "ground"
+  },
+  {
+   "id": "ref:IMG_2991.jpg",
+   "kind": "phone-photo",
+   "name": "Beach and sea looking east-north-east along the coast toward Marbella",
+   "path": "public/photos-ref/IMG_2991.jpg",
    "viewpoint": "ground"
   },
   {
@@ -51988,7 +52121,7 @@
    "kind": "photo-request",
    "label": "From the patios east of the Elena garden wall (or a first-floor balcony of the houses there), photos looking along the patios: the walls dividing each house's patio, their doors, and the cane pergola. If you can't go in, one photo from the balcony above each patio. Include where the pergola meets the new dividing wall at the garden wall.",
    "area": "elena",
-   "state": "open",
+   "state": "received",
    "at": [
     -141.0,
     40.0
@@ -102290,6 +102423,47 @@
    ]
   },
   {
+   "id": "path-source:IMG_2967.jpg",
+   "kind": "path-source-accounting",
+   "name": "Fan-palm corner planter under the CALLE DE ELENA plaque, terracotta path running west",
+   "sourceId": "IMG_2967.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2968.jpg",
+   "kind": "path-source-accounting",
+   "name": "Calle Elena north: terracotta path between hedged beds toward the north pool gate",
+   "sourceId": "IMG_2968.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2969.jpg",
+   "kind": "path-source-accounting",
+   "name": "Old trained climber on a white wall with a stone shelf, Calle Elena",
+   "sourceId": "IMG_2969.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
    "id": "path-source:IMG_2970.jpg",
    "kind": "path-source-accounting",
    "name": "Calle Elena north: projecting barred window with moulded cornice on west facade",
@@ -102330,6 +102504,19 @@
    ]
   },
   {
+   "id": "path-source:IMG_2973.jpg",
+   "kind": "path-source-accounting",
+   "name": "Clivia and monstera bed under the bougainvillea-draped Elena garden wall",
+   "sourceId": "IMG_2973.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
    "id": "path-source:IMG_2974.jpg",
    "kind": "path-source-accounting",
    "name": "Calle Elena north from walkway mouth looking north-north-west to north pool gate",
@@ -102354,6 +102541,212 @@
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
     "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2977.jpg",
+   "kind": "path-source-accounting",
+   "name": "Stepped crazy-paving path and white kerb beside the south pool lawn",
+   "sourceId": "IMG_2977.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2978.jpg",
+   "kind": "path-source-accounting",
+   "name": "Arched green iron gate from the south pool lawn into the Calle de Jorge arcade",
+   "sourceId": "IMG_2978.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2979.jpg",
+   "kind": "path-source-accounting",
+   "name": "Through the open gate: the tiled arcade with lantern, mat and arches",
+   "sourceId": "IMG_2979.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2980.jpg",
+   "kind": "path-source-accounting",
+   "name": "Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel",
+   "sourceId": "IMG_2980.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2981.jpg",
+   "kind": "path-source-accounting",
+   "name": "Side court off the arcade: door 57, barred windows and planters",
+   "sourceId": "IMG_2981.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2982.jpg",
+   "kind": "path-source-accounting",
+   "name": "Tiled side lane north from the arcade between houses 55 and 57",
+   "sourceId": "IMG_2982.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2983.jpg",
+   "kind": "path-source-accounting",
+   "name": "Arcade west half: covered tiled walk to the arch onto Pintor Dalí",
+   "sourceId": "IMG_2983.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2984.jpg",
+   "kind": "path-source-accounting",
+   "name": "West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí",
+   "sourceId": "IMG_2984.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "dali",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2985.jpg",
+   "kind": "path-source-accounting",
+   "name": "Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí",
+   "sourceId": "IMG_2985.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2986.jpg",
+   "kind": "path-source-accounting",
+   "name": "Grooved concrete threshold between the flagstone ramp and the Dalí asphalt",
+   "sourceId": "IMG_2986.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2987.jpg",
+   "kind": "path-source-accounting",
+   "name": "Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond",
+   "sourceId": "IMG_2987.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2988.jpg",
+   "kind": "path-source-accounting",
+   "name": "Ivy hedge and white kerb along the west side of Pintor Dalí",
+   "sourceId": "IMG_2988.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2989.jpg",
+   "kind": "path-source-accounting",
+   "name": "Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea",
+   "sourceId": "IMG_2989.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2990.jpg",
+   "kind": "path-source-accounting",
+   "name": "From the beach grass west of the paseo end, looking along the paseo toward La Concha",
+   "sourceId": "IMG_2990.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2991.jpg",
+   "kind": "path-source-accounting",
+   "name": "Beach and sea looking east-north-east along the coast toward Marbella",
+   "sourceId": "IMG_2991.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach"
    ]
   },
   {
@@ -103427,8 +103820,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 19,
-   "uninspectedSources": 19,
+   "sourceCount": 20,
+   "uninspectedSources": 20,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -103477,8 +103870,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 18,
-   "uninspectedSources": 18,
+   "sourceCount": 26,
+   "uninspectedSources": 26,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -103527,8 +103920,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 108,
-   "uninspectedSources": 69,
+   "sourceCount": 112,
+   "uninspectedSources": 73,
    "routes": [
     "path-route:elena-north",
     "path-route:elena-south"
@@ -103668,9 +104061,13 @@
      "IMG_2813.jpg",
      "IMG_2965.jpg",
      "IMG_2966.jpg",
+     "IMG_2967.jpg",
+     "IMG_2968.jpg",
+     "IMG_2969.jpg",
      "IMG_2970.jpg",
      "IMG_2971.jpg",
      "IMG_2972.jpg",
+     "IMG_2973.jpg",
      "IMG_2974.jpg",
      "IMG_2975.jpg"
     ],
@@ -103823,8 +104220,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 73,
-   "uninspectedSources": 45,
+   "sourceCount": 74,
+   "uninspectedSources": 46,
    "routes": [
     "path-route:cervantes"
    ],
@@ -103933,7 +104330,8 @@
      "IMG_2800.jpg",
      "IMG_2801.jpg",
      "IMG_2965.jpg",
-     "IMG_2966.jpg"
+     "IMG_2966.jpg",
+     "IMG_2967.jpg"
     ],
     "observations": [
      "cervantes:W01",
@@ -104046,8 +104444,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 53,
-   "uninspectedSources": 53,
+   "sourceCount": 60,
+   "uninspectedSources": 60,
    "routes": [
     "path-route:dali",
     "path-route:dali-shared-footpath",
@@ -104168,8 +104566,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 154,
-   "uninspectedSources": 154,
+   "sourceCount": 161,
+   "uninspectedSources": 161,
    "routes": [
     "path-route:patricia",
     "path-route:silvia-north",
@@ -104203,8 +104601,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 60,
-   "uninspectedSources": 60,
+   "sourceCount": 62,
+   "uninspectedSources": 62,
    "routes": [
     "path-route:barraka-boardwalk"
    ],
@@ -104230,8 +104628,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 62,
-   "uninspectedSources": 62,
+   "sourceCount": 64,
+   "uninspectedSources": 64,
    "routes": [
     "path-route:paseo-west",
     "path-route:paseo",
@@ -104991,10 +105389,12 @@
    "why": "gap:elena-east-patio-dividers: the magnolia canopy hides the patio divisions from the roof and the aerial",
    "photoRequest": "elena-east-patios-inside",
    "status": "open",
-   "sources": [],
+   "sources": [
+    "IMG_2973.jpg"
+   ],
    "features": [],
    "tasks": [],
-   "state": "open",
+   "state": "received",
    "evidenceKind": "photo"
   },
   {
@@ -108544,6 +108944,31 @@
    "relation": "shows"
   },
   {
+   "from": "ref:IMG_2967.jpg",
+   "to": "area:cervantes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "area:north-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
    "from": "ref:IMG_2970.jpg",
    "to": "area:elena",
    "relation": "shows"
@@ -108564,6 +108989,11 @@
    "relation": "shows"
   },
   {
+   "from": "ref:IMG_2973.jpg",
+   "to": "area:elena",
+   "relation": "shows"
+  },
+  {
    "from": "ref:IMG_2974.jpg",
    "to": "area:elena",
    "relation": "shows"
@@ -108576,6 +109006,136 @@
   {
    "from": "ref:IMG_2975.jpg",
    "to": "area:elena",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2977.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2978.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2978.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2979.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2979.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2980.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2980.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2981.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2981.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2982.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2982.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2983.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2983.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2983.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2984.jpg",
+   "to": "area:south-pool",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2984.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2984.jpg",
+   "to": "area:seaward-lanes",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2985.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2986.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2989.jpg",
+   "to": "area:dali",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2989.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2990.jpg",
+   "to": "area:barraka-beach",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2990.jpg",
+   "to": "area:paseo",
+   "relation": "shows"
+  },
+  {
+   "from": "ref:IMG_2991.jpg",
+   "to": "area:barraka-beach",
    "relation": "shows"
   },
   {
@@ -115739,6 +116299,56 @@
    "relation": "useful-for"
   },
   {
+   "from": "ref:IMG_2967.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "topic:signage",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
    "from": "ref:IMG_2970.jpg",
    "to": "topic:facades",
    "relation": "useful-for"
@@ -115784,6 +116394,16 @@
    "relation": "useful-for"
   },
   {
+   "from": "ref:IMG_2973.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2973.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
    "from": "ref:IMG_2974.jpg",
    "to": "topic:layout",
    "relation": "useful-for"
@@ -115811,6 +116431,246 @@
   {
    "from": "ref:IMG_2975.jpg",
    "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2977.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2977.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2977.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2977.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2978.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2978.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2978.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2978.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2979.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2979.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2979.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2980.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2980.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2980.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2980.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2981.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2981.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2981.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2981.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2982.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2982.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2982.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2982.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2983.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2983.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2983.jpg",
+   "to": "topic:facades",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2984.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2984.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2984.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2985.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2985.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2985.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2986.jpg",
+   "to": "topic:levels",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2986.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "topic:planting",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2989.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2989.jpg",
+   "to": "topic:signage",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2989.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2989.jpg",
+   "to": "topic:view",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2990.jpg",
+   "to": "topic:view",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2990.jpg",
+   "to": "topic:layout",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2990.jpg",
+   "to": "topic:materials",
+   "relation": "useful-for"
+  },
+  {
+   "from": "ref:IMG_2991.jpg",
+   "to": "topic:view",
    "relation": "useful-for"
   },
   {
@@ -129728,6 +130588,78 @@
    "basis": "reviewed"
   },
   {
+   "from": "ref:IMG_2967.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "model:cervantes_patio_walls.json:cervantes-patio-north-east",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2967.jpg",
+   "to": "model:street:elena-north",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "model:elena_north.json:elena-north-magnolia-bed",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2968.jpg",
+   "to": "model:street:elena-north",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "model:elena_lane_paving.json:elena-north-three-column",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "model:street:elena-north",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2969.jpg",
+   "to": "model:elena_north.json:elena-north-planter-box-2",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
    "from": "ref:IMG_2970.jpg",
    "to": "model:elena_north.json:elena-north-planter-box-1",
    "relation": "looks-at",
@@ -129800,6 +130732,30 @@
    "basis": "reviewed"
   },
   {
+   "from": "ref:IMG_2973.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2973.jpg",
+   "to": "model:elena_east_patios.json:elena-east-patios-pergola",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2973.jpg",
+   "to": "model:elena_north.json:elena-north-garden-wall",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2973.jpg",
+   "to": "model:elena_north.json:elena-north-magnolia-bed",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
    "from": "ref:IMG_2974.jpg",
    "to": "model:elena_north.json:elena-north-visible-patio-floor",
    "relation": "looks-at",
@@ -129838,6 +130794,96 @@
   {
    "from": "ref:IMG_2975.jpg",
    "to": "model:elena_walkway.json:elena-walkway-floor",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2977.jpg",
+   "to": "model:pool_decks.json:south-deck",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2979.jpg",
+   "to": "model:south_pool_passage.json:south-pool-dali-passage",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2985.jpg",
+   "to": "model:parking:Dalí car park",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2985.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2986.jpg",
+   "to": "model:parking:Dalí car park",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2986.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "model:parking:Dalí car park",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "model:street:dali",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2987.jpg",
+   "to": "model:dali_street.json:dali-fence-plinth",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "model:parking:Dalí car park",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "model:street:dali",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2988.jpg",
+   "to": "model:backdrop.json:aerial-trees",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2990.jpg",
+   "to": "model:area:beach",
+   "relation": "looks-at",
+   "basis": "reviewed"
+  },
+  {
+   "from": "ref:IMG_2991.jpg",
+   "to": "model:area:beach",
    "relation": "looks-at",
    "basis": "reviewed"
   },
@@ -135201,6 +136247,12 @@
    "from": "photo-request:elena-east-patios-inside",
    "to": "area:elena",
    "relation": "in-area"
+  },
+  {
+   "from": "ref:IMG_2973.jpg",
+   "to": "photo-request:elena-east-patios-inside",
+   "relation": "answers",
+   "basis": "position"
   },
   {
    "to": "area:dali",
@@ -150233,6 +151285,46 @@
    "from": "path-source:IMG_2966.jpg"
   },
   {
+   "to": "area:cervantes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2967.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_2967.jpg"
+  },
+  {
+   "to": "ref:IMG_2967.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2967.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_2968.jpg"
+  },
+  {
+   "to": "area:north-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2968.jpg"
+  },
+  {
+   "to": "ref:IMG_2968.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2968.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
+   "from": "path-source:IMG_2969.jpg"
+  },
+  {
+   "to": "ref:IMG_2969.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2969.jpg"
+  },
+  {
    "to": "area:elena",
    "relation": "in-area",
    "from": "path-source:IMG_2970.jpg"
@@ -150270,6 +151362,16 @@
   {
    "to": "area:elena",
    "relation": "in-area",
+   "from": "path-source:IMG_2973.jpg"
+  },
+  {
+   "to": "ref:IMG_2973.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2973.jpg"
+  },
+  {
+   "to": "area:elena",
+   "relation": "in-area",
    "from": "path-source:IMG_2974.jpg"
   },
   {
@@ -150291,6 +151393,211 @@
    "to": "ref:IMG_2975.jpg",
    "relation": "accounts-for",
    "from": "path-source:IMG_2975.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2977.jpg"
+  },
+  {
+   "to": "ref:IMG_2977.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2977.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2978.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2978.jpg"
+  },
+  {
+   "to": "ref:IMG_2978.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2978.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2979.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2979.jpg"
+  },
+  {
+   "to": "ref:IMG_2979.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2979.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2980.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2980.jpg"
+  },
+  {
+   "to": "ref:IMG_2980.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2980.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2981.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2981.jpg"
+  },
+  {
+   "to": "ref:IMG_2981.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2981.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2982.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2982.jpg"
+  },
+  {
+   "to": "ref:IMG_2982.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2982.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2983.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2983.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2983.jpg"
+  },
+  {
+   "to": "ref:IMG_2983.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2983.jpg"
+  },
+  {
+   "to": "area:south-pool",
+   "relation": "in-area",
+   "from": "path-source:IMG_2984.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2984.jpg"
+  },
+  {
+   "to": "area:seaward-lanes",
+   "relation": "in-area",
+   "from": "path-source:IMG_2984.jpg"
+  },
+  {
+   "to": "ref:IMG_2984.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2984.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2985.jpg"
+  },
+  {
+   "to": "ref:IMG_2985.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2985.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2986.jpg"
+  },
+  {
+   "to": "ref:IMG_2986.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2986.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2987.jpg"
+  },
+  {
+   "to": "ref:IMG_2987.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2987.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2988.jpg"
+  },
+  {
+   "to": "ref:IMG_2988.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2988.jpg"
+  },
+  {
+   "to": "area:dali",
+   "relation": "in-area",
+   "from": "path-source:IMG_2989.jpg"
+  },
+  {
+   "to": "area:paseo",
+   "relation": "in-area",
+   "from": "path-source:IMG_2989.jpg"
+  },
+  {
+   "to": "ref:IMG_2989.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2989.jpg"
+  },
+  {
+   "to": "area:barraka-beach",
+   "relation": "in-area",
+   "from": "path-source:IMG_2990.jpg"
+  },
+  {
+   "to": "area:paseo",
+   "relation": "in-area",
+   "from": "path-source:IMG_2990.jpg"
+  },
+  {
+   "to": "ref:IMG_2990.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2990.jpg"
+  },
+  {
+   "to": "area:barraka-beach",
+   "relation": "in-area",
+   "from": "path-source:IMG_2991.jpg"
+  },
+  {
+   "to": "ref:IMG_2991.jpg",
+   "relation": "accounts-for",
+   "from": "path-source:IMG_2991.jpg"
   },
   {
    "to": "area:whole-resort",
@@ -151516,6 +152823,11 @@
    "from": "evidence-request:photo-elena-east-patios-inside",
    "to": "photo-request:elena-east-patios-inside",
    "relation": "requests-photo"
+  },
+  {
+   "from": "ref:IMG_2973.jpg",
+   "to": "evidence-request:photo-elena-east-patios-inside",
+   "relation": "supplies-evidence"
   },
   {
    "from": "discrepancy:north-deck-shape",

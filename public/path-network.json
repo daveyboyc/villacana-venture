@@ -17,8 +17,8 @@
   "sourceObservations": 59,
   "sourcePixelTraces": 57,
   "sourcePixelLocators": 32,
-  "sources": 513,
-  "uninspectedSources": 443,
+  "sources": 532,
+  "uninspectedSources": 462,
   "routes": 24,
   "segments": 181,
   "tracedSides": 0,
@@ -157,9 +157,13 @@
     "IMG_2813.jpg",
     "IMG_2965.jpg",
     "IMG_2966.jpg",
+    "IMG_2967.jpg",
+    "IMG_2968.jpg",
+    "IMG_2969.jpg",
     "IMG_2970.jpg",
     "IMG_2971.jpg",
     "IMG_2972.jpg",
+    "IMG_2973.jpg",
     "IMG_2974.jpg",
     "IMG_2975.jpg"
    ],
@@ -394,7 +398,8 @@
     "IMG_2800.jpg",
     "IMG_2801.jpg",
     "IMG_2965.jpg",
-    "IMG_2966.jpg"
+    "IMG_2966.jpg",
+    "IMG_2967.jpg"
    ],
    "observations": [
     "cervantes:W01",
@@ -50781,6 +50786,47 @@
    ]
   },
   {
+   "id": "path-source:IMG_2967.jpg",
+   "kind": "path-source-accounting",
+   "name": "Fan-palm corner planter under the CALLE DE ELENA plaque, terracotta path running west",
+   "sourceId": "IMG_2967.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "cervantes",
+    "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2968.jpg",
+   "kind": "path-source-accounting",
+   "name": "Calle Elena north: terracotta path between hedged beds toward the north pool gate",
+   "sourceId": "IMG_2968.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena",
+    "north-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2969.jpg",
+   "kind": "path-source-accounting",
+   "name": "Old trained climber on a white wall with a stone shelf, Calle Elena",
+   "sourceId": "IMG_2969.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
    "id": "path-source:IMG_2970.jpg",
    "kind": "path-source-accounting",
    "name": "Calle Elena north: projecting barred window with moulded cornice on west facade",
@@ -50821,6 +50867,19 @@
    ]
   },
   {
+   "id": "path-source:IMG_2973.jpg",
+   "kind": "path-source-accounting",
+   "name": "Clivia and monstera bed under the bougainvillea-draped Elena garden wall",
+   "sourceId": "IMG_2973.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "elena"
+   ]
+  },
+  {
    "id": "path-source:IMG_2974.jpg",
    "kind": "path-source-accounting",
    "name": "Calle Elena north from walkway mouth looking north-north-west to north pool gate",
@@ -50845,6 +50904,212 @@
    "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
    "areas": [
     "elena"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2977.jpg",
+   "kind": "path-source-accounting",
+   "name": "Stepped crazy-paving path and white kerb beside the south pool lawn",
+   "sourceId": "IMG_2977.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2978.jpg",
+   "kind": "path-source-accounting",
+   "name": "Arched green iron gate from the south pool lawn into the Calle de Jorge arcade",
+   "sourceId": "IMG_2978.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2979.jpg",
+   "kind": "path-source-accounting",
+   "name": "Through the open gate: the tiled arcade with lantern, mat and arches",
+   "sourceId": "IMG_2979.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2980.jpg",
+   "kind": "path-source-accounting",
+   "name": "Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel",
+   "sourceId": "IMG_2980.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2981.jpg",
+   "kind": "path-source-accounting",
+   "name": "Side court off the arcade: door 57, barred windows and planters",
+   "sourceId": "IMG_2981.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2982.jpg",
+   "kind": "path-source-accounting",
+   "name": "Tiled side lane north from the arcade between houses 55 and 57",
+   "sourceId": "IMG_2982.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2983.jpg",
+   "kind": "path-source-accounting",
+   "name": "Arcade west half: covered tiled walk to the arch onto Pintor Dalí",
+   "sourceId": "IMG_2983.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "seaward-lanes",
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2984.jpg",
+   "kind": "path-source-accounting",
+   "name": "West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí",
+   "sourceId": "IMG_2984.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "south-pool",
+    "dali",
+    "seaward-lanes"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2985.jpg",
+   "kind": "path-source-accounting",
+   "name": "Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí",
+   "sourceId": "IMG_2985.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2986.jpg",
+   "kind": "path-source-accounting",
+   "name": "Grooved concrete threshold between the flagstone ramp and the Dalí asphalt",
+   "sourceId": "IMG_2986.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2987.jpg",
+   "kind": "path-source-accounting",
+   "name": "Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond",
+   "sourceId": "IMG_2987.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2988.jpg",
+   "kind": "path-source-accounting",
+   "name": "Ivy hedge and white kerb along the west side of Pintor Dalí",
+   "sourceId": "IMG_2988.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2989.jpg",
+   "kind": "path-source-accounting",
+   "name": "Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea",
+   "sourceId": "IMG_2989.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "dali",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2990.jpg",
+   "kind": "path-source-accounting",
+   "name": "From the beach grass west of the paseo end, looking along the paseo toward La Concha",
+   "sourceId": "IMG_2990.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach",
+    "paseo"
+   ]
+  },
+  {
+   "id": "path-source:IMG_2991.jpg",
+   "kind": "path-source-accounting",
+   "name": "Beach and sea looking east-north-east along the coast toward Marbella",
+   "sourceId": "IMG_2991.jpg",
+   "disposition": "not-yet-inspected",
+   "inspectionScopes": [],
+   "review": null,
+   "nextAction": "Inspect full source for path edges, covered connections and openings; content tags alone do not complete this inventory.",
+   "areas": [
+    "barraka-beach"
    ]
   },
   {
@@ -51918,8 +52183,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 19,
-   "uninspectedSources": 19,
+   "sourceCount": 20,
+   "uninspectedSources": 20,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -51968,8 +52233,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 18,
-   "uninspectedSources": 18,
+   "sourceCount": 26,
+   "uninspectedSources": 26,
    "routes": [],
    "tunnels": [],
    "inventoryComplete": false,
@@ -52018,8 +52283,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 108,
-   "uninspectedSources": 69,
+   "sourceCount": 112,
+   "uninspectedSources": 73,
    "routes": [
     "path-route:elena-north",
     "path-route:elena-south"
@@ -52159,9 +52424,13 @@
      "IMG_2813.jpg",
      "IMG_2965.jpg",
      "IMG_2966.jpg",
+     "IMG_2967.jpg",
+     "IMG_2968.jpg",
+     "IMG_2969.jpg",
      "IMG_2970.jpg",
      "IMG_2971.jpg",
      "IMG_2972.jpg",
+     "IMG_2973.jpg",
      "IMG_2974.jpg",
      "IMG_2975.jpg"
     ],
@@ -52314,8 +52583,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "partial",
-   "sourceCount": 73,
-   "uninspectedSources": 45,
+   "sourceCount": 74,
+   "uninspectedSources": 46,
    "routes": [
     "path-route:cervantes"
    ],
@@ -52424,7 +52693,8 @@
      "IMG_2800.jpg",
      "IMG_2801.jpg",
      "IMG_2965.jpg",
-     "IMG_2966.jpg"
+     "IMG_2966.jpg",
+     "IMG_2967.jpg"
     ],
     "observations": [
      "cervantes:W01",
@@ -52537,8 +52807,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 53,
-   "uninspectedSources": 53,
+   "sourceCount": 60,
+   "uninspectedSources": 60,
    "routes": [
     "path-route:dali",
     "path-route:dali-shared-footpath",
@@ -52659,8 +52929,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 154,
-   "uninspectedSources": 154,
+   "sourceCount": 161,
+   "uninspectedSources": 161,
    "routes": [
     "path-route:patricia",
     "path-route:silvia-north",
@@ -52694,8 +52964,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 60,
-   "uninspectedSources": 60,
+   "sourceCount": 62,
+   "uninspectedSources": 62,
    "routes": [
     "path-route:barraka-boardwalk"
    ],
@@ -52721,8 +52991,8 @@
     "runtime": "unchecked"
    },
    "sourceCoverage": "uninspected",
-   "sourceCount": 62,
-   "uninspectedSources": 62,
+   "sourceCount": 64,
+   "uninspectedSources": 64,
    "routes": [
     "path-route:paseo-west",
     "path-route:paseo",

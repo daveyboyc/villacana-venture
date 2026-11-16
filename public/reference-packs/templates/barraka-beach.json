@@ -313,6 +313,16 @@
       "path": "public/photos-ref/IMG_2770.jpg"
     },
     {
+      "id": "IMG_2990.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2990.jpg"
+    },
+    {
+      "id": "IMG_2991.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2991.jpg"
+    },
+    {
       "id": "ref:apple-maps/05-top-down-main-pool-and-lawn.png",
       "private": true,
       "path": "reference/apple-maps/05-top-down-main-pool-and-lawn.png"

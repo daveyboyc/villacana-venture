@@ -7523,5 +7523,349 @@
    43.0
   ],
   "subject": "Calle Elena 18 36 covered walkway looking west-south-west through the far arch to the twin iron gates"
+ },
+ "IMG_2967.jpg": {
+  "title": "Fan-palm corner planter under the CALLE DE ELENA plaque, terracotta path running west",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "signage",
+   "layout"
+  ],
+  "looksAt": [
+   -147.3,
+   52.1
+  ],
+  "subject": "Same corner planter as IMG_2966, seen from its east end"
+ },
+ "IMG_2968.jpg": {
+  "title": "Calle Elena north: terracotta path between hedged beds toward the north pool gate",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "looksAt": [
+   -152.0,
+   38.4
+  ],
+  "subject": "Calle Elena north looking north-north-west along the tiled path to the arch at the north pool end"
+ },
+ "IMG_2969.jpg": {
+  "title": "Old trained climber on a white wall with a stone shelf, Calle Elena",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ],
+  "looksAt": [
+   -149.5,
+   48.7
+  ],
+  "subject": "trained climber on the white wall west of the Elena/Cervantes corner"
+ },
+ "IMG_2973.jpg": {
+  "title": "Clivia and monstera bed under the bougainvillea-draped Elena garden wall",
+  "shows": [
+   "elena"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ],
+  "looksAt": [
+   -145.4,
+   41.6
+  ],
+  "subject": "Elena garden bed at the foot of the garden wall, patios beyond the wall",
+  "note": "Seen from the garden side only: the patios east of the wall and their dividing walls are not visible, so elena-east-patios-inside stays open."
+ },
+ "IMG_2977.jpg": {
+  "title": "Stepped crazy-paving path and white kerb beside the south pool lawn",
+  "shows": [
+   "south-pool"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "levels",
+   "layout",
+   "planting"
+  ],
+  "looksAt": [
+   -82.3,
+   187.3
+  ],
+  "subject": "stepped crazy-paving path and curved planter wall on the south pool lawn",
+  "note": "Phone altitude reads 9.3 m but the picture is taken standing on the south pool lawn (ground).",
+  "altitudeChecked": true
+ },
+ "IMG_2978.jpg": {
+  "title": "Arched green iron gate from the south pool lawn into the Calle de Jorge arcade",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "looksAt": [
+   -94.8,
+   199.6
+  ],
+  "subject": "lawn-side gate of the Calle de Jorge 39-67 arcade (south pool to Pintor Dalí passage)"
+ },
+ "IMG_2979.jpg": {
+  "title": "Through the open gate: the tiled arcade with lantern, mat and arches",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "looksAt": [
+   -101.7,
+   202.7
+  ],
+  "subject": "Calle de Jorge 39-67 arcade from the lawn-side gate looking toward Pintor Dalí"
+ },
+ "IMG_2980.jpg": {
+  "title": "Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "looksAt": [
+   -101.0,
+   198.9
+  ],
+  "subject": "open middle bay of the Calle de Jorge 39-67 arcade"
+ },
+ "IMG_2981.jpg": {
+  "title": "Side court off the arcade: door 57, barred windows and planters",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting",
+   "layout"
+  ],
+  "looksAt": [
+   -100.0,
+   192.5
+  ],
+  "subject": "house 57 front on the side court off the arcade's open bay"
+ },
+ "IMG_2982.jpg": {
+  "title": "Tiled side lane north from the arcade between houses 55 and 57",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "looksAt": [
+   -103.6,
+   185.9
+  ],
+  "subject": "tiled side lane running north-north-west from the arcade's open bay",
+  "note": "New: a tiled side lane leaves the open middle bay of the arcade toward Calle Jorge/Silvia. Not in data/south_pool_passage.json; where it runs is not measured."
+ },
+ "IMG_2983.jpg": {
+  "title": "Arcade west half: covered tiled walk to the arch onto Pintor Dalí",
+  "shows": [
+   "south-pool",
+   "seaward-lanes",
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "looksAt": [
+   -107.1,
+   202.4
+  ],
+  "subject": "west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch"
+ },
+ "IMG_2984.jpg": {
+  "title": "West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí",
+  "shows": [
+   "south-pool",
+   "dali",
+   "seaward-lanes"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "looksAt": [
+   -110.4,
+   215.3
+  ],
+  "subject": "west mouth of the arcade and the flagstone ramp down to Pintor Dalí"
+ },
+ "IMG_2985.jpg": {
+  "title": "Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials",
+   "layout"
+  ],
+  "looksAt": [
+   -121.6,
+   213.9
+  ],
+  "subject": "foot of the arcade ramp at Pintor Dalí"
+ },
+ "IMG_2986.jpg": {
+  "title": "Grooved concrete threshold between the flagstone ramp and the Dalí asphalt",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials"
+  ],
+  "looksAt": [
+   -122.4,
+   214.9
+  ],
+  "subject": "threshold strip at the foot of the arcade ramp"
+ },
+ "IMG_2987.jpg": {
+  "title": "Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "layout"
+  ],
+  "looksAt": [
+   -131.3,
+   219.4
+  ],
+  "subject": "west side of Pintor Dalí opposite the arcade ramp"
+ },
+ "IMG_2988.jpg": {
+  "title": "Ivy hedge and white kerb along the west side of Pintor Dalí",
+  "shows": [
+   "dali"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "layout"
+  ],
+  "looksAt": [
+   -131.8,
+   210.2
+  ],
+  "subject": "west edge of Pintor Dalí looking north-west"
+ },
+ "IMG_2989.jpg": {
+  "title": "Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage",
+   "materials",
+   "view"
+  ],
+  "looksAt": [
+   -113.8,
+   219.1
+  ],
+  "subject": "seaward end of Pintor Dalí where it meets the beach fence"
+ },
+ "IMG_2990.jpg": {
+  "title": "From the beach grass west of the paseo end, looking along the paseo toward La Concha",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "layout",
+   "materials"
+  ],
+  "looksAt": [
+   -75.9,
+   267.5
+  ],
+  "subject": "paseo and seafront wall seen from the beach west of their end",
+  "note": "The EXIF heading of 138 degrees disagrees with the picture, which looks roughly east-north-east along the coast (sea on the right, mountains ahead); treat the heading as unreliable."
+ },
+ "IMG_2991.jpg": {
+  "title": "Beach and sea looking east-north-east along the coast toward Marbella",
+  "shows": [
+   "barraka-beach"
+  ],
+  "viewpoint": "ground",
+  "useFor": [
+   "view"
+  ],
+  "looksAt": [
+   -44.8,
+   222.2
+  ],
+  "subject": "beach and shoreline east of the camera"
  }
 }

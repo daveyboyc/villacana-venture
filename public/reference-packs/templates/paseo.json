@@ -308,6 +308,16 @@
       "path": "public/photos-ref/IMG_2822.jpg"
     },
     {
+      "id": "IMG_2989.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2989.jpg"
+    },
+    {
+      "id": "IMG_2990.jpg",
+      "private": false,
+      "path": "public/photos-ref/IMG_2990.jpg"
+    },
+    {
       "id": "ref:apple-maps/03-3d-south-pool-and-promenade.png",
       "private": true,
       "path": "reference/apple-maps/03-3d-south-pool-and-promenade.png"
