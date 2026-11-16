@@ -1,7 +1,7 @@
 {
   "about": "Area counts overlap. Pilot source annotation is distinct from complete area inventory or placement approval. Templates are uninspected candidates.",
-  "uniqueReferences": 513,
-  "uniquePublicPhotos": 482,
+  "uniqueReferences": 532,
+  "uniquePublicPhotos": 501,
   "annotatedSources": 6,
   "areas": [
     {
@@ -20,8 +20,8 @@
     {
       "id": "seaward-lanes",
       "name": "Patricia, Silvia, Jorge, Teodoro Rojo and Guillermo",
-      "references": 154,
-      "publicPhotos": 151,
+      "references": 161,
+      "publicPhotos": 158,
       "privateReferences": 3,
       "annotatedSources": [
         "IMG_2185.jpg",
@@ -37,8 +37,8 @@
     {
       "id": "cervantes",
       "name": "Calle Miguel de Cervantes",
-      "references": 73,
-      "publicPhotos": 73,
+      "references": 74,
+      "publicPhotos": 74,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -47,8 +47,8 @@
     {
       "id": "dali",
       "name": "Calle Pintor Dalí",
-      "references": 53,
-      "publicPhotos": 53,
+      "references": 60,
+      "publicPhotos": 60,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -57,8 +57,8 @@
     {
       "id": "elena",
       "name": "Calle Elena",
-      "references": 108,
-      "publicPhotos": 108,
+      "references": 112,
+      "publicPhotos": 112,
       "privateReferences": 0,
       "annotatedSources": [],
       "status": "not-started",
@@ -67,8 +67,8 @@
     {
       "id": "barraka-beach",
       "name": "Barraka and the beach",
-      "references": 60,
-      "publicPhotos": 59,
+      "references": 62,
+      "publicPhotos": 61,
       "privateReferences": 1,
       "annotatedSources": [],
       "status": "not-started",
@@ -87,8 +87,8 @@
     {
       "id": "north-pool",
       "name": "North pool",
-      "references": 19,
-      "publicPhotos": 9,
+      "references": 20,
+      "publicPhotos": 10,
       "privateReferences": 10,
       "annotatedSources": [],
       "status": "not-started",
@@ -97,8 +97,8 @@
     {
       "id": "paseo",
       "name": "The paseo",
-      "references": 62,
-      "publicPhotos": 58,
+      "references": 64,
+      "publicPhotos": 60,
       "privateReferences": 4,
       "annotatedSources": [],
       "status": "not-started",
@@ -137,8 +137,8 @@
     {
       "id": "south-pool",
       "name": "South pool",
-      "references": 18,
-      "publicPhotos": 13,
+      "references": 26,
+      "publicPhotos": 21,
       "privateReferences": 5,
       "annotatedSources": [],
       "status": "not-started",

@@ -10,6 +10,7 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 - The aisle fence is a white curb, a concrete plinth and rusty chain-link, with a clipped hedge outside it (IMG_2269, 2270, 2277, 2278). Black house-side lanterns repeat along the parking (IMG_2269, 2270, 2276, 2278, 2279, 2280); their stations are estimated. Still open: each house's arches, grilles and balconies, the palms and bougainvillea, and the modern lamp at the seaward turning area.
 - IMG_2280 is a flagstone pedestrian entrance, distinct from Cervantes' square tiles; no readable street sign.
 - Issue #57 (data/door_sills.json): the house-side footpath and grass strip between Eva and Patricia stand a 0.12 m white kerb above the asphalt (IMG_2291-2293), with a slot drain at the arched porch; the lawn strip ends about 17 m along and cars nose up to the path beyond it. The south flagstone approach rises 0.25 m over 5 m to the arch in 6263501UF1366S_part1 between flared kerbs (IMG_2283/2294/2295); the passage behind the arch is opened as the Calle de Jorge 39-67 arcade onto the south pool lawn (data/south_pool_passage.json, estimated to about 2 m). Open: the map puts Calle Patricia about 3.7 m south of the photographed apron kerb.
+- 16 November 2026: IMG_2985/2986 show the foot of the arcade ramp: flared rounded white kerbs and a three-groove concrete threshold onto the asphalt. IMG_2987/2988: the west side of the street is a continuous clipped ivy hedge about 2 m high on a white kerb, eucalyptus behind. IMG_2989: the seaward end has a curved yellow kerb line and a white wall with a no-parking sign under a green mesh fence to the beach.
 
 ## Read first
 
@@ -20,8 +21,8 @@ Pintor Dalí, its car park and bays, the outer chain-link fence, the seaward tur
 
 ## Coverage
 
-Layout: 50, Levels and slopes: 8, Facades and roofs: 12, Materials: 30, Planting: 25, Signs: 1, Views: 6
-53 reviewed, 0 suggested only by camera position.
+Layout: 56, Levels and slopes: 11, Facades and roofs: 13, Materials: 37, Planting: 27, Signs: 2, Views: 7
+60 reviewed, 0 suggested only by camera position.
 
 ## Levels
 
@@ -209,6 +210,7 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2293.jpg](../../public/photos-ref/IMG_2293.jpg) | ground | levels, layout | Pintor Dalí: lane entrance, ramp and drain _Used by: door_sills.json:dali-footpath-kerb._ |
 | [IMG_2525.jpg](../../public/photos-ref/IMG_2525.jpg) | ground | layout, facades, planting, materials | Dali car park bays and the white houses along its east side |
 | [IMG_2556.jpg](../../public/photos-ref/IMG_2556.jpg) | ground | layout, facades, planting, materials | Footpath along the west side of the block, house with grilled windows **Note:** Pin is on the Dali road edge; the footpath is the Calle Eva west-side footpath. |
+| [IMG_2989.jpg](../../public/photos-ref/IMG_2989.jpg) | ground | layout, signage, materials, view | Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea **Looks at:** seaward end of Pintor Dalí where it meets the beach fence. |
 | [IMG_2472.jpg](../../public/photos-ref/IMG_2472.jpg) | ground | layout, materials, planting | Tiled footpath beside Dalí car park lawn |
 | [IMG_2473.jpg](../../public/photos-ref/IMG_2473.jpg) | ground | layout, planting, materials | Dalí footpath, strelitzia lawn strip and parked cars |
 | [IMG_2474.jpg](../../public/photos-ref/IMG_2474.jpg) | ground | layout, materials, planting | Dalí car park and clipped hedge **Note:** Looks south-southwest across the road; the villa beyond the hedge is outside the resort boundary (not identified). |
@@ -222,8 +224,12 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2558.jpg](../../public/photos-ref/IMG_2558.jpg) | ground | layout, materials, planting | Terracotta footpath with kerbed planters leading to a brown gate **Note:** Pin altitude 9.3 m reads 'above ground', but the picture is at ground level (GPS height noise). |
 | [IMG_2699.jpg](../../public/photos-ref/IMG_2699.jpg) | ground | layout, materials, view | Dali car park aisle with marked bays, looking north |
 | [IMG_2701.jpg](../../public/photos-ref/IMG_2701.jpg) | ground | layout, materials, planting | Small tiled forecourt at the Dali kerb with a lantern **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2985.jpg](../../public/photos-ref/IMG_2985.jpg) | ground | levels, materials, layout | Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí **Looks at:** foot of the arcade ramp at Pintor Dalí. |
+| [IMG_2987.jpg](../../public/photos-ref/IMG_2987.jpg) | ground | planting, materials, layout | Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond **Looks at:** west side of Pintor Dalí opposite the arcade ramp. |
+| [IMG_2988.jpg](../../public/photos-ref/IMG_2988.jpg) | ground | planting, materials, layout | Ivy hedge and white kerb along the west side of Pintor Dalí **Looks at:** west edge of Pintor Dalí looking north-west. |
 | [IMG_2476.jpg](../../public/photos-ref/IMG_2476.jpg) | ground | layout, facades | Calle Pintor Dalí looking north |
 | [IMG_2700.jpg](../../public/photos-ref/IMG_2700.jpg) | ground | layout, planting | Dali car park aisle with white kerbs and frontage planters |
+| [IMG_2986.jpg](../../public/photos-ref/IMG_2986.jpg) | ground | levels, materials | Grooved concrete threshold between the flagstone ramp and the Dalí asphalt **Looks at:** threshold strip at the foot of the arcade ramp. |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |
 | [IMG_2282.jpg](../../public/photos-ref/IMG_2282.jpg) | ground | layout | Pintor Dalí seaward end: wall and paseo boundary |
 | [IMG_2290.jpg](../../public/photos-ref/IMG_2290.jpg) | ground | layout | Pintor Dalí: grass between bays and shared footpath |
@@ -236,6 +242,8 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2638.jpg](../../public/photos-ref/IMG_2638.jpg) | ground | layout, levels, materials | Paseo wall end and kerbed junction near Dali car park |
 | [IMG_2703.jpg](../../public/photos-ref/IMG_2703.jpg) | ground | layout, materials, planting | Eva west footpath beside the Dali road, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
 | [IMG_2704.jpg](../../public/photos-ref/IMG_2704.jpg) | ground | layout, materials, planting | Eva west footpath with kerbed grass strip, looking north **Note:** Altitude reads above 9 m, but the picture is at eye level on the lane (GPS height noise). |
+| [IMG_2983.jpg](../../public/photos-ref/IMG_2983.jpg) | ground | layout, materials, facades | Arcade west half: covered tiled walk to the arch onto Pintor Dalí **Looks at:** west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch. |
+| [IMG_2984.jpg](../../public/photos-ref/IMG_2984.jpg) | ground | layout, levels, materials | West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí **Looks at:** west mouth of the arcade and the flagstone ramp down to Pintor Dalí. |
 | [IMG_2218.jpg](../../public/photos-ref/IMG_2218.jpg) | roof | facades, view | Roof terrace looking south-west: roofs and tall pines along Pintor Dalí |
 | [IMG_2289.jpg](../../public/photos-ref/IMG_2289.jpg) | ground | layout, levels | Cervantes exit: white-edged tiled approach |
 | [IMG_2266.jpg](../../public/photos-ref/IMG_2266.jpg) | ground | layout | Calle Cervantes exit onto Pintor Dalí: planter and opposite hedge |

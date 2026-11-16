@@ -1,11 +1,11 @@
 {
  "version": 1,
- "inputDigest": "c71849493cdf5708d5f51542e2d01a5854def185d455b4d9f6ad47745cdba175",
+ "inputDigest": "e99da2229044ac80453afd23b63c4bcce5580cb3ceb4461a307efe9bf9157d56",
  "summary": {
   "unplaced": 3,
-  "suggested": 259,
-  "needs-review": 220,
-  "photos": 482,
+  "suggested": 267,
+  "needs-review": 231,
+  "photos": 501,
   "features": 473,
   "photosCitedByModel": 197,
   "modelFeaturesWithPhotoCitations": 219
@@ -7599,6 +7599,27 @@
    "status": "needs-review"
   },
   {
+   "id": "photo:IMG_2967.jpg",
+   "kind": "photo",
+   "name": "Fan-palm corner planter under the CALLE DE ELENA plaque, terracotta path running west",
+   "file": "IMG_2967.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2968.jpg",
+   "kind": "photo",
+   "name": "Calle Elena north: terracotta path between hedged beds toward the north pool gate",
+   "file": "IMG_2968.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2969.jpg",
+   "kind": "photo",
+   "name": "Old trained climber on a white wall with a stone shelf, Calle Elena",
+   "file": "IMG_2969.jpg",
+   "status": "needs-review"
+  },
+  {
    "id": "photo:IMG_2970.jpg",
    "kind": "photo",
    "name": "IMG_2970",
@@ -7620,6 +7641,13 @@
    "status": "suggested"
   },
   {
+   "id": "photo:IMG_2973.jpg",
+   "kind": "photo",
+   "name": "Clivia and monstera bed under the bougainvillea-draped Elena garden wall",
+   "file": "IMG_2973.jpg",
+   "status": "suggested"
+  },
+  {
    "id": "photo:IMG_2974.jpg",
    "kind": "photo",
    "name": "IMG_2974",
@@ -7631,6 +7659,111 @@
    "kind": "photo",
    "name": "IMG_2975",
    "file": "IMG_2975.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2977.jpg",
+   "kind": "photo",
+   "name": "Stepped crazy-paving path and white kerb beside the south pool lawn",
+   "file": "IMG_2977.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2978.jpg",
+   "kind": "photo",
+   "name": "Arched green iron gate from the south pool lawn into the Calle de Jorge arcade",
+   "file": "IMG_2978.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2979.jpg",
+   "kind": "photo",
+   "name": "Through the open gate: the tiled arcade with lantern, mat and arches",
+   "file": "IMG_2979.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2980.jpg",
+   "kind": "photo",
+   "name": "Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel",
+   "file": "IMG_2980.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2981.jpg",
+   "kind": "photo",
+   "name": "Side court off the arcade: door 57, barred windows and planters",
+   "file": "IMG_2981.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2982.jpg",
+   "kind": "photo",
+   "name": "Tiled side lane north from the arcade between houses 55 and 57",
+   "file": "IMG_2982.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2983.jpg",
+   "kind": "photo",
+   "name": "Arcade west half: covered tiled walk to the arch onto Pintor Dalí",
+   "file": "IMG_2983.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2984.jpg",
+   "kind": "photo",
+   "name": "West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí",
+   "file": "IMG_2984.jpg",
+   "status": "needs-review"
+  },
+  {
+   "id": "photo:IMG_2985.jpg",
+   "kind": "photo",
+   "name": "Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí",
+   "file": "IMG_2985.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2986.jpg",
+   "kind": "photo",
+   "name": "Grooved concrete threshold between the flagstone ramp and the Dalí asphalt",
+   "file": "IMG_2986.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2987.jpg",
+   "kind": "photo",
+   "name": "Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond",
+   "file": "IMG_2987.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2988.jpg",
+   "kind": "photo",
+   "name": "Ivy hedge and white kerb along the west side of Pintor Dalí",
+   "file": "IMG_2988.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2989.jpg",
+   "kind": "photo",
+   "name": "Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea",
+   "file": "IMG_2989.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2990.jpg",
+   "kind": "photo",
+   "name": "From the beach grass west of the paseo end, looking along the paseo toward La Concha",
+   "file": "IMG_2990.jpg",
+   "status": "suggested"
+  },
+  {
+   "id": "photo:IMG_2991.jpg",
+   "kind": "photo",
+   "name": "Beach and sea looking east-north-east along the coast toward Marbella",
+   "file": "IMG_2991.jpg",
    "status": "suggested"
   },
   {
@@ -22511,6 +22644,105 @@
    "angleOffset": 10.3
   },
   {
+   "from": "photo:IMG_2967.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 2.4
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 28.7,
+   "angleOffset": 3.9
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "building:6265801UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 34.3,
+   "angleOffset": 26.0
+  },
+  {
+   "from": "photo:IMG_2967.jpg",
+   "to": "building:6265201UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 37.1,
+   "angleOffset": 17.8
+  },
+  {
+   "from": "photo:IMG_2968.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.0
+  },
+  {
+   "from": "photo:IMG_2968.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 0.3
+  },
+  {
+   "from": "photo:IMG_2968.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 17.0,
+   "angleOffset": 19.2
+  },
+  {
+   "from": "photo:IMG_2968.jpg",
+   "to": "building:6265401UF1366N_part3",
+   "relation": "possibly-in-view",
+   "distance": 26.2,
+   "angleOffset": 26.9
+  },
+  {
+   "from": "photo:IMG_2968.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 30.5,
+   "angleOffset": 29.5
+  },
+  {
+   "from": "photo:IMG_2969.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2969.jpg",
+   "to": "street:cervantes",
+   "relation": "camera-nearby",
+   "gap": 3.1
+  },
+  {
+   "from": "photo:IMG_2969.jpg",
+   "to": "building:6265201UF1366N_part5",
+   "relation": "possibly-in-view",
+   "distance": 14.3,
+   "angleOffset": 29.8
+  },
+  {
+   "from": "photo:IMG_2969.jpg",
+   "to": "building:6265201UF1366N_part4",
+   "relation": "possibly-in-view",
+   "distance": 25.2,
+   "angleOffset": 27.0
+  },
+  {
+   "from": "photo:IMG_2969.jpg",
+   "to": "building:6265201UF1366N_part1",
+   "relation": "possibly-in-view",
+   "distance": 27.9,
+   "angleOffset": 20.0
+  },
+  {
    "from": "photo:IMG_2970.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -22604,6 +22836,19 @@
    "angleOffset": 28.2
   },
   {
+   "from": "photo:IMG_2973.jpg",
+   "to": "street:elena-north",
+   "relation": "camera-nearby",
+   "gap": 0.7
+  },
+  {
+   "from": "photo:IMG_2973.jpg",
+   "to": "building:6265401UF1366N_part2",
+   "relation": "possibly-in-view",
+   "distance": 20.2,
+   "angleOffset": 8.7
+  },
+  {
    "from": "photo:IMG_2974.jpg",
    "to": "street:elena-north",
    "relation": "camera-nearby",
@@ -22635,6 +22880,129 @@
    "relation": "possibly-in-view",
    "distance": 25.5,
    "angleOffset": 22.1
+  },
+  {
+   "from": "photo:IMG_2977.jpg",
+   "to": "building:6364801UF1366S_part2",
+   "relation": "possibly-in-view",
+   "distance": 26.3,
+   "angleOffset": 13.4
+  },
+  {
+   "from": "photo:IMG_2977.jpg",
+   "to": "building:6364801UF1366S_part3",
+   "relation": "possibly-in-view",
+   "distance": 28.8,
+   "angleOffset": 34.3
+  },
+  {
+   "from": "photo:IMG_2977.jpg",
+   "to": "building:6364801UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 38.4,
+   "angleOffset": 27.4
+  },
+  {
+   "from": "photo:IMG_2979.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 17.1,
+   "angleOffset": 22.6
+  },
+  {
+   "from": "photo:IMG_2980.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 16.6,
+   "angleOffset": 11.7
+  },
+  {
+   "from": "photo:IMG_2981.jpg",
+   "to": "building:6264601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 42.0,
+   "angleOffset": 25.3
+  },
+  {
+   "from": "photo:IMG_2982.jpg",
+   "to": "building:6264601UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 42.0,
+   "angleOffset": 0.7
+  },
+  {
+   "from": "photo:IMG_2982.jpg",
+   "to": "building:6264601UF1366S_part6",
+   "relation": "possibly-in-view",
+   "distance": 42.1,
+   "angleOffset": 18.8
+  },
+  {
+   "from": "photo:IMG_2983.jpg",
+   "to": "building:6263501UF1366S_part1",
+   "relation": "possibly-in-view",
+   "distance": 11.8,
+   "angleOffset": 19.1
+  },
+  {
+   "from": "photo:IMG_2985.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 2.3
+  },
+  {
+   "from": "photo:IMG_2986.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0.2
+  },
+  {
+   "from": "photo:IMG_2987.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2987.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 5.6
+  },
+  {
+   "from": "photo:IMG_2988.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0
+  },
+  {
+   "from": "photo:IMG_2988.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 4.8
+  },
+  {
+   "from": "photo:IMG_2989.jpg",
+   "to": "parking:Dalí car park",
+   "relation": "camera-nearby",
+   "gap": 0.6
+  },
+  {
+   "from": "photo:IMG_2989.jpg",
+   "to": "street:dali",
+   "relation": "camera-nearby",
+   "gap": 3.6
+  },
+  {
+   "from": "photo:IMG_2990.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 1.8
+  },
+  {
+   "from": "photo:IMG_2991.jpg",
+   "to": "area:beach",
+   "relation": "camera-nearby",
+   "gap": 1.0
   },
   {
    "from": "ref:apple-maps/02-3d-north-pool.png",

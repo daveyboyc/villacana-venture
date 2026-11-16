@@ -29,8 +29,8 @@ The seafront promenade between the resort's seaward walls and the beach.
 
 ## Coverage
 
-Layout: 58, Levels and slopes: 13, Facades and roofs: 18, Materials: 39, Planting: 20, Signs: 6, Views: 35
-62 reviewed, 0 suggested only by camera position.
+Layout: 60, Levels and slopes: 13, Facades and roofs: 18, Materials: 41, Planting: 20, Signs: 7, Views: 37
+64 reviewed, 0 suggested only by camera position.
 
 ## Open build tasks
 
@@ -243,8 +243,10 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2599.jpg](../../public/photos-ref/IMG_2599.jpg) | ground | layout, levels, materials, view | Curved white-walled tiled descent at the foot of the lane to the beach fence **Note:** Foot of Calle Guillermo area, close to IMG_2600/2601. |
 | [IMG_2643.jpg](../../public/photos-ref/IMG_2643.jpg) | ground | planting, view, facades, layout | South lawn towards the east houses: candelabra cactus, palms and paseo fence **Note:** Camera is on the lawn east of the pool; the lawn edge and mesh fence at the right are the seaward edge above the paseo. |
 | [IMG_2644.jpg](../../public/photos-ref/IMG_2644.jpg) | ground | planting, layout, view, facades | South lawn seaward edge: hedges, palms and mesh fence above the paseo **Note:** Good GPS (+-2 m) at the seaward corner of the south lawn. |
+| [IMG_2989.jpg](../../public/photos-ref/IMG_2989.jpg) | ground | layout, signage, materials, view | Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea **Looks at:** seaward end of Pintor Dalí where it meets the beach fence. |
 | [IMG_2486.jpg](../../public/photos-ref/IMG_2486.jpg) | ground | layout, materials, facades | Tiled apron at the foot of Calle Guillermo with curved wall **Note:** Pin accuracy about 4 m; heading 217 points back down the seafront end of Guillermo. |
 | [IMG_2613.jpg](../../public/photos-ref/IMG_2613.jpg) | ground | layout, facades, materials | Service lane between the main-pool lawn walls and the neighbouring building, looking north-west **Note:** Which wall belongs to which property is uncertain; the left wall appears to be the boundary of the lawn's north-east side and the right wall the neighbouring red-roofed building. Stone blocks under black sheeting are temporary. |
+| [IMG_2990.jpg](../../public/photos-ref/IMG_2990.jpg) | ground | view, layout, materials | From the beach grass west of the paseo end, looking along the paseo toward La Concha **Looks at:** paseo and seafront wall seen from the beach west of their end. **Note:** The EXIF heading of 138 degrees disagrees with the picture, which looks roughly east-north-east along the coast (sea on the right, mountains ahead); treat the heading as unreliable. |
 | [IMG_2629.jpg](../../public/photos-ref/IMG_2629.jpg) | ground | layout, view | Beach east of Barraka from the paseo edge |
 | `reference/apple-maps/10-3d-guillermo-and-main-pool-from-sea-wide.png` | aerial | layout, levels | Apple Maps 3D: main pool and Calle Guillermo from the sea, looking west **Note:** Dave, 2026-10-21. Wider version of apple-maps/11. Apple's 3D mesh is coarse: it shows order, sides and which way the ground falls, not measured heights. |
 | [IMG_2281.jpg](../../public/photos-ref/IMG_2281.jpg) | ground | layout | Pintor Dalí seaward end: turning area and fence |

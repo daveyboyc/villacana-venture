@@ -19495,6 +19495,132 @@
   "subject": "CALLE DE ELENA plaque, fan-palm corner planter and opposite garden doorway at the Cervantes/Elena junction"
  },
  {
+  "id": "IMG_2967.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2967.jpg",
+  "title": "Fan-palm corner planter under the CALLE DE ELENA plaque, terracotta path running west",
+  "shows": [
+   "cervantes",
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "signage",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking west at the Cervantes/Elena corner: a raised white-rendered planter of fan palms with a box-hedge edge under the CALLE DE ELENA tile plaque and bougainvillea, the terracotta tile path with an iron slot drain running west beside it.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1buE2FdmOYyIW84J7Po26sNBfH_hfN3qE/view?usp=drivesdk",
+  "camera": {
+   "x": -142.3,
+   "z": 51.6,
+   "heading": 264,
+   "accuracy": 3.8,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -147.3,
+   52.1
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "cervantes_patio_walls.json:cervantes-patio-north-east",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ],
+  "subject": "Same corner planter as IMG_2966, seen from its east end"
+ },
+ {
+  "id": "IMG_2968.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2968.jpg",
+  "title": "Calle Elena north: terracotta path between hedged beds toward the north pool gate",
+  "shows": [
+   "elena",
+   "north-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "planting",
+   "facades"
+  ],
+  "note": null,
+  "observation": "Looking north-north-west up Calle Elena: square terracotta tiles between low white kerbs and hedged beds, barred windows and wall lanterns on the left, two pollarded trees on the right, a white wall with a brown louvred door and an arch at the far end toward the north pool.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/12BwXG2f78fJlXLVf1ZqHhdYNF-RjaV_g/view?usp=drivesdk",
+  "camera": {
+   "x": -145.0,
+   "z": 51.6,
+   "heading": 332,
+   "accuracy": 3.6,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -152.0,
+   38.4
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "elena_north.json:elena-north-magnolia-bed",
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north"
+  ],
+  "subject": "Calle Elena north looking north-north-west along the tiled path to the arch at the north pool end"
+ },
+ {
+  "id": "IMG_2969.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2969.jpg",
+  "title": "Old trained climber on a white wall with a stone shelf, Calle Elena",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Close view of an old woody shrub trained flat against a white wall, its trunk bent along a stone-capped ledge, with a jade-plant bed below and an arched barred window with brown shutters at the right.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/115L-BT0eclZV0vo2c47zn9t1DZ16z9TQ/view?usp=drivesdk",
+  "camera": {
+   "x": -146.5,
+   "z": 49.2,
+   "heading": 280,
+   "accuracy": 3.4,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -149.5,
+   48.7
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_lane_paving.json:elena-north-three-column",
+   "street:elena-north",
+   "elena_north.json:elena-north-planter-box-2"
+  ],
+  "subject": "trained climber on the white wall west of the Elena/Cervantes corner"
+ },
+ {
   "id": "IMG_2970.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2970.jpg",
@@ -19619,6 +19745,46 @@
   "subject": "Calle Elena north looking north-north-west past the spider-plant bed and pollarded tree toward the north pool arched gateway"
  },
  {
+  "id": "IMG_2973.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2973.jpg",
+  "title": "Clivia and monstera bed under the bougainvillea-draped Elena garden wall",
+  "shows": [
+   "elena"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials"
+  ],
+  "note": "Seen from the garden side only: the patios east of the wall and their dividing walls are not visible, so elena-east-patios-inside stays open.",
+  "observation": "Looking east-north-east at a white garden wall draped with bougainvillea: a bed of clivia and a monstera in bare earth at its foot, timber planter boxes and an iron balcony rail visible above the wall top.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1UcchzRGtH65XfHvFIpfLObcqeFNgSLfT/view?usp=drivesdk",
+  "camera": {
+   "x": -149.2,
+   "z": 43.0,
+   "heading": 70,
+   "accuracy": 3.2,
+   "altitude": 8.5,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -145.4,
+   41.6
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "backdrop.json:aerial-trees",
+   "elena_east_patios.json:elena-east-patios-pergola",
+   "elena_north.json:elena-north-garden-wall",
+   "elena_north.json:elena-north-magnolia-bed"
+  ],
+  "subject": "Elena garden bed at the foot of the garden wall, patios beyond the wall"
+ },
+ {
   "id": "IMG_2974.jpg",
   "kind": "phone-photo",
   "path": "public/photos-ref/IMG_2974.jpg",
@@ -19699,6 +19865,583 @@
    "elena_walkway.json:elena-walkway-floor"
   ],
   "subject": "Calle Elena 18 36 covered walkway looking west-south-west through the far arch to the twin iron gates"
+ },
+ {
+  "id": "IMG_2977.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2977.jpg",
+  "title": "Stepped crazy-paving path and white kerb beside the south pool lawn",
+  "shows": [
+   "south-pool"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "materials",
+   "levels",
+   "layout",
+   "planting"
+  ],
+  "note": "Phone altitude reads 9.3 m but the picture is taken standing on the south pool lawn (ground).",
+  "observation": "Looking east-north-east on the south pool lawn: a crazy-paving path in two tiers separated by a white-rendered kerb step, a curved white planter wall with grey-leaved shrubs and yellow daisies, a green bollard light, lawn on both sides.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1302sNoLEMW5dVYy20zzuJn9MrWhwaimi/view?usp=drivesdk",
+  "camera": {
+   "x": -85.8,
+   "z": 189.2,
+   "heading": 62,
+   "accuracy": 8.4,
+   "altitude": 9.3,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -82.3,
+   187.3
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "pool_decks.json:south-deck"
+  ],
+  "subject": "stepped crazy-paving path and curved planter wall on the south pool lawn"
+ },
+ {
+  "id": "IMG_2978.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2978.jpg",
+  "title": "Arched green iron gate from the south pool lawn into the Calle de Jorge arcade",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": "Looking south-west from the south pool lawn: a crazy-paved apron between a white kerb and pittosporum hedges leads to an open arched pair of green iron gates in a white wall with a carriage lantern; beyond, the tiled arcade with hanging lantern and a mat.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1eD3jdzZ4Tk7vh_SjzjFuHoUG-Z6OOQ24/view?usp=drivesdk",
+  "camera": {
+   "x": -91.3,
+   "z": 196.0,
+   "heading": 224,
+   "accuracy": 7.5,
+   "altitude": 6.7,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -94.8,
+   199.6
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "lawn-side gate of the Calle de Jorge 39-67 arcade (south pool to Pintor Dalí passage)"
+ },
+ {
+  "id": "IMG_2979.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2979.jpg",
+  "title": "Through the open gate: the tiled arcade with lantern, mat and arches",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "note": null,
+  "observation": "Looking west-south-west through the open green gates along the arcade: red tile floor with blue-and-white inset tiles, a coir mat, hanging lantern, brown doors on the left, white planters on the right, an arch to an open bay and a second arch beyond.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1nD0xxihYDyTLrnUFr8L-OiexsqsouXU2/view?usp=drivesdk",
+  "camera": {
+   "x": -92.8,
+   "z": 198.2,
+   "heading": 243,
+   "accuracy": 6.0,
+   "altitude": 5.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -101.7,
+   202.7
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "south_pool_passage.json:south-pool-dali-passage"
+  ],
+  "subject": "Calle de Jorge 39-67 arcade from the lawn-side gate looking toward Pintor Dalí"
+ },
+ {
+  "id": "IMG_2980.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2980.jpg",
+  "title": "Open middle bay of the arcade: bougainvillea arch and pebble-mosaic panel",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "note": null,
+  "observation": "In the open middle bay of the arcade looking west-south-west: a square pebble-mosaic floor panel in the red tile floor, slot drain, raised planters, bougainvillea trained over a white arch with an upper balcony and shutters, and the covered arcade and far arch beyond.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1xAUx_QY7pwKCahZAIL3lNKk9IWhAZcnM/view?usp=drivesdk",
+  "camera": {
+   "x": -93.8,
+   "z": 195.4,
+   "heading": 244,
+   "accuracy": 11.4,
+   "altitude": 4.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -101.0,
+   198.9
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "open middle bay of the Calle de Jorge 39-67 arcade"
+ },
+ {
+  "id": "IMG_2981.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2981.jpg",
+  "title": "Side court off the arcade: door 57, barred windows and planters",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "facades",
+   "materials",
+   "planting",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking west-north-west from the open bay: a white house front numbered 57 with an arched brown door and stud nails, barred windows with shutters, a small balcony above, a wall lantern, low white planters of schefflera and dracaena, tiled floor with blue insets and a slot drain.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1fQduLg-NqwIG0Ghj2VpeQBrqCZg3U6Pb/view?usp=drivesdk",
+  "camera": {
+   "x": -95.5,
+   "z": 194.8,
+   "heading": 297,
+   "accuracy": 15.2,
+   "altitude": 5.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -100.0,
+   192.5
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "house 57 front on the side court off the arcade's open bay"
+ },
+ {
+  "id": "IMG_2982.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2982.jpg",
+  "title": "Tiled side lane north from the arcade between houses 55 and 57",
+  "shows": [
+   "south-pool",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades",
+   "planting"
+  ],
+  "note": "New: a tiled side lane leaves the open middle bay of the arcade toward Calle Jorge/Silvia. Not in data/south_pool_passage.json; where it runs is not measured.",
+  "observation": "Looking north-north-west from the open bay up a narrow tiled lane between white houses (55 on the right) with hedged planters each side, lanterns, barred windows, to an arch under a house with a barrel-tile roof and bougainvillea.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1NIfyB_kTYwvOKUg2b4AiEJ7u6PKd2O2C/view?usp=drivesdk",
+  "camera": {
+   "x": -96.7,
+   "z": 195.7,
+   "heading": 325,
+   "accuracy": 15.3,
+   "altitude": 5.1,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -103.6,
+   185.9
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "tiled side lane running north-north-west from the arcade's open bay"
+ },
+ {
+  "id": "IMG_2983.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2983.jpg",
+  "title": "Arcade west half: covered tiled walk to the arch onto Pintor Dalí",
+  "shows": [
+   "south-pool",
+   "seaward-lanes",
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "materials",
+   "facades"
+  ],
+  "note": null,
+  "observation": "Looking west-south-west along the covered west half of the arcade: red tile floor with blue-and-white insets, a coir mat, hanging lantern, double brown doors on the left, low planters, and an arch at the end opening onto crazy paving and the Dalí car-park hedge.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1-CkEAhcOit2aeUgo5Jp86j7t-YW_3DYU/view?usp=drivesdk",
+  "camera": {
+   "x": -98.2,
+   "z": 197.9,
+   "heading": 243,
+   "accuracy": 13.7,
+   "altitude": 5.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -107.1,
+   202.4
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "west half of the Calle de Jorge 39-67 arcade toward the Pintor Dalí arch"
+ },
+ {
+  "id": "IMG_2984.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2984.jpg",
+  "title": "West mouth of the arcade: tile floor meets the crazy-paved ramp to Pintor Dalí",
+  "shows": [
+   "south-pool",
+   "dali",
+   "seaward-lanes"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "levels",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Looking west-south-west from the arcade mouth: the patterned tile floor ends at a concrete strip, then a crazy-paved ramp between curved white kerbs runs down to the Pintor Dalí asphalt and parked car, with an ivy hedge across the street.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1OjlIno5eXl6LeVUKXt8jmnHMEhDTu5Ck/view?usp=drivesdk",
+  "camera": {
+   "x": -103.7,
+   "z": 210.9,
+   "heading": 237,
+   "accuracy": 5.6,
+   "altitude": 5.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -110.4,
+   215.3
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "west mouth of the arcade and the flagstone ramp down to Pintor Dalí"
+ },
+ {
+  "id": "IMG_2985.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2985.jpg",
+  "title": "Foot of the flagstone ramp: flared white kerbs and grooved threshold onto Dalí",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking down at the foot of the crazy-paved ramp: two rounded white kerbs flare out to the Pintor Dalí asphalt, with a grooved concrete threshold strip between the flagstones and the road.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1hBJiGM2zbU9CzXFw0YeBcaY1DcE6qx2U/view?usp=drivesdk",
+  "camera": {
+   "x": -118.9,
+   "z": 212.7,
+   "heading": 246,
+   "accuracy": 4.9,
+   "altitude": 6.4,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -121.6,
+   213.9
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "foot of the arcade ramp at Pintor Dalí"
+ },
+ {
+  "id": "IMG_2986.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2986.jpg",
+  "title": "Grooved concrete threshold between the flagstone ramp and the Dalí asphalt",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "levels",
+   "materials"
+  ],
+  "note": null,
+  "observation": "Close view down at the ramp foot: sandstone crazy paving, a concrete threshold with three grooves, the rounded end of the white kerb and the asphalt beyond.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1EYaXGsAoKzmneo7tPe0BE1pb2D47bPjS/view?usp=drivesdk",
+  "camera": {
+   "x": -120.6,
+   "z": 214.0,
+   "heading": 242,
+   "accuracy": 4.7,
+   "altitude": 6.2,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -122.4,
+   214.9
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "threshold strip at the foot of the arcade ramp"
+ },
+ {
+  "id": "IMG_2987.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2987.jpg",
+  "title": "Ivy hedge on a white kerb across Pintor Dalí, eucalyptus beyond",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking west-south-west across the Pintor Dalí asphalt: a continuous clipped ivy hedge about 2 m high on a white-painted kerb, eucalyptus trees behind it.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1g3TdJnZWQ8pDwj-2Oo5Ee3de2A4dogV5/view?usp=drivesdk",
+  "camera": {
+   "x": -122.4,
+   "z": 214.9,
+   "heading": 243,
+   "accuracy": 4.5,
+   "altitude": 6.6,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -131.3,
+   219.4
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees",
+   "dali_street.json:dali-fence-plinth"
+  ],
+  "subject": "west side of Pintor Dalí opposite the arcade ramp"
+ },
+ {
+  "id": "IMG_2988.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2988.jpg",
+  "title": "Ivy hedge and white kerb along the west side of Pintor Dalí",
+  "shows": [
+   "dali"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "planting",
+   "materials",
+   "layout"
+  ],
+  "note": null,
+  "observation": "Looking north-west up Pintor Dalí along its west edge: the clipped ivy hedge on a white kerb runs straight up the street, eucalyptus and pines behind, leaf litter on the asphalt.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1J30Rg7Ma3jTDXLztM1JLX9WIk9skZ9a9/view?usp=drivesdk",
+  "camera": {
+   "x": -123.1,
+   "z": 215.2,
+   "heading": 300,
+   "accuracy": 4.4,
+   "altitude": 7.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -131.8,
+   210.2
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "parking:Dalí car park",
+   "street:dali",
+   "backdrop.json:aerial-trees"
+  ],
+  "subject": "west edge of Pintor Dalí looking north-west"
+ },
+ {
+  "id": "IMG_2989.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2989.jpg",
+  "title": "Seaward end of Pintor Dalí: yellow kerb line, no-parking sign and mesh fence to the sea",
+  "shows": [
+   "dali",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "layout",
+   "signage",
+   "materials",
+   "view"
+  ],
+  "note": null,
+  "observation": "Looking east at the seaward end of Pintor Dalí: a curved yellow-painted kerb line on concrete, a house corner with bougainvillea and a flower bed on the left, a white wall with a no-parking sign and a green mesh fence above it, a palm, and the sea beyond.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1m41IMkDtXjGYYNg6EBxowrDTV1_zu1Fs/view?usp=drivesdk",
+  "camera": {
+   "x": -123.6,
+   "z": 217.4,
+   "heading": 100,
+   "accuracy": 4.1,
+   "altitude": 6.8,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -113.8,
+   219.1
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [],
+  "subject": "seaward end of Pintor Dalí where it meets the beach fence"
+ },
+ {
+  "id": "IMG_2990.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2990.jpg",
+  "title": "From the beach grass west of the paseo end, looking along the paseo toward La Concha",
+  "shows": [
+   "barraka-beach",
+   "paseo"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view",
+   "layout",
+   "materials"
+  ],
+  "note": "The EXIF heading of 138 degrees disagrees with the picture, which looks roughly east-north-east along the coast (sea on the right, mountains ahead); treat the heading as unreliable.",
+  "observation": "From rough grass on the beach looking along the coast: the pink paseo with tall lamp posts and a sandstone wall with green mesh on the left, white houses with tiled cupolas, a beach restaurant further on, La Concha and the coast toward Marbella.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1sKv_0xdufH1DHCZsIX5YVQmgS919zZjA/view?usp=drivesdk",
+  "camera": {
+   "x": -102.7,
+   "z": 237.8,
+   "heading": 138,
+   "accuracy": 5.4,
+   "altitude": 5.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -75.9,
+   267.5
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:beach"
+  ],
+  "subject": "paseo and seafront wall seen from the beach west of their end"
+ },
+ {
+  "id": "IMG_2991.jpg",
+  "kind": "phone-photo",
+  "path": "public/photos-ref/IMG_2991.jpg",
+  "title": "Beach and sea looking east-north-east along the coast toward Marbella",
+  "shows": [
+   "barraka-beach"
+  ],
+  "areasBasis": "reviewed",
+  "viewpoint": "ground",
+  "useFor": [
+   "view"
+  ],
+  "note": null,
+  "observation": "Looking east-north-east from the beach grass west of the paseo: sand with tyre tracks, a few people at the water's edge, the bay and the coast with hotels and mountains toward Marbella.",
+  "taken": "2026-11-16",
+  "originalUrl": "https://drive.google.com/file/d/1TQu4wD-EOnKjKBbfVRPxAxap-lhHtcPq/view?usp=drivesdk",
+  "camera": {
+   "x": -102.5,
+   "z": 238.7,
+   "heading": 74,
+   "accuracy": 5.1,
+   "altitude": 5.0,
+   "trust": "phone location"
+  },
+  "citedBy": [],
+  "looksAt": [
+   -44.8,
+   222.2
+  ],
+  "looksAtBasis": "reviewed",
+  "looksAtFeatures": [
+   "area:beach"
+  ],
+  "subject": "beach and shoreline east of the camera"
  },
  {
   "id": "ref:apple-maps/01-3d-overview-from-north.png",
