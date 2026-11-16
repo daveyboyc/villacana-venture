@@ -1,18 +1,31 @@
 import "./app.css";
 import "./blueprint";
+import { detectDeviceType, initAnalytics, trackEvent } from "./analytics";
 import { asset } from "./asset";
+
+initAnalytics();
 
 type View = "map" | "overview" | "walk";
 const mapPage = document.querySelector<HTMLElement>("#map-page")!;
 const scenePage = document.querySelector<HTMLElement>("#scene-page")!;
 const frame = document.querySelector<HTMLIFrameElement>("#resort-scene")!;
 let selectedPoint: number[] | null = null;
+let currentView: View | null = null;
 let frameRotation = 26;
 void fetch(asset("/map/skeleton.json")).then(r=>r.json()).then(s=>{frameRotation=s.viewRotation;});
 
 function setView(view: View, history = true): void {
   const url = new URL(location.href); url.searchParams.set("view", view);
   if (history) window.history.pushState(null, "", url);
+  if (currentView !== null && currentView !== view) {
+    trackEvent("view_switched", {
+      from_view: currentView,
+      to_view: view,
+      area: url.searchParams.get("area"),
+      photo: url.searchParams.get("photo"),
+    });
+  }
+  currentView = view;
   frame.contentWindow?.postMessage({type:"villacana-controls-reset"},location.origin);
   document.body.dataset.appView = view;
   mapPage.hidden = view !== "map"; scenePage.hidden = view === "map";
@@ -40,7 +53,9 @@ function setView(view: View, history = true): void {
 }
 for (const view of ["map", "overview", "walk"] as const) document.querySelector(`#view-${view}`)!.addEventListener("click", () => setView(view));
 document.querySelector('#visit-silvia')!.addEventListener('click',()=>{
-  const url=new URL(location.href);url.searchParams.delete('study');url.searchParams.delete('at');url.searchParams.delete('look');url.searchParams.set('area','silvia-north');url.searchParams.set('place','silvia');url.searchParams.set('details','1');window.history.replaceState(null,'',url);setView('overview');
+  const url=new URL(location.href);url.searchParams.delete('study');url.searchParams.delete('at');url.searchParams.delete('look');url.searchParams.set('area','silvia-north');url.searchParams.set('place','silvia');url.searchParams.set('details','1');window.history.replaceState(null,'',url);
+  trackEvent("area_jumped", { area_id: "silvia-north", area_name: "Silvia tunnel", source: "silvia_shortcut" });
+  setView('overview');
 });
 document.querySelector("#app-photo-toggle")!.addEventListener("click", () => { setView("map"); document.querySelector<HTMLInputElement>("#photo-search")?.focus(); });
 const requestedView=():View=>{
@@ -62,6 +77,15 @@ window.addEventListener("message", event => {
   if (event.origin !== location.origin || event.source !== frame.contentWindow) return;
   if(event.data?.type==='villacana-inspect-area' && typeof event.data.area==='string'){
     const url=new URL(location.href);url.searchParams.set('area',event.data.area);url.searchParams.set('view','overview');window.history.replaceState(null,'',url);
+    if (currentView !== null && currentView !== "overview") {
+      trackEvent("view_switched", {
+        from_view: currentView,
+        to_view: "overview",
+        area: event.data.area,
+        photo: url.searchParams.get("photo"),
+      });
+    }
+    currentView = "overview";
     document.body.dataset.appView='overview';
     document.querySelector('#view-overview')!.setAttribute('aria-pressed','true');document.querySelector('#view-walk')!.setAttribute('aria-pressed','false');
   }
@@ -73,4 +97,15 @@ window.addEventListener("message", event => {
     if(typeof event.data.photo === "string") window.dispatchEvent(new CustomEvent("reference-open", {detail:event.data.photo}));
   }
 });
-setView(requestedView(),false);
+const initialView = requestedView();
+const initialParams = new URLSearchParams(location.search);
+trackEvent("session_started", {
+  entry: "app",
+  initial_view: initialView,
+  device_type: detectDeviceType(),
+  viewport_width: window.innerWidth,
+  viewport_height: window.innerHeight,
+  initial_area: initialParams.get("area"),
+  initial_photo: initialParams.get("photo"),
+});
+setView(initialView,false);

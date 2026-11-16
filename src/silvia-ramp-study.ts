@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {detectDeviceType,initAnalytics,trackEvent} from './analytics';
 import {createSilviaRampPassage,type RampVariant} from './silvia-ramp-passage';
 import {asset} from './asset';
 
@@ -12,6 +13,8 @@ const PRESETS:Record<string,{variant:RampVariant;cam:number[];photo:string}>={
  'IMG_2574':{variant:'22-44',photo:'IMG_2574.jpg',cam:[1.3,1.45,-2.0,-1.0,.5,1.0,67.6]}
 };
 export function bootSilviaRampStudy(){
+ initAnalytics();
+ trackEvent('session_started',{entry:'silvia_ramp_study',initial_view:'study',device_type:detectDeviceType(),viewport_width:innerWidth,viewport_height:innerHeight});
  const q=new URLSearchParams(location.search),canvas=document.querySelector<HTMLCanvasElement>('#scene')!;
  for(const id of ['areas','title','current-route','layout-details','back','gate-control','jump','walk-camera','walk-pad','walk-touch-help','overview-controls','alignment-notes','overview','help','inspection-jump']){const n=document.getElementById(id);if(n)n.style.display='none';}
  const style=document.createElement('style');style.textContent='.rs-bar{position:fixed;top:12px;left:12px;right:12px;display:flex;gap:6px;flex-wrap:wrap;z-index:5;font:14px system-ui;color:#273b34}.rs-bar b{background:#fffdf5ed;padding:9px 12px;border-radius:8px}.rs-bar button{font:inherit;padding:9px 12px;border-radius:8px;border:1px solid #b8b9aa;background:#fffdf5;cursor:pointer;min-height:44px}.rs-note{position:fixed;bottom:12px;left:12px;right:12px;background:#fffdf5e8;border-radius:8px;padding:8px 12px;font:12px system-ui;pointer-events:none}';document.head.append(style);

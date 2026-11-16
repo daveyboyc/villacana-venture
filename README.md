@@ -125,6 +125,10 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium node scripts/test_photo_map_bro
 
 See the handover for the complete geometry and browser suite.
 
+## Analytics
+
+Production builds on GitHub Pages send lightweight PostHog usage analytics (`app: "villacana-roam"`); local dev, preview, and Playwright checks do not initialize PostHog. See [docs/ANALYTICS.md](docs/ANALYTICS.md) for the event list and configuration.
+
 Historical photo-frame assets retain their source credits in
 `public/photos/album.json`: Jay Cross's Estepona beach (CC BY 2.0) and Turista
 Inglesa's Playa del Cristo image (CC BY-SA 4.0). These are legacy prototype assets,
