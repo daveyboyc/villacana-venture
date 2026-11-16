@@ -84,6 +84,7 @@ const fs = require('node:fs');
     await touch('touchMove', [[1, panFrom[0] + 90, panFrom[1] - 70]]);
     await touch('touchEnd', []);
     await mobile.waitForFunction(c => document.querySelector('#overview-controls').dataset.centre !== c, originText);
+    assert(Number((await centreText()).split(',')[1]) > origin[1], 'one finger moving up moves forward, the reverse of a mouse drag');
     assert.equal(await pitchNow(), pitch, 'one finger pans without tilting');
     assert.equal(await mobile.locator('#overview-controls').getAttribute('data-bearing'), '0', 'one finger pans without turning');
     await resort();
