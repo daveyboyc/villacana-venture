@@ -36213,10 +36213,11 @@
     {
      "id": "model:frontage_divisions.json:cervantes-lawn-door-path",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy elena-junction-west-wall-position"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -36861,7 +36862,8 @@
       "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "open discrepancy photo-discrepancy:f6d49220c6e1793b"
+       "open discrepancy photo-discrepancy:f6d49220c6e1793b",
+       "open model-loop discrepancy elena-junction-west-wall-position"
       ],
       "reviewIds": [],
       "reportIds": [
@@ -39943,7 +39945,8 @@
       "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "open discrepancy photo-discrepancy:e633823b86a8e2cd"
+       "open discrepancy photo-discrepancy:e633823b86a8e2cd",
+       "open model-loop discrepancy elena-junction-west-wall-position"
       ],
       "reviewIds": [],
       "reportIds": [
@@ -39961,6 +39964,7 @@
       "scope": "placement only",
       "blockers": [
        "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy elena-junction-west-wall-position",
        "open model-loop discrepancy elena-junction-far-end"
       ],
       "reviewIds": [],
@@ -41943,10 +41947,11 @@
     {
      "id": "model:frontage_divisions.json:cervantes-lawn-door-path",
      "placement": {
-      "status": "unreviewed",
+      "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "No measured placement packet and independent approval recorded; earlier manual reviews may exist."
+       "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy elena-junction-west-wall-position"
       ],
       "reviewIds": [],
       "reportIds": [],
@@ -41961,7 +41966,8 @@
       "status": "disputed",
       "scope": "placement only",
       "blockers": [
-       "open discrepancy photo-discrepancy:e633823b86a8e2cd"
+       "open discrepancy photo-discrepancy:e633823b86a8e2cd",
+       "open model-loop discrepancy elena-junction-west-wall-position"
       ],
       "reviewIds": [],
       "reportIds": [
@@ -41979,6 +41985,7 @@
       "scope": "placement only",
       "blockers": [
        "No measured placement packet and independent approval recorded; earlier manual reviews may exist.",
+       "open model-loop discrepancy elena-junction-west-wall-position",
        "open model-loop discrepancy elena-junction-far-end"
       ],
       "reviewIds": [],

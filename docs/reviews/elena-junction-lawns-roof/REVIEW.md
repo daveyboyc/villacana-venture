@@ -125,3 +125,73 @@ is false: the script reproduces, but its 0.19 m rms depends on misplaced picks a
 5. Correct the packet README and the `lane_walls.json` basis text. They give the IMG_2358 residuals as all
    east of the face, and the wall-foot figure as 0.23 rms / 0.51 worst; the script gives 0.25 / 0.55 for
    wall-foot points alone.
+
+## Re-review (17 November 2026, refit c1381f2)
+
+Reviewer: `reviewer-subagent-ztsc2t` (agent; did not make the change), the same reviewing agent as above.
+
+**Verdict: approved with limits.** The straight run, the bed door and its sill, lawn 1's west edge and the
+cross path are approved. The far length (bed-door joint to the cypress wall) is approved only to its depth
+limit: it is 0.1-0.25 m too far west, kept open as a discrepancy.
+
+### What I inspected
+
+- The refreshed `ELENA-ROOF-2026-11-17-traced-after.jpg`, `IMG_2358-traced-after.jpg` and the after renders.
+- My own overlays of the refitted wall face (base and 2.2 m top) and both doors, projected through
+  ELENA-ROOF, IMG_2358 and IMG_2220.
+- `git diff e8ac81a c1381f2`.
+- `measure_elena_junction_lawns.py` reproduces: 21 points, 0.10 m rms, worst 0.19 m; held-out +0.34, +0.28.
+
+All five earlier fixes are in:
+- the wall is 3 points and the jog is gone;
+- the residual is signed;
+- the bed door is on the run, with its sill outward equal to the run's normal (0.838, -0.546);
+- `check_door_sills.py` is back to 8°, and IMG_2330's bearing to the bed door is 189.6° against 195°;
+- the README and basis texts are corrected.
+
+### Fresh independent picks (none of the ten used in the fit), signed, + = lawn side of the face
+
+| Group | Picks | Residuals (m) | rms / worst |
+| --- | --- | --- | --- |
+| Straight run foot, ELENA-ROOF | (690,944) (710,966) (750,1004) (760,1007) | -0.10 -0.07 -0.05 -0.12 | |
+| Straight run foot, IMG_2358 | (1121,575) (1127,590) (1154,635) (1164,650) | +0.05 +0.09 +0.12 +0.11 | 0.09 / 0.12, mean 0.00 |
+| Far length foot, ELENA-ROOF, 21-23 m | (437,692) (447,700) (457,710) (467,721) | +0.23 +0.14 +0.08 +0.04 | |
+| Far length foot, IMG_2358, 21-24 m | (933,245) (944,270) (955,295) (962,310) | +0.27 +0.23 +0.20 +0.18 | 0.18 / 0.27, mean +0.17 |
+| **All 16 (two cameras)** | | | **0.15 / 0.27** |
+
+### Doors, ends and lawns
+
+- **Bed door.** The photographed sill and pier cast to 6.42-6.47 m along the run in ELENA-ROOF and 7.50 m in
+  IMG_2358, all within ±0.07 m across the wall. The model door at 7.06 m sits between them, 0.5-0.65 m from
+  each, which is along-ray depth spread at 15-16 m. Accepted.
+- **Lawn door.** The photographed door base (500,737) casts 0.04 m across the far length and 0.7 m along it
+  from the model door. That is depth at 19 m, as before. The door is 0.12 m off the wall centreline.
+- **North end.** The photographed corner foot casts 0.28 m north of the model end along the wall and 0.05 m
+  across it. The corner's foot is partly behind bougainvillea. The model end lies on the
+  `cervantes-patio-south-2` line. Accepted.
+- **South end.** It is unchanged on registry part5 corner 42.
+- **Lawns and path.** Lawn 1's west edge is 0.35 m from the centreline (0.46 m at the cross-path corner).
+  Lawn 2's west edge is 0.35 m. The cross path ends at the wall face (0.12-0.13 m from the centreline).
+  The traced overlays show the green edges at the shrub-bed line and the red base on the photographed foot.
+
+### The far-length held-out misfit
+
+- The script's held-out pick (465,742) is about 20 px below the far-length foot, on the grass by lawn 2's
+  kerb end, so its +0.34 m overstates the misfit. My picks at the grass line give +0.04 to +0.27 m, mean +0.17 m.
+- That is within 0.3 m and does not block approval. It is one-signed in both cameras, though, so the far
+  length probably sits about 0.15 m too far west. At 21-24 m a 1° pitch error moves a ground point about 1 m
+  along the ray (about 0.3-0.4 m across this wall).
+- Recommendation: keep a discrepancy open for the far length ("about 0.15 m west, depth-limited"), to be closed
+  by a ground-level view from the lawn or the gate (photo request `elena-south-cypress-wall-gate`). Do not move
+  it from these roof cameras alone.
+
+### Note on IMG_2220
+
+IMG_2220 is a third solved roof camera. My foot picks through it land +0.46 to +0.56 m on the lawn side, but
+its own lane-kerb picks miss lawn 1's lane edge by up to +0.61 m in the same sense. Its solve is the weak one
+(20 px control rms, 0.76 m check). That is camera error, not wall error, and it does not count against the refit.
+
+### Checks
+
+`check_lane_walls.py`, `check_door_sills.py` (at 8°), `check_junction_lawns.py`, `check_ground_plan.py`: PASS.
+`build_references.py --check`: 533 references, 0 problems.

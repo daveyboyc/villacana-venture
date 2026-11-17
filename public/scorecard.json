@@ -1131,7 +1131,7 @@
    "placement": {
     "features": 41,
     "verified": 0,
-    "disputed": 5
+    "disputed": 6
    },
    "discrepancies": [
     {
@@ -1174,10 +1174,10 @@
    ],
    "loop": {
     "counts": {
-     "ready": 5,
+     "ready": 6,
      "needs-evidence": 0,
      "needs-source-access": 0,
-     "awaiting-review": 1,
+     "awaiting-review": 0,
      "accepted": 0
     },
     "requests": [
@@ -1408,7 +1408,7 @@
    "placement": {
     "features": 41,
     "verified": 0,
-    "disputed": 6
+    "disputed": 7
    },
    "discrepancies": [
     {
@@ -3049,7 +3049,7 @@
    "placement": {
     "features": 495,
     "verified": 0,
-    "disputed": 46
+    "disputed": 47
    },
    "discrepancies": [
     {
@@ -3284,10 +3284,10 @@
    ],
    "loop": {
     "counts": {
-     "ready": 13,
+     "ready": 14,
      "needs-evidence": 4,
      "needs-source-access": 0,
-     "awaiting-review": 2,
+     "awaiting-review": 1,
      "accepted": 0
     },
     "requests": [

@@ -203,7 +203,7 @@ graph LR
   F33 --> PIMG_2689_jpg(["IMG_2689"])
   F33 --> PIMG_2690_jpg(["IMG_2690"])
   F33 --> PIMG_2691_jpg(["IMG_2691"])
-  A --> F34["Front-door approach between lawns · unreviewed"]
+  A --> F34["Front-door approach between lawns · disputed"]
   F34 --> PELENA_ROOF_2026_11_17_jpg(["ELENA-ROOF-2026-11-17"])
   F34 --> PIMG_2260_jpg(["IMG_2260"])
   F34 --> PIMG_2261_jpg(["IMG_2261"])
@@ -275,11 +275,11 @@ graph LR
 | `elena_walkway.json:elena-walkway-floor` | disputed | differs | open discrepancy photo-discrepancy:9e5aa174efadfeb8 |
 | `elena_walkway.json:elena-walkway-steps-ramp` | disputed | differs | open discrepancy photo-discrepancy:f079867db62cff7d |
 | `elena_walkway.json:elena-walkway-wall-details` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `frontage_divisions.json:cervantes-lawn-door-path` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-lawn-door-path` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-west-wall-position |
 | `junction_lawns.json:junction-pollarded-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `junction_lawns.json:junction-pollarded-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `junction_lawns.json:junction-pollarded-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `lane_walls.json:elena-south-lawn-west-wall` | disputed | differs | open discrepancy photo-discrepancy:f6d49220c6e1793b |
+| `lane_walls.json:elena-south-lawn-west-wall` | disputed | differs | open discrepancy photo-discrepancy:f6d49220c6e1793b; open model-loop discrepancy elena-junction-west-wall-position |
 | `lane_walls.json:elena-south-mouth-patio-wall` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `plain_fronts.json:elena-24-south-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 

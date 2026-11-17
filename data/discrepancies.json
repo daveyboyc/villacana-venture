@@ -242,7 +242,7 @@
       "id": "elena-junction-west-wall-position",
       "area": "elena",
       "kind": "placement",
-      "description": "The white wall with two doors along the west side of the junction lawns stood about 1.1-1.4 m too far west, with a 1.1 m jog the photos do not show, and both lawns stopped 0.4-0.5 m short of the lane kerb and well short of the wall, leaving a paved band the photos show as lawn. 17 November 2026: the wall refitted to the photographed foot (a straight run from Cervantes past the bed door, then the existing far length), the bed door and sill onto that run, the lawns and cross path to the measured kerbs and wall (0.10 m rms over 21 points, worst 0.19 m). Still open: the far length behind lawn 2 sits about 0.3 m west of the two held-out foot points 20-24 m out (rms 0.31 m). The first fit was rejected in review (REVIEW.md) for picks on the wall face, an unsigned residual and the jog.",
+      "description": "The white wall with two doors along the west side of the junction lawns stood about 1.1-1.4 m too far west, with a 1.1 m jog the photos do not show, and both lawns stopped 0.4-0.5 m short of the lane kerb and well short of the wall, leaving a paved band the photos show as lawn. 17 November 2026: the wall refitted to the photographed foot (a straight run from Cervantes past the bed door, then the existing far length), the bed door and sill onto that run, the lawns and cross path to the measured kerbs and wall (0.10 m rms over 21 points, worst 0.19 m). Re-review 17 November 2026 (REVIEW.md): approved with limits; sixteen fresh reviewer picks fit at 0.15 m rms (straight run 0.09, far length 0.18 with a one-sided +0.17 m, i.e. the far length may stand about 0.15 m too far west). Still open: the far length's position, to be settled by a ground photo (request elena-south-cypress-wall-gate). The first fit was rejected in review (REVIEW.md) for picks on the wall face, an unsigned residual and the jog.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
         "IMG_2358.jpg",
@@ -255,7 +255,7 @@
         "frontage_divisions.json:cervantes-lawn-door-path"
       ],
       "task": "elena-junction-lawns-roof",
-      "status": "fixed",
+      "status": "open",
       "requests": []
     },
     {

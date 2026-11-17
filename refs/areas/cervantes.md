@@ -213,7 +213,7 @@ graph LR
   A --> F32["Cervantes / Elena · paved front enclosure · unreviewed"]
   F32 --> PIMG_2260_jpg(["IMG_2260"])
   F32 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F33["Front-door approach between lawns · unreviewed"]
+  A --> F33["Front-door approach between lawns · disputed"]
   F33 --> PELENA_ROOF_2026_11_17_jpg(["ELENA-ROOF-2026-11-17"])
   F33 --> PIMG_2260_jpg(["IMG_2260"])
   F33 --> PIMG_2261_jpg(["IMG_2261"])
@@ -287,10 +287,10 @@ graph LR
 | `door_sills.json:elena-bed-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `door_sills.json:elena-lawn-door-sill` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `elena_east_patios.json:elena-east-patios-cervantes-wall` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `frontage_divisions.json:cervantes-elena-lawn-1` | disputed | differs | open discrepancy photo-discrepancy:e633823b86a8e2cd |
-| `frontage_divisions.json:cervantes-elena-lawn-2` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-far-end |
+| `frontage_divisions.json:cervantes-elena-lawn-1` | disputed | differs | open discrepancy photo-discrepancy:e633823b86a8e2cd; open model-loop discrepancy elena-junction-west-wall-position |
+| `frontage_divisions.json:cervantes-elena-lawn-2` | disputed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-west-wall-position; open model-loop discrepancy elena-junction-far-end |
 | `frontage_divisions.json:cervantes-front-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `frontage_divisions.json:cervantes-lawn-door-path` | unreviewed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `frontage_divisions.json:cervantes-lawn-door-path` | disputed | incomplete | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy elena-junction-west-wall-position |
 | `frontage_divisions.json:cervantes-west-planting` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `junction_lawns.json:junction-pollarded-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `lane_walls.json:cervantes-north-garden-wall-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |

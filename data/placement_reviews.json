@@ -555,7 +555,7 @@
     },
     {
      "path": "docs/reviews/elena-junction-lawns-roof/REVIEW.md",
-     "sha256": "d1795f16e58f3eed5a39a9376c72baeb116e020bf8938e46e3256837b70136e6"
+     "sha256": "77cfe3e45c4b319867d27c1990cd906893867241316358260f68896119ac2d65"
     }
    ],
    "previousReviews": [
@@ -590,7 +590,34 @@
      "notes": "Script reproduces (0.19 m rms, worst 0.55) but its near wall-foot picks (700,940) and (745,978) sit 14-22 px up the lit wall face and its wall residual is unsigned. Ten independent wall-foot picks at the grass/white boundary (ELENA-ROOF 5, IMG_2358 5), signed: +0.27 +0.28 +0.28 +0.10 -0.22 / +0.42 +0.43 +0.24 -0.20 -0.36, 0.30 m rms, worst 0.43, systematic: the main run is still 0.27-0.47 m too far west, and the photographed foot runs straight on 5-6 m to the bed-door pier where the model's 1.1 m jog stands up to 0.36 m out on lawn (IMG_2367 agrees). The photographed bed door is about 0.4 m east of the main-run line in both cameras against 1.05 m for the moved door (about 0.65 m too far east; 0.38 m rms with it); IMG_2330 bearing 195 deg fits it at 189-193 deg against 185.8 deg for the moved door, and check_door_sills.py was relaxed from 8 to 10 deg to pass it. Wall ends slide correctly along cervantes-patio-south-2 and registry part5 edge 41. Lane-kerb lawn edges (0.00 to -0.04 m, but the kerb is a solve control), cross-path kerb (-0.13..+0.08 m), lane/path-only kerbs and the elena-24-south-patio porch suppression (open patio in ELENA-ROOF, IMG_2358, IMG_2367) are sound. Required: re-pick the foot, refit the wall shape (main run about 0.3-0.45 m further east to the bed-door pier, short projection at the bed door), move the bed sill, revert the 10 deg tolerance, carry the lawn west edges.",
      "review": "docs/reviews/elena-junction-lawns-roof/REVIEW.md"
     }
-   ]
+   ],
+   "reviewer": {
+    "kind": "agent",
+    "id": "reviewer-subagent-ztsc2t",
+    "date": "2026-11-17",
+    "verdict": "approved-with-limits",
+    "sourcesInspected": [
+     "public/photos-ref/ELENA-ROOF-2026-11-17.jpg",
+     "public/photos-ref/IMG_2358.jpg",
+     "public/photos-ref/IMG_2220.jpg",
+     "public/photos-ref/IMG_2367.jpg",
+     "public/photos-ref/IMG_2330.jpg",
+     "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-after.jpg",
+     "docs/reviews/elena-junction-lawns-roof/IMG_2358-traced-after.jpg",
+     "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after.png",
+     "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
+     "scripts/measure_elena_junction_lawns.py",
+     "data/photo_poses.json",
+     "data/lane_walls.json",
+     "data/door_sills.json",
+     "data/frontage_divisions.json",
+     "data/cervantes_patio_walls.json",
+     "public/map/skeleton.json"
+    ],
+    "residualsConfirmed": true,
+    "notes": "Re-review of the refit (c1381f2), 17 Nov 2026. Script reproduces 0.10 m rms, worst 0.19 (21 points). Sixteen fresh signed picks, none from the fit: straight run foot ELENA-ROOF -0.10 -0.07 -0.05 -0.12, IMG_2358 +0.05 +0.09 +0.12 +0.11 (0.09 rms, worst 0.12, mean 0.00); far length foot at 21-24 m, ELENA-ROOF +0.23 +0.14 +0.08 +0.04, IMG_2358 +0.27 +0.23 +0.20 +0.18 (0.18 rms, worst 0.27, mean +0.17); all 0.15 rms, worst 0.27. Bed door: photographed sill/pier within 0.07 m across the run, model door between the two cameras' along-ray casts (6.4-7.5 m along, model 7.06); sill outward square to the run; door-sill check back at 8 deg (189.6 vs 195). North end 0.05 m across, 0.28 m along from the photographed corner; on the Cervantes wall line. Approved: straight run, bed door and sill, lawn 1 west edge, cross path. Limit: the far length is about 0.15 m too far west in both cameras but depth-limited at 21-24 m; the script's held-out pick (465,742) sits about 20 px below the foot, so its +0.34 overstates the misfit. Keep it open as a discrepancy until a ground-level view; it does not block. IMG_2220 (weak solve) shows +0.5 m on the wall, but also +0.6 m on the lane kerb, so that is camera error.",
+    "review": "docs/reviews/elena-junction-lawns-roof/REVIEW.md"
+   }
   }
  ]
 }
