@@ -24,37 +24,46 @@ Both cameras stand at the Elena 24 parapet within 0.5 m of each other.
 
 ## Changes
 
+First fit (rejected in review, `REVIEW.md`): the wall was slid 1.07 m east keeping its traced shape, fitted
+partly to picks that sat up the lit wall face, with an unsigned residual. The reviewer showed the photographed
+foot runs straight past the old jog and the bed door had moved 0.65 m too far east. Refit:
+
 | Feature | Change |
 | --- | --- |
-| `lane_walls.json:elena-south-lawn-west-wall` | Moved 1.07 m along the Cervantes south wall line (0.919 m east, 0.548 m north): fitted to the wall-foot points. Its north end still meets `cervantes-patio-south-2`, its south end the cypress wall (registry 6265801UF1366N_part5 corner 42). Shape and height unchanged. |
-| `door_sills.json:elena-lawn-door-sill`, `elena-bed-door-sill` and the wall's two doors | Moved with the wall. The lawn door is 0.19 m from the measured end of the cross path. |
-| `frontage_divisions.json:cervantes-elena-lawn-1` | Lane edge on the measured kerb; cross-path edge on the path's kerb; west edge 0.35 m from the wall centreline (the shrub strip at the foot); north edge along the Cervantes south wall (inferred from the aerial, hidden in both roof views). |
-| `frontage_divisions.json:cervantes-elena-lawn-2` | Lane edge on the measured kerb, west edge 0.35 m from the moved wall; cross-path and far edges unchanged. |
-| `frontage_divisions.json:cervantes-lawn-door-path` | East end to the lane kerb, west end to the moved wall face at the lawn door. |
+| `lane_walls.json:elena-south-lawn-west-wall` | Three points now: the north end on the Cervantes south wall line (-157.97, 61.40), a straight run along the photographed foot (direction 0.546, 0.838; ten foot points from both cameras on one line, 0.09 m rms) to where it meets the existing far length (-153.27, 68.61), then that far length to the cypress wall (registry 6265801UF1366N_part5 by corner 42). The 1.1 m jog is gone. Height unchanged. |
+| `elena-south-bed-door` and `door_sills.json:elena-bed-door-sill` | On the straight run 7.06 m from the north end, at (-154.01, 67.24), where both cameras put the door; sill facing square to the run. IMG_2330's bearing to it is 189.6 deg (photo 195, the reviewer's reading 189-193); `check_door_sills.py` keeps its 8 deg tolerance. |
+| `elena-south-lawn-door` and `door_sills.json:elena-lawn-door-sill` | 1.07 m along the Cervantes wall line from the first trace, on the far length, 0.19 m from the measured end of the cross path. |
+| `frontage_divisions.json:cervantes-elena-lawn-1` | Lane edge on the measured kerb; cross-path edge on the path's kerb; west edge 0.35 m from the refitted run (the shrub strip at the foot); north edge along the Cervantes south wall (inferred from the aerial, hidden in both roof views). |
+| `frontage_divisions.json:cervantes-elena-lawn-2` | Lane edge on the measured kerb, west edge 0.35 m from the far length; cross-path and far edges unchanged. |
+| `frontage_divisions.json:cervantes-lawn-door-path` | East end to the lane kerb, west end to the far length's face at the lawn door. |
 | Kerbs (`cervantes-elena-lawn-1-curb`, `-2-curb`) | Along the lane and the cross path only. No white kerb along the west wall foot in either photo. |
 | `plain_fronts.json:elena-24-south-patio` | No generated porch on that bay of Elena 24's south face. |
 
 ## Measurements
 
-`python3 scripts/measure_elena_junction_lawns.py` (after `node scripts/shoot_views.cjs ELENA-ROOF-2026-11-17 --pose` writes the model ground). Each pixel pick is cast through its solved camera onto the model ground and compared with the edge it belongs on in the current data.
+`python3 scripts/measure_elena_junction_lawns.py` (after `node scripts/shoot_views.cjs ELENA-ROOF-2026-11-17 --pose` writes the model ground). Each pixel pick is cast through its solved camera onto the model ground and compared with the edge it belongs on in the current data. Wall residuals are signed: + means the photographed foot is on the lawn side of the model face.
 
 | Group | Points | Residuals (m) |
 | --- | --- | --- |
 | Lane kerb (new photo 5, IMG_2358 2) | 7 | +0.07 -0.09 -0.10 -0.06 -0.02 / +0.08 +0.11 |
 | Near lawn cross-path kerb | 3 | -0.10 +0.01 +0.16 |
-| West wall foot (new photo 7, IMG_2358 3) | 10 | +0.15 +0.01 +0.03 +0.01 +0.06 -0.06 +0.13 / +0.47 +0.23 +0.55 |
+| West wall foot at the grass line (new photo 4, IMG_2358 6) | 10 | -0.18 -0.10 -0.07 -0.05 / +0.03 +0.05 +0.03 +0.11 +0.08 +0.09 |
 | Cross-path end to the lawn door | 1 | 0.19 |
-| **Used** | **21** | **rms 0.19, worst 0.55 (IMG_2358 wall foot)** |
-| Held out: far lawn wall foot, 20 and 24.5 m out | 2 | +0.34 +0.28 (rms 0.31) |
+| **Used** | **21** | **rms 0.10, worst 0.19** |
+| Held out: far length's foot, 20 and 24.5 m out | 2 | +0.34 +0.28 (rms 0.31) |
 
-Before the change the same wall-foot points were 1.01 m rms from the wall face, and the lane kerb 0.4-0.6 m from the lawns' lane edges. IMG_2358's wall-foot picks sit 0.2-0.55 m east of the moved face; its solve has the weaker controls (13.9 px rms), so the shift was fitted mainly to the new photo.
+The lane kerb is a control in both camera solves, so the kerb residuals are not independent. The wall-foot
+picks set the straight run, so they are fit residuals; the reviewer's independent picks are the check. The far
+length was not refitted: its south end is held at the registry corner, and its two held-out foot points sit
+about 0.3 m on the lawn side, at a range where depth is good to about 1 m along the ray. Left open in
+`elena-junction-west-wall-position`.
 
 ## Artifacts
 
 - `ELENA-ROOF-2026-11-17-overlay.jpg`: render edges through the solved camera after the change, with control and check picks.
 - `ELENA-ROOF-2026-11-17-traced-before.jpg`, `-traced-after.jpg`: lawn rings (green) and the west wall base and top (red) drawn on the photo through the solved camera.
 - `IMG_2358-traced-after.jpg`, `IMG_2358-overlay.jpg`, `IMG_2358-after.png`: the same through IMG_2358.
-- `aerial-plan-after.jpg`: Esri aerial, left plain, right with the old wall (pink) and lawns (grey), the new wall (red), lawns (green) and path (blue), and the projected picks (yellow: new photo wall foot, cyan: IMG_2358 wall foot, magenta: lane kerb, white: far lawn).
+- `aerial-plan-after.jpg`: Esri aerial, left plain, right with the old wall (pink) and lawns (grey), the new wall (red), lawns (green) and path (blue), and the projected picks (yellow: new photo wall foot at the grass line, cyan: IMG_2358 wall foot, magenta: lane kerb, white: far lawn).
 - `ELENA-ROOF-2026-11-17-{before,after}{,-details}.png`: Inspect renders through the solved camera, Layout and Show details.
 
 ## Still different (open)

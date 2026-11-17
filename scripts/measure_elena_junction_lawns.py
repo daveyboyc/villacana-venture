@@ -11,7 +11,8 @@ measured point lies from the edge it should sit on:
 
   - lane kerb points against the lane edge of lawns 1 and 2 (the kerb is drawn on the ring edge);
   - near-lawn cross-path kerb points against lawn 1's cross-path edge;
-  - wall-foot points against the lawn-side face of elena-south-lawn-west-wall (centreline + half thickness);
+  - wall-foot points against the lawn-side face of elena-south-lawn-west-wall (centreline + half thickness),
+    signed: + means the photographed foot is on the lawn side of the model face;
   - the cross-path end against the lawn door.
 
 Far points (more than 20 m out) are held out: at that range a 1 degree pitch error moves a ground point
@@ -33,8 +34,9 @@ PICKS = {
     'kerb': [(NEW, 230, 820), (NEW, 268, 900), (NEW, 305, 1000), (NEW, 338, 1100), (NEW, 368, 1200),
              (OLD, 705, 600), (OLD, 725, 820)],
     'cross-kerb': [(NEW, 300, 806), (NEW, 380, 791), (NEW, 460, 775)],
-    'wall-foot': [(NEW, 855, 1100), (NEW, 800, 1030), (NEW, 745, 978), (NEW, 700, 940), (NEW, 655, 905), (NEW, 600, 895),
-                  (NEW, 520, 835), (OLD, 1190, 690), (OLD, 1130, 560), (OLD, 1080, 470)],
+    # At the grass line under the lit wall, not on the wall face (review of 17 Nov 2026, REVIEW.md).
+    'wall-foot': [(NEW, 643, 893), (NEW, 700, 954), (NEW, 720, 975), (NEW, 740, 995),
+                  (OLD, 1092, 530), (OLD, 1100, 545), (OLD, 1113, 560), (OLD, 1145, 620), (OLD, 1178, 665), (OLD, 1198, 695)],
     'path-end': [(NEW, 495, 757)],
     'wall-foot-far': [(NEW, 465, 742), (NEW, 415, 662)],
 }
@@ -81,7 +83,12 @@ rings = {r['id']: r['ring'] for r in fronts['regions']}
 wall = next(w for w in json.loads((ROOT / 'data/lane_walls.json').read_text())['walls'] if w['id'] == 'elena-south-lawn-west-wall')
 lawn1, lawn2 = rings['cervantes-elena-lawn-1'], rings['cervantes-elena-lawn-2']
 door = next(d for d in wall['doors'] if d['id'] == 'elena-south-lawn-door')['at']
-face = lambda p: min(seg_dist(p, a, b) for a, b in zip(wall['points'], wall['points'][1:])) - wall['thickness'] / 2
+def face(p):
+    """Signed distance from the wall's lawn-side face: + on the lawn side (east), - behind the face."""
+    a, b = min(zip(wall['points'], wall['points'][1:]), key=lambda ab: seg_dist(p, *ab))
+    s = line_dist(p, a, b)
+    east = line_dist((a[0] + 1, a[1]), a, b)  # sign of a point due east of the segment
+    return (s if east > 0 else -s) - wall['thickness'] / 2
 
 
 def report(name, items, residual):

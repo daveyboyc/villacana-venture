@@ -50,11 +50,12 @@ IMG_2230 shows it leading into. Which is wrong is recorded as discrepancy `jorge
 (photo request `jorge-east-square-on`).
 
 **Elena, measured 17 November 2026** (task `elena-junction-lawns-roof`, `docs/reviews/elena-junction-lawns-roof`).
-A new roof photo from Elena 24 (`ELENA-ROOF-2026-11-17.jpg`) and IMG_2358, both with solved cameras, put the
-wall foot 1.07 m east of the line above (1.01 m rms off its face). The wall, both doors and their sills were moved
-1.07 m along the Cervantes south wall line, so the ends still meet that wall and the cypress wall; the lawns now
-run from the lane kerb to a 0.35 m shrub strip at the wall foot. Measured points fit at 0.19 m rms (worst 0.55 m),
-far held-out points 0.31 m.
+A new roof photo from Elena 24 (`ELENA-ROOF-2026-11-17.jpg`) and IMG_2358, both with solved cameras, show the
+wall foot running straight from the Cervantes south wall for about 8.6 m past the bed door. The line above stood
+1.1-1.4 m too far west, with a jog the photos do not show. The wall is now that straight run, then the existing far length to
+the cypress wall; the bed door and its sill sit on the run, the lawn door where the cross path ends. The lawns
+now run from the lane kerb to a 0.35 m shrub strip at the wall foot. Measured points fit at 0.10 m rms (worst
+0.19 m); the far length is about 0.3 m off two held-out points 20-24 m out.
 
 ## What was looked at and not built
 

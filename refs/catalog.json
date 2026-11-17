@@ -3022,8 +3022,8 @@
   "looksAtFeatures": [
    "backdrop.json:aerial-trees",
    "lane_walls.json:elena-south-lawn-west-wall",
-   "frontage_divisions.json:cervantes-lawn-door-path",
-   "frontage_divisions.json:cervantes-elena-lawn-1"
+   "frontage_divisions.json:cervantes-elena-lawn-1",
+   "frontage_divisions.json:cervantes-lawn-door-path"
   ],
   "subject": "Two brown garden doors in the white wall and the tiled approach between Elena south lawns"
  },
@@ -4679,7 +4679,8 @@
   "looksAtBasis": "estimated 6 m along the heading",
   "looksAtFeatures": [
    "frontage_divisions.json:cervantes-elena-lawn-1",
-   "backdrop.json:aerial-trees"
+   "backdrop.json:aerial-trees",
+   "lane_walls.json:elena-south-lawn-west-wall"
   ]
  },
  {

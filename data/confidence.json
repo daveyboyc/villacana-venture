@@ -665,7 +665,7 @@
   },
   "lane_walls.json:elena-south-lawn-west-wall": {
    "level": "photographed",
-   "why": "White wall with two brown doors along the west side of the lawns, photographed from the lane (IMG_2261, IMG_2260, IMG_2330) and the roof. Its line was measured on 17 Nov 2026 through two solved roof cameras (ELENA-ROOF-2026-11-17.jpg, IMG_2358): wall-foot points fit the face at 0.19 m rms with the lane and path kerbs. Height 2.2 m by eye; the stretch behind the far lawn is 20-24 m out and good to about 0.35 m."
+   "why": "White wall with two brown doors along the west side of the lawns, photographed from the lane (IMG_2261, IMG_2260, IMG_2330) and the roof. On 17 Nov 2026 its line was measured through two solved roof cameras (ELENA-ROOF-2026-11-17.jpg, IMG_2358): the straight run from Cervantes past the bed door fits ten foot points at 0.09 m rms. The far length behind lawn 2 is 20-24 m from the camera and about 0.3 m off. Height 2.2 m by eye."
   },
   "lane_walls.json:elena-south-mouth-patio-wall": {
    "level": "estimated",

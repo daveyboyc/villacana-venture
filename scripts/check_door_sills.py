@@ -69,10 +69,7 @@ for sill in d['sills']:
     # The best-pinned view (IMG_2330, ±3.4 m) must see the door where the photo shows it.
     cam = photos['IMG_2330.jpg']
     gap = angle_gap(bearing((cam['x'], cam['z']), door), sill['photoBearings']['IMG_2330.jpg'])
-    # IMG_2330's bearings are read from its phone compass and a +-3.4 m pin about 11 m from the doors, so they
-    # are a coarse check; since 17 Nov 2026 the doors' positions come from two solved roof cameras
-    # (docs/reviews/elena-junction-lawns-roof), which put the bed door 9.2 deg from its pin bearing.
-    assert gap <= 10, f'{name}: {gap:.1f} deg off the door in IMG_2330'
+    assert gap <= 8, f'{name}: {gap:.1f} deg off the door in IMG_2330'
     across = (-out[1], out[0])
     corners = [at(door, across, a, out, b) for a in (-sill['width'] / 2, sill['width'] / 2) for b in (0, sill['depth'])]
     assert not any(inside(c, r) for c in corners for r in solid), f'{name}: sill inside a building'

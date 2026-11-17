@@ -503,35 +503,35 @@
    "frame": "map-metres-east-south",
    "rule": "Measured approval (Dave, 2026-11-01): changed points against at least two solved photo cameras, rms 0.3 m or less, worst and held-out reported, reviewed by a second agent.",
    "tolerance": 0.3,
-   "change": "West wall with its two doors and sills moved 1.07 m along the Cervantes south wall line (0.919 m east, 0.548 m north); lawn 1 and 2 lane edges to the photographed kerb, their west edges to 0.35 m from the moved wall, lawn 1's cross-path edge to the path kerb and its north edge along the Cervantes wall; cross path carried from the kerb to the moved lawn door.",
+   "change": "West wall refitted after review: a straight run along the photographed foot from the Cervantes south wall line (-157.97, 61.40) to the existing far length at (-153.27, 68.61), then that far length (moved 1.07 m along the Cervantes wall line) to the cypress wall; the 1.1 m jog removed. Bed door and sill on the run at (-154.01, 67.24); lawn door and sill on the far length 0.19 m from the measured cross-path end. Lawn 1 and 2 lane edges to the photographed kerb, west edges 0.35 m from the wall, lawn 1's cross-path edge to the path kerb and its north edge along the Cervantes wall; cross path from the kerb to the lawn door.",
    "measurements": {
-    "method": "scripts/measure_elena_junction_lawns.py: pixel picks cast through the solved cameras of ELENA-ROOF-2026-11-17.jpg and IMG_2358.jpg onto the model ground and compared with the edges they belong on",
+    "method": "scripts/measure_elena_junction_lawns.py: pixel picks cast through the solved cameras of ELENA-ROOF-2026-11-17.jpg and IMG_2358.jpg onto the model ground and compared with the edges they belong on, wall residuals signed (+ = lawn side of the face). Wall-foot picks at the grass line as the first review required.",
     "cameras": [
      "ELENA-ROOF-2026-11-17.jpg",
      "IMG_2358.jpg"
     ],
     "aerial": "public/map/ground.json (Esri zoom 19): lawn extent and west limit, see aerial-plan-after.jpg",
     "residualM": {
-     "rms": 0.19,
-     "worst": 0.55,
+     "rms": 0.1,
+     "worst": 0.19,
      "points": 21
     },
     "heldOut": {
      "points": 2,
      "rms": 0.31,
      "worst": 0.34,
-     "what": "far lawn wall foot 20 and 24.5 m out"
+     "what": "far length's foot 20 and 24.5 m out, both on the lawn side; the far length was not refitted (south end held at the registry corner)"
     }
    },
-   "limitations": "Both cameras stand at the same parapet within 0.5 m, so their depth errors are not independent; the aerial supports the lawn extent but not kerb or wall-face lines. Beyond about 20 m (far wall, gate) depth is not measured. The lawn north edge is hidden in both photos and follows the aerial. Ground height under the lawns is the model's terrain.",
+   "limitations": "Both cameras stand at the same parapet within 0.5 m, so their depth errors are not independent; the aerial supports the lawn extent but not kerb or wall-face lines. Beyond about 20 m (far wall, gate) depth is not measured. The lawn north edge is hidden in both photos and follows the aerial. Ground height under the lawns is the model's terrain. The lane-kerb points are controls in both solves; the wall-foot points set the straight run. The far length exceeds 0.3 m on its two held-out points and stays open.",
    "artifacts": [
     {
      "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-overlay.jpg",
-     "sha256": "a0f19576a9b3644143095cf7ee2654ed89f815ace0e08ca5fd1f6a55fd01bb4a"
+     "sha256": "230ad620b1fbd24d19240ce280334d76c33b7a5fe052acf1839e5c0239f0cc59"
     },
     {
      "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-after.jpg",
-     "sha256": "d375d91e1b9f335dfd7abad2bd47601bf317ed81e113a55301ce68ff518bd589"
+     "sha256": "add59f57ddd9ae5200030d84ddff03ed8e007b4b12e0ebaf6049a86a851ecd6c"
     },
     {
      "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-before.jpg",
@@ -539,15 +539,56 @@
     },
     {
      "path": "docs/reviews/elena-junction-lawns-roof/IMG_2358-traced-after.jpg",
-     "sha256": "44a764eb712796154c527adac6f3b4d598bb8a8a2dea953a8bb571110c728acc"
+     "sha256": "76bebf48c299f2832485b07f1d9dde8fe013d8d141f0880d1412288e4b5d676c"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/IMG_2358-overlay.jpg",
+     "sha256": "404edd665c900f953ead595594034e62a1c604e01f310da62c5002a6eb27305d"
     },
     {
      "path": "docs/reviews/elena-junction-lawns-roof/aerial-plan-after.jpg",
-     "sha256": "48d6fb3fd716bc5dd8fc1cbee087453b1c1050c08f0f7efe04c87b9e6e415775"
+     "sha256": "fbda193b41b02b7d1f334cfa3e67d1e57de5d57960aa057e0af43cb715968714"
     },
     {
      "path": "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
-     "sha256": "d8fe7758e70a266885672e25497b9d662e5e0bc77b98ac13d0ea570368c65c53"
+     "sha256": "da5ab7e60302ef145f916e216777ea65eb9b7b2341cb071281ed44e3a0531dfb"
+    },
+    {
+     "path": "docs/reviews/elena-junction-lawns-roof/REVIEW.md",
+     "sha256": "d1795f16e58f3eed5a39a9376c72baeb116e020bf8938e46e3256837b70136e6"
+    }
+   ],
+   "previousReviews": [
+    {
+     "kind": "agent",
+     "id": "reviewer-subagent-h7xsmr",
+     "date": "2026-11-17",
+     "verdict": "rejected",
+     "sourcesInspected": [
+      "public/photos-ref/ELENA-ROOF-2026-11-17.jpg",
+      "public/photos-ref/IMG_2358.jpg",
+      "public/photos-ref/IMG_2367.jpg",
+      "public/photos-ref/IMG_2261.jpg",
+      "public/photos-ref/IMG_2330.jpg",
+      "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-before.jpg",
+      "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-traced-after.jpg",
+      "docs/reviews/elena-junction-lawns-roof/IMG_2358-traced-after.jpg",
+      "docs/reviews/elena-junction-lawns-roof/aerial-plan-after.jpg",
+      "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-before-details.png",
+      "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after.png",
+      "docs/reviews/elena-junction-lawns-roof/ELENA-ROOF-2026-11-17-after-details.png",
+      "scripts/measure_elena_junction_lawns.py",
+      "data/photo_poses.json",
+      "data/lane_walls.json",
+      "data/door_sills.json",
+      "data/frontage_divisions.json",
+      "data/plain_fronts.json",
+      "data/cervantes_patio_walls.json",
+      "public/map/skeleton.json"
+     ],
+     "residualsConfirmed": false,
+     "notes": "Script reproduces (0.19 m rms, worst 0.55) but its near wall-foot picks (700,940) and (745,978) sit 14-22 px up the lit wall face and its wall residual is unsigned. Ten independent wall-foot picks at the grass/white boundary (ELENA-ROOF 5, IMG_2358 5), signed: +0.27 +0.28 +0.28 +0.10 -0.22 / +0.42 +0.43 +0.24 -0.20 -0.36, 0.30 m rms, worst 0.43, systematic: the main run is still 0.27-0.47 m too far west, and the photographed foot runs straight on 5-6 m to the bed-door pier where the model's 1.1 m jog stands up to 0.36 m out on lawn (IMG_2367 agrees). The photographed bed door is about 0.4 m east of the main-run line in both cameras against 1.05 m for the moved door (about 0.65 m too far east; 0.38 m rms with it); IMG_2330 bearing 195 deg fits it at 189-193 deg against 185.8 deg for the moved door, and check_door_sills.py was relaxed from 8 to 10 deg to pass it. Wall ends slide correctly along cervantes-patio-south-2 and registry part5 edge 41. Lane-kerb lawn edges (0.00 to -0.04 m, but the kerb is a solve control), cross-path kerb (-0.13..+0.08 m), lane/path-only kerbs and the elena-24-south-patio porch suppression (open patio in ELENA-ROOF, IMG_2358, IMG_2367) are sound. Required: re-pick the foot, refit the wall shape (main run about 0.3-0.45 m further east to the bed-door pier, short projection at the bed door), move the bed sill, revert the 10 deg tolerance, carry the lawn west edges.",
+     "review": "docs/reviews/elena-junction-lawns-roof/REVIEW.md"
     }
    ]
   }
