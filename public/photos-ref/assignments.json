@@ -6,9 +6,9 @@
   "suggested": 267,
   "needs-review": 231,
   "photos": 501,
-  "features": 490,
+  "features": 494,
   "photosCitedByModel": 210,
-  "modelFeaturesWithPhotoCitations": 234
+  "modelFeaturesWithPhotoCitations": 238
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -6261,6 +6261,7 @@
    ],
    "citedBy": [
     "cervantes_lane_edges.json:cervantes-east-north-planter",
+    "cervantes_lane_edges.json:cervantes-east-north-shrub-bed",
     "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
     "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
     "cervantes_lane_edges.json:cervantes-east-south-planter"
@@ -6464,7 +6465,7 @@
    ],
    "citedBy": [
     "lane_walls.json:cervantes-south-garden-wall-alberto",
-    "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
+    "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
     "steps:cervantes-alberto-steps"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -6512,6 +6513,9 @@
    "citedBy": [
     "lane_walls.json:cervantes-south-garden-wall-alberto",
     "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
     "steps:cervantes-alberto-steps"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -6552,7 +6556,10 @@
    ],
    "citedBy": [
     "lane_walls.json:cervantes-south-garden-wall-alberto",
-    "cervantes_lane_edges.json:cervantes-north-bed-house-2"
+    "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {
@@ -18637,7 +18644,11 @@
    "citedBy": [
     "lane_walls.json:cervantes-south-garden-wall-alberto",
     "cervantes_lane_edges.json:cervantes-north-bed-house-2",
-    "cervantes_lane_edges.json:cervantes-north-bed-house-3"
+    "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+    "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+    "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
    "camera": {

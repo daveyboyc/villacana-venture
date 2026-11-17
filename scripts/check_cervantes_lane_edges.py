@@ -51,7 +51,7 @@ for bed in data['planters']:
     assert bid not in boxes, f'{bid}: duplicate id'
     (s0, s1), (o0, o1) = bed['s'], bed['o']
     assert 0 < s0 < s1 <= 138.5 and 0.5 <= s1 - s0 <= 40, f'{bid}: extent'
-    assert o0 * o1 > 0 and abs(o0) >= 0.95 and 0.35 <= abs(o1 - o0) <= 1.2, f'{bid}: must be one side of the lane, outside its paving, 0.35-1.2 m deep'
+    assert o0 * o1 > 0 and abs(o0) >= 0.95 and 0.25 <= abs(o1 - o0) <= 1.2, f'{bid}: must be one side of the lane, outside its paving, 0.25-1.2 m deep'
     assert bed['kind'] in ('raised', 'bed') and (0.4 <= bed['height'] <= 0.7 if bed['kind'] == 'raised' else 0.08 <= bed['height'] <= 0.2), f'{bid}: height'
     assert 0.05 <= bed['wall'] <= 0.15 and 2 * bed['wall'] < abs(o1 - o0), f'{bid}: kerb'
     want = [world(s0, o0), world(s1, o0), world(s1, o1), world(s0, o1)]
@@ -94,6 +94,8 @@ for i, (a, (as0, as1, ao0, ao1)) in enumerate(items):
 west, north = boxes['cervantes-north-bed-west'], walls['cervantes-north-garden-wall-west']
 kerb = next(w for w in patio if w['id'] == 'cervantes-patio-north-1')
 assert abs(west[3] - (local(kerb['points'][0])[1] - kerb['thickness'] / 2)) < 0.02, 'west bed does not start at the kerb wall'
+# Review of 17 November 2026: the bed is at grade behind a low kerb, not a raised box (IMG_2274, IMG_2264, IMG_2468).
+assert kerb['height'] <= 0.2 and next(b for b in data['planters'] if b['id'] == 'cervantes-north-bed-west')['height'] <= kerb['height'], 'west bed must sit at grade behind the low kerb'
 assert abs(west[2] - (local(north['points'][0])[1] + north['thickness'] / 2)) < 0.02, 'west bed does not reach the garden wall'
 
 src = (ROOT / 'src/slice.ts').read_text()

@@ -20,7 +20,7 @@ Cervantes, the straight tiled lane across the block from Pintor Dalí to the Pic
 - Laser survey ground 2026-10-24: Cervantes now falls with the survey (+1.46 to +0.27 m). The Elena steps and ramp keep the photo-read 0.5 m; the survey measures 0.21-0.22 m there, still open (docs/LEVELS.md).
 - 2026-10-26 available-source inventory: 51 distinct full sources inspected, 30 component observations, schematic plan/sections and pinned uncalibrated game comparisons. Three shared-route treads remain distinct from two private-door treads plus raised sill; IMG_2288 CALLE MIGUEL has a flat ceiling/far arch and remains a separate unlocated source group. World edge registration, hidden joins, eastern terminal and measured levels remain open; this inventory grants no placement approval.
 - 27 October garden-door detail (task cervantes-door-steps-detail): full IMG_2196/2287/2327 show three white risers, not two (lane, two red treads of two small quarry-tile rows, threshold tread at the door). Built as three .15 m risers to the unchanged .45 m rise; bottom step 1.2 m with rounded ends, flush with the west bed front, which now runs to the flight; new low east planter beside the upper treads; .72 m door recessed in a pilaster frame under a 1.1 m coping. Wall origin/line and patio unchanged. Open: the .65 m lane-edge wall east of the planter stands .32 m further out than the planter front in the photos. See docs/reviews/cervantes-door-steps-detail.
-- 16 November 2026 (task cervantes-lane-edges): the laser survey along the centreline is level at +1.15-1.2 m from the Dalí exit to Elena, drops 0.6 m at the Elena steps (riser faces measured against the 0.4 m tiles in IMG_2286 agree: about 0.2 m each; the old 0.21 m survey figure came from comparison points that did not span the drop), level at +0.53-0.57 m to Calle Alberto, drops 0.27 m at two steps beside a ramp just west of the Alberto crossing (IMG_2448/2449, now built), then level at +0.2-0.25 m to the Picasso end. Open: the survey puts the Elena drop about 2 m west of the photo-placed flight (discrepancy cervantes-elena-steps-position). Built along the lane: a 1.7 m north garden wall with a planted bed in front from the Dalí exit to the Elena garden door, a 2.1 m south wall with one door from the Elena patios to the Alberto crossing, kerbed beds at the north house fronts, and white hedge planters at Alberto and from 110 m to the Picasso end (docs/CERVANTES_LANE_EDGES.md). Not built: the seat pillar and brick steps at about 119 m, a second door at 72.5 m in the existing south wall.
+- 16 November 2026 (task cervantes-lane-edges): the laser survey along the centreline is level at +1.15-1.2 m from the Dalí exit to Elena, drops 0.6 m at the Elena steps (riser faces measured against the 0.4 m tiles in IMG_2286 agree: about 0.2 m each; the old 0.21 m survey figure came from comparison points that did not span the drop), level at +0.53-0.57 m to Calle Alberto, drops 0.27 m at two steps beside a ramp just west of the Alberto crossing (IMG_2448/2449, now built), then level at +0.2-0.25 m to the Picasso end. Open: the survey puts the Elena drop about 2 m west of the photo-placed flight (discrepancy cervantes-elena-steps-position). Built along the lane: a 1.7 m north garden wall with a planted bed in front from the Dalí exit to the Elena garden door, a 2.1 m south wall with two doors and a jade bed at its foot from the Elena patios to the Alberto corner (93 m), kerbed beds at the north house fronts and the Alberto corner, and white hedge planters and beds from 110 m to the Picasso end (docs/CERVANTES_LANE_EDGES.md); the north lane kerb west of Elena lowered to 0.15 m. Not built: the seat pillar and the two brick flights at about 114 and 119 m, the lawn kerb by the end house, a second door at 72.5 m in the existing south wall.
 
 ## Read first
 
@@ -92,150 +92,165 @@ graph LR
   F5 --> PIMG_2359_jpg(["IMG_2359"])
   F5 --> PIMG_2367_jpg(["IMG_2367"])
   F5 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F6["Cervantes at Alberto · raised hedge planter on the north corner · unreviewed"]
+  A --> F6["Cervantes at Alberto · lantana and clipped hedge bed on the north corner · unreviewed"]
   F6 --> PIMG_2448_jpg(["IMG_2448"])
+  F6 --> PIMG_2794_jpg(["IMG_2794"])
   A --> F7["Cervantes east · low brick-coped planter wall by the seat pillar · unreviewed"]
   F7 --> PIMG_2442_jpg(["IMG_2442"])
   F7 --> PIMG_2443_jpg(["IMG_2443"])
   A --> F8["Cervantes east · raised hedge planter on the north side · unreviewed"]
   F8 --> PIMG_2442_jpg(["IMG_2442"])
   F8 --> PIMG_2443_jpg(["IMG_2443"])
-  A --> F9["Cervantes east end · white planter wall with a thuja hedge · unreviewed"]
+  A --> F9["Cervantes east · shrub bed between the north steps and the seat · unreviewed"]
   F9 --> PIMG_2443_jpg(["IMG_2443"])
-  F9 --> PIMG_2444_jpg(["IMG_2444"])
-  A --> F10["Cervantes east · raised hedge planter on the south side · unreviewed"]
-  F10 --> PIMG_2442_jpg(["IMG_2442"])
+  A --> F10["Cervantes east end · white planter wall with a thuja hedge · unreviewed"]
   F10 --> PIMG_2443_jpg(["IMG_2443"])
-  A --> F11["Cervantes east of Elena · lantana bed at the house front · unreviewed"]
-  F11 --> PIMG_2453_jpg(["IMG_2453"])
-  F11 --> PIMG_2796_jpg(["IMG_2796"])
-  F11 --> PIMG_2797_jpg(["IMG_2797"])
-  A --> F12["Cervantes west of the porch · bed at the house front · unreviewed"]
-  F12 --> PIMG_2450_jpg(["IMG_2450"])
-  F12 --> PIMG_2794_jpg(["IMG_2794"])
-  A --> F13["Cervantes before Alberto · bed at the house front · unreviewed"]
-  F13 --> PIMG_2449_jpg(["IMG_2449"])
+  F10 --> PIMG_2444_jpg(["IMG_2444"])
+  A --> F11["Cervantes east · raised hedge planter on the south side · unreviewed"]
+  F11 --> PIMG_2442_jpg(["IMG_2442"])
+  F11 --> PIMG_2443_jpg(["IMG_2443"])
+  A --> F12["Cervantes east of Elena · lantana bed at the house front · unreviewed"]
+  F12 --> PIMG_2453_jpg(["IMG_2453"])
+  F12 --> PIMG_2796_jpg(["IMG_2796"])
+  F12 --> PIMG_2797_jpg(["IMG_2797"])
+  A --> F13["Cervantes east of the porch · bed at the house front · unreviewed"]
+  F13 --> PIMG_2450_jpg(["IMG_2450"])
   F13 --> PIMG_2794_jpg(["IMG_2794"])
-  A --> F14["Cervantes west · raised bed between the lane kerb and the north garden wall · unreviewed"]
-  F14 --> PIMG_2264_jpg(["IMG_2264"])
-  F14 --> PIMG_2274_jpg(["IMG_2274"])
-  F14 --> PIMG_2467_jpg(["IMG_2467"])
-  F14 --> PIMG_2468_jpg(["IMG_2468"])
-  A --> F15["Cervantes north · east visible patio partition · unreviewed"]
-  F15 --> PIMG_2359_jpg(["IMG_2359"])
-  F15 --> PIMG_2368_jpg(["IMG_2368"])
-  F15 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F16["Cervantes north · middle visible patio partition · unreviewed"]
-  F16 --> PIMG_2359_jpg(["IMG_2359"])
-  F16 --> PIMG_2368_jpg(["IMG_2368"])
-  F16 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F17["Cervantes north · west visible patio partition · unreviewed"]
-  F17 --> PIMG_2359_jpg(["IMG_2359"])
-  F17 --> PIMG_2368_jpg(["IMG_2368"])
-  F17 --> PIMG_2369_jpg(["IMG_2369"])
-  A --> F18["Cervantes · north patio wall 1 · unreviewed"]
-  F18 --> PIMG_2263_jpg(["IMG_2263"])
-  F18 --> PIMG_2264_jpg(["IMG_2264"])
-  F18 --> PIMG_2265_jpg(["IMG_2265"])
-  F18 --> PIMG_2273_jpg(["IMG_2273"])
-  F18 --> PIMG_2274_jpg(["IMG_2274"])
-  F18 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F19["Cervantes · north patio wall east of garden door · unreviewed"]
-  F19 --> PIMG_2263_jpg(["IMG_2263"])
-  F19 --> PIMG_2264_jpg(["IMG_2264"])
-  F19 --> PIMG_2265_jpg(["IMG_2265"])
-  F19 --> PIMG_2273_jpg(["IMG_2273"])
-  F19 --> PIMG_2274_jpg(["IMG_2274"])
-  F19 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F20["Cervantes · south patio wall 1 · unreviewed"]
-  F20 --> PIMG_2263_jpg(["IMG_2263"])
-  F20 --> PIMG_2264_jpg(["IMG_2264"])
-  F20 --> PIMG_2265_jpg(["IMG_2265"])
-  F20 --> PIMG_2273_jpg(["IMG_2273"])
-  F20 --> PIMG_2274_jpg(["IMG_2274"])
-  F20 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F21["Cervantes · south patio wall 2 · unreviewed"]
-  F21 --> PIMG_2263_jpg(["IMG_2263"])
-  F21 --> PIMG_2264_jpg(["IMG_2264"])
-  F21 --> PIMG_2265_jpg(["IMG_2265"])
-  F21 --> PIMG_2273_jpg(["IMG_2273"])
-  F21 --> PIMG_2274_jpg(["IMG_2274"])
-  F21 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F22["Cervantes · south patio wall 3 · unreviewed"]
+  A --> F14["Cervantes before Alberto · bed at the house front · unreviewed"]
+  F14 --> PIMG_2449_jpg(["IMG_2449"])
+  F14 --> PIMG_2794_jpg(["IMG_2794"])
+  A --> F15["Cervantes west · planted bed between the lane kerb and the north garden wall · unreviewed"]
+  F15 --> PIMG_2264_jpg(["IMG_2264"])
+  F15 --> PIMG_2274_jpg(["IMG_2274"])
+  F15 --> PIMG_2467_jpg(["IMG_2467"])
+  F15 --> PIMG_2468_jpg(["IMG_2468"])
+  A --> F16["Cervantes to Alberto · narrow bed at the foot of the south wall · unreviewed"]
+  F16 --> PIMG_2449_jpg(["IMG_2449"])
+  F16 --> PIMG_2450_jpg(["IMG_2450"])
+  F16 --> PIMG_2794_jpg(["IMG_2794"])
+  A --> F17["Cervantes to Alberto · narrow bed at the foot of the south wall · unreviewed"]
+  F17 --> PIMG_2449_jpg(["IMG_2449"])
+  F17 --> PIMG_2450_jpg(["IMG_2450"])
+  F17 --> PIMG_2794_jpg(["IMG_2794"])
+  A --> F18["Cervantes to Alberto · narrow bed at the foot of the south wall · unreviewed"]
+  F18 --> PIMG_2449_jpg(["IMG_2449"])
+  F18 --> PIMG_2450_jpg(["IMG_2450"])
+  F18 --> PIMG_2794_jpg(["IMG_2794"])
+  A --> F19["Cervantes north · east visible patio partition · unreviewed"]
+  F19 --> PIMG_2359_jpg(["IMG_2359"])
+  F19 --> PIMG_2368_jpg(["IMG_2368"])
+  F19 --> PIMG_2369_jpg(["IMG_2369"])
+  A --> F20["Cervantes north · middle visible patio partition · unreviewed"]
+  F20 --> PIMG_2359_jpg(["IMG_2359"])
+  F20 --> PIMG_2368_jpg(["IMG_2368"])
+  F20 --> PIMG_2369_jpg(["IMG_2369"])
+  A --> F21["Cervantes north · west visible patio partition · unreviewed"]
+  F21 --> PIMG_2359_jpg(["IMG_2359"])
+  F21 --> PIMG_2368_jpg(["IMG_2368"])
+  F21 --> PIMG_2369_jpg(["IMG_2369"])
+  A --> F22["Cervantes · north patio wall 1 · unreviewed"]
   F22 --> PIMG_2263_jpg(["IMG_2263"])
   F22 --> PIMG_2264_jpg(["IMG_2264"])
   F22 --> PIMG_2265_jpg(["IMG_2265"])
   F22 --> PIMG_2273_jpg(["IMG_2273"])
   F22 --> PIMG_2274_jpg(["IMG_2274"])
   F22 --> PIMG_2275_jpg(["IMG_2275"])
-  A --> F23["Elena south · sill at the second door, north along the same wall · unreviewed"]
-  F23 --> PIMG_2261_jpg(["IMG_2261"])
-  F23 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F24["Elena south · sill at the door at the end of the lawn path · unreviewed"]
-  F24 --> PIMG_2260_jpg(["IMG_2260"])
-  F24 --> PIMG_2261_jpg(["IMG_2261"])
-  F24 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F25["Elena east patios · white wall behind the plumbago bed on Cervantes · unreviewed"]
-  F25 --> PIMG_2197_jpg(["IMG_2197"])
-  F25 --> PIMG_2356_jpg(["IMG_2356"])
-  A --> F26["Cervantes / Elena · front lawn 1 · unreviewed"]
-  F26 --> PIMG_2260_jpg(["IMG_2260"])
-  F26 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F23["Cervantes · north patio wall east of garden door · unreviewed"]
+  F23 --> PIMG_2263_jpg(["IMG_2263"])
+  F23 --> PIMG_2264_jpg(["IMG_2264"])
+  F23 --> PIMG_2265_jpg(["IMG_2265"])
+  F23 --> PIMG_2273_jpg(["IMG_2273"])
+  F23 --> PIMG_2274_jpg(["IMG_2274"])
+  F23 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F24["Cervantes · south patio wall 1 · unreviewed"]
+  F24 --> PIMG_2263_jpg(["IMG_2263"])
+  F24 --> PIMG_2264_jpg(["IMG_2264"])
+  F24 --> PIMG_2265_jpg(["IMG_2265"])
+  F24 --> PIMG_2273_jpg(["IMG_2273"])
+  F24 --> PIMG_2274_jpg(["IMG_2274"])
+  F24 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F25["Cervantes · south patio wall 2 · unreviewed"]
+  F25 --> PIMG_2263_jpg(["IMG_2263"])
+  F25 --> PIMG_2264_jpg(["IMG_2264"])
+  F25 --> PIMG_2265_jpg(["IMG_2265"])
+  F25 --> PIMG_2273_jpg(["IMG_2273"])
+  F25 --> PIMG_2274_jpg(["IMG_2274"])
+  F25 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F26["Cervantes · south patio wall 3 · unreviewed"]
   F26 --> PIMG_2263_jpg(["IMG_2263"])
-  F26 --> PIMG_2329_jpg(["IMG_2329"])
-  F26 --> PIMG_2342_jpg(["IMG_2342"])
-  F26 --> PIMG_2358_jpg(["IMG_2358"])
-  F26 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F27["Cervantes / Elena · front lawn 2 · unreviewed"]
-  F27 --> PIMG_2260_jpg(["IMG_2260"])
+  F26 --> PIMG_2264_jpg(["IMG_2264"])
+  F26 --> PIMG_2265_jpg(["IMG_2265"])
+  F26 --> PIMG_2273_jpg(["IMG_2273"])
+  F26 --> PIMG_2274_jpg(["IMG_2274"])
+  F26 --> PIMG_2275_jpg(["IMG_2275"])
+  A --> F27["Elena south · sill at the second door, north along the same wall · unreviewed"]
   F27 --> PIMG_2261_jpg(["IMG_2261"])
-  F27 --> PIMG_2329_jpg(["IMG_2329"])
-  F27 --> PIMG_2342_jpg(["IMG_2342"])
-  F27 --> PIMG_2358_jpg(["IMG_2358"])
-  F27 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F28["Cervantes / Elena · paved front enclosure · unreviewed"]
+  F27 --> PIMG_2330_jpg(["IMG_2330"])
+  A --> F28["Elena south · sill at the door at the end of the lawn path · unreviewed"]
   F28 --> PIMG_2260_jpg(["IMG_2260"])
   F28 --> PIMG_2261_jpg(["IMG_2261"])
-  A --> F29["Front-door approach between lawns · unreviewed"]
-  F29 --> PIMG_2260_jpg(["IMG_2260"])
-  F29 --> PIMG_2261_jpg(["IMG_2261"])
-  F29 --> PIMG_2330_jpg(["IMG_2330"])
-  A --> F30["Cervantes · planting along low wall · unreviewed"]
-  F30 --> PIMG_2273_jpg(["IMG_2273"])
-  F30 --> PIMG_2274_jpg(["IMG_2274"])
-  A --> F31["Cervantes / Elena · clipped lawn tree 1 · unreviewed"]
+  F28 --> PIMG_2330_jpg(["IMG_2330"])
+  A --> F29["Elena east patios · white wall behind the plumbago bed on Cervantes · unreviewed"]
+  F29 --> PIMG_2197_jpg(["IMG_2197"])
+  F29 --> PIMG_2356_jpg(["IMG_2356"])
+  A --> F30["Cervantes / Elena · front lawn 1 · unreviewed"]
+  F30 --> PIMG_2260_jpg(["IMG_2260"])
+  F30 --> PIMG_2261_jpg(["IMG_2261"])
+  F30 --> PIMG_2263_jpg(["IMG_2263"])
+  F30 --> PIMG_2329_jpg(["IMG_2329"])
+  F30 --> PIMG_2342_jpg(["IMG_2342"])
+  F30 --> PIMG_2358_jpg(["IMG_2358"])
+  F30 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F31["Cervantes / Elena · front lawn 2 · unreviewed"]
+  F31 --> PIMG_2260_jpg(["IMG_2260"])
+  F31 --> PIMG_2261_jpg(["IMG_2261"])
   F31 --> PIMG_2329_jpg(["IMG_2329"])
   F31 --> PIMG_2342_jpg(["IMG_2342"])
   F31 --> PIMG_2358_jpg(["IMG_2358"])
   F31 --> PIMG_2367_jpg(["IMG_2367"])
-  A --> F32["Cervantes west · white garden wall on the north side, Dalí exit to the Elena garden door · unreviewed"]
-  F32 --> PIMG_2264_jpg(["IMG_2264"])
-  F32 --> PIMG_2274_jpg(["IMG_2274"])
-  F32 --> PIMG_2275_jpg(["IMG_2275"])
-  F32 --> PIMG_2468_jpg(["IMG_2468"])
-  A --> F33["Cervantes · tall white wall on the south side, east of the Elena patios to Calle Alberto · unreviewed"]
-  F33 --> PIMG_2448_jpg(["IMG_2448"])
-  F33 --> PIMG_2449_jpg(["IMG_2449"])
-  F33 --> PIMG_2450_jpg(["IMG_2450"])
-  F33 --> PIMG_2794_jpg(["IMG_2794"])
-  F33 --> PIMG_2795_jpg(["IMG_2795"])
-  A --> F34["Elena south · white wall with two brown doors west of the junction lawns · unreviewed"]
-  F34 --> PIMG_2260_jpg(["IMG_2260"])
-  F34 --> PIMG_2261_jpg(["IMG_2261"])
-  F34 --> PIMG_2330_jpg(["IMG_2330"])
-  F34 --> PIMG_2358_jpg(["IMG_2358"])
-  A --> F35["Cervantes / Elena ramp · disputed"]
-  F35 --> PIMG_2262_jpg(["IMG_2262"])
-  F35 --> PIMG_2265_jpg(["IMG_2265"])
-  F35 --> PIMG_2286_jpg(["IMG_2286"])
-  A --> F36["Cervantes / Alberto · two steps beside the ramp · unreviewed"]
-  F36 --> PIMG_2448_jpg(["IMG_2448"])
-  F36 --> PIMG_2449_jpg(["IMG_2449"])
-  A --> F37["Cervantes / Elena · steps beside the ramp · disputed"]
-  F37 --> PIMG_2262_jpg(["IMG_2262"])
-  F37 --> PIMG_2286_jpg(["IMG_2286"])
-  F37 --> PIMG_2328_jpg(["IMG_2328"])
-  F37 --> PIMG_2355_jpg(["IMG_2355"])
+  A --> F32["Cervantes / Elena · paved front enclosure · unreviewed"]
+  F32 --> PIMG_2260_jpg(["IMG_2260"])
+  F32 --> PIMG_2261_jpg(["IMG_2261"])
+  A --> F33["Front-door approach between lawns · unreviewed"]
+  F33 --> PIMG_2260_jpg(["IMG_2260"])
+  F33 --> PIMG_2261_jpg(["IMG_2261"])
+  F33 --> PIMG_2330_jpg(["IMG_2330"])
+  A --> F34["Cervantes · planting along low wall · unreviewed"]
+  F34 --> PIMG_2273_jpg(["IMG_2273"])
+  F34 --> PIMG_2274_jpg(["IMG_2274"])
+  A --> F35["Cervantes / Elena · clipped lawn tree 1 · unreviewed"]
+  F35 --> PIMG_2329_jpg(["IMG_2329"])
+  F35 --> PIMG_2342_jpg(["IMG_2342"])
+  F35 --> PIMG_2358_jpg(["IMG_2358"])
+  F35 --> PIMG_2367_jpg(["IMG_2367"])
+  A --> F36["Cervantes west · white garden wall on the north side, Dalí exit to the Elena garden door · unreviewed"]
+  F36 --> PIMG_2264_jpg(["IMG_2264"])
+  F36 --> PIMG_2274_jpg(["IMG_2274"])
+  F36 --> PIMG_2275_jpg(["IMG_2275"])
+  F36 --> PIMG_2468_jpg(["IMG_2468"])
+  A --> F37["Cervantes · tall white wall on the south side, east of the Elena patios to Calle Alberto · unreviewed"]
+  F37 --> PIMG_2448_jpg(["IMG_2448"])
+  F37 --> PIMG_2449_jpg(["IMG_2449"])
+  F37 --> PIMG_2450_jpg(["IMG_2450"])
+  F37 --> PIMG_2794_jpg(["IMG_2794"])
+  F37 --> PIMG_2795_jpg(["IMG_2795"])
+  A --> F38["Elena south · white wall with two brown doors west of the junction lawns · unreviewed"]
+  F38 --> PIMG_2260_jpg(["IMG_2260"])
+  F38 --> PIMG_2261_jpg(["IMG_2261"])
+  F38 --> PIMG_2330_jpg(["IMG_2330"])
+  F38 --> PIMG_2358_jpg(["IMG_2358"])
+  A --> F39["Cervantes / Elena ramp · disputed"]
+  F39 --> PIMG_2262_jpg(["IMG_2262"])
+  F39 --> PIMG_2265_jpg(["IMG_2265"])
+  F39 --> PIMG_2286_jpg(["IMG_2286"])
+  A --> F40["Cervantes / Alberto · two steps beside the ramp · unreviewed"]
+  F40 --> PIMG_2448_jpg(["IMG_2448"])
+  F40 --> PIMG_2449_jpg(["IMG_2449"])
+  A --> F41["Cervantes / Elena · steps beside the ramp · disputed"]
+  F41 --> PIMG_2262_jpg(["IMG_2262"])
+  F41 --> PIMG_2286_jpg(["IMG_2286"])
+  F41 --> PIMG_2328_jpg(["IMG_2328"])
+  F41 --> PIMG_2355_jpg(["IMG_2355"])
 ```
 
 ## Placement evidence
@@ -250,15 +265,19 @@ graph LR
 | `cervantes_garden_door.json:cervantes-garden-door` | disputed | not-comparable | No measured placement packet and independent approval recorded; earlier manual reviews may exist.; open model-loop discrepancy cervantes-elena-steps-position |
 | `cervantes_garden_door.json:cervantes-junction-north-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_garden_door.json:cervantes-junction-north-patio` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
-| `cervantes_lane_edges.json:cervantes-alberto-corner-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_lane_edges.json:cervantes-alberto-corner-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-east-north-brick-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-east-north-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_lane_edges.json:cervantes-east-north-shrub-bed` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-east-north-thuja-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-east-south-planter` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-north-bed-house-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-north-bed-house-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-north-bed-house-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_lane_edges.json:cervantes-north-bed-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
+| `cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_north_patios.json:cervantes-north-partition-east` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_north_patios.json:cervantes-north-partition-middle` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
 | `cervantes_north_patios.json:cervantes-north-partition-west` | unreviewed | unchecked | No measured placement packet and independent approval recorded; earlier manual reviews may exist. |
@@ -304,24 +323,24 @@ Renders from each photo's camera compared with the photo (`data/photo_checks.jso
 | [IMG_2260.jpg](../../public/photos-ref/IMG_2260.jpg) | ground | layout, planting | Cervantes junction: white terraces and small lawns _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, junction_lawns.json:junction-pollarded-2, junction_lawns.json:junction-pollarded-3, lane_walls.json:elena-south-lawn-west-wall, door_sills.json:elena-lawn-door-sill._ |
 | [IMG_2274.jpg](../../public/photos-ref/IMG_2274.jpg) | ground | planting, materials | Cervantes: planting and paving detail _Used by: frontage_divisions.json:cervantes-west-planting, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, lane_walls.json:cervantes-north-garden-wall-west, cervantes_lane_edges.json:cervantes-north-bed-west._ |
 | [IMG_2261.jpg](../../public/photos-ref/IMG_2261.jpg) | ground | layout, planting, facades, materials | Cervantes junction: another view of the same terraces **Looks at:** Two brown garden doors in the white wall and the tiled approach between Elena south lawns. **Note:** 26 October patio/path recheck: the door approach between the two lawns uses plain square tiles aligned to the lane axes. Exact joint phase is partly obscured; sharing the model lane phase is a consistency assumption, not a measured source origin. looksAt is approximate existing-model subject context only; raw camera/GPS and physical subject registration are unchanged. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, frontage_divisions.json:cervantes-front-patio, frontage_divisions.json:cervantes-lawn-door-path, lane_walls.json:elena-south-lawn-west-wall, door_sills.json:elena-lawn-door-sill, door_sills.json:elena-bed-door-sill._ |
+| [IMG_2794.jpg](../../public/photos-ref/IMG_2794.jpg) | ground | layout, planting, facades | Lane with bougainvillea and grille windows, looking south-west _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-north-bed-house-2, cervantes_lane_edges.json:cervantes-north-bed-house-3, cervantes_lane_edges.json:cervantes-alberto-corner-bed, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3._ |
 | [IMG_2264.jpg](../../public/photos-ref/IMG_2264.jpg) | ground | layout | Cervantes: lane facing toward Pintor Dalí _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, lane_walls.json:cervantes-north-garden-wall-west, cervantes_lane_edges.json:cervantes-north-bed-west._ |
+| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | ground | signage, layout, planting, levels | Cervantes lane west of Alberto: 'CALLE DE MIGUEL' wall plaque and receding tiled lane **Looks at:** Lane west of the Alberto crossing with the Calle de Miguel plaque. **Note:** The plaque spells the lane 'Calle de Miguel', which supports the Cervantes lane being signed Miguel (see IMG_2288 and the Miguel passage task). The exact text of the wall plaque should be checked at full size. looksAt estimated along heading 233. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-north-bed-house-3, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3, steps:cervantes-alberto-steps._ |
 | [IMG_2265.jpg](../../public/photos-ref/IMG_2265.jpg) | ground | layout, levels | Cervantes: lane facing into the resort _Used by: cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3, ramp:cervantes-elena-ramp._ |
 | [IMG_2273.jpg](../../public/photos-ref/IMG_2273.jpg) | ground | facades, layout | Cervantes: straight lane and barred windows _Used by: frontage_divisions.json:cervantes-west-planting, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
 | [IMG_2263.jpg](../../public/photos-ref/IMG_2263.jpg) | ground | layout | Cervantes: lane and clipped planting toward the junction _Used by: frontage_divisions.json:cervantes-elena-lawn-1, cervantes_patio_walls.json:cervantes-patio-north-1, cervantes_patio_walls.json:cervantes-patio-north-east, cervantes_patio_walls.json:cervantes-patio-south-1, cervantes_patio_walls.json:cervantes-patio-south-2, cervantes_patio_walls.json:cervantes-patio-south-3._ |
 | [IMG_2360.jpg](../../public/photos-ref/IMG_2360.jpg) | roof | layout, facades, planting, view | Roof by Elena: looking east-north-east along Cervantes **Looks at:** Cervantes east of Elena, seen along its line. **Note:** Roof shot. The camera pin is inside a building; the subject is the Cervantes side, up to 50+ m away. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, cervantes_east_south_patios.json:cervantes-east-south-wall, cervantes_east_south_patios.json:cervantes-east-south-door, cervantes_east_south_patios.json:cervantes-east-south-pergola, cervantes_east_south_patios.json:cervantes-east-south-climber._ |
-| [IMG_2443.jpg](../../public/photos-ref/IMG_2443.jpg) | ground | layout, planting, materials, levels | Cervantes east end: same view, a few metres on **Looks at:** Cervantes lane east end, white seat pillar and brick-edged steps. **Note:** Pin -89.8, 17.3 +-5.7 m is on the lane edge. Use with IMG_2442 for the brick-edged step and kerb geometry (rise and nosing are visible). _Used by: cervantes_lane_edges.json:cervantes-east-north-planter, cervantes_lane_edges.json:cervantes-east-north-brick-planter, cervantes_lane_edges.json:cervantes-east-north-thuja-planter, cervantes_lane_edges.json:cervantes-east-south-planter._ |
+| [IMG_2443.jpg](../../public/photos-ref/IMG_2443.jpg) | ground | layout, planting, materials, levels | Cervantes east end: same view, a few metres on **Looks at:** Cervantes lane east end, white seat pillar and brick-edged steps. **Note:** Pin -89.8, 17.3 +-5.7 m is on the lane edge. Use with IMG_2442 for the brick-edged step and kerb geometry (rise and nosing are visible). _Used by: cervantes_lane_edges.json:cervantes-east-north-planter, cervantes_lane_edges.json:cervantes-east-north-shrub-bed, cervantes_lane_edges.json:cervantes-east-north-brick-planter, cervantes_lane_edges.json:cervantes-east-north-thuja-planter, cervantes_lane_edges.json:cervantes-east-south-planter._ |
+| [IMG_2450.jpg](../../public/photos-ref/IMG_2450.jpg) | ground | layout, facades, planting, materials | Cervantes lane: arched covered porch on the north side, bougainvillea wall opposite **Looks at:** Arched porch opening on the north side of the lane. **Note:** Camera on the lane at (-121.9, 39.0); the arch is the mouth of the covered passage seen in IMG_2451/2452 about 6 m ahead on the right (north side). Alignment between the two photos is by eye only. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-north-bed-house-2, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2, cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3._ |
 | [IMG_2369.jpg](../../public/photos-ref/IMG_2369.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west (second shot) **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: cervantes_north_patios.json:cervantes-north-partition-east, cervantes_north_patios.json:cervantes-north-partition-middle, cervantes_north_patios.json:cervantes-north-partition-west, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2359.jpg](../../public/photos-ref/IMG_2359.jpg) | roof | layout, facades | Roof by Elena: over barrel tiles to the Cervantes patios **Looks at:** The walled patios along Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: cervantes_north_patios.json:cervantes-north-partition-east, cervantes_north_patios.json:cervantes-north-partition-middle, cervantes_north_patios.json:cervantes-north-partition-west, cervantes_garden_door.json:cervantes-junction-north-patio._ |
 | [IMG_2442.jpg](../../public/photos-ref/IMG_2442.jpg) | ground | layout, planting, materials, levels | Cervantes east end: lane with candelabra cacti, white seat pillar and brick-edged steps **Looks at:** Cervantes lane east end, white seat pillar and brick-edged steps. **Note:** Pin is +-13 m and sits in the lawn north of the lane; the camera was most likely on the lane itself. Heading 251 follows the lane axis. looksAt is an estimate 20 m along the view. _Used by: cervantes_lane_edges.json:cervantes-east-north-planter, cervantes_lane_edges.json:cervantes-east-north-brick-planter, cervantes_lane_edges.json:cervantes-east-south-planter._ |
-| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-planter, steps:cervantes-alberto-steps._ |
-| [IMG_2449.jpg](../../public/photos-ref/IMG_2449.jpg) | ground | signage, layout, planting, levels | Cervantes lane west of Alberto: 'CALLE DE MIGUEL' wall plaque and receding tiled lane **Looks at:** Lane west of the Alberto crossing with the Calle de Miguel plaque. **Note:** The plaque spells the lane 'Calle de Miguel', which supports the Cervantes lane being signed Miguel (see IMG_2288 and the Miguel passage task). The exact text of the wall plaque should be checked at full size. looksAt estimated along heading 233. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-north-bed-house-3, steps:cervantes-alberto-steps._ |
+| [IMG_2448.jpg](../../public/photos-ref/IMG_2448.jpg) | ground | signage, layout, materials, levels | Cervantes/Alberto junction: signed wall and paving change, path with three white steps ahead **Looks at:** Lane beyond the Alberto crossing with three white steps. **Note:** Pin is on the blue street line at the Alberto label, but the photo shows the Alberto sign on the wall; the street ID depends on which map street is right, so treat the area as cervantes plus north-lanes. looksAt is estimated 20 m along heading 243. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-alberto-corner-bed, steps:cervantes-alberto-steps._ |
 | [IMG_2327.jpg](../../public/photos-ref/IMG_2327.jpg) | ground | levels, layout, facades | Cervantes at Elena: steps up to a door beside the lane **Looks at:** The garden-door steps: two red treads and the threshold, the west bed's rounded end and the east planter. **Note:** Door-steps detail recheck 27 October: each red tread is two rows of small square quarry tiles; a third white riser climbs from the second tread to the threshold tiles in front of the door. The bottom step's rounded west end wraps in front of the bed's thickened rounded end. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, cervantes_garden_door.json:cervantes-junction-east-planter._ |
 | [IMG_2368.jpg](../../public/photos-ref/IMG_2368.jpg) | roof | layout, facades, view | Roof by Elena: patios and terraces south-west, along Cervantes **Looks at:** The walled patios north of Cervantes. **Note:** Roof shot: the pin is the roof. _Used by: cervantes_north_patios.json:cervantes-north-partition-east, cervantes_north_patios.json:cervantes-north-partition-middle, cervantes_north_patios.json:cervantes-north-partition-west._ |
-| [IMG_2794.jpg](../../public/photos-ref/IMG_2794.jpg) | ground | layout, planting, facades | Lane with bougainvillea and grille windows, looking south-west _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-north-bed-house-2, cervantes_lane_edges.json:cervantes-north-bed-house-3._ |
 | [IMG_2328.jpg](../../public/photos-ref/IMG_2328.jpg) | ground | levels, layout | Cervantes at Elena: ramp and steps side by side, drain at the foot **Looks at:** The ramp and steps side by side. _Used by: cervantes_garden_door.json:cervantes-garden-door, cervantes_garden_door.json:cervantes-junction-north-bed, steps:cervantes-elena-steps._ |
 | [IMG_2329.jpg](../../public/photos-ref/IMG_2329.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn with a pollarded tree and white kerb _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
 | [IMG_2342.jpg](../../public/photos-ref/IMG_2342.jpg) | ground | layout, planting | Cervantes/Elena junction: lawn corner with pollarded tree and drain **Note:** GPS ±14 m. _Used by: frontage_divisions.json:cervantes-elena-lawn-1, frontage_divisions.json:cervantes-elena-lawn-2, junction_lawns.json:junction-pollarded-1._ |
-| [IMG_2450.jpg](../../public/photos-ref/IMG_2450.jpg) | ground | layout, facades, planting, materials | Cervantes lane: arched covered porch on the north side, bougainvillea wall opposite **Looks at:** Arched porch opening on the north side of the lane. **Note:** Camera on the lane at (-121.9, 39.0); the arch is the mouth of the covered passage seen in IMG_2451/2452 about 6 m ahead on the right (north side). Alignment between the two photos is by eye only. _Used by: lane_walls.json:cervantes-south-garden-wall-alberto, cervantes_lane_edges.json:cervantes-north-bed-house-2._ |
 | [IMG_2468.jpg](../../public/photos-ref/IMG_2468.jpg) | ground | layout, facades, planting | Cervantes west end: arcaded porch on the left, dracaena and shrub bed on the right **Looks at:** West end of the lane towards Dali. **Note:** Pin (-167.1, 65.2) +-2.3 m. The arch is the mouth of the south-side covered passage seen in IMG_2288/2469. looksAt estimated 20 m along heading 242. _Used by: lane_walls.json:cervantes-north-garden-wall-west, cervantes_lane_edges.json:cervantes-north-bed-west._ |
 | [IMG_2262.jpg](../../public/photos-ref/IMG_2262.jpg) | ground | levels, layout | Cervantes junction: terracotta path, white curbs and drainage grate **Looks at:** The steps beside the Cervantes ramp. **Note:** Shows steps beside a sloping strip, with a drain at the foot. _Used by: steps:cervantes-elena-steps, ramp:cervantes-elena-ramp._ |
 | [IMG_2356.jpg](../../public/photos-ref/IMG_2356.jpg) | ground | layout, planting | Cervantes east of Elena: lane beside a plumbago hedge **Looks at:** Plumbago bed edge and screened patio boundary on Cervantes east of Elena. **Note:** 26 October recheck: low rendered plumbago-bed edge is distinct from taller screened enclosure behind it. The source supports a local frontage, not all hidden wall heights. looksAt is approximate existing-model context only, not registered subject placement. _Used by: cervantes_east_hedge.json:cervantes-east-plumbago-kerb, elena_east_patios.json:elena-east-patios-cervantes-wall._ |

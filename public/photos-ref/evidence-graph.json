@@ -6,9 +6,9 @@
   "suggested": 267,
   "needs-review": 231,
   "photos": 501,
-  "features": 490,
+  "features": 494,
   "photosCitedByModel": 210,
-  "modelFeaturesWithPhotoCitations": 234
+  "modelFeaturesWithPhotoCitations": 238
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -3541,7 +3541,7 @@
   },
   {
    "id": "cervantes_lane_edges.json:cervantes-north-bed-west",
-   "name": "Cervantes west · raised bed between the lane kerb and the north garden wall",
+   "name": "Cervantes west · planted bed between the lane kerb and the north garden wall",
    "kind": "reference feature",
    "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
    "evidence": [
@@ -3564,7 +3564,7 @@
   },
   {
    "id": "cervantes_lane_edges.json:cervantes-north-bed-house-2",
-   "name": "Cervantes west of the porch · bed at the house front",
+   "name": "Cervantes east of the porch · bed at the house front",
    "kind": "reference feature",
    "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
    "evidence": [
@@ -3583,12 +3583,13 @@
    ]
   },
   {
-   "id": "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
-   "name": "Cervantes at Alberto · raised hedge planter on the north corner",
+   "id": "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
+   "name": "Cervantes at Alberto · lantana and clipped hedge bed on the north corner",
    "kind": "reference feature",
    "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
    "evidence": [
-    "IMG_2448.jpg"
+    "IMG_2448.jpg",
+    "IMG_2794.jpg"
    ]
   },
   {
@@ -3599,6 +3600,15 @@
    "evidence": [
     "IMG_2443.jpg",
     "IMG_2442.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_lane_edges.json:cervantes-east-north-shrub-bed",
+   "name": "Cervantes east · shrub bed between the north steps and the seat",
+   "kind": "reference feature",
+   "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
+   "evidence": [
+    "IMG_2443.jpg"
    ]
   },
   {
@@ -3629,6 +3639,39 @@
    "evidence": [
     "IMG_2443.jpg",
     "IMG_2442.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "name": "Cervantes to Alberto · narrow bed at the foot of the south wall",
+   "kind": "reference feature",
+   "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
+   "evidence": [
+    "IMG_2449.jpg",
+    "IMG_2450.jpg",
+    "IMG_2794.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "name": "Cervantes to Alberto · narrow bed at the foot of the south wall",
+   "kind": "reference feature",
+   "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
+   "evidence": [
+    "IMG_2449.jpg",
+    "IMG_2450.jpg",
+    "IMG_2794.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
+   "name": "Cervantes to Alberto · narrow bed at the foot of the south wall",
+   "kind": "reference feature",
+   "source": "photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across",
+   "evidence": [
+    "IMG_2449.jpg",
+    "IMG_2450.jpg",
+    "IMG_2794.jpg"
    ]
   },
   {
@@ -13932,6 +13975,12 @@
   },
   {
    "from": "photo:IMG_2443.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-east-north-shrub-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2443.jpg",
    "to": "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -14075,7 +14124,7 @@
   },
   {
    "from": "photo:IMG_2448.jpg",
-   "to": "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
+   "to": "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -14125,6 +14174,24 @@
   },
   {
    "from": "photo:IMG_2449.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2449.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2449.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2449.jpg",
    "to": "steps:cervantes-alberto-steps",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -14158,6 +14225,24 @@
   {
    "from": "photo:IMG_2450.jpg",
    "to": "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2450.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2450.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2450.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -22391,6 +22476,30 @@
   {
    "from": "photo:IMG_2794.jpg",
    "to": "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2794.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2794.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2794.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2794.jpg",
+   "to": "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },

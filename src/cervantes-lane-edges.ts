@@ -55,6 +55,7 @@ const LOOKS: Record<string, (length: number, depth: number, height: number, seed
   thuja: (length, depth, height, seed) => clippedHedge({ length, depth, height, seed, clip: 4, density: 420, leaf: "narrow", leafSize: [0.09, 0.03], greens: ["#3c5a2c", "#4a6b33", "#587a3c"], inside: "#22341b" }),
   oleander: (length, depth, height, seed) => clippedHedge({ length, depth, height, seed, clip: 3.2, density: 520, leaf: "narrow", leafSize: [0.16, 0.045], greens: ["#2f4528", "#3d5733", "#4a6638"], inside: "#1d2c19", flowers: { count: Math.round(length * 18), colour: "#f0c3c8" } }),
   dracaena: (length, depth, height, seed) => looseShrub({ width: Math.min(length, 0.9), depth, height, seed, leaf: "narrow", leafSize: [0.32, 0.05], greens: ["#4f6f3a", "#6b8a4a", "#c9cf9a"], stems: 4 }),
+  jade: (length, depth, height, seed) => looseShrub({ width: Math.min(length, 0.7), depth, height, seed, leaf: "glossy", leafSize: [0.07, 0.05], greens: ["#4d6e36", "#5d7f40", "#6b8c48"], stems: 4 }),
   lantana: (length, depth, height, seed) => looseShrub({ width: Math.min(length, 0.9), depth, height, seed, leaf: "small", leafSize: [0.06, 0.04], greens: ["#3f5a30", "#4c6a37", "#5d7a42"], stems: 5, flowers: { count: 30, colour: seed % 2 ? "#f2c230" : "#e8652e" } }),
 };
 
@@ -69,7 +70,7 @@ export function addCervantesLaneEdgePlanting(into: THREE.Scene, keep: (x: number
   for (const p of cervantesLaneEdges) {
     const [near, far] = p.o, sign = Math.sign(far - near), depth = Math.abs(far - near) - 2 * p.wall - 0.04, o = (near + far) / 2 + sign * 0.0;
     for (const run of p.planting.runs) {
-      const look = LOOKS[run.look] ?? LOOKS.box, loose = run.look === "dracaena" || run.look === "lantana";
+      const look = LOOKS[run.look] ?? LOOKS.box, loose = run.look === "dracaena" || run.look === "lantana" || run.look === "jade";
       // Short pieces: the guard bounds each with a circle, and these beds are narrow and close to the lane.
       const step = loose ? 0.5 : 0.6, pieces = Math.max(1, Math.ceil((run.s[1] - run.s[0] - 2 * p.wall) / step)), len = (run.s[1] - run.s[0] - 2 * p.wall) / pieces;
       for (let i = 0; i < pieces; i++) {

@@ -693,11 +693,11 @@
   },
   "lane_walls.json:cervantes-south-garden-wall-alberto": {
    "level": "estimated",
-   "why": "IMG_2795, IMG_2450, IMG_2794, IMG_2449 and IMG_2448 show one tall white wall along the south side to the Alberto crossing, carrying the CALLE DE MIGUEL and ALBERTO plaques; it continues the existing wall east of Elena on the same line. Height (about 2.1 m) by eye; the one door is placed to about 2 m."
+   "why": "IMG_2795, IMG_2450, IMG_2794, IMG_2449 and IMG_2448 show one tall white wall along the south side carrying the CALLE DE MIGUEL and ALBERTO plaques, turning south at the Alberto corner at about 93 m (IMG_2448, the registry block face); it continues the existing wall east of Elena on the same line. Height (about 2.1 m) by eye; the two doors in IMG_2794 are placed to about 2 m."
   },
   "cervantes_lane_edges.json:cervantes-north-bed-west": {
    "level": "estimated",
-   "why": "Planted bed between the existing kerb wall and the new garden wall, photographed in IMG_2274, IMG_2468, IMG_2264 and IMG_2467; width set by the two walls, plants by eye."
+   "why": "Planted bed at grade behind the low lane kerb, in front of the new garden wall, photographed in IMG_2274, IMG_2468, IMG_2264 and IMG_2467; width set by the kerb and the wall, plants by eye."
   },
   "cervantes_lane_edges.json:cervantes-north-bed-house-1": {
    "level": "estimated",
@@ -711,13 +711,9 @@
    "level": "estimated",
    "why": "Planted strip continuing to the corner before Alberto in IMG_2794 and IMG_2449; width to the registry house front."
   },
-  "cervantes_lane_edges.json:cervantes-alberto-corner-planter": {
-   "level": "estimated",
-   "why": "White raised planter with a clipped hedge at the north corner beside the steps in IMG_2448; length and depth estimated against the tiles."
-  },
   "cervantes_lane_edges.json:cervantes-east-north-planter": {
    "level": "estimated",
-   "why": "White raised planter with a clipped hedge on the north side in IMG_2443 and IMG_2442; ends estimated to about 1.5 m."
+   "why": "White raised planter with a clipped hedge on the north side in IMG_2443 and IMG_2442; its east end read in IMG_2443 by depth against the seat (about 4-5 m west of it), good to about 1.5 m."
   },
   "cervantes_lane_edges.json:cervantes-east-north-brick-planter": {
    "level": "estimated",
@@ -729,7 +725,27 @@
   },
   "cervantes_lane_edges.json:cervantes-east-south-planter": {
    "level": "estimated",
-   "why": "White planter wall with a clipped hedge on the south side in IMG_2443 and IMG_2442, up to the end house wall; extent estimated."
+   "why": "White planter wall with a clipped hedge on the south side in IMG_2443 and IMG_2442; its east end about 1 m west of the seat by depth in IMG_2443; the west end is not visible."
+  },
+  "cervantes_lane_edges.json:cervantes-alberto-corner-bed": {
+   "level": "estimated",
+   "why": "Clipped hedge in an at-grade bed beside the steps in IMG_2448, lantana running up to it in IMG_2794; its east face at the crossing edge, extents read against the tiles."
+  },
+  "cervantes_lane_edges.json:cervantes-east-north-shrub-bed": {
+   "level": "estimated",
+   "why": "Low shrub bed between the second brick flight and the seat in IMG_2443; extent from that photo alone."
+  },
+  "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1": {
+   "level": "estimated",
+   "why": "Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face."
+  },
+  "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2": {
+   "level": "estimated",
+   "why": "Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face."
+  },
+  "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3": {
+   "level": "estimated",
+   "why": "Narrow jade and bougainvillea bed at the foot of the south wall in IMG_2449, IMG_2450 and IMG_2794; broken at the two doors, width to the wall face."
   }
  },
  "gaps": [
@@ -1187,7 +1203,7 @@
   },
   {
    "id": "gap:cervantes-east-seat-steps",
-   "name": "Cervantes east · white seat pillar and brick-edged steps into the north garden",
+   "name": "Cervantes east · white seat pillar and two brick-edged flights into the north garden",
    "at": [
     -92.81,
     20.02
@@ -1196,7 +1212,7 @@
     "IMG_2442.jpg",
     "IMG_2443.jpg"
    ],
-   "why": "IMG_2442 and IMG_2443 show a white seat with an azulejo-tiled pillar and two brick-edged steps up into the north garden between the planters (left open at 118.4-120.2 m along the lane). Not built: the garden behind and the height it climbs to are not visible."
+   "why": "IMG_2442 and IMG_2443 show a white seat with an azulejo-tiled pillar and two brick-edged steps up into the north garden beside it (gap left at 118.4-120.2 m along the lane), and a second brick-edged flight about 4-5 m west of it at about 114-115 m (gap left at 113.8-115.4 m). Not built: the garden behind and the height they climb to are not visible."
   },
   {
    "id": "gap:cervantes-south-wall-door-72",
@@ -1210,6 +1226,19 @@
     "IMG_2796.jpg"
    ],
    "why": "IMG_2795 and IMG_2796 show a brown door in the south wall at about 72.5 m along the lane, on the existing wall of data/cervantes_east_south_patios.json, which models one door only (at 61.7 m). Not added here: that feature has its own review."
+  },
+  {
+   "id": "gap:cervantes-east-south-lawn-kerb",
+   "name": "Cervantes east · lawn and low rounded kerb on the south side by the seat",
+   "at": [
+    -90.02,
+    21.38
+   ],
+   "photos": [
+    "IMG_2443.jpg",
+    "IMG_2442.jpg"
+   ],
+   "why": "From about 119 m to the end house (123.5 m) IMG_2443 shows lawn behind a low kerb and a low rounded white wall near the camera, not the hedge planter. Not built: the lawn edge is not traced."
   }
  ]
 }

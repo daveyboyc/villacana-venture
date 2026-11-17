@@ -189,8 +189,8 @@
           43.35
         ],
         [
-          -112.67,
-          34.94
+          -114.04,
+          35.76
         ]
       ],
       "height": 2.1,
@@ -198,10 +198,19 @@
       "raise": 0,
       "doors": [
         {
+          "id": "cervantes-south-wall-alberto-door-west",
+          "at": [
+            -122.2,
+            40.63
+          ],
+          "width": 0.9,
+          "height": 1.9
+        },
+        {
           "id": "cervantes-south-wall-alberto-door",
           "at": [
-            -115.5,
-            36.63
+            -116.62,
+            37.3
           ],
           "width": 0.9,
           "height": 1.9
@@ -214,7 +223,7 @@
         "IMG_2449.jpg",
         "IMG_2448.jpg"
       ],
-      "basis": "The south side of the lane from the Elena patios to the Calle Alberto crossing is one tall plain white wall, above head height, with bougainvillea and jade at its foot: IMG_2795, IMG_2450 and IMG_2794 look west along it, IMG_2449 shows the CALLE DE MIGUEL plaque on it and IMG_2448 the ALBERTO plaque on its end at the crossing. It carries on the line of the existing wall east of Elena (data/cervantes_east_south_patios.json), which ended at 78.2 m, to the crossing at 94.6 m. One brown door at the left edge of IMG_2794, close to the camera; its place along the wall is good to about 2 m. The gardens behind it are not traced."
+      "basis": "The south side of the lane from the Elena patios to the Calle Alberto crossing is one tall plain white wall, above head height, with bougainvillea and jade at its foot: IMG_2795, IMG_2450 and IMG_2794 look west along it, IMG_2449 shows the CALLE DE MIGUEL plaque on it and IMG_2448 the ALBERTO plaque on its end at the crossing. It carries on the line of the existing wall east of Elena (data/cervantes_east_south_patios.json), which ended at 78.2 m, to the corner at about 93 m where it turns south along Calle Alberto (the ALBERTO plaque face in IMG_2448; the registry block's east face is at 93.0 m). Two brown doors in IMG_2794: one close to the camera at about 90 m, one in a capped pier opening about 6 m further west, at about 83.5 m; each is good to about 2 m. The gardens behind it are not traced."
     }
   ]
 }

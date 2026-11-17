@@ -6266,6 +6266,7 @@
   },
   "citedBy": [
    "cervantes_lane_edges.json:cervantes-east-north-planter",
+   "cervantes_lane_edges.json:cervantes-east-north-shrub-bed",
    "cervantes_lane_edges.json:cervantes-east-north-brick-planter",
    "cervantes_lane_edges.json:cervantes-east-north-thuja-planter",
    "cervantes_lane_edges.json:cervantes-east-south-planter"
@@ -6465,7 +6466,7 @@
   },
   "citedBy": [
    "lane_walls.json:cervantes-south-garden-wall-alberto",
-   "cervantes_lane_edges.json:cervantes-alberto-corner-planter",
+   "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
    "steps:cervantes-alberto-steps"
   ],
   "looksAt": [
@@ -6512,6 +6513,9 @@
   "citedBy": [
    "lane_walls.json:cervantes-south-garden-wall-alberto",
    "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3",
    "steps:cervantes-alberto-steps"
   ],
   "looksAt": [
@@ -6557,7 +6561,10 @@
   },
   "citedBy": [
    "lane_walls.json:cervantes-south-garden-wall-alberto",
-   "cervantes_lane_edges.json:cervantes-north-bed-house-2"
+   "cervantes_lane_edges.json:cervantes-north-bed-house-2",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3"
   ],
   "looksAt": [
    -126.5,
@@ -6567,8 +6574,8 @@
   "looksAtFeatures": [
    "street:cervantes",
    "backdrop.json:aerial-trees",
-   "lane_walls.json:cervantes-south-garden-wall-alberto",
-   "cervantes_east_south_patios.json:cervantes-east-south-wall"
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "lane_walls.json:cervantes-south-garden-wall-alberto"
   ],
   "subject": "Arched porch opening on the north side of the lane"
  },
@@ -18601,7 +18608,11 @@
   "citedBy": [
    "lane_walls.json:cervantes-south-garden-wall-alberto",
    "cervantes_lane_edges.json:cervantes-north-bed-house-2",
-   "cervantes_lane_edges.json:cervantes-north-bed-house-3"
+   "cervantes_lane_edges.json:cervantes-north-bed-house-3",
+   "cervantes_lane_edges.json:cervantes-alberto-corner-bed",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-1",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-2",
+   "cervantes_lane_edges.json:cervantes-south-wall-foot-bed-3"
   ],
   "looksAt": [
    -121.9,
