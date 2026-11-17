@@ -476,6 +476,40 @@ async function boot(): Promise<void> {
   let savedInspection:{distance:number;pitch:number;yaw:number}|null=null;
   const overviewCentre=new THREE.Vector3(initialFocus?.[0]??centre.x,0.5,initialFocus?.[1]??centre.z);
   const refPlane=new THREE.Plane(new THREE.Vector3(0,1,0),-0.27),raycaster=new THREE.Raycaster();
+  /**
+   * Rotate and tilt the Inspect camera about the ground point under the pointer
+   * (found once per drag), not the screen centre, so that point stays put.
+   * camYaw and pitch already hold the new angles; turned and tilted are this frame's change.
+   */
+  const orbitAbout=(turned:number,tilted:number)=>{
+    if(!orbitScreen)return;
+    if(!orbitPivot){
+      raycaster.setFromCamera(new THREE.Vector2(orbitScreen.x/innerWidth*2-1,-(orbitScreen.y/innerHeight)*2+1),camera);
+      const hit=new THREE.Vector3();
+      const found=raycaster.ray.intersectPlane(new THREE.Plane(new THREE.Vector3(0,1,0),-overviewCentre.y),hit);
+      // Near the horizon the hit runs away; then turn about the centre as before.
+      orbitPivot=found&&Math.hypot(hit.x-overviewCentre.x,hit.z-overviewCentre.z)<distance*2?{x:hit.x,z:hit.z}:{x:overviewCentre.x,z:overviewCentre.z};
+    }
+    const p=orbitPivot;
+    if(turned){
+      // The camera's offset from the centre turns by the same matrix, so the whole rig turns about the pivot.
+      const c=Math.cos(turned),s=Math.sin(turned),ox=overviewCentre.x-p.x,oz=overviewCentre.z-p.z;
+      overviewCentre.x=p.x+ox*c-oz*s;overviewCentre.z=p.z+ox*s+oz*c;
+    }
+    const before=pitch-tilted;
+    if(tilted&&pitch>.05){
+      const h=Math.cos(before)*distance;
+      const eye=new THREE.Vector3(overviewCentre.x-Math.sin(camYaw)*h,overviewCentre.y+Math.sin(before)*distance,overviewCentre.z+Math.cos(camYaw)*h);
+      // Swing the eye about the horizontal axis through the pivot, then find where the new view meets the ground.
+      const pivot=new THREE.Vector3(p.x,overviewCentre.y,p.z);
+      eye.sub(pivot).applyAxisAngle(new THREE.Vector3(Math.cos(camYaw),0,Math.sin(camYaw)),-tilted).add(pivot);
+      const ahead=(eye.y-overviewCentre.y)/Math.sin(pitch);
+      if(ahead>8&&ahead<farthest*8){
+        overviewCentre.set(eye.x+Math.sin(camYaw)*Math.cos(pitch)*ahead,overviewCentre.y,eye.z-Math.cos(camYaw)*Math.cos(pitch)*ahead);
+        distance=ahead;
+      }
+    }
+  };
   const references=referenceEditor({surface:canvas,labels:mapLabels(skeleton),enabled:()=>overview,
     project:(x,z)=>{const p=new THREE.Vector3(x,liveGroundY(x,z)+1,z).project(camera),y=(1-p.y)*innerHeight/2;
       const areas=document.querySelector("#areas")!.getBoundingClientRect();
@@ -521,8 +555,8 @@ async function boot(): Promise<void> {
     document.querySelector("#overview-rotate")!.setAttribute("aria-pressed",String(!pan));
   };
   action("#overview-pan",()=>panMode(true));action("#overview-rotate",()=>panMode(false));
-  // A phone drags the map like a map app; a desktop drag orbits.
-  panMode(phoneInspect);
+  // A drag grabs the map, as in Google Maps; Orbit swaps it for rotate and tilt.
+  panMode(true);
   const rotation=document.querySelector<HTMLInputElement>("#overview-rotation")!;
   rotation.addEventListener("input",()=>{camYaw=-Number(rotation.value)*Math.PI/180;});
   action("#overview-check",()=>{showChecks=!showChecks;document.querySelector("#overview-check")!.setAttribute("aria-pressed",String(showChecks));});
@@ -560,7 +594,8 @@ async function boot(): Promise<void> {
     rememberArea(id);
     if(track)trackEvent("area_jumped",{area_id:id,area_name:destination.name,source:"dropdown"});
   };
-  areaSelect.addEventListener('change',()=>jumpToArea(areaSelect.value));
+  // Hand focus back to the view, so the arrow keys move the camera instead of changing the area.
+  areaSelect.addEventListener('change',()=>{jumpToArea(areaSelect.value);canvas.focus({preventScroll:true});});
   const initialArea=new URLSearchParams(location.search).get('area');
   if(initialArea && overview)jumpToArea(initialArea,false);
   // Photo labels share the canonical index and always reopen the same selected source.
@@ -774,7 +809,9 @@ async function boot(): Promise<void> {
     const moving = input.moveX * input.moveX + input.moveZ * input.moveZ > 0.04;
     if (input.lookDx || input.lookDy) lookHold = 0.9;
     lookHold = Math.max(0, lookHold - dt);
-    camYaw += input.lookDx * 0.0045;
+    const turned = input.lookDx * 0.0045;
+    camYaw += turned;
+    const switchedView = overview !== wasOverview;
     if (overview !== wasOverview) {
       // The overview button jumps between walking height and looking down on the whole area.
       if(!overview && inspectionStarted)savedInspection={distance,pitch,yaw:camYaw};
@@ -794,7 +831,9 @@ async function boot(): Promise<void> {
       if(overview && savedInspection){({distance,pitch,yaw:camYaw}=savedInspection);savedInspection=null;}
       if(!overview){distance=6;pitch=.45;}focusPending=false;
     }
+    const pitchBefore = pitch;
     pitch = clamp(pitch + input.lookDy * 0.0035, firstPerson ? -.65 : .15, overview ? Math.PI/2 : firstPerson ? 1.55 : 1.45);
+    if(overview&&!switchedView&&orbitScreen&&(turned||pitch!==pitchBefore))orbitAbout(turned,pitch-pitchBefore);
     const zoomedFrom=distance;
     distance = clamp(distance * Math.exp(input.zoom * 0.08), overview ? 8 : 3.5, (overview?farthest*8:farthest*3));
     if(overview&&zoomAnchor&&distance!==zoomedFrom){
@@ -814,7 +853,7 @@ async function boot(): Promise<void> {
 
     if(overview) {
       const scale=2*Math.tan(camera.fov*Math.PI/360)*distance/innerHeight;
-      const dx=panDx*scale-input.moveX*dt*distance*0.4, dz=panDy*scale/Math.max(.2,Math.sin(pitch))+input.moveZ*dt*distance*0.4;
+      const dx=panDx*scale-input.moveX*dt*distance*0.4, dz=panDy*scale/Math.max(.2,Math.sin(pitch))-input.moveZ*dt*distance*0.4;
       overviewCentre.x-=Math.cos(camYaw)*dx+Math.sin(camYaw)*dz;
       overviewCentre.z-=Math.sin(camYaw)*dx-Math.cos(camYaw)*dz;
       target.copy(overviewCentre);
@@ -1635,16 +1674,19 @@ let overview = new URLSearchParams(location.search).get("view") !== "walk";
 let overviewPan=false, panDx=0, panDy=0;
 /** Client point the last pinch zoomed towards; used once per frame. */
 let zoomAnchor:{x:number;y:number}|null=null;
+/** Client point a drag or twist rotates about, and the ground point under it once found. */
+let orbitScreen:{x:number;y:number}|null=null, orbitPivot:{x:number;z:number}|null=null;
 /** The gesture hint for Inspect, by device and Pan/Orbit switch. */
 const inspectHelp=()=>phoneInspect
   ?`${overviewPan?"Drag to pan":"Drag to orbit"} · two fingers twist to turn, slide to tilt · pinch to zoom`
-  :overviewPan?"Drag or two fingers to pan · pinch or wheel to zoom":"Drag to orbit · two fingers pan · twist to turn";
+  :overviewPan?"Drag to pan · Ctrl, Shift or right-drag to rotate and tilt · scroll or pinch to zoom · arrow keys move"
+  :"Drag to rotate and tilt · Shift or right-drag to pan · scroll or pinch to zoom · arrow keys move";
 let walkInput:ReturnType<typeof bindWalkControls>|undefined;
 const readKeys=()=>walkInput?.read();
 let resetPointers=()=>{};
 function bindInput():void{
   walkInput=bindWalkControls({canvas,pad:document.querySelector<HTMLButtonElement>('#walk-pad')!,input,
-    isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},zoomAt:(x,y)=>{zoomAnchor={x,y};},
+    isOverview:()=>overview,isPan:()=>overviewPan,pan:(x,y)=>{panDx+=x;panDy+=y;},zoomAt:(x,y)=>{zoomAnchor={x,y};},orbitAt:(point)=>{orbitScreen=point;orbitPivot=null;},
     toggleOverview:()=>{
       const fromView = overview ? "overview" : "walk";
       overview=!overview;

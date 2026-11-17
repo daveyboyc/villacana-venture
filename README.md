@@ -41,7 +41,10 @@ renders and exports are not merged; `?batch=0` turns merging off to compare.
 (or choose **Play**). Tap **Start playing**, move with the left thumb joystick,
 drag the scene to aim, and tap **FIRE**. On desktop use WASD, drag to aim, and
 click or press F to fire. The original arcade shotgun has spread, recoil, a pump
-cycle, sound and unlimited shells. Hit the three floating practice targets over
+cycle and [Freedoom sound effects](public/audio/shotgun/README.md), played with
+[Howler.js](https://github.com/goldfire/howler.js). The gun holds eight shells:
+tap **RELOAD** (or press **R**) to insert shells from an unlimited reserve.
+Firing can interrupt a reload after a shell is loaded. Hit the three floating practice targets over
 the north pool. **Pause** offers restart and a return to Inspect; sound can be muted.
 Landscape gives more room for the touch controls. This is a target-practice prototype,
 without enemies; it does not implement the complete [FPS PRD](docs/NORTH_POOL_FPS_TEST_PRD.md).
@@ -97,9 +100,11 @@ missing and unverified features; the programme is not yet complete.
 
 ## Controls and local edits
 
-In Inspect, drag to orbit. Right-drag, Shift-drag or a trackpad scroll pans,
-and a pinch or the mouse wheel zooms. **Pan** and **Orbit** choose what a
-left-drag does. On a phone those buttons are hidden and the controls work like a
+In Inspect the desktop controls follow Google Maps: drag to pan; Ctrl-, Shift-
+or right-drag rotates and tilts about the point under the pointer; the mouse
+wheel, a trackpad scroll or a pinch zooms towards the pointer. The arrow keys or
+WASD move forward, back and sideways. **Orbit** makes a plain drag rotate instead
+and **Pan** switches back. On a phone those buttons are hidden and the controls work like a
 map app: the resort opens in details without place or photo labels, one finger
 pans, two fingers twist to turn and slide up or down to tilt, and a pinch zooms
 towards the point between your fingers. **Map** opens the reference map and **Photos** shows the photo
