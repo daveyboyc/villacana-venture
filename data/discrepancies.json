@@ -231,16 +231,21 @@
       "id": "cervantes-kerb-walls-height",
       "area": "cervantes",
       "kind": "height",
-      "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m.",
+      "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m. 17 November 2026 (Dave): south-2 split at the Elena lawns' west wall; the stretch along the near Elena lawn is now the 0.15 m kerb IMG_2262, IMG_2286 and IMG_2328 show, carried to the lawn corner at the foot drain; the stretch west of the wall (cervantes-patio-south-2-west) stays 0.65 m. src/cervantes-walls.ts drew every one of these walls 0.21 m above its recorded height (it stood them on the stored 0.27 m road height instead of the lane surface at 0.06 m); fixed, so north-1 now shows its 0.15 m and the 0.65 m walls 0.65 m. Still open: south-1, south-2-west, south-3 and north-east at 0.65 m.",
       "sources": [
+        "IMG_2262.jpg",
         "IMG_2264.jpg",
+        "IMG_2274.jpg",
+        "IMG_2286.jpg",
+        "IMG_2328.jpg",
         "IMG_2467.jpg",
-        "IMG_2468.jpg",
-        "IMG_2274.jpg"
+        "IMG_2468.jpg"
       ],
       "features": [
+        "cervantes_lane_edges.json:cervantes-north-bed-west",
         "cervantes_patio_walls.json:cervantes-patio-north-1",
-        "cervantes_lane_edges.json:cervantes-north-bed-west"
+        "cervantes_patio_walls.json:cervantes-patio-south-2",
+        "cervantes_patio_walls.json:cervantes-patio-south-2-west"
       ],
       "task": "cervantes-lane-edges",
       "status": "open",

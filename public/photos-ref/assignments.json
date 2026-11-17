@@ -6,9 +6,9 @@
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 495,
+  "features": 496,
   "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 239
+  "modelFeaturesWithPhotoCitations": 240
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -3031,6 +3031,7 @@
     }
    ],
    "citedBy": [
+    "cervantes_patio_walls.json:cervantes-patio-south-2",
     "steps:cervantes-elena-steps",
     "ramp:cervantes-elena-ramp"
    ],
@@ -3071,6 +3072,7 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -3125,6 +3127,7 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
     "lane_walls.json:cervantes-north-garden-wall-west",
     "cervantes_lane_edges.json:cervantes-north-bed-west"
@@ -3176,6 +3179,7 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
     "ramp:cervantes-elena-ramp"
    ],
@@ -3461,6 +3465,7 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -3505,6 +3510,7 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
     "lane_walls.json:cervantes-north-garden-wall-west",
     "cervantes_lane_edges.json:cervantes-north-bed-west"
@@ -3539,6 +3545,7 @@
     "cervantes_patio_walls.json:cervantes-patio-north-east",
     "cervantes_patio_walls.json:cervantes-patio-south-1",
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
     "dali_cervantes_threshold.json:dali-bays-1",
     "dali_cervantes_threshold.json:dali-bays-2",
@@ -3963,6 +3970,7 @@
     }
    ],
    "citedBy": [
+    "cervantes_patio_walls.json:cervantes-patio-south-2",
     "steps:cervantes-elena-steps",
     "ramp:cervantes-elena-ramp"
    ],
@@ -4657,6 +4665,7 @@
     }
    ],
    "citedBy": [
+    "cervantes_patio_walls.json:cervantes-patio-south-2",
     "cervantes_garden_door.json:cervantes-garden-door",
     "cervantes_garden_door.json:cervantes-junction-north-bed",
     "steps:cervantes-elena-steps"

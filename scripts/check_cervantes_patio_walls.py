@@ -20,7 +20,8 @@ def sample(points):
 
 assert len(d['walls'])>=2 and len({w['id'] for w in d['walls']})==len(d['walls'])
 for w in d['walls']:
- assert w['solid'] and .4<=w['height']<=1.2 and .12<=w['thickness']<=.3
+ # Walls 0.4-1.2 m, or the low rounded kerbs the photos show at the foot of beds and lawns (0.1-0.25 m, 17 Nov 2026).
+ assert w['solid'] and (.4<=w['height']<=1.2 or .1<=w['height']<=.25) and .12<=w['thickness']<=.3
  assert w['streetId']=='cervantes' and all(p in photos for p in w['evidence'])
  for p in sample(w['points']):
   assert min(distance(p,a,b) for a,b in zip(d['review']['points'],d['review']['points'][1:])) < d['review']['width']/2

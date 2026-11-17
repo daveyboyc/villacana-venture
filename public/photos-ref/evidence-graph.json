@@ -6,9 +6,9 @@
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 495,
+  "features": 496,
   "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 239
+  "modelFeaturesWithPhotoCitations": 240
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "nodes": [
@@ -2087,7 +2087,24 @@
   },
   {
    "id": "cervantes_patio_walls.json:cervantes-patio-south-2",
-   "name": "Cervantes · south patio wall 2",
+   "name": "Cervantes · low kerb along the near Elena lawn",
+   "kind": "reference feature",
+   "source": "authored photo/map interpretation",
+   "evidence": [
+    "IMG_2262.jpg",
+    "IMG_2263.jpg",
+    "IMG_2264.jpg",
+    "IMG_2265.jpg",
+    "IMG_2273.jpg",
+    "IMG_2274.jpg",
+    "IMG_2275.jpg",
+    "IMG_2286.jpg",
+    "IMG_2328.jpg"
+   ]
+  },
+  {
+   "id": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
+   "name": "Cervantes · south patio wall 2, west of the Elena lawn wall",
    "kind": "reference feature",
    "source": "authored photo/map interpretation",
    "evidence": [
@@ -10912,6 +10929,12 @@
   },
   {
    "from": "photo:IMG_2262.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2262.jpg",
    "to": "steps:cervantes-elena-steps",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -10961,6 +10984,12 @@
   {
    "from": "photo:IMG_2263.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2263.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -11029,6 +11058,12 @@
   },
   {
    "from": "photo:IMG_2264.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2264.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -11092,6 +11127,12 @@
   {
    "from": "photo:IMG_2265.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2265.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -11407,6 +11448,12 @@
   },
   {
    "from": "photo:IMG_2273.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2273.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -11463,6 +11510,12 @@
   },
   {
    "from": "photo:IMG_2274.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2274.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-3",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
@@ -11506,6 +11559,12 @@
   {
    "from": "photo:IMG_2275.jpg",
    "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
+  },
+  {
+   "from": "photo:IMG_2275.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2-west",
    "relation": "cited-as-source",
    "visualValidation": "not established by citation"
   },
@@ -11848,6 +11907,12 @@
    "relation": "possibly-in-view",
    "distance": 37.5,
    "angleOffset": 24.3
+  },
+  {
+   "from": "photo:IMG_2286.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2286.jpg",
@@ -12390,6 +12455,12 @@
    "relation": "possibly-in-view",
    "distance": 38.0,
    "angleOffset": 31.0
+  },
+  {
+   "from": "photo:IMG_2328.jpg",
+   "to": "cervantes_patio_walls.json:cervantes-patio-south-2",
+   "relation": "cited-as-source",
+   "visualValidation": "not established by citation"
   },
   {
    "from": "photo:IMG_2328.jpg",
