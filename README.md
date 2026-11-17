@@ -35,6 +35,17 @@ originals stay in the scene hidden, so names and clicks still find them. Anythin
 that moves or shows and hides is marked `userData.dynamic` and left as it is. Photo
 renders and exports are not merged; `?batch=0` turns merging off to compare.
 
+## Play the north pool
+
+[Play the shotgun test](https://daveyboyc.github.io/villacana-venture/?view=fps)
+(or choose **Play**). Tap **Start playing**, move with the left thumb joystick,
+drag the scene to aim, and tap **FIRE**. On desktop use WASD, drag to aim, and
+click or press F to fire. The original arcade shotgun has spread, recoil, a pump
+cycle, sound and unlimited shells. Hit the three floating practice targets over
+the north pool. **Pause** offers restart and a return to Inspect; sound can be muted.
+Landscape gives more room for the touch controls. This is a target-practice prototype,
+without enemies; it does not implement the complete [FPS PRD](docs/NORTH_POOL_FPS_TEST_PRD.md).
+
 ## Find a reference
 
 Search an ID (`IMG_2206`), place (`north-pool`) or subject (`boat`) in **Map & photos**.

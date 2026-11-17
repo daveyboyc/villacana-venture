@@ -5,7 +5,7 @@ import { asset } from "./asset";
 
 initAnalytics();
 
-type View = "map" | "overview" | "walk";
+type View = "map" | "overview" | "walk" | "fps";
 const mapPage = document.querySelector<HTMLElement>("#map-page")!;
 const scenePage = document.querySelector<HTMLElement>("#scene-page")!;
 const frame = document.querySelector<HTMLIFrameElement>("#resort-scene")!;
@@ -29,17 +29,25 @@ function setView(view: View, history = true): void {
   frame.contentWindow?.postMessage({type:"villacana-controls-reset"},location.origin);
   document.body.dataset.appView = view;
   mapPage.hidden = view !== "map"; scenePage.hidden = view === "map";
-  for (const mode of ["map", "overview", "walk"] as const) document.querySelector(`#view-${mode}`)!.setAttribute("aria-pressed", String(mode === view));
+  for (const mode of ["map", "overview", "walk", "fps"] as const) document.querySelector(`#view-${mode}`)!.setAttribute("aria-pressed", String(mode === view));
   if (view !== "map") {
     const scene = new URL(asset("/slice.html"), location.href);
     scene.searchParams.set("pool", "north,middle,south,main");
     scene.searchParams.set("embedded", "1");
     if(url.searchParams.has("photo"))scene.searchParams.set("photo",url.searchParams.get("photo")!);
-    if (view === "overview") scene.searchParams.set("view", "overview");
+    scene.searchParams.set("view", view === "overview" ? "overview" : "walk");
     const phone=navigator.maxTouchPoints>0&&matchMedia("(max-width:900px), (max-height:500px)").matches;
     if(view==="overview"&&phone&&!url.searchParams.has("details"))scene.searchParams.set("details","1");
     // Preserve old bookmarked scene focus/coordinates when opening the canonical app.
     for (const key of ["details", "at", "look", "study", "place", "camera", "area", "scorecard"]) if (url.searchParams.has(key)) scene.searchParams.set(key, url.searchParams.get(key)!);
+    if (view === "fps") {
+      for (const key of ["photo", "at", "look", "study", "place", "scorecard"]) scene.searchParams.delete(key);
+      scene.searchParams.set("pool", "north");
+      scene.searchParams.set("area", "north-pool");
+      scene.searchParams.set("camera", "first");
+      scene.searchParams.set("weapon", "shotgun");
+      scene.searchParams.set("details", "1");
+    }
     if (selectedPoint && view === "overview" && !url.searchParams.has("area")) {
       const r = frameRotation * Math.PI / 180, [x, z] = selectedPoint;
       const turned = `${(x * Math.cos(r) - z * Math.sin(r)).toFixed(2)},${(x * Math.sin(r) + z * Math.cos(r)).toFixed(2)}`;
@@ -51,7 +59,7 @@ function setView(view: View, history = true): void {
   }
   window.dispatchEvent(new Event("resize"));
 }
-for (const view of ["map", "overview", "walk"] as const) document.querySelector(`#view-${view}`)!.addEventListener("click", () => setView(view));
+for (const view of ["map", "overview", "walk", "fps"] as const) document.querySelector(`#view-${view}`)!.addEventListener("click", () => setView(view));
 document.querySelector('#visit-silvia')!.addEventListener('click',()=>{
   const url=new URL(location.href);url.searchParams.delete('study');url.searchParams.delete('at');url.searchParams.delete('look');url.searchParams.set('area','silvia-north');url.searchParams.set('place','silvia');url.searchParams.set('details','1');window.history.replaceState(null,'',url);
   trackEvent("area_jumped", { area_id: "silvia-north", area_name: "Silvia tunnel", source: "silvia_shortcut" });
@@ -60,7 +68,7 @@ document.querySelector('#visit-silvia')!.addEventListener('click',()=>{
 document.querySelector("#app-photo-toggle")!.addEventListener("click", () => { setView("map"); document.querySelector<HTMLInputElement>("#photo-search")?.focus(); });
 const requestedView=():View=>{
   const url=new URL(location.href),mode=url.searchParams.get('view');
-  return mode==='map'||mode==='walk'?mode:mode==='overview'||!url.searchParams.has('photo')?'overview':'map';
+  return mode==='map'||mode==='walk'||mode==='fps'?mode:mode==='overview'||!url.searchParams.has('photo')?'overview':'map';
 };
 window.addEventListener("popstate", () => setView(requestedView(),false));
 window.addEventListener("reference-selected", ((event: CustomEvent<{ id: string; label: string; point: number[] | null; camera: number[] | null }>) => {
@@ -87,7 +95,7 @@ window.addEventListener("message", event => {
     }
     currentView = "overview";
     document.body.dataset.appView='overview';
-    document.querySelector('#view-overview')!.setAttribute('aria-pressed','true');document.querySelector('#view-walk')!.setAttribute('aria-pressed','false');
+    document.querySelector('#view-overview')!.setAttribute('aria-pressed','true');document.querySelector('#view-walk')!.setAttribute('aria-pressed','false');document.querySelector('#view-fps')!.setAttribute('aria-pressed','false');
   }
   if(event.data?.type==='villacana-camera'&&['first','third'].includes(event.data.mode)){
     const url=new URL(location.href);url.searchParams.set('camera',event.data.mode);window.history.replaceState(null,'',url);

@@ -1,9 +1,25 @@
 # PRD: North Pool FPS Test
 
-**Status:** Ready for implementation; the playable test view is not yet built.  
+**Status:** First playable shotgun prototype implemented; full acceptance criteria remain open.
 **Requested by:** Dave, 16 November 2026.  
 **Repository:** `daveyboyc/villacana-venture`.  
 **Baseline inspected:** `ffcd84dfc07bdc62490517676779f7a05fdd1e25`.
+
+## Current increment — 16 November 2026
+
+Dave clarified that he is testing on mobile and wants a Doom/Duke Nukem-style
+shotgun. The current increment adds **Play** (`?view=fps`), an original centred
+shotgun graphic, eight-pellet hitscan spread, a 0.8-second pump cycle, visual impact
+and hit feedback, synthesised sound, unlimited shells, and three floating practice
+targets. Mobile uses the existing movement joystick, drag-to-look and a dedicated
+FIRE button. Pause, sound mute and restart are available. The canonical Walk route
+now forwards Walk mode to the scene instead of opening Inspect.
+
+This increment uses the existing movement and pool behaviour. It does not claim
+completion of the full course/boundary, settings, pointer-lock, performance or pool
+exit criteria below. The first course has three targets, replacing the proposed
+five-target count for this increment. Gameplay targets are artificial overlays;
+no real-world geometry or placement confidence changes are implied.
 
 ## 1. Outcome
 
@@ -43,9 +59,10 @@ gameplay easier. Report model defects separately from movement defects.
 
 ## 3. MVP scope and defaults
 
-**Audience/platform:** Dave and invited testers on desktop, with keyboard and
-mouse, in current Chrome and Edge. Other browsers may work but are not an MVP
-release gate. Touch-only devices get an explanation and a button back to Inspect.
+**Audience/platform:** Mobile first for Dave, with touch movement, aiming and firing.
+iPhone Safari and Android Chrome are target browsers; desktop keyboard/mouse is
+also supported. Browser emulation is useful coverage but must be distinguished
+from testing on physical phones.
 
 **Playable area:** North pool water, deck, lawn, perimeter paths and the short
 approaches immediately adjoining the courtyard. Include existing accessible steps
@@ -57,8 +74,7 @@ One simple weapon, unlimited ammunition, no reload, no enemy AI and no player
 damage. This is enough to test moving, aiming and firing around the courtyard.
 
 **Deferred:** Multiplayer, combat NPCs, campaigns, inventories, realistic weapons,
-destruction, scoring persistence, leaderboards, gamepads, mobile FPS controls and
-resort-wide gameplay. A later combat brief can extend the test after traversal and
+destruction, scoring persistence, leaderboards, gamepads, resort-wide gameplay. Mobile FPS controls are in scope following Dave’s clarification. A later combat brief can extend the test after traversal and
 aiming are accepted.
 
 These are proposed product defaults for an immediately implementable test, not
@@ -143,7 +159,7 @@ Returning to the tab must not cause a large movement step or accidental shot.
   across-pool shots; at least one target must require repositioning to see around
   existing solid cover. Do not move the resort to create those sightlines.
 - Fire a hitscan ray from the camera through the crosshair, with a proposed 60 m
-  range and a maximum of four shots per second. Each accepted trigger increments
+  range. The shotgun prototype uses eight pellets and a 0.8-second pump cooldown. Each accepted trigger increments
   shots once; only the first valid intersection can receive the hit.
 - Walls, buildings, solid props and terrain stop shots. Decorative foliage and
   transparent water do not count as targets or opaque shot blockers. Use explicit
