@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import './shotgun.css';
+import { asset } from './asset';
 
 /** Arcade values, deliberately independent of the resort's measured geometry. */
 export const SHOTGUN_COOLDOWN = .8;
@@ -20,18 +21,10 @@ export function createShotgun({scene,camera,canvas,centre,groundY,ignoreObject,a
   hud.innerHTML=`
     <div class="sg-top"><span>NORTH POOL <small>ARCADE TEST</small></span><div><button id="sg-mute" aria-pressed="false" aria-label="Mute shotgun sound">Sound on</button><button id="sg-pause">Pause</button></div></div>
     <div id="sg-crosshair" aria-hidden="true">＋</div><div id="sg-hit" aria-hidden="true">×</div>
-    <div id="sg-weapon" aria-hidden="true"><svg viewBox="0 0 200 240" shape-rendering="crispEdges">
-      <g id="sg-flash"><path fill="#ff9b19" d="M100 8 109 40 128 24 120 52 143 56 115 70 125 90 101 79 77 94 83 70 57 59 82 50 74 25 93 40Z"/><path fill="#fff5ba" d="m100 31 8 25 16 4-18 12-6 12-8-15-15-8 17-5Z"/></g>
-      <path fill="#171c20" stroke="#080d10" stroke-width="4" d="M88 66h24l7 70 19 32 13 72H49l13-72 19-32Z"/>
-      <path fill="#75818a" d="M91 69h7v73h-12Z"/><path fill="#343f49" d="M98 69h11l6 73H98Z"/>
-      <path fill="#c2cbd0" d="M94 69h3v70h-3Z"/><path fill="#10171b" d="M96 61h8v12h-8Z"/><path fill="#7c8990" d="M98 61h3v8h-3Z"/>
-      <path fill="#4a5962" d="M81 141h38l13 38H68Z"/><path fill="#a6b1b7" d="M82 145h6l-8 29h-7Z"/>
-      <path fill="#202a31" d="M91 145h18v32H91Z"/><path fill="#0d1216" d="M91 150h18v11H91Z"/>
-      <g id="sg-pump"><path fill="#5c321e" stroke="#21150f" stroke-width="3" d="M77 113h46l6 38H71Z"/><path fill="#ad7140" d="M80 116h38v7H78Z"/><path fill="#7b492b" d="M77 127h46v5H77Zm-2 10h50v5H75Z"/></g>
-      <path fill="#75432b" d="M72 180h56l15 60H57Z"/><path fill="#ac7245" d="M73 183h10l-9 57H60Z"/>
-      <path fill="#bd875e" stroke="#3c291e" stroke-width="3" d="m132 166 16 8 11 25 5 41h-26l-9-41-9-15Z"/><path fill="#e2ae7e" d="m134 170 10 7 5 12-14-5-9-5Z"/>
-      <path fill="#414b36" d="M139 214h27l10 26h-35Z"/>
-    </svg></div>
+    <div id="sg-weapon" aria-hidden="true"><div class="sg-viewmodel">
+      <svg id="sg-flash" viewBox="0 0 120 130" shape-rendering="crispEdges"><path fill="#a52c10" d="M54 0h12v24h12V12h12v30h18v12h12v18h-18v12h12v12H84v18H72v16H48v-16H36V96H6V84h12V72H0V54h18V42h18V12h12v18h6Z"/><path fill="#ff9d22" d="M54 12h12v30h12V30h6v24h24v12H90v18h12v6H78v18H66v12H54v-12H42V90H18v-6h12V66H12V54h24V36h6v12h12Z"/><path fill="#fff4bd" d="M54 42h12v18h12v12h12v6H78v12H66v12H54V90H42V78H30v-6h12V60h12Z"/></svg>
+      <img class="sg-sprite" src="${asset('/art/shotgun-doom.png')}" alt="" draggable="false" width="1086" height="1448" />
+    </div></div>
     <div class="sg-bottom"><span>SHOTGUN <b>∞</b><small>SHELLS</small></span><span id="sg-status" role="status">Ready</span><span><b id="sg-score">0 / 3</b><small>TARGETS</small></span></div>
     <button id="sg-fire" aria-label="Fire shotgun" disabled>FIRE</button>
     <div id="sg-menu"><div class="sg-card"><span class="sg-kicker">VILLACANA / NORTH POOL</span><h1>Poolside shotgun</h1><p id="sg-instructions">Left thumb to move. Drag the scene to aim.<br>Tap FIRE. Hit the three floating targets.<br><small>Keyboard: WASD · drag to aim · F to fire · Esc to pause</small></p><p id="sg-message">Loading courtyard…</p><button id="sg-start" disabled>Loading…</button><button id="sg-reset">Restart targets & position</button><a href="./?view=overview&area=north-pool" target="_top">Back to Inspect</a></div></div>`;
