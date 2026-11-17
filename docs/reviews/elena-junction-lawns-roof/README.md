@@ -74,3 +74,19 @@ about 0.3 m on the lawn side, at a range where depth is good to about 1 m along 
 - **Detail** (`elena-junction-planting-detail`): clipped domes and standard, cypresses, wall-foot shrubs, bougainvillea.
 
 These are photographic and aerial measurements; the measured approval needs a second agent's review (`data/placement_reviews.json`).
+
+## Follow-up, same day: Cervantes patio wall, kerb and lawn level
+
+- **Patio wall with a brown door** (`lane_walls.json:cervantes-elena-patio-front-wall`): the roof photo shows a tall white
+  wall facing Cervantes with a closed brown door between the house west of the lawns and the CALLE ELENA corner,
+  closing the parasol patio; IMG_2467 and IMG_2264 show it from the lane. Built 2.2 m on the Cervantes south line from
+  the house corner (registry part5 corner 32) to the west wall's north end. The door head, cast through the solved
+  camera at 2.0 m, is 0.95 m wide, 6.35 m along from the west end, within about 0.2 m of the line. It replaces the
+  0.65 m wall there. `check_lane_walls.py` lets a photographed Cervantes wall stand on the lane's edge line (face 0.7 m
+  from the centreline, outside the 1.2 m paving) instead of 1.0 m.
+- **Kerb between the ramp and the lawn**: 0.15 m, see `docs/reviews/cervantes-elena-steps-position`.
+- **Lawn level**: the junction lawns were drawn 0.025 m above the ground, below the lane (0.06 m), with kerbs only
+  0.06 m above the lane. The photos show a kerb face of about 0.15 m on the lane side and the grass just below its top.
+  The lawns now have `lift` 0.16 m (0.10 m above the lane, `src/frontages.ts`) and their kerbs 0.2 m (0.14 m above the lane).
+
+`cervantes-door-wall-before-after.jpg`: photo, before and after through the solved camera (Show details).

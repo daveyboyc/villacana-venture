@@ -231,7 +231,7 @@
       "id": "cervantes-kerb-walls-height",
       "area": "cervantes",
       "kind": "height",
-      "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m. 17 November 2026 (Dave): south-2 split at the Elena lawns' west wall; the stretch along the near Elena lawn is now the 0.15 m kerb IMG_2262, IMG_2286 and IMG_2328 show, carried to the lawn corner at the foot drain; the stretch west of the wall (cervantes-patio-south-2-west) stays 0.65 m. src/cervantes-walls.ts drew every one of these walls 0.21 m above its recorded height (it stood them on the stored 0.27 m road height instead of the lane surface at 0.06 m); fixed, so north-1 now shows its 0.15 m and the 0.65 m walls 0.65 m. Still open: south-1, south-2-west, south-3 and north-east at 0.65 m.",
+      "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m. 17 November 2026 (Dave): south-2 split at the Elena lawns' west wall; the stretch along the near Elena lawn is now the 0.15 m kerb IMG_2262, IMG_2286 and IMG_2328 show, carried to the lawn corner at the foot drain; the stretch west of the wall (cervantes-patio-south-2-west) stays 0.65 m. src/cervantes-walls.ts drew every one of these walls 0.21 m above its recorded height (it stood them on the stored 0.27 m road height instead of the lane surface at 0.06 m); fixed, so north-1 now shows its 0.15 m and the 0.65 m walls 0.65 m. Still open: south-1, south-2-west, south-3 and north-east at 0.65 m. Later the same day: east of the house corner, south-2-west is replaced by the photographed 2.2 m patio wall with a door; west of it, in front of the house face, it stays 0.65 m (open).",
       "sources": [
         "IMG_2262.jpg",
         "IMG_2264.jpg",
@@ -292,16 +292,19 @@
       "id": "elena-junction-cervantes-door-wall",
       "area": "elena",
       "kind": "completeness",
-      "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height).",
+      "description": "North end of the west wall: ELENA-ROOF-2026-11-17.jpg shows a tall white wall facing Cervantes with a brown door and the CALLE ELENA tile sign at its corner, enclosing the patio (parasol) west of the near lawn. The model has the 0.65 m cervantes-patio-south-2 there and no door (see also cervantes-kerb-walls-height). 17 November 2026: built as lane_walls.json cervantes-elena-patio-front-wall, 2.2 m with a 0.95 m brown door, from the house corner (registry part5 corner 32) to the CALLE ELENA corner on the Cervantes south line; the door placed through the solved roof camera (also IMG_2467, IMG_2264). The 0.65 m wall there is gone; the rest of cervantes-patio-south-2-west stays in front of the house face. The CALLE ELENA tile sign and the bougainvillea are detail, not drawn.",
       "sources": [
         "ELENA-ROOF-2026-11-17.jpg",
-        "IMG_2367.jpg"
+        "IMG_2264.jpg",
+        "IMG_2367.jpg",
+        "IMG_2467.jpg"
       ],
       "features": [
-        "cervantes_patio_walls.json:cervantes-patio-south-2"
+        "cervantes_patio_walls.json:cervantes-patio-south-2",
+        "lane_walls.json:cervantes-elena-patio-front-wall"
       ],
       "task": "elena-junction-lawns-roof",
-      "status": "open",
+      "status": "fixed",
       "requests": []
     },
     {

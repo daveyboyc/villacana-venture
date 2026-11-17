@@ -6,9 +6,9 @@
   "needs-review": 232,
   "suggested": 267,
   "photos": 502,
-  "features": 496,
+  "features": 497,
   "photosCitedByModel": 211,
-  "modelFeaturesWithPhotoCitations": 240
+  "modelFeaturesWithPhotoCitations": 241
  },
  "method": "GPS camera position, reported uncertainty + 2 m map tolerance; nearby features and heading cone are suggestions. No image recognition, occlusion check, subject-position inference, survey or automatic geometry editing.",
  "photos": [
@@ -70,6 +70,7 @@
     "frontage_divisions.json:cervantes-elena-lawn-2",
     "frontage_divisions.json:cervantes-lawn-door-path",
     "lane_walls.json:elena-south-lawn-west-wall",
+    "lane_walls.json:cervantes-elena-patio-front-wall",
     "plain_fronts.json:elena-24-south-patio"
    ],
    "geometryReview": "observed",
@@ -3032,6 +3033,7 @@
    ],
    "citedBy": [
     "cervantes_patio_walls.json:cervantes-patio-south-2",
+    "lane_walls.json:cervantes-elena-patio-front-wall",
     "steps:cervantes-elena-steps",
     "ramp:cervantes-elena-ramp"
    ],
@@ -3130,6 +3132,7 @@
     "cervantes_patio_walls.json:cervantes-patio-south-2-west",
     "cervantes_patio_walls.json:cervantes-patio-south-3",
     "lane_walls.json:cervantes-north-garden-wall-west",
+    "lane_walls.json:cervantes-elena-patio-front-wall",
     "cervantes_lane_edges.json:cervantes-north-bed-west"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
@@ -7395,6 +7398,7 @@
     }
    ],
    "citedBy": [
+    "lane_walls.json:cervantes-elena-patio-front-wall",
     "cervantes_lane_edges.json:cervantes-north-bed-west"
    ],
    "geometryReview": "No recorded photo-to-model comparison",
