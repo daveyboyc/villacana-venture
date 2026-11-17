@@ -90,3 +90,12 @@ These are photographic and aerial measurements; the measured approval needs a se
   The lawns now have `lift` 0.16 m (0.10 m above the lane, `src/frontages.ts`) and their kerbs 0.2 m (0.14 m above the lane).
 
 `cervantes-door-wall-before-after.jpg`: photo, before and after through the solved camera (Show details).
+
+## Follow-up: east corner house
+
+The generated timber balcony with a tiled roof on the north-west face of the house on the east corner of Elena south
+and Cervantes (registry 6265601UF1366N_part1, corners 3-4) is switched off (`plain_fronts.json:elena-south-east-corner-house`).
+IMG_2358 and IMG_2367 look straight at that face: a white moulded balcony ledge under an arched shuttered window and a
+white porch round the brown door. `IMG_2358-east-corner-house-after.jpg`: photo beside the render through the solved camera.
+Not built yet: the ledge and porch surround (detail), and the hedge bed with the lamp post between the lane and this
+house's front patio (structure, next).
