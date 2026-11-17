@@ -235,9 +235,11 @@ def features(s):
     for key,name in (('gate','Beach gateway from the big-pool lawn'),('rampWall','White wall beside the paseo ramp'),('railing','Green bar railing on a sandstone plinth along the big-pool lawn')):
         f=fence[key]
         add('seafront_fence.json:'+f['id'],name,'reference feature','photo/aerial/survey interpretation; position about 1-2 m',evidence=fence['evidence'],points=[unturn(q) for q in (f['points'] if 'points' in f else [f['at']])])
-    lane_walls=json.loads((ROOT/'data/lane_walls.json').read_text()) # garden and patio walls along Calle Elena and Calle Jorge
+    lane_walls=json.loads((ROOT/'data/lane_walls.json').read_text()) # garden and patio walls along Calle Elena, Calle Jorge and Calle Cervantes
     for w in lane_walls['walls']:
         add('lane_walls.json:'+w['id'],w['name'],'reference feature','photo/aerial interpretation; about 1 m' if w['evidence'] else 'inferred from the aerial and the registry; about 1 m',evidence=w['evidence'],points=w['points'])
+    for bed in json.loads((ROOT/'data/cervantes_lane_edges.json').read_text())['planters']: # Cervantes beds and hedge planters
+        add('cervantes_lane_edges.json:'+bed['id'],bed['name'],'reference feature','photo interpretation against the registry house fronts and the lane tiles; about 1 m along, 0.2 m across',ring=bed['ring'],evidence=bed['evidence'])
     picasso_wall=json.loads((ROOT/'data/picasso_lawn_wall.json').read_text())
     add('picasso_lawn_wall.json:'+picasso_wall['id'],picasso_wall['name'],'reference feature','photo/aerial interpretation; the lawn edge, about 1 m',evidence=picasso_wall['evidence'],points=picasso_wall['points'])
     garden=json.loads((ROOT/'data/cervantes_garden_door.json').read_text())
@@ -250,7 +252,7 @@ def features(s):
         add('north_west_canopies.json:'+roof['id'],roof['name'],'reference feature','individually observed upper balcony roof; aerial trace estimated',ring=roof['ring'],evidence=roof['evidence'])
     for t in json.loads((ROOT/'data/raised_terraces.json').read_text())['terraces']:
         add('raised_terraces.json:'+t['id'],t['name'],'reference feature','authored photo/levels interpretation',ring=t['outline'],evidence=t['evidence'])
-    for name in ('cervantes_elena_steps','middle_pool_steps'):
+    for name in ('cervantes_elena_steps','cervantes_alberto_steps','middle_pool_steps'):
         steps=json.loads((ROOT/f'data/{name}.json').read_text())
         add('steps:'+steps['id'],steps['name'],'reference feature','authored photo/map interpretation',points=[steps['foot'],steps['toward']],evidence=steps['evidence'])
 

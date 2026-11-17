@@ -1889,13 +1889,56 @@
    "id": "cervantes",
    "name": "Calle Miguel de Cervantes",
    "counts": {
-    "ready": 0,
+    "ready": 2,
     "needs-evidence": 0,
     "needs-source-access": 0,
     "awaiting-review": 0,
     "accepted": 0
    },
-   "discrepancies": [],
+   "discrepancies": [
+    {
+     "id": "cervantes-elena-steps-position",
+     "area": "cervantes",
+     "kind": "placement",
+     "description": "The laser survey (PNOA-LiDAR 2020-21, 1 m ground model, sampled every 0.5 m along the Cervantes centreline) has the lane level at +0.53 m from 47.5 m along it eastwards and at +1.13-1.17 m from 42.5 m westwards: the 0.6 m drop is centred about 45 m along the lane. The photo-placed flight and ramp (data/cervantes_elena_steps.json, cervantes-elena-ramp) run from the drain at 49.1 m to 46.1 m, centred about 47.6 m, so the survey puts the drop about 2 m further west; the model is up to about 0.4 m above the survey at 46-47 m (independent review of 17 November 2026). A 1 m ground model widens a 3 m ramp, and the camera pins near the junction are 1.5-4.7 m, so this alone does not justify moving the reviewed flight, garden door, beds and lawns that hang off the drain. Settle it before detail goes on the junction with a solved camera: IMG_2286 has the drain, the tile grid and the door (scripts/photo_pose.py), with IMG_2464 or IMG_2328 as the second view.",
+     "sources": [
+      "IMG_2286.jpg",
+      "IMG_2464.jpg",
+      "IMG_2328.jpg"
+     ],
+     "features": [
+      "steps:cervantes-elena-steps",
+      "ramp:cervantes-elena-ramp",
+      "cervantes_garden_door.json:cervantes-garden-door"
+     ],
+     "task": "cervantes-lane-edges",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "cervantes-kerb-walls-height",
+     "area": "cervantes",
+     "kind": "height",
+     "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m.",
+     "sources": [
+      "IMG_2264.jpg",
+      "IMG_2467.jpg",
+      "IMG_2468.jpg",
+      "IMG_2274.jpg"
+     ],
+     "features": [
+      "cervantes_patio_walls.json:cervantes-patio-north-1",
+      "cervantes_lane_edges.json:cervantes-north-bed-west"
+     ],
+     "task": "cervantes-lane-edges",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    }
+   ],
    "requests": [
     {
      "id": "photo-cervantes-east-from-elena",
@@ -4958,7 +5001,7 @@
    "id": "whole-resort",
    "name": "The whole resort",
    "counts": {
-    "ready": 7,
+    "ready": 9,
     "needs-evidence": 4,
     "needs-source-access": 0,
     "awaiting-review": 1,
@@ -5206,6 +5249,48 @@
       "lane_walls.json:jorge-patio-wall-117"
      ],
      "task": "lane-walls-jorge-elena",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "cervantes-elena-steps-position",
+     "area": "cervantes",
+     "kind": "placement",
+     "description": "The laser survey (PNOA-LiDAR 2020-21, 1 m ground model, sampled every 0.5 m along the Cervantes centreline) has the lane level at +0.53 m from 47.5 m along it eastwards and at +1.13-1.17 m from 42.5 m westwards: the 0.6 m drop is centred about 45 m along the lane. The photo-placed flight and ramp (data/cervantes_elena_steps.json, cervantes-elena-ramp) run from the drain at 49.1 m to 46.1 m, centred about 47.6 m, so the survey puts the drop about 2 m further west; the model is up to about 0.4 m above the survey at 46-47 m (independent review of 17 November 2026). A 1 m ground model widens a 3 m ramp, and the camera pins near the junction are 1.5-4.7 m, so this alone does not justify moving the reviewed flight, garden door, beds and lawns that hang off the drain. Settle it before detail goes on the junction with a solved camera: IMG_2286 has the drain, the tile grid and the door (scripts/photo_pose.py), with IMG_2464 or IMG_2328 as the second view.",
+     "sources": [
+      "IMG_2286.jpg",
+      "IMG_2464.jpg",
+      "IMG_2328.jpg"
+     ],
+     "features": [
+      "steps:cervantes-elena-steps",
+      "ramp:cervantes-elena-ramp",
+      "cervantes_garden_door.json:cervantes-garden-door"
+     ],
+     "task": "cervantes-lane-edges",
+     "status": "open",
+     "requests": [],
+     "state": "ready",
+     "blockers": []
+    },
+    {
+     "id": "cervantes-kerb-walls-height",
+     "area": "cervantes",
+     "kind": "height",
+     "description": "The lane-edge 'patio walls' of data/cervantes_patio_walls.json are 0.65 m high on both sides from the Dalí exit to east of Elena. In the November photos (IMG_2264, IMG_2467, IMG_2468, IMG_2274) the bed edges on the north side are low rounded kerbs of about 0.15-0.2 m with the planting standing over them, and on the south side the houses and garden walls come down to the lane. 17 November 2026: cervantes-patio-north-1 lowered to 0.15 m with the new at-grade bed behind it (independent review); the other four (south-1, south-2, south-3, north-east) are still 0.65 m.",
+     "sources": [
+      "IMG_2264.jpg",
+      "IMG_2467.jpg",
+      "IMG_2468.jpg",
+      "IMG_2274.jpg"
+     ],
+     "features": [
+      "cervantes_patio_walls.json:cervantes-patio-north-1",
+      "cervantes_lane_edges.json:cervantes-north-bed-west"
+     ],
+     "task": "cervantes-lane-edges",
      "status": "open",
      "requests": [],
      "state": "ready",

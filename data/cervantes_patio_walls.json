@@ -29,7 +29,7 @@
           57.8401
         ]
       ],
-      "height": 0.65,
+      "height": 0.15,
       "thickness": 0.2,
       "solid": true,
       "side": "north",
@@ -42,7 +42,7 @@
         "IMG_2274.jpg",
         "IMG_2275.jpg"
       ],
-      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges."
+      "trust": "White patio/planting wall relationship supported by ground photos; alignment cross-checked against the lane and registry fronts. Height and thickness estimated; vegetation hides some edges. 17 November 2026: lowered from 0.65 m to 0.15 m, the low rounded kerb at the foot of the planted bed in IMG_2274, IMG_2264 and IMG_2468 (task cervantes-lane-edges, independent review)."
     },
     {
       "id": "cervantes-patio-north-east",

@@ -19,6 +19,7 @@ import {elenaWalkway,walkwayPoint,walkwayRing} from "./elena-walkway";
 import {cervantesNorthPartitions,inCervantesNorthPatios} from "./cervantes-north-patios";
 import {elenaEastPatioWalls,elenaEastPergola,elenaEastPergolaPosts,inElenaEastPatios} from "./elena-east-patios";
 import {laneWalls,laneWallDoorSpans} from "./lane-walls";
+import {cervantesLaneEdges} from "./cervantes-lane-edges";
 import {barrakaBarbecueBoat,barrakaSections,barrakaSign} from "./barraka-boardwalk";
 import { vergeClumps, vergeRing } from "./beach-verge";
 import beachVerge from "../data/beach_verge.json";
@@ -173,6 +174,11 @@ async function boot(): Promise<void> {
     const node=el("path",{d:"M"+wall.points.map(p=>p.join(" ")).join("L"),fill:"none",stroke:"#fffdf5","stroke-width":wall.thickness,"stroke-linejoin":"round","data-lane-wall-id":wall.id});
     const title=el("title",{});title.textContent=`${wall.name}: ${wall.basis}${wall.evidence.length?" · "+wall.evidence.join(", "):""}`;node.append(title);laneWallGroup.append(node);
     for(const span of laneWallDoorSpans(wall)){const door=el("circle",{cx:span.door.at[0],cy:span.door.at[1],r:span.door.width/2.2,fill:"#5a3420","data-lane-wall-id":span.door.id});const dt=el("title",{});dt.textContent=`${wall.name}: closed door`;door.append(dt);laneWallGroup.append(door);}
+  }
+  // Cervantes beds and hedge planters along the lane (data/cervantes_lane_edges.json).
+  for(const bed of cervantesLaneEdges){
+    const node=el("path",{d:path(bed.ring),fill:bed.kind==="raised"?"#4f6b3c":"#5a4634",stroke:"#fffdf5","stroke-width":bed.wall,"data-cervantes-edge-id":bed.id});
+    const title=el("title",{});title.textContent=`${bed.name}: ${bed.basis} · ${bed.evidence.join(", ")}`;node.append(title);laneWallGroup.append(node);
   }
   frontages.append(laneWallGroup);
   // Middle pool, traced from the photos: the east gateway from Calle Eva and the west planter wall.

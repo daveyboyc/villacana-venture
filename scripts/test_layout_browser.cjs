@@ -234,7 +234,7 @@ const path = require("node:path");
         const heights = [];
         for (let d = -0.6; d <= f.run + 0.6; d += 0.05) heights.push(world.groundHeight(...at(d)));
         const jumps = heights.slice(1).map((h, i) => h - heights[i]).filter((j) => Math.abs(j) > 0.02);
-        if (jumps.length !== f.stair.risers || jumps.some((j) => j < 0.1 || j > 0.2)) throw Error(f.opening.id + ": stair does not rise one riser at a time: " + jumps);
+        if (jumps.length !== f.stair.risers || jumps.some((j) => j < 0.1 || j > 0.2 + 1e-9)) throw Error(f.opening.id + ": stair does not rise one riser at a time: " + jumps);
         const foot = world.groundHeight(...at(-0.6)), landing = at(f.run + 0.8);
         if (Math.abs(world.groundHeight(...landing) - floor) > 0.01 || Math.abs(floor - foot - t.rise) > 0.03) throw Error(f.opening.id + ": top is not the terrace floor");
         walk([at(-1.2), landing]); settle();

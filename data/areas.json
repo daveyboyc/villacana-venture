@@ -298,7 +298,8 @@
     "docs/LEVELS.md",
     "docs/CERVANTES_DOOR_STEPS_REVIEW.md",
     "docs/CERVANTES_EAST_SOUTH_PATIOS.md",
-    "docs/reviews/path-network-inventory-cervantes/README.md"
+    "docs/reviews/path-network-inventory-cervantes/README.md",
+    "docs/CERVANTES_LANE_EDGES.md"
    ],
    "data": [
     "data/dali_cervantes.json",
@@ -311,7 +312,10 @@
     "data/cervantes_garden_door.json",
     "data/cervantes_north_patios.json",
     "data/junction_lawns.json",
-    "data/cervantes_east_south_patios.json"
+    "data/cervantes_east_south_patios.json",
+    "data/cervantes_lane_edges.json",
+    "data/cervantes_alberto_steps.json",
+    "data/lane_walls.json"
    ],
    "src": [
     "src/cervantes-walls.ts",
@@ -321,7 +325,9 @@
     "src/cervantes-garden-door.ts",
     "src/cervantes-north-patios.ts",
     "src/junction-lawns.ts",
-    "src/cervantes-east-south-patios.ts"
+    "src/cervantes-east-south-patios.ts",
+    "src/cervantes-lane-edges.ts",
+    "src/lane-walls.ts"
    ],
    "notes": [
     "Straight narrow lane, square terracotta tiles, window grilles, lantern brackets; a drain and sloping exit onto Dalí (IMG_2273–2275).",
@@ -337,7 +343,8 @@
     "Issue #89 (2026-10-17): roof IMG_2366/2360 and ground IMG_2197 support the white lane-side south patio wall east of Elena, closed curved-coping brown door and cane-roofed timber pergola against 6265601UF1366N_part1. One bounded 18.2 m frontage, door and pergola built; no internal partitions or concealed enclosure returns asserted. Aerial/registry context checked; endpoints and dimensions remain estimated at roughly 1–2 m. Roof-camera diagnostic uses estimated 7.2 m local eye elevation and within-uncertainty roof-edge camera correction, not a calibrated match.",
     "Laser survey ground 2026-10-24: Cervantes now falls with the survey (+1.46 to +0.27 m). The Elena steps and ramp keep the photo-read 0.5 m; the survey measures 0.21-0.22 m there, still open (docs/LEVELS.md).",
     "2026-10-26 available-source inventory: 51 distinct full sources inspected, 30 component observations, schematic plan/sections and pinned uncalibrated game comparisons. Three shared-route treads remain distinct from two private-door treads plus raised sill; IMG_2288 CALLE MIGUEL has a flat ceiling/far arch and remains a separate unlocated source group. World edge registration, hidden joins, eastern terminal and measured levels remain open; this inventory grants no placement approval.",
-    "27 October garden-door detail (task cervantes-door-steps-detail): full IMG_2196/2287/2327 show three white risers, not two (lane, two red treads of two small quarry-tile rows, threshold tread at the door). Built as three .15 m risers to the unchanged .45 m rise; bottom step 1.2 m with rounded ends, flush with the west bed front, which now runs to the flight; new low east planter beside the upper treads; .72 m door recessed in a pilaster frame under a 1.1 m coping. Wall origin/line and patio unchanged. Open: the .65 m lane-edge wall east of the planter stands .32 m further out than the planter front in the photos. See docs/reviews/cervantes-door-steps-detail."
+    "27 October garden-door detail (task cervantes-door-steps-detail): full IMG_2196/2287/2327 show three white risers, not two (lane, two red treads of two small quarry-tile rows, threshold tread at the door). Built as three .15 m risers to the unchanged .45 m rise; bottom step 1.2 m with rounded ends, flush with the west bed front, which now runs to the flight; new low east planter beside the upper treads; .72 m door recessed in a pilaster frame under a 1.1 m coping. Wall origin/line and patio unchanged. Open: the .65 m lane-edge wall east of the planter stands .32 m further out than the planter front in the photos. See docs/reviews/cervantes-door-steps-detail.",
+    "16 November 2026 (task cervantes-lane-edges): the laser survey along the centreline is level at +1.15-1.2 m from the Dalí exit to Elena, drops 0.6 m at the Elena steps (riser faces measured against the 0.4 m tiles in IMG_2286 agree: about 0.2 m each; the old 0.21 m survey figure came from comparison points that did not span the drop), level at +0.53-0.57 m to Calle Alberto, drops 0.27 m at two steps beside a ramp just west of the Alberto crossing (IMG_2448/2449, now built), then level at +0.2-0.25 m to the Picasso end. Open: the survey puts the Elena drop about 2 m west of the photo-placed flight (discrepancy cervantes-elena-steps-position). Built along the lane: a 1.7 m north garden wall with a planted bed in front from the Dalí exit to the Elena garden door, a 2.1 m south wall with two doors and a jade bed at its foot from the Elena patios to the Alberto corner (93 m), kerbed beds at the north house fronts and the Alberto corner, and white hedge planters and beds from 110 m to the Picasso end (docs/CERVANTES_LANE_EDGES.md); the north lane kerb west of Elena lowered to 0.15 m. Not built: the seat pillar and the two brick flights at about 114 and 119 m, the lawn kerb by the end house, a second door at 72.5 m in the existing south wall."
    ]
   },
   {

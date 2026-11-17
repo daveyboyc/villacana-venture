@@ -1,0 +1,27 @@
+{
+ "id": "cervantes-alberto-steps",
+ "name": "Cervantes / Alberto · two steps beside the ramp",
+ "road": "cervantes",
+ "foot": [
+  -114.22,
+  34.3
+ ],
+ "toward": [
+  -116.28,
+  35.53
+ ],
+ "across": [
+  0.02,
+  0.8
+ ],
+ "risers": [
+  0.45,
+  0.95
+ ],
+ "end": 2.4,
+ "evidence": [
+  "IMG_2448.jpg",
+  "IMG_2449.jpg"
+ ],
+ "trust": "Just west of the Calle Alberto crossing the lane climbs towards Dalí: two white-faced risers with grey aggregate nosings on the north half of the lane, a smooth tiled ramp about two tiles wide on the south half (IMG_2448 from the crossing, IMG_2449 from on the ramp beside them). The bottom riser stands one tile row up from the crossing's aggregate edge and the treads are one 0.4 m tile plus nosing, so risers at about 0.45 and 0.95 m. The laser survey (PNOA-LiDAR 2020-21, 1 m ground model) has the lane level at +0.54 m west of 91 m along it and at +0.27 m east of 93.6 m, so the foot is at 93.6 m and the ramp meets the top tread about 2.4 m up; the rise is the survey's 0.27 m, two risers of about 0.13 m, which matches their look against the tiles. Position along the lane good to about 1 m (camera pins 2.5-4.7 m; the survey fixes where the ground changes)."
+}
