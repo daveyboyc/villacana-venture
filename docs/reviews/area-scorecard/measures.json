@@ -1,14 +1,14 @@
 {
  "about": "Written by python3 scripts/build_scorecard.py measure. ground: model minus 2020-21 survey on a 2 m grid of open ground within 15 m of a house. plan: footprint shift (metres east, south) that best fits the 2014-15 surveyed roofs, its correlation, and the share of footprint (1 m in from the edge) on surveyed roof at least 2 m up. kit: facade kit parts as placed in the Details view, traced from photos (data/facade_kit.json) or generated.",
- "measuredAt": "2026-10-27",
- "commit": "8b5e1f8",
- "areaGrid": "7273ccfa24aec399",
+ "measuredAt": "2026-11-17",
+ "commit": "51a7bbd",
+ "areaGrid": "4031cb8542b34724",
  "areas": {
   "north-pool": {
    "ground": {
-    "cells": 183,
+    "cells": 182,
     "medianMiss": 0.06,
-    "within25cm": 0.85,
+    "within25cm": 0.87,
     "over50cm": 0.05
    },
    "plan": {
@@ -21,7 +21,7 @@
    },
    "kit": {
     "traced": 26,
-    "generated": 89
+    "generated": 82
    }
   },
   "middle-pool": {
@@ -46,49 +46,44 @@
   },
   "south-pool": {
    "ground": {
-    "cells": 78,
+    "cells": 42,
     "medianMiss": 0.05,
     "within25cm": 1.0,
     "over50cm": 0.0
    },
    "plan": {
-    "houses": 2,
-    "east": 0.25,
-    "south": -1.25,
-    "fit": 0.622,
-    "fitUnshifted": 0.577,
-    "onRoof": 0.98
+    "houses": 1
    },
    "kit": {
     "traced": 0,
-    "generated": 29
+    "generated": 27
    }
   },
   "main-pool": {
    "ground": {
-    "cells": 237,
+    "cells": 236,
     "medianMiss": 0.06,
-    "within25cm": 0.95,
+    "within25cm": 0.94,
     "over50cm": 0.02
    },
    "plan": {
-    "houses": 10,
+    "houses": 9,
     "east": 3.5,
     "south": -3.5,
-    "fit": -0.06,
-    "fitUnshifted": -0.156,
+    "fit": -0.05,
+    "fitUnshifted": -0.165,
     "onRoof": 0.24
    },
    "kit": {
     "traced": 0,
-    "generated": 35
+    "generated": 32
    }
   },
   "elena": {
    "ground": {
     "cells": 137,
     "medianMiss": 0.07,
-    "within25cm": 0.98,
+    "within25cm": 0.97,
     "over50cm": 0.0
    },
    "plan": {
@@ -101,7 +96,7 @@
    },
    "kit": {
     "traced": 0,
-    "generated": 75
+    "generated": 71
    }
   },
   "cervantes": {
@@ -121,27 +116,27 @@
    },
    "kit": {
     "traced": 0,
-    "generated": 149
+    "generated": 147
    }
   },
   "dali": {
    "ground": {
-    "cells": 440,
+    "cells": 386,
     "medianMiss": 0.07,
-    "within25cm": 0.93,
+    "within25cm": 0.94,
     "over50cm": 0.01
    },
    "plan": {
-    "houses": 12,
-    "east": 0.5,
+    "houses": 11,
+    "east": 0.25,
     "south": -1.25,
-    "fit": 0.565,
-    "fitUnshifted": 0.515,
+    "fit": 0.58,
+    "fitUnshifted": 0.524,
     "onRoof": 0.95
    },
    "kit": {
     "traced": 0,
-    "generated": 130
+    "generated": 127
    }
   },
   "picasso": {
@@ -166,7 +161,7 @@
   },
   "north-lanes": {
    "ground": {
-    "cells": 516,
+    "cells": 517,
     "medianMiss": 0.06,
     "within25cm": 1.0,
     "over50cm": 0.0
@@ -206,30 +201,30 @@
   },
   "seaward-lanes": {
    "ground": {
-    "cells": 1147,
+    "cells": 1114,
     "medianMiss": 0.06,
-    "within25cm": 0.98,
-    "over50cm": 0.01
+    "within25cm": 0.99,
+    "over50cm": 0.0
    },
    "plan": {
-    "houses": 54,
+    "houses": 53,
     "east": 0.5,
     "south": -1.5,
-    "fit": 0.513,
-    "fitUnshifted": 0.46,
-    "onRoof": 0.86
+    "fit": 0.514,
+    "fitUnshifted": 0.457,
+    "onRoof": 0.84
    },
    "kit": {
     "traced": 0,
-    "generated": 599
+    "generated": 597
    }
   },
   "barraka-beach": {
    "ground": {
-    "cells": 142,
+    "cells": 141,
     "medianMiss": -0.0,
-    "within25cm": 0.41,
-    "over50cm": 0.18
+    "within25cm": 0.38,
+    "over50cm": 0.16
    },
    "plan": {
     "houses": 1
@@ -241,42 +236,42 @@
   },
   "paseo": {
    "ground": {
-    "cells": 684,
+    "cells": 622,
     "medianMiss": 0.06,
-    "within25cm": 0.78,
-    "over50cm": 0.09
+    "within25cm": 0.86,
+    "over50cm": 0.03
    },
    "plan": {
-    "houses": 18,
+    "houses": 16,
     "east": 0.0,
     "south": -1.5,
-    "fit": 0.406,
-    "fitUnshifted": 0.359,
-    "onRoof": 0.75
+    "fit": 0.368,
+    "fitUnshifted": 0.315,
+    "onRoof": 0.66
    },
    "kit": {
     "traced": 0,
-    "generated": 111
+    "generated": 106
    }
   },
   "whole-resort": {
    "ground": {
-    "cells": 6663,
+    "cells": 6476,
     "medianMiss": 0.06,
-    "within25cm": 0.94,
-    "over50cm": 0.02
+    "within25cm": 0.95,
+    "over50cm": 0.01
    },
    "plan": {
-    "houses": 198,
+    "houses": 196,
     "east": 0.25,
     "south": -1.25,
-    "fit": 0.431,
-    "fitUnshifted": 0.392,
-    "onRoof": 0.83
+    "fit": 0.427,
+    "fitUnshifted": 0.388,
+    "onRoof": 0.82
    },
    "kit": {
     "traced": 30,
-    "generated": 2480
+    "generated": 2452
    }
   }
  }
