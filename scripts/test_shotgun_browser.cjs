@@ -37,7 +37,7 @@ const fs=require('node:fs');
     await page.waitForFunction(()=>document.querySelector('#resort-scene').contentDocument.querySelector('#scene').dataset.move==='0.00,0.00');
     await frame.locator('#sg-pause').tap();
     const before=await hud.getAttribute('data-shots');
-    await canvas.evaluate(()=>window.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyF'})));
+    await canvas.evaluate(()=>document.body.dispatchEvent(new KeyboardEvent('keydown',{code:'KeyF',bubbles:true})));
     assert.equal(await hud.getAttribute('data-shots'),before,'Fired while paused');
     await frame.locator('#sg-reset').tap();assert.equal(await hud.getAttribute('data-shots'),'0');assert.equal(await hud.getAttribute('data-hits'),'0');
     await frame.locator('#sg-start').tap();

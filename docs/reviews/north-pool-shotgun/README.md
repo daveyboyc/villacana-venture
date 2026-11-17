@@ -25,13 +25,19 @@ It does not change surveyed scenery, source footprints, terrain or movement phys
 startup, actual multitouch movement/look/fire, rapid-fire suppression, pause/blur,
 reset, portrait and landscape screenshots, target scoring, opaque wall occlusion
 (including hidden originals retained after static batching), resource disposal,
-and returning to Inspect/Map. Its results are saved beside this file.
+and returning to Inspect/Map. All passed with no page errors after integrating
+main `494a871`; results are saved beside this file. The existing photo-map
+browser suite also passed, including mobile, navigation and local reviews.
 
 `test_walk_controls.cjs` passed all directions, diagonal movement, release/cancel,
 blur and app-navigation resets, keyboard movement and Inspect gestures. Python
 photo assignment (12), reference index (17) and placement verification unit tests
-(31) passed. All 16 source/route checks from the handover passed, including map,
-street layout, boundaries, terrain, pool levels, ground plan and local features.
+(31) passed. All 16 source/route checks from the handover passed on the initial base. After
+integrating main `494a871`, 14 pass plus the new Cervantes lane-edge check.
+`check_cervantes_patio_walls.py` fails its height assertion on the newer upstream
+wall data; `check_dali_threshold.py` fails because it imports that checker. Those
+scripts and their input data are unchanged by this branch. Map, street layout,
+boundaries, terrain, pool levels and ground plan checks pass.
 TypeScript and production build passed; Vite reports the existing large-bundle warning.
 
 The first concurrent full-scene browser runs timed out under software rendering.
