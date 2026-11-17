@@ -100,9 +100,11 @@ missing and unverified features; the programme is not yet complete.
 
 ## Controls and local edits
 
-In Inspect, drag to orbit. Right-drag, Shift-drag or a trackpad scroll pans,
-and a pinch or the mouse wheel zooms. **Pan** and **Orbit** choose what a
-left-drag does. On a phone those buttons are hidden and the controls work like a
+In Inspect the desktop controls follow Google Maps: drag to pan; Ctrl-, Shift-
+or right-drag rotates and tilts about the point under the pointer; the mouse
+wheel, a trackpad scroll or a pinch zooms towards the pointer. The arrow keys or
+WASD move forward, back and sideways. **Orbit** makes a plain drag rotate instead
+and **Pan** switches back. On a phone those buttons are hidden and the controls work like a
 map app: the resort opens in details without place or photo labels, one finger
 pans, two fingers twist to turn and slide up or down to tilt, and a pinch zooms
 towards the point between your fingers. **Map** opens the reference map and **Photos** shows the photo
